@@ -3,12 +3,12 @@ title: Microsoft Graph 新增功能
 description: Microsoft Graph 新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 0ddbd63e7c5ced08f7737ad8bb01ea15efead715a9912117e215216da3cdcce3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4a10c7011c8b28460c8908b210792e5e2619753e
+ms.sourcegitcommit: b7e01a1331abe5f5c9aa2828d93dad08229573f1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54167231"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58336647"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
@@ -17,10 +17,42 @@ ms.locfileid: "54167231"
 > [!IMPORTANT]
 > 处于 _预览_ 状态的功能（包括 API 和工具）可能会发生更改，恕不另行通知，有些功能可能永远不会提升为正式发布 (GA) 状态。不要在生产应用中使用预览功能。
 
+## <a name="august-2021-new-and-generally-available"></a>2021 年 8 月：新版本和正式版
+
+### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 公司管理
+Intune v 1.0 版的每月更新。 设置 2021 年 8 月的 **日期** 筛选器，并查找具有相同标题的部分。
+
+### <a name="devices-and-apps--service-health-and-communications"></a>设备和应用|服务运行状况和通信
+使用 Microsoft Graph 中的[服务通信 API ](service-communications-concept-overview.md)访问有关 Microsoft 云服务的运行状况和消息中心帖子。
+
+### <a name="identity-and-access--governance"></a>身份和访问 | 治理
+获取访问评审范围的集合，这些范围用于定义[访问实例](/graph/api/resources/accessReviewInstance)的审阅者和回退审阅者。
+
+## <a name="august-2021-new-in-preview-only"></a>2021 年 8 月：仅限预览版新增功能
+
+### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 公司管理
+Intune beta 版每月更新。 设置 2021 年 8 月的 **日期** 筛选器，并查找具有相同标题的部分。
+
+### <a name="identity-and-access--governance"></a>身份和访问 | 治理
+- [重新处理](/graph/api/accesspackageassignmentrequest-reprocess?view=graph-rest-beta&preserve-view=true)[访问包分配请求](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta&preserve-view=true)自动重试用户对包的访问请求。
+- [重新处理](/graph/api/accesspackageassignment-reprocess?view=graph-rest-beta&preserve-view=true)[访问包分配](/graph/api/resources/accesspackageassignment?view=graph-rest-beta&preserve-view=true)自动重新评估和强制执行用户分配。
+- [获取一组策略要求](/graph/api/accesspackage-getapplicablepolicyrequirements?view=graph-rest-beta&preserve-view=true)为[访问包创建分配请求](/graph/api/resources/accesspackageassignmentrequestrequirements?view=graph-rest-beta&preserve-view=true)。
+- 获取[访问评审审阅者](/graph/api/resources/accessreviewreviewer?view=graph-rest-beta&preserve-view=true)资源的集合，这些资源用于定义与[访问审阅实例](/graph/api/resources/accessReviewInstance?view=graph-rest-beta&preserve-view=true)联系的审阅者。
+- 使用 **recommendationLookBackDuration** 属性，获取或设置在访问评审的[计划设置中](/graph/api/resources/accessReviewScheduleSettings?view=graph-rest-beta&preserve-view=true)配置建议的非活动持续时间。
+
+### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
+组织可以使用 [策略来强制应用使用应用程序身份验证方法的最佳做法](/graph/api/resources/applicationauthmethodpolicy?view=graph-rest-beta&preserve-view=true)。 此类策略可以应用于 [特定应用程序和服务主体](/graph/api/resources/appmanagementpolicy?view=graph-rest-beta&preserve-view=true)，或 [租户中的所有应用程序和服务主体](/resources/tenantappmanagementpolicy?view=graph-rest-beta&preserve-view=true)。
+
 ## <a name="july-2021-new-and-generally-available"></a>2021 年 7 月: 新版本和正式版
 
 ### <a name="cloud-communications--calls"></a>云通信 | 呼叫
 在采用 [基于 Teams 策略录制](/microsoftteams/teams-recording-policy) 的组织中，支持对应用程序在 [接听](/graph/api/call-answer) [通话](/graph/api/resources/call) 时可以处理的参与者数量容量限制。
+
+### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
+- 与 identityProviderBase 共享通用基类型 [标识提供程序的正式版](/graph/api/resources/identityproviderbase)：
+  - Azure AD租户中Azure AD B2B 方案的内置标识提供程序。 这些提供程序可以支持Azure AD、Microsoft 帐户 （MSA） 或电子邮件一次性密码。
+  - Azure AD B2C租户中的社交标识提供者允许用户使用社交媒体帐户（如 Microsoft、Google、Facebook、Amazon、LinkedIn 或 Twitter）注册和登录服务。
+- 弃用早期 [标识提供者](/graph/api/resources/identityprovider) API。
 
 ### <a name="users"></a>用户
 让用户 [更改自己的密码](/graph/api/user-changepassword) 而无需管理员角色。
@@ -36,74 +68,27 @@ ms.locfileid: "54167231"
 
 详情和建议的补救措施见[参考文献](/graph/api/resources/cloudpconpremisesconnectionhealthcheck?view=graph-rest-beta&preserve-view=true#cloudpconpremisesconnectionhealthcheckerrortype-values)。
 
+### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 公司管理
+Intune beta 版每月更新。 设置 2021 年 7 月的 **日期** 筛选器，并查找具有相同标题的部分。
+
 ### <a name="devices-and-apps--multi-tenant-management"></a>设备和应用|多租户管理
 [Microsoft 365 Lighthouse API](managedtenants-concept-overview.md) 的首次亮相，使管理服务提供商 (MSP) 能够大规模地远程管理多个客户租户的合规性和威胁检测，并帮助使租户设备处于健康和安全状态。
 
+### <a name="education"></a>教育
+- 获取[学校数据同步状态](/graph/api/resources/educationsynchronizationprofilestatus?view=graph-rest-beta&preserve-view=true)的错误计数和状态消息。
+- 获取 `extracting` 或 `validating` 此类同步的可能状态。
+
+### <a name="identity-and-access--governance"></a>身份和访问 | 治理
+获取 [访问评审实例](/graph/api/resources/accessreviewinstance?view=graph-rest-beta&preserve-view=true)的生命周期中的错误集合。
+
 ### <a name="search"></a>搜索
-使用 [Microsoft 搜索 API 检索与用户最相关人员](search-concept-person.md) 的信息。相关性由用户的通信和协作模式以及业务关系决定。 
+- 使用 [Microsoft 搜索 API 检索与用户最相关人员](search-concept-person.md) 的信息。相关性由用户的通信和协作模式以及业务关系决定。 
+- 访问 microsoft.graph.externalConnectors 子命名空间中 [连接器索引 API](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true) 。
 
 ### <a name="teamwork"></a>团队合作
 - [订阅聊天资源](teams-changenotifications-chat.md) 的更改通知。
 - [订阅聊天中](teams-changenotifications-chatmembership.md)、[频道](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) 中或 [团队](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) 中用户的更改通知 (即，[conversationMember](/graph/api/resources/conversationmember?view=graph-rest-beta&preserve-view=true) 资源)。
-
-## <a name="june-2021-new-and-generally-available"></a>2021 年 6 月：新版本和正式发布版本
-
-### <a name="applications"></a>应用程序
-获取或设置 [应用程序](/graph/api/resources/application)或 [servicePrincipal](/graph/api/resources/serviceprincipal) 的状态，以确定 Microsoft 是否已通过 **disabledByMicrosoftStatus** 属性禁用应用程序。 禁用原因包括可疑、滥用或恶意活动，或违反 Microsoft 服务协议。
-
-### <a name="change-notifications"></a>更改通知
-在以下资源过期之前，已延长订阅的最大长度：
-- OneDrive [driveItem](/graph/api/resources/driveitem) 和 SharePoint [列表](/graph/api/resources/list)从 3 天延长至 30 天。
-- [组](/graph/api/resources/group)、[用户](/graph/api/resources/user)或其他目录资源，从 3 天延长至 29 天。
-
-### <a name="change-tracking"></a>更改跟踪
-移除了 Microsoft OneDrive for Business 和 SharePoint 中，非根文件夹中的更改跟踪限制。
-
-### <a name="education"></a>教育版
-教育版[分配服务](/graph/api/resources/educationassignment)的 API 现已正式发布。 
-
-### <a name="identity-and-access--governance"></a>身份和访问 | 治理
-[访问评审](/graph/api/resources/accessreviewsv2-root) API 的 GA。 查看[概述](accessreviews-overview.md)和教程，以[评审对安全组的访问权限](tutorial-accessreviews-securitygroup.md)，以及[对 Microsoft 365 组的访问权限](tutorial-accessreviews-m365group.md)。 请注意，[旧访问评审 API](/graph/api/resources/accessreviews-root?view=graph-rest-beta&preserve-view=true) 已被弃用，并将在 2023 年 5 月停止返回数据。
-
-
-## <a name="june-2021-new-in-preview-only"></a>2021 年 6 月：预览版新增功能
-
-### <a name="cloud-communications--online-meetings"></a>云通信 | 联机会议
-分别通过 **allowAttendeeToEnableCamera** 和 **allowAttendeeToEnableMic** 启用和禁用与会者打开摄像头和麦克风，在 [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) 中自定义音频和视频控件。
-
-### <a name="devices-and-apps--cloud-pc"></a>设备和应用 | 云电脑
-- [分配](/graph/api/cloudpcusersetting-assign?view=graph-rest-beta&preserve-view=true)和管理 [cloudPcUserSetting](/graph/api/resources/cloudpcusersetting?view=graph-rest-beta&preserve-view=true)，为云电脑上的用户启用本地管理员或自助服务选项。 当前可在组级别（属于 Microsoft 365 组或安全组的用户）进行分配。
-- [获取](/graph/api/cloudpc-get?view=graph-rest-beta&preserve-view=true) [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) 的几个新属性：预配策略的名称和预配期间使用的本地连接的名称，以及执行重新预配或取消预配的宽限期的结束日期/时间。
-- 对[本地连接](/graph/api/cloudpconpremisesconnection-runhealthcheck?view=graph-rest-beta&preserve-view=true)进行[运行状况检查](/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta&preserve-view=true)时，支持更多状态和错误类型。
-
-### <a name="education"></a>教育
-- 现在，教师可以在发布作业时选择日历的默认行为。 教师可以通过使用 [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) 资源的 **addToCalendarAction** 属性来控制作业的日历行为。
-- 现在，教师还可以在发布作业时设置日历的默认行为。 教师可以通过使用 [educationAssignmentDefaults](/graph/api/resources/educationAssignmentDefaults?view=graph-rest-beta&preserve-view=true) 资源的 **addToCalendarAction** 属性来控制作业默认的日历行为。
-
-### <a name="groups"></a>组
-允许通过设置 **isAssignableToRole** 属性在创建时向 [组](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) 分配 Azure AD 角色。如果设置此属性，则可以方便地管理个人的角色 - 合格人员可以加入组，而不必为每个人分配角色，默认情况下，为组分配角色将为加入组的每个新成员分配角色。 
-
-### <a name="identity-and-access--governance"></a>身份和访问 | 治理
-通过使用 [ 计划定义](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true) 的 **additionalNotificationRecipients** 属性，将用户或组成员设置为接收 [访问评审](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) 进度的通知。
-
-### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
-使用 [conditionalAccessDevices](/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta&preserve-view=true) 的 **deviceFilter** 属性定义筛选器，动态包含或排除设备。
-
-### <a name="sites-and-lists"></a>网站和列表
-通过调用 [createLink](/graph/api/listitem-createlink?view=graph-rest-beta&preserve-view=true)，为 [listItem](/graph/api/resources/listitem?view=graph-rest-beta&preserve-view=true) 创建或获取现有的 [sharingLink](/graph/api/resources/sharinglink?view=graph-rest-beta&preserve-view=true)。
-
-### <a name="teamwork"></a>团队合作
-- 通过 webUrl 属性 [获取](/graph/api/chat-get?view=graph-rest-beta&preserve-view=true)[聊天](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true)的 **非跳转 URL**。
-- [订阅[频道](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true)、[conversationMember](/graph/api/resources/conversationmember?view=graph-rest-beta&preserve-view=true) 或[团队](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true)资源的更改通知。](/graph/webhooks?view=graph-rest-beta&preserve-view=true)
-- 将带有 API 的[特定于资源的同意](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)权限，用于[频道](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true)、[聊天](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true)、[chatMessage](/graph/api/resources/chatMessage?view=graph-rest-beta&preserve-view=true)、[chatMessageHostedContent](/graph/api/resources/chatMessageHostedContent?view=graph-rest-beta&preserve-view=true) 或[团队](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true)。
-- 获取[团队](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true)的[特定于资源的权限授予](/graph/api/resources/resourcespecificpermissiongrant?view=graph-rest-beta&preserve-view=true)列表，该列表指定团队的应用，以及相应的已获得授权的特定于资源的权限。
-- [获取](/graph/api/teamsasyncoperation-get?view=graph-rest-beta&preserve-view=true)具体的[异步操作](/graph/api/resources/teamsasyncoperation?view=graph-rest-beta&preserve-view=true)，或[列出](/graph/api/chat-list-operations?view=graph-rest-beta&preserve-view=true)在[聊天](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true)上运行的所有异步操作。
-- 可在[创建聊天](/graph/api/chat-post?view=graph-rest-beta&preserve-view=true)时指定[Teams 应用](/graph/api/resources/teamsapp?view=graph-rest-beta&preserve-view=true)。
-- 使用一个操作 [provisionEmail](/graph/api/channel-provisionemail?view=graph-rest-beta&preserve-view=true) 获取 [频道的电子邮件地址](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) (如果存在)，或者另创建一个。使用 [removeEmail](/graph/api/channel-removeemail?view=graph-rest-beta&preserve-view=true) 操作删除电子邮件地址。
-
-### <a name="teamwork--shifts"></a>团队合作 | 倒班
-- 支持 [offerShiftRequest](/graph/api/resources/offershiftrequest?view=graph-rest-beta&preserve-view=true)、[timeOff](/graph/api/resources/timeoff?view=graph-rest-beta&preserve-view=true)、[timeOffReason](/graph/api/resources/timeoffreason?view=graph-rest-beta&preserve-view=true) 和 [timeOffRequest](/graph/api/resources/timeoffrequest?view=graph-rest-beta&preserve-view=true) 实体发送同步更改通知。
-- 支持管理[工时记录卡](/graph/api/resources/timecard?view=graph-rest-beta&preserve-view=true)资源和常见功能，例如，[上班打卡](/graph/api/timecard-clockin?view=graph-rest-beta&preserve-view=true)、[下班打卡](/graph/api/timecard-clockout?view=graph-rest-beta&preserve-view=true)、[开始休息](/graph/api/timecard-startbreak?view=graph-rest-beta&preserve-view=true)、[结束休息](/graph/api/timecard-endbreak?view=graph-rest-beta&preserve-view=true)、[确认](/graph/api/timecard-confirm?view=graph-rest-beta&preserve-view=true)和[替班](/graph/api/timecard-replace?view=graph-rest-beta&preserve-view=true)。
+- 通过从 [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true)访问 [eventMessageDetail](/graph/api/resources/EventMessageDetail?view=graph-rest-beta&preserve-view=true)或[聊天](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true)，获取聊天、频道或团队中发生事件的详细信息。 例如，添加到频道或聊天的成员，并更新了团队说明。
 
 
 ## <a name="want-to-stay-in-the-loop"></a>保持循环

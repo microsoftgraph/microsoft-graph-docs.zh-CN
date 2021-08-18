@@ -1,26 +1,26 @@
 ---
 title: deviceManagementSettingRegexConstraint 资源类型
-description: 根据给定的 RegEx 模式强制设置匹配的约束
+description: 强制设置与给定 RegEx 模式匹配的约束
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 11d06b2af4273166b3d6cf93a36a76fecc7ec548
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 00607d37eda6490c5769c9566f583d7c231da33fa0b7781c072fdb619947fcc0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49267927"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54251293"
 ---
 # <a name="devicemanagementsettingregexconstraint-resource-type"></a>deviceManagementSettingRegexConstraint 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-根据给定的 RegEx 模式强制设置匹配的约束
+强制设置与给定 RegEx 模式匹配的约束
 
 
 继承自 [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)
@@ -28,7 +28,7 @@ ms.locfileid: "49267927"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|正则表达式|字符串|要匹配的正则表达式模式|
+|regex|String|要匹配的 RegEx 模式|
 
 ## <a name="relationships"></a>关系
 无

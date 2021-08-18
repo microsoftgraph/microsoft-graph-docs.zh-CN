@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cffbb4ccf98637b4fe65b5b593e947fb1dab5c06
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 9001213490d1a504d3c4096a31cbecfa3fabe13b1e4e3a4e2c1994735ca2831e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52666518"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54133304"
 ---
 # <a name="devicemanagementconfigurationoptiondefinition-resource-type"></a>deviceManagementConfigurationOptionDefinition 资源类型
 
@@ -28,11 +28,11 @@ ms.locfileid: "52666518"
 |optionValue|[deviceManagementConfigurationSettingValue](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvalue.md)|选项的值|
 |dependentOn|[deviceManagementConfigurationDependentOn](../resources/intune-deviceconfigv2-devicemanagementconfigurationdependenton.md) 集合|此选项的依赖设置列表|
 |dependedOnBy|[deviceManagementConfigurationSettingDependedOnBy](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdependedonby.md) 集合|依赖于设置的列表|
-|itemId|String|选项的标识符|
-|说明|String|选项的说明|
+|itemId|字符串|选项的标识符|
+|description|String|选项的说明|
 |helpText|String|选项的帮助文本|
 |name|String|选项的名称|
-|displayName|String|选项的友好名称|
+|displayName|字符串|选项的友好名称|
 
 ## <a name="relationships"></a>关系
 无

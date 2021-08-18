@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bfc1fa24858b4bddd76fca2d10f5d759d40c4797
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 62d385b7f519e3897588d2832c051f7892cee5b82b82744bd61cd84b53dd1989
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51140637"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54194712"
 ---
 # <a name="revokeuserlicense-action"></a>revokeUserLicense 操作
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -56,7 +56,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInst
 |属性|类型|描述|
 |:---|:---|:---|
 |userId|String|要吊销为其分配应用程序许可证的 UserId|
-|notifyManagedDevices|Boolean|指示是否应当向设备发送撤销通知的布尔值|
+|notifyManagedDevices|布尔值|指示是否应当向设备发送撤销通知的布尔值|
 
 
 
