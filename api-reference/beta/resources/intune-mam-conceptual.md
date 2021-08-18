@@ -1,15 +1,15 @@
 ---
 title: 使用 Microsoft Intune 管理移动应用 - Microsoft Graph API
-description: 列出适用于 Intune 终结点的 Microsoft Graph API (REST) 与租户组织的 MAM (MAM) 相关。
+description: 列出与租户组织的移动应用Graph MAM (MAM)  (相关的适用于 Intune) 的 Microsoft) API。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 9ccf992c534e26b9f24e3fd0f3e56d08b3603f90
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 3181c9b4ed2fb287310a0286f276ff2dcac44c5d
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50155914"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58262184"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>如何通过 Microsoft Intune 保护公司的应用数据
 
@@ -21,7 +21,7 @@ ms.locfileid: "50155914"
 
 Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢失。
 
-你可以使用 Intune 应用保护策略帮助保护公司的数据。 由于 Intune 应用保护策略可以独立于任何移动设备管理 (MDM) 解决方案使用，因此你可以使用它来保护公司数据，在设备管理解决方案中加入或不注册设备。 通过实现应用级策略，既可以限制对公司资源的访问，也可以将数据保留在 IT 部门的范围之内。
+你可以使用 Intune 应用保护策略帮助保护公司的数据。 由于 Intune 应用保护策略可以独立于任何移动设备管理 (MDM) 解决方案使用，因此，你可以使用它在设备管理解决方案中注册设备或不注册设备来保护公司数据。 通过实现应用级策略，既可以限制对公司资源的访问，也可以将数据保留在 IT 部门的范围之内。
 
 以下 Graph 资源可用于在 Intune 中管理应用保护策略：
 
@@ -33,11 +33,13 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [应用管理级别](intune-mam-appmanagementlevel.md)
 - [应用程序类型](intune-wip-applicationtype.md)
 - [默认托管的应用保护](intune-mam-defaultmanagedappprotection.md)
+- [设备平台类型](intune-wip-deviceplatformtype.md)
 - [Intune 品牌打造配置文件](intune-wip-intunebrandingprofile.md)
 - [Intune 品牌打造配置文件分配](intune-wip-intunebrandingprofileassignment.md)
 - [iOS 管理的应用注册](intune-mam-iosmanagedappregistration.md)
 - [iOS 移动应用标识符](intune-mam-iosmobileappidentifier.md)
 - [JSON](intune-mam-json.md)
+- [键/值对](intune-mam-keyvaluepair.md)
 - [Mac 应用标识符](intune-mam-macappidentifier.md)
 - [受管理的应用剪贴板共享级别](intune-mam-managedappclipboardsharinglevel.md)
 - [托管的应用配置](intune-mam-managedappconfiguration.md)
@@ -63,9 +65,10 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [托管浏览器类型](intune-mam-managedbrowsertype.md)
 - [托管移动应用](intune-mam-managedmobileapp.md)
 - [移动应用标识符](intune-mam-mobileappidentifier.md)
+- [目标托管应用组类型](intune-mam-targetedmanagedappgrouptype.md)
 - [目标托管应用程序策略分配](intune-mam-targetedmanagedapppolicyassignment.md)
 - [目标托管应用保护](intune-mam-targetedmanagedappprotection.md)
-- [Windows 应用标识符](intune-mam-windowsappidentifier.md)
+- [Windows应用标识符](intune-mam-windowsappidentifier.md)
 - [Windows 信息保护](intune-mam-windowsinformationprotection.md)
 - [Windows 信息保护应用](intune-mam-windowsinformationprotectionapp.md)
 - [Windows 信息保护应用学习摘要](intune-wip-windowsinformationprotectionapplearningsummary.md)

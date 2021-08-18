@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ce684f485bbb68fb7c93efd556dd52df2b95fc4b3f89c1d6c37568ea7a27fa4c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2d66bd84d954f7915a1be48af984b1c99be44c7a
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54147502"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58262874"
 ---
 # <a name="targetapps-action"></a>targetApps 操作
 
@@ -52,6 +52,7 @@ POST /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppCo
 |属性|类型|说明|
 |:---|:---|:---|
 |apps|[managedMobileApp](../resources/intune-mam-managedmobileapp.md) 集合|尚未记录|
+|appGroupType|[targetedManagedAppGroupType](../resources/intune-mam-targetedmanagedappgrouptype.md)|尚未记录|
 
 
 
@@ -66,7 +67,7 @@ POST /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppCo
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppConfigurationId}/targetApps
 
 Content-type: application/json
-Content-length: 335
+Content-length: 378
 
 {
   "apps": [
@@ -79,7 +80,8 @@ Content-length: 335
       "id": "0a129715-9715-0a12-1597-120a1597120a",
       "version": "Version value"
     }
-  ]
+  ],
+  "appGroupType": "allCoreMicrosoftApps"
 }
 ```
 

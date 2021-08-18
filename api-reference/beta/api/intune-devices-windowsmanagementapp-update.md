@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 15fea6f46279f96ce3d1f235b92475bdc67d0f16
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: f3f55949a77d36aeaf6deefba1440e9b2b31e6b2
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52662940"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58263252"
 ---
 # <a name="update-windowsmanagementapp"></a>更新 windowsManagementApp
 
@@ -27,9 +27,9 @@ ms.locfileid: "52662940"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -56,7 +56,7 @@ PATCH /deviceAppManagement/windowsManagementApp
 |id|String|管理应用程序的唯Windows标识符|
 |availableVersion|String|Windows管理应用可用版本。|
 |managedInstaller|[managedInstallerStatus](../resources/intune-devices-managedinstallerstatus.md)|托管安装程序状态。 可取值为：`disabled`、`enabled`。|
-|managedInstallerConfiguredDateTime|String|托管安装程序配置的日期时间|
+|managedInstallerConfiguredDateTime|字符串|托管安装程序配置的日期时间|
 
 
 

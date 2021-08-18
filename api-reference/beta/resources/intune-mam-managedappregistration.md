@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2d527b4d0a6da5a54a6e167db063b8c4e06a6062
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 8bf34ae3b2fb1f2ae6fffff14416287e43a804f4b391a2e44e6b7abdd0d380e0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444180"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54178904"
 ---
 # <a name="managedappregistration-resource-type"></a>managedAppRegistration 资源类型
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -42,19 +42,19 @@ ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应
 |deviceTag|String|应用管理 SDK 生成的标记，它可帮助关联托管在同一设备上的应用。 不保证在所有情况下与应用关联。|
 |deviceName|String|主机设备名称|
 |managedDeviceId|String|主机设备的托管设备标识符。 即使托管主机设备，值也可以为空。|
-|azureADDeviceId|String|主机设备的 Azure Active Directory 设备标识符。 即使主机设备已注册 Azure Active Directory，值也可以为空。|
+|azureADDeviceId|String|主机Azure Active Directory的设备标识符。 值可能为空，即使主机设备已注册Azure Active Directory。|
 |deviceModel|String|当前应用注册的设备模型 |
-|deviceManufacturer|String|用于当前应用注册的设备制造商 |
+|deviceManufacturer|String|当前应用注册的设备制造商 |
 |flaggedReasons|[managedAppFlaggedReason](../resources/intune-mam-managedappflaggedreason.md) 集合|标记应用注册的零个或多个原因。 例如， 在取得 root 权限的设备上运行的应用|
 |userId|String|此应用注册所属的用户 ID。|
 |appIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|应用包标识符|
-|id|String|实体的键。|
+|id|字符串|实体的键。|
 |version|String|实体的版本。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
-|appliedPolicies|[managedAppPolicy](../resources/intune-mam-managedapppolicy.md) 集合|注册应用上次与管理服务同步时，已应用零个或多个策略。|
+|appliedPolicies|[managedAppPolicy](../resources/intune-mam-managedapppolicy.md) 集合|当已注册的应用上次与管理服务同步时，已应用于该应用的零个或多个策略。|
 |intendedPolicies|[managedAppPolicy](../resources/intune-mam-managedapppolicy.md) 集合|目前适用于应用的零个或多个策略管理员。|
 |操作|[managedAppOperation](../resources/intune-mam-managedappoperation.md) 集合|在应用注册时触发的零个或多个长时间运行的操作。|
 

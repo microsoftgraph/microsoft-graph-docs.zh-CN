@@ -5,12 +5,12 @@ author: AkJo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 29c58d1a3783a6e47351a1bb62c632ad3ca824e9
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: af9c123db8e5bbb4102399f3a849977ae255d1ec
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50958416"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255900"
 ---
 # <a name="remove-member-from-chat"></a>从聊天删除成员
 命名空间：microsoft.graph
@@ -22,7 +22,7 @@ ms.locfileid: "50958416"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）| ChatMember.ReadWrite.All |
+|委派（工作或学校帐户）| ChatMember.ReadWrite |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序| ChatMember.ReadWrite.All |
 

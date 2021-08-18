@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: ea34a60269a1366605bd6e60ab684cf37bd1fa84
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 8b76ca2dfa375c72355cb5c68a5bde381509a7ad
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52992115"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58262881"
 ---
 # <a name="create-educationassignment"></a>创建 educationAssignment
 
@@ -68,11 +68,11 @@ Content-length: 279
       "content": "Read chapters 1 through 3"
     },
       "grading": {
-        "@odata.type": "educationAssignmentPointsGradeType",
+        "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
         "maxPoints": 100
       },
       "assignTo": {
-        "@odata.type": "educationAssignmentClassRecipient"
+        "@odata.type": "#microsoft.graph.educationAssignmentClassRecipient"
       },
       "status":"draft",
       "allowStudentsToAddResourcesToSubmission": true
@@ -151,7 +151,12 @@ Content-length: 279
   },
   "lastModifiedDateTime": "2014-02-01T00:00:00Z",
   "notificationChannelUrl": null,
-  "status": "published"
+  "resourcesFolderUrl": null,
+  "allowStudentsToAddResourcesToSubmission": false,
+  "status": "draft",
+  "notificationChannelUrl": null,
+  "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7b%22subEntityId%22%3a%22%7b%5c%22version%5c%22%3a%5c%221.0%5c%22%2c%5c%22config%5c%22%3a%7b%5c%22classes%5c%22%3a%5b%7b%5c%22id%5c%22%3a%5c%228b8cec7f-d0d8-4974-982a-e29396ddbe7f%5c%22%2c%5c%22displayName%5c%22%3anull%2c%5c%22assignmentIds%5c%22%3a%5b%5c%22107dac08-35a5-4546-b4b5-1736fea56847%5c%22%5d%7d%5d%7d%2c%5c%22action%5c%22%3a%5c%22navigate%5c%22%2c%5c%22view%5c%22%3a%5c%22assignment-viewer%5c%22%7d%22%2c%22channelId%22%3anull%7d",
+  "addedStudentAction": "none"
 }
 ```
 

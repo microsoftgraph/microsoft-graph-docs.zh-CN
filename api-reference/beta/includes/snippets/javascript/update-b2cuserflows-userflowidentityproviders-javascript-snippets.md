@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 90989c1edd2632937554b530582ea5572fe1c673
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 6943b52cdf36a640ba9eede195638cad06f69e7b
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53439675"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58368862"
 ---
 ```javascript
 
@@ -16,7 +16,8 @@ const options = {
 const client = Client.init(options);
 
 const userFlowIdentityProviders = {
-  '@odata.id': 'https://graph.microsoft.com/beta/identity/identityProviders/{id}'
+  '@odata.id': 'https://graph.microsoft.com/beta/identity/identityProviders/{id}',
+  '@odata.type': '#microsoft.graph.identityProvider'
 };
 
 await client.api('/identity/b2cUserFlows/B2C_test_signin_signup/userflowIdentityProviders/$ref')

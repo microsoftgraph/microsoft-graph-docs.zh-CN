@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: kszb
-ms.openlocfilehash: 40166a752f66968f207802ce68936ccd569822f9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a95d184ae4b21ee6cdd21ab8cf567e5835d1fdf3e6e09162dc48baaf0f5c1b1b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997569"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54136231"
 ---
 # <a name="skypeforbusinessactivitycounts-resource-type"></a>skypeForBusinessActivityCounts 资源类型
 
@@ -21,8 +21,8 @@ ms.locfileid: "47997569"
 | 属性          | 类型   |
 | :---------------- | :----- |
 | peerToPeer        | Int64  |
-| 有条不紊         | Int64  |
-| 参与      | Int64  |
+| 组织         | Int64  |
+| participated      | Int64  |
 | reportRefreshDate | 日期   |
 | reportDate        | 日期   |
 | reportPeriod      | String |

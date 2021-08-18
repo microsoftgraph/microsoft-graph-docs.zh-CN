@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 622fe1863c9ced1455a01bc4facc9d47b9bbbf91
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: a34d0aed9672635c346aef19b5355c2527943214
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50943217"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58368866"
 ---
 ```csharp
 
@@ -25,7 +25,7 @@ var accessPackageAssignmentRequest = new AccessPackageAssignmentRequestObject
         new AccessPackageAnswerString
         {
             Value = "Arizona",
-            AnsweredQuestion = new AccessPackageQuestion
+            AnsweredQuestion = new AccessPackageMultipleChoiceQuestion
             {
                 Id = "A714EC6F-4EE0-4614-BD81-37E0C5ECBBFF"
             }
@@ -33,7 +33,7 @@ var accessPackageAssignmentRequest = new AccessPackageAssignmentRequestObject
         new AccessPackageAnswerString
         {
             Value = "Need access to marketing campaign material",
-            AnsweredQuestion = new AccessPackageQuestion
+            AnsweredQuestion = new AccessPackageTextInputQuestion
             {
                 Id = "AA615EE9-D9D8-4C03-BE91-BEE37106DEDA"
             }

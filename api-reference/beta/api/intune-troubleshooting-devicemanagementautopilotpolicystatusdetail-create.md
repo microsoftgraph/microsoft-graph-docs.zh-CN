@@ -5,18 +5,16 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f3f2b6614d980911c35babfa71425a2e5b0ac7e3
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 85de138c727e910db79e94086cf1670749bd118c
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51134193"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256745"
 ---
 # <a name="create-devicemanagementautopilotpolicystatusdetail"></a>创建 deviceManagementAutopilotPolicyStatusDetail
 
 命名空间：microsoft.graph
-
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -54,10 +52,10 @@ POST /deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}/policy
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|对象的 UUID|
-|displayName|String|策略的友好名称。|
+|displayName|字符串|策略的友好名称。|
 |policyType|[deviceManagementAutopilotPolicyType](../resources/intune-troubleshooting-devicemanagementautopilotpolicytype.md)|策略的类型。 可取值为：`unknown`、`application`、`appModel`、`configurationPolicy`。|
 |complianceStatus|[deviceManagementAutopilotPolicyComplianceStatus](../resources/intune-troubleshooting-devicemanagementautopilotpolicycompliancestatus.md)|策略合规性状态。 可取值为：`unknown`、`compliant`、`installed`、`notCompliant`、`notInstalled`、`error`。|
-|trackedOnEnrollmentStatus|Boolean|指示此许可是否作为 autopilot 启动注册同步会话的一部分进行跟踪|
+|trackedOnEnrollmentStatus|布尔值|指示此许可证是否作为 autopilot 启动注册同步会话的一部分进行跟踪|
 |lastReportedDateTime|DateTimeOffset|报告的策略状态的时间戳|
 |errorCode|Int32|与策略的合规性或强制状态相关联的错误模式。 强制状态的错误代码如果存在，则优先。|
 
@@ -71,7 +69,7 @@ POST /deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}/policy
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}/policyStatusDetails
+POST https://graph.microsoft.com/v1/deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}/policyStatusDetails
 Content-type: application/json
 Content-length: 314
 

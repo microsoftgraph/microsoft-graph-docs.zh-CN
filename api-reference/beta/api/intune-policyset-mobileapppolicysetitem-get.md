@@ -5,22 +5,22 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 37b375571d2dcf960251f9a37e87189fe6f87671
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 635bbeb544de8ad7777a469c0b13242c08b9af75882effb64f08e84a21cae3dc
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51134695"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54181529"
 ---
 # <a name="get-mobileapppolicysetitem"></a>获取 mobileAppPolicySetItem
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-读取 [mobileAppPolicySetItem](../resources/intune-policyset-mobileapppolicysetitem.md) 对象的属性和关系。
+读取 [mobileAppPolicySetItem 对象的属性和](../resources/intune-policyset-mobileapppolicysetitem.md) 关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

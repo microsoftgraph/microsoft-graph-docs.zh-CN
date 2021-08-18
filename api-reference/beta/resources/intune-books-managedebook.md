@@ -5,25 +5,25 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2b399e84a0f714242f7213596dc1aea20a3eba9d
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 2bb0a3c2d3909979b6d1380aaf42b78dda712239d7d5352d51ff0334d2b107f8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49295269"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54142097"
 ---
 # <a name="managedebook-resource-type"></a>managedEBook 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含托管电子书基属性的抽象类。
 
 ## <a name="methods"></a>Methods
-|方法|返回类型|Description|
+|方法|返回类型|说明|
 |:---|:---|:---|
 |[List managedEBooks](../api/intune-books-managedebook-list.md)|[managedEBook](../resources/intune-books-managedebook.md) 集合|列出 [managedEBook](../resources/intune-books-managedebook.md) 对象的属性和关系。|
 |[Get managedEBook](../api/intune-books-managedebook-get.md)|[managedEBook](../resources/intune-books-managedebook.md)|读取 [managedEBook](../resources/intune-books-managedebook.md) 对象的属性和关系。|
@@ -33,8 +33,8 @@ ms.locfileid: "49295269"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|字符串|实体的键。|
-|displayName|字符串|电子书的名称。|
-|description|字符串|说明。|
+|displayName|String|电子书的名称。|
+|description|String|说明。|
 |publisher|String|发布者。|
 |publishedDateTime|DateTimeOffset|电子书的发布日期和时间。|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|书籍封面。|
@@ -44,7 +44,7 @@ ms.locfileid: "49295269"
 |privacyInformationUrl|String|隐私声明 Url。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|Description|
+|关系|类型|说明|
 |:---|:---|:---|
 |类别|[managedEBookCategory](../resources/intune-books-managedebookcategory.md) 集合|此电子书的类别列表。|
 |assignments|[managedEBookAssignment](../resources/intune-books-managedebookassignment.md) 集合|此电子书的分配列表。|

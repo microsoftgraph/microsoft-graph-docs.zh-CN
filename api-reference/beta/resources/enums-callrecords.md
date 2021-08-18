@@ -1,16 +1,16 @@
 ---
 title: 呼叫记录枚举值
-description: Microsoft Graph 呼叫记录枚举值
+description: Microsoft Graph呼叫记录枚举值
 doc_type: enumPageType
 localization_priority: Normal
 ms.prod: cloud-communications
 author: gageames
-ms.openlocfilehash: db90473f6e963e2f9c6669cd178edab1b9d90095
-ms.sourcegitcommit: fdd69d362d1debc7b08e78269d59b531f9dfdaae
+ms.openlocfilehash: 78d168b4108a1e9835314417fc8b03b2876c6104e6a35929c17981df3b5ead79
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51697184"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54142216"
 ---
 # <a name="call-records-enum-values"></a>呼叫记录枚举值
 
@@ -18,7 +18,7 @@ ms.locfileid: "51697184"
 
 ### <a name="calltype-values"></a>callType 值
 
-| Member
+| 成员
 |:--------------
 | unknown
 | groupCall
@@ -27,7 +27,7 @@ ms.locfileid: "51697184"
 
 ### <a name="clientplatform-values"></a>clientPlatform 值
 
-| Member
+| 成员
 |:--------------
 | unknown
 | windows
@@ -43,7 +43,7 @@ ms.locfileid: "51697184"
 
 ### <a name="failurestage-values"></a>failureStage 值
 
-| Member
+| 成员
 |:--------------
 | unknown
 | callSetup
@@ -52,14 +52,14 @@ ms.locfileid: "51697184"
 
 ### <a name="mediastreamdirection-values"></a>mediaStreamDirection 值
 
-| Member
+| 成员
 |:--------------
 | callerToCallee
 | calleeToCaller
 
 ### <a name="modality-values"></a>形式值
 
-| Member
+| 成员
 |:--------------
 | unknown
 | audio
@@ -71,7 +71,7 @@ ms.locfileid: "51697184"
 
 ### <a name="networkconnectiontype-values"></a>networkConnectionType 值
 
-| Member
+| 成员
 |:--------------
 | unknown
 | 有线
@@ -82,7 +82,7 @@ ms.locfileid: "51697184"
 
 ### <a name="productfamily-values"></a>productFamily 值
 
-| Member
+| 成员
 |:--------------
 | unknown
 | teams
@@ -92,7 +92,7 @@ ms.locfileid: "51697184"
 
 ### <a name="servicerole-values"></a>serviceRole 值
 
-| Member
+| 成员
 |:--------------
 | unknown
 | customBot
@@ -119,7 +119,7 @@ ms.locfileid: "51697184"
 
 ### <a name="userfeedbackrating-values"></a>userFeedbackRating 值
 
-| Member
+| 成员
 |:--------------
 | notRated
 | bad
@@ -131,7 +131,7 @@ ms.locfileid: "51697184"
 
 ### <a name="wifiband-values"></a>wifiBand 值
 
-| Member
+| 成员
 |:--------------
 | unknown
 | frequency24GHz
@@ -141,7 +141,7 @@ ms.locfileid: "51697184"
 
 ### <a name="wifiradiotype-values"></a>wifiRadioType 值
 
-| Member
+| 成员
 |:--------------
 | unknown
 | wifi80211a
@@ -154,7 +154,7 @@ ms.locfileid: "51697184"
 
 ### <a name="pstncalldurationsource-values"></a>pstnCallDurationSource 值 
 
-|Member|
+|成员|
 |:---|
 |microsoft|
 |operator|

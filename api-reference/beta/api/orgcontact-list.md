@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a8ec280e389a957d42bcd20d62d7b9cc838cdd18
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: b2920c38682d35662be1f0d611b90b3040b9aa9383b9f422a72a23509ab7c949
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53580972"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "57163132"
 ---
 # <a name="list-orgcontacts"></a>List orgContacts
 
@@ -149,7 +149,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面介绍响应示例。
 
 <!-- {
   "blockType": "response",
@@ -228,7 +228,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-use-search-to-get-organizational-contacts-with-display-names-that-contain-the-letters-wa-including-a-count-of-returned-objects"></a>示例 4：使用 $search 获取显示名称包含字母"wa"的组织联系人，包括返回的对象计数
+### <a name="example-4-use-search-to-get-organizational-contacts-with-display-names-that-contain-the-letters-wa-including-a-count-of-returned-objects"></a>示例 4：使用 $search 获取显示名称包含字母"wa"的组织联系人（包括返回的对象计数）
 
 #### <a name="request"></a>请求
 

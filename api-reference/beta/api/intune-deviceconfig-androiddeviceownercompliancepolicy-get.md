@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f549e89d381eab6c1e911e23c17896be77f789d8
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 09d3f34b519099fe798c1f6ac22bd5aad9736a00
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51128493"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257926"
 ---
 # <a name="get-androiddeviceownercompliancepolicy"></a>获取 androidDeviceOwnerCompliancePolicy
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -53,7 +53,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [androidDeviceOwnerCompliancePolicy](../resources/intune-deviceconfig-androiddeviceownercompliancepolicy.md) 对象。
+如果成功，此方法在响应正文 `200 OK` 中返回 响应代码和 [androidDeviceOwnerCompliancePolicy](../resources/intune-deviceconfig-androiddeviceownercompliancepolicy.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1476
+Content-Length: 1524
 
 {
   "value": {
@@ -102,7 +102,8 @@ Content-Length: 1476
     "passwordMinutesOfInactivityBeforeLock": 5,
     "passwordExpirationDays": 6,
     "passwordPreviousPasswordCountToBlock": 4,
-    "storageRequireEncryption": true
+    "storageRequireEncryption": true,
+    "securityRequireIntuneAppIntegrity": true
   }
 }
 ```

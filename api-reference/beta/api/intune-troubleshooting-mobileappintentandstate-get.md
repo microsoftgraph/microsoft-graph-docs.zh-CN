@@ -5,18 +5,16 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d71c3ab2615285594d1025f4c799b16bc584309d
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 3deedf89a205cfb26e010ea6cfdb5e71c0d7ae44
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51151835"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58263217"
 ---
 # <a name="get-mobileappintentandstate"></a>获取 mobileAppIntentAndState
 
 命名空间：microsoft.graph
-
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -60,7 +58,7 @@ GET /users/{usersId}/mobileAppIntentAndStates/{mobileAppIntentAndStateId}
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-GET https://graph.microsoft.com/beta/users/{usersId}/mobileAppIntentAndStates/{mobileAppIntentAndStateId}
+GET https://graph.microsoft.com/v1/users/{usersId}/mobileAppIntentAndStates/{mobileAppIntentAndStateId}
 ```
 
 ### <a name="response"></a>响应
