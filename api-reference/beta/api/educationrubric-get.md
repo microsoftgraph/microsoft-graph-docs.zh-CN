@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 70f151e34c2768dc90526d0bd17ae476ffc7e459
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: ffa86c89337d59604f588595874b5b30266bf63a
+ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231418"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58367224"
 ---
 # <a name="get-educationrubric"></a>获取 educationRubric
 
@@ -20,7 +20,7 @@ ms.locfileid: "52231418"
 
 检索 [educationRubric 对象的属性和](../resources/educationrubric.md) 关系。
 
-请注意，在获取工作分配 () 时，返回的是下存在的原始工作分卡的不可变 `GET /education/classes/{id}/assignments/{id}/rubric` 副本 `/education/users/{id}/rubrics` 。 该副本与该特定分配相关联。
+请注意，在获取工作分配 () ，返回的是下存在的原始工作分卡的不可变 `GET /education/classes/{id}/assignments/{id}/rubric` 副本 `/education/users/{id}/rubrics` 。 该副本与该特定分配相关联。
 
 ## <a name="permissions"></a>权限
 
@@ -30,7 +30,7 @@ ms.locfileid: "52231418"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite |
+| 应用程序                            | EduAssignments.ReadBasic.All、EduAssignments.ReadWriteBasic.All、EduAssignments.Read.All、EduAssignments.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -90,7 +90,7 @@ GET https://graph.microsoft.com/beta/education/me/rubrics/{id}
 
 ### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面介绍响应示例。
 
 > [!NOTE]
 > 为了提高可读性，可能缩短了此处显示的响应对象。

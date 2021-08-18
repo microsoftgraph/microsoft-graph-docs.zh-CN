@@ -1,26 +1,24 @@
 ---
 title: mobileAppTroubleshootingAppTargetHistory 资源类型
-description: 移动应用故障排除事件中包含的历史记录项。
+description: 包含在移动应用疑难解答事件中的历史记录项。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ecff3a5ccc9e4be13151236d3f2e749089ccdf8f
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 737114ea576344f268c1100a70afed2f27ef1f3e
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49271483"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58261129"
 ---
 # <a name="mobileapptroubleshootingapptargethistory-resource-type"></a>mobileAppTroubleshootingAppTargetHistory 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
-
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-移动应用故障排除事件中包含的历史记录项。
+包含在移动应用疑难解答事件中的历史记录项。
 
 
 继承自 [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)
@@ -28,10 +26,10 @@ ms.locfileid: "49271483"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|occurrenceDateTime|DateTimeOffset|历史记录项目发生的时间。 继承自 [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
+|occurrenceDateTime|DateTimeOffset|历史记录项发生的时间。 继承自 [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
 |troubleshootingErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|包含有关错误及其修正的详细信息的对象。 继承自 [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
-|securityGroupId|字符串|目标为的 AAD 安全组 id。|
-|runState|[runState](../resources/intune-shared-runstate.md)|项目的状态。 可取值为：`unknown`、`success`、`fail`、`scriptError`、`pending`、`notApplicable`。|
+|securityGroupId|String|面向它的 AAD 安全组 ID。|
+|runState|[runState](../resources/intune-troubleshooting-runstate.md)|项目的状态。 可取值为：`unknown`、`success`、`fail`、`scriptError`、`pending`、`notApplicable`。|
 |errorCode|String|失败的错误代码，如果没有失败，则为空。|
 
 ## <a name="relationships"></a>关系

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 1c6742c7e7063ac860d4e834c252449d5c0954b2
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 3940284509b9fd31e082179d84276edd45c9324b90110fe3552b83e4c6bf2a90
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53578775"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "57332055"
 ---
 # <a name="update-identityprovider"></a>更新 identityProvider
 命名空间：microsoft.graph
@@ -69,7 +69,7 @@ PATCH /identity/identityProviders/{id}
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-update-a-specific-social-identity-provider-azure-ad-or-azure-ad-b2c"></a>示例 1：使用 Azure AD 或 Azure AD B2C **(特定** 社会标识) 
+### <a name="example-1-update-a-specific-social-identity-provider-azure-ad-or-azure-ad-b2c"></a>示例 1：在Azure AD 或 Azure AD B2C (更新特定社会标识) 
 
 #### <a name="request"></a>请求
 

@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 244313cd23c3a5635d75d3af7242df138ce253a5
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 5834635391c979d0cac69ed3628ff25eaf864fd33c2ca4e7c4cc06282e0146c0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292705"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54133570"
 ---
 # <a name="get-personresponsibility"></a>获取 personResponsibility
 命名空间：microsoft.graph
@@ -42,7 +42,7 @@ GET /users/{id | userPrincipalName}/responsibilities/{id}
 
 此方法支持 `$select` 查询参数。 指定要包括在响应中的属性列表，用逗号分隔它们。 为获得最佳性能，请仅选择所需的属性子集。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
@@ -52,7 +52,7 @@ GET /users/{id | userPrincipalName}/responsibilities/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [personResponsibility](../resources/personresponsibility.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [personResponsibility](../resources/personresponsibility.md) 对象。
 
 ## <a name="examples"></a>示例
 

@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f5446926a3161004de1f3a19b5896df95e34ca52
-ms.sourcegitcommit: eb67b0a619a4004c1611304f1252a382264a97f3
+ms.openlocfilehash: 1a1a489eb28df0d3a3e66c63114615acb60e0078
+ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061684"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58367175"
 ---
 # <a name="get-educationassignmentresource"></a>获取 educationAssignmentResource
 
@@ -26,9 +26,7 @@ ms.locfileid: "52061684"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite   |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|Application* |  EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite  | 
-
-*应用程序权限当前仅适用于个人预览版客户。
+|应用程序 |  EduAssignments.ReadBasic.All、EduAssignments.ReadWriteBasic.All、EduAssignments.Read.All、EduAssignments.ReadWrite.All  | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

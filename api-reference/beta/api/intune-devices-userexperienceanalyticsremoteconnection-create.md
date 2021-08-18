@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d044809eebf198e4347bb6182388cb7096fa882d
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: b306be76a54e2df6d41f928f0d413015fb502a60
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51135969"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257175"
 ---
 # <a name="create-userexperienceanalyticsremoteconnection"></a>创建 userExperienceAnalyticsRemoteConnection
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -27,9 +27,9 @@ ms.locfileid: "51135969"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -58,6 +58,7 @@ POST /deviceManagement/userExperienceAnalyticsRemoteConnection
 |deviceName|String|设备的名称。|
 |model|String|用户体验分析设备模型。|
 |virtualNetwork|String|用户体验分析虚拟网络。|
+|manufacturer|String|用户体验分析制造商。|
 |deviceCount|Int32|远程连接计数。 有效值为 0 到 2147483647|
 |cloudPcRoundTripTime|双精度|云电脑设备的舍入提示时间。 有效值为 0 到 1.79769313486232E+308|
 |cloudPcSignInTime|双精度|云电脑设备的登录时间。 有效值为 0 到 1.79769313486232E+308|
@@ -65,6 +66,7 @@ POST /deviceManagement/userExperienceAnalyticsRemoteConnection
 |coreBootTime|双精度|云电脑设备的核心启动时间。 有效值为 0 到 1.79769313486232E+308|
 |coreSignInTime|双精度|云电脑设备的核心登录时间。 有效值为 0 到 1.79769313486232E+308|
 |cloudPcFailurePercentage|双精度|云电脑设备的登录失败百分比。 有效值为 0 至 100|
+|userPrincipalName|字符串|用户体验分析 userPrincipalName。|
 
 
 
@@ -78,7 +80,7 @@ POST /deviceManagement/userExperienceAnalyticsRemoteConnection
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsRemoteConnection
 Content-type: application/json
-Content-length: 479
+Content-length: 573
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsRemoteConnection",
@@ -86,13 +88,15 @@ Content-length: 479
   "deviceName": "Device Name value",
   "model": "Model value",
   "virtualNetwork": "Virtual Network value",
+  "manufacturer": "Manufacturer value",
   "deviceCount": 11,
   "cloudPcRoundTripTime": 6.666666666666667,
   "cloudPcSignInTime": 5.666666666666667,
   "remoteSignInTime": 5.333333333333333,
   "coreBootTime": 4.0,
   "coreSignInTime": 4.666666666666667,
-  "cloudPcFailurePercentage": 8.0
+  "cloudPcFailurePercentage": 8.0,
+  "userPrincipalName": "User Principal Name value"
 }
 ```
 
@@ -101,7 +105,7 @@ Content-length: 479
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 528
+Content-Length: 622
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsRemoteConnection",
@@ -110,13 +114,15 @@ Content-Length: 528
   "deviceName": "Device Name value",
   "model": "Model value",
   "virtualNetwork": "Virtual Network value",
+  "manufacturer": "Manufacturer value",
   "deviceCount": 11,
   "cloudPcRoundTripTime": 6.666666666666667,
   "cloudPcSignInTime": 5.666666666666667,
   "remoteSignInTime": 5.333333333333333,
   "coreBootTime": 4.0,
   "coreSignInTime": 4.666666666666667,
-  "cloudPcFailurePercentage": 8.0
+  "cloudPcFailurePercentage": 8.0,
+  "userPrincipalName": "User Principal Name value"
 }
 ```
 

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: e0a1e9f7d82defc19e99cb0c95b9cc22ae98f0aa
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: e0bbd95caa63d9e38e92baae299aef7d5d6a48dc
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52474248"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58368874"
 ---
 ```javascript
 
@@ -16,7 +16,7 @@ const options = {
 const client = Client.init(options);
 
 const unifiedRoleManagementPolicyRule = {
-  '@odata.type': '#microsoft.graph.unifiedRoleManagementPolicyRule',
+  '@odata.type': '#microsoft.graph.unifiedRoleManagementPolicyApprovalRule',
   target: {
     '@odata.type': 'microsoft.graph.unifiedRoleManagementPolicyRuleTarget'
   }
