@@ -1,18 +1,18 @@
 ---
-title: 列出 aospDeviceOwnerCompliancePolicies
-description: 列出 aospDeviceOwnerCompliancePolicy 对象的属性和关系。
+title: 获取 deviceManagementConfigurationPolicyPolicySetItem
+description: 读取 deviceManagementConfigurationPolicyPolicySetItem 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 61a485c19544682b86f939c0e3745db528057efa
+ms.openlocfilehash: e3e78526860e76d9ef1b529395922750289eb67e
 ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/13/2021
-ms.locfileid: "58262338"
+ms.locfileid: "58263351"
 ---
-# <a name="list-aospdeviceownercompliancepolicies"></a>列出 aospDeviceOwnerCompliancePolicies
+# <a name="get-devicemanagementconfigurationpolicypolicysetitem"></a>获取 deviceManagementConfigurationPolicyPolicySetItem
 
 命名空间：microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "58262338"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-列出 [aospDeviceOwnerCompliancePolicy 对象的属性和](../resources/intune-deviceconfig-aospdeviceownercompliancepolicy.md) 关系。
+读取 [deviceManagementConfigurationPolicyPolicySetItem 对象的属性和](../resources/intune-policyset-devicemanagementconfigurationpolicypolicysetitem.md) 关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -37,8 +37,11 @@ ms.locfileid: "58262338"
 }
 -->
 ``` http
-GET /deviceManagement/deviceCompliancePolicies
+GET /deviceAppManagement/policySets/{policySetId}/items/{policySetItemId}
 ```
+
+## <a name="optional-query-parameters"></a>可选的查询参数
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 |标头|值|
@@ -50,14 +53,14 @@ GET /deviceManagement/deviceCompliancePolicies
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [aospDeviceOwnerCompliancePolicy](../resources/intune-deviceconfig-aospdeviceownercompliancepolicy.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [deviceManagementConfigurationPolicyPolicySetItem](../resources/intune-policyset-devicemanagementconfigurationpolicypolicysetitem.md) 对象。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies
+GET https://graph.microsoft.com/beta/deviceAppManagement/policySets/{policySetId}/items/{policySetItemId}
 ```
 
 ### <a name="response"></a>响应
@@ -65,32 +68,23 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 917
+Content-Length: 545
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.aospDeviceOwnerCompliancePolicy",
-      "roleScopeTagIds": [
-        "Role Scope Tag Ids value"
-      ],
-      "id": "0837b942-b942-0837-42b9-370842b93708",
-      "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
-      "description": "Description value",
-      "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-      "displayName": "Display Name value",
-      "version": 7,
-      "osMinimumVersion": "Os Minimum Version value",
-      "osMaximumVersion": "Os Maximum Version value",
-      "minAndroidSecurityPatchLevel": "Min Android Security Patch Level value",
-      "securityBlockJailbrokenDevices": true,
-      "passwordRequired": true,
-      "passwordRequiredType": "required",
-      "passwordMinutesOfInactivityBeforeLock": 5,
-      "passwordMinimumLength": 5,
-      "storageRequireEncryption": true
-    }
-  ]
+  "value": {
+    "@odata.type": "#microsoft.graph.deviceManagementConfigurationPolicyPolicySetItem",
+    "id": "feba655d-655d-feba-5d65-bafe5d65bafe",
+    "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
+    "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+    "payloadId": "Payload Id value",
+    "itemType": "Item Type value",
+    "displayName": "Display Name value",
+    "status": "validating",
+    "errorCode": "unauthorized",
+    "guidedDeploymentTags": [
+      "Guided Deployment Tags value"
+    ]
+  }
 }
 ```
 

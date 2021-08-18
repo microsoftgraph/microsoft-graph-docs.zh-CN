@@ -5,12 +5,12 @@ author: danielwood95
 localization_priority: Normal
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 5cccef1ba35edbb3eb947cee90fb70c05ff19389
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: 71c6274cb2e898a5047dcdaf71dadd6aac1012c0
+ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52473470"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58384350"
 ---
 # <a name="authenticationmethodsroot-usersregisteredbymethod"></a>authenticationMethodsRoot： usersRegisteredByMethod
 命名空间：microsoft.graph
@@ -24,13 +24,13 @@ ms.locfileid: "52473470"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|AuditLogs.Read.All|
+|委派（工作或学校帐户）|AuditLog.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
 若要访问 API， [需要以下角色之](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) 一：
 
-* 报表阅读人员
+* 报表读取者
 * 安全读者
 * 安全管理员
 * 全局读取者
@@ -68,7 +68,7 @@ GET /reports/authenticationMethods/usersRegisteredByMethod
 
 值 `admin` 包括所有 Azure AD 管理员角色。 
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|

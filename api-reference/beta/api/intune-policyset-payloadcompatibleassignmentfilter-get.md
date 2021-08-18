@@ -1,18 +1,18 @@
 ---
-title: 列出 androidForWorkEnrollmentProfiles
-description: 列出 androidForWorkEnrollmentProfile 对象的属性和关系。
+title: 获取 payloadCompatibleAssignmentFilter
+description: 读取 payloadCompatibleAssignmentFilter 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6e1973947cacad804a964b1ec2ba757ef1b78337d9a50317a88b5481859487e1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d667c8e5b8da726f9b4e7d7e61e022f52681240c
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54186669"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58259279"
 ---
-# <a name="list-androidforworkenrollmentprofiles"></a>列出 androidForWorkEnrollmentProfiles
+# <a name="get-payloadcompatibleassignmentfilter"></a>获取 payloadCompatibleAssignmentFilter
 
 命名空间：microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "54186669"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-列出 [androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md) 对象的属性和关系。
+读取 [payloadCompatibleAssignmentFilter 对象的属性和](../resources/intune-policyset-payloadcompatibleassignmentfilter.md) 关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -37,8 +37,11 @@ ms.locfileid: "54186669"
 }
 -->
 ``` http
-GET /deviceManagement/androidForWorkEnrollmentProfiles
+GET /deviceManagement/assignmentFilters/{deviceAndAppManagementAssignmentFilterId}
 ```
+
+## <a name="optional-query-parameters"></a>可选的查询参数
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 |标头|值|
@@ -50,14 +53,14 @@ GET /deviceManagement/androidForWorkEnrollmentProfiles
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [payloadCompatibleAssignmentFilter](../resources/intune-policyset-payloadcompatibleassignmentfilter.md) 对象。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/androidForWorkEnrollmentProfiles
+GET https://graph.microsoft.com/beta/deviceManagement/assignmentFilters/{deviceAndAppManagementAssignmentFilterId}
 ```
 
 ### <a name="response"></a>响应
@@ -65,29 +68,23 @@ GET https://graph.microsoft.com/beta/deviceManagement/androidForWorkEnrollmentPr
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 765
+Content-Length: 528
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.androidForWorkEnrollmentProfile",
-      "accountId": "Account Id value",
-      "id": "e6742553-2553-e674-5325-74e6532574e6",
-      "displayName": "Display Name value",
-      "description": "Description value",
-      "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
-      "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-      "tokenValue": "Token Value value",
-      "tokenExpirationDateTime": "2016-12-31T23:59:54.0590989-08:00",
-      "enrolledDeviceCount": 3,
-      "qrCodeContent": "Qr Code Content value",
-      "qrCodeImage": {
-        "@odata.type": "microsoft.graph.mimeContent",
-        "type": "Type value",
-        "value": "dmFsdWU="
-      }
-    }
-  ]
+  "value": {
+    "@odata.type": "#microsoft.graph.payloadCompatibleAssignmentFilter",
+    "id": "6d189738-9738-6d18-3897-186d3897186d",
+    "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
+    "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+    "displayName": "Display Name value",
+    "description": "Description value",
+    "platform": "androidForWork",
+    "rule": "Rule value",
+    "roleScopeTags": [
+      "Role Scope Tags value"
+    ],
+    "payloadType": "enrollmentRestrictions"
+  }
 }
 ```
 

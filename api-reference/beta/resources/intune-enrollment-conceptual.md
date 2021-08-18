@@ -1,15 +1,15 @@
 ---
 title: 使用 Intune 注册公司设备 - Microsoft Graph API
-description: 列出用于 Intune 终结点的 Microsoft Graph API (为) 组织注册设备的 REST 应用程序。
+description: 列出为Graph组织注册设备的 Intune (REST) Microsoft Graph API。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: a85db8c4397659789feafa395195a39542928f01
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 96d63820a4846f9db5345ace8629c299ab6eb755
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51131951"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58261143"
 ---
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>使用 Intune 注册企业拥有的设备
 
@@ -29,13 +29,13 @@ ms.locfileid: "51131951"
 - [Apple 用户启动的注册配置文件](intune-enrollment-appleuserinitiatedenrollmentprofile.md)
 - [Apple 用户启动的注册类型](intune-enrollment-appleuserinitiatedenrollmenttype.md)
 - [Azure AD Windows AutoPilot Deployment 配置文件](intune-enrollment-azureadwindowsautopilotdeploymentprofile.md)
-- [已删除的 Windows Autopilot 设备状态](intune-enrollment-deletedwindowsautopilotdevicestate.md)
 - [DEP 注册基准配置文件](intune-enrollment-depenrollmentbaseprofile.md)
 - [DEP 注册配置文件](intune-enrollment-depenrollmentprofile.md)
 - [DEP iOS 注册配置文件](intune-enrollment-depiosenrollmentprofile.md)
 - [DEP macOS 注册配置文件](intune-enrollment-depmacosenrollmentprofile.md)
 - [DEP 载入设置](intune-enrollment-deponboardingsetting.md)
 - [DEP 令牌类型](intune-enrollment-deptokentype.md)
+- [设备平台类型](intune-enrollment-deviceplatformtype.md)
 - [发现源](intune-enrollment-discoverysource.md)
 - [注册配置文件](intune-enrollment-enrollmentprofile.md)
 - [已导入的 Apple 设备标识](intune-enrollment-importedappledeviceidentity.md)
@@ -53,7 +53,6 @@ ms.locfileid: "51131951"
 - [平台](intune-enrollment-platform.md)
 - [建议的注册限制](intune-enrollment-suggestedenrollmentlimit.md)
 - [Windows Autopilot Deployment 配置文件分配](intune-enrollment-windowsautopilotdeploymentprofileassignment.md)
-- [Windows Autopilot 设备删除状态](intune-enrollment-windowsautopilotdevicedeletionstate.md)
 - [Windows Autopilot 设备标识](intune-enrollment-windowsautopilotdeviceidentity.md)
 - [Windows Autopilot 设备类型](intune-enrollment-windowsautopilotdevicetype.md)
 - [Windows Autopilot 配置文件分配详细状态](intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)

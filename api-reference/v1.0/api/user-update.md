@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 670cdbfe2133e6137fc660d7428d9d899d05afe8
-ms.sourcegitcommit: c541d3eceafda4812e2c0c029c95ddfb92ef58b3
+ms.openlocfilehash: b43440be1be87f4ff7846d21b5e7d98039829021
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "53726731"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256548"
 ---
 # <a name="update-user"></a>更新用户
 
@@ -91,7 +91,7 @@ PATCH /users/{id | userPrincipalName}
 |userType|String|可用于对目录中的用户类型进行分类的字符串值，例如`Member``Guest`。          |
 
 > [!NOTE] 
-> 以下属性无法使用仅限应用程序上下文进行更新：**aboutMe**, **birthday**, **hireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, and **skills**。
+> 无法使用仅限应用程序的上下文更新以下属性： **aboutMe**、 **生日**、 **hireDate**、 **兴趣**、 **mySite**、 **pastProjects**、 **preferredName**、 **职责**、 **学校** 和 **技能**。
 
 ## <a name="response"></a>响应
 

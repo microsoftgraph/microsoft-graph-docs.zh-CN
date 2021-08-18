@@ -5,12 +5,12 @@ localization_priority: Priority
 author: Sammak
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: c70433fe800c38b139b5f9f6ad050ab06254f067674cc203e592c82cb51b8a59
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 86946a61024739f0722ddab5cba007b51c81c75d
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249207"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58260791"
 ---
 # <a name="invitation-resource-type"></a>邀请资源类型
 
@@ -39,8 +39,8 @@ ms.locfileid: "54249207"
 |:---|:---|:---|
 |invitedUserDisplayName|String|被邀请的用户的显示名称。|
 |invitedUserEmailAddress|String|被邀请的用户的电子邮件地址。 必需。 电子邮件地址中不允许使用以下特殊字符：<br><ul><li>波形符 (`~`)</li><li>感叹号 (`!`)</li><li>井号 (`#`)</li><li>美元符号 (`$`)</li><li>百分号 (`%`)</li><li>扬抑符 (`^`)</li><li>与号 (`&`)</li><li>星号 (`*`)</li><li>圆括号 (`( )`)</li><li>加号 (`+`)</li><li>等号 (`=`)</li><li>方括号 (`[ ]`)</li><li>大括号 (`{ }`)</li><li>反斜杠 (`\`)</li><li>斜杠符号 (`/`)</li><li>竖线 (`\|`)</li><li>分号 (`;`)</li><li>冒号 (`:`)</li><li>引号 (`"`)</li><li>尖括号 (`< >`)</li><li>问号 (`?`)</li><li>逗号 (`,`)</li></ul><br>但是，存在下列例外情况：<br><ul><li>允许在用户名中的任何位置使用句点 (`.`) 或连字符 (`-`)，但名称的开头或结尾除外。</li><li>允许在用户名中的任何位置使用下划线 (`_`)。 这包括名称的开头或结尾。</li></ul>|
-|invitedUserMessageInfo|[invitedUserMessageInfo](invitedusermessageinfo.md|要发送至邀请用户的邮件的其他配置，其中包括自定义邮件文本、语言和抄送收件人列表。|
-|sendInvitationMessage|Boolean|指示电子邮件是否应发送至邀请的用户。默认值为 false。|
+|invitedUserMessageInfo|[invitedUserMessageInfo](invitedusermessageinfo.md)|要发送至邀请用户的邮件的其他配置，其中包括自定义邮件文本、语言和抄送收件人列表。|
+|sendInvitationMessage|Boolean|指示电子邮件是否应发送至邀请的用户。 默认值为 `false`。|
 |inviteRedirectUrl|String|用户在兑现邀请后会被重定向至该 URL。必填。|
 |inviteRedeemUrl|String|用户用于兑现邀请的 URL。只读。|
 |invitedUserType|String|被邀请的用户的 userType。 默认情况下，此操作为 `Guest`。 如果您是公司管理员， `Member` 邀请作为管理员。 |

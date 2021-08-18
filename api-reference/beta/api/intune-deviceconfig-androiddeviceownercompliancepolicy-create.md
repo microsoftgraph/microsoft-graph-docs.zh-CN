@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 28e774081325269af71a3e3c0908ff889bb16aa9
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: b73d397816dd8b09cc530684aabc4a6391203104
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51128500"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58263077"
 ---
 # <a name="create-androiddeviceownercompliancepolicy"></a>创建 androidDeviceOwnerCompliancePolicy
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -54,11 +54,11 @@ POST /deviceManagement/deviceCompliancePolicies
 |属性|类型|说明|
 |:---|:---|:---|
 |roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
-|id|String|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|id|字符串|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
-|说明|String|管理员提供的设备配置的说明。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|description|String|管理员提供的设备配置的说明。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
-|displayName|String|管理员提供的设备配置的名称。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |deviceThreatProtectionEnabled|Boolean|要求设备已启用设备威胁防护。|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|要求移动威胁防护最低风险级别来报告不符合情况。 可取值为：`unavailable`、`secured`、`low`、`medium`、`high`、`notSet`。|
@@ -81,6 +81,7 @@ POST /deviceManagement/deviceCompliancePolicies
 |passwordExpirationDays|Int32|密码过期前的天数。 有效值为 1 至 365。|
 |passwordPreviousPasswordCountToBlock|Int32|要阻止的以前密码的数量。 有效值为 1 至 24|
 |storageRequireEncryption|Boolean|要求对 Android 设备加密。|
+|securityRequireIntuneAppIntegrity|布尔值|如果设置为 true，则检查在完全托管、专用或公司拥有的工作配置文件 Android Enterprise 注册设备上安装的 Intune 应用是否是由 Microsoft 从托管 Google Playstore提供的。 如果检查失败，设备将报告为不兼容。|
 
 
 
@@ -94,7 +95,7 @@ POST /deviceManagement/deviceCompliancePolicies
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies
 Content-type: application/json
-Content-length: 1223
+Content-length: 1269
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerCompliancePolicy",
@@ -124,7 +125,8 @@ Content-length: 1223
   "passwordMinutesOfInactivityBeforeLock": 5,
   "passwordExpirationDays": 6,
   "passwordPreviousPasswordCountToBlock": 4,
-  "storageRequireEncryption": true
+  "storageRequireEncryption": true,
+  "securityRequireIntuneAppIntegrity": true
 }
 ```
 
@@ -133,7 +135,7 @@ Content-length: 1223
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1395
+Content-Length: 1441
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerCompliancePolicy",
@@ -166,7 +168,8 @@ Content-Length: 1395
   "passwordMinutesOfInactivityBeforeLock": 5,
   "passwordExpirationDays": 6,
   "passwordPreviousPasswordCountToBlock": 4,
-  "storageRequireEncryption": true
+  "storageRequireEncryption": true,
+  "securityRequireIntuneAppIntegrity": true
 }
 ```
 

@@ -1,26 +1,26 @@
 ---
 title: keyRealValuePair 资源类型
-description: 具有字符串键和实际 (浮点) 值的键/值对。
+description: 键值对，包含字符串键和 (浮点) 值。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6ea15032fec91d9c47ac57ad23dce81bd85cafbb
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 66c88b3ec9576f2c18dbcb6c697fed6e2b78474c6e0ee2c7e10f0e4a0d49820f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49269054"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54203006"
 ---
 # <a name="keyrealvaluepair-resource-type"></a>keyRealValuePair 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-具有字符串键和实际 (浮点) 值的键/值对。
+键值对，包含字符串键和 (浮点) 值。
 
 
 继承自 [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)
@@ -28,8 +28,8 @@ ms.locfileid: "49269054"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|Key|字符串|键/值对的字符串键。 继承自 [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)|
-|值|双精度|实际 (的键值对的浮点) 值。|
+|Key|String|键值对的字符串键。 继承自 [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)|
+|值|双精度|键 (对) 浮点值的实际值。|
 
 ## <a name="relationships"></a>关系
 无

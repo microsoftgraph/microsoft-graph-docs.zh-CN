@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2ba737eb1348010951484e077f85d99842aaceed
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: e95a6f1183ecb942f5606f6db31b1b3577a6a77d1397ab7f5ed22341fa04c259
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51139457"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54186648"
 ---
 # <a name="create-officesuiteapp"></a>创建 officeSuiteApp
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -54,8 +54,8 @@ POST /deviceAppManagement/mobileApps
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|displayName|String|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|说明|String|应用的说明。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|displayName|字符串|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|description|String|应用的说明。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publisher|String|应用的发布者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|要显示在应用详细信息中并用于图标上传的大图标。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |createdDateTime|DateTimeOffset|创建应用的日期和时间。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
@@ -63,7 +63,7 @@ POST /deviceAppManagement/mobileApps
 |isFeatured|Boolean|指示应用是否被管理员标记为特色的值。继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |privacyInformationUrl|String|隐私声明 URL。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |informationUrl|String|详细信息 URL。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|owner|String|应用的所有者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|Owner|String|应用的所有者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |developer|String|应用的开发者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |notes|String|应用的备注。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |uploadState|Int32|上载状态。 可能的值是：0 - `Not Ready` 、1 - `Ready` 、2 - `Processing` 。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
@@ -73,18 +73,18 @@ POST /deviceAppManagement/mobileApps
 |dependentAppCount|Int32|子应用具有的依赖项总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersedingAppCount|Int32|此应用直接或间接取代的应用总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersededAppCount|Int32|此应用直接或间接被取代的应用总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|autoAcceptEula|Boolean|在最终用户的设备上自动接受 EULA 的值。|
+|autoAcceptEula|布尔值|在最终用户的设备上自动接受 EULA 的值。|
 |productIds|[officeProductId](../resources/intune-apps-officeproductid.md) 集合|表示 Office365 套件 SKU 的产品 ID。 可取值为：`o365ProPlusRetail`、`o365BusinessRetail`、`visioProRetail`、`projectProRetail`。|
 |excludedApps|[excludedApps](../resources/intune-apps-excludedapps.md)|表示从所选 Office365 产品 ID 中排除的应用的属性。|
-|useSharedComputerActivation|Boolean|表示共享计算机激活是否不用于 Office365 应用套件的属性。|
+|useSharedComputerActivation|布尔值|表示共享计算机激活是否不用于 Office365 应用套件的属性。|
 |updateChannel|[officeUpdateChannel](../resources/intune-apps-officeupdatechannel.md)|表示 Office365 更新频道的属性。 可取值为：`none`、`current`、`deferred`、`firstReleaseCurrent`、`firstReleaseDeferred`、`monthlyEnterprise`。|
 |officePlatformArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|表示 Office365 应用套件版本的 属性。 可取值为：`none`、`x86`、`x64`、`arm`、`neutral`、`arm64`。|
 |localesToInstall|String collection|表示安装 Office365 应用时安装区域设置的属性。 它使用标准 RFC 6033。 参考： https://technet.microsoft.com/library/cc179219(v=office.16).aspx|
 |installProgressDisplayLevel|[officeSuiteInstallProgressDisplayLevel](../resources/intune-apps-officesuiteinstallprogressdisplaylevel.md)|指定设备上安装进度安装程序 UI 的显示级别。 可取值为：`none`、`full`。|
-|shouldUninstallOlderVersionsOfOffice|Boolean|确定是否将 Office365 应用套件部署到设备时卸载现有 Office MSI 的属性。|
+|shouldUninstallOlderVersionsOfOffice|布尔值|属性，确定是否卸载 MSI Office Office365 应用套件是否已部署到设备。|
 |targetVersion|String|表示 Office365 应用套件的特定目标版本的 属性，该版本应一直部署在设备上。|
 |updateVersion|String|表示特定目标版本可用于 Office365 应用套件的更新版本的 属性。|
-|officeConfigurationXml|Binary|表示可指定 Office ProPlus Apps 的 XML 配置文件的属性。 优先于所有其他属性。 存在此参数时，XML 配置文件将用于创建应用。|
+|officeConfigurationXml|二进制|表示可针对专业增强版应用指定的 XML 配置文件Office属性。 优先于所有其他属性。 存在此参数时，XML 配置文件将用于创建应用。|
 
 
 
