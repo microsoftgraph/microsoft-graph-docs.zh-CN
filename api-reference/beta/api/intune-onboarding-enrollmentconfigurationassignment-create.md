@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 51e139fbf3c903bb591647566ab74177f397add7
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: c4e88d8145c2796324462ed341b00f0c7ff7958daf8d82c968c7c624e7da6aa6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51145444"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54230177"
 ---
 # <a name="create-enrollmentconfigurationassignment"></a>创建 enrollmentConfigurationAssignment
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -56,7 +56,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigura
 |id|String|注册配置分配密钥|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|表示对租户中托管设备的分配|
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|用于部署到组、直接或 policySet 的资源的类型。 可取值为：`direct`、`policySets`。|
-|sourceId|String|用于部署到组的资源的标识符|
+|sourceId|字符串|用于部署到组的资源的标识符|
 
 
 

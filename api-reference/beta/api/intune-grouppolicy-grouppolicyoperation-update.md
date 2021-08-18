@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a2aac24a6cc4d5a121b364b25c3ee5d18c76faf0
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 9be5db7f8d97f0b2bbb2c42a9e3bc00ce499b5e339ec10b36a4411a5445c38be
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51145738"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54217496"
 ---
 # <a name="update-grouppolicyoperation"></a>更新 groupPolicyOperation
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 

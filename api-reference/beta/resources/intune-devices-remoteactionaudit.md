@@ -5,24 +5,24 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 214ef0f5eed28d02dd172e6acb7845ea379f372f
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: a3cf9a0c16063c0f2fcd359598a677fa59ad042f49472077be354bc40854ed75
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51866571"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249865"
 ---
 # <a name="remoteactionaudit-resource-type"></a>remoteActionAudit 资源类型
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 在属于特定租户的设备上启动的远程操作的报告。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 remoteActionAudits](../api/intune-devices-remoteactionaudit-list.md)|[remoteActionAudit](../resources/intune-devices-remoteactionaudit.md) 集合|列出 [remoteActionAudit 对象的属性和](../resources/intune-devices-remoteactionaudit.md) 关系。|
@@ -37,13 +37,13 @@ ms.locfileid: "51866571"
 |id|String|报告 ID。|
 |deviceDisplayName|String|Intune 设备名称。|
 |userName|String|\[已弃用 \] 请改为使用 InitiatedByUserPrincipalName。|
-|initiatedByUserPrincipalName|String|启动设备操作的用户，格式为 UPN。|
-|action|[remoteAction](../resources/intune-devices-remoteaction.md)|操作名称。 可能的值是 `unknown` `factoryReset` `removeCompanyData` ：、、、、、、、、、 `resetPasscode` `remoteLock` `enableLostMode` `disableLostMode` `locateDevice` `rebootNow` `recoverPasscode` `cleanWindowsDevice` `logoutSharedAppleDeviceActiveUser` `quickScan` `fullScan` `windowsDefenderUpdateSignatures` `factoryResetKeepEnrollmentData` `updateDeviceAccount` `automaticRedeployment` `shutDown` `rotateBitLockerKeys` `rotateFileVaultKey` `getFileVaultKey` `setDeviceName` `activateDeviceEsim` 。|
+|initiatedByUserPrincipalName|字符串|启动设备操作的用户，格式为 UPN。|
+|action|[remoteAction](../resources/intune-devices-remoteaction.md)|操作名称。 可能的值是 `unknown` `factoryReset` ：、、、、、、、、、、。 `removeCompanyData` `resetPasscode` `remoteLock` `enableLostMode` `disableLostMode` `locateDevice` `rebootNow` `recoverPasscode` `cleanWindowsDevice` `logoutSharedAppleDeviceActiveUser` `quickScan` `fullScan` `windowsDefenderUpdateSignatures` `factoryResetKeepEnrollmentData` `updateDeviceAccount` `automaticRedeployment` `shutDown` `rotateBitLockerKeys` `rotateFileVaultKey` `getFileVaultKey` `setDeviceName` `activateDeviceEsim`|
 |requestDateTime|DateTimeOffset|发出操作的时间（以 UTC 表示）。|
-|deviceOwnerUserPrincipalName|String|设备所有者的 Upn。|
+|deviceOwnerUserPrincipalName|字符串|设备所有者的 Upn。|
 |deviceIMEI|String|设备的 IMEI。|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|操作状态。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed` 或 `notSupported`。|
-|managedDeviceId|String|操作目标。|
+|managedDeviceId|字符串|操作目标。|
 
 ## <a name="relationships"></a>关系
 无

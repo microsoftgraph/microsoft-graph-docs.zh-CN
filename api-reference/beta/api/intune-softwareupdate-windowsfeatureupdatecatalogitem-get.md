@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3007fdf3fff4b1670e217e8e0e7c60a1d827a331
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 7374464f534811d70c6a5ce9cffd843b1924f9c4b509ff916d050d51ec3013fc
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51866928"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54207360"
 ---
 # <a name="get-windowsfeatureupdatecatalogitem"></a>获取 windowsFeatureUpdateCatalogItem
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -53,7 +53,7 @@ GET /deviceManagement/windowsUpdateCatalogItems/{windowsUpdateCatalogItemId}
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [windowsFeatureUpdateCatalogItem](../resources/intune-softwareupdate-windowsfeatureupdatecatalogitem.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [windowsFeatureUpdateCatalogItem](../resources/intune-softwareupdate-windowsfeatureupdatecatalogitem.md) 对象。
 
 ## <a name="example"></a>示例
 

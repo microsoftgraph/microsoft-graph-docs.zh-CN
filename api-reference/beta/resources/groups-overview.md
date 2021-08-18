@@ -5,12 +5,12 @@ author: Jordanndahl
 localization_priority: Priority
 ms.prod: groups
 doc_type: conceptualPageType
-ms.openlocfilehash: 06bd39316b917ef497be20298597839f10e64d38
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 102d181a8012303eb1b083e1a8ddd1a4c1f13573aade9cecb8138980d27e2b64
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682351"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54240160"
 ---
 # <a name="working-with-groups-in-microsoft-graph"></a>在 Microsoft Graph 中使用组
 

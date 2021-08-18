@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9a77b5bfcacea12f54cf20eb8b358e0f9d69fc9664ae8289ae13ad2aa2182611
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c12dfbd28e9e16d631177e586aba6edafe3a8a17
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54147516"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58266693"
 ---
 # <a name="get-devicemanagement"></a>获取 deviceManagement
 
@@ -25,9 +25,9 @@ ms.locfileid: "54147516"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

@@ -1,22 +1,22 @@
 ---
 title: 删除 mobileAppTroubleshootingEvent
-description: 介绍适用于 Intune 的 Microsoft Graph API 的 Delete mobileAppTroubleshootingEvent 方法，该方法支持多个工作流。
+description: 介绍 Microsoft for Intune Graph API 的 Delete mobileAppTroubleshootingEvent 方法，该方法支持多个工作流。
 localization_priority: Normal
 author: rolyon
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b44012db5d7a22aa2d1ec10371e26a48731c7df1
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 07835dc8ac092519c942b8a548860d7cc7a7271813e9ac213681a7829bb04715
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51863757"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54226721"
 ---
 # <a name="delete-mobileapptroubleshootingevent"></a>删除 mobileAppTroubleshootingEvent
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph 中的 /beta 版本下的 API 可能会更改。 不支持在生产应用程序中使用这些 API。
+> **重要提示：** Microsoft Graph /beta 版本的 API 可能会更改。 不支持在生产应用程序中使用这些 API。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 

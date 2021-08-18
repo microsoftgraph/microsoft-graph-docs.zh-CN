@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 92491f3cfa3c3336a900b72353d47c2fe6d1140d
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: d179ba3395df7e874a9e336ecc64ac4d307c1e4e2464aab051f2268ec49cee1e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51865962"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54228035"
 ---
 # <a name="getrolescopetagsbyids-function"></a>getRoleScopeTagsByIds 函数
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph 中的 /beta 版本下的 API 可能会更改。 不支持在生产应用程序中使用这些 API。
+> **重要提示：** Microsoft Graph /beta 版本的 API 可能会更改。 不支持在生产应用程序中使用这些 API。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: dc25b02005e0f419fbb878005006f155f1f99e72
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 9c72ee5a84a0bf365eb6884901c2128e5b23c531109349eeb15e7d519cb15e8d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50159428"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249683"
 ---
 # <a name="workbookcommentreply-resource-type"></a>workbookCommentReply 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "50159428"
 
 表示对 excel 注释的答复。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -31,7 +31,7 @@ ms.locfileid: "50159428"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |内容|String|回复的注释的内容。|
-|contentType|String|指示已答复注释的类型。|
+|contentType|String|指示所答复注释的类型。|
 |id|String|表示批注标识符。 只读。|
 
 ## <a name="relationships"></a>关系

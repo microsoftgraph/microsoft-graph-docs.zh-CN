@@ -1,18 +1,18 @@
 ---
-title: completeSignup 操作
+title: moveDevicesToOU 操作
 description: 尚未记录
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 09172daecda72634a5f078a217677921cecb43fc9ff1cddcd1808e37cdf0208d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bace04cb13ae740b8b2a621bfa4199b74a45e6b4
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54227195"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58265458"
 ---
-# <a name="completesignup-action"></a>completeSignup 操作
+# <a name="movedevicestoou-action"></a>moveDevicesToOU 操作
 
 命名空间：microsoft.graph
 
@@ -27,9 +27,9 @@ ms.locfileid: "54227195"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|**TODO： Determine AppOnly scopes **|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -37,7 +37,10 @@ ms.locfileid: "54227195"
 }
 -->
 ``` http
-POST /deviceManagement/androidForWorkSettings/completeSignup
+POST /deviceManagement/managedDevices/moveDevicesToOU
+POST /deviceManagement/comanagedDevices/moveDevicesToOU
+POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/users/{userId}/managedDevices/moveDevicesToOU
+POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps/{detectedAppId}/managedDevices/moveDevicesToOU
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -53,7 +56,8 @@ POST /deviceManagement/androidForWorkSettings/completeSignup
 
 |属性|类型|说明|
 |:---|:---|:---|
-|enterpriseToken|String|尚未记录|
+|deviceIds|Guid 集合|尚未记录|
+|organizationalUnitPath|String|尚未记录|
 
 
 
@@ -65,13 +69,16 @@ POST /deviceManagement/androidForWorkSettings/completeSignup
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/androidForWorkSettings/completeSignup
+POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/moveDevicesToOU
 
 Content-type: application/json
-Content-length: 51
+Content-length: 134
 
 {
-  "enterpriseToken": "Enterprise Token value"
+  "deviceIds": [
+    "fb450a76-0a76-fb45-760a-45fb760a45fb"
+  ],
+  "organizationalUnitPath": "Organizational Unit Path value"
 }
 ```
 

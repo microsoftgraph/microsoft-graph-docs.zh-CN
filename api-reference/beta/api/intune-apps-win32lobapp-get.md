@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6f7baa36f256bf9bbc0bc671d0574146390aaecc
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 11246a46f461719ba6a185eaf4df7c2b27a5dd94
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862965"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58265803"
 ---
 # <a name="get-win32lobapp"></a>获取 win32LobApp
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3841
+Content-Length: 3866
 
 {
   "value": {
@@ -120,7 +120,8 @@ Content-Length: 3841
       "v10_1903": true,
       "v10_1909": true,
       "v10_2004": true,
-      "v10_2H20": true
+      "v10_2H20": true,
+      "v10_21H1": true
     },
     "minimumFreeDiskSpaceInMB": 8,
     "minimumMemoryInMB": 1,

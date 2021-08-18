@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 128f4608e53dddeeb5ba0c36ee0ea91b710422ce
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 9599139ae31f2a8b59c88497a2e3fc5b70ccb60d
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52665110"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58265303"
 ---
 # <a name="get-devicemanagementconfigurationsimplesettingdefinition"></a>获取 deviceManagementConfigurationSimpleSettingDefinition
 
@@ -29,7 +29,7 @@ ms.locfileid: "52665110"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

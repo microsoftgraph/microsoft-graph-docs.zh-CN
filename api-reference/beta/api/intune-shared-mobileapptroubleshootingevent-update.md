@@ -1,22 +1,22 @@
 ---
 title: 更新 mobileAppTroubleshootingEvent
-description: 介绍适用于 Intune 的 Microsoft Graph API 的更新 mobileAppTroubleshootingEvent 方法，该方法支持多个工作流。
+description: 介绍 Microsoft for Intune Graph API 的更新 mobileAppTroubleshootingEvent 方法，该方法支持多个工作流。
 localization_priority: Normal
 author: rolyon
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d159662ba7823560a321fae03e73b37721b44d4a
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: af1eb5af42745adc4e8cc50fe0aa44aa726c5cfe
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51863687"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58265733"
 ---
 # <a name="update-mobileapptroubleshootingevent"></a>更新 mobileAppTroubleshootingEvent
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph 中的 /beta 版本下的 API 可能会更改。 不支持在生产应用程序中使用这些 API。
+> **重要提示：** Microsoft Graph /beta 版本的 API 可能会更改。 不支持在生产应用程序中使用这些 API。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -60,11 +60,11 @@ PATCH /users/{usersId}/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingE
 |:---|:---|:---|
 |id|String|对象的 GUID|
 |**疑难解答**|
-|additionalInformation|[keyValuePair](../resources/intune-shared-keyvaluepair.md) 集合|一组字符串键和字符串值对，提供有关疑难解答事件的其他信息。|
+|additionalInformation|[keyValuePair](../resources/intune-troubleshooting-keyvaluepair.md) 集合|一组字符串键和字符串值对，提供有关疑难解答事件的其他信息。|
 |applicationId|String|Intune 应用程序标识符。|
 |correlationId|String|用于跟踪服务中的故障的 ID。 |
 |eventDateTime|DateTimeOffset|事件发生的时间。 |
-|eventName|String|与疑难解答事件对应的事件名称。 可选。|
+|eventName|字符串|与疑难解答事件对应的事件名称。 可选。|
 |history|[mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md) 集合|Intune 移动应用程序疑难解答历史记录项。|
 |managedDeviceIdentifier|String|Intune 创建或收集的设备标识符。|
 |troubleshootingErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|包含有关错误及其修正的详细信息的对象。 |
