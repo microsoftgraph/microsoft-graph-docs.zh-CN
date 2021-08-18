@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5cf9a9ffead755691cbefe12a56d36b4e8b44d40
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: c3cf40d3f632ed7c2cb9e221457298a302049d88ad24cbe85c8122693dc1ff6f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52666854"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54173049"
 ---
 # <a name="devicemanagementconfigurationstringsettingvalueconstantdefaulttemplate-resource-type"></a>deviceManagementConfigurationStringSettingValueConstantDefaultTemplate 资源类型
 

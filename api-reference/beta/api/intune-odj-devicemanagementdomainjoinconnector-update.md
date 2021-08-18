@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3507f878ce94950c702ad61ca377aa7aaafb1c2d
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 9f050ac369a069d0f0bf550dbe7b799e3fdee4278951184c90b471e1c047e063
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51152738"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54177021"
 ---
 # <a name="update-devicemanagementdomainjoinconnector"></a>更新 deviceManagementDomainJoinConnector
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -54,8 +54,8 @@ PATCH /deviceManagement/domainJoinConnectors/{deviceManagementDomainJoinConnecto
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|表示连接器的唯一标识符。|
-|displayName|String|连接器显示名称。|
-|lastConnectionDateTime|DateTimeOffset|上次连接器联系 Intune 的时间。|
+|displayName|字符串|连接器显示名称。|
+|lastConnectionDateTime|DateTimeOffset|上次连接器与 Intune 联系的时间。|
 |state|[deviceManagementDomainJoinConnectorState](../resources/intune-odj-devicemanagementdomainjoinconnectorstate.md)|连接器状态。 可取值为：`active`、`error`、`inactive`。|
 |version|String|连接器的版本。|
 
