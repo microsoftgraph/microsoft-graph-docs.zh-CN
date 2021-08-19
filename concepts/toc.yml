@@ -237,6 +237,9 @@ items:
           - name: 多租户管理（预览）
             displayName: Microsoft 365 Lighthouse
             href: managedtenants-concept-overview.md
+          - name: 服务运行状况和通信
+            display name: service communications API
+            href: service-communications-concept-overview.md
       - name: 教育
         items:
           - name: 概述
@@ -412,8 +415,6 @@ items:
             href: information-protection-overview.md
           - name: 合作伙伴机遇
             href: security-partner-overview.md
-      - name: 服务运行状况和通信（预览）
-        href: service-communications-concept-overview.md
       - name: 网站和列表
         href: sharepoint-concept-overview.md
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
@@ -612,6 +613,8 @@ items:
                     href: migrate-azure-ad-graph-client-libraries.md
               - name: 4：部署、测试和扩展
                 href: migrate-azure-ad-graph-deploy-test-extend.md
+              - name: 迁移常见问题解答
+                href: migrate-azure-ad-graph-faq.md
       - name: 使用 SDK
         items:
           - name: 概述

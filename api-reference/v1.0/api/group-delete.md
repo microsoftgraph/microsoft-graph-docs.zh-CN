@@ -5,12 +5,12 @@ author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a81560df24820aaa79a9fb7d4adebcc7e4d89ecb
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: df785b21fd7a6261d13c4f65ba207bb3ec6564d7
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680953"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58266784"
 ---
 # <a name="delete-group"></a>删除组
 
@@ -18,8 +18,7 @@ ms.locfileid: "52680953"
 
 删除组。  
 
-删除后，Microsoft 365组移动到临时容器，可以在 30 天内还原。  此后，它们将被永久删除。  要了解详细信息，请参阅 [deletedItems](../resources/directory.md)。  这仅适用于Microsoft 365组。
-
+删除后，Microsoft 365组移动到临时容器，可以在 30 天内还原。  此后，它们将被永久删除。 这不适用于立即永久删除的安全组和通讯组。 要了解详细信息，请参阅 [deletedItems](../resources/directory.md)。
 ## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

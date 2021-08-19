@@ -5,12 +5,12 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 42e8eea86222c360d9b08e70b7d6fded2a12afb4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9c5e3fa689cc830bf1041c240bf135de2fbab116ef876871a086fe66595b3e89
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48070392"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54241112"
 ---
 # <a name="workbookoperationerror-resource-type"></a>workbookOperationError 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "48070392"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|code|String| 错误代码。|
+|code|字符串| 错误代码。|
 |message|String| 错误消息。|
 |innererror|error object| 可选。可能比顶级错误更具体的其他错误对象。|
 

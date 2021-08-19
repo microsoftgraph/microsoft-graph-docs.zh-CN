@@ -5,14 +5,14 @@ localization_priority: Normal
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: fcc9c011b4c23c088f887184891781af2f9f8338
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: d8cee8bc1de16eb9412f68d2ba464a8b71067c6c
+ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52991287"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58367042"
 ---
-# <a name="update-educationoutcome"></a>更新 educationoutcome
+# <a name="update-educationoutcome"></a>更新 educationOutcome
 
 命名空间：microsoft.graph
 
@@ -40,7 +40,7 @@ PATCH /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005
 
 | 名称       | 说明|
 |:-----------|:-----------|
-| Authorization | 持有者 {token} |
+| Authorization | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -48,7 +48,7 @@ PATCH /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005
 
 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-educationOutcome 对象将为以下派生类型之一 **：educationPointsOutcome、educationFeedbackOutcome** 或 **educationRubricOutcome**。  提供与要修补的结果类型相关的特定属性。
+**educationOutcome** 对象将为以下派生类型之一 **：educationPointsOutcome、educationFeedbackOutcome** 或 **educationRubricOutcome**。  提供与要更新的结果类型相关的特定属性。
 
 所有派生的结果类型都有一个适合该结果类型的常规和"已发布"属性;例如 **，points** 和 **publishedPoints** **、feedback** 和 **publishedFeedback**。 不要更新"published"属性;供内部使用。 例如，若要向 **educationPointsOutcome** 分配点，请更新 **points** 属性，但不更新 **publishedPoint。**
 
@@ -56,13 +56,45 @@ educationOutcome 对象将为以下派生类型之一 **：educationPointsOutcom
 
 如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [educationOutcome](../resources/educationoutcome.md) 对象。
 
+如果 **pointsGradeType** 和 **points** 更新为负值或无限值，该方法将 `400` 返回一条错误消息。
+
+```http
+HTTP/1.1 400 Bad Request
+Content-type: application/json
+
+{
+    "error": {
+        "code": "badRequest",
+        "message": "Bad request.",
+        "innerError": {
+            "code": "invalidGrading",
+            "message": "Points must be less than 9999999 when using PointsGradeType."
+        }
+    }
+}
+```
+
+如果指定了无效的结果 ID， `404 Not Found` 则返回错误。
+
+```http
+HTTP/1.1 404 Not Found
+Content-type: application/json
+
+{
+    "error": {
+        "code": "20241",
+        "message": "Entity not found. Outcome id: 05d0f76c-1dfa-4442-926c-1b094828b505"
+    }
+}
+```
+
 ## <a name="examples"></a>示例
 
 ### <a name="example-1-update-a-feedback-outcome"></a>示例 1：更新反馈结果
 
 #### <a name="request"></a>请求
 
-下面是请求更新反馈结果的示例。
+以下示例显示了更新反馈结果的请求。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -147,7 +179,7 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-下面是请求更新点结果的示例。
+以下示例显示更新点结果的请求。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -227,7 +259,7 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-下面是一个请求更新评估结果的示例。
+以下示例显示更新评估结果的请求。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

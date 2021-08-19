@@ -1,16 +1,16 @@
 ---
 title: countryNamedLocation 资源类型
-description: 表示由国家和地区定义的 Azure Active Directory 命名的位置。 命名位置是定义网络位置的自定义规则，这些位置随后可在条件访问策略中使用。
+description: 表示Azure Active Directory地区定义的命名位置。 命名位置是定义网络位置的自定义规则，这些位置随后可在条件访问策略中使用。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: c01811ce3940c77a3586196db7b5d2fdf82ebbbb
-ms.sourcegitcommit: c7776e5659c391e7c9ce1cd46e242a5ddc38dba2
+ms.openlocfilehash: 28a00add81da2c755e81704052aa04774e5a0baf
+ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51491031"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58396751"
 ---
 # <a name="countrynamedlocation-resource-type"></a>countryNamedLocation 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "51491031"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示由国家和地区定义的 Azure Active Directory 命名的位置。 命名位置是定义网络位置的自定义规则，这些位置随后可在条件访问策略中使用。
+表示Azure Active Directory地区定义的命名位置。 命名位置是定义网络位置的自定义规则，这些位置随后可在条件访问策略中使用。
 
 继承自 [namedLocation](../resources/namedLocation.md)
 
@@ -30,18 +30,18 @@ ms.locfileid: "51491031"
 | [创建 countryNamedLocation](../api/conditionalaccessroot-post-namedlocations.md) | [countryNamedLocation](countryNamedLocation.md) | 创建新的 **countryNamedLocation** 对象。 |
 | [获取 countryNamedLocation](../api/countrynamedlocation-get.md) | [countryNamedLocation](countrynamedlocation.md) | 读取 **countryNamedLocation** 对象的属性和关系。 |
 | [更新 countryNamedLocation](../api/countrynamedlocation-update.md) | [countryNamedLocation](countrynamedlocation.md) | 更新 **countryNamedLocation** 对象。 |
-| [删除 countryNamedLocation](../api/countrynamedlocation-delete.md) | 无 | 删除 **countryNamedLocation** 对象。 |
+| [删除 countryNamedLocation](../api/countrynamedlocation-delete.md) | None | 删除 **countryNamedLocation** 对象。 |
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |countriesAndRegions|字符串集合|ISO 3166-2 指定的两字母格式的国家/地区列表。|
-|countryLookupMethod|countryLookupMethodType|确定用于确定用户所在的国家/地区的方法。 可能的值为 `clientIpAddress` 和 `authenticatorAppGps`。|
+|countryLookupMethod|countryLookupMethodType|确定用于确定用户所在的国家/地区的方法。 可能的值为 `clientIpAddress` 和 `authenticatorAppGps`。 注意 `authenticatorAppGps` ：目前尚不支持Microsoft Cloud for US Government。|
 |createdDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的位置的创建日期和时间，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。 继承自 [namedLocation](../resources/namedLocation.md)。|
 |displayName|String|位置的可读名称。 继承自 [namedLocation](../resources/namedLocation.md)。|
 |id|String|namedLocation 对象的标识符。 只读。 继承自 [namedLocation](../resources/namedLocation.md)。|
-|includeUnknownCountriesAndRegions|布尔|如此 如果未映射到国家/地区或地区的 IP 地址应包含在命名的位置。|
+|includeUnknownCountriesAndRegions|Boolean|如此 如果未映射到国家/地区或地区的 IP 地址应包含在命名的位置。|
 |modifiedDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的位置的上次修改日期和时间，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。 继承自 [namedLocation](../resources/namedLocation.md)。|
 
 

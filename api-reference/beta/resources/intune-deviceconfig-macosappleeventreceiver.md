@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 03dd639dbd23d10dbaf859a156badd7fec63a0fe
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 514caa91cdf788575c7326e7ac2d27a54362891cdb86c96d6e736c4600245b80
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49268963"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54183153"
 ---
 # <a name="macosappleeventreceiver-resource-type"></a>macOSAppleEventReceiver 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -25,10 +25,10 @@ ms.locfileid: "49268963"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|codeRequirement|字符串|接收 Apple 事件的应用程序或二进制文件的代码要求。|
-|标识符|字符串|接收 Apple 事件的进程或可执行文件的应用程序或文件路径的捆绑包 ID。|
-|identifierType|[macOSProcessIdentifierType](../resources/intune-deviceconfig-macosprocessidentifiertype.md)|对接收 Apple 事件的进程或可执行文件使用应用程序或路径的捆绑包 ID。 可取值为：`bundleID`、`path`。|
-|支持|Boolean|允许或阻止此应用接收 Apple 事件。|
+|codeRequirement|字符串|接收 Apple 事件的应用或二进制文件的代码要求。|
+|标识符|字符串|接收 Apple 事件的进程或可执行文件的应用或文件路径的捆绑 ID。|
+|identifierType|[macOSProcessIdentifierType](../resources/intune-deviceconfig-macosprocessidentifiertype.md)|将应用或路径的捆绑 ID 用于接收 Apple 事件的进程或可执行文件。 可取值为：`bundleID`、`path`。|
+|allowed|布尔值|允许或阻止此应用程序接收 Apple 事件。|
 
 ## <a name="relationships"></a>关系
 无

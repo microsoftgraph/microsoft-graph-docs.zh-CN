@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
 author: JeremyKelley
-ms.openlocfilehash: 84b46861196e8893655fc5abc69ad1d4809cfd03
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e00e260bfcab2992ecf892ec66b0d39884a31d477c84b0b6c46d3e004b274485
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48033511"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54167777"
 ---
 # <a name="siteusagestorage-resource-type"></a>siteUsageStorage 资源类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "48033511"
 | 属性           | 类型   |
 | :----------------- | :----- |
 | reportRefreshDate  | 日期   |
-| siteType           | String |
+| siteType           | 字符串 |
 | storageUsedInBytes | Int64  |
 | reportDate         | 日期   |
 | reportPeriod       | String |

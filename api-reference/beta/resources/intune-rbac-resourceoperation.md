@@ -1,29 +1,29 @@
 ---
 title: resourceOperation 资源类型
-description: 描述 resourceOperation 资源 (entity) of Microsoft Graph API (REST) ，它支持与基于角色的访问控制 (RBAC) 相关的 Intune 工作流。
+description: 介绍 Microsoft Graph API (REST) 的 resourceOperation (实体) ，它支持与基于角色的访问控制 (RBAC) 相关的 Intune 工作流。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 59eb8f7c9b30f466748513846b71271aa04a35d6
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 50a60272b50bf85006e3cdb13fa00abf4208ed4c70dc16ad58b21d6b5fda00cb
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49300911"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54241533"
 ---
 # <a name="resourceoperation-resource-type"></a>resourceOperation 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-描述 resourceOperation 资源 (entity) of Microsoft Graph API (REST) ，它支持与基于角色的访问控制 (RBAC) 相关的 Intune 工作流。
+介绍 Microsoft Graph API (REST) 的 resourceOperation (实体) ，它支持与基于角色的访问控制 (RBAC) 相关的 Intune 工作流。
 
 ## <a name="methods"></a>Methods
-|方法|返回类型|Description|
+|方法|返回类型|说明|
 |:---|:---|:---|
 |[List resourceOperations](../api/intune-rbac-resourceoperation-list.md)|[resourceOperation](../resources/intune-rbac-resourceoperation.md) 集合|列出 [resourceOperation](../resources/intune-rbac-resourceoperation.md) 对象的属性和关系。|
 |[Get resourceOperation](../api/intune-rbac-resourceoperation-get.md)|[resourceOperation](../resources/intune-rbac-resourceoperation.md)|读取 [resourceOperation](../resources/intune-rbac-resourceoperation.md) 对象的属性和关系。|
@@ -36,11 +36,11 @@ ms.locfileid: "49300911"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|字符串|资源操作的键。 只读，且自动生成。|
-|resource|字符串|此操作所属的资源类别。|
+|资源|String|此操作所属的资源类别。|
 |resourceName|String|执行此操作的资源的名称。|
 |actionName|String|此操作将执行的操作类型。 actionName 应简明，并尽可能限制在几个字以内。|
 |description|字符串|资源操作的说明。 当在 Azure 门户中显示时，会在操作的鼠标悬停文本中使用说明。|
-|enabledForScopeValidation|Boolean|确定是否针对按角色分配定义的作用域验证权限。|
+|enabledForScopeValidation|布尔值|确定是否针对每个角色分配定义的作用域验证权限。|
 
 ## <a name="relationships"></a>关系
 无

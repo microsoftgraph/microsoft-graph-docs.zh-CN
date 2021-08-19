@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 49e65216583e4e928562b5e7b5c053ae97beef3d
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 4fb873a1e49ceb59fded30013958d368e8a05e7496103399f66f3c3ad09b9935
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51157092"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54157008"
 ---
 # <a name="update-grouppolicypresentationvaluetext"></a>更新 groupPolicyPresentationValueText
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -49,7 +49,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [groupPolicyPresentationValueText](../resources/intune-grouppolicy-grouppolicypresentationvaluetext.md) 对象的 JSON 表示形式。
 
-下表显示创建 [groupPolicyPresentationValueText](../resources/intune-grouppolicy-grouppolicypresentationvaluetext.md)时所需的属性。
+下表显示创建 [groupPolicyPresentationValueText 时所需的属性](../resources/intune-grouppolicy-grouppolicypresentationvaluetext.md)。
 
 |属性|类型|说明|
 |:---|:---|:---|

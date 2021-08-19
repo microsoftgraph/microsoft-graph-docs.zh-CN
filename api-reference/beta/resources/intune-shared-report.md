@@ -1,22 +1,22 @@
 ---
 title: report 资源类型
-description: 介绍支持多个工作流的适用于 Intune 的 Microsoft Graph API 的报告资源。
+description: 介绍支持多个工作流的 Microsoft Graph API 的报告资源。
 localization_priority: Normal
 author: rolyon
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c1a21995e763b1de27645e39badd120f86bb81fc
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 4adeb91bc4015585485c78fdaab04c24ad9e95d553d1792944392b8643915326
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51866662"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54160994"
 ---
 # <a name="report-resource-type"></a>report 资源类型
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 

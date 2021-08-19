@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: a6911dddb813f69bca802a6e84ab4eae0a484ef9
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: ccbdfc647ed1e4cea4ab6f28ef1460802bc39066
+ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53534479"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58384420"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>将 Microsoft Graph API 与 Microsoft Teams 结合使用
 
@@ -22,7 +22,7 @@ Microsoft Teams 是 Microsoft 365 中基于聊天的工作区，可提供对特�
 
 | 资源 | 方法 |
 |:---------------|:--------|
-|[团队](../resources/team.md)| [列出你的团队](../api/user-list-joinedteams.md)、[列出所有团队](/graph/teams-list-all-teams)、[创建](../api/team-put-teams.md)、[读取](../api/team-get.md)、[更新](../api/team-update.md)、[删除](../api/group-delete.md)、[克隆](../api/team-clone.md)、[归档](../api/team-archive.md)[取消归档](../api/team-unarchive.md) |
+|[team](../resources/team.md)| [列出你的团队](../api/user-list-joinedteams.md)、[列出所有团队](/graph/teams-list-all-teams)、[创建](../api/team-put-teams.md)、[读取](../api/team-get.md)、[更新](../api/team-update.md)、[删除](../api/group-delete.md)、[克隆](../api/team-clone.md)、[归档](../api/team-archive.md)[取消归档](../api/team-unarchive.md) |
 |[组](../resources/group.md)| [添加成员](../api/group-post-members.md)、 [移除成员](../api/group-delete-members.md)、[添加所有者](../api/group-post-owners.md)、 [移除所有者](../api/group-delete-owners.md)、[获取文件](drive.md)、[获取笔记本](../resources/notebook.md)、[获取计划](plannergroup.md)、[获取日历](event.md) |
 |[频道](../resources/channel.md)|[列出](../api/channel-list.md)、[创建](../api/channel-post.md)、[读取](../api/channel-get.md)、[更新](../api/channel-patch.md)、[删除](../api/channel-delete.md)|
 |[teamsTab](../resources/teamstab.md) |[列出](../api/channel-list-tabs.md)、[创建](../api/channel-post-tabs.md)、[读取](../api/channel-get-tabs.md)、[更新](../api/channel-patch-tabs.md)、[删除](../api/channel-delete-tabs.md) |
@@ -70,23 +70,12 @@ Microsoft Teams 的已测试性能和容量限制将记录在 [Microsoft Teams �
 
 ## <a name="membership-changes-in-microsoft-teams"></a>Microsoft Teams 中的成员身份更改
 
-若要向团队添加成员和所有者，请使用相同的 ID 更改[组](../resources/group.md)的成员身份。
-
 | 用例      | 谓词      | URL |
 | ------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [添加成员](../api/group-post-members.md)    | POST      | /groups/{id}/members/$ref  |
-| [删除成员](../api/group-delete-members.md)   | DELETE    | /groups/{id}/members/{userId}/$ref |
-| [添加所有者](../api/group-post-owners.md)     | POST       | /groups/{id}/owners/$ref |
-| [移除所有者](../api/group-delete-owners.md) | DELETE    | /groups/{id}/owners/{userId}/$ref |
+| [添加成员](../api/team-post-members.md) | POST      | /teams/{id}/members  |
+| [删除成员](../api/team-delete-members.md)    | DELETE    | /teams/{id}/members/{userId} |
+| [更新成员角色](../api/team-update-members.md) | PATCH | /teams/{id}/members/{userId} |
 | [更新团队](../api/team-update.md)  | PATCH     | /teams/{id} |
-
-我们建议你在添加所有者时，还将该用户添加为成员。
-如果团队的所有者不是其成员，则所有权和成员身份更改可能不会立即显示在 Microsoft Teams 中。
-此外，不同的应用程序和 API 将以不同的方式进行处理。
-例如，Microsoft Teams 将显示用户是其成员或所有者的团队，而 Microsoft Teams PowerShell cmdlet 和 /me/joinedTeams API 仅显示用户是其成员的团队。
-为了避免混淆，请也将全部所有者添加到成员列表中。
-
-已知问题：当调用 DELETE /groups/{id}/owners 时，也会从 /groups/{id}/members list 中移除用户。 若要解决此问题，我们建议你从所有者和成员中移除用户，等待 10 秒后，将其添加回成员。
 
 在添加和移除成员和所有者时，请勿在 ID 两边添加大括号 { }。
 

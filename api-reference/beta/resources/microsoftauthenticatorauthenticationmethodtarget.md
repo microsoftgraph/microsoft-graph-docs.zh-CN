@@ -5,30 +5,33 @@ author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: db534dfb13e288b82b49005b2b1a923b8bfd5112
-ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
+ms.openlocfilehash: 4baf2713789a54707c65fe8c2b94fe60ac275626
+ms.sourcegitcommit: b7e01a1331abe5f5c9aa2828d93dad08229573f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52896639"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58336668"
 ---
 # <a name="microsoftauthenticatorauthenticationmethodtarget-resource-type"></a>microsoftAuthenticatorAuthenticationMethodTarget 资源类型
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 Azure AD 中启用以使用Microsoft Authenticator[方法策略的用户](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md)或组的集合。
+在 Azure AD 中启用以使用 Microsoft Authenticator[方法策略的用户](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md)或组的集合。  继承自 [authenticationMethodTarget](authenticationMethodTarget.md)。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|Azure AD 用户或组的对象 ID。|
-|authenticationMode|microsoftAuthenticatorAuthenticationMode|确定可用于登录的通知类型。 可能的值是 `any` `deviceBasedPush` ：、 (无密码) 、 `push` 。|
-|isRegistrationRequired|Boolean|确定是否强制用户注册身份验证方法。 *不支持*。 |
-|numberMatchingRequiredState|advancedConfigState|需要匹配 MFA 通知的号码。 手机登录通知的值将被忽略。 可取值为：`enabled`、`disabled`、`default`。|
-|displayLocationInformationRequiredState|advancedConfigState|确定是否应在通知正文中向用户显示登录的位置。 可取值为：`enabled`、`disabled`、`default`。|
-|displayAppInformationRequiredState|advancedConfigState|确定是否应在通知正文中向用户显示用户登录的应用。 可取值为：`enabled`、`disabled`、`default`。|
-|targetType|authenticationMethodTargetType| 可取值为：`null`、`user`、`group`。|
+|authenticationMode|microsoftAuthenticatorAuthenticationMode|确定可用于登录的通知类型。 可能的值包括 `deviceBasedPush` ： (、和) 无 `push` 密码 `any` 。|
+|featureSettings|authenticatorAppFeatureSettings|确定应应用于其他设置Microsoft Authenticator。 可能的值是 `requireNumberMatching` ： (MFA 通知需要匹配号码。 对于手机登录通知，此值将被忽略) 。 可为 NULL。|
+|id|String|Azure AD 用户或组的对象标识符。 继承自 [authenticationMethodTarget](authenticationmethodtarget.md)。|
+|isRegistrationRequired|布尔值|确定是否强制用户注册身份验证方法。 继承自 [authenticationMethodTarget](authenticationmethodtarget.md)。 *不支持*。 |
+|targetType|authenticationMethodTargetType| 可能的值为： `user`、 `group`和 `unknownFutureValue`。 继承自 [authenticationMethodTarget](authenticationMethodTarget.md)。|
+<!--
+|numberMatchingRequiredState|advancedConfigState|Requires number matching for MFA notifications. Value is ignored for phone sign-in notifications. Possible values are: `enabled`, `disabled`, `default`.|
+|displayLocationInformationRequiredState|advancedConfigState|Determines whether the location of the sign-in should be shown to the user in the body of the notification. Possible values are: `enabled`, `disabled`, `default`.|
+|displayAppInformationRequiredState|advancedConfigState|Determines whether the app the user is signing into should be shown to the user in the body of the notification. Possible values are: `enabled`, `disabled`, `default`.|
+-->
 
 ## <a name="relationships"></a>关系
 无。
@@ -50,9 +53,7 @@ ms.locfileid: "52896639"
   "id": "String (identifier)",
   "isRegistrationRequired": "Boolean",
   "authenticationMode": "String",
-  "numberMatchingRequiredState": "String",
-  "displayLocationInformationRequiredState": "String",
-  "displayAppInformationRequiredState": "String"
+  "featureSettings": "String"
 }
 
 ```
