@@ -5,12 +5,12 @@ author: payiAzure
 localization_priority: Normal
 ms.prod: service-communications
 doc_type: resourcePageType
-ms.openlocfilehash: c005beb7b27956cad6f42c7251bb15be7024415c5096d8f012a88049534b6cad
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a53f09c6fc32de1c65e52e2554aa89b634f2b0e3
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54243014"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58266896"
 ---
 # <a name="servicehealthissuepost-resource-type"></a>serviceHealthIssuePost 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54243014"
 |属性|类型|说明|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|文章的发布时间。|
-|说明|[itemBody](../resources/itembody.md)|服务问题帖子的内容。|
+|description|[itemBody](../resources/itembody.md)|服务问题帖子的内容。|
 |postType|postType|服务问题历史文章的帖子类型。 可取值为：`regular`、`quick`、`strategic`、`unknownFutureValue`。|
 
 ## <a name="relationships"></a>关系

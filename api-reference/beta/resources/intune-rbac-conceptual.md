@@ -1,15 +1,15 @@
 ---
 title: Microsoft Intune 中的基于角色的访问控制
-description: 列出了用于定义和管理租户组织 (RBAC) 的基于角色的访问控制 RBAC 的 Intune 终结点 (REST) 的 Microsoft Graph API。
+description: 列出 Microsoft Graph API for Intune 终结点 (REST) 定义和管理租户组织的基于角色的访问控制 (RBAC) 。
 localization_priority: Normal
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: a95c71613755cd9853cca4a56d4cd36caf0d7df7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ad014fe19bf427ccb4c4d8c60f2145ef96b1c1a860d419d991d75b759ea3ee6d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48084420"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54126891"
 ---
 # <a name="role-based-access-control-in-microsoft-intune"></a>Microsoft Intune 中的基于角色的访问控制
 
@@ -17,7 +17,7 @@ ms.locfileid: "48084420"
 
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 Intune 的基于角色的访问控制决定哪些人可以对 Intune 对象执行操作并可更改托管应用程序、用户和设备。   
 
@@ -36,5 +36,3 @@ Intune 的基于角色的访问控制决定哪些人可以对 Intune 对象执�
 - [角色权限](intune-rbac-rolepermission.md)
 - [角色范围标记](intune-rbac-rolescopetag.md)
 - [角色作用域标记自动分配](intune-rbac-rolescopetagautoassignment.md)
-
-

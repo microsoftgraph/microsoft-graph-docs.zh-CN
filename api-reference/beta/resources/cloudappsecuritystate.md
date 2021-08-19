@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: 82046f855f3ce8d994c3b212b1513098e1c042ac
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f5b82357d91889aada97c835fcab2c327c05fe143988a9ed3bf47ee293687770
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48034054"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54253766"
 ---
 # <a name="cloudappsecuritystate-resource-type"></a>cloudAppSecurityState 资源类型
 
@@ -22,9 +22,9 @@ ms.locfileid: "48034054"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|destinationServiceIp|String|指向云应用程序/服务的连接的目标 IP 地址。|
-|destinationServiceName|String|云应用程序/服务名称 (例如 "Salesforce"、"DropBox" 等 ) 。|
-|riskScore|String|提供程序生成/计算的风险分数（云应用程序/服务）。 建议的值范围为0-1，这相当于一个百分比。|
+|destinationServiceIp|String|与云应用程序/服务的连接的目标 IP 地址。|
+|destinationServiceName|字符串|云应用程序/服务 (例如"Salesforce"、"DropBox"等) 。|
+|riskScore|String|云应用程序/服务的提供商生成/计算的风险评分。 建议的值范围为 0-1，等于百分比。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

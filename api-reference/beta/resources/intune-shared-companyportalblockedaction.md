@@ -1,32 +1,32 @@
 ---
 title: companyPortalBlockedAction 资源类型
-description: 按平台和设备所有权类型对公司门户的阻止的操作
+description: 按平台和设备所有权类型在公司门户上阻止的操作
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a733f93f64a62f9afca92fce1a8c16c06ab7f57e
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 0e608fee9178e3e7dedfecd99df19707901cdc3d
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49258988"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58266812"
 ---
 # <a name="companyportalblockedaction-resource-type"></a>companyPortalBlockedAction 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-按平台和设备所有权类型对公司门户的阻止的操作
+按平台和设备所有权类型在公司门户上阻止的操作
 
 ## <a name="properties"></a>属性
-|属性|类型|描述|
+|属性|类型|说明|
 |:---|:---|:---|
-|平台|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|设备 OS/平台。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`unknown`。|
-|所有者|[所有者](../resources/intune-shared-ownertype.md)|设备所有权类型。 可取值为：`unknown`、`company`、`personal`。|
+|平台|[devicePlatformType](../resources/intune-wip-deviceplatformtype.md)|设备操作系统/平台。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`unknown`。|
+|ownerType|[ownerType](../resources/intune-shared-ownertype.md)|设备所有权类型。 可取值为：`unknown`、`company`、`personal`。|
 |action|[companyPortalAction](../resources/intune-shared-companyportalaction.md)|设备操作。 可取值为：`unknown`、`remove`、`reset`。|
 
 ## <a name="relationships"></a>关系

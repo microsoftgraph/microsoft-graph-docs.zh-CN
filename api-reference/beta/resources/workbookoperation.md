@@ -5,18 +5,18 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 04dc2afc707c4a991f9bb638102bb7180f9b1fab
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 373183806b6c23e494aeb8a76f0b156ac5cac62ac064b7f78f66c9650968df4b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50154227"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54200262"
 ---
 # <a name="workbookoperation-resource-type"></a>workbookOperation 资源类型
 
 表示长时间运行的工作簿操作的状态。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -27,9 +27,9 @@ ms.locfileid: "50154227"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |id|String| 操作 ID。只读。|
-|status|String| 操作的当前状态。 可取值为：`notStarted`、`running`、`succeeded`、`failed`。|
+|status|字符串| 操作的当前状态。 可取值为：`notStarted`、`running`、`succeeded`、`failed`。|
 |error|[workbookOperationError](workbookoperationerror.md)| 操作返回的错误。|
-|resourceLocation|String| 结果的资源 URI。|
+|resourceLocation|字符串| 结果的资源 URI。|
 
 ## <a name="relationships"></a>关系
 

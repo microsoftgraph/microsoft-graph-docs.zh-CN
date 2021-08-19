@@ -5,22 +5,22 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 833118ba2f57664ea6570dda6b80f556b07bd773
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 41cb2ae9d5e75f61fa9da563bd70a52e77c2014c
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51130488"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58263791"
 ---
 # <a name="list-androidenterprisewificonfigurations"></a>列出 androidEnterpriseWiFiConfigurations
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-列出 [androidEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androidenterprisewificonfiguration.md) 对象的属性和关系。
+列出 [androidEnterpriseWiFiConfiguration 对象的属性和](../resources/intune-deviceconfig-androidenterprisewificonfiguration.md) 关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2084
+Content-Length: 2186
 
 {
   "value": [
@@ -109,6 +109,9 @@ Content-Length: 2084
       "connectWhenNetworkNameIsHidden": true,
       "wiFiSecurityType": "wpaEnterprise",
       "eapType": "eapTtls",
+      "trustedServerCertificateNames": [
+        "Trusted Server Certificate Names value"
+      ],
       "authenticationMethod": "usernameAndPassword",
       "innerAuthenticationProtocolForEapTtls": "challengeHandshakeAuthenticationProtocol",
       "innerAuthenticationProtocolForPeap": "microsoftChapVersionTwo",

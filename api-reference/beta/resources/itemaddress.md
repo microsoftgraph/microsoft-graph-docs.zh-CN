@@ -5,44 +5,44 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: ca6848b6b5ac60d419e56914a59e2470d5970ed9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7e11ab6a69e377144a53c298e1c8ad99d496557769be5d799dd0afa2beb38ea7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48075635"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54167882"
 ---
 # <a name="itemaddress-resource-type"></a>itemAddress 资源类型
 
 命名空间：microsoft.graph
 
-表示物理地址以及找到地址的位置的详细信息。
+表示物理地址和找到该地址的位置的详细信息。
 
 继承自 [itemFacet](../resources/itemfacet.md)。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列表地址](../api/profile-list-addresses.md)|[itemAddress](../resources/itemaddress.md) 集合|从 "地址" 导航属性中获取 itemAddress 资源。|
+|[列出地址](../api/profile-list-addresses.md)|[itemAddress](../resources/itemaddress.md) 集合|从 addresses 导航属性获取 itemAddress 资源。|
 |[创建 itemAddress](../api/profile-post-addresses.md)|[itemAddress](../resources/itemaddress.md)|创建新的 itemAddress 对象。|
-|[获取 itemAddress](../api/itemaddress-get.md)|[itemAddress](../resources/itemaddress.md)|读取 [itemAddress](../resources/itemaddress.md) 对象的属性和关系。|
-|[更新 itemAddress](../api/itemaddress-update.md)|[itemAddress](../resources/itemaddress.md)|更新 [itemAddress](../resources/itemaddress.md) 对象的属性。|
-|[删除 itemAddress](../api/itemaddress-delete.md)|无|删除一个 [itemAddress](../resources/itemaddress.md) 对象。|
+|[获取 itemAddress](../api/itemaddress-get.md)|[itemAddress](../resources/itemaddress.md)|读取 [itemAddress 对象的属性和](../resources/itemaddress.md) 关系。|
+|[更新 itemAddress](../api/itemaddress-update.md)|[itemAddress](../resources/itemaddress.md)|更新 [itemAddress 对象](../resources/itemaddress.md) 的属性。|
+|[删除 itemAddress](../api/itemaddress-delete.md)|无|删除 [itemAddress](../resources/itemaddress.md) 对象。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
 |createdBy|[identitySet](../resources/identityset.md)|提供创建实体的用户和/或应用程序的标识符。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|createdDateTime|DateTimeOffset|为创建实体时提供 dateTimeOffset。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|介绍|[physicalAddress](../resources/physicaladdress.md)|地址本身的详细信息。|
-|displayName|String|用户已分配到此地址的友好名称。 |
-|geoCoordinates|[geoCoordinates](../resources/geocoordinates.md)|地址的 geocoordinates。|
-|id|String|用于单独寻址实体的标识符。 继承自 [entity](../resources/entity.md)|
-|推导|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|createdDateTime|DateTimeOffset|提供实体创建时的日期时间Offset。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|detail|[physicalAddress](../resources/physicaladdress.md)|有关地址本身的详细信息。|
+|displayName|String|用户分配给此地址的友好名称。 |
+|geoCoordinates|[geoCoordinates](../resources/geocoordinates.md)|地址的地理序号。|
+|id|字符串|用于单独寻址实体的标识符。 继承自 [实体](../resources/entity.md)|
+|inference|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断出来的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|提供上次修改实体的用户和/或应用程序的标识符。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|lastModifiedDateTime|DateTimeOffset|为创建实体时提供 dateTimeOffset。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|source|[personDataSource](../resources/persondatasource.md)|值的来源，如果从另一个服务同步。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|lastModifiedDateTime|DateTimeOffset|提供实体创建时的日期时间Offset。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|source|[personDataSource](../resources/persondatasource.md)|如果从另一个服务同步，则值源自何处。 继承自 [itemFacet](../resources/itemfacet.md)。|
 
 ## <a name="relationships"></a>关系
 无。
