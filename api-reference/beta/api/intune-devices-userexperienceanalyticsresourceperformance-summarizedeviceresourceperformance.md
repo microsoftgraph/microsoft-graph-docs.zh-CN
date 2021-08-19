@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a0f3ec59fba696828f775069a414571511a85d61
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 5a0f3af6e8a281cb2d8e8619f34e059e2b317683
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51135906"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58262902"
 ---
 # <a name="summarizedeviceresourceperformance-function"></a>summarizeDeviceResourcePerformance 函数
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -27,9 +27,9 @@ ms.locfileid: "51135906"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -72,7 +72,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsRes
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 691
+Content-Length: 726
 
 {
   "value": [
@@ -90,7 +90,8 @@ Content-Length: 691
       "cpuSpikeTimePercentageThreshold": 10.333333333333334,
       "ramSpikeTimeScore": 1,
       "ramSpikeTimePercentageThreshold": 10.333333333333334,
-      "deviceResourcePerformanceScore": 14
+      "deviceResourcePerformanceScore": 14,
+      "averageSpikeTimeScore": 5
     }
   ]
 }

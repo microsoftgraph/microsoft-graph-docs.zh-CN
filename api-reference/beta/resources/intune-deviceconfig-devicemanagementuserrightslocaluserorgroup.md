@@ -5,29 +5,29 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d288e1f8936c7f1246b0e66eebeaefc910dadc00
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 3fe52f8a0a6460f3cac12bf535526ab73d4e58340d31339b2c78baea728964ca
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49283404"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54148223"
 ---
 # <a name="devicemanagementuserrightslocaluserorgroup-resource-type"></a>deviceManagementUserRightsLocalUserOrGroup 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 表示用于用户权限设置的本地用户或组的信息。
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |name|字符串|此本地用户或组的名称。|
-|description|字符串|管理员对此本地用户或组的说明。|
-|securityIdentifier|字符串|此本地用户或组的安全标识符 (例如 * S-1-5-32-544) 。|
+|description|String|此本地用户或组的管理员说明。|
+|securityIdentifier|字符串|此本地用户或组的安全标识符 (例如 *S-1-5-32-544) 。|
 
 ## <a name="relationships"></a>关系
 无

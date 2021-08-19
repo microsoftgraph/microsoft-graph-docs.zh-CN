@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 71fe651d596e1c4887f8c0f0af2bcb679b2a9a37
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: b9cc41f77d73b66ea47d498f53277d43e6204eb8dbfe1eec71c8fa37c1fa8137
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53580231"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "57162866"
 ---
 # <a name="list-serviceprincipals"></a>List servicePrincipals
 

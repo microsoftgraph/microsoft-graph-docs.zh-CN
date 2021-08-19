@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9884e83a3c585285adc2332a3fc2c31794f52b65
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: e80f47a2daa68bffb8d90c536bf066ad0b1a303d
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52664907"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256078"
 ---
 # <a name="devicehealthscriptdevicestate-resource-type"></a>deviceHealthScriptDeviceState 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "52664907"
 
 包含设备运行状况脚本的设备运行状态的属性。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceHealthScriptDeviceStates](../api/intune-devices-devicehealthscriptdevicestate-list.md)|[deviceHealthScriptDeviceState](../resources/intune-devices-devicehealthscriptdevicestate.md) 集合|列出 [deviceHealthScriptDeviceState 对象的属性和](../resources/intune-devices-devicehealthscriptdevicestate.md) 关系。|
@@ -35,12 +35,12 @@ ms.locfileid: "52664907"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|设备运行状况脚本设备状态实体的键。 此属性是只读的。|
-|detectionState|[runState](../resources/intune-shared-runstate.md)|最近一次执行设备运行状况脚本的检测状态。 可取值为：`unknown`、`success`、`fail`、`scriptError`、`pending`、`notApplicable`。|
+|detectionState|[runState](../resources/intune-devices-runstate.md)|最近一次执行设备运行状况脚本的检测状态。 可取值为：`unknown`、`success`、`fail`、`scriptError`、`pending`、`notApplicable`。|
 |lastStateUpdateDateTime|DateTimeOffset|执行设备运行状况脚本的最后时间戳|
 |expectedStateUpdateDateTime|DateTimeOffset|预计执行设备运行状况脚本的下一个时间戳|
 |lastSyncDateTime|DateTimeOffset|Intune 管理扩展上次与 Intune 同步的时间|
-|preRemediationDetectionScriptOutput|String|修正前检测脚本的输出|
-|preRemediationDetectionScriptError|String|修正前检测脚本的错误|
+|preRemediationDetectionScriptOutput|字符串|修正前检测脚本的输出|
+|preRemediationDetectionScriptError|字符串|修正前检测脚本的错误|
 |remediationScriptError|String|修正脚本的错误输出|
 |postRemediationDetectionScriptOutput|String|修正后检测脚本输出|
 |postRemediationDetectionScriptError|String|修正后检测脚本中的错误|

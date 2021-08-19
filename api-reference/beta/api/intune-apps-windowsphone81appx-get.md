@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ff1977620d998a03a8310660fbfa865ad151d99d
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 4c2b713150e1a01480cb51173195f22bf53bba12
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862916"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255099"
 ---
 # <a name="get-windowsphone81appx"></a>获取 windowsPhone81AppX
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1934
+Content-Length: 1959
 
 {
   "value": {
@@ -121,7 +121,8 @@ Content-Length: 1934
       "v10_1903": true,
       "v10_1909": true,
       "v10_2004": true,
-      "v10_2H20": true
+      "v10_2H20": true,
+      "v10_21H1": true
     },
     "phoneProductIdentifier": "Phone Product Identifier value",
     "phonePublisherId": "Phone Publisher Id value",

@@ -5,19 +5,19 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 6f3c39f6111ad910d2551da7e03cdf6e03597b3d
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 72fcf71b4b0e78006ad30b2091b6906342e18edf
+ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53208385"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58384039"
 ---
 # <a name="update-accessreviewscheduledefinition"></a>更新 accessReviewScheduleDefinition
 命名空间：microsoft.graph
 
 更新 [accessReviewScheduleDefinition 对象](../resources/accessreviewscheduledefinition.md) 的属性。
 
-对 accessReviewScheduleDefinition 的任何更新都仅适用于将来的实例。 当前运行的实例无法更新。 此外，此 API 不用于更新 accessReviewInstance 级别的属性（包括决策）。 有关[实例详细信息，请参阅 accessReviewInstance。](../resources/accessreviewinstance.md)
+对 accessReviewScheduleDefinition 的任何更新仅适用于将来的实例。 当前运行的实例无法更新。 此外，此 API 不用于更新 accessReviewInstance 级别的属性（包括决策）。 有关[实例详细信息，请参阅 accessReviewInstance。](../resources/accessreviewinstance.md)
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -54,9 +54,9 @@ PUT /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 | displayName | String | 访问评审系列的名称。 |
 | descriptionForAdmins | String | 提供给管理员评价的上下文。 |
 | descriptionForReviewers | String | 提供给审阅者的审阅上下文。 |
-| settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md) | 访问评审系列的设置。 请参阅 [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md)。 |
-| reviewers | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合|  定义审阅者是谁。 如果未指定任何内容，则评论是自 (用户查看自己的访问权限) 。 只有在 **将** 单个用户分配为审阅者时，审阅者属性才可更新。 请参阅 [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md)。 |
-|fallbackReviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合|用于定义回退审阅者列表的审阅者范围的集合，如果从指定的审阅者列表中找不到用户，将通知这些审阅者采取措施。 当组所有者指定为审阅者，但组所有者不存在时，或者将经理指定为审阅者但用户的经理不存在时，可能会发生这种情况。|
+| 设置 | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md) | 访问评审系列的设置。 请参阅 [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)。 |
+| reviewers | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合|  定义审阅者是谁。 如果未指定任何内容，则评论是自 (用户查看自己的访问权限) 。 只有在 **将** 单个用户分配为审阅者时，审阅者属性才可更新。 请参阅 [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)。 |
+|fallbackReviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合|用于定义回退审阅者列表的审阅者范围的集合，如果从指定的审阅者列表中找不到用户，将通知这些审阅者采取措施。 当组所有者指定为审阅者但组所有者不存在时，或者将经理指定为审阅者但用户的经理不存在时，可能会发生这种情况。|
 
 **PUT** 请求希望传入完整的对象，其中包括所有可写属性，而不只是要更新的属性。
 
@@ -67,7 +67,9 @@ PUT /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 这是更新现有访问评审系列的 displayName 的示例。
 
 ### <a name="request"></a>请求
+
 在请求正文中，提供 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象的新属性的 JSON 表示形式。
+
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -78,6 +80,7 @@ PUT /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 -->
 ``` http
 PUT https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/60860cdd-fb4d-4054-91ba-f75e04444aa6
+Content-type: application/json
 
 {
   "id": "60860cdd-fb4d-4054-91ba-f75e04444aa6",
@@ -132,7 +135,6 @@ PUT https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definition
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 
 ### <a name="response"></a>响应

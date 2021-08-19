@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 6846ac91051897fcf455c466d5dcd58119d0131a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 2cf940f4327d32082b95deb0658a316ac4e2ecac9c0fc03285c018ceecbd3bdf
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52042665"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "57163694"
 ---
 # <a name="update-educationuser-properties"></a>更新 educationUser 属性
 
@@ -53,7 +53,7 @@ PATCH /education/users/{id}
 | 属性         | 类型               | 说明                                                                                                                                     |
 | :--------------- | :----------------- | :---------------------------------------------------------------------------------------------------------------------------------------------- |
 | displayName      | String             | 显示用户名称                                                                                                                            |
-| givenName        | String             | 名字                                                                                                                                      |
+| givenName        | 字符串             | 名字                                                                                                                                      |
 | middleName       | String             | 用户的中间名                                                                                                                             |
 | surname          | String             | 用户的姓                                                                                                                                 |
 | mail             | String             | 电子邮件地址                                                                                                                                   |
@@ -118,7 +118,7 @@ Content-length: 508
 
 ##### <a name="response"></a>响应
 
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

@@ -5,17 +5,17 @@ author: eddie-lee-msft
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: add05d086580d5ed76b4195de98d28187e3ad30d
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: dc50e9ca132b295f000a707a9fc3280bef2bb6e6eb564aca0ae69020b1d2a498
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51507562"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "57333740"
 ---
 # <a name="team-sendactivitynotification"></a>team：sendActivityNotification
 命名空间：microsoft.graph
 
-在团队范围内发送活动源通知。 有关发送通知的更多详细信息以及发送通知的要求，请参阅 [发送 Teams 活动通知](/graph/teams-send-activityfeednotifications)。
+在团队范围内发送活动源通知。 有关发送通知的更多详细信息以及发送通知的要求，请参阅[发送Teams活动通知](/graph/teams-send-activityfeednotifications)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -50,20 +50,20 @@ POST /teams/{teamId}/sendActivityNotification
 |参数|类型|说明|
 |:---|:---|:---|
 |topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md)|通知的主题。 指定要讨论的资源。|
-|activityType|String|活动类型。 这必须在 Teams 应用清单 [中声明](/microsoftteams/platform/overview)。|
+|activityType|String|活动类型。 这必须在应用清单[Teams声明](/microsoftteams/platform/overview)。|
 |chainId|Int64|可选。 用于替代上一个通知。 在后续 `chainId` 请求中使用相同的方法替代上一个通知。|
-|previewText|[itemBody](../resources/itembody.md)|预览通知文本。 Microsoft Teams 将只显示前 150 个字符。|
-|templateParameters|[keyValuePair](../resources/keyvaluepair.md) 集合|在 Teams 应用清单 中对应的活动源条目中定义的 `activityType` 模板 [变量的值](/microsoftteams/platform/overview)。|
+|previewText|[itemBody](../resources/itembody.md)|预览通知文本。 Microsoft Teams显示前 150 个字符。|
+|templateParameters|[keyValuePair](../resources/keyvaluepair.md) 集合|活动源条目中定义的模板变量的值与应用程序Teams `activityType` [相对应](/microsoftteams/platform/overview)。|
 |recipient|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|通知的收件人。 仅支持 Azure AD 用户。 另请参阅 [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md)。 |
 
 将 topic 属性的值设置为 时 `source` ，支持 **以下** 资源 `entityUrl` ：
 
-- [团队](../resources/team.md)
+- [team](../resources/team.md)
 - [频道](../resources/channel.md)
 - [chatMesage](../resources/chatmessage.md)
 - [teamsTab](../resources/teamstab.md)
 
-> **注意：** 实体 URL 必须相同或 URL 中团队的子资源。 此外 [，Teams 应用](/microsoftteams/platform/overview) 必须安装在团队中。
+> **注意：** 实体 URL 必须相同或 URL 中团队的子资源。 此外[，Teams应用](/microsoftteams/platform/overview)必须安装在团队中。
 
 ## <a name="response"></a>响应
 
@@ -194,7 +194,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-3-notify-a-user-about-an-event-using-custom-topic"></a>示例 3：使用自定义主题通知用户事件
 
-如前面的示例中所示，你可以链接到团队的不同方面。 但是，如果你希望链接到不是团队的一部分或不是由 Microsoft Graph 表示的方面，或者想要自定义名称，你可以将 的源设置为 并传递其自定义 `topic` `text` 值。 `webUrl` 将 source 设置为 时 `topic` 是必需的 `text` 。
+如前面的示例中所示，你可以链接到团队的不同方面。 但是，如果要链接到不是团队的一部分或不是由 Microsoft Graph 表示的方面，或者希望自定义名称，可以将 的源设置为 并传递其自定义值。 `topic` `text` `webUrl` 将 source 设置为 时 `topic` 是必需的 `text` 。
 
 #### <a name="request"></a>请求
 <!-- {

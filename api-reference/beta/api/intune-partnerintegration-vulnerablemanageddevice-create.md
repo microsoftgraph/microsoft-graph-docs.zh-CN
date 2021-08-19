@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 02ada5a0926a3b96e448b8027b3b68ed4be8fe26
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: abed0c2882fc62c7951d9ac64c38ea8235f416ec2b4f4a034418525fe0944a37
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51134744"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54123060"
 ---
 # <a name="create-vulnerablemanageddevice"></a>创建 vulnerableManagedDevice
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -55,7 +55,7 @@ POST ** Collection URI for microsoft.management.services.api.vulnerableManagedDe
 |:---|:---|:---|
 |id|String|实体密钥和 AAD 设备 ID。|
 |managedDeviceId|String|Intune 托管设备 ID。|
-|displayName|String|设备名称。|
+|displayName|字符串|设备名称。|
 |lastSyncDateTime|DateTimeOffset|上次同步日期。|
 
 

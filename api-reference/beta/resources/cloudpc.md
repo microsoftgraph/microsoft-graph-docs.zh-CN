@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 57d708c870339a98cc3fff1322968642ba62f4a1
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 5d23f8345da02fda2d60ac8f7d957eabf14e9c89
+ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53534472"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58396940"
 ---
 # <a name="cloudpc-resource-type"></a>cloudPC 资源类型
 
@@ -28,7 +28,8 @@ ms.locfileid: "53534472"
 |:---|:---|:---|
 |[列出 cloudPCs](../api/virtualendpoint-list-cloudpcs.md)|[cloudPC](../resources/cloudpc.md) 集合|列出 [cloudPC 对象的属性和](../resources/cloudpc.md) 关系。|
 |[获取 cloudPC](../api/cloudpc-get.md)|[cloudPC](../resources/cloudpc.md)|读取 [cloudPC](../resources/cloudpc.md) 对象的属性和关系。|
-|[重新设置](../api/cloudpc-reprovision.md)|无|重新设置 [cloudPC](../resources/cloudpc.md) 对象。|
+|[重新设置](../api/cloudpc-reprovision.md)|None|重新设置 [cloudPC](../resources/cloudpc.md) 对象。|
+|[endGracePeriod](../api/cloudpc-endgraceperiod.md)|None|结束 [cloudPC](../resources/cloudpc.md) 对象的宽限期。|
 
 ## <a name="properties"></a>属性
 
@@ -39,16 +40,16 @@ ms.locfileid: "53534472"
 |imageDisplayName|String|云电脑上的操作系统映像的名称。|
 |managedDeviceId|String|云电脑的 Intune 设备 ID。|
 |managedDeviceName|String|云电脑的 Intune 设备名称。|
-|provisioningPolicyId|String|云电脑的预配策略 ID。|
+|provisioningPolicyId|字符串|云电脑的预配策略 ID。|
 |provisioningPolicyName|String|预配云电脑期间应用的预配策略。|
-|onPremisesConnectionName|String|预配云电脑期间应用本地连接。|
+|onPremisesConnectionName|字符串|预配云电脑期间应用本地连接。|
 |servicePlanId|String|云电脑的服务计划 ID。|
 |servicePlanName|String|云电脑的服务计划名称。|
-|status|[cloudPcStatus](#cloudpcstatus-values)|云电脑的状态。 可取值为：`notProvisioned`、`provisioning`、`provisioned`、`upgrading`、`inGracePeriod`、`deprovisioning` 或 `failed`。|
+|状态|[cloudPcStatus](#cloudpcstatus-values)|云电脑的状态。 可取值为：`notProvisioned`、`provisioning`、`provisioned`、`upgrading`、`inGracePeriod`、`deprovisioning` 或 `failed`。|
 |statusDetails|[cloudPcStatusDetails](../resources/cloudpcstatusdetails.md)|云电脑状态的详细信息。|
 |userPrincipalName|String|用户主体名称 (分配给) 电脑的用户的 UPN 名称。|
 |lastModifiedDateTime|DateTimeOffset|云电脑上次修改的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
-|gracePeriodEndDateTime|DateTimeOffset|宽限期结束和重新设置/取消设置发生的日期和时间。 仅在 status 为 时是必需的 `inGracePeriod` 。 时间戳以 ISO 8601 格式和 UTC 协调世界时 (显示) 。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
+|gracePeriodEndDateTime|DateTimeOffset|宽限期结束和重新设置/取消设置发生的日期和时间。 仅在 status 为 时是必需的 `inGracePeriod` 。 时间戳以 ISO 8601 格式显示，协调世界时 (UTC) 。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
 
 ### <a name="cloudpcstatus-values"></a>cloudPcStatus 值
 

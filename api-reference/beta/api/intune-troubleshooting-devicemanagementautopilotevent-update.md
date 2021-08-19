@@ -5,18 +5,16 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f97cdb540d33de6a2ac9f919093dba5d534a32c6
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: e6aa00754dbf99bb687b29f9d04fcedbaaa2827a
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51134212"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58253493"
 ---
 # <a name="update-devicemanagementautopilotevent"></a>更新 deviceManagementAutopilotEvent
 
 命名空间：microsoft.graph
-
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -61,7 +59,7 @@ PATCH /deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}
 |enrollmentType|[windowsAutopilotEnrollmentType](../resources/intune-troubleshooting-windowsautopilotenrollmenttype.md)|注册类型。 可取值为：`unknown`、`azureADJoinedWithAutopilotProfile`、`offlineDomainJoined`、`azureADJoinedUsingDeviceAuthWithAutopilotProfile`、`azureADJoinedUsingDeviceAuthWithoutAutopilotProfile`、`azureADJoinedWithOfflineAutopilotProfile`、`azureADJoinedWithWhiteGlove`、`offlineDomainJoinedWithWhiteGlove`、`offlineDomainJoinedWithOfflineAutopilotProfile`。|
 |deviceSerialNumber|String|设备序列号。|
 |managedDeviceName|String|托管设备名称。|
-|userPrincipalName|String|用于注册设备的用户主体名称。|
+|userPrincipalName|字符串|用于注册设备的用户主体名称。|
 |windowsAutopilotDeploymentProfileDisplayName|String|Autopilot 配置文件名称。|
 |enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|注册状态，如已注册、已失败。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
 |windows10EnrollmentCompletionPageConfigurationDisplayName|String|注册状态页面配置文件名称|
@@ -70,16 +68,16 @@ PATCH /deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}
 |deviceSetupStatus|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|注册状态页设备设置阶段的部署状态。 可取值为：`unknown`、`success`、`inProgress`、`failure`、`successWithTimeout`、`notAttempted` 或 `disabled`。|
 |accountSetupStatus|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|注册状态页帐户设置阶段的部署状态。 可取值为：`unknown`、`success`、`inProgress`、`failure`、`successWithTimeout`、`notAttempted` 或 `disabled`。|
 |osVersion|String|设备操作系统版本。|
-|deploymentDuration|持续时间|Autopilot 部署持续时间（包括注册）。|
-|deploymentTotalDuration|持续时间|从注册到桌面屏幕的总部署持续时间。|
-|devicePreparationDuration|持续时间|设备注册所花费的时间。|
-|deviceSetupDuration|持续时间|在设备 ESP 上花费的时间。|
-|accountSetupDuration|持续时间|在用户 ESP 中花费的时间。|
+|deploymentDuration|期限|Autopilot 部署持续时间（包括注册）。|
+|deploymentTotalDuration|期限|从注册到桌面屏幕的总部署持续时间。|
+|devicePreparationDuration|期限|设备注册所花费的时间。|
+|deviceSetupDuration|期限|在设备 ESP 上花费的时间。|
+|accountSetupDuration|期限|在用户 ESP 中花费的时间。|
 |deploymentStartDateTime|DateTimeOffset|部署开始时间。|
 |deploymentEndDateTime|DateTimeOffset|部署结束时间。|
 |targetedAppCount|Int32|目标应用程序计数。|
 |targetedPolicyCount|Int32|目标策略计数。|
-|enrollmentFailureDetails|String|注册失败详细信息。|
+|enrollmentFailureDetails|字符串|注册失败详细信息。|
 
 
 
@@ -91,7 +89,7 @@ PATCH /deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-PATCH https://graph.microsoft.com/beta/deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}
+PATCH https://graph.microsoft.com/v1/deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}
 Content-type: application/json
 Content-length: 1545
 
