@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 42b4903965d90641955659277360c46428562ed4
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: c2688b4b3459232af9f2948e3f1cdb2c7ac7fc20afeecacd209e3eb4e0df4374
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52666817"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54232592"
 ---
 # <a name="chromeosdeviceproperty-resource-type"></a>chromeOSDeviceProperty 资源类型
 
@@ -27,7 +27,7 @@ ms.locfileid: "52666817"
 |:---|:---|:---|
 |name|String|属性的名称|
 |value|String|属性的值|
-|valueType|String|值的类型|
+|valueType|字符串|值的类型|
 |updatable|布尔值|此属性是否可更新|
 
 ## <a name="relationships"></a>关系

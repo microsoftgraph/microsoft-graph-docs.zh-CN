@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6ae534c4edc24683221c204b4e6de48b2b17c69f
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: cb7286da452bf98446ebcb7e57d6ffbe8bf3b8dca3e6d1a283aa57e4f1879d88
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51144030"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54146053"
 ---
 # <a name="create-iosvppappassignedlicense"></a>创建 iosVppAppAssignedLicense
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -55,7 +55,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/ass
 |:---|:---|:---|
 |id|String|实体的键。|
 |userEmailAddress|String|用户电子邮件地址。|
-|userId|String|用户 ID。|
+|userId|字符串|用户 ID。|
 |userName|String|用户名。|
 |userPrincipalName|String|用户主体名称。|
 
