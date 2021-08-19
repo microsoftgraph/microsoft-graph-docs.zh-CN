@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b0d63d162adc757fe2e1a3b4116877fdded4e42c
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: f43dd3a39620c3089fa677b781584046b616a6fa1e1bfdafa4af0114fdf23670
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51133729"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54186649"
 ---
 # <a name="update-auditevent"></a>更新 auditEvent
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -54,7 +54,7 @@ PATCH /deviceManagement/auditEvents/{auditEventId}
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|displayName|String|事件显示名称。|
+|displayName|字符串|事件显示名称。|
 |componentName|String|组件名称。|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|与审核事件关联的 AAD 用户和应用程序。|
 |activity|String|活动的友好名称。|
@@ -64,7 +64,7 @@ PATCH /deviceManagement/auditEvents/{auditEventId}
 |activityResult|String|活动结果。|
 |correlationId|Guid|用于关联系统内的活动的客户端请求 ID。|
 |resources|[auditResource](../resources/intune-auditing-auditresource.md) 集合|正在修改的资源。|
-|“类别”|String|审核类别。|
+|“类别”|字符串|审核类别。|
 
 
 

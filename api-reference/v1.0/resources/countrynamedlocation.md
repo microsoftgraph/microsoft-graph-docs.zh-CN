@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 2e192661873b6e804156d413388f30fd57b7b1de62c511a2e0f029615292a47a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2952e5b391adf12d53b32d1f545fd1c92c623233
+ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54121274"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58397066"
 ---
 # <a name="countrynamedlocation-resource-type"></a>countryNamedLocation 资源类型
 
@@ -28,14 +28,14 @@ ms.locfileid: "54121274"
 | [创建 countryNamedLocation](../api/conditionalaccessroot-post-namedlocations.md) | [countryNamedLocation](countryNamedLocation.md) | 创建新的 **countryNamedLocation** 对象。 |
 | [获取 countryNamedLocation](../api/countrynamedlocation-get.md) | [countryNamedLocation](countrynamedlocation.md) | 读取 **countryNamedLocation** 对象的属性和关系。 |
 | [更新 countryNamedLocation](../api/countrynamedlocation-update.md) | [countryNamedLocation](countrynamedlocation.md) | 更新 **countryNamedLocation** 对象。 |
-| [删除 countryNamedLocation](../api/countrynamedlocation-delete.md) | 无 | 删除 **countryNamedLocation** 对象。 |
+| [删除 countryNamedLocation](../api/countrynamedlocation-delete.md) | None | 删除 **countryNamedLocation** 对象。 |
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|countriesAndRegions|String collection|ISO 3166-2 指定的两字母格式的国家/地区列表。|
-|countryLookupMethod|countryLookupMethodType|确定用于确定用户所在的国家/地区的方法。 可能的值为 `clientIpAddress` 和 `authenticatorAppGps`。|
+|countriesAndRegions|字符串集合|ISO 3166-2 指定的两字母格式的国家/地区列表。|
+|countryLookupMethod|countryLookupMethodType|确定用于确定用户所在的国家/地区的方法。 可能的值为 `clientIpAddress` 和 `authenticatorAppGps`。 注意 `authenticatorAppGps` ：目前尚不支持Microsoft Cloud for US Government。|
 |createdDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的位置的创建日期和时间，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。 继承自 [namedLocation](../resources/namedLocation.md)。|
 |displayName|String|位置的可读名称。 继承自 [namedLocation](../resources/namedLocation.md)。|
 |id|String|namedLocation 对象的标识符。 只读。 继承自 [namedLocation](../resources/namedLocation.md)。|

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: b6f717951dcc972542d75b4319d1a6a8e2c5fb99
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: f672d9462f6b1df8589747d9dbeb0254098aa70d
+ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547034"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58397010"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>将 Microsoft Graph API 与 Microsoft Teams 结合使用
 
@@ -22,7 +22,7 @@ Microsoft Teams 是 Microsoft 365 中基于聊天的工作区，可提供对特�
 
 | 资源 | 方法 |
 |:---------------|:--------|
-|[团队](../resources/team.md)| [列出你的团队](../api/user-list-joinedteams.md)、[列出所有团队](/graph/teams-list-all-teams)、[创建](../api/team-put-teams.md)、[读取](../api/team-get.md)、[更新](../api/team-update.md)、[删除](../api/group-delete.md)、[克隆](../api/team-clone.md)、[归档](../api/team-archive.md)[取消归档](../api/team-unarchive.md) |
+|[team](../resources/team.md)| [列出你的团队](../api/user-list-joinedteams.md)、[列出所有团队](/graph/teams-list-all-teams)、[创建](../api/team-put-teams.md)、[读取](../api/team-get.md)、[更新](../api/team-update.md)、[删除](../api/group-delete.md)、[克隆](../api/team-clone.md)、[归档](../api/team-archive.md)[取消归档](../api/team-unarchive.md) |
 |[组](../resources/group.md)| [添加成员](../api/group-post-members.md)、 [移除成员](../api/group-delete-members.md)、[添加所有者](../api/group-post-owners.md)、 [移除所有者](../api/group-delete-owners.md)、[获取文件](drive.md)、[获取笔记本](../resources/notebook.md)、[获取计划](plannergroup.md)、[获取日历](event.md) |
 |[频道](../resources/channel.md)|[列出](../api/channel-list.md)、[创建](../api/channel-post.md)、[读取](../api/channel-get.md)、[更新](../api/channel-patch.md)、[删除](../api/channel-delete.md)|
 |[teamsTab](../resources/teamstab.md) |[列出](../api/channel-list-tabs.md)、[创建](../api/channel-post-tabs.md)、[读取](../api/channel-get-tabs.md)、[更新](../api/channel-patch-tabs.md)、[删除](../api/channel-delete-tabs.md) |
@@ -68,43 +68,12 @@ Microsoft Teams 的已测试性能和容量限制将记录在 [Microsoft Teams �
 
 ## <a name="membership-changes-in-microsoft-teams"></a>Microsoft Teams 中的成员身份更改
 
-若要向团队添加成员和所有者，请使用相同的 ID 更改[组](../resources/group.md)的成员身份。
-
 | 用例      | 谓词      | URL |
 | ------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [添加成员](../api/group-post-members.md)    | POST      | /groups/{id}/members/$ref  |
-| [删除成员](../api/group-delete-members.md)   | DELETE    | /groups/{id}/members/{userId}/$ref |
-| [添加所有者](../api/group-post-owners.md)     | POST       | /groups/{id}/owners/$ref |
-| [移除所有者](../api/group-delete-owners.md) | DELETE    | /groups/{id}/owners/{userId}/$ref |
-| [更新团队](../api/team-update.md)  | PATCH     | /teams/{id} |
-
-我们建议你在添加所有者时，还将该用户添加为成员。
-如果团队的所有者不是其成员，则所有权和成员身份更改可能不会立即显示在 Microsoft Teams 中。
-此外，不同的应用程序和 API 将以不同的方式进行处理。
-例如，Microsoft Teams 将显示用户是其成员或所有者的团队，而 Microsoft Teams PowerShell cmdlet 和 /me/joinedTeams API 仅显示用户是其成员的团队。
-为了避免混淆，请也将全部所有者添加到成员列表中。
-
-已知问题：当调用 DELETE /groups/{id}/owners 时，也会从 /groups/{id}/members list 中移除用户。 若要解决此问题，我们建议你从所有者和成员中移除用户，等待 10 秒后，将其添加回成员。
-
-在添加和移除成员和所有者时，请勿在 ID 两边添加大括号 { }。
-
-| 速度 | 语法 |
-| ------ | ----- |
-| 快速 | `https://graph.microsoft.com/beta/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/members/48d31887-5fad-4d73-a9f5-3c356e68a038/$ref` |
-| 慢速 | `https://graph.microsoft.com/beta/groups/{02bd9fd6-8f93-4758-87c3-1fb73740a315}/members/{48d31887-5fad-4d73-a9f5-3c356e68a038}/$ref` |
-
-同样，如果 URL 或有效负载中的 `userId` 显示为 UPN 而不是 GUID，则性能会变慢。
-
-| 速度 | 语法 |
-| ------ | ----- |
-| 快速 | 48d31887-5fad-4d73-a9f5-3c356e68a038 |
-| 慢速 | john@example.com |
-
-当采用较慢的路径时，如果当前团队成员或所有者登录到 Microsoft Teams 应用程序/网站，则更改将在一小时内反映出来。
-如果这些用户都未登录到 Microsoft Teams 应用程序/网站，则更改将在其中一个用户登录后一小时内反映出来。
-
-> [!Note]
-> 租户来宾始终通过慢速路径进行处理。
+| [添加成员](../api/team-post-members.md) | POST      | /teams/{team-id}/members  |
+| [删除成员](../api/team-delete-members.md)    | DELETE    | /teams/{team-id}/members/{membership-id} |
+| [更新成员角色](../api/team-update-members.md) | PATCH | /teams/{team-id}/members/{membership-id} |
+| [更新团队](../api/team-update.md)  | PATCH     | /teams/{team-id} |
 
 ## <a name="polling-requirements"></a>轮询要求
 

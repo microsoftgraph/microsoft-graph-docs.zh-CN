@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madansr7
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9553accf83925e1ab33c36f353a7ca74da6ad623
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 30b46570c29ed86e645865a4cb10660c2a752a63
+ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58262388"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58396758"
 ---
 # <a name="create-appmanagementpolicy"></a>创建 appManagementPolicy
 
@@ -61,7 +61,7 @@ POST /policies/appManagementPolicies
 
 - 启用策略。
 - 阻止在 UTC 时间 2019 年 10 月 10-19 日上午 10：37 之后为应用和服务主体创建新密码。
-- 将 UTC 时间 2019-10-19 日上午 10：37 创建的应用和服务主体的密码密码限制为少于 XX 天。
+- 将 UTC 时间 2019-10-19 日上午 10：37 创建的应用和服务主体的密码密码限制为少于 4 天、12 小时、30 分钟和 5 秒。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

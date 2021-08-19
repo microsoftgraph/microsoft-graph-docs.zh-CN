@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 37ab8e10ea1b33c6f600fd88d7670cc7c6a63ece
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: b057a6029ff07116af900e9157b59d455e91433194a68bd6d23a1906c48c7eaa
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51865185"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54213849"
 ---
 # <a name="update-microsofttunnelserverlogcollectionresponse"></a>更新 microsoftTunnelServerLogCollectionResponse
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -54,7 +54,7 @@ PATCH /deviceManagement/microsoftTunnelServerLogCollectionResponses/{microsoftTu
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的唯一 ID|
-|状态|[microsoftTunnelLogCollectionStatus](../resources/intune-mstunnel-microsofttunnellogcollectionstatus.md)|日志集合的状态。 可取值为：`pending`、`completed`、`failed`。|
+|status|[microsoftTunnelLogCollectionStatus](../resources/intune-mstunnel-microsofttunnellogcollectionstatus.md)|日志集合的状态。 可取值为：`pending`、`completed`、`failed`。|
 |startDateTime|DateTimeOffset|收集的日志的开始时间 |
 |endDateTime|DateTimeOffset|收集的日志的结束时间|
 |sizeInBytes|Int64|日志的大小（以字节为单位）|

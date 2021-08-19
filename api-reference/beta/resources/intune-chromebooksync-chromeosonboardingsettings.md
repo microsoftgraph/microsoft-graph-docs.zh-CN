@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 442ea58414febe146745892844f8667c8fd799a3
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 53b42eae58cbd68f4663290cd5d565e8fdf44c27bab676835054dcbc919a8935
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52666990"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54206786"
 ---
 # <a name="chromeosonboardingsettings-resource-type"></a>chromeOSOnboardingSettings 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "52666990"
 
 表示 Chromebook 租户设置的实体
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 chromeOSOnboardingSettingses](../api/intune-chromebooksync-chromeosonboardingsettings-list.md)|[chromeOSOnboardingSettings](../resources/intune-chromebooksync-chromeosonboardingsettings.md) 集合|列出 [chromeOSOnboardingSettings 对象的属性和](../resources/intune-chromebooksync-chromeosonboardingsettings.md) 关系。|

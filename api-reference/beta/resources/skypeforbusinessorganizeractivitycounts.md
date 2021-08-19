@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: kszb
-ms.openlocfilehash: aa0721c13d78be8b88e399b1342d8f0c0ecd3efa
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1289e1001a8d6b3cdb2cba69aa85b1b1c31cc023c71b0d0b802adc39c3c2ebd5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997514"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54241287"
 ---
 # <a name="skypeforbusinessorganizeractivitycounts-resource-type"></a>skypeForBusinessOrganizerActivityCounts 资源类型
 
@@ -28,7 +28,7 @@ ms.locfileid: "47997514"
 | dialInOutMicrosoft | Int64  |
 | reportRefreshDate  | 日期   |
 | reportDate         | 日期   |
-| reportPeriod       | String |
+| reportPeriod       | 字符串 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

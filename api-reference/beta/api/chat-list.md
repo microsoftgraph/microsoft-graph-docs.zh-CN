@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 08bb772fc20242ea77c5e787f31e12a11e246c00
-ms.sourcegitcommit: 0adbbcbc65b6acab80e9195f13321055994f56be
+ms.openlocfilehash: 7f28dcc5584f2a53201871d22b54b18aace4c55a
+ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "53236234"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58396975"
 ---
 # <a name="list-chats"></a>列出聊天
 
@@ -41,7 +41,7 @@ GET /chats
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法仅 (`$expand` **members** 属性和 `$filter` [OData](/graph/query-parameters)) 参数的自定义响应。
+此方法仅 (`$expand` **members** 属性和 `$filter` [OData](/graph/query-parameters) 查询) 自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -382,6 +382,8 @@ Content-type: application/json
                 "id": "1622853091207",
                 "createdDateTime": "2021-06-05T00:31:31.207Z",
                 "isDeleted": false,
+                "messageType": "message",
+                "eventDetail": null,
                 "body": {
                     "contentType": "text",
                     "content": "Testing unread read status"
@@ -411,6 +413,8 @@ Content-type: application/json
                 "id": "1622707540293",
                 "createdDateTime": "2021-06-03T08:05:40.293Z",
                 "isDeleted": false,
+                "messageType": "message",
+                "eventDetail": null,
                 "body": {
                     "contentType": "html",
                     "content": "<attachment id=\"ee8d34acd36d4dfe87ca6ad4e060b7be\"></attachment>"
@@ -422,6 +426,49 @@ Content-type: application/json
                         "id": "da7d471b-de7d-4152-8556-1cdf7a564f6c",
                         "displayName": "talla",
                         "applicationIdentityType": "bot"
+                    }
+                }
+            }
+        },
+        {
+            "id": "19:7b5c1643d8d74a03afa0af9c02dd0ef2@thread.v2",
+            "topic": "Group chat",
+            "createdDateTime": "2021-07-18T22:12:17.231Z",
+            "lastUpdatedDateTime": "2021-06-04T05:34:23.980Z",
+            "chatType": "group",
+            "webUrl": "https://teams.microsoft.com/l/chat/19%3A7b5c1643d8d74a03afa0af9c02dd0ef2%40thread.v2/0?tenantId=df81db53-c7e2-418a-8803-0e68d4b88607",
+            "viewpoint": {
+                "lastMessageReadDateTime": "2021-06-04T05:34:23.712Z"
+            },
+            "lastMessagePreview@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3A7b5c1643d8d74a03afa0af9c02dd0ef2%40thread.v2')/lastMessagePreview/$entity",
+            "lastMessagePreview": {
+                "id": "1622784857324",
+                "createdDateTime": "2021-06-04T05:34:17.324Z",
+                "isDeleted": false,
+                "messageType": "systemEventMessage",
+                "from": null,
+                "body": {
+                    "contentType": "html",
+                    "content": "<systemEventMessage/>"
+                },
+                "eventDetail": {
+                    "@odata.type": "#microsoft.graph.membersAddedEventMessageDetail",
+                    "visibleHistoryStartDateTime": "0001-01-01T00:00:00Z",
+                    "members": [
+                        {
+                            "id": "d9a2f9a8-6ca9-4c92-9a1c-ceca33b91762",
+                            "displayName": null,
+                            "userIdentityType": "aadUser"
+                        }
+                    ],
+                    "initiator": {
+                        "application": null,
+                        "device": null,
+                        "user": {
+                            "id": "1fb8890f-423e-4154-8fbf-db6809bc8756",
+                            "displayName": null,
+                            "userIdentityType": "aadUser"
+                        }
                     }
                 }
             }
@@ -440,6 +487,8 @@ Content-type: application/json
                 "id": "1621533401696",
                 "createdDateTime": "2021-05-20T17:56:41.696Z",
                 "isDeleted": false,
+                "messageType": "message",
+                "eventDetail": null,
                 "body": {
                     "contentType": "text",
                     "content": "sup"

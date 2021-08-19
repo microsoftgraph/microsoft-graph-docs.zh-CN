@@ -4,12 +4,12 @@ description: 作为对 addKey 和 removeKey 方法的请求验证的一部分，
 localization_priority: Priority
 ms.prod: applications
 author: davidmu1
-ms.openlocfilehash: dedd2c8b3439027a02f36e5a1ba1f41bfa830708da73bd1313eacaf32c739c70
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d4b98f0820941879f3994b0a18ccbc1c2d8c7dac
+ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163605"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58384406"
 ---
 # <a name="generating-proof-of-possession-tokens-for-rolling-keys"></a>生成用于滚动密钥的所有权证明令牌
 
@@ -76,3 +76,5 @@ namespace MicrosoftIdentityPlatformProofTokenGenerator
     }
 }
 ```
+
+> **注意：** 可以使用其他工具（如 PowerShell 或使用 Azure KeyVault 的签名）生成证明。 请务必注意，JWT 标头和有效负载中不得包含填充字符“=”，否则将返回 **Authentication_MissingOrMalformed** 错误。

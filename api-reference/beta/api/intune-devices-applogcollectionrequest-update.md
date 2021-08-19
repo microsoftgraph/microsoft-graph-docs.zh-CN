@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0e69edbbc9dd874e89246223c90736bc3034acc2
-ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
+ms.openlocfilehash: 05a974b4f294f5844c69c248ce7944d9bd31cc7b
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51612172"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58265880"
 ---
 # <a name="update-applogcollectionrequest"></a>更新 appLogCollectionRequest
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -27,9 +27,9 @@ ms.locfileid: "51612172"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -49,14 +49,14 @@ PATCH /deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshooting
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) 对象的 JSON 表示形式。
 
-下表显示创建 [appLogCollectionRequest 时所需的属性](../resources/intune-devices-applogcollectionrequest.md)。
+下表显示创建 [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|唯一标识符。 这是userId_DeviceId_AppId ID。|
-|状态|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|记录上载状态。 可取值为：`pending`、`completed`、`failed`。|
-|errorMessage|String|上传过程中出现错误消息（如果有）|
-|customLogFolders|String 集合|日志文件夹列表。 |
+|status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|记录上载状态。 可取值为：`pending`、`completed`、`failed`。|
+|errorMessage|字符串|上传过程中出现错误消息（如果有）|
+|customLogFolders|String collection|日志文件夹列表。 |
 |completedDateTime|DateTimeOffset|上载日志请求达到终端状态的时间|
 
 

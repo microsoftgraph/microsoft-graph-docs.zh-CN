@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 567bd02f6a3d39d26ba228bdc12ff6f23b03aae5
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 57fd0757defeec287083c60a96391fcd4f8abf8b8aebfaa22704238c26585734
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51157616"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54133844"
 ---
 # <a name="create-embeddedsimactivationcodepool"></a>创建 embeddedSIMActivationCodePool
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -54,7 +54,7 @@ POST /deviceManagement/embeddedSIMActivationCodePools
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|嵌入式 SIM 卡激活代码池的唯一标识符。 创建时分配的系统生成值。|
-|displayName|String|管理员定义的嵌入式 SIM 卡激活代码池的名称。|
+|displayName|字符串|管理员定义的嵌入式 SIM 卡激活代码池的名称。|
 |createdDateTime|DateTimeOffset|嵌入式 SIM 卡激活代码池的创建时间。 生成的服务器端。|
 |modifiedDateTime|DateTimeOffset|上次修改嵌入式 SIM 卡激活代码池的时间。 更新的服务器端。|
 |activationCodes|[embeddedSIMActivationCode](../resources/intune-esim-embeddedsimactivationcode.md) 集合|属于此池的激活代码。 此导航属性用于将激活代码张贴到 Intune，但不能用于从 Intune 读取激活代码。|

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f55e885448e7fe131a1eb4151196d5a200a8d300
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 37754c6b72a5484257cd3d9ddcd2b7ee09eab6835cbd562c171070a49bb32f6b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52666588"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54226299"
 ---
 # <a name="devicemanagementconfigurationchoicesettingvalueconstantdefaulttemplate-resource-type"></a>deviceManagementConfigurationChoiceSettingValueConstantDefaultTemplate 资源类型
 
@@ -28,7 +28,7 @@ ms.locfileid: "52666588"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|settingDefinitionOptionId|String|默认常量值|
+|settingDefinitionOptionId|字符串|默认常量值|
 |children|[deviceManagementConfigurationSettingInstanceTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstancetemplate.md) 集合|选项子项|
 
 ## <a name="relationships"></a>关系
