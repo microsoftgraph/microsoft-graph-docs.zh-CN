@@ -1,36 +1,36 @@
 ---
 title: securityResource 资源类型
-description: 代表与警报相关的资源。
+description: 表示与警报相关的资源。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 4d27b5815366bdce76e5f99f0410f67684e608ea
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f8beb524375db5fc4187f210b8602e534835a53f3dc9c52b60ee57085f904ce2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988819"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54212932"
 ---
 # <a name="securityresource-resource-type"></a>securityResource 资源类型
 
 命名空间：microsoft.graph
 
-代表与警报相关的资源。
+表示与警报相关的资源。
 
 ## <a name="properties"></a>属性
 
 | 属性   | 类型|说明|
 |:---------------|:--------|:----------|
-|资源|String|与当前警报相关的资源的名称。 **** 必需。|
-|resourceType|[securityResourceType](#securityresourcetype-values)|表示与警报相关的安全资源的类型。 可取值为：`attacked`、`related`。|
+|资源|字符串|与当前警报相关的资源的名称。 **必需**。|
+|resourceType|[securityResourceType](#securityresourcetype-values)|表示与警报相关的安全资源类型。 可取值为：`attacked`、`related`。|
 
 ### <a name="securityresourcetype-values"></a>securityResourceType 值
 
 |成员|值|说明|
 |-|-|-|
-|遭受|1 |警报中的资源受到攻击。|
-|关联方|2 |该资源与警报相关，但不直接受到攻击。|
+|attacked|1 |资源在警报中受到攻击。|
+|related|2 |资源与警报相关，但并未受到直接攻击。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

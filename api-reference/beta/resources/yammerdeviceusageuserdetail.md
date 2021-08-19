@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: b7a6617b82c16fb297b684801e11876cf8178b0d
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: e93dde1a1cdd034461a44766df6538da663093ed5d7f4674a3688d0e847aa9f4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49982353"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54197770"
 ---
 # <a name="yammerdeviceusageuserdetail-resource-type"></a>yammerDeviceUsageUserDetail 资源类型
 
@@ -22,17 +22,17 @@ ms.locfileid: "49982353"
 | :---------------- | :------ |
 | reportRefreshDate | 日期    |
 | userPrincipalName | String  |
-| displayName       | String  |
+| displayName       | 字符串  |
 | userState         | String  |
 | stateChangeDate   | 日期    |
 | lastActivityDate  | 日期    |
-| usedWeb           | Boolean |
-| usedWindowsPhone  | Boolean |
-| usedAndroidPhone  | Boolean |
-| usediPhone        | Boolean |
-| usediPad          | Boolean |
-| usedOthers        | Boolean |
-| reportPeriod      | String  |
+| usedWeb           | 布尔值 |
+| usedWindowsPhone  | 布尔值 |
+| usedAndroidPhone  | 布尔值 |
+| usediPhone        | 布尔值 |
+| usediPad          | 布尔值 |
+| usedOthers        | 布尔值 |
+| reportPeriod      | 字符串  |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

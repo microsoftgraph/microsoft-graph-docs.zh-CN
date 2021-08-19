@@ -1,48 +1,48 @@
 ---
 title: windowsPrivacyDataCategory 枚举类型
-description: 用于隐私数据访问的 Windows 隐私数据类别说明符。
+description: Windows数据访问权限的隐私数据类别说明。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6172f3ed7e4e25cf23c34478c98ff724ff81881d
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 2abcc88f884943bf1a275c4df65d2574fa51a452e8956d97bf72ad9e7cd53a5e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49231351"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54198085"
 ---
 # <a name="windowsprivacydatacategory-enum-type"></a>windowsPrivacyDataCategory 枚举类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-用于隐私数据访问的 Windows 隐私数据类别说明符。
+Windows数据访问权限的隐私数据类别说明。
 
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|notConfigured|0|未指定访问级别，无意向。 在 UserInControl 或 ForceAllow 中，设备的行为可能是一样的。 它可能取决于访问的隐私数据、Windows 版本和其他因素。|
-|accountInfo|1|允许应用访问用户的名称、图片以及在 Microsoft 帐户中创建的其他帐户信息。 已添加到 Windows 10 版本 1607 中。|
-|appsRunInBackground|双面|允许应用接收信息、发送通知并保持最新状态，即使用户不使用它们也是如此。 请注意，从后台访问 (电子邮件、语音等) 的通信应用程序时，这些应用可能会或可能不会像在后台访问中那样正常工作。 在 Windows 10 版本1703中添加。|
-|calendar|第三章|允许应用访问用户的日历。 已添加到 Windows 10 版本 1607 中。|
+|notConfigured|0|未指定访问级别，没有意图。 设备的行为类似于 UserInControl 或 ForceAllow。 它可能取决于已访问的隐私数据、Windows版本以及其他因素。|
+|accountInfo|1 |允许应用访问在 Microsoft 帐户中创建的用户名、图片和其他帐户信息。 已添加到 Windows 10 版本 1607 中。|
+|appsRunInBackground|2 |允许应用接收信息、发送通知和保持最新，即使用户没有使用它们。 请注意，当从后台访问 (电子邮件、语音) 等通信应用时，这些应用可以或可能不会像后台访问一样运行。 已添加到Windows 10版本 1703 中。|
+|日历|3 |允许应用访问用户的日历。 已添加到 Windows 10 版本 1607 中。|
 |callHistory|4 |允许应用访问用户的呼叫历史记录。 已添加到 Windows 10 版本 1607 中。|
-|拍照|5 |允许应用访问用户设备上的摄像头。 已添加到 Windows 10 版本 1607 中。|
-|contacts|6 |允许应用访问用户的联系信息。 已添加到 Windows 10 版本 1607 中。|
-|diagnosticsInfo|7 |允许应用访问其他正在运行的应用程序的诊断信息。 在 Windows 10 版本1703中添加。|
-|email|8 |允许应用访问和发送电子邮件。 已添加到 Windows 10 版本 1607 中。|
+|相机|5 |允许应用访问用户设备上相机。 已添加到 Windows 10 版本 1607 中。|
+|contacts|6 |允许应用访问用户的联系人信息。 已添加到 Windows 10 版本 1607 中。|
+|diagnosticsInfo|7 |允许应用访问有关其他正在运行的应用的诊断信息。 已添加到Windows 10版本 1703 中。|
+|电子邮件|8 |允许应用访问和发送电子邮件。 已添加到 Windows 10 版本 1607 中。|
 |位置|9 |允许应用访问设备用户的确切位置数据。 已添加到 Windows 10 版本 1607 中。|
-|讯息|10  |允许应用读取或发送消息、文本或 MMS。 已添加到 Windows 10 版本 1607 中。|
-|着|11 |允许应用在用户设备上使用麦克风。 已添加到 Windows 10 版本 1607 中。|
-|动作|12 |允许应用使用在设备用户上生成的运动数据。 已添加到 Windows 10 版本 1607 中。|
-|通知|13 |允许应用访问用户的通知。 已添加到 Windows 10 版本 1607 中。|
-|phone|14 |允许应用访问电话数据并拨打电话。 已添加到 Windows 10 版本 1607 中。|
-|收发|15 |允许应用使用无线收发器（包括蓝牙）发送和接收数据。 已添加到 Windows 10 版本 1607 中。|
-|tasks|16 |允许应用访问任务计划程序。 在 Windows 10 版本1703中添加。|
-|syncWithDevices|17 |允许应用自动与未明确配对用户设备的无线设备共享和同步信息。 已添加到 Windows 10 版本 1607 中。|
+|消息传递|10 |允许应用读取或发送消息、文本或彩信。 已添加到 Windows 10 版本 1607 中。|
+|麦克风|11 |允许应用在用户设备上使用麦克风。 已添加到 Windows 10 版本 1607 中。|
+|动作|12 |让应用使用在设备用户上生成的运动数据。 已添加到 Windows 10 版本 1607 中。|
+|通知|13 |允许应用访问用户通知。 已添加到 Windows 10 版本 1607 中。|
+|phone|14 |允许应用访问电话数据和进行电话呼叫。 已添加到 Windows 10 版本 1607 中。|
+|无线电广播|15 |允许应用使用无线电设备（蓝牙）发送和接收数据。 已添加到 Windows 10 版本 1607 中。|
+|tasks|16 |允许应用访问任务计划程序。 已添加到Windows 10版本 1703 中。|
+|syncWithDevices|17 |让应用自动与未与用户设备显式配对的无线设备共享和同步信息。 已添加到 Windows 10 版本 1607 中。|
 |trustedDevices|18 |允许应用访问受信任的设备。 已添加到 Windows 10 版本 1607 中。|
 
 

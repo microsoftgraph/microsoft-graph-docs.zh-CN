@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 80f5fc4065d8db2f0bbb7659f244a14c9ef9331d
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: c108b5972cdb7ccfdbfd88e64f6929ea2807db958d93bdc084761471910f448c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51867523"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54228021"
 ---
 # <a name="update-devicemanagement"></a>更新 deviceManagement
 
 命名空间：microsoft.graph
 
-> **重要提示：** Microsoft Graph 中的 /beta 版本下的 API 可能会更改。 不支持在生产应用程序中使用这些 API。
+> **重要提示：** Microsoft Graph /beta 版本的 API 可能会更改。 不支持在生产应用程序中使用这些 API。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -47,7 +47,7 @@ ms.locfileid: "51867523"
 | &nbsp; &nbsp; **基于角色的访问控制 (RBAC)** | DeviceManagementRBAC.ReadWrite.All |
 | &nbsp; &nbsp; **远程访问** | DeviceManagementConfiguration.Read.All |
 | &nbsp;&nbsp;**远程协助** | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp;**软件更新** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp; &nbsp; **软件更新** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp;**电信费用管理** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp;**问题** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp; &nbsp; **Windows 信息保护** | DeviceManagementApps.ReadWrite.All |
@@ -69,7 +69,7 @@ ms.locfileid: "51867523"
 | &nbsp; &nbsp; **基于角色的访问控制 (RBAC)** | DeviceManagementRBAC.ReadWrite.All |
 | &nbsp; &nbsp; **远程访问** | DeviceManagementConfiguration.Read.All |
 | &nbsp;&nbsp;**远程协助** | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp;**软件更新** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp; &nbsp; **软件更新** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp;**电信费用管理** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp;**问题** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp; &nbsp; **Windows 信息保护** | DeviceManagementApps.ReadWrite.All |
@@ -101,7 +101,7 @@ PATCH /deviceManagement
 |id|String|设备的唯一标识符。|
 |**设备配置**|
 |intuneAccountId|GUID|给定租户的 Intune 帐户 ID|
-|legacyPcManangementEnabled|Boolean|用于为此帐户启用非 MDM 托管旧版电脑管理的 属性。 此属性是只读的。|
+|legacyPcManangementEnabled|布尔值|用于为此帐户启用非 MDM 托管旧版电脑管理的 属性。 此属性是只读的。|
 |maximumDepTokens|Int32|允许每个租户使用的最大 DEP 令牌数。|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|帐户级别设置。|
 |**设备管理**|

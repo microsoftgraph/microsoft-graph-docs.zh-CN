@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: af0a00bf24ad0311add1165a491b595874e05a60
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 20c74743e511fe4144e335cabeb018596bd859ceced0994858c4fdfb70c07e65
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51134548"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54233474"
 ---
 # <a name="list-targetedmanagedappconfigurationpolicysetitems"></a>列出 targetedManagedAppConfigurationPolicySetItems
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
