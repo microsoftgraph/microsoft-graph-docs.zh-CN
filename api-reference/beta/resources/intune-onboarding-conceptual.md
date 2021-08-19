@@ -1,15 +1,15 @@
 ---
-title: 带有 Intune 的板载托管设备-Microsoft Graph API
-description: 列出了用于板载 (配置和初始化租户组织的) 设备的 Intune 终结点 (REST) 的 Microsoft Graph API。
+title: 使用 Intune 载入托管设备 - Microsoft Graph API
+description: 列出用于为租户Graph载入 (配置和) 设备的适用于 Intune 终结点的 Microsoft (REST) 。
 localization_priority: Normal
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 5788b1d7a13f0be84b0368dfa73e7932f4820d9d
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: f420420e5e82109e12628f5c2a585e27aee506c9
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49266548"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256989"
 ---
 # <a name="enroll-devices-for-management-in-intune"></a>在 Intune 中注册设备以进行管理
 
@@ -27,9 +27,10 @@ ms.locfileid: "49266548"
 - [合规性管理合作伙伴](intune-onboarding-compliancemanagementpartner.md)
 - [合规性管理合作伙伴分配](intune-onboarding-compliancemanagementpartnerassignment.md)
 - [设备和应用管理数据](intune-onboarding-deviceandappmanagementdata.md)
-- [设备 comanagement 证书颁发机构配置](intune-onboarding-devicecomanagementauthorityconfiguration.md)
+- [设备共同管理颁发机构配置](intune-onboarding-devicecomanagementauthorityconfiguration.md)
 - [设备注册限制配置](intune-onboarding-deviceenrollmentlimitconfiguration.md)
 - [设备注册平台限制](intune-onboarding-deviceenrollmentplatformrestriction.md)
+- [设备注册平台限制配置](intune-onboarding-deviceenrollmentplatformrestrictionconfiguration.md)
 - [设备注册平台限制配置](intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration.md)
 - [设备注册 Windows Hello 企业版配置](intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration.md)
 - [设备管理 Exchange 访问级别](intune-onboarding-devicemanagementexchangeaccesslevel.md)
@@ -45,7 +46,9 @@ ms.locfileid: "49266548"
 - [设备管理合作伙伴应用类型](intune-onboarding-devicemanagementpartnerapptype.md)
 - [设备管理合作伙伴分配](intune-onboarding-devicemanagementpartnerassignment.md)
 - [设备管理合作伙伴租户状态](intune-onboarding-devicemanagementpartnertenantstate.md)
+- [设备平台类型](intune-onboarding-deviceplatformtype.md)
 - [注册配置分配](intune-onboarding-enrollmentconfigurationassignment.md)
+- [注册限制平台类型](intune-onboarding-enrollmentrestrictionplatformtype.md)
 - [Intune 品牌](intune-onboarding-intunebrand.md)
 - [MDM 颁发机构](intune-onboarding-mdmauthority.md)
 - [适用于企业的 Microsoft Store 门户选定内容的选项](intune-onboarding-microsoftstoreforbusinessportalselectionoptions.md)

@@ -1,26 +1,26 @@
 ---
 title: deviceManagementSettingCollectionConstraint 资源类型
-description: 强制实施集合中最大元素数的约束
+description: 强制集合中元素的最大数目的约束
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2e97c49beae1efdb63f5a18ff7e70402e6b5c13d
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 45d2ea304187697da21425d3c485f0ffa5671f2d68a4bd3453e12d92da142b86
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49275516"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54156210"
 ---
 # <a name="devicemanagementsettingcollectionconstraint-resource-type"></a>deviceManagementSettingCollectionConstraint 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-强制实施集合中最大元素数的约束
+强制集合中元素的最大数目的约束
 
 
 继承自 [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)
@@ -28,8 +28,8 @@ ms.locfileid: "49275516"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|Minimumheight|Int32|集合中元素的最小数目|
-|maximumLength|Int32|集合中元素的最大数目|
+|minimumLength|Int32|集合中元素的最小数目|
+|maximumLength|Int32|集合中元素的最大数量|
 
 ## <a name="relationships"></a>关系
 无

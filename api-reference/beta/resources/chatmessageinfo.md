@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: dc03ee6743aa8115f5a231b3766cc2d6c3d5537b
-ms.sourcegitcommit: 0adbbcbc65b6acab80e9195f13321055994f56be
+ms.openlocfilehash: 289bce30b970edd46f0ad29fdbaa24fd6428c93d
+ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "53236292"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58397038"
 ---
 # <a name="chatmessageinfo-resource-type"></a>chatMessageInfo 资源类型
 
@@ -25,9 +25,11 @@ ms.locfileid: "53236292"
 |:---|:---|:---|
 |body|[itemBody](../resources/itembody.md)|[chatMessage 的正文](../resources/chatmessage.md)。 即使对象不返回@mentions和附件，这仍将包含@mentions标记。|
 |createdDateTime|DateTimeOffset|表示创建邮件的时间的日期时间对象。|
-|起始数量|[chatMessageFromIdentitySet](../resources/chatmessagefromidentityset.md)|有关邮件发件人的信息。|
+|发件人|[chatMessageFromIdentitySet](../resources/chatmessagefromidentityset.md)|有关邮件发件人的信息。|
 |id|String|[chatMessage](../resources/chatmessage.md)的 ID。|
-|isDeleted|布尔值|如果设置为 `true` ，则原始邮件已删除。|
+|isDeleted|Boolean|如果设置为 `true` ，则原始邮件已删除。|
+|messageType|chatMessageType|聊天消息的类型。 可能的值包括 `message`、`unknownFutureValue`、`systemEventMessage`。|
+|eventDetail|[eventMessageDetail](../resources/eventmessagedetail.md)|只读。  如果存在，表示聊天、频道或团队中发生的事件的详细信息，例如，已添加成员等。 对于事件消息 **，messageType** 属性将设置为 `systemEventMessage` 。|
 
 ## <a name="relationships"></a>关系
 无。
@@ -53,7 +55,11 @@ ms.locfileid: "53236292"
     "@odata.type": "microsoft.graph.chatMessageFromIdentitySet"
   },
   "createdDateTime": "String (timestamp)",
-  "isDeleted": "Boolean"
+  "isDeleted": "Boolean",
+  "messageType": "String",
+  "eventDetail": {
+    "@odata.type": "microsoft.graph.eventMessageDetail"
+  }
 }
 ```
 

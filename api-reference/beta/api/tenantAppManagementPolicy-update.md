@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madansr7
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: eb7e7c6003f3b262c0745eb7ae5ca2b445e259be
-ms.sourcegitcommit: b711aed8acc18512cf6591f4108ed5ddf05b649d
+ms.openlocfilehash: a0c7d241575c5ffc6e4b80a0044442ea1ef0d0fc
+ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53660375"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58396709"
 ---
 # <a name="update-tenantappmanagementpolicy"></a>更新 tenantAppManagementPolicy
 
@@ -35,7 +35,7 @@ ms.locfileid: "53660375"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /policies/tenantAppManagementPolicy
+PATCH /policies/defaultAppManagementPolicy
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -52,7 +52,7 @@ PATCH /policies/tenantAppManagementPolicy
 | 属性                | 类型                                                                        | 说明 |
 |:------------------------|:----------------------------------------------------------------------------|:----------------------------------------------------|
 | displayName                  | 字符串                                                                   | 默认显示名称的默认值。 继承自 [policyBase](../resources/policybase.md)。                                |
-| 说明                  | 字符串                                                                   | 默认策略的说明。 继承自 [policyBase](../resources/policybase.md)。                                |
+| 说明                  | String                                                                   | 默认策略的说明。 继承自 [policyBase](../resources/policybase.md)。                                |
 | isEnabled                    | Boolean                                                                  | 表示策略是否已启用。 默认值为 false。                                    |
 | applicationRestrictions      | [appManagementConfiguration](../resources/appManagementConfiguration.md) | 应用于租户中所有应用程序对象的默认限制。               |
 | servicePrincipalRestrictions | [appManagementConfiguration](../resources/appManagementConfiguration.md) | 应用于租户中所有服务主体对象的默认限制。 |
@@ -74,7 +74,7 @@ PATCH /policies/tenantAppManagementPolicy
 }-->
 
 ```msgraph-interactive
-PATCH https://graph.microsoft.com/beta/policies/tenantAppManagementPolicy
+PATCH https://graph.microsoft.com/beta/policies/defaultAppManagementPolicy
 Content-Type: application/json
 
 {

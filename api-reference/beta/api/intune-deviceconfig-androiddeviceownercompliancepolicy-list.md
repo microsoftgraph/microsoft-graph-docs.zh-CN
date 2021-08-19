@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 36fc236e827dc1a02d925a565614bd9f7819a07c
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 8a17d742eb4d6ec40e86fe70954a5ee6e3acac45
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51132847"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58261335"
 ---
 # <a name="list-androiddeviceownercompliancepolicies"></a>列出 androidDeviceOwnerCompliancePolicies
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1552
+Content-Length: 1602
 
 {
   "value": [
@@ -100,7 +100,8 @@ Content-Length: 1552
       "passwordMinutesOfInactivityBeforeLock": 5,
       "passwordExpirationDays": 6,
       "passwordPreviousPasswordCountToBlock": 4,
-      "storageRequireEncryption": true
+      "storageRequireEncryption": true,
+      "securityRequireIntuneAppIntegrity": true
     }
   ]
 }

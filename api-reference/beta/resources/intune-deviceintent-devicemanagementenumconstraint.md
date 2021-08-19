@@ -1,26 +1,26 @@
 ---
 title: deviceManagementEnumConstraint 资源类型
-description: 强制实施设置值的约束来自允许的一组字符串
+description: 强制设置值的约束来自一组允许的字符串
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 816782953493bd5c9c790bc3a8785b758cd92137
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 600f3eb888c456f047c599d77aca087ac5e37c14e129d8642517d765cfb9b678
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49275949"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54206457"
 ---
 # <a name="devicemanagementenumconstraint-resource-type"></a>deviceManagementEnumConstraint 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-强制实施设置值的约束来自允许的一组字符串
+强制设置值的约束来自一组允许的字符串
 
 
 继承自 [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)

@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 542cd22e805c9ea12029ba864300f91108699a2d
-ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
+ms.openlocfilehash: aabaf023d028a30b3d0ce13c0521bc843e6837ce
+ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52971445"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58384089"
 ---
 # <a name="get-chatmessage-in-a-channel-or-chat"></a>在频道或聊天中获取 chatMessage
 
@@ -26,9 +26,9 @@ ms.locfileid: "52971445"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-|委派（工作或学校帐户）| ChannelMessage.Read.All、Group.Read.All、Group.Read.WriteAll |
+|委派（工作或学校帐户）| ChannelMessage.Read.All、Group.Read.All、Group.ReadWrite.All |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序| ChannelMessage.Read.Group*, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
+|应用程序| ChannelMessage.Read.Group、ChannelMessage.Read.All、Group.Read.All、Group.ReadWrite.All |
 
 ### <a name="permissions-for-chat"></a>聊天权限
 
@@ -38,7 +38,7 @@ ms.locfileid: "52971445"
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序| Chat.Read.All、Chat.ReadWrite.All|
 
-> **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
+> **注意**：_ChannelMessage.Read.Group_ 和 _ChatMessage.Read.Chat_ 权限使用 [特定于资源的许可]( https://aka.ms/teams-rsc)。
 
 > [!NOTE]
 > 在使用应用程序权限调用此 API 之前，你必须先请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。

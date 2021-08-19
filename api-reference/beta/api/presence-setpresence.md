@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 1e7e90b90ad92ca62327ad9c356fa1d870c7ecbd
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 7734283f513bd50d9f0187a24ec41e30ebadb38d
+ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53208280"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58396961"
 ---
 # <a name="presence-setpresence"></a>presence： setPresence
 
@@ -21,18 +21,18 @@ ms.locfileid: "53208280"
 将用户的状态设置为应用程序状态。
 
 ### <a name="presence-sessions"></a>状态会话
-用户可以具有多个状态会话，因为用户可以使用桌面、Teams和 web (多个) 。 每个Teams客户端都有一个独立的状态会话，并且用户的状态是来自所有隐藏会话的聚合状态。
+一个用户可以具有多个状态会话，因为用户可以在桌面、Teams和 web (多个) 。 每个Teams客户端都有一个独立的状态会话，并且用户的状态是来自所有隐藏会话的聚合状态。
 
 同样，应用程序可以具有其自己的用户状态会话，并能够更新状态。
 
 以下是会话状态聚合方式的优先级：
 * 用户配置>应用配置 (状态会覆盖其他用户) 
-* 在已配置应用之间： (状态设置状态设置) >忙碌状态> DoNotDisturb >离开
+* 在已配置应用之间： (状态设置""忙碌""离开) >> DoNotDisturb >支持
 
 ### <a name="timeout-expiration-and-keep-alive"></a>超时、到期并保持活动状态
-状态会话 **可能会超时且****过期**，因此应用程序需要在超时前调用此 API，以维护会话的状态;或过期 **之前，** 使会话保持活动状态。
+状态会话 **可能会超时并** 过期，因此应用程序需要在超时之前调用此 API，以维护会话的状态;或过期 **之前，** 使会话保持活动状态。
 
-如果状态会话可用且超时为 5 分钟， `Available` 则状态会话可能会超时。 当状态淡出时，状态将逐渐淡出。 例如，如果应用程序将状态会话设置为 ，状态将在 5 分钟内更改为第一个超时，然后在另外 5 分钟（第二个超时） `Available/Available` `Available/AvailableInactive` `Away/Away` 中更改。
+如果可用性为 ，并且超时为 5 分钟，则 `Available` 状态会话可能会超时。 当状态淡出时，状态将逐渐淡出。 例如，如果应用程序将状态会话设置为 ，状态将在 5 分钟内更改为第一个超时，然后在另外 5 分钟（第二个超时） `Available/Available` `Available/AvailableInactive` `Away/Away` 中更改。
 
 状态会话的过期时间可用 参数 `expirationDuration` 进行配置。 当会话过期时，它将变为 `Offline` 。
 
@@ -62,10 +62,10 @@ POST /users/{userId}/presence/setPresence
 
 | 参数          | 类型     | 说明                                                                                            |
 | :----------------- | :------- | :----------------------------------------------------------------------------------------------------- |
-| sessionId          | 字符串   | 应用程序状态会话的 ID。                                                          |
-| availability       | 字符串   | 基本状态信息。                                                                         |
-| 活动           | 字符串   | 可用性的补充信息。                                                          |
-| expirationDuration | duration | 应用状态会话的过期时间。 该值以 ISO 8601 格式表示持续时间。 |
+| sessionId          | string   | 应用程序状态会话的 ID。                                                          |
+| availability       | string   | 基本状态信息。                                                                         |
+| 活动           | string   | 可用性的补充信息。                                                          |
+| expirationDuration | duration | 应用状态会话的过期时间。 该值以 ISO 8601 格式表示，持续时间为。</p>如果未提供，将应用 5 分钟的默认过期时间。 |
 
 > [!IMPORTANT]
 >
