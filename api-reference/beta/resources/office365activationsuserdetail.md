@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: f1bb61fa4b740c212918ee8e4794ce79ffabafe7
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: adbefd4a160ba00e9478abebec5932f97464328a633bb26719eaed4818bf3f22
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49980743"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54239026"
 ---
 # <a name="office365activationsuserdetail-resource-type"></a>office365ActivationsUserDetail 资源类型
 

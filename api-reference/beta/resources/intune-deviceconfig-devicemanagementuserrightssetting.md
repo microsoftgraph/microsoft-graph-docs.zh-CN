@@ -1,32 +1,32 @@
 ---
 title: deviceManagementUserRightsSetting 资源类型
-description: 代表用户权限设置。
+description: 表示用户权限设置。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 14f17945232642df68e02a03ff0e1ec54ee5e220
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: cc9b6fe23a2184f9024c2bbe2252239dd0688b9764930772f6d13e0920e9a4a6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49199365"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54253129"
 ---
 # <a name="devicemanagementuserrightssetting-resource-type"></a>deviceManagementUserRightsSetting 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-代表用户权限设置。
+表示用户权限设置。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
 |state|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|表示此用户权限设置的当前状态。 可取值为：`notConfigured`、`blocked`、`allowed`。|
-|localUsersOrGroups|[deviceManagementUserRightsLocalUserOrGroup](../resources/intune-deviceconfig-devicemanagementuserrightslocaluserorgroup.md) 集合|表示将在设备上设置的本地用户或组的集合（如果允许此设置的状态）。 该集合最多可包含 500 个元素。|
+|localUsersOrGroups|[deviceManagementUserRightsLocalUserOrGroup](../resources/intune-deviceconfig-devicemanagementuserrightslocaluserorgroup.md) 集合|表示本地用户或组的集合，如果此设置的状态为"允许"，将在设备上设置这些用户或组。 该集合最多可包含 500 个元素。|
 
 ## <a name="relationships"></a>关系
 无
