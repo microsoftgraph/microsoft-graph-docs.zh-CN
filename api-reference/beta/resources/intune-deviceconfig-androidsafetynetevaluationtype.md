@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b5826c3a5f45cc68ca9de2903ab23a9813deb2c7
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 7e741d1d7b5de0a9ea43a84273ff1cf6629d016bcf3a4139babc4c227a28b4b5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52665878"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54227573"
 ---
 # <a name="androidsafetynetevaluationtype-enum-type"></a>androidSafetyNetEvaluationType 枚举类型
 
@@ -25,8 +25,8 @@ ms.locfileid: "52665878"
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|basic|0|默认值。 使用了典型引用数据和值。|
-|hardwareBacked|1|已使用受硬件 (安全功能，如) 证明。|
+|basic|0|默认值。 使用典型度量引用数据和值。|
+|hardwareBacked|1 |已使用受硬件 (安全功能，如) 证明。|
 
 
 

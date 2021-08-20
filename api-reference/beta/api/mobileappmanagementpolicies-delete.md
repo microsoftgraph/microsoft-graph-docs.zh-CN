@@ -5,12 +5,12 @@ author: michaelrm97
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 1b01606a7ac6d0384257436ca9d98c4c06dceeb4
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 71834c591fb0b415dd7e6b3e841afa9ea42b967472144f2ca5a77e56f3550441
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53440979"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "57279500"
 ---
 # <a name="delete-mobileappmanagementpolicy"></a>删除 mobileAppManagementPolicy
 
@@ -21,7 +21,7 @@ ms.locfileid: "53440979"
 删除 [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md) 对象。
 
 > [!NOTE]
-> 只有在策略不再有效时，才支持此操作;即 **isValid** 属性为 false 时，指示与此策略的应用程序关联的服务主体已删除。
+> 只有当策略不再有效时，才支持此操作;即 **isValid** 属性为 false 时，指示与此策略的应用程序关联的服务主体已删除。
 
 ## <a name="permissions"></a>权限
 
