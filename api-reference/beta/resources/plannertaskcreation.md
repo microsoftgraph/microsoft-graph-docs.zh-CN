@@ -5,21 +5,21 @@ author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: e8a2a4bf3aae5f23a04c7ecb8ad043631f946b20
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: 738067895a60b79684ef3f0356f59e777363d8140bc2734d2b38bf036c0feb84
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49883236"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54226117"
 ---
 # <a name="plannertaskcreation-resource-type"></a>plannerTaskCreation 资源类型
 
 命名空间：microsoft.graph
 
-包含有关 [plannerTask](plannerTask.md)的源的信息。 此资源将设置其所有属性，或者只有一个属性将具有一个值，该值指示任务由该属性描述的进程 `null` 创建。 所有 `null` 属性都表示该任务不是由任何专用进程创建的。 应用无需知道任务的来源，就可以处理它;但是，某些应用可以使用其他信息来提供有关这些任务的特定体验。 有关详细信息，请参阅特定资源的文档。
+包含有关 [plannerTask 的来源的信息](plannerTask.md)。 此资源的所有属性都设置为 ，或者只有一个属性将具有一个值，该值指示任务是由该属性描述 `null` 的进程创建的。 所有 `null` 属性都表示该任务不是由任何专用进程创建的。 应用无需知道任务的来源，就可以使用任务;但是，某些应用可以使用其他信息来提供有关这些任务的特定体验。 有关详细信息，请参阅特定资源的文档。
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |teamsPublicationInfo|[plannerTeamsPublicationInfo](../resources/plannerteamspublicationinfo.md)|有关创建此任务的发布过程的信息。 `null` 值表示该任务不是由发布过程创建的。|
 
