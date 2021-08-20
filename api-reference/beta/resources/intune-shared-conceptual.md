@@ -1,15 +1,15 @@
 ---
 title: Microsoft Intune 中的共享资源 - Microsoft Graph API
-description: 列出支持Graph多个工作流的适用于 Intune 终结点 (REST) 的 Microsoft 应用程序 API。
+description: 列出支持租户Graph多个工作流的适用于 Intune 终结点 (的 Microsoft) REST API。
 localization_priority: Normal
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 77500484aaafd5d9101e66789966b4861b61e511
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 9ef71ce51e86d2582935a5f647a0a7ad07b70e73
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52664900"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58264078"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>共享资源Microsoft Intune
 
@@ -21,7 +21,7 @@ ms.locfileid: "52664900"
 
 这些终结点在多个 Microsoft Graph API 中用于 Intune 工作流。  使用给定资源所需的意图、目的和权限因特定工作流和基础调用的上下文而异。  此外，某些方法、属性和操作仅受特定工作流支持。
 
-Intune Graph之间共享以下资源：
+以下Graph在 Intune 工作流之间共享：
 
 - [操作状态](intune-shared-actionstate.md)
 - [所有设备分配目标](intune-shared-alldevicesassignmenttarget.md)
@@ -44,7 +44,6 @@ Intune Graph之间共享以下资源：
 - [设备合规性策略](intune-shared-devicecompliancepolicy.md)
 - [设备配置](intune-shared-deviceconfiguration.md)
 - [设备注册配置](intune-shared-deviceenrollmentconfiguration.md)
-- [设备注册类型](intune-shared-deviceenrollmenttype.md)
 - [设备管理](intune-shared-devicemanagement.md)
 - [设备管理派生的凭据设置](intune-shared-devicemanagementderivedcredentialsettings.md)
 - [设备管理脚本](intune-shared-devicemanagementscript.md)
@@ -67,7 +66,6 @@ Intune Graph之间共享以下资源：
 - [密钥大小](intune-shared-keysize.md)
 - [密钥存储提供程序选项](intune-shared-keystorageprovideroption.md)
 - [密钥使用情况](intune-shared-keyusages.md)
-- [键/值对](intune-shared-keyvaluepair.md)
 - [macOS LOB 应用分配设置](intune-shared-macoslobappassignmentsettings.md)
 - [macOS VPP 应用分配设置](intune-shared-macosvppappassignmentsettings.md)
 - [托管的设备所有者类型](intune-shared-manageddeviceownertype.md)
@@ -80,12 +78,10 @@ Intune Graph之间共享以下资源：
 - [移动应用疑难解答事件](intune-shared-mobileapptroubleshootingevent.md)
 - [所有者类型](intune-shared-ownertype.md)
 - [代理域](intune-shared-proxieddomain.md)
-- [报告](intune-shared-report.md)
+- [Report](intune-shared-report.md)
 - [报表根目录](intune-shared-reportroot.md)
-- [生成的应用状态](intune-shared-resultantappstate.md)
 - [RGB 颜色](intune-shared-rgbcolor.md)
 - [按帐户类型运行](intune-shared-runasaccounttype.md)
-- [运行状态](intune-shared-runstate.md)
 - [保存的 UI 状态生成选项](intune-shared-saveduistategenerationoptions.md)
 - [设置源类型](intune-shared-settingsourcetype.md)
 - [使用者可选名称类型](intune-shared-subjectalternativenametype.md)

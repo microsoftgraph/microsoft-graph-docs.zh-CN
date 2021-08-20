@@ -1,28 +1,28 @@
 ---
 title: auditActivityInitiator 资源类型
-description: '标识启动活动的资源对象。 发起人可以是用户、应用或系统 (被视为应用) '
+description: '标识启动活动的资源对象。 发起者可以是用户、应用或系统 (被视为应用) '
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: identity-and-access-reports
 author: SarahBar
-ms.openlocfilehash: 71aa5e2bd09d66a2aea49058ceffea3e017eaf4d
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: d131f58057bb3846b2059fa117891dbc405c781223053d80e495fbca788a9688
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131633"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54206954"
 ---
 # <a name="auditactivityinitiator-resource-type"></a>auditActivityInitiator 资源类型
 
-命名空间：microsoft.graph 标识启动活动的资源对象。 发起人可以是用户、应用或系统 (被视为应用) 
+命名空间：microsoft.graph 标识启动活动的资源对象。 发起者可以是用户、应用或系统 (被视为应用) 
 
 
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|应用|[appIdentity](appidentity.md)|如果启动活动的资源是应用，则此属性指示 appId、Name、servicePrincipalId、Name 等所有应用相关信息。|
-|user|[userIdentity](useridentity.md)|如果启动活动的资源是用户，则此属性指示与用户 Id、名称、UserPrinicpalName 等所有用户相关信息。|
+|应用|[appIdentity](appidentity.md)|如果启动活动的资源是应用，则此属性指示所有应用相关信息，如 appId、Name、servicePrincipalId、Name。|
+|用户|[userIdentity](useridentity.md)|如果启动活动的资源是用户，则此属性指示用户 Id、名称、UserPrinicpalName 等用户相关信息。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

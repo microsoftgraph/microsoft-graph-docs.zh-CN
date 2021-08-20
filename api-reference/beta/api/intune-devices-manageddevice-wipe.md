@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 760631b115d6a458556b476b28f6f996e259d2bd
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 6de1b0f63e984922cae736a0b6ce5c2a5881e1ea
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51866620"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58261293"
 ---
 # <a name="wipe-action"></a>擦除操作
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -27,9 +27,9 @@ ms.locfileid: "51866620"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.IliiligedOperation.All|
+|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.IliiligedOperation.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.IliiligedOperation.All|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.IliiligedOperation.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

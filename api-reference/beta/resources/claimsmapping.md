@@ -5,12 +5,12 @@ author: namkedia
 localization_priority: Priority
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 1863c6bf6f28e0e8ae8a3d1133330337a7420c0a
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 31ec191527509c015ab201c1464509fce64e549fd5475a377efbff0808973a74
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761840"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54239677"
 ---
 # <a name="claimsmapping-resource-type"></a>claimsMapping 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "50761840"
 |属性|类型|描述|
 |:-------|:---|:----------|
 |userId|字符串|为已登录用户提供唯一标识符的声明。 这是必需属性。|
-|displayName|字符串|为用户提供显示名称或全名的声明。 这是必需属性。|
+|displayName|String|为用户提供显示名称或全名的声明。它是必需的属性。|
 |givenName|字符串|提供用户名字的声明。|
 |surname|字符串|提供用户姓氏的声明。|
 |email|字符串|提供用户名电子邮件地址的声明。|

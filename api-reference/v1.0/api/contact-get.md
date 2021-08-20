@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: bef7b3e81a090ff33a9a3a5520266ebd38abb9da
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e527bac4c2fc1f92eba6f558b80437e876aac854
+ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051534"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58384026"
 ---
 # <a name="get-contact"></a>获取联系人
 
@@ -35,7 +35,7 @@ ms.locfileid: "52051534"
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
-来自用户的默认 [contactFolder](../resources/contactfolder.md) 中的 [联系人](../resources/contact.md)。
+[用户](../resources/contact.md)邮箱中的联系人。
 ```http
 GET /me/contacts/{id}
 GET /users/{id | userPrincipalName}/contacts/{id}
@@ -56,7 +56,7 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contac
 |$expand|string|要在响应中扩展和包括的关系的列表（以逗号分隔）。请参阅支持的名称的 [contact](../resources/contact.md) 对象的关系表。 |
 |$select|string|要在响应中包括的属性的列表（以逗号分隔）。|
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
@@ -98,7 +98,7 @@ GET https://graph.microsoft.com/v1.0/me/contacts/{id}
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

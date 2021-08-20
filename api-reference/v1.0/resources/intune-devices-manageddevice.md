@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 11c403f1d64d6cb13684952b93c28d495c5bcf9b563acda42a4859d10322fedf
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 827a683ac5eb481d5b40509619c8360a012358d5
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54246764"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58264491"
 ---
 # <a name="manageddevice-resource-type"></a>managedDevice 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "54246764"
 
 通过 Intune 托管或预注册的设备
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[List managedDevices](../api/intune-devices-manageddevice-list.md)|[managedDevice](../resources/intune-devices-manageddevice.md) 集合|列出 [managedDevice](../resources/intune-devices-manageddevice.md) 对象的属性和关系。|
@@ -51,7 +51,7 @@ ms.locfileid: "54246764"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|设备的唯一标识符。 此属性是只读的。|
-|userId|String|与设备关联的用户的唯一标识符。 此属性是只读的。|
+|userId|字符串|与设备关联的用户的唯一标识符。 此属性是只读的。|
 |deviceName|String|设备的名称。 此属性是只读的。|
 |managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune-devices-manageddeviceownertype.md)|设备的所有权。 可以是"公司"或"个人"。 可取值为：`unknown`、`company`、`personal`。|
 |deviceActionResults|[deviceActionResult](../resources/intune-devices-deviceactionresult.md) 集合|ComplexType deviceActionResult 对象的列表。 此属性是只读的。|
@@ -66,7 +66,7 @@ ms.locfileid: "54246764"
 |easDeviceId|String|设备的 Exchange ActiveSync ID。 此属性是只读的。|
 |easActivationDateTime|DateTimeOffset|设备的 Exchange ActivationSync 激活时间。 此属性是只读的。|
 |azureADRegistered|Boolean|设备是否已注册 Azure Active Directory。 此属性是只读的。|
-|deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-devices-deviceenrollmenttype.md)|设备的注册类型。 此属性是只读的。 可能的值是：`unknown`、`userEnrollment`、`deviceEnrollmentManager`、`appleBulkWithUser`、`appleBulkWithoutUser`、`windowsAzureADJoin`、`windowsBulkUserless`、`windowsAutoEnrollment`、`windowsBulkAzureDomainJoin`、`windowsCoManagement`、`windowsAzureADJoinUsingDeviceAuth`、`appleUserEnrollment`、`appleUserEnrollmentWithServiceAccount`。|
+|deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|设备的注册类型。 此属性是只读的。 可能的值是：`unknown`、`userEnrollment`、`deviceEnrollmentManager`、`appleBulkWithUser`、`appleBulkWithoutUser`、`windowsAzureADJoin`、`windowsBulkUserless`、`windowsAutoEnrollment`、`windowsBulkAzureDomainJoin`、`windowsCoManagement`、`windowsAzureADJoinUsingDeviceAuth`、`appleUserEnrollment`、`appleUserEnrollmentWithServiceAccount`。|
 |activationLockBypassCode|String|允许绕过设备上的激活锁的代码。 此属性是只读的。|
 |emailAddress|String|电子邮件 () 设备关联的用户的邮箱。 此属性是只读的。|
 |azureADDeviceId|String|Azure Active Directory 设备的唯一标识符。 只读。 此属性是只读的。|
@@ -98,7 +98,7 @@ ms.locfileid: "54246764"
 |managedDeviceName|String|用于识别设备的自动生成的名称。 可以覆盖为用户友好名称。|
 |partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune-devices-manageddevicepartnerreportedhealthstate.md)|指示帐户和设备正在使用移动威胁防护合作伙伴时设备的威胁状态。 只读。 此属性是只读的。 可取值为：`unknown`、`activated`、`deactivated`、`secured`、`lowSeverity`、`mediumSeverity`、`highSeverity`、`unresponsive`、`compromised`、`misconfigured`。|
 |iccid|String|集成的电路卡标识符，它是 SIM 卡的唯一标识号。 此属性是只读的。|
-|udid|String|iOS 和 macOS 设备的唯一设备标识符。 此属性是只读的。|
+|udid|字符串|iOS 和 macOS 设备的唯一设备标识符。 此属性是只读的。|
 |notes|String|IT 管理员在设备上创建的备注|
 |ethernetMacAddress|String|以太网 MAC。 此属性是只读的。|
 |physicalMemoryInBytes|Int64|内存总量（以字节为单位）。 此属性是只读的。|

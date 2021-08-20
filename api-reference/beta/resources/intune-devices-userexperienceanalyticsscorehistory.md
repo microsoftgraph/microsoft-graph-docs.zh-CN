@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 667afd0bef187cbfed35c22d5f07593f9c548da3
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 0e11177183c15e0413b9cd173956884766eaa2af
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52665593"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58264673"
 ---
 # <a name="userexperienceanalyticsscorehistory-resource-type"></a>userExperienceAnalyticsScoreHistory 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "52665593"
 
 用户体验分析设备启动分数历史记录。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 userExperienceAnalyticsScoreHistories](../api/intune-devices-userexperienceanalyticsscorehistory-list.md)|[userExperienceAnalyticsScoreHistory](../resources/intune-devices-userexperienceanalyticsscorehistory.md) 集合|列出 [userExperienceAnalyticsScoreHistory](../resources/intune-devices-userexperienceanalyticsscorehistory.md) 对象的属性和关系。|
@@ -41,6 +41,10 @@ ms.locfileid: "52665593"
 |coreBootScore|Int32|用户体验分析设备核心启动分数。 分数范围为 0-100，100 是理想分数。|
 |coreSigninScore|Int32|用户体验分析设备核心登录分数。 分数范围为 0-100，100 是理想分数。|
 |recommendedSoftwareScore|Int32|用户体验分析设备核心登录分数。 分数范围为 0-100，100 是理想分数。|
+|appHealthOverallScore|Int32|用户体验分析应用运行状况总体分数。|
+|startupTotalDevices|Int32|用户体验分析类别启动性能的总设备计数。|
+|recommendedSoftwareTotalDevices|Int32|用户体验分析类别推荐软件的总设备计数。|
+|appHealthTotalDevices|Int32|用户体验分析类别应用运行状况的总设备计数。|
 |restartScore|Int32|重启分数。 分数将在 0-100 之间，100 是理想分数，0 表示重启过多。 有效值为 0 到 9999999|
 
 ## <a name="relationships"></a>关系
@@ -64,6 +68,10 @@ ms.locfileid: "52665593"
   "coreBootScore": 1024,
   "coreSigninScore": 1024,
   "recommendedSoftwareScore": 1024,
+  "appHealthOverallScore": 1024,
+  "startupTotalDevices": 1024,
+  "recommendedSoftwareTotalDevices": 1024,
+  "appHealthTotalDevices": 1024,
   "restartScore": 1024
 }
 ```

@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5a484745aae11ba967f3077bf674c9bc8dd8c6db
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: b7887e72981a5a94eff98374becc81d81cafa2b23727c379b612d1d8995710b1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51148741"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54166286"
 ---
 # <a name="create-sideloadingkey"></a>创建 sideLoadingKey
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -55,10 +55,10 @@ POST /deviceAppManagement/sideLoadingKeys
 |:---|:---|:---|
 |id|String|旁加载密钥唯一 ID。|
 |value|String|Side Loading Key Value， it is 5x5 value， seperated by hiphens.|
-|displayName|String|向 ITPro 管理员显示的旁加载密钥名称。|
-|说明|String|旁加载 向 ITPro 管理员显示的密钥说明。|
+|displayName|字符串|向 ITPro 管理员显示的旁加载密钥名称。|
+|description|String|旁加载 向 ITPro 管理员显示的密钥说明。|
 |totalActivation|Int32|向 ITPro 管理员显示的旁加载密钥总激活。|
-|lastUpdatedDateTime|String|向 ITPro 管理员显示的"旁加载密钥上次更新日期"。|
+|lastUpdatedDateTime|字符串|向 ITPro 管理员显示的"旁加载密钥上次更新日期"。|
 
 
 
