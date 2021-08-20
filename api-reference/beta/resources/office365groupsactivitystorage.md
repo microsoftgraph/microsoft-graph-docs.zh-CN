@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: 7ac9ca260e4723f7c4aeca8e15f837d4cd57b7c4
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 1c0f62b2f8551e0e1931bf65d8ee592a3dc72373e1a6f41d37b167a3bdcef38b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49982178"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54176328"
 ---
 # <a name="office365groupsactivitystorage-resource-type"></a>office365GroupsActivityStorage 资源类型
 
@@ -22,8 +22,8 @@ ms.locfileid: "49982178"
 | :------------------------ | :----- | ---------------------------------------- |
 | reportRefreshDate         | 日期   | 内容的最新日期。          |
 | mailboxStorageUsedInBytes | Int64  | 组邮箱中使用的存储。       |
-| siteStorageUsedInBytes    | Int64  | SharePoint 文档库中使用的存储。 |
-| reportDate                | 日期   | Exchange 和 SharePoint 使用的存储的快照日期。 |
+| siteStorageUsedInBytes    | Int64  | 文档库中SharePoint存储。 |
+| reportDate                | 日期   | 已使用存储Exchange SharePoint快照日期。 |
 | reportPeriod              | String | 报告涵盖的天数。    |
 
 ## <a name="json-representation"></a>JSON 表示形式

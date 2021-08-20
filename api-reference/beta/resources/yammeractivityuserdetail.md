@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: 749076f407b49ff4fd408a095312ac49ea008bc1
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 5f257632052959b189fb216419ac83211190f2e19c536a924f2d03a318589ab0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49982395"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249690"
 ---
 # <a name="yammeractivityuserdetail-resource-type"></a>yammerActivityUserDetail 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "49982395"
 | :---------------- | :---------------- |
 | reportRefreshDate | 日期              |
 | userPrincipalName | String            |
-| displayName       | String            |
+| displayName       | 字符串            |
 | userState         | String            |
 | stateChangeDate   | 日期              |
 | lastActivityDate  | 日期              |

@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 569610e52d58c7a5eb8a8d18d8d5f43e03444f8a
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 9cfdec4babf4c3ff884d4691e2349f729669b638fc240afbad881c0edca5168e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51153522"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54204077"
 ---
 # <a name="update-unsupportedgrouppolicyextension"></a>更新 unsupportedGroupPolicyExtension
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -56,7 +56,7 @@ PATCH /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportI
 |id|String|尚未记录|
 |settingScope|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|设置不受支持扩展的作用域。 可取值为：`unknown`、`device`、`user`。|
 |namespaceUrl|String|不支持的扩展的命名空间 URL。|
-|extensionType|String|不支持的扩展的 ExtensionType。|
+|extensionType|字符串|不支持的扩展的 ExtensionType。|
 |nodeName|String|不受支持扩展的节点名称。|
 
 

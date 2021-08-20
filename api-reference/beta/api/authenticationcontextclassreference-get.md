@@ -5,12 +5,12 @@ localization_priority: Normal
 author: calebb
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 38d63cf4422332502d0595b3e00fed2f305c02c6
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 14862bc07762419ea2d12e715cfc6b19b31395e649cb1cb8b913baeb0e3fb217
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52664522"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56902887"
 ---
 # <a name="get-authenticationcontextclassreference"></a>获取 authenticationContextClassReference
 
@@ -41,7 +41,7 @@ GET /identity/conditionalAccess/authenticationContextClassReferences/{id}
 
 此方法不支持自定义响应的可选查询参数。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称      |说明|
 |:----------|:----------|

@@ -1,36 +1,36 @@
 ---
 title: embeddedSIMActivationCode 资源类型
-description: 移动运营商提供的嵌入的 SIM 激活代码。
+description: 移动运营商提供的嵌入式 SIM 卡激活代码。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ea17bc01e37b8e44f3fc904918f76859a9fcb40f
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 07acfbad5baf0cb68118472ea32d667c7f2868dac490665e61726fd5a6e4bf75
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49288465"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54242564"
 ---
 # <a name="embeddedsimactivationcode-resource-type"></a>embeddedSIMActivationCode 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-移动运营商提供的嵌入的 SIM 激活代码。
+移动运营商提供的嵌入式 SIM 卡激活代码。
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
-|integratedCircuitCardIdentifier|字符串|由移动运营商提供的嵌入的 SIM 激活代码 (ICCID) 的集成电路卡标识符。
-输入必须与以下正则表达式匹配： ' ^ \[ 0-9 \] {19} \[ 0-9 \] ？ $ '。|
-|matchingIdentifier|字符串|MatchingIdentifier (MatchingID) 在 GSMA Association SGP RSP 技术规范部分中指定4.1。
-输入必须与以下正则表达式匹配： ' ^ \[ Z0-9 \- \] * $ '。|
-|smdpPlusServerAddress|字符串|在 GSM 关联 SPG .22 RSP 技术规范中指定的 SM + 服务器的完全限定域名。
-输入必须与以下正则表达式匹配： "^ (\[ Z0-9 \] + (- \[ Z0 \] +) * \.) + \[ a za-Z \] {2,} $"。|
+|integratedCircuitCardIdentifier|String|INTEGRATED Circuit Card Identifier (ICCID) for this embedded SIM activation code as provided by the mobile operator.
+输入必须与以下正则表达式匹配："^ \[ 0-9 \] {19} \[ 0-9 \] ？$"。|
+|matchingIdentifier|字符串|MatchingIdentifier (MATCHINGID) GSMA Association SGP.22 RSP 技术规范 4.1 节中指定。
+输入必须与以下正则表达式匹配："^ \[ a-zA-Z0-9 \- \] *$"。|
+|smdpPlusServerAddress|字符串|GSM Association SPG .22 RSP 技术规范中指定的 SM-DP+ 服务器的完全限定域名。
+输入必须匹配以下正则表达式："^ (\[ a-zA-Z0-9 \] + (- \[ a-zA-Z0-9 \] +) *) + \. \[ a-zA-Z \] {2,} $"。|
 
 ## <a name="relationships"></a>关系
 无
