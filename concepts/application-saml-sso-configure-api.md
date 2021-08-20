@@ -5,12 +5,12 @@ author: kenwith
 localization_priority: Priority
 ms.custom: scenarios:getting-started
 ms.prod: applications
-ms.openlocfilehash: 53fa3b995b630837f27b9ebaf9a30825f4bccf4c5efd49b7b6e85034e55985dc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: dc6a440174c7fd878100bb3e3d2ee2ead7c75f38
+ms.sourcegitcommit: f645c2db38fe6354422a96b54569af53cd65b967
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54151967"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "58409009"
 ---
 # <a name="configure-saml-based-single-sign-on-for-your-application-using-the-microsoft-graph-api"></a>使用 Microsoft Graph API 为应用程序配置基于 SAML 的单一登录
 
@@ -694,7 +694,7 @@ No Content - 204
 
 ## <a name="see-also"></a>另请参阅
 
-- 对于 AWS，可以[启用用户配置](/azure/active-directory/app-provisioning/application-provisioning-configure-api)以从该 AWS 账户获取所有角色。 有关详细信息，请参阅[配置 SAML 令牌中颁发的角色声明](/azure/active-directory/develop/active-directory-enterprise-app-role-management)。
+- 对于 AWS，可以[启用用户配置](/azure/active-directory/app-provisioning/application-provisioning-configuration-api)以从该 AWS 账户获取所有角色。 有关详细信息，请参阅[配置 SAML 令牌中颁发的角色声明](/azure/active-directory/develop/active-directory-enterprise-app-role-management)。
 - [自定义在租户具体应用的令牌中颁发的声明](/azure/active-directory/develop/active-directory-claims-mapping)。
 - 可以使用 applicationTemplate API 来实例化[非库应用程序](/azure/active-directory/manage-apps/view-applications-portal)。 使用 applicationTemplateId `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`。
 - [applicationTemplate](/graph/api/resources/applicationtemplate)

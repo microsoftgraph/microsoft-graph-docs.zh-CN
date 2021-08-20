@@ -3,12 +3,12 @@ title: 使用 Microsoft Graph 的最佳做法
 description: 本文介绍可用于帮助你的应用程序充分利用 Microsoft Graph 的最佳做法，内容涉及了解 Microsoft Graph、提高应用性能，以及让应用程序对最终用户更具可靠性等。
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 97e07faac83e1d25dfc133fdda7484397b51ef71b1f8e385e027579fd8209c90
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7efac1296a8de67462aab25f348b4e53d229560b
+ms.sourcegitcommit: f645c2db38fe6354422a96b54569af53cd65b967
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54149588"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "58409086"
 ---
 # <a name="best-practices-for-working-with-microsoft-graph"></a>使用 Microsoft Graph 的最佳做法
 
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/v1.0/me/messages
 可演化的枚举具有一个名为 `unknownFutureValue` 的常见 _Sentinel_ 成员，其划分了最初在枚举中已定义的已知成员和随后添加的或将来要定义的未知成员。 在内部，将已知成员映射为小于 sentinel 成员的数值，而未知成员则大于 sentinel 成员。 可演化枚举的文档按照升序列出了可能的 _字符串_ 值: 已知成员，其次是 `unknownFutureValue`，其次是未知成员。 与其他类型的枚举一样，应 _始终_ 通过其 _字符串_ 值引用可演化枚举的成员。
 
 默认情况下，GET 操作仅返回可演化枚举类型属性的已知成员，应用程序只需要处理已知成员。 如果设计的应用程序也能处理未知成员，则可以通过使用 HTTP `Prefer` 请求标头来选择接收这些成员:
-```
+```http
 Prefer: include-unknown-enum-members
 ```
 
