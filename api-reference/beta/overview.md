@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: conceptualPageType
 ms.prod: non-product-specific
 author: angelgolfer-ms
-ms.openlocfilehash: 78cfd8f03e663feffd0114d27bd1977fa49f4fdb
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: dd240303b2dee7552f846ed1a5f03bb3c99b03c37ea79b3b6bc1a2d5b617bc01
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53533791"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54253388"
 ---
 # <a name="microsoft-graph-beta-endpoint-reference"></a>Microsoft Graph beta 终结点参考
 

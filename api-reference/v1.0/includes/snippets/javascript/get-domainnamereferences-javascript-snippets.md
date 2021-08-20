@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ac7da217cf4694766b208544ab2b6ed682c9c0c5
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: a9f6a01c3f68456cdaead7676cc2624d84e31385
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50789626"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58368869"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let domainNameReferences = await client.api('/domains/{domain-name}/domainNameReferences')
+let domainNameReferences = await client.api('/domains/contoso.com/domainNameReferences')
     .get();
 
 ```

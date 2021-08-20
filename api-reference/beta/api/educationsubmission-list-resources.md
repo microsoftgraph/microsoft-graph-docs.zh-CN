@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 174f9fa606ab9f4a4bdc85fb60dd1e4f75d7ae39
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: af5ef60c43b09e344e277d10ff88dcf98ffccd3a
+ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52911800"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58367238"
 ---
 # <a name="list-submission-resources"></a>列出提交资源
 
@@ -30,7 +30,7 @@ ms.locfileid: "52911800"
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
 | 委派（工作或学校帐户）     | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。                                                                                         |
-| 应用程序                            | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite |
+| 应用程序                            | EduAssignments.ReadBasic.All、EduAssignments.ReadWriteBasic.All、EduAssignments.Read.All、EduAssignments.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -43,7 +43,7 @@ GET /education/classes/{id}/assignments/{id}/submissions/{id}/resources
 
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 标头        | 值                     |
 | :------------ | :------------------------ |

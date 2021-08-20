@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 10e35a1de5a0d722a9d9a2036b0767617275e3ce
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: e54cdb4a0a29f8aa20915c7dab69d79dfa1c38a3
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51135850"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58248167"
 ---
 # <a name="get-activedirectorywindowsautopilotdeploymentprofile"></a>获取 activeDirectoryWindowsAutopilotDeploymentProfile
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeployment
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1477
+Content-Length: 1543
 
 {
   "value": {
@@ -107,6 +107,7 @@ Content-Length: 1477
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
     ],
+    "managementServiceAppId": "Management Service App Id value",
     "hybridAzureADJoinSkipConnectivityCheck": true
   }
 }

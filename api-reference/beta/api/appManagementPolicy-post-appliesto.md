@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madansr7
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6bcc15108d43fc82c3ac643e18bb48e043291841
-ms.sourcegitcommit: b711aed8acc18512cf6591f4108ed5ddf05b649d
+ms.openlocfilehash: 0bddfe37cbcf1571baed56bddc9c2097e7c5c253
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53660372"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58262499"
 ---
 # <a name="assign-appliesto"></a>Assign appliesTo
 
@@ -58,6 +58,8 @@ POST /applications/{id}/appManagementPolicies/$ref
 
 下面是向应用程序分配 appManagementPolicy 的请求示例。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "assign_appliesTo"
@@ -70,6 +72,24 @@ POST https://graph.microsoft.com/beta/applications/{id}/appManagementPolicies/$r
  "@odata.id":"https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/assign-appliesto-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/assign-appliesto-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/assign-appliesto-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/assign-appliesto-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

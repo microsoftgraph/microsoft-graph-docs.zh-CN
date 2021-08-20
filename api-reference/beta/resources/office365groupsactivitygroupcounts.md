@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: ad2610f5cbd3aae56651a0a5651e4ee4319b3bb2
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: b7f38f2279e7cd575972d13ea411d972349131a4fe3a9943c4e5efa03365ffa2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981492"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54178708"
 ---
 # <a name="office365groupsactivitygroupcounts-resource-type"></a>office365GroupsActivityGroupCounts 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "49981492"
 | :---------------- | :----- | ---------------------------------------- |
 | reportRefreshDate | 日期   | 内容的最新日期。          |
 | total             | Int64  | 组总数。              |
-| active            | Int64  | 活动组的数量。 如果发生以下任一情况，则认为组处于活动状态：组邮箱收到电子邮件;用户在 SharePoint 文档库中查看、编辑、共享或同步的文件;用户查看的 SharePoint 页面;用户发布、阅读或喜欢的 Yammer 组中的消息。 |
+| active            | Int64  | 活动组的数量。 如果发生以下任一情况，则认为组处于活动状态：组邮箱收到电子邮件;用户在文档库中查看、编辑、共享或同步SharePoint文件;用户查看SharePoint页面;用户发布、阅读或点过Yammer组。 |
 | reportDate        | 日期   | 多个组处于活动状态的日期。 |
 | reportPeriod      | String | 报告涵盖的天数。    |
 

@@ -5,19 +5,19 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 1168407425b0ef8faff213fd807f9499317e0f7b
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: fff5c082a0d8a7b1c60a5430706c342a93bd09df
+ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874380"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58384455"
 ---
 # <a name="update-term"></a>更新术语
 命名空间：microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [术语对象的属性](../resources/termstore-term.md) 。
+更新术语 [对象](../resources/termstore-term.md) 的属性。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -48,19 +48,19 @@ PATCH /termStore/sets/{setId}/terms/{termId}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供术语对象的 JSON [表示](../resources/termstore-term.md) 形式。
 
-下表显示了可以更新术语 [的属性](../resources/termstore-term.md)。
+下表显示了可以针对术语更新 [的属性](../resources/termstore-term.md)。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
-|labels|[microsoft.graph.termStore.localizedLabel](../resources/termstore-localizedlabel.md) 集合|术语的标签|
-|说明|[microsoft.graph.termStore.localizedDescription](../resources/termstore-localizeddescription.md) 集合|有关术语的说明|
-|properties|[microsoft.graph.keyValue](../resources/keyvalue.md) 集合|与术语关联的属性|
+|labels|[microsoft.graph.termStore.localizedLabel](../resources/termstore-localizedlabel.md) 集合|术语的标签。|
+|说明|[microsoft.graph.termStore.localizedDescription](../resources/termstore-localizeddescription.md) 集合|有关术语的说明。|
+|properties|[microsoft.graph.keyValue](../resources/keyvalue.md) 集合|与术语关联的属性。|
 
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回响应代码和更新[](../resources/termstore-term.md)的术语对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码[](../resources/termstore-term.md)和更新的 term 对象。
 
 ## <a name="examples"></a>示例
 

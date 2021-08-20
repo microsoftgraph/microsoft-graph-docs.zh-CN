@@ -5,29 +5,29 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ced02355c4d1b0d57761c7374e46bb41d7a35558
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: c12fd9bca34a75fcac447517682186d3b8bc2c54dade7ba938154f9d4f75cb76
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49260066"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54215095"
 ---
 # <a name="applogcollectiondownloaddetails-resource-type"></a>appLogCollectionDownloadDetails 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 尚未记录
 
 ## <a name="properties"></a>属性
-|属性|类型|描述|
+|属性|类型|说明|
 |:---|:---|:---|
-|downloadUrl|String|下载已完成 AppLogUploadRequest 的 SAS Url|
-|decryptionKey|String|DecryptionKey 作为 string|
-|appLogDecryptionAlgorithm|[appLogDecryptionAlgorithm](../resources/intune-devices-applogdecryptionalgorithm.md)|DecryptionAlgorithm 的内容。 可能的值是： `aes256` 。|
+|downloadUrl|字符串|下载已完成 AppLogUploadRequest 的 SAS URL|
+|decryptionKey|String|DecryptionKey 作为字符串|
+|appLogDecryptionAlgorithm|[appLogDecryptionAlgorithm](../resources/intune-devices-applogdecryptionalgorithm.md)|DecryptionAlgorithm for Content。 可能的值是 `aes256` ：。|
 
 ## <a name="relationships"></a>关系
 无

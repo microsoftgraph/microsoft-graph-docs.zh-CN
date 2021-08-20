@@ -5,12 +5,12 @@ author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: d1a6c5f26b732cd98083db5919082a7ce1c41182
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: becd6b1156b437176515aaba24b0c704fba41dd5
+ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681254"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58397003"
 ---
 # <a name="update-event"></a>更新事件
 
@@ -25,7 +25,7 @@ ms.locfileid: "52681254"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Calendars.ReadWrite、Group.ReadWrite.All    |
+|委派（工作或学校帐户） | Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | 不支持。 |
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
 author: JeremyKelley
-ms.openlocfilehash: 770968141305275f33609db3deca8bb77f5d51cf
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b96454b436f67ed5045fc3c3f9e72630c93c858fb2042bada90b7559869a84ba
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48039312"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54195007"
 ---
 # <a name="onedriveusageaccountcounts-resource-type"></a>oneDriveUsageAccountCounts 资源类型
 
@@ -21,9 +21,9 @@ ms.locfileid: "48039312"
 | 属性          | 类型   |
 | :---------------- | :----- |
 | reportRefreshDate | 日期   |
-| siteType          | String |
+| siteType          | 字符串 |
 | total             | Int64  |
-| 工作            | Int64  |
+| active            | Int64  |
 | reportDate        | 日期   |
 | reportPeriod      | String |
 

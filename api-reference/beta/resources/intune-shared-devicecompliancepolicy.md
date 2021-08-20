@@ -5,24 +5,24 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 46aa0a0136bbc2ad00fdf70d4ab9a8d3bc6ef7f1
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 02e4e9c3c292bbc37d00b0cd2ce22828fb342a65af7fc661528bdbecb427a801
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51867292"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54224423"
 ---
 # <a name="devicecompliancepolicy-resource-type"></a>deviceCompliancePolicy 资源类型
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 这是符合性策略的基类。 符合性策略特定于平台，每个平台的符合性策略相互独立，且继承自此处。 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[List deviceCompliancePolicies](../api/intune-shared-devicecompliancepolicy-list.md)|[deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md) 集合|列出 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md) 对象的属性和关系。|
@@ -37,12 +37,12 @@ ms.locfileid: "51867292"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。|
+|id|字符串|实体的键。|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。|
-|说明|String|管理员提供的设备配置说明。|
+|description|String|管理员提供的设备配置说明。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
-|displayName|String|管理员提供的设备配置名称。|
+|displayName|字符串|管理员提供的设备配置名称。|
 |version|Int32|设备配置的版本。|
 
 ## <a name="relationships"></a>关系

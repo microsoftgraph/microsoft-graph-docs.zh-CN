@@ -5,12 +5,12 @@ author: payiAzure
 localization_priority: Normal
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 50d78a826f1ff09867f1cc68bae0f9d9eceda294f278cd6ac6767ae73fd300c7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 857c04e33e9a8ce2f833cacd55b0a80c4167522b
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54177304"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58266337"
 ---
 # <a name="serviceupdatemessage-markread"></a>serviceUpdateMessage：markRead
 命名空间：microsoft.graph
@@ -49,7 +49,7 @@ POST /admin/serviceAnnouncement/messages/markRead
 
 |参数|类型|说明|
 |:---|:---|:---|
-|messageIds|String collection|要标记为已读的邮件标识列表。|
+|messageIds|String collection|要标记为已读的邮件标识号列表。|
 
 
 ## <a name="response"></a>响应
@@ -60,6 +60,8 @@ POST /admin/serviceAnnouncement/messages/markRead
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "serviceupdatemessage_markread"
@@ -73,6 +75,24 @@ Content-Type: application/json
   "messageIds": ["MC172851", "MC167983"]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/serviceupdatemessage-markread-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/serviceupdatemessage-markread-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/serviceupdatemessage-markread-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/serviceupdatemessage-markread-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 <!-- {

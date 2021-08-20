@@ -4,12 +4,12 @@ description: 列出定义Graph配置设备的适用于 Intune 终结点的 Micro
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 4c9aa91adf1a8133080fd2f4ae09edee12445cc3
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: e1b193f4abb338f3ecb18d848fcd8435f77743b6
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52666280"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58265415"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Microsoft Intune 中的设备配置
 
@@ -126,6 +126,7 @@ ms.locfileid: "52666280"
 - [应用列表类型](intune-deviceconfig-applisttype.md)
 - [应用保险箱应用程序控制类型](intune-deviceconfig-applockerapplicationcontroltype.md)
 - [Apple 应用列表项](intune-deviceconfig-appleapplistitem.md)
+- [Apple 部署频道](intune-deviceconfig-appledeploymentchannel.md)
 - [Apple 设备功能配置基础](intune-deviceconfig-appledevicefeaturesconfigurationbase.md)
 - [Apple 快速签入配置基础](intune-deviceconfig-appleexpeditedcheckinconfigurationbase.md)
 - [Apple 使用者名称格式](intune-deviceconfig-applesubjectnameformat.md)
@@ -142,7 +143,7 @@ ms.locfileid: "52666280"
 - [BitLocker 固定驱动器策略](intune-deviceconfig-bitlockerfixeddrivepolicy.md)
 - [BitLocker 恢复信息类型](intune-deviceconfig-bitlockerrecoveryinformationtype.md)
 - [BitLocker 恢复选项](intune-deviceconfig-bitlockerrecoveryoptions.md)
-- [BitLocker密码轮换类型](intune-deviceconfig-bitlockerrecoverypasswordrotationtype.md)
+- [BitLocker 恢复密码轮换类型](intune-deviceconfig-bitlockerrecoverypasswordrotationtype.md)
 - [BitLocker 可移动驱动器策略](intune-deviceconfig-bitlockerremovabledrivepolicy.md)
 - [BitLocker 系统驱动器策略](intune-deviceconfig-bitlockersystemdrivepolicy.md)
 - [浏览器同步设置](intune-deviceconfig-browsersyncsetting.md)
@@ -223,10 +224,13 @@ ms.locfileid: "52666280"
 - [设备管理适用性规则操作系统版本](intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)
 - [设备管理适用性规则类型](intune-deviceconfig-devicemanagementapplicabilityruletype.md)
 - [设备管理证书颁发机构](intune-deviceconfig-devicemanagementcertificationauthority.md)
+- [设备管理报告](intune-grouppolicy-devicemanagementreports.md)
 - [设备管理设置](intune-deviceconfig-devicemanagementsettings.md)
 - [设备管理用户权限本地用户或组](intune-deviceconfig-devicemanagementuserrightslocaluserorgroup.md)
 - [设备管理用户权限设置](intune-deviceconfig-devicemanagementuserrightssetting.md)
+- [设备平台类型](intune-deviceconfig-deviceplatformtype.md)
 - [设备威胁防护级别](intune-deviceconfig-devicethreatprotectionlevel.md)
+- [设备类型](intune-deviceconfig-devicetype.md)
 - [设备类型](intune-deviceconfig-devicetypes.md)
 - [诊断数据提交模式](intune-deviceconfig-diagnosticdatasubmissionmode.md)
 - [Diffie hellman 组](intune-deviceconfig-diffiehellmangroup.md)
@@ -356,6 +360,8 @@ ms.locfileid: "52666280"
 - [键字符串值对](intune-deviceconfig-keystringvaluepair.md)
 - [键类型值对](intune-deviceconfig-keytypedvaluepair.md)
 - [密钥值](intune-deviceconfig-keyvalue.md)
+- [键/值对](intune-deviceconfig-keyvaluepair.md)
+- [键/值对](intune-deviceconfig-keyvaluepair.md)
 - [LAN Manager 身份验证级别](intune-deviceconfig-lanmanagerauthenticationlevel.md)
 - [本地安全选项管理员提升提示行为类型](intune-deviceconfig-localsecurityoptionsadministratorelevationpromptbehaviortype.md)
 - [允许本地安全选项格式化和弹出可移动媒体的用户类型](intune-deviceconfig-localsecurityoptionsformatandejectofremovablemediaallowedusertype.md)
@@ -415,6 +421,7 @@ ms.locfileid: "52666280"
 - [托管设备加密状态](intune-deviceconfig-manageddeviceencryptionstate.md)
 - [托管设备移动应用配置设置状态](intune-deviceconfig-manageddevicemobileappconfigurationsettingstate.md)
 - [托管设备报告的应用](intune-deviceconfig-manageddevicereportedapp.md)
+- [管理代理类型](intune-deviceconfig-managementagenttype.md)
 - [媒体内容分级（澳大利亚）](intune-deviceconfig-mediacontentratingaustralia.md)
 - [媒体内容分级（加拿大）](intune-deviceconfig-mediacontentratingcanada.md)
 - [媒体内容分级（法国）](intune-deviceconfig-mediacontentratingfrance.md)
@@ -448,6 +455,7 @@ ms.locfileid: "52666280"
 - [完美前向保密组](intune-deviceconfig-perfectforwardsecrecygroup.md)
 - [Pfx 重新加密请求](intune-raimportcerts-pfxrecryptionrequest.md)
 - [Pfx 用户证书](intune-raimportcerts-pfxusercertificate.md)
+- [策略平台类型](intune-deviceconfig-policyplatformtype.md)
 - [Power 操作类型](intune-deviceconfig-poweractiontype.md)
 - [预发布功能](intune-deviceconfig-prereleasefeatures.md)
 - [分级应用类型](intune-deviceconfig-ratingappstype.md)

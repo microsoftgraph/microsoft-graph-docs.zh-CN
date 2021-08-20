@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 14f8d9c8fa6283bb22e6b2264c32423222868081
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: b92bd04a1ab37e3842cca07fe44081a929ee98c1
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51132672"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58266294"
 ---
 # <a name="get-iosdevicefeaturesconfiguration"></a>获取 iosDeviceFeaturesConfiguration
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7435
+Content-Length: 7498
 
 {
   "value": {
@@ -182,6 +182,8 @@ Content-Length: 7435
         ]
       }
     ],
+    "homeScreenGridWidth": 3,
+    "homeScreenGridHeight": 4,
     "notificationSettings": [
       {
         "@odata.type": "microsoft.graph.iosNotificationSettings",

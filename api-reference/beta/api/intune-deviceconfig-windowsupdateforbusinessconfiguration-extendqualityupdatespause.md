@@ -1,26 +1,26 @@
 ---
 title: extendQualityUpdatesPause 操作
-description: 扩展适用于企业 Windows 更新圈的质量更新暂停。
+description: Extend Quality Updates Pause for a Windows Update for Business ring.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bc3d4208d76b1cd4c0c48e649126d2c6e1994491
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 0581d693fc7f7b7e7537368e0c24346cd42455380bd29d62387b2f229aaa244c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51150869"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54228490"
 ---
 # <a name="extendqualityupdatespause-action"></a>extendQualityUpdatesPause 操作
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-扩展适用于企业 Windows 更新圈的质量更新暂停。
+Extend Quality Updates Pause for a Windows Update for Business ring.
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

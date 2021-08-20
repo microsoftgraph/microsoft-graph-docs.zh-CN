@@ -5,12 +5,12 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 920eff7126d3628e798e10a3e1cc9985d64d6602
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: d7eea3f88605adb144e2fe4ab8061baf5da99fc93b912fa7438129ea35b32366
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50154234"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54244181"
 ---
 # <a name="workbookcomment-resource-type"></a>workbookComment 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "50154234"
 
 表示工作簿中的注释。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|

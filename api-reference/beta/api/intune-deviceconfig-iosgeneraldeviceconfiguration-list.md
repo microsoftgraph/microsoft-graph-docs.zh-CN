@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2592ea4b2d5ffe96a070fa59da312f4a9ed91d0c
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: ff5d17178cb0ef0c321e76fed60202c90ab4b3e2
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52666441"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58266112"
 ---
 # <a name="list-iosgeneraldeviceconfigurations"></a>列出 iosGeneralDeviceConfigurations
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 12165
+Content-Length: 12220
 
 {
   "value": [
@@ -366,6 +366,7 @@ Content-Length: 12165
       "autoUnlockBlocked": true,
       "unpairedExternalBootToRecoveryAllowed": true,
       "onDeviceOnlyDictationForced": true,
+      "wiFiConnectToAllowedNetworksOnlyForced": true,
       "kioskModeAppType": "appStoreApp"
     }
   ]

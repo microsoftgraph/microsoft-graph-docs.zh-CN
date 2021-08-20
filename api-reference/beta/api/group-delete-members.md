@@ -1,16 +1,16 @@
 ---
 title: 删除成员
-description: 使用此 API 可以通过 members 导航属性从Microsoft 365组、安全组或启用邮件的安全 **组** 中删除成员。 可以删除用户或其他组。
+description: 使用此 API 可以通过 members 导航属性从Microsoft 365组、安全组或启用邮件的安全 **组中删除** 成员。 可以删除用户或其他组。
 localization_priority: Normal
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 5950e65c02301bbd6379b0860d418692ed2f0721
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 1dc4e226f0d2ecfa64a7803542c77901c925c02d
+ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786963"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58396821"
 ---
 # <a name="remove-member"></a>删除成员
 
@@ -87,6 +87,11 @@ DELETE https://graph.microsoft.com/beta/groups/{group-id}/members/{directory-obj
 ```http
 HTTP/1.1 204 No Content
 ```
+
+## <a name="see-also"></a>另请参阅
+- [添加成员至团队](team-post-members.md)
+- [更新团队中成员的角色](team-update-members.md)
+- [从团队删除成员](team-delete-members.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

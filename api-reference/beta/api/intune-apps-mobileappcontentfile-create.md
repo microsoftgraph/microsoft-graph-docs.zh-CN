@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bb2d627bbd2e2b075c4eea053dcba2d3ed3cbd10
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 4afb19a2c36bfd5f5586a3db2a7e90cd34ccfc1968371a5696777ad1172af213
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51139809"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54149231"
 ---
 # <a name="create-mobileappcontentfile"></a>创建 mobileAppContentFile
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -57,14 +57,14 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCon
 |isCommitted|Boolean|指示文件是否已提交的值。|
 |id|String|文件 ID。|
 |createdDateTime|DateTimeOffset|创建文件的时间。|
-|name|String|文件名称。|
+|name|字符串|文件名称。|
 |size|Int64|加密前的文件大小。|
 |sizeEncrypted|Int64|加密后的文件大小。|
 |azureStorageUriExpirationDateTime|DateTimeOffset|Azure 存储 URI 的到期时间。|
 |manifest|Binary|清单信息。|
 |uploadState|[mobileAppContentFileUploadState](../resources/intune-apps-mobileappcontentfileuploadstate.md)|当前上传请求的状态。 可取值为：`success`、`transientError`、`error`、`unknown`、`azureStorageUriRequestSuccess`、`azureStorageUriRequestPending`、`azureStorageUriRequestFailed`、`azureStorageUriRequestTimedOut`、`azureStorageUriRenewalSuccess`、`azureStorageUriRenewalPending`、`azureStorageUriRenewalFailed`、`azureStorageUriRenewalTimedOut`、`commitFileSuccess`、`commitFilePending`、`commitFileFailed`、`commitFileTimedOut`。|
-|isFrameworkFile|Boolean|一个值，指示文件是否是框架文件。|
-|isDependency|Boolean|内容文件是否依赖于主内容文件。|
+|isFrameworkFile|布尔值|一个值，指示文件是否是框架文件。|
+|isDependency|布尔值|内容文件是否依赖于主内容文件。|
 
 
 

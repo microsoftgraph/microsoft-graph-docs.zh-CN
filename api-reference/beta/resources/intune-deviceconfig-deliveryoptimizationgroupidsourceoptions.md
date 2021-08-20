@@ -1,26 +1,26 @@
 ---
 title: deliveryOptimizationGroupIdSourceOptions 资源类型
-description: 组 id 选项类型
+description: 组 ID 选项类型
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a6d549c6f1601921e602a7fc51466e589109b0cc
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 72c9838261e55c5d41b7758eff16dfae6ac455774eddaf3b732679593d1b744f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49199425"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54161322"
 ---
 # <a name="deliveryoptimizationgroupidsourceoptions-resource-type"></a>deliveryOptimizationGroupIdSourceOptions 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-组 id 选项类型
+组 ID 选项类型
 
 
 继承自 [deliveryOptimizationGroupIdSource](../resources/intune-deviceconfig-deliveryoptimizationgroupidsource.md)
@@ -28,7 +28,7 @@ ms.locfileid: "49199425"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|groupIdSourceOption|[deliveryOptimizationGroupIdOptionsType](../resources/intune-deviceconfig-deliveryoptimizationgroupidoptionstype.md)|将此策略设置为限制对特定源的对等方选择。 可取值为：`notConfigured`、`adSite`、`authenticatedDomainSid`、`dhcpUserOption`、`dnsSuffix`。|
+|groupIdSourceOption|[deliveryOptimizationGroupIdOptionsType](../resources/intune-deviceconfig-deliveryoptimizationgroupidoptionstype.md)|设置此策略以将对等选择限制到特定源。 可取值为：`notConfigured`、`adSite`、`authenticatedDomainSid`、`dhcpUserOption`、`dnsSuffix`。|
 
 ## <a name="relationships"></a>关系
 无
