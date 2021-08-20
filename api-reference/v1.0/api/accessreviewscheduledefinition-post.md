@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 1644621bfff2d33347204256a9c76a5c17129b54
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 55d3ef44de2874aea30f087e057bd3a4cb0b8045
+ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53440516"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58367210"
 ---
 # <a name="create-accessreviewscheduledefinition"></a>创建 accessReviewScheduleDefinition
 
@@ -48,13 +48,13 @@ POST /identityGovernance/accessReviews/definitions
 
 | 属性 | 类型 | 说明 |
 |:-------------|:------------|:------------|
-| displayName | String | 访问评审系列的名称。 必需项。|
-| descriptionForAdmins | string | 提供给管理员评价的上下文。 必需项。 |
-  descriptionForReviewers | string | 提供给审阅者的审阅上下文。 必需项。 |
-| 范围 | [accessReviewScope](../resources/accessreviewscope.md) | 定义在组中查看的用户范围。 请参阅  [accessReviewScope，](../resources/accessreviewscheduledefinition.md) 并了解如何 [配置访问评审定义的范围](/graph/accessreviews-scope-concept)。 必需项。| 
-| instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | 对于所有组评审，这将确定将审核哪些组的范围。 请参阅 [accessReviewScope，](../resources/accessreviewscheduledefinition.md) 并了解如何 [配置访问评审定义的范围](/graph/accessreviews-scope-concept)。| 
-| settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| 访问评审系列的设置。 定期在此处确定。 请参阅 [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md)。 |
-| reviewers | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合 | 定义审阅者是谁。 如果未指定任何内容，则评论是自 (审阅用户自己的访问权限或) 。 请参阅 [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md)。 |
+| displayName | String | 访问评审系列的名称。 必需。|
+| descriptionForAdmins | string | 提供给管理员评价的上下文。 必需。 |
+  descriptionForReviewers | string | 提供给审阅者的审阅上下文。 必需。 |
+| 范围 | [accessReviewScope](../resources/accessreviewscope.md) |  定义将检查其访问权限的实体。 请参阅  [accessReviewScope，](../resources/accessreviewscope.md) 并了解如何 [配置访问评审定义的范围](/graph/accessreviews-scope-concept)。 必需。| 
+| instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | 对于所有组评审，这将确定将审核哪些组的范围。 请参阅 [accessReviewScope，](../resources/accessreviewscope.md) 并了解如何 [配置访问评审定义的范围](/graph/accessreviews-scope-concept)。| 
+| 设置 | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| 访问评审系列的设置。 定期在此处确定。 请参阅 [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)。 |
+| reviewers | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合 | 定义审阅者是谁。 如果未指定任何权限，则评论是自 (用户查看自己的访问权限) 。 有关分配审阅者的选项示例，请参阅使用 Microsoft Graph API 将审阅者[分配给你的访问Graph定义](/graph/accessreviews-reviewers-concept)。  |
 |fallbackReviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合|如果提供，当主审阅者不存在时，会要求回退审阅者完成审阅。 例如，如果选择了经理作为，而审核中的主体在 Azure AD 中没有经理，则回退审阅者 `reviewers` 需要审阅该主体。|
 
 ## <a name="response"></a>响应
@@ -214,7 +214,7 @@ Content-type: application/json
 + 该评论将审核具有非活动来宾用户的所有团队。 非活动期为自访问评审开始日期起 30 天。
 + 组所有者为审阅者，并分配回退审阅者。
 + 它每季度的第三天重复发生，并无限期地继续。
-+ **autoApplyDecisionsEnabled** 设置为 ，将 `true` **defaultDecision 设置为** `Deny` 。
++ **autoApplyDecisionsEnabled** 设置为 ， `true` **将 defaultDecision 设置为** `Deny` 。
 
 #### <a name="request"></a>请求
 在请求正文中，提供 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象的 JSON 表示形式。
@@ -395,7 +395,7 @@ Content-type: application/json
 ### <a name="example-3-create-an-access-review-of-all-users-to-an-application"></a>示例 3：创建对应用程序的所有用户的访问评审
 
 这是一个创建具有以下设置的访问评审的示例：
-+ 该评论将审核用户对应用程序的访问权限。
++ 该评审将审核用户对应用程序的访问权限。
 + 人员经理是审阅者，回退审阅者是组的成员。
 + 它每半年重复一次，自 startDate 起 1 年后结束。
 

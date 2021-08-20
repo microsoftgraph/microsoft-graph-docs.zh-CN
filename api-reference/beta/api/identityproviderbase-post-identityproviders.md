@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 1ad1da3a7e43d0d77f35efa15157078e9e3386ab
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: aff7e304c147b542526d07137eec4e4336a64619
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53533798"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58264484"
 ---
 # <a name="create-identityprovider"></a>创建 identityProvider
 命名空间：microsoft.graph
@@ -64,7 +64,7 @@ POST /identity/identityProviders
 |属性|类型|说明|
 |:---------------|:--------|:----------|
 |clientId|字符串|向标识提供程序注册应用程序时，获取应用程序的客户端标识符。|
-|clientSecret|字符串|向标识提供程序注册时获取的应用程序的客户端密码。 这是只读的。 读取操作返回"\*\*\*\*"。|
+|clientSecret|字符串|向标识提供程序注册时获取的应用程序的客户端密码。 这是只读的。 读取操作返回 `****`。|
 |displayName|字符串|标识提供程序的显示名称。|
 |identityProviderType|String|对于 B2B 方案，可能的值为： `Google`、 `Facebook`。 对于 B2C 方案，可能的值： `Microsoft`、 `Google`、 `Amazon`、 `LinkedIn`、 `Facebook`、 `GitHub`、 `Twitter`、 `Weibo`、 `QQ`、 `WeChat`。|
 
@@ -75,11 +75,11 @@ POST /identity/identityProviders
 |clientId|字符串|使用身份提供程序注册应用时获取的应用客户端 ID。|
 |clientSecret|字符串|使用身份提供程序注册应用时获取的应用客户端密码。 clientSecret 依赖于 **responseType**。 <ul><li>当 **responseType** `code` 为 时，身份验证代码交换需要密码。</li><li>当 **responseType** 为密码时，由于没有代码交换，id_token直接从授权响应 `id_token` 返回密码。</li></ul>|
 |displayName|字符串|标识提供程序的显示名称。|
-|domainHint|String|域提示可用于直接跳到指定标识提供程序的登录页面，而不是让用户在可用标识提供程序列表中进行选择。|
+|domainHint|字符串|域提示可用于直接跳到指定标识提供程序的登录页面，而不是让用户在可用标识提供程序列表中进行选择。|
 |claimsMapping|[claimsMapping](../resources/claimsmapping.md)|OIDC 提供程序将 ID 令牌发送回 Azure AD 后，Azure AD 需要能够将收到的令牌中的声明映射到 Azure AD 识别和使用声明。 此复杂类型捕获该映射。|
-|metadataUrl|String|OpenID 元数据文档的 URL 连接提供程序。 每个 OpenID 连接标识提供程序都描述一个元数据文档，其中包含执行登录所需的大部分信息。 这包括要使用的 URL 以及服务的公共签名密钥的位置等信息。 OpenID 连接元数据文档始终位于 以 结尾的终结点 `.well-known/openid-configuration` 。 提供您添加的 OpenID 连接标识提供程序的元数据 URL。|
+|metadataUrl|字符串|OpenID 元数据文档的 URL 连接标识提供程序。 每个 OpenID 连接提供程序都描述一个元数据文档，其中包含执行登录所需的大部分信息。 这包括要使用的 URL 以及服务的公共签名密钥的位置等信息。 OpenID 连接元数据文档始终位于 以 结尾的终结点 `.well-known/openid-configuration` 。 提供您添加的 OpenID 连接标识提供程序的元数据 URL。|
 |responseMode|String|响应模式定义用于将数据从自定义标识提供程序发送回 Azure AD B2C 的方法。 可能的值 `form_post` `query` ：、。|
-|responseType|String|响应类型描述在初始调用中发送回自定义标识提供程序authorization_endpoint类型。 可能的值 `code` `id_token` `token` ：、、。|
+|responseType|String|响应类型描述在首次调用自定义标识提供程序的 authorization_endpoint时发送回的信息类型。 可能的值 `code` `id_token` `token` ：、、。|
 |scope|String|范围定义要从自定义标识提供程序收集的信息和权限。|
 
 ### <a name="appleidentityprovider-object"></a>appleIdentityProvider 对象
@@ -147,8 +147,6 @@ Content-length: 154
 
 ---
 
-
----
 
 #### <a name="response"></a>响应
 
@@ -233,7 +231,6 @@ Content-type: application/json
 ---
 
 
----
 
 #### <a name="response"></a>响应
 
@@ -278,6 +275,8 @@ Content-type: application/json
 
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_applemanagedidentityprovider_from_identityproviderbase"
@@ -298,6 +297,16 @@ Content-length: 154
   "certificateData": "******"
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-applemanagedidentityprovider-from-identityproviderbase-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-applemanagedidentityprovider-from-identityproviderbase-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### <a name="response"></a>响应

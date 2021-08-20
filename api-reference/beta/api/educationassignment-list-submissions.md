@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 7cbe965cde21b358eaa21adbdd994bb88070fbfc
-ms.sourcegitcommit: eb67b0a619a4004c1611304f1252a382264a97f3
+ms.openlocfilehash: c71799d74a2714028d90531f6c8dcb8257e13e84
+ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061670"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58367105"
 ---
 # <a name="list-submissions"></a>列出提交
 
@@ -27,9 +27,7 @@ ms.locfileid: "52061670"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|Application* | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite | 
-
-*应用程序权限当前仅适用于个人预览版客户。
+|应用程序 | EduAssignments.ReadBasic.All、EduAssignments.ReadWriteBasic.All、EduAssignments.Read.All、EduAssignments.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +45,7 @@ GET /education/classes/{id}/assignments/{id}/submissions
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码 [和 educationSubmission](../resources/educationsubmission.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [educationSubmission](../resources/educationsubmission.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。

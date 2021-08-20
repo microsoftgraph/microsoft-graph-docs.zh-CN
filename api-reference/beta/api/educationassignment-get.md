@@ -1,16 +1,16 @@
 ---
 title: 获取 educationAssignment
-description: 获取给定分配的属性和关系。 请注意，教师和应用程序可以在课堂中查看所有作业。
+description: 获取给定分配的属性和关系。 请注意，教师和应用程序可以看到课程的所有作业。
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 39daae36befe6a9a3496863d82b1d15bf2e695c3
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: bfa8a41f23ec5543467b19e767fb16842cbb8a0c
+ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52911940"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58367189"
 ---
 # <a name="get-educationassignment"></a>获取 educationAssignment
 
@@ -30,7 +30,7 @@ ms.locfileid: "52911940"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|应用程序 | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite | 
+|应用程序 | EduAssignments.ReadBasic.All、EduAssignments.ReadWriteBasic.All、EduAssignments.Read.All、EduAssignments.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

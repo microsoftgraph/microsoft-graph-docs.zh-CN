@@ -5,12 +5,12 @@ author: payiAzure
 localization_priority: Normal
 ms.prod: service-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 254702516d536617ef5afa114bc7a41761ce3499a932b4c7e2d8560ac7f92441
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 89bc9579b6ca5af6b7306746394b439c83d40208
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54195591"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58266721"
 ---
 # <a name="servicehealth-resource-type"></a>serviceHealth 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "54195591"
 
 表示租户订阅的服务的运行状况信息。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 serviceHealth](../api/servicehealth-get.md)|[serviceHealth](../resources/servicehealth.md)|检索 [serviceHealth 对象的属性和](../resources/servicehealth.md) 关系。|

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: kszb
-ms.openlocfilehash: 00b64aa0dfde4ba43f6cf351ce05bc761dcd2005
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2ac9a769348851143e0fe7d5f11593ca457dd357b8152c4b445347b4080d75a3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48063861"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54136224"
 ---
 # <a name="skypeforbusinessparticipantactivityminutecounts-resource-type"></a>skypeForBusinessParticipantActivityMinuteCounts 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "48063861"
 | audioVideo        | Int64  |
 | reportRefreshDate | 日期   |
 | reportDate        | 日期   |
-| reportPeriod      | String |
+| reportPeriod      | 字符串 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -1,48 +1,48 @@
 ---
 title: embeddedSIMDeviceState 资源类型
-description: 介绍与设备相关的嵌入的 SIM 激活代码部署状态。
+description: 描述与设备相关的嵌入式 SIM 卡激活代码部署状态。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 44f5980881a52428efb655c5f37c8579d445fa84
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 7a4d3fdfcd6f6a6c222c8b2a58e95d4755b3a6e41f11158e65dc3e5fbd9b56db
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49288423"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54122381"
 ---
 # <a name="embeddedsimdevicestate-resource-type"></a>embeddedSIMDeviceState 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-介绍与设备相关的嵌入的 SIM 激活代码部署状态。
+描述与设备相关的嵌入式 SIM 卡激活代码部署状态。
 
 ## <a name="methods"></a>Methods
-|方法|返回类型|Description|
+|方法|返回类型|说明|
 |:---|:---|:---|
-|[列出 embeddedSIMDeviceStates](../api/intune-esim-embeddedsimdevicestate-list.md)|[embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md) 集合|列出 [embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md) 对象的属性和关系。|
-|[获取 embeddedSIMDeviceState](../api/intune-esim-embeddedsimdevicestate-get.md)|[embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md)|读取 [embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md) 对象的属性和关系。|
+|[列出 embeddedSIMDeviceStates](../api/intune-esim-embeddedsimdevicestate-list.md)|[embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md) 集合|列出 [embeddedSIMDeviceState 对象的属性和](../resources/intune-esim-embeddedsimdevicestate.md) 关系。|
+|[获取 embeddedSIMDeviceState](../api/intune-esim-embeddedsimdevicestate-get.md)|[embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md)|读取 [embeddedSIMDeviceState 对象的属性和](../resources/intune-esim-embeddedsimdevicestate.md) 关系。|
 |[创建 embeddedSIMDeviceState](../api/intune-esim-embeddedsimdevicestate-create.md)|[embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md)|创建新的 [embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md) 对象。|
-|[删除 embeddedSIMDeviceState](../api/intune-esim-embeddedsimdevicestate-delete.md)|无|删除 [embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md)。|
-|[更新 embeddedSIMDeviceState](../api/intune-esim-embeddedsimdevicestate-update.md)|[embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md)|更新 [embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md) 对象的属性。|
+|[删除 embeddedSIMDeviceState](../api/intune-esim-embeddedsimdevicestate-delete.md)|无|删除嵌入 [的SIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md)。|
+|[更新 embeddedSIMDeviceState](../api/intune-esim-embeddedsimdevicestate-update.md)|[embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md)|更新嵌入 [SIMDeviceState 对象](../resources/intune-esim-embeddedsimdevicestate.md) 的属性。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|嵌入的 SIM 卡设备状态的唯一标识符。 创建时分配的系统生成值。|
-|createdDateTime|DateTimeOffset|嵌入的 SIM 设备状态的创建时间。 生成的服务端。|
-|modifiedDateTime|DateTimeOffset|上次修改嵌入的 SIM 设备状态的时间。 更新了服务端。|
-|lastSyncDateTime|DateTimeOffset|嵌入的 SIM 设备上次签入的时间。 更新了服务端。|
-|universalIntegratedCircuitCardIdentifier|字符串|通用集成电路卡标识符 (UICCID) 标识配置文件要部署到的硬件。|
-|deviceName|String|订阅预配到的设备名称，例如，桌面 JOE|
+|id|String|嵌入式 SIM 卡设备状态的唯一标识符。 创建时分配的系统生成值。|
+|createdDateTime|DateTimeOffset|嵌入式 SIM 卡设备状态的创建时间。 生成的服务器端。|
+|modifiedDateTime|DateTimeOffset|上次修改嵌入式 SIM 卡设备状态的时间。 更新的服务器端。|
+|lastSyncDateTime|DateTimeOffset|嵌入式 SIM 卡设备上次签入的时间。 更新的服务器端。|
+|universalIntegratedCircuitCardIdentifier|String|通用集成电路卡标识符 (UI进行) 标识要部署配置文件的硬件。|
+|deviceName|String|预配订阅的设备名称，例如 DESKTOP-JOE|
 |userName|String|订阅预配到的用户名，例如 joe@contoso.com|
 |state|[embeddedSIMDeviceStateValue](../resources/intune-esim-embeddedsimdevicestatevalue.md)|应用于设备的配置文件操作的状态。 可取值为：`notEvaluated`、`failed`、`installing`、`installed`、`deleting`、`error`、`deleted`、`removedByUser`。|
-|stateDetails|字符串|设置状态的字符串说明。|
+|stateDetails|String|设置状态字符串说明。|
 
 ## <a name="relationships"></a>关系
 无

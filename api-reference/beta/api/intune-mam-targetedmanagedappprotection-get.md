@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 11c0b4deb7c699f703fdf78f4bf1f90fb87821bf
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 40a10a22cc8a1528340210c1e81027212cee82aa
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51148972"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58263000"
 ---
 # <a name="get-targetedmanagedappprotection"></a>获取 targetedManagedAppProtection
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/managedAppPolicies/{man
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2795
+Content-Length: 2840
 
 {
   "value": {
@@ -133,7 +133,8 @@ Content-Length: 2795
     "appActionIfUnableToAuthenticateUser": "wipe",
     "dialerRestrictionLevel": "managedApps",
     "isAssigned": true,
-    "targetedAppManagementLevels": "unmanaged"
+    "targetedAppManagementLevels": "unmanaged",
+    "appGroupType": "allCoreMicrosoftApps"
   }
 }
 ```

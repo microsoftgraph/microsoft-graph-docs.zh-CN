@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 67fc4fbe6128842db99fb70a2198da21bfd30714
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: bbb9c465a5a3d8738db96f2b56b3430000c487cc
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51157945"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58262791"
 ---
 # <a name="update-userexperienceanalyticsapphealthosversionperformance"></a>更新 userExperienceAnalyticsAppHealthOSVersionPerformance
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -27,9 +27,9 @@ ms.locfileid: "51157945"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -56,10 +56,10 @@ PATCH /deviceManagement/userExperienceAnalyticsAppHealthOSVersionPerformance/{us
 |id|String|用户体验分析操作系统版本性能对象的唯一标识符。|
 |osVersion|String|设备上安装的操作系统版本。|
 |osBuildNumber|String|设备上安装的操作系统内部版本号。|
-|activeDeviceCount|Int32|操作系统版本的活动设备的数量。 有效值 -2147483648 到 2147483647|
-|meanTimeToFailureInMinutes|Int32|操作系统版本的失败平均时间（分钟）。 有效值 -2147483648 到 2147483647|
+|activeDeviceCount|Int32|操作系统版本的活动设备的数量。 有效值 -2147483648 to 2147483647|
+|meanTimeToFailureInMinutes|Int32|操作系统版本的失败平均时间（分钟）。 有效值 -2147483648 to 2147483647|
 |osVersionAppHealthScore|双精度|操作系统版本的应用运行状况分数。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
-|osVersionAppHealthStatus|String|操作系统版本的总体应用运行状况状态。|
+|osVersionAppHealthStatus|字符串|操作系统版本的总体应用运行状况状态。|
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c7b6d1db26434443f10e801f36fa29c131a4c0f2
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: bed069fb54e36e55e5f33f683fda4734937d55b7
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682549"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58266742"
 ---
 # <a name="list-members"></a>列出成员
 
@@ -181,7 +181,7 @@ Content-type: text/plain
 下面展示了示例请求。
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_pr_count"
 }-->
 ```msgraph-interactive
@@ -228,7 +228,7 @@ Content-type: application/json
 下面展示了示例请求。
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_a_count"
 }-->
 ```msgraph-interactive

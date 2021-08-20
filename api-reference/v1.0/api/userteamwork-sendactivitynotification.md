@@ -5,12 +5,12 @@ author: eddie-lee-msft
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2d6d82e251fd476dbaa0f657d887bac5fd475883
-ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
+ms.openlocfilehash: faa795b9a5cf2791407126bad9d4305eca0480a53011d5504ae16db2c090f6c1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52696266"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "57106748"
 ---
 # <a name="userteamwork-sendactivitynotification"></a>userTeamwork： sendActivityNotification
 命名空间：microsoft.graph
@@ -130,7 +130,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-2-notify-a-user-about-an-event-using-custom-topic"></a>示例 2：使用自定义主题通知用户事件
 
-如果要链接未由 Microsoft Graph 表示的方面，或者希望自定义名称，可以将 的源设置为 并传递其 `topic` `text` 自定义值。 `webUrl` 将 source 用作 时 `topic` 是必需的 `text` 。
+如果要链接未由 Microsoft Graph 表示的方面，或者希望自定义名称，可以将 的源设置为 并传递其自定义 `topic` `text` 值。 `webUrl` 将 source 用作 时 `topic` 是必需的 `text` 。
 
 #### <a name="request"></a>请求
 

@@ -1,26 +1,26 @@
 ---
 title: extendFeatureUpdatesPause 操作
-description: 扩展适用于企业 Windows 更新圈的功能更新暂停。
+description: 扩展适用于企业更新环Windows暂停功能更新。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f4bb7eb06d2045e551b64c4936c828bbd8fdb27b
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: d47b90b322df489d26413af3cbcca7a39a69f18ea12f3ad2cfa2812fabec390b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51150883"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54162191"
 ---
 # <a name="extendfeatureupdatespause-action"></a>extendFeatureUpdatesPause 操作
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-扩展适用于企业 Windows 更新圈的功能更新暂停。
+扩展适用于企业更新环Windows暂停功能更新。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

@@ -3,12 +3,12 @@ title: Microsoft Graph 早期版本的亮点
 description: Microsoft Graph 早期版本中的新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 4240678b35a4a309c5d3d53bed7b2955c16cb84e
-ms.sourcegitcommit: b7e01a1331abe5f5c9aa2828d93dad08229573f1
+ms.openlocfilehash: 1a4f37f025beb5f84bb822940d8bbbb8c870caeb
+ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58336861"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58384441"
 ---
 # <a name="highlights-of-earlier-releases"></a>早期版本的亮点
 
@@ -1060,7 +1060,7 @@ Intune [4 月](changelog.md#april-2020)更新。
 Intune [3 月](changelog.md#march-2020)更新。
 
 ### <a name="identity-and-access"></a>标识和访问
-- 使用 `Auditlogs.Read.All` 权限可列出[用户](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true)的[登录活动](/graph/api/resources/signinactivity?view=graph-rest-beta&preserve-view=true)。
+- 使用 `AuditLog.Read.All` 权限可列出[用户](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true)的[登录活动](/graph/api/resources/signinactivity?view=graph-rest-beta&preserve-view=true)。
 - 使用 [Azure 资源的 Privileged Identity Management (PIM)](/graph/api/resources/privilegedidentitymanagement-resources?view=graph-rest-beta&preserve-view=true) 的 `PrivilegedAccess.Read.AzureResources` 应用程序级别权限为管理组、订阅、资源组和资源级别的 Azure 基础结构角色设置实时访问工作流。
 - 使用 [identitySecurityDefaultsEnforcementPolicy](/graph/api/resources/identitysecuritydefaultsenforcementpolicy?view=graph-rest-beta&preserve-view=true) 实体可[获取](/graph/api/identitysecuritydefaultsenforcementpolicy-get?view=graph-rest-beta&preserve-view=true)或[更新](/graph/api/identitysecuritydefaultsenforcementpolicy-update?view=graph-rest-beta&preserve-view=true)预配置的默认安全设置，以保护组织免受常见攻击。
 - 调用条件访问 API 时，请使用 `identity` 段。 例如，要[获取](/graph/api/conditionalaccesspolicy-get?view=graph-rest-beta&preserve-view=true)[条件性访问策略](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta&preserve-view=true)：`GET https://graph.microsoft.com/beta/identity/conditionalAccess/policies/{id}`。

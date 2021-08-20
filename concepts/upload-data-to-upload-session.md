@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Priority
 ms.prod: universal-print
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: c2fd6ac45d22b9c1c77b183f7a3412b7eb3dd46b3270f1d3f5a2ea5919970bf5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 78f876cdd2269dac9f9b68915f59d9ae2dd0b51d
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54171964"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58265810"
 ---
 # <a name="upload-documents-using-the-microsoft-graph-universal-print-api"></a>使用 Microsoft Graph 通用打印 API 上载文档
 
@@ -188,7 +188,7 @@ Content-Type: application/json
     };
     const client = Client.init(options);
    
-   const fileName = "test.txt";
+    const fileName = "test.txt";
     const file = fs.readFileSync(`./${fileName}`);
     const stats = fs.statSync(`./${fileName}`);
     const requestUrl ="https://graph.microsoft.com/v1.0/print/shares/{id}/jobs/{id}/documents/{id}/createuploadsession"
@@ -201,14 +201,20 @@ Content-Type: application/json
     }
     const uploadSession = await LargeFileUploadTask.createUploadSession(client, requestUrl, payload);
 
-    const fileObject = {
-        content: file,
-        name: fileName,
-        size: stats.size
-    };
-
+    // Create FileUpload object. 
+    /* Note:
+     * As alternatives to using a javascript `File` object to create a `FileUpload`, 
+     * you can use a `ReadStream` object to create a `StreamUpload`.
+     * const readStream = fs.createReadStream(`./test/sample_files/${fileName}`);
+     * const fileObject = new StreamUpload(readStream, fileName, totalsize);
+     * OR
+     * you can also create a custom implementation of the `FileObject` interface.
+     * FileUpload and StreamUpload classes are available in 3.0.0 version of the Microsoft Graph JS client library.
+     */
+    const fileObject = new FileUpload(file, file.name, file.size);
+     
+    // Create LargeFileUploadTask object and start the upload() task
     const task = new LargeFileUploadTask(client, fileObject, uploadSession);
-
     const uploadResponse = await task.upload();
 ```
 ---

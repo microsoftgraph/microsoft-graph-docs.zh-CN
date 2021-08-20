@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 532f61afadbeec9eb59bb9a1480194f9ff47d8bf
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: b5da2266d8334b62e801b03869566da9cb5b9732
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51866543"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58265965"
 ---
 # <a name="androidmanagedappprotection-resource-type"></a>androidManagedAppProtection 资源类型
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -25,7 +25,7 @@ ms.locfileid: "51866543"
 
 继承自 [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md)
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[List androidManagedAppProtections](../api/intune-shared-androidmanagedappprotection-list.md)|[androidManagedAppProtection](../resources/intune-shared-androidmanagedappprotection.md) 集合|列出 [androidManagedAppProtection](../resources/intune-shared-androidmanagedappprotection.md) 对象的属性和关系。|
@@ -40,11 +40,11 @@ ms.locfileid: "51866543"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
-|displayName|String|策略显示名称。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
-|说明|String|策略的说明。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|displayName|字符串|策略显示名称。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|description|String|策略的说明。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |createdDateTime|DateTimeOffset|创建策略的日期和时间。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改策略的时间。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |version|String|实体的版本。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |periodOfflineBeforeAccessCheck|Duration|设备未连接到 Internet 时在该时间段后检查访问权限。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |periodOnlineBeforeAccessCheck|Duration|设备连接到 Internet 时在该时间段后检查访问权限。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
@@ -76,7 +76,7 @@ ms.locfileid: "51866543"
 |minimumWipeAppVersion|String|小于或等于指定版本的版本将擦除托管应用和关联的公司数据。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |appActionIfDeviceComplianceRequired|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|如果 DeviceComplianceRequired 设置为 true，则定义设备取得 root 或越狱权限时可阻止或擦除的托管应用行为。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)。 可取值为：`block`、`wipe`、`warn`。|
 |appActionIfMaximumPinRetriesExceeded|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|根据错误的 pin 重试次数上限，定义托管应用行为（阻止或擦除）。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)。 可取值为：`block`、`wipe`、`warn`。|
-|pinRequiredInsteadOfBiometricTimeout|持续时间|应用 PIN 而不是非生物识别密码的超时（分钟） 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|pinRequiredInsteadOfBiometricTimeout|期限|应用 PIN 而不是非生物识别密码的超时（分钟） 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |allowedOutboundClipboardSharingExceptionLength|Int32|指定可以剪切或从组织数据和帐户复制到任何应用程序的字符数。 此设置将覆盖 AllowedOutboundClipboardSharingLevel 限制。 默认值"0"表示不允许任何异常。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |notificationRestriction|[managedAppNotificationRestriction](../resources/intune-mam-managedappnotificationrestriction.md)|指定应用通知限制 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)。 可取值为：`allow`、`blockOrganizationalData`、`block`。|
 |isAssigned|Boolean|指示策略是否部署到任何包含组。 继承自 [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md)|
@@ -87,24 +87,24 @@ ms.locfileid: "51866543"
 |deployedAppCount|Int32|当前策略部署到的应用的计数。|
 |minimumRequiredPatchVersion|String|定义用户可以获得对应用的安全访问权限所需的最早的必需 Android 安全修补程序级别。|
 |minimumWarningPatchVersion|String|定义用户可以获得对应用的安全访问权限所需的最早推荐 Android 安全修补程序级别。|
-|exemptedAppPackages|[keyValuePair](../resources/intune-shared-keyvaluepair.md) 集合|此列表中的应用包将免受策略的影响，并且将能够从托管应用接收数据。|
-|minimumWipePatchVersion|String|小于或等于指定值的 Android 安全修补程序级别将擦除托管应用和关联的公司数据。|
-|allowedAndroidDeviceManufacturers|String|以字符串形式允许托管应用工作的设备制造商的分号分隔列表。|
+|exemptedAppPackages|[keyValuePair](../resources/intune-mam-keyvaluepair.md) 集合|此列表中的应用包将免受策略的影响，并且将能够从托管应用接收数据。|
+|minimumWipePatchVersion|字符串|小于或等于指定值的 Android 安全修补程序级别将擦除托管应用和关联的公司数据。|
+|allowedAndroidDeviceManufacturers|String|以字符串形式允许托管应用工作的设备制造商分号分隔列表。|
 |appActionIfAndroidDeviceManufacturerNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|定义托管应用行为（阻止或擦除）（如果不允许指定的设备制造商）。 可取值为：`block`、`wipe`、`warn`。|
 |requiredAndroidSafetyNetDeviceAttestationType|[androidManagedAppSafetyNetDeviceAttestationType](../resources/intune-mam-androidmanagedappsafetynetdeviceattestationtype.md)|定义托管应用正常工作的 Android SafetyNet 设备证明要求。 可取值为：`none`、`basicIntegrity`、`basicIntegrityAndDeviceCertification`。|
 |appActionIfAndroidSafetyNetDeviceAttestationFailed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|定义托管应用行为，如果指定的 Android SafetyNet 证明要求失败，则发出警告或阻止。 可取值为：`block`、`wipe`、`warn`。|
 |requiredAndroidSafetyNetAppsVerificationType|[androidManagedAppSafetyNetAppsVerificationType](../resources/intune-mam-androidmanagedappsafetynetappsverificationtype.md)|定义 Android SafetyNet 应用验证要求，使托管应用正常工作。 可取值为：`none`、`enabled`。|
 |appActionIfAndroidSafetyNetAppsVerificationFailed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|定义托管应用行为，如果指定的 Android 应用验证要求失败，则发出警告或阻止。 可取值为：`block`、`wipe`、`warn`。|
-|customBrowserPackageId|String|在 Android 上打开 Web 链接的自定义浏览器的唯一标识符。|
+|customBrowserPackageId|字符串|在 Android 上打开 Web 链接的自定义浏览器的唯一标识符。|
 |customBrowserDisplayName|String|在 Android 上打开 Web 链接的首选自定义浏览器的友好名称。|
-|minimumRequiredCompanyPortalVersion|String|必须安装在设备或应用访问上的公司门户的最低版本将被阻止|
+|minimumRequiredCompanyPortalVersion|字符串|必须安装在设备或应用访问上的公司门户的最低版本将被阻止|
 |minimumWarningCompanyPortalVersion|String|必须安装在设备上或用户将收到警告的公司门户的最低版本|
 |minimumWipeCompanyPortalVersion|String|必须安装在设备上或应用上的公司数据的最低版本公司门户将擦除|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
-|**移动应用管理 (MAM)**|
+|**移动应用管理(MAM)**|
 |assignments|[targetedManagedAppPolicyAssignment](../resources/intune-mam-targetedmanagedapppolicyassignment.md) 集合|策略部署到的包含组和排除组列表的导航属性。 继承自 [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md)|
 |apps|[managedMobileApp](../resources/intune-mam-managedmobileapp.md) 集合|策略部署到的应用的列表。|
 |deploymentSummary|[managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md)|配置的部署摘要的导航属性。|

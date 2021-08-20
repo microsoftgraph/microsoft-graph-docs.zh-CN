@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 5813e5628e1ff9819cd2d10dd502d8a717088611
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 23d31548dc4a8d050bd21df804c8f77d2f81d275
+ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52992610"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58367126"
 ---
 # <a name="list-outcomes"></a>列出结果
 
@@ -18,11 +18,11 @@ ms.locfileid: "52992610"
 
 检索 [educationOutcome 对象](../resources/educationoutcome.md) 的列表。  有三种类型的结果 **：educationPointsOutcome、educationFeedbackOutcome** 和 **educationRubricOutcome**。 
 
-对于没有点值和 (信用额度的信用分配提交) 将具有 [educationFeedbackOutcome](../resources/educationpointsoutcome.md)。  (它也可能返回 [educationPointsOutcome](../resources/educationpointsoutcome.md)，但会忽略该结果。) 
+对于没有点值且没有 (信用额度的信用分配提交) 将具有 [educationFeedbackOutcome](../resources/educationpointsoutcome.md)。  (它也可能返回 [educationPointsOutcome](../resources/educationpointsoutcome.md)，但会忽略该结果。) 
 
 分数分配提交 (分配了分数值的) 将同时具有 [educationFeedbackOutcome](../resources/educationpointsoutcome.md) 和 [educationPointsOutcome](../resources/educationpointsoutcome.md)。
 
-具有附加的分数的作业提交（如果分数为信用额度 (无分数) ，则具有 [educationFeedbackOutcome](../resources/educationpointsoutcome.md) 和 [educationRubricOutcome](../resources/educationrubricoutcome.md)。  (它也可能返回 [educationPointsOutcome](../resources/educationpointsoutcome.md)，但会忽略该结果。) 
+如果工作分配有附加的分数（如果分数为信用额度 (，则) 有 [educationFeedbackOutcome](../resources/educationpointsoutcome.md) 和 [educationRubricOutcome](../resources/educationrubricoutcome.md)。  (它也可能返回 [educationPointsOutcome](../resources/educationpointsoutcome.md)，但会忽略该结果。) 
 
 对于附加了标点的工作分配，如果分数为分值，则提交内容将具有 [educationFeedbackOutcome](../resources/educationpointsoutcome.md)，即 [educationPointsOutcome] (。/resources/educationpointsoutcome.md 和 [educationRubricOutcome](../resources/educationrubricoutcome.md)。
 
@@ -36,7 +36,7 @@ ms.locfileid: "52992610"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite |
+| 应用程序                            | EduAssignments.ReadBasic.All、EduAssignments.ReadWriteBasic.All、EduAssignments.Read.All、EduAssignments.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

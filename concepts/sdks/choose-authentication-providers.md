@@ -3,23 +3,23 @@ title: 选择 Microsoft Graph身份验证提供程序
 description: 了解如何为应用程序选择特定于方案的身份验证提供程序。
 localization_priority: Normal
 author: MichaelMainer
-ms.openlocfilehash: ff898f69c2d23575e3b7c64ced22899839c11504
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 35717b83c5df9a56351200e4f762c85459854929
+ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58264043"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58384532"
 ---
 <!-- markdownlint-disable MD001 MD024 MD025 -->
 
 # <a name="choose-a-microsoft-graph-authentication-provider-based-on-scenario"></a>根据方案选择 Microsoft Graph 身份验证提供程序
 
-身份验证提供程序使用 MICROSOFT 身份验证库和 MSAL (实现获取令牌) ;处理增量同意、密码过期和条件访问等情况下的一些潜在错误;，然后设置 HTTP 请求授权标头。 下表列出了一组与不同应用程序类型的方案匹配的 [提供程序](/azure/active-directory/develop/v2-app-types)。
+身份验证提供程序使用 MICROSOFT 身份验证库和 MSAL 身份验证库实现获取 (所需的) ;处理增量同意、密码过期和条件访问等情况下的一些潜在错误;，然后设置 HTTP 请求授权标头。 下表列出了一组与不同应用程序类型的方案匹配的 [提供程序](/azure/active-directory/develop/v2-app-types)。
 
-| 方案                                                                                               | Flow/授予         | 受众               | 提供程序 |
+| 方案                                                                                               | Flow/Grant         | 受众               | 提供程序 |
 |--------------------------------------------------------------------------------------------------------|--------------------|------------------------|-----|
-| [单页应用](/azure/active-directory/develop/scenario-spa-acquire-token)                          |                    |                        |     |
-|                                                                                                        | 隐式           | 委派使用者/组织 | [隐式提供程序](#implicit-provider) |
+| [单页应用](/azure/active-directory/develop/scenario-spa-acquire-token)                          | 授权代码 |                        |     |
+|                                                                                                        | 使用 PKCE          | 委派使用者/组织 | [授权代码提供程序](#authorization-code-provider) |
 | [调用 Web API 的 Web 应用](/azure/active-directory/develop/scenario-web-app-call-api-acquire-token) |                    |                        |     |
 |                                                                                                        | 授权代码 | 委派使用者/组织 | [授权代码提供程序](#authorization-code-provider) |
 |                                                                                                        | 客户端凭据 | 仅限应用               | [客户端凭据提供程序](#client-credentials-provider) |
@@ -75,7 +75,55 @@ var graphClient = new GraphServiceClient(authCodeCredential, scopes);
 
 # <a name="javascript"></a>[Javascript](#tab/Javascript)
 
-授权代码、客户端凭据和代表 OAuth 流目前要求您实现自定义身份验证提供程序。 有关详细信息，请参阅 [使用自定义身份验证提供程序](https://github.com/microsoftgraph/msgraph-sdk-javascript/blob/dev/docs/CustomAuthenticationProvider.md)。
+### <a name="using-azuremsal-browser-for--browser-applications"></a>将 @azure/msal-browser 用于浏览器应用程序
+
+```javascript
+
+const {
+    PublicClientApplication,
+    InteractionType,
+    AccountInfo
+} = require("@azure/msal-browser");
+
+const {
+    AuthCodeMSALBrowserAuthenticationProvider,
+    AuthCodeMSALBrowserAuthenticationProviderOptions
+} = require("@microsoft/microsoft-graph-client/authProviders/authCodeMsalBrowser");
+
+const options: AuthCodeMSALBrowserAuthenticationProviderOptions: {
+    account: account, // the AccountInfo instance to acquire the token for.
+    interactionType: InteractionType.PopUp, // msal-browser InteractionType
+    scopes: ["user.read", "mail.send"] // example of the scopes to be passed
+}
+
+// Pass the PublicClientApplication instance from step 2 to create AuthCodeMSALBrowserAuthenticationProvider instance
+const authProvider: new AuthCodeMSALBrowserAuthenticationProvider(publicClientApplication, options),
+```
+
+### <a name="using-azureidentity-for-server-side-applications"></a>对@azure应用程序使用 @azure/标识
+
+```javascript
+const {
+    Client
+} = require("@microsoft/microsoft-graph-client");
+const {
+    TokenCredentialAuthenticationProvider
+} = require("@microsoft/microsoft-graph-client/authProviders/azureTokenCredentials");
+const {
+    AuthorizationCodeCredential
+} = require("@azure/identity");
+
+const credential = new AuthorizationCodeCredential(
+    "<YOUR_TENANT_ID>",
+    "<YOUR_CLIENT_ID>",
+    "<AUTH_CODE_FROM_QUERY_PARAMETERS>",
+    "<REDIRECT_URL>"
+);
+const authProvider = new TokenCredentialAuthenticationProvider(credential, {
+    scopes: [scopes]
+});
+
+```
 
 # <a name="java"></a>[Java](#tab/Java)
 
@@ -108,7 +156,7 @@ final User me = graphClient.me().buildRequest().get();
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-尚不可用。 如果这对你很重要Graph支持或打开[Microsoft](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) Graph功能请求。
+尚不可用。 如果这对你很重要[，Graph](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph)或打开 Microsoft Graph功能请求。
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
@@ -174,7 +222,28 @@ var graphClient = new GraphServiceClient(clientCertCredential, scopes);
 
 # <a name="javascript"></a>[Javascript](#tab/Javascript)
 
-授权代码、客户端凭据和代表 OAuth 流目前要求您实现自定义身份验证提供程序。 有关详细信息，请参阅 [使用自定义身份验证提供程序](https://github.com/microsoftgraph/msgraph-sdk-javascript/blob/dev/docs/CustomAuthenticationProvider.md)。
+```javascript
+const {
+    Client
+} = require("@microsoft/microsoft-graph-client");
+const {
+    TokenCredentialAuthenticationProvider
+} = require("@microsoft/microsoft-graph-client/authProviders/azureTokenCredentials");
+const {
+    ClientSecretCredential
+} = require("@azure/identity");
+
+const credential = new ClientSecretCredential(tenantId, clientId, clientSecret);
+const authProvider = new TokenCredentialAuthenticationProvider(credential, {
+    scopes: [scopes]
+});
+
+const client = Client.initWithMiddleware({
+    debugLogging: true,
+    authProvider
+    // Use the authProvider object to create the class.
+});
+```
 
 # <a name="java"></a>[Java](#tab/Java)
 
@@ -206,11 +275,11 @@ final User me = graphClient.me().buildRequest().get();
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-尚不可用。 如果这对你很重要Graph支持或打开[Microsoft](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) Graph功能请求。
+尚不可用。 如果这对你很重要[，Graph](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph)或打开 Microsoft Graph功能请求。
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-尚不可用。 如果这对你很重要Graph支持或打开[Microsoft](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) Graph功能请求。
+尚不可用。 如果这对你很重要[，Graph](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph)或打开 Microsoft Graph功能请求。
 
 ---
 
@@ -265,7 +334,7 @@ var graphClient = new GraphServiceClient(authProvider);
 
 # <a name="javascript"></a>[Javascript](#tab/Javascript)
 
-授权代码、客户端凭据和代表 OAuth 流目前要求您实现自定义身份验证提供程序。 有关详细信息 [，请参阅](https://github.com/microsoftgraph/msgraph-sdk-javascript/blob/dev/docs/CustomAuthenticationProvider.md) 使用自定义验证提供程序。
+代表 OAuth 流目前要求您实现自定义身份验证提供程序。 有关详细信息 [，请参阅](https://github.com/microsoftgraph/msgraph-sdk-javascript/blob/dev/docs/CustomAuthenticationProvider.md) 使用自定义验证提供程序。
 
 # <a name="java"></a>[Java](#tab/Java)
 
@@ -291,55 +360,7 @@ var graphClient = new GraphServiceClient(authProvider);
 
 ## <a name="implicit-provider"></a>隐式提供程序
 
-隐式授予流用于基于浏览器的应用程序。 有关详细信息，请参阅Microsoft 标识平台[和隐式授予流](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow)。
-
-# <a name="c"></a>[C#](#tab/CS)
-
-不适用。
-
-# <a name="javascript"></a>[Javascript](#tab/Javascript)
-
-```javascript
-const clientId = "your_client_id"; // Client Id of the registered application
-const callback = (errorDesc, token, error, tokenType) => {};
-// An Optional options for initializing the MSAL @see https://github.com/AzureAD/microsoft-authentication-library-for-js/wiki/MSAL-basics#configuration-options
-const options = {
-  redirectUri: "Your redirect URI",
-};
-const graphScopes = ["user.read", "mail.send"]; // An array of graph scopes
-
-// Initialize the MSAL @see https://github.com/AzureAD/microsoft-authentication-library-for-js/wiki/MSAL-basics#initialization-of-msal
-const userAgentApplication = new Msal.UserAgentApplication(clientId, undefined, callback, options);
-const authProvider = new MicrosoftGraph.ImplicitMSALAuthenticationProvider(userAgentApplication, graphScopes);
-
-const options = {
-  authProvider, // An instance created from previous step
-};
-const Client = MicrosoftGraph.Client;
-const client = Client.initWithMiddleware(options);
-```
-
-# <a name="java"></a>[Java](#tab/Java)
-
-不适用。
-
-# <a name="android"></a>[Android](#tab/Android)
-
-不适用。
-
-# <a name="objective-c"></a>[Objective-C](#tab/Objective-C)
-
-不适用。
-
-# <a name="php"></a>[PHP](#tab/PHP)
-
-不适用。
-
-# <a name="ruby"></a>[Ruby](#tab/Ruby)
-
-不适用。
-
----
+由于存在隐式身份验证流的缺点， [因此不建议使用隐式身份验证流](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps-04#section-9.8.6)。 公共客户端（如本机应用和 JavaScript 应用）现在应该改为将授权代码流与 PKCE 扩展一同使用。 [参考](https://oauth.net/2/grant-types/implicit/)。
 
 ## <a name="device-code-provider"></a>设备代码提供程序
 
@@ -379,7 +400,28 @@ var graphClient = new GraphServiceClient(deviceCodeCredential, scopes);
 
 # <a name="javascript"></a>[Javascript](#tab/Javascript)
 
-尚不可用。 请投票支持或打开[Microsoft Graph功能](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph)请求（如果这对你很重要）。
+```javascript
+const {
+    Client
+} = require("@microsoft/microsoft-graph-client");
+const {
+    TokenCredentialAuthenticationProvider
+} = require("@microsoft/microsoft-graph-client/authProviders/azureTokenCredentials");
+const {
+    DeviceCodeCredential
+} = require("@azure/identity");
+
+const credential = new DeviceCodeCredential(tenantId, clientId, clientSecret);
+const authProvider = new TokenCredentialAuthenticationProvider(credential, {
+    scopes: [scopes]
+});
+
+const client = Client.initWithMiddleware({
+    debugLogging: true,
+    authProvider
+    // Use the authProvider object to create the class.
+});
+```
 
 # <a name="java"></a>[Java](#tab/Java)
 
@@ -422,7 +464,7 @@ final User me = graphClient.me().buildRequest().get();
 
 ## <a name="integrated-windows-provider"></a>集成Windows提供程序
 
-集成Windows流为Windows计算机提供了一种在加入域时以静默方式获取访问令牌的方法。 有关详细信息，请参阅集成身份验证[Windows身份验证](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Integrated-Windows-Authentication)。
+集成Windows流为Windows加入域时以静默方式获取访问令牌提供了一种方法。 有关详细信息，请参阅集成Windows[身份验证](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Integrated-Windows-Authentication)。
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -581,7 +623,7 @@ MSALAuthenticationProviderOptions *authProviderOptions= [[MSALAuthenticationProv
 
 ## <a name="usernamepassword-provider"></a>用户名/密码提供程序
 
-用户名/密码提供程序允许应用程序使用用户的用户名和密码登录。 只有在不能使用任何其他 OAuth 流时，才使用此流。 有关详细信息，请参阅Microsoft 标识平台[OAuth 2.0 资源所有者密码凭据](/azure/active-directory/develop/v2-oauth-ropc)
+用户名/密码提供程序允许应用程序使用用户的用户名和密码登录。 只有在不能使用任何其他 OAuth 流时，才使用此流。 有关详细信息，请参阅 Microsoft 标识平台[和 OAuth 2.0 资源所有者密码凭据](/azure/active-directory/develop/v2-oauth-ropc)
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -655,4 +697,4 @@ final User me = graphClient.me().buildRequest().get();
 
 * 有关显示如何使用 Microsoft 标识平台 保护不同应用程序类型的代码示例，请参阅 Microsoft 标识平台[v2.0 终结点 (代码) 。 ](/azure/active-directory/develop/sample-v2-code)
 * 身份验证提供程序需要客户端 ID。 设置身份验证 [提供程序后](https://portal.azure.com/) ，需要注册应用程序。
-* 通过投票或打开 Microsoft Graph请求，请告诉我们所需的 OAuth[流当前是否受支持](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph)。
+* 通过投票或打开 Microsoft Graph请求，请告诉我们所需的[OAuth 流当前是否受支持](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph)。

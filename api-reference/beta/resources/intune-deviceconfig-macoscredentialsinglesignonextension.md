@@ -1,26 +1,26 @@
 ---
 title: macOSCredentialSingleSignOnExtension 资源类型
-description: 表示 macOS 设备的凭据类型单一 Sign-On 扩展配置文件。
+description: 表示 macOS 设备的 Credential 类型单Sign-On扩展配置文件。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 154718699b15187cad409538d90912b4cfdf7708
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 3e30226ff54278dcdcd2d98257ffd5383418455c5ac077e024cdcf63f1bddb9a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49268704"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54206590"
 ---
 # <a name="macoscredentialsinglesignonextension-resource-type"></a>macOSCredentialSingleSignOnExtension 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-表示 macOS 设备的凭据类型单一 Sign-On 扩展配置文件。
+表示 macOS 设备的 Credential 类型单Sign-On扩展配置文件。
 
 
 继承自 [macOSSingleSignOnExtension](../resources/intune-deviceconfig-macossinglesignonextension.md)
@@ -28,11 +28,11 @@ ms.locfileid: "49268704"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|extensionIdentifier|字符串|获取或设置对指定 Url 执行 SSO 的应用扩展的捆绑包 ID。|
-|teamIdentifier|字符串|获取或设置为指定的 Url 执行 SSO 的应用程序扩展的团队 ID。|
-|域|String 集合|获取或设置应用程序扩展为其执行 SSO 的主机名或域名的列表。|
-|型|字符串|获取或设置此配置文件的区分大小写的领域名称。|
-|配置|[keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md) 集合|获取或设置用于配置凭据类型配置文件的类型键/值对的列表。 该集合最多可包含 500 个元素。|
+|extensionIdentifier|字符串|获取或设置为指定 URL 执行 SSO 的应用扩展的捆绑 ID。|
+|teamIdentifier|String|获取或设置为指定 URL 执行 SSO 的应用扩展的团队 ID。|
+|domains|String collection|获取或设置应用扩展执行 SSO 的主机或域名的列表。|
+|realm|字符串|获取或设置此配置文件的区分大小写的领域名称。|
+|配置|[keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md) 集合|获取或设置用于配置凭据类型配置文件的键入键值对的列表。 该集合最多可包含 500 个元素。|
 
 ## <a name="relationships"></a>关系
 无

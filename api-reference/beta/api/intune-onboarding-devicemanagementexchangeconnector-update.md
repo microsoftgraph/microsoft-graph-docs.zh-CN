@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 990a78d6c50e1c6669ee900a5155b919381c459f
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 4043378aa86f09044638a9a65e69067be0f43f8bbcbaae033bdadeaecc0748e9
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51156931"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54123088"
 ---
 # <a name="update-devicemanagementexchangeconnector"></a>更新 deviceManagementExchangeConnector
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -55,9 +55,9 @@ PATCH /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}
 |:---|:---|:---|
 |id|String|尚未记录|
 |lastSyncDateTime|DateTimeOffset|Exchange Connector 的上一次同步时间|
-|status|[deviceManagementExchangeConnectorStatus](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|Exchange 连接器状态。 可取值为：`none`、`connectionPending`、`connected`、`disconnected`。|
+|status|[deviceManagementExchangeConnectorStatus](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|Exchange连接器状态。 可取值为：`none`、`connectionPending`、`connected`、`disconnected`。|
 |primarySmtpAddress|String|用于配置服务到服务 Exchange Connector 的电子邮件地址。|
-|serverName|String|Exchange 服务器的名称。|
+|serverName|String|服务器的名称Exchange服务器。|
 |connectorServerName|String|托管 Exchange Connector 的服务器的名称。|
 |exchangeConnectorType|[deviceManagementExchangeConnectorType](../resources/intune-onboarding-devicemanagementexchangeconnectortype.md)|配置的 Exchange Connector 的类型。 可取值为：`onPremises`、`hosted`、`serviceToService`、`dedicated`。|
 |version|String|ExchangeConnectorAgent 版本|

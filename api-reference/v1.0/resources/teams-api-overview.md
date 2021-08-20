@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: f672d9462f6b1df8589747d9dbeb0254098aa70d
-ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
+ms.openlocfilehash: 764b659d16c197fca4d4398ca7b73ad4fad4e59f
+ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58397010"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58384490"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>将 Microsoft Graph API 与 Microsoft Teams 结合使用
 
@@ -70,10 +70,30 @@ Microsoft Teams 的已测试性能和容量限制将记录在 [Microsoft Teams �
 
 | 用例      | 谓词      | URL |
 | ------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [添加成员](../api/team-post-members.md) | POST      | /teams/{team-id}/members  |
-| [删除成员](../api/team-delete-members.md)    | DELETE    | /teams/{team-id}/members/{membership-id} |
-| [更新成员角色](../api/team-update-members.md) | PATCH | /teams/{team-id}/members/{membership-id} |
-| [更新团队](../api/team-update.md)  | PATCH     | /teams/{team-id} |
+| [添加成员](../api/team-post-members.md) | POST      | /teams/{id}/members  |
+| [删除成员](../api/team-delete-members.md)    | DELETE    | /teams/{id}/members/{userId} |
+| [更新成员角色](../api/team-update-members.md) | PATCH | /teams/{id}/members/{userId} |
+| [更新团队](../api/team-update.md)  | PATCH     | /teams/{id} |
+
+在添加和移除成员和所有者时，请勿在 ID 两边添加大括号 { }。
+
+| 速度 | 语法 |
+| ------ | ----- |
+| 快速 | `https://graph.microsoft.com/beta/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/members/48d31887-5fad-4d73-a9f5-3c356e68a038/$ref` |
+| 慢速 | `https://graph.microsoft.com/beta/groups/{02bd9fd6-8f93-4758-87c3-1fb73740a315}/members/{48d31887-5fad-4d73-a9f5-3c356e68a038}/$ref` |
+
+同样，如果 URL 或有效负载中的 `userId` 显示为 UPN 而不是 GUID，则性能会变慢。
+
+| 速度 | 语法 |
+| ------ | ----- |
+| 快速 | 48d31887-5fad-4d73-a9f5-3c356e68a038 |
+| 慢速 | john@example.com |
+
+当采用较慢的路径时，如果当前团队成员或所有者登录到 Microsoft Teams 应用程序/网站，则更改将在一小时内反映出来。
+如果这些用户都未登录到 Microsoft Teams 应用程序/网站，则更改将在其中一个用户登录后一小时内反映出来。
+
+> [!Note]
+> 租户来宾始终通过慢速路径进行处理。
 
 ## <a name="polling-requirements"></a>轮询要求
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b3ba46583fd770bab0d0a418b7ee749c058dc01f
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 215e39ff34717599c8d66a32a25e62f4b2a6eaa1
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52665739"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58262345"
 ---
 # <a name="get-aospdeviceownercompliancepolicy"></a>获取 aospDeviceOwnerCompliancePolicy
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 820
+Content-Length: 865
 
 {
   "value": {
@@ -85,6 +85,7 @@ Content-Length: 820
     "osMinimumVersion": "Os Minimum Version value",
     "osMaximumVersion": "Os Maximum Version value",
     "minAndroidSecurityPatchLevel": "Min Android Security Patch Level value",
+    "securityBlockJailbrokenDevices": true,
     "passwordRequired": true,
     "passwordRequiredType": "required",
     "passwordMinutesOfInactivityBeforeLock": 5,
