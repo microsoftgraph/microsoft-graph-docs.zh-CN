@@ -5,12 +5,12 @@ localization_priority: Priority
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6543311db4ee40b1b4a00292c7481bd6e834555d
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 485f571d1d581d8448005c9a635226bfc7767aa4
+ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786262"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58396723"
 ---
 # <a name="add-group-owner"></a>添加组所有者
 
@@ -93,6 +93,11 @@ Content-length: 30
 ```http
 HTTP/1.1 204 No Content
 ```
+
+## <a name="see-also"></a>另请参阅
+- [添加成员至团队](team-post-members.md)
+- [更新成员在团队中的角色](team-update-members.md)
+- [从团队删除成员](team-delete-members.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

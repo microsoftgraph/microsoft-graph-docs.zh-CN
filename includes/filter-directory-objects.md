@@ -1,103 +1,166 @@
-| 属性                                               | eq                   | ne                | NOT               | ge                   | le                   | in                   | startsWith           | 空值          |
-|--------------------------------------------------------|----------------------|-------------------|-------------------|----------------------|----------------------|----------------------|----------------------|----------------------|
-| accountEnabled                                         | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] |                      |                      | ![默认值。][default] |                      |                      |
-| ageGroup                                               | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] |                      |                      | ![默认值。][default] |                      |                      |
-| alternativeNames                                       | ![默认值。][default] |                   | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] |                      | ![默认值。][default] |                      |
-| alternativeSecurityIds {identityProvider}              | ![高级。][AQP]    |                   | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    |                      |                      |                      |
-| applicationTemplateId                                  | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] |                      |                      |                      | ![高级。][AQP]    |                      |
-| appOwnerOrganizationId                                 | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    |                      |                      |                      |
-| appRoleAssignmentRequired                              | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] |                      |                      |                      |                      |                      |
-| approximateLastSignInDateTime                          | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] |                      |                      | ![高级。][AQP]    |
-| assignedLicenses {skuId}（组）                      | ![默认值。][default] |                   |                   |                      |                      |                      |                      |                      |
-| assignedLicenses {skuId}（用户）                       | ![默认值。][default] |                   | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    |                      |                      |                      |
-| assignedPlans {capabilityStatus}                       | ![高级。][AQP]    |                   | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    |                      |                      |                      |
-| assignedPlans {service}                                | ![高级。][AQP]    |                   | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    |                      |                      |                      |
-| assignedPlans {servicePlanId}                          | ![高级。][AQP]    |                   | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    |                      |                      |                      |
-| businessPhones                                         | ![高级。][AQP]    |                   | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    |                      | ![高级。][AQP]    |                      |
-| 城市                                                   | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![高级。][AQP]    |
-| 分类                                         | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] |                      | ![默认值。][default] |                      |
-| companyName                                            | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    |
-| consentProvidedForMinor                                | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] |                      |                      | ![默认值。][default] |                      |                      |
-| 国家/地区                                                | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![高级。][AQP]    |
-| createdDateTime                                        | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![高级。][AQP]    |                      | ![高级。][AQP]    |
-| creationType                                           | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] |                      |                      | ![默认值。][default] |                      |                      |
-| customerId                                             | ![默认值。][default] |                   |                   | ![默认值。][default] | ![默认值。][default] |                      |                      |                      |
-| defaultDomainName                                      | ![默认值。][default] |                   |                   | ![默认值。][default] | ![默认值。][default] |                      | ![默认值。][default] |                      |
-| deletedDateTime                                        | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![高级。][AQP]    |                      |                      |
-| 部门                                             | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![高级。][AQP]    |
-| 说明                                            | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    |                      | ![高级。][AQP]    |                      |
-| deviceId                                               | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] |                      |                      |                      | ![高级。][AQP]    |                      |
-| disabledByMicrosoftStatus                              | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] |                      |                      |                      |                      |                      |
-| displayName                                            | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![高级。][AQP]    |
-| employeeHireDate                                       | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    |                      |                      |
-| employeeId                                             | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![高级。][AQP]    |
-| employeeOrgData {costCenter}                           | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    |                      |                      |
-| employeeOrgData {division}                             | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    |                      |                      |
-| employeeType                                           | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    |                      |
-| expirationDateTime                                     | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    |                      |                      |
-| externalUserState                                      | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] |                      |                      |                      |                      |                      |
-| faxNumber                                              | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    |
-| givenName                                              | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![高级。][AQP]    |
-| hasMembersWithLicenseErrors                            | ![默认值。][default] |                   |                   |                      |                      |                      |                      | ![默认值。][default] |
-| id                                                     | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] |                      |                      | ![默认值。][default] |                      |                      |
-| identifierUris                                         | ![默认值。][default] | ![高级。][AQP] |                   | ![默认值。][default] | ![默认值。][default] |                      | ![默认值。][default] |                      |
-| identities {issuer}                                    | ![默认值。][default] |                   |                   |                      |                      |                      |                      | ![默认值。][default] |
-| imAddresses                                            | ![默认值。][default] |                   | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] |                      | ![默认值。][default] |                      |
-| 信息 {logoUrl}                                         |                      |                   |                   |                      |                      |                      |                      | ![高级。][AQP]    |
-| 信息 {termsOfServiceUrl}                               | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    |                      |                      |                      |
-| infoCatalogs                                           | ![默认值。][default] |                   | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] |                      | ![默认值。][default] |                      |
-| isAssignableToRole                                     | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] |                      |                      |                      |                      |                      |
-| isCompliant                                            | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] |                      |                      |                      |                      |                      |
-| isManaged                                              | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] |                      |                      |                      |                      |                      |
-| isResourceAccount                                      | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] |                      |                      |                      |                      |                      |
-| jobTitle                                               | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![高级。][AQP]    |
-| keyCredentials {endDateTime}                           | ![高级。][AQP]    |                   | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    |                      |                      |                      |
-| 邮件                                                   | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![高级。][AQP]    |
-| mailEnabled                                            | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] |                      |                      |                      |                      |                      |
-| mailNickname                                           | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![高级。][AQP]    |
-| mdmAppId                                               | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] |                      |                      |                      | ![高级。][AQP]    |                      |
-| membershipRule                                         | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] |                      | ![默认值。][default] |                      |
-| mobilePhone                                            | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    |
-| officeLocation                                         | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    |
-| onPremisesExtensionAttributes {extensionAttribute1-15} | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    |                      | ![高级。][AQP]    |
-| onPremisesImmutableId                                  | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] |                      |
-| onPremisesLastSyncDateTime                             | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] |                      |                      |
-| onPremisesProvisioningErrors {category}                | ![默认值。][default] |                   | ![高级。][AQP] |                      |                      |                      |                      |                      |
-| onPremisesProvisioningErrors {propertyCausingError}    | ![默认值。][default] |                   | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    |                      |                      |                      |
-| onPremisesSamAccountName                               | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    |                      |
-| onPremisesSecurityIdentifier                           |                      |                   |                   |                      |                      |                      |                      | ![高级。][AQP]    |
-| onPremisesSyncEnabled                                  | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] |                      |                      | ![默认值。][default] |                      |                      |
-| onPremisesUserPrincipalName                            | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] |                      |
-| operatingSystem                                        | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] |                      | ![默认值。][default] | ![高级。][AQP]    |
-| operatingSystemVersion                                 | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] |                      | ![默认值。][default] | ![高级。][AQP]    |
-| otherMails                                             | ![默认值。][default] |                   | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] |                      |
-| passwordPolicies                                       |                      | ![高级。][AQP] | ![高级。][AQP] |                      |                      |                      |                      | ![高级。][AQP]    |
-| passwordProfile {forceChangePasswordNextSignIn}        | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] |                      |                      | ![高级。][AQP]    |                      | ![高级。][AQP]    |
-| passwordProfile {forceChangePasswordNextSignInWithMfa} | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] |                      |                      | ![高级。][AQP]    |                      | ![高级。][AQP]    |
-| physicalIds                                            | ![默认值。][default] |                   | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] |                      | ![默认值。][default] |                      |
-| postalCode                                             | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    |
-| preferredLanguage                                      | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    |
-| provisionedPlans {provisioningStatus}（用户）           | ![高级。][AQP]    |                   | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    |                      |                      |                      |
-| provisionedPlans {service}（用户）                      | ![高级。][AQP]    |                   | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    |                      |                      |                      |
-| proxyAddresses                                         | ![默认值。][default] |                   | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] |                      | ![默认值。][default] |                      |
-| publisherDomain                                        | ![默认值。][default] | ![高级。][AQP] |                   | ![默认值。][default] | ![默认值。][default] |                      | ![默认值。][default] |                      |
-| renewedDateTime                                        | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] |                      |                      |
-| requiredResourceAccess {resourceAppId}                 | ![高级。][AQP]    |                   | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    |                      |                      |                      |
-| roleTemplateId                                         | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] |                      |                      |                      | ![高级。][AQP]    |                      |
-| securityEnabled                                        | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] |                      |                      | ![默认值。][default] |                      |                      |
-| servicePrincipalNames                                  | ![默认值。][default] |                   | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] |                      | ![默认值。][default] |                      |
-| showInAddressList                                      | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] |                      |                      | ![高级。][AQP]    |                      |                      |
-| signInActivity                                         | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] |                      |                      |                      |
-| signInAudience                                         | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] |                      |                      | ![默认值。][default] |                      |                      |
-| 州                                                  | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![高级。][AQP]    |
-| 街道                                                 |                      |                   |                   |                      |                      |                      |                      |                      |
-| streetAddress                                          | ![高级。][AQP]    | ![高级。][AQP] | ![高级。][AQP] | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    | ![高级。][AQP]    |
-| 姓氏                                                | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![高级。][AQP]    |
-| 标记                                                   | ![默认值。][default] |                   | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] |                      | ![默认值。][default] |                      |
-| usageLocation                                          | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![高级。][AQP]    |
-| userPrincipalName                                      | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] | ![默认值。][default] |                      |
-| userType                                               | ![默认值。][default] | ![高级。][AQP] | ![高级。][AQP] |                      |                      | ![默认值。][default] |                      | ![高级。][AQP]    |
+### <a name="application-properties"></a>应用程序属性
+
+| 名称                          | eq                                         | startsWith                                 | ge                                         | le                                         | Null 值                                 |
+| --------------------------------------------- | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ |
+| appId                                         | ![默认支持][RDS]               |                                            |                                            |                                            | ![不支持][NS]                       |
+| applicationTemplateId                         | ![默认支持][RDS]               |                                            |                                            |                                            | ![不支持][NS]                       |
+| createdDateTime                               | ![默认支持][RDS]               |                                            | ![默认支持][RDS]               | ![默认支持][RDS]               | ![需要高级查询参数。][AQP] |
+| createdOnBehalfOf/deletedDateTime             | ![默认支持][RDS]               |                                            | ![默认支持][RDS]               | ![默认支持][RDS]               | ![不支持][NS]                       |
+| 说明                                   | ![需要高级查询参数。][AQP] | ![需要高级查询参数。][AQP] |                                            |                                            | ![不支持][NS]                       |
+| disabledByMicrosoftStatus                     | ![默认支持][RDS]               |                                            |                                            |                                            | ![不支持][NS]                       |
+| displayName                                   | ![默认支持][RDS]               | ![默认支持][RDS]               |                                            |                                            | ![需要高级查询参数。][AQP] |
+| info/logoUrl                                  | ![不支持][NS]                       | ![不支持][NS]                       |                                            |                                            | ![需要高级查询参数。][AQP] |
+| info/termsOfServiceUrl                        | ![需要高级查询参数。][AQP] | ![不支持][NS]                       |                                            |                                            | ![不支持][NS]                       |
+| keyCredentials/any(k:k/endDateTime)           | ![需要高级查询参数。][AQP] |                                            | ![需要高级查询参数。][AQP] | ![需要高级查询参数。][AQP] | ![不支持][NS]                       |
+| publisherDomain                               | ![默认支持][RDS]               | ![默认支持][RDS]               |                                            |                                            | ![不支持][NS]                       |
+| requiredResourceAccess/any(r:r/resourceAppId) | ![需要高级查询参数。][AQP] |                                            |                                            |                                            | ![不支持][NS]                       |
+| signInAudience                                | ![默认支持][RDS]               |                                            |                                            |                                            | ![不支持][NS]                       |
 
 
-[AQP]: /graph/images/advanced-query-parameters/advanced.png
-[default]: /graph/images/advanced-query-parameters/default.png
+### <a name="service-principal-properties"></a>服务主体属性
+
+| 属性           | eq                                         | startsWith                                 | ge                                         | le                                         | Null 值                                 |
+| ----------------------------------- | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ |
+| accountEnabled                      | ![默认支持][RDS]               |                                            |                                            |                                            | ![不支持][NS]                       |
+| appId                               | ![默认支持][RDS]               |                                            |                                            |                                            | ![不支持][NS]                       |
+| applicationTemplateId               | ![默认支持][RDS]               |                                            |                                            |                                            | ![不支持][NS]                       |
+| appOwnerOrganizationId              | ![需要高级查询参数。][AQP] |                                            |                                            |                                            | ![不支持][NS]                       |
+| appRoleAssignmentRequired           | ![需要高级查询参数。][AQP] |                                            |                                            |                                            | ![不支持][NS]                       |
+| createdObjects/any(c:c/id)          | ![需要高级查询参数。][AQP] |                                            |                                            |                                            | ![不支持][NS]                       |
+| 说明                         | ![需要高级查询参数。][AQP] | ![需要高级查询参数。][AQP] |                                            |                                            | ![不支持][NS]                       |
+| displayName                         | ![默认支持][RDS]               | ![默认支持][RDS]               |                                            |                                            | ![需要高级查询参数。][AQP] |
+| info/logoUrl                        | ![不支持][NS]                       | ![不支持][NS]                       |                                            |                                            | ![需要高级查询参数。][AQP] |
+| info/termsOfServiceUrl              | ![需要高级查询参数。][AQP] | ![不支持][NS]                       |                                            |                                            | ![不支持][NS]                       |
+| keyCredentials/any(k:k/endDateTime) | ![需要高级查询参数。][AQP] |                                            | ![需要高级查询参数。][AQP] | ![需要高级查询参数。][AQP] | ![不支持][NS]                       |
+
+
+
+### <a name="device-properties"></a>设备属性
+
+| 属性                                  | eq                                         | startsWith                   | ge                                         | le                                         | Null 值                                 |
+| ------------------------------------------------ | ------------------------------------------ | ---------------------------- | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ |
+| accountEnabled                                   | ![默认支持][RDS]               |                              |                                            |                                            | ![不支持][NS]                       |
+| alternativeSecurityIds/any(a:a/identityProvider) | ![需要高级查询参数。][AQP] | ![不支持][NS]         |                                            |                                            | ![不支持][NS]                       |
+| alternativeSecurityIds/any(a:a/type)             | ![默认支持][RDS]               |                              | ![需要高级查询参数。][AQP] | ![需要高级查询参数。][AQP] | ![不支持][NS]                       |
+| approximateLastSignInDateTime                    | ![默认支持][RDS]               |                              | ![默认支持][RDS]               | ![默认支持][RDS]               | ![需要高级查询参数。][AQP] |
+| deviceId                                         | ![默认支持][RDS]               |                              |                                            |                                            | ![不支持][NS]                       |
+| displayName                                      | ![默认支持][RDS]               | ![默认支持][RDS] |                                            |                                            | ![需要高级查询参数。][AQP] |
+| isCompliant                                      | ![默认支持][RDS]               |                              |                                            |                                            | ![不支持][NS]                       |
+| isManaged                                        | ![默认支持][RDS]               |                              |                                            |                                            | ![不支持][NS]                       |
+| mdmAppId                                         | ![默认支持][RDS]               |                              |                                            |                                            | ![不支持][NS]                       |
+| onPremisesLastSyncDateTime                       | ![默认支持][RDS]               |                              | ![默认支持][RDS]               | ![默认支持][RDS]               | ![不支持][NS]                       |
+| onPremisesSyncEnabled                            | ![默认支持][RDS]               |                              |                                            |                                            | ![需要高级查询参数。][AQP] |
+| operatingSystem                                  | ![默认支持][RDS]               | ![默认支持][RDS] |                                            |                                            | ![需要高级查询参数。][AQP] |
+| operatingSystemVersion                           | ![默认支持][RDS]               | ![默认支持][RDS] |                                            |                                            | ![需要高级查询参数。][AQP] |
+
+
+
+### <a name="group-properties"></a>组属性
+
+| 属性                                             | eq                                         | startsWith                                 | ge                                         | le                                         | Null 值                                 |
+| ---------------------------------------------------------- | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ |
+| assignedLicenses/any(a:a/skuId)                            | ![默认支持][RDS]               |                                            |                                            |                                            | ![不支持][NS]                       |
+| classification                                             | ![默认支持][RDS]               | ![默认支持][RDS]               |                                            |                                            | ![不支持][NS]                       |
+| createdOnBehalfOf/deletedDateTime                          | ![默认支持][RDS]               |                                            | ![默认支持][RDS]               | ![默认支持][RDS]               | ![不支持][NS]                       |
+| 说明                                                | ![需要高级查询参数。][AQP] | ![需要高级查询参数。][AQP] |                                            |                                            | ![不支持][NS]                       |
+| displayName                                                | ![默认支持][RDS]               | ![默认支持][RDS]               |                                            |                                            | ![需要高级查询参数。][AQP] |
+| expirationDateTime                                         | ![需要高级查询参数。][AQP] |                                            | ![需要高级查询参数。][AQP] | ![需要高级查询参数。][AQP] | ![不支持][NS]                       |
+| hasMembersWithLicenseErrors                                | ![默认支持][RDS]               |                                            |                                            |                                            | ![默认支持][RDS]               |
+| mail                                                       | ![默认支持][RDS]               | ![默认支持][RDS]               |                                            |                                            | ![需要高级查询参数。][AQP] |
+| mailEnabled                                                | ![默认支持][RDS]               |                                            |                                            |                                            | ![不支持][NS]                       |
+| mailNickname                                               | ![默认支持][RDS]               | ![默认支持][RDS]               |                                            |                                            | ![需要高级查询参数。][AQP] |
+| membershipRule                                             | ![默认支持][RDS]               | ![默认支持][RDS]               |                                            |                                            | ![不支持][NS]                       |
+| onPremisesLastSyncDateTime                                 | ![默认支持][RDS]               |                                            | ![默认支持][RDS]               | ![默认支持][RDS]               | ![不支持][NS]                       |
+| onPremisesProvisioningErrors/any(o:o/category)             | ![默认支持][RDS]               |                                            |                                            |                                            | ![不支持][NS]                       |
+| onPremisesProvisioningErrors/any(o:o/propertyCausingError) | ![默认支持][RDS]               |                                            |                                            |                                            | ![不支持][NS]                       |
+| onPremisesSamAccountName                                   | ![需要高级查询参数。][AQP] | ![需要高级查询参数。][AQP] |                                            |                                            | ![不支持][NS]                       |
+| onPremisesSecurityIdentifier                               | ![不支持][NS]                       |                                            |                                            |                                            | ![需要高级查询参数。][AQP] |
+| onPremisesSyncEnabled                                      | ![默认支持][RDS]               |                                            |                                            |                                            | ![需要高级查询参数。][AQP] |
+| preferredLanguage                                          | ![需要高级查询参数。][AQP] | ![需要高级查询参数。][AQP] |                                            |                                            | ![需要高级查询参数。][AQP] |
+| renewedDateTime                                            | ![默认支持][RDS]               |                                            | ![默认支持][RDS]               | ![默认支持][RDS]               | ![不支持][NS]                       |
+| securityEnabled                                            | ![默认支持][RDS]               |                                            |                                            |                                            | ![不支持][NS]                       |
+
+
+
+### <a name="organizational-contact-properties"></a>组织联系人属性
+
+| 属性                                           | eq                                         | startsWith                                 | ge                           | le                           | Null 值                                 |
+| ---------------------------------------------------------- | ------------------------------------------ | ------------------------------------------ | ---------------------------- | ---------------------------- | ------------------------------------------ |
+| companyName                                                | ![需要高级查询参数。][AQP] | ![需要高级查询参数。][AQP] |                              |                              | ![需要高级查询参数。][AQP] |
+| department                                                 | ![默认支持][RDS]               | ![默认支持][RDS]               |                              |                              | ![需要高级查询参数。][AQP] |
+| displayName                                                | ![默认支持][RDS]               | ![默认支持][RDS]               |                              |                              | ![需要高级查询参数。][AQP] |
+| givenName                                                  | ![默认支持][RDS]               | ![默认支持][RDS]               |                              |                              | ![需要高级查询参数。][AQP] |
+| jobTitle                                                   | ![默认支持][RDS]               | ![默认支持][RDS]               |                              |                              | ![需要高级查询参数。][AQP] |
+| mail                                                       | ![默认支持][RDS]               | ![默认支持][RDS]               |                              |                              | ![需要高级查询参数。][AQP] |
+| mailNickname                                               | ![默认支持][RDS]               | ![默认支持][RDS]               |                              |                              | ![需要高级查询参数。][AQP] |
+| onPremisesLastSyncDateTime                                 | ![默认支持][RDS]               |                                            | ![默认支持][RDS] | ![默认支持][RDS] | ![不支持][NS]                       |
+| onPremisesProvisioningErrors/any(o:o/category)             | ![默认支持][RDS]               |                                            |                              |                              | ![不支持][NS]                       |
+| onPremisesProvisioningErrors/any(o:o/propertyCausingError) | ![默认支持][RDS]               |                                            |                              |                              | ![不支持][NS]                       |
+| onPremisesSyncEnabled                                      | ![默认支持][RDS]               |                                            |                              |                              | ![需要高级查询参数。][AQP] |
+| surname                                                    | ![默认支持][RDS]               | ![默认支持][RDS]               |                              |                              | ![需要高级查询参数。][AQP] |
+
+
+
+
+### <a name="user-properties"></a>用户属性
+
+| 属性                                              | eq                                         | startsWith                                 | ge                                         | le                                         | Null 值                                 |
+| ---------------------------------------------------------- | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ |
+| accountEnabled                                             | ![默认支持][RDS]               |                                            |                                            |                                            | ![不支持][NS]                       |
+| ageGroup                                                   | ![默认支持][RDS]               |                                            |                                            |                                            | ![不支持][NS]                       |
+| assignedLicenses/any (a：a/skuId)                             | ![默认支持][RDS]               |                                            |                                            |                                            | ![不支持][NS]                       |
+| assignedPlans/any(a:a/capabilityStatus)                    | ![需要高级查询参数。][AQP] |                                            |                                            |                                            | ![不支持][NS]                       |
+| assignedPlans/any(a:a/service)                             | ![需要高级查询参数。][AQP] | ![不支持][NS]                       |                                            |                                            | ![不支持][NS]                       |
+| assignedPlans/any(a:a/servicePlanId)                       | ![需要高级查询参数。][AQP] |                                            |                                            |                                            | ![不支持][NS]                       |
+| 城市                                                       | ![默认支持][RDS]               | ![默认支持][RDS]               |                                            |                                            | ![需要高级查询参数。][AQP] |
+| companyName                                                | ![需要高级查询参数。][AQP] | ![需要高级查询参数。][AQP] |                                            |                                            | ![需要高级查询参数。][AQP] |
+| consentProvidedForMinor                                    | ![默认支持][RDS]               |                                            |                                            |                                            | ![不支持][NS]                       |
+| 国家                                                    | ![默认支持][RDS]               | ![默认支持][RDS]               |                                            |                                            | ![需要高级查询参数。][AQP] |
+| createdDateTime                                            | ![需要高级查询参数。][AQP] |                                            | ![需要高级查询参数。][AQP] | ![需要高级查询参数。][AQP] | ![不支持][NS]                       |
+| createdObjects/any(c:c/id)                                 | ![需要高级查询参数。][AQP] |                                            |                                            |                                            | ![不支持][NS]                       |
+| creationType                                               | ![默认支持][RDS]               |                                            |                                            |                                            | ![不支持][NS]                       |
+| department                                                 | ![默认支持][RDS]               | ![默认支持][RDS]               |                                            |                                            | ![需要高级查询参数。][AQP] |
+| displayName                                                | ![默认支持][RDS]               | ![默认支持][RDS]               |                                            |                                            | ![需要高级查询参数。][AQP] |
+| employeeHireDate                                           | ![需要高级查询参数。][AQP] |                                            | ![需要高级查询参数。][AQP] | ![需要高级查询参数。][AQP] | ![不支持][NS]                       |
+| employeeId                                                 | ![默认支持][RDS]               |                                            |                                            |                                            | ![需要高级查询参数。][AQP] |
+| employeeOrgData/costCenter                                 | ![需要高级查询参数。][AQP] | ![不支持][NS]                       |                                            |                                            | ![不支持][NS]                       |
+| employeeOrgData/division                                   | ![需要高级查询参数。][AQP] | ![不支持][NS]                       |                                            |                                            | ![不支持][NS]                       |
+| employeeType                                               | ![需要高级查询参数。][AQP] |                                            |                                            |                                            | ![不支持][NS]                       |
+| externalUserState                                          | ![默认支持][RDS]               |                                            |                                            |                                            | ![不支持][NS]                       |
+| externalUserStateChangeDateTime                            | ![默认支持][RDS]               |                                            | ![默认支持][RDS]               | ![默认支持][RDS]               | ![不支持][NS]                       |
+| faxNumber                                                  | ![需要高级查询参数。][AQP] | ![需要高级查询参数。][AQP] |                                            |                                            | ![需要高级查询参数。][AQP] |
+| givenName                                                  | ![默认支持][RDS]               | ![默认支持][RDS]               |                                            |                                            | ![需要高级查询参数。][AQP] |
+| identities/any(i:i/issuer)                                 | ![默认支持][RDS]               | ![不支持][NS]                       |                                            |                                            | ![默认支持][RDS]               |
+| isResourceAccount                                          | ![默认支持][RDS]               |                                            |                                            |                                            | ![不支持][NS]                       |
+| jobTitle                                                   | ![默认支持][RDS]               | ![默认支持][RDS]               |                                            |                                            | ![需要高级查询参数。][AQP] |
+| mail                                                       | ![默认支持][RDS]               | ![默认支持][RDS]               |                                            |                                            | ![需要高级查询参数。][AQP] |
+| mailNickname                                               | ![默认支持][RDS]               | ![默认支持][RDS]               |                                            |                                            | ![需要高级查询参数。][AQP] |
+| manager/deletedDateTime                                    | ![默认支持][RDS]               |                                            | ![默认支持][RDS]               | ![默认支持][RDS]               | ![不支持][NS]                       |
+| mobilePhone                                                | ![需要高级查询参数。][AQP] | ![需要高级查询参数。][AQP] |                                            |                                            | ![需要高级查询参数。][AQP] |
+| officeLocation                                             | ![需要高级查询参数。][AQP] | ![需要高级查询参数。][AQP] |                                            |                                            | ![需要高级查询参数。][AQP] |
+| onPremisesExtensionAttributes/extensionAttribute1-15       | ![需要高级查询参数。][AQP] | ![不支持][NS]                       |                                            |                                            | ![需要高级查询参数。][AQP] |
+| onPremisesImmutableId                                      | ![默认支持][RDS]               |                                            |                                            |                                            | ![不支持][NS]                       |
+| onPremisesLastSyncDateTime                                 | ![默认支持][RDS]               |                                            | ![默认支持][RDS]               | ![默认支持][RDS]               | ![不支持][NS]                       |
+| onPremisesProvisioningErrors/any(o:o/category)             | ![默认支持][RDS]               |                                            |                                            |                                            | ![不支持][NS]                       |
+| onPremisesProvisioningErrors/any(o:o/propertyCausingError) | ![默认支持][RDS]               |                                            |                                            |                                            | ![不支持][NS]                       |
+| onPremisesSamAccountName                                   | ![需要高级查询参数。][AQP] | ![需要高级查询参数。][AQP] |                                            |                                            | ![不支持][NS]                       |
+| onPremisesSecurityIdentifier                               | ![不支持][NS]                       |                                            |                                            |                                            | ![需要高级查询参数。][AQP] |
+| onPremisesSyncEnabled                                      | ![默认支持][RDS]               |                                            |                                            |                                            | ![需要高级查询参数。][AQP] |
+| passwordPolicies                                           | ![不支持][NS]                       | ![不支持][NS]                       |                                            |                                            | ![需要高级查询参数。][AQP] |
+| passwordProfile/forceChangePasswordNextSignIn              | ![需要高级查询参数。][AQP] |                                            |                                            |                                            | ![需要高级查询参数。][AQP] |
+| passwordProfile/forceChangePasswordNextSignInWithMfa       | ![需要高级查询参数。][AQP] |                                            |                                            |                                            | ![需要高级查询参数。][AQP] |
+| postalCode                                                 | ![需要高级查询参数。][AQP] | ![需要高级查询参数。][AQP] |                                            |                                            | ![需要高级查询参数。][AQP] |
+| preferredLanguage                                          | ![需要高级查询参数。][AQP] | ![需要高级查询参数。][AQP] |                                            |                                            | ![需要高级查询参数。][AQP] |
+| provisionedPlans/any(p:p/provisioningStatus)               | ![需要高级查询参数。][AQP] |                                            |                                            |                                            | ![不支持][NS]                       |
+| provisionedPlans/any(p:p/service)                          | ![需要高级查询参数。][AQP] | ![不支持][NS]                       |                                            |                                            | ![不支持][NS]                       |
+| showInAddressList                                          | ![需要高级查询参数。][AQP] |                                            |                                            |                                            | ![不支持][NS]                       |
+| state                                                      | ![默认支持][RDS]               | ![默认支持][RDS]               |                                            |                                            | ![需要高级查询参数。][AQP] |
+| streetAddress                                              | ![需要高级查询参数。][AQP] | ![需要高级查询参数。][AQP] |                                            |                                            | ![需要高级查询参数。][AQP] |
+| surname                                                    | ![默认支持][RDS]               | ![默认支持][RDS]               |                                            |                                            | ![需要高级查询参数。][AQP] |
+| usageLocation                                              | ![默认支持][RDS]               | ![默认支持][RDS]               |                                            |                                            | ![需要高级查询参数。][AQP] |
+| userPrincipalName                                          | ![默认支持][RDS]               | ![默认支持][RDS]               |                                            |                                            | ![不支持][NS]                       |
+| userType                                                   | ![默认支持][RDS]               |                                            |                                            |                                            | ![需要高级查询参数。][AQP] |
+
+[RDS]: ../concepts/images/advanced-query-parameters/default.svg
+[AQP]: ../concepts/images/advanced-query-parameters/advanced.svg
+[NS]: ../concepts/images/advanced-query-parameters/notSupported.svg

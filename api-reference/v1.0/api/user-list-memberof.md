@@ -5,12 +5,12 @@ author: Jordanndahl
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 9b1c8a790fabc0efcc0f4ce5a7e6852f5428326b
-ms.sourcegitcommit: 2d0daa446c7b37ced1d214e0c6e18e2b8243bb09
+ms.openlocfilehash: 454c4245d8f4484ce577781f70e30b256fe726f4
+ms.sourcegitcommit: f645c2db38fe6354422a96b54569af53cd65b967
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53010204"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "58409023"
 ---
 # <a name="list-memberof"></a>列出 memberOf
 
@@ -23,9 +23,11 @@ ms.locfileid: "53010204"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | GroupMember.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | User.Read, GroupMember.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Directory.Read.All、Directory.ReadWrite.All |
+
+> **注意：** 若要列出具有隐藏成员身份的组成员，需要 Member.Read.Hidden 权限。
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
