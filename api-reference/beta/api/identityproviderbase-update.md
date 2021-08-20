@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: d458e6ad07603a9929d7271478aa87d2d46b9e4f
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 3cf9970299a5f12c0a440013ea6e3d09e684ac78dc7579e495670c7fbc7f364f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53579237"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56903776"
 ---
 # <a name="update-identityprovider"></a>更新 identityProvider
 命名空间：microsoft.graph
@@ -55,7 +55,7 @@ PATCH /identity/identityProviders/{id}
 
 在请求正文中，为 JSON 对象提供一个或多个属性，这些属性需要针对 Azure AD 租户中的 [socialIdentityProvider](../resources/socialidentityprovider.md) 对象进行更新。
 
-在 Azure AD B2C 中，为 JSON 对象提供一个或多个属性，这些属性需要针对 socialIdentityProvider、openIdConnectIdentityProvider 或[appleIdentityProvider](../resources/appleidentityprovider.md)对象进行更新。 [](../resources/socialidentityprovider.md) [](../resources/openidconnectidentityprovider.md)
+在 Azure AD B2C 中，为 JSON 对象提供一个或多个属性，这些属性需要针对[socialIdentityProvider、openIdConnectIdentityProvider](../resources/socialidentityprovider.md)或[appleIdentityProvider](../resources/appleidentityprovider.md)对象进行更新。 [](../resources/openidconnectidentityprovider.md)
 
 ### <a name="socialidentityprovider-object"></a>socialIdentityProvider 对象
 
@@ -70,13 +70,13 @@ PATCH /identity/identityProviders/{id}
 |属性|类型|说明|
 |:---------------|:--------|:----------|
 |clientId|字符串|向标识提供程序注册应用程序时，获取应用程序的客户端标识符。|
-|clientSecret|字符串|使用身份提供程序注册应用时获取的应用客户端密码。 clientSecret 依赖于 **responseType**。 <ul><li>当 **responseType** `code` 为 时，身份验证代码交换需要密码。</li><li>当 **responseType** `id_token` 为密码时不是必需的，因为没有代码交换。 授权id_token返回授权请求。</li></ul>|
+|clientSecret|字符串|使用身份提供程序注册应用时获取的应用客户端密码。 clientSecret 依赖于 **responseType**。 <ul><li>当 **responseType** `code` 为 时，身份验证代码交换需要密码。</li><li>当 **responseType** `id_token` 为密码时不是必需的，因为没有代码交换。 直接id_token授权响应中返回该错误。</li></ul>|
 |displayName|字符串|标识提供程序的显示名称。|
-|domainHint|String|域提示可用于直接跳到指定标识提供程序的登录页面，而不是让用户在可用标识提供程序列表中进行选择。|
+|domainHint|字符串|域提示可用于直接跳到指定标识提供程序的登录页面，而不是让用户在可用标识提供程序列表中进行选择。|
 |claimsMapping|[claimsMapping](../resources/claimsmapping.md)|OIDC 提供程序将 ID 令牌发送回 Azure AD 后，Azure AD 需要能够将收到的令牌中的声明映射到 Azure AD 识别和使用声明。 此复杂类型捕获该映射。|
-|metadataUrl|String|OpenID 元数据文档的 URL 连接提供程序。 每个 OpenID 连接标识提供程序都描述一个元数据文档，其中包含执行登录所需的大部分信息。 这包括要使用的 URL 以及服务的公共签名密钥的位置等信息。 OpenID 连接元数据文档始终位于 以 结尾的终结点 `.well-known/openid-configuration` 。 提供您添加的 OpenID 连接标识提供程序的元数据 URL。|
-|responseMode|String|响应模式定义用于将数据从自定义标识提供程序发送回 Azure AD B2C 的方法。 可能的值 `form_post` `query` ：、。|
-|responseType|String|响应类型描述在初始调用中发送回自定义标识提供程序authorization_endpoint类型。 可能的值 `code` `id_token` `token` ：、、。|
+|metadataUrl|字符串|OpenID 元数据文档的 URL 连接标识提供程序。 每个 OpenID 连接提供程序都描述一个元数据文档，其中包含执行登录所需的大部分信息。 这包括要使用的 URL 以及服务的公共签名密钥的位置等信息。 OpenID 连接元数据文档始终位于 以 结尾的终结点 `.well-known/openid-configuration` 。 提供您添加的 OpenID 连接标识提供程序的元数据 URL。|
+|responseMode|字符串|响应模式定义用于将数据从自定义标识提供程序发送回 Azure AD B2C 的方法。 可能的值 `form_post` `query` ：、。|
+|responseType|字符串|响应类型描述在首次调用自定义标识提供程序的 authorization_endpoint时发送回的信息类型。 可能的值 `code` `id_token` `token` ：、、。|
 |scope|String|范围定义要从自定义标识提供程序收集的信息和权限。|
 
 ### <a name="applemanagedidentityprovider-object"></a>appleManagedIdentityProvider 对象
@@ -95,7 +95,7 @@ PATCH /identity/identityProviders/{id}
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-update-a-specific-social-identity-provider-azure-ad-or-azure-ad-b2c"></a>示例 1：使用 Azure AD 或 Azure AD B2C **(特定** 社会标识) 
+### <a name="example-1-update-a-specific-social-identity-provider-azure-ad-or-azure-ad-b2c"></a>示例 1：在Azure AD 或 Azure AD B2C (更新特定社会标识) 
 
 #### <a name="request"></a>请求
 
@@ -139,7 +139,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面介绍响应示例。
 
 <!-- {
   "blockType": "response",
@@ -150,7 +150,7 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-update-a-specific-openid-connect-identity-provider-only-for-azure-ad-b2c"></a>示例 2：仅为 Azure AD B2C 连接更新特定 **OpenID** (标识) 
+### <a name="example-2-update-a-specific-openid-connect-identity-provider-only-for-azure-ad-b2c"></a>示例 2：仅为 Azure AD B2C (更新特定 **OpenID** 连接标识) 
 
 #### <a name="request"></a>请求
 
@@ -194,7 +194,7 @@ Content-length: 41
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面介绍响应示例。
 
 <!-- {
   "blockType": "response",

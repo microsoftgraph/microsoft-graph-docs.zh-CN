@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 9e2ee2d4296855d7f8fdf5ccd5a46252d7a3a7c70bdff83199c6aed51a7667e2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d1b2f0f63b428be48ac04734568ecbba00320ba7
+ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54121422"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58367056"
 ---
 # <a name="accessreviewscheduledefinition-resource-type"></a>accessReviewScheduleDefinition 资源类型
 
@@ -22,7 +22,7 @@ accessReviewScheduleDefinition 包含 [accessReviewInstance 对象](accessreview
 
 继承自 [实体](../resources/entity.md)。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 accessReviewScheduleDefinitions](../api/accessreviewscheduledefinition-list.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) 集合 | 列出每个 accessReviewScheduleDefinition。 结果中不包括关联的 accessReviewInstance 对象。 |
@@ -36,18 +36,18 @@ accessReviewScheduleDefinition 包含 [accessReviewInstance 对象](accessreview
 |属性|类型|说明|
 |:---|:---|:---|
 | id | String | 访问评审的功能分配的唯一标识符。 支持 `$select`。 只读。|
-| displayName | String   | 访问评审系列的名称。 支持 `$select` 和 `$orderBy`。 创建时为必需项。 |
+| displayName | 字符串   | 访问评审系列的名称。 支持 `$select` 和 `$orderBy`。 创建时为必需项。 |
 | createdDateTime  |DateTimeOffset  | 创建访问评审系列时时间戳。 支持 `$select` 和 `$orderBy`。 只读。 |
 | lastModifiedDateTime | DateTimeOffset   | 上次修改访问评审系列的时间戳。 支持 `$select`。 只读。|
-| status  |String   | 此只读字段指定访问评审的状态。 典型状态包括 `Initializing` `NotStarted` `Starting` `InProgress` 、、、、、、 `Completing` `Completed` `AutoReviewing` 和 `AutoReviewed` 。  <br>仅 `$select` `$orderby` 支持 、 (`$filter` 和 `eq`) 。 只读。 |
-| descriptionForAdmins  |string  |  评价创建者提供的用于向管理员提供评论的更多上下文的说明。 支持 `$select`。 |
+| status  |字符串   | 此只读字段指定访问评审的状态。 典型状态包括 `Initializing` `NotStarted` `Starting` `InProgress` 、、、、、、 `Completing` `Completed` `AutoReviewing` 和 `AutoReviewed` 。  <br>仅 `$select` `$orderby` 支持 、 (`$filter` 和 `eq`) 。 只读。 |
+| descriptionForAdmins  |string  |  评价创建者提供的说明，用于向管理员提供评论的更多上下文。 支持 `$select`。 |
 | descriptionForReviewers |string | 审阅创建者提供的说明，用于向审阅者提供审阅的更多上下文。 审阅者将在发送给他们请求审阅的电子邮件中看到此说明。 支持 `$select`。 |
 | createdBy  |[userIdentity](../resources/useridentity.md)  | 创建此评价的用户。 只读。 |
-| scope  |[accessReviewScope](../resources/accessreviewscope.md)  | 定义要审阅的资源的范围。 有关支持的范围，请参阅 [accessReviewScope](accessreviewscope.md)。 创建时为必需项。 仅 `$select` 支持 `$filter` (`contains` 和) 。 有关配置作用域的选项示例，请参阅使用 Microsoft Graph [API 配置访问评审定义的范围](/graph/accessreviews-scope-concept)。 |
-| instanceEnumerationScope|[accessReviewScope](../resources/accessreviewscope.md)  | 将审阅范围确定为来宾用户跨所有组的访问权限，并确定Microsoft 365组时Microsoft 365此属性。 每个组将成为访问评审系列 **的唯一 accessReviewInstance。**  有关支持的范围，请参阅 [accessReviewScope](accessreviewscope.md)。 支持 `$select`。 有关配置 instanceEnumerationScope 的选项示例，请参阅使用 Microsoft Graph [API 配置访问评审定义的范围](/graph/accessreviews-scope-concept)。 | 
-| settings  |[accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| 访问评审系列的设置，请参阅下面的类型定义。 支持 `$select`。 创建时为必需项。 |
+| scope  |[accessReviewScope](../resources/accessreviewscope.md)  |  定义将检查其访问权限的实体。  有关支持的范围，请参阅 [accessReviewScope](accessreviewscope.md)。 创建时为必需项。 仅 `$select` 支持 `$filter` (`contains` 和) 。 有关配置作用域的选项示例，请参阅使用 Microsoft Graph [API 配置访问评审定义的范围](/graph/accessreviews-scope-concept)。 |
+| instanceEnumerationScope|[accessReviewScope](../resources/accessreviewscope.md)  | 在将审阅范围确定为来宾用户跨所有组访问Microsoft 365，并确定审核哪些Microsoft 365时，此属性是必需的。 每个组将成为访问评审系列 **的唯一 accessReviewInstance。**  有关支持的范围，请参阅 [accessReviewScope](accessreviewscope.md)。 支持 `$select`。 有关配置 instanceEnumerationScope 的选项示例，请参阅使用 Microsoft Graph [API 配置访问评审定义的范围](/graph/accessreviews-scope-concept)。 | 
+| 设置  |[accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| 访问评审系列的设置，请参阅下面的类型定义。 支持 `$select`。 创建时为必需项。 |
 | reviewers   |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合| 此访问评审范围集合用于定义审阅者。 只有在将单个用户分配为审阅者时，审阅者属性才可更新。 创建时为必需项。 支持 `$select`。 有关分配审阅者的选项示例，请参阅使用 Microsoft Graph API 将审阅者[分配给你的访问Graph定义](/graph/accessreviews-reviewers-concept)。 |
-| fallbackReviewers   |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合| 此审阅者范围集合用于定义回退审阅者列表。 如果从指定的审阅者列表中找不到用户，将通知这些回退审阅者采取措施。 当组所有者指定为审阅者，但组所有者不存在时，或者将经理指定为审阅者但用户的经理不存在时，可能会发生这种情况。 请参阅 [accessReviewReviewerScope](accessreviewreviewerscope.md)。 替换 **backupReviewers**。 支持 `$select`。 |
+| fallbackReviewers   |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合| 此审阅者范围集合用于定义回退审阅者列表。 如果从指定的审阅者列表中找不到用户，将通知这些回退审阅者采取措施。 当组所有者指定为审阅者但组所有者不存在时，或者将经理指定为审阅者但用户的经理不存在时，可能会发生这种情况。 请参阅 [accessReviewReviewerScope](accessreviewreviewerscope.md)。 替换 **backupReviewers**。 支持 `$select`。 |
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|

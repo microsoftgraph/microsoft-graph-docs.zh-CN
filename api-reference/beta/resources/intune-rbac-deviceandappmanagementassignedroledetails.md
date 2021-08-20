@@ -1,32 +1,32 @@
 ---
 title: deviceAndAppManagementAssignedRoleDetails 资源类型
-description: 分配给用户的角色定义和角色分配的集合。
+description: 分配给用户的角色定义和角色分配集。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 216f8d8d36eca7402667d713b44a9d10f14d0999
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: b8907515bacdf558d392d847fedee2b59eec551976c04bd1be71821537787c2f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49266240"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54139233"
 ---
 # <a name="deviceandappmanagementassignedroledetails-resource-type"></a>deviceAndAppManagementAssignedRoleDetails 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-分配给用户的角色定义和角色分配的集合。
+分配给用户的角色定义和角色分配集。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|roleDefinitionIds|String 集合|分配给用户的表列角色定义的角色定义 Id。|
-|roleAssignmentIds|String 集合|分配给用户的表列角色分配的角色分配 Id。|
+|roleDefinitionIds|String collection|分配给用户的指定角色定义的角色定义 ID。|
+|roleAssignmentIds|String collection|分配给用户的指定角色分配的角色分配 ID。|
 
 ## <a name="relationships"></a>关系
 无

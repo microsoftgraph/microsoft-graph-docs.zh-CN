@@ -3,12 +3,12 @@ title: Microsoft Graph 已知问题
 description: 本文介绍了 Microsoft Graph 已知问题。
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: 2e4fe37e6a00337f36fea053b462e5b3a9e1a72f
-ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
+ms.openlocfilehash: 925baa0705d7747136f6dc1b60a9c34c72b59d7d
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58384427"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58248137"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
@@ -260,10 +260,6 @@ Microsoft Graph 为组和 Microsoft Teams 公开了两个用于访问 API 的权
 ### <a name="using-delta-query"></a>使用 delta 查询
 
 有关使用 delta 查询的已知问题，请参阅本文中的 [delta 查询部分](#delta-query)。
-
-### <a name="removing-a-group-owner-also-removes-the-user-as-a-group-member"></a>删除组所有者还将该用户作为组成员删除
-
-当调用 [DELETE /groups/{id}/owners](/graph/api/group-delete-owners.md) 时，也将从 /groups/{id}/members 列表中移除用户。 要解决此问题，请从所有者和成员中移除用户，然后等待 10 秒，再将其添加回成员。
 
 ## <a name="identity-and-access--application-and-service-principal-apis"></a>身份和访问 | 应用程序和服务主体 API
 

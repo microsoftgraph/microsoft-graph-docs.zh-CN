@@ -1,24 +1,24 @@
 ---
 title: 删除应用程序
-description: 删除应用程序对象。
+description: 删除 application 对象。
 author: sureshja
 localization_priority: Normal
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: da60fd5c6a3a97a3924fc45448c00f9665748752
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: bb1d2b596f9bf64a8ad055834747a3cefb3f00c9
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131780"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58260843"
 ---
 # <a name="delete-application"></a>删除应用程序
 
 命名空间：microsoft.graph
 
-删除 [应用程序](../resources/application.md) 对象。
+删除 [application](../resources/application.md) 对象。 删除后，应用将移动到临时容器，可以在 30 天内还原。 此后，它们将被永久删除。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

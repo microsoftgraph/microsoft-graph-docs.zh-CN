@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: c2790b6c7cace35decb969e720fa2175f6333f8c4a594d02137c28aaeb47b94c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 67b1357c842060cbec260949106dbd3d75a923ea
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54212261"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58262415"
 ---
 # <a name="accessreviewinstance-resource-type"></a>accessReviewInstance 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "54212261"
 
 继承自 [实体](../resources/entity.md)。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 accessReviewInstances](../api/accessreviewinstance-list.md)|[accessReviewInstance](../resources/accessreviewinstance.md) 集合|获取 [accessReviewInstance](../resources/accessreviewinstance.md) 对象及其属性的列表。|
@@ -41,16 +41,19 @@ ms.locfileid: "54212261"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-| id | String | 实例的唯一标识符。 继承自 [实体](../resources/entity.md)。 支持 `$select`。 只读。|
-| startDateTime | DateTimeOffset | 计划启动审阅实例的 DateTime。 可能在将来。 DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 支持 `$select`。 只读。 |
 | endDateTime | DateTimeOffset | 将审阅实例计划结束的 DateTime。DatetimeOffset 类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 支持 `$select`。 只读。|
-| status | String | 指定 accessReview 的状态。 可能的值 `Initializing` `NotStarted` `Starting` ：、、、、、、、 `InProgress` `Completing` 和 `Completed` `AutoReviewing` `AutoReviewed` 。 仅 `$select` `$orderby` 支持 、 (`$filter` 和 `eq`) 。 只读。|
+| fallbackReviewers   |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合| 此审阅者范围集合用于定义回退审阅者列表。 如果从指定的审阅者列表中找不到用户，将通知这些回退审阅者采取措施。 当组所有者指定为审阅者但组所有者不存在时，或者将经理指定为审阅者但用户的经理不存在时，可能会发生这种情况。 支持 `$select`。|
+| id | String | 实例的唯一标识符。 继承自 [实体](../resources/entity.md)。 支持 `$select`。 只读。|
 | scope | [accessReviewScope](accessreviewscope.md) | 基于 accessReviewScheduleDefinition 级别的 scope 和 **instanceEnumerationScope** 创建。  定义在组中查看的用户范围。 仅 `$select` 支持 `$filter` (`contains` 和) 。 只读。 |
+| startDateTime | DateTimeOffset | 计划启动审阅实例的 DateTime。 可能在将来。 DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 支持 `$select`。 只读。 |
+| status | 字符串 | 指定 accessReview 的状态。 可能的值 `Initializing` `NotStarted` `Starting` ：、、、、、、、 `InProgress` `Completing` 和 `Completed` `AutoReviewing` `AutoReviewed` 。 仅 `$select` `$orderby` 支持 、 (`$filter` 和 `eq`) 。 只读。|
+| reviewers   |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合| 此访问评审范围集合用于定义审阅者是谁。 支持 `$select`。 有关分配审阅者的选项示例，请参阅使用 Microsoft Graph API 将审阅者[分配给你的访问Graph定义](/graph/accessreviews-scope-concept)。|
+
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
-|决策|[accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) 集合|在 中审核的每个主体都有一个决策项，该项目表示它们被批准、拒绝还是 `accessReviewInstance` 尚未被审阅。|
+|决策|[accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) 集合|在 中审核的每个主体 `accessReviewInstance` 都有一个决策项，表示它们被批准、拒绝还是尚未被审阅。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -71,6 +74,16 @@ ms.locfileid: "54212261"
   "status": "String",
   "scope": {
     "@odata.type": "microsoft.graph.accessReviewScope"
-  }
+  },
+  "reviewers": [
+    {
+      "@odata.type": "microsoft.graph.accessReviewReviewerScope"
+    }
+  ],
+  "fallbackReviewers": [
+    {
+      "@odata.type": "microsoft.graph.accessReviewReviewerScope"
+    }
+  ]
 }
 ```

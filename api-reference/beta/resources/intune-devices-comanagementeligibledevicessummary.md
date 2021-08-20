@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4c7244bd594e38a8f129aa81389b159caff6b928
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 14585d673c1f101c7204bffe4f1d2f3ede632c88d8c6c88a3218b3be4bb67e6e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49214636"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54179030"
 ---
 # <a name="comanagementeligibledevicessummary-resource-type"></a>comanagementEligibleDevicesSummary 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -25,11 +25,11 @@ ms.locfileid: "49214636"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|comanagedCount|Int32|已 Co-Managed 的设备计数|
-|eligibleCount|Int32|完全符合条件的设备计数 Co-Management|
-|eligibleButNotAzureAdJoinedCount|Int32|符合 Co-Management 但尚未加入 Azure Active Directory 的设备的计数|
-|needsOsUpdateCount|Int32|在 OS 更新后符合 Co-Management 的设备的计数|
-|ineligibleCount|Int32|不符合要求的设备的计数 Co-Management|
+|comanagedCount|Int32|已更新的设备Co-Managed|
+|eligibleCount|Int32|完全有资格使用 Co-Management|
+|eligibleButNotAzureAdJoinedCount|Int32|有资格加入Co-Management尚未加入 Azure Active Directory|
+|needsOsUpdateCount|Int32|在操作系统更新后有资格使用Co-Management的设备计数|
+|ineligibleCount|Int32|不符合资格的设备Co-Management|
 
 ## <a name="relationships"></a>关系
 无

@@ -1,17 +1,17 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: b804b5c09ba187adbddbbe6851d32568e6d5b9e6
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: c37f7df76bd82cde2d9e3bad87d980c62d0a12e2
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53439528"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58368876"
 ---
 ```java
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-IdentityProviderBase userFlowIdentityProviders = new IdentityProviderBase();
+IdentityProvider userFlowIdentityProviders = new IdentityProvider();
 userFlowIdentityProviders.additionalDataManager().put("@odata.id", new JsonPrimitive("https://graph.microsoft.com/beta/identity/identityProviders/B2X_1_Test"));
 
 graphClient.identity().b2xUserFlows("B2X_1_Test").userFlowIdentityProviders().references()

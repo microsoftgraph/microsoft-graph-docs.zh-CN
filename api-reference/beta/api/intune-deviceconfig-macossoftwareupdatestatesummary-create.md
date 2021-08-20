@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a31fdb8581146969d8647a10f429999aeb6d2d0a
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 957c7021469d932e155fec26aca8b28c6e0a619882dc936e023a1d072af9379e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51132637"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54132233"
 ---
 # <a name="create-macossoftwareupdatestatesummary"></a>创建 macOSSoftwareUpdateStateSummary
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -54,12 +54,12 @@ POST /deviceManagement/macOSSoftwareUpdateAccountSummaries/{macOSSoftwareUpdateA
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|displayName|String|软件更新的可读名称|
+|displayName|字符串|软件更新的可读名称|
 |productKey|String|软件更新的产品密钥。|
 |updateCategory|[macOSSoftwareUpdateCategory](../resources/intune-deviceconfig-macossoftwareupdatecategory.md)|软件更新类别。 可取值为：`critical`、`configurationDataFile`、`firmware`、`other`。|
-|updateVersion|String|软件更新的版本|
+|updateVersion|字符串|软件更新的版本|
 |state|[macOSSoftwareUpdateState](../resources/intune-deviceconfig-macossoftwareupdatestate.md)|软件更新的状态。 可能的值是 `success` `downloading` `downloaded` ：、、、、、、、、、、 `installing` `idle` `available` `scheduled` `downloadFailed` `downloadInsufficientSpace` `downloadInsufficientPower` `downloadInsufficientNetwork` `installInsufficientSpace` `installInsufficientPower` `installFailed` `commandFailed` 。|
-|lastUpdatedDateTime|DateTimeOffset|上次更新此设备和产品密钥报告的日期时间。|
+|lastUpdatedDateTime|DateTimeOffset|上次更新此设备和产品密钥的报告的日期时间。|
 
 
 

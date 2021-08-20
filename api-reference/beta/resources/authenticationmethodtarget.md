@@ -1,16 +1,16 @@
 ---
 title: authenticationMethodTarget 资源类型
-description: 启用将身份验证方法用作身份验证方法策略一部分的用户或组的集合。
+description: 启用以将身份验证方法用作身份验证方法策略一部分的用户或组的集合。
 author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 19f8fb774ad0a60fa74d2c27655ee1174e0989af
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 25f983d9f2f98474189bc286b4e13c9de897cc3a
+ms.sourcegitcommit: b7e01a1331abe5f5c9aa2828d93dad08229573f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135448"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58336696"
 ---
 # <a name="authenticationmethodtarget-resource-type"></a>authenticationMethodTarget 资源类型
 
@@ -18,16 +18,16 @@ ms.locfileid: "50135448"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-支持将身份验证方法用作 Azure AD 中的身份验证方法策略一部分的用户或组的集合。
+启用以将身份验证方法用作 Azure AD 中的身份验证方法策略一部分的用户或组的集合。 继承自 [实体](entity.md)。
 
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|Azure AD 用户或组的对象 ID。|
-|isRegistrationRequired|Boolean|确定是否强制用户注册身份验证方法。|
-|targetType|authenticationMethodTargetType|可取值为：`user`、`group`。|
-|useForSignIn|Boolean|确定是否可以使用身份验证方法登录到 Azure AD。|
+|id|String|Azure AD 用户或组的对象标识符。|
+|isRegistrationRequired|布尔值|确定是否强制用户注册身份验证方法。|
+|targetType|authenticationMethodTargetType| 可能的值是 `user` ：、 `group` 和 `unknownFutureValue` 。|
+|useForSignIn|布尔值|确定是否可以使用身份验证方法登录到 Azure AD。|
 
 ## <a name="relationships"></a>关系
 无。

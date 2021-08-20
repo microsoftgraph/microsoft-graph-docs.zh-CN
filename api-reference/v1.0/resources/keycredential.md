@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: ec191064f0dd14cac67279a6802bc57849e4a740c1e1248cba8234e95ce32c96
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7ec7c42f49e0bed71abf1911b73dbb40d3cdd67a
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196955"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255771"
 ---
 # <a name="keycredential-resource-type"></a>keyCredential 资源类型
 
@@ -25,9 +25,9 @@ ms.locfileid: "54196955"
 | displayName | String | 密钥的友好名称。 可选。 |
 |endDateTime|DateTimeOffset|凭据过期的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
 |key|二进制| 转换为 Base64 字符串的字节数组中的证书原始数据;例如， `[System.Convert]::ToBase64String($Cert.GetRawCertData())` 。 |
-|keyId|Guid|该密钥 (GUID) 标识符。|
+|keyId|Guid|唯一标识符 (GUID) 的 GUID 值。|
 |startDateTime|DateTimeOffset|凭据生效的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
-|type|String|密钥凭据的类型;例如， `Symmetric` 。|
+|type|字符串|密钥凭据的类型;例如， `Symmetric` 。|
 |usage|String|一个描述密钥的用途的字符串;例如， `Verify` 。|
 
 ## <a name="json-representation"></a>JSON 表示形式

@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 343971cccdbcf64bbb04279de069ac3e0020362f
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: a9849008fbb10ae4bb87814abff24e0161a462e3fbae104db381c9587d3bb776
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51146571"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54179800"
 ---
 # <a name="update-devicemanagementsettingdefinition"></a>更新 deviceManagementSettingDefinition
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -58,13 +58,13 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/categories/{devic
 |:---|:---|:---|
 |id|String|设置定义的 ID|
 |valueType|[deviceManangementIntentValueType](../resources/intune-deviceintent-devicemanangementintentvaluetype.md)|值的 数据类型。 可取值为：`integer`、`boolean`、`string`、`complex`、`collection`、`abstractComplex`。|
-|displayName|String|设置显示名称|
-|isTopLevel|Boolean|如果设置是顶级设置，则无需封装在集合或复杂设置中即可进行配置|
-|说明|String|设置的说明|
+|displayName|字符串|设置显示名称|
+|isTopLevel|布尔值|如果设置是顶级设置，则无需封装在集合或复杂设置中即可进行配置|
+|description|String|设置的说明|
 |placeholderText|String|占位符文本作为有效输入的示例|
 |documentationUrl|String|设置文档的 URL|
 |headerTitle|String|设置标头的标题表示设置/设置的类别/部分|
-|headerSubtitle|String|有关类别/节的更多详细信息，请参阅设置标题的副标题|
+|headerSubtitle|String|有关类别/节的更多详细信息，请参阅设置标头的副标题|
 |keywords|String collection|与设置关联的关键字|
 |约束|[deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md) 集合|设置值的约束集合|
 |依赖项|[deviceManagementSettingDependency](../resources/intune-deviceintent-devicemanagementsettingdependency.md) 集合|其他设置上依赖项的集合|
