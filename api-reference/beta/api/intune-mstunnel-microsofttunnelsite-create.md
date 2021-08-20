@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b37330f63c9c0f27ae0d701db59b5795d3f15bf4
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 7ca71ec0000639a9613ea85bf99b691bd4de1d348aca1ccffd13d91bd3914b07
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51864807"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54166328"
 ---
 # <a name="create-microsofttunnelsite"></a>创建 microsoftTunnelSite
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -54,15 +54,15 @@ POST /deviceManagement/microsoftTunnelSites
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|MicrosoftTunnelSite 的 ID|
-|displayName|String|MicrosoftTunnelSite 的显示名称|
-|说明|String|MicrosoftTunnelSite 的说明|
+|displayName|字符串|MicrosoftTunnelSite 的显示名称|
+|description|String|MicrosoftTunnelSite 的说明|
 |publicAddress|String|MicrosoftTunnelSite 的公共域名或 IP 地址|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [microsoftTunnelSite](../resources/intune-mstunnel-microsofttunnelsite.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [microsoftTunnelSite](../resources/intune-mstunnel-microsofttunnelsite.md) 对象。
 
 ## <a name="example"></a>示例
 

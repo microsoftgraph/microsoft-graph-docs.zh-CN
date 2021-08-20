@@ -5,48 +5,48 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 33c77e4d6a72ae4335d7d9e921aed0b5d13911b8
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: a49766303081011f01622a12c724a394019345f70dc042b72c92ca087c1140ac
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49279687"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54242781"
 ---
 # <a name="managedalldevicecertificatestate-resource-type"></a>managedAllDeviceCertificateState 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 尚未记录
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列出 managedAllDeviceCertificateStates](../api/intune-deviceconfig-managedalldevicecertificatestate-list.md)|[managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) 集合|列出 [managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) 对象的属性和关系。|
-|[获取 managedAllDeviceCertificateState](../api/intune-deviceconfig-managedalldevicecertificatestate-get.md)|[managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md)|读取 [managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) 对象的属性和关系。|
+|[列出 managedAllDeviceCertificateStates](../api/intune-deviceconfig-managedalldevicecertificatestate-list.md)|[managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) 集合|列出 [managedAllDeviceCertificateState 对象的属性和](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) 关系。|
+|[获取 managedAllDeviceCertificateState](../api/intune-deviceconfig-managedalldevicecertificatestate-get.md)|[managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md)|读取 [managedAllDeviceCertificateState 对象的属性和](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) 关系。|
 |[创建 managedAllDeviceCertificateState](../api/intune-deviceconfig-managedalldevicecertificatestate-create.md)|[managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md)|创建新的 [managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) 对象。|
 |[删除 managedAllDeviceCertificateState](../api/intune-deviceconfig-managedalldevicecertificatestate-delete.md)|无|删除 [managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md)。|
-|[更新 managedAllDeviceCertificateState](../api/intune-deviceconfig-managedalldevicecertificatestate-update.md)|[managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md)|更新 [managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) 对象的属性。|
+|[更新 managedAllDeviceCertificateState](../api/intune-deviceconfig-managedalldevicecertificatestate-update.md)|[managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md)|更新 [managedAllDeviceCertificateState 对象](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) 的属性。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
-|certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)|撤消状态。 可取值为：`none`、`pending`、`issued`、`failed`、`revoked`。|
-|certificateRevokeStatusLastChangeDateTime|DateTimeOffset|上次更改吊销状态的时间|
+|id|String|实体的键。|
+|certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)|撤销状态。 可取值为：`none`、`pending`、`issued`、`failed`、`revoked`。|
+|certificateRevokeStatusLastChangeDateTime|DateTimeOffset|上次更改撤消状态的时间|
 |managedDeviceDisplayName|字符串|设备显示名称|
 |userPrincipalName|字符串|用户主体名称|
 |certificateExpirationDateTime|DateTimeOffset|证书到期日期|
 |certificateIssuerName|字符串|颁发者|
-|certificateThumbprint|字符串|指纹|
-|certificateSerialNumber|字符串|序列号|
-|certificateSubjectName|字符串|证书主题名称|
+|certificateThumbprint|String|指纹|
+|certificateSerialNumber|String|序列号|
+|certificateSubjectName|String|证书主题名称|
 |certificateKeyUsages|Int32|密钥用法|
-|certificateExtendedKeyUsages|字符串|增强型密钥使用|
-|certificateIssuanceDateTime|DateTimeOffset|颁发日期|
+|certificateExtendedKeyUsages|String|增强型密钥使用|
+|certificateIssuanceDateTime|DateTimeOffset|发布日期|
 
 ## <a name="relationships"></a>关系
 无

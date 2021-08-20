@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 2305c7dfde39d742ce1694c030f395f59f6fb7bb
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 1b20d580ac7f5e273e66b1fdd152e7e607907b4df91276e8e76a5da697f9085c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50443284"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54166013"
 ---
 # <a name="update-or-create-trustframeworkpolicy"></a>更新或创建 trustFrameworkPolicy
 
@@ -18,9 +18,9 @@ ms.locfileid: "50443284"
 
 >**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
-更新现有 trustFrameworkPolicy 或创建一个不存在的[trustFrameworkPolicy。](../resources/trustframeworkpolicy.md)
+更新现有的 [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) 或创建一个（如果不存在）。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference.md)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "50443284"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）|Policy.ReadWrite.TrustFramework|
 |委派（个人 Microsoft 帐户）| 不支持。|
-|Application|Policy.ReadWrite.TrustFramework|
+|应用程序|Policy.ReadWrite.TrustFramework|
 
 工作或学校帐户必须是租户的全局管理员。
 
@@ -49,15 +49,15 @@ PUT /trustFramework/policies/{id}/$value
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) 对象的 XML 表示形式。 
+在请求正文中，提供 [trustFrameworkPolicy 对象的](../resources/trustframeworkpolicy.md) XML 表示形式。 
 
 >**注意：** 内容类型必须为 `application/xml` 。
 
 ## <a name="response"></a>响应
 
-响应将为以下项之一：
-- 如果存在 [trustFrameworkPolicy，](../resources/trustframeworkpolicy.md) 则成功的请求将返回 `200 OK` 响应代码。
-- 如果 [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) 不存在，成功的请求将返回 `201 Created` 响应代码。
+响应将为以下操作之一：
+- 如果存在 [trustFrameworkPolicy，](../resources/trustframeworkpolicy.md) 则成功的请求将返回 响应 `200 OK` 代码。
+- 如果 [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) 不存在，则成功的请求将返回 `201 Created` 响应代码。
 - 如果失败，将返回 `4xx` 错误并显示具体详细信息。
 
 ## <a name="example"></a>示例
