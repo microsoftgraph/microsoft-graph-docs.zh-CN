@@ -5,43 +5,43 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 403df171498bcde62d113ce2a2f2a27cf3987285
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 49e7945b1ba07d7daedbd197b826148921f2f0227dd71b5780413a3b67b6c6be
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997968"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54197847"
 ---
 # <a name="personannotation-resource-type"></a>personAnnotation 资源类型
 
 命名空间：microsoft.graph
 
-提供笔记中的信息，用户在各种服务中与自身关联，并与其他人共享。
+在注释中提供用户在各种服务中与自己关联并与其他人员共享的信息。
 
 继承自 [itemFacet](../resources/itemfacet.md)。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列出笔记](../api/profile-list-notes.md)|[personAnnotation](../resources/personannotation.md) 集合|从 "便笺" 导航属性中获取 personAnnotation 资源。|
+|[列出注释](../api/profile-list-notes.md)|[personAnnotation](../resources/personannotation.md) 集合|从 notes 导航属性获取 personAnnotation 资源。|
 |[创建 personAnnotation](../api/profile-post-notes.md)|[personAnnotation](../resources/personannotation.md)|创建新的 personAnnotation 对象。|
-|[获取 personAnnotation](../api/personannotation-get.md)|[personAnnotation](../resources/personannotation.md)|读取 [personAnnotation](../resources/personannotation.md) 对象的属性和关系。|
-|[更新 personAnnotation](../api/personannotation-update.md)|[personAnnotation](../resources/personannotation.md)|更新 [personAnnotation](../resources/personannotation.md) 对象的属性。|
-|[删除 personAnnotation](../api/personannotation-delete.md)|无|删除一个 [personAnnotation](../resources/personannotation.md) 对象。|
+|[获取 personAnnotation](../api/personannotation-get.md)|[personAnnotation](../resources/personannotation.md)|读取 [personAnnotation 对象的属性和](../resources/personannotation.md) 关系。|
+|[更新 personAnnotation](../api/personannotation-update.md)|[personAnnotation](../resources/personannotation.md)|更新 [personAnnotation 对象](../resources/personannotation.md) 的属性。|
+|[删除 personAnnotation](../api/personannotation-delete.md)|无|删除 [personAnnotation](../resources/personannotation.md) 对象。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
 |createdBy|[identitySet](../resources/identityset.md)|提供创建实体的用户和/或应用程序的标识符。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|createdDateTime|DateTimeOffset|为创建实体时提供 dateTimeOffset。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|介绍|[itemBody](../resources/itembody.md)|包含注释本身的详细信息。|
-|displayName|String|包含注解的友好名称。|
-|id|String|用于单独寻址实体的标识符。 继承自 [entity](../resources/entity.md)|
-|推导|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|createdDateTime|DateTimeOffset|提供实体创建时的日期时间Offset。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|detail|[itemBody](../resources/itembody.md)|包含注释本身的详细信息。|
+|displayName|String|包含便笺的友好名称。|
+|id|字符串|用于单独寻址实体的标识符。 继承自 [实体](../resources/entity.md)|
+|inference|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断出来的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|提供上次修改实体的用户和/或应用程序的标识符。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|lastModifiedDateTime|DateTimeOffset|为创建实体时提供 dateTimeOffset。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|source|[personDataSource](../resources/persondatasource.md)|值的来源，如果从另一个服务同步。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|lastModifiedDateTime|DateTimeOffset|提供实体创建时的日期时间Offset。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|source|[personDataSource](../resources/persondatasource.md)|如果从另一个服务同步，则值源自何处。 继承自 [itemFacet](../resources/itemfacet.md)。|
 
 ## <a name="relationships"></a>关系
 无。

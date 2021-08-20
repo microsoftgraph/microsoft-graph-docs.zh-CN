@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 62de6c2da4d61982c19d14b959b178a781a60aa0
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 96afbda75427f83ec213d4e764b6612a33363f4c
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49294429"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58266882"
 ---
 # <a name="macosgeneraldeviceconfiguration-resource-type"></a>macOSGeneralDeviceConfiguration 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -26,7 +26,7 @@ ms.locfileid: "49294429"
 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)
 
 ## <a name="methods"></a>Methods
-|方法|返回类型|Description|
+|方法|返回类型|说明|
 |:---|:---|:---|
 |[List macOSGeneralDeviceConfigurations](../api/intune-deviceconfig-macosgeneraldeviceconfiguration-list.md)|[macOSGeneralDeviceConfiguration](../resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md) 集合|列出 [macOSGeneralDeviceConfiguration](../resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md) 对象的属性和关系。|
 |[Get macOSGeneralDeviceConfiguration](../api/intune-deviceconfig-macosgeneraldeviceconfiguration-get.md)|[macOSGeneralDeviceConfiguration](../resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md)|读取 [macOSGeneralDeviceConfiguration](../resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md) 对象的属性和关系。|
@@ -39,13 +39,13 @@ ms.locfileid: "49294429"
 |:---|:---|:---|
 |id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|适用于此策略的操作系统版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|布尔值|指示基础设备配置是否支持分配范围标记。 当此值为 false 且实体对范围用户不可见时，不允许分配给 ScopeTags 属性。 这适用于在 Silverlight 中创建的旧版策略，可通过在 Azure 门户中删除和重新创建策略来解决。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|此策略的操作系统版本适用性。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|字符串|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |compliantAppsList|[appListItem](../resources/intune-deviceconfig-applistitem.md) 集合|符合性中的应用列表（允许列表或阻止列表，由 CompliantAppListType 控制）。 该集合最多可包含 10000 个元素。|
@@ -60,53 +60,54 @@ ms.locfileid: "49294429"
 |passwordPreviousPasswordBlockCount|Int32|要阻止的以前密码的数量。|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|必需的密码类型。 可取值为：`deviceDefault`、`alphanumeric`、`numeric`。|
 |passwordRequired|Boolean|是否需要密码。|
-|passwordMaximumAttemptCount|Int32|在设备的锁屏上尝试输入密码失败的次数。 有效的值为2到11|
-|passwordMinutesUntilFailedLoginReset|Int32|达到最大失败登录尝试次数后重置登录前的分钟数。|
-|keychainBlockCloudSync|Boolean|指示是否阻止 (macOS 10.12 及更高版本) 的 iCloud 密钥链同步。|
-|airPrintBlocked|Boolean|指示是否阻止 AirPrint (macOS 10.12 及更高版本中) 。|
-|airPrintForceTrustedTLS|Boolean|指示 TLS 打印通信 (macOS 10.13 及更高版本) 是否需要受信任的证书。|
-|airPrintBlockiBeaconDiscovery|Boolean|指示是否阻止 AirPrint 打印机的 iBeacon 发现。 这样可以防止在网络流量 (macOS 10.3 及更高版本) 中出现虚假的 AirPrint 蓝牙信号。|
+|passwordMaximumAttemptCount|Int32|在设备的锁屏界面上输入密码的允许失败尝试次数。 有效值为 2 至 11|
+|passwordMinutesUntilFailedLoginReset|Int32|达到最大登录尝试失败次数后重置登录前的分钟数。|
+|keychainBlockCloudSync|布尔值|指示在 macOS 10.12 (是否阻止 iCloud 密钥链) 。|
 |safariBlockAutofill|Boolean|指示在 Safari 中是否阻止用户使用自动填充。|
 |cameraBlocked|Boolean|指示是否阻止用户访问设备的照相机。|
-|iTunesBlockMusicService|Boolean|指示是否阻止音乐服务并将音乐应用还原到经典模式。|
-|spotlightBlockInternetResults|Boolean|指示是否阻止聚光灯从 Internet 搜索返回任何结果。|
+|iTunesBlockMusicService|Boolean|指示是否阻止应用音乐应用音乐经典模式。|
+|spotlightBlockInternetResults|Boolean|指示是否阻止聚焦从 Internet 搜索返回任何结果。|
 |keyboardBlockDictation|Boolean|指示是否阻止用户使用听写输入。|
 |definitionLookupBlocked|Boolean|指示是否阻止定义查找。|
-|appleWatchBlockAutoUnlock|Boolean|指示是否阻止用户使用 Apple Watch 解锁其 Mac。|
-|iTunesBlockFileSharing|Boolean|指示是否阻止使用 iTunes 传输文件。|
+|appleWatchBlockAutoUnlock|布尔值|指示是否阻止用户使用 Apple Watch 解锁其 Mac。|
+|iTunesBlockFileSharing|布尔值|指示是否阻止使用 iTunes 传输文件。|
 |iCloudBlockDocumentSync|Boolean|指示是否阻止 iCloud 文档同步。|
-|iCloudBlockMail|Boolean|指示是否阻止 iCloud 同步邮件。|
-|iCloudBlockAddressBook|Boolean|指示是否阻止 iCloud 同步联系人。|
-|iCloudBlockCalendar|Boolean|指示是否阻止 iCloud 同步日历。|
-|iCloudBlockReminders|Boolean|指示是否阻止 iCloud 同步提醒。|
-|iCloudBlockBookmarks|Boolean|指示是否阻止 iCloud 同步书签。|
-|iCloudBlockNotes|Boolean|指示是否阻止 iCloud 同步笔记。|
+|iCloudBlockMail|布尔值|指示是否阻止 iCloud 同步邮件。|
+|iCloudBlockAddressBook|布尔值|指示是否阻止 iCloud 同步联系人。|
+|iCloudBlockCalendar|布尔值|指示是否阻止 iCloud 同步日历。|
+|iCloudBlockReminders|布尔值|指示是否阻止 iCloud 同步提醒。|
+|iCloudBlockBookmarks|布尔值|指示是否阻止 iCloud 同步书签。|
+|iCloudBlockNotes|布尔值|指示是否阻止 iCloud 同步笔记。|
 |airDropBlocked|Boolean|指示是否允许 AirDrop。|
-|passwordBlockModification|Boolean|指示是否允许修改密码。|
+|passwordBlockModification|布尔值|指示是否允许修改密码。|
 |passwordBlockFingerprintUnlock|Boolean|指示是否阻止指纹解锁。|
-|passwordBlockAutoFill|Boolean|指示是否阻止自动填充密码功能。|
-|passwordBlockProximityRequests|Boolean|指示是否阻止来自附近设备的请求密码。|
-|passwordBlockAirDropSharing|Boolean|指示是否阻止使用 AirDrop 密码功能的共享密码。|
-|softwareUpdatesEnforcedDelayInDays|Int32|设置受监督的设备 delyed 软件更新的天数。 有效值为 0 至 90|
-|updateDelayPolicy|[macOSSoftwareUpdateDelayPolicy](../resources/intune-deviceconfig-macossoftwareupdatedelaypolicy.md)|确定是否延迟 macOS 的 OS 和/或应用更新。 可取值为：`none`、`delayOSUpdateVisibility`、`delayAppUpdateVisibility`。|
-|contentCachingBlocked|Boolean|指示是否允许内容缓存。|
+|passwordBlockAutoFill|布尔值|指示是否阻止"自动填充密码"功能。|
+|passwordBlockProximityRequests|布尔值|指示是否阻止从附近设备请求密码。|
+|passwordBlockAirDropSharing|布尔值|指示是否阻止与 AirDrop 密码功能共享密码。|
+|softwareUpdatesEnforcedDelayInDays|Int32|设置对受监督设备取消软件更新的天数。 有效值为 0 至 90|
+|updateDelayPolicy|[macOSSoftwareUpdateDelayPolicy](../resources/intune-deviceconfig-macossoftwareupdatedelaypolicy.md)|确定是否延迟 macOS 的操作系统和/或应用更新。 可取值为：`none`、`delayOSUpdateVisibility`、`delayAppUpdateVisibility`。|
+|contentCachingBlocked|布尔值|指示是否允许内容缓存。|
 |iCloudBlockPhotoLibrary|Boolean|指示是否阻止 iCloud 照片库。|
 |screenCaptureBlocked|Boolean|指示是否阻止用户进行屏幕截图。|
-|classroomAppBlockRemoteScreenObservation|Boolean|指示是否允许教室应用进行远程屏幕观察。 需要通过 Apple School Manager 或 Apple 商业版管理器进行 MDM 注册。|
-|classroomAppForceUnpromptedScreenObservation|Boolean|指示是否自动向教师授予对教室应用程序中的托管课程的权限，以便在不提示的情况下查看学生的屏幕。 需要通过 Apple School Manager 或 Apple 商业版管理器进行 MDM 注册。|
-|classroomForceAutomaticallyJoinClasses|Boolean|指示是否在不提示学生的情况下自动向教师的请求授予权限。 需要通过 Apple School Manager 或 Apple 商业版管理器进行 MDM 注册。|
-|classroomForceRequestPermissionToLeaveClasses|Boolean|指示在非托管课程中通过课堂注册的学生是否需要在尝试离开本课程时向教师请求权限。 需要通过 Apple School Manager 或 Apple 商业版管理器进行 MDM 注册。|
-|classroomForceUnpromptedAppAndDeviceLock|Boolean|指示是否允许教师在不提示学生的情况下锁定应用或设备。 需要通过 Apple School Manager 或 Apple 商业版管理器进行 MDM 注册。|
-|iCloudBlockActivityContinuation|Boolean|指示是否阻止用户继续在另一台 iOS 或 MacOS 设备上的 MacOS 设备上启动的工作， (MacOS 10.15 或更高版本) 。|
-|privacyAccessControls|[macOSPrivacyAccessControlItem](../resources/intune-deviceconfig-macosprivacyaccesscontrolitem.md) 集合|隐私首选项策略控制的列表。 该集合最多可包含 10000 个元素。|
+|classroomAppBlockRemoteScreenObservation|Boolean|指示是否允许 Classroom 应用进行远程屏幕观察。 需要通过 Apple School Manager 或 Apple Business Manager 注册 MDM。|
+|classroomAppForceUnpromptedScreenObservation|Boolean|指示是否自动授予课堂应用上托管课程的教师查看学生屏幕的权限，而不提示。 需要通过 Apple School Manager 或 Apple Business Manager 注册 MDM。|
+|classroomForceAutomaticallyJoinClasses|布尔值|指示是否自动授予对教师请求的权限，而不提示学生。 需要通过 Apple School Manager 或 Apple Business Manager 注册 MDM。|
+|classroomForceRequestPermissionToLeaveClasses|布尔值|指示在尝试离开课程时，是否要求通过 Classroom 在非托管课程注册的学生向教师请求权限。 需要通过 Apple School Manager 或 Apple Business Manager 注册 MDM。|
+|classroomForceUnpromptedAppAndDeviceLock|布尔值|指示是否允许教师在不提示学生的情况下锁定应用或设备。 需要通过 Apple School Manager 或 Apple Business Manager 注册 MDM。|
+|iCloudBlockActivityContinuation|Boolean|指示是否阻止用户在 MacOS 10.15 或更高版本上其他 iOS 或 MacOS (MacOS 设备上启动的工作) 。|
+|privacyAccessControls|[macOSPrivacyAccessControlItem](../resources/intune-deviceconfig-macosprivacyaccesscontrolitem.md) 集合|隐私首选项策略控件的列表。 该集合最多可包含 10000 个元素。|
+|addingGameCenterFriendsBlocked|布尔值|是，禁止用户将好友添加到游戏中心。 适用于运行 macOS 版本 10.13 和更高版本的设备。|
+|gameCenterBlocked|Boolean|是 禁用游戏中心，游戏中心图标从主屏幕中删除。 适用于运行 macOS 版本 10.13 和更高版本的设备。|
+|multiplayerGamingBlocked|布尔值|是：使用游戏中心时阻止多人游戏。 适用于运行 macOS 版本 10.13 和更高版本的设备。|
+|wallpaperModificationBlocked|布尔值|是 可防止更改墙纸。 适用于运行 macOS 版本 10.13 和更高版本的设备。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|Description|
+|关系|类型|说明|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md) 集合|设备配置文件的组分配列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) 集合|设备配置文件的分配列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceStatuses|[deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md) 集合|按设备的设备配置安装状态。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|userStatuses|[deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) 集合|按用户的设备配置安装状态。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|userStatuses|[deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) 集合|用户的设备配置安装状态。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|设备配置设备状态概述 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|设备配置用户状态概述 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md) 集合|设备配置设置状态设备摘要 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -178,9 +179,6 @@ ms.locfileid: "49294429"
   "passwordMaximumAttemptCount": 1024,
   "passwordMinutesUntilFailedLoginReset": 1024,
   "keychainBlockCloudSync": true,
-  "airPrintBlocked": true,
-  "airPrintForceTrustedTLS": true,
-  "airPrintBlockiBeaconDiscovery": true,
   "safariBlockAutofill": true,
   "cameraBlocked": true,
   "iTunesBlockMusicService": true,
@@ -251,7 +249,11 @@ ms.locfileid: "49294429"
         }
       ]
     }
-  ]
+  ],
+  "addingGameCenterFriendsBlocked": true,
+  "gameCenterBlocked": true,
+  "multiplayerGamingBlocked": true,
+  "wallpaperModificationBlocked": true
 }
 ```
 

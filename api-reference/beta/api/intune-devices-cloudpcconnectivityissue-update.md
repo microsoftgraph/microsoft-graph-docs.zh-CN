@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d94f7c2409bb4a0a2b09dab066d25c54f8319b87
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 8e6f8fcb86eaab3bf38f8cda9712b29f554f1a00
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52665733"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58264757"
 ---
 # <a name="update-cloudpcconnectivityissue"></a>更新 cloudPCConnectivityIssue
 
@@ -27,9 +27,9 @@ ms.locfileid: "52665733"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -57,7 +57,7 @@ PATCH /deviceManagement/cloudPCConnectivityIssues/{cloudPCConnectivityIssueId}
 |deviceId|String|与连接关联的设备的 Intune DeviceId。|
 |errorCode|String|连接问题的错误代码。|
 |errorDateTime|DateTimeOffset|连接启动的时间。 时间以 ISO 8601 格式显示，协调世界时 (UTC) 时间。|
-|userId|String|初始化连接的用户的唯一 ID。|
+|userId|字符串|初始化连接的用户的唯一 ID。|
 |errorDescription|String|错误的详细说明。|
 |recommendedAction|String|修复相应错误的推荐操作。|
 

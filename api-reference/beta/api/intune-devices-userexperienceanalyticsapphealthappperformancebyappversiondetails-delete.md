@@ -1,18 +1,18 @@
 ---
-title: 删除 intuneBrandingProfileAssignment
-description: 删除 intuneBrandingProfileAssignment。
+title: 删除 userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails
+description: 删除 userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9e815a1ce2d26d58d266e8a69deaa921752125c583eb5a98baad560d8e100e8d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 95a539815cca25c382199dbb59baba0dd8b2e176
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54173616"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58265469"
 ---
-# <a name="delete-intunebrandingprofileassignment"></a>删除 intuneBrandingProfileAssignment
+# <a name="delete-userexperienceanalyticsapphealthappperformancebyappversiondetails"></a>删除 userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails
 
 命名空间：microsoft.graph
 
@@ -20,16 +20,16 @@ ms.locfileid: "54173616"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-删除 [intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md)。
+删除 [userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyappversiondetails.md)。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementApps.ReadWrite.All|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -37,7 +37,7 @@ ms.locfileid: "54173616"
 }
 -->
 ``` http
-DELETE /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}/assignments/{intuneBrandingProfileAssignmentId}
+DELETE /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformanceByAppVersionDetails/{userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetailsId}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -57,7 +57,7 @@ DELETE /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}/assign
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}/assignments/{intuneBrandingProfileAssignmentId}
+DELETE https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformanceByAppVersionDetails/{userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetailsId}
 ```
 
 ### <a name="response"></a>响应

@@ -5,22 +5,24 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: ecb8ea8721e6ccc737e6a5f477b274be4300d370
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: ccc7d77d824252902e70c50c6c2cd7447616b603
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786237"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58264309"
 ---
 # <a name="call-keepalive"></a>call： keepAlive
 
 命名空间：microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 每隔 15 到 45 分钟对此 API 提出请求，以确保正在进行的调用保持活动状态。 在 45 分钟内未收到此请求的呼叫被视为非活动状态，随后将结束。
 
 必须在上一个请求或调用开始后 45 分钟内至少提出一个成功请求。
 
-我们建议您以较短的时间间隔发送请求， (15 分钟) 。 确保这些请求成功防止呼叫超时和结束。
+我们建议您以较短的时间间隔发送请求， (每隔 15 分钟) 。 确保这些请求成功防止呼叫超时和结束。
 
 尝试向已结束的呼叫发送请求将导致 `404 Not-Found` 错误。 与调用相关的资源应在应用程序端清理。
 

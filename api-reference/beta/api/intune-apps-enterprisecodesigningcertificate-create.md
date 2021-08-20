@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d0c5d96d6e5362866c279211f4252bd9cd544c1e
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: de1d50865f5b98b3e95dd0448d013e0f4c9c3e1c2ed284a94d43ac58cdef89fa
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51144287"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54216138"
 ---
 # <a name="create-enterprisecodesigningcertificate"></a>创建 enterpriseCodeSigningCertificate
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -54,8 +54,8 @@ POST /deviceAppManagement/enterpriseCodeSigningCertificates
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|content|Binary|Windows 企业Code-Signing采用原始数据格式的证书。|
-|状态|[certificateStatus](../resources/intune-apps-certificatestatus.md)|证书状态已设置或未设置。 可取值为：`notProvisioned`、`provisioned`。|
+|content|二进制|原始Windows Enterprise Code-Signing格式的证书。|
+|status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|证书状态已设置或未设置。 可取值为：`notProvisioned`、`provisioned`。|
 |SubjectName|String|证书的主题名称。|
 |subject|String|证书的主题值。|
 |issuerName|String|证书的颁发者名称。|

@@ -5,12 +5,12 @@ author: madansr7
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d6ba4879df1c511e723f46d9fc9687c6ed802424
-ms.sourcegitcommit: b711aed8acc18512cf6591f4108ed5ddf05b649d
+ms.openlocfilehash: e5177fe5bc69a3f083619823146c605152498d71
+ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53660394"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58397108"
 ---
 # <a name="tenantappmanagementpolicy-resource-type"></a>tenantAppManagementPolicy 资源类型
 
@@ -33,9 +33,9 @@ ms.locfileid: "53660394"
 
 | 属性                     | 类型                                                                     | 说明                                                           |
 | :--------------------------- | :----------------------------------------------------------------------- | :-------------------------------------------------------------------- |
-| id                           | 字符串                                                                   | 默认策略标识符。                                        |
-| displayName                  | 字符串                                                                   | 默认显示名称的默认值。 继承自 [policyBase](policybase.md)。                                |
-| 说明                  | 字符串                                                                   | 默认策略的说明。 继承自 [policyBase](policybase.md)。                                |
+| id                           | String                                                                   | 默认策略标识符。                                        |
+| displayName                  | String                                                                   | 默认显示名称的默认值。 继承自 [policyBase](policybase.md)。                                |
+| 说明                  | String                                                                   | 默认策略的说明。 继承自 [policyBase](policybase.md)。                                |
 | isEnabled                    | Boolean                                                                  | 表示是否启用策略。 默认值为 `false`。                                    |
 | applicationRestrictions      | [appManagementConfiguration](../resources/appManagementConfiguration.md) | 应用于租户中所有应用程序对象的默认限制。               |
 | servicePrincipalRestrictions | [appManagementConfiguration](../resources/appManagementConfiguration.md) | 应用于租户中所有服务主体对象的默认限制。 |
@@ -59,7 +59,7 @@ ms.locfileid: "53660394"
 
 ```json
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/tenantAppManagementPolicy",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/defaultAppManagementPolicy",
   "id": "string (identifier)",
   "description": "string",
   "displayName": "string",

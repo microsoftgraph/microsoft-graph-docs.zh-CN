@@ -5,18 +5,16 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 99a2267deba02e1f253d64452436236d1ae8f49a
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: c9ab11d55ad639c5cffabbcb0ad9eacb06064154
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51134142"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58264701"
 ---
 # <a name="update-devicemanagementautopilotpolicystatusdetail"></a>更新 deviceManagementAutopilotPolicyStatusDetail
 
 命名空间：microsoft.graph
-
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -54,10 +52,10 @@ PATCH /deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}/polic
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|对象的 UUID|
-|displayName|String|策略的友好名称。|
+|displayName|字符串|策略的友好名称。|
 |policyType|[deviceManagementAutopilotPolicyType](../resources/intune-troubleshooting-devicemanagementautopilotpolicytype.md)|策略的类型。 可取值为：`unknown`、`application`、`appModel`、`configurationPolicy`。|
 |complianceStatus|[deviceManagementAutopilotPolicyComplianceStatus](../resources/intune-troubleshooting-devicemanagementautopilotpolicycompliancestatus.md)|策略合规性状态。 可取值为：`unknown`、`compliant`、`installed`、`notCompliant`、`notInstalled`、`error`。|
-|trackedOnEnrollmentStatus|Boolean|指示此许可是否作为 autopilot 启动注册同步会话的一部分进行跟踪|
+|trackedOnEnrollmentStatus|布尔值|指示此许可证是否作为 autopilot 启动注册同步会话的一部分进行跟踪|
 |lastReportedDateTime|DateTimeOffset|报告的策略状态的时间戳|
 |errorCode|Int32|与策略的合规性或强制状态相关联的错误模式。 强制状态的错误代码如果存在，则优先。|
 
@@ -71,7 +69,7 @@ PATCH /deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}/polic
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-PATCH https://graph.microsoft.com/beta/deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}/policyStatusDetails/{deviceManagementAutopilotPolicyStatusDetailId}
+PATCH https://graph.microsoft.com/v1/deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}/policyStatusDetails/{deviceManagementAutopilotPolicyStatusDetailId}
 Content-type: application/json
 Content-length: 314
 

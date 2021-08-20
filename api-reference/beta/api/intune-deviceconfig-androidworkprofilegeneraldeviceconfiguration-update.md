@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e1a0c563e83051968d970c9b5bdda69f178b9f68
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: e7dfc8cc5327d2340f43a47aeebc3b3e7b3a5b9921e26d24fd9253b3fe8bc0ad
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51148111"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54191816"
 ---
 # <a name="update-androidworkprofilegeneraldeviceconfiguration"></a>更新 androidWorkProfileGeneralDeviceConfiguration
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -55,20 +55,20 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|指示基础设备配置是否支持分配范围标记。 当此值为 false 且实体对作用域用户不可见时，不允许分配给 ScopeTags 属性。 这适用于在 Silverlight 中创建的旧版策略，可通过在 Azure 门户中删除和重新创建策略来解决。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|布尔值|指示基础设备配置是否支持分配范围标记。 当此值为 false 且实体对范围用户不可见时，不允许分配给 ScopeTags 属性。 这适用于在 Silverlight 中创建的旧版策略，可通过在 Azure 门户中删除和重新创建策略来解决。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|此策略的操作系统版本适用性。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|passwordBlockFaceUnlock|Boolean|指示是否阻止人脸解锁。|
+|passwordBlockFaceUnlock|布尔值|指示是否阻止人脸解锁。|
 |passwordBlockFingerprintUnlock|Boolean|指示是否阻止指纹解锁。|
-|passwordBlockIrisUnlock|Boolean|指示是否阻止虹膜解锁。|
+|passwordBlockIrisUnlock|布尔值|指示是否阻止虹膜解锁。|
 |passwordBlockTrustAgents|Boolean|指示是否阻止 Smart Lock 和其他信任代理。|
 |passwordExpirationDays|Int32|密码过期前的天数。 有效值为 1 至 365。|
 |passwordMinimumLength|Int32|密码的最小长度。 有效值为 4 至 16|
@@ -76,21 +76,21 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |passwordPreviousPasswordBlockCount|Int32|要阻止的以前密码的数量。 有效值为 0 至 24|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|恢复出厂设置之前允许登录失败的次数。 有效值为 1 到 16|
 |passwordRequiredType|[androidWorkProfileRequiredPasswordType](../resources/intune-deviceconfig-androidworkprofilerequiredpasswordtype.md)|必需的密码类型。 可取值为：`deviceDefault`、`lowSecurityBiometric`、`required`、`atLeastNumeric`、`numericComplex`、`atLeastAlphabetic`、`atLeastAlphanumeric`、`alphanumericWithSymbols`。|
-|workProfileAllowAppInstallsFromUnknownSources|Boolean|指示是否允许安装来自未知源的应用。|
+|workProfileAllowAppInstallsFromUnknownSources|布尔值|指示是否允许安装来自未知源的应用。|
 |workProfileDataSharingType|[androidWorkProfileCrossProfileDataSharingType](../resources/intune-deviceconfig-androidworkprofilecrossprofiledatasharingtype.md)|允许的数据共享类型。 可取值为：`deviceDefault`、`preventAny`、`allowPersonalToWork`、`noRestrictions`。|
-|workProfileBlockNotificationsWhileDeviceLocked|Boolean|指示设备锁定时是否阻止通知。|
-|workProfileBlockAddingAccounts|Boolean|阻止用户在工作配置文件中添加/删除帐户。|
-|workProfileBluetoothEnableContactSharing|Boolean|允许蓝牙设备访问企业联系人。|
-|workProfileBlockScreenCapture|Boolean|阻止工作配置文件中的屏幕捕获。|
-|workProfileBlockCrossProfileCallerId|Boolean|阻止在个人配置文件中显示工作配置文件调用方 ID。|
-|workProfileBlockCamera|Boolean|阻止工作配置文件相机。|
-|workProfileBlockCrossProfileContactsSearch|Boolean|阻止工作配置文件联系人在个人配置文件中的可用性。|
-|workProfileBlockCrossProfileCopyPaste|Boolean|指示设置是否禁用跨配置文件复制/粘贴的布尔值。|
+|workProfileBlockNotificationsWhileDeviceLocked|布尔值|指示设备锁定时是否阻止通知。|
+|workProfileBlockAddingAccounts|布尔值|阻止用户在工作配置文件中添加/删除帐户。|
+|workProfileBluetoothEnableContactSharing|布尔值|允许蓝牙设备访问企业联系人。|
+|workProfileBlockScreenCapture|布尔值|阻止工作配置文件中的屏幕捕获。|
+|workProfileBlockCrossProfileCallerId|布尔值|阻止在个人配置文件中显示工作配置文件调用方 ID。|
+|workProfileBlockCamera|布尔值|阻止工作配置文件相机。|
+|workProfileBlockCrossProfileContactsSearch|布尔值|阻止工作配置文件联系人在个人配置文件中的可用性。|
+|workProfileBlockCrossProfileCopyPaste|布尔值|指示设置是否禁用跨配置文件复制/粘贴的布尔值。|
 |workProfileDefaultAppPermissionPolicy|[androidWorkProfileDefaultAppPermissionPolicyType](../resources/intune-deviceconfig-androidworkprofiledefaultapppermissionpolicytype.md)|必需的密码类型。 可取值为：`deviceDefault`、`prompt`、`autoGrant`、`autoDeny`。|
-|workProfilePasswordBlockFaceUnlock|Boolean|指示是否阻止工作配置文件的人脸解锁。|
-|workProfilePasswordBlockFingerprintUnlock|Boolean|指示是否阻止工作配置文件的指纹解锁。|
-|workProfilePasswordBlockIrisUnlock|Boolean|指示是否阻止工作配置文件的虹膜解锁。|
-|workProfilePasswordBlockTrustAgents|Boolean|指示是否阻止工作配置文件的智能锁定和其他信任代理。|
+|workProfilePasswordBlockFaceUnlock|布尔值|指示是否阻止工作配置文件的人脸解锁。|
+|workProfilePasswordBlockFingerprintUnlock|布尔值|指示是否阻止工作配置文件的指纹解锁。|
+|workProfilePasswordBlockIrisUnlock|布尔值|指示是否阻止工作配置文件的虹膜解锁。|
+|workProfilePasswordBlockTrustAgents|布尔值|指示是否阻止工作配置文件的智能锁定和其他信任代理。|
 |workProfilePasswordExpirationDays|Int32|工作配置文件密码过期前的天数。 有效值为 1 至 365。|
 |workProfilePasswordMinimumLength|Int32|工作配置文件密码的最小长度。 有效值为 4 至 16|
 |workProfilePasswordMinNumericCharacters|Int32|工作配置文件密码中所需的数字字符的最小值。 有效值为 1 到 10|
@@ -103,12 +103,12 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |workProfilePasswordPreviousPasswordBlockCount|Int32|要阻止的以前工作配置文件密码的数量。 有效值为 0 至 24|
 |workProfilePasswordSignInFailureCountBeforeFactoryReset|Int32|在删除工作配置文件和删除所有公司数据之前允许的登录失败次数。 有效值为 1 到 16|
 |workProfilePasswordRequiredType|[androidWorkProfileRequiredPasswordType](../resources/intune-deviceconfig-androidworkprofilerequiredpasswordtype.md)|所需的工作配置文件密码类型。 可取值为：`deviceDefault`、`lowSecurityBiometric`、`required`、`atLeastNumeric`、`numericComplex`、`atLeastAlphabetic`、`atLeastAlphanumeric`、`alphanumericWithSymbols`。|
-|workProfileRequirePassword|Boolean|工作配置文件中是否要求密码|
+|workProfileRequirePassword|布尔值|工作配置文件中是否要求密码|
 |securityRequireVerifyApps|Boolean|要求启用 Android 验证应用功能。|
-|vpnAlwaysOnPackageIdentifier|String|为始终打开的 VPN 启用锁定模式。|
-|vpnEnableAlwaysOnLockdownMode|Boolean|为始终打开的 VPN 启用锁定模式。|
-|workProfileAllowWidgets|Boolean|允许来自工作配置文件应用的小部件。|
-|workProfileBlockPersonalAppInstallsFromUnknownSources|Boolean|阻止从个人配置文件中的未知源安装应用。|
+|vpnAlwaysOnPackageIdentifier|字符串|为始终打开的 VPN 启用锁定模式。|
+|vpnEnableAlwaysOnLockdownMode|布尔值|为始终打开的 VPN 启用锁定模式。|
+|workProfileAllowWidgets|布尔值|允许来自工作配置文件应用的小部件。|
+|workProfileBlockPersonalAppInstallsFromUnknownSources|布尔值|阻止从个人配置文件中的未知源安装应用。|
 
 
 
