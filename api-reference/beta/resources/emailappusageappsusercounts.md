@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sarahwxy
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: c6393d8f99d734c63c810622c91ce508adfecf23
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: b84662ef47bd9bb8444bed2d13e1dcec3defe482cfbe34fa1441649b66af534e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981828"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54153403"
 ---
 # <a name="emailappusageappsusercounts-resource-type"></a>emailAppUsageAppsUserCounts 资源类型
 

@@ -1,33 +1,33 @@
 ---
 title: win32LobAppRestartSettings 资源类型
-description: 包含描述应用程序安装后重启协调的属性。
+description: 包含描述应用安装后重启协调的属性。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 31f9fefd725f59c9884e3fe4442a7154aaed4529
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 83347e7f483999e38084c2f831d00f6936e048b78db831d6339edf0a6488803a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49255635"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54160966"
 ---
 # <a name="win32lobapprestartsettings-resource-type"></a>win32LobAppRestartSettings 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-包含描述应用程序安装后重启协调的属性。
+包含描述应用安装后重启协调的属性。
 
 ## <a name="properties"></a>属性
-|属性|类型|描述|
+|属性|类型|说明|
 |:---|:---|:---|
-|gracePeriodInMinutes|Int32|在应用程序安装后重新启动设备之前要等待的分钟数。|
-|countdownDisplayBeforeRestartInMinutes|Int32|为等待重新启动而显示倒计时对话框之前的重新启动时间的分钟数。|
-|restartNotificationSnoozeDurationInMinutes|Int32|选择 "暂停" 按钮时暂停 "重新启动通知" 对话框的分钟数。|
+|gracePeriodInMinutes|Int32|应用安装后重启设备之前等待的分钟数。|
+|countdownDisplayBeforeRestartInMinutes|Int32|重启时间前显示挂起重启的倒计时器对话框的分钟数。|
+|restartNotificationSnoozeDurationInMinutes|Int32|选择"暂停"按钮时暂停重新启动通知对话框的分钟数。|
 
 ## <a name="relationships"></a>关系
 无

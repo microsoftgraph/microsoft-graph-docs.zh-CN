@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bc40612bd3aa5a2d7452eaa1d3f9535d73191205
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 678714fe7a04ac86d5fc424b83b7df6f729230ae
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51154229"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58254073"
 ---
 # <a name="create-userexperienceanalyticsdeviceperformance"></a>创建 userExperienceAnalyticsDevicePerformance
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本下的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -27,9 +27,9 @@ ms.locfileid: "51154229"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -71,7 +71,8 @@ POST /deviceManagement/userExperienceAnalyticsDevicePerformance
 |blueScreenCount|Int32|最近 14 天内的蓝屏数。 有效值为 0 到 9999999|
 |restartCount|Int32|最近 14 天内的重启次数。 有效值为 0 到 9999999|
 |averageBlueScreens|双精度|平均 (平均) 14 天内每个设备的蓝屏数量。 有效值为 0 到 9999999|
-|averageRestarts|双精度|平均 (平均) 最近 14 天内每个设备的重启次数。 有效值为 0 到 9999999|
+|averageRestarts|双精度|平均 (平均) 最近 14 天内每个设备重新启动次数的平均值。 有效值为 0 到 9999999|
+|startupPerformanceScore|双精度|用户体验分析设备启动性能分数。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
 
 
 
@@ -85,7 +86,7 @@ POST /deviceManagement/userExperienceAnalyticsDevicePerformance
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDevicePerformance
 Content-type: application/json
-Content-length: 635
+Content-length: 684
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDevicePerformance",
@@ -106,7 +107,8 @@ Content-length: 635
   "blueScreenCount": 15,
   "restartCount": 12,
   "averageBlueScreens": 6.0,
-  "averageRestarts": 5.0
+  "averageRestarts": 5.0,
+  "startupPerformanceScore": 7.666666666666667
 }
 ```
 
@@ -115,7 +117,7 @@ Content-length: 635
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 684
+Content-Length: 733
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDevicePerformance",
@@ -137,7 +139,8 @@ Content-Length: 684
   "blueScreenCount": 15,
   "restartCount": 12,
   "averageBlueScreens": 6.0,
-  "averageRestarts": 5.0
+  "averageRestarts": 5.0,
+  "startupPerformanceScore": 7.666666666666667
 }
 ```
 

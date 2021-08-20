@@ -1,26 +1,26 @@
 ---
 title: deviceManagementSettingBooleanConstraint 资源类型
-description: 约束强制实施特定的布尔值
+description: 约束 强制实施特定布尔值
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2a50b5a4c8f51b7b9a4bc548245f9bd24d36f383
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 32a0dcf4d65df9375aff4aab865535f98999c3015f470bf9ecb368867a4840ad
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49275564"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54122493"
 ---
 # <a name="devicemanagementsettingbooleanconstraint-resource-type"></a>deviceManagementSettingBooleanConstraint 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-约束强制实施特定的布尔值
+约束 强制实施特定布尔值
 
 
 继承自 [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)
