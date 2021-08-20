@@ -3,12 +3,12 @@ title: Microsoft Graph 已知问题
 description: 本文介绍了 Microsoft Graph 已知问题。
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: 505705c870c32b93221ff398089b150e0a826c7d617ff62483748dcb5117f712
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2e4fe37e6a00337f36fea053b462e5b3a9e1a72f
+ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163520"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58384427"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
@@ -261,6 +261,10 @@ Microsoft Graph 为组和 Microsoft Teams 公开了两个用于访问 API 的权
 
 有关使用 delta 查询的已知问题，请参阅本文中的 [delta 查询部分](#delta-query)。
 
+### <a name="removing-a-group-owner-also-removes-the-user-as-a-group-member"></a>删除组所有者还将该用户作为组成员删除
+
+当调用 [DELETE /groups/{id}/owners](/graph/api/group-delete-owners.md) 时，也将从 /groups/{id}/members 列表中移除用户。 要解决此问题，请从所有者和成员中移除用户，然后等待 10 秒，再将其添加回成员。
+
 ## <a name="identity-and-access--application-and-service-principal-apis"></a>身份和访问 | 应用程序和服务主体 API
 
 当前处于开发阶段的 [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) 和 [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true) 实体有变化。下面总结了当前限制和处于开发阶段的 API 功能。
@@ -298,7 +302,7 @@ JSON 批处理请求中不得包含任何嵌套批处理请求。
 
 ### <a name="all-individual-requests-must-be-synchronous"></a>所有单个请求必须同步
 
-批处理请求中包含的所有请求都必须同步执行。如果存在，将忽略 `respond-async` 首选项。
+批处理请求中包含的所有请求都必须同步运行。 如果存在，将忽略 `respond-async` 首选项。
 
 ### <a name="no-transactions"></a>无事务
 
@@ -316,9 +320,9 @@ JSON 批处理请求目前限定为 20 个单独请求。
 
 单独请求可以依赖其他单独请求。目前，请求只能依赖于单个其他请求，并且必须遵循下面的三种模式之一：
 
-1. 平行 - 没有单独的请求在 `dependsOn` 属性中声明依赖项。
+1. 并行 - 没有单个请求在 **dependsOn** 属性中声明依赖项。
 2. 串行 - 所有单独请求都依赖于之前的单独请求。
-3. 相同 - 在 `dependsOn` 属性中声明依赖项的所有单独请求均声明了相同的依赖项。
+3. 相同 - 在 **dependsOn 属性中陈述依赖项的所有单个请求都** 状态相同的依赖项。 **Note**： 使用此模式发出的请求将按顺序运行。
 
 随着 JSON 批处理技术日臻成熟，这些限制将会被取消。
 

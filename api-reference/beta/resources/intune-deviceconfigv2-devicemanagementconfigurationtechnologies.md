@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b0e6a6324f9157fb528fd5aeb7772f4c1e8721fe
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 9c935c1f69e843940a9e4aa29199dbfd9b5a02aa3528f7612c72055ab3f2efbc
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52666693"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54185794"
 ---
 # <a name="devicemanagementconfigurationtechnologies-enum-type"></a>deviceManagementConfigurationTechnologies 枚举类型
 
@@ -26,8 +26,8 @@ ms.locfileid: "52666693"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|无法通过任何通道部署设置|
-|mdm|1|可通过 MDM 通道部署设置|
-|windows10XManagement|2|可通过 Windows10XManagement 通道部署设置|
+|mdm|1 |可通过 MDM 通道部署设置|
+|windows10XManagement|2 |可通过 Windows10XManagement 通道部署设置|
 |configManager|4 |可通过 ConfigManager 通道部署设置|
 |microsoftSense|128|可以通过 SENSE 代理通道部署设置|
 

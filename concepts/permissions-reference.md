@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 3e3cbb68dfa9bfcff5b04f27de0823c76bf89ccf
-ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
+ms.openlocfilehash: 25017432241bd73b17efddb7399b5df5c3221e33
+ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58397052"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58384483"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -96,24 +96,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/members?$select=id,displayName,
 }
 ```
 
-## <a name="retriving-permission-ids"></a>正在检索权限 ID
-
-如果需要使用Azure CLI、PowerShell 或基础结构作为代码框架来设置权限，则可能需要要使用的权限的标识符，而不是名称。 可以通过运行 来使用Azure CLI检索标识符 `az ad sp list`。 但是，这会生成一个非常长的列表，并且可能很难找到所需的特定权限。 如果已经知道所需权限的名称，则可以使用Azure CLI运行以下命令：
-
-```bash
-az ad sp list --query "[?appDisplayName=='Microsoft Graph'].{permissions:oauth2Permissions}[0].permissions[?value=='<NAME OF PERMISSION>'].{id: id, value: value, adminConsentDisplayName: adminConsentDisplayName, adminConsentDescription: adminConsentDescription}[0]" --all
-```
-
-响应应类似于以下示例，其中包含说明、标识符、显示名称和权限名称：
-
-```json
-{
-  "adminConsentDescription": "Allows the app to list groups, and to read their properties and all group memberships on behalf of the signed-in user.  Also allows the app to read calendar, conversations, files, and other group content for all groups the signed-in user can access. ",
-  "adminConsentDisplayName": "Read all groups",
-  "id": "5f8c59db-677d-491f-a6b8-5f174b11ec1d",
-  "value": "Group.Read.All"
-}
-```
+---
 
 ## <a name="access-reviews-permissions"></a>访问评审权限
 
