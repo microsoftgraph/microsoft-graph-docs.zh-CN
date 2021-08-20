@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fefde9fa13849a910c56e4ebaed870ebb9edac62
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: d5e50f14b121860a0442735a23b572353d61688f4d9d8be16627a60d3c048fd5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50446698"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54242704"
 ---
 # <a name="windowskiosksinglewin32app-resource-type"></a>windowsKioskSingleWin32App 资源类型
 
 命名空间：microsoft.graph
 
-> **重要提示：** /beta 版本的 Microsoft Graph API 可能会更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "50446698"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|win32App|[windowsKioskWin32App](../resources/intune-deviceconfig-windowskioskwin32app.md)|这是 win32 应用，可在展台模式下启动使用|
+|win32App|[windowsKioskWin32App](../resources/intune-deviceconfig-windowskioskwin32app.md)|这是在展台模式下可供启动使用的 win32 应用|
 
 ## <a name="relationships"></a>关系
 无

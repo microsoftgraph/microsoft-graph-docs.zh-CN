@@ -1,43 +1,43 @@
 ---
 title: groupPolicyObjectFile 资源类型
-description: 由管理员上载的组策略对象文件。
+description: 管理员上载的组策略对象文件。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f6a11fbf27a8124ac1622b77975501876fa3dda1
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 9fd832adbed7a8a843c5a6e8ec9df37a5c621a1d8d89df1abfb20a8afaef45ef
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49298664"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249816"
 ---
 # <a name="grouppolicyobjectfile-resource-type"></a>groupPolicyObjectFile 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-由管理员上载的组策略对象文件。
+管理员上载的组策略对象文件。
 
 ## <a name="methods"></a>Methods
-|方法|返回类型|Description|
+|方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 groupPolicyObjectFiles](../api/intune-gpanalyticsservice-grouppolicyobjectfile-list.md)|[groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md) 集合|列出 [groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md) 对象的属性和关系。|
 |[获取 groupPolicyObjectFile](../api/intune-gpanalyticsservice-grouppolicyobjectfile-get.md)|[groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md)|读取 [groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md) 对象的属性和关系。|
 |[创建 groupPolicyObjectFile](../api/intune-gpanalyticsservice-grouppolicyobjectfile-create.md)|[groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md)|创建新的 [groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md) 对象。|
 |[删除 groupPolicyObjectFile](../api/intune-gpanalyticsservice-grouppolicyobjectfile-delete.md)|无|删除 [groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md)。|
-|[更新 groupPolicyObjectFile](../api/intune-gpanalyticsservice-grouppolicyobjectfile-update.md)|[groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md)|更新 [groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md) 对象的属性。|
+|[更新 groupPolicyObjectFile](../api/intune-gpanalyticsservice-grouppolicyobjectfile-update.md)|[groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md)|更新 [groupPolicyObjectFile 对象](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md) 的属性。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|尚未记录|
-|groupPolicyObjectId|Guid|GPO Xml 内容中的组策略对象 GUID|
-|ouDistinguishedName|字符串|OU 的可分辨名称。|
-|createdDateTime|DateTimeOffset|首次上传 GroupPolicy 的日期和时间。|
+|id|String|尚未记录|
+|groupPolicyObjectId|Guid|来自 GPO Xml 内容的组策略对象 GUID|
+|ouDistinguishedName|String|OU 的可分辨名称。|
+|createdDateTime|DateTimeOffset|首次上载 GroupPolicy 的日期和时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改 GroupPolicyObjectFile 的日期和时间。|
 |内容|String|组策略对象文件内容。|
 

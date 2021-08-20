@@ -5,30 +5,30 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ae016986f8c3216156a4855f06aa77929e6acefc
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 782dd5d411f65a0dd465612e7f0bd8eaacfb60a7862500ad9d8c81f00305f04c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49299499"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54244818"
 ---
 # <a name="bulkmanageddeviceactionresult-resource-type"></a>bulkManagedDeviceActionResult 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 尚未记录
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
-|successfulDeviceIds|String 集合|成功的设备|
-|failedDeviceIds|String 集合|故障设备|
-|notFoundDeviceIds|String 集合|找不到设备|
-|notSupportedDeviceIds|String 集合|不支持的设备|
+|successfulDeviceIds|String collection|成功的设备|
+|failedDeviceIds|String collection|发生故障的设备|
+|notFoundDeviceIds|String collection|未找到设备|
+|notSupportedDeviceIds|String collection|不支持的设备|
 
 ## <a name="relationships"></a>关系
 无

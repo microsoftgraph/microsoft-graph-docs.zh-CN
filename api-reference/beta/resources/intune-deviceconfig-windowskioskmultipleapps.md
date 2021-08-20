@@ -1,26 +1,26 @@
 ---
 title: windowsKioskMultipleApps 资源类型
-description: 用于标识展台配置的多模式应用配置的类
+description: 用于标识展台配置的 MultiMode 应用配置的类
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cc30f875ff43b7e1b7336754cce5986f9fa702c1
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: e7be767a72b68eeff6cf85aa46051222d81d18fe13430d473db96332e1ec57a5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49231526"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54164298"
 ---
 # <a name="windowskioskmultipleapps-resource-type"></a>windowsKioskMultipleApps 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-用于标识展台配置的多模式应用配置的类
+用于标识展台配置的 MultiMode 应用配置的类
 
 
 继承自 [windowsKioskAppConfiguration](../resources/intune-deviceconfig-windowskioskappconfiguration.md)
@@ -28,11 +28,11 @@ ms.locfileid: "49231526"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|apps|[windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md) 集合|这些是仅可从 "开始" 菜单启动的 Windows 应用商店应用程序。 此集合最多可包含128个元素。|
-|showTaskBar|Boolean|通过此设置，管理员可以指定是否显示任务条形图。|
-|allowAccessToDownloadsFolder|Boolean|此设置允许访问文件资源管理器中的下载文件夹。|
-|disallowDesktopApps|Boolean|此设置指示允许桌面应用。 默认值为 true。|
-|startMenuLayoutXml|Binary|允许管理员覆盖默认的 "开始" 布局，并阻止用户对其进行更改。 通过基于布局修改架构指定 XML 文件来修改布局。 XML 必须采用二进制格式。|
+|apps|[windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md) 集合|这是唯一Windows应用商店应用可从应用商店启动"开始"菜单。 此集合最多可包含 128 个元素。|
+|showTaskBar|布尔值|此设置允许管理员指定是否显示任务栏。|
+|allowAccessToDownloadsFolder|布尔值|此设置允许访问文件资源管理器中的"下载"文件夹。|
+|disallowDesktopApps|布尔值|此设置指示允许桌面应用。 默认值为 true。|
+|startMenuLayoutXml|Binary|允许管理员覆盖默认"开始"屏幕布局，并阻止用户更改它。 通过基于布局修改架构指定 XML 文件来修改布局。 XML 需要采用二进制格式。|
 
 ## <a name="relationships"></a>关系
 无
