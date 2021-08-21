@@ -4,13 +4,13 @@ description: 获取请求者对请求角色分配权限。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: f627d7e6be3f79b7064370b9523c409882f5ca22
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+author: shauliu1
+ms.openlocfilehash: 8c2fec79729b4ede406b27e973eaa23ae912baf3
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52037317"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58454225"
 ---
 # <a name="privilegedroleassignmentrequest-my"></a>privilegedRoleAssignmentRequest： my
 
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/beta/privilegedRoleAssignmentRequests/my
 
 
 ##### <a name="response"></a>响应
-下面展示了示例响应。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

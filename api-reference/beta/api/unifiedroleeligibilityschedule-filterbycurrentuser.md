@@ -1,16 +1,16 @@
 ---
 title: unifiedRoleEligibilitySchedule：filterByCurrentUser
 description: 获取 unifiedRoleEligibilitySchedule 对象及其属性的列表，这些对象按特定用户主体进行筛选
-author: shauliu
+author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: c74306e5e39200db1dd5b0ede2a93a818e928f11
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: 0566ea8acd39f9f9cd9ea39439b333ed74d371c2
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334708"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453945"
 ---
 # <a name="unifiedroleeligibilityschedule-filterbycurrentuser"></a>unifiedRoleEligibilitySchedule：filterByCurrentUser
 命名空间：microsoft.graph
@@ -35,16 +35,18 @@ ms.locfileid: "53334708"
 }
 -->
 ``` http
-GET roleManagement/directory/roleEligibilitySchedules/filterByCurrentUser
+GET roleManagement/directory/roleEligibilitySchedules/filterByCurrentUser(on='principal')
 ```
 
-## <a name="query-parameters"></a>查询参数
+## <a name="function-parameters"></a>函数参数
 下表显示了可用于此方法的参数。
 
 |参数|类型|说明|
 |:---|:---|:---|
-|on|roleEligibilityScheduleFilterByCurrentUserOptions|当前用户的 ID。|
+|on|roleEligibilityScheduleFilterByCurrentUserOptions|当前登录的用户。 允许的值为 `principal` 。|
 
+## <a name="optional-query-parameters"></a>可选的查询参数
+此方法支持 `$select` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -56,7 +58,7 @@ GET roleManagement/directory/roleEligibilitySchedules/filterByCurrentUser
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应 [代码和 unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md) 集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -67,12 +69,14 @@ GET roleManagement/directory/roleEligibilitySchedules/filterByCurrentUser
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilitySchedules/filterByCurrentUser(on='eb18c026-c026-eb18-26c0-18eb26c018eb')
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilitySchedules/filterByCurrentUser(on='principal')
 ```
 
 
 ### <a name="response"></a>响应
-**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
+下面是显示通过组分配的资格计划的响应示例。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -84,23 +88,31 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "id": "eb18c026-c026-eb18-26c0-18eb26c018eb",
-      "principalId": "eb18c026-c026-eb18-26c0-18eb26c018eb",
-      "roleDefinitionId": "eb18c026-c026-eb18-26c0-18eb26c018eb",
-      "directoryScopeId": "eb18c026-c026-eb18-26c0-18eb26c018eb",
-      "appScopeId": "eb18c026-c026-eb18-26c0-18eb26c018eb",
-      "createdUsing": "eb18c026-c026-eb18-26c0-18eb26c018eb",
-      "createdDateTime": "2020-09-09T21:35:27.91Z",
-      "modifiedDateTime": "2020-09-09T21:35:27.91Z",
-      "status": "Provisioned",
-      "scheduleInfo": {
-        "@odata.type": "microsoft.graph.requestSchedule"
-      },
-      "memberType": "direct"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(unifiedRoleEligibilitySchedule)",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.unifiedRoleEligibilitySchedule",
+            "id": "6938d75d-ad66-4c7d-9028-0c9b00296945",
+            "principalId": "c6ad1942-4afa-47f8-8d48-afb5d8d69d2f",
+            "roleDefinitionId": "fe930be7-5e62-47db-91af-98c3a49a38b1",
+            "directoryScopeId": "/",
+            "appScopeId": null,
+            "createdUsing": "6938d75d-ad66-4c7d-9028-0c9b00296945",
+            "createdDateTime": "2021-08-09T10:15:05.96Z",
+            "modifiedDateTime": "0001-01-01T08:00:00Z",
+            "status": "Provisioned",
+            "memberType": "Direct",
+            "scheduleInfo": {
+                "startDateTime": "2021-08-09T10:15:05.96Z",
+                "recurrence": null,
+                "expiration": {
+                    "type": "noExpiration",
+                    "endDateTime": null,
+                    "duration": null
+                }
+            }
+        }
+    ]
 }
 ```
 

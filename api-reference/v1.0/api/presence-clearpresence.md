@@ -5,18 +5,16 @@ author: jsandoval-msft
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 02140f99accf36bfac156996e83bd75de2bb3b19
-ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
+ms.openlocfilehash: 50139466774cbecd0ef1fe87addfb7bd4d2886a2
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58397081"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453833"
 ---
 # <a name="presence-clearpresence"></a>presence： clearPresence
 
 命名空间：microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 清除用户的应用程序状态会话。 如果它是用户的唯一状态会话，则用户状态将更改为 `Offline/Offline` 。
 

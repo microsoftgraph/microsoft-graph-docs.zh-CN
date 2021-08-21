@@ -4,13 +4,13 @@ description: 使角色分配永久。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: a66834f5937b8dea55391553536670ff06ae83c6
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+author: shauliu1
+ms.openlocfilehash: 20f78bd0f01c214a6f7c5fea40df4ac7042b141c
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52037373"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58454148"
 ---
 # <a name="privilegedroleassignment-makepermanent"></a>privilegedRoleAssignment：makePermanent
 
@@ -97,7 +97,7 @@ Content-length: 110
 
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

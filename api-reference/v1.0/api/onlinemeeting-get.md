@@ -5,12 +5,12 @@ author: mkhribech
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 468aa51cc9939c247ade3a205b91996fa6685734
-ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
+ms.openlocfilehash: 72bd88dfef768d372b86f3f53eab5d99fc3ac685
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52896576"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58454176"
 ---
 # <a name="get-onlinemeeting"></a>获取 onlineMeeting
 
@@ -46,7 +46,7 @@ GET /users/{userId}/onlineMeetings/{meetingId}
 GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'
 ```
 
-若要使用具有委派权限和应用权限 **的 joinWebUrl** 获取 onlineMeeting：
+若要使用具有委派权限和应用权限的 **joinWebUrl** 获取 onlineMeeting：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
@@ -276,7 +276,7 @@ Content-Type: application/json
 ```
 
 ### <a name="example-3-retrieve-an-online-meeting-by-joinweburl"></a>示例 3：通过 JoinWebUrl 检索联机会议
-您可以使用用户令牌或应用程序令牌通过 JoinWebUrl 检索会议信息。 此选项可用于支持会议 ID 未知但 JoinWebUrl 为的用例，例如当用户创建会议 (例如，在 Microsoft Teams 客户端) 中，而单独的应用程序需要检索会议详细信息作为后续操作。
+您可以使用用户令牌或应用程序令牌通过 JoinWebUrl 检索会议信息。 此选项可用于支持会议 ID 未知但 JoinWebUrl 为的用例，例如，当用户在 Microsoft Teams 客户端) 中创建会议 (，并且单独的应用程序需要检索会议详细信息作为后续操作。
 
 #### <a name="request"></a>请求
 

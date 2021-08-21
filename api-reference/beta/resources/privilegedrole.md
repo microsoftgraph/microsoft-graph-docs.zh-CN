@@ -1,16 +1,16 @@
 ---
 title: privilegedRole 资源类型
-description: 表示 Azure AD 管理员角色，例如：全局管理员、帐单管理员、 **服务管理员、用户管理员、密码管理员** 等。
+description: 表示 Azure AD 管理员角色，例如：全局管理员、帐单管理员、服务管理员、 **用户管理员、密码管理员** 等。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: 4eca2f1a3d9de4fa7f625cd6b559b5a0c9c03916
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+author: shauliu1
+ms.openlocfilehash: 5784a28ec18c0ed02540321d92ee2bab386dc760
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444012"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58452412"
 ---
 # <a name="privilegedrole-resource-type"></a>privilegedRole 资源类型
 
@@ -18,10 +18,10 @@ ms.locfileid: "50444012"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示 Azure AD 管理员角色，例如：全局管理员、帐单管理员、 **服务管理员、用户管理员、密码管理员** 等。
+表示 Azure AD 管理员角色，例如：全局管理员、帐单管理员、服务管理员、 **用户管理员、密码管理员** 等。
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|

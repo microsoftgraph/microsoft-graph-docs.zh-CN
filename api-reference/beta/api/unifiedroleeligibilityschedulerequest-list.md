@@ -1,16 +1,16 @@
 ---
 title: 列出 unifiedRoleEligibilityScheduleRequests
 description: 获取 unifiedRoleEligibilityScheduleRequest 对象及其属性的列表。
-author: shauliu
+author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: eaee624680315655f7e2326338ef684043c392f8
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: 4d25c6c59de58daea7c2c8cded071c94ff3d18b4
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334659"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58454134"
 ---
 # <a name="list-unifiedroleeligibilityschedulerequests"></a>列出 unifiedRoleEligibilityScheduleRequests
 命名空间：microsoft.graph
@@ -87,7 +87,9 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilitySch
 
 
 ### <a name="response"></a>响应
-**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
+下面展示了示例响应。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -99,25 +101,47 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleEligibilityScheduleRequests",
   "value": [
     {
-      "id": "a2e242a0-42a0-a2e2-a042-e2a2a042e2a2",
-      "action": "String",
-      "principalId": "String",
-      "roleDefinitionId": "String",
-      "directoryScopeId": "String",
-      "appScopeId": "String",
-      "isValidationOnly": "Boolean",
-      "targetScheduleId": "String",
-      "justification": "String",
+      "id": "19757c21-7844-4478-b4b6-68aed0cd2d52",
+      "status": "Provisioned",
+      "createdDateTime": "2021-07-13T19:17:33.373Z",
+      "completedDateTime": "2021-07-13T19:17:33.427Z",
+      "approvalId": null,
+      "customData": null,
+      "action": "AdminAssign",
+      "principalId": "5659e4d9-9ab6-4678-9f1b-72322d469e9b",
+      "roleDefinitionId": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+      "directoryScopeId": "/",
+      "appScopeId": null,
+      "isValidationOnly": false,
+      "targetScheduleId": "19757c21-7844-4478-b4b6-68aed0cd2d52",
+      "justification": null,
+      "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+          "displayName": null,
+          "id": "fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f"
+        }
+      },
       "scheduleInfo": {
-        "@odata.type": "microsoft.graph.requestSchedule"
+        "startDateTime": "2021-07-13T19:17:33.4258055Z",
+        "recurrence": null,
+        "expiration": {
+          "type": "afterDateTime",
+          "endDateTime": "2022-07-13T19:16:02.506Z",
+          "duration": null
+        }
       },
       "ticketInfo": {
-        "@odata.type": "microsoft.graph.ticketInfo"
+      "ticketNumber": null,
+      "ticketSystem": null
       }
     }
   ]
 }
+        
 ```
 

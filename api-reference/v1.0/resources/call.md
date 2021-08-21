@@ -1,22 +1,22 @@
 ---
 title: call 资源类型
-description: 当应用程序有传入呼叫或应用程序通过 `app/calls` 上的 `POST` 创建新的传出呼叫时，将创建 **call** 资源。
+description: 当应用程序有传入呼叫或应用程序通过 `communications/calls` 上的 `POST` 创建新的传出呼叫时，将创建 **call** 资源。
 author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 8a3fb0ced8fec9c0a2dfba0127e22e79c241ec1eb611fc3c7da45148733097d0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e34757802a0e0c6dc3585069577fe12bb6258eac
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178617"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58452755"
 ---
 # <a name="call-resource-type"></a>call 资源类型
 
 命名空间：microsoft.graph
 
-当应用程序有传入呼叫或应用程序通过 `app/calls` 上的 `POST` 创建新的传出呼叫时，将创建 **call** 资源。
+当应用程序有传入呼叫或应用程序通过 `communications/calls` 上的 `POST` 创建新的传出呼叫时，将创建 **call** 资源。
 
 呼叫可设置为对等呼叫或群组通话。 要创建或加入群组通话，请提供 `chatInfo` 和 `meetingInfo`。 如果未提供这些项，则自动创建一个新的群组通话。 对于传入呼叫，将这些值记录在高可用性存储中，以便在应用程序崩溃时它可以重新加入呼叫。
 

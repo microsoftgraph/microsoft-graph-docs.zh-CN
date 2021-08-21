@@ -1,16 +1,16 @@
 ---
 title: unifiedRoleEligibilityScheduleInstance：filterByCurrentUser
 description: 获取 unifiedRoleEligibilityScheduleInstance 对象及其属性的列表，这些对象按特定用户主体进行筛选
-author: shauliu
+author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e071add687797a29e65b0a49d217e51243524b42
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: 437f5c2a4d84ea5e2e6d9e270efb33297f29f227
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334512"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453574"
 ---
 # <a name="unifiedroleeligibilityscheduleinstance-filterbycurrentuser"></a>unifiedRoleEligibilityScheduleInstance：filterByCurrentUser
 命名空间：microsoft.graph
@@ -35,15 +35,18 @@ ms.locfileid: "53334512"
 }
 -->
 ``` http
-GET /roleManagement/directory/roleEligibilityScheduleInstances/filterByCurrentUser
+GET /roleManagement/directory/roleEligibilityScheduleInstances/filterByCurrentUser(on='principal')
 ```
 
-## <a name="query-parameters"></a>查询参数
+## <a name="function-parameters"></a>函数参数
 下表显示了可用于此方法的查询参数。
 
 |参数|类型|说明|
 |:---|:---|:---|
-|on|roleEligibilityScheduleInstanceFilterByCurrentUserOptions|当前用户的 ID。|
+|on|roleEligibilityScheduleInstanceFilterByCurrentUserOptions|筛选以查询当前用户作为主体的对象。 允许的值为 `principal` 。 必需。|
+
+## <a name="optional-query-parameters"></a>可选的查询参数
+此方法支持 `$select` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 
 ## <a name="request-headers"></a>请求标头
@@ -56,7 +59,7 @@ GET /roleManagement/directory/roleEligibilityScheduleInstances/filterByCurrentUs
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [unifiedRoleEligibilityScheduleInstance](../resources/unifiedroleeligibilityscheduleinstance.md) 集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [unifiedRoleEligibilityScheduleInstance](../resources/unifiedroleeligibilityscheduleinstance.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -67,12 +70,14 @@ GET /roleManagement/directory/roleEligibilityScheduleInstances/filterByCurrentUs
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityScheduleInstances/filterByCurrentUser(on='5cfd7709-7709-5cfd-0977-fd5c0977fd5c')
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityScheduleInstances/filterByCurrentUser(on='principal')
 ```
 
 
 ### <a name="response"></a>响应
-**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
+下面是通过组分配显示 roleEligibilitySchedule 实例的响应示例。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -84,19 +89,21 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "id": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
-      "principalId": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
-      "roleDefinitionId": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
-      "directoryScopeId": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
-      "appScopeId": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
-      "startDateTime": "2020-09-09T21:35:27.91Z",
-      "endDateTime": "2020-09-09T21:35:27.91Z",
-      "memberType": "direct",
-      "roleEligibilityScheduleId": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(unifiedRoleEligibilityScheduleInstance)",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.unifiedRoleEligibilityScheduleInstance",
+            "id": "5wuT_mJe20eRr5jDpJo4sXbfd22VX0BOmpL501774kM-1-e",
+            "principalId": "92f37639-ba1e-471c-b9ba-922371c740cb",
+            "roleDefinitionId": "fe930be7-5e62-47db-91af-98c3a49a38b1",
+            "directoryScopeId": "/",
+            "appScopeId": null,
+            "startDateTime": "2021-08-06T16:18:04.793Z",
+            "endDateTime": "2022-06-30T00:00:00Z",
+            "memberType": "Group",
+            "roleEligibilityScheduleId": "2303e6ff-5939-496f-8057-9203db4c75f3"
+        }
+    ]
 }
 ```
 

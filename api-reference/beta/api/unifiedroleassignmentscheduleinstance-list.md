@@ -1,16 +1,16 @@
 ---
 title: 列出 unifiedRoleAssignmentScheduleInstances
 description: 获取 unifiedRoleAssignmentScheduleInstance 对象及其属性的列表。
-author: shauliu
+author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 382c5a7ff8b75da06f1d75b06a2bb382137c275d
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: e05ec16ccb23cf6d5921d049f281127e7367c704
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334386"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453805"
 ---
 # <a name="list-unifiedroleassignmentscheduleinstances"></a>列出 unifiedRoleAssignmentScheduleInstances
 命名空间：microsoft.graph
@@ -39,7 +39,7 @@ GET /roleManagement/directory/roleAssignmentScheduleInstances
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持所有 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$select` 和 `$filter` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -87,7 +87,9 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentSche
 
 
 ### <a name="response"></a>响应
-**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
+下面展示了示例响应。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -99,19 +101,33 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleAssignmentScheduleInstances",
   "value": [
     {
-      "id": "eb18c026-c026-eb18-26c0-18eb26c018eb",
-      "principalId": "eb18c026-c026-eb18-26c0-18eb26c018eb",
-      "roleDefinitionId": "eb18c026-c026-eb18-26c0-18eb26c018eb",
-      "directoryScopeId": "eb18c026-c026-eb18-26c0-18eb26c018eb",
-      "appScopeId": "eb18c026-c026-eb18-26c0-18eb26c018eb",
-      "startDateTime": "2020-09-09T21:35:27.91Z",
-      "endDateTime": "2020-09-09T21:35:27.91Z",
-      "assignmentType": "eligible",
-      "memberType": "direct",
-      "roleAssignmentOriginId": "eb18c026-c026-eb18-26c0-18eb26c018eb",
-      "roleAssignmentScheduleId": "eb18c026-c026-eb18-26c0-18eb26c018eb"
+      "id": "4-PYiFWPHkqVOpuYmLiHa_8KmpPnrkhHmG41_UYRbUY-1",
+      "principalId": "939a0aff-aee7-4748-986e-35fd46116d46",
+      "roleDefinitionId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b",
+      "directoryScopeId": "/",
+      "appScopeId": null,
+      "startDateTime": null,
+      "endDateTime": null,
+      "assignmentType": "Assigned",
+      "memberType": "Direct",
+      "roleAssignmentOriginId": "4-PYiFWPHkqVOpuYmLiHa_8KmpPnrkhHmG41_UYRbUY-1",
+      "roleAssignmentScheduleId": "4-PYiFWPHkqVOpuYmLiHa_8KmpPnrkhHmG41_UYRbUY-1"
+    },
+    {
+      "id": "4-PYiFWPHkqVOpuYmLiHa0VbFrscFfZMmRHNcYiRKEg-1",
+      "principalId": "bb165b45-151c-4cf6-9911-cd7188912848",
+      "roleDefinitionId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b",
+      "directoryScopeId": "/",
+      "appScopeId": null,
+      "startDateTime": null,
+      "endDateTime": null,
+      "assignmentType": "Assigned",
+      "memberType": "Direct",
+      "roleAssignmentOriginId": "4-PYiFWPHkqVOpuYmLiHa0VbFrscFfZMmRHNcYiRKEg-1",
+      "roleAssignmentScheduleId": "4-PYiFWPHkqVOpuYmLiHa0VbFrscFfZMmRHNcYiRKEg-1"
     }
   ]
 }

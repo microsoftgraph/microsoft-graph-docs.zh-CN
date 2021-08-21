@@ -4,13 +4,13 @@ description: 创建 privilegedroleassignmentrequest 对象。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: bf834f8c7673d0d82c2ac8a29aa1c5cec46a80a8
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+author: shauliu1
+ms.openlocfilehash: a8ab04d03efa9c54fdc226db9e57939ba193d9ee
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052892"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453707"
 ---
 # <a name="create-privilegedroleassignmentrequest"></a>创建 privilegedRoleAssignmentRequest
 
@@ -55,14 +55,14 @@ POST /privilegedRoleAssignmentRequests
 如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) 对象。
 
 ### <a name="error-codes"></a>错误代码
-此 API 返回标准 HTTP 错误代码。 此外，它可以返回下表中列出的错误代码。
+此 API 返回该标准 HTTP 错误代码。 此外，它可以返回下表中列出的错误代码。
 
 |错误代码     | 错误消息              | 
 |:--------------------| :---------------------|
 | 400 BadRequest | RoleAssignmentRequest 属性为 NULL |
 | 400 BadRequest | 无法反初始化 roleAssignmentRequest 对象。 |
 | 400 BadRequest | RoleId 是必需的。 |
-| 400 BadRequest | 必须指定计划开始日期，并且应大于"现在"。 |
+| 400 BadRequest | 必须指定计划开始日期，并且应大于 Now。 |
 | 400 BadRequest | 此用户、角色和计划类型已存在计划。 |
 | 400 BadRequest | 此用户、角色和审批类型已存在待审批。 |
 | 400 BadRequest | 缺少请求者原因。 |
@@ -120,7 +120,7 @@ Content-type: application/json
 ---
 
 ##### <a name="response"></a>响应
-下面展示了示例响应。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

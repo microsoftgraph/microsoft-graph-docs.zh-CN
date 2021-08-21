@@ -4,13 +4,13 @@ description: filter'' expression.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: 6aabcec3edf3deac15dc60936c13a0c7c4935a49
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+author: shauliu1
+ms.openlocfilehash: 8d24f55f942f33bb2d831f6479461acfa65f96ca
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055279"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58454260"
 ---
 # <a name="list-privilegedoperationevents"></a>列出 privilegedOperationEvents
 
@@ -66,7 +66,7 @@ GET /privilegedOperationEvents
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType%20eq%20'Assign'
 ```
 ##### <a name="response"></a>响应
-以下示例显示了相应的响应。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+以下示例显示了相应的响应。 注意：为了提高可读性，可能缩短此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -126,7 +126,7 @@ Content-length: 547
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType%20eq%20'Activate'
 ```
 ##### <a name="response"></a>响应
-以下示例显示了相应的响应。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+以下示例显示了相应的响应。 注意：为了提高可读性，可能缩短此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -180,14 +180,14 @@ Content-length: 547
 
 ### <a name="get-audit-events-for-role-assignment-deactivation"></a>获取停用的角色分配事件
 ##### <a name="request"></a>请求
-以下示例显示一个请求，请求获取停用的角色分配事件。 在这种情况下，值为 ``requestType`` ``Deactivate`` 。
+以下示例显示一个请求，请求获取用于停用的角色分配事件。 在这种情况下，值为 ``requestType`` ``Deactivate`` 。
 
 <!-- { "blockType": "request" } -->
 ```http
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType%20eq%20'Deactivate'
 ```
 ##### <a name="response"></a>响应
-以下示例显示了相应的响应。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+以下示例显示了相应的响应。 注意：为了提高可读性，可能缩短此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -230,7 +230,7 @@ Content-length: 547
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=(creationDateTime%20ge%202017-06-25T07:00:00Z)%20and%20(creationDateTime%20le%202017-07-25T17:30:17Z)&$count=true&$orderby=creationDateTime%20desc
 ```
 ##### <a name="response"></a>响应
-以下示例显示了相应的响应。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+以下示例显示了相应的响应。 注意：为了提高可读性，可能缩短此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

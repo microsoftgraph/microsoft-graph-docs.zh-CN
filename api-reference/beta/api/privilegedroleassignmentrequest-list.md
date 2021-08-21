@@ -4,13 +4,13 @@ description: '检索 privilegedRoleAssignmentRequest 的集合。 '
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: 3f9627dc19ae2646b27845ee945f9be04b9172b2
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+author: shauliu1
+ms.openlocfilehash: 89eb70733d5b3db1991d93679b963bd6b303ef48
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051064"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453994"
 ---
 # <a name="list-privilegedroleassignmentrequests"></a>列出 privilegedRoleAssignmentRequests
 
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/privilegedRoleAssignmentRequests
 ---
 
 ##### <a name="response"></a>响应
-下面展示了示例响应。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

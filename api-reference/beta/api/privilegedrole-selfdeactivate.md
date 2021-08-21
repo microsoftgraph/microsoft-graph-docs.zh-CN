@@ -4,13 +4,13 @@ description: 停用分配给请求者的角色。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: 5c2b2bbd11308f4a593dce3709581b8facb8516d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+author: shauliu1
+ms.openlocfilehash: 8e92f959c7f23b6c5679af312fc60613be0de93a
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055244"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453490"
 ---
 # <a name="privilegedrole-selfdeactivate"></a>privilegedRole： selfDeactivate
 
@@ -83,7 +83,7 @@ POST https://graph.microsoft.com/beta/privilegedRoles/{id}/selfDeactivate
 
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

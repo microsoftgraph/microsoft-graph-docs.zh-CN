@@ -4,13 +4,13 @@ description: 使用此 API 创建新的 privilegedApproval。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: 3b85324bc8468f0fd6c3c5963ab417ba8c6a9acb
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+author: shauliu1
+ms.openlocfilehash: 5e99d06616d3ddfa08119a6fed352b4ba7b274a1
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055286"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453553"
 ---
 # <a name="create-privilegedapproval"></a>创建 privilegedApproval
 
@@ -91,7 +91,7 @@ Content-length: 180
 
 在请求正文中，提供 [privilegedApproval 对象的](../resources/privilegedapproval.md) JSON 表示形式。
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

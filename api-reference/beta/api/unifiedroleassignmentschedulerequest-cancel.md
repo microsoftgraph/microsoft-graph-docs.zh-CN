@@ -1,23 +1,23 @@
 ---
 title: unifiedRoleAssignmentScheduleRequest：cancel
 description: 取消 unifiedRoleAssignmentScheduleRequest。
-author: shauliu
+author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: f9a74d0b9d341074c3ad68eb1fdad7c77b2baa43
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: 4770603d5b0cc57830f089a42351608a0c75bbca
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334368"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453770"
 ---
 # <a name="unifiedroleassignmentschedulerequest-cancel"></a>unifiedRoleAssignmentScheduleRequest：cancel
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-立即取消 [unifiedRoleAssignmentScheduleRequest，](../resources/unifiedroleassignmentschedulerequest.md) 并要求系统在 30 天后自动删除已取消的请求。
+立即取消 [处于状态的 unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) 对象，并请系统在 30 天后自动删除已取消 `Granted` 的请求。 调用此操作后， **已** 取消的 unifiedRoleAssignmentScheduleRequest 的状态将改为 `Canceled` 。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -48,7 +48,7 @@ POST /roleManagement/directory/roleAssignmentScheduleRequests/{unifiedRoleAssign
 
 ## <a name="response"></a>响应
 
-如果成功，此操作返回 `204 No Content` 响应代码。
+如果成功，此操作返回 `204 No Content` 响应代码。 尝试取消处于不可取消状态的请求，例如，状态为 或 的 unifiedRoleAssignmentScheduleRequest 对象 `Provisioned` `Failed` 将返回 `400 Bad Request` 错误代码。
 
 ## <a name="examples"></a>示例
 
@@ -61,7 +61,7 @@ POST /roleManagement/directory/roleAssignmentScheduleRequests/{unifiedRoleAssign
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentScheduleRequests/{unifiedRoleAssignmentScheduleRequestsId}/cancel
+POST https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentScheduleRequests/15fec3d4-64b1-4b03-beb7-f1ba6dddf6cc/cancel
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/unifiedroleassignmentschedulerequest-cancel-csharp-snippets.md)]
@@ -84,7 +84,6 @@ POST https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentSch
 
 
 ### <a name="response"></a>响应
-**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true

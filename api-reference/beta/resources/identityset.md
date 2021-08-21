@@ -1,27 +1,26 @@
 ---
 author: JeremyKelley
-description: 了解 identityset 资源是标识资源的键控集合。
-ms.date: 09/10/2017
+description: identitySet 资源是标识资源的键集合。
 title: IdentitySet
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: 60fdb901ecd74f3826604d139cad71d9d0844221
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: users
+ms.openlocfilehash: 50f6b45c3121f770019d9b5be7e0492242711e1c
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47966756"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453714"
 ---
-# <a name="identityset-resource-type"></a>了解 identityset 资源类型
+# <a name="identityset-resource-type"></a>identitySet 资源类型
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**了解 identityset**资源是[标识](identity.md)资源的键控集合。
+**identitySet** 资源是标识资源的键 [集合](identity.md)。
 
-它用来表示一组与项目的各种事件相关的标识，例如_创建者_或_上次修改人_。
+它用来表示一组与项目的各种事件相关的标识，例如 _创建者_ 或 _上次修改人_。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -62,15 +61,15 @@ ms.locfileid: "47966756"
 | 属性    | 类型                    | 说明                                             |
 |:------------|:------------------------|:--------------------------------------------------------|
 | application | [标识](identity.md) | 可选。与此操作关联的应用程序。  |
-| 对话| [标识](identity.md) | 可选。 与此操作关联的团队或频道。       |
-| conversationIdentityType| [标识](identity.md) | 可选。 指示 **会话** 属性是否标识团队或频道。|
+| conversation| [标识](identity.md) | 可选。 与此操作关联的团队或频道。       |
+| conversationIdentityType| [标识](identity.md) | 可选。 指示 conversation **属性是** 标识团队还是频道。|
 | 设备      | [标识](identity.md) | 可选。与此操作关联的设备。       |
 | phone       | [identity](identity.md) | 可选。 与此操作关联的电话号码。 |
 | 用户        | [标识](identity.md) | 可选。与此操作关联的用户。         |
 
 ## <a name="remarks"></a>注解 
 
-有关**了解 identityset**资源的使用情况，请参阅[Call](call.md) 。
+请参阅 [Call](call.md) for usage of **identitySet** resources。
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

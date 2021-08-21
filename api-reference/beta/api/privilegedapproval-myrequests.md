@@ -4,13 +4,13 @@ description: 获取请求者的审批请求。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: 93f174018efe918b0b0762548800f4168d8c8cdf
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+author: shauliu1
+ms.openlocfilehash: 9403997a9a666a78bc40defe5d49e5dd0e68f2ba
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055293"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453189"
 ---
 # <a name="privilegedapproval-myrequests"></a>privilegedApproval：myRequests
 
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/privilegedApproval/myRequests
 
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

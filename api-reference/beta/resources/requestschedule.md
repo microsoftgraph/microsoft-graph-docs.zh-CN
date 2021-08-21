@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 33abd221d22d37cc58bcf3770b4e28fa78b77064
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 8336366a1e6c63b6f76b293b6445f5583a7fd32f
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50718462"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58454029"
 ---
 # <a name="requestschedule-resource-type"></a>requestSchedule 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "50718462"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 [Azure AD 权利管理](entitlementmanagement-root.md)中，访问包分配请求由想要获取访问包分配的用户创建。 此请求可以包括用户希望何时进行工作分配的计划。  来自此类请求的访问包分配也具有计划。
+在 [Azure AD 权利管理](entitlementmanagement-root.md)中，访问包分配请求由想要获取访问包分配的用户创建。 此请求可包括用户希望何时进行工作分配的计划。  由此类请求导致的访问包分配也具有计划。
 
 ## <a name="properties"></a>属性
 
@@ -44,8 +44,7 @@ ms.locfileid: "50718462"
 {
     "startDateTime": "2020-08-11T23:06:53.307Z",
     "expiration": {
-        "endDateTime": "2020-09-10T23:06:53.307Z",
-        "type": "afterDateTime"
+      "@odata.type": "microsoft.graph.expirationPattern"
     }
 }
 ```

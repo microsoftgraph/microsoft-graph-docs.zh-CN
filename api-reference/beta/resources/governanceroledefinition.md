@@ -4,13 +4,13 @@ description: 表示角色定义。 对于 Azure 资源，它可以表示 Azure R
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: dd4a9fc90d3c12669464a5e9b931b968d4526640
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+author: shauliu1
+ms.openlocfilehash: 4f0144f4d26c8440b4e2bdc0965e88310a4f9145
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50443053"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453721"
 ---
 # <a name="governanceroledefinition-resource-type"></a>governanceRoleDefinition 资源类型
 
@@ -22,23 +22,23 @@ ms.locfileid: "50443053"
 表示角色定义。 对于 Azure 资源，它可以表示 Azure RBAC 角色，如所有者、读者、参与者等。
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法          | 返回类型 |Description|
 |:---------------|:--------|:--------|
 |[List](../api/governanceroledefinition-list.md) | [governanceRoleDefinition](../resources/governanceroledefinition.md) 集合 |列出资源上的角色定义集合。|
-|[获取](../api/governanceroledefinition-get.md) | [governanceRoleDefinition](../resources/governanceroledefinition.md) |读取由 id 指定的角色定义实体的属性和关系。|
+|[Get](../api/governanceroledefinition-get.md) | [governanceRoleDefinition](../resources/governanceroledefinition.md) |读取由 id 指定的角色定义实体的属性和关系。|
 
-现在 `POST` `PUT` ， `PATCH` `DELETE` 实体集上不支持否 `roleDefinitions` ，。
+目前 `POST` `PUT` ， `PATCH` 实体 `DELETE` 集不支持 `roleDefinitions` 、 。
 
 ## <a name="properties"></a>属性
 | 属性    | 类型   | 说明                                                           |
 |:------------|:-------|:----------------------------------------------------------------------|
 | id          | String | 角色定义的 ID。                                        |
-| resourceId  | String | 必需。 与角色定义关联的资源的 ID。 |
+| resourceId  | String | 必填。 与角色定义关联的资源的 ID。 |
 | externalId  | String | 角色定义的外部 ID。                               |
-| displayName | String | 角色显示名称的定义。                              |
-| templateId  | String |                                                                       |
+| displayName | String | 角色显示名称的组。                              |
+| templateId  | 字符串 |                                                                       |
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|

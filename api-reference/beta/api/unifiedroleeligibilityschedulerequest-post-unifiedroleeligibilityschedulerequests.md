@@ -1,23 +1,23 @@
 ---
 title: 创建 unifiedRoleEligibilityScheduleRequest
 description: 创建新的 unifiedRoleEligibilityScheduleRequest 对象。
-author: shauliu
+author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 87e47177645e22f74ec6de73c8c006c400def928
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: bf99b3df56889eb236a48f844134215e82084489
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334540"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453567"
 ---
 # <a name="create-unifiedroleeligibilityschedulerequest"></a>创建 unifiedRoleEligibilityScheduleRequest
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的 [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) 对象。
+创建新的 [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) 对象。 此操作允许管理员和符合条件的用户添加、撤销或扩展符合条件的分配。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -51,17 +51,18 @@ POST /roleManagement/directory/roleEligibilityScheduleRequests
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|unifiedRoleEligibilityScheduleRequest 的唯一标识符。 键，不可为 null，只读。|
-|action|String|表示对项目执行的操作角色分配。 值可以是 <ul><li>`AdminAdd`：管理员将用户/组分配给角色;</li><li>`UserAdd`：用户激活符合条件的分配;</li><li> `AdminUpdate`：管理员更改现有角色分配</li><li>`AdminRemove`：管理员从角色中删除用户/组;<li>`UserRemove`：用户停用活动分配;<li>`UserExtend`：用户请求延长其过期分配;</li><li>`AdminExtend`：管理员扩展即将过期的工作分配。</li><li>`UserRenew`：用户请求续订其已过期的工作分配;</li><li>`AdminRenew`：管理员扩展即将过期的工作分配。</li></ul>|
-|principalId|String|要授予分配的主体的 Objectid。|
-|roleDefinitionId|String|分配所针对的 unifiedRoleDefinition 的 ID。 只读。|
-|directoryScopeId|String|表示工作分配范围的目录对象的 ID。 工作分配的范围决定了已授予主体访问权限的资源集。 目录作用域是存储在目录中的多个应用程序可以理解的共享范围。 应用程序作用域是仅由此应用程序定义和理解的范围。|
-|appScopeId|String|当分配范围特定于应用时，特定于应用的范围的 ID。 工作分配的范围决定了已授予主体访问权限的资源集。 目录作用域是存储在目录中的多个应用程序可以理解的共享范围。 对租户范围范围使用"/"。 应用程序作用域是仅由此应用程序定义和理解的范围。|
-|isValidationOnly|布尔|确定调用是验证还是实际调用的布尔值。 仅在要检查激活是否受 MFA 等其他规则限制，然后再实际提交请求时设置此属性。|
-|targetScheduleId|String|附加到工作分配的计划对象的 ID。|
-|justification|String|创建请求时由用户和管理员提供的消息，说明为什么需要该请求。|
+|action|String|表示角色资格分配上的操作类型。 可能的值有： <ul><li>`AdminAdd`：供管理员向用户或组分配角色资格。</li><li>`AdminExtend`：供管理员扩展即将过期的工作分配。</li><li>`AdminUpdate`：供管理员更改现有角色分配。</li><li>`AdminRenew`：供管理员续订已过期的工作分配。</li><li>`AdminRemove`：供管理员从符合条件的角色中删除用户或组。</li><li>`UserAdd`：供用户激活其符合条件的工作分配。</li><li>`UserExtend`：用户请求延长其即将过期的合格分配。</li><li>`UserRemove`：让用户停用其活动符合条件的分配。</li><li>`UserRenew`：用户请求续订其已过期的合格分配。</li></ul>|
+|appScopeId|字符串|当分配范围特定于应用时，特定于应用的范围的标识符。 工作分配的范围决定了已授予主体访问权限的资源集。 应用程序作用域是仅由此应用程序定义和理解的范围。 用于 `/` 租户范围的应用范围。 使用 **directoryScopeId** 将作用域限制为特定的目录对象，例如管理单元或所有用户。|
+|directoryScopeId|String|表示工作分配范围的目录对象的标识符。 工作分配的范围决定了已授予主体访问权限的资源集。 目录范围是存储在目录中的多个应用程序可以理解的共享范围。 用于 `/` 租户范围范围。 使用 **appScopeId** 将作用域限制为仅应用程序。|
+|isValidationOnly|Boolean|确定调用是验证还是实际调用的布尔值。 仅在要检查激活是否受 MFA 等其他规则限制，然后再实际提交请求时设置此属性。|
+|justification|字符串|创建请求时由用户和管理员提供的消息，说明为什么需要该请求。|
+|principalId|字符串|要向其中授予工作分配的主体的标识符。 例如，用户或组。 对于组，它们必须可分配给角色，即组属性设置为 的 **isAssignableToRole。** `true`|
+|roleDefinitionId|字符串|分配所针对的 unifiedRoleDefinition 的标识符。 只读。|
 |scheduleInfo|[requestSchedule](../resources/requestschedule.md)|请求的计划角色分配对象。|
-|ticketInfo|[ticketInfo](../resources/ticketinfo.md)|附加到请求的 ticketInfo 角色分配，其中包含票证编号和票证系统的详细信息。|
+|targetScheduleId|String|资格分配有效的时间段。|
+|ticketInfo|[ticketInfo](../resources/ticketinfo.md)|附加到请求的 ticketInfo 角色分配包括票证编号和票证系统的详细信息。|
+
+
 
 ## <a name="response"></a>响应
 
@@ -69,7 +70,11 @@ POST /roleManagement/directory/roleEligibilityScheduleRequests
 
 ## <a name="examples"></a>示例
 
-### <a name="request"></a>请求
+### <a name="example-1-admin-to-assign-a-role-eligibility-schedule-request"></a>示例 1：分配角色资格计划请求的管理员
+
+在下面的请求中，管理员创建一个请求，将标识的角色资格分配给 id `fdd7a751-b60b-444a-984c-02652fe8fa1c` 标识的主体 `07706ff1-46c7-4847-ae33-3003830675a1` 。 资格的范围是租户中所有目录对象，直到 2022 年 6 月 30 日午夜 UTC 时间。
+
+#### <a name="request"></a>请求
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -80,23 +85,19 @@ POST /roleManagement/directory/roleEligibilityScheduleRequests
 ``` http
 POST https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityScheduleRequests
 Content-Type: application/json
-Content-length: 511
 
 {
-  "@odata.type": "#Microsoft.Identity.Governance.Common.Data.ExternalModels.V1.unifiedRoleEligibilityScheduleRequest",
-  "action": "String",
-  "principalId": "String",
-  "roleDefinitionId": "String",
-  "directoryScopeId": "String",
-  "appScopeId": "String",
-  "isValidationOnly": "Boolean",
-  "targetScheduleId": "String",
-  "justification": "String",
+  "action": "AdminAssign",
+  "justification": "Assign User Admin eligibility to IT Helpdesk (User) group",
+  "roleDefinitionId": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+  "directoryScopeId": "/",
+  "principalId": "07706ff1-46c7-4847-ae33-3003830675a1",
   "scheduleInfo": {
-    "@odata.type": "microsoft.graph.requestSchedule"
-  },
-  "ticketInfo": {
-    "@odata.type": "microsoft.graph.ticketInfo"
+    "startDateTime": "2021-07-01T00:00:00Z",
+    "expiration": {
+      "endDateTime": "2022-06-30T00:00:00Z",
+      "type": "AfterDateTime"
+    }
   }
 }
 ```
@@ -120,8 +121,10 @@ Content-length: 511
 
 
 
-### <a name="response"></a>响应
-**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -133,21 +136,129 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "id": "a2e242a0-42a0-a2e2-a042-e2a2a042e2a2",
-  "action": "String",
-  "principalId": "String",
-  "roleDefinitionId": "String",
-  "directoryScopeId": "String",
-  "appScopeId": "String",
-  "isValidationOnly": "Boolean",
-  "targetScheduleId": "String",
-  "justification": "String",
-  "scheduleInfo": {
-    "@odata.type": "microsoft.graph.requestSchedule"
-  },
-  "ticketInfo": {
-    "@odata.type": "microsoft.graph.ticketInfo"
-  }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleEligibilityScheduleRequests/$entity",
+    "id": "672c03bf-226a-42ec-a8b7-3bfab96064a1",
+    "status": "Provisioned",
+    "createdDateTime": "2021-07-26T18:08:03.1299669Z",
+    "completedDateTime": "2021-07-26T18:08:06.2081758Z",
+    "approvalId": null,
+    "customData": null,
+    "action": "AdminAssign",
+    "principalId": "07706ff1-46c7-4847-ae33-3003830675a1",
+    "roleDefinitionId": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+    "directoryScopeId": "/",
+    "appScopeId": null,
+    "isValidationOnly": false,
+    "targetScheduleId": "672c03bf-226a-42ec-a8b7-3bfab96064a1",
+    "justification": "Assign User Admin eligibility to IT Helpdesk (User) group",
+    "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "displayName": null,
+            "id": "fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f"
+        }
+    },
+    "scheduleInfo": {
+        "startDateTime": "2021-07-26T18:08:06.2081758Z",
+        "recurrence": null,
+        "expiration": {
+            "type": "afterDateTime",
+            "endDateTime": "2022-06-30T00:00:00Z",
+            "duration": null
+        }
+    },
+    "ticketInfo": {
+        "ticketNumber": null,
+        "ticketSystem": null
+    }
 }
 ```
 
+### <a name="example-2-admin-to-remove-an-existing-role-eligibility-schedule-request"></a>示例 2：管理员删除现有角色资格计划请求
+
+在下面的请求中，管理员创建一个请求，撤消标识为 id 的主体的角色 `fdd7a751-b60b-444a-984c-02652fe8fa1c` **资格** `07706ff1-46c7-4847-ae33-3003830675a1` 。
+
+#### <a name="request"></a>请求
+
+<!-- {
+  "blockType": "request",
+  "name": "create_unifiedroleeligibilityschedulerequest_from_unifiedroleeligibilityschedulerequests_AdminRemove"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityScheduleRequests
+Content-Type: application/json
+
+{
+    "action": "AdminRemove",
+    "justification": "Assign User Admin eligibility to IT Helpdesk (User) group",
+    "roleDefinitionId": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+    "directoryScopeId": "/",
+    "principalId": "07706ff1-46c7-4847-ae33-3003830675a1",
+    "scheduleInfo": {
+        "startDateTime": "2021-07-26T18:08:06.2081758Z",
+        "expiration": {
+            "endDateTime": "2022-06-30T00:00:00Z",
+            "type": "AfterDateTime"
+        }
+    }
+}
+```
+
+
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。 请求返回响应对象，该对象将以前符合条件的工作分配更改的状态显示为 `Revoked` 。 主体将不再看到其以前符合条件的角色。
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleEligibilityScheduleRequest"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleEligibilityScheduleRequests/$entity",
+    "id": "7f88a144-f9a9-4f8c-9623-39c321ae93c2",
+    "status": "Revoked",
+    "createdDateTime": "2021-08-06T17:59:12.4263499Z",
+    "completedDateTime": null,
+    "approvalId": null,
+    "customData": null,
+    "action": "AdminRemove",
+    "principalId": "07706ff1-46c7-4847-ae33-3003830675a1",
+    "roleDefinitionId": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+    "directoryScopeId": "/",
+    "appScopeId": null,
+    "isValidationOnly": false,
+    "targetScheduleId": null,
+    "justification": "Assign User Admin eligibility to IT Helpdesk (User) group",
+    "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "displayName": null,
+            "id": "fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f"
+        }
+    },
+    "scheduleInfo": {
+        "startDateTime": "2021-07-26T18:08:06.2081758Z",
+        "recurrence": null,
+        "expiration": {
+            "type": "afterDateTime",
+            "endDateTime": "2022-06-30T00:00:00Z",
+            "duration": null
+        }
+    },
+    "ticketInfo": {
+        "ticketNumber": null,
+        "ticketSystem": null
+    }
+}
+```

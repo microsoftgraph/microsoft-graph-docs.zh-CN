@@ -1,16 +1,16 @@
 ---
 title: unifiedRoleManagementPolicyAuthenticationContextRule 资源类型
 description: unifiedRoleManagementPolicyAuthenticationContextRule 指定与角色管理策略关联的启用规则。 它派生自 microsoft.graph.unifiedRoleManagementPolicyRule。
-author: shauliu
+author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: d12f3ed100179198d66fe780c9aee6dd93039012edfc105ac58001d24f6e3d77
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 904436a886893881a3ab3e1e483af7badd985af6
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54155888"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58454197"
 ---
 # <a name="unifiedrolemanagementpolicyauthenticationcontextrule-resource-type"></a>unifiedRoleManagementPolicyAuthenticationContextRule 资源类型
 
@@ -23,7 +23,7 @@ unifiedRoleManagementPolicyAuthenticationContextRule 指定与角色管理策略
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|claimValue|字符串|身份验证上下文声明的值。|
+|claimValue|String|身份验证上下文声明的值。|
 |id|String|规则的唯一标识符。 继承自 [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
 |isEnabled|Boolean|指示设置是否已启用。|
 |target|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|规则的目标。 继承自 [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|

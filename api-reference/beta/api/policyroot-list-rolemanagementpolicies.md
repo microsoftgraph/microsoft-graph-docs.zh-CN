@@ -1,16 +1,16 @@
 ---
 title: 列出 roleManagementPolicies
 description: 从 roleManagementPolicies 导航属性获取 unifiedRoleManagementPolicy 资源。
-author: shauliu
+author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: d51e045c25229ceffe84a3553be8878b001bdc24
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: f0fc8d8d996a42111dc7bee21f0475c12b6f28bd
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680729"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58452461"
 ---
 # <a name="list-rolemanagementpolicies"></a>列出 roleManagementPolicies
 命名空间：microsoft.graph

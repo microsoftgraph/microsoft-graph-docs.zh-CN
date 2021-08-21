@@ -1,16 +1,16 @@
 ---
 title: privilegedRoleAssignment 资源类型
-description: '表示特定角色分配特权权限。 '
+description: '表示特定角色分配的特权级别。 '
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: 55b37c195777659b172e668d4e02b60de4f78c0d
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+author: shauliu1
+ms.openlocfilehash: 5589f15c06cd91dca7f23a88cb3140bdc8c0e36c
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440145"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58454078"
 ---
 # <a name="privilegedroleassignment-resource-type"></a>privilegedRoleAssignment 资源类型
 
@@ -18,10 +18,10 @@ ms.locfileid: "50440145"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示特定角色分配特权权限。 
+表示特定角色分配的特权级别。 
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -36,12 +36,12 @@ ms.locfileid: "50440145"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|expirationDateTime|dateTimeOffset|UTC DateTime，临时特权角色分配过期的时间。 对于永久角色分配，该值为 null。|
-|id|string| 特权组的唯一角色分配。 只读。 它采用"userId_roleId"格式，其中 userId 是 Azure AD 用户 ID 的 GUID 字符串，roleId 是 Azure 管理员角色 ID 的 GUID 字符串。|
-|isElevated|boolean|**如此** 如果角色分配激活。 **假** 如果角色分配停用。|
+|expirationDateTime|dateTimeOffset|UTC DateTime 临时特权角色分配过期的时间。 对于永久角色分配，该值为 null。|
+|id|string| 特权组的唯一角色分配。 只读。 其格式为"userId_roleId"，其中 userId 是 Azure AD 用户 ID 的 GUID 字符串，roleId 是 Azure 管理员角色 ID 的 GUID 字符串。|
+|isElevated|boolean|如果激活角色分配，则为 **true。** **假** 如果角色分配停用。|
 |resultMessage|string|服务设置的结果消息。|
-|roleId|string|角色标识符。 采用 GUID 字符串格式。|
-|userId|string|用户标识符。 采用 GUID 字符串格式。|
+|roleId|string|角色标识符。 GUID 字符串格式。|
+|userId|string|用户标识符。 GUID 字符串格式。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|

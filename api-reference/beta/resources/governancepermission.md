@@ -4,13 +4,13 @@ description: '表示 governanceSubject 对特定 governanceResource 具有的访
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: f316a863ecba9ed546b9ba4045e57ada87e97ab9
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+author: shauliu1
+ms.openlocfilehash: c094050f32b020c204d645dfc0c398ad5bfa5d20
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50128832"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453728"
 ---
 # <a name="governancepermission-resource-type"></a>governancePermission 资源类型
 
@@ -24,9 +24,9 @@ ms.locfileid: "50128832"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|accessLevel|字符串|访问级别。 有效值： ``None`` 、 ``UserRead`` 和 ``AdminRead`` ``AdminReadWrite`` 。|
-|isActive|Boolean|指示请求程序是否具有访问角色分配活动应用程序。|
-|isEligible|Boolean|指示请求者是否具有访问角色分配条件。|
+|accessLevel|String|访问级别。 有效值 ``None`` ``UserRead`` ：、、 ``AdminRead`` 和 ``AdminReadWrite`` 。|
+|isActive|Boolean|指示请求程序是否具有访问角色分配活动状态。|
+|isEligible|Boolean|指示请求者是否有符合访问角色分配条件。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

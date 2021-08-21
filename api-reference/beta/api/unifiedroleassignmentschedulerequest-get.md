@@ -1,16 +1,16 @@
 ---
 title: 获取 unifiedRoleAssignmentScheduleRequest
 description: 读取 unifiedRoleAssignmentScheduleRequest 对象的属性和关系。
-author: shauliu
+author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e7b33eea1551bcf0d5bd661cc4f097e8f0e01a82
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: 67724a75a463141508bc56a8f47e3e3414e84d0c
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334407"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453868"
 ---
 # <a name="get-unifiedroleassignmentschedulerequest"></a>获取 unifiedRoleAssignmentScheduleRequest
 命名空间：microsoft.graph
@@ -64,7 +64,7 @@ GET /roleManagement/directory/roleAssignmentScheduleRequests/{unifiedRoleAssignm
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentScheduleRequests/{unifiedRoleAssignmentScheduleRequestsId}
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentScheduleRequests/b5a22921-656a-4429-9c4e-59a5f576614d
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroleassignmentschedulerequest-csharp-snippets.md)]
@@ -87,7 +87,9 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentSche
 
 
 ### <a name="response"></a>响应
-**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
+下面展示了示例响应。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -99,22 +101,40 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "id": "c13ee236-e236-c13e-36e2-3ec136e23ec1",
-    "action": "String",
-    "principalId": "String",
-    "roleDefinitionId": "String",
-    "directoryScopeId": "String",
-    "appScopeId": "String",
-    "isValidationOnly": "Boolean",
-    "targetScheduleId": "String",
-    "justification": "String",
-    "scheduleInfo": {
-      "@odata.type": "microsoft.graph.requestSchedule"
-    },
-    "ticketInfo": {
-      "@odata.type": "microsoft.graph.ticketInfo"
+  "id": "b5a22921-656a-4429-9c4e-59a5f576614d",
+  "status": "Provisioned",
+  "createdDateTime": "2021-07-27T09:18:42.737Z",
+  "completedDateTime": "2021-07-27T09:18:42.78Z",
+  "approvalId": null,
+  "customData": null,
+  "action": "AdminAssign",
+  "principalId": "5659e4d9-9ab6-4678-9f1b-72322d469e9b",
+  "roleDefinitionId": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+  "directoryScopeId": "/",
+  "appScopeId": null,
+  "isValidationOnly": false,
+  "targetScheduleId": "b5a22921-656a-4429-9c4e-59a5f576614d",
+  "justification": "Assign User Admin to IT Helpdesk (User) group",
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": null,
+      "id": "fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f"
     }
+  },
+  "scheduleInfo": {
+    "startDateTime": "2021-07-27T09:18:42.7811184Z",
+    "recurrence": null,
+    "expiration": {
+      "type": "noExpiration",
+      "endDateTime": null,
+      "duration": null
+    }
+  },
+  "ticketInfo": {
+    "ticketNumber": null,
+    "ticketSystem": null
   }
 }
 ```

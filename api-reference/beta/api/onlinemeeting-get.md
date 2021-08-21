@@ -5,12 +5,12 @@ author: mkhribech
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: ba5a1a874431b2cd543ac35057c29127896e1f52
-ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
+ms.openlocfilehash: 97a87a592651fd963f979ebb14078b02a6cfe88d
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52896674"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58452881"
 ---
 # <a name="get-onlinemeeting"></a>获取 onlineMeeting
 
@@ -27,8 +27,8 @@ ms.locfileid: "52896674"
 - 使用 `/meetingAttendanceReport` 路径获取计划会议的会议出席报告，如示例 [6 所示](#example-6-retrieve-the-attendance-report-of-a-meeting)。
 
 > [!NOTE]
->- 会议与会者报告可用于实时事件外的会议，并且仅在会议结束后可用。
->- 只有会议组织者可以访问会议出席报告。
+>- 会议与会者报告可用于实时事件外的其他会议，并且仅在会议结束后可用。
+>- 只有会议组织者可以访问会议与会者报告。
 >- 录制和与会者报告仅适用于实时事件，并且仅在实时事件结束时可用。
 >- 只有实时事件组织者可以访问与会者报告和录制。
 >- 实时事件参与者报告的下载链接和录制将在 60 秒后过期。
@@ -62,7 +62,7 @@ GET /app/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconfere
 GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'
 ```
 
-若要使用具有委派权限和应用权限 **的 joinWebUrl** 获取 onlineMeeting：
+若要使用具有委派权限和应用权限的 **joinWebUrl** 获取 onlineMeeting：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
