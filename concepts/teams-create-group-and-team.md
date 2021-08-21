@@ -4,12 +4,12 @@ description: '创建包含团队的组涉及以下步骤： '
 author: hachandr
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: e8175cf44c97609a24227881f22866c0bb1aeea2
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 9c4eeda4530e7e16c2d6cbf8cc252050f660ab74
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58260784"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453630"
 ---
 # <a name="creating-teams-and-managing-members-using-microsoft-graph"></a>使用 Microsoft Graph 创建团队和管理成员
 
@@ -22,7 +22,7 @@ ms.locfileid: "58260784"
 
 1. 使用“[创建组](/graph/api/group-post-groups?view=graph-rest-1.0)”操作来创建 [Microsoft 365 组](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)。 你可以指定所有者和成员。 确保新创建的组拥有正确的所有者，如步骤 2 所述。
 
-    为了为此组创建团队，需要设置以下属性值，如下所示：
+    若要为此组创建团队，需要设置以下属性值，如下所示：
 
     - **groupTypes** = { "Unified" } 
     - **mailEnabled** = true
