@@ -4,13 +4,13 @@ description: 检索 privilegedRole 对象的列表。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: e785505a3b6a86b82a1631422e0e8861e68551d0
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+author: shauliu1
+ms.openlocfilehash: f42ed124e5c55923c81ee3269a0e377d6b4e62c4
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055258"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453672"
 ---
 # <a name="list-privilegedroles"></a>列出 privilegedRoles
 
@@ -85,7 +85,7 @@ GET https://graph.microsoft.com/beta/privilegedRoles
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

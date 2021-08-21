@@ -1,16 +1,16 @@
 ---
 title: 列出 unifiedRoleAssignmentScheduleRequests
 description: 获取 unifiedRoleAssignmentScheduleRequest 对象及其属性的列表。
-author: shauliu
+author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ce4b24f384bc1cf0b8142459fb85db2cd4bd0c14
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: 8ff26f2b239be9e3fd0e3091debacc836e817572
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334232"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453651"
 ---
 # <a name="list-unifiedroleassignmentschedulerequests"></a>列出 unifiedRoleAssignmentScheduleRequests
 
@@ -95,7 +95,8 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentSche
 
 ### <a name="response"></a>响应
 
-**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+下面展示了示例响应。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -109,22 +110,43 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleAssignmentScheduleRequests",
   "value": [
     {
-      "id": "c13ee236-e236-c13e-36e2-3ec136e23ec1",
-      "action": "String",
-      "principalId": "String",
-      "roleDefinitionId": "String",
-      "directoryScopeId": "String",
-      "appScopeId": "String",
-      "isValidationOnly": "Boolean",
-      "targetScheduleId": "String",
-      "justification": "String",
+      "id": "b5a22921-656a-4429-9c4e-59a5f576614d",
+      "status": "Provisioned",
+      "createdDateTime": "2021-07-27T09:18:42.737Z",
+      "completedDateTime": "2021-07-27T09:18:42.78Z",
+      "approvalId": null,
+      "customData": null,
+      "action": "AdminAssign",
+      "principalId": "5659e4d9-9ab6-4678-9f1b-72322d469e9b",
+      "roleDefinitionId": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+      "directoryScopeId": "/",
+      "appScopeId": null,
+      "isValidationOnly": false,
+      "targetScheduleId": "b5a22921-656a-4429-9c4e-59a5f576614d",
+      "justification": "Assign User Admin to IT Helpdesk (User) group",
+      "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+          "displayName": null,
+          "id": "fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f"
+        }
+      },
       "scheduleInfo": {
-        "@odata.type": "microsoft.graph.requestSchedule"
+        "startDateTime": "2021-07-27T09:18:42.7811184Z",
+        "recurrence": null,
+        "expiration": {
+          "type": "noExpiration",
+          "endDateTime": null,
+          "duration": null
+        }
       },
       "ticketInfo": {
-        "@odata.type": "microsoft.graph.ticketInfo"
+        "ticketNumber": null,
+        "ticketSystem": null
       }
     }
   ]

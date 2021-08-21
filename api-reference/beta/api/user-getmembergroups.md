@@ -1,16 +1,16 @@
 ---
 title: 'user: getMemberGroups'
-description: 返回用户是其成员的所有组。 检查是可传递的，这不同于读取
+description: 返回用户是其成员的所有组。检查是可传递的，不同于读取
 localization_priority: Normal
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: d6a553a7b0c91363b398b50d6faf228d81d99316
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 77f676211623d9077e882f7e12bb70c843b4d88e
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052626"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58452762"
 ---
 # <a name="user-getmembergroups"></a>user: getMemberGroups
 
@@ -20,7 +20,7 @@ ms.locfileid: "52052626"
 
 返回用户是其成员的所有组。检查是可传递的，这和读取 [memberOf](../api/user-list-memberof.md) 导航属性不同，后者仅返回用户是其直接成员的组。
 
-此功能支持 Microsoft 365 和 Azure AD 中设置的其他类型的组。每个请求可以返回的最大组数为 2046 组。注意：Microsoft 365 组不能包含组。因此，Microsoft 365 组中的成员身份始终是直接的。
+此函数Microsoft 365 Azure AD 中预配的组和其他类型的组。 每个请求可返回的最大组数为 11000。 请注意，Microsoft 365组不能包含组。 因此，Microsoft 365的成员始终是直接的。
 
 ## <a name="permissions"></a>权限
 
@@ -104,7 +104,7 @@ Content-length: 33
 
 ##### <a name="response"></a>响应
 
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

@@ -4,13 +4,13 @@ description: 检索 privilegedRoleSummary 对象的属性和关系。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: c03bc052a3a07e2ecf9237d3829f32667a4e2dd3
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+author: shauliu1
+ms.openlocfilehash: f2542f769c42d92e14064a16f53b4b8ed5c827ce
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052878"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453679"
 ---
 # <a name="get-privilegedrolesummary"></a>获取 privilegedRoleSummary
 
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/privilegedRoles/{id}/summary
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

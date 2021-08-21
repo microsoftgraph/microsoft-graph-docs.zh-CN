@@ -4,13 +4,13 @@ description: 检索 privilegedRoleAssignment 对象的属性和关系。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: 8a2369d9745a9df0b689a589ab75c7a10d51147c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+author: shauliu1
+ms.openlocfilehash: b0099c699b3799884235155f35ddfc1a93173534
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055230"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58454141"
 ---
 # <a name="get-privilegedroleassignment"></a>获取 privilegedRoleAssignment
 
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/privilegedRoleAssignments/{id}
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sbounouh
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 8365ff5f42d85698965fe0d63d70c719a037f530
-ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
+ms.openlocfilehash: 07990837a8774f512371fc5b09c400826321abd9
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "51961371"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58454071"
 ---
 # <a name="approval-resource-type"></a>审批资源类型
 
@@ -21,6 +21,8 @@ ms.locfileid: "51961371"
 在 [Azure AD 权利管理](entitlementmanagement-root.md)中，与 关联的决策的审批对象 `accessPackageAssignmentRequest` 。 单个步骤请求可以有一个与它关联的步骤，审批者可以处理该步骤。 同样，多步骤请求可以有多个与之关联的步骤，审批者可以执行这些步骤。 但是，在多步骤审批中，将显示挂起的步骤和之前完成的步骤。
 
 在 [userConsentRequests](../resources/userconsentrequest.md)中，与请求关联的决策的审批对象。
+
+在 ["角色管理](../resources/rolemanagement.md)"中，批准或拒绝角色分配的决策。
 
 ## <a name="methods"></a>方法
 
@@ -47,6 +49,7 @@ ms.locfileid: "51961371"
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.approval",
+  "baseType": "microsoft.graph.entity",
 }
 -->
 ``` json

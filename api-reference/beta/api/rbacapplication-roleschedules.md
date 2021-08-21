@@ -1,16 +1,16 @@
 ---
 title: rbacApplication：roleSchedules
 description: 检索 roleAssignmentSchedules 和 roleEligibilitySchedules。
-author: shauliu
+author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 415d7a5565ff4f35b55f003726d24cfe589b472e
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 3e098692d1c34b0b1eee077554e7620ace9a31f8
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680123"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453987"
 ---
 # <a name="rbacapplication-roleschedules"></a>rbacApplication：roleSchedules
 命名空间：microsoft.graph
@@ -43,10 +43,10 @@ GET /roleManagement/directory/roleSchedules
 
 |参数|类型|说明|
 |:---|:---|:---|
-|directoryScopeId|String|表示工作分配范围的目录对象的 ID。 工作分配的范围决定了已授予主体访问权限的资源集。 目录作用域是存储在目录中的多个应用程序可以理解的共享范围。 应用程序作用域是仅由此应用程序定义和理解的范围。 |
-|appScopeId|String|特定于应用的范围的 ID。 工作分配的范围决定了已授予主体访问权限的资源集。 目录作用域是存储在目录中的多个应用程序可以理解的共享范围。 对租户范围范围使用"/"。 应用程序作用域是仅由此应用程序定义和理解的范围。 |
-|principalId|String|计划所属的主体的 Objectid。 |
-|roleDefinitionId|String|工作分配的 unifiedRoleDefinition 的 ID。 只读。|
+|directoryScopeId|String|表示工作分配范围的目录对象的标识符。 工作分配的范围决定了已授予主体访问权限的资源集。 目录范围是存储在目录中的多个应用程序可以理解的共享范围。 用于 `/` 租户范围范围。 使用 **appScopeId** 将作用域限制为仅应用程序。 |
+|appScopeId|String|当分配范围特定于应用时，特定于应用的范围的标识符。 工作分配的范围决定了已授予主体访问权限的资源集。 应用程序作用域是仅由此应用程序定义和理解的范围。 用于 `/` 租户范围的应用范围。 使用 **directoryScopeId** 将作用域限制为特定目录对象，例如管理单元。 |
+|principalId|String| 要向其中授予工作分配的主体的标识符。 可以是组或用户。 |
+|roleDefinitionId|String|工作分配的 unifiedRoleDefinition 的标识符。 只读。|
 
 
 ## <a name="request-headers"></a>请求标头
@@ -59,7 +59,7 @@ GET /roleManagement/directory/roleSchedules
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md) 集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -95,7 +95,9 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleSchedules(dire
 
 
 ### <a name="response"></a>响应
-**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
+下面展示了示例响应。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

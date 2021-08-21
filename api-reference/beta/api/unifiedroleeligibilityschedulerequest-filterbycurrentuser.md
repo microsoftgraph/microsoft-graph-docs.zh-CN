@@ -1,23 +1,26 @@
 ---
 title: unifiedRoleEligibilityScheduleRequest： filterByCurrentUser
 description: 获取 unifiedRoleEligibilityScheduleRequest 对象及其属性的列表，这些对象按特定用户主体进行筛选
-author: shauliu
+author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 8ad251e390eae9f328b425c1083f189d5c6989a5
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: 48af31c035ec32e4e8f77100004db1ea47411ddf
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334673"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453798"
 ---
 # <a name="unifiedroleeligibilityschedulerequest-filterbycurrentuser"></a>unifiedRoleEligibilityScheduleRequest： filterByCurrentUser
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取与特定主体对象关联的 [unifiedRoleEligibilityScheduleRequest](../resources/unifiedRoleEligibilityScheduleRequest.md) 对象及其属性的列表。
+获取与当前登录的主体对象关联的 [unifiedRoleEligibilityScheduleRequest](../resources/unifiedRoleEligibilityScheduleRequest.md) 对象及其属性的列表。 
+
+> [!NOTE]
+> 此方法不检索当前已登录用户是这些组的成员以及具有符合条件的分配的对象。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -35,7 +38,7 @@ ms.locfileid: "53334673"
 }
 -->
 ``` http
-GET /roleManagement/directory/RoleEligibilityScheduleRequests/filterByCurrentUser
+GET /roleManagement/directory/RoleEligibilityScheduleRequests/filterByCurrentUser(on='principal')
 ```
 
 ## <a name="function-parameters"></a>函数参数
@@ -44,7 +47,11 @@ GET /roleManagement/directory/RoleEligibilityScheduleRequests/filterByCurrentUse
 
 |参数|类型|说明|
 |:---|:---|:---|
-|on|RoleEligibilityScheduleRequestFilterByCurrentUserOptions|主体对象的 ID|
+|on|RoleEligibilityScheduleRequestFilterByCurrentUserOptions|筛选以查询当前用户作为主体的对象。 允许的值为 `principal` 。 必需。 不检索此用户是其中一个成员的组的工作分配。|
+
+
+## <a name="optional-query-parameters"></a>可选的查询参数
+此方法支持 `$select` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 
 ## <a name="request-headers"></a>请求标头
@@ -68,12 +75,14 @@ GET /roleManagement/directory/RoleEligibilityScheduleRequests/filterByCurrentUse
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/roleManagement/directory/RoleEligibilityScheduleRequests/filterByCurrentUser(on='parameterValue')
+GET https://graph.microsoft.com/beta/roleManagement/directory/RoleEligibilityScheduleRequests/filterByCurrentUser(on='principal')
 ```
 
 
 ### <a name="response"></a>响应
-**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
+下面展示了示例响应。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -85,22 +94,44 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(unifiedRoleEligibilityScheduleRequest)",
   "value": [
     {
-      "id": "String (identifier)",
-      "action": "String",
-      "principalId": "String",
-      "roleDefinitionId": "String",
-      "directoryScopeId": "String",
-      "appScopeId": "String",
-      "isValidationOnly": "Boolean",
-      "targetScheduleId": "String",
-      "justification": "String",
+      "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleEligibilityScheduleRequests/$entity",
+      "id": "26bc6813-5457-4302-a482-afafd4e2962a",
+      "status": "Provisioned",
+      "createdDateTime": "2021-07-26T18:15:30.7671793Z",
+      "completedDateTime": "2021-07-26T18:15:33.1266138Z",
+      "approvalId": null,
+      "customData": null,
+      "action": "AdminAssign",
+      "principalId": "fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f",
+      "roleDefinitionId": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+      "directoryScopeId": "/",
+      "appScopeId": null,
+      "isValidationOnly": false,
+      "targetScheduleId": "26bc6813-5457-4302-a482-afafd4e2962a",
+      "justification": "Assign User Admin eligibility to IT Helpdesk (User) group",
+      "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+          "displayName": null,
+          "id": "fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f"
+        }
+      },
       "scheduleInfo": {
-        "@odata.type": "microsoft.graph.requestSchedule"
+        "startDateTime": "2021-07-26T18:15:33.1266138Z",
+        "recurrence": null,
+        "expiration": {
+          "type": "afterDateTime",
+          "endDateTime": "2022-06-30T00:00:00Z",
+          "duration": null
+        }
       },
       "ticketInfo": {
-        "@odata.type": "microsoft.graph.ticketInfo"
+        "ticketNumber": null,
+        "ticketSystem": null
       }
     }
   ]

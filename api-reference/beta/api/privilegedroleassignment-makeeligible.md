@@ -4,13 +4,13 @@ description: 使角色分配合格。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: 97daaea03d58d73ab687380dd221d3e300b446c5
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+author: shauliu1
+ms.openlocfilehash: 26aa8ba7effdeb5aee270d02bec60ee2e7a950dd
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52037443"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453595"
 ---
 # <a name="privilegedroleassignment-makeeligible"></a>privilegedRoleAssignment：makeEligible
 
@@ -18,7 +18,7 @@ ms.locfileid: "52037443"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使角色分配合格。 如果角色分配在调用之前已符合条件，则不执行任何操作。 如果角色分配是永久性的，并且请求者与目标用户不同，角色分配将变为合格状态，并且将为目标用户停用角色。 如果请求者是目标用户，并且角色是安全管理员或特权角色管理员，则角色将在默认过期后激活。
+使角色分配合格。 如果角色分配在调用之前已符合条件，则它不执行任何操作。 如果角色分配是永久性的，并且请求者与目标用户不同，角色分配将变为合格状态，并且将为目标用户停用角色。 如果请求者是目标用户，并且角色是安全管理员或特权角色管理员，则角色将在默认过期后激活。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -82,7 +82,7 @@ POST https://graph.microsoft.com/beta/privilegedRoleAssignments/{id}/makeEligibl
 
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

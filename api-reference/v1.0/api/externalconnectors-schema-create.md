@@ -5,12 +5,12 @@ author: mecampos
 localization_priority: Normal
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 6f271195136a3a469de871e3f17fec5e485ff86c
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: e1b928041e7891127a5e1de4fa46c5906815dd90
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53580710"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58454239"
 ---
 # <a name="create-schema"></a>创建架构
 命名空间：microsoft.graph.externalConnectors
@@ -43,12 +43,7 @@ POST /external/connections/{id}/schema
 
 ## <a name="response"></a>响应
 
-在请求中包含 标头后，如果成功，此方法在响应标头中返回 响应代码和 `Prefer: respond-async` `202 Accepted` URL，可用于 `Location` [获取操作状态](../api/externalconnectors-connectionoperation-get.md)。
-
-如果请求中不包含 标头，如果成功，此方法在响应正文中返回 响应 `Prefer: respond-async` `201 Created` 代码和新[](../resources/externalconnectors-schema.md)架构对象。
-
-> [!NOTE]
-> 创建架构是一个长时间运行的过程，容易出现网关超时。 我们建议使用 `Prefer: respond-async` 标头以避免超时错误。
+如果成功，此方法在响应标头中返回 响应代码和 `202 Accepted` URL，可用于 `Location` [获取操作状态](../api/externalconnectors-connectionoperation-get.md)。
 
 ## <a name="examples"></a>示例
 
@@ -68,7 +63,6 @@ POST /external/connections/{id}/schema
 ```http
 POST https://graph.microsoft.com/v1.0/external/connections/contosohr/schema
 Content-type: application/json
-Prefer: respond-async
 
 {
   "baseType": "microsoft.graph.externalItem",

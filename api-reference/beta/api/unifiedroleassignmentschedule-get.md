@@ -1,16 +1,16 @@
 ---
 title: 获取 unifiedRoleAssignmentSchedule
 description: 读取 unifiedRoleAssignmentSchedule 对象的属性和关系。
-author: shauliu
+author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 9efffbff7bab2c7bf012c6d6fc7dbc77e923688f
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 38a4303bc7492b1cb8966a439fde98334917a6ec
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53440239"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58452468"
 ---
 # <a name="get-unifiedroleassignmentschedule"></a>获取 unifiedRoleAssignmentSchedule
 命名空间：microsoft.graph
@@ -39,7 +39,7 @@ GET /roleManagement/directory/roleAssignmentSchedules/{unifiedRoleAssignmentSche
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持所有 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$select` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -64,7 +64,7 @@ GET /roleManagement/directory/roleAssignmentSchedules/{unifiedRoleAssignmentSche
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentSchedules/b1477448-2cc6-4ceb-93b4-54a202a89413
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentSchedules/226faf5f-61b4-40bb-8726-52e48ec914de
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroleassignmentschedule-csharp-snippets.md)]
@@ -87,7 +87,9 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentSche
 
 
 ### <a name="response"></a>响应
-**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
+下面展示了示例响应。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -99,21 +101,26 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "id": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
-    "principalId": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
-    "roleDefinitionId": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
-    "directoryScopeId": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
-    "appScopeId": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
-    "createdUsing": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
-    "createdDateTime": "2020-09-09T21:35:27.91Z",
-    "modifiedDateTime": "2020-09-09T21:35:27.91Z",
-    "status": "Provisioned",
-    "scheduleInfo": {
-      "@odata.type": "microsoft.graph.requestSchedule"
-    },
-    "assignmentType": "Eligible",
-    "memberType": "direct"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleAssignmentSchedules/$entity",
+  "id": "226faf5f-61b4-40bb-8726-52e48ec914de",
+  "principalId": "7532aaf7-0740-41d2-a79b-4a035f122a66",
+  "roleDefinitionId": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+  "directoryScopeId": "/",
+  "appScopeId": null,
+  "createdUsing": "226faf5f-61b4-40bb-8726-52e48ec914de",
+  "createdDateTime": "2021-07-27T09:42:40.087Z",
+  "modifiedDateTime": null,
+  "status": "Provisioned",
+  "assignmentType": "Assigned",
+  "memberType": "Direct",
+  "scheduleInfo": {
+    "startDateTime": "2021-07-27T09:42:40.087Z",
+    "recurrence": null,
+    "expiration": {
+      "type": "noExpiration",
+      "endDateTime": null,
+      "duration": null
+    }
   }
 }
 ```

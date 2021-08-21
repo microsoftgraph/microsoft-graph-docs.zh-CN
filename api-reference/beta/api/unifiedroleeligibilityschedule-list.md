@@ -1,16 +1,16 @@
 ---
 title: 列出 unifiedRoleEligibilitySchedules
 description: 获取 unifiedRoleEligibilitySchedule 对象及其属性的列表。
-author: shauliu
+author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 1817550be3e4903eba3a62e37ad6353b676a3c7d
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: 2d006bf78e945ef4dc0319fd94216fa33701e4bc
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334554"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453763"
 ---
 # <a name="list-unifiedroleeligibilityschedules"></a>列出 unifiedRoleEligibilitySchedules
 命名空间：microsoft.graph
@@ -39,7 +39,7 @@ GET /roleManagement/directory/roleEligibilitySchedules
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持所有 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$select` 和 `$filter` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -87,7 +87,9 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilitySch
 
 
 ### <a name="response"></a>响应
-**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
+下面展示了示例响应。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -99,21 +101,28 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleEligibilitySchedules",
   "value": [
     {
-      "id": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
-      "principalId": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
-      "roleDefinitionId": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
-      "directoryScopeId": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
-      "appScopeId": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
-      "createdUsing": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
-      "createdDateTime": "2020-09-09T21:35:27.91Z",
-      "modifiedDateTime": "2020-09-09T21:35:27.91Z",
+      "id": "313af44a-07c9-43a7-9970-5072a6b5591f",
+      "principalId": "398164b1-5196-49dd-ada2-364b49f99b27",
+      "roleDefinitionId": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+      "directoryScopeId": "/",
+      "appScopeId": null,
+      "createdUsing": "313af44a-07c9-43a7-9970-5072a6b5591f",
+      "createdDateTime": "2021-07-27T13:51:08.43Z",
+      "modifiedDateTime": "0001-01-01T08:00:00Z",
       "status": "Provisioned",
+      "memberType": "Direct",
       "scheduleInfo": {
-        "@odata.type": "microsoft.graph.requestSchedule"
-      },
-      "memberType": "direct"
+        "startDateTime": "2021-07-27T13:51:08.43Z",
+        "recurrence": null,
+        "expiration": {
+          "type": "noExpiration",
+          "endDateTime": null,
+          "duration": null
+        }
+      }
     }
   ]
 }

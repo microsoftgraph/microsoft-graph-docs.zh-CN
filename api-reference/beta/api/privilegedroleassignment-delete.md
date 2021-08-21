@@ -4,13 +4,13 @@ description: 删除 privilegedRoleAssignment。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: a28842b23825db7b010e2d597d592f1fd5ec5db2
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+author: shauliu1
+ms.openlocfilehash: ecaa47dbcf2d626437ad4c7e7730aa571db163bf
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055237"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58454050"
 ---
 # <a name="delete-privilegedroleassignment"></a>Delete privilegedRoleAssignment
 
@@ -83,7 +83,7 @@ DELETE https://graph.microsoft.com/beta/privilegedRoleAssignments/{id}
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true

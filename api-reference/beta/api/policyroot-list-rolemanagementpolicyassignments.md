@@ -1,16 +1,16 @@
 ---
 title: 列出 roleManagementPolicyAssignments
 description: 从 roleManagementPolicyAssignments 导航属性获取 unifiedRoleManagementPolicyAssignment 资源。
-author: shauliu
+author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 0605b37f7aa2677369ecc841559ac446d936c1a9
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 75100619a0d7a6ba4b84ac666e34741d13e20c01
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680715"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58454162"
 ---
 # <a name="list-rolemanagementpolicyassignments"></a>列出 roleManagementPolicyAssignments
 命名空间：microsoft.graph

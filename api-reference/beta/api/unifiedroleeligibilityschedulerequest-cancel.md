@@ -1,21 +1,21 @@
 ---
 title: unifiedRoleEligibilityScheduleRequest：cancel
 description: 取消 unifiedRoleEligibilityScheduleRequest。
-author: shauliu
+author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 39c7129513cbc5815dad48841f6284ae307aed0c
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: f0b8821ffe4136965fe57856eb7d74fb814795f6
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334680"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58452825"
 ---
 # <a name="unifiedroleeligibilityschedulerequest-cancel"></a>unifiedRoleEligibilityScheduleRequest：cancel
 命名空间：microsoft.graph
 
-立即取消 [unifiedRoleEligibilityScheduleRequest，](../resources/unifiedroleeligibilityschedulerequest.md) 并要求系统在 30 天后自动删除已取消的请求。
+立即取消 [状态为 unifiedRoleEligibilityScheduleRequest，](../resources/unifiedroleeligibilityschedulerequest.md) 并要求系统在 30 天后自动删除已取消 `Granted` 的请求。 调用此操作后， **已** 取消的 unifiedRoleEligibilityScheduleRequest 的状态将改为 `Revoked` 。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -46,7 +46,7 @@ POST /roleManagement/directory/roleEligibilityScheduleRequests/{unifiedRoleEligi
 
 ## <a name="response"></a>响应
 
-如果成功，此操作返回 `204 No Content` 响应代码。
+如果成功，此操作返回 `204 No Content` 响应代码。 尝试取消未在可取消状态的请求，例如，状态为 或 的 unifiedRoleEligibilityScheduleRequest 对象将 `Provisioned` `Failed` 返回 `400 Bad Request` 错误代码。
 
 ## <a name="examples"></a>示例
 
@@ -59,7 +59,7 @@ POST /roleManagement/directory/roleEligibilityScheduleRequests/{unifiedRoleEligi
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityScheduleRequests/{unifiedRoleEligibilityScheduleRequestsId}/cancel
+POST https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityScheduleRequests/532bef1f-c677-4564-aa6f-811444a4f018/cancel
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/unifiedroleeligibilityschedulerequest-cancel-csharp-snippets.md)]
@@ -82,7 +82,6 @@ POST https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilitySc
 
 
 ### <a name="response"></a>响应
-**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true

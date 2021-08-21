@@ -1,16 +1,16 @@
 ---
 title: unifiedRoleEligibilitySchedule 资源类型
 description: 表示通过 Azure AD 角色分配符合条件的操作Privileged Identity Management。
-author: shauliu
+author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 7b996bbe2e34d7916e85d308039e48659f2b3234
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 0439fcf25a957e1809f168dd9567655ba6f36492
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52679475"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58452853"
 ---
 # <a name="unifiedroleeligibilityschedule-resource-type"></a>unifiedRoleEligibilitySchedule 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "52679475"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示通过 Azure AD 角色分配符合条件的用户Privileged Identity Management。 `roleEligibilitySchedule`由 创建 `roleEligibilityScheduleRequest` ，用于实例化 `roleEligibilityInstance` 。 我们支持列出和获取用于检索计划的操作，以便查看当前和未来符合条件的分配。
+表示通过 Azure AD 角色分配符合条件的用户Privileged Identity Management。 **unifiedRoleEligibilitySchedule** 由 [unifiedRoleEligibilityScheduleRequest](unifiedroleeligibilityschedulerequest.md)创建，用于实例化 [unifiedRoleEligibilityScheduleInstance](unifiedroleeligibilityscheduleinstance.md)。 此资源支持 List 和 Get 操作以检索计划，以便查看当前和未来符合条件的工作分配。
 
 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)。
 
@@ -32,17 +32,17 @@ ms.locfileid: "52679475"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|appScopeId|String|当分配范围特定于应用时，特定于应用的范围的 ID。 工作分配的范围决定了已授予主体访问权限的资源集。 目录作用域是存储在目录中的多个应用程序可以理解的共享范围。 对租户范围范围使用"/"。 应用程序作用域是仅由此应用程序定义和理解的范围。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
-|createdDateTime|DateTimeOffset|创建计划的时间。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
-|createdUsing|String|创建此计划的 RoleEligibilityScheduleRequest 的 ID。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
-|directoryScopeId|String|表示工作分配范围的目录对象的 ID。 工作分配的范围决定了已授予主体访问权限的资源集。 目录作用域是存储在目录中的多个应用程序可以理解的共享范围。 应用程序作用域是仅由此应用程序定义和理解的范围。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
-|id|String|unifiedRoleEligibilitySchedule 的唯一标识符。 键，不可为 null，只读。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
+|appScopeId|String|当分配范围特定于应用时，特定于应用的范围的标识符。 工作分配的范围决定了已授予主体访问权限的资源集。 应用程序作用域是仅由此应用程序定义和理解的范围。 用于 `/` 租户范围的应用范围。 使用 **directoryScopeId** 将作用域限制为特定目录对象，例如管理单元。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)。|
+|createdDateTime|DateTimeOffset|创建计划的时间。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)。|
+|createdUsing|String|创建此计划的 roleEligibilityScheduleRequest 的标识符。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)。|
+|directoryScopeId|String|表示工作分配范围的目录对象的标识符。 工作分配的范围决定了已授予主体访问权限的资源集。 目录范围是存储在目录中的多个应用程序可以理解的共享范围。 用于 `/` 租户范围范围。 使用 **appScopeId** 将作用域限制为仅应用程序。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)。|
+|id|字符串|unifiedRoleEligibilitySchedule 的唯一标识符。 键，不可为 null，只读。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)。|
 |memberType|String|符合条件的分配的成员身份类型。 它可以是 `Inherited` `Direct` 、、 或 `Group` 。|
-|modifiedDateTime|DateTimeOffset|上次更新计划的时间。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
-|principalId|String| 要授予符合条件的工作分配的主体的 Objectid。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
-|roleDefinitionId|String|符合条件的分配所针对的 unifiedRoleDefinition 的 ID。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
+|modifiedDateTime|DateTimeOffset|上次更新计划的时间。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)。|
+|principalId|String| 要授予合格工作分配的主体的标识符。 可以是组或用户。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)。<br> 支持 `$filter`（`eq`）。|
+|roleDefinitionId|字符串|分配所针对的 unifiedRoleDefinition 的标识符。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)。<br> 支持 `$filter`（`eq`）。|
 |scheduleInfo|[requestSchedule](../resources/requestschedule.md)|符合条件的请求的计划角色分配对象。|
-|状态|String|的状态 `roleEligibilitySchedule` 。 它可以包含与状态相关的消息，如 `Provisioned` `Revoked` `Pending Provisioning` 、、 和 `Pending Approval` 。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
+|状态|String|的状态 `roleEligibilitySchedule` 。 它可以包含与状态相关的消息，如 `Provisioned` `Revoked` `Pending Provisioning` 、、 和 `Pending Approval` 。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)。<br> 支持 `$filter`（`eq`）。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -51,7 +51,7 @@ ms.locfileid: "52679475"
 |appScope|[appScope](../resources/appscope.md)|只读属性，当分配范围特定于应用时，具有特定于应用的范围的详细信息。 包含实体。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
 |directoryScope|[directoryObject](../resources/directoryobject.md)|引用作为合格分配范围的目录对象的属性。 提供，以便调用方可以在获取符合条件的对象的同时获取 `$expand` 角色分配。 只读。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
 |principal|[directoryObject](../resources/directoryobject.md)|引用通过请求获取符合条件的角色分配的属性。 提供此权限，以便调用方可以使用 与获取符合条件 `$expand` 角色分配。 只读。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
-|roleDefinition|[unifiedRoleDefinition](../resources/unifiedroledefinition.md)|指示符合条件的分配所针对的 roleDefinition 的属性。 提供，以便调用方可以在获取符合条件的角色定义的同时获取角色 `$expand` 角色分配。 roleDefinition.Id 自动展开。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
+|roleDefinition|[unifiedRoleDefinition](../resources/unifiedroledefinition.md)|指示符合条件的分配所针对的 roleDefinition 的属性。 提供，以便调用方可以在获取符合条件的角色定义的同时 `$expand` 角色分配。 roleDefinition.Id 自动展开。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

@@ -1,16 +1,16 @@
 ---
 title: 列出 unifiedRoleManagementPolicyRules
 description: 获取 unifiedRoleManagementPolicyRule 对象及其属性的列表。
-author: shauliu
+author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 20d1a9b6691608700f02dc123638607aa98ad72b0e746b9d49a0b41fd0b21ba8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2c170f6e26c6f4f233ba1c13c908be05822a028a
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57105108"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58454190"
 ---
 # <a name="list-unifiedrolemanagementpolicyrules"></a>列出 unifiedRoleManagementPolicyRules
 命名空间：microsoft.graph

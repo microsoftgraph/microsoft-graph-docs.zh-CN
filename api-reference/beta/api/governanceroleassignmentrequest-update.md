@@ -1,16 +1,16 @@
 ---
 title: 更新 governanceRoleAssignmentRequests
-description: 使管理员能够更新其 (`AdminApproved` 或) `AdminDenied` 状态为 的 governanceRoleAssignmentRequests 的决策 `PendingAdminDecision` 。
+description: 使管理员能够根据处于 状态的 `AdminApproved` `AdminDenied` governanceRoleAssignmentRequests (或) 更新其决策 `PendingAdminDecision` 。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: ef30468664dd64dc09d9cfb352d514a395368698
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+author: shauliu1
+ms.openlocfilehash: d81bad403fbac4789c5cf5083c5eb8c85a815bf1
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53350872"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453931"
 ---
 # <a name="update-governanceroleassignmentrequests"></a>更新 governanceRoleAssignmentRequests
 
@@ -23,7 +23,7 @@ ms.locfileid: "53350872"
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference#privileged-access-permissions)。
 
->**注意：** 此 API 还要求请求者对 `Active` `owner` `user access administrator` [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) 所属的资源角色分配 (或) 管理员或管理员。 
+>**注意：** 此 API 还要求请求者对 `Active` `owner` `user access administrator` [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) 角色分配 (或) 至少一个管理员。 
 
 ### <a name="azure-resources"></a>Azure 资源
 
@@ -31,7 +31,7 @@ ms.locfileid: "53350872"
 |:--------------- |:----------- |
 | 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureResources |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application | 不支持。 |
+| 应用程序 | 不支持。 |
 
 ### <a name="azure-ad"></a>Azure AD
 
@@ -39,7 +39,7 @@ ms.locfileid: "53350872"
 |:--------------- |:----------- |
 | 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureAD |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application | 不支持。 |
+| 应用程序 | 不支持。 |
 
 ### <a name="groups"></a>组
 
@@ -47,7 +47,7 @@ ms.locfileid: "53350872"
 |:-------------- |:----------- |
 | 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureADGroup |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application | 不支持。 |
+| 应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -65,10 +65,10 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest
 
 |参数      |类型                   |必需 |说明|
 |:-------------|:----------------------|:--------|:----------|
-|reason        |字符串                 |✓        |管理员提供其决策的原因。|
-|decision        |字符串                 |✓        |请求的管理员角色分配决定。 值应更新为 `AdminApproved` 或 `AdminDenied` 。|
+|reason        |String                 |✓        |管理员提供其决策的原因。|
+|decision        |String                 |✓        |请求的管理员角色分配决定。 值应更新为 `AdminApproved` 或 `AdminDenied` 。|
 |schedule      |[governanceSchedule](../resources/governanceschedule.md)|        | 请求角色分配计划。 对于 状态 `AdminApproved` ，此为必填项。|
-|assignmentState      |字符串|         | 工作分配的状态，值可以是 `Eligible` 或 `Active` 。 为做出 `AdminApproved` 决策，需要此权限。 |
+|assignmentState      |String|         | 工作分配的状态，值可以是 `Eligible` 或 `Active` 。 为做出 `AdminApproved` 决策，需要此权限。 |
 ### <a name="response"></a>响应
 此方法只能应用于状态为 的请求 `PendingAdminDecision` 。
 

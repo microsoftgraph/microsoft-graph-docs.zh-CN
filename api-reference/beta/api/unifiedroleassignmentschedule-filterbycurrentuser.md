@@ -1,16 +1,16 @@
 ---
 title: unifiedRoleAssignmentSchedule：filterByCurrentUser
 description: 获取 unifiedRoleAssignmentSchedule 对象及其属性的列表，这些对象按特定用户主体进行筛选
-author: shauliu
+author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: bc80dc68d8ff4133d481b23295f4826d85075213
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: 2c278bf9b7abc0e09c3d391d92890ddfa67565c2
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334484"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453938"
 ---
 # <a name="unifiedroleassignmentschedule-filterbycurrentuser"></a>unifiedRoleAssignmentSchedule：filterByCurrentUser
 命名空间：microsoft.graph
@@ -35,16 +35,18 @@ ms.locfileid: "53334484"
 }
 -->
 ``` http
-GET /roleManagement/directory/roleAssignmentSchedules/filterByCurrentUser
+GET /roleManagement/directory/roleAssignmentSchedules/filterByCurrentUser(on='principal')
 ```
 
-## <a name="query-parameters"></a>查询参数
+## <a name="function-parameters"></a>函数参数
 下表显示了可用于此方法的查询参数。
 
 |参数|类型|说明|
 |:---|:---|:---|
-|on|roleAssignmentScheduleFilterByCurrentUserOptions|当前用户的 ID。|
+|on|roleAssignmentScheduleFilterByCurrentUserOptions|筛选以查询当前用户作为主体的对象。 允许的值为 `principal` 。 必需。|
 
+## <a name="optional-query-parameters"></a>可选的查询参数
+此方法支持 `$select` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -56,7 +58,7 @@ GET /roleManagement/directory/roleAssignmentSchedules/filterByCurrentUser
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) 集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -67,12 +69,14 @@ GET /roleManagement/directory/roleAssignmentSchedules/filterByCurrentUser
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentSchedules/filterByCurrentUser(on='dce468b2-68b2-dce4-b268-e4dcb268e4dc')
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentSchedules/filterByCurrentUser(on='principal')
 ```
 
 
 ### <a name="response"></a>响应
-**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
+下面是显示通过直接分配的资格计划的响应示例。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -84,22 +88,30 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(unifiedRoleAssignmentSchedule)",
   "value": [
     {
-      "id": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
-      "principalId": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
-      "roleDefinitionId": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
-      "directoryScopeId": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
-      "appScopeId": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
-      "createdUsing": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
-      "createdDateTime": "2020-09-09T21:35:27.91Z",
-      "modifiedDateTime": "2020-09-09T21:35:27.91Z",
+      "@odata.type": "#microsoft.graph.unifiedRoleAssignmentSchedule",
+      "id": "lAPpYvVpN0KRkAEhdxReECssmvzcHW1IohFf6Mp3-h8-1",
+      "principalId": "fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f",
+      "roleDefinitionId": "62e90394-69f5-4237-9190-012177145e10",
+      "directoryScopeId": "/",
+      "appScopeId": null,
+      "createdUsing": null,
+      "createdDateTime": null,
+      "modifiedDateTime": null,
       "status": "Provisioned",
+      "assignmentType": "Assigned",
+      "memberType": "Direct",
       "scheduleInfo": {
-        "@odata.type": "microsoft.graph.requestSchedule"
-      },
-      "assignmentType": "Eligible",
-      "memberType": "direct"
+        "startDateTime": "2021-07-27T11:24:19.6471278Z",
+        "recurrence": null,
+        "expiration": {
+          "type": "noExpiration",
+          "endDateTime": null,
+          "duration": null
+        }
+      }
     }
   ]
 }

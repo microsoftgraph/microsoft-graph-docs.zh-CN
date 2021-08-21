@@ -4,13 +4,13 @@ description: 表示特权角色的设置。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: a1f20455ffcc818aa1b1edf784d6990d68b7556b
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+author: shauliu1
+ms.openlocfilehash: b954dbc0dc72028d60861c5c07820302f3cbe19d
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50962565"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58454120"
 ---
 # <a name="privilegedrolesettings-resource-type"></a>privilegedRoleSettings 资源类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "50962565"
 表示特权角色的设置。
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -40,7 +40,7 @@ ms.locfileid: "50962565"
 |notificationToUserOnElevation|boolean|`true` 如果激活角色时向最终用户发送通知。 `false` 如果角色激活时不发送通知。|
 |ticketingInfoOnElevation|boolean|`true` 如果激活角色时需要票证信息。 `false` 如果激活角色时不需要票证信息。|
 |approvalOnElevation|boolean|`true` 如果激活角色时需要审批。 `false` 如果激活角色时不需要审批。|
-|approverIds| string 集合 |审批 ID 列表（如果需要审批才能激活）。|
+|approverIds| 字符串集合 |审批 ID 列表（如果需要审批才能激活）。|
 
 ## <a name="relationships"></a>关系
 无

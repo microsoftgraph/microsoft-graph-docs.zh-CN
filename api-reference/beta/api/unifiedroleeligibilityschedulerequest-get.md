@@ -1,16 +1,16 @@
 ---
 title: 获取 unifiedRoleEligibilityScheduleRequest
 description: 读取 unifiedRoleEligibilityScheduleRequest 对象的属性和关系。
-author: shauliu
+author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 7f1321f36a4670adff4ed6474fd1dd71ccf9e5f4
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: 7d24198d9d0e71e1663e18acacade9e04443c405
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334666"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453917"
 ---
 # <a name="get-unifiedroleeligibilityschedulerequest"></a>获取 unifiedRoleEligibilityScheduleRequest
 命名空间：microsoft.graph
@@ -39,7 +39,7 @@ GET /roleManagement/directory/roleEligibilityScheduleRequests/{unifiedRoleEligib
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持一些 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$select` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -64,7 +64,7 @@ GET /roleManagement/directory/roleEligibilityScheduleRequests/{unifiedRoleEligib
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityScheduleRequests/{unifiedRoleEligibilityScheduleRequestsId}
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityScheduleRequests/26bc6813-5457-4302-a482-afafd4e2962a
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroleeligibilityschedulerequest-csharp-snippets.md)]
@@ -87,7 +87,9 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilitySch
 
 
 ### <a name="response"></a>响应
-**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
+下面展示了示例响应。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -99,22 +101,41 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "id": "a2e242a0-42a0-a2e2-a042-e2a2a042e2a2",
-    "action": "String",
-    "principalId": "String",
-    "roleDefinitionId": "String",
-    "directoryScopeId": "String",
-    "appScopeId": "String",
-    "isValidationOnly": "Boolean",
-    "targetScheduleId": "String",
-    "justification": "String",
-    "scheduleInfo": {
-      "@odata.type": "microsoft.graph.requestSchedule"
-    },
-    "ticketInfo": {
-      "@odata.type": "microsoft.graph.ticketInfo"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleEligibilityScheduleRequests/$entity",
+  "id": "26bc6813-5457-4302-a482-afafd4e2962a",
+  "status": "Provisioned",
+  "createdDateTime": "2021-07-26T18:15:33.08Z",
+  "completedDateTime": "2021-07-26T18:15:33.127Z",
+  "approvalId": null,
+  "customData": null,
+  "action": "AdminAssign",
+  "principalId": "fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f",
+  "roleDefinitionId": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+  "directoryScopeId": "/",
+  "appScopeId": null,
+  "isValidationOnly": false,
+  "targetScheduleId": "26bc6813-5457-4302-a482-afafd4e2962a",
+  "justification": "Assign User Admin eligibility to IT Helpdesk (User) group",
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": null,
+      "id": "fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f"
     }
+  },
+  "scheduleInfo": {
+    "startDateTime": "2021-07-26T18:15:33.1266138Z",
+    "recurrence": null,
+    "expiration": {
+      "type": "afterDateTime",
+      "endDateTime": "2022-06-30T00:00:00Z",
+      "duration": null
+    }
+  },
+  "ticketInfo": {
+    "ticketNumber": null,
+    "ticketSystem": null
   }
 }
 ```

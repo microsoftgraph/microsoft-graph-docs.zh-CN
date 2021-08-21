@@ -1,16 +1,16 @@
 ---
 title: policyRoot 资源类型
 description: 公开策略单一元素的导航属性的资源类型。
-author: shauliu
+author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: e6874a3cd4bfda648b7bdcf2e45ba76983715616
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: bf51c84988ab6f549052a88943275075d2d96800
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58264050"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58454036"
 ---
 # <a name="policyroot-resource-type"></a>policyRoot 资源类型
 
@@ -42,7 +42,7 @@ ms.locfileid: "58264050"
 | featureRolloutPolicies                    | [featureRolloutPolicy](featurerolloutpolicy.md) 集合                                                | 与目录对象关联的功能推出策略。                                                                                                       |
 | homeRealmDiscoveryPolicies                | [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) 集合                                        | 用于控制联盟用户的 Azure AD 身份验证行为的策略。                                                                                          |
 | identitySecurityDefaultsEnforcementPolicy | [identitySecurityDefaultsEnforcementPolicy](identitysecuritydefaultsenforcementpolicy.md)                 | 表示用于防范常见攻击的安全默认值的策略。                                                                                |
-| mobileAppManagementPolicies               | [mobilityManagementPolicy](mobilitymanagementpolicy.md) 集合                                        | 定义移动性管理自动注册配置的策略 (MDM 或 MAM) 应用程序。                                                            |
+| mobileAppManagementPolicies               | [mobilityManagementPolicy](mobilitymanagementpolicy.md) 集合                                        | 为移动管理定义自动注册配置的策略 (MDM 或 MAM) 应用程序。                                                            |
 | permissionGrantPolicies                   | [permissionGrantPolicy](permissiongrantpolicy.md) 集合                                              | 指定可授予同意的条件的策略。                                                                                         |
 | roleManagementPolicies                    | [unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) 集合                     | 表示角色管理策略。                                                                                                                             |
 | roleManagementPolicyAssignments           | [unifiedRoleManagementPolicyAssignment](../resources/unifiedrolemanagementpolicyassignment.md) 集合 | 表示角色管理策略分配。                                                                                                                   |

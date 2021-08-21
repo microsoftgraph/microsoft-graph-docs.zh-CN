@@ -4,13 +4,13 @@ description: 检索 privilegedapproval 对象的列表。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: ec53c87df049e0eab2a48256d6cfbc7d67a2b0f7
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+author: shauliu1
+ms.openlocfilehash: e3fdd22825da7264541e90e58f8f6580a3ab5b3e
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053550"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453259"
 ---
 # <a name="list-privilegedapproval"></a>列出 privilegedApproval
 
@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/beta/privilegedApproval
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

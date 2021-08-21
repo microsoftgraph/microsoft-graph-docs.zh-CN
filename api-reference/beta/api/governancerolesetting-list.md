@@ -4,13 +4,13 @@ description: 检索资源上的 governanceRoleSettings 集合。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: 89241c003ca538da0c368bb75d9ae239ba779b07
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+author: shauliu1
+ms.openlocfilehash: 16d1b395e60370365a885ce097606f7c22914570
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53350662"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453959"
 ---
 # <a name="list-governancerolesettings"></a>列出 governanceRoleSettings
 
@@ -29,7 +29,7 @@ ms.locfileid: "53350662"
 |:--------------- |:----------- |
 | 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureResources |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application | PrivilegedAccess.Read.AzureResources |
+| 应用程序 | PrivilegedAccess.Read.AzureResources |
 
 ### <a name="azure-ad"></a>Azure AD
 
@@ -37,7 +37,7 @@ ms.locfileid: "53350662"
 |:--------------- |:----------- |
 | 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureAD |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application | PrivilegedAccess.Read.AzureAD |
+| 应用程序 | PrivilegedAccess.Read.AzureAD |
 
 ### <a name="groups"></a>组
 
@@ -45,9 +45,9 @@ ms.locfileid: "53350662"
 |:-------------- |:----------- |
 | 委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureADGroup |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application | PrivilegedAccess.Read.AzureADGroup |
+| 应用程序 | PrivilegedAccess.Read.AzureADGroup |
 
-除了权限范围之外，此 API 要求请求程序至少具有一角色分配资源访问权限。
+除了权限范围之外，此 API 要求请求程序至少具有一角色分配资源的权限。
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
