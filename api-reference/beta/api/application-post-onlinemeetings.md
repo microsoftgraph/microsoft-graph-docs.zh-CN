@@ -5,12 +5,12 @@ author: mkhribech
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 38fbfa79802854519a8eaad723b1989ba98ea2af
-ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
+ms.openlocfilehash: e99aa206e3cb330c1765f993251f9262471d81bc
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52896191"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58452846"
 ---
 # <a name="create-onlinemeeting"></a>创建 onlineMeeting
 
@@ -169,7 +169,7 @@ Content-Type: application/json
 ### <a name="example-2-create-an-online-meeting-in-a-microsoft-teams-channel-with-a-user-token"></a>示例 2：使用用户令牌在 Microsoft Teams 频道中创建联机会议
 
 #### <a name="request"></a>请求
->**注意：** 传递的用户令牌的对象 ID 应当是有效负载中由 threadid 表示的频道的成员。
+>**注意：** 传递的用户令牌的对象 ID 应当是有效负载中由 **threadId** 表示的频道的成员。
 
 ```http
 POST https://graph.microsoft.com/beta/me/onlineMeetings
