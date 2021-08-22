@@ -2,15 +2,15 @@
 title: Privileged Identity Management - Azure 资源
 description: 使用适合于 Azure AD Privileged Identity Management 的 API 管理 Azure 资源。
 localization_priority: Priority
-author: shauliu
+author: shauliu1
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: a64a60258369226ca58c4be070494e20f0d1403a
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 48d0a4ceebee14a504b90433da21ce1f28392393
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136548"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453826"
 ---
 # <a name="privileged-identity-management---azure-resources"></a>Privileged Identity Management - Azure 资源
 
@@ -18,7 +18,7 @@ ms.locfileid: "50136548"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-可以使用适合于 Azure 资源的 [Azure Active Directory (Azure AD) Privileged Identity Management (PIM)](/azure/active-directory/privileged-identity-management/pim-configure) 为管理组、订阅、资源组和资源级别的 Azure 基础结构角色设置实时访问工作流。 这些包括诸如所有者和参与者之类的内置角色以及自定义 RBAC 角色。
+可以将 [Azure Active Directory (Azure AD) 特权标识管理 (PIM)](/azure/active-directory/privileged-identity-management/pim-configure) 用于 Azure 资源，以在管理组、订阅、资源组和资源级别为 Azure 基础结构角色设置即时访问工作流。其中包括所有者和参与者等内置角色以及自定义 RBAC 角色。
 
 ## <a name="common-use-cases-for-pim-and-azure-resources-using-a-rest-api"></a>使用 REST API 的 PIM 和 Azure 资源的常见用例
 
