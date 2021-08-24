@@ -117,7 +117,7 @@ items:
                 href: /graph/migrate-azure-ad-graph-client-libraries?context=graph/api/1.0
           - name: 4：部署、测试和扩展
             href: /graph/migrate-azure-ad-graph-deploy-test-extend?context=graph/api/1.0
-          - name: 迁移常见问题
+          - name: 迁移常见问题解答
             href: /graph/migrate-azure-ad-graph-faq?context=graph/api/1.0
   - name: 使用 SDK
     items:
@@ -372,7 +372,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: 发送邮件
                 href: api/user-sendmail.md
-          - name: 备注
+          - name: 注释
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -1275,6 +1275,10 @@ items:
                 href: api/presence-get.md
               - name: 获取多个用户状态
                 href: api/cloudcommunications-getpresencesbyuserid.md
+              - name: 设置状态
+                href: api/presence-setpresence.md
+              - name: 清除状态
+                href: api/presence-clearpresence.md
       - name: 跨设备体验
         displayName: Project Rome
         items:
@@ -4825,7 +4829,7 @@ items:
                     href: api/organizationalbrandingpropertieslocalization-update.md
                   - name: 删除本地化
                     href: api/organizationalbrandingpropertieslocalization-delete.md
-              - name: 策略
+              - name: Policy
                 href: resources/policy-overview.md
                 items:
                   - name: 基于活动的超时策略
@@ -5020,7 +5024,7 @@ items:
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: 删除
                         href: api/identityapiconnector-delete.md
-          - name: 管控
+          - name: 治理
             items:
               - name: 访问审查
                 href: resources/accessreviewsv2-root.md
@@ -6199,7 +6203,7 @@ items:
                 href: api/team-sendactivitynotification.md
               - name: 向用户发送通知
                 href: api/userteamwork-sendactivitynotification.md
-          - name: Tab
+          - name: 选项卡
             href: resources/teamstab.md
             items:
               - name: 频道中的选项卡

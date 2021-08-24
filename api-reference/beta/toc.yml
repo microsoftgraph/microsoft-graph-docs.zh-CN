@@ -121,7 +121,7 @@ items:
                 href: /graph/migrate-azure-ad-graph-client-libraries?context=graph/api/beta
           - name: 4：部署、测试和扩展
             href: /graph/migrate-azure-ad-graph-deploy-test-extend?context=graph/api/beta
-          - name: 迁移常见问题
+          - name: 迁移常见问题解答
             href: /graph/migrate-azure-ad-graph-faq?context=graph/api/beta
   - name: 使用 SDK
     items:
@@ -348,7 +348,7 @@ items:
             items:
               - name: 项目见解
                 items:
-                  - name: '预览版 (项) '
+                  - name: '项目见解 (预览) '
                     href: resources/iteminsights.md
                   - name: 共享的列表
                     href: api/insights-list-shared.md
@@ -396,7 +396,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: 发送邮件
                 href: api/user-sendmail.md
-          - name: 备注
+          - name: 注释
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -473,7 +473,7 @@ items:
                 href: api/planneruser-list-tasks.md
               - name: 更新设置
                 href: api/planneruser-update.md
-          - name: '预览版中的首选语言 (区域) '
+          - name: '预览版的首选语言和区域 () '
             items:
               - name: 区域和语言设置
                 href: resources/regionalandlanguagesettings.md
@@ -1012,7 +1012,7 @@ items:
                 items:
                   - name: 列出 memberOf
                     href: api/serviceprincipal-list-memberof.md
-                  - name: List transitive memberOf
+                  - name: 列出 transitive memberOf
                     href: api/serviceprincipal-list-transitivememberof.md
                   - name: checkMemberGroups
                     href: api/serviceprincipal-checkmembergroups.md
@@ -1656,7 +1656,7 @@ items:
                     href: api/projectrome-put-historyitem.md
                   - name: 删除历史记录项
                     href: api/projectrome-delete-historyitem.md
-      - name: 客户预订（预览）
+      - name: 客户预订（预览版）
         displayName: 'Bookings, Microsoft Bookings'
         items:
           - name: 概述
@@ -1911,7 +1911,7 @@ items:
             href: resources/intune-graph-overview.md
             displayName: Intune
             items:
-              - name: 应用程序管理
+              - name: 应用管理
                 href: resources/intune-app-conceptual.md
                 items:
                   - name: Android 设备所有者注册模式
@@ -6418,7 +6418,7 @@ items:
                         href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-delete.md
                       - name: 更新
                         href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-update.md
-                  - name: Windows Defender 防篡改保护选项
+                  - name: Windows防篡改保护选项
                     href: resources/intune-deviceconfig-windowsdefendertamperprotectionoptions.md
                   - name: Windows 传递优化配置
                     href: resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md
@@ -9626,6 +9626,8 @@ items:
                     href: api/cloudpc-get.md
                   - name: 重新设置
                     href: api/cloudpc-reprovision.md
+                  - name: 结束宽限期
+                    href: api/cloudpc-endgraceperiod.md
               - name: 云电脑设备映像
                 href: resources/cloudpcdeviceimage.md
                 items:
@@ -10997,7 +10999,7 @@ items:
               - name: '应用程序身份验证方法策略 (预览) '
                 items:
                   - name: 概述
-                    href: resources/applicationAuthMethodPolicy.md
+                    href: resources/applicationAuthenticationMethodPolicy.md
                   - name: 租户应用管理策略
                     items:
                       - name: 概述
@@ -11178,7 +11180,7 @@ items:
                         href: api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
                       - name: 删除
                         href: api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
-                  - name: 'Microsoft Authenticator已电话密码登录策略 (已弃) '
+                  - name: 'Microsoft Authenticator无电话密码登录策略 (已弃) '
                     href: resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md
                     items:
                       - name: 获取
@@ -11791,7 +11793,7 @@ items:
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: 删除
                         href: api/identityapiconnector-delete.md
-          - name: 管控
+          - name: 治理
             items:
               - name: 访问审查
                 href: resources/accessreviewsv2-root.md
@@ -11867,7 +11869,7 @@ items:
                         href: api/accessreviewhistorydefinition-post.md
                       - name: 生成下载 URI
                         href: api/accessreviewhistorydefinition-generatedownloaduri.md
-              - name: '已弃 (访问) '
+              - name: '已弃 (的访问) '
                 href: resources/accessreviews-root.md
                 items:
                   - name: 访问审查
@@ -12163,7 +12165,7 @@ items:
                           - name: 生成符合资格的角色分配
                             href: api/privilegedroleassignment-makeeligible.md
                           - name: 生成永久角色分配
-                            href: api/privilegedroleassignment_makepermanent.md
+                            href: api/privilegedroleassignment-makepermanent.md
                       - name: 特权角色分配请求
                         href: resources/privilegedroleassignmentrequest.md
                         items:
@@ -12689,7 +12691,7 @@ items:
                     href: api/personname-update.md
                   - name: 删除
                     href: api/personname-delete.md
-              - name: 备注
+              - name: 注释
                 items:
                   - name: 人员注释
                     href: resources/personannotation.md
@@ -13071,7 +13073,7 @@ items:
                     items:
                       - name: 获取通过身份验证方法注册的用户
                         href: api/authenticationmethodsroot-usersregisteredbymethod.md
-          - name: Microsoft 365使用率报告
+          - name: Microsoft 365使用情况报告
             items:
               - name: 概述
                 href: resources/report.md
@@ -14068,7 +14070,7 @@ items:
                 href: api/team-sendactivitynotification.md
               - name: 向用户发送通知
                 href: api/userteamwork-sendactivitynotification.md
-          - name: Tab
+          - name: 选项卡
             href: resources/teamstab.md
             items:
               - name: 频道中的选项卡
@@ -14395,7 +14397,7 @@ items:
                     href: api/outlooktask-list-attachments.md
                   - name: 添加附件
                     href: api/outlooktask-post-attachments.md
-              - name: 'Outlook任务文件夹 (已弃) '
+              - name: 'Outlook已 (任务文件夹) '
                 items:
                   - name: Outlook 任务文件夹
                     href: resources/outlooktaskfolder.md
