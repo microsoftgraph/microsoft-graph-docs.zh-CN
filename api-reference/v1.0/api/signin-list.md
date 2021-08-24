@@ -1,22 +1,24 @@
 ---
 title: 列出 signIn
-description: 介绍 Microsoft (API) signIn 资源Graph方法。
+description: 介绍 Microsoft Graph API 中的 signIn (实体) 列表方法。
 localization_priority: Normal
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 5bbd66efa246a0c3bbfdabe4a083a74443486ad2
-ms.sourcegitcommit: 8a9be6f65f62f29973508d82e0348d4142c18f23
+ms.openlocfilehash: 15581f8b14979c89b7ec913e5d24ee3fb591345d
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53129451"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490425"
 ---
 # <a name="list-signins"></a>列出 signIn
 
 命名空间：microsoft.graph
 
-检索租户的 Azure AD 用户登录信息。 本质上是交互式的登录 (其中用户名/密码作为身份验证令牌) 且成功的联合登录当前包含在登录日志中。 最大和默认页面大小为 1，000 个对象，默认情况下，首先返回最新的登录。
+检索租户的 Azure AD 用户登录信息。 本质上是交互式的登录 (其中用户名/密码作为身份验证令牌) 且成功的联合登录当前包含在登录日志中。 
+
+最大和默认页面大小为 1，000 个对象，默认情况下，首先返回最新的登录。 只有 Azure AD Azure Active Directory (内发生的登录) [默认保留](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)期才可用。
 
 ## <a name="permissions"></a>权限
 
@@ -36,7 +38,7 @@ ms.locfileid: "53129451"
 + 报告读取者
 + 安全管理员
 + 安全操作员
-+ 安全读取者
++ 安全信息读取者
 
 ## <a name="http-request"></a>HTTP 请求
 

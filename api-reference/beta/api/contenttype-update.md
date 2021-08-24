@@ -1,16 +1,16 @@
 ---
 author: swapnil1993
 title: 更新 contentType
-description: 更新内容类型
+description: 更新内容类型。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: bb7b898a8eb05c70c4c9ec187d36d3d5a4ce69db
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 343e06cbc6837c0644ab045a3d7014acf0155103
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50946932"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490404"
 ---
 # <a name="update-contenttype"></a>更新 contentType
 命名空间：microsoft.graph
@@ -76,42 +76,47 @@ PATCH https://graph.microsoft.com/beta/sites/{site-id}/contentTypes/{contentType
 Content-Type: application/json
 
 {
-    "name": "updatedCt",
-    "documentSet": {
-        "shouldPrefixNameToFile": true,
-        "allowedContentTypes": [{
-            "id": "0x0101",
-            "name": "Document"
-        }],
-        "defaultContents": [{
-                "fileName": "a.txt",
-                "contentType": {
-                    "id": "0x0101"
-                }
-            },
-            {
-                "fileName": "b.txt",
-                "contentType": {
-                    "id": "0x0101"
-                }
+   "name":"updatedCt",
+   "documentSet":{
+      "shouldPrefixNameToFile":true,
+      "allowedContentTypes":[
+         {
+            "id":"0x0101",
+            "name":"Document"
+         }
+      ],
+      "defaultContents":[
+         {
+            "fileName":"a.txt",
+            "contentType":{
+               "id":"0x0101"
             }
-        ],
-        "sharedColumns": [{
-                "name": "Description",
-                "id": "cbb92da4-fd46-4c7d-af6c-3128c2a5576e"
-            },
-            {
-                "name": "Address",
-                "id": "fc2e188e-ba91-48c9-9dd3-16431afddd50"
+         },
+         {
+            "fileName":"b.txt",
+            "contentType":{
+               "id":"0x0101"
             }
-        ],
-        "welcomePageColumns": [{
-            "name": "Address",
-            "id": "fc2e188e-ba91-48c9-9dd3-16431afddd50"
-        }]
-    }
+         }
+      ],
+      "sharedColumns":[
+         {
+            "name":"Description",
+            "id":"cbb92da4-fd46-4c7d-af6c-3128c2a5576e"
+         },
+         {
+            "name":"Address",
+            "id":"fc2e188e-ba91-48c9-9dd3-16431afddd50"
+         }
+      ],
+      "welcomePageColumns":[
+         {
+            "name":"Address",
+            "id":"fc2e188e-ba91-48c9-9dd3-16431afddd50"
+         }
+      ]
+   }
 }
-
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-contenttype-javascript-snippets.md)]
@@ -135,19 +140,18 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "id": "0x0101009B237E76EF94DC49B4E58139041E7C60",
-    "description": "",
-    "eTag": "\"7\"",
-    "group": "Custom Content Types",
-    "hidden": false,
-    "name": "testdoc",
-    "parentId": "0x0101",
-    "base": {
-        "id": "0x0101",
-        "name": "Document"
-    }
+   "id":"0x0101009B237E76EF94DC49B4E58139041E7C60",
+   "description":"",
+   "eTag":"\"7\"",
+   "group":"Custom Content Types",
+   "hidden":false,
+   "name":"testdoc",
+   "parentId":"0x0101",
+   "base":{
+      "id":"0x0101",
+      "name":"Document"
+   }
 }
-
 ```
 
 [contentType]: ../resources/contentType.md

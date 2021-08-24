@@ -1,16 +1,16 @@
 ---
 title: 创建 educationSubmissionResource
-description: '将资源添加到资源列表。 此操作仅能由分配了此提交的学生执行。 如果未将 **allowStudentsToAddResources** 标志设置为 true，此操作将不会成功。 如果调用方想要创建新的基于文件的资源，则必须将该文件上载到与提交关联的资源文件夹。 如果文件不存在或不在该文件夹中，POST 请求将失败。 '
+description: 将资源添加到提交资源列表。
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 24363b7158ccfad72db22158d25298fdb75d040d
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: c5162f5d179b6ef5aae0ce0c73692e6011ed50d3
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52664760"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490516"
 ---
 # <a name="create-educationsubmissionresource"></a>创建 educationSubmissionResource
 
@@ -18,7 +18,13 @@ ms.locfileid: "52664760"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将资源添加到资源列表。 此操作仅能由分配了此提交的学生执行。 如果未将 **allowStudentsToAddResources** 标志设置为 true，此操作将不会成功。 如果调用方想要创建新的基于文件的资源，则必须将该文件上载到与提交关联的资源文件夹。 如果文件不存在或不在该文件夹中，POST 请求将失败。 
+将资源添加到提交资源列表。
+
+只有分配到提交的学生才能执行此操作。
+
+如果 **allowStudentsToAddResources** 标志未设置为 ，操作将不会成功 `true` 。 
+
+如果调用方想要创建新的基于文件的资源，将文件上载到与提交关联的资源文件夹。 如果文件不存在或不在该文件夹中，POST 请求将失败。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -42,62 +48,42 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/resources
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [educationSubmissionResource](../resources/educationsubmissionresource.md) 对象的 JSON 表示形式。
+在请求正文中，提供资源的 JSON 表示形式。 支持的类型是 [educationExcelResource](../resources/educationexcelresource.md) [、educationFileResource](../resources/educationfileresource.md) [、educationLinkResource](../resources/educationlinkresource.md) [、educationPowerPointResource](../resources/educationpowerpointresource.md) 和 [educationWordResource](../resources/educationwordresource.md)。
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [educationSubmissionResource](../resources/educationsubmissionresource.md) 对象。
+如果成功，此方法根据响应正文中的资源类型返回 响应代码 `201 Created` 和对象。
 
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 下面展示了示例请求。
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "create_educationsubmissionresource_from_educationsubmission"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/submissions/850f51b7/resources
+POST https://graph.microsoft.com/beta/education/classes/f4a941ff-9da6-4707-ba5b-0eae93cad0b4/assignments/3c77de7f-539b-49e1-9c96-1274f2f0ee3b/submissions/4af73d2b-6b9c-493f-0688-979087bed39b/resources
 Content-type: application/json
 Content-length: 1097
 
 {
-  "assignmentResourceUrl": "https://graph.microsoft.com/v1.0/drives/b!8-QjN2tsv0WyGnTv7vOvnQkmGHbbeMNLqYKONmHLVnvCVmBYIGpeT456457AdW9f/items/017NJZI25NOB5XZNLABF7646XAMDZTQQ6T",
-  "resource": {
-      "@odata.type": "#microsoft.graph.educationWordResource",
-      "displayName": "Report.docx",
-      "createdDateTime": "2017-10-21T07:52:53.9863696Z",
-      "createdBy": {
-          "application": null,
-          "device": null,
-          "user": {
-              "id": "63cc91d2-59c7-4732-9594-35b91a26b340",
-              "displayName": null
-          }
-      },
-      "lastModifiedDateTime": "2017-10-21T07:52:53.9863696Z",
-      "lastModifiedBy": {
-          "application": null,
-          "device": null,
-          "user": {
-              "id": "63cc91d2-59c7-4732-9594-35b91a26b340",
-              "displayName": null
-          }
-      },
-      "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!8-QjN2tsv0WyGnTv7vOvnQkmGHbbeMNLqYKONmHLVnvCVmBYIGpeTZ_iul5AdW9f/items/017NJZI27BCN2QI2H7HJGLIVPXR6SD2DH6"
-  },
-  "@odata.type": "microsoft.graph.educationResource"
+    "resource": {
+        "@odata.type": "microsoft.graph.educationWordResource",
+        "displayName": "Report.docx",
+        "fileUrl": "https://graph.microsoft.com/beta/drives/b!DPA6q59Tw0mtgmyXRUmrQRqBZTesG-lMkl1cBmvvMeUEWrOk89nKRpUEr4ZhNYBc/items/016XPCQEELISJB7NVNVBAK7V4UIF6Q27U2"
+    }
 }
 ```
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 下面展示了示例响应。 
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.educationSubmissionResource"
+  "@odata.type": "microsoft.graph.educationWordResource"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -105,31 +91,32 @@ Content-type: application/json
 Content-length: 1152
 
 {
-  "assignmentResourceUrl": "https://graph.microsoft.com/v1.0/drives/b!8-QjN2tsv0WyGnTv7vOvnQkmGHbbeMNLqYKONmHLVnvCVmBYIGpeT456457AdW9f/items/017NJZI25NOB5XZNLABF7646XAMDZTQQ6T",
-  "id": "f2387c3b-ec39-4bf2-a399-d7242677f024",
-  "resource": {
-      "@odata.type": "#microsoft.graph.educationWordResource",
-      "displayName": "Report.docx",
-      "createdDateTime": "2017-10-21T07:52:53.9863696Z",
-      "createdBy": {
-          "application": null,
-          "device": null,
-          "user": {
-              "id": "63cc91d2-59c7-4732-9594-35b91a26b340",
-              "displayName": null
-          }
-      },
-      "lastModifiedDateTime": "2017-10-21T07:52:53.9863696Z",
-      "lastModifiedBy": {
-          "application": null,
-          "device": null,
-          "user": {
-              "id": "63cc91d2-59c7-4732-9594-35b91a26b340",
-              "displayName": null
-          }
-      },
-      "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!8-QjN2tsv0WyGnTv7vOvnQkmGHbbeMNLqYKONmHLVnvCVmBYIGpeTZ_iul5AdW9f/items/017NJZI27BCN2QI2H7HJGLIVPXR6SD2DH6",
-  }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('f4a941ff-9da6-4707-ba5b-0eae93cad0b4')/assignments('3c77de7f-539b-49e1-9c96-1274f2f0ee3b')/submissions('4af73d2b-6b9c-493f-0688-979087bed39b')/resources/$entity",
+    "assignmentResourceUrl": null,
+    "id": "d835503f-fd00-4840-b69c-7230d10e18b8",
+    "resource": {
+        "@odata.type": "#microsoft.graph.educationWordResource",
+        "displayName": "Report.docx",
+        "createdDateTime": "2021-08-04T00:23:08.6269586Z",
+        "lastModifiedDateTime": "2021-08-04T00:23:08.6269586Z",
+        "fileUrl": "https://graph.microsoft.com/beta/drives/b!DPA6q59Tw0mtgmyXRUmrQRqBZTesG-lMkl1cBmvvMeUEWrOk89nKRpUEr4ZhNYBc/items/016XPCQEELISJB7NVNVBAK7V4UIF6Q27U2",
+        "createdBy": {
+            "application": null,
+            "device": null,
+            "user": {
+                "id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+                "displayName": null
+            }
+        },
+        "lastModifiedBy": {
+            "application": null,
+            "device": null,
+            "user": {
+                "id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+                "displayName": null
+            }
+        }
+    }
 }
 ```
 

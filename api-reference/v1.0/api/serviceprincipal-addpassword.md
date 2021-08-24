@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 2da006952e418ab4ef4636a3aa7182ef1621ac10
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: c5343a6d08df634538840c92c2fa9823ff4811dc
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720908"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490586"
 ---
 # <a name="serviceprincipal-addpassword"></a>servicePrincipal：addPassword
 
@@ -18,7 +18,7 @@ ms.locfileid: "50720908"
 
 向 [servicePrincipal 对象添加强](../resources/serviceprincipal.md) 密码。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -45,17 +45,17 @@ POST /servicePrincipals/{id}/addPassword
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供具有以下 `passwordCredential` 属性的可选对象。
+在请求正文中，提供空 [passwordCredential](../resources/passwordcredential.md) 对象或具有以下可选属性。
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-| displayName | 字符串 | 密码的友好名称。 可选。 |
+| displayName | String | 密码的友好名称。 可选。 |
 | endDateTime | DateTimeOffset | 密码过期的日期和时间使用 ISO 8601 格式表示，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 可选。 默认值为"startDateTime + 2 年"。 |
 | startDateTime | DateTimeOffset | 密码生效的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 可选。 默认值为"now"。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和新 [passwordCredential](../resources/passwordcredential.md) 对象。 **响应对象中的 secretText** 属性包含 Azure Active Directory 生成的强密码，长度为 16-64 个字符。 将来无法检索此密码。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和新 [passwordCredential](../resources/passwordcredential.md) 对象。 **响应对象中的 secretText** 属性包含由 Azure Active Directory生成的强密码，长度为 16-64 个字符。 将来无法检索此密码。
 
 ## <a name="examples"></a>示例
 
@@ -103,6 +103,7 @@ Content-type: application/json
 ### <a name="response"></a>响应
 
 下面展示了示例响应。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

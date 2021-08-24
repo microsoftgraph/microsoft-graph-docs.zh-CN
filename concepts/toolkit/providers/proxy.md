@@ -1,14 +1,14 @@
 ---
 title: 代理服务器提供商
-description: 代理提供程序允许你使用自己的服务器端身份验证和 Microsoft Graph Toolkit。
+description: 代理提供程序允许您将自己的服务器端身份验证与 Microsoft Graph Toolkit。
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: e7484110e506c0326634e43ce658e2912d75656ea07cc349ad94b557f6e09809
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9ce4a1def59a6bfa5dc8031f7ae1bcfd93c593ab
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54204930"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490390"
 ---
 # <a name="proxy-provider"></a>代理服务器提供商
 
@@ -61,7 +61,7 @@ Providers.globalProvider = new ProxyProvider("https://myurl.com/api/GraphProxy",
     header: 'value',
     header2: 'value2'
   };
-);
+});
 ```
 
 当你需要将令牌或其他标头传递到后端时，这非常有用。

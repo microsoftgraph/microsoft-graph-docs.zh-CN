@@ -3,16 +3,18 @@ title: Upload Microsoft SDK 创建Graph文件
 description: 提供使用 Microsoft SDK 上传大Graph指南。
 localization_priority: Normal
 author: DarrelMiller
-ms.openlocfilehash: 62949c1a309d307853443a898f2e39c6f2e8cc66a280367c418bfac67f6a702a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4d78c8be73f154f206d62ae8a52c0c2c8dc5ab4c
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54211694"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490502"
 ---
 # <a name="upload-large-files-using-the-microsoft-graph-sdks"></a>Upload Microsoft SDK 创建Graph文件
 
-Microsoft 中的许多实体Graph可恢复文件[上载](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0&preserve-view=true)，以便更轻松地上载大文件。 文件被切片为较小的片段，并且请求用于上载单个切片，而不是尝试在单个请求中上载整个文件。 为了简化此过程，Microsoft Graph SDK 实现了管理切片上载的大型文件上载任务。
+Microsoft 中的许多实体Graph可恢复文件上载，以便[](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0&preserve-view=true)更轻松地上载大文件。 文件被切片为较小的片段，并且请求用于上载单个切片，而不是尝试在单个请求中上载整个文件。 为了简化此过程，Microsoft Graph SDK 实现了管理切片上载的大型文件上载任务。
+
+## <a name="upload-large-file-to-onedrive"></a>Upload大文件OneDrive
 
 ## <a name="c"></a>[C#](#tab/csharp)
 
@@ -74,26 +76,59 @@ using (var fileStream = System.IO.File.OpenRead(filePath))
 ## <a name="typescript"></a>[TypeScript](#tab/typescript)
 
 ```typescript
-const options: any = {
-    // Relative path from root to destination folder
-    path: itemPath,
-    // file is a File object, typically from an <input type="file"/>
-    fileName: file.name,
-    rangeSize: 320 * 1024
+const options: OneDriveLargeFileUploadOptions = {
+  // Relative path from root to destination folder
+  path: itemPath,
+  // file is a File object, typically from an <input type="file"/>
+  fileName: file.name,
+  rangeSize: 1024 * 1024,
+  uploadEventHandlers: {
+    // Called as each "slice" of the file is uploaded
+    progress: (range, e) => {
+      console.log(`Uploaded ${range?.minValue} to ${range?.maxValue}`);
+    }
   }
+};
 
-  try {
-    const uploadTask: MicrosoftGraph.OneDriveLargeFileUploadTask =
-      await MicrosoftGraph.OneDriveLargeFileUploadTask.create(client, file, options);
+try {
+  // Create FileUpload object
+  const fileObject = new FileUpload(file, file.name, file.size);
+  // Create a OneDrive upload task
+  const uploadTask = await OneDriveLargeFileUploadTask
+    .createTaskWithFileObject(client, fileObject, options);
 
-    const uploadedFile: DriveItem = await uploadTask.upload();
+  // Do the upload
+  const uploadResult: UploadResult = await uploadTask.upload();
 
-    console.log(JSON.stringify(`Uploaded file with ID: ${uploadedFile.id}`));
-    return `Uploaded file with ID: ${uploadedFile.id}`;
-  } catch (err) {
-    console.log(`Error uploading file: ${JSON.stringify(err)}`);
-    return `Error uploading file: ${JSON.stringify(err)}`;
-  }
+  // The response body will be of the corresponding type of the
+  // item being uploaded. For OneDrive, this is a DriveItem
+  const driveItem = uploadResult.responseBody as DriveItem;
+  console.log(`Uploaded file with ID: ${driveItem.id}`);
+  return `Uploaded file with ID: ${driveItem.id}`;
+} catch (err) {
+  console.log(`Error uploading file: ${JSON.stringify(err)}`);
+  return `Error uploading file: ${JSON.stringify(err)}`;
+}
+```
+
+作为使用 对象创建 的替代方法， `File` `FileUpload` 可以使用 `ReadStream` 对象创建 `StreamUpload` 。
+
+```typescript
+const fileName = "<FILE_NAME>";
+const stats = fs.statSync(`./test/sample_files/${fileName}`);
+const totalsize = stats.size;
+const readStream = fs.createReadStream(`./test/sample_files/${fileName}`);
+const fileObject = new StreamUpload(readStream, fileName, totalsize);
+```
+
+还可以创建接口的自定义 `FileObject` 实现。
+
+```typescript
+interface FileObject<T> {
+  content: T;
+  name: string;
+  size: number;
+  sliceFile(range: Range): Promise<ArrayBuffer | Blob | Buffer>;
 }
 ```
 
@@ -156,7 +191,7 @@ fileUploadTask.ResumeAsync(progress);
 ### <a name="typescript"></a>[TypeScript](#tab/typescript)
 
 ```typescript
-const resumedFile: DriveItem = await uploadTask.resume();
+const resumedFile: DriveItem = await uploadTask.resume() as DriveItem;
 ```
 
 ### <a name="java"></a>[Java](#tab/java)
@@ -165,4 +200,73 @@ const resumedFile: DriveItem = await uploadTask.resume();
 > 当前Java SDK 不支持恢复进行中的下载。
 
 ---
+
+## <a name="upload-large-attachment-to-outlook-message"></a>Upload邮件添加Outlook附件
+
+### <a name="c"></a>[C#](#tab/csharp)
+
+```csharp
+// TODO
+```
+
+### <a name="typescript"></a>[TypeScript](#tab/typescript)
+
+```typescript
+// Create an attachment item payload
+// file is a File object
+const payload = {
+  AttachmentItem: {
+    attachmentType: 'file',
+    name: file.name,
+    size: file.size
+  }
+};
+
+const options: LargeFileUploadTaskOptions = {
+  rangeSize: 1024 * 1024,
+  // Called as each "slice" of the file is uploaded
+  uploadEventHandlers: {
+    progress: (range, e) => {
+      console.log(`Uploaded ${range?.minValue} to ${range?.maxValue}`);
+    }
+  }
+};
+
+try {
+  // Create a draft message
+  const draftMsg: Message = await client.api('/me/messages')
+    .post({
+      subject: 'Large file attachment'
+    });
+
+  // Create upload session using draft message's ID
+  const uploadSession = await LargeFileUploadTask
+    .createUploadSession(client,
+      `/me/messages/${draftMsg.id}/attachments/createUploadSession`,
+      payload);
+
+  // Create file upload
+  // Note you can use StreamUpload or custom implementation of FileObject instead
+  const fileObject = new FileUpload(file, file.name, file.size);
+
+  // Create upload task
+  const uploadTask = new LargeFileUploadTask(client, fileObject, uploadSession, options);
+
+  // Upload the file
+  const uploadResult: UploadResult = await uploadTask.upload();
+  return 'Attachment uploaded';
+} catch (err) {
+  console.log(`Error uploading file: ${JSON.stringify(err)}`);
+  return `Error uploading file: ${JSON.stringify(err)}`;
+}
+```
+
+### <a name="java"></a>[Java](#tab/java)
+
+```java
+// TODO
+```
+
+---
+
 <!-- markdownlint-enable MD024 -->

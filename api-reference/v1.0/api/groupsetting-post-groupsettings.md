@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 4b3d67940a8d4ba71b3377c867edf2a0a8f11c80
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 1b2aee406f5b579691876cb88b7f999cc3679548
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52679762"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490523"
 ---
 # <a name="create-a-group-setting"></a>创建组设置
 
@@ -50,12 +50,10 @@ POST /groups/{id}/settings
 
 如果成功，此方法将在响应正文中返回 `201 Created` 响应代码和 [groupSetting](../resources/groupsetting.md) 对象。
 
-## <a name="example"></a>示例
+## <a name="example-1-create-a-new-setting-for-all-microsoft-365-groups-in-the-tenant"></a>示例 1：为租户中Microsoft 365组创建新设置
 
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_groupsetting_from_groupsettings"
@@ -63,41 +61,37 @@ POST /groups/{id}/settings
 ```http
 POST https://graph.microsoft.com/v1.0/groupSettings
 Content-type: application/json
-Content-length: 215
 
 {
-  "displayName": "displayName-value",
-  "templateId": "templateId-value",
+  "displayName": "Group.Unified",
+  "templateId": "62375ab9-6b52-47ed-826b-58e47e0e304b",
   "values": [
     {
-      "name": "name-value",
-      "value": "value-value"
+      "name": "GuestUsageGuidelinesUrl",
+      "value": "https://privacy.contoso.com/privacystatement"
+    },
+    {
+      "name": "EnableMSStandardBlockedWords",
+      "value": "true"
+    },
+    {
+      "name": "EnableMIPLabels",
+      "value": "true"
+    },
+    {
+      "name": "PrefixSuffixNamingRequirement",
+      "value": "[Contoso-][GroupName]"
     }
   ]
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-groupsetting-from-groupsettings-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-groupsetting-from-groupsettings-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-groupsetting-from-groupsettings-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-groupsetting-from-groupsettings-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 在请求正文中，提供 [groupSetting](../resources/groupsetting.md) 对象的 JSON 表示形式。
-##### <a name="response"></a>响应
 
-注意：为了提高可读性，可能缩短了此处显示的响应对象。
+### <a name="response"></a>响应
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -106,18 +100,82 @@ Content-length: 215
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 238
 
 {
-  "displayName": "displayName-value",
-  "templateId": "templateId-value",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groupSettings/$entity",
+  "id": "b11b99c5-f0a3-4c32-a250-548cf11cae1c",
+  "displayName": "Group.Unified",
+  "templateId": "62375ab9-6b52-47ed-826b-58e47e0e304b",
   "values": [
     {
-      "name": "name-value",
-      "value": "value-value"
+      "name": "GuestUsageGuidelinesUrl",
+      "value": "https://privacy.contoso.com/privacystatement"
+    },
+    {
+      "name": "EnableMSStandardBlockedWords",
+      "value": "true"
+    },
+    {
+      "name": "EnableMIPLabels",
+      "value": "true"
+    },
+    {
+      "name": "PrefixSuffixNamingRequirement",
+      "value": "[Contoso-][GroupName]"
     }
-  ],
-  "id": "id-value"
+  ]
+}
+```
+
+## <a name="example-2-create-a-setting-to-block-guests-for-a-specific-microsoft-365-group"></a>示例 2：创建用于阻止特定组来宾Microsoft 365设置
+
+### <a name="request"></a>请求
+
+<!-- {
+  "blockType": "request",
+  "name": "create_groupsetting_from_groupsettings_for_guests"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/groups/055a5d18-a3a9-4338-b9c5-de92559b7ebf/settings
+Content-type: application/json
+
+{
+  "displayName": "Group.Unified.Guest",
+  "templateId": "08d542b9-071f-4e16-94b0-74abb372e3d9",
+  "values": [
+    {
+      "name": "AllowToAddGuests",
+      "value": "false"
+    }
+  ]
+}
+```
+
+在请求正文中，提供 [groupSetting](../resources/groupsetting.md) 对象的 JSON 表示形式。
+
+### <a name="response"></a>响应
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.groupSetting"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groupSettings/$entity",
+  "id": "2a0248a2-fde9-4a80-a53e-c0141f68e03d",
+  "displayName": "Group.Unified.Guest",
+  "templateId": "08d542b9-071f-4e16-94b0-74abb372e3d9",
+  "values": [
+    {
+      "name": "AllowToAddGuests",
+      "value": "false"
+    }
+  ]
 }
 ```
 

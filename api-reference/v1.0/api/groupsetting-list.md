@@ -5,12 +5,12 @@ author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 69d38e88cecfa64b26cf8e8c4ee152be074edfaa
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: a78fb242bdc095cf9afef7ce070f7d12ffda95b8
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52679769"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490446"
 ---
 # <a name="list-group-settings"></a>列出组设置
 
@@ -56,7 +56,7 @@ GET groups/{id}/settings
 如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [groupSetting](../resources/groupsetting.md) 对象集合。
 ## <a name="example"></a>示例
 
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -85,7 +85,7 @@ GET https://graph.microsoft.com/v1.0/groupSettings
 
 ---
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 
 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
@@ -97,20 +97,72 @@ GET https://graph.microsoft.com/v1.0/groupSettings
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 263
 
 {
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groupSettings",
   "value": [
     {
-      "displayName": "displayName-value",
-      "templateId": "templateId-value",
+      "id": "f0b2d6f5-097d-4177-91af-a24e530b53cc",
+      "displayName": "Group.Unified",
+      "templateId": "62375ab9-6b52-47ed-826b-58e47e0e304b",
       "values": [
         {
-          "name": "name-value",
-          "value": "value-value"
+          "name": "EnableMIPLabels",
+          "value": "true"
+        },
+        {
+          "name": "CustomBlockedWordsList",
+          "value": ""
+        },
+        {
+          "name": "EnableMSStandardBlockedWords",
+          "value": "true"
+        },
+        {
+          "name": "ClassificationDescriptions",
+          "value": ""
+        },
+        {
+          "name": "DefaultClassification",
+          "value": ""
+        },
+        {
+          "name": "PrefixSuffixNamingRequirement",
+          "value": "[Contoso-][GroupName]"
+        },
+        {
+          "name": "AllowGuestsToBeGroupOwner",
+          "value": "false"
+        },
+        {
+          "name": "AllowGuestsToAccessGroups",
+          "value": "true"
+        },
+        {
+          "name": "GuestUsageGuidelinesUrl",
+          "value": "https://privacy.contoso.com/privacystatement"
+        },
+        {
+          "name": "GroupCreationAllowedGroupId",
+          "value": ""
+        },
+        {
+          "name": "AllowToAddGuests",
+          "value": "true"
+        },
+        {
+          "name": "UsageGuidelinesUrl",
+          "value": ""
+        },
+        {
+          "name": "ClassificationList",
+          "value": ""
+        },
+        {
+          "name": "EnableGroupCreation",
+          "value": "true"
         }
-      ],
-      "id": "id-value"
+      ]
     }
   ]
 }

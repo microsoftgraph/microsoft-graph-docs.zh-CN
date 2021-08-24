@@ -6,12 +6,12 @@ description: 向内容类型添加列。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 8231575faf7c5325247816ed8ee8e8731e7d574f
-ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
+ms.openlocfilehash: 785e75b114574f48d2874797cc3d3975dc997e3d
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430016"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490105"
 ---
 # <a name="create-columndefinition-for-a-content-type"></a>为内容类型创建 columnDefinition
 命名空间：microsoft.graph
@@ -58,7 +58,7 @@ POST https://graph.microsoft.com/beta/sites/{site-id}/contentTypes/{contentType-
 Content-Type: application/json
 
 {
-    "sourceColumn@odata.bind": "https://graph.microsoft.com/beta/sites/root/columns/99ddcf45-e2f7-4f17-82b0-6fba34445103"
+   "sourceColumn@odata.bind":"https://graph.microsoft.com/beta/sites/root/columns/99ddcf45-e2f7-4f17-82b0-6fba34445103"
 }
 ```
 
@@ -89,7 +89,6 @@ Content-type: application/json
     "maxLength": 255
   }
 }
-
 ```
 
   

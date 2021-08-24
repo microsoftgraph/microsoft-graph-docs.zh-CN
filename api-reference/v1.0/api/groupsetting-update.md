@@ -5,12 +5,12 @@ author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 2a2a504aa8c736df33ef35d3bd131b6329fd499c
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 5da38c36f2648d49d856696cffa9be4ef6216d27
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52679755"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490439"
 ---
 # <a name="update-a-group-setting"></a>更新组设置
 
@@ -63,97 +63,23 @@ PATCH /groups/{id}/settings/{id}
 
 #### <a name="request"></a>请求
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_tenant_setting"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/groupSettings/{id}
+PATCH https://graph.microsoft.com/v1.0/groupSettings/f0b2d6f5-097d-4177-91af-a24e530b53cc
 Content-type: application/json
 
 {
-  "displayName": "Group.Unified",
-  "templateId": "62375ab9-6b52-47ed-826b-58e47e0e304b",
   "values": [
     {
-      "name": "EnableMIPLabels",
-      "value": "false"
-    },
-    {
-      "name": "CustomBlockedWordsList",
-      "value": ""
-    },
-    {
-      "name": "EnableMSStandardBlockedWords",
-      "value": "false"
-    },
-    {
-      "name": "ClassificationDescriptions",
-      "value": ""
-    },
-    {
-      "name": "DefaultClassification",
-      "value": ""
-    },
-    {
-      "name": "PrefixSuffixNamingRequirement",
-      "value": ""
-    },
-    {
-      "name": "AllowGuestsToBeGroupOwner",
-      "value": "false"
-    },
-    {
-      "name": "AllowGuestsToAccessGroups",
-      "value": "true"
-    },
-    {
-      "name": "GuestUsageGuidelinesUrl",
-      "value": ""
-    },
-    {
-      "name": "GroupCreationAllowedGroupId",
-      "value": ""
-    },
-    {
       "name": "AllowToAddGuests",
-      "value": "true"
-    },
-    {
-      "name": "UsageGuidelinesUrl",
-      "value": ""
-    },
-    {
-      "name": "ClassificationList",
-      "value": ""
-    },
-    {
-      "name": "EnableGroupCreation",
-      "value": "true"
+      "value": "false"
     }
   ]
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-tenant-setting-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-tenant-setting-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-tenant-setting-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-tenant-setting-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>响应
 
@@ -167,49 +93,28 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-2-update-a-specific-group-setting"></a>示例 2：更新特定组设置
 
-此示例中，请求的第一个为组的标识符，第二 `{id}` `{id}` 个为 groupSetting 对象的标识符。
+本示例中，请求的第一个为组的标识符，第二个为 `{id}` `{id}` groupSetting 对象的标识符。
 
 #### <a name="request"></a>请求
 
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_groupsetting"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/groups/{id}/settings/{id}
+PATCH https://graph.microsoft.com/v1.0/groups/0167b5af-f3d1-4910-82d2-398747fa381c/settings/fa6df613-159b-4f94-add2-7093f961900b
 Content-type: application/json
 
 {
-  "displayName": "GroupSettings",
-  "templateId": "08d542b9-071f-4e16-94b0-74abb372e3d9",
   "values": [
     {
-            "name": "AllowToAddGuests",
-            "value": "false"
+      "name": "AllowToAddGuests",
+      "value": "true"
     }
   ]
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-groupsetting-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-groupsetting-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-groupsetting-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-groupsetting-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>响应
 

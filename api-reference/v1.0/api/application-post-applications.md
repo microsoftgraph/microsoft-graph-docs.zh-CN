@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: applications
-ms.openlocfilehash: 21209eb12eaa9700fdbea45e833e207c2aa68fab
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 10d4dcff72e26e274e88b85c5e06a5ecda1de6f0
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050596"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490537"
 ---
 # <a name="create-application"></a>创建应用程序
 
@@ -29,7 +29,7 @@ ms.locfileid: "52050596"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Application.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | Application.ReadWrite.All |
-|应用程序 | Application.ReadWrite.All、 Application.ReadWrite.OwnedBy |
+|应用程序 | Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -89,7 +89,7 @@ Content-length: 67
 
 
 ### <a name="response"></a>响应
-下面是一个响应示例。 
+下面展示了示例响应。 
 
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {

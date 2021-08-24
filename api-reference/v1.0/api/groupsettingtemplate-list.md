@@ -5,12 +5,12 @@ author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 85ec50ce39f1bb98a3566b5e48daeec627dbf751
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 4e91dbfc5dbdcab209f8d84cced2bbd0d25714dc
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52679531"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490432"
 ---
 # <a name="list-groupsettingtemplates"></a>List groupSettingTemplates
 
@@ -35,7 +35,7 @@ ms.locfileid: "52679531"
 GET /groupSettingTemplates
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法支持 `$select` [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 > **注意：** 不支持 $filter。
 
@@ -92,38 +92,45 @@ GET https://graph.microsoft.com/v1.0/groupSettingTemplates
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1770
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groupSettingTemplates",
-    "value": [
-                {
-                    "id": "62375ab9-6b52-47ed-826b-58e47e0e304b",
-                    "deletedDateTime": null,
-                    "displayName": "Group.Unified",
-                    "description": "Setting templates define the different settings that can be used for the associated ObjectSettings. This template defines settings that can be used for Unified Groups.",
-                    "values": [
-                        {
-                            "name": "CustomBlockedWordsList",
-                            "type": "System.String",
-                            "defaultValue": "",
-                            "description": "A comma-delimited list of blocked words for Unified Group displayName and mailNickName."
-                        },
-                        {
-                            "name": "EnableMSStandardBlockedWords",
-                            "type": "System.Boolean",
-                            "defaultValue": "false",
-                            "description": "A flag indicating whether or not to enable the Microsoft Standard list of blocked words for Unified Group displayName and mailNickName."
-                        },
-                        {
-                            "name": "ClassificationDescriptions",
-                            "type": "System.String",
-                            "defaultValue": "",
-                            "description": "A comma-delimited list of structured strings describing the classification values in the ClassificationList. The structure of the string is: Value: Description"
-                        }
-                    ]
-                }
-            ]
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groupSettingTemplates",
+  "value": [
+    {
+      "id": "08d542b9-071f-4e16-94b0-74abb372e3d9",
+      "deletedDateTime": null,
+      "displayName": "Group.Unified.Guest",
+      "description": "Settings for a specific Unified Group",
+      "values": [
+        {
+          "name": "AllowToAddGuests",
+          "type": "System.Boolean",
+          "defaultValue": "true",
+          "description": "Flag indicating if guests are allowed in a specific Unified Group."
+        }
+      ]
+    },
+    {
+      "id": "80661d51-be2f-4d46-9713-98a2fcaec5bc",
+      "deletedDateTime": null,
+      "displayName": "Prohibited Names Settings",
+      "description": "Setting templates define the different settings that can be used for the associated ObjectSettings. This template defines settings that can be used for managing tenant-wide prohibited names settings.",
+      "values": [
+        {
+          "name": "CustomBlockedSubStringsList",
+          "type": "System.String",
+          "defaultValue": "",
+          "description": "A comma delimited list of substring reserved words to block for application display names."
+        },
+        {
+          "name": "CustomBlockedWholeWordsList",
+          "type": "System.String",
+          "defaultValue": "",
+          "description": "A comma delimited list of reserved words to block for application display names."
+        }
+      ]
+    }  
+  ]
 }
 ```
 

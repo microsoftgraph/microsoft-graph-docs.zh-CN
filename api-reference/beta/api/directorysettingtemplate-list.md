@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 06b62e868991f7da1012b23fbacc940665cd8350
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3591b9a07f9ec17fe7f761d43246b1981148bbd9
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52046543"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490453"
 ---
 # <a name="list-directorysettingtemplates"></a>列出 directorySettingTemplates
 
@@ -37,7 +37,7 @@ ms.locfileid: "52046543"
 GET /directorySettingTemplates
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
+此方法支持 `$select` [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/directorySettingTemplates
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -91,23 +91,44 @@ GET https://graph.microsoft.com/beta/directorySettingTemplates
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 343
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#directorySettingTemplates",
   "value": [
     {
-      "id": "id-value",
-      "displayName": "displayName-value",
-      "description": "description-value",
+      "id": "08d542b9-071f-4e16-94b0-74abb372e3d9",
+      "deletedDateTime": null,
+      "displayName": "Group.Unified.Guest",
+      "description": "Settings for a specific Unified Group",
       "values": [
         {
-          "name": "name-value",
-          "type": "type-value",
-          "defaultValue": "defaultValue-value",
-          "description": "description-value"
+          "name": "AllowToAddGuests",
+          "type": "System.Boolean",
+          "defaultValue": "true",
+          "description": "Flag indicating if guests are allowed in a specific Unified Group."
         }
       ]
-    }
+    },
+    {
+      "id": "80661d51-be2f-4d46-9713-98a2fcaec5bc",
+      "deletedDateTime": null,
+      "displayName": "Prohibited Names Settings",
+      "description": "Setting templates define the different settings that can be used for the associated ObjectSettings. This template defines settings that can be used for managing tenant-wide prohibited names settings.",
+      "values": [
+        {
+          "name": "CustomBlockedSubStringsList",
+          "type": "System.String",
+          "defaultValue": "",
+          "description": "A comma delimited list of substring reserved words to block for application display names."
+        },
+        {
+          "name": "CustomBlockedWholeWordsList",
+          "type": "System.String",
+          "defaultValue": "",
+          "description": "A comma delimited list of reserved words to block for application display names."
+        }
+      ]
+    }  
   ]
 }
 ```

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 2588a60333fa6a4d66cbbf682225d21dc5cfc476
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: bda31627efafa60b261ec7f182618d546d7bed07
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50959473"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490411"
 ---
 # <a name="serviceprincipal-addkey"></a>servicePrincipal： addKey
 
@@ -21,20 +21,18 @@ ms.locfileid: "50959473"
 > [!NOTE]
 > [Create servicePrincipal](../api/serviceprincipal-post-serviceprincipals.md) 和更新 [servicePrincipal](../api/serviceprincipal-update.md) 操作可以继续用于添加和更新具有或不带用户上下文的任何 servicePrincipal 的关键凭据。
 
-作为此方法的请求验证的一部分，将先验证现有密钥的证明，然后才能执行该操作。 
+作为此方法的请求验证的一部分，将验证拥有现有密钥的证明，然后才能执行该操作。 
 
-没有任何现有有效证书的 ServicePrincipals (即尚未添加任何证书，或者所有证书都已过期) ，将不能使用此服务操作。 [Update servicePrincipal](../api/serviceprincipal-update.md) 可用于执行更新。
+没有任何现有有效证书的 ServicePrincipals (即：尚未添加任何证书，或所有证书都已过期) ，将不能使用此服务操作。 [Update servicePrincipal](../api/serviceprincipal-update.md) 可用于执行更新。
 
 ## <a name="permissions"></a>权限
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | 无。  |
+|委派（工作或学校帐户） | Directory.AccessAsUser.All、Application.ReadWrite.All、Directory.ReadWrite.All  |
 |委派（个人 Microsoft 帐户） | 无。    |
-|应用程序 | 无。 |
+|应用程序 | Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.ReadWrite.All |
 
-> [!NOTE]
-> servicePrincipal 不需要任何特定权限来滚动自己的密钥。
 
 ## <a name="http-request"></a>HTTP 请求
 

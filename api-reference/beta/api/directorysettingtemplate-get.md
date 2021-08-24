@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 55b3d9d2f5a4bc141a6d8af177d30aa882a8e090
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 070520abd541d3e1c680aaa181c5543ef499435c
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52046557"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490068"
 ---
 # <a name="get-a-directory-setting-template"></a>获取目录设置模板
 
@@ -51,37 +51,20 @@ GET /directorySettingTemplates/{id}
 
 如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [directorySettingTemplate](../resources/directorysettingtemplate.md) 对象。
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 下面是一个请求示例。
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_directorysettingtemplate"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/directorySettingTemplates/{id}
+GET https://graph.microsoft.com/beta/directorySettingTemplates/08d542b9-071f-4e16-94b0-74abb372e3d9
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-directorysettingtemplate-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-directorysettingtemplate-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-directorysettingtemplate-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-directorysettingtemplate-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+下面展示了示例响应。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -90,20 +73,21 @@ GET https://graph.microsoft.com/beta/directorySettingTemplates/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 270
 
 {
-  "id": "id-value",
-  "displayName": "displayName-value",
-  "description": "description-value",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#directorySettingTemplates/$entity",
+  "id": "08d542b9-071f-4e16-94b0-74abb372e3d9",
+  "deletedDateTime": null,
+  "displayName": "Group.Unified.Guest",
+  "description": "Settings for a specific Unified Group",
   "values": [
     {
-      "name": "name-value",
-      "type": "type-value",
-      "defaultValue": "defaultValue-value",
-      "description": "description-value"
+      "name": "AllowToAddGuests",
+      "type": "System.Boolean",
+      "defaultValue": "true",
+      "description": "Flag indicating if guests are allowed in a specific Unified Group."
     }
-  ],
+  ]
 }
 ```
 

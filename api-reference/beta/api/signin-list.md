@@ -5,12 +5,12 @@ description: 获取租户租户中的用户登录Azure Active Directory列表。
 localization_priority: Normal
 author: besiler
 ms.prod: identity-and-access-reports
-ms.openlocfilehash: 010ebe7d1d415c9e40613114874157884239be3e
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 78d6a80103e3c5328f9ed69729c72195d3254885
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53579636"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490117"
 ---
 # <a name="list-signins"></a>列出 signIn
 
@@ -18,7 +18,9 @@ ms.locfileid: "53579636"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取 [signIn 对象](../resources/signin.md) 的列表。 该列表包含你的租户的用户登录Azure Active Directory。 用户名和密码作为授权令牌的一部分传递的登录，并且成功的联合登录当前包含在登录日志中。 最大和默认页面大小为 1，000 个对象，默认情况下，首先返回最新的登录。
+获取 [signIn 对象](../resources/signin.md) 的列表。 该列表包含你的租户的用户Azure Active Directory登录。 用户名和密码作为授权令牌的一部分传递的登录，并且成功的联合登录当前包含在登录日志中。
+
+最大和默认页面大小为 1，000 个对象，默认情况下，首先返回最新的登录。 只有 Azure AD Azure Active Directory (内发生的登录) [默认保留](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)期才可用。
 
 ## <a name="permissions"></a>权限
 

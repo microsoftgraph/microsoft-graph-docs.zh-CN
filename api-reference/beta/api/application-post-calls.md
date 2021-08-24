@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 16c76c5a42e4ec49023fe4f7a4310cb7482433e1
-ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
+ms.openlocfilehash: e9aa683f0cce2bc108f4d4429908a7fc87fb0cd1
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52971074"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490131"
 ---
 # <a name="create-call"></a>创建调用
 
@@ -18,7 +18,7 @@ ms.locfileid: "52971074"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create [call](../resources/call.md) enables your bot to create a new outgoing peer-to-peer or group call， or join an existing meeting. 你需要注册 [呼叫机器人](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) 并浏览所需的权限列表，如下所示。
+Create [call](../resources/call.md) enables your bot to create a new outgoing peer-to-peer or group call， or join an existing meeting. 你需要注册 [呼叫机器人](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) 并浏览所需的权限列表。
 
 ## <a name="permissions"></a>权限
 
@@ -28,9 +28,11 @@ Create [call](../resources/call.md) enables your bot to create a new outgoing pe
 |:---------------------------------------|:----------------------------------------------------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持                                                                           |
 | 委派（个人 Microsoft 帐户） | 不支持                                                                           |
-| 应用程序                            | Calls.JoinGroupCallsasGuest.All、Calls.JoinGroupCalls.All、Calls.Initiate。全部，Calls.InitiateGroupCalls.All |
+| 应用程序                            | Calls.JoinGroupCalls.Chat*、Calls.JoinGroupCallsasGuest.All、Calls.JoinGroupCalls.All、Calls.Initiate。All、Calls.InitiateGroupCalls.All |
 
-> **注意：** 对于使用应用托管媒体的呼叫，除了列出的权限之一之外，还需要 Calls.AccessMedia.All 权限。
+> **注意：** 对于具有应用托管媒体的呼叫，除了列出的权限之一之外，还需要 Calls.AccessMedia.All 或 Calls.AccessMedia.Chat* 权限。
+>
+> 标记为 * 的权限使用 [特定于资源的同意]( https://aka.ms/teams-rsc)。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -59,7 +61,7 @@ POST /communications/calls
 > **注意：** 此调用需要Calls.Ini平铺。所有权限。
 
 ##### <a name="request"></a>请求
-下面的示例展示了在机器人和指定用户之间进行对等呼叫的请求。 本示例中，媒体由服务托管。 必须将授权令牌、回调 URL、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值替换为实际值，以确保示例有效。
+以下示例显示一个请求，该请求在机器人和指定用户之间进行对等呼叫。 本示例中，媒体由服务托管。 必须将授权令牌、回调 URL、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值替换为实际值，以确保示例有效。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -270,7 +272,7 @@ Content-Type: application/json
 > **注意**：此示例需要Calls.Ini平铺。All 和 Calls.AccessMedia.All 权限。
 
 ##### <a name="request"></a>请求
-下面的示例展示了在机器人和指定用户之间进行对等呼叫的请求。 本示例中，媒体由应用程序本地托管。 必须将授权令牌、回调 url、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值替换为实际值，以确保示例有效。
+以下示例显示一个请求，该请求在机器人和指定用户之间进行对等呼叫。 本示例中，媒体由应用程序本地托管。 必须将授权令牌、回调 URL、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值替换为实际值，以确保示例有效。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -341,7 +343,7 @@ Content-Type: application/json
 
 `<Media Session Configuration>` 是包含媒体堆栈的会话信息的序列化媒体会话配置。 此处应传递有关音频、视频、VBSS ssession 信息的特定信息。
 
-示例音频媒体会话 blob 如下所示
+下面是音频媒体会话 blob 的示例。
 ```json
 {\"mpUri\":\"net.tcp://bot.contoso.com:18732/MediaProcessor\",\"audioRenderContexts\":[\"14778cc4-f54c-43c7-989f-9092e34ef784\"],\"videoRenderContexts\":[],\"audioSourceContexts\":[\"a5dcfc9b-5a54-48ef-86f5-1fdd8508741a\"],\"videoSourceContexts\":[],\"dataRenderContexts\":null,\"dataSourceContexts\":null,\"supportedAudioFormat\":\"Pcm16K\",\"videoSinkEncodingFormats\":[],\"mpMediaSessionId\":\"2379cf46-acf3-4fef-a914-be9627075320\",\"regionAffinity\":null,\"skypeMediaBotsVersion\":\"1.11.1.0086\",\"mediaStackVersion\":\"2018.53.1.1\",\"mpVersion\":\"7.2.0.3881\",\"callId\":\"1b69b141-7f1a-4033-9c34-202737190a20\"}
 ```
@@ -560,7 +562,7 @@ Content-Type: application/json
 此信息可以从 Get Online [Meetings API 获取](../api/onlinemeeting-get.md)。
 
 必须将授权令牌、回调 url、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值与从 Get Online  [Meetings API](../api/onlinemeeting-get.md) 获取的详细信息一起替换为实际值，以确保示例有效。
-> **注意：** 此示例需要 `Calls.JoinGroupCalls.All` 权限。
+> **注意：** 此示例需要 `Calls.JoinGroupCalls.All` 权限或特定于 `Calls.JoinGroupCalls.Chat` [资源的权限](https://aka.ms/teams-rsc)。
 
 ##### <a name="request"></a>请求
 
@@ -908,7 +910,9 @@ Content-Type: application/json
 >**注意：** 对于除呼叫状态通知之外加入会议方案，我们接收名单通知。
 
 ### <a name="example-6-join-scheduled-meeting-with-app-hosted-media"></a>示例 6：使用应用托管媒体加入计划会议
-若要使用应用程序托管媒体加入会议，请通过 [AppHostedMediaConfig](../resources/apphostedmediaconfig.md) 更新媒体配置，如下所示，在以上示例中提供。
+若要使用应用程序托管的媒体加入会议，请通过 [appHostedMediaConfig](../resources/apphostedmediaconfig.md) 更新媒体配置，如以下示例所示。
+
+>**注意：** 此示例需要 `Calls.AccessMedia.All` 权限或特定于 `Calls.AccessMedia.Chat` [资源的权限](https://aka.ms/teams-rsc)。
 
 <!-- {
   "blockType": "example",

@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 740c2c82ba718ed9b99dd1bff229fbabbaf4482c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 879c016de32c6893fc12674ce1af6a3f5253d542
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52046599"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490460"
 ---
 # <a name="list-directory-settings"></a>列出目录设置
 
@@ -34,12 +34,14 @@ ms.locfileid: "52046599"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 列出租户范围或组设置
+
 ```http
 GET /settings
 GET /groups/{id}/settings
 ```
+
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法支持 `$select` [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -52,8 +54,10 @@ GET /groups/{id}/settings
 ## <a name="response"></a>响应
 
 如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [directorySetting](../resources/directorysetting.md) 对象集合。
+
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+
+### <a name="request"></a>请求
 下面是一个请求示例。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -83,7 +87,8 @@ GET https://graph.microsoft.com/beta/settings
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+下面展示了示例响应。 
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -93,18 +98,70 @@ GET https://graph.microsoft.com/beta/settings
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 263
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#settings",
   "value": [
     {
-      "id": "id-value",
-      "displayName": "displayName-value",
-      "settingTemplateId": "settingTemplateId-value",
+      "id": "f0b2d6f5-097d-4177-91af-a24e530b53cc",
+      "displayName": "Group.Unified",
+      "templateId": "62375ab9-6b52-47ed-826b-58e47e0e304b",
       "values": [
         {
-          "name": "name-value",
-          "value": "value-value"
+          "name": "EnableMIPLabels",
+          "value": "true"
+        },
+        {
+          "name": "CustomBlockedWordsList",
+          "value": ""
+        },
+        {
+          "name": "EnableMSStandardBlockedWords",
+          "value": "true"
+        },
+        {
+          "name": "ClassificationDescriptions",
+          "value": ""
+        },
+        {
+          "name": "DefaultClassification",
+          "value": ""
+        },
+        {
+          "name": "PrefixSuffixNamingRequirement",
+          "value": "[Contoso-][GroupName]"
+        },
+        {
+          "name": "AllowGuestsToBeGroupOwner",
+          "value": "false"
+        },
+        {
+          "name": "AllowGuestsToAccessGroups",
+          "value": "true"
+        },
+        {
+          "name": "GuestUsageGuidelinesUrl",
+          "value": "https://privacy.contoso.com/privacystatement"
+        },
+        {
+          "name": "GroupCreationAllowedGroupId",
+          "value": ""
+        },
+        {
+          "name": "AllowToAddGuests",
+          "value": "true"
+        },
+        {
+          "name": "UsageGuidelinesUrl",
+          "value": ""
+        },
+        {
+          "name": "ClassificationList",
+          "value": ""
+        },
+        {
+          "name": "EnableGroupCreation",
+          "value": "true"
         }
       ]
     }

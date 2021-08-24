@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 29b13beb039aaf6bd6dc7b8f4ebb354732e6c01c
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 10b1e7f08dea835dce84efa9dab91f9ec46c30b4
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681940"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490495"
 ---
 # <a name="group-assignlicense"></a>group： assignLicense
 
@@ -47,7 +47,7 @@ POST /groups/{id}/assignLicense
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|addLicenses|[assignedLicense](../resources/assignedlicense.md) collection|用于指定要添加的许可证的 [assignedLicense](../resources/assignedlicense.md) 对象集合。 可以通过在 assignedLicense 对象上设置 **disabledPlans** 属性来禁用 [与许可证关联的 servicePlans。](../resources/assignedlicense.md)|
+|addLicenses|[assignedLicense](../resources/assignedlicense.md) collection|用于指定要添加的许可证的 [assignedLicense](../resources/assignedlicense.md) 对象集合。 可以通过在 [assignedLicense](../resources/assignedlicense.md)对象上设置 **disabledPlans** 属性来禁用与许可证关联的 servicePlans。|
 |removeLicenses|GUID 集合|标识要删除的许可证的 skuIds 集合。|
 
 ## <a name="response"></a>响应
@@ -60,48 +60,33 @@ POST /groups/{id}/assignLicense
 以下示例向组添加许可证。
 #### <a name="request"></a>请求
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "group_assignlicense"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups/1ad75eeb-7e5a-4367-a493-9214d90d54d0/assignLicense
+POST https://graph.microsoft.com/beta/groups/1132b215-826f-42a9-8cfe-1643d19d17fd/assignLicense
 Content-type: application/json
-
 
 {
   "addLicenses": [
     {
-      "disabledPlans": [ "11b0131d-43c8-4bbb-b2c8-e80f9a50834a" ],
-      "skuId": "skuId-value-1"
+      "disabledPlans": [
+        "113feb6c-3fe4-4440-bddc-54d774bf0318",
+        "14ab5db5-e6c4-4b20-b4bc-13e36fd2227f"
+      ],
+      "skuId": "b05e124f-c7cc-45a0-a6aa-8cf78c946968"
     },
     {
-      "disabledPlans": [ "a571ebcc-fqe0-4ca2-8c8c-7a284fd6c235" ],
-      "skuId": "skuId-value-2"
+      "disabledPlans": [
+        "a413a9ff-720c-4822-98ef-2f37c2a21f4c"
+      ],
+      "skuId": "c7df2760-2c81-4ef7-b578-5b5392b571df"
     }
   ],
   "removeLicenses": []
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/group-assignlicense-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/group-assignlicense-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/group-assignlicense-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/group-assignlicense-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>响应
 响应是更新的 group 对象。
@@ -115,15 +100,13 @@ Content-type: application/json
 ```http
 HTTP/1.1 202 Accepted
 Content-type: application/json
-location: https://graph.microsoft.com/v2/d056d009-17b3-4106-8173-cd3978ada898/directoryObjects/1ad75eeb-7e5a-4367-a493-9214d90d54d0/Microsoft.DirectoryServices.Group
+location: https://graph.microsoft.com/v2/e8e96c2a-d787-4eb1-98d7-9e57c965f1de/directoryObjects/1132b215-826f-42a9-8cfe-1643d19d17fd/Microsoft.DirectoryServices.Group
 
 {
-  "id": "1ad75eeb-7e5a-4367-a493-9214d90d54d0",
-  "deletedDateTime": null,
-  "classification": null,
-  "createdDateTime": "2018-04-18T22:05:03Z",
+  "id": "1132b215-826f-42a9-8cfe-1643d19d17fd",
+  "createdDateTime": "2021-03-12T11:15:03Z",
+  "groupTypes": [],
   "securityEnabled": true,
-
 }
 ```
 
@@ -132,40 +115,23 @@ location: https://graph.microsoft.com/v2/d056d009-17b3-4106-8173-cd3978ada898/di
 
 #### <a name="request"></a>请求
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "group_removelicense"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/groups/1ad75eeb-7e5a-4367-a493-9214d90d54d0/assignLicense
+POST https://graph.microsoft.com/beta/groups/1132b215-826f-42a9-8cfe-1643d19d17fd/assignLicense
 Content-type: application/json
-
 
 {
   "addLicenses": [],
-  "removeLicenses": ["skuId-value-1", "skuId-value-2"]
+  "removeLicenses": [
+    "c7df2760-2c81-4ef7-b578-5b5392b571df",
+    "b05e124f-c7cc-45a0-a6aa-8cf78c946968"
+  ]
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/group-removelicense-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/group-removelicense-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/group-removelicense-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/group-removelicense-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>响应
 响应是更新的 group 对象。
@@ -179,16 +145,13 @@ Content-type: application/json
 ```http
 HTTP/1.1 202 Accepted
 Content-type: application/json
-location: https://graph.microsoft.com/v2/d056d009-17b3-4106-8173-cd3978ada898/directoryObjects/1ad75eeb-7e5a-4367-a493-9214d90d54d0/Microsoft.DirectoryServices.Group
-
+location: https://graph.microsoft.com/v2/e8e96c2a-d787-4eb1-98d7-9e57c965f1de/directoryObjects/1132b215-826f-42a9-8cfe-1643d19d17fd/Microsoft.DirectoryServices.Group
 
 {
-  "id": "1ad75eeb-7e5a-4367-a493-9214d90d54d0",
-  "deletedDateTime": null,
-  "classification": null,
-  "createdDateTime": "2018-04-18T22:05:03Z",
+  "id": "1132b215-826f-42a9-8cfe-1643d19d17fd",
+  "createdDateTime": "2021-03-12T11:15:03Z",
+  "groupTypes": [],
   "securityEnabled": true,
-
 }
 ```
 

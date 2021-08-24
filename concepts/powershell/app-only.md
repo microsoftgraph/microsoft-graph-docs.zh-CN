@@ -3,12 +3,12 @@ title: 通过 Microsoft Graph PowerShell SDK 使用仅应用程序身份验证
 description: 了解如何使用仅应用身份验证通过 Microsoft Graph PowerShell SDK 启用非交互方案。
 localization_priority: Normal
 author: jasonjoh
-ms.openlocfilehash: 1939bc46d9862004b5d86f460a88d30eb396902b
-ms.sourcegitcommit: b7e01a1331abe5f5c9aa2828d93dad08229573f1
+ms.openlocfilehash: 0c87d415f23123b5628bcda8655e3c5b02323a86
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58336675"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490551"
 ---
 # <a name="use-app-only-authentication-with-the-microsoft-graph-powershell-sdk"></a>通过 Microsoft Graph PowerShell SDK 使用仅应用程序身份验证
 
@@ -17,7 +17,7 @@ PowerShell SDK 支持两种类型的身份验证： [委派访问](..\auth-v2-us
 > [!IMPORTANT]
 > 仅应用程序访问权限直接向应用程序授予权限，并需要管理员同意所需的权限范围。 有关仅应用访问的信息，请参阅 Microsoft 标识平台[和 OAuth 2.0 客户端凭据流](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow)。
 
-让我们演练如何为简单脚本配置仅应用访问权限，以列出你的 Microsoft 365 租户中的用户和组。
+让我们演练为简单脚本配置仅应用访问权限，以列出你的 Microsoft 365 租户中的用户和组。
 
 ## <a name="configuration"></a>配置
 
@@ -34,9 +34,10 @@ PowerShell SDK 支持两种类型的身份验证： [委派访问](..\auth-v2-us
 
 可以在应用程序门户中注册[Azure Active Directory，](https://aad.portal.azure.com)或者使用 PowerShell 注册应用程序。
 
+<!-- markdownlint-disable MD025 -->
 # <a name="portal"></a>[门户](#tab/azure-portal)
 
-1. 打开浏览器，然后导航到Azure Active Directory[中心](https://aad.portal.azure.com)，然后使用租户Microsoft 365登录。
+1. 打开浏览器并导航到Azure Active Directory[中心](https://aad.portal.azure.com)，然后使用租户Microsoft 365登录。
 
 1. 选择左侧导航栏中的“**Azure Active Directory**”，再选择“**管理**”下的“**应用注册**”。
 
@@ -67,6 +68,7 @@ PowerShell SDK 支持两种类型的身份验证： [委派访问](..\auth-v2-us
 1. 选择“管理”下的“证书和密码”。 选择 **"Upload证书"** 按钮。 浏览到证书的公钥文件， **然后选择添加**。
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
+<!-- markdownlint-enable MD025 -->
 
 > [!NOTE]
 > 您必须先安装 Microsoft Graph PowerShell [SDK，](installation.md)然后才能执行以下步骤。
@@ -77,7 +79,7 @@ PowerShell SDK 支持两种类型的身份验证： [委派访问](..\auth-v2-us
 
     :::code language="powershell" source="RegisterAppOnly.ps1":::
 
-1. 保存文件。 在包含以下命令的目录中打开 **powerShellRegisterAppOnly.ps1** 并运行以下命令。
+1. 保存文件。 在包含以下命令的目录中，RegisterAppOnly.ps1 **PowerShell** 并运行以下命令。
 
     ```powershell
     .\RegisterAppOnly.ps1 -AppName "Graph PowerShell Script" -CertPath "PATH_TO_PUBLIC_KEY_FILE"
@@ -88,9 +90,12 @@ PowerShell SDK 支持两种类型的身份验证： [委派访问](..\auth-v2-us
 1. 查看提示的输出 `Please go to the following URL in your browser to provide admin consent` 。 复制提供的 URL 并将其粘贴到浏览器中。 使用管理员帐户登录，以向新注册的应用程序授予管理员同意。
 
     > [!NOTE]
-    > 授予管理员同意后，浏览器将显示一个错误 `AADSTS500113: No reply address is registered for the application` ：。 这是因为应用注册不包括重定向 URL。 可以忽略此错误。
+    > 授予管理员同意后，浏览器将重定向回 `http://localhost` 并显示" **未找到"** 错误。 只要 URL 包含 ，就可以忽略此错误 `admin_consent=True` 。
 
 1. 查看 PowerShell 输出的其余部分， `Connect-MgGraph` 以使用应用注册的值预填充命令。
+
+    > [!TIP]
+    > 如果脚本返回错误说明 `New-MgServicePrincipal : Unable to find target address` ，请用附加参数重新运行 `-TenantId` 脚本。 有关详细信息，请参阅[如何查找租户Azure Active Directory ID。](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant)
 
 ---
 
@@ -150,7 +155,7 @@ Disconnect-MgGraph
 .\GraphAppOnly.ps1
 ```
 
-为了简便起见，该脚本输出与下面输出类似的用户和组 (将被) 。
+脚本输出与下面输出类似的用户和组列表， (为了简便起见) 。
 
 ```powershell
 Welcome To Microsoft Graph!

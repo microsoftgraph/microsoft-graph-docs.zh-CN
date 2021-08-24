@@ -5,12 +5,12 @@ localization_priority: Normal
 author: SumitParikh
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 416f91448a8bba9852f68bb5587818555ee4ca78
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 23ed7c866662f344a2f0034d87bba2bfc858f25f
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048965"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490621"
 ---
 # <a name="list-subscribedskus"></a>列出 subscribedSkus
 
@@ -37,7 +37,7 @@ GET /subscribedSkus
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法不支持 [OData 查询](/graph//query-parameters) 参数来帮助自定义响应 (`$filter` 不支持) 。
+此方法不支持 `$select` [OData 查询参数](/graph//query-parameters) 来帮助自定义响应 (`$filter` 不支持) 。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/subscribedSkus
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -97,23 +97,23 @@ Content-length: 547
 {
   "value": [
     {
-      "capabilityStatus": "capabilityStatus-value",
-      "consumedUnits": 99,
+      "capabilityStatus": "Enabled",
+      "consumedUnits": 20,
       "prepaidUnits": {
-        "enabled": 99,
-        "suspended": 99,
-        "warning": 99
+        "enabled": 20,
+        "suspended": 0,
+        "warning": 0
       },
       "servicePlans": [
         {
-          "servicePlanId": "servicePlanId-value",
-          "servicePlanName": "servicePlanName-value",
-          "provisioningStatus": "provisioningStatus-value",
-          "appliesTo": "appliesTo-value"
+          "servicePlanId": "113feb6c-3fe4-4440-bddc-54d774bf0318",
+          "servicePlanName": "EXCHANGE_S_FOUNDATION",
+          "provisioningStatus": "Success",
+          "appliesTo": "Company"
         }
       ],
-      "skuId": "skuId-value",
-      "skuPartNumber": "skuPartNumber-value"
+      "skuId": "b05e124f-c7cc-45a0-a6aa-8cf78c946968",
+      "skuPartNumber": "EMSPREMIUM"
     }
   ]
 }

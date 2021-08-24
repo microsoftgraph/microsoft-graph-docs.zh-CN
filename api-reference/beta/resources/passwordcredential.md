@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: fbc5af586392191e2ab583ad6e723b3ee0789463
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: e1facb9b3a4de7c8cd5086efbd9ca4cea72fe84a
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720542"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490628"
 ---
 # <a name="passwordcredential-resource-type"></a>passwordCredential 资源类型
 
@@ -18,10 +18,10 @@ ms.locfileid: "50720542"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示与应用程序或服务主体关联的密码凭据。 应用程序和 [servicePrincipal](serviceprincipal.md)实体 [](application.md)的 **passwordCredentials** 属性是 **passwordCredential** 对象的集合。
+表示与应用程序或服务主体关联的密码凭据。 application 和 [servicePrincipal](serviceprincipal.md)实体的 **passwordCredentials** 属性是 **passwordCredential 对象** 的集合。 [](application.md)
 
 > [!IMPORTANT]
-> 不支持使用 POST 或 PATCH 设置 **passwordCredential。** 使用 addPassword 和 removePassword 方法更新应用程序或 servicePrincipal 的密码：
+> 不支持使用 POST 或 PATCH 设置 **passwordCredential。** 使用以下 addPassword 和 removePassword 方法更新应用程序或 servicePrincipal 的密码：
 >
 > - [application： addPassword](../api/application-addpassword.md)
 > - [application： removePassword](../api/application-removepassword.md)
@@ -32,10 +32,10 @@ ms.locfileid: "50720542"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-| customKeyIdentifier | Binary | 请勿使用。 |
+| customKeyIdentifier | 二进制 | 请勿使用。 |
 | displayName | String | 密码的友好名称。 可选。 |
 | endDateTime | DateTimeOffset | 密码过期的日期和时间使用 ISO 8601 格式表示，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 可选。 |
-| 提示 | String | 包含密码的前三个字符。 只读。 |
+| hint | String | 包含密码的前三个字符。 只读。 |
 | keyId | Guid | 密码的唯一标识符。 |
 | secretText | String | 只读;包含 Azure AD 生成的长度为 16-64 个字符的强密码。 生成的密码值仅在初始 POST 请求 [addPassword 期间返回](../api/application-addpassword.md)。 将来无法检索此密码。 |
 | startDateTime | DateTimeOffset | 密码生效的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 可选。 |

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e5fabcc982c676ba322d92e5abf6d1fb40944a13
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: af6af01f6e10affe3efd41b81d9c011c5bba3473
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681793"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490600"
 ---
 # <a name="group-delta"></a>group: delta
 
@@ -146,7 +146,7 @@ GET https://graph.microsoft.com/beta/groups/delta
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 >
-> 请注意存在包含 *members@delta* 成员对象的 ID 的 members@delta 属性。
+> 请注意存在 members@delta *属性，* 该属性包含组中成员对象的 ID。
 
 <!-- {
   "blockType": "response",
@@ -160,26 +160,26 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#groups","@odata.nextLink":"https://graph.microsoft.com/beta/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjvY1FSSc_",
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#groups",
+  "@odata.nextLink":"https://graph.microsoft.com/beta/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjvY1FSSc_",
   "value":[
     {
-      "classification": "classification-value",
-      "createdDateTime":"datetime-value",
-      "description":"Test group 1",
-      "displayName":"TestGroup1",
+      "createdDateTime":"2021-03-12T10:36:14Z",
+      "description":"This is the default group for everyone in the network",
+      "displayName":"All Company",
       "groupTypes": [
-        "groupTypes-value"
+        "Unified"
       ],
-      "mail": "mail-value",
+      "mail": "allcompany@contoso.com",
       "members@delta": [
-               {
-                   "@odata.type": "#microsoft.graph.user",
-                   "id": "693acd06-2877-4339-8ade-b704261fe7a0"
-               },
-               {
-                   "@odata.type": "#microsoft.graph.user",
-                   "id": "49320844-be99-4164-8167-87ff5d047ace"
-               }
+        {
+          "@odata.type": "#microsoft.graph.user",
+          "id": "693acd06-2877-4339-8ade-b704261fe7a0"
+        },
+        {
+          "@odata.type": "#microsoft.graph.user",
+          "id": "49320844-be99-4164-8167-87ff5d047ace"
+        }
       ]
     }
   ]
@@ -238,9 +238,9 @@ Content-type: application/json
   "@odata.nextLink":"https://graph.microsoft.com/beta/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjsXoYQp_dpA3cNJWc",
   "value": [
     {
-      "displayName": "displayName-value",
+      "displayName": "All Company",
       "description": null,
-      "mailNickname": "mailNickname-value"
+      "mailNickname": "allcompany@contoso.com"
     }
   ]
 }
@@ -299,7 +299,7 @@ Content-type: application/json
   "@odata.nextLink":"https://graph.microsoft.com/beta/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjsXoYQp_dpA3cNJWc",
   "value": [
     {
-      "displayName": "displayName-value",
+      "displayName": "Everyone",
       "description": null
     }
   ]
