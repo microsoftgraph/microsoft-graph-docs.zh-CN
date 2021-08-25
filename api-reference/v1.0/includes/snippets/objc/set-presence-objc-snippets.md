@@ -1,30 +1,34 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 77a4138e6d6b0745957feae131caca9fa5a81b29
+ms.openlocfilehash: c53b34263b43de02c326854b4c3541d062392252
 ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/25/2021
-ms.locfileid: "58513674"
+ms.locfileid: "58514031"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
-NSString *MSGraphBaseURL = @"https://graph.microsoft.com/v1.0/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/groups/1132b215-826f-42a9-8cfe-1643d19d17fd/assignLicense"]]];
+NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/users/fa8bf3dc-eca7-46b7-bad1-db199b62afc3/presence/setPresence"]]];
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 NSMutableDictionary *payloadDictionary = [[NSMutableDictionary alloc] init];
 
-NSMutableArray *addLicensesList = [[NSMutableArray alloc] init];
-payloadDictionary[@"addLicenses"] = addLicensesList;
+NSString *sessionId = @"22553876-f5ab-4529-bffb-cfe50aa89f87";
+payloadDictionary[@"sessionId"] = sessionId;
 
-NSMutableArray *removeLicensesList = [[NSMutableArray alloc] init];
-[removeLicensesList addObject: @"c7df2760-2c81-4ef7-b578-5b5392b571df"];
-[removeLicensesList addObject: @"b05e124f-c7cc-45a0-a6aa-8cf78c946968"];
-payloadDictionary[@"removeLicenses"] = removeLicensesList;
+NSString *availability = @"Available";
+payloadDictionary[@"availability"] = availability;
+
+NSString *activity = @"Available";
+payloadDictionary[@"activity"] = activity;
+
+NSString *expirationDuration = @"PT1H";
+payloadDictionary[@"expirationDuration"] = expirationDuration;
 
 NSData *data = [NSJSONSerialization dataWithJSONObject:payloadDictionary options:kNilOptions error:&error];
 [urlRequest setHTTPBody:data];

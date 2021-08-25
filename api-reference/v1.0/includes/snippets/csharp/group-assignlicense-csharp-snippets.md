@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ef29c2440a5d1338c1d7a97a8969526f1b5d5c83
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: c2c7c4711ae4ecb87234b072363ba4fcc635c303
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50801231"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58513650"
 ---
 ```csharp
 
@@ -17,17 +17,18 @@ var addLicenses = new List<AssignedLicense>()
     {
         DisabledPlans = new List<Guid>()
         {
-            Guid.Parse("11b0131d-43c8-4bbb-b2c8-e80f9a50834a")
+            Guid.Parse("113feb6c-3fe4-4440-bddc-54d774bf0318"),
+            Guid.Parse("14ab5db5-e6c4-4b20-b4bc-13e36fd2227f")
         },
-        SkuId = Guid.Parse("skuId-value-1")
+        SkuId = Guid.Parse("b05e124f-c7cc-45a0-a6aa-8cf78c946968")
     },
     new AssignedLicense
     {
         DisabledPlans = new List<Guid>()
         {
-            Guid.Parse("a571ebcc-fqe0-4ca2-8c8c-7a284fd6c235")
+            Guid.Parse("a413a9ff-720c-4822-98ef-2f37c2a21f4c")
         },
-        SkuId = Guid.Parse("skuId-value-2")
+        SkuId = Guid.Parse("c7df2760-2c81-4ef7-b578-5b5392b571df")
     }
 };
 

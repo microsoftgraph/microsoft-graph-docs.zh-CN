@@ -5,12 +5,12 @@ author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: fb0088df0f89f52fe68bd55330d0ca71f168e9d6
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 74fae7508848e3adcaba5130d84e2de7298b425f
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682577"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58513796"
 ---
 # <a name="list-conversations"></a>列出对话
 
@@ -34,7 +34,7 @@ GET /groups/{id}/conversations
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法支持`$select` 和 `$filter` [OData 查询参数](/graph/query-parameters)，以帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
@@ -48,7 +48,7 @@ GET /groups/{id}/conversations
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Conversation](../resources/conversation.md) 对象集合。
 
 ## <a name="example"></a>示例
-#### <a name="request"></a>请求
+### <a name="request"></a>请求
 下面展示了示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/conversations
 
 ---
 
-#### <a name="response"></a>响应
+### <a name="response"></a>响应
 下面展示了示例响应。
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
@@ -90,21 +90,21 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/conversations
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 262
 
 {
-  "value": [
-    {
-      "topic": "topic-value",
-      "hasAttachments": true,
-      "lastDeliveredDateTime": "datetime-value",
-      "uniqueSenders": [
-        "uniqueSenders-value"
-      ],
-      "preview": "preview-value",
-      "id": "id-value"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups('f448435d-3ca7-4073-8152-a1fd73c0fd09')/conversations",
+    "value": [
+        {
+            "id": "AAQkAGFhZDhkNGI1LTliZmEtNGEzMi04NTkzLWZjMWExZDkyMWEyZgAQAH4o7SknOTNKqAqMhqJHtUM=",
+            "topic": "The new All Company group is ready",
+            "hasAttachments": false,
+            "lastDeliveredDateTime": "2021-08-02T10:34:00Z",
+            "uniqueSenders": [
+                "All Company"
+            ],
+            "preview": "Welcome to the All Company group.Use the group to share ideas, files, and important dates.Start a conversationRead group conversations or start your own.Share filesView, edit, and share all group files, including email attachments.Connect your"
+        }
+    ]
 }
 ```
 

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c0716e8d3d8721f41cdfa3971ba80aecbd96bdcf55da8a88e94c0ef2bce1b9c3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d0854b74154a74e35c1b5870ccdbadd20ecff856
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56903606"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58513521"
 ---
 ```objc
 
@@ -17,18 +17,17 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphUnifiedRoleAssignmentScheduleRequest *unifiedRoleAssignmentScheduleRequest = [[MSGraphUnifiedRoleAssignmentScheduleRequest alloc] init];
-[unifiedRoleAssignmentScheduleRequest setAction:@"String"];
-[unifiedRoleAssignmentScheduleRequest setPrincipalId:@"String"];
-[unifiedRoleAssignmentScheduleRequest setRoleDefinitionId:@"String"];
-[unifiedRoleAssignmentScheduleRequest setDirectoryScopeId:@"String"];
-[unifiedRoleAssignmentScheduleRequest setAppScopeId:@"String"];
-[unifiedRoleAssignmentScheduleRequest setIsValidationOnly:@"Boolean"];
-[unifiedRoleAssignmentScheduleRequest setTargetScheduleId:@"String"];
-[unifiedRoleAssignmentScheduleRequest setJustification:@"String"];
+[unifiedRoleAssignmentScheduleRequest setAction:@"AdminAssign"];
+[unifiedRoleAssignmentScheduleRequest setJustification:@"Assign User Admin to IT Helpdesk (User) group"];
+[unifiedRoleAssignmentScheduleRequest setRoleDefinitionId:@"fdd7a751-b60b-444a-984c-02652fe8fa1c"];
+[unifiedRoleAssignmentScheduleRequest setDirectoryScopeId:@"/"];
+[unifiedRoleAssignmentScheduleRequest setPrincipalId:@"07706ff1-46c7-4847-ae33-3003830675a1"];
 MSGraphRequestSchedule *scheduleInfo = [[MSGraphRequestSchedule alloc] init];
+[scheduleInfo setStartDateTime: "2021-07-01T00:00:00Z"];
+MSGraphExpirationPattern *expiration = [[MSGraphExpirationPattern alloc] init];
+[expiration setType: [MSGraphExpirationPatternType noExpiration]];
+[scheduleInfo setExpiration:expiration];
 [unifiedRoleAssignmentScheduleRequest setScheduleInfo:scheduleInfo];
-MSGraphTicketInfo *ticketInfo = [[MSGraphTicketInfo alloc] init];
-[unifiedRoleAssignmentScheduleRequest setTicketInfo:ticketInfo];
 
 NSError *error;
 NSData *unifiedRoleAssignmentScheduleRequestData = [unifiedRoleAssignmentScheduleRequest getSerializedDataWithError:&error];

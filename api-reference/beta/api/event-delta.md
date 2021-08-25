@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4e76bf6cd10682717bebe9365afa14ced47d4c90
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 235a8447245df1766e76751e79c74bb1072615ae
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52042588"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58513592"
 ---
 # <a name="event-delta"></a>event: delta
 
@@ -20,9 +20,9 @@ ms.locfileid: "52042588"
 
 获取一 [组](../resources/event.md) 已在一个或多个日历中添加、删除或更新的事件资源。 
 
-可以在邮箱的所有日历或特定日历中的事件，或日历的开始日期和结束日期) 定义的 **calendarView** (事件范围的事件集合中获取这些增量更改的特定类型的信息。 日历可以是默认日历或用户的其他一些指定日历。 在 **calendarView** 上获取增量更改的情况下，日历还可以是组日历。
+可以在邮箱的所有日历或特定日历中的事件，或日历的开始日期和结束日期) 定义的 **calendarView** (事件范围的事件集合中，获取这些增量更改的特定类型的信息。 日历可以是默认日历或用户的其他一些指定日历。 在 **calendarView** 上获取增量更改的情况下，日历还可以是组日历。
 
-**delta** 函数调用类似于指定日历的 或 请求，只不过通过在这些调用中的一个或多个调用中正确应用状态令牌，可以查询该日历中事件的增量更改。 `GET /events` `GET /calendarview` [](/graph/delta-query-overview#state-tokens) 这样，您即可维护和同步指定日历中的本地事件存储，而无需每次从服务器获取该日历的所有事件。
+通常，同步本地存储中的日历或 **calendarView** 中的事件需要一轮多 **delta** 函数调用。 初始调用是完全同步，同一轮中每个后续 **增量** 调用都会获取增量 (添加、删除或更新) 。 这样，您即可维护和同步指定日历中的本地事件存储，而无需每次从服务器获取该日历的所有事件。
 
 下表列出了事件上的 **delta** 函数与日历中 **calendarView** 上的 **delta** 函数之间的差异。
 
@@ -50,7 +50,7 @@ ms.locfileid: "52042588"
 成功响应的 或 `nextLink` 中返回的查询 URL `deltaLink` 包括状态令牌。 对于任何后续 **delta** 函数调用，请使用 中或前面的 `nextLink` 查询 `deltaLink` URL。
 
 ### <a name="delta-function-on-events-in-a-user-calendar-preview"></a>用户日历中事件的 Delta 函数 (预览) 
-对从特定日期/时间开始或之后的所有事件应用 **delta** 函数，具体位于 (日历) ：
+对从特定日期/时间开始或之后的所有事件应用 **delta** 函数，具体位置为 (日历) ：
 
 * 若要获取用户邮箱中所有事件或从指定日期/时间开始或之后的事件的增量 _更改：_
   <!-- { "blockType": "ignored" } -->
@@ -108,7 +108,7 @@ ms.locfileid: "52042588"
   -->
 
 ### <a name="delta-function-on-calendarview-in-a-user-calendar"></a>用户日历中 calendarView 上的 Delta 函数
-对 **指定的用户** 日历中由开始日期和结束日期/时间分隔的事件范围应用 delta 函数：
+在 **指定的用户** 日历中，对以开始日期和结束日期/时间分隔的事件范围应用 delta 函数：
 
 * 若要获取用户默认日历的日历视图中 _的增量更改：_
   <!-- { "blockType": "ignored" } -->
@@ -143,7 +143,11 @@ ms.locfileid: "52042588"
 | $deltatoken | string | 对同一个日历视图之前的 **delta** 函数调用的 `deltaLink` URL 中返回的 [状态令牌](/graph/delta-query-overview)，指示该组更改跟踪的完成状态。将此令牌包含在对该日历视图的下一组更改追踪的首次请求中，并保存和应用整个 `deltaLink` URL。|
 | $skiptoken | string | 之前的 **delta** 函数调用的 `nextLink` URL 中返回的 [状态令牌](/graph/delta-query-overview)，指示同一个日历视图中有进一步的更改需要跟踪。 |
 
-不支持 `$expand` `$filter` `$orderby` 、、、 `$select` 和 `$search` 。
+### <a name="odata-query-parameters"></a>OData 查询参数
+- 预计 **calendarView** 上的 **delta** 函数调用将返回通常从请求获取的相同 `GET /calendarview` 属性。 不能使用 `$select` 仅获取这些属性的子集。
+
+- **delta** 函数不支持用户日历中的事件或 **calendarView** 中的事件的以下查询参数：、 `$expand` 和 `$filter` `$orderby` `$search` `$select` 。 
+
 
 
 ## <a name="request-headers"></a>请求标头
@@ -164,11 +168,17 @@ ms.locfileid: "52042588"
 
 希望获取通常从请求获取的所有 `GET /calendarview` 属性。 
 
+在 **calendarView** 的日期范围绑定的一组 **delta** 函数调用中，你可能会发现 **delta** 调用返回以下两种类型的事件， `@removed` 原因为 `deleted` ： 
+- 日期范围内且自上一个 delta 调用以来 **已删除** 的事件。
+- 超出日期 _范围_ 且自上一次 delta 调用以来已添加、删除 **或更新的事件** 。
+
+筛选方案 `@removed` 所需的日期范围下的事件。
+
 ## <a name="examples"></a>示例
 
 ### <a name="example-1-delta-function-on-events-in-a-calendar-preview"></a>示例 1：日历中事件的 Delta 函数 (预览) 
 #### <a name="request"></a>请求
-以下示例显示获取已登录用户的默认日历中的事件的初始同步请求，这些事件发生在指定参数上或之后 `startDateTime` 。 初始请求不包括任何状态令牌。 
+以下示例显示获取已登录用户的默认日历中事件的初始同步请求，这些事件发生在指定参数上或之后 `startDateTime` 。 初始请求不包括任何状态令牌。 
 
 请求使用 `Prefer: odata.maxpagesize` 标头将每个响应中的最大事件数限制为 1。 继续使用 中 `delta` 返回的 查询调用 函数 `@odata.nextLink` ，直到响应 `@odata.deltaLink` 中收到 。
 
@@ -184,7 +194,7 @@ Prefer: odata.maxpagesize=1
 
 #### <a name="response"></a>响应
 
-如果请求成功，响应将包含状态令牌，即 _\@ odata.nextLink_ 响应头) 中的 _skipToken_ (或 _\@ odata.deltaLink_ 响应头) 中的 _deltaToken_ (。
+如果请求成功，响应将包含状态令牌，即 _\@ odata.nextLink_ 响应头) 中的 _skipToken_ (或 _\@ odata.deltaLink_ 响应头 (中的 _deltaToken_) 。
 它们分别指示是应继续该轮还是已完成获取该轮的所有更改。
 
 以下响应显示了 _\@ odata.nextLink_ 响应标头中的 _skipToken。_
@@ -238,24 +248,10 @@ GET https://graph.microsoft.com/beta/me/calendars/AAMkADI5M1BbeAAA=/calendarview
 
 Prefer: odata.maxpagesize=2
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/event-delta-calendarview-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/event-delta-calendarview-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/event-delta-calendarview-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>响应
 
-如果请求成功，响应将包含状态令牌，即 _\@ odata.nextLink_ 响应头) 中的 _skipToken_ (或 _\@ odata.deltaLink_ 响应头) 中的 _deltaToken_ (。
+如果请求成功，响应将包含状态令牌，即 _\@ odata.nextLink_ 响应头) 中的 _skipToken_ (或 _\@ odata.deltaLink_ 响应头 (中的 _deltaToken_) 。
 它们分别指示是应继续该轮还是已完成获取该轮的所有更改。
 
 以下响应显示了 _\@ odata.nextLink_ 响应标头中的 _skipToken。_

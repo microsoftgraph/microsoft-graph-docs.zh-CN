@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: b4861227886856fee57fe0b79ff6ab4da06829ee
+ms.openlocfilehash: ea28e13b4bb75f617080d6f6cb463996fe638559
 ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514057"
+ms.locfileid: "58514346"
 ---
 ```javascript
 
@@ -15,11 +15,8 @@ const options = {
 
 const client = Client.init(options);
 
-const string = {
-  securityEnabledOnly: false
-};
-
-await client.api('/groups/1132b215-826f-42a9-8cfe-1643d19d17fd/getMemberGroups')
-    .post(string);
+let filterByCurrentUser = await client.api('/roleManagement/directory/roleAssignmentSchedules/filterByCurrentUser(on='principal')')
+    .version('beta')
+    .get();
 
 ```

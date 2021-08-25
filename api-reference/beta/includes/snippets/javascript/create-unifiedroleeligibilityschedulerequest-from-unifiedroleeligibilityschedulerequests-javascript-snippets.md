@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5309480c790ff9867050a0ca6676a3d6fac3b8adff09db2be0c15d4889bdfcfe
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 71def828b0d00faf48f563ab0d306059af3410ad
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57333686"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58513955"
 ---
 ```javascript
 
@@ -16,20 +16,17 @@ const options = {
 const client = Client.init(options);
 
 const unifiedRoleEligibilityScheduleRequest = {
-  '@odata.type': '#Microsoft.Identity.Governance.Common.Data.ExternalModels.V1.unifiedRoleEligibilityScheduleRequest',
-  action: 'String',
-  principalId: 'String',
-  roleDefinitionId: 'String',
-  directoryScopeId: 'String',
-  appScopeId: 'String',
-  isValidationOnly: 'Boolean',
-  targetScheduleId: 'String',
-  justification: 'String',
+  action: 'AdminAssign',
+  justification: 'Assign User Admin eligibility to IT Helpdesk (User) group',
+  roleDefinitionId: 'fdd7a751-b60b-444a-984c-02652fe8fa1c',
+  directoryScopeId: '/',
+  principalId: '07706ff1-46c7-4847-ae33-3003830675a1',
   scheduleInfo: {
-    '@odata.type': 'microsoft.graph.requestSchedule'
-  },
-  ticketInfo: {
-    '@odata.type': 'microsoft.graph.ticketInfo'
+    startDateTime: '2021-07-01T00:00:00Z',
+    expiration: {
+      endDateTime: '2022-06-30T00:00:00Z',
+      type: 'AfterDateTime'
+    }
   }
 };
 
