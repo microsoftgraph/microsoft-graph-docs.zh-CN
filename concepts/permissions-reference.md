@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 25017432241bd73b17efddb7399b5df5c3221e33
-ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
+ms.openlocfilehash: 7679ab0e74f77961e975ae1d46877cde79a7890b
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58384483"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490565"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -96,7 +96,24 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/members?$select=id,displayName,
 }
 ```
 
----
+## <a name="retriving-permission-ids"></a>正在检索权限 ID
+
+如果需要使用Azure CLI、PowerShell 或基础结构作为代码框架来设置权限，则可能需要要使用的权限的标识符，而不是名称。 可以通过运行 来使用Azure CLI检索标识符 `az ad sp list`。 但是，这会生成一个非常长的列表，并且可能很难找到所需的特定权限。 如果已经知道所需权限的名称，则可以使用Azure CLI运行以下命令：
+
+```bash
+az ad sp list --query "[?appDisplayName=='Microsoft Graph'].{permissions:oauth2Permissions}[0].permissions[?value=='<NAME OF PERMISSION>'].{id: id, value: value, adminConsentDisplayName: adminConsentDisplayName, adminConsentDescription: adminConsentDescription}[0]" --all
+```
+
+响应应类似于以下示例，其中包含说明、标识符、显示名称和权限名称：
+
+```json
+{
+  "adminConsentDescription": "Allows the app to list groups, and to read their properties and all group memberships on behalf of the signed-in user.  Also allows the app to read calendar, conversations, files, and other group content for all groups the signed-in user can access. ",
+  "adminConsentDisplayName": "Read all groups",
+  "id": "5f8c59db-677d-491f-a6b8-5f174b11ec1d",
+  "value": "Group.Read.All"
+}
+```
 
 ## <a name="access-reviews-permissions"></a>访问评审权限
 
@@ -545,6 +562,8 @@ _CallRecords.Read.All_ 权限为组织内每次通话和联机会议（包括与
 | _TeamsTab.ReadWrite.Chat_        | 管理此聊天的选项卡。                                      | 允许应用在没有登录用户的情况下管理此聊天的选项卡。 |否 | 否 |
 | _TeamsAppInstallation.Read.Chat_ | 读取此聊天中安装了哪些应用。                   | 允许应用在没有登录用户的情况下读取此聊天中安装的 Teams 应用以及授予每个应用的权限。  |否 | 否 |
 | _OnlineMeeting.ReadBasic.Chat_   | 读取与此聊天关联的会议的基本属性。 | 允许应用在没有登录用户的情况下读取与此聊天关联的会议的基本属性（例如名称、日程安排、组织者和加入链接）。 |否 | 否 |
+| _Calls.AccessMedia.Chat_         | 访问与此聊天或会议关联的通话中的媒体流。                                    | 允许应用在没有登录用户的情况下访问与此聊天或会议关联的通话中的媒体流。 |否 | 否 |
+| _Calls.JoinGroupCalls.Chat_         | 加入与此聊天或会议关联的通话。                                    | 允许应用在没有登录用户的情况下加入与此聊天或会议关联的通话。 |否 | 否 |
 
 >[!NOTE]
 > 目前，这些权限仅在 beta 版本的 Microsoft Graph 中受支持。
@@ -1131,7 +1150,7 @@ _IdentityUserFlow.Read.All_ 和 _IdentityUserFlow.ReadWrite.ALL_ 仅适用于工
 |_DeviceManagementServiceConfig.Read.All_ | 读取 Microsoft Intune 配置 | 允许应用读取 Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 | 否 |
 |_DeviceManagementServiceConfig.ReadWrite.All_ | 读取和写入 Microsoft Intune 配置 | 允许应用读取和写入 Microsoft Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 | 否 |
 
-### <a name="remarks"></a>注解
+### <a name="remarks"></a>说明
 
 > **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户 [正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
@@ -1287,7 +1306,7 @@ _Member.Read.Hidden_ 仅对工作或学校帐户有效。
 | _Notes.ReadWrite.All_ |    读取和写入所有 OneNote 笔记本 | 允许应用无需具有已登录用户即可读取、共享和修改组织中的所有 OneNote 笔记本。| 是 |
 
 
-### <a name="remarks"></a>注解
+### <a name="remarks"></a>说明
 _Notes.Read.All_ 和 _Notes.ReadWrite.All_ 仅适用于工作或学校帐户。所有其他权限对于 Microsoft 帐户和工作或学校帐户均有效。
 
 通过 _Notes.Create_ 权限，应用可以查看已登录用户的 OneNote 笔记本层次结构，并创建 OneNote 内容（笔记本、分区组、分区、页面等）。
