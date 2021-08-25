@@ -5,12 +5,12 @@ description: 将内容类型与中心网站列表关联。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 89d80568ea0d0099e54d2d912bb7acb32c31f307
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 6380461e25b7573eee617e167736e51a7fd28bef
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53439460"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58514537"
 ---
 # <a name="contenttype-associatewithhubsites"></a>contentType：associateWithHubSites
 
@@ -58,8 +58,8 @@ POST /sites/{siteId}/contentTypes/{contentTypeId}/associateWithHubSites
 
 |参数|类型|说明|
 |-|-|-|
-|hubSiteUrls| 集合 (字符串)  |需要强制执行内容类型的中心网站的主要 URL 列表。 必需项。|
-|propagateToExistingLists| 布尔 |如果为 ，内容类型将强制应用于中心网站中的现有列表;否则，将 `true` 仅应用于新创建的列表。 
+|hubSiteUrls| 集合 (字符串)  |需要强制执行内容类型的中心网站的主要 URL 列表。 必需。|
+|propagateToExistingLists| Boolean |如果为 ，内容类型将强制应用于中心网站中的现有列表;否则，将 `true` 仅应用于新创建的列表。 
 
 ## <a name="response"></a>响应
 
@@ -76,7 +76,7 @@ POST /sites/{siteId}/contentTypes/{contentTypeId}/associateWithHubSites
 }
 -->
 ```http
-POST https://graph.microsoft.com/beta/sites/id/contentTypes/id/associateWithHubSites
+POST https://graph.microsoft.com/beta/sites/{siteId}/contentTypes/{contentTypeId}/associateWithHubSites
 Content-Type: application/json
 
 {

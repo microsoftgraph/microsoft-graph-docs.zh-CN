@@ -1,18 +1,18 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 342a8658d5415999e784700ac0abeb5766924377
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: b9490108168805dd0faf59073f0563be9cca49ba
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37535585"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58513271"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/groups/1ad75eeb-7e5a-4367-a493-9214d90d54d0/assignLicense"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/groups/1132b215-826f-42a9-8cfe-1643d19d17fd/assignLicense"]]];
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
@@ -21,15 +21,16 @@ NSMutableDictionary *payloadDictionary = [[NSMutableDictionary alloc] init];
 NSMutableArray *addLicensesList = [[NSMutableArray alloc] init];
 MSGraphAssignedLicense *addLicenses = [[MSGraphAssignedLicense alloc] init];
 NSMutableArray *disabledPlansList = [[NSMutableArray alloc] init];
-[disabledPlansList addObject: @"11b0131d-43c8-4bbb-b2c8-e80f9a50834a"];
+[disabledPlansList addObject: @"113feb6c-3fe4-4440-bddc-54d774bf0318"];
+[disabledPlansList addObject: @"14ab5db5-e6c4-4b20-b4bc-13e36fd2227f"];
 [addLicenses setDisabledPlans:disabledPlansList];
-[addLicenses setSkuId:@"skuId-value-1"];
+[addLicenses setSkuId:@"b05e124f-c7cc-45a0-a6aa-8cf78c946968"];
 [addLicensesList addObject: addLicenses];
 MSGraphAssignedLicense *addLicenses = [[MSGraphAssignedLicense alloc] init];
 NSMutableArray *disabledPlansList = [[NSMutableArray alloc] init];
-[disabledPlansList addObject: @"a571ebcc-fqe0-4ca2-8c8c-7a284fd6c235"];
+[disabledPlansList addObject: @"a413a9ff-720c-4822-98ef-2f37c2a21f4c"];
 [addLicenses setDisabledPlans:disabledPlansList];
-[addLicenses setSkuId:@"skuId-value-2"];
+[addLicenses setSkuId:@"c7df2760-2c81-4ef7-b578-5b5392b571df"];
 [addLicensesList addObject: addLicenses];
 payloadDictionary[@"addLicenses"] = addLicensesList;
 

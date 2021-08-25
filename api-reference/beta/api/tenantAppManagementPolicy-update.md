@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madansr7
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a0c7d241575c5ffc6e4b80a0044442ea1ef0d0fc
-ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
+ms.openlocfilehash: 2bb81d6c014a89aa1d7d67e71583e88552ceb645
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58396709"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58513813"
 ---
 # <a name="update-tenantappmanagementpolicy"></a>更新 tenantAppManagementPolicy
 
@@ -51,7 +51,7 @@ PATCH /policies/defaultAppManagementPolicy
 
 | 属性                | 类型                                                                        | 说明 |
 |:------------------------|:----------------------------------------------------------------------------|:----------------------------------------------------|
-| displayName                  | 字符串                                                                   | 默认显示名称的默认值。 继承自 [policyBase](../resources/policybase.md)。                                |
+| displayName                  | String                                                                   | 默认显示名称的默认值。 继承自 [policyBase](../resources/policybase.md)。                                |
 | 说明                  | String                                                                   | 默认策略的说明。 继承自 [policyBase](../resources/policybase.md)。                                |
 | isEnabled                    | Boolean                                                                  | 表示策略是否已启用。 默认值为 false。                                    |
 | applicationRestrictions      | [appManagementConfiguration](../resources/appManagementConfiguration.md) | 应用于租户中所有应用程序对象的默认限制。               |
@@ -68,6 +68,8 @@ PATCH /policies/defaultAppManagementPolicy
 下面展示了示例请求。
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_tenantAppManagementPolicy"
@@ -95,6 +97,24 @@ Content-Type: application/json
     }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-tenantappmanagementpolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-tenantappmanagementpolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-tenantappmanagementpolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-tenantappmanagementpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4d51aed24a2c89bc7fb846cfefe2ccf0074f9063
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 39c542b39e4bdec631defc7bfc3148e77e3f9bf1
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50806135"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58514491"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let directorySettingTemplate = await client.api('/directorySettingTemplates/{id}')
+let directorySettingTemplate = await client.api('/directorySettingTemplates/08d542b9-071f-4e16-94b0-74abb372e3d9')
     .version('beta')
     .get();
 

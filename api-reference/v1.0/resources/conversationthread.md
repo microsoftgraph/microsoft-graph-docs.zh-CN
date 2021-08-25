@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: a140f822e40f18b4430b28fab7b3aa28279acb92a50bab76fac28371b39706ff
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b87bf7e4f2ad3ff8f23f65ee0990da45ca590f89
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54192563"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58513004"
 ---
 # <a name="conversationthread-resource-type"></a>conversationThread 资源类型
 
@@ -36,14 +36,14 @@ conversationThread 是 [帖子](post.md) 集合。
 | 属性              | 类型                                 | 说明                                                                                                                                                                                      |
 |:----------------------|:-------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | id                    | String                               | 只读。 <br/><br/>默认情况下返回。                                                                                                                                                                                      |
-| toRecipients          | [recipient](recipient.md) collection | 收件人：线程的收件人。 <br/><br/>仅在 $select 上返回。                                                                                                                                                              |
-| ccRecipients          | [recipient](recipient.md) collection | 抄送：线程的收件人。 <br/><br/>仅在 $select 上返回。                                                                                                                                                               |
+| toRecipients          | [recipient](recipient.md) collection | 收件人：线程的收件人。 <br/><br/>仅在 `$select` 上返回。                                                                                                                                                              |
+| ccRecipients          | [recipient](recipient.md) collection | 抄送：线程的收件人。 <br/><br/>仅在 `$select` 上返回。                                                                                                                                                               |
 | topic                 | String                               | 对话的主题。在创建对话时可设置此属性，但无法对其进行更新。 <br/><br/>默认返回。                                                                              |
-| hasAttachments        | Boolean                              | 指示此线程中的任意帖子是否至少具有一个附件。 <br/><br/>默认情况下返回。                                                                                                              |
+| hasAttachments        | Boolean                              | 指示此线程中的任意帖子是否至少具有一个附件。 <br/><br/>默认返回。                                                                                                              |
 | lastDeliveredDateTime | DateTimeOffset                       | 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。<br/><br/>默认情况下返回。 |
-| uniqueSenders         | String collection                    | 向此线程发送邮件的所有用户。 <br/><br/>默认情况下返回。                                                                                                                                               |
-| preview               | String                               | 此对话中最新文章正文的简短摘要。 <br/><br/>默认情况下返回。                                                                                                                           |
-| isLocked              | Boolean                              | 指示线程是否已锁定。 <br/><br/>默认情况下返回。                                                                                                                                                              |
+| uniqueSenders         | String collection                    | 向此线程发送邮件的所有用户。 <br/><br/>默认返回。                                                                                                                                               |
+| preview               | String                               | 此对话中最新文章正文的简短摘要。 <br/><br/>默认返回。                                                                                                                           |
+| isLocked              | Boolean                              | 指示线程是否已锁定。 <br/><br/>默认返回。                                                                                                                                                              |
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|

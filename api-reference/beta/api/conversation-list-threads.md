@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 25c54509c40076a220093b1034c545f534ed6eda
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3ac7b615ac7abc0621d4734680ecb95b53ac8d95
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047033"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58514516"
 ---
 # <a name="list-threads"></a>列出线程
 
@@ -36,7 +36,8 @@ ms.locfileid: "52047033"
 GET /groups/{id}/conversations/{id}/threads
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法支持 OData 查询参数来帮助自定义响应，例如，检索 `$select` [](/graph/query-parameters)**toRecipients** 和 **ccRecipients** 属性。
+
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
@@ -49,8 +50,8 @@ GET /groups/{id}/conversations/{id}/threads
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [conversationThread](../resources/conversationthread.md) 对象集合。
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
-下面是一个请求示例。
+### <a name="request"></a>请求
+下面展示了示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -58,7 +59,7 @@ GET /groups/{id}/conversations/{id}/threads
   "name": "get_threads"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/groups/{id}/conversations/{id}/threads
+GET https://graph.microsoft.com/beta/groups/4d81ce71-486c-41e9-afc5-e41bf2d0722a/conversations/AAQkAGRhZmRhMWM3LTYwZTktNDZmYy1hNWU1LThhZWU4NzI2YTEyZgAQABKPPJ682apIiV1UFlj7XxY=/threads
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-threads-csharp-snippets.md)]
@@ -78,8 +79,9 @@ GET https://graph.microsoft.com/beta/groups/{id}/conversations/{id}/threads
 
 ---
 
-##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+### <a name="response"></a>响应
+下面展示了示例响应。 
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -89,35 +91,22 @@ GET https://graph.microsoft.com/beta/groups/{id}/conversations/{id}/threads
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 536
 
 {
-  "value": [
-    {
-      "toRecipients": [
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups('4d81ce71-486c-41e9-afc5-e41bf2d0722a')/conversations('AAQkAGRhZmRhMWM3LTYwZTktNDZmYy1hNWU1LThhZWU4NzI2YTEyZgAQABKPPJ682apIiV1UFlj7XxY%3D')/threads",
+    "value": [
         {
-          "emailAddress": {
-            "name": "name-value",
-            "address": "address-value"
-          }
+            "id": "AAQkAGRhZmRhMWM3LTYwZTktNDZmYy1hNWU1LThhZWU4NzI2YTEyZgMkABAAEo88nrzZqkiJXVQWWPtfFhAAEo88nrzZqkiJXVQWWPtfFg==",
+            "topic": "The new Ask HR group is ready",
+            "hasAttachments": false,
+            "lastDeliveredDateTime": "2021-08-02T11:42:38Z",
+            "uniqueSenders": [
+                "Ask HR"
+            ],
+            "preview": "Welcome to the Ask HR group.Use the group to share ideas, files, and important dates.Start a conversationRead group conversations or start your own.Add to the team siteStart sharing and collaborating on content in SharePoint.Share filesView,",
+            "isLocked": false
         }
-      ],
-      "topic": "topic-value",
-      "hasAttachments": true,
-      "lastDeliveredDateTime": "2016-10-19T10:37:00Z",
-      "uniqueSenders": [
-        "uniqueSenders-value"
-      ],
-      "ccRecipients": [
-        {
-          "emailAddress": {
-            "name": "name-value",
-            "address": "address-value"
-          }
-        }
-      ]
-    }
-  ]
+    ]
 }
 ```
 

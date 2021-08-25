@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 54b856543279b93795077485f418af1a258e845275a0b4c0809cc18856617cc8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b15d4fd7d3ed1688fd27fed7a101fb0d9aed37ba
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163815"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58513606"
 ---
 # <a name="conversation-resource-type"></a>对话资源类型
 
@@ -34,10 +34,10 @@ ms.locfileid: "54163815"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|hasAttachments|Boolean|指示此对话中的任意帖子是否至少有一个附件。|
+|hasAttachments|Boolean|指示此对话中的任意帖子是否至少有一个附件。 支持 `$filter` `eq` `ne` (、) 和 `$search` 。|
 |id|String|对话的唯一标识符。只读。|
-|lastDeliveredDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
-|preview|String|来自此对话中最新帖子的正文的简短摘要。|
+|lastDeliveredDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`2014-01-01T00:00:00Z`|
+|preview|String|此对话中最新文章正文的简短摘要。 支持 `$filter` （`eq`、 `ne`、 `le`、 `ge`）。|
 |topic|String|对话的主题。在创建对话时可设置此属性，但无法对其进行更新。|
 |uniqueSenders|String collection|发送消息到此对话的所有用户。|
 

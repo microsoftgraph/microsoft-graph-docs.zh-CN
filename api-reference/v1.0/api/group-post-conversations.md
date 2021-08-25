@@ -5,12 +5,12 @@ author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a91b88067384962f98154448b0eadcef6a6cb44f
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 5c0a4f1191d98b04c25e446b33ea2405593fa627
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680582"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58514740"
 ---
 # <a name="create-conversation"></a>创建对话
 
@@ -48,7 +48,7 @@ POST /groups/{id}/conversations
 响应包括新对话和线程的 ID，这些 ID 也可用于[列出帖子](conversationthread-list-posts.md)操作，从而获取新帖子。
 
 ## <a name="example"></a>示例
-#### <a name="request"></a>请求
+### <a name="request"></a>请求
 下面展示了示例请求。
 
 
@@ -63,27 +63,27 @@ POST https://graph.microsoft.com/v1.0/groups/29981b6a-0e57-42dc-94c9-cd24f530619
 Content-type: application/json
 
 {
-  "topic":"New locations for this quarter",
-  "threads":[
-    {
-      "posts":[
+    "topic": "Take your wellness days and rest",
+    "threads": [
         {
-          "body":{
-            "contentType":"html",
-            "content":"What do we know so far?"
-          },
-          "newParticipants":[
-            {
-              "emailAddress":{
-                "name":"Adele Vance",
-                "address":"AdeleV@contoso.onmicrosoft.com"
-              }
-            }
-          ]
+            "posts": [
+                {
+                    "body": {
+                        "contentType": "html",
+                        "content": "Contoso cares about you: Rest and Recharge"
+                    },
+                    "newParticipants": [
+                        {
+                            "emailAddress": {
+                                "name": "Adele Vance",
+                                "address": "AdeleV@contoso.onmicrosoft.com"
+                            }
+                        }
+                    ]
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -105,7 +105,7 @@ Content-type: application/json
 ---
 
 
-#### <a name="response"></a>响应
+### <a name="response"></a>响应
 下面展示了示例响应。
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
@@ -119,14 +119,14 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups('29981b6a-0e57-42dc-94c9-cd24f5306196')/conversations/$entity",
-  "id":"AAQkADDVKtMlRp4Txc6k=",
-  "threads@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups('29981b6a-0e57-42dc-94c9-cd24f5306196')/conversations('AAQkADDVKtMlRp4Txc6k%3D')/threads",
-  "threads":[
-    {
-      "id":"AAQkADQDarUNUq0yVGnhPFzqQ=="
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups('4d81ce71-486c-41e9-afc5-e41bf2d0722a')/conversations/$entity",
+    "id": "AAQkAGRhZmRhMWM3LTYwZTktNDZmYy1hNWU1LThhZWU4NzI2YTEyZgAQADamkjVbzvRKnUq1oBRdwhk=",
+    "threads@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups('4d81ce71-486c-41e9-afc5-e41bf2d0722a')/conversations('AAQkAGRhZmRhMWM3LTYwZTktNDZmYy1hNWU1LThhZWU4NzI2YTEyZgAQADamkjVbzvRKnUq1oBRdwhk%3D')/threads",
+    "threads": [
+        {
+            "id": "AAQkAGRhZmRhMWM3LTYwZTktNDZmYy1hNWU1LThhZWU4NzI2YTEyZgMkABAANqaSNVvO9EqdSrWgFF3CGRAANqaSNVvO9EqdSrWgFF3CGQ=="
+        }
+    ]
 }
 ```
 

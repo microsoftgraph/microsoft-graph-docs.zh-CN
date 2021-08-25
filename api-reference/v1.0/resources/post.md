@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 41d29fe72dcc76e0e45e8133d4b4ecf2d5f56863ae946bc5cf0dd25759a4badd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f1af505f7c55ef46c855d92170679195bb390474
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54169359"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58513193"
 ---
 # <a name="post-resource-type"></a>帖子资源类型
 
@@ -35,7 +35,7 @@ ms.locfileid: "54169359"
 |[转发](../api/post-forward.md)|无|将帖子转发给收件人。|
 |**附件**| | |
 |[列出附件](../api/post-list-attachments.md) |[attachment](attachment.md) 集合| 获取帖子的所有附件。|
-|[Add attachment](../api/post-post-attachments.md) |[attachment](attachment.md)| 将附件添加到帖子中。 |
+|[Add attachment](../api/post-post-attachments.md) |[附件](attachment.md)| 将附件添加到帖子中。 |
 |**开放扩展**| | |
 |[创建开放扩展](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| 创建开放扩展，并在新建或现有的资源实例中添加自定义属性。|
 |[获取开放扩展](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) 集合| 获取通过名称或完全限定的名称识别的一个或多个开放扩展对象。|
@@ -67,9 +67,9 @@ ms.locfileid: "54169359"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|attachments|[附件](attachment.md) 集合| 只读。可为 NULL。|
-|extensions|[Extension](extension.md) 集合|为帖子定义的开放扩展集合。只读。可为 NULL。|
-|inReplyTo|[帖子](post.md)| 只读。|
+|attachments|[附件](attachment.md) 集合| 只读。 可为空。 支持 `$expand`。|
+|extensions|[扩展](extension.md)集合|为帖子定义的开放扩展集合。 只读。 可为空。 支持 `$expand`。|
+|inReplyTo|[帖子](post.md)| 只读。 支持 `$expand`。|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为帖子定义的多值扩展属性的集合。只读。可为 NULL。|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 为帖子定义的单值扩展属性的集合。只读。可为 NULL。|
 

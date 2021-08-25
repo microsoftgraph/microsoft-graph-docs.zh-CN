@@ -3,26 +3,28 @@ title: responseStatus 资源类型
 description: 会议请求的响应状态。
 localization_priority: Normal
 author: harini84
-ms.prod: ''
+ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 93d464e054663ebeae53ff9f6c1e082ca660608635ee99d74cb4a9592f1981ce
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 89334764afa8a94c13c8c48111eb279e970b30cb
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54169310"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58514551"
 ---
 # <a name="responsestatus-resource-type"></a>responseStatus 资源类型
 
 命名空间：microsoft.graph
 
-会议请求的响应状态。
+会议请求的与会者或组织者的响应状态。
+
+可以通过事件的 **responseStatus** 属性或与会者 的 **status** 属性获取与会者或 [](event.md)组织者 [的响应状态](attendee.md)。
 
 ## <a name="properties"></a>属性
 
 | 属性 | 类型           | 说明 |
 |:---------|:---------------|:------------|
-| 响应 | responseType   | 响应类型。 可能的值包括 `None`、`Organizer`、`TentativelyAccepted`、`Accepted`、`Declined`、`NotResponded`。
+| 响应 | responseType   | 响应类型。 可取值为：`none`、`organizer`、`tentativelyAccepted`、`accepted`、`declined`、`notResponded`。<br><br>为了区分 和 ：，例如，如果与会者 Alex 尚未响应会议请求，在 Alex 的日历中获取 Alex 对该事件的响应状态 `none` `notResponded` 将返回 `notResponded` 。 从任何其他与会者或组织者的日历获取 Alex 的响应将返回 `none` 。 获取组织者对任何人日历中事件的响应也会返回 `none` 。 
 | 时间     | DateTimeOffset | 响应返回的日期和时间。 它使用 ISO 8601 格式，并始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`
 
 ## <a name="json-representation"></a>JSON 表示形式

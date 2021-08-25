@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 7406bdc29d71903451d97fcaf4beee41994089ca
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ce55211e33108adaedc64206829617a908ca25e4
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956887"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58514530"
 ---
 # <a name="delete-conversation"></a>删除对话
 
@@ -46,8 +46,8 @@ DELETE /groups/{id}/conversations/{id}
 如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
-下面是一个请求示例。
+### <a name="request"></a>请求
+下面展示了示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -75,8 +75,8 @@ DELETE https://graph.microsoft.com/beta/groups/{id}/conversations/{id}
 
 ---
 
-##### <a name="response"></a>响应
-下面是一个响应示例。 
+### <a name="response"></a>响应
+下面展示了示例响应。 
 <!-- {
   "blockType": "response",
   "truncated": true

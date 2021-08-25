@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 250c01172e44d8ea5f3cdea94a9ac61a89a11c1b
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 027cf5616588593244c011c7dba5a0c3efb4514d
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761407"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58513718"
 ---
 # <a name="expirationpattern-resource-type"></a>expirationPattern 资源类型
 
@@ -24,8 +24,8 @@ ms.locfileid: "50761407"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|endDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
-|duration|持续时间|请求者所需的访问持续时间。 如果在请求中指定，endDateTime 不应存在。|
+|endDateTime|DateTimeOffset|使用 ISO 8601 格式的日期和时间信息的时间戳，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
+|duration|期限|请求者所需的访问持续时间以 ISO 8601 格式表示。 例如，PT3H 是指三个小时。  如果在请求中指定 **，endDateTime** 不应存在， **并且 type** 属性应设置为 `afterDuration` 。|
 |type|expirationPatternType|请求者所需的过期模式类型。|
 
 ### <a name="expirationpatterntype-values"></a>expirationPatternType 值
@@ -33,9 +33,9 @@ ms.locfileid: "50761407"
 | 成员 | 值| 说明 |
 |:---------------|:--------|:----------|
 |notSpecified|0|未指定过期计划。|
-|noExpiration|1|请求者不希望访问过期。|
+|noExpiration|1 |请求者不希望访问过期。|
 |afterDateTime|2 |访问将在指定的日期和时间后过期。|
-|afterDuration|3 |访问将在相对于授予访问权限的指定持续时间后过期。|
+|afterDuration|3 |访问将在相对于授予访问权限的指定持续时间后过期。 指定 **duration 属性** 时是必需的。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

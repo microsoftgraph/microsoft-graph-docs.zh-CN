@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ee2b0fcbf11c42d82943d769032e869cca9213f6
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: c15667d28435e94600c7fd104682f7afee7e229c
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50809181"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58514683"
 ---
 ```javascript
 
@@ -16,12 +16,24 @@ const options = {
 const client = Client.init(options);
 
 const groupSetting = {
-  displayName: 'displayName-value',
-  templateId: 'templateId-value',
+  displayName: 'Group.Unified',
+  templateId: '62375ab9-6b52-47ed-826b-58e47e0e304b',
   values: [
     {
-      name: 'name-value',
-      value: 'value-value'
+      name: 'GuestUsageGuidelinesUrl',
+      value: 'https://privacy.contoso.com/privacystatement'
+    },
+    {
+      name: 'EnableMSStandardBlockedWords',
+      value: 'true'
+    },
+    {
+      name: 'EnableMIPLabels',
+      value: 'true'
+    },
+    {
+      name: 'PrefixSuffixNamingRequirement',
+      value: '[Contoso-][GroupName]'
     }
   ]
 };

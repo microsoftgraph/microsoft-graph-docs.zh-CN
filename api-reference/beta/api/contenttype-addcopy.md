@@ -1,18 +1,18 @@
 ---
 author: swapnil1993
-title: contentType： addCopy
+title: contentType：addCopy
 description: 将网站内容类型的副本添加到列表中。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: f388799e409a5f2037182bb3bc331a6a6adbc45f
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: bb096cc0ad43641709e26559ee86e7fe9ad9f9db
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50947027"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58514607"
 ---
-# <a name="contenttype-addcopy"></a>contentType： addCopy
+# <a name="contenttype-addcopy"></a>contentType：addCopy
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -73,7 +73,7 @@ POST /sites/{site-id}/lists/{list-id}/contentTypes/addCopy
 }
 -->
 ```http
-POST https://graph.microsoft.com/beta/sites/id/lists/{list-id}/contentTypes/addCopy
+POST https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/contentTypes/addCopy
 Content-Type: application/json
 
 {

@@ -5,12 +5,12 @@ author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e73b14197a6bd0c26cdb8889c1f01139794f3a50
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: 85c013c4515b90a400d3ecf986ff5c475783b045
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453560"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58513524"
 ---
 # <a name="create-unifiedroleassignmentschedulerequest"></a>创建 unifiedRoleAssignmentScheduleRequest
 命名空间：microsoft.graph
@@ -52,9 +52,9 @@ POST /roleManagement/directory/roleAssignmentScheduleRequests
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|unifiedRoleAssignmentScheduleRequest 的唯一标识符。 键，不可为 null，只读。|
-|action|字符串|表示对项目执行的操作角色分配。 可能的值有： <ul><li>`AdminAssign`：供管理员向用户或组分配角色。</li><li>`AdminRemove`：供管理员从角色中删除用户或组。</li><li> `AdminUpdate`：供管理员更改现有角色分配。</li><li>`AdminExtend`：供管理员扩展即将过期的工作分配。</li><li>`AdminRenew`：供管理员续订已过期的工作分配。</li><li>`SelfActivate`：供用户激活其工作分配。</li><li>`SelfDeactivate`：供用户停用其活动分配。</li><li>`SelfExtend`：用户请求延长其过期分配。</li><li>`SelfRenew`：用户请求续订其已过期的工作分配。</li></ul>
+|action|String|表示对项目执行的操作角色分配。 可能的值有： <ul><li>`AdminAssign`：供管理员向用户或组分配角色。</li><li>`AdminRemove`：供管理员从角色中删除用户或组。</li><li> `AdminUpdate`：供管理员更改现有角色分配。</li><li>`AdminExtend`：供管理员扩展即将过期的工作分配。</li><li>`AdminRenew`：供管理员续订已过期的工作分配。</li><li>`SelfActivate`：供用户激活其工作分配。</li><li>`SelfDeactivate`：供用户停用其活动分配。</li><li>`SelfExtend`：用户请求延长其过期分配。</li><li>`SelfRenew`：用户请求续订其已过期的工作分配。</li></ul>
 |principalId|String|要向其中授予工作分配的主体的标识符。|
-|roleDefinitionId|字符串|分配所针对的 unifiedRoleDefinition 的标识符。 只读。|
+|roleDefinitionId|String|分配所针对的 unifiedRoleDefinition 的标识符。 只读。|
 |directoryScopeId|String|表示工作分配范围的目录对象的标识符。 工作分配的范围决定了已授予主体访问权限的资源集。 目录范围是存储在目录中的多个应用程序可以理解的共享范围。 用于 `/` 租户范围范围。 使用 **appScopeId** 将作用域限制为仅应用程序。 |
 |appScopeId|String|当分配范围特定于应用时，特定于应用的范围的标识符。 工作分配的范围决定了已授予主体访问权限的资源集。 应用程序作用域是仅由此应用程序定义和理解的范围。 用于 `/` 租户范围的应用范围。 使用 **directoryScopeId** 将作用域限制为特定目录对象，例如管理单元。|
 |isValidationOnly|Boolean|指定调用是验证调用还是实际调用。 仅在要检查激活是否受 MFA 等其他规则限制，然后再实际提交请求时设置此属性。|
@@ -181,6 +181,8 @@ Content-Type: application/json
 
 在下面的请求中 **，principalId** 标识的用户激活由 标识的其自己的 `c6ad1942-4afa-47f8-8d48-afb5d8d69d2f` 符合条件的角色 `9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3` 。 其角色的作用域是租户中所有目录对象，分配的时间为五个小时。 若要运行此请求，调用用户必须强制执行多重身份验证 (MFA) ，并且必须在要求他们进行 MFA 的会话中运行查询。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_unifiedroleassignmentschedulerequest_from_unifiedroleassignmentschedulerequests_SelfActivate"
@@ -209,6 +211,24 @@ Content-Type: application/json
     }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-unifiedroleassignmentschedulerequest-from-unifiedroleassignmentschedulerequests-selfactivate-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-unifiedroleassignmentschedulerequest-from-unifiedroleassignmentschedulerequests-selfactivate-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-unifiedroleassignmentschedulerequest-from-unifiedroleassignmentschedulerequests-selfactivate-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-unifiedroleassignmentschedulerequest-from-unifiedroleassignmentschedulerequests-selfactivate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### <a name="response"></a>响应

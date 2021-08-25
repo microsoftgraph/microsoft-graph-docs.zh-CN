@@ -1,16 +1,16 @@
 ---
 title: 对话资源类型
-description: 对话是 线程 集合，而线程包含相应线程拥有的帖子。 对话中的所有线程和帖子共享相同的主题。
+description: 对话是 线程 集合，而线程包含相应线程拥有的帖子。对话中的所有线程和帖子共享相同的主题。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: b3dd263a91552afc4db42cb2cc1791741dc24473
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 038ec9dd7abe0dfc5b9ef7eeda1c6d1837f4e1db
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721666"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58513025"
 ---
 # <a name="conversation-resource-type"></a>对话资源类型
 
@@ -36,10 +36,10 @@ ms.locfileid: "50721666"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|hasAttachments|Boolean|指示此对话中的任意帖子是否至少有一个附件。|
+|hasAttachments|Boolean|指示此对话中的任意帖子是否至少有一个附件。 支持 `$filter` (`eq` `ne` 、) 和 `$search` 。|
 |id|String|对话的唯一标识符。只读。|
-|lastDeliveredDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
-|preview|String|来自此对话中最新帖子的正文的简短摘要。|
+|lastDeliveredDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 支持 `$filter`（`eq`、`ne`、`le`、`ge`）。|
+|preview|String|此对话中最新文章正文的简短摘要。|
 |topic|String|对话的主题。在创建对话时可设置此属性，但无法对其进行更新。|
 |uniqueSenders|String collection|发送消息到此对话的所有用户。|
 

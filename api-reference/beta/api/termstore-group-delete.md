@@ -1,18 +1,18 @@
 ---
 title: 删除组
-description: 删除 group 对象。
+description: 删除术语存储中的组对象。
 author: mohitpcad
 localization_priority: Normal
-ms.prod: Sharepoint
+ms.prod: taxonomy
 doc_type: apiPageType
-ms.openlocfilehash: 08379c962f5361b010559bc81c3ecb273589d54f
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 4d76c86859c119f5811ad85bd1b44047220a1598
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873834"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58514383"
 ---
-# <a name="delete-groups"></a>删除组
+# <a name="delete-group"></a>删除组
 命名空间：microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

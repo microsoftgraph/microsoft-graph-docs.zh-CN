@@ -1,23 +1,23 @@
 ---
 author: swapnil1993
 ms.date: 08/30/2020
-title: 在列表中创建 columnDefinition
+title: 创建 columnDefinition
 description: 创建列表列。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: c2f49b6b5ec25e6c2941e94d06c8b0b242a98447
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 2c82f506d09fff9dc89e8ed73e6102a128119ed6
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50965047"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58513018"
 ---
-# <a name="create-columndefinition-for-a-list"></a>为列表创建 columnDefinition
+# <a name="create-columndefinition"></a>创建 columnDefinition 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-为列表创建 [列][list] by specifying a [columnDefinition][columnDefinition] 。
+为列表创建 [列][list] with a request that specifies a [columnDefinition][columnDefinition] 。
 
 ## <a name="permissions"></a>权限
 
@@ -46,7 +46,7 @@ POST /sites/{site-id}/lists/{list-id}/columns
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [columnDefinition][] 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [columnDefinition][] 对象。
 
 ## <a name="example"></a>示例
 
@@ -96,7 +96,6 @@ Content-type: application/json
     "maxLength": 255
   }
 }
-
 ```
 
   

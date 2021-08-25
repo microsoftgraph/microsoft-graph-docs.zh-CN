@@ -5,12 +5,12 @@ localization_priority: Normal
 author: psignoret
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1317b50520d7e80e918141b9526e5691ceddf6ac
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: d8abc221be2e66bd82ece75eae6ee9615113a159
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055874"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58513935"
 ---
 # <a name="oauth2permissiongrant-delta"></a>oauth2permissiongrant： delta
 
@@ -27,7 +27,7 @@ ms.locfileid: "52055874"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|oauth2permissiongrant | Directory.Read.All、Directory.ReadWrite.All |
+|应用程序 | Directory.Read.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -64,7 +64,7 @@ GET /oauth2PermissionGrants/delta
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [oauth2permissiongrant](../resources/oauth2permissiongrant.md) 集合对象。 该响应还包括 `nextLink`URL 或 `deltaLink`URL。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [oauth2permissiongrant](../resources/oauth2permissiongrant.md) 集合对象。 该响应还包括 `nextLink`URL 或 `deltaLink`URL。
 
 - 如果 `nextLink` 返回 URL，可以在会话中检索其他数据页。 **oauth2permissiongrant** 继续使用 URL 提出请求，直到 `nextLink` `deltaLink` 响应中包括 URL。
 - 如果 `deltaLink` 返回 URL，则不返回有关资源的更多数据。 保留并使用 `deltaLink` URL 了解将来对资源的更改。
