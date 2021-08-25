@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 0d2b584c37fbd6b71ff6418ad3147601dcd0c844b017c456950f78ddb738b700
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ec0e908da148e6541d2644f689c15411c9c37d08
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57220289"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58516041"
 ---
 ```csharp
 
@@ -46,7 +46,6 @@ var schema = new Microsoft.Graph.ExternalConnectors.Schema
 
 await graphClient.External.Connections["{externalConnectors.externalConnection-id}"].Schema
     .Request()
-    .Header("Prefer","respond-async")
     .AddAsync(schema);
 
 ```

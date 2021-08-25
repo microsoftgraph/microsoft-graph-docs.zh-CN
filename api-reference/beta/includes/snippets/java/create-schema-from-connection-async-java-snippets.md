@@ -1,18 +1,15 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ac97bad776afe095bab595f52fbdc5733ac2bb7a469a60a83a5b51e8879b5113
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 37e41144adc9ae694ab4272e1cf032327dfdb9a0
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57220288"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58516043"
 ---
 ```java
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
-
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new HeaderOption("Prefer", "respond-async"));
 
 Schema schema = new Schema();
 schema.baseType = "microsoft.graph.externalItem";
@@ -41,7 +38,7 @@ propertiesList.add(properties2);
 schema.properties = propertiesList;
 
 graphClient.external().connections("contosohr").schema()
-    .buildRequest( requestOptions )
+    .buildRequest()
     .post(schema);
 
 ```
