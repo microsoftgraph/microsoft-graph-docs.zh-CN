@@ -5,12 +5,12 @@ description: site 资源提供 Sharepoint 网站的元数据和关系。
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: b0ce021bbc07170879a11cab2d23a66efc45b82d9881d5157bcc9d44d34549e0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4d37a68ae495a783bbf0a25793a49ff8aefcb141
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54126275"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58514544"
 ---
 # <a name="site-resource"></a>site 资源
 
@@ -84,18 +84,20 @@ ms.locfileid: "54126275"
   
 ## <a name="relationships"></a>关系
 
-| 关系      | 类型                             | 说明
-|:------------------|:---------------------------------|:----------------------
-| **analytics**     | [itemAnalytics][] 资源       | 此网站上发生的查看活动的相关分析。
-| **columns**       | Collection([columnDefinition][]) | 可以在此网站下方的列表中重复使用的列定义集合。
-| **contentTypes**  | Collection([contentType][])      | 为此网站定义的内容类型集合。
-| **drive**         | [drive][]                        | 此网站的默认驱动器（文档库）。
-| **驱动器**        | 集合（[drive][]）            | 网站下方的驱动器集合（文档库）。
-| **项目**         | 集合 ([baseItem][])         | 用于处理包含在此网站中的任何项目。不能枚举该集合。
-| **lists**         | Collection([list][])             | 此网站下方的列表集合。
-| **权限**   | 集合([权限][])         | 与网站关联的权限。空。
-| **sites**         | 集合（[网站][]）             | 网站下方的子网站的集合。
-| **onenote**       | [onenote][]                      | 调用 OneNote 服务执行笔记本相关操作。
+| 关系      | 类型                                             | 说明
+|:------------------|:-------------------------------------------------|:----------------------
+| **analytics**     | [itemAnalytics][] 资源                       | 此网站上发生的查看活动的相关分析。
+| **columns**       | Collection([columnDefinition][])                 | 可以在此网站下方的列表中重复使用的列定义集合。
+| **contentTypes**  | Collection([contentType][])                      | 为此网站定义的内容类型集合。
+| **drive**         | [drive][]                                        | 此网站的默认驱动器（文档库）。
+| **驱动器**        | 集合（[drive][]）                            | 网站下方的驱动器集合（文档库）。
+| **项目**         | 集合 ([baseItem][])                         | 用于处理包含在此网站中的任何项目。此集合无法枚举。
+| **lists**         | Collection([list][])                             | 此网站下方的列表集合。
+| **onenote**       | [onenote][]                                      | 调用 OneNote 服务执行笔记本相关操作。
+| **权限**   | 集合([权限][])                       | 与网站关联的权限。空。
+| **sites**         | 集合（[网站][]）                             | 网站下方的子网站的集合。
+| **termStore**     | [microsoft.graph.termStore.store]                | 此网站下的默认 termStore。
+| **termStores**    | 集合（[microsoft.graph.termStore.store]）    | 此网站下 termStores 的集合。
 
 [columnDefinition]: columndefinition.md
 [baseItem]: baseitem.md
@@ -107,6 +109,7 @@ ms.locfileid: "54126275"
 [权限]: permission.md
 [网站]: site.md
 [onenote]: onenote.md
+[microsoft.graph.termStore.store]: termstore-store.md
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -149,6 +152,8 @@ ms.locfileid: "54126275"
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
   "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
   "onenote": { "@odata.type": "microsoft.graph.onenote"},
+  "termStore": { "@odata.type": "microsoft.graph.termStore.store" },
+  "termStores": [ { "@odata.type": "microsoft.graph.termStore.store" } ],
 
   /* inherited from baseItem */
   "name": "string",
