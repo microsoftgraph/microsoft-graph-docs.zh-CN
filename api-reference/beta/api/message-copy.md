@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: dff98e9e10cf8e909b1785c94c86797467c795d9
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: f066240437b09c7c1e6a9492bc82137c4a32e9f5
+ms.sourcegitcommit: 998c63e6290cfb5ad4a6bd3eb3e249d282f962a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053655"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58531311"
 ---
 # <a name="message-copy"></a>message: copy
 
@@ -18,7 +18,7 @@ ms.locfileid: "52053655"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将邮件复制到文件夹。
+将邮件复制到用户邮箱内的文件夹。
 
 ## <a name="permissions"></a>权限
 

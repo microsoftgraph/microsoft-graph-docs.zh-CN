@@ -1,22 +1,22 @@
 ---
 title: 删除 registeredUsers
-description: 删除用户作为设备的注册用户。
+description: 删除作为设备的注册用户的用户。
 localization_priority: Normal
 author: michaelrm97
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 78f5755e249a6a83f040cb6ad31aaccde8b010f6
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 3173b57739bc3c9021c3147b74f0183a5bc667f0
+ms.sourcegitcommit: 998c63e6290cfb5ad4a6bd3eb3e249d282f962a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434648"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58531297"
 ---
 # <a name="delete-registereduser"></a>删除 registeredUser
 
 命名空间：microsoft.graph
 
-删除用户作为设备的注册用户。
+删除作为设备的注册用户的用户。
 
 ## <a name="permissions"></a>权限
 
@@ -24,9 +24,9 @@ ms.locfileid: "50434648"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Directory.AccessAsUser.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Directory.ReadWrite.All |
+|应用程序 | 不支持。 |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 

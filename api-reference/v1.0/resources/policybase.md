@@ -5,18 +5,18 @@ localization_priority: Normal
 author: lujiangfeng666
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 80d8b6c030ec609c731d45a141ace028aed96909dc685ae26ecd9bb7591d6a5d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2918543536f62627f7c2a742009c3d67012353b4
+ms.sourcegitcommit: 998c63e6290cfb5ad4a6bd3eb3e249d282f962a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54211855"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58531220"
 ---
 # <a name="policybase-resource-type"></a>policyBase 资源类型
 
 命名空间：microsoft.graph
 
-表示要继承的策略类型的抽象基本类型。
+表示要继承的策略类型的抽象基本类型。 继承自 [directoryObject](directoryobject.md)。
 
 ## <a name="methods"></a>方法
 
@@ -26,7 +26,7 @@ ms.locfileid: "54211855"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|id|String| 此策略的唯一标识符。 只读。|
+|id|String| 此策略的唯一标识符。 只读。 继承自 [directoryObject](directoryobject.md)。|
 |说明|String| 此策略的说明。|
 |displayName|String| 此策略的显示名称。 |
 

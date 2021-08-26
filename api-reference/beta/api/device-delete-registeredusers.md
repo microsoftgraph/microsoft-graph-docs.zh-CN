@@ -1,16 +1,16 @@
 ---
 title: 删除 registeredUsers
-description: 删除用户作为设备的注册用户。
+description: 删除作为设备的注册用户的用户。
 localization_priority: Normal
 author: michaelrm97
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: edc51e2610a3692dfa70dee2f0d16b701df5f8bc
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 7657b06b55ab246ccf327a9f8dee97b6cb7da7f5
+ms.sourcegitcommit: 998c63e6290cfb5ad4a6bd3eb3e249d282f962a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437224"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58531276"
 ---
 # <a name="delete-registereduser"></a>删除 registeredUser
 
@@ -18,17 +18,17 @@ ms.locfileid: "50437224"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除用户作为设备的注册用户。
+删除作为设备的注册用户的用户。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Directory.AccessAsUser.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Directory.ReadWrite.All |
+|应用程序 | 不支持。 |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 

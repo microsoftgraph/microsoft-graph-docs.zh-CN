@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 0733e572035d07a0960d00dc8d80921c8674d382a0ff6a18fab5cb66507d6ca9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f74c83634f3484dff9d2c2b43c0d4c5bed072915
+ms.sourcegitcommit: 998c63e6290cfb5ad4a6bd3eb3e249d282f962a3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54230310"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58531290"
 ---
 # <a name="overview-of-item-insights"></a>项见解概述
 项见解是基于你在 Microsoft 365 中的协作工作，向你和与你协作的人员提供的以用户为中心的建议。
@@ -64,7 +64,7 @@ Microsoft 不会使用你在专用空间中工作的活动来为其他人计算�
 ![角色卡片中禁用的项见解](images/disabled-item-insights-in-persona-card.PNG)
 * 在 Delve 和 Outlook mobile 的 **发现** 部分等位置，显示你周围内容趋势的体验会受到阻止，并且其他人无法访问这些体验。 缺少趋势见解也会影响你在 Microsoft 搜索中的个性化相关性，因为它无法将趋势内容用作相关性的信号。
 ![Delve 中禁用的项见解](images/disabled-item-insights-in-delve.PNG)
-* 禁用项见解将停止计算 [建议会议时间](https://support.microsoft.com/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1?ui=en-US&rs=en-US&ad=US)，并且不再将其显示到用户的角色卡片上。 
+* 禁用项见解将停止计算 [建议会议时间](https://support.microsoft.com/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1)，并且不再将其显示到用户的角色卡片上。 
 * 对于已禁用项见解的用户，在 Microsoft Graph API 中查询 [趋势](/graph/api/resources/insights-trending) 和 [已使用](/graph/api/resources/insights-used) 的资源将返回 `HTTP 403 Forbidden`。
 
 ## <a name="api-reference"></a>API 参考

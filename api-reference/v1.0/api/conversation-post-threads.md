@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 9460157789ee0b668b3ece8e360a9aaa6609da41
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8b91b07db4f467c261782dbd0d758d8a690abe20
+ms.sourcegitcommit: 998c63e6290cfb5ad4a6bd3eb3e249d282f962a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48010029"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58531241"
 ---
 # <a name="create-thread"></a>创建线程
 
@@ -46,11 +46,11 @@ POST /groups/{id}/conversations/{id}/threads
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [ConversationThread](../resources/conversationthread.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [conversationThread](../resources/conversationthread.md) 对象。
 
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
-下面是一个请求示例。
+### <a name="request"></a>请求
+下面展示了示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -62,13 +62,15 @@ POST https://graph.microsoft.com/v1.0/groups/{id}/conversations/{id}/threads
 Content-type: application/json
 
 {
-  "topic": "topic-value",
-  "posts": [{
-      "body": {
-        "contentType": "html",
-        "content": "this is body content"
-      }
-  }]
+    "topic": "Take your wellness days and rest",
+    "posts": [
+        {
+            "body": {
+                "contentType": "html",
+                "content": "Waiting for the summer holidays."
+            }
+        }
+    ]
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -90,9 +92,10 @@ Content-type: application/json
 ---
 
 在请求正文中，提供 [ConversationThread](../resources/conversationthread.md) 对象的 JSON 表示形式。
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `201 Created` 响应代码和新线程的 `id`。下面是一个响应示例。 
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和新线程的 `id`。
+下面展示了示例响应。 
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -101,10 +104,10 @@ Content-type: application/json
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 346
 
 {
-  "id": "thread-id-value"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups('4d81ce71-486c-41e9-afc5-e41bf2d0722a')/conversations('AAQkAGRhZmRhMWM3LTYwZTktNDZmYy1hNWU1LThhZWU4NzI2YTEyZgAQABKPPJ682apIiV1UFlj7XxY%3D')/threads/$entity",
+    "id": "AAQkAGRhZmRhMWM3LTYwZTktNDZmYy1hNWU1LThhZWU4NzI2YTEyZgMkABAArnv4XDMi_kemtqM1d730TxAArnv4XDMi_kemtqM1d730Tw=="
 }
 ```
 
