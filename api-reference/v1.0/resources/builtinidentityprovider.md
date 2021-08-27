@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: namkedia
-ms.openlocfilehash: 096574328a5dc5c1bb8c59020398c33396291afc97207a9f59408da9a8a45196
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4f09680a34c90cd060433f111492abbdb2c0730f
+ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54202544"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58667400"
 ---
 # <a name="builtinidentityprovider-resource-type"></a>builtInIdentityProvider 资源类型
 命名空间：microsoft.graph
@@ -25,9 +25,9 @@ ms.locfileid: "54202544"
 
 | 方法       | 返回类型  |Description|
 |:---------------|:--------|:----------|
-|[List](../api/identityproviderbase-list.md)|[identityProviderBase](../resources/identityproviderbase.md) 集合|检索租户中配置的所有标识提供程序，包括内置标识提供程序。|
+|[List](../api/identitycontainer-list-identityproviders.md)|[identityProviderBase](../resources/identityproviderbase.md) 集合|检索租户中配置的所有标识提供程序，包括内置标识提供程序。 无法仅检索租户中的内置标识提供程序。|
 |[Get](../api/identityproviderbase-get.md) |builtInIdentityProvider|检索内置标识提供程序的属性。|
-|[列出可用的提供程序类型](../api/identityproviderbase-list-availableprovidertypes.md)|String 集合|检索租户中所有可用的标识提供程序类型。|
+|[列出可用的提供程序类型](../api/identityproviderbase-availableprovidertypes.md)|String 集合|检索租户中所有可用的标识提供程序类型。|
 
 ## <a name="properties"></a>属性
 

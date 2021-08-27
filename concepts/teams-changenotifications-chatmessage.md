@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: abca79a34bd5c5d45cf57db663f658fa759c5458
-ms.sourcegitcommit: 998c63e6290cfb5ad4a6bd3eb3e249d282f962a3
+ms.openlocfilehash: 82474e8fc13cb1a9dc4d8cc582a9a7aea4f32198
+ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58531233"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58667806"
 ---
 # <a name="get-change-notifications-for-messages-in-teams-channels-and-chats-using-microsoft-graph"></a>使用 Microsoft Graph 获取 Teams 频道和聊天中消息的更改通知
 
@@ -22,7 +22,7 @@ ms.locfileid: "58531233"
 
 ### <a name="subscribe-to-messages-across-channels"></a>跨频道订阅消息
 
-若要跨租户中的频道获取所有消息和回复的更改通知，请订阅 `/teams/getAllMessages`。 此资源支持在通知中[包括资源数据](webhooks-with-resource-data.md)。
+若要在租户中跨频道获取所有消息和答复的更改通知，请订阅 `/teams/getAllMessages`。 此资源支持在通知中[包括资源数据](webhooks-with-resource-data.md)。
 
 #### <a name="permissions"></a>权限
 

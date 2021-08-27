@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: b9a598d994288859f1f8e2989c90cda7bab3300b
-ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
+ms.openlocfilehash: 5d6db788a394c4ffb9c5a0b4a6f5a0434fe6c920
+ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401377"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58667414"
 ---
 # <a name="list-users"></a>列出用户
 
@@ -58,6 +58,8 @@ GET /users
 ## <a name="response"></a>响应
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [user](../resources/user.md) 对象集合。 如果返回大的用户集，则可以[在应用中使用分页](/graph/paging)。
+
+尝试使用 `$select` 在 `/users`collection 中检索无法在用户集合中返回的属性（例如， 请求`../users?$select=aboutMe`）返回 `501 Not Implemented` 错误代码。
 
 ## <a name="examples"></a>示例
 

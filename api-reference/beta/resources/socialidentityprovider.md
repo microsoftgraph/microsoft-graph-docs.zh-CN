@@ -5,21 +5,21 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: namkedia
-ms.openlocfilehash: cfaaeada596ccdf3767950e9f9a480d2d9c8a47e
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: b5b763c2ee6c7a53bb271a456951a800afa5c1e0
+ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53578768"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58667974"
 ---
 # <a name="socialidentityprovider-resource-type"></a>socialIdentityProvider 资源类型
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-对 Azure Active Directory 租户和 Azure AD B2C 租户都标识具有[外部标识](/azure/active-directory/external-identities/)的身份提供程序。
+表示具有Azure Active Directory （Azure AD） 和 Azure AD B2C 租户的 [外部标识](/azure/active-directory/external-identities/) 的社交标识提供者。
 
-此类型将从 [identityProviderBase](../resources/identityproviderbase.md)。
+继承自 [identityProviderBase](../resources/identityproviderbase.md)。
 
 对于 Azure AD 租户中的 Azure AD B2B 方案，身份提供程序类型可以是 Google 或 Facebook。
 
@@ -33,12 +33,12 @@ ms.locfileid: "53578768"
 
 | 方法       | 返回类型  |Description|
 |:---------------|:--------|:----------|
-|[List](../api/identityproviderbase-list.md)|[identityProviderBase](../resources/identityproviderbase.md) 集合|检索租户中配置的所有标识提供程序，包括社交标识提供程序。|
-|[Create](../api/identityproviderbase-post-identityproviders.md)|socialidentityprovider |创建新的社交标识提供程序。|
-|[Get](../api/identityproviderbase-get.md) |socialidentityprovider |检索社交身份提供程序的属性。|
-|[更新](../api/identityproviderbase-update.md)|无|更新社交标识提供程序。|
-|[删除](../api/identityproviderbase-delete.md)|无|删除社交标识提供程序。|
-|[列出可用的提供程序类型](../api/identityproviderbase-list-availableprovidertypes.md)|String 集合|检索租户中所有可用的标识提供程序类型。|
+|[List](../api/identitycontainer-list-identityproviders.md)|[identityProviderBase](../resources/identityproviderbase.md) 集合|检索租户中配置的所有标识提供程序，包括 [socialIdentityProvider](../resources/socialidentityprovider.md) 对象类型。 无法仅检索租户中的社交标识提供者。|
+|[Create](../api/identitycontainer-post-identityproviders.md)|socialidentityprovider |创建新的[socialIdentityProvider](../resources/socialidentityprovider.md) 对象。|
+|[Get](../api/identityproviderbase-get.md) |socialidentityprovider |检索 [socialIdentityProvider](../resources/socialidentityprovider.md) 对象的属性。|
+|[更新](../api/identityproviderbase-update.md)|无|更新[socialIdentityProvider](../resources/socialidentityprovider.md) 对象。|
+|[删除](../api/identityproviderbase-delete.md)|无|删除[socialIdentityProvider](../resources/socialidentityprovider.md) 对象。|
+|[列出可用的提供程序类型](../api/identityproviderbase-availableprovidertypes.md)|String 集合|检索租户中所有可用的标识提供程序类型。|
 
 ## <a name="properties"></a>属性
 
@@ -46,13 +46,13 @@ ms.locfileid: "53578768"
 |:---------------|:--------|:----------|
 |clientId|字符串|向标识提供程序注册应用程序时获取的应用程序的客户端标识符。必需。|
 |clientSecret|字符串|向标识提供程序注册时获取的应用程序的客户端密码。 这是只读的。 读取操作返回 `****`。 必需。|
-|id|String|标识提供程序的标识符。 继承自 [identityProviderBase](../resources/identityproviderbase.md)。 只读。|
+|id|String|标识提供程序的标识符。继承自 [identityProviderBase](../resources/identityproviderbase.md)。只读。|
 |displayName|字符串|标识提供者的显示名称。继承自 [identityProviderBase](../resources/identityproviderbase.md)。|
 |identityProviderType|String|对于 B2B 方案，可能的值为： `Google`、 `Facebook`。 对于 B2C 方案，可能的值： `Microsoft`、 `Google`、 `Amazon`、 `LinkedIn`、 `Facebook`、 `GitHub`、 `Twitter`、 `Weibo`、 `QQ`、 `WeChat`。 必填。|
 
 ### <a name="where-to-get-the-client-identifier-and-secret"></a>在何处获取客户端标识符和密码
 
-每个标识提供程序都有一个用于创建应用注册的进程。 例如，用户在 [developers.facebook.com](https://developers.facebook.com/) 处向 Facebook 创建一个应用注册。 生成的客户端 ID 和客户端密码可传递用于[创建 identityProvider](../api/identityproviderbase-post-identityproviders.md)。 然后，目录中的每个用户对象都可联合到租户的任意标识提供程序中进行身份验证。 这样，用户即可通过在标识提供程序的登录页面上输入评估凭据来进行登录。 来自标识提供程序的令牌先由 Azure AD 进行验证，然后租户再向应用程序发出一个令牌。
+每个标识提供程序都有一个用于创建应用注册的进程。 例如，用户在 [developers.facebook.com](https://developers.facebook.com/) 处向 Facebook 创建一个应用注册。 生成的客户端 ID 和客户端密码可传递用于[创建 identityProvider](../api/identitycontainer-post-identityproviders.md)。 然后，目录中的每个用户对象都可联合到租户的任意标识提供程序中进行身份验证。 这样，用户即可通过在标识提供程序的登录页面上输入评估凭据来进行登录。 来自标识提供程序的令牌先由 Azure AD 进行验证，然后租户再向应用程序发出一个令牌。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

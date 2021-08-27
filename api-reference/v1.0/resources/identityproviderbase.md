@@ -5,30 +5,38 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: namkedia
-ms.openlocfilehash: 3bd8a31e7a48e70a0ccc0631d14a7c70f595d002039aa58f332a5b1657daf0bd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5418d78d6c124995c3783974e80343adc6bed1ea
+ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54152682"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58667862"
 ---
 # <a name="identityproviderbase-resource-type"></a>identityProviderBase 资源类型
 命名空间：microsoft.graph
 
-对 Azure Active Directory 租户和 Azure AD B2C 租户都标识具有[外部标识](/azure/active-directory/external-identities/)的身份提供程序。
+表示标识提供者， [Azure Active Directory （Azure AD） 和 Azure AD B2C 租户的外部标识](/azure/active-directory/external-identities/) 。 它是由 [socialIdentityProvider](../resources/socialidentityprovider.md) 继承的抽象类型， [builtinIdentityProvider](../resources/builtinidentityprovider.md)。
+
+对于 Azure AD B2B 方案，标识提供者是 [socialIdentityProvider](../resources/socialidentityprovider.md) 或 [builtinIdentityProvider](../resources/builtinidentityprovider.md)。 通过在 Azure AD B2C 中配置身份提供程序，可实现新 Azure AD B2B 来宾方案。 例如，具有Microsoft 365资源的组织可以与 Gmail 用户共享它们。 Gmail 将使用其 Google 帐户凭据来验证和访问文档。
+
+在Azure AD B2C目录中，标识提供者类型是 [socialIdentityProvider](../resources/socialidentityprovider.md)。 在Azure AD B2C目录中配置标识提供者使用户能够使用应用程序中的社交帐户进行注册和登录。 例如，应用程序可使用 Azure AD B2C 让用户能够通过 Facebook 帐户注册服务。
 
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型  |Description|
 |:---------------|:--------|:----------|
-|[List](../api/identityproviderbase-list.md)|identityProviderBase 集合|检索在租户中配置的所有标识提供程序。|
-|[列出可用的提供程序类型](../api/identityproviderbase-list-availableprovidertypes.md)|String 集合|检索所有可用的身份提供程序类型。|
+|[List](../api/identitycontainer-list-identityproviders.md)|[identityProviderBase](../resources/identityproviderbase.md) 集合|检索在租户中配置的所有标识提供程序。|
+|[创建](../api/identitycontainer-post-identityproviders.md)|[socialIdentityProvider](../resources/socialidentityprovider.md)|创建新的 [socialIdentityProvider](../resources/socialidentityprovider.md) （Azure AD或Azure AD B2C）。|
+|[获取](../api/identityproviderbase-get.md) |[socialIdentityProvider](../resources/socialidentityprovider.md) 或 [builtinIdentityProvider](../resources/builtinidentityprovider.md)|检索 [socialIdentityProvider](../resources/socialidentityprovider.md) （Azure AD 或Azure AD B2C）或 [builtinIdentityProvider](../resources/builtinidentityprovider.md) （Azure AD） 的属性。|
+|[更新](../api/identityproviderbase-update.md)|无|更新 [socialIdentityProvider](../resources/socialidentityprovider.md) （Azure AD或Azure AD B2C）。|
+|[删除](../api/identityproviderbase-delete.md)|无|删除 [socialIdentityProvider](../resources/socialidentityprovider.md) （Azure AD 或Azure AD B2C）。|
+|[列出可用的提供程序类型](../api/identityproviderbase-availableprovidertypes.md)|String 集合|检索所有受支持的标识提供者类型。|
 
 ## <a name="properties"></a>属性
 
 |属性|类型|说明|
 |:---------------|:--------|:----------|
-|id|字符串|标识提供程序的 ID。|
+|id|String|标识提供程序的标识符。|
 |displayName|字符串|标识提供程序的显示名称。|
 
 ## <a name="json-representation"></a>JSON 表示形式
