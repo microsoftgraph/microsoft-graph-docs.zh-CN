@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 62fba97d4c9599a85c93857a74d5acdf35d89b49
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: ac0417b34a6adad584ef584dd1ba02fa81e06cdd
+ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53533974"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58667596"
 ---
 # <a name="send-replies-to-a-message-in-a-channel"></a>在频道中发送对消息的答复
 
@@ -20,7 +20,7 @@ ms.locfileid: "53533974"
 
 将新回复发送到指定频道中的[chatMessage。](../resources/chatmessage.md) [](../resources/channel.md)
 
-> **注意**：使用安全工具 [作为](/legal/microsoft-apis/terms-of-use)Microsoft Teams违反日志文件。 仅发送用户将阅读的邮件。
+> **注意**：使用 Microsoft Teams 违反使用条款 [](/legal/microsoft-apis/terms-of-use)日志文件。 仅发送用户将阅读的邮件。
 <!-- markdownlint-disable MD024 -->
 <!-- markdownlint-disable MD022 -->
 <!-- markdownlint-disable MD025 -->
@@ -134,7 +134,6 @@ Content-type: application/json
     "from": {
         "application": null,
         "device": null,
-        "conversation": null,
         "user": {
             "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
             "displayName": "Robin Kline",
@@ -235,7 +234,6 @@ HTTP/1.1 200 OK
    "from":{
       "application":null,
       "device":null,
-      "conversation":null,
       "user":{
          "id":"8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
          "displayName":"Joh Doe",

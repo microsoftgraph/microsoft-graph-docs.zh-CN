@@ -5,12 +5,12 @@ localization_priority: Priority
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bec32d879d526ab40116ffe46fb74357404ebd22
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 8c756c1fc4dd62f468dc0b1eefc80859d41b08b1
+ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53533737"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58667813"
 ---
 # <a name="list-messages-in-a-chat"></a>列出聊天中的消息
 
@@ -138,7 +138,6 @@ Content-type: application/json
             "from": {
                 "application": null,
                 "device": null,
-                "conversation": null,
                 "user": {
                     "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
                     "displayName": "Robin Kline",
@@ -174,7 +173,6 @@ Content-type: application/json
             "from": {
                 "application": null,
                 "device": null,
-                "conversation": null,
                 "user": {
                     "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
                     "displayName": "Robin Kline",

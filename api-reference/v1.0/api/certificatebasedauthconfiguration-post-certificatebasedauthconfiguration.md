@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a72e4e5f1eb694a48a2341cb2963eabd059f5e5b
-ms.sourcegitcommit: b7e01a1331abe5f5c9aa2828d93dad08229573f1
+ms.openlocfilehash: 061b8ec1fa3e0ef9fefbc326854bdb4030b27393
+ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58336689"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58667764"
 ---
 # <a name="create-certificatebasedauthconfiguration"></a>创建 certificateBasedAuthConfiguration
 
@@ -36,7 +36,7 @@ ms.locfileid: "58336689"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /organization/{id}/certificateBasedAuthConfiguration/$ref
+POST /organization/{id}/certificateBasedAuthConfiguration
 ```
 
 ## <a name="request-headers"></a>请求标头

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 2fe8ef64558eec89f7e31b47f7625b696bf7e959064f0a135726f33a9cac44bd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d5d878c109466490cee2ee26b8513c1108cb94c1
+ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54197567"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58667799"
 ---
 # <a name="list-assignments-of-a-user"></a>列出用户的分配
 
@@ -33,7 +33,7 @@ ms.locfileid: "54197567"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /education/users/{id}/assignments
+GET /education/me/assignments
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数

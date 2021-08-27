@@ -5,12 +5,12 @@ localization_priority: Priority
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 37f4619d4ae047fe1b80d1c434fbb196c3a178b0
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 9989919b473674639aa8ef1d6f6f2c01f65ca0b6
+ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53533356"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58667771"
 ---
 # <a name="list-channel-messages"></a>列出频道消息
 
@@ -139,7 +139,6 @@ Content-type: application/json
             "from": {
                 "application": null,
                 "device": null,
-                "conversation": null,
                 "user": {
                     "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
                     "displayName": "Robin Kline",
@@ -193,7 +192,6 @@ Content-type: application/json
             "from": {
                 "application": null,
                 "device": null,
-                "conversation": null,
                 "user": {
                     "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
                     "displayName": "Robin Kline",

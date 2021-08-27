@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e1770611f4ce86b1fe1f1d6a26fc5aff3adfb4a0
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 42d79b88f65f87a410d91d32e35515af191a860b
+ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53533855"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58667533"
 ---
 # <a name="list-replies"></a>列出答复
 
@@ -130,7 +130,6 @@ Content-type: application/json
             "from": {
                 "application": null,
                 "device": null,
-                "conversation": null,
                 "user": {
                     "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
                     "displayName": "Robin Kline",
@@ -169,7 +168,6 @@ Content-type: application/json
             "from": {
                 "application": null,
                 "device": null,
-                "conversation": null,
                 "user": {
                     "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
                     "displayName": "Robin Kline",
@@ -208,7 +206,6 @@ Content-type: application/json
             "from": {
                 "application": null,
                 "device": null,
-                "conversation": null,
                 "user": {
                     "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
                     "displayName": "Robin Kline",

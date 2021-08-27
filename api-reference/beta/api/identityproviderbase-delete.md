@@ -5,21 +5,21 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: d78aff8a604f42b7efbc1f87269a87acbb29656c
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 683bb831fae6340f8f9be399d83224a5d3fbed0f
+ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51508806"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58667932"
 ---
 # <a name="delete-identityprovider"></a>删除 identityProvider
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除 Azure AD 中的 [socialIdentityProvider](../resources/socialidentityprovider.md) 对象。
+删除标识提供程序资源，该资源的类型由 **请求中的 id** 指定。
 
-在 Azure AD B2C 中，删除 [socialIdentityProvider](../resources/socialidentityprovider.md) [、openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) 或 [appleIdentityProvider](../resources/appleidentityprovider.md) 对象。
+在从 identityProviderBase 派生的提供程序类型中，当前可以删除 Azure AD 中的 [socialIdentityProvider](../resources/socialidentityprovider.md) 资源。 在 Azure AD B2C 中，此操作当前可以删除 socialIdentityProvider、openIdConnectIdentityProvider 或[appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md)资源。 [](../resources/socialidentityprovider.md) [](../resources/openidconnectidentityprovider.md)
 
 ## <a name="permissions"></a>权限
 

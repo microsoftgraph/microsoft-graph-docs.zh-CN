@@ -5,19 +5,19 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 3940284509b9fd31e082179d84276edd45c9324b90110fe3552b83e4c6bf2a90
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0ad9230e1c6a9f9ba9e4b46451a95c529674b6d2
+ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57332055"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58667904"
 ---
 # <a name="update-identityprovider"></a>更新 identityProvider
 命名空间：microsoft.graph
 
-更新 Azure AD [中的 socialIdentityProvider](../resources/socialidentityprovider.md) 对象的属性。
+更新租户中指定标识提供程序的属性。
 
-对于 Azure AD B2C，更新 [socialIdentityProvider 对象](../resources/socialidentityprovider.md) 的属性。
+在从 identityProviderBase 派生的提供程序类型中，当前可以在 Azure AD 中更新 [socialIdentityProvider](../resources/socialidentityprovider.md) 资源。 在 Azure AD B2C 中，此操作当前可以更新 [socialIdentityProvider](../resources/socialidentityprovider.md) 资源。
 
 ## <a name="permissions"></a>权限
 
@@ -69,7 +69,7 @@ PATCH /identity/identityProviders/{id}
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-update-a-specific-social-identity-provider-azure-ad-or-azure-ad-b2c"></a>示例 1：在Azure AD 或 Azure AD B2C (更新特定社会标识) 
+### <a name="example-1-update-a-specific-social-identity-provider-azure-ad-or-azure-ad-b2c"></a>示例 1：使用 Azure AD 或 Azure AD B2C **(特定** 社会标识) 
 
 #### <a name="request"></a>请求
 

@@ -6,12 +6,12 @@ author: jackry6350
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 1ee50cd399b974b80fcb80ad514bbf3423c0471e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: dfa5bc7454b2cd6c495502ee455d3872e54dfce4
+ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52037871"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58667778"
 ---
 # <a name="delete-participant"></a>删除参与者
 
@@ -19,7 +19,7 @@ ms.locfileid: "52037871"
 
 命名空间：microsoft.graph
 
-删除呼叫中的特定参与者。 在某些情况下，适合应用程序从活动呼叫中删除参与者。 在参与者应答呼叫后，可以完成此操作。 删除活动呼叫者后，会立即从呼叫中删除这些呼叫，同时不会发出删除前或删除后通知。
+删除呼叫中的特定参与者。 在某些情况下，适合应用程序从活动呼叫中删除参与者。 此操作可在参与者应答呼叫之前或之后执行。 删除活动呼叫者后，会立即从呼叫中删除这些呼叫，同时不会发出删除前或删除后通知。 当删除受邀参与者时，将取消任何未完成的添加参与者请求。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -54,9 +54,11 @@ DELETE /communications/calls/{id}/participants/{id}
 ## <a name="response"></a>响应
 如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
 
-## <a name="example"></a>示例
+## <a name="examples"></a>示例
 
-### <a name="request"></a>请求
+### <a name="example-1-cancel-active-participant"></a>示例 1：取消活动参与者
+
+#### <a name="request"></a>请求
 下面为请求示例。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -86,7 +88,110 @@ DELETE https://graph.microsoft.com/beta/communications/calls/{id}/participants/{
 ---
 
 
-### <a name="response"></a>响应
+#### <a name="response"></a>响应
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Delete participant",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
+
+### <a name="example-2-cancel-invited-non-active-participant"></a>示例 2：取消受邀的非活动参与者
+
+#### <a name="invite-a-participant-to-an-existing-call"></a>邀请参与者加入现有呼叫
+
+<!-- {
+  "blockType": "request",
+  "name": "participant-invite-1"
+}-->
+```http
+POST https://graph.microsoft.com/beta/communications/calls/{id}/participants/invite
+Content-Type: application/json
+Content-Length: 464
+
+{
+  "participants": [
+    {
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
+      "replacesCallId": "a7ebfb2d-871e-419c-87af-27290b22e8db",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "user": {
+          "@odata.type": "#microsoft.graph.identity",
+          "id": "278405a3-f568-4b3e-b684-009193463064",
+          "identityProvider": "AAD"
+        }
+      }
+    }
+  ],
+  "clientContext": "f2fa86af-3c51-4bc2-8fc0-475452d9764f"
+}
+```
+
+#### <a name="response"></a>响应
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.inviteParticipantsOperation"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.inviteParticipantsOperation",
+  "id": "eec3812a-fdc3-4fb4-825c-a06c9f35414e",
+  "status": "Running",
+  "clientContext": "f2fa86af-3c51-4bc2-8fc0-475452d9764f",
+  "resultInfo": null,
+  "participants": [
+    {
+      "endpointType": null,
+      "id": null,
+      "replacesCallId": "a7ebfb2d-871e-419c-87af-27290b22e8db",
+      "identity": {
+        "user": {
+          "id": "278405a3-f568-4b3e-b684-009193463064",
+          "identityProvider": "AAD",
+          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+        },
+        "application": null,
+        "device": null,
+        "phone": null
+      }
+    }
+  ]
+}
+```
+
+#### <a name="delete-invited-participant-before-participant-is-added-to-the-roster"></a>在将参与者添加到名单之前删除受邀参与者
+
+<!-- {
+  "blockType": "request",
+  "name": "delete-participant"
+}-->
+```http
+DELETE https://graph.microsoft.com/beta/communications/calls/{id}/participants/{id}
+```
+
+#### <a name="response"></a>响应
 
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 

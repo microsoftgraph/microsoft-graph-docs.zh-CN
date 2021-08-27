@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 98aa1b5a97fd1a05749b6baed25e5c6720a9af49
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 0dfa62dd5fdf09ac79400fad90c943f8cab7c716
+ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53579244"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58667911"
 ---
 # <a name="get-identityprovider"></a>获取 identityProvider
 
@@ -18,9 +18,9 @@ ms.locfileid: "53579244"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 Azure AD 中检索 [socialIdentityProvider](../resources/socialidentityprovider.md) 或 [builtinIdentityProvider](../resources/builtinidentityprovider.md) 的属性和关系。
+获取在租户中配置的指定标识提供程序的属性和关系。
 
-对于 Azure AD B2C，它可以检索 [socialIdentityProvider](../resources/socialidentityprovider.md) [、openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) 或 [appleIdentityProvider 的属性和关系](../resources/appleidentityprovider.md)。
+在从 identityProviderBase 派生的提供程序类型中，当前可以在 Azure AD 中获取 [socialIdentityProvider](../resources/socialidentityprovider.md) 或 [builtinIdentityProvider](../resources/builtinidentityprovider.md) 资源。 在 Azure AD B2C 中，此操作当前可以获取 socialIdentityProvider、openIdConnectIdentityProvider 或[appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md)资源。 [](../resources/socialidentityprovider.md) [](../resources/openidconnectidentityprovider.md)
 
 ## <a name="permissions"></a>权限
 
@@ -60,7 +60,7 @@ GET /identity/identityProviders/{id}
 
 如果成功，此方法在 Azure AD 租户的响应正文中返回 `200 OK` [socialIdentityProvider](../resources/socialidentityprovider.md) 或 [builtinIdentityProvider](../resources/builtinidentityprovider.md) 的响应代码和 JSON 表示形式。
 
-对于 Azure AD B2C 租户，此方法在响应正文中返回 响应代码和 `200 OK` [socialIdentityProvider](../resources/socialidentityprovider.md) [、openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) 或 [appleIdentityProvider](../resources/appleidentityprovider.md) 对象的 JSON 表示形式。
+对于 Azure AD B2C 租户，此方法在响应正文中返回 `200 OK` socialIdentityProvider、openIdConnectIdentityProvider 或[](../resources/socialidentityprovider.md)[appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md)对象的 响应代码和 JSON 表示[](../resources/openidconnectidentityprovider.md)形式。
 
 ## <a name="examples"></a>示例
 
@@ -69,7 +69,6 @@ GET /identity/identityProviders/{id}
 #### <a name="request"></a>请求
 
 下面展示了示例请求。
-
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -81,6 +80,7 @@ GET /identity/identityProviders/{id}
 ``` http
 GET https://graph.microsoft.com/beta/identity/identityProviders/Amazon-OAUTH
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-socialidentityprovider-from-identityproviderbase-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -99,10 +99,10 @@ GET https://graph.microsoft.com/beta/identity/identityProviders/Amazon-OAUTH
 
 ---
 
-
 #### <a name="response"></a>响应
 
 下面展示了示例响应。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -129,7 +129,6 @@ Content-type: application/json
 
 下面展示了示例请求。
 
-
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -140,6 +139,7 @@ Content-type: application/json
 ``` http
 GET https://graph.microsoft.com/beta/identity/identityProviders/MSASignup-OAUTH
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-builtinidentityprovider-from-identityproviderbase-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -158,10 +158,10 @@ GET https://graph.microsoft.com/beta/identity/identityProviders/MSASignup-OAUTH
 
 ---
 
-
 #### <a name="response"></a>响应
 
 下面展示了示例响应。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -180,12 +180,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-retrieve-a-specific-openid-connect-identity-provider-only-for-azure-ad-b2c"></a>示例 3：仅为 **Azure AD** B2C (检索特定 OpenID 连接标识提供程序) 
+### <a name="example-3-retrieve-a-specific-openid-connect-identity-provider-only-for-azure-ad-b2c"></a>示例 3：仅为 Azure AD B2C (检索特定 **OpenID** 连接标识提供程序) 
 
 #### <a name="request"></a>请求
 
 下面展示了示例请求。
-
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -197,6 +196,7 @@ Content-type: application/json
 ``` http
 GET https://graph.microsoft.com/beta/identity/identityProviders/OIDC-V1-test-icm-4470de58-86c2-4a3f-a22c-63c9366cd000
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-openidconnectidentityprovider-from-identityproviderbase-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -215,10 +215,10 @@ GET https://graph.microsoft.com/beta/identity/identityProviders/OIDC-V1-test-icm
 
 ---
 
-
 #### <a name="response"></a>响应
 
 下面展示了示例响应。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -256,7 +256,6 @@ Content-type: application/json
 
 下面展示了示例请求。
 
-
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -267,6 +266,7 @@ Content-type: application/json
 ``` http
 GET https://graph.microsoft.com/beta/identity/identityProviders/Apple-Managed-OIDC
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-applemanagedidentityprovider-from-identityproviderbase-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -285,10 +285,10 @@ GET https://graph.microsoft.com/beta/identity/identityProviders/Apple-Managed-OI
 
 ---
 
-
 #### <a name="response"></a>响应
 
 下面展示了示例响应。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c9fe08affd9b65ce65f27d19cab3aec1b0c866c0
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 17059ab9c1f2b7848a9b36e29c2e551a90fbbefd2713fd92a1194088973df3bb
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52684233"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "57104387"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let availableProviderTypes = await client.api('/identity/identityProviders/availableProviderTypes')
+let availableProviderTypes = await client.api('/identityProviders/availableProviderTypes')
     .version('beta')
     .get();
 

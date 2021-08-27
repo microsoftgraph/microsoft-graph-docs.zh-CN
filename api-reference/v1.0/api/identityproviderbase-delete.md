@@ -5,19 +5,19 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: acd8109877f497162a8ecbddb309e3e34ab5b34c
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: e0025c84064b32ae55393a1e81b38e6336069728
+ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53534102"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58667869"
 ---
 # <a name="delete-identityprovider"></a>删除 identityProvider
 命名空间：microsoft.graph
 
-删除 Azure AD 中的 [socialIdentityProvider](../resources/socialidentityprovider.md) 对象。
+删除标识提供程序资源，该资源的类型由 **请求中的 id** 指定。
 
-在 Azure AD B2C 中，删除 [socialIdentityProvider](../resources/socialidentityprovider.md) 对象。
+在从 identityProviderBase 派生的提供程序类型中，当前可以删除 Azure AD 中的 [socialIdentityProvider](../resources/socialidentityprovider.md) 资源。 在 Azure AD B2C 中，此操作当前可以删除 [socialIdentityProvider](../resources/socialidentityprovider.md) 资源。
 
 ## <a name="permissions"></a>权限
 
@@ -63,6 +63,8 @@ DELETE /identity/identityProviders/{id}
 
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_identityprovider"
@@ -72,6 +74,24 @@ DELETE /identity/identityProviders/{id}
 ``` http
 DELETE https://graph.microsoft.com/v1.0/identity/identityProviders/{id}
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-identityprovider-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-identityprovider-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-identityprovider-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-identityprovider-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 <!-- {

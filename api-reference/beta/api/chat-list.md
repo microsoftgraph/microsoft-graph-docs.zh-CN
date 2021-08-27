@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7f28dcc5584f2a53201871d22b54b18aace4c55a
-ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
+ms.openlocfilehash: e43128b7299f20ee06b1ffc2d33c77d2122adb0d
+ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58396975"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58667407"
 ---
 # <a name="list-chats"></a>列出聊天
 
@@ -41,7 +41,7 @@ GET /chats
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法仅 (`$expand` **members** 属性和 `$filter` [OData](/graph/query-parameters) 查询) 自定义响应。
+此方法支持 (`$expand` **和** **lastMessagePreview** 属性) `$filter` [OData](/graph/query-parameters) 查询参数来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -59,7 +59,7 @@ GET /chats
 
 ## <a name="example"></a>示例
 
-### <a name="example-1-list-all-the-chats"></a>示例 1：列出所有聊天
+### <a name="example-1-list-all-chats"></a>示例 1：列出所有聊天
 
 #### <a name="request"></a>请求
 
@@ -150,7 +150,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-list-all-the-chats-along-with-the-members-of-each-chat"></a>示例 2：列出所有聊天以及每个聊天的成员
+### <a name="example-2-list-all-chats-along-with-the-members-of-each-chat"></a>示例 2：列出所有聊天以及每个聊天的成员
 #### <a name="request"></a>请求
 
 下面是一个请求示例。
@@ -189,9 +189,7 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 下面是一个响应示例。 
 
 > [!NOTE]
-> 服务器返回的成员 ID 必须作为不透明的字符串处理。 客户端不应尝试对这些资源 ID 进行分析或做出任何假设。
->
-> 成员身份结果可以映射到不同租户中的用户，如响应中将来所指示。 客户端不应假定所有成员都仅来自当前租户。
+> 服务器返回的成员 ID 必须作为不透明的字符串处理。 客户端不应尝试分析或做出有关这些资源 ID 的任何假设。
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
@@ -508,7 +506,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-list-all-the-chats-that-have-a-member-with-a-specific-display-name"></a>示例 4：列出成员具有特定用户的所有显示名称
+### <a name="example-4-list-all-chats-that-have-a-member-with-a-specific-display-name"></a>示例 4：列出成员具有特定用户的所有显示名称
 
 #### <a name="request"></a>请求
 
