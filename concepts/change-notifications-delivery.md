@@ -166,7 +166,7 @@ echo "Notification Url:\n${notificationUrl}"
 
 ### <a name="what-happens-if-the-microsoft-graph-change-tracking-application-is-missing"></a>如果缺少 Microsoft Graph 更改跟踪应用程序会怎样？
 
-租户中可能缺少 **Microsoft Graph 更改跟踪** 服务主体，这取决于租户的创建时间和管理操作。 若要解决此问题，请在 [Microsoft Graph 浏览器](https://developer.microsoft.com/zh-CN/graph/graph-explorer)中运行[以下查询](https://developer.microsoft.com/zh-CN/graph/graph-explorer?request=servicePrincipals&method=POST&version=v1.0&GraphUrl=https://graph.microsoft.com&requestBody=eyJhcHBJZCI6IjBiZjMwZjNiLTRhNTItNDhkZi05YTgyLTIzNDkxMGM0YTA4NiJ9)。
+租户中可能缺少 **Microsoft Graph 更改跟踪** 服务主体，这取决于租户的创建时间和管理操作。 要解决此问题，请在 [Microsoft Graph 浏览器](https://developer.microsoft.com/zh-CN/graph/graph-explorer) 中运行 [以下查询](https://developer.microsoft.com/zh-CN/graph/graph-explorer?request=servicePrincipals&method=POST&version=v1.0&GraphUrl=https://graph.microsoft.com&requestBody=eyJhcHBJZCI6IjBiZjMwZjNiLTRhNTItNDhkZi05YTgyLTIzNDkxMGM0YTA4NiJ9)。
 
 查询详细信息：
 
