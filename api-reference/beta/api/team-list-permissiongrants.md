@@ -2,15 +2,15 @@
 title: 列出团队的权限管理
 description: 检索团队的权限管理。
 author: jecha
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: dd29d1cb777d8dd32a7cec97d24a1e152428bd77
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 03441a0788039f2ee55280d847fb796578f23c4a
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53209648"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695369"
 ---
 # <a name="list-permissiongrants-of-a-team"></a>列出团队的权限管理
 

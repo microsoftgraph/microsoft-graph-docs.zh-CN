@@ -2,21 +2,21 @@
 title: 使用 Microsoft Graph 的个人资料 API 检索给定用户或你自己的相关信息
 description: 'Microsoft Graph 应用程序可以使用个人资料 API 检索其他用户的个人资料。 '
 author: kevinbellinger
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: people
 doc_type: conceptualPageType
-ms.openlocfilehash: 0e670384692c74d7cfca0be3201f7a4c1a5cc847b6562bb3048fdf9f479b19c5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 021ac0545ddeb0fa6e48b1254a913e8efceea677
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54246099"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695243"
 ---
-# <a name="use-the-profile-api-in-microsoft-graph-to-retrieve-information-about-yourself-or-another-user"></a>使用 Microsoft Graph 的个人资料 API 检索你自己或其他用户的相关信息 
+# <a name="use-the-profile-api-in-microsoft-graph-to-retrieve-information-about-yourself-or-another-user"></a>使用 Microsoft Graph 的个人资料 API 检索你自己或其他用户的相关信息
 
 命名空间：microsoft.graph
 
-Microsoft Graph 应用程序可以使用个人资料 API 检索已登录用户或具有有效 Azure AD 或 Microsoft 帐户的其他用户的个人资料。 可以在应用程序中使用此信息，以便于将其他用户置于上下文中考虑，在应用程序内为此用户提供更加丰富的体验，或用作用于存储用户的扩展信息的机制（也可在 Microsoft 365 中使用它）。 
+Microsoft Graph 应用程序可以使用个人资料 API 检索已登录用户或具有有效 Azure AD 或 Microsoft 帐户的其他用户的个人资料。 可以在应用程序中使用此信息，以便于将其他用户置于上下文中考虑，在应用程序内为此用户提供更加丰富的体验，或用作用于存储用户的扩展信息的机制（也可在 Microsoft 365 中使用它）。
 
 ## <a name="authorization"></a>Authorization
 
@@ -26,7 +26,7 @@ Microsoft Graph 应用程序可以使用个人资料 API 检索已登录用户�
 
 ## <a name="view-my-profile"></a>查看我的个人资料
 
-此部分中的请求可以获取与登录用户 (`/me`) 相关度最高的人员。 这些请求要求已登录用户具有 User.Read 权限。 
+此部分中的请求可以获取与登录用户 (`/me`) 相关度最高的人员。 这些请求要求已登录用户具有 User.Read 权限。
 
 
 ```http

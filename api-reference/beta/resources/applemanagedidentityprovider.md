@@ -1,16 +1,16 @@
 ---
 title: appleManagedIdentityProvider 资源类型
 description: 在 Azure AD B2C 租户中表示 Apple 标识提供程序。
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: namkedia
-ms.openlocfilehash: fe342e88e8651f61c6e9d29bf33611829756d28a
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: 5526b2d7d9859b064fc14c8179a45f48f2bbb76f
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58667825"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696335"
 ---
 # <a name="applemanagedidentityprovider-resource-type"></a>appleManagedIdentityProvider 资源类型
 命名空间：microsoft.graph

@@ -2,15 +2,15 @@
 title: 聊天： getAllMessages
 description: 从用户参与的所有聊天中获取消息。
 author: RamjotSingh
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 540d08db7e19bdac4bbb8960d0470f3b41df308e
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: a8060952244e1010edc0237a01b2ee06fe26f2f5
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53533960"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695320"
 ---
 # <a name="chats-getallmessages"></a>聊天： getAllMessages
 
@@ -67,16 +67,16 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 
 ### <a name="response"></a>响应
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.chatMessage"
 } -->
 ```http
-HTTP/1.1 200 OK 
-Content-type: application/json 
-Content-length: 347 
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 347
 
 {
    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(chatMessage)",
@@ -117,13 +117,13 @@ Content-length: 347
             "content":"<div>\n<blockquote itemscope=\"\" itemtype=\"http://schema.skype.com/Reply\" itemid=\"1600457867820\">\n<strong itemprop=\"mri\" itemid=\"8:orgid:0de69e5e-2da8-4cf2-821f-5e6585b2c65b\">Richard Wilson</strong><span itemprop=\"time\" itemid=\"1600457867820\"></span>\n<p itemprop=\"preview\">1237</p>\n</blockquote>\n<p>this is a reply</p>\n</div>"
          },
          "attachments":[
-            
+
          ],
          "mentions":[
-            
+
          ],
          "reactions":[
-            
+
          ]
       }
    ]

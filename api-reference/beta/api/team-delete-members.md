@@ -2,15 +2,15 @@
 title: 从团队删除成员
 description: 从团队删除 conversationMember。
 author: nkramer
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 97e6b940abd02e409531f9872393583320f88eba
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 4db06bea36d5a4698397b57fc4946357b3357212
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873008"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696426"
 ---
 # <a name="remove-member-from-team"></a>从团队删除成员
 命名空间：microsoft.graph

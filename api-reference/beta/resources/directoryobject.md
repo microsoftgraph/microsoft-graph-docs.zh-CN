@@ -1,16 +1,16 @@
 ---
 title: directoryObject 资源类型
 description: 表示 Azure Active Directory 对象。**directoryObject** 类型是其他许多目录实体类型的基类型。
-localization_priority: Priority
+ms.localizationpriority: high
 author: keylimesoda
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 5084407b6927172f5d1ef956bd696952e1b551b7
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: e704c59e594095f45abd03ce48937c45cdcf6d30
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440470"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696412"
 ---
 # <a name="directoryobject-resource-type"></a>directoryObject 资源类型
 
@@ -30,7 +30,7 @@ ms.locfileid: "50440470"
 |:---------------|:--------|:----------|
 |[获取 directoryObject](../api/directoryobject-get.md) | [directoryObject](directoryobject.md) |读取 directory 对象的属性。|
 |[删除](../api/directoryobject-delete.md) | 无 |删除 directory 对象。 |
-|[checkMemberGroups](../api/directoryobject-checkmembergroups.md)|字符串集合|检查组列表中的成员身份。检查是可传递的。|
+|[checkMemberGroups](../api/directoryobject-checkmembergroups.md)|String collection|检查组列表中的成员身份。检查是可传递的。|
 |[getMemberGroups](../api/directoryobject-getmembergroups.md)|String collection|返回 user、group 或 directory 对象所属的所有组。检查是可传递的。|
 |[getMemberObjects](../api/directoryobject-getmemberobjects.md)|String collection| 返回 user、group 或 directory 对象所属的所有组和目录角色。检查是可传递的。 |
 |[getByIds](../api/directoryobject-getbyids.md) | [directoryObject](directoryobject.md) 集合 | 基于提供的 ID 集获取目录对象集。 |
@@ -41,7 +41,7 @@ ms.locfileid: "50440470"
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|id|String|对象的全局唯一标识符。 例如，12345678-9abc-def0-1234-56789abcde。 **id** 属性的值通常（但不总是）用 GUID 表示；将它视为不透明标识符，不要总将它视为 GUID。 键。 不可为 null。 只读。|
+|id|String|对象的唯一标识符。例如，12345678-9 abc-def0-1234-56789 abcde。**id** 属性的值通常（但不总是）用 GUID 表示；将它视为不透明标识符，不要总将它视为 GUID。不可为 null。只读。|
 
 ## <a name="relationships"></a>关系
 

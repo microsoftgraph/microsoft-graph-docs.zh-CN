@@ -1,16 +1,16 @@
 ---
 title: 更新 b2cAuthenticationMethodsPolicy
 description: 更新 b2cAuthenticationMethodsPolicy 对象的属性。
-localization_priority: Priority
+ms.localizationpriority: high
 author: namkedia
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: b4f85da6545e430ee2a04fabd4e3aa16a3062457
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 2cf7d686fca3b1a6890fcd9df5e39c501d0dda3e
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786837"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58694914"
 ---
 # <a name="update-b2cauthenticationmethodspolicy"></a>更新 b2cAuthenticationMethodsPolicy
 

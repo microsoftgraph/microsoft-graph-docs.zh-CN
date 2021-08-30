@@ -2,15 +2,15 @@
 title: 获取组
 description: 获取组对象的属性和关系。
 author: Jordanndahl
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 344f1ed4ed71fe038dd66403c7b8732829fb8c0d
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: e6e3154078356e57a2fd644668f786e17a300133
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681678"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695481"
 ---
 # <a name="get-group"></a>获取组
 
@@ -18,7 +18,7 @@ ms.locfileid: "52681678"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取 [group](../resources/group.md) 对象的属性和关系。 
+获取 [group](../resources/group.md) 对象的属性和关系。
 
 此操作在默认情况下仅返回所有可用属性的一部分，如[属性](../resources/group.md#properties)部分中所示。 若要获取 _非_ 默认返回的属性，请在 `$select` OData 查询选项中指定这些属性。 **hasMembersWithLicenseErrors** 属性是一个例外，不会在 `$select` 查询中返回。 由于 **组** 资源支持 [扩展](/graph/extensibility-overview)，因此也可使用 `GET` 操作获取 **组** 实例中的自定义属性和扩展数据。
 
@@ -60,7 +60,7 @@ GET /groups/{id}
 
 #### <a name="request"></a>请求
 
-下面是一个 GET 请求示例。 
+下面是一个 GET 请求示例。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -91,9 +91,9 @@ GET https://graph.microsoft.com/beta/groups/45b7d2e7-b882-4a80-ba97-10b7a63b8fa4
 
 
 #### <a name="response"></a>响应
-下面是一个答复示例。它仅包含默认属性。
+下面是一个响应示例。它仅包括默认属性。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 在实际调用中会返回所有默认属性。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。在实际调用中将返回每个组的所有默认属性。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -145,7 +145,7 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-下面是一个 GET 请求示例。 
+下面是一个 GET 请求示例。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

@@ -1,17 +1,16 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 title: 驱动器资源类型
 description: 表示用户的 OneDrive 或 SharePoint 中文档库的驱动器资源。
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 74ef4a5f8c2e67a81ad02ca0844d7f15dba972e8
-ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
+ms.openlocfilehash: 43791d730726dbf1a958c826c1a629af241eed70
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2020
-ms.locfileid: "49081829"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696405"
 ---
 # <a name="drive-resource-type"></a>驱动器资源类型
 
@@ -43,7 +42,7 @@ OneDrive 用户必须始终具有至少一个可用驱动器，即默认驱动�
 | :------------------- | :---------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | createdBy            | [identitySet][]               | 识别创建项目的用户、设备或应用程序。只读。                                                                                                                                                  |
 | createdDateTime      | dateTimeOffset                | 创建项的日期和时间。只读。                                                                                                                                                                                       |
-| description          | String                        | 提供驱动器的用户可见说明。 读写。
+| description          | String                        | 提供驱动器的用户可见说明。读写。
 | driveType            | String                        | 说明了由该资源表示的驱动器的类型。OneDrive 个人版驱动器将返回 `personal`。OneDrive for Business 将返回 `business`。SharePoint 文档库将返回 `documentLibrary`。只读。 |
 | id                   | String                        | 驱动器唯一标识符。只读。                                                                                                                                                                                   |
 | lastModifiedBy       | [identitySet][]               | 上次修改项目的用户、设备和应用程序的标识。只读。                                                                                                                                           |
@@ -52,8 +51,8 @@ OneDrive 用户必须始终具有至少一个可用驱动器，即默认驱动�
 | 所有者                | [identitySet](identityset.md) | 可选。拥有此驱动器的用户帐户。只读。                                                                                                                                                                       |
 | 配额                | [配额](quota.md)             | 可选。有关驱动器的存储空间配额的信息。只读。                                                                                                                                                          |
 | sharepointIds        | [sharepointIds][]             | 返回对 SharePoint REST 兼容性有用的标识符。只读。                                                                                                                                                         |
-| system               | [systemFacet][]               | 如果存在，则表示这是系统管理的驱动器。 只读。
-| webUrl               | string (url)                  | 在浏览器中显示此资源的 URL。只读。                                                                                                                                                                        |
+| system               | [systemFacet][]               | 如果存在，则表示这是系统管理的驱动器。只读。
+| WebUrl               | string (url)                  | 在浏览器中显示此资源的 URL。只读。                                                                                                                                                                        |
 
 [identitySet]: identityset.md
 [sharepointIds]: sharepointids.md
@@ -148,7 +147,7 @@ OneDrive 用户必须始终具有至少一个可用驱动器，即默认驱动�
   "section": "documentation",
   "tocPath": "Drives",
   "tocBookmarks": {
-    "Resources/Drive": "#"
+    "Resources/Drive&quot;: &quot;#"
   },
   "suppressions": []
 }

@@ -2,15 +2,15 @@
 title: 获取频道的成员
 description: 获取频道的成员。
 author: akjo
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a1e1b1e8e7ee0053663c24a68eacc72704b08e2e
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: 10a5af8099bcc899ecdde53f473a0602d99f1ef1
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53059952"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695894"
 ---
 # <a name="get-member-of-channel"></a>获取频道的成员
 
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/beta/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d82/
 
 下面是一个响应示例。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

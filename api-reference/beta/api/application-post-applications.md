@@ -2,15 +2,15 @@
 title: 创建应用程序
 description: 创建新的应用程序。
 author: sureshja
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
-ms.openlocfilehash: 1ba04ea1a7a7ba5128e91f5bbe8243fc4c436311
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: f220e8c460ce53d01965c9e0451c7d15648fdadf
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048083"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695075"
 ---
 # <a name="create-application"></a>创建应用程序
 
@@ -89,7 +89,7 @@ Content-length: 67
 ---
 
 ### <a name="response"></a>响应
-下面是一个响应示例。 
+下面是一个响应示例。
 
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {

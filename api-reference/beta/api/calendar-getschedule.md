@@ -1,16 +1,16 @@
 ---
 title: 日历：getSchedule
 description: 获取用户、通讯组列表或资源在指定时间段内的忙/闲状态信息。
-localization_priority: Priority
+ms.localizationpriority: high
 author: tariq-sharif
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1b91b0b0aad21c87d01ff813b85dc5b8861cff25
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 33923a3aff0fabc555469cbb876377de75d42139
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047754"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695215"
 ---
 # <a name="calendar-getschedule"></a>日历：getSchedule
 
@@ -32,7 +32,7 @@ ms.locfileid: "52047754"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/calendar/getSchedule 
+POST /me/calendar/getSchedule
 POST /users/{id|userPrincipalName}/calendar/getSchedule
 ```
 
@@ -41,7 +41,7 @@ POST /users/{id|userPrincipalName}/calendar/getSchedule
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 | Content-Type  | string | 实体正文中的数据性质（为 application/json）。必填。  |
-| Prefer: outlook.timezone | string | 此选项可用于指定响应中开始时间和结束时间的时区。 如果未指定，返回的这些时间值采用 UTC 时区。 可选。 |
+| Prefer: outlook.timezone | string | 用于指定响应中开始时间和结束时间的时区。如果未指定，返回的这些时间值采用 UTC 时区。可选。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
@@ -67,11 +67,11 @@ POST /users/{id|userPrincipalName}/calendar/getSchedule
   "name": "calendar_getSchedule"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/calendar/getSchedule 
+POST https://graph.microsoft.com/beta/me/calendar/getSchedule
 Prefer: outlook.timezone="Pacific Standard Time"
 Content-Type: application/json
 
-{        
+{
     "schedules": ["adelev@contoso.onmicrosoft.com", "meganb@contoso.onmicrosoft.com"],
     "startTime": {
         "dateTime": "2019-03-15T09:00:00",
@@ -104,7 +104,7 @@ Content-Type: application/json
 
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,16 +1,16 @@
 ---
 title: 使用 Microsoft Graph API 在应用中集成人员和工作区智能
 description: Microsoft Graph 允许访问相关人员的有用数据、其个人资料、与之交互的文档和工作模式，并支持用户社交环境中的手势。
-localization_priority: Priority
+ms.localizationpriority: high
 author: simonhult
 ms.prod: insights
 doc_type: conceptualPageType
-ms.openlocfilehash: 11015af6ad1d75b6668052933d3dbbd5289c1731
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 17b0c03659e53685ff0644100f31dc7bd20df4d4
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48033522"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695250"
 ---
 # <a name="use-the-microsoft-graph-api-to-integrate-people-and-workplace-intelligence-in-an-app"></a>使用 Microsoft Graph API 在应用中集成人员和工作区智能
 
@@ -30,9 +30,9 @@ Microsoft Graph 允许访问相关人员的有用数据、其个人资料、与�
 
 功能：个人资料（预览版）
 
-若要将组织内的其他人员置于上下文中考虑，通常会查看人员的个人资料或个人资料卡片。 
+若要将组织内的其他人员置于上下文中考虑，通常会查看人员的个人资料或个人资料卡片。
 
-[profile](../resources/profile.md) 资源是关于租户内人员的信息的丰富源，提供了用于存储和检索人员信息的轻型机制。 
+[profile](../resources/profile.md) 资源是关于租户内人员的信息的丰富源，提供了用于存储和检索人员信息的轻型机制。
 
 ## <a name="personalize-people-experiences-within-your-organization"></a>在组织内部提供个性化的人员体验
 

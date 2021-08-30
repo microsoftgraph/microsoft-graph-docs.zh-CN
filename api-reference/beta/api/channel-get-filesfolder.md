@@ -2,15 +2,15 @@
 title: 获取 filesFolder
 description: 检索频道的 filesFolder 导航路径。
 author: nkramer
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8515b6ebb853c65ba44ce18c401179e115605689
-ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
+ms.openlocfilehash: e2d9c90a5acc5e852f269eb450f5380e402705f8
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52971284"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695868"
 ---
 # <a name="get-filesfolder"></a>获取 filesFolder
 
@@ -18,7 +18,7 @@ ms.locfileid: "52971284"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取[频道](../resources/channel.md)的文件储存位置元数据。 
+获取[频道](../resources/channel.md)的文件储存位置元数据。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/filesFolder
 ---
 
 ### <a name="response"></a>响应
-下面展示了示例响应。 
+下面展示了示例响应。
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {

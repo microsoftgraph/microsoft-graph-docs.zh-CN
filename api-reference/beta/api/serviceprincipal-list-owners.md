@@ -1,16 +1,16 @@
 ---
 title: 'servicePrincipals: 列出所有者'
 description: 检索 servicePrincipal 的所有者的列表。
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: a513eb2991f9d1504d94210573f5b4f7da2b71a8
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 4ac4b511680e376958f2bd0b2fc01eacf57fd149
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049021"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696258"
 ---
 # <a name="serviceprincipals-list-owners"></a>servicePrincipals: 列出所有者
 
@@ -83,7 +83,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/owners
 
 
 ### <a name="response"></a>响应
-下面是一个响应示例。 
+下面是一个响应示例。
 
 > 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {

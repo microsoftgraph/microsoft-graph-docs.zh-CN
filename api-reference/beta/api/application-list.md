@@ -2,15 +2,15 @@
 title: 列出应用程序
 description: 获取该组织中应用程序的列表。
 author: sureshja
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: a2fa946e906336aaf7b7c20560056b9d08b93852c5e01255482d0bfb63d83d27
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c2311687881cd8f74e875f9d6c4fde3f6bcf69ed
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57104026"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695082"
 ---
 # <a name="list-applications"></a>列出应用程序
 
@@ -22,7 +22,7 @@ ms.locfileid: "57104026"
 
 > [!NOTE]
 > 使用为个人 Microsoft 帐户颁发的令牌调用此 API 时，将返回个人 Microsoft 帐户所拥有的应用。 个人 Microsoft 帐户不存在组织概念。 为了列出特定个人 Microsoft 帐户所拥有的应用程序，此 API 需要用户。除 Application.Read.All 或 Application.ReadWrite.All 之外，还读取权限。
- 
+
 ## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

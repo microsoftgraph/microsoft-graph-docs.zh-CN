@@ -1,16 +1,16 @@
 ---
 title: b2xIdentityUserFlow 资源类型
 description: 表示 Azure Active Directory 租户中的自助式注册用户流。
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: jkdouglas
-ms.openlocfilehash: b84c9208ac6e1661e130f04642027e7304c7c459
-ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
+ms.openlocfilehash: 32eea0f34fcfb1b932995e668c672b21c6b7984c
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401628"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695341"
 ---
 # <a name="b2xidentityuserflow-resource-type"></a>b2xIdentityUserFlow 资源类型
 

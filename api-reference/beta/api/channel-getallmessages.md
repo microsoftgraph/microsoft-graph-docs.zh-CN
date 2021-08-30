@@ -2,15 +2,15 @@
 title: 频道：getAllMessages
 description: 检索团队中跨频道的所有消息。
 author: RamjotSingh
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d422a39a0b25b772d7fa6d514d6ad3d617ca6708
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 6d33f4882c956a3296ca6172e58db247f6dc3880
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53533211"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695439"
 ---
 # <a name="channel-getallmessages"></a>频道：getAllMessages
 
@@ -18,7 +18,7 @@ ms.locfileid: "53533211"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[团队](../resources/team.md)中所有[频道](../resources/channel.md)之间的[消息](../resources/chatmessage.md)，包括文本、音频和视频对话。 
+检索[团队](../resources/team.md)中所有[频道](../resources/channel.md)之间的[消息](../resources/chatmessage.md)，包括文本、音频和视频对话。
 
 若要了解有关使用 Microsoft Teams 导出 API 以导出内容的更多信息，请参阅[使用 Microsoft Teams 导出 API 导出内容](/microsoftteams/export-teams-content)。
 

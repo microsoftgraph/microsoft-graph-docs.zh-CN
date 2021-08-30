@@ -1,16 +1,16 @@
 ---
 title: List servicePrincipal transitive memberOf
 description: 获取此服务主体所属的组和目录角色。
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 4964718856420220e3a57a62fb52aafe3cdc2aa2
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 8597f020c4977ed293213fd58ca59f705f6be07c
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049014"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695397"
 ---
 # <a name="list-serviceprincipal-transitive-memberof"></a>List servicePrincipal transitive memberOf
 
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/transitiveMemberOf
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。 
+下面展示了示例响应。
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {

@@ -1,16 +1,16 @@
 ---
 title: Privileged Identity Management - Azure 资源
 description: 使用适合于 Azure AD Privileged Identity Management 的 API 管理 Azure 资源。
-localization_priority: Priority
+ms.localizationpriority: high
 author: shauliu1
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 48d0a4ceebee14a504b90433da21ce1f28392393
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: 09c199c4f8c5653276be2f5ee2be23a909f54d98
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453826"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696888"
 ---
 # <a name="privileged-identity-management---azure-resources"></a>Privileged Identity Management - Azure 资源
 

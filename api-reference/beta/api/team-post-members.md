@@ -2,15 +2,15 @@
 title: 向团队添加新成员
 description: 向团队添加新成员。
 author: nkramer
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8cd5ac038abad1b92d6b1b0ef19d2360e6508873
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 1282c8d777b8a89d93fbc1d4da8c69e5c27985d1
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874191"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696363"
 ---
 # <a name="add-member-to-team"></a>向团队添加新成员
 命名空间：microsoft.graph

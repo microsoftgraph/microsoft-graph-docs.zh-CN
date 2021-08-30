@@ -533,7 +533,7 @@ items:
         items:
           - name: 概述
             href: resources/groups-overview.md
-          - name: Group
+          - name: 组
             href: resources/group.md
             items:
               - name: 列出组
@@ -1012,7 +1012,7 @@ items:
                 items:
                   - name: 列出 memberOf
                     href: api/serviceprincipal-list-memberof.md
-                  - name: 列出 transitive memberOf
+                  - name: List transitive memberOf
                     href: api/serviceprincipal-list-transitivememberof.md
                   - name: checkMemberGroups
                     href: api/serviceprincipal-checkmembergroups.md
@@ -6418,7 +6418,7 @@ items:
                         href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-delete.md
                       - name: 更新
                         href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-update.md
-                  - name: Windows防篡改保护选项
+                  - name: Windows Defender 防篡改保护选项
                     href: resources/intune-deviceconfig-windowsdefendertamperprotectionoptions.md
                   - name: Windows 传递优化配置
                     href: resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md
@@ -9912,7 +9912,7 @@ items:
                     href: api/managedtenants-managedtenant-list-tenantsdetailedinformation.md
                   - name: 获取租户详细信息
                     href: api/managedtenants-tenantdetailedinformation-get.md
-              - name: 租户
+              - name: Tenant
                 href: resources/managedtenants-tenant.md
                 items:
                   - name: 列出租户
@@ -10079,20 +10079,22 @@ items:
           - name: 用户
             href: resources/educationuser.md
             items:
-              - name: 列出学校
-                href: api/educationuser-list-schools.md
-              - name: 列出课程
-                href: api/educationuser-list-classes.md
-              - name: List rubrics
-                href: api/educationuser-list-rubrics.md
               - name: 获取用户
                 href: api/educationuser-get.md
               - name: 删除用户
                 href: api/educationuser-delete.md
-              - name: 获取 Delta
-                href: api/educationuser-delta.md
+              - name: 列出课程
+                href: api/educationuser-list-classes.md
+              - name: List rubrics
+                href: api/educationuser-list-rubrics.md
               - name: 创建 rubric
                 href: api/educationuser-post-rubrics.md
+              - name: 获取 Delta
+                href: api/educationuser-delta.md
+              - name: 列出学校
+                href: api/educationuser-list-schools.md
+              - name: 列出作业
+                href: api/educationuser-list-assignments.md
           - name: 作业
             href: resources/educationassignment.md
             items:
@@ -11140,7 +11142,7 @@ items:
                         href: api/emailauthenticationmethod-delete.md
                       - name: 添加
                         href: api/emailauthenticationmethod-post.md
-                  - name: 密码
+                  - name: Password
                     href: resources/passwordauthenticationmethod.md
                     items:
                       - name: 列表
@@ -11180,7 +11182,7 @@ items:
                         href: api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
                       - name: 删除
                         href: api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
-                  - name: 'Microsoft Authenticator无电话密码登录策略 (已弃) '
+                  - name: 'Microsoft Authenticator无密码电话已弃 (登录策略) '
                     href: resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md
                     items:
                       - name: 获取
@@ -11392,26 +11394,46 @@ items:
                 items:
                   - name: 标识提供程序基础
                     href: resources/identityproviderbase.md
-                  - name: 内置标识提供程序
-                    href: resources/builtinidentityprovider.md
-                  - name: 社会标识提供程序
-                    href: resources/socialidentityprovider.md
-                  - name: Apple 标识提供程序
-                    href: resources/appleidentityprovider.md
-                  - name: OpenID 连接标识提供程序
-                    href: resources/openidconnectidentityprovider.md
-                  - name: 列出
-                    href: api/identityproviderbase-list.md
-                  - name: 创建
-                    href: api/identityproviderbase-post-identityproviders.md
-                  - name: 获取
-                    href: api/identityproviderbase-get.md
-                  - name: 更新
-                    href: api/identityproviderbase-update.md
-                  - name: 删除
-                    href: api/identityproviderbase-delete.md
-                  - name: 列出可用的提供程序类型
-                    href: api/identityproviderbase-list-availableprovidertypes.md
+                  - name: 外部标识
+                    items:
+                      - name: 内置标识提供程序类型
+                        href: resources/builtinidentityprovider.md
+                      - name: 社会标识提供程序类型
+                        href: resources/socialidentityprovider.md
+                      - name: Apple 标识提供程序类型
+                        href: resources/applemanagedidentityprovider.md
+                      - name: OpenID 连接标识提供程序类型
+                        href: resources/openidconnectidentityprovider.md
+                      - name: 列出可用的标识提供程序
+                        href: api/identityproviderbase-availableprovidertypes.md
+                      - name: 列出已配置的标识提供程序
+                        href: api/identitycontainer-list-identityproviders.md
+                      - name: 创建标识提供程序
+                        href: api/identitycontainer-post-identityproviders.md
+                      - name: 获取标识提供程序
+                        href: api/identityproviderbase-get.md
+                      - name: 更新标识提供程序
+                        href: api/identityproviderbase-update.md
+                      - name: 删除标识提供程序
+                        href: api/identityproviderbase-delete.md
+                  - name: 基于域的外部标识
+                    items:
+                      - name: SAML/Ws-Fed 外部域联盟
+                        href: resources/samlorwsfedexternaldomainfederation.md
+                      - name: 列出联合配置
+                        href: api/samlorwsfedexternaldomainfederation-list.md
+                      - name: 获取联合配置
+                        href: api/samlorwsfedexternaldomainfederation-get.md
+                      - name: 创建联合配置
+                        href: api/samlorwsfedexternaldomainfederation-post.md
+                      - name: 更新联合配置
+                        href: api/samlorwsfedexternaldomainfederation-update.md
+                      - name: 删除联合配置
+                        href: api/samlorwsfedexternaldomainfederation-delete.md
+                      - name: 列出域
+                        href: api/samlorwsfedexternaldomainfederation-list-domains.md
+                      - name: 创建 externalDomainName
+                        href: api/samlorwsfedexternaldomainfederation-post-domains.md
               - name: '已 (标识提供程序) '
                 items:
                   - name: 标识提供程序类型
@@ -11822,7 +11844,7 @@ items:
                         href: api/accessreviewinstance-get.md
                       - name: 按当前用户筛选
                         href: api/accessreviewinstance-filterbycurrentuser.md
-                      - name: '列出已 (审批) '
+                      - name: '列出已弃 (审批) '
                         href: api/accessreviewinstance-pendingaccessreviewinstances.md
                       - name: 发送提醒
                         href: api/accessreviewinstance-sendreminder.md
@@ -11847,7 +11869,7 @@ items:
                         href: api/accessreviewinstancedecisionitem-get.md
                       - name: 按当前用户筛选
                         href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
-                      - name: '列出已 (审批) '
+                      - name: '列出已弃 (审批) '
                         href: api/accessreviewinstancedecisionitem-listpendingapproval.md
                       - name: 更新
                         href: api/accessreviewinstancedecisionitem-update.md
@@ -13469,7 +13491,7 @@ items:
             href: resources/sharepoint.md
           - name: 网站
             items:
-              - name: 网站
+              - name: Site
                 href: resources/site.md
               - name: 获取站点
                 href: api/site-get.md
@@ -13499,7 +13521,7 @@ items:
                 href: api/list-create.md
               - name: 列出子网站
                 href: api/site-list-subsites.md
-              - name: 权限
+              - name: Permissions
                 items:
                   - name: 权限
                     href: resources/permission.md
@@ -13553,7 +13575,7 @@ items:
                 href: api/contenttype-update.md
               - name: 删除
                 href: api/contenttype-delete.md
-              - name: IsPublished
+              - name: 检查发布状态
                 href: api/contenttype-ispublished.md
               - name: 发布
                 href: api/contenttype-publish.md
@@ -13615,7 +13637,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: 更新
                     href: api/termstore-store-update.md
-              - name: Group
+              - name: 组
                 href: resources/termstore-group.md
                 items:
                   - name: 创建
@@ -14070,7 +14092,7 @@ items:
                 href: api/team-sendactivitynotification.md
               - name: 向用户发送通知
                 href: api/userteamwork-sendactivitynotification.md
-          - name: 选项卡
+          - name: Tab
             href: resources/teamstab.md
             items:
               - name: 频道中的选项卡

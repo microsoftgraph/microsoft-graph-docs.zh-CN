@@ -1,16 +1,16 @@
 ---
 title: builtInIdentityProvider 资源类型
 description: 表示 Azure Active Directory 租户中的内置标识提供程序。
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: namkedia
-ms.openlocfilehash: 4f7a5965032ba81c4c347f21a238d7b310a191ea
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: 9905e8974644e55306108cba275a025bac27c7c1
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58667582"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696230"
 ---
 # <a name="builtinidentityprovider-resource-type"></a>builtInIdentityProvider 资源类型
 命名空间：microsoft.graph

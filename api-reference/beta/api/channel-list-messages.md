@@ -1,16 +1,16 @@
 ---
 title: 列出频道消息
 description: '检索团队频道中的消息列表（无回复）。 若要获取消息的回复，请调用“列出消息回复”或“获取消息回复”API。 '
-localization_priority: Priority
+ms.localizationpriority: high
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9989919b473674639aa8ef1d6f6f2c01f65ca0b6
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: b4a66560004f15829d9a19e9e561832c47085644
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58667771"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58694907"
 ---
 # <a name="list-channel-messages"></a>列出频道消息
 
@@ -18,9 +18,9 @@ ms.locfileid: "58667771"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[团队](../resources/team.md)[频道](../resources/channel.md)中的[消息](../resources/chatmessage.md)列表（无回复）。 
+检索[团队](../resources/team.md)[频道](../resources/channel.md)中的[消息](../resources/chatmessage.md)列表（无回复）。
 
-若要获取消息的回复，请调用[列出消息回复](chatmessage-list-replies.md)或[获取消息回复](chatmessage-get.md) API。 
+若要获取消息的回复，请调用[列出消息回复](chatmessage-list-replies.md)或[获取消息回复](chatmessage-get.md) API。
 
 > **注意**：此 API 支持使用 [更改通知](../resources/webhooks.md)订阅更改（创建、更新和删除）。 这使呼叫方可以实时订阅和获取更改。 有关详细信息，请参阅[获取消息通知](/graph/teams-changenotifications-chatmessage)。
 

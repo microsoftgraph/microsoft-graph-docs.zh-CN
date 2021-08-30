@@ -1,16 +1,16 @@
 ---
 title: 使用 Microsoft 搜索 API 查询数据
 description: 使用搜索 API，应用程序可以在已认证用户的上下文中搜索 Microsoft 365 数据
-localization_priority: Priority
+ms.localizationpriority: high
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: c53cc0df5c9aefb6a42b5a28d6341f37b0f3d287
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: 5f7453dd5c08f282baa7667ad5793c9223e586d0
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467097"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695446"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>使用 Microsoft 搜索 API 查询数据
 
@@ -71,7 +71,7 @@ Microsoft Search API 提供了[查询](../api/search-query.md)方法，可在 Mi
 如果你正在搜索 **event** 或 **message** 实体，则注意以下限制：
 
 - **起始数量** 在第一个页面请求中必须从零开始，否则请求将导致出现 HTTP 400 `Bad request`。
-- 每页的 **message** 和 **event** 最大结果数（**大小**）为 25。 
+- 每页的 **message** 和 **event** 最大结果数（**大小**）为 25。
 
 SharePoint 或 OneDrive 项没有上限。 合理的页面大小是 200。 较大的页面大小通常会导致更高的延迟。
 
@@ -148,7 +148,7 @@ SharePoint 或 OneDrive 项没有上限。 合理的页面大小是 200。 较�
 
 ## <a name="request-spelling-correction"></a>请求拼写更正
 
-拼写更正是处理用户查询中的拼写错误和匹配内容中正确单词之间差异的常用方法。 在原始用户查询中检测到拼写错误时，可以获得原始用户查询或更正的备用查询的搜索结果。 还可以在 [searchresponse](searchresponse.md) 的 **queryAlterationResponse** 属性中获取拼写错误的拼写更正信息。 
+拼写更正是处理用户查询中的拼写错误和匹配内容中正确单词之间差异的常用方法。 在原始用户查询中检测到拼写错误时，可以获得原始用户查询或更正的备用查询的搜索结果。 还可以在 [searchresponse](searchresponse.md) 的 **queryAlterationResponse** 属性中获取拼写错误的拼写更正信息。
 
 在 [Query](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) 方法的请求正文中，指定应应用于查询以进行拼写更正的 **queryAlterationOptions**。 在 [searchAlterationOptions](./searchalterationoptions.md) 中定义 **queryAlterationOptions** 的描述。
 
@@ -160,7 +160,7 @@ SharePoint 或 OneDrive 项没有上限。 合理的页面大小是 200。 较�
 
 若要在 [searchresponse](searchresponse.md) 中获取结果模板，必须将在 [searchRequest](./searchrequest.md)中，将 [resultTemplateOptions](./resulttemplateoption.md) 中定义的 **enableResultTemplate** 属性设置为 **true**。 响应包括每个 [搜索命中](./searchhit.md)的 **resultTemplateId**，它映射到包含在响应中的 **resultTemplates** 中包含的显示布局之一。
 
-相关示例，请参阅[使用搜索显示布局](/graph/search-concept-display-layout)。 
+相关示例，请参阅[使用搜索显示布局](/graph/search-concept-display-layout)。
 
 ## <a name="error-handling"></a>错误处理
 
@@ -175,7 +175,7 @@ SharePoint 或 OneDrive 项没有上限。 合理的页面大小是 200。 较�
 - 定义 **查询** 方法，以允许一次传递一个或多个 **searchRequest** 实例的集合。 但是，该服务当前仅支持一次传递一个 [searchRequest](./searchrequest.md)。
 
 - [searchRequest](./searchrequest.md) 资源支持一次传递多个类型的实体。 但是，目前仅支持 SharePoint 和 OneDrive entityTypes 的组合为：**driveItem**、**drive**、**site**、**list**、**listItem**。
-当前不支持任何涉及 **消息**、**事件**、**p人员**、Sharepoint 和 OneDrive 类型或 **externalItem** 的组合。  
+当前不支持任何涉及 **消息**、**事件**、**p人员**、Sharepoint 和 OneDrive 类型或 **externalItem** 的组合。
 
 - 仅当将 **entityType** 指定为 `externalItem` 时，定义要使用的连接的 **contentSource** 属性才适用。
 
@@ -209,7 +209,7 @@ SharePoint 或 OneDrive 项没有上限。 合理的页面大小是 200。 较�
 - 了解有关几个关键用例的详细信息：
   - [搜索 Outlook 邮件](/graph/search-concept-messages)
   - [搜索日历事件](/graph/search-concept-events)
-  - [搜索人员](/graph/search-concept-person)  
+  - [搜索人员](/graph/search-concept-person)
   - [SharePoint 和 OneDrive 中的搜索内容](/graph/search-concept-files)
   - [使用连接器搜索导入的自定义类型](/graph/search-concept-custom-types)
   - [排序搜索结果](/graph/search-concept-sort)

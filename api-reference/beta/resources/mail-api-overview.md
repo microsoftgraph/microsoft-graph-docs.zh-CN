@@ -1,16 +1,16 @@
 ---
 title: 使用 Outlook 邮件 REST API
 description: Microsoft Graph 可让应用程序获得对个人或组织帐户中用户的 Outlook 邮件数据的授权访问权限。
-localization_priority: Priority
+ms.localizationpriority: high
 author: abheek-das
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: 0552264b3400daebbb8764c231cace5df315b899
-ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
+ms.openlocfilehash: b9031dd523fbaeedba3a85666951cd0ce7667349
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53118453"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696307"
 ---
 # <a name="use-the-outlook-mail-rest-api"></a>使用 Outlook 邮件 REST API
 
@@ -26,7 +26,7 @@ Microsoft Graph 允许应用在个人或组织帐户中获得授权访问用户�
 
 电子邮件由 [邮件](../resources/message.md)资源表示，放在 [mailFolder](../resources/mailfolder.md) 中。邮件和邮件文件夹由其 **id** 属性标识，可通过 `GET` 操作获取。
 
->[!IMPORTANT] 
+>[!IMPORTANT]
 > 通常，请不要假设邮箱内的 **邮件** 和 **mailfolder** ID 是唯一的且始终保持不变。 在执行复制或移动等某些操作后，它们可能会发生更改。 只要邮件保留在同一个邮箱中，你就可以选择使用 [不可变 ID](/graph/outlook-immutable-id) 来保留相同的 ID（_除了发送草稿邮件和一些其他场景外_）。 有关详细信息，请参阅[不可变 ID 生存期](/graph/outlook-immutable-id#lifetime-of-immutable-ids)。
 
 邮件正文可以是 HTML 格式或文本格式。
@@ -49,7 +49,7 @@ Microsoft Graph API 还提供支持邮件常见用例的方法和操作。
 |:----------|:---------------|:---------|
 | **以用户为中心的操作** | | |
 | 起草、阅读、答复、转发、发送、更新或删除邮件 | [邮件](../resources/message.md) | [邮件的方法](../resources/message.md#methods) |
-| 代表邮箱所有者委托其他用户发送邮件 | [邮件](../resources/message.md) | 设置 [邮件](../resources/message.md)的 **from** 和 **sender** 属性 |
+| 代表邮箱所有者委托其他用户发送邮件 | [message](../resources/message.md) | 设置 [邮件](../resources/message.md)的 **from** 和 **sender** 属性 |
 | 让用户先查看更重要的邮件 | [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) | [重点收件箱](../resources/manage-focused-inbox.md) |
 | 查询邮件并在搜索文件夹中获取邮件  | [mailSearchFolder](../resources/mailsearchfolder.md) | [mailSearchFolder 的方法](../resources/mailsearchfolder.md#methods) |
 | 获取邮件或邮件附件的 MIME 内容 | [message](../resources/message.md) | [获取 MIME 内容](/graph/outlook-get-mime-message) |

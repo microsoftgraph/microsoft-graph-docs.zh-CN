@@ -2,15 +2,15 @@
 title: 列出 joinedTeams
 description: 获取用户不是其直接成员的 Microsoft Teams 团队。
 author: nkramer
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0f340b92dc0da0cdceedb3cd5b6a15019e0ab386
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 1723c7652c8027da039aec4a13f8f6c46c8629c4
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53580924"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58694652"
 ---
 # <a name="list-joinedteams"></a>列出 joinedTeams
 
@@ -19,7 +19,7 @@ ms.locfileid: "53580924"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取用户不是其直接成员的 Microsoft Teams [团队](../resources/team.md)。
- 
+
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -29,7 +29,7 @@ ms.locfileid: "53580924"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Team.ReadBasic.All、 TeamSettings.Read.All、 TeamSettings.ReadWrite.All、 User.Read.All、 User.ReadWrite.All、 Directory.Read.All、 Directory.ReadWrite.All |
 
-> **注意：** 目前使用用户委派的权限时，此操作仅适用于 `me` 用户。 使用应用程序权限时，此操作可以指定特定用户 ID，适用于所有用户。（使用应用程序权限时，不支持 `me` 别名） 有关详细信息，请参阅[已知问题](/graph/known-issues#microsoft-teams-users-list-of-joined-teams-preview)。
+> **注意：** 目前，使用用户委派的权限时，此操作仅适用于“`me`”用户。 使用应用程序权限时，此操作通过指定特定用户 ID 而适用于所有用户 ID。（使用应用程序权限时，不支持“`me`”别名）。 有关详细信息，请参阅[已知问题](/graph/known-issues#microsoft-teams-users-list-of-joined-teams-preview)。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -39,7 +39,7 @@ GET /users/{id | user-principal-name}/joinedTeams
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法当前不支持通过 [OData 查询参数](/graph/query-parameters)来自定义响应。
+此运营商当前不支持通过 [OData 查询参数](/graph/query-parameters) 来自定义响应。
 
 ## <a name="request-headers"></a>请求头
 | 标头       | 值 |
@@ -55,7 +55,7 @@ GET /users/{id | user-principal-name}/joinedTeams
 如果成功，此方法在响应正文中返回`200 OK`响应代码和[team](../resources/team.md)对象集合。
 
 > [!Note]
-> 目前，此 API 调用仅返回某个 [team](../resources/team.md) 的 **id**、**displayName**、**说明** 属性。 若要获取所有属性，请使用[获取团队](../api/team-get.md)操作。 有关详细信息，请参阅[已知问题](/graph/known-issues#unable-to-return-all-values-for-properties-for-a-user-joined-teams)。
+> 目前，此 API 调用仅返回 [团队](../resources/team.md)的 **id**、**displayName** 和 **说明** 属性。 若要获取所有属性，请使用[获取团队](../api/team-get.md)操作。 有关详细信息，请参阅[已知问题](/graph/known-issues#unable-to-return-all-values-for-properties-for-a-user-joined-teams)。
 
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求

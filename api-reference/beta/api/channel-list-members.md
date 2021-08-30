@@ -2,15 +2,15 @@
 title: 列出频道成员
 description: 列出频道成员。
 author: akjo
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e42992cfc8c0c1368e822860cf42aac7987a881b
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: 52a42cbe0e1de58eef619c6d555b9180c7d7e761
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53059948"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695502"
 ---
 # <a name="list-members-of-channel"></a>列出频道成员
 
@@ -98,7 +98,7 @@ GET https://graph.microsoft.com/beta/teams/2ab9c796-2902-45f8-b712-7c5a63cf41c4/
 
 下面是一个响应示例。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

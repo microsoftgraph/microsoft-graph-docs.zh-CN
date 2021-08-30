@@ -2,15 +2,15 @@
 title: 更新 authenticationFlowsPolicy
 description: 更新 authenticationFlowsPolicy 对象的布尔 Boolean selfServiceSignUp 属性。
 author: linkhp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6bd6d397cd9e4a979db6d74c20d907a1217f8ee0
-ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
+ms.openlocfilehash: 8ce1513a55c59fce9c3c4337a7f3b14afefead9e
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52266771"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58694984"
 ---
 # <a name="update-authenticationflowspolicy"></a>更新 authenticationFlowsPolicy
 

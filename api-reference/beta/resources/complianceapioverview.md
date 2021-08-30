@@ -1,16 +1,16 @@
 ---
 title: 使用 Microsoft Graph 合规性 API
 description: Microsoft Graph 合规性 API 提供了统一的界面和架构，用于与 Microsoft 和生态系统合作伙伴的合规性解决方案集成。 这可帮助客户简化合规性操作，更好地管理和监控数据、保护信息、尽量减少内部风险、执行法律和内部调查以及遵守法律或法规标准。
-localization_priority: Priority
+ms.localizationpriority: high
 author: mahage-msft
 ms.prod: compliance
 doc_type: conceptualPageType
-ms.openlocfilehash: 0ce320e924904c3d895aa4da24fc0940289ed417
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 3d568ce92ffe960b2bf3d8993ec41071396dd470
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440519"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58694743"
 ---
 # <a name="use-the-microsoft-graph-compliance-api"></a>使用 Microsoft Graph 合规性 API
 

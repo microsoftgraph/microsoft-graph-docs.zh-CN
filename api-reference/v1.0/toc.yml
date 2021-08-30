@@ -451,6 +451,8 @@ items:
                 href: api/userscopeteamsappinstallation-get-chat.md
               - name: 获取用户的聊天
                 href: api/chat-get.md
+              - name: 列出用户的聊天
+                href: api/chat-list.md
           - name: 待办任务
             items:
               - name: 任务
@@ -475,7 +477,7 @@ items:
         items:
           - name: 概述
             href: resources/groups-overview.md
-          - name: Group
+          - name: 组
             href: resources/group.md
             items:
               - name: 列出组
@@ -4158,6 +4160,8 @@ items:
                 href: api/educationuser-list-taughtclasses.md
               - name: 创建 rubric
                 href: api/educationuser-post-rubrics.md
+              - name: 列出作业
+                href: api/educationuser-list-assignments.md
           - name: 作业
             href: resources/educationassignment.md
             items:
@@ -4778,9 +4782,9 @@ items:
                   - name: 社会标识提供程序
                     href: resources/socialidentityprovider.md
                   - name: 列出
-                    href: api/identityproviderbase-list.md
+                    href: api/identitycontainer-list-identityproviders.md
                   - name: 创建
-                    href: api/identityproviderbase-post-identityproviders.md
+                    href: api/identitycontainer-post-identityproviders.md
                   - name: 获取
                     href: api/identityproviderbase-get.md
                   - name: 更新
@@ -4788,7 +4792,7 @@ items:
                   - name: 删除
                     href: api/identityproviderbase-delete.md
                   - name: 列出可用的提供程序类型
-                    href: api/identityproviderbase-list-availableprovidertypes.md
+                    href: api/identityproviderbase-availableprovidertypes.md
               - name: '已 (标识提供程序) '
                 items:
                   - name: 标识提供程序类型
@@ -5518,7 +5522,7 @@ items:
                 items:
                   - name: 列表预配
                     href: api/provisioningobjectsummary-list.md
-          - name: Microsoft 365使用率报告
+          - name: Microsoft 365使用情况报告
             items:
               - name: 概述
                 href: resources/report.md
@@ -5771,6 +5775,26 @@ items:
                     href: api/externalconnectors-externalitem-update.md
                   - name: 删除外部项
                     href: api/externalconnectors-externalitem-delete.md
+              - name: 外部组
+                items:
+                  - name: 外部组
+                    href: resources/externalconnectors-externalgroup.md
+                  - name: 创建外部组
+                    href: api/externalconnectors-externalconnection-post-groups.md
+                  - name: 获取外部组
+                    href: api/externalconnectors-externalgroup-get.md
+                  - name: 更新外部组
+                    href: api/externalconnectors-externalgroup-update.md
+                  - name: 删除外部组
+                    href: api/externalconnectors-externalgroup-delete.md
+              - name: 外部组的成员
+                items:
+                  - name: 标识
+                    href: resources/externalconnectors-identity.md
+                  - name: 为成员创建标识
+                    href: api/externalconnectors-externalgroup-post-members.md
+                  - name: 删除成员标识
+                    href: api/externalconnectors-identity-delete.md
       - name: 安全性
         displayname: 'Security API, Microsoft Intelligent Security Graph'
         items:
@@ -5847,7 +5871,23 @@ items:
                 href: api/site-unfollow.md
               - name: 关注网站列表
                 href: api/sites-list-followed.md
-              - name: 权限
+              - name: 列出列
+                href: api/site-list-columns.md
+              - name: 创建列
+                href: api/site-post-columns.md
+              - name: 列表内容类型
+                href: api/site-list-contenttypes.md
+              - name: 创建内容类型
+                href: api/site-post-contenttypes.md
+              - name: 获取列表的适用内容类型
+                href: api/site-getapplicablecontenttypesforlist.md
+              - name: 获取列表
+                href: api/list-list.md
+              - name: 创建列表
+                href: api/list-create.md
+              - name: 列出子网站
+                href: api/site-list-subsites.md
+              - name: Permissions
                 href: resources/permission.md
                 items:
                   - name: 获取网站权限
@@ -5861,14 +5901,61 @@ items:
                   - name: 删除网站权限
                     href: api/site-delete-permission.md
           - name: 列表
-            href: resources/list.md
             items:
-              - name: 获取列表
-                href: api/list-get.md
-              - name: 获取项目
-                href: api/listitem-list.md
+              - name: 列表
+                href: resources/list.md
               - name: 创建列表
                 href: api/list-create.md
+              - name: 获取列表
+                href: api/list-get.md
+              - name: 获取网站中的列表
+                href: api/list-list.md
+              - name: 获取项目
+                href: api/listitem-list.md
+              - name: 列出列
+                href: api/list-list-columns.md
+              - name: 创建列
+                href: api/list-post-columns.md
+              - name: 列表内容类型
+                href: api/list-list-contenttypes.md
+              - name: 添加内容类型副本
+                href: api/contenttype-addcopy.md
+          - name: 列数
+            items:
+              - name: 列定义
+                href: resources/columndefinition.md
+              - name: 获取
+                href: api/columndefinition-get.md
+              - name: 更新
+                href: api/columndefinition-update.md
+              - name: 删除
+                href: api/columndefinition-delete.md
+          - name: 内容类型
+            items:
+              - name: 内容类型
+                href: resources/contentType.md
+              - name: 获取
+                href: api/contenttype-get.md
+              - name: 更新
+                href: api/contenttype-update.md
+              - name: 删除
+                href: api/contenttype-delete.md
+              - name: 检查发布状态
+                href: api/contenttype-ispublished.md
+              - name: 发布
+                href: api/contenttype-publish.md
+              - name: 取消发布
+                href: api/contenttype-unpublish.md
+              - name: 将副本添加到列表
+                href: api/contenttype-addcopy.md
+              - name: 与中心网站关联
+                href: api/contenttype-associatewithhubsites.md
+              - name: 复制到默认内容位置
+                href: api/contenttype-copytodefaultcontentlocation.md
+              - name: 列出列
+                href: api/contenttype-list-columns.md
+              - name: 创建列
+                href: api/contenttype-post-columns.md
           - name: 列表项目
             href: resources/listitem.md
             items:
@@ -5894,7 +5981,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: 更新
                     href: api/termstore-store-update.md
-              - name: Group
+              - name: 组
                 href: resources/termstore-group.md
                 items:
                   - name: 列出
@@ -6152,6 +6239,8 @@ items:
           - name: 聊天
             href: resources/chat.md
             items:
+              - name: 列出聊天
+                href: api/chat-list.md
               - name: 创建聊天
                 href: api/chat-post.md
               - name: 获取聊天
@@ -6259,7 +6348,7 @@ items:
                 href: api/team-sendactivitynotification.md
               - name: 向用户发送通知
                 href: api/userteamwork-sendactivitynotification.md
-          - name: 选项卡
+          - name: Tab
             href: resources/teamstab.md
             items:
               - name: 频道中的选项卡

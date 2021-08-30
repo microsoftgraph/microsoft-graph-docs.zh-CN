@@ -1,16 +1,16 @@
 ---
 title: b2cIdentityUserFlow 资源类型
 description: 表示 Azure Active Directory B2C 租户内的用户流。
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: jkdouglas
-ms.openlocfilehash: f2924ce135aa02f56fea30575a1d899a3d515039
-ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
+ms.openlocfilehash: 04d06edd9a72903d3e27595a504b86f4c65c05f5
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401624"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695348"
 ---
 # <a name="b2cidentityuserflow-resource-type"></a>b2cIdentityUserFlow 资源类型
 

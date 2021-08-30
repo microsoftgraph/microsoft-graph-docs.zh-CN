@@ -1,16 +1,16 @@
 ---
 title: chatMessage：delta
 description: 检索团队频道中的消息列表（无回复）。 通过使用增量查询，可以获取频道中新的或更新的消息。
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: 172c90d4f80d6cd4be833b2d78e9e6084d610057
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 8fc4ad2c8fa9240429fe62caec228c26cb5e119f
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53534009"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695327"
 ---
 # <a name="chatmessage-delta"></a>chatMessage：delta
 

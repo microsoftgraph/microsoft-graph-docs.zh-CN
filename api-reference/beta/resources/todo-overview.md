@@ -2,15 +2,15 @@
 title: 使用微软待办 API
 description: 可使用 Microsoft Graph API 创建与微软待办中的任务连接的应用。
 author: avijityadav
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: 76dc89caeb0a39d9dd0f40c1bcf046ffe9fe3f9d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fc1e872fa5a75775c436a02afa5f8ee28e68040f
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973518"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696377"
 ---
 # <a name="use-the-microsoft-to-do-api"></a>使用微软待办 API
 
@@ -23,7 +23,7 @@ ms.locfileid: "47973518"
 * 在自定义业务应用程序中管理微软待办任务。
 
 目前，API 仅支持由已登录用户委派的权限。
- 
+
 在开始使用微软待办 API 之前，请查看资源以及它们之间的关系。
 
 ![微软待办 API 实体](/graph/images/todo-api-entities.png)
@@ -52,7 +52,7 @@ GET /me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}/linkedresources/{linkedRe
 
 ## <a name="track-changes-using-delta-query"></a>使用 delta 查询跟踪更改
 
-出于性能原因，可能需要维护对象的本地缓存，并使用 [delta 查询](/graph/delta-query-overview)定期将本地缓存与服务器同步。 
+出于性能原因，可能需要维护对象的本地缓存，并使用 [delta 查询](/graph/delta-query-overview)定期将本地缓存与服务器同步。
 
 以下微软待办 API 资源支持 delta 查询：
 * 任务列表中的 [todoTask](./todotask.md) 集合

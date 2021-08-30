@@ -1,16 +1,16 @@
 ---
 title: identityUserFlowAttribute 资源类型
 description: 代表 Azure Active Directory 租户和 Azure AD B2C 租户中的用户流属性。
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: jkdouglas
-ms.openlocfilehash: ca8930a5cb11edb1cf7345464666478cfc01bcda
-ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
+ms.openlocfilehash: f0f137dffd04e77a3d7195c14d08e3e75a4e1b85
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "51882598"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58694631"
 ---
 # <a name="identityuserflowattribute-resource-type"></a>identityUserFlowAttribute 资源类型
 
