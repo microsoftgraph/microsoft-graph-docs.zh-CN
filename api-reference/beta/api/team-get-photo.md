@@ -2,15 +2,15 @@
 title: 获取团队照片
 description: 获取团队的照片（图片）。
 author: akjo
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7329a471abcc6d1777b5f067e892d3351e408ed5
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: 8315dc28c4aa4c48efeb22b49409cdde1419fdbb
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53060311"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695467"
 ---
 # <a name="get-team-photo"></a>获取团队照片
 

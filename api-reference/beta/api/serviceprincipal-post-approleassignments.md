@@ -1,16 +1,16 @@
 ---
 title: 向服务主体授予 appRoleAssignment
 description: 向服务主体授予应用角色分配。
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: c2739a5ff54a8a45d173d7ebc6fe1a53f3a39396
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 45031635f8483385ab9d844c34d9f12a7cfeebf3
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050862"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695313"
 ---
 # <a name="grant-an-approleassignment-to-a-service-principal"></a>向服务主体授予 appRoleAssignment
 
@@ -109,7 +109,7 @@ Content-Type: application/json
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。 
+下面是一个响应示例。
 
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 

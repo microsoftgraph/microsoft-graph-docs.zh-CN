@@ -2,15 +2,15 @@
 title: 创建 serviceprincipal
 description: 创建新的 serviceprincipal 对象。
 author: sureshja
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
-ms.openlocfilehash: 5d3373f0aa90fd794d43cf41601c1190187c98a8
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 19a13b73790551ba7c998395ba1ae9937bc2c773
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051877"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695390"
 ---
 # <a name="create-serviceprincipal"></a>创建 servicePrincipal
 
@@ -90,7 +90,7 @@ Content-type: application/json
 
 
 ### <a name="response"></a>响应
-下面是一个响应示例。 
+下面是一个响应示例。
 
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {

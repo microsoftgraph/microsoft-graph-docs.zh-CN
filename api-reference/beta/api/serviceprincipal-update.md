@@ -2,15 +2,15 @@
 title: 更新 serviceprincipal
 description: 更新 serviceprincipal 对象的属性。
 author: sureshja
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
-ms.openlocfilehash: 6f2ad28c6e0abe194cb7a11f14b43f1567fa7878
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: c00d84d496fdd65fd071679641eb99360ed46bed
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786732"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695929"
 ---
 # <a name="update-serviceprincipal"></a>更新 servicePrincipal
 
@@ -67,7 +67,7 @@ PATCH /servicePrincipals/{id}
 |replyUrls|String 集合|向其发送用户令牌以使用关联应用程序登录的 URL，或者为关联应用程序向其发送 OAuth 2.0 authorization 代码和访问令牌的重定向 URL。不可为 NULL。 |
 |samlSingleSignOnSettings|[samlSingleSignOnSettings](../resources/samlsinglesignonsettings.md)|有关 saml 单一登录的设置的集合。|
 |servicePrincipalNames|字符串集合|包含从关联的 [应用程序](../resources/application.md)中复制的 **identifiersUris** 列表。 可以将其他值添加到混合应用程序。 这些值可用于标识此应用程序在 Azure AD 中公开的权限。 例如，<ul><li>请求对此资源的权限的客户端应用可以使用这些 URI 在其应用程序清单的 **requiredResourceAccess** 属性中或在应用注册体验的“API 权限”边栏选项卡中指定所需的权限。</li><li>客户端应用可以指定基于此属性的值的资源 URI（即“aud”声明中返回的 URI），以获取访问令牌。</li></ul><br>多值属性上的筛选器表达式需要 any 运算符。不可为 NULL。|
-|tags|String collection| 不可为空。 |
+|tags|String 集合| 不可为空。 |
 |tokenEncryptionKeyId|String|指定 keyCredentials 集合中的公共密钥的 keyId。 配置后，Azure AD 为此应用程序发布使用此属性指定的密钥加密的令牌。 接收加密令牌的应用程序代码必须先使用匹配的私钥来解密该令牌，然后才能将该令牌用于登录用户。|
 
 ## <a name="response"></a>响应

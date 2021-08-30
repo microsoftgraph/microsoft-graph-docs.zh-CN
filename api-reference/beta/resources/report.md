@@ -1,16 +1,16 @@
 ---
 title: 在 Microsoft Graph 中使用 Microsoft 365 的使用情况报表
 description: 使用 Microsoft Graph，可以访问 Microsoft 365 使用情况报告资源，以获取有关企业中的人员如何使用Microsoft 365服务的信息。例如，你可以确定谁经常使用服务并达到配额，或者谁根本不需要 Microsoft 365 许可证。
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: reports
 author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: 7e07274dadb7a6f233d4ca8b30327984eb0a1c36
-ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
+ms.openlocfilehash: 3636ec84468368c098753c58e7c1f8965c21a39b
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53118581"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696293"
 ---
 # <a name="working-with-microsoft-365-usage-reports-in-microsoft-graph"></a>在 Microsoft Graph 中使用 Microsoft 365 的使用情况报表
 

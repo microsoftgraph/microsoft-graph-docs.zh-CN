@@ -2,15 +2,15 @@
 title: 获取聊天中安装的应用
 description: 获取聊天中安装的应用。
 author: subray
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f24a896c68ae0fc4a73208929ca0029c8eeb18f8
-ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
+ms.openlocfilehash: f6528bae046816d717658f60d1af745128c4cccf
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52971340"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696937"
 ---
 # <a name="get-installed-app-in-chat"></a>获取聊天中安装的应用
 
@@ -34,8 +34,8 @@ ms.locfileid: "52971340"
 
 ## <a name="http-request"></a>HTTP 请求
 
-<!-- { 
-"blockType": "ignored" 
+<!-- {
+"blockType": "ignored"
 } -->
 
 ```http

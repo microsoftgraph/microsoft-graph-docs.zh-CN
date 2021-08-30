@@ -1,16 +1,16 @@
 ---
 title: socialIdentityProvider 资源类型
 description: 代表 Azure Active Directory 租户和 Azure AD B2C 租户中的社交标识提供程序。
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: namkedia
-ms.openlocfilehash: b5b763c2ee6c7a53bb271a456951a800afa5c1e0
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: ef47509cf1ca212d7e2e7dda9f76a1352037ba7b
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58667974"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696972"
 ---
 # <a name="socialidentityprovider-resource-type"></a>socialIdentityProvider 资源类型
 命名空间：microsoft.graph

@@ -1,16 +1,16 @@
 ---
 title: permissionGrantConditionSet 资源类型
 description: 指定包含条件的匹配规则，按照该条件将事件包括在权限授予策略中或从中排除。
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 4bee79aa7246158d4b6b14cd2dade73f16af9342
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 8e13beea466e1a6d4d950fcfc81c0546d0a62e57
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50941776"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58694645"
 ---
 # <a name="permissiongrantconditionset-resource-type"></a>permissionGrantConditionSet 资源类型
 

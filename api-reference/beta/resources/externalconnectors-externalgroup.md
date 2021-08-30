@@ -1,16 +1,16 @@
 ---
 title: externalGroup 资源类型
-description: 表示一个外部组，用于对添加到 Microsoft Graph外部项目设置权限。
+description: 代表非Azure Active Directory组。
 author: snlraju-msft
 localization_priority: Normal
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 3f0c6adbd47d1823b82e19d3fb9a352e26391da9
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: 5fbfcb8b462b490b33519f04268c505871613a24
+ms.sourcegitcommit: 6efd9df497d795988cd85474f379d1989b0995b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467643"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58697385"
 ---
 # <a name="externalgroup-resource-type"></a>externalGroup 资源类型
 
@@ -18,7 +18,13 @@ ms.locfileid: "53467643"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示外部组。 外部 (组Azure Active Directory用户和组) 用于设置对添加到 Microsoft Graph 连接的外部项的权限。  使用 **externalGroups** 表示非 Azure Active Directory 组或类似组的构造 (如) 上的业务单位、Teams 和 son，这些构造可确定对外部数据源中内容的权限。
+命名空间：microsoft.graph.externalConnectors
+
+代表非Azure Active Directory组。
+
+外部组确定对外部数据源中内容的权限。 这些外部组可在 externalItem 的 [acl](../resources/externalconnectors-externalitem.md) 上的 [条目中使用](../resources/externalconnectors-externalitem.md)。
+
+外部组的示例包括业务部门和工作组。
 
 ## <a name="methods"></a>方法
 
@@ -34,7 +40,7 @@ ms.locfileid: "53467643"
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------------------|
 | id          | String | 连接内外部组的唯一 ID。 它必须是字母数字，并且最多为 128 个字符。 |
 | displayName | String | 外部组的友好名称。 可选。                                                                       |
-| 说明 | String | 外部组的说明。 可选。                                                                         
+| description | String | 外部组的说明。 可选。                                                                         
 
 ## <a name="relationships"></a>关系
 

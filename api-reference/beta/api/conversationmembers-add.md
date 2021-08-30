@@ -3,14 +3,14 @@ title: 'conversationMember: add'
 description: 批量添加成员到团队。
 author: nkramer
 doc_type: apiPageType
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 2af435ac7dd430a0d006df609991f0c0a83b02ca
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 803c8b4fe792531be087b1ae02ee00cfa7ed526f
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49689665"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696986"
 ---
 # <a name="conversationmember-add"></a>conversationMember: add
 
@@ -24,7 +24,7 @@ ms.locfileid: "49689665"
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型      | 权限（从最低特权到最高特权） | 
+|权限类型      | 权限（从最低特权到最高特权） |
 |:--------------------|:--------------------------|
 | 委派（工作或学校帐户） | TeamMember.ReadWrite.All  |
 | 委派（个人 Microsoft 帐户） | 不支持 |
@@ -118,7 +118,7 @@ Content-Type: application/json
 
 以下是答复。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -201,7 +201,7 @@ Content-Type: application/json
 
 以下是答复。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

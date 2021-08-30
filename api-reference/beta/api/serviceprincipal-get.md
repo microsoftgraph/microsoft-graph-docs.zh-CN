@@ -2,15 +2,15 @@
 title: 获取 servicePrincipal
 description: 检索 serviceprincipal 对象的属性和关系。
 author: sureshja
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 0e1e943e7f476090c82bf3b6c0bf52277b7a226b
-ms.sourcegitcommit: a2d81138de2a0404e611fbb535679199477ef3d5
+ms.openlocfilehash: 80292cfbd0b7059919987b737c4d78e5c617ac6d
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52813067"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696862"
 ---
 # <a name="get-serviceprincipal"></a>获取 servicePrincipal
 
@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}
 
 
 ### <a name="response"></a>响应
-下面是一个响应示例。 
+下面是一个响应示例。
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 

@@ -2,15 +2,15 @@
 title: 组的列表权限管理
 description: 检索组的权限权限。
 author: akjo
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ee21465a044274e8583debc645f379269e531433
-ms.sourcegitcommit: b5fbb1a715e3479bdd095ef00deb0c932eafc328
+ms.openlocfilehash: 3266e881ba3e4109537b7c80acfa3d9e9108ce59
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "53162243"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696286"
 ---
 # <a name="list-permissiongrants-of-a-group"></a>组的列表权限管理
 

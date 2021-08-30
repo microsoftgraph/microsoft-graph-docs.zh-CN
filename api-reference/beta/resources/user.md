@@ -2,15 +2,15 @@
 title: 用户资源类型
 description: 表示 Azure AD 用户帐户。继承自 directoryObject。
 author: jpettere
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 6c3569ddd09f63ede52b70e88c1f2c680c8a0851
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 929f647a68e453529daaabf2b3f0b0dfdd3a76c7
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58513942"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696965"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -67,7 +67,7 @@ ms.locfileid: "58513942"
 | **目录对象**|||
 | [activateServicePlan](../api/user-activateserviceplan.md) | 无 | 为给定给定用户或`servicePlanId``skuId`许可证和[服务](user.md)。 |
 | [assignLicense](../api/user-assignlicense.md) | [user](user.md) | 为用户添加或删除订阅。还可以启用和禁用与订阅相关的特定计划。 |
-| [checkMemberGroups](../api/user-checkmembergroups.md) | 字符串集合 | 检查组列表中的成员身份。检查是可传递的。 |
+| [checkMemberGroups](../api/user-checkmembergroups.md) | String collection | 检查组列表中的成员身份。检查是可传递的。 |
 | [checkMemberObjects](../api/user-checkmemberobjects.md) | String 集合 | 检查组、目录角色或管理单元对象列表中的成员身份。检查是可传输的。 |
 | [exportPersonalData](../api/user-exportpersonaldata.md) | 无 | 提交公司管理员发出的数据策略操作请求，以导出组织用户的数据。 |
 | [getByIds](../api/directoryobject-getbyids.md) | String collection | 返回 ID 列表中指定的目录对象。 |
@@ -145,7 +145,7 @@ ms.locfileid: "58513942"
 |[为用户添加应用](../api/userteamwork-post-installedapps.md) | 无 | 在用户的个人范围内添加（安装）应用。|
 |[为用户删除应用](../api/userteamwork-delete-installedapps.md) | 无 | 删除（卸载）用户个人范围内的应用。|
 |[升级为用户安装的应用](../api/userteamwork-teamsappinstallation-upgrade.md) | 无 | 将安装在用户个人范围内的应用升级到最新版本。|
-|[获取用户和应用之间的聊天](../api/userscopeteamsappinstallation-get-chat.md)| [聊天](chat.md)| 列出用户和应用之间的一对一聊天。 | 
+|[获取用户和应用之间的聊天](../api/userscopeteamsappinstallation-get-chat.md)| [聊天](chat.md)| 列出用户和应用之间的一对一聊天。 |
 | **待办任务** |||
 |[创建任务](../api/todotasklist-post-tasks.md)|[todoTask](todotask.md)| 在指定的任务列表中创建 [todoTask](todotask.md)。|
 |[创建任务列表](../api/todo-post-lists.md) | [todoTaskList](todotasklist.md) | 在用户的邮箱中创建微软待办任务列表。 |
@@ -248,8 +248,8 @@ ms.locfileid: "58513942"
 - **ageGroup** 和 **consentProvidedForMinor** 属性是 Azure AD 管理员使用的可选属性，可帮助确保根据用户所在国家或地区与年龄相关的监管规则正确处理帐户的使用。
 
 例如：Cameron 是英国 Holyport 小学的名录管理员。 新学年开始，他根据英国与年龄相关的法规，使用入学文件获得未成年人父母的同意。 征得父母同意后，Holyport 学校和 Microsoft 应用可以使用未成年人的帐户。 Cameron 随后创建所有帐户，将 ageGroup 设置为“minor”，并将 consentProvidedForMinor 设置为“granted”。 然后，他的学生使用的应用程序可以禁止不适合未成年人的功能。
-<!-- Note that the following 3 sub-sections are only documented like enums for a consistent user experience. 
-For some reason they are not defined as enums in the CSDL. 
+<!-- Note that the following 3 sub-sections are only documented like enums for a consistent user experience.
+For some reason they are not defined as enums in the CSDL.
 Hence the type of the corresponding 3 properties remain as string type in the Properties table.
 -->
 
@@ -310,8 +310,8 @@ Hence the type of the corresponding 3 properties remain as string type in the Pr
 |messages|[message](message.md) 集合|邮箱或文件夹中的邮件。只读。可为 Null。|
 |onenote|[onenote](onenote.md)| 只读。|
 |outlook|[outlookUser](outlookuser.md)| 用户可以选择性 Outlook 服务。只读。空。|
-|ownedDevices|[directoryObject](directoryobject.md) collection|用户拥有的设备。 只读。 可为空。 支持 `$expand`。|
-|ownedObjects|[directoryObject](directoryobject.md) collection|用户拥有的 directory 对象。 只读。 可为空。 支持 `$expand`。|
+|ownedDevices|[directoryObject](directoryobject.md) collection|用户拥有的设备。 只读。 可为 NULL。 支持 `$expand`。|
+|ownedObjects|[directoryObject](directoryobject.md) collection|用户拥有的 directory 对象。 只读。 可为 NULL。 支持 `$expand`。|
 |pendingAccessReviewInstances|[accessReviewInstance](accessreviewinstance.md) | 用于获取等待审阅者批准的访问审阅列表的导航属性。 |
 |people|[person](person.md) 集合| 只读。与用户最相关的人员。该集合按其与用户的相关性排序，相关性由用户的通信、协作和业务关系决定。人脉是邮件、联系人和社交网络中的信息聚合。|
 |photo|[profilePhoto](profilephoto.md)| 用户的个人资料照片。只读。|

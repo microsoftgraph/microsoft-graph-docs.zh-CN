@@ -5,12 +5,12 @@ author: snlraju-msft
 localization_priority: Normal
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 2a98ac339ba704212b1123278223e09960b2b7e2
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 7f337f21ec4a6c8069b598e756f1b3ff5327814e
+ms.sourcegitcommit: 6efd9df497d795988cd85474f379d1989b0995b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53579912"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58697455"
 ---
 # <a name="create-externalitem"></a>创建 externalItem
 
@@ -18,7 +18,7 @@ ms.locfileid: "53579912"
 
 创建新的 [externalItem](../resources/externalconnectors-externalitem.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -46,14 +46,14 @@ POST /connections/{connectionsId}/items
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [externalItem](../resources/externalconnectors-externalitem.md) 对象的 JSON 表示形式。
 
-下表显示创建 [externalItem 时所需的属性](../resources/externalconnectors-externalitem.md)。
+您可以在创建 [externalItem](../resources/externalconnectors-externalitem.md)时指定以下属性。
 
-|属性|类型| 必需 (Y/N)  | 说明|
-|:---|:---|:---|:---|
-|id|String|Y|项目 ID|
-|properties|[microsoft.graph.externalConnectors.properties](../resources/externalconnectors-properties.md)|Y|项目属性。 `properties`对象必须至少包含一个属性。 所有 `DateTime` 类型属性都必须采用 ISO 8601 格式。|
-|content|[microsoft.graph.externalConnectors.externalItemContent](../resources/externalconnectors-externalitemcontent.md)|N|外部项内容|
-|acl|[microsoft.graph.externalConnectors.acl](../resources/externalconnectors-acl.md) 集合|Y|访问控制列表|
+|属性|类型| 说明|
+|:---|:---|:---|
+|id|String|项目 ID。 此为必需属性。|
+|properties|[microsoft.graph.externalConnectors.properties](../resources/externalconnectors-properties.md)|项目属性。 `properties`对象必须至少包含一个属性。 所有 `DateTime` 类型属性都必须采用 ISO 8601 格式。 此为必需属性。|
+|content|[microsoft.graph.externalConnectors.externalItemContent](../resources/externalconnectors-externalitemcontent.md)|外部项内容。 可选。|
+|acl|[microsoft.graph.externalConnectors.acl](../resources/externalconnectors-acl.md) 集合|访问控制列表。 此为必需属性。|
 
 在下列 `externalItem` 情况下，上的 属性应在有效负载中使用类型说明符：
 

@@ -1,16 +1,16 @@
 ---
 title: 列出事件
 description: '从用户的默认日历或指定的日历获取事件对象列表。 '
-localization_priority: Priority
+ms.localizationpriority: high
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 726fa26ce41571050c94c74165a2898ca767b8d3
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: e3d7e995cc825529c94349a9878d431f2aba1d6e
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433556"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696356"
 ---
 # <a name="list-events"></a>列出事件
 
@@ -30,7 +30,7 @@ ms.locfileid: "50433556"
 
 ### <a name="support-various-time-zones"></a>支持不同时区
 
-对于返回事件的所有 GET 操作，你可以使用 `Prefer: outlook.timezone` 标头在响应中指定事件开始和结束时间的时区。 
+对于返回事件的所有 GET 操作，你可以使用 `Prefer: outlook.timezone` 标头在响应中指定事件开始和结束时间的时区。
 
 例如，下面的 `Prefer: outlook.timezone` 标头将响应中的开始和结束时间设置为东部标准时间。
 ```http
@@ -71,7 +71,7 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
-| Prefer: outlook.timezone | string | 此选项可用于指定响应中开始时间和结束时间的时区。 如果未指定，返回的这些时间值采用 UTC 时区。 可选。 |
+| Prefer: outlook.timezone | string | 用于指定响应中开始时间和结束时间的时区。如果未指定，返回的这些时间值采用 UTC 时区。可选。 |
 | Prefer: outlook.body-content-type | string | 要返回的 **body** 属性的格式。 可取值为“text”或“html”。 如果指定此 `Preference-Applied` 头，返回 `Prefer` 头作为证明。 如果未指定此头，采用 HTML 格式返回 **body** 属性。 可选。 |
 
 ## <a name="request-body"></a>请求正文
@@ -84,10 +84,10 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events
 ##### <a name="request-1"></a>请求 1
 第一个示例获取用户的所有事件。 它指定以下内容：
 
-- 获取以太平洋标准时间格式返回的日期时间值的 `Prefer: outlook.timezone` 标头。 
+- 获取以太平洋标准时间格式返回的日期时间值的 `Prefer: outlook.timezone` 标头。
 - 返回特定属性的 `$select` 查询参数。如果没有 `$select` 参数，将返回所有事件属性。
 
-该请求未指定任何 `Prefer: outlook.body-content-type` 标头来指示返回的事件正文的特定格式。 
+该请求未指定任何 `Prefer: outlook.body-content-type` 标头来指示返回的事件正文的特定格式。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -212,7 +212,7 @@ Content-length: 1932
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/events?$select=subject,body,bodyPreview
-Prefer: outlook.body-content-type="text" 
+Prefer: outlook.body-content-type="text"
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-events-in-text-csharp-snippets.md)]
@@ -233,7 +233,7 @@ Prefer: outlook.body-content-type="text"
 ---
 
 ##### <a name="response-2"></a>响应 2
-下面是一个响应示例。 以文本格式返回 **body** 属性。 
+下面是一个响应示例。 以文本格式返回 **body** 属性。
 
 <!-- {
   "blockType": "response",

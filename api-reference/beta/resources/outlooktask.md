@@ -2,15 +2,15 @@
 title: outlookTask 资源类型
 description: '可用于跟踪工作项目的 Outlook 项目。 '
 author: mashriv
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 1cf1958dc4d07c9bf2b322e6a4b576ce4a8191f6
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: f4cf54ad1420cd18ac8d7665ba8bdf02f4bc0dc2
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50956853"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695264"
 ---
 # <a name="outlooktask-resource-type-deprecated"></a>outlookTask 资源类型（不推荐使用）
 
@@ -60,8 +60,8 @@ Prefer: outlook.timezone="Eastern Standard Time"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|assignedTo|String|Outlook 中已为其分配任务的人员姓名。 只读。|
-|正文|[itemBody](itembody.md)|通常包含有关任务的信息的任务正文。 请注意，仅支持 HTML 类型。|
+|assignedTo|String|Outlook 中已为其分配任务的人员姓名。只读。|
+|body|[itemBody](itembody.md)|通常包含有关任务的信息的任务正文。 请注意，仅支持 HTML 类型。|
 |类别|String 集合|与任务关联的类别。 每个类别对应于用户定义的 [outlookCategory](outlookcategory.md) 的 **displayName** 属性。|
 |changeKey|String|任务的版本。|
 |completedDateTime|[dateTimeTimeZone](datetimetimezone.md)|在指定时区内完成任务的日期。|
@@ -84,9 +84,9 @@ Prefer: outlook.timezone="Eastern Standard Time"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|attachments|[attachment](attachment.md) 集合|任务的 [fileAttachment](fileattachment.md)、[itemAttachment](itemattachment.md) 和 [referenceAttachment](referenceattachment.md) 附件的集合。  只读。 可为 Null。|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合|为任务定义的多值扩展属性的集合。 只读。 可为 Null。|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) 集合|为任务定义的单值扩展属性的集合。 只读。 可为 Null。|
+|attachments|[attachment](attachment.md) 集合|任务的 [fileAttachment](fileattachment.md)、[itemAttachment](itemattachment.md) 和 [referenceAttachment](referenceattachment.md) 附件的集合。  只读。 可为空。|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合|为任务定义的多值扩展属性的集合。只读。可为 NULL。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection|为任务定义的单值扩展属性的集合。只读。可为 NULL。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

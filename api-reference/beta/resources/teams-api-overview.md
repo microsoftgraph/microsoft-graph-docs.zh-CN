@@ -1,16 +1,16 @@
 ---
 title: 将 Microsoft Graph API 与 Microsoft Teams 结合使用
 description: Microsoft Teams 是 Microsoft 365 中基于聊天的工作区，可提供对特定于团队的日历、文件、OneNote 笔记、规划器计划等对象的内置访问权限。
-localization_priority: Priority
+ms.localizationpriority: high
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: fb3c4e58afcf8f2fd8909b956e78b1118f4bb529
-ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
+ms.openlocfilehash: 9185b153ade883a729877abe328faf651c9c001f
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58396730"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695908"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>将 Microsoft Graph API 与 Microsoft Teams 结合使用
 
@@ -43,7 +43,7 @@ Microsoft Teams 是 Microsoft 365 中基于聊天的工作区，可提供对特�
 
 Microsoft Teams 的已测试性能和容量限制将记录在 [Microsoft Teams 限制和规范](/microsoftteams/limits-specifications-teams)中。
 无论是直接使用 Microsoft Teams 还是使用 Microsoft Graph API，这些限制均适用。
-由于每个团队都有一个对应的组，并且每个组都是一个目录对象，因此对[组数](/microsoft-365/admin/create-groups/office-365-groups#group-limits)和[目录对象数目（“资源”）](/azure/active-directory/users-groups-roles/directory-service-limits-restrictions) 的限制也可以发挥作用。 
+由于每个团队都有一个对应的组，并且每个组都是一个目录对象，因此对[组数](/microsoft-365/admin/create-groups/office-365-groups#group-limits)和[目录对象数目（“资源”）](/azure/active-directory/users-groups-roles/directory-service-limits-restrictions) 的限制也可以发挥作用。
 
 频道内的文件存储在 SharePoint 中；[SharePoint online 限制](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)适用。
 
@@ -79,11 +79,15 @@ Microsoft Teams 的已测试性能和容量限制将记录在 [Microsoft Teams �
 
 ## <a name="polling-requirements"></a>轮询要求
 
-如果应用程序轮询查看是否更改了某资源，则此操作每天只能执行一次。 （[teamsAsyncOperation](teamsasyncoperation.md) 是一种例外情况，因为需要频繁对其进行轮询。）如果需要更频繁了解更改，应[创建指向该资源的订阅](../api/subscription-post-subscriptions.md)并接收更改通知 (webhooks)。 如果找不到对所需订阅类型的支持，建议通过 [Microsoft 365 开发人员平台创意论坛](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph)提供反馈。 
+如果应用程序轮询查看是否更改了某资源，则此操作每天只能执行一次。
+（[teamsAsyncOperation](teamsasyncoperation.md) 是一种例外情况，因为需要频繁对其进行轮询。）如果需要更频繁了解更改，应[创建指向该资源的订阅](../api/subscription-post-subscriptions.md)并接收更改通知 (webhooks)。
+如果找不到对所需订阅类型的支持，建议通过 [Microsoft 365 开发人员平台创意论坛](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph)提供反馈。
 
 轮询新邮件时，必须指定支持的日期范围。 有关详细信息，请参阅 [get channel messages delta](../api/chatmessage-delta.md)。
 
-轮询是指对资源重复进行 GET 操作来了解资源是否变更。 只要同一资源未进行轮询，就可以一天多次对该资源进行 GET 操作。 例如，每次用户访问/刷新网页时都可以执行 GET /me/joinedTeams，但在每隔 30 秒执行一次的循环中执行 GET /me/joinedTeams 来刷新该网页则不可取。
+轮询是指对资源重复进行 GET 操作来了解资源是否变更。
+只要同一资源未进行轮询，就可以一天多次对该资源进行 GET 操作。
+例如，每次用户访问/刷新网页时都可以执行 GET /me/joinedTeams，但在每隔 30 秒执行一次的循环中执行 GET /me/joinedTeams 来刷新该网页则不可取。
 
 未遵循这些轮询要求的应用将被视为违反了 [Microsoft API 使用条款](/legal/microsoft-apis/terms-of-use)。 这可能导致额外的[限制](/graph/throttling)或暂停/终止使用 Microsoft API。
 

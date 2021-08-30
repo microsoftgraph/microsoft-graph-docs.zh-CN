@@ -1,16 +1,16 @@
 ---
 title: List oauth2PermissionGrants
 description: 检索 oAuth2PermissionGrant 对象的列表，表示委派的权限授予。
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: eb2f7cef7db877080360e1798d568f76239ed3ea
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ced8cc0796202786e8db67c807795053b268309e
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053466"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696265"
 ---
 # <a name="list-oauth2permissiongrants"></a>List oauth2PermissionGrants
 
@@ -42,7 +42,7 @@ GET /servicePrincipals/{id}/oauth2PermissionGrants
 
 此方法支持使用 [OData 查询参数](/graph/query_parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称           | 说明                |
 |:---------------|:---------------------------|
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/oauth2PermissionGran
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。 
+下面是一个响应示例。
 
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
