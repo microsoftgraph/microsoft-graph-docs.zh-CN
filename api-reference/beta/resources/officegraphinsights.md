@@ -2,15 +2,15 @@
 title: officeGraphInsights 资源类型
 description: 表示 itemInsights 的基本类型。 officeGraphInsights 向后兼容 insights API 的早期版本。 访问 insights API 时只能使用 itemInsights。
 author: simonhult
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: f10d12a0014b38fbe954f957987e585dafa63a2c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 308d35e19eaf1ac5454b33b030d2e9c0a7f7a416
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48092326"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695915"
 ---
 # <a name="officegraphinsights-resource-type"></a>officeGraphInsights 资源类型
 

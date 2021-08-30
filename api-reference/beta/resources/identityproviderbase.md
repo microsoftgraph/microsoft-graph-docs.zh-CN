@@ -1,16 +1,16 @@
 ---
 title: identityProviderBase 资源类型
 description: 代表 Azure Active Directory 租户和 Azure AD B2C 租户中的身份提供程序。
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: namkedia
-ms.openlocfilehash: 2171e1dde60f6c97d6c4eb243d61c896329a1b2c
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: e345131bd02db9fb171ced7f302bce45cf79585d
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58667561"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696391"
 ---
 # <a name="identityproviderbase-resource-type"></a>identityProviderBase 资源类型
 命名空间：microsoft.graph

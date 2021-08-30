@@ -4,13 +4,13 @@ description: Microsoft Graph 通话记录 API 可用于检索组织内的通话�
 author: williamlooney
 doc_type: conceptualPageType
 ms.prod: cloud-communications
-localization_priority: Priority
-ms.openlocfilehash: b30440157d325452131cb62ffd0c88a933b4bb78
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.localizationpriority: high
+ms.openlocfilehash: dafb08c19ad84a23b5954687c4f18ff091cfc3ab
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48601522"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695460"
 ---
 # <a name="working-with-the-call-records-api-in-microsoft-graph"></a>使用 Microsoft Graph 中的通话记录 API
 
@@ -36,7 +36,7 @@ ms.locfileid: "48601522"
 
 对等呼叫包含呼叫中两个参与者之间的单个 [session](callrecords-session.md)。 群组呼叫包含一个或多个 **session** 实体。 在群组呼叫中，每个 **session** 都介于参与者和服务终结点之间。
 
-每个 **session** 都包含一个或多个 [segment](callrecords-segment.md) 实体。 **segment** 表示两个[终结点](callrecords-endpoint.md)之间的媒体链接。 对于大多数呼叫，每个 **session** 仅显示一个 **segment**，但有时可能会有一个或多个中间**终结点**。
+每个 **session** 都包含一个或多个 [segment](callrecords-segment.md) 实体。 **segment** 表示两个 [终结点](callrecords-endpoint.md)之间的媒体链接。 对于大多数呼叫，每个 **session** 仅显示一个 **segment**，但有时可能会有一个或多个中间 **终结点**。
 
 ![表示完整通话记录的数据结构的图像](/graph/images/callrecords-structure.png)
 

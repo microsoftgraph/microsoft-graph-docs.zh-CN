@@ -1,16 +1,16 @@
 ---
 title: 活动报告 API 概述
 description: 使用 Microsoft Graph 中的活动报告 API 访问 Azure Active Directory 创建的报告，跟踪租户中的用户活动。
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: identity-and-access-reports
 author: besiler
-ms.openlocfilehash: 78afd6477988a546c7c0e2b8db34f8933423107f
-ms.sourcegitcommit: 8a9be6f65f62f29973508d82e0348d4142c18f23
+ms.openlocfilehash: c718e6dbe95d1aaf4b891470d07e714d4e0a9ee7
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53129468"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695126"
 ---
 # <a name="activity-reports-api-overview"></a>活动报告 API 概述
 
@@ -26,7 +26,7 @@ Azure Active Directory (Azure AD) 可跟踪用户活动和创建报告，以帮�
 
 Azure AD 提供以下三种类型的活动报告：
 
-- 目录审核 
+- 目录审核
 - 登录
 - 预配
 
@@ -76,8 +76,8 @@ Azure AD 提供以下三种类型的活动报告：
 
 ## <a name="next-steps"></a>后续步骤
 
-- [注册你的应用程序](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)以满足报告先决条件。 
-- 要了解如何在使用证书进行身份验证时检索审核日志，请参阅 [教程：使用带有证书的 Azure Active Directory 报告 API 获取数据](/azure/active-directory/reports-monitoring/tutorial-access-api-with-certificates)。  
+- [注册你的应用程序](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)以满足报告先决条件。
+- 要了解如何在使用证书进行身份验证时检索审核日志，请参阅 [教程：使用带有证书的 Azure Active Directory 报告 API 获取数据](/azure/active-directory/reports-monitoring/tutorial-access-api-with-certificates)。
 - 审查 [directoryAudit](directoryaudit.md) 资源和操作。
-- 审查 [signIn](signin.md) 资源和操作。 
+- 审查 [signIn](signin.md) 资源和操作。
 - 审查 [provisioningObjectSummary](provisioningobjectsummary.md) 资源。

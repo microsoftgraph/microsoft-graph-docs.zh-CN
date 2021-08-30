@@ -1,16 +1,16 @@
 ---
 title: aadUserConversationMember 资源类型
 description: 表示聊天或频道中的 Azure Active Directory 用户。
-localization_priority: Priority
+ms.localizationpriority: high
 author: akjo
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: c7d65249e6e284efeaf0b34a4ffaf027026932d4
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: cdc2f8e18284abab8633aa5666a24f41169b0cab
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53060279"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58694638"
 ---
 # <a name="aaduserconversationmember-resource-type"></a>aadUserConversationMember 资源类型
 
@@ -36,9 +36,9 @@ ms.locfileid: "53060279"
 |[更新频道成员角色](../api/channel-update-members.md) | [conversationMember](conversationmember.md) | 更新频道成员的属性。 仅支持 membershipType 为 `private` 的频道。|
 |[删除频道成员](../api/channel-delete-members.md) | 无 | 从频道中删除一个成员。 仅支持用于 `private` 的 `channelType`。|
 |[列出聊天成员](../api/chat-list-members.md) | [conversationMember](conversationmember.md) 集合 | 获取聊天中的所有成员列表。|
-|[添加聊天成员](../api/chat-post-members.md) | 位置标头 | 向聊天添加成员。| 
+|[添加聊天成员](../api/chat-post-members.md) | 位置标头 | 向聊天添加成员。|
 |[获取聊天成员](../api/chat-get-members.md) | [conversationMember](conversationmember.md) | 获取聊天中的成员。|
-|[删除聊天成员](../api/chat-delete-members.md) | 无 | 从聊天中删除成员。| 
+|[删除聊天成员](../api/chat-delete-members.md) | 无 | 从聊天中删除成员。|
 
 ## <a name="properties"></a>属性
 

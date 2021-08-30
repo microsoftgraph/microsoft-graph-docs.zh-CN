@@ -5,12 +5,12 @@ author: snlraju-msft
 localization_priority: Normal
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 4b415075dbcd47ecf8d3ad1e92fbf410863ba2d8
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: b4cfa91878df8bf93f78fe1afdc06490b7c308c6
+ms.sourcegitcommit: 6efd9df497d795988cd85474f379d1989b0995b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467575"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58697462"
 ---
 # <a name="delete-externalgroup"></a>删除 externalGroup
 
@@ -20,7 +20,7 @@ ms.locfileid: "53467575"
 
 删除 [externalGroup](../resources/externalconnectors-externalgroup.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

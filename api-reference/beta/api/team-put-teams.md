@@ -2,15 +2,15 @@
 title: 从组创建团队
 description: 从组新建团队。
 author: nkramer
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6a4009c5fc6d9a421cfd5ffdae8c7ab4cc31d393
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 4ea033d0b0fc4b2041f4bbf4910d009c540d4527
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054768"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695271"
 ---
 # <a name="create-team-from-group"></a>从组创建团队
 
@@ -25,7 +25,8 @@ ms.locfileid: "52054768"
 
 若要创建团队，组必须至少拥有一个所有者。
 
-如果在不到 15 分钟之前创建组，则可能会因为重复延迟导致“创建团队呼叫”失败并显示错误代码 404。 建议的模式是重试“创建团队呼叫”三次，每次呼叫之间延迟 10 秒。
+如果在不到 15 分钟之前创建组，则可能会因为重复延迟导致“创建团队呼叫”失败并显示错误代码 404。
+建议的模式是重试“创建团队呼叫”三次，每次呼叫之间延迟 10 秒。
 
 ## <a name="permissions"></a>权限
 
@@ -77,7 +78,7 @@ PUT /groups/{id}/team
 PUT https://graph.microsoft.com/beta/groups/{id}/team
 Content-type: application/json
 
-{  
+{
   "memberSettings": {
     "allowCreateUpdateChannels": true
   },
@@ -115,7 +116,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。 
+下面展示了示例响应。
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
@@ -135,18 +136,18 @@ Content-length: 401
     "allowDeleteChannels": true,
     "allowAddRemoveApps": true,
     "allowCreateUpdateRemoveTabs": true,
-    "allowCreateUpdateRemoveConnectors": true    
+    "allowCreateUpdateRemoveConnectors": true
   },
   "guestSettings": {
     "allowCreateUpdateChannels": true,
-    "allowDeleteChannels": true 
+    "allowDeleteChannels": true
   },
   "messagingSettings": {
     "allowUserEditMessages": true,
     "allowUserDeleteMessages": true,
     "allowOwnerDeleteMessages": true,
     "allowTeamMentions": true,
-    "allowChannelMentions": true    
+    "allowChannelMentions": true
   },
   "funSettings": {
     "allowGiphy": true,

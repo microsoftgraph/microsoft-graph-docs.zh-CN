@@ -2,15 +2,15 @@
 title: 团队资源类型
 description: 'Microsoft Teams 中的团队是频道的集合。 '
 author: AkJo
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 1a388e5d31e3cbd3abab83203481d66491ff51a4
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: 7769fd62e04010b0ba36a325f64a62363570aa78
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53060481"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695299"
 ---
 # <a name="team-resource-type"></a>团队资源类型
 
@@ -89,9 +89,9 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。 频道�
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) 集合|此团队中安装的应用。|
 |members|[conversationMember](../resources/conversationmember.md) 集合|团队的成员和所有者。|
 |owners|[user](user.md)| 此团队的所有者列表。 目前，在使用应用程序权限创建团队时，必须指定一个所有者。 当使用用户委派的权限时，不能指定任何所有者（当前用户是所有者）。 必须将所有者指定为对象 ID (GUID)，而不是 UPN。 |
-|operations|[teamsAsyncOperation](teamsasyncoperation.md) 集合| 在此团队中运行过或正在运行的异步操作。 | 
+|operations|[teamsAsyncOperation](teamsasyncoperation.md) 集合| 在此团队中运行过或正在运行的异步操作。 |
 |photo|[profilePhoto](../resources/profilephoto.md)|团队照片。|
-|[primaryChannel](../api/team-get-primarychannel.md)|[频道](channel.md)| 团队的常规频道。 | 
+|[primaryChannel](../api/team-get-primarychannel.md)|[频道](channel.md)| 团队的常规频道。 |
 |schedule|[日程安排](schedule.md)| 此团队的排班安排。|
 |template|[teamsTemplate](teamstemplate.md)| 创建此团队时所使用的模板。 请参阅[可用模板](/MicrosoftTeams/get-started-with-teams-templates)。 |
 |permissionGrants|[resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) 集合| 已授予应用访问团队的权限集合。|

@@ -1,16 +1,16 @@
 ---
 title: 向用户授予 appRoleAssignment
 description: 向用户授予应用角色分配。
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: users
 author: psignoret
-ms.openlocfilehash: c927cc35aa900e7a6d367c04f737921455cc6bd7
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: a88e610b1308081a9140ef531957ec50f1a06e31
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53580917"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696342"
 ---
 # <a name="grant-an-approleassignment-to-a-user"></a>向用户授予 appRoleAssignment
 
@@ -30,9 +30,9 @@ ms.locfileid: "53580917"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | User.Read.All 和 AppRoleAssignment.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | AppRoleAssignment.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | User.Read.All 和 AppRoleAssignment.ReadWrite.All |
+|应用程序 | AppRoleAssignment.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -105,7 +105,7 @@ Content-Type: application/json
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。 
+下面是一个响应示例。
 
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 

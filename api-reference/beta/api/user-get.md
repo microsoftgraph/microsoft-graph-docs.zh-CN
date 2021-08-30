@@ -2,15 +2,15 @@
 title: 获取用户
 description: 检索用户对象的属性和关系。
 author: jpettere
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: b522637b70989203a7fd33fd865ae9c0bdc9c60a
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+ms.openlocfilehash: 8e853d2c4b43eaf91e38f3add191f9f2663dd50d
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53351158"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695488"
 ---
 # <a name="get-a-user"></a>获取用户
 
@@ -106,7 +106,7 @@ GET https://graph.microsoft.com/beta/me
 ---
 
 ##### <a name="response"></a>响应
-这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。 
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

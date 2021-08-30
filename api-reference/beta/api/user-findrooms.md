@@ -1,16 +1,16 @@
 ---
 title: 用户：findRooms
 description: '获取用户租户中或特定房间列表中的所有会议室。 '
-localization_priority: Priority
+ms.localizationpriority: high
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9007795bfb04f8484be61d13a5da17602df80337
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ea94eb6bb0928532b8b32866299ac1fd449e9e8d
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052640"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695355"
 ---
 # <a name="user-findrooms"></a>用户：findRooms
 
@@ -18,9 +18,10 @@ ms.locfileid: "52052640"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取代表用户租户或特定会议室列表中的所有会议室的 [emailAddress](../resources/emailaddress.md) 对象。 
+获取代表用户租户或特定会议室列表中的所有会议室的 [emailAddress](../resources/emailaddress.md) 对象。
 
-租户可以将会议室整理到会议室列表。 在此 API 中，每个会议室和会议室列表由 [emailAddress](../resources/emailaddress.md) 实例表示。 可以获取租户租户中的[所有会议室列表](user-findroomlists.md)、获取租户中的所有会议室，或者获取特定会议室列表的所有会议室。 最多可以访问租户中的前 100 个会议室。
+租户可以将会议室整理到会议室列表。 在此 API 中，每个会议室和会议室列表由 [emailAddress](../resources/emailaddress.md) 实例表示。
+可以获取租户租户中的[所有会议室列表](user-findroomlists.md)、获取租户中的所有会议室，或者获取特定会议室列表的所有会议室。 最多可以访问租户中的前 100 个会议室。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -106,7 +107,7 @@ GET https://graph.microsoft.com/beta/me/findRooms
 
 
 ##### <a name="response-1"></a>响应 1
-下面是一个响应示例。 
+下面是一个响应示例。
 
 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
@@ -162,7 +163,7 @@ Content-type: application/json
   "name": "user_get_rooms_from_specific_list"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/findRooms(RoomList='Building2Rooms@contoso.onmicrosoft.com') 
+GET https://graph.microsoft.com/beta/me/findRooms(RoomList='Building2Rooms@contoso.onmicrosoft.com')
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-get-rooms-from-specific-list-csharp-snippets.md)]
@@ -184,7 +185,7 @@ GET https://graph.microsoft.com/beta/me/findRooms(RoomList='Building2Rooms@conto
 
 
 ##### <a name="response-2"></a>响应 2
-下面是一个响应示例。 
+下面是一个响应示例。
 
 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {

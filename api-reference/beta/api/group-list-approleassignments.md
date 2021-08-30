@@ -1,16 +1,16 @@
 ---
 title: 列出向组授予的 appRoleAssignment
 description: 检索已授予组的 appRoleAssignments 列表。
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: groups
 author: psignoret
-ms.openlocfilehash: c977e25f23a7e9ad5158792fe613ffcc99918cf6
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 97f8661784d775c3d67d54250c40f3bfecef7ee6
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52041734"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695838"
 ---
 # <a name="list-approleassignments-granted-to-a-group"></a>列出向组授予的 appRoleAssignment
 
@@ -41,7 +41,7 @@ GET /groups/{id}/appRoleAssignments
 
 此方法支持使用 [OData 查询参数](/graph/query_parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称           | 说明                |
 |:---------------|:---------------------------|

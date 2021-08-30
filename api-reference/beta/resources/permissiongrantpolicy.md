@@ -1,16 +1,16 @@
 ---
 title: permissionGrantPolicy 资源类型
 description: 指定可授权许可的条件。
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 89d6dccf4f9343fc27e2fae4ee7dff3bec89142c
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 29f08f35afbc8bdef2979c15e1755b057a9c0fa5
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444040"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58694617"
 ---
 # <a name="permissiongrantpolicy-resource-type"></a>permissionGrantPolicy 资源类型
 

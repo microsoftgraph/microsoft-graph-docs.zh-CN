@@ -1,16 +1,16 @@
 ---
 title: 目录资源类型（已删除的项目）
 description: . 已删除的项目将保留最多 30 天的还原时间。 30 天后，这些项目将永久删除。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: c79e21600ed03a8239c0baaf1f436f074a4377bc
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 98a6127991b3eb321a84c6d771ef25b6f4f3f170
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547237"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696909"
 ---
 # <a name="directory-resource-type-deleted-items"></a>目录资源类型（已删除的项目）
 
@@ -22,6 +22,8 @@ ms.locfileid: "52547237"
 
 目前，仅应用程序、组和用户资源支持已删除的项目[](application.md)功能。 [](group.md) [](user.md)
 
+继承自 [实体](entity.md)。
+
 ## <a name="methods"></a>方法
 
 | 方法         | 返回类型 | 说明 |
@@ -31,24 +33,24 @@ ms.locfileid: "52547237"
 |[List deleted items](../api/directory-deleteditems-list.md) |[directoryObject](directoryobject.md) 集合| 获取最近删除的项目列表。 |
 |[Permanently delete an item](../api/directory-deleteditems-delete.md) | 无 | 永久删除项目。 |
 |[列出用户拥有的已删除项目](../api/directory-deleteditems-user-owned.md) | [directoryObject](directoryobject.md) collection | 列出用户拥有的目录项。 |
-|[列出 featureRolloutPolicies](../api/list-featurerolloutpolicies.md) | [featureRolloutPolicy](featurerolloutpolicy.md) 集合 | 检索 featureRolloutPolicy 对象的列表。 |
-|[创建 featureRolloutPolicy](../api/post-featurerolloutpolicies.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | 创建新的 featureRolloutPolicy 对象。 |
-| [获取 featureRolloutPolicy](../api/featurerolloutpolicy-get.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | 检索 featurerolloutpolicy 对象的属性和关系。 |
-| [更新 featureRolloutPolicy](../api/featurerolloutpolicy-update.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | 更新 featurerolloutpolicy 对象的属性。 |
-| [删除 featureRolloutPolicy](../api/featurerolloutpolicy-delete.md) | 无 | 删除 featureRolloutPolicy 对象。 |
 
 ## <a name="properties"></a>属性
+
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|id|String| 对象的唯一标识符；例如，12345678-9abc-def0-1234-56789abcde。 键。 不可为 null。 只读。|
+|id|String| 对象的唯一标识符;例如， `12345678-9abc-def0-1234-56789abcde` 。 键。 不可为 null。 只读。 继承自 [实体](entity.md)。|
 
 ## <a name="relationships"></a>关系
+
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
+|administrativeUnits|[administrativeUnit](administrativeunit.md) 集合| 用户和组目录对象的概念容器。|
 |DeletedItems|[directoryObject](directoryobject.md) 集合| 最近删除的项目。 只读。 可为 NULL。|
-|featureRolloutPolicies|[featureRolloutPolicy](featurerolloutpolicy.md) 集合| 可为 Null。|
+|featureRolloutPolicies|[featureRolloutPolicy](featurerolloutpolicy.md) 集合| 可为 NULL。|
+|federationConfigurations|[identityProviderBase](../resources/identityproviderbase.md) 集合|配置与标识提供程序支持 IdP (组织) 支持 SAML 或 WS-Fed联盟。|
 
 ## <a name="json-representation"></a>JSON 表示形式
+
 下面是资源的 JSON 表示形式。
 
 <!-- {

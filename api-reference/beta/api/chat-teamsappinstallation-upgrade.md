@@ -2,15 +2,15 @@
 title: teamsAppInstallation：升级
 description: 更新聊天中安装的应用程序，并使其与租户应用目录中提供的当前版本保持同步。
 author: subray
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c6e012008fc85d3b114ee422ed7eebd67dba6349
-ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
+ms.openlocfilehash: 785100f7eca74477a4e60195caeb0772142f6a09
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52971063"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695614"
 ---
 # <a name="teamsappinstallation-upgrade"></a>teamsAppInstallation：升级
 

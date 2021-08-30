@@ -5,12 +5,12 @@ author: mecampos
 localization_priority: Normal
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: b07d2d193bb758f4368016e1673634fd441b99f2
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 47603c008f94cdf27227e3ae5e6419283d3e3424
+ms.sourcegitcommit: 6efd9df497d795988cd85474f379d1989b0995b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53580108"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58697469"
 ---
 # <a name="create-externalconnection"></a>创建 externalConnection
 命名空间：microsoft.graph.externalConnectors
@@ -19,7 +19,7 @@ ms.locfileid: "53580108"
 
 创建新的 externalConnection 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -47,14 +47,14 @@ POST /external/connections
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [externalConnection](../resources/externalconnectors-externalconnection.md) 对象的 JSON 表示形式。
 
-下表显示创建 [externalConnection](../resources/externalconnectors-externalconnection.md)时所需的属性。
+您可以在创建 [externalConnection](../resources/externalconnectors-externalconnection.md)时指定以下属性。
 
-|属性|类型|必需 (Y/N)  |说明|
-|:---|:---|:---|:---|
-|id|String|Y|连接 ID|
-|name|String|Y|连接名称|
-|说明|String|Y|连接说明|
-|configuration|[microsoft.graph.externalConnectors.configuration](../resources/externalconnectors-configuration.md)|N|连接配置|
+|属性|类型|说明|
+|:---|:---|:---|
+|id|String|连接 ID。 此为必需属性。|
+|name|String|连接名称。 必需。|
+|description|String|连接说明。 此为必需属性。|
+|configuration|[microsoft.graph.externalConnectors.configuration](../resources/externalconnectors-configuration.md)|连接配置。 可选。|
 
 
 

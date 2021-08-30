@@ -2,15 +2,15 @@
 title: 创建组
 description: 创建新的 Microsoft 365 组或安全组。
 author: Jordanndahl
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 0d99bd75ca6339333a48a2fcd2513fca84434971
-ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
+ms.openlocfilehash: e19a18487621931171d6c88ef2231cf2e49f76d0
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58490467"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695418"
 ---
 # <a name="create-group"></a>创建组
 
@@ -51,7 +51,7 @@ POST /groups
 
 ## <a name="request-body"></a>请求正文
 
-下表显示了创建组时要指定的[组](../resources/group.md)资源的属性。 
+下表显示了创建组时要指定的[组](../resources/group.md)资源的属性。
 
 | 属性 | 类型 | 说明|
 |:---------------|:--------|:----------|
@@ -59,7 +59,7 @@ POST /groups
 | 说明 | string | 组说明。 可选。 |
 | isAssignableToRole | Boolean | 设置为 **true** 可以将组分配给 Azure AD 角色。 只有特权角色管理员和全局管理员才能设置此属性的值。 可选。 |
 | mailEnabled | 布尔 | 对于已启用邮件的组，请设置为 **true**。 必需。 |
-| mailNickname | string | 组的邮件别名。 最大 长度：64 个字符。 此属性只能包含[ASCII 字符集 0 - 127](/office/vba/language/reference/user-interface-help/character-set-0127) 中的字符，以下除外：` @ () \ [] " ; : . <> , SPACE`。 必填。 |
+| mailNickname | string | 组的邮件别名。 最大 长度：64 个字符。 此属性只能包含[ASCII 字符集 0 - 127](/office/vba/language/reference/user-interface-help/character-set-0127) 中的字符，以下除外：` @ () \ [] " ; : . <> , SPACE`。 必需。 |
 | securityEnabled | boolean | 对于启用安全机制的组（包括 Microsoft 365 组），请设置为 **true**。 必填。 |
 | owners | [directoryObject](../resources/directoryobject.md) collection | 此属性表示创建时指定的组所有者。 除非已在 **成员** 属性中指定，否则不会自动将所有者添加为组成员。 可选。 |
 | members | [directoryObject](../resources/directoryobject.md) collection | 此属性表示创建时指定的组成员。可选。 |
@@ -71,7 +71,7 @@ POST /groups
 
 >**注意：** 在不指定所有者的情况下使用 Group.Create 应用程序权限创建组时，将会以匿名方式创建组，并且组将不可修改。 创建组时，可使用 `POST` 操作并为其添加所有者，以便指定可修改该组的所有者。
 
-> 以编程方式创建 Microsoft 365 组时，若具有仅应用上下文且未指定所有者，则将以匿名方式创建组。 这样会导致在进一步执行手动操作前无法自动创建相关联的 SharePoint Online 网站。  
+> 以编程方式创建 Microsoft 365 组时，若具有仅应用上下文且未指定所有者，则将以匿名方式创建组。 这样会导致在进一步执行手动操作前无法自动创建相关联的 SharePoint Online 网站。
 
 根据需要为你的组指定其他可写属性。有关详细信息，请参阅[组](../resources/group.md)资源的属性。
 
@@ -225,9 +225,9 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="response"></a>响应 
+#### <a name="response"></a>响应
 
-下面是成功响应的示例。 它仅包括默认属性。 随后可获取组的 **owners** 或 **members** 导航属性，以验证所有者或成员。 
+下面是成功响应的示例。 它仅包括默认属性。 随后可获取组的 **owners** 或 **members** 导航属性，以验证所有者或成员。
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 

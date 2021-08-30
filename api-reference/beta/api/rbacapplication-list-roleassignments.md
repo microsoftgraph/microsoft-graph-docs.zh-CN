@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5c58ce5123bf7ea3bb29af5b5e67fb5e259d6c75
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+ms.openlocfilehash: 78ab7566d88feb7d3633f56713c3f3696533f3f4
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53351060"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695194"
 ---
 # <a name="list-unifiedroleassignments"></a>列出 unifiedRoleAssignments
 
@@ -27,15 +27,15 @@ ms.locfileid: "53351060"
 ## <a name="permissions"></a>权限
 
 
-根据 RBAC 提供程序以及 (或应用程序) 的权限类型，从下表中选择调用此 API 所需的最低特权权限。 若要了解其他信息， [在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 特权权限之前要特别小心，在"权限" [中搜索](/graph/permissions-reference)。
+根据 RBAC 提供程序以及 (或应用程序) 类型，从下表中选择调用此 API 所需的最低特权权限。 若要了解其他信息， [在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 特权权限之前要特别小心，在"权限" [中搜索](/graph/permissions-reference)。
 
-### <a name="for-directory-azure-ad-provider"></a>对于 Azure AD (提供程序) 目录
+### <a name="for-directory-azure-ad-provider"></a>对于 Azure AD (Directory) 提供程序
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All、Directory.AccessAsUser.All   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All |
+|应用程序 | RoleManagement.Read.Directory、Directory.Read.All、RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All |
 
 ### <a name="for-entitlement-management-provider"></a>对于权利管理提供程序
 
@@ -43,7 +43,7 @@ ms.locfileid: "53351060"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
 
 
 ## <a name="http-request"></a>HTTP 请求
@@ -66,6 +66,8 @@ GET /roleManagement/directory/roleAssignments?$filter=roleDefinitionId eq '{role
 GET /roleManagement/entitlementManagement/roleAssignments?$filter=principalId eq '{principal id}'
 
 GET /roleManagement/entitlementManagement/roleAssignments?$filter=roleDefinitionId eq '{roleDefinition id}'
+
+GET /roleManagement/entitlementManagement/roleAssignments?$filter=appScopeId eq '/accessPackageCatalog/{catalog id}'
 ```
 
 ## <a name="query-parameters"></a>查询参数
@@ -88,7 +90,7 @@ GET /roleManagement/entitlementManagement/roleAssignments?$filter=roleDefinition
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-request-using-filter-on-role-definition-id-and-expand-principal"></a>示例 1：对角色定义 ID $filter扩展主体时请求
+### <a name="example-1-request-using-filter-on-role-definition-id-and-expand-principal"></a>示例 1：对角色$filter ID 使用扩展和展开主体的请求
 
 #### <a name="request"></a>请求
 

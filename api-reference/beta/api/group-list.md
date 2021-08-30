@@ -1,16 +1,16 @@
 ---
 title: 列出组
 description: 列出组织中所有可用的组，包括但不限于 Microsoft 365 组。
-localization_priority: Priority
+ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 89eee306f2153186d7aaf52f9fc796f2bba24c45
-ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
+ms.openlocfilehash: e604475c8c722e9a57c960fcdf60db2685c19f1b
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430075"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695425"
 ---
 # <a name="list-groups"></a>列出组
 
@@ -18,7 +18,7 @@ ms.locfileid: "53430075"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-列出组织中的所有组，包括但不限于 Microsoft 365 组。 
+列出组织中的所有组，包括但不限于 Microsoft 365 组。
 
 此操作在默认情况下仅返回每个组的一部分较常用属性。 这些 _默认_ 属性将记录在 [属性](../resources/group.md#properties)部分中。 若要获取 _非_ 默认返回的属性，请对组执行 [GET](group-get.md) 操作，并在 `$select` OData 查询选项中指定这些属性。 **hasMembersWithLicenseErrors** 属性是一个例外，不会在 `$select` 查询中返回。
 
@@ -185,7 +185,7 @@ Content-type: application/json
          "renewedDateTime":"2018-11-19T20:29:40Z",
          "resourceBehaviorOptions":[
          ],
-         "resourceProvisioningOptions":[ 
+         "resourceProvisioningOptions":[
          ],
          "securityEnabled":false,
          "theme":null,

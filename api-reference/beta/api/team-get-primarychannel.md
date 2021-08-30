@@ -2,15 +2,15 @@
 title: 获取 primaryChannel
 description: 检索允许访问默认“常规”频道的团队的导航属性。
 author: nkramer
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 87b68bc313fbfc03e9ab52d8e9a77ea8b4fbebab
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 8fed69f8ecd86c9340118723e6d4aad6cc94fe60
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050813"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696370"
 ---
 # <a name="get-primarychannel"></a>获取 primaryChannel
 
@@ -32,7 +32,7 @@ ms.locfileid: "52050813"
 
 > **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
 
-> **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
+> **注意**：此 API 支持管理员权限。全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -88,7 +88,7 @@ GET https://graph.microsoft.com/beta/teams/{id}/primaryChannel
 ---
 
 ### <a name="response"></a>响应
-下面展示了示例响应。 
+下面展示了示例响应。
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {

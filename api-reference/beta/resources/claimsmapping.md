@@ -2,15 +2,15 @@
 title: claimsMapping 资源类型
 description: 从令牌中的将声明映射到 Azure Active Directory B2C 可识别和使用的声明。
 author: namkedia
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 31ec191527509c015ab201c1464509fce64e549fd5475a377efbff0808973a74
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3862cf564ce5df1924972e75dfb22a3ba0756429
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54239677"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696209"
 ---
 # <a name="claimsmapping-resource-type"></a>claimsMapping 资源类型
 

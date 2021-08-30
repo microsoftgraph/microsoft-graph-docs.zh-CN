@@ -2,15 +2,15 @@
 title: schedulingGroup 资源类型
 description: 计划中成员的逻辑分组（通常按角色）。
 author: nkramer
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: c20fd79c9539ed2502960a63cb5b1de154c9693a
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: b28baf7b75fc19ef2156bf5edd69ea60d0cbd03c
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721469"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695586"
 ---
 # <a name="schedulinggroup-resource-type"></a>schedulingGroup 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "50721469"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[计划](schedule.md)中成员的逻辑分组（通常按角色）。 
+[计划](schedule.md)中成员的逻辑分组（通常按角色）。
 
 ## <a name="methods"></a>方法
 
@@ -34,11 +34,11 @@ ms.locfileid: "50721469"
 |名称          |类型           |说明                                                                                 |
 |--------------|---------------|--------------------------------------------------------------------------------------------|
 | id            | `string`      |`schedulingGroup` 的 ID。|
-| displayName   | `string`      | `schedulingGroup` 的显示名称。 必需。 |
-| isActive          |`bool`      | 指示在新建实体或更新现有实体时是否可以使用 `schedulingGroup`。 必需。 |
-| userIds       | `collection(string)`    |  `schedulingGroup` 成员的用户 ID 列表。 必需。 |
-| createdDateTime       |`DateTimeOffset`        |首次创建 `schedulingGroup` 的时间戳。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 |
-| lastModifiedDateTime      |`DateTimeOffset`        |上次更新 `schedulingGroup` 的时间戳。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 |
+| displayName   | `string`      | `schedulingGroup` 的显示名称。必需。 |
+| isActive          |`bool`      | 指示在新建实体或更新现有实体时是否可以使用 `schedulingGroup`。必需。 |
+| userIds       | `collection(string)`    |  `schedulingGroup` 成员的用户 ID 列表。必需。 |
+| createdDateTime       |`DateTimeOffset`        |首次创建此 `schedulingGroup` 的时间戳。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`2014-01-01T00:00:00Z` |
+| lastModifiedDateTime      |`DateTimeOffset`        |首次更新此 `schedulingGroup` 的时间戳。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`2014-01-01T00:00:00Z` |
 | lastModifiedBy        | [identitySet](identityset.md) |上次更新 `schedulingGroup` 的标识。|
 
 ## <a name="json-representation"></a>JSON 表示形式

@@ -2,15 +2,15 @@
 title: 用户：findRoomLists
 description: 获取租户中定义的会议室列表。
 author: vrod9429
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c091ac7071ce76dbb59cb69c10da2b6fa519f3cc
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 9a6e339bcc92a225bd376db62621038b11c1f859
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052647"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695362"
 ---
 # <a name="user-findroomlists"></a>用户：findRoomLists
 
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/beta/me/findRoomLists
 
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 
+下面是一个响应示例。
 
 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
