@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fbf91c74761c5fc60bffbf5c6c6c6f4410a2ad2d984ffc1af6cd02dccf800839
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6b2ab8e4ab9069cd1286ccc5a6474d7290203675
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54203937"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795310"
 ---
 # <a name="update-vulnerablemanageddevice"></a>更新 vulnerableManagedDevice
 
@@ -43,7 +43,7 @@ PATCH ** Entity URI for microsoft.management.services.api.vulnerableManagedDevic
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,9 +53,9 @@ PATCH ** Entity URI for microsoft.management.services.api.vulnerableManagedDevic
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体密钥和 AAD 设备 ID。|
-|managedDeviceId|String|Intune 托管设备 ID。|
-|displayName|字符串|设备名称。|
+|id|字符串|实体密钥和 AAD 设备 ID。|
+|managedDeviceId|字符串|Intune 托管设备 ID。|
+|displayName|String|设备名称。|
 |lastSyncDateTime|DateTimeOffset|上次同步日期。|
 
 
@@ -95,7 +95,6 @@ Content-Length: 263
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00"
 }
 ```
-
 
 
 

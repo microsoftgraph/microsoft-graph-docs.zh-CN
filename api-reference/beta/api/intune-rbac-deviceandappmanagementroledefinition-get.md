@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8ff94f78d455e9a8b295502db915cf2db6564fd0b0b40d5717c129797235311f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a68113841f40f9bcc66f718fae6cd2a4565e4120
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54233467"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804055"
 ---
 # <a name="get-deviceandappmanagementroledefinition"></a>获取 deviceAndAppManagementRoleDefinition
 
@@ -29,7 +29,7 @@ ms.locfileid: "54233467"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementRBAC.Read.All、DeviceManagementRBAC.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementRBAC.Read.All、DeviceManagementRBAC.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementRBAC.Read.All、DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -47,7 +47,7 @@ GET /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAs
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -123,7 +123,6 @@ Content-Length: 1391
   }
 }
 ```
-
 
 
 

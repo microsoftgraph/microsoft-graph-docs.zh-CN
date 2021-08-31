@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 38ebf4e1524a3c973106522e7aaa84f03b9da71f
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: c1a3b9636682745fc62735cc62ab336531071538
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58264911"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789093"
 ---
 # <a name="create-devicecompliancescript"></a>创建 deviceComplianceScript
 
@@ -27,9 +27,9 @@ ms.locfileid: "58264911"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/deviceComplianceScripts
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -62,9 +62,9 @@ POST /deviceManagement/deviceComplianceScripts
 |createdDateTime|DateTimeOffset|创建设备合规性脚本的时间戳。 此属性是只读的。|
 |lastModifiedDateTime|DateTimeOffset|修改设备合规性脚本的时间戳。 此属性是只读的。|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示执行上下文的类型。 可取值为：`system`、`user`。|
-|enforceSignatureCheck|布尔值|指示是否需要检查脚本签名|
-|runAs32Bit|布尔值|指示 PowerShell 脚本 (32) 32 位运行|
-|roleScopeTagIds|String collection|设备合规性脚本的范围标记标识列表|
+|enforceSignatureCheck|Boolean|指示是否需要检查脚本签名|
+|runAs32Bit|布尔值|指示 PowerShell 脚本 (脚本) 32 位运行|
+|roleScopeTagIds|字符串集合|设备合规性脚本的范围标记标识列表|
 
 
 
@@ -121,7 +121,6 @@ Content-Length: 592
   ]
 }
 ```
-
 
 
 

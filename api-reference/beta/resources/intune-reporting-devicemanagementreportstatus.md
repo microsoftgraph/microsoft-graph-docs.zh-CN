@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c786a67a28674313f7a205d43e9f9caf8e7d9cce9894af480fdc70f5b94cf29f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1f04c12b53c1aedb46d904131125e9dadd229faa
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54217160"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803452"
 ---
 # <a name="devicemanagementreportstatus-enum-type"></a>deviceManagementReportStatus 枚举类型
 
@@ -26,11 +26,10 @@ ms.locfileid: "54217160"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|报告生成状态未知|
-|notStarted|1 |报告生成尚未启动|
-|inProgress|2 |报告生成正在进行中|
-|已完成|3 |报告生成已完成|
+|notStarted|1|报告生成尚未启动|
+|inProgress|2|报告生成正在进行中|
+|已完成|3|报告生成已完成|
 |failed|4 |报告生成失败|
-
 
 
 

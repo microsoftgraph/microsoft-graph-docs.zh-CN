@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 772f671c145e8c90a0edd9f64d3beb4347381c2fafd38ddfcf2b32c9c2a0f387
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6b130fab11d8062ece78584ed602be6235fd5f9e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54134313"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58788911"
 ---
 # <a name="delete-iosvppappassigneddevicelicense"></a>删除 iosVppAppAssignedDeviceLicense
 
@@ -43,7 +43,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/a
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

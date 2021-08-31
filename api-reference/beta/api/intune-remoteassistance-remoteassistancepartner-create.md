@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3ad5567211e021e98da47ca7c3b38f65175f26b712e8302d34d5d9abc1147622
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2f17a6f26678752d239b6ee2a2d87da2c470384e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54122969"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58753391"
 ---
 # <a name="create-remoteassistancepartner"></a>创建 remoteAssistancePartner
 
@@ -43,7 +43,7 @@ POST /deviceManagement/remoteAssistancePartners
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,7 +54,7 @@ POST /deviceManagement/remoteAssistancePartners
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|合作伙伴的唯一标识符。|
-|displayName|字符串|合作伙伴的显示名称。|
+|displayName|String|合作伙伴的显示名称。|
 |onboardingUrl|String|合作伙伴的载入门户的 URL，其中管理员可以配置其远程协助服务。|
 |onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune-remoteassistance-remoteassistanceonboardingstatus.md)|当前 TeamViewer 连接器状态的友好说明。 可取值为：`notOnboarded`、`onboarding`、`onboarded`。|
 |lastConnectionDateTime|DateTimeOffset|TEM 合作伙伴发送到 Intune 的上一个请求的时间戳。|
@@ -101,7 +101,6 @@ Content-Length: 390
   "onboardingRequestExpiryDateTime": "2017-01-01T00:02:07.7573274-08:00"
 }
 ```
-
 
 
 

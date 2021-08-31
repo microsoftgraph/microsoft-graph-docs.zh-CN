@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 24ea1a524f4147047374074a9e36a3b805ccfb251eb0f78d4cfc8439f96791f0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 08c011e0bec81140e62f20495e92369157204500
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54133864"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795667"
 ---
 # <a name="update-windowsautopilotsettings"></a>更新 windowsAutopilotSettings
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/windowsAutopilotSettings
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -95,7 +95,6 @@ Content-Length: 279
   "syncStatus": "inProgress"
 }
 ```
-
 
 
 

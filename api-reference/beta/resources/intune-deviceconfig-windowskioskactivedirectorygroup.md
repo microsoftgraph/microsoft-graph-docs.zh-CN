@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fb152b6c47e1c0fa4a87e503f6e9c1ec591c3054da9446d11c52be1fe194fef0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c9869b581370d349725428c6a92adee04b9513e4
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54232641"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58802997"
 ---
 # <a name="windowskioskactivedirectorygroup-resource-type"></a>windowsKioskActiveDirectoryGroup 资源类型
 
@@ -28,7 +28,7 @@ ms.locfileid: "54232641"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|groupName|字符串|将锁定到此展台配置的 AD 组的名称|
+|groupName|String|将锁定到此展台配置的 AD 组的名称|
 
 ## <a name="relationships"></a>关系
 无
@@ -46,7 +46,6 @@ ms.locfileid: "54232641"
   "groupName": "String"
 }
 ```
-
 
 
 

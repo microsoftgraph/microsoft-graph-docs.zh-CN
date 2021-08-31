@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8f8c700bbe8f280d9953112ab2fcec67d6f7cb8d826eb67fbf54064b1fa58a13
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 40154047a8eb0bd316d4c6704adf6f4eb407c26a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54231031"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58778050"
 ---
 # <a name="deviceconfigurationdeviceoverview-resource-type"></a>deviceConfigurationDeviceOverview 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54231031"
 
 尚未记录
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 deviceConfigurationDeviceOverview](../api/intune-deviceconfig-deviceconfigurationdeviceoverview-get.md)|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|读取 [deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md) 对象的属性和关系。|
@@ -68,7 +68,6 @@ ms.locfileid: "54231031"
   "configurationVersion": 1024
 }
 ```
-
 
 
 

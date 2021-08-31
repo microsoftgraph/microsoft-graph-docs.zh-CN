@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b5cd8230391f904e3a16218ec213ea8111158b4e9234fd47ec6878b8d3461b3b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 08f74129ffa947be2b1a2c655cbfc10bc8bc875f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54227349"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58796199"
 ---
 # <a name="windowsmanagementapphealthstate-resource-type"></a>windowsManagementAppHealthState 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54227349"
 
 Windows管理应用运行状况状态实体。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 windowsManagementAppHealthStates](../api/intune-devices-windowsmanagementapphealthstate-list.md)|[windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md) 集合|列出 [windowsManagementAppHealthState 对象的属性和](../resources/intune-devices-windowsmanagementapphealthstate.md) 关系。|
@@ -36,7 +36,7 @@ Windows管理应用运行状况状态实体。
 |:---|:---|:---|
 |id|String|管理应用Windows状态的唯一标识符。 此属性是只读的。|
 |healthState|[healthState](../resources/intune-devices-healthstate.md)|Windows管理应用运行状况状态。 可取值为：`unknown`、`healthy`、`unhealthy`。|
-|installedVersion|字符串|Windows管理应用安装的版本。|
+|installedVersion|String|Windows管理应用安装的版本。|
 |lastCheckInDateTime|DateTimeOffset|Windows管理应用上次签入时间。|
 |deviceName|String|安装了管理应用Windows的名称。|
 |deviceOSVersion|String|Windows 10安装了管理应用Windows操作系统版本。|
@@ -63,7 +63,6 @@ Windows管理应用运行状况状态实体。
   "deviceOSVersion": "String"
 }
 ```
-
 
 
 

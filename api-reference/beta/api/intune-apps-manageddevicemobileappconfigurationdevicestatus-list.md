@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cf9a5d9fec14079df8a29da63cc7a3cc20a13b3c48ca735970aa65c0ea306985
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2e2d745c78ec17a357c3dca4023e40169f86046a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54204749"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789212"
 ---
 # <a name="list-manageddevicemobileappconfigurationdevicestatuses"></a>列出 managedDeviceMobileAppConfigurationDeviceStatuses
 
@@ -29,7 +29,7 @@ ms.locfileid: "54204749"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -44,7 +44,7 @@ GET /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvision
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -85,7 +85,6 @@ Content-Length: 585
   ]
 }
 ```
-
 
 
 

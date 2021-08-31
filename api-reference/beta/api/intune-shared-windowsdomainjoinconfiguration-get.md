@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 36d33167c952f16fbc9f5c3a0a6f1f44e67519070a035cf1c585dc64ed02cff2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d4888e964c31b567f471ef914bb41ab938e8a066
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54233348"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795905"
 ---
 # <a name="get-windowsdomainjoinconfiguration"></a>获取 windowsDomainJoinConfiguration
 
@@ -66,7 +66,7 @@ GET /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceId
 
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -111,7 +111,6 @@ Content-Length: 560
   }
 }
 ```
-
 
 
 

@@ -1,18 +1,18 @@
 ---
-title: assignResourceAccountToDevice 操作
-description: 将资源帐户分配给 Autopilot 设备。
+title: reportRemoteAssistance 操作
+description: 提交报告有效负载的 Post 调用
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5b7cd2135cce2be24968b4bc05dc040606e433af
+ms.openlocfilehash: d00265f73751ac29028aea0ecf9b9d58f721259d
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803621"
+ms.locfileid: "58797164"
 ---
-# <a name="assignresourceaccounttodevice-action"></a>assignResourceAccountToDevice 操作
+# <a name="reportremoteassistance-action"></a>reportRemoteAssistance 操作
 
 命名空间：microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "58803621"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-将资源帐户分配给 Autopilot 设备。
+提交报告有效负载的 Post 调用
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -37,8 +37,7 @@ ms.locfileid: "58803621"
 }
 -->
 ``` http
-POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}/assignResourceAccountToDevice
-POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}/deploymentProfile/assignedDevices/{windowsAutopilotDeviceIdentityId}/assignResourceAccountToDevice
+POST /deviceManagement/reportRemoteAssistance
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -54,9 +53,7 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 
 |属性|类型|说明|
 |:---|:---|:---|
-|userPrincipalName|String|尚未记录|
-|addressableUserName|String|尚未记录|
-|resourceAccountName|String|尚未记录|
+|reportingPayload|[remoteAssistanceReporting](../resources/intune-remoteassistance-remoteassistancereporting.md)|尚未记录|
 
 
 
@@ -68,15 +65,33 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}/assignResourceAccountToDevice
+POST https://graph.microsoft.com/beta/deviceManagement/reportRemoteAssistance
 
 Content-type: application/json
-Content-length: 170
+Content-length: 972
 
 {
-  "userPrincipalName": "User Principal Name value",
-  "addressableUserName": "Addressable User Name value",
-  "resourceAccountName": "Resource Account Name value"
+  "reportingPayload": {
+    "@odata.type": "microsoft.graph.remoteAssistanceReporting",
+    "id": "Id value",
+    "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
+    "endDateTime": "2017-01-01T00:03:30.9241974-08:00",
+    "remoteAssistanceSessionType": "fullControl",
+    "helperEmail": "Helper Email value",
+    "helperTenantId": "Helper Tenant Id value",
+    "helperFirstName": "Helper First Name value",
+    "helperLastName": "Helper Last Name value",
+    "helperDeviceAadId": "Helper Device Aad Id value",
+    "helperDeviceName": "Helper Device Name value",
+    "helperEnrollmentState": "enrolled",
+    "sharerEmail": "Sharer Email value",
+    "sharerTenantId": "Sharer Tenant Id value",
+    "sharerFirstName": "Sharer First Name value",
+    "sharerLastName": "Sharer Last Name value",
+    "sharerDeviceAadId": "Sharer Device Aad Id value",
+    "sharerDeviceName": "Sharer Device Name value",
+    "sharerEnrollmentState": "enrolled"
+  }
 }
 ```
 

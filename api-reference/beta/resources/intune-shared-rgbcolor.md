@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3d7ebbb4c4755fac2399d0a4b7d18bc55fcd1fe0613531e90794ac88b5ac42ea
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7c0f007191f4ba450c957c2cf1921c7956110cea
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54139212"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803754"
 ---
 # <a name="rgbcolor-resource-type"></a>rgbColor 资源类型
 
@@ -47,7 +47,6 @@ ms.locfileid: "54139212"
   "b": 1024
 }
 ```
-
 
 
 

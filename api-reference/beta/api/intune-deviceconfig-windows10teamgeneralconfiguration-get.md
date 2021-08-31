@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ae36e3bd59475941030997e07b1f01de08d764f2229b0d384065cb044cd355b8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4ec72660b16dbf5b7558267b9de326afdc560db2
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54154208"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795387"
 ---
 # <a name="get-windows10teamgeneralconfiguration"></a>获取 windows10TeamGeneralConfiguration
 
@@ -48,7 +48,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -129,7 +129,6 @@ Content-Length: 2310
   }
 }
 ```
-
 
 
 

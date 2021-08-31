@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1475ac4dc29462b31df57ae54daf4ecb658487133ad5b0fe2cc5884e8effdc5a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 814395189273adfe7a977ddb2d85e6ed8714aa64
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249872"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58796584"
 ---
 # <a name="managementstate-enum-type"></a>managementState 枚举类型
 
@@ -26,9 +26,9 @@ ms.locfileid: "54249872"
 |成员|值|说明|
 |:---|:---|:---|
 |托管|0|设备正在管理中|
-|retirePending|1 |停用命令在设备上发生，并且正在从管理中注销|
-|retireFailed|2 |停用命令在设备上失败|
-|wipePending|3 |擦除命令在设备上发生，并且正在取消注册管理|
+|retirePending|1|停用命令在设备上发生，并且正在从管理中注销|
+|retireFailed|2|停用命令在设备上失败|
+|wipePending|3|擦除命令在设备上发生，并且正在取消注册管理|
 |wipeFailed|4 |擦除命令在设备上失败|
 |不正常|5 |设备不正常。|
 |deletePending|6 |在设备上执行删除命令 |
@@ -37,7 +37,6 @@ ms.locfileid: "54249872"
 |wipeCanceled|9 |此设备的擦除命令已取消|
 |retireCanceled|10 |此设备的停用命令已取消|
 |已发现|11 |已发现设备，但设备未完全注册。|
-
 
 
 

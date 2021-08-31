@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7d633432157440d38f4ad335a12019b86a15a47a
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: c81eef2fbab97c2ba2ed6a6a290fcfd790a7eb65
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58264533"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58788463"
 ---
 # <a name="userexperienceanalyticsapphealthapplicationperformance-resource-type"></a>userExperienceAnalyticsAppHealthApplicationPerformance 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "58264533"
 
 用户体验分析应用程序性能实体包含应用性能详细信息。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 userExperienceAnalyticsAppHealthApplicationPerformances](../api/intune-devices-userexperienceanalyticsapphealthapplicationperformance-list.md)|[userExperienceAnalyticsAppHealthApplicationPerformance](../resources/intune-devices-userexperienceanalyticsapphealthapplicationperformance.md) 集合|列出 [userExperienceAnalyticsAppHealthApplicationPerformance](../resources/intune-devices-userexperienceanalyticsapphealthapplicationperformance.md) 对象的属性和关系。|
@@ -75,7 +75,6 @@ ms.locfileid: "58264533"
   "meanTimeToFailureInMinutes": 1024
 }
 ```
-
 
 
 

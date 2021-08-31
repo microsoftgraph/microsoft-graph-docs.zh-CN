@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d376b69e64b0e9dc5699918e748c6be91dc5fa7264986e96cff924533cdcd649
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4ae89a8d47026faf68fc44bdd6c88428b9f2d222
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54251517"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58782474"
 ---
 # <a name="macossystemextensiontypemapping-resource-type"></a>macOSSystemExtensionTypeMapping 资源类型
 
@@ -45,7 +45,6 @@ ms.locfileid: "54251517"
   "allowedTypes": "String"
 }
 ```
-
 
 
 

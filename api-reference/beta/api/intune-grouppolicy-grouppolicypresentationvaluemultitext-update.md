@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e71fb9a9f70b7fa9530e1be26ef00ca92cebf6042c3c5c23a43c8e24ad7e90de
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8cbcdecf41f7eaae7fada489492297f50ad67c1b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54210615"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58764536"
 ---
 # <a name="update-grouppolicypresentationvaluemultitext"></a>更新 groupPolicyPresentationValueMultiText
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -56,7 +56,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期和时间。 继承自 [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |createdDateTime|DateTimeOffset|对象的创建日期和时间。 继承自 [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |id|String|实体的键。 继承自 [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
-|values|String collection|关联的演示文稿的非空字符串的集合。|
+|values|字符串集合|关联的演示文稿的非空字符串的集合。|
 
 
 
@@ -97,7 +97,6 @@ Content-Length: 292
   ]
 }
 ```
-
 
 
 

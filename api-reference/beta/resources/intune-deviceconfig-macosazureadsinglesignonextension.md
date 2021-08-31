@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e4de016c4d910241152981d4350242273b11e3b3b65e042bf8bcb13e447b5517
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 23c69e9edf5f980f9dcc8cfdacc07f5b39ba0500
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54183090"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58782502"
 ---
 # <a name="macosazureadsinglesignonextension-resource-type"></a>macOSAzureAdSingleSignOnExtension 资源类型
 
@@ -28,7 +28,7 @@ ms.locfileid: "54183090"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|enableSharedDeviceMode|布尔值|启用或禁用共享设备模式。|
+|enableSharedDeviceMode|Boolean|启用或禁用共享设备模式。|
 |bundleIdAccessControlList|String collection|允许将 AAD 扩展用于单一登录的其他捆绑包的可选列表。|
 |配置|[keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md) 集合|获取或设置用于配置凭据类型配置文件的键入键值对的列表。 该集合最多可包含 500 个元素。|
 
@@ -58,7 +58,6 @@ ms.locfileid: "54183090"
   ]
 }
 ```
-
 
 
 

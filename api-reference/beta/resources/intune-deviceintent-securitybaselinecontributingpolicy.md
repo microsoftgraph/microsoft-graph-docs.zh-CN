@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1da1145fd2ac6c89b919874f3db07adce6044035d83525ca0e419cb96f42fcb8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 92f49ce93e49524c3a9925e561cae57ca1c49f3d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54224703"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803789"
 ---
 # <a name="securitybaselinecontributingpolicy-resource-type"></a>securityBaselineContributingPolicy 资源类型
 
@@ -47,7 +47,6 @@ ms.locfileid: "54224703"
   "sourceType": "String"
 }
 ```
-
 
 
 

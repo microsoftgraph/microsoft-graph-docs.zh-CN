@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: acdcc7cb26e65c0da8b05e646a4e43f60ffbc967a4239da2c47646acb990c466
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6b9b4b59e3e263b398a059eace1fd6b3efbfecf0
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54173896"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797351"
 ---
 # <a name="create-importeddeviceidentityresult"></a>创建 importedDeviceIdentityResult
 
@@ -43,7 +43,7 @@ POST /deviceManagement/importedDeviceIdentities
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -62,7 +62,7 @@ POST /deviceManagement/importedDeviceIdentities
 |description|字符串|设备描述 继承自 [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|
 |enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Intune 中的设备状态 继承自 [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
 |平台|[平台](../resources/intune-enrollment-platform.md)|设备平台。 继承自 [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)。 可取值为：`unknown`、`ios`、`android`、`windows`、`windowsMobile`、`macOS`。|
-|status|布尔值|导入的设备标识的状态|
+|状态|布尔值|导入的设备标识的状态|
 
 
 
@@ -111,7 +111,6 @@ Content-Length: 529
   "status": true
 }
 ```
-
 
 
 

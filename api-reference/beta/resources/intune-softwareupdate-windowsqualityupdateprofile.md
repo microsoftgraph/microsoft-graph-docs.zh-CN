@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 090f22169255049482cd561ef509fb6d7aba8f8deca5699873e2c14e0f200e43
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 247b382ec9d12c621591a9efcd1a6904005a7f3d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54224311"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797470"
 ---
 # <a name="windowsqualityupdateprofile-resource-type"></a>windowsQualityUpdateProfile 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54224311"
 
 Windows质量更新配置文件
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 windowsQualityUpdateProfiles](../api/intune-softwareupdate-windowsqualityupdateprofile-list.md)|[windowsQualityUpdateProfile](../resources/intune-softwareupdate-windowsqualityupdateprofile.md) 集合|列出 [windowsQualityUpdateProfile](../resources/intune-softwareupdate-windowsqualityupdateprofile.md) 对象的属性和关系。|
@@ -35,15 +35,15 @@ Windows质量更新配置文件
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|Intune 策略 ID。|
+|id|String|Intune 策略 ID。|
 |displayName|String|配置文件显示名称的配置文件。|
-|description|String|由用户指定的配置文件的说明。|
+|description|字符串|由用户指定的配置文件的说明。|
 |expeditedUpdateSettings|[expeditedWindowsQualityUpdateSettings](../resources/intune-softwareupdate-expeditedwindowsqualityupdatesettings.md)|加速更新设置。|
 |createdDateTime|DateTimeOffset|创建配置文件的日期时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改配置文件的日期时间。|
-|roleScopeTagIds|String collection|此质量更新实体的范围标记列表。|
-|releaseDateDisplayName|字符串|为质量更新版本显示的友好发布日期|
-|deployableContentDisplayName|String|质量显示名称配置文件可部署内容的友好解决方案|
+|roleScopeTagIds|字符串集合|此质量更新实体的范围标记列表。|
+|releaseDateDisplayName|String|为质量更新版本显示的友好发布日期|
+|deployableContentDisplayName|字符串|质量显示名称配置文件可部署内容的友好解决方案|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -78,7 +78,6 @@ Windows质量更新配置文件
   "deployableContentDisplayName": "String"
 }
 ```
-
 
 
 

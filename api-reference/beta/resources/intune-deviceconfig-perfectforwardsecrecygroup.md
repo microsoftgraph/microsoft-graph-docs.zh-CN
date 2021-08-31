@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 43aab260fac6071ac46c4842a2ccc35a70964dcdfa0bd4b5fd38dd63ac403ee3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e3f097fae938817a588198de107048bb16ab76b3
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54232746"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58796241"
 ---
 # <a name="perfectforwardsecrecygroup-enum-type"></a>perfectForwardSecrecyGroup 枚举类型
 
@@ -26,13 +26,12 @@ ms.locfileid: "54232746"
 |成员|值|说明|
 |:---|:---|:---|
 |pfs1|0|PFS1|
-|pfs2|1 |PFS2|
-|pfs2048|2 |PFS2048|
-|ecp256|3 |ECP256|
+|pfs2|1|PFS2|
+|pfs2048|2|PFS2048|
+|ecp256|3|ECP256|
 |ecp384|4 |ECP384|
 |pfsMM|5 |PFSMM|
 |pfs24|6 |PFS24|
-
 
 
 

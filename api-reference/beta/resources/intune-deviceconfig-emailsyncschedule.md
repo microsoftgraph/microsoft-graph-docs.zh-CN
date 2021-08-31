@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8ba1c5a506e5eb8eb7831794c47d73f0c7166fc876ef40acb1b023f7cd0a3860
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 899b62b78f99f362732f9b7072d3e4a48eb1fdc6
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54165768"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58802514"
 ---
 # <a name="emailsyncschedule-enum-type"></a>emailSyncSchedule 枚举类型
 
@@ -26,13 +26,12 @@ ms.locfileid: "54165768"
 |成员|值|说明|
 |:---|:---|:---|
 |userDefined|0|用户定义，默认值，无意图。|
-|asMessagesArrive|1 |在消息到达时同步。|
-|手动|2 |手动同步。|
-|fifteenMinutes|3 |每十五分钟同步一次。|
+|asMessagesArrive|1|在消息到达时同步。|
+|手动|2|手动同步。|
+|fifteenMinutes|3|每十五分钟同步一次。|
 |thirtyMinutes|4 |每隔 30 分钟同步一次。|
 |将minutes|5 |每隔 10 分钟同步一次。|
 |basedOnMyUsage|6 |根据我的使用情况进行同步。|
-
 
 
 

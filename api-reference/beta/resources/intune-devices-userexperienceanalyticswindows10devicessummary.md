@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b8fdbb23b5b1d645423fa6c89267154a5b8c3cc903c7d914619d77373dea2049
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: beeded0dfecec5f8c596e22a20c2352679a9fadc
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54206282"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797491"
 ---
 # <a name="userexperienceanalyticswindows10devicessummary-resource-type"></a>userExperienceAnalyticsWindows10DevicesSummary 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "54206282"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|unsupportedOSversionDeviceCount|Int32|操作系统版本Windows 10的设备数量。|
+|unsupportedOSversionDeviceCount|Int32|操作系统Windows 10不支持的设备数。|
 
 ## <a name="relationships"></a>关系
 无
@@ -43,7 +43,6 @@ ms.locfileid: "54206282"
   "unsupportedOSversionDeviceCount": 1024
 }
 ```
-
 
 
 

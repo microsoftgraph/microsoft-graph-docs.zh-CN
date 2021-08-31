@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 43a8a482dec251c45d388557d5d80e6edae0e4c86399a0c510f2480e3457c5c0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 89f56767afff5519b401156d625d0454f0be0024
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54133255"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803270"
 ---
 # <a name="devicemanagementconfigurationsettingvaluedefinition-resource-type"></a>deviceManagementConfigurationSettingValueDefinition 资源类型
 
@@ -41,7 +41,6 @@ ms.locfileid: "54133255"
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationSettingValueDefinition"
 }
 ```
-
 
 
 

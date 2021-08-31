@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 676961eaab94deaac89ca14dbd1e8653abcca9d2aec6e16519ecd512e0db84ae
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ccbc0a695315a8f1c691c7b2a47e4c8c34e08103
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54167070"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58802402"
 ---
 # <a name="update-androiddeviceownerenrollmentprofile"></a>更新 androidDeviceOwnerEnrollmentProfile
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/androidDeviceOwnerEnrollmentProfiles/{androidDeviceOwner
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -56,7 +56,7 @@ PATCH /deviceManagement/androidDeviceOwnerEnrollmentProfiles/{androidDeviceOwner
 |accountId|String|注册配置文件隶属的租户 GUID。|
 |id|String|注册配置文件的唯一 GUID。|
 |displayName|字符串|注册配置文件的显示名称。|
-|description|String|注册配置文件的说明。|
+|description|字符串|注册配置文件的说明。|
 |enrollmentMode|[androidDeviceOwnerEnrollmentMode](../resources/intune-androidforwork-androiddeviceownerenrollmentmode.md)|使用此注册配置文件的设备注册模式。 可取值为：`corporateOwnedDedicatedDevice`、`corporateOwnedFullyManaged`、`corporateOwnedWorkProfile`。|
 |enrollmentTokenType|[androidDeviceOwnerEnrollmentTokenType](../resources/intune-androidforwork-androiddeviceownerenrollmenttokentype.md)|注册配置文件的注册令牌类型。 可取值为：`default`、`corporateOwnedDedicatedDeviceWithAzureADSharedMode`。|
 |createdDateTime|DateTimeOffset|注册配置文件的创建日期/时间。|
@@ -67,7 +67,7 @@ PATCH /deviceManagement/androidDeviceOwnerEnrollmentProfiles/{androidDeviceOwner
 |enrolledDeviceCount|Int32|已使用此注册配置文件进行注册的 Android 设备总数。|
 |qrCodeContent|String|用于生成此令牌的 QR 码的字符串。|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|用于生成此令牌的 QR 码的字符串。|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
+|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。|
 
 
 
@@ -138,7 +138,6 @@ Content-Length: 930
   ]
 }
 ```
-
 
 
 

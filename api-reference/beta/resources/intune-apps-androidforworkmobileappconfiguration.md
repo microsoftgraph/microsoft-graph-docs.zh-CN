@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f5c3bbd29d29ece529903509366d2f2ec8c337b4d34b255ff24663df2985eaf7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 28bc479e3e00b9691d3da38bca54d9573feba8e7
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54245203"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58788491"
 ---
 # <a name="androidforworkmobileappconfiguration-resource-type"></a>androidForWorkMobileAppConfiguration 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "54245203"
 
 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 androidForWorkMobileAppConfigurations](../api/intune-apps-androidforworkmobileappconfiguration-list.md)|[androidForWorkMobileAppConfiguration](../resources/intune-apps-androidforworkmobileappconfiguration.md) 集合|列出 [androidForWorkMobileAppConfiguration](../resources/intune-apps-androidforworkmobileappconfiguration.md) 对象的属性和关系。|
@@ -37,16 +37,16 @@ ms.locfileid: "54245203"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
+|id|String|实体的键。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |targetedMobileApps|String 集合|关联的应用。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |roleScopeTagIds|String collection|此应用配置实体的范围标记列表。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |description|字符串|管理员提供的设备配置说明。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
-|displayName|字符串|管理员提供的设备配置名称。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
+|displayName|String|管理员提供的设备配置名称。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |packageId|String|Android For Work 应用配置包 ID。|
-|payloadJson|String|Android For Work 应用配置 JSON 有效负载。|
+|payloadJson|字符串|Android For Work 应用配置 JSON 有效负载。|
 |permissionActions|[androidPermissionAction](../resources/intune-apps-androidpermissionaction.md) 集合|Android 应用权限和相应权限操作的列表。|
 |profileApplicability|[androidProfileApplicability](../resources/intune-apps-androidprofileapplicability.md)|Android Enterprise AndroidWorkProfile (DeviceOwner 或默认配置文件 (适用于这两) ) 。 可取值为：`default`、`androidWorkProfile`、`androidDeviceOwner`。|
 
@@ -94,7 +94,6 @@ ms.locfileid: "54245203"
   "profileApplicability": "String"
 }
 ```
-
 
 
 

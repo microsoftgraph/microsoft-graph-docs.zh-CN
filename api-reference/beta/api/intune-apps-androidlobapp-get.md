@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 495203173674a9b92438b134eecd8b823949e059cc4c350ec7930546dec14f5e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7c9ed706c4dbc87e3bbbc24ec24890951e56eb4d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54143365"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58796122"
 ---
 # <a name="get-androidlobapp"></a>获取 androidLobApp
 
@@ -29,7 +29,7 @@ ms.locfileid: "54143365"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -48,7 +48,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -131,7 +131,6 @@ Content-Length: 1809
   }
 }
 ```
-
 
 
 

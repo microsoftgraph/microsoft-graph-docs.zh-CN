@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 56f94519dd6bf326e2b64bbbdd0527162a39b47e194fecc2dd71bee446e2127d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2d10e491c0b0e344419138519e4a330df9508465
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54180066"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58788077"
 ---
 # <a name="delete-androiddeviceownerwificonfiguration"></a>删除 androidDeviceOwnerWiFiConfiguration
 
@@ -45,7 +45,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -67,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 
