@@ -1,16 +1,16 @@
 ---
 title: servicePrincipal：checkMemberGroups
 description: 检查指定组列表中的成员身份。从列表中返回服务主体具有直接或传递成员身份的组。
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 6f530bf1f5bdb4a7bbb8353aa09471ed708b050b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6549c9d357f1f1ebe0e49a9c873dfa8fb5492900
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051975"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696958"
 ---
 # <a name="serviceprincipal-checkmembergroups"></a>servicePrincipal：checkMemberGroups
 
@@ -18,7 +18,7 @@ ms.locfileid: "52051975"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检查指定组列表中的成员身份。 将列表中具有直接或可传递成员身份的 [servicePrincipal](../resources/serviceprincipal.md) 组返回。
+检查指定组列表中的成员身份。从列表中返回组中 [servicePrincipal](../resources/serviceprincipal.md) 具有直接或传递成员身份的组。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -93,8 +93,8 @@ Content-length: 44
 ---
 
 ### <a name="response"></a>响应
-下面是一个响应示例。 
->注意：为了提高可读性，可能缩短此处显示的响应对象。
+下面是一个响应示例。
+>注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

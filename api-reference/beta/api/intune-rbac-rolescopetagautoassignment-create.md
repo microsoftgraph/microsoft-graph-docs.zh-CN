@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 899f72b9caeb99321dbe355d9af94f51882035bde24e4380373845181d5081b1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a70ee99e3865b34e16a0288d52a52f300e7f7de1
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54123025"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791928"
 ---
 # <a name="create-rolescopetagautoassignment"></a>创建 roleScopeTagAutoAssignment
 
@@ -43,7 +43,7 @@ POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleA
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,7 +53,7 @@ POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleA
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
+|id|String|实体的键。 此属性是只读的。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|特定角色作用域标记的自动分配目标。|
 
 
@@ -99,7 +99,6 @@ Content-Length: 434
   }
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 71e261495a115d4aff6b2cfcd41103ff8f5a178f9a0747d60fbdcdfed8e4585c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9ba8caec013be6e4cdf209ba701ebcfd9553d7f6
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54229547"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791914"
 ---
 # <a name="auditresource-resource-type"></a>auditResource 资源类型
 
@@ -27,7 +27,7 @@ ms.locfileid: "54229547"
 |:---|:---|:---|
 |displayName|String|显示名称。|
 |ModifiedProperties|[auditProperty](../resources/intune-auditing-auditproperty.md) 集合|已修改属性列表。|
-|type|字符串|审核资源的类型。|
+|type|String|审核资源的类型。|
 |resourceId|String|审核资源的 ID。|
 
 ## <a name="relationships"></a>关系
@@ -56,7 +56,6 @@ ms.locfileid: "54229547"
   "resourceId": "String"
 }
 ```
-
 
 
 

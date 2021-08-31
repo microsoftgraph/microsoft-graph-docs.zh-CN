@@ -1,16 +1,16 @@
 ---
 title: identityProvider 资源类型
 description: 代表 Azure Active Directory 租户和  Azure AD B2C 租户中的身份提供程序。
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: namkedia
-ms.openlocfilehash: 95f452483e4ff1503208c9b4bbd67ceb6129df73
-ms.sourcegitcommit: c7776e5659c391e7c9ce1cd46e242a5ddc38dba2
+ms.openlocfilehash: a04c5fcf709da10a1b7b1c37d4d81097e656bc4a
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "53580777"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695306"
 ---
 # <a name="identityprovider-resource-type-deprecated"></a>identityProvider 资源类型（已弃用）
 命名空间：microsoft.graph
@@ -46,7 +46,7 @@ ms.locfileid: "53580777"
 
 |属性|类型|说明|
 |:---------------|:--------|:----------|
-|clientId|字符串|使用身份提供程序注册应用时获取的应用客户端 ID。 这是必填字段。  必填。 不可为空。|
+|clientId|字符串|向标识提供程序注册应用程序时获取的客户端 ID。这是一个必填字段。必填。不可为 null。|
 |clientSecret|字符串|使用身份提供程序注册应用时获取的应用客户端密码。 这是只读的。 读取操作将返回 `****`。 这是必填字段。 必填。 不可为空。|
 |id|字符串|标识提供程序的 ID。|
 |name|字符串|标识提供程序的显示名称。不可为 null。|

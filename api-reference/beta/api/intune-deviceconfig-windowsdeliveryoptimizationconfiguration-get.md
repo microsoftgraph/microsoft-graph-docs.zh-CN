@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b4a17b704f474a0daf5209ebf1fdafa570b386ddf0ce8fee49caf38b27879ada
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 195d99dd7cf032694a72cdbed85fb785ff6d246c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54123438"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58792089"
 ---
 # <a name="get-windowsdeliveryoptimizationconfiguration"></a>获取 windowsDeliveryOptimizationConfiguration
 
@@ -48,7 +48,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -134,7 +134,6 @@ Content-Length: 2344
   }
 }
 ```
-
 
 
 

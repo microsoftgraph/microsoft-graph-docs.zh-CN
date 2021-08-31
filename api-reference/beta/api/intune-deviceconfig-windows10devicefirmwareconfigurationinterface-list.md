@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 04377ff05054631afa37f770bd6e33302967abe50db14e7a6a83db086a23f6c0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3eabdec5a33ba2bf682564859d221c05008a65d7
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54188559"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58792096"
 ---
 # <a name="list-windows10devicefirmwareconfigurationinterfaces"></a>列出 windows10DeviceFirmwareConfigurationInterfaces
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -116,7 +116,6 @@ Content-Length: 1766
   ]
 }
 ```
-
 
 
 

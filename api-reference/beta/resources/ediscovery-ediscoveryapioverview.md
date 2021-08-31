@@ -1,22 +1,22 @@
 ---
 title: 使用 Microsoft Graph 电子数据展示 API
-description: Microsoft 365 电子数据展示 API 为组织提供了自动化重复任务的功能，并与现有的电子数据展示工具集成，以构建基于行业法规可能需要的可重复工作流。 可使用电子数据展示 API 来协助你的法律需求。
-localization_priority: Priority
+description: Microsoft 365 电子数据展示 API 为组织提供了自动执行重复任务的功能，并与现有电子数据展示工具集成，以构建基于行业法规可能需要的可重复工作流。可以使用能够电子数据展示 API 帮助满足你的法律需求。
+ms.localizationpriority: high
 author: mahage-msft
 ms.prod: ediscovery
 doc_type: conceptualPageType
-ms.openlocfilehash: d11f1b8f5a36fe4108fa47801f8031fb10dcac9f
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 239704caecba229e66959276effa77091965efa1
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50446154"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696398"
 ---
 # <a name="use-the-microsoft-graph-ediscovery-api"></a>使用 Microsoft Graph 电子数据展示 API
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-用于电子数据展示的 Microsoft Graph API 为组织提供了自动化重复任务的功能，并与现有的电子数据展示工具集成，以构建基于行业法规可能需要的可重复工作流。 可使用电子数据展示 API 来协助你的法律需求。
+Microsoft Graph 电子数据展示 API 为组织提供了自动执行重复任务的功能，并与现有电子数据展示工具集成，以构建基于行业法规可能需要的可重复工作流。可以使用能够电子数据展示 API 帮助满足你的法律需求。
 
 > [!IMPORTANT]
 > 用于电子数据展示的 Microsoft Graph API 旨在用于诉讼、调查和法规请求的电子数据展示操作。 不应将这些 API 用作 Microsoft 365 系统或任何其他成批下载的日记数据的替代项。

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 567de1b1d67cfb730ee5797e9c8b79f2ffe51d046dccfb8118bbcbc69ae1a6e1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 26cea223c419260fa14256dc94a832000281fd6f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54183041"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791879"
 ---
 # <a name="secureassessmentaccounttype-enum-type"></a>secureAssessmentAccountType 枚举类型
 
@@ -26,10 +26,9 @@ Windows10SecureAssessment ConfigurationAccount 允许的帐户类型。
 |成员|值|说明|
 |:---|:---|:---|
 |azureADAccount|0|以 AzureAD\username@tenant.com 格式指示 Azure AD 帐户。|
-|domainAccount|1 |以 domain\user 或 user@domain.com 格式指示域帐户。|
-|localAccount|2 |以用户名格式指示本地帐户。|
-|localGuestAccount|3 |以测试名称的格式指示本地来宾帐户。|
-
+|domainAccount|1|以 domain\user 或 user@domain.com 格式指示域帐户。|
+|localAccount|2|以用户名格式指示本地帐户。|
+|localGuestAccount|3|以测试名称的格式指示本地来宾帐户。|
 
 
 

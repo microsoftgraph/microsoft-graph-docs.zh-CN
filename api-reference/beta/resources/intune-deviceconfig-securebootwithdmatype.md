@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6b191b053e71650188b892549c6876f3d1547cca7a303d57f20ba71896699b92
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 86b67ab1bbf492cdc3dab8fefc70f2e721eace08
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54244965"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791872"
 ---
 # <a name="securebootwithdmatype-enum-type"></a>secureBootWithDMAType 枚举类型
 
@@ -26,9 +26,8 @@ ms.locfileid: "54244965"
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置，无操作|
-|withoutDMA|1 |使用安全启动打开 VBS|
-|withDMA|3 |使用安全启动和 DMA 打开 VBS|
-
+|withoutDMA|1|使用安全启动打开 VBS|
+|withDMA|3|使用安全启动和 DMA 打开 VBS|
 
 
 

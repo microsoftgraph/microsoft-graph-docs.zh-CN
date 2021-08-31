@@ -1,16 +1,16 @@
 ---
 title: 获取照片
 description: 获取指定的 profilePhoto 或其元数据（**profilePhoto** 属性）。
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: ''
 author: kevinbellinger
-ms.openlocfilehash: 8d8202fdba2dc645dc42d69fb77413b58a35e60d
-ms.sourcegitcommit: de175a11806f9e9ba3c916384e897aee1cc7f75c
+ms.openlocfilehash: 690720e1c2de153a7b56aab30a1212f4b530a468
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790660"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695411"
 ---
 # <a name="get-photo"></a>获取照片
 
@@ -24,10 +24,7 @@ ms.locfileid: "49790660"
 
 Microsoft 365 支持以下高清照片尺寸：48x48、64x64、96x96、120x120、240x240、360x360、432x432、504x504 和 648x648。 如果照片存储在 Azure Active Directory 中，可以采用任何尺寸。
 
-可以获取最大照片的元数据，也可以指定尺寸来获取相应照片尺寸的元数据。
-如果请求的大小不可用，则仍然可以获取用户已上载且可供使用的较小大小。
-例如，如果用户上传像素为 504x504 的照片，除 648x648 外所有尺寸的照片都可供下载。
-如果在用户邮箱或 Azure Active Directory 中找不到指定尺寸，则返回的是尺寸 1x1 和剩余元数据。
+可以获取最大可用照片的元数据，或者指定一个大小来获取该照片大小的元数据。如果请求的大小不可用，则仍然可以获取用户已上载且可供使用的较小大小。例如，如果用户上传 504x504 像素的照片，则除大小为 648x648 的照片之外所有照片都可供下载。如果在用户邮箱或 Azure Active Directory 中未找到可用的指定大小，则会返回 1x1 的大小和剩余的元数据。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -38,7 +35,7 @@ Microsoft 365 支持以下高清照片尺寸：48x48、64x64、96x96、120x120�
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | 对于 **user** 资源：<br/>User.Read、User.ReadBasic.All、User.Read.All、User.ReadWrite、User.ReadWrite.All<br /><br />对于 **group** 资源：<br />Group.Read.All、Group.ReadWrite.All<br /><br />对于 **contact** 资源：<br />Contacts.Read、Contacts.ReadWrite |
 |委派（个人 Microsoft 帐户）  <br /> **注意**：不支持元数据操作。 | 对于 **user** 资源：<br/>User.Read、User.ReadWrite<br /><br />对于 **contact** 资源：<br />Contacts.Read、Contacts.ReadWrite |
-|Application                        | 对于 **user** 资源：<br/>User.Read.All、User.ReadWrite.All<br /><br />对于 **group** 资源：<br />Group.Read.All、Group.ReadWrite.All<br /><br />对于 **contact** 资源：<br />Contacts.Read、Contacts.ReadWrite |
+|应用程序                        | 对于 **user** 资源：<br/>User.Read.All、User.ReadWrite.All<br /><br />对于 **group** 资源：<br />Group.Read.All、Group.ReadWrite.All<br /><br />对于 **contact** 资源：<br />Contacts.Read、Contacts.ReadWrite |
 
 > **注意：** 当前有一个 [已知问题](/graph/known-issues#groups)，即使用应用程序权限访问组照片。
 
@@ -88,7 +85,7 @@ GET /groups/{id}/photos/{size}
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
@@ -118,7 +115,7 @@ Content-Type: image/jpg
 ```
 
 ##### <a name="response"></a>响应
-包含所请求照片的二进制数据。 HTTP 响应代码为 200。
+包含所请求照片的二进制数据。HTTP 响应代码为 200。
 
 ### <a name="example-2-get-the-48x48-photo-for-the-signed-in-user"></a>示例 2：获取已登录用户的 48x48 照片
 
@@ -133,7 +130,7 @@ Content-Type: image/jpg
 ```
 
 ##### <a name="response"></a>响应
-包含所请求的 48x48 照片的二进制数据。 HTTP 响应代码为 200。
+包含所请求的 48x48 照片的二进制数据。HTTP 响应代码为 200。
 
 ### <a name="example-3-get-the-metadata-of-the-user-photo-of-the-signed-in-user"></a>示例 3：获取已登录用户的用户照片的元数据
 
@@ -208,7 +205,7 @@ const attachments = [{
 
 有关此示例的实现，请参阅[用于 Node.js 的 Microsoft Graph Connect 示例](https://github.com/microsoftgraph/nodejs-connect-rest-sample)。
 
-如果想要在网页上显示图像，可以通过图像创建内存中对象，然后使该对象成为图像元素源。 以下示例演示了如何在 JavaScript 中执行此操作。
+如果想要在网页上显示图像，可以通过图像创建内存中对象，然后使该对象成为图像元素源。下面是此操作的 JavaScript 示例。
 
 ```javascript
 const url = window.URL || window.webkitURL;

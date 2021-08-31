@@ -2,15 +2,15 @@
 title: itemInsights 资源类型
 description: 用户与项目之间的关系，例如使用高级分析和机器学习技术计算得出的OneDrive for Business文档。 例如，你可以标识与用户有关的 OneDrive for Business 文档趋势。
 author: simonhult
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 36b0d8957beae9f8748c0e388a0aca2134731f73
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 602cb58130f801e129bc334163cd7dabcc0d0b1b
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48089341"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696979"
 ---
 # <a name="iteminsights-resource-type"></a>itemInsights 资源类型
 
@@ -36,7 +36,7 @@ Insights 由以下 API 返回：
 | ------------- |---------------| -------------|
 | 趋势      | [trending](insights-trending.md) 集合       | 用于标识与用户趋势文档的计算关系。 趋势文档是根据用户最近的人际网络活动来计算的，包括存储在 OneDrive for Business 和 SharePoint 的文件。 趋势见解帮助用户发现可能有用的内容，这些内容用户有权访问，但之前从未看过。|
 | 使用的内容      | [usedInsight](insights-used.md) 集合        | 用于标识用户查看和修改的最新文档的计算关系，包括按使用时间排序的 OneDrive for Business 和 SharePoint 文档。|
-| shared        | [sharedInsight](insights-shared.md) 集合        | 用于识别与或用户共享的文档的计算关系，包括电子邮件和会议中的文件附件，以及在电子邮件、会议和团队对话中找到的 OneDrive for business 和 SharePoint 文件的 URL 和参考附件。 按共享时间排序。|
+| shared        | [sharedInsight](insights-shared.md) 集合        | 用于识别与或用户共享的文档的计算关系，包括电子邮件和会议中的文件附件，以及在电子邮件、会议和 Teams 对话中找到的 OneDrive for business 和 SharePoint 文件的 URL 和参考附件。按共享时间排序。|
 
 
 ## <a name="json-representation"></a>JSON 表示形式

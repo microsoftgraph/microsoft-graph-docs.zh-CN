@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c3841d57ace3b7ad57b4c2085fb3dcf803232003dc4eee95cae23f262d3b31d4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9ae6b61de1d0f4dd3913d1cdb64a217fe081f038
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54217587"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58792321"
 ---
 # <a name="create-appleenrollmentprofileassignment"></a>创建 appleEnrollmentProfileAssignment
 
@@ -43,7 +43,7 @@ POST /deviceManagement/appleUserInitiatedEnrollmentProfiles/{appleUserInitiatedE
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -99,7 +99,6 @@ Content-Length: 440
   }
 }
 ```
-
 
 
 
