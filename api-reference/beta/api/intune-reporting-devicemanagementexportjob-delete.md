@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 64ee1bae0f234cfe97e5a90a33fadc9621a087fdbc1504ede3d003b31470d49c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bbaacfbc8d239a99022374c13d3e81d393b0ea5e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54139941"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783300"
 ---
 # <a name="delete-devicemanagementexportjob"></a>删除 deviceManagementExportJob
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/reports/exportJobs/{deviceManagementExportJobId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/reports/exportJobs/{dev
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

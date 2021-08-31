@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 03d270408e383d21cb63cb512dcccb58a155cb08
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 6636c98bbc7e0056071e3f89ed12b9f129d1f5f6
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256085"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787312"
 ---
 # <a name="windowsminimumoperatingsystem-resource-type"></a>windowsMinimumOperatingSystem 资源类型
 
@@ -28,16 +28,16 @@ Windows 移动应用需要的最低操作系统。
 |v8_0|布尔值|Windows 版本 8.0 或更高版本。|
 |v8_1|布尔值|Windows 版本 8.1 或更高版本。|
 |v10_0|布尔值|Windows 版本 10.0 或更高版本。|
-|v10_1607|布尔值|Windows 10 1607 或更高版本。|
-|v10_1703|布尔值|Windows 10 1703 或更高版本。|
-|v10_1709|布尔值|Windows 10 1709 或更高版本。|
-|v10_1803|布尔值|Windows 10 1803 或更高版本。|
-|v10_1809|布尔值|Windows 10 1809 或更高版本。|
-|v10_1903|布尔值|Windows 10 1903 或更高版本。|
-|v10_1909|布尔值|Windows 10 1909 或更高版本。|
-|v10_2004|布尔值|Windows 10 2004 或更高版本。|
-|v10_2H20|布尔值|Windows 10 2H20 或更高版本。|
-|v10_21H1|布尔值|Windows 10 21H1 或更高版本。|
+|v10_1607|Boolean|Windows 10 1607 或更高版本。|
+|v10_1703|Boolean|Windows 10 1703 或更高版本。|
+|v10_1709|Boolean|Windows 10 1709 或更高版本。|
+|v10_1803|Boolean|Windows 10 1803 或更高版本。|
+|v10_1809|Boolean|Windows 10 1809 或更高版本。|
+|v10_1903|Boolean|Windows 10 1903 或更高版本。|
+|v10_1909|Boolean|Windows 10 1909 或更高版本。|
+|v10_2004|Boolean|Windows 10 2004 或更高版本。|
+|v10_2H20|Boolean|Windows 10 2H20 或更高版本。|
+|v10_21H1|Boolean|Windows 10 21H1 或更高版本。|
 
 ## <a name="relationships"></a>关系
 无
@@ -67,7 +67,6 @@ Windows 移动应用需要的最低操作系统。
   "v10_21H1": true
 }
 ```
-
 
 
 

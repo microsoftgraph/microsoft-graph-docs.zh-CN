@@ -1,18 +1,18 @@
 ---
-title: 获取 advancedThreatProtectionOnboardingStateSummary
-description: 读取 advancedThreatProtectionOnboardingStateSummary 对象的属性和关系。
+title: 获取 userExperienceAnalyticsModelScores
+description: 读取 userExperienceAnalyticsModelScores 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cc22401b972ea1db946ceaf9ba81bfbbc86f03bc
+ms.openlocfilehash: b6357270d048040fdbc1668b7cf4c8faaec52abc
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58782852"
+ms.locfileid: "58796517"
 ---
-# <a name="get-advancedthreatprotectiononboardingstatesummary"></a>获取 advancedThreatProtectionOnboardingStateSummary
+# <a name="get-userexperienceanalyticsmodelscores"></a>获取 userExperienceAnalyticsModelScores
 
 命名空间：microsoft.graph
 
@@ -20,16 +20,16 @@ ms.locfileid: "58782852"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-读取 [advancedThreatProtectionOnboardingStateSummary 对象的属性和](../resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md) 关系。
+读取 [userExperienceAnalyticsModelScores 对象的属性和](../resources/intune-devices-userexperienceanalyticsmodelscores.md) 关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -37,7 +37,7 @@ ms.locfileid: "58782852"
 }
 -->
 ``` http
-GET /deviceManagement/advancedThreatProtectionOnboardingStateSummary
+GET /deviceManagement/userExperienceAnalyticsModelScores/{userExperienceAnalyticsModelScoresId}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -53,14 +53,14 @@ GET /deviceManagement/advancedThreatProtectionOnboardingStateSummary
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [advancedThreatProtectionOnboardingStateSummary](../resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [userExperienceAnalyticsModelScores](../resources/intune-devices-userexperienceanalyticsmodelscores.md) 对象。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/advancedThreatProtectionOnboardingStateSummary
+GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsModelScores/{userExperienceAnalyticsModelScoresId}
 ```
 
 ### <a name="response"></a>响应
@@ -68,20 +68,19 @@ GET https://graph.microsoft.com/beta/deviceManagement/advancedThreatProtectionOn
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 419
+Content-Length: 437
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.advancedThreatProtectionOnboardingStateSummary",
-    "id": "74089602-9602-7408-0296-087402960874",
-    "unknownDeviceCount": 2,
-    "notApplicableDeviceCount": 8,
-    "compliantDeviceCount": 4,
-    "remediatedDeviceCount": 5,
-    "nonCompliantDeviceCount": 7,
-    "errorDeviceCount": 0,
-    "conflictDeviceCount": 3,
-    "notAssignedDeviceCount": 6
+    "@odata.type": "#microsoft.graph.userExperienceAnalyticsModelScores",
+    "id": "f2c0f69c-f69c-f2c0-9cf6-c0f29cf6c0f2",
+    "model": "Model value",
+    "manufacturer": "Manufacturer value",
+    "modelDeviceCount": 0,
+    "endpointAnalyticsScore": 7.333333333333333,
+    "startupPerformanceScore": 7.666666666666667,
+    "appReliabilityScore": 6.333333333333333,
+    "healthStatus": "insufficientData"
   }
 }
 ```

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fdbde9cf1d77a75c1217410e2cb2aa33e36f0ec8996dd26acfc6837fb55e2911
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fe4015956606d528638ccee8c85dbb3236f12096
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54228574"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58799913"
 ---
 # <a name="create-ndesconnector"></a>创建 ndesConnector
 
@@ -43,7 +43,7 @@ POST /deviceManagement/ndesConnectors
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,10 +53,10 @@ POST /deviceManagement/ndesConnectors
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|NDES 连接器的键。|
+|id|字符串|NDES 连接器的键。|
 |lastConnectionDateTime|DateTimeOffset|Ndes 连接器的上次连接时间|
 |state|[ndesConnectorState](../resources/intune-deviceconfig-ndesconnectorstate.md)|Ndes 连接器状态。 可取值为：`none`、`active`、`inactive`。|
-|displayName|字符串|Ndes 连接器的友好名称。|
+|displayName|String|Ndes 连接器的友好名称。|
 
 
 
@@ -95,7 +95,6 @@ Content-Length: 232
   "displayName": "Display Name value"
 }
 ```
-
 
 
 

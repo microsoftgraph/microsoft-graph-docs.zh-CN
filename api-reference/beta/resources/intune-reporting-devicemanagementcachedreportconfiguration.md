@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2a19a0fc2d8362f1bdc7d6b919f0e4770f5203c38ee91003ff8e72a440714bb0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ff8d125f6703b1984eb9369bcfa3cd9b75b12249
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249746"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58793787"
 ---
 # <a name="devicemanagementcachedreportconfiguration-resource-type"></a>deviceManagementCachedReportConfiguration 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54249746"
 
 表示缓存报表的配置的实体
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceManagementCachedReportConfigurations](../api/intune-reporting-devicemanagementcachedreportconfiguration-list.md)|[deviceManagementCachedReportConfiguration](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md) 集合|列出 [deviceManagementCachedReportConfiguration 对象的属性和](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md) 关系。|
@@ -35,12 +35,12 @@ ms.locfileid: "54249746"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|此实体的唯一标识符|
-|reportName|字符串|报告的名称|
+|reportName|String|报告的名称|
 |filter|String|创建报表时应用的筛选器。|
-|select|String collection|从报表选择的列|
-|orderBy|String collection|报告中列的排序|
+|select|字符串集合|从报表选择的列|
+|orderBy|字符串集合|报告中列的排序|
 |metadata|String|与报告关联的呼叫者管理的元数据|
-|status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|缓存报表的状态。 可取值为：`unknown`、`notStarted`、`inProgress`、`completed`、`failed`。|
+|状态|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|缓存报表的状态。 可取值为：`unknown`、`notStarted`、`inProgress`、`completed`、`failed`。|
 |lastRefreshDateTime|DateTimeOffset|上次刷新缓存报告的时间|
 |expirationDateTime|DateTimeOffset|缓存报告的过期时间|
 
@@ -73,7 +73,6 @@ ms.locfileid: "54249746"
   "expirationDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

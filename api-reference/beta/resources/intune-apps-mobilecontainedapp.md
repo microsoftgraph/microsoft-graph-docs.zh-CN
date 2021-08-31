@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 47dc0c867487c4043f148d8f3469288b7c0dc5d4d119a1eda412f99ad983c1c6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c5eb1f5e94ec45d6da289529f2982cd3cbab23c7
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54156462"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787636"
 ---
 # <a name="mobilecontainedapp-resource-type"></a>mobileContainedApp 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54156462"
 
 一个抽象类，表示作为包的 mobileApp 中的已包含应用。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 mobileContainedApps](../api/intune-apps-mobilecontainedapp-list.md)|[mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md) 集合|列出 [mobileContainedApp 对象的属性和](../resources/intune-apps-mobilecontainedapp.md) 关系。|
@@ -50,7 +50,6 @@ ms.locfileid: "54156462"
   "id": "String (identifier)"
 }
 ```
-
 
 
 

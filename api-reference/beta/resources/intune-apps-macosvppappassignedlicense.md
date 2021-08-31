@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cc32cd6b661b7f89453da1c6ddf3b3320686907fd14c3777d9ab663160b7eae6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 036f3ed99dd9af00c5e663f5236817d041785f30
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54173313"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789704"
 ---
 # <a name="macosvppappassignedlicense-resource-type"></a>macOsVppAppAssignedLicense 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54173313"
 
 MacOS 批量购买计划许可证分配。 此类不支持创建、删除或更新。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 macOsVppAppAssignedLicenses](../api/intune-apps-macosvppappassignedlicense-list.md)|[macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md) 集合|列出 [macOsVppAppAssignedLicense 对象的属性和](../resources/intune-apps-macosvppappassignedlicense.md) 关系。|
@@ -36,7 +36,7 @@ MacOS 批量购买计划许可证分配。 此类不支持创建、删除或更�
 |:---|:---|:---|
 |id|String|实体的键。|
 |userEmailAddress|String|用户电子邮件地址。|
-|userId|字符串|用户 ID。|
+|userId|String|用户 ID。|
 |userName|String|用户名。|
 |userPrincipalName|String|用户主体名称。|
 
@@ -61,7 +61,6 @@ MacOS 批量购买计划许可证分配。 此类不支持创建、删除或更�
   "userPrincipalName": "String"
 }
 ```
-
 
 
 

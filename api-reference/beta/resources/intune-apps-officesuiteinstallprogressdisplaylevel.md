@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 76f6106dc98ff1dc04cdb752a04aa1f60881bc36f881e5f97412a95002c3f431
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d325f60ba375db82f62b84c286b8814b965efad1
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54250068"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58796647"
 ---
 # <a name="officesuiteinstallprogressdisplaylevel-enum-type"></a>officeSuiteInstallProgressDisplayLevel 枚举类型
 
@@ -26,8 +26,7 @@ ms.locfileid: "54250068"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|尚未记录|
-|full|1 |尚未记录|
-
+|full|1|尚未记录|
 
 
 

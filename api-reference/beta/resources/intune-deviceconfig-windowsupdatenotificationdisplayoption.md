@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 47d663a030ee10ad888599d8ee75b9f045719718f48a87e0088ece838ef9d385
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f5adc450506d5faa352b47aa7996c82821822ab3
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54183020"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58800037"
 ---
 # <a name="windowsupdatenotificationdisplayoption-enum-type"></a>windowsUpdateNotificationDisplayOption 枚举类型
 
@@ -26,10 +26,9 @@ Windows更新通知显示选项
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置|
-|defaultNotifications|1 |使用默认更新Windows更新通知。|
-|restartWarningsOnly|2 |关闭所有通知，不包括重启警告。|
-|disableAllNotifications|3 |关闭所有通知，包括重启警告。|
-
+|defaultNotifications|1|使用默认更新Windows更新通知。|
+|restartWarningsOnly|2|关闭所有通知，不包括重启警告。|
+|disableAllNotifications|3|关闭所有通知，包括重启警告。|
 
 
 

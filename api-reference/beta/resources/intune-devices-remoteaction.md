@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0ee9bba07e0f3607f95129ad82e2a9c7378ebcfb7b44c7f9fcc403ac727b876f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 435cc6f118c8e9126d4feb60a8d74fed1898db9b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54251279"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58790876"
 ---
 # <a name="remoteaction-enum-type"></a>remoteAction 枚举类型
 
@@ -26,9 +26,9 @@ Intune 支持的远程操作。
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|用户启动未知操作。|
-|factoryReset|1 |用户启动操作以恢复设备出厂设置。 |
-|removeCompanyData|2 |用户启动操作以从设备中删除公司数据。 |
-|resetPasscode|3 |用户启动删除 iOS 设备密码的操作，或重置 Android/Windows密码。 |
+|factoryReset|1|用户启动操作以恢复设备出厂设置。 |
+|removeCompanyData|2|用户启动操作以从设备中删除公司数据。 |
+|resetPasscode|3|用户启动删除 iOS 设备密码的操作，或重置 Android/Windows密码。 |
 |remoteLock|4 |用户启动远程锁定设备的操作。|
 |enableLostMode|5 |用户启动操作以在受监督的 iOS 设备上启用丢失模式。|
 |disableLostMode|6 |用户启动操作以在受监督的 iOS 设备上禁用丢失模式。|
@@ -38,7 +38,7 @@ Intune 支持的远程操作。
 |cleanWindowsDevice|10 |用户启动清理 Windows 设备的操作。|
 |logoutSharedAppleDeviceActiveUser|11 |用户启动操作以注销共享 Apple 设备上当前用户。|
 |quickScan|12 |用户启动操作以在设备上运行快速扫描。|
-|fullScan|13 |用户启动操作以在设备上运行完全扫描。|
+|fullScan|13|用户启动操作以在设备上运行完全扫描。|
 |windowsDefenderUpdateSignatures|14 |用户启动操作以更新设备上恶意软件签名。|
 |factoryResetKeepEnrollmentData|15 |用户通过保留注册数据启动远程擦除设备操作。|
 |updateDeviceAccount|16 |用户启动操作以更新设备上的帐户。|
@@ -49,7 +49,6 @@ Intune 支持的远程操作。
 |getFileVaultKey| 21|用户启动在 mac 上获取 FileVaultKey 的操作。|
 |setDeviceName|22|用户启动在设备上设置设备名称的操作。|
 |activateDeviceEsim|23|用户启动在设备上激活 eSIM 的操作。|
-
 
 
 

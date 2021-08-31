@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 68c8ed0f9c4b214d95d286db00a4732587ce188fa548219181048b4ea13705c3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9cb3be503f401675ba286961e89f027b36219b8a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54248271"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58796844"
 ---
 # <a name="windowsinformationprotectiondeviceregistration-resource-type"></a>windowsInformationProtectionDeviceRegistration 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54248271"
 
 代表 Bring-Your-Own-Device (BYOD) Windows记录。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 windowsInformationProtectionDeviceRegistrations](../api/intune-mam-windowsinformationprotectiondeviceregistration-list.md)|[windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) 集合|列出 [windowsInformationProtectionDeviceRegistration 对象的属性和](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) 关系。|
@@ -40,7 +40,7 @@ ms.locfileid: "54248271"
 |deviceRegistrationId|字符串|此设备注册记录的设备标识符。|
 |deviceName|String|设备名称。|
 |deviceType|String|设备类型，例如，Windows笔记本电脑 VS Windows电话。|
-|deviceMacAddress|String|设备 Mac 地址。|
+|deviceMacAddress|字符串|设备 Mac 地址。|
 |lastCheckInDateTime|DateTimeOffset|设备的上次签入时间。|
 
 ## <a name="relationships"></a>关系
@@ -66,7 +66,6 @@ ms.locfileid: "54248271"
   "lastCheckInDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

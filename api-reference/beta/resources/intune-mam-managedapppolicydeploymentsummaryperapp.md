@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f7b54c7529acfa58d4fb36ffeeea560f63ce1a56f1cc21810dd4c6219899de9c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d36b1ded98ae5a2ca37cf865a53fd4a6c125c401
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54244594"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58790862"
 ---
 # <a name="managedapppolicydeploymentsummaryperapp-resource-type"></a>managedAppPolicyDeploymentSummaryPerApp 资源类型
 
@@ -48,7 +48,6 @@ ms.locfileid: "54244594"
   "configurationAppliedUserCount": 1024
 }
 ```
-
 
 
 

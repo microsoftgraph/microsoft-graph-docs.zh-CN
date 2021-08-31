@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e276223beb26c0fac00c69fe62e5b1810b2c9b9f0c2e9388b6099ff3e1e9f4a8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 133a6b5605f7a8efe880eb71d3354ba59623152b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54253542"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785701"
 ---
 # <a name="unsupportedgrouppolicyextension-resource-type"></a>unsupportedGroupPolicyExtension 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54253542"
 
 不支持的组策略扩展。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 unsupportedGroupPolicyExtensions](../api/intune-gpanalyticsservice-unsupportedgrouppolicyextension-list.md)|[unsupportedGroupPolicyExtension](../resources/intune-gpanalyticsservice-unsupportedgrouppolicyextension.md) 集合|列出 [unsupportedGroupPolicyExtension 对象的属性和](../resources/intune-gpanalyticsservice-unsupportedgrouppolicyextension.md) 关系。|
@@ -36,8 +36,8 @@ ms.locfileid: "54253542"
 |:---|:---|:---|
 |id|String|尚未记录|
 |settingScope|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|设置不受支持扩展的作用域。 可取值为：`unknown`、`device`、`user`。|
-|namespaceUrl|字符串|不支持的扩展的命名空间 URL。|
-|extensionType|字符串|不支持的扩展的 ExtensionType。|
+|namespaceUrl|String|不支持的扩展的命名空间 URL。|
+|extensionType|String|不支持的扩展的 ExtensionType。|
 |nodeName|String|不受支持扩展的节点名称。|
 
 ## <a name="relationships"></a>关系
@@ -61,7 +61,6 @@ ms.locfileid: "54253542"
   "nodeName": "String"
 }
 ```
-
 
 
 

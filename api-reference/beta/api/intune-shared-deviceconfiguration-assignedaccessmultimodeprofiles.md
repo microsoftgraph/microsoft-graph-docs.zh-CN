@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 148ac416cbd79786f9d8c9ec4235595fcfb29c88b38448fed1f6d389f0eabfa6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4ccacd982c05ed1ed61043adbdb17f24ea06495a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54198582"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816772"
 ---
 # <a name="assignedaccessmultimodeprofiles-action"></a>assignedAccessMultiModeProfiles 操作
 
@@ -47,7 +47,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -55,7 +55,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |assignedAccessMultiModeProfiles|windowsAssignedAccessProfile 集合|尚未记录|
 
@@ -101,7 +101,6 @@ Content-length: 528
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

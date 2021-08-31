@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d671239505b431123da2b67f01b06f244f81866d4594a0bbaedde34391554109
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6334c94a89b22a0cd2a02d2e8abfd92e97f21313
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54139395"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58788428"
 ---
 # <a name="windowsautopilotprofileassignmentdetailedstatus-enum-type"></a>windowsAutopilotProfileAssignmentDetailedStatus 枚举类型
 
@@ -26,11 +26,10 @@ ms.locfileid: "54139395"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|无工作分配详细状态|
-|hardwareRequirementsNotMet|1 |不满足硬件要求。 如果将自部署 AutoPilot 配置文件分配给没有 TPM 2.0 的设备，则可能会发生这种情况。|
-|surfaceHubProfileNotSupported|2 |如果将 SurfaceHub AutoPilot 配置文件分配给非 SurfaceHub 的设备，可能会发生这种情况。|
-|holoLensProfileNotSupported|3 |如果将 AutoPilot 配置文件HoloLens分配给未分配该配置文件的设备，则可能会HoloLens。|
+|hardwareRequirementsNotMet|1|不满足硬件要求。 如果将自部署 AutoPilot 配置文件分配给没有 TPM 2.0 的设备，则可能会发生这种情况。|
+|surfaceHubProfileNotSupported|2|如果将 SurfaceHub AutoPilot 配置文件分配给非 SurfaceHub 的设备，可能会发生这种情况。|
+|holoLensProfileNotSupported|3|如果将 AutoPilot 配置文件HoloLens分配给未分配该配置文件的设备，则可能会HoloLens。|
 |windowsPcProfileNotSupported|4 |如果将 WindowsPc AutoPilot 配置文件分配给非 WindowsPc 的设备，则可能会发生这种情况。|
-
 
 
 

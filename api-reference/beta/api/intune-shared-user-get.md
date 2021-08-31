@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1f5ea51b43f0862e6bfbe8082b2d27a394a4a7283048b2023fe639e4da4ba620
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8f50f147d6912d66fef9db74df3c98cb25cae0ab
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54150911"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789352"
 ---
 # <a name="get-user"></a>获取用户
 
@@ -58,7 +58,7 @@ GET /users/{usersId}
 
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -95,7 +95,6 @@ Content-Length: 118
   }
 }
 ```
-
 
 
 

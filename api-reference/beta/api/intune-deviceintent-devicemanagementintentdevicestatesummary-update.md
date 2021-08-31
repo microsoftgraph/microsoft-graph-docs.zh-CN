@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 131475a9732dfece37b1dfa7152f9862d7cea94b14b8908b54234bf09610e097
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a5cf6c13b3e1fc2a886109dfe0a8a111942ca817
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54201368"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795989"
 ---
 # <a name="update-devicemanagementintentdevicestatesummary"></a>更新 deviceManagementIntentDeviceStateSummary
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}/deviceStateSummary
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -104,7 +104,6 @@ Content-Length: 286
   "successCount": 12
 }
 ```
-
 
 
 

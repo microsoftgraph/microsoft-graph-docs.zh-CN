@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7e5803a3600bc4ce0f8366cfceba1813e23dbab3f2e950bd8cd39cc15cb9df61
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cf01f35746ef954568cd48b93fc4811c27b88269
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54226362"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791170"
 ---
 # <a name="sharedpcaccountmanagerpolicy-resource-type"></a>sharedPCAccountManagerPolicy 资源类型
 
@@ -49,7 +49,6 @@ ms.locfileid: "54226362"
   "removeAccountsBelowDiskFreePercentage": 1024
 }
 ```
-
 
 
 

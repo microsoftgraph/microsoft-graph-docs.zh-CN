@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a48cb823c75e1d47709900d17ea050c0d2d9cdea766f75ce790025ac028d702c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 12d9c307da7c438f20319db9b26e87c80001eebe
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54210874"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797990"
 ---
 # <a name="triggerconfigurationmanageraction-action"></a>triggerConfigurationManagerAction 操作
 
@@ -49,7 +49,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -89,7 +89,6 @@ Content-length: 145
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

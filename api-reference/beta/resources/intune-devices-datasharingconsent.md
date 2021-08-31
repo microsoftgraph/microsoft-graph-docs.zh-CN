@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 455a062e028059747e833e2deac3cd99b791f6be9ba95f6359b24de35205a826
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 06d712ffa94b4308c7234b45ffba5d0ab6c05423
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54215067"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791128"
 ---
 # <a name="datasharingconsent-resource-type"></a>dataSharingConsent 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54215067"
 
 数据共享同意信息。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 dataSharingConsents](../api/intune-devices-datasharingconsent-list.md)|[dataSharingConsent](../resources/intune-devices-datasharingconsent.md) 集合|列出 [dataSharingConsent 对象的属性和](../resources/intune-devices-datasharingconsent.md) 关系。|
@@ -37,11 +37,11 @@ ms.locfileid: "54215067"
 |:---|:---|:---|
 |id|String|数据共享许可 ID|
 |serviceDisplayName|字符串|服务显示名称流|
-|termsUrl|字符串|数据共享同意的 TermsUrl|
+|termsUrl|String|数据共享同意的 TermsUrl|
 |granted|布尔值|数据共享同意的授予状态|
 |grantDateTime|DateTimeOffset|为此帐户授予许可的时间|
 |grantedByUpn|字符串|授予此帐户同意的用户的 Upn|
-|grantedByUserId|String|授予此帐户同意的用户的 UserId|
+|grantedByUserId|字符串|授予此帐户同意的用户的 UserId|
 
 ## <a name="relationships"></a>关系
 无
@@ -66,7 +66,6 @@ ms.locfileid: "54215067"
   "grantedByUserId": "String"
 }
 ```
-
 
 
 

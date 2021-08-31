@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ea07700841794e9e6fef5c5182363b74138c854c45fdb8a7ef168daf906cec71
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 562c63e93e0003bff08351878ca07c64b3eefd49
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54164319"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58796234"
 ---
 # <a name="settingstatedevicesummary-resource-type"></a>settingStateDeviceSummary 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54164319"
 
 设置状态的设备合规性策略和配置摘要
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 settingStateDeviceSummaries](../api/intune-deviceconfig-settingstatedevicesummary-list.md)|[settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md) 集合|列出 [settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md) 对象的属性和关系。|
@@ -71,7 +71,6 @@ ms.locfileid: "54164319"
   "conflictDeviceCount": 1024
 }
 ```
-
 
 
 

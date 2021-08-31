@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4fe6ddd5dfa8c1083b9c617bc9e4d664b2c6f816572a3f01881142d92516aa4f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3dc0cc616307c3a2d703179c71837a7eac781f17
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54232739"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791513"
 ---
 # <a name="poweractiontype-enum-type"></a>powerActionType 枚举类型
 
@@ -26,11 +26,10 @@ Power 操作类型
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置|
-|noAction|1 |无操作|
-|sleep|2 |将设备置于睡眠状态|
-|休眠|3 |将设备置于休眠状态|
+|noAction|1|无操作|
+|sleep|2|将设备置于睡眠状态|
+|休眠|3|将设备置于休眠状态|
 |shutdown|4 |关机设备|
-
 
 
 

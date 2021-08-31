@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 06c6b9d9ee62fcfe63f609086cdd05a70819d60f49f9b26f6dc7af90651d46c9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 45107731d63cbd86691d15043cce8d296820b4e3
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54162093"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783083"
 ---
 # <a name="create-devicemanagementsettingdefinition"></a>创建 deviceManagementSettingDefinition
 
@@ -46,7 +46,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/categories/{device
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -57,15 +57,15 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/categories/{device
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|设置定义的 ID|
-|valueType|[deviceManangementIntentValueType](../resources/intune-deviceintent-devicemanangementintentvaluetype.md)|值的 数据类型。 可取值为：`integer`、`boolean`、`string`、`complex`、`collection`、`abstractComplex`。|
+|valueType|[deviceManangementIntentValueType](../resources/intune-deviceintent-devicemanangementintentvaluetype.md)|值的数据类型。 可取值为：`integer`、`boolean`、`string`、`complex`、`collection`、`abstractComplex`。|
 |displayName|字符串|设置显示名称|
-|isTopLevel|布尔值|如果设置是顶级设置，则无需封装在集合或复杂设置中即可进行配置|
+|isTopLevel|Boolean|如果设置是顶级设置，则无需封装在集合或复杂设置中即可进行配置|
 |description|String|设置的说明|
-|placeholderText|String|占位符文本作为有效输入的示例|
+|placeholderText|字符串|占位符文本作为有效输入的示例|
 |documentationUrl|String|设置文档的 URL|
-|headerTitle|String|设置标头的标题表示设置/设置的类别/部分|
+|headerTitle|字符串|设置标头的标题表示设置/设置的类别/部分|
 |headerSubtitle|String|有关类别/节的更多详细信息，请参阅设置标头的副标题|
-|keywords|String collection|与设置关联的关键字|
+|keywords|字符串集合|与设置关联的关键字|
 |约束|[deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md) 集合|设置值的约束集合|
 |依赖项|[deviceManagementSettingDependency](../resources/intune-deviceintent-devicemanagementsettingdependency.md) 集合|其他设置上依赖项的集合|
 
@@ -166,7 +166,6 @@ Content-Length: 1063
   ]
 }
 ```
-
 
 
 
