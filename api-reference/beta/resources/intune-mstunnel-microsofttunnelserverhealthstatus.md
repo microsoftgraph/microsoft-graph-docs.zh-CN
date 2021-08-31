@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8d008a9a31475f4cc372788a992859fbd76b4c39b8279759cdafa1e4f3853a1b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f9da9568c42ce6eb83378a8f5775e8fab814f009
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54227251"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818735"
 ---
 # <a name="microsofttunnelserverhealthstatus-enum-type"></a>microsoftTunnelServerHealthStatus 枚举类型
 
@@ -23,16 +23,15 @@ ms.locfileid: "54227251"
 可能的 MicrosoftTunnelServer 运行状况状态类型的枚举
 
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|状态未知|
-|healthy|1 |状态正常|
-|不正常|2 |状态不正常|
-|警告|3 |状态为警告|
+|healthy|1|状态正常|
+|不正常|2|状态不正常|
+|警告|3|状态为警告|
 |offline|4 |状态为脱机|
 |upgradeInProgress|5 |状态为 upgradeInProgress|
 |upgradeFailed|6 |状态为 upgradeFailed|
-
 
 
 

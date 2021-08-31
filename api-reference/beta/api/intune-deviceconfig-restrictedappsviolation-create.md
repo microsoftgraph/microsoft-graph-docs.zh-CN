@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 98796103ae77fc587db0fc177b072b6f6f1426ae
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 2272eb511aabc7cb8274da1eb13ee7e166232e7c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58264372"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820630"
 ---
 # <a name="create-restrictedappsviolation"></a>创建 restrictedAppsViolation
 
@@ -43,7 +43,7 @@ POST /deviceManagement/deviceConfigurationRestrictedAppsViolations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,12 +54,12 @@ POST /deviceManagement/deviceConfigurationRestrictedAppsViolations
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|对象的唯一标识符。 由 accountId、deviceId、policyId 和 userId 组成|
-|userId|字符串|用户唯一标识符，必须为 Guid|
+|userId|String|用户唯一标识符，必须为 Guid|
 |userName|String|用户名|
-|managedDeviceId|String|托管设备唯一标识符，必须为 Guid|
+|managedDeviceId|字符串|托管设备唯一标识符，必须为 Guid|
 |deviceName|String|设备名称|
-|deviceConfigurationId|字符串|设备配置文件的唯一标识符，必须为 Guid|
-|deviceConfigurationName|String|设备配置文件名称|
+|deviceConfigurationId|String|设备配置文件的唯一标识符，必须为 Guid|
+|deviceConfigurationName|字符串|设备配置文件名称|
 |platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|平台类型。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`windows10XProfile`、`androidAOSP`、`all`。|
 |restrictedAppsState|[restrictedAppsState](../resources/intune-deviceconfig-restrictedappsstate.md)|受限制的应用状态。 可取值为：`prohibitedApps`、`notApprovedApps`。|
 |restrictedApps|[managedDeviceReportedApp](../resources/intune-deviceconfig-manageddevicereportedapp.md) 集合|违反的受限应用列表|
@@ -123,7 +123,6 @@ Content-Length: 613
   ]
 }
 ```
-
 
 
 

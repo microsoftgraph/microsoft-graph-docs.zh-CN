@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 60870059ab657b9db7111f2ce339cd798baac29f2ccf46ff5b8bf624e68c5108
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 557ecdb9fd3bbd23ca074edaddd6a365fa3b6db0
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54176482"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58790883"
 ---
 # <a name="usernamesource-enum-type"></a>usernameSource 枚举类型
 
@@ -26,9 +26,8 @@ ms.locfileid: "54176482"
 |成员|值|说明|
 |:---|:---|:---|
 |userPrincipalName|0|用户主体名称。|
-|primarySmtpAddress|1 |主 SMTP 地址。|
-|samAccountName|2 |用户 sam 帐户名。|
-
+|primarySmtpAddress|1|主 SMTP 地址。|
+|samAccountName|2|用户 sam 帐户名。|
 
 
 

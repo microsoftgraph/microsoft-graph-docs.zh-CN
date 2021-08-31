@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 95d36f1630fe88332b88ef668bfdfce406ff9491927924e04cdb0870d9a9a6de
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 364e3212855e9192f1b386f13826043630fb1996
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54227482"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820917"
 ---
 # <a name="deliveryoptimizationrestrictpeerselectionbyoptions-enum-type"></a>deliveryOptimizationRestrictPeerSelectionByOptions 枚举类型
 
@@ -23,11 +23,10 @@ ms.locfileid: "54227482"
 限制对等选择者的值。
 
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |notConfigured|0|未配置。|
-|subnetMask|1 |子网掩码。|
-
+|subnetMask|1|子网掩码。|
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ddf34ecfdae50a9c5c9740ef130294af9ce224b9ad8a54a9af4a9b3a98762e9f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0a62e2dbcfe55154ee5d264498bceaf37ef48a9d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54206310"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58782943"
 ---
 # <a name="userexperienceanalyticsmetrichistory-resource-type"></a>userExperienceAnalyticsMetricHistory 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54206310"
 
 用户体验分析指标历史记录。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 userExperienceAnalyticsMetricHistories](../api/intune-devices-userexperienceanalyticsmetrichistory-list.md)|[userExperienceAnalyticsMetricHistory](../resources/intune-devices-userexperienceanalyticsmetrichistory.md) 集合|列出 [userExperienceAnalyticsMetricHistory](../resources/intune-devices-userexperienceanalyticsmetrichistory.md) 对象的属性和关系。|
@@ -37,7 +37,7 @@ ms.locfileid: "54206310"
 |id|String|用户体验分析指标历史记录的唯一标识符。|
 |deviceId|String|用户体验分析设备 ID。|
 |metricDateTime|DateTimeOffset|用户体验分析指标日期时间。|
-|metricType|字符串|用户体验分析指标类型。|
+|metricType|String|用户体验分析指标类型。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -61,7 +61,6 @@ ms.locfileid: "54206310"
   "metricType": "String"
 }
 ```
-
 
 
 

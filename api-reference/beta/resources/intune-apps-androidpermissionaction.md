@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a1d686d85cb4bbe7979a6e3bcdac453c0f9ebfedd017ed61829dbbf24d5e61f6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d99ec168ae3cdb46dbe7727e9b60fb63624202fe
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54242120"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58819729"
 ---
 # <a name="androidpermissionaction-resource-type"></a>androidPermissionAction 资源类型
 
@@ -23,9 +23,9 @@ ms.locfileid: "54242120"
 Android 应用权限与 Android 在请求该权限时应执行的操作之间的映射。
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
-|permission|字符串|Android 权限字符串，在官方 Android 文档中定义。  示例"android.permission.READ_CONTACTS"。|
+|permission|String|Android 权限字符串，在官方 Android 文档中定义。  示例"android.permission.READ_CONTACTS"。|
 |action|[androidPermissionActionType](../resources/intune-apps-androidpermissionactiontype.md)|Android 权限操作的类型。 可取值为：`prompt`、`autoGrant`、`autoDeny`。|
 
 ## <a name="relationships"></a>关系
@@ -45,7 +45,6 @@ Android 应用权限与 Android 在请求该权限时应执行的操作之间的
   "action": "String"
 }
 ```
-
 
 
 

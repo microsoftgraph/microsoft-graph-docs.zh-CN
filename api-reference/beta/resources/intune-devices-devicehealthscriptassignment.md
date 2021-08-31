@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 109d585d451bf1cda22530f4e91c2b75414b74f83e4eb3921735ad7ae2fe6e26
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d9c52e56badf0161a7a20b441c743f42e8b83c33
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54244748"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58784462"
 ---
 # <a name="devicehealthscriptassignment-resource-type"></a>deviceHealthScriptAssignment 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54244748"
 
 包含用于将设备管理脚本分配给组的属性。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceHealthScriptAssignments](../api/intune-devices-devicehealthscriptassignment-list.md)|[deviceHealthScriptAssignment](../resources/intune-devices-devicehealthscriptassignment.md) 集合|列出 [deviceHealthScriptAssignment](../resources/intune-devices-devicehealthscriptassignment.md) 对象的属性和关系。|
@@ -36,7 +36,7 @@ ms.locfileid: "54244748"
 |:---|:---|:---|
 |id|String|设备运行状况脚本分配实体的键。 此属性是只读的。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|我们将Azure Active Directory的目标组|
-|runRemediationScript|布尔值|确定是仅运行检测脚本还是同时运行检测脚本和修正脚本|
+|runRemediationScript|Boolean|确定是仅运行检测脚本还是同时运行检测脚本和修正脚本|
 |runSchedule|[deviceHealthScriptRunSchedule](../resources/intune-devices-devicehealthscriptrunschedule.md)|目标组的脚本运行计划|
 
 ## <a name="relationships"></a>关系
@@ -69,7 +69,6 @@ ms.locfileid: "54244748"
   }
 }
 ```
-
 
 
 

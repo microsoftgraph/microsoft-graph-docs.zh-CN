@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: aeb8bac3259f1db68025f81c6af300cfeacae569b65a56dc4fa49de06327973a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: dec891d78593fcbea6226666b4780704e83a2c7c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54173028"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58815937"
 ---
 # <a name="devicemanagementcomparisonresult-enum-type"></a>deviceManagementComparisonResult 枚举类型
 
@@ -26,11 +26,10 @@ ms.locfileid: "54173028"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|未知设置比较|
-|equal|1 |设置值相等|
-|notEqual|2 |设置值不相等|
-|添加内容|3 |添加设置|
+|equal|1|设置值相等|
+|notEqual|2|设置值不相等|
+|添加内容|3|添加设置|
 |removed|4 |删除设置|
-
 
 
 

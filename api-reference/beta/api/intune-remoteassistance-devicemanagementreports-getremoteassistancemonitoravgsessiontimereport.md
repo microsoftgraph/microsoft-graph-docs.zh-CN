@@ -1,18 +1,18 @@
 ---
-title: createMigrationReport 操作
+title: getRemoteAssistanceMonitorAvgSessionTimeReport 操作
 description: 尚未记录
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 86bb72aa4faac2941e36303c3b5337685e935f95
+ms.openlocfilehash: a2c697647b69cb285e8d76f54afc8be0ddd453cc
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783048"
+ms.locfileid: "58821961"
 ---
-# <a name="createmigrationreport-action"></a>createMigrationReport 操作
+# <a name="getremoteassistancemonitoravgsessiontimereport-action"></a>getRemoteAssistanceMonitorAvgSessionTimeReport 操作
 
 命名空间：microsoft.graph
 
@@ -27,9 +27,9 @@ ms.locfileid: "58783048"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -37,7 +37,7 @@ ms.locfileid: "58783048"
 }
 -->
 ``` http
-POST /deviceManagement/groupPolicyMigrationReports/createMigrationReport
+POST /deviceManagement/reports/getRemoteAssistanceMonitorAvgSessionTimeReport
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -53,33 +53,47 @@ POST /deviceManagement/groupPolicyMigrationReports/createMigrationReport
 
 |属性|类型|说明|
 |:---|:---|:---|
-|groupPolicyObjectFile|[groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md)|尚未记录|
+|name|String|尚未记录|
+|select|String collection|尚未记录|
+|search|String|尚未记录|
+|groupBy|String collection|尚未记录|
+|orderBy|String collection|尚未记录|
+|skip|Int32|尚未记录|
+|top|Int32|尚未记录|
+|sessionId|String|尚未记录|
+|filter|String|尚未记录|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此操作会在响应正文中返回 `200 OK` 响应代码和一个 String。
+如果成功，此操作在响应 `200 OK` 正文中返回 响应代码和 Stream。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/groupPolicyMigrationReports/createMigrationReport
+POST https://graph.microsoft.com/beta/deviceManagement/reports/getRemoteAssistanceMonitorAvgSessionTimeReport
 
 Content-type: application/json
-Content-length: 438
+Content-length: 278
 
 {
-  "groupPolicyObjectFile": {
-    "@odata.type": "#microsoft.graph.groupPolicyObjectFile",
-    "id": "65c0499d-499d-65c0-9d49-c0659d49c065",
-    "groupPolicyObjectId": "ca1c97af-97af-ca1c-af97-1ccaaf971cca",
-    "ouDistinguishedName": "Ou Distinguished Name value",
-    "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
-    "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-    "content": "Content value"
-  }
+  "name": "Name value",
+  "select": [
+    "Select value"
+  ],
+  "search": "Search value",
+  "groupBy": [
+    "Group By value"
+  ],
+  "orderBy": [
+    "Order By value"
+  ],
+  "skip": 4,
+  "top": 3,
+  "sessionId": "Session Id value",
+  "filter": "Filter value"
 }
 ```
 
@@ -88,10 +102,10 @@ Content-length: 438
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 48
+Content-Length: 123
 
 {
-  "value": "Create Migration Report value"
+  "value": "Z2V0UmVtb3RlQXNzaXN0YW5jZU1vbml0b3JBdmdTZXNzaW9uVGltZVJlcG9ydCBJbnR1bmUgRG9jIFNhbXBsZSAtMTUzNDAwMDU5OQ=="
 }
 ```
 

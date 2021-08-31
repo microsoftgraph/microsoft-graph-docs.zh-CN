@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e648d4bd5d5b255f05f57c284cff87d5dd7725120377fafd3c92d415193ecee2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ec2a86ae86f7c7dd4e8e8edef4b0715f52bb2744
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178960"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818039"
 ---
 # <a name="androidmobileappidentifier-resource-type"></a>androidMobileAppIdentifier 资源类型
 
@@ -26,7 +26,7 @@ Android 应用的标识符。
 继承自 [mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |packageId|String|应用的标识符，如 Play 商店中指定。|
 
@@ -46,7 +46,6 @@ Android 应用的标识符。
   "packageId": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4c40438142047cb97e32962029aef2f6ff0e346af760327d273d66ad5829729a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 545df9fde0df511845deba30fd9e83b1e3ee3efa
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54228686"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58784392"
 ---
 # <a name="get-androidworkprofilenineworkeasconfiguration"></a>获取 androidWorkProfileNineWorkEasConfiguration
 
@@ -48,7 +48,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -118,7 +118,6 @@ Content-Length: 1616
   }
 }
 ```
-
 
 
 

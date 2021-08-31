@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d89faf9de9e76aca12b1babe8259ef8b4320c1080f040b59a9a3b554a0c9bcd1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c99313f54efb66c34dc2b0e70bc13e719868cc93
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54171397"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58814474"
 ---
 # <a name="get-windowsphone81scepcertificateprofile"></a>获取 windowsPhone81SCEPCertificateProfile
 
@@ -48,7 +48,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -130,7 +130,6 @@ Content-Length: 2102
   }
 }
 ```
-
 
 
 

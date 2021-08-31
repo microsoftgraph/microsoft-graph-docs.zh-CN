@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 31c6fa22291a321604214725877fbd6d230a1af542c3638e264c107cb029fe0b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0abac62049c06f3a989149a85f17de0a47f8335b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54239488"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820896"
 ---
 # <a name="macossinglesignonextension-resource-type"></a>macOSSingleSignOnExtension 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "54239488"
 继承自 [singleSignOnExtension](../resources/intune-deviceconfig-singlesignonextension.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 
 ## <a name="relationships"></a>关系
@@ -44,7 +44,6 @@ ms.locfileid: "54239488"
   "@odata.type": "#microsoft.graph.macOSSingleSignOnExtension"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 92c9097d47501599935fdda46b93428d4bb59369
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 1cdbb9009ae55f003e727f949b1d5abe0aad1c6d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266448"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58821135"
 ---
 # <a name="retirescheduledmanageddevice-resource-type"></a>retireScheduledManagedDevice 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "58266448"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|managedDeviceId|字符串|托管 DeviceId|
+|managedDeviceId|String|托管 DeviceId|
 |managedDeviceName|String|托管设备名称|
 |deviceType|[deviceType](../resources/intune-deviceconfig-devicetype.md)|托管设备设备类型。 可能的值是 `desktop` `windowsRT` `winMO6` ：、、、、、、、、、、 `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `windows10x` `androidnGMS` `cloudPC` `blackberry` `palm` `unknown` 、|
 |complianceState|[complianceStatus](../resources/intune-shared-compliancestatus.md)|托管设备 ComplianceStatus。 可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。|
@@ -34,7 +34,7 @@ ms.locfileid: "58266448"
 |managementAgent|[managementAgentType](../resources/intune-deviceconfig-managementagenttype.md)|托管设备管理AgentType。 可能的值是：`eas`、`mdm`、`easMdm`、`intuneClient`、`easIntuneClient`、`configurationManagerClient`、`configurationManagerClientMdm`、`configurationManagerClientMdmEas`、`unknown`、`jamf`、`googleCloudDevicePolicyController`、`microsoft365ManagedMdm`、`windowsManagementCloudApi`。|
 |ownerType|[managedDeviceOwnerType](../resources/intune-shared-manageddeviceownertype.md)|托管设备 ManagedDeviceOwnerType。 可取值为：`unknown`、`company`、`personal`。|
 |deviceCompliancePolicyName|String|设备合规性策略名称|
-|deviceCompliancePolicyId|String|设备合规性策略Id|
+|deviceCompliancePolicyId|字符串|设备合规性策略Id|
 |roleScopeTagIds|String collection|此实体实例的范围标记列表。|
 
 ## <a name="relationships"></a>关系
@@ -65,7 +65,6 @@ ms.locfileid: "58266448"
   ]
 }
 ```
-
 
 
 

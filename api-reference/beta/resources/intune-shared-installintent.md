@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c141c3005dd71036926c37378fd9f993b5eba5cfeffce284ed9e2b1c0156649e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 170a784b7090e70110c015d914ef0e96a36fbb3a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54209796"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58784175"
 ---
 # <a name="installintent-enum-type"></a>installIntent 枚举类型
 
@@ -26,10 +26,9 @@ ms.locfileid: "54209796"
 |成员|值|说明|
 |:---|:---|:---|
 |可用|0|可用的安装意图。|
-|必需|1 |所需的安装意图。|
-|uninstall|2 |卸载安装意图。|
-|availableWithoutEnrollment|3 |无需注册安装意图即可使用。|
-
+|必需|1|所需的安装意图。|
+|uninstall|2|卸载安装意图。|
+|availableWithoutEnrollment|3|无需注册安装意图即可使用。|
 
 
 

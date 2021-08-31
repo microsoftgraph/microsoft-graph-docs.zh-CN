@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a83f1bb87a13c9dd49ff352f82bc87f5301967f987f5eeff2748d8e1b0a0d662
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d431d96d3747ce1d9ea764ca924c596391224fa3
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54214955"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58810265"
 ---
 # <a name="grouppolicypresentationcombobox-resource-type"></a>groupPolicyPresentationComboBox 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "54214955"
 
 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 groupPolicyPresentationComboBoxes](../api/intune-grouppolicy-grouppolicypresentationcombobox-list.md)|[groupPolicyPresentationComboBox](../resources/intune-grouppolicy-grouppolicypresentationcombobox.md) 集合|列出 [groupPolicyPresentationComboBox 对象的属性和](../resources/intune-grouppolicy-grouppolicypresentationcombobox.md) 关系。|
@@ -41,8 +41,8 @@ ms.locfileid: "54214955"
 |id|String|实体的键。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |defaultValue|字符串|显示在组合框中的本地化默认字符串。 默认值为空白。|
-|suggestions|String collection|组合框的下拉列表中列出的本地化字符串。 默认值为空白。|
-|必需|布尔值|指定是否必须为参数指定值。 默认值为 false。|
+|suggestions|字符串集合|组合框的下拉列表中列出的本地化字符串。 默认值为空白。|
+|必需|Boolean|指定是否必须为参数指定值。 默认值为 false。|
 |maxLength|Int64|一个无符号整数，指定参数的最大文本字符数。 默认值为 1023。|
 
 ## <a name="relationships"></a>关系
@@ -72,7 +72,6 @@ ms.locfileid: "54214955"
   "maxLength": 1024
 }
 ```
-
 
 
 

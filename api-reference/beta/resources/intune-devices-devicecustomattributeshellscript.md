@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 32d1e032e8bc781a9f7ab1d433e1c8b757097ca6494c68094addde0812898376
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 549a2a01384271e97ba22c301b1a4397752386d5
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54239404"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791492"
 ---
 # <a name="devicecustomattributeshellscript-resource-type"></a>deviceCustomAttributeShellScript 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54239404"
 
 表示 macOS 的自定义属性脚本。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceCustomAttributeShellScripts](../api/intune-devices-devicecustomattributeshellscript-list.md)|[deviceCustomAttributeShellScript](../resources/intune-devices-devicecustomattributeshellscript.md) 集合|列出 [deviceCustomAttributeShellScript](../resources/intune-devices-devicecustomattributeshellscript.md) 对象的属性和关系。|
@@ -35,8 +35,8 @@ ms.locfileid: "54239404"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|自定义属性实体的唯一标识符。|
-|customAttributeName|String|自定义属性的名称。|
+|id|String|自定义属性实体的唯一标识符。|
+|customAttributeName|字符串|自定义属性的名称。|
 |customAttributeType|[deviceCustomAttributeValueType](../resources/intune-devices-devicecustomattributevaluetype.md)|自定义属性的值的预期类型。 可取值为：`integer`、`string`、`dateTime`。|
 |displayName|String|设备管理脚本的名称。|
 |description|String|设备管理脚本的可选说明。|
@@ -45,7 +45,7 @@ ms.locfileid: "54239404"
 |lastModifiedDateTime|DateTimeOffset|上次修改设备管理脚本的日期和时间。 此属性是只读的。|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示执行上下文的类型。 可取值为：`system`、`user`。|
 |fileName|String|脚本文件名。|
-|roleScopeTagIds|String collection|此 PowerShellScript 实例的范围标记标识列表。|
+|roleScopeTagIds|字符串集合|此 PowerShellScript 实例的范围标记标识列表。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -82,7 +82,6 @@ ms.locfileid: "54239404"
   ]
 }
 ```
-
 
 
 

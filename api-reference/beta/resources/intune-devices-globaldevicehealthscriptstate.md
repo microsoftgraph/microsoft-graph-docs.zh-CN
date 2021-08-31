@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 48dc105c75bbfe16663716ec43a7e63c5d38a99c57b9e90f6c6baf46db3f8c91
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1701bb38964b901e4240e1d69f077838b1d88e48
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249942"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818973"
 ---
 # <a name="globaldevicehealthscriptstate-enum-type"></a>globalDeviceHealthScriptState 枚举类型
 
@@ -23,12 +23,11 @@ ms.locfileid: "54249942"
 指示全局设备运行状况脚本是否已启用且状态
 
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |notConfigured|0|未配置全局设备运行状况脚本|
-|pending|1 |全局设备运行状况脚本已配置，但未完全启用|
-|enabled|2 |全局设备运行状况脚本已启用并可供使用|
-
+|pending|1|全局设备运行状况脚本已配置，但未完全启用|
+|enabled|2|全局设备运行状况脚本已启用并可供使用|
 
 
 

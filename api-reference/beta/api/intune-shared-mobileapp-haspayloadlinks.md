@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0519f051d378b807ac1f82f2b9dd19b603f2b0d02d93ae8b37dde20dab1b8a24
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f39570f3e1a848a2de89060e5abe4914c9d15835
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54191107"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58784280"
 ---
 # <a name="haspayloadlinks-action"></a>hasPayloadLinks 操作
 
@@ -45,7 +45,7 @@ POST /deviceAppManagement/mobileApps/hasPayloadLinks
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -100,7 +100,6 @@ Content-Length: 249
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 53f8ca1f89f49bad540f0fb90b5093c39b9b88f354b4e7ceb8473b404483474c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 66572337c11c695d78e9fe8e4afd0e5b9ed83a69
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54191436"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783356"
 ---
 # <a name="setasmanagedinstaller-action"></a>setAsManagedInstaller 操作
 
@@ -27,9 +27,9 @@ ms.locfileid: "54191436"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|**TODO： Determine scopes **|
+|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|**TODO： Determine AppOnly scopes **|
+|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceAppManagement/windowsManagementApp/setAsManagedInstaller
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -65,7 +65,6 @@ POST https://graph.microsoft.com/beta/deviceAppManagement/windowsManagementApp/s
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

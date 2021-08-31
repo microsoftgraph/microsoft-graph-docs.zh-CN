@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 514caa91cdf788575c7326e7ac2d27a54362891cdb86c96d6e736c4600245b80
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 14f68bfa31c41b96e2a2dd160fa732d2c38e9b2f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54183153"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58810645"
 ---
 # <a name="macosappleeventreceiver-resource-type"></a>macOSAppleEventReceiver 资源类型
 
@@ -25,10 +25,10 @@ ms.locfileid: "54183153"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|codeRequirement|字符串|接收 Apple 事件的应用或二进制文件的代码要求。|
-|标识符|字符串|接收 Apple 事件的进程或可执行文件的应用或文件路径的捆绑 ID。|
+|codeRequirement|String|接收 Apple 事件的应用或二进制文件的代码要求。|
+|标识符|String|接收 Apple 事件的进程或可执行文件的应用或文件路径的捆绑 ID。|
 |identifierType|[macOSProcessIdentifierType](../resources/intune-deviceconfig-macosprocessidentifiertype.md)|将应用或路径的捆绑 ID 用于接收 Apple 事件的进程或可执行文件。 可取值为：`bundleID`、`path`。|
-|allowed|布尔值|允许或阻止此应用程序接收 Apple 事件。|
+|allowed|Boolean|允许或阻止此应用程序接收 Apple 事件。|
 
 ## <a name="relationships"></a>关系
 无
@@ -49,7 +49,6 @@ ms.locfileid: "54183153"
   "allowed": true
 }
 ```
-
 
 
 

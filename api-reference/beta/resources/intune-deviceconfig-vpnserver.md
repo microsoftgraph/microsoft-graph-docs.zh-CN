@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b620b47742d8f5bc64eeacee361683cf0676950ff85839941c9972e8a4c91277
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d81928758fc87b37954c2be38ee2c60e64a0d840
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54139626"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783951"
 ---
 # <a name="vpnserver-resource-type"></a>vpnServer 资源类型
 
@@ -47,7 +47,6 @@ VPN 服务器定义。
   "isDefaultServer": true
 }
 ```
-
 
 
 

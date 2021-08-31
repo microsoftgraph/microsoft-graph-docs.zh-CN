@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 87ce2985555bafe8867d6da2eddc3da473d6ace702770d7a5ef3a33102121432
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e4ca05c6b67356c94809345e947f1993fa546529
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54165222"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820140"
 ---
 # <a name="renewupload-action"></a>renewUpload 操作
 
@@ -43,7 +43,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCon
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -65,7 +65,6 @@ POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppI
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 17a5854c2579a039012b31950cce8660f6031a8c3048e437ffc52e94f6a18f23
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0525b8ab93b19e75336085468fa8d82f40320944
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54122409"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820861"
 ---
 # <a name="windowsdefenderproductstatus-enum-type"></a>windowsDefenderProductStatus 枚举类型
 
@@ -23,11 +23,11 @@ ms.locfileid: "54122409"
 产品状态Windows Defender
 
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |noStatus|0|无状态|
-|serviceNotRunning|1 |服务未运行|
-|serviceStartedWithoutMalwareProtection|2 |无需任何恶意软件保护引擎即可启动服务|
+|serviceNotRunning|1|服务未运行|
+|serviceStartedWithoutMalwareProtection|2|无需任何恶意软件保护引擎即可启动服务|
 |pendingFullScanDueToThreatAction|4 |由于威胁操作而挂起完全扫描|
 |pendingRebootDueToThreatAction|8 |由于威胁操作而挂起重启|
 |pendingManualStepsDueToThreatAction|16 |由于威胁操作而挂起的手动步骤 |
@@ -45,13 +45,12 @@ ms.locfileid: "54122409"
 |serviceShutdownAsPartOfSystemShutdown|65536|服务正在关闭，作为系统关闭的一部分|
 |threatRemediationFailedCritically|131072|威胁修正严重失败|
 |threatRemediationFailedNonCritically|262144|威胁修正失败（非严重）|
-|noStatusFlagsSet|524288|没有为初始化 (状态设置状态) |
+|noStatusFlagsSet|524288|在初始化状态 (未设置状态) |
 |platformOutOfDate|1048576|平台已过期|
 |platformUpdateInProgress|2097152|平台更新正在进行中|
 |platformAboutToBeOutdated|4194304|平台即将过时|
 |signatureOrPlatformEndOfLifeIsPastOrIsImpending|8388608|签名或平台生命周期已过去或即将结束|
 |windowsSModeSignaturesInUseOnNonWin10SInstall|16777216|WindowsSMode 签名仍在非 Win10S 安装上使用|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d918330ae428a6dace9fab31fc576cc199725369c25cd2866b3d00381b696b82
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: af5a53d35ce552e0c9a5b04c25d03f000bff3385
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54232914"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58813647"
 ---
 # <a name="androiddeviceownerglobalproxydirect-resource-type"></a>androidDeviceOwnerGlobalProxyDirect 资源类型
 
@@ -52,7 +52,6 @@ Android 设备所有者全局代理 Direct。
   ]
 }
 ```
-
 
 
 

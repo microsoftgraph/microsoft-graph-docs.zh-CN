@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ef89cf75eae4d192b2cca24d1930d2f902621492acea415b65799b9ee5ccb01b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7b1836ca4b77812c918dc9f197e7ab7e7e531bfd
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54168575"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806850"
 ---
 # <a name="delete-restrictedappsviolation"></a>删除 restrictedAppsViolation
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/deviceConfigurationRestrictedAppsViolations/{restricted
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurationRest
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

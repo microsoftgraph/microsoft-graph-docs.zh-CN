@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5b86e69812ea7d154046d128c6c28f1d62351cb3a71162607ff75a5f2c1ce717
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a22da359837dd1897311e906176067ab22efdacd
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54185647"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58817059"
 ---
 # <a name="mdmsupportedstate-enum-type"></a>mdmSupportedState 枚举类型
 
@@ -23,13 +23,12 @@ ms.locfileid: "54185647"
 Mdm 支持设置的状态。
 
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|此设置的 Mdm 支持状态未知。|
-|支持|1 |支持设置。|
-|不受支持|2 |不支持设置。|
-|已弃用|3 |设置已弃用。|
-
+|支持|1|支持设置。|
+|不受支持|2|不支持设置。|
+|已弃用|3|设置已弃用。|
 
 
 

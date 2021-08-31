@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5c24451d22786337ff06140bf6f9299f00e5397c
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: cd6c91aceddb9548c516e3166dc79201f5ace744
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58263361"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806997"
 ---
 # <a name="update-remoteassistancesettings"></a>更新 remoteAssistanceSettings
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/remoteAssistanceSettings
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,8 +54,8 @@ PATCH /deviceManagement/remoteAssistanceSettings
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|远程协助设置标识符|
-|remoteAssistanceState|[remoteAssistanceState](../resources/intune-remoteassistance-remoteassistancestate.md)|帐户的远程协助的当前状态。 可能的值包括：notConfigured、disabled、enabled。 管理员可以配置此设置。管理员尚未配置的远程协助设置具有 notConfigured 状态。 默认返回。 可取值为：`notConfigured`、`disabled`、`enabled`。|
-|allowSessionsToUnenrolledDevices|布尔值| 指示是否允许帐户使用到注销设备的会话。 管理员可以配置此设置。默认值为 false。|
+|remoteAssistanceState|[remoteAssistanceState](../resources/intune-remoteassistance-remoteassistancestate.md)|帐户的远程协助的当前状态。 可能的值包括：notConfigured、disabled、enabled。 管理员可以配置此设置。管理员尚未配置的远程协助设置具有 notConfigured 状态。 默认情况下返回。 可取值为：`notConfigured`、`disabled`、`enabled`。|
+|allowSessionsToUnenrolledDevices|Boolean| 指示是否允许帐户使用到注销设备的会话。 管理员可以配置此设置。默认值为 false。|
 
 
 
@@ -92,7 +92,6 @@ Content-Length: 200
   "allowSessionsToUnenrolledDevices": true
 }
 ```
-
 
 
 

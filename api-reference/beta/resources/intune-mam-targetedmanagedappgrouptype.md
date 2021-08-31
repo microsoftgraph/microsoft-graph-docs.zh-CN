@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 018a7d373d37016f72cbb16f9d7e8f4602dc00b6
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 716a9e646c6e0b320869998d30f2995c65d60636
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58267020"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58817318"
 ---
 # <a name="targetedmanagedappgrouptype-enum-type"></a>targetedManagedAppGroupType 枚举类型
 
@@ -23,13 +23,12 @@ ms.locfileid: "58267020"
 指示要面向的应用集合，这些应用可以是多个预定义的应用列表之一或手动选择的应用列表
 
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |selectedPublicApps|0|面向管理员手动选择的应用集合。|
-|allCoreMicrosoftApps|1 |面向 Microsoft 应用的核心集 (Office、Edge 等) 。|
-|allMicrosoftApps|2 |将 Microsoft 作为发布者面向所有应用。|
+|allCoreMicrosoftApps|1|面向 Microsoft 应用的核心集 (Office、Edge 等) 。|
+|allMicrosoftApps|2|将 Microsoft 作为发布者面向所有应用。|
 |allApps|4 |面向具有可用分配的所有应用。|
-
 
 
 

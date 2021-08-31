@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 36f3894967ffacfa0027192d876f5f56e4e836fe7d59cd6a1fb66b9a7f7b2057
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4a64dd9d3889373c97930740a7e510e187cb3606
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54240013"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783965"
 ---
 # <a name="auditevent-resource-type"></a>auditEvent 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54240013"
 
 包含审核事件的属性的类。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 auditEvents](../api/intune-auditing-auditevent-list.md)|[auditEvent](../resources/intune-auditing-auditevent.md) 集合|列出 [auditEvent](../resources/intune-auditing-auditevent.md) 对象的属性和关系。|
@@ -37,7 +37,7 @@ ms.locfileid: "54240013"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|displayName|字符串|事件显示名称。|
+|displayName|String|事件显示名称。|
 |componentName|String|组件名称。|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|与审核事件关联的 AAD 用户和应用程序。|
 |activity|String|活动的友好名称。|
@@ -113,7 +113,6 @@ ms.locfileid: "54240013"
   "category": "String"
 }
 ```
-
 
 
 

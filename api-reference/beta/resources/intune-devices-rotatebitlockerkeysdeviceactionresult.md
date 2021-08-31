@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 223e3714b09419fd3b5e7f3a5e2657f8bca3c71f27dc1364bbb0b1ed78c38577
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 99360b51e4b54d3d486928cb63c908b3373c31ba
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54239316"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818068"
 ---
 # <a name="rotatebitlockerkeysdeviceactionresult-resource-type"></a>rotateBitLockerKeysDeviceActionResult 资源类型
 
@@ -26,7 +26,7 @@ RotateBitLockerKeys 设备操作结果
 继承自 [deviceActionResult](../resources/intune-devices-deviceactionresult.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |actionName|String|操作名称 继承自 [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|操作的状态 继承自 [deviceActionResult](../resources/intune-devices-deviceactionresult.md)。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed` 或 `notSupported`。|
@@ -54,7 +54,6 @@ RotateBitLockerKeys 设备操作结果
   "errorCode": 1024
 }
 ```
-
 
 
 

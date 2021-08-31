@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b7678b31dcb1afd6ae9b3a7868b3351a02f79332411e5193c4a3f677ba867799
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7ca49009712c4bf8f1b94ca8cf2c636f2ab6869e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54188811"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58784686"
 ---
 # <a name="list-androidforworktrustedrootcertificates"></a>列出 androidForWorkTrustedRootCertificates
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -109,7 +109,6 @@ Content-Length: 1488
   ]
 }
 ```
-
 
 
 

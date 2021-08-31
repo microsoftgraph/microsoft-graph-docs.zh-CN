@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3a4e3e036e5811070ab945ebf47ee1fbd8b7928e664fee70bb23a62905870af4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d9d388325948c13e382fb974e1c3f01191ef889a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54203048"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58821772"
 ---
 # <a name="keybooleanvaluepair-resource-type"></a>keyBooleanValuePair 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "54203048"
 继承自 [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |Key|String|键值对的字符串键。 继承自 [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)|
 |value|Boolean|键值对的布尔值。|
@@ -48,7 +48,6 @@ ms.locfileid: "54203048"
   "value": true
 }
 ```
-
 
 
 

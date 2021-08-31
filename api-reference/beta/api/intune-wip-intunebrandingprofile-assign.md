@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ed2cc34c5e43610549c5061f984e30d067511a8d5ccf2b1762189684798dd11c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: dedb50c5ebc0073138c10e4dd7c4e1b74a4828b9
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54191051"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58784875"
 ---
 # <a name="assign-action"></a>分配操作
 
@@ -43,7 +43,7 @@ POST /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}/assign
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -91,7 +91,6 @@ Content-length: 510
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

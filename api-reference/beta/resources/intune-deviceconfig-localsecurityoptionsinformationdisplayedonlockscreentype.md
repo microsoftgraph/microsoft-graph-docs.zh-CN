@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0bfe02f8ef9386353a281df979907a6ba768972b68d54b8ffbd018f6500193c2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7adafcfc89c838a62131e05d9fa44be92477336a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54176503"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58819155"
 ---
 # <a name="localsecurityoptionsinformationdisplayedonlockscreentype-enum-type"></a>localSecurityOptionsInformationDisplayedOnLockScreenType 枚举类型
 
@@ -23,13 +23,12 @@ ms.locfileid: "54176503"
 LocalSecurityOptionsInformationDisplayedOnLockScreen 的可能值
 
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |notConfigured|0|未配置|
-|administrators|1 |用户显示名称、域和用户名|
-|administratorsAndPowerUsers|2 |仅显示名称用户|
-|administratorsAndInteractiveUsers|3 |不显示用户信息|
-
+|administrators|1|用户显示名称、域和用户名|
+|administratorsAndPowerUsers|2|仅显示名称用户|
+|administratorsAndInteractiveUsers|3|不显示用户信息|
 
 
 
