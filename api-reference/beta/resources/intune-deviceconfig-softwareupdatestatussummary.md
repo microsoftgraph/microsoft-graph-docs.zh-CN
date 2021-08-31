@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d395b6a41cf9debfb931537a1f64c0fc0efe20d5e411a4b6ba6a30b78adc18af
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 67b22bd543b286cbcd714127483550a606fadf7c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54236956"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58793580"
 ---
 # <a name="softwareupdatestatussummary-resource-type"></a>softwareUpdateStatusSummary 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54236956"
 
 尚未记录
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 softwareUpdateStatusSummary](../api/intune-deviceconfig-softwareupdatestatussummary-get.md)|[softwareUpdateStatusSummary](../resources/intune-deviceconfig-softwareupdatestatussummary.md)|读取 [softwareUpdateStatusSummary](../resources/intune-deviceconfig-softwareupdatestatussummary.md) 对象的属性和关系。|
@@ -32,7 +32,7 @@ ms.locfileid: "54236956"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|displayName|字符串|策略的名称。|
+|displayName|String|策略的名称。|
 |compliantDeviceCount|Int32|兼容设备的数量。|
 |nonCompliantDeviceCount|Int32|不兼容设备的数量。|
 |remediatedDeviceCount|Int32|已修复设备的数量。|
@@ -80,7 +80,6 @@ ms.locfileid: "54236956"
   "notApplicableUserCount": 1024
 }
 ```
-
 
 
 

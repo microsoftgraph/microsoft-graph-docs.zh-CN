@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bd211ab24ff7d64a2a83574f4d02c1ec067998ff13968ebb628ee9a918fcbdae
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c1f053c1c583b22eef48b973c6ab95a062c5042b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54216008"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58815447"
 ---
 # <a name="list-androidworkprofilecompliancepolicies"></a>列出 androidWorkProfileCompliancePolicies
 
@@ -43,7 +43,7 @@ GET /deviceManagement/deviceCompliancePolicies
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -108,7 +108,6 @@ Content-Length: 1762
   ]
 }
 ```
-
 
 
 

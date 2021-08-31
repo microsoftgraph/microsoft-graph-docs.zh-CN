@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7da061fafd5ed59c215031b2e2626c8d0d42a50661089e9646455ae6d96c4668
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 73404f8d01ab6ea047cb94ecc3b21939e4fb3a6c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54213156"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803803"
 ---
 # <a name="windowsupdatestatus-enum-type"></a>windowsUpdateStatus 枚举类型
 
@@ -26,10 +26,9 @@ Windows配置设备状态更新
 |成员|值|说明|
 |:---|:---|:---|
 |upToDate|0|没有挂起的更新、没有挂起的重启更新和失败的更新。|
-|pendingInstallation|1 |存在挂起安装的更新，其中包括未批准的更新。 没有挂起的重启更新，没有失败的更新。|
-|pendingReboot|2 |有些更新需要重新启动。 没有失败的更新。|
-|failed|3 |在设备上安装更新失败。|
-
+|pendingInstallation|1|存在挂起安装的更新，其中包括未批准的更新。 没有挂起的重启更新，没有失败的更新。|
+|pendingReboot|2|有些更新需要重新启动。 没有失败的更新。|
+|failed|3|在设备上安装更新失败。|
 
 
 

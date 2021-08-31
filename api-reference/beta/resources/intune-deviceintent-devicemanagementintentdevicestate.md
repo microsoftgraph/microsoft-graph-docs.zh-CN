@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 30cb1fcb0d8078ad6707a535a687cc617c9f0bcd1175f4437b959800d7edb744
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5a1eec4f8073a3ad0032483bbfe60a9d71280238
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54164221"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58792573"
 ---
 # <a name="devicemanagementintentdevicestate-resource-type"></a>deviceManagementIntentDeviceState 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54164221"
 
 表示意图的设备状态的实体
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceManagementIntentDeviceStates](../api/intune-deviceintent-devicemanagementintentdevicestate-list.md)|[deviceManagementIntentDeviceState](../resources/intune-deviceintent-devicemanagementintentdevicestate.md) 集合|列出 [deviceManagementIntentDeviceState 对象的属性和](../resources/intune-deviceintent-devicemanagementintentdevicestate.md) 关系。|
@@ -35,7 +35,7 @@ ms.locfileid: "54164221"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|The ID|
-|userPrincipalName|字符串|在设备上报告的用户主体名称|
+|userPrincipalName|String|在设备上报告的用户主体名称|
 |userName|String|在设备上报告的用户名|
 |deviceDisplayName|String|报告的设备名称|
 |lastReportedDateTime|DateTimeOffset|意图报告的上次修改日期时间|
@@ -65,7 +65,6 @@ ms.locfileid: "54164221"
   "deviceId": "String"
 }
 ```
-
 
 
 

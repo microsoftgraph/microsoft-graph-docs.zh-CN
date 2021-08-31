@@ -5,12 +5,12 @@ author: williamlooney
 doc_type: conceptualPageType
 ms.prod: cloud-communications
 ms.localizationpriority: high
-ms.openlocfilehash: dafb08c19ad84a23b5954687c4f18ff091cfc3ab
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 8514bb4f422db85e87064f56679c764945e72761
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695460"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58800770"
 ---
 # <a name="working-with-the-call-records-api-in-microsoft-graph"></a>使用 Microsoft Graph 中的通话记录 API
 
@@ -27,8 +27,8 @@ ms.locfileid: "58695460"
 | [callRecord](callrecords-callrecord.md) | [获取 callRecord](../api/callrecords-callrecord-get.md) |
 | [Session](callrecords-session.md) | [获取 callRecord](../api/callrecords-callrecord-get.md)<br />[列表会话](../api/callrecords-session-list.md) |
 | [segment](callrecords-segment.md) | [获取 callRecord](../api/callrecords-callrecord-get.md)<br />[列表会话](../api/callrecords-session-list.md) |
-| [pstnCallLogRow](callrecords-pstncalllogrow.md)|[Get pstnCallLogRow](../api/callrecords-callrecord-getpstncalls.md) |
-| [directRoutingLogRow](callrecords-directroutinglogrow.md) | [Get directRoutingLogRow](../api/callrecords-callrecord-getdirectroutingcalls.md)|
+| [pstnCallLogRow](callrecords-pstncalllogrow.md)|[getPstnCalls](../api/callrecords-callrecord-getpstncalls.md) |
+| [directRoutingLogRow](callrecords-directroutinglogrow.md) | [getDirectRoutingCalls](../api/callrecords-callrecord-getdirectroutingcalls.md)|
 
 ## <a name="call-record-structure"></a>呼叫记录结构
 
@@ -44,6 +44,6 @@ ms.locfileid: "58695460"
 
 ## <a name="see-also"></a>另请参阅
 
-- [Webhook 订阅](/graph/api/resources/webhooks?view=graph-rest-beta)
+- [Webhook 订阅](/graph/api/resources/webhooks?view=graph-rest-beta&preserve-view=true)
 
 

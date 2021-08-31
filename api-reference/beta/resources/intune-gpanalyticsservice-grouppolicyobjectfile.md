@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9fd832adbed7a8a843c5a6e8ec9df37a5c621a1d8d89df1abfb20a8afaef45ef
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e02d93e37e83c462a5eb15435dc41e69c886d9ca
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249816"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816485"
 ---
 # <a name="grouppolicyobjectfile-resource-type"></a>groupPolicyObjectFile 资源类型
 
@@ -22,8 +22,8 @@ ms.locfileid: "54249816"
 
 管理员上载的组策略对象文件。
 
-## <a name="methods"></a>Methods
-|方法|返回类型|说明|
+## <a name="methods"></a>方法
+|方法|返回类型|Description|
 |:---|:---|:---|
 |[列出 groupPolicyObjectFiles](../api/intune-gpanalyticsservice-grouppolicyobjectfile-list.md)|[groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md) 集合|列出 [groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md) 对象的属性和关系。|
 |[获取 groupPolicyObjectFile](../api/intune-gpanalyticsservice-grouppolicyobjectfile-get.md)|[groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md)|读取 [groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md) 对象的属性和关系。|
@@ -63,7 +63,6 @@ ms.locfileid: "54249816"
   "content": "String"
 }
 ```
-
 
 
 

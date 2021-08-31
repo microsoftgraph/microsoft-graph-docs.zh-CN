@@ -1,18 +1,18 @@
 ---
-title: win32LobAppRequirement 资源类型
-description: 用于检测 Win32 应用的基类
+title: keyLongValuePair 资源类型
+description: 键长值对
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c6ff1d7dc881689fdb6ffee0f2842e0a68477f41
+ms.openlocfilehash: 7d0e2f624dcaffa9706f241814e5185a1bcb6341
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796283"
+ms.locfileid: "58786718"
 ---
-# <a name="win32lobapprequirement-resource-type"></a>win32LobAppRequirement 资源类型
+# <a name="keylongvaluepair-resource-type"></a>keyLongValuePair 资源类型
 
 命名空间：microsoft.graph
 
@@ -20,13 +20,13 @@ ms.locfileid: "58796283"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-用于检测 Win32 应用的基类
+键长值对
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|检测运算符。 可取值为：`notConfigured`、`equal`、`notEqual`、`greaterThan`、`greaterThanOrEqual`、`lessThan` 或 `lessThanOrEqual`。|
-|detectionValue|String|检测值|
+|name|String|此键长值对的名称|
+|值|Int64|此键长值对的值|
 
 ## <a name="relationships"></a>关系
 无
@@ -35,14 +35,14 @@ ms.locfileid: "58796283"
 下面是资源的 JSON 表示形式。
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.win32LobAppRequirement"
+  "@odata.type": "microsoft.graph.keyLongValuePair"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.win32LobAppRequirement",
-  "operator": "String",
-  "detectionValue": "String"
+  "@odata.type": "#microsoft.graph.keyLongValuePair",
+  "name": "String",
+  "value": 1024
 }
 ```
 

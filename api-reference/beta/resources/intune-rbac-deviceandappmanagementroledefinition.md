@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 362493c42472c15d8f5252e5f101c50beb897d4802ce82a11d68e1129218639b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f9997f0f1cc461213b9a8a351d00204554112548
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54229470"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801050"
 ---
 # <a name="deviceandappmanagementroledefinition-resource-type"></a>deviceAndAppManagementRoleDefinition 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "54229470"
 
 继承自 [roleDefinition](../resources/intune-rbac-roledefinition.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[List deviceAndAppManagementRoleDefinitions](../api/intune-rbac-deviceandappmanagementroledefinition-list.md)|[deviceAndAppManagementRoleDefinition](../resources/intune-rbac-deviceandappmanagementroledefinition.md) 集合|列出 [deviceAndAppManagementRoleDefinition](../resources/intune-rbac-deviceandappmanagementroledefinition.md) 对象的属性和关系。|
@@ -37,14 +37,14 @@ ms.locfileid: "54229470"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。 此为只读，且自动生成。 继承自 [roleDefinition](../resources/intune-rbac-roledefinition.md)|
+|id|String|实体的键。 此为只读，且自动生成。 继承自 [roleDefinition](../resources/intune-rbac-roledefinition.md)|
 |displayName|String|角色定义的显示名称。 继承自 [roleDefinition](../resources/intune-rbac-roledefinition.md)|
 |description|String|角色定义的说明。 继承自 [roleDefinition](../resources/intune-rbac-roledefinition.md)|
 |permissions|[rolePermission](../resources/intune-rbac-rolepermission.md) 集合|允许此角色执行的角色权限列表。 它们必须与定义为 rolePermission 一部分的 actionName 匹配。 继承自 [roleDefinition](../resources/intune-rbac-roledefinition.md)|
 |rolePermissions|[rolePermission](../resources/intune-rbac-rolepermission.md) 集合|允许此角色执行的角色权限列表。 它们必须与定义为 rolePermission 一部分的 actionName 匹配。 继承自 [roleDefinition](../resources/intune-rbac-roledefinition.md)|
 |isBuiltInRoleDefinition|Boolean|角色类型。 如果是内置角色，则设置为 True；如果是自定义角色定义，则设置为 False。 继承自 [roleDefinition](../resources/intune-rbac-roledefinition.md)|
 |isBuiltIn|Boolean|角色类型。 如果是内置角色，则设置为 True；如果是自定义角色定义，则设置为 False。 继承自 [roleDefinition](../resources/intune-rbac-roledefinition.md)|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [roleDefinition](../resources/intune-rbac-roledefinition.md)|
+|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。 继承自 [roleDefinition](../resources/intune-rbac-roledefinition.md)|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -110,7 +110,6 @@ ms.locfileid: "54229470"
   ]
 }
 ```
-
 
 
 

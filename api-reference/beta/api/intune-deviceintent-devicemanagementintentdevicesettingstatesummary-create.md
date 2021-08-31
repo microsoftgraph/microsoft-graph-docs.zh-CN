@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 93c5792d470e006e5f43462f5d51679217fcd57c2387cc47ac5526fa70693daa
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 37551c323c49d45c46900239cfb8cf3315435279
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54211000"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787102"
 ---
 # <a name="create-devicemanagementintentdevicesettingstatesummary"></a>创建 deviceManagementIntentDeviceSettingStateSummary
 
@@ -43,7 +43,7 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/deviceSettingStateSumm
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -107,7 +107,6 @@ Content-Length: 329
   "remediatedCount": 15
 }
 ```
-
 
 
 

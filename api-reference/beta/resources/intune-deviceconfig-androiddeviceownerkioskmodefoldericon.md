@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9b8a089e0cfb56257006f71ce25b514f840868c2f3795b8651692184e69eb87a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 60ade3e1bd18e78fd14fe49933eacd9fd7f49437
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54245105"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787039"
 ---
 # <a name="androiddeviceownerkioskmodefoldericon-enum-type"></a>androidDeviceOwnerKioskModeFolderIcon 枚举类型
 
@@ -26,11 +26,10 @@ Android 设备所有者展台模式文件夹图标类型。
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置;将忽略此值。|
-|darkSquare|1 |文件夹图标显示为深色正方形。|
-|darkCircle|2 |文件夹图标显示为深色圆圈。|
-|lightSquare|3 |文件夹图标显示为浅色正方形。|
+|darkSquare|1|文件夹图标显示为深色正方形。|
+|darkCircle|2|文件夹图标显示为深色圆圈。|
+|lightSquare|3|文件夹图标显示为浅色正方形。|
 |lightCircle|4 |文件夹图标显示为浅圆 。|
-
 
 
 

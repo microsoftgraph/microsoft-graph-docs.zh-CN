@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c9dc3a6271f11cc27f78f0e80d2c9812fff720f7f05d88bbdf06b2407aed3e0f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f87b58125f24f32227fcb6517be5d4780c5588a6
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54168414"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58815804"
 ---
 # <a name="updatedeviceproperties-action"></a>updateDeviceProperties 操作
 
@@ -44,7 +44,7 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -52,12 +52,12 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |userPrincipalName|String|尚未记录|
 |addressableUserName|String|尚未记录|
 |groupTag|String|尚未记录|
-|displayName|字符串|尚未记录|
+|displayName|String|尚未记录|
 
 
 
@@ -87,7 +87,6 @@ Content-length: 187
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

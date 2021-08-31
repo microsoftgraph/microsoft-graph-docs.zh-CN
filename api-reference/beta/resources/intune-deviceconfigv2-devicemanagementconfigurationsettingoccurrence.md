@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 21ff7940e6e657d965b27823f0480b8247bae013767b51eaabb737a6d21ed844
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d339ba6fce600c578ce4aa180a509ec685ca2216
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54244832"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816912"
 ---
 # <a name="devicemanagementconfigurationsettingoccurrence-resource-type"></a>deviceManagementConfigurationSettingOccurrence 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "54244832"
 尚未记录
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |minDeviceOccurrence|Int32|可以在设备上设置最短时间设置。 MinDeviceOccurrence 为 0 意味着设置是可选的|
 |maxDeviceOccurrence|Int32|可以在设备上设置"最大时间"设置。 |
@@ -45,7 +45,6 @@ ms.locfileid: "54244832"
   "maxDeviceOccurrence": 1024
 }
 ```
-
 
 
 

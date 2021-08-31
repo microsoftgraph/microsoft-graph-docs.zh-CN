@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 360de07f6ccc420765824fcfd3ef7a622111db4bce63f486a0a20638ab2c8c69
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 987195a02f028b12e66fe37aa262438078953bc0
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249893"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803782"
 ---
 # <a name="manageddevicepartnerreportedhealthstate-enum-type"></a>managedDevicePartnerReportedHealthState 枚举类型
 
@@ -26,16 +26,15 @@ ms.locfileid: "54249893"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|尚未报告设备运行状况|
-|activated|1 |设备已由移动威胁防护合作伙伴激活，但尚未报告运行状况。|
-|deactivated|2 |设备已被移动威胁防护合作伙伴停用。 设备运行状况未知。|
-|secured|3 |设备被视为受移动威胁防护合作伙伴保护。|
+|activated|1|设备已由移动威胁防护合作伙伴激活，但尚未报告运行状况。|
+|deactivated|2|设备已被移动威胁防护合作伙伴停用。 设备运行状况未知。|
+|secured|3|设备被视为受移动威胁防护合作伙伴保护。|
 |lowSeverity|4 |移动威胁防护合作伙伴将设备视为低威胁。|
 |mediumSeverity|5 |移动威胁防护合作伙伴将设备视为中等威胁。|
 |highSeverity|6 |移动威胁防护合作伙伴将设备视为高威胁。|
 |unresponsive|7 |移动威胁防护合作伙伴认为设备无响应。 设备运行状况未知。|
 |compromised|8 |威胁防护合作伙伴认为设备遭到入侵。 这意味着设备具有活动的威胁或风险，最终用户无法轻松修复此威胁或风险，用户应联系其 IT 管理员。|
 |misconfigured|9 |设备被视为与威胁防护合作伙伴配置不当。 这意味着设备缺少所需配置文件或配置，威胁防护合作伙伴才能正常运行，因此无法完成威胁或风险分析。|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6e503815f80470bc864b50e7c30dbc89e33234270a09148377c769185f30f08e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2e6a86826e80a32d4b83a0898614c3de2d902c22
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54177252"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816007"
 ---
 # <a name="list-windowskioskconfigurations"></a>列出 windowsKioskConfigurations
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -158,7 +158,6 @@ Content-Length: 3366
   ]
 }
 ```
-
 
 
 

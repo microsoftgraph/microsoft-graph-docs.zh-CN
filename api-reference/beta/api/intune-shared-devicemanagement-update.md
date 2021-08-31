@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c108b5972cdb7ccfdbfd88e64f6929ea2807db958d93bdc084761471910f448c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fbf1d3383abbc69784d166bc144fa9b16e3bf170
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54228021"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803312"
 ---
 # <a name="update-devicemanagement"></a>更新 deviceManagement
 
@@ -87,7 +87,7 @@ PATCH /deviceManagement
 
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -101,7 +101,7 @@ PATCH /deviceManagement
 |id|String|设备的唯一标识符。|
 |**设备配置**|
 |intuneAccountId|GUID|给定租户的 Intune 帐户 ID|
-|legacyPcManangementEnabled|布尔值|用于为此帐户启用非 MDM 托管旧版电脑管理的 属性。 此属性是只读的。|
+|legacyPcManangementEnabled|Boolean|用于为此帐户启用非 MDM 托管旧版电脑管理的 属性。 此属性是只读的。|
 |maximumDepTokens|Int32|允许每个租户使用的最大 DEP 令牌数。|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|帐户级别设置。|
 |**设备管理**|
@@ -191,7 +191,6 @@ Content-Length: 855
   "accountMoveCompletionDateTime": "2017-01-01T00:01:17.9006709-08:00"
 }
 ```
-
 
 
 

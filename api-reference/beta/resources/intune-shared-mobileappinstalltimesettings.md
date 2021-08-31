@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4b22ae3e5e9b94527417f671d0c6ca3a3545fee6e6819ef31743d0be410129e2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: de3077e2ee6e79207b4ed8a267d8c3ca02bd6454
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54251125"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58792545"
 ---
 # <a name="mobileappinstalltimesettings-resource-type"></a>mobileAppInstallTimeSettings 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "54251125"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|useLocalTime|布尔值|确定可用和截止时间时，应该使用本地设备时间还是 UTC 时间。|
+|useLocalTime|Boolean|确定可用和截止时间时，应该使用本地设备时间还是 UTC 时间。|
 |startDateTime|DateTimeOffset|应用应可供安装的时间。|
 |deadlineDateTime|DateTimeOffset|应安装应用的时间。|
 
@@ -47,7 +47,6 @@ ms.locfileid: "54251125"
   "deadlineDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1c5e11c7fc95f2666a4d96c8764823b7c7257d36
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 5061a96463cd8194a96067e5caf8df3a7cf8ecd0
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58263945"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58793434"
 ---
 # <a name="list-grouppolicyuploadeddefinitions"></a>列出 groupPolicyUploadedDefinitions
 
@@ -45,7 +45,7 @@ GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/def
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/groupPolicyDefinitions
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 620
+Content-Length: 740
 
 {
   "value": [
@@ -81,6 +81,8 @@ Content-Length: 620
       "policyType": "admxIngested",
       "hasRelatedDefinitions": true,
       "groupPolicyCategoryId": "4d1e97a2-97a2-4d1e-a297-1e4da2971e4d",
+      "minDeviceCspVersion": "Min Device Csp Version value",
+      "minUserCspVersion": "Min User Csp Version value",
       "version": "Version value",
       "id": "a5f83119-3119-a5f8-1931-f8a51931f8a5",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
@@ -88,7 +90,6 @@ Content-Length: 620
   ]
 }
 ```
-
 
 
 

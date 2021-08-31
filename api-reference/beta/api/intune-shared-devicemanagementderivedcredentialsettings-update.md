@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 338874b4f191a307d11cfde1102fbde0de80554b77c40d055be0407e1031f0cf
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e9aabab7ce588ed10b0372fa667434fb46073222
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54173651"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786409"
 ---
 # <a name="update-devicemanagementderivedcredentialsettings"></a>更新 deviceManagementDerivedCredentialSettings
 
@@ -52,7 +52,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -62,12 +62,12 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|派生凭据的唯一标识符|
+|id|字符串|派生凭据的唯一标识符|
 |**RA 策略**|
-|helpUrl|String|最终用户在使用证书检索派生凭据时可访问的公司门户。|
-|displayName|字符串|配置文件显示名称的配置文件。|
-|issuer|[deviceManagementDerivedCredentialIssuer](../resources/intune-rapolicy-devicemanagementderivedcredentialissuer.md)|要使用的派生凭据提供程序。 可取值为：`intercede`、`entrustDatacard`、`purebred`。|
-|notificationType|[deviceManagementDerivedCredentialNotificationType](../resources/intune-rapolicy-devicemanagementderivedcredentialnotificationtype.md)|用于通知最终用户打开 公司门户以将使用证书的 WLAN、VPN 或电子邮件配置文件发送到设备的方法。 可取值为：`none`、`companyPortal`、`email`。|
+|helpUrl|String|最终用户在使用证书检索派生凭据时可访问的 URL 公司门户。|
+|displayName|String|配置文件显示名称的配置文件。|
+|issuer|[deviceManagementDerivedCredentialIssuer](../resources/intune-shared-devicemanagementderivedcredentialissuer.md)|要使用的派生凭据提供程序。 可取值为：`intercede`、`entrustDatacard`、`purebred`。|
+|notificationType|[deviceManagementDerivedCredentialNotificationType](../resources/intune-shared-devicemanagementderivedcredentialnotificationtype.md)|用于通知最终用户打开 公司门户以将使用证书的 WLAN、VPN 或电子邮件配置文件发送到设备的方法。 可取值为：`none`、`companyPortal`、`email`。|
 
 
 ## <a name="response"></a>响应
@@ -99,7 +99,6 @@ Content-Length: 132
   "id": "bc650741-0741-bc65-4107-65bc410765bc"
 }
 ```
-
 
 
 

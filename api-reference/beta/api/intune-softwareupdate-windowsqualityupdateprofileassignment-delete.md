@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0986ae273e8b44398bfca0423a13f8dfa894d4b1d45a11265ac59416658e232c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4de3db4354a1c247baf97e7e521a95c010754c9a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54229890"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58793920"
 ---
 # <a name="delete-windowsqualityupdateprofileassignment"></a>删除 windowsQualityUpdateProfileAssignment
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/windowsQualityUpdateProfiles/{windowsQualityUpdateProfi
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/windowsQualityUpdatePro
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

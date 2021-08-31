@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a2a93c28acef99c9972366f75ed9193d98d4ec29b360988716872e12feb80107
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 166d90ce153325bb358ec551f693ce9acf1c0cb3
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54203104"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801134"
 ---
 # <a name="inkaccesssetting-enum-type"></a>inkAccessSetting 枚举类型
 
@@ -26,9 +26,8 @@ InkWorkspaceAccess 设置的值。
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置。|
-|enabled|1 |已启用。|
-|disabled|2 |已禁用。|
-
+|enabled|1|已启用。|
+|disabled|2|已禁用。|
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6cba01faf927be2efab3459587d88d1db1a6bbf693fa86f1f0ec4910f581e387
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: beabee3de21a94cd7ee2fbd6bb0dac778c90fad3
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54226537"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801197"
 ---
 # <a name="iosvppapp-resource-type"></a>iosVppApp 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "54226537"
 
 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[List iosVppApps](../api/intune-apps-iosvppapp-list.md)|[iosVppApp](../resources/intune-apps-iosvppapp.md) 集合|列出 [iosVppApp](../resources/intune-apps-iosvppapp.md) 对象的属性和关系。|
@@ -158,7 +158,6 @@ ms.locfileid: "54226537"
   ]
 }
 ```
-
 
 
 

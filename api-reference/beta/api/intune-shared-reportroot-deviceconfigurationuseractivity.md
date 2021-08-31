@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ae1c3ba89ac49d9638efea52a01431a0f35999febb8c4fb1f545aa6104a5d2bf
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0b46a21ac5e8e4012689ca682eea3e8f6041507b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54226684"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787179"
 ---
 # <a name="deviceconfigurationuseractivity-function"></a>deviceConfigurationUserActivity 函数
 
@@ -44,7 +44,7 @@ GET /reports/deviceConfigurationUserActivity
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -74,7 +74,6 @@ Content-Length: 123
   }
 }
 ```
-
 
 
 

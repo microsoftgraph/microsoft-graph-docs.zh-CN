@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b481811abb43678e1402b99e3cf4c6b2163df371af3581e510928b6dd07221c5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b390bd505c20afba235a204f49bd68db0be68074
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54195104"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58799976"
 ---
 # <a name="hashalgorithms-enum-type"></a>hashAlgorithms 枚举类型
 
@@ -25,9 +25,8 @@ ms.locfileid: "54195104"
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|sha1|1 |SHA-1 哈希算法。|
-|sha2|2 |SHA-2 哈希算法。|
-
+|sha1|1|SHA-1 哈希算法。|
+|sha2|2|SHA-2 哈希算法。|
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e7e8cd08008b10f58078a28afb71dc65cf41ed24
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 81178d29d006332d4d9d2d133efedcfb723987fa
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58265030"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58792328"
 ---
 # <a name="update-activedirectorywindowsautopilotdeploymentprofile"></a>更新 activeDirectoryWindowsAutopilotDeploymentProfile
 
@@ -45,7 +45,7 @@ PATCH /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevice
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -63,13 +63,13 @@ PATCH /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevice
 |lastModifiedDateTime|DateTimeOffset|配置文件上次修改时间 继承自 [windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|
 |outOfBoxExperienceSettings|[outOfBoxExperienceSettings](../resources/intune-enrollment-outofboxexperiencesettings.md)|开箱体验设置 继承自 [windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|
 |enrollmentStatusScreenSettings|[windowsEnrollmentStatusScreenSettings](../resources/intune-enrollment-windowsenrollmentstatusscreensettings.md)|注册状态屏幕设置 继承自 [windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|
-|extractHardwareHash|布尔值|配置文件的 HardwareHash 提取 继承自 [windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|
-|deviceNameTemplate|字符串|用于命名 AutoPilot 设备的模板。 这可以是自定义文本，还可以包含设备的序列号或随机生成的数字。 模板生成的文本的总长度不能超过 15 个字符。 继承自 [windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|
+|extractHardwareHash|Boolean|配置文件的 HardwareHash 提取 继承自 [windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|
+|deviceNameTemplate|String|用于命名 AutoPilot 设备的模板。 这可以是自定义文本，还可以包含设备的序列号或随机生成的数字。 模板生成的文本的总长度不能超过 15 个字符。 继承自 [windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|
 |deviceType|[windowsAutopilotDeviceType](../resources/intune-enrollment-windowsautopilotdevicetype.md)|此配置文件适用的 AutoPilot 设备类型。 继承自 [windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)。 可取值为：`windowsPc`、`surfaceHub2`、`holoLens`。|
 |enableWhiteGlove|布尔值|为配置文件启用 Autopilot White Glove。 继承自 [windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|
-|roleScopeTagIds|String collection|配置文件的范围标记。 继承自 [windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|
-|managementServiceAppId|String|基于客户端设备的注册发现期间使用的 AzureAD 管理应用 ID 继承自 [windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|
-|hybridAzureADJoinSkipConnectivityCheck|布尔值|Autopilot 混合 Azure AD 加入流将继续运行，即使它在 OOBE 期间未建立域控制器连接。|
+|roleScopeTagIds|字符串集合|配置文件的范围标记。 继承自 [windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|
+|managementServiceAppId|字符串|基于客户端设备的注册发现期间使用的 AzureAD 管理应用 ID 继承自 [windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|
+|hybridAzureADJoinSkipConnectivityCheck|Boolean|Autopilot 混合 Azure AD 加入流将继续运行，即使它在 OOBE 期间未建立域控制器连接。|
 
 
 
@@ -166,7 +166,6 @@ Content-Length: 1454
   "hybridAzureADJoinSkipConnectivityCheck": true
 }
 ```
-
 
 
 

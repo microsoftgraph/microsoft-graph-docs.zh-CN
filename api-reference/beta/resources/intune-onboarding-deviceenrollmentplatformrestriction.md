@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a4216cba9bf0ce1c687e1579eb675651ba94bac3e17d3e2d62dc4ad9812de709
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: baba1686c4b44a5eb1d6b48559a2b459da3e6d37
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54239159"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801064"
 ---
 # <a name="deviceenrollmentplatformrestriction-resource-type"></a>deviceEnrollmentPlatformRestriction 资源类型
 
@@ -29,7 +29,7 @@ ms.locfileid: "54239159"
 |personalDeviceEnrollmentBlocked|Boolean|阻止个人拥有的设备注册|
 |osMinimumVersion|String|支持的最小 OS 版本|
 |osMaximumVersion|String|支持的最大 OS 版本|
-|blockedManufacturers|String collection|被阻止的制造商的集合。|
+|blockedManufacturers|字符串集合|被阻止的制造商的集合。|
 |blockedSkus|String collection|被阻止的 Sku 的集合。|
 
 ## <a name="relationships"></a>关系
@@ -57,7 +57,6 @@ ms.locfileid: "54239159"
   ]
 }
 ```
-
 
 
 

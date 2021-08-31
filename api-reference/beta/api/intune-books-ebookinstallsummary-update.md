@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5ee5df073c621dfa707e9be7ef290a28ab0203b7783e09270a3c24be31212d61
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c2fe35ae06bb25e842e1354c6f8dec766fba1ee8
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54132506"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58817577"
 ---
 # <a name="update-ebookinstallsummary"></a>更新 eBookInstallSummary
 
@@ -43,7 +43,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/installSummary
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -104,7 +104,6 @@ Content-Length: 285
   "notInstalledUserCount": 5
 }
 ```
-
 
 
 

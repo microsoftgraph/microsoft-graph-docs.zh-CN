@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 53acc5cf4d54c627b337d44a7ef83d9bdb04c92aa55e706a643bddfe2dcdd9e4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c52ffe09351a15df3e85df9ec29bd47879a86c4b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54217951"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58792454"
 ---
 # <a name="list-appledevicefeaturesconfigurationbases"></a>列出 appleDeviceFeaturesConfigurationBases
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -116,7 +116,6 @@ Content-Length: 1646
   ]
 }
 ```
-
 
 
 

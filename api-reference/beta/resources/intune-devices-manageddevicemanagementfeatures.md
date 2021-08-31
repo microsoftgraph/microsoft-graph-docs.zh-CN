@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1fc9935fbca2fb0d710047e129fa4ce74758cad1cd026d527505329131f63f87
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2bad15794fae5f5db3c34e7d8193771fe6d05886
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54148006"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58817381"
 ---
 # <a name="manageddevicemanagementfeatures-enum-type"></a>managedDeviceManagementFeatures 枚举类型
 
@@ -23,11 +23,10 @@ ms.locfileid: "54148006"
 设备管理功能。
 
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |无|0|未知的设备管理功能。|
-|microsoftManagedDesktop|1 |Microsoft 托管桌面|
-
+|microsoftManagedDesktop|1|Microsoft 托管桌面|
 
 
 

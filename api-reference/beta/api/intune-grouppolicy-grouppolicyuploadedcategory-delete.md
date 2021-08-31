@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 315cff8e5bbea73ccfc7958cac542383bbb07e99e9acd0dc39565e4422802433
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d5e48db697bcfc5945494c245572996587097022
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54156945"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58807046"
 ---
 # <a name="delete-grouppolicyuploadedcategory"></a>删除 groupPolicyUploadedCategory
 
@@ -46,7 +46,7 @@ DELETE /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -68,7 +68,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/groupPolicyCategories/{
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

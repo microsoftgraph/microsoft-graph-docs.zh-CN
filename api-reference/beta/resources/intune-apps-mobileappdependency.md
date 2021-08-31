@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a46fb117b4201949c7e42f99eedad09e3c54567a04225dd0fa67c0e5cb45bb42
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bfdb66d5baa3bf16d870b69f8187a836e2d92bff
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54229645"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58793913"
 ---
 # <a name="mobileappdependency-resource-type"></a>mobileAppDependency 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "54229645"
 
 继承自 [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 mobileAppDependencies](../api/intune-apps-mobileappdependency-list.md)|[mobileAppDependency](../resources/intune-apps-mobileappdependency.md) 集合|列出 [mobileAppDependency](../resources/intune-apps-mobileappdependency.md) 对象的属性和关系。|
@@ -38,10 +38,10 @@ ms.locfileid: "54229645"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|关系实体 ID。继承自 [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
-|targetId|String|目标移动应用的应用 ID。继承自 [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
-|targetDisplayName|String|目标移动应用显示名称。 继承自 [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetId|字符串|目标移动应用的应用 ID。继承自 [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetDisplayName|字符串|目标移动应用显示名称。 继承自 [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
 |targetDisplayVersion|字符串|目标移动应用的显示版本。 继承自 [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
-|targetPublisher|字符串|目标移动应用的发布者。 继承自 [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetPublisher|String|目标移动应用的发布者。 继承自 [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
 |targetType|[mobileAppRelationshipType](../resources/intune-apps-mobileapprelationshiptype.md)|关系类型，指示目标是父对象还是子级。 继承自 [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)。 可取值为：`child`、`parent`。|
 |dependencyType|[mobileAppDependencyType](../resources/intune-apps-mobileappdependencytype.md)|父应用和子应用之间的依赖关系类型。 可取值为：`detect`、`autoInstall`。|
 |dependentAppCount|Int32|直接或间接依赖于父应用的应用总数。|
@@ -72,7 +72,6 @@ ms.locfileid: "54229645"
   "dependsOnAppCount": 1024
 }
 ```
-
 
 
 

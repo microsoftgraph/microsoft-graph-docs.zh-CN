@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5d579da383a793fd94ac53291f05e7ebcf3c1430dcadf97eb9374560a94fc61b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d797f7bf6e7dd706bf2f1605bfea769279ed8900
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54211119"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58815832"
 ---
 # <a name="create-macossoftwareupdateaccountsummary"></a>创建 macOSSoftwareUpdateAccountSummary
 
@@ -43,7 +43,7 @@ POST /deviceManagement/macOSSoftwareUpdateAccountSummaries
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,11 +54,11 @@ POST /deviceManagement/macOSSoftwareUpdateAccountSummaries
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|displayName|字符串|报告的名称|
+|displayName|String|报告的名称|
 |deviceId|String|设备 ID。|
-|userId|String|用户 ID。|
+|userId|字符串|用户 ID。|
 |deviceName|String|设备名称。|
-|userPrincipalName|字符串|用户主体名称|
+|userPrincipalName|String|用户主体名称|
 |osVersion|String|操作系统版本。|
 |successfulUpdateCount|Int32|设备上成功更新的数量。|
 |failedUpdateCount|Int32|设备上失败的更新数。|
@@ -116,7 +116,6 @@ Content-Length: 502
   "lastUpdatedDateTime": "2017-01-01T00:00:56.8321556-08:00"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 891f8800ecc29e52b9427a567e098d1e6f62d583932d1cd1677cd1b6ff5edd42
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5aac7c1e3e371fc5983750e1df1bfe538ded5682
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54241742"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803523"
 ---
 # <a name="ratingcanadamoviestype-enum-type"></a>ratingCanadaMoviesType 枚举类型
 
@@ -26,13 +26,12 @@ ms.locfileid: "54241742"
 |成员|值|说明|
 |:---|:---|:---|
 |allAllowed|0|默认值，允许所有电影内容|
-|allBlocked|1 |不允许任何电影内容|
-|general|2 |G 分类适用于所有年龄|
-|parentalGuidance|3 |PG 分类建议家长指南|
+|allBlocked|1|不允许任何电影内容|
+|general|2|G 分类适用于所有年龄|
+|parentalGuidance|3|PG 分类建议家长指南|
 |agesAbove14|4 |14A 分类适用于 14 或以上年龄的查看者|
 |agesAbove18|5 |18A 分类适用于 18 及以上年龄的查看者|
 |restricted|6 |R 分类限制为 18 年及更久|
-
 
 
 

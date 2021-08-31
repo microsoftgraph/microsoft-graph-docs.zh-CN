@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0e7504cb4b4ff666bf7d40bdbfaf457fb6b812f9a3b3ee9f4e6e53cd0c63eeb8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 27c53fb4ce2e502d30a9521b4709d19654c9f231
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54165894"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58807326"
 ---
 # <a name="iosminimumoperatingsystem-resource-type"></a>iosMinimumOperatingSystem 资源类型
 
@@ -29,9 +29,9 @@ ms.locfileid: "54165894"
 |v9_0|布尔值|版本 9.0 或更高版本。|
 |v10_0|布尔值|版本 10.0 或更高版本。|
 |v11_0|布尔值|版本 11.0 或更高版本。|
-|v12_0|布尔值|版本 12.0 或更高版本。|
-|v13_0|布尔值|版本 13.0 或更高版本。|
-|v14_0|布尔值|版本 14.0 或更高版本。|
+|v12_0|Boolean|版本 12.0 或更高版本。|
+|v13_0|Boolean|版本 13.0 或更高版本。|
+|v14_0|Boolean|版本 14.0 或更高版本。|
 
 ## <a name="relationships"></a>关系
 无
@@ -55,7 +55,6 @@ ms.locfileid: "54165894"
   "v14_0": true
 }
 ```
-
 
 
 

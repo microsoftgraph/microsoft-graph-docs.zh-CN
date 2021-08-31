@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7fa3186c4f9604a790e1a16f780447e904ec4ba1f018475ef0e7ddc84493ffcd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 00ec731e05341d801436c851c5ddbc37d7f1b4b4
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54161778"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58817458"
 ---
 # <a name="assign-action"></a>分配操作
 
@@ -47,7 +47,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -55,7 +55,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |deviceConfigurationGroupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md) 集合|尚未记录|
 |assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) 集合|尚未记录|
@@ -119,7 +119,6 @@ Content-Length: 340
   ]
 }
 ```
-
 
 
 

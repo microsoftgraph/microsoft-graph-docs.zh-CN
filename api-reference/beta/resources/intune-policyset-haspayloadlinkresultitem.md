@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f96999c5a144a736a0ac8070d725245b59e8ed1c9c67e2c1301fded9cc7742a2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 123177d4935ea7aec924345d27134f7ad779a625
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235959"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785687"
 ---
 # <a name="haspayloadlinkresultitem-resource-type"></a>hasPayloadLinkResultItem 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "54235959"
 |属性|类型|说明|
 |:---|:---|:---|
 |payloadId|String|有效负载的键，格式为 Guid。|
-|hasLink|布尔值|指示有效负载是否具有任何链接。|
+|hasLink|Boolean|指示有效负载是否具有任何链接。|
 |error|String|异常信息指示检查此项是否成功。空字符串表示无错误。|
 |源|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md) 集合|链接源自的原因。|
 
@@ -51,7 +51,6 @@ ms.locfileid: "54235959"
   ]
 }
 ```
-
 
 
 

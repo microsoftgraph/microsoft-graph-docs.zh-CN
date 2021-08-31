@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f5665d276e18c2424fc7a8c2c37a81f212bf8083
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 1ba401b12789628fdc52b28de804531f2b6a18c5
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58264407"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785764"
 ---
 # <a name="androiddeviceownercompliancepolicy-resource-type"></a>androidDeviceOwnerCompliancePolicy 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "58264407"
 
 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 androidDeviceOwnerCompliancePolicies](../api/intune-deviceconfig-androiddeviceownercompliancepolicy-list.md)|[androidDeviceOwnerCompliancePolicy](../resources/intune-deviceconfig-androiddeviceownercompliancepolicy.md) 集合|列出 [androidDeviceOwnerCompliancePolicy 对象的属性和](../resources/intune-deviceconfig-androiddeviceownercompliancepolicy.md) 关系。|
@@ -38,9 +38,9 @@ ms.locfileid: "58264407"
 |属性|类型|说明|
 |:---|:---|:---|
 |roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
-|id|字符串|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|id|String|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
-|description|String|管理员提供的设备配置的说明。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|description|字符串|管理员提供的设备配置的说明。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
@@ -65,12 +65,12 @@ ms.locfileid: "58264407"
 |passwordExpirationDays|Int32|密码过期前的天数。 有效值为 1 至 365。|
 |passwordPreviousPasswordCountToBlock|Int32|要阻止的以前密码的数量。 有效值为 1 至 24|
 |storageRequireEncryption|Boolean|要求对 Android 设备加密。|
-|securityRequireIntuneAppIntegrity|布尔值|如果设置为 true，则检查在完全托管、专用或公司拥有的工作配置文件 Android Enterprise 注册设备上安装的 Intune 应用是否是由 Microsoft 从托管 Google Playstore提供的。 如果检查失败，设备将报告为不兼容。|
+|securityRequireIntuneAppIntegrity|Boolean|如果设置设置为 true，则检查在完全托管、专用或公司拥有的工作配置文件 Android Enterprise 注册设备上安装的 Intune 应用是否是由 Microsoft 从托管 Google Playstore提供的。 如果检查失败，设备将报告为不兼容。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
-|scheduledActionsForRule|[deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md) 集合|此规则的计划操作的列表 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|scheduledActionsForRule|[deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md) 集合|此合规性策略的每个规则的计划操作列表。 在创建任何单独的每个平台合规性策略时，此属性是必需的。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |deviceStatuses|[deviceComplianceDeviceStatus](../resources/intune-deviceconfig-devicecompliancedevicestatus.md) 集合|DeviceComplianceDeviceStatus 的列表。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |userStatuses|[deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md) 集合|DeviceComplianceUserStatus 的列表。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |deviceStatusOverview|[deviceComplianceDeviceOverview](../resources/intune-deviceconfig-devicecompliancedeviceoverview.md)|设备合规性设备状态概述 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
@@ -122,7 +122,6 @@ ms.locfileid: "58264407"
   "securityRequireIntuneAppIntegrity": true
 }
 ```
-
 
 
 

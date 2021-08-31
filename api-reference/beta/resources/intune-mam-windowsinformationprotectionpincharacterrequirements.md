@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ad8a464178598e4c35f8af69f49d7cddfa77067267d2e8cc4764b10806bbf653
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a067e90fc913659c6f4080b71d9899136e209bba
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54244573"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58817311"
 ---
 # <a name="windowsinformationprotectionpincharacterrequirements-enum-type"></a>windowsInformationProtectionPinCharacterRequirements 枚举类型
 
@@ -23,12 +23,11 @@ ms.locfileid: "54244573"
 固定字符要求
 
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |notAllow|0|不允许|
-|requireAtLeastOne|1 |需要一个 atleast|
-|allow|2 |允许任意数字|
-
+|requireAtLeastOne|1|需要一个 atleast|
+|allow|2|允许任意数字|
 
 
 

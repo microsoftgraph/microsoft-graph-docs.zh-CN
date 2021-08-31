@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 91a09f6ec43e38ebc684a47dffa9607553a01ead3043a4f9665bd8fc8670e65b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2256f6d8b211a7e50066aa77bd4e0d9d861254af
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54140347"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58774415"
 ---
 # <a name="update-devicemanagementintentuserstate"></a>更新 deviceManagementIntentUserState
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}/userStates/{deviceMan
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,7 +53,7 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}/userStates/{deviceMan
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|The ID|
+|id|字符串|The ID|
 |userPrincipalName|字符串|在设备上报告的用户主体名称|
 |userName|String|在设备上报告的用户名|
 |deviceCount|Int32|出于意图而属于用户的设备的计数|
@@ -101,7 +101,6 @@ Content-Length: 324
   "state": "notApplicable"
 }
 ```
-
 
 
 

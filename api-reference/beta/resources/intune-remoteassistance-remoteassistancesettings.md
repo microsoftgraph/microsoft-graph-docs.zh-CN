@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7eebfdcef7a3da9558ce51eeac88d58c2a79c692
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 83bd4f0fd4da0f54687dbb1fb378b19e280614f9
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58263389"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58769444"
 ---
 # <a name="remoteassistancesettings-resource-type"></a>remoteAssistanceSettings 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "58263389"
 
 帐户的远程协助设置
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 remoteAssistanceSettings](../api/intune-remoteassistance-remoteassistancesettings-get.md)|[remoteAssistanceSettings](../resources/intune-remoteassistance-remoteassistancesettings.md)|读取 [remoteAssistanceSettings 对象的属性和](../resources/intune-remoteassistance-remoteassistancesettings.md) 关系。|
@@ -32,8 +32,8 @@ ms.locfileid: "58263389"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|远程协助设置标识符|
-|remoteAssistanceState|[remoteAssistanceState](../resources/intune-remoteassistance-remoteassistancestate.md)|帐户的远程协助的当前状态。 可能的值包括：notConfigured、disabled、enabled。 管理员可以配置此设置。管理员尚未配置的远程协助设置具有 notConfigured 状态。 默认返回。 可取值为：`notConfigured`、`disabled`、`enabled`。|
-|allowSessionsToUnenrolledDevices|布尔值| 指示是否允许帐户使用到注销设备的会话。 管理员可以配置此设置。默认值为 false。|
+|remoteAssistanceState|[remoteAssistanceState](../resources/intune-remoteassistance-remoteassistancestate.md)|帐户的远程协助的当前状态。 可能的值包括：notConfigured、disabled、enabled。 管理员可以配置此设置。管理员尚未配置的远程协助设置具有 notConfigured 状态。 默认情况下返回。 可取值为：`notConfigured`、`disabled`、`enabled`。|
+|allowSessionsToUnenrolledDevices|Boolean| 指示是否允许帐户使用到注销设备的会话。 管理员可以配置此设置。默认值为 false。|
 
 ## <a name="relationships"></a>关系
 无
@@ -54,7 +54,6 @@ ms.locfileid: "58263389"
   "allowSessionsToUnenrolledDevices": true
 }
 ```
-
 
 
 

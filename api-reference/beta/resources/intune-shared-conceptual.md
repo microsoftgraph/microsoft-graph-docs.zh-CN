@@ -1,15 +1,15 @@
 ---
 title: Microsoft Intune 中的共享资源 - Microsoft Graph API
-description: 列出支持租户Graph多个工作流的适用于 Intune 终结点 (的 Microsoft) REST API。
+description: 列出支持租户Graph多个工作流的 Microsoft (REST) Intune 终结点 API。
 localization_priority: Normal
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 9ef71ce51e86d2582935a5f647a0a7ad07b70e73
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 672672edd0955070c4df6a4a90c78c5c5b7329ce
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58264078"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816434"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>共享资源Microsoft Intune
 
@@ -21,7 +21,7 @@ ms.locfileid: "58264078"
 
 这些终结点在多个 Microsoft Graph API 中用于 Intune 工作流。  使用给定资源所需的意图、目的和权限因特定工作流和基础调用的上下文而异。  此外，某些方法、属性和操作仅受特定工作流支持。
 
-以下Graph在 Intune 工作流之间共享：
+Intune Graph之间共享以下资源：
 
 - [操作状态](intune-shared-actionstate.md)
 - [所有设备分配目标](intune-shared-alldevicesassignmenttarget.md)
@@ -63,6 +63,7 @@ ms.locfileid: "58264078"
 - [IP 范围](intune-shared-iprange.md)
 - [IPv4 范围](intune-shared-ipv4range.md)
 - [IPv6 范围](intune-shared-ipv6range.md)
+- [键长值对](intune-shared-keylongvaluepair.md)
 - [密钥大小](intune-shared-keysize.md)
 - [密钥存储提供程序选项](intune-shared-keystorageprovideroption.md)
 - [密钥使用情况](intune-shared-keyusages.md)
@@ -78,7 +79,7 @@ ms.locfileid: "58264078"
 - [移动应用疑难解答事件](intune-shared-mobileapptroubleshootingevent.md)
 - [所有者类型](intune-shared-ownertype.md)
 - [代理域](intune-shared-proxieddomain.md)
-- [Report](intune-shared-report.md)
+- [报告](intune-shared-report.md)
 - [报表根目录](intune-shared-reportroot.md)
 - [RGB 颜色](intune-shared-rgbcolor.md)
 - [按帐户类型运行](intune-shared-runasaccounttype.md)
