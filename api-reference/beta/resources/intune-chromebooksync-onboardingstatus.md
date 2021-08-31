@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d0f0ef366f41d2471ded4e1cfea4f9d408af9381d483f79a09840ac7c544b80a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 374d7384a50ebe13aa620adc0e1e3382127e8292
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54206765"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806073"
 ---
 # <a name="onboardingstatus-enum-type"></a>onboardingStatus 枚举类型
 
@@ -26,10 +26,9 @@ ms.locfileid: "54206765"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|未知|
-|inprogress|1 |进行中|
-|已载入|2 |已载入|
-|failed|3 |已失败|
-
+|inprogress|1|进行中|
+|已载入|2|已载入|
+|failed|3|已失败|
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 55c7cd82c7ca8aa95d5be7f4440e1c51d69d21003b7e13dd3825de8e31be3681
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 87c23c0ee09b03f3fdac18a91e86d57b97714e8a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54136392"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804853"
 ---
 # <a name="edgesearchengine-resource-type"></a>edgeSearchEngine 资源类型
 
@@ -46,7 +46,6 @@ ms.locfileid: "54136392"
   "edgeSearchEngineType": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7a8f1329229261c894b3157dc23c1daad05a2b71c46c2efcfe6c23d07fb55d57
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bae783378706210ea798b325fe99db800e0052b9
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178910"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803473"
 ---
 # <a name="managedappremediationaction-enum-type"></a>managedAppRemediationAction 枚举类型
 
@@ -26,9 +26,8 @@ ms.locfileid: "54178910"
 |成员|值|说明|
 |:---|:---|:---|
 |block|0|应用和要阻止的相应公司数据|
-|wipe|1 |要擦除的应用和相应的公司数据|
-|warn|2 |应用和要警告的相应用户|
-
+|wipe|1|要擦除的应用和相应的公司数据|
+|warn|2|应用和要警告的相应用户|
 
 
 

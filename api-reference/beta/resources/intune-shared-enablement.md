@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 71b3e3566e7b459f24bdec10af022f4b4a0c9dae39010200d018d4c2291e78ae
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2b0b91f1e426ebdb7ebe52c0e16a3d8b083dfdb7
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54206135"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795555"
 ---
 # <a name="enablement-enum-type"></a>enablement 枚举类型
 
@@ -26,9 +26,8 @@ ms.locfileid: "54206135"
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|设备默认值，无意图。|
-|enabled|1 |在设备上启用设置。|
-|disabled|2 |在设备上禁用设置。|
-
+|enabled|1|在设备上启用设置。|
+|disabled|2|在设备上禁用设置。|
 
 
 

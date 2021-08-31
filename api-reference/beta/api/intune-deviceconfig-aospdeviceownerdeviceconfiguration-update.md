@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ab80224c2b7498c6c7e4bb262c15689ab79f8137f1fc63f3441eee700de1b91f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9f469e01f81fead7c3297506c330ac386cf6a59f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54195972"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804426"
 ---
 # <a name="update-aospdeviceownerdeviceconfiguration"></a>更新 aospDeviceOwnerDeviceConfiguration
 
@@ -45,7 +45,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -55,21 +55,21 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|布尔值|指示基础设备配置是否支持分配范围标记。 当此值为 false 且实体对范围用户不可见时，不允许分配给 ScopeTags 属性。 这适用于在 Silverlight 中创建的旧版策略，可通过在 Azure 门户中删除和重新创建策略来解决。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|指示基础设备配置是否支持分配范围标记。 当此值为 false 且实体对范围用户不可见时，不允许分配给 ScopeTags 属性。 这适用于在 Silverlight 中创建的旧版策略，可通过在 Azure 门户中删除和重新创建策略来解决。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|此策略的操作系统版本适用性。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|description|字符串|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|appsAllowInstallFromUnknownSources|布尔值|指示是否允许用户启用未知源设置。|
+|appsAllowInstallFromUnknownSources|Boolean|指示是否允许用户启用未知源设置。|
 |bluetoothBlocked|Boolean|指示是否禁用蓝牙的使用。 设置为 true 时，无法在设备上启用蓝牙。|
-|bluetoothBlockConfiguration|布尔值|指示是否阻止用户配置蓝牙。|
-|bluetoothBlockContactSharing|布尔值|指示是否阻止用户通过蓝牙共享联系人。|
+|bluetoothBlockConfiguration|Boolean|指示是否阻止用户配置蓝牙。|
+|bluetoothBlockContactSharing|Boolean|指示是否阻止用户通过蓝牙共享联系人。|
 |cameraBlocked|Boolean|指示是否禁用相机的使用。|
 |cellularBlockWiFiTethering|Boolean|指示是否阻止 Wi-Fi 网络共享。|
 |factoryResetBlocked|Boolean|指示设置中的恢复出厂设置选项是否已禁用。|
@@ -78,12 +78,12 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |passwordRequiredType|[androidDeviceOwnerRequiredPasswordType](../resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)|指示设备上所需的最低密码质量。 可取值为：`deviceDefault`、`required`、`numeric`、`numericComplex`、`alphabetic`、`alphanumeric`、`alphanumericWithSymbols`、`lowSecurityBiometric`、`customPassword`。|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|指示擦除设备之前用户可以输入错误密码次数。 有效值为 4 至 11|
 |screenCaptureBlocked|Boolean|指示是否禁用屏幕截图功能。|
-|securityAllowDebuggingFeatures|布尔值|指示是否阻止用户在设备上启用调试功能。|
-|storageAllowUsb|布尔值|指示是否阻止 USB 存储。|
-|storageBlockExternalMedia|布尔值|指示是否阻止外部媒体。|
-|storageBlockUsbFileTransfer|布尔值|指示是否阻止 USB 文件传输。|
-|backupBlocked|布尔值|指示是否阻止备份服务。|
-|wifiBlockEditConfigurations|布尔值|指示是否阻止用户编辑 wifi 连接设置。|
+|securityAllowDebuggingFeatures|Boolean|指示是否阻止用户在设备上启用调试功能。|
+|storageAllowUsb|Boolean|指示是否阻止 USB 存储。|
+|storageBlockExternalMedia|Boolean|指示是否阻止外部媒体。|
+|storageBlockUsbFileTransfer|Boolean|指示是否阻止 USB 文件传输。|
+|backupBlocked|Boolean|指示是否阻止备份服务。|
+|wifiBlockEditConfigurations|Boolean|指示是否阻止用户编辑 wifi 连接设置。|
 
 
 
@@ -210,7 +210,6 @@ Content-Length: 1893
   "wifiBlockEditConfigurations": true
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 867dba54fd94c86dee017f4c9716eacabd3bee98a0ea2de2fbc6f3c513fc434e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ff23b00466404bb58d43184a90a4f00dfd43fa2a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54248409"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803992"
 ---
 # <a name="deviceprotectionoverview-resource-type"></a>deviceProtectionOverview 资源类型
 
@@ -63,7 +63,6 @@ ms.locfileid: "54248409"
   "pendingQuickScanDeviceCount": 1024
 }
 ```
-
 
 
 

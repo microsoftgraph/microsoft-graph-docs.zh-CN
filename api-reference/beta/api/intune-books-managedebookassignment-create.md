@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 74d46864c5df8c050ae80bf82af3451a6c6e4eacebfd315a8ca6e01f563fe409
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 39fc5ebcbd0ee13e84d52fab62891a729749d7b4
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54204623"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58794270"
 ---
 # <a name="create-managedebookassignment"></a>创建 managedEBookAssignment
 
@@ -43,7 +43,7 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/assignments
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -100,7 +100,6 @@ Content-Length: 404
   "installIntent": "required"
 }
 ```
-
 
 
 

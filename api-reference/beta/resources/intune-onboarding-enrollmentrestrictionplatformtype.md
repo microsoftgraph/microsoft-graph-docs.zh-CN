@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a4fcfa9ebb12c51a730bf49ac627901c0be0377a
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 773674557c64e339d912e0471cb6394f1fa0f465
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58259298"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787825"
 ---
 # <a name="enrollmentrestrictionplatformtype-enum-type"></a>enrollmentRestrictionPlatformType 枚举类型
 
@@ -26,14 +26,13 @@ ms.locfileid: "58259298"
 |成员|值|说明|
 |:---|:---|:---|
 |allPlatforms|0|适用于所有平台|
-|ios|1 |iOS/iPadOS 设备|
-|windows|2 |Windows 设备|
-|windowsPhone|3 |Windows Phone设备|
+|ios|1|iOS/iPadOS 设备|
+|windows|2|Windows 设备|
+|windowsPhone|3|Windows Phone设备|
 |android|4 |Android 设备|
 |androidForWork|5 |Android for Work 设备|
 |androidAosp|6 |Android AOSP 设备|
 |mac|7 |macOS 设备|
-
 
 
 

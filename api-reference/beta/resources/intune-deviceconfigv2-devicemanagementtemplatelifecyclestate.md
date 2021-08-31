@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 008da93c5ff7c7d2142d9dbd776c603135bf433d7bae22455ebc4fd228d8357f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9c252797857f40aaeeb84efb3330c24da3bf8daf
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54219939"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801793"
 ---
 # <a name="devicemanagementtemplatelifecyclestate-enum-type"></a>deviceManagementTemplateLifecycleState 枚举类型
 
@@ -27,11 +27,10 @@ ms.locfileid: "54219939"
 |:---|:---|:---|
 |无效|0|Invalid|
 |draft|10 |Draft|
-|active|20|活动文件|
+|active|20|活动|
 |superseded|30|已取代|
 |已弃用|40|不推荐使用|
 |已停用|50|已停用|
-
 
 
 

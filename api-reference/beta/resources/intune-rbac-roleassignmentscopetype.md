@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 75033203a5a3cf8f345ba9aa62e068a62242674c671c7accba3c21805d1ea988
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3de3f4852b25228e35aa5834fe8e984c6de953bc
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54133101"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58802941"
 ---
 # <a name="roleassignmentscopetype-enum-type"></a>roleAssignmentScopeType 枚举类型
 
@@ -26,10 +26,9 @@ ms.locfileid: "54133101"
 |成员|值|说明|
 |:---|:---|:---|
 |resourceScope|0|允许将工作分配指定 ResourceScopes。|
-|allDevices|1 |允许分配至所有 Intune 设备。|
-|allLicensedUsers|2 |允许分配给所有 Intune 许可用户。|
-|allDevicesAndLicensedUsers|3 |允许分配至所有 Intune 设备和许可用户。|
-
+|allDevices|1|允许分配至所有 Intune 设备。|
+|allLicensedUsers|2|允许分配给所有 Intune 许可用户。|
+|allDevicesAndLicensedUsers|3|允许分配至所有 Intune 设备和许可用户。|
 
 
 

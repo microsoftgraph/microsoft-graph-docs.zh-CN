@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5f2e4073582e90396f630c037757f2b70a8e4ad6081ab6aa0fa0fe095910979e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 45391c8508ed62de0c0418ca4fc0c4619dfbd990
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54226838"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803586"
 ---
 # <a name="revokelicenses-action"></a>revokeLicenses 操作
 
@@ -43,7 +43,7 @@ POST /deviceAppManagement/vppTokens/{vppTokenId}/revokeLicenses
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -82,7 +82,6 @@ Content-length: 72
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

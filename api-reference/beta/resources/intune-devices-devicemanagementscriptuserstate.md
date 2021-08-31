@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ac1ada80cac67de4c2461d4c747e0fe059ea6ef126e11f73d28a940141764578
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7ce60e5369fd93cd6721b56d15906203aee804f8
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54145318"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58802983"
 ---
 # <a name="devicemanagementscriptuserstate-resource-type"></a>deviceManagementScriptUserState 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54145318"
 
 包含设备管理脚本的用户运行状态的属性。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceManagementScriptUserStates](../api/intune-devices-devicemanagementscriptuserstate-list.md)|[deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md) 集合|列出 [deviceManagementScriptUserState 对象的属性和](../resources/intune-devices-devicemanagementscriptuserstate.md) 关系。|
@@ -37,7 +37,7 @@ ms.locfileid: "54145318"
 |id|String|设备管理脚本用户状态实体的键。 此属性是只读的。|
 |successDeviceCount|Int32|特定用户的成功设备计数。|
 |errorDeviceCount|Int32|特定用户的错误设备计数。|
-|userPrincipalName|字符串|特定用户的用户原则名称。|
+|userPrincipalName|String|特定用户的用户原则名称。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -61,7 +61,6 @@ ms.locfileid: "54145318"
   "userPrincipalName": "String"
 }
 ```
-
 
 
 

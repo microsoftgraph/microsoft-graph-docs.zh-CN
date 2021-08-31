@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2929a0434f4d1152dd3ce64585850b736e180af39326f023538bcd9a0f098d57
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 82cc07ff207f74593543c5a1a70c4fe524d92f17
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54133199"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803768"
 ---
 # <a name="userexperienceanalyticscategory-resource-type"></a>userExperienceAnalyticsCategory 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54133199"
 
 用户体验分析类别实体包含类别的各种指标的分数和见解。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 userExperienceAnalyticsCategory](../api/intune-devices-userexperienceanalyticscategory-get.md)|[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)|读取 [userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md) 对象的属性和关系。|
@@ -73,7 +73,6 @@ ms.locfileid: "54133199"
   "state": "String"
 }
 ```
-
 
 
 

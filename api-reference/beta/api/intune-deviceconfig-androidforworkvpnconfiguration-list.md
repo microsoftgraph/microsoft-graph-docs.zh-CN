@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 76926634e53ebb2e790bbd4f3726fae985a611098260236eb89829fa3a2478c5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 51f1e972f1358bac553c8d6ee1a3492ef06a99dd
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54191815"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804979"
 ---
 # <a name="list-androidforworkvpnconfigurations"></a>列出 androidForWorkVpnConfigurations
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -135,7 +135,6 @@ Content-Length: 2203
   ]
 }
 ```
-
 
 
 

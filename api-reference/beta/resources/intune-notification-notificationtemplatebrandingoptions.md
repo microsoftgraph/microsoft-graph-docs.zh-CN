@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 736187e0170b86ce5bda8e7cb4988e94874ca7121077c880f840b6d4fba4a058
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 040efede4197433ee7189663d466a757f8b7f4a6
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54244559"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803242"
 ---
 # <a name="notificationtemplatebrandingoptions-enum-type"></a>notificationTemplateBrandingOptions 枚举类型
 
@@ -26,11 +26,10 @@ ms.locfileid: "54244559"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|无品牌。|
-|includeCompanyLogo|1 |包括公司徽标。|
-|includeCompanyName|2 |包括公司名称。|
+|includeCompanyLogo|1|包括公司徽标。|
+|includeCompanyName|2|包括公司名称。|
 |includeContactInformation|4 |包括联系人信息。|
 |includeCompanyPortalLink|8 |包括公司门户链接。|
-
 
 
 

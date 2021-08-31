@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8a7b3d13573aabba4203a56bf99c4e3c4771e080ec6b217ee095c901a57e5613
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c791203755ba5b49871ef32db157ea797bc6187f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54206688"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801842"
 ---
 # <a name="edgehomebuttonloadsstartpage-resource-type"></a>edgeHomeButtonLoadsStartPage 资源类型
 
@@ -44,7 +44,6 @@ ms.locfileid: "54206688"
   "@odata.type": "#microsoft.graph.edgeHomeButtonLoadsStartPage"
 }
 ```
-
 
 
 

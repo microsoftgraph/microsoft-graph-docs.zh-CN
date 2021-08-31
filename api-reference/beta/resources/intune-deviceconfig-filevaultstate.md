@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9e77c0005dc7dd7cab430fa628cc034919e9fce9cbc3f9171c4bee3846c7c12a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 942612457d21b587ccfcfff8720216ade2e1be72
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249992"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795548"
 ---
 # <a name="filevaultstate-enum-type"></a>fileVaultState 枚举类型
 
@@ -26,10 +26,9 @@ FileVault 状态
 |成员|值|说明|
 |:---|:---|:---|
 |success|0|FileVault 状态成功|
-|driveEncryptedByUser|1 |FileVault 已由用户启用，并且未由策略管理|
-|userDeferredEncryption|2 |FileVault 策略已成功安装，但用户尚未开始加密|
+|driveEncryptedByUser|1|FileVault 已由用户启用，并且未由策略管理|
+|userDeferredEncryption|2|FileVault 策略已成功安装，但用户尚未开始加密|
 |escrowNotEnabled|4 |未启用 FileVault 恢复密钥托管|
-
 
 
 

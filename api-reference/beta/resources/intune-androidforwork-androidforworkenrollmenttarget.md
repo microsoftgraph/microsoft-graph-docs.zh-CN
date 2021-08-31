@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 55e00e74716240047d373a4e6ae4263a044e979444333d573a49dbcf8e202494
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: aeeb2484c255536425eb3faf61116d987b12d7b1
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54243110"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58788498"
 ---
 # <a name="androidforworkenrollmenttarget-enum-type"></a>androidForWorkEnrollmentTarget 枚举类型
 
@@ -26,10 +26,9 @@ Android for Work 帐户的设备管理目标类型
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|尚未记录|
-|all|1 |尚未记录|
-|目标|2 |尚未记录|
-|targetedAsEnrollmentRestrictions|3 |尚未记录|
-
+|all|1|尚未记录|
+|目标|2|尚未记录|
+|targetedAsEnrollmentRestrictions|3|尚未记录|
 
 
 

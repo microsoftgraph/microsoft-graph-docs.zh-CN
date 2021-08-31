@@ -1,18 +1,18 @@
 ---
-title: 获取 managedMobileLobApp
-description: 读取 managedMobileLobApp 对象的属性和关系。
+title: 获取 windowsDriverUpdateProfile
+description: 读取 windowsDriverUpdateProfile 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8adb118203769ce58d530d77a9c6a5afc3815df1
+ms.openlocfilehash: abc09d1f37b4fdbd5ce2f973c29d3e479fd5ffec
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804454"
+ms.locfileid: "58805891"
 ---
-# <a name="get-managedmobilelobapp"></a>获取 managedMobileLobApp
+# <a name="get-windowsdriverupdateprofile"></a>获取 windowsDriverUpdateProfile
 
 命名空间：microsoft.graph
 
@@ -20,16 +20,16 @@ ms.locfileid: "58804454"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-读取 [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md) 对象的属性和关系。
+读取 [windowsDriverUpdateProfile](../resources/intune-softwareupdate-windowsdriverupdateprofile.md) 对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -37,9 +37,7 @@ ms.locfileid: "58804454"
 }
 -->
 ``` http
-GET /deviceAppManagement/mobileApps/{mobileAppId}
-GET /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/app
-GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app
+GET /deviceManagement/windowsDriverUpdateProfiles/{windowsDriverUpdateProfileId}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -55,14 +53,14 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法会在响应正文中返回 `200 OK` 响应代码和 [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [windowsDriverUpdateProfile](../resources/intune-softwareupdate-windowsdriverupdateprofile.md) 对象。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
+GET https://graph.microsoft.com/beta/deviceManagement/windowsDriverUpdateProfiles/{windowsDriverUpdateProfileId}
 ```
 
 ### <a name="response"></a>响应
@@ -70,42 +68,23 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1214
+Content-Length: 539
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.managedMobileLobApp",
-    "id": "cded7cc4-7cc4-cded-c47c-edcdc47cedcd",
+    "@odata.type": "#microsoft.graph.windowsDriverUpdateProfile",
+    "id": "55bcc52a-c52a-55bc-2ac5-bc552ac5bc55",
     "displayName": "Display Name value",
     "description": "Description value",
-    "publisher": "Publisher value",
-    "largeIcon": {
-      "@odata.type": "microsoft.graph.mimeContent",
-      "type": "Type value",
-      "value": "dmFsdWU="
-    },
+    "approvalType": "automatic",
+    "deviceReporting": 15,
+    "newUpdates": 10,
+    "deploymentDeferralInDays": 8,
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-    "isFeatured": true,
-    "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
-    "informationUrl": "https://example.com/informationUrl/",
-    "owner": "Owner value",
-    "developer": "Developer value",
-    "notes": "Notes value",
-    "uploadState": 11,
-    "publishingState": "processing",
-    "isAssigned": true,
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
-    ],
-    "dependentAppCount": 1,
-    "supersedingAppCount": 3,
-    "supersededAppCount": 2,
-    "appAvailability": "lineOfBusiness",
-    "version": "Version value",
-    "committedContentVersion": "Committed Content Version value",
-    "fileName": "File Name value",
-    "size": 4
+    ]
   }
 }
 ```
