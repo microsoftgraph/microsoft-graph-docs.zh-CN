@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: b58d90ef3be8a723190909ee960f659de6f6c58b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 7274d0b8425115afcfa7a7a18fd2ea2044e01e48
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049063"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804587"
 ---
 # <a name="reportroot-getsharepointsiteusagedetail"></a>reportRoot: getSharePointSiteUsageDetail
 
@@ -32,7 +32,7 @@ ms.locfileid: "52049063"
 | 委派（个人 Microsoft 帐户） | 不支持。                           |
 | 应用                            | Reports.Read.All                         |
 
-**注意**：若要获得委派权限以允许应用代表用户读取服务使用情况报告，租户管理员必须事先为用户分配适当的 Azure AD 受限管理员角色。 有关更多详细信息，请参阅[授权 API 读取 Microsoft 365 使用情况报告](/graph/reportroot-authorization)。
+**注意**：若要获得委派权限以允许应用代表用户读取服务使用情况报告，租户管理员必须事先为用户分配适当的 Azure AD 受限管理员角色。有关更多详细信息，请参阅 [ API 授权，读取 Microsoft 365使用情况报告](/graph/reportroot-authorization)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -56,7 +56,7 @@ GET /reports/getSharePointSiteUsageDetail(date={date_value})
 
 此方法支持使用 `$format`、`$top` 和 `$skipToken` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型为 text/csv。 但是，如果要指定输出类型，可以使用 OData 查询参数$format text/csv 或 application/json。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称          | 说明               |
 | :------------ | :------------------------ |
@@ -197,18 +197,18 @@ Content-Length: 484
       "ownerPrincipalName": "ownerPrincipalName-value", 
       "isDeleted": false, 
       "lastActivityDate": "2017-09-01", 
-      "SiteSensitivityLabelId": "SiteSensitivityLabelId-value",
-      "ExternalSharing": false,
-      "UnmanagedDevicePolicy": "UnmanagedDevicePolicy-value",
-      "GeoLocation": "GeoLocation-value",
+      "siteSensitivityLabelId": "SiteSensitivityLabelId-value",
+      "externalSharing": false,
+      "unmanagedDevicePolicy": "UnmanagedDevicePolicy-value",
+      "geoLocation": "GeoLocation-value",
       "fileCount": 170, 
       "activeFileCount": 25, 
       "pageViewCount": 7, 
       "visitedPageCount": 3, 
-      "AnonymousLinkCount": 5,
-      "CompanyLinkCount": 8,
-      "SecureLinkForGuestCount": 13,
-      "SecureLinkForMemberCount": 11,
+      "anonymousLinkCount": 5,
+      "companyLinkCount": 8,
+      "secureLinkForGuestCount": 13,
+      "secureLinkForMemberCount": 11,
       "storageUsedInBytes": 63442116, 
       "storageAllocatedInBytes": 2748779094400, 
       "rootWebTemplate": "Publishing Site", 

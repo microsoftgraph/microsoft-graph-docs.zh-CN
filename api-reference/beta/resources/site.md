@@ -3,15 +3,15 @@ author: JeremyKelley
 description: 网站资源提供 SharePoint 网站的元数据和关系。
 ms.date: 09/10/2017
 title: Site
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: a8cab7859c68224acc734a88f941a952ca82798b
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 7959908fb0bfe74cb4cbf1ba242988e3ecbf5848
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51472105"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696195"
 ---
 # <a name="site-resource-type"></a>site 资源类型
 
@@ -74,7 +74,7 @@ ms.locfileid: "51472105"
 
 | 属性名称            | 类型               | 说明
 |:-------------------------|:-------------------|:-----------------------------
-| **id**                   | string             | 项的[唯一标识符](#id-property)。 只读。
+| **id**                   | string             | 项的[唯一标识符](#id-property)。只读。
 | **createdDateTime**      | DateTimeOffset     | 创建项目的日期和时间。只读。
 | **说明**          | string             | 网站的描述性文本。
 | **eTag**                 | string             | 该项目的 ETag。只读。                                                                  |
@@ -91,7 +91,7 @@ ms.locfileid: "51472105"
 * 网站集主机名称 (contoso.sharepoint.com)
 * 网站集的唯一 ID (GUID)
 * 网站的唯一 ID (GUID)
-  
+
 `root` 标识符经常用于引用给定目标的根网站，如下所示：
 
 * `/sites/root`：租户根网站。
@@ -109,7 +109,7 @@ ms.locfileid: "51472105"
 | **项目**         | 集合 ([baseItem][])         | 用于处理包含在此网站中的任何项目。不能枚举该集合。
 | **lists**         | Collection([list][])             | 此网站下的列表集合。
 | **pages**         | Collection([sitePage][])         | 此网站的 SitePages 列表中的页面集合。
-| **权限**   | 集合([权限][])         | 与网站关联的权限。 可为空。
+| **权限**   | 集合([权限][])         | 与网站关联的权限。空。
 | **sites**         | 集合（[网站][]）             | 网站下方的子网站的集合。
 | **termStore**     | [microsoft.graph.termStore.store]  | 此站点下的术语库。
 | **externalColumns**     | 集合（[columnDefinition][]）  | 网站中可用列定义的集合，从当前网站的父层次结构中的网站引用。

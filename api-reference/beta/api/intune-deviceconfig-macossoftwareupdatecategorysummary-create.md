@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bcfd3ad52cb16f3a328c6207a652fc3cc5273d468f7a21a1c691e6260ba68a03
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fc7f6dc68ba097c1b835db16b8d0905d3b3b23f4
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54132331"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795737"
 ---
 # <a name="create-macossoftwareupdatecategorysummary"></a>创建 macOSSoftwareUpdateCategorySummary
 
@@ -43,7 +43,7 @@ POST /deviceManagement/macOSSoftwareUpdateAccountSummaries/{macOSSoftwareUpdateA
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,10 +54,10 @@ POST /deviceManagement/macOSSoftwareUpdateAccountSummaries/{macOSSoftwareUpdateA
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|displayName|字符串|报告的名称|
+|displayName|String|报告的名称|
 |deviceId|String|设备 ID。|
 |userId|String|用户 ID。|
-|updateCategory|[macOSSoftwareUpdateCategory](../resources/intune-deviceconfig-macossoftwareupdatecategory.md)|软件更新类型。 可取值为：`critical`、`configurationDataFile`、`firmware`、`other`。|
+|updateCategory|[macOSSoftwareUpdateCategory](../resources/intune-deviceconfig-macossoftwareupdatecategory.md)|软件更新类型。 可能的值是：`critical`、`configurationDataFile`、`firmware`、`other`。|
 |successfulUpdateCount|Int32|设备上成功更新的数量|
 |failedUpdateCount|Int32|设备上失败的更新数|
 |totalUpdateCount|Int32|设备上的总更新数|
@@ -110,7 +110,6 @@ Content-Length: 422
   "lastUpdatedDateTime": "2017-01-01T00:00:56.8321556-08:00"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b469baabe89ea5a05477fb1734fe0bfc4b2a63d103cb050efb541cac020e6f0a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d22fa172cf3052d1fcd1327a52a5cd1d49780c33
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54251167"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58802444"
 ---
 # <a name="grouppolicyoperation-resource-type"></a>groupPolicyOperation 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54251167"
 
 实体表示组策略操作。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 groupPolicyOperations](../api/intune-grouppolicy-grouppolicyoperation-list.md)|[groupPolicyOperation](../resources/intune-grouppolicy-grouppolicyoperation.md) 集合|列出 [groupPolicyOperation 对象的属性和](../resources/intune-grouppolicy-grouppolicyoperation.md) 关系。|
@@ -35,7 +35,7 @@ ms.locfileid: "54251167"
 |属性|类型|说明|
 |:---|:---|:---|
 |operationType|[groupPolicyOperationType](../resources/intune-grouppolicy-grouppolicyoperationtype.md)|组策略操作的类型。 可取值为：`none`、`upload`、`uploadNewVersion`、`addLanguageFiles`、`removeLanguageFiles`、`updateLanguageFiles` 或 `remove`。|
-|operationStatus|[groupPolicyOperationStatus](../resources/intune-grouppolicy-grouppolicyoperationstatus.md)|组策略操作状态。 可取值为：`unknown`、`inProgress`、`success`、`failed`。|
+|operationStatus|[groupPolicyOperationStatus](../resources/intune-grouppolicy-grouppolicyoperationstatus.md)|组策略操作状态。 可能的值是：`unknown`、`inProgress`、`success`、`failed`。|
 |statusDetails|String|组策略操作状态详细信息。|
 |id|String|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。|
@@ -61,7 +61,6 @@ ms.locfileid: "54251167"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

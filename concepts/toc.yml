@@ -163,7 +163,7 @@ items:
             href: cloud-communications-phone-number.md
       - name: 合规性分数（预览版）
         href: compliance-concept-overview.md
-      - name: 连接外部内容（预览版）
+      - name: 连接外部内容
         displayName: connectors
         items:
           - name: Microsoft Graph 连接器概述
@@ -248,6 +248,8 @@ items:
             href: education-rubric-overview.md
           - name: 上传文件
             href: education-upload-resource-overview.md
+          - name: 分配和提交状态转换
+            href: assignments-submissions-states-transition.md
       - name: 文件
         href: onedrive-concept-overview.md
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'

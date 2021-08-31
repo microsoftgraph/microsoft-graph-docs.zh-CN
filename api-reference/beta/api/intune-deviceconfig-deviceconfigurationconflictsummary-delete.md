@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ea7b474bb73e5ebde2a8b6ad7688731dcf2a2b9bdeb71a7a6a275506b5125048
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 195635e8fda154d08aa54f75b19335ea1e2593fc
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54201697"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803943"
 ---
 # <a name="delete-deviceconfigurationconflictsummary"></a>删除 deviceConfigurationConflictSummary
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/deviceConfigurationConflictSummary/{deviceConfiguration
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurationConf
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

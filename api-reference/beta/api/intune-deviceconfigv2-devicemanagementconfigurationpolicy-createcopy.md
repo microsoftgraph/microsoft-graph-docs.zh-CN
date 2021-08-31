@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 20abdda3167c0e9bf2188ebd798301909dbfba3a
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 2813975e711b4131009147ba456989bed1b31607
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58265789"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804727"
 ---
 # <a name="createcopy-action"></a>createCopy 操作
 
@@ -29,7 +29,7 @@ ms.locfileid: "58265789"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -44,7 +44,7 @@ POST /deviceManagement/reusablePolicySettings/{deviceManagementReusablePolicySet
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -55,7 +55,7 @@ POST /deviceManagement/reusablePolicySettings/{deviceManagementReusablePolicySet
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|尚未记录|
-|description|字符串|尚未记录|
+|description|String|尚未记录|
 
 
 
@@ -111,7 +111,6 @@ Content-Length: 918
   }
 }
 ```
-
 
 
 

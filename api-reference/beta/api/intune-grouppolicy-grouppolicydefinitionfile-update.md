@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: addedd9da934696c2cafc16e46ef2e2879b996ba2fcfb5629d72eec8227dd142
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3a98bc2553feb2ab71be42eb9e3009cb8cf2f780
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54210720"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804097"
 ---
 # <a name="update-grouppolicydefinitionfile"></a>更新 groupPolicyDefinitionFile
 
@@ -45,7 +45,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -55,14 +55,14 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|字符串|ADMX 文件的本地化友好名称。|
-|description|String|ADMX 文件中策略设置的本地化说明。 默认值为空白。|
-|languageCodes|String collection|ADMX 文件支持的语言代码。|
+|displayName|String|ADMX 文件的本地化友好名称。|
+|description|字符串|ADMX 文件中策略设置的本地化说明。 默认值为空白。|
+|languageCodes|字符串集合|ADMX 文件支持的语言代码。|
 |targetPrefix|字符串|指定引用 ADMX 文件内的命名空间的逻辑名称。|
-|targetNamespace|String|指定用于标识 ADMX 文件内的命名空间的 URI。|
+|targetNamespace|字符串|指定用于标识 ADMX 文件内的命名空间的 URI。|
 |policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|指定组策略的类型。 可取值为：`admxBacked`、`admxIngested`。|
-|revision|String|与文件关联的修订版本。|
-|id|字符串|实体的键。|
+|revision|字符串|与文件关联的修订版本。|
+|id|String|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。|
 
 
@@ -115,7 +115,6 @@ Content-Length: 471
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

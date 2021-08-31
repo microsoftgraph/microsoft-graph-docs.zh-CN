@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d3b435caf5cd8bb3c514eeb602f2397a6e93322754bb4313536ffb33ace5f727
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8ffc994a7f6be02a361ea21422bfefccf31352aa
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54244713"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797245"
 ---
 # <a name="userexperienceanalyticsdevicestartuphistory-resource-type"></a>userExperienceAnalyticsDeviceStartupHistory 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54244713"
 
 用户体验分析设备启动历史记录实体包含设备启动性能历史记录详细信息。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 userExperienceAnalyticsDeviceStartupHistories](../api/intune-devices-userexperienceanalyticsdevicestartuphistory-list.md)|[userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md) 集合|列出 [userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md) 对象的属性和关系。|
@@ -45,12 +45,12 @@ ms.locfileid: "54244713"
 |coreLoginTimeInMs|Int32|用户体验分析设备核心登录时间（以毫秒为单位）。|
 |responsiveDesktopTimeInMs|Int32|用户体验分析响应式桌面时间（以毫秒为单位）。|
 |totalLoginTimeInMs|Int32|用户体验分析设备登录总时间（以毫秒为单位）。|
-|isFirstLogin|布尔值|用户体验分析设备第一次登录。|
-|isFeatureUpdate|布尔值|用户体验分析设备启动记录是一项功能更新。|
+|isFirstLogin|Boolean|用户体验分析设备第一次登录。|
+|isFeatureUpdate|Boolean|用户体验分析设备启动记录是一项功能更新。|
 |operatingSystemVersion|String|用户体验分析设备启动记录的操作系统版本。|
 |restartCategory|[userExperienceAnalyticsOperatingSystemRestartCategory](../resources/intune-devices-userexperienceanalyticsoperatingsystemrestartcategory.md)|操作系统重启类别。 可取值为：`unknown`、`restartWithUpdate`、`restartWithoutUpdate`、`blueScreen`、`shutdownWithUpdate`、`shutdownWithoutUpdate`、`longPowerButtonPress`、`bootError`、`update`。|
 |restartStopCode|String|操作系统重新启动停止代码。 这将显示可用于查找蓝屏原因的错误检查代码。|
-|restartFaultBucket|字符串|操作系统重新启动故障存储桶。 故障存储桶用于查找有关系统崩溃的其他信息。|
+|restartFaultBucket|String|操作系统重新启动故障存储桶。 故障存储桶用于查找有关系统崩溃的其他信息。|
 
 ## <a name="relationships"></a>关系
 无
@@ -85,7 +85,6 @@ ms.locfileid: "54244713"
   "restartFaultBucket": "String"
 }
 ```
-
 
 
 

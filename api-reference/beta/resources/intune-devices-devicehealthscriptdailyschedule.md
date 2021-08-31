@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 92c65e8434a709fc5270cb1f5193d9341efca1e1e32131d76d339a80f4e52e28
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0e84b59510a50510abfd07e5eafd09b652c4aeb0
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54244741"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58770999"
 ---
 # <a name="devicehealthscriptdailyschedule-resource-type"></a>deviceHealthScriptDailySchedule 资源类型
 
@@ -29,7 +29,7 @@ ms.locfileid: "54244741"
 |属性|类型|说明|
 |:---|:---|:---|
 |interval|Int32|每小时计划每 x 小时、每 x 天（每日计划每 x 天、每周计划每 x 周、每月计划每 x 个月）的 x 值。 有效值 1 到 23 继承自 [deviceHealthScriptRunSchedule](../resources/intune-devices-devicehealthscriptrunschedule.md)|
-|useUtc|布尔值|指示时间是 Utc 还是客户端本地时间。 继承自 [deviceHealthScriptTimeSchedule](../resources/intune-devices-devicehealthscripttimeschedule.md)|
+|useUtc|Boolean|指示时间是 Utc 还是客户端本地时间。 继承自 [deviceHealthScriptTimeSchedule](../resources/intune-devices-devicehealthscripttimeschedule.md)|
 |time|TimeOfDay|计划运行脚本的时间。 此集合最多可包含 20 个元素。 继承自 [deviceHealthScriptTimeSchedule](../resources/intune-devices-devicehealthscripttimeschedule.md)|
 
 ## <a name="relationships"></a>关系
@@ -50,7 +50,6 @@ ms.locfileid: "54244741"
   "time": "String (time of day)"
 }
 ```
-
 
 
 

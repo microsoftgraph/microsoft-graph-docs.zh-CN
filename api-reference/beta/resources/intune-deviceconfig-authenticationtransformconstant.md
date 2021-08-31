@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 57c152c5c280369f6515cbc451b7797100d78e1cd703762addaff2f713c12c96
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0e20c5566436bcc76801411b6c2cb6334253eccb
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54232837"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58788694"
 ---
 # <a name="authenticationtransformconstant-enum-type"></a>authenticationTransformConstant 枚举类型
 
@@ -26,12 +26,11 @@ IKEv2 连接类型的 Windows 10 VPN 策略的身份验证转换值。
 |成员|值|说明|
 |:---|:---|:---|
 |md5_96|0|MD596|
-|sha1_96|1 |SHA196|
-|sha_256_128|2 |SHA256128|
-|aes128Gcm|3 |GCMAES128|
+|sha1_96|1|SHA196|
+|sha_256_128|2|SHA256128|
+|aes128Gcm|3|GCMAES128|
 |aes192Gcm|4 |GCMAES192|
 |aes256Gcm|5 |GCMAES256|
-
 
 
 

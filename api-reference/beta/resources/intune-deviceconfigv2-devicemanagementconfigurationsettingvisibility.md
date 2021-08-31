@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: cf83b55dff198fb549b61679b7fcc8c0413d2617c3a7b4d34f9ae4867c7d4deb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f974bfaeffacb688f1f822661e8ed902bea7fa97
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54164228"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58788960"
 ---
 # <a name="devicemanagementconfigurationsettingvisibility-enum-type"></a>deviceManagementConfigurationSettingVisibility 枚举类型
 
@@ -26,9 +26,8 @@ ms.locfileid: "54164228"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|不可见|
-|settingsCatalog|1 |对设置目录 UX 可见|
-|template|2 |对模板可见|
-
+|settingsCatalog|1|对设置目录 UX 可见|
+|template|2|对模板可见|
 
 
 

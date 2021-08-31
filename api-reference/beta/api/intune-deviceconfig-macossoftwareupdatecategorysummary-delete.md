@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: db2495ba27530f32372f9b1cc43a800407d01cbe414132a38a591ba7d9bfb3ad
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 570d068e64c9ffd9d6a45a0708e2f77b3f2d28cd
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54132338"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795730"
 ---
 # <a name="delete-macossoftwareupdatecategorysummary"></a>删除 macOSSoftwareUpdateCategorySummary
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/macOSSoftwareUpdateAccountSummaries/{macOSSoftwareUpdat
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/macOSSoftwareUpdateAcco
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

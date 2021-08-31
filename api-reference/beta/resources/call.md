@@ -2,15 +2,15 @@
 title: call 资源类型
 description: 当应用程序有传入呼叫或应用程序通过 `app/calls` 上的 `POST` 创建新的传出呼叫时，将创建 **call** 资源。
 author: ananmishr
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 0ba11a95c5e62ec0d4edbabcdf82631ab967e82a
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: c98483bd92db368b997692b1856ce6a475c15d37
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50955026"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695125"
 ---
 # <a name="call-resource-type"></a>call 资源类型
 
@@ -35,7 +35,7 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 ```
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法                                                             | 返回类型                                                 | 说明                                                                     |
 |:-------------------------------------------------------------------|:------------------------------------------------------------|:--------------------------------------------------------------------------------|
@@ -74,19 +74,19 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | 属性            | 类型                                                                                                   | 说明                                                                                                                                                                                         |
 | :------------------ | :------------------------------------------------------------------------------------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | activeModalities    | modality 集合                                                                                      | 活动模态的列表。 可取值为：`unknown`、`audio`、`video`、`videoBasedScreenSharing`、`data`。 只读。                                                    |
-| answeredBy          | [participantInfo](participantinfo.md)                                                                  | 已应答呼叫的参与者。 只读。                                                                                                                                |
-| callRoutes          | [callRoute](callroute.md) 集合                                                                   | 有关如何重定向呼叫的路由信息。 只读。                                                                                                                |
+| answeredBy          | [participantInfo](participantinfo.md)                                                                  | 已应答呼叫的参与者。只读。                                                                                                                                |
+| callRoutes          | [callRoute](callroute.md) 集合                                                                   | 有关如何重定向呼叫的路由信息。只读。                                                                                                                |
 | callbackUri         | 字符串                                                                                                 | 用于传递回调的回调 URL。 必须是 `https`。                                                                                                                               |
 | callChainId         | String                                                                                                 | 一个针对会议中所有参与者的通话的唯一标识符，或一个针对 P2P 通话中两位参与者的通话的唯一标识符。  需要从 `Microsoft.Graph.Call.CallChainId` 复制它。 |
 | chatInfo            | [chatInfo](chatinfo.md)                                                                                | 聊天信息。 会议情境所需的信息。                                                                                                                                |
 | direction           | callDirection                                                                                                 | 呼叫的方向。 可取值为 `incoming` 或 `outgoing`。 只读。                                                                                            |
 | id                  | 字符串                                                                                                 | 来电显示。只读。                                                                                                                                                                        |
-| incomingContext     | [incomingContext](incomingcontext.md)                                                                  | 与来电相关的上下文。 只读。 由服务器生成。                                                                                                                                |
-| mediaConfig         | [appHostedMediaConfig](apphostedmediaconfig.md) 或 [serviceHostedMediaConfig](servicehostedmediaconfig.md) | 媒体配置。 创建对等呼叫或加入会议所需的信息。                                                                        |
-| mediaState          | [callMediaState](callmediastate.md)                                                                    | 只读。 通话媒体状态。 |
-| meetingCapability   | [meetingCapability](meetingcapability.md)                                                              | 包含会议功能。 只读。                                                                                                       |
+| incomingContext     | [incomingContext](incomingcontext.md)                                                                  | 与来电相关的上下文。只读。由服务器生成。                                                                                                                                |
+| mediaConfig         | [appHostedMediaConfig](apphostedmediaconfig.md) 或 [serviceHostedMediaConfig](servicehostedmediaconfig.md) | 媒体配置。创建对等呼叫或加入会议所需的信息。                                                                        |
+| mediaState          | [callMediaState](callmediastate.md)                                                                    | 只读。通话媒体状态。 |
+| meetingCapability   | [meetingCapability](meetingcapability.md)                                                              | 包含会议功能。只读。                                                                                                       |
 | meetingInfo         | [organizerMeetingInfo](organizermeetinginfo.md) 或 [tokenMeetingInfo](tokenmeetinginfo.md)             | 会议信息。 会议情境所需的信息。                                                                                                              |
-|transcription     | [callTranscriptionInfo](calltranscriptioninfo.md)                                                         | 通话的脚本信息。 只读。                           |
+|transcription     | [callTranscriptionInfo](calltranscriptioninfo.md)                                                         | 通话的脚本信息。只读。                           |
 myParticipantId     | String                                                                                                   | 只读。                                                                                                                                                                        |
 | requestedModalities | modality 集合                                                                                      | 请求模态的列表。 可取值为：`unknown`、`audio`、`video`、`videoBasedScreenSharing`、`data`。                                                                            |
 | resultInfo          | [resultInfo](resultinfo.md)                                                                            | 结果信息。 例如，可以保留终止原因。 只读。                                                                                                        |
@@ -96,7 +96,7 @@ myParticipantId     | String                                                    
 | state               | callState                                                                                                 | 呼叫状态。 可取值为：`incoming`、`establishing`、`ringing`、`established`、`hold`、`transferring`、`transferAccepted`、`redirecting`、`terminating`、`terminated`。 只读。                          |
 | subject             | String                                                                                                 | 对话的主题。                                                                                                                                                                    |
 | targets             | [invitationParticipantInfo](participantinfo.md) 集合                                             | 呼叫的目标。 创建对等呼叫所需的信息。                                                                                                            |
-| tenantId            | String                                                                                                 | 只读。 `tenantId` 在 Azure Active Directory 中。                                                                                                                        |
+| tenantId            | 字符串                                                                                                 | 只读。 `tenantId` 在 Azure Active Directory 中。                                                                                                                        |
 | terminationReason   | String                                                                                                 | 只读。                                                                                                                                                                       |
 | toneInfo            | [toneInfo](toneinfo.md)                                                                                | 只读。                                                                                                                                                                        |
 

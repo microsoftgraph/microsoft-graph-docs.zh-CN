@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9f16333a0cc25ee149bb741917a99d2731329ea2b192cf2c50f7e67a722ea885
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fe4ae9d08790a1f6673a0e4ae3fd175092ea2146
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54161806"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803319"
 ---
 # <a name="delete-windows10xtrustedrootcertificate"></a>删除 windows10XTrustedRootCertificate
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/resourceAccessProfiles/{deviceManagementResourceAccessP
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/resourceAccessProfiles/
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 
