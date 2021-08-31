@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f5a66fa290e69b6f6030ef1651a0b0f63da407b35211b471a9572fb1dc827e54
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e5cfe9419665da438084effe6837c4a5415f6cf6
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54139906"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58772574"
 ---
 # <a name="create-windowsqualityupdateprofileassignment"></a>创建 windowsQualityUpdateProfileAssignment
 
@@ -43,7 +43,7 @@ POST /deviceManagement/windowsQualityUpdateProfiles/{windowsQualityUpdateProfile
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,7 +54,7 @@ POST /deviceManagement/windowsQualityUpdateProfiles/{windowsQualityUpdateProfile
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的标识符|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|功能更新配置文件分配到的分配目标。|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|质量更新配置文件分配到的分配目标。|
 
 
 
@@ -97,7 +97,6 @@ Content-Length: 393
   }
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6b877365fb12bf1baede2248b4f52ba6109643d841adfb239d358aaefc4d1fed
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6b228c410565fe18d9f3b124e7fc176380d9c2b6
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54213275"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58794861"
 ---
 # <a name="managedebookcategory-resource-type"></a>managedEBookCategory 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54213275"
 
 包含单个 Intune 电子书类别的属性。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 managedEBookCategories](../api/intune-books-managedebookcategory-list.md)|[managedEBookCategory](../resources/intune-books-managedebookcategory.md) 集合|列出 [managedEBookCategory](../resources/intune-books-managedebookcategory.md) 对象的属性和关系。|
@@ -35,7 +35,7 @@ ms.locfileid: "54213275"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|displayName|字符串|电子图书类别的名称。|
+|displayName|String|电子图书类别的名称。|
 |lastModifiedDateTime|DateTimeOffset|ManagedEBookCategory 上次修改的日期和时间。|
 
 ## <a name="relationships"></a>关系
@@ -57,7 +57,6 @@ ms.locfileid: "54213275"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

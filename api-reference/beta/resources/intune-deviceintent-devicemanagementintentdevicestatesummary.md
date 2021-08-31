@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: dc72ec4b87e8248cdd33e5b3aaabe6c3d0c77963b855655ddf4656e8aa3b2881
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0945dcadf4879a326d2ecb1cf3c8e135774ad4a2
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54232599"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58759363"
 ---
 # <a name="devicemanagementintentdevicestatesummary-resource-type"></a>deviceManagementIntentDeviceStateSummary 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54232599"
 
 表示意图的设备状态摘要的实体
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 deviceManagementIntentDeviceStateSummary](../api/intune-deviceintent-devicemanagementintentdevicestatesummary-get.md)|[deviceManagementIntentDeviceStateSummary](../resources/intune-deviceintent-devicemanagementintentdevicestatesummary.md)|读取 [deviceManagementIntentDeviceStateSummary 对象的属性和](../resources/intune-deviceintent-devicemanagementintentdevicestatesummary.md) 关系。|
@@ -62,7 +62,6 @@ ms.locfileid: "54232599"
   "successCount": 1024
 }
 ```
-
 
 
 

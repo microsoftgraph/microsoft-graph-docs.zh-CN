@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 16063bdab660291b7cefd529ebe8e6693e9e0d0eae8fdaca325d4c827073857d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0a6fcb751d44c1be63bd8954bf2f8ee30342a1b9
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54185633"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58788421"
 ---
 # <a name="grouppolicypresentationvalueboolean-resource-type"></a>groupPolicyPresentationValueBoolean 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "54185633"
 
 继承自 [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 groupPolicyPresentationValueBooleans](../api/intune-grouppolicy-grouppolicypresentationvalueboolean-list.md)|[groupPolicyPresentationValueBoolean](../resources/intune-grouppolicy-grouppolicypresentationvalueboolean.md) 集合|列出 [groupPolicyPresentationValueBoolean 对象的属性和](../resources/intune-grouppolicy-grouppolicypresentationvalueboolean.md) 关系。|
@@ -65,7 +65,6 @@ ms.locfileid: "54185633"
   "value": true
 }
 ```
-
 
 
 

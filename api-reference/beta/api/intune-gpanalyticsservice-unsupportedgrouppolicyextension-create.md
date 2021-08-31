@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5357eaf4f6f55881373121522754159c877c5e66364899b9997e852d69f585a6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6ea39cfba314c1f6b68f9b09f3e1418de978cae5
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54191331"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58802591"
 ---
 # <a name="create-unsupportedgrouppolicyextension"></a>创建 unsupportedGroupPolicyExtension
 
@@ -43,7 +43,7 @@ POST /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportId
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -55,7 +55,7 @@ POST /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportId
 |:---|:---|:---|
 |id|String|尚未记录|
 |settingScope|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|设置不受支持扩展的作用域。 可取值为：`unknown`、`device`、`user`。|
-|namespaceUrl|String|不支持的扩展的命名空间 URL。|
+|namespaceUrl|字符串|不支持的扩展的命名空间 URL。|
 |extensionType|字符串|不支持的扩展的 ExtensionType。|
 |nodeName|String|不受支持扩展的节点名称。|
 
@@ -98,7 +98,6 @@ Content-Length: 285
   "nodeName": "Node Name value"
 }
 ```
-
 
 
 

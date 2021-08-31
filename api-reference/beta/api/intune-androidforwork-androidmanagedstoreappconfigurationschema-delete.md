@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 45c982af21b63299d1db1864503e11e9f12817119ef28fb35d997b7639e131a9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f36496bacc2e0c25103d96cca5eea16ca250d53e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54171726"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58796136"
 ---
 # <a name="delete-androidmanagedstoreappconfigurationschema"></a>删除 androidManagedStoreAppConfigurationSchema
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/androidManagedStoreAppConfigurationSchemas/{androidMana
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/androidManagedStoreAppC
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

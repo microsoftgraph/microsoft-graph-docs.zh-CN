@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 57f248af7ea7d1252ac68b668dd421065de9279d81ad6efe2a2bb003262b751f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 579a9da0908ab3efd3db3a3d41ee04c73204982d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54131547"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787348"
 ---
 # <a name="delete-windows10xvpnconfiguration"></a>删除 windows10XVpnConfiguration
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/resourceAccessProfiles/{deviceManagementResourceAccessP
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/resourceAccessProfiles/
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

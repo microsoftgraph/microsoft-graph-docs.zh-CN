@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: db022adb518df4f86f44e01b32cca049ea4480491bbf19acd8bc3b3ea39d4342
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4a2ba44ebc301e0d225ae5353059378cdbcbed91
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54206667"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787860"
 ---
 # <a name="emailcertificatetype-enum-type"></a>emailCertificateType 枚举类型
 
@@ -26,9 +26,8 @@ ms.locfileid: "54206667"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|请勿将证书用作源。|
-|证书|1 |将证书用于证书源。|
-|derivedCredential|2 |对证书源使用派生凭据。|
-
+|证书|1|将证书用于证书源。|
+|derivedCredential|2|对证书源使用派生凭据。|
 
 
 

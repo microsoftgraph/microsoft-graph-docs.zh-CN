@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 55420bea0eab9f62ca31182fd80d9615801b4681c0111698620c6a55283c074f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d183bb25acc76f75a311d57d18a6864ef3d4f6cd
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54224717"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801800"
 ---
 # <a name="devicemanagementconfigurationsettingusage-enum-type"></a>deviceManagementConfigurationSettingUsage 枚举类型
 
@@ -26,8 +26,7 @@ ms.locfileid: "54224717"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|未指定任何设置类型|
-|configuration|1 |配置设置|
-
+|configuration|1|配置设置|
 
 
 

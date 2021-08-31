@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b71c9771dd389d3277a7ab3809c7879b6f75e17091656a7fe1eb45e1420ad0c4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ee61f1b0b45d735c6c738db6220d84b3cc962b6b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54239572"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58788231"
 ---
 # <a name="iosbookmark-resource-type"></a>iosBookmark 资源类型
 
@@ -47,7 +47,6 @@ iOS URL 书签
   "displayName": "String"
 }
 ```
-
 
 
 

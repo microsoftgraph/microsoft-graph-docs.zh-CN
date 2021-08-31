@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a8cb5449d429c771a4cc72142bdc02f411de4185
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 209d7954e70f597605e35540d3e4d3a4a64aff27
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58262840"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58794656"
 ---
 # <a name="create-androiddeviceownervpnconfiguration"></a>创建 androidDeviceOwnerVpnConfiguration
 
@@ -44,7 +44,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,19 +54,19 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|布尔值|指示基础设备配置是否支持分配范围标记。 当此值为 false 且实体对范围用户不可见时，不允许分配给 ScopeTags 属性。 这适用于在 Silverlight 中创建的旧版策略，可通过在 Azure 门户中删除和重新创建策略来解决。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|此策略的操作系统版本适用性。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|description|字符串|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |authenticationMethod|[vpnAuthenticationMethod](../resources/intune-deviceconfig-vpnauthenticationmethod.md)|身份验证方法。 继承自 [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)。 可取值为：`certificate`、`usernameAndPassword`、`sharedSecret`、`derivedCredential`、`azureAD`。|
-|connectionName|String|向用户显示的连接名称。 继承自 [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)|
+|connectionName|字符串|向用户显示的连接名称。 继承自 [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)|
 |role|字符串|将连接类型设置为 Pulse Secure 时的角色。 继承自 [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)|
 |realm|String|将连接类型设置为 Pulse Secure 时的领域。 继承自 [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)|
 |服务器|[vpnServer](../resources/intune-deviceconfig-vpnserver.md) 集合|网络上 VPN 服务器的列表。 确保最终用户可以访问这些网络位置。 该集合最多可包含 500 个元素。 继承自 [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)|
@@ -74,8 +74,8 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |proxyServer|[vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|代理服务器。|
 |targetedPackageIds|String collection|目标应用包 ID。|
 |targetedMobileApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) 集合|目标移动应用。 该集合最多可包含 500 个元素。|
-|alwaysOn|布尔值|是否启用始终启用 VPN 连接。|
-|alwaysOnLockdown|布尔值|如果始终启用 VPN 连接，是否在断开 VPN 连接时锁定网络流量。|
+|alwaysOn|Boolean|是否启用始终启用 VPN 连接。|
+|alwaysOnLockdown|Boolean|如果始终启用 VPN 连接，是否在断开 VPN 连接时锁定网络流量。|
 |microsoftTunnelSiteId|String|Microsoft Tunnel网站 ID。|
 |customData|[keyValue](../resources/intune-deviceconfig-keyvalue.md) 集合|用于定义特定于 VPN 提供程序的键/值对的自定义数据。 此集合最多可包含 25 个元素。|
 |customKeyValueData|[keyValuePair](../resources/intune-deviceconfig-keyvaluepair.md) 集合|用于定义特定于 VPN 提供程序的键/值对的自定义数据。 此集合最多可包含 25 个元素。|
@@ -265,7 +265,6 @@ Content-Length: 2555
   ]
 }
 ```
-
 
 
 

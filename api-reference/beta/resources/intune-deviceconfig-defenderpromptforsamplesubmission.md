@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b2c791bcd6a566e872ff7bc2fa41199e86981e138e88f4acef86b8d5e402dad3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bcdb34abe2c4223bc947c15271437a2bae829372
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54227545"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58751949"
 ---
 # <a name="defenderpromptforsamplesubmission-enum-type"></a>defenderPromptForSampleSubmission 枚举类型
 
@@ -26,11 +26,10 @@ ms.locfileid: "54227545"
 |成员|值|说明|
 |:---|:---|:---|
 |userDefined|0|用户定义，默认值，无意图。|
-|alwaysPrompt|1 |始终提示。|
-|promptBeforeSendingPersonalData|2 |自动发送安全示例。|
-|neverSendData|3 |从不发送数据。|
+|alwaysPrompt|1|始终提示。|
+|promptBeforeSendingPersonalData|2|自动发送安全示例。|
+|neverSendData|3|从不发送数据。|
 |sendAllDataWithoutPrompting|4 |在不提示的情况下发送所有数据。|
-
 
 
 

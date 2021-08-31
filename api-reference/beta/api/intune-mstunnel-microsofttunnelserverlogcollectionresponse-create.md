@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fd34f6e1ef845ae8aaff49a7dfaa50db1203772639825badf555a145bd63a3be
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5202b524398f0794ee9477942821fbf0657aff5a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54213821"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58802276"
 ---
 # <a name="create-microsofttunnelserverlogcollectionresponse"></a>创建 microsoftTunnelServerLogCollectionResponse
 
@@ -27,9 +27,9 @@ ms.locfileid: "54213821"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、MicrosoftTunnelGateway.Read.All、MicrosoftTunnelGateway.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|MicrosoftTunnelGateway.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/microsoftTunnelServerLogCollectionResponses
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,10 +54,13 @@ POST /deviceManagement/microsoftTunnelServerLogCollectionResponses
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的唯一 ID|
-|status|[microsoftTunnelLogCollectionStatus](../resources/intune-mstunnel-microsofttunnellogcollectionstatus.md)|日志集合的状态。 可取值为：`pending`、`completed`、`failed`。|
+|状态|[microsoftTunnelLogCollectionStatus](../resources/intune-mstunnel-microsofttunnellogcollectionstatus.md)|日志集合的状态。 可取值为：`pending`、`completed`、`failed`。|
 |startDateTime|DateTimeOffset|收集的日志的开始时间 |
 |endDateTime|DateTimeOffset|收集的日志的结束时间|
 |sizeInBytes|Int64|日志的大小（以字节为单位）|
+|serverId|String|请求日志集合的服务器 ID|
+|requestDateTime|DateTimeOffset|请求日志集合的时间|
+|expiryDateTime|DateTimeOffset|日志集合过期的时间|
 
 
 
@@ -71,14 +74,17 @@ POST /deviceManagement/microsoftTunnelServerLogCollectionResponses
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/microsoftTunnelServerLogCollectionResponses
 Content-type: application/json
-Content-length: 244
+Content-length: 395
 
 {
   "@odata.type": "#microsoft.graph.microsoftTunnelServerLogCollectionResponse",
   "status": "completed",
   "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
   "endDateTime": "2017-01-01T00:03:30.9241974-08:00",
-  "sizeInBytes": 11
+  "sizeInBytes": 11,
+  "serverId": "Server Id value",
+  "requestDateTime": "2017-01-01T00:03:07.1589002-08:00",
+  "expiryDateTime": "2017-01-01T00:03:32.5199332-08:00"
 }
 ```
 
@@ -87,7 +93,7 @@ Content-length: 244
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 293
+Content-Length: 444
 
 {
   "@odata.type": "#microsoft.graph.microsoftTunnelServerLogCollectionResponse",
@@ -95,10 +101,12 @@ Content-Length: 293
   "status": "completed",
   "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
   "endDateTime": "2017-01-01T00:03:30.9241974-08:00",
-  "sizeInBytes": 11
+  "sizeInBytes": 11,
+  "serverId": "Server Id value",
+  "requestDateTime": "2017-01-01T00:03:07.1589002-08:00",
+  "expiryDateTime": "2017-01-01T00:03:32.5199332-08:00"
 }
 ```
-
 
 
 

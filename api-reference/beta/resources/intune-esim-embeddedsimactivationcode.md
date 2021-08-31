@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 07acfbad5baf0cb68118472ea32d667c7f2868dac490665e61726fd5a6e4bf75
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 68c900ce67f5eff6e7f9f5d9f3078f92fe60686d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54242564"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787839"
 ---
 # <a name="embeddedsimactivationcode-resource-type"></a>embeddedSIMActivationCode 资源类型
 
@@ -27,9 +27,9 @@ ms.locfileid: "54242564"
 |:---|:---|:---|
 |integratedCircuitCardIdentifier|String|INTEGRATED Circuit Card Identifier (ICCID) for this embedded SIM activation code as provided by the mobile operator.
 输入必须与以下正则表达式匹配："^ \[ 0-9 \] {19} \[ 0-9 \] ？$"。|
-|matchingIdentifier|字符串|MatchingIdentifier (MATCHINGID) GSMA Association SGP.22 RSP 技术规范 4.1 节中指定。
+|matchingIdentifier|String|MatchingIdentifier (MATCHINGID) GSMA Association SGP.22 RSP 技术规范 4.1 节中指定。
 输入必须与以下正则表达式匹配："^ \[ a-zA-Z0-9 \- \] *$"。|
-|smdpPlusServerAddress|字符串|GSM Association SPG .22 RSP 技术规范中指定的 SM-DP+ 服务器的完全限定域名。
+|smdpPlusServerAddress|String|GSM Association SPG .22 RSP 技术规范中指定的 SM-DP+ 服务器的完全限定域名。
 输入必须匹配以下正则表达式："^ (\[ a-zA-Z0-9 \] + (- \[ a-zA-Z0-9 \] +) *) + \. \[ a-zA-Z \] {2,} $"。|
 
 ## <a name="relationships"></a>关系
@@ -50,7 +50,6 @@ ms.locfileid: "54242564"
   "smdpPlusServerAddress": "String"
 }
 ```
-
 
 
 

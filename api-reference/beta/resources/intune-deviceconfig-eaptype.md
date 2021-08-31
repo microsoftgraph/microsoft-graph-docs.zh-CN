@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: bfdfb466f7efd736b261db94212541b7168fa95f6b5a7b09b90f5996e6a6ec1a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9eb4a6832b36803732fdc2bf01a5c4ef164e2f09
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54145423"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795226"
 ---
 # <a name="eaptype-enum-type"></a>eapType 枚举类型
 
@@ -25,13 +25,12 @@ ms.locfileid: "54145423"
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|eapTls|13 |EAP-Transport EAP-TLS (层安全性) 。|
+|eapTls|13|EAP-Transport EAP-TLS (层安全性) 。|
 |leap|17 |轻型可扩展身份验证协议 (LEAP) 。|
 |eapSim|18 |用于 GSM 订阅者标识模块的 EAP (EAP-SIM) 。|
 |eapTtls| 21|EAP-Tunneled EAP-TTLS (传输层安全性) 。|
 |peap|25|PEAP (受保护的可扩展) 。|
-|eapFast|43|EAP-Flexible EAP- (安全隧道进行身份验证FAST) 。|
-
+|eapFast|43|EAP-Flexible EAP-FAST) 安全隧道 (身份验证。|
 
 
 

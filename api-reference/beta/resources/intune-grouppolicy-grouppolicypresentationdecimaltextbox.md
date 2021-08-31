@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 79610e0abc3a359b2d2e7efc0c052efbf71fe1510cc1114ab57a196994c86614
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 79ef120bf7845d95e5cbc1aa8c465a38fc3f4ee2
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54161141"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58802955"
 ---
 # <a name="grouppolicypresentationdecimaltextbox-resource-type"></a>groupPolicyPresentationDecimalTextBox 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "54161141"
 
 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 groupPolicyPresentationDecimalTextBoxes](../api/intune-grouppolicy-grouppolicypresentationdecimaltextbox-list.md)|[groupPolicyPresentationDecimalTextBox](../resources/intune-grouppolicy-grouppolicypresentationdecimaltextbox.md) 集合|列出 [groupPolicyPresentationDecimalTextBox 对象的属性和](../resources/intune-grouppolicy-grouppolicypresentationdecimaltextbox.md) 关系。|
@@ -41,7 +41,7 @@ ms.locfileid: "54161141"
 |id|String|实体的键。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |defaultValue|Int64|一个无符号整数，指定小数文本框的初始值。 默认值为 1。|
-|spin|布尔值|如果为 true，则创建旋转控件;否则，为数字输入创建一个文本框。 默认值为 true。|
+|spin|Boolean|如果为 true，则创建旋转控件;否则，为数字输入创建一个文本框。 默认值为 true。|
 |spinStep|Int64|一个无符号整数，指定旋转控件更改的增量。 默认值为 1。|
 |必需|布尔值|要求在参数框中输入值。 默认值为 false。|
 |minValue|Int64|一个无符号整数，指定允许的最小值。 默认值为 0。|
@@ -74,7 +74,6 @@ ms.locfileid: "54161141"
   "maxValue": 1024
 }
 ```
-
 
 
 

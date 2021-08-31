@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f0e3750a6bfaec140231d680560ad63c89f2f1de759378a5d3748571a701edcd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 465abb5a003817f596eb70067b8ac6b5a28e94e7
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54219869"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58759433"
 ---
 # <a name="devicemanagementintent-resource-type"></a>deviceManagementIntent 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54219869"
 
 表示将设置应用到设备的意图的实体
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceManagementIntents](../api/intune-deviceintent-devicemanagementintent-list.md)|[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) 集合|列出 [deviceManagementIntent 对象的属性和](../resources/intune-deviceintent-devicemanagementintent.md) 关系。|
@@ -39,18 +39,18 @@ ms.locfileid: "54219869"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|意图 ID|
-|displayName|String|给定用户显示名称|
+|id|String|意图 ID|
+|displayName|字符串|给定用户显示名称|
 |description|String|用户给定的说明|
 |isAssigned|Boolean|表示是否将意图分配给用户|
 |lastModifiedDateTime|DateTimeOffset|上次修改意图时|
-|templateId|字符串|此意图的模板 ID 是 (（如果有) |
+|templateId|String|此意图的模板 ID 是 (（如果有) |
 |roleScopeTagIds|String collection|此实体实例的范围标记列表。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
-|设置|[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md) 集合|要应用的所有设置的集合|
+|settings|[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md) 集合|要应用的所有设置的集合|
 |categories|[deviceManagementIntentSettingCategory](../resources/intune-deviceintent-devicemanagementintentsettingcategory.md) 集合|意图中的设置类别集合|
 |assignments|[deviceManagementIntentAssignment](../resources/intune-deviceintent-devicemanagementintentassignment.md) 集合|工作分配集合|
 |deviceSettingStateSummaries|[deviceManagementIntentDeviceSettingStateSummary](../resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md) 集合|属于意图中所有设置的相应状态的设备集合及其状态和计数|
@@ -81,7 +81,6 @@ ms.locfileid: "54219869"
   ]
 }
 ```
-
 
 
 

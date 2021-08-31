@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3f4053ebe1cc36a5c1b57d3304813bed6e4fe566e808b0f63d79615c2a4e5fe4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e781ec685e3e54e28c3e2f3d993a061a076ea7bc
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54224948"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58753384"
 ---
 # <a name="get-devicemanagementscript"></a>获取 deviceManagementScript
 
@@ -50,7 +50,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -80,9 +80,6 @@ Content-Length: 668
     "id": "59ea4525-4525-59ea-2545-ea592545ea59",
     "displayName": "Display Name value",
     "description": "Description value",
-    "runSchedule": {
-      "@odata.type": "microsoft.graph.runSchedule"
-    },
     "scriptContent": "c2NyaXB0Q29udGVudA==",
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
@@ -96,7 +93,6 @@ Content-Length: 668
   }
 }
 ```
-
 
 
 

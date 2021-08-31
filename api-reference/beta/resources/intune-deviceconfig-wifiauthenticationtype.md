@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6a79e0855677e7bd9013cdd8751b570686178bc4c0125bb687f24dd8c9fee48c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 30892543dfb90ae49738fcfd90efeda51a02ee55
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54241707"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58794826"
 ---
 # <a name="wifiauthenticationtype-enum-type"></a>wifiAuthenticationType 枚举类型
 
@@ -26,11 +26,10 @@ Wi-Fi身份验证类型设置。
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|None|
-|用户|1 |用户身份验证|
-|计算机|2 |计算机身份验证|
-|machineOrUser|3 |计算机或用户身份验证|
+|用户|1|用户身份验证|
+|计算机|2|计算机身份验证|
+|machineOrUser|3|计算机或用户身份验证|
 |来宾|4 |来宾身份验证|
-
 
 
 

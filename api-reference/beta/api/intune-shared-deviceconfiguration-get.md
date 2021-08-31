@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5c8f7766eeaeeb56160d68ae31f3e9d1782a7a8435ac774ed33692f02095294a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2e532ee71041b99b07eb7de9b33690b7503c60a6
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54226747"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801569"
 ---
 # <a name="get-deviceconfiguration"></a>获取 deviceConfiguration
 
@@ -52,7 +52,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -113,7 +113,6 @@ Content-Length: 1277
   }
 }
 ```
-
 
 
 
