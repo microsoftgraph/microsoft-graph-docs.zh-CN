@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e508a4e998dd3dd1836706bbfa87a686c0ee7d5bd165352ca59ec48cd7b52092
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 15dfc55cab938a01a65a42a5c314bed3b1e66d18
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54229932"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58796921"
 ---
 # <a name="getconfigurationpolicynoncompliancesummaryreport-action"></a>getConfigurationPolicyNonComplianceSummaryReport 操作
 
@@ -43,7 +43,7 @@ POST /deviceManagement/reports/getConfigurationPolicyNonComplianceSummaryReport
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -108,7 +108,6 @@ Content-Length: 123
   "value": "Z2V0Q29uZmlndXJhdGlvblBvbGljeU5vbkNvbXBsaWFuY2VTdW1tYXJ5UmVwb3J0IEludHVuZSBEb2MgU2FtcGxlIC0xNjM2NzI4OTg4"
 }
 ```
-
 
 
 

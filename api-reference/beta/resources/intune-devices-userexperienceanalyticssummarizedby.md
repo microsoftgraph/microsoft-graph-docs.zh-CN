@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9c71fa5b628d8868dfcebdb7dc3ba9fd10d44213769a5112bc5826e3a3435150
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c585404931c2e59f6ccc90a2f312f534bf0a04fc
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54236078"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797498"
 ---
 # <a name="userexperienceanalyticssummarizedby-enum-type"></a>userExperienceAnalyticsSummarizedBy 枚举类型
 
@@ -26,12 +26,11 @@ ms.locfileid: "54236078"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|尚未记录|
-|model|1 |尚未记录|
-|allRegressions|3 |尚未记录|
+|model|1|尚未记录|
+|allRegressions|3|尚未记录|
 |modelRegression|4 |尚未记录|
 |manufacturerRegression|5 |尚未记录|
 |operatingSystemVersionRegression|6 |尚未记录|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a218a1ed86bce66a3de43417c65c662064e3bf31839f9ffa44ce860da1574730
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8896badaeed1c213321579105054741ee6100b3c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54233061"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783006"
 ---
 # <a name="androidforworksyncstatus-enum-type"></a>androidForWorkSyncStatus 枚举类型
 
@@ -26,12 +26,11 @@ ms.locfileid: "54233061"
 |成员|值|说明|
 |:---|:---|:---|
 |success|0|尚未记录|
-|credentialsNotValid|1 |尚未记录|
-|androidForWorkApiError|2 |尚未记录|
-|managementServiceError|3 |尚未记录|
+|credentialsNotValid|1|尚未记录|
+|androidForWorkApiError|2|尚未记录|
+|managementServiceError|3|尚未记录|
 |unknownError|4 |尚未记录|
 |无|5 |尚未记录|
-
 
 
 

@@ -1,15 +1,15 @@
 ---
-title: Microsoft Intune 中的设备配置 - Microsoft Gaaph API
-description: 列出定义Graph配置设备的适用于 Intune 终结点的 Microsoft (API) REST 应用程序。
+title: Microsoft Intune中的设备配置 - Microsoft Gaaph API
+description: 列出定义Graph配置设备的适用于 Intune 终结点的 Microsoft (REST) 。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: e1b193f4abb338f3ecb18d848fcd8435f77743b6
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 3535decf70b34650d6ff3e381949e9fd01d60f23
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58265415"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58798123"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Microsoft Intune 中的设备配置
 
@@ -148,6 +148,8 @@ ms.locfileid: "58265415"
 - [BitLocker 系统驱动器策略](intune-deviceconfig-bitlockersystemdrivepolicy.md)
 - [浏览器同步设置](intune-deviceconfig-browsersyncsetting.md)
 - [购物车到类的关联](intune-deviceconfig-carttoclassassociation.md)
+- [证书连接器详细信息](intune-raimportcerts-certificateconnectordetails.md)
+- [证书连接器运行状况指标值](intune-raimportcerts-certificateconnectorhealthmetricvalue.md)
 - [证书颁发状态](intune-deviceconfig-certificateissuancestates.md)
 - [证书吊销状态](intune-deviceconfig-certificaterevocationstatus.md)
 - [更改 uefi 设置权限](intune-deviceconfig-changeuefisettingspermission.md)
@@ -362,6 +364,7 @@ ms.locfileid: "58265415"
 - [密钥值](intune-deviceconfig-keyvalue.md)
 - [键/值对](intune-deviceconfig-keyvaluepair.md)
 - [键/值对](intune-deviceconfig-keyvaluepair.md)
+- [展台模式托管主屏幕 PIN 复杂性](intune-deviceconfig-kioskmodemanagedhomescreenpincomplexity.md)
 - [LAN Manager 身份验证级别](intune-deviceconfig-lanmanagerauthenticationlevel.md)
 - [本地安全选项管理员提升提示行为类型](intune-deviceconfig-localsecurityoptionsadministratorelevationpromptbehaviortype.md)
 - [允许本地安全选项格式化和弹出可移动媒体的用户类型](intune-deviceconfig-localsecurityoptionsformatandejectofremovablemediaallowedusertype.md)
@@ -500,6 +503,7 @@ ms.locfileid: "58265415"
 - [指定的强制网络插件](intune-deviceconfig-specifiedcaptivenetworkplugins.md)
 - [状态管理设置](intune-deviceconfig-statemanagementsetting.md)
 - [使用者名称格式](intune-deviceconfig-subjectnameformat.md)
+- [时间序列参数](intune-raimportcerts-timeseriesparameter.md)
 - [不受支持的设备配置](intune-deviceconfig-unsupporteddeviceconfiguration.md)
 - [不受支持的设备配置详细信息](intune-deviceconfig-unsupporteddeviceconfigurationdetail.md)
 - [更新分类](intune-deviceconfig-updateclassification.md)

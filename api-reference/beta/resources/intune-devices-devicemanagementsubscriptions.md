@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6b52bce166ab43b7d73b5fcebe3f1260a6199b3c81668faa715a56f36570e7e3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c84722ddf190ded950c9b4e9e419aaa0c60d606f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249977"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58805715"
 ---
 # <a name="devicemanagementsubscriptions-enum-type"></a>deviceManagementSubscriptions 枚举类型
 
@@ -26,12 +26,11 @@ ms.locfileid: "54249977"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|None|
-|intune|1 |Microsoft Intune订阅|
-|office365|2 |Office365 订阅|
-|intunePremium|4 |Microsoft Intune 高级版订阅|
-|intune_EDU|8 |Microsoft Intune 教育版订阅|
-|intune_SMB|16 |Microsoft Intune小型企业版订阅|
-
+|intune|1|Microsoft Intune订阅|
+|office365|2|Office365 订阅|
+|intunePremium|4 |Microsoft Intune 高级版 订阅|
+|intune_EDU|8 |Microsoft Intune教育版订阅|
+|intune_SMB|16 |Microsoft Intune 小型企业版订阅|
 
 
 

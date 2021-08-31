@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: efee88fe69c36f030755d91e3b11df9a642ad64d138adeacf565cc099ccba21f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 67349cd190321d26dddd6e8ef0397c707b39fd12
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54252898"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806227"
 ---
 # <a name="devicemanagementsettingdefinition-resource-type"></a>deviceManagementSettingDefinition 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54252898"
 
 表示给定设置定义的实体
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceManagementSettingDefinitions](../api/intune-deviceintent-devicemanagementsettingdefinition-list.md)|[deviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md) 集合|列出 [deviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md) 对象的属性和关系。|
@@ -39,11 +39,11 @@ ms.locfileid: "54252898"
 |displayName|字符串|设置显示名称|
 |isTopLevel|布尔值|如果设置是顶级设置，则无需封装在集合或复杂设置中即可进行配置|
 |description|String|设置的说明|
-|placeholderText|String|占位符文本作为有效输入的示例|
+|placeholderText|字符串|占位符文本作为有效输入的示例|
 |documentationUrl|String|设置文档的 URL|
-|headerTitle|String|设置标头的标题表示设置/设置的类别/部分|
+|headerTitle|字符串|设置标头的标题表示设置/设置的类别/部分|
 |headerSubtitle|String|有关类别/节的更多详细信息，请参阅设置标头的副标题|
-|keywords|String collection|与设置关联的关键字|
+|keywords|字符串集合|与设置关联的关键字|
 |约束|[deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md) 集合|设置值的约束集合|
 |依赖项|[deviceManagementSettingDependency](../resources/intune-deviceintent-devicemanagementsettingdependency.md) 集合|其他设置上依赖项的集合|
 
@@ -97,7 +97,6 @@ ms.locfileid: "54252898"
   ]
 }
 ```
-
 
 
 

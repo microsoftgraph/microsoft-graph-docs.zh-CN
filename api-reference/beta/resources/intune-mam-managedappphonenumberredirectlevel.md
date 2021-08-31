@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3b7bb1aeba937f14598b35de5c229acf4cb95cf53cc0bb5351da60576391aa26
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8f0f01e85ee970435dc857bb1f50cd2fb0352799
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54139339"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783454"
 ---
 # <a name="managedappphonenumberredirectlevel-enum-type"></a>managedAppPhoneNumberRedirectLevel 枚举类型
 
@@ -26,10 +26,9 @@ ms.locfileid: "54139339"
 |成员|值|说明|
 |:---|:---|:---|
 |allApps|0|允许所有应用共享。|
-|managedApps|1 |允许所有托管应用共享。|
-|customApp|2 |允许对自定义应用共享。|
-|blocked|3 |应用程序之间的共享被阻止。|
-
+|managedApps|1|允许所有托管应用共享。|
+|customApp|2|允许对自定义应用共享。|
+|blocked|3|应用程序之间的共享被阻止。|
 
 
 

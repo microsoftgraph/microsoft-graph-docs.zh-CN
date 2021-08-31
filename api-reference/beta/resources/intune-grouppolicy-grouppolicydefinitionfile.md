@@ -1,16 +1,16 @@
 ---
 title: groupPolicyDefinitionFile 资源类型
-description: 实体表示管理模板 (XML) ADMX。 ADMX 文件包含按类别路径分组策略定义及其位置的集合。 组策略定义文件还包含支持的语言，这些语言由与语言相关的 ADML 确定 (模板) 语言文件。
+description: 实体表示管理模板 (XML) ADMX。 ADMX 文件包含按类别路径分组策略定义及其位置的集合。 组策略定义文件还包含受支持的语言，这些语言由与语言相关的 ADML 或管理 (模板) 语言文件。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5fdaebc34d3923588a29c9282f37a547af15080cee6963ce2d177629cf01d51a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 887c1b3b8b744e45b265fedff2bd2b5fd767fe4b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54244608"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58796192"
 ---
 # <a name="grouppolicydefinitionfile-resource-type"></a>groupPolicyDefinitionFile 资源类型
 
@@ -20,9 +20,9 @@ ms.locfileid: "54244608"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-实体表示管理模板 (XML) ADMX。 ADMX 文件包含按类别路径分组策略定义及其位置的集合。 组策略定义文件还包含支持的语言，这些语言由与语言相关的 ADML 确定 (模板) 语言文件。
+实体表示管理模板 (XML) ADMX。 ADMX 文件包含按类别路径分组策略定义及其位置的集合。 组策略定义文件还包含受支持的语言，这些语言由与语言相关的 ADML 或管理 (模板) 语言文件。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 groupPolicyDefinitionFile](../api/intune-grouppolicy-grouppolicydefinitionfile-get.md)|[groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|读取 [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md) 对象的属性和关系。|
@@ -31,14 +31,14 @@ ms.locfileid: "54244608"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|字符串|ADMX 文件的本地化友好名称。|
+|displayName|String|ADMX 文件的本地化友好名称。|
 |description|String|ADMX 文件中策略设置的本地化说明。 默认值为空白。|
-|languageCodes|String collection|ADMX 文件支持的语言代码。|
-|targetPrefix|String|指定引用 ADMX 文件内的命名空间的逻辑名称。|
-|targetNamespace|字符串|指定用于标识 ADMX 文件内的命名空间的 URI。|
+|languageCodes|字符串集合|ADMX 文件支持的语言代码。|
+|targetPrefix|字符串|指定引用 ADMX 文件内的命名空间的逻辑名称。|
+|targetNamespace|String|指定用于标识 ADMX 文件内的命名空间的 URI。|
 |policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|指定组策略的类型。 可取值为：`admxBacked`、`admxIngested`。|
-|revision|字符串|与文件关联的修订版本。|
-|id|字符串|实体的键。|
+|revision|String|与文件关联的修订版本。|
+|id|String|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。|
 
 ## <a name="relationships"></a>关系
@@ -70,7 +70,6 @@ ms.locfileid: "54244608"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

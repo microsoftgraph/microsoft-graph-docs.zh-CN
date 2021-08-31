@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 52b475ac629863d55d4b16287249f212c9f477d39176209a8549c461c615dc23
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b666d9965c30d15617a88d6fe3cf771c1b7f3546
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54240090"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797308"
 ---
 # <a name="microsoftstoreforbusinesslicensetype-enum-type"></a>microsoftStoreForBusinessLicenseType 枚举类型
 
@@ -26,8 +26,7 @@ ms.locfileid: "54240090"
 |成员|值|说明|
 |:---|:---|:---|
 |offline|0|尚未记录|
-|online|1 |尚未记录|
-
+|online|1|尚未记录|
 
 
 

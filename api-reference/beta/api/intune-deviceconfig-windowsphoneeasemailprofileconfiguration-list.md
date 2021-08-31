@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7a9ff94a1307b0cb0cca801e7e562d3dd254ddf3df260499ca007de7d28af8cb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 693ac9bded5ace5a58ed056a65fb1e557e582f67
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54171390"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58800910"
 ---
 # <a name="list-windowsphoneeasemailprofileconfigurations"></a>列出 windowsPhoneEASEmailProfileConfigurations
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -121,7 +121,6 @@ Content-Length: 1956
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8bf34ae3b2fb1f2ae6fffff14416287e43a804f4b391a2e44e6b7abdd0d380e0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 97b056f6d70132a0790b5e8d05d17639cd7d8c40
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178904"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806199"
 ---
 # <a name="managedappregistration-resource-type"></a>managedAppRegistration 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "54178904"
 ManagedAppEntity 是应用管理工作流下所有其他实体类型的基实体类型。
 ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应用的详细信息。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[List managedAppRegistrations](../api/intune-mam-managedappregistration-list.md)|[managedAppRegistration](../resources/intune-mam-managedappregistration.md) 集合|列出 [managedAppRegistration](../resources/intune-mam-managedappregistration.md) 对象的属性和关系。|
@@ -42,9 +42,9 @@ ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应
 |deviceTag|String|应用管理 SDK 生成的标记，它可帮助关联托管在同一设备上的应用。 不保证在所有情况下与应用关联。|
 |deviceName|String|主机设备名称|
 |managedDeviceId|String|主机设备的托管设备标识符。 即使托管主机设备，值也可以为空。|
-|azureADDeviceId|String|主机Azure Active Directory的设备标识符。 值可能为空，即使主机设备已注册Azure Active Directory。|
+|azureADDeviceId|String|主机Azure Active Directory的设备标识符。 即使主机设备已注册，值Azure Active Directory为空。|
 |deviceModel|String|当前应用注册的设备模型 |
-|deviceManufacturer|String|当前应用注册的设备制造商 |
+|deviceManufacturer|字符串|当前应用注册的设备制造商 |
 |flaggedReasons|[managedAppFlaggedReason](../resources/intune-mam-managedappflaggedreason.md) 集合|标记应用注册的零个或多个原因。 例如， 在取得 root 权限的设备上运行的应用|
 |userId|String|此应用注册所属的用户 ID。|
 |appIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|应用包标识符|
@@ -93,7 +93,6 @@ ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应
   "version": "String"
 }
 ```
-
 
 
 

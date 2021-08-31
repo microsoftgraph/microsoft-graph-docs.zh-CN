@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cb0d9a7a14456740872c9eac193522e8113dc5c91acea4c44e235a1c3e0449ab
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c8cd69ca7399e83e4a262ab017327de22cb3ba26
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54164263"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58805392"
 ---
 # <a name="windowskioskwin32app-resource-type"></a>windowsKioskWin32App 资源类型
 
@@ -30,13 +30,13 @@ KioskModeApp v4 for Win32 应用支持
 |:---|:---|:---|
 |startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|开始布局的应用磁贴大小 继承自 [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)。 可取值为：`hidden`、`small`、`medium`、`wide`、`large`。|
 |name|String|表示应用的友好名称 继承自 [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|
-|appType|[windowsKioskAppType](../resources/intune-deviceconfig-windowskioskapptype.md)|应用类型 继承自 [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)。 可取值为：`unknown`、`store`、`desktop`、`aumId`。|
-|autoLaunch|布尔值|允许应用在多应用展台模式下自动启动 继承自 [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|
+|appType|[windowsKioskAppType](../resources/intune-deviceconfig-windowskioskapptype.md)|应用类型 继承自 [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)。 可能的值是：`unknown`、`store`、`desktop`、`aumId`。|
+|autoLaunch|Boolean|允许应用在多应用展台模式下自动启动 继承自 [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|
 |classicAppPath|String|这是 v4 Win32 应用在展台模式下使用的经典应用路径|
-|edgeNoFirstRun|布尔值|Edge 展台模式的边缘首次运行标志|
+|edgeNoFirstRun|Boolean|Edge 展台模式的边缘首次运行标志|
 |edgeKioskIdleTimeoutMinutes|Int32|Edge 展台模式的边缘展台空闲超时（分钟）。 有效值为 0 到 1440|
 |edgeKioskType|[windowsEdgeKioskType](../resources/intune-deviceconfig-windowsedgekiosktype.md)|Edge 展台模式的边缘展台类型。 可取值为：`publicBrowsing`、`fullScreen`。|
-|edgeKiosk|字符串|Edge kiosk (url) 适用于 Edge 展台模式|
+|edgeKiosk|String|Edge kiosk (url) 适用于 Edge 展台模式|
 
 ## <a name="relationships"></a>关系
 无
@@ -62,7 +62,6 @@ KioskModeApp v4 for Win32 应用支持
   "edgeKiosk": "String"
 }
 ```
-
 
 
 

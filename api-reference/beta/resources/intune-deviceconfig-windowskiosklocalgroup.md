@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: aaa2c0e0f190b78b4beda429c4ee60447f24bdb798884f0584029c1f150d6eb6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 43e649a295cb62b928a7cc1bbbeb63efcb73318e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54193753"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58808844"
 ---
 # <a name="windowskiosklocalgroup-resource-type"></a>windowsKioskLocalGroup 资源类型
 
@@ -28,7 +28,7 @@ ms.locfileid: "54193753"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|groupName|字符串|将锁定到此展台配置的本地组的名称|
+|groupName|String|将锁定到此展台配置的本地组的名称|
 
 ## <a name="relationships"></a>关系
 无
@@ -46,7 +46,6 @@ ms.locfileid: "54193753"
   "groupName": "String"
 }
 ```
-
 
 
 

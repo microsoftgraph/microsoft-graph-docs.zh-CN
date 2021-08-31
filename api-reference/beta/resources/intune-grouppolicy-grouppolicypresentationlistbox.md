@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c7bce1b09ea88394f7522b3469db2382ebd1eabb5af68f050ab61b7dae68a4b9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c9c5e121d08bb9cf362f75810dd014c5edb476af
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54145255"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801463"
 ---
 # <a name="grouppolicypresentationlistbox-resource-type"></a>groupPolicyPresentationListBox 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "54145255"
 
 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 groupPolicyPresentationListBoxes](../api/intune-grouppolicy-grouppolicypresentationlistbox-list.md)|[groupPolicyPresentationListBox](../resources/intune-grouppolicy-grouppolicypresentationlistbox.md) 集合|列出 [groupPolicyPresentationListBox 对象的属性和](../resources/intune-grouppolicy-grouppolicypresentationlistbox.md) 关系。|
@@ -38,9 +38,9 @@ ms.locfileid: "54145255"
 |属性|类型|说明|
 |:---|:---|:---|
 |标签|String|任何演示文稿实体的本地化文本标签。 默认值为空白。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|id|String|实体的键。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|id|字符串|实体的键。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|explicitValue|布尔值|如果指定此选项，则用户必须指定注册表子项值和注册表子项名称。 列表框显示两列，一列用于名称，另一列用于数据。 默认值为 false。|
+|explicitValue|Boolean|如果指定此选项，则用户必须指定注册表子项值和注册表子项名称。 列表框显示两列，一列用于名称，另一列用于数据。 默认值为 false。|
 |valuePrefix|String|尚未记录|
 
 ## <a name="relationships"></a>关系
@@ -66,7 +66,6 @@ ms.locfileid: "54145255"
   "valuePrefix": "String"
 }
 ```
-
 
 
 

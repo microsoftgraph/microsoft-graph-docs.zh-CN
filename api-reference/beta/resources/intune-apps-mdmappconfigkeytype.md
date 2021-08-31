@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1dfc8aad922716f70950a514c5e77f34b84000946074202e5bdbe52546918199
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 618e43de3235d93fefeab24715b28403eb8cac74
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54203244"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801190"
 ---
 # <a name="mdmappconfigkeytype-enum-type"></a>mdmAppConfigKeyType 枚举类型
 
@@ -26,11 +26,10 @@ ms.locfileid: "54203244"
 |成员|值|说明|
 |:---|:---|:---|
 |stringType|0|尚未记录|
-|integerType|1 |尚未记录|
-|realType|2 |尚未记录|
-|booleanType|3 |尚未记录|
+|integerType|1|尚未记录|
+|realType|2|尚未记录|
+|booleanType|3|尚未记录|
 |tokenType|4 |尚未记录|
-
 
 
 

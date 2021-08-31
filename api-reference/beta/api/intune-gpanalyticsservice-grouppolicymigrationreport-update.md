@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 264922edced98e5f95959a69ed4948f557b99a1e7ada7c9fb3ca450b29ac9e29
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 737f6d8be140ec1723295e6f8cdb8809b9bdcca4
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54207843"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58807060"
 ---
 # <a name="update-grouppolicymigrationreport"></a>更新 groupPolicyMigrationReport
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportI
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,7 +53,7 @@ PATCH /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportI
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|尚未记录|
+|id|字符串|尚未记录|
 |groupPolicyObjectId|Guid|来自 GPO Xml 内容的组策略对象 GUID|
 |displayName|字符串|GPO Xml 内容中的组策略对象的名称|
 |ouDistinguishedName|String|OU 的可分辨名称。|
@@ -62,7 +62,7 @@ PATCH /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportI
 |groupPolicyCreatedDateTime|DateTimeOffset|创建 GroupPolicyMigrationReport 的日期和时间。|
 |groupPolicyLastModifiedDateTime|DateTimeOffset|上次修改 GroupPolicyMigrationReport 的日期和时间。|
 |migrationReadiness|[groupPolicyMigrationReadiness](../resources/intune-gpanalyticsservice-grouppolicymigrationreadiness.md)|关联的组策略对象文件的 Intune 覆盖范围。 可取值为：`none`、`partial`、`complete`、`error`、`notApplicable`。|
-|targetedInActiveDirectory|布尔值|GPO Xml 内容中的 AD 中的目标属性|
+|targetedInActiveDirectory|Boolean|GPO Xml 内容中的 AD 中的目标属性|
 |totalSettingsCount|Int32|来自 GPO 文件的组策略设置总数。|
 |supportedSettingsCount|Int32|Intune 支持的组设置的数量。|
 |supportedSettingsPercent|Int32|Intune 支持的组策略设置百分比。|
@@ -120,7 +120,6 @@ Content-Length: 716
   "supportedSettingsPercent": 8
 }
 ```
-
 
 
 

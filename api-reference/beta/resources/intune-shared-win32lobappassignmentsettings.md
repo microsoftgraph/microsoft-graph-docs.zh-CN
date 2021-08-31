@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 21e5e592465be9b1663d79136989740fcfe245666f46448ed304c51b392a557a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 19f78b7c40b345952fde8f6e3ae9fe7b32951953
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54219701"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783804"
 ---
 # <a name="win32lobappassignmentsettings-resource-type"></a>win32LobAppAssignmentSettings 资源类型
 
@@ -62,7 +62,6 @@ ms.locfileid: "54219701"
   "deliveryOptimizationPriority": "String"
 }
 ```
-
 
 
 

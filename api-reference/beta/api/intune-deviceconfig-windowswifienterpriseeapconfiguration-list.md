@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 739556dc64928468192b054ca2270731f17dfa6dd3da02dc2e64a8772307288c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f5e41d09be461e3afe69b642964f7a1a859bb9a3
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54142979"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783748"
 ---
 # <a name="list-windowswifienterpriseeapconfigurations"></a>列出 windowsWifiEnterpriseEAPConfigurations
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -146,7 +146,6 @@ Content-Length: 3184
   ]
 }
 ```
-
 
 
 

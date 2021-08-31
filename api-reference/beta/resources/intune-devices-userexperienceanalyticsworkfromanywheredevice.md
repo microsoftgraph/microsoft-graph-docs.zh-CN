@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0f9f5e5f6bc8ff43a3bac407858c1d41ff06f27d
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: bd7db7eadfb9f14128c4bbfbbb69f69f881a1cec
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255576"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783930"
 ---
 # <a name="userexperienceanalyticsworkfromanywheredevice-resource-type"></a>userExperienceAnalyticsWorkFromAnywhereDevice 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "58255576"
 
 用户体验分析设备：从任何位置工作的报告
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 userExperienceAnalyticsWorkFromAnywhereDevices](../api/intune-devices-userexperienceanalyticsworkfromanywheredevice-list.md)|[userExperienceAnalyticsWorkFromAnywhereDevice](../resources/intune-devices-userexperienceanalyticsworkfromanywheredevice.md) 集合|列出 [userExperienceAnalyticsWorkFromAnywhereDevice](../resources/intune-devices-userexperienceanalyticsworkfromanywheredevice.md) 对象的属性和关系。|
@@ -39,28 +39,33 @@ ms.locfileid: "58255576"
 |serialNumber|String|用户体验随设备序列号随处工作。|
 |manufacturer|String|用户体验从任何设备制造商处工作。|
 |model|String|用户体验从任何设备型号开始工作。|
-|ownership|字符串|用户体验从任何设备所有权开始工作。|
-|managedBy|String|用户体验从设备的任何管理代理工作。|
+|ownership|String|用户体验从任何设备所有权开始工作。|
+|managedBy|字符串|用户体验从设备的任何管理代理工作。|
 |autoPilotRegistered|布尔值|用户体验从 intune 设备的 autopilotRegistered 的任何位置工作。|
-|autoPilotProfileAssigned|布尔值|用户体验分析从 intune 设备的 autopilotProfileAssigned 的任何位置工作。|
-|azureAdRegistered|布尔值|用户体验从任何设备的 azureAdRegistered 工作。|
+|autoPilotProfileAssigned|Boolean|用户体验分析从 intune 设备的 autopilotProfileAssigned 的任何位置工作。|
+|azureAdRegistered|Boolean|用户体验从任何设备的 azureAdRegistered 工作。|
 |azureAdDeviceId|String|用户体验从 Azure Ad 设备 ID 的任何位置工作。|
-|azureAdJoinType|String|用户体验从任何设备的 azure Ad joinType 工作。|
+|azureAdJoinType|字符串|用户体验从任何设备的 azure Ad joinType 工作。|
 |osDescription|String|用户体验从任何设备的操作系统说明工作。|
 |osVersion|String|用户体验从任何设备的操作系统版本工作。|
-|tenantAttached|布尔值|用户体验从任何设备的 tenantAttached 工作。|
+|tenantAttached|Boolean|用户体验从任何设备的 tenantAttached 工作。|
 |compliancePolicySetToIntune|布尔值|用户体验从任何设备的 compliancePolicySetToIntune 工作。|
-|otherWorkloadsSetToIntune|布尔值|用户体验从任何设备的其他WorkloadsSetToIntune 工作。|
-|upgradeEligibility|[operatingSystemUpgradeEligibility](../resources/intune-devices-operatingsystemupgradeeligibility.md)|用户体验从设备的任何 Windows 升级资格状态工作。 可取值为：`upgraded`、`unknown`、`notCapable`、`capable`。|
+|otherWorkloadsSetToIntune|Boolean|用户体验从任何设备的其他WorkloadsSetToIntune 工作。|
+|upgradeEligibility|[operatingSystemUpgradeEligibility](../resources/intune-devices-operatingsystemupgradeeligibility.md)|用户体验从设备的任何 Windows 升级资格状态工作。 可能的值是：`upgraded`、`unknown`、`notCapable`、`capable`。|
 |ramCheckFailed|布尔值|用户体验分析是否从任何设备 RAM 硬件检查失败，设备无法升级到最新版本的 Windows|
-|storageCheckFailed|布尔值|用户体验适用于任何设备，设备升级到最新版本的 Windows 时存储硬件检查是否失败。|
+|storageCheckFailed|Boolean|用户体验适用于任何设备，设备升级到最新版本的 Windows 时存储硬件检查是否失败。|
 |processorCoreCountCheckFailed|布尔值|用户体验适用于任何设备，设备升级到最新版本的 Windows 时处理器硬件核心计数检查是否失败。|
-|processorSpeedCheckFailed|布尔值|用户体验适用于任何设备，设备升级到最新版本的 Windows 时处理器硬件速度检查是否失败。|
-|tpmCheckFailed|布尔值|用户体验从任何设备工作，"受信任的平台模块 (TPM) 设备升级到 Windows 的最新版本的硬件检查失败。|
-|secureBootCheckFailed|布尔值|用户体验适用于任何设备，安全启动硬件检查是否因设备升级到最新版本的 Windows 而失败。|
-|processorFamilyCheckFailed|布尔值|用户体验适用于任何设备，设备升级到最新版本的 Windows 时处理器硬件系列检查是否失败。|
-|processor64BitCheckFailed|布尔值|用户体验适用于任何设备，处理器硬件 64 位体系结构检查是否失败，设备无法升级到最新版本的 Windows。|
-|osCheckFailed|布尔值|用户体验适用于任何设备，操作系统检查是否失败，设备是否升级到最新版本的 Windows。|
+|processorSpeedCheckFailed|Boolean|用户体验适用于任何设备，设备升级到最新版本的 Windows 时处理器硬件速度检查是否失败。|
+|tpmCheckFailed|布尔值|用户体验适用于任何设备，"受信任的平台模块 (TPM) 设备升级到 Windows 的最新版本的硬件检查失败。|
+|secureBootCheckFailed|Boolean|用户体验适用于任何设备，安全启动硬件检查是否因设备升级到最新版本的 Windows 而失败。|
+|processorFamilyCheckFailed|Boolean|用户体验适用于任何设备，设备升级到最新版本的 Windows 时处理器硬件系列检查是否失败。|
+|processor64BitCheckFailed|Boolean|用户体验适用于任何设备，处理器硬件 64 位体系结构检查是否失败，设备无法升级到最新版本的 Windows。|
+|osCheckFailed|Boolean|用户体验适用于任何设备，操作系统检查是否失败，设备是否升级到最新版本的 Windows。|
+|windowsScore|双精度|用户体验从每个设备窗口分数的任何位置工作。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
+|cloudManagementScore|双精度|用户体验按设备云管理分数从任意位置工作。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
+|cloudIdentityScore|双精度|用户体验从每个设备云标识分数的任何位置工作。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
+|cloudProvisioningScore|双精度|用户体验从每个设备云预配分数的任何位置工作。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
+|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验从每个设备运行状况状态的任何位置工作。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
 
 ## <a name="relationships"></a>关系
 无
@@ -102,10 +107,14 @@ ms.locfileid: "58255576"
   "secureBootCheckFailed": true,
   "processorFamilyCheckFailed": true,
   "processor64BitCheckFailed": true,
-  "osCheckFailed": true
+  "osCheckFailed": true,
+  "windowsScore": "4.2",
+  "cloudManagementScore": "4.2",
+  "cloudIdentityScore": "4.2",
+  "cloudProvisioningScore": "4.2",
+  "healthStatus": "String"
 }
 ```
-
 
 
 

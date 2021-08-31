@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5edb62400ff182c43c4d0173afdfce34c581ef958c4977b1b1a20a89b2c7a79c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ad1e66132be2474fed92ec56aef1554ae62665e7
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54156189"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58784791"
 ---
 # <a name="disktype-enum-type"></a>diskType 枚举类型
 
@@ -26,9 +26,8 @@ ms.locfileid: "54156189"
 |成员|值|说明|
 |:---|:---|:---|
 |unkown|0|尚未记录|
-|hdd|1 |尚未记录|
-|ssd|2 |尚未记录|
-
+|hdd|1|尚未记录|
+|ssd|2|尚未记录|
 
 
 
