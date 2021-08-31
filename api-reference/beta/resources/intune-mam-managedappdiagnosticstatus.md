@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 80cc867c89de6bde48c805a364e4ba331bc27342716157188a42a461985f4f36
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: eb78d1abb2a4560f4945c034e32f8b83ef1d1d9b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54145220"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58782922"
 ---
 # <a name="managedappdiagnosticstatus-resource-type"></a>managedAppDiagnosticStatus 资源类型
 
@@ -47,7 +47,6 @@ ms.locfileid: "54145220"
   "mitigationInstruction": "String"
 }
 ```
-
 
 
 

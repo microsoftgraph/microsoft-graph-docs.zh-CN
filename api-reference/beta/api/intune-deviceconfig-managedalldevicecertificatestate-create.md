@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cc988f4d2ad4bca73aea99aa7401f506ce22fcd8ea9786261af372562f6e3cdb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4413d57e02c3d4e13200c1d7d1db05920dd27cd1
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54162317"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58805161"
 ---
 # <a name="create-managedalldevicecertificatestate"></a>创建 managedAllDeviceCertificateState
 
@@ -43,7 +43,7 @@ POST /deviceManagement/deviceConfigurationsAllManagedDeviceCertificateStates
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -56,15 +56,15 @@ POST /deviceManagement/deviceConfigurationsAllManagedDeviceCertificateStates
 |id|String|实体的键。|
 |certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)|撤销状态。 可取值为：`none`、`pending`、`issued`、`failed`、`revoked`。|
 |certificateRevokeStatusLastChangeDateTime|DateTimeOffset|上次更改撤消状态的时间|
-|managedDeviceDisplayName|字符串|设备显示名称|
+|managedDeviceDisplayName|String|设备显示名称|
 |userPrincipalName|字符串|用户主体名称|
 |certificateExpirationDateTime|DateTimeOffset|证书到期日期|
-|certificateIssuerName|字符串|颁发者|
-|certificateThumbprint|String|指纹|
+|certificateIssuerName|String|颁发者|
+|certificateThumbprint|字符串|指纹|
 |certificateSerialNumber|String|序列号|
-|certificateSubjectName|字符串|证书主题名称|
+|certificateSubjectName|String|证书主题名称|
 |certificateKeyUsages|Int32|密钥用法|
-|certificateExtendedKeyUsages|String|增强型密钥使用|
+|certificateExtendedKeyUsages|字符串|增强型密钥使用|
 |certificateIssuanceDateTime|DateTimeOffset|发布日期|
 
 
@@ -122,7 +122,6 @@ Content-Length: 869
   "certificateIssuanceDateTime": "2016-12-31T23:59:41.5044473-08:00"
 }
 ```
-
 
 
 

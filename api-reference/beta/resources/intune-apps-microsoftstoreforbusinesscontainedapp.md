@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 67290bfb7939eff57202fe0afa802a21f2f04cc757904a91fc198d9c84c17937
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9b5255b5ab7e4480100babb812d6be83cc7fca90
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54203216"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797315"
 ---
 # <a name="microsoftstoreforbusinesscontainedapp-resource-type"></a>microsoftStoreForBusinessContainedApp 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "54203216"
 
 继承自 [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 microsoftStoreForBusinessContainedApps](../api/intune-apps-microsoftstoreforbusinesscontainedapp-list.md)|[microsoftStoreForBusinessContainedApp](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md) 集合|列出 [microsoftStoreForBusinessContainedApp 对象的属性和](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md) 关系。|
@@ -38,7 +38,7 @@ ms.locfileid: "54203216"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
-|appUserModelId|字符串|MicrosoftStoreForBusinessApp 包含的应用程序的应用程序用户模型 ID。|
+|appUserModelId|String|MicrosoftStoreForBusinessApp 包含的应用程序的应用程序用户模型 ID。|
 
 ## <a name="relationships"></a>关系
 无
@@ -58,7 +58,6 @@ ms.locfileid: "54203216"
   "appUserModelId": "String"
 }
 ```
-
 
 
 

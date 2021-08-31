@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d1bf94f10b164e13600989b6fed982f6426a505a9f952ff67a1aa97dc4843da5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 511c953f9c2d9ca9f126d433eb7477fc816759e0
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54156196"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806220"
 ---
 # <a name="devicehealthscriptrunsummary-resource-type"></a>deviceHealthScriptRunSummary 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54156196"
 
 包含设备管理脚本的运行摘要的属性。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 deviceHealthScriptRunSummary](../api/intune-devices-devicehealthscriptrunsummary-get.md)|[deviceHealthScriptRunSummary](../resources/intune-devices-devicehealthscriptrunsummary.md)|读取 [deviceHealthScriptRunSummary 对象的属性和](../resources/intune-devices-devicehealthscriptrunsummary.md) 关系。|
@@ -72,7 +72,6 @@ ms.locfileid: "54156196"
   "issueRemediatedCumulativeDeviceCount": 1024
 }
 ```
-
 
 
 

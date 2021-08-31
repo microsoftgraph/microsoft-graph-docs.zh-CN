@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 34c87657e6add9011a1533383a3d549c4e609be6f921435fe7c622a1bc207a9b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b08d5190992433f0f3457c29fb74ccfa8c57e998
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54145409"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58796626"
 ---
 # <a name="edgekioskmoderestrictiontype-enum-type"></a>edgeKioskModeRestrictionType 枚举类型
 
@@ -25,12 +25,11 @@ ms.locfileid: "54145409"
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|notConfigured|0|未配置 (无限制) 。|
-|digitalSignage|1 |单应用模式下的交互式/数字标志。|
-|normalMode|2 |正常模式 (完整版本的Microsoft Edge) 。|
-|publicBrowsingSingleApp|3 |单应用模式下的公共浏览。|
-|publicBrowsingMultiApp|4 |在多 (模式下) InPrivate 中的公共浏览功能。|
-
+|notConfigured|0|未 (无限制) 。|
+|digitalSignage|1|单应用模式下的交互式/数字标志。|
+|normalMode|2|正常模式 (完整版本的Microsoft Edge) 。|
+|publicBrowsingSingleApp|3|单应用模式下的公共浏览。|
+|publicBrowsingMultiApp|4 |在多 (模式下) 公共浏览模式。|
 
 
 

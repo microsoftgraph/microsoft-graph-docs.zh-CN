@@ -1,18 +1,18 @@
 ---
-title: 删除 macOsVppAppAssignedLicense
-description: 删除 macOsVppAppAssignedLicense。
-author: dougeby
+title: 删除 officeClientConfigurationAssignment
+description: 删除 officeClientConfigurationAssignment。
 localization_priority: Normal
+author: dougeby
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e2eaf32b48a325a9b0758448cd9b9434b62cc20a
+ms.openlocfilehash: ff152a4332e301c8b5e09094f154ad1aa6a4a039
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58798060"
+ms.locfileid: "58796527"
 ---
-# <a name="delete-macosvppappassignedlicense"></a>删除 macOsVppAppAssignedLicense
+# <a name="delete-officeclientconfigurationassignment"></a>删除 officeClientConfigurationAssignment
 
 命名空间：microsoft.graph
 
@@ -20,16 +20,16 @@ ms.locfileid: "58798060"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-删除 [macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md)。
+删除 [officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md)。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|权限（从最低特权到最高特权）|
+|权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
+|委派（工作或学校帐户）|**TODO： Determine scopes **|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementApps.ReadWrite.All|
+|应用程序|**TODO： Determine scopes **|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -37,7 +37,7 @@ ms.locfileid: "58798060"
 }
 -->
 ``` http
-DELETE /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.macOsVppApp/assignedLicenses/{macOsVppAppAssignedLicenseId}
+DELETE /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/assignments/{officeClientConfigurationAssignmentId}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -57,7 +57,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.macOsVppApp
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.macOsVppApp/assignedLicenses/{macOsVppAppAssignedLicenseId}
+DELETE https://graph.microsoft.com/beta/officeConfiguration/clientConfigurations/{officeClientConfigurationId}/assignments/{officeClientConfigurationAssignmentId}
 ```
 
 ### <a name="response"></a>响应

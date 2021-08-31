@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 08abfd1f12a293cda8f98d44ffaf2ad60b07f0bc5f8a7f4dfac1946cb2efb290
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d50d87aac91f073243327f0446306b17e54eb9ec
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54241609"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58798095"
 ---
 # <a name="binarymanagementconditionexpressionoperatortype-enum-type"></a>binaryManagementConditionExpressionOperatorType 枚举类型
 
@@ -26,8 +26,7 @@ ms.locfileid: "54241609"
 |成员|值|说明|
 |:---|:---|:---|
 |或|0|只有当一个或多个操作数为 true 时，才将一组操作数计算为 true。|
-|和|1 |只有当一组操作数的所有操作数都为 true 时，才计算其为 true。|
-
+|和|1|只有当一组操作数的所有操作数都为 true 时，才计算其为 true。|
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1ef21f26b259676e774ff009eb8432d4384129fd5977bddf23daf47760742a03
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 25bf816c93d48030cf1937669293f4cadf8e1c5f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54142062"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797547"
 ---
 # <a name="defenderpotentiallyunwantedappaction-enum-type"></a>defenderPotentiallyUnwantedAppAction 枚举类型
 
@@ -26,9 +26,8 @@ Defender 在 PUA 中对检测到可能不需要的应用程序 (的操作) 。
 |成员|值|说明|
 |:---|:---|:---|
 |deviceDefault|0|PUA 保护已关闭。 Defender 不会防范可能不需要的应用程序。|
-|block|1 |PUA 保护已打开。 检测到的项目被阻止。 这些威胁将连同其他威胁一起显示在历史记录中。|
-|audit|2 |审核模式。 Defender 将检测可能不需要的应用程序，但不执行任何操作。 可以通过在事件查看器中搜索 Defender 创建的事件来查看有关 Defender 已针对的应用程序采取操作的信息。|
-
+|block|1|PUA 保护已打开。 检测到的项目被阻止。 这些威胁将连同其他威胁一起显示在历史记录中。|
+|audit|2|审核模式。 Defender 将检测可能不需要的应用程序，但不执行任何操作。 可以通过在事件查看器中搜索 Defender 创建的事件来查看有关 Defender 已针对的应用程序采取操作的信息。|
 
 
 

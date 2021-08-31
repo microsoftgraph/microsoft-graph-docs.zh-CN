@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ae25975b22853a2f958cbb3a5e4c15fe3d7749904780bbcd2c387ffc4ceea446
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f85534fa2e8c55ce5b6a32306a00ea7afa30d568
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54183069"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58805736"
 ---
 # <a name="ratingappstype-enum-type"></a>ratingAppsType 枚举类型
 
@@ -26,12 +26,11 @@ ms.locfileid: "54183069"
 |成员|值|说明|
 |:---|:---|:---|
 |allAllowed|0|默认值，允许所有应用内容|
-|allBlocked|1 |不允许任何应用内容|
-|agesAbove4|2 |4+、年龄 4 及以上|
-|agesAbove9|3 |9+、年龄 9 及以上|
+|allBlocked|1|不允许任何应用内容|
+|agesAbove4|2|4+、年龄 4 及以上|
+|agesAbove9|3|9+、年龄 9 及以上|
 |agesAbove12|4 |12+、12 岁以下的儿童 |
 |agesAbove17|5 |17 及以上、17 岁以下的儿童|
-
 
 
 

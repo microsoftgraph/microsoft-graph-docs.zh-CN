@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 61cfca7b222c0023f1fca5103fba141d1c70b392
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 9570eac23c7ba0bdd186f4e0da3902b71ec2d413
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58262163"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803221"
 ---
 # <a name="policysetitem-resource-type"></a>policySetItem 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "58262163"
 
 一个包含用于 PolicySet Item 的属性的类。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 policySetItems](../api/intune-policyset-policysetitem-list.md)|[policySetItem](../resources/intune-policyset-policysetitem.md) 集合|列出 [policySetItem 对象的属性和](../resources/intune-policyset-policysetitem.md) 关系。|
@@ -34,12 +34,12 @@ ms.locfileid: "58262163"
 |id|String|PolicySetItem 的键。|
 |createdDateTime|DateTimeOffset|PolicySetItem 的创建时间。|
 |lastModifiedDateTime|DateTimeOffset|PolicySetItem 的上次修改时间。|
-|payloadId|字符串|PolicySetItem 的 PayloadId。|
-|itemType|字符串|PolicySetItem 的 policySetType。|
+|payloadId|String|PolicySetItem 的 PayloadId。|
+|itemType|String|PolicySetItem 的 policySetType。|
 |displayName|字符串|PolicySetItem 的 DisplayName。|
-|status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|PolicySetItem 的状态。 可取值为：`unknown`、`validating`、`partialSuccess`、`success`、`error`、`notAssigned`。|
-|errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|错误代码（如果发生了任何错误）。 可取值为：`noError`、`unauthorized`、`notFound`、`deleted`。|
-|guidedDeploymentTags|String collection|引导式部署的标记|
+|状态|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|PolicySetItem 的状态。 可取值为：`unknown`、`validating`、`partialSuccess`、`success`、`error`、`notAssigned`。|
+|errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|错误代码（如果发生了任何错误）。 可能的值是：`noError`、`unauthorized`、`notFound`、`deleted`。|
+|guidedDeploymentTags|字符串集合|引导式部署的标记|
 
 ## <a name="relationships"></a>关系
 无
@@ -68,7 +68,6 @@ ms.locfileid: "58262163"
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0a0e95974742c2baec44a1e2db0225ea9a8156bb62945547bd10e8cb035caca8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 043af4a350998290fc109c5fa008c05e63577294
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54156049"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58805000"
 ---
 # <a name="runasaccounttype-enum-type"></a>runAsAccountType 枚举类型
 
@@ -26,8 +26,7 @@ ms.locfileid: "54156049"
 |成员|值|说明|
 |:---|:---|:---|
 |system|0|系统上下文|
-|用户|1 |用户上下文|
-
+|用户|1|用户上下文|
 
 
 

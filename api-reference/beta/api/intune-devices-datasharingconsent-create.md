@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5ae2c656f57dc8fbc92cf7013511e25c666669fe
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 9edf5a73e49615599b8e6a25c6299fb8c08abcb7
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266077"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797372"
 ---
 # <a name="create-datasharingconsent"></a>创建 dataSharingConsent
 
@@ -27,9 +27,9 @@ ms.locfileid: "58266077"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/dataSharingConsents
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,12 +54,12 @@ POST /deviceManagement/dataSharingConsents
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|数据共享许可 ID|
-|serviceDisplayName|String|服务显示名称流|
+|serviceDisplayName|字符串|服务显示名称流|
 |termsUrl|String|数据共享同意的 TermsUrl|
-|granted|布尔值|数据共享同意的授予状态|
+|granted|Boolean|数据共享同意的授予状态|
 |grantDateTime|DateTimeOffset|为此帐户授予许可的时间|
 |grantedByUpn|String|授予此帐户同意的用户的 Upn|
-|grantedByUserId|String|授予此帐户同意的用户的 UserId|
+|grantedByUserId|字符串|授予此帐户同意的用户的 UserId|
 
 
 
@@ -104,7 +104,6 @@ Content-Length: 382
   "grantedByUserId": "Granted By User Id value"
 }
 ```
-
 
 
 

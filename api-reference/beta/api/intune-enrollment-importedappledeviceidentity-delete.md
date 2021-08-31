@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 855e9cb8b29be91687af5360f529f5e5999ab44c8410c027c38fa2b294876b0c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3c2483890ad9ccdd4e6f2a2ad38626f1d1c827bf
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54183693"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791597"
 ---
 # <a name="delete-importedappledeviceidentity"></a>删除 importedAppleDeviceIdentity
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/imported
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

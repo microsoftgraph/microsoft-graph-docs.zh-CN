@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 52a6005c1d39c8359aeb8c6be2d4b328a0831007
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: b8a33ecae3ac6b06bbbbac8c9674b2f072278510
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58264106"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795702"
 ---
 # <a name="create-remoteactionaudit"></a>创建 remoteActionAudit
 
@@ -27,9 +27,9 @@ ms.locfileid: "58264106"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/remoteActionAudits
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -56,13 +56,13 @@ POST /deviceManagement/remoteActionAudits
 |id|String|报告 ID。|
 |deviceDisplayName|String|Intune 设备名称。|
 |userName|String|\[已弃用 \] 请改为使用 InitiatedByUserPrincipalName。|
-|initiatedByUserPrincipalName|String|启动设备操作的用户，格式为 UPN。|
+|initiatedByUserPrincipalName|字符串|启动设备操作的用户，格式为 UPN。|
 |action|[remoteAction](../resources/intune-devices-remoteaction.md)|操作名称。 可能的值是 `unknown` `factoryReset` ：、、、、、、、、、、。 `removeCompanyData` `resetPasscode` `remoteLock` `enableLostMode` `disableLostMode` `locateDevice` `rebootNow` `recoverPasscode` `cleanWindowsDevice` `logoutSharedAppleDeviceActiveUser` `quickScan` `fullScan` `windowsDefenderUpdateSignatures` `factoryResetKeepEnrollmentData` `updateDeviceAccount` `automaticRedeployment` `shutDown` `rotateBitLockerKeys` `rotateFileVaultKey` `getFileVaultKey` `setDeviceName` `activateDeviceEsim`|
 |requestDateTime|DateTimeOffset|发出操作的时间（以 UTC 表示）。|
-|deviceOwnerUserPrincipalName|字符串|设备所有者的 Upn。|
+|deviceOwnerUserPrincipalName|String|设备所有者的 Upn。|
 |deviceIMEI|String|设备的 IMEI。|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|操作状态。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed` 或 `notSupported`。|
-|managedDeviceId|String|操作目标。|
+|managedDeviceId|字符串|操作目标。|
 
 
 
@@ -113,7 +113,6 @@ Content-Length: 553
   "managedDeviceId": "Managed Device Id value"
 }
 ```
-
 
 
 

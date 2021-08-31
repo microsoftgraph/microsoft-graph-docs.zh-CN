@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 26799118f5a72da672a48821d8312a6bfdc6db21
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 0dc619edca7b53d40f149b529b4323d03d3e5bee
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58265768"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58798235"
 ---
 # <a name="update-userexperienceanalyticsimpactingprocess"></a>更新 userExperienceAnalyticsImpactingProcess
 
@@ -27,9 +27,9 @@ ms.locfileid: "58265768"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/userExperienceAnalyticsImpactingProcess/{userExperienceA
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -55,8 +55,8 @@ PATCH /deviceManagement/userExperienceAnalyticsImpactingProcess/{userExperienceA
 |:---|:---|:---|
 |id|String|用户体验分析影响最强的进程实体的唯一标识符。|
 |deviceId|String|受影响设备的唯一标识符。|
-|“类别”|字符串|影响流程的类别。|
-|processName|String|进程名称。|
+|“类别”|String|影响流程的类别。|
+|processName|字符串|进程名称。|
 |description|String|过程说明。|
 |发布者|String|进程的发布者。|
 |impactValue|双精度|进程的影响值。 有效值为 0 到 1.79769313486232E+308|
@@ -104,7 +104,6 @@ Content-Length: 349
   "impactValue": 3.6666666666666665
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 133c59057c4c5d59eb16af808e69ec4b8ae385bba91a3fa01f05857a1dabbf44
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 421f00600febc567f10b754e86e061aa5e57fa29
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54226432"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58779135"
 ---
 # <a name="carttoclassassociation-resource-type"></a>cartToClassAssociation 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54226432"
 
 CartToClassAssociation，用于将设备购物车与教室关联。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 cartToClassAssociations](../api/intune-deviceconfig-carttoclassassociation-list.md)|[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) 集合|列出 [cartToClassAssociation 对象的属性和](../resources/intune-deviceconfig-carttoclassassociation.md) 关系。|
@@ -38,10 +38,10 @@ CartToClassAssociation，用于将设备购物车与教室关联。
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
 |version|Int32|CartToClassAssociation 的版本。|
-|displayName|字符串|管理员提供的设备配置的名称。|
+|displayName|String|管理员提供的设备配置的名称。|
 |description|String|管理员提供了 CartToClassAssociation 的说明。|
 |deviceCartIds|String collection|要与类关联的设备购物车的标识符。|
-|classroomIds|String collection|要与设备购物车关联的教室的标识符。|
+|classroomIds|字符串集合|要与设备购物车关联的教室的标识符。|
 
 ## <a name="relationships"></a>关系
 无
@@ -71,7 +71,6 @@ CartToClassAssociation，用于将设备购物车与教室关联。
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d6d43ad592821546c9eab32c3681ae7ab9747def7fe71c18b72ef579f4c3bb28
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 56d846fccc9904d5f3f6d1a168fc638648dc7680
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54133213"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806038"
 ---
 # <a name="userexperienceanalyticsapphealthosversionperformance-resource-type"></a>userExperienceAnalyticsAppHealthOSVersionPerformance 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54133213"
 
 用户体验分析设备操作系统版本性能实体包含操作系统版本性能详细信息。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 userExperienceAnalyticsAppHealthOSVersionPerformances](../api/intune-devices-userexperienceanalyticsapphealthosversionperformance-list.md)|[userExperienceAnalyticsAppHealthOSVersionPerformance](../resources/intune-devices-userexperienceanalyticsapphealthosversionperformance.md) 集合|列出 [userExperienceAnalyticsAppHealthOSVersionPerformance](../resources/intune-devices-userexperienceanalyticsapphealthosversionperformance.md) 对象的属性和关系。|
@@ -40,7 +40,7 @@ ms.locfileid: "54133213"
 |activeDeviceCount|Int32|操作系统版本的活动设备的数量。 有效值 -2147483648 2147483647|
 |meanTimeToFailureInMinutes|Int32|操作系统版本的失败平均时间（分钟）。 有效值 -2147483648 2147483647|
 |osVersionAppHealthScore|双精度|操作系统版本的应用运行状况分数。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
-|osVersionAppHealthStatus|String|操作系统版本的总体应用运行状况状态。|
+|osVersionAppHealthStatus|字符串|操作系统版本的总体应用运行状况状态。|
 
 ## <a name="relationships"></a>关系
 无
@@ -65,7 +65,6 @@ ms.locfileid: "54133213"
   "osVersionAppHealthStatus": "String"
 }
 ```
-
 
 
 

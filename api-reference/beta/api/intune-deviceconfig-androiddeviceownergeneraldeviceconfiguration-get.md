@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 99a6774f8e5c4e1bd4735a9f293893eafecca7c99791a7b600b5d6acbc8b47f6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e143048bfffee9ef10cace0e25d73c2f26253212
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54216016"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803691"
 ---
 # <a name="get-androiddeviceownergeneraldeviceconfiguration"></a>获取 androidDeviceOwnerGeneralDeviceConfiguration
 
@@ -48,7 +48,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7876
+Content-Length: 8848
 
 {
   "value": {
@@ -106,6 +106,15 @@ Content-Length: 7876
     "description": "Description value",
     "displayName": "Display Name value",
     "version": 7,
+    "azureAdSharedDeviceDataClearApps": [
+      {
+        "@odata.type": "microsoft.graph.appListItem",
+        "name": "Name value",
+        "publisher": "Publisher value",
+        "appStoreUrl": "https://example.com/appStoreUrl/",
+        "appId": "App Id value"
+      }
+    ],
     "accountsBlockModification": true,
     "appsAllowInstallFromUnknownSources": true,
     "appsAutoUpdatePolicy": "userChoice",
@@ -204,6 +213,15 @@ Content-Length: 7876
         }
       }
     ],
+    "kioskModeManagedHomeScreenAutoSignout": true,
+    "kioskModeManagedHomeScreenInactiveSignOutDelayInSeconds": 7,
+    "kioskModeManagedHomeScreenInactiveSignOutNoticeInSeconds": 8,
+    "kioskModeManagedHomeScreenPinComplexity": "simple",
+    "kioskModeManagedHomeScreenPinRequired": true,
+    "kioskModeManagedHomeScreenPinRequiredToResume": true,
+    "kioskModeManagedHomeScreenSignInBackground": "Kiosk Mode Managed Home Screen Sign In Background value",
+    "kioskModeManagedHomeScreenSignInBrandingLogo": "Kiosk Mode Managed Home Screen Sign In Branding Logo value",
+    "kioskModeManagedHomeScreenSignInEnabled": true,
     "microphoneForceMute": true,
     "networkEscapeHatchAllowed": true,
     "nfcBlockOutgoingBeam": true,
@@ -227,6 +245,7 @@ Content-Length: 7876
     "safeBootBlocked": true,
     "screenCaptureBlocked": true,
     "securityAllowDebuggingFeatures": true,
+    "securityDeveloperSettingsEnabled": true,
     "securityRequireVerifyApps": true,
     "statusBarBlocked": true,
     "stayOnModes": [
@@ -263,7 +282,6 @@ Content-Length: 7876
   }
 }
 ```
-
 
 
 

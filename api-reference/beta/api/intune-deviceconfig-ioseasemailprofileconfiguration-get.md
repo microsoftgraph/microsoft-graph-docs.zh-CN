@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bce530d7940cd01ba233ae66ca52a096704fc2f102f5848ab3185dc085998bd2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b41438b9a6184e56943d64878dd64b5bf4f5337b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54137533"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58775676"
 ---
 # <a name="get-ioseasemailprofileconfiguration"></a>获取 iosEasEmailProfileConfiguration
 
@@ -48,7 +48,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -136,7 +136,6 @@ Content-Length: 2496
   }
 }
 ```
-
 
 
 

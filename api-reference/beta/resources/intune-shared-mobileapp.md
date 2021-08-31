@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4b606226e62e7eccfc65bb3c19fd359fff4a2c7161506404aa6eed09c481e2f8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 993b79f8b9ff18c5ecb46b22adf5ccfc8da8f113
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54214913"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58805996"
 ---
 # <a name="mobileapp-resource-type"></a>mobileApp 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54214913"
 
 包含 Intune 移动应用基属性的抽象类。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[List mobileApps](../api/intune-shared-mobileapp-list.md)|[mobileApp](../resources/intune-shared-mobileapp.md) 集合|列出 [mobileApp](../resources/intune-shared-mobileapp.md) 对象的属性和关系。|
@@ -40,8 +40,8 @@ ms.locfileid: "54214913"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|displayName|String|管理员提供或导入的应用标题。|
-|description|String|应用的说明。|
+|displayName|字符串|管理员提供或导入的应用标题。|
+|description|字符串|应用的说明。|
 |publisher|String|应用的发布者。|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|要显示在应用详细信息中并用于图标上传的大图标。|
 |createdDateTime|DateTimeOffset|创建应用的日期和时间。|
@@ -106,7 +106,6 @@ ms.locfileid: "54214913"
   "dependentAppCount": 1024
 }
 ```
-
 
 
 

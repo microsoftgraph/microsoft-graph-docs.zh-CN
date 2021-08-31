@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3859d5e00b36500d94e0af6480132748487afc7332283888da6c4c906e1560bc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a6a6ad4fcebbcbb6a81e0a19d40bd3851ff28117
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54230002"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58798144"
 ---
 # <a name="delete-devicemanagementcachedreportconfiguration"></a>删除 deviceManagementCachedReportConfiguration
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/reports/cachedReportConfigurations/{deviceManagementCac
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/reports/cachedReportCon
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

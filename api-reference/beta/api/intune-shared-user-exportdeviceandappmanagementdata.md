@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1c3477ccafc20b2a952083ca99d6eeb289bf2b209ce09804d7d67c50883a188e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: efb6640290a86c5171102a9e844cb10124411b3d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54164417"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58762093"
 ---
 # <a name="exportdeviceandappmanagementdata-function"></a>exportDeviceAndAppManagementData 函数
 
@@ -48,7 +48,7 @@ GET /users/{usersId}/exportDeviceAndAppManagementData
 
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -90,7 +90,6 @@ Content-Length: 143
   }
 }
 ```
-
 
 
 

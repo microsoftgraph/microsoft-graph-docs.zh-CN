@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2481570ea536c734be46f51bdaa3d9a893263188b6c99677925d61ad329af092
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9bc115882461351f28a954f35be7267fca3c1c1b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54150421"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791837"
 ---
 # <a name="compliancestate-enum-type"></a>complianceState 枚举类型
 
@@ -26,13 +26,12 @@ ms.locfileid: "54150421"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|未知。|
-|compliant|1 |兼容。|
-|不符合|2 |设备不兼容，并且被阻止访问公司资源。|
-|conflict|3 |与其他规则冲突。|
+|compliant|1|兼容。|
+|不符合|2|设备不兼容，并且被阻止访问公司资源。|
+|conflict|3|与其他规则冲突。|
 |error|4 |错误。|
 |inGracePeriod|254|设备不合规，但仍有权访问公司资源|
 |configManager|255|由配置管理器管理|
-
 
 
 

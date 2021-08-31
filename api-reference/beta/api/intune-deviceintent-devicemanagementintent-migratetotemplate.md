@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8de89c729bc9aa897fc8f3577b296196a339177c71988c27ae2c9b3960fc7478
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 449b77938fb09e1743040d584ce6e4e995799e8a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54133977"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804370"
 ---
 # <a name="migratetotemplate-action"></a>migrateToTemplate 操作
 
@@ -43,7 +43,7 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/migrateToTemplate
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -82,7 +82,6 @@ Content-length: 81
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

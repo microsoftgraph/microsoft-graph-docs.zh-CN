@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 724b6d0deb2fff796c5f7d43d961a014eadc84c2659e47392def0e803c172b5f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 828117ad95c9e1de2815046d6877f5378528f788
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54145395"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804524"
 ---
 # <a name="iossinglesignonsettings-resource-type"></a>iosSingleSignOnSettings 资源类型
 
@@ -61,7 +61,6 @@ ms.locfileid: "54145395"
   "kerberosRealm": "String"
 }
 ```
-
 
 
 

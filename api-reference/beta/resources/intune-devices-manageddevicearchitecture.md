@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a03c8a22a07a46f59b69e925a7d69b2b0c1da1d37ae26e5ca6a7a383172a9797
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 56c89ae8f087585b1314c8305378f3553f7a9038
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54236106"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58796206"
 ---
 # <a name="manageddevicearchitecture-enum-type"></a>managedDeviceArchitecture 枚举类型
 
@@ -26,11 +26,10 @@ ms.locfileid: "54236106"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|未知体系结构|
-|x86|1 |X86|
-|x64|2 |X64|
-|arm|3 |ARM|
+|x86|1|X86|
+|x64|2|X64|
+|arm|3|ARM|
 |arM64|4 |ARM64|
-
 
 
 

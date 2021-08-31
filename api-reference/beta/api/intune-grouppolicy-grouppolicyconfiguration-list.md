@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6307e9e71bdac27982eab26eccf93012a8750d0388c96b595310dc515960d342
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6d10ab0fc8fc27dd0564d327f2617257108bf64a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54230191"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58792293"
 ---
 # <a name="list-grouppolicyconfigurations"></a>列出 groupPolicyConfigurations
 
@@ -43,7 +43,7 @@ GET /deviceManagement/groupPolicyConfigurations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -83,7 +83,6 @@ Content-Length: 448
   ]
 }
 ```
-
 
 
 
