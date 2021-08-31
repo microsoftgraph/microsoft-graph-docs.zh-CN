@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: affbe95b4d92642d5ffd70c2b6cd9c347882a17a2168a6d9acfcc4a6d5b94704
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0f85d01bf011f7a81178fd1995b73c21da6278de
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178890"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58794719"
 ---
 # <a name="managedappstatusraw-resource-type"></a>managedAppStatusRaw 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "54178890"
 
 继承自 [managedAppStatus](../resources/intune-mam-managedappstatus.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 managedAppStatusRaws](../api/intune-mam-managedappstatusraw-list.md)|[managedAppStatusRaw](../resources/intune-mam-managedappstatusraw.md) 集合|列出 [managedAppStatusRaw](../resources/intune-mam-managedappstatusraw.md) 对象的属性和关系。|
@@ -35,7 +35,7 @@ ms.locfileid: "54178890"
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|状态报告的友好名称。 继承自 [managedAppStatus](../resources/intune-mam-managedappstatus.md)|
-|id|字符串|实体的键。 继承自 [managedAppStatus](../resources/intune-mam-managedappstatus.md)|
+|id|String|实体的键。 继承自 [managedAppStatus](../resources/intune-mam-managedappstatus.md)|
 |version|String|实体的版本。 继承自 [managedAppStatus](../resources/intune-mam-managedappstatus.md)|
 |content|[Json](../resources/intune-mam-json.md)|状态报告内容。|
 
@@ -61,7 +61,6 @@ ms.locfileid: "54178890"
   }
 }
 ```
-
 
 
 

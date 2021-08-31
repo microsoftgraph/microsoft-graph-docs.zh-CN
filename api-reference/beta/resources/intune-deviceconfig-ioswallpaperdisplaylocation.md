@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: aa48817d457dc82079a9091d4b4510c7b6bc233c88ef43f1b3c107da6d8602f7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8a403f28e711c86b6a196386e8109cc3d58077da
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54185885"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58759650"
 ---
 # <a name="ioswallpaperdisplaylocation-enum-type"></a>iosWallpaperDisplayLocation 枚举类型
 
@@ -26,10 +26,9 @@ ms.locfileid: "54185885"
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|没有为墙纸显示指定位置。|
-|lockScreen|1 |配置的墙纸图像显示在锁屏界面上。|
-|homeScreen|2 |已配置的墙纸图像显示在家庭 (图标列表) 屏幕上。|
-|lockAndHomeScreens|3 |配置的墙纸图像显示在锁屏界面和主屏幕上。|
-
+|lockScreen|1|配置的墙纸图像显示在锁屏界面上。|
+|homeScreen|2|已配置的墙纸图像显示在家庭 (图标列表) 屏幕上。|
+|lockAndHomeScreens|3|配置的墙纸图像显示在锁屏界面和主屏幕上。|
 
 
 

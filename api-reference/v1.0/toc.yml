@@ -1256,6 +1256,18 @@ items:
                     href: resources/callrecords-session.md
                   - name: 列表会话
                     href: api/callrecords-session-list.md
+              - name: PSTN 呼叫
+                items:
+                  - name: PSTN 日志行
+                    href: resources/callrecords-pstncalllogrow.md
+                  - name: 列出 PSTN 呼叫
+                    href: api/callrecords-callrecord-getpstncalls.md
+              - name: 直接路由呼叫
+                items:
+                  - name: 直接传送日志行
+                    href: resources/callrecords-directroutinglogrow.md
+                  - name: 列出直接路由呼叫
+                    href: api/callrecords-callrecord-getdirectroutingcalls.md
           - name: 联机会议
             items:
               - name: 在线会议
@@ -5887,7 +5899,7 @@ items:
                 href: api/list-create.md
               - name: 列出子网站
                 href: api/site-list-subsites.md
-              - name: Permissions
+              - name: 权限
                 href: resources/permission.md
                 items:
                   - name: 获取网站权限

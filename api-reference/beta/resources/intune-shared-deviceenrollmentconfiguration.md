@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b6714713e86bb42fb2a78d0fde53269b82513af1cb693d840b788d6bb77c717d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3f4095db44b1b32c3c1adb5792dab99167909c41
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54241511"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58792552"
 ---
 # <a name="deviceenrollmentconfiguration-resource-type"></a>deviceEnrollmentConfiguration 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54241511"
 
 设备注册配置的基类
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceEnrollmentConfigurations](../api/intune-shared-deviceenrollmentconfiguration-list.md)|[deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md) 集合|列出 [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md) 对象的属性和关系。|
@@ -36,9 +36,9 @@ ms.locfileid: "54241511"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|帐户的唯一标识符|
+|id|String|帐户的唯一标识符|
 |displayName|String|设备显示名称配置|
-|description|String|设备注册配置的说明|
+|description|字符串|设备注册配置的说明|
 |priority|Int32|如果用户位于分配了注册配置的多个组中，则使用优先级。 用户仅受优先级值最低的配置使用。|
 |createdDateTime|DateTimeOffset|设备注册配置的创建日期时间（UTC）|
 |lastModifiedDateTime|DateTimeOffset|设备注册配置的上次修改日期时间（UTC）|
@@ -70,7 +70,6 @@ ms.locfileid: "54241511"
   "version": 1024
 }
 ```
-
 
 
 

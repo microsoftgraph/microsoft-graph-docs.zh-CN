@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8cf3f1bb4d02493b2310766b6462aaa3f0e668f2934384db7b3d8fef46a9c08b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1328f4d14fd36ea782e1381dabb1eeabcc1e308a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54125828"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791766"
 ---
 # <a name="get-macoslobapp"></a>获取 macOSLobApp
 
@@ -29,7 +29,7 @@ ms.locfileid: "54125828"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -48,7 +48,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2035
+Content-Length: 2057
 
 {
   "value": {
@@ -116,7 +116,8 @@ Content-Length: 2035
       "v10_13": true,
       "v10_14": true,
       "v10_15": true,
-      "v11_0": true
+      "v11_0": true,
+      "v12_0": true
     },
     "buildNumber": "Build Number value",
     "versionNumber": "Version Number value",
@@ -138,7 +139,6 @@ Content-Length: 2035
   }
 }
 ```
-
 
 
 

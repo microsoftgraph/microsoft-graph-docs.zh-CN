@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2b4089b98b4cccb3eb4fda1ea181dbc311e24081247ba3932c46f3ed7c63be57
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bc1a97c16cf3d5ca132d2c78233c6627a1fae2a2
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54164193"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791808"
 ---
 # <a name="grouppolicyuploadedcategory-resource-type"></a>groupPolicyUploadedCategory 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "54164193"
 
 继承自 [groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 groupPolicyUploadedCategories](../api/intune-grouppolicy-grouppolicyuploadedcategory-list.md)|[groupPolicyUploadedCategory](../resources/intune-grouppolicy-grouppolicyuploadedcategory.md) 集合|列出 [groupPolicyUploadedCategory](../resources/intune-grouppolicy-grouppolicyuploadedcategory.md) 对象的属性和关系。|
@@ -38,8 +38,8 @@ ms.locfileid: "54164193"
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|类别名称的字符串 id 显示名称继承自 [groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)|
-|isRoot|布尔值|定义类别是否属于根类别 继承自 [groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)|
-|id|字符串|实体的键。 继承自 [groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)|
+|isRoot|Boolean|定义类别是否属于根类别 继承自 [groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)|
+|id|String|实体的键。 继承自 [groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。 继承自 [groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)|
 
 ## <a name="relationships"></a>关系
@@ -67,7 +67,6 @@ ms.locfileid: "54164193"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

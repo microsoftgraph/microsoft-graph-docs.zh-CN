@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f7f0c8336b41a6390b7ef9b25506fee50b2509dfac4cdcb1cdf1327d4fd313f4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ce568685ce59ad14bd640aa8bb64ea5fa36aa838
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54186137"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58793405"
 ---
 # <a name="updatestatus-action"></a>updateStatus 操作
 
@@ -43,7 +43,7 @@ POST /deviceAppManagement/deviceAppManagementTasks/{deviceAppManagementTaskId}/u
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -82,7 +82,6 @@ Content-length: 52
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

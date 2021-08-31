@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 51bf765bf86f4202d9c47340086942347e24cb7952d73e7671e95d1e845bb250
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 23060e6f6fa7f15023f6aa14f11cc785f00c5af1
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54191100"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58792244"
 ---
 # <a name="create-windowsfeatureupdateprofile"></a>创建 windowsFeatureUpdateProfile
 
@@ -43,7 +43,7 @@ POST /deviceManagement/windowsFeatureUpdateProfiles
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,13 +54,13 @@ POST /deviceManagement/windowsFeatureUpdateProfiles
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的标识符。|
-|displayName|字符串|配置文件显示名称。|
+|displayName|String|配置文件显示名称。|
 |description|String|由用户指定的配置文件的说明。|
-|featureUpdateVersion|String|将部署到此配置文件所面向的设备的功能更新版本。 版本可以是任何受支持的版本，例如 1709、1803 或 1809 等。|
+|featureUpdateVersion|字符串|将部署到此配置文件所面向的设备的功能更新版本。 版本可以是任何受支持的版本，例如 1709、1803 或 1809 等。|
 |createdDateTime|DateTimeOffset|创建配置文件的日期时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改配置文件的日期时间。|
-|roleScopeTagIds|String collection|此功能更新实体的范围标记列表。|
-|deployableContentDisplayName|字符串|友好显示名称更新配置文件可部署内容的友好策略|
+|roleScopeTagIds|字符串集合|此功能更新实体的范围标记列表。|
+|deployableContentDisplayName|String|质量显示名称配置文件可部署内容的友好解决方案|
 |endOfSupportDate|DateTimeOffset|功能更新的上次支持日期|
 
 
@@ -112,7 +112,6 @@ Content-Length: 577
   "endOfSupportDate": "2017-01-01T00:02:08.3437725-08:00"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 493496486959169f2ad12108b3ad1abc4d8894dc
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: faeb531b801f2615cb4bedd5a27436eab3f3d967
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58262986"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58798446"
 ---
 # <a name="get-devicemanagementderivedcredentialsettings"></a>获取 deviceManagementDerivedCredentialSettings
 
@@ -55,7 +55,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -74,7 +74,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 
 ### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
-
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -86,7 +85,6 @@ Content-Length: 155
     "id": "bc650741-0741-bc65-4107-65bc410765bc"
   }
 }
-```
 
 
 

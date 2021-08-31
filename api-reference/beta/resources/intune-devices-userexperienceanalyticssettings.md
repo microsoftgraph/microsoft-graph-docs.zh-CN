@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 877e710d00405f3b9a592cd7eb2501d25495d0a61237ea5acc62f6cb9e4f38d8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9fa1627951488c543c697cc5b9948963aa502998
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54185682"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58798102"
 ---
 # <a name="userexperienceanalyticssettings-resource-type"></a>userExperienceAnalyticsSettings 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "54185682"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|configurationManagerDataConnectorConfigured|布尔值|如此 如果配置租户附加。 如果配置，则 SCCM 租户附加设备将在 UXA 报告中显示。|
+|configurationManagerDataConnectorConfigured|Boolean|如此 如果配置租户附加。 如果配置，则 SCCM 租户附加设备将在 UXA 报告中显示。|
 
 ## <a name="relationships"></a>关系
 无
@@ -43,7 +43,6 @@ ms.locfileid: "54185682"
   "configurationManagerDataConnectorConfigured": true
 }
 ```
-
 
 
 

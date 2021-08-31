@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: dafdc4acf97eba6344bca82173f981e8eb5e8cdae98f0ae2e367ae347d9e5ee7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4906a94305b26f0b76ed843d6c967e50ac647173
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54241714"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58794833"
 ---
 # <a name="wifiauthenticationmethod-enum-type"></a>wiFiAuthenticationMethod 枚举类型
 
@@ -26,9 +26,8 @@ Wi-Fi身份验证方法。
 |成员|值|说明|
 |:---|:---|:---|
 |证书|0|使用标识证书进行身份验证。|
-|usernameAndPassword|1 |使用用户名和密码进行身份验证。|
-|derivedCredential|2 |使用派生的凭据进行身份验证。|
-
+|usernameAndPassword|1|使用用户名和密码进行身份验证。|
+|derivedCredential|2|使用派生的凭据进行身份验证。|
 
 
 

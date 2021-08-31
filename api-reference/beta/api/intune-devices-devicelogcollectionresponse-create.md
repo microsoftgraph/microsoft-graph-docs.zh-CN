@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bc7d4c69e6163bec885d1bd354d01529ae46ccb2
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 4144f0ef0005b6e6e4d9522163617d7c67ae5b79
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58260440"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58792251"
 ---
 # <a name="create-devicelogcollectionresponse"></a>创建 deviceLogCollectionResponse
 
@@ -27,9 +27,9 @@ ms.locfileid: "58260440"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,12 +54,12 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|表单的唯一标识符tenantId_deviceId_requestId|
-|status|字符串|日志集合请求的状态|
+|状态|String|日志集合请求的状态|
 |managedDeviceId|Guid|设备 ID|
 |errorCode|Int64|错误代码（如果有）。 有效值 -9.22337203685478E+18 到 9.22337203685478E+18|
 |requestedDateTimeUTC|DateTimeOffset|请求的 DateTime|
 |receivedDateTimeUTC|DateTimeOffset|收到请求的日期/时间|
-|initiatedByUserPrincipalName|字符串|发起请求的 UPN|
+|initiatedByUserPrincipalName|String|发起请求的 UPN|
 |expirationDateTimeUTC|DateTimeOffset|日志过期的 DateTime|
 |size|双精度|日志的大小。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
 
@@ -110,7 +110,6 @@ Content-Length: 528
   "size": 1.3333333333333333
 }
 ```
-
 
 
 

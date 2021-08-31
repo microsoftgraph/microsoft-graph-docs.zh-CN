@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f79e36f7eabf1d39aab7563b21cc5b2da5bffe5240b70d1f371ca26c4b8e6cf5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f41ad7b11904fdabc34182efd977e86698bf4855
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54224598"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58794432"
 ---
 # <a name="userexperienceanalyticsdevicestartupprocess-resource-type"></a>userExperienceAnalyticsDeviceStartupProcess 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54224598"
 
 用户体验分析设备启动过程详细信息。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 userExperienceAnalyticsDeviceStartupProcesses](../api/intune-devices-userexperienceanalyticsdevicestartupprocess-list.md)|[userExperienceAnalyticsDeviceStartupProcess](../resources/intune-devices-userexperienceanalyticsdevicestartupprocess.md) 集合|列出 [userExperienceAnalyticsDeviceStartupProcess](../resources/intune-devices-userexperienceanalyticsdevicestartupprocess.md) 对象的属性和关系。|
@@ -36,7 +36,7 @@ ms.locfileid: "54224598"
 |:---|:---|:---|
 |id|String|用户体验分析设备启动过程的唯一标识符。|
 |managedDeviceId|String|用户体验分析设备 ID。|
-|processName|String|用户体验分析设备启动进程名称。|
+|processName|字符串|用户体验分析设备启动进程名称。|
 |productName|String|用户体验分析设备启动过程产品名称。|
 |发布者|String|用户体验分析设备启动进程发布者。|
 |startupImpactInMs|Int32|用户体验分析设备启动过程影响（以毫秒为单位）。|
@@ -63,7 +63,6 @@ ms.locfileid: "54224598"
   "startupImpactInMs": 1024
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6c6f2ec200e4b50c6a88d7ec50d5be674345c3d221d4be41803f28b4282595a9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bac2c26dd32f6ddb36c16595f10940f6a35f8595
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54136812"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791935"
 ---
 # <a name="create-rolescopetag"></a>创建 roleScopeTag
 
@@ -44,7 +44,7 @@ POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleA
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,10 +54,10 @@ POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleA
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。 此为只读，且自动生成。|
-|displayName|字符串|角色作用域标记的显示或友好名称。|
+|id|String|实体的键。 此为只读，且自动生成。 此属性是只读的。|
+|displayName|String|角色作用域标记的显示或友好名称。|
 |description|String|角色作用域标记的说明。|
-|isBuiltIn|Boolean|角色作用域标记的说明。|
+|isBuiltIn|Boolean|角色作用域标记的说明。 此属性是只读的。|
 
 
 
@@ -96,7 +96,6 @@ Content-Length: 204
   "isBuiltIn": true
 }
 ```
-
 
 
 

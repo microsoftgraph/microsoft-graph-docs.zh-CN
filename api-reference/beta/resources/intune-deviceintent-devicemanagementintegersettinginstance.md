@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c48e78fbed3d29a6f6852d2fd77b780e8f51f2f49d922433625e9560e0b97f40
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 00bc87aad98ee687212268be76541dc08f1c74d0
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54226278"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58798397"
 ---
 # <a name="devicemanagementintegersettinginstance-resource-type"></a>deviceManagementIntegerSettingInstance 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "54226278"
 
 继承自 [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceManagementIntegerSettingInstances](../api/intune-deviceintent-devicemanagementintegersettinginstance-list.md)|[deviceManagementIntegerSettingInstance](../resources/intune-deviceintent-devicemanagementintegersettinginstance.md) 集合|列出 [deviceManagementIntegerSettingInstance 对象的属性和](../resources/intune-deviceintent-devicemanagementintegersettinginstance.md) 关系。|
@@ -62,7 +62,6 @@ ms.locfileid: "54226278"
   "value": 1024
 }
 ```
-
 
 
 

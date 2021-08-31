@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b306be76a54e2df6d41f928f0d413015fb502a60
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 5f662539af2c26724ec49da1f35fcf4416277337
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257175"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58798607"
 ---
 # <a name="create-userexperienceanalyticsremoteconnection"></a>创建 userExperienceAnalyticsRemoteConnection
 
@@ -27,9 +27,9 @@ ms.locfileid: "58257175"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/userExperienceAnalyticsRemoteConnection
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -57,7 +57,7 @@ POST /deviceManagement/userExperienceAnalyticsRemoteConnection
 |deviceId|String|设备的 ID。|
 |deviceName|String|设备的名称。|
 |model|String|用户体验分析设备模型。|
-|virtualNetwork|String|用户体验分析虚拟网络。|
+|virtualNetwork|字符串|用户体验分析虚拟网络。|
 |manufacturer|String|用户体验分析制造商。|
 |deviceCount|Int32|远程连接计数。 有效值为 0 到 2147483647|
 |cloudPcRoundTripTime|双精度|云电脑设备的舍入提示时间。 有效值为 0 到 1.79769313486232E+308|
@@ -66,7 +66,7 @@ POST /deviceManagement/userExperienceAnalyticsRemoteConnection
 |coreBootTime|双精度|云电脑设备的核心启动时间。 有效值为 0 到 1.79769313486232E+308|
 |coreSignInTime|双精度|云电脑设备的核心登录时间。 有效值为 0 到 1.79769313486232E+308|
 |cloudPcFailurePercentage|双精度|云电脑设备的登录失败百分比。 有效值为 0 至 100|
-|userPrincipalName|字符串|用户体验分析 userPrincipalName。|
+|userPrincipalName|String|用户体验分析 userPrincipalName。|
 
 
 
@@ -125,7 +125,6 @@ Content-Length: 622
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

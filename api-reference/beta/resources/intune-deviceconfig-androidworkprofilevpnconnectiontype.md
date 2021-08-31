@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 65a8373338cea6fe31bf5b1a2056c9baebb3dd94dd85a68a1508a07f1fb718b3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a5b77523aa891a8c191adc2e95f910c9e28633d9
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54242991"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797561"
 ---
 # <a name="androidworkprofilevpnconnectiontype-enum-type"></a>androidWorkProfileVpnConnectionType 枚举类型
 
@@ -26,16 +26,15 @@ Android 工作配置文件 VPN 连接类型。
 |成员|值|说明|
 |:---|:---|:---|
 |ciscoAnyConnect|0|Cisco AnyConnect。|
-|pulseSecure|1 |脉冲安全。|
-|f5EdgeClient|2 |F5 边缘客户端。|
-|dellSonicWallMobileConnect|3 |Dell SonicWALL 移动连接。|
+|pulseSecure|1|脉冲安全。|
+|f5EdgeClient|2|F5 边缘客户端。|
+|dellSonicWallMobileConnect|3|Dell SonicWALL 移动连接。|
 |checkPointCapsuleVpn|4 |Check Point Capsule VPN.|
 |citrix|5 |Citrix|
 |paloAltoGlobalProtect|6 |Palo Alto Networks GlobalProtect.|
 |microsoftTunnel|7 |Microsoft Tunnel。|
 |netMotionMobility|8 |NetMotion Mobility。|
 |microsoftProtect|9 |Microsoft 保护。|
-
 
 
 
