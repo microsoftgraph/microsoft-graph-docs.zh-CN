@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8b7cc3321cd8369c7e17f93e35eeb26207b59f509f975546f204ce51cf1f948f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: edac97723f19b494adcb38ed87b68695c31bd367
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54253416"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58793286"
 ---
 # <a name="policyset-resource-type"></a>policySet 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54253416"
 
 一个包含用于 PolicySet 的属性的类。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 policySets](../api/intune-policyset-policyset-list.md)|[policySet](../resources/intune-policyset-policyset.md) 集合|列出 policySet 对象 [的属性和](../resources/intune-policyset-policyset.md) 关系。|
@@ -36,14 +36,14 @@ ms.locfileid: "54253416"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|PolicySet 的键。|
+|id|String|PolicySet 的键。|
 |createdDateTime|DateTimeOffset|PolicySet 的创建时间。|
 |lastModifiedDateTime|DateTimeOffset|PolicySet 的上次修改时间。|
 |displayName|String|PolicySet 的 DisplayName。|
 |description|String|PolicySet 的说明。|
-|status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|PolicySet 的验证/分配状态。 可取值为：`unknown`、`validating`、`partialSuccess`、`success`、`error`、`notAssigned`。|
-|errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|错误代码（如果发生了任何错误）。 可取值为：`noError`、`unauthorized`、`notFound`、`deleted`。|
-|guidedDeploymentTags|String collection|引导式部署的标记|
+|状态|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|PolicySet 的验证/分配状态。 可取值为：`unknown`、`validating`、`partialSuccess`、`success`、`error`、`notAssigned`。|
+|errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|错误代码（如果发生了任何错误）。 可能的值是：`noError`、`unauthorized`、`notFound`、`deleted`。|
+|guidedDeploymentTags|字符串集合|引导式部署的标记|
 |roleScopeTags|String collection|PolicySet 的 RoleScopeTags|
 
 ## <a name="relationships"></a>关系
@@ -78,7 +78,6 @@ ms.locfileid: "54253416"
   ]
 }
 ```
-
 
 
 

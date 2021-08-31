@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: cda8bbb7f52898ddd042b8cba88b204907bfe9edff006510a61b6b36c7db66eb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 21de2d20718c6f1b3b0fca8199f7b6a59dcb648c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54239411"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58794733"
 ---
 # <a name="configurationmanageractiondeliverystatus-enum-type"></a>configurationManagerActionDeliveryStatus 枚举类型
 
@@ -26,11 +26,10 @@ Configuration Manager 设备操作传递状态
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|挂起以将操作传递至 ConfigurationManager|
-|pendingDelivery|1 |挂起以将操作传递至 ConfigurationManager|
-|deliveredToConnectorService|2 |操作将发送到 ConfigurationManager 连接器服务 (云) |
-|failedToDeliverToConnectorService|3 |未能将操作发送到 ConfigurationManager 连接器服务 (云) |
+|pendingDelivery|1|挂起以将操作传递至 ConfigurationManager|
+|deliveredToConnectorService|2|操作将发送到 ConfigurationManager 连接器服务 (云) |
+|failedToDeliverToConnectorService|3|未能将操作发送到 ConfigurationManager 连接器服务 (云) |
 |deliveredToOnPremisesServer|4 |操作将传递到 ConfigurationManager on-prem 服务器|
-
 
 
 

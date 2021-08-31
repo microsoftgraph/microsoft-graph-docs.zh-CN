@@ -1,18 +1,18 @@
 ---
-title: 列出 groupPolicyPresentationValueMultiTexts
-description: 列出 groupPolicyPresentationValueMultiText 对象的属性和关系。
+title: 列出 windowsDriverUpdateProfiles
+description: 列出 windowsDriverUpdateProfile 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e7e94c5167ea57415e5dc8eb15ec64abc66d8ec2
+ms.openlocfilehash: 42dcbf00ecd03e6e9e3d6eb1dd261cab0811007d
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788799"
+ms.locfileid: "58801370"
 ---
-# <a name="list-grouppolicypresentationvaluemultitexts"></a>列出 groupPolicyPresentationValueMultiTexts
+# <a name="list-windowsdriverupdateprofiles"></a>列出 windowsDriverUpdateProfiles
 
 命名空间：microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "58788799"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-列出 [groupPolicyPresentationValueMultiText 对象的属性和](../resources/intune-grouppolicy-grouppolicypresentationvaluemultitext.md) 关系。
+列出 [windowsDriverUpdateProfile](../resources/intune-softwareupdate-windowsdriverupdateprofile.md) 对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -37,7 +37,7 @@ ms.locfileid: "58788799"
 }
 -->
 ``` http
-GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues
+GET /deviceManagement/windowsDriverUpdateProfiles
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -50,14 +50,14 @@ GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/def
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [groupPolicyPresentationValueMultiText](../resources/intune-grouppolicy-grouppolicypresentationvaluemultitext.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [windowsDriverUpdateProfile](../resources/intune-softwareupdate-windowsdriverupdateprofile.md) 对象集合。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues
+GET https://graph.microsoft.com/beta/deviceManagement/windowsDriverUpdateProfiles
 ```
 
 ### <a name="response"></a>响应
@@ -65,17 +65,23 @@ GET https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfigurations/
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 353
+Content-Length: 579
 
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.groupPolicyPresentationValueMultiText",
-      "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+      "@odata.type": "#microsoft.graph.windowsDriverUpdateProfile",
+      "id": "55bcc52a-c52a-55bc-2ac5-bc552ac5bc55",
+      "displayName": "Display Name value",
+      "description": "Description value",
+      "approvalType": "automatic",
+      "deviceReporting": 15,
+      "newUpdates": 10,
+      "deploymentDeferralInDays": 8,
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
-      "id": "5156903b-903b-5156-3b90-56513b905651",
-      "values": [
-        "Values value"
+      "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
       ]
     }
   ]

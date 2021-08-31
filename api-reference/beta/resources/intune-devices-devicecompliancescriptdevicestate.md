@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f5a24e00f5332231fb77439d82b7a7d57d1a749d4c838173faa1cef689640dc6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1a4c10878089d9d5cac4ccf43b0ebcebaca0427d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54145332"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58788175"
 ---
 # <a name="devicecompliancescriptdevicestate-resource-type"></a>deviceComplianceScriptDeviceState 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54145332"
 
 包含设备合规性脚本的设备运行状态的属性。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceComplianceScriptDeviceStates](../api/intune-devices-devicecompliancescriptdevicestate-list.md)|[deviceComplianceScriptDeviceState](../resources/intune-devices-devicecompliancescriptdevicestate.md) 集合|列出 [deviceComplianceScriptDeviceState 对象的属性和](../resources/intune-devices-devicecompliancescriptdevicestate.md) 关系。|
@@ -35,11 +35,11 @@ ms.locfileid: "54145332"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|设备合规性脚本设备状态实体的键。 此属性是只读的。|
-|detectionState|[runState](../resources/intune-shared-runstate.md)|最近一次执行设备合规性脚本的检测状态。 可取值为：`unknown`、`success`、`fail`、`scriptError`、`pending`、`notApplicable`。|
+|detectionState|[runState](../resources/intune-devices-runstate.md)|最近一次执行设备合规性脚本的检测状态。 可取值为：`unknown`、`success`、`fail`、`scriptError`、`pending`、`notApplicable`。|
 |lastStateUpdateDateTime|DateTimeOffset|执行设备合规性脚本的最后时间戳|
 |expectedStateUpdateDateTime|DateTimeOffset|下一次执行设备合规性脚本的时间戳|
 |lastSyncDateTime|DateTimeOffset|Intune 管理扩展上次与 Intune 同步的时间|
-|scriptOutput|字符串|检测脚本的输出|
+|scriptOutput|String|检测脚本的输出|
 |scriptError|String|检测脚本中的错误|
 
 ## <a name="relationships"></a>关系
@@ -67,7 +67,6 @@ ms.locfileid: "54145332"
   "scriptError": "String"
 }
 ```
-
 
 
 

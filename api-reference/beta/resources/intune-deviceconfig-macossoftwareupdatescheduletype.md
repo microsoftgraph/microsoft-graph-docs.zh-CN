@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d68c3460633d48f045c1ac4044997d2d5771d762848125320d76dad708ae0359
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9bcaf8ec3f916a7bf471148a48ea38619bff6d59
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54190554"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58799808"
 ---
 # <a name="macossoftwareupdatescheduletype-enum-type"></a>macOSSoftwareUpdateScheduleType 枚举类型
 
@@ -26,9 +26,8 @@ macOS 软件更新的更新计划类型。
 |成员|值|说明|
 |:---|:---|:---|
 |alwaysUpdate|0|始终更新。|
-|updateDuringTimeWindows|1 |在时间窗口期间更新。|
-|updateOutsideOfTimeWindows|2 |在时间窗口之外更新。|
-
+|updateDuringTimeWindows|1|在时间窗口期间更新。|
+|updateOutsideOfTimeWindows|2|在时间窗口之外更新。|
 
 
 

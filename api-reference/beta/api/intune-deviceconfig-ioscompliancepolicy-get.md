@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e6fe76423c30bb24ec3b8159acd6d4aa18d3cca6362f50bc5d172abdd6d4abef
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 87ebb395975b4b8306e3275b31c3de318cbd5e4f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54137540"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786850"
 ---
 # <a name="get-ioscompliancepolicy"></a>获取 iosCompliancePolicy
 
@@ -46,7 +46,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -112,7 +112,6 @@ Content-Length: 1569
   }
 }
 ```
-
 
 
 

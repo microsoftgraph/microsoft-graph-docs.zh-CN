@@ -1,16 +1,16 @@
 ---
 title: windowsInformationProtectionWipeAction 资源类型
-description: 表示租户管理员针对自带设备办公或 BYOD (发出的擦除) Windows请求。
+description: 表示租户管理员针对自带设备办公和 BYOD 设备 (擦除) Windows请求。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0b03d1e13b02d4956c634932e8dee1e58818b25eb17c3ac585257b0209fa69fc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: aac1b49d6c2fab449fda91bdb5a339099950530e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54241553"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786942"
 ---
 # <a name="windowsinformationprotectionwipeaction-resource-type"></a>windowsInformationProtectionWipeAction 资源类型
 
@@ -20,9 +20,9 @@ ms.locfileid: "54241553"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-表示租户管理员针对自带设备办公或 BYOD (发出的擦除) Windows请求。
+表示租户管理员针对自带设备办公和 BYOD 设备 (擦除) Windows请求。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 windowsInformationProtectionWipeActions](../api/intune-mam-windowsinformationprotectionwipeaction-list.md)|[windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md) 集合|列出 [windowsInformationProtectionWipeAction 对象的属性和](../resources/intune-mam-windowsinformationprotectionwipeaction.md) 关系。|
@@ -35,10 +35,10 @@ ms.locfileid: "54241553"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|status|[actionState](../resources/intune-shared-actionstate.md)|擦除操作状态。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed` 或 `notSupported`。|
-|targetedUserId|字符串|此擦除操作所针对的 UserId。|
+|状态|[actionState](../resources/intune-shared-actionstate.md)|擦除操作状态。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed` 或 `notSupported`。|
+|targetedUserId|String|此擦除操作所针对的 UserId。|
 |targetedDeviceRegistrationId|字符串|此擦除操作所针对的 DeviceRegistrationId。|
-|targetedDeviceName|String|目标设备名称。|
+|targetedDeviceName|字符串|目标设备名称。|
 |targetedDeviceMacAddress|String|目标设备 Mac 地址。|
 |lastCheckInDateTime|DateTimeOffset|此擦除操作针对的设备的最后签入时间。|
 
@@ -65,7 +65,6 @@ ms.locfileid: "54241553"
   "lastCheckInDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

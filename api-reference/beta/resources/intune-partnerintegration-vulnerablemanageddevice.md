@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a1f37b36b6912033dd3eb086287d5d0ab1f58cf35ed89bab97b5581e10143069
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e0859608857a903424ef6a112cf96adb9585045a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54239131"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795148"
 ---
 # <a name="vulnerablemanageddevice-resource-type"></a>vulnerableManagedDevice 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54239131"
 
 此实体表示与任务关联的设备。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 vulnerableManagedDevices](../api/intune-partnerintegration-vulnerablemanageddevice-list.md)|[vulnerableManagedDevice](../resources/intune-partnerintegration-vulnerablemanageddevice.md) 集合|列出 [vulnerableManagedDevice 对象的属性和](../resources/intune-partnerintegration-vulnerablemanageddevice.md) 关系。|
@@ -36,7 +36,7 @@ ms.locfileid: "54239131"
 |:---|:---|:---|
 |id|String|实体密钥和 AAD 设备 ID。|
 |managedDeviceId|String|Intune 托管设备 ID。|
-|displayName|字符串|设备名称。|
+|displayName|String|设备名称。|
 |lastSyncDateTime|DateTimeOffset|上次同步日期。|
 
 ## <a name="relationships"></a>关系
@@ -59,7 +59,6 @@ ms.locfileid: "54239131"
   "lastSyncDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

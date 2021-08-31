@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d7813f53764cb670f5a668baa488c8dee685e5fd70a81d57f9d4b00489d325f2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6d74e15f0f1213cd86c35760c814afab4b3326ef
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54122507"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795190"
 ---
 # <a name="devicemanagementintentassignment-resource-type"></a>deviceManagementIntentAssignment 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54122507"
 
 意图分配实体
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceManagementIntentAssignments](../api/intune-deviceintent-devicemanagementintentassignment-list.md)|[deviceManagementIntentAssignment](../resources/intune-deviceintent-devicemanagementintentassignment.md) 集合|列出 [deviceManagementIntentAssignment](../resources/intune-deviceintent-devicemanagementintentassignment.md) 对象的属性和关系。|
@@ -60,7 +60,6 @@ ms.locfileid: "54122507"
   }
 }
 ```
-
 
 
 

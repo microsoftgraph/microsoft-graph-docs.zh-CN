@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: f7b610f2ba142346de4bbcdf65acc80409b1045f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 5538b143e41e36b6e12e23dca2e3ea279ed26a64
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049966"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787902"
 ---
 # <a name="update-plannertaskdetails"></a>更新 plannertaskdetails
 
@@ -45,7 +45,7 @@ PATCH /planner/tasks/{id}/details
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |checklist|[plannerChecklistItems](../resources/plannerchecklistitems.md)|任务上的检查表项目集合。|
-|说明|String|任务描述|
+|description|String|任务描述|
 |previewType|string|这将设置显示在任务上的预览类型。可能的值是：`automatic`、`noPreview`、`checklist`、`description`、`reference`。当设为 `automatic` 时，由查看任务的应用选择显示的预览。|
 |references|[plannerExternalReferences](../resources/plannerexternalreferences.md)|任务上的引用集合。|
 
@@ -80,7 +80,7 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
       "previewPriority": " !",
       "type": "Other"
     },
-    "https%3A//developer%2Emicrosoft%2Ecom/en-us/graph/graph-explorer":{
+    "https%3A//developer%2Emicrosoft%2Ecom/graph/graph-explorer":{
       "@odata.type": "microsoft.graph.plannerExternalReference",
       "previewPriority": "  !!",
     },
@@ -111,7 +111,7 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -126,7 +126,7 @@ Content-length: 1793
   "description": "Task details properties:\nchecklist:Sub items\nreferences:Related links",
   "previewType": "automatic",
   "references": {
-    "https%3A//developer%2Emicrosoft%2Ecom/en-us/graph/graph-explorer": {
+    "https%3A//developer%2Emicrosoft%2Ecom/graph/graph-explorer": {
       "@odata.type": "#microsoft.graph.plannerExternalReference",
       "alias": "Graph Explorer",
       "type": "Other",

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b5e0af21a5c6a78051869e95515647ece4f2fd718a1d548dde7f1dfc94efe6a8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e21147c12fcb1bce546afe4053e4ae036642f0ba
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54139605"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58793864"
 ---
 # <a name="vpnservercertificatetype-enum-type"></a>vpnServerCertificateType 枚举类型
 
@@ -26,10 +26,9 @@ VPN 服务器将呈现给 VPN 客户端进行身份验证的证书类型
 |成员|值|说明|
 |:---|:---|:---|
 |rsa|0|RSA|
-|ecdsa256|1 |ECDSA256|
-|ecdsa384|2 |ECDSA384|
-|ecdsa521|3 |ECDSA521|
-
+|ecdsa256|1|ECDSA256|
+|ecdsa384|2|ECDSA384|
+|ecdsa521|3|ECDSA521|
 
 
 

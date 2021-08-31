@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: cfbb27d59807118cee55067c457d54ad24f30fe8a5b93d5e5bed9fdb19ee3dfd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6e66dc800801041ea1cac1e1a11bbc19ca18c518
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54209908"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786689"
 ---
 # <a name="encryptionreadinessstate-enum-type"></a>encryptionReadinessState 枚举类型
 
@@ -26,8 +26,7 @@ ms.locfileid: "54209908"
 |成员|值|说明|
 |:---|:---|:---|
 |notReady|0|未就绪|
-|ready|1 |Ready|
-
+|ready|1|Ready|
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1447f7d811fadda2c862634c2f95d07e7600949f68d3f52a0e3751aa7b8b51ef
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9d3586a6724b151fe039782d4406013a81c7e0a3
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54171411"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58793180"
 ---
 # <a name="create-windowsdeliveryoptimizationconfiguration"></a>创建 windowsDeliveryOptimizationConfiguration
 
@@ -44,7 +44,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,16 +54,16 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|布尔值|指示基础设备配置是否支持分配范围标记。 当此值为 false 且实体对范围用户不可见时，不允许分配给 ScopeTags 属性。 这适用于在 Silverlight 中创建的旧版策略，可通过在 Azure 门户中删除和重新创建策略来解决。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|此策略的操作系统版本适用性。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|description|字符串|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deliveryOptimizationMode|[windowsDeliveryOptimizationMode](../resources/intune-deviceconfig-windowsdeliveryoptimizationmode.md)|指定传递优化可用于管理大型内容分发方案的网络带宽消耗的下载方法。 可取值为：`userDefined`、`httpOnly`、`httpWithPeeringNat`、`httpWithPeeringPrivateGroup`、`httpWithInternetPeering`、`simpleDownload` 或 `bypassMode`。|
 |restrictPeerSelectionBy|[deliveryOptimizationRestrictPeerSelectionByOptions](../resources/intune-deviceconfig-deliveryoptimizationrestrictpeerselectionbyoptions.md)|指定通过所选选项限制对等选择。
@@ -72,17 +72,17 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 此策略中设置的选项仅适用于"传递优化"模式组 (2) 下载模式。 如果组 (2) 未设置为下载模式，此策略将被忽略。 对于选项 3 - DHCP 选项 ID，客户端将查询 DHCP 选项 ID 234，并使用返回的 GUID 值作为组 ID。|
 |bandwidthMode|[deliveryOptimizationBandwidth](../resources/intune-deviceconfig-deliveryoptimizationbandwidth.md)|使用百分比、绝对值或小时指定前台和后台带宽使用量。|
 |backgroundDownloadFromHttpDelayInSeconds|Int64|指定在后台下载中延迟允许使用对等的 HTTP 源的秒数。 有效值为 0 到 4294967295|
-|foregroundDownloadFromHttpDelayInSeconds|Int64|指定延迟前台下载中允许使用对等 (0-86400) 的 HTTP 源的秒数。 有效值为 0 到 86400
+|foregroundDownloadFromHttpDelayInSeconds|Int64|指定延迟允许使用对等 (0-86400) 的前台下载中的 HTTP 源的秒数。 有效值为 0 到 86400
 指定 0 将设置传递优化以使用云服务管理此设置。 有效值为 0 到 86400|
 |minimumRamAllowedToPeerInGtesbytes|Int32|指定使用 1-100000 Caching (1-100000 时的最小 RAM) 。 有效值为 1 到 100000|
-|minimumDiskSizeAllowedToPeerInGtesbytes|Int32|指定使用对等模式的最小磁盘大小（以 GB 为单位Caching (1-100000) 。 有效值为 1 到 100000
+|minimumDiskSizeAllowedToPeerInGtesbytes|Int32|指定使用对等模式的最小磁盘大小（以 GB Caching (1-100000) 。 有效值为 1 到 100000
 建议的值：64 GB 到 256 GB。 有效值为 1 到 100000|
-|minimumFileSizeToCacheInMegabytes|Int32|指定启用最小内容文件大小（以 MB 为单位）以使用对等Caching (1-100000) 。 有效值为 1 到 100000
+|minimumFileSizeToCacheInMegabytes|Int32|指定启用最小内容文件大小（以 MB 为单位）以使用 1-100000 Caching (1-100000) 。 有效值为 1 到 100000
 建议的值：1 MB 到 100，000 MB。 有效值为 1 到 100000|
 |minimumBatteryPercentageAllowedToUpload|Int32|指定允许设备上载数据的最小电池百分比， (0-100) 。 有效值为 0 至 100
 默认值为 0。 值 0 (零) 表示"没有限制"，将使用云服务默认值。 有效值为 0 至 100|
 |modifyCacheLocation|String|指定传递优化应该用于其缓存的驱动器。|
-|maximumCacheAgeInDays|Int32|指定在 0-3650 (下载成功后每个文件在传递优化缓存中保存的最大) 。 有效值为 0 到 3650|
+|maximumCacheAgeInDays|Int32|指定在 0-3650 之前成功下载每个文件后，每个文件在传递优化缓存中 (天) 。 有效值为 0 到 3650|
 |maximumCacheSize|[deliveryOptimizationMaxCacheSize](../resources/intune-deviceconfig-deliveryoptimizationmaxcachesize.md)|以百分比或 GB 为单位指定传递优化的最大缓存大小。|
 |vpnPeerCaching|[enablement](../resources/intune-shared-enablement.md)|指定在通过 VPN 连接到域网络Caching是否允许设备参与对等连接。 可取值为：`notConfigured`、`enabled`、`disabled`。|
 |cacheServerHostNames|String collection|指定缓存服务器主机名。|
@@ -228,7 +228,6 @@ Content-Length: 2211
   "cacheServerBackgroundDownloadFallbackToHttpDelayInSeconds": 9
 }
 ```
-
 
 
 

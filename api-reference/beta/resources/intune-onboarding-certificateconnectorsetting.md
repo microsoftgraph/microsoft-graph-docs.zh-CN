@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 31b8ec7fcfe95e459e6454635b7b5e0a37c16cdec45eba5515a24165ad5ad80d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0c1c99e202c83dce63e78ba97fc8ad9e27653729
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54206247"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58788918"
 ---
 # <a name="certificateconnectorsetting-resource-type"></a>certificateConnectorSetting 资源类型
 
@@ -27,7 +27,7 @@ ms.locfileid: "54206247"
 |:---|:---|:---|
 |状态|Int32|证书连接器状态|
 |certExpiryTime|DateTimeOffset|证书过期时间|
-|enrollmentError|字符串|证书连接器注册错误|
+|enrollmentError|String|证书连接器注册错误|
 |lastConnectorConnectionTime|DateTimeOffset|上次连接证书连接器的时间|
 |connectorVersion|String|证书连接器的版本|
 |lastUploadVersion|Int64|上次上载的证书连接器的版本|
@@ -53,7 +53,6 @@ ms.locfileid: "54206247"
   "lastUploadVersion": 1024
 }
 ```
-
 
 
 

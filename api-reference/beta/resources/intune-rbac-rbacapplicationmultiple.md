@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4fc6253053d42793a017bb222a20000d75ee8b9182f5c11be529efa2876322d3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 982f5dcbb834874f2ff1d47751e140a1d2d4fdcb
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54248284"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785680"
 ---
 # <a name="rbacapplicationmultiple-resource-type"></a>rbacApplicationMultiple 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54248284"
 
 尚未记录
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 rbacApplicationMultiple](../api/intune-rbac-rbacapplicationmultiple-get.md)|[rbacApplicationMultiple](../resources/intune-rbac-rbacapplicationmultiple.md)|读取 [rbacApplicationMultiple 对象的属性和](../resources/intune-rbac-rbacapplicationmultiple.md) 关系。|
@@ -50,7 +50,6 @@ ms.locfileid: "54248284"
   "id": "String (identifier)"
 }
 ```
-
 
 
 

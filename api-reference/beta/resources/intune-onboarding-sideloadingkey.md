@@ -1,16 +1,16 @@
 ---
 title: sideLoadingKey 资源类型
-description: 使用 SideLoadingKey 实体Windows 8 8.1 设备才能为租户安装业务线应用。
+description: 若要为租户安装业务线应用，Windows 8 8.1 设备需要 SideLoadingKey 实体。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 528ce2a0a903bffebae9aaa2e0e7e4c0903d7aed90d10e9cb9ce09bc5f6f26ea
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 651815aea6e64b4fa53f0a4d22127050c5f3b488
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178820"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58792566"
 ---
 # <a name="sideloadingkey-resource-type"></a>sideLoadingKey 资源类型
 
@@ -20,9 +20,9 @@ ms.locfileid: "54178820"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-使用 SideLoadingKey 实体Windows 8 8.1 设备才能为租户安装业务线应用。
+若要为租户安装业务线应用，Windows 8 8.1 设备需要 SideLoadingKey 实体。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 sideLoadingKeies](../api/intune-onboarding-sideloadingkey-list.md)|[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) 集合|列出 [sideLoadingKey 对象的属性和](../resources/intune-onboarding-sideloadingkey.md) 关系。|
@@ -63,7 +63,6 @@ ms.locfileid: "54178820"
   "lastUpdatedDateTime": "String"
 }
 ```
-
 
 
 

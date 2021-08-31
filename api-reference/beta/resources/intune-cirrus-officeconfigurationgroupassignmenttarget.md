@@ -1,18 +1,18 @@
 ---
-title: assignmentFilterValidationResult 资源类型
-description: 表示验证 API 的结果。
-author: dougeby
+title: officeConfigurationGroupAssignmentTarget 资源类型
+description: Office配置 AAD 组分配目标。
 localization_priority: Normal
+author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9612d33c1e838eb5effaea555d8453b8acf6c1fe
+ms.openlocfilehash: 997fb37d69083d05543c8acfe0c5741a6ccf3461
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58807242"
+ms.locfileid: "58785555"
 ---
-# <a name="assignmentfiltervalidationresult-resource-type"></a>assignmentFilterValidationResult 资源类型
+# <a name="officeconfigurationgroupassignmenttarget-resource-type"></a>officeConfigurationGroupAssignmentTarget 资源类型
 
 命名空间：microsoft.graph
 
@@ -20,12 +20,14 @@ ms.locfileid: "58807242"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-表示验证 API 的结果。
+Office配置 AAD 组分配目标。
+
+继承自 [officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|isValidRule|Boolean|表示有效规则或无效规则的指示器。|
+|groupId|String|面向设备配置的 AAD 组的 ID。|
 
 ## <a name="relationships"></a>关系
 无
@@ -34,13 +36,14 @@ ms.locfileid: "58807242"
 下面是资源的 JSON 表示形式。
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.assignmentFilterValidationResult"
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.officeConfigurationGroupAssignmentTarget"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.assignmentFilterValidationResult",
-  "isValidRule": true
+  "@odata.type": "#microsoft.graph.officeConfigurationGroupAssignmentTarget",
+  "groupId": "String"
 }
 ```
 

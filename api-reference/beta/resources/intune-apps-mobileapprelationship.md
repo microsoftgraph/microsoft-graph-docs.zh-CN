@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ee9793d2f505394f3188368bc812b79a741decb30a95f27cfbd522af5df6141e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0fac38e910e4889759a07d9b38eac2ee116d0904
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54236547"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58799822"
 ---
 # <a name="mobileapprelationship-resource-type"></a>mobileAppRelationship 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54236547"
 
 描述两个移动应用程序之间的关系。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 mobileAppRelationships](../api/intune-apps-mobileapprelationship-list.md)|[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md) 集合|列出 [mobileAppRelationship 对象的属性和](../resources/intune-apps-mobileapprelationship.md) 关系。|
@@ -33,7 +33,7 @@ ms.locfileid: "54236547"
 |:---|:---|:---|
 |id|String|关系实体 ID。|
 |targetId|String|目标移动应用的应用 ID。|
-|targetDisplayName|String|目标移动应用显示名称。|
+|targetDisplayName|字符串|目标移动应用显示名称。|
 |targetDisplayVersion|String|目标移动应用的显示版本。|
 |targetPublisher|String|目标移动应用的发布者。|
 |targetType|[mobileAppRelationshipType](../resources/intune-apps-mobileapprelationshiptype.md)|关系类型，指示目标是父对象还是子级。 可取值为：`child`、`parent`。|
@@ -60,7 +60,6 @@ ms.locfileid: "54236547"
   "targetType": "String"
 }
 ```
-
 
 
 

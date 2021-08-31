@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1a3833f2ee3ae94807af402b1109954b8785ab5a826ee0762ea0a4f0e1208af3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 961f43556622fd92cb990777155c8ab3debcb7df
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54226243"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786612"
 ---
 # <a name="configmanagercollection-resource-type"></a>configManagerCollection 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54226243"
 
 ConfigManager 定义的设备或用户集合。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 configManagerCollections](../api/intune-partnerintegration-configmanagercollection-list.md)|[configManagerCollection](../resources/intune-partnerintegration-configmanagercollection.md) 集合|列出 [configManagerCollection](../resources/intune-partnerintegration-configmanagercollection.md) 对象的属性和关系。|
@@ -36,10 +36,10 @@ ConfigManager 定义的设备或用户集合。
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|ConfigManager 集合的键。|
-|displayName|字符串|DisplayName。|
+|displayName|String|DisplayName。|
 |collectionIdentifier|字符串|SCCM 中的集合标识符。|
 |hierarchyName|String|HierarchyName。|
-|hierarchyIdentifier|字符串|层次结构标识符。|
+|hierarchyIdentifier|String|层次结构标识符。|
 |createdDateTime|DateTimeOffset|创建日期。|
 |lastModifiedDateTime|DateTimeOffset|上次修改日期。|
 
@@ -66,7 +66,6 @@ ConfigManager 定义的设备或用户集合。
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

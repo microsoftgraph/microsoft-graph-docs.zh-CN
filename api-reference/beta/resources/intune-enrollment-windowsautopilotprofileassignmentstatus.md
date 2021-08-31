@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9a3dfeff181fd7d6e8c2bc112f51c6f8096744eb688faaceda6bc4c4010fe99c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: addd0a3ab96c75cc62d380f16a0b82006870cdfa
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54139374"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58788925"
 ---
 # <a name="windowsautopilotprofileassignmentstatus-enum-type"></a>windowsAutopilotProfileAssignmentStatus 枚举类型
 
@@ -26,13 +26,12 @@ ms.locfileid: "54139374"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|未知分配状态|
-|assignedInSync|1 |在 Intune 中成功分配，并Windows自动试点计划同步|
-|assignedOutOfSync|2 |在 Intune 中成功分配，与自动Windows计划不同步|
-|assignedUnkownSyncState|3 |在 Intune 中成功分配，与自动试点计划同步Windows不同步|
+|assignedInSync|1|在 Intune 中成功分配，并Windows自动试点计划同步|
+|assignedOutOfSync|2|在 Intune 中成功分配，与自动Windows计划不同步|
+|assignedUnkownSyncState|3|在 Intune 中成功分配，与自动试点计划同步或Windows同步|
 |notAssigned|4 |未分配|
 |pending|5 |挂起的工作分配|
 |failed|6 | 分配失败|
-
 
 
 

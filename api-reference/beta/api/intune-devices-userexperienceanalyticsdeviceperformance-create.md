@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 678714fe7a04ac86d5fc424b83b7df6f729230ae
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: b3632c3e9982a1f9ca37b6af931491ecac4e0974
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58254073"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789072"
 ---
 # <a name="create-userexperienceanalyticsdeviceperformance"></a>创建 userExperienceAnalyticsDevicePerformance
 
@@ -27,9 +27,9 @@ ms.locfileid: "58254073"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/userExperienceAnalyticsDevicePerformance
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,7 +53,7 @@ POST /deviceManagement/userExperienceAnalyticsDevicePerformance
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|用户体验分析设备启动性能设备的唯一标识符。|
+|id|字符串|用户体验分析设备启动性能设备的唯一标识符。|
 |deviceName|String|用户体验分析设备名称。|
 |model|String|用户体验分析设备模型。|
 |manufacturer|String|用户体验分析设备制造商。|
@@ -62,7 +62,7 @@ POST /deviceManagement/userExperienceAnalyticsDevicePerformance
 |bootScore|Int32|用户体验分析设备启动分数。|
 |coreBootTimeInMs|Int32|用户体验分析设备核心启动时间（以毫秒为单位）。|
 |groupPolicyBootTimeInMs|Int32|用户体验分析设备组策略启动时间（以毫秒为单位）。|
-|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析设备的运行状况。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
+|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析设备的运行状况。 可能的值是：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
 |loginScore|Int32|用户体验分析设备登录分数。|
 |coreLoginTimeInMs|Int32|用户体验分析设备核心登录时间（以毫秒为单位）。|
 |groupPolicyLoginTimeInMs|Int32|用户体验分析设备组策略登录时间（以毫秒为单位）。|
@@ -70,9 +70,10 @@ POST /deviceManagement/userExperienceAnalyticsDevicePerformance
 |responsiveDesktopTimeInMs|Int32|用户体验分析响应式桌面时间（以毫秒为单位）。|
 |blueScreenCount|Int32|最近 14 天内的蓝屏数。 有效值为 0 到 9999999|
 |restartCount|Int32|最近 14 天内的重启次数。 有效值为 0 到 9999999|
-|averageBlueScreens|双精度|平均 (平均) 14 天内每个设备的蓝屏数量。 有效值为 0 到 9999999|
-|averageRestarts|双精度|平均 (平均) 最近 14 天内每个设备重新启动次数的平均值。 有效值为 0 到 9999999|
+|averageBlueScreens|双精度|平均 (表示) 14 天内每个设备的蓝屏数量。 有效值为 0 到 9999999|
+|averageRestarts|双精度|平均 (平均) 最近 14 天内每个设备的重启次数。 有效值为 0 到 9999999|
 |startupPerformanceScore|双精度|用户体验分析设备启动性能分数。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
+|modelStartupPerformanceScore|双精度|用户体验分析模型级别的启动性能分数。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
 
 
 
@@ -86,7 +87,7 @@ POST /deviceManagement/userExperienceAnalyticsDevicePerformance
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDevicePerformance
 Content-type: application/json
-Content-length: 684
+Content-length: 739
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDevicePerformance",
@@ -108,7 +109,8 @@ Content-length: 684
   "restartCount": 12,
   "averageBlueScreens": 6.0,
   "averageRestarts": 5.0,
-  "startupPerformanceScore": 7.666666666666667
+  "startupPerformanceScore": 7.666666666666667,
+  "modelStartupPerformanceScore": 9.3333333333333339
 }
 ```
 
@@ -117,7 +119,7 @@ Content-length: 684
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 733
+Content-Length: 788
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDevicePerformance",
@@ -140,10 +142,10 @@ Content-Length: 733
   "restartCount": 12,
   "averageBlueScreens": 6.0,
   "averageRestarts": 5.0,
-  "startupPerformanceScore": 7.666666666666667
+  "startupPerformanceScore": 7.666666666666667,
+  "modelStartupPerformanceScore": 9.3333333333333339
 }
 ```
-
 
 
 

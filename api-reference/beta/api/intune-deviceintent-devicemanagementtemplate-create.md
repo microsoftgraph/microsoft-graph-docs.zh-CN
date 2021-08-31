@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 028a382186aac6ad75e52618417d77a5443877a7
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: e21069bc59ff62e95160fb33cf3aef0b9f06edc5
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257877"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786801"
 ---
 # <a name="create-devicemanagementtemplate"></a>创建 deviceManagementTemplate
 
@@ -44,7 +44,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,11 +54,11 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|模板 ID|
-|displayName|字符串|模板的显示名称|
-|description|String|模板的说明|
+|id|字符串|模板 ID|
+|displayName|String|模板的显示名称|
+|description|字符串|模板的说明|
 |versionInfo|String|模板的版本信息|
-|isDeprecated|布尔值|模板是否被弃用。 无法从已弃用模板创建意图。|
+|isDeprecated|Boolean|模板是否被弃用。 无法从已弃用模板创建意图。|
 |intentCount|Int32|从此模板创建的意图数。|
 |templateType|[deviceManagementTemplateType](../resources/intune-deviceintent-devicemanagementtemplatetype.md)|模板的类型。 可取值为：`securityBaseline`、`specializedDevices`、`advancedThreatProtectionSecurityBaseline`、`deviceConfiguration`、`custom`、`securityTemplate`、`microsoftEdgeSecurityBaseline`、`microsoftOffice365ProPlusSecurityBaseline`、`deviceCompliance`、`deviceConfigurationForOffice365`、`cloudPC`、`firewallSharedSettings`。|
 |platformType|[policyPlatformType](../resources/intune-deviceintent-policyplatformtype.md)|模板的平台。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`windows10XProfile`、`all`。|
@@ -114,7 +114,6 @@ Content-Length: 454
   "publishedDateTime": "2016-12-31T23:58:16.1180489-08:00"
 }
 ```
-
 
 
 

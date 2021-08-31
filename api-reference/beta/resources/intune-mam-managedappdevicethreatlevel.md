@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d9e903f37f746788a7f1a511b699579fb158850396de04681cc9f6253043577e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 543b14f669154f54b30bd60a2bcf3579e51816d9
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54242517"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58799997"
 ---
 # <a name="managedappdevicethreatlevel-enum-type"></a>managedAppDeviceThreatLevel 枚举类型
 
@@ -26,11 +26,10 @@ ms.locfileid: "54242517"
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置值|
-|secured|1 |设备需要没有威胁|
-|low|2 |设备需要具有较低的威胁。|
-|中等|3 |设备需要不要超过中等威胁。|
+|secured|1|设备需要没有威胁|
+|low|2|设备需要具有较低的威胁。|
+|中等|3|设备需要不要超过中等威胁。|
 |high|4 |设备需要不要超过高威胁|
-
 
 
 

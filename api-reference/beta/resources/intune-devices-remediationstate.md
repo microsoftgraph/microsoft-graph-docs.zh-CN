@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7a47a880dbf067c455ca108fd8f80636810a6d31bc196b3c3198a87b089f6959
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: dad0c6030d4a0f06ac17da9f2060b099d71d4ea4
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54164207"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58788932"
 ---
 # <a name="remediationstate-enum-type"></a>remediationState 枚举类型
 
@@ -26,11 +26,10 @@ ms.locfileid: "54164207"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|结果未知。|
-|已跳过|1 |已跳过修正脚本执行|
-|success|2 |修复脚本成功执行并修正设备状态|
-|remediationFailed|3 |修正脚本已成功执行，但未能修正设备状态|
+|已跳过|1|已跳过修正脚本执行|
+|success|2|修复脚本成功执行并修正设备状态|
+|remediationFailed|3|修正脚本已成功执行，但未能修正设备状态|
 |scriptError|4 |修正脚本执行遇到的错误或时间过长|
-
 
 
 

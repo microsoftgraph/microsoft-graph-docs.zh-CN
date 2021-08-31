@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1bc45a089ce37f3641a254cf0bcb787ac48a515f
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 344d5985b612d81304859b7ccf5cf53b79110825
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58250868"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785638"
 ---
 # <a name="create-win32lobapp"></a>创建 win32LobApp
 
@@ -43,7 +43,7 @@ POST /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,7 +54,7 @@ POST /deviceAppManagement/mobileApps
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|displayName|字符串|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|displayName|String|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |description|String|应用的说明。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publisher|String|应用的发布者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|要显示在应用详细信息中并用于图标上传的大图标。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
@@ -85,14 +85,14 @@ POST /deviceAppManagement/mobileApps
 |minimumNumberOfProcessors|Int32|安装此应用程序所需的最少处理器数的值。|
 |minimumCpuSpeedInMHz|Int32|安装此应用所需的最小 CPU 速度的值。|
 |detectionRules|[win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md) 集合|检测 Win32 业务线或 LoB (应用的) 规则。|
-|requirementRules|[win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md) 集合|用于检测 Win32 业务线或 LoB (应用) 规则。|
+|requirementRules|[win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md) 集合|在 LoB 应用中检测 Win32 业务线 (要求) 规则。|
 |规则|[win32LobAppRule](../resources/intune-apps-win32lobapprule.md) 集合|此应用的检测和要求规则。|
 |installExperience|[win32LobAppInstallExperience](../resources/intune-apps-win32lobappinstallexperience.md)|此应用的安装体验。|
 |returnCodes|[win32LobAppReturnCode](../resources/intune-apps-win32lobappreturncode.md) 集合|安装后行为的返回代码。|
 |msiInformation|[win32LobAppMsiInformation](../resources/intune-apps-win32lobappmsiinformation.md)|如果此 Win32 应用是 MSI 应用，则 MSI 详细信息。|
 |setupFilePath|String|加密 Win32LobApp 程序包中安装文件的相对路径。|
 |minimumSupportedWindowsRelease|String|受支持的最低窗口版本的值。|
-|displayVersion|String|此应用的 UX 中显示的版本。|
+|displayVersion|字符串|此应用的 UX 中显示的版本。|
 
 
 
@@ -343,7 +343,6 @@ Content-Length: 3623
   "displayVersion": "Display Version value"
 }
 ```
-
 
 
 

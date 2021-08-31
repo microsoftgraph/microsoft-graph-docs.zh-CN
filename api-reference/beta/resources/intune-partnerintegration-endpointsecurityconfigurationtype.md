@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a299de9ce9abe8a6d41f68246c2ec5497d708dfb39955005d0caf04a92cf8592
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2d05cc3107df46920787650ab96df68c6d702deb
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54242438"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787811"
 ---
 # <a name="endpointsecurityconfigurationtype-enum-type"></a>endpointSecurityConfigurationType 枚举类型
 
@@ -26,13 +26,12 @@ ms.locfileid: "54242438"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|未知。|
-|防病毒|1 |防病毒。|
-|diskEncryption|2 |磁盘加密。|
-|防火墙|3 |防火墙。|
+|防病毒|1|防病毒。|
+|diskEncryption|2|磁盘加密。|
+|防火墙|3|防火墙。|
 |endpointDetectionAndResponse|4 |终结点检测和响应。|
 |attackSurfaceReduction|5 |攻击面减少。|
 |accountProtection|6 |帐户保护。|
-
 
 
 

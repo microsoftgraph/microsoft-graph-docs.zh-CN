@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e3efea1c55addded130177e43f3edb0fe6f3b62ffa2d57b7db00cfbfc8ad7b01
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7abc9782796dc63f0969d98d2f1252e0c6f0d2ff
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54174330"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58793709"
 ---
 # <a name="get-androidomacpconfiguration"></a>获取 androidOmaCpConfiguration
 
@@ -48,7 +48,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -110,7 +110,6 @@ Content-Length: 1336
   }
 }
 ```
-
 
 
 
