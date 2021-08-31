@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 61366c25539538f7026c0e844a4958ab7c1d0c95ec87b9375016e9791fe6d4ce
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 76078d65bf96d2b2ec9207661a746250da97997f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54250026"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58794854"
 ---
 # <a name="bitlockersystemdrivepolicy-resource-type"></a>bitLockerSystemDrivePolicy 资源类型
 
@@ -25,17 +25,17 @@ BitLocker 加密基本策略。
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|encryptionMethod|[bitLockerEncryptionMethod](../resources/intune-deviceconfig-bitlockerencryptionmethod.md)|选择操作系统驱动器的加密方法。 可取值为：`aesCbc128`、`aesCbc256`、`xtsAes128`、`xtsAes256`。|
-|startupAuthenticationRequired|布尔值|启动时需要其他身份验证。|
-|startupAuthenticationBlockWithoutTpmChip|布尔值|指示是否允许没有兼容的 TPM (BitLocker 需要密码或 U 盘上的启动密钥) 。|
-|startupAuthenticationTpmUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|指示是否允许/要求/禁止 TPM 启动。 可取值为：`blocked`、`required`、`allowed`、`notConfigured`。|
-|startupAuthenticationTpmPinUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|指示是否允许/要求/不允许 TPM 启动引脚。 可取值为：`blocked`、`required`、`allowed`、`notConfigured`。|
-|startupAuthenticationTpmKeyUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|指示是否允许/要求/不允许 TPM 启动密钥。 可取值为：`blocked`、`required`、`allowed`、`notConfigured`。|
-|startupAuthenticationTpmPinAndKeyUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|指示是否允许/要求/禁止 TPM 启动引脚密钥和密钥。 可取值为：`blocked`、`required`、`allowed`、`notConfigured`。|
+|encryptionMethod|[bitLockerEncryptionMethod](../resources/intune-deviceconfig-bitlockerencryptionmethod.md)|选择操作系统驱动器的加密方法。 可能的值是：`aesCbc128`、`aesCbc256`、`xtsAes128`、`xtsAes256`。|
+|startupAuthenticationRequired|Boolean|启动时需要其他身份验证。|
+|startupAuthenticationBlockWithoutTpmChip|Boolean|指示是否允许没有兼容的 TPM (BitLocker 需要密码或 U 盘上的启动密钥) 。|
+|startupAuthenticationTpmUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|指示是否允许/要求/禁止 TPM 启动。 可能的值是：`blocked`、`required`、`allowed`、`notConfigured`。|
+|startupAuthenticationTpmPinUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|指示是否允许/要求/不允许 TPM 启动引脚。 可能的值是：`blocked`、`required`、`allowed`、`notConfigured`。|
+|startupAuthenticationTpmKeyUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|指示是否允许/要求/不允许 TPM 启动密钥。 可能的值是：`blocked`、`required`、`allowed`、`notConfigured`。|
+|startupAuthenticationTpmPinAndKeyUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|指示是否允许/要求/禁止 TPM 启动引脚密钥和密钥。 可能的值是：`blocked`、`required`、`allowed`、`notConfigured`。|
 |minimumPinLength|Int32|指示启动引脚的最小长度。 有效值为 4 至 20|
 |recoveryOptions|[bitLockerRecoveryOptions](../resources/intune-deviceconfig-bitlockerrecoveryoptions.md)|允许在缺少所需的启动密钥信息的情况下恢复 BitLocker 加密的操作系统驱动器。 当你打开 BitLocker 时，将应用此策略设置。|
-|prebootRecoveryEnableMessageAndUrl|布尔值|启用预启动恢复消息和 Url。 如果 requireStartupAuthentication 为 false，则此值不会影响。|
-|prebootRecoveryMessage|字符串|定义自定义恢复邮件。|
+|prebootRecoveryEnableMessageAndUrl|Boolean|启用预启动恢复消息和 Url。 如果 requireStartupAuthentication 为 false，则此值不会影响。|
+|prebootRecoveryMessage|String|定义自定义恢复邮件。|
 |prebootRecoveryUrl|String|定义自定义恢复 URL。|
 
 ## <a name="relationships"></a>关系
@@ -74,7 +74,6 @@ BitLocker 加密基本策略。
   "prebootRecoveryUrl": "String"
 }
 ```
-
 
 
 

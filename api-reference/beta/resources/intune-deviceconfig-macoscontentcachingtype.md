@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d97afd473185a7a25959049322a5946012d5ad207a67c0ae4e1b7c659f59534c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0bb0859eb7b409849341b03f51abb838c62f2a18
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54206597"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783538"
 ---
 # <a name="macoscontentcachingtype-enum-type"></a>macOSContentCachingType 枚举类型
 
@@ -26,9 +26,8 @@ ms.locfileid: "54206597"
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|默认值。 将缓存用户 iCloud 数据和非 iCloud 数据。|
-|userContentOnly|1 |允许 Apple 的内容缓存服务缓存用户 iCloud 数据。|
-|sharedContentOnly|2 |允许 Apple 的内容缓存服务缓存非 iCloud (，例如应用和软件更新) 。|
-
+|userContentOnly|1|允许 Apple 的内容缓存服务缓存用户 iCloud 数据。|
+|sharedContentOnly|2|允许 Apple 的内容缓存服务缓存非 iCloud (，例如应用和软件更新) 。|
 
 
 

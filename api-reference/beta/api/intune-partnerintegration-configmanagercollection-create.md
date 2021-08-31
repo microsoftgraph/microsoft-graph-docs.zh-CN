@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 221bf81e310ef8d061dc9a787fc628b0b90e7e217b2e5b974c51eebfcb11329a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c5ef016fba9ed8c32e0333f85f15ca7944b392c4
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54151058"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783349"
 ---
 # <a name="create-configmanagercollection"></a>创建 configManagerCollection
 
@@ -43,7 +43,7 @@ POST /deviceManagement/configManagerCollections
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -55,9 +55,9 @@ POST /deviceManagement/configManagerCollections
 |:---|:---|:---|
 |id|String|ConfigManager 集合的键。|
 |displayName|字符串|DisplayName。|
-|collectionIdentifier|String|SCCM 中的集合标识符。|
+|collectionIdentifier|字符串|SCCM 中的集合标识符。|
 |hierarchyName|String|HierarchyName。|
-|hierarchyIdentifier|String|层次结构标识符。|
+|hierarchyIdentifier|字符串|层次结构标识符。|
 |createdDateTime|DateTimeOffset|创建日期。|
 |lastModifiedDateTime|DateTimeOffset|上次修改日期。|
 
@@ -102,7 +102,6 @@ Content-Length: 435
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

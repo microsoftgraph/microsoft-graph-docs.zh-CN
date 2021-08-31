@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c444f1798f9fc399c62014cf2d652d647614be2a8802bf3d76f69c1cea7e88c3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a2e9e754be098dcf19b29eea69fc6204754b4aff
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54145542"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58782985"
 ---
 # <a name="win32lobappmsipackagetype-enum-type"></a>win32LobAppMsiPackageType 枚举类型
 
@@ -26,9 +26,8 @@ ms.locfileid: "54145542"
 |成员|值|说明|
 |:---|:---|:---|
 |perMachine|0|指示每台计算机的应用包。|
-|perUser|1 |指示每用户应用包。|
-|dualPurpose|2 |指示双用途应用包。|
-
+|perUser|1|指示每用户应用包。|
+|dualPurpose|2|指示双用途应用包。|
 
 
 

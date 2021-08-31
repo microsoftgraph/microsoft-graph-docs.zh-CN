@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 573d4a492c20eb191661d00cdd2df4337a0e6703de96c696b931eefc4c18f91f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f2b73da848fbee1561f48abd620b4d668e0aeaa5
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54227307"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791815"
 ---
 # <a name="grouppolicyoperationtype-enum-type"></a>groupPolicyOperationType 枚举类型
 
@@ -26,13 +26,12 @@ ms.locfileid: "54227307"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|组策略无效的操作类型。|
-|upload|1 |组策略上载操作类型。|
-|uploadNewVersion|2 |组策略上载新版本操作类型。|
-|addLanguageFiles|3 |组策略将新语言 (ADML) 文件操作类型。|
-|removeLanguageFiles|4 |组策略删除 ADML (操作) 语言。|
+|upload|1|组策略上载操作类型。|
+|uploadNewVersion|2|组策略上载新版本操作类型。|
+|addLanguageFiles|3|组策略将新语言 (ADML) 文件操作类型。|
+|removeLanguageFiles|4 |组策略删除 ADML (操作) 的语言。|
 |updateLanguageFiles|5 |组策略更新语言 (ADML) 文件操作类型。|
 |remove|6 |组策略删除上载的文件操作类型。|
-
 
 
 

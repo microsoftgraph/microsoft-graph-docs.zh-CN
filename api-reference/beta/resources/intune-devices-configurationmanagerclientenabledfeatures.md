@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 81d7a349cc0701386700824b3dea2695932a1e35512a2af05f183667f125b827
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d11ef90945348554e8cdbb99ffaba87e49619dc1
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54241651"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804825"
 ---
 # <a name="configurationmanagerclientenabledfeatures-resource-type"></a>configurationManagerClientEnabledFeatures 资源类型
 
@@ -31,8 +31,8 @@ Configuration Manager 客户端已启用的功能
 |deviceConfiguration|Boolean|设备配置是否由 Intune 管理|
 |compliancePolicy|Boolean|符合性策略是否由 Intune 管理|
 |windowsUpdateForBusiness|Boolean|适用于企业的 Windows 更新是否由 Intune 管理|
-|endpointProtection|布尔值|是否Endpoint Protection Intune 管理|
-|officeApps|布尔值|Office应用程序是否由 Intune 管理|
+|endpointProtection|Boolean|是否Endpoint Protection Intune 管理|
+|officeApps|Boolean|Office应用程序是否由 Intune 管理|
 
 ## <a name="relationships"></a>关系
 无
@@ -57,7 +57,6 @@ Configuration Manager 客户端已启用的功能
   "officeApps": true
 }
 ```
-
 
 
 

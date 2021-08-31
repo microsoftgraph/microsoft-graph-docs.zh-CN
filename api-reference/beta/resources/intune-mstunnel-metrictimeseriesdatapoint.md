@@ -1,18 +1,18 @@
 ---
-title: deviceManagementSettingRegexConstraint 资源类型
-description: 强制设置与给定 RegEx 模式匹配的约束
+title: metricTimeSeriesDataPoint 资源类型
+description: 指标时间系列数据点
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ee141de5e36e16ee490ee1c9e46f78182ab50224
+ms.openlocfilehash: 4939450d7cc4a8a42d804a3ccbceb4bfc9fdb297
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801484"
+ms.locfileid: "58800101"
 ---
-# <a name="devicemanagementsettingregexconstraint-resource-type"></a>deviceManagementSettingRegexConstraint 资源类型
+# <a name="metrictimeseriesdatapoint-resource-type"></a>metricTimeSeriesDataPoint 资源类型
 
 命名空间：microsoft.graph
 
@@ -20,15 +20,13 @@ ms.locfileid: "58801484"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-强制设置与给定 RegEx 模式匹配的约束
-
-
-继承自 [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)
+指标时间系列数据点
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|regex|String|要匹配的 RegEx 模式|
+|dateTime|DateTimeOffset|指标时间系列数据点的时间|
+|值|Int64|指标时间系列数据点的值|
 
 ## <a name="relationships"></a>关系
 无
@@ -37,13 +35,14 @@ ms.locfileid: "58801484"
 下面是资源的 JSON 表示形式。
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.deviceManagementSettingRegexConstraint"
+  "@odata.type": "microsoft.graph.metricTimeSeriesDataPoint"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.deviceManagementSettingRegexConstraint",
-  "regex": "String"
+  "@odata.type": "#microsoft.graph.metricTimeSeriesDataPoint",
+  "dateTime": "String (timestamp)",
+  "value": 1024
 }
 ```
 

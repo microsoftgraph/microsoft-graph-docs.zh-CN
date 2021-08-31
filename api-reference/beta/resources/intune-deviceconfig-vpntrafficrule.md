@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c13aadd9f5db8b56cef169bc3a6ef0d6d0900287c65c1000b926b533269f8489
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d62c0d2357b3d46cce5654d460853ad063a351ad
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54253122"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58800051"
 ---
 # <a name="vpntrafficrule-resource-type"></a>vpnTrafficRule 资源类型
 
@@ -85,7 +85,6 @@ VPN 流量规则定义。
   "claims": "String"
 }
 ```
-
 
 
 

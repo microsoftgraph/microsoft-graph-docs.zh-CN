@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2855b2ae282ec1ed85308854e61abd213bd982f202fb88d0b7e055d6612e8e6f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e12dc64070990b722201d717549a7b221b2ee9f9
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54145206"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783461"
 ---
 # <a name="managedappoperation-resource-type"></a>managedAppOperation 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54145206"
 
 表示对应用注册应用的操作。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 managedAppOperations](../api/intune-mam-managedappoperation-list.md)|[managedAppOperation](../resources/intune-mam-managedappoperation.md) 集合|列出 [managedAppOperation](../resources/intune-mam-managedappoperation.md) 对象的属性和关系。|
@@ -61,7 +61,6 @@ ms.locfileid: "54145206"
   "version": "String"
 }
 ```
-
 
 
 

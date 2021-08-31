@@ -5,12 +5,12 @@ localization_priority: Priority
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 26a5394b934a997456f0ceecd1d0c00d19eba6a846a773f12c74198079bdc68e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 942b3c8783dcacd044ed97331867f4cf7b156e73
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54150036"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58794348"
 ---
 # <a name="application-resource-type"></a>应用程序资源类型
 
@@ -76,8 +76,8 @@ ms.locfileid: "54150036"
 | 说明 | String | 应用程序的可选说明。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`startsWith`）和 `$search`。 |
 | disabledByMicrosoftStatus | String | 指定 Microsoft 是否已禁用已注册应用程序。 可能值是：`null` (默认值)、`NotDisabled` 和 `DisabledDueToViolationOfServicesAgreement` (原因可能包括可疑、滥用或恶意活动，或违反 Microsoft 服务协议)。 <br><br> 支持 `$filter`（`eq`、`ne`、`NOT`）。 |
 | displayName | String | 应用程序的显示名称。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`、`startsWith`）、`$search` 和 `$orderBy`。 |
-| groupMembershipClaims | String | 配置应用程序所需的用户访问令牌或 OAuth 2.0 访问令牌中颁发的 `groups` 声明。 若要设置此属性，请使用以下有效字符串值之一： `None`、 `SecurityGroup` （适用于安全组和 Azure AD 角色）、 `All` （此方法获取登录用户包括的所有安全组、通讯组和 Azure AD 目录角色）。 |
-| id | String | 应用程序的唯一标识符。 继承自 [directoryObject](directoryobject.md)。 键。 不可为 null。 只读。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `in`）。|
+| groupMembershipClaims | 字符串 | 配置应用程序所需的用户访问令牌或 OAuth 2.0 访问令牌中颁发的 `groups` 声明。 若要设置此属性，请使用以下有效字符串值之一： `None`、 `SecurityGroup` （适用于安全组和 Azure AD 角色）、 `All` （此方法获取登录用户包括的所有安全组、通讯组和 Azure AD 目录角色）。 |
+| id | String | 应用程序的唯一标识符。 继承自 [directoryObject](directoryobject.md)。 键。 不可为空。 只读。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `in`）。|
 | identifierUris | String collection | URI，用于在应用程序的 Azure AD 租户中标识该应用程序；如果应用程序是多租户的，则用于在已验证的自定义域中标识该应用程序。 有关详细信息，请参阅[应用程序对象和服务主体对象](/azure/active-directory/develop/app-objects-and-service-principals)。 需要多值属性筛选器表达式的`any` 运算符。 不可为空。 <br><br>支持 `$filter`（`eq`、`ne`、`ge`、`le`、`startsWith`）。 |
 | info | [informationalUrl](informationalurl.md) | 应用程序的基本配置文件信息，如应用的市场营销、支持、服务条款和隐私声明 URL。 服务条款和隐私声明通过用户同意体验展示给用户。 有关详细信息，请参阅[如何：为已注册的 Azure AD 应用添加服务条款和隐私声明](/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement)。 <br><br>支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`）。 |
 | isDeviceOnlyAuthSupported | 布尔值 | 指定此应用程序是否支持在无用户的情况下进行设备身份验证。 默认值为 `false`。  |
@@ -92,7 +92,7 @@ ms.locfileid: "54150036"
 | publicClient | [publicClientApplication](publicclientapplication.md) | 指定已安装客户端（如台式设备或移动设备）的设置。 |
 | publisherDomain | String | 应用程序的已验证发布者域。 只读。 有关更多信息，请参阅[操作指南：配置应用程序的发布者域](/azure/active-directory/develop/howto-configure-publisher-domain)。 支持 `$filter`（`eq`、`ne`、`ge`、`le`、`startsWith`）。|
 | requiredResourceAccess |[requiredResourceAccess](requiredresourceaccess.md) 集合|指定应用程序需要访问的资源。 此属性还指定每个资源所需的 OAuth 权限范围和应用程序角色的集合。 该配置对所需的资源的访问将推动许可体验。 不可为 null。 <br><br>支持 `$filter`（`eq`、`NOT`、`ge`、`le`）。|
-| signInAudience | String | 指定当前应用程序支持的 Microsoft 帐户。 支持的值有： `AzureADMyOrg`、 `AzureADMultipleOrgs`、 `AzureADandPersonalMicrosoftAccount`、 `PersonalMicrosoftAccount`。 请参阅下表中的 [，了解](#signinaudience-values)。 <br><br>支持 `$filter`（`eq`、`ne`、`NOT`）。|
+| signInAudience | String | 指定当前应用程序支持的 Microsoft 帐户。 可能的值是：`AzureADMyOrg`、`AzureADMultipleOrgs`、`AzureADandPersonalMicrosoftAccount`（默认）和 `PersonalMicrosoftAccount`。 请参阅下表中的 [，了解](#signinaudience-values)。 <br><br>支持 `$filter`（`eq`、`ne`、`NOT`）。|
 | spa                     | [spaApplication](../resources/spaapplication.md)                            | 指定单页应用程序的设置，包括注销 URL 并重定向授权代码和访问令牌的 URI。 |
 | 标记 |字符串集合| 可用于分类和标识应用程序的自定义字符串。不可为 null。<br><br>支持 `$filter`（`eq`、`NOT`、`ge`、`le`、`startsWith`）。|
 | tokenEncryptionKeyId |String|指定 keyCredentials 集合中的公共密钥的 keyId。 配置后，Azure AD 将使用此属性指向的密钥对其发出的所有令牌进行加密。 接收加密令牌的应用程序代码必须先使用匹配的私钥来解密该令牌，然后才能将该令牌用于登录用户。|
@@ -105,7 +105,7 @@ ms.locfileid: "54150036"
 |:---------------|:--------|
 |AzureADMyOrg|在我的组织的 Azure AD 租户（单租户）中拥有 Microsoft 工作或学校帐户的用户。|
 |AzureADMultleOrgs|拥有任何组织的 Azure AD 租户（多租户）中 Microsoft 工作或学校帐户的用户。|
-|AzureADandPersonalMicrosoftAccount|具有个人 Microsoft 帐户或任何组织的 Azure AD 租户中的工作或学校帐户的用户。 要使用 Azure Active Directory B2C 用户流程对用户进行身份验证，请使用 `AzureADandPersonalMicrosoftAccount`。 该值允许最广泛的用户标识集，包括本地账户和 Microsoft、Facebook、谷歌、Twitter 或任何 OpenID Connect 提供商的用户标识。 |
+|AzureADandPersonalMicrosoftAccount|具有个人 Microsoft 帐户或任何组织的 Azure AD 租户中的工作或学校帐户的用户。 要使用 Azure Active Directory B2C 用户流程对用户进行身份验证，请使用 `AzureADandPersonalMicrosoftAccount`。 该值允许最广泛的用户标识集，包括本地账户和 Microsoft、Facebook、谷歌、Twitter 或任何 OpenID Connect 提供商的用户标识。 这是 **signInAudience** 属性的默认值。 |
 |PersonalMicrosoftAccount|仅具有个人 Microsoft 帐户的用户。|
 
 ## <a name="relationships"></a>关系

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 43e32f7e4fa746c33d59af337572cc9df8e49e9252fd0ae83b6e0111908dbdbe
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d1ebdecbba2d2960a6c9a2f86e22bbac760012a5
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54184232"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58793773"
 ---
 # <a name="create-androidmanagedstorewebapp"></a>创建 androidManagedStoreWebApp
 
@@ -43,7 +43,7 @@ POST /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,7 +54,7 @@ POST /deviceAppManagement/mobileApps
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|displayName|字符串|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|displayName|String|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |description|String|应用的说明。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publisher|String|应用的发布者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|要显示在应用详细信息中并用于图标上传的大图标。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
@@ -78,10 +78,10 @@ POST /deviceAppManagement/mobileApps
 |usedLicenseCount|Int32|使用中的 VPP 许可证数量。 继承自 [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
 |totalLicenseCount|Int32|VPP 许可证的总数。 继承自 [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
 |appStoreUrl|String|"播放工作商店"应用 URL。 继承自 [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
-|isPrivate|布尔值|指示应用是否仅适用于给定企业的用户。 继承自 [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
-|isSystemApp|布尔值|指示应用是否是预安装的系统应用。 继承自 [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
+|isPrivate|Boolean|指示应用是否仅适用于给定企业的用户。 继承自 [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
+|isSystemApp|Boolean|指示应用是否是预安装的系统应用。 继承自 [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
 |appTracks|[androidManagedStoreAppTrack](../resources/intune-apps-androidmanagedstoreapptrack.md) 集合|此企业可见的轨。 继承自 [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
-|supportsOemConfig|布尔值|此应用是否支持 OEMConfig 策略。 继承自 [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
+|supportsOemConfig|Boolean|此应用是否支持 OEMConfig 策略。 继承自 [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
 
 
 
@@ -192,7 +192,6 @@ Content-Length: 1400
   "supportsOemConfig": true
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7c2c10ab29c1687f4f4e6f90c38fb68352d1e182f1f4c7d684e526aa0ec8f292
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7376be4459653f03a00114644c044e32a4ad0c5d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54140872"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58784448"
 ---
 # <a name="create-androidforworkappconfigurationschema"></a>创建 androidForWorkAppConfigurationSchema
 
@@ -43,7 +43,7 @@ POST /deviceManagement/androidForWorkAppConfigurationSchemas
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -134,7 +134,6 @@ Content-Length: 844
   ]
 }
 ```
-
 
 
 

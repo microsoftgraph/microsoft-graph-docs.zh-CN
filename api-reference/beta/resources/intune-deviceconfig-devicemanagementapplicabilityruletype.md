@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a36be5095ce6d8e9d79a99d129a0afbc8d497fc974669304a5c2b067fcf2cb94
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5b45fa8889401b763c5f53ede1b0e1667557221d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54242921"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804545"
 ---
 # <a name="devicemanagementapplicabilityruletype-enum-type"></a>deviceManagementApplicabilityRuleType 枚举类型
 
@@ -26,8 +26,7 @@ ms.locfileid: "54242921"
 |成员|值|说明|
 |:---|:---|:---|
 |include|0|包括|
-|exclude|1 |排除|
-
+|exclude|1|排除|
 
 
 

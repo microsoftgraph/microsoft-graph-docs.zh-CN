@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b98dee94642102bc067efd9b6d8c228d329b406a32ed7c6a8742099f0a60934a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0286d1ac8790cff207ff754d49cd6d3ee51986de
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54206226"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806591"
 ---
 # <a name="unmanageddevice-resource-type"></a>unmanagedDevice 资源类型
 
@@ -30,10 +30,10 @@ ms.locfileid: "54206226"
 |ipAddress|String|IP 地址。|
 |deviceName|String|设备名称。|
 |macAddress|String|MAC 地址。|
-|domain|String|域。|
+|domain|字符串|域。|
 |manufacturer|String|制造商。|
 |model|String|模型。|
-|位置|字符串|位置。|
+|位置|String|位置。|
 |lastLoggedOnUser|String|上次登录的用户。|
 |lastSeenDateTime|DateTimeOffset|上次看到日期和时间。|
 
@@ -63,7 +63,6 @@ ms.locfileid: "54206226"
   "lastSeenDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

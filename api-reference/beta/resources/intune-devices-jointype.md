@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c29dbec2a2d3d0451e9e390f45b064e294fd4dea2d7bd3e2da5f510e42449a69
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c73cc3dd65f7d8d407d75ec879d867daf7665765
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54197966"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58784203"
 ---
 # <a name="jointype-enum-type"></a>joinType 枚举类型
 
@@ -26,10 +26,9 @@ ms.locfileid: "54197966"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|未知注册加入类型。|
-|azureADJoined|1 |设备通过 Azure AD 加入。|
-|azureADRegistered|2 |设备由 Azure AD 注册。|
-|hybridAzureADJoined|3 |设备通过混合 Azure AD 加入。|
-
+|azureADJoined|1|设备通过 Azure AD 加入。|
+|azureADRegistered|2|设备由 Azure AD 注册。|
+|hybridAzureADJoined|3|设备通过混合 Azure AD 加入。|
 
 
 

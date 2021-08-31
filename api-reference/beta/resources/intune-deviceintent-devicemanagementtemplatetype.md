@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5e324ea1143a56b4a5309fc953723c76faa1b8f3023237e7648059229221f6fe
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3e50a950819198766d5e6d0a1372010d69ebfa39
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54185773"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58793836"
 ---
 # <a name="devicemanagementtemplatetype-enum-type"></a>deviceManagementTemplateType 枚举类型
 
@@ -26,18 +26,17 @@ ms.locfileid: "54185773"
 |成员|值|说明|
 |:---|:---|:---|
 |securityBaseline|0|安全基线模板|
-|specializedDevices|1 |专用设备模板|
-|advancedThreatProtectionSecurityBaseline|2 |高级威胁防护安全基线模板|
-|deviceConfiguration|3 |设备配置模板|
+|specializedDevices|1|专用设备模板|
+|advancedThreatProtectionSecurityBaseline|2|高级威胁防护安全基线模板|
+|deviceConfiguration|3|设备配置模板|
 |custom|4 |自定义管理员定义的模板|
 |securityTemplate|5 |包含以安全性为中心的特定设置的模板|
 |microsoftEdgeSecurityBaseline|6 |Microsoft Edge安全基线模板|
 |microsoftOffice365ProPlusSecurityBaseline|7 |Microsoft Office 365 专业增强版安全基线模板|
 |deviceCompliance|8 |设备合规性模板|
 |deviceConfigurationForOffice365|9 |设备配置Microsoft Office 365设置|
-|cloudPC|10 |云电脑安全基线模板|
+|cloudPC|10 |Windows 365 安全基线模板|
 |firewallSharedSettings|11 |用于引用设置的防火墙共享对象模板|
-
 
 
 

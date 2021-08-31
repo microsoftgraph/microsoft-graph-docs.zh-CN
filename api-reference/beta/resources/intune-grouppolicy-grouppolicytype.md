@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 45e0d66dd9bdb456089f316508af1916d321a2f4908c8571b17077a0e4975db2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fe9dee2ef42593159249645a78a8ed8e959ee342
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54239222"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804496"
 ---
 # <a name="grouppolicytype-enum-type"></a>groupPolicyType 枚举类型
 
@@ -26,8 +26,7 @@ ms.locfileid: "54239222"
 |成员|值|说明|
 |:---|:---|:---|
 |admxBacked|0|策略配置服务提供程序中内置的组策略管理模板 (CSP) 。|
-|admxIngested|1 |使用策略配置服务提供程序安装组策略管理模板 (CSP) 。|
-
+|admxIngested|1|使用策略配置服务提供程序安装组策略管理模板 (CSP) 。|
 
 
 

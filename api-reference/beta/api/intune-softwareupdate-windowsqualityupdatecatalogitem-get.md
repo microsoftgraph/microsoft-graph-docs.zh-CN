@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d423cecc75b6ca497be8602c06b8aa01f202570424c3418f0b1a8ec0e2ba8ce9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7c35b25b02488106357b47e51106754af0a97b64
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54191086"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58772763"
 ---
 # <a name="get-windowsqualityupdatecatalogitem"></a>获取 windowsQualityUpdateCatalogItem
 
@@ -46,7 +46,7 @@ GET /deviceManagement/windowsUpdateCatalogItems/{windowsUpdateCatalogItemId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -83,7 +83,6 @@ Content-Length: 416
   }
 }
 ```
-
 
 
 
