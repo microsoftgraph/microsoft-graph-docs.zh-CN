@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 28ca971dbfa41c9237ed9f6ff33579d5e9f4eeb5f2b32dbf0ffd3b0eca191424
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0794e5ceadb46bf46bec11d96304c3f5c368766b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54156203"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58817087"
 ---
 # <a name="devicemanagementsettingcomparison-resource-type"></a>deviceManagementSettingComparison 资源类型
 
@@ -26,9 +26,9 @@ ms.locfileid: "54156203"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|设置 ID|
-|displayName|字符串|设置显示名称|
-|definitionId|字符串|此实例的设置定义的 ID|
-|currentValueJson|String|当前意图的 JSON 表示 (或) 模板设置的值|
+|displayName|String|设置显示名称|
+|definitionId|String|此实例的设置定义的 ID|
+|currentValueJson|字符串|当前意图的 JSON 表示 (或) 模板设置的值|
 |newValueJson|String|新模板设置值的 JSON 表示形式|
 |comparisonResult|[deviceManagementComparisonResult](../resources/intune-deviceintent-devicemanagementcomparisonresult.md)|设置比较结果。 可取值为：`unknown`、`equal`、`notEqual`、`added`、`removed`。|
 
@@ -53,7 +53,6 @@ ms.locfileid: "54156203"
   "comparisonResult": "String"
 }
 ```
-
 
 
 

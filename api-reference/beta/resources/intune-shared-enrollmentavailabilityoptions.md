@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9412dc838190c01c0d336c810ab96f4af74e0aac9a011d979188923749a59db5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 59be26e8dc76048a9c8e71c47eff834df9805155
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54206128"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787790"
 ---
 # <a name="enrollmentavailabilityoptions-enum-type"></a>enrollmentAvailabilityOptions 枚举类型
 
@@ -26,9 +26,8 @@ ms.locfileid: "54206128"
 |成员|值|说明|
 |:---|:---|:---|
 |availableWithPrompts|0|设备注册流程通过引导式注册提示向最终用户显示|
-|availableWithoutPrompts|1 |无需指导注册提示，最终用户即可使用设备注册流|
-|不可用|2 |设备注册流对最终用户不可用|
-
+|availableWithoutPrompts|1|无需指导注册提示，最终用户即可使用设备注册流|
+|不可用|2|设备注册流对最终用户不可用|
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8b415a27a221c3d855e7bc33e73c890cc73bb3a31ed1d116389b3599cd6b1562
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2de5cdd9cd3f3c8d9286da37829bbf06721ef242
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54253640"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58807647"
 ---
 # <a name="remotelockactionresult-resource-type"></a>remoteLockActionResult 资源类型
 
@@ -54,7 +54,6 @@ ms.locfileid: "54253640"
   "unlockPin": "String"
 }
 ```
-
 
 
 

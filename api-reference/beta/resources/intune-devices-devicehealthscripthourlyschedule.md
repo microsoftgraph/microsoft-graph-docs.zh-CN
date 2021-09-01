@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9dd0db7952d20a5f67f5d484f2ee5447dbdd5458a9bfcb5b601bbbe3e27e55e2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8b35b28f7480adce05ed2f279a3a8140b5edb891
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54206415"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820693"
 ---
 # <a name="devicehealthscripthourlyschedule-resource-type"></a>deviceHealthScriptHourlySchedule 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "54206415"
 继承自 [deviceHealthScriptRunSchedule](../resources/intune-devices-devicehealthscriptrunschedule.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |interval|Int32|每小时计划每 x 小时、每 x 天（每日计划每 x 天、每周计划每 x 周、每月计划每 x 个月）的 x 值。 有效值 1 到 23 继承自 [deviceHealthScriptRunSchedule](../resources/intune-devices-devicehealthscriptrunschedule.md)|
 
@@ -46,7 +46,6 @@ ms.locfileid: "54206415"
   "interval": 1024
 }
 ```
-
 
 
 

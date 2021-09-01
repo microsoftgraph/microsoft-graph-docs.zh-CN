@@ -1,18 +1,18 @@
 ---
-title: microsoftTunnelLogCollectionStatus 枚举类型
-description: 表示日志集合状态的枚举类型。
+title: driverApprovalStatus 枚举类型
+description: 表示驱动程序的审批状态的枚举类型。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7817f095108c9b337d3c450150ffa7f5dc839921
+ms.openlocfilehash: dbf9f081ea77e872cf99e3d2f28b829c3935b5e7
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791093"
+ms.locfileid: "58793686"
 ---
-# <a name="microsofttunnellogcollectionstatus-enum-type"></a>microsoftTunnelLogCollectionStatus 枚举类型
+# <a name="driverapprovalstatus-enum-type"></a>driverApprovalStatus 枚举类型
 
 命名空间：microsoft.graph
 
@@ -20,14 +20,15 @@ ms.locfileid: "58791093"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-表示日志集合状态的枚举类型。
+表示驱动程序的审批状态的枚举类型。
 
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|pending|0|日志收集正在进行中|
-|已完成|1|日志收集已完成|
-|failed|2|日志收集失败|
+|needsReview|0|这表示驱动程序需要 IT 管理员审查。|
+|declined|1|这表示 IT 管理员已拒绝驱动程序。|
+|已批准|2|这表示 IT 管理员已批准驱动程序。|
+|已挂起|3|这表示 IT 管理员已暂停驱动程序。|
 
 
 

@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c9c3e9f13a592738ebd4245015a9458a0856dda8
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: 675e27cb97831dbbf9136c650853d150d8bb80e4
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52645337"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58821149"
 ---
 # <a name="update-message"></a>更新邮件
 
@@ -61,7 +61,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 |isReadReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) 集合| 为邮件定义的多值扩展属性的集合。只读。可为空。|
 |replyTo|收件人集合|在答复时使用的电子邮件地址。仅当 isDraft = true 时可以更新。|
-|sender|收件人|实际用于生成邮件的帐户。 从[共享邮箱](/exchange/collaboration/shared-mailboxes/shared-mailboxes)发送邮件或将邮件作为[委托](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926)发送时可更新。 在任何情况下，此值必须对应于使用的实际邮箱。|
+|sender|收件人|实际用于生成邮件的帐户。 从[共享邮箱](/exchange/collaboration/shared-mailboxes/shared-mailboxes)发送邮件或将邮件作为[委托](https://support.office.com/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926)发送时可更新。 在任何情况下，此值必须对应于使用的实际邮箱。|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) collection| 为邮件定义的单值扩展属性的集合。可为空。|
 |subject|String|邮件的主题。仅当 isDraft = true 时可以更新。|
 |toRecipients|收件人集合|邮件的收件人。 |

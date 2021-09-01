@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ef565f28ac4bd01b2b15407dc607116a340f8277dd03e2c5ad67b622bed42cd3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3186154369bd25c14c7a28d2bcf6c7e439f090a2
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54242043"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818812"
 ---
 # <a name="androiddeviceownerkioskmodefolderitem-resource-type"></a>androidDeviceOwnerKioskModeFolderItem 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "54242043"
 继承自 [androidDeviceOwnerKioskModeHomeScreenItem](../resources/intune-deviceconfig-androiddeviceownerkioskmodehomescreenitem.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 
 ## <a name="relationships"></a>关系
@@ -44,7 +44,6 @@ ms.locfileid: "54242043"
   "@odata.type": "#microsoft.graph.androidDeviceOwnerKioskModeFolderItem"
 }
 ```
-
 
 
 

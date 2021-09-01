@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2910a835168a8caa0a965b025cbed2422b7a14e7d48f4bb2a692a5fd7ba7b064
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a51f143acaa19a10cf5d55daa856dc31c959432b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54193543"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58805280"
 ---
 # <a name="deviceandappmanagementassignmentfiltertype-enum-type"></a>deviceAndAppManagementAssignmentFilterType 枚举类型
 
@@ -26,9 +26,8 @@ ms.locfileid: "54193543"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|默认值。 请勿使用。|
-|include|1 |指示筛选器内规则匹配将为设备提供有效负载。|
-|exclude|2 |指示未筛选，规则匹配不会向设备提供有效负载。|
-
+|include|1|指示筛选器内规则匹配将为设备提供有效负载。|
+|exclude|2|指示未筛选，规则匹配不会向设备提供有效负载。|
 
 
 

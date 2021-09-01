@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 091a218d6b428b4eab2b35686da651892ecafc5a
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 806333b72d710ed971c485f270d399b64032f4ab
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266119"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58819344"
 ---
 # <a name="update-chromeosonboardingsettings"></a>更新 chromeOSOnboardingSettings
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/chromeOSOnboardingSettings/{chromeOSOnboardingSettingsId
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,9 +53,9 @@ PATCH /deviceManagement/chromeOSOnboardingSettings/{chromeOSOnboardingSettingsId
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|ChromebookTenant 的 ID|
+|id|字符串|ChromebookTenant 的 ID|
 |ownerUserPrincipalName|String|ChromebookTenant 的 OwnerUserPrincipalName|
-|onboardingStatus|[onboardingStatus](../resources/intune-chromebooksync-onboardingstatus.md)|ChromebookTenant 的 OnboardingStatus。 可取值为：`unknown`、`inprogress`、`onboarded`、`failed`。|
+|onboardingStatus|[onboardingStatus](../resources/intune-chromebooksync-onboardingstatus.md)|ChromebookTenant 的 OnboardingStatus。 可能的值是：`unknown`、`inprogress`、`onboarded`、`failed`。|
 |lastModifiedDateTime|DateTimeOffset|ChromebookTenant 的 LastModifiedDateTime|
 |lastDirectorySyncDateTime|DateTimeOffset|ChromebookTenant 的 LastDirectorySyncDateTime|
 
@@ -97,7 +97,6 @@ Content-Length: 351
   "lastDirectorySyncDateTime": "2016-12-31T23:57:56.1183185-08:00"
 }
 ```
-
 
 
 

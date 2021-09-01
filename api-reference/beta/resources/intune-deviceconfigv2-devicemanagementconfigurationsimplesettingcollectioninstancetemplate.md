@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bbde0eeccd0e89669a8d2d86fa2897c9d794831f42b08b4801af76ea404d7adc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0971ed10f7d6b506442d1f6518040dd01b636877
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54198071"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818096"
 ---
 # <a name="devicemanagementconfigurationsimplesettingcollectioninstancetemplate-resource-type"></a>deviceManagementConfigurationSimpleSettingCollectionInstanceTemplate 资源类型
 
@@ -26,13 +26,13 @@ ms.locfileid: "54198071"
 继承自 [deviceManagementConfigurationSettingInstanceTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstancetemplate.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |settingInstanceTemplateId|String|设置实例模板 ID 继承自 [deviceManagementConfigurationSettingInstanceTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstancetemplate.md)|
 |settingDefinitionId|String|设置定义 ID 继承自 [deviceManagementConfigurationSettingInstanceTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstancetemplate.md)|
 |isRequired|Boolean|指示策略是否必须指定此设置。 继承自 [deviceManagementConfigurationSettingInstanceTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstancetemplate.md)|
 |simpleSettingCollectionValueTemplate|[deviceManagementConfigurationSimpleSettingValueTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingvaluetemplate.md) 集合|简单设置集合值模板|
-|allowUnmanagedValues|布尔值|链接策略可能会追加模板中不存在的值。|
+|allowUnmanagedValues|Boolean|链接策略可能会追加模板中不存在的值。|
 
 ## <a name="relationships"></a>关系
 无
@@ -63,7 +63,6 @@ ms.locfileid: "54198071"
   "allowUnmanagedValues": true
 }
 ```
-
 
 
 

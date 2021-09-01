@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 429ba8c4681134f26a5a885be0554769f4f4d46721c07f2cbfb50bf2bd924036
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 78d2ea8476fd4295b74096f8a42dc7c684540e37
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54233579"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791289"
 ---
 # <a name="delete-devicemanagementpartner"></a>删除 deviceManagementPartner
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/deviceManagementPartners/{deviceManagementPartnerId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceManagementPartner
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

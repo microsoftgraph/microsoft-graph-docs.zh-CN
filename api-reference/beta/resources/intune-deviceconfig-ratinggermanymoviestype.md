@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2554b056bbb34809ca3e88d304adba28a38ff76ae9adae139bd6f7e1c9b3d38a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ae06c976cb50e56e877cadac1ff5b60a471c3d4f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54242801"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58819113"
 ---
 # <a name="ratinggermanymoviestype-enum-type"></a>ratingGermanyMoviesType 枚举类型
 
@@ -23,16 +23,15 @@ ms.locfileid: "54242801"
 德国电影评级标签
 
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |allAllowed|0|默认值，允许所有电影内容|
-|allBlocked|1 |不允许任何电影内容|
-|general|2 |Ab 0 Jahren，没有年龄限制|
-|agesAbove6|3 |Ab 6 Jahren， ages 6 and older|
+|allBlocked|1|不允许任何电影内容|
+|general|2|Ab 0 Jahren，没有年龄限制|
+|agesAbove6|3|Ab 6 Jahren， ages 6 and older|
 |agesAbove12|4 |Ab 12 Jahren， ages 12 and older|
 |agesAbove16|5 |Ab 16 Jahren， ages 16 and older|
 |一些|6 |Ab 18 Jahren，仅成人|
-
 
 
 

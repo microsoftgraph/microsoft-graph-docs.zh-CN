@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ea276d0a7bca5a67749b5f222d3fb4792ba04ee5e394c0ddb2b7899d7ee2349f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b9d2b921336fa6346ce88d72d4a7a0d725453319
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54186638"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787186"
 ---
 # <a name="get-androiddeviceownerderivedcredentialauthenticationconfiguration"></a>获取 androidDeviceOwnerDerivedCredentialAuthenticationConfiguration
 
@@ -48,7 +48,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -109,7 +109,6 @@ Content-Length: 1320
   }
 }
 ```
-
 
 
 

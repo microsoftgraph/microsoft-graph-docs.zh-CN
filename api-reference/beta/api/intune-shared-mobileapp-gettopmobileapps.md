@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0d60268c5b22bcf741daa3b1c4458ea787aca80cd2edb7daf2072c8efad39e2b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6a4e410a91aed262a56f3d68625171dc46306f38
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54136763"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58821954"
 ---
 # <a name="gettopmobileapps-function"></a>getTopMobileApps 函数
 
@@ -45,7 +45,7 @@ GET /deviceAppManagement/mobileApps/getTopMobileApps
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,7 +54,7 @@ GET /deviceAppManagement/mobileApps/getTopMobileApps
 
 |属性|类型|说明|
 |:---|:---|:---|
-|status|String|尚未记录|
+|状态|String|尚未记录|
 |count|Int64|尚未记录|
 
 
@@ -109,7 +109,6 @@ Content-Length: 1013
   ]
 }
 ```
-
 
 
 
