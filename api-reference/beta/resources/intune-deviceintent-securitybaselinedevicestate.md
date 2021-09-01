@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: da4dcad2cd0f8956f43e4322b166495576432d751324b642e867c06df1cb76a4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 99dae7127ff0074fd660ed90bf0467fc8e6f5986
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54224675"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58805729"
 ---
 # <a name="securitybaselinedevicestate-resource-type"></a>securityBaselineDeviceState 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54224675"
 
 设备的安全基线的安全基线合规性状态摘要。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 securityBaselineDeviceStates](../api/intune-deviceintent-securitybaselinedevicestate-list.md)|[securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md) 集合|列出 [securityBaselineDeviceState 对象的属性和](../resources/intune-deviceintent-securitybaselinedevicestate.md) 关系。|
@@ -37,7 +37,7 @@ ms.locfileid: "54224675"
 |id|String|实体的唯一标识符|
 |managedDeviceId|字符串|Intune 设备 ID|
 |deviceDisplayName|String|设备的显示名称|
-|userPrincipalName|字符串|用户主体名称|
+|userPrincipalName|String|用户主体名称|
 |state|[securityBaselineComplianceState](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|安全基线合规性状态。 可取值为：`unknown`、`secure`、`notApplicable`、`notSecure`、`error`、`conflict`。|
 |lastReportedDateTime|DateTimeOffset|策略报告的上次修改日期时间|
 
@@ -63,7 +63,6 @@ ms.locfileid: "54224675"
   "lastReportedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9c3220a763e7fbb651c1bf6766f7f6c312d0036bf11d78cf8666bae53e877f80
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 105d400b051c0322d72e711871ae8801a07d25ce
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54244881"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58815587"
 ---
 # <a name="devicemanagementconfigurationintegersettingvaluedefaulttemplate-resource-type"></a>deviceManagementConfigurationIntegerSettingValueDefaultTemplate 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "54244881"
 整数设置值默认模板
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 
 ## <a name="relationships"></a>关系
@@ -41,7 +41,6 @@ ms.locfileid: "54244881"
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefaultTemplate"
 }
 ```
-
 
 
 

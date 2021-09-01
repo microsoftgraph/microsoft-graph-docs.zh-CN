@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b8f6accd388862f29efbb9721c6dfbd7c65c47c855b940bb5bb5ae2a7e2c292e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cce3fd916973bcc397c936cbb7c24f6abcec29aa
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54203118"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818278"
 ---
 # <a name="deviceconfigurationsettingstate-resource-type"></a>deviceConfigurationSettingState 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "54203118"
 给定设备的设备配置设置状态。
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |setting|String|报告的设置|
 |settingName|String|报告的本地化/用户友好设置名称|
@@ -34,10 +34,10 @@ ms.locfileid: "54203118"
 |userId|String|UserId|
 |userName|String|UserName|
 |userEmail|String|UserEmail|
-|userPrincipalName|字符串|UserPrincipalName。|
+|userPrincipalName|String|UserPrincipalName。|
 |源|[settingSource](../resources/intune-deviceconfig-settingsource.md) 集合|参与策略|
 |currentValue|String|设备上设置的当前值|
-|settingInstanceId|String|SettingInstanceId|
+|settingInstanceId|字符串|SettingInstanceId|
 
 ## <a name="relationships"></a>关系
 无
@@ -74,7 +74,6 @@ ms.locfileid: "54203118"
   "settingInstanceId": "String"
 }
 ```
-
 
 
 

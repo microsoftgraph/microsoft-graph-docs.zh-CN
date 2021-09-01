@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: beb73b0ab45b9bcf22be49fb1f0c65bd83d2b1278126c6c57679305044aa0ff7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 172be9e4e189c8b87316f22177f3389dc99c5b27
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54156910"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58814691"
 ---
 # <a name="update-windowsinformationprotectionwipeaction"></a>更新 windowsInformationProtectionWipeAction
 
@@ -43,7 +43,7 @@ PATCH /deviceAppManagement/windowsInformationProtectionWipeActions/{windowsInfor
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,11 +54,11 @@ PATCH /deviceAppManagement/windowsInformationProtectionWipeActions/{windowsInfor
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|status|[actionState](../resources/intune-shared-actionstate.md)|擦除操作状态。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed` 或 `notSupported`。|
-|targetedUserId|String|此擦除操作所针对的 UserId。|
-|targetedDeviceRegistrationId|字符串|此擦除操作所针对的 DeviceRegistrationId。|
+|状态|[actionState](../resources/intune-shared-actionstate.md)|擦除操作状态。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed` 或 `notSupported`。|
+|targetedUserId|字符串|此擦除操作所针对的 UserId。|
+|targetedDeviceRegistrationId|String|此擦除操作所针对的 DeviceRegistrationId。|
 |targetedDeviceName|String|目标设备名称。|
-|targetedDeviceMacAddress|String|目标设备 Mac 地址。|
+|targetedDeviceMacAddress|字符串|目标设备 Mac 地址。|
 |lastCheckInDateTime|DateTimeOffset|此擦除操作针对的设备的最后签入时间。|
 
 
@@ -104,7 +104,6 @@ Content-Length: 461
   "lastCheckInDateTime": "2016-12-31T23:59:56.413532-08:00"
 }
 ```
-
 
 
 

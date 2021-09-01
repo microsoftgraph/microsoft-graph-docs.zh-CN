@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d83cd5b856849f3efd12d0bcc32d9da8ee217d16
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 3a6871d0168324a01e7d9a8ef39b8164e453ff2e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58259209"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58805708"
 ---
 # <a name="operatingsystemupgradeeligibility-enum-type"></a>operatingSystemUpgradeEligibility 枚举类型
 
@@ -26,10 +26,9 @@ ms.locfileid: "58259209"
 |成员|值|说明|
 |:---|:---|:---|
 |upgraded|0|设备已升级到最新版本的 Windows|
-|unknown|1 |没有足够的数据可用于计算设备对 Windows 升级的资格|
-|notCapable|2 |设备无法进行 Windows 升级|
-|capable|3 |设备支持 Windows 升级|
-
+|unknown|1|没有足够的数据可用于计算设备对 Windows 升级的资格|
+|notCapable|2|设备无法进行 Windows 升级|
+|capable|3|设备支持 Windows 升级|
 
 
 

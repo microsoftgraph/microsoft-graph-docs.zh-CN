@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1d8531f33ab1278a06eb3f0f92ecf361342d35d16bdf0e8630c0dc19881492e8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d7100c83e06b0a250d9b2bb4c35e566e958d34cf
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54159033"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58802619"
 ---
 # <a name="get-devicemanagementintentuserstatesummary"></a>获取 deviceManagementIntentUserStateSummary
 
@@ -46,7 +46,7 @@ GET /deviceManagement/intents/{deviceManagementIntentId}/userStateSummary
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -82,7 +82,6 @@ Content-Length: 280
   }
 }
 ```
-
 
 
 

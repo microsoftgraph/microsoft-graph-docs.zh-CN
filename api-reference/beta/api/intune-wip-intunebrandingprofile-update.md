@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a066bcb055101b639833f1f81ecca61d57b6acbd716631db67389c7453b5996d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 598bef1456c51a5bff726ffe4af062f276c1055b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54207241"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806122"
 ---
 # <a name="update-intunebrandingprofile"></a>更新 intuneBrandingProfile
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -59,12 +59,12 @@ PATCH /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 |isDefaultProfile|布尔值|表示配置文件是否用作默认配置文件的布尔值|
 |createdDateTime|DateTimeOffset|BrandingProfile 创建时间|
 |lastModifiedDateTime|DateTimeOffset|BrandingProfile 上次修改的时间|
-|displayName|字符串|向最终用户显示的公司/组织名称|
+|displayName|String|向最终用户显示的公司/组织名称|
 |themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|应用程序应用程序和 Web 门户公司门户主题颜色|
 |showLogo|布尔值|表示是否显示管理员提供的徽标图像的布尔值|
 |showDisplayNameNextToLogo|布尔值|Boolean 值，表示管理员显示名称是否显示在徽标图像旁边|
-|themeColorLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|徽标在徽标公司门户具有主题颜色背景的应用中显示的徽标图像|
-|lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|徽标显示在徽标公司门户背景浅色的应用中显示的徽标图像|
+|themeColorLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|徽标显示在徽标公司门户具有主题颜色背景的应用中显示的徽标图像|
+|lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|徽标图像显示在公司门户徽标后具有浅色背景的应用|
 |landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|自定义图像显示在应用公司门户页面中|
 |contactITName|String|负责 IT 支持人员/组织的名称|
 |contactITPhoneNumber|String|电话 IT 支持人员/组织的数量|
@@ -73,18 +73,18 @@ PATCH /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 |onlineSupportSiteUrl|String|指向公司/组织的 IT 支持人员网站的 URL|
 |onlineSupportSiteName|String|公司/组织的 IT 支持人员网站的显示名称|
 |privacyUrl|String|指向公司/组织隐私策略的 URL|
-|customPrivacyMessage|String|有关管理员在设备上无法访问的内容的文本注释|
-|customCanSeePrivacyMessage|字符串|有关管理员在设备上有权访问的内容的文本注释|
-|customCantSeePrivacyMessage|字符串|有关管理员在设备上无法访问的内容的文本注释|
-|isRemoveDeviceDisabled|布尔值|Boolean 值，表示 adminsistrator 是否已在公司拥有的设备上禁用"删除设备"操作。|
-|isFactoryResetDisabled|布尔值|Boolean 值，表示 adminsistrator 是否已在公司拥有的设备上禁用"恢复出厂设置"操作。|
+|customPrivacyMessage|字符串|有关管理员在设备上无法访问的内容的文本注释|
+|customCanSeePrivacyMessage|String|有关管理员在设备上有权访问的内容的文本注释|
+|customCantSeePrivacyMessage|String|有关管理员在设备上无法访问的内容的文本注释|
+|isRemoveDeviceDisabled|Boolean|Boolean 值，表示 adminsistrator 是否已在公司拥有的设备上禁用"删除设备"操作。|
+|isFactoryResetDisabled|Boolean|Boolean 值，表示 adminsistrator 是否已在公司拥有的设备上禁用"恢复出厂设置"操作。|
 |companyPortalBlockedActions|[companyPortalBlockedAction](../resources/intune-shared-companyportalblockedaction.md) 集合|根据平台和设备所有权类型，在公司门户上阻止的操作的集合。|
-|showAzureADEnterpriseApps|布尔值|Boolean 值，指示 AzureAD Enterprise应用是否将显示在 公司门户|
-|showOfficeWebApps|布尔值|Boolean 值，Office WebApps 是否将显示在 公司门户|
-|sendDeviceOwnershipChangePushNotification|布尔值|指示当用户的设备所有权类型从个人更改到公司时是否向用户发送推送通知的布尔值|
+|showAzureADEnterpriseApps|Boolean|Boolean 值，指示 AzureAD Enterprise应用是否将显示在 公司门户|
+|showOfficeWebApps|Boolean|Boolean 值，Office WebApps 是否将显示在 webApps 公司门户|
+|sendDeviceOwnershipChangePushNotification|Boolean|指示当用户的设备所有权类型从个人更改到公司时是否向用户发送推送通知的布尔值|
 |enrollmentAvailability|[enrollmentAvailabilityOptions](../resources/intune-shared-enrollmentavailabilityoptions.md)|向最终用户显示的自定义设备注册流。 可取值为：`availableWithPrompts`、`availableWithoutPrompts`、`unavailable`。|
-|disableClientTelemetry|布尔值|适用于从所有客户端发送到 Intune 服务的遥测。 禁用后，将关闭客户端内的所有主动故障排除和发出警告，并且遥测设置对设备用户显示为非活动或隐藏。|
-|roleScopeTagIds|String collection|分配给品牌配置文件的范围标记列表|
+|disableClientTelemetry|Boolean|适用于从所有客户端发送到 Intune 服务的遥测。 禁用后，将关闭客户端内的所有主动故障排除和发出警告，并且遥测设置对设备用户显示为非活动或隐藏。|
+|roleScopeTagIds|字符串集合|分配给品牌配置文件的范围标记列表|
 
 
 
@@ -229,7 +229,6 @@ Content-Length: 2147
   ]
 }
 ```
-
 
 
 

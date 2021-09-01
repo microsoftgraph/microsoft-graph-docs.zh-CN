@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0f4bfd87ea48319667ce203c741828fe1868af1cc5ed0f7f2700a9f80ca18525
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b0b16018cb9eca2fa574713d12f1e5e66d7530ee
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54156070"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786598"
 ---
 # <a name="devicemanagementexportjoblocalizationtype-enum-type"></a>deviceManagementExportJobLocalizationType 枚举类型
 
@@ -26,8 +26,7 @@ ms.locfileid: "54156070"
 |成员|值|说明|
 |:---|:---|:---|
 |localizedValuesAsAdditionalColumn|0|配置导出作业以将本地化值作为附加列公开|
-|replaceLocalizableValues|1 |配置导出作业以将可枚举值替换为其本地化值|
-
+|replaceLocalizableValues|1|配置导出作业以将可枚举值替换为其本地化值|
 
 
 

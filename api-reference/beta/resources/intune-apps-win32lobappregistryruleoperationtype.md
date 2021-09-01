@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d42a6485be9c9b6792a595fe0df95c430c3095a6e060bd4ce9db8ed741dafe5f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3fd1db34595c475bc6c8a8ac1b22b40775f790d2
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54206807"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783979"
 ---
 # <a name="win32lobappregistryruleoperationtype-enum-type"></a>win32LobAppRegistryRuleOperationType 枚举类型
 
@@ -26,12 +26,11 @@ ms.locfileid: "54206807"
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置。|
-|exists|1 |指定的注册表项或值已存在。|
-|doesNotExist|2 |指定的注册表项或值不存在。|
-|string|3 |字符串值类型。|
+|exists|1|指定的注册表项或值已存在。|
+|doesNotExist|2|指定的注册表项或值不存在。|
+|string|3|字符串值类型。|
 |integer|4 |整数值类型。|
 |version|5 |版本值类型。|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b5082a4c0150aff002fbe29c09ea35cc337f50207b22d82c615360c9e28ea122
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 45720943bd4050b0a72ad0a6cdb13356adb7e8f5
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54127108"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806955"
 ---
 # <a name="macossoftwareupdatestate-enum-type"></a>macOSSoftwareUpdateState 枚举类型
 
@@ -40,7 +40,6 @@ MacOS 软件更新状态
 |installInsufficientPower|2005|没有足够的电源来安装更新|
 |installFailed|2006|由于未指定的原因，安装失败|
 |commandFailed|2007|计划更新命令因未指定的原因失败|
-
 
 
 

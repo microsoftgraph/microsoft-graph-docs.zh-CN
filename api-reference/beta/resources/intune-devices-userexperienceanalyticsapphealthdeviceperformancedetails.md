@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e732dc90d24205ca5d94fad310eca3e5b6f23e31
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 4e6905faac844f91925f875e893d710e7a8286e5
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256064"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58817374"
 ---
 # <a name="userexperienceanalyticsapphealthdeviceperformancedetails-resource-type"></a>userExperienceAnalyticsAppHealthDevicePerformanceDetails 资源类型
 
@@ -22,8 +22,8 @@ ms.locfileid: "58256064"
 
 用户体验分析设备性能实体包含设备性能详细信息。
 
-## <a name="methods"></a>Methods
-|方法|返回类型|说明|
+## <a name="methods"></a>方法
+|方法|返回类型|Description|
 |:---|:---|:---|
 |[列出 userExperienceAnalyticsAppHealthDevicePerformanceDetailses](../api/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails-list.md)|[userExperienceAnalyticsAppHealthDevicePerformanceDetails](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md) 集合|列出 [userExperienceAnalyticsAppHealthDevicePerformanceDetails 对象的属性和](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md) 关系。|
 |[获取 userExperienceAnalyticsAppHealthDevicePerformanceDetails](../api/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails-get.md)|[userExperienceAnalyticsAppHealthDevicePerformanceDetails](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md)|读取 [userExperienceAnalyticsAppHealthDevicePerformanceDetails 对象的属性和](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md) 关系。|
@@ -67,7 +67,6 @@ ms.locfileid: "58256064"
   "deviceDisplayName": "String"
 }
 ```
-
 
 
 

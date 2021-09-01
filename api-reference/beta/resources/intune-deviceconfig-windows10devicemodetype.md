@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1531f407cef9a1b806dc1cbddc66905ada29998a4e75205861730d7b5055bef1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3d4adfc514e2fbc4535771a7eeda7efd39998e13
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54241693"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58821660"
 ---
 # <a name="windows10devicemodetype-enum-type"></a>windows10DeviceModeType 枚举类型
 
@@ -23,11 +23,10 @@ ms.locfileid: "54241693"
 Windows 10设备模式类型。
 
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |standardConfiguration|0|标准配置|
-|sModeConfiguration|1 |S 模式配置|
-
+|sModeConfiguration|1|S 模式配置|
 
 
 

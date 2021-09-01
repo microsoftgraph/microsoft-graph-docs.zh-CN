@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ed8ec505d314207a57fe3b743357e4217255db0d
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: b8b8a5bc422c2d663d74ea7dc93b7353f10e65d3
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58265523"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786605"
 ---
 # <a name="assignmentfiltersupportedproperty-resource-type"></a>assignmentFilterSupportedProperty 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "58265523"
 |属性|类型|说明|
 |:---|:---|:---|
 |DataType|String|属性的数据类型。|
-|isCollection|布尔值|指示属性是否是集合类型。|
+|isCollection|Boolean|指示属性是否是集合类型。|
 |name|String|属性的名称。|
 |propertyRegexConstraint|String|正则表达式字符串，用于对属性值进行验证。|
 |supportedOperators|[assignmentFilterOperator](../resources/intune-policyset-assignmentfilteroperator.md) 集合|此属性上所有受支持的运算符的列表。|
@@ -57,7 +57,6 @@ ms.locfileid: "58265523"
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 990989d50774622990d88345e24aa7e8a1a9994bd922d53e61bb2d36e339c90c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3560ffe1584f22c7754d602e1da1564b12e88f6e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54253143"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806087"
 ---
 # <a name="windowsuniversalappxcontainedapp-resource-type"></a>windowsUniversalAppXContainedApp 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "54253143"
 
 继承自 [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 windowsUniversalAppXContainedApps](../api/intune-apps-windowsuniversalappxcontainedapp-list.md)|[windowsUniversalAppXContainedApp](../resources/intune-apps-windowsuniversalappxcontainedapp.md) 集合|列出 [windowsUniversalAppXContainedApp 对象的属性和](../resources/intune-apps-windowsuniversalappxcontainedapp.md) 关系。|
@@ -38,7 +38,7 @@ ms.locfileid: "54253143"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
-|appUserModelId|字符串|WindowsUniversalAppX 应用包含的应用的应用用户模型 ID。|
+|appUserModelId|String|WindowsUniversalAppX 应用包含的应用的应用用户模型 ID。|
 
 ## <a name="relationships"></a>关系
 无
@@ -58,7 +58,6 @@ ms.locfileid: "54253143"
   "appUserModelId": "String"
 }
 ```
-
 
 
 

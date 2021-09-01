@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6cf2eafac549b0627a9f6ea6557199a3aa0eb61f91e05e0720b2039b2df6814f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 95d93e809d72df3e2e224c77d6691f5c801e376f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54133220"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806108"
 ---
 # <a name="userexperienceanalyticsautopilotdevicessummary-resource-type"></a>userExperienceAnalyticsAutopilotDevicesSummary 资源类型
 
@@ -27,6 +27,7 @@ ms.locfileid: "54133220"
 |:---|:---|:---|
 |devicesNotAutopilotRegistered|Int32|未注册 autopilot 的 intune 设备计数。|
 |devicesWithoutAutopilotProfileAssigned|Int32|未分配 autopilot 配置文件的 intune 设备计数。|
+|totalWindows10DevicesWithoutTenantAttached|Int32|Intune 和 Comanaged 的 Windows 10 设备计数。|
 
 ## <a name="relationships"></a>关系
 无
@@ -42,10 +43,10 @@ ms.locfileid: "54133220"
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsAutopilotDevicesSummary",
   "devicesNotAutopilotRegistered": 1024,
-  "devicesWithoutAutopilotProfileAssigned": 1024
+  "devicesWithoutAutopilotProfileAssigned": 1024,
+  "totalWindows10DevicesWithoutTenantAttached": 1024
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f7582459e304ef25ba15a404fc521c9e6832c7dab40dea51151cc7d2bb790883
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ecb0efaedac1cc507565ab41b92be23bb88d4edc
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54185801"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818524"
 ---
 # <a name="devicemanagementconfigurationgroupsettingvaluetemplate-resource-type"></a>deviceManagementConfigurationGroupSettingValueTemplate 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "54185801"
 |属性|类型|说明|
 |:---|:---|:---|
 |children|[deviceManagementConfigurationSettingInstanceTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstancetemplate.md) 集合|组设置值子值|
-|settingValueTemplateId|字符串|设置值模板 ID|
+|settingValueTemplateId|String|设置值模板 ID|
 
 ## <a name="relationships"></a>关系
 无
@@ -60,7 +60,6 @@ ms.locfileid: "54185801"
   "settingValueTemplateId": "String"
 }
 ```
-
 
 
 

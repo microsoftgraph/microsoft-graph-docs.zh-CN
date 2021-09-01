@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 29c9a5a3e50a21a9a843d09acd056488a04d5aee917d27f7f0dee97c191d3b87
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ec1d7d4c3aa4ce0ee082f12b703123552888b492
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54133192"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818047"
 ---
 # <a name="importeddeviceidentitytype-enum-type"></a>importedDeviceIdentityType 枚举类型
 
@@ -23,12 +23,11 @@ ms.locfileid: "54133192"
 尚未记录
 
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|importedDeviceIdentityType 的未知值。|
-|imei|1 |设备标识的类型为 imei。|
-|serialNumber|2 |设备标识的类型为序列号。|
-
+|imei|1|设备标识的类型为 imei。|
+|serialNumber|2|设备标识的类型为序列号。|
 
 
 

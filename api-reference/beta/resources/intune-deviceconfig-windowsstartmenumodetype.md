@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ec6b71fd11323a82c67638dfae57ccd08e5d3d2fce122b41631381210fe0402c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0d7636be3f6a01c095172053e3b8fa175298e528
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54139486"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791506"
 ---
 # <a name="windowsstartmenumodetype-enum-type"></a>windowsStartMenuModeType 枚举类型
 
@@ -26,9 +26,8 @@ ms.locfileid: "54139486"
 |成员|值|说明|
 |:---|:---|:---|
 |userDefined|0|用户定义。 默认值。|
-|fullScreen|1 |全屏。|
-|nonFullScreen|2 |非全屏显示。|
-
+|fullScreen|1|全屏。|
+|nonFullScreen|2|非全屏显示。|
 
 
 

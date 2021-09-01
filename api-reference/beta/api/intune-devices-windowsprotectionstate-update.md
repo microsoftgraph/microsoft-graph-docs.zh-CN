@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9a8c51bc95de38ddfebc394b50cfdf3dcd12fe74
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: a1ae6ae8ee171ab40ff988ceb54e13b172f197a5
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58263861"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58814831"
 ---
 # <a name="update-windowsprotectionstate"></a>更新 windowsProtectionState
 
@@ -27,9 +27,9 @@ ms.locfileid: "58263861"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,15 +53,15 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|设备保护状态对象的唯一标识符。 这是设备的设备 ID|
+|id|字符串|设备保护状态对象的唯一标识符。 这是设备的设备 ID|
 |malwareProtectionEnabled|布尔值|反恶意软件是否已启用|
-|deviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|计算机的状态 (干净或挂起完全扫描或挂起重启等) 。 可取值为：`clean`、`fullScanPending`、`rebootPending`、`manualStepsPending`、`offlineScanPending`、`critical`。|
-|realTimeProtectionEnabled|布尔值|实时保护是否已启用？|
+|deviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|计算机的状态 (如干净或挂起完全扫描或挂起重启等) 。 可取值为：`clean`、`fullScanPending`、`rebootPending`、`manualStepsPending`、`offlineScanPending`、`critical`。|
+|realTimeProtectionEnabled|Boolean|实时保护是否已启用？|
 |networkInspectionSystemEnabled|布尔值|网络检查系统是否已启用？|
-|quickScanOverdue|布尔值|快速扫描是否过期？|
-|fullScanOverdue|布尔值|完全扫描是否过期？|
+|quickScanOverdue|Boolean|快速扫描是否过期？|
+|fullScanOverdue|Boolean|完全扫描是否过期？|
 |signatureUpdateOverdue|布尔值|签名是否过期？|
-|rebootRequired|布尔值|是否要求重新启动？|
+|rebootRequired|Boolean|是否要求重新启动？|
 |fullScanRequired|布尔值|是否要求进行完全扫描？|
 |engineVersion|String|当前终结点保护引擎的版本|
 |signatureVersion|字符串|当前恶意软件定义版本|
@@ -69,11 +69,11 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |lastQuickScanDateTime|DateTimeOffset|上次快速扫描日期/时间|
 |lastFullScanDateTime|DateTimeOffset|上次快速扫描日期/时间|
 |lastQuickScanSignatureVersion|字符串|上次快速扫描签名版本|
-|lastFullScanSignatureVersion|字符串|上次完全扫描签名版本|
+|lastFullScanSignatureVersion|String|上次完全扫描签名版本|
 |lastReportedDateTime|DateTimeOffset|上次设备运行状况报告时间|
 |productStatus|[windowsDefenderProductStatus](../resources/intune-devices-windowsdefenderproductstatus.md)|产品状态Windows Defender 防病毒。 可能的值是 `noStatus` `serviceNotRunning` `serviceStartedWithoutMalwareProtection` ：、、、、、、、、、、 `pendingFullScanDueToThreatAction` `pendingRebootDueToThreatAction` `pendingManualStepsDueToThreatAction` `avSignaturesOutOfDate` `asSignaturesOutOfDate` `noQuickScanHappenedForSpecifiedPeriod` `noFullScanHappenedForSpecifiedPeriod` `systemInitiatedScanInProgress` `systemInitiatedCleanInProgress` `samplesPendingSubmission` `productRunningInEvaluationMode` `productRunningInNonGenuineMode` `productExpired` `offlineScanRequired` `serviceShutdownAsPartOfSystemShutdown` `threatRemediationFailedCritically` `threatRemediationFailedNonCritically` `noStatusFlagsSet` `platformOutOfDate` `platformUpdateInProgress` `platformAboutToBeOutdated` `signatureOrPlatformEndOfLifeIsPastOrIsImpending` `windowsSModeSignaturesInUseOnNonWin10SInstall` 、|
-|isVirtualMachine|布尔值|指示设备是否是虚拟机。|
-|tamperProtectionEnabled|布尔值|指示是否Windows Defender防篡改功能。|
+|isVirtualMachine|Boolean|指示设备是否是虚拟机。|
+|tamperProtectionEnabled|Boolean|指示是否Windows Defender防篡改功能。|
 
 
 
@@ -146,7 +146,6 @@ Content-Length: 1020
   "tamperProtectionEnabled": true
 }
 ```
-
 
 
 
