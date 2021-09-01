@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0048794716da01271a7a94885807cda9c1a6e27510883c296d84877bbd0dbb9e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ef46b7b34260764e8ba67f8fbd0a17258493e927
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54132079"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820279"
 ---
 # <a name="create-devicemanagementcollectionsettinginstance"></a>创建 deviceManagementCollectionSettingInstance
 
@@ -46,7 +46,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/categories/{device
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -56,7 +56,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/categories/{device
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|设置实例 ID 继承自 [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
+|id|字符串|设置实例 ID 继承自 [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
 |definitionId|String|此实例的设置定义的 ID 继承自 [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
 |valueJson|String|值的 JSON 表示形式 继承自 [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
 
@@ -95,7 +95,6 @@ Content-Length: 210
   "valueJson": "Value Json value"
 }
 ```
-
 
 
 

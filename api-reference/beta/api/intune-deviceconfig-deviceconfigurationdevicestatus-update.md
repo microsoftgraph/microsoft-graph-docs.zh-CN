@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 445e6ac0e8ee5c20bca605a75ae08a69d9e861a092e366c26732f0e45b7aeeda
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 947f8920353bae01b6e9f50c2d102811c74166ed
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54157463"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820350"
 ---
 # <a name="update-deviceconfigurationdevicestatus"></a>更新 deviceConfigurationDeviceStatus
 
@@ -52,7 +52,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -70,7 +70,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|设备符合性宽限期的到期日期/时间|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|策略报告的符合性状态。 可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。|
 |lastReportedDateTime|DateTimeOffset|策略报告的上次修改日期时间。|
-|userPrincipalName|字符串|UserPrincipalName。|
+|userPrincipalName|String|UserPrincipalName。|
 
 
 
@@ -119,7 +119,6 @@ Content-Length: 496
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 
