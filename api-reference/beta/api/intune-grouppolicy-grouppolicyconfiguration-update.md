@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a6a5507043c73f3c09002d14c8400454b5da1d10c63d71bb8209b048a6609967
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1ac923662c83d18178ac4c91e9fac490e94b0df8
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54171152"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786107"
 ---
 # <a name="update-grouppolicyconfiguration"></a>更新 groupPolicyConfiguration
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -56,7 +56,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}
 |createdDateTime|DateTimeOffset|对象的创建日期和时间。|
 |displayName|字符串|用户为资源对象提供的名称。|
 |description|String|用户提供了资源对象的说明。|
-|roleScopeTagIds|String collection|配置的范围标记列表。|
+|roleScopeTagIds|字符串集合|配置的范围标记列表。|
 |id|字符串|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。|
 
@@ -103,7 +103,6 @@ Content-Length: 379
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

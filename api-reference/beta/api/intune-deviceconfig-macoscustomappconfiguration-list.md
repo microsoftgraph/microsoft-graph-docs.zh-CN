@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dfe3edfc30bc0a37e7e5dfeb7247067934c482c37eb3ded9a0bd8268aa2df914
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e77dca160cac0a4cc0276dfff08bed5a1d50b67e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54214304"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58805168"
 ---
 # <a name="list-macoscustomappconfigurations"></a>列出 macOSCustomAppConfigurations
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -110,7 +110,6 @@ Content-Length: 1494
   ]
 }
 ```
-
 
 
 

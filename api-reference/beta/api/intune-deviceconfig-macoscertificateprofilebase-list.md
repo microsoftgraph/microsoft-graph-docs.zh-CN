@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 00eb5d80c6bbdd0c029c740fea5ba8a544e8541b0c3f50d2d70298957a794098
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 72c2241120fda53a65b76f1a0c1f361d972cfefd
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54162338"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804958"
 ---
 # <a name="list-macoscertificateprofilebases"></a>列出 macOSCertificateProfileBases
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -112,7 +112,6 @@ Content-Length: 1602
   ]
 }
 ```
-
 
 
 

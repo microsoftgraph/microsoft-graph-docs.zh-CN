@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0b1ebdefc667cb62101af973e808bda4ba32689bf7bbd32fb1d49b93dd870717
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 37eab02840f088cc77744388e8a1c7f07b0e92dd
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54242984"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58771237"
 ---
 # <a name="deliveryoptimizationmaxcachesizeabsolute-resource-type"></a>deliveryOptimizationMaxCacheSizeAbsolute 资源类型
 
@@ -29,7 +29,7 @@ ms.locfileid: "54242984"
 |属性|类型|说明|
 |:---|:---|:---|
 |maximumCacheSizeInGtes|Int64|指定传递优化缓存的最大大小（以 GB 为单位）。 有效值为 0 到 4294967295
-值为 0 (零) 表示"无限制"缓存。 传递优化将在设备磁盘空间不足时清除缓存。 有效值为 0 到 4294967295|
+值 0 (零) 表示"无限制"缓存。 传递优化将在设备磁盘空间不足时清除缓存。 有效值为 0 到 4294967295|
 
 ## <a name="relationships"></a>关系
 无
@@ -47,7 +47,6 @@ ms.locfileid: "54242984"
   "maximumCacheSizeInGigabytes": 1024
 }
 ```
-
 
 
 

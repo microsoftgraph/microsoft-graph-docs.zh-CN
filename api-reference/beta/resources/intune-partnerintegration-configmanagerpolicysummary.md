@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c14e64fb528d5b62ce172d6dc4e85704422ea1f5a74ef0f012b8e0d48b6f6cb8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2cdb8393bd791af124232c2be3b35ede171bcf50
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54224479"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58805301"
 ---
 # <a name="configmanagerpolicysummary-resource-type"></a>configManagerPolicySummary 资源类型
 
@@ -53,7 +53,6 @@ ConfigManager 策略摘要。
   "enforcedDeviceCount": 1024
 }
 ```
-
 
 
 

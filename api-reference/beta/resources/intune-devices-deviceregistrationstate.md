@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7197e541b46cc3f63340ee804f126a14d862283c616a1baf980c81725e6b5a87
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1316cd5a239c4251e46dabc397cd1d9fec1b5322
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54197980"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797505"
 ---
 # <a name="deviceregistrationstate-enum-type"></a>deviceRegistrationState 枚举类型
 
@@ -26,14 +26,13 @@ ms.locfileid: "54197980"
 |成员|值|说明|
 |:---|:---|:---|
 |notRegistered|0|设备未注册。|
-|registered|2 |设备已注册。|
-|revoked|3 |设备已被阻止、擦除或停用。|
+|registered|2|设备已注册。|
+|revoked|3|设备已被阻止、擦除或停用。|
 |keyConflict|4 |设备存在密钥冲突。|
 |approvalPending|5 |设备正在等待审批。|
 |certificateReset|6 |设备证书已重置。|
 |notRegisteredPendingEnrollment|7 |设备未注册，正在等待注册。|
 |unknown|8 |设备注册状态未知。|
-
 
 
 

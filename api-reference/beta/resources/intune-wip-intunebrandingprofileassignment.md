@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d97eda1fc92ca5979f1712821d5fbc30229a23db0943860b0386a7d1d212d48e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f974c936e8b5c3ad39abfdaaf37a5a3e69bee150
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54209761"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797463"
 ---
 # <a name="intunebrandingprofileassignment-resource-type"></a>intuneBrandingProfileAssignment 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54209761"
 
 此实体包含用于向组分配品牌配置文件的属性。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 intuneBrandingProfileAssignments](../api/intune-wip-intunebrandingprofileassignment-list.md)|[intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md) 集合|列出 [intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md) 对象的属性和关系。|
@@ -60,7 +60,6 @@ ms.locfileid: "54209761"
   }
 }
 ```
-
 
 
 

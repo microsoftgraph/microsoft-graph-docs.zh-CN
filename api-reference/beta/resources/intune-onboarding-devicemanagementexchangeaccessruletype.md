@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 806fe79d71cd482a4e5f9d6d32ad8424c26ba78f74a618dc041fc170ed686255
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c57d74c9f8e3b100c9bc088bd917a17f0f718b27
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54242501"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791450"
 ---
 # <a name="devicemanagementexchangeaccessruletype-enum-type"></a>deviceManagementExchangeAccessRuleType 枚举类型
 
@@ -26,8 +26,7 @@ ms.locfileid: "54242501"
 |成员|值|说明|
 |:---|:---|:---|
 |family|0|设备系列|
-|model|1 |设备的特定型号|
-
+|model|1|设备的特定型号|
 
 
 

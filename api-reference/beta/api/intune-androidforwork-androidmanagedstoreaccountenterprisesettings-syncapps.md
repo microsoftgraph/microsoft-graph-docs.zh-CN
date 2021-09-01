@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fd7ece23b5127ea7849c4346d0a992e785af00130a2a2a4d08e7abd5ae757971
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 61431a290c9e084e4b009bf63282d71334f0b297
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54146137"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785666"
 ---
 # <a name="syncapps-action"></a>syncApps 操作
 
@@ -43,7 +43,7 @@ POST /deviceManagement/androidManagedStoreAccountEnterpriseSettings/syncApps
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -65,7 +65,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/androidManagedStoreAccoun
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

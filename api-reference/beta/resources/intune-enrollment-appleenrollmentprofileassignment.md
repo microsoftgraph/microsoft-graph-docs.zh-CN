@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5e1a065a16c2a7e30a66cff31355fc37bd4b1316f4deb230297d58ad2fd53378
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: add921ec2126c5789f7f96cc5a94f79693a9b03c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54219827"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58805028"
 ---
 # <a name="appleenrollmentprofileassignment-resource-type"></a>appleEnrollmentProfileAssignment 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54219827"
 
 Apple 配置文件的分配。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 appleEnrollmentProfileAssignments](../api/intune-enrollment-appleenrollmentprofileassignment-list.md)|[appleEnrollmentProfileAssignment](../resources/intune-enrollment-appleenrollmentprofileassignment.md) 集合|列出 [appleEnrollmentProfileAssignment](../resources/intune-enrollment-appleenrollmentprofileassignment.md) 对象的属性和关系。|
@@ -60,7 +60,6 @@ Apple 配置文件的分配。
   }
 }
 ```
-
 
 
 

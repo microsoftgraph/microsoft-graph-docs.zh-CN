@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6cd47381a0bc6ac7e29811794a6e722c78a694f476ff32cbddc6bb212c58ca84
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d7cdff7d4f8e505c0a265fbfe3a7f36c50b20ef3
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54217839"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58798284"
 ---
 # <a name="get-iosupdateconfiguration"></a>获取 iosUpdateConfiguration
 
@@ -48,7 +48,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -128,7 +128,6 @@ Content-Length: 1889
   }
 }
 ```
-
 
 
 

@@ -1,18 +1,18 @@
 ---
-title: 删除 windows10XWifiConfiguration
-description: 删除 windows10XWifiConfiguration。
+title: getHealthMetrics 操作
+description: 尚未记录
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 429992fd59cb9ae7e05678b85311e4dcb3fa29c8
+ms.openlocfilehash: ecdace5a02477346ccd0e4643241e7dd2dd4598a
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786416"
+ms.locfileid: "58785558"
 ---
-# <a name="delete-windows10xwificonfiguration"></a>删除 windows10XWifiConfiguration
+# <a name="gethealthmetrics-action"></a>getHealthMetrics 操作
 
 命名空间：microsoft.graph
 
@@ -20,16 +20,16 @@ ms.locfileid: "58786416"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-删除 [windows10XWifiConfiguration](../resources/intune-rapolicy-windows10xwificonfiguration.md)。
+尚未记录
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -37,7 +37,7 @@ ms.locfileid: "58786416"
 }
 -->
 ``` http
-DELETE /deviceManagement/resourceAccessProfiles/{deviceManagementResourceAccessProfileBaseId}
+POST /deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/microsoftTunnelServers/{microsoftTunnelServerId}/getHealthMetrics
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -47,23 +47,52 @@ DELETE /deviceManagement/resourceAccessProfiles/{deviceManagementResourceAccessP
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-请勿提供此方法的请求正文。
+在请求正文中，提供参数的 JSON 表示形式。
+
+下表显示了可用于此操作的参数。
+
+|属性|类型|说明|
+|:---|:---|:---|
+|metricNames|String collection|尚未记录|
+
+
 
 ## <a name="response"></a>响应
-如果成功，此方法返回 `204 No Content` 响应代码。
+如果成功，此操作在响应正文中返回 响应代码和 `200 OK` [keyLongValuePair](../resources/intune-shared-keylongvaluepair.md) 集合。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceManagement/resourceAccessProfiles/{deviceManagementResourceAccessProfileBaseId}
+POST https://graph.microsoft.com/beta/deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/microsoftTunnelServers/{microsoftTunnelServerId}/getHealthMetrics
+
+Content-type: application/json
+Content-length: 55
+
+{
+  "metricNames": [
+    "Metric Names value"
+  ]
+}
 ```
 
 ### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 142
+
+{
+  "value": [
+    {
+      "@odata.type": "microsoft.graph.keyLongValuePair",
+      "name": "Name value",
+      "value": 5
+    }
+  ]
+}
 ```
 
 

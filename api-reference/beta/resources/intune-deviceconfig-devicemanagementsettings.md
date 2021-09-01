@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6ce89a76ee3c4a312eeca85975ce4b4416102fe18c27d1b376db5bb64431ec15
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3329b4e7f3412d62acafdb6a82b5838c9dd93f02
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54206702"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785414"
 ---
 # <a name="devicemanagementsettings-resource-type"></a>deviceManagementSettings 资源类型
 
@@ -28,13 +28,13 @@ ms.locfileid: "54206702"
 |deviceComplianceCheckinThresholdDays|Int32|允许设备无需签入即可保持符合性的天数。|
 |isScheduledActionEnabled|Boolean|是否为规则的计划操作启用此功能。|
 |secureByDefault|Boolean|它为 true 时，如果不存在目标符合性策略，则设备应为不符合。|
-|enhancedJailBreak|布尔值|是否启用功能以用于增强的越狱检测。|
+|enhancedJailBreak|Boolean|是否启用功能以用于增强的越狱检测。|
 |deviceInactivityBeforeRetirementInDay|Int32|当设备在指定的天数内未签入时，可能会删除公司数据，并且设备不会管理。 有效值为 30 至 270|
 |derivedCredentialProvider|[derivedCredentialProviderType](../resources/intune-deviceconfig-derivedcredentialprovidertype.md)|要用于此帐户的派生凭据提供程序。 可取值为：`notConfigured`、`entrustDataCard`、`purebred`、`xTec`、`intercede`。|
-|derivedCredentialUrl|字符串|派生的凭据提供程序自助服务 URI。|
-|androidDeviceAdministratorEnrollmentEnabled|布尔值|属性，用于确定是否为此帐户启用了 Android 设备管理员注册。|
-|ignoreDevicesForUnsupportedSettingsEnabled|布尔值|属性，用于确定是否忽略某些型号的设备上不受支持的合规性设置。|
-|enableLogCollection|布尔值|确定是否应该可以使用日志收集功能。|
+|derivedCredentialUrl|String|派生的凭据提供程序自助服务 URI。|
+|androidDeviceAdministratorEnrollmentEnabled|Boolean|属性，用于确定是否为此帐户启用了 Android 设备管理员注册。|
+|ignoreDevicesForUnsupportedSettingsEnabled|Boolean|属性，用于确定是否忽略某些型号的设备上不受支持的合规性设置。|
+|enableLogCollection|Boolean|确定是否应该可以使用日志收集功能。|
 
 ## <a name="relationships"></a>关系
 无
@@ -61,7 +61,6 @@ ms.locfileid: "54206702"
   "enableLogCollection": true
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fef2a8681b761eee11763a27df1f87b55b7981211d990a42abe8694fe900d957
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cd33016a9ef3a2028eb0ef1c5c18ec8f9f74bd35
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54156770"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789711"
 ---
 # <a name="delete-windowsinformationprotectionnetworklearningsummary"></a>删除 windowsInformationProtectionNetworkLearningSummary
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/windowsInformationProtectionNetworkLearningSummaries/{w
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/windowsInformationProte
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

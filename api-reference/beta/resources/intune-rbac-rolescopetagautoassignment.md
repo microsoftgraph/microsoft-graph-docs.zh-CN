@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d833971305509aeb9b9c049c8617dd924eb36b82cf43b6934f1975832d46974a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 84bcaccc1206bb71e74e197bc7932a7a12ff6361
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54161015"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806003"
 ---
 # <a name="rolescopetagautoassignment-resource-type"></a>roleScopeTagAutoAssignment 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54161015"
 
 包含用于将角色作用域标记自动分配给要应用于设备的组的属性。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 roleScopeTagAutoAssignments](../api/intune-rbac-rolescopetagautoassignment-list.md)|[roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md) 集合|列出 [roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md) 对象的属性和关系。|
@@ -34,7 +34,7 @@ ms.locfileid: "54161015"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
+|id|String|实体的键。 此属性是只读的。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|特定角色作用域标记的自动分配目标。|
 
 ## <a name="relationships"></a>关系
@@ -60,7 +60,6 @@ ms.locfileid: "54161015"
   }
 }
 ```
-
 
 
 

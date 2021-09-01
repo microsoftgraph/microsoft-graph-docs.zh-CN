@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d048e3f977fd8881e18325ee17dffb15a5c20377
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 79f0c0ef1c2c6525114ce4d7f58615c6c168539b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58259172"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786962"
 ---
 # <a name="managementcondition-resource-type"></a>managementCondition 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "58259172"
 
 管理条件是可动态触发的事件，如地理围栏、时间围栏和网络围栏。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 managementConditions](../api/intune-fencing-managementcondition-list.md)|[managementCondition](../resources/intune-fencing-managementcondition.md) 集合|列出 [managementCondition 对象的属性和](../resources/intune-fencing-managementcondition.md) 关系。|
@@ -35,7 +35,7 @@ ms.locfileid: "58259172"
 |id|String|管理条件的唯一标识符。 创建时分配的系统生成值。|
 |唯一名称|String|管理条件的唯一名称。 在管理条件表达式中使用。|
 |displayName|String|管理员定义的管理条件名称。|
-|description|String|管理员定义的管理条件说明。|
+|description|字符串|管理员定义的管理条件说明。|
 |createdDateTime|DateTimeOffset|创建管理条件的时间。 生成的服务器端。|
 |modifiedDateTime|DateTimeOffset|上次修改管理条件的时间。 更新的服务器端。|
 |eTag|String|管理条件的 ETag。 更新的服务器端。|
@@ -69,7 +69,6 @@ ms.locfileid: "58259172"
   ]
 }
 ```
-
 
 
 

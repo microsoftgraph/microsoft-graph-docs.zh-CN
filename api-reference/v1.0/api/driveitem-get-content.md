@@ -6,12 +6,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: 下载 DriveItem 的主要流（文件）的内容。 只能下载具有 file 属性的 driveItem。
 doc_type: apiPageType
-ms.openlocfilehash: 524f9b44f0281be0b5731762b0d7654ae73984c3
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 807738ba265f88c3b6bcda1b5284c3cb02298e74
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786034"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806542"
 ---
 # <a name="download-the-contents-of-a-driveitem"></a>下载 DriveItem 的内容
 
@@ -38,6 +38,7 @@ GET /drives/{drive-id}/items/{item-id}/content
 GET /groups/{group-id}/drive/items/{item-id}/content
 GET /me/drive/root:/{item-path}:/content
 GET /me/drive/items/{item-id}/content
+GET /shares/{shareIdOrEncodedSharingUrl}/driveItem/content
 GET /sites/{siteId}/drive/items/{item-id}/content
 GET /users/{userId}/drive/items/{item-id}/content
 ```

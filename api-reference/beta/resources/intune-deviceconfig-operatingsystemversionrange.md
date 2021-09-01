@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e0915f61edd6ba8566fef42dab26a489333605506419d4adb7db058abf1bea8d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7a57dc5a1c7702cd4e0d2623ac2b0d54571a5d3a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54232774"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58798109"
 ---
 # <a name="operatingsystemversionrange-resource-type"></a>operatingSystemVersionRange 资源类型
 
@@ -27,7 +27,7 @@ ms.locfileid: "54232774"
 |:---|:---|:---|
 |说明|String|此范围的说明 (例如有效 1702 内部版本) |
 |lowestVersion|String|此范围包含的最低包含版本。|
-|highestVersion|字符串|此范围包含的最高包含版本。|
+|highestVersion|String|此范围包含的最高包含版本。|
 
 ## <a name="relationships"></a>关系
 无
@@ -47,7 +47,6 @@ ms.locfileid: "54232774"
   "highestVersion": "String"
 }
 ```
-
 
 
 

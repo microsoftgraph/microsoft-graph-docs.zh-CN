@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a16f7634f0951649ae0a670c48e5598dbbf3c14d0fa1c06751e9d313ffe51f17
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ee7f52df72be0f014bd3b6ad8c08264b20477b2d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54206170"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58790106"
 ---
 # <a name="devicemanagementscript-resource-type"></a>deviceManagementScript 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54206170"
 
 Intune 将为客户提供在已注册的 windows 10 和已加入Azure Active Directory运行其 Powershell 脚本的能力。 脚本可以运行一次或定期运行。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceManagementScripts](../api/intune-shared-devicemanagementscript-list.md)|[deviceManagementScript](../resources/intune-shared-devicemanagementscript.md) 集合|列出 [deviceManagementScript 对象的属性和](../resources/intune-shared-devicemanagementscript.md) 关系。|
@@ -38,17 +38,17 @@ Intune 将为客户提供在已注册的 windows 10 和已加入Azure Active Dir
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|设备管理脚本的唯一标识符。|
-|displayName|String|设备管理脚本的名称。|
-|description|String|设备管理脚本的可选说明。|
+|id|String|设备管理脚本的唯一标识符。|
+|displayName|字符串|设备管理脚本的名称。|
+|description|字符串|设备管理脚本的可选说明。|
 |scriptContent|二进制|脚本内容。|
 |createdDateTime|DateTimeOffset|创建设备管理脚本的日期和时间。 此属性是只读的。|
 |lastModifiedDateTime|DateTimeOffset|上次修改设备管理脚本的日期和时间。 此属性是只读的。|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示执行上下文的类型。 可取值为：`system`、`user`。|
 |enforceSignatureCheck|布尔值|指示是否需要检查脚本签名。|
 |fileName|String|脚本文件名。|
-|roleScopeTagIds|String collection|此 PowerShellScript 实例的范围标记标识列表。|
-|runAs32Bit|布尔值|指示 PowerShell 脚本是否应该作为 32 位运行的值|
+|roleScopeTagIds|字符串集合|此 PowerShellScript 实例的范围标记标识列表。|
+|runAs32Bit|Boolean|指示 PowerShell 脚本是否应该作为 32 位运行的值|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -86,7 +86,6 @@ Intune 将为客户提供在已注册的 windows 10 和已加入Azure Active Dir
   "runAs32Bit": true
 }
 ```
-
 
 
 

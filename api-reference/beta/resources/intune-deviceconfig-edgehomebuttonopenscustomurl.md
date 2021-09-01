@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3e61160451a7e3c5d72c1cb389cbbf78aa5bd760cd127ab2435b088cb8f32b32
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2090e9e0b0e660428f4f7284f4a5e076d4d7fb9b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54209915"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791534"
 ---
 # <a name="edgehomebuttonopenscustomurl-resource-type"></a>edgeHomeButtonOpensCustomURL 资源类型
 
@@ -46,7 +46,6 @@ ms.locfileid: "54209915"
   "homeButtonCustomURL": "String"
 }
 ```
-
 
 
 

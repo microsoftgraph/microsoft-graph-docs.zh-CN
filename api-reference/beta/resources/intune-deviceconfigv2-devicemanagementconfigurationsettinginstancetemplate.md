@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c89efaac6ff65f82c09ed787a9ed879d50e429386e61092021a9aff817a7724a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b4ebc516dc521c022a5b5a5e9eeb460dec3e4497
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54244846"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58782110"
 ---
 # <a name="devicemanagementconfigurationsettinginstancetemplate-resource-type"></a>deviceManagementConfigurationSettingInstanceTemplate 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "54244846"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|settingInstanceTemplateId|字符串|设置实例模板 ID|
+|settingInstanceTemplateId|String|设置实例模板 ID|
 |settingDefinitionId|String|设置定义 ID|
 |isRequired|Boolean|指示策略是否必须指定此设置。|
 
@@ -47,7 +47,6 @@ ms.locfileid: "54244846"
   "isRequired": true
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fd11ce13e39d2c2caf9ee3a910186c7fd9d3e5d00310a9dcd05ecf48931f5ffc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6ba9bae6e18b154a38830dbe0f4d452ed43633a0
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54131295"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804041"
 ---
 # <a name="macoslobapp-resource-type"></a>macOSLobApp 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "54131295"
 
 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 macOSLobApps](../api/intune-apps-macoslobapp-list.md)|[macOSLobApp](../resources/intune-apps-macoslobapp.md) 集合|列出 [macOSLobApp](../resources/intune-apps-macoslobapp.md) 对象的属性和关系。|
@@ -53,7 +53,7 @@ ms.locfileid: "54131295"
 |uploadState|Int32|上载状态。 可能的值是：0 - `Not Ready` 、1 - `Ready` 、2 - `Processing` 。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否将应用分配给至少一个组的值。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|roleScopeTagIds|String collection|此移动应用的范围标记 ID 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|roleScopeTagIds|字符串集合|此移动应用的范围标记 ID 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|子应用具有的依赖项总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersedingAppCount|Int32|此应用直接或间接取代的应用总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersededAppCount|Int32|此应用直接或间接被取代的应用总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
@@ -62,13 +62,13 @@ ms.locfileid: "54131295"
 |size|Int64|总大小，包括所有已上传文件。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |bundleId|String|捆绑包 ID。|
 |minimumSupportedOperatingSystem|[macOSMinimumOperatingSystem](../resources/intune-apps-macosminimumoperatingsystem.md)|最低适用操作系统的值。|
-|buildNumber|String|MacOS 业务线和 LoB () 号。|
+|buildNumber|String|MacOS 业务线 (LoB) 内部版本。|
 |versionNumber|String|MacOS 业务线 (LoB) 版本号。|
 |childApps|[macOSLobChildApp](../resources/intune-apps-macoslobchildapp.md) 集合|此捆绑包中的应用列表|
 |identityVersion|String|标识版本。|
 |md5HashChunkSize|Int32|MD5 哈希的区块大小|
-|md5Hash|String collection|MD5 哈希代码|
-|ignoreVersionDetection|Boolean|控制应用的版本是否将用于检测安装在设备上的应用的布尔值。 对于使用自我更新功能的应用 (macOS 业务) LoB，请设置为 true。|
+|md5Hash|字符串集合|MD5 哈希代码|
+|ignoreVersionDetection|Boolean|控制应用的版本是否将用于检测安装在设备上的应用的布尔值。 对于使用自我更新功能 (macOS (LoB) 设置为 true。|
 |installAsManaged|布尔值|用于控制应用是否将安装为托管应用的布尔值 (macOS 11.0 和其他 PKG) 。|
 
 ## <a name="relationships"></a>关系
@@ -134,7 +134,8 @@ ms.locfileid: "54131295"
     "v10_13": true,
     "v10_14": true,
     "v10_15": true,
-    "v11_0": true
+    "v11_0": true,
+    "v12_0": true
   },
   "buildNumber": "String",
   "versionNumber": "String",
@@ -155,7 +156,6 @@ ms.locfileid: "54131295"
   "installAsManaged": true
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6f4a3e9ff920171d3bb7a214c90d360ed66f58886241099e83df224825647d86
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3a29db7b4be79c3c24a27feddff296f2c70c0f2d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54190680"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58796893"
 ---
 # <a name="installstate-enum-type"></a>installState 枚举类型
 
@@ -26,12 +26,11 @@ ms.locfileid: "54190680"
 |成员|值|说明|
 |:---|:---|:---|
 |notApplicable|0|不适用。|
-|已安装|1 |已安装。|
-|failed|2 |已失败。|
-|notInstalled|3 |未安装。|
+|已安装|1|已安装。|
+|failed|2|失败。|
+|notInstalled|3|未安装。|
 |uninstallFailed|4 |卸载失败。|
 |unknown|5 |未知。|
-
 
 
 

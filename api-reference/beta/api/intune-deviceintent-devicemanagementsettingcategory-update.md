@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 967cc17b592f685284a68745cd9134bb1d22adfaf5a02694b9acdaf3178d0df2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5187c4ceaf0713bee22c1d095bbe3f6abad2865a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54228406"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58780598"
 ---
 # <a name="update-devicemanagementsettingcategory"></a>更新 deviceManagementSettingCategory
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/categories/{deviceManagementSettingCategoryId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,9 +53,9 @@ PATCH /deviceManagement/categories/{deviceManagementSettingCategoryId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|类别 ID|
-|displayName|字符串|类别名称|
-|hasRequiredSetting|布尔值|类别包含所需的顶级设置|
+|id|字符串|类别 ID|
+|displayName|String|类别名称|
+|hasRequiredSetting|Boolean|类别包含所需的顶级设置|
 
 
 
@@ -92,7 +92,6 @@ Content-Length: 193
   "hasRequiredSetting": true
 }
 ```
-
 
 
 

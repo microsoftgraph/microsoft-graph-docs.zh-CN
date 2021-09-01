@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f7857d7652b5d38179d23081279789d9e8f3d20b18e41f0ab1a40459bbdf9cb0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2d452895839c9f0f39fe797bb871ee75a26b1470
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54207710"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58772882"
 ---
 # <a name="list-userpfxcertificates"></a>列出 userPFXCertificates
 
@@ -43,7 +43,7 @@ GET /deviceManagement/userPfxCertificates
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -88,7 +88,6 @@ Content-Length: 784
   ]
 }
 ```
-
 
 
 

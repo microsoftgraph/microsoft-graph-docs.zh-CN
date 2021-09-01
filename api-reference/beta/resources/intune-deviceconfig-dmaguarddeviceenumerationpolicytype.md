@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f6899594f226c7d5515d79464d9c80e7a90a2f84c40196804e2015fb832369f5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a13e7e50696d834440aa02bb16be7b0fcf00db61
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54124757"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58798411"
 ---
 # <a name="dmaguarddeviceenumerationpolicytype-enum-type"></a>dmaGuardDeviceEnumerationPolicyType 枚举类型
 
@@ -26,9 +26,8 @@ DmaGuardDeviceEnumerationPolicy 的可能值。
 |成员|值|说明|
 |:---|:---|:---|
 |deviceDefault|0|默认值。 只有在用户解锁屏幕后，才能枚举具有 DMA 重新映射不兼容驱动程序的设备。|
-|blockAll|1 |具有 DMA 重新映射不兼容驱动程序的设备将始终不允许启动和执行 DMA。|
-|allowAll|2 |将随时枚举所有支持 DMA 的外部 PCIe 设备。|
-
+|blockAll|1|具有 DMA 重新映射不兼容驱动程序的设备将始终不允许启动和执行 DMA。|
+|allowAll|2|将随时枚举所有支持 DMA 的外部 PCIe 设备。|
 
 
 

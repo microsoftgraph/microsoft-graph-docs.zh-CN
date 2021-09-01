@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e5b18520b50fe486060f016798b89d6a77bddcfce4ff4a65630ef0c80c12017c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fe127600000f765c5d37714aa7ee09e0a2643e74
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54226292"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58788967"
 ---
 # <a name="devicemanagementconfigurationsetting-resource-type"></a>deviceManagementConfigurationSetting 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54226292"
 
 在策略中设置实例
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceManagementConfigurationSettings](../api/intune-deviceconfigv2-devicemanagementconfigurationsetting-list.md)|[deviceManagementConfigurationSetting](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md) 集合|列出 [deviceManagementConfigurationSetting](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md) 对象的属性和关系。|
@@ -271,7 +271,6 @@ ms.locfileid: "54226292"
   }
 }
 ```
-
 
 
 

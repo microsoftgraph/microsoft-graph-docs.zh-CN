@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f4c3d98660ffdf28b291fc4e5547f572a5ba907b2c2c9712623cbba718807a63
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b60102b1139bc1c869082016afb1436bcf061b94
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54219974"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785736"
 ---
 # <a name="windows10vpnproxyserver-resource-type"></a>windows10VpnProxyServer 资源类型
 
@@ -31,7 +31,7 @@ VPN 代理服务器。
 |automaticConfigurationScriptUrl|String|代理的自动配置脚本 URL。 继承自 [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
 |address|String|地址。 继承自 [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
 |端口|Int32|端口。 有效值 0 至 65535 继承自 [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
-|bypassProxyServerForLocalAddress|布尔值|对于本地地址，绕过代理服务器。|
+|bypassProxyServerForLocalAddress|Boolean|对于本地地址，绕过代理服务器。|
 
 ## <a name="relationships"></a>关系
 无
@@ -52,7 +52,6 @@ VPN 代理服务器。
   "bypassProxyServerForLocalAddress": true
 }
 ```
-
 
 
 

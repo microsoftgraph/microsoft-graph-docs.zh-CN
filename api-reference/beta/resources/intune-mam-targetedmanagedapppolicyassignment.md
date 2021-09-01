@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1fa965c071737805b41005c6753a46617134db8da1b17e7fbde13c339270edd7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 955740966e9d4b4d0bf1f6abc1dd34be629a47e0
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54253465"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803985"
 ---
 # <a name="targetedmanagedapppolicyassignment-resource-type"></a>targetedManagedAppPolicyAssignment 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54253465"
 
 组或应用的部署类型。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 targetedManagedAppPolicyAssignments](../api/intune-mam-targetedmanagedapppolicyassignment-list.md)|[targetedManagedAppPolicyAssignment](../resources/intune-mam-targetedmanagedapppolicyassignment.md) 集合|列出 [targetedManagedAppPolicyAssignment](../resources/intune-mam-targetedmanagedapppolicyassignment.md) 对象的属性和关系。|
@@ -36,7 +36,7 @@ ms.locfileid: "54253465"
 |id|String|Id|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|部署到组或应用的标识符|
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|用于部署到组、直接或直接/策略集的资源类型。 可取值为：`direct`、`policySets`。|
-|sourceId|字符串|用于部署到组的资源的标识符|
+|sourceId|String|用于部署到组的资源的标识符|
 
 ## <a name="relationships"></a>关系
 无
@@ -63,7 +63,6 @@ ms.locfileid: "54253465"
   "sourceId": "String"
 }
 ```
-
 
 
 

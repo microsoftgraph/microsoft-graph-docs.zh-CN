@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5929574b268633630c897d7e944cffc5158e187a6729f1acd900144f0fceb4ed
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 417908e82257bb823d8d4e93d0c96cb846c5e5ed
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54224570"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58782936"
 ---
 # <a name="variablemanagementconditionexpression-resource-type"></a>variableManagementConditionExpression 资源类型
 
@@ -46,7 +46,6 @@ ms.locfileid: "54224570"
   "managementConditionId": "String"
 }
 ```
-
 
 
 
