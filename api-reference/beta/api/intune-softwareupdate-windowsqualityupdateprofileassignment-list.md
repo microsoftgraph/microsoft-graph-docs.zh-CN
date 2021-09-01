@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 79b383bab667edb8cbd3a2480b6ee9c9f2ca76f801c4c3ecbd1d34e4e3ec8092
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c1bbf16a77a5983e243e776a5efe87130b0413aa
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54122913"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58798439"
 ---
 # <a name="list-windowsqualityupdateprofileassignments"></a>列出 windowsQualityUpdateProfileAssignments
 
@@ -43,7 +43,7 @@ GET /deviceManagement/windowsQualityUpdateProfiles/{windowsQualityUpdateProfileI
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -81,7 +81,6 @@ Content-Length: 454
   ]
 }
 ```
-
 
 
 

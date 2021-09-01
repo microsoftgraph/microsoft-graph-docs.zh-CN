@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6a16c0e092e89f0e68988d30999ebfd0f24fb1f9fb2f73dd66fdfcd563dc8d35
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 842e6b171b5a82a163c6f9aa578ef9cbb869dc6b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54164123"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58796830"
 ---
 # <a name="windows10xcustomsubjectalternativename-resource-type"></a>windows10XCustomSubjectAlternativeName 资源类型
 
@@ -45,7 +45,6 @@ SCEP 或 PFX 创建 (身份验证证书的基本配置文件)
   "name": "String"
 }
 ```
-
 
 
 

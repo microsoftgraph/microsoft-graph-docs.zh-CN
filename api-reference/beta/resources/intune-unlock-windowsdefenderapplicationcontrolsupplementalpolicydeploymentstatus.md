@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 01acfd4848732213e6fc4121209684dc021f1450a5223e6b7f17d9f9b62b1483
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e7a7c52faf85a807027b3f73076680ed3d1609a9
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54181067"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58782887"
 ---
 # <a name="windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus-resource-type"></a>windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54181067"
 
 包含设备 WindowsDefenderApplicationControl 补充策略的部署状态的属性。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 windowsDefenderApplicationControlSupplementalPolicyDeploymentStatuses](../api/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus-list.md)|[windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus.md) 集合|列出 [windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus.md) 对象的属性和关系。|
@@ -43,7 +43,7 @@ ms.locfileid: "54181067"
 |deploymentStatus|[windowsDefenderApplicationControlSupplementalPolicyStatuses](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicystatuses.md)|策略的部署状态。 可取值为：`unknown`、`success`、`tokenError`、`notAuthorizedByToken`、`policyNotFound`。|
 |userName|String|此设备的用户的名称。|
 |userPrincipalName|字符串|用户主体名称。|
-|policyVersion|字符串|WindowsDefenderApplicationControl 补充策略的可读版本。|
+|policyVersion|String|WindowsDefenderApplicationControl 补充策略的可读版本。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -73,7 +73,6 @@ ms.locfileid: "54181067"
   "policyVersion": "String"
 }
 ```
-
 
 
 

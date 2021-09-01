@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fc21506b28f66ad481d44c55214801ec060197889a5b64e6d8f68f0bf7ea9829
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: de13f32fcf4c45c89154fe25b96909193c10522e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54253151"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804874"
 ---
 # <a name="win32lobapppowershellscriptdetection-resource-type"></a>win32LobAppPowerShellScriptDetection 资源类型
 
@@ -28,9 +28,9 @@ ms.locfileid: "54253151"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|enforceSignatureCheck|布尔值|指示是否强制执行签名检查的值|
-|runAs32Bit|布尔值|指示此脚本是否应该作为 32 位运行的值|
-|scriptContent|String|base64 编码的脚本内容，用于检测 Win32 业务线 (LoB) 应用|
+|enforceSignatureCheck|Boolean|指示是否强制执行签名检查的值|
+|runAs32Bit|Boolean|指示此脚本是否应该作为 32 位运行的值|
+|scriptContent|String|base64 编码脚本内容，用于检测 Win32 业务线 (LoB) 应用|
 
 ## <a name="relationships"></a>关系
 无
@@ -50,7 +50,6 @@ ms.locfileid: "54253151"
   "scriptContent": "String"
 }
 ```
-
 
 
 

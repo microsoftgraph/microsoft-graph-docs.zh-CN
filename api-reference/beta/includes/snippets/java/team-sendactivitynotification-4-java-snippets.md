@@ -1,44 +1,41 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 0b2d595c2c7e838b680138d3a8c1c6bd6e0913ff
-ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
+ms.openlocfilehash: 935edaf03a85e1cdad7947415fbffb76467154ded129955ee7e2c56dee082f36
+ms.sourcegitcommit: 24d0ea8e2bcb54c2f397133460c3d26fb0ba705f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53317120"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "58785470"
 ---
 ```java
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 TeamworkActivityTopic topic = new TeamworkActivityTopic();
-topic.source = TeamworkActivityTopicSource.ENTITY_URL;
-topic.value = "https://graph.microsoft.com/beta/teams/e8bece96-d393-4b9b-b8da-69cedef1a7e7";
+topic.source = TeamworkActivityTopicSource.TEXT;
+topic.value = "Deployment Approvals Channel";
+topic.webUrl = "https://teams.microsoft.com/l/message/19:448cfd2ac2a7490a9084a9ed14cttr78c@thread.skype/1605223780000?tenantId=c8b1bf45-3834-4ecf-971a-b4c755ee677d&groupId=d4c2a937-f097-435a-bc91-5c1683ca7245&parentMessageId=1605223771864&teamName=Approvals&channelName=Azure%20DevOps&createdTime=1605223780000";
 
-String activityType = "pendingFinanceApprovalRequests";
+String activityType = "deploymentApprovalRequired";
 
 ItemBody previewText = new ItemBody();
-previewText.content = "Internal spending team has a pending finance approval requests";
-
-TeamMembersNotificationRecipient recipient = new TeamMembersNotificationRecipient();
-recipient.teamId = "e8bece96-d393-4b9b-b8da-69cedef1a7e7";
+previewText.content = "New deployment requires your approval";
 
 LinkedList<KeyValuePair> templateParametersList = new LinkedList<KeyValuePair>();
 KeyValuePair templateParameters = new KeyValuePair();
-templateParameters.name = "pendingRequestCount";
-templateParameters.value = "5";
+templateParameters.name = "deploymentId";
+templateParameters.value = "6788662";
 
 templateParametersList.add(templateParameters);
 
-graphClient.teams("e8bece96-d393-4b9b-b8da-69cedef1a7e7")
-    .sendActivityNotification(TeamSendActivityNotificationParameterSet
+graphClient.users("{userId}").teamwork()
+    .sendActivityNotification(UserTeamworkSendActivityNotificationParameterSet
         .newBuilder()
         .withTopic(topic)
         .withActivityType(activityType)
         .withChainId(null)
         .withPreviewText(previewText)
         .withTemplateParameters(templateParametersList)
-        .withRecipient(recipient)
         .build())
     .buildRequest()
     .post();

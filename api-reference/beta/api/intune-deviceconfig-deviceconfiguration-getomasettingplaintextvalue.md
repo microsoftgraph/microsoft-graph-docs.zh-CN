@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 00e9c4cb76d04d545d0c00f11de507441ac352fe182b40043586a6802a847d42
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ca7cf22a3a30bcab17acd3e9ee577dddc9e25a22
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54123515"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58815027"
 ---
 # <a name="getomasettingplaintextvalue-function"></a>getOmaSettingPlainTextValue 函数
 
@@ -45,7 +45,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -80,7 +80,6 @@ Content-Length: 57
   "value": "Get Oma Setting Plain Text Value value"
 }
 ```
-
 
 
 

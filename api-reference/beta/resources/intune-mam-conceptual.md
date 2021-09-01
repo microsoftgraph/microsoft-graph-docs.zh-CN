@@ -1,15 +1,15 @@
 ---
 title: 使用 Microsoft Intune 管理移动应用 - Microsoft Graph API
-description: 列出与租户组织的移动应用Graph MAM (MAM)  (相关的适用于 Intune) 的 Microsoft) API。
+description: 列出适用于 Intune Graph的 Microsoft (API) 与租户组织的移动应用管理 (MAM) 相关的 REST 应用程序。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 3181c9b4ed2fb287310a0286f276ff2dcac44c5d
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: de457279a525e74855ce9c05d98ff72beb1546dc
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58262184"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58796486"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>如何通过 Microsoft Intune 保护公司的应用数据
 
@@ -21,7 +21,7 @@ ms.locfileid: "58262184"
 
 Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢失。
 
-你可以使用 Intune 应用保护策略帮助保护公司的数据。 由于 Intune 应用保护策略可以独立于任何移动设备管理 (MDM) 解决方案使用，因此，你可以使用它在设备管理解决方案中注册设备或不注册设备来保护公司数据。 通过实现应用级策略，既可以限制对公司资源的访问，也可以将数据保留在 IT 部门的范围之内。
+你可以使用 Intune 应用保护策略帮助保护公司的数据。 由于 Intune 应用保护策略可以独立于任何移动设备管理 (MDM) 解决方案使用，因此你可以使用它在设备管理解决方案中注册设备或不注册设备来保护公司的数据。 通过实现应用级策略，既可以限制对公司资源的访问，也可以将数据保留在 IT 部门的范围之内。
 
 以下 Graph 资源可用于在 Intune 中管理应用保护策略：
 

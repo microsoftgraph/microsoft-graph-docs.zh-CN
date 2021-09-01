@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 764afcb12275259d250aed2e5732fdf6ca998b4bf7ed17d2b3d939b3c4160412
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9731c46e9ae80f346bef29d951f4e430d76743f3
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54239446"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58815076"
 ---
 # <a name="devicemanagementconfigurationstringsettingvaluedefinition-resource-type"></a>deviceManagementConfigurationStringSettingValueDefinition 资源类型
 
@@ -29,10 +29,10 @@ ms.locfileid: "54239446"
 |属性|类型|说明|
 |:---|:---|:---|
 |format|[deviceManagementConfigurationStringFormat](../resources/intune-deviceconfigv2-devicemanagementconfigurationstringformat.md)|预定义的字符串格式。 可能的值是 `none` `email` `guid` ：、、、、、、、、、、 `ip` `base64` `url` `version` `xml` `date` `time` `binary` `regEx` `json` `dateTime` `surfaceHub` 。|
-|inputValidationSchema|字符串|输入字符串应匹配的正则表达式或任何 xml 或 json 架构|
+|inputValidationSchema|String|输入字符串应匹配的正则表达式或任何 xml 或 json 架构|
 |maximumLength|Int64|字符串的最大长度。 有效值为 0 到 87516|
 |minimumLength|Int64|字符串的最小长度。 有效值为 0 到 87516|
-|isSecret|布尔值|指定是否需要将设置视为机密。 设置"是"将在传输中和处于其余状态进行加密，并且将在 UX 中表示时显示为星号。|
+|isSecret|Boolean|指定是否需要将设置视为机密。 设置标记为"是"的内容将在传输中和处于其余状态时进行加密，并且将在 UX 中表示时显示为星号。|
 
 ## <a name="relationships"></a>关系
 无
@@ -54,7 +54,6 @@ ms.locfileid: "54239446"
   "isSecret": true
 }
 ```
-
 
 
 

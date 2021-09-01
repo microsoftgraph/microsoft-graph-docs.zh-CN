@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 7679ab0e74f77961e975ae1d46877cde79a7890b
-ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
+ms.openlocfilehash: 7c8e37f1ce6d802e303566e72e600471bd796118
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58490565"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58796178"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -433,10 +433,13 @@ _Application.ReadWrite.OwnedBy_ 权限允许与 _Application.ReadWrite.All_ 相�
 |权限    |显示字符串   |说明 |需经过管理员同意 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 |_CallRecords.Read.All_|读取所有通话记录|允许应用在没有用户登录的情况下读取所有通话和联机会议的通话记录。|是|
+|_CallRecord-PstnCalls.Read.All_|读取 PSTN 并直接路由呼叫日志数据|在没有已登录用户的情况下，允许应用读取所有 PSTN 和直接路由通话日志数据。|是|
 
 ### <a name="remarks"></a>备注
 
 _CallRecords.Read.All_ 权限为组织内每次通话和联机会议（包括与外部电话号码的通话）授权 [callRecords](/graph/api/resources/callrecords-callrecord) 的特权访问。 这包括与参与呼叫的人员有关的潜在敏感详细信息，以及与这些通话和会议相关的、可用于网络疑难解答的技术信息（IP地址、设备详细信息和其他网络信息）。
+
+_CallRecord-PstnCalls.Read.All_ 权限授予应用程序访问 [PSTN（通话套餐）](/graph/api/callrecords-callrecord-getpstncalls)和 [直接路由](/graph/api/callrecords-callrecord-getdirectroutingcalls)呼叫日志的权限。 这包括与用户相关的潜在敏感信息以及与外部电话号码的通话。
 
 > **重要说明：** 应谨慎为应用程序授予这些权限。 通话记录可提供业务运营的见解，因此可能成为恶意参与者的目标。 仅为你信任的应用程序授予这些权限，以满足你的数据保护要求。
 
@@ -451,6 +454,7 @@ _CallRecords.Read.All_ 权限为组织内每次通话和联机会议（包括与
 * _CallRecords.Read.All_：检索通话记录 (`GET /v1.0/communications/callRecords/{id}`)。
 * _CallRecords.Read.All_：订阅新的通话记录 (`POST /v1.0/subscriptions`)。
 * _CallRecords.Read.All_：检索指定时间范围 (`GET /v1.0/communications/callRecords/microsoft.graph.callRecords.getDirectRoutingCalls(fromDateTime={start date and time),toDateTime={end date and time))`) 内的直接路由通话记录。
+* _CallRecord-PstnCalls.Read.All_：检索指定时间范围 (`GET /v1.0/communications/callRecords/microsoft.graph.callRecords.getPstnCalls(fromDateTime={start date and time),toDateTime={end date and time))`) 内的 PSTN 通话记录
 
 有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
 
@@ -564,6 +568,7 @@ _CallRecords.Read.All_ 权限为组织内每次通话和联机会议（包括与
 | _OnlineMeeting.ReadBasic.Chat_   | 读取与此聊天关联的会议的基本属性。 | 允许应用在没有登录用户的情况下读取与此聊天关联的会议的基本属性（例如名称、日程安排、组织者和加入链接）。 |否 | 否 |
 | _Calls.AccessMedia.Chat_         | 访问与此聊天或会议关联的通话中的媒体流。                                    | 允许应用在没有登录用户的情况下访问与此聊天或会议关联的通话中的媒体流。 |否 | 否 |
 | _Calls.JoinGroupCalls.Chat_         | 加入与此聊天或会议关联的通话。                                    | 允许应用在没有登录用户的情况下加入与此聊天或会议关联的通话。 |否 | 否 |
+| _TeamsActivity.Send.Chat_        | 向此聊天中的用户发送活动源通知。       | 允许此应用在没有登录用户的情况下，在此聊天中用户的团队合作活动源中创建新通知。 | 否 | 否 |
 
 >[!NOTE]
 > 目前，这些权限仅在 beta 版本的 Microsoft Graph 中受支持。
@@ -1150,7 +1155,7 @@ _IdentityUserFlow.Read.All_ 和 _IdentityUserFlow.ReadWrite.ALL_ 仅适用于工
 |_DeviceManagementServiceConfig.Read.All_ | 读取 Microsoft Intune 配置 | 允许应用读取 Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 | 否 |
 |_DeviceManagementServiceConfig.ReadWrite.All_ | 读取和写入 Microsoft Intune 配置 | 允许应用读取和写入 Microsoft Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 | 否 |
 
-### <a name="remarks"></a>说明
+### <a name="remarks"></a>注解
 
 > **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户 [正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
@@ -1306,7 +1311,7 @@ _Member.Read.Hidden_ 仅对工作或学校帐户有效。
 | _Notes.ReadWrite.All_ |    读取和写入所有 OneNote 笔记本 | 允许应用无需具有已登录用户即可读取、共享和修改组织中的所有 OneNote 笔记本。| 是 |
 
 
-### <a name="remarks"></a>说明
+### <a name="remarks"></a>注解
 _Notes.Read.All_ 和 _Notes.ReadWrite.All_ 仅适用于工作或学校帐户。所有其他权限对于 Microsoft 帐户和工作或学校帐户均有效。
 
 通过 _Notes.Create_ 权限，应用可以查看已登录用户的 OneNote 笔记本层次结构，并创建 OneNote 内容（笔记本、分区组、分区、页面等）。
@@ -2067,6 +2072,7 @@ _任务_ 权限用于控制对微软待办任务和 Outlook 任务的访问权�
 | _Member.Read.Group_ | 读取此组的成员。| 在没有已登录用户的情况下读取此团队的成员。 |否 | 否 |
 | _Owner.Read.Group_| 读取此组的所有者。 | 在没有已登录用户的情况下读取此团队的所有者。 |否 | 否 |
 | _File.Read.Group_| 读取此团队的文件和文件夹。 | **有限支持** <br/> （预览）在没有登录用户的情况下读取此团队的文件和文件夹。 | 否 | 否 |
+| _TeamsActivity.Send.Group_| 向此团队中的用户发送活动源通知。 | 允许应用在没有登录用户的情况下，在此团队中用户的团队合作活动源中创建新通知。 | 否 | 否 |
 
 ## <a name="teams-settings-permissions"></a>Teams 设置权限
 

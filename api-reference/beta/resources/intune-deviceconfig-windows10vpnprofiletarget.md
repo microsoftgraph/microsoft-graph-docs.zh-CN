@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 451e2cf62688d47afd9100cc3cf28ccbc89d5acb51e1639cb057cf11890c92e4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c92d68ddfc728b1bce2c1a444e09ec910ddae3ae
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54122521"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786675"
 ---
 # <a name="windows10vpnprofiletarget-enum-type"></a>windows10VpnProfileTarget 枚举类型
 
@@ -26,9 +26,8 @@ Windows 10VPN 配置文件目标类型。
 |成员|值|说明|
 |:---|:---|:---|
 |用户|0|用户目标 VPN 配置文件。|
-|设备|1 |设备目标 VPN 配置文件。|
-|autoPilotDevice|2 |AutoPilot 设备目标 VPN 配置文件。|
-
+|设备|1|设备目标 VPN 配置文件。|
+|autoPilotDevice|2|AutoPilot 设备目标 VPN 配置文件。|
 
 
 

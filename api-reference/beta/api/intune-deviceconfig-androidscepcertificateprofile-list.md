@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ff73ba1abce7019e0ed1e8b2488f63c33097e9d9c5e2f7ada6f41156cd4bd903
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e22b26f62ca506ac3415e0f7ae8f7515b3713054
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54220746"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789444"
 ---
 # <a name="list-androidscepcertificateprofiles"></a>列出 androidScepCertificateProfiles
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -127,7 +127,6 @@ Content-Length: 2160
   ]
 }
 ```
-
 
 
 

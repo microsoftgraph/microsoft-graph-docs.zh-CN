@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9fb67c3887887bb96f992d5828d9a569a4414778973191f9044db8ea8f7d1925
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3a3d72ef68c4c4ea4547bb40a50900ba08bd8d56
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54215123"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58799197"
 ---
 # <a name="ratinggermanytelevisiontype-enum-type"></a>ratingGermanyTelevisionType 枚举类型
 
@@ -26,13 +26,12 @@ ms.locfileid: "54215123"
 |成员|值|说明|
 |:---|:---|:---|
 |allAllowed|0|默认值，允许所有电视显示内容|
-|allBlocked|1 |不允许任何电视展示内容|
-|general|2 |Ab 0 Jahren，没有年龄限制|
-|agesAbove6|3 |Ab 6 Jahren， ages 6 and older|
+|allBlocked|1|不允许任何电视展示内容|
+|general|2|Ab 0 Jahren，没有年龄限制|
+|agesAbove6|3|Ab 6 Jahren， ages 6 and older|
 |agesAbove12|4 |Ab 12 Jahren， ages 12 and older|
 |agesAbove16|5 |Ab 16 Jahren， ages 16 and older|
 |一些|6 |Ab 18 Jahren，仅成人|
-
 
 
 

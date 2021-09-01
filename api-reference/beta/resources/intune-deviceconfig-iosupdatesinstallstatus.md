@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2b0ff49bba3fe021bb9128af237220988e91630570166c116b737efc7a29048f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 55ed13a41607ffcc37ba8884ab28dfd3fa8f7278
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54215158"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820903"
 ---
 # <a name="iosupdatesinstallstatus-enum-type"></a>iosUpdatesInstallStatus 枚举类型
 
@@ -23,12 +23,12 @@ ms.locfileid: "54215158"
 尚未记录
 
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |success|0|尚未记录|
-|可用|1 |尚未记录|
-|idle|2 |尚未记录|
-|unknown|3 |尚未记录|
+|可用|1|尚未记录|
+|idle|2|尚未记录|
+|unknown|3|尚未记录|
 |mdmClientCrashed|-2016336109|尚未记录|
 |timeout|-2016333898|尚未记录|
 |下载|-2016330712|尚未记录|
@@ -47,7 +47,6 @@ ms.locfileid: "54215158"
 |updateError|-2016330697|尚未记录|
 |deviceOsHigherThanDesiredOsVersion|-2016330696|尚未记录|
 |updateScanFailed|-2016324062|尚未记录|
-
 
 
 

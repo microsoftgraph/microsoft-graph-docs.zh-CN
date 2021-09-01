@@ -1,18 +1,18 @@
 ---
-title: keyValuePair 资源类型
-description: 用于存储自定义设置的键值对
-author: dougeby
+title: officeConfigurationAssignmentTarget 资源类型
+description: Office客户端配置分配目标。
 localization_priority: Normal
+author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: dc609905c5163dd53c3dff58249a15ccd20304e5
+ms.openlocfilehash: 18da69fbbf6eb19a1ab7791195b2c74a4d14c2ac
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58782558"
+ms.locfileid: "58813661"
 ---
-# <a name="keyvaluepair-resource-type"></a>keyValuePair 资源类型
+# <a name="officeconfigurationassignmenttarget-resource-type"></a>officeConfigurationAssignmentTarget 资源类型
 
 命名空间：microsoft.graph
 
@@ -20,13 +20,11 @@ ms.locfileid: "58782558"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-用于存储自定义设置的键值对
+Office客户端配置分配目标。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|name|String|此键值对的名称|
-|value|String|此键值对的值|
 
 ## <a name="relationships"></a>关系
 无
@@ -35,14 +33,13 @@ ms.locfileid: "58782558"
 下面是资源的 JSON 表示形式。
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.keyValuePair"
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.officeConfigurationAssignmentTarget"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.keyValuePair",
-  "name": "String",
-  "value": "String"
+  "@odata.type": "#microsoft.graph.officeConfigurationAssignmentTarget"
 }
 ```
 

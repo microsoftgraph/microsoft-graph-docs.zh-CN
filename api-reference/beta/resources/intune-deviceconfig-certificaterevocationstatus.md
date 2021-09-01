@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5e10816d1f61d514a1b2fd0c8a7f6c6815980628d86a7c694a05010e887cbfd8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7f6e7635a8893559d4f86f60210aba3b9f08d68b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54226439"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58778743"
 ---
 # <a name="certificaterevocationstatus-enum-type"></a>certificateRevocationStatus 枚举类型
 
@@ -26,11 +26,10 @@ ms.locfileid: "54226439"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|未撤销。|
-|pending|1 |吊销挂起。|
-|issued|2 |颁发的吊销命令。|
-|failed|3 |吊销失败。|
+|pending|1|吊销挂起。|
+|issued|2|颁发的吊销命令。|
+|failed|3|吊销失败。|
 |revoked|4 |已吊销。|
-
 
 
 

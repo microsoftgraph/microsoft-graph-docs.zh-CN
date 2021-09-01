@@ -1,18 +1,18 @@
 ---
-title: connect 操作
+title: createServerLogCollectionRequest 操作
 description: 尚未记录
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4b29bac5ced9a38e6b48bf425f8a33b2061c92a0
+ms.openlocfilehash: 57e396bd2d8edb0cd231a069eff8c42ef642b217
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58798754"
+ms.locfileid: "58805348"
 ---
-# <a name="connect-action"></a>connect 操作
+# <a name="createserverlogcollectionrequest-action"></a>createServerLogCollectionRequest 操作
 
 命名空间：microsoft.graph
 
@@ -27,9 +27,9 @@ ms.locfileid: "58798754"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -37,7 +37,7 @@ ms.locfileid: "58798754"
 }
 -->
 ``` http
-POST /deviceManagement/chromeOSOnboardingSettings/connect
+POST /deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/microsoftTunnelServers/{microsoftTunnelServerId}/createServerLogCollectionRequest
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -53,27 +53,27 @@ POST /deviceManagement/chromeOSOnboardingSettings/connect
 
 |属性|类型|说明|
 |:---|:---|:---|
-|ownerUserPrincipalName|String|尚未记录|
-|serviceAccountCredentials|String|尚未记录|
+|startDateTime|DateTimeOffset|尚未记录|
+|endDateTime|DateTimeOffset|尚未记录|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此操作在响应 `200 OK` 正文中返回 响应[代码和 chromeOSOnboardingStatus。](../resources/intune-chromebooksync-chromeosonboardingstatus.md)
+如果成功，此操作在响应正文中返回 响应代码和 `200 OK` [microsoftTunnelServerLogCollectionResponse。](../resources/intune-mstunnel-microsofttunnelserverlogcollectionresponse.md)
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/chromeOSOnboardingSettings/connect
+POST https://graph.microsoft.com/beta/deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/microsoftTunnelServers/{microsoftTunnelServerId}/createServerLogCollectionRequest
 
 Content-type: application/json
-Content-length: 136
+Content-length: 115
 
 {
-  "ownerUserPrincipalName": "Owner User Principal Name value",
-  "serviceAccountCredentials": "Service Account Credentials value"
+  "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
+  "endDateTime": "2017-01-01T00:03:30.9241974-08:00"
 }
 ```
 
@@ -82,10 +82,20 @@ Content-length: 136
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 29
+Content-Length: 481
 
 {
-  "value": "inprogress"
+  "value": {
+    "@odata.type": "#microsoft.graph.microsoftTunnelServerLogCollectionResponse",
+    "id": "05dcc2e9-c2e9-05dc-e9c2-dc05e9c2dc05",
+    "status": "completed",
+    "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
+    "endDateTime": "2017-01-01T00:03:30.9241974-08:00",
+    "sizeInBytes": 11,
+    "serverId": "Server Id value",
+    "requestDateTime": "2017-01-01T00:03:07.1589002-08:00",
+    "expiryDateTime": "2017-01-01T00:03:32.5199332-08:00"
+  }
 }
 ```
 

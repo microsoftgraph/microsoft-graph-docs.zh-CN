@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fdd64463c520df9ce760bc6013c04614f43faa1aa50bbe004086b987d294a0f2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d13bbddd0541002cc8e0f0a1ffb078929efbcc44
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54183034"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58796612"
 ---
 # <a name="windowskioskapptype-enum-type"></a>windowsKioskAppType 枚举类型
 
@@ -26,10 +26,9 @@ ms.locfileid: "54183034"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|未知。|
-|商店|1 |应用商店应用。|
-|desktop|2 |桌面应用。|
-|aumId|3 |由 AUMID 输入。|
-
+|商店|1|应用商店应用。|
+|desktop|2|桌面应用。|
+|aumId|3|由 AUMID 输入。|
 
 
 

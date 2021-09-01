@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cb0ef084dfc07ae51759637be028427b47324d0ab67427bf82e7cd776444b462
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 40b9ea93723962b74dcc5f6eb6b03c816bc85567
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54153851"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58798509"
 ---
 # <a name="delete-unmanageddevicediscoverytask"></a>删除 unmanagedDeviceDiscoveryTask
 
@@ -43,7 +43,7 @@ DELETE /deviceAppManagement/deviceAppManagementTasks/{deviceAppManagementTaskId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/deviceAppManagementT
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

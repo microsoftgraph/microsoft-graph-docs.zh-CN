@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 35e630422185164c14c86073803b752cd98ccf7f48e3608bd504a760074cf8e4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f2f30468edbb0e09bc641b932d5bb216f22bd74d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54248521"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58794102"
 ---
 # <a name="ioseducertificatesettings-resource-type"></a>iosEduCertificateSettings 资源类型
 
@@ -27,7 +27,7 @@ iOS EDU 的受信任的根证书和 PFX 证书。
 |:---|:---|:---|
 |trustedRootCertificate|二进制|受信任的根证书。|
 |certFileName|String|要显示在 UI 中的文件名。|
-|certificationAuthority|字符串|PKCS 证书颁发机构。|
+|certificationAuthority|String|PKCS 证书颁发机构。|
 |certificationAuthorityName|String|PKCS 证书颁发机构名称。|
 |certificateTemplateName|String|PKCS 证书模板名称。|
 |renewalThresholdPercentage|Int32|证书续订阈值百分比。 有效值为 1 到 99|
@@ -57,7 +57,6 @@ iOS EDU 的受信任的根证书和 PFX 证书。
   "certificateValidityPeriodScale": "String"
 }
 ```
-
 
 
 

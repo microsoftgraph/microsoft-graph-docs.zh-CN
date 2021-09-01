@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e4e658e4289f2d08dbb8552bd3496db6d80a9161d5d065d88a11691061340d29
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 06853e56c8c5620b4290cb385ada5ec938d79a71
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54245112"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58813591"
 ---
 # <a name="androiddeviceownerkioskmodeapppositionitem-resource-type"></a>androidDeviceOwnerKioskModeAppPositionItem 资源类型
 
@@ -49,7 +49,6 @@ ms.locfileid: "54245112"
   }
 }
 ```
-
 
 
 

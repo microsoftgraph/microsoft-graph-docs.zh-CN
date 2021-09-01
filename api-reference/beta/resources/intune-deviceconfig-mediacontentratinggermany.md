@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4898c383a30036dc0444f7073559fd9102ed2eae26a8f14bc703b55a3e43dcde
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 016e83151925ad08f3753c3e033e8a75156aef79
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54122619"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789591"
 ---
 # <a name="mediacontentratinggermany-resource-type"></a>mediaContentRatingGermany 资源类型
 
@@ -45,7 +45,6 @@ ms.locfileid: "54122619"
   "tvRating": "String"
 }
 ```
-
 
 
 

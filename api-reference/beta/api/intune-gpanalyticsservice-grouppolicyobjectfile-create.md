@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 88a53dbd4296f0a09ac88f886112cf77d25133a88a345104db9efc806da06469
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bb03c4a0233b96f8d8aa9f7cda37078742470438
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54195503"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804664"
 ---
 # <a name="create-grouppolicyobjectfile"></a>创建 groupPolicyObjectFile
 
@@ -43,7 +43,7 @@ POST /deviceManagement/groupPolicyObjectFiles
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -99,7 +99,6 @@ Content-Length: 389
   "content": "Content value"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 61e9b4f5467c35c3a61e98153870e9ddbfd40695ed0580b9793713a13d22a4ee
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 58f9b6750795794bb7fed698b3fcaf7e66f687e4
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54158157"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58794355"
 ---
 # <a name="proxieddomain-resource-type"></a>proxiedDomain 资源类型
 
@@ -45,7 +45,6 @@ ms.locfileid: "54158157"
   "proxy": "String"
 }
 ```
-
 
 
 

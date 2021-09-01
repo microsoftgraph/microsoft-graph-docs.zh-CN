@@ -1,18 +1,18 @@
 ---
-title: deviceManagementConfigurationWindowsSettingApplicability 资源类型
-description: 尚未记录
+title: deviceManagementConfigurationExchangeOnlineSettingApplicability 资源类型
+description: 应用设置Exchange Online性
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: db4cfee16526db618e8a9982c9209298c40eee0f
+ms.openlocfilehash: 8b8f3b52f574f9d55679b13af2c3f798dcf6c22a
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58807654"
+ms.locfileid: "58797750"
 ---
-# <a name="devicemanagementconfigurationwindowssettingapplicability-resource-type"></a>deviceManagementConfigurationWindowsSettingApplicability 资源类型
+# <a name="devicemanagementconfigurationexchangeonlinesettingapplicability-resource-type"></a>deviceManagementConfigurationExchangeOnlineSettingApplicability 资源类型
 
 命名空间：microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "58807654"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-尚未记录
+应用设置Exchange Online性
 
 
 继承自 [deviceManagementConfigurationSettingApplicability](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingapplicability.md)
@@ -32,12 +32,6 @@ ms.locfileid: "58807654"
 |平台|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|可以在继承自 [deviceManagementConfigurationSettingApplicability 上应用平台设置](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingapplicability.md)。 可能的值是：`none`、`macOS`、`windows10X`、`windows10`。|
 |deviceMode|[deviceManagementConfigurationDeviceMode](../resources/intune-deviceconfigv2-devicemanagementconfigurationdevicemode.md)|可以在继承自 [deviceManagementConfigurationSettingApplicability](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingapplicability.md)上应用设置的设备模式。 可取值为：`none`、`kiosk`。|
 |technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|可通过继承自 [deviceManagementConfigurationSettingApplicability](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingapplicability.md)部署此设置的技术通道。 可取值为：`none`、`mdm`、`windows10XManagement`、`configManager`、`microsoftSense`、`exchangeOnline`。|
-|configurationServiceProviderVersion|String|云解决方案提供商设置的版本是其中一部分|
-|maximumSupportedVersion|String|支持的最大版本Windows|
-|minimumSupportedVersion|String|支持的最低版本Windows|
-|windowsSkus|[deviceManagementConfigurationWindowsSkus](../resources/intune-deviceconfigv2-devicemanagementconfigurationwindowsskus.md) 集合|设置Windows适用的 SUS 列表|
-|requiresAzureAd|Boolean|AzureAD 设置要求|
-|requiredAzureAdTrustType|[deviceManagementConfigurationAzureAdTrustType](../resources/intune-deviceconfigv2-devicemanagementconfigurationazureadtrusttype.md)|必需属性，类型为 AzureAD 信任。 可取值为：`none`、`azureAdJoined`、`addWorkAccount`、`mdmOnly`。|
 
 ## <a name="relationships"></a>关系
 无
@@ -46,24 +40,16 @@ ms.locfileid: "58807654"
 下面是资源的 JSON 表示形式。
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability"
+  "@odata.type": "microsoft.graph.deviceManagementConfigurationExchangeOnlineSettingApplicability"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+  "@odata.type": "#microsoft.graph.deviceManagementConfigurationExchangeOnlineSettingApplicability",
   "description": "String",
   "platform": "String",
   "deviceMode": "String",
-  "technologies": "String",
-  "configurationServiceProviderVersion": "String",
-  "maximumSupportedVersion": "String",
-  "minimumSupportedVersion": "String",
-  "windowsSkus": [
-    "String"
-  ],
-  "requiresAzureAd": true,
-  "requiredAzureAdTrustType": "String"
+  "technologies": "String"
 }
 ```
 

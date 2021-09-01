@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f046e657bd3c2aa421931b8bf1292b846635bd88ac19ccf2d2d33ec19a093f29
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2f2b383b866a63a96e6861e78b297a6ff7b619a9
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54165755"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795877"
 ---
 # <a name="internetexplorermessagesetting-enum-type"></a>internetExplorerMessageSetting 枚举类型
 
@@ -26,10 +26,9 @@ ms.locfileid: "54165755"
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置。|
-|disabled|1 |已禁用。|
-|enabled|2 |已启用。|
-|keepGoing|3 |KeepGoing。|
-
+|disabled|1|已禁用。|
+|enabled|2|已启用。|
+|keepGoing|3|KeepGoing。|
 
 
 

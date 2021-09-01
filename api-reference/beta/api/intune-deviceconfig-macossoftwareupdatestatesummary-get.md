@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 36f847d747c11c3694af4ad620babd0d0b77318f086869b90bb641df89a9c107
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 00e62628e68a25aaec4565ba7a5f2b1c322f10e9
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54132226"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804195"
 ---
 # <a name="get-macossoftwareupdatestatesummary"></a>获取 macOSSoftwareUpdateStateSummary
 
@@ -46,7 +46,7 @@ GET /deviceManagement/macOSSoftwareUpdateAccountSummaries/{macOSSoftwareUpdateAc
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -83,7 +83,6 @@ Content-Length: 415
   }
 }
 ```
-
 
 
 

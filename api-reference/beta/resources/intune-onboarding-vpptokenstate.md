@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f7df4f078b91a6c42ac4718a30145e1e141d8436bd8932c25780ce678cf2366c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c7addece5e6cf2281e99439c957ceb567a28de73
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54172783"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58790610"
 ---
 # <a name="vpptokenstate-enum-type"></a>vppTokenState 枚举类型
 
@@ -26,12 +26,11 @@ ms.locfileid: "54172783"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|默认状态。|
-|valid|1 |令牌有效。|
-|已过期|2 |令牌已过期。|
-|无效|3 |令牌无效。|
+|valid|1|令牌有效。|
+|已过期|2|令牌已过期。|
+|无效|3|令牌无效。|
 |assignedToExternalMDM|4 |令牌由另一个 MDM 服务管理。|
 |duplicateLocationId|5 |令牌与帐户上另一个令牌的相同位置相关联。|
-
 
 
 

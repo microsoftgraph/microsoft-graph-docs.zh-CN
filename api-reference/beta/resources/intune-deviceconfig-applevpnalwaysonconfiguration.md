@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2acb5d607df4e5a844b44a08d38cb81af7943e1c86a3853e9014329385b81ee8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 38b574bd07e4797a14de2e6061cf45e638ca2b98
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54224780"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787004"
 ---
 # <a name="applevpnalwaysonconfiguration-resource-type"></a>appleVpnAlwaysOnConfiguration 资源类型
 
@@ -26,15 +26,15 @@ MacOS 和 iOS IKEv2 的始终打开 VPN 配置
 |属性|类型|说明|
 |:---|:---|:---|
 |tunnelConfiguration|[vpnTunnelConfigurationType](../resources/intune-deviceconfig-vpntunnelconfigurationtype.md)|确定特定隧道配置应用于的连接。 可取值为：`wifiAndCellular`、`cellular`、`wifi`。|
-|userToggleEnabled|布尔值|允许用户使用 UI 切换 VPN 配置|
+|userToggleEnabled|Boolean|允许用户使用 UI 切换 VPN 配置|
 |voicemailExceptionAction|[vpnServiceExceptionAction](../resources/intune-deviceconfig-vpnserviceexceptionaction.md)|确定是否将语音邮件服务从始终打开的 VPN 连接中排除。 可取值为：`forceTrafficViaVPN`、`allowTrafficOutside`、`dropTraffic`。|
 |airPrintExceptionAction|[vpnServiceExceptionAction](../resources/intune-deviceconfig-vpnserviceexceptionaction.md)|确定是否将 AirPrint 服务从始终打开的 VPN 连接中排除。 可取值为：`forceTrafficViaVPN`、`allowTrafficOutside`、`dropTraffic`。|
 |cellularExceptionAction|[vpnServiceExceptionAction](../resources/intune-deviceconfig-vpnserviceexceptionaction.md)|确定是否将手机网络服务从始终打开的 VPN 连接中排除。 可取值为：`forceTrafficViaVPN`、`allowTrafficOutside`、`dropTraffic`。|
-|allowAllCaptiveNetworkPlugins|布尔值|指定是否应该允许来自所有强制网络插件的流量位于 vpn 之外|
+|allowAllCaptiveNetworkPlugins|Boolean|指定是否应该允许来自所有强制网络插件的流量位于 vpn 之外|
 |allowedCaptiveNetworkPlugins|[specifiedCaptiveNetworkPlugins](../resources/intune-deviceconfig-specifiedcaptivenetworkplugins.md)|确定是否允许所有、部分或任何非本机强制网络应用|
-|allowCaptiveWebSheet|布尔值|确定是否允许来自 Websheet 应用的流量位于 VPN 之外|
+|allowCaptiveWebSheet|Boolean|确定是否允许来自 Websheet 应用的流量位于 VPN 之外|
 |natKeepAliveIntervalInSeconds|Int32|指定通过 VPN 发送网络地址转换保留包的频繁时间（秒）|
-|natKeepAliveOffloadEnable|布尔值|在设备打开时启用 NAT 保持连接信号的硬件卸载|
+|natKeepAliveOffloadEnable|Boolean|在设备打开时启用 NAT 保持连接信号的硬件卸载|
 
 ## <a name="relationships"></a>关系
 无
@@ -66,7 +66,6 @@ MacOS 和 iOS IKEv2 的始终打开 VPN 配置
   "natKeepAliveOffloadEnable": true
 }
 ```
-
 
 
 

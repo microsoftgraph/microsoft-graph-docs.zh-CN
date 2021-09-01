@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1fef9840a12bf398632dd050a0b9b25721055b822bf6d7e7a3f558fc1ae98ee7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 19aa27d8dd020ff77b4f745a16df6bac6f3c084f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54245063"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58793892"
 ---
 # <a name="deliveryoptimizationgroupidoptionstype-enum-type"></a>deliveryOptimizationGroupIdOptionsType 枚举类型
 
@@ -26,11 +26,10 @@ DeliveryOptimizationGroupIdOptionsType 设置的可能值。
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置。|
-|adSite|1 |Active Directory 站点。|
-|authenticatedDomainSid|2 |经过身份验证的域 SID。|
-|dhcpUserOption|3 |DHCP 用户选项。|
+|adSite|1|Active Directory 站点。|
+|authenticatedDomainSid|2|经过身份验证的域 SID。|
+|dhcpUserOption|3|DHCP 用户选项。|
 |dnsSuffix|4 |DNS 后缀。|
-
 
 
 

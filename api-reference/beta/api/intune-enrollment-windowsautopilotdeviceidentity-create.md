@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 62297fa94e4b1841dde3fcfb1a54fb7f023c66c4fdfd9c9704313a1a9dbe623e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8c022a729f41047f609099bcf34a54eb6a23a41f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54131764"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795674"
 ---
 # <a name="create-windowsautopilotdeviceidentity"></a>创建 windowsAutopilotDeviceIdentity
 
@@ -44,7 +44,7 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -57,7 +57,7 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 |id|String|对象的 GUID|
 |deploymentProfileAssignmentStatus|[windowsAutopilotProfileAssignmentStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|autopilot 设备的Windows分配状态。 可取值为：`unknown`、`assignedInSync`、`assignedOutOfSync`、`assignedUnkownSyncState`、`notAssigned`、`pending` 或 `failed`。|
 |deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|配置文件分配 autopilot Windows状态。 可取值为：`none`、`hardwareRequirementsNotMet`、`surfaceHubProfileNotSupported`、`holoLensProfileNotSupported`、`windowsPcProfileNotSupported`。|
-|deploymentProfileAssignedDateTime|DateTimeOffset|autopilot 设备的配置文件Windows时间。|
+|deploymentProfileAssignedDateTime|DateTimeOffset|autopilot 设备的Windows设置时间。|
 |groupTag|字符串|autopilot Windows组标记。|
 |purchaseOrderIdentifier|String|Purchase Order Autopilot Windows标识符。|
 |serialNumber|String|Windows autopilot 设备序列号。|
@@ -66,13 +66,13 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 |model|String|autopilot Windows型号名称。|
 |enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Autopilot 设备的 intune Windows状态。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
 |lastContactedDateTime|DateTimeOffset|Intune Autopilot 设备的上次Windows日期时间。|
-|addressableUserName|String|可地址用户名。|
-|userPrincipalName|字符串|用户主体名称。|
+|addressableUserName|字符串|可地址用户名。|
+|userPrincipalName|String|用户主体名称。|
 |resourceName|String|资源名称。|
 |skuNumber|String|SKU 号|
-|systemFamily|String|系统系列|
+|systemFamily|字符串|系统系列|
 |azureActiveDirectoryDeviceId|String|AAD 设备 ID - 已弃用|
-|azureAdDeviceId|String|AAD 设备 ID|
+|azureAdDeviceId|字符串|AAD 设备 ID|
 |managedDeviceId|String|托管设备 ID|
 |displayName|String|显示名称|
 
@@ -147,7 +147,6 @@ Content-Length: 1126
   "displayName": "Display Name value"
 }
 ```
-
 
 
 

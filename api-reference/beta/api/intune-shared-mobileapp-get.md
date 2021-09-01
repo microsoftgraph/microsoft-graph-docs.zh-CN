@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a2ee7109ce8f7b8cd2651ef1e5027aba53398ddc3a7cd9ef9a00828ae8454111
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4475d06849e6ec8dc1ad652160d4809a79122cb1
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54150904"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58799295"
 ---
 # <a name="get-mobileapp"></a>获取 mobileApp
 
@@ -52,7 +52,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -106,7 +106,6 @@ Content-Length: 949
   }
 }
 ```
-
 
 
 

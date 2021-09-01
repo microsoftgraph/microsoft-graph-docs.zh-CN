@@ -1,18 +1,18 @@
 ---
-title: getComanagedDevicesSummary 函数
+title: requestUpgrade 操作
 description: 尚未记录
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8c7e47e4220a4a53ce13c2fe3293575dea932be7
+ms.openlocfilehash: a924d46a09f20152d2a666fb688785b0ee9190ab
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797997"
+ms.locfileid: "58789270"
 ---
-# <a name="getcomanageddevicessummary-function"></a>getComanagedDevicesSummary 函数
+# <a name="requestupgrade-action"></a>requestUpgrade 操作
 
 命名空间：microsoft.graph
 
@@ -27,9 +27,9 @@ ms.locfileid: "58797997"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -37,7 +37,7 @@ ms.locfileid: "58797997"
 }
 -->
 ``` http
-GET /deviceManagement/getComanagedDevicesSummary
+POST /deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/requestUpgrade
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -50,37 +50,20 @@ GET /deviceManagement/getComanagedDevicesSummary
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此函数在响应正文中返回 响应代码和 `200 OK` [comanagedDevicesSummary。](../resources/intune-devices-comanageddevicessummary.md)
+如果成功，此操作返回 `204 No Content` 响应代码。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/getComanagedDevicesSummary
+POST https://graph.microsoft.com/beta/deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/requestUpgrade
 ```
 
 ### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 379
-
-{
-  "value": {
-    "@odata.type": "microsoft.graph.comanagedDevicesSummary",
-    "inventoryCount": 14,
-    "compliancePolicyCount": 5,
-    "resourceAccessCount": 3,
-    "configurationSettingsCount": 10,
-    "windowsUpdateForBusinessCount": 13,
-    "endpointProtectionCount": 7,
-    "modernAppsCount": 15,
-    "officeAppsCount": 15,
-    "totalComanagedCount": 3
-  }
-}
+HTTP/1.1 204 No Content
 ```
 
 

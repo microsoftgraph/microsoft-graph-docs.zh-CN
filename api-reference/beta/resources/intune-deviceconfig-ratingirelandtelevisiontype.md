@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 10a775317219f6c40a7b2e332061e5106fd8fe8ff3403ce825d6487fcaf111ff
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 26e2224aa02bc9b969165a0809d518700a9326fc
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54236997"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58790890"
 ---
 # <a name="ratingirelandtelevisiontype-enum-type"></a>ratingIrelandTelevisionType 枚举类型
 
@@ -26,13 +26,12 @@ ms.locfileid: "54236997"
 |成员|值|说明|
 |:---|:---|:---|
 |allAllowed|0|默认值，允许所有电视显示内容|
-|allBlocked|1 |不允许任何电视展示内容|
-|general|2 |GA 分类适用于所有受众|
-|children|3 |CH 分类适合子级|
+|allBlocked|1|不允许任何电视展示内容|
+|general|2|GA 分类适用于所有受众|
+|children|3|CH 分类适合子级|
 |youngAdults|4 |YA 分类适合受众|
 |parentalSupervision|5 |PS 分类邀请家长和监护人考虑限制儿童访问|
 |到期|6 |MA 分类适合成人|
-
 
 
 
