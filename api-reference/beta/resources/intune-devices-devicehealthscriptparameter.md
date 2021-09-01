@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2350a5a1e9fcc1212acb531804c12e8d965bcbae68eecb0273c87c7033549148
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ddfd8eb3d251060961429c511114a7ebc1dd7286
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54206401"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58793815"
 ---
 # <a name="devicehealthscriptparameter-resource-type"></a>deviceHealthScriptParameter 资源类型
 
@@ -25,8 +25,8 @@ script 参数的基本属性。
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|name|字符串|参数的名称|
-|description|字符串|参数的说明|
+|name|String|参数的名称|
+|description|String|参数的说明|
 |isRequired|Boolean|参数是否是必需的|
 |applyDefaultValueWhenNotAssigned|布尔值|未分配时是否应用 DefaultValue|
 
@@ -49,7 +49,6 @@ script 参数的基本属性。
   "applyDefaultValueWhenNotAssigned": true
 }
 ```
-
 
 
 

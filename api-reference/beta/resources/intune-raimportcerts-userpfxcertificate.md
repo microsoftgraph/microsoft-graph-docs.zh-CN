@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9873d6e5a17e356ce166a90107bbf74cf8a341411fa8e741d3b989f684e967bc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 92764f6fd5fa717698ae2ed629a80e9035274888
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54242424"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58757893"
 ---
 # <a name="userpfxcertificate-resource-type"></a>userPFXCertificate 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54242424"
 
 封装用户的 PFX 证书所需全部信息的实体。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 userPFXCertificates](../api/intune-raimportcerts-userpfxcertificate-list.md)|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) 集合|列出 [userPFXCertificate 对象的属性和](../resources/intune-raimportcerts-userpfxcertificate.md) 关系。|
@@ -35,16 +35,16 @@ ms.locfileid: "54242424"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|PFX 证书的唯一标识符。|
-|thumbprint|字符串|PFX 证书的 SHA-1 指纹。|
+|thumbprint|String|PFX 证书的 SHA-1 指纹。|
 |intendedPurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|从部署的角度来看，证书的目的。 可取值为：`unassigned`、`smimeEncryption`、`smimeSigning`、`vpn`、`wifi`。|
-|userPrincipalName|字符串|用户主体 PFX 证书的名称。|
+|userPrincipalName|String|用户主体 PFX 证书的名称。|
 |startDateTime|DateTimeOffset|证书的有效期开始日期/时间。|
 |expirationDateTime|DateTimeOffset|证书的有效期过期日期/时间。|
 |providerName|String|用于加密此 blob 的加密提供程序。|
 |keyName|String|提供程序中用于 (blob 的) 的名称。|
 |paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|提供程序在加密/解密期间使用的填充方案。 可取值为：`none`、`pkcs1`、`oaepSha1`、`oaepSha256`、`oaepSha384`、`oaepSha512`。|
 |encryptedPfxBlob|二进制|加密的 PFX blob。|
-|encryptedPfxPassword|字符串|加密的 PFX 密码。|
+|encryptedPfxPassword|String|加密的 PFX 密码。|
 |createdDateTime|DateTimeOffset|导入此 PFX 证书的日期/时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改此 PFX 证书的日期/时间。|
 
@@ -77,7 +77,6 @@ ms.locfileid: "54242424"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

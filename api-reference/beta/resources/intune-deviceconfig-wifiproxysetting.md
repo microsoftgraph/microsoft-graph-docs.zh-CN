@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d856aad4c16b466baf14da21d352e396b04f1e5fddca664685aa3c4677fa44d5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7212ba0b7b55e577a8c642921dfdcf0671e36c61
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54236260"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797885"
 ---
 # <a name="wifiproxysetting-enum-type"></a>wiFiProxySetting 枚举类型
 
@@ -26,9 +26,8 @@ Wi-Fi代理设置。
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|无代理。|
-|手动|1 |通过地址设置端口手动发送代理。|
-|自动|2 |通过 URL 自动设置代理。|
-
+|手动|1|通过地址设置端口手动发送代理。|
+|自动|2|通过 URL 自动设置代理。|
 
 
 

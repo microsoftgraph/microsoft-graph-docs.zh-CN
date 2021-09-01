@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 58b549e640704aa3ca33119f081c170bf62b2476
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 2f5ced205eeedb58d7767190d33de382f59d497b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58262979"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797589"
 ---
 # <a name="create-devicemanagementscript"></a>创建 deviceManagementScript
 
@@ -47,7 +47,7 @@ POST /deviceManagement/deviceManagementScripts
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -59,15 +59,16 @@ POST /deviceManagement/deviceManagementScripts
 |:---|:---|:---|
 |id|String|设备管理脚本的唯一标识符。|
 |displayName|字符串|设备管理脚本的名称。|
-|description|String|设备管理脚本的可选说明。|
+|description|字符串|设备管理脚本的可选说明。|
+|runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|脚本运行的间隔。 如果未定义，脚本将运行一次|
 |scriptContent|二进制|脚本内容。|
 |createdDateTime|DateTimeOffset|创建设备管理脚本的日期和时间。 此属性是只读的。|
 |lastModifiedDateTime|DateTimeOffset|上次修改设备管理脚本的日期和时间。 此属性是只读的。|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示执行上下文的类型。 可取值为：`system`、`user`。|
-|enforceSignatureCheck|布尔值|指示是否需要检查脚本签名。|
+|enforceSignatureCheck|Boolean|指示是否需要检查脚本签名。|
 |fileName|String|脚本文件名。|
-|roleScopeTagIds|String collection|此 PowerShellScript 实例的范围标记标识列表。|
-|runAs32Bit|布尔值|指示 PowerShell 脚本是否应该作为 32 位运行的值|
+|roleScopeTagIds|字符串集合|此 PowerShellScript 实例的范围标记标识列表。|
+|runAs32Bit|Boolean|指示 PowerShell 脚本是否应该作为 32 位运行的值|
 
 
 
@@ -110,9 +111,6 @@ Content-Length: 615
   "id": "59ea4525-4525-59ea-2545-ea592545ea59",
   "displayName": "Display Name value",
   "description": "Description value",
-  "runSchedule": {
-    "@odata.type": "microsoft.graph.runSchedule"
-  },
   "scriptContent": "c2NyaXB0Q29udGVudA==",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
@@ -125,7 +123,6 @@ Content-Length: 615
   "runAs32Bit": true
 }
 ```
-
 
 
 

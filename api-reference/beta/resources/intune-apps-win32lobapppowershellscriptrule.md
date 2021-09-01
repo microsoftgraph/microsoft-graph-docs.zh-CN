@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ac477071846a8a787599915b5261577b2daeda95c0962fb58e4e9f66ffdfe501
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c9239349a92a307a9047318ad9aa109d41a3cf57
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54131225"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789973"
 ---
 # <a name="win32lobapppowershellscriptrule-resource-type"></a>win32LobAppPowerShellScriptRule 资源类型
 
@@ -29,13 +29,13 @@ ms.locfileid: "54131225"
 |属性|类型|说明|
 |:---|:---|:---|
 |ruleType|[win32LobAppRuleType](../resources/intune-apps-win32lobappruletype.md)|指示规则用途的规则类型。 继承自 [win32LobAppRule](../resources/intune-apps-win32lobapprule.md)。 可取值为：`detection`、`requirement`。|
-|displayName|String|规则的显示名称。 如果规则用于检测，则不要指定此值。|
-|enforceSignatureCheck|布尔值|一个值，指示是否强制执行签名检查。|
-|runAs32Bit|布尔值|指示脚本是否应该作为 32 位运行的值。|
+|displayName|String|规则显示名称的项。 如果规则用于检测，则不要指定此值。|
+|enforceSignatureCheck|Boolean|一个值，指示是否强制执行签名检查。|
+|runAs32Bit|Boolean|指示脚本是否应该作为 32 位运行的值。|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|脚本的执行上下文。 如果规则用于检测，则不要指定此值。 脚本检测规则将在与关联的应用安装上下文相同的上下文中运行。 可取值为：`system`、`user`。|
 |scriptContent|String|base64 编码的脚本内容。|
-|operationType|[win32LobAppPowerShellScriptRuleOperationType](../resources/intune-apps-win32lobapppowershellscriptruleoperationtype.md)|脚本输出比较操作类型。 使用 NotConfigured (如果规则用于检测) 则使用默认值。 可取值为：`notConfigured`、`string`、`dateTime`、`integer`、`float`、`version` 或 `boolean`。|
-|operator|[win32LobAppRuleOperator](../resources/intune-apps-win32lobappruleoperator.md)|脚本输出运算符。 使用 NotConfigured (如果规则用于检测) 则使用默认值。 可取值为：`notConfigured`、`equal`、`notEqual`、`greaterThan`、`greaterThanOrEqual`、`lessThan` 或 `lessThanOrEqual`。|
+|operationType|[win32LobAppPowerShellScriptRuleOperationType](../resources/intune-apps-win32lobapppowershellscriptruleoperationtype.md)|脚本输出比较操作类型。 如果规则用于 (，) 使用 NotConfigured 作为默认值。 可取值为：`notConfigured`、`string`、`dateTime`、`integer`、`float`、`version` 或 `boolean`。|
+|operator|[win32LobAppRuleOperator](../resources/intune-apps-win32lobappruleoperator.md)|脚本输出运算符。 如果规则用于 (，) 使用 NotConfigured 作为默认值。 可取值为：`notConfigured`、`equal`、`notEqual`、`greaterThan`、`greaterThanOrEqual`、`lessThan` 或 `lessThanOrEqual`。|
 |comparisonValue|String|脚本输出比较值。 如果规则用于检测，则不指定值。|
 
 ## <a name="relationships"></a>关系
@@ -62,7 +62,6 @@ ms.locfileid: "54131225"
   "comparisonValue": "String"
 }
 ```
-
 
 
 

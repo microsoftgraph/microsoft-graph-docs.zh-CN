@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fbd96830254ea1e146950e7b80742f0edc52f8c2a9a688b3d5d5a9e0bc525604
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 69cd8839687ed85a9e4162906151405e46f28531
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54207647"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786037"
 ---
 # <a name="update-devicemanagementresourceaccessprofileassignment"></a>更新 deviceManagementResourceAccessProfileAssignment
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/resourceAccessProfiles/{deviceManagementResourceAccessPr
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,10 +53,10 @@ PATCH /deviceManagement/resourceAccessProfiles/{deviceManagementResourceAccessPr
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|工作分配的唯一标识符|
+|id|字符串|工作分配的唯一标识符|
 |intent|[deviceManagementResourceAccessProfileIntent](../resources/intune-rapolicy-devicemanagementresourceaccessprofileintent.md)|资源访问配置文件的分配意图。 可取值为：`apply`、`remove`。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|资源访问配置文件的分配目标。|
-|sourceId|字符串|工作分配的源的标识符。|
+|sourceId|String|工作分配的源的标识符。|
 
 
 
@@ -105,7 +105,6 @@ Content-Length: 512
   "sourceId": "Source Id value"
 }
 ```
-
 
 
 

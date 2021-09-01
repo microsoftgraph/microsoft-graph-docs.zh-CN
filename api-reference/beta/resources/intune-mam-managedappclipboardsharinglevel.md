@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8bf20224470da6d1040befc03ff5eb2ead3db0a0c96a4071ebea34111f922966
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7b6bc0cb68b28d154d7674246dd305e451623239
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54248388"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58821099"
 ---
 # <a name="managedappclipboardsharinglevel-enum-type"></a>managedAppClipboardSharingLevel 枚举类型
 
@@ -23,13 +23,12 @@ ms.locfileid: "54248388"
 表示设备剪贴板可以在应用之间共享的级别
 
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |allApps|0|是否允许在所有应用之间共享（托管或不共享）|
-|managedAppsWithPasteIn|1 |允许所有已启用粘贴的托管应用之间共享|
-|managedApps|2 |允许在所有托管应用之间共享|
-|blocked|3 |禁用应用之间的共享|
-
+|managedAppsWithPasteIn|1|允许所有已启用粘贴的托管应用之间共享|
+|managedApps|2|允许在所有托管应用之间共享|
+|blocked|3|禁用应用之间的共享|
 
 
 

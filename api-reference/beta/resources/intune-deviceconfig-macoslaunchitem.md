@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f432d3ea12a8338c343bce61dcc7a6b2d71ebbef2de70b912d0fb3870fc9d904
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3450832825bf6c6696b0395879b8c3a79e4bec3c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54244986"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789641"
 ---
 # <a name="macoslaunchitem-resource-type"></a>macOSLaunchItem 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "54244986"
 |属性|类型|说明|
 |:---|:---|:---|
 |路径|String|启动项的路径。|
-|hide|布尔值|是否隐藏用户和组列表中的项目。|
+|hide|Boolean|是否隐藏用户和组列表中的项目。|
 
 ## <a name="relationships"></a>关系
 无
@@ -45,7 +45,6 @@ ms.locfileid: "54244986"
   "hide": true
 }
 ```
-
 
 
 

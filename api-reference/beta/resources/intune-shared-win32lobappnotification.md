@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1e3018a59d7a1251fe6ede6dbbe6fc18b61c48cb345efa890c46c007c000488c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 207d7a804596e822a566b43019c3b79e641b3131
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54133066"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797477"
 ---
 # <a name="win32lobappnotification-enum-type"></a>win32LobAppNotification 枚举类型
 
@@ -26,9 +26,8 @@ ms.locfileid: "54133066"
 |成员|值|说明|
 |:---|:---|:---|
 |showAll|0|显示所有通知。|
-|showReboot|1 |只显示重启通知并禁止显示其他通知。|
-|hideAll|2 |隐藏所有通知。|
-
+|showReboot|1|只显示重启通知并禁止显示其他通知。|
+|hideAll|2|隐藏所有通知。|
 
 
 

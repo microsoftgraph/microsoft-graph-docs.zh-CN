@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1f6d139c90ba4a34a56183605955c2d536d0ae28b81c98649ddb314bec7a307f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6a19f2b7ffe20954bf34cb01ffb0889c0294f56d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54253682"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58784497"
 ---
 # <a name="devicemanagementconfigurationdependenton-resource-type"></a>deviceManagementConfigurationDependentOn 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "54253682"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|dependentOn|字符串|取决于父设置/父设置选项的标识符|
+|dependentOn|String|取决于父设置/父设置选项的标识符|
 |parentSettingId|String|依赖的父设置/父设置 ID 的标识符|
 
 ## <a name="relationships"></a>关系
@@ -45,7 +45,6 @@ ms.locfileid: "54253682"
   "parentSettingId": "String"
 }
 ```
-
 
 
 

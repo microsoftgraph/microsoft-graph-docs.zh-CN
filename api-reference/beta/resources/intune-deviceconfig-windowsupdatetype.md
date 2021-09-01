@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9d6ab79b8d0320a3830948ef1e2973f158338310849618c47b45cbcc9c20253f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8d052a6f746fb37e936c2eb37126efd31cd74a7d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54244887"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58796851"
 ---
 # <a name="windowsupdatetype-enum-type"></a>windowsUpdateType 枚举类型
 
@@ -26,12 +26,11 @@ ms.locfileid: "54244887"
 |成员|值|说明|
 |:---|:---|:---|
 |userDefined|0|允许用户设置。|
-|all|1 |半年频道 (定向) 。 设备从半年频道和目标用户获取 (功能) 。|
-|businessReadyOnly|2 |半年频道。 设备从半年频道获取功能更新。|
-|windowsInsiderBuildFast|3 |Windows预览体验成员内部版本 - 快速|
+|all|1|半年频道 (定向) 。 设备从半年频道和目标用户获取 (功能) 。|
+|businessReadyOnly|2|半年频道。 设备从半年频道获取功能更新。|
+|windowsInsiderBuildFast|3|Windows预览体验成员内部版本 - 快速|
 |windowsInsiderBuildSlow|4 |Windows预览体验成员内部版本 - 慢|
 |windowsInsiderBuildRelease|5 |预览Windows内部版本|
-
 
 
 

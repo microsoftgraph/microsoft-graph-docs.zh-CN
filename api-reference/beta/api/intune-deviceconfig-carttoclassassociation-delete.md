@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2e6893d043cb7c97e9a49428b52d2bb5f5285768649ab18761419411473c3a01
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d6cea41bafd0b9f368f4528d0a8c1e7c2e61aa1b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54201725"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789437"
 ---
 # <a name="delete-carttoclassassociation"></a>删除 cartToClassAssociation
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/cartToClassAssociations/{cartToClassAssociationId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/cartToClassAssociations
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

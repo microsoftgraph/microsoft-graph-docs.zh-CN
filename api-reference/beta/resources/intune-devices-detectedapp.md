@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b54a7ee303d6845e10d07c18a835bbb25a87040c440f3bdbd151f1f9bc419ee6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e8c22404a1ab086ef6ec9138682e3e023e1fb31c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54172944"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58796710"
 ---
 # <a name="detectedapp-resource-type"></a>detectedApp 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54172944"
 
 托管设备上安装的托管或未托管应用。 未托管应用仅出现在标记为公司所有的设备上。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[List detectedApps](../api/intune-devices-detectedapp-list.md)|[detectedApp](../resources/intune-devices-detectedapp.md) 集合|列出 [detectedApp](../resources/intune-devices-detectedapp.md) 对象的属性和关系。|
@@ -35,7 +35,7 @@ ms.locfileid: "54172944"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|检测到的应用程序的唯一标识符。 创建此应用程序时，Intune 将自动生成它。 只读。|
-|displayName|字符串|发现的应用程序的名称。 只读|
+|displayName|String|发现的应用程序的名称。 只读|
 |version|String|发现的应用程序的版本。 只读|
 |sizeInByte|Int64|发现的应用程序的大小，以字节为单位。 只读|
 |deviceCount|Int32|已安装此应用程序的设备数量|
@@ -63,7 +63,6 @@ ms.locfileid: "54172944"
   "deviceCount": 1024
 }
 ```
-
 
 
 

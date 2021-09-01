@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3347664d5b86211e894756d5583acf2d1415de31a781a9a875e4753675514231
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e5eee83a61d65e2e828c40a815e376ae501141d8
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54248415"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786325"
 ---
 # <a name="devicemanangementintentvaluetype-enum-type"></a>deviceManangementIntentValueType 枚举类型
 
@@ -26,12 +26,11 @@ ms.locfileid: "54248415"
 |成员|值|说明|
 |:---|:---|:---|
 |integer|0|设置值是一个整数|
-|boolean|1 |设置值为布尔值|
-|string|2 |设置值是字符串|
-|复杂|3 |设置值是一个复杂对象|
+|boolean|1|设置值为布尔值|
+|string|2|设置值是字符串|
+|复杂|3|设置值是一个复杂对象|
 |操作|4 |设置值是一个集合|
 |abstractComplex|5 |设置值是抽象复杂对象|
-
 
 
 

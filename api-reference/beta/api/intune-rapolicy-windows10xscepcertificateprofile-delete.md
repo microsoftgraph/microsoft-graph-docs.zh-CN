@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4ac0bda734ae81c909408d2d8e44c1a2ddea0ed08f5544d0efc9f5971bcff39c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cd90a99dea40c978047eb28b693788dbf97b18c9
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54220212"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786423"
 ---
 # <a name="delete-windows10xscepcertificateprofile"></a>删除 windows10XSCEPCertificateProfile
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/resourceAccessProfiles/{deviceManagementResourceAccessP
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/resourceAccessProfiles/
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a6e79e74435c2c3159070f0ef4b9a7fc202a831d6511e270f5650b1ec3724ef8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ee4be1b91f3e6194a4ab83aa1662a38dca7f6b03
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54186228"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58794551"
 ---
 # <a name="update-grouppolicypresentationlongdecimaltextbox"></a>更新 groupPolicyPresentationLongDecimalTextBox
 
@@ -44,7 +44,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,11 +54,11 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 
 |属性|类型|说明|
 |:---|:---|:---|
-|标签|字符串|任何演示文稿实体的本地化文本标签。 默认值为空白。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|标签|String|任何演示文稿实体的本地化文本标签。 默认值为空白。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |id|String|实体的键。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |defaultValue|Int64|一个无符号整数，指定小数文本框的初始值。 默认值为 1。|
-|spin|布尔值|如果为 true，则创建旋转控件;否则，为数字输入创建一个文本框。 默认值为 true。|
+|spin|Boolean|如果为 true，则创建旋转控件;否则，为数字输入创建一个文本框。 默认值为 true。|
 |spinStep|Int64|一个无符号整数，指定旋转控件更改的增量。 默认值为 1。|
 |必需|布尔值|要求在参数框中输入值。 默认值为 false。|
 |minValue|Int64|指定允许的最小值的无符号长。 默认值为 0。|
@@ -110,7 +110,6 @@ Content-Length: 338
   "maxValue": 8
 }
 ```
-
 
 
 

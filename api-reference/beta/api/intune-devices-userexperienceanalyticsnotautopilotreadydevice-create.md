@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9174116de606f809dc9328e53485c5bb039ed99d
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 723c9f671db89d0ae7e0238ed11a332f62fdb989
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257213"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795968"
 ---
 # <a name="create-userexperienceanalyticsnotautopilotreadydevice"></a>创建 userExperienceAnalyticsNotAutopilotReadyDevice
 
@@ -27,9 +27,9 @@ ms.locfileid: "58257213"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/userExperienceAnalyticsNotAutopilotReadyDevice
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -58,11 +58,11 @@ POST /deviceManagement/userExperienceAnalyticsNotAutopilotReadyDevice
 |serialNumber|String|intune 设备的序列号。|
 |manufacturer|String|intune 设备的制造商。|
 |model|String|intune 设备的型号。|
-|managedBy|字符串|intune 设备的托管者。|
-|autoPilotRegistered|布尔值|intune 设备的 autopilotRegistered。|
-|autoPilotProfileAssigned|布尔值|intune 设备的 autopilotProfileAssigned。|
-|azureAdRegistered|布尔值|intune 设备的 azureAdRegistered。|
-|azureAdJoinType|字符串|intune 设备的 azure Ad joinType。|
+|managedBy|String|intune 设备的托管者。|
+|autoPilotRegistered|Boolean|intune 设备的 autopilotRegistered。|
+|autoPilotProfileAssigned|Boolean|intune 设备的 autopilotProfileAssigned。|
+|azureAdRegistered|Boolean|intune 设备的 azureAdRegistered。|
+|azureAdJoinType|String|intune 设备的 azure Ad joinType。|
 
 
 
@@ -113,7 +113,6 @@ Content-Length: 470
   "azureAdJoinType": "Azure Ad Join Type value"
 }
 ```
-
 
 
 

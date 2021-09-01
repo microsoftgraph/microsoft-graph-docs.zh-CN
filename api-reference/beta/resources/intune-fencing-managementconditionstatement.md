@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bb0864749fd04fe6ba9979dd31e0a0adaf15854b
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 367739eb54144b29fc0d109174f2d89108418d0b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256014"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58769479"
 ---
 # <a name="managementconditionstatement-resource-type"></a>managementConditionStatement 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "58256014"
 
 管理条件声明是一组管理条件，当满足所有所包含的管理条件时，可启用/禁用设备/应用程序配置。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[List managementConditionStatements](../api/intune-fencing-managementconditionstatement-list.md)|[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) 集合|列出 [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) 对象的属性和关系。|
@@ -77,7 +77,6 @@ ms.locfileid: "58256014"
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e14b52ed9e5c9149b8282f7e7e9467e85f101408ed41dde1507178d14b2acaf3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cb8edca845aee4943302af4def22357e5d35c76c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54139913"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58794889"
 ---
 # <a name="get-iosmanagedappprotection"></a>获取 iosManagedAppProtection
 
@@ -50,7 +50,7 @@ GET /deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -144,7 +144,6 @@ Content-Length: 2944
   }
 }
 ```
-
 
 
 

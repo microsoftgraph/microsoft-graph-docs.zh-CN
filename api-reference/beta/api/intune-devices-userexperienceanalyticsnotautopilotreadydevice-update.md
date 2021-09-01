@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: eec35aacf62aa65af262ce0e2b9dd70233ce357a
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: a6f2987c85c6322c2b3d0447f0cb59806d91bff4
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58260672"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58798614"
 ---
 # <a name="update-userexperienceanalyticsnotautopilotreadydevice"></a>更新 userExperienceAnalyticsNotAutopilotReadyDevice
 
@@ -27,9 +27,9 @@ ms.locfileid: "58260672"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/userExperienceAnalyticsNotAutopilotReadyDevice/{userExpe
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -59,10 +59,10 @@ PATCH /deviceManagement/userExperienceAnalyticsNotAutopilotReadyDevice/{userExpe
 |manufacturer|String|intune 设备的制造商。|
 |model|String|intune 设备的型号。|
 |managedBy|字符串|intune 设备的托管者。|
-|autoPilotRegistered|布尔值|intune 设备的 autopilotRegistered。|
-|autoPilotProfileAssigned|布尔值|intune 设备的 autopilotProfileAssigned。|
+|autoPilotRegistered|Boolean|intune 设备的 autopilotRegistered。|
+|autoPilotProfileAssigned|Boolean|intune 设备的 autopilotProfileAssigned。|
 |azureAdRegistered|布尔值|intune 设备的 azureAdRegistered。|
-|azureAdJoinType|字符串|intune 设备的 azure Ad joinType。|
+|azureAdJoinType|String|intune 设备的 azure Ad joinType。|
 
 
 
@@ -113,7 +113,6 @@ Content-Length: 470
   "azureAdJoinType": "Azure Ad Join Type value"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 84a5f10542db3f2677cda68923eebf1bc2fb4008bfb0ee6a2669fd8be33f6951
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4af60056fa06c64af8736d997aae024f6ecfb87d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54241964"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818531"
 ---
 # <a name="encryptionreportpolicydetails-resource-type"></a>encryptionReportPolicyDetails 资源类型
 
@@ -23,9 +23,9 @@ ms.locfileid: "54241964"
 加密策略详细信息报告
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
-|policyId|字符串|加密策略 ID 报告|
+|policyId|String|加密策略 ID 报告|
 |policyName|String|加密策略名称报告|
 
 ## <a name="relationships"></a>关系
@@ -45,7 +45,6 @@ ms.locfileid: "54241964"
   "policyName": "String"
 }
 ```
-
 
 
 

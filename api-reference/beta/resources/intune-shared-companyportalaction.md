@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 25a0cebd61bea4473ff6dc53a7fec7d039b6e898bd3715e0c2e3269836a960e3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3e9ac30d736480b041e9839fc95e2a8a334b528d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54217062"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795106"
 ---
 # <a name="companyportalaction-enum-type"></a>companyPortalAction 枚举类型
 
@@ -26,9 +26,8 @@ ms.locfileid: "54217062"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|未知设备操作|
-|remove|1 |从设备中删除公司门户|
-|重置|2 |重置设备注册公司门户|
-
+|remove|1|从设备中删除公司门户|
+|重置|2|重置设备注册公司门户|
 
 
 

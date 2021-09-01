@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5f4d8b2bdf1f1787b08b432e4af4b1641f6f8ecf2c2d1480ac84b3a7c7db2da2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: eb640c3a969ca556dc75f5d34cf5be794c6c7595
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54122241"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797217"
 ---
 # <a name="errorcode-enum-type"></a>errorCode 枚举类型
 
@@ -26,10 +26,9 @@ ms.locfileid: "54122241"
 |成员|值|说明|
 |:---|:---|:---|
 |noError|0|默认值，表示无错误。|
-|未授权|1 |由于资源上缺少 RBAC 权限，当前用户没有访问权限。|
-|notFound|2 |由于资源上缺少 RBAC 范围标记，当前用户没有访问权限。|
-|deleted|3 |资源已删除。|
-
+|未授权|1|由于资源上缺少 RBAC 权限，当前用户没有访问权限。|
+|notFound|2|由于资源上缺少 RBAC 范围标记，当前用户没有访问权限。|
+|deleted|3|资源已删除。|
 
 
 

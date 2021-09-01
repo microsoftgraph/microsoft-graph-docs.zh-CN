@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 62e166075dfa03c45457b080bb0c8a6e8e13d2ab0e8a19b6d6339508687c7db4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1f921783a5580006fc3928a246f3da0222c65c5f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54191191"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58798151"
 ---
 # <a name="create-devicemanagementcachedreportconfiguration"></a>创建 deviceManagementCachedReportConfiguration
 
@@ -43,7 +43,7 @@ POST /deviceManagement/reports/cachedReportConfigurations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -55,11 +55,11 @@ POST /deviceManagement/reports/cachedReportConfigurations
 |:---|:---|:---|
 |id|String|此实体的唯一标识符|
 |reportName|字符串|报告的名称|
-|filter|String|创建报表时应用的筛选器。|
-|select|String collection|从报表选择的列|
-|orderBy|String collection|报告中列的排序|
+|filter|字符串|创建报表时应用的筛选器。|
+|select|字符串集合|从报表选择的列|
+|orderBy|字符串集合|报告中列的排序|
 |metadata|String|与报告关联的呼叫者管理的元数据|
-|status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|缓存报表的状态。 可取值为：`unknown`、`notStarted`、`inProgress`、`completed`、`failed`。|
+|状态|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|缓存报表的状态。 可取值为：`unknown`、`notStarted`、`inProgress`、`completed`、`failed`。|
 |lastRefreshDateTime|DateTimeOffset|上次刷新缓存报告的时间|
 |expirationDateTime|DateTimeOffset|缓存报告的过期时间|
 
@@ -118,7 +118,6 @@ Content-Length: 467
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0e206786e6a37e8693ab3fc2714af825fbf090ab5dd8015351ac579ce1dd3cb7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 23d1457b856ae50eaf48bbbb9855fbd5d211a70a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54173889"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791338"
 ---
 # <a name="create-importedwindowsautopilotdeviceidentity"></a>创建 importedWindowsAutopilotDeviceIdentity
 
@@ -43,7 +43,7 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentities
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,14 +53,14 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentities
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|对象的 GUID|
-|groupTag|String|autopilot Windows组标记。|
+|id|字符串|对象的 GUID|
+|groupTag|字符串|autopilot Windows组标记。|
 |serialNumber|String|Windows autopilot 设备序列号。|
 |productKey|String|Windows autopilot 设备产品密钥。|
-|importId|String|autopilot 设备的Windows ID。|
+|importId|字符串|autopilot 设备的Windows ID。|
 |hardwareIdentifier|Binary|Windows autopilot 设备硬件 Blob。|
 |state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|导入设备的当前状态。|
-|assignedUserPrincipalName|字符串|将分配设备的用户的 UPN|
+|assignedUserPrincipalName|String|将分配设备的用户的 UPN|
 
 
 
@@ -119,7 +119,6 @@ Content-Length: 680
   "assignedUserPrincipalName": "Assigned User Principal Name value"
 }
 ```
-
 
 
 

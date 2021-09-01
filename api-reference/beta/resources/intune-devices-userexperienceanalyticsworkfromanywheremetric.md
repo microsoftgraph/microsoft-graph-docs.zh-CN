@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 507b6766c8da2b2c332553faea8afc0f5d7434adb535619e04c30264e78fa6cf
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e685382812cbe81c35c18f7baf8f6e1ce5efceb4
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54122465"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795176"
 ---
 # <a name="userexperienceanalyticsworkfromanywheremetric-resource-type"></a>userExperienceAnalyticsWorkFromAnywhereMetric 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54122465"
 
 来自任何位置报告的工作的用户体验分析指标
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 userExperienceAnalyticsWorkFromAnywhereMetrics](../api/intune-devices-userexperienceanalyticsworkfromanywheremetric-list.md)|[userExperienceAnalyticsWorkFromAnywhereMetric](../resources/intune-devices-userexperienceanalyticsworkfromanywheremetric.md) 集合|列出 [userExperienceAnalyticsWorkFromAnywhereMetric 对象的属性和](../resources/intune-devices-userexperienceanalyticsworkfromanywheremetric.md) 关系。|
@@ -55,7 +55,6 @@ ms.locfileid: "54122465"
   "id": "String (identifier)"
 }
 ```
-
 
 
 

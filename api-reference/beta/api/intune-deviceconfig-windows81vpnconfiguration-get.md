@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f5b72209db39e8da956228209c61023f8b38e868f54f7a4749ccc6b46adfd02f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4f529ab742edae2ee45c27937bbc2600b4bea30b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54174148"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58784987"
 ---
 # <a name="get-windows81vpnconfiguration"></a>获取 windows81VpnConfiguration
 
@@ -48,7 +48,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -131,7 +131,6 @@ Content-Length: 2087
   }
 }
 ```
-
 
 
 

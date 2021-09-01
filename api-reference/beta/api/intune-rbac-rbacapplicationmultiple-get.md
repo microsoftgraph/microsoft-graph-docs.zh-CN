@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 322eebc02a4b95f0999cd78cccee0af18e36dbd56bc6cc39639589e356d5dc4c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3e3599e62f297ef0da38f5627c774b190eeb7c82
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54195370"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58788729"
 ---
 # <a name="get-rbacapplicationmultiple"></a>获取 rbacApplicationMultiple
 
@@ -29,7 +29,7 @@ ms.locfileid: "54195370"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementRBAC.Read.All、DeviceManagementRBAC.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementRBAC.Read.All、DeviceManagementRBAC.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementRBAC.Read.All、DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -46,7 +46,7 @@ GET /roleManagement/deviceManagement
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -77,7 +77,6 @@ Content-Length: 137
   }
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7e9f6b0321d94ef6464f31d8b293b4ad04b433afa1eb59efe6cde46a48c74d1b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b7b77304f1651a4982a3fbc40780c079ae47b7d8
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54232711"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803277"
 ---
 # <a name="singlesignonextension-resource-type"></a>singleSignOnExtension 资源类型
 
@@ -41,7 +41,6 @@ ms.locfileid: "54232711"
   "@odata.type": "#microsoft.graph.singleSignOnExtension"
 }
 ```
-
 
 
 

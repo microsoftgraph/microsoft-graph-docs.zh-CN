@@ -4,12 +4,12 @@ description: 列出 Microsoft Graph API for Intune 终结点 (REST) 定义和管
 localization_priority: Normal
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: ad014fe19bf427ccb4c4d8c60f2145ef96b1c1a860d419d991d75b759ea3ee6d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: db89b2c0cca5414b442480fb2049c697d33f176d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54126891"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795134"
 ---
 # <a name="role-based-access-control-in-microsoft-intune"></a>Microsoft Intune 中的基于角色的访问控制
 

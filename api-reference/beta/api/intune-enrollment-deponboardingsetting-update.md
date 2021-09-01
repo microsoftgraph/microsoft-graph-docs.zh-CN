@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ab48db3a056cc02a3631fff9755e27883001d871d6e9f7d2ba703cb54c549242
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 41c251c8c1a7c56e5a4fb63e8c63f7c8808d85fd
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54213996"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803628"
 ---
 # <a name="update-deponboardingsetting"></a>更新 depOnboardingSetting
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,19 +53,19 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|对象的 UUID|
+|id|字符串|对象的 UUID|
 |appleIdentifier|String|用于获取当前令牌的 Apple ID。|
 |tokenExpirationDateTime|DateTimeOffset|令牌将过期的时间。|
 |lastModifiedDateTime|DateTimeOffset|载入服务时。|
 |lastSuccessfulSyncDateTime|DateTimeOffset|服务最后一次与 Intune 进行联合时|
 |lastSyncTriggeredDateTime|DateTimeOffset|Intune 上次请求同步时。|
-|shareTokenWithSchoolDataSyncService|布尔值|是否使用服务启用 Dep 令牌学校数据同步共享。|
+|shareTokenWithSchoolDataSyncService|Boolean|是否对服务启用 Dep 令牌学校数据同步共享。|
 |lastSyncErrorCode|Int32|Apple 在上次取消同步期间报告的错误代码。|
 |tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|获取或设置 Dep 令牌类型。 可取值为：`none`、`dep`、`appleSchoolManager`。|
-|tokenName|字符串|Dep 令牌的友好名称|
+|tokenName|String|Dep 令牌的友好名称|
 |syncedDeviceCount|Int32|获取同步的设备计数|
-|dataSharingConsentGranted|布尔值|同意与 Apple Dep 服务共享数据|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
+|dataSharingConsentGranted|Boolean|同意与 Apple Dep 服务共享数据|
+|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。|
 
 
 
@@ -125,7 +125,6 @@ Content-Length: 689
   ]
 }
 ```
-
 
 
 

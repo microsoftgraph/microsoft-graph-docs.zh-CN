@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c12fd9bca34a75fcac447517682186d3b8bc2c54dade7ba938154f9d4f75cb76
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8eed8a9d458f9640a2580571ba59dea9b08a78e6
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54215095"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58821120"
 ---
 # <a name="applogcollectiondownloaddetails-resource-type"></a>appLogCollectionDownloadDetails 资源类型
 
@@ -23,9 +23,9 @@ ms.locfileid: "54215095"
 尚未记录
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
-|downloadUrl|字符串|下载已完成 AppLogUploadRequest 的 SAS URL|
+|downloadUrl|String|下载已完成 AppLogUploadRequest 的 SAS URL|
 |decryptionKey|String|DecryptionKey 作为字符串|
 |appLogDecryptionAlgorithm|[appLogDecryptionAlgorithm](../resources/intune-devices-applogdecryptionalgorithm.md)|DecryptionAlgorithm for Content。 可能的值是 `aes256` ：。|
 
@@ -47,7 +47,6 @@ ms.locfileid: "54215095"
   "appLogDecryptionAlgorithm": "String"
 }
 ```
-
 
 
 

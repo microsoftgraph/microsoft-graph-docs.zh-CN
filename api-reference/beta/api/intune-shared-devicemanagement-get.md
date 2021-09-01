@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 97fc6fcf0b998c320a0db617a041f74a065952f608e8ab4a19f5dbafabcff559
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fc4196e5b288dc3edffe12f2113d3509a5671524
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54166237"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785806"
 ---
 # <a name="get-devicemanagement"></a>获取 deviceManagement
 
@@ -88,7 +88,7 @@ GET /deviceManagement
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -161,7 +161,6 @@ Content-Length: 918
   }
 }
 ```
-
 
 
 

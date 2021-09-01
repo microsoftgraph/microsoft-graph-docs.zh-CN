@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 54e910a8df3da47e1452fa8492e45c3f9c642c78808cde77ef901174df70c07d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8f8e128451d8b44f3ca29877dae5300893f7fe82
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54224899"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803305"
 ---
 # <a name="win32lobappproductcoderule-resource-type"></a>win32LobAppProductCodeRule 资源类型
 
@@ -52,7 +52,6 @@ ms.locfileid: "54224899"
   "productVersion": "String"
 }
 ```
-
 
 
 

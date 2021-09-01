@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 93e045762474c98204e022b7ea3329ee344e16c95986415a6e6410737c82c6a6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ef7974e316ce78db63f999aa63c87a230b4456cd
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54236491"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820497"
 ---
 # <a name="androiddeviceownerkioskmodeweblink-resource-type"></a>androidDeviceOwnerKioskModeWeblink 资源类型
 
@@ -26,7 +26,7 @@ Android 设备所有者托管主屏幕上的 Web 链接
 继承自 [androidDeviceOwnerKioskModeFolderItem](../resources/intune-deviceconfig-androiddeviceownerkioskmodefolderitem.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |标签|String|Weblink 的显示名称|
 |链接|String|Web 链接的链接|
@@ -48,7 +48,6 @@ Android 设备所有者托管主屏幕上的 Web 链接
   "link": "String"
 }
 ```
-
 
 
 

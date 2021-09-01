@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 763e123689a0ea7149f164dd8a79341664bb20a3
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 1cef96408d71093d530f122ff67e9353e91339e5
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58264820"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818061"
 ---
 # <a name="userexperienceanalyticsdeviceperformance-resource-type"></a>userExperienceAnalyticsDevicePerformance 资源类型
 
@@ -22,8 +22,8 @@ ms.locfileid: "58264820"
 
 用户体验分析设备性能实体包含设备启动性能详细信息。
 
-## <a name="methods"></a>Methods
-|方法|返回类型|说明|
+## <a name="methods"></a>方法
+|方法|返回类型|Description|
 |:---|:---|:---|
 |[列出 userExperienceAnalyticsDevicePerformances](../api/intune-devices-userexperienceanalyticsdeviceperformance-list.md)|[userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) 集合|列出 [userExperienceAnalyticsDevicePerformance 对象的属性和](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) 关系。|
 |[获取 userExperienceAnalyticsDevicePerformance](../api/intune-devices-userexperienceanalyticsdeviceperformance-get.md)|[userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md)|读取 [userExperienceAnalyticsDevicePerformance 对象的属性和](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) 关系。|
@@ -44,7 +44,7 @@ ms.locfileid: "58264820"
 |bootScore|Int32|用户体验分析设备启动分数。|
 |coreBootTimeInMs|Int32|用户体验分析设备核心启动时间（以毫秒为单位）。|
 |groupPolicyBootTimeInMs|Int32|用户体验分析设备组策略启动时间（以毫秒为单位）。|
-|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析设备的运行状况。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
+|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析设备的运行状况。 可能的值是：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
 |loginScore|Int32|用户体验分析设备登录分数。|
 |coreLoginTimeInMs|Int32|用户体验分析设备核心登录时间（以毫秒为单位）。|
 |groupPolicyLoginTimeInMs|Int32|用户体验分析设备组策略登录时间（以毫秒为单位）。|
@@ -52,9 +52,10 @@ ms.locfileid: "58264820"
 |responsiveDesktopTimeInMs|Int32|用户体验分析响应式桌面时间（以毫秒为单位）。|
 |blueScreenCount|Int32|最近 14 天内的蓝屏数。 有效值为 0 到 9999999|
 |restartCount|Int32|最近 14 天内的重启次数。 有效值为 0 到 9999999|
-|averageBlueScreens|双精度|平均 (平均) 14 天内每个设备的蓝屏数量。 有效值为 0 到 9999999|
-|averageRestarts|双精度|平均 (，) 最近 14 天内每个设备重新启动次数的平均值。 有效值为 0 到 9999999|
+|averageBlueScreens|双精度|平均 (14) 设备的平均蓝屏数。 有效值为 0 到 9999999|
+|averageRestarts|双精度|平均 (表示) 最近 14 天内每个设备重新启动次数的平均值。 有效值为 0 到 9999999|
 |startupPerformanceScore|双精度|用户体验分析设备启动性能分数。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
+|modelStartupPerformanceScore|双精度|用户体验分析模型级别的启动性能分数。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
 
 ## <a name="relationships"></a>关系
 无
@@ -89,10 +90,10 @@ ms.locfileid: "58264820"
   "restartCount": 1024,
   "averageBlueScreens": "4.2",
   "averageRestarts": "4.2",
-  "startupPerformanceScore": "4.2"
+  "startupPerformanceScore": "4.2",
+  "modelStartupPerformanceScore": "4.2"
 }
 ```
-
 
 
 
