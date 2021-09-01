@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 70e0e31ea7451952800830aa7ef259a19592cd0a12d5919a8df85340904ee53a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5b232a2848a66dfc242f83da39667e9b891f852f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54172972"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58784476"
 ---
 # <a name="cloudpcconnectivityissue-resource-type"></a>cloudPCConnectivityIssue 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54172972"
 
 用户体验分析连接问题实体。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 cloudPCConnectivityIssues](../api/intune-devices-cloudpcconnectivityissue-list.md)|[cloudPCConnectivityIssue](../resources/intune-devices-cloudpcconnectivityissue.md) 集合|列出 [cloudPCConnectivityIssue](../resources/intune-devices-cloudpcconnectivityissue.md) 对象的属性和关系。|
@@ -38,9 +38,9 @@ ms.locfileid: "54172972"
 |deviceId|String|与连接关联的设备的 Intune DeviceId。|
 |errorCode|String|连接问题的错误代码。|
 |errorDateTime|DateTimeOffset|连接启动的时间。 时间以 ISO 8601 格式显示，协调世界时 (UTC) 时间。|
-|userId|字符串|初始化连接的用户的唯一 ID。|
+|userId|String|初始化连接的用户的唯一 ID。|
 |errorDescription|String|错误的详细说明。|
-|recommendedAction|String|修复相应错误的推荐操作。|
+|recommendedAction|字符串|修复相应错误的推荐操作。|
 
 ## <a name="relationships"></a>关系
 无
@@ -65,7 +65,6 @@ ms.locfileid: "54172972"
   "recommendedAction": "String"
 }
 ```
-
 
 
 

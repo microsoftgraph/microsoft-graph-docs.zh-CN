@@ -1,16 +1,16 @@
 ---
 title: windowsAutopilotDeviceIdentity 资源类型
-description: windowsAutopilotDeviceIdentity 资源表示一Windows Autopilot 设备。
+description: windowsAutopilotDeviceIdentity 资源表示Windows Autopilot 设备。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 05b0e262097581fc0f49d218b97ecbbf5db36de423f547c53d096ad68094ee3b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7c664476da1b4df00ddaf2227318e07a762efbb9
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54133185"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783888"
 ---
 # <a name="windowsautopilotdeviceidentity-resource-type"></a>windowsAutopilotDeviceIdentity 资源类型
 
@@ -20,9 +20,9 @@ ms.locfileid: "54133185"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-windowsAutopilotDeviceIdentity 资源表示一Windows Autopilot 设备。
+windowsAutopilotDeviceIdentity 资源表示Windows Autopilot 设备。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 windowsAutopilotDeviceIdentities](../api/intune-enrollment-windowsautopilotdeviceidentity-list.md)|[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) 集合|列出 [windowsAutopilotDeviceIdentity 对象的属性和](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) 关系。|
@@ -42,8 +42,8 @@ windowsAutopilotDeviceIdentity 资源表示一Windows Autopilot 设备。
 |deploymentProfileAssignmentStatus|[windowsAutopilotProfileAssignmentStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|autopilot 设备的Windows分配状态。 可取值为：`unknown`、`assignedInSync`、`assignedOutOfSync`、`assignedUnkownSyncState`、`notAssigned`、`pending` 或 `failed`。|
 |deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|配置文件分配 autopilot Windows状态。 可取值为：`none`、`hardwareRequirementsNotMet`、`surfaceHubProfileNotSupported`、`holoLensProfileNotSupported`、`windowsPcProfileNotSupported`。|
 |deploymentProfileAssignedDateTime|DateTimeOffset|autopilot 设备的配置文件Windows时间。|
-|groupTag|字符串|autopilot Windows组标记。|
-|purchaseOrderIdentifier|String|Purchase Order Autopilot Windows标识符。|
+|groupTag|String|autopilot Windows组标记。|
+|purchaseOrderIdentifier|字符串|Purchase Order Autopilot Windows标识符。|
 |serialNumber|String|Windows autopilot 设备序列号。|
 |productKey|String|Windows autopilot 设备产品密钥。|
 |manufacturer|String|autopilot Windows Oem 制造商。|
@@ -51,19 +51,19 @@ windowsAutopilotDeviceIdentity 资源表示一Windows Autopilot 设备。
 |enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Autopilot 设备的 intune Windows状态。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
 |lastContactedDateTime|DateTimeOffset|Intune Autopilot 设备的上次Windows日期时间。|
 |addressableUserName|字符串|可地址用户名。|
-|userPrincipalName|字符串|用户主体名称。|
+|userPrincipalName|String|用户主体名称。|
 |resourceName|String|资源名称。|
-|skuNumber|String|SKU 号|
+|skuNumber|字符串|SKU 号|
 |systemFamily|String|系统系列|
 |azureActiveDirectoryDeviceId|String|AAD 设备 ID - 已弃用|
-|azureAdDeviceId|字符串|AAD 设备 ID|
+|azureAdDeviceId|String|AAD 设备 ID|
 |managedDeviceId|String|托管设备 ID|
 |displayName|String|显示名称|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
-|deploymentProfile|[windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|当前分配给 autopilot Windows的部署配置文件。|
+|deploymentProfile|[windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|当前分配给 autopilot 设备的Windows配置文件。|
 |intendedDeploymentProfile|[windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|要分配给 autopilot 设备的Windows配置文件。|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -100,7 +100,6 @@ windowsAutopilotDeviceIdentity 资源表示一Windows Autopilot 设备。
   "displayName": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 45051f7526ba6d7740144e42001db28eb0443c877c4363479dcdd1a476de8bd4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1ac91ac42018c5fc687a0b89d7496c1fdc15c97d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54153333"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783594"
 ---
 # <a name="excludedapps-resource-type"></a>excludedApps 资源类型
 
@@ -25,20 +25,20 @@ ms.locfileid: "54153333"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|access|布尔值|应排除 MS Office Access 的值。|
-|必应|布尔值|如果设置为默认值Microsoft 搜索值应排除。|
-|excel|布尔值|应排除 MS Office Excel的值。|
-|groove|布尔值|如果 MS 为 Office OneDrive for Business - Groove应排除的值。|
-|infoPath|布尔值|应排除 InfoPath Office MS 的值。|
-|lync|布尔值|如果 MS Office Skype for Business - Lync 的值应排除。|
+|access|Boolean|如果 MS Office Access 的值应排除。|
+|必应|Boolean|如果设置为默认值Microsoft 搜索值应排除。|
+|excel|Boolean|应排除 MS Office Excel的值。|
+|groove|Boolean|如果 MS 为 Office OneDrive for Business - Groove应排除的值。|
+|infoPath|Boolean|应排除 InfoPath Office MS 的值。|
+|lync|Boolean|如果 MS Office Skype for Business - Lync 的值应排除。|
 |oneDrive|布尔值|应排除 MS Office OneDrive的值。|
 |oneNote|布尔值|应排除 MS Office OneNote的值。|
 |outlook|布尔值|应排除 MS Office Outlook的值。|
-|powerPoint|布尔值|应排除 MS Office PowerPoint的值。|
+|powerPoint|Boolean|应排除 MS Office PowerPoint的值。|
 |发布者|布尔值|应排除 MS Office Publisher的值。|
-|sharePointDesigner|布尔值|应排除 MS Office SharePointDesigner 的值。|
+|sharePointDesigner|Boolean|应排除 MS Office SharePointDesigner 的值。|
 |teams|布尔值|应排除 MS Office Teams的值。|
-|visio|布尔值|应排除 MS Office Visio的值。|
+|visio|Boolean|应排除 MS Office Visio的值。|
 |word|布尔值|应排除 MS Office Word 的值。|
 
 ## <a name="relationships"></a>关系
@@ -71,7 +71,6 @@ ms.locfileid: "54153333"
   "word": true
 }
 ```
-
 
 
 

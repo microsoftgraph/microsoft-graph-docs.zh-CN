@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2aebcc43ae123d1497bacc43505796bb0fa27ddba1b59eb3f62277e6498e6ba8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bd514871295d184e896c1ad8fa949bb516b02a06
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54198575"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58807382"
 ---
 # <a name="gettargetedusersanddevices-action"></a>getTargetedUsersAndDevices 操作
 
@@ -46,7 +46,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -101,7 +101,6 @@ Content-Length: 409
   ]
 }
 ```
-
 
 
 

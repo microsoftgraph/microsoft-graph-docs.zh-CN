@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cdf2fb3aaccae8ff5ee272212e66ac1559b1fed24eb9eb10047e993df924bb27
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b4d2948d39c91a5421ce470b11b6401b1b3504ae
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54133325"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58784833"
 ---
 # <a name="windowskioskazureaduser-resource-type"></a>windowsKioskAzureADUser 资源类型
 
@@ -28,7 +28,7 @@ ms.locfileid: "54133325"
 ## <a name="properties"></a>属性
 |属性|类型|描述|
 |:---|:---|:---|
-|userId|字符串|将锁定到此展台配置的 AzureAD 用户的 ID|
+|userId|String|将锁定到此展台配置的 AzureAD 用户的 ID|
 |userPrincipalName|String|将锁定到此展台配置的用户帐户|
 
 ## <a name="relationships"></a>关系
@@ -48,7 +48,6 @@ ms.locfileid: "54133325"
   "userPrincipalName": "String"
 }
 ```
-
 
 
 

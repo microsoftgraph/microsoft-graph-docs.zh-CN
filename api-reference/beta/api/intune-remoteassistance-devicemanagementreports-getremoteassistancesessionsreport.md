@@ -1,18 +1,18 @@
 ---
-title: setScheduledRetireState 操作
+title: getRemoteAssistanceSessionsReport 操作
 description: 尚未记录
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8b42dc4d01013e62ca23f3b41908c5d81f7f2a3b
+ms.openlocfilehash: fe30d9b5d1bc2f1d4e5c7aa86d03fb5154425f50
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58799717"
+ms.locfileid: "58797752"
 ---
-# <a name="setscheduledretirestate-action"></a>setScheduledRetireState 操作
+# <a name="getremoteassistancesessionsreport-action"></a>getRemoteAssistanceSessionsReport 操作
 
 命名空间：microsoft.graph
 
@@ -27,9 +27,9 @@ ms.locfileid: "58799717"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -37,7 +37,7 @@ ms.locfileid: "58799717"
 }
 -->
 ``` http
-POST /deviceManagement/deviceCompliancePolicies/setScheduledRetireState
+POST /deviceManagement/reports/getRemoteAssistanceSessionsReport
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -53,36 +53,60 @@ POST /deviceManagement/deviceCompliancePolicies/setScheduledRetireState
 
 |属性|类型|说明|
 |:---|:---|:---|
-|state|[scheduledRetireState](../resources/intune-deviceconfig-scheduledretirestate.md)|尚未记录|
-|managedDeviceIds|String collection|尚未记录|
+|name|String|尚未记录|
+|select|String collection|尚未记录|
+|search|String|尚未记录|
+|groupBy|String collection|尚未记录|
+|orderBy|String collection|尚未记录|
+|skip|Int32|尚未记录|
+|top|Int32|尚未记录|
+|sessionId|String|尚未记录|
+|filter|String|尚未记录|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此操作返回 `204 No Content` 响应代码。
+如果成功，此操作在响应 `200 OK` 正文中返回 响应代码和 Stream。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/setScheduledRetireState
+POST https://graph.microsoft.com/beta/deviceManagement/reports/getRemoteAssistanceSessionsReport
 
 Content-type: application/json
-Content-length: 95
+Content-length: 278
 
 {
-  "state": "comfirmRetire",
-  "managedDeviceIds": [
-    "Managed Device Ids value"
-  ]
+  "name": "Name value",
+  "select": [
+    "Select value"
+  ],
+  "search": "Search value",
+  "groupBy": [
+    "Group By value"
+  ],
+  "orderBy": [
+    "Order By value"
+  ],
+  "skip": 4,
+  "top": 3,
+  "sessionId": "Session Id value",
+  "filter": "Filter value"
 }
 ```
 
 ### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 103
+
+{
+  "value": "Z2V0UmVtb3RlQXNzaXN0YW5jZVNlc3Npb25zUmVwb3J0IEludHVuZSBEb2MgU2FtcGxlIC0xNzcyMDEwMDQ1"
+}
 ```
 
 

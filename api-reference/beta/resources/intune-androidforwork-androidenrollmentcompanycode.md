@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6803a04883d90d3550b98582522e74465251d96f803896d55e62afff5ad9f58a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e6e15d4720b9f29e9b548004127760a2ba3b0135
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54173329"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58799829"
 ---
 # <a name="androidenrollmentcompanycode-resource-type"></a>androidEnrollmentCompanyCode 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "54173329"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|enrollmentToken|字符串|用户用于注册其设备的注册令牌。|
+|enrollmentToken|String|用户用于注册其设备的注册令牌。|
 |qrCodeContent|String|用于生成此令牌的 QR 码的字符串。|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|为令牌生成的 QR 代码。|
 
@@ -51,7 +51,6 @@ ms.locfileid: "54173329"
   }
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c54d4b00bd0d4bc0b09fc9aba864ffd9e3c27d0e0b39804ea9ddd4daa785888f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0b4992c9358b2fa7c2e5f2f7e70e17211a734d0c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54232788"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797913"
 ---
 # <a name="domainnamesource-enum-type"></a>domainNameSource 枚举类型
 
@@ -26,8 +26,7 @@ ms.locfileid: "54232788"
 |成员|值|说明|
 |:---|:---|:---|
 |fullDomainName|0|完整域名。|
-|netBiosDomainName|1 |net bios 域名。|
-
+|netBiosDomainName|1|net bios 域名。|
 
 
 

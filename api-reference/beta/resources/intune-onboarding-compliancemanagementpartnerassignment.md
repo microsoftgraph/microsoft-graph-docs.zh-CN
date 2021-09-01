@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b9934055c42bc9489d698b3c40eea4d9587d8b37a7d05faca797724d739dc870
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 860d74bb52cc7fca441d9e90da21efb9ad5582ae
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235980"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783853"
 ---
 # <a name="compliancemanagementpartnerassignment-resource-type"></a>complianceManagementPartnerAssignment 资源类型
 
@@ -48,7 +48,6 @@ ms.locfileid: "54235980"
   }
 }
 ```
-
 
 
 

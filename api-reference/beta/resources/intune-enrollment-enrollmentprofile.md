@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1f2e3a1c26b134d30d76e62d314ac67e6fbe7992517da7e8975e0be28bec3fcb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: eb5dc9a6d759e6f8a72097777b87d80a5dd33f5c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54172888"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58799787"
 ---
 # <a name="enrollmentprofile-resource-type"></a>enrollmentProfile 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54172888"
 
 enrollmentProfile 资源表示配置集合，必须预先提供这些配置才能注册其标识已预先存储的某些设备。 预部署设备标识将分配给此类型的配置文件，以在注册相应设备时应用配置文件的配置。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 enrollmentProfiles](../api/intune-enrollment-enrollmentprofile-list.md)|[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) 集合|列出 [enrollmentProfile 对象的属性和](../resources/intune-enrollment-enrollmentprofile.md) 关系。|
@@ -31,7 +31,7 @@ enrollmentProfile 资源表示配置集合，必须预先提供这些配置才�
 |[删除 enrollmentProfile](../api/intune-enrollment-enrollmentprofile-delete.md)|无|删除 [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)。|
 |[更新 enrollmentProfile](../api/intune-enrollment-enrollmentprofile-update.md)|[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|更新 [enrollmentProfile 对象](../resources/intune-enrollment-enrollmentprofile.md) 的属性。|
 |[setDefaultProfile 操作](../api/intune-enrollment-enrollmentprofile-setdefaultprofile.md)|无|尚未记录|
-|[exportMobileConfig 函数](../api/intune-enrollment-enrollmentprofile-exportmobileconfig.md)|字符串|导出移动配置|
+|[exportMobileConfig 函数](../api/intune-enrollment-enrollmentprofile-exportmobileconfig.md)|String|导出移动配置|
 |[updateDeviceProfileAssignment 操作](../api/intune-enrollment-enrollmentprofile-updatedeviceprofileassignment.md)|无|尚未记录|
 
 ## <a name="properties"></a>属性
@@ -39,11 +39,11 @@ enrollmentProfile 资源表示配置集合，必须预先提供这些配置才�
 |:---|:---|:---|
 |id|String|对象的 GUID|
 |displayName|字符串|配置文件的名称|
-|description|String|配置文件的说明|
+|description|字符串|配置文件的说明|
 |requiresUserAuthentication|布尔值|指示配置文件是否要求用户身份验证|
 |configurationEndpointUrl|String|用于注册的配置终结点 URL|
-|enableAuthenticationViaCompanyPortal|布尔值|指示使用 Apple Setup Assistant 而不是 公司门户。|
-|requireCompanyPortalOnSetupAssistantEnrolledDevices|布尔值|指示公司门户注册的设备需要安装助手|
+|enableAuthenticationViaCompanyPortal|Boolean|指示使用 Apple Setup Assistant 而不是 公司门户。|
+|requireCompanyPortalOnSetupAssistantEnrolledDevices|布尔值|指示公司门户注册的设备上需要安装助手|
 
 ## <a name="relationships"></a>关系
 无
@@ -68,7 +68,6 @@ enrollmentProfile 资源表示配置集合，必须预先提供这些配置才�
   "requireCompanyPortalOnSetupAssistantEnrolledDevices": true
 }
 ```
-
 
 
 

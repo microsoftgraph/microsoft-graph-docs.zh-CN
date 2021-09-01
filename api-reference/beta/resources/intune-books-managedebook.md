@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2bb0a3c2d3909979b6d1380aaf42b78dda712239d7d5352d51ff0334d2b107f8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9f71e24d7938ecd1123a03916c8ba45685b9a907
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54142097"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806080"
 ---
 # <a name="managedebook-resource-type"></a>managedEBook 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54142097"
 
 包含托管电子书基属性的抽象类。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[List managedEBooks](../api/intune-books-managedebook-list.md)|[managedEBook](../resources/intune-books-managedebook.md) 集合|列出 [managedEBook](../resources/intune-books-managedebook.md) 对象的属性和关系。|
@@ -32,7 +32,7 @@ ms.locfileid: "54142097"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |displayName|String|电子书的名称。|
 |description|String|说明。|
 |publisher|String|发布者。|
@@ -79,7 +79,6 @@ ms.locfileid: "54142097"
   "privacyInformationUrl": "String"
 }
 ```
-
 
 
 

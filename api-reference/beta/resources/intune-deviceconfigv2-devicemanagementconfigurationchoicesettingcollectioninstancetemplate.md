@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 44be62559d79f0817cdb4a31f3147aaeb7180308184fa3b9e6fdfbdaf71f001c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d27e119d1dba2fa1e03c49da3c3d3191fc564ae2
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54173056"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58799463"
 ---
 # <a name="devicemanagementconfigurationchoicesettingcollectioninstancetemplate-resource-type"></a>deviceManagementConfigurationChoiceSettingCollectionInstanceTemplate 资源类型
 
@@ -32,7 +32,7 @@ ms.locfileid: "54173056"
 |settingDefinitionId|String|设置定义 ID 继承自 [deviceManagementConfigurationSettingInstanceTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstancetemplate.md)|
 |isRequired|Boolean|指示策略是否必须指定此设置。 继承自 [deviceManagementConfigurationSettingInstanceTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstancetemplate.md)|
 |choiceSettingCollectionValueTemplate|[deviceManagementConfigurationChoiceSettingValueTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationchoicesettingvaluetemplate.md) 集合|选项设置集合值模板|
-|allowUnmanagedValues|布尔值|链接策略可能会追加模板中不存在的值。|
+|allowUnmanagedValues|Boolean|链接策略可能会追加模板中不存在的值。|
 
 ## <a name="relationships"></a>关系
 无
@@ -129,7 +129,6 @@ ms.locfileid: "54173056"
   "allowUnmanagedValues": true
 }
 ```
-
 
 
 

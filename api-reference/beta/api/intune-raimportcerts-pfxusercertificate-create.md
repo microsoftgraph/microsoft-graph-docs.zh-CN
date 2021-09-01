@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5090dc7c92bccb61682a250062fcfe3395f8b5b19676a5d2d8709fc6654a76d6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cbc03dd85b7527b9ae944174c25a74439ea0d543
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54203895"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58800798"
 ---
 # <a name="create-pfxusercertificate"></a>创建 pfxUserCertificate
 
@@ -43,7 +43,7 @@ POST /pfxUserCertificates
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -64,7 +64,7 @@ POST /pfxUserCertificates
 |providerName|String|尚未记录|
 |encryptionKeyName|String|尚未记录|
 |paddingScheme|Int32|尚未记录|
-|status|Int32|尚未记录|
+|状态|Int32|尚未记录|
 |intendedPurpose|Int32|尚未记录|
 |createdTime|DateTimeOffset|尚未记录|
 |isDeleted|Boolean|尚未记录|
@@ -135,7 +135,6 @@ Content-Length: 789
   "eTag": "ETag value"
 }
 ```
-
 
 
 

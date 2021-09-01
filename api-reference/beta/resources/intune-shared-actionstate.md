@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1e93393b9ba47e12cb0096fc9fbddc9fd4fbb27b22e002730a81040d0ffa1f3b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 248e268eff326f3b5280cf237d90b37e2c56702b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54170389"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801043"
 ---
 # <a name="actionstate-enum-type"></a>actionState 枚举类型
 
@@ -26,13 +26,12 @@ ms.locfileid: "54170389"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|操作状态无效|
-|pending|1 |操作挂起|
-|canceled|2 |操作已取消。|
-|active|3 |操作处于活动状态。|
+|pending|1|操作挂起|
+|canceled|2|操作已取消。|
+|active|3|操作处于活动状态。|
 |done|4 |操作已完成，没有错误。|
 |failed|5 |操作失败|
 |notSupported|6 |不支持操作。|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e29eb3f6bbb3dc7c350c8e1b8dc506b92f8cb942
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: cdd550517504ee0eaae87ba7ff6a99809a78bded
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255374"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783363"
 ---
 # <a name="create-userexperienceanalyticsmetric"></a>创建 userExperienceAnalyticsMetric
 
@@ -27,9 +27,9 @@ ms.locfileid: "58255374"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -46,7 +46,7 @@ POST /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalytics
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -56,7 +56,7 @@ POST /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalytics
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|用户体验分析指标的唯一标识符。|
+|id|字符串|用户体验分析指标的唯一标识符。|
 |值|双精度|用户体验分析指标的值。|
 |unit|String|用户体验分析指标的单位。|
 
@@ -95,7 +95,6 @@ Content-Length: 177
   "unit": "Unit value"
 }
 ```
-
 
 
 

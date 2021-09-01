@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f3efa96c0223aba1aba5cc1377074c490647358c65f315dd382fdfdc338fc67f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8fed9594b0f9b34e3ddc48935335ab249f7539b5
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54172804"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58805701"
 ---
 # <a name="organization-resource-type"></a>组织资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54172804"
 
 组织资源表示在租户级别操作和配置的全局设置和资源的实例。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 organizations](../api/intune-onboarding-organization-list.md)|[organization](../resources/intune-onboarding-organization.md) 集合|列出 [organization](../resources/intune-onboarding-organization.md) 对象的属性和关系。|
@@ -64,7 +64,6 @@ ms.locfileid: "54172804"
   }
 }
 ```
-
 
 
 

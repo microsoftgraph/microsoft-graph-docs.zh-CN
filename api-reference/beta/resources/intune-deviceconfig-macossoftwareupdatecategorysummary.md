@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ee34d404b1322e23c336d4f60e3d31420d1d64f38d9dbb087ecef425fbebb965
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 17f9c532d3f5297bdf239324fd637b18ac1b7138
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54164340"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58790904"
 ---
 # <a name="macossoftwareupdatecategorysummary-resource-type"></a>macOSSoftwareUpdateCategorySummary 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54164340"
 
 设备和用户的 MacOS 软件更新类别摘要报告
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 macOSSoftwareUpdateCategorySummaries](../api/intune-deviceconfig-macossoftwareupdatecategorysummary-list.md)|[macOSSoftwareUpdateCategorySummary](../resources/intune-deviceconfig-macossoftwareupdatecategorysummary.md) 集合|列出 [macOSSoftwareUpdateCategorySummary 对象的属性和](../resources/intune-deviceconfig-macossoftwareupdatecategorysummary.md) 关系。|
@@ -35,9 +35,9 @@ ms.locfileid: "54164340"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|displayName|字符串|报告的名称|
+|displayName|String|报告的名称|
 |deviceId|String|设备 ID。|
-|userId|String|用户 ID。|
+|userId|字符串|用户 ID。|
 |updateCategory|[macOSSoftwareUpdateCategory](../resources/intune-deviceconfig-macossoftwareupdatecategory.md)|软件更新类型。 可取值为：`critical`、`configurationDataFile`、`firmware`、`other`。|
 |successfulUpdateCount|Int32|设备上成功更新的数量|
 |failedUpdateCount|Int32|设备上失败的更新数|
@@ -71,7 +71,6 @@ ms.locfileid: "54164340"
   "lastUpdatedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

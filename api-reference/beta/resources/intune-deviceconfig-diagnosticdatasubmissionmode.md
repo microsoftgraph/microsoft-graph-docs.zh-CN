@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 42da759552f2e9a4137fb27ec90e399053f1b3f753e68f92e66f077702ed4774
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2d4aa4818e018cecbf56f37936b84105a6162495
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54124771"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791197"
 ---
 # <a name="diagnosticdatasubmissionmode-enum-type"></a>diagnosticDataSubmissionMode 枚举类型
 
@@ -26,11 +26,10 @@ ms.locfileid: "54124771"
 |成员|值|说明|
 |:---|:---|:---|
 |userDefined|0|允许用户设置。|
-|无|1 |不会从操作系统组件发送遥测数据。 注意：此值仅适用于企业和服务器设备。 在其他设备上使用此设置等效于将值设置为 1。|
-|basic|2 |发送基本遥测数据。|
-|增强|3 |发送增强的遥测数据，包括使用情况和见解数据。|
+|无|1|不会从操作系统组件发送遥测数据。 注意：此值仅适用于企业和服务器设备。 在其他设备上使用此设置等效于将值设置为 1。|
+|basic|2|发送基本遥测数据。|
+|增强|3|发送增强的遥测数据，包括使用情况和见解数据。|
 |full|4 |发送完整的遥测数据，包括诊断数据，如系统状态。|
-
 
 
 

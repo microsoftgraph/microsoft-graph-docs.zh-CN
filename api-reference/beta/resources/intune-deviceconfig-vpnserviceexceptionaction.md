@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: baf1fa3bf6edcb3358c8ae56d2572365702c41273a04bd578c2c98af5e68d0ba
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 851292848633b17600228869e305b4504223dc96
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54139598"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783944"
 ---
 # <a name="vpnserviceexceptionaction-enum-type"></a>vpnServiceExceptionAction 枚举类型
 
@@ -26,9 +26,8 @@ ms.locfileid: "54139598"
 |成员|值|说明|
 |:---|:---|:---|
 |forceTrafficViaVPN|0|使该服务的所有流量都通过 VPN|
-|allowTrafficOutside|1 |允许 VPN 外部的服务|
-|dropTraffic|2 |从服务删除所有流量|
-
+|allowTrafficOutside|1|允许 VPN 外部的服务|
+|dropTraffic|2|从服务删除所有流量|
 
 
 

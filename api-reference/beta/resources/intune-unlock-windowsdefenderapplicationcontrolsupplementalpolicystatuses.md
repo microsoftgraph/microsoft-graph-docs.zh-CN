@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 17a32097dcbc7f678823cb3fdb076166bf1f5353aa581bfa69f7de16565b0726
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b8ef128d422e27ff747fda91eea6ee3ef046e963
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54181053"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58805680"
 ---
 # <a name="windowsdefenderapplicationcontrolsupplementalpolicystatuses-enum-type"></a>windowsDefenderApplicationControlSupplementalPolicyStatuses 枚举类型
 
@@ -26,11 +26,10 @@ ms.locfileid: "54181053"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|WindowsDefenderApplicationControl 补充策略的状态未知。|
-|success|1 |WindowsDefenderApplicationControl 补充策略有效。|
-|tokenError|2 |WindowsDefenderApplicationControl 补充策略在结构上可以正常使用，但授权令牌时出错。|
-|notAuthorizedByToken|3 |令牌不授权此 WindowsDefenderApplicationControl 补充策略。|
+|success|1|WindowsDefenderApplicationControl 补充策略有效。|
+|tokenError|2|WindowsDefenderApplicationControl 补充策略在结构上可以正常使用，但授权令牌时出错。|
+|notAuthorizedByToken|3|令牌不授权此 WindowsDefenderApplicationControl 补充策略。|
 |policyNotFound|4 |未找到 WindowsDefenderApplicationControl 补充策略。|
-
 
 
 

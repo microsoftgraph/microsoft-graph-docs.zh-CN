@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5440621cde8327b969141aa8dd0960508df94ba65a78ab19c8613e6b08d4edb3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8b81d1787bab950011633542653ab0afc81e3883
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249858"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58794425"
 ---
 # <a name="userexperienceanalyticsdevicestartupprocessperformance-resource-type"></a>userExperienceAnalyticsDeviceStartupProcessPerformance 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54249858"
 
 用户体验分析设备启动过程性能。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 userExperienceAnalyticsDeviceStartupProcessPerformances](../api/intune-devices-userexperienceanalyticsdevicestartupprocessperformance-list.md)|[userExperienceAnalyticsDeviceStartupProcessPerformance](../resources/intune-devices-userexperienceanalyticsdevicestartupprocessperformance.md) 集合|列出 [userExperienceAnalyticsDeviceStartupProcessPerformance 对象的属性和](../resources/intune-devices-userexperienceanalyticsdevicestartupprocessperformance.md) 关系。|
@@ -35,7 +35,7 @@ ms.locfileid: "54249858"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|用户体验分析设备启动进程性能的唯一标识符。|
-|processName|字符串|用户体验分析设备启动进程名称。|
+|processName|String|用户体验分析设备启动进程名称。|
 |productName|String|用户体验分析设备启动过程产品名称。|
 |发布者|String|用户体验分析设备启动进程发布者。|
 |deviceCount|Int64|用户体验分析设备启动过程汇总计数。|
@@ -65,7 +65,6 @@ ms.locfileid: "54249858"
   "totalImpactInMs": 1024
 }
 ```
-
 
 
 

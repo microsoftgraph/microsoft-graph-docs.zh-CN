@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4b73edbbaf73c93b6df3c90a3b42b51a80350467298980069cdf16d4da04e585
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b94cfecfa00378832c58ef048454eb9cbf98edb4
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54240020"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58784861"
 ---
 # <a name="auditactor-resource-type"></a>auditActor 资源类型
 
@@ -34,7 +34,7 @@ ms.locfileid: "54240020"
 |ipAddress|String|IPAddress。|
 |userId|String|用户 ID。|
 |userRoleScopeTags|[roleScopeTagInfo](../resources/intune-auditing-rolescopetaginfo.md) 集合|执行审核时的用户范围标记列表。|
-|remoteTenantId|String|远程租户 ID|
+|remoteTenantId|字符串|远程租户 ID|
 |remoteUserId|String|远程用户 ID|
 
 ## <a name="relationships"></a>关系
@@ -71,7 +71,6 @@ ms.locfileid: "54240020"
   "remoteUserId": "String"
 }
 ```
-
 
 
 

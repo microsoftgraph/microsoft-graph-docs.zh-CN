@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 876642204ce6253c915eec6b109c3b5b49ffa3c8b2dfc45200165d99dda1868d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bc0bb04e7545ade025b3659a921ccb34237a0290
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54179023"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801470"
 ---
 # <a name="securitybaselinecategorystatesummary-resource-type"></a>securityBaselineCategoryStateSummary 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "54179023"
 
 继承自 [securityBaselineStateSummary](../resources/intune-deviceintent-securitybaselinestatesummary.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 securityBaselineCategoryStateSummaries](../api/intune-deviceintent-securitybaselinecategorystatesummary-list.md)|[securityBaselineCategoryStateSummary](../resources/intune-deviceintent-securitybaselinecategorystatesummary.md) 集合|列出 [securityBaselineCategoryStateSummary 对象的属性和](../resources/intune-deviceintent-securitybaselinecategorystatesummary.md) 关系。|
@@ -44,7 +44,7 @@ ms.locfileid: "54179023"
 |errorCount|Int32|错误设备数 继承自 [securityBaselineStateSummary](../resources/intune-deviceintent-securitybaselinestatesummary.md)|
 |conflictCount|Int32|冲突设备数 继承自 [securityBaselineStateSummary](../resources/intune-deviceintent-securitybaselinestatesummary.md)|
 |notApplicableCount|Int32|不适用的设备数 继承自 [securityBaselineStateSummary](../resources/intune-deviceintent-securitybaselinestatesummary.md)|
-|displayName|字符串|类别名称|
+|displayName|String|类别名称|
 
 ## <a name="relationships"></a>关系
 无
@@ -70,7 +70,6 @@ ms.locfileid: "54179023"
   "displayName": "String"
 }
 ```
-
 
 
 

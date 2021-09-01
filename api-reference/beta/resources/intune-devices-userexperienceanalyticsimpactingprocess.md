@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 22ed53ee0ebd63d9a49da4a37fdbfd05487f0c0be7f33fb3b057da82214e77b7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fe90734826416aca89065c47568ce9e68d085753
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54161253"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58794404"
 ---
 # <a name="userexperienceanalyticsimpactingprocess-resource-type"></a>userExperienceAnalyticsImpactingProcess 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54161253"
 
 用户体验分析影响最强的进程实体。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 userExperienceAnalyticsImpactingProcesses](../api/intune-devices-userexperienceanalyticsimpactingprocess-list.md)|[userExperienceAnalyticsImpactingProcess](../resources/intune-devices-userexperienceanalyticsimpactingprocess.md) 集合|列出 [userExperienceAnalyticsImpactingProcess](../resources/intune-devices-userexperienceanalyticsimpactingprocess.md) 对象的属性和关系。|
@@ -36,7 +36,7 @@ ms.locfileid: "54161253"
 |:---|:---|:---|
 |id|String|用户体验分析影响最强的进程实体的唯一标识符。|
 |deviceId|String|受影响设备的唯一标识符。|
-|“类别”|字符串|影响流程的类别。|
+|“类别”|String|影响流程的类别。|
 |processName|字符串|进程名称。|
 |description|String|过程说明。|
 |发布者|String|进程的发布者。|
@@ -65,7 +65,6 @@ ms.locfileid: "54161253"
   "impactValue": "4.2"
 }
 ```
-
 
 
 
