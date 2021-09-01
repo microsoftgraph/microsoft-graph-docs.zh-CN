@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fe377a20b83ade145e1cdf4587cd3304fd06ae3f9406c9d0097b3f1fdc048bd3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5cf94c4d25c7e84343019d2671b1c8561b955be8
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54145647"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816301"
 ---
 # <a name="delete-onpremencryptedpayload"></a>删除 onPremEncryptedPayload
 
@@ -43,7 +43,7 @@ DELETE /onPremEncryptedPayloads/{onPremEncryptedPayloadsId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/onPremEncryptedPayloads/{onPremEncrypted
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

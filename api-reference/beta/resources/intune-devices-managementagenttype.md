@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a157111db947e9e7c186c30be6cc63a709b82922
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: f1593d4f25a3da7f631c69e105dc8652453e01f6
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58263369"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58815041"
 ---
 # <a name="managementagenttype-enum-type"></a>managementAgentType 枚举类型
 
@@ -25,9 +25,9 @@ ms.locfileid: "58263369"
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|eas|1 |设备由 Exchange 管理。|
-|mdm|2 |设备由 Intune MDM 管理。|
-|easMdm|3 |设备由托管服务器Exchange Intune MDM 管理。|
+|eas|1|设备由Exchange管理。|
+|mdm|2|设备由 Intune MDM 管理。|
+|easMdm|3|设备由托管服务器Exchange Intune MDM 管理。|
 |intuneClient|4 |Intune 客户端托管。|
 |easIntuneClient|5 |设备是 EAS 和 Intune 客户端双托管设备。|
 |configurationManagerClient|8 |设备由 Configuration Manager 管理。|
@@ -38,8 +38,7 @@ ms.locfileid: "58263369"
 |googleCloudDevicePolicyController|64|设备由 Google 的 CloudDPC 管理。|
 |microsoft365ManagedMdm|258|此设备通过 Intune Microsoft 365管理。|
 |msSense|1024|尚未记录|
-|intuneAosp|2048|此设备由 Intune 的 AOSP MDM 管理 (Android 开放源代码Project) 设备|
-
+|intuneAosp|2048|此设备由 Intune 的 AOSP MDM (Android 开放源代码Project) 设备|
 
 
 

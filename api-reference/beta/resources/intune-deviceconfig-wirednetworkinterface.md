@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0b9530dfae28ec95d9fd91e7623f40c80eaf4daf8864d7ef51ce550d00c965f0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2c3e8a300edd517d1081d584e019c9c30f93dcc2
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54182957"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58815594"
 ---
 # <a name="wirednetworkinterface-enum-type"></a>wiredNetworkInterface 枚举类型
 
@@ -23,16 +23,15 @@ ms.locfileid: "54182957"
 Apple 网络接口类型。
 
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |anyEthernet|0|任何以太网。|
-|firstActiveEthernet|1 |第一个活动以太网。|
-|secondActiveEthernet|2 |第二个活动以太网。|
-|thirdActiveEthernet|3 |第三个活动以太网。|
+|firstActiveEthernet|1|第一个活动以太网。|
+|secondActiveEthernet|2|第二个活动以太网。|
+|thirdActiveEthernet|3|第三个活动以太网。|
 |firstEthernet|4 |第一个以太网。|
 |secondEthernet|5 |第二个以太网。|
 |thirdEthernet|6 |第三个以太网。|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: eccba100b33e902bc7704a6f0fa3ff080b74b4aa8288b8d848b0eb0d229c43d3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ada2e640ead1e9e0cfd121e78ecf08cc93978ee9
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54232781"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804538"
 ---
 # <a name="firewallcertificaterevocationlistcheckmethodtype-enum-type"></a>firewallCertificateRevocationListCheckMethodType 枚举类型
 
@@ -26,10 +26,9 @@ firewallCertificateRevocationListCheckMethod 的可能值
 |成员|值|说明|
 |:---|:---|:---|
 |deviceDefault|0|Intune 未配置任何值，请勿替代用户配置的设备默认值|
-|无|1 |不检查证书吊销列表|
-|attempt|2 |仅在检查确认证书时，才尝试 CRL 检查并允许证书|
-|require|3 |在允许证书之前需要成功的 CRL 检查|
-
+|无|1|不检查证书吊销列表|
+|attempt|2|仅在检查确认证书时，才尝试 CRL 检查并允许证书|
+|require|3|在允许证书之前需要成功的 CRL 检查|
 
 
 

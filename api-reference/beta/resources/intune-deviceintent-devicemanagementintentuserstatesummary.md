@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ad27d792ed0058d831b17a071839986696ac2849b46a4bff5f59bff688775872
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ae189dbf5d5287e3123696c66cc433c41be174cc
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54242676"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58790379"
 ---
 # <a name="devicemanagementintentuserstatesummary-resource-type"></a>deviceManagementIntentUserStateSummary 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54242676"
 
 表示意图的用户状态摘要的实体
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 deviceManagementIntentUserStateSummary](../api/intune-deviceintent-devicemanagementintentuserstatesummary-get.md)|[deviceManagementIntentUserStateSummary](../resources/intune-deviceintent-devicemanagementintentuserstatesummary.md)|读取 [deviceManagementIntentUserStateSummary 对象的属性和](../resources/intune-deviceintent-devicemanagementintentuserstatesummary.md) 关系。|
@@ -60,7 +60,6 @@ ms.locfileid: "54242676"
   "successCount": 1024
 }
 ```
-
 
 
 

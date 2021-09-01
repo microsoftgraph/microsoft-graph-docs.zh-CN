@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4888ea507e17b962fed9c05dabf722c3c9d1b76dea1af36d78f211d2d6ef5867
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 68279250c1cf23d5e2fd52261c255a8f64a3b2a8
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249767"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58815489"
 ---
 # <a name="remoteassistancepartner-resource-type"></a>remoteAssistancePartner 资源类型
 
@@ -22,8 +22,8 @@ ms.locfileid: "54249767"
 
 RemoteAssistPartner 资源表示给定远程协助合作伙伴服务的元数据和状态。
 
-## <a name="methods"></a>Methods
-|方法|返回类型|说明|
+## <a name="methods"></a>方法
+|方法|返回类型|Description|
 |:---|:---|:---|
 |[列出 remoteAssistancePartners](../api/intune-remoteassistance-remoteassistancepartner-list.md)|[remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) 集合|列出 [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) 对象的属性和关系。|
 |[获取 remoteAssistancePartner](../api/intune-remoteassistance-remoteassistancepartner-get.md)|[remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md)|读取 [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) 对象的属性和关系。|
@@ -37,7 +37,7 @@ RemoteAssistPartner 资源表示给定远程协助合作伙伴服务的元数据
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|合作伙伴的唯一标识符。|
-|displayName|字符串|合作伙伴的显示名称。|
+|displayName|String|合作伙伴的显示名称。|
 |onboardingUrl|String|合作伙伴的载入门户的 URL，其中管理员可以配置其远程协助服务。|
 |onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune-remoteassistance-remoteassistanceonboardingstatus.md)|当前 TeamViewer 连接器状态的友好说明。 可取值为：`notOnboarded`、`onboarding`、`onboarded`。|
 |lastConnectionDateTime|DateTimeOffset|TEM 合作伙伴发送到 Intune 的上一个请求的时间戳。|
@@ -65,7 +65,6 @@ RemoteAssistPartner 资源表示给定远程协助合作伙伴服务的元数据
   "onboardingRequestExpiryDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

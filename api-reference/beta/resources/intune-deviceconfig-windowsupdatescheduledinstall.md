@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2599c463e0f6bd434741ac073000faac811e5e8ca332c2a53949569e92313477
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 599306d1f1b512c39e5ddce4805d3645fa7c1d74
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54183013"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58794453"
 ---
 # <a name="windowsupdatescheduledinstall-resource-type"></a>windowsUpdateScheduledInstall 资源类型
 
@@ -48,7 +48,6 @@ ms.locfileid: "54183013"
   "scheduledInstallTime": "String (time of day)"
 }
 ```
-
 
 
 

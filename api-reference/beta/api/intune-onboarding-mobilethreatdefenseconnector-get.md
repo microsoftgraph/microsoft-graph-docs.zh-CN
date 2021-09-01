@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 03a453664926c1717f5476e5b8a1315031f4a62a02eba791bab3f596b8ceb50d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 371a9066dda5ff51a876068551fc15c7177d219c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54170984"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803600"
 ---
 # <a name="get-mobilethreatdefenseconnector"></a>获取 mobileThreatDefenseConnector
 
@@ -29,7 +29,7 @@ ms.locfileid: "54170984"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All|
+|应用程序|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -46,7 +46,7 @@ GET /deviceManagement/mobileThreatDefenseConnectors/{mobileThreatDefenseConnecto
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/mobileThreatDefenseConnect
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 828
+Content-Length: 884
 
 {
   "value": {
@@ -88,11 +88,11 @@ Content-Length: 828
     "macDeviceBlockedOnMissingPartnerData": true,
     "partnerUnsupportedOsVersionBlocked": true,
     "partnerUnresponsivenessThresholdInDays": 6,
-    "allowPartnerToCollectIOSApplicationMetadata": true
+    "allowPartnerToCollectIOSApplicationMetadata": true,
+    "microsoftDefenderForEndpointAttachEnabled": true
   }
 }
 ```
-
 
 
 

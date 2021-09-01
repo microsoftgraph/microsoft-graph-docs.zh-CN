@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 807dccf28eb0c3de713f36dafcfc753405f069cceb45ff3351278f59e8ef8bc3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d5f3133f21d9da39cd3cd7bd6bb34f693b85889d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54226425"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58805750"
 ---
 # <a name="defendercloudblockleveltype-enum-type"></a>defenderCloudBlockLevelType 枚举类型
 
@@ -26,10 +26,9 @@ ms.locfileid: "54226425"
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|默认值，使用默认Windows Defender 防病毒阻止级别并提供强检测，而不会增加检测合法文件的风险|
-|high|1 |High 应用强级别的检测。|
-|highPlus|2 |High + 使用高级别，并应用其他保护措施|
-|zeroTolerance|3 |零容限阻止所有未知可执行文件|
-
+|high|1|High 应用强级别的检测。|
+|highPlus|2|High + 使用高级别，并应用其他保护措施|
+|zeroTolerance|3|零容限阻止所有未知可执行文件|
 
 
 

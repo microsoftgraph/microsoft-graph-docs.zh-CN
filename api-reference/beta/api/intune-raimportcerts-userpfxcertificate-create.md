@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b05e4ca7a62626425bb2f07e02e602ecd758d3f4b0775bf9da826f53ef93540f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8470bf0f648e68521d162c9846ec7075185f9bc7
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54170858"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58794896"
 ---
 # <a name="create-userpfxcertificate"></a>创建 userPFXCertificate
 
@@ -43,7 +43,7 @@ POST /deviceManagement/userPfxCertificates
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,13 +54,13 @@ POST /deviceManagement/userPfxCertificates
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|PFX 证书的唯一标识符。|
-|thumbprint|字符串|PFX 证书的 SHA-1 指纹。|
+|thumbprint|String|PFX 证书的 SHA-1 指纹。|
 |intendedPurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|从部署的角度来看，证书的目的。 可取值为：`unassigned`、`smimeEncryption`、`smimeSigning`、`vpn`、`wifi`。|
-|userPrincipalName|字符串|用户主体 PFX 证书的名称。|
+|userPrincipalName|String|用户主体 PFX 证书的名称。|
 |startDateTime|DateTimeOffset|证书的有效期开始日期/时间。|
 |expirationDateTime|DateTimeOffset|证书的有效期过期日期/时间。|
 |providerName|String|用于加密此 blob 的加密提供程序。|
-|keyName|String|提供程序中用于 (blob 的) 的名称。|
+|keyName|字符串|提供程序中用于 (blob 的) 的名称。|
 |paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|提供程序在加密/解密期间使用的填充方案。 可取值为：`none`、`pkcs1`、`oaepSha1`、`oaepSha256`、`oaepSha384`、`oaepSha512`。|
 |encryptedPfxBlob|二进制|加密的 PFX blob。|
 |encryptedPfxPassword|String|加密的 PFX 密码。|
@@ -120,7 +120,6 @@ Content-Length: 695
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

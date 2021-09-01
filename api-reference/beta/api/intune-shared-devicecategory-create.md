@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c995f49577e9f58e3c2b59d6a46bf9dd55504d1fe1990ac5ff3ca9284b12c489
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 388461d6d7fdd230e83b1db149346c05012f6ffa
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54173672"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816112"
 ---
 # <a name="create-devicecategory"></a>创建 deviceCategory
 
@@ -47,7 +47,7 @@ POST /deviceManagement/deviceCategories
 
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -58,10 +58,10 @@ POST /deviceManagement/deviceCategories
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|设备类别的唯一标识符。 只读。|
+|id|String|设备类别的唯一标识符。 只读。|
 |**板载**|
-|description|String|设备类别的可选说明。|
-|displayName|字符串|设备类别的显示名称。|
+|description|字符串|设备类别的可选说明。|
+|displayName|String|设备类别的显示名称。|
 
 ## <a name="response"></a>响应
 
@@ -101,7 +101,6 @@ Content-Length: 184
   "description": "Description value"
 }
 ```
-
 
 
 

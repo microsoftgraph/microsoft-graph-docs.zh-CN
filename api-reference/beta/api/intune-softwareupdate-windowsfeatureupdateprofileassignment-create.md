@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b480c7f4c80ed2795b7e6eb8937be3c4c32b6b13c40ecb7cf2dd89193f3eb1fc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ba8c998c2a1814c1d636b3c8c986dc0d4a409c70
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54153781"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58790449"
 ---
 # <a name="create-windowsfeatureupdateprofileassignment"></a>创建 windowsFeatureUpdateProfileAssignment
 
@@ -43,7 +43,7 @@ POST /deviceManagement/windowsFeatureUpdateProfiles/{windowsFeatureUpdateProfile
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -97,7 +97,6 @@ Content-Length: 393
   }
 }
 ```
-
 
 
 

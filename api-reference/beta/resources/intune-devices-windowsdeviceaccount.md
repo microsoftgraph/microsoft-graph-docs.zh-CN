@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 114f7be61bbcb3f99fbe76aca32882c76c71dcbbb22d4163ba3361e47e8d00cc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c4a46a4f73ed5b2cdcebc578b3ce6c017cc10277
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54139416"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816492"
 ---
 # <a name="windowsdeviceaccount-resource-type"></a>windowsDeviceAccount 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "54139416"
 尚未记录
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |密码|String|尚未记录|
 
@@ -43,7 +43,6 @@ ms.locfileid: "54139416"
   "password": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 60b20350906d2f9fef8276e47493115390c9c19292a386db4ace680523a7a6c6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2c5a1eb74fe5270bb768841af896663b41dd56fc
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54251258"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803999"
 ---
 # <a name="windowsdefenderscanactionresult-resource-type"></a>windowsDefenderScanActionResult 资源类型
 
@@ -54,7 +54,6 @@ Windows Defender 最后扫描结果
   "scanType": "String"
 }
 ```
-
 
 
 

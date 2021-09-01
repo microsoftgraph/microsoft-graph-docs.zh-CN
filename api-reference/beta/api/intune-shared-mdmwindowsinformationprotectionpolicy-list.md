@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 75e18f5b7b3221f56036eff5ef7a19b0ac39842150b1ea6aa94d920030ab02b2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e506e86575fd8aed60591cd5144915f5e3a0c16b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54187999"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804321"
 ---
 # <a name="list-mdmwindowsinformationprotectionpolicies"></a>列出 mdmWindowsInformationProtectionPolicies
 
@@ -47,7 +47,7 @@ GET /deviceAppManagement/mdmWindowsInformationProtectionPolicies
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -206,7 +206,6 @@ Content-Length: 4684
   ]
 }
 ```
-
 
 
 

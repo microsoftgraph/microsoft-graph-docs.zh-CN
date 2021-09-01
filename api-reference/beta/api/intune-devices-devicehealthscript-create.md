@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5dedf56d1cdd03fc14d55557f7078efe0746a4de
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 2ade3ccd31369588da3c183e85de9682e4930885
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58264750"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58814838"
 ---
 # <a name="create-devicehealthscript"></a>创建 deviceHealthScript
 
@@ -27,9 +27,9 @@ ms.locfileid: "58264750"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/deviceHealthScripts
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -56,16 +56,16 @@ POST /deviceManagement/deviceHealthScripts
 |id|String|设备运行状况脚本的唯一标识符|
 |发布者|String|设备运行状况脚本发布者的名称|
 |version|String|设备运行状况脚本的版本|
-|displayName|字符串|设备运行状况脚本的名称|
-|description|String|设备运行状况脚本的说明|
+|displayName|String|设备运行状况脚本的名称|
+|description|字符串|设备运行状况脚本的说明|
 |detectionScriptContent|二进制|检测 powershell 脚本的全部内容|
 |remediationScriptContent|二进制|修正 powershell 脚本的全部内容|
 |createdDateTime|DateTimeOffset|创建设备运行状况脚本的时间戳。 此属性是只读的。|
 |lastModifiedDateTime|DateTimeOffset|修改设备运行状况脚本的时间戳。 此属性是只读的。|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示执行上下文的类型。 可取值为：`system`、`user`。|
 |enforceSignatureCheck|布尔值|指示是否需要检查脚本签名|
-|runAs32Bit|布尔值|指示 PowerShell 脚本 (32) 32 位运行|
-|roleScopeTagIds|String collection|设备运行状况脚本的范围标记标识列表|
+|runAs32Bit|Boolean|指示 PowerShell 脚本 (脚本) 32 位运行|
+|roleScopeTagIds|字符串集合|设备运行状况脚本的范围标记标识列表|
 |isGlobalScript|布尔值|确定这是否为 Microsoft 专有脚本。 专有脚本是只读的|
 |highestAvailableVersion|String|Microsoft 专有脚本的最高可用版本|
 |detectionScriptParameters|[deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md) 集合|ComplexType DetectionScriptParameters 对象的列表。|
@@ -172,7 +172,6 @@ Content-Length: 1393
   ]
 }
 ```
-
 
 
 

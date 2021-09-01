@@ -5,12 +5,12 @@ localization_priority: Priority
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: resourcePageType
-ms.openlocfilehash: b85956c3cf9cadbcbfd347cc50d33df6735c3a7894306fde8399196058caf8e1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0ffd6ad7ebcaddca149b66004cef13f24ba72a1e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196528"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58805989"
 ---
 # <a name="subscription-resource-type"></a>订阅资源类型
 
@@ -29,7 +29,7 @@ ms.locfileid: "54196528"
 - [打印机][] (当打印机的打印作业进入”JobFetchable”状态时 - 准备好提取打印) 和通用打印中的 [printTaskDefinition][]。 有关详细信息，请参阅 [订阅云打印 API 中的更改通知](/graph/universal-print-webhook-notifications)。
 - 在 Azure Active Directory 中的 [用户][]。
 
-查看“[使用 Microsoft Graph API 获取更改通知](webhooks.md)”了解各支持资源的可能资源路径值。
+关于每个支持资源的可能资源路径值，请参阅[使用 Microsoft Graph API 获取更改通知](webhooks.md)。
 
 ## <a name="methods"></a>方法
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5795a34cbe5767d058a699348e6109c14c3289730458ef17e7903b0ec202bf3a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 02378a4963f99cb21d331f739ce727d25ccce8ff
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54248507"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795541"
 ---
 # <a name="subjectnameformat-enum-type"></a>subjectNameFormat 枚举类型
 
@@ -26,15 +26,14 @@ ms.locfileid: "54248507"
 |成员|值|说明|
 |:---|:---|:---|
 |commonName|0|公用名。|
-|commonNameIncludingEmail|1 |公用名，包括电子邮件。|
-|commonNameAsEmail|2 |公用名作为电子邮件。|
-|custom|3 |自定义主题名称格式。|
+|commonNameIncludingEmail|1|公用名，包括电子邮件。|
+|commonNameAsEmail|2|公用名作为电子邮件。|
+|custom|3|自定义主题名称格式。|
 |commonNameAsIMEI|5 |通用名称为 IMEI。|
 |commonNameAsSerialNumber|6 |公用名作为序列号。|
 |commonNameAsAadDeviceId|7 |公用名作为序列号。|
 |commonNameAsIntuneDeviceId|8 |公用名作为序列号。|
 |commonNameAsDurableDeviceId|9 |公用名作为序列号。|
-
 
 
 

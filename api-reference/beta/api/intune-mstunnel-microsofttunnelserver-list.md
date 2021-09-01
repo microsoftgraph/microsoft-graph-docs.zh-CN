@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b491428f7ac6afc39cc06f7dde0c8db93a731e6ba2f91247469be7a11be74745
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8b469512bab7a2ce99c80e9f7bf5e4c27c44e63d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54123165"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818341"
 ---
 # <a name="list-microsofttunnelservers"></a>列出 microsoftTunnelServers
 
@@ -27,9 +27,9 @@ ms.locfileid: "54123165"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All、MicrosoftTunnelGateway.Read.All、MicrosoftTunnelGateway.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|MicrosoftTunnelGateway.Read.All、MicrosoftTunnelGateway.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -43,7 +43,7 @@ GET /deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/microsoftTunn
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/microsoftTunnelSites/{micr
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 310
+Content-Length: 422
 
 {
   "value": [
@@ -74,12 +74,13 @@ Content-Length: 310
       "id": "b5cf0aee-0aee-b5cf-ee0a-cfb5ee0acfb5",
       "displayName": "Display Name value",
       "tunnelServerHealthStatus": "healthy",
-      "lastCheckinDateTime": "2017-01-01T00:02:46.0431416-08:00"
+      "lastCheckinDateTime": "2017-01-01T00:02:46.0431416-08:00",
+      "agentImageDigest": "Agent Image Digest value",
+      "serverImageDigest": "Server Image Digest value"
     }
   ]
 }
 ```
-
 
 
 

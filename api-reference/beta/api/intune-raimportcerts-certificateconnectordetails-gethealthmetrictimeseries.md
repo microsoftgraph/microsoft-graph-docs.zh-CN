@@ -1,18 +1,18 @@
 ---
-title: getGroupPolicySettingsDeviceSettingsReport 操作
+title: getHealthMetricTimeSeries 操作
 description: 尚未记录
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 31477342678cf0f486b15e06c792f5967fa54d7d
+ms.openlocfilehash: 1c694c47be08e9ab2fda8268fa0ac2e4682508cc
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58802577"
+ms.locfileid: "58814019"
 ---
-# <a name="getgrouppolicysettingsdevicesettingsreport-action"></a>getGroupPolicySettingsDeviceSettingsReport 操作
+# <a name="gethealthmetrictimeseries-action"></a>getHealthMetricTimeSeries 操作
 
 命名空间：microsoft.graph
 
@@ -37,7 +37,7 @@ ms.locfileid: "58802577"
 }
 -->
 ``` http
-POST /deviceManagement/reports/getGroupPolicySettingsDeviceSettingsReport
+POST /deviceManagement/certificateConnectorDetails/getHealthMetricTimeSeries
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -53,47 +53,30 @@ POST /deviceManagement/reports/getGroupPolicySettingsDeviceSettingsReport
 
 |属性|类型|说明|
 |:---|:---|:---|
-|name|String|尚未记录|
-|select|String collection|尚未记录|
-|search|String|尚未记录|
-|groupBy|String collection|尚未记录|
-|orderBy|String collection|尚未记录|
-|skip|Int32|尚未记录|
-|top|Int32|尚未记录|
-|sessionId|String|尚未记录|
-|filter|String|尚未记录|
+|timeSeries|[timeSeriesParameter](../resources/intune-raimportcerts-timeseriesparameter.md)|尚未记录|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此操作在响应 `200 OK` 正文中返回 响应代码和 Stream。
+如果成功，此操作在响应正文中返回 响应代码和 `200 OK` [certificateConnectorHealthMetricValue](../resources/intune-raimportcerts-certificateconnectorhealthmetricvalue.md) 集合。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/reports/getGroupPolicySettingsDeviceSettingsReport
+POST https://graph.microsoft.com/beta/deviceManagement/certificateConnectorDetails/getHealthMetricTimeSeries
 
 Content-type: application/json
-Content-length: 278
+Content-length: 242
 
 {
-  "name": "Name value",
-  "select": [
-    "Select value"
-  ],
-  "search": "Search value",
-  "groupBy": [
-    "Group By value"
-  ],
-  "orderBy": [
-    "Order By value"
-  ],
-  "skip": 4,
-  "top": 3,
-  "sessionId": "Session Id value",
-  "filter": "Filter value"
+  "timeSeries": {
+    "@odata.type": "microsoft.graph.timeSeriesParameter",
+    "metricName": "Metric Name value",
+    "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
+    "endDateTime": "2017-01-01T00:03:30.9241974-08:00"
+  }
 }
 ```
 
@@ -102,10 +85,17 @@ Content-length: 278
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 115
+Content-Length: 225
 
 {
-  "value": "Z2V0R3JvdXBQb2xpY3lTZXR0aW5nc0RldmljZVNldHRpbmdzUmVwb3J0IEludHVuZSBEb2MgU2FtcGxlIDYzMDIzNDI3MQ=="
+  "value": [
+    {
+      "@odata.type": "microsoft.graph.certificateConnectorHealthMetricValue",
+      "dateTime": "2016-12-31T23:59:57.0735821-08:00",
+      "successCount": 12,
+      "failureCount": 12
+    }
+  ]
 }
 ```
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a31849f4984edbabdda45e319df9a8cba5005cb76302f8b68dc414ef7a59b651
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 384eb054757e2a71ff15b4af45d91cc940416adb
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54150183"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58757900"
 ---
 # <a name="policysetstatus-enum-type"></a>policySetStatus 枚举类型
 
@@ -26,12 +26,11 @@ ms.locfileid: "54150183"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|默认值。|
-|验证|1 |所有 PolicySet 项现在都验证工作负荷的相应设置。|
-|partialSuccess|2 |完成所有 PolicySet 项的进程后，但失败。|
-|success|3 |部署所有 PolicySet 项。 并不意味着所有部署都成功。 |
+|验证|1|所有 PolicySet 项现在都验证工作负荷的相应设置。|
+|partialSuccess|2|完成所有 PolicySet 项的进程后，但失败。|
+|success|3|部署所有 PolicySet 项。 并不意味着所有部署都成功。 |
 |error|4 |PolicySet 处理完全失败。|
 |notAssigned|5 |未向任何组分配 PolicySet/PolicySetItem。|
-
 
 
 

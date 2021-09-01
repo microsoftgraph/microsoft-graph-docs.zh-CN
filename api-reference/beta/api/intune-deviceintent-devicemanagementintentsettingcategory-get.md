@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3fbfa4841fe282b5fb35228037d1cda8e62779cf2a5ee47e52fa98fd8e3c19f0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 12f188e3c14848e8ecedbfe6fa492a4c6c38eaa5
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54228420"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801695"
 ---
 # <a name="get-devicemanagementintentsettingcategory"></a>获取 deviceManagementIntentSettingCategory
 
@@ -46,7 +46,7 @@ GET /deviceManagement/intents/{deviceManagementIntentId}/categories/{deviceManag
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -79,7 +79,6 @@ Content-Length: 226
   }
 }
 ```
-
 
 
 

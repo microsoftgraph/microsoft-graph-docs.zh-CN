@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8ee4e47c17095c6731a57c2de56f5769e9e8df2d40d67d2bc0b40aa3f4d1a0d7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 67a33c9d4cb1791e5d5de870805738dcd58f9cd5
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54176489"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58805413"
 ---
 # <a name="omasetting-resource-type"></a>omaSetting 资源类型
 
@@ -26,7 +26,7 @@ OMA 设置定义。
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|显示名称。|
-|description|字符串|说明。|
+|description|String|说明。|
 |omaUri|String|OMA。|
 |secretReferenceValueId|String|用于查找解密密码的 ReferenceId。 此属性是只读的。|
 |isEncrypted|Boolean|指示值字段是否加密。 此属性是只读的。|
@@ -51,7 +51,6 @@ OMA 设置定义。
   "isEncrypted": true
 }
 ```
-
 
 
 

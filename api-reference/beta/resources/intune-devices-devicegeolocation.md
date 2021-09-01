@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 49c8b1153af97a9f53ac8e2acd13404b719ba8349082c4c27c522d13cca7cb4e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fd132eaf0088aa73d4e7ae2e8dc31b67600630b0
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54246189"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58817080"
 ---
 # <a name="devicegeolocation-resource-type"></a>deviceGeoLocation 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "54246189"
 设备位置
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |lastCollectedDateTimeUtc|DateTimeOffset|记录位置时的时间，相对于 UTC|
 |lastCollectedDateTime|DateTimeOffset|记录位置时的时间，相对于 UTC|
@@ -59,7 +59,6 @@ ms.locfileid: "54246189"
   "speed": "4.2"
 }
 ```
-
 
 
 

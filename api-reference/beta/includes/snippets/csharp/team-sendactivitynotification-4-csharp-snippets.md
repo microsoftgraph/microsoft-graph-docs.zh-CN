@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5c57e7b6f56e0662638f3edccb75531683c8363d
-ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
+ms.openlocfilehash: a7ad745f932a8c9c87507d57d6939b1bcbe7f04d1575a9ac9357c9d84caba093
+ms.sourcegitcommit: 24d0ea8e2bcb54c2f397133460c3d26fb0ba705f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53317121"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "58785456"
 ---
 ```csharp
 
@@ -13,33 +13,29 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var topic = new TeamworkActivityTopic
 {
-    Source = TeamworkActivityTopicSource.EntityUrl,
-    Value = "https://graph.microsoft.com/beta/teams/e8bece96-d393-4b9b-b8da-69cedef1a7e7"
+    Source = TeamworkActivityTopicSource.Text,
+    Value = "Deployment Approvals Channel",
+    WebUrl = "https://teams.microsoft.com/l/message/19:448cfd2ac2a7490a9084a9ed14cttr78c@thread.skype/1605223780000?tenantId=c8b1bf45-3834-4ecf-971a-b4c755ee677d&groupId=d4c2a937-f097-435a-bc91-5c1683ca7245&parentMessageId=1605223771864&teamName=Approvals&channelName=Azure%20DevOps&createdTime=1605223780000"
 };
 
-var activityType = "pendingFinanceApprovalRequests";
+var activityType = "deploymentApprovalRequired";
 
 var previewText = new ItemBody
 {
-    Content = "Internal spending team has a pending finance approval requests"
-};
-
-var recipient = new TeamMembersNotificationRecipient
-{
-    TeamId = "e8bece96-d393-4b9b-b8da-69cedef1a7e7"
+    Content = "New deployment requires your approval"
 };
 
 var templateParameters = new List<KeyValuePair>()
 {
     new KeyValuePair
     {
-        Name = "pendingRequestCount",
-        Value = "5"
+        Name = "deploymentId",
+        Value = "6788662"
     }
 };
 
-await graphClient.Teams["{team-id}"]
-    .SendActivityNotification(topic,activityType,null,previewText,templateParameters,recipient)
+await graphClient.Users["{user-id}"].Teamwork
+    .SendActivityNotification(topic,activityType,null,previewText,templateParameters)
     .Request()
     .PostAsync();
 
