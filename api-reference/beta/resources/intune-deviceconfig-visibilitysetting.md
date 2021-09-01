@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: dd1fe56850a7022e0b36caf053638fd3632659bddd92d82c6c92d1d039e67916
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 667a7aa89bdf7fd2d301a102dda82f2eda012a57
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54176475"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789938"
 ---
 # <a name="visibilitysetting-enum-type"></a>visibilitySetting 枚举类型
 
@@ -26,9 +26,8 @@ ms.locfileid: "54176475"
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置。|
-|hide|1 |隐藏。|
-|show|2 |显示。|
-
+|hide|1|隐藏。|
+|show|2|显示。|
 
 
 

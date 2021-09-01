@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2684f3e039bce75c67fccd63a90e120ce619563697510134e9d9bb09d63b1d20
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c3b656994f2de42620c5254f0145bc12adf577e6
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54183224"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58813136"
 ---
 # <a name="androiddeviceownerkioskmodeiconsize-enum-type"></a>androidDeviceOwnerKioskModeIconSize 枚举类型
 
@@ -26,12 +26,11 @@ Android 设备所有者展台模式托管主屏幕图标大小。
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置;将忽略此值。|
-|最小|1 |最小图标大小。|
-|小|2 |小图标大小。|
-|regular|3 |常规图标大小。|
+|最小|1|最小图标大小。|
+|小|2|小图标大小。|
+|regular|3|常规图标大小。|
 |大|4 |大图标大小。|
 |最大|5 |最大图标大小。|
-
 
 
 

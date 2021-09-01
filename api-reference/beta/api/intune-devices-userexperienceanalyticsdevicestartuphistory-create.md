@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d67d267e0ef1d572562e009c0cb30f4dd5bb81e6
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: cdcef9d891cd22ad4dae4d9ebd298c261f855074
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266245"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783713"
 ---
 # <a name="create-userexperienceanalyticsdevicestartuphistory"></a>创建 userExperienceAnalyticsDeviceStartupHistory
 
@@ -27,9 +27,9 @@ ms.locfileid: "58266245"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/userExperienceAnalyticsDeviceStartupHistory
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,7 +53,7 @@ POST /deviceManagement/userExperienceAnalyticsDeviceStartupHistory
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|用户体验分析设备启动历史记录的唯一标识符。|
+|id|字符串|用户体验分析设备启动历史记录的唯一标识符。|
 |deviceId|String|用户体验分析设备 ID。|
 |startTime|DateTimeOffset|用户体验分析设备启动开始时间。|
 |coreBootTimeInMs|Int32|用户体验分析设备核心启动时间（以毫秒为单位）。|
@@ -64,7 +64,7 @@ POST /deviceManagement/userExperienceAnalyticsDeviceStartupHistory
 |coreLoginTimeInMs|Int32|用户体验分析设备核心登录时间（以毫秒为单位）。|
 |responsiveDesktopTimeInMs|Int32|用户体验分析响应式桌面时间（以毫秒为单位）。|
 |totalLoginTimeInMs|Int32|用户体验分析设备登录总时间（以毫秒为单位）。|
-|isFirstLogin|布尔值|用户体验分析设备第一次登录。|
+|isFirstLogin|Boolean|用户体验分析设备第一次登录。|
 |isFeatureUpdate|布尔值|用户体验分析设备启动记录是一项功能更新。|
 |operatingSystemVersion|String|用户体验分析设备启动记录的操作系统版本。|
 |restartCategory|[userExperienceAnalyticsOperatingSystemRestartCategory](../resources/intune-devices-userexperienceanalyticsoperatingsystemrestartcategory.md)|操作系统重启类别。 可取值为：`unknown`、`restartWithUpdate`、`restartWithoutUpdate`、`blueScreen`、`shutdownWithUpdate`、`shutdownWithoutUpdate`、`longPowerButtonPress`、`bootError`、`update`。|
@@ -134,7 +134,6 @@ Content-Length: 729
   "restartFaultBucket": "Restart Fault Bucket value"
 }
 ```
-
 
 
 

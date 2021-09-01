@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 08b064a3af27ff2b46f9a8dcd2d1e30b5d1b693f7049bec0169842208ac6966f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e2f0fd9035e06c92f402337ce200983e31f53e32
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54218147"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785064"
 ---
 # <a name="create-manageddevicemobileappconfigurationdevicestatus"></a>创建 managedDeviceMobileAppConfigurationDeviceStatus
 
@@ -44,7 +44,7 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisio
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -62,7 +62,7 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisio
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|设备符合性宽限期的到期日期/时间|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|策略报告的符合性状态。 可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。|
 |lastReportedDateTime|DateTimeOffset|策略报告的上次修改日期时间。|
-|userPrincipalName|字符串|UserPrincipalName。|
+|userPrincipalName|String|UserPrincipalName。|
 
 
 
@@ -111,7 +111,6 @@ Content-Length: 512
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

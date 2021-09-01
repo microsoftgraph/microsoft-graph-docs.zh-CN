@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ae000ea64ff06d9b6991b2169435b6a69479e59ccf2b106f6437b2f3bb73b65b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4043dd153ef083dd02c5a2b96c15e6f14ad29f90
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54207248"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58784511"
 ---
 # <a name="create-windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus"></a>创建 windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
 
@@ -43,7 +43,7 @@ POST /deviceAppManagement/wdacSupplementalPolicies/{windowsDefenderApplicationCo
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -61,8 +61,8 @@ POST /deviceAppManagement/wdacSupplementalPolicies/{windowsDefenderApplicationCo
 |osDescription|String|Windows操作系统版本说明。|
 |deploymentStatus|[windowsDefenderApplicationControlSupplementalPolicyStatuses](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicystatuses.md)|策略的部署状态。 可取值为：`unknown`、`success`、`tokenError`、`notAuthorizedByToken`、`policyNotFound`。|
 |userName|String|此设备的用户的名称。|
-|userPrincipalName|字符串|用户主体名称。|
-|policyVersion|字符串|WindowsDefenderApplicationControl 补充策略的可读版本。|
+|userPrincipalName|String|用户主体名称。|
+|policyVersion|String|WindowsDefenderApplicationControl 补充策略的可读版本。|
 
 
 
@@ -113,7 +113,6 @@ Content-Length: 535
   "policyVersion": "Policy Version value"
 }
 ```
-
 
 
 

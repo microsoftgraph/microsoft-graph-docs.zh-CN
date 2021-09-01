@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rolyon
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: af1eb5af42745adc4e8cc50fe0aa44aa726c5cfe
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 5bd4e08f8811f49fb6f21afab4ba57ea68c2090a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58265733"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785197"
 ---
 # <a name="update-mobileapptroubleshootingevent"></a>更新 mobileAppTroubleshootingEvent
 
@@ -48,7 +48,7 @@ PATCH /users/{usersId}/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingE
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -58,13 +58,13 @@ PATCH /users/{usersId}/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingE
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|对象的 GUID|
+|id|字符串|对象的 GUID|
 |**疑难解答**|
-|additionalInformation|[keyValuePair](../resources/intune-troubleshooting-keyvaluepair.md) 集合|一组字符串键和字符串值对，提供有关疑难解答事件的其他信息。|
+|additionalInformation|[keyValuePair](../resources/intune-shared-keyvaluepair.md) 集合|一组字符串键和字符串值对，提供有关疑难解答事件的其他信息。|
 |applicationId|String|Intune 应用程序标识符。|
 |correlationId|String|用于跟踪服务中的故障的 ID。 |
 |eventDateTime|DateTimeOffset|事件发生的时间。 |
-|eventName|字符串|与疑难解答事件对应的事件名称。 可选。|
+|eventName|String|与疑难解答事件对应的事件名称。 可选。|
 |history|[mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md) 集合|Intune 移动应用程序疑难解答历史记录项。|
 |managedDeviceIdentifier|String|Intune 创建或收集的设备标识符。|
 |troubleshootingErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|包含有关错误及其修正的详细信息的对象。 |
@@ -99,7 +99,6 @@ Content-Length: 120
   "id": "77943c10-3c10-7794-103c-9477103c9477"
 }
 ```
-
 
 
 

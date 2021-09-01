@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fce112e03366c0bf01fbae6105fc0e74fc67a419
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 2ce97538fc74d6dcb99062d685c83864f109d6ef
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58263381"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816975"
 ---
 # <a name="update-userexperienceanalyticsapphealthappperformancebyappversiondeviceid"></a>更新 userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId
 
@@ -27,9 +27,9 @@ ms.locfileid: "58263381"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformanceBy
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -59,7 +59,7 @@ PATCH /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformanceBy
 |processedDateTime|DateTimeOffset|上次计算统计信息的日期和时间。|
 |appName|String|应用程序名。|
 |appDisplayName|String|应用程序的友好名称。|
-|appPublisher|String|应用程序的发布者。|
+|appPublisher|字符串|应用程序的发布者。|
 |appVersion|String|应用程序的版本。|
 |appCrashCount|Int32|应用的崩溃数。 有效值 -2147483648 2147483647|
 
@@ -110,7 +110,6 @@ Content-Length: 488
   "appCrashCount": 13
 }
 ```
-
 
 
 

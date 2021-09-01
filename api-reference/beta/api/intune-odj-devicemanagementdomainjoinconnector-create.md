@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ec7b74b4b527790e399b5304d64d3976185dc8a184316076a1568f8bba6be7a8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: afadbd6fdffb4e91eac789cfc35fc975e5ba6653
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54225095"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785841"
 ---
 # <a name="create-devicemanagementdomainjoinconnector"></a>创建 deviceManagementDomainJoinConnector
 
@@ -43,7 +43,7 @@ POST /deviceManagement/domainJoinConnectors
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,7 +53,7 @@ POST /deviceManagement/domainJoinConnectors
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|表示连接器的唯一标识符。|
+|id|字符串|表示连接器的唯一标识符。|
 |displayName|字符串|连接器显示名称。|
 |lastConnectionDateTime|DateTimeOffset|上次连接器与 Intune 联系的时间。|
 |state|[deviceManagementDomainJoinConnectorState](../resources/intune-odj-devicemanagementdomainjoinconnectorstate.md)|连接器状态。 可取值为：`active`、`error`、`inactive`。|
@@ -98,7 +98,6 @@ Content-Length: 284
   "version": "Version value"
 }
 ```
-
 
 
 

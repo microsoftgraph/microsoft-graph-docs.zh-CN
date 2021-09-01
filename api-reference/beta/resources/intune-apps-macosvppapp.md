@@ -1,16 +1,16 @@
 ---
 title: macOsVppApp 资源类型
-description: 包含 MacOS Volume-Purchased Program (应用程序) 属性。
+description: 包含 MacOS Volume-Purchased 程序应用程序 (继承) 属性。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9578231ec916efa552de9a98b1fca9f07fe55f929c3573155d4f6961f06717c6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 06892bd3712df2a4b648510ceef8a4932f69f430
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54233005"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785428"
 ---
 # <a name="macosvppapp-resource-type"></a>macOsVppApp 资源类型
 
@@ -20,12 +20,12 @@ ms.locfileid: "54233005"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-包含 MacOS Volume-Purchased Program (应用程序) 属性。
+包含 MacOS Volume-Purchased 程序应用程序 (继承) 属性。
 
 
 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 macOsVppApps](../api/intune-apps-macosvppapp-list.md)|[macOsVppApp](../resources/intune-apps-macosvppapp.md) 集合|列出 [macOsVppApp](../resources/intune-apps-macosvppapp.md) 对象的属性和关系。|
@@ -38,7 +38,7 @@ ms.locfileid: "54233005"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|displayName|字符串|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|displayName|String|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |description|String|应用的说明。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publisher|String|应用的发布者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|要显示在应用详细信息中并用于图标上传的大图标。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
@@ -53,7 +53,7 @@ ms.locfileid: "54233005"
 |uploadState|Int32|上载状态。 可能的值是：0 - `Not Ready` 、1 - `Ready` 、2 - `Processing` 。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否将应用分配给至少一个组的值。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|roleScopeTagIds|String collection|此移动应用的范围标记 ID 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|roleScopeTagIds|字符串集合|此移动应用的范围标记 ID 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|子应用具有的依赖项总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersedingAppCount|Int32|此应用直接或间接取代的应用总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersededAppCount|Int32|此应用直接或间接被取代的应用总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
@@ -149,7 +149,6 @@ ms.locfileid: "54233005"
   ]
 }
 ```
-
 
 
 

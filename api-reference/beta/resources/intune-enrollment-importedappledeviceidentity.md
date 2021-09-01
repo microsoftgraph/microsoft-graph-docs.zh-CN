@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6a0abe081c116afeaf0188188430112e92c896861382be25ade215ef51962c68
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3f70ab03b99e9dbe7a0ebe75920f3670ee6e2ae4
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54153045"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58817066"
 ---
 # <a name="importedappledeviceidentity-resource-type"></a>importedAppleDeviceIdentity 资源类型
 
@@ -22,8 +22,8 @@ ms.locfileid: "54153045"
 
 importedAppleDeviceIdentity 资源表示 Apple 设备的导入设备标识。
 
-## <a name="methods"></a>Methods
-|方法|返回类型|说明|
+## <a name="methods"></a>方法
+|方法|返回类型|Description|
 |:---|:---|:---|
 |[列出 importedAppleDeviceIdentities](../api/intune-enrollment-importedappledeviceidentity-list.md)|[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md) 集合|列出 [importedAppleDeviceIdentity 对象的属性和](../resources/intune-enrollment-importedappledeviceidentity.md) 关系。|
 |[获取 importedAppleDeviceIdentity](../api/intune-enrollment-importedappledeviceidentity-get.md)|[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|读取 [importedAppleDeviceIdentity 对象的属性和](../resources/intune-enrollment-importedappledeviceidentity.md) 关系。|
@@ -35,7 +35,7 @@ importedAppleDeviceIdentity 资源表示 Apple 设备的导入设备标识。
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |serialNumber|String|设备序列号|
 |requestedEnrollmentProfileId|String|注册配置文件 ID 管理员打算在下一次注册期间应用到设备|
 |requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|向设备分配注册配置文件的时间|
@@ -76,7 +76,6 @@ importedAppleDeviceIdentity 资源表示 Apple 设备的导入设备标识。
   "platform": "String"
 }
 ```
-
 
 
 

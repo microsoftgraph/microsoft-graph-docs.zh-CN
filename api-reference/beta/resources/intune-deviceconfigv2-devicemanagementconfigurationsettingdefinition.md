@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bdde828660f092cd0c2a4af1a01bb7deac27c524a93afde7cdb35d1511fb3333
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9ccb4e2a81e9992964d62a35d4873347207a84f1
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54227384"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58784812"
 ---
 # <a name="devicemanagementconfigurationsettingdefinition-resource-type"></a>deviceManagementConfigurationSettingDefinition 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54227384"
 
 尚未记录
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceManagementConfigurationSettingDefinitions](../api/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition-list.md)|[deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md) 集合|列出 [deviceManagementConfigurationSettingDefinition 对象的属性和](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md) 关系。|
@@ -36,22 +36,22 @@ ms.locfileid: "54227384"
 |:---|:---|:---|
 |适用性|[deviceManagementConfigurationSettingApplicability](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingapplicability.md)|有关适用设备设置的详细信息|
 |accessTypes|[deviceManagementConfigurationSettingAccessTypes](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingaccesstypes.md)|设置的读/写访问模式。 可取值为：`none`、`add`、`copy`、`delete`、`get`、`replace` 或 `execute`。|
-|keywords|String collection|要搜索设置的标记|
+|keywords|字符串集合|要搜索设置的标记|
 |infoUrls|String collection|可在以下链接列表中找到有关设置详细信息|
 |occurrence|[deviceManagementConfigurationSettingOccurrence](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingoccurrence.md)|指示是否要求设置|
-|baseUri|字符串|基本云解决方案提供商路径|
-|offsetUri|String|从基本位置偏移云解决方案提供商路径|
-|rootDefinitionId|String|根设置定义（如果该设置是子设置）。|
-|categoryId|String|指定在云解决方案提供商云解决方案提供商的指定配置服务提供程序中配置 (区域) |
+|baseUri|String|基本云解决方案提供商路径|
+|offsetUri|字符串|从基本位置偏移云解决方案提供商路径|
+|rootDefinitionId|字符串|根设置定义（如果该设置是子设置）。|
+|categoryId|字符串|指定在云解决方案提供商云解决方案提供商的指定配置服务提供程序中配置 (区域) |
 |settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|设置类型，例如配置和合规性。 可取值为：`none`、`configuration`。|
 |uxBehavior|[deviceManagementConfigurationControlType](../resources/intune-deviceconfigv2-devicemanagementconfigurationcontroltype.md)|在 UX 中设置控件类型表示形式。 可取值为：`default`、`dropdown`、`smallTextBox`、`largeTextBox`、`toggle`、`multiheaderGrid` 或 `contextPane`。|
 |visibility|[deviceManagementConfigurationSettingVisibility](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvisibility.md)|将可见性范围设置为 UX。 可取值为：`none`、`settingsCatalog`、`template`。|
 |referredSettingInformationList|[deviceManagementConfigurationReferredSettingInformation](../resources/intune-deviceconfigv2-devicemanagementconfigurationreferredsettinginformation.md) 集合|引用的设置信息的列表。|
-|id|String|项的标识符|
+|id|字符串|项的标识符|
 |description|字符串|项目说明|
-|helpText|String|项目的帮助文本|
+|helpText|字符串|项目的帮助文本|
 |name|String|项目名称|
-|displayName|字符串|项目的显示名称|
+|displayName|String|项目的显示名称|
 |version|String|项目版本|
 
 ## <a name="relationships"></a>关系
@@ -108,7 +108,6 @@ ms.locfileid: "54227384"
   "version": "String"
 }
 ```
-
 
 
 

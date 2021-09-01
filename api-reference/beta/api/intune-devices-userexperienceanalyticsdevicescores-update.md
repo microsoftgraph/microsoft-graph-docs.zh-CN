@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e30276e5161600f4e456740e7e9d9838bea0ecb8
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 1d2c7f86403af7d0093930a37f9298f075c3bc79
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58262240"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58819940"
 ---
 # <a name="update-userexperienceanalyticsdevicescores"></a>更新 userExperienceAnalyticsDeviceScores
 
@@ -27,9 +27,9 @@ ms.locfileid: "58262240"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/userExperienceAnalyticsDeviceScores/{userExperienceAnaly
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -60,6 +60,7 @@ PATCH /deviceManagement/userExperienceAnalyticsDeviceScores/{userExperienceAnaly
 |endpointAnalyticsScore|双精度|用户体验分析设备分数。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
 |startupPerformanceScore|双精度|用户体验分析设备启动性能分数。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
 |appReliabilityScore|双精度|用户体验分析设备应用可靠性分数。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
+|workFromAnywhereScore|双精度|用户体验分析设备可以随时随地进行评分。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
 |healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析设备的运行状况。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
 
 
@@ -74,7 +75,7 @@ PATCH /deviceManagement/userExperienceAnalyticsDeviceScores/{userExperienceAnaly
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDeviceScores/{userExperienceAnalyticsDeviceScoresId}
 Content-type: application/json
-Content-length: 364
+Content-length: 397
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDeviceScores",
@@ -84,6 +85,7 @@ Content-length: 364
   "endpointAnalyticsScore": 7.333333333333333,
   "startupPerformanceScore": 7.666666666666667,
   "appReliabilityScore": 6.333333333333333,
+  "workFromAnywhereScore": 7.0,
   "healthStatus": "insufficientData"
 }
 ```
@@ -93,7 +95,7 @@ Content-length: 364
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 413
+Content-Length: 446
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDeviceScores",
@@ -104,10 +106,10 @@ Content-Length: 413
   "endpointAnalyticsScore": 7.333333333333333,
   "startupPerformanceScore": 7.666666666666667,
   "appReliabilityScore": 6.333333333333333,
+  "workFromAnywhereScore": 7.0,
   "healthStatus": "insufficientData"
 }
 ```
-
 
 
 

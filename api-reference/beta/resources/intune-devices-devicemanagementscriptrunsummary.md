@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bb868e87f9d3a8c090a4e3b5e3a11706ea0a29a470fda80595172453493c854d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ad5a72192186e098e87f3a7285ac4a8db5e1d5da
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54150316"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818987"
 ---
 # <a name="devicemanagementscriptrunsummary-resource-type"></a>deviceManagementScriptRunSummary 资源类型
 
@@ -22,8 +22,8 @@ ms.locfileid: "54150316"
 
 包含设备管理脚本的运行摘要的属性。
 
-## <a name="methods"></a>Methods
-|方法|返回类型|说明|
+## <a name="methods"></a>方法
+|方法|返回类型|Description|
 |:---|:---|:---|
 |[获取 deviceManagementScriptRunSummary](../api/intune-devices-devicemanagementscriptrunsummary-get.md)|[deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md)|读取 [deviceManagementScriptRunSummary 对象的属性和](../resources/intune-devices-devicemanagementscriptrunsummary.md) 关系。|
 |[更新 deviceManagementScriptRunSummary](../api/intune-devices-devicemanagementscriptrunsummary-update.md)|[deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md)|更新 [deviceManagementScriptRunSummary 对象](../resources/intune-devices-devicemanagementscriptrunsummary.md) 的属性。|
@@ -58,7 +58,6 @@ ms.locfileid: "54150316"
   "errorUserCount": 1024
 }
 ```
-
 
 
 

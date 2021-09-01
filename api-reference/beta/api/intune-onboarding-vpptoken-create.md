@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d880307e03868b230b15a04ede470d46a2ed65d574ef445a329a17ce0e124b1c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b62ac78b981527ae60b69a2496f86c85eefaa59d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54181571"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58817143"
 ---
 # <a name="create-vpptoken"></a>创建 vppToken
 
@@ -43,7 +43,7 @@ POST /deviceAppManagement/vppTokens
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -66,11 +66,11 @@ POST /deviceAppManagement/vppTokens
 |lastSyncStatus|[vppTokenSyncStatus](../resources/intune-onboarding-vpptokensyncstatus.md)|使用 Apple Volume Purchase Program 令牌触发的上一次应用程序同步的当前同步状态。 可取值为：`none`、`inProgress`、`completed`、`failed`。 可取值为：`none`、`inProgress`、`completed`、`failed`。|
 |automaticallyUpdateApps|Boolean|是否自动更新适用于 VPP 令牌的应用。|
 |countryOrRegion|String|是否自动更新适用于 VPP 令牌的应用。|
-|dataSharingConsentGranted|布尔值|同意与 Apple Volume Purchase Program 共享数据。|
-|displayName|字符串|管理员指定的令牌友好名称。|
+|dataSharingConsentGranted|Boolean|同意与 Apple Volume Purchase Program 共享数据。|
+|displayName|String|管理员指定的令牌友好名称。|
 |locationName|String|从 Apple VPP 返回的令牌位置。|
-|claimTokenManagementFromExternalMdm|布尔值|管理员同意允许从外部 MDM 进行声明令牌管理。|
-|roleScopeTagIds|String collection|角色作用域标记分配给此实体的标识。|
+|claimTokenManagementFromExternalMdm|Boolean|管理员同意允许从外部 MDM 进行声明令牌管理。|
+|roleScopeTagIds|字符串集合|角色作用域标记分配给此实体的标识。|
 
 
 
@@ -156,7 +156,6 @@ Content-Length: 1115
   ]
 }
 ```
-
 
 
 

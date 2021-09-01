@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c1e688376f1687bd1b188410e20cad4cd56748c1c73de10460bd84bf9c854601
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 80691dd6d564a1c6776920c61fe0c854afb6e6de
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54165656"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789620"
 ---
 # <a name="macosredirectsinglesignonextension-resource-type"></a>macOSRedirectSingleSignOnExtension 资源类型
 
@@ -28,7 +28,7 @@ ms.locfileid: "54165656"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|extensionIdentifier|字符串|获取或设置为指定 URL 执行 SSO 的应用扩展的捆绑 ID。|
+|extensionIdentifier|String|获取或设置为指定 URL 执行 SSO 的应用扩展的捆绑 ID。|
 |teamIdentifier|String|获取或设置为指定 URL 执行 SSO 的应用扩展的团队 ID。|
 |配置|[keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md) 集合|获取或设置用于配置凭据类型配置文件的键入键值对的列表。 该集合最多可包含 500 个元素。|
 |urlPrefixes|String collection|标识提供程序的一个或多个 URL 前缀，应用扩展代表这些提供程序执行单一登录。 URL 必须以 http:// 或 https:// 开头。 所有 URL 前缀对于所有配置文件都必须是唯一的。|
@@ -60,7 +60,6 @@ ms.locfileid: "54165656"
   ]
 }
 ```
-
 
 
 

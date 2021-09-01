@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f70163997f92e0b5822d95f11c8589643be185709013bc75b72a65a202ca1136
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5f0513640fa50def7c08aa7d4980713c47e4652c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54195328"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58807340"
 ---
 # <a name="create-windowsdefenderapplicationcontrolsupplementalpolicy"></a>创建 windowsDefenderApplicationControlSupplementalPolicy
 
@@ -43,7 +43,7 @@ POST /deviceAppManagement/wdacSupplementalPolicies
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,14 +54,14 @@ POST /deviceAppManagement/wdacSupplementalPolicies
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|WindowsDefenderApplicationControl 补充策略的密钥。|
-|displayName|字符串|WindowsDefenderApplicationControl 显示名称策略的一部分。|
-|description|String|WindowsDefenderApplicationControl 补充策略的说明。|
+|displayName|String|WindowsDefenderApplicationControl 显示名称策略的一部分。|
+|description|字符串|WindowsDefenderApplicationControl 补充策略的说明。|
 |content|二进制|采用字节数组格式的 WindowsDefenderApplicationControl 补充策略内容。|
-|contentFileName|字符串|WindowsDefenderApplicationControl 补充策略内容的文件名。|
+|contentFileName|String|WindowsDefenderApplicationControl 补充策略内容的文件名。|
 |version|String|WindowsDefenderApplicationControl 补充策略的版本。|
 |creationDateTime|DateTimeOffset|上载 WindowsDefenderApplicationControl 补充策略的日期和时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改 WindowsDefenderApplicationControl 补充策略的日期和时间。|
-|roleScopeTagIds|String collection|此 WindowsDefenderApplicationControl 补充策略实体的范围标记列表。|
+|roleScopeTagIds|字符串集合|此 WindowsDefenderApplicationControl 补充策略实体的范围标记列表。|
 
 
 
@@ -113,7 +113,6 @@ Content-Length: 517
   ]
 }
 ```
-
 
 
 

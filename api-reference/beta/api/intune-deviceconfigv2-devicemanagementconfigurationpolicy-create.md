@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f3a8cb686dc557f7d2017d24ece31c3748b28810
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 974804309312b52023a59c200372e456b2524255
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58261328"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791002"
 ---
 # <a name="create-devicemanagementconfigurationpolicy"></a>创建 deviceManagementConfigurationPolicy
 
@@ -29,7 +29,7 @@ ms.locfileid: "58261328"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -44,7 +44,7 @@ POST /deviceManagement/reusablePolicySettings/{deviceManagementReusablePolicySet
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -56,14 +56,14 @@ POST /deviceManagement/reusablePolicySettings/{deviceManagementReusablePolicySet
 |:---|:---|:---|
 |id|String|策略文档的键。 自动生成。|
 |name|字符串|策略名称|
-|description|String|策略说明|
-|平台|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|此策略的平台。 可取值为：`none`、`macOS`、`windows10X`、`windows10`。|
-|technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|此策略的技术。 可取值为：`none`、`mdm`、`windows10XManagement`、`configManager`、`microsoftSense`。|
+|description|字符串|策略说明|
+|平台|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|此策略的平台。 可能的值是：`none`、`macOS`、`windows10X`、`windows10`。|
+|technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|此策略的技术。 可取值为：`none`、`mdm`、`windows10XManagement`、`configManager`、`microsoftSense`、`exchangeOnline`。|
 |createdDateTime|DateTimeOffset|策略创建日期和时间。 此属性是只读的。|
 |lastModifiedDateTime|DateTimeOffset|策略上次修改日期和时间。 此属性是只读的。|
 |settingCount|Int32|设置数。 此属性是只读的。|
-|creationSource|字符串|策略创建源|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
+|creationSource|String|策略创建源|
+|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。|
 |isAssigned|Boolean|策略分配状态。 此属性是只读的。|
 |templateReference|[deviceManagementConfigurationPolicyTemplateReference](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicytemplatereference.md)|模板参考信息|
 
@@ -134,7 +134,6 @@ Content-Length: 857
   }
 }
 ```
-
 
 
 

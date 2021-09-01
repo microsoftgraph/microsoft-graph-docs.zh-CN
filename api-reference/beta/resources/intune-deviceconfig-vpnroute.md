@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fff555715de5c87af4f19c6ea9601161137bd6467f45712be3b6644a890a40b8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 93985888872f1397d0a33a75787df1c95f764097
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54139619"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786346"
 ---
 # <a name="vpnroute-resource-type"></a>vpnRoute 资源类型
 
@@ -25,7 +25,7 @@ VPN 路由定义。
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|destinationPrefix|字符串|目标前缀 (IPv4/v6 地址) 。|
+|destinationPrefix|String|目标前缀 (IPv4/v6 地址) 。|
 |prefixSize|Int32|前缀大小。  (1-32) 。 有效值为 1 到 32|
 
 ## <a name="relationships"></a>关系
@@ -45,7 +45,6 @@ VPN 路由定义。
   "prefixSize": 1024
 }
 ```
-
 
 
 

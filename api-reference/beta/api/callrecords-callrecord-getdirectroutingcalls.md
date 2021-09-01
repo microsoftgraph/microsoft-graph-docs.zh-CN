@@ -5,12 +5,12 @@ author: williamlooney
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 5dd389ddba5e3f081b850e2303833b47b832e7d7
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 85d6b54f0cde797757f5e8711c1ae058a668dd95
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872917"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786913"
 ---
 # <a name="callrecord-getdirectroutingcalls"></a>callRecord： getDirectRoutingCalls
 
@@ -28,7 +28,7 @@ ms.locfileid: "49872917"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持。 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | CallRecords.Read.All |
+| 应用程序                            | CallRecord-PstnCalls.Read.All、CallRecords.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -52,23 +52,25 @@ GET /communications/callRecords/getDirectRoutingCalls
 在请求 URL 中，提供以下查询参数（含值）。
 下表显示了可用于此函数的参数。
 
-|参数|类型|Description|
+|参数|类型|说明|
 |:---|:---|:---|
 |fromDateTime|DateTimeOffset|要查询的起始时间范围。 UTC（包含两者）。<br/>时间范围基于呼叫开始时间。|
 |toDateTime|DateTimeOffset|要查询的结束时间范围。 UTC（包含两者）。|
 
 ## <a name="response"></a>响应
 
-如果成功，此函数在响应正文中返回响应代码和 `200 OK` [directRoutingLogRow](../resources/callrecords-directroutinglogrow.md) 条目集合。
+如果成功，此函数在响应正文中返回 响应代码和 `200 OK` [directRoutingLogRow](../resources/callrecords-directroutinglogrow.md) 条目集合。
   
-如果日期范围内有 1000 多个条目，正文还包含一个 URL 以查询下一页 `@odata.NextLink` 的呼叫条目。 日期范围中的最后一页没有 `@odata.NextLink` 。 有关详细信息，请参阅 [在应用中](/graph/paging)分页 Microsoft Graph 数据。
+如果日期范围内包含的条目超过 1000 个，正文中还包含 一个 URL，用于查询下一页 `@odata.NextLink` 的呼叫条目。 日期范围中的最后一页没有 `@odata.NextLink` 。 有关详细信息，请参阅分页[Microsoft Graph应用中的数据](/graph/paging)。
 
-## <a name="examples"></a>示例
+## <a name="example"></a>示例
+
+以下示例演示如何获取指定日期范围内发生的直接路由呼叫的记录集合。 该响应包括枚举第一个响应中的记录数，以及获取前 `"@odata.count": 1000` `@odata.NextLink` 1000 条之后的记录。 为了可读性，该响应只显示 1 条记录的集合。 假设该日期范围内呼叫超过 1000 个。
 
 ### <a name="request"></a>请求
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "callrecord_getdirectroutingcalls"
 }
 -->
@@ -81,7 +83,7 @@ GET https://graph.microsoft.com/beta/communications/callRecords/getDirectRouting
 
 **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.callRecords.directRoutingLogRow",
   "isCollection": true
@@ -107,8 +109,8 @@ HTTP/1.1 200 OK
             "duration": 5,
             "callType": "ByotIn",
             "successfulCall": true,
-            "callerNumber": "+12345678**_",
-            "calleeNumber": "+01234567_*_",
+            "callerNumber": "+12345678***",
+            "calleeNumber": "+01234567***",
             "mediaPathLocation": "USWE",
             "signalingLocation": "EUNO",
             "finalSipCode": 0,
@@ -123,6 +125,6 @@ HTTP/1.1 200 OK
 
 ## <a name="see-also"></a>另请参阅
 
-_ [Microsoft Teams 管理中心](/microsoftteams/teams-analytics-and-reports/pstn-usage-report#direct-routing) 中的 Microsoft Teams 直接路由使用情况报告
-* [Microsoft Teams 管理中心中用于直接路由](/MicrosoftTeams/direct-routing-health-dashboard) 的运行状况仪表板
-* [Microsoft Graph 中的 PSTN 呼叫报告](callrecords-callrecord-getpstncalls.md)
+* [Microsoft Teams管理中心中的](/microsoftteams/teams-analytics-and-reports/pstn-usage-report#direct-routing)直接路由Microsoft Teams报告。
+* [用于直接路由的运行状况仪表板](/MicrosoftTeams/direct-routing-health-dashboard)Microsoft Teams管理中心。
+* [Microsoft Graph 中的 PSTN 呼叫报告](callrecords-callrecord-getpstncalls.md)。

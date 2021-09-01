@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3d9276a73a3b1ebd263babd55b212568a9d9b78717cd6b7d3c0f2c491697d7f2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a26d6bb79c9fef5adecd39f19ebcafc73e539571
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54226929"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58790974"
 ---
 # <a name="update-windowsautopilotdeploymentprofileassignment"></a>更新 windowsAutopilotDeploymentProfileAssignment
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevice
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,10 +53,10 @@ PATCH /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevice
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|分配的键。|
+|id|字符串|分配的键。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Autopilot 部署配置文件Windows分配目标。|
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|用于部署到组、直接或直接/策略集的资源类型。 可取值为：`direct`、`policySets`。|
-|sourceId|字符串|用于部署到组的资源的标识符|
+|sourceId|String|用于部署到组的资源的标识符|
 
 
 
@@ -103,7 +103,6 @@ Content-Length: 460
   "sourceId": "Source Id value"
 }
 ```
-
 
 
 

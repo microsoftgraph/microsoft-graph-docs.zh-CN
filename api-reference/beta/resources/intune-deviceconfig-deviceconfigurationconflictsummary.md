@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8c020e38c030c8b9acfd427b047a9dbf0f37a9093cf3dc570c848499cf41ce72
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b1a4dc4da3b20fb268eafeb3826acbe9ad93a113
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54241953"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58819190"
 ---
 # <a name="deviceconfigurationconflictsummary-resource-type"></a>deviceConfigurationConflictSummary 资源类型
 
@@ -22,8 +22,8 @@ ms.locfileid: "54241953"
 
 一组设备配置策略的冲突摘要。
 
-## <a name="methods"></a>Methods
-|方法|返回类型|说明|
+## <a name="methods"></a>方法
+|方法|返回类型|Description|
 |:---|:---|:---|
 |[列出 deviceConfigurationConflictSummaries](../api/intune-deviceconfig-deviceconfigurationconflictsummary-list.md)|[deviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md) 集合|列出 [deviceConfigurationConflictSummary 对象的属性和](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md) 关系。|
 |[获取 deviceConfigurationConflictSummary](../api/intune-deviceconfig-deviceconfigurationconflictsummary-get.md)|[deviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md)|读取 [deviceConfigurationConflictSummary 对象的属性和](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md) 关系。|
@@ -32,7 +32,7 @@ ms.locfileid: "54241953"
 |[更新 deviceConfigurationConflictSummary](../api/intune-deviceconfig-deviceconfigurationconflictsummary-update.md)|[deviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md)|更新 [deviceConfigurationConflictSummary 对象](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md) 的属性。|
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |conflictingDeviceConfigurations|[settingSource](../resources/intune-deviceconfig-settingsource.md) 集合|与给定设置相冲突的策略集|
 |id|String|这组冲突策略的 ID。 此 id 是 ConflictingDeviceConfigurations 中所有策略的 ID，按字典顺序使用下划线分隔。|
@@ -68,7 +68,6 @@ ms.locfileid: "54241953"
   "deviceCheckinsImpacted": 1024
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2f933474ae5509e8550d756484098b45c7a5bd47
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: cef654e53ff25058b76423bd0c936512000b7862
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58265902"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58800266"
 ---
 # <a name="get-iosgeneraldeviceconfiguration"></a>获取 iosGeneralDeviceConfiguration
 
@@ -48,7 +48,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 11612
+Content-Length: 11696
 
 {
   "value": {
@@ -370,11 +370,12 @@ Content-Length: 11612
     "unpairedExternalBootToRecoveryAllowed": true,
     "onDeviceOnlyDictationForced": true,
     "wiFiConnectToAllowedNetworksOnlyForced": true,
+    "onDeviceOnlyTranslationForced": true,
+    "managedPasteboardRequired": true,
     "kioskModeAppType": "appStoreApp"
   }
 }
 ```
-
 
 
 

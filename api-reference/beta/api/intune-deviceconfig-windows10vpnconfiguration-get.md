@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 945eb21f11ab02c4cd0839456ffbbdc499b52bcf63d66da3e5e45bc84dc34bf6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: caf1df1d93fc5a2d50e36ad6bd337f593e2d4080
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54199072"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818405"
 ---
 # <a name="get-windows10vpnconfiguration"></a>获取 windows10VpnConfiguration
 
@@ -48,7 +48,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -225,7 +225,6 @@ Content-Length: 4950
   }
 }
 ```
-
 
 
 

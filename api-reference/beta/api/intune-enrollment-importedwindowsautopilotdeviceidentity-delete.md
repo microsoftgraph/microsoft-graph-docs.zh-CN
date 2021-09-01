@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dbd157744c570870f14d0bda4096c213d8a1f01c9f169524da4e3e7528795b9d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2e47778a31f7e0f4f70e4443157fea74d7ab2a4f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54164776"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58817213"
 ---
 # <a name="delete-importedwindowsautopilotdeviceidentity"></a>删除 importedWindowsAutopilotDeviceIdentity
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/importedWindowsAutopilotDeviceIdentities/{importedWindo
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/importedWindowsAutopilo
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

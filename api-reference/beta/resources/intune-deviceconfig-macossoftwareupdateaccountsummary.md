@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 57a9a7f01c44aea16e931114cade113bef2f14460bd3e9851d8989a68b348b27
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b2e5218f5c1473ce01106ec8044c9c55d15d867f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54239460"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785162"
 ---
 # <a name="macossoftwareupdateaccountsummary-resource-type"></a>macOSSoftwareUpdateAccountSummary 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54239460"
 
 设备和用户的 MacOS 软件更新帐户摘要报告
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 macOSSoftwareUpdateAccountSummaries](../api/intune-deviceconfig-macossoftwareupdateaccountsummary-list.md)|[macOSSoftwareUpdateAccountSummary](../resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md) 集合|列出 [macOSSoftwareUpdateAccountSummary 对象的属性和](../resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md) 关系。|
@@ -39,7 +39,7 @@ ms.locfileid: "54239460"
 |deviceId|String|设备 ID。|
 |userId|字符串|用户 ID。|
 |deviceName|String|设备名称。|
-|userPrincipalName|字符串|用户主体名称|
+|userPrincipalName|String|用户主体名称|
 |osVersion|String|操作系统版本。|
 |successfulUpdateCount|Int32|设备上成功更新的数量。|
 |failedUpdateCount|Int32|设备上失败的更新数。|
@@ -75,7 +75,6 @@ ms.locfileid: "54239460"
   "lastUpdatedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

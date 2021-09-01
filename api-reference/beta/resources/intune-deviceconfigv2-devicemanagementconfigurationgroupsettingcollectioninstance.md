@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7f925c8b9fee625fadf50d54e51cb7235e1ec1b2225621f96d6fc087152c1f66
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 916d6be071ae58209a42771171e1e69f6f6a1120
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54182950"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58784819"
 ---
 # <a name="devicemanagementconfigurationgroupsettingcollectioninstance-resource-type"></a>deviceManagementConfigurationGroupSettingCollectionInstance 资源类型
 
@@ -28,7 +28,7 @@ GroupSettingCollection 的实例
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|settingDefinitionId|字符串|设置定义 ID 继承自 [deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|
+|settingDefinitionId|String|设置定义 ID 继承自 [deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|
 |settingInstanceTemplateReference|[deviceManagementConfigurationSettingInstanceTemplateReference](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstancetemplatereference.md)|设置实例模板引用 继承自 [deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|
 |groupSettingCollectionValue|[deviceManagementConfigurationGroupSettingValue](../resources/intune-deviceconfigv2-devicemanagementconfigurationgroupsettingvalue.md) 集合|GroupSetting 值的集合|
 
@@ -268,7 +268,6 @@ GroupSettingCollection 的实例
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e2bfecdaec7bf3bb999acda442aeb9e55f0164c7725f44a19659d6aa6d2abdc8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: dc9f89c467a5181ddb156131bf44dbb98370158e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54127073"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58819127"
 ---
 # <a name="mediacontentratingunitedstates-resource-type"></a>mediaContentRatingUnitedStates 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "54127073"
 尚未记录
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |movieRating|[ratingUnitedStatesMoviesType](../resources/intune-deviceconfig-ratingunitedstatesmoviestype.md)|为美国选择的电影评级。 可取值为：`allAllowed`、`allBlocked`、`general`、`parentalGuidance`、`parentalGuidance13`、`restricted` 或 `adults`。|
 |tvRating|[ratingUnitedStatesTelevisionType](../resources/intune-deviceconfig-ratingunitedstatestelevisiontype.md)|为美国选择的电视评级。 可取值为：`allAllowed`、`allBlocked`、`childrenAll`、`childrenAbove7`、`general`、`parentalGuidance`、`childrenAbove14`、`adults`。|
@@ -45,7 +45,6 @@ ms.locfileid: "54127073"
   "tvRating": "String"
 }
 ```
-
 
 
 

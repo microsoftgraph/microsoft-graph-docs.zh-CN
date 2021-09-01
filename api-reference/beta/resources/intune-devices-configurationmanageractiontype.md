@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d95783f25c49c9e06474e088e32c9b4c2c3628f199ac16d6e6f99daf29192b57
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3308ae8369458d44f128863b4afd3ab83a07b8f4
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54236120"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818083"
 ---
 # <a name="configurationmanageractiontype-enum-type"></a>configurationManagerActionType 枚举类型
 
@@ -23,13 +23,12 @@ ms.locfileid: "54236120"
 Configuration Manager 客户端上的操作类型
 
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |refreshMachinePolicy|0|在 Configuration Manager 客户端上刷新计算机策略|
-|refreshUserPolicy|1 |在 Configuration Manager 客户端上刷新用户策略|
-|wakeUpClient|2 |唤醒 Configuration Manager 客户端|
-|appEvaluation|3 |Configuration Manager 客户端上的评估应用程序策略|
-
+|refreshUserPolicy|1|在 Configuration Manager 客户端上刷新用户策略|
+|wakeUpClient|2|唤醒 Configuration Manager 客户端|
+|appEvaluation|3|Configuration Manager 客户端上的评估应用程序策略|
 
 
 

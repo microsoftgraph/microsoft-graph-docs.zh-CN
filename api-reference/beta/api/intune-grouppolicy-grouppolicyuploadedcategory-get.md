@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b1241496e55ab2d03e5f027444fefb4dce4c431f37e6c1070f9810f801a9d469
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c2126ffc070938545944539222b387f9cb32a1aa
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54156938"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58807032"
 ---
 # <a name="get-grouppolicyuploadedcategory"></a>获取 groupPolicyUploadedCategory
 
@@ -49,7 +49,7 @@ GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/def
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -83,7 +83,6 @@ Content-Length: 270
   }
 }
 ```
-
 
 
 

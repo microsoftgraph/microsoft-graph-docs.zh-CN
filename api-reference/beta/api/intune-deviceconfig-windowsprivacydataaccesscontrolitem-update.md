@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 88f5cc7e2c2771ffcd7080ce369ba735fd8d6887f2668296ec60afa73e35f1a2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 017167850a67925b6b207bb03fc08edad902c5ea
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54211063"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806381"
 ---
 # <a name="update-windowsprivacydataaccesscontrolitem"></a>更新 windowsPrivacyDataAccessControlItem
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,10 +53,10 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|WindowsPrivacyDataAccessControlItem 的键。|
-|accessLevel|[windowsPrivacyDataAccessLevel](../resources/intune-deviceconfig-windowsprivacydataaccesslevel.md)|这表示指定应用程序将进入的隐私数据类别的访问级别。 可取值为：`notConfigured`、`forceAllow`、`forceDeny`、`userInControl`。|
+|id|字符串|WindowsPrivacyDataAccessControlItem 的键。|
+|accessLevel|[windowsPrivacyDataAccessLevel](../resources/intune-deviceconfig-windowsprivacydataaccesslevel.md)|这表示指定应用程序将进入的隐私数据类别的访问级别。 可能的值是：`notConfigured`、`forceAllow`、`forceDeny`、`userInControl`。|
 |dataCategory|[windowsPrivacyDataCategory](../resources/intune-deviceconfig-windowsprivacydatacategory.md)|这表示将应用特定访问控制的隐私数据类别。 可能的值是 `notConfigured` `accountInfo` `appsRunInBackground` ：、、、、、、、、 `calendar` `callHistory` `camera` `contacts` `diagnosticsInfo` `email` `location` `messaging` `microphone` `motion` `notifications` `phone` `radios` `tasks` `syncWithDevices` `trustedDevices` 。|
-|appPackageFamilyName|字符串|应用包系列Windows名称。 设置后，访问级别将应用于指定的应用程序。|
+|appPackageFamilyName|String|应用包系列Windows名称。 设置后，访问级别将应用于指定的应用程序。|
 |appDisplayName|String|应用包系列Windows名称。 设置后，访问级别将应用于指定的应用程序。|
 
 
@@ -98,7 +98,6 @@ Content-Length: 299
   "appDisplayName": "App Display Name value"
 }
 ```
-
 
 
 

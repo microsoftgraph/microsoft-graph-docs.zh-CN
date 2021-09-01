@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4177aeba4dc43f193f42d2b4ffcfae339635cd69b70f7375bb8f153fd8e2ddf2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0168da185aa506f38723b8c922e19228c2310fde
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54136399"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786696"
 ---
 # <a name="edgehomebuttonconfiguration-resource-type"></a>edgeHomeButtonConfiguration 资源类型
 
@@ -41,7 +41,6 @@ ms.locfileid: "54136399"
   "@odata.type": "#microsoft.graph.edgeHomeButtonConfiguration"
 }
 ```
-
 
 
 

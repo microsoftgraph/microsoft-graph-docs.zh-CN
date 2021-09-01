@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 49d5ae845accebb359c60f9f83d91c0f34c737690f771d05f9f42ce7381a997b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bde602d0722e884743e41d70226865c26bfba600
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54125681"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58776278"
 ---
 # <a name="list-androidvpnconfigurations"></a>列出 androidVpnConfigurations
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -135,7 +135,6 @@ Content-Length: 2196
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 082d5d9538cb8fa87d93c06b7c11601449b47932
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 1802fb743c33648025cf1c62727317ae0110fed2
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58263384"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818257"
 ---
 # <a name="remoteassistancestate-enum-type"></a>remoteAssistanceState 枚举类型
 
@@ -23,12 +23,11 @@ ms.locfileid: "58263384"
 帐户的远程协助状态
 
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |notConfigured|0|未为帐户配置远程协助。 使用此值，快速助手远程协助功能。|
-|disabled|1 |对帐户禁用远程协助。 使用此值，快速助手帐户不允许远程协助会话。|
-|enabled|2 |为帐户启用远程协助。 使用此值，快速助手远程协助功能。|
-
+|disabled|1|对帐户禁用远程协助。 使用此值，快速助手帐户不允许远程协助会话。|
+|enabled|2|为帐户启用远程协助。 使用此值，快速助手远程协助功能。|
 
 
 

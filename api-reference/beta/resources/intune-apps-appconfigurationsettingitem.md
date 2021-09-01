@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e9c5349ecbbd9b61c1a5dacd5ac7006fe29f41a529c72f0bb0bf5e47a9d269a3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fdb42d062d979c2475c38e5a83570eb179ae0061
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54142195"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789345"
 ---
 # <a name="appconfigurationsettingitem-resource-type"></a>appConfigurationSettingItem 资源类型
 
@@ -47,7 +47,6 @@ ms.locfileid: "54142195"
   "appConfigKeyValue": "String"
 }
 ```
-
 
 
 

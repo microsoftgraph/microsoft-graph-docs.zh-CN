@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 859e99543c40f3485872ac966bb96c6604dc0c4b
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 9569a285bd418143985f1c4f8649f1a00f16caaf
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266938"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818819"
 ---
 # <a name="advancedthreatprotectiononboardingdevicesettingstate-resource-type"></a>advancedThreatProtectionOnboardingDeviceSettingState 资源类型
 
@@ -22,8 +22,8 @@ ms.locfileid: "58266938"
 
 给定设备的 ATP 载入状态。
 
-## <a name="methods"></a>Methods
-|方法|返回类型|说明|
+## <a name="methods"></a>方法
+|方法|返回类型|Description|
 |:---|:---|:---|
 |[列出 advancedThreatProtectionOnboardingDeviceSettingStates](../api/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate-list.md)|[advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md) 集合|列出 [advancedThreatProtectionOnboardingDeviceSettingState 对象的属性和](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md) 关系。|
 |[获取 advancedThreatProtectionOnboardingDeviceSettingState](../api/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate-get.md)|[advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md)|读取 [advancedThreatProtectionOnboardingDeviceSettingState 对象的属性和](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md) 关系。|
@@ -40,7 +40,7 @@ ms.locfileid: "58266938"
 |settingName|String|报告的设置名称|
 |deviceId|String|报告的设备 ID|
 |deviceName|String|报告的设备名称|
-|userId|字符串|报告的用户 ID|
+|userId|String|报告的用户 ID|
 |userEmail|String|报告的用户电子邮件地址|
 |userName|String|报告的用户名|
 |userPrincipalName|String|报告的用户主体名称|
@@ -77,7 +77,6 @@ ms.locfileid: "58266938"
   "complianceGracePeriodExpirationDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

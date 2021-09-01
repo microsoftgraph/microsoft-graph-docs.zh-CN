@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 88030eec0996f0a5f2c80717a5b422495562a66e4e7133f0c3fc1665f1636855
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0fe2a16b27f244a318b6a6fd77f3828df2c77b14
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54124729"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783559"
 ---
 # <a name="macoscontentcachingclientpolicy-enum-type"></a>macOSContentCachingClientPolicy 枚举类型
 
@@ -26,11 +26,10 @@ ms.locfileid: "54124729"
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|默认为本地网络的客户端。|
-|clientsInLocalNetwork|1 |内容缓存将仅在其直接本地网络中向设备提供内容。|
-|clientsWithSamePublicIpAddress|2 |内容缓存将为共享同一公共 IP 地址的设备提供内容。|
-|clientsInCustomLocalNetworks|3 |内容缓存将为 contentCachingClientListenRanges 中的设备提供内容。|
+|clientsInLocalNetwork|1|内容缓存将仅在其直接本地网络中向设备提供内容。|
+|clientsWithSamePublicIpAddress|2|内容缓存将为共享同一公共 IP 地址的设备提供内容。|
+|clientsInCustomLocalNetworks|3|内容缓存将为 contentCachingClientListenRanges 中的设备提供内容。|
 |clientsInCustomLocalNetworksWithFallback|4 |内容缓存将为 contentCachingClientListenRanges、contentCachingPeerListenRanges 和 contentCachingParents 中的设备提供内容。|
-
 
 
 

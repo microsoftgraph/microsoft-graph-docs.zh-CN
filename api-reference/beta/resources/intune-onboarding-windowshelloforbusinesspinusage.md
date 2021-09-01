@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0368106c2f2a1cf4034bc7559085a2804931152655acb3ad7bf5eeb8ceb2c156
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4fe917addb2bf9bfa52b74c24e59f5cdba49a472
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54161106"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785099"
 ---
 # <a name="windowshelloforbusinesspinusage-enum-type"></a>windowsHelloForBusinessPinUsage 枚举类型
 
@@ -26,9 +26,8 @@ Windows Hello for Business PIN 使用选项
 |成员|值|说明|
 |:---|:---|:---|
 |allowed|0|允许使用某些 pin 规则|
-|必需|1 |强制使用某些 pin 规则|
-|不允许|2 |Forbit 使用某些 pin 规则|
-
+|必需|1|强制使用某些 pin 规则|
+|不允许|2|Forbit 使用某些 pin 规则|
 
 
 

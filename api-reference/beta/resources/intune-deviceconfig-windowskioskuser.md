@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 71e082b2140b53355911f9101999a9dc67f557ef2740e39c45b898e425ffeb04
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9876b1c48b265adca8d5c7cfc72eedfa5b5ae18b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54241686"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791142"
 ---
 # <a name="windowskioskuser-resource-type"></a>windowsKioskUser 资源类型
 
@@ -41,7 +41,6 @@ ms.locfileid: "54241686"
   "@odata.type": "#microsoft.graph.windowsKioskUser"
 }
 ```
-
 
 
 

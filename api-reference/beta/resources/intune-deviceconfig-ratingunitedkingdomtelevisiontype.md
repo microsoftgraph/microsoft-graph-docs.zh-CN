@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f699ee019e689b1cc62e3b4f3624ead6e97913370a9e2afad81886e2be24a3a1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ca3c9592cc61ad7bcea4248621865c3c71c31dfb
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54242794"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58807291"
 ---
 # <a name="ratingunitedkingdomtelevisiontype-enum-type"></a>ratingUnitedKingdomTelevisionType 枚举类型
 
@@ -26,9 +26,8 @@ ms.locfileid: "54242794"
 |成员|值|说明|
 |:---|:---|:---|
 |allAllowed|0|默认值，允许所有电视显示内容|
-|allBlocked|1 |不允许任何电视展示内容|
-|caution|2 |允许带警告消息的电视内容|
-
+|allBlocked|1|不允许任何电视展示内容|
+|caution|2|允许带警告消息的电视内容|
 
 
 

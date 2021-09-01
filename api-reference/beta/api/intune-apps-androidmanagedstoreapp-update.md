@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c7d0adaae1aac36b003edca35699016c162707ff1c1a8090837cd393987153b4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e601a5eecb1d6beaa3607a05bc25e5ed77efdd00
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54186662"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58799738"
 ---
 # <a name="update-androidmanagedstoreapp"></a>更新 androidManagedStoreApp
 
@@ -45,7 +45,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -56,7 +56,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|displayName|字符串|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|displayName|String|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |description|String|应用的说明。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publisher|String|应用的发布者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|要显示在应用详细信息中并用于图标上传的大图标。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
@@ -71,7 +71,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |uploadState|Int32|上载状态。 可能的值是：0 - `Not Ready` 、1 - `Ready` 、2 - `Processing` 。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否将应用分配给至少一个组的值。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|roleScopeTagIds|String collection|此移动应用的范围标记 ID 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|roleScopeTagIds|字符串集合|此移动应用的范围标记 ID 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|子应用具有的依赖项总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersedingAppCount|Int32|此应用直接或间接取代的应用总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersededAppCount|Int32|此应用直接或间接被取代的应用总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
@@ -80,10 +80,10 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |usedLicenseCount|Int32|使用中的 VPP 许可证数量。|
 |totalLicenseCount|Int32|VPP 许可证的总数。|
 |appStoreUrl|String|"播放工作商店"应用 URL。|
-|isPrivate|布尔值|指示应用是否仅适用于给定企业的用户。|
-|isSystemApp|布尔值|指示应用是否是预安装的系统应用。|
+|isPrivate|Boolean|指示应用是否仅适用于给定企业的用户。|
+|isSystemApp|Boolean|指示应用是否是预安装的系统应用。|
 |appTracks|[androidManagedStoreAppTrack](../resources/intune-apps-androidmanagedstoreapptrack.md) 集合|此企业可见的轨。|
-|supportsOemConfig|布尔值|此应用是否支持 OEMConfig 策略。|
+|supportsOemConfig|Boolean|此应用是否支持 OEMConfig 策略。|
 
 
 
@@ -194,7 +194,6 @@ Content-Length: 1397
   "supportsOemConfig": true
 }
 ```
-
 
 
 

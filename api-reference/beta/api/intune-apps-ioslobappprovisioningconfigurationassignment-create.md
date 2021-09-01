@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9d440ed39d3ea7a9dc71798bbb7c8d2ca638586d8831607a14c071e4539f5b4a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fa90b3a26c2a6579c52bed72137eea83b123981c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54165341"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818496"
 ---
 # <a name="create-ioslobappprovisioningconfigurationassignment"></a>创建 iosLobAppProvisioningConfigurationAssignment
 
@@ -43,7 +43,7 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisio
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -97,7 +97,6 @@ Content-Length: 400
   }
 }
 ```
-
 
 
 

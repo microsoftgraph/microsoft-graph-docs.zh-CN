@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ea153357a59d9ec9a1ce8fc4486e2e027156057d84246fdb0faa709d243007b3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f074b812a565982177873880f713923a36013f1b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54156399"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58813753"
 ---
 # <a name="iosvppebookassignment-resource-type"></a>iosVppEBookAssignment 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "54156399"
 
 继承自 [managedEBookAssignment](../resources/intune-books-managedebookassignment.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[List iosVppEBookAssignments](../api/intune-books-iosvppebookassignment-list.md)|[iosVppEBookAssignment](../resources/intune-books-iosvppebookassignment.md) 集合|列出 [iosVppEBookAssignment](../resources/intune-books-iosvppebookassignment.md) 对象的属性和关系。|
@@ -64,7 +64,6 @@ ms.locfileid: "54156399"
   "installIntent": "String"
 }
 ```
-
 
 
 

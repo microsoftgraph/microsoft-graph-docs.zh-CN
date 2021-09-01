@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b88160d33f6bb777c38385ce05f1f66378d4cf20608cecddb1029c7c937dd83c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7ab141b1f5ce93afd817fdb059c3e46037c46352
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54164508"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791282"
 ---
 # <a name="get-windowsautopilotdeploymentprofilepolicysetitem"></a>获取 windowsAutopilotDeploymentProfilePolicySetItem
 
@@ -29,7 +29,7 @@ ms.locfileid: "54164508"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -46,7 +46,7 @@ GET /deviceAppManagement/policySets/{policySetId}/items/{policySetItemId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -87,7 +87,6 @@ Content-Length: 543
   }
 }
 ```
-
 
 
 
