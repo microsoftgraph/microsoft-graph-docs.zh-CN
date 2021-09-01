@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9e507209c930bc3d010c76764fe923329387b76d3b83edfdb62fe041cc7aa973
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0863ab8b47e1a820a52c04f46fc7d4bcd737744e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54161400"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58782992"
 ---
 # <a name="mobileappsupersedencetype-enum-type"></a>mobileAppSupersedenceType 枚举类型
 
@@ -26,8 +26,7 @@ ms.locfileid: "54161400"
 |成员|值|说明|
 |:---|:---|:---|
 |update|0|指示子应用应按父应用的内部逻辑进行更新。|
-|replace|1 |指示在安装父应用之前应卸载子应用。|
-
+|replace|1|指示在安装父应用之前应卸载子应用。|
 
 
 

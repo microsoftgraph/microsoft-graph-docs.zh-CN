@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f38ad98215c83b37631c4ca2c842aecce5213fcea727f496256aaf0ac9c24aef
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 817911afa2d18a0c0dc50a1f98afbbe412f7aba9
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54227636"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58784000"
 ---
 # <a name="symanteccodesigningcertificate-resource-type"></a>symantecCodeSigningCertificate 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54227636"
 
 尚未记录
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 symantecCodeSigningCertificate](../api/intune-apps-symanteccodesigningcertificate-get.md)|[symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md)|读取 [symantecCodeSigningCertificate 对象的属性和](../resources/intune-apps-symanteccodesigningcertificate.md) 关系。|
@@ -33,12 +33,12 @@ ms.locfileid: "54227636"
 |:---|:---|:---|
 |id|String|实体的键。|
 |content|二进制|The Windows Symantec Code-Signing Certificate in the raw data format.|
-|status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|已设置或未预配证书状态。 可取值为：`notProvisioned`、`provisioned`。|
+|状态|[certificateStatus](../resources/intune-apps-certificatestatus.md)|已设置或未预配证书状态。 可取值为：`notProvisioned`、`provisioned`。|
 |密码|String|.pfx 文件所需的密码。|
 |SubjectName|String|证书的主题名称。|
 |subject|String|证书的 Subject 值。|
 |issuerName|字符串|证书的颁发者名称。|
-|issuer|String|证书的 Issuer 值。|
+|issuer|字符串|证书的 Issuer 值。|
 |expirationDateTime|DateTimeOffset|证书到期日期。|
 |uploadDateTime|DateTimeOffset|作为 Symantec 证书的 CodeSigning 证书的类型。|
 
@@ -68,7 +68,6 @@ ms.locfileid: "54227636"
   "uploadDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

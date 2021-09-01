@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 621f8ce657fd3e436bd8498b5616439437285a25
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 8394e3813bdab958d4e23505062dd10c06e3019e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58260423"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801288"
 ---
 # <a name="create-userexperienceanalyticsapphealthdeviceperformance"></a>创建 userExperienceAnalyticsAppHealthDevicePerformance
 
@@ -27,9 +27,9 @@ ms.locfileid: "58260423"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/userExperienceAnalyticsAppHealthDevicePerformance
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -55,14 +55,14 @@ POST /deviceManagement/userExperienceAnalyticsAppHealthDevicePerformance
 |:---|:---|:---|
 |id|String|用户体验分析设备性能对象的唯一标识符。|
 |deviceModel|String|设备的型号名称。|
-|deviceManufacturer|String|设备的制造商名称。|
+|deviceManufacturer|字符串|设备的制造商名称。|
 |appCrashCount|Int32|设备的应用崩溃数。 有效值 -2147483648 2147483647|
 |crashedAppCount|Int32|设备不同应用崩溃的数量。 有效值 -2147483648 2147483647|
 |appHangCount|Int32|设备的应用挂起数。 有效值 -2147483648 2147483647|
 |processedDateTime|DateTimeOffset|上次计算统计信息的日期和时间。|
 |meanTimeToFailureInMinutes|Int32|设备失败平均时间（分钟）。 有效值 -2147483648 2147483647|
 |deviceAppHealthScore|双精度|设备的应用运行状况分数。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
-|deviceAppHealthStatus|String|设备的整体应用运行状况状态。|
+|deviceAppHealthStatus|字符串|设备的整体应用运行状况状态。|
 |deviceId|String|设备的 ID。|
 |deviceDisplayName|String|设备的名称。|
 
@@ -119,7 +119,6 @@ Content-Length: 600
   "deviceDisplayName": "Device Display Name value"
 }
 ```
-
 
 
 

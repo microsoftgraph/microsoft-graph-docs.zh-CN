@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f0b3956b78ef63f1b6d7d15f4d5b51a0225b92334643935ef1050aa4e70be456
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d46768defd5b5245a662002b3a65e8a34e61bf5c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54252905"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58821127"
 ---
 # <a name="devicemanagementsettingabstractimplementationconstraint-resource-type"></a>deviceManagementSettingAbstractImplementationConstraint 资源类型
 
@@ -48,7 +48,6 @@ ms.locfileid: "54252905"
   ]
 }
 ```
-
 
 
 

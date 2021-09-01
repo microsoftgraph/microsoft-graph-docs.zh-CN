@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ce04708aa2648f97a3bb5a1c72781898c7c89fae6f3cd2579a9d3ca416ff5d3f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 569dfa626a636e0a0a7838025d22259e71341a96
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54236057"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785113"
 ---
 # <a name="grouppolicysettingtype-enum-type"></a>groupPolicySettingType 枚举类型
 
@@ -26,13 +26,12 @@ ms.locfileid: "54236057"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|GroupPolicySettingType 未知|
-|策略|1 |策略设置类型|
-|account|2 |帐户设置类型|
-|securityOptions|3 |SecurityOptions 设置类型|
+|策略|1|策略设置类型|
+|account|2|帐户设置类型|
+|securityOptions|3|SecurityOptions 设置类型|
 |userRightsAssignment|4 |UserRightsAssignment 设置类型|
 |auditSetting|5 |AuditSetting 设置类型|
 |windowsFirewallSettings|6 |WindowsFirewallSettings 设置类型|
-
 
 
 

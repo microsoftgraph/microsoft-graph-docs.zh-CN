@@ -1,16 +1,16 @@
 ---
 title: windowsAutopilotSettings 资源类型
-description: windowsAutopilotSettings 资源表示一Windows Autopilot 帐户，用于Windows设备数据同步服务的数据。
+description: windowsAutopilotSettings 资源表示一个Windows Autopilot 帐户，用于与 Windows 数据同步服务同步数据。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4d9ab364d05384f9329f4dcad48ee6a93173cf978c0b58c4ff81a9a3e4b66819
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 624da686f5c1676cb223a5bb685f36805ac316cc
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54172901"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818784"
 ---
 # <a name="windowsautopilotsettings-resource-type"></a>windowsAutopilotSettings 资源类型
 
@@ -20,10 +20,10 @@ ms.locfileid: "54172901"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-windowsAutopilotSettings 资源表示一Windows Autopilot 帐户，用于Windows设备数据同步服务的数据。
+windowsAutopilotSettings 资源表示一个Windows Autopilot 帐户，用于与 Windows 数据同步服务同步数据。
 
-## <a name="methods"></a>Methods
-|方法|返回类型|说明|
+## <a name="methods"></a>方法
+|方法|返回类型|Description|
 |:---|:---|:---|
 |[获取 windowsAutopilotSettings](../api/intune-enrollment-windowsautopilotsettings-get.md)|[windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md)|读取 [windowsAutopilotSettings 对象的属性和](../resources/intune-enrollment-windowsautopilotsettings.md) 关系。|
 |[更新 windowsAutopilotSettings](../api/intune-enrollment-windowsautopilotsettings-update.md)|[windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md)|更新 [windowsAutopilotSettings 对象](../resources/intune-enrollment-windowsautopilotsettings.md) 的属性。|
@@ -57,7 +57,6 @@ windowsAutopilotSettings 资源表示一Windows Autopilot 帐户，用于Windows
   "syncStatus": "String"
 }
 ```
-
 
 
 

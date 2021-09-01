@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: da2f35c8a068fd794e187c559b829772088731602d2b2d55f42bd76754098428
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e5bb023319284c4d1a455f9cac98c2b62f227129
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54156217"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797259"
 ---
 # <a name="devicemanagementsettingcategory-resource-type"></a>deviceManagementSettingCategory 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54156217"
 
 表示设置类别的实体
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceManagementSettingCategories](../api/intune-deviceintent-devicemanagementsettingcategory-list.md)|[deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md) 集合|列出 [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md) 对象的属性和关系。|
@@ -35,7 +35,7 @@ ms.locfileid: "54156217"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|类别 ID|
-|displayName|字符串|类别名称|
+|displayName|String|类别名称|
 |hasRequiredSetting|布尔值|类别包含所需的顶级设置|
 
 ## <a name="relationships"></a>关系
@@ -59,7 +59,6 @@ ms.locfileid: "54156217"
   "hasRequiredSetting": true
 }
 ```
-
 
 
 

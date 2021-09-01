@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1365d34bcac075f2e27e06850219b9fec0878c4d2e119b3253a60227f088d6d4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6bab23c4e574aea752e4a33c5aea8d26cede75f3
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54248955"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58821737"
 ---
 # <a name="androidforworkappconfigurationschemaitemdatatype-enum-type"></a>androidForWorkAppConfigurationSchemaItemDataType 枚举类型
 
@@ -23,17 +23,16 @@ ms.locfileid: "54248955"
 Android for Work 应用程序自定义配置架构中的配置项的数据类型
 
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |布尔值|0|尚未记录|
-|integer|1 |尚未记录|
-|string|2 |尚未记录|
-|choice|3 |尚未记录|
+|integer|1|尚未记录|
+|string|2|尚未记录|
+|choice|3|尚未记录|
 |multiselect|4 |尚未记录|
 |bundle|5 |尚未记录|
 |bundleArray|6 |尚未记录|
 |hidden|7 |尚未记录|
-
 
 
 

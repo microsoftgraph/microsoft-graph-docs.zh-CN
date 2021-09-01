@@ -1,18 +1,18 @@
 ---
-title: 设备管理意图分配操作
+title: assign 操作
 description: 尚未记录
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 18d0a44b2f5baa2f5a753524a9688b3eef60dba05174f6a8cd6ce08607a23b1f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6d5989cce98133c495831a2e512dd2bf2bc9d0dc
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54145850"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58802626"
 ---
-# <a name="device-management-intent-assign-action"></a>设备管理意图分配操作
+# <a name="assign-action"></a>分配操作
 
 命名空间：microsoft.graph
 
@@ -43,7 +43,7 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/assign
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -91,7 +91,6 @@ Content-length: 511
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 47daa98e79f31b638ef5136d671b0c58d4fd192ac7d6f348ab6f22ad7331c58b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: aec5223d000abbdaef7cb1e99eb5f5a27b4380f2
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54168400"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789753"
 ---
 # <a name="update-grouppolicycategory"></a>更新 groupPolicyCategory
 
@@ -46,7 +46,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -56,9 +56,9 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|类别名称的字符串显示名称|
-|isRoot|布尔值|定义类别是否属于根类别|
-|id|字符串|实体的键。|
+|displayName|字符串|类别名称的字符串 id 显示名称|
+|isRoot|Boolean|定义类别是否属于根类别|
+|id|String|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。|
 
 
@@ -97,7 +97,6 @@ Content-Length: 233
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

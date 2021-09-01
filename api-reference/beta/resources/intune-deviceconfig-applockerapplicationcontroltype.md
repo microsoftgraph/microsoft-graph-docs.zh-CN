@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9c5f08e7084a4f30b498aa9496e8479f465d00430a1b67dcc34c3f94e6ac5503
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 617db7bd086ff14611804c12506cc58b5a446d10
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54145465"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791907"
 ---
 # <a name="applockerapplicationcontroltype-enum-type"></a>appLockerApplicationControlType 枚举类型
 
@@ -26,11 +26,10 @@ AppLocker 应用程序控件类型的可能值
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|设备默认值，未选择"应用程序控制"类型。|
-|enforceComponentsAndStoreApps|1 |强制Windows组件和存储应用。|
-|auditComponentsAndStoreApps|2 |审核Windows组件和存储应用。|
-|enforceComponentsStoreAppsAndSmartlocker|3 |强制Windows组件、应用商店应用和智能保险箱。|
+|enforceComponentsAndStoreApps|1|强制Windows组件和存储应用。|
+|auditComponentsAndStoreApps|2|审核Windows组件和存储应用。|
+|enforceComponentsStoreAppsAndSmartlocker|3|强制Windows组件、存储应用和智能保险箱。|
 |auditComponentsStoreAppsAndSmartlocker|4 |审核Windows组件、应用商店应用和智能保险箱。|
-
 
 
 

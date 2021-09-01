@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ff607e0eb88a53aa53500b278e7cbf90da49a34fa4033a3907f24818c3618ddc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2658a02a4881e793879a68bc6d1822d9a9b2a0a5
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54183125"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58819141"
 ---
 # <a name="macosassociateddomainsitem-resource-type"></a>macOSAssociatedDomainsItem 资源类型
 
@@ -23,11 +23,11 @@ ms.locfileid: "54183125"
 应用程序标识符到关联域的映射。
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
-|applicationIdentifier|字符串|要与域关联的应用程序的应用程序标识符。|
+|applicationIdentifier|String|要与域关联的应用程序的应用程序标识符。|
 |domains|String collection|要关联的域列表。|
-|directDownloadsEnabled|布尔值|确定是应该直接下载数据，还是通过 CDN。|
+|directDownloadsEnabled|Boolean|确定数据是应该直接下载还是通过 CDN。|
 
 ## <a name="relationships"></a>关系
 无
@@ -49,7 +49,6 @@ ms.locfileid: "54183125"
   "directDownloadsEnabled": true
 }
 ```
-
 
 
 

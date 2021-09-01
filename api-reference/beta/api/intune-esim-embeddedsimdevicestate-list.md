@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 974a8a6820e6a22c4abf39a163f124fd1bd836ca4e7e15d80444f00049b335d7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6a2bbe330d8630f50ff24e4493a32f49d00f8d6a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54177091"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58773582"
 ---
 # <a name="list-embeddedsimdevicestates"></a>列出 embeddedSIMDeviceStates
 
@@ -43,7 +43,7 @@ GET /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCodeP
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -84,7 +84,6 @@ Content-Length: 602
   ]
 }
 ```
-
 
 
 

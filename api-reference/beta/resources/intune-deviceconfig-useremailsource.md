@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a483902b40c6e2f9623c4d67de795423a26f73b742122773cf0f4a3e307c9a06
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 04456950d616e75557df9c4ef86fb6b3c2963a17
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54139633"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816084"
 ---
 # <a name="useremailsource-enum-type"></a>userEmailSource 枚举类型
 
@@ -23,11 +23,10 @@ ms.locfileid: "54139633"
 用户名源或电子邮件源的可能值。
 
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |userPrincipalName|0|用户主体名称。|
-|primarySmtpAddress|1 |主 SMTP 地址。|
-
+|primarySmtpAddress|1|主 SMTP 地址。|
 
 
 

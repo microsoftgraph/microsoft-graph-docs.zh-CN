@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5e771bc99a2348f461c1306ee870c635fd4718f044980b2c77b1d70fac2cc027
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4479fc5937650554b5ae741729273681a24b91d9
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54203986"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791296"
 ---
 # <a name="create-devicemanagementpartner"></a>创建 deviceManagementPartner
 
@@ -43,7 +43,7 @@ POST /deviceManagement/deviceManagementPartners
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,12 +53,12 @@ POST /deviceManagement/deviceManagementPartners
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的 ID|
+|id|字符串|实体的 ID|
 |lastHeartbeatDateTime|DateTimeOffset|管理员启用“连接到设备管理合作伙伴”选项后上次检测信号的时间戳|
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|此租户的合作伙伴状态。 可取值为：`unknown`、`unavailable`、`enabled`、`terminated`、`rejected`、`unresponsive`。|
 |partnerAppType|[deviceManagementPartnerAppType](../resources/intune-onboarding-devicemanagementpartnerapptype.md)|合作伙伴应用类型。 可取值为：`unknown`、`singleTenantApp`、`multiTenantApp`。|
 |singleTenantAppId|String|合作伙伴单个租户应用 ID|
-|displayName|字符串|合作伙伴显示名称|
+|displayName|String|合作伙伴显示名称|
 |isConfigured|Boolean|是否配置了设备管理合作伙伴|
 |whenPartnerDevicesWillBeRemoved|DateTimeOffset|将删除 PartnerDevices 的 DateTime（UTC 时间）。 这将很快成为删除。|
 |whenPartnerDevicesWillBeMarkedAsNonCompliant|DateTimeOffset|将 PartnerDevices 标记为"不兼容"的 DateTime（UTC 时间）。 这将很快成为删除。|
@@ -139,7 +139,6 @@ Content-Length: 1189
   ]
 }
 ```
-
 
 
 

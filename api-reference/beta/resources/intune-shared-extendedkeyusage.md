@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5b05bd1d1c608161e70d69fab483a383c716ec5f6f1378a4ea98eef4890d329f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3158eeb7f6f47f52ed0d6cfd0f6bd4d265e2aa66
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54126870"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803424"
 ---
 # <a name="extendedkeyusage-resource-type"></a>extendedKeyUsage 资源类型
 
@@ -45,7 +45,6 @@ ms.locfileid: "54126870"
   "objectIdentifier": "String"
 }
 ```
-
 
 
 

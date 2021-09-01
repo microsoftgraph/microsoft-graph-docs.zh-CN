@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 20cbe41937ae926a1c3910b41e3041976b1d4c02c1293463d2cda2704b39f5dd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 935de9c6edc9836cdbd0f5af4640a289003d6769
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54143715"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58819365"
 ---
 # <a name="reportroot-getmailboxusagedetail"></a>reportRoot: getMailboxUsageDetail
 
@@ -78,6 +78,8 @@ CSV 文件包含下面的列标题。
 - 禁止发送/接收配额（字节）
 - 删除项目计数
 - 删除项目大小（字节）
+- 删除项目配额（字节）
+- 具有存档
 - 报表周期
 
 ## <a name="example"></a>示例

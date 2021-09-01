@@ -1,43 +1,40 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 278e602abec134e8b7a1f07e0cb513778819df19
-ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
+ms.openlocfilehash: 8769646ede5f243cb3d50e207abe3044d6beaeaabdff1800736ab349e6a1eeef
+ms.sourcegitcommit: 24d0ea8e2bcb54c2f397133460c3d26fb0ba705f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53317118"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "58785463"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/teams/e8bece96-d393-4b9b-b8da-69cedef1a7e7/sendActivityNotification"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/users/{userId}/teamwork/sendActivityNotification"]]];
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 NSMutableDictionary *payloadDictionary = [[NSMutableDictionary alloc] init];
 
 MSGraphTeamworkActivityTopic *topic = [[MSGraphTeamworkActivityTopic alloc] init];
-[topic setSource: [MSGraphTeamworkActivityTopicSource entityUrl]];
-[topic setValue:@"https://graph.microsoft.com/beta/teams/e8bece96-d393-4b9b-b8da-69cedef1a7e7"];
+[topic setSource: [MSGraphTeamworkActivityTopicSource text]];
+[topic setValue:@"Deployment Approvals Channel"];
+[topic setWebUrl:@"https://teams.microsoft.com/l/message/19:448cfd2ac2a7490a9084a9ed14cttr78c@thread.skype/1605223780000?tenantId=c8b1bf45-3834-4ecf-971a-b4c755ee677d&groupId=d4c2a937-f097-435a-bc91-5c1683ca7245&parentMessageId=1605223771864&teamName=Approvals&channelName=Azure%20DevOps&createdTime=1605223780000"];
 payloadDictionary[@"topic"] = topic;
 
-NSString *activityType = @"pendingFinanceApprovalRequests";
+NSString *activityType = @"deploymentApprovalRequired";
 payloadDictionary[@"activityType"] = activityType;
 
 MSGraphItemBody *previewText = [[MSGraphItemBody alloc] init];
-[previewText setContent:@"Internal spending team has a pending finance approval requests"];
+[previewText setContent:@"New deployment requires your approval"];
 payloadDictionary[@"previewText"] = previewText;
-
-MSGraphTeamworkNotificationRecipient *recipient = [[MSGraphTeamworkNotificationRecipient alloc] init];
-[recipient setTeamId:@"e8bece96-d393-4b9b-b8da-69cedef1a7e7"];
-payloadDictionary[@"recipient"] = recipient;
 
 NSMutableArray *templateParametersList = [[NSMutableArray alloc] init];
 MSGraphKeyValuePair *templateParameters = [[MSGraphKeyValuePair alloc] init];
-[templateParameters setName:@"pendingRequestCount"];
-[templateParameters setValue:@"5"];
+[templateParameters setName:@"deploymentId"];
+[templateParameters setValue:@"6788662"];
 [templateParametersList addObject: templateParameters];
 payloadDictionary[@"templateParameters"] = templateParametersList;
 

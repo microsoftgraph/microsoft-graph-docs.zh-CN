@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7bc41aeae74217c6236f2acfc805dedb5dee8b867af776dc037bc0c49965185d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 402e6a673a1bb4e811dad72c17159e8793dfbe74
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54239089"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803438"
 ---
 # <a name="devicemanagementscheduledreportrecurrence-enum-type"></a>deviceManagementScheduledReportRecurrence 枚举类型
 
@@ -26,10 +26,9 @@ ms.locfileid: "54239089"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|默认值，指定单个匹配项|
-|daily|1 |每天|
-|weekly|2 |每周|
-|monthly|3 |每月|
-
+|daily|1|每天|
+|weekly|2|每周|
+|monthly|3|每月|
 
 
 

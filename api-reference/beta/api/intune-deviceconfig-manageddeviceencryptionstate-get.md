@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f9cc6d0c1856b73a8b07ecc89ea4e120956810f64b9ba730b9a13ddea006bae6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4e40219de81d1e4eb814ac78547cda12a1400828
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54125506"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783405"
 ---
 # <a name="get-manageddeviceencryptionstate"></a>获取 managedDeviceEncryptionState
 
@@ -46,7 +46,7 @@ GET /deviceManagement/managedDeviceEncryptionStates/{managedDeviceEncryptionStat
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -94,7 +94,6 @@ Content-Length: 810
   }
 }
 ```
-
 
 
 

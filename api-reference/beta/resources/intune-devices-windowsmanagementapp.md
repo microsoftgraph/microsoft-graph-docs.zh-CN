@@ -1,16 +1,16 @@
 ---
 title: windowsManagementApp 资源类型
-description: Windows管理应用程序实体。
+description: Windows管理应用实体。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 34dcbb381b9271222f52fdbf3b042d318e58e80fbf460075999397246c402027
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 969ffdb3905a0feb1a636a38daf8bcae95630b4c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54236085"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58807256"
 ---
 # <a name="windowsmanagementapp-resource-type"></a>windowsManagementApp 资源类型
 
@@ -20,9 +20,9 @@ ms.locfileid: "54236085"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-Windows管理应用程序实体。
+Windows管理应用实体。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 windowsManagementApp](../api/intune-devices-windowsmanagementapp-get.md)|[windowsManagementApp](../resources/intune-devices-windowsmanagementapp.md)|读取 [windowsManagementApp 对象的属性和](../resources/intune-devices-windowsmanagementapp.md) 关系。|
@@ -35,12 +35,12 @@ Windows管理应用程序实体。
 |id|String|管理应用程序的唯Windows标识符|
 |availableVersion|String|Windows管理应用可用版本。|
 |managedInstaller|[managedInstallerStatus](../resources/intune-devices-managedinstallerstatus.md)|托管安装程序状态。 可取值为：`disabled`、`enabled`。|
-|managedInstallerConfiguredDateTime|String|托管安装程序配置的日期时间|
+|managedInstallerConfiguredDateTime|字符串|托管安装程序配置的日期时间|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
-|healthStates|[windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md) 集合|已安装的运行状况状态列表Windows管理应用。|
+|healthStates|[windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md) 集合|已安装的Windows状态列表。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -59,7 +59,6 @@ Windows管理应用程序实体。
   "managedInstallerConfiguredDateTime": "String"
 }
 ```
-
 
 
 

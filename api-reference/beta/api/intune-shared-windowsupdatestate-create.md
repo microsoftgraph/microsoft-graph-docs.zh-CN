@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ab936e47c27a96badd37f215412e17b6eab65968d5d442cb578aa292d266df0f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8ead882c17c4e37f3535b0a022a1d5914461749e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54207430"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58794123"
 ---
 # <a name="create-windowsupdatestate"></a>创建 windowsUpdateState
 
@@ -47,7 +47,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -59,12 +59,12 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |:---|:---|:---|
 |id|String|这是实体的 ID。|
 |deviceId|String|设备的 ID。|
-|userId|字符串|用户的 ID。|
+|userId|String|用户的 ID。|
 |deviceDisplayName|String|设备显示名称。|
 |userPrincipalName|String|用户主体名称。|
-|status|[windowsUpdateStatus](../resources/intune-deviceconfig-windowsupdatestatus.md)|Windows udpate 状态。 可取值为：`upToDate`、`pendingInstallation`、`pendingReboot`、`failed`。|
-|qualityUpdateVersion|String|质量更新设备的版本。|
-|featureUpdateVersion|String|设备的当前功能更新版本。|
+|状态|[windowsUpdateStatus](../resources/intune-shared-windowsupdatestatus.md)|Windows udpate 状态。 可取值为：`upToDate`、`pendingInstallation`、`pendingReboot`、`failed`。|
+|qualityUpdateVersion|字符串|质量更新设备的版本。|
+|featureUpdateVersion|字符串|设备的当前功能更新版本。|
 |lastScanDateTime|DateTimeOffset|更新代理执行Windows扫描的日期时间。|
 |lastSyncDateTime|DateTimeOffset|设备上次与设备同步的日期Microsoft Intune。|
 
@@ -117,7 +117,6 @@ Content-Length: 553
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00"
 }
 ```
-
 
 
 

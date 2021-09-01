@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 89bc5a14c1da51f8241b9b6168c61cf5f0c200d6c8a9c8d9abd193fff9d1fae4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b88a8dde9dc4046c74d4eb5f73b5643da6460aa9
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54251153"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58782040"
 ---
 # <a name="deviceenrollmentwindowshelloforbusinessconfiguration-resource-type"></a>deviceEnrollmentWindowsHelloForBusinessConfiguration 资源类型
 
@@ -25,7 +25,7 @@ Windows Hello For Business 设置允许用户使用手势（如生物识别身�
 
 继承自 [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceEnrollmentWindowsHelloForBusinessConfigurations](../api/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-list.md)|[deviceEnrollmentWindowsHelloForBusinessConfiguration](../resources/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration.md) 集合|列出 [deviceEnrollmentWindowsHelloForBusinessConfiguration](../resources/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration.md) 对象的属性和关系。|
@@ -44,20 +44,20 @@ Windows Hello For Business 设置允许用户使用手势（如生物识别身�
 |createdDateTime|DateTimeOffset|设备注册配置的创建日期时间（UTC）继承自 [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|设备注册配置的上次修改日期时间（UTC）继承自 [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |version|Int32|设备注册配置的版本 继承自 [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|roleScopeTagIds|String collection|注册限制的可选角色范围标记。 继承自 [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|pinMinimumLength|Int32|控制企业 PIN Windows Hello所需的最少字符数。  此值必须介于 4 到 127 之间（包括 4 和 127 之间，并且小于或等于为最大 PIN 设置的值）。|
+|roleScopeTagIds|字符串集合|注册限制的可选角色范围标记。 继承自 [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|pinMinimumLength|Int32|控制企业 PIN Windows Hello所需的最少字符数。  此值必须介于 4 到 127 之间（包含 4 和 127 之间，并且小于或等于为最大 PIN 设置的值）。|
 |pinMaximumLength|Int32|控制企业 PIN 允许的最大Windows Hello数。 此值必须介于 4 和 127 之间（包含两者）。 此值必须大于或等于为最小 PIN 设置的值。|
-|pinUppercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|控制在适用于企业 PIN 的 Windows Hello 使用大写字母的能力。  Allowed 允许使用大写字母 () ，而 Required 可确保它们存在。 如果设置为"不允许"，则不允许使用大写字母。 可取值为：`allowed`、`required`、`disallowed`。|
-|pinLowercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|控制在适用于企业 PIN 的 Windows Hello使用小写字母的能力。  Allowed 允许使用小写字母 () ，而 Required 可确保它们存在。 如果设置为"不允许"，则不允许使用小写字母。 可取值为：`allowed`、`required`、`disallowed`。|
-|pinSpecialCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|控制在适用于企业 PIN 的 Windows Hello 中使用特殊字符的能力。  允许允许使用特殊字符 () ，而 Required 可确保它们存在。 如果设置为"不允许"，则不允许 (特殊) 不允许使用特殊字符。 可取值为：`allowed`、`required`、`disallowed`。|
-|state|[enablement](../resources/intune-shared-enablement.md)|控制是否允许为 Windows Hello for Business 配置设备。 如果设置为"禁用"，则用户无法预配 Windows Hello For Business，除非Azure Active Directory已加入的移动电话上（如果需要）。 如果设置为"未配置"，Intune 将不会覆盖客户端默认值。 可取值为：`notConfigured`、`enabled`、`disabled`。|
-|securityDeviceRequired|Boolean|控制是否需要受信任的平台模块 (TPM) 来预配 Windows Hello for Business。 TPM 提供了额外的安全优势，因为存储在 TPM 上的数据不能用于其他设备。 如果设置为 False，则所有设备都可以预配Windows Hello，即使不存在可用 TPM。|
-|unlockWithBiometricsEnabled|Boolean|控制生物识别手势（如人脸和指纹）的使用，以替代 Windows Hello FOR Business PIN。  如果设置为 False，则不允许生物识别手势。 用户仍必须将 PIN 配置为备份，以防发生故障。|
+|pinUppercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|控制在适用于企业 PIN 的 Windows Hello 使用大写字母的能力。  Allowed 允许使用大写字母 (大) ，而 Required 可确保它们存在。 如果设置为"不允许"，则不允许使用大写字母。 可取值为：`allowed`、`required`、`disallowed`。|
+|pinLowercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|控制在适用于企业 PIN 的 Windows Hello使用小写字母的能力。  允许允许将小写字母 () ，而 Required 可确保它们存在。 如果设置为"不允许"，则不允许使用小写字母。 可取值为：`allowed`、`required`、`disallowed`。|
+|pinSpecialCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|控制在适用于企业 PIN 的 Windows Hello 中使用特殊字符的能力。  允许允许使用特殊字符 () ，而必需可确保它们存在。 如果设置为"不允许"， (不允许) 特殊字符。 可取值为：`allowed`、`required`、`disallowed`。|
+|state|[enablement](../resources/intune-shared-enablement.md)|控制是否允许为 Windows Hello for Business 配置设备。 如果设置为禁用，则用户无法预配 Windows Hello For Business，除非Azure Active Directory已加入的移动电话上（如果需要）。 如果设置为"未配置"，Intune 将不会覆盖客户端默认值。 可取值为：`notConfigured`、`enabled`、`disabled`。|
+|securityDeviceRequired|Boolean|控制是否需要受信任的平台模块 (TPM) 来预配适用于Windows Hello模块。 TPM 提供了额外的安全优势，因为存储在 TPM 上的数据不能用于其他设备。 如果设置为 False，则所有设备都可以预配 Windows Hello For Business，即使不存在可用 TPM。|
+|unlockWithBiometricsEnabled|Boolean|控制使用生物识别手势（如人脸和指纹）作为适用于Windows Hello PIN 的替代方法。  如果设置为 False，则不允许生物识别手势。 用户仍必须将 PIN 配置为备份，以防发生故障。|
 |remotePassportEnabled|Boolean|控制远程 Windows Hello for Business 的使用。 远程 Windows Hello for Business 使可移植的已注册设备能够用作桌面身份验证的配套设备。 桌面必须加入 Azure AD，配套设备必须具有适用于Windows Hello PIN。|
 |pinPreviousBlockCount|Int32|控制阻止用户使用过去 PIN 的能力。 这必须在 0 和 50 之间（包含 0 和 50）进行设置，并且用户的当前 PIN 包含在该计数中。 如果设置为 0，则不存储以前的 PIN。 PIN 历史记录不会通过 PIN 重置保留。|
-|pinExpirationInDays|Int32|控制在系统 (PIN) 之前可以使用 PIN 的时间段（以天表示）。 这必须设置为 0 到 730 之间（包含两者）。 如果设置为 0，则用户的 PIN 永不过期|
+|pinExpirationInDays|Int32|控制在系统 (PIN 之前) PIN 的时间段（以天表示）。 这必须设置为 0 到 730 之间（包含两者）。 如果设置为 0，则用户的 PIN 永不过期|
 |enhancedBiometricsState|[enablement](../resources/intune-shared-enablement.md)|控制在支持防欺骗功能的设备上使用反欺骗功能进行面部识别的能力。 如果设置为禁用，则不允许使用反欺骗功能。 如果设置为"未配置"，用户可以选择是否要使用反欺骗。 可取值为：`notConfigured`、`enabled`、`disabled`。|
-|securityKeyForSignIn|[enablement](../resources/intune-shared-enablement.md)|登录安全密钥提供远程打开/关闭功能Windows Hello未配置的 Sercurity Keyl 将采用在 clinet 上完成的配置。 可取值为：`notConfigured`、`enabled`、`disabled`。|
+|securityKeyForSignIn|[enablement](../resources/intune-shared-enablement.md)|登录安全密钥提供远程打开/关闭功能，Windows Hello未配置的密钥将采用在 clinet 上完成的配置。 可取值为：`notConfigured`、`enabled`、`disabled`。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -100,7 +100,6 @@ Windows Hello For Business 设置允许用户使用手势（如生物识别身�
   "securityKeyForSignIn": "String"
 }
 ```
-
 
 
 

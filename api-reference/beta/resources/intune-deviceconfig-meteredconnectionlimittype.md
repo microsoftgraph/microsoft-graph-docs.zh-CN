@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 07448d05dfd13258934f9e69e78a8a6f6d81c273c70160f648f5069d3b5a90b9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bdcf918042c22cced461430e55870bcad7aab04a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54181123"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58821674"
 ---
 # <a name="meteredconnectionlimittype-enum-type"></a>meteredConnectionLimitType 枚举类型
 
@@ -23,12 +23,11 @@ ms.locfileid: "54181123"
 按流量计费的连接设置。
 
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unrestricted|0|Unrestricted|
-|fixed|1 |Fixed|
-|变量|2 |变量|
-
+|fixed|1|Fixed|
+|变量|2|变量|
 
 
 

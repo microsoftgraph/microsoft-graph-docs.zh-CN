@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e852542516ee07c5f32bf166dddce25e68e672923bff8698869c135410495754
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b1f63d822d7046c34f994c329bdb1de382f6d1d8
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54239929"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786388"
 ---
 # <a name="androidrequiredpasswordcomplexity-enum-type"></a>androidRequiredPasswordComplexity 枚举类型
 
@@ -26,10 +26,9 @@ ms.locfileid: "54239929"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|设备默认值，无密码。|
-|low|1 |设备上所需的密码复杂性的类型较低，如 Android 文档所定义。|
-|中等|2 |设备上所需的密码复杂性的类型为中，如 Android 文档所定义。|
-|high|3 |设备上所需的密码复杂性的类型较高，如 Android 文档所定义。|
-
+|low|1|设备上所需的密码复杂性的类型较低，如 Android 文档所定义。|
+|中等|2|设备上所需的密码复杂性的类型为中，如 Android 文档所定义。|
+|high|3|设备上所需的密码复杂性的类型较高，如 Android 文档所定义。|
 
 
 

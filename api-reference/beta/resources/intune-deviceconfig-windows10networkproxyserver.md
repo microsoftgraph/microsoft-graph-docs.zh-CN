@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d27f200844d0da00cf8ccf76ff093db97986410abeb266ac327fd7f11cca7dc7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b8e456fa73166617e2825a5e211fc8d7dead306e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54139521"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58799484"
 ---
 # <a name="windows10networkproxyserver-resource-type"></a>windows10NetworkProxyServer 资源类型
 
@@ -49,7 +49,6 @@ ms.locfileid: "54139521"
   "useForLocalAddresses": true
 }
 ```
-
 
 
 

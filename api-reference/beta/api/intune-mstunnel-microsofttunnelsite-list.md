@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 86a0e84f693c2ec273a816f9c5232ad62e337153470d249dbed702e8975410c5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 76703994dcc72be86bca66b25ac092b70fd05c69
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54151086"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58802843"
 ---
 # <a name="list-microsofttunnelsites"></a>列出 microsoftTunnelSites
 
@@ -27,9 +27,9 @@ ms.locfileid: "54151086"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All、MicrosoftTunnelGateway.Read.All、MicrosoftTunnelGateway.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|MicrosoftTunnelGateway.Read.All、MicrosoftTunnelGateway.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -43,7 +43,7 @@ GET /deviceManagement/microsoftTunnelSites
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/microsoftTunnelSites
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 360
+Content-Length: 662
 
 {
   "value": [
@@ -75,6 +75,12 @@ Content-Length: 360
       "displayName": "Display Name value",
       "description": "Description value",
       "publicAddress": "Public Address value",
+      "upgradeWindowUtcOffsetInMinutes": 15,
+      "upgradeWindowStartTime": "12:01:27.3030000",
+      "upgradeWindowEndTime": "11:57:17.9830000",
+      "upgradeAutomatically": true,
+      "upgradeAvailable": true,
+      "internalNetworkProbeUrl": "https://example.com/internalNetworkProbeUrl/",
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
       ]
@@ -82,7 +88,6 @@ Content-Length: 360
   ]
 }
 ```
-
 
 
 

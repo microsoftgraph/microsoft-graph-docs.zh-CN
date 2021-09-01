@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4dc8cd94183b1e42d1614b43cdc0bbf7584e61f0d711012992936aa50c53dcbb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c0fccea17527cc6d76f81818512c6e6830ffb54b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54182817"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820707"
 ---
 # <a name="devicemanagementsettingintegerconstraint-resource-type"></a>deviceManagementSettingIntegerConstraint 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "54182817"
 继承自 [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |minimumValue|Int32|允许的最小值|
 |maximumValue|Int32|允许的最大值|
@@ -48,7 +48,6 @@ ms.locfileid: "54182817"
   "maximumValue": 1024
 }
 ```
-
 
 
 

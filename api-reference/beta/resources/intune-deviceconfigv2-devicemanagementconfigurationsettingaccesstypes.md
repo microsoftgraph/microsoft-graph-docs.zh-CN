@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c5c2aded956a058799a0ee0a08539e2d5542fb59a4b0bdded9ab81f5d0902013
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ea2bed9cb102e6859a4ea2f3eb47b247b2f81d74
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54150444"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816528"
 ---
 # <a name="devicemanagementconfigurationsettingaccesstypes-enum-type"></a>deviceManagementConfigurationSettingAccessTypes 枚举类型
 
@@ -23,16 +23,15 @@ ms.locfileid: "54150444"
 尚未记录
 
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |无|0|尚未记录|
-|add|1 |尚未记录|
-|copy|2 |尚未记录|
+|add|1|尚未记录|
+|copy|2|尚未记录|
 |delete|4 |尚未记录|
 |获取|8 |尚未记录|
 |replace|16 |尚未记录|
 |execute|32|尚未记录|
-
 
 
 

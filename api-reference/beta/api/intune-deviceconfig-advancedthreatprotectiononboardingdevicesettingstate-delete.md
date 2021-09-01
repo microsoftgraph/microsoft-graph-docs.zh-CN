@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c8b9d2600c3472058f4d04543739165ce262c4fab344753a0968a41d99dab4f8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9a67a957689e7dce1bfb1cc9a9dc48e2ba4f54bb
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54191933"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786878"
 ---
 # <a name="delete-advancedthreatprotectiononboardingdevicesettingstate"></a>删除 advancedThreatProtectionOnboardingDeviceSettingState
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/advancedThreatProtectionOnboardingStateSummary/advanced
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/advancedThreatProtectio
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 72c9838261e55c5d41b7758eff16dfae6ac455774eddaf3b732679593d1b744f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7837a358052a8e2ee91508be64e60fda5bf13cee
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54161322"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789959"
 ---
 # <a name="deliveryoptimizationgroupidsourceoptions-resource-type"></a>deliveryOptimizationGroupIdSourceOptions 资源类型
 
@@ -46,7 +46,6 @@ ms.locfileid: "54161322"
   "groupIdSourceOption": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2b3aabd6cd16c6b7a1e3771a7b8c8c721d9eb1a2b582962908a32a53bcf9c6c6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a3ff7b1c6e2ee380065ba2d2d19f22dbb294f67e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54215130"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795204"
 ---
 # <a name="networksinglesignontype-enum-type"></a>networkSingleSignOnType 枚举类型
 
@@ -26,9 +26,8 @@ Wi-Fi网络单一登录类型设置。
 |成员|值|说明|
 |:---|:---|:---|
 |disabled|0|禁用|
-|prelogon|1 |登录前|
-|postlogon|2 |登录后|
-
+|prelogon|1|登录前|
+|postlogon|2|登录后|
 
 
 

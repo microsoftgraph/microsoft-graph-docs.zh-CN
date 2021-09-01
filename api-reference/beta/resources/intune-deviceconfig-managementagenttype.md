@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 282915b085107d5367a0b7f8bd8f4f3ea84b7c23
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 88670bf7bee32898bd18efea79153096c289cf5e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58265477"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789613"
 ---
 # <a name="managementagenttype-enum-type"></a>managementAgentType 枚举类型
 
@@ -25,9 +25,9 @@ ms.locfileid: "58265477"
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|eas|1 |设备由 Exchange 管理。|
-|mdm|2 |设备由 Intune MDM 管理。|
-|easMdm|3 |设备由托管服务器Exchange Intune MDM 管理。|
+|eas|1|设备由Exchange管理。|
+|mdm|2|设备由 Intune MDM 管理。|
+|easMdm|3|设备由 Exchange 和 Intune MDM 管理。|
 |intuneClient|4 |Intune 客户端托管。|
 |easIntuneClient|5 |设备是 EAS 和 Intune 客户端双托管设备。|
 |configurationManagerClient|8 |设备由 Configuration Manager 管理。|
@@ -37,8 +37,7 @@ ms.locfileid: "58265477"
 |jamf|32|设备属性从 Jamf 获取。|
 |googleCloudDevicePolicyController|64|设备由 Google 的 CloudDPC 管理。|
 |microsoft365ManagedMdm|258|此设备通过 Intune Microsoft 365管理。|
-|windowsManagementCloudApi|512|此设备由 Windows 云 API 管理。|
-
+|windowsManagementCloudApi|512|此设备由 Windows云 API 管理。|
 
 
 

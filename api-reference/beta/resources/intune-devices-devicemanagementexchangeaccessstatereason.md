@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2ad09fe55138e194a08565413af909110092ccdd82b9e3cdafe7612b2e33c324
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3c8ae17748009108c299039fde33f9b9d79a9737
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54150351"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806213"
 ---
 # <a name="devicemanagementexchangeaccessstatereason-enum-type"></a>deviceManagementExchangeAccessStateReason 枚举类型
 
@@ -25,23 +25,22 @@ ms.locfileid: "54150351"
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|无|0|未从用户中发现任何访问Exchange|
-|unknown|1 |未知访问状态原因|
-|exchangeGlobalRule|2 |由全局规则Exchange的访问状态|
-|exchangeIndividualRule|3 |由单个规则Exchange的访问状态|
+|无|0|未从用户发现任何访问Exchange|
+|unknown|1|未知访问状态原因|
+|exchangeGlobalRule|2|由全局规则Exchange的访问状态|
+|exchangeIndividualRule|3|由单个规则Exchange的访问状态|
 |exchangeDeviceRule|4 |由设备规则Exchange的访问状态|
-|exchangeUpgrade|5 |由于升级Exchange访问状态|
+|exchangeUpgrade|5 |由于升级而Exchange状态|
 |exchangeMailboxPolicy|6 |由邮箱策略Exchange的访问状态|
 |other|7 |由用户确定的访问Exchange|
 |compliant|8 |合规性质询授予的访问状态|
 |notCompliant|9 |合规性质询撤销的访问状态|
 |notEnrolled|10 |管理质询吊销的访问状态|
 |unknownLocation|12 |由于位置未知而进入访问状态|
-|mfaRequired|13 |MFA 质询导致的访问状态|
+|mfaRequired|13|MFA 质询导致的访问状态|
 |azureADBlockDueToAccessPolicy|14 |AAD 访问策略吊销的访问状态|
 |compromisedPassword|15 |通过泄露的密码吊销的访问状态|
 |deviceNotKnownWithManagedApp|16 |托管应用程序质询吊销的访问状态|
-
 
 
 

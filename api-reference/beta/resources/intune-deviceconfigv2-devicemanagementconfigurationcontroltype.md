@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4d52b297586a9feccc1464e965782f9830fc07ac3f8e7b5635ede7983802454b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 00ea3880b4349ac4534e47bcb7a55e0eb95ceac0
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54215088"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789917"
 ---
 # <a name="devicemanagementconfigurationcontroltype-enum-type"></a>deviceManagementConfigurationControlType 枚举类型
 
@@ -26,13 +26,12 @@ ms.locfileid: "54215088"
 |成员|值|说明|
 |:---|:---|:---|
 |default|0|不替代默认值|
-|下拉菜单|1 |在下拉列表中显示选项|
-|smallTextBox|2 |以小文本输入显示文本输入|
-|largeTextBox|3 |在大型文本输入中显示文本输入|
+|下拉菜单|1|在下拉列表中显示选项|
+|smallTextBox|2|以小文本输入显示文本输入|
+|largeTextBox|3|在大型文本输入中显示文本输入|
 |切换|4 |允许切换控件类型|
 |multiheaderGrid|5 |允许多头网格控件类型|
 |contextPane|6 |允许上下文窗格控件类型|
-
 
 
 

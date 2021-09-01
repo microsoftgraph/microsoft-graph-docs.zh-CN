@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3ba94d2162cf82dfc00740da3481d5ac338f607c2f7b71629f3fd8e93a8e524a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 94c117bd86e7aaa84b75ea002f31346e6dfc42bf
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54139282"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58815503"
 ---
 # <a name="mdmauthority-enum-type"></a>mdmAuthority 枚举类型
 
@@ -23,13 +23,12 @@ ms.locfileid: "54139282"
 移动设备管理机构。
 
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|未知|
-|intune|1 |Intune|
-|sccm|2 |SCCM|
-|office365|3 |Office365|
-
+|intune|1|Intune|
+|sccm|2|SCCM|
+|office365|3|Office365|
 
 
 

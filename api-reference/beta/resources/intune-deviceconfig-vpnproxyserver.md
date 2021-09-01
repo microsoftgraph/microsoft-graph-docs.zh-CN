@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b37148363cf3befcf9c1667c8b33e9b1583805efc7b01bf38a986b517456e081
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: af4110e10e1973324edd4072f6e12464b486ac13
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54253752"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58794840"
 ---
 # <a name="vpnproxyserver-resource-type"></a>vpnProxyServer 资源类型
 
@@ -47,7 +47,6 @@ VPN 代理服务器。
   "port": 1024
 }
 ```
-
 
 
 

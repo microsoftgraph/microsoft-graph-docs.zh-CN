@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c87c4f22b9d3e4ceaaf88ab7d7fee864ccd5544e13ab07e78197536ca74505e4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d346884d22ec9dbdae554b396eebdca00f4ac7af
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54198652"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787333"
 ---
 # <a name="get-devicecategory"></a>获取 deviceCategory
 
@@ -66,7 +66,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceR
 
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -106,7 +106,6 @@ Content-Length: 211
   }
 }
 ```
-
 
 
 

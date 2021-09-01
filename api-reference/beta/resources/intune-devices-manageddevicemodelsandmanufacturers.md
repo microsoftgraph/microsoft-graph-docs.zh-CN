@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3d57976ef6d66205a79f60b242ccefc3f8b5bcb20f46ace5be2ab856dc193fd4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 300fbc2dc03a4a8394449cc8a6575378feea1cc2
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249921"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820882"
 ---
 # <a name="manageddevicemodelsandmanufacturers-resource-type"></a>managedDeviceModelsAndManufacturers 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "54249921"
 帐户中托管设备型号和制造商的元数据
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |deviceModels|String collection|帐户中托管设备的型号列表|
 |deviceManufacturers|String collection|帐户中托管设备的制造者列表|
@@ -49,7 +49,6 @@ ms.locfileid: "54249921"
   ]
 }
 ```
-
 
 
 

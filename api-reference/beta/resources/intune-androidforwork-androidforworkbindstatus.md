@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 717222c957690606cedea1a3a9e092a7cd4db0bd0afcc9104342171e609e9334
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b38cf6fb3df04e8aee50eb09deabb255b2d4ea3c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54183301"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58753363"
 ---
 # <a name="androidforworkbindstatus-enum-type"></a>androidForWorkBindStatus 枚举类型
 
@@ -26,10 +26,9 @@ ms.locfileid: "54183301"
 |成员|值|说明|
 |:---|:---|:---|
 |notBound|0|尚未记录|
-|bound|1 |尚未记录|
-|boundAndValidated|2 |尚未记录|
-|unbinding|3 |尚未记录|
-
+|bound|1|尚未记录|
+|boundAndValidated|2|尚未记录|
+|unbinding|3|尚未记录|
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1438cc5446068cdb9d61efccc891714a866a3530385d7bf767ff351c58929d45
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b05d7ddcdf49e16f10dd7ed4864c39fe1f7a1261
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54244692"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58794411"
 ---
 # <a name="userexperienceanalyticshealthstate-enum-type"></a>userExperienceAnalyticsHealthState 枚举类型
 
@@ -26,10 +26,9 @@ ms.locfileid: "54244692"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|尚未记录|
-|insufficientData|1 |尚未记录|
-|needsAttention|2 |尚未记录|
-|meetingGoals|3 |尚未记录|
-
+|insufficientData|1|尚未记录|
+|needsAttention|2|尚未记录|
+|meetingGoals|3|尚未记录|
 
 
 

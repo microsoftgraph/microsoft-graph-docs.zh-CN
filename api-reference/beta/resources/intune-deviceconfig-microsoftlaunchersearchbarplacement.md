@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b748be6659e4b4db915b26972c1fbff24076af8709bfebd1e030dd25e5bdcdfb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5b7a7fae08a6c5b34b947edf757fd0dcf4864c51
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54244979"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58810646"
 ---
 # <a name="microsoftlaunchersearchbarplacement-enum-type"></a>microsoftLauncherSearchBarPlacement 枚举类型
 
@@ -26,10 +26,9 @@ ms.locfileid: "54244979"
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置;将忽略此值。|
-|top|1 |指示搜索栏将显示在设备的顶部。|
-|bottom|2 |指示搜索栏将显示在设备底部。|
-|hide|3 |指示搜索栏将在设备上隐藏。|
-
+|top|1|指示搜索栏将显示在设备的顶部。|
+|bottom|2|指示搜索栏将显示在设备底部。|
+|hide|3|指示搜索栏将在设备上隐藏。|
 
 
 

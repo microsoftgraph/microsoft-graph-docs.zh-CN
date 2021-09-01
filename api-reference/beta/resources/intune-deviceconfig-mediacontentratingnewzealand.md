@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b91c7d9317bb024b76c7d907632d572345246bda2d28f2ce708400ea4d73b3c2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8d5a23c3d7893abd60a1de9a3305a2d561b3c588
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54190547"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58799211"
 ---
 # <a name="mediacontentratingnewzealand-resource-type"></a>mediaContentRatingNewZealand 资源类型
 
@@ -45,7 +45,6 @@ ms.locfileid: "54190547"
   "tvRating": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f26cc20fe8156689a2aa1d52669b8775b347f65b2d3d8c65b85209b9abc3bd78
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 70e7520b3f8cb91c2b03065723afc36bdebea33f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54251524"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58790407"
 ---
 # <a name="macossoftwareupdatebehavior-enum-type"></a>macOSSoftwareUpdateBehavior 枚举类型
 
@@ -26,8 +26,7 @@ macOS 软件更新的更新行为选项。
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置。|
-|default|1 |下载和/或安装软件更新，具体取决于当前设备状态。|
-
+|default|1|下载和/或安装软件更新，具体取决于当前设备状态。|
 
 
 

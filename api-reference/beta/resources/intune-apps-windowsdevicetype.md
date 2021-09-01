@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6218fec26704f392935996d828de82d44de1481790d16ca055a60195c7b67f65
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 60f24b5e5dd32f137a278344283d30d2aec3494c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54250054"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820532"
 ---
 # <a name="windowsdevicetype-enum-type"></a>windowsDeviceType 枚举类型
 
@@ -23,14 +23,13 @@ ms.locfileid: "54250054"
 包含设备Windows的属性。
 
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |无|0|未设置标志。|
-|desktop|1 |是否支持桌面Windows设备类型。|
-|mobile|2 |是否支持移动设备Windows移动设备类型。|
+|desktop|1|是否支持桌面Windows设备类型。|
+|mobile|2|是否支持移动设备Windows移动设备类型。|
 |全息版|4 |是否支持全息Windows设备类型。|
-|team|8 |是否支持 Team Windows设备类型。|
-
+|team|8 |是否支持团队Windows设备类型。|
 
 
 

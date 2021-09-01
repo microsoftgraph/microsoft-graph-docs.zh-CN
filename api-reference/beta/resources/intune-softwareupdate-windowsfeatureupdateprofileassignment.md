@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5e4666992b4391abb4c94ce5d14d2d22194a332891a87c636054f1dd949c5c18
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b85aad78cda12df1cdc9eb7b1613c26b5caf53be
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54241476"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816891"
 ---
 # <a name="windowsfeatureupdateprofileassignment-resource-type"></a>windowsFeatureUpdateProfileAssignment 资源类型
 
@@ -22,8 +22,8 @@ ms.locfileid: "54241476"
 
 此实体包含用于向组分配 Windows 功能更新配置文件的属性。
 
-## <a name="methods"></a>Methods
-|方法|返回类型|说明|
+## <a name="methods"></a>方法
+|方法|返回类型|Description|
 |:---|:---|:---|
 |[列出 windowsFeatureUpdateProfileAssignments](../api/intune-softwareupdate-windowsfeatureupdateprofileassignment-list.md)|[windowsFeatureUpdateProfileAssignment](../resources/intune-softwareupdate-windowsfeatureupdateprofileassignment.md) 集合|列出 [windowsFeatureUpdateProfileAssignment](../resources/intune-softwareupdate-windowsfeatureupdateprofileassignment.md) 对象的属性和关系。|
 |[获取 windowsFeatureUpdateProfileAssignment](../api/intune-softwareupdate-windowsfeatureupdateprofileassignment-get.md)|[windowsFeatureUpdateProfileAssignment](../resources/intune-softwareupdate-windowsfeatureupdateprofileassignment.md)|读取 [windowsFeatureUpdateProfileAssignment 对象的属性和](../resources/intune-softwareupdate-windowsfeatureupdateprofileassignment.md) 关系。|
@@ -59,7 +59,6 @@ ms.locfileid: "54241476"
   }
 }
 ```
-
 
 
 

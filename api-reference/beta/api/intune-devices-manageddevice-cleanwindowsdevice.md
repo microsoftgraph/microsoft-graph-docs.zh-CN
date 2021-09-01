@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2ec6b3218335a3cb2373b1991f788f1e362dea01583f9df6ac1ef7ef80a46b26
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4577309f86fcdeaf24bed11ff54ac46cdde52e92
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54198862"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58790050"
 ---
 # <a name="cleanwindowsdevice-action"></a>cleanWindowsDevice 操作
 
@@ -49,7 +49,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -86,7 +86,6 @@ Content-length: 28
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

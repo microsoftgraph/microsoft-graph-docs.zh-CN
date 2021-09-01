@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 001fe133df50f44fde9909447862920963d55448a236acc2ae29d79bce241602
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fe1720b71d5de294d9c8f2ac57b9e1bd2bab7c72
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54148062"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58805378"
 ---
 # <a name="devicemanagementconfigurationreferencesettingvalue-resource-type"></a>deviceManagementConfigurationReferenceSettingValue 资源类型
 
@@ -54,7 +54,6 @@ ReferenceSettingValue 的模型
   "note": "String"
 }
 ```
-
 
 
 

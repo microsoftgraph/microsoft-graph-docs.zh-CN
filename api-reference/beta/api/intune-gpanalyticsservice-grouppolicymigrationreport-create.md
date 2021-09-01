@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4fc126fc802f027933bb4078d02345195a9534a2f73cba00ac01db09a7fe17e4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 83e7186cfed8314a015d4ef080b9f9e6e8f5e0c6
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54123193"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58793447"
 ---
 # <a name="create-grouppolicymigrationreport"></a>创建 groupPolicyMigrationReport
 
@@ -43,7 +43,7 @@ POST /deviceManagement/groupPolicyMigrationReports
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -55,7 +55,7 @@ POST /deviceManagement/groupPolicyMigrationReports
 |:---|:---|:---|
 |id|String|尚未记录|
 |groupPolicyObjectId|Guid|来自 GPO Xml 内容的组策略对象 GUID|
-|displayName|字符串|GPO Xml 内容中的组策略对象的名称|
+|displayName|String|GPO Xml 内容中的组策略对象的名称|
 |ouDistinguishedName|String|OU 的可分辨名称。|
 |createdDateTime|DateTimeOffset|创建 GroupPolicyMigrationReport 的日期和时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改 GroupPolicyMigrationReport 的日期和时间。|
@@ -120,7 +120,6 @@ Content-Length: 716
   "supportedSettingsPercent": 8
 }
 ```
-
 
 
 
