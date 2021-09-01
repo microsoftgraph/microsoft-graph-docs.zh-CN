@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0c1c1e78fe1ea9e93f7544feee3b07bb92bc2b3bc08b5f8ecd0c5da821802c17
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f32a095a71304d81dd77ab5e711042a613f3e932
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54150477"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786731"
 ---
 # <a name="androidvpnconnectiontype-enum-type"></a>androidVpnConnectionType 枚举类型
 
@@ -26,15 +26,14 @@ Android VPN 连接类型。
 |成员|值|说明|
 |:---|:---|:---|
 |ciscoAnyConnect|0|Cisco AnyConnect。|
-|pulseSecure|1 |脉冲安全。|
-|f5EdgeClient|2 |F5 边缘客户端。|
-|dellSonicWallMobileConnect|3 |Dell SonicWALL 移动连接。|
+|pulseSecure|1|脉冲安全。|
+|f5EdgeClient|2|F5 边缘客户端。|
+|dellSonicWallMobileConnect|3|Dell SonicWALL 移动连接。|
 |checkPointCapsuleVpn|4 |Check Point Capsule VPN.|
 |citrix|5 |Citrix|
 |microsoftTunnel|7 |Microsoft Tunnel。|
 |netMotionMobility|8 |NetMotion Mobility。|
 |microsoftProtect|9 |Microsoft 保护。|
-
 
 
 

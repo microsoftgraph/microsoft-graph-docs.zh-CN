@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b1292a1759bd9e101123c5f1a80e307ebe0c5fb528ab1d236a52e106fac57807
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3ad467c220b0cc3a588b86d25f7cb52f6e5b418c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54157317"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783391"
 ---
 # <a name="create-devicemanagementintentassignment"></a>创建 deviceManagementIntentAssignment
 
@@ -43,7 +43,7 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/assignments
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -99,7 +99,6 @@ Content-Length: 440
   }
 }
 ```
-
 
 
 

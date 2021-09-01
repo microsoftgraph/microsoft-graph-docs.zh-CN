@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 827f687fc2335794f4daf9cfbe74e92b490d728c3398bd9456bc09775d5b9c8a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8f0a46128b09a5909503caf2555caf3741f9a185
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54191723"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58774681"
 ---
 # <a name="delete-windows10easemailprofileconfiguration"></a>删除 windows10EasEmailProfileConfiguration
 
@@ -45,7 +45,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -67,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

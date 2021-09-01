@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 79111cc076696092da3048907fce09912955b76bde8333c9797d31ad66decc0a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c32d43ced47d236c45dc5a0fbae8074013e39e1a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54200647"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58784259"
 ---
 # <a name="androidmanagedstoreappconfigurationschemaitemdatatype-enum-type"></a>androidManagedStoreAppConfigurationSchemaItemDataType 枚举类型
 
@@ -26,14 +26,13 @@ Android 应用程序的自定义配置架构中的配置项的数据类型
 |成员|值|说明|
 |:---|:---|:---|
 |布尔值|0|尚未记录|
-|integer|1 |尚未记录|
-|string|2 |尚未记录|
-|choice|3 |尚未记录|
+|integer|1|尚未记录|
+|string|2|尚未记录|
+|choice|3|尚未记录|
 |multiselect|4 |尚未记录|
 |bundle|5 |尚未记录|
 |bundleArray|6 |尚未记录|
 |hidden|7 |尚未记录|
-
 
 
 

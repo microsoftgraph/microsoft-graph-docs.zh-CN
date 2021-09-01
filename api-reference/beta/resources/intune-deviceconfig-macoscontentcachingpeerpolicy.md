@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b89b7043ca64f106ec1d3bbded041ae15461195c916db0d31cf32dd848d42e40
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 22adc6cd2df6dad85875deb190f40c305776a991
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54181193"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783545"
 ---
 # <a name="macoscontentcachingpeerpolicy-enum-type"></a>macOSContentCachingPeerPolicy 枚举类型
 
@@ -26,10 +26,9 @@ ms.locfileid: "54181193"
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|默认为本地网络的对等方。|
-|peersInLocalNetwork|1 |内容缓存仅与直接本地网络中缓存对等。|
-|peersWithSamePublicIpAddress|2 |内容缓存仅与共享同一公共 IP 地址的缓存对等。|
-|peersInCustomLocalNetworks|3 |内容缓存将使用 contentCachingPeerFilterRanges 和 contentCachingPeerListenRanges 来确定要对等的缓存。|
-
+|peersInLocalNetwork|1|内容缓存仅与直接本地网络中缓存对等。|
+|peersWithSamePublicIpAddress|2|内容缓存仅与共享同一公共 IP 地址的缓存对等。|
+|peersInCustomLocalNetworks|3|内容缓存将使用 contentCachingPeerFilterRanges 和 contentCachingPeerListenRanges 来确定要对等的缓存。|
 
 
 

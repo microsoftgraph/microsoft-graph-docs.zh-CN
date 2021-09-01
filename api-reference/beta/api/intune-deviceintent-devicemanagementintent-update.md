@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c71ddecdce69d701c9060f2f8bff12f1adedec5876265104189fe4b733308159
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cf39707f420628ee029ae11e1ae4f48904807179
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54166524"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787433"
 ---
 # <a name="update-devicemanagementintent"></a>更新 deviceManagementIntent
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -58,7 +58,7 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}
 |description|String|用户给定的说明|
 |isAssigned|Boolean|表示是否将意图分配给用户|
 |lastModifiedDateTime|DateTimeOffset|上次修改意图时|
-|templateId|字符串|此意图的模板 ID 是 (（如果有) |
+|templateId|String|此意图的模板 ID 是 (（如果有) |
 |roleScopeTagIds|String collection|此实体实例的范围标记列表。|
 
 
@@ -107,7 +107,6 @@ Content-Length: 379
   ]
 }
 ```
-
 
 
 

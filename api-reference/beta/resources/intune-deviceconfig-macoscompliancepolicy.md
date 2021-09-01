@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e0339931c039c8ee52928f97d85ef2c0b79a32a4bf3d8bb20b6c98b858925f57
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 44b9e446de9104a6fddd0b95ea9888492331a3df
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54206632"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783566"
 ---
 # <a name="macoscompliancepolicy-resource-type"></a>macOSCompliancePolicy 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "54206632"
 
 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[List macOSCompliancePolicies](../api/intune-deviceconfig-macoscompliancepolicy-list.md)|[macOSCompliancePolicy](../resources/intune-deviceconfig-macoscompliancepolicy.md) 集合|列出 [macOSCompliancePolicy](../resources/intune-deviceconfig-macoscompliancepolicy.md) 对象的属性和关系。|
@@ -38,11 +38,11 @@ ms.locfileid: "54206632"
 |属性|类型|说明|
 |:---|:---|:---|
 |roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
-|id|字符串|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|id|String|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |description|String|管理员提供的设备配置的说明。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
-|displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|displayName|String|管理员提供的设备配置的名称。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |passwordRequired|Boolean|是否需要密码。|
 |passwordBlockSimple|Boolean|指示是否阻止简单密码。|
@@ -61,15 +61,15 @@ ms.locfileid: "54206632"
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|要求移动威胁防护最低风险级别来报告不符合情况。 可取值为：`unavailable`、`secured`、`low`、`medium`、`high`、`notSet`。|
 |advancedThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|MDATP 要求移动威胁防护最低风险级别来报告不相容情况。 可取值为：`unavailable`、`secured`、`low`、`medium`、`high`、`notSet`。|
 |storageRequireEncryption|Boolean|要求对 Mac OS 设备加密。|
-|gatekeeperAllowedAppSource|[macOSGatekeeperAppSources](../resources/intune-deviceconfig-macosgatekeeperappsources.md)|系统和隐私设置，用于确定可从 macOS 设备上运行应用的下载位置。 可取值为：`notConfigured`、`macAppStore`、`macAppStoreAndIdentifiedDevelopers`、`anywhere`。|
-|firewallEnabled|布尔值|防火墙是否应该启用。|
-|firewallBlockAllIncoming|布尔值|对应于"阻止所有传入连接"选项。|
-|firewallEnableStealthMode|布尔值|对应于"启用隐藏模式"。|
+|gatekeeperAllowedAppSource|[macOSGatekeeperAppSources](../resources/intune-deviceconfig-macosgatekeeperappsources.md)|系统和隐私设置，用于确定可从 macOS 设备上运行应用的下载位置。 可能的值是：`notConfigured`、`macAppStore`、`macAppStoreAndIdentifiedDevelopers`、`anywhere`。|
+|firewallEnabled|Boolean|防火墙是否应该启用。|
+|firewallBlockAllIncoming|Boolean|对应于"阻止所有传入连接"选项。|
+|firewallEnableStealthMode|Boolean|对应于"启用隐藏模式"。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
-|scheduledActionsForRule|[deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md) 集合|此规则的计划操作的列表 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|scheduledActionsForRule|[deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md) 集合|此合规性策略的每个规则的计划操作列表。 在创建任何单独的每个平台合规性策略时，此属性是必需的。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |deviceStatuses|[deviceComplianceDeviceStatus](../resources/intune-deviceconfig-devicecompliancedevicestatus.md) 集合|DeviceComplianceDeviceStatus 的列表。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |userStatuses|[deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md) 集合|DeviceComplianceUserStatus 的列表。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |deviceStatusOverview|[deviceComplianceDeviceOverview](../resources/intune-deviceconfig-devicecompliancedeviceoverview.md)|设备合规性设备状态概述 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
@@ -120,7 +120,6 @@ ms.locfileid: "54206632"
   "firewallEnableStealthMode": true
 }
 ```
-
 
 
 

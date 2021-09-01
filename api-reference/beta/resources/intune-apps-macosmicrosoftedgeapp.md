@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 01de5a4705c4b11162821f8652c464d1015f424fee6ef80abed7cf1c9c187114
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 26e20911ae545b7ebcd73e5e8d724487667718b5
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54142160"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58817430"
 ---
 # <a name="macosmicrosoftedgeapp-resource-type"></a>macOSMicrosoftEdgeApp 资源类型
 
@@ -25,8 +25,8 @@ ms.locfileid: "54142160"
 
 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)
 
-## <a name="methods"></a>Methods
-|方法|返回类型|说明|
+## <a name="methods"></a>方法
+|方法|返回类型|Description|
 |:---|:---|:---|
 |[列出 macOSMicrosoftEdgeApps](../api/intune-apps-macosmicrosoftedgeapp-list.md)|[macOSMicrosoftEdgeApp](../resources/intune-apps-macosmicrosoftedgeapp.md) 集合|列出 [macOSMicrosoftEdgeApp 对象的属性和](../resources/intune-apps-macosmicrosoftedgeapp.md) 关系。|
 |[获取 macOSMicrosoftEdgeApp](../api/intune-apps-macosmicrosoftedgeapp-get.md)|[macOSMicrosoftEdgeApp](../resources/intune-apps-macosmicrosoftedgeapp.md)|读取 [macOSMicrosoftEdgeApp 对象的属性和](../resources/intune-apps-macosmicrosoftedgeapp.md) 关系。|
@@ -38,7 +38,7 @@ ms.locfileid: "54142160"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|displayName|字符串|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|displayName|String|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |description|String|应用的说明。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publisher|String|应用的发布者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|要显示在应用详细信息中并用于图标上传的大图标。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
@@ -53,14 +53,14 @@ ms.locfileid: "54142160"
 |uploadState|Int32|上载状态。 可能的值是：0 - `Not Ready` 、1 - `Ready` 、2 - `Processing` 。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否将应用分配给至少一个组的值。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|roleScopeTagIds|String collection|此移动应用的范围标记 ID 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|roleScopeTagIds|字符串集合|此移动应用的范围标记 ID 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|子应用具有的依赖项总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersedingAppCount|Int32|此应用直接或间接取代的应用总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersededAppCount|Int32|此应用直接或间接被取代的应用总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |channel|[microsoftEdgeChannel](../resources/intune-apps-microsoftedgechannel.md)|在目标设备上安装的通道。 可取值为：`dev`、`beta`、`stable`。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|Description|
 |:---|:---|:---|
 |categories|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) 集合|此应用的类别列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |assignments|[mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) 集合|此移动应用的组分配的列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
@@ -109,7 +109,6 @@ ms.locfileid: "54142160"
   "channel": "String"
 }
 ```
-
 
 
 

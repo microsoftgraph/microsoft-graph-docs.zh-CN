@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 304b9603491e5dc70969d8b46baefe380ebb2173df2e2ac8faf4086ba596f26d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 01776713839b75cffe13eca6c6cb9feedf5ad50b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54148048"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816506"
 ---
 # <a name="devicemanagementexchangeaccessstate-enum-type"></a>deviceManagementExchangeAccessState 枚举类型
 
@@ -23,14 +23,13 @@ ms.locfileid: "54148048"
 设备Exchange访问状态。
 
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |无|0|未从用户发现任何Exchange|
-|unknown|1 |设备访问状态Exchange未知|
-|allowed|2 |设备有权访问Exchange|
-|blocked|3 |设备在设备Exchange|
+|unknown|1|设备访问状态Exchange未知|
+|allowed|2|设备有权访问Exchange|
+|blocked|3|设备在Exchange|
 |quarantined|4 |设备已隔离Exchange|
-
 
 
 

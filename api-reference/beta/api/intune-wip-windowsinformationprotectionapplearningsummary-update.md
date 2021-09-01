@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 735a5cb94f1c2abf7c99472d92c76ce97969680a842fcdda2b9231c264a6b128
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 447721bf101d384f7645c89e5a12a16a48d62ffe
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54145563"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58796654"
 ---
 # <a name="update-windowsinformationprotectionapplearningsummary"></a>更新 windowsInformationProtectionAppLearningSummary
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/windowsInformationProtectionAppLearningSummaries/{window
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,7 +53,7 @@ PATCH /deviceManagement/windowsInformationProtectionAppLearningSummaries/{window
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|WindowsInformationProtectionAppLearningSummary 的唯一标识符。|
+|id|字符串|WindowsInformationProtectionAppLearningSummary 的唯一标识符。|
 |applicationName|String|应用程序名称|
 |applicationType|[applicationType](../resources/intune-wip-applicationtype.md)|应用程序类型。 可取值为：`universal`、`desktop`。|
 |deviceCount|Int32|设备计数|
@@ -95,7 +95,6 @@ Content-Length: 240
   "deviceCount": 11
 }
 ```
-
 
 
 

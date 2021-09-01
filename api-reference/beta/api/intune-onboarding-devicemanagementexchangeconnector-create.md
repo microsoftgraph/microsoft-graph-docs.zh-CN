@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e1144d3a19d609bb8fe80c97bc451327428e979c96c5379df7e3e41f66e0b174
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c7462b29170ffc190d30f7b30601b0cd7f17d00d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54123095"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58817171"
 ---
 # <a name="create-devicemanagementexchangeconnector"></a>创建 deviceManagementExchangeConnector
 
@@ -43,7 +43,7 @@ POST /deviceManagement/exchangeConnectors
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -55,7 +55,7 @@ POST /deviceManagement/exchangeConnectors
 |:---|:---|:---|
 |id|String|尚未记录|
 |lastSyncDateTime|DateTimeOffset|Exchange Connector 的上一次同步时间|
-|status|[deviceManagementExchangeConnectorStatus](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|Exchange连接器状态。 可取值为：`none`、`connectionPending`、`connected`、`disconnected`。|
+|status|[deviceManagementExchangeConnectorStatus](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|Exchange连接器状态。 可能的值是：`none`、`connectionPending`、`connected`、`disconnected`。|
 |primarySmtpAddress|String|用于配置服务到服务 Exchange Connector 的电子邮件地址。|
 |serverName|String|服务器的名称Exchange服务器。|
 |connectorServerName|String|托管 Exchange Connector 的服务器的名称。|
@@ -113,7 +113,6 @@ Content-Length: 539
   "exchangeOrganization": "Exchange Organization value"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: efd150860c8dd7e89c714cadf496e49b3ebc8f1630f9d77e8d767f87196a4e34
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ecbc8cdcb5335ab984a365e2ab6c2adec254d083
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54218189"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58788119"
 ---
 # <a name="delete-managedandroidstoreapp"></a>删除 managedAndroidStoreApp
 
@@ -45,7 +45,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIn
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -67,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

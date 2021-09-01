@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a3cf9a0c16063c0f2fcd359598a677fa59ad042f49472077be354bc40854ed75
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: edf1acc4839c8bead5cf2b24477c26b9ccd1087b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249865"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787270"
 ---
 # <a name="remoteactionaudit-resource-type"></a>remoteActionAudit 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54249865"
 
 在属于特定租户的设备上启动的远程操作的报告。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 remoteActionAudits](../api/intune-devices-remoteactionaudit-list.md)|[remoteActionAudit](../resources/intune-devices-remoteactionaudit.md) 集合|列出 [remoteActionAudit 对象的属性和](../resources/intune-devices-remoteactionaudit.md) 关系。|
@@ -40,10 +40,10 @@ ms.locfileid: "54249865"
 |initiatedByUserPrincipalName|字符串|启动设备操作的用户，格式为 UPN。|
 |action|[remoteAction](../resources/intune-devices-remoteaction.md)|操作名称。 可能的值是 `unknown` `factoryReset` ：、、、、、、、、、、。 `removeCompanyData` `resetPasscode` `remoteLock` `enableLostMode` `disableLostMode` `locateDevice` `rebootNow` `recoverPasscode` `cleanWindowsDevice` `logoutSharedAppleDeviceActiveUser` `quickScan` `fullScan` `windowsDefenderUpdateSignatures` `factoryResetKeepEnrollmentData` `updateDeviceAccount` `automaticRedeployment` `shutDown` `rotateBitLockerKeys` `rotateFileVaultKey` `getFileVaultKey` `setDeviceName` `activateDeviceEsim`|
 |requestDateTime|DateTimeOffset|发出操作的时间（以 UTC 表示）。|
-|deviceOwnerUserPrincipalName|字符串|设备所有者的 Upn。|
-|deviceIMEI|String|设备的 IMEI。|
+|deviceOwnerUserPrincipalName|String|设备所有者的 Upn。|
+|deviceIMEI|字符串|设备的 IMEI。|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|操作状态。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed` 或 `notSupported`。|
-|managedDeviceId|字符串|操作目标。|
+|managedDeviceId|String|操作目标。|
 
 ## <a name="relationships"></a>关系
 无
@@ -71,7 +71,6 @@ ms.locfileid: "54249865"
   "managedDeviceId": "String"
 }
 ```
-
 
 
 

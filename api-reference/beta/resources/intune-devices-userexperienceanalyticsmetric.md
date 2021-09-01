@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8e51ae807419adf240ebd5507869c00d1882281a84743156d34f7489a5623a00
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 62d2714b35ee746a4f2dcdd99e44cbf88e7e83a4
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54200514"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787263"
 ---
 # <a name="userexperienceanalyticsmetric-resource-type"></a>userExperienceAnalyticsMetric 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54200514"
 
 用户体验分析指标包含用户体验分析类别指标的分数和单位。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 userExperienceAnalyticsMetrics](../api/intune-devices-userexperienceanalyticsmetric-list.md)|[userExperienceAnalyticsMetric](../resources/intune-devices-userexperienceanalyticsmetric.md) 集合|列出 [userExperienceAnalyticsMetric 对象的属性和](../resources/intune-devices-userexperienceanalyticsmetric.md) 关系。|
@@ -57,7 +57,6 @@ ms.locfileid: "54200514"
   "unit": "String"
 }
 ```
-
 
 
 

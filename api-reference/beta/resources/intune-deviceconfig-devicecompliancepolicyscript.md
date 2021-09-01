@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 84c625371c4568d78beec0feedf9ad6e911f70fecd2c065815472fe98b6e6ed6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1fc8ccaef0add979ccb3459c3664ae8915d4713f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54250019"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58778057"
 ---
 # <a name="devicecompliancepolicyscript-resource-type"></a>deviceCompliancePolicyScript 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "54250019"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|deviceComplianceScriptId|字符串|设备合规性脚本 ID。|
+|deviceComplianceScriptId|String|设备合规性脚本 ID。|
 |rulesContent|二进制|规则的 Json。|
 
 ## <a name="relationships"></a>关系
@@ -45,7 +45,6 @@ ms.locfileid: "54250019"
   "rulesContent": "binary"
 }
 ```
-
 
 
 

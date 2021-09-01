@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c2abc11409c1e7128a53b5343f8ad767541b471a535c171b1d1ab350e3963604
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bd0ac53c6c46421016e4cd58840317b43df48844
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54162660"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58788133"
 ---
 # <a name="update-iosvppappassigneduserlicense"></a>更新 iosVppAppAssignedUserLicense
 
@@ -43,7 +43,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/as
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,8 +54,8 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/as
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
-|userEmailAddress|字符串|用户电子邮件地址。 继承自 [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
-|userId|字符串|用户 ID。 继承自 [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
+|userEmailAddress|String|用户电子邮件地址。 继承自 [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
+|userId|String|用户 ID。 继承自 [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
 |userName|String|用户名。 继承自 [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
 |userPrincipalName|String|用户主体名称。 继承自 [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
 
@@ -98,7 +98,6 @@ Content-Length: 287
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 93dfe72238fbfad2fce489f8438a7db79526a65635064ebe1ce81f9a6c7467e5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c92a30d44c2f87e74e5f7c2d0b5ae3a83bc09a02
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54190666"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785183"
 ---
 # <a name="termsandconditionsgroupassignment-resource-type"></a>termsAndConditionsGroupAssignment 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54190666"
 
 termsAndConditionsGroupAssignment 实体表示将给定条款和条件 (T&C) 策略分配给给定组。 组中的用户需要接受这些条款，才能将设备注册到 Intune。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 termsAndConditionsGroupAssignments](../api/intune-companyterms-termsandconditionsgroupassignment-list.md)|[termsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md) 集合|列出 [termsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md) 对象的属性和关系。|
@@ -57,7 +57,6 @@ termsAndConditionsGroupAssignment 实体表示将给定条款和条件 (T&C) 策
   "targetGroupId": "String"
 }
 ```
-
 
 
 

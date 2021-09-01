@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1704ffc3bb96f78225a5c23754493163d851dbeefdb44941a81786f669601eaa
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 497ed64bdbe5bf10d298ecc1813d48b43f52c92c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54206345"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58802976"
 ---
 # <a name="devicemanagementsubscriptionstate-enum-type"></a>deviceManagementSubscriptionState 枚举类型
 
@@ -26,13 +26,12 @@ ms.locfileid: "54206345"
 |成员|值|说明|
 |:---|:---|:---|
 |pending|0|Pending|
-|active|1 |活动文件|
-|警告|2 |警告|
-|disabled|3 |禁用|
+|active|1|活动|
+|警告|2|警告|
+|disabled|3|禁用|
 |deleted|4 |Deleted|
 |blocked|5 |Blocked|
 |lockedOut|8 |LockedOut|
-
 
 
 

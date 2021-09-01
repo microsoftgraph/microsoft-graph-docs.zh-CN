@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ebfa8946e8f785d2f30db8a2d611c3fe20ca8570d089fae9ac67c6d6226ea22c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 656aa62b8efce51b7572a7ea7d118ca7c23246a3
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54153319"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795583"
 ---
 # <a name="certificatestatus-enum-type"></a>certificateStatus 枚举类型
 
@@ -26,8 +26,7 @@ ms.locfileid: "54153319"
 |成员|值|说明|
 |:---|:---|:---|
 |notProvisioned|0|尚未记录|
-|已设置|1 |尚未记录|
-
+|已设置|1|尚未记录|
 
 
 

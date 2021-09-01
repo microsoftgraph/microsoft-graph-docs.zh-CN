@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8e47461a2f7b22ea1295ebefbf1d68212316e1c9f06e4222014725d826831320
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 594d6f02dfa615ba049c391a28bf425dfb30c89f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178967"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58817346"
 ---
 # <a name="grouppolicydefinitionclasstype-enum-type"></a>groupPolicyDefinitionClassType 枚举类型
 
@@ -23,11 +23,10 @@ ms.locfileid: "54178967"
 组策略定义类类型。
 
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |用户|0|标识策略设置在用户配置节点下的位置。|
-|计算机|1 |标识策略设置在计算机配置节点下的位置。|
-
+|计算机|1|标识策略设置在计算机配置节点下的位置。|
 
 
 

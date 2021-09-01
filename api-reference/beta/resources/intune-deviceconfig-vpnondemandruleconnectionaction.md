@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6eb0646d2b09bbd3fe8fb9182bb6cbace77471d66f2b815286620a69291d1dff
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9232175b8de49672b9bb958bacda811fe3f4baf4
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54131169"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818110"
 ---
 # <a name="vpnondemandruleconnectionaction-enum-type"></a>vpnOnDemandRuleConnectionAction 枚举类型
 
@@ -23,13 +23,12 @@ ms.locfileid: "54131169"
 VPN 按需规则连接操作。
 
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |connect|0|连接。|
-|evaluateConnection|1 |评估连接。|
-|ignore|2 |忽略。|
-|disconnect|3 |断开连接。|
-
+|evaluateConnection|1|评估连接。|
+|ignore|2|忽略。|
+|disconnect|3|断开连接。|
 
 
 

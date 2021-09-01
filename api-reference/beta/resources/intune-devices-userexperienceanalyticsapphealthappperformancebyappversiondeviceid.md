@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: efaaa1c2ac380fc3802426fc771f4bdfed7c6b99
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 0f44c1ed07957e75200543e1487386acc642e4c5
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58259218"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58788442"
 ---
 # <a name="userexperienceanalyticsapphealthappperformancebyappversiondeviceid-resource-type"></a>userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "58259218"
 
 用户体验分析应用程序性能实体包含按应用版本设备 ID 的应用性能。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceIds](../api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversiondeviceid-list.md)|[userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyappversiondeviceid.md) 集合|列出 [userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId 对象的属性和](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyappversiondeviceid.md) 关系。|
@@ -40,8 +40,8 @@ ms.locfileid: "58259218"
 |processedDateTime|DateTimeOffset|上次计算统计信息的日期和时间。|
 |appName|String|应用程序名。|
 |appDisplayName|String|应用程序的友好名称。|
-|appPublisher|String|应用程序的发布者。|
-|appVersion|String|应用程序的版本。|
+|appPublisher|字符串|应用程序的发布者。|
+|appVersion|字符串|应用程序的版本。|
 |appCrashCount|Int32|应用的崩溃数。 有效值 -2147483648 2147483647|
 
 ## <a name="relationships"></a>关系
@@ -69,7 +69,6 @@ ms.locfileid: "58259218"
   "appCrashCount": 1024
 }
 ```
-
 
 
 

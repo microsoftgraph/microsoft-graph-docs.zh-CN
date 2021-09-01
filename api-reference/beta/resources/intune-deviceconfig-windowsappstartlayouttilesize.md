@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7589a77848decce46678302957d422d865997c5b86cb213be1d088d2f9875dd6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 71664b77a1b38be0a306fdea7e48834f43983e75
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54198120"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58794095"
 ---
 # <a name="windowsappstartlayouttilesize-enum-type"></a>windowsAppStartLayoutTileSize 枚举类型
 
@@ -26,11 +26,10 @@ ms.locfileid: "54198120"
 |成员|值|说明|
 |:---|:---|:---|
 |hidden|0|已隐藏。|
-|小|1 |小型 1x1。|
-|中等|2 |中等 2x2。|
-|wide|3 |宽 4x2。|
+|小|1|小型 1x1。|
+|中等|2|中等 2x2。|
+|wide|3|宽 4x2。|
 |大|4 |大型 4x4。|
-
 
 
 

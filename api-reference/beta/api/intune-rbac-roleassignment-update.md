@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 026349fc0a06e4d90b6a4d6fa030b8671ebfb67ce71f182b4e843943b52b7f39
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bf6ee49a1fe3ee1a99cd6f1a8023ec50a9f59c61
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54215500"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785218"
 ---
 # <a name="update-roleassignment"></a>更新 roleAssignment
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -57,7 +57,7 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 |displayName|字符串|角色分配的显示或友好名称。|
 |description|String|角色分配的说明。|
 |scopeMembers|String collection|角色作用域成员安全组的 ID 列表。  这些是 Azure Active Directory 中的 ID。|
-|scopeType|[roleAssignmentScopeType](../resources/intune-rbac-roleassignmentscopetype.md)|指定角色分配的范围类型。 默认类型"ResourceScope"允许分配 ResourceScopes。 对于"AllDevices"、"AllLicensedUsers"和"AllDevicesAndLicensedUsers"，ResourceScopes 属性应留空。 可取值为：`resourceScope`、`allDevices`、`allLicensedUsers`、`allDevicesAndLicensedUsers`。|
+|scopeType|[roleAssignmentScopeType](../resources/intune-rbac-roleassignmentscopetype.md)|指定角色分配的范围类型。 默认类型"ResourceScope"允许分配 ResourceScopes。 对于"AllDevices"、"AllLicensedUsers"和"AllDevicesAndLicensedUsers"，ResourceScopes 属性应留空。 可能的值是：`resourceScope`、`allDevices`、`allLicensedUsers`、`allDevicesAndLicensedUsers`。|
 |resourceScopes|String collection|角色作用域成员安全组的 ID 列表。  这些是 Azure Active Directory 中的 ID。|
 
 
@@ -109,7 +109,6 @@ Content-Length: 326
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 135594e3dd1ea54b6ca61b0724a31537519258c9
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: a21edb65043744659b6797470fd19bf475625076
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266826"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58796837"
 ---
 # <a name="deviceandappmanagementassignmentfilter-resource-type"></a>deviceAndAppManagementAssignmentFilter 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "58266826"
 
 一个包含用于工作分配筛选器的属性的类。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceAndAppManagementAssignmentFilters](../api/intune-policyset-deviceandappmanagementassignmentfilter-list.md)|[deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md) 集合|列出 [deviceAndAppManagementAssignmentFilter 对象的属性和](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md) 关系。|
@@ -45,7 +45,7 @@ ms.locfileid: "58266826"
 |displayName|字符串|工作分配筛选器的 DisplayName。|
 |description|String|工作分配筛选器的说明。|
 |平台|[devicePlatformType](../resources/intune-policyset-deviceplatformtype.md)|工作分配筛选器适用的设备的平台类型。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`unknown`。|
-|rule|字符串|工作分配筛选器的规则定义。|
+|rule|String|工作分配筛选器的规则定义。|
 |roleScopeTags|String collection|工作分配筛选器的 RoleScopeTags。|
 
 ## <a name="relationships"></a>关系
@@ -74,7 +74,6 @@ ms.locfileid: "58266826"
   ]
 }
 ```
-
 
 
 

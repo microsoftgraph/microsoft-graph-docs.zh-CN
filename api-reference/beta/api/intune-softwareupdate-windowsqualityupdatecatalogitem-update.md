@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5246b0078695f344244f540170988e4c17e2ac98f8e1e70dbe51aa21204f84dc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 01e60d7d95105a2114c10c591875920739c8d9c5
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54215431"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801541"
 ---
 # <a name="update-windowsqualityupdatecatalogitem"></a>更新 windowsQualityUpdateCatalogItem
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/windowsUpdateCatalogItems/{windowsUpdateCatalogItemId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,13 +53,13 @@ PATCH /deviceManagement/windowsUpdateCatalogItems/{windowsUpdateCatalogItemId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|目录项 ID。继承自 [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
-|displayName|字符串|目录显示名称的条目。 继承自 [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
+|id|字符串|目录项 ID。继承自 [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
+|displayName|String|目录显示名称列表。 继承自 [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
 |releaseDateTime|DateTimeOffset|目录项的发布日期 继承自 [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
 |endOfSupportDate|DateTimeOffset|目录项的上次支持日期 继承自 [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
 |kbArticleId|String|知识库文章 ID|
 |classification|[windowsQualityUpdateClassification](../resources/intune-softwareupdate-windowsqualityupdateclassification.md)|质量更新的分类。 可取值为：`all`、`security`、`nonSecurity`。|
-|isExpeditable|布尔值|指示更新是否符合加速条件的标志|
+|isExpeditable|Boolean|指示更新是否符合加速条件的标志|
 
 
 
@@ -104,7 +104,6 @@ Content-Length: 381
   "isExpeditable": true
 }
 ```
-
 
 
 

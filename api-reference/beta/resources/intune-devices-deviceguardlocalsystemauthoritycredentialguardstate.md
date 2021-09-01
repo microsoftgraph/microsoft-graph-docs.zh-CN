@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a779bb3165f866a3ba1c3fc513084d6e5cf611fc1528e7ded5d1898f616649b1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c81fd1cfde1f8605ba534bdae93dd00eaef9ecc3
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54252884"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58817388"
 ---
 # <a name="deviceguardlocalsystemauthoritycredentialguardstate-enum-type"></a>deviceGuardLocalSystemAuthorityCredentialGuardState 枚举类型
 
@@ -23,14 +23,13 @@ ms.locfileid: "54252884"
 尚未记录
 
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |running|0|正在运行|
-|rebootRequired|1 |需要重新启动|
-|notLicensed|2 |未获得 Credential Guard 许可|
-|notConfigured|3 |未配置|
+|rebootRequired|1|需要重新启动|
+|notLicensed|2|未获得 Credential Guard 许可|
+|notConfigured|3|未配置|
 |virtualizationBasedSecurityNotRunning|4 |基于虚拟化的安全性未运行|
-
 
 
 

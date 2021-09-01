@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cea33ea23d7e1087fa7b54e8772497d392ac152b
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: d6d131aeaa4cd55f1ad35b5fa55106e4e2ff3a03
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58260878"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785302"
 ---
 # <a name="create-circulargeofencemanagementcondition"></a>创建 circularGeofenceManagementCondition
 
@@ -44,7 +44,7 @@ POST /deviceManagement/managementConditions/{managementConditionId}/managementCo
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -119,7 +119,6 @@ Content-Length: 539
   "radiusInMeters": 4.666666666666667
 }
 ```
-
 
 
 

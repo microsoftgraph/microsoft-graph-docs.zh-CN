@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d94a4099e26410044c887bd1e49f395210ba70cb
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 2458c8b1f91061dab6735a99f8e4ade9c28bd4f2
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58262177"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785694"
 ---
 # <a name="enrollmentrestrictionsconfigurationpolicysetitem-resource-type"></a>enrollmentRestrictionsConfigurationPolicySetItem 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "58262177"
 
 继承自 [policySetItem](../resources/intune-policyset-policysetitem.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 enrollmentRestrictionsConfigurationPolicySetItems](../api/intune-policyset-enrollmentrestrictionsconfigurationpolicysetitem-list.md)|[enrollmentRestrictionsConfigurationPolicySetItem](../resources/intune-policyset-enrollmentrestrictionsconfigurationpolicysetitem.md) 集合|列出 [enrollmentRestrictionsConfigurationPolicySetItem 对象的属性和](../resources/intune-policyset-enrollmentrestrictionsconfigurationpolicysetitem.md) 关系。|
@@ -42,10 +42,10 @@ ms.locfileid: "58262177"
 |lastModifiedDateTime|DateTimeOffset|PolicySetItem 的上次修改时间。 继承自 [policySetItem](../resources/intune-policyset-policysetitem.md)|
 |payloadId|String|PolicySetItem 的 PayloadId。 继承自 [policySetItem](../resources/intune-policyset-policysetitem.md)|
 |itemType|String|PolicySetItem 的 policySetType。 继承自 [policySetItem](../resources/intune-policyset-policysetitem.md)|
-|displayName|字符串|PolicySetItem 的 DisplayName。 继承自 [policySetItem](../resources/intune-policyset-policysetitem.md)|
-|status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|PolicySetItem 的状态。 继承自 [policySetItem](../resources/intune-policyset-policysetitem.md)。 可取值为：`unknown`、`validating`、`partialSuccess`、`success`、`error`、`notAssigned`。|
+|displayName|String|PolicySetItem 的 DisplayName。 继承自 [policySetItem](../resources/intune-policyset-policysetitem.md)|
+|状态|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|PolicySetItem 的状态。 继承自 [policySetItem](../resources/intune-policyset-policysetitem.md)。 可取值为：`unknown`、`validating`、`partialSuccess`、`success`、`error`、`notAssigned`。|
 |errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|错误代码（如果发生了任何错误）。 继承自 [policySetItem](../resources/intune-policyset-policysetitem.md)。 可取值为：`noError`、`unauthorized`、`notFound`、`deleted`。|
-|guidedDeploymentTags|String collection|引导式部署的标记 继承自 [policySetItem](../resources/intune-policyset-policysetitem.md)|
+|guidedDeploymentTags|字符串集合|引导式部署的标记 继承自 [policySetItem](../resources/intune-policyset-policysetitem.md)|
 |priority|Int32|EnrollmentRestrictionsConfigurationPolicySetItem 的优先级。|
 |limit|Int32|EnrollmentRestrictionsConfigurationPolicySetItem 的限制。|
 
@@ -78,7 +78,6 @@ ms.locfileid: "58262177"
   "limit": 1024
 }
 ```
-
 
 
 

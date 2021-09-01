@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bcc304ee18138aaa570fc0b008f6de6c02e0ce144938b46411b05153490ef8b6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f04af0ddb3ec005dc69a560c89f22e865ceeb23b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54240055"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787629"
 ---
 # <a name="win32lobappfilesystemrule-resource-type"></a>win32LobAppFileSystemRule 资源类型
 
@@ -31,7 +31,7 @@ ms.locfileid: "54240055"
 |ruleType|[win32LobAppRuleType](../resources/intune-apps-win32lobappruletype.md)|指示规则用途的规则类型。 继承自 [win32LobAppRule](../resources/intune-apps-win32lobapprule.md)。 可取值为：`detection`、`requirement`。|
 |路径|String|要查找的文件或文件夹路径。|
 |fileOrFolderName|String|要查找的文件或文件夹名称。|
-|check32BitOn64System|布尔值|一个值，指示是否在 64 位系统上展开 32 位上下文中的环境变量。|
+|check32BitOn64System|Boolean|一个值，指示是否在 64 位系统上展开 32 位上下文中的环境变量。|
 |operationType|[win32LobAppFileSystemOperationType](../resources/intune-apps-win32lobappfilesystemoperationtype.md)|文件系统操作类型。 可取值为：`notConfigured`、`exists`、`modifiedDate`、`createdDate`、`version`、`sizeInMB` 或 `doesNotExist`。|
 |operator|[win32LobAppRuleOperator](../resources/intune-apps-win32lobappruleoperator.md)|文件或文件夹检测的运算符。 可取值为：`notConfigured`、`equal`、`notEqual`、`greaterThan`、`greaterThanOrEqual`、`lessThan` 或 `lessThanOrEqual`。|
 |comparisonValue|String|文件或文件夹比较值。|
@@ -58,7 +58,6 @@ ms.locfileid: "54240055"
   "comparisonValue": "String"
 }
 ```
-
 
 
 

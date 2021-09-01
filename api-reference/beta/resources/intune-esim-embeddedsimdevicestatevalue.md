@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 649b493cc13b33871fa42e8a25fcfa22156590601b8c0d6b07703693a0b6283c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ab8db5b259c78ed48a3f1de4a0732dfeb69212d6
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54122374"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785722"
 ---
 # <a name="embeddedsimdevicestatevalue-enum-type"></a>embeddedSIMDeviceStateValue 枚举类型
 
@@ -26,14 +26,13 @@ ms.locfileid: "54122374"
 |成员|值|说明|
 |:---|:---|:---|
 |notEvaluated|0|指定嵌入式 SIM 卡激活代码是免费的，并可以分配给设备。|
-|failed|1 |指定 Intune 服务无法向设备传递此配置文件。|
-|安装|2 |指定嵌入的 SIM 卡激活代码已分配给设备，并且设备正在安装令牌。|
-|已安装|3 |指定已在目标设备上成功安装嵌入式 SIM 卡激活代码。|
+|failed|1|指定 Intune 服务无法向设备传递此配置文件。|
+|安装|2|指定嵌入的 SIM 卡激活代码已分配给设备，并且设备正在安装令牌。|
+|已安装|3|指定已在目标设备上成功安装嵌入式 SIM 卡激活代码。|
 |删除|4 |指定 Intune 服务正在尝试从设备中删除配置文件。|
 |error|5 |指定此配置文件出错。|
 |deleted|6 |指定从设备中删除配置文件。|
 |removedByUser|7 |指定用户从设备中删除配置文件|
-
 
 
 

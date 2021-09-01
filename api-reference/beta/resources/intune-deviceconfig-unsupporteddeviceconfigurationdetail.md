@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5d41fdf290f6a8052b3198b25609f535e9d9fe4935dcf7700bea12f41ff6ef56
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 44992e89c23a96d22382477768170e4850ce2829
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54198218"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816947"
 ---
 # <a name="unsupporteddeviceconfigurationdetail-resource-type"></a>unsupportedDeviceConfigurationDetail 资源类型
 
@@ -45,7 +45,6 @@ ms.locfileid: "54198218"
   "propertyName": "String"
 }
 ```
-
 
 
 

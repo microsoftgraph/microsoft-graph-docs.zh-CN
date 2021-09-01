@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8bd41a40fbdbb7b6e1a6fdaa9e4f483a53bc0094401e629e7fadb25371e1b5a3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c5b05d5c6a0156bb90a41baeee4a2f99157e1d82
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54185766"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804006"
 ---
 # <a name="devicecustomattributevaluetype-enum-type"></a>deviceCustomAttributeValueType 枚举类型
 
@@ -26,9 +26,8 @@ ms.locfileid: "54185766"
 |成员|值|说明|
 |:---|:---|:---|
 |integer|0|指示自定义属性脚本的值为整数。|
-|string|1 |指示自定义属性脚本的值是字符串。|
-|dateTime|2 |指示自定义属性脚本的值是符合 ISO 8601 的日期。|
-
+|string|1|指示自定义属性脚本的值是字符串。|
+|dateTime|2|指示自定义属性脚本的值是符合 ISO 8601 的日期。|
 
 
 

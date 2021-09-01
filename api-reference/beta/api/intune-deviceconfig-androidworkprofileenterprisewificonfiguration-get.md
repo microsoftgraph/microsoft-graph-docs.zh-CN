@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b7818cdde1aefda2909c961b7a3e20fdf1db01fe
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: c0e6059b9c6a962b905c2f6245795b1981571ece
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257332"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58781319"
 ---
 # <a name="get-androidworkprofileenterprisewificonfiguration"></a>获取 androidWorkProfileEnterpriseWiFiConfiguration
 
@@ -48,7 +48,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -124,7 +124,6 @@ Content-Length: 2046
   }
 }
 ```
-
 
 
 

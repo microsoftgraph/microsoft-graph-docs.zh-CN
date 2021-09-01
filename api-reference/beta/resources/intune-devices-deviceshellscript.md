@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cd418ec2a00949575152d6c999346d40f13752d2ca3cc2da29122eed29f39851
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1615cf8e8292f39c13bfd019e71803dd86303c2c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54239369"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785120"
 ---
 # <a name="deviceshellscript-resource-type"></a>deviceShellScript 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54239369"
 
 Intune 将为客户提供在已注册的 Mac 操作系统设备上运行其 Shell 脚本的能力。 脚本可以运行一次或定期运行。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceShellScripts](../api/intune-devices-deviceshellscript-list.md)|[deviceShellScript](../resources/intune-devices-deviceshellscript.md) 集合|列出 [deviceShellScript 对象的属性和](../resources/intune-devices-deviceshellscript.md) 关系。|
@@ -37,16 +37,16 @@ Intune 将为客户提供在已注册的 Mac 操作系统设备上运行其 Shel
 |:---|:---|:---|
 |executionFrequency|期限|脚本运行的间隔。 如果未定义，脚本将运行一次|
 |retryCount|Int32|脚本失败时重试次数|
-|blockExecutionNotifications|布尔值|不通知用户正在执行脚本|
+|blockExecutionNotifications|Boolean|不通知用户正在执行脚本|
 |id|String|设备管理脚本的唯一标识符。|
-|displayName|字符串|设备管理脚本的名称。|
-|description|String|设备管理脚本的可选说明。|
+|displayName|String|设备管理脚本的名称。|
+|description|字符串|设备管理脚本的可选说明。|
 |scriptContent|二进制|脚本内容。|
 |createdDateTime|DateTimeOffset|创建设备管理脚本的日期和时间。 此属性是只读的。|
 |lastModifiedDateTime|DateTimeOffset|上次修改设备管理脚本的日期和时间。 此属性是只读的。|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示执行上下文的类型。 可取值为：`system`、`user`。|
 |fileName|String|脚本文件名。|
-|roleScopeTagIds|String collection|此 PowerShellScript 实例的范围标记标识列表。|
+|roleScopeTagIds|字符串集合|此 PowerShellScript 实例的范围标记标识列表。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -84,7 +84,6 @@ Intune 将为客户提供在已注册的 Mac 操作系统设备上运行其 Shel
   ]
 }
 ```
-
 
 
 

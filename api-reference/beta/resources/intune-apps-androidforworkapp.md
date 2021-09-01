@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: faeb3cc7f9539e659f2f5b3a73bce12c055204fb23b6cc772b3a56eafe84c156
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fdce836d6e831139401a88dd36c01f55c8596e16
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54233019"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783279"
 ---
 # <a name="androidforworkapp-resource-type"></a>androidForWorkApp 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "54233019"
 
 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 androidForWorkApps](../api/intune-apps-androidforworkapp-list.md)|[androidForWorkApp](../resources/intune-apps-androidforworkapp.md) 集合|列出 [androidForWorkApp](../resources/intune-apps-androidforworkapp.md) 对象的属性和关系。|
@@ -38,7 +38,7 @@ ms.locfileid: "54233019"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|displayName|字符串|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|displayName|String|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |description|String|应用的说明。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publisher|String|应用的发布者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|要显示在应用详细信息中并用于图标上传的大图标。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
@@ -117,7 +117,6 @@ ms.locfileid: "54233019"
   "appStoreUrl": "String"
 }
 ```
-
 
 
 

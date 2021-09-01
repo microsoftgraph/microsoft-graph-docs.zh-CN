@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d48b96aef44246beaf220021c3a15bc6876f5e31ae92f774169fa5ac91997d34
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4c9c52a81c47a281e51dd3693b26a3b3066947b2
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54227678"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58788238"
 ---
 # <a name="manageddevicemobileappconfigurationusersummary-resource-type"></a>managedDeviceMobileAppConfigurationUserSummary 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54227678"
 
 包含 MDM 移动应用配置用户状态摘要的属性、继承属性和操作。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 managedDeviceMobileAppConfigurationUserSummary](../api/intune-apps-manageddevicemobileappconfigurationusersummary-get.md)|[managedDeviceMobileAppConfigurationUserSummary](../resources/intune-apps-manageddevicemobileappconfigurationusersummary.md)|读取 [managedDeviceMobileAppConfigurationUserSummary](../resources/intune-apps-manageddevicemobileappconfigurationusersummary.md) 对象的属性和关系。|
@@ -66,7 +66,6 @@ ms.locfileid: "54227678"
   "configurationVersion": 1024
 }
 ```
-
 
 
 

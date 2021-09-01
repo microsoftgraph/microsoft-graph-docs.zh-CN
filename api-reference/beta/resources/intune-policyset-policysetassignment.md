@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7ed8f6cde042a4200203918fe81c29ada714e28a4a8a989243331ea50b5f3f83
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f59de080a61f16a71c376853202ac630fd6b53c8
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54239117"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58802423"
 ---
 # <a name="policysetassignment-resource-type"></a>policySetAssignment 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54239117"
 
 一个包含用于 PolicySet Assignment 的属性的类。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 policySetAssignments](../api/intune-policyset-policysetassignment-list.md)|[policySetAssignment](../resources/intune-policyset-policysetassignment.md) 集合|列出 [policySetAssignment](../resources/intune-policyset-policysetassignment.md) 对象的属性和关系。|
@@ -62,7 +62,6 @@ ms.locfileid: "54239117"
   }
 }
 ```
-
 
 
 

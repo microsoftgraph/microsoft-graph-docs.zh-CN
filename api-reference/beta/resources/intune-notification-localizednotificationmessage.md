@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9d4b3f66f76a5aa7837dbd3b58189ec42c884d2ff88e804417f433495455d552
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1a352cabf78bf1dac298d2048aafcd3c3a4d38bc
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54150204"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58794369"
 ---
 # <a name="localizednotificationmessage-resource-type"></a>localizedNotificationMessage 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54150204"
 
 指定区域设置的通知消息模板的文本内容。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 localizedNotificationMessages](../api/intune-notification-localizednotificationmessage-list.md)|[localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md) 集合|列出 [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md) 对象的属性和关系。|
@@ -63,7 +63,6 @@ ms.locfileid: "54150204"
   "isDefault": true
 }
 ```
-
 
 
 
