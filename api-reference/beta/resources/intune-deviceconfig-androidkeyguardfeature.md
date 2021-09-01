@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e260abc3208b99d1bc3a0a8e1f8f6f8192bdf4168350ad653b4bfba7411e9e99
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c698ac8e4103f83aa2388d292e3c202b13222426
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54190645"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785757"
 ---
 # <a name="androidkeyguardfeature-enum-type"></a>androidKeyguardFeature 枚举类型
 
@@ -26,14 +26,13 @@ Android keyguard 功能。
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置;将忽略此值。|
-|相机|1 |在安全键盘保护屏幕上使用相机。|
-|通知|2 |在安全键盘保护屏幕上显示通知。|
-|unredactedNotifications|3 |在安全键盘保护屏幕上显示未记录的通知。|
+|相机|1|在安全键盘保护屏幕上使用相机。|
+|通知|2|在安全键盘保护屏幕上显示通知。|
+|unredactedNotifications|3|在安全键盘保护屏幕上显示未记录的通知。|
 |trustAgents|4 |在安全键盘保护屏幕上时信任代理状态。|
 |fingerprint|5 |在安全键盘保护屏幕上使用指纹传感器。|
 |remoteInput|6 |在安全键盘保护屏幕上时的通知文本输入。|
 |allFeatures|7 |在安全键盘保护屏幕上时的所有键保护功能。|
-
 
 
 

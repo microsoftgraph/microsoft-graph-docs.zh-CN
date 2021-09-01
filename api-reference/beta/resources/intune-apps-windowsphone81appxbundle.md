@@ -1,16 +1,16 @@
 ---
 title: windowsPhone81AppXBundle 资源类型
-description: 包含 8.1 AppX 捆绑业务线Windows Phone的属性和继承的属性。
+description: 包含 8.1 AppX 捆绑Windows Phone应用的属性和继承的属性。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a06a41c14c8e842bd4fe705c33612c353394326e
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 985fed8214f31651b3daa592adee7ec5945a129c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58265993"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783972"
 ---
 # <a name="windowsphone81appxbundle-resource-type"></a>windowsPhone81AppXBundle 资源类型
 
@@ -20,12 +20,12 @@ ms.locfileid: "58265993"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-包含 8.1 AppX 捆绑业务线Windows Phone的属性和继承的属性。
+包含 8.1 AppX 捆绑Windows Phone应用的属性和继承的属性。
 
 
 继承自 [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 windowsPhone81AppXBundles](../api/intune-apps-windowsphone81appxbundle-list.md)|[windowsPhone81AppXBundle](../resources/intune-apps-windowsphone81appxbundle.md) 集合|列出 [windowsPhone81AppXBundle 对象的属性和](../resources/intune-apps-windowsphone81appxbundle.md) 关系。|
@@ -39,7 +39,7 @@ ms.locfileid: "58265993"
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |displayName|字符串|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|description|String|应用的说明。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|description|字符串|应用的说明。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publisher|String|应用的发布者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|要显示在应用详细信息中并用于图标上传的大图标。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |createdDateTime|DateTimeOffset|创建应用的日期和时间。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
@@ -53,7 +53,7 @@ ms.locfileid: "58265993"
 |uploadState|Int32|上载状态。 可能的值是：0 - `Not Ready` 、1 - `Ready` 、2 - `Processing` 。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否将应用分配给至少一个组的值。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|roleScopeTagIds|String collection|此移动应用的范围标记 ID 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|roleScopeTagIds|字符串集合|此移动应用的范围标记 ID 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|子应用具有的依赖项总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersedingAppCount|Int32|此应用直接或间接取代的应用总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersededAppCount|Int32|此应用直接或间接被取代的应用总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
@@ -65,8 +65,8 @@ ms.locfileid: "58265993"
 |identityPublisherHash|String|标识发布者哈希。 继承自 [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
 |identityResourceIdentifier|String|标识资源标识符。 继承自 [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|最低适用操作系统的值。 继承自 [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
-|phoneProductIdentifier|String|产品电话标识符。 继承自 [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
-|phonePublisherId|字符串|The 电话 Publisher Id. Inherited from [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
+|phoneProductIdentifier|字符串|产品电话标识符。 继承自 [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
+|phonePublisherId|String|The 电话 Publisher Id. Inherited from [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
 |identityVersion|String|标识版本。 继承自 [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
 |appXPackageInformationList|[windowsPackageInformation](../resources/intune-apps-windowspackageinformation.md) 集合|AppX 程序包信息的列表。|
 
@@ -173,7 +173,6 @@ ms.locfileid: "58265993"
   ]
 }
 ```
-
 
 
 

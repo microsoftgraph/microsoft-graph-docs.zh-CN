@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 36fac869b01804105397e45e2840bf7eb0bf38e3b0b968bc49efa8a89ddeaf10
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6c441744a5e69db28c80241f149c9f3d6d69272b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54164130"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58805294"
 ---
 # <a name="onpremencryptedpayload-resource-type"></a>onPremEncryptedPayload 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54164130"
 
 尚未记录
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 onPremEncryptedPayloads](../api/intune-raimportcerts-onpremencryptedpayload-list.md)|[onPremEncryptedPayload](../resources/intune-raimportcerts-onpremencryptedpayload.md) 集合|列出 [onPremEncryptedPayload](../resources/intune-raimportcerts-onpremencryptedpayload.md) 对象的属性和关系。|
@@ -45,7 +45,7 @@ ms.locfileid: "54164130"
 |plistTemplate|String|尚未记录|
 |encryptedBlob|二进制|尚未记录|
 |payloadVersion|Int32|尚未记录|
-|status|Int32|尚未记录|
+|状态|Int32|尚未记录|
 |createdTime|DateTimeOffset|尚未记录|
 |lastModifiedTime|DateTimeOffset|尚未记录|
 |eTag|String|尚未记录|
@@ -83,7 +83,6 @@ ms.locfileid: "54164130"
   "isDeleted": true
 }
 ```
-
 
 
 

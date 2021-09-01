@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 938e76a54b4d69440e5e2ecb19726a96b9d225e19ec8984ac7b22396d1c9b576
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1da7d01665f5f8762330e19fb11be4761d2b7529
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54201361"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58784616"
 ---
 # <a name="delete-devicemanagementtemplate"></a>删除 deviceManagementTemplate
 
@@ -44,7 +44,7 @@ DELETE /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{de
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -66,7 +66,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/templates/{deviceManage
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

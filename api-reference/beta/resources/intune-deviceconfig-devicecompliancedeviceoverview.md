@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1d2dbc33b5e5af16959d15d866d27a4d23f925bc24b43dd2bb4b290b8e01fd1c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 607b85e9cbfbc5ee8d9be792a7f6f29bf6f6ace1
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54165782"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58819204"
 ---
 # <a name="devicecompliancedeviceoverview-resource-type"></a>deviceComplianceDeviceOverview 资源类型
 
@@ -22,8 +22,8 @@ ms.locfileid: "54165782"
 
 尚未记录
 
-## <a name="methods"></a>Methods
-|方法|返回类型|说明|
+## <a name="methods"></a>方法
+|方法|返回类型|Description|
 |:---|:---|:---|
 |[获取 deviceComplianceDeviceOverview](../api/intune-deviceconfig-devicecompliancedeviceoverview-get.md)|[deviceComplianceDeviceOverview](../resources/intune-deviceconfig-devicecompliancedeviceoverview.md)|读取 [deviceComplianceDeviceOverview](../resources/intune-deviceconfig-devicecompliancedeviceoverview.md) 对象的属性和关系。|
 |[更新 deviceComplianceDeviceOverview](../api/intune-deviceconfig-devicecompliancedeviceoverview-update.md)|[deviceComplianceDeviceOverview](../resources/intune-deviceconfig-devicecompliancedeviceoverview.md)|更新 [deviceComplianceDeviceOverview](../resources/intune-deviceconfig-devicecompliancedeviceoverview.md) 对象的属性。|
@@ -68,7 +68,6 @@ ms.locfileid: "54165782"
   "configurationVersion": 1024
 }
 ```
-
 
 
 

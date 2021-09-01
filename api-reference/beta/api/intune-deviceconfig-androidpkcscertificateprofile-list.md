@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d5bd3e52f46584fc7d19c933c0d53f3a0301f5c29dec698fd9ff924c0c1886aa
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cc97e7fb0e39b19133d85a7a131a1d8637b74fd5
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54228707"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786871"
 ---
 # <a name="list-androidpkcscertificateprofiles"></a>列出 androidPkcsCertificateProfiles
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -123,7 +123,6 @@ Content-Length: 2128
   ]
 }
 ```
-
 
 
 

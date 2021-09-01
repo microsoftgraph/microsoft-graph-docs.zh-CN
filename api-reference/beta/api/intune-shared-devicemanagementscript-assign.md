@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 37b3ea6a802f7462eae0ca79a2847b181fa09da74003118d8d3ecdbdcfc6aa8b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e34902248bdf25900fa3c681dc28c80ef8fef7fe
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54188006"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785204"
 ---
 # <a name="assign-action"></a>分配操作
 
@@ -45,7 +45,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assign
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -98,7 +98,6 @@ Content-length: 550
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

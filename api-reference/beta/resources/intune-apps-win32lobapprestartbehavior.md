@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d850410b5380864988b9bd43abed41d9729138dbecd7d11f615da063a2b21c7f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8baa75316942581ef92d8e2c737db0c64de78dec
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54153256"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58799253"
 ---
 # <a name="win32lobapprestartbehavior-enum-type"></a>win32LobAppRestartBehavior 枚举类型
 
@@ -26,10 +26,9 @@ ms.locfileid: "54153256"
 |成员|值|说明|
 |:---|:---|:---|
 |basedOnReturnCode|0|如果操作返回重启代码，Intune 将在运行应用安装后重新启动设备。|
-|allow|1 |Intune 不会对应用安装生成的重启代码执行任何特定操作。 Intune 不会尝试禁止为 MSI 应用重启。|
-|suppress|2 |Intune 将尝试禁止为 MSI 应用重启。|
-|force|3 |Intune 将强制设备在应用安装操作后立即重新启动。|
-
+|allow|1|Intune 不会对应用安装生成的重启代码执行任何特定操作。 Intune 不会尝试禁止为 MSI 应用重启。|
+|suppress|2|Intune 将尝试禁止为 MSI 应用重启。|
+|force|3|Intune 将强制设备在应用安装操作后立即重新启动。|
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 08acedbca9d9ab23b327ab9c1260bec677621f07a13459d0bc93fc83c0003754
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c1cef9d885e87b51a7a52a3e7f5f2709f79e665f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54142944"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804930"
 ---
 # <a name="create-devicemanagementintentdevicestate"></a>创建 deviceManagementIntentDeviceState
 
@@ -43,7 +43,7 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/deviceStates
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,7 +54,7 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/deviceStates
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|The ID|
-|userPrincipalName|字符串|在设备上报告的用户主体名称|
+|userPrincipalName|String|在设备上报告的用户主体名称|
 |userName|String|在设备上报告的用户名|
 |deviceDisplayName|String|报告的设备名称|
 |lastReportedDateTime|DateTimeOffset|意图报告的上次修改日期时间|
@@ -104,7 +104,6 @@ Content-Length: 391
   "deviceId": "Device Id value"
 }
 ```
-
 
 
 

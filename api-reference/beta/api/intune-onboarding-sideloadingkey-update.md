@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1bb6afcb77f9cdb2dd09244723e5bebc2c8c7537356488d8531b0828505a9cea
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c6e6300c117a74dc0a39a7e4bd7d9d9a82c9c60e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54133724"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58784287"
 ---
 # <a name="update-sideloadingkey"></a>更新 sideLoadingKey
 
@@ -43,7 +43,7 @@ PATCH /deviceAppManagement/sideLoadingKeys/{sideLoadingKeyId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -55,10 +55,10 @@ PATCH /deviceAppManagement/sideLoadingKeys/{sideLoadingKeyId}
 |:---|:---|:---|
 |id|String|旁加载密钥唯一 ID。|
 |value|String|Side Loading Key Value， it is 5x5 value， seperated by hiphens.|
-|displayName|字符串|向 ITPro 管理员显示的旁加载密钥名称。|
+|displayName|String|向 ITPro 管理员显示的旁加载密钥名称。|
 |description|String|旁加载 向 ITPro 管理员显示的密钥说明。|
 |totalActivation|Int32|向 ITPro 管理员显示的旁加载密钥总激活。|
-|lastUpdatedDateTime|字符串|向 ITPro 管理员显示的"旁加载密钥上次更新日期"。|
+|lastUpdatedDateTime|String|向 ITPro 管理员显示的"旁加载密钥上次更新日期"。|
 
 
 
@@ -101,7 +101,6 @@ Content-Length: 295
   "lastUpdatedDateTime": "Last Updated Date Time value"
 }
 ```
-
 
 
 

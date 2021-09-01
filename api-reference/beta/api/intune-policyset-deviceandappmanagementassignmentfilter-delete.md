@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d7cc2ec827c10f77f79ee64f29d4f76783da473574f326df0abbbd0d6aa9dd73
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d90d732bef78017cd0f52e3b0f5b981e38a0e66b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54203923"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58805476"
 ---
 # <a name="delete-deviceandappmanagementassignmentfilter"></a>删除 deviceAndAppManagementAssignmentFilter
 
@@ -29,7 +29,7 @@ ms.locfileid: "54203923"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -43,7 +43,7 @@ DELETE /deviceManagement/assignmentFilters/{deviceAndAppManagementAssignmentFilt
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/assignmentFilters/{devi
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

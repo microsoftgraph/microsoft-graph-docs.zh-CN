@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ad26d82265a14681f7e5e85a92490becc82448816fd6c378565ff6eab21dde51
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b9b5207a232eac160880d0bbf9b0151aaa353dc0
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54248493"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58821667"
 ---
 # <a name="microsoftlauncherdockpresence-enum-type"></a>microsoftLauncherDockPresence 枚举类型
 
@@ -23,13 +23,12 @@ ms.locfileid: "54248493"
 微软桌面扩展坞状态选择。
 
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |notConfigured|0|未配置;将忽略此值。|
-|show|1 |指示设备的扩展坞将显示在设备上。|
-|hide|2 |指示设备的扩展坞将在设备上隐藏，但用户可以通过拖动屏幕底部的处理程序来访问该扩展坞。|
-|disabled|3 |指示将在设备上禁用设备的扩展坞。|
-
+|show|1|指示设备的扩展坞将显示在设备上。|
+|hide|2|指示设备的扩展坞将在设备上隐藏，但用户可以通过拖动屏幕底部的处理程序来访问该扩展坞。|
+|disabled|3|指示将在设备上禁用设备的扩展坞。|
 
 
 

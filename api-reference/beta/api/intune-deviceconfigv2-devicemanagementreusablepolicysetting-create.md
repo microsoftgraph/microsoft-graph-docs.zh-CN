@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9833d2c9053abd1cba881f73b3516e2c6df74564
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 3008e35287ce5a5d8db1cecba25ff25692f7469b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58261013"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785330"
 ---
 # <a name="create-devicemanagementreusablepolicysetting"></a>创建 deviceManagementReusablePolicySetting
 
@@ -29,7 +29,7 @@ ms.locfileid: "58261013"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/reusablePolicySettings
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -55,7 +55,7 @@ POST /deviceManagement/reusablePolicySettings
 |:---|:---|:---|
 |id|String|系统生成的可重用设置 ID。|
 |displayName|字符串|用户可显示名称可重用设置。|
-|description|String|由用户提供的可重用设置说明。|
+|description|字符串|由用户提供的可重用设置说明。|
 |settingDefinitionId|String|与此可重用设置关联的设置定义 ID。|
 |settingInstance|[deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|可重用的设置配置实例|
 |createdDateTime|DateTimeOffset|可重用设置创建日期和时间。 此属性是只读的。|
@@ -536,7 +536,6 @@ Content-Length: 16500
   "referencingConfigurationPolicyCount": 3
 }
 ```
-
 
 
 

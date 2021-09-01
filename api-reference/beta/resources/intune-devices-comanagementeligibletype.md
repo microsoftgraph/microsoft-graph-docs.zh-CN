@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: beed45e61bab69617d46191fa69bd7b43663651574584b2c8e8ea4cf537ba7b8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c8e2f1e413521967ef2fd23a3146facfbdbb6fc7
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54182823"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58790141"
 ---
 # <a name="comanagementeligibletype-enum-type"></a>comanagementEligibleType 枚举类型
 
@@ -25,12 +25,11 @@ ms.locfileid: "54182823"
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|comanaged|1 |尚未记录|
-|符合条件的|2 |尚未记录|
-|eligibleButNotAzureAdJoined|3 |尚未记录|
+|comanaged|1|尚未记录|
+|符合条件的|2|尚未记录|
+|eligibleButNotAzureAdJoined|3|尚未记录|
 |needsOsUpdate|4 |尚未记录|
 |不符合|5 |尚未记录|
-
 
 
 

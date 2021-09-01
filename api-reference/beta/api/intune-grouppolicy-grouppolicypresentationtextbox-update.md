@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 46947303f6542dee20825f5c195b3a5edd1ce2b2271c30487a26ece80c0faad8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 65cb87a10f13316b1bea244ceae841b2915b2645
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54166342"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58815790"
 ---
 # <a name="update-grouppolicypresentationtextbox"></a>更新 groupPolicyPresentationTextBox
 
@@ -44,7 +44,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -52,13 +52,13 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 
 下表显示创建 [groupPolicyPresentationTextBox 时所需的属性](../resources/intune-grouppolicy-grouppolicypresentationtextbox.md)。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
-|标签|字符串|任何演示文稿实体的本地化文本标签。 默认值为空白。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|标签|String|任何演示文稿实体的本地化文本标签。 默认值为空白。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |id|String|实体的键。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |defaultValue|String|文本框中显示的本地化默认字符串。 默认值为空白。|
-|必需|布尔值|要求在文本框中输入值。 默认值为 false。|
+|必需|Boolean|要求在文本框中输入值。 默认值为 false。|
 |maxLength|Int64|一个无符号整数，指定最大文本字符数。 默认值为 1023。|
 
 
@@ -101,7 +101,6 @@ Content-Length: 294
   "maxLength": 9
 }
 ```
-
 
 
 

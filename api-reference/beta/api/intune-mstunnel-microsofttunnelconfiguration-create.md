@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 79aa609f4902f518a492adfeea2bbc4a050c6cd5
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 133cef46fdd3519f6de20d4d4061171958adcdac
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58263238"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785295"
 ---
 # <a name="create-microsofttunnelconfiguration"></a>创建 microsoftTunnelConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "58263238"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
@@ -43,7 +43,7 @@ POST /deviceManagement/microsoftTunnelConfigurations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -55,17 +55,17 @@ POST /deviceManagement/microsoftTunnelConfigurations
 |:---|:---|:---|
 |id|String|MicrosoftTunnelConfiguration 的 ID|
 |displayName|字符串|MicrosoftTunnelConfiguration 的显示名称|
-|description|String|MicrosoftTunnelConfiguration 的说明|
-|network|String|将用于为客户端分配虚拟地址的子网|
-|dnsServers|String collection|客户端将使用的 DNS 服务器|
-|defaultDomainSuffix|字符串|客户端将使用的默认域附录|
-|routesInclude|String collection|服务器将路由的路由|
+|description|字符串|MicrosoftTunnelConfiguration 的说明|
+|network|字符串|将用于为客户端分配虚拟地址的子网|
+|dnsServers|字符串集合|客户端将使用的 DNS 服务器|
+|defaultDomainSuffix|String|客户端将使用的默认域附录|
+|routesInclude|字符串集合|服务器将路由的路由|
 |routesExclude|String collection|服务器不会路由的路由子集|
 |splitDNS|String collection|使用提供的 dns 服务器解析的域|
 |listenPort|Int32|TCP 和 UPD 将在服务器上侦听的端口|
 |advancedSettings|[keyValuePair](../resources/intune-mstunnel-keyvaluepair.md) 集合|可应用于服务器的其他设置|
 |lastUpdateDateTime|DateTimeOffset|上次更新 MicrosoftTunnelConfiguration 的时间|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
+|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。|
 
 
 
@@ -154,7 +154,6 @@ Content-Length: 797
   ]
 }
 ```
-
 
 
 

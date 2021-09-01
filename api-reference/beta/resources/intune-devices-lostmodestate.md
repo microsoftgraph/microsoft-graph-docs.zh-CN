@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c75a1d0a3777d57718466e8f24477347dde440db86550b97cfd848ef53f65e8d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 55b0fe0e3125f213d849d06f73826ac40f52b3e6
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54206324"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786311"
 ---
 # <a name="lostmodestate-enum-type"></a>lostModeState 枚举类型
 
@@ -26,8 +26,7 @@ ms.locfileid: "54206324"
 |成员|值|说明|
 |:---|:---|:---|
 |disabled|0|丢失模式处于禁用状态。|
-|enabled|1 |启用丢失模式。|
-
+|enabled|1|启用丢失模式。|
 
 
 

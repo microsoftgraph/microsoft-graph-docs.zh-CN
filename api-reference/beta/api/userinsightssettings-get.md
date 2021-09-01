@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: d3d9f370318f74f3c25b8737de4cecc7dbb37d6d
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: b68aacd69a705743aa37ea85ba9d421c6f9d46d2
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53210343"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804888"
 ---
 # <a name="get-userinsightssettings"></a>获取 userInsightsSettings
 
@@ -18,7 +18,7 @@ ms.locfileid: "53210343"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取 [itemInsights](../resources/iteminsights.md) 和会议时间见解 [的用户可自定义的隐私设置](https://support.microsoft.com/en-us/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1)。
+获取 [itemInsights](../resources/iteminsights.md) 和会议时间见解 [的用户可自定义的隐私设置](https://support.microsoft.com/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1)。
 
 ## <a name="permissions"></a>权限
 
@@ -40,7 +40,7 @@ GET /user/{userId}/settings/itemInsights
 
 >**注意：** 具有 或 的请求仅可供用户或具有 `userId` `userPrincipalName` User.ReadWrite.All 权限的用户访问。 若要了解详细信息，请参阅[权限](/graph/permissions-reference)。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称       | 说明|
 |:-----------|:----------|

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ebe47c45ba3b15d0b6b2101a5d7c60d717e4744dd299747e9ba4ca485c6577b2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6144091708f3abfea6aa0f8e0b4ac7284cf58580
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54153193"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787025"
 ---
 # <a name="androiddeviceownerkioskmodemanagedfolder-resource-type"></a>androidDeviceOwnerKioskModeManagedFolder 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "54153193"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|folderName|字符串|文件夹的显示名称|
+|folderName|String|文件夹的显示名称|
 |folderIdentifier|String|文件夹的唯一标识符|
 |items|[androidDeviceOwnerKioskModeFolderItem](../resources/intune-deviceconfig-androiddeviceownerkioskmodefolderitem.md) 集合|要添加到托管文件夹的项目。 该集合最多可包含 500 个元素。|
 
@@ -53,7 +53,6 @@ ms.locfileid: "54153193"
   ]
 }
 ```
-
 
 
 

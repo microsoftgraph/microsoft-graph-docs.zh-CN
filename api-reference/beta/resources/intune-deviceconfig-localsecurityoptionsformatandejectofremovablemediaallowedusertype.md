@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2ced95f96118c0138594ea17515b26115c09627ecdd4d953a347ea1877519a2d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 01e7ffc99a34f23f43e227b9e5ba52bcc4b7ef66
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54183174"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58812345"
 ---
 # <a name="localsecurityoptionsformatandejectofremovablemediaallowedusertype-enum-type"></a>localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUserType 枚举类型
 
@@ -26,10 +26,9 @@ LocalSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser 的可能值
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置|
-|administrators|1 |管理员|
-|administratorsAndPowerUsers|2 |管理员和 Power Users|
-|administratorsAndInteractiveUsers|3 |管理员和交互式用户 |
-
+|administrators|1|管理员|
+|administratorsAndPowerUsers|2|管理员和 Power Users|
+|administratorsAndInteractiveUsers|3|管理员和交互式用户 |
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: af30f98789faa830bfead41d0519f76fcf8cba4dffb5db9e8ad9ae65eb8c5e7e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f9a9fa8531bea6d90d081567c9d295517b519ab2
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54226369"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58819722"
 ---
 # <a name="updateclassification-enum-type"></a>updateClassification 枚举类型
 
@@ -23,13 +23,12 @@ ms.locfileid: "54226369"
 自动更新分类的可能值。
 
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |userDefined|0|用户定义，默认值，无意图。|
-|recommendedAndImportant|1 |推荐且重要。|
-|重要|2 |重要。|
-|无|3 |无。|
-
+|recommendedAndImportant|1|推荐且重要。|
+|重要|2|重要。|
+|无|3|无。|
 
 
 

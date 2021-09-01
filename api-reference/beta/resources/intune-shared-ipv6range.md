@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6de92332fb8692efefc82849a6dc0b2c4bd28e1a0fd5998e50e41ac9d5e0d2e5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 976f99cbe523717a8c576fcebd1cb5ad33fc27ee
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54150162"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816898"
 ---
 # <a name="ipv6range-resource-type"></a>iPv6Range 资源类型
 
@@ -26,7 +26,7 @@ IPv6 范围定义。
 继承自 [ipRange](../resources/intune-shared-iprange.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |lowerAddress|String|较低的地址。|
 |upperAddress|String|地址上限。|
@@ -48,7 +48,6 @@ IPv6 范围定义。
   "upperAddress": "String"
 }
 ```
-
 
 
 

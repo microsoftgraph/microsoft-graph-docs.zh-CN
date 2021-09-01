@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 24b271753b39079c66b90d352a7ef01dd960d0d96a05a9e72a1310d0b5013ed7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 072814b378c4474262ad3c01b3ee091e761f28b8
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54125786"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58790358"
 ---
 # <a name="create-auditevent"></a>创建 auditEvent
 
@@ -43,7 +43,7 @@ POST /deviceManagement/auditEvents
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,7 +53,7 @@ POST /deviceManagement/auditEvents
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
+|id|字符串|实体的键。|
 |displayName|字符串|事件显示名称。|
 |componentName|String|组件名称。|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|与审核事件关联的 AAD 用户和应用程序。|
@@ -64,7 +64,7 @@ POST /deviceManagement/auditEvents
 |activityResult|String|活动结果。|
 |correlationId|Guid|用于关联系统内的活动的客户端请求 ID。|
 |resources|[auditResource](../resources/intune-auditing-auditresource.md) 集合|正在修改的资源。|
-|“类别”|字符串|审核类别。|
+|“类别”|String|审核类别。|
 
 
 
@@ -191,7 +191,6 @@ Content-Length: 1746
   "category": "Category value"
 }
 ```
-
 
 
 

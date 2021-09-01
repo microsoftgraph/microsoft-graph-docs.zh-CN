@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 39cd34613a87f4ebfca5d1a432a80fde1027843ceb55d51b8dad329ea6b7d251
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7a28a032b839723967e6479f90486a48309cc2c5
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54133353"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820427"
 ---
 # <a name="numberrange-resource-type"></a>numberRange 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "54133353"
 数字范围定义。
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |lowerNumber|Int32|数字越低。|
 |upperNumber|Int32|数字上限。|
@@ -45,7 +45,6 @@ ms.locfileid: "54133353"
   "upperNumber": 1024
 }
 ```
-
 
 
 

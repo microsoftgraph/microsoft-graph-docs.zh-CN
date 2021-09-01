@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f6c92be9dafc535c5d5267c95003da9a0010846bdfd8fa38ffe88f1147b13c60
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 723476aa9edaea09ca0bbc916fe63a57a64c3460
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54183231"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820518"
 ---
 # <a name="termsandconditions-resource-type"></a>termsAndConditions 资源类型
 
@@ -22,8 +22,8 @@ ms.locfileid: "54183231"
 
 TermsAndConditions 实体表示给定条款和条件 (T&C) 策略的元数据和内容。 当用户第一次尝试注册到 Intune 时向用户显示 T&C 策略的内容，之后会在进行了管理员要求重新接受的编辑时显示。 这允许管理员与用户必须同意的预配进行通信，以便将设备注册到 Intune 中。
 
-## <a name="methods"></a>Methods
-|方法|返回类型|说明|
+## <a name="methods"></a>方法
+|方法|返回类型|Description|
 |:---|:---|:---|
 |[List termsAndConditionses](../api/intune-companyterms-termsandconditions-list.md)|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md) 集合|列出 [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) 对象的属性和关系。|
 |[Get termsAndConditions](../api/intune-companyterms-termsandconditions-get.md)|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md)|读取 [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) 对象的属性和关系。|
@@ -39,15 +39,15 @@ TermsAndConditions 实体表示给定条款和条件 (T&C) 策略的元数据和
 |modifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
 |displayName|String|管理员提供的 T&C 策略名称。 |
-|description|String|管理员提供的 T&C 策略描述。|
+|description|字符串|管理员提供的 T&C 策略描述。|
 |title|String|管理员提供的条款和条件标题。 这会向用户显示，提示用户接受 T&C 策略。|
 |bodyText|String|管理员提供的条款和条件正文文本，通常为条款本身。 这会向用户显示，提示用户接受 T&C 策略。|
 |acceptanceStatement|String|管理员提供的条款和条件说明，通常会说明接受 T&C 策略中陈述的条款和条件意味着什么。 这会向用户显示，提示用户接受 T&C 策略。|
 |version|Int32|指示当前条款版本的整数。 当管理员对条款进行更改，并希望要求用户重新接受修改的 T&C 策略时会递增。|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
+|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|Description|
 |:---|:---|:---|
 |groupAssignments|[termsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md) 集合|此 T 策略的组分配&C 策略。|
 |assignments|[termsAndConditionsAssignment](../resources/intune-companyterms-termsandconditionsassignment.md) 集合|此 T&C 策略的分配列表。|
@@ -79,7 +79,6 @@ TermsAndConditions 实体表示给定条款和条件 (T&C) 策略的元数据和
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 20246ef4318d4b5509c99c470849410430b52879
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 647554e93a790787d7acc4eb05a6e0bca5afe6d2
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58264827"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806633"
 ---
 # <a name="comanagementeligibledevice-resource-type"></a>comanagementEligibleDevice 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "58264827"
 
 设备Co-Management资格状态
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 comanagementEligibleDevices](../api/intune-devices-comanagementeligibledevice-list.md)|[comanagementEligibleDevice](../resources/intune-devices-comanagementeligibledevice.md) 集合|列出 [comanagementEligibleDevice](../resources/intune-devices-comanagementeligibledevice.md) 对象的属性和关系。|
@@ -49,11 +49,11 @@ ms.locfileid: "58264827"
 |model|String|模型|
 |osDescription|String|OSDescription|
 |entitySource|Int32|EntitySource|
-|userId|字符串|UserId|
+|userId|String|UserId|
 |upn|String|UPN|
 |userEmail|String|UserEmail|
 |userName|String|UserName|
-|status|[comanagementEligibleType](../resources/intune-devices-comanagementeligibletype.md)|ComanagementEligibleStatus。 可取值为：`comanaged`、`eligible`、`eligibleButNotAzureAdJoined`、`needsOsUpdate`、`ineligible`。|
+|状态|[comanagementEligibleType](../resources/intune-devices-comanagementeligibletype.md)|ComanagementEligibleStatus。 可取值为：`comanaged`、`eligible`、`eligibleButNotAzureAdJoined`、`needsOsUpdate`、`ineligible`。|
 
 ## <a name="relationships"></a>关系
 无
@@ -91,7 +91,6 @@ ms.locfileid: "58264827"
   "status": "String"
 }
 ```
-
 
 
 

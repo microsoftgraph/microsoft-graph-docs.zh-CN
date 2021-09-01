@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 619e2cd7a933994703f4beee13c6356fc31a5a320d6797455813e7e409f16f1b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c380864680e795325427f3a757e2656bcc24839f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54209923"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58819211"
 ---
 # <a name="deliveryoptimizationgroupidcustom-resource-type"></a>deliveryOptimizationGroupIdCustom 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "54209923"
 继承自 [deliveryOptimizationGroupIdSource](../resources/intune-deviceconfig-deliveryoptimizationgroupidsource.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |groupIdCustom|String|指定设备所属的任意组 ID|
 
@@ -46,7 +46,6 @@ ms.locfileid: "54209923"
   "groupIdCustom": "String"
 }
 ```
-
 
 
 

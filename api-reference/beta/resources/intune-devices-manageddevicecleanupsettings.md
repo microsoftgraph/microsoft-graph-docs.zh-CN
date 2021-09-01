@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f229595c9de6ae310a6e2f95bbdfcdf96fc5e92805f97f89aae847a436335098
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 716474849f38e62eeacedbd299290e50d8cf15fd
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54148027"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820889"
 ---
 # <a name="manageddevicecleanupsettings-resource-type"></a>managedDeviceCleanupSettings 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "54148027"
 在管理员希望清理设备时定义规则。
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |deviceInactivityBeforeRetirementInDays|String|设备未与 Intune 联系的天数。|
 
@@ -43,7 +43,6 @@ ms.locfileid: "54148027"
   "deviceInactivityBeforeRetirementInDays": "String"
 }
 ```
-
 
 
 

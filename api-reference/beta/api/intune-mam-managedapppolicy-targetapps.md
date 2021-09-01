@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1d0e161b14f098089dec160e0a0b9573148b9365a22c217c486116ef0058bf70
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 13e4cd2f9a5b216f35fbd2df8b5f45ed0e3788f8
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54226908"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58821184"
 ---
 # <a name="targetapps-action"></a>targetApps 操作
 
@@ -45,7 +45,7 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/int
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -92,7 +92,6 @@ Content-length: 336
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 
