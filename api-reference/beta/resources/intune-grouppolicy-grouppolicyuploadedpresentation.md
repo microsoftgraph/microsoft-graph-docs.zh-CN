@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9f308310cefb3b1d97bd9a30b8c34ab22cabb85a4fa6af98f5a98460f76e6de4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8c5a5de6229c37c61128b134fe2340b9bcdb9eba
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54122353"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58817325"
 ---
 # <a name="grouppolicyuploadedpresentation-resource-type"></a>groupPolicyUploadedPresentation 资源类型
 
@@ -25,8 +25,8 @@ ms.locfileid: "54122353"
 
 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)
 
-## <a name="methods"></a>Methods
-|方法|返回类型|说明|
+## <a name="methods"></a>方法
+|方法|返回类型|Description|
 |:---|:---|:---|
 |[列出 groupPolicyUploadedPresentations](../api/intune-grouppolicy-grouppolicyuploadedpresentation-list.md)|[groupPolicyUploadedPresentation](../resources/intune-grouppolicy-grouppolicyuploadedpresentation.md) 集合|列出 [groupPolicyUploadedPresentation 对象的属性和](../resources/intune-grouppolicy-grouppolicyuploadedpresentation.md) 关系。|
 |[获取 groupPolicyUploadedPresentation](../api/intune-grouppolicy-grouppolicyuploadedpresentation-get.md)|[groupPolicyUploadedPresentation](../resources/intune-grouppolicy-grouppolicyuploadedpresentation.md)|读取 [groupPolicyUploadedPresentation 对象的属性和](../resources/intune-grouppolicy-grouppolicyuploadedpresentation.md) 关系。|
@@ -35,14 +35,14 @@ ms.locfileid: "54122353"
 |[更新 groupPolicyUploadedPresentation](../api/intune-grouppolicy-grouppolicyuploadedpresentation-update.md)|[groupPolicyUploadedPresentation](../resources/intune-grouppolicy-grouppolicyuploadedpresentation.md)|更新 [groupPolicyUploadedPresentation 对象](../resources/intune-grouppolicy-grouppolicyuploadedpresentation.md) 的属性。|
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |标签|String|任何演示文稿实体的本地化文本标签。 默认值为空白。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |id|String|实体的键。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|Description|
 |:---|:---|:---|
 |definition|[groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|与演示文稿关联的组策略定义。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 
@@ -62,7 +62,6 @@ ms.locfileid: "54122353"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1409de2df4cebd346cf9e69250efd0c43ba8f461
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: a4b1c6acf9815ceeb7b2ccd3cd4b11a709966b80
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58263819"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58817115"
 ---
 # <a name="devicecompliancesettingstate-resource-type"></a>deviceComplianceSettingState 资源类型
 
@@ -22,8 +22,8 @@ ms.locfileid: "58263819"
 
 给定设备的设备符合性设置状态。
 
-## <a name="methods"></a>Methods
-|方法|返回类型|说明|
+## <a name="methods"></a>方法
+|方法|返回类型|Description|
 |:---|:---|:---|
 |[列出 deviceComplianceSettingStates](../api/intune-deviceconfig-devicecompliancesettingstate-list.md)|[deviceComplianceSettingState](../resources/intune-deviceconfig-devicecompliancesettingstate.md) 集合|列出 [deviceComplianceSettingState](../resources/intune-deviceconfig-devicecompliancesettingstate.md) 对象的属性和关系。|
 |[获取 deviceComplianceSettingState](../api/intune-deviceconfig-devicecompliancesettingstate-get.md)|[deviceComplianceSettingState](../resources/intune-deviceconfig-devicecompliancesettingstate.md)|读取 [deviceComplianceSettingState](../resources/intune-deviceconfig-devicecompliancesettingstate.md) 对象的属性和关系。|
@@ -40,7 +40,7 @@ ms.locfileid: "58263819"
 |settingName|String|报告的设置名称|
 |deviceId|String|报告的设备 ID|
 |deviceName|String|报告的设备名称|
-|userId|字符串|报告的用户 ID|
+|userId|String|报告的用户 ID|
 |userEmail|String|报告的用户电子邮件地址|
 |userName|String|报告的用户名|
 |userPrincipalName|String|报告的用户主体名称|
@@ -77,7 +77,6 @@ ms.locfileid: "58263819"
   "complianceGracePeriodExpirationDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3d847ae148afdd8fa2d1ba5fd970ebb1d41cbe8d
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 1b4e78ded98ae44959fbbaccffc805484c4daa03
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257933"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58815874"
 ---
 # <a name="create-advancedthreatprotectiononboardingdevicesettingstate"></a>创建 advancedThreatProtectionOnboardingDeviceSettingState
 
@@ -43,7 +43,7 @@ POST /deviceManagement/advancedThreatProtectionOnboardingStateSummary/advancedTh
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,13 +53,13 @@ POST /deviceManagement/advancedThreatProtectionOnboardingStateSummary/advancedTh
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键|
+|id|字符串|实体的键|
 |platformType|[deviceType](../resources/intune-deviceconfig-devicetype.md)|设备平台类型。 可能的值是 `desktop` `windowsRT` `winMO6` ：、、、、、、、、、、 `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `windows10x` `androidnGMS` `cloudPC` `blackberry` `palm` `unknown` 、|
 |setting|String|设置类名和属性名。|
 |settingName|String|报告的设置名称|
 |deviceId|String|报告的设备 ID|
 |deviceName|String|报告的设备名称|
-|userId|字符串|报告的用户 ID|
+|userId|String|报告的用户 ID|
 |userEmail|String|报告的用户电子邮件地址|
 |userName|String|报告的用户名|
 |userPrincipalName|String|报告的用户主体名称|
@@ -122,7 +122,6 @@ Content-Length: 622
   "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00"
 }
 ```
-
 
 
 

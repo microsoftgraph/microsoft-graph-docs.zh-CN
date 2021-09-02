@@ -6,12 +6,12 @@ title: 下载文件
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 5be835d93eeb9e5082dad6e3904030977d049b99
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: a6f466788158d0461ecb796e85be94c420227b2b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787019"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806535"
 ---
 # <a name="download-the-contents-of-a-driveitem"></a>下载 DriveItem 的内容
 
@@ -40,6 +40,7 @@ GET /drives/{drive-id}/items/{item-id}/content
 GET /groups/{group-id}/drive/items/{item-id}/content
 GET /me/drive/root:/{item-path}:/content
 GET /me/drive/items/{item-id}/content
+GET /shares/{shareIdOrEncodedSharingUrl}/driveItem/content
 GET /sites/{siteId}/drive/items/{item-id}/content
 GET /users/{userId}/drive/items/{item-id}/content
 ```

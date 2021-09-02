@@ -1,18 +1,18 @@
 ---
-title: 获取 windowsQualityUpdateProfileAssignment
-description: 读取 windowsQualityUpdateProfileAssignment 对象的属性和关系。
+title: 获取 windowsDriverUpdateInventory
+description: 读取 windowsDriverUpdateInventory 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: aba6a1b300160d1dba1c3016fc2359ef33ad06ae
+ms.openlocfilehash: 6612a3fb3accf72fb0a02c2b0270b00f1e892987
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58817444"
+ms.locfileid: "58816316"
 ---
-# <a name="get-windowsqualityupdateprofileassignment"></a>获取 windowsQualityUpdateProfileAssignment
+# <a name="get-windowsdriverupdateinventory"></a>获取 windowsDriverUpdateInventory
 
 命名空间：microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "58817444"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-读取 [windowsQualityUpdateProfileAssignment](../resources/intune-softwareupdate-windowsqualityupdateprofileassignment.md) 对象的属性和关系。
+读取 [windowsDriverUpdateInventory](../resources/intune-softwareupdate-windowsdriverupdateinventory.md) 对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -37,7 +37,7 @@ ms.locfileid: "58817444"
 }
 -->
 ``` http
-GET /deviceManagement/windowsQualityUpdateProfiles/{windowsQualityUpdateProfileId}/assignments/{windowsQualityUpdateProfileAssignmentId}
+GET /deviceManagement/windowsDriverUpdateProfiles/{windowsDriverUpdateProfileId}/driverInventories/{windowsDriverUpdateInventoryId}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -53,14 +53,14 @@ GET /deviceManagement/windowsQualityUpdateProfiles/{windowsQualityUpdateProfileI
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文 `200 OK` 中返回 响应代码和 [windowsQualityUpdateProfileAssignment](../resources/intune-softwareupdate-windowsqualityupdateprofileassignment.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [windowsDriverUpdateInventory](../resources/intune-softwareupdate-windowsdriverupdateinventory.md) 对象。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/windowsQualityUpdateProfiles/{windowsQualityUpdateProfileId}/assignments/{windowsQualityUpdateProfileAssignmentId}
+GET https://graph.microsoft.com/beta/deviceManagement/windowsDriverUpdateProfiles/{windowsDriverUpdateProfileId}/driverInventories/{windowsDriverUpdateInventoryId}
 ```
 
 ### <a name="response"></a>响应
@@ -68,17 +68,21 @@ GET https://graph.microsoft.com/beta/deviceManagement/windowsQualityUpdateProfil
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 426
+Content-Length: 515
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.windowsQualityUpdateProfileAssignment",
-    "id": "0c3a8422-8422-0c3a-2284-3a0c22843a0c",
-    "target": {
-      "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget",
-      "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-      "deviceAndAppManagementAssignmentFilterType": "include"
-    }
+    "@odata.type": "#microsoft.graph.windowsDriverUpdateInventory",
+    "id": "3b14b403-b403-3b14-03b4-143b03b4143b",
+    "name": "Name value",
+    "version": "Version value",
+    "manufacturer": "Manufacturer value",
+    "releaseDateTime": "2017-01-01T00:01:34.7470482-08:00",
+    "driverClass": "Driver Class value",
+    "applicableDeviceCount": 5,
+    "approvalStatus": "declined",
+    "category": "previouslyApproved",
+    "deployDateTime": "2017-01-01T00:01:14.7822152-08:00"
   }
 }
 ```

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 72c3265251ff2d216061d78e0b3bb4bafd6a3db9158f5e3eefecfc81528789eb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bd6c56f04570a42809b1168090be8f8f6609ebfe
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54215074"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58790155"
 ---
 # <a name="applogcollectionrequest-resource-type"></a>appLogCollectionRequest 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54215074"
 
 AppLogCollectionRequest 实体。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 appLogCollectionRequests](../api/intune-devices-applogcollectionrequest-list.md)|[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) 集合|列出 [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) 对象的属性和关系。|
@@ -36,8 +36,8 @@ AppLogCollectionRequest 实体。
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|唯一标识符。 这是userId_DeviceId_AppId ID。|
-|status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|记录上载状态。 可取值为：`pending`、`completed`、`failed`。|
-|errorMessage|字符串|上传过程中出现错误消息（如果有）|
+|状态|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|记录上载状态。 可取值为：`pending`、`completed`、`failed`。|
+|errorMessage|String|上传过程中出现错误消息（如果有）|
 |customLogFolders|String collection|日志文件夹列表。 |
 |completedDateTime|DateTimeOffset|上载日志请求达到终端状态的时间|
 
@@ -64,7 +64,6 @@ AppLogCollectionRequest 实体。
   "completedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

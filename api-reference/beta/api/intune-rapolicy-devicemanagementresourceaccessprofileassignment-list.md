@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d68db5b3b4010e57c5ac4b43ee101131842f7b1c238fdac4e10732b43cc6d1b9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 24e314a7af6f144ef938d199e0e96ef6d72dd478
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54207654"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820735"
 ---
 # <a name="list-devicemanagementresourceaccessprofileassignments"></a>列出 deviceManagementResourceAccessProfileAssignments
 
@@ -29,7 +29,7 @@ ms.locfileid: "54207654"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All|
+|应用程序|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -43,7 +43,7 @@ GET /deviceManagement/resourceAccessProfiles/{deviceManagementResourceAccessProf
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -84,7 +84,6 @@ Content-Length: 585
   ]
 }
 ```
-
 
 
 

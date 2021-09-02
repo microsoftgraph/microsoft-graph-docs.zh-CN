@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4e1f8ca5bce065c0ce4967737aa93617fdacba9b1751f44ce42632d0fe49199e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e92d8042175cd26fc2a0999862dc716cb0c5116e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54187677"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58819120"
 ---
 # <a name="ratingfrancemoviestype-enum-type"></a>ratingFranceMoviesType 枚举类型
 
@@ -23,15 +23,14 @@ ms.locfileid: "54187677"
 法国电影评级标签
 
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |allAllowed|0|默认值，允许所有电影内容|
-|allBlocked|1 |不允许任何电影内容|
-|agesAbove10|2 |10 分类禁止将电影屏蔽到 10 以下的未成年人|
-|agesAbove12|3 |12 分类禁止将电影屏蔽到 12 下的未成年人|
+|allBlocked|1|不允许任何电影内容|
+|agesAbove10|2|10 分类禁止将电影屏蔽到 10 以下的未成年人|
+|agesAbove12|3|12 分类禁止将电影屏蔽到 12 下的未成年人|
 |agesAbove16|4 |16 分类禁止将电影屏蔽到 16 以下的未成年人|
 |agesAbove18|5 |18 分类禁止对 18 下的未成年人进行屏蔽|
-
 
 
 

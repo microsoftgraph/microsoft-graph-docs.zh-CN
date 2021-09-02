@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a6107273f5b66292ea72a7ace330e7e755a7a0c19fad415451b9001b3329194f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1b38d78f760598c86acb75f602f9d62fe3bf1814
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54213772"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816611"
 ---
 # <a name="update-devicecategory"></a>更新 deviceCategory
 
@@ -62,7 +62,7 @@ PATCH /deviceManagement/deviceCategories/{deviceCategoryId}
 
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -73,7 +73,7 @@ PATCH /deviceManagement/deviceCategories/{deviceCategoryId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|设备类别的唯一标识符。 只读。|
+|id|String|设备类别的唯一标识符。 只读。|
 |**载入**|
 |description|String|设备类别的可选说明。|
 |displayName|字符串|设备类别的显示名称。|
@@ -117,7 +117,6 @@ Content-Length: 184
   "description": "Description value"
 }
 ```
-
 
 
 

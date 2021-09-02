@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1f7e20865b86d86b80b2e49c3f283bb11502b4175fc06fd970ae2e0c3dd08ff7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ac3d1d49e9ca4e690a998d77259ec9b0fe471819
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54149182"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58790330"
 ---
 # <a name="update-deviceconfigurationuseroverview"></a>更新 deviceConfigurationUserOverview
 
@@ -52,7 +52,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -119,7 +119,6 @@ Content-Length: 355
   "configurationVersion": 4
 }
 ```
-
 
 
 

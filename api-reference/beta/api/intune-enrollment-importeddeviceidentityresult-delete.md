@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3f37afa888065c8a09100454e8988af5be5b9f995b5b6c5b2a06760f53126005
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b74456fcc519f541e291924860d494e0d0f590b3
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54127605"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58821828"
 ---
 # <a name="delete-importeddeviceidentityresult"></a>删除 importedDeviceIdentityResult
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/importedDeviceIdentities/{importedDeviceIdentityId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/importedDeviceIdentitie
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

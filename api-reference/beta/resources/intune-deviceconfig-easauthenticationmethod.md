@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5edab3b12834a49649bc14d456b4885d49f3435f301429f5d5bc995494c175c7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b02d6e11e8bddf89830a177790bd870bcd683544
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54241945"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795219"
 ---
 # <a name="easauthenticationmethod-enum-type"></a>easAuthenticationMethod 枚举类型
 
@@ -26,9 +26,8 @@ ExchangeActive Sync 身份验证方法。
 |成员|值|说明|
 |:---|:---|:---|
 |usernameAndPassword|0|使用用户名和密码进行身份验证。|
-|证书|1 |使用证书进行身份验证。|
-|derivedCredential|2 |使用派生的凭据进行身份验证。|
-
+|证书|1|使用证书进行身份验证。|
+|derivedCredential|2|使用派生的凭据进行身份验证。|
 
 
 

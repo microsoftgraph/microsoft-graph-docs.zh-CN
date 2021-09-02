@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 59c32f54f2ba098c3115e6ccac99fd537f11da533ce8098e54d76de78bbda151
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ee35da8d8a03cc52ddcf4e6764ba1aee0a59a2c3
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54127052"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58819694"
 ---
 # <a name="windows10associatedapps-resource-type"></a>windows10AssociatedApps 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "54127052"
 Windows 10关联的应用程序定义。
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |appType|[windows10AppType](../resources/intune-deviceconfig-windows10apptype.md)|应用程序类型。 可取值为：`desktop`、`universal`。|
 |标识符|String|标识符。|
@@ -45,7 +45,6 @@ Windows 10关联的应用程序定义。
   "identifier": "String"
 }
 ```
-
 
 
 

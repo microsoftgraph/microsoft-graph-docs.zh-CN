@@ -2,15 +2,15 @@
 title: 创建 iosUpdateDeviceStatus
 description: 创建新的 iosUpdateDeviceStatus 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 94c5ad12eda51d505742489553901a0c1175656d32e81c569bd32967b69a147b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9a610ff07dec43adc2a39f3f63385dadf6339b86
+ms.sourcegitcommit: cb90b32fba5f03aaffe1de30886513083d8113db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54211196"
+ms.lasthandoff: 09/01/2021
+ms.locfileid: "58850205"
 ---
 # <a name="create-iosupdatedevicestatus"></a>创建 iosUpdateDeviceStatus
 
@@ -29,7 +29,7 @@ ms.locfileid: "54211196"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All|
+|应用|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -57,7 +57,7 @@ POST /deviceManagement/iosUpdateStatuses
 |installStatus|[iosUpdatesInstallStatus](../resources/intune-deviceconfig-iosupdatesinstallstatus.md)|策略报告安装状态。 可能的值是 `success` `available` `idle` ：、、、、、、、、、、 `unknown` `mdmClientCrashed` `timeout` `downloading` `downloadFailed` `downloadRequiresComputer` `downloadInsufficientSpace` `downloadInsufficientPower` `downloadInsufficientNetwork` `installing` `installInsufficientSpace` `installInsufficientPower` `installPhoneCallInProgress` `installFailed` `notSupportedOperation` `sharedDeviceUserLoggedInError` `updateError` `deviceOsHigherThanDesiredOsVersion` `updateScanFailed` 。|
 |osVersion|String|报告的设备版本。|
 |deviceId|String|报告的设备 ID。|
-|userId|字符串|报告的用户 ID。|
+|userId|String|报告的用户 ID。|
 |deviceDisplayName|String|DevicePolicyStatus 的设备名。|
 |userName|String|报告的用户名|
 |deviceModel|String|报告的设备模型|
@@ -122,7 +122,6 @@ Content-Length: 619
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

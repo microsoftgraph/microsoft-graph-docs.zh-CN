@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 96a0b54340b7fb899dcca0336682aa1779002fe2214cd385badf3b4476bec51d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2c5223fe78791a4d1ab731a5d8575fc4627f1f01
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54142132"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58821709"
 ---
 # <a name="mobileappassignment-resource-type"></a>mobileAppAssignment 资源类型
 
@@ -22,8 +22,8 @@ ms.locfileid: "54142132"
 
 包含用于移动应用的组分配的属性的类。
 
-## <a name="methods"></a>Methods
-|方法|返回类型|说明|
+## <a name="methods"></a>方法
+|方法|返回类型|Description|
 |:---|:---|:---|
 |[列出 mobileAppAssignments](../api/intune-apps-mobileappassignment-list.md)|[mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) collection|列出 [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) 对象的属性和关系。|
 |[获取 mobileAppAssignment](../api/intune-apps-mobileappassignment-get.md)|[mobileAppAssignment](../resources/intune-apps-mobileappassignment.md)|读取 [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) 对象的属性和关系。|
@@ -72,7 +72,6 @@ ms.locfileid: "54142132"
   "sourceId": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rolyon
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0849f6352c13eae8b2ca2835bf8f1f223c018bd4
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: c5d6a6d09515c4717c0c45442e80875e5a340968
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58264981"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58815468"
 ---
 # <a name="devicemanagement-resource-type"></a>deviceManagement 资源类型
 
@@ -39,13 +39,13 @@ deviceManagement 资源表示其内容因工作流而异的容器，包括：
 - 远程访问
 - 远程协助合作伙伴
 - 基于角色的访问控制 (RBAC) 策略
-- 报表
+- Reporting
 - 电信业务管理合作伙伴
 - 事件疑难解答
 - Windows信息保护摘要
 
-## <a name="methods"></a>Methods
-|方法|返回类型|说明|
+## <a name="methods"></a>方法
+|方法|返回类型|Description|
 |:---|:---|:---|
 |[获取 deviceManagement](../api/intune-shared-devicemanagement-get.md)|读取 [deviceManagement](../resources/intune-shared-devicemanagement.md) 对象的属性和关系。|
 |[更新 deviceManagement](../api/intune-shared-devicemanagement-update.md)|更新 [deviceManagement](../resources/intune-shared-devicemanagement.md) 对象的属性。|
@@ -67,7 +67,7 @@ deviceManagement 资源表示其内容因工作流而异的容器，包括：
 |id|String|与设备关联的唯一标识符。|
 |**设备配置**|
 |intuneAccountId|Guid|给定租户的 Intune 帐户 ID|
-|legacyPcManangementEnabled|布尔值|用于为此帐户启用非 MDM 托管旧版电脑管理的 属性。 此属性是只读的。|
+|legacyPcManangementEnabled|Boolean|用于为此帐户启用非 MDM 托管旧版电脑管理的 属性。 此属性是只读的。|
 |maximumDepTokens|Int32|允许每个租户使用的最大 DEP 令牌数。|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|帐户级别设置。|
 |**设备管理**|
@@ -138,21 +138,21 @@ deviceManagement 资源表示其内容因工作流而异的容器，包括：
 |remoteActionAudits|[remoteActionAudit](../resources/intune-devices-remoteactionaudit.md) 集合|租户的设备远程操作审核列表。|
 |windowsMalwareInformation|[windowsMalwareInformation](../resources/intune-devices-windowsmalwareinformation.md) 集合|租户中受影响的恶意软件列表。|
 |mobileAppTroubleshootingEvents|[mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) 集合|MobileAppTroubleshootingEvent 的集合属性。|
-|userExperienceAnalyticsOverview|[userExperienceAnalyticsOverview](../resources/intune-devices-userExperienceAnalyticsOverview.md)|用户体验分析概述|
-|userExperienceAnalyticsBaselines|[userExperienceAnalyticsBaseline](../resources/intune-devices-userExperienceAnalyticsBaseline.md) 集合|用户体验分析基线|
-|userExperienceAnalyticsCategories|[userExperienceAnalyticsCategory](../resources/intune-devices-userExperienceAnalyticsCategory.md) 集合|用户体验分析类别|
-|userExperienceAnalyticsDevicePerformance|[userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userExperienceAnalyticsDevicePerformance.md) 集合|用户体验分析设备性能|
-|userExperienceAnalyticsRegressionSummary|[userExperienceAnalyticsRegressionSummary](../resources/intune-devices-userExperienceAnalyticsRegressionSummary.md)|用户体验分析回归摘要|
-|userExperienceAnalyticsDeviceStartupHistory|[userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userExperienceAnalyticsDeviceStartupHistory.md) 集合|用户体验分析设备启动历史记录|
-|userExperienceAnalyticsDeviceStartupProcesses|[userExperienceAnalyticsDeviceStartupProcess](../resources/intune-devices-userExperienceAnalyticsDeviceStartupProcess.md) 集合|用户体验分析设备启动过程|
-|userExperienceAnalyticsDeviceStartupProcessPerformance|[userExperienceAnalyticsDeviceStartupProcessPerformance](../resources/intune-devices-userExperienceAnalyticsDeviceStartupProcessPerformance.md) 集合|用户体验分析设备启动过程性能|
+|userExperienceAnalyticsOverview|[userExperienceAnalyticsOverview](../resources/userExperienceAnalyticsOverview.md)|用户体验分析概述|
+|userExperienceAnalyticsBaselines|[userExperienceAnalyticsBaseline](../resources/userExperienceAnalyticsBaseline.md) 集合|用户体验分析基线|
+|userExperienceAnalyticsCategories|[userExperienceAnalyticsCategory](../resources/userExperienceAnalyticsCategory.md) 集合|用户体验分析类别|
+|userExperienceAnalyticsDevicePerformance|[userExperienceAnalyticsDevicePerformance](../resources/userExperienceAnalyticsDevicePerformance.md) 集合|用户体验分析设备性能|
+|userExperienceAnalyticsRegressionSummary|[userExperienceAnalyticsRegressionSummary](../resources/userExperienceAnalyticsRegressionSummary.md)|用户体验分析回归摘要|
+|userExperienceAnalyticsDeviceStartupHistory|[userExperienceAnalyticsDeviceStartupHistory](../resources/userExperienceAnalyticsDeviceStartupHistory.md) 集合|用户体验分析设备启动历史记录|
+|userExperienceAnalyticsDeviceStartupProcesses|[userExperienceAnalyticsDeviceStartupProcess](../resources/userExperienceAnalyticsDeviceStartupProcess.md) 集合|用户体验分析设备启动过程|
+|userExperienceAnalyticsDeviceStartupProcessPerformance|[userExperienceAnalyticsDeviceStartupProcessPerformance](../resources/userExperienceAnalyticsDeviceStartupProcessPerformance.md) 集合|用户体验分析设备启动过程性能|
 |**注册**|
 |depOnboardingSettings|[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) 集合|每个租户多个 DEP 令牌的集合。|
 |importedDeviceIdentities|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) 集合|导入的设备标识。|
 |importedWindowsAutopilotDeviceIdentities|[importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) 集合|导入的 Windows AutoPilot 设备的集合。|
 |windowsAutopilotDeploymentProfiles|[windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md) 集合|Windows自动试点部署配置文件|
 |windowsAutopilotDeviceIdentities|[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) 集合|该Windows autopilot 设备标识包含集合。|
-|windowsAutopilotSettings|[windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md)|the Windows autopilot account settings.|
+|windowsAutopilotSettings|[windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md)|The Windows autopilot account settings.|
 |**嵌入式 SIM 卡**|
 |embeddedSIMActivationCodePools|[embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md) 集合|此帐户创建的嵌入式 SIM 卡激活代码池。|
 |**Fencing**|
@@ -220,7 +220,6 @@ deviceManagement 资源表示其内容因工作流而异的容器，包括：
   "subscriptionState": "String"
 }
 ```
-
 
 
 

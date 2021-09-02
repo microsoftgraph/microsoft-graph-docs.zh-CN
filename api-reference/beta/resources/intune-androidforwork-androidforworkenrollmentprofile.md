@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cf7ce703b19e087f43096631822cae2c20336e5fc65984c0a46b97cb77fea114
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 84436012a9c536e1917b6170df3ecd04cd5e0b72
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54142202"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58792622"
 ---
 # <a name="androidforworkenrollmentprofile-resource-type"></a>androidForWorkEnrollmentProfile 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54142202"
 
 注册配置文件，用于使用 Google 的云管理注册 COSU 设备。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[List androidForWorkEnrollmentProfiles](../api/intune-androidforwork-androidforworkenrollmentprofile-list.md)|[androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md) 集合|列出 [androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md) 对象的属性和关系。|
@@ -39,7 +39,7 @@ ms.locfileid: "54142202"
 |accountId|String|注册配置文件隶属的租户 GUID。|
 |id|String|注册配置文件的唯一 GUID。|
 |displayName|字符串|注册配置文件的显示名称。|
-|description|String|注册配置文件的说明。|
+|description|字符串|注册配置文件的说明。|
 |createdDateTime|DateTimeOffset|注册配置文件的创建日期/时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改注册配置文件的日期/时间。|
 |tokenValue|String|为此注册配置文件最新创建的令牌的值。|
@@ -79,7 +79,6 @@ ms.locfileid: "54142202"
   }
 }
 ```
-
 
 
 

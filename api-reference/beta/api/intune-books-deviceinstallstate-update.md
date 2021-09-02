@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4b3a8b963be27d65f1f39501374716e115339e8d27f0e7e92caa48607318ae20
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b7a04cd1474a51c69fa73c3c6cdf894ad8464e42
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54214563"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786233"
 ---
 # <a name="update-deviceinstallstate"></a>更新 deviceInstallState
 
@@ -44,7 +44,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{user
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -111,7 +111,6 @@ Content-Length: 423
   "userName": "User Name value"
 }
 ```
-
 
 
 

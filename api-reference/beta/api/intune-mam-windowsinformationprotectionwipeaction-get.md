@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5c581dc10b0e127fb9593fb7e9d053b6f69bebce6eb0d7bae9993f6ed8ec38dd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6d0519efef40f7c728df50fdbc845e8c0cd67d41
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54179569"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58819757"
 ---
 # <a name="get-windowsinformationprotectionwipeaction"></a>获取 windowsInformationProtectionWipeAction
 
@@ -29,7 +29,7 @@ ms.locfileid: "54179569"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -46,7 +46,7 @@ GET /deviceAppManagement/windowsInformationProtectionWipeActions/{windowsInforma
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -83,7 +83,6 @@ Content-Length: 496
   }
 }
 ```
-
 
 
 

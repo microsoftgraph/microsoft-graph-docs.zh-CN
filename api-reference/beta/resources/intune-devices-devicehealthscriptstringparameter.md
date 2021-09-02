@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e08160be229f9be3688df875d884a1c2750d733691ae088b95e852995a7dd42a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e6b96f7eb1796ce170c8334fc653b1565f716cad
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54224668"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785400"
 ---
 # <a name="devicehealthscriptstringparameter-resource-type"></a>deviceHealthScriptStringParameter 资源类型
 
@@ -28,10 +28,10 @@ String 脚本参数的属性。
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|name|字符串|参数的名称 继承自 [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
-|description|字符串|参数的说明 继承自 [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
+|name|String|参数的名称 继承自 [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
+|description|String|参数的说明 继承自 [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
 |isRequired|Boolean|参数是否必需 继承自 [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
-|applyDefaultValueWhenNotAssigned|布尔值|未分配时是否应用默认值 继承自 [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
+|applyDefaultValueWhenNotAssigned|Boolean|未分配时是否应用默认值 继承自 [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
 |defaultValue|String|字符串参数的默认值|
 
 ## <a name="relationships"></a>关系
@@ -54,7 +54,6 @@ String 脚本参数的属性。
   "defaultValue": "String"
 }
 ```
-
 
 
 

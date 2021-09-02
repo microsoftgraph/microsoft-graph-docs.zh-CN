@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 306a425119bfa5f4ab60eaf42901fc018a57a977f5f185da9b21597683090d84
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ab008c01e90a58ea6542047391f5f014e381eca4
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54183875"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786808"
 ---
 # <a name="update-devicemanagementbooleansettinginstance"></a>更新 deviceManagementBooleanSettingInstance
 
@@ -46,7 +46,7 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/categories/{devic
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -57,7 +57,7 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/categories/{devic
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|设置实例 ID 继承自 [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
-|definitionId|String|此实例的设置定义的 ID 继承自 [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
+|definitionId|字符串|此实例的设置定义的 ID 继承自 [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
 |valueJson|String|值的 JSON 表示形式 继承自 [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
 |value|Boolean|布尔值|
 
@@ -98,7 +98,6 @@ Content-Length: 225
   "value": true
 }
 ```
-
 
 
 

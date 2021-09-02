@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 915417ed402c2c4d5e6cb64362b71249ec666157993fe7a0f1430eed6c75feb3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 68dc8ad09b35ecc98d973e0b7bc422162036dc0a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54225487"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795071"
 ---
 # <a name="list-androidcustomconfigurations"></a>列出 androidCustomConfigurations
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -117,7 +117,6 @@ Content-Length: 1710
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 61bf5ef7d6f6242d1e859d309a96ec6c888d715fdd8483a76203efc0f91d1913
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 918557f9ea1ea098d98b1710a7f4beeb84bd5574
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54242648"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786633"
 ---
 # <a name="activatedeviceesimactionresult-resource-type"></a>activateDeviceEsimActionResult 资源类型
 
@@ -32,7 +32,7 @@ ms.locfileid: "54242648"
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|操作的状态 继承自 [deviceActionResult](../resources/intune-devices-deviceactionresult.md)。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed` 或 `notSupported`。|
 |startDateTime|DateTimeOffset|操作启动的时间 继承自 [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
 |lastUpdatedDateTime|DateTimeOffset|操作状态上次更新的时间 继承自 [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
-|carrierUrl|字符串|用于激活设备 eSIM 的运营商 URL |
+|carrierUrl|String|用于激活设备 eSIM 的运营商 URL |
 
 ## <a name="relationships"></a>关系
 无
@@ -54,7 +54,6 @@ ms.locfileid: "54242648"
   "carrierUrl": "String"
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: 使用 Intune 载入托管设备 - Microsoft Graph API
-description: 列出用于为租户Graph载入 (配置和) 设备的适用于 Intune 终结点的 Microsoft (REST) 。
+description: 列出 Microsoft Graph Intune 终结点的 API (REST) 用于为租户 (载入) 配置和初始化设备。
 localization_priority: Normal
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: f420420e5e82109e12628f5c2a585e27aee506c9
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: f71757ef2d59b1e188079d02a3ad86a44c208cfa
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256989"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786296"
 ---
 # <a name="enroll-devices-for-management-in-intune"></a>在 Intune 中注册设备以进行管理
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 99e6bb826ab085d41abea49895c8515077d1ee4aa5b42038e83e9a389efe0c46
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 73732a3b4edbd39011056dd287a3b9d59b34bc8f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54239432"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820700"
 ---
 # <a name="applepushnotificationcertificate-resource-type"></a>applePushNotificationCertificate 资源类型
 
@@ -22,8 +22,8 @@ ms.locfileid: "54239432"
 
 Apple 推送通知证书。
 
-## <a name="methods"></a>Methods
-|方法|返回类型|说明|
+## <a name="methods"></a>方法
+|方法|返回类型|Description|
 |:---|:---|:---|
 |[获取 applePushNotificationCertificate](../api/intune-devices-applepushnotificationcertificate-get.md)|[applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md)|读取 [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md) 对象的属性和关系。|
 |[更新 applePushNotificationCertificate](../api/intune-devices-applepushnotificationcertificate-update.md)|[applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md)|更新 [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md) 对象的属性。|
@@ -40,7 +40,7 @@ Apple 推送通知证书。
 |expirationDateTime|DateTimeOffset|Apple 推送通知证书的到期日期和时间。|
 |certificateUploadStatus|字符串|证书上载状态。|
 |certificateUploadFailureReason|String|证书上载失败的原因。|
-|certificateSerialNumber|String|证书序列号。 此属性是只读的。|
+|certificateSerialNumber|字符串|证书序列号。 此属性是只读的。|
 |证书|String|尚未记录|
 
 ## <a name="relationships"></a>关系
@@ -68,7 +68,6 @@ Apple 推送通知证书。
   "certificate": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9d09b964b02b5bc329fca67662d9a46a69c67740732d068c7bd918e4b37aff3a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0cbd15f366397564b24f6c715eaf2ea9b6826d30
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54206653"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58813003"
 ---
 # <a name="ioswebcontentfilterautofilter-resource-type"></a>iosWebContentFilterAutoFilter 资源类型
 
@@ -52,7 +52,6 @@ ms.locfileid: "54206653"
   ]
 }
 ```
-
 
 
 

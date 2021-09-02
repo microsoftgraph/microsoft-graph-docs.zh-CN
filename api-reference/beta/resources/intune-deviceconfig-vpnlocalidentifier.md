@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a572cf80a25f7c30881446467ddbe95ee31a89c140bbaf0652fca45e4cd91fa4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5c379f6b90dccc2cb36c0518974f80a76d6bc6f2
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54251419"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801814"
 ---
 # <a name="vpnlocalidentifier-enum-type"></a>vpnLocalIdentifier 枚举类型
 
@@ -26,9 +26,8 @@ VPN 本地标识符的类型
 |成员|值|说明|
 |:---|:---|:---|
 |deviceFQDN|0|设备完全限定的域名|
-|空|1 |Empty|
-|clientCertificateSubjectName|2 |客户端证书主题名称|
-
+|空|1|Empty|
+|clientCertificateSubjectName|2|客户端证书主题名称|
 
 
 

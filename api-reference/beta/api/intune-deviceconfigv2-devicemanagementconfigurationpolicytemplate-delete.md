@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a8a508b99fb923c14720be694cb6200f6c71d0fa
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 6c9501116694bbde8de1780eb36344bd89962ea8
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256921"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820017"
 ---
 # <a name="delete-devicemanagementconfigurationpolicytemplate"></a>删除 deviceManagementConfigurationPolicyTemplate
 
@@ -29,7 +29,7 @@ ms.locfileid: "58256921"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -43,7 +43,7 @@ DELETE /deviceManagement/configurationPolicyTemplates/{deviceManagementConfigura
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/configurationPolicyTemp
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

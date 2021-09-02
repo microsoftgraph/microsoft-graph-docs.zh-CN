@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 994af77cd8cc847496fbe8678b25286164ed5e6ae65577f909320373b59c6f94
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b8e021551326e5b46e0aa4dc79dd819b6e21f1a5
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54227643"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820539"
 ---
 # <a name="mobileappcontentfileuploadstate-enum-type"></a>mobileAppContentFileUploadState 枚举类型
 
@@ -23,12 +23,12 @@ ms.locfileid: "54227643"
 包含上载请求状态的属性。
 
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |success|0|尚未记录|
-|transientError|1 |尚未记录|
-|error|2 |尚未记录|
-|unknown|3 |尚未记录|
+|transientError|1|尚未记录|
+|error|2|尚未记录|
+|unknown|3|尚未记录|
 |azureStorageUriRequestSuccess|100|尚未记录|
 |azureStorageUriRequestPending|101|尚未记录|
 |azureStorageUriRequestFailed|102|尚未记录|
@@ -41,7 +41,6 @@ ms.locfileid: "54227643"
 |commitFilePending|301|尚未记录|
 |commitFileFailed|302|尚未记录|
 |commitFileTimedOut|303|尚未记录|
-
 
 
 

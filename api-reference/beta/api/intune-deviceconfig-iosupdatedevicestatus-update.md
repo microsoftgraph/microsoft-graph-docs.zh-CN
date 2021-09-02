@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cb93990afd901e593aae17304dac252cd7c0b064ee34a69ca100ac0004f8f11e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 59e2e52ce9a5a8eabc9680fff2f1d258787c98a8
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54157436"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58814579"
 ---
 # <a name="update-iosupdatedevicestatus"></a>更新 iosUpdateDeviceStatus
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/iosUpdateStatuses/{iosUpdateDeviceStatusId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,11 +53,11 @@ PATCH /deviceManagement/iosUpdateStatuses/{iosUpdateDeviceStatusId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
+|id|字符串|实体的键。|
 |installStatus|[iosUpdatesInstallStatus](../resources/intune-deviceconfig-iosupdatesinstallstatus.md)|策略报告安装状态。 可能的值是 `success` `available` `idle` ：、、、、、、、、、、 `unknown` `mdmClientCrashed` `timeout` `downloading` `downloadFailed` `downloadRequiresComputer` `downloadInsufficientSpace` `downloadInsufficientPower` `downloadInsufficientNetwork` `installing` `installInsufficientSpace` `installInsufficientPower` `installPhoneCallInProgress` `installFailed` `notSupportedOperation` `sharedDeviceUserLoggedInError` `updateError` `deviceOsHigherThanDesiredOsVersion` `updateScanFailed` 。|
 |osVersion|String|报告的设备版本。|
 |deviceId|String|报告的设备 ID。|
-|userId|字符串|报告的用户 ID。|
+|userId|String|报告的用户 ID。|
 |deviceDisplayName|String|DevicePolicyStatus 的设备名。|
 |userName|String|报告的用户名|
 |deviceModel|String|报告的设备模型|
@@ -122,7 +122,6 @@ Content-Length: 619
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

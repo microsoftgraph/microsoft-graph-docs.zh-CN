@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fae352340d61f3e638917eaf50553aa3cef26b7a2964c80657406e300620578f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 92d52f0df6f368eda15c4aa54cfefcc6812510ab
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54242662"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786976"
 ---
 # <a name="devicemanagementconfigurationchoicesettingcollectioninstance-resource-type"></a>deviceManagementConfigurationChoiceSettingCollectionInstance 资源类型
 
@@ -28,7 +28,7 @@ ms.locfileid: "54242662"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|settingDefinitionId|字符串|设置定义 ID 继承自 [deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|
+|settingDefinitionId|String|设置定义 ID 继承自 [deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|
 |settingInstanceTemplateReference|[deviceManagementConfigurationSettingInstanceTemplateReference](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstancetemplatereference.md)|设置实例模板引用 继承自 [deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|
 |choiceSettingCollectionValue|[deviceManagementConfigurationChoiceSettingValue](../resources/intune-deviceconfigv2-devicemanagementconfigurationchoicesettingvalue.md) 集合|选项设置集合值|
 
@@ -269,7 +269,6 @@ ms.locfileid: "54242662"
   ]
 }
 ```
-
 
 
 

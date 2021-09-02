@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 16b38d32da0a7669552852383f316ef3b185c8434d1765af69995ab58563e967
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2404dc48f320bf0796572dfa1ee0f30c447661b7
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54218070"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806493"
 ---
 # <a name="get-ebookinstallsummary"></a>获取 eBookInstallSummary
 
@@ -29,7 +29,7 @@ ms.locfileid: "54218070"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -46,7 +46,7 @@ GET /deviceAppManagement/managedEBooks/{managedEBookId}/installSummary
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -83,7 +83,6 @@ Content-Length: 320
   }
 }
 ```
-
 
 
 

@@ -3,12 +3,12 @@ title: Microsoft Graph 新增功能
 description: Microsoft Graph 新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 5926d13f8971d891d48eb09205162f502999faed
-ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
+ms.openlocfilehash: ea4df31ae070991725b3e2dcbe75cc9e428082b1
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58384469"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786261"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
@@ -38,10 +38,11 @@ Intune beta 版每月更新。 设置 2021 年 8 月的 **日期** 筛选器，�
 - [重新处理](/graph/api/accesspackageassignment-reprocess?view=graph-rest-beta&preserve-view=true)[访问包分配](/graph/api/resources/accesspackageassignment?view=graph-rest-beta&preserve-view=true)以自动重新评估和强制执行用户分配。
 - [获取一组策略要求](/graph/api/accesspackage-getapplicablepolicyrequirements?view=graph-rest-beta&preserve-view=true)以便[为访问包创建分配请求](/graph/api/resources/accesspackageassignmentrequestrequirements?view=graph-rest-beta&preserve-view=true)。
 - 获取[访问评审审阅者](/graph/api/resources/accessreviewreviewer?view=graph-rest-beta&preserve-view=true)资源的集合，这些资源用于定义与[访问审阅实例](/graph/api/resources/accessReviewInstance?view=graph-rest-beta&preserve-view=true)联系的审阅者。
-- 使用 **recommendationLookBackDuration** 属性，获取或设置在[访问评审的计划设置中](/graph/api/resources/accessReviewScheduleSettings?view=graph-rest-beta&preserve-view=true)配置建议的非活动持续时间。
+- 使用 **recommendationLookBackDuration** 属性，获取或设置在 [访问评审的计划设置中](/graph/api/resources/accessReviewScheduleSettings?view=graph-rest-beta&preserve-view=true)配置建议的非活动持续时间。
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
-组织可以使用[策略来强制应用使用应用程序身份验证方法的最佳做法](/graph/api/resources/applicationauthmethodpolicy?view=graph-rest-beta&preserve-view=true)。 此类策略可以应用于[特定应用程序和服务主体](/graph/api/resources/appmanagementpolicy?view=graph-rest-beta&preserve-view=true)，或[租户中的所有应用程序和服务主体](/resources/tenantappmanagementpolicy?view=graph-rest-beta&preserve-view=true)。
+- 组织可以使用[策略来强制应用使用应用程序身份验证方法的最佳做法](/graph/api/resources/applicationauthmethodpolicy?view=graph-rest-beta&preserve-view=true)。 此类策略可以应用于[特定应用程序和服务主体](/graph/api/resources/appmanagementpolicy?view=graph-rest-beta&preserve-view=true)，或[租户中的所有应用程序和服务主体](/resources/tenantappmanagementpolicy?view=graph-rest-beta&preserve-view=true)。
+- 支持在 [用户](/api/user-list-approleassignments?view=graph-rest-beta&preserve-view=true)、[组](/api/group-list-approleassignments?view=graph-rest-beta&preserve-view=true) 和 [服务主体](/api/serviceprincipal-list-approleassignments?view=graph-rest-beta&preserve-view=true) 的 **appRoleAssignments** 导航属性上进行分页。
 
 ## <a name="july-2021-new-and-generally-available"></a>2021 年 7 月: 新版本和正式版
 

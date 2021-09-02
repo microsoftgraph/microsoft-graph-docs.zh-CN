@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0fca9d52b09bdb19f85aa6fa06c166195263af39fbf143e956207f7a5e0a7b30
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 83d1789f02c8cc961bd4d1c784ad70f47c6b7f85
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54226341"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789931"
 ---
 # <a name="vpnauthenticationmethod-enum-type"></a>vpnAuthenticationMethod 枚举类型
 
@@ -26,11 +26,10 @@ VPN 身份验证方法。
 |成员|值|说明|
 |:---|:---|:---|
 |证书|0|使用证书进行身份验证。|
-|usernameAndPassword|1 |使用用户名和密码进行身份验证。|
-|sharedSecret|2 |使用共享密码进行身份验证。  仅对 iOS IKEv2 有效。|
-|derivedCredential|3 |使用派生的凭据进行身份验证。|
+|usernameAndPassword|1|使用用户名和密码进行身份验证。|
+|sharedSecret|2|使用共享密码进行身份验证。  仅对 iOS IKEv2 有效。|
+|derivedCredential|3|使用派生的凭据进行身份验证。|
 |azureAD|4 |使用 Azure AD 进行身份验证。|
-
 
 
 

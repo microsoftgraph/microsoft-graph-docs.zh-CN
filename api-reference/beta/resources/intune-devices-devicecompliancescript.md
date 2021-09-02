@@ -1,16 +1,16 @@
 ---
 title: deviceComplianceScript 资源类型
-description: Intune 将为客户提供在已注册的 windows 10 (设备上运行其 Powershell 合规性脚本) 检测Azure Active Directory功能。
+description: Intune 将为客户提供在已注册的 windows 10 (设备上) 运行其 Powershell 合规性脚本Azure Active Directory检测功能。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 88b82fe497653e5c2ee0f2d796773b00dbe66cc5163fe5ebdf62a422322e23e2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3e3c29d21784032e970d083ab4ee0300f57332a2
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54126926"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791499"
 ---
 # <a name="devicecompliancescript-resource-type"></a>deviceComplianceScript 资源类型
 
@@ -20,9 +20,9 @@ ms.locfileid: "54126926"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-Intune 将为客户提供在已注册的 windows 10 (设备上运行其 Powershell 合规性脚本) 检测Azure Active Directory功能。
+Intune 将为客户提供在已注册的 windows 10 (设备上) 运行其 Powershell 合规性脚本Azure Active Directory检测功能。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceComplianceScripts](../api/intune-devices-devicecompliancescript-list.md)|[deviceComplianceScript](../resources/intune-devices-devicecompliancescript.md) 集合|列出 [deviceComplianceScript 对象的属性和](../resources/intune-devices-devicecompliancescript.md) 关系。|
@@ -35,18 +35,18 @@ Intune 将为客户提供在已注册的 windows 10 (设备上运行其 Powershe
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|设备合规性脚本的唯一标识符|
+|id|String|设备合规性脚本的唯一标识符|
 |发布者|String|设备合规性脚本发布者的名称|
 |version|String|设备合规性脚本的版本|
-|displayName|String|设备合规性脚本的名称|
+|displayName|字符串|设备合规性脚本的名称|
 |description|String|设备合规性脚本的说明|
 |detectionScriptContent|二进制|检测 powershell 脚本的全部内容|
 |createdDateTime|DateTimeOffset|创建设备合规性脚本的时间戳。 此属性是只读的。|
 |lastModifiedDateTime|DateTimeOffset|修改设备合规性脚本的时间戳。 此属性是只读的。|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示执行上下文的类型。 可取值为：`system`、`user`。|
-|enforceSignatureCheck|布尔值|指示是否需要检查脚本签名|
-|runAs32Bit|布尔值|指示 PowerShell 脚本 (脚本) 32 位运行|
-|roleScopeTagIds|String collection|设备合规性脚本的范围标记标识列表|
+|enforceSignatureCheck|Boolean|指示是否需要检查脚本签名|
+|runAs32Bit|Boolean|指示 PowerShell 脚本 (脚本) 32 位运行|
+|roleScopeTagIds|字符串集合|设备合规性脚本的范围标记标识列表|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -82,7 +82,6 @@ Intune 将为客户提供在已注册的 windows 10 (设备上运行其 Powershe
   ]
 }
 ```
-
 
 
 

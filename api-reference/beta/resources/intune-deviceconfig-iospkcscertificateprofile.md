@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d919c26678920e5fe5f8abe4e13c9516ad20b4d9716d71f34d23820b1391bd71
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e8cee4fee2ad59a5ac98a1283ca80858bf2be849
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54226383"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58819169"
 ---
 # <a name="iospkcscertificateprofile-resource-type"></a>iosPkcsCertificateProfile 资源类型
 
@@ -25,8 +25,8 @@ iOS PKCS 证书配置文件。
 
 继承自 [iosCertificateProfileBase](../resources/intune-deviceconfig-ioscertificateprofilebase.md)
 
-## <a name="methods"></a>Methods
-|方法|返回类型|说明|
+## <a name="methods"></a>方法
+|方法|返回类型|Description|
 |:---|:---|:---|
 |[列出 iosPkcsCertificateProfiles](../api/intune-deviceconfig-iospkcscertificateprofile-list.md)|[iosPkcsCertificateProfile](../resources/intune-deviceconfig-iospkcscertificateprofile.md) 集合|列出 [iosPkcsCertificateProfile](../resources/intune-deviceconfig-iospkcscertificateprofile.md) 对象的属性和关系。|
 |[获取 iosPkcsCertificateProfile](../api/intune-deviceconfig-iospkcscertificateprofile-get.md)|[iosPkcsCertificateProfile](../resources/intune-deviceconfig-iospkcscertificateprofile.md)|读取 [iosPkcsCertificateProfile](../resources/intune-deviceconfig-iospkcscertificateprofile.md) 对象的属性和关系。|
@@ -37,9 +37,9 @@ iOS PKCS 证书配置文件。
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|布尔值|指示基础设备配置是否支持分配范围标记。 当此值为 false 且实体对范围用户不可见时，不允许分配给 ScopeTags 属性。 这适用于在 Silverlight 中创建的旧版策略，可通过在 Azure 门户中删除和重新创建策略来解决。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|此策略的操作系统版本适用性。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -55,14 +55,14 @@ iOS PKCS 证书配置文件。
 |certificateValidityPeriodScale|[certificateValidityPeriodScale](../resources/intune-shared-certificatevalidityperiodscale.md)|证书有效期的缩放。 继承自 [iosCertificateProfileBase](../resources/intune-deviceconfig-ioscertificateprofilebase.md)。 可取值为：`days`、`months`、`years`。|
 |certificationAuthority|String|PKCS 证书颁发机构。|
 |certificationAuthorityName|String|PKCS 证书颁发机构名称。|
-|certificateTemplateName|字符串|PKCS 证书模板名称。|
+|certificateTemplateName|String|PKCS 证书模板名称。|
 |subjectAlternativeNameFormatString|String|定义 AAD 属性的自定义字符串。|
 |subjectNameFormatString|String|要与 SubjectNameFormat 一同使用的自定义格式 = Custom。 示例：CN={{EmailAddress}}，E={{EmailAddress}，OU=Enterprise Users，O=Contoso Corporation，L=Redmond，ST=WA，C=US|
 |certificateStore|[certificateStore](../resources/intune-shared-certificatestore.md)|目标存储证书。 可取值为：`user`、`machine`。|
 |customSubjectAlternativeNames|[customSubjectAlternativeName](../resources/intune-deviceconfig-customsubjectalternativename.md) 集合|自定义主题备用名称设置。 该集合最多可包含 500 个元素。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|Description|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md) 集合|设备配置文件的组分配列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) 集合|设备配置文件的分配列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -135,7 +135,6 @@ iOS PKCS 证书配置文件。
   ]
 }
 ```
-
 
 
 

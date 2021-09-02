@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1e5856d23a58770b1b010f7d83b1fd2d481be5a54b0c364dfb5043b8b454f229
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8ee0379550699904ce990ecf697bc38a7c19bf9d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54227076"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816702"
 ---
 # <a name="list-devicecomplianceactionitems"></a>列出 deviceComplianceActionItems
 
@@ -43,7 +43,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/schedu
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -82,7 +82,6 @@ Content-Length: 385
   ]
 }
 ```
-
 
 
 

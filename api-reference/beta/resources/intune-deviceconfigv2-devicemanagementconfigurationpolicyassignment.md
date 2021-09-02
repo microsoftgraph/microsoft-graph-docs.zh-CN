@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2b5b7feec442991265c358fbfbd7e7ae2dbd2754
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 848e1829f22128d11893f13ed02d299381ff3676
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58265009"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58792580"
 ---
 # <a name="devicemanagementconfigurationpolicyassignment-resource-type"></a>deviceManagementConfigurationPolicyAssignment 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "58265009"
 
 DeviceManagementConfigurationPolicyAssignment 实体将特定 DeviceManagementConfigurationPolicy 分配给 AAD 组。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceManagementConfigurationPolicyAssignments](../api/intune-deviceconfigv2-devicemanagementconfigurationpolicyassignment-list.md)|[deviceManagementConfigurationPolicyAssignment](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicyassignment.md) 集合|列出 [deviceManagementConfigurationPolicyAssignment](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicyassignment.md) 对象的属性和关系。|
@@ -64,7 +64,6 @@ DeviceManagementConfigurationPolicyAssignment 实体将特定 DeviceManagementCo
   "sourceId": "String"
 }
 ```
-
 
 
 

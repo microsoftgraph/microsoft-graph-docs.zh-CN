@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 20a433ffaef9ec0a1763e081b95e4615457ea2cb73c386448c5b3f7e0d03124f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2d5fe17a05e16780f4abd77cb038aca3886b11f6
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54188552"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58814880"
 ---
 # <a name="list-windows10secureassessmentconfigurations"></a>列出 windows10SecureAssessmentConfigurations
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -115,7 +115,6 @@ Content-Length: 1768
   ]
 }
 ```
-
 
 
 

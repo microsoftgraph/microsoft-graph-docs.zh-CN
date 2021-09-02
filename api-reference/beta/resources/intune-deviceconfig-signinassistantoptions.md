@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fc71a3a44ba5ace20065acd8403dc2f61d5f2b6804a05ef43397771622e9a555
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0013fcf2974325ed78428d6d816b04515d012c03
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54232725"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816548"
 ---
 # <a name="signinassistantoptions-enum-type"></a>signInAssistantOptions 枚举类型
 
@@ -23,11 +23,10 @@ ms.locfileid: "54232725"
 SignInAssistantSettings 的值。
 
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |notConfigured|0|未配置 - wlidsvc Start 将设置为 SERVICE_DEMAND_START。|
-|disabled|1 |已禁用 - wlidsvc"开始"将设置为SERVICE_DISABLED。|
-
+|disabled|1|已禁用 - wlidsvc Start 将设置为 SERVICE_DISABLED。|
 
 
 

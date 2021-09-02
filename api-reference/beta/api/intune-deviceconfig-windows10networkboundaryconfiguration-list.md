@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 90dbfc44c5d77e36ab9e7091f6d67960b78bd342ba7581b02ca25ec262367f67
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9430c34de584767f6182b7a02cb50bfa149b789b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54168554"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58793194"
 ---
 # <a name="list-windows10networkboundaryconfigurations"></a>列出 windows10NetworkBoundaryConfigurations
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -136,7 +136,6 @@ Content-Length: 2368
   ]
 }
 ```
-
 
 
 
