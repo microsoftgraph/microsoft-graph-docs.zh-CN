@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7725d7f36ca66e546cb98250091ef7ef08eae9dd6eba2f6ef846eca4ab1ce251
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9ed97e1cebfec55a6ec9420ab818f208873daa2a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54209782"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58800343"
 ---
 # <a name="devicemanagementreportschedule-resource-type"></a>deviceManagementReportSchedule 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54209782"
 
 表示送达报告的计划的实体
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceManagementReportSchedules](../api/intune-reporting-devicemanagementreportschedule-list.md)|[deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md) 集合|列出 [deviceManagementReportSchedule 对象的属性和](../resources/intune-reporting-devicemanagementreportschedule.md) 关系。|
@@ -37,15 +37,15 @@ ms.locfileid: "54209782"
 |id|String|此实体的唯一标识符|
 |reportScheduleName|String|计划的名称|
 |subject|String|已送达的计划报告的主题|
-|电子邮件|String collection|将计划报告传递到的电子邮件|
+|电子邮件|字符串集合|将计划报告传递到的电子邮件|
 |recurrence|[deviceManagementScheduledReportRecurrence](../resources/intune-reporting-devicemanagementscheduledreportrecurrence.md)|计划报告传递的频率。 可取值为：`none`、`daily`、`weekly`、`monthly`。|
 |startDateTime|DateTimeOffset|计划报告交付开始的时间|
 |endDateTime|DateTimeOffset|计划报告传递结束的时间|
 |userId|String|创建报告的用户的 ID|
-|reportName|String|报告的名称|
-|filter|String|应用于报表的筛选器|
-|select|String collection|从报表选择的列|
-|orderBy|String collection|报告中列的排序|
+|reportName|字符串|报告的名称|
+|filter|字符串|应用于报表的筛选器|
+|select|字符串集合|从报表选择的列|
+|orderBy|字符串集合|报告中列的排序|
 |format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|计划报表的格式。 可取值为：`csv`、`pdf`。|
 
 ## <a name="relationships"></a>关系
@@ -83,7 +83,6 @@ ms.locfileid: "54209782"
   "format": "String"
 }
 ```
-
 
 
 

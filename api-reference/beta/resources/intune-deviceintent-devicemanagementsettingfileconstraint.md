@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3cdca0f1cba17381809fa87bea1400020875c2c67c8abfa3dcf5bf4ca540f44b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 63db39cac736e22f219bcf0953ff287d5dc9078c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54193683"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818084"
 ---
 # <a name="devicemanagementsettingfileconstraint-resource-type"></a>deviceManagementSettingFileConstraint 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "54193683"
 继承自 [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |supportedExtensions|String collection|要为此设置上载的可接受文件扩展名|
 
@@ -48,7 +48,6 @@ ms.locfileid: "54193683"
   ]
 }
 ```
-
 
 
 

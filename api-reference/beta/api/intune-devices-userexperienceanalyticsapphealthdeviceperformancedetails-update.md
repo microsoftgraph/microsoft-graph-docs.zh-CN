@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d9b10b7acc32fa8b5bf510e2771a7738717e5744
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 8bd833f11d9af961b0e078675ff5615bddde67a0
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255407"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818896"
 ---
 # <a name="update-userexperienceanalyticsapphealthdeviceperformancedetails"></a>更新 userExperienceAnalyticsAppHealthDevicePerformanceDetails
 
@@ -27,9 +27,9 @@ ms.locfileid: "58255407"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/userExperienceAnalyticsAppHealthDevicePerformanceDetails
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,11 +53,11 @@ PATCH /deviceManagement/userExperienceAnalyticsAppHealthDevicePerformanceDetails
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|用户体验分析设备性能对象的唯一标识符。|
+|id|字符串|用户体验分析设备性能对象的唯一标识符。|
 |eventDateTime|DateTimeOffset|事件发生的时间。|
 |eventType|字符串|事件的类型。|
 |appDisplayName|String|发生事件的应用程序的友好名称。|
-|appPublisher|String|应用程序的发布者。|
+|appPublisher|字符串|应用程序的发布者。|
 |appVersion|字符串|应用程序的版本。|
 |deviceId|String|设备的 ID。|
 |deviceDisplayName|String|设备的名称。|
@@ -107,7 +107,6 @@ Content-Length: 454
   "deviceDisplayName": "Device Display Name value"
 }
 ```
-
 
 
 

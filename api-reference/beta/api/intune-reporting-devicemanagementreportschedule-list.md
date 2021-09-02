@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e69751659cf720009ce4b123a320299dd6b7f3f43b31c7596f95d873c04c7a4e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 23b678cea8b0e00d546c047b370b5fb380941657
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54191149"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804328"
 ---
 # <a name="list-devicemanagementreportschedules"></a>列出 deviceManagementReportSchedules
 
@@ -43,7 +43,7 @@ GET /deviceManagement/reports/reportSchedules
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -94,7 +94,6 @@ Content-Length: 701
   ]
 }
 ```
-
 
 
 

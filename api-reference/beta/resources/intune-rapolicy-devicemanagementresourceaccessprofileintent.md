@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7d0409b38061b189a9d2b84886b212dfa6c2588b6ff35418fea5fc3afe4225a8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2bd7037f4db7b7275708dcedc8ec1f0bf24f137d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54182670"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806570"
 ---
 # <a name="devicemanagementresourceaccessprofileintent-enum-type"></a>deviceManagementResourceAccessProfileIntent 枚举类型
 
@@ -26,8 +26,7 @@ ms.locfileid: "54182670"
 |成员|值|说明|
 |:---|:---|:---|
 |apply|0|应用配置文件。|
-|remove|1 |从已安装配置文件的设备中删除配置文件。|
-
+|remove|1|从已安装配置文件的设备中删除配置文件。|
 
 
 

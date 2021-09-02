@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6e29d420b05a2b83925689068f10de3947235b5f1ed7d910ddf479bd5ce1c1bb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6321703ad7fd1d494edac29e8c3fa5fb46584d44
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54188251"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816618"
 ---
 # <a name="get-microsofttunnelserverlogcollectionresponse"></a>获取 microsoftTunnelServerLogCollectionResponse
 
@@ -27,9 +27,9 @@ ms.locfileid: "54188251"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All、MicrosoftTunnelGateway.Read.All、MicrosoftTunnelGateway.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|MicrosoftTunnelGateway.Read.All、MicrosoftTunnelGateway.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -46,7 +46,7 @@ GET /deviceManagement/microsoftTunnelServerLogCollectionResponses/{microsoftTunn
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/microsoftTunnelServerLogCo
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 324
+Content-Length: 481
 
 {
   "value": {
@@ -77,11 +77,13 @@ Content-Length: 324
     "status": "completed",
     "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
     "endDateTime": "2017-01-01T00:03:30.9241974-08:00",
-    "sizeInBytes": 11
+    "sizeInBytes": 11,
+    "serverId": "Server Id value",
+    "requestDateTime": "2017-01-01T00:03:07.1589002-08:00",
+    "expiryDateTime": "2017-01-01T00:03:32.5199332-08:00"
   }
 }
 ```
-
 
 
 

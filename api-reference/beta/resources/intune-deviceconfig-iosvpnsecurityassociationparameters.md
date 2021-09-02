@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 10520e1302acd6e3ba0b2c8cd1af39de8e6c85ec
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 0db2cad5e576b5421446c5bb56c14d8538ccb1a6
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266952"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58788224"
 ---
 # <a name="iosvpnsecurityassociationparameters-resource-type"></a>iosVpnSecurityAssociationParameters 资源类型
 
@@ -49,7 +49,6 @@ VPN 安全关联参数
   "lifetimeInMinutes": 1024
 }
 ```
-
 
 
 

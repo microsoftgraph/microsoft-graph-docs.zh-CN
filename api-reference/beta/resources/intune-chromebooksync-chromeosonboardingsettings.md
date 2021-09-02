@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 53b42eae58cbd68f4663290cd5d565e8fdf44c27bab676835054dcbc919a8935
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3729f383c8df383c6ad28c90b32129edf307562c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54206786"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787622"
 ---
 # <a name="chromeosonboardingsettings-resource-type"></a>chromeOSOnboardingSettings 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54206786"
 
 表示 Chromebook 租户设置的实体
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 chromeOSOnboardingSettingses](../api/intune-chromebooksync-chromeosonboardingsettings-list.md)|[chromeOSOnboardingSettings](../resources/intune-chromebooksync-chromeosonboardingsettings.md) 集合|列出 [chromeOSOnboardingSettings 对象的属性和](../resources/intune-chromebooksync-chromeosonboardingsettings.md) 关系。|
@@ -37,7 +37,7 @@ ms.locfileid: "54206786"
 |:---|:---|:---|
 |id|String|ChromebookTenant 的 ID|
 |ownerUserPrincipalName|String|ChromebookTenant 的 OwnerUserPrincipalName|
-|onboardingStatus|[onboardingStatus](../resources/intune-chromebooksync-onboardingstatus.md)|ChromebookTenant 的 OnboardingStatus。 可取值为：`unknown`、`inprogress`、`onboarded`、`failed`。|
+|onboardingStatus|[onboardingStatus](../resources/intune-chromebooksync-onboardingstatus.md)|ChromebookTenant 的 OnboardingStatus。 可能的值是：`unknown`、`inprogress`、`onboarded`、`failed`。|
 |lastModifiedDateTime|DateTimeOffset|ChromebookTenant 的 LastModifiedDateTime|
 |lastDirectorySyncDateTime|DateTimeOffset|ChromebookTenant 的 LastDirectorySyncDateTime|
 
@@ -62,7 +62,6 @@ ms.locfileid: "54206786"
   "lastDirectorySyncDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

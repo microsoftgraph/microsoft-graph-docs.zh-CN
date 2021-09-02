@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 955bac6e0faef270bd45b55b0a06a90a982e74c1
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 6db355433f6103e5809b502ad5fe5d9bf3c92af1
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266560"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58802339"
 ---
 # <a name="update-deviceshellscript"></a>更新 deviceShellScript
 
@@ -27,9 +27,9 @@ ms.locfileid: "58266560"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/deviceShellScripts/{deviceShellScriptId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -55,7 +55,7 @@ PATCH /deviceManagement/deviceShellScripts/{deviceShellScriptId}
 |:---|:---|:---|
 |executionFrequency|期限|脚本运行的间隔。 如果未定义，脚本将运行一次|
 |retryCount|Int32|脚本失败时重试次数|
-|blockExecutionNotifications|布尔值|不通知用户正在执行脚本|
+|blockExecutionNotifications|Boolean|不通知用户正在执行脚本|
 |id|String|设备管理脚本的唯一标识符。|
 |displayName|字符串|设备管理脚本的名称。|
 |description|String|设备管理脚本的可选说明。|
@@ -121,7 +121,6 @@ Content-Length: 581
   ]
 }
 ```
-
 
 
 

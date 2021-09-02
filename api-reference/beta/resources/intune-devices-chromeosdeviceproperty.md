@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c2688b4b3459232af9f2948e3f1cdb2c7ac7fc20afeecacd209e3eb4e0df4374
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3746cdd02a3b12ad9c657c1e5377a4b0b02adc47
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54232592"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818994"
 ---
 # <a name="chromeosdeviceproperty-resource-type"></a>chromeOSDeviceProperty 资源类型
 
@@ -23,11 +23,11 @@ ms.locfileid: "54232592"
 表示 ChromeOS 设备的属性。
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |name|String|属性的名称|
 |value|String|属性的值|
-|valueType|字符串|值的类型|
+|valueType|String|值的类型|
 |updatable|布尔值|此属性是否可更新|
 
 ## <a name="relationships"></a>关系
@@ -49,7 +49,6 @@ ms.locfileid: "54232592"
   "updatable": true
 }
 ```
-
 
 
 

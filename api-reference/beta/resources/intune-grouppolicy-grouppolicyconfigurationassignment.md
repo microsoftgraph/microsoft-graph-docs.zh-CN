@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5ba827367bd32d676f56b3665e84f802e040686d083cfb7dc28aa937bdf3403c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a5eb13ad3c1fb92d9f70e69a6fe432533d4f0c3d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54172895"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804265"
 ---
 # <a name="grouppolicyconfigurationassignment-resource-type"></a>groupPolicyConfigurationAssignment 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54172895"
 
 组策略配置分配实体将一个或多个 AAD 组分配给特定的组策略配置。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 groupPolicyConfigurationAssignments](../api/intune-grouppolicy-grouppolicyconfigurationassignment-list.md)|[groupPolicyConfigurationAssignment](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md) 集合|列出 [groupPolicyConfigurationAssignment](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md) 对象的属性和关系。|
@@ -62,7 +62,6 @@ ms.locfileid: "54172895"
   }
 }
 ```
-
 
 
 

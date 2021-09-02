@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 785c82f158ab0b864cb72a542edb50fc55046f5b243379291974a84d4a8dd66e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c8c08d5675648e64c2f2cf31e3bdebe84a21e00c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54236414"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801155"
 ---
 # <a name="devicecompliancescripterror-resource-type"></a>deviceComplianceScriptError 资源类型
 
@@ -47,7 +47,6 @@ ms.locfileid: "54236414"
   "message": "String"
 }
 ```
-
 
 
 

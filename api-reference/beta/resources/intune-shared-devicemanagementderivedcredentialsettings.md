@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e20ab4bdcc5c8ca10e1b61970d2fcd5101a13ddc06cbf784576c5e39cead8c8b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ed387c590b519984e0da4bb28862d8086612a612
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54206184"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58805007"
 ---
 # <a name="devicemanagementderivedcredentialsettings-resource-type"></a>deviceManagementDerivedCredentialSettings 资源类型
 
@@ -25,7 +25,7 @@ deviceManagementDerivedCredentialSettings 资源表示其内容因工作流而�
 - 设备配置设置
 - RA 策略
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 deviceManagementDerivedCredentialSettings](../api/intune-shared-devicemanagementderivedcredentialsettings-get.md)|[deviceManagementDerivedCredentialSettings](../resources/intune-shared-devicemanagementderivedcredentialsettings.md)|读取 [deviceManagementDerivedCredentialSettings 对象的属性和](../resources/intune-shared-devicemanagementderivedcredentialsettings.md) 关系。|
@@ -58,7 +58,6 @@ deviceManagementDerivedCredentialSettings 资源表示其内容因工作流而�
   "id": "String (identifier)"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 57b8c0cf50113827447c217ede2e1630b010dad5a97fb57d4aa0cc9dfd41ec8a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 388440387ab2d94224e4a0f7d55152fe654bf30e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54150169"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58800350"
 ---
 # <a name="userpfxintendedpurpose-enum-type"></a>userPfxIntendedPurpose 枚举类型
 
@@ -26,11 +26,10 @@ ms.locfileid: "54150169"
 |成员|值|说明|
 |:---|:---|:---|
 |unassigned|0|未分配角色/用法。|
-|smimeEncryption|1 |对 S/MIME 加密有效。|
-|smimeSigning|2 |对 S/MIME 签名有效。|
+|smimeEncryption|1|对 S/MIME 加密有效。|
+|smimeSigning|2|对 S/MIME 签名有效。|
 |vpn|4 |在 VPN 中有效。|
 |wifi|8 |在 WiFi 中有效。|
-
 
 
 

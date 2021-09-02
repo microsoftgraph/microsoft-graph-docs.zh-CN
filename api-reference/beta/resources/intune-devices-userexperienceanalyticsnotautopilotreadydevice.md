@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c6104a142c76439bd3ad8ba9eaa2863bf2067b5e8096f278e5c1fad59367bf32
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e85b13e540547111e2aea513f7fe595f7ece7404
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54147964"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804272"
 ---
 # <a name="userexperienceanalyticsnotautopilotreadydevice-resource-type"></a>userExperienceAnalyticsNotAutopilotReadyDevice 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54147964"
 
 用户体验分析 设备未准备好 Windows autopilot。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 userExperienceAnalyticsNotAutopilotReadyDevices](../api/intune-devices-userexperienceanalyticsnotautopilotreadydevice-list.md)|[userExperienceAnalyticsNotAutopilotReadyDevice](../resources/intune-devices-userexperienceanalyticsnotautopilotreadydevice.md) 集合|列出 [userExperienceAnalyticsNotAutopilotReadyDevice](../resources/intune-devices-userexperienceanalyticsnotautopilotreadydevice.md) 对象的属性和关系。|
@@ -39,10 +39,10 @@ ms.locfileid: "54147964"
 |serialNumber|String|intune 设备的序列号。|
 |manufacturer|String|intune 设备的制造商。|
 |model|String|intune 设备的型号。|
-|managedBy|String|intune 设备的托管者。|
-|autoPilotRegistered|布尔值|intune 设备的 autopilotRegistered。|
-|autoPilotProfileAssigned|布尔值|intune 设备的 autopilotProfileAssigned。|
-|azureAdRegistered|布尔值|intune 设备的 azureAdRegistered。|
+|managedBy|字符串|intune 设备的托管者。|
+|autoPilotRegistered|Boolean|intune 设备的 autopilotRegistered。|
+|autoPilotProfileAssigned|Boolean|intune 设备的 autopilotProfileAssigned。|
+|azureAdRegistered|Boolean|intune 设备的 azureAdRegistered。|
 |azureAdJoinType|字符串|intune 设备的 azure Ad joinType。|
 
 ## <a name="relationships"></a>关系
@@ -71,7 +71,6 @@ ms.locfileid: "54147964"
   "azureAdJoinType": "String"
 }
 ```
-
 
 
 

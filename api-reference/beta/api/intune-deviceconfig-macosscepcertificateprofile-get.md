@@ -2,15 +2,15 @@
 title: 获取 macOSScepCertificateProfile
 description: 读取 macOSScepCertificateProfile 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7f205c6a43426bc1a691bf03b1fe564cef484176
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 679dd185f9994c3db01fa2283f1b33a169182c97
+ms.sourcegitcommit: cb90b32fba5f03aaffe1de30886513083d8113db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789795"
+ms.lasthandoff: 09/01/2021
+ms.locfileid: "58850198"
 ---
 # <a name="get-macosscepcertificateprofile"></a>获取 macOSScepCertificateProfile
 
@@ -29,7 +29,7 @@ ms.locfileid: "58789795"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
+|应用|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -48,7 +48,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

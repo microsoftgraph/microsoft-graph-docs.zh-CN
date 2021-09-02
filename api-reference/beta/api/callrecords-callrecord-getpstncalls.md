@@ -5,12 +5,12 @@ author: williamlooney
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 57f29fdef863671c36f8b9e063c99a370e1173d1
-ms.sourcegitcommit: fdd69d362d1debc7b08e78269d59b531f9dfdaae
+ms.openlocfilehash: c70491399b564ef2d3daa8df33932f4728f87681
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51697191"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786906"
 ---
 # <a name="callrecord-getpstncalls"></a>callRecord： getPstnCalls
 
@@ -28,7 +28,7 @@ ms.locfileid: "51697191"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持。 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | CallRecords.Read.All |
+| 应用程序                            | CallRecord-PstnCalls.Read.All、CallRecords.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -54,7 +54,7 @@ GET /communications/callRecords/getPstnCalls
 > [!IMPORTANT]
 > **fromDateTime** 和 **toDateTime** 值不能超过 90 天的日期范围。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 |名称|说明|
 |:---|:---|
@@ -64,14 +64,16 @@ GET /communications/callRecords/getPstnCalls
 
 如果成功，此函数在响应正文中返回 响应代码和 `200 OK` [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) 条目集合。
   
-如果日期范围内包含的条目超过 1000 个，正文中还包含 一个 URL，用于查询下一页 `@odata.NextLink` 的呼叫条目。 日期范围中的最后一页没有 `@odata.NextLink` 。 有关详细信息，请参阅 [在应用中分页 Microsoft Graph 数据](/graph/paging)。
+如果日期范围内包含的条目超过 1000 个，正文中还包含 一个 URL，用于查询下一页 `@odata.NextLink` 的呼叫条目。 日期范围中的最后一页没有 `@odata.NextLink` 。 有关详细信息，请参阅分页[Microsoft Graph应用中的数据](/graph/paging)。
 
-## <a name="examples"></a>示例
+## <a name="example"></a>示例
+
+以下示例演示如何获取指定日期范围内发生的 PSTN 呼叫的记录集合。 该响应包括枚举第一个响应中的记录数，以及获取前 `"@odata.count": 1000` `@odata.NextLink` 1000 条之后的记录。 为了可读性，该响应只显示 1 条记录的集合。 假设该日期范围内呼叫超过 1000 个。
 
 ### <a name="request"></a>请求
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "callrecord_getpstncalls"
 }
 -->
@@ -84,7 +86,7 @@ GET https://graph.microsoft.com/beta/communications/callRecords/getPstnCalls(fro
 
 **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "Collection(microsoft.graph.callRecords.pstnCallLogRow)"
 }
@@ -127,5 +129,5 @@ HTTP/1.1 200 OK
 
 ## <a name="see-also"></a>另请参阅
 
-* [Microsoft Teams PSTN 使用情况报告](/microsoftteams/teams-analytics-and-reports/pstn-usage-report)
-* [Microsoft Graph 中的直接路由报告](callrecords-callrecord-getdirectroutingcalls.md)
+* [Microsoft Teams PSTN 用法报告](/microsoftteams/teams-analytics-and-reports/pstn-usage-report)。
+* [Microsoft Graph 中的直接路由报告](callrecords-callrecord-getdirectroutingcalls.md)。

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 612baf108177abbea7f8dc43b7da5bd4b6ace5a0f8a257a332418a87131b222e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 69caa93aab9f5e2dacac5494f2f7f32535d3f6ec
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54203237"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816583"
 ---
 # <a name="microsoftedgechannel-enum-type"></a>microsoftEdgeChannel 枚举类型
 
@@ -23,12 +23,11 @@ ms.locfileid: "54203237"
 用于指定应用通道的Microsoft Edge枚举。
 
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |dev|0|尚未记录|
-|beta 版|1 |尚未记录|
-|stable|2 |尚未记录|
-
+|beta|1|尚未记录|
+|stable|2|尚未记录|
 
 
 

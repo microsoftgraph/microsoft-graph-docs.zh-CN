@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 88f56550b0696383c5f20cedaf6d15b4b1d96d0d175eedac917be79cd2c1c88f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7789b2caf0cc0277bdf5a0533d7a949d253cd498
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54251435"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58821933"
 ---
 # <a name="weeklyschedule-enum-type"></a>weeklySchedule 枚举类型
 
@@ -26,16 +26,15 @@ ms.locfileid: "54251435"
 |成员|值|说明|
 |:---|:---|:---|
 |userDefined|0|用户定义，默认值，无意图。|
-|日常|1 |每天。|
-|sunday|2 |星期日。|
-|monday|3 |星期一。|
+|日常|1|每天。|
+|sunday|2|星期日。|
+|monday|3|星期一。|
 |tuesday|4 |星期二。|
 |星期三|5 |星期三。|
 |thursday|6 |星期四。|
 |星期五|7 |星期五。|
 |saturday|8 |星期六。|
 |noScheduledScan|9 |无计划扫描|
-
 
 
 

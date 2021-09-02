@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 99cccbc09ad9851897debc15abd9ef540966e4a3641e13f38c7ce5d4d35b57e4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 303f1d982b6291c71440d724ac7c1ffad8804d4e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54179814"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818384"
 ---
 # <a name="get-devicemanagementabstractcomplexsettinginstance"></a>获取 deviceManagementAbstractComplexSettingInstance
 
@@ -49,7 +49,7 @@ GET /deviceManagement/templates/{deviceManagementTemplateId}/categories/{deviceM
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -83,7 +83,6 @@ Content-Length: 294
   }
 }
 ```
-
 
 
 

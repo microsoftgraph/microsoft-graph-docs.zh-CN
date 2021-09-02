@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2b72d4ffa282e28e8bd65db1589b084cc47241770a1be1dae2110de312155314
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 31c775d857fdce4d1e416d99a33e35deae6a4606
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54244867"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58819883"
 ---
 # <a name="devicemanagementconfigurationintegersettingvalueconstantdefaulttemplate-resource-type"></a>deviceManagementConfigurationIntegerSettingValueConstantDefaultTemplate 资源类型
 
@@ -26,9 +26,9 @@ ms.locfileid: "54244867"
 继承自 [deviceManagementConfigurationIntegerSettingValueDefaultTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationintegersettingvaluedefaulttemplate.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
-|constantValue|Int32|默认常量值。 有效值 -2147483648 to 2147483647|
+|constantValue|Int32|默认常量值。 有效值 -2147483648 2147483647|
 
 ## <a name="relationships"></a>关系
 无
@@ -46,7 +46,6 @@ ms.locfileid: "54244867"
   "constantValue": 1024
 }
 ```
-
 
 
 

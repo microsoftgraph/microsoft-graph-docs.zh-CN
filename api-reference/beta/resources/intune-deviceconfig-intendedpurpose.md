@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 876dd523889d510703c01fc8982b4d5a981f74e168ac49ca7b0f119e77fa6d96
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2e5ca323b5f19fbc42ff9858d2ae2830d762c95f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54251545"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58805420"
 ---
 # <a name="intendedpurpose-enum-type"></a>intendedPurpose 枚举类型
 
@@ -25,12 +25,11 @@ PFX 导入选项。
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|unassigned|1 |Unassigned|
-|smimeEncryption|2 |SmimeEncryption|
-|smimeSigning|3 |SmimeSigning|
+|unassigned|1|Unassigned|
+|smimeEncryption|2|SmimeEncryption|
+|smimeSigning|3|SmimeSigning|
 |vpn|4 |VPN|
 |wifi|5 |Wifi|
-
 
 
 
