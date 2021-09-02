@@ -5,12 +5,12 @@ author: eddie-lee-msft
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: dc50e9ca132b295f000a707a9fc3280bef2bb6e6eb564aca0ae69020b1d2a498
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: be51a4094a0da78fa4382e568a333f492c57caf9
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57333740"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818966"
 ---
 # <a name="team-sendactivitynotification"></a>team：sendActivityNotification
 命名空间：microsoft.graph
@@ -24,7 +24,9 @@ ms.locfileid: "57333740"
 |:---|:---|
 |委派（工作或学校帐户）|TeamsActivity.Send|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|TeamsActivity.Send|
+|应用程序|TeamsActivity.Send.Group*，TeamsActivity.Send|
+
+>**注意：** 标记为 * 的权限使用 [特定于资源的同意](https://aka.ms/teams-rsc)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -63,7 +65,7 @@ POST /teams/{teamId}/sendActivityNotification
 - [chatMesage](../resources/chatmessage.md)
 - [teamsTab](../resources/teamstab.md)
 
-> **注意：** 实体 URL 必须相同或 URL 中团队的子资源。 此外[，Teams应用](/microsoftteams/platform/overview)必须安装在团队中。
+> **注意：** 实体 URL 必须相同或 URL 中团队的子资源。 此外[，Teams](/microsoftteams/platform/overview)应用必须安装在团队中。
 
 ## <a name="response"></a>响应
 
@@ -194,7 +196,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-3-notify-a-user-about-an-event-using-custom-topic"></a>示例 3：使用自定义主题通知用户事件
 
-如前面的示例中所示，你可以链接到团队的不同方面。 但是，如果要链接到不是团队的一部分或不是由 Microsoft Graph 表示的方面，或者希望自定义名称，可以将 的源设置为 并传递其自定义值。 `topic` `text` `webUrl` 将 source 设置为 时 `topic` 是必需的 `text` 。
+如前面的示例中所示，你可以链接到团队的不同方面。 但是，如果要链接到不是团队的一部分或不是由 Microsoft Graph 表示的方面，或者希望自定义名称，可以将 的源设置为 并传递其自定义 `topic` `text` 值。 `webUrl` 将 source 设置为 时 `topic` 是必需的 `text` 。
 
 #### <a name="request"></a>请求
 <!-- {

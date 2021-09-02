@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b27cf634e87f05c26783e9153ecfd03f5cde5fbf39e353d8b1eac5cea6cfcb6d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fd44717cdf1b9295747b02d63928b91e9e873754
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54200416"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803431"
 ---
 # <a name="exclusiongroupassignmenttarget-resource-type"></a>exclusionGroupAssignmentTarget 资源类型
 
@@ -28,7 +28,7 @@ ms.locfileid: "54200416"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|deviceAndAppManagementAssignmentFilterId|字符串|目标分配的筛选器 ID。 继承自 [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|
+|deviceAndAppManagementAssignmentFilterId|String|目标分配的筛选器 ID。 继承自 [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|
 |deviceAndAppManagementAssignmentFilterType|[deviceAndAppManagementAssignmentFilterType](../resources/intune-shared-deviceandappmanagementassignmentfiltertype.md)|目标分配的筛选器类型，即排除或包含。 继承自 [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)。 可取值为：`none`、`include`、`exclude`。|
 |groupId|String|赋值目标的组 ID。 继承自 [groupAssignmentTarget](../resources/intune-shared-groupassignmenttarget.md)|
 
@@ -50,7 +50,6 @@ ms.locfileid: "54200416"
   "groupId": "String"
 }
 ```
-
 
 
 

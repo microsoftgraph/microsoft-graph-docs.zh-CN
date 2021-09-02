@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f437691e27d11f67a6407b9a6c510248a2b1dc2775bdb61adc28d45179804fe6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f0213577544414985e18e5c19246db35a7d61f63
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178897"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818756"
 ---
 # <a name="managedappstatus-resource-type"></a>managedAppStatus 资源类型
 
@@ -22,8 +22,8 @@ ms.locfileid: "54178897"
 
 表示组织的应用保护和配置状态。
 
-## <a name="methods"></a>Methods
-|方法|返回类型|说明|
+## <a name="methods"></a>方法
+|方法|返回类型|Description|
 |:---|:---|:---|
 |[列出 managedAppStatuses](../api/intune-mam-managedappstatus-list.md)|[managedAppStatus](../resources/intune-mam-managedappstatus.md) 集合|列出 [managedAppStatus](../resources/intune-mam-managedappstatus.md) 对象的属性和关系。|
 |[获取 managedAppStatus](../api/intune-mam-managedappstatus-get.md)|[managedAppStatus](../resources/intune-mam-managedappstatus.md)|读取 [managedAppStatus](../resources/intune-mam-managedappstatus.md) 对象的属性和关系。|
@@ -32,7 +32,7 @@ ms.locfileid: "54178897"
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|状态报告的友好名称。|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |version|String|实体的版本。|
 
 ## <a name="relationships"></a>关系
@@ -54,7 +54,6 @@ ms.locfileid: "54178897"
   "version": "String"
 }
 ```
-
 
 
 

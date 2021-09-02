@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f2cd23274c6645b2f90a5e8243ad793e1470496d
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: bed1f382d116b34fdad12e3fd5d6782a15626054
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255643"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801274"
 ---
 # <a name="create-userexperienceanalyticsmetrichistory"></a>创建 userExperienceAnalyticsMetricHistory
 
@@ -27,9 +27,9 @@ ms.locfileid: "58255643"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -44,7 +44,7 @@ POST /deviceManagement/userExperienceAnalyticsDeviceMetricHistory
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,10 +54,10 @@ POST /deviceManagement/userExperienceAnalyticsDeviceMetricHistory
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|用户体验分析指标历史记录的唯一标识符。|
+|id|字符串|用户体验分析指标历史记录的唯一标识符。|
 |deviceId|String|用户体验分析设备 ID。|
 |metricDateTime|DateTimeOffset|用户体验分析指标日期时间。|
-|metricType|字符串|用户体验分析指标类型。|
+|metricType|String|用户体验分析指标类型。|
 
 
 
@@ -96,7 +96,6 @@ Content-Length: 257
   "metricType": "Metric Type value"
 }
 ```
-
 
 
 

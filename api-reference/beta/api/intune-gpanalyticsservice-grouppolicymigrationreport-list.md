@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 75d8ff5e8707aea58509a8c1a5c94bf661c46bfedbd2a843ff6286ec22f8ad89
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8566e8739fa7e2e058d75aa9901d022ea5a0838b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54153949"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786114"
 ---
 # <a name="list-grouppolicymigrationreports"></a>列出 groupPolicyMigrationReports
 
@@ -43,7 +43,7 @@ GET /deviceManagement/groupPolicyMigrationReports
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -88,7 +88,6 @@ Content-Length: 805
   ]
 }
 ```
-
 
 
 

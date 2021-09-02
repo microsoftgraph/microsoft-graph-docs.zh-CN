@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 17dc4cefc6b4e05514c87a0822fe4397ed85f40c6af7ccdd34302b4ce9ecb417
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ef2ebb8cd52133e3190e87d470332cc18c197cdf
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54210993"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785897"
 ---
 # <a name="delete-devicemanagementintentdevicesettingstatesummary"></a>删除 deviceManagementIntentDeviceSettingStateSummary
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/intents/{deviceManagementIntentId}/deviceSettingStateSu
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManageme
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

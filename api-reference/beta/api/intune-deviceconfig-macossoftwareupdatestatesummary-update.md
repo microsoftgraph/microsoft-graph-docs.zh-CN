@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0a42aaf0deb6a8499322ae7ee3e2337d3b390065aca06b371118e9a6ee274144
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 82dcae148099204b599e31e05e583dd061f3d422
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54201570"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804188"
 ---
 # <a name="update-macossoftwareupdatestatesummary"></a>更新 macOSSoftwareUpdateStateSummary
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/macOSSoftwareUpdateAccountSummaries/{macOSSoftwareUpdate
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,9 +54,9 @@ PATCH /deviceManagement/macOSSoftwareUpdateAccountSummaries/{macOSSoftwareUpdate
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|displayName|字符串|软件更新的可读名称|
+|displayName|String|软件更新的可读名称|
 |productKey|String|软件更新的产品密钥。|
-|updateCategory|[macOSSoftwareUpdateCategory](../resources/intune-deviceconfig-macossoftwareupdatecategory.md)|软件更新类别。 可取值为：`critical`、`configurationDataFile`、`firmware`、`other`。|
+|updateCategory|[macOSSoftwareUpdateCategory](../resources/intune-deviceconfig-macossoftwareupdatecategory.md)|软件更新类别。 可能的值是：`critical`、`configurationDataFile`、`firmware`、`other`。|
 |updateVersion|字符串|软件更新的版本|
 |state|[macOSSoftwareUpdateState](../resources/intune-deviceconfig-macossoftwareupdatestate.md)|软件更新的状态。 可能的值是 `success` `downloading` `downloaded` ：、、、、、、、、、、 `installing` `idle` `available` `scheduled` `downloadFailed` `downloadInsufficientSpace` `downloadInsufficientPower` `downloadInsufficientNetwork` `installInsufficientSpace` `installInsufficientPower` `installFailed` `commandFailed` 。|
 |lastUpdatedDateTime|DateTimeOffset|上次更新此设备和产品密钥的报告的日期时间。|
@@ -104,7 +104,6 @@ Content-Length: 380
   "lastUpdatedDateTime": "2017-01-01T00:00:56.8321556-08:00"
 }
 ```
-
 
 
 

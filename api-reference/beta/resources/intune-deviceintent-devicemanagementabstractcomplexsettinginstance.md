@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bdfa70c1d96c6ab1f6eb175d9e955dac1ce1fd8dcbe88704913585ee66bc768c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 64e869f4cbb369a5446d255f4659fb4a3a620130
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54219911"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797519"
 ---
 # <a name="devicemanagementabstractcomplexsettinginstance-resource-type"></a>deviceManagementAbstractComplexSettingInstance 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "54219911"
 
 继承自 [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceManagementAbstractComplexSettingInstances](../api/intune-deviceintent-devicemanagementabstractcomplexsettinginstance-list.md)|[deviceManagementAbstractComplexSettingInstance](../resources/intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md) 集合|列出 [deviceManagementAbstractComplexSettingInstance 对象的属性和](../resources/intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md) 关系。|
@@ -39,8 +39,8 @@ ms.locfileid: "54219911"
 |:---|:---|:---|
 |id|String|设置实例 ID 继承自 [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
 |definitionId|String|此实例的设置定义的 ID 继承自 [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
-|valueJson|字符串|值的 JSON 表示形式 继承自 [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
-|implementationId|字符串|此复杂设置所选实现的定义 ID|
+|valueJson|String|值的 JSON 表示形式 继承自 [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
+|implementationId|String|此复杂设置所选实现的定义 ID|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -64,7 +64,6 @@ ms.locfileid: "54219911"
   "implementationId": "String"
 }
 ```
-
 
 
 

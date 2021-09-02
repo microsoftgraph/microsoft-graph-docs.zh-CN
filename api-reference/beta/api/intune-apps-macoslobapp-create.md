@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5f0c4316ebe0af5dc0c68e2376c082a61f93e9d7e33025b59881299366c94612
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bb68fee325bc2bf61c2bfedf2e5ba6e475f551b5
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54167063"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801029"
 ---
 # <a name="create-macoslobapp"></a>创建 macOSLobApp
 
@@ -43,7 +43,7 @@ POST /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,7 +54,7 @@ POST /deviceAppManagement/mobileApps
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|displayName|字符串|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|displayName|String|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |description|String|应用的说明。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publisher|String|应用的发布者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|要显示在应用详细信息中并用于图标上传的大图标。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
@@ -69,7 +69,7 @@ POST /deviceAppManagement/mobileApps
 |uploadState|Int32|上载状态。 可能的值是：0 - `Not Ready` 、1 - `Ready` 、2 - `Processing` 。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否将应用分配给至少一个组的值。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|roleScopeTagIds|String collection|此移动应用的范围标记 ID 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|roleScopeTagIds|字符串集合|此移动应用的范围标记 ID 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|子应用具有的依赖项总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersedingAppCount|Int32|此应用直接或间接取代的应用总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersededAppCount|Int32|此应用直接或间接被取代的应用总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
@@ -83,8 +83,8 @@ POST /deviceAppManagement/mobileApps
 |childApps|[macOSLobChildApp](../resources/intune-apps-macoslobchildapp.md) 集合|此捆绑包中的应用列表|
 |identityVersion|String|标识版本。|
 |md5HashChunkSize|Int32|MD5 哈希的区块大小|
-|md5Hash|String collection|MD5 哈希代码|
-|ignoreVersionDetection|Boolean|控制应用的版本是否将用于检测安装在设备上的应用的布尔值。 对于使用自我更新功能的应用 (macOS 业务) LoB，请设置为 true。|
+|md5Hash|字符串集合|MD5 哈希代码|
+|ignoreVersionDetection|Boolean|控制应用的版本是否将用于检测安装在设备上的应用的布尔值。 对于使用自我更新功能 (macOS (LoB) 设置为 true。|
 |installAsManaged|布尔值|用于控制应用是否将安装为托管应用的布尔值 (macOS 11.0 和其他 PKG) 。|
 
 
@@ -99,7 +99,7 @@ POST /deviceAppManagement/mobileApps
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1722
+Content-length: 1742
 
 {
   "@odata.type": "#microsoft.graph.macOSLobApp",
@@ -141,7 +141,8 @@ Content-length: 1722
     "v10_13": true,
     "v10_14": true,
     "v10_15": true,
-    "v11_0": true
+    "v11_0": true,
+    "v12_0": true
   },
   "buildNumber": "Build Number value",
   "versionNumber": "Version Number value",
@@ -168,7 +169,7 @@ Content-length: 1722
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1894
+Content-Length: 1914
 
 {
   "@odata.type": "#microsoft.graph.macOSLobApp",
@@ -213,7 +214,8 @@ Content-Length: 1894
     "v10_13": true,
     "v10_14": true,
     "v10_15": true,
-    "v11_0": true
+    "v11_0": true,
+    "v12_0": true
   },
   "buildNumber": "Build Number value",
   "versionNumber": "Version Number value",
@@ -234,7 +236,6 @@ Content-Length: 1894
   "installAsManaged": true
 }
 ```
-
 
 
 

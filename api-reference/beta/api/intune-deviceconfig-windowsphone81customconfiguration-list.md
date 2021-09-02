@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7c30289f9f943dff88b74a1be55cf05a833dedc43c3f015a3e9847d505d5be95
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f72024d9dbf1cd3c9b8ccad6b3430ea9d6c37e16
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54162198"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58807123"
 ---
 # <a name="list-windowsphone81customconfigurations"></a>列出 windowsPhone81CustomConfigurations
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -117,7 +117,6 @@ Content-Length: 1717
   ]
 }
 ```
-
 
 
 

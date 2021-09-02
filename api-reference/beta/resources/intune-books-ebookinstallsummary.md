@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c391eb6269f87b50e4c7dac567a9c3ca9ba6a6b8e5806c48017a63089c4b45a6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 51d3852f2ff4d82d0d62c123607c4e3709de66c8
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54243096"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804027"
 ---
 # <a name="ebookinstallsummary-resource-type"></a>eBookInstallSummary 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54243096"
 
 包含某个设备的书籍安装摘要的属性。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 eBookInstallSummary](../api/intune-books-ebookinstallsummary-get.md)|[eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md)|读取 [eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md) 对象的属性和关系。|
@@ -62,7 +62,6 @@ ms.locfileid: "54243096"
   "notInstalledUserCount": 1024
 }
 ```
-
 
 
 

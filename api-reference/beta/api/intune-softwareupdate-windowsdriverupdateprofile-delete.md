@@ -1,18 +1,18 @@
 ---
-title: 删除 windowsPhone81ImportedPFXCertificateProfile
-description: 删除 windowsPhone81ImportedPFXCertificateProfile。
+title: 删除 windowsDriverUpdateProfile
+description: 删除 windowsDriverUpdateProfile。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 15cace63f30154fdb5682d06556c30aea7c1cb95
+ms.openlocfilehash: 9b35e4f3fdd951a5fcd06b2d44976dfe026df5db
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786493"
+ms.locfileid: "58801371"
 ---
-# <a name="delete-windowsphone81importedpfxcertificateprofile"></a>删除 windowsPhone81ImportedPFXCertificateProfile
+# <a name="delete-windowsdriverupdateprofile"></a>删除 windowsDriverUpdateProfile
 
 命名空间：microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "58786493"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-删除 [windowsPhone81ImportedPFXCertificateProfile](../resources/intune-deviceconfig-windowsphone81importedpfxcertificateprofile.md)。
+删除 [windowsDriverUpdateProfile](../resources/intune-softwareupdate-windowsdriverupdateprofile.md)。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -37,9 +37,7 @@ ms.locfileid: "58786493"
 }
 -->
 ``` http
-DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
-DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
-DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
+DELETE /deviceManagement/windowsDriverUpdateProfiles/{windowsDriverUpdateProfileId}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -59,7 +57,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
+DELETE https://graph.microsoft.com/beta/deviceManagement/windowsDriverUpdateProfiles/{windowsDriverUpdateProfileId}
 ```
 
 ### <a name="response"></a>响应

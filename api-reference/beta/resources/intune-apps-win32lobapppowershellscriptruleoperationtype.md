@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6e62229d1d24870926976fb4b196c7167588dfff6965271d34987261ddc34db8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9f012bfa5e30ab749d6779bd1df4bc0ebec804f9
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54153277"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816576"
 ---
 # <a name="win32lobapppowershellscriptruleoperationtype-enum-type"></a>win32LobAppPowerShellScriptRuleOperationType 枚举类型
 
@@ -23,16 +23,15 @@ ms.locfileid: "54153277"
 包含所有受支持的 Powershell 脚本输出检测类型。
 
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |notConfigured|0|未配置。|
-|string|1 |输出数据类型字符串。|
-|dateTime|2 |输出数据类型是日期时间。|
-|integer|3 |输出数据类型整数。|
+|string|1|输出数据类型字符串。|
+|dateTime|2|输出数据类型是日期时间。|
+|integer|3|输出数据类型是整数。|
 |float|4 |输出数据类型浮点。|
 |version|5 |输出数据类型版本。|
 |boolean|6 |输出数据类型布尔值。|
-
 
 
 

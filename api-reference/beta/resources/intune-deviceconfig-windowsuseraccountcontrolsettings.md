@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: dcbc9fb708aeec862bc9de3b070ffd4ca527171f90f9740e1356e2a1ef615035
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 369a67136b4ff92d01af7ebd06e8f06b74825ff2
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54206478"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803796"
 ---
 # <a name="windowsuseraccountcontrolsettings-enum-type"></a>windowsUserAccountControlSettings 枚举类型
 
@@ -26,11 +26,10 @@ ms.locfileid: "54206478"
 |成员|值|说明|
 |:---|:---|:---|
 |userDefined|0|用户定义，默认值，无意图。|
-|alwaysNotify|1 |始终通知。|
-|notifyOnAppChanges|2 |通知应用更改。|
-|notifyOnAppChangesWithoutDimming|3 |通知应用更改时，桌面不会变暗。|
+|alwaysNotify|1|始终通知。|
+|notifyOnAppChanges|2|通知应用更改。|
+|notifyOnAppChangesWithoutDimming|3|通知应用更改时，桌面不会变暗。|
 |neverNotify|4 |从不通知。|
-
 
 
 

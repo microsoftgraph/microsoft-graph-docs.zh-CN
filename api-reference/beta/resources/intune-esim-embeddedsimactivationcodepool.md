@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9358f29c20db8614c396850913c21711ffa16e90520999573cef46faac874630
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9579f4af46ca2b35fde91888ced9973590634095
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54244678"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801071"
 ---
 # <a name="embeddedsimactivationcodepool-resource-type"></a>embeddedSIMActivationCodePool 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54244678"
 
 池表示一组嵌入式 SIM 卡激活代码。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 embeddedSIMActivationCodePools](../api/intune-esim-embeddedsimactivationcodepool-list.md)|[embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md) 集合|列出 [embeddedSIMActivationCodePool 对象的属性和](../resources/intune-esim-embeddedsimactivationcodepool.md) 关系。|
@@ -36,7 +36,7 @@ ms.locfileid: "54244678"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|嵌入式 SIM 卡激活代码池的唯一标识符。 创建时分配的系统生成值。|
-|displayName|字符串|管理员定义的嵌入式 SIM 卡激活代码池的名称。|
+|displayName|String|管理员定义的嵌入式 SIM 卡激活代码池的名称。|
 |createdDateTime|DateTimeOffset|嵌入式 SIM 卡激活代码池的创建时间。 生成的服务器端。|
 |modifiedDateTime|DateTimeOffset|上次修改嵌入式 SIM 卡激活代码池的时间。 更新的服务器端。|
 |activationCodes|[embeddedSIMActivationCode](../resources/intune-esim-embeddedsimactivationcode.md) 集合|属于此池的激活代码。 此导航属性用于将激活代码张贴到 Intune，但不能用于从 Intune 读取激活代码。|
@@ -74,7 +74,6 @@ ms.locfileid: "54244678"
   "activationCodeCount": 1024
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ed0f456d5ce6e4d157a4300237498146a226a78407ea849fdc58fc86b639f35a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1aa51d52c3c0d4051e1216232f4ce36aa7ba7cda
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54234692"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803445"
 ---
 # <a name="compliancestatus-enum-type"></a>complianceStatus 枚举类型
 
@@ -26,14 +26,13 @@ ms.locfileid: "54234692"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|尚未记录|
-|notApplicable|1 |尚未记录|
-|compliant|2 |尚未记录|
-|修正|3 |尚未记录|
+|notApplicable|1|尚未记录|
+|compliant|2|尚未记录|
+|修正|3|尚未记录|
 |nonCompliant|4 |尚未记录|
 |error|5 |尚未记录|
 |conflict|6 |尚未记录|
 |notAssigned|7 |尚未记录|
-
 
 
 

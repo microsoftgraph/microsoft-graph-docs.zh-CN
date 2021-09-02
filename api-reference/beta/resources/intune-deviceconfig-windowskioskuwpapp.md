@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 98eb1dff676499dc589b0d707a2d81590c2e98e885598d867ef1db3badac3126
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0f33a7800e055ec885cf03a467b1216b310fa6e7
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54253045"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797533"
 ---
 # <a name="windowskioskuwpapp-resource-type"></a>windowsKioskUWPApp 资源类型
 
@@ -30,11 +30,11 @@ ms.locfileid: "54253045"
 |:---|:---|:---|
 |startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|开始布局的应用磁贴大小 继承自 [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)。 可取值为：`hidden`、`small`、`medium`、`wide`、`large`。|
 |name|String|表示应用的友好名称 继承自 [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|
-|appType|[windowsKioskAppType](../resources/intune-deviceconfig-windowskioskapptype.md)|应用类型 继承自 [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)。 可取值为：`unknown`、`store`、`desktop`、`aumId`。|
-|autoLaunch|布尔值|允许应用在多应用展台模式下自动启动 继承自 [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|
+|appType|[windowsKioskAppType](../resources/intune-deviceconfig-windowskioskapptype.md)|应用类型 继承自 [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)。 可能的值是：`unknown`、`store`、`desktop`、`aumId`。|
+|autoLaunch|Boolean|允许应用在多应用展台模式下自动启动 继承自 [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|
 |appUserModelId|String|这是在展台模式下唯一 (AUMID) 可供启动使用的应用程序用户模型 ID|
 |appId|String|这将引用一个 Intune 应用，该应用将面向与展台配置相同的分配|
-|containedAppId|String|这将引用 Intune 应用中包含的应用|
+|containedAppId|字符串|这将引用 Intune 应用中包含的应用|
 
 ## <a name="relationships"></a>关系
 无
@@ -58,7 +58,6 @@ ms.locfileid: "54253045"
   "containedAppId": "String"
 }
 ```
-
 
 
 

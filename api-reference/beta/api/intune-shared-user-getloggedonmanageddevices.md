@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2d2bb70e2f4c9e5549218f3295e459b9a0d1eade9feb54f7cac06b1f7c9b987c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cba2586b482aca624e0796d7e2a69d07fab6962c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54153788"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58821751"
 ---
 # <a name="getloggedonmanageddevices-function"></a>getLoggedOnManagedDevices 函数
 
@@ -47,7 +47,7 @@ GET /users/{usersId}/getLoggedOnManagedDevices
 
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -234,7 +234,6 @@ Content-Length: 7485
   ]
 }
 ```
-
 
 
 

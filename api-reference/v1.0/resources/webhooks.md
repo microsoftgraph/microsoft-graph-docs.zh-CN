@@ -5,12 +5,12 @@ localization_priority: Priority
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: conceptualPageType
-ms.openlocfilehash: 9e9342e8e3ab02cff2704d364a7065cf8b5ba0092b92bc96832cf7e97bacdead
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e894f6635bf3828edfa47f2cef4e1cbf263407bc
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196493"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785673"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>使用 Microsoft Graph API 获取更改通知
 
@@ -35,7 +35,7 @@ Microsoft Graph REST API 使用 Webhook 机制将更改通知传递到客户端�
 | SharePoint [网站][]下的[列表][] | _列表_ 内的内容更改： <br>`/sites/{id}/lists/{id}` | 否 |
 | 安全[警报][] | 对特定警报更改：<br>`/security/alerts/{id}` <br>对已筛选的警报更改：<br> `/security/alerts/?$filter`| 否 |
 | Teams [callRecord][] | 更改 _所有_ 呼叫记录： `/communications/callRecords` | 否 |
-| Teams [chatmessage][] | 对所有团队中所有频道聊天消息更改：<br>`/teams/getAllMessages` <br>对特定频道中的聊天消息更改：<br>`/teams/{id}/channels/{id}/messages`<br>对所有聊天的消息更改：<br>`/chats/getAllMessages` <br>对特定聊天中的消息更改：<br>`/chats/{id}/messages` | 是 |
+| Teams [chatMessage][] | 对所有团队中所有频道聊天消息更改：<br>`/teams/getAllMessages` <br>对特定频道中的聊天消息更改：<br>`/teams/{id}/channels/{id}/messages`<br>对所有聊天的消息更改：<br>`/chats/getAllMessages` <br>对特定聊天中的消息更改：<br>`/chats/{id}/messages` | 是 |
 
 > **注意**：以 `/users/{id}` 开头的任何资源路径还可接受 `/me` 以引用已登录的用户。
 

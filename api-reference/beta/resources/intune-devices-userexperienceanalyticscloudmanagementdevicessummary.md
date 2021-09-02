@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d84f0e524f88025caf6ef116b08cec5d221dfac0e904e2a9c12eb85cd15dc3cd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ed76d8c2c4c26c6ba010bd21829a70f014538937
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54145304"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803761"
 ---
 # <a name="userexperienceanalyticscloudmanagementdevicessummary-resource-type"></a>userExperienceAnalyticsCloudManagementDevicesSummary 资源类型
 
@@ -47,7 +47,6 @@ ms.locfileid: "54145304"
   "tenantAttachDeviceCount": 1024
 }
 ```
-
 
 
 

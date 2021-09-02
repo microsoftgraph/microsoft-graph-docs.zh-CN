@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d36cabacda74f33a5057257b5890f9496a9f64e28d2e36e808bbac8c17d9c24d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e106d3bdc6e5309e9d28897f4f4c749e034fe610
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54145227"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58800012"
 ---
 # <a name="managedappdataencryptiontype-enum-type"></a>managedAppDataEncryptionType 枚举类型
 
@@ -26,10 +26,9 @@ ms.locfileid: "54145227"
 |成员|值|说明|
 |:---|:---|:---|
 |useDeviceSettings|0|应用数据根据设备的默认设置进行加密。|
-|afterDeviceRestart|1 |应用数据在设备重启时加密。|
-|whenDeviceLockedExceptOpenFiles|2 |与此策略关联的应用数据在设备锁定时加密，打开的文件的数据除外|
-|whenDeviceLocked|3 |与此策略关联的应用数据在设备锁定时加密|
-
+|afterDeviceRestart|1|应用数据在设备重启时加密。|
+|whenDeviceLockedExceptOpenFiles|2|与此策略关联的应用数据在设备锁定时加密，打开的文件的数据除外|
+|whenDeviceLocked|3|与此策略关联的应用数据在设备锁定时加密|
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d1a940b2ce5f4f0d756c57722e74df9fb410f633425c8739dc8983d5deba64ea
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5c3633dc2927dcb48c5dedc26f74fc9f1efa0dce
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54170991"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58788000"
 ---
 # <a name="update-compliancemanagementpartner"></a>更新 complianceManagementPartner
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/complianceManagementPartners/{complianceManagementPartne
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -56,11 +56,11 @@ PATCH /deviceManagement/complianceManagementPartners/{complianceManagementPartne
 |id|String|实体的 ID|
 |lastHeartbeatDateTime|DateTimeOffset|管理员载入合规性管理合作伙伴后最后检测信号的时间戳|
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|此租户的合作伙伴状态。 可取值为：`unknown`、`unavailable`、`enabled`、`terminated`、`rejected`、`unresponsive`。|
-|displayName|字符串|合作伙伴显示名称|
-|macOsOnboarded|布尔值|为 Mac 设备载入的合作伙伴。|
-|windowsOnboarded|布尔值|合作伙伴已载入Windows设备。|
-|androidOnboarded|布尔值|针对 Android 设备加入的合作伙伴。|
-|iosOnboarded|布尔值|为 ios 设备载入的合作伙伴。|
+|displayName|String|合作伙伴显示名称|
+|macOsOnboarded|Boolean|为 Mac 设备载入的合作伙伴。|
+|windowsOnboarded|Boolean|合作伙伴已载入Windows设备。|
+|androidOnboarded|Boolean|针对 Android 设备加入的合作伙伴。|
+|iosOnboarded|Boolean|为 ios 设备载入的合作伙伴。|
 |macOsEnrollmentAssignments|[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md) 集合|通过合作伙伴注册 Mac 设备的用户组。|
 |windowsEnrollmentAssignments|[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md) 集合|通过合作伙伴注册Windows的用户组。|
 |androidEnrollmentAssignments|[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md) 集合|通过合作伙伴注册 Android 设备的用户组。|
@@ -199,7 +199,6 @@ Content-Length: 2265
   ]
 }
 ```
-
 
 
 

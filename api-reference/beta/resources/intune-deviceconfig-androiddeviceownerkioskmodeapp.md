@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: add6b78cab85abc315efe41d5bd885298f0015aed1630036c061417feeeae19b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9e4012bff268811e264561076348d21a15cc98a0
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54245126"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820504"
 ---
 # <a name="androiddeviceownerkioskmodeapp-resource-type"></a>androidDeviceOwnerKioskModeApp 资源类型
 
@@ -26,9 +26,9 @@ Android 设备所有者托管主屏幕上的应用程序
 继承自 [androidDeviceOwnerKioskModeFolderItem](../resources/intune-deviceconfig-androiddeviceownerkioskmodefolderitem.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
-|package|字符串|应用程序的程序包名称|
+|package|String|应用程序的程序包名称|
 |className|String|应用程序的类名称|
 
 ## <a name="relationships"></a>关系
@@ -48,7 +48,6 @@ Android 设备所有者托管主屏幕上的应用程序
   "className": "String"
 }
 ```
-
 
 
 

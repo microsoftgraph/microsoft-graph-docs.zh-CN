@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 915128e19ab9583dedcc66e61a37378713d5f12abc08f95151bb05a7b7bff04a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c093dd3987a16ec0cb69a861c2614a55caf4e9f7
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54145262"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58817353"
 ---
 # <a name="grouppolicymigrationreport-resource-type"></a>groupPolicyMigrationReport 资源类型
 
@@ -22,8 +22,8 @@ ms.locfileid: "54145262"
 
 组策略迁移报告。
 
-## <a name="methods"></a>Methods
-|方法|返回类型|说明|
+## <a name="methods"></a>方法
+|方法|返回类型|Description|
 |:---|:---|:---|
 |[列出 groupPolicyMigrationReports](../api/intune-gpanalyticsservice-grouppolicymigrationreport-list.md)|[groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md) 集合|列出 [groupPolicyMigrationReport 对象的属性和](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md) 关系。|
 |[获取 groupPolicyMigrationReport](../api/intune-gpanalyticsservice-grouppolicymigrationreport-get.md)|[groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md)|读取 [groupPolicyMigrationReport 对象的属性和](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md) 关系。|
@@ -35,22 +35,22 @@ ms.locfileid: "54145262"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|尚未记录|
+|id|字符串|尚未记录|
 |groupPolicyObjectId|Guid|来自 GPO Xml 内容的组策略对象 GUID|
-|displayName|字符串|GPO Xml 内容中的组策略对象的名称|
+|displayName|String|GPO Xml 内容中的组策略对象的名称|
 |ouDistinguishedName|String|OU 的可分辨名称。|
 |createdDateTime|DateTimeOffset|创建 GroupPolicyMigrationReport 的日期和时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改 GroupPolicyMigrationReport 的日期和时间。|
 |groupPolicyCreatedDateTime|DateTimeOffset|创建 GroupPolicyMigrationReport 的日期和时间。|
 |groupPolicyLastModifiedDateTime|DateTimeOffset|上次修改 GroupPolicyMigrationReport 的日期和时间。|
 |migrationReadiness|[groupPolicyMigrationReadiness](../resources/intune-gpanalyticsservice-grouppolicymigrationreadiness.md)|关联的组策略对象文件的 Intune 覆盖范围。 可取值为：`none`、`partial`、`complete`、`error`、`notApplicable`。|
-|targetedInActiveDirectory|布尔值|GPO Xml 内容中的 AD 中的目标属性|
+|targetedInActiveDirectory|Boolean|GPO Xml 内容中的 AD 中的目标属性|
 |totalSettingsCount|Int32|来自 GPO 文件的组策略设置总数。|
 |supportedSettingsCount|Int32|Intune 支持的组设置的数量。|
 |supportedSettingsPercent|Int32|Intune 支持的组策略设置百分比。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|Description|
 |:---|:---|:---|
 |groupPolicySettingMappings|[groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md) 集合|到 MDM/Intune 映射的组策略设置列表。|
 |unsupportedGroupPolicyExtensions|[unsupportedGroupPolicyExtension](../resources/intune-gpanalyticsservice-unsupportedgrouppolicyextension.md) 集合|组策略对象中不受支持组策略扩展的列表。|
@@ -81,7 +81,6 @@ ms.locfileid: "54145262"
   "supportedSettingsPercent": 1024
 }
 ```
-
 
 
 

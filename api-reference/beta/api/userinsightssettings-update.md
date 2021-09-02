@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: a422a106d1371e8e39fdfa314658b8e77d0f5a9a
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 0cdefdad4a9ec25eeb1134568717c79efc0f4b18
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53210657"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58815951"
 ---
 # <a name="update-userinsightssettings"></a>更新 userInsightsSettings
 
@@ -18,7 +18,7 @@ ms.locfileid: "53210657"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新用户 [itemInsights](../resources/iteminsights.md) 和 [会议时间见解](https://support.microsoft.com/en-us/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1) 的隐私设置。
+更新用户 [itemInsights](../resources/iteminsights.md) 和 [会议时间见解](https://support.microsoft.com/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1) 的隐私设置。
 
 ## <a name="permissions"></a>权限
 
@@ -40,7 +40,7 @@ PATCH /users/{userId}/settings/itemInsights
 
 >**注意：** 具有 或 的请求仅可供用户或具有 `userId` `userPrincipalName` User.ReadWrite.All 权限的用户访问。 若要了解详细信息，请参阅[权限](/graph/permissions-reference)。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 标头       | 值|
 |:-----------|:------|
@@ -53,7 +53,7 @@ PATCH /users/{userId}/settings/itemInsights
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|isEnabled|Boolean| `true` 如果用户的 **itemInsights** 和会议时间见解已启用; `false` 如果禁用了 **用户的 itemInsights** 和会议小时数见解。 默认值为“`true`”。 可选。|
+|isEnabled|Boolean| `true` 如果用户的 **itemInsights** 和会议时间见解已启用; `false` 如果禁用了 **用户的 itemInsights** 和会议小时数见解。 默认值为 `true`。 可选。|
 
 ## <a name="response"></a>响应
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: bdc4c75b2f1da1c616ae2d28409837e73b405a8df31c5e7a64196c86d1c97df7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cc224c1c2d9bb305fc6212e761975be9862b1947
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54241756"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803530"
 ---
 # <a name="noneapauthenticationmethodforpeap-enum-type"></a>nonEapAuthenticationMethodForPeap 枚举类型
 
@@ -26,8 +26,7 @@ ms.locfileid: "54241756"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|无。|
-|microsoftChapVersionTwo|1 |Microsoft CHAP 版本 2 (MS-CHAP v2) 。|
-
+|microsoftChapVersionTwo|1|Microsoft CHAP 版本 2 (MS-CHAP v2) 。|
 
 
 

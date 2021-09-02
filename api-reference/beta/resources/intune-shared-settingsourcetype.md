@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 01d735c093dfba9d99872872f421d348154efdc6ce6ba481b68db1b39439a04b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d421ca2bdfa5da47b68f27f0fd3303645696c157
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54158115"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783811"
 ---
 # <a name="settingsourcetype-enum-type"></a>settingSourceType 枚举类型
 
@@ -26,8 +26,7 @@ ms.locfileid: "54158115"
 |成员|值|说明|
 |:---|:---|:---|
 |deviceConfiguration|0|尚未记录|
-|deviceIntent|1 |尚未记录|
-
+|deviceIntent|1|尚未记录|
 
 
 

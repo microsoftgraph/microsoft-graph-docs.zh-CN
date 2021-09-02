@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 074ed0146848762d0fb311ee36f8c606a6a22d2eb24bafa8a842349353768e39
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: edc40310a1f81c31df721459dfd9f9b5617ea430
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54191653"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801330"
 ---
 # <a name="list-windowshealthmonitoringconfigurations"></a>列出 windowsHealthMonitoringConfigurations
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -110,7 +110,6 @@ Content-Length: 1589
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6335c98549a76fbf0baf13613738251770edeca9
-ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
+ms.openlocfilehash: c79aefd7178ceeddfc1e5f3c062f011a78e11339
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53316915"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789880"
 ---
 # <a name="chat-sendactivitynotification"></a>chat： sendActivityNotification
 命名空间：microsoft.graph
@@ -26,7 +26,9 @@ ms.locfileid: "53316915"
 |:---|:---|
 |委派（工作或学校帐户）|TeamsActivity.Send|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|TeamsActivity.Send|
+|应用程序|TeamsActivity.Send.Chat*，TeamsActivity.Send|
+
+>**注意：** 标记为 * 的权限使用 [特定于资源的同意](https://aka.ms/teams-rsc)。
 
 ## <a name="http-request"></a>HTTP 请求
 

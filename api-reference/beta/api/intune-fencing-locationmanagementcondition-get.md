@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 911ca94dbf162017a5cf4a7bfb59926657666d884f45065925f2bc8a3e5757db
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: afa506d2ab5e2998c512d301a9f9da76bdb78b9b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54179653"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797694"
 ---
 # <a name="get-locationmanagementcondition"></a>获取 locationManagementCondition
 
@@ -47,7 +47,7 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -87,7 +87,6 @@ Content-Length: 476
   }
 }
 ```
-
 
 
 

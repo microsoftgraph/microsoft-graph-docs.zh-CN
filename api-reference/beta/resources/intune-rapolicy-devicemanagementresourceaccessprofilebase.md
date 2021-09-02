@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d29e101ac696718f9b8a53f508d4f0fa4dd06c41ebf2441649a2b161f2d7c0eb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9e6a182af3aff9851095d689ebc41923534a143e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54182677"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806577"
 ---
 # <a name="devicemanagementresourceaccessprofilebase-resource-type"></a>deviceManagementResourceAccessProfileBase 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54182677"
 
 资源访问的基本配置文件类型
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceManagementResourceAccessProfileBases](../api/intune-rapolicy-devicemanagementresourceaccessprofilebase-list.md)|[deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md) 集合|列出 [deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md) 对象的属性和关系。|
@@ -33,13 +33,13 @@ ms.locfileid: "54182677"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|配置文件标识符|
+|id|String|配置文件标识符|
 |version|Int32|配置文件的版本|
 |displayName|String|配置文件显示名称|
 |description|String|配置文件说明|
 |creationDateTime|DateTimeOffset|DateTime 配置文件已创建|
 |lastModifiedDateTime|DateTimeOffset|上次修改日期时间配置文件|
-|roleScopeTagIds|String collection|范围标记|
+|roleScopeTagIds|字符串集合|范围标记|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -68,7 +68,6 @@ ms.locfileid: "54182677"
   ]
 }
 ```
-
 
 
 

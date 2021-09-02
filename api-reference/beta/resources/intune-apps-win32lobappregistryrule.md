@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2a148c8437e4c6876a5da330163d4099663621d736eac4300633fa1bb8cb7e19
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a7bf08b8a22ee8ce94de69bc57a9afb587b9bcfc
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54190687"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783986"
 ---
 # <a name="win32lobappregistryrule-resource-type"></a>win32LobAppRegistryRule 资源类型
 
@@ -29,7 +29,7 @@ ms.locfileid: "54190687"
 |属性|类型|说明|
 |:---|:---|:---|
 |ruleType|[win32LobAppRuleType](../resources/intune-apps-win32lobappruletype.md)|指示规则用途的规则类型。 继承自 [win32LobAppRule](../resources/intune-apps-win32lobapprule.md)。 可取值为：`detection`、`requirement`。|
-|check32BitOn64System|布尔值|一个值，指示是否在 64 位系统上搜索 32 位注册表。|
+|check32BitOn64System|Boolean|一个值，指示是否在 64 位系统上搜索 32 位注册表。|
 |keyPath|String|包含要检测的值的注册表项的完整路径。|
 |valueName|String|要检测的注册表值的名称。|
 |operationType|[win32LobAppRegistryRuleOperationType](../resources/intune-apps-win32lobappregistryruleoperationtype.md)|注册表操作类型。 可取值为：`notConfigured`、`exists`、`doesNotExist`、`string`、`integer`、`version`。|
@@ -58,7 +58,6 @@ ms.locfileid: "54190687"
   "comparisonValue": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 058f3e1a4e6a27ad0313c9b220c49c1c8b04f2ed31ea8d3a68ce5b2ca377fda2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: be05578ab8ded4209527fc6378ef179fd8aaf428
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54253598"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783909"
 ---
 # <a name="deptokentype-enum-type"></a>depTokenType 枚举类型
 
@@ -26,9 +26,8 @@ ms.locfileid: "54253598"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|令牌类型为 None|
-|dep|1 |令牌类型为 Dep。|
-|appleSchoolManager|2 |令牌类型为 Apple School Manager|
-
+|dep|1|令牌类型为 Dep。|
+|appleSchoolManager|2|令牌类型为 Apple School Manager|
 
 
 

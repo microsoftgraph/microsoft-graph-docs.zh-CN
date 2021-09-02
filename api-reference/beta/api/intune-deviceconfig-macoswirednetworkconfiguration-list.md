@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f0221b7e14e786d6be9b96b75c6593555f305bb959dd6c5f9a27a40188d2a3e1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c6f5f5f0166b2f7bc7726f60f8f08dacae7ec804
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54137470"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787475"
 ---
 # <a name="list-macoswirednetworkconfigurations"></a>列出 macOSWiredNetworkConfigurations
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -117,7 +117,6 @@ Content-Length: 1872
   ]
 }
 ```
-
 
 
 

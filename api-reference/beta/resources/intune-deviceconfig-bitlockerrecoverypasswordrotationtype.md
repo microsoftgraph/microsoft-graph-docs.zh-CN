@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 098d845772ff7e6fe232702a2640225aa1b9f716bd1f317d2d66b730102c9afe
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6b46bad7aef97180d00dd338bb06a63b53dac1dd
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54232830"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58782971"
 ---
 # <a name="bitlockerrecoverypasswordrotationtype-enum-type"></a>bitLockerRecoveryPasswordRotationType 枚举类型
 
@@ -26,10 +26,9 @@ BitLocker 恢复密码轮换类型
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置|
-|disabled|1 |恢复密码轮换关闭|
-|enabledForAzureAd|2 |已加入 Azure AD 的设备恢复密码轮换|
-|enabledForAzureAdAndHybrid|3 |Azure AD 加入和混合加入设备的恢复密码轮换|
-
+|disabled|1|恢复密码轮换关闭|
+|enabledForAzureAd|2|已加入 Azure AD 的设备恢复密码轮换|
+|enabledForAzureAdAndHybrid|3|Azure AD 加入和混合加入设备的恢复密码轮换|
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7a4d3fdfcd6f6a6c222c8b2a58e95d4755b3a6e41f11158e65dc3e5fbd9b56db
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0654c71369d9682887d36f02e6cddf1eb9772e0f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54122381"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789903"
 ---
 # <a name="embeddedsimdevicestate-resource-type"></a>embeddedSIMDeviceState 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54122381"
 
 描述与设备相关的嵌入式 SIM 卡激活代码部署状态。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 embeddedSIMDeviceStates](../api/intune-esim-embeddedsimdevicestate-list.md)|[embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md) 集合|列出 [embeddedSIMDeviceState 对象的属性和](../resources/intune-esim-embeddedsimdevicestate.md) 关系。|
@@ -69,7 +69,6 @@ ms.locfileid: "54122381"
   "stateDetails": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 969cb07a6ca2611a2d47f33d091553be161afb58454c19871bb4098d0aeeed7d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a29705b5f420674f5f8ccc167fb05b607a4f9541
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54186144"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785820"
 ---
 # <a name="update-deviceappmanagementtask"></a>更新 deviceAppManagementTask
 
@@ -43,7 +43,7 @@ PATCH /deviceAppManagement/deviceAppManagementTasks/{deviceAppManagementTaskId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,17 +53,17 @@ PATCH /deviceAppManagement/deviceAppManagementTasks/{deviceAppManagementTaskId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体键。|
+|id|字符串|实体键。|
 |displayName|字符串|名称。|
 |description|String|说明。|
 |createdDateTime|DateTimeOffset|创建日期。|
 |dueDateTime|DateTimeOffset|截止日期。|
 |“类别”|[deviceAppManagementTaskCategory](../resources/intune-partnerintegration-deviceappmanagementtaskcategory.md)|类别。 可取值为：`unknown`、`advancedThreatProtection`。|
 |priority|[deviceAppManagementTaskPriority](../resources/intune-partnerintegration-deviceappmanagementtaskpriority.md)|优先级。 可取值为：`none`、`high`、`low`。|
-|Creator|字符串|创建者的电子邮件地址。|
-|creatorNotes|String|创建者的备注。|
+|Creator|String|创建者的电子邮件地址。|
+|creatorNotes|字符串|创建者的备注。|
 |assignedTo|String|分配此任务的管理员的姓名或电子邮件。|
-|status|[deviceAppManagementTaskStatus](../resources/intune-partnerintegration-deviceappmanagementtaskstatus.md)|状态。 可取值为：`unknown`、`pending`、`active`、`completed`、`rejected`。|
+|状态|[deviceAppManagementTaskStatus](../resources/intune-partnerintegration-deviceappmanagementtaskstatus.md)|状态。 可取值为：`unknown`、`pending`、`active`、`completed`、`rejected`。|
 
 
 
@@ -115,7 +115,6 @@ Content-Length: 508
   "status": "pending"
 }
 ```
-
 
 
 
