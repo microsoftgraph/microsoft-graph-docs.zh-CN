@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4327eabe30e6902694a7081787bdfe887b6d4c31
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 9fc087d72f6b2e5198ea42141be9914510175e1e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256712"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58793524"
 ---
 # <a name="windowsfeatureupdateprofile-resource-type"></a>windowsFeatureUpdateProfile 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "58256712"
 
 Windows功能更新配置文件
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 windowsFeatureUpdateProfiles](../api/intune-softwareupdate-windowsfeatureupdateprofile-list.md)|[windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) 集合|列出 [windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) 对象的属性和关系。|
@@ -35,14 +35,14 @@ Windows功能更新配置文件
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的标识符。|
+|id|String|实体的标识符。|
 |displayName|String|配置文件显示名称。|
 |description|String|由用户指定的配置文件的说明。|
 |featureUpdateVersion|String|将部署到此配置文件所面向的设备的功能更新版本。 版本可以是任何受支持的版本，例如 1709、1803 或 1809 等。|
 |createdDateTime|DateTimeOffset|创建配置文件的日期时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改配置文件的日期时间。|
-|roleScopeTagIds|String collection|此功能更新实体的范围标记列表。|
-|deployableContentDisplayName|字符串|友好显示名称更新配置文件可部署内容的友好策略|
+|roleScopeTagIds|字符串集合|此功能更新实体的范围标记列表。|
+|deployableContentDisplayName|字符串|质量显示名称配置文件可部署内容的友好解决方案|
 |endOfSupportDate|DateTimeOffset|功能更新的上次支持日期|
 
 ## <a name="relationships"></a>关系
@@ -74,7 +74,6 @@ Windows功能更新配置文件
   "endOfSupportDate": "String (timestamp)"
 }
 ```
-
 
 
 

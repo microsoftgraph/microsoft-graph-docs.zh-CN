@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1d6346e060d53d0576c59d101166ef730678436abae998c3d8391de3124da15c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9a5c9916839851d0461b9bdcd3a5cbad0d290eab
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54171432"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58809810"
 ---
 # <a name="create-windows10secureassessmentconfiguration"></a>创建 windows10SecureAssessmentConfiguration
 
@@ -44,7 +44,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,9 +54,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|布尔值|指示基础设备配置是否支持分配范围标记。 当此值为 false 且实体对范围用户不可见时，不允许分配给 ScopeTags 属性。 这适用于在 Silverlight 中创建的旧版策略，可通过在 Azure 门户中删除和重新创建策略来解决。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|此策略的操作系统版本适用性。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -67,12 +67,12 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |launchUri|String|启动安全评估浏览器时指向自动加载的评估的 URL 链接。 它必须是有效的 URL (http\[s\]://msdn.microsoft.com/)。|
 |configurationAccount|String|用于配置 Windows 设备进行测试的帐户。 用户可以是域帐户（域\用户）、AAD 帐户 (username@tenant.com) 或本地帐户（用户名）。|
-|configurationAccountType|[secureAssessmentAccountType](../resources/intune-deviceconfig-secureassessmentaccounttype.md)|ConfigurationAccount 所使用的帐户类型。 可取值为：`azureADAccount`、`domainAccount`、`localAccount`、`localGuestAccount`。|
+|configurationAccountType|[secureAssessmentAccountType](../resources/intune-deviceconfig-secureassessmentaccounttype.md)|ConfigurationAccount 所使用的帐户类型。 可能的值是：`azureADAccount`、`domainAccount`、`localAccount`、`localGuestAccount`。|
 |allowPrinting|Boolean|指示在测试期间是否允许应用打印。|
 |allowScreenCapture|Boolean|指示在测试期间是否允许屏幕捕获功能。|
 |allowTextSuggestion|Boolean|指示在测试期间是否允许文本建议。|
 |localGuestAccountName|String|指定登录屏幕上显示的本地来宾帐户的显示文本。 通常是评估的名称。 当用户在登录屏幕上单击本地来宾帐户时，会使用指定的评估 URL 启动评估应用。 安全评估只能在运行 Windows 10 版本 1903 或更高版本的设备上配置本地来宾帐户登录。 重要说明：此属性必须使用 assessmentAppUserModelID 进行设置，以便本地来宾帐户登录体验能够正常进行安全评估。|
-|assessmentAppUserModelId|字符串|指定当用户使用本地来宾帐户登录安全评估时启动的评估应用的应用程序用户模型 ID。 重要说明：此属性必须使用 localGuestAccountName 进行设置，以便本地来宾帐户登录体验能够正常进行安全评估。|
+|assessmentAppUserModelId|String|指定当用户使用本地来宾帐户登录安全评估时启动的评估应用的应用程序用户模型 ID。 重要说明：此属性必须使用 localGuestAccountName 进行设置，以便本地来宾帐户登录体验能够正常进行安全评估。|
 
 
 
@@ -179,7 +179,6 @@ Content-Length: 1575
   "assessmentAppUserModelId": "Assessment App User Model Id value"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: f776bd5ac5dad802a8c977cbe32842e619c74434
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: 72eb244cceeb5aa480baef1707877d31c2c69423
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53107758"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783293"
 ---
 # <a name="update-settings"></a>更新设置
 
@@ -23,7 +23,7 @@ ms.locfileid: "53107758"
 
 ### <a name="batch-request"></a>批量请求
 
-也可以选择退出通过批处理请求Delve用户。
+也可以选择通过批处理请求从用户Delve用户。
 若要了解更多信息，请参阅 [JSON 批处理](/graph/json-batching)。
 
 >**重要** 提示：只有组织管理 [角色](https://support.office.com/article/permissions-in-the-office-365-security-compliance-center-d10608af-7934-490a-818e-e68f17d0e9c1?ui=en-US&rs=en-US&ad=US) 组的成员才能更新多个用户。 
@@ -46,13 +46,13 @@ ms.locfileid: "53107758"
 PATCH /me/settings
 ```
 
-具有“用户ID”或“userPrincipalName”的请求只能由用户或具有 User.ReadWrite.All 权限的用户访问。 若要了解详细信息，请参阅[权限](/graph/permissions-reference)。 
+具有“用户ID”或“userPrincipalName”的请求只能由用户或具有 User.ReadWrite.All 权限的用户访问。若要了解详细信息，请参阅[权限](/graph/permissions-reference)。 
 
 ```http
 PATCH /users/{id | userPrincipalName}/settings/
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 标头       | 值|
 |:-----------|:------|
@@ -65,13 +65,13 @@ PATCH /users/{id | userPrincipalName}/settings/
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|contributionToContentDiscoveryDisabled|布尔值|设置为 true 可禁止用户Office Delve文档。 此设置反映控件在[控件Office Delve。](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout)|
+|contributionToContentDiscoveryDisabled|布尔值|设置为 true 可禁止用户Office Delve文档。 此设置反映控件在[控件Office Delve。](https://support.office.com/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout)|
 
 ## <a name="example"></a>示例 
 
 ##### <a name="request"></a>请求
 
-下面是一个示例请求，请求如何选择退出用户Delve并禁用他针对整个组织的内容相关性的贡献。
+下面是一个示例请求，请求如何选择退出用户，Delve并禁用他针对整个组织的内容相关性的贡献。
 
 ```http
 PATCH https://graph.microsoft.com/beta/me/settings

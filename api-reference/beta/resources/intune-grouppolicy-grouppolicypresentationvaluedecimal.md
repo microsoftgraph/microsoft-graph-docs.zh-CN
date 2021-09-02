@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ff7b35c4b188fb5f0fe8fcfd1d21f3f908e331b2a63f52ca4fa3c30c25685e80
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ba3fe72e1ee4912a6094c97960cec1d75f7e906c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54227286"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791100"
 ---
 # <a name="grouppolicypresentationvaluedecimal-resource-type"></a>groupPolicyPresentationValueDecimal 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "54227286"
 
 继承自 [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 groupPolicyPresentationValueDecimals](../api/intune-grouppolicy-grouppolicypresentationvaluedecimal-list.md)|[groupPolicyPresentationValueDecimal](../resources/intune-grouppolicy-grouppolicypresentationvaluedecimal.md) 集合|列出 [groupPolicyPresentationValueDecimal 对象的属性和](../resources/intune-grouppolicy-grouppolicypresentationvaluedecimal.md) 关系。|
@@ -65,7 +65,6 @@ ms.locfileid: "54227286"
   "value": 1024
 }
 ```
-
 
 
 

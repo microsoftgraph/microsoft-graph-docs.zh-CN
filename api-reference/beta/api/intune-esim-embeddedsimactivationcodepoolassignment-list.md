@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f88009f58ae59969c610e5e32e04e400228a2a655352f5500c4c8ae4c99ef713
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d20af54fff917006f1e6ab34ed5e7a9e225f0dde
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54228231"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816371"
 ---
 # <a name="list-embeddedsimactivationcodepoolassignments"></a>列出 embeddedSIMActivationCodePoolAssignments
 
@@ -43,7 +43,7 @@ GET /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCodeP
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -81,7 +81,6 @@ Content-Length: 450
   ]
 }
 ```
-
 
 
 

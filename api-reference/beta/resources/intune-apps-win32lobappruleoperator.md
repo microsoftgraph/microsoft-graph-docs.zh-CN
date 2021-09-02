@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 225cb550f92b50982c4e3ba0f44efd50637afcd3ac63cbde2915c337592fe38c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2c508f643ee955ce3004130dd78a9c6a0d6fa488
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54165803"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58790939"
 ---
 # <a name="win32lobappruleoperator-enum-type"></a>win32LobAppRuleOperator 枚举类型
 
@@ -26,13 +26,12 @@ ms.locfileid: "54165803"
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置。|
-|equal|1 |等号运算符。|
-|notEqual|2 |不等于运算符。|
+|equal|1|等号运算符。|
+|notEqual|2|不等于运算符。|
 |greaterThan|4 |大于运算符。|
 |greaterThanOrEqual|5 |大于或等于运算符。|
 |lessThan|8 |小于运算符。|
 |lessThanOrEqual|9 |小于或等于运算符。|
-
 
 
 

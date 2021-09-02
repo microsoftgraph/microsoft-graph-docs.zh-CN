@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6098b7b9a675de6930701c9e6dba950cd6383e5f73596b074aee5cd32af0c7cd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 640198171fd9b83c6522a8c8b07b84fa186657ab
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54219841"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803235"
 ---
 # <a name="windowsprotectionstate-resource-type"></a>windowsProtectionState 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54219841"
 
 设备保护状态实体。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 windowsProtectionState](../api/intune-devices-windowsprotectionstate-get.md)|[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)|读取 [windowsProtectionState 对象的属性和](../resources/intune-devices-windowsprotectionstate.md) 关系。|
@@ -32,10 +32,10 @@ ms.locfileid: "54219841"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|设备保护状态对象的唯一标识符。 这是设备的设备 ID|
-|malwareProtectionEnabled|布尔值|反恶意软件是否已启用|
+|malwareProtectionEnabled|Boolean|反恶意软件是否已启用|
 |deviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|计算机的状态 (干净或挂起完全扫描或挂起重启等) 。 可取值为：`clean`、`fullScanPending`、`rebootPending`、`manualStepsPending`、`offlineScanPending`、`critical`。|
 |realTimeProtectionEnabled|布尔值|实时保护是否已启用？|
-|networkInspectionSystemEnabled|布尔值|网络检查系统是否已启用？|
+|networkInspectionSystemEnabled|Boolean|网络检查系统是否已启用？|
 |quickScanOverdue|布尔值|快速扫描是否过期？|
 |fullScanOverdue|布尔值|完全扫描是否过期？|
 |signatureUpdateOverdue|布尔值|签名是否过期？|
@@ -43,11 +43,11 @@ ms.locfileid: "54219841"
 |fullScanRequired|布尔值|是否要求进行完全扫描？|
 |engineVersion|String|当前终结点保护引擎的版本|
 |signatureVersion|String|当前恶意软件定义版本|
-|antiMalwareVersion|String|当前反恶意软件版本|
+|antiMalwareVersion|字符串|当前反恶意软件版本|
 |lastQuickScanDateTime|DateTimeOffset|上次快速扫描日期/时间|
 |lastFullScanDateTime|DateTimeOffset|上次快速扫描日期/时间|
 |lastQuickScanSignatureVersion|字符串|上次快速扫描签名版本|
-|lastFullScanSignatureVersion|String|上次完全扫描签名版本|
+|lastFullScanSignatureVersion|字符串|上次完全扫描签名版本|
 |lastReportedDateTime|DateTimeOffset|上次设备运行状况报告时间|
 |productStatus|[windowsDefenderProductStatus](../resources/intune-devices-windowsdefenderproductstatus.md)|产品状态Windows Defender 防病毒。 可能的值是 `noStatus` `serviceNotRunning` `serviceStartedWithoutMalwareProtection` ：、、、、、、、、、、 `pendingFullScanDueToThreatAction` `pendingRebootDueToThreatAction` `pendingManualStepsDueToThreatAction` `avSignaturesOutOfDate` `asSignaturesOutOfDate` `noQuickScanHappenedForSpecifiedPeriod` `noFullScanHappenedForSpecifiedPeriod` `systemInitiatedScanInProgress` `systemInitiatedCleanInProgress` `samplesPendingSubmission` `productRunningInEvaluationMode` `productRunningInNonGenuineMode` `productExpired` `offlineScanRequired` `serviceShutdownAsPartOfSystemShutdown` `threatRemediationFailedCritically` `threatRemediationFailedNonCritically` `noStatusFlagsSet` `platformOutOfDate` `platformUpdateInProgress` `platformAboutToBeOutdated` `signatureOrPlatformEndOfLifeIsPastOrIsImpending` `windowsSModeSignaturesInUseOnNonWin10SInstall` 、|
 |isVirtualMachine|布尔值|指示设备是否是虚拟机。|
@@ -92,7 +92,6 @@ ms.locfileid: "54219841"
   "tamperProtectionEnabled": true
 }
 ```
-
 
 
 

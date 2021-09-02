@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0d5cf9cb5bf75654b48c4cace4905bc22da66798ffc2419f34730dbe3ef9e51b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d121f48aec77684a8f770f7c5a65e23456459b91
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249788"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58790113"
 ---
 # <a name="rolescopetag-resource-type"></a>roleScopeTag 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54249788"
 
 角色作用域标记
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 roleScopeTags](../api/intune-rbac-rolescopetag-list.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md) 集合|列出 [roleScopeTag 对象的属性和](../resources/intune-rbac-rolescopetag.md) 关系。|
@@ -37,10 +37,10 @@ ms.locfileid: "54249788"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。 此为只读，且自动生成。|
-|displayName|String|角色作用域标记的显示或友好名称。|
-|description|String|角色作用域标记的说明。|
-|isBuiltIn|Boolean|角色作用域标记的说明。|
+|id|String|实体的键。 此为只读，且自动生成。 此属性是只读的。|
+|displayName|字符串|角色作用域标记的显示或友好名称。|
+|description|字符串|角色作用域标记的说明。|
+|isBuiltIn|Boolean|角色作用域标记的说明。 此属性是只读的。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -64,7 +64,6 @@ ms.locfileid: "54249788"
   "isBuiltIn": true
 }
 ```
-
 
 
 

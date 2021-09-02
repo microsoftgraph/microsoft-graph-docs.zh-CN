@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 02e4e9c3c292bbc37d00b0cd2ce22828fb342a65af7fc661528bdbecb427a801
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5b929d340fcd6ec7f2a0878420fa3453ad2b3b6d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54224423"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58792559"
 ---
 # <a name="devicecompliancepolicy-resource-type"></a>deviceCompliancePolicy 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54224423"
 
 这是符合性策略的基类。 符合性策略特定于平台，每个平台的符合性策略相互独立，且继承自此处。 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[List deviceCompliancePolicies](../api/intune-shared-devicecompliancepolicy-list.md)|[deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md) 集合|列出 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md) 对象的属性和关系。|
@@ -37,12 +37,12 @@ ms.locfileid: "54224423"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
+|id|String|实体的键。|
+|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。|
 |description|String|管理员提供的设备配置说明。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
-|displayName|字符串|管理员提供的设备配置名称。|
+|displayName|String|管理员提供的设备配置名称。|
 |version|Int32|设备配置的版本。|
 
 ## <a name="relationships"></a>关系
@@ -79,7 +79,6 @@ ms.locfileid: "54224423"
   "version": 1024
 }
 ```
-
 
 
 

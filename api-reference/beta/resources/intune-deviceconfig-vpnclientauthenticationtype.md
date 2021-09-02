@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fcf09d3b48d9bbe33059b01efade9d4efcbcfc16fa7db178e80385d0263f1ba8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 68cbda2555f4ef006ba2a71011607c587508332f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54226327"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795863"
 ---
 # <a name="vpnclientauthenticationtype-enum-type"></a>vpnClientAuthenticationType 枚举类型
 
@@ -26,8 +26,7 @@ VPN 客户端身份验证类型
 |成员|值|说明|
 |:---|:---|:---|
 |userAuthentication|0|用户身份验证|
-|deviceAuthentication|1 |设备身份验证|
-
+|deviceAuthentication|1|设备身份验证|
 
 
 

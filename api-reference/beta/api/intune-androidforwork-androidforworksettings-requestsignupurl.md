@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fe9512913f6f4aa768a7b960399afb900d8160a575923efce9e6825df6d0632f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 59f3e2f08756aa9af97445102d9d5239e79510f7
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163507"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795821"
 ---
 # <a name="requestsignupurl-action"></a>requestSignupUrl 操作
 
@@ -43,7 +43,7 @@ POST /deviceManagement/androidForWorkSettings/requestSignupUrl
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -86,7 +86,6 @@ Content-Length: 56
   "value": "https://example.com/requestSignupUrl/"
 }
 ```
-
 
 
 

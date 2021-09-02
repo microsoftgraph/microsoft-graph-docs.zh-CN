@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4df02ea0668d52c8ff553c8ab4c61849e923fc00a80a71264517651ed4c3ad9f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1ce7fcb8a0f219cda0b6aa2797855376a81b7095
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54152983"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58800020"
 ---
 # <a name="grouppolicypresentationvaluemultitext-resource-type"></a>groupPolicyPresentationValueMultiText 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "54152983"
 
 继承自 [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 groupPolicyPresentationValueMultiTexts](../api/intune-grouppolicy-grouppolicypresentationvaluemultitext-list.md)|[groupPolicyPresentationValueMultiText](../resources/intune-grouppolicy-grouppolicypresentationvaluemultitext.md) 集合|列出 [groupPolicyPresentationValueMultiText 对象的属性和](../resources/intune-grouppolicy-grouppolicypresentationvaluemultitext.md) 关系。|
@@ -40,7 +40,7 @@ ms.locfileid: "54152983"
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期和时间。 继承自 [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |createdDateTime|DateTimeOffset|对象的创建日期和时间。 继承自 [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |id|String|实体的键。 继承自 [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
-|values|String collection|关联的演示文稿的非空字符串的集合。|
+|values|字符串集合|关联的演示文稿的非空字符串的集合。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -67,7 +67,6 @@ ms.locfileid: "54152983"
   ]
 }
 ```
-
 
 
 

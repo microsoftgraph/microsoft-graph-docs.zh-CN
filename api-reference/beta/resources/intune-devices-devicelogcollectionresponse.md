@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fa4bffe14538618e1338b87f107148422086931e1761e171eff999eaac070626
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bf550298b3c7b74ccc2e4a0af38718b9f5be500a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54244734"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58815048"
 ---
 # <a name="devicelogcollectionresponse-resource-type"></a>deviceLogCollectionResponse 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54244734"
 
 WindowsLog Collection 请求实体。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceLogCollectionResponses](../api/intune-devices-devicelogcollectionresponse-list.md)|[deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md) 集合|列出 [deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md) 对象的属性和关系。|
@@ -36,12 +36,12 @@ WindowsLog Collection 请求实体。
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|表单的唯一标识符tenantId_deviceId_requestId|
-|status|字符串|日志集合请求的状态|
+|状态|String|日志集合请求的状态|
 |managedDeviceId|Guid|设备 ID|
 |errorCode|Int64|错误代码（如果有）。 有效值 -9.22337203685478E+18 到 9.22337203685478E+18|
 |requestedDateTimeUTC|DateTimeOffset|请求的 DateTime|
 |receivedDateTimeUTC|DateTimeOffset|收到请求的日期/时间|
-|initiatedByUserPrincipalName|字符串|发起请求的 UPN|
+|initiatedByUserPrincipalName|String|发起请求的 UPN|
 |expirationDateTimeUTC|DateTimeOffset|日志过期的 DateTime|
 |size|双精度|日志的大小。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
 
@@ -70,7 +70,6 @@ WindowsLog Collection 请求实体。
   "size": "4.2"
 }
 ```
-
 
 
 

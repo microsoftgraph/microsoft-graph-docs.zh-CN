@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1e2c3bf92cf3190d5e9a734737dca1467ee5351b4f41e1ae64f88c7480452d54
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 158729518b47be682e00bea9d77b8a7308c9d4b1
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54165670"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789634"
 ---
 # <a name="macosprivacyaccesscontrolitem-resource-type"></a>macOSPrivacyAccessControlItem 资源类型
 
@@ -26,13 +26,13 @@ ms.locfileid: "54165670"
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|应用显示名称进程或可执行文件的名称。|
-|标识符|字符串|应用、进程或可执行文件的捆绑 ID 或路径。|
+|标识符|String|应用、进程或可执行文件的捆绑 ID 或路径。|
 |identifierType|[macOSProcessIdentifierType](../resources/intune-deviceconfig-macosprocessidentifiertype.md)|捆绑包 ID 用于标识应用。 路径用于标识进程或可执行文件。 可取值为：`bundleID`、`path`。|
 |codeRequirement|String|输入代码要求，可通过终端应用中的命令"codesign –display -r –"获取。 在"=>"之后包含所有内容。|
 |staticCodeValidation|布尔值|静态验证代码要求。 如果进程使动态代码签名失效，请使用此设置。|
-|blockCamera|布尔值|阻止访问相机应用。|
+|blockCamera|Boolean|阻止访问相机应用。|
 |blockMicrophone|布尔值|阻止访问麦克风。|
-|blockScreenCapture|布尔值|阻止应用捕获系统显示的内容。 需要 macOS 10.15 或更高版本。|
+|blockScreenCapture|Boolean|阻止应用捕获系统显示的内容。 需要 macOS 10.15 或更高版本。|
 |blockListenEvent|布尔值|阻止应用或进程侦听来自输入设备（如鼠标、键盘和触控板）的事件。需要 macOS 10.15 或更高版本。|
 |speechRecognition|[enablement](../resources/intune-shared-enablement.md)|允许或阻止访问系统语音识别设备。 可取值为：`notConfigured`、`enabled`、`disabled`。|
 |辅助功能|[enablement](../resources/intune-shared-enablement.md)|允许应用或进程通过辅助功能子系统控制 Mac。 可取值为：`notConfigured`、`enabled`、`disabled`。|
@@ -101,7 +101,6 @@ ms.locfileid: "54165670"
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 81b081ddf045cc1406903bd7d9b88edffc05480d
-ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
+ms.openlocfilehash: 0b74b74d4ffecf19acc8e0b9d19af1475d1a1e85
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53317123"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785477"
 ---
 # <a name="team-sendactivitynotification"></a>team：sendActivityNotification
 命名空间：microsoft.graph
@@ -26,7 +26,9 @@ ms.locfileid: "53317123"
 |:---|:---|
 |委派（工作或学校帐户）|TeamsActivity.Send|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|TeamsActivity.Send|
+|应用程序|TeamsActivity.Send.Group*，TeamsActivity.Send|
+
+>**注意：** 标记为 * 的权限使用 [特定于资源的同意](https://aka.ms/teams-rsc)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -60,7 +62,7 @@ POST /teams/{teamId}/sendActivityNotification
 
 将 topic 属性的值设置为 时 `source` ，支持 **以下** 资源 `entityUrl` ：
 
-- [团队](../resources/team.md)
+- [team](../resources/team.md)
 - [频道](../resources/channel.md)
 - [chatMesage](../resources/chatmessage.md)
 - [teamsTab](../resources/teamstab.md)

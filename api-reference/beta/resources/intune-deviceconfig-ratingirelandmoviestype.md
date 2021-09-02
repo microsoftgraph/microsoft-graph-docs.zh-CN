@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6f6eb6c8b95576761976502b15096515ede3a47729535469711e7498545158e8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 39708c90cc7c68860c76fd4532dc16e97403d177
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54183055"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58799498"
 ---
 # <a name="ratingirelandmoviestype-enum-type"></a>ratingIrelandMoviesType 枚举类型
 
@@ -26,14 +26,13 @@ ms.locfileid: "54183055"
 |成员|值|说明|
 |:---|:---|:---|
 |allAllowed|0|默认值，允许所有电影内容|
-|allBlocked|1 |不允许任何电影内容|
-|general|2 |适合学校适中年龄的子|
-|parentalGuidance|3 |PG 分类建议家长指南|
+|allBlocked|1|不允许任何电影内容|
+|general|2|适合学校适中年龄的子|
+|parentalGuidance|3|PG 分类建议家长指南|
 |agesAbove12|4 |12A 分类适用于 12 或更旧的查看者|
 |agesAbove15|5 |15A 分类适用于 15 位或更旧的查看者|
 |agesAbove16|6 |16 分类适用于 16 位或更旧的查看者|
 |一些|7 |18 分类，仅适用于成人|
-
 
 
 

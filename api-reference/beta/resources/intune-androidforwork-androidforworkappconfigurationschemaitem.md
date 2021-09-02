@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 05d3ff594ceecd90d91c3d413d38d0828f3bfec4
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 2e06a28fbd41887373d5935b3bdaed89cd775eb8
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266707"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795886"
 ---
 # <a name="androidforworkappconfigurationschemaitem-resource-type"></a>androidForWorkAppConfigurationSchemaItem 资源类型
 
@@ -27,7 +27,7 @@ Android for Work 应用程序的自定义配置架构内的单个配置项。
 |:---|:---|:---|
 |schemaItemKey|String|应用程序用于标识项的唯一键|
 |displayName|String|用户可读的名称|
-|description|字符串|项在应用程序内所控制内容的说明|
+|description|String|项在应用程序内所控制内容的说明|
 |defaultBoolValue|布尔值|如果由应用开发人员指定，则为布尔类型项的默认值|
 |defaultIntValue|Int32|如果由应用开发人员指定，则为整数类型项的默认值|
 |defaultStringValue|String|如果由应用开发人员指定，则为字符串类型项的默认值|
@@ -67,7 +67,6 @@ Android for Work 应用程序的自定义配置架构内的单个配置项。
   ]
 }
 ```
-
 
 
 

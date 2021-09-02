@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 925b8ec1d64461b6a02b131bf775c9c60464cbdd106def46c96a36ba15cf2d09
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5cccf7d5e10d2f50c248d4431bd4bd050d30832c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54153305"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58794882"
 ---
 # <a name="fileencryptioninfo-resource-type"></a>fileEncryptionInfo 资源类型
 
@@ -55,7 +55,6 @@ ms.locfileid: "54153305"
   "fileDigestAlgorithm": "String"
 }
 ```
-
 
 
 

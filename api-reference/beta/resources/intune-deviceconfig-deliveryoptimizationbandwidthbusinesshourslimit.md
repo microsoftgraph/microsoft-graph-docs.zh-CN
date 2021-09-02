@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 60e78ee837702a1a131ee0abba46029186f4dfcfe4eab777eca4e5377defdb60
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b3b6fdc86eed3043e3f95bd2947bc24dc35d5761
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54122661"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797540"
 ---
 # <a name="deliveryoptimizationbandwidthbusinesshourslimit-resource-type"></a>deliveryOptimizationBandwidthBusinessHoursLimit 资源类型
 
@@ -25,9 +25,9 @@ ms.locfileid: "54122661"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|bandwidthBeginBusinessHours|Int32|指定使用 24 小时制的工作时间的开始 (0-23) 。 有效值为 0 到 23|
+|bandwidthBeginBusinessHours|Int32|指定使用 24 小时制的工作时间的 (0-23) 。 有效值为 0 到 23|
 |bandwidthEndBusinessHours|Int32|指定使用 24 小时制 24 小时制的结束 (0-23) 。 有效值为 0 到 23|
-|bandwidthPercentageDuringBusinessHours|Int32|指定在工作时间 0-100 分钟 (带宽的百分比) 。 有效值为 0 至 100|
+|bandwidthPercentageDuringBusinessHours|Int32|指定在工作时间限制的带宽百分比 (0-100) 。 有效值为 0 至 100|
 |bandwidthPercentageOutsideBusinessHours|Int32|指定限制工作时间的带宽百分比， (0-100) 。 有效值为 0 至 100|
 
 ## <a name="relationships"></a>关系
@@ -49,7 +49,6 @@ ms.locfileid: "54122661"
   "bandwidthPercentageOutsideBusinessHours": 1024
 }
 ```
-
 
 
 

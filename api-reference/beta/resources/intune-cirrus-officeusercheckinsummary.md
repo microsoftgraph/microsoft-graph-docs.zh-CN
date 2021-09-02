@@ -1,18 +1,18 @@
 ---
-title: groupPolicyPresentationDropdownListItem 资源类型
-description: 尚未记录
-author: dougeby
+title: officeUserCheckinSummary 资源类型
+description: 描述租户签入统计数据的实体。
 localization_priority: Normal
+author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 38b0a2ccccb06e11ba71407bb5e510aca522d2d9
+ms.openlocfilehash: ef96a9a1c65ded0b5befcfe8441021dda44c8d38
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790638"
+ms.locfileid: "58785552"
 ---
-# <a name="grouppolicypresentationdropdownlistitem-resource-type"></a>groupPolicyPresentationDropdownListItem 资源类型
+# <a name="officeusercheckinsummary-resource-type"></a>officeUserCheckinSummary 资源类型
 
 命名空间：microsoft.graph
 
@@ -20,13 +20,13 @@ ms.locfileid: "58790638"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-尚未记录
+描述租户签入统计数据的实体。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|下拉列表显示名称本地化列表项。|
-|value|String|下拉列表项的关联值|
+|succeededUserCount|Int32|最近 3 个月内用户签入成功总数。|
+|failedUserCount|Int32|最近 3 个月内用户签入失败总数。|
 
 ## <a name="relationships"></a>关系
 无
@@ -35,14 +35,15 @@ ms.locfileid: "58790638"
 下面是资源的 JSON 表示形式。
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.groupPolicyPresentationDropdownListItem"
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.officeUserCheckinSummary"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.groupPolicyPresentationDropdownListItem",
-  "displayName": "String",
-  "value": "String"
+  "@odata.type": "#microsoft.graph.officeUserCheckinSummary",
+  "succeededUserCount": 1024,
+  "failedUserCount": 1024
 }
 ```
 

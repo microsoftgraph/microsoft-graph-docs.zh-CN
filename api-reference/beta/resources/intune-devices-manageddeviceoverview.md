@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5131f6a371db46079a7afdcb4c2bc887a6f9d42c2bac13bcaf6d977f0a491560
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 42032dd62804ec5eb31796af2d33fea96a5d09b5
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54156175"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795183"
 ---
 # <a name="manageddeviceoverview-resource-type"></a>managedDeviceOverview 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54156175"
 
 托管设备的摘要数据
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 managedDeviceOverview](../api/intune-devices-manageddeviceoverview-get.md)|[managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md)|读取 [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md) 对象的属性和关系。|
@@ -97,7 +97,6 @@ ms.locfileid: "54156175"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

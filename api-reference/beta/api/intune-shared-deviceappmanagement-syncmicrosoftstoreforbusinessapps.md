@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a4407dca47b97cfc3ec3965634cc19c1596f2d03e253a902c277d965defb8703
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e636350bb10ec4f04ed0e3ec67e54731f0d042ef
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54173714"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58779765"
 ---
 # <a name="syncmicrosoftstoreforbusinessapps-action"></a>syncMicrosoftStoreForBusinessApps 操作
 
@@ -44,7 +44,7 @@ POST /deviceAppManagement/syncMicrosoftStoreForBusinessApps
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -65,7 +65,6 @@ POST https://graph.microsoft.com/beta/deviceAppManagement/syncMicrosoftStoreForB
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

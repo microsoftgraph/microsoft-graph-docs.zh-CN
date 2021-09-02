@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 948c8fbd36b340d15eea96d5edcd204338d64fef2d2142c8deba79dca0424265
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9d090b0d7c829c0f4c7a0fe9dc0669220ab7e960
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54193998"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58793412"
 ---
 # <a name="delete-sideloadingkey"></a>删除 sideLoadingKey
 
@@ -43,7 +43,7 @@ DELETE /deviceAppManagement/sideLoadingKeys/{sideLoadingKeyId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/sideLoadingKeys/{sid
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

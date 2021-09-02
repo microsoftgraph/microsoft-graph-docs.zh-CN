@@ -1,15 +1,15 @@
 ---
 title: 如何使用 Microsoft Microsoft Intune API 保护公司Graph数据
-description: 列出管理Graph应用及其策略的适用于 Intune 终结点的 Microsoft (API) REST) 。
+description: 列出 Microsoft Graph Intune 终结点的 API (REST) 管理租户组织的应用及其策略。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 3ab2c83a2aea69f91e46045e82f19eb975c56b0c
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 91855eb83eee7a1c541ec5cf3ab82f3946a13d44
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266476"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58790190"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>如何通过 Microsoft Intune 保护公司的应用数据
 
@@ -21,7 +21,7 @@ ms.locfileid: "58266476"
 
 Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢失。
 
-你可以使用 Intune 应用保护策略帮助保护公司的数据。 由于 Intune 应用保护策略可以独立于任何移动设备管理 (MDM) 解决方案使用，因此，你可以使用它在设备管理解决方案中注册设备或不注册设备来保护公司数据。 通过实现应用级策略，既可以限制对公司资源的访问，也可以将数据保留在 IT 部门的范围之内。
+你可以使用 Intune 应用保护策略帮助保护公司的数据。 由于 Intune 应用保护策略可以独立于任何移动设备管理 (MDM) 解决方案使用，因此可以使用它保护公司的数据，而无需在设备管理解决方案中注册设备。 通过实现应用级策略，既可以限制对公司资源的访问，也可以将数据保留在 IT 部门的范围之内。
 
 以下 Graph 资源可用于在 Intune 中管理应用保护策略：
 
@@ -126,10 +126,17 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [移动应用取代类型](intune-apps-mobileappsupersedencetype.md)
 - [移动包含的应用](intune-apps-mobilecontainedapp.md)
 - [移动 LOB 应用](intune-apps-mobilelobapp.md)
+- [Office 客户端签入状态](intune-cirrus-officeclientcheckinstatus.md)
+- [Office 客户端配置](intune-cirrus-officeclientconfiguration.md)
+- [Office 客户端配置分配](intune-cirrus-officeclientconfigurationassignment.md)
+- [Office 配置](intune-cirrus-officeconfiguration.md)
+- [Office 配置分配目标](intune-cirrus-officeconfigurationassignmenttarget.md)
+- [Office 配置组分配目标](intune-cirrus-officeconfigurationgroupassignmenttarget.md)
 - [Office产品 ID](intune-apps-officeproductid.md)
 - [Office 套件应用](intune-apps-officesuiteapp.md)
 - [Office 套件安装进度显示级别](intune-apps-officesuiteinstallprogressdisplaylevel.md)
 - [Office 更新通道](intune-apps-officeupdatechannel.md)
+- [Office 用户签入摘要](intune-cirrus-officeusercheckinsummary.md)
 - [生成的应用状态](intune-apps-resultantappstate.md)
 - [生成的应用状态详情](intune-apps-resultantappstatedetail.md)
 - [Symantec 代码签名证书](intune-apps-symanteccodesigningcertificate.md)
@@ -173,6 +180,8 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [Windows Microsoft Edge 应用](intune-apps-windowsmicrosoftedgeapp.md)
 - [Windows 最低操作系统](intune-apps-windowsminimumoperatingsystem.md)
 - [Windows Mobile MSI](intune-apps-windowsmobilemsi.md)
+- [Windows Office 客户端配置](intune-cirrus-windowsofficeclientconfiguration.md)
+- [Windows Office 客户端安全配置](intune-cirrus-windowsofficeclientsecurityconfiguration.md)
 - [Windows 包信息](intune-apps-windowspackageinformation.md)
 - [Windows Phone 8.1 AppX](intune-apps-windowsphone81appx.md)
 - [Windows Phone 8.1 AppX 捆绑包](intune-apps-windowsphone81appxbundle.md)

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5d115b746161bf91702a80ff2a69e6da0cfe4b37636286ef431f5905295e29f8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 99357d35a95df626d305ce234f115cd41d6f1005
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54131267"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783993"
 ---
 # <a name="win32lobappmsiinformation-resource-type"></a>win32LobAppMsiInformation 资源类型
 
@@ -27,8 +27,8 @@ ms.locfileid: "54131267"
 |:---|:---|:---|
 |productCode|String|MSI 产品代码。|
 |productVersion|String|MSI 产品版本。|
-|upgradeCode|字符串|MSI 升级代码。|
-|requiresReboot|布尔值|MSI 应用是否需要计算机重新启动才能完成安装。|
+|upgradeCode|String|MSI 升级代码。|
+|requiresReboot|Boolean|MSI 应用是否需要计算机重新启动才能完成安装。|
 |packageType|[win32LobAppMsiPackageType](../resources/intune-apps-win32lobappmsipackagetype.md)|MSI 程序包类型。 可取值为：`perMachine`、`perUser`、`dualPurpose`。|
 |productName|String|MSI 产品名称。|
 |发布者|String|MSI 发布者。|
@@ -55,7 +55,6 @@ ms.locfileid: "54131267"
   "publisher": "String"
 }
 ```
-
 
 
 

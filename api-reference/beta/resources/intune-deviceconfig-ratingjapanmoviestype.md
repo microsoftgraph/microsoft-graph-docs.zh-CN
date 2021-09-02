@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f71b2f1a9323d4de8f745a03ae135e076235e1813680ed2a6e53817004cf34ca
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d9e1cc1f395198b0d36764c256a0902537976c72
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54198225"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58788673"
 ---
 # <a name="ratingjapanmoviestype-enum-type"></a>ratingJapanMoviesType 枚举类型
 
@@ -26,12 +26,11 @@ ms.locfileid: "54198225"
 |成员|值|说明|
 |:---|:---|:---|
 |allAllowed|0|默认值，允许所有电影内容|
-|allBlocked|1 |不允许任何电影内容|
-|general|2 |适合所有年龄|
-|parentalGuidance|3 |PG-12 分类请求针对 12 岁人士的家长指导|
+|allBlocked|1|不允许任何电影内容|
+|general|2|适合所有年龄|
+|parentalGuidance|3|PG-12 分类请求针对 12 岁人士的家长指导|
 |agesAbove15|4 |R15+ 分类适用于 15 位或更旧的查看者|
 |agesAbove18|5 |R18+ 分类适用于 18 位或更旧的查看者|
-
 
 
 

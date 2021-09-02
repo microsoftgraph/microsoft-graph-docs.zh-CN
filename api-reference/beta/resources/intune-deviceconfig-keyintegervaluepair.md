@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0acd0301b50f588197e4eeb40b55ded85d6e26150972ef6d40ecc85c7605b096
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 109171d7cfa4c99cb8e46837e8c995b6c630e76c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54203034"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797899"
 ---
 # <a name="keyintegervaluepair-resource-type"></a>keyIntegerValuePair 资源类型
 
@@ -28,7 +28,7 @@ ms.locfileid: "54203034"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|Key|字符串|键值对的字符串键。 继承自 [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)|
+|Key|String|键值对的字符串键。 继承自 [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)|
 |值|Int32|键值对的整数值。|
 
 ## <a name="relationships"></a>关系
@@ -48,7 +48,6 @@ ms.locfileid: "54203034"
   "value": 1024
 }
 ```
-
 
 
 

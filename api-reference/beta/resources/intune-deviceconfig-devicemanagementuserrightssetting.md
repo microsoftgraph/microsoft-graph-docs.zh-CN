@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cc9b6fe23a2184f9024c2bbe2252239dd0688b9764930772f6d13e0920e9a4a6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 97abdf6729e0786d29d7cea12a7217c977b2cb50
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54253129"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58793885"
 ---
 # <a name="devicemanagementuserrightssetting-resource-type"></a>deviceManagementUserRightsSetting 资源类型
 
@@ -52,7 +52,6 @@ ms.locfileid: "54253129"
   ]
 }
 ```
-
 
 
 

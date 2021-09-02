@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: eea147f3e9382828c906887bbf87e17866b7b3db2aca3375dd1a34c915554f9b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 97e79be537d24fc4d1de877a7ffc650383944842
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54159383"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785631"
 ---
 # <a name="create-managedebookcategory"></a>创建 managedEBookCategory
 
@@ -44,7 +44,7 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/categories
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,8 +54,8 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/categories
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
-|displayName|字符串|电子图书类别的名称。|
+|id|字符串|实体的键。|
+|displayName|String|电子图书类别的名称。|
 |lastModifiedDateTime|DateTimeOffset|ManagedEBookCategory 上次修改的日期和时间。|
 
 
@@ -92,7 +92,6 @@ Content-Length: 215
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

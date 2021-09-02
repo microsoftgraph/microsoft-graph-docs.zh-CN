@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d5fdb65510bcd287494b3966ca00bbe7f25b0a2fd5720338030bc1bcf8c11a64
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2e1576d82a3e4f967497ff49f76cb510eb4c39b2
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54183217"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789966"
 ---
 # <a name="androiddeviceownerrequiredpasswordtype-enum-type"></a>androidDeviceOwnerRequiredPasswordType 枚举类型
 
@@ -26,15 +26,14 @@ Android 设备所有者策略所需的密码类型。
 |成员|值|说明|
 |:---|:---|:---|
 |deviceDefault|0|设备默认值，无意图。|
-|必需|1 |必须设置密码，但对类型没有限制。|
-|numeric|2 |至少为数字。|
-|numericComplex|3 |至少为无重复序列或顺序序列的数值。|
+|必需|1|必须设置密码，但对类型没有限制。|
+|numeric|2|至少为数字。|
+|numericComplex|3|至少为无重复序列或顺序序列的数值。|
 |字母|4 |至少字母密码。|
 |alphanumeric|5 |至少为字母数字密码|
 |alphanumericWithSymbols|6 |至少为带符号的字母数字。|
 |lowSecurityBiometric|7 |需要低安全生物识别密码。|
 |customPassword|8 |管理员设置的自定义密码。|
-
 
 
 

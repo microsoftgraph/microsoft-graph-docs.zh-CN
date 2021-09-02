@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 62d385b7f519e3897588d2832c051f7892cee5b82b82744bd61cd84b53dd1989
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4c3022b5f721eff6dba2c7634133a7c0888077d5
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54194712"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58815923"
 ---
 # <a name="revokeuserlicense-action"></a>revokeUserLicense 操作
 
@@ -45,7 +45,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInst
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -56,7 +56,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInst
 |属性|类型|描述|
 |:---|:---|:---|
 |userId|String|要吊销为其分配应用程序许可证的 UserId|
-|notifyManagedDevices|布尔值|指示是否应当向设备发送撤销通知的布尔值|
+|notifyManagedDevices|Boolean|指示是否应当向设备发送撤销通知的布尔值|
 
 
 
@@ -84,7 +84,6 @@ Content-length: 66
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 
