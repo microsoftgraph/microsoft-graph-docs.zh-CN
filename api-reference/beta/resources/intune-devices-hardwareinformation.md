@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a1d8a94e44663bd6070d9b6f9d50a3fed7db9e22d12dcb70bc1cf9400f5342a0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a01c6b27d57947d14ba907a0d2dcf662b5e57f79
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54148055"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58799794"
 ---
 # <a name="hardwareinformation-resource-type"></a>hardwareInformation 资源类型
 
@@ -35,28 +35,28 @@ ms.locfileid: "54148055"
 |phoneNumber|String|设备的电话号码|
 |subscriberCarrier|String|设备的订阅者运营商|
 |cellularTechnology|String|设备的手机网络技术|
-|wifiMac|String|设备的 WiFi MAC 地址|
-|operatingSystemLanguage|String|设备的操作系统语言|
+|wifiMac|字符串|设备的 WiFi MAC 地址|
+|operatingSystemLanguage|字符串|设备的操作系统语言|
 |isSupervised|Boolean|设备的监督模式|
 |isEncrypted|Boolean|设备的加密状态|
-|batterySerialNumber|String|设备当前电池的序列号|
+|batterySerialNumber|字符串|设备当前电池的序列号|
 |batteryHealthPercentage|Int32|设备的当前电池运行状况百分比。 有效值为 0 至 100|
 |batteryChargeCycles|Int32|设备当前电池经过的充电周期数。 有效值为 0 到 2147483647|
-|isSharedDevice|布尔值|共享iPad|
+|isSharedDevice|Boolean|共享iPad|
 |sharedDeviceCachedUsers|[sharedAppleDeviceUser](../resources/intune-devices-sharedappledeviceuser.md) 集合|共享 Apple 设备的所有用户|
-|tpmSpecificationVersion|String|指定规范版本的字符串。|
-|operatingSystemEdition|String|指定操作系统版本的字符串。|
-|deviceFullQualifiedDomainName|String|返回设备名称的完全限定 (（如果有) ）。 如果设备未加入域，它将返回空字符串。 |
+|tpmSpecificationVersion|字符串|指定规范版本的字符串。|
+|operatingSystemEdition|字符串|指定操作系统版本的字符串。|
+|deviceFullQualifiedDomainName|字符串|返回设备名称的完全限定 (（如果有) ）。 如果设备未加入域，它将返回空字符串。 |
 |deviceGuardVirtualizationBasedSecurityHardwareRequirementState|[deviceGuardVirtualizationBasedSecurityHardwareRequirementState](../resources/intune-devices-deviceguardvirtualizationbasedsecurityhardwarerequirementstate.md)|基于虚拟化的安全硬件要求状态。 可取值为：`meetHardwareRequirements`、`secureBootRequired`、`dmaProtectionRequired`、`hyperVNotSupportedForGuestVM`、`hyperVNotAvailable`。|
 |deviceGuardVirtualizationBasedSecurityState|[deviceGuardVirtualizationBasedSecurityState](../resources/intune-devices-deviceguardvirtualizationbasedsecuritystate.md)|基于虚拟化的安全状态。 . 可取值为：`running`、`rebootRequired`、`require64BitArchitecture`、`notLicensed`、`notConfigured`、`doesNotMeetHardwareRequirements` 或 `other`。|
-|deviceGuardLocalSystemAuthorityCredentialGuardState|[deviceGuardLocalSystemAuthorityCredentialGuardState](../resources/intune-devices-deviceguardlocalsystemauthoritycredentialguardstate.md)|本地系统颁发 (LSA) 凭据保护状态。 . 可取值为：`running`、`rebootRequired`、`notLicensed`、`notConfigured`、`virtualizationBasedSecurityNotRunning`。|
+|deviceGuardLocalSystemAuthorityCredentialGuardState|[deviceGuardLocalSystemAuthorityCredentialGuardState](../resources/intune-devices-deviceguardlocalsystemauthoritycredentialguardstate.md)|本地系统颁发 (LSA) Credential Guard 状态。 . 可取值为：`running`、`rebootRequired`、`notLicensed`、`notConfigured`、`virtualizationBasedSecurityNotRunning`。|
 |osBuildNumber|String|Android 设备上的操作系统内部版本号|
 |operatingSystemProductType|Int32|指定操作系统 ProductType Windows的 Int。 此处的更多详细信息 https://go.microsoft.com/fwlink/?linkid=2126950 。 有效值为 0 到 2147483647|
 |ipAddressV4|String|IPAddressV4|
 |subnetAddress|String|SubnetAddress|
 |esimIdentifier|String|eSIM 标识符|
 |systemManagementBIOSVersion|String|SMBIOS 报告的 BIOS 版本|
-|tpmManufacturer|字符串|唯一命名 TPM 制造商的标识信息|
+|tpmManufacturer|String|唯一命名 TPM 制造商的标识信息|
 |tpmVersion|String|制造商指定的 TPM 版本|
 
 ## <a name="relationships"></a>关系
@@ -115,7 +115,6 @@ ms.locfileid: "54148055"
   "tpmVersion": "String"
 }
 ```
-
 
 
 

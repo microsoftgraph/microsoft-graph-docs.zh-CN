@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0f4040dd8c78859c9e977b8a650940ebc178d240
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 4b5fae204dc8969dd1cb1507102b33353742bdf4
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58264918"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801302"
 ---
 # <a name="create-cloudpcconnectivityissue"></a>创建 cloudPCConnectivityIssue
 
@@ -27,9 +27,9 @@ ms.locfileid: "58264918"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/cloudPCConnectivityIssues
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,7 +53,7 @@ POST /deviceManagement/cloudPCConnectivityIssues
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|用户体验分析连接问题事件实体的唯一标识符。|
+|id|字符串|用户体验分析连接问题事件实体的唯一标识符。|
 |deviceId|String|与连接关联的设备的 Intune DeviceId。|
 |errorCode|String|连接问题的错误代码。|
 |errorDateTime|DateTimeOffset|连接启动的时间。 时间以 ISO 8601 格式显示，协调世界时 (UTC) 时间。|
@@ -104,7 +104,6 @@ Content-Length: 374
   "recommendedAction": "Recommended Action value"
 }
 ```
-
 
 
 

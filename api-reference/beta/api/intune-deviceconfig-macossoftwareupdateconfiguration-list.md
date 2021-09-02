@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cc5486ffebe8a728f59fe3d651440ee64fcdb2fbaba61bac7f562ae9caf985a2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0bf0e9b21fbeb7730f384301fb4910b369eeb6da
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54188657"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58807158"
 ---
 # <a name="list-macossoftwareupdateconfigurations"></a>列出 macOSSoftwareUpdateConfigurations
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -122,7 +122,6 @@ Content-Length: 1935
   ]
 }
 ```
-
 
 
 

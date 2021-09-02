@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 570253f46f68ac852b6524008fda3365b1571cc0
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: e40612aa0486f6aeaa6c28394cc3bea338dbc66d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58263826"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801204"
 ---
 # <a name="androidmanagedstoreappconfigurationschemaitem-resource-type"></a>androidManagedStoreAppConfigurationSchemaItem 资源类型
 
@@ -71,7 +71,6 @@ Android 应用程序的自定义配置架构中的单个配置项。
   ]
 }
 ```
-
 
 
 

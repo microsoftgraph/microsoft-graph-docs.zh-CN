@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 694c273d6eb412092b22a8a0e0f73be7d046f54d197c37ce2d1344c325c491ef
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: efb0b46002ae77fcb10629756ef366eea69d9ca9
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54242518"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58815510"
 ---
 # <a name="devicemanagementexchangeaccessrule-resource-type"></a>deviceManagementExchangeAccessRule 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "54242518"
 设备访问规则Exchange。
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |deviceClass|[deviceManagementExchangeDeviceClass](../resources/intune-onboarding-devicemanagementexchangedeviceclass.md)|受此规则影响的设备类。|
 |accessLevel|[deviceManagementExchangeAccessLevel](../resources/intune-onboarding-devicemanagementexchangeaccesslevel.md)|此规则Exchange的访问级别。 可取值为：`none`、`allow`、`block`、`quarantine`。|
@@ -49,7 +49,6 @@ ms.locfileid: "54242518"
   "accessLevel": "String"
 }
 ```
-
 
 
 

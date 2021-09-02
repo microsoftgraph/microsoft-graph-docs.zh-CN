@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5ddffa19b2ca68925d8d4f9f7f181d0ea3dfd5b5ff0af6e9519128cf0a6c2a2f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 17b6bb04dacdac63809ac3d66ead29531c7eae0b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54191072"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818826"
 ---
 # <a name="update-windowsqualityupdateprofile"></a>更新 windowsQualityUpdateProfile
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/windowsQualityUpdateProfiles/{windowsQualityUpdateProfil
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,14 +54,14 @@ PATCH /deviceManagement/windowsQualityUpdateProfiles/{windowsQualityUpdateProfil
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|Intune 策略 ID。|
-|displayName|字符串|配置文件显示名称的配置文件。|
-|description|String|由用户指定的配置文件的说明。|
+|displayName|String|配置文件显示名称的配置文件。|
+|description|字符串|由用户指定的配置文件的说明。|
 |expeditedUpdateSettings|[expeditedWindowsQualityUpdateSettings](../resources/intune-softwareupdate-expeditedwindowsqualityupdatesettings.md)|加速更新设置。|
 |createdDateTime|DateTimeOffset|创建配置文件的日期时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改配置文件的日期时间。|
-|roleScopeTagIds|String collection|此质量更新实体的范围标记列表。|
-|releaseDateDisplayName|字符串|为质量更新版本显示的友好发布日期|
-|deployableContentDisplayName|String|友好显示名称更新配置文件可部署内容的友好策略|
+|roleScopeTagIds|字符串集合|此质量更新实体的范围标记列表。|
+|releaseDateDisplayName|String|为质量更新版本显示的友好发布日期|
+|deployableContentDisplayName|String|质量显示名称配置文件可部署内容的友好解决方案|
 
 
 
@@ -120,7 +120,6 @@ Content-Length: 730
   "deployableContentDisplayName": "Deployable Content Display Name value"
 }
 ```
-
 
 
 

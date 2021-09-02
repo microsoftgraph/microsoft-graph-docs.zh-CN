@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 82531f862d6ef5ec6d96600be380ecf202ff5fdda21ad6ce0882a0cdea657675
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e59f76b941aba6233a7048721a33072e1a4c4d3c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54179954"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58788063"
 ---
 # <a name="update-macosextensionsconfiguration"></a>更新 macOSExtensionsConfiguration
 
@@ -45,7 +45,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -55,22 +55,22 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|布尔值|指示基础设备配置是否支持分配范围标记。 当此值为 false 且实体对范围用户不可见时，不允许分配给 ScopeTags 属性。 这适用于在 Silverlight 中创建的旧版策略，可通过在 Azure 门户中删除和重新创建策略来解决。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|指示基础设备配置是否支持分配范围标记。 当此值为 false 且实体对范围用户不可见时，不允许分配给 ScopeTags 属性。 这适用于在 Silverlight 中创建的旧版策略，可通过在 Azure 门户中删除和重新创建策略来解决。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|此策略的操作系统版本适用性。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|description|字符串|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|kernelExtensionOverridesAllowed|布尔值|如果设置为 true，则用户可以批准配置配置文件未明确允许的其他内核扩展。|
-|kernelExtensionAllowedTeamIdentifiers|String collection|允许加载此列表中的团队标识符有效签名的所有内核扩展。|
+|kernelExtensionOverridesAllowed|Boolean|如果设置为 true，则用户可以批准配置配置文件未明确允许的其他内核扩展。|
+|kernelExtensionAllowedTeamIdentifiers|字符串集合|允许加载此列表中的团队标识符有效签名的所有内核扩展。|
 |kernelExtensionsAllowed|[macOSKernelExtension](../resources/intune-deviceconfig-macoskernelextension.md) 集合|将允许加载的内核扩展的列表。 . 该集合最多可包含 500 个元素。|
-|systemExtensionsBlockOverride|布尔值|获取或设置是否允许用户批准配置文件未明确允许的其他系统扩展。|
-|systemExtensionsAllowedTeamIdentifiers|String collection|获取或设置允许的团队标识符列表。 使用任何指定的团队标识符签名的任何系统扩展都将被批准。|
+|systemExtensionsBlockOverride|Boolean|获取或设置是否允许用户批准配置文件未明确允许的其他系统扩展。|
+|systemExtensionsAllowedTeamIdentifiers|字符串集合|获取或设置允许的团队标识符列表。 使用任何指定的团队标识符签名的任何系统扩展都将被批准。|
 |systemExtensionsAllowed|[macOSSystemExtension](../resources/intune-deviceconfig-macossystemextension.md) 集合|获取或设置允许的 macOS 系统扩展的列表。 该集合最多可包含 500 个元素。|
 |systemExtensionsAllowedTypes|[macOSSystemExtensionTypeMapping](../resources/intune-deviceconfig-macossystemextensiontypemapping.md) 集合|获取或设置允许的 macOS 系统扩展类型的列表。 该集合最多可包含 500 个元素。|
 
@@ -221,7 +221,6 @@ Content-Length: 2137
   ]
 }
 ```
-
 
 
 

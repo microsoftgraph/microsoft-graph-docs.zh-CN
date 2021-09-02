@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ad625d6a5de51b40eadfdd7df0cf7ba8b371dda13b8ddda98433c225bf2d6f4c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 000ed81fc388f24da2c7f299516505b1d71bcca0
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54242641"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787853"
 ---
 # <a name="applogdecryptionalgorithm-enum-type"></a>appLogDecryptionAlgorithm 枚举类型
 
@@ -26,7 +26,6 @@ ms.locfileid: "54242641"
 |成员|值|说明|
 |:---|:---|:---|
 |aes256|0|尚未记录|
-
 
 
 

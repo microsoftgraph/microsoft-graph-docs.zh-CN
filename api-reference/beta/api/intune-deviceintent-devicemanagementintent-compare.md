@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a307acb8138134104c5ea97a386c987a6f3a25c523507efd8df6d6528f5e24ed
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a425abab595dc939427f363ee3ecd0a6bace8857
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54137176"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816835"
 ---
 # <a name="compare-function"></a>compare 函数
 
@@ -43,14 +43,14 @@ GET /deviceManagement/intents/{deviceManagementIntentId}/compare
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求 URL 中，提供以下查询参数（含值）。
 下表显示了可用于此函数的参数。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |templateId|String|尚未记录|
 
@@ -88,7 +88,6 @@ Content-Length: 364
   ]
 }
 ```
-
 
 
 

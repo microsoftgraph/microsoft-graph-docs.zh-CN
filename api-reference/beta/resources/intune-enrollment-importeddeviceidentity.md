@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6c4b7f6344444a339644b3eef9717b25372962fa1ceb8ba770b80214b97c56c9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f1dbcb41d30bec09335316503fbc8f93f6264c34
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54185668"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803488"
 ---
 # <a name="importeddeviceidentity-resource-type"></a>importedDeviceIdentity 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54185668"
 
 importedDeviceIdentity 资源表示设备的唯一硬件标识，该设备已预先进行预阶段，用于预注册配置。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 importedDeviceIdentities](../api/intune-enrollment-importeddeviceidentity-list.md)|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) 集合|列出 [importedDeviceIdentity 对象的属性和](../resources/intune-enrollment-importeddeviceidentity.md) 关系。|
@@ -36,13 +36,13 @@ importedDeviceIdentity 资源表示设备的唯一硬件标识，该设备已预
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|导入的设备标识的 ID|
-|importedDeviceIdentifier|字符串|导入的设备标识符|
+|id|String|导入的设备标识的 ID|
+|importedDeviceIdentifier|String|导入的设备标识符|
 |importedDeviceIdentityType|[importedDeviceIdentityType](../resources/intune-enrollment-importeddeviceidentitytype.md)|导入的设备标识的类型。 可取值为：`unknown`、`imei`、`serialNumber`。|
 |lastModifiedDateTime|DateTimeOffset|说明的上次修改日期/时间|
 |createdDateTime|DateTimeOffset|设备的创建日期时间|
 |lastContactedDateTime|DateTimeOffset|设备的上次联系日期时间|
-|description|字符串|设备说明|
+|description|String|设备说明|
 |enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Intune 中的设备状态。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
 |平台|[平台](../resources/intune-enrollment-platform.md)|设备平台。 可取值为：`unknown`、`ios`、`android`、`windows`、`windowsMobile`、`macOS`。|
 
@@ -71,7 +71,6 @@ importedDeviceIdentity 资源表示设备的唯一硬件标识，该设备已预
   "platform": "String"
 }
 ```
-
 
 
 

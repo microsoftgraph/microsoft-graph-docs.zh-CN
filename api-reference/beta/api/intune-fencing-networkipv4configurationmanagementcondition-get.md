@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 42d70c36653cd84fe61c2984297eeb0a4be3e8103f95f3b822393fe803b7f931
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e319bfd0c3aaec75f9acb45688d08f53a7484f05
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54171173"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58814803"
 ---
 # <a name="get-networkipv4configurationmanagementcondition"></a>获取 networkIPv4ConfigurationManagementCondition
 
@@ -47,7 +47,7 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -96,7 +96,6 @@ Content-Length: 756
   }
 }
 ```
-
 
 
 

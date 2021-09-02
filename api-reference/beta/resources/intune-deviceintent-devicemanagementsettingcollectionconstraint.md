@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 45d2ea304187697da21425d3c485f0ffa5671f2d68a4bd3453e12d92da142b86
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b9d4a342f5ccbe3fa4ec1564833037be00b76861
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54156210"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58819099"
 ---
 # <a name="devicemanagementsettingcollectionconstraint-resource-type"></a>deviceManagementSettingCollectionConstraint 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "54156210"
 继承自 [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |minimumLength|Int32|集合中元素的最小数目|
 |maximumLength|Int32|集合中元素的最大数量|
@@ -48,7 +48,6 @@ ms.locfileid: "54156210"
   "maximumLength": 1024
 }
 ```
-
 
 
 

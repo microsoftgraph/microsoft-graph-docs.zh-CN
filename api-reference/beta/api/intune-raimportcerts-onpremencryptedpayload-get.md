@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f7eaf4e63ac842f16524e4418b23aa56c7b124d76f953e4e613cdca143e1fce1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 77bd03fe86e958589d0af8a0aba2408d506ef1e0
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54145640"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816287"
 ---
 # <a name="get-onpremencryptedpayload"></a>获取 onPremEncryptedPayload
 
@@ -46,7 +46,7 @@ GET /onPremEncryptedPayloads/{onPremEncryptedPayloadsId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -92,7 +92,6 @@ Content-Length: 834
   }
 }
 ```
-
 
 
 

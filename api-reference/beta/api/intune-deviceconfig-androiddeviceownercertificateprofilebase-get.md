@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d8db194c9a54ec1aa5715ead5923915ee65bcd53f5854b372967cbe3b46501fe
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fec585b2f1e70d9e3d7b25f5b9053f0f080387a3
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54166867"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818721"
 ---
 # <a name="get-androiddeviceownercertificateprofilebase"></a>获取 androidDeviceOwnerCertificateProfileBase
 
@@ -47,7 +47,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -120,7 +120,6 @@ Content-Length: 1734
   }
 }
 ```
-
 
 
 

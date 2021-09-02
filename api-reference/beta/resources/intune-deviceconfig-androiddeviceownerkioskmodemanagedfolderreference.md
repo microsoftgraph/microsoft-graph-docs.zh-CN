@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 93cd963d2754e56928eae8e8a450b9f3e40aa177e0ea2cd1d3b991586a070195
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bcdb62a5c8ebf740b9c9f0060289af0ebded8ff3
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54173238"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58819218"
 ---
 # <a name="androiddeviceownerkioskmodemanagedfolderreference-resource-type"></a>androidDeviceOwnerKioskModeManagedFolderReference 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "54173238"
 继承自 [androidDeviceOwnerKioskModeHomeScreenItem](../resources/intune-deviceconfig-androiddeviceownerkioskmodehomescreenitem.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |folderName|String|文件夹的名称|
 |folderIdentifier|String|文件夹的唯一标识符|
@@ -48,7 +48,6 @@ ms.locfileid: "54173238"
   "folderIdentifier": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b3a4be81c3bf77a0bf53fb1cfa32bdf691acc9923e780cb2b8d281bc6e21d440
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ca2ed2e8290c5739aec5f0ad394043d93843712c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54127479"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787341"
 ---
 # <a name="gethistoricalreport-action"></a>getHistoricalReport 操作
 
@@ -43,7 +43,7 @@ POST /deviceManagement/reports/getHistoricalReport
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -106,7 +106,6 @@ Content-Length: 83
   "value": "Z2V0SGlzdG9yaWNhbFJlcG9ydCBJbnR1bmUgRG9jIFNhbXBsZSAxNjE5NjA4MTY0"
 }
 ```
-
 
 
 

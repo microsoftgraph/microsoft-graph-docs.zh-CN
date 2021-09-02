@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 59c76431ab5812bce62a417297339ee46c59691e80d2f84035cc801ed70f8af6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0fde63ebef1ce0e8e5ef48252e9014704c768ed8
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54145374"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818075"
 ---
 # <a name="configurationmanagerclientinformation-resource-type"></a>configurationManagerClientInformation 资源类型
 
@@ -23,10 +23,10 @@ ms.locfileid: "54145374"
 从 SCCM 同步的配置管理器客户端信息
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
-|clientIdentifier|字符串|SCCM 中的 Configuration Manager 客户端 ID|
-|isBlocked|布尔值|Configuration Manager 客户端从 SCCM 阻止状态|
+|clientIdentifier|String|SCCM 中的 Configuration Manager 客户端 ID|
+|isBlocked|Boolean|Configuration Manager 客户端从 SCCM 阻止状态|
 
 ## <a name="relationships"></a>关系
 无
@@ -45,7 +45,6 @@ ms.locfileid: "54145374"
   "isBlocked": true
 }
 ```
-
 
 
 

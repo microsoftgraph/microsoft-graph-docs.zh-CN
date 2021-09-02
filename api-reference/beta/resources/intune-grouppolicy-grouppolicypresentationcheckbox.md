@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b3a7e1eab7bdc0fd5d8f072b51316d1b4195351e024e827a5e3613315150906e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7d7b9124a58b9a740c6fbb2c9324d77d285740f2
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54214962"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795835"
 ---
 # <a name="grouppolicypresentationcheckbox-resource-type"></a>groupPolicyPresentationCheckBox 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "54214962"
 
 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 groupPolicyPresentationCheckBoxes](../api/intune-grouppolicy-grouppolicypresentationcheckbox-list.md)|[groupPolicyPresentationCheckBox](../resources/intune-grouppolicy-grouppolicypresentationcheckbox.md) 集合|列出 [groupPolicyPresentationCheckBox 对象的属性和](../resources/intune-grouppolicy-grouppolicypresentationcheckbox.md) 关系。|
@@ -40,7 +40,7 @@ ms.locfileid: "54214962"
 |标签|String|任何演示文稿实体的本地化文本标签。 默认值为空白。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |id|String|实体的键。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|defaultChecked|布尔值|复选框的默认值。 默认值为 false。|
+|defaultChecked|Boolean|复选框的默认值。 默认值为 false。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -64,7 +64,6 @@ ms.locfileid: "54214962"
   "defaultChecked": true
 }
 ```
-
 
 
 

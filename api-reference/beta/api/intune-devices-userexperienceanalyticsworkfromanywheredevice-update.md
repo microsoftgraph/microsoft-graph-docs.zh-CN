@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 097f229ff724ad1501c18a6a09d7ac077563b6c5
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: b4b84e2cc4cbe4f317a1ca385a46ebf448f3db8f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257759"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58800196"
 ---
 # <a name="update-userexperienceanalyticsworkfromanywheredevice"></a>更新 userExperienceAnalyticsWorkFromAnywhereDevice
 
@@ -27,9 +27,9 @@ ms.locfileid: "58257759"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/userExperienceAnalyticsWorkFromAnywhereMetrics/{userExpe
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,33 +53,38 @@ PATCH /deviceManagement/userExperienceAnalyticsWorkFromAnywhereMetrics/{userExpe
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|用户体验分析的唯一标识符从任何设备工作。|
+|id|字符串|用户体验分析的唯一标识符从任何设备工作。|
 |deviceName|String|来自任何设备名称的工作。|
 |serialNumber|String|用户体验随设备序列号随处工作。|
 |manufacturer|String|用户体验从任何设备制造商处工作。|
 |model|String|用户体验从任何设备型号开始工作。|
-|ownership|字符串|用户体验从任何设备所有权开始工作。|
+|ownership|String|用户体验从任何设备所有权开始工作。|
 |managedBy|String|用户体验从设备的任何管理代理工作。|
-|autoPilotRegistered|布尔值|用户体验从 intune 设备的 autopilotRegistered 的任何位置工作。|
+|autoPilotRegistered|Boolean|用户体验从 intune 设备的 autopilotRegistered 的任何位置工作。|
 |autoPilotProfileAssigned|布尔值|用户体验分析从 intune 设备的 autopilotProfileAssigned 的任何位置工作。|
 |azureAdRegistered|布尔值|用户体验从任何设备的 azureAdRegistered 工作。|
-|azureAdDeviceId|String|用户体验从 Azure Ad 设备 ID 的任何位置工作。|
+|azureAdDeviceId|字符串|用户体验从 Azure Ad 设备 ID 的任何位置工作。|
 |azureAdJoinType|String|用户体验从任何设备的 azure Ad joinType 工作。|
 |osDescription|String|用户体验从任何设备的操作系统说明工作。|
 |osVersion|String|用户体验从任何设备的操作系统版本工作。|
-|tenantAttached|布尔值|用户体验从任何设备的 tenantAttached 工作。|
-|compliancePolicySetToIntune|布尔值|用户体验从任何设备的 compliancePolicySetToIntune 工作。|
-|otherWorkloadsSetToIntune|布尔值|用户体验从任何设备的其他WorkloadsSetToIntune 工作。|
-|upgradeEligibility|[operatingSystemUpgradeEligibility](../resources/intune-devices-operatingsystemupgradeeligibility.md)|用户体验从设备的任何 Windows 升级资格状态工作。 可取值为：`upgraded`、`unknown`、`notCapable`、`capable`。|
-|ramCheckFailed|布尔值|用户体验分析是否从任何设备 RAM 硬件检查失败，设备无法升级到最新版本的 Windows|
-|storageCheckFailed|布尔值|用户体验适用于任何设备，设备升级到最新版本的 Windows 时存储硬件检查是否失败。|
-|processorCoreCountCheckFailed|布尔值|用户体验适用于任何设备，设备升级到最新版本的 Windows 时处理器硬件核心计数检查是否失败。|
-|processorSpeedCheckFailed|布尔值|用户体验适用于任何设备，设备升级到最新版本的 Windows 时处理器硬件速度检查是否失败。|
-|tpmCheckFailed|布尔值|用户体验从任何设备工作，"受信任的平台模块 (TPM) 设备升级到 Windows 的最新版本的硬件检查失败。|
-|secureBootCheckFailed|布尔值|用户体验适用于任何设备，安全启动硬件检查是否因设备升级到最新版本的 Windows 而失败。|
-|processorFamilyCheckFailed|布尔值|用户体验适用于任何设备，设备升级到最新版本的 Windows 时处理器硬件系列检查是否失败。|
-|processor64BitCheckFailed|布尔值|用户体验适用于任何设备，处理器硬件 64 位体系结构检查是否失败，设备无法升级到最新版本的 Windows。|
-|osCheckFailed|布尔值|用户体验适用于任何设备，操作系统检查是否失败，设备是否升级到最新版本的 Windows。|
+|tenantAttached|Boolean|用户体验从任何设备的 tenantAttached 工作。|
+|compliancePolicySetToIntune|Boolean|用户体验从任何设备的 compliancePolicySetToIntune 工作。|
+|otherWorkloadsSetToIntune|Boolean|用户体验从任何设备的其他WorkloadsSetToIntune 工作。|
+|upgradeEligibility|[operatingSystemUpgradeEligibility](../resources/intune-devices-operatingsystemupgradeeligibility.md)|用户体验从设备的任何 Windows 升级资格状态工作。 可能的值是：`upgraded`、`unknown`、`notCapable`、`capable`。|
+|ramCheckFailed|Boolean|用户体验分析是否从任何设备 RAM 硬件检查失败，设备无法升级到最新版本的 Windows|
+|storageCheckFailed|Boolean|用户体验适用于任何设备，设备升级到最新版本的 Windows 时存储硬件检查是否失败。|
+|processorCoreCountCheckFailed|Boolean|用户体验适用于任何设备，设备升级到最新版本的 Windows 时处理器硬件核心计数检查是否失败。|
+|processorSpeedCheckFailed|Boolean|用户体验适用于任何设备，设备升级到最新版本的 Windows 时处理器硬件速度检查是否失败。|
+|tpmCheckFailed|Boolean|用户体验适用于任何设备，"受信任的平台模块 (TPM) 设备升级到 Windows 的最新版本的硬件检查失败。|
+|secureBootCheckFailed|Boolean|用户体验适用于任何设备，安全启动硬件检查是否因设备升级到最新版本的 Windows 而失败。|
+|processorFamilyCheckFailed|Boolean|用户体验适用于任何设备，设备升级到最新版本的 Windows 时处理器硬件系列检查是否失败。|
+|processor64BitCheckFailed|Boolean|用户体验适用于任何设备，处理器硬件 64 位体系结构检查是否失败，设备无法升级到最新版本的 Windows。|
+|osCheckFailed|Boolean|用户体验适用于任何设备，操作系统检查是否失败，设备是否升级到最新版本的 Windows。|
+|windowsScore|双精度|用户体验从每个设备窗口分数的任何位置工作。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
+|cloudManagementScore|双精度|用户体验按设备云管理分数从任意位置工作。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
+|cloudIdentityScore|双精度|用户体验从每个设备云标识分数的任何位置工作。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
+|cloudProvisioningScore|双精度|用户体验从每个设备云预配分数的任何位置工作。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
+|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验从每个设备运行状况状态的任何位置工作。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
 
 
 
@@ -93,7 +98,7 @@ PATCH /deviceManagement/userExperienceAnalyticsWorkFromAnywhereMetrics/{userExpe
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsWorkFromAnywhereMetrics/{userExperienceAnalyticsWorkFromAnywhereMetricId}/metricDevices/{userExperienceAnalyticsWorkFromAnywhereDeviceId}
 Content-type: application/json
-Content-length: 1028
+Content-length: 1215
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsWorkFromAnywhereDevice",
@@ -122,7 +127,12 @@ Content-length: 1028
   "secureBootCheckFailed": true,
   "processorFamilyCheckFailed": true,
   "processor64BitCheckFailed": true,
-  "osCheckFailed": true
+  "osCheckFailed": true,
+  "windowsScore": 4.0,
+  "cloudManagementScore": 6.666666666666667,
+  "cloudIdentityScore": 6.0,
+  "cloudProvisioningScore": 7.333333333333333,
+  "healthStatus": "insufficientData"
 }
 ```
 
@@ -131,7 +141,7 @@ Content-length: 1028
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1077
+Content-Length: 1264
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsWorkFromAnywhereDevice",
@@ -161,10 +171,14 @@ Content-Length: 1077
   "secureBootCheckFailed": true,
   "processorFamilyCheckFailed": true,
   "processor64BitCheckFailed": true,
-  "osCheckFailed": true
+  "osCheckFailed": true,
+  "windowsScore": 4.0,
+  "cloudManagementScore": 6.666666666666667,
+  "cloudIdentityScore": 6.0,
+  "cloudProvisioningScore": 7.333333333333333,
+  "healthStatus": "insufficientData"
 }
 ```
-
 
 
 

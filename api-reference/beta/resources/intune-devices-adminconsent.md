@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d56646299766427a4598ab1073064bfa8ea86a3c405df17b59bb52866b47e75a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: dcf849e8c44e68bb4b76417748dbe795e0dd5852
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54227363"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816513"
 ---
 # <a name="adminconsent-resource-type"></a>adminConsent 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "54227363"
 管理员同意信息。
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |shareAPNSData|[adminConsentState](../resources/intune-devices-adminconsentstate.md)|管理员同意将用户和设备数据共享到 Apple 的状态。 可取值为：`notConfigured`、`granted`、`notGranted`。|
 |shareUserExperienceAnalyticsData|[adminConsentState](../resources/intune-devices-adminconsentstate.md)|获取或设置共享用户体验分析数据的管理员同意。 可取值为：`notConfigured`、`granted`、`notGranted`。|
@@ -45,7 +45,6 @@ ms.locfileid: "54227363"
   "shareUserExperienceAnalyticsData": "String"
 }
 ```
-
 
 
 

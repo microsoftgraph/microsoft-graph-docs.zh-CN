@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 66091da281afb1594184cb6672b90d200fd94ebaf343a8fe8f75be0031756165
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d1f9dd1dfb994eb2007bda62546b24908a5852ff
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54183889"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58821015"
 ---
 # <a name="create-securitybaselinedevicestate"></a>创建 securityBaselineDeviceState
 
@@ -43,7 +43,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/microsoft.graph.se
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,10 +53,10 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/microsoft.graph.se
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的唯一标识符|
+|id|字符串|实体的唯一标识符|
 |managedDeviceId|String|Intune 设备 ID|
 |deviceDisplayName|String|设备的显示名称|
-|userPrincipalName|字符串|用户主体名称|
+|userPrincipalName|String|用户主体名称|
 |state|[securityBaselineComplianceState](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|安全基线合规性状态。 可取值为：`unknown`、`secure`、`notApplicable`、`notSecure`、`error`、`conflict`。|
 |lastReportedDateTime|DateTimeOffset|策略报告的上次修改日期时间|
 
@@ -101,7 +101,6 @@ Content-Length: 359
   "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
 }
 ```
-
 
 
 

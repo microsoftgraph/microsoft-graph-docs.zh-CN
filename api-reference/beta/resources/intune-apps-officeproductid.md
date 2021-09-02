@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6a292fad5b9254831107c751b8413ac600ed1dc9e88c01a8b5af03ae4cd312f4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: db85070d86bc0b974c917eb2ca492ca9ccec481f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54213268"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795268"
 ---
 # <a name="officeproductid-enum-type"></a>officeProductId 枚举类型
 
@@ -26,10 +26,9 @@ ms.locfileid: "54213268"
 |成员|值|说明|
 |:---|:---|:---|
 |o365ProPlusRetail|0|尚未记录|
-|o365BusinessRetail|1 |尚未记录|
-|visioProRetail|2 |尚未记录|
-|projectProRetail|3 |尚未记录|
-
+|o365BusinessRetail|1|尚未记录|
+|visioProRetail|2|尚未记录|
+|projectProRetail|3|尚未记录|
 
 
 

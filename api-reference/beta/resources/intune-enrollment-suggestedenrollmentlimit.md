@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7595aa2ab614a7c9abb0ac9c76c4b05fda1288eea7b11c24b2b1932a1265a321
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d7c01f21a85a84d9cddff349913e596b32793df5
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54197938"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58817360"
 ---
 # <a name="suggestedenrollmentlimit-resource-type"></a>suggestedEnrollmentLimit 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "54197938"
 suggestedEnrollmentLimit 资源表示在给定注册类型时建议的注册限制。
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |suggestedDailyLimit|Int32|一天内建议的注册限制|
 
@@ -43,7 +43,6 @@ suggestedEnrollmentLimit 资源表示在给定注册类型时建议的注册限�
   "suggestedDailyLimit": 1024
 }
 ```
-
 
 
 
