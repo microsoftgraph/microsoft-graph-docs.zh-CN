@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bcf34b6b6e13c4a10ab59ae29f4d79e85549fb1c189fe14bcc189cfeb3c8658e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7394ab6b8a0a81a005f7f6d8966214b17251ec0b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54219813"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818749"
 ---
 # <a name="windowsinformationprotectionapp-resource-type"></a>windowsInformationProtectionApp 资源类型
 
@@ -25,8 +25,8 @@ ms.locfileid: "54219813"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|字符串|应用显示名称。|
-|description|字符串|应用的说明。|
+|displayName|String|应用显示名称。|
+|description|String|应用的说明。|
 |publisherName|String|发布者名称|
 |productName|String|产品名称。|
 |denied|Boolean|如果为 true，则应用的保护或免除受到拒绝。|
@@ -51,7 +51,6 @@ ms.locfileid: "54219813"
   "denied": true
 }
 ```
-
 
 
 

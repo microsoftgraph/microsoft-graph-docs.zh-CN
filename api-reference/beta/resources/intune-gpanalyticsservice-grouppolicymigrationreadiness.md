@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4c965cf4a18f025c8f45e9ef46f5d5e26658dbbc9993c947c35f3fc6cdf7d77d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3e1b02c804268a4eadb0503f3bab53ff37c95563
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54224556"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58782929"
 ---
 # <a name="grouppolicymigrationreadiness-enum-type"></a>groupPolicyMigrationReadiness 枚举类型
 
@@ -25,12 +25,11 @@ ms.locfileid: "54224556"
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|无|1 |无 Intune 覆盖范围|
-|partial|2 |部分 Intune 覆盖范围|
-|complete|3 |完整的 Intune 覆盖范围|
+|无|1|无 Intune 覆盖范围|
+|partial|2|部分 Intune 覆盖范围|
+|complete|3|完整的 Intune 覆盖范围|
 |error|4 |分析覆盖范围时出错|
 |notApplicable|5 |GPO 中无组策略设置|
-
 
 
 

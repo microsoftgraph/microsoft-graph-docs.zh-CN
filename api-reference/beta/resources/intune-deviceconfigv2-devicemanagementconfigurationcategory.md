@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fb269ed4d4b047b060e5bd6b5685293069d9cc8fce8a11fcced9b711456a083c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 60850512e44de514892fcd998962e7a37197d343
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54153032"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58784826"
 ---
 # <a name="devicemanagementconfigurationcategory-resource-type"></a>deviceManagementConfigurationCategory 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54153032"
 
 设备管理配置策略
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceManagementConfigurationCategories](../api/intune-deviceconfigv2-devicemanagementconfigurationcategory-list.md)|[deviceManagementConfigurationCategory](../resources/intune-deviceconfigv2-devicemanagementconfigurationcategory.md) 集合|列出 [deviceManagementConfigurationCategory](../resources/intune-deviceconfigv2-devicemanagementconfigurationcategory.md) 对象的属性和关系。|
@@ -35,16 +35,16 @@ ms.locfileid: "54153032"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|项的标识符|
-|description|字符串|项目说明|
+|description|String|项目说明|
 |helpText|String|项目的帮助文本|
-|name|String|项目名称|
-|displayName|字符串|项目的显示名称|
-|平台|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|平台类型，类别中的设置具有。 可取值为：`none`、`macOS`、`windows10X`、`windows10`。|
-|technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|技术类型，类别中的设置具有。 可取值为：`none`、`mdm`、`windows10XManagement`、`configManager`、`microsoftSense`。|
+|name|字符串|项目名称|
+|displayName|String|项目的显示名称|
+|平台|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|平台类型，类别中的设置具有。 可能的值是：`none`、`macOS`、`windows10X`、`windows10`。|
+|technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|技术类型，类别中的设置具有。 可取值为：`none`、`mdm`、`windows10XManagement`、`configManager`、`microsoftSense`、`exchangeOnline`。|
 |settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|指示类别包含用于合规性或配置的设置。 可取值为：`none`、`configuration`。|
 |parentCategoryId|字符串|类别的父 ID。|
 |rootCategoryId|字符串|类别的根 ID。|
-|childCategoryIds|String collection|类别的子 ID 列表。|
+|childCategoryIds|字符串集合|类别的子 ID 列表。|
 
 ## <a name="relationships"></a>关系
 无
@@ -75,7 +75,6 @@ ms.locfileid: "54153032"
   ]
 }
 ```
-
 
 
 

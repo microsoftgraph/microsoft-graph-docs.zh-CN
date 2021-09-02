@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 20f58e58b36abe69ecdb9ef24da990516d8ea01ed37cf3ad3fba44e6f708fdb8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 392862f8bf8853195743b741727485de383fc62c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54198246"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58799505"
 ---
 # <a name="ndesconnector-resource-type"></a>ndesConnector 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54198246"
 
 表示 OnPrem Ndes 连接器的实体。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 ndesConnectors](../api/intune-deviceconfig-ndesconnector-list.md)|[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) 集合|列出 [ndesConnector 对象的属性和](../resources/intune-deviceconfig-ndesconnector.md) 关系。|
@@ -37,7 +37,7 @@ ms.locfileid: "54198246"
 |id|String|NDES 连接器的键。|
 |lastConnectionDateTime|DateTimeOffset|Ndes 连接器的上次连接时间|
 |state|[ndesConnectorState](../resources/intune-deviceconfig-ndesconnectorstate.md)|Ndes 连接器状态。 可取值为：`none`、`active`、`inactive`。|
-|displayName|字符串|Ndes 连接器的友好名称。|
+|displayName|String|Ndes 连接器的友好名称。|
 
 ## <a name="relationships"></a>关系
 无
@@ -59,7 +59,6 @@ ms.locfileid: "54198246"
   "displayName": "String"
 }
 ```
-
 
 
 

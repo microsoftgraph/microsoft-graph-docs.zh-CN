@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c8bd854a63b3cc4af4bada2d4d71ae8fcdd336f9d3fa6a552db810c501846d50
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b454eb4e5ce477273f9a4fd7f0d373240502c02d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54241525"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787228"
 ---
 # <a name="rolemanagement-resource-type"></a>roleManagement 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54241525"
 
 尚未记录
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 roleManagement](../api/intune-rbac-rolemanagement-get.md)|[roleManagement](../resources/intune-rbac-rolemanagement.md)|读取 [roleManagement 对象的属性和](../resources/intune-rbac-rolemanagement.md) 关系。|
@@ -52,7 +52,6 @@ ms.locfileid: "54241525"
   "id": "String (identifier)"
 }
 ```
-
 
 
 

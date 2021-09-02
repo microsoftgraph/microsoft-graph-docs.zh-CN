@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2e8c2b05e4bbd240710e866b873d680e817670ea1124e259e0451c91a007839f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 002643fa3b5420c3b4d2eb2dc0fe09e25acae84a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54253500"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818763"
 ---
 # <a name="managedappdataingestionlocation-enum-type"></a>managedAppDataIngestionLocation 枚举类型
 
@@ -23,12 +23,11 @@ ms.locfileid: "54253500"
 可用于将数据引入组织文档的位置
 
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
-|oneDriveForBusiness|1 |OneDrive for Business|
-|sharePoint|2 |SharePoint Online|
-|相机|3 |设备的相机|
-
+|oneDriveForBusiness|1|OneDrive for Business|
+|sharePoint|2|SharePoint Online|
+|相机|3|设备的相机|
 
 
 

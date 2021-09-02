@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7aa7b0ae1131a772313b8bdb06aebfc13479fc5a1a269891d0c429b75520d50a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3b09a76ead5818616a67d0ce057ea2c466e76582
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54209803"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797210"
 ---
 # <a name="macoslobappassignmentsettings-resource-type"></a>macOsLobAppAssignmentSettings 资源类型
 
@@ -28,7 +28,7 @@ ms.locfileid: "54209803"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|uninstallOnDeviceRemoval|布尔值|从 Intune 中删除设备时是否卸载应用。|
+|uninstallOnDeviceRemoval|Boolean|从 Intune 中删除设备时是否卸载应用。|
 
 ## <a name="relationships"></a>关系
 无
@@ -46,7 +46,6 @@ ms.locfileid: "54209803"
   "uninstallOnDeviceRemoval": true
 }
 ```
-
 
 
 

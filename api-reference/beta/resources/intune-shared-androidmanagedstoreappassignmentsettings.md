@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3571ac519277739d54bd8a379ff7af2474b95b514a8135cf4857624d7a5baeb5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 18e5c8db52c2191c6db3332b7423c749b7d466c4
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54217125"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789549"
 ---
 # <a name="androidmanagedstoreappassignmentsettings-resource-type"></a>androidManagedStoreAppAssignmentSettings 资源类型
 
@@ -48,7 +48,6 @@ ms.locfileid: "54217125"
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2a62b7f9441296eb8fa18066daf4d76c3025eb3e
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 40f67a21030c071f724545469e0d3b4e42289482
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58263847"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797659"
 ---
 # <a name="update-managementconditionstatement"></a>更新 managementConditionStatement
 
@@ -44,7 +44,7 @@ PATCH /deviceManagement/managementConditions/{managementConditionId}/managementC
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,7 +54,7 @@ PATCH /deviceManagement/managementConditions/{managementConditionId}/managementC
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|管理条件语句的唯一标识符。 创建时分配的系统生成值。|
+|id|字符串|管理条件语句的唯一标识符。 创建时分配的系统生成值。|
 |displayName|字符串|管理员定义的管理条件声明的名称。|
 |description|String|管理员定义的管理条件声明的说明。|
 |createdDateTime|DateTimeOffset|创建管理条件语句的时间。 生成的服务器端。|
@@ -117,7 +117,6 @@ Content-Length: 526
   ]
 }
 ```
-
 
 
 

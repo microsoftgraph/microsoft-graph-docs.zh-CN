@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fbeb76b55dc8f991b81ad203939a449c72c4f3f20de5c3b3b15b763164eeba0a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 885b395bb2731a2cf1927d9f4e0992ffbe3fb2b7
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54215060"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787587"
 ---
 # <a name="deleteuserfromsharedappledeviceactionresult-resource-type"></a>deleteUserFromSharedAppleDeviceActionResult 资源类型
 
@@ -54,7 +54,6 @@ ms.locfileid: "54215060"
   "userPrincipalName": "String"
 }
 ```
-
 
 
 

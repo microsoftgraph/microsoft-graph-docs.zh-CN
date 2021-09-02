@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 801cafddad4cdd89d4cbd669e0cecf678c0b79c8432604bb5bf201b3c240ab08
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f99f8dc17e292ca01a614cf1201cab8d0f918cd4
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54164172"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783860"
 ---
 # <a name="devicemanagementdomainjoinconnector-resource-type"></a>deviceManagementDomainJoinConnector 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54164172"
 
 域加入连接器是一个连接器，负责分配 (和删除) 帐户 blob
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceManagementDomainJoinConnectors](../api/intune-odj-devicemanagementdomainjoinconnector-list.md)|[deviceManagementDomainJoinConnector](../resources/intune-odj-devicemanagementdomainjoinconnector.md) 集合|列出 [deviceManagementDomainJoinConnector 对象的属性和](../resources/intune-odj-devicemanagementdomainjoinconnector.md) 关系。|
@@ -61,7 +61,6 @@ ms.locfileid: "54164172"
   "version": "String"
 }
 ```
-
 
 
 

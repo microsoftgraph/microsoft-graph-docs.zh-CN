@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9736e190b698af948dbbf0c67f9e4381a1ac9282f7b8ac6536ccabb72262b555
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 723fa805042e055075a52a5a134e213f1feef3bc
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54245028"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801148"
 ---
 # <a name="devicecompliancescriptrule-resource-type"></a>deviceComplianceScriptRule 资源类型
 
@@ -30,7 +30,7 @@ ms.locfileid: "54245028"
 |deviceComplianceScriptRulOperator|[deviceComplianceScriptRulOperator](../resources/intune-deviceconfig-devicecompliancescriptruloperator.md)|规则中指定的运算符。 可能的值是 `none` `and` `or` ：、、、、、、、、、、 `isEquals` `notEquals` `greaterThan` `lessThan` `between` `notBetween` `greaterEquals` `lessEquals` `dayTimeBetween` `beginsWith` `notBeginsWith` `endsWith` `notEndsWith` `contains` `notContains` `allOf` `oneOf` `noneOf` `setEquals` `orderedSetEquals` `subsetOf` `excludesAll` 、|
 |DataType|[dataType](../resources/intune-deviceconfig-datatype.md)|规则中指定的数据类型。 可能的值是 `none` `boolean` `int64` ：、、、、、、、、、、 `double` `string` `dateTime` `version` `base64` `xml` `booleanArray` `int64Array` `doubleArray` `stringArray` `dateTimeArray` `versionArray` 。|
 |deviceComplianceScriptRuleDataType|[deviceComplianceScriptRuleDataType](../resources/intune-deviceconfig-devicecompliancescriptruledatatype.md)|规则中指定的数据类型。 可能的值是 `none` `boolean` `int64` ：、、、、、、、、、、 `double` `string` `dateTime` `version` `base64` `xml` `booleanArray` `int64Array` `doubleArray` `stringArray` `dateTimeArray` `versionArray` 。|
-|操作nd|字符串|规则中指定的操作数。|
+|操作nd|String|规则中指定的操作数。|
 
 ## <a name="relationships"></a>关系
 无
@@ -53,7 +53,6 @@ ms.locfileid: "54245028"
   "operand": "String"
 }
 ```
-
 
 
 

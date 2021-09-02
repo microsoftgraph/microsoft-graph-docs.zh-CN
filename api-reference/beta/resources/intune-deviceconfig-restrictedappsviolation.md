@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 65de2d32ef56117c410909468302c4e841c760c4
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 5c86b8e166b10aabb03356f3f51c61d3ddb38a9e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58253479"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804510"
 ---
 # <a name="restrictedappsviolation-resource-type"></a>restrictedAppsViolation 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "58253479"
 
 每个用户的设备违反受限制的应用配置文件
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 restrictedAppsViolations](../api/intune-deviceconfig-restrictedappsviolation-list.md)|[restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md) 集合|列出 [restrictedAppsViolation 对象的属性和](../resources/intune-deviceconfig-restrictedappsviolation.md) 关系。|
@@ -35,12 +35,12 @@ ms.locfileid: "58253479"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|对象的唯一标识符。 由 accountId、deviceId、policyId 和 userId 组成|
-|userId|字符串|用户唯一标识符，必须为 Guid|
+|userId|String|用户唯一标识符，必须为 Guid|
 |userName|String|用户名|
-|managedDeviceId|String|托管设备唯一标识符，必须为 Guid|
+|managedDeviceId|字符串|托管设备唯一标识符，必须为 Guid|
 |deviceName|String|设备名称|
 |deviceConfigurationId|String|设备配置文件的唯一标识符，必须为 Guid|
-|deviceConfigurationName|String|设备配置文件名称|
+|deviceConfigurationName|字符串|设备配置文件名称|
 |platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|平台类型。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`windows10XProfile`、`androidAOSP`、`all`。|
 |restrictedAppsState|[restrictedAppsState](../resources/intune-deviceconfig-restrictedappsstate.md)|受限制的应用状态。 可取值为：`prohibitedApps`、`notApprovedApps`。|
 |restrictedApps|[managedDeviceReportedApp](../resources/intune-deviceconfig-manageddevicereportedapp.md) 集合|违反的受限应用列表|
@@ -76,7 +76,6 @@ ms.locfileid: "58253479"
   ]
 }
 ```
-
 
 
 

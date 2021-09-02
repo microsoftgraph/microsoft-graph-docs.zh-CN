@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 29617a21c858ec9ef5f5ee619d8f46f9746fdf3bd0a55c0dbf82761f8ff98db0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b85c5af3298dc12b868041deb923b3fbda79c208
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54244643"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789570"
 ---
 # <a name="embeddedsimactivationcodepoolassignment-resource-type"></a>embeddedSIMActivationCodePoolAssignment 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54244643"
 
 嵌入式 SIM 卡激活代码池分配实体将特定的 embeddedSIMActivationCodePool 分配给 AAD 设备组。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 embeddedSIMActivationCodePoolAssignments](../api/intune-esim-embeddedsimactivationcodepoolassignment-list.md)|[embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md) 集合|列出 [embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md) 对象的属性和关系。|
@@ -59,7 +59,6 @@ ms.locfileid: "54244643"
   }
 }
 ```
-
 
 
 

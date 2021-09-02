@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3d3bc9b0862dd376b393019838980ce9c82c7df3
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 38ef6bde17bb005b9e08c9ba957ff6c4ee0a4fd5
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58267016"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803256"
 ---
 # <a name="deviceenrollmenttype-enum-type"></a>deviceEnrollmentType 枚举类型
 
@@ -26,9 +26,9 @@ ms.locfileid: "58267016"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|默认值，未收集注册类型。|
-|userEnrollment|1 |用户通过 BYOD 渠道推动注册。|
-|deviceEnrollmentManager|2 |使用设备注册管理器帐户的用户注册。|
-|appleBulkWithUser|3 |具有用户质询的 Apple 批量注册。  (DEP、Apple Configurator) |
+|userEnrollment|1|用户通过 BYOD 渠道推动注册。|
+|deviceEnrollmentManager|2|使用设备注册管理器帐户的用户注册。|
+|appleBulkWithUser|3|具有用户质询的 Apple 批量注册。  (DEP、Apple Configurator) |
 |appleBulkWithoutUser|4 |Apple 批量注册，无需用户质询。  (DEP、Apple Configurator、Mobile Config) |
 |windowsAzureADJoin|5 |Windows 10加入 Azure AD。|
 |windowsBulkUserless|6 |Windows 10使用证书通过 ICD 批量注册。|
@@ -42,7 +42,6 @@ ms.locfileid: "58267016"
 |androidEnterpriseDedicatedDevice|15 |Android Enterprise专用设备|
 |androidEnterpriseFullyManaged|16 |Android Enterprise完全托管|
 |androidEnterpriseCorporateWorkProfile|17 |Android Enterprise 公司工作配置文件|
-
 
 
 

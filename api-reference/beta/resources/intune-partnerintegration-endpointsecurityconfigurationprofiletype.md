@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0941b4cc3d73fdaef7c1f404a2b35f9826787867f4f3b4d19eabb868c27e80a1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7c2086885e02aeed8df1e0c8bc9f5cadafb56c26
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54241534"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787818"
 ---
 # <a name="endpointsecurityconfigurationprofiletype-enum-type"></a>endpointSecurityConfigurationProfileType 枚举类型
 
@@ -26,9 +26,9 @@ ms.locfileid: "54241534"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|未知。|
-|防病毒|1 |防病毒。|
-|windowsSecurity|2 |Windows 安全中心。|
-|bitLocker|3 |BitLocker。|
+|防病毒|1|防病毒。|
+|windowsSecurity|2|Windows 安全中心。|
+|bitLocker|3|BitLocker。|
 |fileVault|4 |FileVault。|
 |防火墙|5 |防火墙。|
 |firewallRules|6 |防火墙规则。|
@@ -38,9 +38,8 @@ ms.locfileid: "54241534"
 |exploitProtection|10 |Exploit Protection。|
 |webProtection|11 |Web 保护。|
 |applicationControl|12 |应用程序控制。|
-|attackSurfaceReductionRules|13 |攻击面减少规则。|
+|attackSurfaceReductionRules|13|攻击面减少规则。|
 |accountProtection|14 |帐户保护。|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8537f7bf9736d5d6e2a7015d3d1f11af7f7be0710698e964465d41311543e3f6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 55328cb788ab1994eec2ec7e0f8984577b7b9a3b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54193529"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58805273"
 ---
 # <a name="expeditedwindowsqualityupdatesettings-resource-type"></a>expeditedWindowsQualityUpdateSettings 资源类型
 
@@ -45,7 +45,6 @@ ms.locfileid: "54193529"
   "daysUntilForcedReboot": 1024
 }
 ```
-
 
 
 

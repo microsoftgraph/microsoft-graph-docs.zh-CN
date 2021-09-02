@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ecf715b850842586bcaa63af14f0b30988af8211493340eaf592cf0b37dcf161
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c8c38241f15a7255fb50687513b1773ed8809110
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54142930"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804713"
 ---
 # <a name="create-devicemanagementsettingcategory"></a>创建 deviceManagementSettingCategory
 
@@ -43,7 +43,7 @@ POST /deviceManagement/categories
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,8 +53,8 @@ POST /deviceManagement/categories
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|类别 ID|
-|displayName|字符串|类别名称|
+|id|字符串|类别 ID|
+|displayName|String|类别名称|
 |hasRequiredSetting|布尔值|类别包含所需的顶级设置|
 
 
@@ -92,7 +92,6 @@ Content-Length: 193
   "hasRequiredSetting": true
 }
 ```
-
 
 
 

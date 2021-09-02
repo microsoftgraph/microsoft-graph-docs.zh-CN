@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0817bb82e098d1fab93da3381c81faafc03b4cf0810e602934924305e0971edf
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b58391b7942bfdc32af6fce25a5e23b7a5f5bccc
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54206107"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787783"
 ---
 # <a name="enrollmentstate-enum-type"></a>enrollmentState 枚举类型
 
@@ -26,12 +26,11 @@ ms.locfileid: "54206107"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|设备注册状态未知|
-|enrolled|1 |设备已注册。|
-|pendingReset|2 |已注册，但通过注册配置文件注册，并且已注册的配置文件与分配的配置文件不同。|
-|failed|3 |未注册，并且存在注册失败记录。|
+|enrolled|1|设备已注册。|
+|pendingReset|2|已注册，但通过注册配置文件注册，并且已注册的配置文件与分配的配置文件不同。|
+|failed|3|未注册，并且存在注册失败记录。|
 |notContacted|4 |设备已导入，但没有注册。|
 |blocked|5 |设备以无用户状态注册，但因应用安装失败，无法移动到用户注册。|
-
 
 
 

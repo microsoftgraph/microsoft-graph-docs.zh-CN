@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 54b088c138d644fd1f721acda76b1bfb013876ff12d1b3fda68a96e577fdde62
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 62cb2c09694fa93edbfd1b048a4ba7c5843adfda
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54173210"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818545"
 ---
 # <a name="edgesearchenginecustom-resource-type"></a>edgeSearchEngineCustom 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "54173210"
 继承自 [edgeSearchEngineBase](../resources/intune-deviceconfig-edgesearchenginebase.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |edgeSearchEngineOpenSearchXmlUrl|String|指向包含 OpenSearch xml 文件的 https 链接，文件中至少包含指向搜索引擎的短名称和 URL。|
 
@@ -46,7 +46,6 @@ ms.locfileid: "54173210"
   "edgeSearchEngineOpenSearchXmlUrl": "String"
 }
 ```
-
 
 
 

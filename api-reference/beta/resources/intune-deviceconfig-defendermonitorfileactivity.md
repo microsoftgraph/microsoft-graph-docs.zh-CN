@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 41f3bd868a5bbd814a23dd89149eb7300c41c3cce31c362c1f360a7eca1de7fa
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bb3d16f9ff70de4e7457b31a5a48307e9fa48fdb
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54190617"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58759685"
 ---
 # <a name="defendermonitorfileactivity-enum-type"></a>defenderMonitorFileActivity 枚举类型
 
@@ -26,11 +26,10 @@ ms.locfileid: "54190617"
 |成员|值|说明|
 |:---|:---|:---|
 |userDefined|0|用户定义，默认值，无意图。|
-|disable|1 |禁用监视文件活动。|
-|monitorAllFiles|2 |监视所有文件。|
-|monitorIncomingFilesOnly|3 | 仅监视传入文件。|
+|disable|1|禁用监视文件活动。|
+|monitorAllFiles|2|监视所有文件。|
+|monitorIncomingFilesOnly|3| 仅监视传入文件。|
 |monitorOutgoingFilesOnly|4 |仅监视传出文件。|
-
 
 
 

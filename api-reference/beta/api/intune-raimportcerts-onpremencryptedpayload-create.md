@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5d5c31b116108f6517fa1c4d817c63ca499baf0934a896489d0af0ace220a317
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8fe9eb18e93e23a1e63c0cd2127a5cbef71b96d3
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54145654"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795289"
 ---
 # <a name="create-onpremencryptedpayload"></a>创建 onPremEncryptedPayload
 
@@ -43,7 +43,7 @@ POST /onPremEncryptedPayloads
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -64,7 +64,7 @@ POST /onPremEncryptedPayloads
 |plistTemplate|String|尚未记录|
 |encryptedBlob|二进制|尚未记录|
 |payloadVersion|Int32|尚未记录|
-|status|Int32|尚未记录|
+|状态|Int32|尚未记录|
 |createdTime|DateTimeOffset|尚未记录|
 |lastModifiedTime|DateTimeOffset|尚未记录|
 |eTag|String|尚未记录|
@@ -132,7 +132,6 @@ Content-Length: 781
   "isDeleted": true
 }
 ```
-
 
 
 

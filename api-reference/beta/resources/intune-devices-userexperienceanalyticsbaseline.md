@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4eae89f2fc1690fc7dc1239d7b73de8b970400aa114b20d9a3ed11201af11cf1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 730537696691c1039e924817d653497fb147338b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54251265"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803775"
 ---
 # <a name="userexperienceanalyticsbaseline-resource-type"></a>userExperienceAnalyticsBaseline 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54251265"
 
 用户体验分析基线实体包含比较用户体验分析分数的基线值。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 userExperienceAnalyticsBaselines](../api/intune-devices-userexperienceanalyticsbaseline-list.md)|[userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md) 集合|列出 [userExperienceAnalyticsBaseline 对象的属性和](../resources/intune-devices-userexperienceanalyticsbaseline.md) 关系。|
@@ -35,7 +35,7 @@ ms.locfileid: "54251265"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|用户体验分析基线的唯一标识符。|
-|displayName|字符串|用户体验分析基线的名称。|
+|displayName|String|用户体验分析基线的名称。|
 |overallScore|Int32|用户体验分析基线的整体分数。|
 |isBuiltIn|Boolean|表示当前比较基准是商业中值基线还是自定义比较基准。|
 |createdDateTime|DateTimeOffset|创建自定义比较基准的日期。|
@@ -68,7 +68,6 @@ ms.locfileid: "54251265"
   "createdDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

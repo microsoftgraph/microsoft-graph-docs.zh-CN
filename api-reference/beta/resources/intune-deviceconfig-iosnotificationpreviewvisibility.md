@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6084528f40184370dc9d5c1f481e4099c8129d637a2976b135ef17a7a7ada384
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3a3f7426134ecf4a5fec3f71cdc33654df292b30
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54198330"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58759664"
 ---
 # <a name="iosnotificationpreviewvisibility-enum-type"></a>iosNotificationPreviewVisibility 枚举类型
 
@@ -26,10 +26,9 @@ ms.locfileid: "54198330"
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|不会覆盖通知预览设置。|
-|alwaysShow|1 |始终显示通知预览。|
-|hideWhenLocked|2 |仅在设备解锁时显示通知预览。|
-|neverShow|3 |从不显示通知预览。|
-
+|alwaysShow|1|始终显示通知预览。|
+|hideWhenLocked|2|仅在设备解锁时显示通知预览。|
+|neverShow|3|从不显示通知预览。|
 
 
 

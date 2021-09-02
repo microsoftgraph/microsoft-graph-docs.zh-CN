@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d08290f5c14aa1c87538521304ee294f4a3e7a723c94aae16ba3d3b2d7f36c42
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a679b9e7a2d6dd9f468a85270968de218d0a3cd2
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54181109"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58784231"
 ---
 # <a name="miracastchannel-enum-type"></a>miracastChannel 枚举类型
 
@@ -26,9 +26,9 @@ ms.locfileid: "54181109"
 |成员|值|说明|
 |:---|:---|:---|
 |userDefined|0|用户定义，默认值，无意图。|
-|一个|1 |一个。|
-|two|2 |两个。|
-|three|3 |三。|
+|一个|1|一个。|
+|two|2|两个。|
+|three|3|三。|
 |four|4 |四。|
 |five|5 |五。|
 |六|6 |六。|
@@ -46,7 +46,6 @@ ms.locfileid: "54181109"
 |oneHundredFiftySeven|157|OneHundredFifty-Seven。|
 |oneHundredSixtyOne|161|OneHundredSixty-One。|
 |oneHundredSixtyFive|165|OneHundredSixty-Five。|
-
 
 
 
