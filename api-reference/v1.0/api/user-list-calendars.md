@@ -1,16 +1,16 @@
 ---
 title: 列出日历
 description: '获取用户的所有日历（`/calendars` 导航属性），从默认日历组或特定日历组中获取日历。 '
-localization_priority: Priority
+ms.localizationpriority: high
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7c464f840a9bb395e17e42f28a9c905f30287f01
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 85ec7c16d1c9a1e8fd9f037fe0a69967689ed460
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049385"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59007446"
 ---
 # <a name="list-calendars"></a>列出日历
 
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/v1.0/me/calendars
 ---
 
 ### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

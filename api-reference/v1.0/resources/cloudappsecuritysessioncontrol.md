@@ -1,16 +1,16 @@
 ---
 title: cloudAppSecuritySessionControl 资源类型
 description: 用于强制执行云应用安全检查的会话控制。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 7ba9d84a10ac25275abffd6c922286c010f02a042c5377f3f43b9f26e55be71a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 953e9960712061ed2dc1dd777f43424a62d481f7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54243614"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59007318"
 ---
 # <a name="cloudappsecuritysessioncontrol-resource-type"></a>cloudAppSecuritySessionControl 资源类型
 

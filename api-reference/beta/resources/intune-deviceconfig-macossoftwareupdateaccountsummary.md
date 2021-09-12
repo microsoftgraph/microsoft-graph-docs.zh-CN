@@ -2,15 +2,15 @@
 title: macOSSoftwareUpdateAccountSummary 资源类型
 description: 设备和用户的 MacOS 软件更新帐户摘要报告
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b2e5218f5c1473ce01106ec8044c9c55d15d867f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 467ee509de4b8cdd147328fd20686060d1a8b7d8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785162"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59009090"
 ---
 # <a name="macossoftwareupdateaccountsummary-resource-type"></a>macOSSoftwareUpdateAccountSummary 资源类型
 
@@ -28,7 +28,7 @@ ms.locfileid: "58785162"
 |[列出 macOSSoftwareUpdateAccountSummaries](../api/intune-deviceconfig-macossoftwareupdateaccountsummary-list.md)|[macOSSoftwareUpdateAccountSummary](../resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md) 集合|列出 [macOSSoftwareUpdateAccountSummary 对象的属性和](../resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md) 关系。|
 |[获取 macOSSoftwareUpdateAccountSummary](../api/intune-deviceconfig-macossoftwareupdateaccountsummary-get.md)|[macOSSoftwareUpdateAccountSummary](../resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md)|读取 [macOSSoftwareUpdateAccountSummary 对象的属性和](../resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md) 关系。|
 |[创建 macOSSoftwareUpdateAccountSummary](../api/intune-deviceconfig-macossoftwareupdateaccountsummary-create.md)|[macOSSoftwareUpdateAccountSummary](../resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md)|创建新的 [macOSSoftwareUpdateAccountSummary](../resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md) 对象。|
-|[删除 macOSSoftwareUpdateAccountSummary](../api/intune-deviceconfig-macossoftwareupdateaccountsummary-delete.md)|无|删除 [macOSSoftwareUpdateAccountSummary](../resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md)。|
+|[删除 macOSSoftwareUpdateAccountSummary](../api/intune-deviceconfig-macossoftwareupdateaccountsummary-delete.md)|None|删除 [macOSSoftwareUpdateAccountSummary](../resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md)。|
 |[更新 macOSSoftwareUpdateAccountSummary](../api/intune-deviceconfig-macossoftwareupdateaccountsummary-update.md)|[macOSSoftwareUpdateAccountSummary](../resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md)|更新 [macOSSoftwareUpdateAccountSummary 对象](../resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md) 的属性。|
 
 ## <a name="properties"></a>属性
@@ -37,7 +37,7 @@ ms.locfileid: "58785162"
 |id|String|实体的键。|
 |displayName|String|报告的名称|
 |deviceId|String|设备 ID。|
-|userId|字符串|用户 ID。|
+|userId|String|用户 ID。|
 |deviceName|String|设备名称。|
 |userPrincipalName|String|用户主体名称|
 |osVersion|String|操作系统版本。|

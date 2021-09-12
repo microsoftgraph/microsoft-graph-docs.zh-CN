@@ -2,15 +2,15 @@
 title: 获取组
 description: 获取组对象的属性和关系。
 author: Jordanndahl
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 63860da9bcb2c87c30577ce34f067f315efe15e9
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: 0deca2d2161bbdf278685108f6a1de1a89914987
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53030934"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59008311"
 ---
 # <a name="get-group"></a>获取组
 

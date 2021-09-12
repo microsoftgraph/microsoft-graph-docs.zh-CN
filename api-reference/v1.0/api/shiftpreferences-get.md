@@ -2,15 +2,15 @@
 title: 获取 shiftPreferences
 description: 按 ID 获取班次首选项。
 author: akumar39
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a4ee1518048931d605acfb4dd96908285fc44b9b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: edd09d141514a2c9418a6abecd46c34f96c86719
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52034852"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59015740"
 ---
 # <a name="get-shiftpreferences"></a>获取 shiftPreferences
 

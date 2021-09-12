@@ -2,21 +2,21 @@
 title: 列出 secureScores
 description: 检索 secureScore 对象的列表。
 author: preetikr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 3eea4465c7cbaa767ff03684515431adbdb560a6
-ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
+ms.openlocfilehash: 2798461f3d234e07f1a8dc391a95dc2f08a9fedd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48330359"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59007427"
 ---
 # <a name="list-securescores"></a>列出 secureScores
 
 命名空间：microsoft.graph
 
-检索 [secureScore](../resources/securescore.md) 对象的列表。
+检索 [secureScore 对象](../resources/securescore.md) 的列表。
 
 ## <a name="permissions"></a>权限
 
@@ -59,7 +59,7 @@ GET /security/secureScores?$filter={property} eq '{property-value}'
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 **secureScores** 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 **secureScores** 对象集合。
 
 ## <a name="example"></a>示例
 

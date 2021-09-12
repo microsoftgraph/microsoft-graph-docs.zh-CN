@@ -2,15 +2,15 @@
 title: bypassActivationLock 操作
 description: 跳过激活锁
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 48dd31807cc4169b00606da4e4998a3c4513b9c0b3f18e3e3271099717b0816b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 57a2aafb0058e1a031e3dad4e1c68d89b32dfef6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54192822"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59008018"
 ---
 # <a name="bypassactivationlock-action"></a>bypassActivationLock 操作
 

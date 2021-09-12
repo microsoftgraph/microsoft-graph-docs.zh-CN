@@ -2,15 +2,15 @@
 title: androidDeviceOwnerDefaultAppPermissionPolicyType 枚举类型
 description: Android 设备所有者默认应用权限策略类型。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 63c6c89abbe68a49c05dfd5d8fa9aa18825d2b17
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5da0a02419ca88b713c62636167e51701ec796ac
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788981"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017525"
 ---
 # <a name="androiddeviceownerdefaultapppermissionpolicytype-enum-type"></a>androidDeviceOwnerDefaultAppPermissionPolicyType 枚举类型
 

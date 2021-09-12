@@ -2,15 +2,15 @@
 title: 删除 complianceManagementPartner
 description: 删除 complianceManagementPartner。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5298c029c23a3b763053e8a1e55221a8736e999c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a94ebf8f10a6bc1197237da8c421aa3300a7324c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820560"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59009754"
 ---
 # <a name="delete-compliancemanagementpartner"></a>删除 complianceManagementPartner
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/complianceManagementPartners/{complianceManagementPartn
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

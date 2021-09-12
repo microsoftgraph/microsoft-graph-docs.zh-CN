@@ -2,15 +2,15 @@
 title: deviceManagementResourceAccessProfileBase 资源类型
 description: 资源访问的基本配置文件类型
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9e6a182af3aff9851095d689ebc41923534a143e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0d45ab56555c51e6902c063321f0992334a361d4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806577"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59008893"
 ---
 # <a name="devicemanagementresourceaccessprofilebase-resource-type"></a>deviceManagementResourceAccessProfileBase 资源类型
 
@@ -36,10 +36,10 @@ ms.locfileid: "58806577"
 |id|String|配置文件标识符|
 |version|Int32|配置文件的版本|
 |displayName|String|配置文件显示名称|
-|description|String|配置文件说明|
+|说明|String|配置文件说明|
 |creationDateTime|DateTimeOffset|DateTime 配置文件已创建|
 |lastModifiedDateTime|DateTimeOffset|上次修改日期时间配置文件|
-|roleScopeTagIds|字符串集合|范围标记|
+|roleScopeTagIds|String collection|范围标记|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|

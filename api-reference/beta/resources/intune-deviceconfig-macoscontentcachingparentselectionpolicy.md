@@ -2,15 +2,15 @@
 title: macOSContentCachingParentSelectionPolicy 枚举类型
 description: 确定内容缓存如何选择父缓存。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 26ee398da892231e79d85b2377bae103b36e671c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c1eff1bc3544606eb18683b3615f5f98a2d0f327
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783552"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59009131"
 ---
 # <a name="macoscontentcachingparentselectionpolicy-enum-type"></a>macOSContentCachingParentSelectionPolicy 枚举类型
 

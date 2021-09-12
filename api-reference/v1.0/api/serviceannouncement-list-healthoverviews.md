@@ -2,15 +2,15 @@
 title: 列出 healthOverviews
 description: 从 healthOverviews 导航属性中检索 serviceHealth 资源。
 author: payiAzure
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 8e1d8ec983c569d592eb36d54d1c3d8f11488830
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 4b3a4301a1dc17a327e1754c74baa867e225af48
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58259104"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59007440"
 ---
 # <a name="list-healthoverviews"></a>列出 healthOverviews
 命名空间：microsoft.graph
@@ -41,7 +41,7 @@ GET /admin/serviceAnnouncement/healthOverviews
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|

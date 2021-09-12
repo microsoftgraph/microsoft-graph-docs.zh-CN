@@ -2,15 +2,15 @@
 title: macOSContentCachingClientPolicy 枚举类型
 description: 确定内容缓存将服务于哪些客户端。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0fe2a16b27f244a318b6a6fd77f3828df2c77b14
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8bc8ab9be74dc9686ea534ae98ea170b4ed6760d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783559"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017497"
 ---
 # <a name="macoscontentcachingclientpolicy-enum-type"></a>macOSContentCachingClientPolicy 枚举类型
 

@@ -2,15 +2,15 @@
 title: 列出域
 description: 检索 domain 对象的列表。
 author: adimitui
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: bf2289438ae0c11be4d7bbf5e6d4bb4d7e1250ec
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ebbdc9738d99095537689c6fb9b943ab29ed15b5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054054"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59008408"
 ---
 # <a name="list-domains"></a>列出域
 
@@ -23,7 +23,7 @@ ms.locfileid: "52054054"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.Read.All    |
+|委派（工作或学校帐户） | Domain.Read.All、Domain.ReadWrite.All、Directory.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Domain.Read.All、Domain.ReadWrite.All、Directory.Read.All |
 

@@ -2,15 +2,15 @@
 title: deviceManagementConfigurationGroupSettingValue 资源类型
 description: GroupSetting 的值
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9da12cea41f19aff735cb4b3955affc8900c0490
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 163ed7f0dedcf3043a4b6b5eee83f0ffed1bd5aa
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816926"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59009061"
 ---
 # <a name="devicemanagementconfigurationgroupsettingvalue-resource-type"></a>deviceManagementConfigurationGroupSettingValue 资源类型
 
@@ -26,7 +26,7 @@ GroupSetting 的值
 继承自 [deviceManagementConfigurationSettingValue](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvalue.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |settingValueTemplateReference|[deviceManagementConfigurationSettingValueTemplateReference](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvaluetemplatereference.md)|设置值模板引用 继承自 [deviceManagementConfigurationSettingValue](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvalue.md)|
 |children|[deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md) 集合|此 GroupSetting 中包含的子设置实例的集合|

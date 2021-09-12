@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: RemoteItem
-localization_priority: Normal
+ms.localizationpriority: medium
 description: remoteItem 资源指示 driveItem 引用存在于其他驱动器中的项。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 3b53c652b79ab6f3645ad372403b2a4689783d6d5a13616e89b5779f81b61174
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4338b6c6f4a4191b7d073b834030af6a7fad5202
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54216642"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59006940"
 ---
 # <a name="remoteitem-resource-type"></a>RemoteItem 资源类型
 

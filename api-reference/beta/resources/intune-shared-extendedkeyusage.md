@@ -2,15 +2,15 @@
 title: extendedKeyUsage 资源类型
 description: 自定义扩展密钥使用定义
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3158eeb7f6f47f52ed0d6cfd0f6bd4d265e2aa66
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b04a56833ab6f971a09eb2e30e23a284e7de7e29
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803424"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59008851"
 ---
 # <a name="extendedkeyusage-resource-type"></a>extendedKeyUsage 资源类型
 

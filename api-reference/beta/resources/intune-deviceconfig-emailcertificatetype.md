@@ -2,15 +2,15 @@
 title: emailCertificateType 枚举类型
 description: 支持的电子邮件签名和加密的证书源。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4a2ba44ebc301e0d225ae5353059378cdbcbed91
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 365a4c7bfc8c79199c0d58efd5d1efd95c05168b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787860"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59009166"
 ---
 # <a name="emailcertificatetype-enum-type"></a>emailCertificateType 枚举类型
 

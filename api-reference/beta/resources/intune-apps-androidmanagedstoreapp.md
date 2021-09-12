@@ -2,15 +2,15 @@
 title: androidManagedStoreApp 资源类型
 description: 包含 Android 托管应用商店应用的属性和继承的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bc47e549e8c4915d09d5fd2b9609f29b92bf6130
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a89baa34cd7a76ae20949856efc7b0a22e2872b6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803817"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017609"
 ---
 # <a name="androidmanagedstoreapp-resource-type"></a>androidManagedStoreApp 资源类型
 
@@ -31,7 +31,7 @@ ms.locfileid: "58803817"
 |[列出 androidManagedStoreApps](../api/intune-apps-androidmanagedstoreapp-list.md)|[androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md) 集合|列出 [androidManagedStoreApp 对象的属性和](../resources/intune-apps-androidmanagedstoreapp.md) 关系。|
 |[获取 androidManagedStoreApp](../api/intune-apps-androidmanagedstoreapp-get.md)|[androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|读取 [androidManagedStoreApp 对象的属性和](../resources/intune-apps-androidmanagedstoreapp.md) 关系。|
 |[创建 androidManagedStoreApp](../api/intune-apps-androidmanagedstoreapp-create.md)|[androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|创建新的 [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md) 对象。|
-|[删除 androidManagedStoreApp](../api/intune-apps-androidmanagedstoreapp-delete.md)|无|删除 [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)。|
+|[删除 androidManagedStoreApp](../api/intune-apps-androidmanagedstoreapp-delete.md)|None|删除 [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)。|
 |[更新 androidManagedStoreApp](../api/intune-apps-androidmanagedstoreapp-update.md)|[androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|更新 [androidManagedStoreApp 对象](../resources/intune-apps-androidmanagedstoreapp.md) 的属性。|
 
 ## <a name="properties"></a>属性
@@ -39,7 +39,7 @@ ms.locfileid: "58803817"
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |displayName|String|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|description|String|应用的说明。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|说明|String|应用的说明。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publisher|String|应用的发布者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|要显示在应用详细信息中并用于图标上传的大图标。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |createdDateTime|DateTimeOffset|创建应用的日期和时间。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
@@ -47,7 +47,7 @@ ms.locfileid: "58803817"
 |isFeatured|Boolean|指示应用是否被管理员标记为特色的值。继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |privacyInformationUrl|String|隐私声明 URL。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |informationUrl|String|详细信息 URL。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|Owner|String|应用的所有者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|owner|String|应用的所有者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |developer|String|应用的开发者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |notes|String|应用的备注。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |uploadState|Int32|上载状态。 可能的值是：0 - `Not Ready` 、1 - `Ready` 、2 - `Processing` 。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|

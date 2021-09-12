@@ -2,15 +2,15 @@
 title: deviceManagementIntentUserState 资源类型
 description: 表示意图的用户状态的实体
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bd683b76a2641e9b3df6b7caee3e98fece063a3f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4eb108729302eab007eed5b04b2ea8fc584ce284
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796220"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59009054"
 ---
 # <a name="devicemanagementintentuserstate-resource-type"></a>deviceManagementIntentUserState 资源类型
 
@@ -28,7 +28,7 @@ ms.locfileid: "58796220"
 |[列出 deviceManagementIntentUserStates](../api/intune-deviceintent-devicemanagementintentuserstate-list.md)|[deviceManagementIntentUserState](../resources/intune-deviceintent-devicemanagementintentuserstate.md) 集合|列出 [deviceManagementIntentUserState 对象的属性和](../resources/intune-deviceintent-devicemanagementintentuserstate.md) 关系。|
 |[获取 deviceManagementIntentUserState](../api/intune-deviceintent-devicemanagementintentuserstate-get.md)|[deviceManagementIntentUserState](../resources/intune-deviceintent-devicemanagementintentuserstate.md)|读取 [deviceManagementIntentUserState 对象的属性和](../resources/intune-deviceintent-devicemanagementintentuserstate.md) 关系。|
 |[创建 deviceManagementIntentUserState](../api/intune-deviceintent-devicemanagementintentuserstate-create.md)|[deviceManagementIntentUserState](../resources/intune-deviceintent-devicemanagementintentuserstate.md)|创建新的 [deviceManagementIntentUserState](../resources/intune-deviceintent-devicemanagementintentuserstate.md) 对象。|
-|[删除 deviceManagementIntentUserState](../api/intune-deviceintent-devicemanagementintentuserstate-delete.md)|无|删除 [deviceManagementIntentUserState](../resources/intune-deviceintent-devicemanagementintentuserstate.md)。|
+|[删除 deviceManagementIntentUserState](../api/intune-deviceintent-devicemanagementintentuserstate-delete.md)|None|删除 [deviceManagementIntentUserState](../resources/intune-deviceintent-devicemanagementintentuserstate.md)。|
 |[更新 deviceManagementIntentUserState](../api/intune-deviceintent-devicemanagementintentuserstate-update.md)|[deviceManagementIntentUserState](../resources/intune-deviceintent-devicemanagementintentuserstate.md)|更新 [deviceManagementIntentUserState 对象](../resources/intune-deviceintent-devicemanagementintentuserstate.md) 的属性。|
 
 ## <a name="properties"></a>属性

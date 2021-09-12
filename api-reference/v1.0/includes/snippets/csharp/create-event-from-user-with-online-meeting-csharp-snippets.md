@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: e4a31d13a9e167d433011df1a9c84b49d74c6e16
-ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
+ms.openlocfilehash: 7d8dbde01a03dedc777d92a5eea270bb2715f5180eb24b62bf85bef9d6b6a9c2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43935142"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "57218635"
 ---
 ```csharp
 
@@ -45,6 +45,7 @@ var @event = new Event
             Type = AttendeeType.Required
         }
     },
+    AllowNewTimeProposals = true,
     IsOnlineMeeting = true,
     OnlineMeetingProvider = OnlineMeetingProviderType.TeamsForBusiness
 };

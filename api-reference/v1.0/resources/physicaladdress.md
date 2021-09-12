@@ -1,16 +1,16 @@
 ---
 title: physicalAddress 资源类型
 description: 表示资源（例如联系人或事件）的街道地址。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: e5abc3dbeebb53935b1cdb77e8ef6038670c6b66e2e96658564957eb4fb24ba9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 18f7867efcefba774c9fdd83b5dac9db7ddbcb66
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196570"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59006919"
 ---
 # <a name="physicaladdress-resource-type"></a>physicalAddress 资源类型
 

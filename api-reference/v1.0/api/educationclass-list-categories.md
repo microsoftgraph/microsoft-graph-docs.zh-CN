@@ -2,15 +2,15 @@
 title: 列出 assignmentCategories
 description: 检索类别对象的列表。
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 3d16806c748715410a2f3ed3d232feb171732f3f
-ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
+ms.openlocfilehash: 1412c4ce0d83f6fff11a2906cdeccb5915227440
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58367266"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59008382"
 ---
 # <a name="list-assignmentcategories"></a>列出 assignmentCategories
 
@@ -39,7 +39,7 @@ GET /education/classes/{id}/assignmentCategories
 
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 标头        | 值                     |
 | :------------ | :------------------------ |

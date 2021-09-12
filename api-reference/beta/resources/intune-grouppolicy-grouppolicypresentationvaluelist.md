@@ -2,15 +2,15 @@
 title: groupPolicyPresentationValueList 资源类型
 description: 实体表示策略定义上列表框演示文稿的名称/值对的集合。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3fa885eb713a4e734399a2e51124e9b747783cf7
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9b32fe9029256c72acce96b9d39b9c96c40caab7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797871"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59008998"
 ---
 # <a name="grouppolicypresentationvaluelist-resource-type"></a>groupPolicyPresentationValueList 资源类型
 
@@ -31,7 +31,7 @@ ms.locfileid: "58797871"
 |[列出 groupPolicyPresentationValueLists](../api/intune-grouppolicy-grouppolicypresentationvaluelist-list.md)|[groupPolicyPresentationValueList](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md) 集合|列出 [groupPolicyPresentationValueList 对象的属性和](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md) 关系。|
 |[获取 groupPolicyPresentationValueList](../api/intune-grouppolicy-grouppolicypresentationvaluelist-get.md)|[groupPolicyPresentationValueList](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md)|读取 [groupPolicyPresentationValueList 对象的属性和](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md) 关系。|
 |[创建 groupPolicyPresentationValueList](../api/intune-grouppolicy-grouppolicypresentationvaluelist-create.md)|[groupPolicyPresentationValueList](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md)|创建新的 [groupPolicyPresentationValueList](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md) 对象。|
-|[删除 groupPolicyPresentationValueList](../api/intune-grouppolicy-grouppolicypresentationvaluelist-delete.md)|无|删除 [groupPolicyPresentationValueList](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md)。|
+|[删除 groupPolicyPresentationValueList](../api/intune-grouppolicy-grouppolicypresentationvaluelist-delete.md)|None|删除 [groupPolicyPresentationValueList](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md)。|
 |[更新 groupPolicyPresentationValueList](../api/intune-grouppolicy-grouppolicypresentationvaluelist-update.md)|[groupPolicyPresentationValueList](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md)|更新 [groupPolicyPresentationValueList 对象](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md) 的属性。|
 
 ## <a name="properties"></a>属性

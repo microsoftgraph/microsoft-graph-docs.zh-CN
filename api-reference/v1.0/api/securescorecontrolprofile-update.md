@@ -2,15 +2,15 @@
 title: 更新 secureScoreControlProfile
 description: 更新任何集成解决方案中的可编辑 secureScoreControlProfile 对象，以更改各种属性，如 assignedTo 或 tenantNote。
 author: preetikr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: a429e08171c90b1e8c3307eaf1696c6f3016bbda
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 50a30fa3f817d93b60bdbca686a8e19e85150a27
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786655"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59007521"
 ---
 # <a name="update-securescorecontrolprofile"></a>更新 secureScoreControlProfile
 

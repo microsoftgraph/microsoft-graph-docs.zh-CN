@@ -2,15 +2,15 @@
 title: 删除 androidCustomConfiguration
 description: 删除 androidCustomConfiguration。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 97d92b244e72ceb030a9f079ac3011500ed177f085d51bcc93dc975bb73eba42
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9e4ef549e50e17a7c8483720932c36074c40022e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54185227"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59008025"
 ---
 # <a name="delete-androidcustomconfiguration"></a>删除 androidCustomConfiguration
 

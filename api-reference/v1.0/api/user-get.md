@@ -2,15 +2,15 @@
 title: 获取用户
 description: 检索用户对象的属性和关系。
 author: jpettere
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 8024db6c3f3263becdf7b22ca388a5c7462ce4c1
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+ms.openlocfilehash: 685667236af5e9f0fa599eeb0c9a8cfbd1f8e46f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53351333"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59007432"
 ---
 # <a name="get-a-user"></a>获取用户
 

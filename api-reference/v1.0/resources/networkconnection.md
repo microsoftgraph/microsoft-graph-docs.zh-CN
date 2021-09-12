@@ -1,16 +1,16 @@
 ---
 title: networkConnection 资源类型
 description: 包含有关与警报相关的网络连接的有状态信息。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: chinguyen1
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 6f386378abb67e310d3bc6ae2574470d92e48ce66ac6dda3b454f61a195e642d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: edddb2f14458a0c4afd60465c687f618937f43e8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54223331"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59006912"
 ---
 # <a name="networkconnection-resource-type"></a>networkConnection 资源类型
 
@@ -24,10 +24,10 @@ ms.locfileid: "54223331"
 |:---------------|:--------|:----------|
 |applicationName|String|管理网络连接应用程序的名称 (例如 Facebook 或 SMTP) 。|
 |destinationAddress|String|网络连接 (的目标 IP 地址) 。|
-|destinationLocation|String|位置 (IP 地址映射) 网络连接目标关联的位置。|
+|destinationLocation|String|位置 (IP 地址映射) 网络连接目标相关联的位置。|
 |destinationDomain|String|目标 URL 的目标域部分。  (例如"www.contoso.com") 。|
-|destinationPort|String|网络连接 (的目标端口) 。|
-|destinationUrl|String|网络连接 URL/URI 字符串 - 不包括参数。  (例如"www.contoso.com/products/default.html') |
+|destinationPort|String|网络连接 (的目标) 。|
+|destinationUrl|String|网络连接 URL/URI 字符串 - 不包括参数。  (例如"www.contoso.com/products/default.html") |
 |direction|connectionDirection|网络连接方向。 可取值为：`unknown`、`inbound`、`outbound`。|
 |domainRegisteredDateTime|DateTimeOffset|目标域的注册日期。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |localDnsName|String|显示在主机本地 DNS 缓存中的本地 DNS 名称解析 (例如，如果"主机"文件被篡改) 。|
@@ -39,7 +39,7 @@ ms.locfileid: "54223331"
 |riskScore|String|提供商生成/计算网络连接的风险评分。 建议的值范围为 0-1，等于百分比。|
 |sourceAddress|String|源 (，即) 网络连接 (源 IP 地址) 。|
 |sourceLocation|String|位置 (IP 地址映射) 网络连接源关联的 IP 地址映射。|
-|sourcePort|String|源 (，即) 网络 (源 IP 端口) 。|
+|sourcePort|String|源 (，即) 的 (源 IP 端口) 。|
 |status|connectionStatus|网络连接状态。 可取值为：`unknown`、`attempted`、`succeeded`、`blocked`、`failed`。|
 |urlParameters|String|参数 (URL) 后缀。|
 

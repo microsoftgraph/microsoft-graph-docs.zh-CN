@@ -2,15 +2,15 @@
 title: androidDeviceOwnerBatteryPluggedMode 枚举类型
 description: Android 设备所有者设备插入电源模式状态的可能值。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c528321798aef2512dcc4144d58d372944b5dfee
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3aab2161c58b81c28afef993d0c809c16431cafa
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794467"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017546"
 ---
 # <a name="androiddeviceownerbatterypluggedmode-enum-type"></a>androidDeviceOwnerBatteryPluggedMode 枚举类型
 

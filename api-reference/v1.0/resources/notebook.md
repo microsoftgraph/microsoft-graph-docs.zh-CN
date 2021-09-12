@@ -2,15 +2,15 @@
 title: 笔记本资源类型
 description: 一OneNote笔记本。
 author: jewan-microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: ac3a433e3fa0e13beefb83a4525cb5975c9dfbe56d1c668c7bd8931982e84425
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c79092f0e9032f87553468556ea45d7119426d28
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189448"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59006953"
 ---
 # <a name="notebook-resource-type"></a>笔记本资源类型
 
@@ -84,7 +84,7 @@ ms.locfileid: "54189448"
 |[列出分区组](../api/notebook-list-sectiongroups.md) |[SectionGroup](sectiongroup.md) 集合| 获取指定笔记本中的分区组集合。|
 |[创建分区](../api/notebook-post-sections.md) |[OnenoteSection](section.md)| 通过发布到指定笔记本中的节集合创建分区。|
 |[列出节](../api/notebook-list-sections.md) |[OnenoteSection](section.md) 集合| 获取指定笔记本中的分区集合。|
-|[copyNotebook](../api/notebook-copynotebook.md)| 无 | 复制笔记本。|
+|[copyNotebook](../api/notebook-copynotebook.md)| None | 复制笔记本。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

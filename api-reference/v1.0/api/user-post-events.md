@@ -1,16 +1,16 @@
 ---
 title: 创建事件
 description: 在用户的默认日历或指定日历中创建事件。
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 author: harini84
 ms.prod: outlook
-ms.openlocfilehash: 8900708ae5d22ef658ec8d5ea9dc6f9c6b798b7c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 320ddb3c2d3dbf5f25f185ed2565f2dce057be34
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52038731"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59007455"
 ---
 # <a name="create-event"></a>创建事件
 
@@ -553,7 +553,7 @@ Content-type: application/json
 
 在请求正文中，提供 [event](../resources/event.md) 对象的 JSON 表示形式。
 #### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "name": "create_event_recurring",

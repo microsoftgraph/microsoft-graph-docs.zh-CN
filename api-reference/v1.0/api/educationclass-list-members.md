@@ -1,16 +1,16 @@
 ---
 title: 列出 educationClass 的成员
 description: 检索参加课程的教师和学生。 请注意是否使用了委派令牌，只有课程的其他成员才能看到成员。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: eadc2f00fee83f3663ab983118f92ce84f8cc607
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 90a38dd2b1beda22e18d0671b787cac3e666fe07
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52232089"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59008399"
 ---
 # <a name="list-members-of-an-educationclass"></a>列出 educationClass 的成员
 

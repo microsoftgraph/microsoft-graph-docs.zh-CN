@@ -2,15 +2,15 @@
 title: 列出 verificationDnsRecords
 description: 检索 domainDnsRecord 对象的列表。
 author: adimitui
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 8c2f7bfde2ec9275f4ab80e1108b610340a9729d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: f143788eb0227eb1610127d9786c52f2ffcfa618
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52039690"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59008411"
 ---
 # <a name="list-verificationdnsrecords"></a>列出 verificationDnsRecords
 
@@ -18,9 +18,9 @@ ms.locfileid: "52039690"
 
 检索 [domainDnsRecord 对象](../resources/domaindnsrecord.md) 的列表。
 
-在验证所有权之前，无法将关联域与 Azure AD 租户一同使用。 若要验证域的所有权，请检索域验证记录，将详细信息添加到域的区域文件。 这可以通过域注册机构或 DNS 服务器配置完成。
+在所有权得到验证之前，无法将关联域与 Azure AD 租户一同使用。 若要验证域的所有权，请检索域验证记录，将详细信息添加到域的区域文件。 这可以通过域注册机构或 DNS 服务器配置完成。
 
-根域需要验证。 例如，contoso.com 需要验证。 如果验证根域，将自动验证根域的子域。 例如，subdomain.contoso.com 验证是否 contoso.com 自动验证。
+根域需要验证。 例如，contoso.com 需要验证。 如果验证根域，则会自动验证根域的子域。 例如，subdomain.contoso.com 验证是否自动 contoso.com 验证。
 
 ## <a name="permissions"></a>权限
 
@@ -29,9 +29,9 @@ ms.locfileid: "52039690"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.Read.All    |
+|委派（工作或学校帐户） | Domain.Read.All、Domain.ReadWrite.All、Directory.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Directory.Read.All、Domain.ReadWrite.All |
+|应用程序 | Domain.Read.All、Domain.ReadWrite.All、Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

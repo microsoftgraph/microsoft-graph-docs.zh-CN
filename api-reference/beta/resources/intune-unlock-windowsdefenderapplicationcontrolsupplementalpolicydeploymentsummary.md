@@ -2,15 +2,15 @@
 title: windowsDefenderApplicationControlSupplementalPolicyDeploymentSummary 资源类型
 description: 包含 WindowsDefenderApplicationControl 补充策略的部署摘要的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c419c0f797d1642f58184bd0f4cf425eab7b009c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 07179d0303b7b633fc56890104ed76a5b3a0c57a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803417"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59008802"
 ---
 # <a name="windowsdefenderapplicationcontrolsupplementalpolicydeploymentsummary-resource-type"></a>windowsDefenderApplicationControlSupplementalPolicyDeploymentSummary 资源类型
 

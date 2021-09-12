@@ -1,16 +1,16 @@
 ---
 title: 'group: getMemberObjects'
 description: 返回此组所属的全部组。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: cccccb39a1fe5ea39b75f93c6a6d59611acb2567
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 3d918a5905c19932067a550592ccaaccc349d948
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58513324"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59008277"
 ---
 # <a name="group-getmemberobjects"></a>group: getMemberObjects
 

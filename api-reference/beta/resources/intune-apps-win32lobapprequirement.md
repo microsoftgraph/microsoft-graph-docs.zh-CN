@@ -2,15 +2,15 @@
 title: win32LobAppRequirement 资源类型
 description: 用于检测 Win32 应用的基类
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c6ff1d7dc881689fdb6ffee0f2842e0a68477f41
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4d7dc9b001bbda0908eb398ceee3b1837324cb64
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796283"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59009271"
 ---
 # <a name="win32lobapprequirement-resource-type"></a>win32LobAppRequirement 资源类型
 

@@ -2,15 +2,15 @@
 title: 获取 managedDeviceMobileAppConfigurationDeviceStatus
 description: 读取 managedDeviceMobileAppConfigurationDeviceStatus 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ab9dc9b1c3d078682395d7414e7b5f1167cac30a2b94fc80a1051023523144a0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 706052d02cc897a7e8ad8c2e78c29c79ce236ac2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54147670"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59008123"
 ---
 # <a name="get-manageddevicemobileappconfigurationdevicestatus"></a>获取 managedDeviceMobileAppConfigurationDeviceStatus
 

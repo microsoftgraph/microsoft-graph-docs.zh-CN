@@ -2,15 +2,15 @@
 title: 获取 secureScoreControlProfile
 description: 检索 secureScoreControlProfile 对象的属性和关系。
 author: preetikr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 78fc101ee08aec939ec8eb97240fccb5149a1a66
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 722380b389c0fc93da42d99063e4b63d4966ff86
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48601633"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59007528"
 ---
 # <a name="get-securescorecontrolprofile"></a>获取 secureScoreControlProfile
 
@@ -48,7 +48,7 @@ GET /security/securescorecontrolprofiles/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 **secureScoreControlProfile** 对象。 如果从提供程序返回了 2xx 或 404 以外的状态代码，或者提供程序超时，则响应将是 `206 Partial Content` 状态代码，提供程序的响应位于警告标头中。 有关详细信息，请参阅 [Microsoft Graph 安全性 API 错误响应](../resources/security-error-codes.md)。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` **secureScoreControlProfile** 对象。 如果从提供程序返回了 2xx 或 404 以外的状态代码，或者提供程序超时，则响应将是 `206 Partial Content` 状态代码，提供程序的响应位于警告标头中。 有关详细信息，请参阅 [Microsoft Graph 安全性 API 错误响应](../resources/security-error-codes.md)。
 
 ## <a name="example"></a>示例
 

@@ -1,16 +1,16 @@
 ---
 title: physicalOfficeAddress 资源类型
 description: 表示资源（如联系人或事件）的业务地址。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 9f632fab8d5859a72eff551bba35184face6e3869255687ad9758decf3b131d6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c53f93facc887d223cdaa8fe84f5dfc53f0fa102
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54243307"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59006926"
 ---
 # <a name="physicalofficeaddress-resource-type"></a>physicalOfficeAddress 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "54243307"
 |:---------------|:--------|:----------|
 |城市|String|城市。|
 |countryOrRegion|String|国家或地区。它是任意格式的字符串值，例如“United States”。|
-|officeLocation  | String | Office联系人的位置，例如建筑物和办公室号码。  |
+|officeLocation  | String | Office联系人的办公地点，例如建筑物和办公室号码。  |
 |postalCode|String|邮政编码。|
 |state|String|省/市/自治区。|
 |street|String|街道。|

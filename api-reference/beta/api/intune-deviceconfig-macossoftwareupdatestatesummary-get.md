@@ -2,15 +2,15 @@
 title: 获取 macOSSoftwareUpdateStateSummary
 description: 读取 macOSSoftwareUpdateStateSummary 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 00e62628e68a25aaec4565ba7a5f2b1c322f10e9
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2ca0d7d68a148f91aca0781394b7da546b463f21
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804195"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59010079"
 ---
 # <a name="get-macossoftwareupdatestatesummary"></a>获取 macOSSoftwareUpdateStateSummary
 
@@ -46,7 +46,7 @@ GET /deviceManagement/macOSSoftwareUpdateAccountSummaries/{macOSSoftwareUpdateAc
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

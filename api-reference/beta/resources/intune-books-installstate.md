@@ -2,15 +2,15 @@
 title: installState 枚举类型
 description: 安装状态的可能值。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3a29db7b4be79c3c24a27feddff296f2c70c0f2d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8c5525a3c850e5d671cd48fce771a8cddd1030a1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796893"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017553"
 ---
 # <a name="installstate-enum-type"></a>installState 枚举类型
 

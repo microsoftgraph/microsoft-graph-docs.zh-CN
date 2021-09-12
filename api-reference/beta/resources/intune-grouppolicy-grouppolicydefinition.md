@@ -2,15 +2,15 @@
 title: groupPolicyDefinition 资源类型
 description: 实体描述有关单个组策略的所有信息。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9e990fa6de4792f9ebe28e2e43f11a67321a9231
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 465ac4aa679ea0be5c5bc4576e5bcac673480b95
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790869"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59009012"
 ---
 # <a name="grouppolicydefinition-resource-type"></a>groupPolicyDefinition 资源类型
 
@@ -35,12 +35,12 @@ ms.locfileid: "58790869"
 |displayName|String|本地化的策略名称。|
 |explainText|String|与策略关联的本地化说明或帮助文本。 默认值为空白。|
 |categoryPath|String|策略的本地化完整类别路径。|
-|supportedOn|字符串|用于指定受策略影响的操作系统或应用程序版本的本地化字符串。|
+|supportedOn|String|用于指定受策略影响的操作系统或应用程序版本的本地化字符串。|
 |policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|指定组策略的类型。 可取值为：`admxBacked`、`admxIngested`。|
-|hasRelatedDefinitions|Boolean|表示此定义是否有相关定义|
+|hasRelatedDefinitions|布尔值|表示此定义是否有相关定义|
 |groupPolicyCategoryId|Guid|父类别的类别 ID|
-|minDeviceCspVersion|字符串|此定义中设备配置所需的最低 CSP 版本|
-|minUserCspVersion|字符串|此定义中的用户配置所需的最低云解决方案提供商版本|
+|minDeviceCspVersion|String|此定义中设备配置所需的最低 CSP 版本|
+|minUserCspVersion|String|此定义中的用户配置所需的最低云解决方案提供商版本|
 |version|String|设置定义版本|
 |id|String|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。|

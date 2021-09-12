@@ -2,15 +2,15 @@
 title: win32LobAppRestartBehavior 枚举类型
 description: 指示重新启动操作的类型。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8baa75316942581ef92d8e2c737db0c64de78dec
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3a40d6a0de3cb23173d8b3e454e0a25d2df53dc0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58799253"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59009264"
 ---
 # <a name="win32lobapprestartbehavior-enum-type"></a>win32LobAppRestartBehavior 枚举类型
 

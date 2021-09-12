@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: Photo
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 照片资源提供 driveItem 中的照片和相机属性，例如 EXIF 元数据。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 1f2d69159ba7a054ca821f00f56dfa7627b4422d6069708eaa6ad8f53de651e1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9f55914c19c399cf58d37cbbf9a23af33a4fe44e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196843"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59006933"
 ---
 # <a name="photo-resource-type"></a>Photo 资源类型
 
@@ -53,7 +53,7 @@ ms.locfileid: "54196843"
 | **exposureNumerator**   | Double         | 相机的曝光时间分数的分子。只读。
 | **focalLength**         | Double         | 相机的焦距。只读。
 | **iso**                 | Int32          | 相机的 ISO 值。只读。
-| **orientation**         | Int16          | 相机的方向值。 可写OneDrive个人。      |
+| **orientation**         | Int16          | 相机的方向值。 在个人OneDrive写。      |
 
 ## <a name="remarks"></a>注解
 

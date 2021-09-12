@@ -2,15 +2,15 @@
 title: 添加所有者
 description: 向应用程序添加所有者。
 author: sureshja
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 5640b2488ccabc24f512e823924b7be0e3df7342
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 77e34f2b5deb4245a893bbee42120a8f506155d2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787980"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59008389"
 ---
 # <a name="add-owner"></a>添加所有者
 

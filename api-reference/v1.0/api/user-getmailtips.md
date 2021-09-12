@@ -2,15 +2,15 @@
 title: user： getMailTips
 description: 获取登录用户可用的一个或多个收件人的邮件提示。
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: fd46d262cf7d190daa4c5f21e1c45ec1472b799f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a5ed59c2e92799ff22226683fc3a1edc02373f50
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055685"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59007433"
 ---
 # <a name="user-getmailtips"></a>user： getMailTips
 
@@ -18,7 +18,7 @@ ms.locfileid: "52055685"
 
 获取登录用户可用的一个或多个收件人的邮件 [提示](../resources/user.md)。
 
-请注意，通过调用操作，可以请求同时为多个收件人返回特定类型的邮件 `POST` `getMailTips` 提示。 请求的邮件提示在邮件 [提示](../resources/mailtips.md) 集合中返回。
+请注意，通过调用操作，可以请求同时为多个收件人返回特定类型的 `POST` `getMailTips` 邮件提示。 请求的邮件提示在邮件 [提示](../resources/mailtips.md) 集合中返回。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -96,7 +96,7 @@ Content-Type: application/json
 
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

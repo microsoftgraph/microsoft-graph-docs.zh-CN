@@ -1,16 +1,16 @@
 ---
 title: 分配 tokenIssuancePolicy
 description: 将 tokenIssuancePolicy 分配给应用程序。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 0847fc15212fb6fe5e69e6a3fe713bbf5c119be6
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: b153c23d3d23732ea8685e02bc6be65b51527c12
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131773"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59008424"
 ---
 # <a name="assign-tokenissuancepolicy"></a>分配 tokenIssuancePolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "50131773"
 
 将 [tokenIssuancePolicy](../resources/tokenissuancepolicy.md) 分配给 [应用程序](../resources/application.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -45,7 +45,7 @@ POST /applications/{id}/tokenIssuancePolicies/$ref
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [tokenIssuancePolicy](../resources/tokenissuancepolicy.md) 对象的标识符 (使用) `@odata.id` 分配给应用程序的属性。
+在请求正文中，使用应分配给) 的属性提供 [tokenIssuancePoli (cy](../resources/tokenissuancepolicy.md) 对象的 `@odata.id` 标识符。
 
 ## <a name="response"></a>响应
 

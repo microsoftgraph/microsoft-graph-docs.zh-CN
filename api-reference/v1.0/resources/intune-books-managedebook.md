@@ -2,15 +2,15 @@
 title: managedEBook 资源类型
 description: 包含托管电子书基属性的抽象类。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b52c7a183046741e05afa6be2832dc6a32673cc62f06f542b75bae0d9e67bfbf
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3b1971a00c3b417c8ea9b4454e8362726ec3247b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54175222"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59007185"
 ---
 # <a name="managedebook-resource-type"></a>managedEBook 资源类型
 

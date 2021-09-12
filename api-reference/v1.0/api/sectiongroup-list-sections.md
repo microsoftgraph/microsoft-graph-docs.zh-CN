@@ -1,23 +1,23 @@
 ---
 title: 列出分区
-description: 从指定分区组中检索 onenoteSection 对象的列表。
-localization_priority: Normal
+description: 从指定的节组检索 onenoteSection 对象的列表。
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 1f2df675252a29b7665ea0f60b30d0ff8ef7ed9f
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 9ea437f60f0444b58871b71c43e4b1989e48a166
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48458848"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59007556"
 ---
 # <a name="list-sections"></a>列出分区
 
 命名空间：microsoft.graph
 
-从指定分区组中检索 [onenoteSection](../resources/section.md) 对象的列表。
-## <a name="permissions"></a>Permissions
+从指定的节组检索 [onenoteSection](../resources/section.md) 对象的列表。
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -39,7 +39,7 @@ GET /sites/{id}/onenote/sectionGroups/{id}/sections
 
 默认排序顺序是 `name asc`。
 
-默认查询将展开 `parentNotebook` 并选择其 `id` 、 `displayName` 和 `self` 属性。 `expand`节的有效值为 `parentNotebook` 和 `parentSectionGroup` 。
+默认查询将 `parentNotebook` 展开并选择其 、 `id` `displayName` 和 `self` 属性。 分区 `expand` 的有效值为 和 `parentNotebook` `parentSectionGroup` 。
 
 
 ## <a name="request-headers"></a>请求标头
@@ -53,7 +53,7 @@ GET /sites/{id}/onenote/sectionGroups/{id}/sections
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [onenoteSection](../resources/section.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [onenoteSection](../resources/section.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
