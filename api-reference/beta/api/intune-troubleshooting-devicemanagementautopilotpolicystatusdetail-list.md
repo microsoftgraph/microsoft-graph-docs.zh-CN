@@ -2,15 +2,15 @@
 title: 列出 deviceManagementAutopilotPolicyStatusDetails
 description: 列出 deviceManagementAutopilotPolicyStatusDetail 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 474dffc208c31abc7fde32a87f4c75080e8b5d34
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 692ffcd1740802c5de2d931c692c4f756570ba0f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58264708"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59076465"
 ---
 # <a name="list-devicemanagementautopilotpolicystatusdetails"></a>列出 deviceManagementAutopilotPolicyStatusDetails
 

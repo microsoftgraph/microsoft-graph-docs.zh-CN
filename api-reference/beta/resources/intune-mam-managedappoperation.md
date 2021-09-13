@@ -2,15 +2,15 @@
 title: managedAppOperation 资源类型
 description: 表示对应用注册应用的操作。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e12dc64070990b722201d717549a7b221b2ee9f9
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 64ebd54ddb46122266742d5894c2c3d06dd125ca
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783461"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59075036"
 ---
 # <a name="managedappoperation-resource-type"></a>managedAppOperation 资源类型
 

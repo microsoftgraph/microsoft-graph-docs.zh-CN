@@ -2,15 +2,15 @@
 title: deviceEnrollmentConfiguration 资源类型
 description: 设备注册配置的基类
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3f4095db44b1b32c3c1adb5792dab99167909c41
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d34bfee039fa8d4a030ee5078d73974b9d05f7b3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58792552"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039145"
 ---
 # <a name="deviceenrollmentconfiguration-resource-type"></a>deviceEnrollmentConfiguration 资源类型
 
@@ -37,8 +37,8 @@ ms.locfileid: "58792552"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|帐户的唯一标识符|
-|displayName|String|设备显示名称配置|
-|description|字符串|设备注册配置的说明|
+|displayName|String|显示名称注册配置|
+|说明|String|设备注册配置的说明|
 |priority|Int32|如果用户位于分配了注册配置的多个组中，则使用优先级。 用户仅受优先级值最低的配置使用。|
 |createdDateTime|DateTimeOffset|设备注册配置的创建日期时间（UTC）|
 |lastModifiedDateTime|DateTimeOffset|设备注册配置的上次修改日期时间（UTC）|

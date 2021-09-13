@@ -2,15 +2,15 @@
 title: userExperienceAnalyticsAppHealthAppPerformanceByAppVersion 资源类型
 description: 用户体验分析应用程序性能实体包含应用版本的应用性能详细信息。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ccb78ad49628bb58dc19f623d7e63642e5836233
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5aa63fc58cb8fe9d5647a7363029413a8c8550a6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788456"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59081057"
 ---
 # <a name="userexperienceanalyticsapphealthappperformancebyappversion-resource-type"></a>userExperienceAnalyticsAppHealthAppPerformanceByAppVersion 资源类型
 

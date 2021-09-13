@@ -2,15 +2,15 @@
 title: iosVppAppAssignedLicense 资源类型
 description: iOS 批量购买计划许可证分配。 此类不支持创建、删除或更新。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a40d788a632ab9d746dba774388e9ab9df4323d9
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: fac0e129a81e54dadb1fe4d12ebcdea1e7e4ca39
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820546"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59081498"
 ---
 # <a name="iosvppappassignedlicense-resource-type"></a>iosVppAppAssignedLicense 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58820546"
 iOS 批量购买计划许可证分配。 此类不支持创建、删除或更新。
 
 ## <a name="methods"></a>方法
-|方法|返回类型|Description|
+|方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 iosVppAppAssignedLicenses](../api/intune-apps-iosvppappassignedlicense-list.md)|[iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md) 集合|列出 [iosVppAppAssignedLicense 对象的属性和](../resources/intune-apps-iosvppappassignedlicense.md) 关系。|
 |[获取 iosVppAppAssignedLicense](../api/intune-apps-iosvppappassignedlicense-get.md)|[iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|读取 [iosVppAppAssignedLicense 对象的属性和](../resources/intune-apps-iosvppappassignedlicense.md) 关系。|

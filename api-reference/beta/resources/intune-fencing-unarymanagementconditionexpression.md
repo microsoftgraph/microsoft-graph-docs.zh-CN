@@ -2,15 +2,15 @@
 title: unaryManagementConditionExpression 资源类型
 description: 使用一元操作评估的管理条件表达式。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 25b4bf266a955a11231c185200bee00367af538a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f5a0526fb0f417ec1c46cc59b9b5c3088ceb7ea3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797231"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063907"
 ---
 # <a name="unarymanagementconditionexpression-resource-type"></a>unaryManagementConditionExpression 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "58797231"
 继承自 [managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |operator|[unaryManagementConditionExpressionOperatorType](../resources/intune-fencing-unarymanagementconditionexpressionoperatortype.md)|用于一元运算计算中的运算符。 可能的值是 `not` ：。|
 |操作nd|[managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)|一元运算的操作数。|

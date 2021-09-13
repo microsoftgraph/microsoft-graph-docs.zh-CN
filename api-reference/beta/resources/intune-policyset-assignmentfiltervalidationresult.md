@@ -2,15 +2,15 @@
 title: assignmentFilterValidationResult 资源类型
 description: 表示验证 API 的结果。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9612d33c1e838eb5effaea555d8453b8acf6c1fe
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 69006f9582b5f9a1c2172b3d2fa2f43b07998985
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58807242"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074911"
 ---
 # <a name="assignmentfiltervalidationresult-resource-type"></a>assignmentFilterValidationResult 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58807242"
 表示验证 API 的结果。
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |isValidRule|Boolean|表示有效规则或无效规则的指示器。|
 

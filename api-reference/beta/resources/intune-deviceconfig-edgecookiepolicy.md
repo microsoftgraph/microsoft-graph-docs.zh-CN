@@ -1,16 +1,16 @@
 ---
 title: edgeCookiePolicy 枚举类型
-description: 用于指定允许哪些 cookie 在缓存中Microsoft Edge。
+description: 可能的值，用于指定允许哪些 cookie 在Microsoft Edge。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 66fd6faa5db131052bcc63dbb9565de03ea45a4e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 53b883efb2d09182a5ae99cc1a4e5beb74e41e1b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796872"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59075548"
 ---
 # <a name="edgecookiepolicy-enum-type"></a>edgeCookiePolicy 枚举类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "58796872"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-用于指定允许哪些 cookie 在缓存中Microsoft Edge。
+可能的值，用于指定允许哪些 cookie 在Microsoft Edge。
 
 ## <a name="members"></a>成员
 |成员|值|说明|

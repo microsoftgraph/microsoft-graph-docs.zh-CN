@@ -2,15 +2,15 @@
 title: 创建 deviceManagementIntentUserState
 description: 创建新的 deviceManagementIntentUserState 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b7cf97530621bfddee4b9366b6a8297e29e94205
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d37322eb9c127d6eade26bb2e2849cd966532402
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820600"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59082660"
 ---
 # <a name="create-devicemanagementintentuserstate"></a>创建 deviceManagementIntentUserState
 
@@ -43,7 +43,7 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/userStates
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,7 +54,7 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/userStates
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|The ID|
-|userPrincipalName|字符串|在设备上报告的用户主体名称|
+|userPrincipalName|String|在设备上报告的用户主体名称|
 |userName|String|在设备上报告的用户名|
 |deviceCount|Int32|出于意图而属于用户的设备的计数|
 |lastReportedDateTime|DateTimeOffset|意图报告的上次修改日期时间|

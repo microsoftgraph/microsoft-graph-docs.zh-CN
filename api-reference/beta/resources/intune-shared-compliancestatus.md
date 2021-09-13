@@ -2,15 +2,15 @@
 title: complianceStatus 枚举类型
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1aa51d52c3c0d4051e1216232f4ce36aa7ba7cda
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 623a710e5b2484215fd60337ca8810fc02ac280e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803445"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039180"
 ---
 # <a name="compliancestatus-enum-type"></a>complianceStatus 枚举类型
 

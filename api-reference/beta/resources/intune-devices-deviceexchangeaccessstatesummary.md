@@ -2,15 +2,15 @@
 title: deviceExchangeAccessStateSummary 资源类型
 description: 设备 Exchange 访问状态摘要
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ad125523caf9b574c9538ac9ced48ee254ca73ba
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 94c1a2864f540a0eb3093b33d44c89c4df0cddb6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58815062"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59040160"
 ---
 # <a name="deviceexchangeaccessstatesummary-resource-type"></a>deviceExchangeAccessStateSummary 资源类型
 

@@ -2,15 +2,15 @@
 title: unblockManagedApps 操作
 description: 取消阻止托管应用用户进行应用签入。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 08a497c4051cd24973fe34b323b771eeafb5ae0c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 669f8dc7e06f237c9f875305851fc6f8474837aa
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58814075"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59082072"
 ---
 # <a name="unblockmanagedapps-action"></a>unblockManagedApps 操作
 
@@ -43,7 +43,7 @@ POST /users/{usersId}/unblockManagedApps
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

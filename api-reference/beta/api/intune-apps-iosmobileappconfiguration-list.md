@@ -2,15 +2,15 @@
 title: 列出 iosMobileAppConfigurations
 description: 列出 iosMobileAppConfiguration 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5a3d58668348e49875ed8ded65e2cb5b97d8b52b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 244b1398255ffca60214902b808e45e1a6b30511
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58815930"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59071271"
 ---
 # <a name="list-iosmobileappconfigurations"></a>列出 iosMobileAppConfigurations
 
@@ -43,7 +43,7 @@ GET /deviceAppManagement/mobileAppConfigurations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

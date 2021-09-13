@@ -2,15 +2,15 @@
 title: configurationManagerClientEnabledFeatures 资源类型
 description: Configuration Manager 客户端已启用的功能
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d11ef90945348554e8cdbb99ffaba87e49619dc1
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 81edc6197345b61e087506bb3067f059f0e9eee6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804825"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59040223"
 ---
 # <a name="configurationmanagerclientenabledfeatures-resource-type"></a>configurationManagerClientEnabledFeatures 资源类型
 
@@ -32,7 +32,7 @@ Configuration Manager 客户端已启用的功能
 |compliancePolicy|Boolean|符合性策略是否由 Intune 管理|
 |windowsUpdateForBusiness|Boolean|适用于企业的 Windows 更新是否由 Intune 管理|
 |endpointProtection|Boolean|是否Endpoint Protection Intune 管理|
-|officeApps|Boolean|Office应用程序是否由 Intune 管理|
+|officeApps|Boolean|应用程序Office Intune 管理|
 
 ## <a name="relationships"></a>关系
 无

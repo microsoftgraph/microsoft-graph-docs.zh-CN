@@ -2,15 +2,15 @@
 title: diffieHellmanGroup 枚举类型
 description: Diffie使用 IKEv2 连接类型的 Windows 10 VPN 策略的 Group 值。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7a59b6709da2bfc4d0f84b8bf56821f48a8d4fdf
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5e615020eb725e6426c5b508caf3bb6a7d0cb27b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801849"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59081358"
 ---
 # <a name="diffiehellmangroup-enum-type"></a>diffieHellmanGroup 枚举类型
 

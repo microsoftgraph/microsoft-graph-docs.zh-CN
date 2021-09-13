@@ -2,15 +2,15 @@
 title: 获取 androidForWorkCertificateProfileBase
 description: 读取 androidForWorkCertificateProfileBase 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dd304a0034a6fd3c7c6c21b889b2432f456e5b67
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2512a0917cad1999b833331fa30da7a7fcc19d04
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793258"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59071061"
 ---
 # <a name="get-androidforworkcertificateprofilebase"></a>获取 androidForWorkCertificateProfileBase
 
@@ -49,7 +49,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

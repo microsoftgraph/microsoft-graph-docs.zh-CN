@@ -2,15 +2,15 @@
 title: unifiedRoleManagementPolicyExpirationRule 资源类型
 description: unifiedRoleManagementPolicyExpirationRule 指定与角色管理策略关联的启用规则。 它派生自 microsoft.graph.unifiedRoleManagementPolicyRule。
 author: shauliu1
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 0f89d9d2ae1c5ec030413f6071ff00dcdfc0d7e7
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: bd2603423af5555b8ad39e1641162636dc447c63
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453903"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074526"
 ---
 # <a name="unifiedrolemanagementpolicyexpirationrule-resource-type"></a>unifiedRoleManagementPolicyExpirationRule 资源类型
 
@@ -25,7 +25,7 @@ unifiedRoleManagementPolicyExpirationRule 指定与角色管理策略关联的�
 |:---|:---|:---|
 |id|String|规则的唯一标识符。 继承自 [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
 |isExpirationRequired|Boolean|指示资格或分配是否要求过期。|
-|maximumDuration|期限|符合条件的或非永久性的工作分配所允许的最长持续时间。|
+|maximumDuration|期限|符合条件的或非永久性分配所允许的最长持续时间。|
 |target|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|规则的目标。 继承自 [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
 
 ## <a name="relationships"></a>关系

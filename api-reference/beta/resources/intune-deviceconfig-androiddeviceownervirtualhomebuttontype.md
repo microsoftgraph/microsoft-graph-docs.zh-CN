@@ -2,15 +2,15 @@
 title: androidDeviceOwnerVirtualHomeButtonType 枚举类型
 description: Android 设备所有者展台模式托管主屏幕虚拟主页按钮类型。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a2db06bec2913b6efafe55c3744f4e30a1f0d199
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a7014ff2ef608c992173d9e7faa4b861fc86a49c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820924"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59081427"
 ---
 # <a name="androiddeviceownervirtualhomebuttontype-enum-type"></a>androidDeviceOwnerVirtualHomeButtonType 枚举类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58820924"
 Android 设备所有者展台模式托管主屏幕虚拟主页按钮类型。
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置;将忽略此值。|
 |swipeUp|1|向上轻扫"开始"按钮。|

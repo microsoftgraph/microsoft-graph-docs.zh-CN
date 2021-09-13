@@ -2,15 +2,15 @@
 title: securityBaselineStateSummary 资源类型
 description: 帐户的安全基线的安全基线合规性状态摘要。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 732ea052ec544c88abdfb14f7f40085ff6fe8f2e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 962fc60b94cda4407283f9b6609f03b79d378e27
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58782075"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59069003"
 ---
 # <a name="securitybaselinestatesummary-resource-type"></a>securityBaselineStateSummary 资源类型
 

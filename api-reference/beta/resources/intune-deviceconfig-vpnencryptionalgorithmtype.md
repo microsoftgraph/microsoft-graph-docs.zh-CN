@@ -2,15 +2,15 @@
 title: vpnEncryptionAlgorithmType 枚举类型
 description: VPN 安全关联加密算法的类型
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fa2c6cfad0f8077df1c0ba1a8425001f09d7429e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8b961e1f41f3d913b207676be181a94d9f059026
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790176"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59081197"
 ---
 # <a name="vpnencryptionalgorithmtype-enum-type"></a>vpnEncryptionAlgorithmType 枚举类型
 

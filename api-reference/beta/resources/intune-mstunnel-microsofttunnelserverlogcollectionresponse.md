@@ -2,15 +2,15 @@
 title: microsoftTunnelServerLogCollectionResponse 资源类型
 description: 存储服务器日志集合状态的实体。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8a504cbdcf8bdbec0a41a5442b7b72a327e05026
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 99c788005d51c68e35684e62c906d60122a3625c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783188"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039730"
 ---
 # <a name="microsofttunnelserverlogcollectionresponse-resource-type"></a>microsoftTunnelServerLogCollectionResponse 资源类型
 
@@ -36,7 +36,7 @@ ms.locfileid: "58783188"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的唯一 ID|
-|状态|[microsoftTunnelLogCollectionStatus](../resources/intune-mstunnel-microsofttunnellogcollectionstatus.md)|日志集合的状态。 可取值为：`pending`、`completed`、`failed`。|
+|status|[microsoftTunnelLogCollectionStatus](../resources/intune-mstunnel-microsofttunnellogcollectionstatus.md)|日志集合的状态。 可取值为：`pending`、`completed`、`failed`。|
 |startDateTime|DateTimeOffset|收集的日志的开始时间 |
 |endDateTime|DateTimeOffset|收集的日志的结束时间|
 |sizeInBytes|Int64|日志的大小（以字节为单位）|

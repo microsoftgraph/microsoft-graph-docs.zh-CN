@@ -2,15 +2,15 @@
 title: microsoftTunnelConfiguration 资源类型
 description: 表示设置集合Microsoft Tunnel实体
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 64e28c3747c8e1000a69f58bd7e4a27f144ebd84
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a5e6ee3f7e14078b2fe5e345d362d0f0d5c9200b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790624"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59080930"
 ---
 # <a name="microsofttunnelconfiguration-resource-type"></a>microsoftTunnelConfiguration 资源类型
 
@@ -35,18 +35,18 @@ ms.locfileid: "58790624"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|MicrosoftTunnelConfiguration 的 ID|
-|displayName|String|MicrosoftTunnelConfiguration 的显示名称|
-|description|字符串|MicrosoftTunnelConfiguration 的说明|
-|network|字符串|将用于为客户端分配虚拟地址的子网|
-|dnsServers|字符串集合|客户端将使用的 DNS 服务器|
+|displayName|String|MicrosoftTunnelConfiguration 的 显示名称|
+|说明|String|MicrosoftTunnelConfiguration 的说明|
+|network|String|将用于为客户端分配虚拟地址的子网|
+|dnsServers|String collection|客户端将使用的 DNS 服务器|
 |defaultDomainSuffix|String|客户端将使用的默认域附录|
-|routesInclude|字符串集合|服务器将路由的路由|
+|routesInclude|String collection|服务器将路由的路由|
 |routesExclude|String collection|服务器不会路由的路由子集|
 |splitDNS|String collection|使用提供的 dns 服务器解析的域|
 |listenPort|Int32|TCP 和 UPD 将在服务器上侦听的端口|
 |advancedSettings|[keyValuePair](../resources/intune-mstunnel-keyvaluepair.md) 集合|可应用于服务器的其他设置|
 |lastUpdateDateTime|DateTimeOffset|上次更新 MicrosoftTunnelConfiguration 的时间|
-|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
 
 ## <a name="relationships"></a>关系
 无

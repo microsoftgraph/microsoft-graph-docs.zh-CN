@@ -2,15 +2,15 @@
 title: 创建 deviceManagementReportSchedule
 description: 创建新的 deviceManagementReportSchedule 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cc7e7161a9f8104656100283e8f615f3f544c3ae
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 538949256285830c93d8b6361f32207925014ebe
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816128"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59076605"
 ---
 # <a name="create-devicemanagementreportschedule"></a>创建 deviceManagementReportSchedule
 
@@ -43,7 +43,7 @@ POST /deviceManagement/reports/reportSchedules
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -56,15 +56,15 @@ POST /deviceManagement/reports/reportSchedules
 |id|String|此实体的唯一标识符|
 |reportScheduleName|String|计划的名称|
 |subject|String|已送达的计划报告的主题|
-|电子邮件|字符串集合|将计划报告传递到的电子邮件|
+|电子邮件|String collection|将计划报告传递到的电子邮件|
 |recurrence|[deviceManagementScheduledReportRecurrence](../resources/intune-reporting-devicemanagementscheduledreportrecurrence.md)|计划报告传递的频率。 可取值为：`none`、`daily`、`weekly`、`monthly`。|
 |startDateTime|DateTimeOffset|计划报告交付开始的时间|
 |endDateTime|DateTimeOffset|计划报告传递结束的时间|
 |userId|String|创建报告的用户的 ID|
-|reportName|字符串|报告的名称|
-|filter|字符串|应用于报表的筛选器|
-|select|字符串集合|从报表选择的列|
-|orderBy|字符串集合|报告中列的排序|
+|reportName|String|报告的名称|
+|filter|String|应用于报表的筛选器|
+|select|String collection|从报表选择的列|
+|orderBy|String collection|报告中列的排序|
 |format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|计划报表的格式。 可取值为：`csv`、`pdf`。|
 
 

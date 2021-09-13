@@ -2,15 +2,15 @@
 title: 列出 androidForWorkEnrollmentProfiles
 description: 列出 androidForWorkEnrollmentProfile 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3de7ca5198ebbc83456a255354137e406094943a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: cb53a8ba7345524327a02a2b07d2f4b374e3ce41
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805673"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59077977"
 ---
 # <a name="list-androidforworkenrollmentprofiles"></a>列出 androidForWorkEnrollmentProfiles
 
@@ -43,7 +43,7 @@ GET /deviceManagement/androidForWorkEnrollmentProfiles
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

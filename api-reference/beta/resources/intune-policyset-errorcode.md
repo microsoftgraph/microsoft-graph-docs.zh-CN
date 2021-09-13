@@ -2,15 +2,15 @@
 title: errorCode 枚举类型
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: eb640c3a969ca556dc75f5d34cf5be794c6c7595
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: eb36d42bb7008d71d37fa8e1a21409c75ac3b2a3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797217"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59080763"
 ---
 # <a name="errorcode-enum-type"></a>errorCode 枚举类型
 
@@ -27,7 +27,7 @@ ms.locfileid: "58797217"
 |:---|:---|:---|
 |noError|0|默认值，表示无错误。|
 |未授权|1|由于资源上缺少 RBAC 权限，当前用户没有访问权限。|
-|notFound|2|由于资源上缺少 RBAC 范围标记，当前用户没有访问权限。|
+|notFound|2|当前用户由于资源上缺少 RBAC 范围标记而无法访问。|
 |deleted|3|资源已删除。|
 
 

@@ -2,15 +2,15 @@
 title: adminConsent 资源类型
 description: 管理员同意信息。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: dcf849e8c44e68bb4b76417748dbe795e0dd5852
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c6df58494249963a3bd1ed0de2062d89026a5989
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816513"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59068954"
 ---
 # <a name="adminconsent-resource-type"></a>adminConsent 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58816513"
 管理员同意信息。
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|描述|
 |:---|:---|:---|
 |shareAPNSData|[adminConsentState](../resources/intune-devices-adminconsentstate.md)|管理员同意将用户和设备数据共享到 Apple 的状态。 可取值为：`notConfigured`、`granted`、`notGranted`。|
 |shareUserExperienceAnalyticsData|[adminConsentState](../resources/intune-devices-adminconsentstate.md)|获取或设置共享用户体验分析数据的管理员同意。 可取值为：`notConfigured`、`granted`、`notGranted`。|

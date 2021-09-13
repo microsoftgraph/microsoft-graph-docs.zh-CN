@@ -2,15 +2,15 @@
 title: settingStateDeviceSummary 资源类型
 description: 设置状态的设备合规性策略和配置摘要
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 562c63e93e0003bff08351878ca07c64b3eefd49
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e2d5e78085a2159bafa0f3fad971352f7f944d61
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796234"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064201"
 ---
 # <a name="settingstatedevicesummary-resource-type"></a>settingStateDeviceSummary 资源类型
 

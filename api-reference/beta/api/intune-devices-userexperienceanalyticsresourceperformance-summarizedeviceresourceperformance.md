@@ -2,15 +2,15 @@
 title: summarizeDeviceResourcePerformance 函数
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b2fcab6687f1274ab76f8a69df8ec4ba74d34c66
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d377b0c5fffda6e10f6d7a2b64b6353ce2f22920
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805526"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59077046"
 ---
 # <a name="summarizedeviceresourceperformance-function"></a>summarizeDeviceResourcePerformance 函数
 
@@ -43,14 +43,14 @@ GET /deviceManagement/userExperienceAnalyticsResourcePerformance/summarizeDevice
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求 URL 中，提供以下查询参数（含值）。
 下表显示了可用于此函数的参数。
 
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |summarizeBy|[userExperienceAnalyticsSummarizedBy](../resources/intune-devices-userexperienceanalyticssummarizedby.md)|尚未记录|
 

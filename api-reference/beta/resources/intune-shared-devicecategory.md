@@ -2,15 +2,15 @@
 title: deviceCategory 资源类型
 description: 然后可将这些类别应用于 Intune Azure 控制台中的设备，或在用户注册设备时供他们选择。 可以根据设备类别筛选报告并创建动态 Azure Active Directory 设备组。
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b1e30c9154208fc4f7bae9d5dbcb7a4104c4651343f87df0f620d20901f470f4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 69ca1f4fef0e5270890630e34a21526ef8d70955
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54219743"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039173"
 ---
 # <a name="devicecategory-resource-type"></a>deviceCategory 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54219743"
 
 设备类别提供了一种组织设备的方法。 使用设备类别，公司管理员可以定义对公司有意义的独特类别。 然后可将这些类别应用于 Intune Azure 控制台中的设备，或在用户注册设备时供他们选择。 可以根据设备类别筛选报告并创建动态 Azure Active Directory 设备组。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[List deviceCategories](../api/intune-shared-devicecategory-list.md)|[deviceCategory](../resources/intune-shared-devicecategory.md) 集合|列出 [deviceCategory](../resources/intune-shared-devicecategory.md) 对象的属性和关系。|
@@ -36,8 +36,8 @@ ms.locfileid: "54219743"
 |:---|:---|:---|
 |id|String|设备类别的唯一标识符。 只读。|
 |**载入**|
-|displayName|字符串|设备类别的显示名称。|
-|description|String|设备类别的说明（可选）。|
+|displayName|String|设备类别的显示名称。|
+|说明|String|设备类别的说明（可选）。|
 
 ## <a name="relationships"></a>关系
 无
@@ -58,7 +58,6 @@ ms.locfileid: "54219743"
   "description": "String"
 }
 ```
-
 
 
 

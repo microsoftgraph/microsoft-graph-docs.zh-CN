@@ -2,15 +2,15 @@
 title: 创建 userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId
 description: 创建新的 userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: daeda1972a1f8980107d6bb2b83b3eb13abe8aaf
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 042e373eb43049ad36d73443a9779f25fbc2195e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58780297"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59077130"
 ---
 # <a name="create-userexperienceanalyticsapphealthappperformancebyappversiondeviceid"></a>创建 userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId
 
@@ -43,7 +43,7 @@ POST /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformanceByA
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -59,7 +59,7 @@ POST /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformanceByA
 |processedDateTime|DateTimeOffset|上次计算统计信息的日期和时间。|
 |appName|String|应用程序名。|
 |appDisplayName|String|应用程序的友好名称。|
-|appPublisher|字符串|应用程序的发布者。|
+|appPublisher|String|应用程序的发布者。|
 |appVersion|String|应用程序的版本。|
 |appCrashCount|Int32|应用的崩溃数。 有效值 -2147483648 2147483647|
 

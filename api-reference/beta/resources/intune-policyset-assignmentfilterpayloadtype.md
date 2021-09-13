@@ -2,15 +2,15 @@
 title: assignmentFilterPayloadType 枚举类型
 description: 表示分配到的有效负载类型 AssignmentFilter。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: abd6d413d1a38ad98e12feeabc9b16b5fd408239
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 940712e315b1b051f4641a82a928c2efb3f4ad45
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58821919"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074981"
 ---
 # <a name="assignmentfilterpayloadtype-enum-type"></a>assignmentFilterPayloadType 枚举类型
 

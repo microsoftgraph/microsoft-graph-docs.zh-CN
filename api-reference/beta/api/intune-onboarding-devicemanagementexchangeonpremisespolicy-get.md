@@ -2,15 +2,15 @@
 title: 获取 deviceManagementExchangeOnPremisesPolicy
 description: 读取 deviceManagementExchangeOnPremisesPolicy 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 387c3933fc5c0fca0f2bff5ad2a92d1982e610ca
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 30315ed7ea2e22600f5038b4d002b2df23b144bd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788778"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59076752"
 ---
 # <a name="get-devicemanagementexchangeonpremisespolicy"></a>获取 deviceManagementExchangeOnPremisesPolicy
 
@@ -47,7 +47,7 @@ GET /deviceManagement/exchangeOnPremisesPolicies/{deviceManagementExchangeOnPrem
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

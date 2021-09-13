@@ -2,15 +2,15 @@
 title: 更新 macOSSoftwareUpdateStateSummary
 description: 更新 macOSSoftwareUpdateStateSummary 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 82dcae148099204b599e31e05e583dd061f3d422
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8261e3720fb6347d15af9719a6d3bc3bc1f152ea
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804188"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59070998"
 ---
 # <a name="update-macossoftwareupdatestatesummary"></a>更新 macOSSoftwareUpdateStateSummary
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/macOSSoftwareUpdateAccountSummaries/{macOSSoftwareUpdate
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -56,8 +56,8 @@ PATCH /deviceManagement/macOSSoftwareUpdateAccountSummaries/{macOSSoftwareUpdate
 |id|String|实体的键。|
 |displayName|String|软件更新的可读名称|
 |productKey|String|软件更新的产品密钥。|
-|updateCategory|[macOSSoftwareUpdateCategory](../resources/intune-deviceconfig-macossoftwareupdatecategory.md)|软件更新类别。 可能的值是：`critical`、`configurationDataFile`、`firmware`、`other`。|
-|updateVersion|字符串|软件更新的版本|
+|updateCategory|[macOSSoftwareUpdateCategory](../resources/intune-deviceconfig-macossoftwareupdatecategory.md)|软件更新类别。 可取值为：`critical`、`configurationDataFile`、`firmware`、`other`。|
+|updateVersion|String|软件更新的版本|
 |state|[macOSSoftwareUpdateState](../resources/intune-deviceconfig-macossoftwareupdatestate.md)|软件更新的状态。 可能的值是 `success` `downloading` `downloaded` ：、、、、、、、、、、 `installing` `idle` `available` `scheduled` `downloadFailed` `downloadInsufficientSpace` `downloadInsufficientPower` `downloadInsufficientNetwork` `installInsufficientSpace` `installInsufficientPower` `installFailed` `commandFailed` 。|
 |lastUpdatedDateTime|DateTimeOffset|上次更新此设备和产品密钥的报告的日期时间。|
 

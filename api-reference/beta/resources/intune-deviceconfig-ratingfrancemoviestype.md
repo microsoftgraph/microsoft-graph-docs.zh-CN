@@ -2,15 +2,15 @@
 title: ratingFranceMoviesType 枚举类型
 description: 法国电影评级标签
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e92d8042175cd26fc2a0999862dc716cb0c5116e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0ec3a622528534a01638f51b463f9d80b76db20a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819120"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59081309"
 ---
 # <a name="ratingfrancemoviestype-enum-type"></a>ratingFranceMoviesType 枚举类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58819120"
 法国电影评级标签
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |allAllowed|0|默认值，允许所有电影内容|
 |allBlocked|1|不允许任何电影内容|

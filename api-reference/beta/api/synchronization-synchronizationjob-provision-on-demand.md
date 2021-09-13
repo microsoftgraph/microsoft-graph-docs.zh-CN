@@ -1,22 +1,22 @@
 ---
 title: synchronizationJob：provisionOnDemand
-description: 选择用户并按需设置帐户。
+description: 选择用户并按需预配帐户。
 author: ArvindHarinder1
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 3e1007dfd7bce9ff64f54651104de943348c10dc
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: f3db21462738b29393c46dab6fa8823562ce7c77
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240561"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59040924"
 ---
 # <a name="synchronizationjob-provisionondemand"></a>synchronizationJob：provisionOnDemand
 
 命名空间：microsoft.graph
 
-选择用户并按需设置帐户。
+选择用户并按需预配帐户。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

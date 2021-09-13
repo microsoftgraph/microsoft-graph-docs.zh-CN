@@ -1,15 +1,15 @@
 ---
 title: 使用 Microsoft Intune 管理移动应用 - Microsoft Graph API
-description: 列出适用于 Intune Graph的 Microsoft (API) 与租户组织的移动应用管理 (MAM) 相关的 REST 应用程序。
+description: 列出与租户组织的移动应用Graph MAM (MAM) 相关的适用于 Intune) 的 Microsoft (API。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: de457279a525e74855ce9c05d98ff72beb1546dc
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 70164fe13a52ec574ed78cdae1320cc2d0bb234e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796486"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59075183"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>如何通过 Microsoft Intune 保护公司的应用数据
 

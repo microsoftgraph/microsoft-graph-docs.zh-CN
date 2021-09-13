@@ -2,15 +2,15 @@
 title: androidWiFiSecurityType 枚举类型
 description: Wi-Fi Android 的安全类型。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 41dd4cbf99963ed7fc4209baf5d3c3a7d301b9bb
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3e9e757f4eeddaf960cd3c45c6247f3757b599f9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801169"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59075730"
 ---
 # <a name="androidwifisecuritytype-enum-type"></a>androidWiFiSecurityType 枚举类型
 

@@ -2,15 +2,15 @@
 title: authenticationTransformConstant 枚举类型
 description: IKEv2 连接类型的 Windows 10 VPN 策略的身份验证转换值。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0e20c5566436bcc76801411b6c2cb6334253eccb
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 47d17c9c567ee44285519519e1993497be33126a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788694"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59075583"
 ---
 # <a name="authenticationtransformconstant-enum-type"></a>authenticationTransformConstant 枚举类型
 

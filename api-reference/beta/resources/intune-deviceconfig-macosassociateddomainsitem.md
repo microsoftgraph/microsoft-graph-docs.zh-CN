@@ -2,15 +2,15 @@
 title: macOSAssociatedDomainsItem 资源类型
 description: 应用程序标识符到关联域的映射。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2658a02a4881e793879a68bc6d1822d9a9b2a0a5
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e1229706d524cb16c9c66c1acf4c7fb86e65ede0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819141"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59081323"
 ---
 # <a name="macosassociateddomainsitem-resource-type"></a>macOSAssociatedDomainsItem 资源类型
 
@@ -23,11 +23,11 @@ ms.locfileid: "58819141"
 应用程序标识符到关联域的映射。
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|描述|
 |:---|:---|:---|
 |applicationIdentifier|String|要与域关联的应用程序的应用程序标识符。|
 |domains|String collection|要关联的域列表。|
-|directDownloadsEnabled|Boolean|确定数据是应该直接下载还是通过 CDN。|
+|directDownloadsEnabled|Boolean|确定数据是应该直接下载还是通过CDN。|
 
 ## <a name="relationships"></a>关系
 无

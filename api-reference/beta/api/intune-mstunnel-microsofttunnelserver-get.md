@@ -2,15 +2,15 @@
 title: 获取 microsoftTunnelServer
 description: 读取 microsoftTunnelServer 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 15059006e2eae19482f9544bbdf7f732c5729d4a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 372795f01a669d2720cc0d54673fcb05f722cabd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791310"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59041778"
 ---
 # <a name="get-microsofttunnelserver"></a>获取 microsoftTunnelServer
 
@@ -46,7 +46,7 @@ GET /deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/microsoftTunn
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

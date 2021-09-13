@@ -2,15 +2,15 @@
 title: 更新 groupPolicyConfiguration
 description: 更新 groupPolicyConfiguration 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1ac923662c83d18178ac4c91e9fac490e94b0df8
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 940e3b0dd1816a4fc12df74be254e23d8ba06b26
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786107"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59082254"
 ---
 # <a name="update-grouppolicyconfiguration"></a>更新 groupPolicyConfiguration
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,10 +54,10 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}
 |属性|类型|说明|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|对象的创建日期和时间。|
-|displayName|字符串|用户为资源对象提供的名称。|
-|description|String|用户提供了资源对象的说明。|
-|roleScopeTagIds|字符串集合|配置的范围标记列表。|
-|id|字符串|实体的键。|
+|displayName|String|用户为资源对象提供的名称。|
+|说明|String|用户提供了资源对象的说明。|
+|roleScopeTagIds|String collection|配置的范围标记列表。|
+|id|String|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。|
 
 

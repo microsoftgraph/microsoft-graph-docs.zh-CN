@@ -2,15 +2,15 @@
 title: 更新 deviceManagementIntent
 description: 更新 deviceManagementIntent 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cf39707f420628ee029ae11e1ae4f48904807179
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 077638e55ce8eb2d06f6fff54289dee06c04ade6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787433"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59077193"
 ---
 # <a name="update-devicemanagementintent"></a>更新 deviceManagementIntent
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,8 +54,8 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|意图 ID|
-|displayName|字符串|给定用户显示名称|
-|description|String|用户给定的说明|
+|displayName|String|给定用户显示名称|
+|说明|String|用户给定的说明|
 |isAssigned|Boolean|表示是否将意图分配给用户|
 |lastModifiedDateTime|DateTimeOffset|上次修改意图时|
 |templateId|String|此意图的模板 ID 是 (（如果有) |

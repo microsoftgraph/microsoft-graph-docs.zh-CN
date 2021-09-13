@@ -1,16 +1,16 @@
 ---
 title: deviceManagement 资源类型
 description: 'deviceManagement 资源表示其内容因工作流而异的容器，包括：  '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: rolyon
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c5d6a6d09515c4717c0c45442e80875e5a340968
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c1562f91f3728830f4d220063651d03823c052eb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58815468"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039131"
 ---
 # <a name="devicemanagement-resource-type"></a>deviceManagement 资源类型
 
@@ -39,13 +39,13 @@ deviceManagement 资源表示其内容因工作流而异的容器，包括：
 - 远程访问
 - 远程协助合作伙伴
 - 基于角色的访问控制 (RBAC) 策略
-- Reporting
+- 报告
 - 电信业务管理合作伙伴
 - 事件疑难解答
 - Windows信息保护摘要
 
 ## <a name="methods"></a>方法
-|方法|返回类型|Description|
+|方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 deviceManagement](../api/intune-shared-devicemanagement-get.md)|读取 [deviceManagement](../resources/intune-shared-devicemanagement.md) 对象的属性和关系。|
 |[更新 deviceManagement](../api/intune-shared-devicemanagement-update.md)|更新 [deviceManagement](../resources/intune-shared-devicemanagement.md) 对象的属性。|

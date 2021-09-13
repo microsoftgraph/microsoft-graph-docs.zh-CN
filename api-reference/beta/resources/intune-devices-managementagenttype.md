@@ -2,15 +2,15 @@
 title: managementAgentType 枚举类型
 description: 管理代理类型。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f1593d4f25a3da7f631c69e105dc8652453e01f6
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 47bfb0c7f7e1f59832b00c1ab7efcf2d3a556e52
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58815041"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59040057"
 ---
 # <a name="managementagenttype-enum-type"></a>managementAgentType 枚举类型
 
@@ -27,12 +27,12 @@ ms.locfileid: "58815041"
 |:---|:---|:---|
 |eas|1|设备由Exchange管理。|
 |mdm|2|设备由 Intune MDM 管理。|
-|easMdm|3|设备由托管服务器Exchange Intune MDM 管理。|
+|easMdm|3|设备由 Exchange 和 Intune MDM 管理。|
 |intuneClient|4 |Intune 客户端托管。|
 |easIntuneClient|5 |设备是 EAS 和 Intune 客户端双托管设备。|
 |configurationManagerClient|8 |设备由 Configuration Manager 管理。|
 |configurationManagerClientMdm|10 |设备由 Configuration Manager 和 MDM 管理。|
-|configurationManagerClientMdmEas|11 |设备由 Configuration Manager、MDM 和 Eas 管理。|
+|configurationManagerClientMdmEas|11|设备由 Configuration Manager、MDM 和 Eas 管理。|
 |unknown|16 |未知管理代理类型。|
 |jamf|32|设备属性从 Jamf 获取。|
 |googleCloudDevicePolicyController|64|设备由 Google 的 CloudDPC 管理。|

@@ -2,15 +2,15 @@
 title: 创建 onlineMeeting
 description: 代表请求正文中指定的用户创建联机会议。
 author: mkhribech
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 00cb4cedca7085b4673ade851d47d50340404c2c
-ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
+ms.openlocfilehash: a5c6848b257964474a590901b092affcdfe627e7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52896590"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59008438"
 ---
 # <a name="create-onlinemeeting"></a>创建 onlineMeeting
 
@@ -67,9 +67,11 @@ POST /users/{userId}/onlineMeetings
 
 ## <a name="examples"></a>示例 
 
+### <a name="example-1-create-an-online-meeting-with-user-token"></a>示例 1：使用用户令牌创建联机会议
+
 以下示例会使用用户令牌创建一个联机会议。
 
-### <a name="request"></a>请求
+#### <a name="request"></a>请求
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -104,8 +106,7 @@ Content-Type: application/json
 
 ---
 
-
-### <a name="response"></a>响应
+#### <a name="response"></a>响应
 
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 
 
@@ -162,6 +163,108 @@ Content-Type: application/json
     }  
 ```
 
+### <a name="example-2-create-a-live-event-with-user-token"></a>示例 2：通过用户令牌创建实时事件
+
+<!-- {
+  "blockType": "request",
+  "name": "create-live-event-user-token"
+}-->
+#### <a name="request"></a>请求
+
+```http
+POST https://graph.microsoft.com/beta/me/onlineMeetings
+Content-Type: application/json
+
+{
+  "subject":"User Token Live Event",
+  "startDateTime":"2021-08-20T14:00:34.2444915+00:00",
+  "endDateTime":"2021-08-20T15:00:34.2464912+00:00",
+  "isBroadcast": true,
+  "broadcastSettings": {
+    "allowedAudience": "everyone",
+    "isRecordingEnabled": true,
+    "isAttendeeReportEnabled": true
+  }
+}
+```
+
+#### <a name="response"></a>响应
+
+> **注意：** 为了可读性，此处显示的答复对象已缩短。 
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.onlineMeeting"
+} -->
+```json
+{
+  "id": "(redacted)",
+  "creationDateTime": "2020-12-02T14:30:34.2444915Z",
+  "startDateTime": "2021-08-20T14:00:34.2444915Z",
+  "endDateTime": "2021-08-20T15:00:34.2464912Z",
+  "joinWebUrl": "(redacted)",
+  "subject": "User Token Live Event",
+  "autoAdmittedUsers": "EveryoneInCompany",
+  "isEntryExitAnnounced": true,
+  "allowedPresenters": "organization",
+  "videoTeleconferenceId": "(redacted)",
+  "participants": {
+    "organizer": {
+      "upn": "(redacted)",
+      "role": "producer",
+      "identity": {
+        "user": {
+          "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622",
+          "displayName": null,
+          "tenantId": "909c6581-5130-43e9-88f3-fcb3582cde38",
+          "identityProvider": "AAD"
+        }
+      }
+    },
+    "attendees": [
+      {
+        "upn": "(redacted)",
+        "role": "producer",
+        "identity": {
+          "user": {
+            "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622",
+            "displayName": null,
+            "tenantId": "909c6581-5130-43e9-88f3-fcb3582cde38",
+            "identityProvider": "AAD"
+          }
+        }
+      }
+    ],
+    "producers": [
+      {
+        "upn": "(redacted)",
+        "role": "producer",
+        "identity": {
+          "user": {
+            "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622",
+            "displayName": null,
+            "tenantId": "909c6581-5130-43e9-88f3-fcb3582cde38",
+            "identityProvider": "AAD"
+          }
+        }
+      }
+    ],
+    "contributors": []
+  },
+  "lobbyBypassSettings": {
+    "scope": "organization",
+    "isDialInBypassEnabled": false
+  },
+  "isBroadcast": true,
+  "broadcastSettings": {
+    "allowedAudience": "organization",
+    "isRecordingEnabled": true,
+    "isAttendeeReportEnabled": true
+  }
+}
+```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
@@ -175,4 +278,3 @@ Content-Type: application/json
   ]
 }
 -->
-

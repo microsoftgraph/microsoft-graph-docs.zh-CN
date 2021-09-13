@@ -2,15 +2,15 @@
 title: searchExistingIdentities 操作
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 649f334627dcd5228fe8bbc4986484c8870eaa8d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: fe2e0a4137755eac769f5343797b60bce44001d2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58765041"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59082478"
 ---
 # <a name="searchexistingidentities-action"></a>searchExistingIdentities 操作
 
@@ -43,7 +43,7 @@ POST /deviceManagement/importedDeviceIdentities/searchExistingIdentities
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,14 +51,14 @@ POST /deviceManagement/importedDeviceIdentities/searchExistingIdentities
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |importedDeviceIdentities|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) 集合|尚未记录|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此操作在响应 `200 OK` 正文中返回 响应 [代码和 importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) 集合。
+如果成功，此操作在响应正文中返回 响应代码和 `200 OK` [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) 集合。
 
 ## <a name="example"></a>示例
 

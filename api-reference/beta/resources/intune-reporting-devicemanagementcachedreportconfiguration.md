@@ -2,15 +2,15 @@
 title: deviceManagementCachedReportConfiguration 资源类型
 description: 表示缓存报表的配置的实体
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ff8d125f6703b1984eb9369bcfa3cd9b75b12249
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1eab917cfba35a38ce5e19b99c6b56505a1f053f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793787"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039439"
 ---
 # <a name="devicemanagementcachedreportconfiguration-resource-type"></a>deviceManagementCachedReportConfiguration 资源类型
 
@@ -37,10 +37,10 @@ ms.locfileid: "58793787"
 |id|String|此实体的唯一标识符|
 |reportName|String|报告的名称|
 |filter|String|创建报表时应用的筛选器。|
-|select|字符串集合|从报表选择的列|
-|orderBy|字符串集合|报告中列的排序|
+|select|String collection|从报表选择的列|
+|orderBy|String collection|报告中列的排序|
 |metadata|String|与报告关联的呼叫者管理的元数据|
-|状态|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|缓存报表的状态。 可取值为：`unknown`、`notStarted`、`inProgress`、`completed`、`failed`。|
+|status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|缓存报表的状态。 可取值为：`unknown`、`notStarted`、`inProgress`、`completed`、`failed`。|
 |lastRefreshDateTime|DateTimeOffset|上次刷新缓存报告的时间|
 |expirationDateTime|DateTimeOffset|缓存报告的过期时间|
 

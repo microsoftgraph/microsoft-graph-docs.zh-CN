@@ -2,15 +2,15 @@
 title: 列出 windows10NetworkBoundaryConfigurations
 description: 列出 windows10NetworkBoundaryConfiguration 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9430c34de584767f6182b7a02cb50bfa149b789b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7ddfb5d7dc2bc30fccc8c4c4c06082fe19f989af
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793194"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59070977"
 ---
 # <a name="list-windows10networkboundaryconfigurations"></a>列出 windows10NetworkBoundaryConfigurations
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

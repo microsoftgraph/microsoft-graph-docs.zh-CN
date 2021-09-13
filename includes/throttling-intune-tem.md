@@ -1,14 +1,14 @@
 ---
 author: davidmu1
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: msgraph
 ms.topic: include
-ms.openlocfilehash: 7b846dc5af361d07f7526387b7090a87f4c9c726d5d1a5f5e1e03603b9dc976e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 65ad36cc72ef7616998ac1d8e62cb8083d65266d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196640"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035757"
 ---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
@@ -20,4 +20,7 @@ ms.locfileid: "54196640"
 | 任何 | 每 20 秒 2000 个请求 | 每 20 秒 1000 个请求 |
 
 上述限制适用于下列资源:  
-telecomExpenseManagementPartner。
+
+| <!-- fake header-->                                                                                                                                                                                                                                                                                                                                                                            |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <ul> <li> [telecomExpenseManagementPartner](/graph/api/resources/telecomexpensemanagementpartner)  </ul> |

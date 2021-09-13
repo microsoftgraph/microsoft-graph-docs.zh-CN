@@ -2,15 +2,15 @@
 title: deviceManagementExchangeConnectorStatus 枚举类型
 description: 连接器的当前Exchange状态。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1d8ad720b4b03fb157b71506b055bab9916443b4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: db5845b0208bf528dc20a30b750bc6bb64e6e387
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801057"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59080896"
 ---
 # <a name="devicemanagementexchangeconnectorstatus-enum-type"></a>deviceManagementExchangeConnectorStatus 枚举类型
 

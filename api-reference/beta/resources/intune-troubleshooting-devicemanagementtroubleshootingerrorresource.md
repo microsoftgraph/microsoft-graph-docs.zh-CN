@@ -2,15 +2,15 @@
 title: deviceManagementTroubleshootingErrorResource 资源类型
 description: 表示疑难解答信息的链接的对象，该链接可能是 Azure 门户或 Microsoft 文档。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1da7b75414aafcce5e221cbb5f6e0cfc0ea0209b
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 524f5615e165f32a1b67341d5066b56414404e7f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266791"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039005"
 ---
 # <a name="devicemanagementtroubleshootingerrorresource-resource-type"></a>deviceManagementTroubleshootingErrorResource 资源类型
 

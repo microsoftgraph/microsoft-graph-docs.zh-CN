@@ -2,15 +2,15 @@
 title: edgeKioskModeRestrictionType 枚举类型
 description: 指定如何Microsoft Edge展台模式限制用户设置。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b08d5190992433f0f3457c29fb74ccfa8c57e998
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d51e980e19bae79a4b5280fe18044ce5065abab5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796626"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59081344"
 ---
 # <a name="edgekioskmoderestrictiontype-enum-type"></a>edgeKioskModeRestrictionType 枚举类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "58796626"
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|notConfigured|0|未 (无限制) 。|
+|notConfigured|0|未配置 (无限制) 。|
 |digitalSignage|1|单应用模式下的交互式/数字标志。|
 |normalMode|2|正常模式 (完整版本的Microsoft Edge) 。|
 |publicBrowsingSingleApp|3|单应用模式下的公共浏览。|

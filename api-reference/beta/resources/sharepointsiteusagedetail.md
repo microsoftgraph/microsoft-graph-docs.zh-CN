@@ -1,16 +1,16 @@
 ---
 title: sharePointSiteUsageDetail 资源类型
 description: 下面是资源的 JSON 表示形式。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
 author: JeremyKelley
-ms.openlocfilehash: 3cfba5694c4f3efc2b10dc9259a561c24ff042af
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2d9bdd86d2b50601dc5c54b2a34480e9cd71118d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820679"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59038795"
 ---
 # <a name="sharepointsiteusagedetail-resource-type"></a>sharePointSiteUsageDetail 资源类型
 
@@ -30,7 +30,7 @@ ms.locfileid: "58820679"
 | siteSensitivityLabelId  | String  |
 | externalSharing         | Boolean |
 | unmanagedDevicePolicy   | String  |
-| geoLocation             | 字符串  |
+| geoLocation             | String  |
 | fileCount               | Int64   |
 | activeFileCount         | Int64   |
 | pageViewCount           | Int64   |

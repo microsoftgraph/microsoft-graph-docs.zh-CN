@@ -2,15 +2,15 @@
 title: 删除 deviceManagementScriptUserState
 description: 删除 deviceManagementScriptUserState。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c8ca0963ce21e85823d21ab1d82fcc2ec5caca3b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d28a23975aa225a8ec5bd2335102685febc37dbe
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58754847"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59070690"
 ---
 # <a name="delete-devicemanagementscriptuserstate"></a>删除 deviceManagementScriptUserState
 
@@ -45,7 +45,7 @@ DELETE /deviceManagement/deviceCustomAttributeShellScripts/{deviceCustomAttribut
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

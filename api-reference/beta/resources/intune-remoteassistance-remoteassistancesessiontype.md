@@ -2,15 +2,15 @@
 title: remoteAssistanceSessionType 枚举类型
 description: 已召开的远程协助会话的类型。 可能的值包括： `viewOnly` 、 `fullControl`
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4aea876b672a71e9bc82e9eea620d257c3c5ea01
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: fb9f988c566c8a6e6bfc44f228d23fee8b20a1a7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794300"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039467"
 ---
 # <a name="remoteassistancesessiontype-enum-type"></a>remoteAssistanceSessionType 枚举类型
 

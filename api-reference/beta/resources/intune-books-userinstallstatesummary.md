@@ -2,15 +2,15 @@
 title: userInstallStateSummary 资源类型
 description: 包含某个用户的安装状态摘要的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 06bf7916c8f52f024507172428753030d078fe5d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a389725fdbb36d6dd73194f97e27b45e29cd4ad4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794488"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59081477"
 ---
 # <a name="userinstallstatesummary-resource-type"></a>userInstallStateSummary 资源类型
 
@@ -41,7 +41,7 @@ ms.locfileid: "58794488"
 |notInstalledDeviceCount|Int32|Not installed device count。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|描述|
 |:---|:---|:---|
 |deviceStates|[deviceInstallState](../resources/intune-books-deviceinstallstate.md) 集合|电子书的安装状态。|
 

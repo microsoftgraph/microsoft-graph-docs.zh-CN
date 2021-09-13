@@ -2,15 +2,15 @@
 title: 列出 deviceManagementConfigurationSettingGroupCollectionDefinitions
 description: 列出 deviceManagementConfigurationSettingGroupCollectionDefinition 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: eaa5a78b7f59bada3d074002a0f1d8f8300a4b36
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 556da5d7046f02aa9ed4d13c6a097e60e1336b74
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816989"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59070725"
 ---
 # <a name="list-devicemanagementconfigurationsettinggroupcollectiondefinitions"></a>列出 deviceManagementConfigurationSettingGroupCollectionDefinitions
 
@@ -46,7 +46,7 @@ GET /deviceManagement/configurationPolicyTemplates/{deviceManagementConfiguratio
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -2,15 +2,15 @@
 title: deviceAndAppManagementAssignmentTarget 资源类型
 description: 赋值目标的基类型。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1a93af1c946fa70da31667d657d8f38973bac273
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5c2889eecbc01dc3ebd3adab30c164e95eccf0ce
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796164"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074722"
 ---
 # <a name="deviceandappmanagementassignmenttarget-resource-type"></a>deviceAndAppManagementAssignmentTarget 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58796164"
 赋值目标的基类型。
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |deviceAndAppManagementAssignmentFilterId|String|目标分配的筛选器 ID。|
 |deviceAndAppManagementAssignmentFilterType|[deviceAndAppManagementAssignmentFilterType](../resources/intune-shared-deviceandappmanagementassignmentfiltertype.md)|目标分配的筛选器类型，即排除或包含。 可取值为：`none`、`include`、`exclude`。|

@@ -2,15 +2,15 @@
 title: deviceManagementScript 资源类型
 description: Intune 将为客户提供在已注册的 windows 10 和已加入Azure Active Directory运行其 Powershell 脚本的能力。 脚本可以运行一次或定期运行。
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ee7f52df72be0f014bd3b6ad8c08264b20477b2d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 12dfae8bfe0a4d005e0871a7ca91d91301f87624
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790106"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039061"
 ---
 # <a name="devicemanagementscript-resource-type"></a>deviceManagementScript 资源类型
 
@@ -39,15 +39,15 @@ Intune 将为客户提供在已注册的 windows 10 和已加入Azure Active Dir
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|设备管理脚本的唯一标识符。|
-|displayName|字符串|设备管理脚本的名称。|
-|description|字符串|设备管理脚本的可选说明。|
+|displayName|String|设备管理脚本的名称。|
+|说明|String|设备管理脚本的可选说明。|
 |scriptContent|二进制|脚本内容。|
 |createdDateTime|DateTimeOffset|创建设备管理脚本的日期和时间。 此属性是只读的。|
 |lastModifiedDateTime|DateTimeOffset|上次修改设备管理脚本的日期和时间。 此属性是只读的。|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示执行上下文的类型。 可取值为：`system`、`user`。|
-|enforceSignatureCheck|布尔值|指示是否需要检查脚本签名。|
+|enforceSignatureCheck|Boolean|指示是否需要检查脚本签名。|
 |fileName|String|脚本文件名。|
-|roleScopeTagIds|字符串集合|此 PowerShellScript 实例的范围标记标识列表。|
+|roleScopeTagIds|String collection|此 PowerShellScript 实例的范围标记标识列表。|
 |runAs32Bit|Boolean|指示 PowerShell 脚本是否应该作为 32 位运行的值|
 
 ## <a name="relationships"></a>关系

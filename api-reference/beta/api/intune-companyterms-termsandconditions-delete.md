@@ -2,15 +2,15 @@
 title: 删除 termsAndConditions
 description: 删除 termsAndConditions。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a4a4e188d1cb27472fb5a1bfcdbe9c47ffd27067
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0194789253e2ead29d8daf4adf57cf6f024e6e2a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58792475"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59077697"
 ---
 # <a name="delete-termsandconditions"></a>删除 termsAndConditions
 
@@ -45,7 +45,7 @@ DELETE /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceSta
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

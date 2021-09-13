@@ -2,15 +2,15 @@
 title: windows10AssociatedApps 资源类型
 description: Windows 10关联的应用程序定义。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ee35da8d8a03cc52ddcf4e6764ba1aee0a59a2c3
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e9fc853dcf01d111470c1b3d4bc8b4712cf983ee
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819694"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59081190"
 ---
 # <a name="windows10associatedapps-resource-type"></a>windows10AssociatedApps 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58819694"
 Windows 10关联的应用程序定义。
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|描述|
 |:---|:---|:---|
 |appType|[windows10AppType](../resources/intune-deviceconfig-windows10apptype.md)|应用程序类型。 可取值为：`desktop`、`universal`。|
 |标识符|String|标识符。|

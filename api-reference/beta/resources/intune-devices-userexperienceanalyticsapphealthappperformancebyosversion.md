@@ -2,15 +2,15 @@
 title: userExperienceAnalyticsAppHealthAppPerformanceByOSVersion 资源类型
 description: 用户体验分析应用程序性能实体包含操作系统版本的应用性能详细信息。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bbd3a4c570d3904430b2cd1c4a45755d2f7b9077
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 62c0fc4ec2ca220a4544664be567d0f7aedf8629
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788435"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59081036"
 ---
 # <a name="userexperienceanalyticsapphealthappperformancebyosversion-resource-type"></a>userExperienceAnalyticsAppHealthAppPerformanceByOSVersion 资源类型
 
@@ -36,7 +36,7 @@ ms.locfileid: "58788435"
 |:---|:---|:---|
 |id|String|用户体验分析应用版本性能对象的唯一标识符。|
 |osVersion|String|应用程序的 os 版本。|
-|osBuildNumber|字符串|应用程序的操作系统内部版本号。|
+|osBuildNumber|String|应用程序的操作系统内部版本号。|
 |activeDeviceCount|Int32|应用处于活动状态的设备数。 有效值 -2147483648 2147483647|
 |appName|String|应用程序名。|
 |appDisplayName|String|应用程序的友好名称。|

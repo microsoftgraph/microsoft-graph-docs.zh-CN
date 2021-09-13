@@ -2,15 +2,15 @@
 title: windowsKioskSingleWin32App 资源类型
 description: 用于标识展台 win32 配置的单个应用配置的类
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1e5d46ff9fb5289cbb0fb7d015f91a97604df552
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: acf6cf571760f68b199f77b0b3607f7334aca631
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790393"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59075401"
 ---
 # <a name="windowskiosksinglewin32app-resource-type"></a>windowsKioskSingleWin32App 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "58790393"
 继承自 [windowsKioskAppConfiguration](../resources/intune-deviceconfig-windowskioskappconfiguration.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |win32App|[windowsKioskWin32App](../resources/intune-deviceconfig-windowskioskwin32app.md)|这是在展台模式下可供启动使用的 win32 应用|
 

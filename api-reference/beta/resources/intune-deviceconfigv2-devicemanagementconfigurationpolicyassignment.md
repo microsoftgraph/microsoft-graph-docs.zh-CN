@@ -2,15 +2,15 @@
 title: deviceManagementConfigurationPolicyAssignment 资源类型
 description: DeviceManagementConfigurationPolicyAssignment 实体将特定 DeviceManagementConfigurationPolicy 分配给 AAD 组。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 848e1829f22128d11893f13ed02d299381ff3676
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 184d209ef0c2454c79d499594c985656f7bb41bd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58792580"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59075352"
 ---
 # <a name="devicemanagementconfigurationpolicyassignment-resource-type"></a>deviceManagementConfigurationPolicyAssignment 资源类型
 
