@@ -1,16 +1,16 @@
 ---
 title: 提醒资源类型
 description: 用户日历中事件的提醒。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 8a60e6eb0ebdd91540fafc5c579ec6992428bd13fc2edae8668f5878205c54aa
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ae24d37e05d104faf83da1c5056237686b88dcf6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54184499"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067029"
 ---
 # <a name="reminder-resource-type"></a>提醒资源类型
 

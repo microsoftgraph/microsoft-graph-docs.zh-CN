@@ -2,15 +2,15 @@
 title: 删除 targetedManagedAppPolicyAssignment
 description: 删除 targetedManagedAppPolicyAssignment。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d22ea2a758322c2612d749ccc489208eceab0eac
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4a28348609e2bb21fca3267f350464203e29172d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804636"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59018080"
 ---
 # <a name="delete-targetedmanagedapppolicyassignment"></a>删除 targetedManagedAppPolicyAssignment
 
@@ -47,7 +47,7 @@ DELETE /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsI
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

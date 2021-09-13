@@ -2,15 +2,15 @@
 title: 更新邮件
 description: 更新 message 对象的属性。
 author: abheek-das
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ae4b90f14410321a052f7fa9cfa852e46582b0bd
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c125f105ac97b297fd49c2ef422fea077f0ff0d8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054551"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59073007"
 ---
 # <a name="update-message"></a>更新邮件
 
@@ -58,7 +58,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 |isReadReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) 集合| 为邮件定义的多值扩展属性的集合。只读。可为空。|
 |replyTo|收件人集合|在答复时使用的电子邮件地址。仅当 isDraft = true 时可以更新。|
-|sender|收件人|实际用于生成邮件的帐户。 从[共享邮箱](/exchange/collaboration/shared-mailboxes/shared-mailboxes)发送邮件或将邮件作为[委托](https://support.office.com/zh-CN/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926)发送时可更新。 在任何情况下，此值必须对应于使用的实际邮箱。|
+|sender|收件人|实际用于生成邮件的帐户。 从[共享邮箱](/exchange/collaboration/shared-mailboxes/shared-mailboxes)发送邮件或将邮件作为[委托](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926)发送时可更新。 在任何情况下，此值必须对应于使用的实际邮箱。|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) collection| 为邮件定义的单值扩展属性的集合。可为空。|
 |subject|String|邮件的主题。仅当 isDraft = true 时可以更新。|
 |toRecipients|收件人集合|邮件的收件人。|
@@ -106,7 +106,7 @@ Content-length: 248
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

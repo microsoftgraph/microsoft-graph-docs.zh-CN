@@ -1,16 +1,16 @@
 ---
 title: 创建 identityUserFlowAttribute
 description: 创建新的 identityUserFlowAttribute 对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: ac068b6956c48f67245f6c93dca764cb575e3ba3
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: c02baf42a497ff10324c4ad26f0eb268c2fd0af2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51920843"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045686"
 ---
 # <a name="create-identityuserflowattribute"></a>创建 identityUserFlowAttribute
 
@@ -31,7 +31,7 @@ ms.locfileid: "51920843"
 工作或学校帐户需要属于以下角色之一：
 
 * 全局管理员
-* 外部标识用户流属性管理员
+* 外部标识用户Flow属性管理员
 
 ## <a name="http-request"></a>HTTP 请求
 

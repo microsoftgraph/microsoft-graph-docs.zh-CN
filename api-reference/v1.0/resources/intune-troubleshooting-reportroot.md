@@ -2,15 +2,15 @@
 title: reportRoot 资源类型
 description: 表示注册失败报告实例的资源。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c3ca385b92069271a4facc8e3ecd68fa5049db8f
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 0545c2f2b0fbabc03fbc2b628a9d1752fc3f0748
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58258817"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021510"
 ---
 # <a name="reportroot-resource-type"></a>reportRoot 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "58258817"
 
 表示注册失败报告实例的资源。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 reportRoot](../api/intune-troubleshooting-reportroot-get.md)|[reportRoot](../resources/intune-troubleshooting-reportroot.md)|读取 [reportRoot](../resources/intune-troubleshooting-reportroot.md) 对象的属性和关系。|

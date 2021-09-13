@@ -1,16 +1,16 @@
 ---
 title: timeOffRequest： approve
 description: 批准 timeoffrequest 对象。"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 375b6f45b0b7c587e29e401def8d6da40423c40c
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: e2d6663392de39e01538aea321af38ebf769174e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786641"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049926"
 ---
 # <a name="timeoffrequest-approve"></a>timeOffRequest： approve
 

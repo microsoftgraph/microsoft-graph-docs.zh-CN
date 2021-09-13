@@ -2,15 +2,15 @@
 title: 获取频道中的选项卡
 description: '检索指定选项卡的属性和关系。 '
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c5bb4e89145cad0d4b689f37a683edfcbc5d5941263c55adcca2626975e2e9c6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f7ab04bc153bcc52a3303b55a2f91d4bddae5aeb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54187453"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59095239"
 ---
 # <a name="get-tab"></a>获取选项卡
 
@@ -40,7 +40,7 @@ GET /teams/{team-id}/channels/{channel-id}/tabs/{tab-id}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 $select 和 $expand [OData](/graph/query-parameters) 查询参数来帮助自定义响应。
+此方法支持 $select，$expand [OData](/graph/query-parameters) 查询参数来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |

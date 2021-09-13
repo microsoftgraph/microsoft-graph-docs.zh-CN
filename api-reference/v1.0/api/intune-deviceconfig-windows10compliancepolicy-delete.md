@@ -2,15 +2,15 @@
 title: 删除 windows10CompliancePolicy
 description: 删除 windows10CompliancePolicy。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e6aa473bf687bd260a738394b4183094b1832112c8cb3796bcdee9cb25f99803
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0a85318893734799fb53e44f575ee1adc9e0fbbb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54234174"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032823"
 ---
 # <a name="delete-windows10compliancepolicy"></a>删除 windows10CompliancePolicy
 

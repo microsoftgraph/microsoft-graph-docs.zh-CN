@@ -2,22 +2,22 @@
 title: 删除 windowsHelloForBusinessAuthenticationMethod
 description: 删除 windowsHelloForBusinessAuthenticationMethod 对象。
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: de3e491a5eef3f09b89134fdc45dbb9805b82627
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 7649b5d97ee807d862ab62585b4d1eca3fcb924a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51467944"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062846"
 ---
 # <a name="delete-windowshelloforbusinessauthenticationmethod"></a>删除 windowsHelloForBusinessAuthenticationMethod
 命名空间：microsoft.graph
 
 删除 [windowsHelloForBusinessAuthenticationMethod](../resources/windowshelloforbusinessauthenticationmethod.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

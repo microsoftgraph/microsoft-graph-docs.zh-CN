@@ -1,16 +1,16 @@
 ---
 title: Skype for Business 参与者活动报表
 description: Skype for Business 参与者活动报表可用于获取整个组织中参与会议活动的详细信息。 为组织调查、计划和做出其他业务决策时，便会发现这些详细信息非常有用。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: 0aae31ba04927b779f471921bf36dce358a3e2cff397b62e6733e05d34721d5c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d1dc12c3c2a83808c4168fa19a413f249ef6ba2e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54202103"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59014340"
 ---
 # <a name="skype-for-business-participant-activity-reports"></a>Skype for Business 参与者活动报表
 

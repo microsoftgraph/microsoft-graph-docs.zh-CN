@@ -1,16 +1,16 @@
 ---
 title: 更新开放扩展
 description: 通过请求正文中的属性更新开放扩展（openTypeExtension 对象）：
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: e32fc9a5a37453bfe77a2fa4a8539d69ebedef6f
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 8dfdb00a759f89ed4650d9cd3fcad55a05f1403e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50470712"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59079272"
 ---
 # <a name="update-open-extension"></a>更新开放扩展
 
@@ -23,11 +23,11 @@ ms.locfileid: "50470712"
 
 扩展插件中的数据可以是基元类型，也可以是基元类型数组。
 
-有关支持开放扩展的资源[](#permissions)列表，请参阅"权限"部分中的表。
+有关支持开放 [扩展](#permissions) 的资源列表，请参阅权限部分中的表。
 
 ## <a name="permissions"></a>权限
 
-根据创建扩展的资源和请求的权限类型 (委派或应用程序) ，下表中指定的权限是调用此 API 所需的最小特权。 若要了解详细信息，包括在选择更多特权之前的[注意事项](/graph/auth/auth-concepts#best-practices-for-requesting-permissions)，请在“[权限](/graph/permissions-reference)”中搜索以下权限。
+根据创建扩展的资源以及请求的权限类型 (或应用程序) ，下表中指定的权限是调用此 API 所需的最低特权。 若要了解其他信息， [在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 特权权限之前要特别小心，在"权限" [中搜索](/graph/permissions-reference)。
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|

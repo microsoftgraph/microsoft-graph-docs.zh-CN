@@ -2,15 +2,15 @@
 title: tuple_2OfExecutionType_ICollection_1OfOperation资源类型
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9707bf2b487f3865e412d7d610236219ded13a355bdfb9b051d2313d40fcb8c1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 07d24559152d7b42f94672d1690c7b7a4f22d90b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178267"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59028903"
 ---
 # <a name="tuple_2ofexecutiontype_icollection_1ofoperation-resource-type"></a>tuple_2OfExecutionType_ICollection_1OfOperation资源类型
 

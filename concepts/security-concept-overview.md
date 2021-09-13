@@ -2,15 +2,15 @@
 title: Microsoft Graph 安全性 API 概述
 description: Microsoft Graph 安全性 API 可用于连接 Microsoft 安全产品、服务和合作伙伴，以简化安全操作并改进威胁防护、检测和响应功能。 作为中介服务（或代理），Microsoft Graph 安全性 API 提供了一个编程接口，用于连接多个 Microsoft Graph 安全提供程序（亦称为“安全提供程序”或“提供程序”）。 向 Microsoft Graph 安全性 API 发出的请求被联合到所有适用的安全提供程序。 结果以通用架构的形式聚合并返回到发出请求的应用，如下图所示。 有关详细信息，请参阅“Microsoft Graph 安全性 API 数据流”。
 author: preetikr
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: security
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 459f82f08ac8024ff1773809cd860e3b13acd051c822bb181b2ddd1718dff377
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: eb11b07c2770fc3724ed374b42f94bf1b4ade520
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235079"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59093944"
 ---
 # <a name="microsoft-graph-security-api-overview"></a>Microsoft Graph 安全性 API 概述
 
@@ -38,7 +38,7 @@ Microsoft Graph 安全性 API 可用于连接 Microsoft 安全产品、服务和
 
 ### <a name="correlate-security-alerts-to-improve-threat-protection-and-response"></a>关联安全警报以改进威胁防护和响应
 
-使用统一警报架构，可以更轻松地跨安全解决方案关联警报。 这样一来，不仅能够接收可操作警报信息，还便于安全分析员使用资产和用户信息来透视和丰富警报，从而更快地响应威胁防护和资产保护。  
+使用统一警报架构，可以更轻松地跨安全解决方案关联警报。这不仅允许你接收可操作警报信息，还便于安全分析员使用资产和用户信息来透视和丰富警报，从而更快地响应威胁和资产保护。  
 
 ### <a name="update-alert-tags-status-and-assignments"></a>更新警报标记、状态和分配
 

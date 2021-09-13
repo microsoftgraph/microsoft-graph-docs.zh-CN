@@ -2,15 +2,15 @@
 title: deviceComplianceActionType 枚举类型
 description: 计划操作类型枚举
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b39ea3291658bf97f072e7e6243d6920a0e51e78549cc3527615cf40fd69b883
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 07267e38f0675ee9d1b0c72e2687c4865fcd42ee
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54146487"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072412"
 ---
 # <a name="devicecomplianceactiontype-enum-type"></a>deviceComplianceActionType 枚举类型
 

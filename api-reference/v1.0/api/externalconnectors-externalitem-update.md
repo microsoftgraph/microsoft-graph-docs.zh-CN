@@ -2,15 +2,15 @@
 title: 更新 externalItem
 description: 更新 externalItem 对象的属性。
 author: mecampos
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: b93fa76181e907987add5196bd8dc56481aef6e3
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 4a7ee4b656bf3552dcfa3c45fbd76bb541250fad
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53580749"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59029589"
 ---
 # <a name="update-externalitem"></a>更新 externalItem
 命名空间：microsoft.graph.externalConnectors
@@ -41,9 +41,9 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 | 参数     | 类型   | 说明                                         |
 |:--------------|:-------|:----------------------------------------------------|
 | connection-id | 字符串 | `id`包含[externalConnection 的 属性](../resources/externalconnectors-externalconnection.md) |
-| item-id       | 字符串 | 由开发人员提供的 `id` [externalItem 属性](../resources/externalconnectors-externalitem.md)。 |
+| item-id       | string | 由开发人员提供的 `id` [externalItem 属性](../resources/externalconnectors-externalitem.md)。 |
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称          | 说明                 |
 |:--------------|:----------------------------|
@@ -52,7 +52,7 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供应更新的相关字段的值。 现有 (不包括请求正文) 对象对象中的属性将保留其以前的值或根据其他属性值的更改 `properties` 重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。 可更新以下属性。
+在请求正文中，提供应更新的相关字段的值。 现有 (不包含在请求正文中的对象) 属性将保留其以前的值或根据其他属性值的更改 `properties` 重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。 可更新以下属性。
 
 | 属性   | 类型                                  | 说明               |
 |:-----------|:--------------------------------------|:--------------------------|

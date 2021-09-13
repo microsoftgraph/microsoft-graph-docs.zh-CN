@@ -1,16 +1,16 @@
 ---
 title: 列出 tokenIssuancePolicy
 description: 获取 tokenIssuancePolicy 对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: luleonpla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 693579c25c7e96ccbdfceecee44791ba23ffeefa
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 7ec4cffd4a871bede7ef4e4bf9c671cc78ff43e8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054341"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067680"
 ---
 # <a name="list-tokenissuancepolicy"></a>列出 tokenIssuancePolicy
 

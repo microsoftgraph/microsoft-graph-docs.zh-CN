@@ -2,15 +2,15 @@
 title: ratingUnitedStatesMoviesType 枚举类型
 description: 美国电影评级标签
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5a4299768f781875c6e7d5687853810ee52413a1aa81264f7b9c90715f8dc052
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b9497d9514f98ef9fd1f10e498d025dd587c413d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54205680"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59044620"
 ---
 # <a name="ratingunitedstatesmoviestype-enum-type"></a>ratingUnitedStatesMoviesType 枚举类型
 

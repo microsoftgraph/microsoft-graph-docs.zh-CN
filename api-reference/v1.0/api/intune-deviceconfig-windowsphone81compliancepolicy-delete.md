@@ -2,15 +2,15 @@
 title: 删除 windowsPhone81CompliancePolicy
 description: 删除 windowsPhone81CompliancePolicy。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ddcbdc59e0d02162b6a468bff137e5948c30eb82e11a215cab5ba0fbe2e2a2d5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d3a2e726803ae788f331627b9b4afd4c6b5c35c4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54247177"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59068044"
 ---
 # <a name="delete-windowsphone81compliancepolicy"></a>删除 windowsPhone81CompliancePolicy
 

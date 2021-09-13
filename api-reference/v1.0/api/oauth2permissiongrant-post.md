@@ -1,25 +1,25 @@
 ---
 title: 创建 oAuth2PermissionGrant
-description: 创建一个 oAuth2PermissionGrant 对象，该对象代表委派的权限授予。
-localization_priority: Normal
+description: 创建表示委派权限授予的 oAuth2PermissionGrant 对象。
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: e893f69fba9e8494854cb89b030f75fe5b30dc8f
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 4e7260407b361eabe17c55af1684d6fc0e269b8b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448198"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062920"
 ---
-# <a name="create-a-delegated-permission-grant-oauth2permissiongrant"></a>通过 oAuth2PermissionGrant (创建委派) 
+# <a name="create-a-delegated-permission-grant-oauth2permissiongrant"></a>创建 oAuth2PermissionGrant (委派) 
 
 命名空间：microsoft.graph
 
 
 创建委派权限授予。 委派的权限授予由 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象表示。
 
-委派权限授予授权客户端服务主体 (代表客户端应用程序) 访问代表 API) 的资源服务主体 (（代表已登录用户）访问已授予的委派权限限制的访问级别。
+委派权限授予授权表示客户端应用程序) 的客户端服务主体 (代表已登录用户的 API) 访问代表 API) 的资源服务主体 (，从而获取已授予的委派权限所限制的访问级别。
 
 ## <a name="permissions"></a>权限
 

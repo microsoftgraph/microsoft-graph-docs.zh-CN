@@ -1,16 +1,16 @@
 ---
 title: 创建 inferenceClassificationOverride
 description: '创建由 SMTP 地址识别的发件人的替代。 来自该 SMTP 地址的未来邮件将被一致分类 '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: e3edf0e5ac276f5ab94e50d59cb4215877beec09
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 48f328c81cf47224819b32c532cde7a9112e2dbf
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051366"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045572"
 ---
 # <a name="create-inferenceclassificationoverride"></a>创建 inferenceClassificationOverride
 
@@ -93,7 +93,7 @@ Content-type: application/json
 
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

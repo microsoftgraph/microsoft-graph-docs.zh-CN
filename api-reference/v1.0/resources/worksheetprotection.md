@@ -2,15 +2,15 @@
 title: WorksheetProtection 资源类型
 description: 表示对工作表对象的保护。
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: f69409c3bcab7eaa91e08341f5b81074589ca64e7fb83c56b48f30e451fc736f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 81af10a84f500ef0bec0023e81f62024be4d4713
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163612"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59083927"
 ---
 # <a name="worksheetprotection-resource-type"></a>WorksheetProtection 资源类型
 

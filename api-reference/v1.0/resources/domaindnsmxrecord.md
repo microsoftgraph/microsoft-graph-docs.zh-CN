@@ -2,15 +2,15 @@
 title: domainDnsMxRecord 资源类型
 description: 表示添加到租户中特定域的 DNS 区域文件的 MX 记录。
 author: adimitui
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 701c65651b95305305706a73beb34e5e18a4a8008d89bc24a2a27f1cd7a03f2f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 41f09764ab4fe2cfde183908db35c99965cce087
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54141803"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056107"
 ---
 # <a name="domaindnsmxrecord-resource-type"></a>domainDnsMxRecord 资源类型
 
@@ -25,12 +25,12 @@ ms.locfileid: "54141803"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |id|String| 分配给此实体的唯一标识符。 不可为空，只读。|
-|isOptional|Boolean| 如果为 false，则客户必须在 DNS 主机上配置 MX 记录，Microsoft Online Services该域正常运行。 |
+|isOptional|布尔值| 如果为 false，则客户必须在 DNS 主机上配置 MX 记录，Microsoft Online Services该域正常运行。 |
 |标签|String| 在 DNS 主机上配置 MX 记录的 *别名/主机/* 名称属性时所使用的值。 |
 |mailExchange|String| 在 DNS 主机上配置 MX 记录的应答 */目标/* 值时所使用的值。|
 |preference|Int32| 在 DNS 主机上配置 MX 记录的 *Preference/Priority* 属性时所使用的值。 |
 |recordType|String| DNS 记录的类型。 该值始终为 *Mx*。 键 |
-|supportedService|String| 依赖此 MX 记录的 Microsoft Online Service 或功能。</br></br>可以是下列值之一：null、Email、Sharepoint、EmailInternalRelayOnly、OfficeCommunicationsOnline、SharePointDefaultDomain、FullRedelegation、SharePointPublic、OrgIdAuthentication、Yammer、Intune            |
+|supportedService|String| 依赖此 MX 记录的 Microsoft Online 服务或功能。</br></br>可以是下列值之一：null、Email、Sharepoint、EmailInternalRelayOnly、OfficeCommunicationsOnline、SharePointDefaultDomain、FullRedelegation、SharePointPublic、OrgIdAuthentication、Yammer、Intune            |
 |ttl|Int32| 在 DNS 主机上配置 MX 记录的 ttl (*ttl*) 时要使用的值。 不可为 null |
 
 ## <a name="relationships"></a>关系

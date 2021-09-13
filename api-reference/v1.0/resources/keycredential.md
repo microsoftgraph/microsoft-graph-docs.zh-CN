@@ -1,16 +1,16 @@
 ---
 title: keyCredential 资源类型
 description: 包含与应用程序或服务主体关联的密钥凭据。 application 和 servicePrincipal 实体的 **keyCredentials** 属性是 **keyCredential 的集合**。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 7ec7c42f49e0bed71abf1911b73dbb40d3cdd67a
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 5da7db493e17261004a4913211825d1d62b8196a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255771"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59078740"
 ---
 # <a name="keycredential-resource-type"></a>keyCredential 资源类型
 
@@ -27,7 +27,7 @@ ms.locfileid: "58255771"
 |key|二进制| 转换为 Base64 字符串的字节数组中的证书原始数据;例如， `[System.Convert]::ToBase64String($Cert.GetRawCertData())` 。 |
 |keyId|Guid|唯一标识符 (GUID) 的 GUID 值。|
 |startDateTime|DateTimeOffset|凭据生效的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
-|type|字符串|密钥凭据的类型;例如， `Symmetric` 。|
+|type|String|密钥凭据的类型;例如， `Symmetric` 。|
 |usage|String|一个描述密钥的用途的字符串;例如， `Verify` 。|
 
 ## <a name="json-representation"></a>JSON 表示形式

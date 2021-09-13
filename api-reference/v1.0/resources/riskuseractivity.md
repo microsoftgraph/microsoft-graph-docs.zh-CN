@@ -2,15 +2,15 @@
 title: riskUserActivity 资源类型
 description: riskUserActivity 检测
 author: cloudhandler
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: b76c89ad73caf3f4985c81041178f05fc3d88bebbba0327ca503f7bf0e8f374d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8ba82b669b146a5f8cbc6851270b075843738f23
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54246610"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035988"
 ---
 # <a name="riskuseractivity-resource-type"></a>riskUserActivity 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54246610"
 |属性|类型|说明|
 |:---|:---|:---|
 |detail|riskDetail|检测到的风险的详细信息。 可取值为：`none`、`adminGeneratedTemporaryPassword`、`userPerformedSecuredPasswordChange`、`userPerformedSecuredPasswordReset`、`adminConfirmedSigninSafe`、`aiConfirmedSigninSafe`、`userPassedMFADrivenByRiskBasedPolicy`、`adminDismissedAllRiskForUser`、`adminConfirmedSigninCompromised`、`hidden`、`adminConfirmedUserCompromised`、`unknownFutureValue`。|
-|riskEventTypes|String collection|检测到的风险事件的类型。|
+|riskEventTypes|字符串集合|检测到的风险事件的类型。|
 
 ## <a name="relationships"></a>关系
 无。

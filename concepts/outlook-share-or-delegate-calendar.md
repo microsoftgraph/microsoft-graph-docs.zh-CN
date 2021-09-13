@@ -2,14 +2,14 @@
 title: 在 Outlook 中共享或委派日历
 description: 在 Outlook 中，日历所有者可与其他用户共享日历，或委派其他用户来管理所有者主要日历中的会议。
 author: juforan
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 3e86fa3ec032e17e5859bd9bb76c9db4cb91df4571e59178264e8ef1c764e3cd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5818ab77b54af482a5a970a21ba985831d02f2e7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54237045"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59071789"
 ---
 # <a name="share-or-delegate-a-calendar-in-outlook"></a>在 Outlook 中共享或委派日历
 

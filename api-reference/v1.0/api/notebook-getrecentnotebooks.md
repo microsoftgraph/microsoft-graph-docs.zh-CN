@@ -2,15 +2,15 @@
 title: 笔记本：getRecentNotebooks
 description: 获取登录用户访问的 recentNotebook 实例列表。
 author: jewan-microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 4ca105b6572aa91c7e98820096de3d65e8cd66de
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1a742369262c29bd586f9f1ad3c84c0df380c840
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48020788"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016048"
 ---
 # <a name="notebook-getrecentnotebooks"></a>笔记本：getRecentNotebooks
 

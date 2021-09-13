@@ -1,22 +1,22 @@
 ---
 title: 更新 teamsApp
-description: '更新之前发布到 Teams 应用目录的应用。 '
+description: '更新之前发布到应用程序Teams应用程序目录。 '
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8610c51922989d96f455073ea824c258d6d454ba
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: f10ae41876d4001c0de0592984019e3271ecb964
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50774797"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084907"
 ---
 # <a name="update-teamsapp"></a>更新 teamsApp
 
 命名空间：microsoft.graph
 
-更新 [之前发布到](../resources/teamsapp.md) Microsoft Teams 应用目录的应用。 若要更新应用， **必须将应用的 distributionMethod** 属性设置为 `organization` 。
+更新[之前发布到](../resources/teamsapp.md)应用程序Microsoft Teams的应用程序。 若要更新应用， **必须将应用的 distributionMethod** 属性设置为 `organization` 。
 
 此 API 专门更新发布到组织的应用程序目录的应用程序 (租户应用程序目录) 。
 
@@ -44,18 +44,18 @@ POST /appCatalogs/teamsApps/{id}/appDefinitions
 
 |属性|类型|说明|
 |----|----|----|
-|requiresReview| Boolean | 此可选查询参数将触发应用评审过程。 具有管理员权限的用户无需触发审查即可提交应用。 如果用户想要在发布之前请求审阅，则必须将 设置为  `requiresReview` `true` 。 具有管理员权限的用户可以选择不设置或将值设置为 ，应用将被视为已批准， `requiresReview` `false`  并且将立即发布。|
+|requiresReview| 布尔值 | 此可选查询参数将触发应用评审过程。 具有管理员权限的用户无需触发审查即可提交应用。 如果用户想要在发布之前请求审阅，则必须将 设置为  `requiresReview` `true` 。 具有管理员权限的用户可以选择不设置或将值设置为 ，应用将被视为已批准， `requiresReview` `false`  并且将立即发布。|
 
 ## <a name="request-headers"></a>请求标头
 
 | 标头        | 值           |
 |:--------------|:--------------  |
 | Authorization | Bearer {token}。必需。  |
-| Content-Type  | application/zip。 必填。 |
+| Content-Type  | application/zip。 必需。 |
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，包括 Teams zip 清单有效负载。 有关详细信息，请参阅 [创建应用包](/microsoftteams/platform/concepts/apps/apps-package)
+在请求正文中，包括Teams zip 清单有效负载。 有关详细信息，请参阅 [创建应用包](/microsoftteams/platform/concepts/apps/apps-package)
 
 >**注意：** 使用从列表已发布 [应用](./appcatalogs-list-teamsapps.md) 调用返回的 ID 来引用你要更新的应用。 请勿使用 zip 应用包清单中的 ID。
 
@@ -65,7 +65,7 @@ POST /appCatalogs/teamsApps/{id}/appDefinitions
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-update-an-application-previously-published-to-the-microsoft-teams-app-catalog"></a>示例 1：更新之前发布到 Microsoft Teams 应用目录的应用程序
+### <a name="example-1-update-an-application-previously-published-to-the-microsoft-teams-app-catalog"></a>示例 1：更新之前发布到应用程序Microsoft Teams的应用程序
 
 #### <a name="request"></a>请求
 
@@ -79,7 +79,7 @@ Content-length: 244
 [Zip file containing a Teams app package]
 ```
 
-有关 Teams 应用程序 zip 文件的详细信息，请参阅 [创建应用包](/microsoftteams/platform/concepts/apps/apps-package)。
+有关应用程序 zip Teams的详细信息，请参阅[创建应用包](/microsoftteams/platform/concepts/apps/apps-package)。
 <!-- markdownlint-disable MD024 -->
 
 #### <a name="response"></a>响应

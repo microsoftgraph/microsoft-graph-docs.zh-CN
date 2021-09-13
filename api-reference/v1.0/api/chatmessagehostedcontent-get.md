@@ -1,16 +1,16 @@
 ---
 title: 获取 chatMessageHostedContent
 description: 检索 chatMessageHostedContent 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a6ad8487291d2571354e2348a4fb5fe44904c787
-ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
+ms.openlocfilehash: 245ac1b1c84c160ec4de1c9630a11dd02b325a7b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52971422"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022826"
 ---
 # <a name="get-chatmessagehostedcontent"></a>获取 chatMessageHostedContent
 

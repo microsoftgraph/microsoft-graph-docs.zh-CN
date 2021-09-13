@@ -1,22 +1,22 @@
 ---
 title: Microsoft 服务中的文件Graph Toolkit
 description: 文件组件用于通过显示图标和名称来显示文件
-localization_priority: Normal
+ms.localizationpriority: medium
 author: beth-panx
-ms.openlocfilehash: a5e3569822d01c06d881070b56653f5bd2e2a89f2905c787699caa926c9b98b6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8b3aaac8e0216cad39b0dd566de763d26eacfb4a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196325"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035330"
 ---
 # <a name="file-component-in-the-microsoft-graph-toolkit"></a>Microsoft 服务中的文件Graph Toolkit
 
-File 组件用于表示 OneDrive 或 SharePoint 中的单个文件[/](/graph/onedrive-concept-overview)文件夹，具体方法为显示文件/文件夹名称、指示文件类型的图标以及其他属性（如作者、上次修改日期或其他详细信息）。 你可以提供文件的标识符，组件将生成查询以根据提供的标识符检索文件。 此组件可以自己使用，也可以作为 [mgt-file-list组件的一部分](./file-list.md) 使用。
+文件组件用于表示 OneDrive 或[SharePoint](/graph/onedrive-concept-overview)中的单个文件/文件夹，具体方法为显示文件/文件夹名称、指示文件类型的图标以及其他属性（如作者、上次修改日期或其他详细信息）。 你可以提供文件的标识符，组件将生成查询以根据提供的标识符检索文件。 此组件可以自己使用，也可以作为 [mgt-file-list组件的一部分](./file-list.md) 使用。
 
 ## <a name="example"></a>示例
 
-以下示例使用 组件显示 `mgt-file` 文件。 可以使用代码编辑器查看 [属性如何](#properties) 更改组件的行为。
+以下示例使用 组件显示 `mgt-file` 文件。 可以使用代码编辑器查看属性 [如何](#properties) 更改组件的行为。
 
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-file--file&source=docs" height="250"></iframe>
 
@@ -41,7 +41,7 @@ File 组件用于表示 OneDrive 或 SharePoint 中的单个文件[/](/graph/one
 | file-icon | fileIcon | 设置为要显示文件的图标 |
 | view | view | 设置为控制文件的呈现方式。 默认值为 `oneline`。 <br>`image` - 只显示图标 <br>`oneline` - 显示图标和一行文本 (默认为文件 `name`)  <br>`twolines` - 显示图标和两行文本 (`name` `lastModifiedDateTime` 默认情况下显示) <br> `threelines` - 默认显示作者的图标 (、、和三行 `name` `lastModifiedDateTime` `displayName` 文本)  |
 | line1-property | line1Property | 设置 要 `fileDetails` 用于第一行文本的属性。 默认值 `name` 为 文件。 |
-| line2-property | line2Property | 设置 要 `fileDetails` 用于第二行文本的属性。 默认值为“`lastModifiedDateTime`”。 |
+| line2-property | line2Property | 设置 要 `fileDetails` 用于第二行文本的属性。 默认值为 `lastModifiedDateTime`。 |
 | line3-property | line3Property | 设置 要 `fileDetails` 用于第三行文本的属性。 默认值 `size` 为 文件。 |
 
 以下示例将组件的行为更改为从特定查询提取数据。
@@ -145,7 +145,7 @@ mgt-file {
 
 ## <a name="cache"></a>缓存
 
-|对象存储|缓存数据|说明|
+|对象存储|缓存数据|备注|
 |---------|-----------|-------|
 |`driveFiles`|按驱动器 ID 列出文件|提供时 `driveId` 使用|
 |`groupFiles`|按组 ID 列出文件|提供时 `groupId` 使用|

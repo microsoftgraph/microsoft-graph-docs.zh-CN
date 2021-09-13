@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: edbb00e6e3f50caa9d6b4f447cf41bd7571d0f68
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 06aedca97312f1f372a814abbc917a05188f9d49f2c39273a2d32f334ba58462
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50781491"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "57378794"
 ---
 ```csharp
 

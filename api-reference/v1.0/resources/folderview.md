@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: FolderView
-localization_priority: Normal
+ms.localizationpriority: medium
 description: FolderView 资源提供或设置关于文件夹的用户体验建议。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 4c182a938d01f5d180ca060b51e3cc76c51dc83c4ae7d6b55fe75f3b6dd5831f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 72371634e8cebba4c520277de6bae7055a63ea97
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178428"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59078845"
 ---
 # <a name="folderview-resource-type"></a>FolderView 资源类型
 

@@ -1,16 +1,16 @@
 ---
 title: 列出位置
 description: 检索 place 对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c6c128b9aca8f8ef455a70f92f43b27c8d325525
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b3d76a53d110d5b26ff1f5c8d99f60409da056ac
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053977"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59007857"
 ---
 # <a name="list-places"></a>列出位置
 
@@ -21,8 +21,8 @@ ms.locfileid: "52053977"
 
 **place** 对象可以是下列类型之一：
 
-* [包含](../resources/room.md)丰富属性（如会议室的电子邮件地址）以及辅助功能、容量和设备支持的聊天室。
-* [包含会议室](../resources/roomlist.md)列表的电子邮件地址的会议室列表，以及用于获取会议室列表中会议室实例集合的导航属性。
+* [包含](../resources/room.md)丰富属性（例如会议室的电子邮件地址）以及辅助功能、容量和设备支持的聊天室。
+* [会议室列表](../resources/roomlist.md)，其中包括会议室列表的电子邮件地址，以及用于获取会议室列表中会议室实例集合的导航属性。
 
 **room 和** **roomList** 均派生自 **place** 对象。
 

@@ -2,15 +2,15 @@
 title: 更新 editionUpgradeConfiguration
 description: 更新 editionUpgradeConfiguration 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b8c3caf4ae82916f9bac02d3f585f15c6c7c29c240cae1d6d83fd98796976816
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6d67dc3f6d0ee93fb38a04aa63393c6e9f49cc07
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54202859"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59073413"
 ---
 # <a name="update-editionupgradeconfiguration"></a>更新 editionUpgradeConfiguration
 

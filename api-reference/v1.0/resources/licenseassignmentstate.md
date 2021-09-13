@@ -2,15 +2,15 @@
 title: licenseAssignmentState 资源类型
 description: user 实体的 **licenseAssignmentStates** 属性是 **licenseAssignmentState** 对象的集合。 它提供有关向用户分配的许可证的详细信息。
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 64acc65a2316e017165feb6aad21c6cf788a8bed87fbb8d0479152960f6fd824
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 260ce66248934772e386b8d4277970b1db3ee852
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54174995"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036198"
 ---
 # <a name="licenseassignmentstate-resource-type"></a>licenseAssignmentState 资源类型
 

@@ -2,15 +2,15 @@
 title: 更新 deviceManagementTroubleshootingEvent
 description: 更新 deviceManagementTroubleshootingEvent 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f161944eaa6032c65840748c84f4d7e7a1eee4a1
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: e7454b9eefe39f64b7e5c676434d329bd5e2d04b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58264498"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045096"
 ---
 # <a name="update-devicemanagementtroubleshootingevent"></a>更新 deviceManagementTroubleshootingEvent
 

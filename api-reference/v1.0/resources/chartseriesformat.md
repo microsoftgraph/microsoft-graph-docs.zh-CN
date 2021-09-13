@@ -2,15 +2,15 @@
 title: ChartSeriesFormat 资源类型
 description: 封装图表系列的格式属性
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: ac4acd20c47ea54a7f4eef86b0317de79e7a689d41de6414eac7535082a7bb6e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7b4f59ac8e154ac3b3be9115ea6d6e4ea126b7c0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54146998"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59078929"
 ---
 # <a name="chartseriesformat-resource-type"></a>ChartSeriesFormat 资源类型
 

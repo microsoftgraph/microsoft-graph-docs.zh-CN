@@ -2,15 +2,15 @@
 title: 删除 Outlook 类别
 description: 删除指定的 outlookCategory 对象。
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: bf557fcefa48857a93557be8a87c3394d936f149
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: da3a84b70b0af55beb85a6f74a012ed876b13326
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133110"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59037360"
 ---
 # <a name="delete-outlook-category"></a>删除 Outlook 类别
 
@@ -19,7 +19,7 @@ ms.locfileid: "50133110"
 
 删除指定的 [outlookCategory](../resources/outlookcategory.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

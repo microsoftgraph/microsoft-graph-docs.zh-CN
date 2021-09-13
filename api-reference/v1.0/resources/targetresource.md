@@ -1,16 +1,16 @@
 ---
 title: targetResource 资源类型
 description: 表示与审核活动关联的目标资源类型。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dhanyahk
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 4a98ccc2bf577289e867345a256c737275a295ca0a7954d23138f1cb68d669bc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3c922888888971a6dc46ddddc88fbef4e77873a2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54222628"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032102"
 ---
 # <a name="targetresource-resource-type"></a>targetResource 资源类型
 

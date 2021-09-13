@@ -2,15 +2,15 @@
 title: 创建 windows10CustomConfiguration
 description: 创建新的 windows10CustomConfiguration 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 06acf93064d1d6751b30cf08f27250a74b2870ea50fabc853aa6a8f82d7357bf
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 58a877d5efab4bb7af85fef377ea9715f9cc656f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54147537"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016314"
 ---
 # <a name="create-windows10customconfiguration"></a>创建 windows10CustomConfiguration
 

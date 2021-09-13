@@ -2,15 +2,15 @@
 title: 创建图表
 description: 使用此 API 创建新图表。
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: af852d0f1794906af3f95c55f4e0d7e054753f94
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3af11889feb795fce990c7969c7cd71c6d2ed5db
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055622"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59053215"
 ---
 # <a name="create-chart"></a>创建图表
 
@@ -36,7 +36,7 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer {token}。必需。 |
+| Authorization  | 持有者{令牌}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ## <a name="request-body"></a>请求正文
@@ -86,7 +86,7 @@ Content-length: 52
 
 在请求正文中，提供 [WorkbookChart](../resources/chart.md) 对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

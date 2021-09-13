@@ -1,13 +1,13 @@
 ---
 title: 使用 REST API 访问 Exchange 混合部署中的邮箱（预览版）
 description: 在属于 Microsoft 365 的 Exchange Online 中，Microsoft Graph 始终提供对云中客户邮箱的访问权限。
-localization_priority: Priority
-ms.openlocfilehash: 87e907e5c3f13a48c2c7905d9c93c0d6c36371f2d303ff28afcb0064f6d003b9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.localizationpriority: high
+ms.openlocfilehash: 6234d90e23d3db903f63127f94a30c160db1a612
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54174855"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59055750"
 ---
 # <a name="use-rest-apis-to-access-mailboxes-in-exchange-hybrid-deployments-preview"></a>使用 REST API 访问 Exchange 混合部署中的邮箱（预览版）
 

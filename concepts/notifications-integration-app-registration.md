@@ -1,15 +1,15 @@
 ---
 title: 管理 Microsoft Graph 通知的应用注册和 API 权限
 description: 为接收通过 Microsoft Graph 发送的通知，首先需要在 Microsoft Azure 门户上注册应用程序。
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: notifications
 author: merzink
-ms.openlocfilehash: e070c6a86fb3726a0d4e593f6a7d7551498b9b9be6a0ef3f9e5e9c413d737b1b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a6bc396a670eb3d96c63a75f6a894be5893c43ce
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54216365"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049464"
 ---
 # <a name="manage-app-registration-and-api-permission-for-microsoft-graph-notifications"></a>管理 Microsoft Graph 通知的应用注册和 API 权限
 

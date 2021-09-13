@@ -1,16 +1,16 @@
 ---
 title: threatAssessmentResult 资源类型
 description: 表示威胁评估结果项。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: hafen-ms
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 82b67910881ceb6029e7c64a54dcd956bef17e74aaae44b23b5f816b8cf01ced
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3458a4b363bda0ebec1e245e939121aa0647347b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163626"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59055792"
 ---
 # <a name="threatassessmentresult-resource-type"></a>threatAssessmentResult 资源类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "54163626"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |createdDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
-|id|String|威胁评估结果 ID 是 GUID (全局唯一) 。|
+|id|String|威胁评估结果 ID 是 GUID (全局唯) 。|
 |message|String|每个威胁评估的结果消息。|
 |resultType|[threatAssessmentResultType](enums.md#threatassessmentresulttype-values)|威胁评估结果类型。 可取值为：`checkPolicy`、`rescan`。|
 

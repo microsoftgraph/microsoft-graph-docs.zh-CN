@@ -1,16 +1,16 @@
 ---
 title: onPremisesExtensionAttributes 资源类型
-description: user **实体的 onPremisesExtensionAttributes** 属性包含十五个自定义扩展属性。 对于 **onPremisesSyncEnabled** 用户，这组属性在本地 Active Directory 中托管并同步到 Azure AD，并且为只读。 对于仅云用户 (**onPremisesSyncEnabled** 为 false) ，可以通过以下方法设置Exchange Online。 这些属性在 Microsoft Graph。
-localization_priority: Normal
+description: user **实体的 onPremisesExtensionAttributes** 属性包含十五个自定义扩展属性。 对于 **onPremisesSyncEnabled** 用户，这组属性在本地 Active Directory 中托管并同步到 Azure AD，并且为只读。 对于仅云用户 (**onPremisesSyncEnabled** 为 false) ，可通过以下方法设置Exchange Online。 这些属性在 Microsoft Graph 中Graph。
+ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 8bc170e1878c1382cdf999211aae8ee0fbf05231c92c297ec87ca11ce64f505e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5b1ef010abec3ab0e3e4c5279654603faed4e220
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189406"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072006"
 ---
 # <a name="onpremisesextensionattributes-resource-type"></a>onPremisesExtensionAttributes 资源类型
 

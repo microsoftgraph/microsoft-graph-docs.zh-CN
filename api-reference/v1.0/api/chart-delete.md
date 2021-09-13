@@ -2,15 +2,15 @@
 title: 'Chart: delete'
 description: 删除 chart 对象。
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: e58f88ccdf0bfec124af23aa3f32875f4780ba52
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: f60d2f8c500e0668b33dc5da99689793eca66a32
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50776156"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056814"
 ---
 # <a name="chart-delete"></a>Chart: delete
 
@@ -36,7 +36,7 @@ DELETE /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer {token}。必需。 |
+| Authorization  | 持有者{令牌}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ## <a name="request-body"></a>请求正文

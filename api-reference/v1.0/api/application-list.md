@@ -2,15 +2,15 @@
 title: 列出应用程序
 description: 获取该组织中应用程序的列表。
 author: sureshja
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 83bc7675c0ed80f248483ce24e84525026bb353914fd650476fe6c16b43ca552
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f7e5bce11754b7a7ddf2df23e00b4ca6edd87501
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57409382"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59023064"
 ---
 # <a name="list-applications"></a>列出应用程序
 

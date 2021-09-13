@@ -2,15 +2,15 @@
 title: call： redirect
 description: 重定向传入呼叫。
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 1d42b90f2e9d89edb3d7c138a14616221b0ec42d
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 7f7dddd297774796997bc921a3b24c73a60a242b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788113"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016839"
 ---
 # <a name="call-redirect"></a>call： redirect
 
@@ -50,8 +50,8 @@ POST /communications/calls/{id}/redirect
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|targets|[invitationParticipantInfo](../resources/invitationparticipantinfo.md) 集合|重定向操作的目标参与者。 如果指定了多个目标，则这是一个同时调用。 这意味着所有目标将同时设定范围，并且只有第一个选取的目标将连接。 我们最多支持 25 个目标用于模拟。
-|timeout|Int32|对于重定向 (超时) 秒数。 超时值的范围介于 15 到 90 秒之间（包括 15 秒和 90 秒）。 对于一个目标，默认超时值为 55 秒，对于多个目标，默认超时值为 60 秒 (可能会) 。 |
+|targets|[invitationParticipantInfo](../resources/invitationparticipantinfo.md) 集合|重定向操作的目标参与者。 如果指定了多个目标，则这是一个同时调用。 这意味着所有目标将同时设定范围，并且只有第一个选取的目标将被连接。 我们最多支持 25 个目标用于模拟。
+|timeout|Int32|超时 (重定向) 以秒表示。 超时值的范围介于 15 到 90 秒之间（包括 15 秒和 90 秒）。 对于一个目标，默认超时值为 55 秒，对于多个目标，默认超时值为 60 秒 (可能会) 。 |
 |callbackUri|String|这允许机器人为当前呼叫提供特定的回调 URI，以接收以后的通知。 如果尚未设置此属性，将改为使用自动程序全局回调 URI。 这必须是 `https` 。|
 
 ## <a name="response"></a>响应

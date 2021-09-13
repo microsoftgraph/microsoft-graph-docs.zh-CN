@@ -1,16 +1,16 @@
 ---
 title: 创建 openShift
 description: 创建 openShift 对象的实例。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f548b2ed0b0f99844f362260bf52d673d0930e77fbc6e06d34d83104cc2194fb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7d6ee60a73beceb52b78c7ff46be25fee7a5084a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54175544"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067848"
 ---
 # <a name="create-openshift"></a>创建 openShift
 

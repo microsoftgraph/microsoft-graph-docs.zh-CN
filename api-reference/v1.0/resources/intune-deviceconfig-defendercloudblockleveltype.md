@@ -2,15 +2,15 @@
 title: defenderCloudBlockLevelType 枚举类型
 description: 云阻止级别的可能值
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 18063a477efdba423805e8a5410a162ce076770d37d80ae300974e5820a4fa60
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d3af9d2d259eb7b92be1973fdfb1d9a1968c335f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54152577"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59078803"
 ---
 # <a name="defendercloudblockleveltype-enum-type"></a>defenderCloudBlockLevelType 枚举类型
 

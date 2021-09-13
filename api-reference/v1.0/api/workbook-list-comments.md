@@ -1,16 +1,16 @@
 ---
 title: 列出 workbookComments
 description: 检索 workbookComment 对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 11ec3c796207e216734fb9e858b7fb0fd9ef0007
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 8c83fc29ec3cef89455136faf04b2c3b876a3fed
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52031497"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59053237"
 ---
 # <a name="list-workbookcomments"></a>列出 workbookComments
 

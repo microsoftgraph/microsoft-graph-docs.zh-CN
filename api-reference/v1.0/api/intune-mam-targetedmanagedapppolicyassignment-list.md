@@ -2,15 +2,15 @@
 title: 列出 targetedManagedAppPolicyAssignments
 description: 列出 targetedManagedAppPolicyAssignment 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0f33b2aa73712df9dd52b199a74dfa87d17d266ca430cc673b88b649d8359a26
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c692f31111f128c2be2887865cde0982a3a768b2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54225893"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022140"
 ---
 # <a name="list-targetedmanagedapppolicyassignments"></a>列出 targetedManagedAppPolicyAssignments
 

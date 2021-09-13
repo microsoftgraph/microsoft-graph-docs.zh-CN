@@ -2,15 +2,15 @@
 author: swapnil1993
 title: documentSetContent 资源类型
 description: documentSetContent 资源包含有关内容的默认内容位置中的文件的元数据。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 5926e80c6c507591942009ae00ea199fdccfdca0
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 741047ab90badd16e4f7dea61c92ca8d952ee978
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696566"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072538"
 ---
 # <a name="documentsetcontent-resource-type"></a>documentSetContent 资源类型
 

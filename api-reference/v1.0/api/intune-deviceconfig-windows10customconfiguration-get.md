@@ -2,15 +2,15 @@
 title: 获取 windows10CustomConfiguration
 description: 读取 windows10CustomConfiguration 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 88f07361bdbfc213bd5ffc2d9d00047ffc0127c8f388d200f837e43601d75427
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d0b1aacac80d93b0d7cb708dabd96887037b1d5d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54252443"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59090388"
 ---
 # <a name="get-windows10customconfiguration"></a>获取 windows10CustomConfiguration
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

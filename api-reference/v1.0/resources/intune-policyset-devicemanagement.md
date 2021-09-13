@@ -2,15 +2,15 @@
 title: deviceManagement 资源类型
 description: 充当所有设备和应用管理功能的容器的单一实体。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e2ba365bd9c5e1fa4360dc6b5e0ff14e69eb03d5ccbea0e1510e0287294a4842
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 429c9eaba9f0f6af0da78fb4cf502f5fd9b7c8d7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54169443"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59044522"
 ---
 # <a name="devicemanagement-resource-type"></a>deviceManagement 资源类型
 

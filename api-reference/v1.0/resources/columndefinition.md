@@ -3,15 +3,15 @@ author: JeremyKelley
 description: 表示网站、列表或内容类型中的列。
 ms.date: 09/11/2017
 title: columnDefinition 资源类型
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 05357e3282dfe578ed6756ddff493df9e62c8248
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 4d5dc9bc55778b32990be19688861a590a658523
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695103"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062794"
 ---
 # <a name="columndefinition-resource-type"></a>columnDefinition 资源类型
 
@@ -36,7 +36,7 @@ ms.locfileid: "58695103"
 |[为内容类型创建 columnDefinition](../api/contenttype-post-columns.md)|[columnDefinition](../resources/columndefinition.md)|在内容类型 [中创建新的 columnDefinition](../resources/columndefinition.md) [对象](../resources/contenttype.md)。|
 |[获取 columnDefinition](../api/columndefinition-get.md)|[columnDefinition](../resources/columndefinition.md)|读取 [columnDefinition 对象的属性和](../resources/columndefinition.md) 关系。|
 |[更新 columnDefinition](../api/columndefinition-update.md)|[columnDefinition](../resources/columndefinition.md)|更新 [columnDefinition 对象](../resources/columndefinition.md) 的属性。|
-|[删除 columnDefinition](../api/columndefinition-delete.md)|None|删除 [columnDefinition](../resources/columndefinition.md) 对象。|
+|[删除 columnDefinition](../api/columndefinition-delete.md)|无|删除 [columnDefinition](../resources/columndefinition.md) 对象。|
 
 ## <a name="properties"></a>属性
 
@@ -49,10 +49,10 @@ ms.locfileid: "58695103"
 | **columnGroup**         | string  | 对于网站列，此列所属的组的名称。 可以帮助组织相关的列。|
 | **说明**         | string  | 面向用户的列描述。|
 | **displayName**         | string  | 面向用户的列名称。|
-| **enforceUniqueValues** | 布尔值 | 如果 `true` 为 ，则没有两个列表项对此列具有相同的值。|
+| **enforceUniqueValues** | Boolean | 如果 `true` 为 ，则没有两个列表项对此列具有相同的值。|
 | **hidden**              | Boolean | 指定列是否显示在用户界面中。|
 | **id**                  | string  | 列的唯一标识符。|
-| **indexed**             | 布尔值 | 指定列值是否可用于排序和搜索。|
+| **indexed**             | Boolean | 指定列值是否可用于排序和搜索。|
 | **name**                | string  | 在 [listItem][] 上的 [fields][] 中显示的面向 API 的列名称。 对于面向用户的名称，请参阅 **displayName**。|
 | **readOnly**            | 布尔值    | 指定是否可以修改列值。|
 | **required**            | 布尔值 | 指定列值是否可选。|
@@ -67,7 +67,7 @@ ms.locfileid: "58695103"
 | **number**        | [numberColumn][]        | 此列存储数值。|
 | **personOrGroup** | [personOrGroupColumn][] | 此列存储个人或组值。|
 | **text**          | [textColumn][]          | 此列存储文本值。|
-| **isDeletable**       | 布尔值 | 指示是否可以删除此列。|
+| **isDeletable**       | Boolean | 指示是否可以删除此列。|
 | **propagateChanges**     | 布尔值 | 如果为"true"，则对此列所做的更改将传播到实现该列的列表。 |
 | **isReorderable**         | 布尔值 | 指示是否可以对列中的值进行重新排序。 只读。|
 | **isSealed**              | 布尔值 | 指定是否可以更改列。|
@@ -85,7 +85,7 @@ ms.locfileid: "58695103"
 |:----------------|:--------------------------|:-------------------------------|
 | **sourceColumn** | [columnDefinition][] | 内容类型列的源列。|
 
->**注意：** 这些属性对应于 [SPFieldType][] SharePoint枚举。
+>**注意：** 这些属性与 [SPFieldType][] SharePoint相对应。
 请注意，最常见的字段类型在上表中表示。 但是，此 API 仍然缺少一些。
 在这些情况下，不会填充列类型 facet，列将仅具有其基本属性。
 网站和列表列响应将不包含 isDeletable、propagateChanges、isReorderable、isSealed、validation、hyperlinkOrPicture、term、sourceContentType、thumbnail、type、contentApprovalStatus 和 **sourceColumn** 属性。           
@@ -152,7 +152,7 @@ ms.locfileid: "58695103"
 [lookupColumn]: lookupcolumn.md
 [numberColumn]: numbercolumn.md
 [personOrGroupColumn]: personorgroupcolumn.md
-[网站]: site.md
+[site]: site.md
 [textColumn]: textcolumn.md
 [fieldValueSet]: fieldvalueset.md
 [fields]: fieldvalueset.md

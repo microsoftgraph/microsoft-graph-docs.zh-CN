@@ -2,12 +2,13 @@
 author: namkedia
 ms.topic: include
 ms.date: 02/23/2021
-ms.openlocfilehash: f0c4be8efdf9beda0a3b363856d97c1d181221c90a0b9522f4d72ada045a7706
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
-ms.translationtype: HT
+ms.localizationpriority: medium
+ms.openlocfilehash: db16b73733a6a15a749c9f1403db601a036dbcda
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54152718"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59073845"
 ---
 <!-- markdownlint-disable MD041-->
 

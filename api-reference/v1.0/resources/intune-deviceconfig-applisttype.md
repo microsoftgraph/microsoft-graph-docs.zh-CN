@@ -2,15 +2,15 @@
 title: appListType 枚举类型
 description: 合规性应用列表的可能值。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a14b0edd46e88d6203b462bf43065533d134733ebccbc4b566fd4009e1248ce1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: dda69798f1d591018b6c75fe607743f18cbddc95
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54184793"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59044676"
 ---
 # <a name="applisttype-enum-type"></a>appListType 枚举类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "54184793"
 |:---|:---|:---|
 |无|0|默认值，无意图。|
 |appsInListCompliant|1|该列表表示将被视为合规的应用 (只有列表上的应用符合) 。|
-|appsNotInListCompliant|2|该列表表示被视为不合规的应用 (所有应用都合规，列表上的应用除外) 。|
+|appsNotInListCompliant|2|该列表表示被视为不符合 (所有应用都合规，列表上的应用除外) 。|
 
 
 

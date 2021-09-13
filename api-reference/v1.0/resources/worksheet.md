@@ -1,16 +1,16 @@
 ---
 title: 工作表资源类型
 description: Excel 工作表是由单元格组成的网格。它可以包含数据、表、图表等。
-localization_priority: Priority
+ms.localizationpriority: high
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 41712584a612e8f9445c7bc67c25394188d3efc8e0328683a1128bbafce26605
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2ed0de79731a3f928a466a881eea34ad99cd7716
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54141264"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59083934"
 ---
 # <a name="worksheet-resource-type"></a>工作表资源类型
 

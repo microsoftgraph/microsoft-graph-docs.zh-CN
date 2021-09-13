@@ -1,16 +1,16 @@
 ---
 title: 组：unsubscribeByMail
 description: '调用此方法可使当前用户在该组中收到有关该组的新帖子、事件和文件的电子邮件通知。 仅支持 Microsoft 365 组。 '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 68f2e82ab47476af870c55b78716c174da3b16b1
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 6770abba82446e64c61198f56878d074cdf0d91e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682626"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074106"
 ---
 # <a name="group-unsubscribebymail"></a>组：unsubscribeByMail
 
@@ -35,7 +35,7 @@ POST /groups/{id}/unsubscribeByMail
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
-| Authorization  | Bearer {token}。必需。  |
+| Authorization  | 持有者{令牌}。必需。  |
 | Prefer | return=minimal。 如果 minimal 响应头包含在请求头中，那么成功响应返回 `204 No Content` 代码。 可选。  | 
 
 ## <a name="request-body"></a>请求正文

@@ -1,16 +1,16 @@
 ---
 title: 添加 scopedRoleMember
 description: 添加新的 scopedRoleMembership。 注意：作用域 *角色成员身份* 当前仅支持用户帐户管理员和支持人员管理员角色。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: DougKirschner
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a7cc3042e6b1bf7432232dd4b2b57f405e279ee2
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 6ca2b93eef5b0451fd1d90899fe9f7ef471eae7c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53208223"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59038592"
 ---
 # <a name="add-a-scopedrolemember"></a>添加 scopedRoleMember
 

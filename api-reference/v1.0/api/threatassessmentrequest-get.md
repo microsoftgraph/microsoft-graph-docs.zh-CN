@@ -1,16 +1,16 @@
 ---
 title: 获取 threatAssessmentRequest
 description: 检索指定 threatassessmentrequest 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: hafen-ms
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: b21b7d69d241c5d986713b9e905822faf879147a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6db1ce538d676c72f4373793d2e89a0333c7360c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053802"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59079083"
 ---
 # <a name="get-threatassessmentrequest"></a>获取 threatAssessmentRequest
 
@@ -62,7 +62,7 @@ GET /informationProtection/threatAssessmentRequests/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和请求的 `200 OK` [threatAssessmentRequest](../resources/threatassessmentrequest.md) 对象。 返回该类型的属性[：mailAssessmentRequest](../resources/mailAssessmentRequest.md) [、emailFileAssessmentRequest、fileAssessmentRequest](../resources/emailFileAssessmentRequest.md) [、urlAssessmentRequest](../resources/urlAssessmentRequest.md)。 [](../resources/fileAssessmentRequest.md)
+如果成功，此方法在响应正文中返回 响应代码和请求的 `200 OK` [threatAssessmentRequest](../resources/threatassessmentrequest.md) 对象。 返回该类型的属性： [mailAssessmentRequest](../resources/mailAssessmentRequest.md)、 [emailFileAssessmentRequest](../resources/emailFileAssessmentRequest.md)、 [fileAssessmentRequest](../resources/fileAssessmentRequest.md)、 [urlAssessmentRequest](../resources/urlAssessmentRequest.md)。
 
 ## <a name="examples"></a>示例
 

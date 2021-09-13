@@ -1,16 +1,16 @@
 ---
 title: 获取用户的邮箱设置
 description: '获取用户的 mailboxSettings。 这包括自动答复设置（自动通知用户 '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e2f697a332eb4912f0f4f442f57ccf79b86d03ca
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: db605ea1abc7d288068ade7c844ed45ce85ef63c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054306"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59089996"
 ---
 # <a name="get-user-mailbox-settings"></a>获取用户的邮箱设置
 

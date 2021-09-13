@@ -2,15 +2,15 @@
 title: 列出 linkedResources
 description: 从 linkedResources 导航属性获取 linkedResources。
 author: avijityadav
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ab6f7984a7202ebe12cab0be465deb8e6797dee0
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 73068ae17615b1125793465f7cfb9e3fd119d5a7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50963440"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049793"
 ---
 # <a name="list-linkedresources"></a>列出 linkedResources
 命名空间：microsoft.graph

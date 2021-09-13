@@ -1,16 +1,16 @@
 ---
 title: 获取图标
 description: 检索 icon 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: ruoyingl
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 8bf2db054f56570c2291f6fb03c162f2572b46f7ae2810be9071bb6978719f64
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 43dc05813e7531c9871236f3afd429bd2e7415a9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54219288"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045817"
 ---
 # <a name="get-icon"></a>获取图标
 

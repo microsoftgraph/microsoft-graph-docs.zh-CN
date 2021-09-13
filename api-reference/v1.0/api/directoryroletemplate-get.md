@@ -2,15 +2,15 @@
 title: 获取 directoryRoleTemplate
 description: 检索 directoryroletemplate 对象的属性和关系。
 author: abhijeetsinha
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 2e1e3c3cb54f2d100a7428a0dfcb93b2cc7ab77d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: dfb30da8391ea3990bd9ed202ef3d11a9612d534
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053158"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046216"
 ---
 # <a name="get-directoryroletemplate"></a>获取 directoryRoleTemplate
 
@@ -76,7 +76,7 @@ GET https://graph.microsoft.com/v1.0/directoryRoleTemplates/{id}
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

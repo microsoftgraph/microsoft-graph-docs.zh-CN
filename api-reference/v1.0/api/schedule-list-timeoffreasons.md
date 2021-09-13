@@ -2,15 +2,15 @@
 title: 列出 timeOffReasons
 description: 获取计划中的 timeOffReasons 列表。
 author: akumar39
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 840b41dbdbd5054c1b3512cfbe1084451a3d6a0c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a6a1fe3a491aab7fe89070ff7596b60bc8119930
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053872"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019698"
 ---
 # <a name="list-timeoffreasons"></a>列出 timeOffReasons
 

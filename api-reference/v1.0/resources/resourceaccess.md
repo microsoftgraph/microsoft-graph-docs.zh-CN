@@ -1,16 +1,16 @@
 ---
 title: resourceAccess 资源类型
 description: 指定 OAuth 2.0 权限范围或应用程序所需的应用程序角色。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 0d5c8a60b1080b1e605dde754d8007cf15b36b129d276a6b2d9f87421ba9ef25
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 98d0416c47695a757c4daa939a9f1b7c8e745fc1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54243308"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094091"
 ---
 # <a name="resourceaccess-resource-type"></a>resourceAccess 资源类型
 

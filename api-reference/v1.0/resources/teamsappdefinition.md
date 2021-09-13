@@ -2,15 +2,15 @@
 title: teamsAppDefinition 资源类型
 description: 表示 teamsApp 的一个版本的详细信息。
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 9ca384f507fec1bf813fea20ffb3b0034a5e43de0d92604c81cad84b514f37b8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 923cba82d9def93b619545cf4184180ef220f247
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54218399"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021426"
 ---
 # <a name="teamsappdefinition-resource-type"></a>teamsAppDefinition 资源类型
 
@@ -22,12 +22,12 @@ ms.locfileid: "54218399"
 
 | 属性            | 类型     | 说明 |
 |:------------------- |:-------- |:----------- |
-| id                  | string   | 唯一 ID (应用TEAMS ID) 。 |
+| id                  | string   | 唯一 ID (应用Teams ID) 。 |
 | teamsAppId          | string   | 应用清单Teams ID。 |
 | publishingState| string|应用程序特定版本的已发布Teams状态。 可能的值是：</br>`submitted`— 应用程序的特定版本Teams已提交并且正在审查中。 </br>`published`— 发布特定版本的 Teams 请求已由管理员批准，并且应用已发布。 </br> `rejected`— 管理员拒绝了发布特定版本的 Teams 应用的请求。 |
 | displayName         | string   | 应用开发人员提供的应用的名称。 |
 | version             | string   | 应用程序的版本号。 |
-| shortDescription    | string   | 应用程序的简短说明。 |
+| shortDescription    | 字符串   | 应用程序的简短说明。 |
 | 说明         | string   | 应用程序详细说明。 |
 
 ## <a name="relationships"></a>关系

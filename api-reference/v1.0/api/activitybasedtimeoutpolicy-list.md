@@ -1,16 +1,16 @@
 ---
 title: 列出 activityBasedTimeoutPolicies
 description: 获取 activityBasedTimeoutPolicy 对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: lujiangfeng666
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: fe442b506122ee08897c806054f51c67fe10f105
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: aefc8ed4d0c0dcd29c652f6f3efc9e2e856ee7ad
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050666"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59008501"
 ---
 # <a name="list-activitybasedtimeoutpolicies"></a>列出 activityBasedTimeoutPolicies
 

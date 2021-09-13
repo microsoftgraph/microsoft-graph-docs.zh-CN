@@ -2,15 +2,15 @@
 title: getOmaSettingPlainTextValue 函数
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d8e1f068b2c88260f8424ae2b089b79be9b1dd6e1b6b386917d96956462afd70
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8b019c53bdb1d9dc4efedd6720fd989335aef052
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54121730"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59079734"
 ---
 # <a name="getomasettingplaintextvalue-function"></a>getOmaSettingPlainTextValue 函数
 
@@ -41,7 +41,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/getOmaSetting
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

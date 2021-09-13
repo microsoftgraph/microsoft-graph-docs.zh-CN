@@ -1,16 +1,16 @@
 ---
-title: 成员
+title: Members
 description: 描述 teamsApp 的当前安装状态。
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: enumPageType
-ms.openlocfilehash: 32f82fc8573074e69e6cf42a71c44de380e2fd8228835e96be0069b16c6031f2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c2bc6b0bcb60506dc23e9cc7d103eb777cb2865b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189259"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084067"
 ---
 # <a name="teamsappinstalledstate-enum-type"></a>teamsAppInstalledState 枚举类型
 

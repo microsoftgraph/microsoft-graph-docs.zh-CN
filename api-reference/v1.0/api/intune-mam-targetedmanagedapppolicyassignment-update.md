@@ -2,15 +2,15 @@
 title: 更新 targetedManagedAppPolicyAssignment
 description: 更新 targetedManagedAppPolicyAssignment 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c4a89e13b56d49628b134eea35188f25ac1945ded54252f4603ea21e9ec959b8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3a2749b6e1b5e6dd367e07e984064c2da5730ee4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54243838"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59007969"
 ---
 # <a name="update-targetedmanagedapppolicyassignment"></a>更新 targetedManagedAppPolicyAssignment
 

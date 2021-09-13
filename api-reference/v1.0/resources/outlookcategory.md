@@ -1,16 +1,16 @@
 ---
 title: outlookCategory 资源类型
 description: 表示用户可以对 Outlook 项目（如邮件和事件）进行分组的类别依据。 用户在主列表中定义类别，并可以应用这些用户定义的一个或多个
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 30bed7723cc25b668029bae494a24cbc6c4278fc4caeb6d55f039e65c68e63f9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 907f2e96f3f37ff62a6189970c5149241035c9b9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54182376"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094147"
 ---
 # <a name="outlookcategory-resource-type"></a>outlookCategory 资源类型
 

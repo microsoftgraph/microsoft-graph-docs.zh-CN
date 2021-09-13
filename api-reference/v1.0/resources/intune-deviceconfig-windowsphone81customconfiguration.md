@@ -2,15 +2,15 @@
 title: windowsPhone81CustomConfiguration 资源类型
 description: 本主题提供由 windowsPhone81CustomConfiguration 资源公开的已声明方法、属性和关系的说明。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 70ff4d9fb8a51e6b4b485b0b268dc51c88397f593ed847e5dd09db45cfa3abc8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d046ff313104ddfcac3c3593b0ac3baa98f9bce0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54149875"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062598"
 ---
 # <a name="windowsphone81customconfiguration-resource-type"></a>windowsPhone81CustomConfiguration 资源类型
 

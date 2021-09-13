@@ -2,15 +2,15 @@
 title: 更新联系人
 description: 更新 contact 对象的属性。
 author: kevinbellinger
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 51231bdca731fb1636a3b52cdc1a27b36a21c28b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 7efb9013b43958ceee585975b8296a4ec607c016
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048797"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59053665"
 ---
 # <a name="update-contact"></a>更新联系人
 
@@ -62,7 +62,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |categories|String|与联系人关联的类别。|
 |children|String|联系人子女的姓名。|
 |companyName|String|联系人所在公司的名称。|
-|department|String|联系人所在的部门。|
+|部门|String|联系人所在的部门。|
 |displayName|String|联系人的显示名称。 请注意，对其他属性的后续更新可能会导致自动生成的值覆盖你指定的 displayName 值。 若要保留预先存在的值，请始终在更新操作中将其作为 displayName。|
 |emailAddresses|[EmailAddress](../resources/emailaddress.md) 集合|联系人的电子邮件地址。|
 |fileAs|String|联系人备案的姓名。|
@@ -135,7 +135,7 @@ Content-length: 1977
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

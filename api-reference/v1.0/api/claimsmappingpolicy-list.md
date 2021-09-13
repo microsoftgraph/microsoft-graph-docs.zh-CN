@@ -1,16 +1,16 @@
 ---
 title: 列出 claimsMappingPolicies
 description: 获取 claimsMappingPolicy 对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: paulgarn
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c306744a7845449f5143c00ef1be4e8e0e86e11a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 7f956f4884678f46e19351fdfa43d62b24fe4f16
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050540"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59053712"
 ---
 # <a name="list-claimsmappingpolicies"></a>列出 claimsMappingPolicies
 
@@ -28,12 +28,15 @@ ms.locfileid: "52050540"
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | Policy.Read.All、Policy.ReadWrite.ApplicationConfiguration |
 
+> [!IMPORTANT]
+> 此方法具有 [已知权限问题，](/graph/known-issues#claims-mapping-policy) 可能需要同意这两种权限。
+
 ## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET policies/claimsMappingPolicies
+GET /policies/claimsMappingPolicies
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -106,16 +109,29 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "definition": [
-        "definition-value"
-      ],
-      "displayName": "displayName-value",
-      "isOrganizationDefault": true,
-      "id": "id-value"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/claimsMappingPolicies",
+    "value": [
+        {
+            "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/cb7e01e0-06e7-4636-a3f5-0aa994f9d164/Microsoft.DirectoryServices.ClaimsMappingPolicy",
+            "id": "cb7e01e0-06e7-4636-a3f5-0aa994f9d164",
+            "deletedDateTime": null,
+            "definition": [
+                "{\"ClaimsMappingPolicy\":{\"Version\":1,\"IncludeBasicClaimSet\":\"true\",\"ClaimsSchema\": [{\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\":\"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier\"},{\"Source\":\"user\",\"ID\":\"givenname\",\"SamlClaimType\":\"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname\"},{\"Source\":\"user\",\"ID\":\"displayname\",\"SamlClaimType\":\"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name\"},{\"Source\":\"user\",\"ID\":\"surname\",\"SamlClaimType\":\"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname\"},{\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\":\"username\"}],\"ClaimsTransformation\":[{\"ID\":\"CreateTermsOfService\",\"TransformationMethod\":\"CreateStringClaim\",\"InputParameters\": [{\"ID\":\"value\",\"DataType\":\"string\", \"Value\":\"sandbox\"}],\"OutputClaims\":[{\"ClaimTypeReferenceId\":\"TOS\",\"TransformationClaimType\":\"createdClaim\"}]}]}}"
+            ],
+            "displayName": "Test1234",
+            "isOrganizationDefault": false
+        },
+        {
+            "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/3bf1b5b2-5fb3-4a5a-80f3-bb0f1e246977/Microsoft.DirectoryServices.ClaimsMappingPolicy",
+            "id": "3bf1b5b2-5fb3-4a5a-80f3-bb0f1e246977",
+            "deletedDateTime": null,
+            "definition": [
+                "{\"ClaimsMappingPolicy\":{\"Version\":1,\"IncludeBasicClaimSet\":\"true\", \"ClaimsSchema\":[{\"Source\":\"user\",\"ID\":\"extensionattribute1\"},{\"Source\":\"transformation\",\"ID\":\"DataJoin\",\"TransformationId\":\"JoinTheData\",\"JwtClaimType\":\"JoinedData\"}],\"ClaimsTransformations\":[{\"ID\":\"JoinTheData\",\"TransformationMethod\":\"Join\",\"InputClaims\":[{\"ClaimTypeReferenceId\":\"extensionattribute1\",\"TransformationClaimType\":\"string1\"}], \"InputParameters\": [{\"ID\":\"string2\",\"Value\":\"sandbox\"},{\"ID\":\"separator\",\"Value\":\".\"}],\"OutputClaims\":[{\"ClaimTypeReferenceId\":\"DataJoin\",\"TransformationClaimType\":\"outputClaim\"}]}]}}"
+            ],
+            "displayName": "TestclaimsPolicy",
+            "isOrganizationDefault": false
+        }
+    ]
 }
 ```
 

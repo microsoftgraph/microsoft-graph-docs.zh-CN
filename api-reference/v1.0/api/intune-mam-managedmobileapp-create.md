@@ -2,15 +2,15 @@
 title: 创建 managedMobileApp
 description: 创建新的 managedMobileApp 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 22d7e746c1df82b432d5e8a4b3c8cb2e3060faa8dbf4c1e16ce920222d983230
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d04bd4af78a2c514514d72f546ef59ea05150e9f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54225900"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59073112"
 ---
 # <a name="create-managedmobileapp"></a>创建 managedMobileApp
 

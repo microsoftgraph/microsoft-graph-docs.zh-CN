@@ -2,15 +2,15 @@
 title: 删除 deviceComplianceSettingState
 description: 删除 deviceComplianceSettingState。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f873d3b445fb48ca74e7c90e7295a90d77a1c2e09801c416d209f9a89a330a79
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7689279b5cad8168068646a43ba5a5611100c17a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54200031"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045418"
 ---
 # <a name="delete-devicecompliancesettingstate"></a>删除 deviceComplianceSettingState
 

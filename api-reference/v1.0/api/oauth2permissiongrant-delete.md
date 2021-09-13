@@ -1,16 +1,16 @@
 ---
 title: 删除 oAuth2PermissionGrant
 description: 删除表示委派权限授予的 oAuth2PermissionGrant。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: a03e9c50463e5cbd50e65966228237fc9784c22f
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: ff987bbc32cf5f9ee397450f280e90d3421d2018
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448219"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59015985"
 ---
 # <a name="delete-a-delegated-permission-grant-oauth2permissiongrant"></a>删除 oAuth2PermissionGrant (委派) 
 
@@ -18,10 +18,10 @@ ms.locfileid: "50448219"
 
 删除 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md)。
 
-删除委派权限授予后，将撤消授予的访问权限。 现有访问令牌在生存期内将继续有效，但不会为已删除 **的 oAuth2PermissionGrant** 中标识的委派权限授予新的访问令牌。
+删除委派的权限授予后，将撤消授予该权限的访问权限。 现有访问令牌在生存期内将继续有效，但不会为已删除的 **oAuth2PermissionGrant** 中标识的委派权限授予新的访问令牌。
 
 > [!NOTE]
-> 可能有两个委派权限授予，授权应用程序在调用 API 时代表用户操作。 如果用户代表自己同意应用程序 (创建具有 **consentType** 主体的 **oAuth2PermissionGrant，** 标识用户) ，然后管理员代表所有用户授予租户范围的管理员同意， (创建具有 *AllPrincipals*) **consentType** 的第二个 **oAuth2PermissionGrant** 时，可能会发生这种情况。
+> 可能有两个委派权限授予，授权应用程序在调用 API 时代表用户操作。 当用户代表自己同意应用程序时，可能会发生这种情况 (创建具有 **consentType** *主体* 的 **oAuth2PermissionGrant，** 标识用户) 然后管理员代表所有用户授予租户范围的管理员同意 (创建第二个具有 *AllPrincipals*) **consentType** 的 **oAuth2PermissionGrant。**
 
 ## <a name="permissions"></a>权限
 

@@ -1,16 +1,16 @@
 ---
 title: 创建频道
 description: 在团队中创建新频道，如请求正文中指定。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ac06a2898662ce13db588ea0f243f6d3eea65805
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 594df9389c42de62e87064881f9dc1f41d0a9fe9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51508446"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056919"
 ---
 # <a name="create-channel"></a>创建频道
 

@@ -2,15 +2,15 @@
 title: 获取 adminConsentRequestPolicy
 description: 读取 adminConsentRequestPolicy 对象的属性和关系。
 author: psignoret
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: cfbd3cd98c17c9e261711932a0169c977b1d59ba
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: a6eea39edac172a890b5d60b524e40df14f9a802
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51508287"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59080476"
 ---
 # <a name="get-adminconsentrequestpolicy"></a>获取 adminConsentRequestPolicy
 
@@ -31,7 +31,7 @@ ms.locfileid: "51508287"
 代表用户进行呼叫时，用户需要属于以下目录角色之一。 若要了解有关目录角色的信息，请参阅 [Azure AD 内置角色](/azure/active-directory/roles/permissions-reference)：
 + 全局管理员
 + 全局读取者
-+ 云 应用程序管理员
++ 云应用程序管理员
 +  应用程序管理员
 
 ## <a name="http-request"></a>HTTP 请求

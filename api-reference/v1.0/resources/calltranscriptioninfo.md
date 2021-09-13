@@ -2,15 +2,15 @@
 title: callTranscriptionInfo 资源类型
 description: 表示单个 DTMF 事件。
 author: rzhang
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: d6d3afe17198d8c9eaa4df396500582d1bc52deeb5e5acb721131a7737dac55e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 92b95c3a6fde436ffbeca19620c3eed7f16d2297
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178533"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067491"
 ---
 # <a name="calltranscriptioninfo-resource-type"></a>callTranscriptionInfo 资源类型
 

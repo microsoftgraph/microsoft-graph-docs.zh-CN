@@ -1,16 +1,16 @@
 ---
 title: passwordCredential 资源类型
 description: 包含与应用程序或服务主体关联的密码凭据。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 19adf39e385cd1c2015c471b3d1890372608499f
-ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
+ms.openlocfilehash: 7b054fde11959055f5b5219475055ce0a97c6607
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58490397"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036023"
 ---
 # <a name="passwordcredential-resource-type"></a>passwordCredential 资源类型
 

@@ -2,15 +2,15 @@
 title: 删除域
 description: 从租户中删除域。
 author: adimitui
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 0ecaf2cd5c1f8f0ed0281be585a85008e6870a8f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ae06ee03831ba2903f50f758968c997a70f2479f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050505"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056679"
 ---
 # <a name="delete-domain"></a>删除域
 
@@ -29,7 +29,7 @@ ms.locfileid: "52050505"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Domain.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Domain.ReadWrite.All |
 

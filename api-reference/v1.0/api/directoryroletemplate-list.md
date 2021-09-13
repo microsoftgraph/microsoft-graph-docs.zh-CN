@@ -2,15 +2,15 @@
 title: 列出 directoryRoleTemplates
 description: 检索 directoryRoleTemplate 对象的列表。
 author: abhijeetsinha
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5ac7036df8472b7a9e68d0e1662f9be1b82cf01a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6772a1fc6ccf593b983b7b0d366612ff1938fe6e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050512"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056732"
 ---
 # <a name="list-directoryroletemplates"></a>列出 directoryRoleTemplates
 

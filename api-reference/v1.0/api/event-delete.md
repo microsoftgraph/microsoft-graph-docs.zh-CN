@@ -2,15 +2,15 @@
 title: 删除事件
 description: 删除事件。
 author: harini84
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6732793721fb57f789a15a2decc491ea368de96f
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 1169fd54e162ddbf3d0c3b4e1b8e4b0a63d5d630
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50441919"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59095162"
 ---
 # <a name="delete-event"></a>删除事件
 

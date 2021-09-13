@@ -1,17 +1,17 @@
 ---
 author: JeremyKelley
 ms.date: 09/10/2017
-localization_priority: Normal
+ms.localizationpriority: medium
 title: Hashes 资源类型
 description: 哈希资源将可用哈希分组到项的单个结构中。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: bd04ff57aff3d276655a173d123f228520a77b7d548afb9f8d75d30fd6ba4e6f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2321d710c73aa4ed37a9cdd65fb63eac33a1f8ea
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54243551"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084522"
 ---
 # <a name="hashes-resource-type"></a>Hashes 资源类型
 

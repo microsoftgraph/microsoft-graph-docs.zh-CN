@@ -1,16 +1,16 @@
 ---
 title: 创建 featureRolloutPolicy
 description: 创建新的 featureRolloutPolicy 对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: madhavpatel6
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 5d1d55faa62ea070287692298c568b0db48f8d15
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 47105bb6d4ffb267e5c7c700f14f900bea548264
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052388"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046097"
 ---
 # <a name="create-featurerolloutpolicy"></a>创建 featureRolloutPolicy
 

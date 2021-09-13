@@ -1,16 +1,16 @@
 ---
 title: application： removePassword
 description: 从应用程序中删除密码
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: cfe32e9743bbae164065416adfa1873431a1bb51
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 36ac4fa8fa1536fc638bc99d8db306ce0fcb8e2a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787973"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59038550"
 ---
 # <a name="application-removepassword"></a>application： removePassword
 
