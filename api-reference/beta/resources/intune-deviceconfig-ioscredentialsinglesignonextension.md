@@ -2,15 +2,15 @@
 title: iosCredentialSingleSignOnExtension 资源类型
 description: 表示 iOS 设备的 Credential 类型单Sign-On扩展配置文件。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5bdb66dde22cf65fd0ece96b56259eb3f090e094
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8d356b901f3fbc2d912c2d29c028c29d9aa083f6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786367"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59069164"
 ---
 # <a name="ioscredentialsinglesignonextension-resource-type"></a>iosCredentialSingleSignOnExtension 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "58786367"
 继承自 [iosSingleSignOnExtension](../resources/intune-deviceconfig-iossinglesignonextension.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |extensionIdentifier|String|获取或设置为指定 URL 执行 SSO 的应用扩展的捆绑 ID。|
 |teamIdentifier|String|获取或设置为指定 URL 执行 SSO 的应用扩展的团队 ID。|

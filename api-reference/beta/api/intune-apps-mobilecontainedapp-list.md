@@ -2,15 +2,15 @@
 title: 列出 mobileContainedApps
 description: 列出 mobileContainedApp 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 19bd4ffc6e9f43dc103adb1b40b8755398d28ceb
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d1a3744dba0a730b32915d34332d7c1b9a2b9f29
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787531"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59061863"
 ---
 # <a name="list-mobilecontainedapps"></a>列出 mobileContainedApps
 
@@ -45,7 +45,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUnivers
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

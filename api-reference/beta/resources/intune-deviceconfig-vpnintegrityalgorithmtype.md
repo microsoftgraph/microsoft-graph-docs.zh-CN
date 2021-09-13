@@ -2,15 +2,15 @@
 title: vpnIntegrityAlgorithmType 枚举类型
 description: VPN 安全关联完整性算法的类型
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6aba13d1f4f0703888a4798eaadf98c2c9151f3b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 959e603ab7fef0882ad68770b8ac3c7efc02d660
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790169"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59069101"
 ---
 # <a name="vpnintegrityalgorithmtype-enum-type"></a>vpnIntegrityAlgorithmType 枚举类型
 

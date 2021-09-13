@@ -2,15 +2,15 @@
 title: 删除 importedAppleDeviceIdentityResult
 description: 删除 importedAppleDeviceIdentityResult。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d7db85ad4de948e03c6997152ad0bce30cc56f43
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 319592c154cbd946d7aeba001cf3f78a36617bda
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58802304"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59058977"
 ---
 # <a name="delete-importedappledeviceidentityresult"></a>删除 importedAppleDeviceIdentityResult
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/imported
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

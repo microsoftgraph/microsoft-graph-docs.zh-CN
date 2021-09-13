@@ -2,15 +2,15 @@
 title: eapFastConfiguration 枚举类型
 description: EAP-FAST的可用设置。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 880d5b3456f07d8df495b56adece254aa8e5e317
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: cd64a51bc9e41c1ea558ad4d1245b693de29f3c7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795233"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59069185"
 ---
 # <a name="eapfastconfiguration-enum-type"></a>eapFastConfiguration 枚举类型
 
@@ -25,7 +25,7 @@ EAP-FAST的可用设置。
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|noProtectedAccessCredential|0|使用不带受保护FAST凭据的 EAP (PAC) 。|
+|noProtectedAccessCredential|0|使用 EAP-FAST无受保护的访问凭据 (PAC) 。|
 |useProtectedAccessCredential|1|使用受保护的访问凭据 (PAC) 。|
 |useProtectedAccessCredentialAndProvision|2|使用受保护的访问凭据 (PAC) 设置 PAC。|
 |useProtectedAccessCredentialAndProvisionAnonymously|3|使用受保护的访问凭据 (PAC) 设置 PAC，并匿名执行。|

@@ -2,15 +2,15 @@
 title: 列出 androidManagedStoreAppConfigurationSchemas
 description: 列出 androidManagedStoreAppConfigurationSchema 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3e16ff01178e436e46f60967c0fd3b7eb53f445d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 91bf3b2d1b8ddba5092d66964bd260d737845eff
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818236"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59066196"
 ---
 # <a name="list-androidmanagedstoreappconfigurationschemas"></a>列出 androidManagedStoreAppConfigurationSchemas
 
@@ -43,7 +43,7 @@ GET /deviceManagement/androidManagedStoreAppConfigurationSchemas
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

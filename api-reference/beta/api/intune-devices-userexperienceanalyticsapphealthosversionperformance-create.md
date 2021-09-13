@@ -2,15 +2,15 @@
 title: 创建 userExperienceAnalyticsAppHealthOSVersionPerformance
 description: 创建新的 userExperienceAnalyticsAppHealthOSVersionPerformance 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2ff6935b08976d162bc8f69ff71e1c43d0c0ea07
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 284487155ee2667f95e0b489e18c856b13becb7f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818630"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59059047"
 ---
 # <a name="create-userexperienceanalyticsapphealthosversionperformance"></a>创建 userExperienceAnalyticsAppHealthOSVersionPerformance
 
@@ -43,7 +43,7 @@ POST /deviceManagement/userExperienceAnalyticsAppHealthOSVersionPerformance
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -59,7 +59,7 @@ POST /deviceManagement/userExperienceAnalyticsAppHealthOSVersionPerformance
 |activeDeviceCount|Int32|操作系统版本的活动设备的数量。 有效值 -2147483648 2147483647|
 |meanTimeToFailureInMinutes|Int32|操作系统版本的失败平均时间（分钟）。 有效值 -2147483648 2147483647|
 |osVersionAppHealthScore|双精度|操作系统版本的应用运行状况分数。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
-|osVersionAppHealthStatus|字符串|操作系统版本的总体应用运行状况状态。|
+|osVersionAppHealthStatus|String|操作系统版本的总体应用运行状况状态。|
 
 
 

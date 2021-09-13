@@ -2,15 +2,15 @@
 title: deviceManagementSettings 资源类型
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3329b4e7f3412d62acafdb6a82b5838c9dd93f02
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 52cfd12bc068926903e37b1a823ac9d58a48f2a2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785414"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59069255"
 ---
 # <a name="devicemanagementsettings-resource-type"></a>deviceManagementSettings 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58785414"
 尚未记录
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |deviceComplianceCheckinThresholdDays|Int32|允许设备无需签入即可保持符合性的天数。|
 |isScheduledActionEnabled|Boolean|是否为规则的计划操作启用此功能。|

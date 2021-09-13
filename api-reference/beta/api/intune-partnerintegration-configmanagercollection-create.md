@@ -2,15 +2,15 @@
 title: 创建 configManagerCollection
 description: 创建新的 configManagerCollection 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c5ef016fba9ed8c32e0333f85f15ca7944b392c4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 945a4bedf5a0680b001307a0d829cebc606c6812
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783349"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59070018"
 ---
 # <a name="create-configmanagercollection"></a>创建 configManagerCollection
 
@@ -43,7 +43,7 @@ POST /deviceManagement/configManagerCollections
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,10 +54,10 @@ POST /deviceManagement/configManagerCollections
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|ConfigManager 集合的键。|
-|displayName|字符串|DisplayName。|
-|collectionIdentifier|字符串|SCCM 中的集合标识符。|
+|displayName|String|DisplayName。|
+|collectionIdentifier|String|SCCM 中的集合标识符。|
 |hierarchyName|String|HierarchyName。|
-|hierarchyIdentifier|字符串|层次结构标识符。|
+|hierarchyIdentifier|String|层次结构标识符。|
 |createdDateTime|DateTimeOffset|创建日期。|
 |lastModifiedDateTime|DateTimeOffset|上次修改日期。|
 

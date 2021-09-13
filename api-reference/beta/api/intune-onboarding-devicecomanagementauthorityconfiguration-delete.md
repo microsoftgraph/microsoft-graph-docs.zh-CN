@@ -2,15 +2,15 @@
 title: 删除 deviceComanagementAuthorityConfiguration
 description: 删除 deviceComanagementAuthorityConfiguration。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b91315539e1e108eb292ce75f6fb940b92dd7407
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 202b23b1589c11839015835eaa23892bd9b47562
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787986"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59058627"
 ---
 # <a name="delete-devicecomanagementauthorityconfiguration"></a>删除 deviceComanagementAuthorityConfiguration
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigu
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

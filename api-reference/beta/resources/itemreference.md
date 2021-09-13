@@ -3,15 +3,15 @@ author: JeremyKelley
 description: ItemReference 资源提供通过 API 寻址 DriveItem 所需的必要信息。
 ms.date: 09/10/2017
 title: ItemReference
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: sharepoint
-ms.openlocfilehash: e98131cb91562bc7f0b4974383693246826ebd85046c64150cffa4d398d4a932
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ca111ef38ca8e283294a879f4dfb582c50da80fd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54248297"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59068508"
 ---
 # <a name="itemreference-resource-type"></a>ItemReference 资源类型
 
@@ -44,7 +44,7 @@ ms.locfileid: "54248297"
 
 ## <a name="properties"></a>属性
 
-| 属性      | 类型              | 说明
+| 属性      | 类型              | 描述
 |:--------------|:------------------|:-----------------------------------------
 | driveId       | String            | 包含项的驱动器实例的唯一标识符。只读。
 | driveType     | String            | 标识驱动器的类型。 请参阅 [drive][] 资源查看其值。

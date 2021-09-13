@@ -2,15 +2,15 @@
 title: deviceManagementApplicabilityRuleType 枚举类型
 description: 设备配置的受支持的适用性规则类型
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5b45fa8889401b763c5f53ede1b0e1667557221d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4ff9a16765eccb6f618bf60e933024c06bd38cb1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804545"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59069297"
 ---
 # <a name="devicemanagementapplicabilityruletype-enum-type"></a>deviceManagementApplicabilityRuleType 枚举类型
 

@@ -2,15 +2,15 @@
 title: advancedThreatProtectionOnboardingDeviceSettingState 资源类型
 description: 给定设备的 ATP 载入状态。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9569a285bd418143985f1c4f8649f1a00f16caaf
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1a07551110431a54fbfcefaae472b4ccc780a449
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818819"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064411"
 ---
 # <a name="advancedthreatprotectiononboardingdevicesettingstate-resource-type"></a>advancedThreatProtectionOnboardingDeviceSettingState 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58818819"
 给定设备的 ATP 载入状态。
 
 ## <a name="methods"></a>方法
-|方法|返回类型|Description|
+|方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 advancedThreatProtectionOnboardingDeviceSettingStates](../api/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate-list.md)|[advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md) 集合|列出 [advancedThreatProtectionOnboardingDeviceSettingState 对象的属性和](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md) 关系。|
 |[获取 advancedThreatProtectionOnboardingDeviceSettingState](../api/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate-get.md)|[advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md)|读取 [advancedThreatProtectionOnboardingDeviceSettingState 对象的属性和](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md) 关系。|

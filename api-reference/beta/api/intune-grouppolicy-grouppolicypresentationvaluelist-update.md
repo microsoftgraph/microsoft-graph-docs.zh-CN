@@ -2,15 +2,15 @@
 title: 更新 groupPolicyPresentationValueList
 description: 更新 groupPolicyPresentationValueList 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 657c1cf918019c5b49ec8385274e3f21c802e734
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5efe5ac0cd3467434b5818a1611ba5f17e34a46a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58814789"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59070144"
 ---
 # <a name="update-grouppolicypresentationvaluelist"></a>更新 groupPolicyPresentationValueList
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,7 +51,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 
 下表显示创建 [groupPolicyPresentationValueList 时所需的属性](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md)。
 
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期和时间。 继承自 [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |createdDateTime|DateTimeOffset|对象的创建日期和时间。 继承自 [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|

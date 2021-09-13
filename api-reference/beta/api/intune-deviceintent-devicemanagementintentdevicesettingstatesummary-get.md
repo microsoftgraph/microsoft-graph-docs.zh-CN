@@ -2,15 +2,15 @@
 title: 获取 deviceManagementIntentDeviceSettingStateSummary
 description: 读取 deviceManagementIntentDeviceSettingStateSummary 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c73cd736e276305991efb8b1ae670e6d6bbd2168
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7661e219a8a8451945e821e3f50120456765fc47
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58780857"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59059152"
 ---
 # <a name="get-devicemanagementintentdevicesettingstatesummary"></a>获取 deviceManagementIntentDeviceSettingStateSummary
 
@@ -46,7 +46,7 @@ GET /deviceManagement/intents/{deviceManagementIntentId}/deviceSettingStateSumma
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

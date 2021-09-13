@@ -2,15 +2,15 @@
 title: 删除 embeddedSIMDeviceState
 description: 删除嵌入的SIMDeviceState。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a11b6b513ba91722c189f2b11b1401e46da393de
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f2e4cd8c8157517bc181c6b1ba35d6b4c087afe9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785862"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59065307"
 ---
 # <a name="delete-embeddedsimdevicestate"></a>删除 embeddedSIMDeviceState
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCo
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

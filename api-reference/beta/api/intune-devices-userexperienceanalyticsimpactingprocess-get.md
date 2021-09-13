@@ -2,15 +2,15 @@
 title: 获取 userExperienceAnalyticsImpactingProcess
 description: 读取 userExperienceAnalyticsImpactingProcess 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3089a95fd697b5bf6985a10dda1241f4e5b36220
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5d01ae75b28e6fa15c0a9b75c72eeab58be02a82
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58800861"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59070536"
 ---
 # <a name="get-userexperienceanalyticsimpactingprocess"></a>获取 userExperienceAnalyticsImpactingProcess
 
@@ -46,7 +46,7 @@ GET /deviceManagement/userExperienceAnalyticsImpactingProcess/{userExperienceAna
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

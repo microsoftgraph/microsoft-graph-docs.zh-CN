@@ -1,16 +1,16 @@
 ---
 title: Json 资源类型
 description: 表示以 JSON 格式返回的数据
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
 author: ruoyingl
-ms.openlocfilehash: ae365a098baca0829055d968816d94e812d6fe26ad4ad7713ecb2000dcb61aec
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2f24b3d9806179e877e581554ac25141063a8b9f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54248318"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59068507"
 ---
 # <a name="json-resource-type"></a>Json 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "54248318"
 
 表示以 JSON 格式返回的数据
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 
 ## <a name="relationships"></a>关系

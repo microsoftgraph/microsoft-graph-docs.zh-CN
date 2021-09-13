@@ -2,15 +2,15 @@
 title: 删除 windowsPhone81StoreApp
 description: 删除 windowsPhone81StoreApp。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ca65b7e4402278c0df7415b8ca1f58f2215685bb
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 586d88afd4376e39b08734ac8180d944d33a30cf
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816224"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59061772"
 ---
 # <a name="delete-windowsphone81storeapp"></a>删除 windowsPhone81StoreApp
 
@@ -45,7 +45,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIn
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

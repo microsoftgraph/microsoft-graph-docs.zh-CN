@@ -1,16 +1,16 @@
 ---
 title: microsoftTunnelServer 资源类型
-description: 表示单个服务器Microsoft Tunnel实体
+description: 表示单个服务器Microsoft Tunnel的实体
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2e20964b09e613c02c0e2483d10aece0439b765a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b7869ad1f32e791180d8e671422580d406b13615
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783195"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59068660"
 ---
 # <a name="microsofttunnelserver-resource-type"></a>microsoftTunnelServer 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "58783195"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-表示单个服务器Microsoft Tunnel实体
+表示单个服务器Microsoft Tunnel的实体
 
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|

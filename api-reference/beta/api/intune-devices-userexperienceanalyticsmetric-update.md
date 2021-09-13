@@ -2,15 +2,15 @@
 title: 更新 userExperienceAnalyticsMetric
 description: 更新 userExperienceAnalyticsMetric 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8abd25e29e6c19c3a87757e9845fcce95549ebb1
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a72523528dabd899d37637cfc81ddaa6eb0a52d6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801281"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59070444"
 ---
 # <a name="update-userexperienceanalyticsmetric"></a>更新 userExperienceAnalyticsMetric
 
@@ -47,7 +47,7 @@ PATCH /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalytic
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -57,7 +57,7 @@ PATCH /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalytic
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|用户体验分析指标的唯一标识符。|
+|id|String|用户体验分析指标的唯一标识符。|
 |值|双精度|用户体验分析指标的值。|
 |unit|String|用户体验分析指标的单位。|
 

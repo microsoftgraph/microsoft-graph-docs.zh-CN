@@ -2,15 +2,15 @@
 title: managedAppRemediationAction 枚举类型
 description: 管理员启动的操作应用于托管应用。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: bae783378706210ea798b325fe99db800e0052b9
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2f680f2c04d668bec89af4b208eaacc1c476f3cf
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803473"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59068884"
 ---
 # <a name="managedappremediationaction-enum-type"></a>managedAppRemediationAction 枚举类型
 

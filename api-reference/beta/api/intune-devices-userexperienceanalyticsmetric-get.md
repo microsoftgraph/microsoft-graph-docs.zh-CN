@@ -2,15 +2,15 @@
 title: 获取 userExperienceAnalyticsMetric
 description: 读取 userExperienceAnalyticsMetric 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e55c8fbcf730fc6af589d820d25232ea0382110a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0746757be196b3ef83fa54512fa9ef5ac4e6d772
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791977"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59070452"
 ---
 # <a name="get-userexperienceanalyticsmetric"></a>获取 userExperienceAnalyticsMetric
 
@@ -50,7 +50,7 @@ GET /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsB
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

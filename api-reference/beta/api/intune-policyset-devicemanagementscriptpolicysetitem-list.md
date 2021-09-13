@@ -2,15 +2,15 @@
 title: 列出 deviceManagementScriptPolicySetItems
 description: 列出 deviceManagementScriptPolicySetItem 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 320aa271138117c2888213b6eb545bb83cbc552d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: dcedee72f1dd4e69213f5c50de88b4e135c77023
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58762380"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59058573"
 ---
 # <a name="list-devicemanagementscriptpolicysetitems"></a>列出 deviceManagementScriptPolicySetItems
 
@@ -43,7 +43,7 @@ GET /deviceAppManagement/policySets/{policySetId}/items
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

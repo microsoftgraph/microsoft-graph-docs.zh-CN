@@ -2,15 +2,15 @@
 title: 创建 userExperienceAnalyticsModelScores
 description: 创建新的 userExperienceAnalyticsModelScores 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 99ba277ae4cd0594f88dfa5cbfd9668ebb7dd680
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4e94973df76858b18e6e14427fded96aaa809abc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796520"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59070347"
 ---
 # <a name="create-userexperienceanalyticsmodelscores"></a>创建 userExperienceAnalyticsModelScores
 
@@ -43,7 +43,7 @@ POST /deviceManagement/userExperienceAnalyticsModelScores
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,7 +53,7 @@ POST /deviceManagement/userExperienceAnalyticsModelScores
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|用户体验分析模型评分对象的唯一标识符。|
+|id|String|用户体验分析模型评分对象的唯一标识符。|
 |model|String|用户体验分析模型分数的唯一标识符：设备模型。|
 |manufacturer|String|用户体验分析模型分数的唯一标识符：设备制造商。|
 |modelDeviceCount|Int64|用户体验分析模型设备计数。 有效值 -9.22337203685478E+18 到 9.22337203685478E+18|

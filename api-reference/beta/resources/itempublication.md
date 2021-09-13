@@ -1,16 +1,16 @@
 ---
 title: itemPublication 资源类型
 description: itemPublication 资源类型
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 5cdc4a741205be696e584100d1ce6900052a951354481cc0dceffb7d1e19464b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ca37abe9d30ad7a0b24f76388acf72076e92e9e3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54248285"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59068527"
 ---
 # <a name="itempublication-resource-type"></a>itemPublication 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "54248285"
 
 继承自 [itemFacet](../resources/itemfacet.md)。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出出版物](../api/profile-list-publications.md)|[itemPublication](../resources/itempublication.md) 集合|从出版物导航属性获取 itemPublication 资源。|
@@ -30,21 +30,21 @@ ms.locfileid: "54248285"
 |[删除 itemPublication](../api/itempublication-delete.md)|无|删除 [itemPublication](../resources/itempublication.md) 对象。|
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
 |createdBy|[identitySet](../resources/identityset.md)|提供创建实体的用户和/或应用程序的标识符。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |createdDateTime|DateTimeOffset|提供实体创建时的日期时间Offset。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|description    |String      |出版物的说明。                   |
+|说明    |String      |出版物的说明。                   |
 |displayName    |String      |出版物的标题。                         |
-|id|字符串|用于单独寻址实体的标识符。 继承自 [实体](../resources/entity.md)|
+|id|String|用于单独寻址实体的标识符。 继承自 [实体](../resources/entity.md)|
 |inference|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断出来的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|提供上次修改实体的用户和/或应用程序的标识符。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |lastModifiedDateTime|DateTimeOffset|提供实体创建时的日期时间Offset。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |publishedDate  |日期        |出版物的发布日期。      |
 |发布者      |String      |出版物或出版物的发布者。     |
 |source|[personDataSource](../resources/persondatasource.md)|如果从另一个服务同步，则值源自何处。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|thumbnailUrl   |字符串      |引用出版物缩略图的 URL。   |
+|thumbnailUrl   |String      |引用出版物缩略图的 URL。   |
 |WebUrl         |String      |引用出版物的 URL。                  |
 
 ## <a name="relationships"></a>关系

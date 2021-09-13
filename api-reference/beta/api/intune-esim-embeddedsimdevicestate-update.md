@@ -2,15 +2,15 @@
 title: 更新 embeddedSIMDeviceState
 description: 更新嵌入SIMDeviceState 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2b24249906802c245e6464b7e0699b9426d92c51
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1efca908108a2b55688085829ede727374d62153
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785309"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59065272"
 ---
 # <a name="update-embeddedsimdevicestate"></a>更新 embeddedSIMDeviceState
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCod
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,11 +53,11 @@ PATCH /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCod
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|嵌入式 SIM 卡设备状态的唯一标识符。 创建时分配的系统生成值。|
+|id|String|嵌入式 SIM 卡设备状态的唯一标识符。 创建时分配的系统生成值。|
 |createdDateTime|DateTimeOffset|嵌入式 SIM 卡设备状态的创建时间。 生成的服务器端。|
 |modifiedDateTime|DateTimeOffset|上次修改嵌入式 SIM 卡设备状态的时间。 更新的服务器端。|
 |lastSyncDateTime|DateTimeOffset|嵌入式 SIM 卡设备上次签入的时间。 更新的服务器端。|
-|universalIntegratedCircuitCardIdentifier|字符串|通用集成电路卡标识符 (UI进行) 标识要部署配置文件的硬件。|
+|universalIntegratedCircuitCardIdentifier|String|通用集成电路卡标识符 (UI进行) 标识要部署配置文件的硬件。|
 |deviceName|String|预配订阅的设备名称，例如 DESKTOP-JOE|
 |userName|String|订阅预配到的用户名，例如 joe@contoso.com|
 |state|[embeddedSIMDeviceStateValue](../resources/intune-esim-embeddedsimdevicestatevalue.md)|应用于设备的配置文件操作的状态。 可取值为：`notEvaluated`、`failed`、`installing`、`installed`、`deleting`、`error`、`deleted`、`removedByUser`。|

@@ -2,15 +2,15 @@
 title: 更新 userExperienceAnalyticsAppHealthDeviceModelPerformance
 description: 更新 userExperienceAnalyticsAppHealthDeviceModelPerformance 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3af5d2059ffd22d1d40d83560a21b88e28dc69d2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7e8907e33d0bc52efbbb0d5d973ffa7491f0f4fb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788813"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59065433"
 ---
 # <a name="update-userexperienceanalyticsapphealthdevicemodelperformance"></a>更新 userExperienceAnalyticsAppHealthDeviceModelPerformance
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/userExperienceAnalyticsAppHealthDeviceModelPerformance/{
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,13 +53,13 @@ PATCH /deviceManagement/userExperienceAnalyticsAppHealthDeviceModelPerformance/{
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|用户体验分析设备模型性能对象的唯一标识符。|
+|id|String|用户体验分析设备模型性能对象的唯一标识符。|
 |deviceModel|String|设备的型号名称。|
 |deviceManufacturer|String|设备的制造商名称。|
 |activeDeviceCount|Int32|型号的活动设备数。 有效值 -2147483648 2147483647|
 |meanTimeToFailureInMinutes|Int32|型号设备失败平均时间（分钟）。 有效值 -2147483648 2147483647|
 |modelAppHealthScore|双精度|设备型号的应用运行状况分数。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
-|modelAppHealthStatus|字符串|设备模型的总体应用运行状况状态。|
+|modelAppHealthStatus|String|设备模型的总体应用运行状况状态。|
 
 
 

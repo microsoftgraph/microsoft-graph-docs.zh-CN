@@ -1,16 +1,16 @@
 ---
 title: officeClientCheckinStatus 资源类型
 description: 描述租户签入统计数据的实体。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ae27c35842188bf3e1ce63f0906ab799867ca9a0
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 416b7f20477109718ab8b2efd26190050d910fda
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794976"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064425"
 ---
 # <a name="officeclientcheckinstatus-resource-type"></a>officeClientCheckinStatus 资源类型
 
@@ -22,14 +22,14 @@ ms.locfileid: "58794976"
 
 描述租户签入统计数据的实体。
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |userPrincipalName|String|使用设备的用户主体名称。|
 |deviceName|String|尝试签入的设备名称。|
 |devicePlatform|String|尝试签入的设备平台。|
 |devicePlatformVersion|String|尝试签入的设备平台版本。|
 |wasSuccessful|Boolean|如果最后一次签入成功。|
-|userId|字符串|使用设备的用户标识符。|
+|userId|String|使用设备的用户标识符。|
 |checkinDateTime|DateTimeOffset|上次设备签入时间（UTC）。|
 |errorMessage|String|错误消息（如果有与最后一个签入相关联）。|
 |appliedPolicies|String collection|作为最后一个签入传递到设备的策略列表。|

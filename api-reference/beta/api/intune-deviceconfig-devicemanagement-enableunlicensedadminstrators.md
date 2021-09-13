@@ -2,15 +2,15 @@
 title: enableUnlicensedAdminstrators 操作
 description: 启用后，通过角色分配成员身份分配为管理员的用户将不再需要分配的 Intune 许可证。 角色分配 中每个 AAD 安全组的未授权直接成员限制为 350 个，但如果需要支持 350 多个未授权管理员，可以将多个 AAD 安全组分配给角色。 许可管理员将继续按正常方式工作，因为可传递成员身份适用，并且不受 350 个成员限制的限制。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ab9c676a031f0371001e71b7574854280589b9c5
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1b62a4316f1faf04812571fdffed94d6b14ca12f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818426"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59061168"
 ---
 # <a name="enableunlicensedadminstrators-action"></a>enableUnlicensedAdminstrators 操作
 
@@ -43,7 +43,7 @@ POST /deviceManagement/enableUnlicensedAdminstrators
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

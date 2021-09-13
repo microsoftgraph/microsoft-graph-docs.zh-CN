@@ -2,15 +2,15 @@
 title: 更新 groupPolicyPresentation
 description: 更新 groupPolicyPresentation 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f407c8f8d5be7769ff3ff41d303e16dc3b17b2fe
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 322e0b158305b39a2aac822965f1a0c7a4527cfb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789023"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59070151"
 ---
 # <a name="update-grouppolicypresentation"></a>更新 groupPolicyPresentation
 
@@ -44,7 +44,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -52,7 +52,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 
 下表显示创建 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)时所需的属性。
 
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |标签|String|任何演示文稿实体的本地化文本标签。 默认值为空白。|
 |id|String|实体的键。|

@@ -2,15 +2,15 @@
 title: 获取 importedDeviceIdentityResult
 description: 读取 importedDeviceIdentityResult 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b55fb8ae298702a5f9850ccd21a919c57e6a9a42
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 072e86700070f8f604fea3a37a3f4419099e200d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789760"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59070186"
 ---
 # <a name="get-importeddeviceidentityresult"></a>获取 importedDeviceIdentityResult
 
@@ -46,7 +46,7 @@ GET /deviceManagement/importedDeviceIdentities/{importedDeviceIdentityId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

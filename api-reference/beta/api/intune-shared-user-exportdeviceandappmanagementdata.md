@@ -2,15 +2,15 @@
 title: exportDeviceAndAppManagementData 函数
 description: 尚未记录
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: efb6640290a86c5171102a9e844cb10124411b3d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4fb056b717162ecdcbea12e35672bb192620651c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58762093"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064672"
 ---
 # <a name="exportdeviceandappmanagementdata-function"></a>exportDeviceAndAppManagementData 函数
 
@@ -48,14 +48,14 @@ GET /users/{usersId}/exportDeviceAndAppManagementData
 
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 
 下表显示了可用于此函数的参数。
 
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |skip|Int32|尚未记录|
 |top|Int32|尚未记录|

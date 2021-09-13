@@ -2,15 +2,15 @@
 title: devicePlatformType 枚举类型
 description: 支持的平台类型。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 51bba3284fbf9990f8485ed6dea9e51224a4ce90
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: aea0c4f37bed5cddc62993076cae51bef950f414
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793878"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59069220"
 ---
 # <a name="deviceplatformtype-enum-type"></a>devicePlatformType 枚举类型
 

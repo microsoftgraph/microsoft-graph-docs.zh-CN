@@ -2,15 +2,15 @@
 title: mobileAppContentFile 资源类型
 description: 包含与给定 mobileAppContent 版本关联的单个安装程序文件的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 021fac79d8b9bc666d39866e910d5388461fa2e6
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 85255e7c649ec263636c46c8fc4d2e23a24eb880
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801870"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59069409"
 ---
 # <a name="mobileappcontentfile-resource-type"></a>mobileAppContentFile 资源类型
 
@@ -47,7 +47,7 @@ ms.locfileid: "58801870"
 |manifest|Binary|清单信息。|
 |uploadState|[mobileAppContentFileUploadState](../resources/intune-apps-mobileappcontentfileuploadstate.md)|当前上传请求的状态。 可取值为：`success`、`transientError`、`error`、`unknown`、`azureStorageUriRequestSuccess`、`azureStorageUriRequestPending`、`azureStorageUriRequestFailed`、`azureStorageUriRequestTimedOut`、`azureStorageUriRenewalSuccess`、`azureStorageUriRenewalPending`、`azureStorageUriRenewalFailed`、`azureStorageUriRenewalTimedOut`、`commitFileSuccess`、`commitFilePending`、`commitFileFailed`、`commitFileTimedOut`。|
 |isFrameworkFile|Boolean|一个值，指示文件是否是框架文件。|
-|isDependency|布尔值|内容文件是否依赖于主内容文件。|
+|isDependency|Boolean|内容文件是否依赖于主内容文件。|
 
 ## <a name="relationships"></a>关系
 无

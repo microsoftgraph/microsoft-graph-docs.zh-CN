@@ -2,15 +2,15 @@
 title: 创建用户
 description: 新建用户对象。
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b5f176313c00787cf29de232589dc2029408e927
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 26ee57b3892d72706900bd633c29b2ef7b32912c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787916"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064663"
 ---
 # <a name="create-user"></a>创建用户
 
@@ -54,7 +54,7 @@ POST /users
 
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -2,15 +2,15 @@
 title: 更新 onPremisesConditionalAccessSettings
 description: 更新 onPremisesConditionalAccessSettings 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9d2bf2fcf64b2a19c083f0ad7b1ce915697db70d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 24fcdfe5c2db08bd46d5ead8af95adeb4d90e420
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58800826"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59058606"
 ---
 # <a name="update-onpremisesconditionalaccesssettings"></a>更新 onPremisesConditionalAccessSettings
 
@@ -44,7 +44,7 @@ PATCH /deviceManagement/exchangeOnPremisesPolicy/conditionalAccessSettings
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

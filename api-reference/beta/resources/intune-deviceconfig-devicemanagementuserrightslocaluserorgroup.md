@@ -2,15 +2,15 @@
 title: deviceManagementUserRightsLocalUserOrGroup 资源类型
 description: 表示用于用户权限设置的本地用户或组的信息。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9ba33bcdad7e4418b02a90f1fdfbd0b4c9d18e1d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: bb8dd01d090c5d0aaef133b5e5b6367f5acdd278
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783244"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59069227"
 ---
 # <a name="devicemanagementuserrightslocaluserorgroup-resource-type"></a>deviceManagementUserRightsLocalUserOrGroup 资源类型
 
@@ -23,10 +23,10 @@ ms.locfileid: "58783244"
 表示用于用户权限设置的本地用户或组的信息。
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |name|String|此本地用户或组的名称。|
-|description|String|此本地用户或组的管理员说明。|
+|说明|String|此本地用户或组的管理员说明。|
 |securityIdentifier|字符串|此本地用户或组的安全标识符 (例如 *S-1-5-32-544) 。|
 
 ## <a name="relationships"></a>关系

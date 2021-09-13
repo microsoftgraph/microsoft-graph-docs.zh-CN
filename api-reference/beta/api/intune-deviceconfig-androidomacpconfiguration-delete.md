@@ -2,15 +2,15 @@
 title: 删除 androidOmaCpConfiguration
 description: 删除 androidOmaCpConfiguration。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2f4842488cae539a538ae544968ea3157b9f49dd
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 91e89d99a25076ede36625ca8701fe67fa3ed443
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58799941"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59061638"
 ---
 # <a name="delete-androidomacpconfiguration"></a>删除 androidOmaCpConfiguration
 
@@ -45,7 +45,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

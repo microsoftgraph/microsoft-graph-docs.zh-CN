@@ -2,15 +2,15 @@
 title: deviceCompliancePolicyScript 资源类型
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1fc8ccaef0add979ccb3459c3664ae8915d4713f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d53e7a8b107e822e2d0e2d4da0d0e62380bd8222
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58778057"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064362"
 ---
 # <a name="devicecompliancepolicyscript-resource-type"></a>deviceCompliancePolicyScript 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58778057"
 尚未记录
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |deviceComplianceScriptId|String|设备合规性脚本 ID。|
 |rulesContent|二进制|规则的 Json。|

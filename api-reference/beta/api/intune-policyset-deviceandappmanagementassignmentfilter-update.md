@@ -2,15 +2,15 @@
 title: 更新 deviceAndAppManagementAssignmentFilter
 description: 更新 deviceAndAppManagementAssignmentFilter 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c140f5c31464f729d4728dbdcfbe83b128164ae8
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a51bded23b9170b1488e04b1e65aa72f704c164d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820237"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59065048"
 ---
 # <a name="update-deviceandappmanagementassignmentfilter"></a>更新 deviceAndAppManagementAssignmentFilter
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/assignmentFilters/{deviceAndAppManagementAssignmentFilte
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -57,7 +57,7 @@ PATCH /deviceManagement/assignmentFilters/{deviceAndAppManagementAssignmentFilte
 |createdDateTime|DateTimeOffset|工作分配筛选器的创建时间。|
 |lastModifiedDateTime|DateTimeOffset|工作分配筛选器的上次修改时间。|
 |displayName|String|工作分配筛选器的 DisplayName。|
-|description|字符串|工作分配筛选器的说明。|
+|说明|String|工作分配筛选器的说明。|
 |平台|[devicePlatformType](../resources/intune-policyset-deviceplatformtype.md)|工作分配筛选器适用的设备的平台类型。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`unknown`。|
 |rule|String|工作分配筛选器的规则定义。|
 |roleScopeTags|String collection|工作分配筛选器的 RoleScopeTags。|

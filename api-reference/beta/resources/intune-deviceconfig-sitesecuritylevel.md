@@ -2,15 +2,15 @@
 title: siteSecurityLevel 枚举类型
 description: 网站安全级别的可能值。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 583fe94787b6cf420254835f11016dd2f03a651c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d472dd07fdf8034e45327124bf7d7cf0e24cd19f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796227"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59069108"
 ---
 # <a name="sitesecuritylevel-enum-type"></a>siteSecurityLevel 枚举类型
 

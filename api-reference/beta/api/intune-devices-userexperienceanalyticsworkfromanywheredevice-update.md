@@ -2,15 +2,15 @@
 title: 更新 userExperienceAnalyticsWorkFromAnywhereDevice
 description: 更新 userExperienceAnalyticsWorkFromAnywhereDevice 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b4b84e2cc4cbe4f317a1ca385a46ebf448f3db8f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f2dfdfd64aa892ce5668ddd267a4f20ece31e4a9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58800196"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59058990"
 ---
 # <a name="update-userexperienceanalyticsworkfromanywheredevice"></a>更新 userExperienceAnalyticsWorkFromAnywhereDevice
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/userExperienceAnalyticsWorkFromAnywhereMetrics/{userExpe
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,7 +53,7 @@ PATCH /deviceManagement/userExperienceAnalyticsWorkFromAnywhereMetrics/{userExpe
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|用户体验分析的唯一标识符从任何设备工作。|
+|id|String|用户体验分析的唯一标识符从任何设备工作。|
 |deviceName|String|来自任何设备名称的工作。|
 |serialNumber|String|用户体验随设备序列号随处工作。|
 |manufacturer|String|用户体验从任何设备制造商处工作。|
@@ -61,21 +61,21 @@ PATCH /deviceManagement/userExperienceAnalyticsWorkFromAnywhereMetrics/{userExpe
 |ownership|String|用户体验从任何设备所有权开始工作。|
 |managedBy|String|用户体验从设备的任何管理代理工作。|
 |autoPilotRegistered|Boolean|用户体验从 intune 设备的 autopilotRegistered 的任何位置工作。|
-|autoPilotProfileAssigned|布尔值|用户体验分析从 intune 设备的 autopilotProfileAssigned 的任何位置工作。|
-|azureAdRegistered|布尔值|用户体验从任何设备的 azureAdRegistered 工作。|
-|azureAdDeviceId|字符串|用户体验从 Azure Ad 设备 ID 的任何位置工作。|
+|autoPilotProfileAssigned|Boolean|用户体验分析从 intune 设备的 autopilotProfileAssigned 的任何位置工作。|
+|azureAdRegistered|Boolean|用户体验从任何设备的 azureAdRegistered 工作。|
+|azureAdDeviceId|String|用户体验从 Azure Ad 设备 ID 的任何位置工作。|
 |azureAdJoinType|String|用户体验从任何设备的 azure Ad joinType 工作。|
 |osDescription|String|用户体验从任何设备的操作系统说明工作。|
 |osVersion|String|用户体验从任何设备的操作系统版本工作。|
 |tenantAttached|Boolean|用户体验从任何设备的 tenantAttached 工作。|
 |compliancePolicySetToIntune|Boolean|用户体验从任何设备的 compliancePolicySetToIntune 工作。|
 |otherWorkloadsSetToIntune|Boolean|用户体验从任何设备的其他WorkloadsSetToIntune 工作。|
-|upgradeEligibility|[operatingSystemUpgradeEligibility](../resources/intune-devices-operatingsystemupgradeeligibility.md)|用户体验从设备的任何 Windows 升级资格状态工作。 可能的值是：`upgraded`、`unknown`、`notCapable`、`capable`。|
+|upgradeEligibility|[operatingSystemUpgradeEligibility](../resources/intune-devices-operatingsystemupgradeeligibility.md)|用户体验从设备的任何 Windows 升级资格状态工作。 可取值为：`upgraded`、`unknown`、`notCapable`、`capable`。|
 |ramCheckFailed|Boolean|用户体验分析是否从任何设备 RAM 硬件检查失败，设备无法升级到最新版本的 Windows|
 |storageCheckFailed|Boolean|用户体验适用于任何设备，设备升级到最新版本的 Windows 时存储硬件检查是否失败。|
 |processorCoreCountCheckFailed|Boolean|用户体验适用于任何设备，设备升级到最新版本的 Windows 时处理器硬件核心计数检查是否失败。|
 |processorSpeedCheckFailed|Boolean|用户体验适用于任何设备，设备升级到最新版本的 Windows 时处理器硬件速度检查是否失败。|
-|tpmCheckFailed|Boolean|用户体验适用于任何设备，"受信任的平台模块 (TPM) 设备升级到 Windows 的最新版本的硬件检查失败。|
+|tpmCheckFailed|Boolean|用户体验从任何设备工作，"受信任的平台模块 (TPM) 设备升级到 Windows 的最新版本的硬件检查失败。|
 |secureBootCheckFailed|Boolean|用户体验适用于任何设备，安全启动硬件检查是否因设备升级到最新版本的 Windows 而失败。|
 |processorFamilyCheckFailed|Boolean|用户体验适用于任何设备，设备升级到最新版本的 Windows 时处理器硬件系列检查是否失败。|
 |processor64BitCheckFailed|Boolean|用户体验适用于任何设备，处理器硬件 64 位体系结构检查是否失败，设备无法升级到最新版本的 Windows。|

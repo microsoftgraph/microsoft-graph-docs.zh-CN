@@ -2,15 +2,15 @@
 title: 创建 cloudPCConnectivityIssue
 description: 创建新的 cloudPCConnectivityIssue 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4b5fae204dc8969dd1cb1507102b33353742bdf4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 559b7746003009a7095944128d4560f169ca0ae4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801302"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59059138"
 ---
 # <a name="create-cloudpcconnectivityissue"></a>创建 cloudPCConnectivityIssue
 
@@ -43,7 +43,7 @@ POST /deviceManagement/cloudPCConnectivityIssues
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,11 +53,11 @@ POST /deviceManagement/cloudPCConnectivityIssues
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|用户体验分析连接问题事件实体的唯一标识符。|
+|id|String|用户体验分析连接问题事件实体的唯一标识符。|
 |deviceId|String|与连接关联的设备的 Intune DeviceId。|
 |errorCode|String|连接问题的错误代码。|
 |errorDateTime|DateTimeOffset|连接启动的时间。 时间以 ISO 8601 格式显示，协调世界时 (UTC) 时间。|
-|userId|字符串|初始化连接的用户的唯一 ID。|
+|userId|String|初始化连接的用户的唯一 ID。|
 |errorDescription|String|错误的详细说明。|
 |recommendedAction|String|修复相应错误的推荐操作。|
 

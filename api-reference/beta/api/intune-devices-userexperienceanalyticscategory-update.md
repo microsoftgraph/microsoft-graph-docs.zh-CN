@@ -2,15 +2,15 @@
 title: 更新 userExperienceAnalyticsCategory
 description: 更新 userExperienceAnalyticsCategory 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1d7979dc62549d9f0d0510891ee190aba063a15f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 511d9c51965a1334654ca81020b69a47ed6575f7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797976"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59065405"
 ---
 # <a name="update-userexperienceanalyticscategory"></a>更新 userExperienceAnalyticsCategory
 
@@ -50,7 +50,7 @@ PATCH /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalytic
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -2,15 +2,15 @@
 title: termsAndConditionsAcceptanceStatus 资源类型
 description: termsAndConditionsAcceptanceStatus 实体表示给定用户对给定条款和条件 (T&C) 策略的接受状态。 用户必须接受最新版本的条款，才能保留对公司门户的访问权限。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9b242e16eb2d890f133f60f028b523fc3acd3f66
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 42bcf4b2b8aaaf82369b0cbf47cd7a6487c06fcd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58813654"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59069353"
 ---
 # <a name="termsandconditionsacceptancestatus-resource-type"></a>termsAndConditionsAcceptanceStatus 资源类型
 
@@ -41,7 +41,7 @@ termsAndConditionsAcceptanceStatus 实体表示给定用户对给定条款和条
 |userPrincipalName|String|接受术语的用户的 userPrincipalName。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|描述|
 |:---|:---|:---|
 |termsAndConditions|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md)|所分配的条款和条件的导航链接。|
 

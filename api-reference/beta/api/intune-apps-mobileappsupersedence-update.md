@@ -2,15 +2,15 @@
 title: 更新 mobileAppSupersedence
 description: 更新 mobileAppSupersedence 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2c69d3f6223696df3919fbd9e86b25d3235a2a34
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 285f8dbd09defb08a4985793e677440522e2a137
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786240"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59061905"
 ---
 # <a name="update-mobileappsupersedence"></a>更新 mobileAppSupersedence
 
@@ -43,7 +43,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/relationships/{mobileAppRela
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

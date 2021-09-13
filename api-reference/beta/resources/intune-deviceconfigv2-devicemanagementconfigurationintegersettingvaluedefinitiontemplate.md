@@ -2,15 +2,15 @@
 title: deviceManagementConfigurationIntegerSettingValueDefinitionTemplate 资源类型
 description: 整数设置值定义模板
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6aa5571402ccddf6cf5524e2e2486caffcc550c7
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1a39f6c3224487c826cbfd8dcabf6e4cb629b665
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820721"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59069031"
 ---
 # <a name="devicemanagementconfigurationintegersettingvaluedefinitiontemplate-resource-type"></a>deviceManagementConfigurationIntegerSettingValueDefinitionTemplate 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58820721"
 整数设置值定义模板
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|描述|
 |:---|:---|:---|
 |minValue|Int32|整数设置最小值。 有效值 -2147483648 2147483647|
 |maxValue|Int32|整数设置最大值。 有效值 -2147483648 2147483647|

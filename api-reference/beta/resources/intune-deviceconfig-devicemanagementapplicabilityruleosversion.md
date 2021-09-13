@@ -2,15 +2,15 @@
 title: deviceManagementApplicabilityRuleOsVersion 资源类型
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 505c57cb0ce7044344d13917bf420225637e2f74
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9aa0feaa2c476c2b08ce4136d9df9151611f42fe
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804552"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59069304"
 ---
 # <a name="devicemanagementapplicabilityruleosversion-resource-type"></a>deviceManagementApplicabilityRuleOsVersion 资源类型
 

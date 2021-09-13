@@ -2,15 +2,15 @@
 title: 列出 embeddedSIMDeviceStates
 description: 列出 embeddedSIMDeviceState 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6a2bbe330d8630f50ff24e4493a32f49d00f8d6a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5b093178623a7f3f9f1a0e8697441d41baf2f5f6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58773582"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59065286"
 ---
 # <a name="list-embeddedsimdevicestates"></a>列出 embeddedSIMDeviceStates
 
@@ -43,7 +43,7 @@ GET /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCodeP
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
