@@ -2,15 +2,15 @@
 title: rejectJoinResponse 资源类型
 description: 包含拒绝尝试加入会议的参与者的响应。
 author: yizhenww
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 4a8868b07b84717176af01d70cdc6e86b671b8f4c0fe588db2c183909c252848
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f16c061d6652f68ca27744d32e1203ef46c1d1fd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163682"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59044242"
 ---
 # <a name="rejectjoinresponse-resource-type"></a>rejectJoinResponse 资源类型
 

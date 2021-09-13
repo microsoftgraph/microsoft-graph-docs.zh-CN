@@ -2,15 +2,15 @@
 title: teamsAppInstallation 资源类型
 description: 表示团队中安装的 teamsApp 或用户的个人作用域。
 author: AkJo
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 131f809955d61ea186685df6c874464d44229bc972f82a20e12722c6f42b4e15
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 81626d05c7cc417b083b8c08b0fab02cc0dbad08
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54141292"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128181"
 ---
 # <a name="teamsappinstallation-resource-type"></a>teamsAppInstallation 资源类型
 
@@ -41,7 +41,7 @@ ms.locfileid: "54141292"
 
 | 属性            | 类型     | 说明 |
 |:------------------- |:-------- |:----------- |
-| id                  | string   | 唯一 ID (应用TEAMS ID) 。 |
+| id                  | string   | 唯一 ID (应用Teams ID) 。 |
 
 ## <a name="relationships"></a>关系
 

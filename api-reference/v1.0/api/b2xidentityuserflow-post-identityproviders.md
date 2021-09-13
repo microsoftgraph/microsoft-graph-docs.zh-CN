@@ -1,16 +1,16 @@
 ---
 title: 添加 identityProvider
 description: 向 B2X 用户流添加标识提供者。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 6ec01ec32cedf3bd1464058c9a8261e925505422
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 2d730bcae52f0cf99e0112015effac975a992350
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054614"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100370"
 ---
 # <a name="add-identityprovider"></a>添加 identityProvider
 

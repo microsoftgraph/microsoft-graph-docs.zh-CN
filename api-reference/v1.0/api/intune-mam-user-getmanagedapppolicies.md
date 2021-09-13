@@ -2,15 +2,15 @@
 title: getManagedAppPolicies 函数
 description: 获取给定用户的应用限制。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ef696b19a6cd9590dded38d03bbf37a60f84443d0fecf343e9c47bbeea868987
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7c39d4474cb7fb00b65cd661038d72adffa78e38
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54219029"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147190"
 ---
 # <a name="getmanagedapppolicies-function"></a>getManagedAppPolicies 函数
 

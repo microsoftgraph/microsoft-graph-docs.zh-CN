@@ -2,15 +2,15 @@
 title: identityBuiltInUserFlowAttribute 资源类型
 description: 表示租户中的内置Azure Active Directory流属性，可用于自助服务注册用户流。
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: fe1bf972ecef5275492661562116f6ae5bcef73188c9aba87ca7146d8d144625
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ba728475ea83c7497022412ac59bf047d8f7b57a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54126646"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59098956"
 ---
 # <a name="identitybuiltinuserflowattribute-resource-type"></a>identityBuiltInUserFlowAttribute 资源类型
 

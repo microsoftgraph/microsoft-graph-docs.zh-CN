@@ -1,14 +1,14 @@
 ---
 title: 在 Microsoft Graph Toolkit
 description: 使用 CSS 自定义属性修改 Microsoft Graph Toolkit样式。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: beth-panx
-ms.openlocfilehash: 437bad7f8a8e76d04f277f0796e7b44b98cac0b8f3f32e7787352d7c3cd9c8f2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8447517a10bf61c78c1a7c668b6430c616f40fa8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54221073"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129563"
 ---
 # <a name="styling-components-in-the-microsoft-graph-toolkit"></a>在 Microsoft Graph Toolkit
 

@@ -2,15 +2,15 @@
 title: accessReviewReviewerScope 资源类型
 description: 表示将审阅访问评审的人。
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 573e6934250ab6a932922185776b20af92f6f0615f8ede33e87d26e1944386c4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6caa29f5d1e4745a0f82fab43424a99e4d25ec2b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54121429"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072559"
 ---
 # <a name="accessreviewreviewerscope-resource-type"></a>accessReviewReviewerScope 资源类型
 

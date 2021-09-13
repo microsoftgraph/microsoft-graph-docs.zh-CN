@@ -2,15 +2,15 @@
 title: win32LobAppReturnCodeType 枚举类型
 description: 指示返回代码的类型。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0a07beccc5dfc0529a8966ae11441341aee2a4385d1e8b10ef9db4d8d88a7c85
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cfbb030b2fe5083694dae3a12da9b16341d7c341
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54180752"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021678"
 ---
 # <a name="win32lobappreturncodetype-enum-type"></a>win32LobAppReturnCodeType 枚举类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "54180752"
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|failed|0|已失败。|
+|failed|0|失败。|
 |success|1|成功。|
 |softReboot|2|需要软重启。|
 |hardReboot|3|需要硬重启。|

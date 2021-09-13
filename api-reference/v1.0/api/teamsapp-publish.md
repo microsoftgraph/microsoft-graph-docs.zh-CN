@@ -1,25 +1,25 @@
 ---
 title: 发布 teamsapp
-description: '将应用发布到 Microsoft Teams 应用目录。 '
+description: '将应用发布到Microsoft Teams目录。 '
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1d746d4733301d8fcace84a0dba82a9a7234f320
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: f0938ab284ae9338b8d3c210820e207b4c164802
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50948673"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104668"
 ---
 # <a name="publish-teamsapp"></a>发布 teamsapp
 
 命名空间：microsoft.graph
 
-将 [应用发布到](../resources/teamsapp.md) Microsoft Teams 应用目录。
+将[应用发布到](../resources/teamsapp.md)Microsoft Teams目录。
 具体而言，此 API 将应用程序发布到组织的目录 (租户应用程序目录) ;创建的资源将 **具有 的 distributionMethod** 属性值 `organization` 。
 
-**requiresReview** 属性允许任何用户提交应用供管理员审阅。 管理员可以通过此 API 或 Microsoft Teams 管理中心批准或拒绝这些应用。
+**requiresReview** 属性允许任何用户提交应用供管理员审阅。 管理员可以通过此 API 或管理中心批准Microsoft Teams应用。
 
 ## <a name="permissions"></a>权限
 
@@ -54,11 +54,11 @@ POST /appCatalogs/teamsApps?requiresReview:{Boolean}
 | 标头        | 值           |
 |:--------------|:--------------  |
 | Authorization | Bearer {token}。必需。  |
-| Content-Type  | application/zip。 必填。 |
+| Content-Type  | application/zip。 必需。 |
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，包括 Teams zip 清单有效负载。 有关详细信息，请参阅 [创建应用包](/microsoftteams/platform/concepts/apps/apps-package)。
+在请求正文中，包括Teams zip 清单有效负载。 有关详细信息，请参阅 [创建应用包](/microsoftteams/platform/concepts/apps/apps-package)。
 
 应用程序目录中的每个应用程序必须具有唯一的清单 ID。
 
@@ -94,7 +94,7 @@ Content-length: 244
 
 
 ---
-若要了解如何创建 Microsoft Teams 应用程序 zip 文件，请参阅 [创建应用包](/microsoftteams/platform/concepts/apps/apps-package)。
+若要了解如何创建应用程序 zip Microsoft Teams，请参阅[创建应用包](/microsoftteams/platform/concepts/apps/apps-package)。
 
 #### <a name="response"></a>响应
 
@@ -117,7 +117,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-upload-a-new-application-for-review-to-an-organizations-app-catalog"></a>示例 2：将新应用程序上载到组织的应用程序目录进行审阅
+### <a name="example-2-upload-a-new-application-for-review-to-an-organizations-app-catalog"></a>示例 2：Upload新应用程序以检查组织的应用程序目录
 
 #### <a name="request"></a>请求
 

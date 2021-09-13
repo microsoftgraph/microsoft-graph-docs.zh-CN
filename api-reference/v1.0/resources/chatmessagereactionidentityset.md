@@ -2,15 +2,15 @@
 title: chatMessageReactionIdentitySet 资源类型
 description: 表示对聊天或频道中的消息做出响应的用户。
 author: RamjotSingh
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 59b1e110f5d74fdf4883cf7e59adfe5aacdf8b88fcd6e5e6da5728cc2e948f9a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 35b97d1b7fe470beced8daca4b92f5e1c167b467
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189884"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109393"
 ---
 # <a name="chatmessagereactionidentityset-resource-type"></a>chatMessageReactionIdentitySet 资源类型
 

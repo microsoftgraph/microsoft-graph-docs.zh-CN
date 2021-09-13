@@ -2,15 +2,15 @@
 title: 删除 educationAssignmentResource
 description: 删除附加到工作分配的特定资源。
 author: sharad-sharma-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 16cb969fc4f1980c7ec5b37f5dfb8c1c384c6e7f
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: fedf0dc0a72aed534b20a09c3eda1ff0db867997
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52993004"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074481"
 ---
 # <a name="delete-educationassignmentresource"></a>删除 educationAssignmentResource
 
@@ -18,7 +18,7 @@ ms.locfileid: "52993004"
 
 删除附加到工作分配的特定资源。
 
-一般情况下，只有班级中的教师可以删除资源。 但是，教师无法在向学生发布作业后删除标记为"distributeToStudents"的资源。
+通常，只有班级中的教师可以删除资源。 但是，教师无法在向学生发布作业后删除标记为"distributeToStudents"的资源。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

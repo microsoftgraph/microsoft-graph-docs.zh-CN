@@ -2,15 +2,15 @@
 title: Microsoft Graph 连接器 API 限制
 description: Microsoft Graph 连接器 API 限制
 author: mecampos
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: f70b33d5f5fdf56786e13d4f3e00f1b5f20a2009ef947ea5be415e149eb7b839
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f83136adcd1900f6e192ac763150128fa2ec0bcd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54246407"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136122"
 ---
 # <a name="microsoft-graph-connector-api-limits"></a>Microsoft Graph 连接器 API 限制
 

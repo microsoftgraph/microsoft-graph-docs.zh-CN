@@ -1,16 +1,16 @@
 ---
 title: 安全资源类型
 description: 安全资源是安全对象模型的入口点。 它返回单一安全资源。 它不包含任何可用属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 7681472eb3f30676b35b9501ba410b660e8006710d375679254213cee239eb31
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 14c0aa4a239b143df79d873e127c3e70dc7900fe
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54141306"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139602"
 ---
 # <a name="security-resource-type"></a>安全资源类型
 

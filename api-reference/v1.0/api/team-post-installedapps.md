@@ -2,15 +2,15 @@
 title: 向团队添加应用
 description: 将应用安装到指定的团队。
 author: akjo
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2131639eaf6b5ecda41b764a17049c4b61347d1e
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: 6b0225960b6a0a3603d76ae66af4323e4c7f3476
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53059381"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109995"
 ---
 # <a name="add-app-to-team"></a>向团队添加应用
 

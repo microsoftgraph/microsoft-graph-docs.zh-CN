@@ -4,20 +4,21 @@ description: 了解用于管理外部项权限的外部组。
 author: mecampos
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 369ca51c3a7e344d21bf92eaa3ab3985c4f6875227962555f564ff7049a5bbeb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.localizationpriority: medium
+ms.openlocfilehash: 5a4da4e8dbe61f73f2806cc2f9e2bc41b18ac1f7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54129687"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139315"
 ---
 # <a name="use-external-groups-to-manage-permissions-to-microsoft-graph-connector-data-sources"></a>使用外部组管理对 Microsoft Graph连接器数据源的权限
 
-[外部组](/graph/api/resources/externalgroup?view=graph-rest-beta&preserve-view=true)允许你管理查看 Microsoft Graph[](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true)连接中的外部项以及连接到 Azure AD) 组外部Azure Active Directory (的权限。
+[外部组](/graph/api/resources/externalgroup?view=graph-rest-beta&preserve-view=true)允许你管理查看 Microsoft Graph[](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true)连接中的外部项的权限，并连接到 Azure AD Azure Active Directory (外部) 源。
 
 对于依赖 Azure AD 用户和组的数据源，在创建或更新外部项时，通过将访问控制列表 (ACL) 与 Azure AD 用户和组 ID 关联来设置外部[](/graph/api/externalconnection-put-items?view=graph-rest-beta&preserve-view=true)项的权限。
 
-但是，对于使用非 Azure AD 组或类似组构造的数据源（如 Salesforce 配置文件、Dynamics 业务部门、SharePoint 组、ServiceNow 本地组或 Confluence 本地组）我们建议使用外部 *组*。
+但是，对于使用非 Azure AD 组或类似组构造的数据源（如 Salesforce 配置文件、Dynamics 业务单位、SharePoint 组、ServiceNow 本地组或 Confluence 本地组，建议使用外部 *组*。
 
 ## <a name="common-external-group-scenarios"></a>常见的外部组方案
 
@@ -39,34 +40,34 @@ Salesforce 使用配置文件、角色和权限集进行授权。 这些信息�
 
 ## <a name="using-external-groups-in-your-connection"></a>在连接内使用外部组
 
-若要在连接内使用外部组：：
+若要在连接内使用外部组：
 
 1. 对于每个非 Azure AD 组，使用组 API 在 Microsoft Graph创建[外部组](/en-us/graph/api/resources/group?view=graph-rest-beta&preserve-view=true)。
-2. 必要时，在定义外部项的 ACL 时，请使用外部组。  
+2. 如有必要，在定义外部项的 ACL 时，请使用外部组。
 3. 使外部组的成员身份保持最新并同步。
 
 ### <a name="create-external-groups"></a>创建外部组
 
 外部组属于连接。 若要在连接内创建外部组，请：
-* 使用 Microsoft Graph中的组 API，如以下示例所示。
+* 使用 Microsoft Graph 中的组 API，如以下示例所示。
 
     > [!NOTE]
     > [displayName 和](/graph/api/resources/externalgroup?view=graph-rest-beta&preserve-view=true) **description** 是可选的字段。
 
     ```http
-    POST /connections/{connectionId}/groups 
+    POST /connections/{connectionId}/groups
 
-    {  
-      "id": "contosoEscalations",  
-      "displayName": "Contoso Escalations",  
+    { 
+      "id": "contosoEscalations", 
+      "displayName": "Contoso Escalations", 
       "description": "Tier-1 escalations within Contoso"
-    }  
+    } 
     ```
 
 * 在 ID 字段中提供 [标识符或名称](/graph/api/resources/externalgroup?view=graph-rest-beta&preserve-view=true) 。 使用此值在后续请求中调用外部组。
 
     > [!NOTE]
-    > ID 字段允许您使用 URL 和 filename-safe Base64 字符集，其限制为 128 个字符。
+    > ID 字段允许您使用 URL 和 filename-safe Base64 字符集，并且该字符集限制为 128 个字符。
 
 外部组可以包含以下一个或多个：
 * Azure AD 用户。
@@ -78,28 +79,28 @@ Salesforce 使用配置文件、角色和权限集进行授权。 这些信息�
 ```http
 POST https://graph.microsoft.com/beta/connections/{connectionId}/groups/{groupId}/members
 
-{ 
-  "id": "contosoSupport", 
-  "type": "group", 
-  "identitySource": "external" 
+{
+  "id": "contosoSupport",
+  "type": "group",
+  "identitySource": "external"
 }
 ```
 ```http
-POST https://graph.microsoft.com/beta/connections/{connectionId}/groups/{groupId}/members 
+POST https://graph.microsoft.com/beta/connections/{connectionId}/groups/{groupId}/members
 
-{ 
-  "id": "25f143de-be82-4afb-8a57-e032b9315752", 
-  "type": "user", 
-  "identitySource": "azureActiveDirectory" 
+{
+  "id": "25f143de-be82-4afb-8a57-e032b9315752",
+  "type": "user",
+  "identitySource": "azureActiveDirectory"
 }
 ```
 ```http
-POST https://graph.microsoft.com/beta/connections/{connectionId}/groups/{groupId}/members 
+POST https://graph.microsoft.com/beta/connections/{connectionId}/groups/{groupId}/members
 
-{ 
-  "id": "99a3b3d6-71ee-4d21-b08b-4b6f22e3ae4b", 
-  "type": "group", 
-  "identitySource": "azureActiveDirectory" 
+{
+  "id": "99a3b3d6-71ee-4d21-b08b-4b6f22e3ae4b",
+  "type": "group",
+  "identitySource": "azureActiveDirectory"
 }
 ```
 
@@ -108,41 +109,41 @@ POST https://graph.microsoft.com/beta/connections/{connectionId}/groups/{groupId
 定义外部项的 [ACL](connecting-external-content-manage-items.md#access-control-list) 时，可以使用外部组，如以下示例所示。 除了 Azure AD 用户和组外，外部项的访问控制条目中还可以包含外部组。
 
 ```http
-PUT https://graph.microsoft.com/beta/external/connections/{id}/items/{id}  
+PUT https://graph.microsoft.com/beta/external/connections/{id}/items/{id} 
 
-Content-type: application/json  
-{  
-  "@odata.type": "microsoft.graph.externalItem",  
-  "acl": [  
-    {  
-      "type": "group",  
-      "value": "contosEscalations",  
-      "accessType": "grant",  
-      "identitySource": "External"  
-    },  
-    {  
-      "type": "user",  
-      "value": "87e9089a-08d5-4d9e-9524-b7bd6be580d5",  
-      "accessType": "grant",  
-      "identitySource": "azureActiveDirectory"  
-    },  
-    {  
-      "type": "group",  
-      "value": "96fbeb4f-f71c-4405-9f0b-1d6988eda2d2",  
-      "accessType": "deny",  
-      "identitySource": "azureActiveDirectory"  
-    }  
-  ],  
-  "properties": {  
-    "title": "Error in the payment gateway",  
-    "priority": 1,  
-    "assignee": "john@contoso.com"  
-  },  
-  "content": {  
-    "value": "<h1>Error in payment gateway</h1><p>Error details...</p>",  
-    "type": "html"  
-  }  
-}  
+Content-type: application/json 
+{ 
+  "@odata.type": "microsoft.graph.externalItem", 
+  "acl": [ 
+    { 
+      "type": "group", 
+      "value": "contosEscalations", 
+      "accessType": "grant", 
+      "identitySource": "External" 
+    }, 
+    { 
+      "type": "user", 
+      "value": "87e9089a-08d5-4d9e-9524-b7bd6be580d5", 
+      "accessType": "grant", 
+      "identitySource": "azureActiveDirectory" 
+    }, 
+    { 
+      "type": "group", 
+      "value": "96fbeb4f-f71c-4405-9f0b-1d6988eda2d2", 
+      "accessType": "deny", 
+      "identitySource": "azureActiveDirectory" 
+    } 
+  ], 
+  "properties": { 
+    "title": "Error in the payment gateway", 
+    "priority": 1, 
+    "assignee": "john@contoso.com" 
+  }, 
+  "content": { 
+    "value": "<h1>Error in payment gateway</h1><p>Error details...</p>", 
+    "type": "html" 
+  } 
+} 
 ```
 
 > [!NOTE]
@@ -150,7 +151,7 @@ Content-type: application/json 
 
 ### <a name="keep-external-group-memberships-in-sync"></a>保持外部组成员身份同步
 
-在 Microsoft Graph 中保持外部组的成员身份Graph。 当自定义组的成员身份更改时，请确保更改在满足你需求的一个时间反映在外部组中。
+在 Microsoft Graph 中保持外部组的成员身份Graph。 当自定义组的成员更改时，请确保更改在满足你需求的时间反映在外部组中。
 
 ### <a name="manage-external-groups-and-membership"></a>管理外部组和成员身份
 

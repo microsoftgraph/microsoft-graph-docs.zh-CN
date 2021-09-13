@@ -1,16 +1,16 @@
 ---
 title: spaApplication 资源类型
 description: 指定单页应用程序的设置。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: bc1974925713354484ea3998d394b9a212432caec2b2f56d12ee7072bb825f97
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6511dfc95523098c96448bf2f39dbedc313217cc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54152003"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136340"
 ---
 # <a name="spaapplication-resource-type"></a>spaApplication 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54152003"
 
 | 属性 | 类型 | 说明 |
 |:---------|:-----|:------------|
-| redirectUris | String collection | 指定用于登录的用户令牌的 URL，或发送 OAuth 2.0 授权代码和访问令牌的重定向 URI。 |
+| redirectUris | 字符串集合 | 指定用于登录的用户令牌的 URL，或发送 OAuth 2.0 授权代码和访问令牌的重定向 URI。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

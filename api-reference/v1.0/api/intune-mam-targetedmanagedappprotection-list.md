@@ -2,15 +2,15 @@
 title: 列出 targetedManagedAppProtections
 description: 列出 targetedManagedAppProtection 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 90d63769adc9a57d39ec52ad442c26fd47572c61cb178d59932f714117aee1d4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c3cd1ce03ec9c3159493fed7f56fd4a74acd270e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54250488"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147232"
 ---
 # <a name="list-targetedmanagedappprotections"></a>列出 targetedManagedAppProtections
 

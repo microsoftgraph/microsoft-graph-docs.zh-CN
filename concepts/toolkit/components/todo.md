@@ -1,22 +1,22 @@
 ---
-title: 微软待办 Microsoft Graph Toolkit
-description: 利用微软待办组件，用户可以查看、添加、删除、完成或编辑任务。 它适用于 Microsoft 微软待办 中微软待办。
-localization_priority: Normal
+title: 微软待办 Microsoft Graph Toolkit 中的组件
+description: 利用微软待办组件，用户可以查看、添加、删除、完成或编辑 todo 任务。 它适用于 Microsoft 微软待办。
+ms.localizationpriority: medium
 author: shweaver-MSFT
-ms.openlocfilehash: 215315c67931c36019a4a83f1b295193ed0c7375487202c2ce58156aa64db42a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4c2b54d0c6b5307762d38a9cb204a896aaaa4e9d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54143645"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129626"
 ---
-# <a name="to-do-component-in-the-microsoft-graph-toolkit"></a>微软待办 Microsoft Graph Toolkit
+# <a name="to-do-component-in-the-microsoft-graph-toolkit"></a>微软待办 Microsoft Graph Toolkit 中的组件
 
-微软待办 组件用于允许登录用户在 Microsoft Graph 中通过 微软待办 API 查看、添加、删除、完成和/或编辑 微软待办 中的任务。
+微软待办 组件用于使登录用户可以使用 Microsoft Graph 中的 微软待办 API 查看、添加、删除、完成和/或编辑 微软待办 中的任务。
 
 ## <a name="example"></a>示例
 
-以下示例显示登录用户使用组件微软待办任务 `mgt-todo` 。 可以使用代码编辑器查看 [属性如何](#properties) 更改组件的行为。
+以下示例显示登录用户使用组件微软待办任务 `mgt-todo` 。 可以使用代码编辑器查看属性 [如何](#properties) 更改组件的行为。
 
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-todo--tasks&source=docs" height="500"></iframe>
 
@@ -28,15 +28,15 @@ ms.locfileid: "54143645"
 
 | 属性 | 属性 | 说明 |
 | -- | -- | -- |
-| 只读 | readOnly | 一个布尔值，用于将任务界面设置为只读， (添加或删除任务) 。 默认值为“`false`”。 |
-| hide-header | hideHeader | 显示或隐藏组件标头的布尔值。 默认值为“`false`”。 |
-| hide-options | hideOptions | 用于显示或隐藏任务中的选项的布尔值。 默认值为“`false`”。
+| 只读 | readOnly | 一个布尔值，用于将任务界面设置为只读， (添加或删除任务) 。 默认值为 `false`。 |
+| hide-header | hideHeader | 显示或隐藏组件标头的布尔值。 默认值为 `false`。 |
+| hide-options | hideOptions | 用于显示或隐藏任务中的选项的布尔值。 默认值为 `false`。
 | initial-id="folder_id" | initialId | 一个字符串 ID，用于将最初显示的文件夹设置为提供的 ID。 |
-| target-id="folder_id"| targetId | 一个字符串 ID，用于将任务接口锁定为所提供的文件夹 ID。 |
+| target-id="folder_id"| targetId | 用于将任务接口锁定为所提供的文件夹 ID 的字符串 ID。 |
 | 不适用 | isNewTaskVisible  | 确定新任务视图在呈现时是否可见。 |
 | 不适用 | taskFilter  | 可选函数，用于筛选向用户显示的任务。 |
 
-以下示例只显示 ID 为 *12345* 的文件夹中的任务，并且不允许用户创建新任务。
+以下示例仅显示 ID 为 *12345* 的文件夹中的任务，并且不允许用户创建新任务。
 
 ```html
 <mgt-todo read-only initial-id="12345"></mgt-todo>
@@ -99,7 +99,7 @@ mgt-todo {
 
 从组件中触发以下事件。
 
-事件 | 何时发出 | 自定义数据 | Cancelable | 气泡 | 使用自定义模板
+Event | 何时发出 | 自定义数据 | Cancelable | 气泡 | 使用自定义模板
 ------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
 `taskClick` | 当用户单击或点击任务时触发 | 选定的 [任务](https://github.com/microsoftgraph/microsoft-graph-toolkit/blob/66a5bbb6591e6260e95dbc00c0d06bcbe8dcef38/packages/mgt-components/src/components/mgt-todo/graph.todo.ts#L41) | 否 | 否 | 否
 

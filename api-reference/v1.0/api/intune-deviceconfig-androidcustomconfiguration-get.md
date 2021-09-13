@@ -2,15 +2,15 @@
 title: 获取 androidCustomConfiguration
 description: 读取 androidCustomConfiguration 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f05e51154bbc6cb781c2e53c18fbc1713050249372c3797a32313800dfb3f27f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ce2c8d444a0ec6919cf084c8d525cbf9881662d2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54130826"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59140498"
 ---
 # <a name="get-androidcustomconfiguration"></a>获取 androidCustomConfiguration
 

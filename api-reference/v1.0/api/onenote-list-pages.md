@@ -2,15 +2,15 @@
 title: 列出页面
 description: 检索页面对象的列表。
 author: jewan-microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 754a14703f02bfe5e9ef92d28ae67beb4e0365f1b5882f0074aca918fd3ea724
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f928dcb7a03ab4966c91ec55f3744a21c7091009
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54218931"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59015908"
 ---
 # <a name="list-pages"></a>列出页面
 
@@ -37,7 +37,7 @@ GET /sites/{id}/onenote/pages
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
-页面的默认查询返回按 排序的前 20 个页面 `lastModifiedTime desc` 。 如果默认查询返回的页数超过 20 个，响应中将包含 可用于分页 `@odata.nextLink` 浏览结果集。 请求返回的最大页面数 `top` 为 100。
+页面的默认查询返回按 排序的前 20 个页面 `lastModifiedTime desc` 。 如果默认查询返回的页数超过 20 个，响应将包含 可用于分页 `@odata.nextLink` 浏览结果集。 请求返回的最大页面数 `top` 为 100。
 
 默认响应将 `parentSection` 展开并选择节的 、 和 `id` `displayName` `self` 属性。 页面 `expand` 的有效值为 `parentNotebook` 和 `parentSection` 。
 

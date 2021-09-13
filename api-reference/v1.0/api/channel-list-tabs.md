@@ -2,15 +2,15 @@
 title: 列出频道中的选项卡
 description: '检索团队中指定频道中的选项卡列表。 '
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a5754c443d323dc67b0500f7ad6f198921ed887d
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: 8e59f54eef9167b8a4f09a15e7fd0583cf20b3de
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51202233"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105655"
 ---
 # <a name="list-tabs-in-channel"></a>列出频道中的选项卡
 
@@ -30,7 +30,7 @@ ms.locfileid: "51202233"
 
 > **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
 
-> **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
+> **注意**：此 API 支持管理员权限。全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -55,7 +55,7 @@ GET /teams/{id}/channels/{id}/tabs
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-list-all-the-tabs-in-the-channel-along-with-associated-teams-app"></a>示例 1：列出频道中所有选项卡以及关联的 Teams 应用
+### <a name="example-1-list-all-the-tabs-in-the-channel-along-with-associated-teams-app"></a>示例 1：列出通道中所有选项卡以及关联的Teams选项卡
 #### <a name="request"></a>请求
 下面展示了示例请求。
 

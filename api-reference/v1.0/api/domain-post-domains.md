@@ -2,15 +2,15 @@
 title: 创建域
 description: 向租户添加域。
 author: adimitui
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 3b2e20c89a4858c178afe341a83f324a1031239e76554c723864bf69af473e7d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b8d4b05287ad2773b3819f51a5413fabb9f58452
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54226089"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100279"
 ---
 # <a name="create-domain"></a>创建域
 
@@ -27,7 +27,7 @@ ms.locfileid: "54226089"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Domain.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Domain.ReadWrite.All |
 

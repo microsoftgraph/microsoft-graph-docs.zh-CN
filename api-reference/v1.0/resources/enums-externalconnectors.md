@@ -2,15 +2,15 @@
 title: 外部连接器枚举值
 description: Microsoft Graph外部连接器枚举值
 doc_type: enumPageType
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
 author: emzho
-ms.openlocfilehash: 4c42476d617914f48f49fb09796266356c7e27d0
-ms.sourcegitcommit: 6efd9df497d795988cd85474f379d1989b0995b7
+ms.openlocfilehash: 4e311eb9895096c8fb97736269f1e72df2b851a1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58697580"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104129"
 ---
 # <a name="external-connectors-enum-values"></a>外部连接器枚举值
 

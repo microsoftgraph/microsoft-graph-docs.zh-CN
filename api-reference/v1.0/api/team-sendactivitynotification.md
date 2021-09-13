@@ -2,15 +2,15 @@
 title: team：sendActivityNotification
 description: 在团队范围内发送活动源通知。
 author: eddie-lee-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: be51a4094a0da78fa4382e568a333f492c57caf9
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7ce1413e550d1a2102e00f2ac4fc6c895bc47f62
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818966"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109925"
 ---
 # <a name="team-sendactivitynotification"></a>team：sendActivityNotification
 命名空间：microsoft.graph
@@ -65,7 +65,7 @@ POST /teams/{teamId}/sendActivityNotification
 - [chatMesage](../resources/chatmessage.md)
 - [teamsTab](../resources/teamstab.md)
 
-> **注意：** 实体 URL 必须相同或 URL 中团队的子资源。 此外[，Teams](/microsoftteams/platform/overview)应用必须安装在团队中。
+> **注意：** 实体 URL 必须相同或 URL 中团队的子资源。 此外[，Teams应用](/microsoftteams/platform/overview)必须安装在团队中。
 
 ## <a name="response"></a>响应
 

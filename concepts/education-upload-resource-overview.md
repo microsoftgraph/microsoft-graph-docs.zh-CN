@@ -1,26 +1,26 @@
 ---
 title: Upload Microsoft Graph API 为教育作业和提交创建Graph文件
 description: 了解如何使用 Microsoft Graph 中的教育 API 将文件上传到作业或提交Graph。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: conceptualPageType
-ms.openlocfilehash: 0d7c60fbb88c6c6eec9f4748f2921a800f20b99e2248d6f6c26cad188591721c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 055d454f0ca58dab5c51687fa7b311a30828ac15
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54151793"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59137383"
 ---
 # <a name="upload-files-for-education-assignments-and-submissions-using-the-microsoft-graph-api"></a>Upload Microsoft Graph API 为教育作业和提交创建Graph文件
 
 资源是教育 [作业和子](/graph/api/resources/educationassignment) 分配 [的组成部分](/graph/api/resources/educationsubmission)。 教师确定要上传到作业文件夹的资源，学生确定要上传到提交文件夹的资源。
 
-本文介绍如何在 Microsoft Graph教育 API 将文件上载到作业或提交文件夹。
+本文介绍如何使用 Microsoft Graph中的教育 API 将文件上载到作业或提交文件夹。
 
 ## <a name="prerequisites"></a>先决条件
 
-在上载文件之前，请SharePoint一个文件夹，用于将给定教育作业或[子](/graph/api/resources/educationsubmission)分配资源的文件上传到该[](/graph/api/resources/educationassignment)文件夹。 
+在上载文件之前，请设置一SharePoint文件夹，用于将给定教育作业或[子](/graph/api/resources/educationsubmission)资源的文件上传到该文件夹。 [](/graph/api/resources/educationassignment) 
 
 ## <a name="upload-a-resource"></a>Upload资源
 

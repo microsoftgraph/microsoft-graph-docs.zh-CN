@@ -2,15 +2,15 @@
 title: Get todoTaskList
 description: 读取 todoTaskList 对象的属性和关系。
 author: avijityadav
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 62dfcfbc7fd3b9c88be39f18e8cc1da56a3fd584
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 46dadfc54912976e38da320bdf0cd8e1f4531046
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50963405"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104640"
 ---
 # <a name="get-todotasklist"></a>Get todoTaskList
 命名空间：microsoft.graph

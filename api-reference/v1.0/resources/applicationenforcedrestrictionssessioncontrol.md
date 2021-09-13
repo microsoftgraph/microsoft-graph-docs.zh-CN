@@ -1,16 +1,16 @@
 ---
 title: applicationEnforcedRestrictionsSessionControl 资源类型
 description: 强制执行应用程序限制的会话控制。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: eabfdcc57439e2d254acc9ae5eeec2f613197f669f2ff68cd2ecf8bbc6bc98cb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e685fa8f97497530553a79c85c5b4c6b8177f105
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54252156"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59078999"
 ---
 # <a name="applicationenforcedrestrictionssessioncontrol-resource-type"></a>applicationEnforcedRestrictionsSessionControl 资源类型
 

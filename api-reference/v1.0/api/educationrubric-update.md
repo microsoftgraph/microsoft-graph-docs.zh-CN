@@ -1,16 +1,16 @@
 ---
 title: 更新 educationRubric
 description: 更新 educationRubric 对象的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: bb4e16297119915ab10805f078339688d0373738
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: a497d2c9c6e9e35af5c9e18c73cb21010c140961
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52990953"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147414"
 ---
 # <a name="update-educationrubric"></a>更新 educationRubric
 
@@ -18,7 +18,7 @@ ms.locfileid: "52990953"
 
 更新 [educationRubric 对象](../resources/educationrubric.md) 的属性。
 
-只有在发布工作分配 () 工作分配附加的一个分值才能更新，而更新的实际上是 下 `PATCH /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc-9e13-44a2-a6ac-a53322006454/rubric` 的原始工作分配 `/education/users/{id}/rubrics` 。 工作分配发布后，将创建附加到该特定工作分配的不可变重复副本。 可以使用 [GET /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc-9e13-44a2-a6ac-a53322006454/rubric](educationrubric-get.md)检索该标准，但无法更新。
+在工作分配发布之前 () 工作分配附加的一个分值，更新后实际上是位于 下 `PATCH /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc-9e13-44a2-a6ac-a53322006454/rubric` 的原始工作分配 `/education/users/{id}/rubrics` 。 工作分配发布后，将创建附加到该特定工作分配的不可变重复副本。 可以使用 [GET /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc-9e13-44a2-a6ac-a53322006454/rubric](educationrubric-get.md)检索该标准，但无法更新。
 
 ## <a name="permissions"></a>权限
 

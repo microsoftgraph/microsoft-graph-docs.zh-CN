@@ -2,15 +2,15 @@
 title: Microsoft Graph 中的人员和工作场所智能概述
 description: Microsoft 365 云服务的亿万用户组成了 Microsoft Graph 的核心部分。 用户的数据通过 Microsoft Graph 提供的服务得到精心的管理、保护和适当的授权，以提升企业生产力和创造力。 因为在 Microsoft Graph 中有大量的用户数据，所以派生自用户社交交互的数据将尤为受到关注。
 author: simonhult
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: bb8862b6be2b942c99554df5d547db56c068a6cce1ea855e7df6617afd292cc7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3107e7dbfcc54e1a2b9c76bdf35cecf1e80ef527
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54121316"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59103940"
 ---
 # <a name="overview-of-people-and-workplace-intelligence-in-microsoft-graph"></a>Microsoft Graph 中的人员和工作场所智能概述
 

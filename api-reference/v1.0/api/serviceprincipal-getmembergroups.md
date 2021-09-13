@@ -1,16 +1,16 @@
 ---
 title: servicePrincipal：getMemberGroups
 description: 获取此服务主体所属的组列表。  检查是可传递的。
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: a5a6d7037c860d421fc5e45b031da0321699fd18
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 0c9082f8bfb1bb984808b1b9f8ae2c815b32d85e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053830"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110051"
 ---
 # <a name="serviceprincipal-getmembergroups"></a>servicePrincipal：getMemberGroups
 

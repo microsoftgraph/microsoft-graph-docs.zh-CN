@@ -1,22 +1,22 @@
 ---
 title: 获取最近的用户活动
 description: " API。 该服务将查询最新的 historyItems，然后提取这些相关活动。 活动将按照 **historyItem** 上的最新 **lastModified** 进行排序。 这意味着没有 **historyItems** 的活动不会包含在响应中。 UserActivity.ReadWrite.CreatedByApp 权限还将对响应应用额外筛选，以便仅返回由应用程序创建的活动。 如果用户特别活动并且其他应用程序已创建最近的活动，则此服务器端筛选可能会导致空页。 若要获取应用程序的活动，请使用 **nextLink** 属性分页。"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: project-rome
 author: ailae
 doc_type: apiPageType
-ms.openlocfilehash: 429eda595702f315bed329ffe329068d7c16b8c8
-ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
+ms.openlocfilehash: 493c5e89cf5d03cdbb11aff474be2e237ee2a2c9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401344"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104773"
 ---
 # <a name="get-recent-user-activities"></a>获取最近的用户活动
 
 命名空间：microsoft.graph
 
-获取给定用户的最近活动。 此 OData 函数包含一些默认行为，可使其像"最近使用的"API 一样运行。 该服务将查询最新的 [historyItems](../resources/projectrome-historyitem.md)，然后拉取这些相关活动。 活动将按照 **historyItem** 上的最新 **lastModified** 进行排序。 这意味着没有 **historyItems** 的活动不会包含在响应中。 UserActivity.ReadWrite.CreatedByApp 权限还将对响应应用额外筛选，以便仅返回由应用程序创建的活动。 如果用户特别活动并且其他应用程序已创建最近的活动，则此服务器端筛选可能会导致空页。 若要获取应用程序的活动，请使用 **nextLink** 属性分页。
+获取给定用户的最近活动。 此 OData 函数包含一些默认行为，使其像"最近使用的"API 一样运行。 该服务将查询最新的 [historyItems](../resources/projectrome-historyitem.md)，然后提取这些相关活动。 活动将按照 **historyItem** 上的最新 **lastModified** 进行排序。 这意味着没有 **historyItems** 的活动不会包含在响应中。 UserActivity.ReadWrite.CreatedByApp 权限还将对响应应用额外筛选，以便仅返回由应用程序创建的活动。 如果用户特别活动并且其他应用程序已创建最近的活动，则此服务器端筛选可能会导致空页。 若要获取应用程序的活动，请使用 **nextLink** 属性分页。
 
 ## <a name="permissions"></a>权限
 

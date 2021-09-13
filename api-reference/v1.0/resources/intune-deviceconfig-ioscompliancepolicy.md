@@ -2,15 +2,15 @@
 title: iosCompliancePolicy 资源类型
 description: 此类包含 iOS 的合规性设置。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1845a4b6ca3e0d9d5372e1960d25001b69c567d25f07ef2bac8a2772925bd7b2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 87ae2d807866fee3ee67f6c98daf83e9ad08592a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54205757"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59148128"
 ---
 # <a name="ioscompliancepolicy-resource-type"></a>iosCompliancePolicy 资源类型
 

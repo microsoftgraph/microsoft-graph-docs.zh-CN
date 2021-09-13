@@ -1,16 +1,16 @@
 ---
 title: NamedItem 资源类型
 description: 表示单元格区域或值的定义名称。名称可以为基元的已命名对象（如以下类型中所示）、range 对象或对区域的引用。此对象可用于获取与名称相关的 range 对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: ruoyingl
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 2c92202e5e9d1671d72acecaec50203d01c5a90eb30436df0d70cb5518763258
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6afde3e91f451b146add7e364a3c308959d4eff2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54237612"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59028812"
 ---
 # <a name="nameditem-resource-type"></a>NamedItem 资源类型
 

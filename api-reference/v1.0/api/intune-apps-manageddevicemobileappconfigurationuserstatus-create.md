@@ -2,15 +2,15 @@
 title: 创建 managedDeviceMobileAppConfigurationUserStatus
 description: 创建新的 managedDeviceMobileAppConfigurationUserStatus 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b983af0ee6d8d71395529aea9018c95b94655f59833bec6c6740a38c832650ea
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 807b7a2fee76a45ec4058f425604d24aa6cee38c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54175915"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59073735"
 ---
 # <a name="create-manageddevicemobileappconfigurationuserstatus"></a>创建 managedDeviceMobileAppConfigurationUserStatus
 

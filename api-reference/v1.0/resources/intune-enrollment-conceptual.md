@@ -1,15 +1,15 @@
 ---
 title: 使用 Intune 注册公司设备 - Microsoft Graph API
-description: 列出为租户Graph注册设备的适用于 Intune (REST) 的 Microsoft Graph API。
+description: 列出为Graph组织注册设备的适用于 Intune (REST) 的 Microsoft 应用 API。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: 35fd75cd054bace77f1559670e667f40f09dd82bdfad9e52196228ae135fde95
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4314d3f027a913d13ea6fdd6717df7dcf488f3b9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54169499"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59148268"
 ---
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>使用 Intune 注册企业拥有的设备
 

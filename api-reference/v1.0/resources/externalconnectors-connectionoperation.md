@@ -2,15 +2,15 @@
 title: connectionOperation 资源类型
 description: 描述创建连接架构的异步请求Microsoft 搜索状态。
 author: mecampos
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 7cf9310eef057bbd4bcda57273089f05a24501986c90b6bffbc072d39932cac2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: dac175f73b517e3f96c6d5e03ce747d32b2b8f64
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54121282"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123459"
 ---
 # <a name="connectionoperation-resource-type"></a>connectionOperation 资源类型
 
@@ -18,12 +18,12 @@ ms.locfileid: "54121282"
 
 
 
-描述创建连接架构的异步Microsoft 搜索[状态](externalconnectors-schema.md)。
+描述创建连接架构的异步Microsoft 搜索[的状态](externalconnectors-schema.md)。
 
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[获取 connectionOperation](../api/externalconnectors-connectionoperation-get.md)|[connectionOperation](../resources/externalconnectors-connectionoperation.md)|读取 [connectionOperation](../resources/externalconnectors-connectionoperation.md) 对象的属性和关系。|
+|[获取 connectionOperation](../api/externalconnectors-connectionoperation-get.md)|[connectionOperation](../resources/externalconnectors-connectionoperation.md)|读取 [connectionOperation 对象的属性和](../resources/externalconnectors-connectionoperation.md) 关系。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|

@@ -2,15 +2,15 @@
 title: eBookInstallSummary 资源类型
 description: 包含某个设备的书籍安装摘要的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: db83e7fd921715e25e2ae23fa3bb43f43d2dcc51ed22eba11d316842be73fed2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 31c93f68038ed13a80f29c22ff8e0c2a22d0ad39
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54135230"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021629"
 ---
 # <a name="ebookinstallsummary-resource-type"></a>eBookInstallSummary 资源类型
 

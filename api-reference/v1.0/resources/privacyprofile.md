@@ -1,16 +1,16 @@
 ---
 title: privacyProfile 资源类型
 description: 表示公司的隐私配置文件，其中包括隐私声明 URL 和与隐私声明有关的联系人。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jumaodhiss
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 027fd6b7d2fb9baeafe5a31fb125a75e2f4b25b6408fdf51e9c88a5cbc791639
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 26b4899d01f37307158220059791ff6edac8322d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54174897"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036002"
 ---
 # <a name="privacyprofile-resource-type"></a>privacyProfile 资源类型
 

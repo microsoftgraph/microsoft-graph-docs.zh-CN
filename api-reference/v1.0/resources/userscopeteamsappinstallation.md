@@ -2,21 +2,21 @@
 title: userScopeTeamsAppInstallation 资源类型
 description: 表示安装在用户个人作用域中的 teamsApp。
 author: AkJo
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 46532e7808e30359c82448287fcdbcf0dd87a75421fdff7012e77792f02d0212
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e0ebe4544d419c7cdf4ea72c79b2e76fc231d004
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54211822"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136255"
 ---
 # <a name="userscopeteamsappinstallation-resource-type"></a>userScopeTeamsAppInstallation 资源类型
 
 命名空间：microsoft.graph
 
-表示[安装在](teamsapp.md)用户的个人作用域中的[teamsApp。](user.md) 作为应用一部分的任何机器人都将成为将应用添加到的用户个人作用域的一部分。
+表示[安装在](teamsapp.md)用户的个人作用域中的[teamsApp。](user.md) 作为应用一部分的任何机器人都将成为应用添加到的用户个人作用域的一部分。
 此类型继承自 [teamsAppInstallation](teamsappinstallation.md)。
 
 > [!NOTE]
@@ -29,7 +29,7 @@ ms.locfileid: "54211822"
 |[列出为用户安装的应用](../api/userteamwork-list-installedapps.md)| [userScopeTeamsAppInstallation](userscopeteamsappinstallation.md) 集合 | 列出在用户的个人范围内安装的应用。 |
 |[获取为用户安装的应用](../api/userteamwork-get-installedapps.md)| [userScopeTeamsAppInstallation](userscopeteamsappinstallation.md) | 列出在用户的个人范围内安装的指定应用。 |
 |[为用户添加应用](../api/userteamwork-post-installedapps.md) | 无 | 添加 (在) 个人范围内安装应用。 |
-|[为用户删除应用](../api/userteamwork-delete-installedapps.md) | 无 | 删除 (用户) 范围内卸载应用。 |
+|[为用户删除应用](../api/userteamwork-delete-installedapps.md) | 无 | 删除 () 用户的个人范围内卸载应用。 |
 |[升级为用户安装的应用](../api/userteamwork-teamsappinstallation-upgrade.md) | 无 | 升级到安装在用户个人作用域中的应用的最新版本。|
 |[获取用户和应用之间的聊天](../api/userscopeteamsappinstallation-get-chat.md) | [聊天](chat.md) | 列出用户与应用之间的一对一聊天。 |
 
@@ -37,7 +37,7 @@ ms.locfileid: "54211822"
 
 | 属性            | 类型     | 说明 |
 |:------------------- |:-------- |:----------- |
-| id                  | string   | 唯一 ID (应用TEAMS ID) 。 |
+| id                  | string   | 唯一 ID (应用Teams ID) 。 |
 
 ## <a name="relationships"></a>关系
 
@@ -45,7 +45,7 @@ ms.locfileid: "54211822"
 |:---------------|:--------|:----------|
 |teamsApp|[teamsApp](teamsapp.md)| 安装的应用。 |
 |teamsAppDefinition|[teamsAppDefinition](teamsappdefinition.md)| 此版本的应用的详细信息。 |
-|聊天 |[聊天](chat.md) | 用户与应用之间的Teams聊天。 | 
+|聊天 |[聊天](chat.md) | 用户与应用之间的Teams。 | 
 
 ## <a name="json-representation"></a>JSON 表示形式
 

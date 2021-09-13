@@ -2,15 +2,15 @@
 title: accessReviewInstance：stop
 description: 停止当前处于活动状态的 accessReviewInstance。
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 08b9974b1b496a3ff50048d72dbb65659758658e
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 475db1e293a14881605e9e28a6596bbd53bd6705
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53211031"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59008564"
 ---
 # <a name="accessreviewinstance-stop"></a>accessReviewInstance：stop
 命名空间：microsoft.graph

@@ -2,15 +2,15 @@
 title: 团队资源类型
 description: 'Microsoft Teams 团队是频道的集合。 '
 author: AkJo
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: a18ba0d4916028c87a0d4708bcc2c8a6339e22f7a1c012dc1e46e3177ef4f154
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cbe965d4a567aaa6464df704c3086d5f793a2558
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54146338"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134386"
 ---
 # <a name="team-resource-type"></a>团队资源类型
 

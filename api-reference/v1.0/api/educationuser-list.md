@@ -2,15 +2,15 @@
 title: 列出 educationUser
 description: 获取 educationUser 对象及其属性的列表。
 author: mlafleur
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 6cf915d28369314d960ee4b868bafd2852819c7f
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: 85e4ee78ebc0859f6e641f6bd51e573751189272
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52475373"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59114529"
 ---
 # <a name="list-educationusers"></a>列出 educationUsers
 
@@ -18,7 +18,7 @@ ms.locfileid: "52475373"
 
 获取 [educationUser 对象](../resources/educationuser.md) 及其属性的列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

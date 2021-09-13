@@ -2,15 +2,15 @@
 title: educationAssignmentDefaults 资源类型
 description: 指定在类中创建的新作业所遵守的类级别默认值
 author: sharad-sharma-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d9b9b624030129e85b2d89dc05db605af3cae7a4de72d019b41144a9453a23d8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7a21494ca3bd039e0ac5ac28c5f02be3c802dea0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54230765"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021713"
 ---
 # <a name="educationassignmentdefaults-resource-type"></a>educationAssignmentDefaults 资源类型
 

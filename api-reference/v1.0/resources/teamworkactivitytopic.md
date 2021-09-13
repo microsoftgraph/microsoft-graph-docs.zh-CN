@@ -2,15 +2,15 @@
 title: teamworkActivityTopic 资源类型
 description: 表示活动源通知的主题。
 author: eddie-lee-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: aad39f0f28ada3c0b300c5b4fd580a3d2f1b722ed6f6e77741213e87bd569483
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 721553521d202788f894381650ccf8e45c364805
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54231444"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59122955"
 ---
 # <a name="teamworkactivitytopic-resource-type"></a>teamworkActivityTopic 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "54231444"
 |:---|:---|:---|
 |source|teamworkActivityTopicSource|源的类型。 可取值为：`entityUrl`、`text`。 对于支持的 Microsoft Graph URL，请使用 `entityUrl` 。 对于自定义文本，请使用 `text` 。|
 |value|String|主题值。 如果源 **属性的值为** `entityUrl` ，则它必须是 Microsoft Graph URL。 如果模块是 `text` ，则它必须是纯文本值。|
-|webUrl|String|用户在选择通知时单击的链接。 当 **source** 为 `entityUrl` 时可选;当 **source** 为 时为 必需 `text` 。|
+|WebUrl|String|用户在选择通知时单击的链接。 当 **source** 为 `entityUrl` 时可选;当 **source** 为 时为 必需 `text` 。|
 
 ## <a name="relationships"></a>关系
 无。

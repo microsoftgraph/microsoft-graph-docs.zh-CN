@@ -2,14 +2,14 @@
 title: 使用 Microsoft Graph 获取 OneNote 内容和结构
 description: " Microsoft 365 中的企业笔记本"
 author: jewan-microsoft
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: onenote
-ms.openlocfilehash: 176fb6ee82f73c8cc6dc703f55bb68b388dcb1aa1dac3bea01410a7d19ccd099
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 61fe8e4f202a5b921818eca1dd4be7e753d7f8fa
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54171950"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129710"
 ---
 # <a name="get-onenote-content-and-structure-with-microsoft-graph"></a>使用 Microsoft Graph 获取 OneNote 内容和结构
 

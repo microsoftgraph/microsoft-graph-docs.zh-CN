@@ -2,15 +2,15 @@
 title: 获取 fido2AuthenticationMethod
 description: 读取 fido2AuthenticationMethod 对象的属性和关系。
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: f49eae82a1c516949bab2dd2a375738ffc2e9fddc7b78c26ddd3ec5dff8b9179
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2f80cdd2c348723ad4a39d083f12fb95c2c531b6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54130924"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046020"
 ---
 # <a name="get-fido2authenticationmethod"></a>获取 fido2AuthenticationMethod
 命名空间：microsoft.graph

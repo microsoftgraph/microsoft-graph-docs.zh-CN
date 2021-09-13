@@ -2,15 +2,15 @@
 title: 更新 educationSchool
 description: 更新 educationSchool 对象的属性。
 author: mlafleur
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e6c53b2b9b5934559a352378ee5316618ae69abe
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: cae56a4aef0111dd12f2968a7c1b8f0f7ed52f7d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231869"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046181"
 ---
 # <a name="update-educationschool"></a>更新 educationSchool
 

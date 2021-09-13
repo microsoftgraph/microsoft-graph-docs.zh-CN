@@ -1,18 +1,18 @@
 ---
-title: 获取成员组
+title: directoryObject： getMemberGroups
 description: 返回指定的 user、group 或 directory 对象所属的所有组。此函数是可传递的。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 399868d281b5e4a6eac7ead0ed31209236a26f7f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e2ccb4e0810199cc95510c632b97ed21e86fcd0e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051485"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147498"
 ---
-# <a name="get-member-groups"></a>获取成员组
+# <a name="directoryobject-getmembergroups"></a>directoryObject： getMemberGroups
 
 命名空间：microsoft.graph
 
@@ -28,10 +28,13 @@ ms.locfileid: "52051485"
 |应用程序 | User.Read.All 和 GroupMember.Read.All、User.Read.All 和 Group.Read.All、Directory.Read.All |
 
 使用以下方案指南帮助确定要使用哪些权限类型：
-- 使用 User.Read 和 GroupMember.Read.All 或 User.Read 和 Group.Read.All 权限获取登录用户的组成员身份。
-- 使用 User.ReadBasic.All 和 GroupMember.Read.All、User.Read.All 和 GroupMember.Read.All、User.ReadBasic.All 和 Group.Read.All 或 User.Read.All 和 Group.Read.All 权限获取任何用户的组成员身份。
-- 使用 GroupMember.Read.All 或 Group.Read.All 权限获取组的组成员身份。
-- 使用 Directory.Read.All 权限获取目录对象的组成员身份。
+
+| 方案 | 使用权限 |
+|:-|:-|
+| 获取已登录用户的组成员身份 | 使用以下权限集之一： <br/> <li> **User.Read** 和 **GroupMember.Read.All** <li>**User.Read** 和 **Group.Read.All** |
+| 获取任何用户的组成员身份 | 使用以下权限集之一： <br/> <li> **User.ReadBasic.All** 和 **GroupMember.Read.All** <li>**User.Read.All** 和 **GroupMember.Read.All** <li>**User.ReadBasic.All** 和 **Group.Read.All** <li>**User.Read.All** 和 **Group.Read.All** |
+| 获取组的组成员身份 | 使用 **GroupMember.Read.All 或** **Group.Read.All** 权限。 |
+| 获取目录对象的组成员身份 | 使用 **Directory.Read.All** 权限。 |
 
 
 ## <a name="http-request"></a>HTTP 请求
@@ -53,7 +56,7 @@ POST /directoryObjects/{id}/getMemberGroups
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|Boolean| **true** 指定仅应返回包含实体的安全组；**false** 指定应返回包含实体的所有组和目录角色。**注意**：如果参数为 **true**，只能对一位用户调用此函数。 |
+|securityEnabledOnly|Boolean| `true` 指定仅返回实体是成员的安全组; `false` 指定应返回实体是成员的所有组和目录角色。 **注意**：如果参数为 ，则只能在用户上调用 函数 `true` 。 |
 
 ## <a name="response"></a>响应
 
@@ -97,7 +100,7 @@ Content-type: application/json
 
 
 ##### <a name="response"></a>响应
-注意：为了提高可读性，可能缩短了此处显示的响应对象。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

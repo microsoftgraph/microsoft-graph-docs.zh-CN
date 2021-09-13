@@ -2,15 +2,15 @@
 title: complianceManagementPartner 资源类型
 description: 所有平台的合规性管理合作伙伴
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9e3fb791b1f9e71dd2ac55ff2d528b57770982ceba917540af2c18c7c2a2bdc6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 08bfcc9b0d2d36b2948abe4348ca1bea62faa9a4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54192325"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59148233"
 ---
 # <a name="compliancemanagementpartner-resource-type"></a>complianceManagementPartner 资源类型
 

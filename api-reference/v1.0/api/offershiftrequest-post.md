@@ -1,16 +1,16 @@
 ---
 title: 创建 offerShiftRequest
 description: 创建 offerShiftRequest 的实例。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3d6cc8615d35190376a409af5efbd794a1b55f2d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: de073275c73fd3a40aea6dda0814a9ac3584f748
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049490"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056289"
 ---
 # <a name="create-offershiftrequest"></a>创建 offerShiftRequest
 

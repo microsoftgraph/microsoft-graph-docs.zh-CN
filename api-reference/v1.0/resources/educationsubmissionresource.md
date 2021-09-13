@@ -2,15 +2,15 @@
 title: educationSubmissionResource 资源类型
 description: 用于提交的资源的包装器。
 author: sharad-sharma-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: b24f1ea91691dd66d66848abcdb0069e9a25e4865f18f05b7682d2fb4a8f3d88
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 632e2d746e4204e2c3c64f429f443ff40ed5a69f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54141747"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118734"
 ---
 # <a name="educationsubmissionresource-resource-type"></a>educationSubmissionResource 资源类型
 

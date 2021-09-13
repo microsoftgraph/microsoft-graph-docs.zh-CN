@@ -2,15 +2,15 @@
 title: 创建 todoTask
 description: 在指定的 todoTaskList 中创建新的任务对象。
 author: avijityadav
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2fcca012cfb1b7e569296cbb892e1f523f7f257a
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: e1f183c1097fb0d8ee53147556c095d1fb4a79e4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873526"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104626"
 ---
 # <a name="create-todotask"></a>创建 todoTask
 命名空间：microsoft.graph
@@ -46,7 +46,7 @@ POST /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [todoTask](../resources/todotask.md) 对象的 JSON 表示形式。
 
-下表显示创建 [todoTask](../resources/todotask.md)时所需的属性。
+下表显示创建 [todoTask 时所需的属性](../resources/todotask.md)。
 
 |属性|类型|说明|
 |:---|:---|:---|
@@ -58,7 +58,7 @@ POST /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks
 |isReminderOn|Boolean|如果设置警报以提醒用户有任务，则设置为 true。|
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|任务的定期模式。|
 |reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|提醒警报发出任务发生提醒的日期和时间。|
-|status|taskStatus|指示任务的状态或进度。 可取值为：`notStarted`、`inProgress`、`completed`、`waitingOnOthers`、`deferred`。|
+|状态|任务状态|指示任务的状态或进度。 可取值为：`notStarted`、`inProgress`、`completed`、`waitingOnOthers`、`deferred`。|
 |title|String|任务的简要说明。|
 |createdDateTime|DateTimeOffset|任务的创建日期和时间。 默认情况下，它采用 UTC 格式。 你可以在请求标头中提供自定义时区。 属性值使用 ISO 8601 格式。 例如，2020 年 1 月 1 日午夜 UTC 如下所示："2020-01-01T00：00：00Z"。|
 |lastModifiedDateTime|DateTimeOffset|上次修改任务的日期和时间。 默认情况下，它采用 UTC 格式。 你可以在请求标头中提供自定义时区。 属性值使用 ISO 8601 格式，并始终处于 UTC 时间。 例如，2020 年 1 月 1 日午夜 UTC 如下所示："2020-01-01T00：00：00Z"。|
@@ -68,12 +68,12 @@ POST /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `201 Created` 正文中返回响应代码和 [todoTask](../resources/todotask.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [todoTask](../resources/todotask.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
-以下示例在指定的任务列表中创建 **一个 todoTask，** 并包含 [linkedResource。](../resources/linkedresource.md)
+以下示例在指定的任务列表中创建 **一个 todoTask，** 并包含 [linkedResource](../resources/linkedresource.md)。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

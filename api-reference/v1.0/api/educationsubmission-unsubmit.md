@@ -2,15 +2,15 @@
 title: educationSubmission：未提交
 description: 指示学生想要在作业提交后处理作业提交。
 author: sharad-sharma-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 4ddad6241c4e6c7820db143e93064b4570d68e49
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: a641ea0f76f7a1ad7a7689caa7803da40759727d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52993270"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074386"
 ---
 # <a name="educationsubmission-unsubmit"></a>educationSubmission：未提交
 

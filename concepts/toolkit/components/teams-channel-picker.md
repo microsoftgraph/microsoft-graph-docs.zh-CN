@@ -1,14 +1,14 @@
 ---
 title: Microsoft TeamsMicrosoft 服务中的频道选取器Graph Toolkit
-description: 可以使用 mgt-teams-channel-picker 从 Microsoft 网站搜索与用户关联的Graph。
-localization_priority: Normal
+description: 可以使用 mgt-teams-channel-picker从 Microsoft 搜索与用户关联的频道和Graph。
+ms.localizationpriority: medium
 author: vogtn
-ms.openlocfilehash: d3e35e5ee45943f5d1e81e1cbd96a4e3497dbf790b8feb7b082bb68c5f6281f2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5e44218da3f2ec1e0e2b36cfd9137bb91e189b6d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54251601"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129661"
 ---
 # <a name="microsoft-teams-channel-picker-component-in-the-microsoft-graph-toolkit"></a>Microsoft TeamsMicrosoft 服务中的频道选取器Graph Toolkit
 
@@ -36,7 +36,7 @@ console.log(channelPicker.selectedItem.team);
 
 使用 `selectChannelById(channelId: string)` 方法以编程方式选择通道。
 
-> **注意：Teams** 文件选取器仅支持单通道选择。
+> **注意：Teams** 选取器仅支持单通道选择。
 
 ```javascript
 const channelPicker = document.querySelector('mgt-teams-channel-picker');
@@ -78,7 +78,7 @@ mgt-teams-channel-picker {
 
 ## <a name="events"></a>活动
 
-事件 | 何时发出 | 自定义数据 | Cancelable | 气泡 | 使用自定义模板
+Event | 何时发出 | 自定义数据 | Cancelable | 气泡 | 使用自定义模板
 ------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
 `selectionChanged` | 在用户更改频道选择时触发 | 当前选择的项目作为 `{ channel: ` [频道](/graph/api/resources/channel) `, team: ` [团队](/graph/api/resources/team)`}` | 否 | 否 | 是
 
@@ -90,10 +90,10 @@ mgt-teams-channel-picker {
 
 | 数据类型 | 数据上下文 | 说明 |
 | --- | --- | --- |
-| loading | null：无数据 | 向 Microsoft 请求时用于呈现文件选取器Graph模板。 |
+| loading | null：无数据 | 向 Microsoft 提交请求时用于呈现文件选取器Graph模板。 |
 | error | null：无数据| 当用户搜索未返回任何用户时所使用的模板。 |
 
-以下示例演示如何使用 `error` 模板。
+以下示例演示如何使用该 `error` 模板。
 
 ```html
 <mgt-teams-channel-picker>
@@ -112,7 +112,7 @@ mgt-teams-channel-picker {
 | [/me/joinedTeams](/graph/api/user-list-joinedteams)                    | User.Read.All        |
 | [/teams/${id}/channels](/graph/api/channel-list) | Group.Read.All        |
 
-在版本 2.2 中，所需的权限已更新为限制较少的基于Teams权限。 若要避免发生意外更改，您需要通过全局配置选择加入新权限。
+在版本 2.2 中，所需的权限已更新为限制较Teams权限。 若要避免发生意外更改，您需要通过全局配置选择加入新权限。
 
 ```ts
 import {MgtTeamsChannelPicker} from "@microsoft/mgt-components";

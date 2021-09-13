@@ -1,16 +1,16 @@
 ---
 title: searchHit 资源类型
 description: searchHit 实体的说明
-localization_priority: Normal
+ms.localizationpriority: medium
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 3cc9d069e91dd8c8d51ba6b010c2c3ccc9dad01ac01695d6782e99bffea973e3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e64d4d3a2d7599df3ce6674abab352ab474ae18f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54138327"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59137544"
 ---
 # <a name="searchhit-resource-type"></a>searchHit 资源类型
 

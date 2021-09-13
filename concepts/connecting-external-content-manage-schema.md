@@ -1,16 +1,16 @@
 ---
 title: Microsoft Graph 连接的注册架构
 description: 了解如何使用 Microsoft Graph 为 Microsoft Graph 连接注册架构
-localization_priority: Priority
+ms.localizationpriority: high
 author: mecampos
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: e52c6550264156bd7f44c38802d9c4d2eb3ed9dc7db643579dc96a27a20a5475
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2511ebd1b5c37910316464f5b27a1a795478000a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54134872"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139252"
 ---
 <!---<author of this doc: rsamai>--->
 

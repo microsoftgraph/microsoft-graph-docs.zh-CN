@@ -2,15 +2,15 @@
 title: iosDeviceFeaturesConfiguration 资源类型
 description: iOS 设备功能配置的配置文件。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 031854e74bb7176cd818327011155d852584cc8ce32b3b87c8aa0be43e89db89
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c3242f53846241c9d46df54228cd63edddbc9d48
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54231661"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118360"
 ---
 # <a name="iosdevicefeaturesconfiguration-resource-type"></a>iosDeviceFeaturesConfiguration 资源类型
 

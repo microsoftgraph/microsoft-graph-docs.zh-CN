@@ -1,16 +1,16 @@
 ---
 title: 删除 homeRealmDiscoveryPolicy
 description: 从 servicePrincipal 中删除 homeRealmDiscoveryPolicy。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: hpsin
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: a4adb9428f9d70b98973707a014439042bdcf142
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3ff07305d3cf8030fec6ad71dd1f541a90bcd224
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52038892"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110139"
 ---
 # <a name="remove-homerealmdiscoverypolicy"></a>删除 homeRealmDiscoveryPolicy
 

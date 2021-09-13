@@ -1,16 +1,16 @@
 ---
 title: teleconferenceDeviceVideoQuality 资源类型
 description: 表示视频电话会议设备视频质量数据。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 30c9c8f383a5d4b41b5c2355a5b2da910d560282aa4e450fa462313d4cb65b34
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: aabb72c315d08068c0450777ca914770171c75d6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54231423"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128058"
 ---
 # <a name="teleconferencedevicevideoquality-resource-type"></a>teleconferenceDeviceVideoQuality 资源类型
 

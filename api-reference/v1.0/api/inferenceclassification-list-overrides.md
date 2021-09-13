@@ -1,16 +1,16 @@
 ---
 title: 列出替代
 description: 获取用户设置为始终以特定方式对来自特定发件人的邮件进行分类的替代。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: fb6cd4c87c5ee06e0d9849bdaa13e62b616c7d3c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 1c6ebcf444af1b49f7543ad657e17118ed221de6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051373"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045577"
 ---
 # <a name="list-overrides"></a>列出替代
 
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/v1.0/me/inferenceClassification/overrides
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -2,15 +2,15 @@
 title: 获取联系人
 description: 检索 contact 对象的属性和关系。
 author: kevinbellinger
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e527bac4c2fc1f92eba6f558b80437e876aac854
-ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
+ms.openlocfilehash: d1351e925028c9ce620347cb27c9bb82957cc59e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58384026"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147785"
 ---
 # <a name="get-contact"></a>获取联系人
 
@@ -21,7 +21,7 @@ ms.locfileid: "58384026"
 在两种方案中，应用可以获取其他用户的联系人文件夹中的联系人：
 
 * 如果该应用程序具有应用程序权限，或者
-* 如果应用程序具有来自某个用户的相应委派[权限](#permissions)，而另一个用户与该用户共享了联系人文件夹，或者已为该用户授予委派的访问权限。 请参阅[详细信息和示例](/graph/outlook-get-shared-contacts-folders)。
+* 如果应用具有来自某个用户的相应 [委派](#permissions) 权限，而另一个用户与该用户共享了联系人文件夹，或者已为该用户授予委派的访问权限。请参阅 [详细信息和示例](/graph/outlook-get-shared-contacts-folders)。
 
 
 ## <a name="permissions"></a>权限
@@ -56,7 +56,7 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contac
 |$expand|string|要在响应中扩展和包括的关系的列表（以逗号分隔）。请参阅支持的名称的 [contact](../resources/contact.md) 对象的关系表。 |
 |$select|string|要在响应中包括的属性的列表（以逗号分隔）。|
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |

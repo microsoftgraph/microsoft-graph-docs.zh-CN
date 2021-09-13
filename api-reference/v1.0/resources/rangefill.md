@@ -2,15 +2,15 @@
 title: RangeFill 资源类型
 description: 表示 range 对象的背景。
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: c1485d3465818b9daccf039c13c21c7557206025886747110813e5b3834e6504
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c601b569db032c999ecc88300ca98b698500ca8f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54159853"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143774"
 ---
 # <a name="rangefill-resource-type"></a>RangeFill 资源类型
 

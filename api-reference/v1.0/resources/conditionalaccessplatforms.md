@@ -1,16 +1,16 @@
 ---
 title: conditionalAccessPlatforms 资源类型
 description: 策略作用域中包含和排除的平台。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 8ca88fb9fed1897659e1b6c126a22444ca652963f29bc2b208d3a259e386eabe
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9f187e67edb2554151e16f418282401835e7cd89
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54202516"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59078915"
 ---
 # <a name="conditionalaccessplatforms-resource-type"></a>conditionalAccessPlatforms 资源类型
 

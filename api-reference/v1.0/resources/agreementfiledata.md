@@ -1,16 +1,16 @@
 ---
 title: agreementFileData 资源类型
 description: 表示Azure Active Directory (Azure AD) 使用条款协议文件。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 8572dac857f02661bcebb84ee3269939caf324ce12593091e8ee995e390abd07
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e3e09d6de89caa6638e5ce6f163414c5a1b99e30
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54216957"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59099103"
 ---
 # <a name="agreementfiledata-resource-type"></a>agreementFileData 资源类型
 

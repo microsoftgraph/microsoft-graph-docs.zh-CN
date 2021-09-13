@@ -2,15 +2,15 @@
 title: webBrowserCookieSettings 枚举类型
 description: Web 浏览器 Cookie 设置。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 748bf63be61957ddbd9d3ac1b88813d88e3a07d94fbca2edfb6be67f9415e998
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 95479fe0ba1dd32993d5f5806508535430f4642f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54184660"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072195"
 ---
 # <a name="webbrowsercookiesettings-enum-type"></a>webBrowserCookieSettings 枚举类型
 

@@ -1,14 +1,14 @@
 ---
 title: SharePoint 提供程序
 description: 使用 SharePoint Web 部件中的 SharePoint 提供程序为组件提供 Microsoft Graph访问权限。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: nmetulev
-ms.openlocfilehash: 9b0f126426b2506ad5686449088393cd1f5c15d3aefe4102996ebdad3539a62c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f1906598eaa0218a9adb7749ecf9276b105f437b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54194936"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59126532"
 ---
 # <a name="sharepoint-provider"></a>SharePoint 提供程序
 
@@ -44,17 +44,17 @@ public render(): void {
 
 ## <a name="sample"></a>示例
 
-若要详细了解如何初始化 SharePoint 提供程序，请参阅生成SharePoint [Web](../get-started/build-a-sharepoint-web-part.md)部件入门指南。
+若要详细了解如何初始化 SharePoint 提供程序，请参阅生成 SharePoint [Web 部件](../get-started/build-a-sharepoint-web-part.md)入门指南。
 
 ## <a name="test-in-the-workbench"></a>在工作台中测试
 
 如果你刚开始使用 web SharePoint，可以按照生成[首个 Web](/sharepoint/dev/spfx/web-parts/get-started/build-a-hello-world-web-part)部件指南。
 
-创建 Web 部件并准备好使用这些组件后，你需要确保 Web 部件具有访问 Microsoft Graph。 有关详细信息，请参阅使用[microsoft Graph中的SharePoint 框架。](/sharepoint/dev/spfx/use-aad-tutorial)
+创建 Web 部件并准备好使用这些组件后，你需要确保 Web 部件具有访问 Microsoft Graph。 有关详细信息，请参阅使用[microsoft Graph中的 SharePoint 框架。](/sharepoint/dev/spfx/use-aad-tutorial)
 
 简而言之，向 中添加正确的权限非常重要 `package-solution.json` 。 你需要将 Web 部件包上传到SharePoint管理员批准请求的权限。
 
 >[!TIP]
 >构建[SharePoint Web](../get-started/build-a-sharepoint-web-part.md#configure-permissions)部件入门指南提供了配置和批准权限的分步说明。
 
->**注意** ：如果不确定要添加哪些权限，每个组件的文档将包含它所需的全部权限。
+>**注意** ：如果你不确定要添加哪些权限，每个组件的文档将包含它所需的全部权限。

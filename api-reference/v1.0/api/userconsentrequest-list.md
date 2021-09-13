@@ -2,15 +2,15 @@
 title: 列出 userConsentRequests
 description: 检索 userConsentRequest 对象及其属性。
 author: psignoret
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: dca8bb6e38e3bb828327888dedfe86f54565dcb9
-ms.sourcegitcommit: ad1e4d758d4fe6025987c1c3528ce644edb27062
+ms.openlocfilehash: f4ca431f0cb12361722b690dfdb1a5e6619e18aa
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51698082"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109568"
 ---
 # <a name="list-userconsentrequests"></a>列出 userConsentRequests
 
@@ -26,7 +26,7 @@ ms.locfileid: "51698082"
 |:---|:---|
 |委派（工作或学校帐户）|ConsentRequest.Read.All、ConsentRequest.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|ConsentRequest.Read.All、ConsentRequest.ReadWrite.All|
+|应用程序|ConsentRequest.Read.All、ConsentRequest.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 

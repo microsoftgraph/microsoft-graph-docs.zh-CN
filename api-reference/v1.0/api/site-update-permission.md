@@ -2,22 +2,22 @@
 title: 更新权限
 description: 更新网站上的权限对象。
 author: BarrySh
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 6908e6d8667157de28a678f657827210abcf320d
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 72fb7f6c2356805b9b7e6e6575e9ca3b94672828
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473610"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118889"
 ---
 # <a name="update-permission"></a>更新权限
 命名空间：microsoft.graph
 
 更新 [网站上](../resources/permission.md) 的权限对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）

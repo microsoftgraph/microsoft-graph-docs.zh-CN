@@ -1,16 +1,16 @@
 ---
 title: 'workbookRange: resizedRange'
 description: 获取与当前范围对象类似的范围对象，但其右下角可通过一定数量的行和列进行展开（或合拢）。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 9a238749a52b13190891df6a51c0f04da58cfafce62c15a5a14db9b16b1e5e98
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 96c5e0e58a70b6cbca16c001e8396b62b872889e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54192619"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104381"
 ---
 # <a name="workbookrange-resizedrange"></a>workbookRange: resizedRange
 
@@ -43,7 +43,7 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id}/range/resizedRange(de
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer {token}。必需。 |
+| Authorization  | 持有者{令牌}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ## <a name="request-body"></a>请求正文

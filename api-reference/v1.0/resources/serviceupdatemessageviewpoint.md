@@ -2,15 +2,15 @@
 title: serviceUpdateMessageViewpoint 资源类型
 description: 表示 serviceUpdateMessage 的用户视图点数据。"
 author: payiAzure
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 57d5bf64069d0799514eafc78fbfb5d221ccf82b
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 080d739d2111d383c5e5d7cf8ec3ec510e1cb5ba
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58250898"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59108763"
 ---
 # <a name="serviceupdatemessageviewpoint-resource-type"></a>serviceUpdateMessageViewpoint 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "58250898"
 |属性|类型|说明|
 |:---|:---|:---|
 |isArchived|Boolean|指示用户是否已存档邮件。|
-|isFavorited|布尔值|指示用户是否将邮件标记为收藏夹。|
+|isFavorited|Boolean|指示用户是否将邮件标记为收藏夹。|
 |isRead|Boolean|指示用户是否阅读邮件。|
 
 ## <a name="relationships"></a>关系

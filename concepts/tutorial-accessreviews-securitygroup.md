@@ -2,18 +2,18 @@
 title: 教程：使用访问评审 API 查看对安全组的访问权限
 description: 使用访问评审 API 查看对安全组的访问权限
 author: FaithOmbongi
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
-ms.openlocfilehash: a2237efa8be245519f9494473460ea3ef1a4875b1a3a5b745b687ebe430c880d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6ac5bdc6432c372120ddc3725bfe2143fb435104
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54237355"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143487"
 ---
 # <a name="tutorial-use-the-access-reviews-api-to-review-access-to-your-security-groups"></a>教程：使用访问评审 API 查看对安全组的访问权限
 
-在本教程中，你将使用 Graph 资源管理器查看对租户中安全组的访问权限。
+在本教程中，你将使用Graph资源管理器查看对租户中安全组的访问权限。
 
 可以使用浏览器Graph Postman 尝试和测试访问评审 API 调用，然后再将它们自动化到脚本或应用中。 这通过帮助您正确定义和验证查询而无需重复重新编译应用程序来节省时间。
 
@@ -24,7 +24,7 @@ ms.locfileid: "54237355"
 
 若要完成本教程，需要以下资源和权限：
 
-+ 启用许可证或 EMS E5 Azure AD Premium P2正常工作的 Azure AD 租户。
++ Azure AD 租户（已启用Azure AD Premium P2 EMS E5 许可证）。
 + 以用户[Graph](https://developer.microsoft.com/graph/graph-explorer)登录资源管理器全局管理员角色。
   + [可选]启动新的 **隐身** 或 **InPrivate** 浏览器会话或在匿名浏览器中启动会话。 你将在本教程的稍后部分登录。
 + 以下委派权限 `AccessReview.ReadWrite.All` `Group.ReadWrite.All` ：、。
@@ -39,7 +39,7 @@ ms.locfileid: "54237355"
    + AccessReview (3) ，展开，然后选择 **AccessReview.ReadWrite.All**。
    + 将 (2) ，展开，然后选择 **Group.ReadWrite.All。**
   
-    选择 **"** 同意"，然后在弹出窗口中选择"代表你的组织同意"，然后选择"接受"接受权限同意。
+    选择 **"** 同意"，然后在弹出窗口中，选择"代表你的组织同意"，然后选择"接受"接受权限同意。
    
    ![同意 Microsoft Graph权限](../images/../concepts/images/tutorial-accessreviews-api/consentpermissions.png)
    <!--:::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/consentpermissions_M365.png" alt-text="Consent to the Microsoft Graph permissions":::-->
@@ -153,7 +153,7 @@ Content-type: application/json
 
 使用下列设置为安全组的成员创建访问评审：
 + 这是一个自我审阅的访问评审。 在这种情况下，被审阅的用户将自行证明其访问组的需求。
-+ 这是一次访问评审。 在这种情况下，授予访问权限后，用户无需在访问评审期间再次自证明。
++ 这是一次访问评审。 在这种情况下，授予访问权限后，用户无需在访问评审期间再次自我证明。
 + 审阅范围仅限于构建 **安全组 的成员**。
 
 ### <a name="request"></a>请求
@@ -161,9 +161,9 @@ Content-type: application/json
 在此调用中，替换以下内容：
 + `825f1b5e-6fb2-4d9a-b393-d491101acc0c`具有 **"生成****安全组"的 ID。**
 + 作用域指定将审阅应用于"生成安全"组 **的所有组的成员**。 有关配置范围的更多选项，请参阅另 [请参阅部分](#see-also) 。
-+ **startDate** 的值，其当前日期和 **endDate** 值，其日期为从开始日期起一年。
++ **startDate** 的值（具有今天的日期）和 **endDate** 值（开始日期为一年）。
 
-如果未能指定 **reviewers** 属性的值，则此访问评审被配置为具有审阅者的成员的自我审阅。
+如果未能指定 **reviewers** 属性的值，此访问评审将配置为具有审阅者的成员进行自我审阅。
 
 <!-- {
   "blockType": "request",
@@ -422,11 +422,11 @@ Content-type: application/json
 1. 列出待处理的访问评审实例。
 2. 完成访问评审自证明过程。
 
-在隐身或 **InPrivate** 浏览模式下，或通过匿名浏览器启动新的浏览器会话，并作为构建安全组的两个成员之 **一登录**。  这样，你将不会作为用户中断当前会话，全局管理员角色。 或者，你可以中断当前会话，Graph资源管理器中注销并作为两个组的成员之一重新登录。
+在隐身或 **InPrivate** 浏览模式下，或通过匿名浏览器启动新的浏览器会话，然后以构建安全组的两个成员 **之一登录**。  这样，你将不会作为用户中断当前会话，全局管理员角色。 或者，也可以中断当前会话，Graph资源管理器中注销并作为两个组的成员之一重新登录。
 
 ### <a name="list-your-pending-access-review-instances"></a>列出待处理的访问评审实例
 
-在隐身浏览器会话和 Graph 资源管理器中，运行以下查询以列出待定访问评审实例：
+在隐身浏览器会话和浏览器Graph资源管理器中，运行以下查询以列出待定访问评审实例：
 
 #### <a name="request"></a>请求
 
@@ -556,7 +556,7 @@ Content-type: text/plain
 + [访问评审 API 参考](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true)
 + [使用 Microsoft Graph API 配置访问评审定义的范围](/graph/accessreviews-scope-concept)
 + [访问评审概述和许可证要求](/azure/active-directory/governance/access-reviews-overview)
-+ [创建对应用程序应用程序的组&评审](/azure/active-directory/governance/create-access-review)
++ [创建对应用程序组&评审](/azure/active-directory/governance/create-access-review)
 + [访问评审 API 参考](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true)
 + [创建 accessReviewScheduleDefinition](/graph/api/accessreviewscheduledefinition-create?view=graph-rest-beta&preserve-view=true)
 + [列出 accessReviewInstance](/graph/api/accessreviewinstance-list?view=graph-rest-beta&preserve-view=true)

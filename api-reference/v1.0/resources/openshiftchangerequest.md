@@ -1,16 +1,16 @@
 ---
 title: openShiftChangeRequest 资源类型
 description: 表示请求在日程安排中声明打开的班次。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 0a6f34e566caa2ff623eb3a66ebf8584b1adeb764dd1e7918bc34f1dbd8455a3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ed6769b32a26625fe82a4fd51445ad71f8d213a7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54229106"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59071978"
 ---
 # <a name="openshiftchangerequest-resource-type"></a>openShiftChangeRequest 资源类型
 

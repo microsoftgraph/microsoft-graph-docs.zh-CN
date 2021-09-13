@@ -2,15 +2,15 @@
 title: androidEnterpriseAlwaysOnVpnPackageType 枚举类型
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5df9f395f4bf5c12e08aa8aac0fced154fe2c6131d4ed715be41ad83e95f1803
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fc2db5299f41791a3e529efe89606f7154915c12
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54184604"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134806"
 ---
 # <a name="androidenterprisealwaysonvpnpackagetype-enum-type"></a>androidEnterpriseAlwaysOnVpnPackageType 枚举类型
 

@@ -2,15 +2,15 @@
 title: 列出附件
 description: 检索附加到帖子的 attachment 对象列表。
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 581080cb2177e13df8518958a1a6b312d7d7aeaa
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 51056de2d302b1128c15f1d29cdc2c506d46cc29
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053921"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085376"
 ---
 # <a name="list-attachments"></a>列出附件
 
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/v1.0/groups/1848753d-185d-4c08-a4e4-6ee40521d115
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "name": "post_get_attachments_v1",

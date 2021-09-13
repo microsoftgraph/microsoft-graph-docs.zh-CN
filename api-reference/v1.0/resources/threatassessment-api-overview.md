@@ -1,16 +1,16 @@
 ---
 title: 使用 Microsoft Graph 威胁评估 API
 description: 通过 Microsoft Graph，你的应用可获得授权访问组织的威胁评估数据。
-localization_priority: Priority
+ms.localizationpriority: high
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 0837dae4482174bb8ccab05791c61dfb17eb6c80d6e1cdc3337cdfddb6d1636b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cff55ff2e26de97fecec93a05910c5b44b26a6d2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54124022"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59055820"
 ---
 # <a name="use-the-microsoft-graph-threat-assessment-api"></a>使用 Microsoft Graph 威胁评估 API
 

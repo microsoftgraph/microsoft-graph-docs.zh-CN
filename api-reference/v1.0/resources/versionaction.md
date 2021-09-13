@@ -2,15 +2,15 @@
 author: daspek
 title: versionAction 资源类型
 description: VersionAction 对象提供有关导致新项版本的活动的信息。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: bb1061e09b78a2069b1182811573564804b25d9dfe7d1f8dced0cfb55e62e5dd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4fbeb09d0fd2f209d436578e29ae7bf1fd404c3c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54129881"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139552"
 ---
 # <a name="versionaction-resource-type"></a>versionAction 资源类型
 
