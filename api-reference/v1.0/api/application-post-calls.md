@@ -2,15 +2,15 @@
 title: 创建调用
 description: 创建新呼叫。
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 0fb4c47ecff7459fff5ee1265d37496b458f5443
-ms.sourcegitcommit: 10d9f4c2cee192bd80984d48cabba63b47c54551
+ms.openlocfilehash: 920c9c5ff59f544d46bc6fb03d86395d1ba34998
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53547550"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59008494"
 ---
 # <a name="create-call"></a>创建调用
 
@@ -534,7 +534,7 @@ Content-Type: application/json
 若要加入安排的会议，我们需要获取主题 ID、消息 ID、组织者 ID 和计划会议的租户 ID。
 此信息只能从基于 VTC 的会议 (联机会议 [API](../api/onlinemeeting-get.md)) 。
 
-授权令牌、回调 url、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值必须与从基于  [VTC](../api/onlinemeeting-get.md) 的 Get Online Meetings API (VTC 会议获取的详细信息一起替换) 以使用实际值使示例有效。
+授权令牌、回调 url、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值必须替换为从基于 (VTC 的  [Get Online Meetings API](../api/onlinemeeting-get.md) (会议获取的详细信息) 实际值才能使示例有效。
 > **注意：** 此示例需要 `Calls.JoinGroupCalls.All` 权限。
 
 ##### <a name="request"></a>请求

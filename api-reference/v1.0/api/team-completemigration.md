@@ -1,16 +1,16 @@
 ---
 title: team： completeMigration
 description: 通过从团队中删除迁移模式完成外部邮件的迁移。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3faec85b08d8d0ed340f29985574d05a804c061f
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 6175babac52ce09338041dfbf69dda41814a0ec4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51507919"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084942"
 ---
 # <a name="team-completemigration"></a>team： completeMigration
 

@@ -2,15 +2,15 @@
 title: 列出 directoryRoles
 description: 列出租户中激活的目录角色。
 author: abhijeetsinha
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 51cd7ec7a1fc4e5b876a59a5d9caec57594057e5
-ms.sourcegitcommit: 9eeb056f311044aaa40654cdb3ae5ae61f1c4d04
+ms.openlocfilehash: 58dc36feb58042aa84fa8879d3fd3b0fcdd30b91
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52854227"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046279"
 ---
 # <a name="list-directoryroles"></a>列出 directoryRoles
 

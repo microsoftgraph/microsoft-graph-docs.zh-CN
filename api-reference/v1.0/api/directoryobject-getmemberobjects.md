@@ -1,23 +1,24 @@
 ---
 title: 获取成员对象
 description: " 返回 user、group 或 directory 对象所属的所有组和目录角色。此函数是可传递的。 "
-localization_priority: Normal
+ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 6eec72fc6e9d502565000a68d3f957660855de27
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 826493b29dd029dee4b663b3b88b195467a0f2d4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051478"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046356"
 ---
 # <a name="get-member-objects"></a>获取成员对象
 
 命名空间：microsoft.graph
 
- 返回 user、group 或 directory 对象所属的所有组和目录角色。此函数是可传递的。 
- > 注意：只有用户可以是目录角色的成员。
+返回 user、group 或 directory 对象所属的所有组和目录角色。此函数是可传递的。 
+
+**注意：** 只有用户才能是目录角色的成员。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -48,7 +49,7 @@ POST /directoryObjects/{id}/getMemberObjects
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|Boolean| **true** 指定仅应返回包含实体的安全组；**false** 指定应返回包含实体的所有组和目录角色。**注意**：如果参数为 **true**，只能对一位用户调用此函数。 |
+|securityEnabledOnly|Boolean| `true` 指定仅返回实体是成员的安全组; `false` 指定应返回实体是成员的所有组和目录角色。 **注意**：如果参数为 ，则只能在用户上调用 函数 `true` 。 |
 
 ## <a name="response"></a>响应
 
@@ -91,7 +92,7 @@ Content-type: application/json
 
 
 ##### <a name="response"></a>响应
-注意：为了提高可读性，可能缩短了此处显示的响应对象。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

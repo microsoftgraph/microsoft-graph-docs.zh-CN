@@ -2,15 +2,15 @@
 title: 更新 complianceManagementPartner
 description: 更新 complianceManagementPartner 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 82908cc7b0019992f9529263c3fb10647815bc6cb32efa3515749a1408b27577
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a66cb48e2dceebc1254f31ca818e695be20a00c9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54225816"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59146945"
 ---
 # <a name="update-compliancemanagementpartner"></a>更新 complianceManagementPartner
 

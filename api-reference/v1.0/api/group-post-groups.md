@@ -2,15 +2,15 @@
 title: 创建组
 description: '创建请求正文中指定的新组。 '
 author: Jordanndahl
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 2b1a4f9c8f482dedc7842ae3785d8ccf436818ca
-ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
+ms.openlocfilehash: ccd9b1303d4c507d4a17bb16b04387ec08f7a43f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58490481"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074295"
 ---
 # <a name="create-group"></a>创建组
 
@@ -49,27 +49,22 @@ POST /groups
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
-下表显示了创建组时要指定的[组](../resources/group.md)资源的属性。 
+
+在请求正文中，提供[组](../resources/group.md)对象的 JSON 表示形式。
+
+下表显示创建[组](../resources/group.md)时所需的属性。 根据需要为你的组指定其他可写属性。
 
 | 属性 | 类型 | 说明|
 |:---------------|:--------|:----------|
-| displayName | string | 要在组的通讯簿中显示的名称。最大长度: 256 个字符。必填。 |
-| 说明 | string | 组说明。 最大 长度：1024 个字符。 可选。 |
-| isAssignableToRole | Boolean | 设置为 **true** 可以将组分配给 Azure AD 角色。 只有特权角色管理员和全局管理员才能设置此属性的值。 可选。 |
-| mailEnabled | 布尔 | 对于已启用邮件的组，请设置为 **true**。 必需。 |
-| mailNickname | string | 组的邮件别名。 最大 长度：64 个字符。 此属性只能包含[ASCII 字符集 0 - 127](/office/vba/language/reference/user-interface-help/character-set-0127) 中的字符，以下除外：` @ () \ [] " ; : . <> , SPACE`。 必填。 |
-| securityEnabled | boolean | 对于启用安全机制的组（包括 Microsoft 365 组），请设置为 **true**。 必填。 |
-| owners | string collection | 此属性表示创建时指定的组所有者。  除非已在 **成员** 属性中指定，否则不会自动将所有者添加为组成员。 可选。 |
-| members | 字符串集合 | 此属性表示创建时指定的组成员。可选。 |
-|visibility|String|指定 Microsoft 365 组的可见性。 可能的值是：`Private`、`Public`、`HiddenMembership` 或空（解释为 `Public`）。|
+| displayName | String | 要在组的通讯簿中显示的名称。最大长度：256 个字符。必需。 |
+| mailEnabled | Boolean | 对于已启用邮件的组，请设置为 `true`。 必需。 |
+| mailNickname | String | 组的邮件别名。 最大 长度：64 个字符。 此属性只能包含[ASCII 字符集 0 - 127](/office/vba/language/reference/user-interface-help/character-set-0127) 中的字符，以下除外：` @ () \ [] " ; : . <> , SPACE`。 必需。 |
+| securityEnabled | Boolean | 对于已启用安全机制的组（包括 Microsoft 365 组），请设置为 `true`。 必需。  **注意：** 使用 Microsoft Azure 门户创建的组始终将 **securityEnabled** 初始设置为 `true`。|
 
-> **注意：** 使用 Microsoft Azure 门户创建的组始终将 **securityEnabled** 初始设置为 `true`。
-
-根据需要为组指定其他可写属性。有关详细信息，请参阅[组](../resources/group.md)资源的属性。
-
->**注意：** 在不指定所有者的情况下使用 Group.Create 应用程序权限创建组时，将会以匿名方式创建组，并且组将不可修改。 创建组时，可使用 `POST` 操作并为其添加所有者，以便指定可修改该组的所有者。
-
-> 以编程方式创建 Microsoft 365 组时，若具有仅应用上下文且未指定所有者，则将以匿名方式创建组。 这样会导致在进一步执行手动操作前无法自动创建相关联的 SharePoint Online 网站。  
+> [!IMPORTANT]
+> 使用 **Group.Create** 应用程序权限创建组而不指定所有者时，将会以匿名方式创建组，并且该组不可修改。 创建组时，将所有者添加到组以指定可以修改该组的所有者。
+>
+>以编程方式创建 Microsoft 365 组时，若具有仅应用上下文且未指定所有者，则将以匿名方式创建组。 这样会导致在进一步执行手动操作前无法自动创建相关联的 SharePoint Online 网站。
 
 
 ### <a name="grouptypes-options"></a>groupTypes 选项

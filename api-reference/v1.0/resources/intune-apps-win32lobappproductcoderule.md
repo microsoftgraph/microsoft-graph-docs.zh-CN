@@ -2,15 +2,15 @@
 title: win32LobAppProductCodeRule 资源类型
 description: 用于存储 Win32 LOB 应用的产品代码和版本规则数据的复杂类型。 此规则作为要求规则不受支持。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8cba65fe4c56e5365ceaddc47b1d1c3ceb8b1c170f16924a726da42dd0b7c165
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 199f39a81ebdf6ea163caa6bbdf5c230312ed3ce
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54135195"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021699"
 ---
 # <a name="win32lobappproductcoderule-resource-type"></a>win32LobAppProductCodeRule 资源类型
 

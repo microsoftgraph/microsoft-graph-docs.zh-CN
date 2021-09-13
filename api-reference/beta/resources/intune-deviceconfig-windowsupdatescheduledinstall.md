@@ -2,15 +2,15 @@
 title: windowsUpdateScheduledInstall 资源类型
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 599306d1f1b512c39e5ddce4805d3645fa7c1d74
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e6fd04aa5d127f62da457d8f55e196e8f3a917a2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794453"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064077"
 ---
 # <a name="windowsupdatescheduledinstall-resource-type"></a>windowsUpdateScheduledInstall 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "58794453"
 继承自 [windowsUpdateInstallScheduleType](../resources/intune-deviceconfig-windowsupdateinstallscheduletype.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |scheduledInstallDay|[weeklySchedule](../resources/intune-deviceconfig-weeklyschedule.md)|计划的安装日（按周）。 可取值为：`userDefined`、`everyday`、`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday`、`noScheduledScan`。|
 |scheduledInstallTime|TimeOfDay|一天中的计划安装时间|

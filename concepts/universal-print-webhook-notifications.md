@@ -2,15 +2,15 @@
 title: 订阅使用 Microsoft Graph 更改云打印 API 的通知
 description: 了解如何使用 Microsoft Graph API 更改打印作业事件的通知。
 author: jahsu
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: cloud-printing
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: adba2568931fe1bf0a6c3fc9ac765d74f6021f4a25b2a02a0be40b5a5a077c64
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: df511878bfebba02bd68ede445a26b66233caeae
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54251573"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143458"
 ---
 # <a name="subscribe-to-change-notifications-from-cloud-printing-apis-using-microsoft-graph"></a>订阅使用 Microsoft Graph 更改云打印 API 的通知
 

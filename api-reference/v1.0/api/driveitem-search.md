@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 07/07/2020
 title: 搜索文件
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: sharepoint
 description: 在项目层次结构中搜索与查询匹配的项目。
 doc_type: apiPageType
-ms.openlocfilehash: 8cf0095d504f88fbce75aa65c7d733ccf04392d0
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 88b75446b0d88e05db6c4ba9d586067d164207c5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240208"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59053649"
 ---
 # <a name="search-for-a-driveitems-within-a-drive"></a>搜索驱动器内的 DriveItems
 
@@ -29,6 +29,8 @@ ms.locfileid: "50240208"
 |委派（工作或学校帐户） | Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All    |
 |应用程序 | Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All |
+
+>**注意：** 此方法不支持 Sites.Selected 应用程序权限。
 
 ## <a name="http-request"></a>HTTP 请求
 

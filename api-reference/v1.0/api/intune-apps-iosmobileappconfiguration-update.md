@@ -2,15 +2,15 @@
 title: Update iosMobileAppConfiguration
 description: 更新 iosMobileAppConfiguration 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e3f83c836223dbe5b43f527e0a43e64f51b004bce67fd7d105fed6aa674e15e1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e643e2a8b74920516c94fc831bc73f4904e3f68f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54226103"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056506"
 ---
 # <a name="update-iosmobileappconfiguration"></a>Update iosMobileAppConfiguration
 

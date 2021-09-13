@@ -1,22 +1,22 @@
 ---
 title: 创建 sectionGroup
-description: 在指定的笔记本中新建分区组。
+description: 在指定的笔记本中创建新的分区组。
 author: jewan-microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 612f81dd835a96fceeeb895c8170279341d89903
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d50a9c03d44dfcb983b8bf92b8006383530ddd08
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48028511"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016013"
 ---
 # <a name="create-sectiongroup"></a>创建 sectionGroup
 
 命名空间：microsoft.graph
 
-在指定的笔记本中新建 [分区组](../resources/sectiongroup.md) 。
+在指定的 [笔记本中创建新的](../resources/sectiongroup.md) 分区组。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -47,7 +47,7 @@ POST /sites/{id}/onenote/notebooks/{id}/sectionGroups
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [sectionGroup](../resources/sectiongroup.md) 对象。
+如果成功，此方法在 `201 Created` 响应正文中返回 响应代码和 [sectionGroup](../resources/sectiongroup.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

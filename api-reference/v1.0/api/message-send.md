@@ -1,16 +1,16 @@
 ---
 title: 邮件：发送
 description: 发送现有草稿邮件。
-localization_priority: Priority
+ms.localizationpriority: high
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8be54552df8acf7faa67c070e85f63f48a5c23d4
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: 81a7fbb9dbed1f9fba27af74cee5ef776c2b8ffb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52645491"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016083"
 ---
 # <a name="message-send"></a>邮件：发送
 

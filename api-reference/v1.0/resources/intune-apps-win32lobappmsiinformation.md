@@ -2,15 +2,15 @@
 title: win32LobAppMsiInformation 资源类型
 description: 包含 Win32 应用的 MSI 应用属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f3e1de723741a838f0c14a80e66c2f2b3460f303c98e91526031bdad9a756fa4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 35432a3cd1e7755b4cc416e351b5cd236fa348f7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54216810"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59044683"
 ---
 # <a name="win32lobappmsiinformation-resource-type"></a>win32LobAppMsiInformation 资源类型
 

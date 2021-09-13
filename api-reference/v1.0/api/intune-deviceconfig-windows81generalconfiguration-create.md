@@ -2,15 +2,15 @@
 title: 创建 windows81GeneralConfiguration
 description: 创建新的 windows81GeneralConfiguration 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 010454e41ddfa000b6acabd0151eade1bfa96b709a490b9f4adae5f8ef3f3131
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5c08bbbe198ee080b1c0ab9801ec6a7ea2421b77
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54234062"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016279"
 ---
 # <a name="create-windows81generalconfiguration"></a>创建 windows81GeneralConfiguration
 

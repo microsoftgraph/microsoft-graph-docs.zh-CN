@@ -2,15 +2,15 @@
 title: ratingJapanMoviesType 枚举类型
 description: 日本电影评级标签
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1d34633a234dbfacdd3d933e841b28cb79a459d862b42f21114e4fec57c876f9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 85684e419126d9f5c53db04e0354f2cd04274282
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54205687"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084473"
 ---
 # <a name="ratingjapanmoviestype-enum-type"></a>ratingJapanMoviesType 枚举类型
 

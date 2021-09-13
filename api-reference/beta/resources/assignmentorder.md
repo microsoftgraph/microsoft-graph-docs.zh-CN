@@ -2,15 +2,15 @@
 title: assignmentOrder 资源类型
 description: 用于定义在用户流中收集的属性的顺序。
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 61114b2a4fa39485843a8e1b722c518def0301ae380334f09ca79e088941040d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: afc59c24e154e8349eacff0d4059f1b102d8bc19
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54245322"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59033831"
 ---
 # <a name="assignmentorder-resource-type"></a>assignmentOrder 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "54245322"
 
 ## <a name="properties"></a>属性
 
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |order|String collection|提供的 identityUserFlowAttribute ID 列表，用于确定应在用户流中收集属性的顺序。|
 

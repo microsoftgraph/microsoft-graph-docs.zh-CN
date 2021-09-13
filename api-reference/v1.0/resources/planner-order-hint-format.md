@@ -2,15 +2,15 @@
 title: 使用规划器中的排序提示
 description: '`)'
 author: TarkanSevilmis
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: planner
 doc_type: conceptualPageType
-ms.openlocfilehash: 29bbff1ab114a0f7e4f94df0ce47c8a09a37f8b13afc47f0ef98632b3d5b87c3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ff33069f1427700d0c60bf7300052eb127c37e34
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54184527"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59044431"
 ---
 # <a name="using-order-hints-in-planner"></a>使用规划器中的排序提示
 

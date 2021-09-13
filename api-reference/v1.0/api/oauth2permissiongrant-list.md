@@ -1,16 +1,16 @@
 ---
 title: 列出 oAuth2PermissionGrants
 description: 检索表示委派权限授予的 oauth2PermissionGrant 对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 3936c820e939032b456b60f8bd591c298ebc3c44
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 8df9941078ba6642769a9bec85cc96a1bc9f0ba9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231953"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59015950"
 ---
 # <a name="list-oauth2permissiongrants"></a>List oauth2PermissionGrants
 
@@ -19,7 +19,7 @@ ms.locfileid: "52231953"
 检索 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象的列表，这些对象代表已授予客户端应用程序代表登录用户访问 API 的委派权限。
 
 > [!NOTE]
-> 此请求可能有最近创建、更新或删除的委派权限授予的复制延迟。 如果指定了筛选，此延迟 `clientId` 将最小化。
+> 此请求对最近创建、更新或删除的委派权限授予可能具有复制延迟。 如果指定了筛选，此延迟 `clientId` 将最小化。
 
 ## <a name="permissions"></a>权限
 

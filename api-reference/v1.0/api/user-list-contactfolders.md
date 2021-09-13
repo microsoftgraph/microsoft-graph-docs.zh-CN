@@ -2,15 +2,15 @@
 title: List contactFolders
 description: 获取已登录用户的默认联系人文件夹中的联系人文件夹集合。
 author: kevinbellinger
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a915c60b4a783983ca2712c53afca5aa93f0795b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 505fdff64e73604ca559c062ed79bd82a56f55c1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049378"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072658"
 ---
 # <a name="list-contactfolders"></a>List contactFolders
 
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/v1.0/me/contactFolders
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

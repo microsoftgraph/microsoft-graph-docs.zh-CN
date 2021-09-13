@@ -2,15 +2,15 @@
 title: 删除用户
 description: 删除 user。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fe52795e20cfacdd0e321bfadabff4eee66a7d65f48b12a6c38c568baed7755e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 147e4adc450a89af03b28cb0311773ab388831b5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54233908"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147211"
 ---
 # <a name="delete-user"></a>删除用户
 

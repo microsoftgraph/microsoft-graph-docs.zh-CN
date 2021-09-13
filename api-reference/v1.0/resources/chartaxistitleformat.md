@@ -2,15 +2,15 @@
 title: ChartAxisTitleFormat 资源类型
 description: 表示图表坐标轴标题格式。
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 96b5bb7cf0865a8ae859d392c9d59d8dce78580870807adaebfcd802655d88c3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ea54cf101d150e2d8cc94637439d28ab3232429b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54230828"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59126903"
 ---
 # <a name="chartaxistitleformat-resource-type"></a>ChartAxisTitleFormat 资源类型
 

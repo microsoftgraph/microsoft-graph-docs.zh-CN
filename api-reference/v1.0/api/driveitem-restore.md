@@ -1,16 +1,16 @@
 ---
 title: driveItem： restore
 description: 还原已删除且当前位于回收站中的 driveItem。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: learafa
 ms.prod: files
 doc_type: apiPageType
-ms.openlocfilehash: 391788bccc09876a1bed78da932dd574f1e23cfb
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e3c04999e7b8a41e1244660c998ee5df905f457a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054047"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032970"
 ---
 # <a name="driveitem-restore"></a>driveItem： restore
 
@@ -53,7 +53,7 @@ POST /me/drive/items/{item-id}/restore
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` 已还原的 [driveItem](../resources/driveitem.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和已还原的 [driveItem](../resources/driveitem.md) 对象。
 
 ## <a name="examples"></a>示例
 

@@ -2,15 +2,15 @@
 title: enterpriseCodeSigningCertificate 资源类型
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cf469c4d1aa86a3acbc5dba823b671c93146258d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3ba7fd4b46359c10778b4f040701aff7411e87aa
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58782999"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064572"
 ---
 # <a name="enterprisecodesigningcertificate-resource-type"></a>enterpriseCodeSigningCertificate 资源类型
 
@@ -35,12 +35,12 @@ ms.locfileid: "58782999"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|content|二进制|原始Windows Enterprise Code-Signing格式的证书。|
-|状态|[certificateStatus](../resources/intune-apps-certificatestatus.md)|证书状态已设置或未设置。 可取值为：`notProvisioned`、`provisioned`。|
+|content|二进制|Windows Enterprise Code-Signing数据格式的证书。|
+|status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|证书状态已设置或未设置。 可取值为：`notProvisioned`、`provisioned`。|
 |SubjectName|String|证书的主题名称。|
 |subject|String|证书的主题值。|
-|issuerName|字符串|证书的颁发者名称。|
-|issuer|字符串|证书的 Issuer 值。|
+|issuerName|String|证书的颁发者名称。|
+|issuer|String|证书的 Issuer 值。|
 |expirationDateTime|DateTimeOffset|证书到期日期。|
 |uploadDateTime|DateTimeOffset|CodeSigning 证书上载时的日期时间。|
 

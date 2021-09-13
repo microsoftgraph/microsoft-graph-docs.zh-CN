@@ -1,16 +1,16 @@
 ---
 title: 更新 organizationalBrandingProperties
 description: 更新 organizationalBrandingProperties 对象的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: AlexanderMars
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d869b4734cade9e40ab2fafaec94d42e3e29b65f
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 24b1668a73d351dfdc0533cadbc079581c892f60
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786662"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085390"
 ---
 # <a name="update-organizationalbrandingproperties"></a>更新 organizationalBrandingProperties
 
@@ -53,7 +53,7 @@ PUT /organization/{tenant id}/branding/{property name}
 |backgroundImage|Stream|显示为登录页背景的图像。 .png或 .jpg不超过 1920x1080 且小于 300kb。 较小的图像将降低带宽要求，提高页面加载性能。|
 |bannerLogo|Stream|显示在登录页上的公司徽标的横幅版本。 .png或.jpg不超过 36x245px。 我们建议使用透明图像，徽标周围没有填充。|
 |signInPageText|String|显示在登录框底部的文本。 您可以使用此信息来传达其他信息，例如电话号码到技术支持或法律声明。 此文本必须是 Unicode 且不超过 1024 个字符。|
-|squareLogo|Stream|公司徽标的方形版本。 这将显示在Windows 10 OOBE 体验 (OOBE) ，以及启用 Windows Autopilot 进行部署时。 .png或 .jpg不超过 240x240px 且大小不超过 10kb。 我们建议使用透明图像，徽标周围没有填充。|
+|squareLogo|Stream|公司徽标的方形版本。 这将显示在Windows 10 OOBE 体验 (OOBE) 中，以及启用 Windows Autopilot 进行部署时。 .png或 .jpg不超过 240x240px 且大小不超过 10kb。 我们建议使用透明图像，徽标周围没有填充。|
 |usernameHintText|String|字符串，在登录屏幕的用户名文本框中作为提示显示。 此文本必须是 Unicode，不带链接或代码，并且不能超过 64 个字符。|
 
 传入时将忽略 **id** 属性。
@@ -149,7 +149,7 @@ HTTP/1.1 204 No Content
 ```
 
 ### <a name="example-3-update-localized-branding"></a>示例 3：更新本地化品牌
-如果 **指定了 Content-Language** 标头，则首先创建与 **Content-Language** 关联的本地化（如果它不存在的话）然后使用指定的值进行更新。 默认品牌不会更改。
+如果 **指定了 Content-Language** 标头，则首先创建与 **Content-Language** 关联的本地化（如果它不存在，然后使用指定的值进行更新）。 默认品牌不会更改。
 #### <a name="request"></a>请求
 
 下面展示了示例请求。

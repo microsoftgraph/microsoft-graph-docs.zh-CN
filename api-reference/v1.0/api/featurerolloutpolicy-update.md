@@ -1,16 +1,16 @@
 ---
 title: 更新 featureRolloutPolicy
 description: 更新 featurerolloutpolicy 对象的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: madhavpatel6
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 7341363806e9429cf29726585267be9536c6be9c
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: 825575bc55dc1f1e6b8e00ce8cc0a2b39849b91c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51201257"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046062"
 ---
 # <a name="update-featurerolloutpolicy"></a>更新 featurerolloutpolicy
 
@@ -48,9 +48,9 @@ PATCH /policies/featureRolloutPolicies/{id}
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|说明|字符串|此策略的说明。|
-|displayName|字符串|此显示名称的组。|
-|isAppliedToOrganization|布尔值|指示是否应当将此功能推出策略应用于整个组织。|
+|说明|String|此策略的说明。|
+|displayName|String|此显示名称的组。|
+|isAppliedToOrganization|Boolean|指示是否应当将此功能推出策略应用于整个组织。|
 |isEnabled|Boolean|指示是否启用功能推出。|
 
 ## <a name="response"></a>响应

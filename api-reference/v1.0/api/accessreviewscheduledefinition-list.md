@@ -2,15 +2,15 @@
 title: 列出 accessReviewScheduleDefinitions
 description: 获取 accessReviewScheduleDefinition 对象及其属性的列表。
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 34c58be8c3fa0c580e91a74baee2ddafbed3e738
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 0d1c3ef815253dfe8166ef100f15e83a55b320e9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53208685"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056926"
 ---
 # <a name="list-accessreviewscheduledefinitions"></a>列出 accessReviewScheduleDefinitions
 命名空间：microsoft.graph
@@ -53,7 +53,7 @@ GET /identityGovernance/accessReviews/definitions?$filter=contains(scope/microso
 
 |值|说明|
 |:---     |:---       |
-|`/groups`  |列出各个组上的每个 accessReviewScheduleDefinition (不包括作用域为具有来宾用户的所有Microsoft 365组的定义) 。|
+|`/groups`  |列出单个组上的每个 accessReviewScheduleDefinition (不包括作用域为具有来宾用户的所有Microsoft 365组) 。|
 |`/groups/{group id}`  |列出特定组上的每个 accessReviewScheduleDefinition (不包括作用域为具有来宾用户的所有 Microsoft 365 组) 。|
 |`./members`  |列出每个作用域为来宾用户的所有 Microsoft 365 AccessReviewScheduleDefinition。|
 |`accessPackageAssignments`  |列出访问包上的每个 accessReviewScheduleDefinition。|
@@ -179,7 +179,7 @@ Content-type: application/json
 ### <a name="example-2-retrieve-all-access-review-definitions-scoped-to-all-microsoft-365-groups-in-a-tenant"></a>示例 2：检索范围为租户中Microsoft 365组的所有访问评审定义
 
 #### <a name="request"></a>请求
-以下示例显示一个请求，请求检索范围为租户中所有Microsoft 365组的所有访问评审系列。
+以下示例显示一个请求，请求检索范围为租户中Microsoft 365组的所有访问评审系列。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

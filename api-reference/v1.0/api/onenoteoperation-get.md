@@ -1,16 +1,16 @@
 ---
 title: 获取 onenoteOperation
 description: '获取长时间运行的操作OneNote状态。 这适用于在响应中返回 **Operation-Location** 标头的操作，如 、 `CopyNotebook` `CopyToNotebook` 、 `CopyToSectionGroup` 、 `and CopyToSection` 。   '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 3bb2cdf5eca3df3484273f99f10132cb1a80491d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: f4ca8d05b6343ca1730b97731e7b0527a4932894
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050400"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072944"
 ---
 # <a name="get-onenoteoperation"></a>获取 onenoteOperation
 
@@ -87,7 +87,7 @@ GET https://graph.microsoft.com/v1.0/me/onenote/operations/{id}
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

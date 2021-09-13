@@ -2,18 +2,18 @@
 title: Microsoft 工作簿和图表 API 的错误代码Graph
 description: 列出并描述 Microsoft 工作簿和图表 API 的错误代码和Graph。
 author: grangeryy
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
-ms.openlocfilehash: 43aeb851cd5f458c2dda971938e0d0b6fa193c85d35ba0bac54edbc904acf964
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cadcbb4ad64d6d441c09e9deb331dfe28edf5d18
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54225585"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143445"
 ---
 # <a name="error-codes-for-workbooks-and-charts-apis-in-microsoft-graph"></a>Microsoft 工作簿和图表 API 的错误代码Graph
 
-本文介绍当通过 API 发送的请求失败时，Microsoft 工作簿和图表 API Graph返回的错误代码。 有关 Microsoft 网站中的错误响应和资源类型的更多详细信息Graph，请参阅[错误](/concepts/errors.md)。
+本文介绍当通过 API 发送的请求失败时，Microsoft 工作簿和图表 API Graph返回的错误代码。 有关 Microsoft 错误响应和资源类型的详细信息，Graph错误[。](/concepts/errors.md)
 
 ## <a name="error-code"></a>错误代码
 
@@ -40,7 +40,7 @@ ms.locfileid: "54225585"
 
 | 代码                               | 消息
 |:-----------------------------------|:----------------------------------------------------------
-| **accessConflict**   |由于与访问工作簿的其他客户端冲突，请求失败。
+| **accessConflict**   |由于与正在访问工作簿的其他客户端发生冲突，请求失败。
 | **accessDenied**         | 无法执行所请求的操作。
 | **badRequestUncategorized**               | 该请求格式有误或不正确。
 | **conflictUncategorized**                   | 当前状态与请求预期的状态的冲突。
