@@ -2,15 +2,15 @@
 title: 更新 windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
 description: 更新 windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 187221cf46c9f00f19f1ecd1bca2ec6ad4de949e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b6e06081c796229b5849d714e815f4a1ba8e2af7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795275"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59047742"
 ---
 # <a name="update-windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus"></a>更新 windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
 
@@ -43,7 +43,7 @@ PATCH /deviceAppManagement/wdacSupplementalPolicies/{windowsDefenderApplicationC
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

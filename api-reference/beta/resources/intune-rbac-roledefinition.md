@@ -2,15 +2,15 @@
 title: roleDefinition 资源类型
 description: 角色定义资源。 角色定义是在 Intune 中基于角色访问的基础。 角色组合了 Intune 资源（例如，移动应用）和关联的角色权限（例如，资源的创建和读取）。 有内置和自定义两种角色类型。 内置角色无法修改。 内置角色和自定义角色必须具有强制执行的分配。 如果要定义一个允许将任意可用资源和角色权限合并到单个角色中的角色，请创建自定义角色。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c153ce5f0efde38f92684c688019e531d8c0a2b4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 28f5c039e6b7b3ba7cbb00d023cf91e96a8bb295
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783174"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039579"
 ---
 # <a name="roledefinition-resource-type"></a>roleDefinition 资源类型
 
@@ -35,13 +35,13 @@ ms.locfileid: "58783174"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。 此为只读，且自动生成。|
-|displayName|字符串|角色定义的显示名称。|
-|description|字符串|角色定义的说明。|
+|displayName|String|角色定义的显示名称。|
+|说明|String|角色定义的说明。|
 |permissions|[rolePermission](../resources/intune-rbac-rolepermission.md) 集合|允许此角色执行的角色权限列表。 它们必须与定义为 rolePermission 一部分的 actionName 匹配。|
 |rolePermissions|[rolePermission](../resources/intune-rbac-rolepermission.md) 集合|允许此角色执行的角色权限列表。 它们必须与定义为 rolePermission 一部分的 actionName 匹配。|
 |isBuiltInRoleDefinition|Boolean|角色类型。 如果是内置角色，则设置为 True；如果是自定义角色定义，则设置为 False。|
 |isBuiltIn|Boolean|角色类型。 如果是内置角色，则设置为 True；如果是自定义角色定义，则设置为 False。|
-|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|

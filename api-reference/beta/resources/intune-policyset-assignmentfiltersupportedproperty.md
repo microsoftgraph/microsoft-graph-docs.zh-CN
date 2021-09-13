@@ -2,15 +2,15 @@
 title: assignmentFilterSupportedProperty 资源类型
 description: 表示有关该属性的信息，该属性在构建 AssignmentFilter 规则时受支持。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b8b8a5bc422c2d663d74ea7dc93b7353f10e65d3
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 339f220b9508487735e2473133e61c2682263c05
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786605"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074946"
 ---
 # <a name="assignmentfiltersupportedproperty-resource-type"></a>assignmentFilterSupportedProperty 资源类型
 

@@ -2,15 +2,15 @@
 title: windows10AppsForceUpdateSchedule 资源类型
 description: Windows 10应用强制更新计划
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 62827d5fc1a99a04189dfa5d2817297df9766318
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2d76d071c0a840a0977a477cc42c7d96af2c7d07
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58800044"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59040377"
 ---
 # <a name="windows10appsforceupdateschedule-resource-type"></a>windows10AppsForceUpdateSchedule 资源类型
 
@@ -26,7 +26,7 @@ Windows 10应用强制更新计划
 |属性|类型|说明|
 |:---|:---|:---|
 |startDateTime|DateTimeOffset|强制重启的开始时间。|
-|recurrence|[windows10AppsUpdateRecurrence](../resources/intune-deviceconfig-windows10appsupdaterecurrence.md)|定期计划。 可能的值是：`none`、`daily`、`weekly`、`monthly`。|
+|recurrence|[windows10AppsUpdateRecurrence](../resources/intune-deviceconfig-windows10appsupdaterecurrence.md)|定期计划。 可取值为：`none`、`daily`、`weekly`、`monthly`。|
 |runImmediatelyIfAfterStartDateTime|Boolean|如果为 true，则如果 StartDateTime 过去，则立即运行该任务，否则，下次重复执行。|
 
 ## <a name="relationships"></a>关系

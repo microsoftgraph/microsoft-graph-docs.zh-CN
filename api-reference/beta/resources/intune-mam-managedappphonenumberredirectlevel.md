@@ -2,15 +2,15 @@
 title: managedAppPhoneNumberRedirectLevel 枚举类型
 description: 允许单击打开电话号码、进行电话呼叫或发送短信的应用类。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8f0f01e85ee970435dc857bb1f50cd2fb0352799
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 21d13f05d3ef5116772803e92852e0128bec8c9e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783454"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59075030"
 ---
 # <a name="managedappphonenumberredirectlevel-enum-type"></a>managedAppPhoneNumberRedirectLevel 枚举类型
 
@@ -28,7 +28,7 @@ ms.locfileid: "58783454"
 |allApps|0|允许所有应用共享。|
 |managedApps|1|允许所有托管应用共享。|
 |customApp|2|允许对自定义应用共享。|
-|blocked|3|应用程序之间的共享被阻止。|
+|blocked|3|阻止应用之间的共享。|
 
 
 

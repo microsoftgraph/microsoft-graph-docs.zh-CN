@@ -2,15 +2,15 @@
 title: windows10AppType 枚举类型
 description: Windows 10应用程序类型。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6b99ce27f5a8b70796ec1f517e9ee4c53dfb7484
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6f1c8a806b7a283f0603fbc22daf4c800776b818
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819701"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59047028"
 ---
 # <a name="windows10apptype-enum-type"></a>windows10AppType 枚举类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58819701"
 Windows 10应用程序类型。
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |desktop|0|桌面。|
 |universal|1|通用。|

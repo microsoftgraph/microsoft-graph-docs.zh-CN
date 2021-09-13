@@ -2,15 +2,15 @@
 title: androidManagedStoreAppAssignmentSettings 资源类型
 description: 包含用于将 Android 托管应用商店移动应用分配给组的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 18e5c8db52c2191c6db3332b7423c749b7d466c4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 18b1b52ac92fee819a7e4f7e690df850947f2a5b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789549"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039201"
 ---
 # <a name="androidmanagedstoreappassignmentsettings-resource-type"></a>androidManagedStoreAppAssignmentSettings 资源类型
 

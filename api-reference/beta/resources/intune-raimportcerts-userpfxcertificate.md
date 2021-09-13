@@ -2,15 +2,15 @@
 title: userPFXCertificate 资源类型
 description: 封装用户的 PFX 证书所需全部信息的实体。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 92764f6fd5fa717698ae2ed629a80e9035274888
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e293370df72fee56ffe94cfdfac8b869bc73be1f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58757893"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59080658"
 ---
 # <a name="userpfxcertificate-resource-type"></a>userPFXCertificate 资源类型
 
@@ -41,7 +41,7 @@ ms.locfileid: "58757893"
 |startDateTime|DateTimeOffset|证书的有效期开始日期/时间。|
 |expirationDateTime|DateTimeOffset|证书的有效期过期日期/时间。|
 |providerName|String|用于加密此 blob 的加密提供程序。|
-|keyName|String|提供程序中用于 (blob 的) 的名称。|
+|keyName|String|提供程序中用于 (blob) 密钥的名称。|
 |paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|提供程序在加密/解密期间使用的填充方案。 可取值为：`none`、`pkcs1`、`oaepSha1`、`oaepSha256`、`oaepSha384`、`oaepSha512`。|
 |encryptedPfxBlob|二进制|加密的 PFX blob。|
 |encryptedPfxPassword|String|加密的 PFX 密码。|

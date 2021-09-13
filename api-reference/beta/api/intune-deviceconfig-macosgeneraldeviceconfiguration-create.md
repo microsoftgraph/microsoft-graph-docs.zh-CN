@@ -2,15 +2,15 @@
 title: 创建 macOSGeneralDeviceConfiguration
 description: 创建新的 macOSGeneralDeviceConfiguration 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 150728d7c3a9a442c83dd444b58fc8b3d0256105
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9081b4ea7bca2e47f1110881b8391dd124b1556d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783111"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59042828"
 ---
 # <a name="create-macosgeneraldeviceconfiguration"></a>创建 macOSGeneralDeviceConfiguration
 
@@ -44,7 +44,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -56,13 +56,13 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|指示基础设备配置是否支持分配范围标记。 当此值为 false 且实体对范围用户不可见时，不允许分配给 ScopeTags 属性。 这适用于在 Silverlight 中创建的旧版策略，可通过在 Azure 门户中删除和重新创建策略来解决。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|此策略的操作系统版本适用性。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|字符串|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |compliantAppsList|[appListItem](../resources/intune-deviceconfig-applistitem.md) 集合|符合性中的应用列表（允许列表或阻止列表，由 CompliantAppListType 控制）。 该集合最多可包含 10000 个元素。|
@@ -82,7 +82,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |keychainBlockCloudSync|Boolean|指示在 macOS 10.12 (是否阻止 iCloud 密钥链) 。|
 |safariBlockAutofill|Boolean|指示在 Safari 中是否阻止用户使用自动填充。|
 |cameraBlocked|Boolean|指示是否阻止用户访问设备的照相机。|
-|iTunesBlockMusicService|Boolean|指示是否阻止应用音乐将音乐应用恢复为经典模式。|
+|iTunesBlockMusicService|Boolean|指示是否阻止音乐服务，音乐应用恢复为经典模式。|
 |spotlightBlockInternetResults|Boolean|指示是否阻止聚焦从 Internet 搜索返回任何结果。|
 |keyboardBlockDictation|Boolean|指示是否阻止用户使用听写输入。|
 |definitionLookupBlocked|Boolean|指示是否阻止定义查找。|
@@ -111,15 +111,15 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |classroomForceAutomaticallyJoinClasses|Boolean|指示是否自动授予对教师请求的权限，而不提示学生。 需要通过 Apple School Manager 或 Apple Business Manager 注册 MDM。|
 |classroomForceRequestPermissionToLeaveClasses|Boolean|指示在尝试离开课程时，是否要求通过 Classroom 在非托管课程注册的学生向教师请求权限。 需要通过 Apple School Manager 或 Apple Business Manager 注册 MDM。|
 |classroomForceUnpromptedAppAndDeviceLock|Boolean|指示是否允许教师在不提示学生的情况下锁定应用或设备。 需要通过 Apple School Manager 或 Apple Business Manager 注册 MDM。|
-|iCloudBlockActivityContinuation|Boolean|指示是否阻止用户继续在另一台 iOS 或 MacOS 设备 (MacOS 10.15 或更高版本的 MacOS 设备上) 。|
+|iCloudBlockActivityContinuation|Boolean|指示是否阻止用户继续在另一个 iOS 或 MacOS 设备 (MacOS 10.15 或更高版本的 MacOS 设备上) 。|
 |privacyAccessControls|[macOSPrivacyAccessControlItem](../resources/intune-deviceconfig-macosprivacyaccesscontrolitem.md) 集合|隐私首选项策略控件的列表。 该集合最多可包含 10000 个元素。|
 |addingGameCenterFriendsBlocked|Boolean|是，禁止用户将好友添加到游戏中心。 适用于运行 macOS 版本 10.13 和更高版本的设备。|
 |gameCenterBlocked|Boolean|是 禁用游戏中心，游戏中心图标从主屏幕中删除。 适用于运行 macOS 版本 10.13 和更高版本的设备。|
 |multiplayerGamingBlocked|Boolean|如果为 TRUE，则使用游戏中心时阻止多人游戏。 如果为 FALSE，则使用游戏中心时允许多人游戏。 适用于运行 macOS 版本 10.13 和更高版本的设备。|
 |wallpaperModificationBlocked|Boolean|如果为 TRUE，可防止更改墙纸。 FALSE 允许更改墙纸。 适用于运行 macOS 版本 10.13 和更高版本的设备。|
 |eraseContentAndSettingsBlocked|Boolean|如果为 TRUE，则禁用受监督设备的重置选项。 如果为 FALSE，则启用受监督设备的重置选项。 适用于运行 macOS 版本 12.0 和更高版本的设备。|
-|softwareUpdateMajorOSDeferredInstallDelayInDays|Int32|指定延迟主要操作系统软件更新 (1-90) 的天数。 适用于运行 macOS 版本 11.3 和更高版本的设备。 有效值为 0 至 90|
-|softwareUpdateMinorOSDeferredInstallDelayInDays|Int32|指定延迟次要操作系统软件更新 (1-90) 的天数。 适用于运行 macOS 版本 11.3 和更高版本的设备。 有效值为 0 至 90|
+|softwareUpdateMajorOSDeferredInstallDelayInDays|Int32|指定 1 (1-90) 延迟主要操作系统软件更新的可见性的天数。 适用于运行 macOS 版本 11.3 和更高版本的设备。 有效值为 0 至 90|
+|softwareUpdateMinorOSDeferredInstallDelayInDays|Int32|指定 1 (1-90) 延迟次要操作系统软件更新的可见性的天数。 适用于运行 macOS 版本 11.3 和更高版本的设备。 有效值为 0 至 90|
 |softwareUpdateNonOSDeferredInstallDelayInDays|Int32|指定 1 (1-90) 延迟非操作系统软件更新的可见性的天数。 适用于运行 macOS 版本 11.3 和更高版本的设备。 有效值为 0 至 90|
 
 

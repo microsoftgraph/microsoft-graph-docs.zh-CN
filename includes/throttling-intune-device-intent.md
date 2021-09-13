@@ -1,14 +1,14 @@
 ---
 author: davidmu1
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: msgraph
 ms.topic: include
-ms.openlocfilehash: 482263911100c42d9af40f52f9c978b61e072f83ecc8fba543dd315d4f6468f6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 05bc8aa6170e67fb545826d2d18f9c11b07d3129
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196626"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035669"
 ---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
@@ -20,4 +20,7 @@ ms.locfileid: "54196626"
 | 任何 | 每 20 秒 2000 个请求 | 每 20 秒 1000 个请求 |
 
 上述限制适用于下列资源:  
-deviceManagementAbstractComplexSettingDefinition, deviceManagementAbstractComplexSettingInstance, deviceManagementBooleanSettingInstance, deviceManagementCollectionSettingDefinition, deviceManagementCollectionSettingInstance, deviceManagementComplexSettingDefinition, deviceManagementComplexSettingInstance, deviceManagementIntegerSettingInstance, deviceManagementIntent, deviceManagementIntentAssignment, deviceManagementIntentDeviceSettingStateSummary, deviceManagementIntentDeviceState, deviceManagementIntentDeviceStateSummary, deviceManagementIntentSettingCategory, deviceManagementIntentUserState, deviceManagementIntentUserStateSummary, deviceManagementSettingCategory, deviceManagementSettingDefinition, deviceManagementSettingInstance, deviceManagementStringSettingInstance, deviceManagementTemplate, deviceManagementTemplateSettingCategory, securityBaselineCategoryStateSummary, securityBaselineDeviceState, securityBaselineSettingState, securityBaselineState, securityBaselineStateSummary, securityBaselineTemplate.
+
+| <!-- fake header--> | <!-- fake header--> |
+|--|--|
+|<ul> <li> [deviceManagementAbstractComplexSettingDefinition](/graph/api/resources/devicemanagementabstractcomplexsettingdefinition) <li> [deviceManagementAbstractComplexSettingInstance](/graph/api/resources/devicemanagementabstractcomplexsettinginstance) <li> [deviceManagementBooleanSettingInstance](/graph/api/resources/devicemanagementbooleansettinginstance) <li> [deviceManagementCollectionSettingDefinition](/graph/api/resources/devicemanagementcollectionsettingdefinition) <li> [deviceManagementCollectionSettingInstance](/graph/api/resources/devicemanagementcollectionsettinginstance) <li> [deviceManagementComplexSettingDefinition](/graph/api/resources/devicemanagementcomplexsettingdefinition) <li> [deviceManagementComplexSettingInstance](/graph/api/resources/devicemanagementcomplexsettinginstance) <li> [deviceManagementIntegerSettingInstance](/graph/api/resources/devicemanagementintegersettinginstance) <li> [deviceManagementIntent](/graph/api/resources/devicemanagementintent) <li> [deviceManagementIntentAssignment](/graph/api/resources/devicemanagementintentassignment) <li> [deviceManagementIntentDeviceSettingStateSummary](/graph/api/resources/devicemanagementintentdevicesettingstatesummary) <li> [deviceManagementIntentDeviceState](/graph/api/resources/devicemanagementintentdevicestate) <li> [deviceManagementIntentDeviceStateSummary](/graph/api/resources/devicemanagementintentdevicestatesummary) <li> [deviceManagementIntentSettingCategory](/graph/api/resources/devicemanagementintentsettingcategory) </ul>| <ul> <li> [deviceManagementIntentUserState](/graph/api/resources/devicemanagementintentuserstate) <li> [deviceManagementIntentUserStateSummary](/graph/api/resources/devicemanagementintentuserstatesummary) <li> [deviceManagementSettingCategory](/graph/api/resources/devicemanagementsettingcategory) <li> [deviceManagementSettingDefinition](/graph/api/resources/devicemanagementsettingdefinition) <li> [deviceManagementSettingInstance](/graph/api/resources/devicemanagementsettinginstance) <li> [deviceManagementStringSettingInstance](/graph/api/resources/devicemanagementstringsettinginstance) <li> [deviceManagementTemplate](/graph/api/resources/devicemanagementtemplate) <li> [deviceManagementTemplateSettingCategory](/graph/api/resources/devicemanagementtemplatesettingcategory) <li> [securityBaselineCategoryStateSummary](/graph/api/resources/securitybaselinecategorystatesummary) <li> [securityBaselineDeviceState](/graph/api/resources/securitybaselinedevicestate) <li> [securityBaselineSettingState](/graph/api/resources/securitybaselinesettingstate) <li> [securityBaselineState](/graph/api/resources/securitybaselinestate) <li> [securityBaselineStateSummary](/graph/api/resources/securitybaselinestatesummary) <li> [securityBaselineTemplate](/graph/api/resources/securitybaselinetemplate)  </ul>|

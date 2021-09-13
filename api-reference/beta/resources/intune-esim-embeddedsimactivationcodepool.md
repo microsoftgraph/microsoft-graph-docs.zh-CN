@@ -2,15 +2,15 @@
 title: embeddedSIMActivationCodePool 资源类型
 description: 池表示一组嵌入式 SIM 卡激活代码。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9579f4af46ca2b35fde91888ced9973590634095
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1d5ae060b2bef0ed4d7cfc3d167211df243a65c1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801071"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039872"
 ---
 # <a name="embeddedsimactivationcodepool-resource-type"></a>embeddedSIMActivationCodePool 资源类型
 

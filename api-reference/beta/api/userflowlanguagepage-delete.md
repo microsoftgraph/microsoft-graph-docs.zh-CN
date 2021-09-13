@@ -2,23 +2,23 @@
 title: 删除 userFlowLanguagePage
 description: 删除 userFlowLanguagePage 对象中的值。
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ce15fce0565a7e7fdeb704d645a177342c7ad17d
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: ecee30722a0382da6589daf71c7f076a3150da1d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444614"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59040832"
 ---
 # <a name="delete-userflowlanguagepage"></a>删除 userFlowLanguagePage
 
 命名空间：microsoft.graph
 
-删除 [userFlowLanguagePage 对象](../resources/userflowlanguagepage.md) 中的值。 只能删除 overridesPage 中的值，用于自定义在用户流定义的用户旅程期间向用户显示的值。
+删除 [userFlowLanguagePage 对象中的](../resources/userflowlanguagepage.md) 值。 只能删除 overridesPage 中的值，这些值用于自定义在用户流定义的用户旅程期间向用户显示的值。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -26,16 +26,16 @@ ms.locfileid: "50444614"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）|IdentityUserFlow.ReadWrite.All|
 |委派（个人 Microsoft 帐户）| 不支持。|
-|Application|IdentityUserFlow.ReadWrite.All|
+|应用程序|IdentityUserFlow.ReadWrite.All|
 
 工作或学校帐户需要属于以下角色之一：
 
 * 全局管理员
-* 外部标识用户流管理员
+* 外部标识用户Flow管理员
 
 ## <a name="http-request"></a>HTTP 请求
 
-若要引用对象中的内容，必须使用 `$value` 。 这将返回对象中的内容，并允许你直接引用它。
+若要引用对象中的内容，必须使用 `$value` 。 这将返回 对象中的内容，并允许你直接引用它。
 
 <!-- {
   "blockType": "ignored"

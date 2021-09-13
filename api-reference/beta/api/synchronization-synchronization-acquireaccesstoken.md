@@ -1,16 +1,16 @@
 ---
-title: 同步：acquireAccessToken
+title: synchronization： acquireAccessToken
 description: 获取 OAuth 访问令牌以授权 Azure AD 预配服务将用户预配到应用程序中
 author: ArvindHarinder1
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 52933139560b117e0a5311a17907b9037825bd99
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: e3fd33635fe7a3bc3faed116705583c5a6c299a9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239462"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59040993"
 ---
 # <a name="acquireaccesstoken"></a>acquireAccessToken
 命名空间：microsoft.graph
@@ -50,7 +50,7 @@ POST /servicePrincipals/{servicePrincipalsId}/synchronization/acquireAccessToken
 
 |参数|类型|说明|
 |:---|:---|:---|
-|credentials|[synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md) 集合|表示单个机密值。|
+|credentials|[synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md) 集合|表示单个密码值。|
 
 
 

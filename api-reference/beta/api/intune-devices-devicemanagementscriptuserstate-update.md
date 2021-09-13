@@ -2,15 +2,15 @@
 title: 更新 deviceManagementScriptUserState
 description: 更新 deviceManagementScriptUserState 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ba0d873ca351c3acba0043eac58ed4ff4d2e840e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 11d469daa26ae99579078ad40b48e14b1866056e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58800210"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59042295"
 ---
 # <a name="update-devicemanagementscriptuserstate"></a>更新 deviceManagementScriptUserState
 
@@ -45,7 +45,7 @@ PATCH /deviceManagement/deviceCustomAttributeShellScripts/{deviceCustomAttribute
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -55,7 +55,7 @@ PATCH /deviceManagement/deviceCustomAttributeShellScripts/{deviceCustomAttribute
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|设备管理脚本用户状态实体的键。 此属性是只读的。|
+|id|String|设备管理脚本用户状态实体的键。 此属性是只读的。|
 |successDeviceCount|Int32|特定用户的成功设备计数。|
 |errorDeviceCount|Int32|特定用户的错误设备计数。|
 |userPrincipalName|String|特定用户的用户原则名称。|

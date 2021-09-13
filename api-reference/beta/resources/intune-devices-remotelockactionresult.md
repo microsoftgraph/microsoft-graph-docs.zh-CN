@@ -2,15 +2,15 @@
 title: remoteLockActionResult 资源类型
 description: 锁定操作结果，包含用于解锁的 PIN
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2de5cdd9cd3f3c8d9286da37829bbf06721ef242
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4631f90ccc360fc7611c073339809d1978039bc8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58807647"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59047007"
 ---
 # <a name="remotelockactionresult-resource-type"></a>remoteLockActionResult 资源类型
 

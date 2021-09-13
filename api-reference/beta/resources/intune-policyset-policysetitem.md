@@ -2,15 +2,15 @@
 title: policySetItem 资源类型
 description: 一个包含用于 PolicySet Item 的属性的类。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9570eac23c7ba0bdd186f4e0da3902b71ec2d413
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 05647e77adc9c6d0b9b65cebbdf2c2890c10e0c5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803221"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074855"
 ---
 # <a name="policysetitem-resource-type"></a>policySetItem 资源类型
 
@@ -36,10 +36,10 @@ ms.locfileid: "58803221"
 |lastModifiedDateTime|DateTimeOffset|PolicySetItem 的上次修改时间。|
 |payloadId|String|PolicySetItem 的 PayloadId。|
 |itemType|String|PolicySetItem 的 policySetType。|
-|displayName|字符串|PolicySetItem 的 DisplayName。|
-|状态|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|PolicySetItem 的状态。 可取值为：`unknown`、`validating`、`partialSuccess`、`success`、`error`、`notAssigned`。|
-|errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|错误代码（如果发生了任何错误）。 可能的值是：`noError`、`unauthorized`、`notFound`、`deleted`。|
-|guidedDeploymentTags|字符串集合|引导式部署的标记|
+|displayName|String|PolicySetItem 的 DisplayName。|
+|status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|PolicySetItem 的状态。 可取值为：`unknown`、`validating`、`partialSuccess`、`success`、`error`、`notAssigned`。|
+|errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|错误代码（如果发生了任何错误）。 可取值为：`noError`、`unauthorized`、`notFound`、`deleted`。|
+|guidedDeploymentTags|String collection|引导式部署的标记|
 
 ## <a name="relationships"></a>关系
 无

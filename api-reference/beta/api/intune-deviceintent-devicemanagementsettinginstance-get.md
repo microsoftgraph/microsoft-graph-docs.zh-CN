@@ -2,15 +2,15 @@
 title: 获取 deviceManagementSettingInstance
 description: 读取 deviceManagementSettingInstance 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d6c6f1f48c71a6747c879d452da9ab57ab9c1448
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 329ab40cce2e4fcc71e1aadd5eacf2a3d8dd8159
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58792061"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59048365"
 ---
 # <a name="get-devicemanagementsettinginstance"></a>获取 deviceManagementSettingInstance
 
@@ -49,7 +49,7 @@ GET /deviceManagement/templates/{deviceManagementTemplateId}/categories/{deviceM
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

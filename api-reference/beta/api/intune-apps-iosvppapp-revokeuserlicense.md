@@ -2,15 +2,15 @@
 title: revokeUserLicense 操作
 description: 撤销为给定应用分配的 iOS VPP 用户许可证。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4c3022b5f721eff6dba2c7634133a7c0888077d5
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 67de1120dfb5ea0bb3d8c0ed531652d4f49a4123
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58815923"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59043290"
 ---
 # <a name="revokeuserlicense-action"></a>revokeUserLicense 操作
 
@@ -45,7 +45,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInst
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

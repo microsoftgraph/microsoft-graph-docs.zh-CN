@@ -2,15 +2,15 @@
 title: 创建 importedDeviceIdentityResult
 description: 创建新的 importedDeviceIdentityResult 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6b9b4b59e3e263b398a059eace1fd6b3efbfecf0
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e034a1f564ebb8a155cb3ffdfb8c622ff2c80095
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797351"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59076976"
 ---
 # <a name="create-importeddeviceidentityresult"></a>创建 importedDeviceIdentityResult
 
@@ -43,7 +43,7 @@ POST /deviceManagement/importedDeviceIdentities
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,16 +53,16 @@ POST /deviceManagement/importedDeviceIdentities
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|导入的设备标识的 ID 继承自 [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|
+|id|String|导入的设备标识的 ID 继承自 [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|
 |importedDeviceIdentifier|String|导入的设备标识符 继承自 [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|
 |importedDeviceIdentityType|[importedDeviceIdentityType](../resources/intune-enrollment-importeddeviceidentitytype.md)|导入的设备标识的类型 继承自 [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)。 可取值为：`unknown`、`imei`、`serialNumber`。|
 |lastModifiedDateTime|DateTimeOffset|说明的 Last Modified DateTime 继承自 [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|
 |createdDateTime|DateTimeOffset|设备的创建日期时间 继承自 [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|
 |lastContactedDateTime|DateTimeOffset|设备的上次联系日期时间 继承自 [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|
-|description|字符串|设备描述 继承自 [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|
+|说明|String|设备描述 继承自 [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|
 |enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Intune 中的设备状态 继承自 [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
 |平台|[平台](../resources/intune-enrollment-platform.md)|设备平台。 继承自 [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)。 可取值为：`unknown`、`ios`、`android`、`windows`、`windowsMobile`、`macOS`。|
-|状态|布尔值|导入的设备标识的状态|
+|status|Boolean|导入的设备标识的状态|
 
 
 

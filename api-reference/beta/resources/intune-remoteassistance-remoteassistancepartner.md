@@ -2,15 +2,15 @@
 title: remoteAssistancePartner 资源类型
 description: RemoteAssistPartner 资源表示给定远程协助合作伙伴服务的元数据和状态。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 68279250c1cf23d5e2fd52261c255a8f64a3b2a8
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: cff6814d954003a5a77a7c9df5c9961d1bcebe7a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58815489"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039495"
 ---
 # <a name="remoteassistancepartner-resource-type"></a>remoteAssistancePartner 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58815489"
 RemoteAssistPartner 资源表示给定远程协助合作伙伴服务的元数据和状态。
 
 ## <a name="methods"></a>方法
-|方法|返回类型|Description|
+|方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 remoteAssistancePartners](../api/intune-remoteassistance-remoteassistancepartner-list.md)|[remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) 集合|列出 [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) 对象的属性和关系。|
 |[获取 remoteAssistancePartner](../api/intune-remoteassistance-remoteassistancepartner-get.md)|[remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md)|读取 [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) 对象的属性和关系。|

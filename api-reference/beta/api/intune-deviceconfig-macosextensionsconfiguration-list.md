@@ -6,11 +6,11 @@ ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
 ms.openlocfilehash: 727360af011bbb9b40b135dd744f242437d20c0b
-ms.sourcegitcommit: cb90b32fba5f03aaffe1de30886513083d8113db
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/01/2021
-ms.locfileid: "58850233"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59077487"
 ---
 # <a name="list-macosextensionsconfigurations"></a>列出 macOSExtensionsConfigurations
 
@@ -29,7 +29,7 @@ ms.locfileid: "58850233"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

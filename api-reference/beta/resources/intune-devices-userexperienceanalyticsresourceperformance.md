@@ -2,15 +2,15 @@
 title: userExperienceAnalyticsResourcePerformance 资源类型
 description: 用户体验分析资源性能实体。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9d2434ef45b0032b9d606dae7715213844c06e50
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ca9f8fa6449871e5ead56976808267bb6cf2bfd9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786969"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046979"
 ---
 # <a name="userexperienceanalyticsresourceperformance-resource-type"></a>userExperienceAnalyticsResourcePerformance 资源类型
 
@@ -41,7 +41,7 @@ ms.locfileid: "58786969"
 |model|String|用户体验分析设备模型。|
 |deviceCount|Int64|用户体验分析汇总了设备计数。|
 |manufacturer|String|用户体验分析设备制造商。|
-|cpuSpikeTimePercentage|双精度|CPU 峰值时间（以百分比表示）。 有效值为 0 至 100|
+|cpuSpikeTimePercentage|双精度|CPU 峰值时间百分比。 有效值为 0 至 100|
 |ramSpikeTimePercentage|双精度|以百分比表示的 RAM 峰值时间。 有效值为 0 至 100|
 |cpuSpikeTimeScore|Int32|用户体验分析设备 CPU 峰值时间分数。 有效值为 0 至 100|
 |cpuSpikeTimePercentageThreshold|双精度|cpuSpikeTimeScore 的阈值。 有效值为 0 至 100|

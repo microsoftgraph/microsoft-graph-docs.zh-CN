@@ -2,15 +2,15 @@
 title: appManagementLevel 枚举类型
 description: 应用的管理级别
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ad8c1763ba5ec4d049e72da755fce5f6715c0f15
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e3319ce27993d3ea0586129d6e5606efd45f3a47
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806612"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59075205"
 ---
 # <a name="appmanagementlevel-enum-type"></a>appManagementLevel 枚举类型
 

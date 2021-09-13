@@ -2,15 +2,15 @@
 title: deviceEnrollmentPlatformRestriction 资源类型
 description: 平台特定注册限制
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: baba1686c4b44a5eb1d6b48559a2b459da3e6d37
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7863eb4e0926490acfd9f064a7b21c719ab3f923
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801064"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039712"
 ---
 # <a name="deviceenrollmentplatformrestriction-resource-type"></a>deviceEnrollmentPlatformRestriction 资源类型
 
@@ -29,7 +29,7 @@ ms.locfileid: "58801064"
 |personalDeviceEnrollmentBlocked|Boolean|阻止个人拥有的设备注册|
 |osMinimumVersion|String|支持的最小 OS 版本|
 |osMaximumVersion|String|支持的最大 OS 版本|
-|blockedManufacturers|字符串集合|被阻止的制造商的集合。|
+|blockedManufacturers|String collection|被阻止的制造商的集合。|
 |blockedSkus|String collection|被阻止的 Sku 的集合。|
 
 ## <a name="relationships"></a>关系

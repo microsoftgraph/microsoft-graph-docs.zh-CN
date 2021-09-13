@@ -2,15 +2,15 @@
 title: officeUpdateChannel 枚举类型
 description: 用于指定 Office365 更新频道的枚举。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 073bfa785c65778cd083031086c3cd4f647cdf06
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b8d84a683ec9a7c250c848dcc625e4d48671cb80
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58821786"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59047259"
 ---
 # <a name="officeupdatechannel-enum-type"></a>officeUpdateChannel 枚举类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58821786"
 用于指定 Office365 更新频道的枚举。
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |无|0|尚未记录|
 |current|1|尚未记录|

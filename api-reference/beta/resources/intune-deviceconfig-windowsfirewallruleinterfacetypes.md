@@ -2,15 +2,15 @@
 title: windowsFirewallRuleInterfaceTypes 枚举类型
 description: 表示防火墙规则接口类型的标志。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 395a6aed6e6fad1e7dac5c33c7da0b69d0055528
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c5811ec29a97a23e22a6225d7b9b14bf53cfeda4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58808858"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064138"
 ---
 # <a name="windowsfirewallruleinterfacetypes-enum-type"></a>windowsFirewallRuleInterfaceTypes 枚举类型
 

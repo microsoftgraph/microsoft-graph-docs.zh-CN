@@ -2,15 +2,15 @@
 title: 创建 pfxRecryptionRequest
 description: 创建新的 pfxRecryptionRequest 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 23fd26c29ef9fe103144f8c11a93d77011a043a8
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 026ea14617cba1762722e81db2c58b423ec3535a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784539"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59034209"
 ---
 # <a name="create-pfxrecryptionrequest"></a>创建 pfxRecryptionRequest
 
@@ -43,7 +43,7 @@ POST /pfxRecryptionRequests
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,7 +51,7 @@ POST /pfxRecryptionRequests
 
 下表显示创建 pfxRecryptionRequest 时所需的属性。
 
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |tenantId|Guid|尚未记录|
 |userId|Guid|尚未记录|
@@ -59,7 +59,7 @@ POST /pfxRecryptionRequests
 |profileId|Guid|尚未记录|
 |thumbprint|String|尚未记录|
 |deviceKeyThumbprint|String|尚未记录|
-|状态|Int32|尚未记录|
+|status|Int32|尚未记录|
 |sourceType|Int32|尚未记录|
 |createdTime|DateTimeOffset|尚未记录|
 |lastModifiedTime|DateTimeOffset|尚未记录|

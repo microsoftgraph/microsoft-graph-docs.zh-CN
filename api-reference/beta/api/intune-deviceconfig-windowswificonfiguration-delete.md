@@ -2,15 +2,15 @@
 title: 删除 windowsWifiConfiguration
 description: 删除 windowsWifiConfiguration。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 02decba405a3cb6d6403b3574d82dd7f9275549d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6650d2adce8180c1b82264dbc3179f4cfd3a80af
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804937"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59082758"
 ---
 # <a name="delete-windowswificonfiguration"></a>删除 windowsWifiConfiguration
 
@@ -45,7 +45,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

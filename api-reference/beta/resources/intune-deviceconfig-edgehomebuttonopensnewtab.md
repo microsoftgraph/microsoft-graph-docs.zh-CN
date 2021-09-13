@@ -2,15 +2,15 @@
 title: edgeHomeButtonOpensNewTab 资源类型
 description: 显示"开始"按钮;单击"开始"按钮加载"新建"选项卡页。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fb75b76899c7bf7ff8424f7c3b17e08ce1cfa785
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a9e8f455b593a61a5181b4b5a416784320cafe0b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786002"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59040419"
 ---
 # <a name="edgehomebuttonopensnewtab-resource-type"></a>edgeHomeButtonOpensNewTab 资源类型
 

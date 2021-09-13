@@ -1,15 +1,15 @@
 ---
 title: Microsoft Intune 中的共享资源 - Microsoft Graph API
-description: 列出支持租户Graph多个工作流的 Microsoft (REST) Intune 终结点 API。
-localization_priority: Normal
+description: 列出支持Graph多个工作流的适用于 Intune 终结点的 Microsoft (API) REST 应用程序。
+ms.localizationpriority: medium
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 672672edd0955070c4df6a4a90c78c5c5b7329ce
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 86a4466538c88ca758cb91ff541e880b8722cd69
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816434"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074806"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>共享资源Microsoft Intune
 

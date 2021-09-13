@@ -2,15 +2,15 @@
 title: 删除 androidManagedStoreWebApp
 description: 删除 androidManagedStoreWebApp。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5adace0cf35dbd7f3d7a2fe05fce279d277d2101
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 02cbe2cd91c98af8ff6b0616dbe94cba9bc8bae6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58817626"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59077963"
 ---
 # <a name="delete-androidmanagedstorewebapp"></a>删除 androidManagedStoreWebApp
 
@@ -45,7 +45,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIn
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

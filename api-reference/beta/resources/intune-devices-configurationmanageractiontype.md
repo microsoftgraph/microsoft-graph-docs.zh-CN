@@ -2,15 +2,15 @@
 title: configurationManagerActionType 枚举类型
 description: Configuration Manager 客户端上的操作类型
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3308ae8369458d44f128863b4afd3ab83a07b8f4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 104bc95a7fdd7c9ad77786f0358a21054a972b5b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818083"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59040258"
 ---
 # <a name="configurationmanageractiontype-enum-type"></a>configurationManagerActionType 枚举类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58818083"
 Configuration Manager 客户端上的操作类型
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |refreshMachinePolicy|0|在 Configuration Manager 客户端上刷新计算机策略|
 |refreshUserPolicy|1|在 Configuration Manager 客户端上刷新用户策略|

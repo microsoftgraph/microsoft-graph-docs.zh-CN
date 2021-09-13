@@ -1,16 +1,16 @@
 ---
 title: 日历资源类型
 description: 日历即事件容器。 它可以是用户的日历，或者是 Microsoft 365 组的默认日历。
-localization_priority: Priority
+ms.localizationpriority: high
 author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: a412e6f8a8a8faa78cbe8f09f17635742bbd1e2c60a470cf1e5f9e544d424717
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 17eb6e419a4f7a0944ee1bcfbfe5d1b2988bf671
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54130392"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129983"
 ---
 # <a name="calendar-resource-type"></a>日历资源类型
 
@@ -53,7 +53,7 @@ ms.locfileid: "54130392"
 |changeKey|字符串|标识 calendar 对象的版本。每次日历更改时，changeKey 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。只读。|
 |颜色|calendarColor|在 UI 中指定将该日历与其他日历区分开来的颜色主题。 属性值为： `auto`、 `lightBlue`、 `lightGreen`、 `lightOrange`、 `lightGray`、 `lightYellow`、 `lightTeal`、 `lightPink`、 `lightBrown`、 `lightRed`、 `maxColor`。|
 |defaultOnlineMeetingProvider|onlineMeetingProviderType|从此日历发送的会议的默认联机会议提供商。 可取值为：`unknown`、`skypeForBusiness`、`skypeForConsumer`、`teamsForBusiness`。|
-|hexColor |String |日历颜色，以三个十六进制值的六进制值（每个值从 00 到 FF）表示，表示 RGB 颜色空间内颜色的红色、绿色或蓝色组成部分。 若用户从未明确设置日历的颜色，则此属性为空。 只读。|
+|hexColor |String |日历颜色以三个十六进制值的十六进制颜色代码表示，每个值的范围为从 00 到 FF，表示 RGB 颜色空间中颜色的红色、绿色或蓝色分量。如果用户从未显式设置日历颜色，则此属性为空。只读。|
 |id|String|日历的唯一标识符。只读。|
 |isDefaultCalendar|Boolean|`true` 如果这是默认情况下创建新事件的默认日历，则 `false` 更改。|
 |isRemovable|Boolean| 表示是否可以从用户邮箱删除此用户日志。|

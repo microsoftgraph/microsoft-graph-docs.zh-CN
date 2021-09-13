@@ -2,15 +2,15 @@
 title: windowsUpdateStatus 枚举类型
 description: Windows配置设备状态更新
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 73404f8d01ab6ea047cb94ecc3b21939e4fb3a6c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b07580a4057ba79e932a442d38bac323936df751
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803803"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59075387"
 ---
 # <a name="windowsupdatestatus-enum-type"></a>windowsUpdateStatus 枚举类型
 

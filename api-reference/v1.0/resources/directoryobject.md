@@ -1,16 +1,16 @@
 ---
 title: directoryObject 资源类型
-description: 表示 Azure Active Directory 对象。**directoryObject** 类型是其他许多目录实体类型的基类型。
-localization_priority: Priority
+description: 表示 Azure Active Directory 对象。directoryObject 类型是其他许多目录实体类型的基类型。
+ms.localizationpriority: high
 author: keylimesoda
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: f814ee80e857528686dbc432ce926b8a8eb636bd433042aeeb015727353b02c3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b5b5d67be7d94ca2400c29b4a05415f979419e9e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54202446"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59089793"
 ---
 # <a name="directoryobject-resource-type"></a>directoryObject 资源类型
 
@@ -30,6 +30,7 @@ ms.locfileid: "54202446"
 |[getMemberObjects](../api/directoryobject-getmemberobjects.md)|String collection| 返回 user、group 或 directory 对象所属的所有组和目录角色。检查是可传递的。 |
 |[getByIds](../api/directoryobject-getbyids.md) | [directoryObject](directoryobject.md) 集合 | 基于提供的 ID 集获取目录对象集。 |
 |[validateProperties](../api/directoryobject-validateproperties.md)|Json| 验证 Microsoft 365 组的显示名称或邮件昵称是否符合命名策略。 |
+|delta|[directoryObject](directoryObject.md) 集合| 获取目录对象的增量更改，例如，[用户](../api/user-delta.md)、[组](../api/group-delta.md)、[应用程序](../api/application-delta.md)和[服务主体](../api/serviceprincipal-delta.md)。 每个派生类型都支持按 **id** 进行筛选。有关 delta 查询的详细信息，请参阅 [使用 delta 查询跟踪 Microsoft Graph 数据中的更改](/graph/delta-query-overview)。|
 
 ## <a name="properties"></a>属性
 

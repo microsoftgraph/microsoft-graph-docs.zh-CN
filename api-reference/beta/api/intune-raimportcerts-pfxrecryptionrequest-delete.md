@@ -2,15 +2,15 @@
 title: 删除 pfxRecryptionRequest
 description: 删除 pfxRecryptionRequest。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c27156496198e71bb4f762e6953b95882609145c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c9a19bdd46ee341ee5e9c2fd094302a90be53039
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783020"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59034195"
 ---
 # <a name="delete-pfxrecryptionrequest"></a>删除 pfxRecryptionRequest
 
@@ -43,7 +43,7 @@ DELETE /pfxRecryptionRequests/{pfxRecryptionRequestsId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

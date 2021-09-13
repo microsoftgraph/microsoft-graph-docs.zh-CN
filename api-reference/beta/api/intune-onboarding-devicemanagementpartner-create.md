@@ -2,15 +2,15 @@
 title: 创建 deviceManagementPartner
 description: 创建新的 deviceManagementPartner 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4479fc5937650554b5ae741729273681a24b91d9
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 51a30722c6c9a2734a3fa3ad2ea4517fbf6b1dc3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791296"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59076724"
 ---
 # <a name="create-devicemanagementpartner"></a>创建 deviceManagementPartner
 
@@ -43,7 +43,7 @@ POST /deviceManagement/deviceManagementPartners
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,7 +53,7 @@ POST /deviceManagement/deviceManagementPartners
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的 ID|
+|id|String|实体的 ID|
 |lastHeartbeatDateTime|DateTimeOffset|管理员启用“连接到设备管理合作伙伴”选项后上次检测信号的时间戳|
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|此租户的合作伙伴状态。 可取值为：`unknown`、`unavailable`、`enabled`、`terminated`、`rejected`、`unresponsive`。|
 |partnerAppType|[deviceManagementPartnerAppType](../resources/intune-onboarding-devicemanagementpartnerapptype.md)|合作伙伴应用类型。 可取值为：`unknown`、`singleTenantApp`、`multiTenantApp`。|

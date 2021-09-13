@@ -2,15 +2,15 @@
 title: localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUserType 枚举类型
 description: LocalSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser 的可能值
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 01e7ffc99a34f23f43e227b9e5ba52bcc4b7ef66
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 600d064d63b55f9401ac14d6676fb12c911cc502
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58812345"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59047140"
 ---
 # <a name="localsecurityoptionsformatandejectofremovablemediaallowedusertype-enum-type"></a>localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUserType 枚举类型
 

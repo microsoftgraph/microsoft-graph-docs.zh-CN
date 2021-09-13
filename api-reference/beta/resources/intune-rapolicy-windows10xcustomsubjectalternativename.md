@@ -2,15 +2,15 @@
 title: windows10XCustomSubjectAlternativeName 资源类型
 description: 'SCEP 或 PFX 创建 (身份验证证书的基本配置文件) '
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 842e6b171b5a82a163c6f9aa578ef9cbb869dc6b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9b278663e92a0b056ecfafa5d6ea498709d1c4c2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796830"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039642"
 ---
 # <a name="windows10xcustomsubjectalternativename-resource-type"></a>windows10XCustomSubjectAlternativeName 资源类型
 

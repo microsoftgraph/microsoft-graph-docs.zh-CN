@@ -2,15 +2,15 @@
 title: managedAppProtection 资源类型
 description: 用于为指定的一组应用配置详细管理设置的策略
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6119daa33b3340470bfed4432533308181edc1ff
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 727624f7db39bc65de7d2575bcf22dc84c378749
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806605"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59075002"
 ---
 # <a name="managedappprotection-resource-type"></a>managedAppProtection 资源类型
 
@@ -36,10 +36,10 @@ ms.locfileid: "58806605"
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|策略显示名称。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
-|description|字符串|策略的说明。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|说明|String|策略的说明。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |createdDateTime|DateTimeOffset|创建策略的日期和时间。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改策略的时间。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
-|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |id|String|实体的键。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |version|String|实体的版本。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |periodOfflineBeforeAccessCheck|Duration|设备未连接到 Internet 时在该时间段后检查访问权限。|
@@ -72,7 +72,7 @@ ms.locfileid: "58806605"
 |minimumRequiredAppVersion|String|低于指定版本的版本将阻止托管应用访问公司数据。|
 |minimumWarningAppVersion|String|低于指定版本的版本将导致托管应用出现警告消息。|
 |minimumWipeOsVersion|String|小于或等于指定版本的版本将擦除托管应用和关联的公司数据。|
-|minimumWipeAppVersion|字符串|小于或等于指定版本的版本将擦除托管应用和关联的公司数据。|
+|minimumWipeAppVersion|String|小于或等于指定版本的版本将擦除托管应用和关联的公司数据。|
 |appActionIfDeviceComplianceRequired|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|如果 DeviceComplianceRequired 设置为 true，则定义设备取得 root 或越狱权限时可阻止或擦除的托管应用行为。 可取值为：`block`、`wipe`、`warn`。|
 |appActionIfMaximumPinRetriesExceeded|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|根据错误的 pin 重试次数上限，定义托管应用行为（阻止或擦除）。 可取值为：`block`、`wipe`、`warn`。|
 |pinRequiredInsteadOfBiometricTimeout|期限|应用 PIN（而不是非生物识别密码）的超时（分钟）|

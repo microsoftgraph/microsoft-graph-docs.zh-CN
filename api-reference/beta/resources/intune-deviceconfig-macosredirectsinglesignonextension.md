@@ -1,16 +1,16 @@
 ---
 title: macOSRedirectSingleSignOnExtension 资源类型
-description: 表示 macOS 设备的重定向类型单Sign-On扩展配置文件。
+description: 表示 macOS 设备的重定向类型Sign-On扩展配置文件。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 80691dd6d564a1c6776920c61fe0c854afb6e6de
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: de39c91ddfc611d31e89837f6d894734eb031502
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789620"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59047126"
 ---
 # <a name="macosredirectsinglesignonextension-resource-type"></a>macOSRedirectSingleSignOnExtension 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "58789620"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-表示 macOS 设备的重定向类型单Sign-On扩展配置文件。
+表示 macOS 设备的重定向类型Sign-On扩展配置文件。
 
 
 继承自 [macOSSingleSignOnExtension](../resources/intune-deviceconfig-macossinglesignonextension.md)

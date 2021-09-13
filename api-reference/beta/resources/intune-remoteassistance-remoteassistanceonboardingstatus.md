@@ -2,15 +2,15 @@
 title: remoteAssistanceOnboardingStatus 枚举类型
 description: 当前的 TeamViewer 连接器状态
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e89f44ce6df8aaae34e8cab6e5332178d8b6eed2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ea059025920da62824d816062fe60c03d6b5938d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804482"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039481"
 ---
 # <a name="remoteassistanceonboardingstatus-enum-type"></a>remoteAssistanceOnboardingStatus 枚举类型
 

@@ -2,15 +2,15 @@
 title: unifiedRoleManagementPolicyEnablementRule 资源类型
 description: unifiedRoleManagementPolicyEnablementRule 指定与角色管理策略关联的启用规则。 它派生自 microsoft.graph.unifiedRoleManagementPolicyRule。
 author: shauliu1
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: fe1981ccccae6aefe3f94c2ecf85450744cf5463
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: 0919ed951b13cf1f8dcfca6aef9fc264a343f29f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453581"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046468"
 ---
 # <a name="unifiedrolemanagementpolicyenablementrule-resource-type"></a>unifiedRoleManagementPolicyEnablementRule 资源类型
 
@@ -23,7 +23,7 @@ unifiedRoleManagementPolicyEnablementRule 指定与角色管理策略关联的�
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|enabledRules|字符串集合|启用的规则。 允许的值包括 MultifactorAuthentication、Justification、Ticketing。|
+|enabledRules|String collection|启用的规则。 允许的值包括 MultifactorAuthentication、Justification、Ticketing。|
 |id|String|规则的唯一标识符。 继承自 [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
 |target|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|规则的目标。 继承自 [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
 

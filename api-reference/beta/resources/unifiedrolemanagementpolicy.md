@@ -2,15 +2,15 @@
 title: unifiedRoleManagementPolicy 资源类型
 description: unifiedRoleManagementPolicy 指定与作用域和角色定义关联的各种策略。 它派生自 microsoft.graph.policyBase。
 author: shauliu1
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 4bfab06814bd9a443ad15f81e1cb96dcba475b3f
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: b27726e12815f058091bc09308344c150cb73b2f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58454211"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046517"
 ---
 # <a name="unifiedrolemanagementpolicy-resource-type"></a>unifiedRoleManagementPolicy 资源类型
 
@@ -32,11 +32,11 @@ unifiedRoleManagementPolicy 指定与作用域和角色定义关联的各种策�
 |说明|String|策略的说明。|
 |displayName|String|策略的显示名称。|
 |id|String|策略的唯一标识符。|
-|isOrganizationDefault|Boolean|对于将应用于所有作用域和角色的单个租户范围策略，这只能设置为 true。 将 scopeId 设置为"/"，将 scopeType 设置为 Directory。|
+|isOrganizationDefault|Boolean|对于将适用于所有作用域和角色的单个租户范围策略，这只能设置为 true。 将 scopeId 设置为"/"，将 scopeType 设置为 Directory。|
 |lastModifiedBy|[identity](../resources/identity.md)|上次修改角色设置的标识。|
 |lastModifiedDateTime|DateTimeOffset|上次修改角色设置的时间。|
 |scopeId|String|创建策略的范围的 ID。 例如， "/"、groupId 等。|
-|scopeType|字符串|创建策略的范围类型。 Directory、DirectoryRole、Group 之一。|
+|scopeType|String|创建策略的范围类型。 Directory、DirectoryRole、Group 之一。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|

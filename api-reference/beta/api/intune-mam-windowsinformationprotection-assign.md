@@ -2,15 +2,15 @@
 title: assign 操作
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 39c605233eb9282a5d458e4635b2d77fdb51402c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: fa9c04016969d7fe3d13b14f1180287c93083549
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790232"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59082029"
 ---
 # <a name="assign-action"></a>分配操作
 
@@ -45,7 +45,7 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/int
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,7 +53,7 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/int
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |assignments|[targetedManagedAppPolicyAssignment](../resources/intune-mam-targetedmanagedapppolicyassignment.md) 集合|尚未记录|
 

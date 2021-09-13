@@ -2,15 +2,15 @@
 title: 更新 deviceManagementIntentSettingCategory
 description: 更新 deviceManagementIntentSettingCategory 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a1f67ec9af1878c557ee9cb873385dca6ba4660f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: bd303b525f3550ba5d769cc7ca723854412272a5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58800224"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59082681"
 ---
 # <a name="update-devicemanagementintentsettingcategory"></a>更新 deviceManagementIntentSettingCategory
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}/categories/{deviceMan
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,9 +53,9 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}/categories/{deviceMan
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|类别 ID 继承自 [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
+|id|String|类别 ID 继承自 [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
 |displayName|String|类别名称 继承自 [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
-|hasRequiredSetting|布尔值|类别包含顶级所需设置 继承自 [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
+|hasRequiredSetting|Boolean|类别包含顶级所需设置 继承自 [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
 
 
 

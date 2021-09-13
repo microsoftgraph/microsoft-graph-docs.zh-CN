@@ -2,15 +2,15 @@
 title: certificateDestinationStore 枚举类型
 description: 证书目标存储的可能值。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c3ed569b20b79997c2a78591235c041088abd0df
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 11f109ec3e1a30823007ae81d18b8409ec8df18b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795127"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039187"
 ---
 # <a name="certificatedestinationstore-enum-type"></a>certificateDestinationStore 枚举类型
 

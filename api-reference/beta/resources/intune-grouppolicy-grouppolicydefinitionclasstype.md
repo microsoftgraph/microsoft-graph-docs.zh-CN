@@ -2,15 +2,15 @@
 title: groupPolicyDefinitionClassType 枚举类型
 description: 组策略定义类类型。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 594d6f02dfa615ba049c391a28bf425dfb30c89f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: be9989cb45525e3a7f749008002e33050baf31f4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58817346"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039838"
 ---
 # <a name="grouppolicydefinitionclasstype-enum-type"></a>groupPolicyDefinitionClassType 枚举类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58817346"
 组策略定义类类型。
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |用户|0|标识策略设置在用户配置节点下的位置。|
 |计算机|1|标识策略设置在计算机配置节点下的位置。|

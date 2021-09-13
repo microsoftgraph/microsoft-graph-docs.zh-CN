@@ -2,15 +2,15 @@
 title: pfxUserCertificate 资源类型
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e78b584f908e1c257d645719bb220c05324fc790
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2d1b7482da130a0c5208aa3e0b36315be0a3bd98
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791079"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59080672"
 ---
 # <a name="pfxusercertificate-resource-type"></a>pfxUserCertificate 资源类型
 
@@ -45,7 +45,7 @@ ms.locfileid: "58791079"
 |providerName|String|尚未记录|
 |encryptionKeyName|String|尚未记录|
 |paddingScheme|Int32|尚未记录|
-|状态|Int32|尚未记录|
+|status|Int32|尚未记录|
 |intendedPurpose|Int32|尚未记录|
 |createdTime|DateTimeOffset|尚未记录|
 |isDeleted|Boolean|尚未记录|

@@ -2,15 +2,15 @@
 title: vpnClientAuthenticationType 枚举类型
 description: VPN 客户端身份验证类型
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 68cbda2555f4ef006ba2a71011607c587508332f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: fda4de7db58c4d57eb8c793cc9cca66d4fb30411
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795863"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59047063"
 ---
 # <a name="vpnclientauthenticationtype-enum-type"></a>vpnClientAuthenticationType 枚举类型
 

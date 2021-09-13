@@ -2,15 +2,15 @@
 title: deviceManagementExchangeDeviceClass 资源类型
 description: 设备中的设备Exchange。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8d41059b9b38d63e8e58c05eea3aa08f492db234
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f8d3c307d1be472363f48439ef98e27ef6ccaeb9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58776979"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59080812"
 ---
 # <a name="devicemanagementexchangedeviceclass-resource-type"></a>deviceManagementExchangeDeviceClass 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58776979"
 设备中的设备Exchange。
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |name|String|受此规则影响的设备类的名称。|
 |type|[deviceManagementExchangeAccessRuleType](../resources/intune-onboarding-devicemanagementexchangeaccessruletype.md)|受此规则影响的设备类型，例如型号、系列。 可取值为：`family`、`model`。|

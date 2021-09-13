@@ -2,15 +2,15 @@
 title: vppToken 资源类型
 description: 通过 Apple Volume Purchase Program 企业版或教育版为 iOS 应用购买多个许可证。 这涉及从 Apple 网站设置 Apple VPP 帐户并将 Apple VPP 企业版 或教育版令牌上传到 Intune。 然后可以将批量采购信息与 Intune 同步，并跟踪批量采购应用的使用情况。 可上传多个 Apple VPP 企业版或教育版令牌。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5b4660469cc421493b1aa2729612d3e9be1908a2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3723be31160f6a6d884de97c03797e56afdfbc74
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816441"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046692"
 ---
 # <a name="vpptoken-resource-type"></a>vppToken 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58816441"
 通过 Apple Volume Purchase Program 企业版或教育版为 iOS 应用购买多个许可证。 这涉及从 Apple 网站设置 Apple VPP 帐户并将 Apple VPP 企业版 或教育版令牌上传到 Intune。 然后可以将批量采购信息与 Intune 同步，并跟踪批量采购应用的使用情况。 可上传多个 Apple VPP 企业版或教育版令牌。
 
 ## <a name="methods"></a>方法
-|方法|返回类型|Description|
+|方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 vppTokens](../api/intune-onboarding-vpptoken-list.md)|[vppToken](../resources/intune-onboarding-vpptoken.md) 集合|列出 [vppToken](../resources/intune-onboarding-vpptoken.md) 对象的属性和关系。|
 |[获取 vppToken](../api/intune-onboarding-vpptoken-get.md)|[vppToken](../resources/intune-onboarding-vpptoken.md)|读取 [vppToken](../resources/intune-onboarding-vpptoken.md) 对象的属性和关系。|
@@ -38,7 +38,7 @@ ms.locfileid: "58816441"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|这是创建 appleVolumePurchaseProgramToken 时自动生成的。 它是实体的键。|
+|id|String|这是创建 appleVolumePurchaseProgramToken 时自动生成的。 它是实体的键。|
 |organizationName|String|与 Apple Volume Purchase Program 令牌关联的组织|
 |vppTokenAccountType|[vppTokenAccountType](../resources/intune-shared-vpptokenaccounttype.md)|与给定的 Apple Volume Purchase Program 令牌关联的批量购买计划的类型。 可取值为：`business`、`education`。 可取值为：`business`、`education`。|
 |appleId|String|与给定的 Apple Volume Purchase Program 令牌关联的 Apple ID。|

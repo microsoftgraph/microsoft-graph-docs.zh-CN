@@ -2,15 +2,15 @@
 title: detectedApp 资源类型
 description: 托管设备上安装的托管或未托管应用。 未托管应用仅出现在标记为公司所有的设备上。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e8c22404a1ab086ef6ec9138682e3e023e1fb31c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b0608a510495ef8887501ab775d8237d54279060
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796710"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59040174"
 ---
 # <a name="detectedapp-resource-type"></a>detectedApp 资源类型
 

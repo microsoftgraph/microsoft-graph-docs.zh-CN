@@ -2,15 +2,15 @@
 title: 列出 userExperienceAnalyticsDeviceWithoutCloudIdentities
 description: 列出 userExperienceAnalyticsDeviceWithoutCloudIdentity 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 90cf5319527f770dcbcea1928f7907657a244b2f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1206a823ab34801e337c36691ccf4d7e1a79e458
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797969"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59042184"
 ---
 # <a name="list-userexperienceanalyticsdevicewithoutcloudidentities"></a>列出 userExperienceAnalyticsDeviceWithoutCloudIdentities
 
@@ -43,7 +43,7 @@ GET /deviceManagement/userExperienceAnalyticsDevicesWithoutCloudIdentity
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

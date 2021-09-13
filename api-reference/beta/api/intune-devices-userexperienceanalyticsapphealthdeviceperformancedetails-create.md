@@ -2,15 +2,15 @@
 title: 创建 userExperienceAnalyticsAppHealthDevicePerformanceDetails
 description: 创建新的 userExperienceAnalyticsAppHealthDevicePerformanceDetails 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 265b466c934c63a22b68be60e29d7b3fbf3db329
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2b926bfe799204f7d13dfc84723ef32504586a52
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790561"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59082611"
 ---
 # <a name="create-userexperienceanalyticsapphealthdeviceperformancedetails"></a>创建 userExperienceAnalyticsAppHealthDevicePerformanceDetails
 
@@ -43,7 +43,7 @@ POST /deviceManagement/userExperienceAnalyticsAppHealthDevicePerformanceDetails
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -55,10 +55,10 @@ POST /deviceManagement/userExperienceAnalyticsAppHealthDevicePerformanceDetails
 |:---|:---|:---|
 |id|String|用户体验分析设备性能对象的唯一标识符。|
 |eventDateTime|DateTimeOffset|事件发生的时间。|
-|eventType|字符串|事件的类型。|
+|eventType|String|事件的类型。|
 |appDisplayName|String|发生事件的应用程序的友好名称。|
 |appPublisher|String|应用程序的发布者。|
-|appVersion|字符串|应用程序的版本。|
+|appVersion|String|应用程序的版本。|
 |deviceId|String|设备的 ID。|
 |deviceDisplayName|String|设备的名称。|
 

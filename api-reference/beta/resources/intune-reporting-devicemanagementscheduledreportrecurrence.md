@@ -2,15 +2,15 @@
 title: deviceManagementScheduledReportRecurrence 枚举类型
 description: 计划报告的重复的可能值
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 402e6a673a1bb4e811dad72c17159e8793dfbe74
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 910bbd935e489cf292237f4de3554ab2a945f8d9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803438"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039320"
 ---
 # <a name="devicemanagementscheduledreportrecurrence-enum-type"></a>deviceManagementScheduledReportRecurrence 枚举类型
 

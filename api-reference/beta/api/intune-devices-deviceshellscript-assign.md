@@ -2,15 +2,15 @@
 title: assign 操作
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1ba48e448539bf1cf41b1ffc117f64b17d4f9f39
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f1b47206a3597b7486e3b7967e4a9549a5404bc0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58800882"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59042268"
 ---
 # <a name="assign-action"></a>分配操作
 
@@ -43,7 +43,7 @@ POST /deviceManagement/deviceShellScripts/{deviceShellScriptId}/assign
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

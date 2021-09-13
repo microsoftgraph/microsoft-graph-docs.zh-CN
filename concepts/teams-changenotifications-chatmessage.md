@@ -2,15 +2,15 @@
 title: 使用 Microsoft Graph 获取 Teams 频道和聊天中消息的更改通知
 description: 更改通知使你能够收听对频道或聊天中消息的更改
 author: RamjotSingh
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 82474e8fc13cb1a9dc4d8cc582a9a7aea4f32198
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: 40b6643e5d1b5008730212ff5239ea9de55f151c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58667806"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59071705"
 ---
 # <a name="get-change-notifications-for-messages-in-teams-channels-and-chats-using-microsoft-graph"></a>使用 Microsoft Graph 获取 Teams 频道和聊天中消息的更改通知
 
@@ -257,6 +257,39 @@ Content-Type: application/json
 }
 ```
 
+## <a name="subscribe-to-changes-at-the-user-level"></a>订阅用户级别的更改
+
+若要跟踪特定用户参与的所有聊天中的消息，可以在用户级别创建更改通知订阅。 为此，请订阅 `/users/{user-id}/chats/getAllMessages`。 不管是在 *委派* 模式还是 *仅应用程序* 模式下，此资源都支持在通知中 [包含资源数据](webhooks-with-resource-data.md)。
+
+用户级别聊天的消息传递订阅还支持通过 `$search` 查询参数进行基于关键字的搜索。
+
+> **注意：** 将来，Microsoft 可能会要求你或你的客户根据通过 API 访问的数据量支付额外的费用。
+
+### <a name="permissions"></a>权限
+
+|权限类型      | 权限（从最低特权到最高特权）              | 版本支持 |
+|:--------------------|:---------------------------------------------------------|:---------------------|
+|委派（工作或学校帐户） | Chat.Read、Chat.ReadWrite | beta 版 |
+|委派（个人 Microsoft 帐户） | 不支持。    | 不支持。 |
+|应用程序 | Chat.Read.All、Chat.ReadWrite.All | beta 版 |
+
+### <a name="example-subscribe-to-messages-across-all-chats-a-particular-user-is-part-of"></a>示例：订阅特定用户参与的所有聊天中的消息
+
+```http
+POST https://graph.microsoft.com/beta/subscriptions
+Content-Type: application/json
+
+{
+  "changeType": "created,updated,deleted",
+  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
+  "resource": "/users/{user-id}/chats/getAllMessages",
+  "includeResourceData": true,
+  "encryptionCertificate": "{base64encodedCertificate}",
+  "encryptionCertificateId": "{customId}",
+  "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
+  "clientState": "{secretClientState}"
+}
+```
 ## <a name="notification-payloads"></a>通知负载
 
 根据你的订阅，你可以获取包含或不含资源数据的通知。 通过订阅资源数据，你将在收到通知的同时获得消息负载，而无需回调并获取内容。

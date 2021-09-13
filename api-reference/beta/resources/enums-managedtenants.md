@@ -2,15 +2,15 @@
 title: 多租户管理枚举值
 description: Microsoft Graph多租户管理枚举值
 author: isaiahwilliams
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: enumTypes
-ms.openlocfilehash: f1d906e2693725898be14d0480afcc26ac8331ca4720c67db42342a14772b700
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1814e7c846b9a3c2394497d0221d2bb8a7dc5a86
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54203321"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59040573"
 ---
 # <a name="multi-tenant-management-enumeration-values"></a>多租户管理枚举值
 
@@ -50,7 +50,7 @@ ms.locfileid: "54203321"
 
 |成员|
 |:---|
-|string|
+|字符串|
 |integer|
 |boolean|
 |guid|

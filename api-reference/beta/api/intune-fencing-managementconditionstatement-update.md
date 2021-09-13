@@ -2,15 +2,15 @@
 title: 更新 managementConditionStatement
 description: 更新 managementConditionStatement 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 40f67a21030c071f724545469e0d3b4e42289482
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7988e5666ce1a777267b6c1e2584e3cbd2fd8ccc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797659"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59042016"
 ---
 # <a name="update-managementconditionstatement"></a>更新 managementConditionStatement
 
@@ -44,7 +44,7 @@ PATCH /deviceManagement/managementConditions/{managementConditionId}/managementC
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,9 +54,9 @@ PATCH /deviceManagement/managementConditions/{managementConditionId}/managementC
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|管理条件语句的唯一标识符。 创建时分配的系统生成值。|
-|displayName|字符串|管理员定义的管理条件声明的名称。|
-|description|String|管理员定义的管理条件声明的说明。|
+|id|String|管理条件语句的唯一标识符。 创建时分配的系统生成值。|
+|displayName|String|管理员定义的管理条件声明的名称。|
+|说明|String|管理员定义的管理条件声明的说明。|
 |createdDateTime|DateTimeOffset|创建管理条件语句的时间。 生成的服务器端。|
 |modifiedDateTime|DateTimeOffset|上次修改管理条件语句的时间。 更新的服务器端。|
 |表达式|[managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)|用于评估管理条件语句是否被激活/停用的管理条件语句表达式。|

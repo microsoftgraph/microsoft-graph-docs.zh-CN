@@ -1,16 +1,16 @@
 ---
 title: 列出 mobileAppTroubleshootingEvents
 description: 介绍支持多个工作流的 Microsoft Graph API 的 List mobileAppTroubleshootingEvent 方法。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: rolyon
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6d0c25628df0acf5184a7715bfff9e7fda071f59
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7eaa36fe01b83e07e2f5beda96a3e5658f946e51
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794130"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59048029"
 ---
 # <a name="list-mobileapptroubleshootingevents"></a>列出 mobileAppTroubleshootingEvents
 
@@ -48,7 +48,7 @@ GET /users/{usersId}/mobileAppTroubleshootingEvents
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

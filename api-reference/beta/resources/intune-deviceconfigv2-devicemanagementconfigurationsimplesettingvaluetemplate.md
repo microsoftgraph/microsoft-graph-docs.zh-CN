@@ -2,15 +2,15 @@
 title: deviceManagementConfigurationSimpleSettingValueTemplate 资源类型
 description: 简单设置值模板
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9cfc0372493b7b8a9fadf80167e08579acfcbf20
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 91bdbab579b49852b2680f041f241cdffa5ee1a3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58815083"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59040279"
 ---
 # <a name="devicemanagementconfigurationsimplesettingvaluetemplate-resource-type"></a>deviceManagementConfigurationSimpleSettingValueTemplate 资源类型
 

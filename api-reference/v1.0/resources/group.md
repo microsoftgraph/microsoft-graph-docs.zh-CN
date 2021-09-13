@@ -1,16 +1,16 @@
 ---
 title: 组资源类型
 description: '表示 Azure Active Directory (Azure AD) 组，可以是 Microsoft 365 组或安全组。 '
-localization_priority: Priority
+ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: e5394d6c85bfd7b7b21036fd41d6444bd310e108
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: bd3edb246ab9fce3b9b088d94ce043cbc690839a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58265324"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084564"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -132,13 +132,13 @@ ms.locfileid: "58265324"
 |hasMembersWithLicenseErrors|Boolean|指示此组中是否有该基于组的许可证分配中存在许可证错误的成员。 <br><br>GET 操作从未返回此属性。 可将它用作 $filter 参数，获取具有许可证错误的成员的组（也就是说，此属性的筛选器为 true）。 请参阅[示例](../api/group-list.md)。 <br><br>支持 `$filter`（`eq`）。|
 |hideFromAddressLists |Boolean |如果该组未显示在 Outlook UI 的某些部分中（“**通讯簿**”中、用于选择邮件收件人的地址列表中以及用于搜索组的“**浏览组**”中），则为 true；否则为 false。 默认值为 `false`。 <br><br>仅在 `$select` 上返回。 仅支持"获取组 API"（`GET /groups/{ID}`）。|
 |hideFromOutlookClients |Boolean |如果该组未显示在 Outlook 客户端（如 Outlook for Windows 和 Outlook 网页版）中，则为 true；否则为 false。 默认值为 `false`。 <br><br>仅在 `$select` 上返回。 仅支持"获取组 API"（`GET /groups/{ID}`）。|
-|id|String|组的唯一标识符。 <br><br>默认情况下返回。 继承自 [directoryObject](directoryobject.md)。 键。 不可为空。 只读。<br><br>支持 `$filter` （`eq`、 `ne`、 `NOT`、 `in`）。|
-|isAssignableToRole|Boolean|指示是否可以将此组分配给 Azure Active Directory 角色。<br><br>此属性只能在创建组时设置，并且不可变。 如果设置为 `true`，则 **securityEnabled** 属性也必须设置为 `true`，并且该组不能是动态组（即，**groupTypes** 不能包含 `DynamicMembership`）。 只有全局管理员和特权角色管理员角色中的调用方可以设置此属性。 必须向调用方分配 *RoleManagement.ReadWrite.Directory* 权限，才能设置此属性或更新此类组成员的身份。 有关更多信息，请参阅[使用组来管理 Azure AD 角色分配](https://go.microsoft.com/fwlink/?linkid=2103037)<br><br>默认情况下返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`）。|
+|id|String|组的唯一标识符。 <br><br>默认情况下返回。 继承自 [directoryObject](directoryobject.md)。 键。 不可为 null。 只读。<br><br>支持 `$filter` （`eq`、 `ne`、 `NOT`、 `in`）。|
+|isAssignableToRole|Boolean|指示是否可以将此组分配给 Azure Active Directory 角色。可选。<br><br>此属性只能在创建组时设置，并且不可变。 如果设置为 `true`，则 **securityEnabled** 属性也必须设置为 `true`，并且该组不能是动态组（即，**groupTypes** 不能包含 `DynamicMembership`）。 只有全局管理员和特权角色管理员角色中的调用方可以设置此属性。 必须向调用方分配 *RoleManagement.ReadWrite.Directory* 权限，才能设置此属性或更新此类组成员的身份。 有关更多信息，请参阅[使用组来管理 Azure AD 角色分配](https://go.microsoft.com/fwlink/?linkid=2103037)<br><br>默认情况下返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`）。|
 |isSubscribedByMail|Boolean|指示登录用户是否订阅接收电子邮件对话。 默认值为 `true`。 <br><br>仅在 `$select` 上返回。 仅支持"获取组 API"（`GET /groups/{ID}`）。 |
 |licenseProcessingState|String|指示对所有组成员的组许可证分配的状态。 默认值为 `false`。 只读。 可能的值是：`QueuedForProcessing`、`ProcessingInProgress` 和 `ProcessingComplete`。<br><br>仅在 `$select` 上返回。 只读。|
 |mail|String|组的 SMTP 地址，例如，“serviceadmins@contoso.onmicrosoft.com”。 <br><br>默认情况下返回。 只读。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。|
-|mailEnabled|布尔|指定是否为启用邮件的组。 <br><br>默认情况下返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`）。|
-|mailNickname|String|组的邮件别名，在组织中是唯一的。 创建组时必须指定此属性。 无法在 mailNickName 中使用这些字符：`@()\[]";:.<>,SPACE`。 <br><br>默认返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。|
+|mailEnabled|Boolean|指定组是否启用邮件。必需。<br><br>默认情况下返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`）。|
+|mailNickname|String|组的邮件别名，在组织中是唯一的。 必需。 无法在 mailNickName 中使用这些字符：`@()\[]";:.<>,SPACE`。 <br><br>默认情况下返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。|
 |membershipRule|String|组为动态组时（groupTypes 包含 `DynamicMembership`），用于确定该组成员的规则。 有关成员身份规则语法的详细信息，请参阅[成员身份规则语法](/azure/active-directory/users-groups-roles/groups-dynamic-membership)。 <br><br>默认情况下返回。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`startsWith`）。 |
 |membershipRuleProcessingState|String|指示动态成员身份处理正在进行中，还是已暂停。 可能的值为 `On` 或 `Paused`。 <br><br>默认情况下返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `in`）。  |
 |onPremisesLastSyncDateTime|DateTimeOffset|指示组最后一次与本地目录同步的时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 <br><br>默认情况下返回。 只读。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`）。|
@@ -152,11 +152,11 @@ ms.locfileid: "58265324"
 |renewedDateTime|DateTimeOffset| 组的上次续订时间戳。 值不能直接修改，只能通过[续订服务操作](../api/group-renew.md)进行更新。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 <br><br>默认情况下返回。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`）。 只读。|
 |resourceBehaviorOptions|字符串集合|指定在创建期间可为 Microsoft 365 组设置的组行为。 可设置为只为创建的一部分（POST）。 可取值为：`AllowOnlyMembersToPost`、`HideGroupInOutlook`、`SubscribeNewGroupMembers`、`WelcomeEmailDisabled`。 有关详细信息，请参阅 [ 设置 Microsoft 365 组行为和预配选项 ](/graph/group-set-options)。|
 |resourceProvisioningOptions|字符串集合|指定预配为创建 Microsoft 365 组的一部分，但通常不是创建默认组的组资源。 可能值为 `Team`。 有关详细信息，请参阅 [ 设置 Microsoft 365 组行为和预配选项 ](/graph/group-set-options)。|
-|securityEnabled|布尔|指定是否为安全组。 <br><br>默认情况下返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `in`）。|
+|securityEnabled|Boolean|指定组是否为安全组。必需。<br><br>默认情况下返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `in`）。|
 |securityIdentifier|字符串|组的安全标识符，用于 Windows 方案。 <br><br>默认情况下返回。|
 |theme|string|指定 Microsoft 365 组的颜色主题。 可能的值为：`Teal`、`Purple`、`Green`、`Blue`、`Pink`、`Orange` 或 `Red`。 <br><br>默认情况下返回。 |
 |unseenCount|Int32|自登录用户上次访问该组以来收到新帖子的对话计数。 <br><br>仅在 `$select` 上返回。 仅支持"获取组 API"（`GET /groups/{ID}`）。 |
-|visibility|String| 指定组的组加入策略和组内容可见性。 可能的值为： `Private`、 `Public`或 `Hiddenmembership`。 `Hiddenmembership` 仅在创建组时，<a0/&;<a1>为 Microsoft 365 组设置 </a1><a2/&;。 以后无法更新它。 创建组后，可更新其他可见性值。<br> 如果在 Microsoft Graph 上的组创建期间未指定可见性值，则默认创建安全组 `Private` Microsoft 365 组 `Public`。 请参阅[组可见性选项](#group-visibility-options)以了解详细信息。 <br><br>默认情况下返回。|
+|visibility|String| 指定组的组加入策略和组内容可见性。 可能的值为： `Private`、 `Public`或 `Hiddenmembership`。 `Hiddenmembership` 仅在创建组时，<a0/&;<a1>为 Microsoft 365 组设置 </a1><a2/&;。 以后无法更新它。 创建组后，可更新其他可见性值。<br> 如果在 Microsoft Graph 上的组创建期间未指定可见性值，则默认创建安全组 `Private` Microsoft 365 组 `Public`。 请参阅[组可见性选项](#group-visibility-options)以了解详细信息。 <br><br>默认返回。可为空。|
 
 
 ### <a name="group-visibility-options"></a>组可见性选项
@@ -182,7 +182,7 @@ ms.locfileid: "58265324"
 |events|[事件](event.md) 集合|组的日历事件。|
 |extensions|[扩展](extension.md)集合|为组定义的开放扩展集合。只读。可为 NULL。|
 |groupLifecyclePolicies|[groupLifecyclePolicy](grouplifecyclepolicy.md) 集合|此组的生命周期策略集合。只读。可为空。|
-|memberOf|[directoryObject](directoryobject.md) collection|此组所属的组。 HTTP 方法：GET（支持所有组） 只读。 可为 NULL。 支持 `$expand`。|
+|memberOf|[directoryObject](directoryobject.md) collection|此组所属的组。 HTTP 方法：GET（支持所有组） 只读。 可为空。 支持 `$expand`。|
 |members|[directoryObject](directoryobject.md) 集合| 属于此组成员的用户和组。 HTTP 方法：GET（支持所有组），POST（支持 Microsoft 365 组、安全组和启用邮件的安全组）、DELETE（支持 Microsoft 365 组和安全组）。 可为 NULL。 支持 `$expand`。|
 |membersWithLicenseErrors|[User](user.md) 集合|在该基于组的许可证分配中存在许可证错误的组成员列表。只读。|
 |onenote|[Onenote](onenote.md)| 只读。|

@@ -2,15 +2,15 @@
 title: 更新 mobileAppIntentAndState
 description: 更新 mobileAppIntentAndState 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0bcbb4cf40e4d9052d50fc9f2d0f23bb932372ee
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 8ba4569737fd452c8f885c67c368c654629dfaf0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58265023"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59076472"
 ---
 # <a name="update-mobileappintentandstate"></a>更新 mobileAppIntentAndState
 
@@ -53,7 +53,7 @@ PATCH /users/{usersId}/mobileAppIntentAndStates/{mobileAppIntentAndStateId}
 |:---|:---|:---|
 |id|String|对象的 UUID|
 |managedDeviceIdentifier|String|Intune 创建或收集的设备标识符。|
-|userId|字符串|尝试注册设备的用户的标识符。|
+|userId|String|尝试注册设备的用户的标识符。|
 |mobileAppList|[mobileAppIntentAndStateDetail](../resources/intune-troubleshooting-mobileappintentandstatedetail.md) 集合|租户的有效负载意图和状态列表。|
 
 

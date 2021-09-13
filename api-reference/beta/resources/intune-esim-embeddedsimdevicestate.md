@@ -2,15 +2,15 @@
 title: embeddedSIMDeviceState 资源类型
 description: 描述与设备相关的嵌入式 SIM 卡激活代码部署状态。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0654c71369d9682887d36f02e6cddf1eb9772e0f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0f5b98cbf3d70514b09a18ccd6d9eab7033c862c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789903"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039859"
 ---
 # <a name="embeddedsimdevicestate-resource-type"></a>embeddedSIMDeviceState 资源类型
 

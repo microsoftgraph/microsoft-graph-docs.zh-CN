@@ -2,15 +2,15 @@
 title: 创建 roleAssignment
 description: 创建新的 roleAssignment 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e7332bdc6404cdd9af23a03128bc07138f0fc7b7
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3a3088a45eaa16086ab2d54d309d5bd29d8e5aa4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58800168"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59041484"
 ---
 # <a name="create-roleassignment"></a>创建 roleAssignment
 
@@ -43,7 +43,7 @@ POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -55,9 +55,9 @@ POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments
 |:---|:---|:---|
 |id|String|实体的键。 此为只读，且自动生成。|
 |displayName|String|角色分配的显示或友好名称。|
-|description|String|角色分配的说明。|
+|说明|String|角色分配的说明。|
 |scopeMembers|String collection|角色作用域成员安全组的 ID 列表。  这些是 Azure Active Directory 中的 ID。|
-|scopeType|[roleAssignmentScopeType](../resources/intune-rbac-roleassignmentscopetype.md)|指定角色分配的范围类型。 默认类型"ResourceScope"允许分配 ResourceScopes。 对于"AllDevices"、"AllLicensedUsers"和"AllDevicesAndLicensedUsers"，ResourceScopes 属性应留空。 可能的值是：`resourceScope`、`allDevices`、`allLicensedUsers`、`allDevicesAndLicensedUsers`。|
+|scopeType|[roleAssignmentScopeType](../resources/intune-rbac-roleassignmentscopetype.md)|指定角色分配的范围类型。 默认类型"ResourceScope"允许分配 ResourceScopes。 对于"AllDevices"、"AllLicensedUsers"和"AllDevicesAndLicensedUsers"，ResourceScopes 属性应留空。 可取值为：`resourceScope`、`allDevices`、`allLicensedUsers`、`allDevicesAndLicensedUsers`。|
 |resourceScopes|String collection|角色作用域成员安全组的 ID 列表。  这些是 Azure Active Directory 中的 ID。|
 
 

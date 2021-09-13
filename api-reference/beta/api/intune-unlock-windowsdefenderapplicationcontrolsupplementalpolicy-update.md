@@ -2,15 +2,15 @@
 title: 更新 windowsDefenderApplicationControlSupplementalPolicy
 description: 更新 windowsDefenderApplicationControlSupplementalPolicy 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2aec5b211388fe563d5dc8f59cfafa28c86a3a82
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a53b4f9a9a1460cf5c58d0fecf62eb55b1e58cd2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793045"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59047882"
 ---
 # <a name="update-windowsdefenderapplicationcontrolsupplementalpolicy"></a>更新 windowsDefenderApplicationControlSupplementalPolicy
 
@@ -44,7 +44,7 @@ PATCH /deviceAppManagement/wdacSupplementalPolicies/{windowsDefenderApplicationC
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -55,14 +55,14 @@ PATCH /deviceAppManagement/wdacSupplementalPolicies/{windowsDefenderApplicationC
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|WindowsDefenderApplicationControl 补充策略的密钥。|
-|displayName|字符串|WindowsDefenderApplicationControl 显示名称策略的一部分。|
-|description|字符串|WindowsDefenderApplicationControl 补充策略的说明。|
+|displayName|String|WindowsDefenderApplicationControl 显示名称策略的一部分。|
+|说明|String|WindowsDefenderApplicationControl 补充策略的说明。|
 |content|二进制|采用字节数组格式的 WindowsDefenderApplicationControl 补充策略内容。|
 |contentFileName|String|WindowsDefenderApplicationControl 补充策略内容的文件名。|
 |version|String|WindowsDefenderApplicationControl 补充策略的版本。|
 |creationDateTime|DateTimeOffset|上载 WindowsDefenderApplicationControl 补充策略的日期和时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改 WindowsDefenderApplicationControl 补充策略的日期和时间。|
-|roleScopeTagIds|字符串集合|此 WindowsDefenderApplicationControl 补充策略实体的范围标记列表。|
+|roleScopeTagIds|String collection|此 WindowsDefenderApplicationControl 补充策略实体的范围标记列表。|
 
 
 

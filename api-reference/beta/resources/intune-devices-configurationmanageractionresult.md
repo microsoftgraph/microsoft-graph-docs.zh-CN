@@ -2,15 +2,15 @@
 title: configurationManagerActionResult 资源类型
 description: ConfigurationManager 操作的结果
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 28e7715b9fbb3422d01044453216602f95c1e7ee
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e1cbd38930bf8cab90860791f1e5d34bf4391408
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801092"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59040265"
 ---
 # <a name="configurationmanageractionresult-resource-type"></a>configurationManagerActionResult 资源类型
 

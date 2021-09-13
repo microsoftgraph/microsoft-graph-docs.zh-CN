@@ -2,15 +2,15 @@
 title: 删除 userExperienceAnalyticsAppHealthDevicePerformanceDetails
 description: 删除 userExperienceAnalyticsAppHealthDevicePerformanceDetails。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c61331b527b3cd69e20d43189ce907344a1be3a9
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4a96f0d535fc4ec2fe433f17db8948d39cc3853f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818637"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59082583"
 ---
 # <a name="delete-userexperienceanalyticsapphealthdeviceperformancedetails"></a>删除 userExperienceAnalyticsAppHealthDevicePerformanceDetails
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/userExperienceAnalyticsAppHealthDevicePerformanceDetail
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

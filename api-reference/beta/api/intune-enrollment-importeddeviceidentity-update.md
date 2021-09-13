@@ -2,15 +2,15 @@
 title: 更新 importedDeviceIdentity
 description: 更新 importedDeviceIdentity 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4360e3e307ca311a10b8cfb683c621422dcf18ac
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 593791ec8de38407cd29c9449826073d68cebb0d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58809670"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59042120"
 ---
 # <a name="update-importeddeviceidentity"></a>更新 importedDeviceIdentity
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/importedDeviceIdentities/{importedDeviceIdentityId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,12 +54,12 @@ PATCH /deviceManagement/importedDeviceIdentities/{importedDeviceIdentityId}
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|导入的设备标识的 ID|
-|importedDeviceIdentifier|字符串|导入的设备标识符|
+|importedDeviceIdentifier|String|导入的设备标识符|
 |importedDeviceIdentityType|[importedDeviceIdentityType](../resources/intune-enrollment-importeddeviceidentitytype.md)|导入的设备标识的类型。 可取值为：`unknown`、`imei`、`serialNumber`。|
 |lastModifiedDateTime|DateTimeOffset|说明的上次修改日期/时间|
 |createdDateTime|DateTimeOffset|设备的创建日期时间|
 |lastContactedDateTime|DateTimeOffset|设备的上次联系日期时间|
-|description|String|设备说明|
+|说明|String|设备说明|
 |enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Intune 中的设备状态。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
 |平台|[平台](../resources/intune-enrollment-platform.md)|设备平台。 可取值为：`unknown`、`ios`、`android`、`windows`、`windowsMobile`、`macOS`。|
 

@@ -2,15 +2,15 @@
 title: 创建 deviceManagementScriptUserState
 description: 创建新的 deviceManagementScriptUserState 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 564f4b94168f193ab8d6dbb27c0fd98a25d5edbc
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8a62486736e5f67b5e8a94e6d6d1f7ac3e92f6ea
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783720"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59042282"
 ---
 # <a name="create-devicemanagementscriptuserstate"></a>创建 deviceManagementScriptUserState
 
@@ -45,7 +45,7 @@ POST /deviceManagement/deviceCustomAttributeShellScripts/{deviceCustomAttributeS
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -55,7 +55,7 @@ POST /deviceManagement/deviceCustomAttributeShellScripts/{deviceCustomAttributeS
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|设备管理脚本用户状态实体的键。 此属性是只读的。|
+|id|String|设备管理脚本用户状态实体的键。 此属性是只读的。|
 |successDeviceCount|Int32|特定用户的成功设备计数。|
 |errorDeviceCount|Int32|特定用户的错误设备计数。|
 |userPrincipalName|String|特定用户的用户原则名称。|

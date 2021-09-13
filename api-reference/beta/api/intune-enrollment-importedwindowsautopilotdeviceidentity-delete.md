@@ -2,15 +2,15 @@
 title: 删除 importedWindowsAutopilotDeviceIdentity
 description: 删除importedWindowsAutopilotDeviceIdentity。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2e47778a31f7e0f4f70e4443157fea74d7ab2a4f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 388800861437f7a1ee2c1656636da5a33a7c9583
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58817213"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59082443"
 ---
 # <a name="delete-importedwindowsautopilotdeviceidentity"></a>删除 importedWindowsAutopilotDeviceIdentity
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/importedWindowsAutopilotDeviceIdentities/{importedWindo
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

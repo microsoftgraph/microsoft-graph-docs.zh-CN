@@ -2,15 +2,15 @@
 title: windowsDefenderProductStatus 枚举类型
 description: 产品状态Windows Defender
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0525b8ab93b19e75336085468fa8d82f40320944
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3a126fb37736d8d02accdd9b3dc0eff8cacf7173
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820861"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046860"
 ---
 # <a name="windowsdefenderproductstatus-enum-type"></a>windowsDefenderProductStatus 枚举类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58820861"
 产品状态Windows Defender
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |noStatus|0|无状态|
 |serviceNotRunning|1|服务未运行|
@@ -45,7 +45,7 @@ ms.locfileid: "58820861"
 |serviceShutdownAsPartOfSystemShutdown|65536|服务正在关闭，作为系统关闭的一部分|
 |threatRemediationFailedCritically|131072|威胁修正严重失败|
 |threatRemediationFailedNonCritically|262144|威胁修正失败（非严重）|
-|noStatusFlagsSet|524288|在初始化状态 (未设置状态) |
+|noStatusFlagsSet|524288|没有为初始化 (状态设置状态) |
 |platformOutOfDate|1048576|平台已过期|
 |platformUpdateInProgress|2097152|平台更新正在进行中|
 |platformAboutToBeOutdated|4194304|平台即将过时|

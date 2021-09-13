@@ -2,15 +2,15 @@
 title: 获取 windowsDefenderApplicationControlSupplementalPolicyDeploymentSummary
 description: 读取 windowsDefenderApplicationControlSupplementalPolicyDeploymentSummary 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 804982c1d048198a57681791a94b7542823b617e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 09eb1dd98a0998999cae00b6688e1ab77bb5993d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805084"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59047721"
 ---
 # <a name="get-windowsdefenderapplicationcontrolsupplementalpolicydeploymentsummary"></a>获取 windowsDefenderApplicationControlSupplementalPolicyDeploymentSummary
 
@@ -46,7 +46,7 @@ GET /deviceAppManagement/wdacSupplementalPolicies/{windowsDefenderApplicationCon
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

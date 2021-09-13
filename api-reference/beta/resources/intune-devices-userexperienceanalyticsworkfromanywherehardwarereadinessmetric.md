@@ -2,15 +2,15 @@
 title: userExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric 资源类型
 description: 用户体验分析硬件准备情况实体包含有关 Windows 升级的硬件阻止程序的帐户级别信息。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: aa7a4fdd18b1b14c881972bca25d287176564915
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a9716cee7e1ba03253b040c52d49e0df404b9c48
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806206"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046867"
 ---
 # <a name="userexperienceanalyticsworkfromanywherehardwarereadinessmetric-resource-type"></a>userExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric 资源类型
 
@@ -38,7 +38,7 @@ ms.locfileid: "58806206"
 |storageCheckFailedPercentage|双精度|存储硬件检查失败的设备百分比。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
 |processorCoreCountCheckFailedPercentage|双精度|处理器硬件核心计数检查失败的设备的百分比。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
 |processorSpeedCheckFailedPercentage|双精度|处理器硬件速度检查失败的设备的百分比。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
-|tpmCheckFailedPercentage|双精度|受信任平台模块与 TPM (检查) 的设备的百分比。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
+|tpmCheckFailedPercentage|双精度|受信任的平台模块用于 TPM (硬件检查) 的设备的百分比。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
 |secureBootCheckFailedPercentage|双精度|安全启动硬件检查失败的设备百分比。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
 |processorFamilyCheckFailedPercentage|双精度|处理器硬件系列检查失败的设备百分比。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
 |processor64BitCheckFailedPercentage|双精度|处理器硬件 64 位体系结构检查失败的设备百分比。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|

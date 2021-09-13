@@ -2,15 +2,15 @@
 title: reportRemoteAssistance 操作
 description: 提交报告有效负载的 Post 调用
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d00265f73751ac29028aea0ecf9b9d58f721259d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 40be075dca577bb1febbeb68390fccb51dbeb0be
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797164"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59041449"
 ---
 # <a name="reportremoteassistance-action"></a>reportRemoteAssistance 操作
 
@@ -43,7 +43,7 @@ POST /deviceManagement/reportRemoteAssistance
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

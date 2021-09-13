@@ -2,15 +2,15 @@
 title: 列出 androidEasEmailProfileConfigurations
 description: 列出 androidEasEmailProfileConfiguration 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8907746820ea6358e6ef1e2cc5eaa6571cbcc351
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: fb39c6a1d8fb3b7af8a7416e6d33dbab798491de
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58822045"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59071096"
 ---
 # <a name="list-androideasemailprofileconfigurations"></a>列出 androidEasEmailProfileConfigurations
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

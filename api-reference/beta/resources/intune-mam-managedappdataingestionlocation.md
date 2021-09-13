@@ -2,15 +2,15 @@
 title: managedAppDataIngestionLocation 枚举类型
 description: 可用于将数据引入组织文档的位置
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 002643fa3b5420c3b4d2eb2dc0fe09e25acae84a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b3813667004fe02be232f91c5831b628bd4459cd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818763"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59075114"
 ---
 # <a name="managedappdataingestionlocation-enum-type"></a>managedAppDataIngestionLocation 枚举类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58818763"
 可用于将数据引入组织文档的位置
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |oneDriveForBusiness|1|OneDrive for Business|
 |sharePoint|2|SharePoint Online|

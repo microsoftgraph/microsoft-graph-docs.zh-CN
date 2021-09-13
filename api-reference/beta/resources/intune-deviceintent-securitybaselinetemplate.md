@@ -2,15 +2,15 @@
 title: securityBaselineTemplate 资源类型
 description: 帐户的安全基线模板
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a754781a873df1498ab421a318af3c19af0b05e6
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0e67c7c9d6bd3d25e8a59daeed2819787c4eb6c4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819001"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59068990"
 ---
 # <a name="securitybaselinetemplate-resource-type"></a>securityBaselineTemplate 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "58819001"
 继承自 [deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)
 
 ## <a name="methods"></a>方法
-|方法|返回类型|Description|
+|方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 securityBaselineTemplates](../api/intune-deviceintent-securitybaselinetemplate-list.md)|[securityBaselineTemplate](../resources/intune-deviceintent-securitybaselinetemplate.md) 集合|列出 [securityBaselineTemplate 对象的属性和](../resources/intune-deviceintent-securitybaselinetemplate.md) 关系。|
 |[获取 securityBaselineTemplate](../api/intune-deviceintent-securitybaselinetemplate-get.md)|[securityBaselineTemplate](../resources/intune-deviceintent-securitybaselinetemplate.md)|读取 [securityBaselineTemplate 对象的属性和](../resources/intune-deviceintent-securitybaselinetemplate.md) 关系。|
@@ -39,7 +39,7 @@ ms.locfileid: "58819001"
 |:---|:---|:---|
 |id|String|模板 ID 继承自 [deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|
 |displayName|String|模板的模板显示名称继承自 [deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|
-|description|String|模板的说明 继承自 [deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|
+|说明|String|模板的说明 继承自 [deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|
 |versionInfo|String|模板的版本信息 继承自 [deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|
 |isDeprecated|Boolean|模板是否被弃用。 无法从已弃用模板创建意图。 继承自 [deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|
 |intentCount|Int32|从此模板创建的意图数。 继承自 [deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|
@@ -49,7 +49,7 @@ ms.locfileid: "58819001"
 |publishedDateTime|DateTimeOffset|发布模板时 继承自 [deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|
 
 ## <a name="relationships"></a>关系
-|关系|类型|Description|
+|关系|类型|描述|
 |:---|:---|:---|
 |settings|[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md) 集合|此模板继承自 [deviceManagementTemplate 的所有设置的集合](../resources/intune-deviceintent-devicemanagementtemplate.md)|
 |categories|[deviceManagementTemplateSettingCategory](../resources/intune-deviceintent-devicemanagementtemplatesettingcategory.md) 集合|模板中的设置类别集合 继承自 [deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|

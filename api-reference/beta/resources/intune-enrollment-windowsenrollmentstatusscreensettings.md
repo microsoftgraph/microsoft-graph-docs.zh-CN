@@ -2,15 +2,15 @@
 title: windowsEnrollmentStatusScreenSettings 资源类型
 description: 注册状态屏幕设置
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 98de649856d89d0dfaa484a3abcf816463241743
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f7578f25bf3ed2ed8b47d6cb7c039fd6bda7b89a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797238"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039894"
 ---
 # <a name="windowsenrollmentstatusscreensettings-resource-type"></a>windowsEnrollmentStatusScreenSettings 资源类型
 

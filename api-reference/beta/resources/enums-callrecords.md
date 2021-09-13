@@ -2,15 +2,15 @@
 title: 呼叫记录枚举值
 description: Microsoft Graph呼叫记录枚举值
 doc_type: enumPageType
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 author: gageames
-ms.openlocfilehash: 78d168b4108a1e9835314417fc8b03b2876c6104e6a35929c17981df3b5ead79
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 039b0f825c17269bb6318ed45bc3cb5bb5317e19
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54142216"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59040636"
 ---
 # <a name="call-records-enum-values"></a>呼叫记录枚举值
 

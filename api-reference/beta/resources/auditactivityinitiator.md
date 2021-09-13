@@ -1,16 +1,16 @@
 ---
 title: auditActivityInitiator 资源类型
 description: '标识启动活动的资源对象。 发起者可以是用户、应用或系统 (被视为应用) '
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: identity-and-access-reports
 author: SarahBar
-ms.openlocfilehash: d131f58057bb3846b2059fa117891dbc405c781223053d80e495fbca788a9688
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a018a6e74f9ee89b879577bec6f64a94ab15cdca
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54206954"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59047483"
 ---
 # <a name="auditactivityinitiator-resource-type"></a>auditActivityInitiator 资源类型
 

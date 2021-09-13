@@ -2,15 +2,15 @@
 title: deviceAndAppManagementAssignmentFilter 资源类型
 description: 一个包含用于工作分配筛选器的属性的类。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a21edb65043744659b6797470fd19bf475625076
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e8ba1b2161934a4a5fb4c8b5447208e77842855a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796837"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046699"
 ---
 # <a name="deviceandappmanagementassignmentfilter-resource-type"></a>deviceAndAppManagementAssignmentFilter 资源类型
 
@@ -42,8 +42,8 @@ ms.locfileid: "58796837"
 |id|String|工作分配筛选器的键。|
 |createdDateTime|DateTimeOffset|工作分配筛选器的创建时间。|
 |lastModifiedDateTime|DateTimeOffset|工作分配筛选器的上次修改时间。|
-|displayName|字符串|工作分配筛选器的 DisplayName。|
-|description|String|工作分配筛选器的说明。|
+|displayName|String|工作分配筛选器的 DisplayName。|
+|说明|String|工作分配筛选器的说明。|
 |平台|[devicePlatformType](../resources/intune-policyset-deviceplatformtype.md)|工作分配筛选器适用的设备的平台类型。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`unknown`。|
 |rule|String|工作分配筛选器的规则定义。|
 |roleScopeTags|String collection|工作分配筛选器的 RoleScopeTags。|

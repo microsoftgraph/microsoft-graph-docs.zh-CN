@@ -2,15 +2,15 @@
 title: userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId 资源类型
 description: 用户体验分析应用程序性能实体包含按应用版本设备 ID 的应用性能。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0f44c1ed07957e75200543e1487386acc642e4c5
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a730dc54bcd7095f21bf503cbf341dfd66187880
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788442"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59081050"
 ---
 # <a name="userexperienceanalyticsapphealthappperformancebyappversiondeviceid-resource-type"></a>userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId 资源类型
 
@@ -40,8 +40,8 @@ ms.locfileid: "58788442"
 |processedDateTime|DateTimeOffset|上次计算统计信息的日期和时间。|
 |appName|String|应用程序名。|
 |appDisplayName|String|应用程序的友好名称。|
-|appPublisher|字符串|应用程序的发布者。|
-|appVersion|字符串|应用程序的版本。|
+|appPublisher|String|应用程序的发布者。|
+|appVersion|String|应用程序的版本。|
 |appCrashCount|Int32|应用的崩溃数。 有效值 -2147483648 2147483647|
 
 ## <a name="relationships"></a>关系

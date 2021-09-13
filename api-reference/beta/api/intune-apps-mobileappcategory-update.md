@@ -2,15 +2,15 @@
 title: 更新 mobileAppCategory
 description: 更新 mobileAppCategory 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 83de667a764c4fa015a01744d254741102cf1425
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6062681a73cf2edccd17de69d53d921b23f887e2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805245"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59071187"
 ---
 # <a name="update-mobileappcategory"></a>更新 mobileAppCategory
 
@@ -44,7 +44,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/categories/{mobileAppCategor
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,7 +54,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/categories/{mobileAppCategor
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |displayName|String|应用类别的名称。|
 |lastModifiedDateTime|DateTimeOffset|上次修改 mobileAppCategory 的日期和时间。|
 

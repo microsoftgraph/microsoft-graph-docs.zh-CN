@@ -2,15 +2,15 @@
 title: 获取 windowsInformationProtectionWipeAction
 description: 读取 windowsInformationProtectionWipeAction 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6d0519efef40f7c728df50fdbc845e8c0cd67d41
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5d6946edcadd3f94717d6df7f364661ac898c13d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819757"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59034350"
 ---
 # <a name="get-windowsinformationprotectionwipeaction"></a>获取 windowsInformationProtectionWipeAction
 
@@ -46,7 +46,7 @@ GET /deviceAppManagement/windowsInformationProtectionWipeActions/{windowsInforma
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

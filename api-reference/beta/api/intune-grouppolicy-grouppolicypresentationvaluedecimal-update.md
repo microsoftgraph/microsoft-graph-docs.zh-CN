@@ -2,15 +2,15 @@
 title: 更新 groupPolicyPresentationValueDecimal
 description: 更新 groupPolicyPresentationValueDecimal 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 55c273a065b9302794ca3a8924a52700fe2b855c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f505310b28dd44db71ea20d0f7c033f2691d73bb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806143"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59076878"
 ---
 # <a name="update-grouppolicypresentationvaluedecimal"></a>更新 groupPolicyPresentationValueDecimal
 
@@ -43,15 +43,15 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [groupPolicyPresentationValueDecimal](../resources/intune-grouppolicy-grouppolicypresentationvaluedecimal.md) 对象的 JSON 表示形式。
+在请求正文中，提供 [groupPolicyPresentationValueDecimal 对象的](../resources/intune-grouppolicy-grouppolicypresentationvaluedecimal.md) JSON 表示形式。
 
 下表显示创建 [groupPolicyPresentationValueDecimal 时所需的属性](../resources/intune-grouppolicy-grouppolicypresentationvaluedecimal.md)。
 
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期和时间。 继承自 [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |createdDateTime|DateTimeOffset|对象的创建日期和时间。 继承自 [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|

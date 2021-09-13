@@ -2,15 +2,15 @@
 title: deviceManagementConfigurationStringFormat 枚举类型
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 24f5d2ee06234c0c4fa844242924a04e7133bf43
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f2eb58b5ddcc74a4215e41a3cabd17514b580fe8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789310"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59047014"
 ---
 # <a name="devicemanagementconfigurationstringformat-enum-type"></a>deviceManagementConfigurationStringFormat 枚举类型
 
@@ -36,7 +36,7 @@ ms.locfileid: "58789310"
 |date|8 |尚未记录|
 |time|9 |尚未记录|
 |binary|10 |尚未记录|
-|regEx|11 |尚未记录|
+|regEx|11|尚未记录|
 |json|12 |尚未记录|
 |dateTime|13|尚未记录|
 |surfaceHub|14 |尚未记录|

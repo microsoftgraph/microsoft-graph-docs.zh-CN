@@ -2,15 +2,15 @@
 title: androidEasEmailProfileConfiguration 资源类型
 description: 通过在此配置文件中提供配置，您可以指示 KNOX 设备的本机电子邮件客户端与 Exchange 服务器进行通信，并获取电子邮件、联系人、日历、任务和注释。 此外，还可以指定要同步的电子邮件以及设备应同步的频繁时间。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fba2cbf85b16c275f39efa5d75a94a0302220cb6
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 656ed5b514b8f3c0ab9c9c62490235b6e859b992
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818805"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59075786"
 ---
 # <a name="androideasemailprofileconfiguration-resource-type"></a>androidEasEmailProfileConfiguration 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "58818805"
 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)
 
 ## <a name="methods"></a>方法
-|方法|返回类型|Description|
+|方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 androidEasEmailProfileConfigurations](../api/intune-deviceconfig-androideasemailprofileconfiguration-list.md)|[androidEasEmailProfileConfiguration](../resources/intune-deviceconfig-androideasemailprofileconfiguration.md) 集合|列出 [androidEasEmailProfileConfiguration](../resources/intune-deviceconfig-androideasemailprofileconfiguration.md) 对象的属性和关系。|
 |[获取 androidEasEmailProfileConfiguration](../api/intune-deviceconfig-androideasemailprofileconfiguration-get.md)|[androidEasEmailProfileConfiguration](../resources/intune-deviceconfig-androideasemailprofileconfiguration.md)|读取 [androidEasEmailProfileConfiguration 对象的属性和](../resources/intune-deviceconfig-androideasemailprofileconfiguration.md) 关系。|
@@ -39,20 +39,20 @@ ms.locfileid: "58818805"
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|指示基础设备配置是否支持分配范围标记。 当此值为 false 且实体对范围用户不可见时，不允许分配给 ScopeTags 属性。 这适用于在 Silverlight 中创建的旧版策略，可通过在 Azure 门户中删除和重新创建策略来解决。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|此策略的操作系统版本适用性。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|accountName|String|Exchange ActiveSync帐户名称，作为 EAS 名称显示给用户 (此) 配置文件。|
+|accountName|String|Exchange ActiveSync帐户名称，作为 EAS 名称显示给用户， (此) 名称。|
 |authenticationMethod|[easAuthenticationMethod](../resources/intune-deviceconfig-easauthenticationmethod.md)|身份验证方法Exchange ActiveSync。 可取值为：`usernameAndPassword`、`certificate`、`derivedCredential`。|
-|syncCalendar|布尔值|切换日历同步。 如果设置为 false，则关闭设备上日历。|
+|syncCalendar|Boolean|切换日历同步。 如果设置为 false，则关闭设备上日历。|
 |syncContacts|Boolean|切换同步联系人。 如果设置为 false，则关闭设备上联系人。|
-|syncTasks|布尔值|切换同步任务。 如果设置为 false，则关闭设备上的任务。|
+|syncTasks|Boolean|切换同步任务。 如果设置为 false，则关闭设备上的任务。|
 |syncNotes|Boolean|切换同步笔记。 如果设置为 false，则说明在设备上关闭。|
 |durationOfEmailToSync|[emailSyncDuration](../resources/intune-deviceconfig-emailsyncduration.md)|电子邮件应同步到的持续时间。 可取值为：`userDefined`、`oneDay`、`threeDays`、`oneWeek`、`twoWeeks`、`oneMonth` 或 `unlimited`。|
 |emailAddressSource|[userEmailSource](../resources/intune-deviceconfig-useremailsource.md)|从 AAD 中选取并注入到此配置文件中的电子邮件属性，在设备上安装之前。 可取值为：`userPrincipalName`、`primarySmtpAddress`。|
@@ -60,12 +60,12 @@ ms.locfileid: "58818805"
 |hostName|String|Exchange本机 () 连接到的位置和 URL。|
 |requireSmime|Boolean|指示是否使用 S/MIME 证书。|
 |requireSsl|Boolean|指示是否使用 SSL。|
-|usernameSource|[androidUsernameSource](../resources/intune-deviceconfig-androidusernamesource.md)|从 AAD 中选取并注入此配置文件的 Username 属性，在设备上安装之前。 可能的值是：`username`、`userPrincipalName`、`samAccountName`、`primarySmtpAddress`。|
+|usernameSource|[androidUsernameSource](../resources/intune-deviceconfig-androidusernamesource.md)|从 AAD 中选取并注入此配置文件的 Username 属性，在设备上安装之前。 可取值为：`username`、`userPrincipalName`、`samAccountName`、`primarySmtpAddress`。|
 |userDomainNameSource|[domainNameSource](../resources/intune-deviceconfig-domainnamesource.md)|UserDomainname 属性，在设备上安装之前从 AAD 中选取并注入到此配置文件中。 可取值为：`fullDomainName`、`netBiosDomainName`。|
 |customDomainName|String|在设备上安装之前生成电子邮件配置文件时所使用的自定义域名值。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|Description|
+|关系|类型|描述|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md) 集合|设备配置文件的组分配列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) 集合|设备配置文件的分配列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|

@@ -2,15 +2,15 @@
 title: chromeOSOnboardingSettings 资源类型
 description: 表示 Chromebook 租户设置的实体
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3729f383c8df383c6ad28c90b32129edf307562c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e551a751ea5498d65d21974de6e7712e6a56ea11
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787622"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59081484"
 ---
 # <a name="chromeosonboardingsettings-resource-type"></a>chromeOSOnboardingSettings 资源类型
 
@@ -37,7 +37,7 @@ ms.locfileid: "58787622"
 |:---|:---|:---|
 |id|String|ChromebookTenant 的 ID|
 |ownerUserPrincipalName|String|ChromebookTenant 的 OwnerUserPrincipalName|
-|onboardingStatus|[onboardingStatus](../resources/intune-chromebooksync-onboardingstatus.md)|ChromebookTenant 的 OnboardingStatus。 可能的值是：`unknown`、`inprogress`、`onboarded`、`failed`。|
+|onboardingStatus|[onboardingStatus](../resources/intune-chromebooksync-onboardingstatus.md)|ChromebookTenant 的 OnboardingStatus。 可取值为：`unknown`、`inprogress`、`onboarded`、`failed`。|
 |lastModifiedDateTime|DateTimeOffset|ChromebookTenant 的 LastModifiedDateTime|
 |lastDirectorySyncDateTime|DateTimeOffset|ChromebookTenant 的 LastDirectorySyncDateTime|
 

@@ -2,15 +2,15 @@
 title: 删除 groupPolicyUploadedDefinition
 description: 删除 groupPolicyUploadedDefinition。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ae45c64cad07d8908248f62d6e0a7bfa63922232
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 88a5d780d8d5531211cc7d25deca602bf2593c6f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787664"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59041953"
 ---
 # <a name="delete-grouppolicyuploadeddefinition"></a>删除 groupPolicyUploadedDefinition
 
@@ -49,7 +49,7 @@ DELETE /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -2,15 +2,15 @@
 title: downloadApplePushNotificationCertificateSigningRequest 函数
 description: 下载 Apple 推送通知证书签名请求
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 95fbfa1846de7df297c46522aac174f7e8d71c21
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9851534a8cc4625f248cbe39c590bcd4a6272ea6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794193"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59042478"
 ---
 # <a name="downloadapplepushnotificationcertificatesigningrequest-function"></a>downloadApplePushNotificationCertificateSigningRequest 函数
 
@@ -43,7 +43,7 @@ GET /deviceManagement/applePushNotificationCertificate/downloadApplePushNotifica
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -2,15 +2,15 @@
 title: iosEduCertificateSettings 资源类型
 description: iOS EDU 的受信任的根证书和 PFX 证书。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f2f30468edbb0e09bc641b932d5bb216f22bd74d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4d97070415d65f8193bcf69bbcf771cd59684ff4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794102"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59047147"
 ---
 # <a name="ioseducertificatesettings-resource-type"></a>iosEduCertificateSettings 资源类型
 

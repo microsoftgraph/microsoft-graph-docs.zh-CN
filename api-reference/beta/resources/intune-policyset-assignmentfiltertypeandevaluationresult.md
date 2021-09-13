@@ -2,15 +2,15 @@
 title: assignmentFilterTypeAndEvaluationResult 资源类型
 description: 表示筛选器的筛选类型和 evalaution 结果。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c7c68df670e368d2f440f8a357cfbd483b622fce
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4378df019720583a5851792d5c5c8003be9fd985
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787797"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074932"
 ---
 # <a name="assignmentfiltertypeandevaluationresult-resource-type"></a>assignmentFilterTypeAndEvaluationResult 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58787797"
 表示筛选器的筛选类型和 evalaution 结果。
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |assignmentFilterType|[deviceAndAppManagementAssignmentFilterType](../resources/intune-shared-deviceandappmanagementassignmentfiltertype.md)|表示筛选器类型。 可取值为：`none`、`include`、`exclude`。|
 |evaluationResult|[assignmentFilterEvaluationResult](../resources/intune-policyset-assignmentfilterevaluationresult.md)|表示筛选器的 evalaution 结果。 可取值为：`unknown`、`match`、`notMatch`、`inconclusive`、`failure`、`notEvaluated`。|

@@ -2,15 +2,15 @@
 title: 删除 microsoftTunnelServerLogCollectionResponse
 description: 删除 microsoftTunnelServerLogCollectionResponse。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 194f09bfb9eeb7f5a0a9c158a46f38ac1fb56830
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6ef0b01803e68b2aaef2a8564409d55678e18679
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818334"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59041673"
 ---
 # <a name="delete-microsofttunnelserverlogcollectionresponse"></a>删除 microsoftTunnelServerLogCollectionResponse
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/microsoftTunnelServerLogCollectionResponses/{microsoftT
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

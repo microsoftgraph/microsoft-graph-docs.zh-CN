@@ -2,15 +2,15 @@
 title: 更新 deviceLogCollectionResponse
 description: 更新 deviceLogCollectionResponse 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f1c634be673f8feb04471726c1a6b46eee450039
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 09002a9c3fc05fa9ca727d0a681999b30c661641
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805918"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59042401"
 ---
 # <a name="update-devicelogcollectionresponse"></a>更新 deviceLogCollectionResponse
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,7 +54,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|表单的唯一标识符tenantId_deviceId_requestId|
-|状态|String|日志集合请求的状态|
+|status|String|日志集合请求的状态|
 |managedDeviceId|Guid|设备 ID|
 |errorCode|Int64|错误代码（如果有）。 有效值 -9.22337203685478E+18 到 9.22337203685478E+18|
 |requestedDateTimeUTC|DateTimeOffset|请求的 DateTime|

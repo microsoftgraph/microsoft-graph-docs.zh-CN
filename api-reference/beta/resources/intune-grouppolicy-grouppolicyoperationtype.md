@@ -2,15 +2,15 @@
 title: groupPolicyOperationType 枚举类型
 description: 组策略操作的类型。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f2b73da848fbee1561f48abd620b4d668e0aeaa5
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0b16ce7f8733aa5c0e3bfe03591fdf37b357fe0f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791815"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046839"
 ---
 # <a name="grouppolicyoperationtype-enum-type"></a>groupPolicyOperationType 枚举类型
 
@@ -29,7 +29,7 @@ ms.locfileid: "58791815"
 |upload|1|组策略上载操作类型。|
 |uploadNewVersion|2|组策略上载新版本操作类型。|
 |addLanguageFiles|3|组策略将新语言 (ADML) 文件操作类型。|
-|removeLanguageFiles|4 |组策略删除 ADML (操作) 的语言。|
+|removeLanguageFiles|4 |组策略删除 ADML (操作) 类型的语言。|
 |updateLanguageFiles|5 |组策略更新语言 (ADML) 文件操作类型。|
 |remove|6 |组策略删除上载的文件操作类型。|
 

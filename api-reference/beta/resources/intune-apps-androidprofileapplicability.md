@@ -2,15 +2,15 @@
 title: androidProfileApplicability 枚举类型
 description: Android 配置文件适用性
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4409e33f66d2178fe9f111ad6e338bd38aaa2087
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: be43f6737c8dbbcc59b3c0531f5d0961ba952586
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819246"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59047343"
 ---
 # <a name="androidprofileapplicability-enum-type"></a>androidProfileApplicability 枚举类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58819246"
 Android 配置文件适用性
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |default|0|尚未记录|
 |androidWorkProfile|1|尚未记录|
