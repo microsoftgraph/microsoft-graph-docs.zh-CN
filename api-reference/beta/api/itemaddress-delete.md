@@ -1,16 +1,16 @@
 ---
 title: 删除 itemAddress
 description: 删除 itemAddress 对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 1469633fd4cff278914bc4aa6cb6a757fd20c36f
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: fadfcfa1935524d746d6f6f4ffd8f4ede146e45c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50774714"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59058348"
 ---
 # <a name="delete-itemaddress"></a>删除 itemAddress
 命名空间：microsoft.graph

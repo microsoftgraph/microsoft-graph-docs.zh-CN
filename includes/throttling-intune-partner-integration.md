@@ -1,14 +1,14 @@
 ---
 author: davidmu1
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: msgraph
 ms.topic: include
-ms.openlocfilehash: cafb23b7b427b75bf0b8f357947c2c5275bb074755f1c0353b1a86cfecaa099c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3ef732ad425f7a6d8e0cad1aad800ed0cab1dc78
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196634"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035678"
 ---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
@@ -20,4 +20,7 @@ ms.locfileid: "54196634"
 | 任何 | 每 20 秒 2000 个请求 | 每 20 秒 1000 个请求 |
 
 上述限制适用于下列资源:  
-appVulnerabilityManagedDevice，appVulnerabilityMobileApp，appVulnerabilityTask，configManagerCollection，deviceAppManagementTask，securityConfigurationTask，unmanagedDeviceDiscoveryTask，vulnerableManagedDevice。
+
+| <!-- fake header-->                                                                                                                                                                                                                                                                                                                                                                            |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <ul> <li> [appVulnerabilityManagedDevice](/graph/api/resources/appvulnerabilitymanageddevice) <li> [appVulnerabilityMobileApp](/graph/api/resources/appvulnerabilitymobileapp) <li> [appVulnerabilityTask](/graph/api/resources/appvulnerabilitytask) <li> [configManagerCollection](/graph/api/resources/configmanagercollection) <li> [deviceAppManagementTask](/graph/api/resources/deviceappmanagementtask) <li> [securityConfigurationTask](/graph/api/resources/securityconfigurationtask) <li> [unmanagedDeviceDiscoveryTask](/graph/api/resources/unmanageddevicediscoverytask) <li> [vulnerableManagedDevice](/graph/api/resources/vulnerablemanageddevice)  </ul> |

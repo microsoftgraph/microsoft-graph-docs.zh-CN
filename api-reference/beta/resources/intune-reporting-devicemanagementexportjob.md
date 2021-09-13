@@ -2,15 +2,15 @@
 title: deviceManagementExportJob 资源类型
 description: 表示要导出报告的作业的实体
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 29f56794b23a508e3ffecdf6d380ac918b469625
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 465585e32d349537314fa73ca7bbe6ba52daa286
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784770"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039425"
 ---
 # <a name="devicemanagementexportjob-resource-type"></a>deviceManagementExportJob 资源类型
 
@@ -36,12 +36,12 @@ ms.locfileid: "58784770"
 |:---|:---|:---|
 |id|String|此实体的唯一标识符|
 |reportName|String|报告的名称|
-|filter|字符串|应用于报表的筛选器|
-|select|字符串集合|从报表选择的列|
+|filter|String|应用于报表的筛选器|
+|select|String collection|从报表选择的列|
 |format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|导出的报告的格式。 可取值为：`csv`、`pdf`。|
 |snapshotId|String|快照是由 ReportName 表示的数据集的可识别子集。 可以在此处使用 sessionId 或 CachedReportConfiguration ID。 如果指定了 sessionId，则 Filter、Select 和 OrderBy 将应用于 sessionId 表示的数据。 Filter、Select 和 OrderBy 不能与 CachedReportConfiguration id 一起指定。|
 |localizationType|[deviceManagementExportJobLocalizationType](../resources/intune-reporting-devicemanagementexportjoblocalizationtype.md)|配置所请求的导出作业的本地化方式。 可取值为：`localizedValuesAsAdditionalColumn`、`replaceLocalizableValues`。|
-|状态|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|导出作业的状态。 可取值为：`unknown`、`notStarted`、`inProgress`、`completed`、`failed`。|
+|status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|导出作业的状态。 可取值为：`unknown`、`notStarted`、`inProgress`、`completed`、`failed`。|
 |url|String|导出报告的临时位置|
 |requestDateTime|DateTimeOffset|请求导出报告的时间|
 |expirationDateTime|DateTimeOffset|导出报告的过期时间|

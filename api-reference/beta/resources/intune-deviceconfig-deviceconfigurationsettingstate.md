@@ -2,15 +2,15 @@
 title: deviceConfigurationSettingState 资源类型
 description: 给定设备的设备配置设置状态。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cce3fd916973bcc397c936cbb7c24f6abcec29aa
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1bd7d77aacbabf151b3a12246a5a8f3f0fda371c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818278"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59051445"
 ---
 # <a name="deviceconfigurationsettingstate-resource-type"></a>deviceConfigurationSettingState 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58818278"
 给定设备的设备配置设置状态。
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |setting|String|报告的设置|
 |settingName|String|报告的本地化/用户友好设置名称|
@@ -37,7 +37,7 @@ ms.locfileid: "58818278"
 |userPrincipalName|String|UserPrincipalName。|
 |源|[settingSource](../resources/intune-deviceconfig-settingsource.md) 集合|参与策略|
 |currentValue|String|设备上设置的当前值|
-|settingInstanceId|字符串|SettingInstanceId|
+|settingInstanceId|String|SettingInstanceId|
 
 ## <a name="relationships"></a>关系
 无

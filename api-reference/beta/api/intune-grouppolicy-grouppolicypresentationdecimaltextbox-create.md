@@ -2,15 +2,15 @@
 title: 创建 groupPolicyPresentationDecimalTextBox
 description: 创建新的 groupPolicyPresentationDecimalTextBox 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0f6aae9b24245a3ef3e18b000185f1ce69dd3f48
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: deeb7146f4a2ccf385598146f3150fe955e551a1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58799899"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59082240"
 ---
 # <a name="create-grouppolicypresentationdecimaltextbox"></a>创建 groupPolicyPresentationDecimalTextBox
 
@@ -43,7 +43,7 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,13 +51,13 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 
 下表显示创建 groupPolicyPresentationDecimalTextBox 时所需的属性。
 
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |标签|String|任何演示文稿实体的本地化文本标签。 默认值为空白。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |id|String|实体的键。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |defaultValue|Int64|一个无符号整数，指定小数文本框的初始值。 默认值为 1。|
-|spin|布尔值|如果为 true，则创建旋转控件;否则，为数字输入创建一个文本框。 默认值为 true。|
+|spin|Boolean|如果为 true，则创建旋转控件;否则，为数字输入创建一个文本框。 默认值为 true。|
 |spinStep|Int64|一个无符号整数，指定旋转控件更改的增量。 默认值为 1。|
 |必需|Boolean|要求在参数框中输入值。 默认值为 false。|
 |minValue|Int64|一个无符号整数，指定允许的最小值。 默认值为 0。|

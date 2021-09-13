@@ -2,15 +2,15 @@
 title: adminConsentState 枚举类型
 description: 管理员同意状态。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8af1a2d4961ba8937975ba0e4b6d8a650138a000
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d454bad7522e290f358168faebcd7b5bc54209a1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797252"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59068947"
 ---
 # <a name="adminconsentstate-enum-type"></a>adminConsentState 枚举类型
 

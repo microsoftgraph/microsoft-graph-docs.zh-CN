@@ -2,15 +2,15 @@
 title: 更新 androidForWorkAppConfigurationSchema
 description: 更新 androidForWorkAppConfigurationSchema 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e6ae8f9f1501c0e5de4b69df35b5dc95a74c7af0
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c63e18c898978a5be9f59878a2b95a8b635f927d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58798074"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59078047"
 ---
 # <a name="update-androidforworkappconfigurationschema"></a>更新 androidForWorkAppConfigurationSchema
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/androidForWorkAppConfigurationSchemas/{androidForWorkApp
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

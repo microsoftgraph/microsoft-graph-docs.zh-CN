@@ -2,15 +2,15 @@
 title: 创建 microsoftTunnelHealthThreshold
 description: 创建新的 microsoftTunnelHealthThreshold 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 691a1445839f929d6aa46412fbdea4dcbf5580fa
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: eec3d33082e1accef4c9bb0f5ec7f980009a2c13
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820792"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59041806"
 ---
 # <a name="create-microsofttunnelhealththreshold"></a>创建 microsoftTunnelHealthThreshold
 
@@ -43,7 +43,7 @@ POST /deviceManagement/microsoftTunnelHealthThresholds
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

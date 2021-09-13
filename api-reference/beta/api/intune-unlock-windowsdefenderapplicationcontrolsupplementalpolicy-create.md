@@ -2,15 +2,15 @@
 title: 创建 windowsDefenderApplicationControlSupplementalPolicy
 description: 创建新的 windowsDefenderApplicationControlSupplementalPolicy 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5f0513640fa50def7c08aa7d4980713c47e4652c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 819b2609e6412031525f71eec6a55992652f90c5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58807340"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59054840"
 ---
 # <a name="create-windowsdefenderapplicationcontrolsupplementalpolicy"></a>创建 windowsDefenderApplicationControlSupplementalPolicy
 
@@ -43,7 +43,7 @@ POST /deviceAppManagement/wdacSupplementalPolicies
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,8 +54,8 @@ POST /deviceAppManagement/wdacSupplementalPolicies
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|WindowsDefenderApplicationControl 补充策略的密钥。|
-|displayName|String|WindowsDefenderApplicationControl 显示名称策略的一部分。|
-|description|字符串|WindowsDefenderApplicationControl 补充策略的说明。|
+|displayName|String|WindowsDefenderApplicationControl 补充策略显示名称策略的一部分。|
+|说明|String|WindowsDefenderApplicationControl 补充策略的说明。|
 |content|二进制|采用字节数组格式的 WindowsDefenderApplicationControl 补充策略内容。|
 |contentFileName|String|WindowsDefenderApplicationControl 补充策略内容的文件名。|
 |version|String|WindowsDefenderApplicationControl 补充策略的版本。|

@@ -1,16 +1,16 @@
 ---
 title: 更新 itemAddress
 description: 更新 itemAddress 对象的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 6b761de97ba3c39917f42c0bb110c949f5e6185b
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 0b5a7d032dbaa1da0a86f567c392529dd6944a48
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50774655"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59058360"
 ---
 # <a name="update-itemaddress"></a>更新 itemAddress
 命名空间：microsoft.graph
@@ -50,9 +50,9 @@ PATCH /users/{id | userPrincipalName}/profile/addresses/{id}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|allowedAudiences|字符串|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
+|allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
 |detail|[physicalAddress](../resources/physicaladdress.md)|有关地址本身的详细信息。|
-|displayName|字符串|用户已分配给此地址的友好名称。 |
+|displayName|String|用户分配给此地址的友好名称。 |
 |geoCoordinates|[geoCoordinates](../resources/geocoordinates.md)|地址的地理序号。|
 |inference|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断出来的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |source|[personDataSource](../resources/persondatasource.md)|如果从另一个服务同步，则值源自何处。 继承自 [itemFacet](../resources/itemfacet.md)。|

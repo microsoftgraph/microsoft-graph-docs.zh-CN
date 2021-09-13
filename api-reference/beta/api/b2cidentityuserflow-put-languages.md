@@ -2,15 +2,15 @@
 title: 创建语言
 description: 在 Azure AD B2C 用户流中创建自定义语言。
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1aa49de8c9e32952921413ca64325b39e0dff5fc
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 5f07f92b898656b06e4eea367ecd396a81ccd645
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50944622"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049457"
 ---
 # <a name="create-languages"></a>创建语言
 
@@ -33,7 +33,7 @@ ms.locfileid: "50944622"
 工作或学校帐户需要属于以下角色之一：
 
 * 全局管理员
-* 外部标识用户流管理员
+* 外部标识用户Flow管理员
 
 ## <a name="http-request"></a>HTTP 请求
 

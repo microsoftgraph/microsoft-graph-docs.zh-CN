@@ -2,15 +2,15 @@
 title: deviceManagementReusablePolicySetting 资源类型
 description: Graph可重用设置的模型
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 27f286b5a26d761f4cc36ab3623fa3683837405a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 799fdc402bde4401a823a2d720e822a9001a04d9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58782950"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59051305"
 ---
 # <a name="devicemanagementreusablepolicysetting-resource-type"></a>deviceManagementReusablePolicySetting 资源类型
 
@@ -25,7 +25,7 @@ Graph可重用设置的模型
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列出 deviceManagementReusablePolicySettings](../api/intune-deviceconfigv2-devicemanagementreusablepolicysetting-list.md)|[deviceManagementReusablePolicySetting](../resources/intune-deviceconfigv2-devicemanagementreusablepolicysetting.md) 集合|列出 [deviceManagementReusablePolicySetting](../resources/intune-deviceconfigv2-devicemanagementreusablepolicysetting.md) 对象的属性和关系。|
+|[列出 deviceManagementReusablePolicySettings](../api/intune-deviceconfigv2-devicemanagementreusablepolicysetting-list.md)|[deviceManagementReusablePolicySetting](../resources/intune-deviceconfigv2-devicemanagementreusablepolicysetting.md) 集合|列出 [deviceManagementReusablePolicySetting 对象的属性和](../resources/intune-deviceconfigv2-devicemanagementreusablepolicysetting.md) 关系。|
 |[获取 deviceManagementReusablePolicySetting](../api/intune-deviceconfigv2-devicemanagementreusablepolicysetting-get.md)|[deviceManagementReusablePolicySetting](../resources/intune-deviceconfigv2-devicemanagementreusablepolicysetting.md)|读取 [deviceManagementReusablePolicySetting 对象的属性和](../resources/intune-deviceconfigv2-devicemanagementreusablepolicysetting.md) 关系。|
 |[创建 deviceManagementReusablePolicySetting](../api/intune-deviceconfigv2-devicemanagementreusablepolicysetting-create.md)|[deviceManagementReusablePolicySetting](../resources/intune-deviceconfigv2-devicemanagementreusablepolicysetting.md)|创建新的 [deviceManagementReusablePolicySetting](../resources/intune-deviceconfigv2-devicemanagementreusablepolicysetting.md) 对象。|
 |[删除 deviceManagementReusablePolicySetting](../api/intune-deviceconfigv2-devicemanagementreusablepolicysetting-delete.md)|无|删除 [deviceManagementReusablePolicySetting](../resources/intune-deviceconfigv2-devicemanagementreusablepolicysetting.md)。|
@@ -36,8 +36,8 @@ Graph可重用设置的模型
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|系统生成的可重用设置 ID。|
-|displayName|String|用户可显示名称可重用设置。|
-|description|String|由用户提供的可重用设置说明。|
+|displayName|String|由显示名称的可重用设置。|
+|说明|String|由用户提供的可重用设置说明。|
 |settingDefinitionId|String|与此可重用设置关联的设置定义 ID。|
 |settingInstance|[deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|可重用的设置配置实例|
 |createdDateTime|DateTimeOffset|可重用设置创建日期和时间。 此属性是只读的。|

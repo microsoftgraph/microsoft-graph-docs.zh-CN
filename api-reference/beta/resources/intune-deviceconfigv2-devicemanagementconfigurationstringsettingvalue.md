@@ -2,15 +2,15 @@
 title: deviceManagementConfigurationStringSettingValue 资源类型
 description: 简单设置值
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 24685a9506d3468fad1de85f69c7bf6115bac4ff
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 70a61ec3525d5aa778f80b8f127eea09d8956830
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58751914"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59075289"
 ---
 # <a name="devicemanagementconfigurationstringsettingvalue-resource-type"></a>deviceManagementConfigurationStringSettingValue 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "58751914"
 继承自 [deviceManagementConfigurationSimpleSettingValue](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingvalue.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |settingValueTemplateReference|[deviceManagementConfigurationSettingValueTemplateReference](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvaluetemplatereference.md)|设置值模板引用 继承自 [deviceManagementConfigurationSettingValue](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvalue.md)|
 |value|String|字符串设置的值。|

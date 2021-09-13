@@ -2,15 +2,15 @@
 title: 删除 deviceManagementConfigurationPolicyAssignment
 description: 删除 deviceManagementConfigurationPolicyAssignment。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fa1d95d2d0600c6c8f30c77a9c4b5dee2df09951
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 63f3b2ebb1fb6c8259e46e5d0574193b68dbdc1d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790064"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59042527"
 ---
 # <a name="delete-devicemanagementconfigurationpolicyassignment"></a>删除 deviceManagementConfigurationPolicyAssignment
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/configurationPolicies/{deviceManagementConfigurationPol
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

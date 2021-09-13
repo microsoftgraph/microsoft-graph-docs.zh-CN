@@ -2,15 +2,15 @@
 title: 更新 userExperienceAnalyticsWorkFromAnywhereMetric
 description: 更新 userExperienceAnalyticsWorkFromAnywhereMetric 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b7fe6ae533561c94e59a2b1b860892b5efc4e261
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3e0487b8ab4c53d73c665a6e6f8a1e9b9fa607b5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787678"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59042156"
 ---
 # <a name="update-userexperienceanalyticsworkfromanywheremetric"></a>更新 userExperienceAnalyticsWorkFromAnywhereMetric
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/userExperienceAnalyticsWorkFromAnywhereMetrics/{userExpe
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

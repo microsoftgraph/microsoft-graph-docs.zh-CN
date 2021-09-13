@@ -2,15 +2,15 @@
 title: 列出 deviceManagementPartners
 description: 列出 deviceManagementPartner 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e8d1c0a606611a64c1cc3c1711fb763bd5fb7eb4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 40f1a2dbee6153e8ccfcc95d3b1a3b98b794a55f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793101"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59041652"
 ---
 # <a name="list-devicemanagementpartners"></a>列出 deviceManagementPartners
 
@@ -43,7 +43,7 @@ GET /deviceManagement/deviceManagementPartners
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

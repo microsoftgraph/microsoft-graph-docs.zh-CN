@@ -2,15 +2,15 @@
 title: uploadDepToken 操作
 description: 上载新的设备注册计划令牌
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ebe053bef7325a9c761d773eb1c99a62ba5c99c0
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2da3b7925997f46206131e5a7459d962b7e71b57
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803116"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59054917"
 ---
 # <a name="uploaddeptoken-action"></a>uploadDepToken 操作
 
@@ -43,7 +43,7 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/uploadDepT
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

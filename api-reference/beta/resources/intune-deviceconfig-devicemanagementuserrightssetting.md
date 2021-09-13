@@ -2,15 +2,15 @@
 title: deviceManagementUserRightsSetting 资源类型
 description: 表示用户权限设置。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 97abdf6729e0786d29d7cea12a7217c977b2cb50
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c6f4073fc471d4db16c9d41b77534975284b1bd7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793885"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59054546"
 ---
 # <a name="devicemanagementuserrightssetting-resource-type"></a>deviceManagementUserRightsSetting 资源类型
 

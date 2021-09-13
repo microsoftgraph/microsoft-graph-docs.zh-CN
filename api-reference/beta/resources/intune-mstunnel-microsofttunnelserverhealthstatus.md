@@ -2,15 +2,15 @@
 title: microsoftTunnelServerHealthStatus 枚举类型
 description: 可能的 MicrosoftTunnelServer 运行状况状态类型的枚举
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f9da9568c42ce6eb83378a8f5775e8fab814f009
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c0204b01adecefd80b04580287829f66c6225616
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818735"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039727"
 ---
 # <a name="microsofttunnelserverhealthstatus-enum-type"></a>microsoftTunnelServerHealthStatus 枚举类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58818735"
 可能的 MicrosoftTunnelServer 运行状况状态类型的枚举
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |unknown|0|状态未知|
 |healthy|1|状态正常|

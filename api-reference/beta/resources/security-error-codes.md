@@ -1,22 +1,22 @@
 ---
-title: Microsoft Graph安全性 API 错误响应
-description: Microsoft Graph安全 API 中的错误是使用标准 HTTP 206 部分内容状态代码返回的，并且通过警告标头传递。
+title: Microsoft Graph 安全 API 错误响应
+description: Microsoft 安全Graph API 中的错误是使用标准 HTTP 206 部分内容状态代码返回的，并且通过警告标头传递。
 author: preetikr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: security
 doc_type: conceptualPageType
-ms.openlocfilehash: ff8ef9380df104e0bfb552d941c660ff2c2e6e4654842940cf6b3826510def42
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 674ccf9817d01f48a0db40906ba2cfd656ff3dfe
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54212981"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59080567"
 ---
-# <a name="microsoft-graph-security-api-error-responses"></a>Microsoft Graph安全性 API 错误响应
+# <a name="microsoft-graph-security-api-error-responses"></a>Microsoft Graph 安全 API 错误响应
 
 命名空间：microsoft.graph
 
-Microsoft Graph安全 API 中的错误是使用标准 HTTP 206 部分内容状态代码返回的，并且通过警告标头传递。
+Microsoft 安全Graph API 中的错误是使用标准 HTTP 206 部分内容状态代码返回的，并且通过警告标头传递。
 
 ## <a name="errors"></a>错误
 
@@ -31,9 +31,9 @@ Microsoft Graph 安全性 API 是一项联合服务，可接收来自所有数�
 
 - 如果未授予 (，) 返回 HttpStatusCode.Forbidden) 403。
 - 如果提供程序出现问题，则警告标头 (504) HttpStatusCode.GatewayTimeout。
-- 如果发生内部提供程序错误，则警告标头 (500) HttpStatusCode.InternalServerError。
+- 如果发生内部提供程序错误，警告标头 (500) HttpStatusCode.InternalServerError。
 
-如果数据提供程序返回 2xx 或 404，则它将不会显示在警告标头中，因为这些代码预期成功或找不到数据。 在联合系统中，找不到 404 是预期数据的多次，因为只有一个或多个（但不是全部）提供程序知道数据。
+如果数据提供程序返回 2xx 或 404，则它将不会显示在警告标头中，因为这些代码预期会成功或找不到数据。 在联合系统中，找不到 404 是预期数据的多次，因为只有一个或多个（但不是全部）提供程序知道数据。
 
 ## <a name="example"></a>示例
 

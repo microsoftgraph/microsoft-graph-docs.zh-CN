@@ -2,15 +2,15 @@
 title: 删除 deviceManagementAutopilotPolicyStatusDetail
 description: 删除 deviceManagementAutopilotPolicyStatusDetail。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9a9d8016115950ea86dc04274ce73c630e550716
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: e9ad23e512cb7e192a239f2da9a62ca94913d84f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58265824"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59058438"
 ---
 # <a name="delete-devicemanagementautopilotpolicystatusdetail"></a>删除 deviceManagementAutopilotPolicyStatusDetail
 

@@ -2,15 +2,15 @@
 title: 删除 deviceManagementConfigurationPolicyTemplate
 description: 删除 deviceManagementConfigurationPolicyTemplate。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6c9501116694bbde8de1780eb36344bd89962ea8
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6492fa90476b847febcd3c058e3498849ae30480
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820017"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59077249"
 ---
 # <a name="delete-devicemanagementconfigurationpolicytemplate"></a>删除 deviceManagementConfigurationPolicyTemplate
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/configurationPolicyTemplates/{deviceManagementConfigura
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

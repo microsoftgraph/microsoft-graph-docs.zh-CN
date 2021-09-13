@@ -2,15 +2,15 @@
 title: 删除 deviceConfigurationPolicySetItem
 description: 删除 deviceConfigurationPolicySetItem。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f26f53f774ae95efa1b3013536e02ad0e819386c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 85366c55913fe2438d3195bf4ec311a9d19a6263
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788287"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59052039"
 ---
 # <a name="delete-deviceconfigurationpolicysetitem"></a>删除 deviceConfigurationPolicySetItem
 
@@ -43,7 +43,7 @@ DELETE /deviceAppManagement/policySets/{policySetId}/items/{policySetItemId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

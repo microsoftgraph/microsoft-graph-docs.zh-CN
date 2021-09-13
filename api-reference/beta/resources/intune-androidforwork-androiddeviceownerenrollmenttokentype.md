@@ -2,15 +2,15 @@
 title: androidDeviceOwnerEnrollmentTokenType 枚举类型
 description: 注册配置文件的注册令牌类型。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 98984578d19c13a29760655a1da59a4a53f72f88
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4d03d70e1f241432514d3d5fbd671c107fed26c0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793601"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59057647"
 ---
 # <a name="androiddeviceownerenrollmenttokentype-enum-type"></a>androidDeviceOwnerEnrollmentTokenType 枚举类型
 

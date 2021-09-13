@@ -2,15 +2,15 @@
 title: windowsAutopilotEnrollmentType 枚举类型
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4e2c5eac9235da32cfef718985bb67cd8f967627
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 366ee2bc0a931ac95ba200b8f4d6fdba500c5019
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58250910"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59054224"
 ---
 # <a name="windowsautopilotenrollmenttype-enum-type"></a>windowsAutopilotEnrollmentType 枚举类型
 
@@ -24,9 +24,9 @@ ms.locfileid: "58250910"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|尚未记录|
-|azureADJoinedWithAutopilotProfile|1 |尚未记录|
-|offlineDomainJoined|2 |尚未记录|
-|azureADJoinedUsingDeviceAuthWithAutopilotProfile|3 |尚未记录|
+|azureADJoinedWithAutopilotProfile|1|尚未记录|
+|offlineDomainJoined|2|尚未记录|
+|azureADJoinedUsingDeviceAuthWithAutopilotProfile|3|尚未记录|
 |azureADJoinedUsingDeviceAuthWithoutAutopilotProfile|4 |尚未记录|
 |azureADJoinedWithOfflineAutopilotProfile|5 |尚未记录|
 |azureADJoinedWithWhiteGlove|6 |尚未记录|

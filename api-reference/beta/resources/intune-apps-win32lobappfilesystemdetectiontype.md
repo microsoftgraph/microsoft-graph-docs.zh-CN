@@ -2,15 +2,15 @@
 title: win32LobAppFileSystemDetectionType 枚举类型
 description: 包含所有受支持的文件系统检测类型。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8c43c3835490394c7287aefa6311c1e39d4f8b90
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e8cd5d227ba4e0739c393ea2a6335c23f9fc53b4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785785"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59057514"
 ---
 # <a name="win32lobappfilesystemdetectiontype-enum-type"></a>win32LobAppFileSystemDetectionType 枚举类型
 

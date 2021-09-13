@@ -2,15 +2,15 @@
 title: macOSSoftwareUpdateDelayPolicy 枚举类型
 description: 用于确定是否延迟 macOS 软件更新的标志枚举。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 16204557d18024d40336b0f73a401141bf48c01a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 18ce0f39150b4b551b33f7c13dfc96817237617b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791520"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59054504"
 ---
 # <a name="macossoftwareupdatedelaypolicy-enum-type"></a>macOSSoftwareUpdateDelayPolicy 枚举类型
 

@@ -2,15 +2,15 @@
 title: 更新 personAnnotation
 description: 更新 personAnnotation 对象的属性。
 author: kevinbellinger
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: a86467b01d6072f4a14dad6fc5d1a6838249899b
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 343fb581ec1e2a6b202a4430b3945bbb9c606969
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50774164"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59051689"
 ---
 # <a name="update-personannotation"></a>更新 personAnnotation
 命名空间：microsoft.graph
@@ -25,7 +25,7 @@ ms.locfileid: "50774164"
 |:---------------------------------------|:---------------------------------------------------------------------------------|
 | 委派（工作或学校帐户）     | User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All |
-| Application                            | User.ReadBasic.All、User.Read.All、User.ReadWrite.All                            |
+| 应用程序                            | User.ReadBasic.All、User.Read.All、User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -52,14 +52,14 @@ PATCH /users/{id | userPrincipalName}/profile/notes/{id}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|allowedAudiences|字符串|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
+|allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
 |detail|[itemBody](../resources/itembody.md)|包含注释本身的详细信息。|
-|displayName|字符串|包含便笺的友好名称。|
+|displayName|String|包含便笺的友好名称。|
 |inference|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断出来的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [personAnnotation](../resources/personannotation.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和更新的 [personAnnotation](../resources/personannotation.md) 对象。
 
 ## <a name="examples"></a>示例
 

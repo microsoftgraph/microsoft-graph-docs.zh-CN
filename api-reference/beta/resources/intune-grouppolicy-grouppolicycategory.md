@@ -2,15 +2,15 @@
 title: groupPolicyCategory 资源类型
 description: 类别实体存储组策略定义的类别
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f26e83fef905525bc9218d850dcb8ef416430233
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: bd728c056576e31b37a4c105c62186f97e789fa1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58802451"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59080959"
 ---
 # <a name="grouppolicycategory-resource-type"></a>groupPolicyCategory 资源类型
 
@@ -31,13 +31,13 @@ ms.locfileid: "58802451"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|类别名称的字符串 id 显示名称|
+|displayName|String|类别名称的字符串显示名称|
 |isRoot|Boolean|定义类别是否属于根类别|
 |id|String|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|描述|
 |:---|:---|:---|
 |父级|[groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)|父类别|
 |children|[groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md) 集合|子类别|

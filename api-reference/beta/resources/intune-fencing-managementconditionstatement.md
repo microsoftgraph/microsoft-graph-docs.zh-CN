@@ -2,15 +2,15 @@
 title: managementConditionStatement 资源类型
 description: 管理条件声明是一组管理条件，当满足所有所包含的管理条件时，可启用/禁用设备/应用程序配置。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 367739eb54144b29fc0d109174f2d89108418d0b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6a4223de89f7c7dfaf79e5f0bd2494d354654506
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58769479"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063963"
 ---
 # <a name="managementconditionstatement-resource-type"></a>managementConditionStatement 资源类型
 
@@ -38,7 +38,7 @@ ms.locfileid: "58769479"
 |:---|:---|:---|
 |id|String|管理条件语句的唯一标识符。 创建时分配的系统生成值。|
 |displayName|String|管理员定义的管理条件声明的名称。|
-|description|String|管理员定义的管理条件声明的说明。|
+|说明|String|管理员定义的管理条件声明的说明。|
 |createdDateTime|DateTimeOffset|创建管理条件语句的时间。 生成的服务器端。|
 |modifiedDateTime|DateTimeOffset|上次修改管理条件语句的时间。 更新的服务器端。|
 |表达式|[managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)|用于评估管理条件语句是否被激活/停用的管理条件语句表达式。|
@@ -47,7 +47,7 @@ ms.locfileid: "58769479"
 这是通过查看与管理条件声明关联的管理条件并查找适用平台的交集得出的。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|描述|
 |:---|:---|:---|
 |managementConditions|[managementCondition](../resources/intune-fencing-managementcondition.md) 集合|与管理条件语句关联的管理条件。|
 

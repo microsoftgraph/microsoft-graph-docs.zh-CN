@@ -1,15 +1,15 @@
 ---
-title: Microsoft Intune中的设备配置 - Microsoft Gaaph API
-description: 列出定义Graph配置设备的适用于 Intune 终结点的 Microsoft (REST) 。
+title: Microsoft Intune 中的设备配置 - Microsoft Gaaph API
+description: 列出定义Graph配置设备的适用于 Intune 终结点 (REST) 的 Microsoft API。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: 3535decf70b34650d6ff3e381949e9fd01d60f23
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: cd98835baf70f760929bb19c840ed01cc57d0589
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58798123"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59051459"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Microsoft Intune 中的设备配置
 

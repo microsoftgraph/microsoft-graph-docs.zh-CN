@@ -2,15 +2,15 @@
 title: 创建 pfxUserCertificate
 description: 创建新的 pfxUserCertificate 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cbc03dd85b7527b9ae944174c25a74439ea0d543
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8f25ddb9c2013d39afcee789015ef6bd6c1487d9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58800798"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59051906"
 ---
 # <a name="create-pfxusercertificate"></a>创建 pfxUserCertificate
 
@@ -43,7 +43,7 @@ POST /pfxUserCertificates
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -64,7 +64,7 @@ POST /pfxUserCertificates
 |providerName|String|尚未记录|
 |encryptionKeyName|String|尚未记录|
 |paddingScheme|Int32|尚未记录|
-|状态|Int32|尚未记录|
+|status|Int32|尚未记录|
 |intendedPurpose|Int32|尚未记录|
 |createdTime|DateTimeOffset|尚未记录|
 |isDeleted|Boolean|尚未记录|

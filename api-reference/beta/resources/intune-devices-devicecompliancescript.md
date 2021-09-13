@@ -2,15 +2,15 @@
 title: deviceComplianceScript 资源类型
 description: Intune 将为客户提供在已注册的 windows 10 (设备上) 运行其 Powershell 合规性脚本Azure Active Directory检测功能。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3e3c29d21784032e970d083ab4ee0300f57332a2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: adb65af1bc6c12a5b34b2b1c30b4959393dd4747
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791499"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59057283"
 ---
 # <a name="devicecompliancescript-resource-type"></a>deviceComplianceScript 资源类型
 
@@ -38,8 +38,8 @@ Intune 将为客户提供在已注册的 windows 10 (设备上) 运行其 Powers
 |id|String|设备合规性脚本的唯一标识符|
 |发布者|String|设备合规性脚本发布者的名称|
 |version|String|设备合规性脚本的版本|
-|displayName|字符串|设备合规性脚本的名称|
-|description|String|设备合规性脚本的说明|
+|displayName|String|设备合规性脚本的名称|
+|说明|String|设备合规性脚本的说明|
 |detectionScriptContent|二进制|检测 powershell 脚本的全部内容|
 |createdDateTime|DateTimeOffset|创建设备合规性脚本的时间戳。 此属性是只读的。|
 |lastModifiedDateTime|DateTimeOffset|修改设备合规性脚本的时间戳。 此属性是只读的。|

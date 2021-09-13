@@ -2,15 +2,15 @@
 title: pfxRecryptionRequest 资源类型
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a84f5514e13633c1c5a2ed5f6ffc5ce5b9130eea
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7accd07576b93448268eed950768b02a57eceb68
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805287"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074848"
 ---
 # <a name="pfxrecryptionrequest-resource-type"></a>pfxRecryptionRequest 资源类型
 
@@ -40,7 +40,7 @@ ms.locfileid: "58805287"
 |profileId|Guid|尚未记录|
 |thumbprint|String|尚未记录|
 |deviceKeyThumbprint|String|尚未记录|
-|状态|Int32|尚未记录|
+|status|Int32|尚未记录|
 |sourceType|Int32|尚未记录|
 |createdTime|DateTimeOffset|尚未记录|
 |lastModifiedTime|DateTimeOffset|尚未记录|

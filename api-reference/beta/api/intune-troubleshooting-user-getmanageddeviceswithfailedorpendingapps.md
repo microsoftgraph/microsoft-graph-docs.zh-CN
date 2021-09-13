@@ -2,15 +2,15 @@
 title: getManagedDevicesWithFailedOrPendingApps 函数
 description: 检索具有失败或挂起的应用的设备列表
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5a9750106fe239f47ffef221d556738e1ab434c4
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: b232bcf33959c4f4de48ecd5bb42a65294714d64
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266483"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59058431"
 ---
 # <a name="getmanageddeviceswithfailedorpendingapps-function"></a>getManagedDevicesWithFailedOrPendingApps 函数
 

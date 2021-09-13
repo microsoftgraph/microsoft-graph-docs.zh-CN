@@ -2,15 +2,15 @@
 title: omaSettingString 资源类型
 description: OMA 设置字符串定义。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 01452191094aa71b43cb93cd6fb8ef49e8bce99e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 212984a7bf8d1cb57666e9a96dbfb65c229d6d82
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796255"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59054441"
 ---
 # <a name="omasettingstring-resource-type"></a>omaSettingString 资源类型
 
@@ -29,7 +29,7 @@ OMA 设置字符串定义。
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|显示名称。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|description|String|说明。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|说明|String|说明。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |omaUri|String|OMA。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |secretReferenceValueId|String|用于查找解密密码的 ReferenceId。 此属性是只读的。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |isEncrypted|Boolean|指示值字段是否加密。 此属性是只读的。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|

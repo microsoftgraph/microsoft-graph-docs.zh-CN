@@ -2,15 +2,15 @@
 title: windowsAppXAppAssignmentSettings 资源类型
 description: 包含向组分配 Windows AppX 移动应用时所使用的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d13c2886e11dff9c959ef50985988c6f5ca380e7
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 50e24a0ecb8d2864597ba6f30b996d41c36aa795
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58807235"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59051102"
 ---
 # <a name="windowsappxappassignmentsettings-resource-type"></a>windowsAppXAppAssignmentSettings 资源类型
 
@@ -28,7 +28,7 @@ ms.locfileid: "58807235"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|useDeviceContext|布尔值|是否对 AppX 移动应用使用Windows上下文。|
+|useDeviceContext|布尔值|是否将设备执行上下文用于 Windows AppX 移动应用。|
 
 ## <a name="relationships"></a>关系
 无

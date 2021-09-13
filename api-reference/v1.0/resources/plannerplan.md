@@ -1,22 +1,22 @@
 ---
 title: plannerPlan 资源类型
-description: '**plannerPlan** 资源表示 Microsoft 365 中的计划。 计划可以由组所有，并包含 plannerTasks 集合。 其也可以有 plannerBuckets 集合。 每个计划对象具有可以包含此计划的更多信息的详细信息对象。 有关组、计划和任务之间的关系的详细信息，请参阅“Planner”。'
-localization_priority: Priority
+description: '**plannerPlan** 资源表示 Microsoft 365 中的计划。计划可以由组所有，并包含 plannerTasks 集合。它也可以拥有 plannerBuckets 集合。每个计划对象都具有可以包含该计划的更多信息的详细信息对象。有关组、计划和任务之间的关系的详细信息，请参阅“Planner”。'
+ms.localizationpriority: high
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: b5b27469f08caf764031030a88c35d2f976a5dd3f420cdf6221ab858f2ccd137
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f4ef9cd3bcefcbc9edd06bedc1b48388b8efca57
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54243318"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129829"
 ---
 # <a name="plannerplan-resource-type"></a>plannerPlan 资源类型
 
 命名空间：microsoft.graph
 
-**plannerPlan** 资源表示 Microsoft 365 中的计划。 计划可以由[组](group.md)所有，并包含 [plannerTasks](plannertask.md) 集合。 其也可以有 [plannerBuckets](plannerbucket.md) 集合。 每个计划对象具有可以包含此计划的更多信息的[详细信息](plannerplandetails.md)对象。 有关组、计划和任务之间的关系的详细信息，请参阅 [Planner](planner-overview.md)。
+**plannerPlan** 资源表示 Microsoft 365 中的计划。计划可以由[组](group.md)所有，并包含 [plannerTasks](plannertask.md) 集合。它也可以拥有 [plannerBuckets](plannerbucket.md) 集合。每个计划对象都具有可以包含该计划的更多信息的[详细信息](plannerplandetails.md)对象。有关组、计划和任务之间的关系的详细信息，请参阅[Planner](planner-overview.md)。
 
 ## <a name="methods"></a>方法
 
@@ -30,9 +30,9 @@ ms.locfileid: "54243318"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|createdDateTime|DateTimeOffset|只读。 创建计划的日期和时间 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
-|id|String| 只读。 计划的 ID。 长度为 28 个字符，区分大小写。 [格式验证](planner-identifiers-disclaimer.md)在服务上完成。|
-|Owner|String|拥有计划的[组](group.md)的 ID。 必须存在有效的组才能设置此字段。 设置后，此属性无法更新。|
+|createdDateTime|DateTimeOffset|只读。创建计划的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。例如，UTC 时间 2014 年 1 月 1 日午夜将表示为 `2014-01-01T00:00:00Z`|
+|id|String| 只读。计划的 ID。长度为 28 个字符，区分大小写。[格式验证](planner-identifiers-disclaimer.md)在服务上完成。|
+|owner|String|拥有计划的[组](group.md)的 ID。 必须存在有效的组才能设置此字段。 设置后，此属性无法更新。|
 |title|String|必填。计划的标题|
 |createdBy|[identitySet](identityset.md)|只读。创建计划的用户。|
 

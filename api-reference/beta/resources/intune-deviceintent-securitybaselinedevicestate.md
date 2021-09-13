@@ -2,15 +2,15 @@
 title: securityBaselineDeviceState 资源类型
 description: 设备的安全基线的安全基线合规性状态摘要。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 99dae7127ff0074fd660ed90bf0467fc8e6f5986
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f960ec9f9a0b56b8a28cda555cf78514cebb0bbb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805729"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59051249"
 ---
 # <a name="securitybaselinedevicestate-resource-type"></a>securityBaselineDeviceState 资源类型
 
@@ -35,7 +35,7 @@ ms.locfileid: "58805729"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的唯一标识符|
-|managedDeviceId|字符串|Intune 设备 ID|
+|managedDeviceId|String|Intune 设备 ID|
 |deviceDisplayName|String|设备的显示名称|
 |userPrincipalName|String|用户主体名称|
 |state|[securityBaselineComplianceState](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|安全基线合规性状态。 可取值为：`unknown`、`secure`、`notApplicable`、`notSecure`、`error`、`conflict`。|

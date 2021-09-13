@@ -2,15 +2,15 @@
 title: defaultManagedAppProtection 资源类型
 description: 用于为 TargetedManagedAppProtection 策略未针对的所有用户配置指定的一组应用的详细管理设置的策略。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7afb0e1e8c8e0affc379be357fbf6db6d17a1697
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3193a5e6a862f4bc46b00ab37cd732e4daf5f9d6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805315"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59057311"
 ---
 # <a name="defaultmanagedappprotection-resource-type"></a>defaultManagedAppProtection 资源类型
 
@@ -38,7 +38,7 @@ ms.locfileid: "58805315"
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|策略显示名称。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
-|description|String|策略的说明。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|说明|String|策略的说明。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |createdDateTime|DateTimeOffset|创建策略的日期和时间。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改策略的时间。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |roleScopeTagIds|字符串集合|此实体实例的范围标记列表。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
@@ -73,7 +73,7 @@ ms.locfileid: "58805315"
 |minimumWarningOsVersion|String|低于指定版本的版本将导致托管应用访问公司数据时出现警告消息。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |minimumRequiredAppVersion|String|低于指定版本的版本将阻止托管应用访问公司数据。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |minimumWarningAppVersion|String|低于指定版本的版本将导致托管应用出现警告消息。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
-|minimumWipeOsVersion|字符串|小于或等于指定版本的版本将擦除托管应用和关联的公司数据。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|minimumWipeOsVersion|String|小于或等于指定版本的版本将擦除托管应用和关联的公司数据。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |minimumWipeAppVersion|String|小于或等于指定版本的版本将擦除托管应用和关联的公司数据。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |appActionIfDeviceComplianceRequired|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|如果 DeviceComplianceRequired 设置为 true，则定义设备取得 root 或越狱权限时可阻止或擦除的托管应用行为。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)。 可取值为：`block`、`wipe`、`warn`。|
 |appActionIfMaximumPinRetriesExceeded|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|根据错误的 pin 重试次数上限，定义托管应用行为（阻止或擦除）。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)。 可取值为：`block`、`wipe`、`warn`。|
@@ -87,8 +87,8 @@ ms.locfileid: "58805315"
 |blockDataIngestionIntoOrganizationDocuments|Boolean|指示用户是否可以将数据引入组织文档。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |allowedDataIngestionLocations|[managedAppDataIngestionLocation](../resources/intune-mam-managedappdataingestionlocation.md) 集合|用户可能存储托管数据的数据存储位置。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |appActionIfUnableToAuthenticateUser|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|如果设置，它将指定在用户由于身份验证令牌无效而无法签入时要执行哪些操作。 在 AAD 中删除或禁用用户时，将发生这种情况。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)。 可取值为：`block`、`wipe`、`warn`。|
-|dialerRestrictionLevel|[managedAppPhoneNumberRedirectLevel](../resources/intune-mam-managedappphonenumberredirectlevel.md)|允许单击打开电话号码的拨号程序应用的类。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)。 可能的值是：`allApps`、`managedApps`、`customApp`、`blocked`。|
-|appDataEncryptionType|[managedAppDataEncryptionType](../resources/intune-mam-managedappdataencryptiontype.md)|应该用于托管应用中的数据的加密类型。  (仅 iOS) 。 可能的值是：`useDeviceSettings`、`afterDeviceRestart`、`whenDeviceLockedExceptOpenFiles`、`whenDeviceLocked`。|
+|dialerRestrictionLevel|[managedAppPhoneNumberRedirectLevel](../resources/intune-mam-managedappphonenumberredirectlevel.md)|允许单击打开电话号码的拨号程序应用的类。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)。 可取值为：`allApps`、`managedApps`、`customApp`、`blocked`。|
+|appDataEncryptionType|[managedAppDataEncryptionType](../resources/intune-mam-managedappdataencryptiontype.md)|应该用于托管应用中的数据的加密类型。  (仅 iOS) 。 可取值为：`useDeviceSettings`、`afterDeviceRestart`、`whenDeviceLockedExceptOpenFiles`、`whenDeviceLocked`。|
 |screenCaptureBlocked|Boolean|指示是否阻止捕获屏幕。 （仅限 Android）|
 |encryptAppData|Boolean|指示是否应加密托管应用数据。 （仅限 Android）|
 |disableAppEncryptionIfDeviceEncryptionIsEnabled|Boolean|启用此设置后，如果启用了设备级别加密，则应用级别加密将被禁用。 （仅限 Android）|
@@ -101,9 +101,9 @@ ms.locfileid: "58805315"
 |exemptedAppPackages|[keyValuePair](../resources/intune-mam-keyvaluepair.md) 集合|此列表中的 Android 应用包将免受策略的影响，并且将能够从托管应用接收数据。 （仅限 Android）|
 |faceIdBlocked|Boolean|指示如果 PinRequired 设置为 True，是否允许使用 FaceID 代替 PIN。  (仅 iOS) |
 |minimumWipeSdkVersion|String|低于指定版本的版本将阻止托管应用访问公司数据。|
-|minimumWipePatchVersion|字符串|小于或等于指定值的 Android 安全修补程序级别将擦除托管应用和关联的公司数据。 （仅限 Android）|
+|minimumWipePatchVersion|String|小于或等于指定值的 Android 安全修补程序级别将擦除托管应用和关联的公司数据。 （仅限 Android）|
 |allowedIosDeviceModels|String|允许以字符串形式将设备型号的分号分隔列表用于托管应用。  (仅 iOS) |
-|appActionIfIosDeviceModelNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|定义托管应用行为（阻止或擦除）（如果不允许指定的设备模型）。  (仅 iOS) 。 可取值为：`block`、`wipe`、`warn`。|
+|appActionIfIosDeviceModelNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|定义托管应用行为（阻止或擦除）（如果不允许指定的设备模型）。  (iOS 仅) 。 可取值为：`block`、`wipe`、`warn`。|
 |allowedAndroidDeviceManufacturers|String|以字符串形式允许托管应用工作的设备制造商分号分隔列表。 （仅限 Android）|
 |appActionIfAndroidDeviceManufacturerNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|定义托管应用行为（阻止或擦除）（如果不允许指定的设备制造商）。  (Android) 。 可取值为：`block`、`wipe`、`warn`。|
 |thirdPartyKeyboardsBlocked|Boolean|定义在访问托管应用时是否允许使用第三方键盘。  (仅 iOS) |
@@ -114,15 +114,15 @@ ms.locfileid: "58805315"
 |appActionIfAndroidSafetyNetDeviceAttestationFailed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|定义托管应用行为，如果指定的 Android SafetyNet 证明要求失败，则发出警告或阻止。 可取值为：`block`、`wipe`、`warn`。|
 |requiredAndroidSafetyNetAppsVerificationType|[androidManagedAppSafetyNetAppsVerificationType](../resources/intune-mam-androidmanagedappsafetynetappsverificationtype.md)|定义 Android SafetyNet 应用验证要求，使托管应用正常工作。 可取值为：`none`、`enabled`。|
 |appActionIfAndroidSafetyNetAppsVerificationFailed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|定义托管应用行为，如果指定的 Android 应用验证要求失败，则发出警告或阻止。 可取值为：`block`、`wipe`、`warn`。|
-|customBrowserProtocol|String|在 iOS 上打开 Web 链接的自定义浏览器协议。  (仅 iOS) |
-|customBrowserPackageId|字符串|在 Android 上打开 Web 链接的自定义浏览器的唯一标识符。 （仅限 Android）|
+|customBrowserProtocol|String|在 iOS 上打开 Web 链接的自定义浏览器协议。  (iOS) |
+|customBrowserPackageId|String|在 Android 上打开 Web 链接的自定义浏览器的唯一标识符。 （仅限 Android）|
 |customBrowserDisplayName|String|在 Android 上打开 Web 链接的首选自定义浏览器的友好名称。 （仅限 Android）|
-|minimumRequiredCompanyPortalVersion|字符串|必须安装在设备或应用访问上的公司门户的最低版本将被阻止|
+|minimumRequiredCompanyPortalVersion|String|必须安装在设备或应用访问上的公司门户的最低版本将被阻止|
 |minimumWarningCompanyPortalVersion|String|必须安装在设备上或用户将收到警告的公司门户的最低版本|
-|minimumWipeCompanyPortalVersion|字符串|必须安装在设备上或应用上的公司数据的最低版本公司门户将擦除|
-|allowedAndroidDeviceModels|String collection|允许托管应用正常工作的设备型号列表（作为字符串）。  (Android 仅) |
+|minimumWipeCompanyPortalVersion|String|必须安装在设备上或应用上的公司数据的最低版本公司门户将擦除|
+|allowedAndroidDeviceModels|字符串集合|允许托管应用正常工作的设备型号列表（作为字符串）。  (Android 仅) |
 |appActionIfAndroidDeviceModelNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|定义托管应用行为（阻止或擦除）（如果不允许指定的设备模型）。  (Android 仅) 。 可取值为：`block`、`wipe`、`warn`。|
-|customDialerAppProtocol|字符串|在 iOS 上单击以打开电话号码的自定义拨号程序应用的协议，例如 skype：。|
+|customDialerAppProtocol|String|在 iOS 上单击以打开电话号码的自定义拨号程序应用的协议，例如 skype：。|
 |customDialerAppPackageId|String|在 Android 上单击以打开电话号码的自定义拨号程序应用的 PackageId。|
 |customDialerAppDisplayName|String|在 Android 上单击以打开电话号码的自定义拨号程序应用的友好名称。|
 |biometricAuthenticationBlocked|Boolean|指示 PinRequired 设置为 True 时是否允许使用生物识别身份验证来代表 PIN。  (Android 仅) |

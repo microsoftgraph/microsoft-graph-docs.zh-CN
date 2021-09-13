@@ -1,21 +1,21 @@
 ---
 title: 获取 itemAddress
 description: 读取 itemAddress 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 11759bcc9d8529e14ef44df0de2932debea6ce1a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0d92fabadda8c9eaac4dbc89f0540517a2a0ad3a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969973"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59058349"
 ---
 # <a name="get-itemaddress"></a>获取 itemAddress
 命名空间：microsoft.graph
 
-读取 [itemAddress](../resources/itemaddress.md) 对象的属性和关系。
+读取 [itemAddress 对象的属性和](../resources/itemaddress.md) 关系。
 
 ## <a name="permissions"></a>权限
 
@@ -23,9 +23,9 @@ ms.locfileid: "48969973"
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| 委派（工作或学校帐户）     | User. Read、User.readbasic.all、user. all、All、user. all。 All |
-| 委派（个人 Microsoft 帐户） | User. Read、User.readbasic.all、user. all、All、user. all。 All |
-| 应用程序                            | User.readbasic.all、所有用户读写全部。 All                            |
+| 委派（工作或学校帐户）     | User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All |
+| 应用程序                            | User.ReadBasic.All、User.Read.All、User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -40,7 +40,7 @@ GET /users/{id | userPrincipalName}/profile/addresses/{id}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$select` 查询参数。 指定要包含在响应中的属性的列表，并以逗号分隔。 为获得最佳性能，请仅选择所需的属性子集。
+此方法支持 `$select` 查询参数。 指定要包括在响应中的属性列表，用逗号分隔它们。 为获得最佳性能，请仅选择所需的属性子集。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -52,7 +52,7 @@ GET /users/{id | userPrincipalName}/profile/addresses/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [itemAddress](../resources/itemaddress.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [itemAddress](../resources/itemaddress.md) 对象。
 
 ## <a name="examples"></a>示例
 

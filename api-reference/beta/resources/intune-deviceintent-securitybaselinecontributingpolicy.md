@@ -2,15 +2,15 @@
 title: securityBaselineContributingPolicy 资源类型
 description: 设备设置的安全基线合规性状态
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 92f49ce93e49524c3a9925e561cae57ca1c49f3d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a5de4d9ee9ebe2f302067084bbbd7d0ed243ca54
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803789"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59051242"
 ---
 # <a name="securitybaselinecontributingpolicy-resource-type"></a>securityBaselineContributingPolicy 资源类型
 

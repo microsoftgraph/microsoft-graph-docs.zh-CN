@@ -2,15 +2,15 @@
 title: easServices 枚举类型
 description: Exchange活动同步服务。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2fa851473fd8aef1ae8af588f07e1b477563091b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 87dbdeea75ecac1cd2995d0be30a41a1f5d470b9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58799815"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59040447"
 ---
 # <a name="easservices-enum-type"></a>easServices 枚举类型
 

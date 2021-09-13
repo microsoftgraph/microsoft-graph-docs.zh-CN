@@ -2,15 +2,15 @@
 title: hasPayloadLinkResultItem 资源类型
 description: 包含 HasPayloadLinks 操作结果的类。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 123177d4935ea7aec924345d27134f7ad779a625
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ad490d3d9574fa42f9dddb4c3bba92934b02287d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785687"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59080756"
 ---
 # <a name="haspayloadlinkresultitem-resource-type"></a>hasPayloadLinkResultItem 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58785687"
 包含 HasPayloadLinks 操作结果的类。
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |payloadId|String|有效负载的键，格式为 Guid。|
 |hasLink|Boolean|指示有效负载是否具有任何链接。|

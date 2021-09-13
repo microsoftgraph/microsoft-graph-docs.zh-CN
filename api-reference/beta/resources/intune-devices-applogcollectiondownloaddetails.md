@@ -2,15 +2,15 @@
 title: appLogCollectionDownloadDetails 资源类型
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8eed8a9d458f9640a2580571ba59dea9b08a78e6
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 714fa32563d5e7e21a291718c76eb85bb43d9b51
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58821120"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59051172"
 ---
 # <a name="applogcollectiondownloaddetails-resource-type"></a>appLogCollectionDownloadDetails 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58821120"
 尚未记录
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |downloadUrl|String|下载已完成 AppLogUploadRequest 的 SAS URL|
 |decryptionKey|String|DecryptionKey 作为字符串|

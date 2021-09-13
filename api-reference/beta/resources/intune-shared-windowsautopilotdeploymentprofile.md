@@ -2,15 +2,15 @@
 title: windowsAutopilotDeploymentProfile 资源类型
 description: Windows Autopilot Deployment配置文件
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 36fed1e15acd0f3e8a2524ab01dc8e7fd3d80e21
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 18185ef266511aa10e11fe2f5343069fc4d5d4c1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787207"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59051081"
 ---
 # <a name="windowsautopilotdeploymentprofile-resource-type"></a>windowsAutopilotDeploymentProfile 资源类型
 
@@ -35,14 +35,14 @@ Windows Autopilot Deployment配置文件
 |:---|:---|:---|
 |id|String|配置文件密钥|
 |displayName|String|配置文件的名称|
-|description|字符串|配置文件的说明|
+|说明|String|配置文件的说明|
 |language|String|在设备上配置的语言|
 |createdDateTime|DateTimeOffset|配置文件创建时间|
 |lastModifiedDateTime|DateTimeOffset|配置文件上次修改时间|
 |outOfBoxExperienceSettings|[outOfBoxExperienceSettings](../resources/intune-enrollment-outofboxexperiencesettings.md)|开箱后体验设置|
 |enrollmentStatusScreenSettings|[windowsEnrollmentStatusScreenSettings](../resources/intune-enrollment-windowsenrollmentstatusscreensettings.md)|注册状态屏幕设置|
 |extractHardwareHash|Boolean|配置文件的 HardwareHash 提取|
-|deviceNameTemplate|字符串|用于命名 AutoPilot 设备的模板。 这可以是自定义文本，还可以包含设备的序列号或随机生成的数字。 模板生成的文本的总长度不能超过 15 个字符。|
+|deviceNameTemplate|String|用于命名 AutoPilot 设备的模板。 这可以是自定义文本，还可以包含设备的序列号或随机生成的数字。 模板生成的文本的总长度不能超过 15 个字符。|
 |deviceType|[windowsAutopilotDeviceType](../resources/intune-enrollment-windowsautopilotdevicetype.md)|此配置文件适用的 AutoPilot 设备类型。 可取值为：`windowsPc`、`surfaceHub2`。|
 |enableWhiteGlove|Boolean|为配置文件启用 Autopilot White Glove。|
 |roleScopeTagIds|字符串集合|配置文件的范围标记。|

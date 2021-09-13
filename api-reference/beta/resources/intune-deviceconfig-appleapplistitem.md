@@ -2,15 +2,15 @@
 title: appleAppListItem 资源类型
 description: 表示托管 Apple 应用程序列表中的应用程序
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2111e8e8403b312c17a7c9e2c6dad62c857d4282
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 91a43ee845998535331804936becb6596ee7e2bd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796262"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59075597"
 ---
 # <a name="appleapplistitem-resource-type"></a>appleAppListItem 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "58796262"
 继承自 [appListItem](../resources/intune-deviceconfig-applistitem.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |name|String|应用程序名称 继承自 [appListItem](../resources/intune-deviceconfig-applistitem.md)|
 |发布者|String|应用程序的发布者 继承自 [appListItem](../resources/intune-deviceconfig-applistitem.md)|

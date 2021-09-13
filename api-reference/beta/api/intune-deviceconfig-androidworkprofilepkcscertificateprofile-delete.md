@@ -2,15 +2,15 @@
 title: 删除 androidWorkProfilePkcsCertificateProfile
 description: 删除 androidWorkProfilePkcsCertificateProfile。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a7947831d653a5a19782199532309d8a2ce88589
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e7c81c44e2e67655927beae340e1de1964e85795
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805196"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59077564"
 ---
 # <a name="delete-androidworkprofilepkcscertificateprofile"></a>删除 androidWorkProfilePkcsCertificateProfile
 
@@ -45,7 +45,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

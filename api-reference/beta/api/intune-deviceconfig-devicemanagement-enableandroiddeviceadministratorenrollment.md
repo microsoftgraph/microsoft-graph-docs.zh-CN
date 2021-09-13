@@ -2,15 +2,15 @@
 title: enableAndroidDeviceAdministratorEnrollment 操作
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7ab2c48a35db0492ac82cfcf25f48f27a8e17de2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b3b756ad38794108eaf62d000b7983fcdb13e64a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783412"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59052361"
 ---
 # <a name="enableandroiddeviceadministratorenrollment-action"></a>enableAndroidDeviceAdministratorEnrollment 操作
 
@@ -43,7 +43,7 @@ POST /deviceManagement/enableAndroidDeviceAdministratorEnrollment
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -2,15 +2,15 @@
 title: androidEnrollmentCompanyCode 资源类型
 description: 用于保留通过 Google 的 Android 管理 API 注册的专用注册数据（如令牌、Url 和 QR 代码内容）的类
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e6e15d4720b9f29e9b548004127760a2ba3b0135
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: cef755a70e0dcb237196891d88a89aecad85015c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58799829"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59057640"
 ---
 # <a name="androidenrollmentcompanycode-resource-type"></a>androidEnrollmentCompanyCode 资源类型
 

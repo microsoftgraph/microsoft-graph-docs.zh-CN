@@ -2,15 +2,15 @@
 title: 更新 microsoftTunnelServer
 description: 更新 microsoftTunnelServer 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d80b6e95570ce359b3f82cebe101f161e9076b91
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: bf7cf0b8023919819186d876bcf0e8c095a59152
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787074"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59041701"
 ---
 # <a name="update-microsofttunnelserver"></a>更新 microsoftTunnelServer
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/microsoftTu
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,10 +54,10 @@ PATCH /deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/microsoftTu
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|MicrosoftTunnelServer 的 ID|
-|displayName|字符串|MicrosoftTunnelServer 的显示名称|
+|displayName|String|MicrosoftTunnelServer 的显示名称|
 |tunnelServerHealthStatus|[microsoftTunnelServerHealthStatus](../resources/intune-mstunnel-microsofttunnelserverhealthstatus.md)|MicrosoftTunnelServer 的运行状况状态。 可取值为：`unknown`、`healthy`、`unhealthy`、`warning`、`offline`、`upgradeInProgress` 或 `upgradeFailed`。|
 |lastCheckinDateTime|DateTimeOffset|MicrosoftTunnelServer 上次签入时间|
-|agentImageDigest|字符串|在此服务器上运行的当前代理映像的摘要 |
+|agentImageDigest|String|在此服务器上运行的当前代理映像的摘要 |
 |serverImageDigest|String|在此服务器上运行的当前服务器映像的摘要 |
 
 

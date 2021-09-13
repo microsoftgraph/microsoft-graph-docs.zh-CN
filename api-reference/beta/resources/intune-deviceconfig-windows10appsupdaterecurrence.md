@@ -2,15 +2,15 @@
 title: windows10AppsUpdateRecurrence 枚举类型
 description: Windows 10 定期应用更新的可能值。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a1591fe99082cc41cd244d356d700cc09abb701f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0c4d3f2ca6e73fcfd97dd46353fdcb2d338fd6e9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819708"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59040370"
 ---
 # <a name="windows10appsupdaterecurrence-enum-type"></a>windows10AppsUpdateRecurrence 枚举类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58819708"
 Windows 10 定期应用更新的可能值。
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |无|0|默认值，指定单个匹配项。|
 |daily|1|每天。|

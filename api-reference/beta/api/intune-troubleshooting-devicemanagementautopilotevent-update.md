@@ -2,15 +2,15 @@
 title: 更新 deviceManagementAutopilotEvent
 description: 更新 deviceManagementAutopilotEvent 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e6aa00754dbf99bb687b29f9d04fcedbaaa2827a
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 726c1a5c4f0075f6de4882d84778b4dc6d30d348
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58253493"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59051780"
 ---
 # <a name="update-devicemanagementautopilotevent"></a>更新 deviceManagementAutopilotEvent
 
@@ -59,7 +59,7 @@ PATCH /deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}
 |enrollmentType|[windowsAutopilotEnrollmentType](../resources/intune-troubleshooting-windowsautopilotenrollmenttype.md)|注册类型。 可取值为：`unknown`、`azureADJoinedWithAutopilotProfile`、`offlineDomainJoined`、`azureADJoinedUsingDeviceAuthWithAutopilotProfile`、`azureADJoinedUsingDeviceAuthWithoutAutopilotProfile`、`azureADJoinedWithOfflineAutopilotProfile`、`azureADJoinedWithWhiteGlove`、`offlineDomainJoinedWithWhiteGlove`、`offlineDomainJoinedWithOfflineAutopilotProfile`。|
 |deviceSerialNumber|String|设备序列号。|
 |managedDeviceName|String|托管设备名称。|
-|userPrincipalName|字符串|用于注册设备的用户主体名称。|
+|userPrincipalName|String|用于注册设备的用户主体名称。|
 |windowsAutopilotDeploymentProfileDisplayName|String|Autopilot 配置文件名称。|
 |enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|注册状态，如已注册、已失败。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
 |windows10EnrollmentCompletionPageConfigurationDisplayName|String|注册状态页面配置文件名称|
@@ -77,7 +77,7 @@ PATCH /deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}
 |deploymentEndDateTime|DateTimeOffset|部署结束时间。|
 |targetedAppCount|Int32|目标应用程序计数。|
 |targetedPolicyCount|Int32|目标策略计数。|
-|enrollmentFailureDetails|字符串|注册失败详细信息。|
+|enrollmentFailureDetails|String|注册失败详细信息。|
 
 
 

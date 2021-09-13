@@ -2,15 +2,15 @@
 title: 删除 androidForWorkEnrollmentProfile
 description: 删除 androidForWorkEnrollmentProfile。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 345360fd2b77e2f13280e9bb095428cda1d6bd5d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: cfadf13339becbc80b61302c99bb71ef25df6f57
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784161"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59077991"
 ---
 # <a name="delete-androidforworkenrollmentprofile"></a>删除 androidForWorkEnrollmentProfile
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/androidForWorkEnrollmentProfiles/{androidForWorkEnrollm
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

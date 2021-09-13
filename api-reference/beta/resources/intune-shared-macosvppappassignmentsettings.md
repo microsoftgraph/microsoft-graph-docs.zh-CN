@@ -2,15 +2,15 @@
 title: macOsVppAppAssignmentSettings 资源类型
 description: 包含用于将 Mac VPP 移动应用分配给组的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d61c5c35c00984ac9c111243bc189c19f7a70259
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 983b92a2d8d7b1d64a424ee766f5a47c5ed38c6a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783440"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59054231"
 ---
 # <a name="macosvppappassignmentsettings-resource-type"></a>macOsVppAppAssignmentSettings 资源类型
 

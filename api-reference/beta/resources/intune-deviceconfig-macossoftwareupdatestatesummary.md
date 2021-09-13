@@ -2,15 +2,15 @@
 title: macOSSoftwareUpdateStateSummary 资源类型
 description: 设备和用户的 MacOS 软件更新状态摘要
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bc9ea010e664ab2cd2094dfca69152455cd61d9d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e3fd5d64da64e19a259f5c123f02d79ddce0afbc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784840"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59054455"
 ---
 # <a name="macossoftwareupdatestatesummary-resource-type"></a>macOSSoftwareUpdateStateSummary 资源类型
 
@@ -37,8 +37,8 @@ ms.locfileid: "58784840"
 |id|String|实体的键。|
 |displayName|String|软件更新的可读名称|
 |productKey|String|软件更新的产品密钥。|
-|updateCategory|[macOSSoftwareUpdateCategory](../resources/intune-deviceconfig-macossoftwareupdatecategory.md)|软件更新类别。 可能的值是：`critical`、`configurationDataFile`、`firmware`、`other`。|
-|updateVersion|字符串|软件更新的版本|
+|updateCategory|[macOSSoftwareUpdateCategory](../resources/intune-deviceconfig-macossoftwareupdatecategory.md)|软件更新类别。 可取值为：`critical`、`configurationDataFile`、`firmware`、`other`。|
+|updateVersion|String|软件更新的版本|
 |state|[macOSSoftwareUpdateState](../resources/intune-deviceconfig-macossoftwareupdatestate.md)|软件更新的状态。 可能的值是 `success` `downloading` `downloaded` ：、、、、、、、、、、 `installing` `idle` `available` `scheduled` `downloadFailed` `downloadInsufficientSpace` `downloadInsufficientPower` `downloadInsufficientNetwork` `installInsufficientSpace` `installInsufficientPower` `installFailed` `commandFailed` 。|
 |lastUpdatedDateTime|DateTimeOffset|上次更新此设备和产品密钥的报告的日期时间。|
 

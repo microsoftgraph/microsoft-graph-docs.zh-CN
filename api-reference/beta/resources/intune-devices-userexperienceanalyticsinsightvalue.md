@@ -2,15 +2,15 @@
 title: userExperienceAnalyticsInsightValue 资源类型
 description: 用户体验分析见解中的价值。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2707088c0b36ec6f42679840f590ce7494801531
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 98df932fed0f33fc0572555752a43ed677372069
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794383"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59068926"
 ---
 # <a name="userexperienceanalyticsinsightvalue-resource-type"></a>userExperienceAnalyticsInsightValue 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58794383"
 用户体验分析见解中的价值。
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 
 ## <a name="relationships"></a>关系

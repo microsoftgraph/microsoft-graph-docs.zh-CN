@@ -2,15 +2,15 @@
 title: 删除 networkIPv4ConfigurationManagementCondition
 description: 删除 networkIPv4ConfigurationManagementCondition。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 97d0b9a9d6792558eef41568a28f7d4cf7541963
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8a3fa5885e8a436d795a1cff9fe9fdd2c8b1f64b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797652"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59052109"
 ---
 # <a name="delete-networkipv4configurationmanagementcondition"></a>删除 networkIPv4ConfigurationManagementCondition
 
@@ -44,7 +44,7 @@ DELETE /deviceManagement/managementConditions/{managementConditionId}/management
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

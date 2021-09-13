@@ -2,15 +2,15 @@
 title: 获取 deviceComanagementAuthorityConfiguration
 description: 读取 deviceComanagementAuthorityConfiguration 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 15a815306167f93be71a4576e0e19ac0c3e45218
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9626e96b46345b3f6e99dc1d9abcf31207e10c59
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787979"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59052060"
 ---
 # <a name="get-devicecomanagementauthorityconfiguration"></a>获取 deviceComanagementAuthorityConfiguration
 
@@ -46,7 +46,7 @@ GET /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurat
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

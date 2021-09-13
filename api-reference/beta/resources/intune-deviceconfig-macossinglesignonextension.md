@@ -2,15 +2,15 @@
 title: macOSSingleSignOnExtension 资源类型
 description: 所有特定于 macOS 的单一登录扩展类型的抽象基类。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0abac62049c06f3a989149a85f17de0a47f8335b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 529bb6a6a97118e083b278ee65a4935e983aba76
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820896"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59075464"
 ---
 # <a name="macossinglesignonextension-resource-type"></a>macOSSingleSignOnExtension 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "58820896"
 继承自 [singleSignOnExtension](../resources/intune-deviceconfig-singlesignonextension.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|描述|
 |:---|:---|:---|
 
 ## <a name="relationships"></a>关系

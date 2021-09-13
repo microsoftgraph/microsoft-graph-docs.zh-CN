@@ -1,14 +1,14 @@
 ---
 author: davidmu1
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: msgraph
 ms.topic: include
-ms.openlocfilehash: 51422c3dbeaba1ab806dbae058f6e90fcc53db7afc279e937a803c3ac99addc9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c431cc520dc3f440765a4fcdb911acb2c3d0c0c5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196636"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035677"
 ---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
@@ -20,4 +20,7 @@ ms.locfileid: "54196636"
 | 任何 | 每 20 秒 2000 个请求 | 每 20 秒 1000 个请求 |
 
 上述限制适用于下列资源:  
-deviceManagementDomainJoinConnector.
+
+| <!-- fake header-->                                                                                                                                                                                                                                                                                                                                                                            |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <ul> <li> [deviceManagementDomainJoinConnector](/graph/api/resources/devicemanagementdomainjoinconnector)  </ul> |

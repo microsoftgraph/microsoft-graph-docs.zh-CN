@@ -2,15 +2,15 @@
 title: managedAllDeviceCertificateState 资源类型
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9d1cca0a07fc3479dfa6feb7bc686de1a5e9e8f7
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 84ef0315f30bb249a393b3994524ea87acca5bab
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786353"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59075478"
 ---
 # <a name="managedalldevicecertificatestate-resource-type"></a>managedAllDeviceCertificateState 资源类型
 
@@ -38,12 +38,12 @@ ms.locfileid: "58786353"
 |certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)|撤销状态。 可取值为：`none`、`pending`、`issued`、`failed`、`revoked`。|
 |certificateRevokeStatusLastChangeDateTime|DateTimeOffset|上次更改撤消状态的时间|
 |managedDeviceDisplayName|String|设备显示名称|
-|userPrincipalName|字符串|用户主体名称|
+|userPrincipalName|String|用户主体名称|
 |certificateExpirationDateTime|DateTimeOffset|证书到期日期|
 |certificateIssuerName|String|颁发者|
 |certificateThumbprint|String|指纹|
 |certificateSerialNumber|String|序列号|
-|certificateSubjectName|字符串|证书主题名称|
+|certificateSubjectName|String|证书主题名称|
 |certificateKeyUsages|Int32|密钥用法|
 |certificateExtendedKeyUsages|String|增强型密钥使用|
 |certificateIssuanceDateTime|DateTimeOffset|发布日期|

@@ -2,15 +2,15 @@
 title: dataSharingConsent 资源类型
 description: 数据共享同意信息。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 06d712ffa94b4308c7234b45ffba5d0ab6c05423
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 92c012f994c3e5aa3630f05632d48df764a432d7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791128"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59057325"
 ---
 # <a name="datasharingconsent-resource-type"></a>dataSharingConsent 资源类型
 
@@ -36,12 +36,12 @@ ms.locfileid: "58791128"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|数据共享许可 ID|
-|serviceDisplayName|字符串|服务显示名称流|
+|serviceDisplayName|String|服务显示名称流|
 |termsUrl|String|数据共享同意的 TermsUrl|
-|granted|布尔值|数据共享同意的授予状态|
+|granted|Boolean|数据共享同意的授予状态|
 |grantDateTime|DateTimeOffset|为此帐户授予许可的时间|
-|grantedByUpn|字符串|授予此帐户同意的用户的 Upn|
-|grantedByUserId|字符串|授予此帐户同意的用户的 UserId|
+|grantedByUpn|String|授予此帐户同意的用户的 Upn|
+|grantedByUserId|String|授予此帐户同意的用户的 UserId|
 
 ## <a name="relationships"></a>关系
 无

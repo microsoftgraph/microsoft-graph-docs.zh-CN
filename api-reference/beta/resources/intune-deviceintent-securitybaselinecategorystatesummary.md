@@ -2,15 +2,15 @@
 title: securityBaselineCategoryStateSummary 资源类型
 description: 每个类别合规性状态的安全基线帐户的安全基线摘要。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bc0bb04e7545ade025b3659a921ccb34237a0290
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ab4ed7a5d2b8c32114fc6e222f5a605a2bc7e059
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801470"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59051277"
 ---
 # <a name="securitybaselinecategorystatesummary-resource-type"></a>securityBaselineCategoryStateSummary 资源类型
 

@@ -2,15 +2,15 @@
 title: 创建 deviceManagementDomainJoinConnector
 description: 创建新的 deviceManagementDomainJoinConnector 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: afadbd6fdffb4e91eac789cfc35fc975e5ba6653
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: fd668d47e651a1519c7d1cb54145028fdf0c1179
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785841"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59052074"
 ---
 # <a name="create-devicemanagementdomainjoinconnector"></a>创建 deviceManagementDomainJoinConnector
 
@@ -43,7 +43,7 @@ POST /deviceManagement/domainJoinConnectors
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,8 +53,8 @@ POST /deviceManagement/domainJoinConnectors
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|表示连接器的唯一标识符。|
-|displayName|字符串|连接器显示名称。|
+|id|String|表示连接器的唯一标识符。|
+|displayName|String|连接器显示名称。|
 |lastConnectionDateTime|DateTimeOffset|上次连接器与 Intune 联系的时间。|
 |state|[deviceManagementDomainJoinConnectorState](../resources/intune-odj-devicemanagementdomainjoinconnectorstate.md)|连接器状态。 可取值为：`active`、`error`、`inactive`。|
 |version|String|连接器的版本。|

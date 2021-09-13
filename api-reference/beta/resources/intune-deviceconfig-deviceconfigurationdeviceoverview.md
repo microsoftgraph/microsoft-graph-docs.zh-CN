@@ -2,15 +2,15 @@
 title: deviceConfigurationDeviceOverview 资源类型
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 40154047a8eb0bd316d4c6704adf6f4eb407c26a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4a2cc165adbee7f1488d501cc9b6ba6951fcc0fa
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58778050"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59054567"
 ---
 # <a name="deviceconfigurationdeviceoverview-resource-type"></a>deviceConfigurationDeviceOverview 资源类型
 

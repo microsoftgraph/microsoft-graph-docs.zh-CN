@@ -2,15 +2,15 @@
 title: 创建会话
 description: '创建新的工作簿会话。 '
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 0a93a602d5f10e3b99b18ed310bdf4c933dcf8aa
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 8175bc48847aaa4349b6b2b1f44950b396bdaa3b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50578814"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59076136"
 ---
 # <a name="create-session"></a>创建会话
 
@@ -30,8 +30,8 @@ ms.locfileid: "50578814"
 在某些情况下，创建新会话需要不确定的时间才能完成。 Microsoft Graph 还提供长时间运行的操作模式。 此模式提供了一种轮询创建状态更新的方法，而无需等待创建完成。 步骤如下：
 
 1. 标头 `Prefer: respond-async` 将添加到请求中，以指示这是长时间运行的操作。
-2. 响应返回一 `Location` 个标头以指定轮询创建操作状态的 URL。 可以通过访问指定的 URL 获取操作状态。 状态将为以下项之一：、、 `notStarted` `running` `succeeded` 或 `failed` 。
-3. 操作完成后，可以再次请求状态，响应将显示或 `succeeded` `failed` 。
+2. 响应返回标头 `Location` 以指定轮询创建操作状态的 URL。 可以通过访问指定的 URL 获取操作状态。 状态将为以下项之一 `notStarted` `running` ：、、或 `succeeded` `failed` 。
+3. 操作完成后，可以再次请求状态，响应将显示 或 `succeeded` `failed` 。
 
 ### <a name="error-handling"></a>错误处理
 
@@ -62,7 +62,7 @@ POST /me/drive/root:/{item-path}:/workbook/createSession
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `201 Created` [workbookSessionInfo](../resources/workbooksessioninfo.md) 对象。 对于长时间运行的操作，它会在响应中返回一个响应代码和一个正文为空 `202 Accepted ` `Location` 的标头。
+如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [workbookSessionInfo](../resources/workbooksessioninfo.md) 对象。 对于长时间运行的操作，它将在响应中返回 响应代码和包含空正文 `202 Accepted ` `Location` 的标头。
 
 ## <a name="examples"></a>示例
 

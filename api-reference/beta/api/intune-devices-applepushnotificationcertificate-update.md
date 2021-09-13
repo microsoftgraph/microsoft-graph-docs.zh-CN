@@ -2,15 +2,15 @@
 title: 更新 applePushNotificationCertificate
 description: 更新 applePushNotificationCertificate 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a35c7f1369344fd194258ef924daf700cac7fa30
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 550571c0d00ce5bd72a58be84f9ad9a03fb7c78f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797729"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59054987"
 ---
 # <a name="update-applepushnotificationcertificate"></a>更新 applePushNotificationCertificate
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/applePushNotificationCertificate
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -58,9 +58,9 @@ PATCH /deviceManagement/applePushNotificationCertificate
 |topicIdentifier|String|主题 ID。|
 |lastModifiedDateTime|DateTimeOffset|上次修改 Apple 推送通知证书的日期和时间。|
 |expirationDateTime|DateTimeOffset|Apple 推送通知证书的到期日期和时间。|
-|certificateUploadStatus|字符串|证书上载状态。|
-|certificateUploadFailureReason|字符串|证书上载失败的原因。|
-|certificateSerialNumber|字符串|证书序列号。 此属性是只读的。|
+|certificateUploadStatus|String|证书上载状态。|
+|certificateUploadFailureReason|String|证书上载失败的原因。|
+|certificateSerialNumber|String|证书序列号。 此属性是只读的。|
 |证书|String|尚未记录|
 
 

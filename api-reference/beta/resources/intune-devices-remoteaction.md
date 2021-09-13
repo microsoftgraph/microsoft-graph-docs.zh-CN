@@ -2,15 +2,15 @@
 title: remoteAction 枚举类型
 description: Intune 支持的远程操作。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 435cc6f118c8e9126d4feb60a8d74fed1898db9b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 70e7d5ac0734f791f79915524565012393b6f90d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790876"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59081085"
 ---
 # <a name="remoteaction-enum-type"></a>remoteAction 枚举类型
 
@@ -36,7 +36,7 @@ Intune 支持的远程操作。
 |rebootNow|8 |用户启动操作以重新启动Windows设备。|
 |recoverPasscode|9 |用户启动操作以重置 Passport 的 pin，以在 Windows Phone 设备上工作。|
 |cleanWindowsDevice|10 |用户启动清理 Windows 设备的操作。|
-|logoutSharedAppleDeviceActiveUser|11 |用户启动操作以注销共享 Apple 设备上当前用户。|
+|logoutSharedAppleDeviceActiveUser|11|用户启动操作以注销共享 Apple 设备上当前用户。|
 |quickScan|12 |用户启动操作以在设备上运行快速扫描。|
 |fullScan|13|用户启动操作以在设备上运行完全扫描。|
 |windowsDefenderUpdateSignatures|14 |用户启动操作以更新设备上恶意软件签名。|

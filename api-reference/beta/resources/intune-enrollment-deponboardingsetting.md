@@ -2,15 +2,15 @@
 title: depOnboardingSetting 资源类型
 description: depOnboardingSetting 表示要载入到 Intune 的 Apple DEP 服务的实例。 载入的服务实例管理用于在 Apple 和 Intune 之间同步数据的 Apple 令牌。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ff9302af392e260dce9e24a54aba386687928d31
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f7aada3e4932599548cd2aa1230823e6b3d575db
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801078"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59051144"
 ---
 # <a name="deponboardingsetting-resource-type"></a>depOnboardingSetting 资源类型
 

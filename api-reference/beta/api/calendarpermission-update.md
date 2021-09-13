@@ -1,16 +1,16 @@
 ---
 title: 更新 calendarpermission
 description: 更新 calendarpermission 对象的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sochowdh
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 116352b351d66bdc2c413eb1aad9357407d25631
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 7b72241d0e7b266ae90408702eeef82383620968
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047677"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049408"
 ---
 # <a name="update-calendarpermission"></a>更新 calendarPermission
 

@@ -2,15 +2,15 @@
 title: win32LobAppProductCodeDetection 资源类型
 description: 包含用于检测 Win32 应用的产品代码和版本属性
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 978f532b85762ddbc3ef612f70ecf6ad4d1f17af
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8cc323aebbe681c1f5808388ea4ea268b328a476
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783272"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59054588"
 ---
 # <a name="win32lobappproductcodedetection-resource-type"></a>win32LobAppProductCodeDetection 资源类型
 

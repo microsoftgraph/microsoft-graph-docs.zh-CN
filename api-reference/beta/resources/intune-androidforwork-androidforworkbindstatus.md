@@ -2,15 +2,15 @@
 title: androidForWorkBindStatus 枚举类型
 description: 使用 Google EMM API 绑定租户的状态
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b38cf6fb3df04e8aee50eb09deabb255b2d4ea3c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 480ae455d253f7f390ea635aa20f498ce749b68f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58753363"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59057612"
 ---
 # <a name="androidforworkbindstatus-enum-type"></a>androidForWorkBindStatus 枚举类型
 

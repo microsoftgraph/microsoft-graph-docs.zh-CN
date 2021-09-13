@@ -2,15 +2,15 @@
 title: publicErrorDetail 资源类型
 description: 表示错误的详细信息。
 author: AkJo
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 3d629816bb8d06065ed74a1ff8d19638a2a84a2d964945882ec0cf57a3c7d2a3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 67318a7c7193791355bdc471d88a1ba7d4fc4869
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54226130"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59050990"
 ---
 # <a name="publicerrordetail-resource-type"></a>publicErrorDetail 资源类型
 

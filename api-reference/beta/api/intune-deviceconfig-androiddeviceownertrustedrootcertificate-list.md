@@ -2,15 +2,15 @@
 title: 列出 androidDeviceOwnerTrustedRootCertificates
 description: 列出 androidDeviceOwnerTrustedRootCertificate 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4556ddba1f70e30961bd754f65a1f79e14cee56c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f44850f093fcef342bcec20aa9c088ab73526051
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58815867"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59043108"
 ---
 # <a name="list-androiddeviceownertrustedrootcertificates"></a>列出 androidDeviceOwnerTrustedRootCertificates
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

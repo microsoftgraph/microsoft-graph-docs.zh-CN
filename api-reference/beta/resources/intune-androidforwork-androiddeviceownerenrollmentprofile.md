@@ -2,15 +2,15 @@
 title: androidDeviceOwnerEnrollmentProfile 资源类型
 description: 注册配置文件，用于Enterprise Google 的云管理注册 Android 设备。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d94b751d5d7ef9ea8a72351bac45b40ecc3135e7
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f88410522f63b289a2b2d6f55a2a1ebf85b46b5e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788715"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59057654"
 ---
 # <a name="androiddeviceownerenrollmentprofile-resource-type"></a>androidDeviceOwnerEnrollmentProfile 资源类型
 
@@ -38,8 +38,8 @@ ms.locfileid: "58788715"
 |:---|:---|:---|
 |accountId|String|注册配置文件隶属的租户 GUID。|
 |id|String|注册配置文件的唯一 GUID。|
-|displayName|字符串|注册配置文件的显示名称。|
-|description|String|注册配置文件的说明。|
+|displayName|String|注册配置文件的显示名称。|
+|说明|String|注册配置文件的说明。|
 |enrollmentMode|[androidDeviceOwnerEnrollmentMode](../resources/intune-androidforwork-androiddeviceownerenrollmentmode.md)|使用此注册配置文件的设备注册模式。 可取值为：`corporateOwnedDedicatedDevice`、`corporateOwnedFullyManaged`、`corporateOwnedWorkProfile`。|
 |enrollmentTokenType|[androidDeviceOwnerEnrollmentTokenType](../resources/intune-androidforwork-androiddeviceownerenrollmenttokentype.md)|注册配置文件的注册令牌类型。 可取值为：`default`、`corporateOwnedDedicatedDeviceWithAzureADSharedMode`。|
 |createdDateTime|DateTimeOffset|注册配置文件的创建日期/时间。|

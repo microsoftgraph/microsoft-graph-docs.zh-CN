@@ -2,15 +2,15 @@
 title: vpnDnsRule 资源类型
 description: VPN DNS 规则定义。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1277bb254a9485bc2adc26859185adfe5d22ad5b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e034016fe3a6eff5d84db1421e5e6e80d1f70be3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793871"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59081211"
 ---
 # <a name="vpndnsrule-resource-type"></a>vpnDnsRule 资源类型
 
@@ -23,12 +23,12 @@ ms.locfileid: "58793871"
 VPN DNS 规则定义。
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |name|String|名称。|
-|服务器|字符串集合|服务器。|
+|服务器|String collection|服务器。|
 |proxyServerUri|String|代理服务器 Uri。|
-|autoTrigger|布尔值|设备连接到此域时自动连接到 VPN：默认值 False。|
+|autoTrigger|Boolean|设备连接到此域时自动连接到 VPN：默认值 False。|
 |persistent|Boolean|即使 VPN 未连接，也保持此规则处于活动状态：默认值 False|
 
 ## <a name="relationships"></a>关系

@@ -2,15 +2,15 @@
 title: 获取 deviceHealthScriptDeviceState
 description: 读取 deviceHealthScriptDeviceState 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d2e3e7e2eddfe9591e98af922637b3a9bfea40ce
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0e3b1e04abd577f9cbd60fa7c259306da14f7746
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58815979"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59052326"
 ---
 # <a name="get-devicehealthscriptdevicestate"></a>获取 deviceHealthScriptDeviceState
 
@@ -46,7 +46,7 @@ GET /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/deviceRunStates
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

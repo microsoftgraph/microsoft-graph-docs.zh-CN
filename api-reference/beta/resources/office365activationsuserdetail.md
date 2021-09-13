@@ -1,16 +1,16 @@
 ---
 title: office365ActivationsUserDetail 资源类型
 description: 下面是资源的 JSON 表示形式。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: adbefd4a160ba00e9478abebec5932f97464328a633bb26719eaed4818bf3f22
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c70d67519ed43c36fa4bcc4df1a8d18566d732fd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54239026"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59057122"
 ---
 # <a name="office365activationsuserdetail-resource-type"></a>office365ActivationsUserDetail 资源类型
 

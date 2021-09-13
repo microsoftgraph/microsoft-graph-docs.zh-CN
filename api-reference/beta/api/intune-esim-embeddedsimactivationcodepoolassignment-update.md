@@ -2,15 +2,15 @@
 title: 更新 embeddedSIMActivationCodePoolAssignment
 description: 更新 embeddedSIMActivationCodePoolAssignment 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2eafef8a4669919300f8edf92281b359627650f2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1ca23a48a87eb5a544bed95292bbb6c32c20f185
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783055"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59042058"
 ---
 # <a name="update-embeddedsimactivationcodepoolassignment"></a>更新 embeddedSIMActivationCodePoolAssignment
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCod
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

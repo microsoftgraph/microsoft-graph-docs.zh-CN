@@ -2,15 +2,15 @@
 title: iosLobAppProvisioningConfiguration 资源类型
 description: 本主题提供由 iOS Lob 应用预配配置资源公开的已声明方法、属性和关系的说明。
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fe93705e741d30e9ef22a89b4984efb6c1d25049
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ff3425d1d9bb4de6e51c6310a28d182dfbed654b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58782915"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59054238"
 ---
 # <a name="ioslobappprovisioningconfiguration-resource-type"></a>iosLobAppProvisioningConfiguration 资源类型
 
@@ -44,7 +44,7 @@ ms.locfileid: "58782915"
 |payload|Binary|有效负载。 （UTF8 编码的字节数组）|
 |roleScopeTagIds|字符串集合|此 iOS LOB 应用预配配置实体的范围标记列表。|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。|
-|description|String|管理员提供的设备配置说明。|
+|说明|String|管理员提供的设备配置说明。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
 |displayName|String|管理员提供的设备配置名称。|
 |version|Int32|设备配置的版本。|

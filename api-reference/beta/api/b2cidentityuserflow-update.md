@@ -2,15 +2,15 @@
 title: 更新 b2cIdentityUserFlow
 description: 更新 b2cIdentityUserFlow 对象的属性。
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 4ec3217af72d08d8dda103ec9304b25218344398
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: a329daee14cddd2c5598c3ab3c456814abd80849
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50438181"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035337"
 ---
 # <a name="update-b2cidentityuserflow"></a>更新 b2cIdentityUserFlow
 
@@ -18,7 +18,7 @@ ms.locfileid: "50438181"
 
 更新 [b2cIdentityUserFlow 对象](../resources/b2cidentityuserflow.md) 的属性。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -26,12 +26,12 @@ ms.locfileid: "50438181"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）|IdentityUserFlow.ReadWrite.All|
 |委派（个人 Microsoft 帐户）| 不支持。|
-|Application|IdentityUserFlow.ReadWrite.All|
+|应用程序|IdentityUserFlow.ReadWrite.All|
 
 工作或学校帐户需要属于以下角色之一：
 
 * 全局管理员
-* 外部标识用户流管理员
+* 外部标识用户Flow管理员
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -64,7 +64,7 @@ PATCH /identity/b2cUserFlows/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和更新 `200 OK` [的 b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) 对象。
 
 ## <a name="examples"></a>示例
 

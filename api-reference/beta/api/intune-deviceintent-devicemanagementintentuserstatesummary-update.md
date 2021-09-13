@@ -2,15 +2,15 @@
 title: 更新 deviceManagementIntentUserStateSummary
 description: 更新 deviceManagementIntentUserStateSummary 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: daec702a32873c29bc08c96f45a499b69b6e0e3b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: fe3280c7a7c017265a1a457f911eca1b49af18aa
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791661"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59070704"
 ---
 # <a name="update-devicemanagementintentuserstatesummary"></a>更新 deviceManagementIntentUserStateSummary
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}/userStateSummary
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

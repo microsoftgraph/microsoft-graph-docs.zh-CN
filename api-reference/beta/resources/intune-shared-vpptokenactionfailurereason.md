@@ -2,15 +2,15 @@
 title: vppTokenActionFailureReason 枚举类型
 description: Apple Volume Purchase Program 令牌操作失败的可能原因类型。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9e1654bd7f616e56c970fde7f8c2864fdae3d784
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ae12cb78ac9628ffda03ef4b2835f6ef40832e48
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787214"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039054"
 ---
 # <a name="vpptokenactionfailurereason-enum-type"></a>vppTokenActionFailureReason 枚举类型
 

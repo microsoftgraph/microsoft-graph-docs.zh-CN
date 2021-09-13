@@ -2,15 +2,15 @@
 title: deviceType 枚举类型
 description: 设备类型。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 925781ea7aa7f618ce806f742e97d11d0e57c994
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 3b72d1a3087c83d490098295c3fe6785a0c47673
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58263365"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59057248"
 ---
 # <a name="devicetype-enum-type"></a>deviceType 枚举类型
 
@@ -24,9 +24,9 @@ ms.locfileid: "58263365"
 |成员|值|说明|
 |:---|:---|:---|
 |desktop|0|桌面。|
-|windowsRT|1 |WindowsRT。|
-|winMO6|2 |WinMO6。|
-|nokia|3 |Nokia。|
+|windowsRT|1|WindowsRT。|
+|winMO6|2|WinMO6。|
+|nokia|3|Nokia。|
 |windowsPhone|4 |Windows电话。|
 |mac|5 |Mac。|
 |winCE|6 |WinCE。|
@@ -34,11 +34,11 @@ ms.locfileid: "58263365"
 |iPhone|8 |iPhone。|
 |iPad|9 |iPad。|
 |iPod|10 |iPodTouch。|
-|android|11 |Android。|
+|android|11|Android。|
 |iSocConsumer|12 |iSocConsumer。|
-|unix|13 |Unix。|
+|unix|13|Unix。|
 |macMDM|14 |使用内置 MDM 代理的 Mac OS X 客户端。|
-|holoLens|15 |表示奇特Windows 10式切换。|
+|holoLens|15 |代表奇特Windows 10式切换。|
 |surfaceHub|16 |Surface HUB 设备。|
 |androidForWork|17 |Android for work 设备。|
 |androidEnterprise|18 |Android 企业设备。|

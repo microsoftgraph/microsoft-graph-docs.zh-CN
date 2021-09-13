@@ -2,15 +2,15 @@
 title: deviceEnrollmentType 枚举类型
 description: 将移动设备添加到管理中的可能方法。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 38ef6bde17bb005b9e08c9ba957ff6c4ee0a4fd5
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 632f0b3557cf6b78394a2a70cdcafefb52893905
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803256"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59057276"
 ---
 # <a name="deviceenrollmenttype-enum-type"></a>deviceEnrollmentType 枚举类型
 
@@ -33,10 +33,10 @@ ms.locfileid: "58803256"
 |windowsAzureADJoin|5 |Windows 10加入 Azure AD。|
 |windowsBulkUserless|6 |Windows 10使用证书通过 ICD 批量注册。|
 |windowsAutoEnrollment|7 |Windows 10自动注册。  (添加工作帐户) |
-|windowsBulkAzureDomainJoin|8 |Windows 10 Azure AD 批量加入。|
+|windowsBulkAzureDomainJoin|8 |Windows 10 Azure AD 加入。|
 |windowsCoManagement|9 |Windows 10 Co-Management AutoPilot 或组策略触发。|
 |windowsAzureADJoinUsingDeviceAuth|10 |Windows 10使用设备身份验证加入 Azure AD。|
-|appleUserEnrollment|11 |由 Apple 用户注册管理的设备|
+|appleUserEnrollment|11|由 Apple 用户注册管理的设备|
 |appleUserEnrollmentWithServiceAccount|12 |使用服务帐户由 Apple 用户注册管理的设备|
 |azureAdJoinUsingAzureVmExtension|14 |预配 Azure VM 时加入 Azure AD 注册|
 |androidEnterpriseDedicatedDevice|15 |Android Enterprise专用设备|

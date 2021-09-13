@@ -2,15 +2,15 @@
 title: deviceManagementReportSchedule 资源类型
 description: 表示送达报告的计划的实体
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9ed97e1cebfec55a6ec9420ab818f208873daa2a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3f0a75f233880345d72e5d7dedcee033d8e1097d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58800343"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039327"
 ---
 # <a name="devicemanagementreportschedule-resource-type"></a>deviceManagementReportSchedule 资源类型
 
@@ -37,15 +37,15 @@ ms.locfileid: "58800343"
 |id|String|此实体的唯一标识符|
 |reportScheduleName|String|计划的名称|
 |subject|String|已送达的计划报告的主题|
-|电子邮件|字符串集合|将计划报告传递到的电子邮件|
+|电子邮件|String collection|将计划报告传递到的电子邮件|
 |recurrence|[deviceManagementScheduledReportRecurrence](../resources/intune-reporting-devicemanagementscheduledreportrecurrence.md)|计划报告传递的频率。 可取值为：`none`、`daily`、`weekly`、`monthly`。|
 |startDateTime|DateTimeOffset|计划报告交付开始的时间|
 |endDateTime|DateTimeOffset|计划报告传递结束的时间|
 |userId|String|创建报告的用户的 ID|
-|reportName|字符串|报告的名称|
-|filter|字符串|应用于报表的筛选器|
-|select|字符串集合|从报表选择的列|
-|orderBy|字符串集合|报告中列的排序|
+|reportName|String|报告的名称|
+|filter|String|应用于报表的筛选器|
+|select|String collection|从报表选择的列|
+|orderBy|String collection|报告中列的排序|
 |format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|计划报表的格式。 可取值为：`csv`、`pdf`。|
 
 ## <a name="relationships"></a>关系

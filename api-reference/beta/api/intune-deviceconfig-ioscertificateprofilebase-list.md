@@ -2,15 +2,15 @@
 title: 列出 iosCertificateProfileBases
 description: 列出 iosCertificateProfileBase 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4f4c8d530b27bb2937b586f4e125f29d950b4bf7
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d4b204ff05b6eb95016be9e1b78e77f83000a57c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58798305"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59048694"
 ---
 # <a name="list-ioscertificateprofilebases"></a>列出 iosCertificateProfileBases
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

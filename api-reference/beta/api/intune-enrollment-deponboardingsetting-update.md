@@ -2,15 +2,15 @@
 title: 更新 depOnboardingSetting
 description: 更新 depOnboardingSetting 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 41c251c8c1a7c56e5a4fb63e8c63f7c8808d85fd
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7441d909b505934f5562f43cc3f353880aa99272
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803628"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59054931"
 ---
 # <a name="update-deponboardingsetting"></a>更新 depOnboardingSetting
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,7 +53,7 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|对象的 UUID|
+|id|String|对象的 UUID|
 |appleIdentifier|String|用于获取当前令牌的 Apple ID。|
 |tokenExpirationDateTime|DateTimeOffset|令牌将过期的时间。|
 |lastModifiedDateTime|DateTimeOffset|载入服务时。|

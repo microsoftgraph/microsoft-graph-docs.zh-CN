@@ -1,16 +1,16 @@
 ---
 title: 删除 calendarPermission
 description: 删除 calendarPermission。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sochowdh
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 57f6d2bd9859c08d531fdee783c7c05c32032205
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6be5fe8431364f12be8e034930d80b0acf87adb8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959874"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59052760"
 ---
 # <a name="delete-calendarpermission"></a>删除 calendarPermission
 

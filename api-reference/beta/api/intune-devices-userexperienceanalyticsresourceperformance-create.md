@@ -2,15 +2,15 @@
 title: 创建 userExperienceAnalyticsResourcePerformance
 description: 创建新的 userExperienceAnalyticsResourcePerformance 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 485ea3606227de39ec27de9bac4ec5b0a2872bbe
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a6d228a002ce71e42bb580c38152f3ccfb395744
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58798565"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59052221"
 ---
 # <a name="create-userexperienceanalyticsresourceperformance"></a>创建 userExperienceAnalyticsResourcePerformance
 
@@ -43,7 +43,7 @@ POST /deviceManagement/userExperienceAnalyticsResourcePerformance
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,13 +53,13 @@ POST /deviceManagement/userExperienceAnalyticsResourcePerformance
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|用户体验分析资源性能实体的唯一标识符。|
+|id|String|用户体验分析资源性能实体的唯一标识符。|
 |deviceId|String|设备的 ID。|
 |deviceName|String|设备的名称。|
 |model|String|用户体验分析设备模型。|
 |deviceCount|Int64|用户体验分析汇总了设备计数。|
 |manufacturer|String|用户体验分析设备制造商。|
-|cpuSpikeTimePercentage|双精度|CPU 峰值时间（以百分比表示）。 有效值为 0 至 100|
+|cpuSpikeTimePercentage|双精度|CPU 峰值时间百分比。 有效值为 0 至 100|
 |ramSpikeTimePercentage|双精度|以百分比表示的 RAM 峰值时间。 有效值为 0 至 100|
 |cpuSpikeTimeScore|Int32|用户体验分析设备 CPU 峰值时间分数。 有效值为 0 至 100|
 |cpuSpikeTimePercentageThreshold|双精度|cpuSpikeTimeScore 的阈值。 有效值为 0 至 100|

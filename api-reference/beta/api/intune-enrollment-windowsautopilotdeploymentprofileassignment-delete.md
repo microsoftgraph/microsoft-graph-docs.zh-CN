@@ -2,15 +2,15 @@
 title: 删除 windowsAutopilotDeploymentProfileAssignment
 description: 删除 windowsAutopilotDeploymentProfileAssignment。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 591211329e6966b25af8f8d21bc60118b79e0eb3
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c21598d7b800795875d4d2a511c269125929ebc8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783062"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59082361"
 ---
 # <a name="delete-windowsautopilotdeploymentprofileassignment"></a>删除 windowsAutopilotDeploymentProfileAssignment
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevic
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

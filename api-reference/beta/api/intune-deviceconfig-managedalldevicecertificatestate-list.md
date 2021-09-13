@@ -2,15 +2,15 @@
 title: 列出 managedAllDeviceCertificateStates
 description: 列出 managedAllDeviceCertificateState 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4d3a558fbf3fc3c97563077f17d4ae99c65110bc
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: fa60510e5dd73af4482a969e64cb07153c610e05
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790771"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59042795"
 ---
 # <a name="list-managedalldevicecertificatestates"></a>列出 managedAllDeviceCertificateStates
 
@@ -43,7 +43,7 @@ GET /deviceManagement/deviceConfigurationsAllManagedDeviceCertificateStates
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

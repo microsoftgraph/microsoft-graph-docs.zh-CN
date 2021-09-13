@@ -2,15 +2,15 @@
 title: 更新 groupPolicyCategory
 description: 更新 groupPolicyCategory 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: aec5223d000abbdaef7cb1e99eb5f5a27b4380f2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a723d55e1b4609163d4c5f14ce2e88019247fc06
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789753"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59034398"
 ---
 # <a name="update-grouppolicycategory"></a>更新 groupPolicyCategory
 
@@ -46,7 +46,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -56,7 +56,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|字符串|类别名称的字符串 id 显示名称|
+|displayName|String|类别名称的字符串显示名称|
 |isRoot|Boolean|定义类别是否属于根类别|
 |id|String|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。|

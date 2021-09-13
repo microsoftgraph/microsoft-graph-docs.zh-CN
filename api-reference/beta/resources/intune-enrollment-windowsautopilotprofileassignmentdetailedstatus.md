@@ -2,15 +2,15 @@
 title: windowsAutopilotProfileAssignmentDetailedStatus 枚举类型
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6334c94a89b22a0cd2a02d2e8abfd92e97f21313
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ceb929b2200c5f47b7aefd421feb1a7f19100228
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788428"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59054266"
 ---
 # <a name="windowsautopilotprofileassignmentdetailedstatus-enum-type"></a>windowsAutopilotProfileAssignmentDetailedStatus 枚举类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "58788428"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|无工作分配详细状态|
-|hardwareRequirementsNotMet|1|不满足硬件要求。 如果将自部署 AutoPilot 配置文件分配给没有 TPM 2.0 的设备，则可能会发生这种情况。|
+|hardwareRequirementsNotMet|1|不满足硬件要求。 如果将自部署 AutoPilot 配置文件分配给没有 TPM 2.0 的设备，可能会发生这种情况。|
 |surfaceHubProfileNotSupported|2|如果将 SurfaceHub AutoPilot 配置文件分配给非 SurfaceHub 的设备，可能会发生这种情况。|
 |holoLensProfileNotSupported|3|如果将 AutoPilot 配置文件HoloLens分配给未分配该配置文件的设备，则可能会HoloLens。|
 |windowsPcProfileNotSupported|4 |如果将 WindowsPc AutoPilot 配置文件分配给非 WindowsPc 的设备，则可能会发生这种情况。|

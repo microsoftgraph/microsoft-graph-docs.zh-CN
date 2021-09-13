@@ -2,15 +2,15 @@
 title: deviceManagementAutopilotEvent 资源类型
 description: 表示 Autopilot 流事件。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d438723ab14cb9fd47828bbaba3b45ccbf5f7f13
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 60457bbd831d792915c7e3f43443e1dfaf0bc84e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266798"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59051018"
 ---
 # <a name="devicemanagementautopilotevent-resource-type"></a>deviceManagementAutopilotEvent 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "58266798"
 
 表示 Autopilot 流事件。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceManagementAutopilotEvents](../api/intune-troubleshooting-devicemanagementautopilotevent-list.md)|[deviceManagementAutopilotEvent](../resources/intune-troubleshooting-devicemanagementautopilotevent.md) 集合|列出 [deviceManagementAutopilotEvent](../resources/intune-troubleshooting-devicemanagementautopilotevent.md) 对象的属性和关系。|
@@ -40,10 +40,10 @@ ms.locfileid: "58266798"
 |enrollmentType|[windowsAutopilotEnrollmentType](../resources/intune-troubleshooting-windowsautopilotenrollmenttype.md)|注册类型。 可取值为：`unknown`、`azureADJoinedWithAutopilotProfile`、`offlineDomainJoined`、`azureADJoinedUsingDeviceAuthWithAutopilotProfile`、`azureADJoinedUsingDeviceAuthWithoutAutopilotProfile`、`azureADJoinedWithOfflineAutopilotProfile`、`azureADJoinedWithWhiteGlove`、`offlineDomainJoinedWithWhiteGlove`、`offlineDomainJoinedWithOfflineAutopilotProfile`。|
 |deviceSerialNumber|String|设备序列号。|
 |managedDeviceName|String|托管设备名称。|
-|userPrincipalName|字符串|用于注册设备的用户主体名称。|
+|userPrincipalName|String|用于注册设备的用户主体名称。|
 |windowsAutopilotDeploymentProfileDisplayName|String|Autopilot 配置文件名称。|
 |enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|注册状态，如已注册、已失败。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
-|windows10EnrollmentCompletionPageConfigurationDisplayName|字符串|注册状态页面配置文件名称|
+|windows10EnrollmentCompletionPageConfigurationDisplayName|String|注册状态页面配置文件名称|
 |windows10EnrollmentCompletionPageConfigurationId|String|注册状态页面配置文件 ID|
 |deploymentState|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|部署状态，如 Success、Failure、InProgress、SuccessWithTimeout。 可取值为：`unknown`、`success`、`inProgress`、`failure`、`successWithTimeout`、`notAttempted` 或 `disabled`。|
 |deviceSetupStatus|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|注册状态页设备设置阶段的部署状态。 可取值为：`unknown`、`success`、`inProgress`、`failure`、`successWithTimeout`、`notAttempted` 或 `disabled`。|
@@ -58,7 +58,7 @@ ms.locfileid: "58266798"
 |deploymentEndDateTime|DateTimeOffset|部署结束时间。|
 |targetedAppCount|Int32|目标应用程序计数。|
 |targetedPolicyCount|Int32|目标策略计数。|
-|enrollmentFailureDetails|字符串|注册失败详细信息。|
+|enrollmentFailureDetails|String|注册失败详细信息。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|

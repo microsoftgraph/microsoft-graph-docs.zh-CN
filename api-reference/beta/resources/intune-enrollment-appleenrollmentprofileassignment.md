@@ -2,15 +2,15 @@
 title: appleEnrollmentProfileAssignment 资源类型
 description: Apple 配置文件的分配。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: add921ec2126c5789f7f96cc5a94f79693a9b03c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b351f057d38db0fbf147f9ba3367345b35dd3777
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805028"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039992"
 ---
 # <a name="appleenrollmentprofileassignment-resource-type"></a>appleEnrollmentProfileAssignment 资源类型
 

@@ -2,15 +2,15 @@
 title: deviceManagementConfigurationSimpleSettingCollectionInstance 资源类型
 description: 简单设置集合实例
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c5e75c523cf42402c65222f394d8d8acfa1bac71
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4c2efa97592bdeebb9180510398792f6a6b2f837
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788189"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59075324"
 ---
 # <a name="devicemanagementconfigurationsimplesettingcollectioninstance-resource-type"></a>deviceManagementConfigurationSimpleSettingCollectionInstance 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "58788189"
 继承自 [deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |settingDefinitionId|String|设置定义 ID 继承自 [deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|
 |settingInstanceTemplateReference|[deviceManagementConfigurationSettingInstanceTemplateReference](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstancetemplatereference.md)|设置实例模板引用 继承自 [deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|

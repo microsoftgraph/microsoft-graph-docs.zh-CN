@@ -1,22 +1,22 @@
 ---
 title: 删除 itemPublication
-description: 删除一个 itemPublication 对象。
-localization_priority: Normal
+description: 删除 itemPublication 对象。
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 6e63ef86de454e63f6b90f4b9bf4ea79cfeb1222
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 99983f9f663c3d896d22df57a8f90c8fc0b84491
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969889"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59076444"
 ---
 # <a name="delete-itempublication"></a>删除 itemPublication
 
 命名空间：microsoft.graph
 
-删除一个 [itemPublication](../resources/itempublication.md) 对象。
+删除 [itemPublication](../resources/itempublication.md) 对象。
 
 ## <a name="permissions"></a>权限
 
@@ -24,8 +24,8 @@ ms.locfileid: "48969889"
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| 委派（工作或学校帐户）     | 所有用户读写。 |
-| 委派（个人 Microsoft 帐户） | 所有用户读写。 |
+| 委派（工作或学校帐户）     | User.ReadWrite、User.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | User.ReadWrite、User.ReadWrite.All |
 | 应用程序                            | User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP 请求
