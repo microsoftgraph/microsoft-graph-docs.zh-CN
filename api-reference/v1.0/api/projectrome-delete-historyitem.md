@@ -1,16 +1,16 @@
 ---
 title: 删除 historyItem
 description: 删除现有用户活动的现有历史记录项。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: project-rome
 author: ailae
 doc_type: apiPageType
-ms.openlocfilehash: abc5a24b83ec964d7601bd08a9d0bfb5477267fd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fbcee28fdf2ac2683b45139e367f2617279d4d09
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48051744"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104787"
 ---
 # <a name="delete-a-historyitem"></a>删除 historyItem
 
@@ -49,7 +49,7 @@ DELETE /me/activities/{id}/historyItems/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在 `204 No Content` 历史记录项被删除时返回响应代码。
+如果成功，此方法在删除历史记录 `204 No Content` 项时返回 响应代码。
 
 ## <a name="example"></a>示例
 

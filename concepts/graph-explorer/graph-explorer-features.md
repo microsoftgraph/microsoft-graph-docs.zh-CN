@@ -1,22 +1,22 @@
 ---
 title: 使用 Graph 资源管理器
 description: 了解如何使用资源管理器中的一Graph功能。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: bettirosengugi
-ms.openlocfilehash: dab8803be00de3cc8ab27fc80c5f3b8cc0f0ac4307f29b9f276516ad13c86888
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 97c4f3ccd0fdfd08da7f4696419df813f19840e3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54138374"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59014326"
 ---
 # <a name="working-with-graph-explorer"></a>使用 Graph 资源管理器
 
-[Graph资源管理器](https://developer.microsoft.com/graph/graph-explorer/)是一款开发人员工具，可方便你使用 Microsoft Graph REST API 请求并查看相应的响应。 本文介绍如何使用资源管理器中的一Graph功能。
+[Graph资源管理器](https://developer.microsoft.com/graph/graph-explorer/)是一个开发人员工具，可方便你创建 Microsoft rest API Graph并查看相应的响应。 本文介绍如何使用资源管理器中的一Graph功能。
 
 ## <a name="consent-to-permissions"></a>同意权限
 
-用户或管理员必须通过同意Graph向浏览器授予正确的权限，以访问 Microsoft Graph。 登录时Graph"修改权限"选项卡或配置文件旁的设置齿轮中的"选择权限"选项，同意在资源管理器中授予权限。 " **修改权限** "选项卡列出了在地址栏中运行查询所需的所有权限。 
+用户或管理员必须通过同意Graph向浏览器授予正确的权限，才能访问 Microsoft Graph。 登录时Graph通过"修改权限"选项卡或配置文件旁的设置齿轮中的"选择权限"选项同意浏览器权限。 " **修改权限** "选项卡列出了在地址栏中运行查询所需的所有权限。 
 
 同意权限：
 
@@ -36,13 +36,13 @@ ms.locfileid: "54138374"
 
 ## <a name="get-an-access-or-authentication-token"></a>获取访问或身份验证令牌
 
-Graph资源管理器包含 **一个访问** 令牌选项卡，该选项卡显示登录时的访问令牌。 如果需要 **在** 最喜爱的 REST 客户端应用程序中使用令牌，可以在"访问令牌"选项卡上复制令牌。
+Graph资源管理器包括 **一个访问** 令牌选项卡，该选项卡显示登录时的访问令牌。 如果需要 **在** 最喜爱的 REST 客户端应用程序中使用令牌，可以在"访问令牌"选项卡上复制令牌。
 
 ![Screenshot of the Access token tab in Graph Explorer with the Copy button highlighted](./images/access-token.png)
 
 ## <a name="copy-code-snippets"></a>复制代码段
 
-对于你在 Graph 资源管理器中选择或输入的每个 REST API 查询，你可以找到如何在代码段选项卡 -C#、Java、JavaScript 和Objective-C 下展示的四种语言中调用该 API。 
+对于你在 Graph 资源管理器中选择或输入的每个 REST API 查询，你可以找到如何在代码段选项卡下展示的四种语言（C#、Java、JavaScript 和 Objective-C）下调用该 API。  
 
 ![突出显示代码Graph选项卡的"资源管理器"屏幕截图](./images/code-snippets.png)
 
@@ -54,7 +54,7 @@ GraphExplorer 包括多个功能，以便更轻松地实现 UI。 在应用中�
 
 [Microsoft Graph Toolkit](../toolkit/overview.md)是可重用的、与框架无关的 Web 组件和帮助程序的集合，用于访问和使用 Microsoft Graph。 这些组件功能完全正常，内置提供程序使用 Microsoft Graph 进行身份验证和提取数据。
 
-Graph资源管理器提供与 Microsoft 组件组件Graph Toolkit REST API 查询。 "组件"Toolkit **选项卡** 上的一个蓝色点指示Toolkit在资源管理器中为当前指定的 REST API 查询Graph组件。 你可以方便地将组件的代码复制到你的应用。
+Graph资源管理器提供与 Microsoft 组件组件对应的示例 REST API Graph Toolkit查询。 "组件"选项卡Toolkit **一** 个蓝色点指示Toolkit资源管理器中为当前指定的 REST API 查询Graph组件。 你可以方便地将组件的代码复制到你的应用。
 
 下表列出了当前包含应用程序组件Toolkit查询。
 
@@ -66,19 +66,19 @@ Graph资源管理器提供与 Microsoft 组件组件Graph Toolkit REST API 查�
 | 获取下一周的事件 | [https://mgt.dev/iframe.html?id=components-mgt-agenda—get-events-for-next-week](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fmgt.dev%2Fiframe.html%3Fid%3Dcomponents-mgt-agenda--get-events-for-next-week&amp;data=04%7C01%7CElise.Yang%40microsoft.com%7Ca81f0f07873240d8571b08d7dac329d4%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637218404083382869%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C-1&amp;sdata=VVFcx3gXMmg%2B%2BdQCZXjAmkCk5zKcrntK6fI35jbdN94%3D&amp;reserved=0) |
 | 获取我的照片	 | [https://mgt.dev/iframe.html?id=components-mgt-person—仅个人照片](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fmgt.dev%2Fiframe.html%3Fid%3Dcomponents-mgt-person--person-photo-only&amp;data=04%7C01%7CElise.Yang%40microsoft.com%7Ca81f0f07873240d8571b08d7dac329d4%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637218404083392872%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C-1&amp;sdata=aI%2BUqciLPOxEqlIpbjT8wtWBgcaJWM6sqooRlLVspZ0%3D&amp;reserved=0) |
 
-![Screenshot showing the Toolkit components tab with the code to generate the component highlighted](./images/get-graph-toolkit-card.png)
+![显示"Toolkit组件"选项卡的屏幕截图，其中突出显示了用于生成组件的代码](./images/get-graph-toolkit-card.png)
 
 ### <a name="adaptive-cards-integration"></a>自适应卡片集成
 
-[自适应卡片](https://adaptivecards.io/) 是 UI 的平台不可知的代码段，以 JSON 编写，应用和服务可以开放交换。 运行查询且自适应卡片可用时，自适应卡片选项卡上会显示一个 **蓝色** 点。
+[自适应卡片](https://adaptivecards.io/) 是 UI 的平台不可知的代码段，以 JSON 编写，应用和服务可以公开交换。 运行查询且自适应卡片可用时，自适应卡片选项卡上会显示一个 **蓝色** 点。
 
 ![突出显示响应详细信息的 Graph 资源管理器中自适应卡片选项卡的屏幕截图](./images/adaptive-cards.png)
 
 ## <a name="customize-the-theme-in-graph-explorer"></a>在资源管理器中Graph主题
 
-通过选择设置齿轮 **Graph"更改主题**"选项，为浏览器选择主题。 主题选项为浅色、深色和高对比度。
+通过选择设置齿轮 **Graph"更改** 主题"选项，为浏览器选择主题。 主题选项为浅色、深色和高对比度。
 
-![Screenshot of the Change theme option in Graph Explorer with the theme options highlighted](./images/change-theme.png)
+![突出显示主题选项Graph资源管理器中"更改主题"选项的屏幕截图](./images/change-theme.png)
 
 ## <a name="storing-and-sharing-queries"></a>存储和共享查询
 
@@ -107,7 +107,7 @@ Graph资源管理器提供与 Microsoft 组件组件Graph Toolkit REST API 查�
 
 ![突出显示展开和折叠选项的响应窗格屏幕截图](./images/expand-collapse-response-preview.png)
 
-方便地从 Microsoft 365 资源管理器 UI 访问 Graph 开发人员计划网站，获取包含要试验的示例数据的免费沙盒。 在设置齿轮下，选择 **"获取包含示例数据的沙盒"。**
+通过浏览器 UI Microsoft 365开发人员计划Graph，获取包含要试验的示例数据的免费沙盒。 在设置齿轮下，选择 **"获取包含示例数据的沙盒"。**
 
 ![突出显示了Graph示例数据"选项的"获取沙盒"的浏览器屏幕截图](./images/link-to-m365-dev-program.png)
 

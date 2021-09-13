@@ -2,15 +2,15 @@
 title: participantInfo 资源类型
 description: 包含有关参与者标识的其他属性
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 2804e846b95f2aad597699b4799c280101b07e9a4bea9ae5413aefade1d5c984
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d1d134eec6e6bef50eb7a97917a2f8aaa3b91148
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54146438"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104073"
 ---
 # <a name="participantinfo-resource-type"></a>participantInfo 资源类型
 

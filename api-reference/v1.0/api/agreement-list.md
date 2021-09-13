@@ -1,16 +1,16 @@
 ---
 title: 列出协议
 description: 检索协议对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 90d4421342a74b6d89bae2e02c9a61535ce40a29
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 412c4748125a2213e9fdbd5d81acabd3a90faf48
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50775211"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017049"
 ---
 # <a name="list-agreements"></a>列出协议
 

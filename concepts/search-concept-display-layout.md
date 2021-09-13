@@ -1,16 +1,16 @@
 ---
 ms.author: yiwenwang
-title: 使用 Microsoft Microsoft 搜索 API Graph呈现显示布局
+title: 使用 Microsoft Microsoft 搜索中的 Graph API 呈现显示布局
 description: 使用 Microsoft Microsoft 搜索 API Graph以不同方式显示搜索结果。
 author: yiwenwang
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: a78f7be7b28e97e96d781b43c23c456e756e99405eb16260daed584753fe5753
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 704a6c0f728a38d7141f71a0431b6941498f6ad0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54129566"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59103949"
 ---
 # <a name="use-the-microsoft-search-api-in-microsoft-graph-to-render-display-layout-preview"></a>使用 Microsoft Microsoft 搜索 中的 Graph API 在预览 (布局) 
 
@@ -19,7 +19,7 @@ ms.locfileid: "54129566"
 - 要比较每个搜索结果的一个或多个特征或条件，例如搜索结果的结果源或内容类型。
 - 用于符合条件的搜索结果的显示模板。显示模板控制满足条件的所有结果在搜索结果页面上的显示和行为方式。 
 
-Microsoft Graph 搜索 API 提供基于自适应卡片的可[呈现响应](https://adaptivecards.io/)。 通过使用自适应 [卡片模板](https://adaptivecards.io/designer)，客户端可以在不同的画布中呈现不同的搜索结果。
+Microsoft Graph搜索 API 基于自适应卡片提供可[呈现的响应](https://adaptivecards.io/)。 通过使用自适应 [卡片模板](https://adaptivecards.io/designer)，客户端可以在不同的画布中呈现不同的搜索结果。
 
 客户可以在网站中自定义其[Microsoft 365 管理中心。](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes)
 

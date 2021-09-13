@@ -2,15 +2,15 @@
 title: windowsInformationProtectionAppLockerFile 资源类型
 description: Windows 信息保护 AppLocker 文件
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a735a008481938ac91ede5a96d5f948b3e43f30dae3ec61b6b1fdf34221d7f42
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bc04132c94f08ae0634461386c1a2217fcad794e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178211"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59052963"
 ---
 # <a name="windowsinformationprotectionapplockerfile-resource-type"></a>windowsInformationProtectionAppLockerFile 资源类型
 

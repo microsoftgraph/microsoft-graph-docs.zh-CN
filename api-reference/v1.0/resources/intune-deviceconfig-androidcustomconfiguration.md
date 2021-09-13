@@ -2,15 +2,15 @@
 title: androidCustomConfiguration 资源类型
 description: 本主题提供由 androidCustomConfiguration 资源公开的已声明方法、属性和关系的说明。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7a4dac5c1c4f343d8e536aa5e581bcf053a126349c04a3a8bb6dc915667b30a9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b8c9cfe9f9632d51b09377dce8e5b312b07b3e21
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54141628"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067309"
 ---
 # <a name="androidcustomconfiguration-resource-type"></a>androidCustomConfiguration 资源类型
 

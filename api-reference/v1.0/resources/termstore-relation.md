@@ -2,15 +2,15 @@
 title: relation 资源类型
 description: 表示术语存储中的术语之间的关系。
 author: vishriv
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: resourcePageType
-ms.openlocfilehash: 9b4ccd5ed062fa36cdb16dbec0d8b2631f991b12
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 88276a66949a55f0ee953f556977a2380ed415d9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514945"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128030"
 ---
 # <a name="relation-resource-type"></a>relation 资源类型
 
@@ -66,7 +66,7 @@ ms.locfileid: "58514945"
 [microsoft.graph.termStore.set]: termstore-set.md
 [microsoft.graph.termStore.relations]: termstore-relation.md
 [microsoft.graph.termStore.relation]: termstore-relation.md
-[store]: ../resources/termstore-store.md
+[商店]: ../resources/termstore-store.md
 [term]: ../resources/termstore-term.md
 [set]: ../resources/termstore-set.md
 

@@ -1,16 +1,16 @@
 ---
 title: List excludes collection of permissionGrantPolicy
 description: 检索条件集的列表，这些条件集描述权限授予策略中排除权限授予事件的条件。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 17687f0f9437f67cea107bbaeca99fef44c3cd34
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a2c76b758baf8d71c3be447617212bc6744c8c5a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051296"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032606"
 ---
 # <a name="list-excludes-collection-of-permissiongrantpolicy"></a>List excludes collection of permissionGrantPolicy
 

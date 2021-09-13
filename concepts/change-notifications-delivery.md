@@ -2,14 +2,14 @@
 title: 以不同方式接收更改通知
 description: 更改通知可以通过不同的技术来传送，包括 Webhook 和 Azure 事件中心。
 author: Jumaodhiss
-localization_priority: Priority
+ms.localizationpriority: high
 ms.custom: graphiamtop20, devx-track-azurecli
-ms.openlocfilehash: 025ae3d77e4cfb9bb819cdb0b9b27c3b3bb388cc8d5d4d7f8a1cde04308ec3fd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 59caceb3b56853b9bc4d20fa97cfc035b1a3ea0c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54216523"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134064"
 ---
 # <a name="get-change-notifications-delivered-in-different-ways"></a>以不同方式接收更改通知
 
@@ -166,7 +166,7 @@ echo "Notification Url:\n${notificationUrl}"
 
 ### <a name="what-happens-if-the-microsoft-graph-change-tracking-application-is-missing"></a>如果缺少 Microsoft Graph 更改跟踪应用程序会怎样？
 
-租户中可能缺少 **Microsoft Graph 更改跟踪** 服务主体，这取决于租户的创建时间和管理操作。 要解决此问题，请在 [Microsoft Graph 浏览器](https://developer.microsoft.com/zh-CN/graph/graph-explorer) 中运行 [以下查询](https://developer.microsoft.com/zh-CN/graph/graph-explorer?request=servicePrincipals&method=POST&version=v1.0&GraphUrl=https://graph.microsoft.com&requestBody=eyJhcHBJZCI6IjBiZjMwZjNiLTRhNTItNDhkZi05YTgyLTIzNDkxMGM0YTA4NiJ9)。
+租户中可能缺少 **Microsoft Graph 更改跟踪** 服务主体，这取决于租户的创建时间和管理操作。 要解决此问题，请在 [Microsoft Graph 浏览器](https://developer.microsoft.com/en-us/graph/graph-explorer) 中运行 [以下查询](https://developer.microsoft.com/en-us/graph/graph-explorer?request=servicePrincipals&method=POST&version=v1.0&GraphUrl=https://graph.microsoft.com&requestBody=eyJhcHBJZCI6IjBiZjMwZjNiLTRhNTItNDhkZi05YTgyLTIzNDkxMGM0YTA4NiJ9)。
 
 查询详细信息：
 

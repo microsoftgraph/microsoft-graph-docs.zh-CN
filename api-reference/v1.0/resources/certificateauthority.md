@@ -1,16 +1,16 @@
 ---
 title: certificateAuthority 资源类型
 description: 表示证书颁发机构。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: adimitui
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 4aa2ecb3c3d16ad942458da190247f1d6f6cb87babc926c97c95605d21d5418d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 067eeea8a341525f77427f518b02a07de38a05a1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235679"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067484"
 ---
 # <a name="certificateauthority-resource-type"></a>certificateAuthority 资源类型
 

@@ -2,15 +2,15 @@
 title: 删除 windows10EnterpriseModernAppManagementConfiguration
 description: 删除 windows10EnterpriseModernAppManagementConfiguration。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 93a7a25d09625d4a3d6311b1765bf92e2f1eb1dc3404e50753775fd3023c8810
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1c687989ef3e7e253edef5432aa561bf9c59528a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54135608"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110625"
 ---
 # <a name="delete-windows10enterprisemodernappmanagementconfiguration"></a>删除 windows10EnterpriseModernAppManagementConfiguration
 

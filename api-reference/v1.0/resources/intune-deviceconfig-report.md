@@ -2,15 +2,15 @@
 title: report 资源类型
 description: 设备配置配置文件历史记录报告。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 518877a132322caa47889a1ef4c21b9132115f0988cf849d7a4dd8da993f7399
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ce580ab008c74ea5c55b938568ad7d17d029ed86
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54246792"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109001"
 ---
 # <a name="report-resource-type"></a>report 资源类型
 

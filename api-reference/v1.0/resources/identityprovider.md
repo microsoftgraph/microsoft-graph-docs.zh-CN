@@ -1,16 +1,16 @@
 ---
 title: identityProvider 资源类型
 description: 表示 Azure Active Directory (Azure AD) 标识提供程序。
-localization_priority: Priority
+ms.localizationpriority: high
 author: namkedia
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 87b007f65f055b94401fb4b4eb1ced4ed79104b534d3e752c2b3d7eda7ca8ac2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e6ccc49df5a96f3a7ebf16917e8eec3f075a61b3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54152719"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118650"
 ---
 # <a name="identityprovider-resource-type-deprecated"></a>identityProvider 资源类型（已弃用）
 命名空间：microsoft.graph

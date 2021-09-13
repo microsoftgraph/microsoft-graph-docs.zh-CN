@@ -2,15 +2,15 @@
 title: 更新 windowsUpdateForBusinessConfiguration
 description: 更新 windowsUpdateForBusinessConfiguration 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 46fcd3190f1e95dafc645e59d51204f47126bd670b5bebbe7804ae08f796d4c3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bc60a7cd359de4dabe6193f8c5bb7b57fcc6c35a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54192850"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59050318"
 ---
 # <a name="update-windowsupdateforbusinessconfiguration"></a>更新 windowsUpdateForBusinessConfiguration
 

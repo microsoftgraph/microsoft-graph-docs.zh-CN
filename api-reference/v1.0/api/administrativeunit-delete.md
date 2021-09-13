@@ -2,15 +2,15 @@
 title: 删除 administrativeUnit
 description: 删除 administrativeUnit。
 author: DougKirschner
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d1cc62238330a2d5af8133606fd3207abc30e6ec
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 7ca90d3dc02be77b809cc75cfd9706c5af639ddf
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52991580"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128436"
 ---
 # <a name="delete-administrativeunit"></a>删除 administrativeUnit
 

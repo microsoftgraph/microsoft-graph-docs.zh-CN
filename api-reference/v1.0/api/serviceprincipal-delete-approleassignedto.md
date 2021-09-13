@@ -1,18 +1,18 @@
 ---
-title: 删除为服务主体授予的 appRoleAssignment
+title: 删除 appRoleAssignedTo
 description: 删除为服务主体授予的 appRoleAssignment。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 9fffd71577727eb552b9b18924fde95ef382afb3
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 5a74f38451bf63e27e5b1152efc88f600428d3a8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53441102"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59053229"
 ---
-# <a name="delete-an-approleassignment-granted-for-a-service-principal"></a>删除为服务主体授予的 appRoleAssignment
+# <a name="delete-approleassignedto"></a>删除 appRoleAssignedTo
 
 命名空间：microsoft.graph
 
@@ -37,7 +37,7 @@ DELETE /servicePrincipals/{resource-SP-id}/appRoleAssignedTo/{appRoleAssignment-
 ```
 
 > [!NOTE]
-> 作为最佳实践，我们建议通过资源服务主体的关系（而不是分配的用户、组或服务主体的关系）删除应用程序 `appRoleAssignedTo`  `appRoleAssignments` 角色分配。
+> 最佳做法是，建议使用此方法删除应用角色分配，而不是删除通过分配的用户、组或服务主体的[appRoleAssignments 关系删除的 appRoleAssignments](serviceprincipal-delete-approleassignments.md)方法。 
 
 ## <a name="request-headers"></a>请求标头
 

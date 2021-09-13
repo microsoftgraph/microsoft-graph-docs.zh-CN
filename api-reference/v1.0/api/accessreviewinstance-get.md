@@ -2,15 +2,15 @@
 title: 获取 accessReviewInstance
 description: 读取 accessReviewInstance 对象的属性和关系。
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 62d18407a457de2c335656800c12d2b311ea90b6
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 91ccf2cec525f11bca9e5c610046e94f91089c1f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53210992"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59033103"
 ---
 # <a name="get-accessreviewinstance"></a>获取 accessReviewInstance
 命名空间：microsoft.graph

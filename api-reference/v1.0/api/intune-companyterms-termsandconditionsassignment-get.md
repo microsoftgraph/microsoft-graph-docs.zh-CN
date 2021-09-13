@@ -2,15 +2,15 @@
 title: 获取 termsAndConditionsAssignment
 description: 读取 termsAndConditionsAssignment 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a34b45c0069eaa53447383cd47a97836fc3eb6808800a8e927cace1b350f0f65
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 070c9f0ac25789df41bbdf5d53999537af3b3c20
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54144947"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016405"
 ---
 # <a name="get-termsandconditionsassignment"></a>获取 termsAndConditionsAssignment
 

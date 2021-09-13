@@ -1,16 +1,16 @@
 ---
 title: 使用 Microsoft Graph 安全性 API
 description: Microsoft Graph 安全性 API 提供了统一的界面的架构，用于与 Microsoft 和生态系统合作伙伴的安全性解决方案集成。
-localization_priority: Priority
+ms.localizationpriority: high
 author: preetikr
 ms.prod: security
 doc_type: conceptualPageType
-ms.openlocfilehash: 18d9ce963e5378ebc571763a2a395c992ff8bf6154f7ea692afeec5cbdb58dae
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4876c633409b71c7ae4f60cbe10dcab095c89e25
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54141327"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139630"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>使用 Microsoft Graph 安全性 API
 

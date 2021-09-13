@@ -1,16 +1,16 @@
 ---
 title: outlookGeoCoordinates 资源类型
 description: 地理坐标、海拔，以及它们物理位置的精确度。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 9a7a1a31b15d4d2e4c72b6ab4a269b9b955831acf470dec2000d0ecf6c023e99
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 120c50f56ba5b413be56dc881b5d69602e55caab
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54251875"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036072"
 ---
 # <a name="outlookgeocoordinates-resource-type"></a>outlookGeoCoordinates 资源类型
 

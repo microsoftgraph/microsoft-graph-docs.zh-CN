@@ -2,15 +2,15 @@
 title: 修补程序通道
 description: 更新指定频道的属性。
 author: anandjo
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a473c6c562e15e382fced27f722197a7af6b1492
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 575a37b3df220dfb9b3b704041484c07591107d1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52783664"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105627"
 ---
 # <a name="patch-channel"></a>修补程序通道
 

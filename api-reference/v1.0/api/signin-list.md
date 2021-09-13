@@ -1,16 +1,16 @@
 ---
 title: 列出 signIn
-description: 介绍 Microsoft Graph API 中的 signIn (实体) 列表方法。
-localization_priority: Normal
+description: 介绍 Microsoft (API) signIn 资源Graph方法。
+ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 15581f8b14979c89b7ec913e5d24ee3fb591345d
-ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
+ms.openlocfilehash: 5aa455af30927df4e983d2374f456f442af71b86
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58490425"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59130200"
 ---
 # <a name="list-signins"></a>列出 signIn
 
@@ -30,6 +30,9 @@ ms.locfileid: "58490425"
 |委派（个人 Microsoft 帐户） | 不支持   |
 |应用程序 | AuditLog.Read.All 和 Directory.Read.All  |
 
+> [!IMPORTANT]
+> 此 API 有 [一个已知](/graph/known-issues#azure-ad-activity-reports) 问题，当前需要同意 **AuditLog.Read.All** 和 **Directory.Read.All** 权限。
+
 应用必须 [正确注册到](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) Azure AD。
 
 除了委派的权限，登录用户还需要属于以下目录角色之一，以便他们阅读登录报告。 若要了解有关目录角色的信息，请参阅 [Azure AD 内置角色](/azure/active-directory/roles/permissions-reference)：
@@ -38,7 +41,7 @@ ms.locfileid: "58490425"
 + 报告读取者
 + 安全管理员
 + 安全操作员
-+ 安全信息读取者
++ 安全读取者
 
 ## <a name="http-request"></a>HTTP 请求
 

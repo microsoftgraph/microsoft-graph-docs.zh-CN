@@ -2,15 +2,15 @@
 title: macOSCustomConfiguration 资源类型
 description: 本主题提供由 macOSCustomConfiguration 资源公开的已声明方法、属性和关系的说明。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e7516147642360cba368b299b2962dc01062ca979d2a6acbe8631c0a7d37811b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 40c421f5842597271628a41741a3fff65d436605
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54246806"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067281"
 ---
 # <a name="macoscustomconfiguration-resource-type"></a>macOSCustomConfiguration 资源类型
 

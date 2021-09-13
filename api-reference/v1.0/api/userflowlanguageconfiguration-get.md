@@ -2,15 +2,15 @@
 title: 获取 userFlowLanguageConfiguration
 description: 读取 userFlowLanguageConfiguration 对象的属性和关系。
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a2f17c309e104738a1bae4fd7e599fd8efa28355
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: abe65315b1ee8a3409e14a93492753cd6612ead1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51920571"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109547"
 ---
 # <a name="get-userflowlanguageconfiguration"></a>获取 userFlowLanguageConfiguration
 
@@ -18,7 +18,7 @@ ms.locfileid: "51920571"
 
 读取 [userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) 对象的属性和关系。 这些对象表示用户流中可用的语言。
 
-**注意：** 默认情况下，在 Azure Active Directory 用户流 [中启用语言自定义](../resources/b2xidentityuserflow.md)。
+**注意：** 默认情况下，在用户流中启用 [Azure Active Directory自定义](../resources/b2xidentityuserflow.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -33,7 +33,7 @@ ms.locfileid: "51920571"
 工作或学校帐户需要属于以下角色之一：
 
 * 全局管理员
-* 外部标识用户流管理员
+* 外部标识用户Flow管理员
 
 ## <a name="http-request"></a>HTTP 请求
 

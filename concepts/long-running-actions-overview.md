@@ -1,14 +1,14 @@
 ---
 title: 处理长时间运行的操作（测试）
 description: 本文会介绍处理长时间运行的操作。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: daspek
-ms.openlocfilehash: 273299b13be423cf3e6ae625226efff5fef40f8f8ba06f787d0ba9ab29ba5211
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 21d0798f195248abbb8933ca54d344d3ca9ab796
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54146205"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062416"
 ---
 # <a name="working-with-long-running-actions-beta"></a>处理长时间运行的操作 (beta)
 

@@ -2,15 +2,15 @@
 title: 创建 detectedApp
 description: 创建新的 detectedApp 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d8fe3878485b56b284d3e27c496fa34a8f74e8f4
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: d1f9608149545329d8f4ac4a30343078d0732619
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58262422"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59114139"
 ---
 # <a name="create-detectedapp"></a>创建 detectedApp
 
@@ -41,7 +41,7 @@ POST /deviceManagement/detectedApps
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -52,7 +52,7 @@ POST /deviceManagement/detectedApps
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|检测到的应用程序的唯一标识符。 创建此应用程序时，Intune 将自动生成它。 只读。|
-|displayName|字符串|发现的应用程序的名称。 只读|
+|displayName|String|发现的应用程序的名称。 只读|
 |version|String|发现的应用程序的版本。 只读|
 |sizeInByte|Int64|发现的应用程序的大小，以字节为单位。 只读|
 |deviceCount|Int32|已安装此应用程序的设备数量|

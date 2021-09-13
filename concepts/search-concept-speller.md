@@ -1,15 +1,15 @@
 ---
-title: 使用 Microsoft Microsoft 搜索 中的 Graph API 请求拼写更正
+title: 使用 Microsoft Microsoft 搜索中的 Graph API 请求拼写更正
 description: 您可以使用 Microsoft 搜索 API 获取搜索查询的拼写建议或拼写修改。
 author: nmoreau
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: 0ba5d3fa36deec56cc1cd2e0aef77c27a921f6a52d81257cf5b39ef524a394df
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a16c1e0a69e202ca34c1c52c176a15c0b5da7e88
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54233649"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59071726"
 ---
 # <a name="use-the-microsoft-search-api-in-microsoft-graph-to-request-spelling-correction-preview"></a>使用 Microsoft Microsoft 搜索 中的 Graph API 请求拼写更正 (预览) 
 

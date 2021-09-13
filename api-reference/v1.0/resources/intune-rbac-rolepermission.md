@@ -2,15 +2,15 @@
 title: rolePermission 资源类型
 description: 包含一组 ResourceActions，用于确定每个角色的允许和不允许的权限。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ec9fe67ab7cf3af5071f20cddf0775b70d84eddb83d14ef93aa3a376fab7a53a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: da71e58f953fc1a0f23dc0f0944ea0f1a7564050
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54192304"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59126784"
 ---
 # <a name="rolepermission-resource-type"></a>rolePermission 资源类型
 

@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getOffice365ActivationCounts'
 description: 获取桌面Microsoft 365激活次数。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 2473276f59bcb2da6ded7f8561faec34ad59c25fea1ddb45c2806cc63ba5065a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 618c5d52a7b7ad7eacf107edfaacedfad30de175
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54199772"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59026173"
 ---
 # <a name="reportroot-getoffice365activationcounts"></a>reportRoot: getOffice365ActivationCounts
 
@@ -18,7 +18,7 @@ ms.locfileid: "54199772"
 
 获取桌面Microsoft 365激活次数。
 
-> **注意：** 有关不同报表视图和名称的详细信息，请参阅Microsoft 365 [报表 -](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60)Microsoft Office激活。
+> **注意：** 有关不同报表视图和名称的详细信息，请参阅Microsoft 365 [报表 - Microsoft Office激活。](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60)
 
 ## <a name="permissions"></a>权限
 
@@ -30,7 +30,7 @@ ms.locfileid: "54199772"
 | 委派（个人 Microsoft 帐户） | 不支持。                           |
 | 应用                            | Reports.Read.All                         |
 
-**注意**：若要获得委派权限以允许应用代表用户读取服务使用情况报告，租户管理员必须事先为用户分配适当的 Azure AD 受限管理员角色。 有关更多详细信息，请参阅[授权 API 读取 Microsoft 365 使用情况报告](/graph/reportroot-authorization)。
+**注意**：若要获得委派权限以允许应用代表用户读取服务使用情况报告，租户管理员必须事先为用户分配适当的 Azure AD 受限管理员角色。有关更多详细信息，请参阅 [ API 授权，读取 Microsoft 365使用情况报告](/graph/reportroot-authorization)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -46,7 +46,7 @@ GET /reports/getOffice365ActivationCounts
 | 名称          | 说明                              |
 | :------------ | :--------------------------------------- |
 | Authorization | 持有者{令牌}。必需。                |
-| If-None-Match | 如果包含此请求头，且提供的 eTag 与文件中的当前标记一致，返回的是 `304 Not Modified` 响应代码。 可选。 |
+| If-None-Match | 如果包含此请求表头，且提供的 eTag 与文件中的当前标记一致，返回的是 `304 Not Modified` 响应代码。可选。 |
 
 ## <a name="response"></a>响应
 

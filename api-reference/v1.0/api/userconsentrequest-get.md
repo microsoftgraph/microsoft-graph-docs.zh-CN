@@ -2,15 +2,15 @@
 title: 获取 userConsentRequest
 description: 读取 userConsentRequest 对象的属性和关系。
 author: psignoret
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 921600ae2200428eae7ea5ed9b58e3c2c1e5f11c
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 0b952d7f2f7ab5ec476770cd012ad72b9ee677a1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51506933"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109594"
 ---
 # <a name="get-userconsentrequest"></a>获取 userConsentRequest
 

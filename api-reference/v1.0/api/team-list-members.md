@@ -2,15 +2,15 @@
 title: 列出团队成员
 description: 获取团队的 conversationMembers。
 author: AkJo
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3d55cb5847faee74b10892afd679573998f203f3
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 3598686c8e0b1de4328a58a04430bdd45d52166f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872210"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110016"
 ---
 # <a name="list-members-of-team"></a>列出团队成员
 命名空间：microsoft.graph
@@ -20,7 +20,7 @@ ms.locfileid: "49872210"
 > [!NOTE]
 > 必须将由服务器返回的成员资格 ID 视为不透明字符串。 客户端不应尝试对这些资源 ID 进行分析或做出任何假设。
 > 
-> 成员资格结果将来可能会映射到来自不同租户的用户，如响应中所示。 客户端不应假定所有成员都仅来自当前租户。
+> 未来，成员资格结果可以映射到来自不同租户的用户，如响应中所示。客户端不应假定所有成员仅来自当前租户。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

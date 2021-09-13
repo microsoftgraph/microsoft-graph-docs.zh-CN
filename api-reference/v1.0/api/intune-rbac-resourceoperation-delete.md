@@ -2,15 +2,15 @@
 title: 删除 resourceOperation
 description: 删除 resourceOperation。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: afd3b29d0058bcd2d478bb057de1993074535573be820965e796740feceb448e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bbed673fae8edd87542e0d4286de2967f5f12e26
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54233880"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59114062"
 ---
 # <a name="delete-resourceoperation"></a>删除 resourceOperation
 

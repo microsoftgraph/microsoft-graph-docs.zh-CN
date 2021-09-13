@@ -1,16 +1,16 @@
 ---
 title: 创建或替换活动
 description: 为应用创建新的或替换现有用户活动。 如果你想要在一个请求中创建用户活动及其相关的 **historyItems，** 可以使用深层插入。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: project-rome
 author: ailae
 doc_type: apiPageType
-ms.openlocfilehash: b7f8f7b3259002dedeed089a7182ad6cacc1985e8660a0667fa4141b7b884f43
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bba0e48dd71cf03fcdfdaf62033c04d7bf68f86e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54160175"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104745"
 ---
 # <a name="create-or-replace-an-activity"></a>创建或替换活动
 

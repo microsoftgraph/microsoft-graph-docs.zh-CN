@@ -2,15 +2,15 @@
 title: 创建日历
 description: 此 API 可用于新建用户日历。
 author: harini84
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2b19e7fdfb56518d26ba0dafd597838047ea21ae
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a4a56b0fc423a6f81321519a421877b977b518d3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52031499"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59099222"
 ---
 # <a name="create-calendar"></a>创建日历
 
@@ -82,7 +82,7 @@ Content-type: application/json
 
 在请求正文中，提供 [calendar](../resources/calendar.md) 对象的 JSON 表示形式。
 ### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

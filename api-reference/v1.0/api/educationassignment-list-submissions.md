@@ -2,15 +2,15 @@
 title: 列出提交
 description: 列出与工作分配关联的所有提交。
 author: sharad-sharma-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b247beb03b2d6a91f3f053990626d6aba5f2aecf
-ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
+ms.openlocfilehash: b950a9469ebe5a67c94cf0e3bdf28c56d4d56cad
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58367147"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105431"
 ---
 # <a name="list-submissions"></a>列出提交
 

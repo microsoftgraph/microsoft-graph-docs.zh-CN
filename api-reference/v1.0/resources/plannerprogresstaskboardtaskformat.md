@@ -1,22 +1,22 @@
 ---
 title: plannerProgressTaskBoardTaskFormat 资源类型
-description: '**plannerProgressTaskBoardTaskFormat** 资源表示用于在任务板 (的"进度"视图中正确呈现任务的信息 (该视图按任务对象上 PercentComplete 字段的状态组织，包含"未启动"、正在进行和完成) 的列。 每个任务都有一个 **与之关联的 plannerProgressTaskBoardTaskFormat** 对象。'
-localization_priority: Normal
+description: '**plannerProgressTaskBoardTaskFormat** 资源表示用于在任务板 (的"进度"视图中正确呈现任务的信息 (该视图按任务对象上"PercentComplete"字段的状态组织，包含"未启动"、正在进行和完成) 的列。 每个任务都有一个 **与之关联的 plannerProgressTaskBoardTaskFormat** 对象。'
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 9715fb55187a3d48ea8d21f5bd088dbfb2e08f189ed9c96e66e747c100a1272f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0288b8c5ef99f4e72f019c6ffaee15bfe1022348
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54218434"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59052935"
 ---
 # <a name="plannerprogresstaskboardtaskformat-resource-type"></a>plannerProgressTaskBoardTaskFormat 资源类型
 
 命名空间：microsoft.graph
 
-**plannerProgressTaskBoardTaskFormat** 资源表示用于在任务板 (的"进度"视图中正确呈现任务的信息 (该视图按任务对象上 PercentComplete 字段的状态组织，包含"未启动"、正在进行和完成) 的列。 每个 [任务](plannertask.md) 都有一个 **与之关联的 plannerProgressTaskBoardTaskFormat** 对象。
+**plannerProgressTaskBoardTaskFormat** 资源表示用于在任务板 (的"进度"视图中正确呈现任务的信息 (该视图按任务对象上"PercentComplete"字段的状态组织，包含"未启动"、正在进行和完成) 的列。 每个 [任务](plannertask.md) 都有一个 **与之关联的 plannerProgressTaskBoardTaskFormat** 对象。
 
 
 ## <a name="methods"></a>方法

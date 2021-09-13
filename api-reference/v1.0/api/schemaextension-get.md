@@ -1,16 +1,16 @@
 ---
 title: 获取 schemaExtension
 description: 获取指定 schemaExtension 定义的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: cd8252475954df778156ecdfd780179a04444192
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6e5153f93a8f0f643493545b85b13f7df5c65bd2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52038969"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019592"
 ---
 # <a name="get-schemaextension"></a>获取 schemaExtension
 
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/v1.0/schemaExtensions/graphlearn_test
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

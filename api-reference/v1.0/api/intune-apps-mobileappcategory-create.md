@@ -2,15 +2,15 @@
 title: 创建 mobileAppCategory
 description: 创建新的 mobileAppCategory 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 44bc3737eea1f4b2b256b381059e404dd025cb0044f9f0b416f471f856bb086f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9704a08921a32534239c10d37e9a24669d40ac4c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54147663"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59073651"
 ---
 # <a name="create-mobileappcategory"></a>创建 mobileAppCategory
 

@@ -2,15 +2,15 @@
 title: user： translateExchangeIds
 description: 对与 Outlook 相关的资源的标识符进行格式转换。
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 030594006de62bb4c146cad4cae70fcb4c51485c
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 462800b6ce6cf235a15a2a347a068a3c229ffbeb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176393"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109645"
 ---
 # <a name="user-translateexchangeids"></a>user： translateExchangeIds
 
@@ -47,7 +47,7 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 | 参数 | 类型 | 说明 |
 |:----------|:-----|:------------|
-| inputIds | 字符串集合 | 要转换的标识符的集合。 集合中所有标识符都必须具有相同的源 ID 类型，并且必须为同一邮箱中的项目。 此集合的最大大小为 1000 个字符串。 |
+| inputIds | String collection | 要转换的标识符的集合。 集合中所有标识符必须具有相同的源 ID 类型，并且必须为同一邮箱中的项目。 此集合的最大大小为 1000 个字符串。 |
 | sourceIdType | exchangeIdFormat | 参数中标识符的 ID `InputIds` 类型。 |
 | targetIdType | exchangeIdFormat | 要转换为的请求 ID 类型。 |
 
@@ -56,25 +56,25 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 | 成员 | 说明 |
 |:-------|:------------|
 | entryId | MAPI 客户端使用的二进制条目 ID 格式。 |
-| ewsId | Exchange Web 服务客户端使用的 ID 格式。 |
+| ewsId | Web 服务客户端Exchange ID 格式。 |
 | immutableEntryId | 二进制 MAPI 兼容不可变 ID 格式。 |
-| restId | Microsoft Graph 使用的默认 ID 格式。 |
-| restImmutableEntryId | Microsoft Graph 使用的不可变 ID 格式。 |
+| restId | Microsoft Graph 使用的默认 ID Graph。 |
+| restImmutableEntryId | Microsoft Graph 使用的不可变 ID Graph。 |
 
-二进制格式 `entryId` () `immutableEntryId` URL 安全 base64 编码。 URL 安全性通过以下方式修改二进制数据的 base64 编码实现：
+二进制格式 (`entryId` 和) URL `immutableEntryId` 安全 base64 编码。 URL 安全通过按以下方式修改二进制数据的 base64 编码实现：
 
-- 替换为 `+``-`
-- 替换为 `/``_`
-- 删除任何尾部填充字符 `=` () 
-- 将一个整数添加到字符串的末尾，指示原始文本中填充字符 (， `0` `1` `2` 或) 
+- 将 `+` 替换为 `-`
+- 将 `/` 替换为 `_`
+- 删除任何尾部填充 `=` () 
+- 将一个整数添加到字符串的末尾，该整数指示原始文本、、或 (`0` `1` 填充) `2`
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [convertIdResult](../resources/convertidresult.md) 集合。
+如果成功，此方法在 `200 OK` 响应正文中返回 [响应代码和 convertIdResult](../resources/convertidresult.md) 集合。
 
 ## <a name="example"></a>示例
 
-以下示例演示如何将常规 REST API 格式的多个标识符 () REST 不可变格式 `restId` `restImmutableEntryId` () 。
+以下示例演示如何将多个标识符从常规 REST API 格式 () REST 不可变格式 `restId` `restImmutableEntryId` () 。
 
 ### <a name="request"></a>请求
 

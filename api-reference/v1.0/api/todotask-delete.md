@@ -2,15 +2,15 @@
 title: 删除 todoTask
 description: 删除 todoTask 对象。
 author: avijityadav
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a991d641f807898fa644361a55d350b162c884ff
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 8dbf44b78941a7755fbfa7fa476e280a7b1725f3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873820"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049807"
 ---
 # <a name="delete-todotask"></a>删除 todoTask
 命名空间：microsoft.graph

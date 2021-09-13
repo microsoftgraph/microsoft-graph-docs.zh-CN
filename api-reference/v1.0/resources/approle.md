@@ -1,24 +1,24 @@
 ---
 title: appRole 资源类型
 description: 表示客户端应用程序可能请求调用另一个应用程序的应用程序角色，或可能用于将应用程序分配给具有指定应用程序角色的用户或组的应用程序角色。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: 9da5a13e8e79de7a2f4bfb3405e96d3e577a9796cc0f2845e9d8c23fd9a3f53a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 48c67a9901b8d2ee316aa6d48411175693053f04
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54205946"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59099075"
 ---
 # <a name="approle-resource-type"></a>appRole 资源类型
 
 命名空间：microsoft.graph
 
-表示应用程序角色， (请求并授予) 客户端应用程序，或可用于将应用程序分配给指定角色中的用户或组。 
+表示应用程序角色， (并授予) 客户端应用程序，或可用于将应用程序分配给指定角色中的用户或组的应用程序角色。 
 
-若要添加、更新或删除应用程序的应用程序角色，请 [更新](../api/application-update.md) 应用程序或服务的应用程序。 应用程序实体上的应用程序角色将在使用应用程序的所有租户中可用。 若要定义仅适用于租户 (例如，代表多租户应用程序) 实例中的自定义角色的应用角色，还可以更新应用的服务主体，以向 **appRoles** 集合添加或更新应用 [](../api/serviceprincipal-update.md)角色。
+若要添加、更新或删除应用程序的应用程序角色，请 [更新](../api/application-update.md) 应用程序或服务的应用程序。 应用程序实体上的应用程序角色将在使用应用程序的所有租户中可用。 若要定义仅适用于租户 (例如，在多租户应用程序) 实例中代表自定义角色的应用角色，还可以更新应用的服务主体，以向 **appRoles** 集合添加或更新 [](../api/serviceprincipal-update.md)应用角色。
 
 使用 [appRoleAssignments，](approleassignment.md)可以将应用角色分配给用户、组或其他应用程序的服务主体。
 
@@ -26,9 +26,9 @@ ms.locfileid: "54205946"
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|allowedMemberTypes|String collection|通过设置为) ，指定此应用角色是否可分配给用户和组 (，或者通过设置为) 将此应用程序角色设置为 或同时将两 (分配给应用程序的 `["User"]` `["Application"]` `["User", "Application"]` (。 支持向其他应用程序的服务主体分配的应用程序角色也称为应用程序 [权限](/graph/auth/auth-concepts#microsoft-graph-permissions)。 "Application"值仅受应用程序实体上定义的 **应用角色** 支持。|
-|说明|String|应用角色的说明。 在分配应用角色时显示，如果应用角色在同意体验期间用作应用程序权限，则显示此状态。|
-|displayName|String|应用和许可体验中显示的权限角色分配名称。|
+|allowedMemberTypes|String collection|指定是否可以通过将 设置为) 来将此应用程序角色分配给用户和组 (，或者将 设置为 (，或者通过设置为) 将此应用程序角色分配给 `["User"]` `["Application"]` (。 `["User", "Application"]` 支持向其他应用程序的服务主体分配的应用程序角色也称为应用程序 [权限](/graph/auth/auth-concepts#microsoft-graph-permissions)。 "Application"值仅受应用程序实体上定义的 **应用角色** 支持。|
+|说明|String|应用角色的说明。 在分配应用角色时显示此状态，如果应用角色在同意体验期间用作应用程序权限。|
+|displayName|String|应用和许可体验中显示角色分配名称。|
 |id|Guid|**appRoles 集合内的唯一角色** 标识符。 创建新的应用角色时，必须提供新的 Guid 标识符。 |
 |isEnabled|Boolean|在创建或更新应用角色时，必须设置为 **true** (这是默认角色) 。 若要删除角色，必须先将其设置为 **false**。  此时，在后续调用中，可能会删除此角色。|
 |origin|String| 指定应用程序角色是在 [application](application.md) 对象上还是 [servicePrincipal](serviceprincipal.md) 实体上定义。 _不得_ 包含在任何 POST 或 PATCH 请求中。 只读。 |

@@ -1,21 +1,21 @@
 ---
-title: 教程：使用 Microsoft api 识别并Graph风险
+title: 教程：使用 Microsoft Graph API 识别和修正风险
 description: 了解如何使用 Microsoft Graph API 识别和修正风险。
 author: davidmu1
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 60690454c9b3b7adfc7ac256cb3e3a5ff72b6d3336404b6beefe421bb2eea8e1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4c1f901199e1d5a1d68694e80522c5180810cf2d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54221000"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143494"
 ---
 # <a name="tutorial-identify-and-remediate-risks-using-microsoft-graph-apis"></a>教程：使用 Microsoft Graph API 识别和修正风险
 
 Azure AD Identity Protection 使组织能够深入了解基于标识的风险以及调查和自动修正风险的不同方法。 本教程中使用的 Identity Protection API 可以帮助您识别风险，并配置工作流以确认泄露或启用修正。 有关详细信息，请参阅 [什么是风险？](/azure/active-directory/identity-protection/concept-identity-protection-risks)
 
-本教程介绍如何生成有风险的登录，以及如何使用要求多重身份验证和 MFA 身份验证的条件访问策略修正用户 (状态) 。 可选部分展示了如何阻止用户也使用条件访问策略登录，并消除用户风险。
+本教程介绍如何生成有风险的登录，以及使用要求多重身份验证和 MFA 身份验证的条件访问策略修正用户 (状态) 。 可选部分展示了如何阻止用户也使用条件访问策略登录，并消除用户风险。
 
 >**注意：** 为了可读性，本教程中显示的响应对象可能会缩短。 
 
@@ -23,7 +23,7 @@ Azure AD Identity Protection 使组织能够深入了解基于标识的风险以
 
 若要成功完成本教程，请确保满足以下先决条件：
 
-- 必须具有许可证Azure AD Premium P1 P2 许可证才能使用风险检测 API。
+- 你必须拥有一个Azure AD Premium P1 P2 许可证才能使用风险检测 API。
 - 本教程使用 Tor 浏览器匿名登录 Azure 门户。 可以使用任何匿名浏览器来完成该任务。 若要下载 Tor 浏览器，请参阅 [下载 Tor 浏览器](https://www.torproject.org/download/)。
 - 本教程的前提是使用 Microsoft Graph Explorer，但是可以使用 Postman，也可以创建自己的客户端应用程序来调用 Microsoft Graph。 如果要在本教程中调用 Microsoft Graph API，需要使用具有全局管理员角色和适当权限的帐户。 完成以下步骤以在 Microsoft Graph Explorer 中设置权限：
     1. 启动 [Microsoft Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)。
@@ -35,7 +35,7 @@ Azure AD Identity Protection 使组织能够深入了解基于标识的风险以
     4. 滚动浏览这些权限的权限列表：
         - **IdentityRiskEvents (2) ，** 展开并选择 `IdentityRiskEvent.Read.All`
         - **IdentityRiskyUser (2) ，** 展开并选择 `IdentityRiskyUser.ReadWrite.All`
-        - **策略 (13) ，** 展开，然后选择 `Policy.Read.All``Policy.ReadWrite.ConditionalAccess`
+        - **策略 (13) ，** 展开，然后选择 `Policy.Read.All` 和 `Policy.ReadWrite.ConditionalAccess`
         - **用户 (8) ，** 展开并选择 `User.ReadWrite.All`
         
         ![搜索权限](./images/tutorial-riskdetection-api/permissions-consent.png)
@@ -149,18 +149,18 @@ GET https://graph.microsoft.com/v1.0/identityProtection/riskDetections?$filter=u
 
 ## <a name="step-3-create-a-conditional-access-policy"></a>步骤 3：创建条件访问策略
 
-可以在组织中利用条件访问策略，以允许用户在检测到风险时进行自我修正。 利用自修正功能，用户可以在完成策略提示后取消阻止自己安全地访问其资源。 在此步骤中，将创建一个条件访问策略，要求用户在出现中等或高风险检测时使用 MFA 登录。
+可以在组织中利用条件访问策略，以允许用户在检测到风险时进行自我修正。 利用自修正功能，用户可以在完成策略提示后取消阻止自己安全地访问其资源。 在此步骤中，您将创建一个条件访问策略，要求用户在出现中等或高风险检测时使用 MFA 登录。
 
 ### <a name="set-up-multi-factor-authentication"></a>设置多重身份验证
 
 为 MFA 设置帐户时，可以从多种方法中选择用于验证用户的方法。 选择最适合你的情况来完成本教程的方法。 
 
-1. 使用 **MyTestUser1** [帐户](https://aka.ms/MFASetup)登录 以保持帐户安全网站。
+1. 使用 **MyTestUser1** [帐户](https://aka.ms/MFASetup)登录 以确保帐户安全网站。
 2. 使用适用于你的情况的方法完成 MFA 设置过程，例如向手机发送短信。
 
 ### <a name="create-the-conditional-access-policy"></a>创建条件访问策略
 
-条件访问策略提供设置策略条件以确定登录风险级别的能力。 风险级别可以是 `low` `medium` `high` `none` 、、、。 在列出 **MyTestUser1** 的风险检测返回的响应中，可以看到风险级别为 `medium` 。 此示例演示如何要求被标识为风险用户的 **MyTestUser1** 进行 MFA。
+条件访问策略提供设置策略条件以确定登录风险级别的能力。 风险级别可以是 `low` `medium` `high` 、、、。 `none` 在从列出 **MyTestUser1** 的风险检测返回的响应中，可以看到风险级别为 `medium` 。 此示例演示如何要求被标识为风险用户的 **MyTestUser1** 进行 MFA。
 
 #### <a name="request"></a>请求 
 
@@ -244,7 +244,7 @@ Content-type: application/json
 } 
 ```
 
-在设置此条件访问策略后，现在需要 **MyTestUser1** 帐户在登录时使用 MFA，因为登录风险级别为中或   高。 
+在设置此条件访问策略后， **现在需要 MyTestUser1** 帐户在登录时使用 MFA，因为登录风险级别为中或   高。 
 
 ### <a name="sign-in-and-complete-multi-factor-authentication"></a>登录并完成多重身份验证 
 
@@ -491,4 +491,4 @@ No Content - 204
 - [conditionalAccessPolicy](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-1.0)
 - [riskDetection](/graph/api/resources/riskdetection?view=graph-rest-1.0)
 - [riskyUser](/graph/api/resources/riskyuser?view=graph-rest-1.0)
-- [user](/graph/api/resources/user?view=graph-rest-1.0)
+- [用户](/graph/api/resources/user?view=graph-rest-1.0)

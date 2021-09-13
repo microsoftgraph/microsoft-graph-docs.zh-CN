@@ -1,16 +1,16 @@
 ---
 title: teamworkBot 资源类型
-description: 生态系统中的自动Microsoft Teams程序。
+description: 生态系统中的Microsoft Teams程序。
 author: AkJo
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: ccfbb82cace0f9bc38eeb3a5e49a185b12abc99376497bb900e0f150bc39b5c6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0f2c558bc5453f3cf8a880f1935b3f891ba097f7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249102"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59055834"
 ---
 # <a name="teamworkbot-resource-type"></a>teamworkBot 资源类型
 

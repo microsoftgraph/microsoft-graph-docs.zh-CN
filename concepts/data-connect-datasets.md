@@ -2,14 +2,14 @@
 title: Microsoft Graph Data Connect 支持的数据集、区域和接收器
 description: 介绍可与 Microsoft Graph 数据连接结合使用的受支持数据集和目标存储类型。
 author: fercobo-msft
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: data-connect
-ms.openlocfilehash: ed9ca7093bc7acaa9dd5609caa70868c769e9ea2
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 8e0aeffc6529737dbd89f759e8a9261d9989cad7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58250874"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139175"
 ---
 # <a name="datasets-regions-and-sinks-supported-by-microsoft-graph-data-connect"></a>Microsoft Graph Data Connect 支持的数据集、区域和接收器
 

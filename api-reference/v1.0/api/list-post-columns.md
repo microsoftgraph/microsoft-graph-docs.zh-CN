@@ -3,15 +3,15 @@ author: swapnil1993
 ms.date: 08/30/2020
 title: 在列表中创建 columnDefinition
 description: 创建列表列。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 0ce2325afc67a21958ba3bb92f59ff41298ceec9
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 37cd5f715b6aba512a9a3e400e50766dbfcd3b4b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696545"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105025"
 ---
 # <a name="create-a-columndefinition-in-a-list"></a>在列表中创建 columnDefinition
 命名空间：microsoft.graph

@@ -2,15 +2,15 @@
 title: intuneBrand 资源类型
 description: intuneBrand 包含在自定义公司门户应用程序以及最终用户 Web 门户的外观时使用的数据。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a30454de5ab8ccbe577c10ceddbe887a0f10a9eb
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 75e6d8101247517e5b86f256d7cf3c8faf11ee01
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816448"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017224"
 ---
 # <a name="intunebrand-resource-type"></a>intuneBrand 资源类型
 
@@ -33,7 +33,7 @@ intuneBrand 包含在自定义公司门户应用程序以及最终用户网页�
 |showNameNextToLogo|布尔值|表示是否要在徽标图像旁显示管理员提供的显示名称的布尔值。|
 |landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|在应用登录公司门户中显示的自定义图像|
 |showDisplayNameNextToLogo|布尔值|表示是否要在徽标图像旁显示管理员提供的显示名称的布尔值。|
-|roleScopeTagIds|字符串集合|分配给默认品牌配置文件的范围标记列表|
+|roleScopeTagIds|String collection|分配给默认品牌配置文件的范围标记列表|
 |contactITName|String|负责 IT 支持的员工/组织名称。|
 |contactITPhoneNumber|String|负责 IT 支持的员工/组织的电话号码。|
 |contactITEmailAddress|String|负责 IT 支持的员工/组织的电子邮件地址。|
@@ -43,15 +43,15 @@ intuneBrand 包含在自定义公司门户应用程序以及最终用户网页�
 |privacyUrl|String|指向公司/组织隐私策略的 URL。|
 |customPrivacyMessage|String|用于说明组织在托管设备上看不到或无法执行哪些操作的自定义隐私消息。|
 |customCantSeePrivacyMessage|String|用于说明组织在托管设备上看不到或无法执行哪些操作的自定义隐私消息。|
-|customCanSeePrivacyMessage|字符串|用于说明组织可在托管设备上查看和执行哪些操作的自定义隐私消息。|
+|customCanSeePrivacyMessage|String|用于说明组织可在托管设备上查看和执行哪些操作的自定义隐私消息。|
 |isRemoveDeviceDisabled|Boolean|Boolean 值，表示 adminsistrator 是否已在公司拥有的设备上禁用"删除设备"操作。|
-|isFactoryResetDisabled|布尔值|Boolean 值，表示 adminsistrator 是否已在公司拥有的设备上禁用"恢复出厂设置"操作。|
+|isFactoryResetDisabled|Boolean|Boolean 值，表示 adminsistrator 是否已在公司拥有的设备上禁用"恢复出厂设置"操作。|
 |companyPortalBlockedActions|[companyPortalBlockedAction](../resources/intune-shared-companyportalblockedaction.md) 集合|根据平台和设备所有权类型，在公司门户上阻止的操作的集合。|
-|showAzureADEnterpriseApps|布尔值|Boolean 值，指示 AzureAD Enterprise应用是否将显示在 公司门户|
-|showOfficeWebApps|布尔值|Boolean 值，Office WebApps 是否将显示在 webApps 公司门户|
-|sendDeviceOwnershipChangePushNotification|布尔值|指示当用户的设备所有权类型从个人更改到公司时是否向用户发送推送通知的布尔值|
+|showAzureADEnterpriseApps|Boolean|指示 AzureAD 应用是否将在Enterprise中显示的布尔值公司门户|
+|showOfficeWebApps|Boolean|Boolean 值，Office WebApps 是否将显示在 webApps 公司门户|
+|sendDeviceOwnershipChangePushNotification|Boolean|指示当用户的设备所有权类型从个人更改到公司时是否向用户发送推送通知的布尔值|
 |enrollmentAvailability|[enrollmentAvailabilityOptions](../resources/intune-shared-enrollmentavailabilityoptions.md)|向最终用户显示的自定义设备注册流。 可取值为：`availableWithPrompts`、`availableWithoutPrompts`、`unavailable`。|
-|disableClientTelemetry|布尔值|适用于从所有客户端发送到 Intune 服务的遥测。 禁用后，将关闭客户端内的所有主动故障排除和发出警告，并且遥测设置对设备用户显示为非活动或隐藏。|
+|disableClientTelemetry|Boolean|适用于从所有客户端发送到 Intune 服务的遥测。 禁用后，将关闭客户端内的所有主动故障排除和发出警告，并且遥测设置对设备用户显示为非活动或隐藏。|
 
 ## <a name="relationships"></a>关系
 无

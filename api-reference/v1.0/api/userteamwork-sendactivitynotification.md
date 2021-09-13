@@ -2,15 +2,15 @@
 title: userTeamwork： sendActivityNotification
 description: 向用户发送活动源通知。
 author: eddie-lee-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: faa795b9a5cf2791407126bad9d4305eca0480a53011d5504ae16db2c090f6c1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4e44140207a514d4d73ca442dec33ccd54a141cc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57106748"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59113922"
 ---
 # <a name="userteamwork-sendactivitynotification"></a>userTeamwork： sendActivityNotification
 命名空间：microsoft.graph

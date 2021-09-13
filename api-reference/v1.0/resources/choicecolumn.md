@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/11/2017
 title: ChoiceColumn
-localization_priority: Normal
+ms.localizationpriority: medium
 description: columnDefinition 资源上的 choiceColumn 指示可从所选列表中选择列的值。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 9f8a5f333c0904732ef47bcac0c962f522d3ecd4c5e11a6884eaf396e354b49b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3660aadda00b8b9e50856cb9eeeea35727ef1ecf
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54121303"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109358"
 ---
 # <a name="choicecolumn-resource-type"></a>ChoiceColumn 资源类型
 

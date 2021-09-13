@@ -1,22 +1,22 @@
 ---
 title: application： setVerifiedPublisher
 description: 设置应用程序的已验证发布者。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jesakowi
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: e66731904e24d80a38ecf74a6a69a852917ce033
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 3b506dcbf3f33927cbfe83d30a9ba759f5b544d3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53580934"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016937"
 ---
 # <a name="application-setverifiedpublisher"></a>application： setVerifiedPublisher
 
 命名空间：microsoft.graph
 
-在应用程序[上设置 verifiedPublisher。](../resources/verifiedPublisher.md) [](../resources/application.md) 有关详细信息，包括设置验证发布者的先决条件，请参阅Publisher[验证](/azure/active-directory/develop/publisher-verification-overview)。
+在应用程序[上设置 verifiedPublisher。](../resources/verifiedPublisher.md) [](../resources/application.md) 有关详细信息，包括设置已验证发布者的先决条件，请参阅Publisher[验证](/azure/active-directory/develop/publisher-verification-overview)。
 
 ## <a name="permissions"></a>权限
 
@@ -47,7 +47,7 @@ POST /applications/{id}/setVerifiedPublisher
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-| verifiedPublisherId | 字符串 | Microsoft 合作伙伴网络 ID (MPNID) 从发布者的合作伙伴中心帐户在应用程序上设置的已验证发布者的 MPNID。 |
+| verifiedPublisherId | string | Microsoft 合作伙伴网络 ID (MPNID) 从发布者的合作伙伴中心帐户在应用程序上设置的已验证发布者的 MPNID。 |
 
 ## <a name="response"></a>响应
 

@@ -2,15 +2,15 @@
 title: getComplianceSettingNonComplianceReport 操作
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fa31e2a53b8facc720f7aad9f4fa2384f7ef9549fed37b3454447d8e067c06ef
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 48c628e4f4f4721267c1dead7523d2c672783076
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54252296"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067967"
 ---
 # <a name="getcompliancesettingnoncompliancereport-action"></a>getComplianceSettingNonComplianceReport 操作
 

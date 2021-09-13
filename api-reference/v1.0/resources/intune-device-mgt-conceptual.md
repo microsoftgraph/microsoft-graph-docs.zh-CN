@@ -2,15 +2,15 @@
 title: Microsoft Intune 中的设备管理
 description: 设备管理资源Microsoft Intune
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: 94d8444f9f131adc74f6d521ea50dbe59fd57817
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 23f3f789c7759711d632cd8861ffef6bbbbbf4de
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58264323"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118479"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Microsoft Intune 中的设备管理
 

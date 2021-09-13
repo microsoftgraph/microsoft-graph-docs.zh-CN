@@ -1,16 +1,16 @@
 ---
 title: educationRubric 资源类型
 description: 可附加到工作分配的评分标准。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 946641cdaa3c7276d3119baa8e2f1921522a7ba11c2f16a1d9b9d31aeb654e06
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bf5565aa6862b66f59f5b75a4c9b8ae177049d34
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54124498"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59126833"
 ---
 # <a name="educationrubric-resource-type"></a>educationRubric 资源类型
 
@@ -34,7 +34,7 @@ ms.locfileid: "54124498"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |createdBy|[identitySet](identityset.md)|创建此资源的用户。|
-|createdDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
+|createdDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`2014-01-01T00:00:00Z`|
 |说明|[itemBody](itembody.md)|此分卡的说明。|
 |displayName|String|此分号的名称。|
 |一个|[educationAssignmentGradeType](educationassignmentgradetype.md)|此评分标准评分类型 -- 无评分标准为 [null，educationAssignmentPointsGradeType](educationassignmentpointsgradetype.md) 为评分标准。|

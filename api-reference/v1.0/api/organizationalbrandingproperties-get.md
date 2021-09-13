@@ -1,16 +1,16 @@
 ---
 title: 获取 organizationalBrandingProperties
 description: 检索 organizationalBrandingProperties 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: AlexanderMars
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ed1219096e5af0ab38eef767ed839647a09b7500
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: e2aa31897c0e989d472c538f34d7448c9dd45906
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786676"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085411"
 ---
 # <a name="get-organizationalbrandingproperties"></a>获取 organizationalBrandingProperties
 
@@ -38,7 +38,7 @@ GET /organization/{tenant id}/branding/{property name}
 
 | 名称      |说明|
 |:----------|:----------|
-| Authorization | Bearer {token}。必需。 |
+| Authorization | 持有者{令牌}。必需。 |
 
 >[!NOTE]
 >如果在资源管理器中尝试Graph，还必须包含具有有效 ISO-639 区域设置的 **Accept-Language** 请求标头。
@@ -56,7 +56,7 @@ GET /organization/{tenant id}/branding/{property name}
 ### <a name="example-1-get-the-default-branding"></a>示例 1：获取默认品牌
 
 >[!NOTE]
->如果尝试 Graph Explorer 中的示例，还必须包含具有有效 ISO-639 区域设置的 **Accept-Language** 请求标头，以避免收到错误"无效区域设置 id 值 *en-US，en;q=0.9"。它必须是有效的 ISO-639 区域设置。*
+>如果在 Graph 资源管理器中尝试该示例，还必须包含具有有效 ISO-639 区域设置的 **Accept-Language** 请求标头，以避免收到错误"无效区域设置 id 值 *en-US，en;q=0.9"。它必须是有效的 ISO-639 区域设置。*
 
 #### <a name="request"></a>请求
 
@@ -124,7 +124,7 @@ Content-Type: application/json
 }
 ```
 
-对 /branding 的请求始终返回 **mediaContentType、mediaReadLink** 和 **mediaEditLink** 属性。  如果已应用区域设置，**则 mediaEditLink** 为区域设置 (（始终为非 null) ）的 **mediaEditLink;** 如果区域设置的 **mediaReadLink** 为非 null，则 **mediaReadLink** 和 **mediaContentType** 为区域设置中的 **mediaReadLink** 和 **mediaContentType;** 否则，默认 **mediaReadLink** 和 **mediaContentType**。
+对 /branding 的请求始终返回 **mediaContentType、mediaReadLink** 和 **mediaEditLink** 属性。  如果已应用区域设置，**则 mediaEditLink** 是区域设置 (的 **mediaEditLink** 始终为非 null) ;如果区域设置中的 **mediaReadLink** 为非 null，则 **mediaReadLink** 和 **mediaContentType** 为区域设置中的 **mediaReadLink** 和 **mediaContentType;** 否则，默认 **mediaReadLink** 和 **mediaContentType**。
 
 ### <a name="example-2-get-organizational-branding-but-no-branding-configured"></a>示例 2：获取组织品牌，但没有配置品牌
 

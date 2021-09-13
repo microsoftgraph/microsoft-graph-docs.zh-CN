@@ -2,15 +2,15 @@
 title: 删除 managementConditionStatement
 description: 删除 managementConditionStatement。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b0f8fca7e35e969fd9e1eb43e0c65f2942a8ded1
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: dfb44605d143bc35d7ec2a6a2b375e149efe6f79
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820251"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59018157"
 ---
 # <a name="delete-managementconditionstatement"></a>删除 managementConditionStatement
 
@@ -44,7 +44,7 @@ DELETE /deviceManagement/managementConditions/{managementConditionId}/management
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

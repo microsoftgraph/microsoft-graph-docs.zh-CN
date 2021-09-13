@@ -2,15 +2,15 @@
 title: renewUpload 操作
 description: 续订用于应用程序文件上传的 SAS URI。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0ef936cf56db56dcfb4936796c742bc9afd22398d831d9b0319305211b4abf22
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f8d84c98c62d214e2b1cee91b53fcd0497bd4b5f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54197469"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59079867"
 ---
 # <a name="renewupload-action"></a>renewUpload 操作
 

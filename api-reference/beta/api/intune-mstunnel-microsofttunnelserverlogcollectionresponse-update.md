@@ -2,15 +2,15 @@
 title: 更新 microsoftTunnelServerLogCollectionResponse
 description: 更新 microsoftTunnelServerLogCollectionResponse 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fda6bf3bbc6cb19f3ddf2264284db840941f636a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b2abbe7f801848a7ce8f6108b048a32b9bf0f345
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820567"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59018024"
 ---
 # <a name="update-microsofttunnelserverlogcollectionresponse"></a>更新 microsoftTunnelServerLogCollectionResponse
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/microsoftTunnelServerLogCollectionResponses/{microsoftTu
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,7 +54,7 @@ PATCH /deviceManagement/microsoftTunnelServerLogCollectionResponses/{microsoftTu
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的唯一 ID|
-|状态|[microsoftTunnelLogCollectionStatus](../resources/intune-mstunnel-microsofttunnellogcollectionstatus.md)|日志集合的状态。 可取值为：`pending`、`completed`、`failed`。|
+|status|[microsoftTunnelLogCollectionStatus](../resources/intune-mstunnel-microsofttunnellogcollectionstatus.md)|日志集合的状态。 可取值为：`pending`、`completed`、`failed`。|
 |startDateTime|DateTimeOffset|收集的日志的开始时间 |
 |endDateTime|DateTimeOffset|收集的日志的结束时间|
 |sizeInBytes|Int64|日志的大小（以字节为单位）|

@@ -2,15 +2,15 @@
 title: userFlowLanguageConfiguration 资源类型
 description: 允许用户流支持多种语言。
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: b40df72429bdc1b23bbb9426ae9b9f78154257491ba3c715d57c0804b226df98
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9af22f309ca7c93043d90ef8c0583686d7cf24f2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54221150"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136318"
 ---
 # <a name="userflowlanguageconfiguration-resource-type"></a>userFlowLanguageConfiguration 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "54221150"
 
 允许用户流来支持多种语言的使用。
 
-For [Azure Active Directory user flows](/azure/active-directory/external-identities/user-flow-customize-language)， you can only leverage the built-in languages provided by Microsoft. 用户流Azure Active Directory定义当用户通过用户流配置的旅程时向用户显示的语言和字符串。
+For [Azure Active Directory user flows](/azure/active-directory/external-identities/user-flow-customize-language)， you can only leverage the built-in languages provided by Microsoft. 用户流Azure Active Directory定义在用户通过用户流配置的旅程时向用户显示的语言和字符串。
 
 ## <a name="methods"></a>方法
 
@@ -41,7 +41,7 @@ For [Azure Active Directory user flows](/azure/active-directory/external-identit
 |关系|类型|说明|
 |:---|:---|:---|
 |defaultPages|[userFlowLanguagePage](../resources/userflowlanguagepage.md) 集合|包含要以指定语言的用户流显示的默认内容的页面集合。 此集合不允许任何类型的修改。|
-|overridesPages|[userFlowLanguagePage](../resources/userflowlanguagepage.md) 集合|包含覆盖消息的页面集合，这些消息显示在指定语言的用户流中。 此集合仅允许修改页面的内容，不允许在页面创建 (删除页面时进行任何其他) 。|
+|overridesPages|[userFlowLanguagePage](../resources/userflowlanguagepage.md) 集合|包含替代消息的页面集合，这些消息显示在指定语言的用户流中。 此集合仅允许修改页面内容，不允许对页面 (或删除页面进行任何其他) 。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

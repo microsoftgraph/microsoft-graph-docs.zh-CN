@@ -1,16 +1,16 @@
 ---
 title: 创建 swapshiftRequest
 description: 创建 swapShiftsChangeRequest 的实例。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6133678b10930db013fc3e2a62be43b7412f98d33828cfedcc228f0ef33aa698
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e3780c41da48220889b09170a07bd5ed59f50ef5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54238249"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59025991"
 ---
 # <a name="create-swapshiftschangerequest"></a>创建 swapShiftsChangeRequest
 
@@ -54,7 +54,7 @@ POST /teams/{teamId}/schedule/swapShiftsChangeRequests
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和创建的 `200 OK` [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和创建的 [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) 对象。
 
 ## <a name="examples"></a>示例
 

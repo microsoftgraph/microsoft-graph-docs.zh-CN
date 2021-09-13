@@ -2,15 +2,15 @@
 title: 获取 roleAssignment
 description: 读取 roleAssignment 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7ec903899ee1b2b0dcec74500346676334e6c9b020de8bc1fd47e57f34dc9cdf
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d4adf9fe2a33a538c45a794d36ca82f74bbc7e42
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54130644"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016188"
 ---
 # <a name="get-roleassignment"></a>获取 roleAssignment
 

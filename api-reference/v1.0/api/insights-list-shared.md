@@ -2,15 +2,15 @@
 title: 共享的列表
 description: 计算得出的见解，可返回与用户共享的文件列表。
 author: simonhult
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 05e0caa6d38276d2d40e23c854b65ee2b0687fa1a6ed2df1147e5f74a95ee459
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 679c384df3d3ce414e039ecc9bc42256153d4825
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54135972"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105291"
 ---
 # <a name="list-shared"></a>共享的列表
 

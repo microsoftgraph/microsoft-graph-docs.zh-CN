@@ -2,15 +2,15 @@
 title: 列出 Todo 任务
 description: 从指定的 todoTaskList 的任务导航属性获取 todoTask 资源。
 author: avijityadav
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f95864aa3988f7e5598376e202c9b8d697184458
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: c2b1e6157fdfa828824aa0423192402d8c8ca1cc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50963366"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109736"
 ---
 # <a name="list-tasks"></a>列出任务
 命名空间：microsoft.graph

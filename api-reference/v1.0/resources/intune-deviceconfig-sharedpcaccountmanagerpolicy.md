@@ -2,15 +2,15 @@
 title: sharedPCAccountManagerPolicy 资源类型
 description: 共享电脑帐户管理器策略 仅在启用了帐户管理器时适用。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8886c3784ea2e69f4afbf6618a2b9c456293febb601b18894ded5439d11bf4d5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8e6523c9c2576610f73198ac3830bf9573ad71dd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54184653"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067169"
 ---
 # <a name="sharedpcaccountmanagerpolicy-resource-type"></a>sharedPCAccountManagerPolicy 资源类型
 

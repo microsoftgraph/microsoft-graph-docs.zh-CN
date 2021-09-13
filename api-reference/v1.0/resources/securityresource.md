@@ -1,16 +1,16 @@
 ---
 title: securityResource 资源类型
 description: 表示与警报相关的资源。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 49eb0b1fae46653e9cf538339b3b4b412a8d8f80674702b0151efec5c03a60a5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7baee1075570c88a117c1fabbf8ab9d17302f071
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54152234"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134484"
 ---
 # <a name="securityresource-resource-type"></a>securityResource 资源类型
 

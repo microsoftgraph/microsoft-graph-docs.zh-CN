@@ -1,24 +1,24 @@
 ---
-title: Microsoft Graph Toolkit React组件
+title: Microsoft Graph Toolkit React 组件
 description: Microsoft Graph Toolkit React组件 () 允许React开发人员在 React 应用程序中使用 `mgt-react` Microsoft Graph Toolkit。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: nmetulev
-ms.openlocfilehash: 89225af263c4c8f1cb29b7f6bb02dff6b6badbe379af510f90bed821935be047
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 95c45379a46b4fe068c183e924c1268831fc15b6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54225676"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59103828"
 ---
-# <a name="microsoft-graph-toolkit-react-components"></a>Microsoft Graph Toolkit React组件
+# <a name="microsoft-graph-toolkit-react-components"></a>Microsoft Graph Toolkit React 组件
 
-Microsoft Graph Toolkit React组件 () 允许React开发人员在 React 应用程序中使用 `mgt-react` Microsoft Graph Toolkit。 该库包装所有 Microsoft Graph Toolkit组件，并导出为React组件。
+Microsoft Graph Toolkit React组件 () 允许React开发人员在 React 应用程序中使用 `mgt-react` Microsoft Graph Toolkit。 库包装所有 Microsoft Graph Toolkit组件，并导出为React组件。
 
 ## <a name="what-components-can-i-use"></a>可以使用哪些组件？
 
-该库从 Microsoft Graph Toolkit Web 组件自动生成，并且所有组件都作为React组件。
+该库从 Microsoft Graph Toolkit Web 组件自动生成，并且所有组件都作为React可用。
 
-这些组件的名称React PascalCase 中，不包含 `Mgt` 前缀。 例如， `mgt-person` 组件可用为 `Person` ，组件 `mgt-people-picker` 为 `PeoplePicker` 。
+这些React的名称在 PascalCase 中，不包含 `Mgt` 前缀。 例如， `mgt-person` 组件可用为 `Person` ，组件 `mgt-people-picker` 为 `PeoplePicker` 。
 
 ## <a name="installation"></a>安装 
 
@@ -28,13 +28,13 @@ Microsoft Graph Toolkit React组件 () 允许React开发人员在 React 应用�
 npm install @microsoft/mgt-react
 ```
 
-或者
+或
 
 ```bash
 yarn add @microsoft/mgt-react
 ```
 
-## <a name="usage"></a>使用情况
+## <a name="usage"></a>用法
 
 所有组件都可通过 npm 包使用 PascalCase 进行命名。 若要使用组件，请首先将其导入到顶部。
 
@@ -84,7 +84,7 @@ const App = (props) => {
 
 ## <a name="templates"></a>模板
 
-大多数 Microsoft Graph Toolkit 组件[都支持](../customize-components/templates.md)模板，并允许 `mgt-react` 你React模板。
+大多数 Microsoft Graph Toolkit 组件[都](../customize-components/templates.md)支持模板，并允许 `mgt-react` 你React模板。
 
 例如，若要创建模板以用于在组件中呈现事件，请首先定义用于呈现 `mgt-agenda` 事件的组件：
 

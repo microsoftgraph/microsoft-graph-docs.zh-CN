@@ -1,16 +1,16 @@
 ---
 title: 创建 b2xIdentityUserFlow
 description: 创建新的 b2xIdentityUserFlow 对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 3711f7e607085096d28125cad94b86ea796b5044
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 09bb79e8d21aead6fd0ff126cc7c92ad8eaf9ced
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51920280"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016636"
 ---
 # <a name="create-b2xidentityuserflow"></a>创建 b2xIdentityUserFlow
 
@@ -31,7 +31,7 @@ ms.locfileid: "51920280"
 工作或学校帐户需要属于以下角色之一：
 
 * 全局管理员
-* 外部标识用户流管理员
+* 外部标识用户Flow管理员
 
 ## <a name="http-request"></a>HTTP 请求
 

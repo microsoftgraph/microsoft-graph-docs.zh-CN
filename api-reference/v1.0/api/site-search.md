@@ -3,21 +3,23 @@ author: JeremyKelley
 ms.date: 09/10/2017
 title: 搜索网站
 description: 在 SharePoint 租户中搜索与所提供的关键字匹配的 网站。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 52c3fe2489b994c826506e8e4425ed508873ecbd
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 78132ed16539ebf1c0b2085e019f40ad6c19b977
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238482"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118881"
 ---
 # <a name="search-for-sites"></a>搜索网站
 
 命名空间：microsoft.graph
 
-在 SharePoint 租户中搜索 [与][] 提供的关键字匹配的网站。
+在租户中SharePoint[搜索与提供的][]关键字匹配的网站。
+
+唯一适用于排序的属性是 **createdDateTime**。 搜索筛选器是一种自由文本搜索，在检索搜索结果时使用多个属性。
 
 [网站]: ../resources/site.md
 
@@ -31,36 +33,42 @@ ms.locfileid: "50238482"
 |委派（个人 Microsoft 帐户） | 不支持。
 |应用程序                            | Sites.Read.All、Sites.ReadWrite.All
 
+>**注意：** 此方法不支持 Sites.Selected 应用程序权限。
+
 ## <a name="http-request"></a>HTTP 请求
 
+<!-- { "blockType": "ignored" } -->
 
-# <a name="http"></a>[HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "search-sites", "scopes": "sites.readwrite.all", "tags": "service.sharepoint" } -->
-
-```msgraph-interactive
+``` http
 GET /sites?search={query}
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/search-sites-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/search-sites-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+## <a name="request-headers"></a>请求标头
+|名称|说明|
+|:---|:---|
+|Authorization|Bearer {token}。必需。|
 
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/search-sites-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/search-sites-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
+## <a name="request-body"></a>请求正文
+请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [site](../resources/site.md) 对象集合。
+
+## <a name="examples"></a>示例
+
+### <a name="request"></a>请求
+<!-- {
+  "blockType": "request",
+  "name": "list_permission"
+}
+-->
+``` http
+GET https://graph.microsoft.com/v1.0/sites?search={query}
+```
+
+### <a name="response"></a>响应
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- { "blockType": "response", "@type": "Collection(microsoft.graph.site)", "truncated": true } -->
 
 ```http
@@ -88,7 +96,6 @@ Content-type: application/json
   ]
 }
 ```
->**注意：** 唯一用于排序的属性是 **createdDateTime**。 搜索筛选器是一种自由文本搜索，在检索搜索结果时使用多个属性。
 
 <!-- {
   "type": "#page.annotation",
@@ -99,4 +106,3 @@ Content-type: application/json
   "suppressions": [
   ]
 } -->
-

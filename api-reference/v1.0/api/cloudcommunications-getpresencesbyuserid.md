@@ -2,15 +2,15 @@
 title: cloudCommunications：getPresencesByUserId
 description: 获取多个用户状态信息。
 author: mkhribech
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 33a57e99e97deae7a919a19f9cd49fca5775f964
-ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
+ms.openlocfilehash: 09cb97f5b9723ae2f44fb80b77f5d567156fc4bb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52896646"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59080193"
 ---
 # <a name="cloudcommunications-getpresencesbyuserid"></a>cloudCommunications：getPresencesByUserId
 
@@ -29,7 +29,7 @@ ms.locfileid: "52896646"
 
 > **注意：**
 > * 每个 API 请求最多支持 650 个用户 ID。
-> * 此 API 的最大请求速率是 30 秒内每个租户每个应用程序 1500 个 API 请求。
+> * 此 API 的最大请求速率为 30 秒内每个租户每个应用程序 1500 个 API 请求。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

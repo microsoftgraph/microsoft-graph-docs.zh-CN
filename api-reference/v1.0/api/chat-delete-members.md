@@ -2,15 +2,15 @@
 title: 从聊天删除成员
 description: 从聊天删除 conversationMember。
 author: AkJo
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: af9c123db8e5bbb4102399f3a849977ae255d1ec
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 084085b48ca5619e0ff8ac6b524bd65d4765185d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255900"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100356"
 ---
 # <a name="remove-member-from-chat"></a>从聊天删除成员
 命名空间：microsoft.graph

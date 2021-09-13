@@ -1,16 +1,16 @@
 ---
 title: educationAssignmentPointsGrade 资源类型
 description: 当作业设置为分数类型时，每个提交都将具有与此对象关联的 **submission.grade** 属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 131aad8f86e639c4002fed73a7221bcdc1d828b6e40d7b3e534aff3ef33ca5db
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 91dbdc6a6a94a296dffafe32d6d6021dd23d3371
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54152745"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109148"
 ---
 # <a name="educationassignmentpointsgrade-resource-type"></a>educationAssignmentPointsGrade 资源类型
 

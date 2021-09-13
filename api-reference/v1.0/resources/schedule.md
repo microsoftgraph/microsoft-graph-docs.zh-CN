@@ -2,15 +2,15 @@
 title: 计划资源类型
 description: 团队中的 schedulingGroups、shift、timeOffReasons 和 timesOff 集合。
 author: akumar39
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType_
-ms.openlocfilehash: b7ad28acfc03726d9645afce686b327d6d5414b9755f6f01791e21b544a5d8e4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 446a82c5cf0298c074710cbce6b88fb376b04507
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189343"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035981"
 ---
 # <a name="schedule-resource-type"></a>计划资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "54189343"
 |:---------------|:--------|:----------|
 |[创建或替换日程安排](../api/team-put-schedule.md) | [日程安排](schedule.md) | 创建或替换计划。|
 |[获取日程安排](../api/schedule-get.md) | [日程安排](schedule.md) | 获取计划。|
-|[共享](../api/schedule-share.md) | 无 | 与计划成员共享计划时间范围。|
+|[共享](../api/schedule-share.md) | None | 与计划成员共享计划时间范围。|
 
 ## <a name="properties"></a>属性
 |名称                   |类型           |说明                                                                                                                                      |
@@ -35,10 +35,10 @@ ms.locfileid: "54189343"
 | provisionStatus       |operationStatus    | 计划预配的状态。 可能的值为 `notStarted` `running` `completed` 、、、。 `failed` |
 | provisionStatusCode   |string  | 有关计划设置失败原因的其他信息。 |
 | timeClockEnabled                  |Boolean  | 指示是否对计划启用时间时钟。             |
-| openShiftsEnabled                 |Boolean  | 指示是否针对计划启用打开的班次。             | 
-| swapShiftsRequestsEnabled                 |Boolean| 指示是否针对计划启用交换班次请求。             |
-| offerShiftRequestsEnabled                 |Boolean  | 指示是否针对计划启用产品/服务班次请求。             | 
-| timeOffRequestsEnabled                    |Boolean | 指示是否对计划启用请假请求。             | 
+| openShiftsEnabled                 |布尔值  | 指示是否针对计划启用打开的班次。             | 
+| swapShiftsRequestsEnabled                 |布尔值| 指示是否针对计划启用交换班次请求。             |
+| offerShiftRequestsEnabled                 |布尔值  | 指示是否针对计划启用产品/服务班次请求。             | 
+| timeOffRequestsEnabled                    |布尔值 | 指示是否对计划启用请假请求。             | 
 
 
 

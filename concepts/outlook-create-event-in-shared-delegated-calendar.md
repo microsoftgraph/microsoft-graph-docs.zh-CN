@@ -2,14 +2,14 @@
 title: 在共享或委托日历中创建 Outlook 事件
 description: 在 Outlook 中，客户可以与其他用户共享日历，并允许其他用户查看或修改此日历中的事件。 客户还可以授权代理代表自己执行操作、接收或答复会议请求，或在日历中创建或更改项。
 author: juforan
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: e970017d26ef7ad9d45086e82816c5337eed6c0bcc86e5e7efac6b5bee29c3f9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4b9e57cdd251a72a7a6f51b3ca14eb17a0da9367
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54129735"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59135982"
 ---
 # <a name="create-outlook-events-in-a-shared-or-delegated-calendar"></a>在共享或委托日历中创建 Outlook 事件
 

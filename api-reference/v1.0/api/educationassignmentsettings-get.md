@@ -2,15 +2,15 @@
 title: 获取 educationAssignmentSettings
 description: 读取 educationAssignmentSettings 对象的属性和关系。
 author: sharad-sharma-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 265bb848d9ad7647f39e0b293934479bcaeb3455
-ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
+ms.openlocfilehash: 8edbd2ff5dfd8aa9b50f1d350793eb3df4dcf010
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58367273"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59130879"
 ---
 # <a name="get-educationassignmentsettings"></a>获取 educationAssignmentSettings
 命名空间：microsoft.graph
@@ -49,7 +49,7 @@ GET /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignmentSettings
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [educationAssignmentSettings](../resources/educationassignmentsettings.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [educationAssignmentSettings](../resources/educationassignmentsettings.md) 对象。
 
 ## <a name="examples"></a>示例
 

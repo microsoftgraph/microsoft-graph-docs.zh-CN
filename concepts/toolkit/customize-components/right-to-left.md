@@ -1,14 +1,14 @@
 ---
 title: '显示 Microsoft Graph Toolkit组件从右到左 (rtl) '
-description: 介绍 Microsoft (组件) 从右向左Graph Toolkit rtl。
-localization_priority: Normal
+description: 介绍 Microsoft (组件) 从右到左Graph Toolkit rtl Graph Toolkit支持。
+ms.localizationpriority: medium
 author: vogtn
-ms.openlocfilehash: fce2d055ae5e859fe65d06edffb99039b8e258bec601f33b3ada8f5b2c671f1e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a573016903f68883dc733e596de2519640a6acac
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54129546"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129570"
 ---
 # <a name="display-microsoft-graph-toolkit-components-right-to-left-rtl"></a>显示 Microsoft Graph Toolkit组件从右到左 (rtl) 
 
@@ -20,7 +20,7 @@ Microsoft Graph Toolkit 组件支持从右向左语言脚本的双向标记。
 <body dir="rtl"></body>
 ```
 
-或者
+或
 
 ```html
 <html dir="rtl"></html>

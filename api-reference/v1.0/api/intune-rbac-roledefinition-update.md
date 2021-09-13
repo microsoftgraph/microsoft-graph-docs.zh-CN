@@ -2,15 +2,15 @@
 title: 更新 roleDefinition
 description: 更新 roleDefinition 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 26282bd7e3611953294ceea07e024bdb3a0344087b71a5dcb27e3746a5791dce
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 503bb0b8601a078082530158bea52a73d466a7fe
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54223835"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59050241"
 ---
 # <a name="update-roledefinition"></a>更新 roleDefinition
 

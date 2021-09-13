@@ -2,15 +2,15 @@
 title: 使用 Microsoft Graph API 将审阅者分配给你的访问评审
 description: 了解如何使用 Microsoft 网站中的访问评审 API Graph分配访问审阅者。
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 9e5e1f67b7b76e0a9e9ae48b2fc286ad3eca603b
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 53961c4dbadfa2732d45a277233673aac1ddb41e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266714"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139322"
 ---
 # <a name="assign-reviewers-to-your-access-review-using-the-microsoft-graph-api"></a>使用 Microsoft Graph API 将审阅者分配给你的访问评审
 

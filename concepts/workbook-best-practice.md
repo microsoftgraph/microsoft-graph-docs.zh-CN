@@ -1,25 +1,25 @@
 ---
 title: Microsoft Excel API 的最佳实践Graph
-description: 列出 Microsoft Excel API 的最佳实践Graph
+description: 列出 Microsoft Excel API 的最佳实践和Graph
 author: grangeryy
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
-ms.openlocfilehash: 2427d56fa8a95581a737fb04a3199219c6d7ba647583aa4dabd6cb898ed91984
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 17833cacc58ddc431e1488826391e5eb36ee06b8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54225592"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59142339"
 ---
-# <a name="best-practices-for-working-with-the-excel-api-in-microsoft-graph"></a>在 Microsoft Graph 中处理 Excel API 的最佳实践
+# <a name="best-practices-for-working-with-the-excel-api-in-microsoft-graph"></a>在 Microsoft Excel 中处理 Graph API 的最佳实践
 
-本文提供在 Microsoft Graph 中处理 Excel API 的建议。
+本文提供有关在 Microsoft Excel 中处理 Graph。
 
 ## <a name="manage-sessions-in-the-most-efficient-way"></a>以最有效的方式管理会话
 
 如果你在一定时间内进行多个呼叫，我们建议你创建一个会话，并传递每个请求的会话 ID。 若要表示 API 中的会话，请使用 `workbook-session-id: {session-id}` 标头。 通过执行此操作，你可以最Excel使用应用程序 API。
 
-以下示例演示如何向表中添加新数字，然后使用这种方法在工作簿中查找一条记录。
+以下示例演示如何将新数字添加到表中，然后使用这种方法在工作簿中查找一条记录。
 
 ### <a name="step-1-create-a-session"></a>步骤 1：创建会话
 
@@ -204,7 +204,7 @@ Content-type: application/json
 ### <a name="poll-status-of-the-long-running-create-session"></a>长时间运行的创建会话的轮询状态
 
 
-使用长时间运行的操作模式，可以通过以下请求获取指定位置的创建状态。 建议的轮询状态间隔约为 30 秒。 最大间隔不应超过 4 分钟。
+使用长时间运行的操作模式，可以通过以下请求获取指定位置的创建状态。 建议的轮询状态的间隔约为 30 秒。 最大间隔不应超过 4 分钟。
 
 #### <a name="request"></a>请求
 

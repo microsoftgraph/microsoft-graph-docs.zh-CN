@@ -2,22 +2,22 @@
 title: 删除 microsoftAuthenticatorAuthenticationMethod
 description: 删除 microsoftAuthenticatorAuthenticationMethod 对象。
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 7b77c27db8f1fd26503e9f45da179b42425af504
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 9b6f1de7de35360c1cc624ac07b12b7b21cd370d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469204"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072972"
 ---
 # <a name="delete-microsoftauthenticatorauthenticationmethod"></a>删除 microsoftAuthenticatorAuthenticationMethod
 命名空间：microsoft.graph
 
 删除 [microsoftAuthenticatorAuthenticationMethod](../resources/microsoftauthenticatorauthenticationmethod.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

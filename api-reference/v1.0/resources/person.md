@@ -2,15 +2,15 @@
 title: person 资源类型
 description: 邮件、联系人和社交网络中关于某个人员的信息聚合。人员可以是当地联系人、社交网络或你所在组织目录中的联系人以及来自最近通信（例如电子邮件和 Skype）的人员。
 author: simonhult
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: df91bd7226426110e1c6f5ca6e1a2775676401cd3bb89b4343b1c689e423c945
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 33e177875c7e7724659df79d191c2fe07bc1a2a0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196927"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117800"
 ---
 # <a name="person-resource-type"></a>person 资源类型
 

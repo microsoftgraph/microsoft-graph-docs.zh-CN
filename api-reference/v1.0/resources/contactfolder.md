@@ -2,15 +2,15 @@
 title: contactFolder 资源类型
 description: 包含联系人的文件夹。
 author: kevinbellinger
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 2501a97d21026ffe9cba907729822c2c72b0912b6ebfc20cb6591637089a2960
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0efa0da17b0c7c72f04443c119868e670f5bce0c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54184919"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049639"
 ---
 # <a name="contactfolder-resource-type"></a>contactFolder 资源类型
 

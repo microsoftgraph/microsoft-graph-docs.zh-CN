@@ -1,22 +1,22 @@
 ---
 title: 创建 mailSearchFolder
 description: 使用此 API 在指定用户的邮箱中创建新的 mailSearchFolder。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4201ffeaa0bc065a68024c04885d0b32e0a9c421
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: bc26b117139fc35ccc025f400d5bcc4de0e99ce4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52039515"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59026243"
 ---
 # <a name="create-mailsearchfolder"></a>创建 mailSearchFolder
 
 命名空间：microsoft.graph
 
-在指定的[用户的邮箱中创建新的 mailSearchFolder。](../resources/mailsearchfolder.md)
+在指定[用户的邮箱中创建新的 mailSearchFolder。](../resources/mailsearchfolder.md)
 
 ## <a name="permissions"></a>权限
 
@@ -54,8 +54,8 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 |:----------|:-----|:------------|
 | @odata.type | String | 要创建的文件夹的类型。 设置为"microsoft.graph.mailSearchFolder"。 |
 | displayName | String | 新文件夹的显示名称。|
-| includeNestedFolders | 布尔值 | 指示如何在搜索中遍历邮箱文件夹层次结构。 `true` 意味着应该执行深层搜索，以在 **sourceFolderIds** 中显式指定的每个文件夹的层次结构中包括子文件夹。 `false` 表示仅对 **sourceFolderIds** 中显式指定的每个文件夹进行浅表搜索。 |
-| sourceFolderIds | 字符串集合 | 应缩小的邮箱文件夹。 |
+| includeNestedFolders | Boolean | 指示如何在搜索中遍历邮箱文件夹层次结构。 `true` 意味着应该执行深层搜索，以在 **sourceFolderIds** 中显式指定的每个文件夹的层次结构中包括子文件夹。 `false` 表示仅对 **sourceFolderIds** 中显式指定的每个文件夹进行浅表搜索。 |
+| sourceFolderIds | String collection | 应缩小的邮箱文件夹。 |
 | filterQuery | String | 用于筛选邮件的 OData 查询。 |
 
 ## <a name="response"></a>响应
@@ -66,7 +66,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 
 #### <a name="request"></a>请求
 
-下面是请求的一个示例 - 它创建主题中包含字符串"weekly digest"的邮件的搜索文件夹。 搜索文件夹位于应用指定筛选器查询的同一文件夹下。
+下面是请求的一个示例 - 它将创建主题中包含字符串"weekly digest"的邮件的搜索文件夹。 搜索文件夹位于应用指定筛选查询的同一文件夹下。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

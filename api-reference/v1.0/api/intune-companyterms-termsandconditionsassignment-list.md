@@ -2,15 +2,15 @@
 title: 列出 termsAndConditionsAssignments
 description: 列出 termsAndConditionsAssignment 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7252923e187eb3278c14650aa8ce4e86f2466e8ddc8d02871213b6612edd8a67
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e190e7e057812761a122a519b9eecad44d57f050
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54144954"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016391"
 ---
 # <a name="list-termsandconditionsassignments"></a>列出 termsAndConditionsAssignments
 

@@ -1,16 +1,16 @@
 ---
 title: 更新警报
 description: 更新任何集成 **解决方案** 中的可编辑警报属性，使警报状态和分配在解决方案之间保持同步。 此方法更新具有引用警报 ID 记录的任何解决方案。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 005ac06ab2c4783f22a7eef0ddca85e771245fbc
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: bb91b6585cc43a2294ed776be64415771a9cc3cd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52784960"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017007"
 ---
 # <a name="update-alert"></a>更新警报
 
@@ -56,7 +56,7 @@ PATCH /security/alerts/{alert_id}
 | comments          | 字符串集合                                                      | 针对客户警报管理的警报 (分析员) 。 此方法只能使用下列值更新 comments 字段 `Closed in IPC` `Closed in MCAS` ：、。 |
 | 反馈          | alertFeedback                                                          | 分析师对警报的反馈。 可取值为：`unknown`、`truePositive`、`falsePositive`、`benignPositive`。 |
 | status            | alertStatus                                                            | 警报生命周期状态 (阶段) 。 可取值为：`unknown`、`newAlert`、`inProgress`、`resolved`。 |
-| tags              | String collection                                                      | 可应用于警报并可以作为筛选器条件的用户可定义标签 (例如，"HVA"、"SAW) " |
+| 标记              | 字符串集合                                                      | 可应用于警报并可以作为筛选条件的用户可定义标签 (例如，"HVA"、"SAW) "。 |
 | vendorInformation | [securityVendorInformation](../resources/securityvendorinformation.md) | 包含有关安全产品/服务供应商、提供程序和子提供程序的详细信息的复杂类型（例如，供应商 = Microsoft；提供程序 = Windows Defender ATP；子提供程序 = AppLocker）。 **提供程序和供应商字段是必需的。** |
 
 ## <a name="response"></a>响应

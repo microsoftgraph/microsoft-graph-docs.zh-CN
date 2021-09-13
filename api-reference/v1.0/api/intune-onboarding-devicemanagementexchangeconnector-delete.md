@@ -2,15 +2,15 @@
 title: 删除 deviceManagementExchangeConnector
 description: 删除 deviceManagementExchangeConnector。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 41af58c77a41bb53ae1d8fd349161205d1b233d607e286e6481a612aa32f4380
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 279abe115fdff694abf631b061d08ee96ca6ede3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54172195"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59099593"
 ---
 # <a name="delete-devicemanagementexchangeconnector"></a>删除 deviceManagementExchangeConnector
 

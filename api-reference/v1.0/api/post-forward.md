@@ -1,16 +1,16 @@
 ---
 title: 帖子：转发
-description: '将帖子转发给收件人。 您可以在请求中同时指定父对话和线程， '
-localization_priority: Normal
+description: '将帖子转发给收件人。 可以在请求中同时指定父会话和线程， '
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 2e6219fc3b1d0815a14322a72711e7c887188374
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8695b1f93c3b68861ba467f0327ba4b61fea11a6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48020585"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085320"
 ---
 # <a name="post-forward"></a>帖子：转发
 

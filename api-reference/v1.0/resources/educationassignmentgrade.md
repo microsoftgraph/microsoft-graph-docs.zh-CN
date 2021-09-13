@@ -1,16 +1,16 @@
 ---
 title: educationAssignmentGrade 资源类型
 description: 表示提交上的 Grade 对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: a165203242f13805cab7dbf159519deaf42e9cb146358a4406362ae2a8ba9507
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f0cf0fe5867fc85c091736cd48beee8cc954a321
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54230758"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109232"
 ---
 # <a name="educationassignmentgrade-resource-type"></a>educationAssignmentGrade 资源类型
 

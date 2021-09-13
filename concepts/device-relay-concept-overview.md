@@ -1,15 +1,15 @@
 ---
 title: Microsoft Graph 中的设备中继 API（预览版）
 description: '当今，人们每天都会与多个设备进行交互。 用户通常会在一个设备上开始生产任务和娱乐活动，并在另一个设备上继续进行。 为了满足客户的各种需求，你的应用需要能够无缝跨多个设备和平台。 '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: davidmu1
 ms.prod: cross-device-experiences
-ms.openlocfilehash: 09714f33d9260d5af0f3268482f860d617aa67185e301656cb61e0564b9d2a74
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: aa307f518cbd2ffd98aedb4737960da031f0b23a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54237555"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59137411"
 ---
 # <a name="device-relay-api-in-microsoft-graph-preview"></a>Microsoft Graph 中的设备中继 API（预览版）
 

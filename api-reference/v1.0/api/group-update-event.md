@@ -2,15 +2,15 @@
 title: 更新事件
 description: 更新 event 对象。
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6634a001cc52605522b3f65d7bd044e03f04c94d
-ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
+ms.openlocfilehash: f27b92fc58270d1452d20ddf98c67e119e2a7f28
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58397024"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074085"
 ---
 # <a name="update-event"></a>更新事件
 

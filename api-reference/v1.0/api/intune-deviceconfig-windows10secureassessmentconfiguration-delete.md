@@ -2,15 +2,15 @@
 title: 删除 windows10SecureAssessmentConfiguration
 description: 删除 windows10SecureAssessmentConfiguration。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1ee1309072a89213d1bac77e7387281a3129874fbaccfb51edc9149372547592
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 95ecec2d6382f74e4bffea0f51228c09fdbb4178
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54240895"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016300"
 ---
 # <a name="delete-windows10secureassessmentconfiguration"></a>删除 windows10SecureAssessmentConfiguration
 

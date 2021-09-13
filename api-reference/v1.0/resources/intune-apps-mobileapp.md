@@ -2,15 +2,15 @@
 title: mobileApp 资源类型
 description: 包含 Intune 移动应用基属性的抽象类。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c15f382e5106ad9ab32ac420f3e5abcf23b617cdb8eda6966b167ad03352fd0f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ea4fc7a46c111f01751a232e7475ce3bc055eb21
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54243502"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123214"
 ---
 # <a name="mobileapp-resource-type"></a>mobileApp 资源类型
 
@@ -40,7 +40,7 @@ ms.locfileid: "54243502"
 |isFeatured|Boolean|指示应用是否被管理员标记为特色的值。|
 |privacyInformationUrl|String|隐私声明 Url。|
 |informationUrl|String|详细信息 Url。|
-|所有者|String|应用的所有者。|
+|owner|String|应用的所有者。|
 |developer|String|应用的开发者。|
 |notes|String|应用的备注。|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 可取值为：`notPublished`、`processing`、`published`。|

@@ -2,15 +2,15 @@
 author: daspek
 title: createAction 资源类型
 description: createAction 对象提供有关项目创建的信息。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 4869683401b1db6c9d11176abb28f92839d1fa6e85d428530ae3586c27c867ad
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6eb987697e1f04b69e61382d2440d435a88cc21f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54238137"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59053110"
 ---
 # <a name="createaction-resource-type"></a>createAction 资源类型
 

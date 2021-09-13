@@ -2,15 +2,15 @@
 title: 更新 targetedManagedAppConfiguration
 description: 更新 targetedManagedAppConfiguration 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 12c8d4da6bf98bb417e6e4baac064e22c84312ca82d27a472d8e6cc0d6e06754
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 49138f2b0b1773f5ccbe2f4dfd790b5a921fe4ab
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54147460"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59053522"
 ---
 # <a name="update-targetedmanagedappconfiguration"></a>更新 targetedManagedAppConfiguration
 

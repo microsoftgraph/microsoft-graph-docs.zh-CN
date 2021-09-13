@@ -1,14 +1,14 @@
 ---
 title: 自定义提供程序
 description: 如果应用程序中已有身份验证代码，请创建自定义提供程序，为 Microsoft Graph Toolkit组件启用身份验证和图形访问。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: nmetulev
-ms.openlocfilehash: 4327bea637043fa8280bf6c39f55cdb8a0333b1c529f4994e9c8273ff0e3d99b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: be470ed25acccb3fcdd1499b0048a33dae7c5d13
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54204924"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143564"
 ---
 # <a name="custom-provider"></a>自定义提供程序
 
@@ -69,7 +69,7 @@ export enum ProviderState {
 
 ### <a name="state"></a>状态
 
-提供程序必须跟踪身份验证状态，并更新状态更改时的组件。 `IProvider`类已实现 `onStateChanged(eventHandler)` 处理程序和 `state: ProviderState` 属性。 只需在实现 `setState(state:ProviderState)` 中使用此方法，在状态发生更改时更新状态。 更新状态将启动 `stateChanged` 事件并自动更新所有组件。
+提供程序必须跟踪身份验证状态，并更新状态更改时的组件。 `IProvider`类已实现 `onStateChanged(eventHandler)` 处理程序和 `state: ProviderState` 属性。 你只需在实现 `setState(state:ProviderState)` 中使用此方法，在状态发生更改时更新状态。 更新状态将启动 `stateChanged` 事件并自动更新所有组件。
 
 ### <a name="loginlogout"></a>登录/注销
 

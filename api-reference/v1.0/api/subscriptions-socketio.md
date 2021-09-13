@@ -1,29 +1,29 @@
 ---
 author: daspek
 title: 获取 websocket 终结点
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
-description: 允许你使用 socket.io 接收驱动器的近实时更改socket.io。
+description: 允许你使用 Socket.io 接收驱动器的近实时更改 socket.io。
 doc_type: apiPageType
-ms.openlocfilehash: 3c937a9d51073ca89148c9ff8a3b51c8f32d30c5
-ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
+ms.openlocfilehash: 5150b6a8504ed19caa9c06cff781a199a4bbe0a7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50626214"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019459"
 ---
 # <a name="get-websocket-endpoint"></a>获取 websocket 终结点
 
 命名空间：microsoft.graph
 
-允许你使用 socket.io 接收驱动器和[列表][][的近实时更改socket.io。][] [][]
-Socket.io JavaScript 的热门通知库，它利用 WebSockets。 若要了解更多信息 [，请参阅](https://socket.io)socket.io。
+允许你使用 socket.io 接收[驱动器][]和[列表][]的近实时[更改 socket.io。][]
+Socket.io 是 JavaScript 的热门通知库，它利用 WebSockets。 若要了解更多信息 [，请参阅](https://socket.io)socket.io。
 
 [drive]: ../resources/drive.md
 [list]: ../resources/list.md
 [socket.io]: https://socket.io/
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -76,7 +76,7 @@ GET /me/drive/root/subscriptions/socketIo
 
 ### <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应 `200 OK` 代码[](../resources/subscription.md)和订阅对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应[](../resources/subscription.md)代码和 subscription 对象。
 
 <!-- {
   "blockType": "response",
@@ -93,9 +93,9 @@ Content-type: application/json
 }
 ```
 
-返回 `notificationUrl` 的是一个socket.io URL。
+返回 `notificationUrl` 的是一个 socket.io URL。
 
-以下示例演示如何在 `notificationUrl` JavaScript 中将 with socket.io。
+以下示例演示如何在 `notificationUrl` JavaScript 中将 与 socket.io 一起使用。
 
 ```javascript
 // this is the notificationUrl returned from this API
