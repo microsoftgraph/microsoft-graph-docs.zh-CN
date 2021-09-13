@@ -2,15 +2,15 @@
 title: 获取历史记录
 description: 读取 riskyUserHistoryItem 对象的属性和关系。
 author: cloudhandler
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a549ff8eb6890b700e3e29f6a159d078135c0739ddd7bac8e056c92cf0cc48df
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 89a0e8d6df84f7729fb89b1420223dbaf589ff60
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54247072"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59053341"
 ---
 # <a name="get-history"></a>获取历史记录
 命名空间：microsoft.graph
@@ -18,16 +18,16 @@ ms.locfileid: "54247072"
 读取 [riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) 对象的属性和关系。
 
 
->**注意：** 使用 riskyUsers API 需要Azure AD Premium P2许可证。
+>**注意：** 使用 riskyUsers API 需要一个Azure AD Premium P2许可证。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions_reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | IdentityRiskyUser.Read.All、IdentityRiskUser.ReadWrite.All    |
+|委派（工作或学校帐户） | IdentityRiskyUser.Read.All、IdentityRiskyUser.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | IdentityRiskyUser.Read.All、IdentityRiskUser.ReadWrite.All |
+|应用程序 | IdentityRiskyUser.Read.All、IdentityRiskyUser.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

@@ -1,16 +1,16 @@
 ---
 title: 获取 permissionGrantPolicy
 description: 检索单个 permissionGrantPolicy 对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 9aeb3259ed414b70391793cafd8453b22d413a94
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 5372d31b3187f1069538de2db2b7c992793d03b6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051303"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022077"
 ---
 # <a name="get-permissiongrantpolicy"></a>获取 permissionGrantPolicy
 
@@ -59,7 +59,7 @@ GET /policies/permissionGrantPolicies/{id}
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
-此示例中，请求的策略是内置权限授予策略，其中包括针对已验证发布者的应用或在此租户中注册的应用分类的低委派 `microsoft-user-default-low` 权限。
+在此例中，请求的策略是内置权限授予策略，其中包括分类为低的委派权限，适用于来自已验证发布者的应用或在此租户中注册 `microsoft-user-default-low` 的应用。
 
 
 
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/v1.0/policies/permissionGrantPolicies/microsoft-
 
 ### <a name="response"></a>响应
 
-下面展示了示例响应。 策略有两个条件集，一个条件集与为此租户中注册的客户端应用分类的委派权限匹配，另一个条件集与为来自已验证发布者 (的应用分类的委派权限匹配，而不管该应用程序在 `includes` `low`) 中注册 `low` 哪个租户。
+下面展示了示例响应。 该策略有两个条件集，一个条件集与为此租户中注册的客户端应用分类的委派权限匹配，另一个条件集与为来自已验证发布者 (的应用分类的委派权限匹配，而不考虑在) 中注册应用的租户。 `includes` `low` `low`
 
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 

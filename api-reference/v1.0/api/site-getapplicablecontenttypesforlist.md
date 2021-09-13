@@ -2,15 +2,15 @@
 author: swapnil1993
 title: site： getApplicableContentTypesForList
 description: 获取可添加到列表的网站内容类型。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 94c19b98a01a16f655893661e7d368dc8a902114
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 0cab5418b1e8fc1f4251e3fa9d51e5ebe1e05f61
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696527"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084981"
 ---
 # <a name="site-getapplicablecontenttypesforlist"></a>site： getApplicableContentTypesForList
 命名空间：microsoft.graph
@@ -43,7 +43,7 @@ GET /sites/{siteId}/getApplicableContentTypesForList
 
 |参数|类型|说明|
 |-|-|-|
-|listId| String | 需要获取适用内容类型的列表的 GUID。 此为必需属性。 |
+|listId| String | 需要获取适用内容类型的列表的 GUID。 必需。 |
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
@@ -51,7 +51,7 @@ GET /sites/{siteId}/getApplicableContentTypesForList
 
 若要仅列出自定义内容类型，请使用 `$filter=isBuiltin eq false` 。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
@@ -67,14 +67,34 @@ GET /sites/{siteId}/getApplicableContentTypesForList
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "site_getapplicablecontenttypesforlist"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/sites/{siteId}/getApplicableContentTypesForList(listId='listId')
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/site-getapplicablecontenttypesforlist-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/site-getapplicablecontenttypesforlist-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/site-getapplicablecontenttypesforlist-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/site-getapplicablecontenttypesforlist-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 
@@ -119,4 +139,4 @@ Content-type: application/json
 ```
 
 [contentType]: ../resources/contentType.md
-[网站]: ../resources/site.md
+[site]: ../resources/site.md

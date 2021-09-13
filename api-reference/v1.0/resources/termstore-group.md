@@ -3,14 +3,14 @@ author: vishriv
 title: 组资源类型
 doc_type: resourcePageType
 description: 表示术语库中使用的组。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: taxonomy
-ms.openlocfilehash: a73cd750ffbfe8487b67acbf49c05432b3e46ec3
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 121f195e8054645be47d7a98c5287c52d754b4e7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514964"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129752"
 ---
 # <a name="group-resource-type"></a>组资源类型
 

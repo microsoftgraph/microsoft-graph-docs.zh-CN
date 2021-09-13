@@ -2,14 +2,14 @@
 title: 在 Outlook 中建议新的会议时间
 description: 在 Outlook 中，会议组织者可以允许被邀请者建议备选会议时间。
 author: harini84
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 6beba6c1c2c19515ade8123069feed83951fa903febdcb39acabff60f678dab1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: eb75a950f627dde2cf54f373e17435b501a082df
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54157947"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59103948"
 ---
 # <a name="propose-new-meeting-times-in-outlook"></a>在 Outlook 中建议新的会议时间
 

@@ -2,15 +2,15 @@
 title: linkedResource 资源类型
 description: 表示 todoTask 的源
 author: avijityadav
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 8164e0436cdedee66c59fbc83b7f4fa7d594a4623c2a62bcab6d19cca4c52d28
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: dfc5e05403c93f07f48c010b8d7233543021f52c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54237625"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036149"
 ---
 # <a name="linkedresource-resource-type"></a>linkedResource 资源类型
 
@@ -32,7 +32,7 @@ ms.locfileid: "54237625"
 |[创建 linkedResource](../api/todotask-post-linkedresources.md)|[linkedResource](../resources/linkedresource.md)|创建新的 linkedResources 对象。|
 |[获取 linkedResource](../api/linkedresource-get.md)|[linkedResource](../resources/linkedresource.md)|读取 [linkedResource](../resources/linkedresource.md) 对象的属性和关系。|
 |[更新 linkedResource](../api/linkedresource-update.md)|[linkedResource](../resources/linkedresource.md)|更新 [linkedResource 对象](../resources/linkedresource.md) 的属性。|
-|[删除 linkedResource](../api/linkedresource-delete.md)|无|删除 [linkedResource](../resources/linkedresource.md) 对象。|
+|[删除 linkedResource](../api/linkedresource-delete.md)|None|删除 [linkedResource](../resources/linkedresource.md) 对象。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
@@ -41,7 +41,7 @@ ms.locfileid: "54237625"
 |displayName|String|指示 **linkedResource 的标题的字段**。|
 |externalId|String|第三方/合作伙伴系统上与此任务关联的对象的 ID。|
 |id|String|服务器为 **linkedResource** 生成的 ID。 继承自 [实体](../resources/entity.md)。|
-|webUrl|String|指向 **linkedResource 的深层链接**。|
+|WebUrl|String|指向 **linkedResource 的深层链接**。|
 
 ## <a name="relationships"></a>关系
 无。

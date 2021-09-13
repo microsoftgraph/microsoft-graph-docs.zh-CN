@@ -2,22 +2,22 @@
 title: 列出 administrativeUnit an educationSchool
 description: 获取与 educationSchool 对象关联的 administrativeUnits 列表。
 author: mmast
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: a8ca5a51c6fb71c3cab0d6f0a7be239eb2101999
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: 67f97017cc52e5cf66bc425929e7d057df7ef75c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52474848"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022791"
 ---
 # <a name="list-administrativeunit-an-educationschool"></a>列出 administrativeUnit an educationSchool
 
 命名空间：microsoft.graph
 
 获取与 [educationSchool](../resources/educationschool.md)对象关联的 **administrativeUnits** 列表。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -54,7 +54,7 @@ GET /education/schools/{educationSchoolId}/administrativeUnit
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [administrativeUnit](../resources/administrativeunit.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [administrativeUnit](../resources/administrativeunit.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

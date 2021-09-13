@@ -2,15 +2,15 @@
 title: complianceManagementPartnerAssignment 资源类型
 description: 合规性管理合作伙伴的用户组目标
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fdbd869b34dce72e818b5931244cbecf8686bb7cdab06fa74f61fa23378dda19
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cac4b8fd53b9573ef1819026b333191faa83d642
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249249"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59098676"
 ---
 # <a name="compliancemanagementpartnerassignment-resource-type"></a>complianceManagementPartnerAssignment 资源类型
 

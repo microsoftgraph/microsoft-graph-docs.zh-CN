@@ -2,15 +2,15 @@
 title: resetPasscodeActionResult 资源类型
 description: 重置密码操作结果
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d6c79c975d0ac3aceedab9f5108278e333ab875037fd02e68c4d7dff37405980
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 180293d8f7631fe43eee06cab452cc399f01aab9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54149826"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118199"
 ---
 # <a name="resetpasscodeactionresult-resource-type"></a>resetPasscodeActionResult 资源类型
 

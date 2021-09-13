@@ -2,15 +2,15 @@
 title: 获取 managedAppPolicyDeploymentSummary
 description: 读取 managedAppPolicyDeploymentSummary 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4640a3d751479183c4e75bf01b63c137ffb670ed37fac11450acc8869678f1db
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 57a6bae5c3312e6d46d490c7a1d6b26468b751b2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54238431"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59119462"
 ---
 # <a name="get-managedapppolicydeploymentsummary"></a>获取 managedAppPolicyDeploymentSummary
 

@@ -2,15 +2,15 @@
 title: androidMobileAppIdentifier 资源类型
 description: Android 应用的标识符。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cd4a62fdc60378260b1eceda22cc5020a16cbd9d4a810218552bb32ab988c739
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7aeb09451f320ac394d17e6b992b0a5ef0dffa8c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54223464"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118178"
 ---
 # <a name="androidmobileappidentifier-resource-type"></a>androidMobileAppIdentifier 资源类型
 

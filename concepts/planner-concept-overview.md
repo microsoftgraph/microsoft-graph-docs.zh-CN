@@ -2,14 +2,14 @@
 title: Planner 任务和计划 API 概述
 description: Planner 提供了一种简单而又直观的方法，可用于团队组织他们的工作。 客户可以使用 Planner 来创建计划、组织和分配任务、共享进度以及协作处理内容。  Planner 提供了多个交互式体验，包括任务板、图表页和日程安排视图，以及在整个 Microsoft 365 中的集成。
 author: TarkanSevilmis
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: planner
-ms.openlocfilehash: 45ce4719e9fa46d163cb98f9318757255af9b9d6decea3af4947285f3419f243
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fe8102634efa3fd4bd2f561e4ec0858564ca7f21
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54169052"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59089289"
 ---
 # <a name="planner-tasks-and-plans-api-overview"></a>Planner 任务和计划 API 概述
 Planner 提供了一种简单而又直观的方法，可用于团队组织他们的工作。 客户可以使用 Planner 来创建计划、组织和分配任务、共享进度以及协作处理内容。  Planner 提供了多个交互式体验，包括任务板、图表页和日程安排视图，以及在整个 Microsoft 365 中的集成。

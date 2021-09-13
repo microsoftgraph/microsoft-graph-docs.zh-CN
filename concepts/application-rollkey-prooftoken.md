@@ -1,15 +1,15 @@
 ---
 title: 生成用于滚动密钥的所有权证明令牌
 description: 作为对 addKey 和 removeKey 方法的请求验证的一部分，需要提供所有权证明令牌。 本文档提供生成所有权证明令牌的指南。
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: applications
 author: davidmu1
-ms.openlocfilehash: d4b98f0820941879f3994b0a18ccbc1c2d8c7dac
-ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
+ms.openlocfilehash: 1df754757ce5707f0c06c709fc3adc423ad36da0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58384406"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59142416"
 ---
 # <a name="generating-proof-of-possession-tokens-for-rolling-keys"></a>生成用于滚动密钥的所有权证明令牌
 

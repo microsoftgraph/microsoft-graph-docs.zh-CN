@@ -2,15 +2,15 @@
 title: educationOnPremisesInfo 资源类型
 description: 用于将本地 Active Directory 用户帐户关联到其 Azure AD 用户对象的其他信息。
 author: mlafleur
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: c461c63309588fc01fef94fb53a3b9c6e0f2722858f1baaa93a663804e344b7c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ace4f32edf7a708debea828bfc510aec630a7100
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54182530"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59078887"
 ---
 # <a name="educationonpremisesinfo-resource-type"></a>educationOnPremisesInfo 资源类型
 

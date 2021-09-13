@@ -2,15 +2,15 @@
 title: roleDefinition 资源类型
 description: 角色定义资源。 角色定义是在 Intune 中基于角色访问的基础。 角色组合了 Intune 资源（例如，移动应用）和关联的角色权限（例如，资源的创建和读取）。 有内置和自定义两种角色类型。 内置角色无法修改。 内置角色和自定义角色必须具有强制执行的分配。 如果要定义一个允许将任意可用资源和角色权限合并到单个角色中的角色，请创建自定义角色。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: df083c03748fbb741ce6074ac9e24f40d18c0ac49bc9da02839d5906a02d6482
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7516a95a0da4d58b4604bbafa18132280e6a2ad1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54184618"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59126791"
 ---
 # <a name="roledefinition-resource-type"></a>roleDefinition 资源类型
 

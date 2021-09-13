@@ -2,15 +2,15 @@
 title: 获取 targetedManagedAppConfiguration
 description: 读取 targetedManagedAppConfiguration 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2c08f5ae1605e6830c1a8acc390e325e53cdc23b2e4711f85c1a915fd47ba3c7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c909cc7aca5a6a0bdf4ef1a92dc519be678715f8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54172209"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016230"
 ---
 # <a name="get-targetedmanagedappconfiguration"></a>获取 targetedManagedAppConfiguration
 

@@ -1,16 +1,16 @@
 ---
 title: 更新 inferenceclassificationoverride
 description: '按指定内容更改替代的 **ClassifyAs** 字段。 '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: ff49d7499014d06f1aaa48ee29162aaede156aa2
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: efeebf7642cd7f7de2eca39b08f13a76b413fb7c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052255"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045551"
 ---
 # <a name="update-inferenceclassificationoverride"></a>更新 inferenceclassificationoverride
 
@@ -93,7 +93,7 @@ Content-type: application/json
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

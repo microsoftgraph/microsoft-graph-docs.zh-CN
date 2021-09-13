@@ -2,15 +2,15 @@
 title: ChartLineFormat 资源类型
 description: 封装线条元素的格式选项。
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: b63e4bbc84a679cee1866f67432392b02714030c2a87485606050128a5b0df02
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b60d588de64d5ba28f2b6985c0e4862e876fe025
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54124540"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062808"
 ---
 # <a name="chartlineformat-resource-type"></a>ChartLineFormat 资源类型
 

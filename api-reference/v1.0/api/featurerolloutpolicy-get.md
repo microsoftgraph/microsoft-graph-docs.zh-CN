@@ -1,16 +1,16 @@
 ---
 title: 获取 featureRolloutPolicy
 description: 检索 featurerolloutpolicy 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: madhavpatel6
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a423799f16019e067e9d6fa975ba2f724e32eae5
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+ms.openlocfilehash: 290a83214d7b40c8ac60b65f7302e891c80f08c7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53351081"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59053635"
 ---
 # <a name="get-featurerolloutpolicy"></a>获取 featureRolloutPolicy
 
@@ -44,7 +44,7 @@ GET /policies/featureRolloutPolicies/{id}
 
 | 名称      |说明|
 |:----------|:----------|
-| Authorization | Bearer {token}。 必填 |
+| Authorization | Bearer {token}。 必需 |
 
 ## <a name="request-body"></a>请求正文
 

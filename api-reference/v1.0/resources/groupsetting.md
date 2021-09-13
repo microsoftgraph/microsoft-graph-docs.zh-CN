@@ -2,15 +2,15 @@
 title: groupSetting 资源类型
 description: 组设置控制行为，如阻止组显示名称的单词列表或是否允许来宾用户成为组所有者。
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 3f43baa14884fcb8843d99731e20e96f329aed2cfad2a1ba513b8e2039d8f776
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 56d97a0789c33c429dcce7d5db7009f439806768
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54212079"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084543"
 ---
 # <a name="groupsetting-resource-type"></a>groupSetting 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "54212079"
 
 组设置控制行为，如阻止组显示名称的单词列表或是否允许来宾用户成为组所有者。
 
-可以基于可用的 [groupSettingTemplates](groupsettingtemplate.md)创建组设置，并更改其预设默认值。 这些设置控制租户范围内或特定组的组行为。 当在租户范围和特定组上定义相同设置时，组级别设置将覆盖租户范围的设置。  例如，租户范围设置可能允许现有组成员邀请来宾，但单个组设置可以覆盖并不允许组的成员邀请来宾。 组设置仅控制Microsoft 365组行为。
+可以基于可用的 [groupSettingTemplates](groupsettingtemplate.md)创建组设置，并更改其预设默认值。 这些设置控制租户范围内或特定组的组行为。 当在租户范围和特定组上定义相同设置时，组级别设置将覆盖租户范围的设置。  例如，租户范围设置可能允许现有组成员邀请来宾，但单个组设置可以覆盖并不允许组的成员邀请来宾。 组设置仅控制Microsoft 365行为。
 
 ## <a name="methods"></a>方法
 
@@ -36,7 +36,7 @@ ms.locfileid: "54212079"
 |:---------------|:--------|:----------|
 |displayName|String| 这组设置的显示名称，来自关联的模板。 |
 |id|String| 这些设置的唯一标识符。 只读。 |
-|templateId|String| 用于创建这组设置的模板的唯一标识符。 只读。 |
+|templateId|String| 用于创建该组设置的模板的唯一标识符。 只读。 |
 |values|[settingValue](settingvalue.md) 集合| 名称值对的集合。 必须包含和设置模板中定义的所有设置。 |
 
 ## <a name="relationships"></a>关系

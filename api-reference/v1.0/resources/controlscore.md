@@ -1,16 +1,16 @@
 ---
 title: controlScore 资源类型
 description: 此资源包含单个控件的租户分数和说明。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: be1da81848b5669f66735e4288dccd09ccc30ac0384cc66897fb0a501907f031
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 155b17ed62e3aa61ea523f57ce17fd1ec0df1ee9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54202509"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049536"
 ---
 #  <a name="controlscore-resource-type"></a>controlScore 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "54202509"
 |名称 |类型 |说明 |
 |:--|:--|:--|
 |controlName|String|控件的唯一名称。|
-|score|双精度|租户获得控件的分数 (因租户对控件控件的操作而异) 。|
+|score|双精度|租户获得控件分数 (因租户对控件控件的操作而异) 。|
 |controlCategory|String|控制操作类别 (标识、数据、设备、应用、基础结构) 。|
 |说明|String| 控件的说明。|
 

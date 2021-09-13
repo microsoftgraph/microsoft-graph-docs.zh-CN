@@ -2,15 +2,15 @@
 title: requiredPasswordType 枚举类型
 description: 所需密码的可能值。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f77312652c10b229163c678ef42688a1a40d68e42653c6cbe6ce42784b728004
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5e25a5ffa672691436455d497a58d246b4474226
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54237969"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067239"
 ---
 # <a name="requiredpasswordtype-enum-type"></a>requiredPasswordType 枚举类型
 

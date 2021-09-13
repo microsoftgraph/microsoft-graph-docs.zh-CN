@@ -2,15 +2,15 @@
 title: 创建 roleDefinition
 description: 创建新的 roleDefinition 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bbf97f3c0d58d332c628325ce721cb3844dad6867ecadcd27d2ed415911dc2a0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 32011cd322f53c90d2e1c9c22d40f5a3e3bed869
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54245525"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59026313"
 ---
 # <a name="create-roledefinition"></a>创建 roleDefinition
 

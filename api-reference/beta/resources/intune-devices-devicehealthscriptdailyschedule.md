@@ -2,15 +2,15 @@
 title: deviceHealthScriptDailySchedule 资源类型
 description: 设备运行状况脚本每日计划。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0e84b59510a50510abfd07e5eafd09b652c4aeb0
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1b73d9020e3d95e658b67e090b311ecc97fe3bc1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58770999"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017364"
 ---
 # <a name="devicehealthscriptdailyschedule-resource-type"></a>deviceHealthScriptDailySchedule 资源类型
 

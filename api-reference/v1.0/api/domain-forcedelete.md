@@ -2,15 +2,15 @@
 title: 强制删除域
 description: 使用异步长时间运行的操作删除域。
 author: adimitui
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 50e5a418a40d9c5bedee1a007b491d15a06f3931
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 16423e6a04a8baeb20a3a6b800cd2c5eced762aa
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787812"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056678"
 ---
 # <a name="force-domain-deletion"></a>强制删除域
 
@@ -22,11 +22,11 @@ ms.locfileid: "52787812"
 
 以下操作作为此操作的一部分执行：
 
-* 使用 `userPrincipalName` 对 `mail` 已删除域的引用更新 的 、 和 属性，以使用初始 `proxyAddresses` onmicrosoft.com `users` 域。
+* 使用 `userPrincipalName` 对已删除域的引用更新 的 、 和 属性，以使用 onmicrosoft.com `mail` `proxyAddresses` `users` 域。
 
-* 使用对已删除域的引用更新 的 属性 `mail` `groups` ，以使用初始 onmicrosoft.com 域。
+* 使用对已删除域的引用更新 的 属性，以使用初始 onmicrosoft.com `mail` `groups` 域。
 
-* 使用对已删除域的引用更新 的 属性 `identifierUris` `applications` ，以使用初始 onmicrosoft.com 域。
+* 使用对已删除域的引用更新 的 属性，以使用初始 onmicrosoft.com `identifierUris` `applications` 域。
 
 * 如果要重命名的对象数大于 1000，则返回错误。
 
@@ -40,7 +40,7 @@ ms.locfileid: "52787812"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Domain.ReadWrite.All  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Domain.ReadWrite.All |
 
@@ -67,7 +67,7 @@ POST /domains/{id}/forceDelete
 
 | 参数 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|`disableUserAccounts`|`Boolean`| 用于禁用重命名的用户帐户的选项。 如果禁用用户帐户，将不允许用户登录。 如果设置为 **true，** 将禁用作为此操作 `users` 的一部分进行更新。  默认值为 **True**。 |
+|`disableUserAccounts`|`Boolean`| 用于禁用重命名的用户帐户的选项。 如果禁用用户帐户，将不允许用户登录。 如果设置为 **true，** 将禁用作为此操作的 `users` 一部分进行更新。  默认值为 **True**。 |
 
 ## <a name="response-body"></a>响应正文
 

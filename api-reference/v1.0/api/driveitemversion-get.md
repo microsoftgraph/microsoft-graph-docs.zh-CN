@@ -1,16 +1,16 @@
 ---
 title: 获取 DriveItemVersion 资源
 description: 检索 DriveItem 的某个特定版本的元数据。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 author: JeremyKelley
 doc_type: apiPageType
-ms.openlocfilehash: 74076a044dcab00fc25dfe829eaee582d9a0d6b6
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 9115bf948135048aea8bde9fb3a801e7e54662b7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516778"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100237"
 ---
 # <a name="get-a-driveitemversion-resource"></a>获取 DriveItemVersion 资源
 
@@ -18,7 +18,7 @@ ms.locfileid: "50516778"
 
 检索 [DriveItem](../resources/driveitem.md) 的某个特定版本的元数据。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

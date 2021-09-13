@@ -2,15 +2,15 @@
 title: 获取 deviceCompliancePolicy
 description: 读取 deviceCompliancePolicy 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 20a642c556a23467010094fb94e30af221cb1b524df5c3d2bfcb0da77bf01f32
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 54d741a79c3c404339bb812875fd3e0af5f1a3ff
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54167518"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59073553"
 ---
 # <a name="get-devicecompliancepolicy"></a>获取 deviceCompliancePolicy
 

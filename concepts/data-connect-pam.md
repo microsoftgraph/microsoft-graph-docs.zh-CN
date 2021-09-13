@@ -2,14 +2,14 @@
 title: Microsoft Graph 数据连接与 Privileged Access Management 的集成
 description: Microsoft Graph 数据连接依赖于 Privileged Access Management 来允许 Microsoft 365 管理员批准数据移动请求。
 author: fercobo-msft
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: data-connect
-ms.openlocfilehash: ecbe72e5444b5d1d9eab17ecdaea591b35aad5056b15fb51702fcce118b6c435
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4cb136349684504520696c09ea7e5deb21479168
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54246393"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59108756"
 ---
 # <a name="microsoft-graph-data-connect-integration-with-privileged-access-management"></a>Microsoft Graph 数据连接与 Privileged Access Management 的集成
 

@@ -2,15 +2,15 @@
 title: 获取 androidManagedAppRegistration
 description: 读取 androidManagedAppRegistration 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9c9ffd18c70196224292392df6bdabf5d61ffe152138e8814f2a421f6c990303
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8936b22d4fdee710ab3d35e20d04b0f8b198cb71
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54234034"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59079636"
 ---
 # <a name="get-androidmanagedappregistration"></a>获取 androidManagedAppRegistration
 

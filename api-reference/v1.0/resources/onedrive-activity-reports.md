@@ -1,16 +1,16 @@
 ---
 title: OneDrive 活动报表
 description: OneDrive 活动报表可用于获取每个有权使用 OneDrive 的用户的活动，具体是以用户与 OneDrive 文件的交互为依据。 此类报表也有助于了解以共享文件数为依据的协作级别。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: 0320a247663e1a1670d3d35fe15d53d6e758ace4e93b69b6e6495578aada1a7e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fc38469f2ea02947d52f9b5b269e5f58a45617ed
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54154999"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084193"
 ---
 # <a name="onedrive-activity-reports"></a>OneDrive 活动报表
 

@@ -2,15 +2,15 @@
 title: 获取 managedDevice
 description: 读取 managedDevice 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 393d5e0110f7b37a897861ed14cc5cfed9dc2597
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: f11a23ba66885be038b5a0fe90d3e74c5d2bbd91
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58260248"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59029421"
 ---
 # <a name="get-manageddevice"></a>获取 managedDevice
 

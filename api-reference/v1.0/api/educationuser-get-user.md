@@ -1,16 +1,16 @@
 ---
 title: 获取 educationUser
 description: 检索与此 **educationUser** 对应的简单目录 **user**。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 2fb5da61a1450b25166f86a0a64baf15b1e0f559
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: ebee9b0705fe360683b04f98c14b8b44a3b393a7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52912059"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59114657"
 ---
 # <a name="get-educationuser"></a>获取 educationUser
 

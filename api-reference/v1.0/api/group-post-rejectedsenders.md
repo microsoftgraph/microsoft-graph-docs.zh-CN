@@ -2,15 +2,15 @@
 title: 创建 rejectedSender
 description: 将新用户或组添加到 acceptedSender 列表中。
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 57d655d450467a8efd7aa1a9d1e67184b0ab7e94
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: b0c8eb09bf73d759103f2bdf594eb531bf358640
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682150"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074261"
 ---
 # <a name="create-rejectedsender"></a>创建 rejectedSender
 

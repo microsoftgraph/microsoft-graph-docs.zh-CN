@@ -1,16 +1,16 @@
 ---
 title: 将 /me 定义为单一实例
 description: 这些就是我需要在文档中添加的，以确保Markdown-Scanner
-localization_priority: Normal
+ms.localizationpriority: medium
 author: ''
 ms.prod: ''
 doc_type: conceptualPageType
-ms.openlocfilehash: 79d75b799017b2e0ae987d2bef8902d8817fba8e2e5bb602b11e4e75d97c4e7f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: aa13d7ca2204acbfd607763e6e2e1f012604d4ac
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54135391"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019417"
 ---
 # <a name="helpers-examples-that-arent-included-in-the-docs"></a>帮助程序（未包含在文档中的示例）
 

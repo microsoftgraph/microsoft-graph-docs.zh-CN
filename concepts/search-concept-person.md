@@ -1,19 +1,19 @@
 ---
-title: '使用 Microsoft Microsoft 搜索 中的 Graph API 搜索预览 (人员) '
+title: '使用 Microsoft Microsoft 搜索 中的 Graph API 搜索 (预览) '
 description: 可以使用 Microsoft 搜索 API 搜索与自己相关的人员。
 author: acsehi
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: ac978f09477db841e8f71a630128ba58d4f19ec2567813704a326ba49b13b818
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 158227ca262d70f457405d678e3f4b10f0c966ff
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235091"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129689"
 ---
-# <a name="use-the-microsoft-search-api-in-microsoft-graph-to-search-people-preview"></a>使用 Microsoft Microsoft 搜索 中的 Graph API 搜索预览 (人员) 
+# <a name="use-the-microsoft-search-api-in-microsoft-graph-to-search-people-preview"></a>使用 Microsoft Microsoft 搜索 中的 Graph API 搜索 (预览) 
 
-Microsoft Graph应用程序可以使用 Microsoft 搜索 API 检索与用户最相关的人员。 相关性由用户的通信和协作模式及业务关系决定。 人员可以是本地联系人，也可以来自组织目录，也可以来自最近通信的人。 除了生成此见解外，搜索还提供模糊匹配搜索支持以及检索与登录用户组织中其他用户相关的用户列表的能力。
+Microsoft Graph应用程序可以使用 Microsoft 搜索 API 检索与用户最相关的人员。 相关性由用户的通信和协作模式及业务关系决定。 人员可以是本地联系人，也可以来自组织目录，也可以来自最近通信的人。 除了生成此见解，搜索还提供模糊匹配搜索支持以及检索与登录用户组织中其他用户相关的用户列表的能力。
 
 ## <a name="example-search-person-by-name"></a>示例：按姓名搜索人员
 

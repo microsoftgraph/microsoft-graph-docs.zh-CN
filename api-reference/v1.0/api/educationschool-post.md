@@ -2,15 +2,15 @@
 title: 创建 educationSchool
 description: 创建新的 educationSchool 对象。
 author: mlafleur
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 98da82ad50ba9f1a8c8b5341730aa3b85f6345c0
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: 3c96a3c8a5cab46f1252c10d7d72512284c09e53
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52474813"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074393"
 ---
 # <a name="create-educationschool"></a>创建 educationSchool
 
@@ -18,7 +18,7 @@ ms.locfileid: "52474813"
 
 创建新的 [educationSchool](../resources/educationschool.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

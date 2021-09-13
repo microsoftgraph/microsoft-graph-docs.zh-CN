@@ -2,15 +2,15 @@
 title: macOSDeviceFeaturesConfiguration 资源类型
 description: MacOS 设备功能配置的配置文件。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0ce5660f21ea322eb309ff60e1133443abca389e1f7a367fc7d668bcb15e766c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f9dbedf29c820a65b10e3443f40726c0d9c8361a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54124400"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59142710"
 ---
 # <a name="macosdevicefeaturesconfiguration-resource-type"></a>macOSDeviceFeaturesConfiguration 资源类型
 

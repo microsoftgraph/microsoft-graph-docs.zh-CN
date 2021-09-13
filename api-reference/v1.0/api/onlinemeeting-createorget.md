@@ -1,16 +1,16 @@
 ---
 title: onlineMeeting：createOrGet
 description: 使用自定义指定的外部 ID 创建联机会议。 如果外部 ID 已存在，此 API 将返回具有该外部 ID 的 **onlineMeeting** 对象。
-author: jsandoval-msft
-localization_priority: Normal
+author: mkhribech
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: def026c90d5cd311d3c6f1ddb4a7b7276c13aea9
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 131a31793c5c212a250b8d88aea32e3576711bb5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751438"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072923"
 ---
 # <a name="onlinemeeting-createorget"></a>onlineMeeting：createOrGet
 
@@ -30,7 +30,7 @@ ms.locfileid: "52751438"
 | 应用程序                            | OnlineMeetings.ReadWrite.All*                |
 
 > [!IMPORTANT]
-> \*管理员必须创建应用程序访问[](/graph/cloud-communication-online-meeting-application-access-policy)策略，并授予用户该策略，授权策略中配置的应用代表该用户在请求路径) 中指定的 (用户 ID 创建或获取具有外部 ID 的联机会议。
+> \*管理员必须创建应用程序访问[](/graph/cloud-communication-online-meeting-application-access-policy)策略并授予用户，授权策略中配置的应用代表该用户创建或获取具有外部 ID 的联机会议 (请求路径) 中指定的用户 ID。
 
 ## <a name="http-request"></a>HTTP 请求
 使用委派 **令牌调用 createOrGet** API：
@@ -57,7 +57,7 @@ POST /users/{userId}/onlineMeetings/createOrGet
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数        | 类型                                     |Description                                                                                                                                    |
+| 参数        | 类型                                     |说明                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:--------------------------------------------------------------------------|
 | endDateTime      | 日期时间                                 | 会议结束时间（UTC）。 |
 | externalId       | String                                   | 外部 ID。 自定义 ID。  (必需)  |

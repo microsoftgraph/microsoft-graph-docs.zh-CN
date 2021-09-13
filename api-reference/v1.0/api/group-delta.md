@@ -1,16 +1,16 @@
 ---
 title: 'group: delta'
 description: 获取新创建、更新或删除的组，包括组成员身份更改，而无需执行整个组集合的完整读取。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 87ed0360f481566cf10a01ed1e22806ffdef4855
-ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
+ms.openlocfilehash: 8da45c26ba2390bef0e6b28d25c6746f67ccd0bb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58490558"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59037913"
 ---
 # <a name="group-delta"></a>group: delta
 
@@ -144,7 +144,7 @@ GET https://graph.microsoft.com/v1.0/groups/delta
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 >
-> 请注意存在 members@delta *属性，* 该属性包含组中成员对象的 ID。
+> 请注意存在 *members@delta* 属性，该属性包含组中成员对象的 ID。
 
 <!-- {
   "blockType": "response",

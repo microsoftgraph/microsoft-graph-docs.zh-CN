@@ -1,16 +1,16 @@
 ---
 title: clientUserAgent 资源类型
 description: clientUserAgent 类型
-localization_priority: Normal
+ms.localizationpriority: medium
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 6c1150cf60b3b042358ff1a854944b14722e2a9717daaed064d9d63392e475aa
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ba453f07d375fd95202446d66647d762ee4e5896
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54212211"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104269"
 ---
 # <a name="clientuseragent-resource-type"></a>clientUserAgent 资源类型
 

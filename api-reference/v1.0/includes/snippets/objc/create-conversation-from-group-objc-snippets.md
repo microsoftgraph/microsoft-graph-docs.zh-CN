@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 65685f4cce4e1f833574270d30e38ff8ef2a9b4966de67fc61cdf875e4526403
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4fa83d7c3b864d542af37478699aeb3a10b18cf1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57106795"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022402"
 ---
 ```objc
 
@@ -17,14 +17,14 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphConversation *conversation = [[MSGraphConversation alloc] init];
-[conversation setTopic:@"New locations for this quarter"];
+[conversation setTopic:@"Take your wellness days and rest"];
 NSMutableArray *threadsList = [[NSMutableArray alloc] init];
 MSGraphConversationThread *threads = [[MSGraphConversationThread alloc] init];
 NSMutableArray *postsList = [[NSMutableArray alloc] init];
 MSGraphPost *posts = [[MSGraphPost alloc] init];
 MSGraphItemBody *body = [[MSGraphItemBody alloc] init];
 [body setContentType: [MSGraphBodyType html]];
-[body setContent:@"What do we know so far?"];
+[body setContent:@"Contoso cares about you: Rest and Recharge"];
 [posts setBody:body];
 NSMutableArray *newParticipantsList = [[NSMutableArray alloc] init];
 MSGraphRecipient *newParticipants = [[MSGraphRecipient alloc] init];

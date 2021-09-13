@@ -2,15 +2,15 @@
 title: 获取 serviceHealth
 description: 检索 serviceHealth 对象的属性和关系。
 author: payiAzure
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 074e74aae7838e4f4d2fc1f4a846de9f1220455e
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 9d5fb6dad2d084a88974779e4270a13461952bb5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58264191"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049968"
 ---
 # <a name="get-servicehealth"></a>获取 serviceHealth
 命名空间：microsoft.graph
@@ -42,7 +42,7 @@ GET /admin/serviceAnnouncement/healthOverviews/{ServiceName}
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|

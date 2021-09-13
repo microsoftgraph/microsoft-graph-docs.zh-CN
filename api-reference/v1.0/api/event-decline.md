@@ -2,15 +2,15 @@
 title: 'event: decline'
 description: 拒绝用户日历中的指定事件邀请。
 author: harini84
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ac8f69d790b19e7569b60fc5d16559aa0c36eb76
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: da32c7daa345bdbda4f6d664445a74491b0ffb2c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448324"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100188"
 ---
 # <a name="event-decline"></a>event: decline
 
@@ -18,7 +18,7 @@ ms.locfileid: "50448324"
 
 拒绝用户日历 [中指定](../resources/event.md) 事件 [的邀请](../resources/calendar.md)。
 
-如果事件允许针对新时间的建议，在拒绝事件时，被邀请者可以选择通过包含 **建议的NewTime 参数来建议备选** 时间。 若要详细了解如何建议时间，以及如何接收和接受新时间建议，请参阅["建议新的会议时间"。](/graph/outlook-calendar-meeting-proposals)
+如果事件允许针对新时间的建议，在拒绝事件时，被邀请者可以选择通过包含 **proposedNewTime** 参数来建议备选时间。 若要详细了解如何建议时间，以及如何接收和接受新时间建议，请参阅 [建议新的会议时间](/graph/outlook-calendar-meeting-proposals)。
 
 ## <a name="permissions"></a>权限
 
@@ -71,9 +71,9 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 
 如果成功，此方法返回 `202 Accepted` 响应代码。它不在响应正文中返回任何内容。
 
-如果发生以下一个或两种情况，此操作将返回 HTTP 400：
+如果发生以下一个或两个情况，此操作将返回 HTTP 400：
 
-- 包含 **proposedNewTime** 参数， **但事件的 allowNewTimeProposals** **属性为** `false` 。 
+- **包含 proposedNewTime** 参数，但 **事件的 allowNewTimeProposals** 属性 **为** `false` 。 
 - 包含 **proposedNewTime** 参数，但 **sendResponse** 参数设置为 `false` 。
 
 

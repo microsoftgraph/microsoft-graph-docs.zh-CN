@@ -2,15 +2,15 @@
 title: windows10MobileCompliancePolicy 资源类型
 description: 此类包含 Windows 10 Mobile 的合规性设置。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c01cc6ca3344d0edbf6d68a01e1b95f9e7380973a403ba9bc7654f76c8e3bf70
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bcee4c7adf06cc3d9fa49616872c25539c043df8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235553"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123074"
 ---
 # <a name="windows10mobilecompliancepolicy-resource-type"></a>windows10MobileCompliancePolicy 资源类型
 

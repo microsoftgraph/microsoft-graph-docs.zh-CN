@@ -1,16 +1,16 @@
 ---
 title: patternedRecurrence 资源类型
 description: 定期模式和区域。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: harini84
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 2d7278edda51c783efafc4eedcf8425a91eb73204942be8fb40ed5bd61c71553
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 24917d3052e0cf9ec5a54a9b81edb0955925e425
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54146347"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117919"
 ---
 # <a name="patternedrecurrence-resource-type"></a>patternedRecurrence 资源类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "54146347"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|模式|[RecurrencePattern](recurrencepattern.md)|事件发生的频率。 不要指定一次访问评审。|
+|模式|[RecurrencePattern](recurrencepattern.md)|事件发生的频率。 不指定一次访问评审。|
 |区域|[RecurrenceRange](recurrencerange.md)|事件的持续时间。|
 
 ## <a name="json-representation"></a>JSON 表示形式

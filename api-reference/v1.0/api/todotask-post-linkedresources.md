@@ -2,22 +2,22 @@
 title: 创建 linkedResource
 description: 创建新的 linkedResource 对象。
 author: avijityadav
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8c99568099c99622373b91fff4a4b247e80f9288
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: a1e293f51579a0e72e069c57279479d6a73bff7c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874401"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59099273"
 ---
 # <a name="create-linkedresource"></a>创建 linkedResource
 命名空间：microsoft.graph
 
-创建 [linkedResource](../resources/linkedresource.md) 对象，将指定 [任务](../resources/todotask.md) 与合作伙伴应用程序中的项关联。 例如，可以将任务与 Outlook 中可跟踪该任务的电子邮件项目关联，也可以创建 **linkedResource** 对象来跟踪其关联。
+创建 [linkedResource](../resources/linkedresource.md) 对象以将指定 [任务](../resources/todotask.md) 与合作伙伴应用程序中的项目关联。 例如，可以将任务与任务中Outlook项关联，并可以创建 **linkedResource** 对象来跟踪其关联。
 
-还可以在创建任务时创建 **linkedResource** [对象](/graph/api/todotasklist-post-tasks?view=graph-rest-beta&preserve-view=true&tabs=http#examples)。
+还可以在创建任务 时创建 **linkedResource** [对象](/graph/api/todotasklist-post-tasks?view=graph-rest-beta&preserve-view=true&tabs=http#examples)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -52,9 +52,9 @@ POST /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/li
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|链接实体的服务器生成 ID 继承自 [实体](../resources/entity.md)|
-|WebUrl|String|指向链接实体的深层链接 |
-|applicationName|String|指示发送链接实体的源的应用名称的字段 |
+|id|String|链接实体的服务器生成的 ID 继承自 [实体](../resources/entity.md)|
+|WebUrl|String|链接到链接实体的深层链接 |
+|applicationName|String|指示发送链接实体的源的应用程序名称的字段 |
 |displayName|String|指示链接实体的标题的字段。 |
 |externalId|String|第三方/合作伙伴系统上与此任务关联的对象的 ID |
 
@@ -62,7 +62,7 @@ POST /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/li
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `201 Created` 正文中返回响应代码和 [linkedResource](../resources/linkedresource.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [linkedResource](../resources/linkedresource.md) 对象。
 
 ## <a name="examples"></a>示例
 

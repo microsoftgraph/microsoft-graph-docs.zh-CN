@@ -1,16 +1,16 @@
 ---
 title: educationSubmission： setUpResourcesFolder
 description: 触发创建 SharePoint 资源文件夹，其中应针对给定提交 (Word、Excel 等) 所有基于文件的资源。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sharmas
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f7fff669f408a9c2a8242506948f15c24b90a5cb
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: dcfa34792cac24aa3d45f820b8db0064b7566f42
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52993335"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59095180"
 ---
 # <a name="educationsubmission-setupresourcesfolder"></a>educationSubmission： setUpResourcesFolder
 
@@ -18,7 +18,7 @@ ms.locfileid: "52993335"
 
 触发创建 SharePoint 资源文件夹，其中应针对给定提交 (Word、Excel 等) 所有基于文件的资源。
 
-请注意，文件必须位于此文件夹中才能添加为资源。 只有班级中的学生可以确定要上载到给定提交级别资源文件夹中的文件。 
+请注意，文件必须位于此文件夹中才能添加为资源。 只有班级中的学生可以确定在给定提交级别资源文件夹中要上载的文件。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -32,7 +32,7 @@ ms.locfileid: "52993335"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc-9e13-44a2-a6ac-a53322006454/submissions/d1bee293-d8bb-48d4-af3e-c8cb0e3c7fe7/setUpResourcesFolder
+POST /education/classes/{id}/assignments/{id}/submissions/{id}/setUpResourcesFolder
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -59,7 +59,7 @@ POST /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005f
   "name": "educationsubmission_setupresourcesfolder"
 }-->
 ```msgraph-interactive
-POST https://graph.microsoft.com/v1.0/education/classes/d38ffdea-da93-46ac-90ba-d568c6073075/assignments/ad8afb28-c138-4ad7-b7f5-a6986c2655a8/submissions/d1bee293-d8bb-48d4-af3e-c8cb0e3c7fe7/setUpResourcesFolder
+POST https://graph.microsoft.com/v1.0/education/classes/b07edbef-7420-4b3d-8f7c-d599cf21e069/assignments/222bd-b7d2-4d64-8a22-74b722ce2fc6/submissions/803fb5dd-3553-455f-3d94-f79fb54a1003/setUpResourcesFolder
 Content-type: application/json
 
 {
@@ -99,7 +99,7 @@ Content-type: application/json
 Content-length: 279
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('b07edbef-7420-4b3d-8f7c-d599cf21e069')/assignments('1e5222bd-b7d2-4d64-8a22-74b722ce2fc6')/submissions/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('b07edbef-7420-4b3d-8f7c-d599cf21e069')/assignments('1e5222bd-b7d2-4d64-8a22-74b722ce2fc6')/submissions/$entity",
     "status": "working",
     "submittedDateTime": null,
     "unsubmittedDateTime": null,

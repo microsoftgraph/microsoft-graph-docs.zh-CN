@@ -3,14 +3,14 @@ title: 使用 Microsoft Graph API 配置应用程序代理
 description: 使用 Microsoft Graph API 配置应用程序代理，以提供对本地应用程序的远程访问和单一登录。
 author: davidmu1
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: 0394220290652a8be7931b384b16dc53631048210b7d982545636bc62bd86060
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 96a1f390b41f585d530b04a831a2d9a79a12aa88
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54149605"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59142423"
 ---
 # <a name="configure-application-proxy-using-the-microsoft-graph-api"></a>使用 Microsoft Graph API 配置应用程序代理
 
@@ -444,4 +444,4 @@ No Content - 204
 - [本地发布配置文件](/graph/api/resources/onpremisespublishingprofile-root?view=graph-rest-beta)
 - [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)
 - [singleSignOnSettings](/graph/api/resources/onpremisespublishingsinglesignon?view=graph-rest-beta)
-- [user](/graph/api/resources/user?view=graph-rest-1.0)
+- [用户](/graph/api/resources/user?view=graph-rest-1.0)

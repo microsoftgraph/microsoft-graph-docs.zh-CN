@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: 获取 SharePoint 网站
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: sharepoint
 description: 检索网站资源的属性和关系。
 doc_type: apiPageType
-ms.openlocfilehash: cb95e5c4568a982529a04adccac11d458efa7cd2
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 24168f74fa42c0d8df533d8175447c009a35afc8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239301"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085041"
 ---
 # <a name="get-a-site-resource"></a>获取网站资源
 

@@ -2,15 +2,15 @@
 title: 删除 linkedResource
 description: 删除 linkedResource 对象。
 author: avijityadav
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0dd863891d9071a45a3984609b6f71a02cec5e78
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 81225230fd78eac56d60ec4b96e778c17a0bdea8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873162"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019795"
 ---
 # <a name="delete-linkedresource"></a>删除 linkedResource
 命名空间：microsoft.graph

@@ -1,16 +1,16 @@
 ---
 title: 获取 plannerBucketTaskBoardTaskFormat
 description: 检索 **plannerBucketTaskBoardTaskFormat** 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: ea8303d0af94183580b7a06eaa436c935b233ff4
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: fc57204aede729aa7b8f100d5b8d2e197abb491d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52039151"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59037227"
 ---
 # <a name="get-plannerbuckettaskboardtaskformat"></a>获取 plannerBucketTaskBoardTaskFormat
 
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/v1.0/planner/tasks/{task-id}/bucketTaskBoardForm
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

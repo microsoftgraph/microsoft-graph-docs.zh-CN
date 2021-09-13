@@ -1,16 +1,16 @@
 ---
 title: deviceDetail 资源类型
 description: 指示与用于登录的设备关联的设备详细信息。 这包括设备浏览器和操作系统等信息，以及设备是否受 Azure AD 托管。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dhanyahk
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 56522ef5ea6a3404298c776ebdbeebe97c42b2818edfd953af66b050bf793dbd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 91710dc5079bc879b8b23a8a3f5b621f4ecc1968
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54126660"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59089821"
 ---
 # <a name="devicedetail-resource-type"></a>deviceDetail 资源类型
 

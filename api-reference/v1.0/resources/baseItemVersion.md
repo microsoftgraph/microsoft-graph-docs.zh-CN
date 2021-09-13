@@ -1,16 +1,16 @@
 ---
 title: BaseItemVersion 资源类型
 description: '**baseItemVersion** 资源表示项或实体的以前版本。'
-localization_priority: Normal
+ms.localizationpriority: medium
 author: JeremyKelley
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: f5a9f52ad13b2c0d12b2040f306ad23d74d5b18fa87c7fd15d1142df969147fd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3679353e4e5c5aafb2b6594662cbe528ee714ca9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54218826"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59015621"
 ---
 # <a name="baseitemversion-resource-type"></a>BaseItemVersion 资源类型
 

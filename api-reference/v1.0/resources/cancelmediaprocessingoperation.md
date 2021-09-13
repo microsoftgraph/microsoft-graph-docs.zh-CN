@@ -2,15 +2,15 @@
 title: cancelMediaProcessingOperation 资源类型
 description: 此资源类型用于描述取消媒体处理操作的响应格式。
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 6896a7a4d08aea0c4d394bfbaef8a54bd4c789b310f0079dbbf08daac99606d6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9b7cecdfbbb6ced93149740de89a18081a04cffa
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235686"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59078936"
 ---
 # <a name="cancelmediaprocessingoperation-resource-type"></a>CancelMediaProcessingOperation 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54235686"
 
 | 属性      | 类型                        | 说明                                                                     |
 | :------------ | :-------------------------- | :------------------------------------------------------------------------------ |
-| all           | Boolean                     | 指示是停止所有操作还是当前操作。                            |
+| all           | 布尔值                     | 指示是停止所有操作还是当前操作。                            |
 | clientContext | String                      | 客户端上下文。                                                             |
 | id            | String                      | 服务器操作 ID。 只读。                                             |
 | resultInfo    | [resultInfo](resultinfo.md) | 结果信息。  只读。                                             |

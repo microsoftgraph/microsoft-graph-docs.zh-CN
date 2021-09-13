@@ -1,22 +1,22 @@
 ---
 title: 选择 Microsoft Graph身份验证提供程序
 description: 了解如何为应用程序选择特定于方案的身份验证提供程序。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: MichaelMainer
-ms.openlocfilehash: 35717b83c5df9a56351200e4f762c85459854929
-ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
+ms.openlocfilehash: 328c696d2fff74ea790a2cf51530116049c35988
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58384532"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59078537"
 ---
 <!-- markdownlint-disable MD001 MD024 MD025 -->
 
 # <a name="choose-a-microsoft-graph-authentication-provider-based-on-scenario"></a>根据方案选择 Microsoft Graph 身份验证提供程序
 
-身份验证提供程序使用 MICROSOFT 身份验证库和 MSAL 身份验证库实现获取 (所需的) ;处理增量同意、密码过期和条件访问等情况下的一些潜在错误;，然后设置 HTTP 请求授权标头。 下表列出了一组与不同应用程序类型的方案匹配的 [提供程序](/azure/active-directory/develop/v2-app-types)。
+身份验证提供程序实现使用 MICROSOFT 身份验证库或 MSAL 证书获取令牌 (所需的) ;处理增量同意、密码过期和条件访问等情况下的一些潜在错误;，然后设置 HTTP 请求授权标头。 下表列出了一组与不同应用程序类型的方案匹配的 [提供程序](/azure/active-directory/develop/v2-app-types)。
 
-| 方案                                                                                               | Flow/Grant         | 受众               | 提供程序 |
+| 方案                                                                                               | Flow/授予         | 受众               | 提供程序 |
 |--------------------------------------------------------------------------------------------------------|--------------------|------------------------|-----|
 | [单页应用](/azure/active-directory/develop/scenario-spa-acquire-token)                          | 授权代码 |                        |     |
 |                                                                                                        | 使用 PKCE          | 委派使用者/组织 | [授权代码提供程序](#authorization-code-provider) |
@@ -364,7 +364,7 @@ var graphClient = new GraphServiceClient(authProvider);
 
 ## <a name="device-code-provider"></a>设备代码提供程序
 
-设备代码流允许通过另一台设备登录到设备。 有关详细信息，请参阅[Microsoft 标识平台 和 OAuth 2.0 设备代码流](/azure/active-directory/develop/v2-oauth2-device-code)。
+设备代码流允许通过其他设备登录设备。 有关详细信息，请参阅[Microsoft 标识平台和 OAuth 2.0 设备代码流](/azure/active-directory/develop/v2-oauth2-device-code)。
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -464,11 +464,11 @@ final User me = graphClient.me().buildRequest().get();
 
 ## <a name="integrated-windows-provider"></a>集成Windows提供程序
 
-集成Windows流为Windows加入域时以静默方式获取访问令牌提供了一种方法。 有关详细信息，请参阅集成Windows[身份验证](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Integrated-Windows-Authentication)。
+集成Windows流为Windows加入域时以静默方式获取访问令牌提供了一种方法。 有关详细信息，请参阅集成身份验证[Windows身份验证](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Integrated-Windows-Authentication)。
 
 # <a name="c"></a>[C#](#tab/CS)
 
-程序包 `Azure.Identity` 当前不支持Windows身份验证。 而是使用 MSAL 创建自定义身份验证提供程序。
+`Azure.Identity`程序包当前不支持Windows身份验证。 而是使用 MSAL 创建自定义身份验证提供程序。
 
 ```csharp
 var scopes = new[] { "User.Read" };
@@ -695,6 +695,6 @@ final User me = graphClient.me().buildRequest().get();
 
 ## <a name="next-steps"></a>后续步骤
 
-* 有关显示如何使用 Microsoft 标识平台 保护不同应用程序类型的代码示例，请参阅 Microsoft 标识平台[v2.0 终结点 (代码) 。 ](/azure/active-directory/develop/sample-v2-code)
+* 有关显示如何使用 Microsoft 标识平台 保护不同应用程序类型的代码示例，请参阅 Microsoft 标识平台[v2.0](/azure/active-directory/develop/sample-v2-code)终结点 () 。
 * 身份验证提供程序需要客户端 ID。 设置身份验证 [提供程序后](https://portal.azure.com/) ，需要注册应用程序。
-* 通过投票或打开 Microsoft Graph请求，请告诉我们所需的[OAuth 流当前是否受支持](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph)。
+* 通过投票或打开 Microsoft Graph请求，请告诉我们所需的 OAuth[流当前是否受支持](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph)。

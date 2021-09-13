@@ -2,15 +2,15 @@
 title: ChartAxis 资源类型
 description: 代表图表中的单个坐标轴。
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: f7a2672e9f581a4106b93fd63af5d025795af7afcd7f39b9b515dd1f09398090
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b8fc54bb509bc88f51e39aed9bca9d23ed0ac89a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54135328"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59126931"
 ---
 # <a name="chartaxis-resource-type"></a>ChartAxis 资源类型
 

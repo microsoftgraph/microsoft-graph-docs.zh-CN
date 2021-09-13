@@ -2,29 +2,29 @@
 title: Windows更新 API 概述
 description: 适用于Windows更新部署服务可让你的组织控制提供给你的设备的更新。
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: a8cd51524647c3fc34be1619cc0c61e433e4031ab805c4269e309e0502e1fae6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: df2977584ba523f6efcc71366bd63db481539ce1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54225669"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117625"
 ---
 # <a name="windows-updates-api-overview"></a>Windows更新 API 概述
 
-the Windows Update for Business deployment service provides control over device updates through the ability to approve， schedule and safeguard content delivered by Windows Update. 
+The Windows Update for Business deployment service provides control over device updates through the ability to approve， schedule and safeguard content delivered by Windows Update. 
 
 ## <a name="why-use-the-windows-update-for-business-deployment-service"></a>为什么使用 Windows Update for Business 部署服务？
 
 IT 专业人员和管理工具供应商都可以使用部署服务：
 * 将更新部署安排在特定的日期开始
 * 使用富表达式在几天或几周内阶段部署
-* 绕过预配置的 Windows 更新 for Business 策略以立即部署安全更新
-* 通过针对唯一设备总体部署定制的部署，确保组织中硬件和软件 (范围) 
+* 绕过预配置的 Windows Update for Business 策略以立即部署安全更新
+* 通过针对唯一设备填充和移动设备配置定制的部署，确保 (硬件和软件) 
 
-现在，部署服务支持管理Windows 10功能更新和Windows 10安全更新。 若要了解有关企业更新上下文中的部署服务Windows，请参阅[部署服务概述](https://docs.microsoft.com/windows/deployment/update/deployment-service-overview)。
+如今，部署服务支持管理Windows 10功能更新和Windows 10安全更新。 若要了解有关企业更新上下文中部署服务Windows，请参阅[部署服务概述](https://docs.microsoft.com/windows/deployment/update/deployment-service-overview)。
 
 ## <a name="prerequisites"></a>先决条件    
 
@@ -36,7 +36,7 @@ IT 专业人员和管理工具供应商都可以使用部署服务：
 
 此外，部署服务管理的设备必须：
 * 加入 Azure AD 或加入混合 AD
-* 运行下列版本之一Windows 10：Windows 10 专业版、Windows 10 企业版、Windows 10 教育版、Windows 10 专业教育版
+* 运行下列版本之Windows 10：Windows 10 专业版、Windows 10 企业版、Windows 10 教育版、Windows 10 专业教育版
 * 已安装Windows 10版本 1709 或更高版本
 
 ## <a name="enroll-devices-to-be-managed"></a>注册要管理的设备
@@ -47,7 +47,7 @@ IT 专业人员和管理工具供应商都可以使用部署服务：
 
 部署服务简化了针对各种设备生态系统的审阅、批准、计划和部署内容。 存在更新目录以提供专为审批定制的视图，帮助您重点关注重要的审批决策，并避免需要对相关更新的深入列表进行排序。
 
-选择要部署的更新后，可以将部署安排为在将来开始，或在一定时段内部署。 如果选择在一段时间内部署更新，部署服务将自动优化设备提供更新的顺序。 如果可能，该服务对设备进行订购，以确保在部署早期表示硬件和软件资产的多样性，以最大限度地减少可能遇到意外更新问题的设备数量。 
+选择要部署的更新后，可以计划部署以在将来开始，或部署一段时间。 如果选择在一段时间内部署更新，部署服务将自动优化设备提供更新的顺序。 如果可能，该服务对设备进行订购，以确保在部署早期表示硬件和软件资产的多样性，以最大限度地减少可能遇到意外更新问题的设备数量。 
 
 详细了解部署服务：
 * [软件更新](windowsupdates-software-updates.md)

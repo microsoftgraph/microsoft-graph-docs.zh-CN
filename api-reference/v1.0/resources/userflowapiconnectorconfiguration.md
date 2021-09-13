@@ -2,21 +2,21 @@
 title: userFlowApiConnectorConfiguration 资源类型
 description: 表示为用户流启用的 API 连接器。
 author: nickgmicrosoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 474011cceb4c05e2c1b8f61aa4ea0e05e03df26857a0c10ea3a7197d453d24c6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2f58a1d64d863ab09fdd5713a0f41b5143cb5630
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54230415"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59083941"
 ---
 # <a name="userflowapiconnectorconfiguration-resource-type"></a>userFlowApiConnectorConfiguration 资源类型
 
 命名空间：microsoft.graph
 
-定义在用户流中的特定点调用的 API。  此对象的每个关系对应于可配置为调用 API 连接器的用户流中的特定步骤。
+定义在用户流中的特定点调用的 API。  此对象的每个关系对应于用户流中可配置为调用 API 连接器的特定步骤。
 
 ## <a name="relationships"></a>关系
 

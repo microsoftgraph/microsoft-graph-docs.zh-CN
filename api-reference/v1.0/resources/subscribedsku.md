@@ -1,16 +1,16 @@
 ---
 title: subscribedSku 资源类型
 description: 包含有关公司订阅的服务 SKU 的信息。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: SumitParikh
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: f42df21b5c7e414f03c172b41a0f25ba3dcd59359ec699af9c7e0a06869059fd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: dd497dd40e691fe8751517b7c9b540844e29e615
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163647"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134455"
 ---
 # <a name="subscribedsku-resource-type"></a>subscribedSku 资源类型
 
@@ -43,7 +43,7 @@ ms.locfileid: "54163647"
 
 ## <a name="json-representation"></a>JSON 表示形式
 
-下面是资源的 JSON 表示形式。
+下面是资源的 JSON 表示形式
 
 <!--{
   "blockType": "resource",
@@ -79,6 +79,11 @@ ms.locfileid: "54163647"
 }
 
 ```
+
+## <a name="see-also"></a>另请参阅
+
++ [用于许可的产品名称和服务计划标识符](/azure/active-directory/enterprise-users/licensing-service-plan-reference)
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {

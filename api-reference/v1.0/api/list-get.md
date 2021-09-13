@@ -1,16 +1,16 @@
 ---
 author: JeremyKelley
 title: 获取 SharePoint 列表
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: sharepoint
 description: 返回列表的元数据。
 doc_type: apiPageType
-ms.openlocfilehash: fd2a21bbd58dc1b0043486f47b5dd2175bdec645
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 62aebd84963b7ef93a0e4e0af863a24cb6937b15
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50956462"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063025"
 ---
 # <a name="get-metadata-for-a-list"></a>获取列表的元数据
 

@@ -2,15 +2,15 @@
 title: windowsInformationProtectionProxiedDomainCollection 资源类型
 description: Windows 信息保护代理域集合
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2a4e899d83d963d08e14a8ad4491729096cb7e95ec11ff6d05fa8eab2f6a4224
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ece4345bba6c3553e2276be5a1b1e12c24e589a5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54205288"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59078810"
 ---
 # <a name="windowsinformationprotectionproxieddomaincollection-resource-type"></a>windowsInformationProtectionProxiedDomainCollection 资源类型
 

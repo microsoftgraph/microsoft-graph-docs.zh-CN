@@ -2,15 +2,15 @@
 title: 获取 emailAuthenticationMethodConfiguration
 description: 读取 emailAuthenticationMethodConfiguration 对象的属性和关系。
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 15aa3de4b66b566c1943709330478d035ead0977
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: ee785ec8b1abe43753037d4262705e66fa03bfea
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53442926"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074348"
 ---
 # <a name="get-emailauthenticationmethodconfiguration"></a>获取 emailAuthenticationMethodConfiguration
 

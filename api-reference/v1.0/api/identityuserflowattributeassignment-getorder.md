@@ -2,15 +2,15 @@
 title: identityUserFlowAttributeAssignment： getOrder
 description: 获取在用户流中收集的 identityUserFlowAttributeAssignments 的顺序。
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a3d513caab828c4b7704e8d7fd14be213e159db4
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 15cc7851d8d41a3fba5ef637d65a62710a637cb9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51920674"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045628"
 ---
 # <a name="identityuserflowattributeassignment-getorder"></a>identityUserFlowAttributeAssignment： getOrder
 
@@ -43,7 +43,7 @@ GET /identity/b2xUserFlows/{b2xIdentityUserFlowId}/userAttributeAssignments/getO
 
 |名称|说明|
 |:---|:---|
-|Authorization|Bearer {token}。必需。|
+|Authorization|持有者{令牌}。必需。|
 
 ## <a name="function-parameters"></a>函数参数
 

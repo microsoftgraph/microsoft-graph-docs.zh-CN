@@ -2,14 +2,14 @@
 title: 云通信入门
 description: 了解如何使用机器人响应客户的需求并促进协作。
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
-ms.openlocfilehash: a977c2a81d40679eb3029bdfaf7560dd744fc9439e7a650e63d470198883ab0d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fbee887a3a45130b47af0632f0c232a646848022
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54246505"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136164"
 ---
 # <a name="get-started-with-cloud-communications"></a>云通信入门
 
@@ -19,7 +19,7 @@ Microsoft 中的云通信 API Graph通过各种通信相关功能（如通话和
 
 在开始使用之前，熟悉以下内容会很有帮助：
 
-- [Azure Active Directory (](/azure/active-directory/fundamentals/active-directory-whatis) Azure AD) 服务如何帮助员工登录和访问资源。
+- [Azure Active Directory (](/azure/active-directory/fundamentals/active-directory-whatis) Azure AD) 以及该服务如何帮助员工登录和访问资源。
 - [Azure Bot 服务](/azure/bot-service/bot-service-overview-introduction?view=azure-bot-service-3.0)及其功能。
 
 ## <a name="register-a-bot"></a>注册自动程序
@@ -28,7 +28,7 @@ Microsoft 中的云通信 API Graph通过各种通信相关功能（如通话和
 
 为了在以后简化操作，了解 Azure AD 中 [不同类型的权限非常有用](/azure/active-directory/develop/v1-permissions-and-consent#types-of-permissions) 。 具有委派权限的应用需要登录用户。 基于应用程序的权限不需要登录用户，通常可以作为后台服务运行。
 
-注册自动程序后，如果你想要将机器人添加到[Microsoft Teams，请确保](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot)你了解如何使用[app Studio](/microsoftteams/platform/get-started/get-started-app-studio)并定义所需的元数据。
+注册自动程序后，如果你想要将机器人添加到[Microsoft Teams，请确保](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot)你了解如何使用[app studio](/microsoftteams/platform/get-started/get-started-app-studio)并定义所需的元数据。
 
 ## <a name="manage-the-state-of-the-bot"></a>管理自动程序的状态
 

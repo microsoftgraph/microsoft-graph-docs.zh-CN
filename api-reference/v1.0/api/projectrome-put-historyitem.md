@@ -1,16 +1,16 @@
 ---
 title: 创建或替换 historyItem
 description: 为现有用户活动创建新的或替换现有历史记录项。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: project-rome
 author: ailae
 doc_type: apiPageType
-ms.openlocfilehash: dfeb7dce28e04346e82a91feda155bc29db7013746dac44545ac7d48433d7bae
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: acba9ae740fc2eac42939192abfb4291a040eec1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54192696"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085124"
 ---
 # <a name="create-or-replace-a-historyitem"></a>创建或替换 historyItem
 

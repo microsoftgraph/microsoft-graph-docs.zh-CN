@@ -2,15 +2,15 @@
 title: ratingAustraliaTelevisionType 枚举类型
 description: 澳大利亚电视内容分级标签
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2c39ff6fb1d36995f634c3bf26c1a94d580766623b6bc56df29b9571f68882e4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 616d0e35a5c7e8be95b069c4337766d17c40c9fb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54202306"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59053005"
 ---
 # <a name="ratingaustraliatelevisiontype-enum-type"></a>ratingAustraliaTelevisionType 枚举类型
 

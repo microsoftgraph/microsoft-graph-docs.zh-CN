@@ -1,16 +1,16 @@
 ---
 title: plannerChecklistItem 资源类型
 description: '**plannerChecklistItem** 资源表示任务清单中的一个项目。 任务上的清单由 checklistItems 对象表示。'
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: a183ee092c0b7af5468e67fa54a63830314aef0490f4001d3527a01d7979b724
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a8ba68b0b9e9bb3bf6979ad9eb3d498fe55b80ee
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54154908"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59113544"
 ---
 # <a name="plannerchecklistitem-resource-type"></a>plannerChecklistItem 资源类型
 

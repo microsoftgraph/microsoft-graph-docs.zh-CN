@@ -1,16 +1,16 @@
 ---
 title: agreementAcceptance 资源类型
 description: 表示由 Azure AD Azure Active Directory (支持的公司可自定义使用条款范围内的用户) 。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 3e90efb1ff9e96b9e3f7b516f815201288edcd4aa9f7891af1a1320b8e0c3735
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2df1803b8601635eba163aa3abd46d70ee0a5723
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54135360"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59089968"
 ---
 # <a name="agreementacceptance-resource-type"></a>agreementAcceptance 资源类型
 
@@ -27,9 +27,9 @@ ms.locfileid: "54135360"
 |deviceId|String|用于接受协议的设备的唯一标识符。|
 |deviceOSType|String|用于接受协议的操作系统。|
 |deviceOSVersion|String|用于接受协议的设备的操作系统版本。    |
-|expirationDateTime|DateTimeOffset|接受的到期日期时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|expirationDateTime|DateTimeOffset|接受的到期日期时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
 |id|String| 协议接受的标识符。 只读。|
-|recordedDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
+|recordedDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
 |state|string| 协议接受的状态。 可取值为：`accepted`、`declined`。|
 |userDisplayName|String|记录接受时用户的显示名称。|
 |userEmail|String|记录接受时用户的电子邮件。|

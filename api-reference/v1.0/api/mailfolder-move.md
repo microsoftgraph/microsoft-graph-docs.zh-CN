@@ -2,15 +2,15 @@
 title: 'mailFolder: move'
 description: 将 Mailfolder 及其内容移动到其他 mailfolder。
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 495735363e3c22bafceb31ed94fa794c324344fc
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 2de0725028b812be63fd50a064f6183f02c4d3b0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055937"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59053495"
 ---
 # <a name="mailfolder-move"></a>mailFolder: move
 

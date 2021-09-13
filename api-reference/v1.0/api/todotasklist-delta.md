@@ -1,22 +1,22 @@
 ---
 title: todoTaskList： delta
-description: 获取已添加、删除或删除的一组 todoTaskList 微软待办。
-localization_priority: Normal
+description: 获取一组已在 微软待办 中添加、删除或删除的 todoTaskList 微软待办。
+ms.localizationpriority: medium
 author: avijityadav
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 907f4d41bcfdee7f4d536829f1e21e661f8649c216544504dc6476fccdf8e314
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 25f4b1369f8c58d627399ecbdf0d13810fd0842a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54172020"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59090143"
 ---
 # <a name="todotasklist-delta"></a>todoTaskList： delta
 
 命名空间：microsoft.graph
 
-获取已添加、删除或删除的一组[todoTaskList](../resources/todotasklist.md)微软待办。
+获取一组已在 微软待办 中添加、删除或删除的[todoTaskList](../resources/todotasklist.md)微软待办。
 
 **todoTaskList** 的 **delta** 函数调用类似于 GET 请求，只不过通过在这些调用中的一 [](/graph/delta-query-overview)个或多个调用中正确应用状态令牌，您可以查询 **todoTaskList** 中的增量更改。 这样，您即可维护和同步用户的 **todoTaskList** 的本地存储，而无需每次从服务器获取所有 **todoTaskList。**
 
@@ -65,7 +65,7 @@ GET /users/{id|userPrincipalName}/todo/lists/delta
 ### <a name="request"></a>请求
 以下示例演示如何进行初始 **delta** 函数调用，将响应正文中 **todoTaskList** 的最大数目限制为 2。
 
-若要跟踪 **todoTaskList** 中的更改，可以使用适当的状态令牌进行一次或多次 **delta** 函数调用，获取自上次 delta 查询以来的增量更改集。 
+若要跟踪 **todoTaskList** 中的更改，可以使用适当的状态令牌进行一次或多个 **delta** 函数调用，获取自上次 delta 查询以来的增量更改集。 
 
 跟踪 **todoTaskList** 和跟踪列表中的 **todoTask** 资源之间的主要区别是 delta 查询请求 URL，查询响应返回 **todoTaskList** 而不是 **todoTask 集合** 。
 

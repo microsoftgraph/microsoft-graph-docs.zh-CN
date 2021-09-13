@@ -1,16 +1,16 @@
 ---
 title: 获取 conversationThread
 description: '获取属于某个组的特定线程。 你可以同时指定父会话和线程，或者， '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: eb0f098c6400ef03691980cefd28d72e7a481fb0
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 6cdbc25ca2a573edc9142b27978c9d0b2fd44eb0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53534521"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59050640"
 ---
 # <a name="get-conversationthread"></a>获取 conversationThread
 

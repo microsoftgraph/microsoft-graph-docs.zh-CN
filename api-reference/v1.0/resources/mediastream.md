@@ -2,15 +2,15 @@
 title: mediaStream 资源类型
 description: mediaStream 类型。
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 98fa09655faa6068c48c6fe2d1e340fa28ff253b99717900bed5d9f863561c1b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4fa45c863bf06d2c1c2083a1f66796abcb46eaff
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54141439"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134603"
 ---
 # <a name="mediastream-resource-type"></a>mediaStream 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "54141439"
 | direction   | String  | 方向。 可能的值为 `inactive` `sendOnly` `receiveOnly` 、、、。 `sendReceive`                  |
 | 标签       | String  | 媒体流标签。                                                                                       |
 | mediaType   | String  | 媒体类型。 可能的值为 `unknown` `audio` `video` `videoBasedScreenSharing` `data` 、、。        |
-| serverMuted | Boolean | 如果服务器将媒体设为静音。                                                                          |
+| serverMuted | 布尔值 | 如果服务器将媒体设为静音。                                                                          |
 | sourceId    | String  | 源 ID。                                                                                                |
 
 ## <a name="json-representation"></a>JSON 表示形式

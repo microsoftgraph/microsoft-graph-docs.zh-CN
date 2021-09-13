@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/11/2017
 title: BooleanColumn
-localization_priority: Normal
+ms.localizationpriority: medium
 description: columnDefinition 资源上的 booleanColumn 指示该列包含一个布尔值。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: df54ae53322cb933276abc33474ce9ce666b813bc91cbd831735d238e158f068
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e25307aee02485cc6b0bab8b0dd4e8ed58958947
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54169674"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019389"
 ---
 # <a name="booleancolumn-resource-type"></a>BooleanColumn 资源类型
 

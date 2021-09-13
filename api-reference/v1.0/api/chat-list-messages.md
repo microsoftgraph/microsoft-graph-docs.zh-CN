@@ -1,16 +1,16 @@
 ---
 title: 列出聊天中的消息
 description: '在聊天中检索消息列表。 '
-localization_priority: Priority
+ms.localizationpriority: high
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b35a4a1780331d76cfef9d7ed394e8f6469d3092
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: 3ea570208c5c55fbf04ef6c57e92ffdf09f40689
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58667967"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100321"
 ---
 # <a name="list-messages-in-a-chat"></a>列出聊天中的消息
 

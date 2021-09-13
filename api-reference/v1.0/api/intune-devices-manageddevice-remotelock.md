@@ -2,15 +2,15 @@
 title: remoteLock 操作
 description: 远程锁定
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5e852ebde50d4fc27aea76daafcec51f40c50d15a339857bcdf8f6a5b1642ac6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f116f433252d8026dc2d6c1f24fccf97dcd0989c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54245623"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056303"
 ---
 # <a name="remotelock-action"></a>remoteLock 操作
 

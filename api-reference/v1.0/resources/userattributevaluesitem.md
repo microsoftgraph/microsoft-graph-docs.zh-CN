@@ -2,15 +2,15 @@
 title: userAttributeValuesItem 资源类型
 description: 表示用户流中的用户流属性值。
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 88e19bfa02876e08df4c3040ff6bcfefae41840278719b83ccc7b57be651f5a0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 690b9f53762359ab559fb98534525cad15e5e282
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54205211"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59083962"
 ---
 # <a name="userattributevaluesitem-resource-type"></a>userAttributeValuesItem 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "54205211"
 |属性|类型|说明|
 |:---|:---|:---|
 |isDefault|Boolean|确定是否将该值设置为默认值。|
-|name|String|在显示名称流中向用户显示的属性的行数。|
+|name|String|在显示名称流中向用户显示的属性的列表。|
 |value|String|选择此项时设置的值。|
 
 ## <a name="relationships"></a>关系

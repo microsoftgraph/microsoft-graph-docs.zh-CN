@@ -2,15 +2,15 @@
 title: 创建 windowsUpdateForBusinessConfiguration
 description: 创建新的 windowsUpdateForBusinessConfiguration 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a2918d5cef37f240cfe05a9121ca5ca19ef7c8b41f134778333d71f3e86b1d55
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 576c56bc2d3710b97893f5ced30317f5f3d6493a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54175754"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59114202"
 ---
 # <a name="create-windowsupdateforbusinessconfiguration"></a>创建 windowsUpdateForBusinessConfiguration
 

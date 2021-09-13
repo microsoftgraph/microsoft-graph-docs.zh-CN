@@ -2,15 +2,15 @@
 title: Shift 资源类型
 description: 表示计划中的计划工作单位。
 author: akumar39
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: abec7f019750dbfe30335e1c8d6df3ecbb95c2d8e99a2c3720381307560ef22a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3b00e93f4622b91e7abe92a68007e870b5ab432e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54169282"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032221"
 ---
 # <a name="shift-resource-type"></a>Shift 资源类型
 
@@ -26,16 +26,16 @@ ms.locfileid: "54169282"
 |[创建班次](../api/schedule-post-shifts.md) | [shift](shift.md) | 创建新的 **班次。**|
 |[获取班次](../api/shift-get.md) | [shift](shift.md) | 按 **ID 获取** 班次。|
 |[替换班次](../api/shift-put.md) | [shift](shift.md) | 替换 **班次**。|
-|[删除班次](../api/shift-delete.md) | 无 | 从 **计划中删除** 班次。|
+|[删除班次](../api/shift-delete.md) | None | 从 **计划中删除** 班次。|
 
 ## <a name="properties"></a>属性
 |名称          |类型           |说明                                                                                                                                      |
 |--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | id            |`string`      |班次的 **ID。**|
-| userId            |`string`      |分配给班次 的用户的 **ID。** 必填。 |
-| schedulingGroupId         |`string`      |班次属于的计划 **组的** ID。 必填。 |
-| sharedShift   |[shiftItem](shiftitem.md)  |员工 **和经理都** 可查看此班次的共享版本。 必填。 |
-| draftShift        |[shiftItem](shiftitem.md)        |经理 **可查看的此** 班次的草稿版本。 必填。 |
+| userId            |`string`      |分配给班次 的用户的 **ID。** 必需。 |
+| schedulingGroupId         |`string`      |班次属于的计划 **组的** ID。 必需。 |
+| sharedShift   |[shiftItem](shiftitem.md)  |员工 **和经理都** 可查看此班次的共享版本。 必需。 |
+| draftShift        |[shiftItem](shiftitem.md)        |经理 **可查看的此** 班次的草稿版本。 必需。 |
 | createdDateTime       |`DateTimeOffset`        |首次创建此 **班次的时间戳** 。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 |
 | lastModifiedDateTime      |`DateTimeOffset`        |上次更新此 **班次的时间戳** 。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 |
 | lastModifiedBy        | [identitySet](identityset.md)        |上次更新此班次的 **标识**。|

@@ -2,15 +2,15 @@
 title: 创建架构
 description: 为连接创建Microsoft 搜索架构。
 author: mecampos
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: e1b928041e7891127a5e1de4fa46c5906815dd90
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: 3417dfbf59db0d2488c365af5b880b4956d1240a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58454239"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046125"
 ---
 # <a name="create-schema"></a>创建架构
 命名空间：microsoft.graph.externalConnectors

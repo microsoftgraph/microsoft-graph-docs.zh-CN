@@ -1,16 +1,16 @@
 ---
 title: teleconferenceDeviceMediaQuality 资源类型
 description: 视频电话会议设备媒体质量数据。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 96e10a50dfa93f4a226585092c57d9ab8dbe5cb3b5e8a2593198ca32402852c4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 45ca9d4bdc34077ea19bdcbac866495a198ea5ab
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54146368"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128128"
 ---
 # <a name="teleconferencedevicemediaquality-resource-type"></a>teleconferenceDeviceMediaQuality 资源类型
 
@@ -23,17 +23,17 @@ ms.locfileid: "54146368"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |averageInboundJitter|期限|平均入站流网络抖动。|
-|averageInboundPacketLossRateInPercentage|双精度|0 到 100 (的平均入站流数据包丢失) 。 例如，0.01 表示 0.01%。|
+|averageInboundPacketLossRateInPercentage|双精度|平均入站流数据包丢失率（以百分比表示 (0-100) 。 例如，0.01 表示 0.01%。|
 |averageInboundRoundTripDelay|期限|平均入站流网络往返延迟。|
 |averageOutboundJitter|期限|平均出站流网络抖动。|
-|averageOutboundPacketLossRateInPercentage|双精度|0 到 100 (的平均出站流数据包丢失) 。 例如，0.01 表示 0.01%。|
+|averageOutboundPacketLossRateInPercentage|双精度|从 0 到 100 (的平均出站流数据包丢失) 。 例如，0.01 表示 0.01%。|
 |averageOutboundRoundTripDelay|期限|平均出站流网络往返延迟。|
-|channelIndex|Int32|媒体的频道索引。 索引从 1 开始。  如果媒体会话包含 3 种视频形式，则通道索引将为 1、2 和 3。|
+|channelIndex|Int32|媒体的频道索引。 索引从 1 开始。  如果媒体会话包含 3 种视频形式，则频道索引将为 1、2 和 3。|
 |inboundPackets|Int64|入站数据包的总数。|
 |localIPAddress|String|媒体会话的本地 IP 地址。|
 |localPort|Int32|本地媒体端口。|
 |maximumInboundJitter|期限|最大入站流网络抖动。|
-|maximumInboundPacketLossRateInPercentage|双精度|最大入站流数据包丢失率，以百分比表示 (0-100) 。 例如，0.01 表示 0.01%。|
+|maximumInboundPacketLossRateInPercentage|双精度|最大入站流数据包丢失率（以百分比表示 (0-100) 。 例如，0.01 表示 0.01%。|
 |maximumInboundRoundTripDelay|期限|最大入站流网络往返延迟。|
 |maximumOutboundJitter|期限|最大出站流网络抖动。|
 |maximumOutboundPacketLossRateInPercentage|双精度|最大出站流数据包丢失率（以百分比表示 (0-100) 。 例如，0.01 表示 0.01%。|

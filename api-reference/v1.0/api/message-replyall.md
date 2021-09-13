@@ -2,15 +2,15 @@
 title: 消息：replyAll
 description: 使用 JSON 或 MIME 格式答复邮件的所有收件人。
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a47223c925e9ac4c1e45769f3fe04f44c80c1c71
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 4c6d22d1623b03ce57ecbb8647af59200360878b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52869910"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016097"
 ---
 # <a name="message-replyall"></a>消息：replyAll
 
@@ -60,7 +60,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/replyAll
 |:---------------|:--------|:----------|
 |注释|String|要包含的注释。可以为空字符串。|
 
-指定 MIME 格式的正文时，请提供 MIME 内容以及适用的 Internet 邮件头，所有邮件头在请求正文中都以 **base64** 格式进行编码。 此方法将原始邮件的发件人及所有收件人加载为新邮件的收件人。
+当指定 MIME 格式的正文时，向 MIME 内容提供适用的 Internet 邮件头，所有邮件头在请求正文中都以 **base64** 格式进行编码。 此方法将原始邮件的发件人及所有收件人加载为新邮件的收件人。
 
 ## <a name="response"></a>响应
 

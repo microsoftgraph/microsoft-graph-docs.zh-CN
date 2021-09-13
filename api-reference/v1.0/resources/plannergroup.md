@@ -1,16 +1,16 @@
 ---
 title: plannerGroup 资源类型
 description: '**plannerGroup** 资源提供对组 Planner 资源的访问权限。 它不包含任何可用属性。'
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: be82fb6988c88f40bc975af28240e9a99f6f9d5c13ec7069af93c3f34b92e04c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1140d22b4b2f1bb5f863c19a741d08171c5f00f7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54205225"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019256"
 ---
 # <a name="plannergroup-resource-type"></a>plannerGroup 资源类型
 
@@ -32,7 +32,7 @@ ms.locfileid: "54205225"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|计划|[plannerPlan](plannerplan.md) 集合| 只读。 可为 NULL。 返回[组所有的 plannerPlans。](plannerplan.md)|
+|计划|[plannerPlan](plannerplan.md) 集合| 只读。 可为空。 返回[组所有的 plannerPlans。](plannerplan.md)|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

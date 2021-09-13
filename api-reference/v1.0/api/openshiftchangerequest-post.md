@@ -1,16 +1,16 @@
 ---
 title: 创建 openShiftChangeRequest
 description: 创建 openShiftChangeRequest 对象的实例。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1a6c0bfd43cd414e0a8c5ecfb706c40436df404b0eab94c53dff18fc089305c5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2b3affcf100d69f25aff192ad7cf1114eaa51e19
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54130630"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085425"
 ---
 # <a name="create-openshiftchangerequest"></a>创建 openShiftChangeRequest
 

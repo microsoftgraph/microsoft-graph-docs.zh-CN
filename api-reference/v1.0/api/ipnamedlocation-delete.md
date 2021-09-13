@@ -1,16 +1,16 @@
 ---
 title: 删除 ipNamedLocation
 description: 删除 ipNamedLocation 对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6e7f3034e2c4134805ed86082a9b696690aa4e5a
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: e6ffcc2c9a18206a4fb6ac4e4717c8572fa3e12e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50441807"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105060"
 ---
 # <a name="delete-ipnamedlocation"></a>删除 ipNamedLocation
 

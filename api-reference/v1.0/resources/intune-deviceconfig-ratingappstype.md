@@ -2,15 +2,15 @@
 title: ratingAppsType 枚举类型
 description: 应用在媒体内容中分级
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 07a72c26efd03506715061557d06309ce51fe9ccff0dab4818c5541797586102
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fb3b4fca051577e17ce82b7df4b8158b47fbe0bc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178325"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109008"
 ---
 # <a name="ratingappstype-enum-type"></a>ratingAppsType 枚举类型
 

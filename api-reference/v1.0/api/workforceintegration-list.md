@@ -1,16 +1,16 @@
 ---
 title: 列出 workforceIntegrations
 description: 检索 workforceIntegration 对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d96aa5dcf131724fbd231ed7574606bd1b736d21
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a639328630e0404b1514ce57df35780537cd5413
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52031485"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049772"
 ---
 # <a name="list-workforceintegrations"></a>列出 workforceIntegrations
 

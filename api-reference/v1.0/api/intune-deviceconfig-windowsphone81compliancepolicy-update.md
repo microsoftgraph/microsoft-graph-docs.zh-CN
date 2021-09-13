@@ -2,15 +2,15 @@
 title: 更新 windowsPhone81CompliancePolicy
 description: 更新 windowsPhone81CompliancePolicy 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: febe1e193cfc48de212b2977d65b4d056dc339a70c21ad85aa75e7f6e6141c15
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f2ae807846e6a54e3a1c60bf41c17ad9240b47ea
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54234041"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067988"
 ---
 # <a name="update-windowsphone81compliancepolicy"></a>更新 windowsPhone81CompliancePolicy
 

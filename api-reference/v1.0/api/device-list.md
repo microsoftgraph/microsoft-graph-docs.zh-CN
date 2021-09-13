@@ -2,15 +2,15 @@
 title: 列出设备
 description: 检索组织中注册的 device 对象的列表。
 author: spunukol
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5e231d4999d27ea19e189343783856e6a1b351326cd00276a179a12ab4a11671
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ad33c3f2e25fc0559688197d546ad1bc4cb1f8a7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57333990"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063473"
 ---
 # <a name="list-devices"></a>列出设备
 
@@ -24,9 +24,9 @@ ms.locfileid: "57333990"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Device.Read.All、Device.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Device.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
+|应用程序 | Device.Read.All、Device.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -133,7 +133,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>响应
 
-下面介绍响应示例。
+下面展示了示例响应。
 
 <!-- {
   "blockType": "response"

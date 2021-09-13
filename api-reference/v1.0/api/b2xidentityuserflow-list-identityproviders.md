@@ -1,16 +1,16 @@
 ---
 title: 列出 identityProvider
 description: 列出 b2xIdentityUserFlow 中所有 identityProviders。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: f7bc5bea06e7fd6f659d0c5567079b04d3b2f3c8
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 0946c670ed90d3335fa5fcaec0ff480ba0d7e1c7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51919930"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100440"
 ---
 # <a name="list-identityproviders"></a>列出 identityProvider
 
@@ -31,7 +31,7 @@ ms.locfileid: "51919930"
 工作或学校帐户需要属于以下角色之一：
 
 * 全局管理员
-* 外部标识用户流管理员
+* 外部标识用户Flow管理员
 
 ## <a name="http-request"></a>HTTP 请求
 

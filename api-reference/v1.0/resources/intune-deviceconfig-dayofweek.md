@@ -2,15 +2,15 @@
 title: dayOfWeek 枚举类型
 description: 工作日的可能值
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 57b0ae8abd00b60681810e88358860b91627cccdd1d067e5ae47285657e312ce
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a13a5ebb9cc08fc4f27f0e44c45a6d9c6ee628f8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54246834"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139812"
 ---
 # <a name="dayofweek-enum-type"></a>dayOfWeek 枚举类型
 

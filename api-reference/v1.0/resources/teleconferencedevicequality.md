@@ -1,16 +1,16 @@
 ---
 title: teleconferenceDeviceQuality 资源类型
 description: 表示视频电话会议设备会话级别质量数据。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 655ebbbc65f62ec3ace0640ed012b2d89bc0e6adb8242218ae223f57ab36d34f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6e7b29330634b099974300c660b45923b31b9b66
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54218392"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128086"
 ---
 # <a name="teleconferencedevicequality-resource-type"></a>teleconferenceDeviceQuality 资源类型
 

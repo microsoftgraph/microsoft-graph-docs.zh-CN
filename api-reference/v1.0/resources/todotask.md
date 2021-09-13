@@ -2,15 +2,15 @@
 title: todoTask 资源类型
 description: todoTask 资源跟踪工作项。
 author: avijityadav
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 043ba3e419db0ea3854a0f462b32553d288e25a11e1c27ea6dc9a7f7ad933095
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9e620161e48f87a4e46afcfcfe6a0dce6bb069b3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196472"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134316"
 ---
 # <a name="todotask-resource-type"></a>todoTask 资源类型
 
@@ -21,8 +21,8 @@ ms.locfileid: "54196472"
 **todoTask** 始终包含在 [todoTaskList 中](todotasklist.md)。 它包括与 [linkedResource](./linkedResource.md) 对象集合的关系，用于跟踪任务的一个或多个源。
 
 此资源支持以下内容：
-* 将数据添加为开放扩展中的 [自定义属性](/graph/extensibility-overview)。
-* 使用 [增量查询](/graph/delta-query-overview) 跟踪增量添加、删除和更新。
+* 在开放扩展中将数据添加为 [自定义属性](/graph/extensibility-overview)。
+* 使用 [delta 查询](/graph/delta-query-overview) 跟踪增量添加、删除和更新。
 
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|

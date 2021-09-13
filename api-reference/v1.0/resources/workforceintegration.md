@@ -1,16 +1,16 @@
 ---
 title: workforceIntegration 资源类型
 description: 员工与班次集成的实例。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: c1d5665f289215a7a5ffb8721976ec9b93289785804be0b49d40c79cd5ad963d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c9c346852df97abb93014ad417bd1948b19ef975
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163633"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134141"
 ---
 # <a name="workforceintegration-resource-type"></a>workforceIntegration 资源类型
 

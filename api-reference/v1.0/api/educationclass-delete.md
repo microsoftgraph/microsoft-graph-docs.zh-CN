@@ -2,15 +2,15 @@
 title: 删除 educationClass
 description: 删除课程。 课程也是通用组，因此删除课程时也会删除组。
 author: mlafleur
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 4f3d509364168227766465ead899340b00f24f83
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 4081f19efcfd10bc135ec88c4902e6065a2e48cd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52232023"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105335"
 ---
 # <a name="delete-educationclass"></a>删除 educationClass
 

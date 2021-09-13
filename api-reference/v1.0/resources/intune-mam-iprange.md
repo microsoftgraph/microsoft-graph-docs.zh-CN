@@ -2,15 +2,15 @@
 title: ipRange 资源类型
 description: 用于表示 IPV4、IPV6 地址范围的 IP 范围基类
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bf79b10879afa35dc351bfde349cb0e755aff1945ffa4f5b828aa277009a8d46
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c733f5829b4898567499bdc1b56727008aeae655
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54149805"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118164"
 ---
 # <a name="iprange-resource-type"></a>ipRange 资源类型
 

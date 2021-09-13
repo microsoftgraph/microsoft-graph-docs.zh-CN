@@ -2,15 +2,15 @@
 title: 列出 androidGeneralDeviceConfigurations
 description: 列出 androidGeneralDeviceConfiguration 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f25bbfbeb2cbdc5b6bbc762ee490bad016466aabd7df2ae751bab39a0afc0fb5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3da49ee20f07ed7b8903877b3d016e8fb781aaed
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54200024"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59140414"
 ---
 # <a name="list-androidgeneraldeviceconfigurations"></a>列出 androidGeneralDeviceConfigurations
 

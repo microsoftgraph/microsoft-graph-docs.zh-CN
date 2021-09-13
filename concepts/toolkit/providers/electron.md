@@ -1,33 +1,33 @@
 ---
 title: 电子提供程序
 description: 适用于 Insmicrosoft 的 MSAL 提供程序使用 msal-node 登录用户并获取与 Microsoft Graph 一Graph。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: amrutha95
-ms.openlocfilehash: 13a81a098fb69223e8ca5e85fcbce83dd4e83c9272fb781281d8b8b0379495b1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 183afb0393915c8411b802a4e87614f5a2ecde5c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54208648"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127897"
 ---
 # <a name="electron-provider"></a>电子提供程序
 
-使用[Msal 节点](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-node)登录用户并获取令牌，以便与 Microsoft Graph应用程序一同使用。
+开发工具提供商使用[msal-node](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-node)登录用户并获取令牌，以便与 Microsoft Graph应用程序一同使用。
 
 若要了解有关身份验证提供程序的信息，请参阅 [提供程序](./providers.md)。
 
-## <a name="get-started"></a>入门
+## <a name="get-started"></a>开始行动
 ### <a name="install-the-packages"></a>安装程序包
 
 ```bash
 npm install @microsoft/mgt-element @microsoft/mgt-electron-provider
 ```
-你需要在呈现器进程中初始化一个 (前端) ，在主进程中初始化一个 (一个) 。
+你需要在呈现器进程中初始化一个 (前端) ，在前端前端) 主进程中初始化一个 (Authenticator) 。
 
 
-### <a name="initializing-electronprovider-in-the-renderer-process-rendererts"></a>在呈现器进程中 (Renderer.ts) 
+### <a name="initializing-electronprovider-in-the-renderer-process-rendererts"></a>在呈现器进程中使用 renderer.ts (InitializingIzingProvider) 
 
-在主进程) 中，为请求访问令牌并接收组件正常工作所需的有关已登录状态的信息，则一直由一名用户负责与 (Authenticator (通信。 
+在主进程) 中，一个操作是使用一个访问令牌，并接收组件正常工作所需的有关已登录状态的信息，而一些操作程序负责与 (Authenticator (通信。 
 
 ```ts
 import {Providers} from '@microsoft/mgt-element';
@@ -58,7 +58,7 @@ ElectronAuthenticator.initialize(config);
  
 | 属性    | 说明                                                                                                                                                                                                                                                           |
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| clientId    | 字符串客户端 ID (创建应用/客户端 ID) 。 必填。                                                                                                                                                                                                           |                                                                                                                                                                               |
+| clientId    | 字符串客户端 ID (请参阅创建应用/客户端 ID) 。 必需。                                                                                                                                                                                                           |                                                                                                                                                                               |
 | scopes       | 用户必须同意登录的范围的逗号分隔字符串。 推荐。                                                                                                                                                                                     |
 | authority    | 颁发机构字符串 - 默认为公共颁发机构。 对于单租户应用，请使用租户 ID 或租户名称。 例如， `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` `https://login.microsoftonline.com/[your-tenant-id]` 或 。 可选。 |                                                                                                                                                                                          |
 | mainWindow  | 需要身份验证的主 BrowserWindow 的实例。|
@@ -80,7 +80,7 @@ ElectronAuthenticator.initialize(config);
 1. 从顶部菜单中，选择"新建 **注册"** 按钮。
 1. 输入应用的名称;例如， `My Electron-App` 。
 1. 对于受支持的帐户类型 [](/azure/active-directory/develop/single-and-multi-tenant-apps#who-can-sign-in-to-your-app)类型，请选择任何组织目录中的帐户 (任何 Azure AD 目录 - 多租户) 和个人 Microsoft 帐户 (例如 **Skype、Xbox) 。**
-1. 在" **重定向 URI"** 字段中的下拉列表中，选择"公共客户端/本机 (**移动 & 桌面) "，在**"URL"字段中输入 `msal://redirect` 。
+1. 在" **重定向 URI"** 字段中的下拉列表中，选择"公共客户端/本机 (移动 & **桌面) "，** 在"URL"字段中输入 `msal://redirect` 。
 1. 通过选择"注册" **按钮确认** 更改。
 
 ## <a name="next-steps"></a>后续步骤

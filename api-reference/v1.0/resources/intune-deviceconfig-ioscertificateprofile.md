@@ -2,15 +2,15 @@
 title: iosCertificateProfile 资源类型
 description: 设备配置。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e073ab0b860df987933bde53d8bfb9f21d5097e846f0973fbafb3781523b0a3e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4b1db9d3b31f58649536897c5cc0ba2bc821df85
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54175100"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118374"
 ---
 # <a name="ioscertificateprofile-resource-type"></a>iosCertificateProfile 资源类型
 

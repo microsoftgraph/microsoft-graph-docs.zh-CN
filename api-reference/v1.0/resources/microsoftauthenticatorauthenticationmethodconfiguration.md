@@ -1,28 +1,28 @@
 ---
 title: microsoftAuthenticatorAuthenticationMethodConfiguration 资源类型
-description: 表示一Microsoft Authenticator身份验证方法策略。
+description: 表示Microsoft Authenticator方法策略。
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: d4b1e3a287b92804b99049020faea1206bd429743fcf03b778da1779f75c14c3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ebe91061bedad1a21e0b4c6a5d388f875f8b7388
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54182411"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067099"
 ---
 # <a name="microsoftauthenticatorauthenticationmethodconfiguration-resource-type"></a>microsoftAuthenticatorAuthenticationMethodConfiguration 资源类型
 命名空间：microsoft.graph
 
-表示一Microsoft Authenticator身份验证方法策略。 身份验证方法策略定义配置设置以及允许使用身份验证方法的用户或组。
+表示Microsoft Authenticator方法策略。 身份验证方法策略定义配置设置以及允许使用身份验证方法的用户或组。
 
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[Get](../api/microsoftauthenticatorauthenticationmethodconfiguration-get.md)|[microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md)|读取 microsoftAuthenticatorAuthenticationMethodConfiguration 对象的属性和关系。|
 |[更新](../api/microsoftauthenticatorauthenticationmethodconfiguration-update.md)|[microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md)|更新 microsoftAuthenticatorAuthenticationMethodConfiguration 对象的属性。|
-|[删除](../api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md)|无|将 microsoftAuthenticatorAuthenticationMethodConfiguration 对象还原到其默认配置。|
+|[删除](../api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md)|无|将 microsoftAuthenticatorAuthenticationMethodConfiguration 对象恢复为默认配置。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|

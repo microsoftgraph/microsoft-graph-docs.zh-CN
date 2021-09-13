@@ -2,15 +2,15 @@
 title: windowsDefenderAdvancedThreatProtectionConfiguration 资源类型
 description: Windows Defender 高级威胁防护配置。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 31957d56964ebe6d7df6dbc25026ee2a96790e96039ca72496495c79a632afbd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 49c5d45e3a8be4d44ce89c93f94dd1d1cf30f71c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249270"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59055953"
 ---
 # <a name="windowsdefenderadvancedthreatprotectionconfiguration-resource-type"></a>windowsDefenderAdvancedThreatProtectionConfiguration 资源类型
 

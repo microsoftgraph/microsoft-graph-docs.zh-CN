@@ -1,16 +1,16 @@
 ---
 title: 列出 servicePrincipal 的 delegatedPermissionClassifications 集合
 description: 检索为 API 的服务主体公开的委派权限给定的分类列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: fdf42339adea9441ff0378fe26cce2063062eb82
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b03ae745a4ae27f4f565f6478bcd68a698b3761e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054446"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072685"
 ---
 # <a name="list-delegatedpermissionclassifications-collection-of-serviceprincipal"></a>列出 servicePrincipal 的 delegatedPermissionClassifications 集合
 

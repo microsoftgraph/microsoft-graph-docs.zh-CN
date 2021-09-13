@@ -2,15 +2,15 @@
 title: 删除 userFlowLanguagePage
 description: 删除 userFlowLanguagePage 对象中的值。
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: f9c1ba04d2c3cfdf60e4309d0a274388639b83a7
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 15575fcb1e8333b7b1267f0168bec3af1f54afd7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52666606"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109526"
 ---
 # <a name="delete-userflowlanguagepage"></a>删除 userFlowLanguagePage
 

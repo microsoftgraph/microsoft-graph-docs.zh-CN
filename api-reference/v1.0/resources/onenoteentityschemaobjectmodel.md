@@ -1,22 +1,22 @@
 ---
 title: onenoteEntitySchemaObjectModel 资源
-description: 这是实体的基本OneNote类型。
+description: 这是一个基类型，OneNote实体。
 author: jewan-microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: 708f0b6fe3e63ddd79e94c282afaf197daf5efaa82377d35b8bd88823df22843
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: dc87571bc7fc0675afd4f31bcd7a06f9f8e007df
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54237561"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062423"
 ---
 # <a name="onenoteentityschemaobjectmodel-resource"></a>onenoteEntitySchemaObjectModel 资源
 
 命名空间：microsoft.graph
 
-这是实体的基本OneNote类型。
+这是一个基类型，OneNote实体。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

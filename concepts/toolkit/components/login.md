@@ -1,20 +1,20 @@
 ---
 title: Microsoft 服务中的登录Graph Toolkit
-description: 登录组件是一个按钮和飞出控件，用于简化Microsoft 标识平台身份验证。
-localization_priority: Normal
+description: 登录组件是一个按钮和飞出控件，用于Microsoft 标识平台身份验证。
+ms.localizationpriority: medium
 author: nmetulev
-ms.openlocfilehash: 5b4c3b01053d9011d553a57fadecf560eddf80b3d143744d40b1dab167f1f040
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3398092c85fea23ad408a208a895c9af287371df
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54202019"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59103926"
 ---
 # <a name="login-component-in-the-microsoft-graph-toolkit"></a>Microsoft 服务中的登录Graph Toolkit
 
-登录组件是一个按钮和飞出控件，用于简化Microsoft 标识平台身份验证。 它提供两种状态：
+登录组件是一个按钮和飞出控件，用于Microsoft 标识平台身份验证。 它提供两种状态：
 * 当用户未登录时，控件是一个简单的按钮，用于启动登录过程。
-* 用户登录后，控件将显示当前登录的用户名、个人资料图像和电子邮件。 单击后，将打开一个具有注销命令的飞出。
+* 用户登录后，控件将显示当前登录的用户名、个人资料图像和电子邮件。 单击后，将打开一个使用注销命令的飞出。
 
 ## <a name="example"></a>示例
 
@@ -75,7 +75,7 @@ mgt-login {
 
 从控件中触发以下事件。
 
-事件 | 何时发出 | 自定义数据 | Cancelable | 气泡 | 使用自定义模板
+Event | 何时发出 | 自定义数据 | Cancelable | 气泡 | 使用自定义模板
 ------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
 `loginInitiated` | 用户单击登录按钮以启动登录过程 | 无 | 是 | 否 | 是
 `loginCompleted` | 登录过程成功，用户现在已登录 | 无 | 否 | 否 | 是
@@ -87,7 +87,7 @@ mgt-login {
 
 ## <a name="templates"></a>模板
 
-组件 `mgt-login` 支持 [多个模板](../customize-components/templates.md) ，允许您替换组件的某些部分。 若要指定模板，请包含组件内的元素，将值设置为下表 `<template>` `data-type` 中列出的值之一。 
+组件 `mgt-login` 支持 [多个模板](../customize-components/templates.md) ，允许您替换组件的某些部分。 若要指定模板，请包含组件中的元素，将值设置为下表 `<template>` `data-type` 中列出的值之一。 
 
 | 数据类型 | 数据上下文 | 说明 |
 | --- | --- | --- |
@@ -98,7 +98,7 @@ mgt-login {
 
 ## <a name="microsoft-graph-permissions"></a>Microsoft Graph 权限
 
-此组件使用以下 Microsoft Graph API 和权限：
+此组件使用下列 Microsoft Graph API 和权限：
 
 | 配置 | 权限 | API
 | - | - | - |
@@ -133,7 +133,7 @@ mgt-login {
 
 通过替代 方法并提供新的飞出，可以使用自己的飞出组件来替代内置 `renderFlyout()` 组件。
 
-在这种情况下，通过覆盖飞出显示方法以更新备用飞出视图的可见性，确保登录组件继续按预期 `protected` 工作。
+在这种情况下，通过覆盖飞出显示方法来更新备用飞出视图的可见性，确保登录组件继续按预期 `protected` 工作。
 
 | 方法 | 说明 |
 | - | - |

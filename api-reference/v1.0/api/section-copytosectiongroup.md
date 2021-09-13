@@ -1,22 +1,22 @@
 ---
 title: section： copyToSectionGroup
 description: 将节复制到特定节组。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 7a916903a995badede8dba872e11614664151373
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 4ebe1702e3e5241b7ea8ff4b9de16c5733f3d0c8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788043"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59079181"
 ---
 # <a name="section-copytosectiongroup"></a>section： copyToSectionGroup
 
 命名空间：microsoft.graph 将分区复制到特定节组。
 
-对于 Copy 操作，你可以遵循异步调用模式：首先调用 Copy 操作，然后轮询操作终结点的结果。
+对于复制操作，你可以遵循异步调用模式：首先调用 Copy 操作，然后轮询操作终结点的结果。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -41,7 +41,7 @@ POST /groups/{id}/onenote/sections/{id}/copyToSectionGroup
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供包含操作所需参数的 JSON 对象。
+在请求正文中，提供 JSON 对象，其中包含操作所需的参数。
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|

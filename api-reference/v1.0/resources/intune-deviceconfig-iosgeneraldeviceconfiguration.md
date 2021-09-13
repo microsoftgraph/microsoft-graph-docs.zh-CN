@@ -2,15 +2,15 @@
 title: iosGeneralDeviceConfiguration 资源类型
 description: 本主题提供由 iosGeneralDeviceConfiguration 资源公开的已声明方法、属性和关系的说明。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e46d51f50eddb2393ca599095fdd5c5b87216c2fe727671179201f412b4df286
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: dfbb9ca8cd9ff2d87aa21cf4547207179f1e6630
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54251974"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136472"
 ---
 # <a name="iosgeneraldeviceconfiguration-resource-type"></a>iosGeneralDeviceConfiguration 资源类型
 

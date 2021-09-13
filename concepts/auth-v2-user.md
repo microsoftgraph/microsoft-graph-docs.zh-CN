@@ -2,15 +2,15 @@
 title: 代表用户获取访问
 description: 若要代表用户使用 Microsoft Graph 读取和写入资源，应用必须从 Azure AD 获取访问令牌，并将令牌附加到其发往 Microsoft Graph 的请求。
 author: jackson-woods
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: applications
 ms.custom: graphiamtop20
-ms.openlocfilehash: b0b9bbb34748f59da51f196b3dd63f73f0a5d84b30041f17c5bdb1f2666dad1d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 21c8bf9fb42dc86a149f03adac1bebef3262a233
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54126123"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59122948"
 ---
 # <a name="get-access-on-behalf-of-a-user"></a>代表用户获取访问权限
 

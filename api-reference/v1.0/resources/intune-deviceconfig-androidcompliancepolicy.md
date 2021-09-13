@@ -2,15 +2,15 @@
 title: androidCompliancePolicy 资源类型
 description: 此类包含 Android 的合规性设置。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4ccbe97272eaf8826a5d4e3f1bbbc3c4e6917bc9aadae1e4b24e070f38abea56
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1b8f35ac045b512e488a1f7f9d88a00d9fd0875f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54124421"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136590"
 ---
 # <a name="androidcompliancepolicy-resource-type"></a>androidCompliancePolicy 资源类型
 

@@ -2,15 +2,15 @@
 title: mediaContentRatingUnitedStates 资源类型
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: baa5fd8c1534330097e54ab38592e6d42700f547cbebc53e9b1451cbdf406a97
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 178e1bd37342326bddee6f0d329b18917f8ee345
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54238004"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59089541"
 ---
 # <a name="mediacontentratingunitedstates-resource-type"></a>mediaContentRatingUnitedStates 资源类型
 

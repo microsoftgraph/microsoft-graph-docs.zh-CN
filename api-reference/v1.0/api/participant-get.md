@@ -2,15 +2,15 @@
 title: 获取参与者
 description: 检索参与者对象的属性 **和** 关系。
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: d1d09c3bf78d604905a634245e45216fa94312c7
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: f0bb7cf6b8781e81b0b0cf58c8ec08917dae65c5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054509"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59090199"
 ---
 # <a name="get-participant"></a>获取参与者
 

@@ -2,15 +2,15 @@
 title: 更新 apiConnectorConfiguration
 description: 通过更新 apiConnectorConfiguration 属性，为用户流中的特定步骤启用或禁用 API 连接器。
 author: nickgmicrosoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c42369e2e1bcfbafb7141365f529b37dcfa3a316
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: d8a3dd21cce42a59217540ec9b266bd7a805941a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52868842"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59090808"
 ---
 # <a name="update-apiconnectorconfiguration"></a>更新 apiConnectorConfiguration
 

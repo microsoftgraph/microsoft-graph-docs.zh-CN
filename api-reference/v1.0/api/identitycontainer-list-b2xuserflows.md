@@ -1,16 +1,16 @@
 ---
 title: 列出 b2xIdentityUserFlows
 description: 检索 b2xIdentityUserFlow 对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 65d592129e3475a55226199b0c246ad436a0af71
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 0f5ff011d39caa48eac422ec6684335d3c277ea1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51920123"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045789"
 ---
 # <a name="list-b2xidentityuserflows"></a>列出 b2xIdentityUserFlows
 
@@ -31,7 +31,7 @@ ms.locfileid: "51920123"
 工作或学校帐户需要属于以下角色之一：
 
 * 全局管理员
-* 外部标识用户流管理员
+* 外部标识用户Flow管理员
 
 ## <a name="http-request"></a>HTTP 请求
 

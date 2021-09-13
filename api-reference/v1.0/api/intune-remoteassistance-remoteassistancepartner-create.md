@@ -2,15 +2,15 @@
 title: 创建 remoteAssistancePartner
 description: 创建新的 remoteAssistancePartner 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5d563a404cd261ffd3ca3d6f9c0d53aa32fc7c46a54a7eae3a5c2067447235fd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6cb5eccadb4713e2c711f490c2959fbbadc9c2f4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54187005"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59037563"
 ---
 # <a name="create-remoteassistancepartner"></a>创建 remoteAssistancePartner
 

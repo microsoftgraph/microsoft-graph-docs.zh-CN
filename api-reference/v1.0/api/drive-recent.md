@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: 列出最近使用的文件
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 description: 列出登录用户最近使用的一组项。
 doc_type: apiPageType
-ms.openlocfilehash: 2d7d1f67353301889f50ae6ead03e70d574ee386
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: ba0f63702125693153017ffbe7fc7751601249eb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239868"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59090696"
 ---
 # <a name="list-recent-files"></a>列出最近使用的文件
 

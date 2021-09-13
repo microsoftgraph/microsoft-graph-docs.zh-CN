@@ -1,16 +1,16 @@
 ---
 title: 分配管理器
 description: 分配用户的经理。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 87b52e6e9568aa272505fc10c40e607c9844adff
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 15c0d3a2013c48c337c5c2691ad2d22cd4510cd8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787089"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109705"
 ---
 # <a name="assign-manager"></a>分配管理器
 

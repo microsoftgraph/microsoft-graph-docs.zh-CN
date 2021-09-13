@@ -3,14 +3,14 @@ title: 更新频道中的成员
 description: 更新频道中成员的角色。
 author: akjo
 doc_type: apiPageType
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 69ac329608ef4b6d42c019445427f82946f1ac82
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: 268bb8d2f2e06d255ea53a28afd177c1f31457e9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53059998"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056821"
 ---
 # <a name="update-member-in-channel"></a>更新频道中的成员
 
@@ -24,9 +24,9 @@ ms.locfileid: "53059998"
 
 |权限类型|权限（从最低特权到最高特权）|
 |---------|-------------|
-|委派（工作或学校帐户）|ChannelMember.ReadWrite.All。 |
+|委派（工作或学校帐户）|ChannelMember.ReadWrite.All |
 |委派（个人 Microsoft 帐户）|不支持|
-|应用程序|ChannelMember.ReadWrite.All。 |
+|应用程序|ChannelMember.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored"} -->

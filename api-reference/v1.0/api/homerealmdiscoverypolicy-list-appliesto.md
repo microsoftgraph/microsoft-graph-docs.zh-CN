@@ -1,16 +1,16 @@
 ---
 title: List appliesTo
 description: 获取 homeRealmDiscoveryPolicy 对象已应用到的 directoryObject 对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: hpsin
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 3c30809b8dd25960dbe26275df2509d848a9063a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 909a1a27e1dc02eac0e5646ad2033b423210abf4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051401"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045880"
 ---
 # <a name="list-appliesto"></a>List appliesTo
 

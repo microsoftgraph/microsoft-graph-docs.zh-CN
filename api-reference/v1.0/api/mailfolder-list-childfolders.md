@@ -2,15 +2,15 @@
 title: 列出 childFolder
 description: '获取指定文件夹下的文件夹集合。你可以使用 `.../me/MailFolders` 快捷方式获取顶级 '
 author: abheek-das
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 73a812b9f1b3899d52d112649ceebb0c594b8489
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: ad867ef1a3f07951ef4acbaa83055887c347b0d1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52666466"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067918"
 ---
 # <a name="list-childfolders"></a>列出 childFolder
 

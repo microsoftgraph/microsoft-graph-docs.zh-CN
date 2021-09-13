@@ -2,15 +2,15 @@
 title: 更新 deviceManagementExchangeConnector
 description: 更新 deviceManagementExchangeConnector 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 78422f7cd57e2e1792e65a9f632b6a7cbc53afe77367277f01dc1afbd2174650
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 92e361b5f36cda427732a096e5b023f947f143b9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54169905"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110435"
 ---
 # <a name="update-devicemanagementexchangeconnector"></a>更新 deviceManagementExchangeConnector
 

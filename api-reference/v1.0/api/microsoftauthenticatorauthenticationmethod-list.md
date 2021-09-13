@@ -2,22 +2,22 @@
 title: 列出 microsoftAuthenticatorAuthenticationMethods
 description: 获取 microsoftAuthenticatorAuthenticationMethod 对象及其属性的列表。
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c23c72d9ee7addfd48f762a718731874ce450231
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 5def3b81d6849e7a11ec5aacab85e9190f3f40f8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469183"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072953"
 ---
 # <a name="list-microsoftauthenticatorauthenticationmethods"></a>列出 microsoftAuthenticatorAuthenticationMethods
 命名空间：microsoft.graph
 
-获取 [microsoftAuthenticatorAuthenticationMethod](../resources/microsoftauthenticatorauthenticationmethod.md) 对象及其属性的列表。
+获取 [microsoftAuthenticatorAuthenticationMethod 对象](../resources/microsoftauthenticatorauthenticationmethod.md) 及其属性的列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -41,7 +41,7 @@ ms.locfileid: "51469183"
 * 全局管理员
 * 全局读取者
 * 特权身份验证管理员
-* 身份验证管理员 (只能看到屏蔽的电话号码) 
+* 身份验证管理员 (只能看到屏蔽) 
 
 ## <a name="http-request"></a>HTTP 请求
 

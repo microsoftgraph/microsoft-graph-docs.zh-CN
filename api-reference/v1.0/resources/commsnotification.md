@@ -1,22 +1,22 @@
 ---
 title: commsNotification 资源类型
-description: 通信服务器发布的用于通知更改的通信通知基本类型。
+description: 通信服务器发布的通知基本类型，用于通知更改。
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: ff7d46a6d081889897940a93d5d111ffa2956a21fc61411060cad08ed2f7d5ab
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 790704c73e07c473112eb5df99db7261d73966f9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54252016"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062773"
 ---
 # <a name="commsnotification-resource-type"></a>commsNotification 资源类型
 
 命名空间：microsoft.graph
 
-通信服务器发布的用于通知更改的通信通知基本类型。
+通信服务器发布的通知基本类型，用于通知更改。
 
 ## <a name="properties"></a>属性
 | 属性       | 类型    | 说明                                                |

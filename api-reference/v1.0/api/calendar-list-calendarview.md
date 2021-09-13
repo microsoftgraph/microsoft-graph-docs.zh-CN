@@ -1,16 +1,16 @@
 ---
 title: 列出 calendarView
 description: 获取由时间范围定义的日历视图中的事件发生次数、异常和单个实例，
-localization_priority: Priority
+ms.localizationpriority: high
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4a3caa3aa190f899163c75d7f4b89a14b88465b5
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a6c271c05e400512b34d161a8fe64fb3139f944b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052521"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59125418"
 ---
 # <a name="list-calendarview"></a>列出 calendarView
 
@@ -110,7 +110,7 @@ GET https://graph.microsoft.com/v1.0/me/calendar/calendarView?startDateTime=2017
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

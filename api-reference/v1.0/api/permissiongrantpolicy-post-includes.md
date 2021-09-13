@@ -1,16 +1,16 @@
 ---
 title: Create permissionGrantConditionSet in includes collection of permissionGrantPolicy
 description: 添加权限授予策略中包含权限授予事件的条件。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 79b70637beaff1d90892ab42fc58286d1135b4ff
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 28fd0f5b5533d4c89f7152b6d4eb4e0507b50b95
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051268"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59007892"
 ---
 # <a name="create-permissiongrantconditionset-in-includes-collection-of-permissiongrantpolicy"></a>Create permissionGrantConditionSet in includes collection of permissionGrantPolicy
 
@@ -49,7 +49,7 @@ POST /policies/permissionGrantPolicies/{id}/includes
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应 [代码和 permissionGrantConditionSet](../resources/permissiongrantconditionset.md) 对象。
 
 ## <a name="examples"></a>示例
 

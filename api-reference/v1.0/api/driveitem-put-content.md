@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: 上传小文件
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: sharepoint
 description: '通过简单上传 API，可以在一个 API 调用中提供新文件的内容或更新现有文件的内容。 '
 doc_type: apiPageType
-ms.openlocfilehash: f28105b493c88dacead70291cae8ad88d5d75b8a
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 3fc7796bfd9bf10dc694156c90dadf5e530f0d7b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240204"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59033012"
 ---
 # <a name="upload-or-replace-the-contents-of-a-driveitem"></a>上传或替换 driveItem 的内容
 

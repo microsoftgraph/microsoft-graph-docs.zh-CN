@@ -1,16 +1,16 @@
 ---
 title: 删除开放扩展
 description: 从指定的资源实例中删除开放扩展（openTypeExtension 对象）。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: 803478b334d267c767a0b857b7a13ce8b2f86a56
-ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
+ms.openlocfilehash: e8d40ba5ebf7c0db8f5219a1d9cd62da963b7b18
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50092597"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59015915"
 ---
 # <a name="delete-open-extension"></a>删除开放扩展
 
@@ -18,11 +18,11 @@ ms.locfileid: "50092597"
 
 从指定的资源实例中删除开放扩展（[openTypeExtension](../resources/opentypeextension.md) 对象）。 
 
-有关支持开放扩展的资源[](#permissions)列表，请参阅"权限"部分中的表。
+有关支持开放 [扩展](#permissions) 的资源列表，请参阅权限部分中的表。
 
 ## <a name="permissions"></a>权限
 
-根据从中删除扩展的资源以及请求的权限类型 (委托或应用程序) ，下表中指定的权限是调用此 API 所需的最低权限。 若要了解 [更多信息，包括在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 选择更多特权权限之前保持谨慎，请搜索"权限"中的以下 [权限](/graph/permissions-reference)。
+根据从中删除扩展的资源以及请求的权限类型 (委派或应用程序) ，下表中指定的权限是调用此 API 所需的最低权限。 若要了解其他信息， [在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 特权权限之前要特别小心，在"权限" [中搜索](/graph/permissions-reference)。
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
@@ -36,7 +36,7 @@ ms.locfileid: "50092597"
 | [个人联系人](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [用户](../resources/user.md) | User.ReadWrite | User.ReadWrite | User.ReadWrite.All |
 | [task](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
-| [tasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
+| [任务列表](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 在请求中，标识资源实例，使用资源实例的 **extensions** 导航属性标识扩展插件，然后对此扩展插件实例执行 `DELETE`。

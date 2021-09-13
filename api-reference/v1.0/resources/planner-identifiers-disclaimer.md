@@ -1,16 +1,16 @@
 ---
 title: Planner 中的标识符
 description: Planner 中的对象的标识符是服务生成的字符串值。 值为 28 个字符，且区分大小写。 传入时，服务将执行标识符的简单格式验证，如果格式验证失败，则调用方将收到错误请求 (400) 错误响应，指示此问题。 收到此错误表示调用应用程序中存在 Bug，例如：
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: conceptualPageType
-ms.openlocfilehash: 97381d57e8f23b6f032cdf0ebfc02a5cdf32ca2219a1d7c8127e472666250c58
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4433fc63e884f9c98174a07d7d043f69fce4d8c0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54202159"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59044419"
 ---
 # <a name="identifiers-in-planner"></a>Planner 中的标识符
 

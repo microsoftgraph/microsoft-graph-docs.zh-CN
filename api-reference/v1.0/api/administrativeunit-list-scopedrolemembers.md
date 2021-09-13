@@ -2,15 +2,15 @@
 title: 列出 scopedRoleMembers
 description: 检索 scopedRoleMembership 资源的列表。
 author: DougKirschner
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: bb2400902b47f206d5826f3475d59b7d6294daa6
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: fc4166fc551b7f091a7cfb47060a93ff01657057
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52991524"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128345"
 ---
 # <a name="list-scopedrolemembers"></a>列出 scopedRoleMembers
 

@@ -1,16 +1,16 @@
 ---
 title: 更新 plannertaskdetails
 description: 更新 **plannertaskdetails** 对象的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: cddb560c028f71000d0f5d8d264b9eba9bd0ff1e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 0fb319785072830c34ae2f8fab4640caf124a37b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053046"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085362"
 ---
 # <a name="update-plannertaskdetails"></a>更新 plannertaskdetails
 
@@ -34,7 +34,7 @@ PATCH /planner/tasks/{id}/details
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:-----------|:-----------|
-| Authorization  | Bearer {token}。必需。 |
+| Authorization  | 持有者{令牌}。必需。 |
 | If-Match  | 要更新的 **plannerTaskDetails** 的上次已知 ETag 值。必需。|
 
 ## <a name="request-body"></a>请求正文
@@ -109,7 +109,7 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

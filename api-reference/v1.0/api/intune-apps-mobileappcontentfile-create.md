@@ -2,15 +2,15 @@
 title: 创建 mobileAppContentFile
 description: 创建新的 mobileAppContentFile 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 83f299f8e03adefc5e7bd5783f467b02c7fb371705f2cea667f78df965fcb867
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2c23eaa6e7dc59dcf4a42f1dc727a2f5ceebe3d0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54172399"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59079888"
 ---
 # <a name="create-mobileappcontentfile"></a>创建 mobileAppContentFile
 

@@ -1,22 +1,22 @@
 ---
 title: identityApiConnector：uploadClientCertificate
-description: 将 PKCS 12 格式密钥 (PFX) API 连接器身份验证配置。
-localization_priority: Normal
+description: Upload API 连接器身份验证配置 (PFX) PKCS 12 格式密钥。
+ms.localizationpriority: medium
 author: nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 84cf8a767a4cf944a143342c1b3a0678252a4e8b
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 8b05cb71390e97f9268d933080472a86fed359e0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921177"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59073889"
 ---
 # <a name="identityapiconnector-uploadclientcertificate"></a>identityApiConnector：uploadClientCertificate
 
 命名空间：microsoft.graph
 
-将 PKCS 12 格式密钥 (.pfx) API 连接器的身份验证配置。 输入是 PKCS 12 证书内容的 Base64 编码值。 此方法返回 [apiConnector](../resources/identityApiConnector.md)。
+Upload API 连接器的身份验证配置 (.pfx) PKCS 12 格式密钥。 输入是 PKCS 12 证书内容的 Base64 编码值。 此方法返回 [apiConnector](../resources/identityApiConnector.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -31,7 +31,7 @@ ms.locfileid: "51921177"
 工作或学校帐户需要属于以下角色之一：
 
 * 全局管理员
-* 外部标识用户流管理员
+* 外部标识用户Flow管理员
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -54,8 +54,8 @@ POST /identity/apiconnectors/{id}/uploadClientCertificate
 
 |属性|类型|说明|
 |:---|:---|:---|
-|pkcs12Value|String| 这是用于发送 pfx 内容的字段。 该值应为实际证书内容的 Base64 编码版本。 必需。|
-|密码|String| 这是 pfx 文件的密码。 必需。 如果未使用密码，则仍必须提供 的值 `""` 。|
+|pkcs12Value|String| 这是用于发送 pfx 内容的字段。 该值应为实际证书内容的 Base64 编码版本。 必填。|
+|密码|String| 这是 pfx 文件的密码。 必填。 如果未使用密码，则仍必须提供 的值 `""` 。|
 
 ## <a name="response"></a>响应
 

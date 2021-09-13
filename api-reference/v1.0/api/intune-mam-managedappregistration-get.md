@@ -2,15 +2,15 @@
 title: 获取 managedAppRegistration
 description: 读取 managedAppRegistration 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e0ae31cf26f0014f88805229f5b4e1357e3bbee82e85ac442333e1ac5179fca7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cb01498f091461f79fa7f37fa8aa597727e62fb0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54130756"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59073224"
 ---
 # <a name="get-managedappregistration"></a>获取 managedAppRegistration
 

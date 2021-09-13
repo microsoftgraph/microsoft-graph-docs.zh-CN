@@ -1,16 +1,16 @@
 ---
 title: 获取 timeOffRequest
 description: 检索 timeOffRequest 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 99683f33448c4d7b492b19f07f2f0fc704b73753
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 0b0c489699ebd94aa78b9ff3c2fe8730dc9a76d0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52034390"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049870"
 ---
 # <a name="get-timeoffrequest"></a>获取 timeOffRequest
 

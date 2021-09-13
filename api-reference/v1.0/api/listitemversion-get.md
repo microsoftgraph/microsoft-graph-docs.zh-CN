@@ -1,16 +1,16 @@
 ---
 title: 获取 ListItemVersion 资源
 description: 检索 ListItem 的某个特定版本的元数据。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 author: JeremyKelley
 doc_type: apiPageType
-ms.openlocfilehash: 474ce406f39eb1b43324677d9e48ed844e2d78df
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5deadabec96fb34746657ff626270950b8365885
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057249"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045089"
 ---
 # <a name="get-a-listitemversion-resource"></a>获取 ListItemVersion 资源
 

@@ -1,16 +1,16 @@
 ---
 title: termsExpiration 资源类型
 description: 提供协议计划到期的其他设置。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 author: raprakasMSFT
 doc_type: resourcePageType
-ms.openlocfilehash: cd1e7f437e8bf942d69368bc4c78410eed95dd2e42ac0a0f0dd77319578d0991
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a3786a922bb5bbff220836b2a24abeb519bece38
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54174869"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128051"
 ---
 # <a name="termsexpiration-resource-type"></a>termsExpiration 资源类型
 
@@ -22,8 +22,8 @@ ms.locfileid: "54174869"
 
 | 属性                     | 类型                      | 说明 |
 | :--------------------------- | :------------------------ | :---------- |
-| startDateTime|DateTimeOffset | 协议设置为对所有用户过期的 DateTime。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 (UTC) 如下所示：“2014-01-01T00:00:00Z”。|
-| frequency| 期限 | 表示术语在 **startDateTime** 中设置的首次过期后到期的频率。 该值以 ISO 8601 格式表示持续时间。 例如， `PT1M` 表示 1 个月的时间段。|
+| startDateTime|DateTimeOffset | 协议设置为对所有用户过期的 DateTime。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
+| frequency| 期限 | 表示术语在 **startDateTime** 中设置的首次过期后到期的频率。 该值以 ISO 8601 格式表示，持续时间为。 例如， `PT1M` 表示 1 个月的时间段。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

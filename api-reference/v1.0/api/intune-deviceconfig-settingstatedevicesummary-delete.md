@@ -2,15 +2,15 @@
 title: 删除 settingStateDeviceSummary
 description: 删除 settingStateDeviceSummary。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e02429c01cbddd0baea39b6970ece1df2453f3e7676cb188a56308becb3a54d5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5cbead3445c9c70f5306ae6c35659a240fe05c09
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54247233"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105180"
 ---
 # <a name="delete-settingstatedevicesummary"></a>删除 settingStateDeviceSummary
 
@@ -42,7 +42,7 @@ DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/dev
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

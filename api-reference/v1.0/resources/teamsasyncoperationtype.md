@@ -2,15 +2,15 @@
 title: teamsAsyncOperationType 枚举类型
 description: teamsAsyncOperation 的类型。 由于支持更多异步操作，因此将在此处添加成员。
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: enumPageType
-ms.openlocfilehash: be67211beceb37e4a1c4001de5fd29b30003a10aaab8604945f1b8c8d38b39f6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 201f795a7ed404efc82dab648241971b3e3eb4b5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54126247"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59071873"
 ---
 # <a name="teamsasyncoperationtype-enum-type"></a>teamsAsyncOperationType 枚举类型
 

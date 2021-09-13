@@ -2,15 +2,15 @@
 title: deviceEnrollmentConfiguration 资源类型
 description: 设备注册配置的基类
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7f59e5bf8ceefed1942acda1bf1f088bb148cd284ef4cc51127e493420fbe413
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 463ce978f8bad54ba36c662efc8e21a97e8e9c84
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249242"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59098642"
 ---
 # <a name="deviceenrollmentconfiguration-resource-type"></a>deviceEnrollmentConfiguration 资源类型
 

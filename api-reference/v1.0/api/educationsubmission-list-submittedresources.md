@@ -2,15 +2,15 @@
 title: 列出 submittedResources
 description: 列出已正式提交进行评分的资源。
 author: sharad-sharma-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f2b1a12ed7fdd0aca5309e9b2929045e77de0dad
-ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
+ms.openlocfilehash: abb4c2bd34a34a17ef48041335a23a14a0969159
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58367112"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59140778"
 ---
 # <a name="list-submittedresources"></a>列出 submittedResources
 
@@ -37,7 +37,7 @@ GET /education/classes/{id}/assignments/{id}/submissions/{id}/submittedResources
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |

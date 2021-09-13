@@ -1,16 +1,16 @@
 ---
 title: 协议资源类型
 description: 表示通过 Azure AD Azure Active Directory (创建和管理的租户可自定义) 。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: d536b29a0220f4fef8b0e1c6e81142c177b7009902770a74b82cf50bed7f56db
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f77172c3ddae5799ce1c46dec09fe468b67606ce
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54212226"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59089982"
 ---
 # <a name="agreement-resource-type"></a>协议资源类型
 
@@ -36,7 +36,7 @@ ms.locfileid: "54212226"
 |isPerDeviceAcceptanceRequired|Boolean|指示最终用户是否需要在从其访问它的每个设备上接受此协议。 如果最终用户尚未在 Azure AD 中注册其设备，则要求他们这样做。|
 |isViewingBeforeAcceptanceRequired|Boolean|指示用户是否必须扩展协议才能接受。|
 |termsExpiration|[termsExpiration](termsexpiration.md)| 所有用户的过期日程安排和协议频率。 |
-|userReacceptRequiredFrequency|期限|用户必须重新接受使用条款的持续时间。 该值以 ISO 8601 格式表示持续时间。|
+|userReacceptRequiredFrequency|期限|用户必须重新接受使用条款的持续时间。 该值以 ISO 8601 格式表示，持续时间为。|
 
 
 ## <a name="relationships"></a>关系

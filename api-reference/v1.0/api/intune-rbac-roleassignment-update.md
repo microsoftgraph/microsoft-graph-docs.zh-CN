@@ -2,15 +2,15 @@
 title: 更新 roleAssignment
 description: 更新 roleAssignment 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d3eb3a28c7430400adbc07d9bbe1ac1b49c8c46fb293d39a33c98d40ba3f85d3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8ecf7c4d33236a64cbd4b3147ad77769df26c0b8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54185059"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59026341"
 ---
 # <a name="update-roleassignment"></a>更新 roleAssignment
 

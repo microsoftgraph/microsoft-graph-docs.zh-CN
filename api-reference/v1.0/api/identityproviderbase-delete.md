@@ -1,16 +1,16 @@
 ---
 title: 删除 identityProvider
 description: 删除 identityProvider。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: e0025c84064b32ae55393a1e81b38e6336069728
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: 0cc34c99e63a6f37db65093ddce31f8729e7f1d3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58667869"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105305"
 ---
 # <a name="delete-identityprovider"></a>删除 identityProvider
 命名空间：microsoft.graph

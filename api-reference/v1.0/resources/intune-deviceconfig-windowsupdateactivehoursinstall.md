@@ -2,15 +2,15 @@
 title: windowsUpdateActiveHoursInstall 资源类型
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: acf2430d25e8ac74b76c2120562463c6e5d7487481f06182a4b2a4c01dcdacca
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c353b05c3c487f9701e8aa28f2186ad642380c1d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54230617"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59108980"
 ---
 # <a name="windowsupdateactivehoursinstall-resource-type"></a>windowsUpdateActiveHoursInstall 资源类型
 

@@ -2,15 +2,15 @@
 author: swapnil1993
 title: documentSet 资源类型
 description: 包含有关文档集设置的元数据。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: b64f5b0f12a41a0386818c68ba644d92bfa60603
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: a3c0bc96cefaec37ff58f9f41f56c773f6c336cc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696513"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049520"
 ---
 # <a name="documentset-resource-type"></a>documentSet 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "58696513"
 | shouldPrefixNameToFile | 布尔值  | 将文档集的名称添加到每个文件名。|
 | allowedContentTypes | 集合 (microsoft.graph.contentTypeInfo)  | 文档集允许的内容类型。|
 | defaultContents     | 集合 (microsoft.graph.documentSetContent)  | 文档集的默认内容。 | 
-| propagateWelcomePageChanges | 布尔值 | 指定是否将欢迎页面更改推送到继承的内容类型。  |
+| propagateWelcomePageChanges | Boolean | 指定是否将欢迎页面更改推送到继承的内容类型。  |
 | sharedColumns       | 集合 (microsoft.graph.columnDefinition)  | 在同步到文档集内所有文档的文档集上编辑的列。 这些文档本身是只读的。 |
 | welcomePageColumns  | 集合 (microsoft.graph.columnDefinition)   | 指定要显示在文档集的欢迎页上的列。  |
 | welcomePageUrl      | string | 欢迎页面绝对 URL。  |

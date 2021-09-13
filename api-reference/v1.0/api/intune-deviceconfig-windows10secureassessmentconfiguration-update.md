@@ -2,15 +2,15 @@
 title: 更新 windows10SecureAssessmentConfiguration
 description: 更新 windows10SecureAssessmentConfiguration 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d5452947510d1d55a42d17454d9b2364217bf6f7d6b49b2939d7e752e4b3ebe6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 63d4bcd9fe000a5ba9d10353d8c2557f58cf4129
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54234083"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016286"
 ---
 # <a name="update-windows10secureassessmentconfiguration"></a>更新 windows10SecureAssessmentConfiguration
 

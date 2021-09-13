@@ -2,15 +2,15 @@
 title: 导入操作
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ea46b5e9327c751bd3866c5f11c291f374f59a7758a7f6e30c72d3cbc886d1c0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fa51fc34ff9d0e5838378f9bd2aabc0c77237523
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54252366"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045187"
 ---
 # <a name="import-action"></a>导入操作
 

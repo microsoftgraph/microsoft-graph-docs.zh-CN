@@ -2,15 +2,15 @@
 title: 图表资源类型
 description: 表示工作簿中的 chart 对象。
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 160fcb95fd8ffe4b4d0c2d4e9233afe3492ef32d27b910ee40bb7519b20e591a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3a49330d6225dffe34e1594e2c04c18783cc8aae
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54121415"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032438"
 ---
 # <a name="chart-resource-type"></a>图表资源类型
 
@@ -28,7 +28,7 @@ ms.locfileid: "54121415"
 |[创建系列](../api/chart-list-series.md) |[WorkbookChartSeries](chartseries.md) 集合| 获取 ChartSeries 对象集合。|
 |[更新](../api/chart-update.md) | [WorkbookChart](chart.md)   |更新 Chart 对象。 |
 |[图像](../api/chart-image.md)|图像 base64 编码字符串|通过缩放图表适应指定的尺寸，将图表呈现为 base64 编码的图像。|
-|[删除](../api/chart-delete.md)|无|删除 chart 对象。|
+|[删除](../api/chart-delete.md)|None|删除 chart 对象。|
 |[Setdata](../api/chart-setdata.md)|无|重置图表的源数据。|
 |[Setposition](../api/chart-setposition.md)|无|相对于工作表上的单元格放置图表。|
 |[列出](../api/chart-list.md) | [WorkbookChart](chart.md) 集合 |获取 chart 对象集合。 |

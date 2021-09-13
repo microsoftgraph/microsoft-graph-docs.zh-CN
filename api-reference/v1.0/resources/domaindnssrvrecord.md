@@ -2,15 +2,15 @@
 title: domainDnsSrvRecord 资源类型
 description: 表示添加到租户中特定域的 DNS 区域文件的 SRV 记录。
 author: adimitui
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 2322a2425170a930dfaca30224601c01388063dd8d50203c950d1f3b9d5131ee
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 851dcf80838b8d39a71e9dcb36db6ef324b63d63
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54229295"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123753"
 ---
 # <a name="domaindnssrvrecord-resource-type"></a>domainDnsSrvRecord 资源类型
 

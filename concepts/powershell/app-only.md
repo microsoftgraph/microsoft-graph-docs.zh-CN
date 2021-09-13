@@ -1,14 +1,14 @@
 ---
 title: 通过 Microsoft Graph PowerShell SDK 使用仅应用程序身份验证
 description: 了解如何使用仅应用身份验证通过 Microsoft Graph PowerShell SDK 启用非交互方案。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jasonjoh
-ms.openlocfilehash: 0c87d415f23123b5628bcda8655e3c5b02323a86
-ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
+ms.openlocfilehash: 10413d1af07d2ba195522b062f068cf663492296
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58490551"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59083920"
 ---
 # <a name="use-app-only-authentication-with-the-microsoft-graph-powershell-sdk"></a>通过 Microsoft Graph PowerShell SDK 使用仅应用程序身份验证
 
@@ -17,7 +17,7 @@ PowerShell SDK 支持两种类型的身份验证： [委派访问](..\auth-v2-us
 > [!IMPORTANT]
 > 仅应用程序访问权限直接向应用程序授予权限，并需要管理员同意所需的权限范围。 有关仅应用访问的信息，请参阅 Microsoft 标识平台[和 OAuth 2.0 客户端凭据流](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow)。
 
-让我们演练为简单脚本配置仅应用访问权限，以列出你的 Microsoft 365 租户中的用户和组。
+让我们演练如何为简单脚本配置仅应用访问权限，以列出你的 Microsoft 365 租户中的用户和组。
 
 ## <a name="configuration"></a>配置
 
@@ -32,12 +32,12 @@ PowerShell SDK 支持两种类型的身份验证： [委派访问](..\auth-v2-us
 
 ### <a name="register-the-application"></a>注册应用程序
 
-可以在应用程序门户中注册[Azure Active Directory，](https://aad.portal.azure.com)或者使用 PowerShell 注册应用程序。
+可以在应用程序门户中注册Azure Active Directory[或](https://aad.portal.azure.com)PowerShell。
 
 <!-- markdownlint-disable MD025 -->
 # <a name="portal"></a>[门户](#tab/azure-portal)
 
-1. 打开浏览器并导航到Azure Active Directory[中心](https://aad.portal.azure.com)，然后使用租户Microsoft 365登录。
+1. 打开浏览器并导航到 Azure Active Directory[管理](https://aad.portal.azure.com)中心，然后使用租户Microsoft 365登录。
 
 1. 选择左侧导航栏中的“**Azure Active Directory**”，再选择“**管理**”下的“**应用注册**”。
 
@@ -51,7 +51,7 @@ PowerShell SDK 支持两种类型的身份验证： [委派访问](..\auth-v2-us
 
     ![注册应用程序页面的屏幕截图](./images/register-app.png)
 
-1. 选择“**注册**”。 在 **"Graph PowerShell** 脚本"页上，复制 **Application (client) ID** 和 **Directory () ID** 的值，并将其保存。
+1. 选择“**注册**”。 在 **"Graph PowerShell** 脚本"页上，复制 **Application (client) ID** 和 **Directory (id**) 值，然后保存这些值。
 
     ![新应用注册的应用程序 ID 的屏幕截图](./images/aad-application-id.png)
 
@@ -75,11 +75,11 @@ PowerShell SDK 支持两种类型的身份验证： [委派访问](..\auth-v2-us
 
 你可能想知道："我可以使用 PowerShell SDK 注册应用，以便可以使用 PowerShell SDK 吗？" 可以！ 在这种情况下，你将 PowerShell SDK 与委派访问权限一同使用，以管理员角色登录并创建应用注册。 然后，使用该应用注册，你可以将 PowerShell SDK 与仅应用访问权限一同使用，从而允许无人参与脚本。
 
-1. 使用文本编辑器新建名为RegisterAppOnly.ps1 **文件**。 将以下代码粘贴到文件中。
+1. 使用文本编辑器创建名为RegisterAppOnly.ps1 **的新文件**。 将以下代码粘贴到文件中。
 
     :::code language="powershell" source="RegisterAppOnly.ps1":::
 
-1. 保存文件。 在包含以下命令的目录中，RegisterAppOnly.ps1 **PowerShell** 并运行以下命令。
+1. 保存文件。 在包含以下命令的目录中打开 **RegisterAppOnly.ps1** 并运行以下命令。
 
     ```powershell
     .\RegisterAppOnly.ps1 -AppName "Graph PowerShell Script" -CertPath "PATH_TO_PUBLIC_KEY_FILE"
@@ -155,7 +155,7 @@ Disconnect-MgGraph
 .\GraphAppOnly.ps1
 ```
 
-脚本输出与下面输出类似的用户和组列表， (为了简便起见) 。
+该脚本输出与下面输出类似的用户和组列表 (为简洁起见) 。
 
 ```powershell
 Welcome To Microsoft Graph!

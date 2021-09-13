@@ -2,15 +2,15 @@
 title: 获取设备
 description: 获取 device 对象的属性和关系。
 author: spunukol
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 72fab126694e8879c9658883a3734f313083ccf4
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 9216f5f879bee4b600fadf459ad67d11d392ca31
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52039788"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074479"
 ---
 # <a name="get-device"></a>获取设备
 
@@ -23,9 +23,9 @@ ms.locfileid: "52039788"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Device.Read.All、Device.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Device.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
+|应用程序 | Device.Read.All、Device.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -35,7 +35,7 @@ GET /devices/{id}
 > 注意：请求中的“id”是设备的“id”属性，不是“deviceId”属性。
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法支持 `$select` [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
@@ -49,8 +49,8 @@ GET /devices/{id}
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [device](../resources/device.md) 对象。
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
-下面是一个请求示例。
+### <a name="request"></a>请求
+下面展示了示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -58,7 +58,7 @@ GET /devices/{id}
   "name": "get_device"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/devices/{id}
+GET https://graph.microsoft.com/v1.0/devices/000005c3-b7a6-4c61-89fc-80bf5ccfc366
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-device-csharp-snippets.md)]
@@ -78,8 +78,9 @@ GET https://graph.microsoft.com/v1.0/devices/{id}
 
 ---
 
-##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+### <a name="response"></a>响应
+下面展示了示例响应。 
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -90,12 +91,14 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#devices/$entity",
+  "@odata.id": "https://graph.microsoft.com/v2/72f988bf-86f1-41af-91ab-2d7cd011db47/directoryObjects/000005c3-b7a6-4c61-89fc-80bf5ccfc366/Microsoft.DirectoryServices.Device",
   "accountEnabled":false,
-  "deviceId":"4c299165-6e8f-4b45-a5ba-c5d250a707ff",
-  "displayName":"Test device",
-  "id": "id-value",
-  "operatingSystem":"linux",
-  "operatingSystemVersion":"1"
+  "deviceId":"6fa60d52-01e7-4b18-8055-4759461fc16b",
+  "displayName":"DESKTOP-858MANH",
+  "id": "000005c3-b7a6-4c61-89fc-80bf5ccfc366",
+  "operatingSystem":"Windows",
+  "operatingSystemVersion":"10.0.19043.1165"
 }
 ```
 

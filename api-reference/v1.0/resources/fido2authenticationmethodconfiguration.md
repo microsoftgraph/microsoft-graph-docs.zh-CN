@@ -2,15 +2,15 @@
 title: fido2AuthenticationMethodConfiguration 资源类型
 description: 表示 FIDO2 身份验证方法策略
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: e1ae1981de295e691c2cee5e0cda320446bebe1a021efb6c1898cd3ab91158d1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3be6525cc09b2932541efa722e1cc140d42739a0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54175285"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062696"
 ---
 # <a name="fido2authenticationmethodconfiguration-resource-type"></a>fido2AuthenticationMethodConfiguration 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "54175285"
 |:---|:---|:---|
 |[Get](../api/fido2authenticationmethodconfiguration-get.md)|[fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md)|读取 fido2AuthenticationMethodConfiguration 对象的属性和关系。|
 |[更新](../api/fido2authenticationmethodconfiguration-update.md)|[fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md)|更新 fido2AuthenticationMethodConfiguration 对象的属性。|
-|[删除](../api/fido2authenticationmethodconfiguration-delete.md)|无|将 fido2AuthenticationMethodConfiguration 对象还原到其默认配置。|
+|[删除](../api/fido2authenticationmethodconfiguration-delete.md)|无|将 fido2AuthenticationMethodConfiguration 对象恢复为默认配置。|
 
 
 ## <a name="properties"></a>属性
@@ -33,7 +33,7 @@ ms.locfileid: "54175285"
 |id|String|身份验证方法策略标识符。|
 |isAttestationEnforced|Boolean|确定是否必须对 FIDO2 安全密钥注册强制执行证明。|
 |isSelfServiceRegistrationAllowed|Boolean|确定用户能否注册新的 FIDO2 安全密钥。|
-|keyRestrictions|[fido2KeyRestrictions](../resources/fido2keyrestrictions.md)|控制是否对 FIDO2 安全密钥强制执行密钥限制，允许或禁止 Authenticator 证明 GUID (AAGUID) 定义的某些密钥类型，AAGUID) 是指示验证器的类型 (例如验证器的 make 和 model) ）。|
+|keyRestrictions|[fido2KeyRestrictions](../resources/fido2keyrestrictions.md)|控制是否对 FIDO2 安全密钥强制执行密钥限制，允许或禁止 Authenticator 证明 GUID (AAGUID) 定义的某些密钥类型，AAGUID (一个指示验证器的类型 (例如验证器的 make 和 model) 。|
 |state|authenticationMethodState|可取值为：`enabled`、`disabled`。|
 
 ## <a name="relationships"></a>关系

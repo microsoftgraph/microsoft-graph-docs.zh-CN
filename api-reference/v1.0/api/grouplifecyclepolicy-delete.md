@@ -2,15 +2,15 @@
 title: 删除 groupLifecyclePolicy
 description: 删除 groupLifecyclePolicy。
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e27ae1bf63006629f99df0d0868d826080c76dc0
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: d371425c6fd2726c47cdca95f252a3443b2406dc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52679825"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074022"
 ---
 # <a name="delete-grouplifecyclepolicy"></a>删除 groupLifecyclePolicy
 

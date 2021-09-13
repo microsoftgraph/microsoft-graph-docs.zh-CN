@@ -2,15 +2,15 @@
 title: mediaContentRatingGermany 资源类型
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ffe9f275487c974793eda9aacf8113fcd122f07b8724fd3b2cdf9e8990b16a0d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bb46f85466e9cb315460757fa6da50729b06f766
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54218672"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59142675"
 ---
 # <a name="mediacontentratinggermany-resource-type"></a>mediaContentRatingGermany 资源类型
 

@@ -2,15 +2,15 @@
 title: serviceHealth 资源类型
 description: 表示服务的运行状况信息。
 author: payiAzure
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 89bc9579b6ca5af6b7306746394b439c83d40208
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 7bb482f9432de580498ecf7d248c3d9f16abd2a8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266721"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019130"
 ---
 # <a name="servicehealth-resource-type"></a>serviceHealth 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "58266721"
 
 表示租户订阅的服务的运行状况信息。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 serviceHealth](../api/servicehealth-get.md)|[serviceHealth](../resources/servicehealth.md)|检索 [serviceHealth 对象的属性和](../resources/servicehealth.md) 关系。|

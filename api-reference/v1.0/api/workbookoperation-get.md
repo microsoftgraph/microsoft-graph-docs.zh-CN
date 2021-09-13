@@ -1,28 +1,28 @@
 ---
 title: 获取 workbookOperation
 description: 检索 workbookOperation 对象的状态。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 5947f24447a96d4f28275322b25b507c95256978
-ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
+ms.openlocfilehash: 594e312a660e4bd73e884f6a6d64c86594889f45
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50626136"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104514"
 ---
 # <a name="get-workbookoperation"></a>获取 workbookOperation
 
 检索 [workbookOperation 对象](../resources/workbookoperation.md) 的状态。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Files.ReadWrite。 |
+| 委派（工作或学校帐户）     | Files.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | 不支持。 |
 
@@ -46,7 +46,7 @@ GET /me/drive/items/{id}/workbook/operations/{operation-id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和请求的 `200 OK` [workbookOperation](../resources/workbookoperation.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和请求的 `200 OK` [workbookOperation](../resources/workbookoperation.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -103,7 +103,7 @@ Content-type: application/json
 }
 ```
 
-下面是状态为"已成功"的响应。
+以下是状态为"已成功"的响应。
 
 ```http
 HTTP/1.1 200 OK
@@ -116,7 +116,7 @@ Content-type: application/json
 }
 ```
 
-下面是状态为"failed"的响应。
+以下是状态为"failed"的响应。
 
 ```http
 HTTP/1.1 200 OK

@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: 图像
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 图像资源将与图像相关的属性分组到一个单一结构。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 8667c3750556ed429a88b8b7b19a09c03481b394c2a59d14085566bd8fee1192
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a5ccc3baf969199161936ffd635790c56ab75363
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54231794"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59089723"
 ---
 # <a name="image-resource-type"></a>图像资源类型
 

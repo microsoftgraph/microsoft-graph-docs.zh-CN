@@ -2,15 +2,15 @@
 title: 获取 onlineMeeting
 description: 检索联机会议对象的属性和关系。
 author: mkhribech
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 72bd88dfef768d372b86f3f53eab5d99fc3ac685
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: 3431284ae8e59c12a7d85578089a49c8fbc7012a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58454176"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085509"
 ---
 # <a name="get-onlinemeeting"></a>获取 onlineMeeting
 
@@ -66,7 +66,7 @@ GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 ## <a name="request-headers"></a>请求标头
 | 名称          | 说明               |
 |:--------------|:--------------------------|
-| Authorization | Bearer {token}。必需。 |
+| Authorization | 持有者{令牌}。必需。 |
 | Accept-Language  | 语言。 可选。 |
 
 如果请求包含 `Accept-Language` HTTP 标头，`joinInformation` 的 `content` 将采用 `Accept-Language` 标头中指定的语言和区域设置变量中。 默认内容将为英语。

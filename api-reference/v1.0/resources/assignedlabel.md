@@ -1,22 +1,22 @@
 ---
 title: assignedLabel 资源类型
 description: 表示分配给组分配的Microsoft 365标签。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 197ea28fa330c9a91e158cd915d8fb4bb72bca3940dd1d867776424d0cbb116a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 18a121bfcfdbd43edd4830464bc950574ff1ddeb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54135370"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123865"
 ---
 # <a name="assignedlabel-resource-type"></a>assignedLabel 资源类型
 
 命名空间：microsoft.graph
 
-表示分配给组分配的Microsoft 365标签。 敏感度标签允许管理员通过向组分配分类（如"机密 (高度机密"或"常规"策略）对组强制执行特定) 。 敏感度标签由安全与合规Microsoft 365中心中的&发布，作为Microsoft 信息保护的一部分。 有关敏感度标签详细信息，请参阅敏感度 [标签概述](/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide)。
+表示分配给组分配的Microsoft 365标签。 敏感度标签允许管理员通过向组分配分类（如"机密 (高度机密"或"常规"策略）对组强制执行特定) 。 敏感度标签由安全与合规Microsoft 365中心&发布，作为Microsoft 信息保护的一部分。 有关敏感度标签详细信息，请参阅敏感度 [标签概述](/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide)。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|

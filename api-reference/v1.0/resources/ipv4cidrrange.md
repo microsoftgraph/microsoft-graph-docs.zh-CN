@@ -1,22 +1,22 @@
 ---
 title: iPv4CidrRange 资源类型
 description: 表示使用 CIDR 表示法的 IPv4 范围。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: fcdbc795c67d40a34ab0a56f875b028a35b06d0a4d51276e199e4c07bed04a09
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b11286b1de310b4d95f6f323a7c0a94b468a75a5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54192276"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134750"
 ---
 # <a name="ipv4cidrrange-resource-type"></a>iPv4CidrRange 资源类型
 
 命名空间：microsoft.graph
 
-表示使用 CIDR 表示法的 IPv4 范围。
+表示使用无类别域间路由和 CIDR (IPv4) 范围。
 
 继承自 [ipRange](../resources/iprange.md)
 
@@ -24,7 +24,7 @@ ms.locfileid: "54192276"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|cidrAddress|String|CIDR 表示法中的 IPv4 地址|
+|cidrAddress|String|CIDR 表示法中的 IPv4 地址。 不可为空。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -41,6 +41,7 @@ ms.locfileid: "54192276"
 
 ```json
 {
+  "@odata.type": "#microsoft.graph.iPv4CidrRange",  
   "cidrAddress": "String"
 }
 ```

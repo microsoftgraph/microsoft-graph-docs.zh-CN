@@ -2,21 +2,21 @@
 title: 获取 connectionOperation
 description: 读取 connectionOperation 对象的属性和关系。
 author: mecampos
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: a43a6302c6c32611ab06e84382ce8a497f09e343
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 188f6fa3efdb58dd997a8cfe7aed11957939b3be
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53580150"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59140708"
 ---
 # <a name="get-connectionoperation"></a>获取 connectionOperation
 
 命名空间：microsoft.graph.externalConnectors
 
-读取 [connectionOperation](../resources/externalconnectors-connectionoperation.md) 对象的属性和关系。
+读取 [connectionOperation 对象的属性和](../resources/externalconnectors-connectionoperation.md) 关系。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

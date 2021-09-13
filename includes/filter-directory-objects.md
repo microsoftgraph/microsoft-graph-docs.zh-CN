@@ -1,3 +1,12 @@
+---
+ms.localizationpriority: medium
+ms.openlocfilehash: 6bfe8ca4e21425b6630d1213ff217b0b28db4eb7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59142446"
+---
 ### <a name="application-properties"></a>应用程序属性
 
 | 名称                          | eq                                         | startsWith                                 | ge                                         | le                                         | Null 值                                 |

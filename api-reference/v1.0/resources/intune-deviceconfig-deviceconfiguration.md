@@ -2,15 +2,15 @@
 title: deviceConfiguration 资源类型
 description: 设备配置。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 792aa41c395615f958db59356f2c8f599a224a159257c54a0c3e9b79dfd0963c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ce0022353a93821ef4a78d32ed6f6d0f1f780bd6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163794"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118444"
 ---
 # <a name="deviceconfiguration-resource-type"></a>deviceConfiguration 资源类型
 

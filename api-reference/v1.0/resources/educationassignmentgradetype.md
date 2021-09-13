@@ -1,16 +1,16 @@
 ---
 title: educationAssignmentGradeType 资源类型
 description: 表示如何对工作分配进行评分。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: b08306960b9adfc67432b551b782b187d468734e9157b34349fd303eeaf2b706
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 96dc73880078c57856afb0dac0ac0c589babff83
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54149945"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109183"
 ---
 # <a name="educationassignmentgradetype-resource-type"></a>educationAssignmentGradeType 资源类型
 

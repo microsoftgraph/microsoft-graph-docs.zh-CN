@@ -1,16 +1,16 @@
 ---
 title: 列出规则
 description: 获取为用户的收件箱定义的所有 messageRule 对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 10eb40e502a3b1e6ac6c21cebecceab7c6277b62
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a5c68632b0d571216e04e41e15e2fb7a6b3a7d61
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055944"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032627"
 ---
 # <a name="list-rules"></a>列出规则
 
@@ -76,7 +76,7 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

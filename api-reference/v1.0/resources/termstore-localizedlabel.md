@@ -2,15 +2,15 @@
 title: localizedLabel 资源类型
 description: 表示术语存储中术语的标签。
 author: vishriv
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: resourcePageType
-ms.openlocfilehash: da9e3fb1a3cff98823771c1c99db052b92ba7e38
-ms.sourcegitcommit: 998c63e6290cfb5ad4a6bd3eb3e249d282f962a3
+ms.openlocfilehash: e0944e2db89b844aa6cbd0c6d2dd49ca2fe4afe3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533720"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084053"
 ---
 # <a name="localizedlabel-resource-type"></a>localizedLabel 资源类型
 
