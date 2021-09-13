@@ -2,15 +2,15 @@
 title: deviceManagementSettingIntegerConstraint 资源类型
 description: 强制整数设置的允许值范围的约束
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c0fccea17527cc6d76f81818512c6e6830ffb54b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9f47ada986c5541e2c909c18bba4ece8b813b825
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820707"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59148387"
 ---
 # <a name="devicemanagementsettingintegerconstraint-resource-type"></a>deviceManagementSettingIntegerConstraint 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "58820707"
 继承自 [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|描述|
 |:---|:---|:---|
 |minimumValue|Int32|允许的最小值|
 |maximumValue|Int32|允许的最大值|

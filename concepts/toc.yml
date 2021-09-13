@@ -663,7 +663,7 @@ items:
                 href: toolkit/get-started/mgt-spfx.md
           - name: 构建首个应用
             items:
-              - name: 注册 Azure Active Directory 应用
+              - name: 注册 Azure AD 租户应用
                 href: toolkit/get-started/add-aad-app-registration.md
               - name: 构建 Web 应用程序 (JavaScript)
                 href: toolkit/get-started/build-a-web-app.md
@@ -673,8 +673,10 @@ items:
                 href: toolkit/get-started/use-toolkit-with-angular.md
               - name: 构建 SharePoint Web 部件
                 href: toolkit/get-started/build-a-sharepoint-web-part.md
-              - name: 构建 Microsoft Teams 选项卡。
+              - name: 生成 Teams 选项卡
                 href: toolkit/get-started/build-a-microsoft-teams-tab.md
+              - name: 使用 SSO 生成 Teams 选项卡
+                href: toolkit/get-started/build-a-microsoft-teams-sso-tab.md
               - name: 构建电子应用
                 href: toolkit/get-started/build-an-electron-app.md
           - name: 提供程序
@@ -683,12 +685,14 @@ items:
                 href: toolkit/providers/providers.md
               - name: MSAL 提供商
                 href: toolkit/providers/msal.md
-              - name: MSAL 2 提供商
+              - name: MSAL2 提供商
                 href: toolkit/providers/msal2.md
-              - name: SharePoint 提供程序
+              - name: SharePoint 提供商
                 href: toolkit/providers/sharepoint.md
-              - name: Microsoft Teams 提供程序
+              - name: Teams 提供商
                 href: toolkit/providers/teams.md
+              - name: Teams MSAL2 提供商
+                href: toolkit/providers/teams-msal2.md
               - name: 电子提供程序
                 href: toolkit/providers/electron.md
               - name: 代理服务器提供商
