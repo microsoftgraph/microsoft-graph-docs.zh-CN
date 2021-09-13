@@ -2,15 +2,15 @@
 title: 创建 complianceManagementPartner
 description: 创建新的 complianceManagementPartner 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c3cf82cbccc80a810fda2cca86be3529f0ef0130f38ae7091a697b401417050f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0c707275edf4f68f481466fb9a164199bc1d8eb7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54225837"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59146973"
 ---
 # <a name="create-compliancemanagementpartner"></a>创建 complianceManagementPartner
 

@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: 驱动器
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: sharepoint
 description: 驱动器资源是表示用户的 OneDrive 或 SharePoint 中文档库的顶级对象。
 doc_type: resourcePageType
-ms.openlocfilehash: 499bdeb7d2dd3f3d68092a8c9b17008a5d4d1de5317f14c0e7b3b441d6cef32d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ac1b8f9bb563f17f8b9a9b987a2672e35a13491c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54169639"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094371"
 ---
 # <a name="drive-resource-type"></a>Drive 资源类型
 
@@ -86,8 +86,8 @@ OneDrive 用户必须始终具有至少一个可用驱动器，即默认驱动�
 | 所有者                | [identitySet](identityset.md) | 可选。拥有此驱动器的用户帐户。只读。                                                                                                                                                                       |
 | 配额                | [配额](quota.md)             | 可选。有关驱动器的存储空间配额的信息。只读。                                                                                                                                                          |
 | sharepointIds        | [sharepointIds][]             | 返回对 SharePoint REST 兼容性有用的标识符。只读。                                                                                                                                                         |
-| system               | [systemFacet][]               | 如果存在，则表示这是系统管理的驱动器。 只读。
-| webUrl               | string (url)                  | 在浏览器中显示此资源的 URL。只读。                                                                                                                                                                        |
+| system               | [systemFacet][]               | 如果存在，则表示这是系统管理的驱动器。只读。
+| WebUrl               | string (url)                  | 在浏览器中显示此资源的 URL。只读。                                                                                                                                                                        |
 
 [identitySet]: identityset.md
 [sharepointIds]: sharepointids.md

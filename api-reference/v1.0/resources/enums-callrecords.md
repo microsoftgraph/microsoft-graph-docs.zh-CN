@@ -2,15 +2,15 @@
 title: 呼叫记录枚举值
 description: Microsoft Graph呼叫记录枚举值
 doc_type: enumPageType
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 author: gageames
-ms.openlocfilehash: 156ad1dd4eb9fd0cdf42579a0eaa064b6baf02fbbe257379fd30904ea2815918
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8ad5b6ce218d3dc3d116b29a01c86911dbf8b390
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54212100"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104206"
 ---
 # <a name="call-records-enum-values"></a>呼叫记录枚举值
 
@@ -151,6 +151,13 @@ ms.locfileid: "54212100"
 | wifi80211ac
 | wifi80211ax
 | unknownFutureValue
+
+### <a name="pstncalldurationsource-values"></a>pstnCallDurationSource 值 
+
+|成员|
+|:---|
+|microsoft|
+|operator|
 
 <!--
 {

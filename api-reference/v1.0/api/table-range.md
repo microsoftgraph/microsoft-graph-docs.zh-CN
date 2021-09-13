@@ -2,15 +2,15 @@
 title: workbookTable： range
 description: 获取与整个表相关的 range 对象。
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: e1b01a3a8df2288084803fb07ba5ccd489844a23
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: eef9210b8c72e8b633b56a7a61bc3ca2a8e2da94
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054397"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036926"
 ---
 # <a name="workbooktable-range"></a>workbookTable： range
 
@@ -39,7 +39,7 @@ GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer {token}。必需。 |
+| Authorization  | 持有者{令牌}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ## <a name="request-body"></a>请求正文

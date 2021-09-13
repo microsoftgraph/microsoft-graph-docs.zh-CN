@@ -2,15 +2,15 @@
 title: 创建关系
 description: 创建新的 relation 对象。
 author: vishriv
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: apiPageType
-ms.openlocfilehash: 67bcc4f166e960eea1bce786d7dd8b3cda7fa873
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 635af5f08c21a8596047ce9fe61e27bef85d5d33
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58513870"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084844"
 ---
 # <a name="create-relation"></a>创建关系
 命名空间：microsoft.graph.termStore

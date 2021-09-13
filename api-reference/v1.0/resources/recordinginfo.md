@@ -2,15 +2,15 @@
 title: recordingInfo 资源类型
 description: 表示参与者的录制信息。
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: aea3bcbcae882ff58f664f325efdfa9490773bde7d746af3a5341d6e0f288ef6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 54e230ca6844d974cf918325aab48e898d87e08b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54134978"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59078649"
 ---
 # <a name="recordinginfo-resource-type"></a>recordingInfo 资源类型
 

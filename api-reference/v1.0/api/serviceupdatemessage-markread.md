@@ -2,15 +2,15 @@
 title: serviceUpdateMessage：markRead
 description: 将服务更新消息的列表标记为已登录用户的已读邮件。
 author: payiAzure
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 857c04e33e9a8ce2f833cacd55b0a80c4167522b
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: c83e4e6c58db14bbb5d51c78138254bdae80fc2d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266337"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59119056"
 ---
 # <a name="serviceupdatemessage-markread"></a>serviceUpdateMessage：markRead
 命名空间：microsoft.graph
@@ -49,7 +49,7 @@ POST /admin/serviceAnnouncement/messages/markRead
 
 |参数|类型|说明|
 |:---|:---|:---|
-|messageIds|String collection|要标记为已读的邮件标识号列表。|
+|messageIds|字符串集合|要标记为已读的邮件标识号列表。|
 
 
 ## <a name="response"></a>响应

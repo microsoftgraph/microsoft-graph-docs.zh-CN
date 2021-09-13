@@ -2,15 +2,15 @@
 title: localizedDescription 资源类型
 description: 表示用于描述术语存储中的术语的本地化说明。
 author: vishriv
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: resourcePageType
-ms.openlocfilehash: ea44c35e4b8f7dd5eb1eadc7cbb6e4861a402b4d
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 856b0632e0ed1d167d45be55437c4fee97d99e4e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514944"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084060"
 ---
 # <a name="localizeddescription-resource-type"></a>localizedDescription 资源类型
 

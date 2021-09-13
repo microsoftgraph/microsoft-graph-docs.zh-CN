@@ -2,15 +2,15 @@
 title: auditLogRoot 资源类型
 description: 包含不同类型的审核日志。 此资源返回单一的 auditLog 资源。 它不包含任何可用属性。
 author: dhanyahk
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 363d3a0c3aafbbd5b3d53914748dfdb1fd432b1b
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 8658b8abd03f88b1427a8001d51ba142748f1c91
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50759725"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127071"
 ---
 # <a name="auditlogroot-resource-type"></a>auditLogRoot 资源类型
 
@@ -35,7 +35,7 @@ ms.locfileid: "50759725"
 
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|directoryAudits|[directoryAudit](directoryaudit.md) 集合| 只读。 可为 NULL。|
+|directoryAudits|[directoryAudit](directoryaudit.md) 集合| 只读。可为空。|
 |signIns|[signIn](signin.md) 集合| 只读。可为空。|
 
 ## <a name="json-representation"></a>JSON 表示形式

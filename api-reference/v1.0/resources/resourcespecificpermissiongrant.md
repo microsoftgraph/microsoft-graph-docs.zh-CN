@@ -2,15 +2,15 @@
 title: resourceSpecificPermissionGrant 资源类型
 description: 指定特定 Azure AD 应用具有的权限。
 author: AkJo
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 221576c08af5e97979d2a42e8dc0cce483e3bf35
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: a12e57dc3d5ab99e2aa339883cc7ede06ff13e3f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58264155"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094042"
 ---
 # <a name="resourcespecificpermissiongrant-resource-type"></a>resourceSpecificPermissionGrant 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "58264155"
 
 有关授予应用同意访问资源的特定实例的权限，请参阅特定于 [资源的同意](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 |  方法                                                                   |  返回类型                                                                     | 说明                                                  | 
 | :------------------------------------------------------------------------ | :------------------------------------------------------------------------------- | :----------------------------------------------------------- |

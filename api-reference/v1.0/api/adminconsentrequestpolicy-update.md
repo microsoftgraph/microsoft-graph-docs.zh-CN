@@ -2,15 +2,15 @@
 title: 更新 adminConsentRequestPolicy
 description: 更新 adminConsentRequestPolicy 对象的属性。
 author: psignoret
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 57c74a79541bd2244792035d64587769336abfd3
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 7cd9c73eca68ba9858ea82601c80ce4e7967f72f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51509169"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59080464"
 ---
 # <a name="update-adminconsentrequestpolicy"></a>更新 adminConsentRequestPolicy
 

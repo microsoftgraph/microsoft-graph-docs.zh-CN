@@ -1,18 +1,18 @@
 ---
 title: 使用 Microsoft SDK Graph API 调用
-description: 提供有关使用 SDK 创建 Microsoft Graph HTTP 请求的说明。
-localization_priority: Normal
+description: 提供有关使用 SDK Graph Microsoft HTTP 请求的说明。
+ms.localizationpriority: medium
 author: DarrelMiller
-ms.openlocfilehash: 31b58dc69f1e002f1d3c7cb9394e2e13b087b5ae4adc8b9a5c07600ea9c4f936
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 84b6f8bddd8e44faaf9724db29d694d9f2b6512b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54205349"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59055813"
 ---
 # <a name="make-api-calls-using-the-microsoft-graph-sdks"></a>使用 Microsoft SDK Graph API 调用
 
-Microsoft Graph SDK 服务库提供了一个客户端类，可用于作为创建所有 API 请求的起点。 客户端类有两种样式：一种使用 fluent 接口创建请求 (例如，) 另一种接受路径字符串 (`client.Users["user-id"].Manager` 例如 `api("/users/user-id/manager")` ，) 。 当您具有请求对象时，您可以指定各种选项（如筛选和排序）并最后选择要执行的操作类型。
+Microsoft Graph SDK 服务库提供了一个客户端类，可用于作为创建所有 API 请求的起点。 客户端类有两种样式：一种使用 fluent 接口创建请求 (例如，) 另一种接受路径字符串 (`client.Users["user-id"].Manager` 例如 `api("/users/user-id/manager")` ，) 。 当具有请求对象时，可以指定各种选项，如筛选和排序，最后，选择要执行的操作类型。
 
 还有一个[Microsoft Graph PowerShell SDK，](../powershell/get-started.md)它没有任何客户端类。 相反，所有请求都表示为 PowerShell 命令。 例如，若要获取用户的经理，该命令为 `Get-MgUserManager` 。 有关查找 API 调用的命令详细信息，请参阅导航[Microsoft Graph PowerShell SDK。](../powershell/navigating.md)
 
@@ -63,7 +63,7 @@ Microsoft Graph SDK 服务库提供了一个客户端类，可用于作为创建
 
 ## <a name="retrieve-a-list-of-entities"></a>检索实体列表
 
-检索实体列表与检索单个实体相似，除了有许多用于配置请求的其他选项。 `$filter`查询参数可用于将查询结果集条件匹配的那些行。  `$orderBy`查询参数将请求服务器提供按指定属性排序的实体列表。
+检索实体列表与检索单个实体相似，除了有许多用于配置请求的其他选项。 `$filter`查询参数可用于将查询结果集条件匹配的行。  `$orderBy`查询参数将请求服务器提供按指定属性排序的实体列表。
 
 # <a name="c"></a>[C#](#tab/CS)
 

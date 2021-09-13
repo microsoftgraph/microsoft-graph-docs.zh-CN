@@ -2,15 +2,15 @@
 title: 创建组
 description: 在术语存储中创建新的组对象。
 author: vishriv
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: apiPageType
-ms.openlocfilehash: 8f26a6dc8b5c29face38f3e20d82bc8ff9c36594
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 4e0a9a5a3228f4e45561cdd54bdbebc696ab89f2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514888"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104633"
 ---
 # <a name="create-termstore-group"></a>创建 termStore 组
 命名空间：microsoft.graph.termStore

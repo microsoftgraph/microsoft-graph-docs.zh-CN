@@ -2,15 +2,15 @@
 title: mediaContentRatingFrance 资源类型
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: dcc2364f3327d14afaf32bafafdd98638ea46d39c49bad67169d7a6b292f1ab8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1024bab7ea304d893813b41387533a769af16cad
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54218679"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59142696"
 ---
 # <a name="mediacontentratingfrance-resource-type"></a>mediaContentRatingFrance 资源类型
 

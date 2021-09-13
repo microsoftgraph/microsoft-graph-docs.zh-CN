@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: 配额
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 配额资源提供有关 驱动器 资源上的空间限制的详细信息。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 36a88274fa2652d315ee7e69b1829268a4745b5f60cd2b07c295ec8b1f53ee53
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 71f0f29c4ab6979f7154940e9007665d020b7f68
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54216656"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143808"
 ---
 # <a name="quota-resource-type"></a>Quota 资源类型
 

@@ -1,14 +1,14 @@
 ---
 title: Microsoft Graph PowerShell SDK 入门
 description: 开始使用 Microsoft Graph PowerShell SDK 执行一些基本任务。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jasonjoh
-ms.openlocfilehash: 44ae296a7e4beae08e5e47561097d7011012d2f3bfbc9c45b12dcf5059bba13e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6b0787861014985d1c411b651fa44ca45ff533e6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54168995"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139063"
 ---
 # <a name="get-started-with-the-microsoft-graph-powershell-sdk"></a>Microsoft Graph PowerShell SDK 入门
 
@@ -26,11 +26,11 @@ Select-MgProfile -Name "beta"
 
 PowerShell SDK 支持两种类型的身份验证：委派访问和仅应用访问。 在本指南中，你将使用委派访问权限以用户登录，同意 SDK 代表你操作，并调用 Microsoft Graph。
 
-有关对无人参与方案使用仅应用访问的详细信息，请参阅使用[Microsoft Graph PowerShell SDK 进行](app-only.md)仅应用身份验证。
+有关对无人参与方案使用仅应用访问的详细信息，请参阅使用[Microsoft Graph PowerShell SDK 进行仅应用身份验证](app-only.md)。
 
 ### <a name="determine-required-permission-scopes"></a>确定所需的权限范围
 
-Microsoft 管理中心Graph API 都受一个或多个权限范围保护。 用户登录必须同意计划使用的 API 的所需范围之一。 此示例中，我们将使用以下 API。
+Microsoft 应用程序Graph API 都受一个或多个权限范围保护。 用户登录必须同意计划使用的 API 的所需范围之一。 本示例中，我们将使用以下 API。
 
 - [列出](/graph/api/user-list?view=graph-rest-1.0&preserve-view=true) 用户以查找登录用户的用户 ID
 - [列出 joinedTeams，Teams](/graph/api/user-list-joinedteams?view=graph-rest-1.0&preserve-view=true)用户是成员的列表。
@@ -54,7 +54,7 @@ Connect-MgGraph -Scopes "User.Read.All","Group.ReadWrite.All"
 
 ## <a name="call-microsoft-graph"></a>调用 Microsoft Graph
 
-现在，你已登录，你可以开始调用 Microsoft Graph。
+现在，你已登录，可以开始向 Microsoft Graph。
 
 ### <a name="get-the-signed-in-user"></a>获取登录用户
 

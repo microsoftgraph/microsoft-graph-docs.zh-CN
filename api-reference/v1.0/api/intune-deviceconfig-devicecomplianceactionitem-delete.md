@@ -2,15 +2,15 @@
 title: 删除 deviceComplianceActionItem
 description: 删除 deviceComplianceActionItem。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 40ec0cf2f0fc5a67707e9f32180a47f876594bb30543f4192971a3f31c78fa6c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3818ff6c78cf4e4a19a91a25cf7bc6a714c65b84
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54135748"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59140218"
 ---
 # <a name="delete-devicecomplianceactionitem"></a>删除 deviceComplianceActionItem
 

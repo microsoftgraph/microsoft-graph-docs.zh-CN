@@ -2,15 +2,15 @@
 title: 删除目录角色成员
 description: 从 directoryRole 中删除成员。
 author: abhijeetsinha
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: e03fb736cdd1dce8ca89335d87e9bd6bc65ddc4b
-ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
+ms.openlocfilehash: 89989e2308c1e0ea8727746bbfe3fe37d71ccca8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53118663"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046328"
 ---
 # <a name="remove-directory-role-member"></a>删除目录角色成员
 

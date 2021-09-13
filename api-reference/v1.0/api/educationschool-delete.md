@@ -2,15 +2,15 @@
 title: 删除 educationSchool
 description: 删除学校。
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 14921cfd46bb9c6ac3ac60f7f65c027e9d3bd0aa
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cf7768b20a79015ec39287072bf51ebb6066ac26
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48063708"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147393"
 ---
 # <a name="delete-educationschool"></a>删除 educationSchool
 

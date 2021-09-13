@@ -1,16 +1,16 @@
 ---
 title: Create workforceIntegration
 description: 创建新的 workforceIntegration 对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2eee6b620bcd22e571a2b526d4a43e70fe91416a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ecaf8ae0b99c517f63ce6cb800d44a4627d46dc7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055643"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143942"
 ---
 # <a name="create-workforceintegration"></a>Create workforceIntegration
 
@@ -52,7 +52,7 @@ POST /teamwork/workforceIntegrations
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和新 [workforceIntegration](../resources/workforceintegration.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和新的 `201 Created` [workforceIntegration](../resources/workforceintegration.md) 对象。
 
 ## <a name="examples"></a>示例
 

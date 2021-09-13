@@ -2,15 +2,15 @@
 title: 列表集
 description: 获取 set 对象及其属性的列表。
 author: vishriv
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: apiPageType
-ms.openlocfilehash: 6174c44f98d5c916937f7cd83ba65e2e163faf28
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 9532079cf515409ea5b421c5fdabb9ef95adaa68
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514898"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094707"
 ---
 # <a name="list-sets"></a>列表集
 命名空间：microsoft.graph.termStore

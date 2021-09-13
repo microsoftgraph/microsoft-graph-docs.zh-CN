@@ -1,16 +1,16 @@
 ---
 title: 列出实例
 description: 获取指定的时间范围的事件的实例（发生次数）。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b19b452f029b7d4223bcc150f184b805a311cecd
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 23a607fa19db53784c28e466a7d82ecf145e199a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448289"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59140743"
 ---
 # <a name="list-instances"></a>列表实例
 
@@ -60,7 +60,7 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 | 名称       | 类型 | 说明 |
 |:---------------|:--------|:--------|
 | Authorization  | string | Bearer {token}。必需。  |
-| Prefer: outlook.timezone  | string | 此选项可用于指定响应中开始时间和结束时间的时区。 如果未指定，返回的这些时间值采用 UTC 时区。 可选。 |
+| Prefer: outlook.timezone  | string | 用于指定响应中开始时间和结束时间的时区。如果未指定，返回的这些时间值采用 UTC 时区。可选。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -70,7 +70,7 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Event](../resources/event.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-以下示例在指定的时间范围内获取作为定期系列的主事件的事件的发生次数和例外。
+以下示例获取指定时间范围内的事件（即定期系列的主事件）的发生次数和异常情况。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

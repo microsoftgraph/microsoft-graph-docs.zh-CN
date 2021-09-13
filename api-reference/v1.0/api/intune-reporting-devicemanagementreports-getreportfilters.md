@@ -2,15 +2,15 @@
 title: getReportFilters 操作
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6965ce1a256994182a66d45b25f5ef96dd26b50b4d5def4e751dde2c9a5dcea7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 424aa3acb05c00e0a8030e8af4f89486c178fa60
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54175684"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59113950"
 ---
 # <a name="getreportfilters-action"></a>getReportFilters 操作
 
@@ -41,7 +41,7 @@ POST /deviceManagement/reports/getReportFilters
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

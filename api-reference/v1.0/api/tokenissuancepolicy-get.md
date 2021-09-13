@@ -1,16 +1,16 @@
 ---
 title: 获取 tokenIssuancePolicy
 description: 检索 tokenIssuancePolicy 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: luleonpla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 34a0c2cfd6c4847e9a6b50b49be87325fd05f323
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6184303b03be124c3898e32d74a9ce8159bd488d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054355"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59090108"
 ---
 # <a name="get-tokenissuancepolicy"></a>获取 tokenIssuancePolicy
 
@@ -40,7 +40,7 @@ GET /policies/tokenIssuancePolicies/{id}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$expand` 和 `$select` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。 使用 `$expand` 时，请确保应用请求读取扩展对象的权限。
+此方法支持 `$expand` 和 `$select` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。 使用 `$expand` 时，请确保你的应用请求读取扩展对象的权限。
 
 ## <a name="request-headers"></a>请求标头
 

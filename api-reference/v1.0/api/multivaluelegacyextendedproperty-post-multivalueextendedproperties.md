@@ -1,16 +1,16 @@
 ---
 title: 创建多值扩展属性
 description: '在新建或现有的资源实例中创建一个或多个多值扩展属性。 '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 0ae8cdf484fe5772a19779721ee3c78ca9e2528d6b643eb9fbc057675e34a3cf
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 932dea4df8ffd07659e0097ee5c52612fb9e5a70
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189994"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110191"
 ---
 # <a name="create-multi-value-extended-property"></a>创建多值扩展属性
 
@@ -40,7 +40,7 @@ ms.locfileid: "54189994"
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
-| [calendar](../resources/calendar.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| [日历](../resources/calendar.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
 | [contact](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [contactFolder](../resources/contactfolder.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [事件](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite |  Calendars.ReadWrite|
@@ -132,7 +132,7 @@ PATCH /groups/{id}/events/{id}
 |id|String|对于 **multiValueExtendedProperties** 集合中的每个属性，请指定此参数以标识属性。它必须遵照其中一种支持的格式。有关详细信息，请参阅 [Outlook 扩展属性概述](../resources/extended-properties-overview.md)。必需。|
 |值|string|对于 **multiValueExtendedProperties** 集合中的每个属性，请指定属性值。必需。|
 
-在新建资源实例中创建扩展属性时，除了新的 **multiValueExtendedProperties** 集合之外，请提供该资源实例的 JSON 表示形式 (即消息 [、mailFolder、event](../resources/mailfolder.md)等 ) 。 [](../resources/event.md) [](../resources/message.md)
+在新建资源实例中创建扩展属性时，除了新的 **multiValueExtendedProperties** 集合外，请提供该资源实例的 JSON 表示形式以及 (，即消息 [、mailFolder、event](../resources/mailfolder.md)等 [](../resources/event.md)) 。 [](../resources/message.md)
 
 
 ## <a name="response"></a>响应

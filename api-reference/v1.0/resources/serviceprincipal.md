@@ -1,16 +1,16 @@
 ---
 title: servicePrincipal 资源类型
 description: 表示目录中的一个应用程序实例。 继承自 directoryObject。
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 690b5bdd10f0031303e9aa6018e8231cf01fea2b
-ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
+ms.openlocfilehash: 6640718de61192972ee9ff000e756c6eac024826
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58490614"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59108840"
 ---
 # <a name="serviceprincipal-resource-type"></a>servicePrincipal 资源类型
 
@@ -30,7 +30,7 @@ ms.locfileid: "58490614"
 |[更新 servicePrincipal](../api/serviceprincipal-update.md) | [servicePrincipal](serviceprincipal.md)  |更新 servicePrincipal 对象。 |
 |[删除 servicePrincipal](../api/serviceprincipal-delete.md) | 无 |删除 servicePrincipal 对象。|
 |[List createdObjects](../api/serviceprincipal-list-createdobjects.md) |[directoryObject](directoryobject.md) 集合| 获取 createdObject 对象集合。|
-|[List ownedObjects](../api/serviceprincipal-list-ownedobjects.md) |[directoryObject](directoryobject.md) collection| 获取 ownedObject 对象集合。|
+|[List ownedObjects](../api/serviceprincipal-list-ownedobjects.md) |[directoryObject](directoryobject.md) 集合| 获取 ownedObject 对象集合。|
 |[获取 delta](../api/serviceprincipal-delta.md)|servicePrincipal 集合| 获取服务主体的增量更改。 |
 |**应用角色分配**| | |
 |[列出 appRoleAssignments](../api/serviceprincipal-list-approleassignments.md) |[appRoleAssignment](approleassignment.md) 集合| 获取已分配到此服务主体的应用角色。|
@@ -127,7 +127,7 @@ ms.locfileid: "58490614"
 |memberOf|[directoryObject](directoryobject.md) 集合|此服务主体所属的角色。 HTTP 方法：GET 只读。 可为空。 支持 `$expand`。|
 |oauth2PermissionGrants|[oAuth2PermissionGrant](oauth2permissiongrant.md) 集合|委派权限授予设置此服务主体以代表已登录用户访问 API 的权限。只读。可为空。|
 |ownedObjects|[directoryObject](directoryobject.md) 集合|此服务主体所拥有的目录对象。 只读。 可为空。 支持 `$expand`。|
-|owners|[directoryObject](directoryobject.md) 集合|servicePrincipal 所述的目录对象。 所有者是一组允许修改此对象的非管理员用户或 servicePrincipal。 只读。 可为 NULL。 支持 `$expand`。|
+|owners|[directoryObject](directoryobject.md) 集合|servicePrincipal 所述的目录对象。 所有者是一组允许修改此对象的非管理员用户或 servicePrincipal。 只读。 可为空。 支持 `$expand`。|
 |tokenIssuancePolicies|[tokenIssuancePolicy](tokenissuancepolicy.md) 集合|为此服务主体分配的 tokenIssuancePolicies。|
 |tokenLifetimePolicies|[tokenLifetimePolicy](tokenlifetimepolicy.md) 集合|为此服务主体分配的 tokenLifetimePolicies。|
 

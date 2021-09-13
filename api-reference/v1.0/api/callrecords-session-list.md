@@ -1,16 +1,16 @@
 ---
 title: 列出 callRecord 会话
 description: 检索 callRecord 的会话对象列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 97a00a5eed7f1ea6b8569d5066b39c45001548dc
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 8a15e2fe18d302c1fc7dbf2e631aca08990f25fc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051590"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056908"
 ---
 # <a name="list-callrecord-sessions"></a>列出 callRecord 会话
 

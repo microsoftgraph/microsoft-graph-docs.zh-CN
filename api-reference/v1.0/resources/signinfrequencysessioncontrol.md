@@ -1,16 +1,16 @@
 ---
 title: signInFrequencySessionControl 资源类型
 description: 强制执行登录频率的会话控制。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 5553e4ba3d3c51d44c4f212ca9a2885ac0037a88b1e2d6226cb69246904b0fba
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f144a2b41b9b2cc9c1675c075d43b1add647b0c2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54124169"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139609"
 ---
 # <a name="signinfrequencysessioncontrol-resource-type"></a>signInFrequencySessionControl 资源类型
 

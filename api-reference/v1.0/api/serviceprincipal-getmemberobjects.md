@@ -1,16 +1,16 @@
 ---
 title: 'servicePrincipal: getMemberObjects'
 description: 获取此服务主体所属的组和目录角色列表。  此检查是可传递的。
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: b6da812b03bedcb78c43ae581e3aab99dfb2961f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6fbd6646201a37198334f748d5580591714f9f03
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050330"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110044"
 ---
 # <a name="serviceprincipal-getmemberobjects"></a>servicePrincipal: getMemberObjects
 

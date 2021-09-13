@@ -1,16 +1,16 @@
 ---
 title: Activate directoryRole
 description: 激活目录角色。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7078b50b05f521d5940cef69565025c5fbf66f21
-ms.sourcegitcommit: 9eeb056f311044aaa40654cdb3ae5ae61f1c4d04
+ms.openlocfilehash: ed6d6e07eeb58ab66905db0bcc1cf41f55454561
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52854129"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046258"
 ---
 # <a name="activate-directoryrole"></a>Activate directoryRole
 
@@ -46,7 +46,7 @@ POST /directoryRoles
 
 |参数 | 类型 | 说明|
 |:---------|:---------|:---------|
-|roleTemplateId | string | 必填。 角色所基于的 [directoryRoleTemplate](../resources/directoryroletemplate.md) 的 ID。 这是唯一可以在请求中指定的属性。|
+|roleTemplateId | string | 必需。 角色所基于的 [directoryRoleTemplate](../resources/directoryroletemplate.md) 的 ID。 这是唯一可以在请求中指定的属性。|
 
 ## <a name="response"></a>响应
 

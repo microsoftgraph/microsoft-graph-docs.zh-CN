@@ -1,16 +1,16 @@
 ---
 title: 列出任务
 description: 检索与 plannerBucket 对象关联的 **plannerTask** 对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 41d9c3a35cf4f41147dfed005becfc6f28a4375e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 4ab73f80e8a72e1996d30c086709fd904045afae
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050379"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59037269"
 ---
 # <a name="list-tasks"></a>列出任务
 
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/v1.0/planner/buckets/{bucket-id}/tasks
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

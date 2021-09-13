@@ -1,24 +1,24 @@
 ---
 title: educationSchool： delta
-description: 获取新创建或更新的学校，而无需执行整个学校集合的完整读取。
+description: 获取新建或更新的学校，而无需执行整个学校集合的完整读取。
 author: mlafleur
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 5f77334e3149dd963a0a2092faae5aa11bd8bd9a
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: c940ad7024d1c1371f5d7a7002fac97b9632bf3f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52474918"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147379"
 ---
 # <a name="educationschool-delta"></a>educationSchool： delta
 
 命名空间：microsoft.graph
 
-获取新创建或更新的学校，而无需执行整个学校集合的完整读取。 有关详细信息 [，请参阅使用 delta](/graph/delta-query-overview) 查询。
+获取新建或更新的学校，而无需执行整个学校集合的完整读取。 有关详细信息 [，请参阅使用 delta](/graph/delta-query-overview) 查询。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

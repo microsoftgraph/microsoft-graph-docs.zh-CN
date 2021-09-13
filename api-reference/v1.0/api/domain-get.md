@@ -2,15 +2,15 @@
 title: 获取域
 description: 检索 domain 对象的属性和关系。
 author: adimitui
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5ff05e7df119afe6d858453d65a3db29de8ee0d8
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 17b1e2b9220e4a9d8ba657b327c774121adf05e2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052423"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056693"
 ---
 # <a name="get-domain"></a>获取域
 
@@ -25,9 +25,9 @@ ms.locfileid: "52052423"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.Read.All    |
+|委派（工作或学校帐户） | Domain.Read.All、Domain.ReadWrite.All、Directory.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Domain.Read.All、Domain.ReadWrite.All、Directory.Read.All |
+|应用程序 | Domain.Read.All、Domain.ReadWrite.All、Directory.Read.All  |
 
 ## <a name="http-request"></a>HTTP 请求
 

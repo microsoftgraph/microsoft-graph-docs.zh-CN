@@ -1,16 +1,16 @@
 ---
 title: 删除 tokenIssuancePolicy
 description: 删除 tokenIssuancePolicy。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: luleonpla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ad4f37ffe097b38d0b19fb839d52916e4173d146
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 9a6bdf5aedc364a751bdf48fd2b4a22dc3ef713c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50449017"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59090150"
 ---
 # <a name="delete-tokenissuancepolicy"></a>删除 tokenIssuancePolicy
 

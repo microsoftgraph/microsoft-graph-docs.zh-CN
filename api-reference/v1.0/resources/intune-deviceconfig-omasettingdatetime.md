@@ -2,15 +2,15 @@
 title: omaSettingDateTime 资源类型
 description: OMA 设置日期时间定义。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ce1bd6a29a577c50cbe76e560019e4f9c65a534a0791db3bd5e650b9bc99bac7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fac8f51adfba47910b8527489ef8b745f67ba8b9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54218595"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59146819"
 ---
 # <a name="omasettingdatetime-resource-type"></a>omaSettingDateTime 资源类型
 

@@ -2,15 +2,15 @@
 title: 删除 androidWorkProfileCustomConfiguration
 description: 删除 androidWorkProfileCustomConfiguration。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6b4285bf598e5a5218f97b6eee378b410fdfba12adc9d5d5714f575cbf2af99e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8ac57fef9c15b7f1be4c063e86fa80a2ddc85750
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54226032"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59140316"
 ---
 # <a name="delete-androidworkprofilecustomconfiguration"></a>删除 androidWorkProfileCustomConfiguration
 

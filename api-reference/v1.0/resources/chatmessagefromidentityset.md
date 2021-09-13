@@ -2,21 +2,21 @@
 title: chatMessageFromIdentitySet 资源类型
 description: 表示聊天或频道中消息的发送方。
 author: RamjotSingh
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 58f5654dc8019950134c25cdc50529b29032d8870462d46a46481b489f4ba15a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1f9b06063976e336a3e316c4ef5ca2c6ce9de622
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54192577"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094419"
 ---
 # <a name="chatmessagefromidentityset-resource-type"></a>chatMessageFromIdentitySet 资源类型
 
 命名空间：microsoft.graph
 
-表示聊天 [或](../resources/chatmessage.md) 频道中消息的发送方。 此对象可能适用于内部系统已删除或发送Microsoft Teams的邮件;例如，用于添加 `null` 成员的事件消息。
+表示聊天 [或](../resources/chatmessage.md) 频道中消息的发送方。 此对象可能代表已由内部系统删除或Microsoft Teams的邮件;例如，用于添加 `null` 成员的事件消息。
 
 
 继承自 [identitySet](../resources/identityset.md)。

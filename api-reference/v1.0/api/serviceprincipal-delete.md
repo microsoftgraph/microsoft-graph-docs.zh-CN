@@ -1,16 +1,16 @@
 ---
 title: 删除 servicePrincipal
 description: 删除 servicePrincipal。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 8c73778adc2f4e7bf4f933ca1775656e1d7ce2fc
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: fb898596825767707b680014eb9a4ba2608883f7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134619"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110121"
 ---
 # <a name="delete-serviceprincipal"></a>删除 servicePrincipal
 
@@ -18,7 +18,7 @@ ms.locfileid: "50134619"
 
 删除 [servicePrincipal](../resources/serviceprincipal.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

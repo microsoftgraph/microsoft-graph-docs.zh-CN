@@ -2,15 +2,15 @@
 title: educationSubmissionIndividualRecipient 资源类型
 description: 'educationSubmissionRecipient 的子类，指示提交已分配给班级中的个人。  '
 author: sharad-sharma-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 0de23919cf6e4ada2a1530f5dc87977a60890912ff276fe3ab1acaed30815909
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e67acc0787df384de6cd6a5b308154a08cc2fd0f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54205869"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123620"
 ---
 # <a name="educationsubmissionindividualrecipient-resource-type"></a>educationSubmissionIndividualRecipient 资源类型
 

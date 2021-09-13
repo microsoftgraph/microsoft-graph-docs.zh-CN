@@ -2,15 +2,15 @@
 title: 创建 notificationMessageTemplate
 description: 创建新的 notificationMessageTemplate 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0d2d52da53ffc38c9a5ec52942f30a920a386504b436140db8b72c8807041ee3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cf82bde93bf26617dc36a7981a6b255308ea0944
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54135489"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147015"
 ---
 # <a name="create-notificationmessagetemplate"></a>创建 notificationMessageTemplate
 

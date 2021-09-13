@@ -2,15 +2,15 @@
 author: daspek
 title: mentionAction 资源类型
 description: MentionAction 对象提供有关在活动期间被提及者的信息。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: bdcef79492604aa5ee2afae0897361eb41dd6889229b4b41259cc3d47f72bf92
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5d8b95314ab63314a7a27f1a779c9ee088673c06
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54152381"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084277"
 ---
 # <a name="mentionaction-resource-type"></a>mentionAction 资源类型
 

@@ -2,15 +2,15 @@
 title: timeOffReason 资源类型
 description: 表示在计划中请假的有效原因。
 author: akumar39
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType_
-ms.openlocfilehash: fc16be17d4aecb377d25eff7770f3e8b3881f5f1ce936310a78eae1d0d5476a7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e24c59f10e29bf3ab9e6a4948a5dc61d371d1e42
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54159804"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134323"
 ---
 # <a name="timeoffreason-resource-type"></a>timeOffReason 资源类型
 
@@ -32,9 +32,9 @@ ms.locfileid: "54159804"
 |名称          |类型           |说明                                                                                 |
 |--------------|---------------|--------------------------------------------------------------------------------------------|
 | id            |`string`      |`timeOffReason` 的 ID。|
-| displayName               | `string`                  | **timeOffReason 的名称**。 必填。 |
-| iconType | `timeOffReasonIconType`   | 支持的图标类型：无;car;calendar;running;plane;firstAid;一个notWorking;clock;将duty;globe;cup;phone;weather;umbrella;bankgyBank;dog;一个trafficCone;pin;。 必填。 |
-| isActive          |`Boolean`      | 指示在创建新实体或更新现有实体时是否可以使用 **timeOffReason。** 必填。 |
+| displayName               | `string`                  | **timeOffReason 的名称**。 必需。 |
+| iconType | `timeOffReasonIconType`   | 支持的图标类型：无;car;calendar;running;plane;firstAid;一个notWorking;clock;将duty;globe;cup;phone;weather;umbrella;bankgyBank;dog;一个trafficCone;pin;。 必需。 |
+| isActive          |`Boolean`      | 指示在创建新实体或更新现有实体时是否可以使用 **timeOffReason。** 必需。 |
 | createdDateTime       |`DateTimeOffset`        |首次创建 **此 timeOffReason** 的时间戳。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 |
 | lastModifiedDateTime      |`DateTimeOffset`         |上次更新 **TimeOffReason** 的时间戳。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 |
 | lastModifiedBy        | [identitySet](identityset.md)        |上次更新的标识 **这次是OffReason**。|

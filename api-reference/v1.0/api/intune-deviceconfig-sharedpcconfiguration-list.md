@@ -2,15 +2,15 @@
 title: 列出 sharedPCConfigurations
 description: 列出 sharedPCConfiguration 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4430362564ebe555ce5a5c867dae2e1d6b40d3ba89f61c28fd6f3c3cfc59e593
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6d9eb6a3331bfdec91b345398838f5e3961ce8ac
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54225977"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094952"
 ---
 # <a name="list-sharedpcconfigurations"></a>列出 sharedPCConfigurations
 

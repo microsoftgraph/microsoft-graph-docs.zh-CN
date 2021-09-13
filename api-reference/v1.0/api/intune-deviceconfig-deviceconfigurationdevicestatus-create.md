@@ -2,15 +2,15 @@
 title: 创建 deviceConfigurationDeviceStatus
 description: 创建新的 deviceConfigurationDeviceStatus 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e6672d6086678dee9126f6ded954f587066899a84d45425e9c651d8dfc9b3fb3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cc657643e5d731b6b26feca631b7331660ba01d4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54238494"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105200"
 ---
 # <a name="create-deviceconfigurationdevicestatus"></a>创建 deviceConfigurationDeviceStatus
 
@@ -41,7 +41,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceStatus
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

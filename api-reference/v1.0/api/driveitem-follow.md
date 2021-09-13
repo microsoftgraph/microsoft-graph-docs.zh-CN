@@ -2,15 +2,15 @@
 author: learafa
 description: 关注 driveItem。
 title: 关注驱动器项
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 96d979708ea9a1c5a607804cde5f7c4171228916
-ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
+ms.openlocfilehash: 36a9178a22ad735218873c58b39c94c5d47e3c83
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50625974"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59038004"
 ---
 # <a name="follow-drive-item"></a>关注驱动器项
 
@@ -18,9 +18,9 @@ ms.locfileid: "50625974"
 
 关注 [driveItem](../resources/driveitem.md)。
 
->**注意：** 若要取消关注项目，请参阅"取消 [关注项目"。](driveitem-unfollow.md)
+>**注意：** 若要取消关注某个项目，请参阅 [取消关注项目](driveitem-unfollow.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -52,7 +52,7 @@ POST /users/{user-id}/drive/items/{item-id}/follow
 
 ## <a name="example"></a>示例
 
-本示例遵循由 标识的项目 `{item-id}` 。
+此示例遵循由 标识的项 `{item-id}` 。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

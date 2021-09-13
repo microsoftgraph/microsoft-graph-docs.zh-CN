@@ -1,16 +1,16 @@
 ---
 title: 创建邮件
 description: 采用 JSON 或 MIME 格式创建新邮件的草稿。
-localization_priority: Priority
+ms.localizationpriority: high
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6419ec8bef225964b5797e84cce0f3ecf7609b30
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: db843fadbf48c307169b5e49df2b81fb1e0bf0f0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52870393"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143963"
 ---
 # <a name="create-message"></a>创建邮件
 

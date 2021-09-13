@@ -2,15 +2,15 @@
 title: 获取 educationCategory
 description: 检索类别对象。
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 92c7fff8cff78a7de38134f34750c07dac2dbf9e
-ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
+ms.openlocfilehash: 68b07314c0a2bfd42729b44a01956488ba135a53
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58367063"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59130882"
 ---
 # <a name="get-educationcategory"></a>获取 educationCategory
 
@@ -39,7 +39,7 @@ GET /education/classes/{id}/assignmentCategories/{id}
 
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 标头        | 值                     |
 | :------------ | :------------------------ |
 | Authorization | Bearer {token}。必需。 |

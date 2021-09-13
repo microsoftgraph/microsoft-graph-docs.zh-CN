@@ -2,15 +2,15 @@
 title: 删除 educationCategory
 description: 删除现有类别。
 author: sharad-sharma-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: ba6a68358f91e2f965bb5fe8a39145ee20295d93
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 83940924924d906d84de79170af6c980dbbbcd1a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52992864"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074428"
 ---
 # <a name="delete-educationcategory"></a>删除 educationCategory
 

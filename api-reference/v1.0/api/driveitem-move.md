@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: 移动文件或文件夹
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 description: 若要将 DriveItem 移动到新的父项，应用程序会请求更新要移动的 DriveItem 的 parentReference。
 doc_type: apiPageType
-ms.openlocfilehash: 9465ac1ad39781ee330d134c763c8189e89d208f
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 39259976b5c09bcae53963bd651a9420b558ac9f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516750"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59140813"
 ---
 # <a name="move-a-driveitem-to-a-new-folder"></a>将 DriveItem 移动到一个新的文件夹
 
@@ -24,7 +24,7 @@ ms.locfileid: "50516750"
 
 无法使用这一请求在[驱动器](../resources/drive.md)之间移动项目。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

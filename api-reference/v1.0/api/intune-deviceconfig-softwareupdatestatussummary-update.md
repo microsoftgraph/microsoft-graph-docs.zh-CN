@@ -2,15 +2,15 @@
 title: 更新 softwareUpdateStatusSummary
 description: 更新 softwareUpdateStatusSummary 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6b2666893a032456a4b0bf88df37d928b1aa3a1f1b9a3a3c58e73eed329157c8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 53423c22c2e70a30eb0d22db180dea755f611a9a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54219148"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094931"
 ---
 # <a name="update-softwareupdatestatussummary"></a>更新 softwareUpdateStatusSummary
 

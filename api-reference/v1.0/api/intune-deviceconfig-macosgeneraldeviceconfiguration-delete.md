@@ -2,15 +2,15 @@
 title: 删除 macOSGeneralDeviceConfiguration
 description: 删除 macOSGeneralDeviceConfiguration。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 87cacf6877ae326534b454843c71de3391494ec7d2f7ea61c911efe1523256a4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 092765b7b19d5573b6875486a99c930034b92402
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54160399"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59099705"
 ---
 # <a name="delete-macosgeneraldeviceconfiguration"></a>删除 macOSGeneralDeviceConfiguration
 
@@ -41,7 +41,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

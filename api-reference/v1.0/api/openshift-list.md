@@ -1,16 +1,16 @@
 ---
 title: 列出 openShifts
 description: 列出团队中的 openshift 对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: afde5a9badc018657254dbedab476ecfb5a759bc
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e053fe8f01848607efed3e05a7a668d6a2f78760
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52035286"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056233"
 ---
 # <a name="list-openshifts"></a>列出 openShifts
 

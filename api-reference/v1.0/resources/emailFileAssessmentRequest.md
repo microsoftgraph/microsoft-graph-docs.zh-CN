@@ -1,16 +1,16 @@
 ---
 title: emailFileAssessmentRequest 资源类型
 description: 用于创建和检索电子邮件文件威胁评估。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: hafen-ms
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 51689660b30045a93262645acab3495f14e75a0c95f4f09ae9d2ea64bc85d784
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 44f7631cae23f914e51cfa6f33eb8111fc348386
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54192493"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123634"
 ---
 # <a name="emailfileassessmentrequest-resource-type"></a>emailFileAssessmentRequest 资源类型
 
@@ -37,7 +37,7 @@ ms.locfileid: "54192493"
 |createdBy|[identitySet](identityset.md)|威胁评估请求创建者。|
 |createdDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
 |expectedAssessment|[threatExpectedAssessment](enums.md#threatexpectedassessment-values)|提交者的预期评估。 可能的值是：`block`、`unblock`。|
-|id|String|威胁评估请求 ID 是 GUID (全局唯一) 。|
+|id|String|威胁评估请求 ID 是 GUID (全局唯) 。|
 |requestSource|[threatAssessmentRequestSource](enums.md#threatassessmentrequestsource-values)|威胁评估请求的来源。 可取值为：`user`、`administrator`。|
 |status|[threatAssessmentStatus](enums.md#threatassessmentstatus-values)|评估流程状态。 可取值为：`pending`、`completed`。|
 

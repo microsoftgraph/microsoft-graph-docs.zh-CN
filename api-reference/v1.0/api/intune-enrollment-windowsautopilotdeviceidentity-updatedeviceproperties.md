@@ -2,15 +2,15 @@
 title: updateDeviceProperties 操作
 description: 更新 Autopilot 设备上的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b9275a8579186e0d41bfa5df641456365f6a4147217d5587d82a25cc650319ce
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b9d2ffd645e88393f3fa67e98632f3b219c23d56
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54250495"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094847"
 ---
 # <a name="updatedeviceproperties-action"></a>updateDeviceProperties 操作
 

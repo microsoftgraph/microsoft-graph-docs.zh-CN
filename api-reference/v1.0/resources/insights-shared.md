@@ -2,15 +2,15 @@
 title: sharedInsight 资源类型
 description: 代表与特定用户共享或由特定用户共享的文件的见解。 支持以下共享文件：
 author: simonhult
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 73d02b3fa6ae6a9938b6c7174bbf942dcb6ed85ef2baa48ebc9f061908a9f369
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3e9762c2da54f10e28e0337930972c6a6094ac65
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54184821"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118584"
 ---
 # <a name="sharedinsight-resource-type"></a>sharedInsight 资源类型
 
@@ -19,7 +19,7 @@ ms.locfileid: "54184821"
 代表与特定用户共享或由特定用户共享的文件的见解。 支持以下共享文件：
 
 - 直接附加到电子邮件或会议邀请中的文件。
-- OneDrive for Business和SharePoint新式附件 - 存储在 OneDrive for Business 和 SharePoint中且用户作为电子邮件中的链接共享的文件。
+- OneDrive for Business和SharePoint新式附件 - 存储在电子邮件OneDrive for Business SharePoint中作为链接共享的文件。
 
 **注意**：我们目前正在使用数据填充共享 API 的结果。 发布后的第一周可能缺少一些数据。
 

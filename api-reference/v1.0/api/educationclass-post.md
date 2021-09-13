@@ -2,15 +2,15 @@
 title: 创建 educationClass
 description: 创建新的 educationClass 对象。
 author: mlafleur
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 71dcda18e56b6dfd53fa35943e6da246b5b8d68f
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: db8cedc35b48478edd58a9beb2e29d742c4b5cb2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52232180"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147435"
 ---
 # <a name="create-educationclass"></a>创建 educationClass
 
@@ -19,7 +19,7 @@ ms.locfileid: "52232180"
 创建新的 [educationClass](../resources/educationclass.md) 对象。
 
 > [!NOTE]
-> 此操作还会创建通用组。 使用此 API 创建课程时，它会向组添加特殊属性，这将在使用组创建团队时在 Microsoft Teams 中添加分配和特殊处理等功能。 请注意，此 API 仅创建通用组，不会创建团队。 Microsoft Teams为教师提供用户界面，以使用此 API 创建的组创建自己的班级团队。
+> 此操作还会创建通用组。 使用此 API 创建课程时，它会向组添加特殊属性，这将在使用组创建团队时在 Microsoft Teams 中添加分配和特殊处理等功能。 请注意，此 API 仅创建通用组，不会创建团队。 Microsoft Teams为教师提供了用户界面，以使用此 API 创建的组创建自己的班级团队。
 
 ## <a name="permissions"></a>权限
 
@@ -78,6 +78,8 @@ POST /education/classes
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_educationclass_from_"
@@ -108,6 +110,24 @@ Content-length: 533
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-educationclass-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-educationclass-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-educationclass-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-educationclass-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

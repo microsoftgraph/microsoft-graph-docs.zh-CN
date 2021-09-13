@@ -2,15 +2,15 @@
 title: ratingFranceMoviesType 枚举类型
 description: 法国电影评级标签
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9ac9116740d548008dd96792ab42d62f45616b6b212cedf2bb6086e6a518bbf1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 819d69eb3e8c1d336f98427221bf8e73b5d601df
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54146473"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59148086"
 ---
 # <a name="ratingfrancemoviestype-enum-type"></a>ratingFranceMoviesType 枚举类型
 

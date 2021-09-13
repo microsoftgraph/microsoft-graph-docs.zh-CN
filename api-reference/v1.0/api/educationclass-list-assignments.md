@@ -2,15 +2,15 @@
 title: 列出课程分配
 description: 检索分配对象的列表。
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 72e7b5dbd518019664b5b52c65ded1746218f338
-ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
+ms.openlocfilehash: 394725811e625ccfa0c85f1b76a4dd1444313a97
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58367231"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147491"
 ---
 # <a name="list-class-assignments"></a>列出课程分配
 

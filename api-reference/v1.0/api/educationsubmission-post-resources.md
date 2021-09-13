@@ -2,15 +2,15 @@
 title: 创建 educationSubmissionResource
 description: 将资源添加到提交资源列表。
 author: sharad-sharma-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 552f37dfb9894bc8312ceaf0094f8c78c2d652e6
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 80b79b9a838776f1825e1e0f37b0537ee5295c54
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514565"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59140771"
 ---
 # <a name="create-educationsubmissionresource"></a>创建 educationSubmissionResource
 

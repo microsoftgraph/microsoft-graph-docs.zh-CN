@@ -2,15 +2,15 @@
 title: 更新 managedDeviceOverview
 description: 更新 managedDeviceOverview 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: aa432f9f661873478b1d5fa1c5fe6a091a19ec4a
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 57ae729625f9ec5c84a31937810e8918d32366f8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266686"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59090276"
 ---
 # <a name="update-manageddeviceoverview"></a>更新 managedDeviceOverview
 
@@ -41,7 +41,7 @@ PATCH /deviceManagement/managedDeviceOverview
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

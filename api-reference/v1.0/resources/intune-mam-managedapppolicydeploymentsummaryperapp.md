@@ -2,15 +2,15 @@
 title: managedAppPolicyDeploymentSummaryPerApp 资源类型
 description: 表示每个应用的策略部署摘要。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 263967cea1dcdbcf9be848ae56bf605bdf7b77ebf44f6b15eb36cc43e2c360a2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6c1544f3ab0c73275dd46272e870cb224a78447b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54218567"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59142521"
 ---
 # <a name="managedapppolicydeploymentsummaryperapp-resource-type"></a>managedAppPolicyDeploymentSummaryPerApp 资源类型
 

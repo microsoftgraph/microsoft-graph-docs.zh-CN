@@ -1,16 +1,16 @@
 ---
 title: 更新 Outlook 类别
 description: '更新指定 outlookCategory 对象的可写属性 **color**。 不能修改 **displayName** 属性 '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4ca7f779344a73baf52822b667995ccfaefb87b0
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 83fb0f69cd6a6e3e614eb841819a03dc83476f9b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053984"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59037318"
 ---
 # <a name="update-outlook-category"></a>更新 Outlook 类别
 
@@ -88,7 +88,7 @@ Content-length: 30
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -2,15 +2,15 @@
 title: directRoutingLogRow 资源类型
 description: 表示直接路由呼叫日志中的一行数据。
 author: williamlooney
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: b88634f3f6ab5d78852ca242a4d67265d267094d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3632d9305f82149a6711f48c8105fa5519353489
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58808040"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59025599"
 ---
 # <a name="directroutinglogrow-resource-type"></a>directRoutingLogRow 资源类型
 
@@ -41,11 +41,11 @@ ms.locfileid: "58808040"
 |id|String|唯一呼叫标识符。 GUID。|
 |inviteDateTime|DateTimeOffset| 发送初始邀请时。|
 |mediaBypassEnabled|Boolean| 指示中继是否已启用媒体旁路。|
-|mediaPathLocation|字符串| 用于非旁路呼叫中的媒体路径的数据中心。|
+|mediaPathLocation|String| 用于非旁路呼叫中的媒体路径的数据中心。|
 |signalingLocation|String| 用于对绕过和非旁路呼叫发出信号的数据中心。|
 |startDateTime|DateTimeOffset|呼叫开始时间。<br/>对于失败和未接听的呼叫，这等于邀请或失败时间。|
 |successfulCall|Boolean| 成功或尝试。|
-|trunkFullyQualifiedDomainName|字符串| 会话边界控制器的完全限定域名。|
+|trunkFullyQualifiedDomainName|String| 会话边界控制器的完全限定域名。|
 |userDisplayName|String|用户的显示名称。|
 |userId|String|呼叫用户 ID Graph。 对于机器人呼叫类型，此信息和其他用户信息将为 null/空。 GUID。|
 |userPrincipalName|String|UserPrincipalName (中的登录) Azure Active Directory。 这通常与用户的 SIP 地址相同，并且可以与用户的电子邮件地址相同。|

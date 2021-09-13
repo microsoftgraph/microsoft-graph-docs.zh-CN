@@ -2,15 +2,15 @@
 title: 创建 identityApiConnector
 description: 创建新的 identityApiConnector 对象。
 author: nickgmicrosoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 8cdebdaa8ed86e6d6d60ad07c987b2152baf6737
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 56a918bccf37edff4a53cc18cc6c12ec9232bd8a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51920358"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045831"
 ---
 # <a name="create-identityapiconnector"></a>创建 identityApiConnector
 
@@ -31,7 +31,7 @@ ms.locfileid: "51920358"
 工作或学校帐户需要属于以下角色之一：
 
 * 全局管理员
-* 外部标识用户流管理员
+* 外部标识用户Flow管理员
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -61,7 +61,7 @@ POST /identity/apiConnectors
 |:---|:---|:---|
 |displayName|String| API 连接器的名称。 |
 |targetUrl|String| 要调用的 API 终结点的 URL。 |
-|authenticationConfiguration|[apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md)|描述用于调用 API 的身份验证配置详细信息的对象。 [支持基本身份验证](../resources/basicauthentication.md)[和 PKCS 12 客户端](../resources/pkcs12certificate.md)证书。|
+|authenticationConfiguration|[apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md)|描述用于调用 API 的身份验证配置详细信息的对象。 [支持基本](../resources/basicauthentication.md) 身份验证 [和 PKCS 12 客户端](../resources/pkcs12certificate.md) 证书。|
 
 ## <a name="response"></a>响应
 

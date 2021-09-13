@@ -2,15 +2,15 @@
 title: 创建 windowsInformationProtectionPolicy
 description: 创建新的 windowsInformationProtectionPolicy 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a544d0a169499b690f0816c383f4f136664fb82976f88a339f59e16df7f9e272
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e0a778af141b8e570010756b1488a74c0b3e9b4d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54225879"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147099"
 ---
 # <a name="create-windowsinformationprotectionpolicy"></a>创建 windowsInformationProtectionPolicy
 

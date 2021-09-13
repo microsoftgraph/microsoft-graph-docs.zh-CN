@@ -2,15 +2,15 @@
 author: daspek
 title: itemActivityStat 资源类型
 description: ItemActivityStat 对象提供有关在项目上发生的活动的信息。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 8fe252948bc717584204ec9be0c34cd23e5799d1bf382ef9aa45b28cfc21d6ca
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 97702f31f8b6125b06d3c34eba9eda596604422c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54130084"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59113663"
 ---
 # <a name="itemactivitystat-resource-type"></a>itemActivityStat 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "54130084"
 | 属性         | 类型                    | 说明
 |:-----------------|:------------------------|:----------------------------------------
 | incompleteData   | [incompleteData][]      | 指示此间隔中的统计信息基于不完整的数据。 只读。
-| isTrending       | Boolean                 | 指示项目是否是"趋势"。 只读。
+| isTrending       | 布尔值                 | 指示项目是否是"趋势"。 只读。
 | startDateTime    | DateTimeOffset          | 间隔开始时。 只读。
 | endDateTime      | DateTimeOffset          | 间隔结束时。 只读。
 | create           | [itemActionStat][]      | 有关此 **间隔中的** 创建操作统计信息。 只读。

@@ -2,15 +2,15 @@
 title: 配置资源类型
 description: 指定允许管理 externalConnection 和为 externalConnection 中的内容编制索引的附加应用程序 ID。
 author: mecampos
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 213c24c9388f555d772f2c0243b1d55d023239922d059b63478a8953ac6d5b25
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2d7955887a999b6e46d8af77b5da47358e20c2f2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54141670"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123466"
 ---
 # <a name="configuration-resource-type"></a>配置资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "54141670"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|authorizedAppIds|String collection|允许管理 externalConnection 和为 externalConnection 中的内容编制索引的已注册 Azure Active Directory 应用程序的应用程序 ID 的集合。|
+|authorizedAppIds|字符串集合|允许管理 externalConnection 和为 externalConnection 中的内容编制索引的已注册 Azure Active Directory 应用程序的应用程序 ID 的集合。|
 
 ## <a name="relationships"></a>关系
 无。

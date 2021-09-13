@@ -2,15 +2,15 @@
 title: ratingUnitedKingdomMoviesType 枚举类型
 description: 英国电影评级标签
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e4b5761fb081a30d67595653d96ddff5e0ea2c1a61dde90dd6343fe30619429d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9254d76dbcf5ce16cbc8f545e894ba4abb569b85
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54230611"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056009"
 ---
 # <a name="ratingunitedkingdommoviestype-enum-type"></a>ratingUnitedKingdomMoviesType 枚举类型
 

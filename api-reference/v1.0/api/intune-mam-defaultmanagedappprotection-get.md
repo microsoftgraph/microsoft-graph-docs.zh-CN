@@ -2,15 +2,15 @@
 title: 获取 defaultManagedAppProtection
 description: 读取 defaultManagedAppProtection 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 58609a8bc5bb053f85b8a745842e67e526931f8fe1b216ae829fbd21246393d4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ed519a6d826565bcfacea65229aa258801306f5f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54190078"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59119525"
 ---
 # <a name="get-defaultmanagedappprotection"></a>获取 defaultManagedAppProtection
 

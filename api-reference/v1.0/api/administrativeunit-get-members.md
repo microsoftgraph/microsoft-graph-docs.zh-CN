@@ -2,15 +2,15 @@
 title: 获取成员
 description: 使用此 API 获取管理 (或) 组的特定成员。
 author: DougKirschner
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 9ab9564adf4bf2c3c84edac91191eb9e83a2e4eabc91c0aa96cba9c625bcfb60
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2d26796b62e8a2efe2428fea90df928eed18b2cd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54155832"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128401"
 ---
 # <a name="get-a-member"></a>获取成员
 
@@ -54,7 +54,7 @@ GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/members/
 ```
 
 ##### <a name="response"></a>响应
-下面是一个重发的示例。 注意：为了提高可读性，可能缩短此处显示的响应对象。
+下面是一个重发的示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 
 ```http
 HTTP/1.1 200 OK

@@ -1,16 +1,16 @@
 ---
 title: plannerChecklistItems 资源类型
 description: '**plannerChecklistItemCollection** 资源表示任务上的清单项的集合。 它是"打开类型"。 它是任务详细信息对象的一部分。 属性值对中的值是 checklistItem 对象。'
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: f465adf89e9cb344013e30edccf03513f8fb96065e676ffb78d7cb8fa13f14ac
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2badca7f220c3686e0064bf3624934d2d1d1a08c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178071"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129849"
 ---
 # <a name="plannerchecklistitems-resource-type"></a>plannerChecklistItems 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "54178071"
 
 
 ## <a name="properties"></a>属性
-开放类型的属性可以通过客户端定义。 在这种情况下，客户端应提供 **GUID** 作为属性，并且其值必须是 [checklistItem](plannerchecklistitem.md) 对象。 示例如下所示。 若要删除清单中的项目，将 属性的值设置为 `null` 。
+开放类型的属性可通过客户端定义。 在这种情况下，客户端应提供 **GUID** 作为属性，并且其值必须是 [checklistItem](plannerchecklistitem.md) 对象。 示例如下所示。 若要删除清单中的项目，将 属性的值设置为 `null` 。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

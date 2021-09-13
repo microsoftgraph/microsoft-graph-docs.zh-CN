@@ -1,16 +1,16 @@
 ---
 title: sectionGroup 资源类型
 description: 笔记本中的OneNote组。 节组可以包含节和节组。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: 575aeb64fbb1f2ffe3df787311704f5fb4f262e6c71808b1d11c901fc2184d0c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 551625e68bb3053c0b6f0bf7fdf1c0bb2162c1d8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54134950"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59126679"
 ---
 # <a name="sectiongroup-resource-type"></a>sectionGroup 资源类型
 
@@ -57,7 +57,7 @@ ms.locfileid: "54134950"
 |lastModifiedBy|[identitySet](identityset.md)|识别创建项目的用户、设备和应用程序。只读。|
 |lastModifiedDateTime|DateTimeOffset|上次修改节组的日期和时间。 时间戳表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。|
 |displayName|String|节组的名称。|
-|sectionGroupsUrl|String|导航属性的 `sectionGroups` URL，该属性返回节组的所有节组。 只读。|
+|sectionGroupsUrl|String|导航属性的 `sectionGroups` URL，该属性返回节组内的所有节组。 只读。|
 |sectionsUrl|String|导航属性的 `sections` URL，可返回分区组内的所有节。 只读。|
 |self|String|终结点，您可在此处获取关于节组的详细信息。 只读。|
 

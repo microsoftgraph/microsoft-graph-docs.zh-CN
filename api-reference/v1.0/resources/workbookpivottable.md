@@ -2,15 +2,15 @@
 title: pivotTable 资源类型
 description: 表示 Excel 数据透视表。
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 92974716cc3b036014560cb352b89c1e42193fc76ab4578bd5ca0979a1912d0f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cdf558abbc0533f1329aed86d5541adf45235cda
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54151954"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134155"
 ---
 # <a name="pivottable-resource-type"></a>pivotTable 资源类型
 

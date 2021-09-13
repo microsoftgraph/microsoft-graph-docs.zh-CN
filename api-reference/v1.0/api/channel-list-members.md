@@ -2,15 +2,15 @@
 title: 列出频道的成员
 description: 列出频道成员。
 author: akjo
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: dd59e40abbd24a80af11fa4bcde48ecbbe3def98
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: 5c88b973857d8c994e14c4ace2bc502dd37a65d2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53060018"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59090766"
 ---
 # <a name="list-members-of-a-channel"></a>列出频道的成员
 

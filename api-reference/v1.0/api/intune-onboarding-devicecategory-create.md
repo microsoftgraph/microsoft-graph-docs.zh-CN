@@ -2,15 +2,15 @@
 title: 创建 deviceCategory
 description: 创建新的 deviceCategory 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d3ff077f9aeb5de31cbe70bba8eb87e2a178329302b3f8e751bd773d85560911
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f902a127928c806c7a64de92bf5411f8e72668a5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54209201"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59146917"
 ---
 # <a name="create-devicecategory"></a>创建 deviceCategory
 

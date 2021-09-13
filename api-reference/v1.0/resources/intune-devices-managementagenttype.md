@@ -2,15 +2,15 @@
 title: managementAgentType 枚举类型
 description: 管理代理类型。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fc6669fae134a53886a425fab2635f9ef83d7c4626fcb1056a0d7cda179d932b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 276732615af6dc5d987d326f484c9ba6329a61fd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54149854"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118213"
 ---
 # <a name="managementagenttype-enum-type"></a>managementAgentType 枚举类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "54149854"
 |:---|:---|:---|
 |eas|1|设备由Exchange管理。|
 |mdm|2|设备由 Intune MDM 管理。|
-|easMdm|3|设备由托管服务器Exchange Intune MDM 管理。|
+|easMdm|3|设备由 Exchange 和 Intune MDM 管理。|
 |intuneClient|4 |Intune 客户端托管。|
 |easIntuneClient|5 |设备是 EAS 和 Intune 客户端双托管设备。|
 |configurationManagerClient|8 |设备由 Configuration Manager 管理。|

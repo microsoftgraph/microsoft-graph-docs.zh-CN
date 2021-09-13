@@ -2,15 +2,15 @@
 title: omaSettingString 资源类型
 description: OMA 设置字符串定义。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5aaf8b1b50373e8339c8527fba0409fb27631b0512e979e367875f57769b875d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8f67c1fb070d40822e13dede1a8e384796ebfb46
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54182481"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59146826"
 ---
 # <a name="omasettingstring-resource-type"></a>omaSettingString 资源类型
 

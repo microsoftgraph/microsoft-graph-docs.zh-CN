@@ -1,16 +1,16 @@
 ---
 title: 获取 namedLocation
 description: 检索 namedlocation 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: f051cdf4c67b95f4b4900ba0c2d79e722a00e40b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 77d098ecaa913b745a39887c8d5f8881887baa82
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050435"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085502"
 ---
 # <a name="get-namedlocation"></a>获取 namedLocation
 

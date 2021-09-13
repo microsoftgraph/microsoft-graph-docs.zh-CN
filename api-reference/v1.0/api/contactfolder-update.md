@@ -2,15 +2,15 @@
 title: 更新 contactfolder
 description: 更新 contactfolder 对象的属性。
 author: kevinbellinger
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b0dca141622a784702a2a2153774d8564d4ccc55
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c0b67c1b74ae7d5b429eec5c8636e0ad27618ca6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52035713"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147729"
 ---
 # <a name="update-contactfolder"></a>更新 contactfolder
 
@@ -87,7 +87,7 @@ Content-length: 84
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

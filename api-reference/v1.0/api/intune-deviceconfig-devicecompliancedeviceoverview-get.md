@@ -2,15 +2,15 @@
 title: 获取 deviceComplianceDeviceOverview
 description: 读取 deviceComplianceDeviceOverview 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 20eeec6861a11d44b53bd1e4985e50da8746275bb89827f36adff23822c6ca6e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ef8a266a1d08d90936743314be654a6ae0d29b11
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54190148"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59140169"
 ---
 # <a name="get-devicecompliancedeviceoverview"></a>获取 deviceComplianceDeviceOverview
 

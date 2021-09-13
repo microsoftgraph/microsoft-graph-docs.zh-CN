@@ -1,16 +1,16 @@
 ---
 title: workbookOperation 资源类型
 description: 表示长时间运行的工作簿操作的状态。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: fe2cb3a1b899fb1aa9cef1fdc863a7d4432ead8877fed92bb0a53e40b62dd455
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0ec98d72f56eb2f066f221a0c7aadc389d01109b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54221143"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134162"
 ---
 # <a name="workbookoperation-resource-type"></a>workbookOperation 资源类型
 

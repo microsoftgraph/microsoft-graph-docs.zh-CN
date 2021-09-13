@@ -1,22 +1,22 @@
 ---
 author: learafa
-description: 签入已签出的 driveItem 资源，使其他用户可以使用该文档的版本。
-title: driveItem：签入
-localization_priority: Normal
+description: 签入签出的 driveItem 资源，这使文档版本可供其他人使用。
+title: driveItem：checkin
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: d6b38b5418b29bd9e86e664c95299a159a82c0f4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6c98cf8ced988a769b12726b5d2b8a0f60f33c05
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009917"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59090661"
 ---
-# <a name="driveitem-checkin"></a>driveItem：签入
+# <a name="driveitem-checkin"></a>driveItem：checkin
 
 命名空间：microsoft.graph
 
-签入已签出的 **driveItem** 资源，使其他用户可以使用该文档的版本。
+签入签出的 **driveItem** 资源，这使文档版本可供其他人使用。
 
 ## <a name="permissions"></a>权限
 

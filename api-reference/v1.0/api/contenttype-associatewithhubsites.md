@@ -2,15 +2,15 @@
 author: swapnil1993
 title: contentType：associateWithHubSites
 description: 将内容类型与中心网站列表关联。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: ae0cfe842b77b58134b127202e559711220f5aa3
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 759a2265cfd0d8a470ba6619acb7b8b1478cebb6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696517"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147663"
 ---
 # <a name="contenttype-associatewithhubsites"></a>contentType：associateWithHubSites
 
@@ -19,7 +19,7 @@ ms.locfileid: "58696517"
 
 将内容 [类型中心][contentType] 中的已发布内容类型与中心网站列表关联。
 
->**注意：** 此功能仅限于拥有许可证的SharePoint Syntex租户。
+>**注意：** 此功能仅限于拥有许可证SharePoint Syntex租户。
   
 
 ## <a name="permissions"></a>权限  
@@ -46,7 +46,7 @@ POST /sites/{siteId}/contentTypes/{contentTypeId}/associateWithHubSites
 ```
 >**注意：**_siteId_ 表示内容类型中心网站。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
@@ -59,8 +59,8 @@ POST /sites/{siteId}/contentTypes/{contentTypeId}/associateWithHubSites
 
 |参数|类型|说明|
 |-|-|-|
-|hubSiteUrls| 集合 (字符串)  |需要强制执行内容类型的中心网站的规范 URL 列表。 此为必需属性。|
-|propagateToExistingLists| 布尔值 |如果 `true` 为 ，内容类型将强制应用于中心网站中的现有列表;否则，将仅应用于新创建的列表。|
+|hubSiteUrls| 集合 (字符串)  |需要强制执行内容类型的中心网站的规范 URL 列表。 必需。|
+|propagateToExistingLists| Boolean |如果 `true` 为 ，内容类型将强制应用于中心网站中的现有列表;否则，将仅应用于新创建的列表。|
 
 ## <a name="response"></a>响应
 
@@ -70,6 +70,8 @@ POST /sites/{siteId}/contentTypes/{contentTypeId}/associateWithHubSites
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "contenttype_associatewithhubsites"
@@ -86,6 +88,24 @@ Content-Type: application/json
    "propagateToExistingLists":false
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/contenttype-associatewithhubsites-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/contenttype-associatewithhubsites-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/contenttype-associatewithhubsites-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/contenttype-associatewithhubsites-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ---
 
 

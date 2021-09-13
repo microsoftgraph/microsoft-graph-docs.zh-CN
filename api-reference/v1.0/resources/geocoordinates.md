@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: GeoCoordinates
-localization_priority: Normal
+ms.localizationpriority: medium
 description: GeoCoordinates 资源基于文件中包含的元数据提供位置的地理坐标和海拔。
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: f5f61b07cf9c6940fdd56aa2f34f1fc70a8211decf3e34e19ff8eeac9e839da8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c5039586f44ae5b3dc73c59004a68afccee63a30
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54175271"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094322"
 ---
 # <a name="geocoordinates-resource-type"></a>GeoCoordinates 资源类型
 
