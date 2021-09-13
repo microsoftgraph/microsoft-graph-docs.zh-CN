@@ -1,16 +1,16 @@
 ---
 title: 删除 personCertification
 description: 删除 personCertification 对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 6a6c1493496fdfca68c1282091ebe2092f0683be
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 9149d311623ae3d419de9ea52cf79f4ba4d78fb2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50774073"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59141450"
 ---
 # <a name="delete-personcertification"></a>删除 personCertification
 命名空间：microsoft.graph

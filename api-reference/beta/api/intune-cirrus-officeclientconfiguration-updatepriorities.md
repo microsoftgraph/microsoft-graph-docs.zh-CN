@@ -1,16 +1,16 @@
 ---
 title: updatePriorities 操作
 description: 更新策略优先级。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dougeby
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9a52f44bdcba78376e72fbf019beb7f1f6efab15
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 50123c332cd32acf3c9af44bfc6a6468d44d2da2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787763"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59133805"
 ---
 # <a name="updatepriorities-action"></a>updatePriorities 操作
 
@@ -43,7 +43,7 @@ POST /officeConfiguration/clientConfigurations/microsoft.management.services.api
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

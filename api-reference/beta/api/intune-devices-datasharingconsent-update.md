@@ -2,15 +2,15 @@
 title: 更新 dataSharingConsent
 description: 更新 dataSharingConsent 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 074f8c3901f07b05652526e81a1006f01c83fd88
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2f2d73c20e9beaeb66be8af759888eb086e04764
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819989"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59122003"
 ---
 # <a name="update-datasharingconsent"></a>更新 dataSharingConsent
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/dataSharingConsents/{dataSharingConsentId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,12 +54,12 @@ PATCH /deviceManagement/dataSharingConsents/{dataSharingConsentId}
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|数据共享许可 ID|
-|serviceDisplayName|字符串|服务显示名称流|
+|serviceDisplayName|String|服务显示名称流|
 |termsUrl|String|数据共享同意的 TermsUrl|
 |granted|Boolean|数据共享同意的授予状态|
 |grantDateTime|DateTimeOffset|为此帐户授予许可的时间|
 |grantedByUpn|String|授予此帐户同意的用户的 Upn|
-|grantedByUserId|字符串|授予此帐户同意的用户的 UserId|
+|grantedByUserId|String|授予此帐户同意的用户的 UserId|
 
 
 

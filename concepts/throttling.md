@@ -2,14 +2,14 @@
 title: Microsoft Graph 限制指南
 description: 限制可调节并发调用服务的数量，以防止资源的过度使用。Microsoft Graph 旨在用于处理大量的请求。如果出现过多请求，限制将有助于保持 Microsoft Graph 的最佳性能和服务的可靠性。
 author: davidmu1
-localization_priority: Priority
+ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 7ea2c6211fb0077d9dda055d1326a420e260e51e
-ms.sourcegitcommit: c541d3eceafda4812e2c0c029c95ddfb92ef58b3
+ms.openlocfilehash: 3290c1fee3921d0c367496871a5753eb1afc5fbc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "53726745"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035654"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Microsoft Graph 限制指南
 
@@ -121,52 +121,16 @@ Retry-After: 2.128
 
 #### <a name="outlook-service-resources"></a>Outlook 服务资源
 
-Outlook 服务提供以下资源。
+| API                                                      | 资源      |
+|------------------------------------------------------------|-----------------|
+| 搜索 API（预览版）                  | <li>[外部项（Microsoft 搜索）](/graph/api/resources/externalitem) |
+| 配置文件 API                                      | <li>[照片](/graph/api/resources/profilephoto)   |
+| 日历 API | <li>[事件](/graph/api/resources/event) <li> [eventMessage](/graph/api/resources/eventmessage) <li> [calendar](/graph/api/resources/calendar) <li>  [calendarGroup](/graph/api/resources/calendargroup) <li> [outlookCategory](/graph/api/resources/outlookcategory) <li> [attachment](/graph/api/resources/attachment) <li> [place（预览）](/graph/api/resources/place)   |
+| 邮件 API                                      | <li>[邮件](/graph/api/resources/message) <li>  [邮件](/graph/api/resources/message) <li> [mailFolder](/graph/api/resources/mailfolder) <li> [mailSearchFolder](/graph/api/resources/mailsearchfolder) <li> [messageRule](/graph/api/resources/messagerule) <li> [outlookCategory](/graph/api/resources/outlookcategory) <li> [attachment](/graph/api/resources/attachment)|
+| 个人联系人 API | <li>[contact](/graph/api/resources/contact) <li> [contactFolder](/graph/api/resources/contactfolder) <li> [outlookCategory](/graph/api/resources/outlookcategory)|
+| 社交和工作场所智能 | <li>[person](/graph/api/resources/person) |
+| 待办事项任务 API（预览版） | <li>[outlookTask](/graph/api/resources/outlooktask) <li> [outlookTaskFolder](/graph/api/resources/outlooktaskfolder) <li>[outlookTaskGroup](/graph/api/resources/outlooktaskgroup) <li> [outlookCategory](/graph/api/resources/outlookcategory) <li> [attachment](/graph/api/resources/attachment)|
 
-##### <a name="search-api-resources-preview"></a>搜索 API 资源（预览版）
-
-- [外部项（Microsoft 搜索）](/graph/api/resources/externalitem?view=graph-rest-beta)
-
-##### <a name="profile-api-resources"></a>配置文件 API 资源
-
-- [照片](/graph/api/resources/profilephoto?view=graph-rest-1.0)
-
-##### <a name="calendar-api-resources"></a>日历 API 资源
-
-- [event](/graph/api/resources/event)
-- [eventMessage](/graph/api/resources/eventmessage)
-- [calendar](/graph/api/resources/calendar)
-- [calendarGroup](/graph/api/resources/calendargroup)
-- [outlookCategory](/graph/api/resources/outlookcategory)
-- [attachment](/graph/api/resources/attachment)
-- [place（预览）](/graph/api/resources/place)
-
-##### <a name="mail-api-resources"></a>邮件 API 资源
-
-- [message](/graph/api/resources/message)
-- [mailFolder](/graph/api/resources/mailfolder)
-- [mailSearchFolder](/graph/api/resources/mailsearchfolder)
-- [messageRule](/graph/api/resources/messagerule)
-- [outlookCategory](/graph/api/resources/outlookcategory)
-- [attachment](/graph/api/resources/attachment)
-
-##### <a name="personal-contacts-api-resources"></a>个人联系人 API 资源
-
-- [contact](/graph/api/resources/contact)
-- [contactFolder](/graph/api/resources/contactfolder)
-- [outlookCategory](/graph/api/resources/outlookcategory)
-
-##### <a name="social-and-workplace-intelligence-resources"></a>社交和工作区智能资源
-
-- [person](/graph/api/resources/person)
-
-##### <a name="to-do-tasks-api-preview-resources"></a>待办任务 API（预览）资源
-
-- [outlookTask](/graph/api/resources/outlooktask)
-- [outlookTaskFolder](/graph/api/resources/outlooktaskfolder)
-- [outlookTaskGroup](/graph/api/resources/outlooktaskgroup)
-- [outlookCategory](/graph/api/resources/outlookcategory)
-- [attachment](/graph/api/resources/attachment)
 
 ### <a name="cloud-communication-service-limits"></a>云通信服务限制
 
@@ -183,12 +147,13 @@ Outlook 服务提供以下资源。
 | 请求率 | 每 1 分钟 120 个请求和每 1 小时 400 个请求 | 每 1 分钟 240 个请求和每 1 小时 800 个请求 |
 | 并发请求 | 5 个并发请求 | 20 个并发请求 |
 
-上述限制适用于下列资源:  
-onenote, notebook, sectionGroup, onenoteSection, onenotePage, onenoteResource, onenoteOperation
+上述限制适用于下列资源:
 
-可在 [OneNote API 限制及避免方法](https://developer.microsoft.com/zh-CN/office/blogs/onenote-api-throttling-and-how-to-avoid-it/) 中找到有关最佳做法的附加信息。  
+[!INCLUDE [Onenote throttling documentation](../includes/throttling-onenote.md)]
 
-> **注意：** 上面列出的资源未在 `429 Too Many Requests` 响应上返回 `Retry-After` 标头。
+可在 [OneNote API 限制及避免方法](https://developer.microsoft.com/en-us/office/blogs/onenote-api-throttling-and-how-to-avoid-it/) 中找到有关最佳做法的附加信息。
+
+**注意：** 上面列出的资源未在 `429 Too Many Requests` 响应上返回 `Retry-After` 标头。
 
 ### <a name="project-rome-service-limits"></a>Project Rome 服务限制
 
@@ -197,8 +162,11 @@ onenote, notebook, sectionGroup, onenoteSection, onenotePage, onenoteResource, o
 | GET          | 每 5 分钟 400 个请求和每天 12000 个请求 |
 | POST, PUT, PATCH, DELETE | 每 5 分钟 100 个请求和每天 8000 个请求 |
 
-上述限制适用于下列资源:  
-activityHistoryItem、userActivity
+上述限制适用于下列资源:
+
+| <!-- fake header--> |
+|--|
+| <ul> <li> [activityHistoryItem](/graph/api/resources/activityhistoryitem) <li> [userActivity](/graph/api/resources/useractivity) </ul>|
 
 ### <a name="microsoft-teams-service-limits"></a>Microsoft Teams 服务限制
 
@@ -226,50 +194,13 @@ activityHistoryItem、userActivity
 
 另请参阅 [Microsoft Teams 限制](/graph/api/resources/teams-api-overview#microsoft-teams-limits)和[投票要求](/graph/api/resources/teams-api-overview#polling-requirements)。
 
-上述限制适用于下列资源:  
-aadUserConversationMember、appCatalogs、changeTrackedEntity、channel、chatMessage、chatMessageHostedContent、conversationMember、offerShiftRequest、openShift、openShiftChangeRequest、schedule、scheduleChangeRequest、schedulingGroup、shift、shiftPreferences、swapShiftsChangeRequest、team、teamsApp、teamsAppDefinition、teamsAppInstallation、teamsAsyncOperation、teamsTab、teamsTemplate、teamwork、timeOff、timeOffReason、timeOffRequest、userSettings、workforceIntegration。
+[!INCLUDE [Teams throttling documentation](../includes/throttling-teams.md)]
 
 ### <a name="identity-and-access-service-limits"></a>身份和访问服务限制
 
-这些服务限制适用于以下实体：
+本部分中的服务限制适用于以下实体：
 
-- [目录对象](/graph/api/resources/directoryobject)
-- [扩展属性](/graph/api/resources/extensionproperty)
-- [管理单元](/graph/api/resources/administrativeunit)
-- [应用程序](/graph/api/resources/application)
-- [应用角色分配](/graph/api/resources/approleassignment)
-- [基于证书的身份配置](/graph/api/resources/certificatebasedauthconfiguration)
-- [组织联系人](/graph/api/resources/orgcontact)
-- [Device](/graph/api/resources/device)
-- [目录对象合作伙伴参考](/graph/api/resources/directoryobjectpartnerreference)
-- [目录角色](/graph/api/resources/directoryrole)
-- [目录角色模板](/graph/api/resources/directoryroletemplate)
-- [域](/graph/api/resources/domain)
-- [域 dns 记录](/graph/api/resources/domaindnsrecord)
-- [域 dns cname 记录](/graph/api/resources/domaindnscnamerecord)
-- [域 dns mx 记录](/graph/api/resources/domaindnsmxrecord)
-- [域 dns srv 记录](/graph/api/resources/domaindnssrvrecord)
-- [域 dns txt 记录](/graph/api/resources/domaindnstxtrecord)
-- [域 dns 不可用记录](/graph/api/resources/domaindnsunavailablerecord)
-- [终结点](/graph/api/resources/endpoint)
-- [扩展属性](/graph/api/resources/extensionproperty)
-- [许可证详细信息](/graph/api/resources/licensedetails)
-- [组](/graph/api/resources/group)
-- [基于活动的超时策略](/graph/api/resources/activitybasedtimeoutpolicy)
-- [声明映射策略](/graph/api/resources/claimsmappingpolicy)
-- [主领域发现策略](/graph/api/resources/homerealmdiscoverypolicy)
-- [令牌颁发策略](/graph/api/resources/tokenissuancepolicy)
-- [令牌生存期策略](/graph/api/resources/tokenlifetimepolicy)
-- [策略基础](/graph/api/resources/policybase)
-- [Sts 策略](/graph/api/resources/stspolicy)
-- [合同](/graph/api/resources/contract)
-- [服务主体](/graph/api/resources/serviceprincipal)
-- [订阅的 SKU](/graph/api/resources/subscribedsku)
-- [Oauth2 权限授予](/graph/api/resources/oauth2permissiongrant)
-- [组织](/graph/api/resources/organization)
-- [用户](/graph/api/resources/user)
-- [组设置](/graph/api/resources/groupsetting)
-- [组设置模板](/graph/api/resources/groupsettingtemplate)
+[!INCLUDE [Identity and access throttling documentation](../includes/throttling-identity-and-access.md)]
 
 #### <a name="pattern"></a>模式
 
@@ -357,7 +288,18 @@ aadUserConversationMember、appCatalogs、changeTrackedEntity、channel、chatMe
   - WriteLimitExceeded - 限制因为超过写入限值。
   - ResourceUnitLimitExceeded - 限制因为超过已分配资源单位的限值。
 
-### <a name="information-protection"></a>信息保护
+### <a name="identity-and-access-reports-service-limits"></a>身份和访问报告服务限制
+
+| 请求类型 | 所有应用的每个租户的使用限制 | 每个租户每个应用限制 |
+| ------------ | ----------------------------- | ------------------------ |
+| POST, PUT, DELETE, PATCH | 每 20 秒 200 个请求 | 每 20 秒 100 个请求 |
+| 任何 | 每 20 秒 2000 个请求 | 每 20 秒 1000 个请求 |
+
+上述限制适用于下列资源:
+
+[!INCLUDE [Azure AD identity and access reports throttling documentation](../includes/throttling-aad-reports.md)]
+
+### <a name="information-protection-service-limits"></a>信息保护服务限制
 
 以下限制适用于 `/informationProtection` 上的所有请求。
 
@@ -365,8 +307,7 @@ aadUserConversationMember、appCatalogs、changeTrackedEntity、channel、chatMe
 |---------------------------|-------------------------------------------------------------|------------------------------------------------------|
 | POST                      | 每 15 分钟 150 个请求和每 24 小时 10000 个请求 | 每 15 分钟 1 个请求和每 24 小时 3 个请求 |
 
-上述限制适用于下列资源:  
-threatAssessmentRequest、threatAssessmentResult、mailAssessmentRequest、emailFileAssessmentRequest、fileAssessmentRequest、urlAssessmentRequest。
+[!INCLUDE [Information protection throttling documentation](../includes/throttling-information-protection.md)]
 
 ### <a name="identity-protection-and-conditional-access-service-limits"></a>身份保护和条件访问服务限制
 
@@ -374,8 +315,8 @@ threatAssessmentRequest、threatAssessmentResult、mailAssessmentRequest、email
 | ------------ | ------- |
 | 任何 | 每秒1个请求 |
 
-上述限制适用于下列资源:  
-riskDetection, riskyUser, riskyUserHistoryItem, namedLocation, countryNamedLocation, ipNamedLocation, conditionalAccessPolicy.
+[!INCLUDE [Information protection throttling documentation](../includes/throttling-identityprotection-ca.md)]
+
 
 > **注意：** 上面列出的资源未在 `429 Too Many Requests` 响应上返回 `Retry-After` 标头。
 
@@ -388,8 +329,12 @@ riskDetection, riskyUser, riskyUserHistoryItem, namedLocation, countryNamedLocat
 | 10 分钟内的 10,000 个 API 请求                  | v1.0 和 beta 终结点 |
 | 4 个并发请求                                      | v1.0 和 beta 终结点   |
 
-上述限制适用于下列资源:  
-people、trending、usedinsight、sharedInsight。
+上述限制适用于下列资源:
+
+| <!-- fake header--> |
+|--|
+| <ul> <li> [people](/graph/api/resources/people) <li> [sharedInsight](/graph/api/resources/sharedinsight) <li> [trending](/graph/api/resources/trending)  <li> [usedInsight](/graph/api/resources/usedinsight) </ul>|
+
 
 ### <a name="microsoft-graph-reports-service-limits"></a>Microsoft Graph 报告的服务限制
 
@@ -402,7 +347,8 @@ people、trending、usedinsight、sharedInsight。
 
 上述限制分别适用于每个报表 API。 例如，在 10 分钟内分别有对 Microsoft Teams 用户活动报告 API 的请求及对 Outlook 用户活动报告 API 的请求，将分别被视为 14 个请求中的 1 个请求，而不是 14 个请求中的 2 个请求。
 
-上述限制适用于 **报告** 资源。  
+上述限制适用于所有 [使用情况报表](/graph/api/resources/report) 资源。
+
 
 ### <a name="invitation-manager-service-limits"></a>邀请管理器服务限制
 
@@ -429,21 +375,22 @@ people、trending、usedinsight、sharedInsight。
 | ------------ | ------------------------ |
 | 任何          | 每 10 秒 455 个请求 |
 
-上述限制适用于以下资源：openTypeExtension、schemaExtension、administrativeUnit、合同、设备、事件、组、消息、组织、帖子和用户。
+上述限制适用于下列资源：[!INCLUDE [Open and schema extensions throttling documentation](../includes/throttling-extensions.md)]
+
 
 ### <a name="files-and-lists-service-limits"></a>文件和列表服务限制
 
 OneDrive、OneDrive for Business 和 SharePoint Online 的服务限制不可用。 有关详细信息，请参阅[为什么不能告诉我确切的限制？](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online#why-cant-you-just-tell-me-the-exact-throttling-limits)。
 
-上述信息适用于以下资源：  
-baseItem、baseItemVersion、columnDefinition、columnLink、contentType、drive、driveItem、driveItemVersion、fieldValueSet、itemActivity、itemActivityStat、itemAnalytics、list、listItem、listItemVersion、permission、sharedDriveItem、site 和 thumbnailSet。
+上述信息适用于以下资源：
+
+[!INCLUDE [Files and lists throttling documentation](../includes/throttling-files-and-lists.md)]
 
 ### <a name="tasks-and-plans-service-limits"></a>任务和计划服务限制
 
 Planner 的服务限制不可用。
 
-上述信息适用于以下资源：  
-planner、plannerAssignedToTaskBoardTaskFormat、plannerBucket、plannerBucketTaskBoardTaskFormat、plannerGroup、plannerPlan、plannerPlanDetails、plannerProgressTaskBoardTaskFormat、plannerTask、plannerTaskDetails 和 plannerUser。
+上述信息适用于以下资源：[!INCLUDE [Tasks and plans throttling documentation](../includes/throttling-tasks-and-plans.md)]
 
 ### <a name="identity-and-access-data-policy-operation-service-limits"></a>身份和访问数据策略操作服务限制
 
@@ -452,7 +399,11 @@ planner、plannerAssignedToTaskBoardTaskFormat、plannerBucket、plannerBucketTa
 | 发布于 `exportPersonalData` | 每天 1000 个针对任何主题的请求，每个主题每天 100 个请求 |
 | 任何其他请求 | 每分钟 10000 个请求 |
 
-上述限制适用于下列资源：dataPolicyOperation。
+上述限制适用于下列资源：
+
+| <!-- fake header--> |
+|--|
+| <ul> <li> [dataPolicyOperation](/graph/api/resources/datapolicyoperation) </ul>|
 
 > **注意：** 上面列出的资源未在 `429 Too Many Requests` 响应上返回 `Retry-After` 标头。
 
@@ -479,7 +430,7 @@ planner、plannerAssignedToTaskBoardTaskFormat、plannerBucket、plannerBucketTa
 [!INCLUDE [Intune bundles throttling documentation](../includes/throttling-intune-bundles.md)]
 [!INCLUDE [Intune chromebook sync throttling documentation](../includes/throttling-intune-chromebook-sync.md)]
 [!INCLUDE [Intune company terms throttling documentation](../includes/throttling-intune-company-terms.md)]
-[!INCLUDE [Intune device config V2 throttling documentation](../includes/throttling-intune-device-config-v2.md)]
+[!INCLUDE [Intune device config v2 throttling documentation](../includes/throttling-intune-device-config-v2.md)]
 [!INCLUDE [Intune device configuration throttling documentation](../includes/throttling-intune-device-configuration.md)]
 [!INCLUDE [Intune device enrollment throttling documentation](../includes/throttling-intune-device-enrollment.md)]
 [!INCLUDE [Intune device intent throttling documentation](../includes/throttling-intune-device-intent.md)]
@@ -494,7 +445,6 @@ planner、plannerAssignedToTaskBoardTaskFormat、plannerBucket、plannerBucketTa
 [!INCLUDE [Intune partner integration throttling documentation](../includes/throttling-intune-partner-integration.md)]
 [!INCLUDE [Intune rbac throttling documentation](../includes/throttling-intune-rbac.md)]
 [!INCLUDE [Intune remote assistance throttling documentation](../includes/throttling-intune-remote-assistance.md)]
-[!INCLUDE [Intune reporting throttling documentation](../includes/throttling-intune-reporting.md)]
 [!INCLUDE [Intune telephony throttling documentation](../includes/throttling-intune-telephony.md)]
 [!INCLUDE [Intune TEM throttling documentation](../includes/throttling-intune-tem.md)]
 [!INCLUDE [Intune troubleshooting throttling documentation](../includes/throttling-intune-troubleshooting.md)]
@@ -524,8 +474,10 @@ planner、plannerAssignedToTaskBoardTaskFormat、plannerBucket、plannerBucketTa
 |---------------------------|------------------------------|----------------------------|
 | 任何         | 每 10 秒 500 个请求   | 每 10 秒 1000 个请求
 |任何          | 每 3600 秒 15000 个请求|每 3600 秒 30000 个请求|
-| 获取/作业  | 每 10 秒 50 个请求 | 每 10 秒 150 个请求 |  
+| 获取/作业  | 每 10 秒 50 个请求 | 每 10 秒 150 个请求 |
 
-前面的限制适用于以下资源：[educationAssignment](/graph/api/resources/educationassignment?view=graph-rest)
-[educationSubmission](/graph/api/resources/educationsubmission?view=graph-rest)
-[educationResource](/graph/api/resources/educationresource?view=graph-rest)
+上述限制适用于下列资源：
+
+| <!-- fake header--> |
+|--|
+| <ul> <li> [educationAssignment](/graph/api/resources/educationassignment) <li> [educationSubmission](/graph/api/resources/educationsubmission) <li> [trending](/graph/api/resources/trending)  <li> [educationResource](/graph/api/resources/educationresource) </ul>|

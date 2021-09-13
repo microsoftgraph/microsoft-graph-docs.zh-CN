@@ -2,15 +2,15 @@
 title: deviceManagementConfigurationIntegerSettingValueDefaultTemplate 资源类型
 description: 整数设置值默认模板
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 105d400b051c0322d72e711871ae8801a07d25ce
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0afe1b5cd05a6c9a14b4d7a40807c8d27480cf21
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58815587"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128877"
 ---
 # <a name="devicemanagementconfigurationintegersettingvaluedefaulttemplate-resource-type"></a>deviceManagementConfigurationIntegerSettingValueDefaultTemplate 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58815587"
 整数设置值默认模板
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 
 ## <a name="relationships"></a>关系

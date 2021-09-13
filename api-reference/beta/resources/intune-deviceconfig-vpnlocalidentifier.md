@@ -2,15 +2,15 @@
 title: vpnLocalIdentifier 枚举类型
 description: VPN 本地标识符的类型
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5c379f6b90dccc2cb36c0518974f80a76d6bc6f2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7ffdc670c02f85c196e42aae2b0508995badbfb4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801814"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59146553"
 ---
 # <a name="vpnlocalidentifier-enum-type"></a>vpnLocalIdentifier 枚举类型
 

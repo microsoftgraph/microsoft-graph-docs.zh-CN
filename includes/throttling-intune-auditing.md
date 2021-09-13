@@ -1,14 +1,14 @@
 ---
 author: davidmu1
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: msgraph
 ms.topic: include
-ms.openlocfilehash: 4156a8028253b351bf726aca32effafe54487db73f11a08a3bb60023fe42bad2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 89d469c754d8ca51026fa2822ceffda67d8e930b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196618"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035660"
 ---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
@@ -19,5 +19,8 @@ ms.locfileid: "54196618"
 | POST, PUT, DELETE, PATCH | 每 20 秒 200 个请求 | 每 20 秒 100 个请求 |
 | 任何 | 每 20 秒 2000 个请求 | 每 20 秒 1000 个请求 |
 
-上述限制适用于下列资源:  
-auditEvent。
+上述限制适用于下列资源: 
+ 
+| <!-- fake header-->                                           |
+|---------------------------------------------------------------|
+| <ul> <li> [auditEvent](/graph/api/resources/auditevent) </ul> |

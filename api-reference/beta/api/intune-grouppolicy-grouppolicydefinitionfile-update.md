@@ -2,15 +2,15 @@
 title: 更新 groupPolicyDefinitionFile
 description: 更新 groupPolicyDefinitionFile 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3a98bc2553feb2ab71be42eb9e3009cb8cf2f780
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b5ab3988b32239ea490a1a0245f11ebb804ab3c2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804097"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59124727"
 ---
 # <a name="update-grouppolicydefinitionfile"></a>更新 groupPolicyDefinitionFile
 
@@ -45,7 +45,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -56,12 +56,12 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|ADMX 文件的本地化友好名称。|
-|description|字符串|ADMX 文件中策略设置的本地化说明。 默认值为空白。|
+|说明|String|ADMX 文件中策略设置的本地化说明。 默认值为空白。|
 |languageCodes|字符串集合|ADMX 文件支持的语言代码。|
-|targetPrefix|字符串|指定引用 ADMX 文件内的命名空间的逻辑名称。|
-|targetNamespace|字符串|指定用于标识 ADMX 文件内的命名空间的 URI。|
+|targetPrefix|String|指定引用 ADMX 文件内的命名空间的逻辑名称。|
+|targetNamespace|String|指定用于标识 ADMX 文件内的命名空间的 URI。|
 |policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|指定组策略的类型。 可取值为：`admxBacked`、`admxIngested`。|
-|revision|字符串|与文件关联的修订版本。|
+|revision|String|与文件关联的修订版本。|
 |id|String|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。|
 

@@ -1,14 +1,14 @@
 ---
 title: 将 Windows UWP 应用与用户通知客户端 SDK 相集成
 description: 将 Windows UWP 应用与用户通知客户端 SDK 相集成。
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: notifications
-ms.openlocfilehash: 5d692ba185fed4313f0f9c8afb73f5d6d8439d254f39ea3b4ab874beec9819a0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b7cfb633d3701715e0a29ee1be8bb1acfe375ea8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54177782"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035575"
 ---
 # <a name="integrate-your-windows-uwp-app-with-the-client-side-sdk-for-user-notifications"></a>将 Windows UWP 应用与用户通知客户端 SDK 相集成
 
@@ -31,7 +31,7 @@ ms.locfileid: "54177782"
 
 该图显示了以下步骤： 
 
-1. 应用程序逻辑。 此步骤可捕获用于触发向用户发布通知的事件。 这是特定于应用的逻辑，它可以是 Microsoft Graph 中的事件或其他内容的数据更新（例如新的日历事件或任务分配），也可以是应用服务希望向用户通知的其他内容。
+1. 应用逻辑。这一步抓住了触发通知发布给用户的因素。这是特定于应用的逻辑，它可以是 Microsoft Graph 中的事件或其他内容的数据更新（例如新的日历事件或任务分配），也可以是应用服务希望向用户通知的其他内容。
 2. 应用服务器通过 Microsoft Graph 通知 API 向目标用户发布通知。 有关详细信息，请参阅[服务器端集成](notifications-integrating-app-server.md)。
 3. 在收到包含新通知的 Web 请求后，Microsoft Graph 通知会在此应用和此用户的云中安全地保留通知内容。
 4. 对于订阅接收此用户通知的每个应用客户端实例，Microsoft Graph 通知会通过操作系统提供的本机推送服务发送信号以通知应用客户端。 在这种情况下，应用程序是 Windows 上的 UWP 应用，它使用“[WNS 推送原始通知](/windows/uwp/design/shell/tiles-and-notifications/raw-notification-overview)”来发送信号。 
@@ -49,7 +49,7 @@ ms.locfileid: "54177782"
 
 ![Windows 应用的更新通知流](images/notifications-notification-update-windows.png)
 
-请注意，流的第二部分与用于处理新传入通知的流相似。 这是设计使然 - 设计的 SDK 编程模式使应用程序客户端可以相似的方式处理所有类型的用户通知数据更改（新传入的通知、通知状态更改、已删除的通知）。  
+请注意，流程的第二部分与处理新传入通知的流程类似。这是设计使然 - 设计的 SDK 编程模式使应用程序客户端可以相似的方式处理所有类型的用户通知数据更改 (新传入的通知、通知状态更改、已删除的通知)。  
 
 该图显示了以下步骤：
 
@@ -181,7 +181,7 @@ private async void NotificationRegistrationManager_NotificationRegistrationState
 
 ## <a name="adding-the-user-account-to-the-platform"></a>将用户帐户添加到平台 
 
-你需要使用 SDK 注册已登录用户的帐户。 这涉及添加帐户并注册推送通道以通过 WNS 接收初始推送通知。 
+你需要使用 SDK 注册已登录用户的帐户。这涉及添加帐户并注册推送通道以通过 WNS 接收初始推送通知。 
 
 ```C#
 var account = new ConnectedDevicesAccount(accountId, accountType);           
@@ -222,7 +222,7 @@ reader.DataChanged += Reader_DataChanged;
 
 ## <a name="receiving-and-managing-user-notifications"></a>接收和管理用户通知
 
-本主题前面的流程图显示，处理来自应用服务器的新传入通知的编程模式与处理从另一个应用客户端实例启动的通知更新或删除的编程模式类似。 以下是处理这些数据更改的步骤。 
+本主题前面的流程图显示，处理来自应用服务器的新传入通知的编程模式与处理从另一个应用客户端实例启动的通知更新或删除的编程模式类似。以下是处理这些数据更改的步骤。 
 
 ### <a name="handling-incoming-push-notification-signal"></a>处理传入推送通知信号
 

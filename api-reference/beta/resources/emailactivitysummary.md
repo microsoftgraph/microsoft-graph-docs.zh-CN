@@ -1,16 +1,16 @@
 ---
 title: emailActivitySummary 资源类型
 description: 下面是资源的 JSON 表示形式。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sarahwxy
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: b1fdbeadf887797fe5347041d8846247fe4c7a3f4cd0cda960fed537710d57b6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ae2c1d52ab736106f9f76ef07b93b09db4de4d94
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249011"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129297"
 ---
 # <a name="emailactivitysummary-resource-type"></a>emailActivitySummary 资源类型
 
