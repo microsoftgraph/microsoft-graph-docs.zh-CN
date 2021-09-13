@@ -1,16 +1,16 @@
 ---
 title: office365GroupsActivityDetail 资源类型
 description: 下面是资源的 JSON 表示形式。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: 5bc9446637d566a163b2a76b3177d7e9deff974a02116aec6b32078d900dec31
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 57d51cf3f2d4f91270000618a18f70f3804208c3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54139121"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59142864"
 ---
 # <a name="office365groupsactivitydetail-resource-type"></a>office365GroupsActivityDetail 资源类型
 
@@ -22,18 +22,18 @@ ms.locfileid: "54139121"
 | :-------------------------------- | :------ | ---------------------------------------- |
 | groupId                           | String  | 组 ID。          |
 | reportRefreshDate                 | 日期    | 内容的最新日期。          |
-| groupDisplayName                  | 字符串  | 组的显示名称。           |
-| isDeleted                         | 布尔值 | 此用户是已删除还是软删除。 |
+| groupDisplayName                  | String  | 组的显示名称。           |
+| isDeleted                         | Boolean | 此用户是已删除还是软删除。 |
 | ownerPrincipalName                | String  | 组所有者主体名称。          |
-| lastActivityDate                  | 日期    | 以下方案的最后活动日期：组邮箱收到的电子邮件;用户在文档库中查看、编辑、共享或SharePoint文件;用户查看SharePoint页面;用户发布、阅读或点过Yammer组。 |
-| groupType                         | 字符串  | 组类型。 可能的值是 **：Public** 或 **Private**。 |
+| lastActivityDate                  | 日期    | 以下方案的最后活动日期：组邮箱收到的电子邮件;用户在文档库中查看、编辑、共享或同步SharePoint文件;用户查看SharePoint页面;用户发布、阅读或点过Yammer组。 |
+| groupType                         | String  | 组类型。 可能的值是 **：Public** 或 **Private**。 |
 | memberCount                       | Int64   | 组的成员计数。                  |
 | externalMemberCount               | Int64   | 组外部成员计数。         |
 | exchangeReceivedEmailCount        | Int64   | 组邮箱收到的电子邮件数。 |
 | sharePointActiveFileCount         | Int64   | 组网站中的SharePoint数。 |
 | yammerPostedMessageCount          | Int64   | 发送到组的邮件Yammer数量。 |
 | yammerReadMessageCount            | Int64   | 在邮件组中读取Yammer数。 |
-| yammer在 Yammer的 YamEdMessageCount           | Int64   | 在用户组中喜欢的邮件Yammer数量。 |
+| yammer在 Yammer的 YamEdMessageCount           | Int64   | 用户组中喜欢的邮件Yammer数。 |
 | exchangeMailboxTotalItemCount     | Int64   | 组邮箱中的项目数。 |
 | exchangeMailboxStorageUsedInBytes | Int64   | 组邮箱所使用的存储。   |
 | sharePointTotalFileCount          | Int64   | 组网站中SharePoint总数。 |

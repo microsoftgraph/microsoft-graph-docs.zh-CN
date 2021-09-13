@@ -2,15 +2,15 @@
 title: auditEvent 资源类型
 description: 包含审核事件的属性的类。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4a64dd9d3889373c97930740a7e510e187cb3606
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9750f450d31b4b1c9458fb941aafa8bdf8a6018d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783965"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59091816"
 ---
 # <a name="auditevent-resource-type"></a>auditEvent 资源类型
 

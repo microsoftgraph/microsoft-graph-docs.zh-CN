@@ -2,15 +2,15 @@
 title: 获取 deviceManagementIntentAssignment
 description: 读取 deviceManagementIntentAssignment 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7123ba01e78ae14c4a0f31f81baced4480908b7d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 36daebe4ac5c9495a65944d186f32dbf7b25e8ef
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58817507"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59088148"
 ---
 # <a name="get-devicemanagementintentassignment"></a>获取 deviceManagementIntentAssignment
 
@@ -46,7 +46,7 @@ GET /deviceManagement/intents/{deviceManagementIntentId}/assignments/{deviceMana
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

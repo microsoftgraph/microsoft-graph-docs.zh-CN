@@ -2,15 +2,15 @@
 title: macOSWiFiConfiguration 资源类型
 description: 通过在此配置文件中提供配置，你可以指示 macOS 设备连接到所需的 Wi-Fi 终结点。 通过指定终结点预期的身份验证Wi-Fi，可以使最终用户Wi-Fi无缝连接。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9b0684ac3642fb11c2baffd59b2227112c0cbddd
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3b858f072d0b1b1c38bf92a1cd3bbf30ac62b30c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820728"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59101406"
 ---
 # <a name="macoswificonfiguration-resource-type"></a>macOSWiFiConfiguration 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "58820728"
 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)
 
 ## <a name="methods"></a>方法
-|方法|返回类型|Description|
+|方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 macOSWiFiConfigurations](../api/intune-deviceconfig-macoswificonfiguration-list.md)|[macOSWiFiConfiguration](../resources/intune-deviceconfig-macoswificonfiguration.md) 集合|列出 [macOSWiFiConfiguration](../resources/intune-deviceconfig-macoswificonfiguration.md) 对象的属性和关系。|
 |[获取 macOSWiFiConfiguration](../api/intune-deviceconfig-macoswificonfiguration-get.md)|[macOSWiFiConfiguration](../resources/intune-deviceconfig-macoswificonfiguration.md)|读取 [macOSWiFiConfiguration](../resources/intune-deviceconfig-macoswificonfiguration.md) 对象的属性和关系。|
@@ -45,22 +45,22 @@ ms.locfileid: "58820728"
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |networkName|String|网络名称|
 |ssid|String|这是广播到所有Wi-Fi网络的名称。|
-|connectAutomatically|布尔值|连接网络在范围内时自动运行。 如果设置为 true，将跳过用户提示，并自动将设备Wi-Fi网络。|
-|connectWhenNetworkNameIsHidden|布尔值|连接网络未在 SSID 中广播其 (时) 。 设置为 true 时，此配置文件会强制设备连接到未将其 SSID 广播到所有设备的网络。|
+|connectAutomatically|Boolean|连接网络在范围内时自动运行。 如果设置为 true，将跳过用户提示，并自动将设备Wi-Fi网络。|
+|connectWhenNetworkNameIsHidden|Boolean|连接网络不通过 SSID 广播其名称时 (SSID) 。 设置为 true 时，此配置文件会强制设备连接到未将其 SSID 广播到所有设备的网络。|
 |wiFiSecurityType|[wiFiSecurityType](../resources/intune-deviceconfig-wifisecuritytype.md)|指示Wi-Fi是否使用基于 EAP 的安全类型。 可取值为：`open`、`wpaPersonal`、`wpaEnterprise`、`wep`、`wpa2Personal`、`wpa2Enterprise`。|
-|proxySettings|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|此连接的代理Wi-Fi类型。 可取值为：`none`、`manual`、`automatic`。|
+|proxySettings|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|此连接代理Wi-Fi类型。 可取值为：`none`、`manual`、`automatic`。|
 |proxyManualAddress|String|选择手动配置时代理服务器的 IP 地址或 DNS 主机名。|
 |proxyManualPort|Int32|选择手动配置时代理服务器的端口。|
 |proxyAutomaticConfigurationUrl|String|选择自动配置时代理服务器自动配置脚本的 URL。 此 URL 通常是 PAC 代理自动配置 (文件) 位置。|
 |preSharedKey|String|这是 WPA 个人共享网络的预共享Wi-Fi密钥。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|Description|
+|关系|类型|说明|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md) 集合|设备配置文件的组分配列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) 集合|设备配置文件的分配列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|

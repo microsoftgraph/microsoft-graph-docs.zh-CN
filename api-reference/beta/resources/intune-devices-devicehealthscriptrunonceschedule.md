@@ -2,15 +2,15 @@
 title: deviceHealthScriptRunOnceSchedule 资源类型
 description: 设备运行状况脚本运行一次计划。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c51150e9299a44495c517e8f78a4e67de3ce47c1
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 04028c3510c3b6ab3c1d888b5fb228540b9dbc56
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58802472"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59144292"
 ---
 # <a name="devicehealthscriptrunonceschedule-resource-type"></a>deviceHealthScriptRunOnceSchedule 资源类型
 

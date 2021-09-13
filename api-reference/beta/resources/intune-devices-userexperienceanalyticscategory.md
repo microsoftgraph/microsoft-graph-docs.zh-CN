@@ -2,15 +2,15 @@
 title: userExperienceAnalyticsCategory 资源类型
 description: 用户体验分析类别实体包含类别的各种指标的分数和见解。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 82cc07ff207f74593543c5a1a70c4fe524d92f17
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c2e740991fe6552d03b0183de8a897c1e6e174ae
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803768"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59141149"
 ---
 # <a name="userexperienceanalyticscategory-resource-type"></a>userExperienceAnalyticsCategory 资源类型
 

@@ -2,15 +2,15 @@
 title: ratingJapanMoviesType 枚举类型
 description: 日本电影评级标签
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d9e1cc1f395198b0d36764c256a0902537976c72
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7e69eb005088fdfc62309e6586a95171b38f4742
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788673"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59146602"
 ---
 # <a name="ratingjapanmoviestype-enum-type"></a>ratingJapanMoviesType 枚举类型
 
@@ -28,7 +28,7 @@ ms.locfileid: "58788673"
 |allAllowed|0|默认值，允许所有电影内容|
 |allBlocked|1|不允许任何电影内容|
 |general|2|适合所有年龄|
-|parentalGuidance|3|PG-12 分类请求针对 12 岁人士的家长指导|
+|parentalGuidance|3|PG-12 分类请求为 12 岁人士提供家长指南|
 |agesAbove15|4 |R15+ 分类适用于 15 位或更旧的查看者|
 |agesAbove18|5 |R18+ 分类适用于 18 位或更旧的查看者|
 

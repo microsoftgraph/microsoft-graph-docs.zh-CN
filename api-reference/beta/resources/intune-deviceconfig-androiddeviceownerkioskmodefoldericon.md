@@ -2,15 +2,15 @@
 title: androidDeviceOwnerKioskModeFolderIcon 枚举类型
 description: Android 设备所有者展台模式文件夹图标类型。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 60ade3e1bd18e78fd14fe49933eacd9fd7f49437
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e81f208be2edbdb0e8168883fa20bab48582dd72
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787039"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127498"
 ---
 # <a name="androiddeviceownerkioskmodefoldericon-enum-type"></a>androidDeviceOwnerKioskModeFolderIcon 枚举类型
 

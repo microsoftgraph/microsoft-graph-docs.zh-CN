@@ -2,15 +2,15 @@
 title: deviceComplianceActionItem 资源类型
 description: 计划的操作配置
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1f2b49f5a569d79bcb365719ab3b9740df16434b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ae69041824e7b8f095e884cf9115ba1dbe571846
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786381"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59101637"
 ---
 # <a name="devicecomplianceactionitem-resource-type"></a>deviceComplianceActionItem 资源类型
 

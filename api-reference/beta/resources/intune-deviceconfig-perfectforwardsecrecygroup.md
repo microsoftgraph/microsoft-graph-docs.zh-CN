@@ -2,15 +2,15 @@
 title: perfectForwardSecrecyGroup 枚举类型
 description: 使用 IKEv2 连接类型的 Windows 10 VPN 策略的向前保密组值。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e3f097fae938817a588198de107048bb16ab76b3
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 82536f63e552b8d125e590af3f89c0087d6a7a2f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796241"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59146616"
 ---
 # <a name="perfectforwardsecrecygroup-enum-type"></a>perfectForwardSecrecyGroup 枚举类型
 

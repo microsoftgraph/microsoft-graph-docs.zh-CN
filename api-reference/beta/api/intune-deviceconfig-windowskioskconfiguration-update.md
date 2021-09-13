@@ -2,15 +2,15 @@
 title: 更新 windowsKioskConfiguration
 description: 更新 windowsKioskConfiguration 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3f3b0a410460d664a38c8b31d5b49d48818672cc
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6f4032aee2e779319f1575309d51fe73a601d05e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58800917"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59122416"
 ---
 # <a name="update-windowskioskconfiguration"></a>更新 windowsKioskConfiguration
 
@@ -45,7 +45,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -63,7 +63,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|字符串|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |kioskProfiles|[windowsKioskProfile](../resources/intune-deviceconfig-windowskioskprofile.md) 集合|此策略设置允许为展台配置定义展台配置文件列表。 此集合最多可包含 3 个元素。|
@@ -73,8 +73,8 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |kioskBrowserEnableEndSessionButton|Boolean|启用展台浏览器的结束会话按钮。 默认情况下，结束会话按钮处于禁用状态。|
 |kioskBrowserRestartOnIdleTimeInMinutes|Int32|指定会话处于空闲状态，直到展台浏览器以全新状态重启的分钟数。  有效值为 1-1440。 有效值为 1 到 1440|
 |kioskBrowserBlockedURLs|字符串集合|指定展台浏览器不应导航到的 URL|
-|kioskBrowserBlockedUrlExceptions|String collection|指定允许展台浏览器导航到的 URL|
-|edgeKioskEnablePublicBrowsing|Boolean|为浏览器启用公共浏览Microsoft Edge模式。 默认值为 false。|
+|kioskBrowserBlockedUrlExceptions|字符串集合|指定允许展台浏览器导航到的 URL|
+|edgeKioskEnablePublicBrowsing|Boolean|为浏览器启用公共浏览展台Microsoft Edge模式。 默认值为 false。|
 |windowsKioskForceUpdateSchedule|[windowsKioskForceUpdateSchedule](../resources/intune-deviceconfig-windowskioskforceupdateschedule.md)|强制为展台设备更新计划。|
 
 

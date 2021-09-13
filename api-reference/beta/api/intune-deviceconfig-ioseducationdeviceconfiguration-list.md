@@ -2,15 +2,15 @@
 title: 列出 iosEducationDeviceConfigurations
 description: 列出 iosEducationDeviceConfiguration 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 42dbfce20e34cc2116212b83cbc2243a6714be39
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: fef11a8a12bca7921960335cc84ca482af980927
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58817549"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59088449"
 ---
 # <a name="list-ioseducationdeviceconfigurations"></a>列出 iosEducationDeviceConfigurations
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

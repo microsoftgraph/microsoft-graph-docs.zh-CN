@@ -2,15 +2,15 @@
 title: mobileAppTroubleshootingAppTargetHistory 资源类型
 description: 包含在移动应用疑难解答事件中的历史记录项。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 737114ea576344f268c1100a70afed2f27ef1f3e
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 4fc42222869b78b3418a57738ac83a93b77603fe
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58261129"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100874"
 ---
 # <a name="mobileapptroubleshootingapptargethistory-resource-type"></a>mobileAppTroubleshootingAppTargetHistory 资源类型
 

@@ -2,15 +2,15 @@
 title: androidRequiredPasswordComplexity 枚举类型
 description: 可以在 Android 上设置的密码复杂性类型。 其中一个：NONE、LOW、MEDIUM、HIGH。 这是面向 Android 11+的 API。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b1f63d822d7046c34f994c329bdb1de382f6d1d8
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: cdeec66304b60fbf215cca2051a4f8459c691a12
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786388"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59101707"
 ---
 # <a name="androidrequiredpasswordcomplexity-enum-type"></a>androidRequiredPasswordComplexity 枚举类型
 

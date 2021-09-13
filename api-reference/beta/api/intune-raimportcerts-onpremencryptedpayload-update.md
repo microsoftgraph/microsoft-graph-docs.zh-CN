@@ -2,15 +2,15 @@
 title: 更新 onPremEncryptedPayload
 description: 更新 onPremEncryptedPayload 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dcd5f593cbfcf6f46ec2fe7f6065332ed8577379
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 33434a8f082d1c9f645006d5764ea67171221812
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58799864"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59087651"
 ---
 # <a name="update-onpremencryptedpayload"></a>更新 onPremEncryptedPayload
 
@@ -43,7 +43,7 @@ PATCH /onPremEncryptedPayloads/{onPremEncryptedPayloadsId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -64,7 +64,7 @@ PATCH /onPremEncryptedPayloads/{onPremEncryptedPayloadsId}
 |plistTemplate|String|尚未记录|
 |encryptedBlob|二进制|尚未记录|
 |payloadVersion|Int32|尚未记录|
-|状态|Int32|尚未记录|
+|status|Int32|尚未记录|
 |createdTime|DateTimeOffset|尚未记录|
 |lastModifiedTime|DateTimeOffset|尚未记录|
 |eTag|String|尚未记录|

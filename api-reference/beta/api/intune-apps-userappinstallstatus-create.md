@@ -2,15 +2,15 @@
 title: 创建 userAppInstallStatus
 description: 创建新的 userAppInstallStatus 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bcbb5c2e3ff5de8ecb1e31f275af199c629844ba
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7ced510ebcf2e1b9136f9ccdad99a00851dc716c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786885"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59088603"
 ---
 # <a name="create-userappinstallstatus"></a>创建 userAppInstallStatus
 
@@ -43,7 +43,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,7 +53,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |userName|String|用户名。|
 |userPrincipalName|String|用户主体名称。|
 |installedDeviceCount|Int32|已安装设备的计数。|

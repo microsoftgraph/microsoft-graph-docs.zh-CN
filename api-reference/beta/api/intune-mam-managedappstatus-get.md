@@ -2,15 +2,15 @@
 title: 获取 managedAppStatus
 description: 读取 managedAppStatus 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a58b8bce1194ba2d7d0b5d4f5c1bae4eaa3594df
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 73d521ea7ab086791673c21ce51ea4fe8daadf61
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787657"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59121422"
 ---
 # <a name="get-managedappstatus"></a>获取 managedAppStatus
 
@@ -46,7 +46,7 @@ GET /deviceAppManagement/managedAppStatuses/{managedAppStatusId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

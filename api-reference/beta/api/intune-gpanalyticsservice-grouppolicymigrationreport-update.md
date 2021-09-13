@@ -2,15 +2,15 @@
 title: 更新 groupPolicyMigrationReport
 description: 更新 groupPolicyMigrationReport 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 737f6d8be140ec1723295e6f8cdb8809b9bdcca4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 44c63d97cd4d8606e8b03ef2dbba600d701f12ba
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58807060"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59121702"
 ---
 # <a name="update-grouppolicymigrationreport"></a>更新 groupPolicyMigrationReport
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportI
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,9 +53,9 @@ PATCH /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportI
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|尚未记录|
+|id|String|尚未记录|
 |groupPolicyObjectId|Guid|来自 GPO Xml 内容的组策略对象 GUID|
-|displayName|字符串|GPO Xml 内容中的组策略对象的名称|
+|displayName|String|GPO Xml 内容中的组策略对象的名称|
 |ouDistinguishedName|String|OU 的可分辨名称。|
 |createdDateTime|DateTimeOffset|创建 GroupPolicyMigrationReport 的日期和时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改 GroupPolicyMigrationReport 的日期和时间。|

@@ -2,15 +2,15 @@
 title: 列出 windowsInformationProtectionAppLearningSummaries
 description: 列出 windowsInformationProtectionAppLearningSummary 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6a36e9fef1d6577ac07c4e6a1bac9a9f6a2a3375
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3f824c7ec5e0abe46c8b11eaf38b3fa66fd502a5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58792230"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59102337"
 ---
 # <a name="list-windowsinformationprotectionapplearningsummaries"></a>列出 windowsInformationProtectionAppLearningSummaries
 
@@ -43,7 +43,7 @@ GET /deviceManagement/windowsInformationProtectionAppLearningSummaries
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

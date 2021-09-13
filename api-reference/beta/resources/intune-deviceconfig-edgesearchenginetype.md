@@ -1,16 +1,16 @@
 ---
 title: edgeSearchEngineType 枚举类型
-description: 允许 IT 管理员为设备设置预定义的默认MDM-Controlled引擎
+description: 允许 IT 管理员为移动设备设置预定义的默认MDM-Controlled引擎
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 51d84da7886d11dd51c31f3568514e5b05566ea0
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ea649c67a1aeadbabadb8d8358c5450d26d775e8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787298"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59101525"
 ---
 # <a name="edgesearchenginetype-enum-type"></a>edgeSearchEngineType 枚举类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "58787298"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-允许 IT 管理员为设备设置预定义的默认MDM-Controlled引擎
+允许 IT 管理员为移动设备设置预定义的默认MDM-Controlled引擎
 
 ## <a name="members"></a>成员
 |成员|值|说明|

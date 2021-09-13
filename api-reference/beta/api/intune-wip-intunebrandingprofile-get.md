@@ -2,15 +2,15 @@
 title: 获取 intuneBrandingProfile
 description: 读取 intuneBrandingProfile 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f0f88fd94b1cf34a31a248f45313d41c1017b41c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d87412b0cc892ebbdd9bb7933475d44d1ddadd24
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790197"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59092404"
 ---
 # <a name="get-intunebrandingprofile"></a>获取 intuneBrandingProfile
 
@@ -46,7 +46,7 @@ GET /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

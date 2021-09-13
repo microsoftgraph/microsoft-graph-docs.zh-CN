@@ -2,15 +2,15 @@
 title: deviceHealthScriptRemediationHistoryData 资源类型
 description: 在给定日期由设备运行状况脚本修正的设备数量。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c6c456b3edc591c0394446bbb23b6975781da4d4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a7578a8455b3c74f843c090522ad5d3e491cd1b1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793808"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59144327"
 ---
 # <a name="devicehealthscriptremediationhistorydata-resource-type"></a>deviceHealthScriptRemediationHistoryData 资源类型
 

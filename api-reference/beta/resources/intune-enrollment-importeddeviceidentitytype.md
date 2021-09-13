@@ -2,15 +2,15 @@
 title: importedDeviceIdentityType 枚举类型
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ec1d7d4c3aa4ce0ee082f12b703123552888b492
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: db40e2aa65dda8a70ecfed23d180f88f2a1db0e1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818047"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59141009"
 ---
 # <a name="importeddeviceidentitytype-enum-type"></a>importedDeviceIdentityType 枚举类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58818047"
 尚未记录
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |unknown|0|importedDeviceIdentityType 的未知值。|
 |imei|1|设备标识的类型为 imei。|

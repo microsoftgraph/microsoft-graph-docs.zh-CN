@@ -2,15 +2,15 @@
 title: userExperienceAnalyticsBaseline 资源类型
 description: 用户体验分析基线实体包含比较用户体验分析分数的基线值。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 730537696691c1039e924817d653497fb147338b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f3426303818afc77dd167a041a3f1af0100a86c4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803775"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59141198"
 ---
 # <a name="userexperienceanalyticsbaseline-resource-type"></a>userExperienceAnalyticsBaseline 资源类型
 

@@ -2,15 +2,15 @@
 title: importedWindowsAutopilotDeviceIdentityImportStatus 枚举类型
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 061da55728a1856c05cd7b7893f37ad0b97556e7
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 619390937880b5ac8e39eac05c6a407e3018ce70
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58751921"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59140995"
 ---
 # <a name="importedwindowsautopilotdeviceidentityimportstatus-enum-type"></a>importedWindowsAutopilotDeviceIdentityImportStatus 枚举类型
 

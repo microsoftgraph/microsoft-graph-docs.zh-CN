@@ -2,15 +2,15 @@
 title: deviceHealthScriptRemediationSummary 资源类型
 description: 部署的设备运行状况脚本数和已修复脚本的设备数。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ac9e06cdbc8aa5ba754528459e52142b7e4f3679
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2eb1177b80f95572599e6205cfdd00499e65b0f3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820686"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59144312"
 ---
 # <a name="devicehealthscriptremediationsummary-resource-type"></a>deviceHealthScriptRemediationSummary 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58820686"
 部署的设备运行状况脚本数和已修复脚本的设备数。
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |scriptCount|Int32|部署的设备运行状况脚本的数量。|
 |remediatedDeviceCount|Int32|由设备运行状况脚本修正的设备数量。|

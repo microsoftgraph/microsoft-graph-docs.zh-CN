@@ -2,15 +2,15 @@
 title: 删除 androidForWorkImportedPFXCertificateProfile
 description: 删除 androidForWorkImportedPFXCertificateProfile。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 93e4a9266a8607023ac8c70341183a96f97aaa10
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 71a337d74df77d3c833e63eb26a8447be19fe23c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818707"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59098144"
 ---
 # <a name="delete-androidforworkimportedpfxcertificateprofile"></a>删除 androidForWorkImportedPFXCertificateProfile
 
@@ -45,7 +45,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

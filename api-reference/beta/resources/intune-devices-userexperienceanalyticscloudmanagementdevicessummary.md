@@ -2,15 +2,15 @@
 title: userExperienceAnalyticsCloudManagementDevicesSummary 资源类型
 description: 用户体验从任意位置云管理设备摘要工作。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ed76d8c2c4c26c6ba010bd21829a70f014538937
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 567a3743110111e5f013c6197bef1729de6a27d0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803761"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59141134"
 ---
 # <a name="userexperienceanalyticscloudmanagementdevicessummary-resource-type"></a>userExperienceAnalyticsCloudManagementDevicesSummary 资源类型
 

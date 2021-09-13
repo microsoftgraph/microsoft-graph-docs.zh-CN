@@ -2,15 +2,15 @@
 title: iosWiFiConfiguration 资源类型
 description: 通过在此配置文件中提供配置，你可以指示 iOS 设备连接到所需的 Wi-Fi 终结点。 通过指定终结点预期的身份验证Wi-Fi，可以使最终用户Wi-Fi无缝连接。 此配置文件提供的安全类型有限且比配置文件Enterprise Wi-Fi简单。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 857ee57ac02e7c23699ecd3861c2800d3e86fb99
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0452ff2e05ecc6d6e5ab3041a8960dcac6a72827
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791184"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127218"
 ---
 # <a name="ioswificonfiguration-resource-type"></a>iosWiFiConfiguration 资源类型
 
@@ -45,15 +45,15 @@ ms.locfileid: "58791184"
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |networkName|String|网络名称|
 |ssid|String|这是广播到所有Wi-Fi网络的名称。|
 |connectAutomatically|Boolean|连接网络在范围内时自动运行。 如果设置为 true，将跳过用户提示，并自动将设备Wi-Fi网络。|
-|connectWhenNetworkNameIsHidden|布尔值|连接网络不通过 SSID 广播其名称时 (SSID) 。 设置为 true 时，此配置文件会强制设备连接到未将其 SSID 广播到所有设备的网络。|
+|connectWhenNetworkNameIsHidden|Boolean|连接网络不通过 SSID 广播其名称时 (SSID) 。 设置为 true 时，此配置文件会强制设备连接到未将其 SSID 广播到所有设备的网络。|
 |wiFiSecurityType|[wiFiSecurityType](../resources/intune-deviceconfig-wifisecuritytype.md)|指示Wi-Fi是否使用基于 EAP 的安全类型。 可取值为：`open`、`wpaPersonal`、`wpaEnterprise`、`wep`、`wpa2Personal`、`wpa2Enterprise`。|
-|proxySettings|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|此连接的代理Wi-Fi类型。 可取值为：`none`、`manual`、`automatic`。|
+|proxySettings|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|此连接代理Wi-Fi类型。 可取值为：`none`、`manual`、`automatic`。|
 |proxyManualAddress|String|选择手动配置时代理服务器的 IP 地址或 DNS 主机名。|
 |proxyManualPort|Int32|选择手动配置时代理服务器的端口。|
 |proxyAutomaticConfigurationUrl|String|选择自动配置时代理服务器自动配置脚本的 URL。 此 URL 通常是 PAC 代理自动配置 (文件) 位置。|

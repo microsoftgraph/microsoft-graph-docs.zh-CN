@@ -2,15 +2,15 @@
 title: vppTokenActionResult 资源类型
 description: 使用 Apple Volume Purchase Program 令牌执行的操作的状态。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7c95eee5af4ce94e80c0f6ca086e686c68c8ab33
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 77130397eb020e291dcc4aea8d77fe48d2673883
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791801"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59101203"
 ---
 # <a name="vpptokenactionresult-resource-type"></a>vppTokenActionResult 资源类型
 

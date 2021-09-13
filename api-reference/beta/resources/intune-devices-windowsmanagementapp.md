@@ -1,16 +1,16 @@
 ---
 title: windowsManagementApp 资源类型
-description: Windows管理应用实体。
+description: Windows管理应用程序实体。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 969ffdb3905a0feb1a636a38daf8bcae95630b4c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 86ee3906463d6d76fda1c961c04dd20fd3d790fa
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58807256"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59091284"
 ---
 # <a name="windowsmanagementapp-resource-type"></a>windowsManagementApp 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "58807256"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-Windows管理应用实体。
+Windows管理应用程序实体。
 
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
@@ -35,7 +35,7 @@ Windows管理应用实体。
 |id|String|管理应用程序的唯Windows标识符|
 |availableVersion|String|Windows管理应用可用版本。|
 |managedInstaller|[managedInstallerStatus](../resources/intune-devices-managedinstallerstatus.md)|托管安装程序状态。 可取值为：`disabled`、`enabled`。|
-|managedInstallerConfiguredDateTime|字符串|托管安装程序配置的日期时间|
+|managedInstallerConfiguredDateTime|String|托管安装程序配置的日期时间|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|

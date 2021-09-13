@@ -2,15 +2,15 @@
 title: vpnOnDemandRuleConnectionDomainAction 枚举类型
 description: VPN 按需规则连接域操作。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 33f6bf05c9487a1e125db0b4104c0bcef442c68f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ecb89557a27477f489f9790b4228531dd490b0ea
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790659"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59101336"
 ---
 # <a name="vpnondemandruleconnectiondomainaction-enum-type"></a>vpnOnDemandRuleConnectionDomainAction 枚举类型
 

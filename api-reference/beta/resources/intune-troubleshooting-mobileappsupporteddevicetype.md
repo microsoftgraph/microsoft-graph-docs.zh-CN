@@ -2,15 +2,15 @@
 title: mobileAppSupportedDeviceType 资源类型
 description: 设备属性
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ac7c683c69ad19bdef1730b13232cce4b2106ca9
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: d5cac0e65b600779ce57daa897bcfd44e17f2427
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58253383"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100881"
 ---
 # <a name="mobileappsupporteddevicetype-resource-type"></a>mobileAppSupportedDeviceType 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "58253383"
 |:---|:---|:---|
 |类型|[deviceType](../resources/intune-troubleshooting-devicetype.md)|设备类型。 可能的值是 `desktop` `windowsRT` `winMO6` ：、、、、、、、、、、 `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `windows10x` `androidnGMS` `chromeOS` `linux` `blackberry` `palm` `unknown` `cloudPC` 、|
 |minimumOperatingSystemVersion|String|最低操作系统版本|
-|maximumOperatingSystemVersion|字符串|最大操作系统版本|
+|maximumOperatingSystemVersion|String|最大操作系统版本|
 
 ## <a name="relationships"></a>关系
 无

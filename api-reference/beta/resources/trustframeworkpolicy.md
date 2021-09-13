@@ -1,16 +1,16 @@
 ---
 title: trustFrameworkPolicy
 description: 在 Azure AD B2C 信任框架策略中称为自定义策略。 这描述租户的 trustFrameworkPolicy 对象上可用的操作。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: d51cbda73ca41d58795ef09c23cc1e644e59f60e8d0833f692ebcfb396489e98
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2f84f1ef4c391c81a720d5f0f76adae144e04677
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54241217"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100517"
 ---
 # <a name="trustframeworkpolicy-resource-type"></a>trustFrameworkPolicy 资源类型
 
@@ -27,7 +27,7 @@ ms.locfileid: "54241217"
 
 有关详细信息，请参阅[B2C 中的Azure Active Directory策略](/azure/active-directory-b2c/active-directory-b2c-overview-custom)。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
