@@ -2,15 +2,15 @@
 title: managedDeviceSummarizedAppState 资源类型
 description: 表示具有失败或挂起的应用的用户设备的事件。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 910bcf04f7d2578ab4b643951b844ef4eef2d881
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 092dfef55500ec023c2cf0d79f63c5161c27c7c0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58264512"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59057199"
 ---
 # <a name="manageddevicesummarizedappstate-resource-type"></a>managedDeviceSummarizedAppState 资源类型
 

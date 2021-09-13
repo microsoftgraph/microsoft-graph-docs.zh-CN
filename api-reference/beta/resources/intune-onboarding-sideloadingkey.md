@@ -2,15 +2,15 @@
 title: sideLoadingKey 资源类型
 description: 若要为租户安装业务线应用，Windows 8 8.1 设备需要 SideLoadingKey 实体。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 651815aea6e64b4fa53f0a4d22127050c5f3b488
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: dc902bb1a6b1549f13e718c37db41321e0e1cbd5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58792566"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046720"
 ---
 # <a name="sideloadingkey-resource-type"></a>sideLoadingKey 资源类型
 
@@ -36,10 +36,10 @@ ms.locfileid: "58792566"
 |:---|:---|:---|
 |id|String|旁加载密钥唯一 ID。|
 |value|String|Side Loading Key Value， it is 5x5 value， seperated by hiphens.|
-|displayName|字符串|向 ITPro 管理员显示的旁加载密钥名称。|
-|description|String|旁加载 向 ITPro 管理员显示的密钥说明。|
+|displayName|String|向 ITPro 管理员显示的旁加载密钥名称。|
+|说明|String|旁加载 向 ITPro 管理员显示的密钥说明。|
 |totalActivation|Int32|向 ITPro 管理员显示的旁加载密钥总激活。|
-|lastUpdatedDateTime|字符串|向 ITPro 管理员显示的"旁加载密钥上次更新日期"。|
+|lastUpdatedDateTime|String|向 ITPro 管理员显示的"旁加载密钥上次更新日期"。|
 
 ## <a name="relationships"></a>关系
 无

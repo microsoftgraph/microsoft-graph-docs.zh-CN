@@ -2,15 +2,15 @@
 title: updateSettings 操作
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d9eee075a4dd03dd493321f229b1bbdf6ca0c947
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 20a6cd9a59d1783fb5ea90148aeccc733b3c8507
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793152"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59077172"
 ---
 # <a name="updatesettings-action"></a>updateSettings 操作
 
@@ -43,7 +43,7 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/updateSettings
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,7 +51,7 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/updateSettings
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |settings|[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md) 集合|尚未记录|
 

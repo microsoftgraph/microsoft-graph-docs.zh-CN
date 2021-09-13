@@ -2,15 +2,15 @@
 title: 删除 deviceManagementPartner
 description: 删除 deviceManagementPartner。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 78d2ea8476fd4295b74096f8a42dc7c684540e37
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 431b7c22a1023fdcba00bf089834f88d2e806963
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791289"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59076717"
 ---
 # <a name="delete-devicemanagementpartner"></a>删除 deviceManagementPartner
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/deviceManagementPartners/{deviceManagementPartnerId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -2,15 +2,15 @@
 title: 创建 microsoftTunnelServerLogCollectionResponse
 description: 创建新的 microsoftTunnelServerLogCollectionResponse 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5202b524398f0794ee9477942821fbf0657aff5a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a5d0e3ec207d97fd3a7d9c54aed9504f504490ab
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58802276"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59041694"
 ---
 # <a name="create-microsofttunnelserverlogcollectionresponse"></a>创建 microsoftTunnelServerLogCollectionResponse
 
@@ -43,7 +43,7 @@ POST /deviceManagement/microsoftTunnelServerLogCollectionResponses
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,7 +54,7 @@ POST /deviceManagement/microsoftTunnelServerLogCollectionResponses
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的唯一 ID|
-|状态|[microsoftTunnelLogCollectionStatus](../resources/intune-mstunnel-microsofttunnellogcollectionstatus.md)|日志集合的状态。 可取值为：`pending`、`completed`、`failed`。|
+|status|[microsoftTunnelLogCollectionStatus](../resources/intune-mstunnel-microsofttunnellogcollectionstatus.md)|日志集合的状态。 可取值为：`pending`、`completed`、`failed`。|
 |startDateTime|DateTimeOffset|收集的日志的开始时间 |
 |endDateTime|DateTimeOffset|收集的日志的结束时间|
 |sizeInBytes|Int64|日志的大小（以字节为单位）|

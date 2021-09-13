@@ -2,15 +2,15 @@
 title: unifiedRoleManagementPolicyApprovalRule 资源类型
 description: unifiedRoleManagementPolicyApprovalRule 指定与角色管理策略关联的审批规则。 它派生自 microsoft.graph.unifiedRoleManagementPolicyRule。
 author: shauliu1
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: e2c28045bb0e5882d8ee9d8c000d0e6b8a48657a
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: 85192408040602db27ae1c72e76c81f67b2a2284
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453819"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046461"
 ---
 # <a name="unifiedrolemanagementpolicyapprovalrule-resource-type"></a>unifiedRoleManagementPolicyApprovalRule 资源类型
 

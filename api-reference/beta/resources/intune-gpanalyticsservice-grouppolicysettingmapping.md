@@ -2,15 +2,15 @@
 title: groupPolicySettingMapping 资源类型
 description: 到 MDM/Intune 映射的组策略设置。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 29050a8df830110e264339089b04ce92db4391cb
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 90cacd1f89b75f1c6cf60fe64e9c9c141664423f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791830"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063900"
 ---
 # <a name="grouppolicysettingmapping-resource-type"></a>groupPolicySettingMapping 资源类型
 
@@ -36,23 +36,23 @@ ms.locfileid: "58791830"
 |:---|:---|:---|
 |id|String|尚未记录|
 |parentId|String|组策略设置的父 ID。|
-|childIdList|字符串集合|组策略设置的子 ID 列表。|
+|childIdList|String collection|组策略设置的子 ID 列表。|
 |settingName|String|此组策略设置的名称。|
-|settingValue|字符串|此组策略设置的值。|
-|settingValueType|字符串|此组策略设置的值类型。|
+|settingValue|String|此组策略设置的值。|
+|settingValueType|String|此组策略设置的值类型。|
 |settingDisplayName|String|此显示名称策略设置的成员。|
-|settingDisplayValue|字符串|此组策略设置的显示值。|
+|settingDisplayValue|String|此组策略设置的显示值。|
 |settingDisplayValueType|String|此组策略设置的显示值类型。|
-|settingValueDisplayUnits|字符串|此组策略设置值的显示单位|
-|settingCategory|字符串|组策略设置位于的类别。|
-|mdmCspName|字符串|此组策略设置映射到的云解决方案提供商名称。|
-|mdmSettingUri|字符串|此组策略设置映射到的 MDM CSP URI。|
+|settingValueDisplayUnits|String|此组策略设置值的显示单位|
+|settingCategory|String|组策略设置位于的类别。|
+|mdmCspName|String|此组策略设置映射到的云解决方案提供商名称。|
+|mdmSettingUri|String|此组策略设置映射到的 MDM CSP URI。|
 |mdmMinimumOSVersion|Int32|此 mdm 设置支持的最低操作系统版本。|
 |settingType|[groupPolicySettingType](../resources/intune-gpanalyticsservice-grouppolicysettingtype.md)|设置类型 (安全或 admx) 组策略的一部分。 可取值为：`unknown`、`policy`、`account`、`securityOptions`、`userRightsAssignment`、`auditSetting` 或 `windowsFirewallSettings`。|
 |isMdmSupported|Boolean|指示 Intune 是否支持该设置|
-|mdmSupportedState|[mdmSupportedState](../resources/intune-gpanalyticsservice-mdmsupportedstate.md)|指示设置在 Mdm 中是否受支持。 可能的值是：`unknown`、`supported`、`unsupported`、`deprecated`。|
+|mdmSupportedState|[mdmSupportedState](../resources/intune-gpanalyticsservice-mdmsupportedstate.md)|指示设置在 Mdm 中是否受支持。 可取值为：`unknown`、`supported`、`unsupported`、`deprecated`。|
 |settingScope|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|设置的范围。 可取值为：`unknown`、`device`、`user`。|
-|intuneSettingUriList|字符串集合|此组策略设置映射到的 Intune 设置 URI 列表|
+|intuneSettingUriList|String collection|此组策略设置映射到的 Intune 设置 URI 列表|
 |intuneSettingDefinitionId|String|Intune 设置定义 ID|
 |admxSettingDefinitionId|String|Admx 组策略 ID|
 

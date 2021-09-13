@@ -2,15 +2,15 @@
 title: 删除 windowsQualityUpdateProfileAssignment
 description: 删除 windowsQualityUpdateProfileAssignment。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4de3db4354a1c247baf97e7e521a95c010754c9a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0a884e66aca4ee3c6b9f8a4f74d8ef515ba124ca
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793920"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59054861"
 ---
 # <a name="delete-windowsqualityupdateprofileassignment"></a>删除 windowsQualityUpdateProfileAssignment
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/windowsQualityUpdateProfiles/{windowsQualityUpdateProfi
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -2,15 +2,15 @@
 title: userAttributeValuesItem 资源类型
 description: 用于在用户流中有多个选项可供选择时填充用户流属性的值。
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 1780e37b8be9952d314f2a95a89975814ffac3483199ae72eb608d1426aa84cd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3468ed1545c8be12f906182f34f5260897f461ba
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54145073"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056996"
 ---
 # <a name="userattributevaluesitem-resource-type"></a>userAttributeValuesItem 资源类型
 

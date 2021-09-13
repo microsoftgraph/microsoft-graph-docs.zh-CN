@@ -2,15 +2,15 @@
 title: microsoftTunnelHealthThreshold 资源类型
 description: 表示运行状况指标的运行状况阈值的实体。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 179ea255198d1febbd2defeeac13316e583b9271
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6661fac1b2096f4164d81ce111032a0bb551dfdc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805327"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59057290"
 ---
 # <a name="microsofttunnelhealththreshold-resource-type"></a>microsoftTunnelHealthThreshold 资源类型
 

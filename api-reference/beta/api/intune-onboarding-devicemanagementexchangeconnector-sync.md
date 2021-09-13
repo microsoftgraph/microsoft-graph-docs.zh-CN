@@ -2,15 +2,15 @@
 title: sync 操作
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bcefcefeafe3113919216ebe4cd6e7fc1608eaba
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8b18f25e434d21d1e7ccd163bc0906e56227fa43
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788792"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59076794"
 ---
 # <a name="sync-action"></a>sync 操作
 
@@ -43,7 +43,7 @@ POST /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}/
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,7 +51,7 @@ POST /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}/
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |syncType|[deviceManagementExchangeConnectorSyncType](../resources/intune-onboarding-devicemanagementexchangeconnectorsynctype.md)|将执行的同步类型，完全同步或增量同步。|
 

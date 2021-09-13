@@ -2,15 +2,15 @@
 title: managedAppPolicy 资源类型
 description: ManagedAppPolicy 资源表示特定于平台的策略的基类型。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0e03efcfdc49f41ee52c401ff7a70a8734cb3a3c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: bc10be26a13b8f6d72a53ea327c468b3712d28fd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58821092"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59068905"
 ---
 # <a name="managedapppolicy-resource-type"></a>managedAppPolicy 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58821092"
 ManagedAppPolicy 资源表示特定于平台的策略的基类型。
 
 ## <a name="methods"></a>方法
-|方法|返回类型|Description|
+|方法|返回类型|说明|
 |:---|:---|:---|
 |[List managedAppPolicies](../api/intune-mam-managedapppolicy-list.md)|[managedAppPolicy](../resources/intune-mam-managedapppolicy.md) 集合|列出 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) 对象的属性和关系。|
 |[Get managedAppPolicy](../api/intune-mam-managedapppolicy-get.md)|[managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|读取 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) 对象的属性和关系。|
@@ -33,11 +33,11 @@ ManagedAppPolicy 资源表示特定于平台的策略的基类型。
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|策略显示名称。|
-|description|String|策略的说明。|
+|说明|String|策略的说明。|
 |createdDateTime|DateTimeOffset|创建策略的日期和时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改策略的时间。|
-|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。|
-|id|字符串|实体的键。|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
+|id|String|实体的键。|
 |version|String|实体的版本。|
 
 ## <a name="relationships"></a>关系

@@ -2,15 +2,15 @@
 title: 列出 mobileAppIntentAndStates
 description: 列出 mobileAppIntentAndState 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1ddeffd6774ab9d3e7126e7f589e893215f49b25
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 46ab855787e06720c6ab047ad1c053f50b5861d8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256738"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59047952"
 ---
 # <a name="list-mobileappintentandstates"></a>列出 mobileAppIntentAndStates
 

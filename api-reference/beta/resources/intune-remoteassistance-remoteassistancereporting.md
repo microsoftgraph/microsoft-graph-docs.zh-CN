@@ -2,15 +2,15 @@
 title: remoteAssistanceReporting 资源类型
 description: RemoteAssistanceReporting 资源表示给定远程协助报告有效负载的元数据
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d5442ce93f5e7697ed577835ddd437252396e67b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7793b8ef8bffa33e5d2e77de9fd102b9d0c59288
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805329"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039460"
 ---
 # <a name="remoteassistancereporting-resource-type"></a>remoteAssistanceReporting 资源类型
 
@@ -31,7 +31,7 @@ RemoteAssistanceReporting 资源表示给定远程协助报告有效负载的元
 |remoteAssistanceSessionType|[remoteAssistanceSessionType](../resources/intune-remoteassistance-remoteassistancesessiontype.md)|已召开的远程协助会话的类型。 可取值为：`viewOnly`、`fullControl`、`elevation`。 可取值为：`viewOnly`、`fullControl`、`elevation`。|
 |helperEmail|String|帮助程序用来建立会话的登录电子邮件|
 |helperTenantId|String|帮助程序租户 ID|
-|helperFirstName|字符串|帮助程序的名字|
+|helperFirstName|String|帮助程序的名字|
 |helperLastName|String|帮助程序姓氏|
 |helperDeviceAadId|String|帮助程序的设备 AAD ID|
 |helperDeviceName|String|帮助程序的设备名称|
@@ -39,9 +39,9 @@ RemoteAssistanceReporting 资源表示给定远程协助报告有效负载的元
 |sharerEmail|String|共享者用于建立会话的登录电子邮件|
 |sharerTenantId|String|共享者租户 ID|
 |sharerFirstName|String|Sharer 的名字|
-|sharerLastName|字符串|Sharer 的姓氏|
+|sharerLastName|String|Sharer 的姓氏|
 |sharerDeviceAadId|String|Sharer 的设备 AAD ID|
-|sharerDeviceName|字符串|Sharer 的设备名称|
+|sharerDeviceName|String|Sharer 的设备名称|
 |sharerEnrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|共享者设备的 Intune 注册状态。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
 
 ## <a name="relationships"></a>关系

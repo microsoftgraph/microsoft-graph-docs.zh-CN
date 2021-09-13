@@ -2,15 +2,15 @@
 title: deviceManagementReports 资源类型
 description: 充当所有报告功能的容器的单一实体。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a79c44f76d0329efc1939051e402dd32e0f034a6
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 531d1a7e3f2529982f5c1da4ab908edc765b7dc6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783846"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039348"
 ---
 # <a name="devicemanagementreports-resource-type"></a>deviceManagementReports 资源类型
 

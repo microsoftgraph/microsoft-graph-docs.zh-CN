@@ -2,15 +2,15 @@
 title: deviceManagementExchangeAccessRule 资源类型
 description: 设备访问规则Exchange。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: efb0b46002ae77fcb10629756ef366eea69d9ca9
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 32a8f83c340aa1beb02124c41d3cbd3255aba2aa
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58815510"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59051151"
 ---
 # <a name="devicemanagementexchangeaccessrule-resource-type"></a>deviceManagementExchangeAccessRule 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58815510"
 设备访问规则Exchange。
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |deviceClass|[deviceManagementExchangeDeviceClass](../resources/intune-onboarding-devicemanagementexchangedeviceclass.md)|受此规则影响的设备类。|
 |accessLevel|[deviceManagementExchangeAccessLevel](../resources/intune-onboarding-devicemanagementexchangeaccesslevel.md)|此规则Exchange的访问级别。 可取值为：`none`、`allow`、`block`、`quarantine`。|

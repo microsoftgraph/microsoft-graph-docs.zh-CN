@@ -2,15 +2,15 @@
 title: 删除 androidDeviceOwnerEnrollmentProfile
 description: 删除 androidDeviceOwnerEnrollmentProfile。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 159fe6b9bd77a11c1c4253fc47b1d5599433d3df
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8b29449ebf1fd67d8fc003a5b3089f22e5825778
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58798081"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59071390"
 ---
 # <a name="delete-androiddeviceownerenrollmentprofile"></a>删除 androidDeviceOwnerEnrollmentProfile
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/androidDeviceOwnerEnrollmentProfiles/{androidDeviceOwne
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

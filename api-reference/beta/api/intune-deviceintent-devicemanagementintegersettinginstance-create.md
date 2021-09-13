@@ -2,15 +2,15 @@
 title: 创建 deviceManagementIntegerSettingInstance
 description: 创建新的 deviceManagementIntegerSettingInstance 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b4804b780e7f1b7dec5051d66604aba0966b054e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 94985bc0e03b5cdf7cfb5cc363077ef811cb8178
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58815279"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59070711"
 ---
 # <a name="create-devicemanagementintegersettinginstance"></a>创建 deviceManagementIntegerSettingInstance
 
@@ -46,7 +46,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/categories/{device
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -58,7 +58,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/categories/{device
 |:---|:---|:---|
 |id|String|设置实例 ID 继承自 [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
 |definitionId|String|此实例的设置定义的 ID 继承自 [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
-|valueJson|字符串|值的 JSON 表示形式 继承自 [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
+|valueJson|String|值的 JSON 表示形式 继承自 [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
 |值|Int32|整数值|
 
 

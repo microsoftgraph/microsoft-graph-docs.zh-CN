@@ -2,15 +2,15 @@
 title: 更新 deviceManagementSettingDefinition
 description: 更新 deviceManagementSettingDefinition 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b1089ddbd368f1b670fe6891bf828225f5b46840
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: fad535920d40d36fd6fc7d1ebe7441686619a6ac
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58792068"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59048393"
 ---
 # <a name="update-devicemanagementsettingdefinition"></a>更新 deviceManagementSettingDefinition
 
@@ -46,7 +46,7 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/categories/{devic
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -58,12 +58,12 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/categories/{devic
 |:---|:---|:---|
 |id|String|设置定义的 ID|
 |valueType|[deviceManangementIntentValueType](../resources/intune-deviceintent-devicemanangementintentvaluetype.md)|值的数据类型。 可取值为：`integer`、`boolean`、`string`、`complex`、`collection`、`abstractComplex`。|
-|displayName|字符串|设置显示名称|
+|displayName|String|设置显示名称|
 |isTopLevel|Boolean|如果设置是顶级设置，则无需封装在集合或复杂设置中即可进行配置|
-|description|String|设置的说明|
-|placeholderText|字符串|占位符文本作为有效输入的示例|
+|说明|String|设置的说明|
+|placeholderText|String|占位符文本作为有效输入的示例|
 |documentationUrl|String|设置文档的 URL|
-|headerTitle|字符串|设置标头的标题表示设置/设置的类别/部分|
+|headerTitle|String|设置标头的标题表示设置/设置的类别/部分|
 |headerSubtitle|String|有关类别/节的更多详细信息，请参阅设置标头的副标题|
 |keywords|字符串集合|与设置关联的关键字|
 |约束|[deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md) 集合|设置值的约束集合|

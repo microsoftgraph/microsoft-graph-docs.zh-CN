@@ -1,16 +1,16 @@
 ---
 title: windows81WifiImportConfiguration 资源类型
-description: Windows 8.1+ Wi-Fi导入配置。 通过配置此配置文件，你可以指示Windows 8.1 (及) 设备连接到所需的 Wi-Fi 终结点。 连接一Windows 8.1设备连接到所需的 Wi-Fi 网络，然后从该设备中提取 XML 以稍后嵌入到此Wi-Fi配置文件。
+description: Windows 8.1+ Wi-Fi导入配置。 通过配置此配置文件，你可以指示Windows 8.1 (及) 设备连接到所需的 Wi-Fi 终结点。 连接Windows 8.1设备连接到所需的 Wi-Fi 网络，然后从该设备中提取 XML 以稍后嵌入到此 Wi-Fi 配置文件。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ca037ceae79a79bf7e25a8d5d8315651e8dd9c75
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ac616b2c991fa115e086dc752619907b1cd33431
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786339"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59057353"
 ---
 # <a name="windows81wifiimportconfiguration-resource-type"></a>windows81WifiImportConfiguration 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "58786339"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-Windows 8.1+ Wi-Fi导入配置。 通过配置此配置文件，你可以指示Windows 8.1 (及) 设备连接到所需的 Wi-Fi 终结点。 连接一Windows 8.1设备连接到所需的 Wi-Fi 网络，然后从该设备中提取 XML 以稍后嵌入到此Wi-Fi配置文件。
+Windows 8.1+ Wi-Fi导入配置。 通过配置此配置文件，你可以指示Windows 8.1 (及) 设备连接到所需的 Wi-Fi 终结点。 连接Windows 8.1设备连接到所需的 Wi-Fi 网络，然后从该设备中提取 XML 以稍后嵌入到此 Wi-Fi 配置文件。
 
 
 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)
@@ -45,7 +45,7 @@ Windows 8.1+ Wi-Fi导入配置。 通过配置此配置文件，你可以指示W
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |payloadFileName|String|有效负载文件名 (*.xml) 。|

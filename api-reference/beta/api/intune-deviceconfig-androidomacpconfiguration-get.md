@@ -2,15 +2,15 @@
 title: 获取 androidOmaCpConfiguration
 description: 读取 androidOmaCpConfiguration 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7abc9782796dc63f0969d98d2f1252e0c6f0d2ff
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 598d4244f80b824242ea3e7df5e7aa46fc520fa0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793709"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59043025"
 ---
 # <a name="get-androidomacpconfiguration"></a>获取 androidOmaCpConfiguration
 
@@ -48,7 +48,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

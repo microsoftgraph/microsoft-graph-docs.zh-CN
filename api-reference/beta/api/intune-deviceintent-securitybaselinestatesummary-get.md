@@ -2,15 +2,15 @@
 title: 获取 securityBaselineStateSummary
 description: 读取 securityBaselineStateSummary 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 147a02627b1e178227c5555af918f63c28d4aaec
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9d0eef7263b2fc0d5f725e051a5c8f53dac7348a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788028"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59055015"
 ---
 # <a name="get-securitybaselinestatesummary"></a>获取 securityBaselineStateSummary
 
@@ -46,14 +46,14 @@ GET /deviceManagement/templates/{deviceManagementTemplateId}/microsoft.graph.sec
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [securityBaselineStateSummary](../resources/intune-deviceintent-securitybaselinestatesummary.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [securityBaselineStateSummary](../resources/intune-deviceintent-securitybaselinestatesummary.md) 对象。
 
 ## <a name="example"></a>示例
 

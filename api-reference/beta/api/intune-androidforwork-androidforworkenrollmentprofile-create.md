@@ -2,15 +2,15 @@
 title: 创建 androidForWorkEnrollmentProfile
 description: 创建新的 androidForWorkEnrollmentProfile 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ed9de9cab1ed75a61c5a34f832e14e91ebb6360d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 443a9538b921aefe0fbf0a6891abad0ed56d4d06
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784168"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59078026"
 ---
 # <a name="create-androidforworkenrollmentprofile"></a>创建 androidForWorkEnrollmentProfile
 
@@ -43,7 +43,7 @@ POST /deviceManagement/androidForWorkEnrollmentProfiles
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -55,8 +55,8 @@ POST /deviceManagement/androidForWorkEnrollmentProfiles
 |:---|:---|:---|
 |accountId|String|注册配置文件隶属的租户 GUID。|
 |id|String|注册配置文件的唯一 GUID。|
-|displayName|字符串|注册配置文件的显示名称。|
-|description|String|注册配置文件的说明。|
+|displayName|String|注册配置文件的显示名称。|
+|说明|String|注册配置文件的说明。|
 |createdDateTime|DateTimeOffset|注册配置文件的创建日期/时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改注册配置文件的日期/时间。|
 |tokenValue|String|为此注册配置文件最新创建的令牌的值。|
