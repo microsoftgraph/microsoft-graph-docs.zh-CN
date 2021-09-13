@@ -2,15 +2,15 @@
 title: 更新 iosLobAppProvisioningConfiguration
 description: 更新 iosLobAppProvisioningConfiguration 对象的属性。
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cbe30a1e679b56488bb6019d3c4fc3a2745894ac
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5720179f8f0b348ae29a61c4f9b31efd77fd19b7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795912"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59116218"
 ---
 # <a name="update-ioslobappprovisioningconfiguration"></a>更新 iosLobAppProvisioningConfiguration
 
@@ -47,7 +47,7 @@ PATCH /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisi
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -63,7 +63,7 @@ PATCH /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisi
 |payload|Binary|有效负载。 （UTF8 编码的字节数组）|
 |roleScopeTagIds|字符串集合|此 iOS LOB 应用预配配置实体的范围标记列表。|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。|
-|description|String|管理员提供的设备配置说明。|
+|说明|String|管理员提供的设备配置说明。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
 |displayName|String|管理员提供的设备配置名称。|
 |version|Int32|设备配置的版本。|

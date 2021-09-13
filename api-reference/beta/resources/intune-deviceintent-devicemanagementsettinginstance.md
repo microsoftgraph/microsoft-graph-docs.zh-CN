@@ -2,15 +2,15 @@
 title: deviceManagementSettingInstance 资源类型
 description: 设置实例的基类型
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5f4f2e9d6f3aa80da158cfae6e4f9863334e8491
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f56f518a8d45f93c25e8c450ce4152d7d7a38964
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58800385"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134897"
 ---
 # <a name="devicemanagementsettinginstance-resource-type"></a>deviceManagementSettingInstance 资源类型
 

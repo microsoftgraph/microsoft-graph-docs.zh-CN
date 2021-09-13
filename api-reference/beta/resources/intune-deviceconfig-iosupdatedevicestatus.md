@@ -2,15 +2,15 @@
 title: iosUpdateDeviceStatus 资源类型
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: faa31b0a4ec1fa1acbb8bbec7ed7367bd78de28e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e09020c84925ec2666d332467a5cc63243785881
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801835"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59106187"
 ---
 # <a name="iosupdatedevicestatus-resource-type"></a>iosUpdateDeviceStatus 资源类型
 
@@ -38,7 +38,7 @@ ms.locfileid: "58801835"
 |installStatus|[iosUpdatesInstallStatus](../resources/intune-deviceconfig-iosupdatesinstallstatus.md)|策略报告安装状态。 可能的值是 `success` `available` `idle` ：、、、、、、、、、、 `unknown` `mdmClientCrashed` `timeout` `downloading` `downloadFailed` `downloadRequiresComputer` `downloadInsufficientSpace` `downloadInsufficientPower` `downloadInsufficientNetwork` `installing` `installInsufficientSpace` `installInsufficientPower` `installPhoneCallInProgress` `installFailed` `notSupportedOperation` `sharedDeviceUserLoggedInError` `updateError` `deviceOsHigherThanDesiredOsVersion` `updateScanFailed` 。|
 |osVersion|String|报告的设备版本。|
 |deviceId|String|报告的设备 ID。|
-|userId|字符串|报告的用户 ID。|
+|userId|String|报告的用户 ID。|
 |deviceDisplayName|String|DevicePolicyStatus 的设备名。|
 |userName|String|报告的用户名|
 |deviceModel|String|报告的设备模型|

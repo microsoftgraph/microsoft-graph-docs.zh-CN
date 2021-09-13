@@ -2,15 +2,15 @@
 title: 删除 personResponsibility
 description: 删除 personResponsibility 对象。
 author: kevinbellinger
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 36b9a8833fbd62aeca1284755993f1b7402a42d5166d0cd35cdbd821f5277f50
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cf63d86d1edcc4e45047a0b4cf2ff7145b44cd2d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54170760"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127701"
 ---
 # <a name="delete-personresponsibility"></a>删除 personResponsibility
 命名空间：microsoft.graph

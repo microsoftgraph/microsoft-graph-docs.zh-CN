@@ -2,15 +2,15 @@
 title: iosTrustedRootCertificate 资源类型
 description: iOS 受信任的根证书配置文件。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5d9f23314918aa1a646d9279444322a7ced504d2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: aa8241bfa10ad3a83922d148195e120bb5b2f9af
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58799232"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59131306"
 ---
 # <a name="iostrustedrootcertificate-resource-type"></a>iosTrustedRootCertificate 资源类型
 
@@ -45,11 +45,11 @@ iOS 受信任的根证书配置文件。
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |trustedRootCertificate|二进制|受信任的根证书。|
-|certFileName|字符串|要显示在 UI 中的文件名。|
+|certFileName|String|要显示在 UI 中的文件名。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|

@@ -2,15 +2,15 @@
 title: 删除 deviceConfigurationConflictSummary
 description: 删除 deviceConfigurationConflictSummary。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 195635e8fda154d08aa54f75b19335ea1e2593fc
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 14e7b1126a79218901d69e54ede6c8a66c2d7f59
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803943"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59133658"
 ---
 # <a name="delete-deviceconfigurationconflictsummary"></a>删除 deviceConfigurationConflictSummary
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/deviceConfigurationConflictSummary/{deviceConfiguration
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -2,15 +2,15 @@
 title: deviceManagementScriptAssignment 资源类型
 description: 包含用于将设备管理脚本分配给组的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 62337f9c5afd55e5738bea9e1a25b8ed1f2528c1
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b6a9de04b4accb3461d9ec26612ab1df2ce6e86b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804818"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105860"
 ---
 # <a name="devicemanagementscriptassignment-resource-type"></a>deviceManagementScriptAssignment 资源类型
 

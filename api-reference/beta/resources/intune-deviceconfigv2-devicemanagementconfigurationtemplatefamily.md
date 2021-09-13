@@ -2,15 +2,15 @@
 title: deviceManagementConfigurationTemplateFamily 枚举类型
 description: 描述 Template 实体的 TemplateFamily
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5a4544dfbd9f87114d7e1cc83102a88aaa1a2c1d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5f89437d7f9e053371698febc4867b8c384763e1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791844"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59148177"
 ---
 # <a name="devicemanagementconfigurationtemplatefamily-enum-type"></a>deviceManagementConfigurationTemplateFamily 枚举类型
 
@@ -27,12 +27,12 @@ ms.locfileid: "58791844"
 |:---|:---|:---|
 |无|0|策略未链接到模板时，模板系列默认为|
 |endpointSecurityAntivirus|10 |EndpointSecurity 防病毒的模板系列，用于管理托管设备的离散防病毒设置组|
-|endpointSecurityDiskEncryption|11 |EndpointSecurityDiskEncryption 的模板系列，提供与设备内置加密方法（如 FileVault 或 BitLocker）相关的设置|
+|endpointSecurityDiskEncryption|11|EndpointSecurityDiskEncryption 的模板系列，提供与设备内置加密方法（如 FileVault 或 BitLocker）相关的设置|
 |endpointSecurityFirewall|12 |EndpointSecurityFirewall 的模板系列，可帮助为运行 macOS 和 Windows 10|
-|endpointSecurityEndpointDetectionAndResponse|13|EndpointSecurityEndpointDetectionAndResponse 的模板系列，便于管理 EDR 设置，将设备载入 Microsoft Defender for Endpoint|
+|endpointSecurityEndpointDetectionAndResponse|13|EndpointSecurityEndpointDetectionAndResponse 的模板系列，便于管理 EDR 设置，以及将设备载入 Microsoft Defender for Endpoint|
 |endpointSecurityAttackSurfaceReduction|14 |EndpointSecurityAttackSurfaceReduction 的模板系列，通过最大程度地减少组织易受网络威胁和攻击的位置，帮助减少攻击面|
 |endpointSecurityAccountProtection|15 |EndpointSecurityAccountProtection 的模板系列，有助于保护用户的标识和帐户|
-|endpointSecurityApplicationControl|16 |ApplicationControl 的模板系列，通过限制用户可以运行的应用程序和在 System Core 中运行的代码来减少 (内核) |
+|endpointSecurityApplicationControl|16 |ApplicationControl 的模板系列，通过限制用户可以运行的应用程序和在 System Core 中运行的代码和内核 (帮助) |
 
 
 

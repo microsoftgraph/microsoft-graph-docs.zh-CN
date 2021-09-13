@@ -2,15 +2,15 @@
 title: 删除 userExperienceAnalyticsDeviceStartupHistory
 description: 删除 userExperienceAnalyticsDeviceStartupHistory。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 528f7d90c843856d36db29d8e1ec30c197c370ef
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2c5f5d62eb7543e621a2ff9a2134b0d4ce47cc4d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790547"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59097269"
 ---
 # <a name="delete-userexperienceanalyticsdevicestartuphistory"></a>删除 userExperienceAnalyticsDeviceStartupHistory
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/userExperienceAnalyticsDeviceStartupHistory/{userExperi
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -2,15 +2,15 @@
 title: groupPolicyPresentationTextBox 资源类型
 description: 表示 ADMX textBox 元素和 ADMX 文本元素。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a3319960f8f15f06816eaa6a5ec2879352255c41
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 01ba00d4cff15e73917d88e01769e228a1320100
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793307"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085971"
 ---
 # <a name="grouppolicypresentationtextbox-resource-type"></a>groupPolicyPresentationTextBox 资源类型
 
@@ -40,8 +40,8 @@ ms.locfileid: "58793307"
 |标签|String|任何演示文稿实体的本地化文本标签。 默认值为空白。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |id|String|实体的键。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|defaultValue|字符串|文本框中显示的本地化默认字符串。 默认值为空白。|
-|必需|布尔值|要求在文本框中输入值。 默认值为 false。|
+|defaultValue|String|文本框中显示的本地化默认字符串。 默认值为空白。|
+|必需|Boolean|要求在文本框中输入值。 默认值为 false。|
 |maxLength|Int64|一个无符号整数，指定最大文本字符数。 默认值为 1023。|
 
 ## <a name="relationships"></a>关系

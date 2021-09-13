@@ -2,15 +2,15 @@
 title: androidWorkProfileVpnConfiguration 资源类型
 description: 通过在此配置文件中提供配置，你可以指示 Android 工作配置文件设备连接到所需的 VPN 终结点。 通过指定 VPN 终结点预期的身份验证方法和安全类型，你可以为最终用户无缝进行 VPN 连接。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2f66c04f5d99c40014f61458eded002a55e6ca1c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: bae62d769cf24537048c4225fc0c99aa9c286523
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58771251"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59148009"
 ---
 # <a name="androidworkprofilevpnconfiguration-resource-type"></a>androidWorkProfileVpnConfiguration 资源类型
 
@@ -45,20 +45,20 @@ ms.locfileid: "58771251"
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|字符串|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |connectionName|String|向用户显示的连接名称。|
 |connectionType|[androidWorkProfileVpnConnectionType](../resources/intune-deviceconfig-androidworkprofilevpnconnectiontype.md)|连接类型。 可取值为：`ciscoAnyConnect`、`pulseSecure`、`f5EdgeClient`、`dellSonicWallMobileConnect`、`checkPointCapsuleVpn`、`citrix`、`paloAltoGlobalProtect`、`microsoftTunnel`、`netMotionMobility`、`microsoftProtect`。|
 |role|String|将连接类型设置为 Pulse Secure 时的角色。|
-|realm|字符串|将连接类型设置为 Pulse Secure 时的领域。|
+|realm|String|将连接类型设置为 Pulse Secure 时的领域。|
 |服务器|[vpnServer](../resources/intune-deviceconfig-vpnserver.md) 集合|网络上 VPN 服务器的列表。 确保最终用户可以访问这些网络位置。 该集合最多可包含 500 个元素。|
 |fingerprint|String|指纹是一个字符串，用于验证 VPN 服务器是否可信任，这仅适用于连接类型为"检查点胶囊式 VPN"时。|
 |customData|[keyValue](../resources/intune-deviceconfig-keyvalue.md) 集合|连接类型设置为 Citrix 时自定义数据。 此集合最多可包含 25 个元素。|
 |customKeyValueData|[keyValuePair](../resources/intune-deviceconfig-keyvaluepair.md) 集合|连接类型设置为 Citrix 时自定义数据。 此集合最多可包含 25 个元素。|
 |authenticationMethod|[vpnAuthenticationMethod](../resources/intune-deviceconfig-vpnauthenticationmethod.md)|身份验证方法。 可取值为：`certificate`、`usernameAndPassword`、`sharedSecret`、`derivedCredential`、`azureAD`。|
 |proxyServer|[vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|代理服务器。|
-|targetedPackageIds|String collection|目标应用包 ID。|
+|targetedPackageIds|字符串集合|目标应用包 ID。|
 |targetedMobileApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) 集合|目标移动应用。 该集合最多可包含 500 个元素。|
 |alwaysOn|Boolean|是否启用始终启用 VPN 连接。|
 |alwaysOnLockdown|Boolean|如果始终启用 VPN 连接，是否在断开 VPN 连接时锁定网络流量。|

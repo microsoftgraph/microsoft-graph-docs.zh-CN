@@ -1,22 +1,22 @@
 ---
 title: workbookOperation 资源类型
 description: 表示长时间运行的工作簿操作的状态。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 373183806b6c23e494aeb8a76f0b156ac5cac62ac064b7f78f66c9650968df4b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e27d38aa1c04ca3be43955d15131b927f89fa5cc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54200262"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59119742"
 ---
 # <a name="workbookoperation-resource-type"></a>workbookOperation 资源类型
 
 表示长时间运行的工作簿操作的状态。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -27,9 +27,9 @@ ms.locfileid: "54200262"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |id|String| 操作 ID。只读。|
-|status|字符串| 操作的当前状态。 可取值为：`notStarted`、`running`、`succeeded`、`failed`。|
+|status|String| 操作的当前状态。 可取值为：`notStarted`、`running`、`succeeded`、`failed`。|
 |error|[workbookOperationError](workbookoperationerror.md)| 操作返回的错误。|
-|resourceLocation|字符串| 结果的资源 URI。|
+|resourceLocation|String| 结果的资源 URI。|
 
 ## <a name="relationships"></a>关系
 

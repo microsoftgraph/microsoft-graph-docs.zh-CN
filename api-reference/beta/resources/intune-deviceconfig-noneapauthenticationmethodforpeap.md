@@ -2,15 +2,15 @@
 title: nonEapAuthenticationMethodForPeap 枚举类型
 description: 当 PEAP 为选定的 EAP 类型时，用于身份验证的非 EAP 方法。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: cc224c1c2d9bb305fc6212e761975be9862b1947
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 026a45b8a27dbfadf0c41d16d888f92098b80d44
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803530"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59111059"
 ---
 # <a name="noneapauthenticationmethodforpeap-enum-type"></a>nonEapAuthenticationMethodForPeap 枚举类型
 

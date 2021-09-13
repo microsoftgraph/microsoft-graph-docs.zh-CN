@@ -2,15 +2,15 @@
 title: androidForWorkVpnConnectionType 枚举类型
 description: Android For Work VPN 连接类型。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0af27b821ae577f7918729468d72dfa78114163d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 13af781b07c23a9667b43ad2b20276ff47feef41
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790918"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59146764"
 ---
 # <a name="androidforworkvpnconnectiontype-enum-type"></a>androidForWorkVpnConnectionType 枚举类型
 

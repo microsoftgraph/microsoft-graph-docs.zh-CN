@@ -2,15 +2,15 @@
 title: ratingNewZealandTelevisionType 枚举类型
 description: 新西兰的电视内容分级标签
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7830fe1cba598ad99a6807daea31834fb47ef74b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0f321dc2f557d720ae4b1b40936fbf05052047ed
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790400"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59095547"
 ---
 # <a name="ratingnewzealandtelevisiontype-enum-type"></a>ratingNewZealandTelevisionType 枚举类型
 

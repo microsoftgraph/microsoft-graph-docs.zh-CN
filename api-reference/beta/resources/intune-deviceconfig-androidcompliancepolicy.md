@@ -2,15 +2,15 @@
 title: androidCompliancePolicy 资源类型
 description: 此类包含 Android 的合规性设置。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4e8fccebcad2029045633d8571c860d49ba7f670
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e72c89a86140cb97e98d60ccda7b26d0276e061c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794474"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59111304"
 ---
 # <a name="androidcompliancepolicy-resource-type"></a>androidCompliancePolicy 资源类型
 
@@ -37,17 +37,17 @@ ms.locfileid: "58794474"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |id|String|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
-|description|String|管理员提供的设备配置的说明。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|说明|String|管理员提供的设备配置的说明。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |passwordRequired|Boolean|需要密码才可解锁设备。|
 |passwordMinimumLength|Int32|最短密码长度。 有效值为 4 至 16|
 |passwordRequiredType|[androidRequiredPasswordType](../resources/intune-deviceconfig-androidrequiredpasswordtype.md)|密码中的字符类型。 可取值为：`deviceDefault`、`alphabetic`、`alphanumeric`、`alphanumericWithSymbols`、`lowSecurityBiometric`、`numeric`、`numericComplex`、`any`。|
-|requiredPasswordComplexity|[androidRequiredPasswordComplexity](../resources/intune-deviceconfig-androidrequiredpasswordcomplexity.md)|指示 Android 上所需的密码复杂性。 其中一个：NONE、LOW、MEDIUM、HIGH。 这是面向 Android 11+的新 API。 可能的值是：`none`、`low`、`medium`、`high`。|
+|requiredPasswordComplexity|[androidRequiredPasswordComplexity](../resources/intune-deviceconfig-androidrequiredpasswordcomplexity.md)|指示 Android 上所需的密码复杂性。 其中一个：NONE、LOW、MEDIUM、HIGH。 这是面向 Android 11+的新 API。 可取值为：`none`、`low`、`medium`、`high`。|
 |passwordMinutesOfInactivityBeforeLock|Int32|在需要密码之前不活动的分钟数。|
 |passwordExpirationDays|Int32|密码过期前的天数。 有效值为 1 至 365|
 |passwordPreviousPasswordBlockCount|Int32|要阻止的以前密码的数量。 有效值为 1 至 24|

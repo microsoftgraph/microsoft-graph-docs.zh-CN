@@ -2,15 +2,15 @@
 title: 列出 windowsAutopilotDeploymentProfilePolicySetItems
 description: 列出 windowsAutopilotDeploymentProfilePolicySetItem 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0dbfebdcda9a64480dcf19d9a3fa9a0d7c2dc335
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f97f9acb01abf3e1778944b31628018db46ef726
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790701"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59132692"
 ---
 # <a name="list-windowsautopilotdeploymentprofilepolicysetitems"></a>列出 windowsAutopilotDeploymentProfilePolicySetItems
 
@@ -43,7 +43,7 @@ GET /deviceAppManagement/policySets/{policySetId}/items
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

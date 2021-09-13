@@ -2,15 +2,15 @@
 title: 创建 deviceManagementResourceAccessProfileAssignment
 description: 创建新的 deviceManagementResourceAccessProfileAssignment 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ffd90cab42c73898167e29c99255713b77877e5b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a7b284e8b38cf4e0c6620fed99046bac77cc962b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58815685"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59107426"
 ---
 # <a name="create-devicemanagementresourceaccessprofileassignment"></a>创建 deviceManagementResourceAccessProfileAssignment
 
@@ -43,7 +43,7 @@ POST /deviceManagement/resourceAccessProfiles/{deviceManagementResourceAccessPro
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,7 +53,7 @@ POST /deviceManagement/resourceAccessProfiles/{deviceManagementResourceAccessPro
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|工作分配的唯一标识符|
+|id|String|工作分配的唯一标识符|
 |intent|[deviceManagementResourceAccessProfileIntent](../resources/intune-rapolicy-devicemanagementresourceaccessprofileintent.md)|资源访问配置文件的分配意图。 可取值为：`apply`、`remove`。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|资源访问配置文件的分配目标。|
 |sourceId|String|工作分配的源的标识符。|

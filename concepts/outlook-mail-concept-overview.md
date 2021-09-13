@@ -2,15 +2,15 @@
 title: Outlook 邮件 API 概述
 description: Outlook 是 Microsoft 365 中的一个信息通信中心。它还可以让你管理联系人、安排会议、查找组织中的用户信息，
 author: angelgolfer-ms
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 8a83a85716dead4a166d9fe52c6d8dc1102d5f949f6c2bd85fd4ea26310f051c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 93563ae4b2e8057bead0abe5fe1a76a51db29285
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54184375"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59071866"
 ---
 # <a name="outlook-mail-api-overview"></a>Outlook 邮件 API 概述
 
@@ -34,11 +34,11 @@ Outlook 是 Microsoft 365 的消息传递通信中心。有了它，你同样能
 
 - Outlook 类别按名称和颜色进行区分。 客户可使用类别标记邮件，以增强组织和发现。 应用可以访问和[定义用户的主类别列表](/graph/api/outlookuser-post-mastercategories)。 此外，该列表可在 Outlook 邮件，以及事件、联系人、任务和组文章中进行共享，为应用开发者开启了创造性的应用场景。 例如，在线培训提供商可以为电子邮件、课程事件设置颜色代码，并跟进用户已注册的各课程的后续作业。
 
-- 此外，应用用户还可更改邮件（或事件或任务）的重要性，或标记邮件以供后续跟进。 （Microsoft Graph 中的标记目前为[预览状态](versioning-and-support.md#beta-version)。）
+- 此外，应用用户可以更改邮件（或事件或任务）的重要性，或标记邮件以供后续操作。（Microsoft Graph 中的标记目前为[预览状态](versioning-and-support.md#beta-version)。）
 
 - 规则 API 将邮件组织提升到了一个新的水平。 应用可以设置[收件箱规则](/graph/api/resources/messagerule)，以尽快处理传入的邮件并减少电子邮件混乱。 例如，如果邮件主题行包含某些关键字，则应用可以自动将邮件移动到另一个文件夹，并分配类别和重要性，使其易于后续跟进。
 
-- 许多客户使用采用 MIME 格式发送和接收邮件的电子邮件客户端。 即使 Outlook 不会以 MIME 格式保存邮件，应用也可以[以 MIME 格式获取 Outlook 邮件正文](outlook-get-mime-message.md)，[以 MIME 格式发送 Outlook 邮件](outlook-send-mime-message.md)，附加 S/MIME 数字签名，并以 S/MIME 加密邮件内容。
+- 许多客户使用采用 MIME 格式发送和接收邮件的电子邮件客户端。即使 Outlook 不会以 MIME 格式保存邮件，应用也可以[以 MIME 格式获取 Outlook 邮件正文](outlook-get-mime-message.md)，[以 MIME 格式发送 Outlook 邮件](outlook-send-mime-message.md)，附加 S/MIME 数字签名，并以 S/MIME 加密邮件内容。
 
 ### <a name="write-smarter-apps-that-leverage-intelligence"></a>编写利用智能的更智能应用
 

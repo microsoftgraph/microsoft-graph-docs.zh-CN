@@ -2,13 +2,13 @@
 title: Microsoft Graph 早期版本的亮点
 description: Microsoft Graph 早期版本中的新增功能
 author: angelgolfer-ms
-localization_priority: Priority
-ms.openlocfilehash: 1a4f37f025beb5f84bb822940d8bbbb8c870caeb
-ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
+ms.localizationpriority: high
+ms.openlocfilehash: 81da196b195056d59efbbb9f53c2e1cbfc630d28
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58384441"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127883"
 ---
 # <a name="highlights-of-earlier-releases"></a>早期版本的亮点
 
@@ -1330,7 +1330,7 @@ Intune [10 月](changelog.md#october-2019)更新
 
 - [附件](/graph/api/resources/attachment?view=graph-rest-1.0&preserve-view=true)
 - [联系人](/graph/api/resources/contact?view=graph-rest-1.0&preserve-view=true)
-- [事件](/graph/api/resources/event?view=graph-rest-1.0&preserve-view=true)
+- [event](/graph/api/resources/event?view=graph-rest-1.0&preserve-view=true)
 - [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-1.0&preserve-view=true)
 - [邮件](/graph/api/resources/message?view=graph-rest-1.0&preserve-view=true)
 - [outlookTask](/graph/api/resources/outlooktask?view=graph-rest-1.0&preserve-view=true)

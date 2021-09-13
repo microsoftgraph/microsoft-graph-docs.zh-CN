@@ -2,15 +2,15 @@
 title: 列出 macOSSoftwareUpdateCategorySummaries
 description: 列出 macOSSoftwareUpdateCategorySummary 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e8d902dfbc8f3c564a42fcf364390e77d7566e5d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d95e69b9d5c504f9f82ab933bd3e9ccca64b9e5e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789142"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59112732"
 ---
 # <a name="list-macossoftwareupdatecategorysummaries"></a>列出 macOSSoftwareUpdateCategorySummaries
 
@@ -43,7 +43,7 @@ GET /deviceManagement/macOSSoftwareUpdateAccountSummaries/{macOSSoftwareUpdateAc
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
