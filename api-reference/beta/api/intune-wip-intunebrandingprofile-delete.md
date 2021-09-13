@@ -2,15 +2,15 @@
 title: 删除 intuneBrandingProfile
 description: 删除 intuneBrandingProfile。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c10c5d85d413aa0a1069d85b98b1d1f32d3e382d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6dd96d0b18b1a1c4553989560fd4a94769b1b7ac
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789718"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59092418"
 ---
 # <a name="delete-intunebrandingprofile"></a>删除 intuneBrandingProfile
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

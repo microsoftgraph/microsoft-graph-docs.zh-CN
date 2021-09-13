@@ -2,15 +2,15 @@
 title: 获取 windowsAutopilotDeploymentProfilePolicySetItem
 description: 读取 windowsAutopilotDeploymentProfilePolicySetItem 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7ab141b1f5ce93afd817fdb059c3e46037c46352
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0af4e86cb3e58a5b8fff54f8c968b7115c977eb0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791282"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59135548"
 ---
 # <a name="get-windowsautopilotdeploymentprofilepolicysetitem"></a>获取 windowsAutopilotDeploymentProfilePolicySetItem
 
@@ -20,7 +20,7 @@ ms.locfileid: "58791282"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-读取 [windowsAutopilotDeploymentProfilePolicySetItem 对象的属性和](../resources/intune-policyset-windowsautopilotdeploymentprofilepolicysetitem.md) 关系。
+读取 [windowsAutopilotDeploymentProfilePolicySetItem](../resources/intune-policyset-windowsautopilotdeploymentprofilepolicysetitem.md) 对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -46,7 +46,7 @@ GET /deviceAppManagement/policySets/{policySetId}/items/{policySetItemId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

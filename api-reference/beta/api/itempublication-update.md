@@ -1,16 +1,16 @@
 ---
 title: 更新 itemPublication
 description: 更新 itemPublication 对象的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: bf715534a5af58136f91b7567fa675d85c174696
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 750be9d2841bb7b9fc60440b1658f55937c0c129
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50770363"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59087441"
 ---
 # <a name="update-itempublication"></a>更新 itemPublication
 
@@ -51,14 +51,14 @@ PATCH /users/{id | userPrincipalName}/profile/publications/{id}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|allowedAudiences|字符串|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|说明    |字符串      |出版物的说明。                   |
-|displayName    |字符串      |出版物的标题。                         |
+|allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
+|说明    |String      |出版物的说明。                   |
+|displayName    |String      |出版物的标题。                         |
 |inference|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断出来的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |publishedDate  |日期        |出版物的发布日期。      |
-|发布者      |String      |出版物或出版物的发布者。     |
+|发布者      |String      |出版物Publisher出版物。     |
 |source|[personDataSource](../resources/persondatasource.md)|如果从另一个服务同步，则值源自何处。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|thumbnailUrl   |字符串      |引用出版物缩略图的 URL。   |
+|thumbnailUrl   |String      |引用出版物缩略图的 URL。   |
 |WebUrl         |String      |引用出版物的 URL。                  |
 
 ## <a name="response"></a>响应

@@ -2,15 +2,15 @@
 title: 列出 groupPolicyPresentationListBoxes
 description: 列出 groupPolicyPresentationListBox 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 104b0c066a1dbc05f89e387fc54f879557f7048d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0d0f01951e6ebb5f9b24b12cd74c1ce3ed79d879
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796696"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59121625"
 ---
 # <a name="list-grouppolicypresentationlistboxes"></a>列出 groupPolicyPresentationListBoxes
 
@@ -43,7 +43,7 @@ GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/def
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

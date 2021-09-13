@@ -2,15 +2,15 @@
 title: userExperienceAnalyticsInsight 资源类型
 description: 用户体验分析见解是改进用户体验分析分数的建议。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7d0d5baaded847858ef91725ff52d8cc1e1d8e02
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5e2dfcc6da42943743043674ce17a5619a59bf1f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794397"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147869"
 ---
 # <a name="userexperienceanalyticsinsight-resource-type"></a>userExperienceAnalyticsInsight 资源类型
 

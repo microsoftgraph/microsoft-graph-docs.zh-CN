@@ -2,15 +2,15 @@
 title: 获取 deviceManagementAutopilotEvent
 description: 读取 deviceManagementAutopilotEvent 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2321ba242ea60d2c1e10b461accd7c669b82f01b
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: e2a427848d0729a267ff1c1fd6a672859f7bc616
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256161"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59132215"
 ---
 # <a name="get-devicemanagementautopilotevent"></a>获取 deviceManagementAutopilotEvent
 

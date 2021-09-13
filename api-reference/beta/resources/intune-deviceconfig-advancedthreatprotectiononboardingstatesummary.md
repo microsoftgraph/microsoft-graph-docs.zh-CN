@@ -2,15 +2,15 @@
 title: advancedThreatProtectionOnboardingStateSummary 资源类型
 description: Windows帐户的 defender 高级威胁防护载入状态摘要。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 411e26ba140a8dfad49230fcfcc9a1a947326bd5
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a1ca587b9ac7a0c886f54260c53329334fa72e27
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820938"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59101791"
 ---
 # <a name="advancedthreatprotectiononboardingstatesummary-resource-type"></a>advancedThreatProtectionOnboardingStateSummary 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58820938"
 Windows帐户的 defender 高级威胁防护载入状态摘要。
 
 ## <a name="methods"></a>方法
-|方法|返回类型|Description|
+|方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 advancedThreatProtectionOnboardingStateSummary](../api/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary-get.md)|[advancedThreatProtectionOnboardingStateSummary](../resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md)|读取 [advancedThreatProtectionOnboardingStateSummary 对象的属性和](../resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md) 关系。|
 |[更新 advancedThreatProtectionOnboardingStateSummary](../api/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary-update.md)|[advancedThreatProtectionOnboardingStateSummary](../resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md)|更新 [advancedThreatProtectionOnboardingStateSummary 对象](../resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md) 的属性。|
@@ -42,7 +42,7 @@ Windows帐户的 defender 高级威胁防护载入状态摘要。
 |notAssignedDeviceCount|Int32|未分配设备的数量|
 
 ## <a name="relationships"></a>关系
-|关系|类型|Description|
+|关系|类型|说明|
 |:---|:---|:---|
 |advancedThreatProtectionOnboardingDeviceSettingStates|[advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md) 集合|尚未记录|
 

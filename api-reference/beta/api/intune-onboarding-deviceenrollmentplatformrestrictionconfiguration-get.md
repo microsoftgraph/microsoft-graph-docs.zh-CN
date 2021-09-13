@@ -2,15 +2,15 @@
 title: 获取 deviceEnrollmentPlatformRestrictionConfiguration
 description: 读取 deviceEnrollmentPlatformRestrictionConfiguration 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: eab00e18445202644b90ee5832fefcc0d6b18d1f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1f24681bc9417738f460e5f87c33076f9c7c74e4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794516"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59116512"
 ---
 # <a name="get-deviceenrollmentplatformrestrictionconfiguration"></a>获取 deviceEnrollmentPlatformRestrictionConfiguration
 
@@ -46,7 +46,7 @@ GET /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurat
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -2,15 +2,15 @@
 title: mobileAppRelationship 资源类型
 description: 描述两个移动应用程序之间的关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0fac38e910e4889759a07d9b38eac2ee116d0904
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6e3a355b2eab4c70349156a921d508f33705c65c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58799822"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59124152"
 ---
 # <a name="mobileapprelationship-resource-type"></a>mobileAppRelationship 资源类型
 
@@ -33,7 +33,7 @@ ms.locfileid: "58799822"
 |:---|:---|:---|
 |id|String|关系实体 ID。|
 |targetId|String|目标移动应用的应用 ID。|
-|targetDisplayName|字符串|目标移动应用显示名称。|
+|targetDisplayName|String|目标移动应用显示名称。|
 |targetDisplayVersion|String|目标移动应用的显示版本。|
 |targetPublisher|String|目标移动应用的发布者。|
 |targetType|[mobileAppRelationshipType](../resources/intune-apps-mobileapprelationshiptype.md)|关系类型，指示目标是父对象还是子级。 可取值为：`child`、`parent`。|

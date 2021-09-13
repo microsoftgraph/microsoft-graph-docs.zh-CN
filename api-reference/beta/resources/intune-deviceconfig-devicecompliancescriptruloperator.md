@@ -2,15 +2,15 @@
 title: deviceComplianceScriptRulOperator 枚举类型
 description: 规则的运算符。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 312e7444fd6e02c84f56e21e8255c0981f50401b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5ecbf0ddab3e16cbcbd59f704ecf442b1f47e871
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58808865"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59101602"
 ---
 # <a name="devicecompliancescriptruloperator-enum-type"></a>deviceComplianceScriptRulOperator 枚举类型
 
@@ -36,7 +36,7 @@ ms.locfileid: "58808865"
 |notBetween|8 |NotBetween 运算符。|
 |greaterEquals|9 |GreaterEquals 运算符。|
 |lessEquals|10 |LessEquals 运算符。|
-|dayTimeBetween|11 |DayTimeBetween 运算符。|
+|dayTimeBetween|11|DayTimeBetween 运算符。|
 |beginsWith|12 |BeginsWith 运算符。|
 |notBeginsWith|13|NotBeginsWith 运算符。|
 |endsWith|14 |EndsWith 运算符。|

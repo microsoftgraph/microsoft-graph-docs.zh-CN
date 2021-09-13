@@ -2,15 +2,15 @@
 title: edgeSearchEngineCustom 资源类型
 description: 允许 IT 管理员为 MDM 控制的设备设置自定义默认搜索引擎。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 62cb2c09694fa93edbfd1b048a4ba7c5843adfda
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b4b6ca276596cbc17eca92b988d8438c6a0b9942
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818545"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59101532"
 ---
 # <a name="edgesearchenginecustom-resource-type"></a>edgeSearchEngineCustom 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "58818545"
 继承自 [edgeSearchEngineBase](../resources/intune-deviceconfig-edgesearchenginebase.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |edgeSearchEngineOpenSearchXmlUrl|String|指向包含 OpenSearch xml 文件的 https 链接，文件中至少包含指向搜索引擎的短名称和 URL。|
 

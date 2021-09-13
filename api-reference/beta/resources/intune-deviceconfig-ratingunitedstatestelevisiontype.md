@@ -2,15 +2,15 @@
 title: ratingUnitedStatesTelevisionType 枚举类型
 description: 美国的电视内容分级标签
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 19c27c836986c403f3af9baf8fa8413d2e1a48d2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 40b27defa73e94f2e90fb771d60a96ea2a1d4d80
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785148"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59106047"
 ---
 # <a name="ratingunitedstatestelevisiontype-enum-type"></a>ratingUnitedStatesTelevisionType 枚举类型
 

@@ -2,15 +2,15 @@
 title: 获取 personResponsibility
 description: 读取 personResponsibility 对象的属性和关系。
 author: kevinbellinger
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 5834635391c979d0cac69ed3628ff25eaf864fd33c2ca4e7c4cc06282e0146c0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bf4a5d9724a56b87ddeaccfb76564838d225ef8c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54133570"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59126224"
 ---
 # <a name="get-personresponsibility"></a>获取 personResponsibility
 命名空间：microsoft.graph
@@ -42,7 +42,7 @@ GET /users/{id | userPrincipalName}/responsibilities/{id}
 
 此方法支持 `$select` 查询参数。 指定要包括在响应中的属性列表，用逗号分隔它们。 为获得最佳性能，请仅选择所需的属性子集。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|

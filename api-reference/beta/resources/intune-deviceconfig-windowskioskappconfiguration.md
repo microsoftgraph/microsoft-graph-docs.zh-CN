@@ -2,15 +2,15 @@
 title: windowsKioskAppConfiguration 资源类型
 description: 用于标识展台配置的应用程序信息的应用基类
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: eb65eb53edb056570c4a5a2edf3199c1178e458d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9cdf0538f9fb19f45c1f7f91910b842e178994a7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58777609"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086664"
 ---
 # <a name="windowskioskappconfiguration-resource-type"></a>windowsKioskAppConfiguration 资源类型
 

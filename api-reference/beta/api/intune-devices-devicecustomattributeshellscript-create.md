@@ -2,15 +2,15 @@
 title: 创建 deviceCustomAttributeShellScript
 description: 创建新的 deviceCustomAttributeShellScript 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d978e752fc8a929817db0c90003a0e6e93fae1ab
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4ef0df071d08314a018289651cac903936c3bb62
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786465"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59116680"
 ---
 # <a name="create-devicecustomattributeshellscript"></a>创建 deviceCustomAttributeShellScript
 
@@ -43,7 +43,7 @@ POST /deviceManagement/deviceCustomAttributeShellScripts
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,11 +53,11 @@ POST /deviceManagement/deviceCustomAttributeShellScripts
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|自定义属性实体的唯一标识符。|
-|customAttributeName|字符串|自定义属性的名称。|
+|id|String|自定义属性实体的唯一标识符。|
+|customAttributeName|String|自定义属性的名称。|
 |customAttributeType|[deviceCustomAttributeValueType](../resources/intune-devices-devicecustomattributevaluetype.md)|自定义属性的值的预期类型。 可取值为：`integer`、`string`、`dateTime`。|
-|displayName|字符串|设备管理脚本的名称。|
-|description|String|设备管理脚本的可选说明。|
+|displayName|String|设备管理脚本的名称。|
+|说明|String|设备管理脚本的可选说明。|
 |scriptContent|二进制|脚本内容。|
 |createdDateTime|DateTimeOffset|创建设备管理脚本的日期和时间。 此属性是只读的。|
 |lastModifiedDateTime|DateTimeOffset|上次修改设备管理脚本的日期和时间。 此属性是只读的。|

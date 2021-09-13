@@ -2,15 +2,15 @@
 title: 删除 managedMobileApp
 description: 删除 managedMobileApp。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f318c897c7f0bccf6278774eee7c5cc3ea50f885
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 521367e9e6f00756a99e47ad245063d78e943082
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801632"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59121289"
 ---
 # <a name="delete-managedmobileapp"></a>删除 managedMobileApp
 
@@ -46,7 +46,7 @@ DELETE /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedApp
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

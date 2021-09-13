@@ -2,15 +2,15 @@
 title: deviceLogCollectionRequest 资源类型
 description: WindowsLog Collection 请求实体。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f23ec777fc2ff2f822210c6940c29b49bbb2a775
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b903c5062d32fb096612029d9a5327e06d0048f5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791485"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59124124"
 ---
 # <a name="devicelogcollectionrequest-resource-type"></a>deviceLogCollectionRequest 资源类型
 

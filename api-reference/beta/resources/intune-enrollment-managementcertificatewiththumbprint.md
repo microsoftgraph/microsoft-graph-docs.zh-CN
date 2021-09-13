@@ -2,15 +2,15 @@
 title: managementCertificateWithThumbprint 资源类型
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 817a3f25b71be2dbacb40e367df7a5bee12f11d1
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 41ea533001a895ac47a2bc9acc1b43f19ae5eba0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785386"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59140960"
 ---
 # <a name="managementcertificatewiththumbprint-resource-type"></a>managementCertificateWithThumbprint 资源类型
 

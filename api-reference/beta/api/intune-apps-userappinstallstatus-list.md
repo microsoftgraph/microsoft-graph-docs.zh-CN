@@ -2,15 +2,15 @@
 title: 列出 userAppInstallStatuses
 description: 列出 userAppInstallStatus 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 999408789913abe6ceb0d21e6ae542971596fb19
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3f573a9061c595d36153f2abda40750b2b2687f6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795085"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59103674"
 ---
 # <a name="list-userappinstallstatuses"></a>列出 userAppInstallStatuses
 
@@ -43,7 +43,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

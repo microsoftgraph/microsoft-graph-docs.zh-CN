@@ -2,15 +2,15 @@
 title: assignmentFilterOperator 枚举类型
 description: 表示可用于创建 AssignmentFilter 规则的不同类型的运算符。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: af400256dec760205260ab93b3c4bb3e311ddc25
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 823f4b19a5e5b1320b7d5e3130190785a26a5f7e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806101"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100951"
 ---
 # <a name="assignmentfilteroperator-enum-type"></a>assignmentFilterOperator 枚举类型
 

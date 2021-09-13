@@ -2,15 +2,15 @@
 title: deviceComplianceScriptValidationResult 资源类型
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 82ca8ed3857f6737a8a264f70a117f726d15b0bd
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 549bebc23eb927879f21fa8ccd6bb4e023f05e89
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820910"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59091746"
 ---
 # <a name="devicecompliancescriptvalidationresult-resource-type"></a>deviceComplianceScriptValidationResult 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58820910"
 尚未记录
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |规则|[deviceComplianceScriptRule](../resources/intune-deviceconfig-devicecompliancescriptrule.md) 集合|从 json 解析的规则。|
 |scriptErrors|[deviceComplianceScriptError](../resources/intune-deviceconfig-devicecompliancescripterror.md) 集合|脚本的 json 错误。|

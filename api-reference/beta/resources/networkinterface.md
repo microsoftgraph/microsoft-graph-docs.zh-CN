@@ -1,16 +1,16 @@
 ---
 title: networkInterface 资源类型
 description: 表示与此主机 (NIC) 网络接口卡。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: 7ba1efe14cfd4bce099960406ae31392c10529ba862c388e379ef234c786d6be
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 914d7f3484762a9b2994fe1eef06d47f4ac09f75
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54224255"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105788"
 ---
 # <a name="networkinterface-resource-type"></a>networkInterface 资源类型
 
@@ -23,9 +23,9 @@ ms.locfileid: "54224255"
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
 |说明|String|NIC (描述，例如以太网适配器、无线 LAN 适配器局域网连接 *<#> 等) 。|
-|ipV4Address|字符串|与此 NIC 关联的最后一个 IPv4 地址。|
-|ipV6Address|字符串|Last Public (aka global) IPv6 address associated with this NIC.|
-|localIpV6Address|String|上次本地 (与此 NIC 关联的链接本地或站点) IPv6 地址。|
+|ipV4Address|String|与此 NIC 关联的最后一个 IPv4 地址。|
+|ipV6Address|String|上次公开 (，也) NIC 关联的 IPv6 地址。|
+|localIpV6Address|String|上次本地 (与此 NIC 关联的 IPv6) 本地或站点本地地址。|
 |macAddress|String|此主机上 NIC 的 MAC 地址。|
 
 ## <a name="json-representation"></a>JSON 表示形式

@@ -2,15 +2,15 @@
 title: 获取 managedAllDeviceCertificateState
 description: 读取 managedAllDeviceCertificateState 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c97f56e25863b1a11e1ce2af749afe450907f737
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3a07f3a439eda7814d42f9703d6b1bc64f7a7f36
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819309"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59135646"
 ---
 # <a name="get-managedalldevicecertificatestate"></a>获取 managedAllDeviceCertificateState
 
@@ -46,7 +46,7 @@ GET /deviceManagement/deviceConfigurationsAllManagedDeviceCertificateStates/{man
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

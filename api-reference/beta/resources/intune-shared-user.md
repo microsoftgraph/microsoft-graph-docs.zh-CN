@@ -2,15 +2,15 @@
 title: 用户资源类型
 description: 表示 Azure Active Directory 用户对象。
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c703474195aa9a3d3b2a84f3b71ffdf47398dd8cd7b319685d0d77f1f6d24f93
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2f6baa00d76571e6c8160015a87c90f09f6d61ec
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54209789"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59115182"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54209789"
 
 表示 Azure Active Directory 用户对象。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 users](../api/intune-shared-user-list.md) 对象。|[user](../resources/intune-shared-user.md) 集合|列出 [user](../resources/intune-shared-user.md) 对象的属性和关系。|
@@ -42,7 +42,7 @@ ms.locfileid: "54209789"
 |[exportDeviceAndAppManagementData 函数](../api/intune-shared-user-exportdeviceandappmanagementdata.md)|[deviceAndAppManagementData](../resources/intune-onboarding-deviceandappmanagementdata.md)|尚未记录|
 |[getEffectiveDeviceEnrollmentConfigurations 函数](../api/intune-shared-user-geteffectivedeviceenrollmentconfigurations.md)|[deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md) 集合|尚未记录|
 |**疑难解答**|
-|[getManagedDevicesWithAppFailures 函数](../api/intune-shared-user-getmanageddeviceswithappfailures.md)|String collection|检索具有失败应用的设备列表。|
+|[getManagedDevicesWithAppFailures 函数](../api/intune-shared-user-getmanageddeviceswithappfailures.md)|字符串集合|检索具有失败应用的设备列表。|
 
 
 ## <a name="properties"></a>属性
@@ -80,7 +80,6 @@ ms.locfileid: "54209789"
   "id": "String (identifier)"
 }
 ```
-
 
 
 

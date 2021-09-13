@@ -2,15 +2,15 @@
 title: 列出 androidManagedAppProtections
 description: 列出 androidManagedAppProtection 对象的属性和关系。
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fe54b2611e9e9a5d1251e8f88d749f3a110d05cf
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1762fc256f8d89189c6ec0a0160a984210e63acf
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816127"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59138636"
 ---
 # <a name="list-androidmanagedappprotections"></a>列出 androidManagedAppProtections
 
@@ -47,7 +47,7 @@ GET /deviceAppManagement/androidManagedAppProtections
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

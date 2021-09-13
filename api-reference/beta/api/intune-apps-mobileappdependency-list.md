@@ -2,15 +2,15 @@
 title: 列出 mobileAppDependencies
 description: 列出 mobileAppDependency 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 15e0db1a58b3986b553c86a0a651c95ec5272aff
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 30407c8c4f47b9d954bd1b7d6126970b3af41079
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58792503"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59125265"
 ---
 # <a name="list-mobileappdependencies"></a>列出 mobileAppDependencies
 
@@ -43,7 +43,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/relationships
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

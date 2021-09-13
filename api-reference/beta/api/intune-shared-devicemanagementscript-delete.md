@@ -2,15 +2,15 @@
 title: 删除 deviceManagementScript
 description: 删除 deviceManagementScript。
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5d1a81cea4f8151858e6e6151d3fb4317aee03fe
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c208fdf9b0e609b57a2d6764084738743e08d7b4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786759"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59096282"
 ---
 # <a name="delete-devicemanagementscript"></a>删除 deviceManagementScript
 
@@ -47,7 +47,7 @@ DELETE /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

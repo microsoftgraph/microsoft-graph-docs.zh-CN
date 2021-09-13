@@ -2,15 +2,15 @@
 title: 列出 policySets
 description: 列出 policySet 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 15435a1aa85af86dbb351133b6c01b35a215512c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b96e47ddc09bbc50c358f4e2179f6b691e3f6ef2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819743"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59107531"
 ---
 # <a name="list-policysets"></a>列出 policySets
 
@@ -43,7 +43,7 @@ GET /deviceAppManagement/policySets
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

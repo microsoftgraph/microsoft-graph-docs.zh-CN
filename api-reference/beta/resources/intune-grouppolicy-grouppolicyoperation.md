@@ -2,15 +2,15 @@
 title: groupPolicyOperation 资源类型
 description: 实体表示组策略操作。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d22fa172cf3052d1fcd1327a52a5cd1d49780c33
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ad6ee2f261c14a4a1ad7548561ac6487d2745223
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58802444"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086097"
 ---
 # <a name="grouppolicyoperation-resource-type"></a>groupPolicyOperation 资源类型
 
@@ -35,7 +35,7 @@ ms.locfileid: "58802444"
 |属性|类型|说明|
 |:---|:---|:---|
 |operationType|[groupPolicyOperationType](../resources/intune-grouppolicy-grouppolicyoperationtype.md)|组策略操作的类型。 可取值为：`none`、`upload`、`uploadNewVersion`、`addLanguageFiles`、`removeLanguageFiles`、`updateLanguageFiles` 或 `remove`。|
-|operationStatus|[groupPolicyOperationStatus](../resources/intune-grouppolicy-grouppolicyoperationstatus.md)|组策略操作状态。 可能的值是：`unknown`、`inProgress`、`success`、`failed`。|
+|operationStatus|[groupPolicyOperationStatus](../resources/intune-grouppolicy-grouppolicyoperationstatus.md)|组策略操作状态。 可取值为：`unknown`、`inProgress`、`success`、`failed`。|
 |statusDetails|String|组策略操作状态详细信息。|
 |id|String|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。|

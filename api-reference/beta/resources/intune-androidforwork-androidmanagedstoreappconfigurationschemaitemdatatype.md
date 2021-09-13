@@ -2,15 +2,15 @@
 title: androidManagedStoreAppConfigurationSchemaItemDataType 枚举类型
 description: Android 应用程序的自定义配置架构中的配置项的数据类型
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c32d43ced47d236c45dc5a0fbae8074013e39e1a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ffae1039f3be92c8a0e5b645ccc795b183658f83
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784259"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136654"
 ---
 # <a name="androidmanagedstoreappconfigurationschemaitemdatatype-enum-type"></a>androidManagedStoreAppConfigurationSchemaItemDataType 枚举类型
 

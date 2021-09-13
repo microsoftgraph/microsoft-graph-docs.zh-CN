@@ -2,15 +2,15 @@
 title: 创建 windowsDriverUpdateInventory
 description: 创建新的 windowsDriverUpdateInventory 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 62ef5afd14750065be3ebbdd883b5a0eb0dac8ef
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ae8ea34598bb8c908de22687707f1db20413b78c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58792135"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59138601"
 ---
 # <a name="create-windowsdriverupdateinventory"></a>创建 windowsDriverUpdateInventory
 
@@ -43,7 +43,7 @@ POST /deviceManagement/windowsDriverUpdateProfiles/{windowsDriverUpdateProfileId
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,13 +54,13 @@ POST /deviceManagement/windowsDriverUpdateProfiles/{windowsDriverUpdateProfileId
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|驱动程序的 ID。|
-|name|字符串|驱动程序的名称。|
+|name|String|驱动程序的名称。|
 |version|String|驱动程序的版本。|
 |manufacturer|String|驱动程序的制造商。|
 |releaseDateTime|DateTimeOffset|驱动程序的发布日期时间。|
 |driverClass|String|驱动程序的类。|
 |applicableDeviceCount|Int32|此驱动程序适用的设备数量。|
-|approvalStatus|[driverApprovalStatus](../resources/intune-softwareupdate-driverapprovalstatus.md)|此驱动程序的审批状态。 可能的值是：`needsReview`、`declined`、`approved`、`suspended`。|
+|approvalStatus|[driverApprovalStatus](../resources/intune-softwareupdate-driverapprovalstatus.md)|此驱动程序的审批状态。 可取值为：`needsReview`、`declined`、`approved`、`suspended`。|
 |“类别”|[driverCategory](../resources/intune-softwareupdate-drivercategory.md)|此驱动程序的类别。 可取值为：`recommended`、`previouslyApproved`、`other`。|
 |deployDateTime|DateTimeOffset|如果 approvalStatus 获得批准，应部署驱动程序的日期时间。|
 

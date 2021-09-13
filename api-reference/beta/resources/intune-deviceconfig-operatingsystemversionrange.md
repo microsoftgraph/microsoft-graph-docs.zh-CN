@@ -2,15 +2,15 @@
 title: operatingSystemVersionRange 资源类型
 description: 操作系统版本范围。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7a57dc5a1c7702cd4e0d2623ac2b0d54571a5d3a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1f9ceb269b541e303c7d240659777c1276a90c07
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58798109"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59101378"
 ---
 # <a name="operatingsystemversionrange-resource-type"></a>operatingSystemVersionRange 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "58798109"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|说明|String|此范围的说明 (例如有效 1702 内部版本) |
+|说明|String|此范围的说明 (例如有效 1702 内部) |
 |lowestVersion|String|此范围包含的最低包含版本。|
 |highestVersion|String|此范围包含的最高包含版本。|
 
