@@ -2,15 +2,15 @@
 title: deviceManagementExchangeAccessStateReason 枚举类型
 description: 设备Exchange访问状态原因。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3c8ae17748009108c299039fde33f9b9d79a9737
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5f6b1dd60e9a8880502bd04e77efc3a0dc53f82b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806213"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59125979"
 ---
 # <a name="devicemanagementexchangeaccessstatereason-enum-type"></a>deviceManagementExchangeAccessStateReason 枚举类型
 
@@ -30,7 +30,7 @@ ms.locfileid: "58806213"
 |exchangeGlobalRule|2|由全局规则Exchange的访问状态|
 |exchangeIndividualRule|3|由单个规则Exchange的访问状态|
 |exchangeDeviceRule|4 |由设备规则Exchange的访问状态|
-|exchangeUpgrade|5 |由于升级而Exchange状态|
+|exchangeUpgrade|5 |由于升级Exchange访问状态|
 |exchangeMailboxPolicy|6 |由邮箱策略Exchange的访问状态|
 |other|7 |由用户确定的访问Exchange|
 |compliant|8 |合规性质询授予的访问状态|

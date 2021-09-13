@@ -2,15 +2,15 @@
 title: 创建 deviceManagementIntent
 description: 创建新的 deviceManagementIntent 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cbc2af6ee43284fc037088c6ef0b0e8219cbfe53
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 290fb01080dfe3a1df6ac5bbc9f7164fbed715bc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58817248"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59124985"
 ---
 # <a name="create-devicemanagementintent"></a>创建 deviceManagementIntent
 
@@ -43,7 +43,7 @@ POST /deviceManagement/intents
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,13 +53,13 @@ POST /deviceManagement/intents
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|意图 ID|
+|id|String|意图 ID|
 |displayName|String|给定用户显示名称|
-|description|字符串|用户给定的说明|
+|说明|String|用户给定的说明|
 |isAssigned|Boolean|表示是否将意图分配给用户|
 |lastModifiedDateTime|DateTimeOffset|上次修改意图时|
 |templateId|String|此意图的模板 ID 是 (（如果有) |
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
+|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。|
 
 
 

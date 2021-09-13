@@ -2,15 +2,15 @@
 title: iosKerberosSingleSignOnExtension 资源类型
 description: 表示适用于 iOS 设备的 Kerberos 类型的单Sign-On扩展配置文件。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: aa3bc204dfe4590d5c9a51d6735f80f40caad219
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8db3aa63bbb4cd9e8a909a92757200efcb86d7da
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803018"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127358"
 ---
 # <a name="ioskerberossinglesignonextension-resource-type"></a>iosKerberosSingleSignOnExtension 资源类型
 
@@ -26,16 +26,16 @@ ms.locfileid: "58803018"
 继承自 [iosSingleSignOnExtension](../resources/intune-deviceconfig-iossinglesignonextension.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |realm|String|获取或设置此配置文件的区分大小写的领域名称。|
-|domains|String collection|获取或设置应用扩展执行 SSO 的主机或域名的列表。|
+|domains|字符串集合|获取或设置应用扩展执行 SSO 的主机或域名的列表。|
 |blockAutomaticLogin|Boolean|启用或禁用钥匙链用法。|
 |cacheName|String|获取或设置要用于此配置文件的 Kerberos 缓存的通用安全服务名称。|
 |credentialBundleIdAccessControlList|字符串集合|获取或设置允许访问 Kerberos 票证授予票证的应用程序包 ID 的列表。|
-|domainRealms|String collection|获取或设置自定义域领域映射的领域列表。 领域区分大小写。|
+|domainRealms|字符串集合|获取或设置自定义域领域映射的领域列表。 领域区分大小写。|
 |isDefaultRealm|Boolean|如果为 true，则此配置文件的领域将选择为默认值。 如果配置了多个 Kerberos 类型的配置文件，则是必需的。|
-|passwordBlockModification|布尔值|启用或禁用密码更改。|
+|passwordBlockModification|Boolean|启用或禁用密码更改。|
 |passwordExpirationDays|Int32|替代默认密码过期天数。 对于大多数域，此值将自动计算。|
 |passwordExpirationNotificationDays|Int32|获取或设置在用户收到密码过期通知之前 (默认值为 15) 。|
 |userPrincipalName|String|获取或设置要用于此配置文件的原则用户名。 无需包括领域名称。|
@@ -46,8 +46,8 @@ ms.locfileid: "58803018"
 |passwordRequirementsDescription|String|获取或设置密码复杂性要求的说明。|
 |requireUserPresence|Boolean|获取或设置是否需要通过触摸 ID、人脸 ID 或密码进行身份验证才能访问钥匙链条目。|
 |activeDirectorySiteCode|String|获取或设置 Active Directory 站点。|
-|passwordEnableLocalSync|布尔值|启用或禁用密码同步。 这不会影响使用 macOS 上的移动帐户登录的用户。|
-|blockActiveDirectorySiteAutoDiscovery|布尔值|启用或禁用 Kerberos 扩展是否可自动确定其站点名称。|
+|passwordEnableLocalSync|Boolean|启用或禁用密码同步。 这不会影响使用 macOS 上的移动帐户登录的用户。|
+|blockActiveDirectorySiteAutoDiscovery|Boolean|启用或禁用 Kerberos 扩展是否可自动确定其站点名称。|
 |passwordChangeUrl|String|获取或设置用户启动密码更改时将发送到的 URL。|
 
 ## <a name="relationships"></a>关系

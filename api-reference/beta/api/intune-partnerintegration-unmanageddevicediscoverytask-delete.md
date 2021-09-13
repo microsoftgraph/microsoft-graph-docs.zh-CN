@@ -2,15 +2,15 @@
 title: 删除 unmanagedDeviceDiscoveryTask
 description: 删除 unmanagedDeviceDiscoveryTask。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 40b9ea93723962b74dcc5f6eb6b03c816bc85567
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9c9fe5e63776b110d73c078cde94b75c36dc8466
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58798509"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59124663"
 ---
 # <a name="delete-unmanageddevicediscoverytask"></a>删除 unmanagedDeviceDiscoveryTask
 
@@ -43,7 +43,7 @@ DELETE /deviceAppManagement/deviceAppManagementTasks/{deviceAppManagementTaskId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -2,22 +2,22 @@
 title: 创建帐户
 description: 创建新的帐户对象。
 author: kevinbellinger
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 308f2a1e4087fcbb07efb08be8fc1e4cba7d819f
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 979cbf81654a20cae80aba601c278867ad7ffc1f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50441006"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59126147"
 ---
 # <a name="create-account"></a>创建帐户
 命名空间：microsoft.graph
 
 在用户配置文件中创建新的 [userAccountInformation](../resources/useraccountinformation.md) [对象](../resources/profile.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -53,13 +53,13 @@ POST /users/{id | userPrincipalName}/profile/account
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
 |countryCode|String|包含与用户帐户关联的两个字符的国家/地区代码。  |
-|推断|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|inference|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断出来的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |preferredLanguageTag|[localeInfo](../resources/localeinfo.md)|包含用户关联为帐户首选的语言。   |
-|source|[personDataSource](../resources/persondatasource.md)|如果从另一个服务同步，则值的来源。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|source|[personDataSource](../resources/persondatasource.md)|如果从另一个服务同步，则值源自何处。 继承自 [itemFacet](../resources/itemfacet.md)。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `201 Created` [userAccountInformation](../resources/useraccountinformation.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应 [代码和 userAccountInformation](../resources/useraccountinformation.md) 对象。
 
 ## <a name="examples"></a>示例
 

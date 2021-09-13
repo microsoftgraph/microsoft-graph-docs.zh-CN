@@ -1,16 +1,16 @@
 ---
 title: extendQualityUpdatesPause 操作
-description: Extend Quality Updates Pause for a Windows Update for Business ring.
+description: 扩展适用于企业更新环Windows质量更新暂停。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5bcef4ce5aecca72bdbdd33496d5f505c370e4c1
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: dca1f878de3211cbbe18eec4c031764a3e984925
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797736"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59125022"
 ---
 # <a name="extendqualityupdatespause-action"></a>extendQualityUpdatesPause 操作
 
@@ -20,7 +20,7 @@ ms.locfileid: "58797736"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-Extend Quality Updates Pause for a Windows Update for Business ring.
+扩展适用于企业更新环Windows质量更新暂停。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -45,7 +45,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

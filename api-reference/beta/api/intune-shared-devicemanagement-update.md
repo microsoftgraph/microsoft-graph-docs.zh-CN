@@ -2,15 +2,15 @@
 title: 更新 deviceManagement
 description: 更新 deviceManagement 对象的属性。
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fbf1d3383abbc69784d166bc144fa9b16e3bf170
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3f2829a759266b4b0254077df78740a3f5394beb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803312"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59132587"
 ---
 # <a name="update-devicemanagement"></a>更新 deviceManagement
 
@@ -45,7 +45,7 @@ ms.locfileid: "58803312"
 | &nbsp; &nbsp; **载入** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp;**策略集** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **基于角色的访问控制 (RBAC)** | DeviceManagementRBAC.ReadWrite.All |
-| &nbsp; &nbsp; **远程访问** | DeviceManagementConfiguration.Read.All |
+| &nbsp;&nbsp;**远程访问** | DeviceManagementConfiguration.Read.All |
 | &nbsp;&nbsp;**远程协助** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **软件更新** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp;**电信费用管理** | DeviceManagementServiceConfig.ReadWrite.All |
@@ -67,7 +67,7 @@ ms.locfileid: "58803312"
 | &nbsp; &nbsp; **载入** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp;**策略集** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **基于角色的访问控制 (RBAC)** | DeviceManagementRBAC.ReadWrite.All |
-| &nbsp; &nbsp; **远程访问** | DeviceManagementConfiguration.Read.All |
+| &nbsp;&nbsp;**远程访问** | DeviceManagementConfiguration.Read.All |
 | &nbsp;&nbsp;**远程协助** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **软件更新** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp;**电信费用管理** | DeviceManagementServiceConfig.ReadWrite.All |
@@ -87,7 +87,7 @@ PATCH /deviceManagement
 
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

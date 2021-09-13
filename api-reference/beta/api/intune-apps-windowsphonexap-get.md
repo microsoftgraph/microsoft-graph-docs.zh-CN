@@ -2,15 +2,15 @@
 title: 获取 windowsPhoneXAP
 description: 读取 windowsPhoneXAP 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0acbdef55f9f23be4147af17fcc3ec757dd04931
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 63ea678b7b41dc73270470ce12ca44cd477454dd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804993"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59137341"
 ---
 # <a name="get-windowsphonexap"></a>获取 windowsPhoneXAP
 
@@ -48,7 +48,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
