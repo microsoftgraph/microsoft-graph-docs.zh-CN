@@ -1,16 +1,16 @@
 ---
 title: authenticationMethod 资源类型
 description: 表示注册到用户的身份验证方法。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 082ae6530ad429df632ba851483a2d3edf16c49778ac22effaaaf01f897be6a0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 92c504bf5cbbec90c11bb51c6d8e19a67e4d7cfb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54160076"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127043"
 ---
 # <a name="authenticationmethod-resource-type"></a>authenticationMethod 资源类型
 

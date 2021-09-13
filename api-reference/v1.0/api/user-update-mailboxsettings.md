@@ -1,16 +1,16 @@
 ---
 title: 获取用户的邮箱设置
 description: 更新用户邮箱的一个或多个设置。这包括自动答复（收到发件人的电子邮件时自动通知发件人）、区域设置（语言和国家/地区）、时区和工作时间的设置。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f703560c561360379df793cc36582b3f141e48d8
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 7c7ce3bd23414159ed82967267d1b37018e6a003
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050204"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067646"
 ---
 # <a name="update-user-mailbox-settings"></a>获取用户的邮箱设置
 
@@ -28,7 +28,7 @@ ms.locfileid: "52050204"
 
 更新用户的首选日期或时间格式时，请分别以短日期 [或短时间](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) 格式 [指定它](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime) 。
 
-更新用户的首选时区时，在 Windows 或 Internet 号码分配机构 ([IANA](https://www.iana.org/time-zones)) 时区 (也称为 Olson 时区) 格式进行指定。 您还可以进一步自定义时区，如下面的示例 [2](#example-2) 所示。
+更新用户的首选时区时，在 Windows 或 Internet 号码分配机构 ([IANA](https://www.iana.org/time-zones)) 时区 (也称为 Olson 时区) 格式中指定它。 您还可以进一步自定义时区，如下面的示例 [2](#example-2) 所示。
 
 > [!TIP]
 > 不能创建或删除任何邮箱设置。
@@ -64,7 +64,7 @@ PATCH /users/{id|userPrincipalName}/mailboxSettings
 |dateFormat|string|用户邮箱的日期格式。|
 |delegateMeetingMessageDeliveryOptions|delegateMeetingMessageDeliveryOptions| 如果用户具有日历代理，则指定代理人、邮箱所有者还是同时接收会议邮件和会议响应。 可取值为：`sendToDelegateAndInformationToPrincipal`、`sendToDelegateAndPrincipal`、`sendToDelegateOnly`。|
 |语言|[localeInfo](../resources/localeinfo.md)|用户的区域设置信息，包括首选语言和国家/地区。|
-|timeFormat|string|用户邮箱的时间格式。|
+|timeFormat|字符串|用户邮箱的时间格式。|
 |timeZone|string|用户邮箱的默认时区。|
 |workingHours|[workingHours](../resources/workinghours.md)|用户工作的小时数、一周的天数和时区。|
 
@@ -231,7 +231,7 @@ Content-Type: application/json
 ---
 
 #### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "name": "update_mailboxsettings_2",

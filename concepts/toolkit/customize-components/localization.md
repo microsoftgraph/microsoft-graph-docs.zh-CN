@@ -1,14 +1,14 @@
 ---
 title: 本地化 Microsoft Graph Toolkit组件
 description: 使用 LocalizationHelper 本地化 Microsoft Graph Toolkit组件。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: vogtn
-ms.openlocfilehash: 0aeb18b5606c761b9e4e853509bd4ef0dc58682259c3bb0522b65047ed40cf7c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f3cba31d7b02370d30e1caa128a671534f9e4cae
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54123889"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129577"
 ---
 # <a name="localizing-the-microsoft-graph-toolkit-components"></a>本地化 Microsoft Graph Toolkit组件
 
@@ -70,7 +70,7 @@ LocalizationHelper.strings = {
 
 分配 的属性后，所有组件将自动选取新字符串并重新呈现，从而允许您动态更改 `strings` `LocalizationHelper` 字符串。 
 
-字符串可以在全局级别设置，也可以按组件设置 (`_components:` 属性设置) 。
+可以在全局级别或每个组件设置字符串 (`_components:` 属性设置) 。
 
 ## <a name="strings"></a>字符串
 

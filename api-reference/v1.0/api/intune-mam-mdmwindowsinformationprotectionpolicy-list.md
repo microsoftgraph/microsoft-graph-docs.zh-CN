@@ -2,15 +2,15 @@
 title: 列出 mdmWindowsInformationProtectionPolicies
 description: 列出 mdmWindowsInformationProtectionPolicy 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0ed98080c23ad81f9f19937572a26bf1abb3c200518178af03a3f5493ca53b1d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b622594a18aefa7ed21419ed139c9759828c3a4a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54233922"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59026509"
 ---
 # <a name="list-mdmwindowsinformationprotectionpolicies"></a>列出 mdmWindowsInformationProtectionPolicies
 

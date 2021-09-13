@@ -1,22 +1,22 @@
 ---
 title: 列出 applicationTemplates
 description: 检索 applicationtemplate 对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: luleonpla
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 7d8a80b6f2cee8726f50cf32a7c5c6efa5e947c6
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 77b83a279bf513877ee3ac18ee6f4ed7efae8a5e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50775139"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59125440"
 ---
 # <a name="list-applicationtemplates"></a>列出 applicationTemplates
 
 命名空间：microsoft.graph
 
-从 Azure AD 应用程序库中检索 [applicationTemplate](../resources/applicationtemplate.md) 对象的列表。
+从 Azure AD [应用程序库中检索 applicationTemplate](../resources/applicationtemplate.md) 对象的列表。
 
 ## <a name="permissions"></a>权限
 
@@ -42,7 +42,7 @@ GET /applicationTemplates
 
 此方法支持一些 OData 查询参数来帮助自定义响应。
 
-- 可以有限 `$filter` 的方式使用 参数。 只能按 **displayName 或 categories** **进行筛选**。 例如， `$filter=contains(displayName, 'salesf')` `$filter=categories/any(c:contains(c, 'myCategory'))` 或 。
+- 可以有限 `$filter` 的方式使用 参数。 只能按 **displayName** 或 categories **进行筛选**。 例如， `$filter=contains(displayName, 'salesf')` `$filter=categories/any(c:contains(c, 'myCategory'))` 或 。
 - 可以在任何 `$orderby` `$top,` GET 请求 `$skip` 中使用 和 查询参数。
 
 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。

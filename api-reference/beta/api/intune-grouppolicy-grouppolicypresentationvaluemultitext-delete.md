@@ -2,15 +2,15 @@
 title: 删除 groupPolicyPresentationValueMultiText
 description: 删除 groupPolicyPresentationValueMultiText。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 563e18fa8d8b5311d040698c838302a9c37760a9
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8a4aa6af37a9cd5d110230a01a50f25fd993e88a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794530"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59024373"
 ---
 # <a name="delete-grouppolicypresentationvaluemultitext"></a>删除 groupPolicyPresentationValueMultiText
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

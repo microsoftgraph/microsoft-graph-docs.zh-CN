@@ -2,15 +2,15 @@
 title: 获取 reportRoot
 description: 读取 reportRoot 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 675c94590985913bdabef179e7c808739295d3ac
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: aebf1293208216e35f94d803551bd97c9db173a3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58263105"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59079377"
 ---
 # <a name="get-reportroot"></a>获取 reportRoot
 

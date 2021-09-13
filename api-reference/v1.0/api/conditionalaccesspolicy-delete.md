@@ -1,16 +1,16 @@
 ---
 title: 删除 conditionalAccessPolicy
 description: 删除 conditionalAccessPolicy。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d08e279ad3203b8161f7387054e01e421d4b5357
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 543de09b3a275fafbead420bbd09e3447fed4751
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434753"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016685"
 ---
 # <a name="delete-conditionalaccesspolicy"></a>删除 conditionalAccessPolicy
 

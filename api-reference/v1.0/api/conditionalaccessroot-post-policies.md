@@ -1,16 +1,16 @@
 ---
 title: 创建 conditionalAccessPolicy
 description: 创建新的 conditionalAccessPolicy。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 60ffa83de871400c49aff07f8508d562e786c73c
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: ea92dc2a045195ad87f79175eba4d82e38fadd41
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50964032"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147827"
 ---
 # <a name="create-conditionalaccesspolicy"></a>创建 conditionalAccessPolicy
 
@@ -45,7 +45,7 @@ POST /identity/conditionalAccess/policies
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [conditionalAccessPolicy 对象的](../resources/conditionalaccesspolicy.md) JSON 表示形式。
+在请求正文中，提供 [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) 对象的 JSON 表示形式。
 
 有效的策略应至少包含以下项之一：
 
@@ -59,10 +59,10 @@ POST /identity/conditionalAccess/policies
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-require-mfa-to-access-exchange-online-outside-of-trusted-locations"></a>示例 1：要求 MFA 访问受信任位置之外的 Exchange Online
+### <a name="example-1-require-mfa-to-access-exchange-online-outside-of-trusted-locations"></a>示例 1：要求 MFA Exchange Online受信任位置外部的域
 
 #### <a name="request"></a>请求
-以下示例显示一个常见请求，要求多重身份验证以从特定组的受信任位置之外的新式身份验证客户端访问 Exchange Online。
+以下示例显示一个要求多重身份验证以从新式身份验证客户端访问 Exchange Online位置之外的特定组的常见请求。
 
 >**注意：** 在使用此操作之前，必须设置受信任位置。
 
@@ -196,10 +196,10 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-block-access-to-exchange-online-from-non-trusted-regions"></a>示例 2：阻止从非受信任区域访问 Exchange Online
+### <a name="example-2-block-access-to-exchange-online-from-non-trusted-regions"></a>示例 2：阻止Exchange Online来自非受信任区域的访问权限
 
 #### <a name="request"></a>请求
-以下示例显示阻止从非受信任/未知区域访问 Exchange Online 的请求。
+以下示例显示一个阻止访问来自非Exchange Online/未知区域的请求。
 此示例假定 id 为 198ad66e-87b3-4157-85a3-8a7b51794ee9 的命名位置对应于不受信任的/未知区域的列表。
 
 
@@ -569,10 +569,10 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-require-mfa-to-exchange-online-from-non-compliant-devices"></a>示例 4：要求从不兼容的设备向 Exchange Online 进行 MFA
+### <a name="example-4-require-mfa-to-exchange-online-from-non-compliant-devices"></a>示例 4：要求 MFA Exchange Online不兼容的设备进行连接
 
 #### <a name="request"></a>请求
-以下示例显示要求从不兼容设备向 Exchange Online 进行 MFA 的请求。
+以下示例显示要求 MFA 从Exchange Online设备进行连接的请求。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

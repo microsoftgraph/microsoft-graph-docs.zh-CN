@@ -2,15 +2,15 @@
 title: variableManagementConditionExpression 资源类型
 description: 以布尔表达式形式计算管理条件状态。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 417908e82257bb823d8d4e93d0c96cb846c5e5ed
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 46ee87a0c988f5fa651de190928c308135967cf3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58782936"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59026866"
 ---
 # <a name="variablemanagementconditionexpression-resource-type"></a>variableManagementConditionExpression 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "58782936"
 继承自 [managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |managementConditionId|String|用于计算表达式的管理条件 ID。|
 

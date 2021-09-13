@@ -2,15 +2,15 @@
 title: requestRemoteAssistance 操作
 description: 请求远程协助
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0e5eeb92f4e53cf955b244272a75e78d72b33855
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 2a7cffd33111407e7bbfe2dfeb61dc5425bf4da5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256607"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59026502"
 ---
 # <a name="requestremoteassistance-action"></a>requestRemoteAssistance 操作
 

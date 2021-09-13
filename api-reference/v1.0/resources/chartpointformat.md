@@ -2,15 +2,15 @@
 title: ChartPointFormat 资源类型
 description: 表示图表点的格式化对象。
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 330880d00e12dc7f42128be80f02855a382ebe407478e3d24a88e823ef26137c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f7ed3dc7fab84afb91bbcfc7a2a8b17a38d3d42f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249319"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036758"
 ---
 # <a name="chartpointformat-resource-type"></a>ChartPointFormat 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "54249319"
 
 
 ## <a name="methods"></a>方法
-无
+None
 
 ## <a name="properties"></a>属性
 无

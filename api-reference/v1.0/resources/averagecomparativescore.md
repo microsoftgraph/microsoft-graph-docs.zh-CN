@@ -1,22 +1,22 @@
 ---
 title: averageComparativeScore 资源类型
 description: 包含基于不同范围的各种不同分数。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 2041a366fcf37ff8a850fb8d6fd41e9c3fd6002a17916d41718588674a30a3e6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: eb78b045105725d8151d229525396fd205cd427f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54147019"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59089849"
 ---
 #  <a name="averagecomparativescore-resource-type"></a>averageComparativeScore 资源类型
 
 命名空间：microsoft.graph
 
-包含基于不同范围的不同分数 (例如，按行业垂直平均、按公司席位大小等进行平均分数) 控制类别 (标识、数据、设备、应用、基础结构) 。
+包含基于不同范围的不同的分数 (例如，按行业垂直的平均值、按公司席位大小等的平均值) 和控制类别 (Identity、Data、Device、Apps、Infrastructure) 。
 
 ## <a name="properties"></a>属性
 

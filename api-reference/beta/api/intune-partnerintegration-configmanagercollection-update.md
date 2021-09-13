@@ -2,15 +2,15 @@
 title: 更新 configManagerCollection
 description: 更新 configManagerCollection 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 903d52c0263cddb4af4f77c13da97e605124c1af
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c2548939ccc304c1fbdb76030ad124cfa056be51
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783034"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017876"
 ---
 # <a name="update-configmanagercollection"></a>更新 configManagerCollection
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/configManagerCollections/{configManagerCollectionId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,10 +54,10 @@ PATCH /deviceManagement/configManagerCollections/{configManagerCollectionId}
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|ConfigManager 集合的键。|
-|displayName|字符串|DisplayName。|
-|collectionIdentifier|字符串|SCCM 中的集合标识符。|
+|displayName|String|DisplayName。|
+|collectionIdentifier|String|SCCM 中的集合标识符。|
 |hierarchyName|String|HierarchyName。|
-|hierarchyIdentifier|字符串|层次结构标识符。|
+|hierarchyIdentifier|String|层次结构标识符。|
 |createdDateTime|DateTimeOffset|创建日期。|
 |lastModifiedDateTime|DateTimeOffset|上次修改日期。|
 

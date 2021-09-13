@@ -2,15 +2,15 @@
 title: importDeviceIdentityList 操作
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 84ff1d93450e52874dff5cc1150dce3bd6c374bb
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f06e42fc6fdc9b9c789c96fa5a16c3e9fb638ca5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58782754"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020656"
 ---
 # <a name="importdeviceidentitylist-action"></a>importDeviceIdentityList 操作
 
@@ -43,7 +43,7 @@ POST /deviceManagement/importedDeviceIdentities/importDeviceIdentityList
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,7 +51,7 @@ POST /deviceManagement/importedDeviceIdentities/importDeviceIdentityList
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |importedDeviceIdentities|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) 集合|尚未记录|
 |overwriteImportedDeviceIdentities|Boolean|尚未记录|

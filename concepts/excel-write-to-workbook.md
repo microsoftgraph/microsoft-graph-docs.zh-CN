@@ -1,15 +1,15 @@
 ---
 title: 使用 Microsoft Graph 将数据写入 Excel 工作簿
 description: q=excelstarter)。
-localization_priority: Priority
+ms.localizationpriority: high
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 60f9b32cc6f769b309d64d5661781840b878e36605e63757f04b9538f170a428
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c47ba15a22d4ad15ef0b64a9ac5805304f53c4e5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54134810"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143558"
 ---
 # <a name="write-data-to-an-excel-workbook-with-microsoft-graph"></a>使用 Microsoft Graph 将数据写入 Excel 工作簿
 

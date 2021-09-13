@@ -2,15 +2,15 @@
 title: 创建集
 description: 创建新的 set 对象。
 author: vishriv
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: apiPageType
-ms.openlocfilehash: afe4208ecd516b8be3e273719f94417659ce425e
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 980a6b37cf6e315a8fcb482c6c06080c8eaf595c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58513869"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109729"
 ---
 # <a name="create-set"></a>创建集
 命名空间：microsoft.graph.termStore
@@ -57,7 +57,7 @@ POST sites/{site-id}/termStore/sets
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [microsoft.graph.termStore.set](../resources/termstore-set.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [microsoft.graph.termStore.set](../resources/termstore-set.md) 对象。
 
 ## <a name="examples"></a>示例
 

@@ -1,16 +1,16 @@
 ---
 title: 删除附件
 description: 从日历事件、电子邮件或组帖子中删除附件。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: db7f6282644443d459bba1655ecd01bce1955382
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: f2cc17127e12a516efbd635521d8857555d92d58
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434928"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59068368"
 ---
 # <a name="delete-attachment"></a>删除附件
 
@@ -19,7 +19,7 @@ ms.locfileid: "50434928"
 从用户日历事件、邮件或组帖子中删除附件。
 ## <a name="permissions"></a>权限
 
-根据 **附件附加到的资源** (事件、邮件 **、outlookTask** 或帖子 **)** 以及请求的权限类型 (委派或应用程序) ，下表中指定的权限是调用此 API 所需的最小特权。 若要了解详细信息，包括在选择更多特权之前的[注意事项](/graph/auth/auth-concepts#best-practices-for-requesting-permissions)，请在“[权限](/graph/permissions-reference)”中搜索以下权限。
+根据附件附加到的资源 (**事件**、邮件 **、outlookTask** 或 post **)** 以及请求的权限类型 (委派或应用程序) ，下表中指定的权限是调用此 API 所需的最低权限。 若要了解其他信息， [在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 特权权限之前要特别小心，在"权限" [中搜索](/graph/permissions-reference)。
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
@@ -43,7 +43,7 @@ DELETE /me/calendar/events/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/calendar/events/{id}/attachments/{id}
 ```
 
-属于用户的[指定](../resources/event.md)[日历](../resources/calendar.md)中事件的附件。
+属于[用户的指定](../resources/event.md)[日历](../resources/calendar.md)中的事件的附件。
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/calendars/{id}/events/{id}/attachments/{id}

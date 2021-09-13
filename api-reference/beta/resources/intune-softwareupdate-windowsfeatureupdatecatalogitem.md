@@ -2,15 +2,15 @@
 title: windowsFeatureUpdateCatalogItem 资源类型
 description: Windows目录项实体
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 622e13c4e370c615732a29b15f4b028d14e3ee29
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4e65e6271866e6e1a7b8b8b8b284462a56a11e64
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797203"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020250"
 ---
 # <a name="windowsfeatureupdatecatalogitem-resource-type"></a>windowsFeatureUpdateCatalogItem 资源类型
 

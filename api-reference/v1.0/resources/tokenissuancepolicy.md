@@ -1,16 +1,16 @@
 ---
 title: tokenIssuancePolicy 资源类型
 description: 表示用于指定 Azure AD 颁发的 SAML 令牌特征的策略。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: luleonpla
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 93a21caa135ec38e87b3194e99440421e897b67955a6b34fec46641d5b841ce4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9fe2a87e0b56a54ef198152cd7f7e37941a8b572
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54134915"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143669"
 ---
 # <a name="tokenissuancepolicy-resource-type"></a>tokenIssuancePolicy 资源类型
 
@@ -35,7 +35,7 @@ ms.locfileid: "54134915"
 | [获取 tokenIssuancePolicy](../api/tokenissuancepolicy-get.md) | [tokenIssuancePolicy](tokenissuancepolicy.md) | 读取 tokenIssuancePolicy 对象的属性和关系。 |
 | [更新 tokenIssuancePolicy](../api/tokenissuancepolicy-update.md) | 无 | 更新 tokenIssuancePolicy 对象。 |
 | [删除 tokenIssuancePolicy](../api/tokenissuancepolicy-delete.md) | 无 | 删除 tokenIssuancePolicy 对象。 |
-| [List appliesTo](../api/tokenissuancepolicy-list-appliesto.md) | [directoryObject](directoryobject.md) collection | 获取已应用此策略的 directoryObjects 列表。 |
+| [List appliesTo](../api/tokenissuancepolicy-list-appliesto.md) | [directoryObject](directoryobject.md) 集合 | 获取已应用此策略的 directoryObjects 列表。 |
 
 ## <a name="properties"></a>属性
 
@@ -44,7 +44,7 @@ ms.locfileid: "54134915"
 |id|String| 此策略的唯一标识符。 只读。|
 |definition|String collection| 包含 JSON 字符串的字符串集合，用于定义此策略的规则和设置。 有关此属性的 JSON 架构的更多详细信息，请参阅下文。 必需。|
 |description|String| 此策略的说明。|
-|displayName|String| 此策略的显示名称。 必填。|
+|displayName|String| 此策略的显示名称。 必需。|
 |isOrganizationDefault|Boolean|忽略此属性。 令牌颁发策略只能应用于服务主体，并且不能为组织全局设置。|
 
 
@@ -73,7 +73,7 @@ ms.locfileid: "54134915"
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|appliesTo|[directoryObject](directoryobject.md) collection| 已应用此策略的 [directoryObject](directoryObject.md) 集合。 只读。|
+|appliesTo|[directoryObject](directoryobject.md) 集合| 已应用此策略的 [directoryObject](directoryObject.md) 集合。 只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

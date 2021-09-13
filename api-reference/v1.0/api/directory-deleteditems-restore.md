@@ -2,15 +2,15 @@
 title: 恢复已删除的项目
 description: '从已删除的项目中还原最近删除的项目。 '
 author: keylimesoda
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: e1236f50cb637648aa81a64584a60870135a102e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 016ed313ac225c28f187e7f713de71fea51140d4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053186"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022805"
 ---
 # <a name="restore-deleted-item"></a>恢复已删除的项目
 

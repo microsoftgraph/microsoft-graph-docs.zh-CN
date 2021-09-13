@@ -1,16 +1,16 @@
 ---
 title: searchResponse 资源类型
 description: searchResponse 的说明
-localization_priority: Normal
+ms.localizationpriority: medium
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: e071126b95cf0f82143c22f4523adcad640cb7df66718858a722e9f120177edc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e3efe104e00538900ad6bcbe844b7b9d567403ee
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54246561"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59126714"
 ---
 # <a name="searchresponse-resource-type"></a>searchResponse 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "54246561"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |hitsContainers|[searchHitsContainer](searchhitscontainer.md) 集合|搜索结果的集合。|
-|searchTerms|String collection|包含初始搜索查询中发送的搜索词。|
+|searchTerms|字符串集合|包含初始搜索查询中发送的搜索词。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -2,15 +2,15 @@
 title: updateGlobalScript 操作
 description: 更新专有设备运行状况脚本
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2f1239733a00b80f6df369270d57488579da2a50
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a9cab2f9db027fc589a6e04c43932a4ef146d6cb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793145"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59027993"
 ---
 # <a name="updateglobalscript-action"></a>updateGlobalScript 操作
 
@@ -43,7 +43,7 @@ POST /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/updateGlobalSc
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,7 +51,7 @@ POST /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/updateGlobalSc
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |version|String|尚未记录|
 

@@ -1,16 +1,16 @@
 ---
 title: 创建 ContactFolder
 description: 在用户的默认联系人文件夹下创建新的 contactFolder。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 45f0e9a667747b522f2a3a8831ae9b3b684ad41c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 565f0a61749f381e836fef0d2503e14a70c72b73
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52031514"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59099194"
 ---
 # <a name="create-contactfolder"></a>创建 ContactFolder
 
@@ -87,7 +87,7 @@ Content-type: application/json
 
 在请求正文中，提供 [contactFolder](../resources/contactfolder.md) 对象的 JSON 表示形式。
 ### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

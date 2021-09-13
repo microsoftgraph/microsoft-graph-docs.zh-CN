@@ -2,15 +2,15 @@
 title: 获取 ChartFont
 description: 检索 chartfont 对象的属性和关系。
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 4af4903612e08274f6bbcc326de5695509a69610
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 7164bc6eb6749f89152eb02fda8f582e9e049abb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052479"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59144187"
 ---
 # <a name="get-chartfont"></a>获取 ChartFont
 
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

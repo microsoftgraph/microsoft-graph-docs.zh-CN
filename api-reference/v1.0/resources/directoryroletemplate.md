@@ -1,16 +1,16 @@
 ---
 title: directoryRoleTemplate 资源类型
 description: 表示目录角色模板。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: feffbf6c0771d367b7d5c96aba849684bfed9507ecfc6166580a749cb6009257
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 216b149be66a252e3c10163cd48cd2451c037d22
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54231850"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59089750"
 ---
 # <a name="directoryroletemplate-resource-type"></a>directoryRoleTemplate 资源类型
 

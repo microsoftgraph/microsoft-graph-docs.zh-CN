@@ -2,15 +2,15 @@
 title: deviceManagementExchangeConnector 资源类型
 description: 表示与 Exchange 环境的连接的实体。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b165f0e5d92030480f631a41d4e819cbae505174d0948197aac8039ce940a443
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 88a0351a6ffb0c5566e9ed44be19d3c701645178
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54205245"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59089429"
 ---
 # <a name="devicemanagementexchangeconnector-resource-type"></a>deviceManagementExchangeConnector 资源类型
 

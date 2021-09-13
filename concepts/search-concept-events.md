@@ -2,14 +2,14 @@
 title: 使用 Microsoft Microsoft 搜索中的 Graph API 搜索日历事件
 description: 您可以在用户自己的日历中搜索。
 author: knightsu
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: 277c46e6298aa532d300b23fcba707c678e38e035007d2ef63fa249951afa633
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: de2e5ed0ccb015ae6566acf04664ed1885c61924
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54171971"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094001"
 ---
 # <a name="use-the-microsoft-search-api-to-search-calendar-events"></a>使用 Microsoft 搜索 API 搜索日历事件
 

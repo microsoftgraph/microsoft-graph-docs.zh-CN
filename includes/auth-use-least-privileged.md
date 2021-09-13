@@ -1,13 +1,13 @@
 ---
 author: jackson-woods
-localization_priority: Priority
+ms.localizationpriority: high
 ms.topic: include
-ms.openlocfilehash: b7b01dc5effd29fb01297094c9945dc10e890fd98f5b97f3cdc226fb4331116a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0bcbc6184e1f860a1e75a269e70a297ff5658dc8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54169220"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59078574"
 ---
 <!-- markdownlint-disable MD041-->
 

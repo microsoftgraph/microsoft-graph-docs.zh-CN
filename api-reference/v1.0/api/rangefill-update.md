@@ -2,15 +2,15 @@
 title: 更新 rangefill
 description: 更新 rangefill 对象的属性。
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 5184a13a8f5faebad37ca59841ec68c5d45a3907
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 5e674ce7f218abb02bae6c101f798bbce012f2f2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787603"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59113979"
 ---
 # <a name="update-rangefill"></a>更新 rangefill
 

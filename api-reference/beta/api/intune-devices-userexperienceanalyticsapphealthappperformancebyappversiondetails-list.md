@@ -2,15 +2,15 @@
 title: 列出 userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetailses
 description: 列出 userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4aa3b410d1c0a6a82fea96561249b566f1999b0c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 424f5da5b4b35172ac9ee94e9c0a12ac9c85ad92
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58780360"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59027720"
 ---
 # <a name="list-userexperienceanalyticsapphealthappperformancebyappversiondetailses"></a>列出 userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetailses
 
@@ -43,7 +43,7 @@ GET /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformanceByAp
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

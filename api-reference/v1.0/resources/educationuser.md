@@ -2,15 +2,15 @@
 title: educationUser 资源类型
 description: 系统中的用户。 这是特定于教育的用户变体，具有 Microsoft Graph 将从非特定于教育的 `/users` 终结点返回的相同 `id`。
 author: mlafleur
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 51693581e9af42aaae6c4e3f3961e0751818fa18522c53b7f4cef72afb4a14d9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 17fc8443bf6fb9a038465e78072637965ac8ec94
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54124491"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118630"
 ---
 # <a name="educationuser-resource-type"></a>educationUser 资源类型
 
@@ -41,7 +41,7 @@ ms.locfileid: "54124491"
 | assignedPlans        | [assignedPlan](../resources/assignedplan.md) collection            | 分配给该用户的计划。只读。不可为 null。                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | businessPhones       | String collection                                                  | 用户的电话号码。 **注意：** 虽然这是字符串集合，但是只能为该属性设置一个号码。                                                                                                                                                                                                                                                                                                                                                                                                |
 | createdBy            | [identitySet](../resources/identityset.md)                         | 创建了用户的实体。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| department           | String                                                             | 用户工作部门的名称。 支持 `$filter`。                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| 部门           | String                                                             | 用户工作部门的名称。 支持 `$filter`。                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | displayName          | String                                                             | 用户通讯簿中显示的名称。 这通常是用户名字、中间名首字母和姓氏的组合。 此属性在创建用户时是必需的，并且在更新过程中不能清除。 支持 `$filter` 和 `$orderby`。                                                                                                                                                                                                                                                           |
 | externalSource       | educationExternalSource                                            | 创建此用户的位置。 可取值为：`sis`、`manual`。                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | externalSourceDetail | String                                                             | 生成此资源的外部源的名称。                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
@@ -77,7 +77,7 @@ ms.locfileid: "54124491"
 | classes       | [educationClass](../resources/educationclass.md) 集合   | 用户所属的课程。 可为 NULL。   |
 | schools       | [educationSchool](../resources/educationschool.md) 集合 | 用户所属的学校。 可为 NULL。   |
 | 将classes | [educationClass](../resources/educationclass.md) 集合   | 用户是教师的课程。       |
-| 用户          | [user](../resources/user.md)                                  | 与此用户对应的目录用户。 |
+| 用户          | [用户](../resources/user.md)                                  | 与此用户对应的目录用户。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

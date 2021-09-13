@@ -2,15 +2,15 @@
 title: 创建 windows81CompliancePolicy
 description: 创建新的 windows81CompliancePolicy 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3c1c3ea842f45c325d3ce959dc175aa6cb829ad90dae5f70d2511e56d8cf5cbf
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7519da556c53b938fad79d07ae6412ac5c99642a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54243970"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147288"
 ---
 # <a name="create-windows81compliancepolicy"></a>创建 windows81CompliancePolicy
 

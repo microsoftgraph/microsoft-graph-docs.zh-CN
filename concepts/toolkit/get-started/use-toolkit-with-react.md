@@ -1,20 +1,20 @@
 ---
 title: 将 Microsoft Graph Toolkit与 React
 description: 在应用程序应用程序中Graph Toolkit Microsoft React入门。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: waldekmastykarz
-ms.openlocfilehash: d7bf063a869e756554fa280406dfee3b5a569607f39bdd1763e15086dd2f29b2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 464542cc85b9baab8c13a68a788d28d557effcde
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54132950"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59089228"
 ---
 # <a name="use-the-microsoft-graph-toolkit-with-react"></a>将 Microsoft Graph Toolkit与 React
 
-Microsoft Graph Toolkit 是一组 Web 组件，可简化连接到 Microsoft Graph并让你专注于应用程序。 Microsoft Graph Toolkit作为一组通过 npm 包分发的常规 `@microsoft/mgt` Web 组件提供。
+Microsoft Graph Toolkit 是一组 Web 组件，可简化连接到 Microsoft Graph并让你专注于应用程序。 Microsoft Graph Toolkit作为通过 npm 包分发的一组通用 `@microsoft/mgt` Web 组件提供。
 
-如果你使用 React 生成应用，可以使用 包 ，它将 Microsoft [ `@microsoft/mgt-react` ](./mgt-react.md)Graph Toolkit Web 组件包装在 React 组件中，并更轻松地传递复杂数据。
+如果你使用 React 生成应用，可以使用包 ，它将 Microsoft [ `@microsoft/mgt-react` ](./mgt-react.md)Graph Toolkit Web 组件包装在 React 组件中，并更轻松地传递复杂数据。
 
 本文介绍使用 Microsoft Graph Toolkit创建应用并React应用并连接到Microsoft 365。 完成这些步骤后，你将拥有一个React应用，该应用显示当前登录用户即将从 Microsoft 365。
 
@@ -23,11 +23,11 @@ Microsoft Graph Toolkit 是一组 Web 组件，可简化连接到 Microsoft Grap
 
 ## <a name="prerequisites"></a>先决条件
 
-若要按照本文中的步骤操作，你需要一个Microsoft 365和一些工具。 有关详细信息，请参阅 [入门](./overview.md)。
+若要按照本文中的步骤操作，您需要一个Microsoft 365和一些工具。 有关详细信息，请参阅 [入门](./overview.md)。
 
 ## <a name="create-a-react-app"></a>创建React应用
 
-通过运行React创建新的应用程序应用程序。 这将使用 TypeScript React一个新的应用，这将帮助你编写更可靠的代码并避免运行时错误。
+通过运行React创建新的应用程序应用程序。 这将使用 TypeScript React一个新的应用程序，这将帮助您编写更可靠的代码并避免运行时错误。
 
 ```Command Line
 npx create-react-app my-m365-app --template typescript --use-npm
@@ -45,7 +45,7 @@ cd my-m365-app
 npm i @microsoft/mgt-react
 ```
 
-同时安装 `mgt-msal2-provider` `mgt-element` 和 npm 包，其中包含 MSAL 2.0 身份验证提供程序。
+同时安装 `mgt-msal2-provider` `mgt-element` 和 npm 包，其中包含 MSAL2 身份验证提供程序。
 
 ```Command Line
 npm i @microsoft/mgt-element @microsoft/mgt-msal2-provider
@@ -76,7 +76,7 @@ npm start
 接下来，配置 Microsoft Graph Toolkit使用的身份验证提供程序。 在这种情况下，你将使用 MSAL，这是生成独立应用程序的好默认值。 如果使用扩展点中的任意扩展点Microsoft 365，Teams或SharePoint[提供程序。](../providers/providers.md)
 
 >[!NOTE] 
->如果当前正在使用 MSAL 提供程序，并且要更新到 MSAL 2 提供程序，请按照 [MSAL 2](../providers/msal2.md#migrating-from-msal-provider-to-msal-2-provider) 提供程序文章中的步骤操作。
+>如果当前使用的是 MSAL 提供程序，并且要更新到 MSAL2 提供程序，请按照 [MSAL2 提供程序文章中的步骤](../providers/msal2.md#migrating-from-msal-provider-to-msal2-provider) 操作。
 
 1. 在代码编辑器中，打开 **"src/index"。** 文件，并添加到导入列表，添加：
 
@@ -85,7 +85,7 @@ npm start
     import { Msal2Provider } from '@microsoft/mgt-msal2-provider';
     ```
 
-1. 最后一 `import` 个语句之后，使用 MSAL Graph Toolkit Microsoft 应用程序。
+1. 最后一 `import` 个语句之后，使用 MSAL Graph Toolkit初始化 Microsoft 应用程序。
 
     ```TypeScript
     Providers.globalProvider = new Msal2Provider({
@@ -126,7 +126,7 @@ npm start
 
 ### <a name="add-the-sign-in-button"></a>添加"登录"按钮
 
-添加 **登录** Microsoft Graph Toolkit React组件，该组件将显示"登录"按钮，用户可以使用它的 Microsoft 帐户登录你的应用。
+添加 **"** 登录 Microsoft Graph Toolkit React"组件，该组件将显示"登录"按钮，用户可以使用它的 Microsoft 帐户登录你的应用。
 
 1. 在代码编辑器中，打开 **src/App.tsx** 文件，并添加到导入列表添加：
 
@@ -168,10 +168,10 @@ export default App;
 
 你现在应该能够使用 Microsoft 帐户登录应用程序。
 
-1. 返回到运行应用React浏览器。 现在应该会看到" **登录"** 按钮。
+1. 返回到运行你的应用的React浏览器。 现在应该会看到" **登录"** 按钮。
 1. 单击" **登录** "按钮时，系统将提示你使用 Microsoft 帐户登录 (可以使用与使用) 访问 Azure 门户的帐户相同的帐户。
 1. 因为这是你第一次使用此 Azure AD 应用程序，你需要同意在组织中使用它。
-1. 登录后，你将被重定向到你的React应用。 请注意 **，"登录**"按钮已更改，显示用户的名称React显示使用 Microsoft Microsoft 365 检索到的用户 ![ ](../images/mgt-react-userinfo.png) Graph Toolkit。
+1. 登录后，你将被重定向到React应用。 请注意 **，"登录**"按钮已更改，以显示你的用户名React显示使用 Microsoft Graph Toolkit 从 Microsoft 365 检索 ![ 到的用户 ](../images/mgt-react-userinfo.png) Graph Toolkit。
 
 ## <a name="load-data-from-microsoft-365"></a>从服务器加载Microsoft 365
 
@@ -179,7 +179,7 @@ Microsoft Graph Toolkit不仅简化了对 Microsoft 365 的身份验证，还加
 
 ### <a name="specify-permissions-needed-for-your-application"></a>指定应用程序所需的权限
 
-您必须先指定Microsoft 365访问用户数据的权限范围列表，然后才能从应用程序加载数据。 这些范围因要显示的信息类型而不同。 在这种情况下，您需要访问人员日历，以及访问日历中也显示的人的信息的基本访问权限。 可以在 Microsoft Graph API 文档中找到每个[API 所需的范围](/graph/api/overview)。
+必须先指定必须授予应用程序以访问用户数据的权限范围列表，然后才能从 Microsoft 365 加载数据。 这些范围因要显示的信息类型不同而不同。 在这种情况下，您需要访问人员日历，以及访问日历中也显示的人的信息的基本访问权限。 可以在 Microsoft Graph API 文档中找到每个[API 所需的范围](/graph/api/overview)。
 
 1. 在代码编辑器中，打开 **src/index.tsx** 文件，并更新提供程序初始化代码。
 
@@ -254,7 +254,7 @@ Microsoft Graph Toolkit不仅简化了对 Microsoft 365 的身份验证，还加
 
     这将定义一个布尔常量，该常量可用于确定用户当前是否已 `isSignedIn` 登录到您的应用程序。
 
-1. 使用附加和 Microsoft `return` Graph Toolkit 组件扩展 `div` 子句的内容。
+1. 使用附加和 Microsoft `return` Graph Toolkit `div` 组件扩展子句的内容。
 
     ```TypeScript
     <div>
@@ -322,7 +322,7 @@ export default App;
 
 ## <a name="next-steps"></a>后续步骤
 
-- 请参阅[Microsoft Graph Toolkit](../overview.md)中Graph Toolkit。
+- 请参阅[Microsoft Graph Toolkit。](../overview.md)
 - 在[样本](https://mgt.dev)中试用组件。
 - 在 [Stack Overflow](https://aka.ms/mgt-question) 上提问。
 - 在 [GitHub](https://aka.ms/mgt) 上报告 bug 或提出功能请求。

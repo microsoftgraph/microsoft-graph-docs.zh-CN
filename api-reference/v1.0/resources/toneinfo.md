@@ -2,15 +2,15 @@
 title: toneInfo 资源类型
 description: 单个 DTMF 事件。
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: eba7ef5b7251712da0c91ecc9f006bbf3e1c5e80eaa86c1ea53942e815c9df4b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4d41f9e92864c5b56a3ef41a5907b7346af7d8ab
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54124001"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59098424"
 ---
 # <a name="toneinfo-resource-type"></a>toneInfo 资源类型
 

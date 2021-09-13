@@ -2,15 +2,15 @@
 title: 获取用户
 description: 读取 user 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 76faad5f8d482dd96f97d4e4b300608c35ebab4660741b78c9d1964ba6e4b7bf
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2d6c792ae928d60f1ca19f413478484dd2940ed7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54250467"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147204"
 ---
 # <a name="get-user"></a>获取用户
 

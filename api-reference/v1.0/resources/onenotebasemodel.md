@@ -2,15 +2,15 @@
 title: onenoteEntityBaseModel 资源
 description: 这是实体的基本OneNote类型。
 author: jewan-microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: b80bedb6c119045287dab768407759f63538f7ed420d67b05da929e4f2d3e36a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fc44af1da83cdbcfc054edd32c98d2b83a79895d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54154936"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094140"
 ---
 # <a name="onenoteentitybasemodel-resource"></a>onenoteEntityBaseModel 资源
 

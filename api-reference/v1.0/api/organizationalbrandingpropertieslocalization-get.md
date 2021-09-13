@@ -1,16 +1,16 @@
 ---
 title: 获取本地化的组织BrandingProperties
 description: 检索特定区域设置的组织品牌属性对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: AlexanderMars
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6286aff9e9a128efbaf1f15a7d2150a5f9754b2b
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: cd51473cd404cda9450ef33d5e80fe7885a0f8b7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682465"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59119329"
 ---
 # <a name="get-localized-organizationalbrandingproperties"></a>获取本地化的组织BrandingProperties
 
@@ -50,7 +50,7 @@ GET /organization/{tenant id}/branding/localizations/{locale}
 如果成功，此方法在响应正文中返回 响应代码和请求的 `200 OK` [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) 对象。 "id"的值对应于请求的本地化。
 
 ## <a name="examples"></a>示例
-### <a name="example-1-get-the-localized-branding-for-a-specific-locale-fr"></a>示例 1：获取特定区域设置或 (本地化) 
+### <a name="example-1-get-the-localized-branding-for-a-specific-locale-fr"></a>示例 1：获取特定区域设置（ (本地化) 
 对特定本地化的 GET 请求仅返回该本地化的值。 空值不会替换为默认品牌中的值。
 #### <a name="request"></a>请求
 

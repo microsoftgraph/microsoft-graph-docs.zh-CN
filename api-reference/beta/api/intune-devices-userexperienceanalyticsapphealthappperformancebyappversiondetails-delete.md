@@ -2,15 +2,15 @@
 title: 删除 userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails
 description: 删除 userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fc428dcffacf2fb3e39176def611c50463f90462
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: dd51995da4fdc167f7f6db767f596f003ff46a6b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58780493"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59027755"
 ---
 # <a name="delete-userexperienceanalyticsapphealthappperformancebyappversiondetails"></a>删除 userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformanceB
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

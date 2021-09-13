@@ -1,3 +1,12 @@
+---
+ms.localizationpriority: medium
+ms.openlocfilehash: 37aff56957c52c05145546c4df4d5f017e50f5f9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59289516"
+---
 <!-- markdownlint-disable MD002 MD025 MD041 -->
 
 在此步骤中，将生成并运行示例。 此代码示例将创建一个新连接，注册架构，然后将项目从 [ApplianceParts.csv文件推送 ](https://github.com/microsoftgraph/msgraph-search-connector-sample/blob/master/ApplianceParts.csv) 到该连接。
@@ -10,4 +19,4 @@
 6. 选择 **"3"。将所有项目推送到当前连接**。
 
   > [!NOTE]
-  > 如果步骤 5 导致错误，请等待几分钟，然后选择"**3"。将所有项目推送到当前** 连接"。
+  > 如果步骤 5 导致错误，请等待几分钟，然后选择"**3"。将所有项目推送到当前连接**"。

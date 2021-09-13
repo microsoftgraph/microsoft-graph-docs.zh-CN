@@ -2,15 +2,15 @@
 title: emailAuthenticationMethodConfiguration 资源类型
 description: 代表电子邮件 OTP 身份验证方法策略
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: cd05c9fdbfaa15a24419635e529dcbc82d72a4234fc16c70c0d8a617d17ae729
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 869f76311ee13503c61ad469b98012e62f2a5c3a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54212128"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123613"
 ---
 # <a name="emailauthenticationmethodconfiguration-resource-type"></a>emailAuthenticationMethodConfiguration 资源类型
 

@@ -2,15 +2,15 @@
 title: 创建 userExperienceAnalyticsAppHealthApplicationPerformance
 description: 创建新的 userExperienceAnalyticsAppHealthApplicationPerformance 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0c28d30cb0f372ef49300941a667c8023c1fc014
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f61a0e5126e29c3328becd6fd95590680e9f5bca
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58754840"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59027916"
 ---
 # <a name="create-userexperienceanalyticsapphealthapplicationperformance"></a>创建 userExperienceAnalyticsAppHealthApplicationPerformance
 
@@ -43,7 +43,7 @@ POST /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformance
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -56,7 +56,7 @@ POST /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformance
 |id|String|用户体验分析应用性能对象的唯一标识符。|
 |appHangCount|Int32|应用的挂起数。 有效值 -2147483648 2147483647|
 |appHealthScore|双精度|应用的运行状况分数。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
-|appHealthStatus|字符串|应用的整体运行状况状态。|
+|appHealthStatus|String|应用的整体运行状况状态。|
 |allOrgsHealthScore|双精度|所有组织的应用程序的中值运行状况分数。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
 |activeDeviceCount|Int32|应用处于活动状态的设备数。 有效值 -2147483648 2147483647|
 |appName|String|应用程序名。|

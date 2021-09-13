@@ -2,15 +2,15 @@
 title: 更新 deviceManagement
 description: 更新 deviceManagement 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c54f0bcf509c78720b7f4edb98b06a4cf677e538
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 583fb5bcd8f8fb6345f133df924e0a36652ad326
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58263098"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085516"
 ---
 # <a name="update-devicemanagement"></a>更新 deviceManagement
 

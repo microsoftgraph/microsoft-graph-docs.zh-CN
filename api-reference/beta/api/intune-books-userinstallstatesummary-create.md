@@ -2,15 +2,15 @@
 title: 创建 userInstallStateSummary
 description: 创建新的 userInstallStateSummary 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8cf52310f8c27bc971c92e3161042b0c08f0b45b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 91cd1d23fbe106ca7dd51ca0b64c716d73b79ea8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784714"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59018738"
 ---
 # <a name="create-userinstallstatesummary"></a>创建 userInstallStateSummary
 
@@ -43,7 +43,7 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,7 +53,7 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |userName|String|用户名。|
 |installedDeviceCount|Int32|已安装设备的计数。|
 |failedDeviceCount|Int32|已失败设备的计数。|

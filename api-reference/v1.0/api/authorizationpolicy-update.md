@@ -1,16 +1,16 @@
 ---
 title: 更新 authorizationpolicy
 description: 更新 authorizationPolicy 对象的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 76ce049fc30ae48a03e18dae92cad63f6fb80f14
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 072e6f82a26fd234547207a86b17f335f48854b0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788127"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59114797"
 ---
 # <a name="update-authorizationpolicy"></a>更新 authorizationPolicy
 
@@ -49,15 +49,15 @@ PATCH /policies/authorizationPolicy
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|allowedToSignUpEmailBasedSubscriptions|布尔值| 指示用户是否可以注册基于电子邮件的订阅。 |
-|allowedToUseSSPR|布尔值| 指示租户Self-Serve是否可以使用密码重置功能。 |
-|allowEmailVerifiedUsersToJoinOrganization|布尔值| 指示用户是否可以通过电子邮件验证加入租户。 |
+|allowedToSignUpEmailBasedSubscriptions|Boolean| 指示用户是否可以注册基于电子邮件的订阅。 |
+|allowedToUseSSPR|Boolean| 指示租户Self-Serve是否可以使用密码重置功能。 |
+|allowEmailVerifiedUsersToJoinOrganization|Boolean| 指示用户是否可以通过电子邮件验证加入租户。 |
 |allowInvitesFrom|allowInvitesFrom|指示谁可以邀请外部用户加入组织。 可取值为：`none`、`adminsAndGuestInviters`、`adminsGuestInvitersAndAllMembers`、`everyone`。  `everyone` 是除美国政府以外的所有云环境的默认设置。 有关详细信息，请参阅此表中的允许 [值](../resources/authorizationpolicy.md#allowinvitesfrom-values)。 |
-|blockMsolPowerShell|布尔值| 若要禁止使用 MSOL PowerShell，将此属性设置为 `true` 。 这还将禁止基于用户对 MSOL PowerShell 使用的旧服务终结点的访问。 这不会影响 Azure AD 连接 或 Microsoft Graph。 |
+|blockMsolPowerShell|Boolean| 若要禁止使用 MSOL PowerShell，将此属性设置为 `true` 。 这还将禁止基于用户对 MSOL PowerShell 使用的旧服务终结点的访问。 这不会影响 Azure AD 连接或 Microsoft Graph。 |
 |defaultUserRolePermissions|[defaultUserRolePermissions](../resources/defaultuserrolepermissions.md)| 指定默认用户角色的某些可自定义权限。 |
-|description|String| 此策略的说明。|
+|说明|String| 此策略的说明。|
 |displayName|String| 此策略的显示名称。 |
-|guestUserRoleId|Guid| 表示应授予来宾用户的角色的角色 templateId。 当前支持以下角色：用户角色 () 、来宾用户 `a0b1b346-4d3e-4e8b-98f8-753987be4970` `10dae51f-b6af-4016-8d66-8c2a99b929b3` () 和受限来宾 `2af84b1e-32c8-42b7-82bc-daa82404023b` () 。 |
+|guestUserRoleId|Guid| 表示应授予来宾用户的角色的角色 templateId。 目前支持以下角色：用户 () 、来宾用户 () 和受限来宾 `a0b1b346-4d3e-4e8b-98f8-753987be4970` `10dae51f-b6af-4016-8d66-8c2a99b929b3` `2af84b1e-32c8-42b7-82bc-daa82404023b` () 。 |
 
 
 ## <a name="response"></a>响应
@@ -329,7 +329,7 @@ HTTP/1.1 204 No Content
 
 #### <a name="request"></a>请求
 
-下面是一个请求示例，该请求允许用户同意应用，但需遵循内置的应用许可策略，该[](/azure/active-directory/manage-apps/manage-app-consent-policies)策略允许来自已验证发布者或在同一租户中注册的客户端应用分类为"低"的委派权限。 `microsoft-user-default-low`
+下面是一个请求示例，该请求允许用户同意应用，但需遵守内置的应用许可策略，该[](/azure/active-directory/manage-apps/manage-app-consent-policies)策略允许来自已验证发布者或在同一租户中注册的客户端应用分类为"低"的委派权限。 `microsoft-user-default-low`
 
 
 # <a name="http"></a>[HTTP](#tab/http)

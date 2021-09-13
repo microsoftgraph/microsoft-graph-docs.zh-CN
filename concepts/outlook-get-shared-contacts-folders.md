@@ -2,14 +2,14 @@
 title: 获取共享文件夹中的 Outlook 联系人
 description: 使用 Outlook，客户可以与其他人共享文件夹，并授予对各个联系人文件夹的读取、创建、修改或删除访问权限。 通过 Outlook，客户还可以委托其他用户代表自己执行操作。
 author: angelgolfer-ms
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
-ms.openlocfilehash: 50b9e819e3d95b799b55a0b7898aec01e9870c65f9a6d848b2dfc9f5e7055bed
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3c1673dd6b551d1626187ee120ccc5e08550933b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54138293"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59135926"
 ---
 # <a name="get-outlook-contacts-in-a-shared-folder"></a>获取共享文件夹中的 Outlook 联系人
 

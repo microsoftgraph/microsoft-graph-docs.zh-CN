@@ -1,22 +1,22 @@
 ---
 title: iPv6CidrRange 资源类型
 description: 表示使用 CIDR 表示法的 IPv6 范围。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 785df5cc15d1d052c987083fac9763982c64142309b5b361785be918803483fe
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d36d19d3d0d10da58a3223c146be542c9f57878c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54182424"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062479"
 ---
 # <a name="ipv6cidrrange-resource-type"></a>iPv6CidrRange 资源类型
 
 命名空间：microsoft.graph
 
-表示使用 CIDR 表示法的 IPv6 范围。
+表示使用无类别域间路由和 CIDR (IPv6) 范围。
 
 继承自 [ipRange](../resources/iprange.md)
 
@@ -24,7 +24,7 @@ ms.locfileid: "54182424"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|cidrAddress|String|CIDR 表示法中的 IPv6 地址|
+|cidrAddress|String|CIDR 表示法中的 IPv6 地址。 不可为空。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -41,6 +41,7 @@ ms.locfileid: "54182424"
 
 ```json
 {
+  "@odata.type": "#microsoft.graph.iPv6CidrRange", 
   "cidrAddress": "String"
 }
 ```

@@ -2,15 +2,15 @@
 title: 更新 microsoftTunnelSite
 description: 更新 microsoftTunnelSite 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 671f5b986430a4a4a2a6ccf9fe753afe8cb9e0d6
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8610d6076793a8fc9485ec0f302e37a9152098d4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785519"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59027615"
 ---
 # <a name="update-microsofttunnelsite"></a>更新 microsoftTunnelSite
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -55,13 +55,13 @@ PATCH /deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}
 |:---|:---|:---|
 |id|String|MicrosoftTunnelSite 的 ID|
 |displayName|String|MicrosoftTunnelSite 的显示名称|
-|description|String|MicrosoftTunnelSite 的说明|
-|publicAddress|字符串|MicrosoftTunnelSite 的公共域名或 IP 地址|
+|说明|String|MicrosoftTunnelSite 的说明|
+|publicAddress|String|MicrosoftTunnelSite 的公共域名或 IP 地址|
 |upgradeWindowUtcOffsetInMinutes|Int32|网站时区表示为与 UTC 的分钟偏移量|
 |upgradeWindowStartTime|TimeOfDay|网站的升级窗口一天中的开始时间|
 |upgradeWindowEndTime|TimeOfDay|网站的升级窗口结束时间|
 |upgradeAutomatically|Boolean|网站的自动升级设置。 True 表示自动升级，false 表示手动控制|
-|upgradeAvailable|布尔值|如果升级可用，则其为 True|
+|upgradeAvailable|Boolean|如果升级可用，则其为 True|
 |internalNetworkProbeUrl|String|MicrosoftTunnelSite 的内部网络访问探测器 URL|
 |roleScopeTagIds|String collection|此实体实例的范围标记列表。|
 

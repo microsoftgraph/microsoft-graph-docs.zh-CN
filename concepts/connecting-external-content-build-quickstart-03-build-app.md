@@ -1,3 +1,12 @@
+---
+ms.localizationpriority: medium
+ms.openlocfilehash: 5fb7ccc1c9e44db77f2ba199a556d229292cf7a4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59289513"
+---
 <!-- markdownlint-disable MD002 MD025 MD041 -->
 
 在此步骤中，你将创建一个 .NET Core 控制台应用。 之后，您将创建一个新连接，注册架构并同步项目。
@@ -6,16 +15,16 @@
 
 1. 启动 Visual Studio 2019，然后转到"**文件**  >  **""新建**  >  **Project"。**
 2. 选择控制台 **应用 (.NET 核心)** 模板，然后选择下一 **步**。
-3. 输入Project **名称**："PartsInventoryConnector"，然后选中"将解决方案和项目放置在同一目录中 **"的** 复选框，然后选择"创建 **"，如下** 图所示。
+3. Enter the **Project name**： "PartsInventoryConnector"， and select the checkbox for " Place solution and project in the **same directory**"， and select **Create** as shown in the next image.
 
 !["配置新项目"部分屏幕截图](images/connectors-images/build7.png)
 
 > [!IMPORTANT]
-> 在移动到下一步之前，将ApplianceParts.csv文件复制到项目的根文件夹。
+> 在移动到下一步之前，ApplianceParts.csv文件复制到项目的根文件夹。
 
 ## <a name="add-nuget-packages"></a>添加 Nuget 程序包
 
-若要添加NuGet包，请右键单击"Project **解决方案"，** 然后选择"**在终端中打开"。**
+若要添加NuGet程序包，请右键单击"Project **解决方案"，** 然后选择"**在终端中打开"。**
 
 ![显示"打开终端"选项的屏幕截图](images/connectors-images/build8.png)
 
@@ -34,7 +43,7 @@ dotnet add package Microsoft.Identity.Client --version 4.13.0
 > 如果 `add package` 命令失败，请检查 **项目的程序包** 源：
 > 1. 在"解决方案资源管理器"中选择项目。
 > 2. 转到工具> Nuget 程序包管理器 > 程序包管理器 设置。
-> 3. 检查程序包源，并确保 nuget.&#65279;作为程序包源安装。
+> 3. 检查程序包源，并确保 nuget.&#65279;组织作为程序包源安装。
 >     * 名称：nuget.&#65279;org
 >     *  源：https&#65279;：//api.nuget.org/v3/index.json
 
@@ -404,7 +413,7 @@ namespace PartsInventoryConnector.MicrosoftGraph
 }
 ```
 
-3. 在 Microsoft Graph目录中创建一个名为 MicrosoftGraphHelper.cs 的新文件，将下面的代码放在该文件中。
+3. 在 Microsoft Graph  MicrosoftGraphHelper.cs 目录中创建一个新文件，将下面的代码放在该文件中。
 
     以下代码包含使用 **MicrosoftGraphServiceClient** 生成调用并将其发送到 Microsoft Graph 服务并处理响应的方法。
 
@@ -765,10 +774,10 @@ private static async Task RegisterSchemaAsync()
 
 ## <a name="sync-items"></a>同步项目
 
-1. 在 **"Microsoft Graph"** 下，打开 MicrosoftGraphHelper.cs 文件，在 **构造函数** 方法后添加以下代码。
+1. 在 **"microsoft Graph"** 下，打开 MicrosoftGraphHelper.cs 文件，在 **构造函数** 方法后添加以下代码。
 
 ```c
-#region PushData   
+#region PushData
 
         public async Task AddOrUpdateItem(string connectionId, ExternalItem item)
         {

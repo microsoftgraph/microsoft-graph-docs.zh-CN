@@ -1,15 +1,15 @@
 ---
 title: '载入跨设备 Microsoft Graph 通知体验 '
 description: 在 Windows 开发人员中心注册应用程序，使应用客户端接收通过 Microsoft Graph 发送的跨设备通知。
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: notifications
 author: merzink
-ms.openlocfilehash: 1a3b55583ff2d945207b3f49f15ff055b033ec2c1420c950fe2238d7964cd768
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 15cb37515a7658078b909b801f8ecc3cceafc9cb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54169134"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59066938"
 ---
 # <a name="onboarding-to-cross-device-experiences-for-microsoft-graph-notifications"></a>载入跨设备 Microsoft Graph 通知体验
 

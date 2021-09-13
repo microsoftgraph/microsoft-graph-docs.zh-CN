@@ -1,16 +1,16 @@
 ---
 title: serviceEndpoint 资源类型
 description: serviceEndpoint 类型
-localization_priority: Normal
+ms.localizationpriority: medium
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: dc51a13e8c244c8c4564dab9cf18dc5b28a450947c0ced8889aea8d6511d39a9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c692da0024e1c518d4d55f42438a57637bbcd452
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54216943"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59113803"
 ---
 # <a name="serviceendpoint-resource-type"></a>serviceEndpoint 资源类型
 

@@ -1,16 +1,16 @@
 ---
 title: permissionScope 资源类型
 description: 表示委派权限的定义，有时称为 OAuth 2.0 权限或 OAuth 2.0 范围。 定义后，客户端应用程序可能会请求委派权限
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 7836685c65fddd2d35a2d9bc47493bf2f240e51653ef8a264ac868be83b02e80
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 06f159b50bf7da27405a2ef25a967cfa47ebd96f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196934"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117842"
 ---
 # <a name="permissionscope-resource-type"></a>permissionScope 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "54196934"
 
 表示委派权限 [的定义](/azure/active-directory/develop/v2-permissions-and-consent#permission-types)。
 
-委派权限可以通过需要访问令牌的客户端应用程序请求，该 API 定义了权限。 可通过 application 对象的 [](/azure/active-directory/develop/v2-permissions-and-consent#requesting-individual-user-consent) `scopes` **requiredResourceAccess** 集合动态请求委派权限，使用对 Microsoft 标识平台 的授权 [](/azure/active-directory/develop/v2-permissions-and-consent#the-default-scope)请求中的 参数，或静态 [请求](application.md)。
+委派权限可以通过需要访问令牌的客户端应用程序请求，该 API 定义了权限。 可通过 application 对象的 [](/azure/active-directory/develop/v2-permissions-and-consent#requesting-individual-user-consent) `scopes` **requiredResourceAccess** 集合，使用对 Microsoft 标识平台 的授权请求中的 [](/azure/active-directory/develop/v2-permissions-and-consent#the-default-scope)参数动态请求委派权限，或静态 [请求](application.md)委派权限。
 
 ## <a name="properties"></a>属性
 

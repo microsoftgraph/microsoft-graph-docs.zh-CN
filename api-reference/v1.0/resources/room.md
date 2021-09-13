@@ -1,16 +1,16 @@
 ---
 title: 会议室资源类型
 description: 指定租户中聊天室的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: vrod9429
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 051fcfc0f9a5211ae2210eee6c7942d9b7d9efd6b334ea6491a406982e9224a1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d676dbcd36760bc14edb38b35f6f93573f03b9b5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54246596"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117772"
 ---
 # <a name="room-resource-type"></a>会议室资源类型
 
@@ -43,18 +43,18 @@ ms.locfileid: "54246596"
 | floorNumber            | Int32                                             | 指定房间的楼层。 |
 | geoCoordinates         | [outlookGeoCoordinates](outlookgeocoordinates.md) | 指定以纬度、经度和（可选）海拔坐标表示的会议室位置。 |
 | id                     | String                                            | 会议室的唯一标识符。 只读。 |
-| isWheelChairAccessible | Boolean                                           | 指定会议室是否可供访问。 |
+| isWheelChairAccessible | 布尔值                                           | 指定会议室是否可供访问。 |
 | 标签                  | String                                            | 指定会议室的描述性标签，例如数字或名称。 |
-| nickname               | String                                            | 指定会议室的昵称，例如"conf room"。 |
+| nickname               | String                                            | 为会议室指定昵称，例如"conf room"。 |
 | phone                  | String                                            | 会议室的电话号码。 |
-| tags                   | String collection                                 | 指定会议室的其他功能，例如，视图类型或装饰类型等详细信息。 |
+| 标记                   | 字符串集合                                 | 指定会议室的其他功能，例如，视图类型或装饰类型等详细信息。 |
 | videoDeviceName        | String                                            | 指定会议室中的视频设备的名称。 |
 
 ### <a name="bookingtype-values"></a>bookingType 值
 
 | 值    | 说明                                               |
 |:---------|:----------------------------------------------------------|
-| standard | 会议室可用，可以预订。 此为默认值。 |
+| standard | 会议室可用，可以预订。 此值为默认值。 |
 | 保留 | 会议室仅在"先到先得"的基础上可用。 不能保留。|
 
 ## <a name="relationships"></a>关系

@@ -1,16 +1,16 @@
 ---
 title: List appliesTo
 description: 获取 tokenLifetimePolicy 对象已应用到的 directoryObject 对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: lujiangfeng666
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 37926ca3c92e1ad44cba9aaa0951ceb6568ede2b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 4e9d518cdfebd4240f415b56f33919ed381b1da2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054334"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59130088"
 ---
 # <a name="list-appliesto"></a>List appliesTo
 

@@ -1,16 +1,16 @@
 ---
 title: 创建本地化的组织BrandingProperties
 description: 为特定区域设置创建组织品牌。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: AlexanderMars
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 97dea66cf270b3b9ed739df1deead70cb987ee76
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: b0ddff717ca23a645d69843b49af66e11ab4872b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682458"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59015901"
 ---
 # <a name="create-localized-organizationalbrandingproperties"></a>创建本地化的组织BrandingProperties
 
@@ -28,7 +28,7 @@ ms.locfileid: "52682458"
 
 ## <a name="http-request"></a>HTTP 请求
 
-POST to branding/localizations to create a new localization. 正文中指定的 id 是本地化区域设置。 如果未指定 id，则 Content-Language 标头的值（如果已指定）将用作 id。如果未指定 id 和 Content-Language 标头，则返回错误。
+POST to branding/localizations to create a new localization. 正文中指定的 id 是本地化区域设置。 如果未指定 id，则 Content-Language 标头的值（如果指定）将用作 id。如果未指定 id 和 Content-Language 标头，则返回错误。
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -53,7 +53,7 @@ POST /organization/{tenant id}/branding/localizations
 |backgroundImage|Stream|显示为登录页背景的图像。 .png或 .jpg不超过 1920x1080 且小于 300kb。 较小的图像将降低带宽要求，提高页面加载性能。|
 |bannerLogo|Stream|显示在登录页上的公司徽标的横幅版本。 .png或.jpg不超过 36x245px。 我们建议使用透明图像，徽标周围没有填充。|
 |signInPageText|String|显示在登录框底部的文本。 您可以使用此信息来传达其他信息，例如电话号码到技术支持或法律声明。 此文本必须是 Unicode 且不超过 1024 个字符。|
-|squareLogo|Stream|公司徽标的方形版本。 这将显示在Windows 10 OOBE 体验 (OOBE) ，以及启用 Windows Autopilot 进行部署时。 .png或 .jpg不超过 240x240px 且大小不超过 10kb。 我们建议使用透明图像，徽标周围没有填充。|
+|squareLogo|Stream|公司徽标的方形版本。 这将显示在Windows 10 OOBE 体验 (OOBE) 中，以及启用 Windows Autopilot 进行部署时。 .png或 .jpg不超过 240x240px 且大小不超过 10kb。 我们建议使用透明图像，徽标周围没有填充。|
 |usernameHintText|String|字符串，在登录屏幕的用户名文本框中作为提示显示。 此文本必须是 Unicode，不带链接或代码，并且不能超过 64 个字符。|
 |id|String|要创建品牌打造区域设置|
 

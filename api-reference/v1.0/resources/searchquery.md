@@ -1,16 +1,16 @@
 ---
 title: searchQuery 资源类型
 description: searchQuery
-localization_priority: Normal
+ms.localizationpriority: medium
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 5d28f3a2a423947eaf27a5b6878607d6efac6dda3dd6d2f01907621b17177732
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fab44ccfe775d283ff719696292377443327eb15
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54149672"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59137551"
 ---
 # <a name="searchquery-resource-type"></a>searchQuery 资源类型
 

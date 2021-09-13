@@ -2,15 +2,15 @@
 title: chatMessage 资源类型
 description: 表示频道或聊天实体中的单个聊天消息。 聊天消息可以是根聊天消息，也可以是由聊天消息中的 **replyToId** 属性定义的线程的一部分。
 doc_type: resourcePageType
-localization_priority: Normal
+ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: e3c109ca11e901fdca2449daf4c98b7c78a558c3
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: 46c3962304d17b33d0c09c7e0b47afe0b0ee63f8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58667470"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094427"
 ---
 # <a name="chatmessage-resource-type"></a>chatMessage 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "58667470"
 
 表示 [渠道](channel.md)或[聊天](chat.md)中的单个聊天信息。 该消息可以是根消息，也可以是消息中的 **replyToId** 属性定义的线程部分。
 
-> **注意**：此资源支持使用更改通知 (、更新和删除) 订阅 [更改](../resources/webhooks.md)。 这使呼叫方可以实时订阅和获取更改。 有关详细信息，请参阅[获取消息通知](/graph/teams-changenotifications-chatMessage)。
+> **注意**：此资源支持订阅更改 (使用更改通知) 、更新和 [删除更改](../resources/webhooks.md)。 这使呼叫方可以实时订阅和获取更改。 有关详细信息，请参阅[获取消息通知](/graph/teams-changenotifications-chatMessage)。
 
 ## <a name="methods"></a>方法
 
@@ -52,8 +52,8 @@ ms.locfileid: "58667470"
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
 |id|String| 只读。 消息的唯一 ID。|
-|replyToId| string | 只读。 线程的父聊天消息或根聊天消息的 ID。  (仅适用于频道中的聊天消息，而不是 chats.)  |
-|发件人|[chatMessageFromIdentitySet](chatmessagefromidentityset.md)| 聊天消息的发送者的详细信息。 只能在迁移期间 [进行设置](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)。|
+|replyToId| string | 只读。 线程的父聊天消息或根聊天消息的 ID。  (仅适用于频道中的聊天消息，而仅适用于 chats)  |
+|起始数量|[chatMessageFromIdentitySet](chatmessagefromidentityset.md)| 聊天消息的发送者的详细信息。 只能在迁移期间 [进行设置](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)。|
 |etag| string | 只读。 聊天消息的版本号。 |
 |messageType|chatMessageType|聊天消息的类型。 可能的值包括 `message`、`chatEvent`、`typing`、`unknownFutureValue`、`systemEventMessage`。 请注意，必须使用 `Prefer: include-unknown-enum-members` 请求标头获取此 [可进化枚举](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) 中的以下值: `systemEventMessage`。|
 |createdDateTime|dateTimeOffset|创建聊天消息的时间戳。|
@@ -68,7 +68,7 @@ ms.locfileid: "58667470"
 |importance|string | 聊天消息的重要性。 可能的值包括 `normal`、`high`、`urgent`。|
 |反应| [chatMessageReaction](chatmessagereaction.md) 集合 | 此聊天消息的反应 (例如，Like) 。|
 |区域设置|string|客户端设置的聊天消息区域设置。 始终设置为 `en-us`。|
-|policyViolation | [chatMessagePolicyViolation](chatmessagepolicyviolation.md) |定义 DLP 应用程序中数据丢失防护设置的策略违反 () 属性。|
+|policyViolation | [chatMessagePolicyViolation](chatmessagepolicyviolation.md) |定义 DLP 应用程序数据丢失防护设置的策略违反 () 属性。|
 |chatId|string|如果消息是在聊天中发送的，则代表聊天的标识。|
 |channelIdentity|[channelIdentity](channelidentity.md)|如果消息是在频道中发送的，则代表频道的标识。|
 |WebUrl|string|只读。 指向邮件中Microsoft Teams。|

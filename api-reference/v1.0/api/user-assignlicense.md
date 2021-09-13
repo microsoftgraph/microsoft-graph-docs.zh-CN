@@ -2,15 +2,15 @@
 title: assignLicense
 description: 为用户添加或删除订阅。还可以启用和禁用与订阅相关的特定计划。
 author: jpettere
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 57811d4b3a6f22fa021555eec095aebb1854da68
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 600e3f1c800078aa9a221402d94f73dc6019be20
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054320"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59090052"
 ---
 # <a name="user-assignlicense"></a>用户：assignLicense
 
@@ -93,7 +93,7 @@ Content-length: 185
 
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

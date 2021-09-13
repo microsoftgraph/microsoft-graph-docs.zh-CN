@@ -2,15 +2,15 @@
 title: 列出 userExperienceAnalyticsImpactingProcesses
 description: 列出 userExperienceAnalyticsImpactingProcess 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 65fc00f90556a1c312f95fb2ac78405230dfee29
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1bfdae88014f0d3df5e7e1c5b2fdead546a87c73
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803368"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59030786"
 ---
 # <a name="list-userexperienceanalyticsimpactingprocesses"></a>列出 userExperienceAnalyticsImpactingProcesses
 
@@ -43,7 +43,7 @@ GET /deviceManagement/userExperienceAnalyticsImpactingProcess
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

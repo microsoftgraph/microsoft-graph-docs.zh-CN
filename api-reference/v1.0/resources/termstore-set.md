@@ -2,15 +2,15 @@
 title: 设置资源类型
 description: 表示术语库中的集。
 author: vishriv
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: resourcePageType
-ms.openlocfilehash: d56bc436dca1c645d7e5d24face75a9bf5acd957
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 70e3aa48231c6efd28dd9577b8709ce86fcb62ae
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514885"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128016"
 ---
 # <a name="set-resource-type"></a>设置资源类型
 
@@ -83,7 +83,7 @@ ms.locfileid: "58514885"
 [microsoft.graph.termStore.relation]: termstore-relation.md
 [microsoft.graph.termStore.store]: termstore-store.md
 [microsoft.graph.termStore.localizedName]: termstore-localizedname.md
-[store]: ../resources/termstore-store.md
+[商店]: ../resources/termstore-store.md
 [组]: ../resources/termstore-group.md
 [set]: ../resources/termstore-set.md
 [term]: ../resources/termstore-term.md

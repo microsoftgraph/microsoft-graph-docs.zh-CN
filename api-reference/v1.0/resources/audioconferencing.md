@@ -2,15 +2,15 @@
 title: audioConferencing 资源类型
 description: 表示联机会议的电话访问信息。
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 36a21359c4c336b122856417021c5291de01d2c1c3fd704420cd2f234831136c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a656ac6e3e47daea1c35b5fb54d6354a93c27dc2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54124582"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021727"
 ---
 # <a name="audioconferencing-resource-type"></a>audioConferencing 资源类型
 

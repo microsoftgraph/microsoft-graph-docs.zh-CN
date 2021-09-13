@@ -2,15 +2,15 @@
 title: 存储资源类型
 description: 表示分类术语库。
 author: vishriv
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: resourcePageType
-ms.openlocfilehash: 840e22fc3031787cbc550f0ee0e32d5e6243bed9
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: c94c0edb6589bd467676ac42294ead8416e829df
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514884"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084039"
 ---
 # <a name="store-resource-type"></a>存储资源类型
 
@@ -32,7 +32,7 @@ ms.locfileid: "58514884"
 |:---|:---|:---|
 |defaultLanguageTag | String | 术语库的默认语言。|
 |id|String | 术语库的唯一标识符。 只读。|
-|languageTags | String collection | 术语库的语言列表。|
+|languageTags | 字符串集合 | 术语库的语言列表。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|

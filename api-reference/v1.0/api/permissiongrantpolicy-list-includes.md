@@ -1,18 +1,18 @@
 ---
-title: 列表包括 permissionGrantPolicy 的集合
+title: 列表包括 permissionGrantPolicy 集合
 description: 检索条件集的列表，这些条件集描述权限授予策略中包括权限授予事件的条件。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: bc52114f7069b3d9371a19cac1d94ab2c4c3ac99
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 67a8945492cf52076be5803eb17533dedbf78063
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051289"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032599"
 ---
-# <a name="list-includes-collection-of-permissiongrantpolicy"></a>列表包括 permissionGrantPolicy 的集合
+# <a name="list-includes-collection-of-permissiongrantpolicy"></a>列表包括 permissionGrantPolicy 集合
 
 命名空间：microsoft.graph
 

@@ -1,16 +1,16 @@
 ---
 title: pendingContentUpdate
 description: pendingContentUpdate 资源指示可能影响 driveItem 的二进制内容的操作正在等待完成。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: learafa
 ms.prod: files
 doc_type: resourcePageType
-ms.openlocfilehash: 917a952ba9694178c17b3ef6ccb89780790528860f227a3a5f02f5cb5f44cf5e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d472ba41c26885bdefad13f35ea66f7b4e974d6a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178134"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117932"
 ---
 # <a name="pendingcontentupdate-resource-type"></a>pendingContentUpdate 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54178134"
 
 | 属性     | 类型         | 说明 |
 |:-------------|:-------------|:------------|
-|**queuedDateTime**|DateTimeOffset|挂起的二进制操作以 UTC 时间排队的日期和时间。 只读。|
+|**queuedDateTime**|DateTimeOffset|挂起的二进制操作在 UTC 时间排队的日期和时间。 只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

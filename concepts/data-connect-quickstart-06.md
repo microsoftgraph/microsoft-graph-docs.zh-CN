@@ -1,12 +1,21 @@
+---
+ms.localizationpriority: medium
+ms.openlocfilehash: e436d95637255e52b5028c8b3b80f5f7aab6e1e5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59289525"
+---
 <!-- markdownlint-disable MD002 MD041 -->
 
-Microsoft 365管理员能够批准或拒绝同意请求。 这可以通过管理中心Microsoft 365 管理 PowerShell 以编程方式完成。
+Microsoft 365管理员能够批准或拒绝同意请求。 这可以通过 Microsoft 365 管理 中心或通过 PowerShell 以编程方式完成。
 
 ## <a name="approve-consent-requests"></a>批准同意请求
 
 # <a name="microsoft-365-admin-center"></a>[Microsoft 365 管理中心](#tab/Microsoft365)
 
-1. 打开浏览器，然后转到你的Microsoft 365 管理[门户。](https://admin.microsoft.com)
+1. 打开浏览器，然后转到Microsoft 365 管理[门户](https://admin.microsoft.com)。
 
 1. 若要批准或拒绝同意请求，请转到 [Privileged Access](https://portal.office.com/adminportal/home#/Settings/PrivilegedAccess)。
 
@@ -76,12 +85,12 @@ Microsoft 365管理员能够批准或拒绝同意请求。 这可以通过管理
 
 1. 使用具有 Azure 和租户 **全局** 管理员权限Microsoft 365登录。
 
-1. 在边栏导航上，选择 **"所有资源"** 菜单项。
+1. 在边栏导航上，选择" **所有资源"** 菜单项。
 
 1. 在资源列表中，选择 **Azure 存储** 之前在本教程中创建的帐户。
 
-1. 在边栏导航菜单上 **，从"** 帐户"边栏选项卡Azure 存储 **Blob"。**
+1. 在边栏导航菜单 **上，从**"帐户"边栏选项卡 **Azure 存储 Blob"。**
 
 1. 选择 **之前** 在本教程中创建的容器，该容器将 Azure 数据工厂管道配置为提取数据的接收器。 现在应该会看到此容器中的数据。
 
-    ![显示用于帐户服务的 Azure 门户 UI 存储屏幕截图。 它显示存储提取数据的容器。](images/data-connect-adf-extracted-data-in-blob.png)
+    ![显示用于帐户服务的 Azure 存储 UI 的屏幕截图。 它显示存储提取数据的容器。](images/data-connect-adf-extracted-data-in-blob.png)

@@ -1,16 +1,16 @@
 ---
 title: 列出频道消息
 description: '检索团队频道中的消息列表（无回复）。 若要获取消息的回复，请调用“列出消息回复”或“获取消息回复”API。 '
-localization_priority: Priority
+ms.localizationpriority: high
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 44927136999ed891eb281932f58b99624ced2800
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: 795e0dbac2165b182e188ff442e6cc77ec76243a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58667925"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59038389"
 ---
 # <a name="list-channel-messages"></a>列出频道消息
 

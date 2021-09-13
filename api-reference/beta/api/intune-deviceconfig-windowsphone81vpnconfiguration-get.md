@@ -2,15 +2,15 @@
 title: 获取 windowsPhone81VpnConfiguration
 description: 读取 windowsPhone81VpnConfiguration 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d7abef0c894ed06896b7d2ab8022d97413a411c2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 955a6962f28ea1a57268f89c457bd3dbe9145fdc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784084"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59028063"
 ---
 # <a name="get-windowsphone81vpnconfiguration"></a>获取 windowsPhone81VpnConfiguration
 
@@ -48,7 +48,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

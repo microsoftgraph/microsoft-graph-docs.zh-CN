@@ -1,16 +1,16 @@
 ---
 title: recentNotebook 资源类型
 description: 最近访问过的 OneNote 笔记本。 **recentNotebook** 类似于 notebook，不同之处在于属性较少。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 40a9b71dbf32aebb169b621c9defacc75c0209be8f22afb7f2063675ac0d913d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 63338c7501b7783ff7c32d6f2f2c54122c9e9154
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54135027"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143676"
 ---
 # <a name="recentnotebook-resource-type"></a>recentNotebook 资源类型
 

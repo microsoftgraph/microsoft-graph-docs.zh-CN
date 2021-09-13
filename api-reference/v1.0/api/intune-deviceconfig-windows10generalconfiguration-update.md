@@ -2,15 +2,15 @@
 title: 更新 windows10GeneralConfiguration
 description: 更新 windows10GeneralConfiguration 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2df7481e2f81af72a0e4c356ba2c17e5180a7bb43dd17f38ec00cbccc6a5b2bc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 458d860e12fd7a2b573a41135db21476b1c521da
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54234090"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59130753"
 ---
 # <a name="update-windows10generalconfiguration"></a>更新 windows10GeneralConfiguration
 

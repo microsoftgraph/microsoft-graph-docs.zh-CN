@@ -1,21 +1,21 @@
 ---
-title: directoryObject：getAvailableExtensionProperties
+title: directoryObject： getAvailableExtensionProperties
 description: 获取已在目录中注册的目录扩展属性的所有或筛选列表。
 author: sureshja
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 0464228669013360ad71eb24d214c4810bdb4c43
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: df52eb8c578ed5a8dd6741cb2263ff1a307e44b5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434410"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59033019"
 ---
-# <a name="directoryobject-getavailableextensionproperties"></a>directoryObject：getAvailableExtensionProperties
+# <a name="directoryobject-getavailableextensionproperties"></a>directoryObject： getAvailableExtensionProperties
 命名空间：microsoft.graph
 
-返回已在目录中注册的目录扩展属性的所有或经过筛选的列表。 以下实体支持扩展属性：**用户**、**组**、**组织**、**设备**、**应用程序和** **servicePrincipal。**
+返回已在目录中注册的目录扩展属性的所有或经过筛选的列表。 以下实体支持扩展属性：user、group、organization、device、application和 **servicePrincipal**。    
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -49,12 +49,12 @@ POST /directoryObjects/getAvailableExtensionProperties
 
 |参数|类型|说明|
 |:---|:---|:---|
-|isSyncedFromOnPremises|Boolean|`true` 指定仅返回从本地目录同步的扩展属性;以指定只返回未从本地目录同步的 `false` 扩展属性。 如果省略该参数，则返回 (同步和非同步) 属性。|
+|isSyncedFromOnPremises|布尔值|`true` 指定仅返回从本地目录同步的扩展属性; `false` 指定仅返回未从本地目录同步的扩展属性。 如果省略参数，则返回 (同步和非同步) 属性。|
 
 
 ## <a name="response"></a>响应
 
-如果成功，此操作在响应正文中返回响应代码和 `200 OK` [extensionProperty](../resources/extensionproperty.md) 集合。
+如果成功，此操作在响应正文中返回 响应代码和 `200 OK` [extensionProperty](../resources/extensionproperty.md) 集合。
 
 ## <a name="examples"></a>示例
 

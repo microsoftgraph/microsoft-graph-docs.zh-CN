@@ -2,15 +2,15 @@
 title: 列出 microsoftTunnelSites
 description: 列出 microsoftTunnelSite 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 76703994dcc72be86bca66b25ac092b70fd05c69
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8ce3859a0a2cd5a3499e83a06933d9c04aca84e1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58802843"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59027657"
 ---
 # <a name="list-microsofttunnelsites"></a>列出 microsoftTunnelSites
 
@@ -43,7 +43,7 @@ GET /deviceManagement/microsoftTunnelSites
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

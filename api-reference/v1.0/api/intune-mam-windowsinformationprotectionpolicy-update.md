@@ -2,15 +2,15 @@
 title: 更新 windowsInformationProtectionPolicy
 description: 更新 windowsInformationProtectionPolicy 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 582fb1788611082965a87a4226516905774468ea52484678d7b9712d0ed820e8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d7a06018371584de6517f4bf77ffc29ae4a17356
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54202733"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147078"
 ---
 # <a name="update-windowsinformationprotectionpolicy"></a>更新 windowsInformationProtectionPolicy
 

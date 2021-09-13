@@ -1,3 +1,12 @@
+---
+ms.localizationpriority: medium
+ms.openlocfilehash: e8f13a3fe886db688d12a997f0cddc38547a30f6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59289512"
+---
 <!-- markdownlint-disable MD002 MD025 MD041 -->
 
 1. 在 PartsInventoryConnector.csproj 所在的 (CLI) 打开命令行接口。

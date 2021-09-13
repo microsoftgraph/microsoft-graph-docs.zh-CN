@@ -1,16 +1,16 @@
 ---
 title: pendingOperations
 description: pendingOperations 资源指示可能影响 driveItem 状态的一个或多个操作正在等待完成。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: learafa
 ms.prod: files
 doc_type: resourcePageType
-ms.openlocfilehash: 8fac755c6bcce65af03a96b1c13d6186ae3c1f86e975cf9577d0a5e568ebe62a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3dd6bccaeadbd98fc28a986f8983c7837a3a8f1d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178119"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117905"
 ---
 # <a name="pendingoperations-resource-type"></a>pendingOperations 资源类型
 

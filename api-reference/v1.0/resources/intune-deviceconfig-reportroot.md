@@ -2,15 +2,15 @@
 title: reportRoot 资源类型
 description: 表示一个历史记录报告实例的资源。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6c57d61524c22feaca64664a0e9fd2cc873ab057ce596dc0e156c92a6b20aee4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 309ff725c0d736b40710246958313fbf8ac4c2a5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54184667"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59148324"
 ---
 # <a name="reportroot-resource-type"></a>reportRoot 资源类型
 

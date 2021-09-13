@@ -2,15 +2,15 @@
 title: deviceManagementPartnerAppType 枚举类型
 description: 合作伙伴应用类型。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 22b5ad05443cff8c5001d07bbea447a8276e4936b0fbb71a796aa5f28ed64c01
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 28a07e0db3eccb051d0cea024debe0cbfbc5012a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54155034"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062535"
 ---
 # <a name="devicemanagementpartnerapptype-enum-type"></a>deviceManagementPartnerAppType 枚举类型
 

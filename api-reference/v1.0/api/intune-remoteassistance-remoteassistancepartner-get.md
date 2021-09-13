@@ -2,15 +2,15 @@
 title: 获取 remoteAssistancePartner
 description: 读取 remoteAssistancePartner 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f3217d0f88795c3dde59a018526ee38b73bbc37063bc18ec84c748d800844698
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7c7efe93c3901dcb2958a5c9b1a27908a8c4acd0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54121646"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59037521"
 ---
 # <a name="get-remoteassistancepartner"></a>获取 remoteAssistancePartner
 

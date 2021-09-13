@@ -2,15 +2,15 @@
 title: deviceGuardLocalSystemAuthorityCredentialGuardState 枚举类型
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c81fd1cfde1f8605ba534bdae93dd00eaef9ecc3
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e1287f811f25bcdfff3d567c3bd5cd0034d69d58
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58817388"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017406"
 ---
 # <a name="deviceguardlocalsystemauthoritycredentialguardstate-enum-type"></a>deviceGuardLocalSystemAuthorityCredentialGuardState 枚举类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58817388"
 尚未记录
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |running|0|正在运行|
 |rebootRequired|1|需要重新启动|

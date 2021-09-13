@@ -2,15 +2,15 @@
 title: 创建 cartToClassAssociation
 description: 创建新的 cartToClassAssociation 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2782ae7fc30dc5ae85801f500c7837556faec4ed
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 864b863bea71c4a1dc7d5d9876b5125b0bf2c334
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785365"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59031157"
 ---
 # <a name="create-carttoclassassociation"></a>创建 cartToClassAssociation
 
@@ -43,7 +43,7 @@ POST /deviceManagement/cartToClassAssociations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -57,8 +57,8 @@ POST /deviceManagement/cartToClassAssociations
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
 |version|Int32|CartToClassAssociation 的版本。|
-|displayName|字符串|管理员提供的设备配置的名称。|
-|description|String|管理员提供了 CartToClassAssociation 的说明。|
+|displayName|String|管理员提供的设备配置的名称。|
+|说明|String|管理员提供了 CartToClassAssociation 的说明。|
 |deviceCartIds|String collection|要与类关联的设备购物车的标识符。|
 |classroomIds|String collection|要与设备购物车关联的教室的标识符。|
 

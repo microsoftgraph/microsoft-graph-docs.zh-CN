@@ -1,16 +1,16 @@
 ---
 title: 分配 claimsMappingPolicy
 description: 将 claimsMappingPolicy 分配给 servicePrincipal。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: paulgarn
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: de92c1f75288c4e5c0575eb7369dd8d7bf1e4ce0
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 9f34fcb7add45be9aa73a0e27445eac0cb14dcd3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135791"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032508"
 ---
 # <a name="assign-claimsmappingpolicy"></a>分配 claimsMappingPolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "50135791"
 
 将 [claimsMappingPolicy](../resources/claimsmappingpolicy.md) 分配给 [servicePrincipal](../resources/serviceprincipal.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -47,7 +47,7 @@ POST /servicePrincipals/{id}/claimsMappingPolicies/$ref
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，使用 (应分配给服务主体) 提供 [claimsMappingPolicy](../resources/claimsmappingpolicy.md) 对象的 `@odata.id` 标识符。
+在请求正文中，使用应分配给服务主体 (属性) [claimsMappingPolicy](../resources/claimsmappingpolicy.md) 对象的 `@odata.id` 标识符。
 
 ## <a name="response"></a>响应
 

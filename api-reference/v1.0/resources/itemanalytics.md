@@ -2,15 +2,15 @@
 author: daspek
 title: itemAnalytics 资源类型
 description: ItemAnalytics 对象提供有关在项目上发生的活动的分析。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 3ffedd01287f66a5640fa1a1868b05c42a6750ee223bc59546241b47733f1fc4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a9f1e6a70829d809feb6784441744ed74f8ea0d2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196969"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084341"
 ---
 # <a name="itemanalytics-resource-type"></a>itemAnalytics 资源类型
 

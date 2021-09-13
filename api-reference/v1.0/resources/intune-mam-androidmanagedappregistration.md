@@ -2,15 +2,15 @@
 title: androidManagedAppRegistration 资源类型
 description: 表示特定用户具有管理功能的 Android 应用的同步详细信息。 ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应用的详细信息。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fc3384cfe4053aec61801a41e146327819cd59fd915e1c3dcbb38255d78708c2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 84bf4da7249c99fb22f55821426d9448feafab37
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54192381"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59148261"
 ---
 # <a name="androidmanagedappregistration-resource-type"></a>androidManagedAppRegistration 资源类型
 

@@ -2,15 +2,15 @@
 title: 创建 userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails
 description: 创建新的 userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7c7582dbb669bacd7bd6e5d11d8b3c1289dfcffb
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: abbb292a72c5767cbbb7cb347079f036687768dd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58780521"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59027769"
 ---
 # <a name="create-userexperienceanalyticsapphealthappperformancebyappversiondetails"></a>创建 userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails
 
@@ -43,7 +43,7 @@ POST /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformanceByA
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -56,7 +56,7 @@ POST /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformanceByA
 |id|String|用户体验分析应用性能对象的唯一标识符。|
 |deviceCountWithCrashes|Int32|已报告此应用程序和版本的一个或多个应用程序崩溃的设备总数。 有效值 -2147483648 2147483647|
 |isMostUsedVersion|Boolean|应用程序版本是该应用程序最常用的版本。|
-|isLatestUsedVersion|布尔值|应用程序的版本是该应用使用的最新版本。|
+|isLatestUsedVersion|Boolean|应用程序的版本是该应用使用的最新版本。|
 |appName|String|应用程序名。|
 |appDisplayName|String|应用程序的友好名称。|
 |appPublisher|String|应用程序的发布者。|

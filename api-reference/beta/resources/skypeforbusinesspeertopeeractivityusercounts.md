@@ -1,16 +1,16 @@
 ---
 title: skypeForBusinessPeerToPeerActivityUserCounts 资源类型
 description: 下面是资源的 JSON 表示形式。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
 author: kszb
-ms.openlocfilehash: d8f0865751b9177fa3f503b488d6085f570463ab2be7dfe5411b5e05c9834017
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c793c9b0749dd4b913153e9e6a3f125a50014f96
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54244265"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59026768"
 ---
 # <a name="skypeforbusinesspeertopeeractivityusercounts-resource-type"></a>skypeForBusinessPeerToPeerActivityUserCounts 资源类型
 

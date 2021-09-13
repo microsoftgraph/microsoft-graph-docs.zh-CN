@@ -2,15 +2,15 @@
 title: 获取 resourceOperation
 description: 读取 resourceOperation 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ae55154667de1f81e298e4e0058ffa58796b44d8e0b8267dddd140860cca6282
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 52e705924a433563c32a84f127f30b2d3c7e9fae
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249431"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59114013"
 ---
 # <a name="get-resourceoperation"></a>获取 resourceOperation
 

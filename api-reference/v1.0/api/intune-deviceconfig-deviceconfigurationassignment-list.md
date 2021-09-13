@@ -2,15 +2,15 @@
 title: 列出 deviceConfigurationAssignments
 description: 列出 deviceConfigurationAssignment 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c408c8ac489ba805d568884ab7a2dec1a569acba8348087ae0c92287e8634589
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d55e0529e9ca5176cd8488190dbb89908e271c6a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54232137"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032837"
 ---
 # <a name="list-deviceconfigurationassignments"></a>列出 deviceConfigurationAssignments
 

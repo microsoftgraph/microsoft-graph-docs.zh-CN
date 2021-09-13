@@ -2,15 +2,15 @@
 title: authenticationMethodConfigurations
 description: authenticationMethodConfigurations 对象。
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: b94a80f212f7bbf4fe3f23b34828c8afec5cd3f72d7cc460ffe9455b1e2b3ae0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 27f0c8e809b88ad77a12a0f5e28acb9eeed953c9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54160098"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59126987"
 ---
 # <a name="authenticationmethodconfiguration-resource-type"></a>authenticationMethodConfiguration 资源类型
 命名空间：microsoft.graph

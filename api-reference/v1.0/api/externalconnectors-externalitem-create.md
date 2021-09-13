@@ -2,15 +2,15 @@
 title: 创建 externalItem
 description: 创建新的 externalItem。
 author: snlraju-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 7f337f21ec4a6c8069b598e756f1b3ff5327814e
-ms.sourcegitcommit: 6efd9df497d795988cd85474f379d1989b0995b7
+ms.openlocfilehash: db4aaef48be86ea0525f6ef2d1353b768c9d90a7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58697455"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022350"
 ---
 # <a name="create-externalitem"></a>创建 externalItem
 
@@ -18,7 +18,7 @@ ms.locfileid: "58697455"
 
 创建新的 [externalItem](../resources/externalconnectors-externalitem.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -50,10 +50,10 @@ POST /connections/{connectionsId}/items
 
 |属性|类型| 说明|
 |:---|:---|:---|
-|id|String|项目 ID。 此为必需属性。|
-|properties|[microsoft.graph.externalConnectors.properties](../resources/externalconnectors-properties.md)|项目属性。 `properties`对象必须至少包含一个属性。 所有 `DateTime` 类型属性都必须采用 ISO 8601 格式。 此为必需属性。|
+|id|String|项目 ID。 必填。|
+|properties|[microsoft.graph.externalConnectors.properties](../resources/externalconnectors-properties.md)|项目属性。 `properties`对象必须至少包含一个属性。 所有 `DateTime` 类型属性都必须采用 ISO 8601 格式。 必填。|
 |content|[microsoft.graph.externalConnectors.externalItemContent](../resources/externalconnectors-externalitemcontent.md)|外部项内容。 可选。|
-|acl|[microsoft.graph.externalConnectors.acl](../resources/externalconnectors-acl.md) 集合|访问控制列表。 此为必需属性。|
+|acl|[microsoft.graph.externalConnectors.acl](../resources/externalconnectors-acl.md) 集合|访问控制列表。 必需。|
 
 在下列 `externalItem` 情况下，上的 属性应在有效负载中使用类型说明符：
 
@@ -75,7 +75,7 @@ POST /connections/{connectionsId}/items
     ```
 
     > [!IMPORTANT]
-    > 当包含 类型的 属性 `Collection(DateTime)` 时，必须使用类型说明器 `Collection(DateTimeOffset)` 。
+    > 当包含类型的 属性 `Collection(DateTime)` 时，必须使用类型说明器 `Collection(DateTimeOffset)` 。
 
 ## <a name="response"></a>响应 
 

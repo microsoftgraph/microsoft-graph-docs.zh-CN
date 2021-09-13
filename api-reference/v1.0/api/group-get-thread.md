@@ -2,15 +2,15 @@
 title: 获取对话线程
 description: 获取 thread 对象。
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 27a5f78272936c94e4dcac113949b5eae836382e
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 67523bfc9be2c3da33e9fca525ba2b68d9738227
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682010"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59080077"
 ---
 # <a name="get-conversation-thread"></a>获取对话线程
 

@@ -1,9 +1,18 @@
+---
+ms.localizationpriority: medium
+ms.openlocfilehash: b1e82e19b7c9574bef62c4e3c474a5228b4d6170
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59289519"
+---
 <!-- markdownlint-disable MD002 MD041 -->
 
 完成所有先决条件后，你将能够在 Azure AD 管理中心注册应用程序。 注册是必需的，以便对应用程序进行身份验证，并使用它调用 Microsoft Graph连接器 API。
 
-1. 转到管理[Azure Active Directory，](https://aad.portal.azure.com/)然后使用管理员帐户登录。
-2. 在左侧窗格中，选择 **"Azure Active Directory"，****在**"管理"下，选择 **"应用注册"。**
+1. 转到管理[Azure Active Directory](https://aad.portal.azure.com/)中心，然后使用管理员帐户登录。
+2. 在左窗格中，选择 **"Azure Active Directory"，****在**"管理"下，选择 **"应用注册"。**
 3. 选择“新注册”。
 
     ![显示"应用注册"部分屏幕截图](images/connectors-images/build2.png)
@@ -18,7 +27,7 @@
 
     ![显示"注册应用程序"部分屏幕截图](images/connectors-images/build3-contoso-register-app.png)
 
-5. 在"部件清单连接器概述"页上，复制"应用程序 (客户端) ID"和" (目录) **ID"的值**。 你将需要在下一节中同时使用这两者。
+5. 在"部件清单连接器概述&quot;页上，复制&quot;应用程序客户端 (**ID&quot;** 和") 目录 (ID) 值。 你将需要在下一节中同时使用这两者。
 
     ![显示"部件清单连接器"部分的屏幕截图](images/connectors-images/build3-contoso-partsinv.png)
 

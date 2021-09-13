@@ -2,15 +2,15 @@
 title: 删除 remoteActionAudit
 description: 删除 remoteActionAudit。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f403f1b887df62f6f7f6f7e451349ec4939cfc00
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 07f90b3be9ef8d629d3497d8c722d8ee56797708
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794186"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59027979"
 ---
 # <a name="delete-remoteactionaudit"></a>删除 remoteActionAudit
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/remoteActionAudits/{remoteActionAuditId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

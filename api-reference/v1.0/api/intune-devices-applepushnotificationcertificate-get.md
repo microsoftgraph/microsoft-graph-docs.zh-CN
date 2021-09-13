@@ -2,15 +2,15 @@
 title: 获取 applePushNotificationCertificate
 description: 读取 applePushNotificationCertificate 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 53d94a872fd978cacd070eab132d58434b68cafe
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: aa096bbe8499bbc628ccddec3d14d4f7ceb6dec4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58265156"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59114160"
 ---
 # <a name="get-applepushnotificationcertificate"></a>获取 applePushNotificationCertificate
 
@@ -44,7 +44,7 @@ GET /deviceManagement/applePushNotificationCertificate
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

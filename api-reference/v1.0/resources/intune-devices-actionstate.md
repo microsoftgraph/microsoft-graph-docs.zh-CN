@@ -2,15 +2,15 @@
 title: actionState 枚举类型
 description: 设备上操作的状态
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e2ef36e340fd6595c3cdd41f339c2e21cb7ab5bb5e8fa30712a3ed7d6e73d73c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 60fd98273344253ee916b2a3d06bcde7965067d1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54192437"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59148310"
 ---
 # <a name="actionstate-enum-type"></a>actionState 枚举类型
 

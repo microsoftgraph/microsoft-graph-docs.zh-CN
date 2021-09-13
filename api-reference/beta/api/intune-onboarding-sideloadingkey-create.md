@@ -2,15 +2,15 @@
 title: 创建 sideLoadingKey
 description: 创建新的 sideLoadingKey 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3875103a6ac0e347983b58b74d5be64e9181ec68
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 249a57d10c4e7640b76ed7052906cc0c4b396a87
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785505"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59027573"
 ---
 # <a name="create-sideloadingkey"></a>创建 sideLoadingKey
 
@@ -43,7 +43,7 @@ POST /deviceAppManagement/sideLoadingKeys
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -56,7 +56,7 @@ POST /deviceAppManagement/sideLoadingKeys
 |id|String|旁加载密钥唯一 ID。|
 |value|String|Side Loading Key Value， it is 5x5 value， seperated by hiphens.|
 |displayName|String|向 ITPro 管理员显示的旁加载密钥名称。|
-|description|String|旁加载 向 ITPro 管理员显示的密钥说明。|
+|说明|String|旁加载 向 ITPro 管理员显示的密钥说明。|
 |totalActivation|Int32|向 ITPro 管理员显示的旁加载密钥总激活。|
 |lastUpdatedDateTime|String|向 ITPro 管理员显示的"旁加载密钥上次更新日期"。|
 

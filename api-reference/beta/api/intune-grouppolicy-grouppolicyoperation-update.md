@@ -2,15 +2,15 @@
 title: 更新 groupPolicyOperation
 description: 更新 groupPolicyOperation 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5fb1a5968cb098fb6f3e563c5f7210aabc8f8ffb
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: fe3cc1535fdf6ebc765681e9f73f2ab104bc5928
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58815797"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59024514"
 ---
 # <a name="update-grouppolicyoperation"></a>更新 groupPolicyOperation
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,11 +51,11 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 
 下表显示创建 [groupPolicyOperation](../resources/intune-grouppolicy-grouppolicyoperation.md)时所需的属性。
 
-|属性|类型|Description|
+|属性|类型|描述|
 |:---|:---|:---|
 |operationType|[groupPolicyOperationType](../resources/intune-grouppolicy-grouppolicyoperationtype.md)|组策略操作的类型。 可取值为：`none`、`upload`、`uploadNewVersion`、`addLanguageFiles`、`removeLanguageFiles`、`updateLanguageFiles` 或 `remove`。|
-|operationStatus|[groupPolicyOperationStatus](../resources/intune-grouppolicy-grouppolicyoperationstatus.md)|组策略操作状态。 可能的值是：`unknown`、`inProgress`、`success`、`failed`。|
-|statusDetails|字符串|组策略操作状态详细信息。|
+|operationStatus|[groupPolicyOperationStatus](../resources/intune-grouppolicy-grouppolicyoperationstatus.md)|组策略操作状态。 可取值为：`unknown`、`inProgress`、`success`、`failed`。|
+|statusDetails|String|组策略操作状态详细信息。|
 |id|String|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。|
 

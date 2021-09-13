@@ -2,15 +2,15 @@
 title: 删除 userExperienceAnalyticsWorkFromAnywhereMetric
 description: 删除 userExperienceAnalyticsWorkFromAnywhereMetric。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 70060b208c751e6c9794912101ab39f4fe19f401
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3ed5e9458f4c0ed9be99b3f3dd452c07d1c5a549
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786128"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020712"
 ---
 # <a name="delete-userexperienceanalyticsworkfromanywheremetric"></a>删除 userExperienceAnalyticsWorkFromAnywhereMetric
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/userExperienceAnalyticsWorkFromAnywhereMetrics/{userExp
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -2,15 +2,15 @@
 title: 创建 microsoftTunnelServer
 description: 创建新的 microsoftTunnelServer 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cc8b7ca247971453e6168f69d677df13a28a893a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4f35257914dd251a31ce0fb2c5b92eb33190068e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801625"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59030730"
 ---
 # <a name="create-microsofttunnelserver"></a>创建 microsoftTunnelServer
 
@@ -43,7 +43,7 @@ POST /deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/microsoftTun
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

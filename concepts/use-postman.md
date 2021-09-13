@@ -1,14 +1,14 @@
 ---
 title: 结合使用 Postman 和 Microsoft Graph API
 description: 使用 Microsoft Graph Postman 集合，只需几分钟，即可开始使用 Microsoft Graph API。
-author: jthake-msft
-localization_priority: Priority
-ms.openlocfilehash: 0473ef6e0ad7924a7b41889e615e6c1dedbbd989e98116a9c24ab604d186a1a6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+author: jasonjoh
+ms.localizationpriority: high
+ms.openlocfilehash: 51eb777dc7540db2d3afa01bcb3a89afacc15c11
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54143590"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134022"
 ---
 # <a name="use-postman-with-the-microsoft-graph-api"></a>结合使用 Postman 和 Microsoft Graph API
 
@@ -22,7 +22,7 @@ ms.locfileid: "54143590"
 
 ## <a name="step-1---forking-the-microsoft-graph-postman-collection"></a>第一步 - 创建 Microsoft Graph Postman 集合分支
 
-要使用 Postman 集合，请创建其分支到你的 Postman 工作区。 在 web 浏览器中进行该操作。
+若要使用 Postman 集合，请将其导入到你自己的 Postman 工作区。在 web 浏览器中进行该操作。
 
 1. 转到 [Postman](https://www.postman.com/) 并登录。
 1. 转到标签名为 [Microsoft Graph](https://www.postman.com/microsoftgraph/workspace/microsoft-graph/collection/455214-085f7047-1bec-4570-9ed0-3a7253be148c/fork) 的 Postman 集合。
@@ -81,12 +81,12 @@ Azure AD 应用程序现已具有代表用户提出调用 Mail.Read 请求的权
 
 由于这是你第一次通过委派身份验证流程运行请求，你需要获取访问令牌。
 
-1. 将鼠标光标悬浮在“**委派**”文件夹上，单击省略号，然后选择“**编辑**”。
+1. 选择“**委派**”文件夹。
 1. 单击“**授权**”选项卡。
+1. 在“**配置新令牌**”部分，单击“**配置选项**”选项卡。保留所有字段为预配置字段，包括设置为 `Authorization Code` 的 **授权类型**。
 1. 在右侧下滑并单击“**获取新的访问令牌**”。
 1. 使用你的开发者租户管理员账户登录。
 1. 单击“**继续**”，然后单击“**使用令牌**”按钮。
-1. 在该对话框的右下角，单击“**更新**”。
 
 你现在已具有用于委派请求的有效访问令牌。
 
@@ -104,11 +104,11 @@ Azure AD 应用程序现已具有代表用户提出调用 Mail.Read 请求的权
 
 由于这是你第一次通过应用程序身份验证流程运行请求，你需要获取访问令牌。
 
-1. 将鼠标光标悬浮在“**应用程序**”文件夹上，单击省略号，然后选择“**编辑**”。
+1. 选择“**应用程序**”文件夹。
 1. 单击“**授权**”选项卡。
+1. 在“**配置新令牌**”部分，单击“**配置选项**”选项卡。保留所有字段为预配置字段，包括设置为 `Client Credentials` 的 **授权类型**。
 1. 在右侧下滑并单击“**获取新的访问令牌**”。
 1. 单击“**继续**”，然后单击“**使用令牌**”按钮。
-1. 在该对话框的右下角，单击“**更新**”。
 
 你现在已具有用于委派请求的有效访问令牌。
 

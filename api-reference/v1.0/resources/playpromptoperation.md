@@ -2,15 +2,15 @@
 title: playPromptOperation 资源类型
 description: 获取 playPrompt 操作结果的 playPrompt 操作。
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: ab75f0346bf0739a08e2608d1348ccf52030982fb0a75e0d0670f20debc362fe
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2925224545b1615c87a9deac161c6d8b9429c545
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54251848"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019228"
 ---
 # <a name="playpromptoperation-resource-type"></a>playPromptOperation 资源类型
 

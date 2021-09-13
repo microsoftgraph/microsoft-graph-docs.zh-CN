@@ -2,15 +2,15 @@
 title: 术语资源类型
 description: 定义术语存储中的术语实体。
 author: vishriv
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: resourcePageType
-ms.openlocfilehash: 5a8c429a20ed533c6de8fb11bb13aa877e2c41be
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 570a4a365b86a48859608798ba3eb5be9958cd1e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514883"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084032"
 ---
 # <a name="term-resource-type"></a>术语资源类型
 
@@ -82,7 +82,7 @@ ms.locfileid: "58514883"
 }
 ```
 
-[store]: ../resources/termstore-store.md
+[商店]: ../resources/termstore-store.md
 [set]: ../resources/termstore-set.md
 [term]: ../resources/termstore-term.md
 [group]: ../resources/termstore-group.md

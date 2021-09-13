@@ -2,15 +2,15 @@
 title: 创建 mdmWindowsInformationProtectionPolicy
 description: 创建新的 mdmWindowsInformationProtectionPolicy 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8de956bfc3e39bd1125c22fe5e3ea4a84b2016baff9df69c8e4b9e664c40751f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 34668634b5b133864c94ae00076d09068fd169bc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54233943"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032767"
 ---
 # <a name="create-mdmwindowsinformationprotectionpolicy"></a>创建 mdmWindowsInformationProtectionPolicy
 

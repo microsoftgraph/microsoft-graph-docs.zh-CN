@@ -1,16 +1,16 @@
 ---
 title: 获取 b2xIdentityUserFlow
 description: 检索 b2xIdentityUserFlow 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: fa7897b2e98da58b0280f09ebb70f320baaf6007
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: bc3a5c1c670eb4cee7e26366bd03266882ba0b70
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51919969"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100447"
 ---
 # <a name="get-b2xidentityuserflow"></a>获取 b2xIdentityUserFlow
 
@@ -31,7 +31,7 @@ ms.locfileid: "51919969"
 工作或学校帐户需要属于以下角色之一：
 
 * 全局管理员
-* 外部标识用户流管理员
+* 外部标识用户Flow管理员
 
 ## <a name="http-request"></a>HTTP 请求
 

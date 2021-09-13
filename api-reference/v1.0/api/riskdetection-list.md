@@ -2,15 +2,15 @@
 title: 列出 riskDetections
 description: 获取 riskDetection 对象及其属性的列表。
 author: cloudhandler
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 996305683c7af96a61c8ca10cba36bef51935e38d15f37b9c5d604c44528e442
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a1473c492b5c2bad1fd2d9b42cb6788b9ab958f8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54126786"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067729"
 ---
 # <a name="list-riskdetections"></a>列出 riskDetections
 命名空间：microsoft.graph

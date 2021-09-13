@@ -2,15 +2,15 @@
 title: 'post: reply'
 description: '在组对话中答复帖子，并向指定线程中添加新帖子。 可以指定 '
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ecc13135fee90d0fc8175669551578fe9e22d128
-ms.sourcegitcommit: 7dc8ca82a8b2c25c5084e6b3121688766c9c14a6
+ms.openlocfilehash: a86b9fde843c76664cfff641e4485b4f698502db
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50072363"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085292"
 ---
 # <a name="post-reply"></a>post: reply
 

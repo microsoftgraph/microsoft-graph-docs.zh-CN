@@ -1,20 +1,20 @@
 ---
 title: 使用 Microsoft SDK 分页Graph集合
 description: 提供有关使用 Microsoft Graph SDK 创建 Microsoft Graph API 请求的说明。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: DarrelMiller
-ms.openlocfilehash: c0a291e71553f0e0c922756b4bfaa6ff86d6ae6cbbace9936eda3cad6d3124b4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ab76add730b0465ff7ef186f929573f6a360a1ce
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54174701"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59113453"
 ---
 # <a name="page-through-a-collection-using-the-microsoft-graph-sdks"></a>使用 Microsoft SDK 分页Graph集合
 
 出于性能原因，实体集合通常拆分为多个页面，并且每个页面返回一个指向下一页的 URL。 **PageIterator** 类简化了分页集合的使用。 **PageIterator** 自动枚举当前页面和请求后续页面。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 如果在初始请求中发送任何其他请求头，则默认情况下这些标头不会包含在后续页面请求中。 如果需要在后续请求中发送这些标头，则必须显式设置它们。
 

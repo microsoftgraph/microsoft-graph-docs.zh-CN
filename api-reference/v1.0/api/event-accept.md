@@ -2,15 +2,15 @@
 title: 'event: accept'
 description: 接受用户日历中的指定事件。
 author: harini84
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f261a5fa6f8faf4f6d38a2a72dc06e1d1ba6b370
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 34b581453cd413d819ca474e4550a2d00ec155ba
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448331"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59095191"
 ---
 # <a name="event-accept"></a>event: accept
 

@@ -2,15 +2,15 @@
 title: 创建 deviceManagementSettingCategory
 description: 创建新的 deviceManagementSettingCategory 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c8c38241f15a7255fb50687513b1773ed8809110
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4da721ae023a168c32462a8547cd3d9731ac725f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804713"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59018346"
 ---
 # <a name="create-devicemanagementsettingcategory"></a>创建 deviceManagementSettingCategory
 
@@ -43,7 +43,7 @@ POST /deviceManagement/categories
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,9 +53,9 @@ POST /deviceManagement/categories
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|类别 ID|
+|id|String|类别 ID|
 |displayName|String|类别名称|
-|hasRequiredSetting|布尔值|类别包含所需的顶级设置|
+|hasRequiredSetting|Boolean|类别包含所需的顶级设置|
 
 
 

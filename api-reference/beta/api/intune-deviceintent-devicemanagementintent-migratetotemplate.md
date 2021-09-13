@@ -2,15 +2,15 @@
 title: migrateToTemplate 操作
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 449b77938fb09e1743040d584ce6e4e995799e8a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5184c2ad30d295b20be9644da15bf5e0d8d819ae
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804370"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59024682"
 ---
 # <a name="migratetotemplate-action"></a>migrateToTemplate 操作
 
@@ -43,7 +43,7 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/migrateToTemplate
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,7 +51,7 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/migrateToTemplate
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |newTemplateId|String|尚未记录|
 |preserveCustomValues|Boolean|尚未记录|

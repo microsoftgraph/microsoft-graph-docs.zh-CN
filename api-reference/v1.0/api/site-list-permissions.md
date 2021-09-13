@@ -2,22 +2,22 @@
 title: 列出权限
 description: 从网站上的权限导航属性获取权限资源。
 author: BarrySh
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 33085513c2a6279a9c765fe43fa9eb8a025d1057
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 103980ad29f36a3266bd4bcf4c58438f1e586bb1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473699"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59026012"
 ---
 # <a name="list-permissions"></a>列出权限
 命名空间：microsoft.graph
 
 从 [网站上](../resources/permission.md) 的权限导航属性获取权限资源。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）

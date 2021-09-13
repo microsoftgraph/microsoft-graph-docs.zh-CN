@@ -1,16 +1,16 @@
 ---
 title: RangeFormat 资源类型
 description: 一个格式对象，其中封装了区域的字体、填充、边框、对齐方式和其他属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 4c8b8ea8cbfe49a02226ac938f06587cbb5d9288e1ab7a53c3276f96591be444
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cdcea1e15c70bcdef2d56d8f73b56937903160ab
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54174883"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143690"
 ---
 # <a name="rangeformat-resource-type"></a>RangeFormat 资源类型
 

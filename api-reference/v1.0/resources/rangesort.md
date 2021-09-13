@@ -2,15 +2,15 @@
 title: RangeSort 资源类型
 description: 管理对 Range 对象的排序操作。
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 4964162d6c3380f3dcbe12ef0ed6ce0009149bb3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3f2f3c97733be912817ef01c7f694993510e87fb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48028250"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143683"
 ---
 # <a name="rangesort-resource-type"></a>RangeSort 资源类型
 

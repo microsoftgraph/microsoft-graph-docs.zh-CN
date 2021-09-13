@@ -2,15 +2,15 @@
 title: 更新 cartToClassAssociation
 description: 更新 cartToClassAssociation 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: edc1c3939e8ad317aabca39f9876d5c7be13f751
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 67928d0aeb72310a9230b90792c598944ee31f02
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793702"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59031087"
 ---
 # <a name="update-carttoclassassociation"></a>更新 cartToClassAssociation
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/cartToClassAssociations/{cartToClassAssociationId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -57,8 +57,8 @@ PATCH /deviceManagement/cartToClassAssociations/{cartToClassAssociationId}
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
 |version|Int32|CartToClassAssociation 的版本。|
-|displayName|字符串|管理员提供的设备配置的名称。|
-|description|String|管理员提供了 CartToClassAssociation 的说明。|
+|displayName|String|管理员提供的设备配置的名称。|
+|说明|String|管理员提供了 CartToClassAssociation 的说明。|
 |deviceCartIds|String collection|要与类关联的设备购物车的标识符。|
 |classroomIds|String collection|要与设备购物车关联的教室的标识符。|
 

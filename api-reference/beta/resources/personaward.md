@@ -1,16 +1,16 @@
 ---
 title: personAward 资源类型
 description: personAward 资源类型
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 4af72499276b6eb4e90333243462e94f0cfa02b92aa014cbcdc59e1a111d1afa
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3e1ec26b6df9ccc83f47eb26fc502c3756564629
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54251048"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020166"
 ---
 # <a name="personaward-resource-type"></a>personAward 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "54251048"
 
 继承自 [itemFacet](../resources/itemfacet.md)。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出奖励](../api/profile-list-awards.md)|[personAward](../resources/personaward.md) 集合|从导航属性获取 personAward 资源。|
@@ -30,21 +30,21 @@ ms.locfileid: "54251048"
 |[删除 personAward](../api/personaward-delete.md)|无|删除 [personAward](../resources/personaward.md) 对象。|
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
 |createdBy|[identitySet](../resources/identityset.md)|提供创建实体的用户和/或应用程序的标识符。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |createdDateTime|DateTimeOffset|提供实体创建时的日期时间Offset。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|description|String|奖励或奖励的奖励。 |
+|说明|String|奖励或奖励的奖励。 |
 |displayName|String|奖励或奖励的名称。 |
-|id|字符串|用于单独寻址实体的标识符。 继承自 [实体](../resources/entity.md)|
+|id|String|用于单独寻址实体的标识符。 继承自 [实体](../resources/entity.md)|
 |inference|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断出来的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |issuedDate|日期|授予奖励或奖励的日期。 |
-|issuingAuthority|字符串|授予该奖励或奖励的颁发机构。  |
+|issuingAuthority|String|授予该奖励或奖励的颁发机构。  |
 |lastModifiedBy|[identitySet](../resources/identityset.md)|提供上次修改实体的用户和/或应用程序的标识符。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |lastModifiedDateTime|DateTimeOffset|提供实体创建时的日期时间Offset。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |source|[personDataSource](../resources/persondatasource.md)|如果从另一个服务同步，则值源自何处。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|thumbnailUrl|字符串|引用奖励或奖励缩略图的 URL。  |
+|thumbnailUrl|String|引用奖励或奖励缩略图的 URL。  |
 |WebUrl|String|引用奖励或奖励的 URL。 |
 
 ## <a name="relationships"></a>关系

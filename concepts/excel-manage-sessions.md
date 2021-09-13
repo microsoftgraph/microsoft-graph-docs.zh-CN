@@ -1,15 +1,15 @@
 ---
 title: 通过 Microsoft Graph 管理 Excel 会话和暂留
 description: 如果应用程序需要对 Excel API 进行多次（或两次以上）的调用，则应创建一个会话并为每个请求传递会话 ID。 请求中的会话 ID 可确保你以最有效的方式使用 Excel API。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 89ff7ed3d925e9457b21da45ff08b8f1583386131709f3ed33e65f91ac402f6a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fc3639b76fbfca470a1b6a4d9e51b4ad783eccc2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54169184"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136073"
 ---
 # <a name="manage-sessions-and-persistence-in-excel-with-microsoft-graph"></a>通过 Microsoft Graph 管理 Excel 会话和暂留
 
@@ -26,7 +26,7 @@ ms.locfileid: "54169184"
 >**注意：** Excel API 不需要会话标头也能起作用。但是，建议你使用会话标头来提高性能。如果不使用会话标头，API 调用过程中进行的更改 _仅_ 保持在该文件中。  
 
 ## <a name="request-types"></a>请求类型
-针对[API 的建议](workbook-error-handling.md)Excel基于请求类型、错误代码和状态代码。 请求类型如下：
+针对[API 的建议](workbook-error-handling.md)错误Excel基于请求类型、错误代码和状态代码。 请求类型如下：
 
 - **CreateSession 请求** - 用于创建永久会话或非永久会话。 在成功响应中，会话 ID 将在响应正文的 **id** 属性中返回。 有关详细信息，请参阅创建 [会话](/graph/api/workbook-createsession?view=graph-rest-1.0)。
 - **会话请求** - CreateSession 请求后的后续请求。 它们通常包括 `workbook-session-id: {session-id}` 标头。 例外情况是轮询状态请求，它使用长时间运行的操作模式。 有关详细信息，[请参阅使用需要很长时间才能完成的 API。](./workbook-best-practice.md#working-with-apis-that-take-a-long-time-to-complete)

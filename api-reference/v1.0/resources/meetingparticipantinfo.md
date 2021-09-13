@@ -2,15 +2,15 @@
 title: meetingParticipantInfo 资源类型
 description: 有关会议参与者的信息。
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: f262c6b2b13dc430173e585f6afa25c231bfea858b52bc56803a726ba893acff
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 505a31673ea110f899b37b7d6404b5020ed6d88e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54126401"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59113649"
 ---
 # <a name="meetingparticipantinfo-resource-type"></a>meetingParticipantInfo 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "54126401"
 | :------- | :---------------------------- | :---------------------------------------------------------------------------------- |
 | identity | [identitySet](identityset.md) | 参与者的身份信息。                                            |
 | upn      | String                        | 参与者的用户主体名称。                                             |
-| role     | onlineMeetingRole             | 指定会议参与者的角色。  可取值为：`attendee`、`presenter` 和 `unknownFutureValue`。|
+| role     | onlineMeetingRole             | 指定会议参与者的角色。  可能的值为 `attendee` `presenter` 、、 `producer` 和 `unknownFutureValue` 。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

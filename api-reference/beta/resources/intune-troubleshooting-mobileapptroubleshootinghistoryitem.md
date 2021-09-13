@@ -2,15 +2,15 @@
 title: mobileAppTroubleshootingHistoryItem 资源类型
 description: 包含在移动应用疑难解答事件中的历史记录项。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: eca7ddacef439b6542619f10ad65a3bfceb2c507
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 8e357b60c4ec19458d3c35813fa48ad11b1cdf90
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266910"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020180"
 ---
 # <a name="mobileapptroubleshootinghistoryitem-resource-type"></a>mobileAppTroubleshootingHistoryItem 资源类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "58266910"
 包含在移动应用疑难解答事件中的历史记录项。
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |occurrenceDateTime|DateTimeOffset|历史记录项发生的时间。|
 |troubleshootingErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|包含有关错误及其修正的详细信息的对象。|

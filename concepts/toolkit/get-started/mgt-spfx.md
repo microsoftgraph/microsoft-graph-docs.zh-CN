@@ -1,14 +1,14 @@
 ---
 title: 用于 Microsoft Graph 工具包 的 SharePoint 框架 库
 description: 使用 SharePoint 框架 Microsoft Graph Toolkit 库在解决方案Graph Toolkit Microsoft SharePoint 框架 Microsoft。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: waldekmastykarz
-ms.openlocfilehash: 6d2f354dd8913fe7cf5807bae05dde803ad74aae78243ae9bc64b5d2afd70e96
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 37f2570606b62de12f81e779fdcd4c33cb586f2c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249032"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032088"
 ---
 # <a name="sharepoint-framework-library-for-microsoft-graph-toolkit"></a>用于 Microsoft Graph 工具包 的 SharePoint 框架 库
 
@@ -24,7 +24,7 @@ ms.locfileid: "54249032"
 npm install @microsoft/mgt-spfx
 ```
 
-或者
+或
 
 ```bash
 yarn add @microsoft/mgt-spfx
@@ -35,7 +35,7 @@ yarn add @microsoft/mgt-spfx
 >[!IMPORTANT]
 >由于租户中只能安装 Microsoft Graph 工具包 SharePoint 框架库的一个版本，因此在解决方案中使用 Microsoft Graph 工具包之前，请确定你的组织或客户是否已部署某 SharePoint 框架库版本并使用相同版本。
 
-## <a name="usage"></a>使用情况
+## <a name="usage"></a>用法
 
 生成SharePoint 框架 Web 部件和扩展时，请引用 Microsoft Graph Toolkit `Provider` `SharePointProvider` 和从 `@microsoft/mgt-spfx` 程序包。 这将确保您的解决方案将使用 Microsoft Graph Toolkit已在页面上注册的组件，而不是实例化自己的组件。 无论 Web 部件使用哪个 JavaScript 框架，实例化过程对于所有 Web 部件都是相同的。
 
@@ -78,7 +78,7 @@ export default class MgtNoFrameworkWebPart extends BaseClientSideWebPart<IMgtNoF
 
 ### <a name="react"></a>React
 
-如果正在使用 Web 部件生成 web React，可以使用 `@microsoft/mgt-react` 包。 但是，请确保从路径导入React组件 `@microsoft/mgt-react/dist/es6/spfx` 。 这将确保你的解决方案将仅使用 Microsoft Graph Toolkit已在页面上注册的组件，而不是实例化自己的组件。
+如果正在使用 Web 部件生成 web React，可以使用 `@microsoft/mgt-react` 包。 但是，请确保从路径导入React组件 `@microsoft/mgt-react/dist/es6/spfx` 。 这将确保您的解决方案将仅使用 Microsoft Graph Toolkit页面上已注册的组件，而不是实例化自己的组件。
 
 ```tsx
 import { Person } from '@microsoft/mgt-react/dist/es6/spfx';
@@ -98,7 +98,7 @@ export default class MgtReact extends React.Component<IMgtReactProps, {}> {
 ```
 
 >[!IMPORTANT]
-> 请确保解决方案Graph Toolkit导入的所有 Microsoft 网站都来自：
+> 确保解决方案Graph Toolkit导入的所有 Microsoft 网站都来自：
 > * `@microsoft/mgt-spfx` 或
 > * `@microsoft/mgt-react/dist/es6/spfx`
 > 
