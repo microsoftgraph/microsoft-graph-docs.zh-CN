@@ -2,15 +2,15 @@
 title: mediaInfo 资源类型
 description: 提示操作中使用的媒体信息。
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 8d3a03604a608963c3d5ead22b523f0b8ce3d0979aa34666f4470bad5b61fad1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 40bde8c230843156d51b90db64a7e210686886f4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54141425"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59108952"
 ---
 # <a name="mediainfo-resource-type"></a>mediaInfo 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54141425"
 | 属性       | 类型    | 说明                      |
 |:---------------|:--------|:---------------------------------|
 | resourceId     | String  | 可选。 用于唯一标识资源。 如果传入，提示 uri 将针对此 resourceId 缓存为密钥。 |
-| uri            | String  | 将播放的提示的路径。 当前仅支持 Wave 文件 (.wav) 格式、单通道、16 位样本，采样率为 16，000 (16KHz) 。 |
+| uri            | String  | 将播放的提示的路径。 当前仅支持 Wave 文件 (.wav) 格式、单通道、16 位样本，采样率为 16，000 (16KHz) 采样率。 |
 
 
 ## <a name="json-representation"></a>JSON 表示形式

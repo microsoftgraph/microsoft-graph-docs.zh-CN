@@ -2,15 +2,15 @@
 title: incomingContext 资源类型
 description: 表示与传入呼叫关联的上下文。
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 8f7409048acb19e36446b257ed32acceff76d5783f3cf4050620de3da5e11314
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 80f300fc4f3cf051466b37c4445272444fdc71bc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54231787"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123354"
 ---
 # <a name="incomingcontext-resource-type"></a>incomingContext 资源类型
 

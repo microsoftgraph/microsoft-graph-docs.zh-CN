@@ -1,16 +1,16 @@
 ---
 title: callRecord 资源类型
 description: callRecord 类型
-localization_priority: Normal
+ms.localizationpriority: medium
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 06628ea11e47eb1935ccb9145ac1685d936f897c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9c01c99b57fa80ab4333cc9b7c334d416482c2df
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58798088"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104346"
 ---
 # <a name="callrecord-resource-type"></a>callRecord 资源类型
 

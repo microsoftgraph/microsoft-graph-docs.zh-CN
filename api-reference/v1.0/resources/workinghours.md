@@ -1,16 +1,16 @@
 ---
 title: workingHours 资源类型
 description: 表示特定时区用户一周的工作天数和小时数。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 775de66d328767e24a2bf7a47478cfcc2b482118e668ebf9c915eb069308f80a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 957ca46025a813c23cfc449460112dce3ea80210
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54182355"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134106"
 ---
 # <a name="workinghours-resource-type"></a>workingHours 资源类型
 

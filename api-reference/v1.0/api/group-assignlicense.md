@@ -1,22 +1,22 @@
 ---
 title: group： assignLicense
 description: 在组上添加或删除许可证。 分配给该组的许可证将分配给该组中的所有用户。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 4683afde4f3d22723d9975fffd8b5c18461e8588
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 102dc12dbefca57c2810431116588abb7fe48d43
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58513670"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59114517"
 ---
 # <a name="group-assignlicense"></a>group： assignLicense
 
 命名空间：microsoft.graph
 
-在组上添加或删除许可证。 分配给该组的许可证将分配给该组中的所有用户。 若要了解有关基于组的许可，请参阅什么是基于组的许可[Azure Active Directory。](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)
+在组上添加或删除许可证。 分配给该组的许可证将分配给该组中的所有用户。 若要详细了解基于组的许可，请参阅什么是基于组的许可[Azure Active Directory。](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)
 
 若要获取目录中可用的订阅，请执行 [GET subscribedSkus 请求](../resources/subscribedsku.md)。
 

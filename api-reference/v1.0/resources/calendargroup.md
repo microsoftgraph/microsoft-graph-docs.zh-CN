@@ -2,15 +2,15 @@
 title: calendarGroup 资源类型
 description: 一组用户日历。
 author: harini84
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: bceac8ed16809ad99fcf479997b754a2e1c6af143e6413222531708752d342f8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ca67a29dd6c48119442423570a08b66dd5a83f9b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54147005"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129962"
 ---
 # <a name="calendargroup-resource-type"></a>calendarGroup 资源类型
 

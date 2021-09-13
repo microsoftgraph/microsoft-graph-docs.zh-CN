@@ -1,22 +1,22 @@
 ---
 title: 添加成员
-description: 使用此 API 将用户或 (组的成员) 管理单元。
+description: 使用此 API 将用户或 (组的成员) 添加到管理单元。
 author: DougKirschner
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 4b744c9ebce925277d09cae0b49272c6e4d01598
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 67673cfb503c52fcf443ab6f4d374e515645aeb3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53210428"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128324"
 ---
 # <a name="add-a-member"></a>添加成员
 
 命名空间：microsoft.graph
 
-使用此 API 将用户或 (组的成员) 管理单元。
+使用此 API 将用户或 (组的成员) 添加到管理单元。
 
 `NOTE: Currently it's only possible to add one member at a time to an administrative unit.`
 

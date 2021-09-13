@@ -1,16 +1,16 @@
 ---
 title: 电子邮件应用使用情况报表
 description: 电子邮件应用使用情况报表可用于了解用于连接到 Exchange Online 的电子邮件应用数。 此外，还可以了解使用的 Outlook 应用版本，这有助于跟进应升级到受支持 Outlook 版本的用户。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sarahwxy
 ms.prod: reports
 doc_type: conceptualPageType
-ms.openlocfilehash: 5d31bc425730a0d60d039eb817a414ccb664f01e044328fde5460ad5706a71df
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8959d65250cd4f0dfac7b71970730bad8e6cfa8c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54192507"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118622"
 ---
 # <a name="email-app-usage-reports"></a>电子邮件应用使用情况报表
 

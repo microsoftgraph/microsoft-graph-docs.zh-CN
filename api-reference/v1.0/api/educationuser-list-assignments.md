@@ -1,16 +1,16 @@
 ---
 title: 列出用户的分配
 description: 获取分配给用户的所有课程的工作分配列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d5d878c109466490cee2ee26b8513c1108cb94c1
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: b7b25a26c4a5a6d1ce5a26401e7b910e3ee9483f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58667799"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59114615"
 ---
 # <a name="list-assignments-of-a-user"></a>列出用户的分配
 

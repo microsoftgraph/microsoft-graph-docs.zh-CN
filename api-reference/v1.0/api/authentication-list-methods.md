@@ -1,24 +1,22 @@
 ---
 title: List 方法
 description: 检索身份验证方法对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1054c0ef4605b21c9f90f57332ef8bf43dc70d6596c3203ed99aeaea7ff5258a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 762a0fe0bd68778120e0057c72b33e5c8c94e1de
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54232375"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100454"
 ---
 # <a name="list-methods"></a>List 方法
 
 命名空间：microsoft.graph
 
-检索身份验证 [方法对象](../resources/authenticationmethod.md) 的列表。
-
-> **注意：** 仅返回 v1.0 上支持的方法。
+检索身份验证 [方法对象](../resources/authenticationmethod.md) 的列表。 此 API 仅返回此 API 版本支持的身份验证方法。 有关 [当前支持的方法的列表，请参阅 Azure AD 身份验证](../resources/authenticationmethods-overview.md) 方法 API 概述。
 
 ## <a name="permissions"></a>权限
 

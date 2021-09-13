@@ -2,15 +2,15 @@
 title: externalItem 资源类型
 description: 添加到 Microsoft Graph项。
 author: mecampos
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 74fbabcb749be4e388f3fe335b57857e76a73616885558700779ccd52c0c929e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e50a494898faa377123e96238dee0bf1109d798d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54212086"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123445"
 ---
 # <a name="externalitem-resource-type"></a>externalItem 资源类型
 
@@ -29,9 +29,9 @@ ms.locfileid: "54212086"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|acl|[microsoft.graph.externalConnectors.acl](../resources/externalconnectors-acl.md) 集合|访问控制项数组。 每个条目指定授予用户或组的访问权限。 必填。|
+|acl|[microsoft.graph.externalConnectors.acl](../resources/externalconnectors-acl.md) 集合|访问控制项数组。 每个条目指定授予用户或组的访问权限。 必需。|
 |content|[microsoft.graph.externalConnectors.externalItemContent](../resources/externalconnectors-externalitemcontent.md)|项目内容的纯文本表示形式。 此属性中的文本已编制全文索引。 可选。|
-|id|String|开发人员提供的项目在包含[externalConnection 中的唯一 ID。](externalconnectors-externalconnection.md) 必须为字母数字，最多为 128 个字符。 必填。|
+|id|String|开发人员提供的项目在包含[externalConnection 中的唯一 ID。](externalconnectors-externalconnection.md) 必须为字母数字，最多为 128 个字符。 必需。|
 |properties|[microsoft.graph.externalConnectors.properties](../resources/externalconnectors-properties.md)|具有项目属性的属性包。 属性必须符合为[externalConnection](externalconnectors-externalconnection.md)定义的架构。 [](externalconnectors-schema.md) 必填。|
 
 ## <a name="relationships"></a>关系

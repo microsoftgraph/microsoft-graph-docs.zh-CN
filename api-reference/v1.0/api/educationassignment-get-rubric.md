@@ -1,16 +1,16 @@
 ---
 title: 获取附加到 educationAssignment 的 educationRubric
 description: 获取附加到 educationAssignment 的 educationRubric（如果存在）。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 1220d9814b304b14885ec3ff3f1eb60660d5325c
-ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
+ms.openlocfilehash: fad96bacff87a36008facdc5ae0b0587af268592
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58366629"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59130943"
 ---
 # <a name="get-educationrubric-attached-to-educationassignment"></a>获取附加到 educationAssignment 的 educationRubric
 

@@ -1,16 +1,16 @@
 ---
 title: offerShiftRequest： approve
 description: 批准 offerShiftRequest 对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 370e9399b7f4848209190fb771128a51ac820501
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 6256292aff08bed381b4e5a7ee26054530ef8790
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788072"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067897"
 ---
 # <a name="offershiftrequest-approve"></a>offerShiftRequest： approve
 

@@ -2,15 +2,15 @@
 title: adminConsentRequestPolicy 资源类型
 description: 指定可在整个租户中创建和管理同意请求的策略。
 author: psignoret
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: d2c4bffc0de82f4bdb55186db76dc0eb0fe17ff77e3edf6cc1b0d6fddcf32d68
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: eb2a2bdc94b900d28c5446524d32251dd76027b5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54202551"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094490"
 ---
 # <a name="adminconsentrequestpolicy-resource-type"></a>adminConsentRequestPolicy 资源类型
 
@@ -31,11 +31,11 @@ ms.locfileid: "54202551"
 
 |属性|类型|说明|
 |:---|:---|:---|
-|isEnabled|Boolean|指定是启用还是禁用管理员同意请求功能。 必填。|
-|notifyReviewers|Boolean|指定审阅者是否将收到通知。 必填。|
-|remindersEnabled|Boolean|指定审阅者是否将收到提醒电子邮件。 必填。|
+|isEnabled|Boolean|指定是启用还是禁用管理员同意请求功能。 必需。|
+|notifyReviewers|Boolean|指定审阅者是否将收到通知。 必需。|
+|remindersEnabled|布尔值|指定审阅者是否将收到提醒电子邮件。 必填。|
 |requestDurationInDays|Int32|指定请求在未应用决策时自动过期之前处于活动状态的持续时间。|
-|reviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合|管理员同意的审阅者列表。 必填。|
+|reviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合|管理员同意的审阅者列表。 必需。|
 |version|Int32|指定此策略的版本。 更新策略时，将更新此版本。 只读。|
 
 ## <a name="relationships"></a>关系

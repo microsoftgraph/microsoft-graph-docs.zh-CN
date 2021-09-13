@@ -2,15 +2,15 @@
 title: 获取 enrollmentConfigurationAssignment
 description: 读取 enrollmentConfigurationAssignment 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ed0b7573f3dce61129c2795ea2c9f4dc1f9973781a60eccb4aef7451755d0e24
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cbb85a47590158fa27041bcea9154638443e1b32
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54232032"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094805"
 ---
 # <a name="get-enrollmentconfigurationassignment"></a>获取 enrollmentConfigurationAssignment
 

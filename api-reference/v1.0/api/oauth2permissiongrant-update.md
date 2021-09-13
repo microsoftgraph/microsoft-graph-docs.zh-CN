@@ -1,25 +1,25 @@
 ---
 title: 更新 oAuth2PermissionGrant
-description: 更新 oAuth2PermissionGrant 的属性，表示委派的权限授予。
-localization_priority: Normal
+description: 更新 oAuth2PermissionGrant 的属性，表示委派权限授予。
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: fd75e020e69888c81cf4a9c53c180585ace73c7e
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 95418534651d7c29dfd2aa2c6c4e27b888b86d4f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50441772"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062899"
 ---
-# <a name="update-a-delegated-permission-grant-oauth2permissiongrant"></a>更新 oAuth2PermissionGrant (委派) 
+# <a name="update-a-delegated-permission-grant-oauth2permissiongrant"></a>更新 oAuth2PermissionGrant (委派权限) 
 
 命名空间：microsoft.graph
 
 
 更新 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象的属性，表示委派的权限授予。
 
-**oAuth2PermissionGrant** 可通过在作用域中添加或删除列表中的项目来更改授予的委派 **权限**。
+**oAuth2PermissionGrant** 可以更新为更改授予的委派权限，通过添加或删除列表中的项在 **作用域中**。
 
 ## <a name="permissions"></a>权限
 

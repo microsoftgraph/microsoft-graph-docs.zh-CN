@@ -1,16 +1,16 @@
 ---
 title: 在频道中发送 chatMessage
 description: 在指定的频道中创建新的 chatMessage。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 444729528c0ff97feed650f240e6d4e8e70dd921
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 184e90a11e4da1778c9a34de6f0e8c7282e0ce86
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53208456"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59130991"
 ---
 # <a name="send-chatmessage-in-channel"></a>在频道中发送 chatMessage
 
@@ -18,7 +18,7 @@ ms.locfileid: "53208456"
 
 在指定的频道[中发送新的 chatMessage](../resources/chatmessage.md) [。](../resources/channel.md)
 
-> **注意**：使用安全工具 [作为](/legal/microsoft-apis/terms-of-use)Microsoft Teams违反日志文件。 仅发送用户将阅读的邮件。
+> **注意**：使用 Microsoft Teams 违反使用条款 [](/legal/microsoft-apis/terms-of-use)日志文件。 仅发送用户将阅读的邮件。
 
 ## <a name="permissions"></a>权限
 

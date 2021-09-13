@@ -1,16 +1,16 @@
 ---
 title: persistentBrowserSessionControl 资源类型
 description: 用于定义是否保留 Cookie 的会话控件。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 440285b790e64af5c7a4764baf3176ac464fb7beedec848af444de55c432ef1d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 52c4efd5d7a3bfb87c34ab07ba84349c6d392af3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54124218"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117821"
 ---
 # <a name="persistentbrowsersessioncontrol-resource-type"></a>persistentBrowserSessionControl 资源类型
 

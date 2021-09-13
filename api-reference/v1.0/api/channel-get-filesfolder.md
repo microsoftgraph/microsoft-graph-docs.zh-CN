@@ -2,15 +2,15 @@
 title: 获取 filesFolder
 description: 检索频道的 filesFolder。
 author: nkramer
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 32272d197ff46545a7152f72f660a6132486d6c0
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 45bc671df35a4b97c372278e2703d681a8ef2226
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52039893"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59131007"
 ---
 # <a name="get-filesfolder"></a>获取 filesFolder
 

@@ -2,15 +2,15 @@
 title: deviceAndAppManagementAssignmentTarget 资源类型
 description: 赋值目标的基类型。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ef2f3f7c721ee9f3eed88e4faab7c6c3bec4753fcd54331cb0f3717411869fac
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a69f341e1d4f63a790180cb7731a46e58c5ea14d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54230492"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036275"
 ---
 # <a name="deviceandappmanagementassignmenttarget-resource-type"></a>deviceAndAppManagementAssignmentTarget 资源类型
 

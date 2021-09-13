@@ -2,15 +2,15 @@
 title: 删除 deviceManagementExportJob
 description: 删除 deviceManagementExportJob。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d03bfb4464ef427e7712cff172aa0ffce82a30fbde0dd697a7bab6ed62f3d03f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4cab7dd933d364bd651a56a87362f5d4481a71ca
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54233810"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59099495"
 ---
 # <a name="delete-devicemanagementexportjob"></a>删除 deviceManagementExportJob
 
@@ -41,7 +41,7 @@ DELETE /deviceManagement/reports/exportJobs/{deviceManagementExportJobId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -2,15 +2,15 @@
 title: 删除权限
 description: 删除网站上的权限对象。
 author: BarrySh
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 53649ddaccb9094f222a0aff6e07b2e52144cbe8
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 17ce3a9b19c9455090471243693925c1853a9a22
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50952708"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085070"
 ---
 # <a name="delete-permission"></a>删除权限
 命名空间：microsoft.graph

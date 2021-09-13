@@ -2,21 +2,21 @@
 title: authenticationMethodTarget 资源类型
 description: 启用以将身份验证方法用作身份验证方法策略一部分的用户或组的集合。
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ff64481140678055f8bab28f2ff4aa443689b11eec8a14d17648cf800a179996
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: efb7371c68a7e9deee9e176ebf2a69e70930e4e9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54124561"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59126952"
 ---
 # <a name="authenticationmethodtarget-resource-type"></a>authenticationMethodTarget 资源类型
 
 命名空间：microsoft.graph
 
-启用以将身份验证方法用作 Azure AD 中身份验证方法策略一部分的用户或组的集合。
+启用以将身份验证方法用作 Azure AD 中的身份验证方法策略一部分的用户或组的集合。
 
 
 ## <a name="properties"></a>属性

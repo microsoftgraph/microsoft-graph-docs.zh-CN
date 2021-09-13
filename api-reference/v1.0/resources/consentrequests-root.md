@@ -1,16 +1,16 @@
 ---
 title: Azure Active Directory同意请求
 description: 使用 Azure AD 同意请求来管理尝试访问需要管理员同意的应用的用户的请求工作流。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: psignoret
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: fc687460d397c4f8048607e1a1434ae48a7505d3af06590995dd2f47a08340d1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 796a0101d4c0b0649e7cd9cfbaf9ec4c556cdede
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54212110"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049667"
 ---
 # <a name="azure-active-directory-consent-requests"></a>Azure Active Directory同意请求
 
@@ -49,9 +49,9 @@ Azure Active Directory (Azure AD) 请求可帮助你管理尝试访问需要管�
 
 以下目录角色是呼叫用户管理请求工作流或读取请求列表所需的。
 
-| 操作 | 委派权限 | 呼叫用户的必需目录角色 |
+| Operation | 委派权限 | 呼叫用户的必需目录角色 |
 |:------------------|:------------|:--------------------------------------------|
-| 阅读 | ConsentRequest.Read.All、ConsentRequest.ReadWrite.All | 全局管理员、全局读者、云应用管理员和应用程序管理员 |
+| 读取 | ConsentRequest.Read.All、ConsentRequest.ReadWrite.All | 全局管理员、全局读者、云应用管理员和应用程序管理员 |
 
 ## <a name="see-also"></a>另请参阅
 

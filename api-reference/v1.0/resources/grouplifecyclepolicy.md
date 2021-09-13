@@ -1,16 +1,16 @@
 ---
 title: groupLifecyclePolicy 资源类型
 description: 表示组策略的Microsoft 365策略。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: d87a6690687eb0696bbe4afbef57ddffdbfc921358173ce18e0cc8b3d2fd696e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2a927f172074e8a889589c9c0b475be78868ca62
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54152731"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062675"
 ---
 # <a name="grouplifecyclepolicy-resource-type"></a>groupLifecyclePolicy 资源类型
 

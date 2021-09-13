@@ -2,15 +2,15 @@
 title: 更新 termsAndConditions
 description: 更新 termsAndConditions 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c4ef937ad95dbacf1bf7f631d2586c998571148875987495fd1207cab56d8aa7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9d2a6e612f6bcc04a0c4e97830cf54656ca1f587
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54219169"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085614"
 ---
 # <a name="update-termsandconditions"></a>更新 termsAndConditions
 
@@ -42,7 +42,7 @@ PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStat
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -1,18 +1,18 @@
 ---
-title: 将 Microsoft Graph Toolkit与管理中心
+title: 将 Microsoft Graph Toolkit与管理
 description: 开始在"Graph Toolkit"应用程序中使用 Microsoft 应用。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: amrutha95
-ms.openlocfilehash: 4c415d7d99981f3bd3e10180d46a142e5f80231ed7d5222a64faaf7942a05044
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d7bb3f9d31dbe399b52e33ab3eed086c1f161324
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54157898"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59089254"
 ---
-# <a name="use-the-microsoft-graph-toolkit-with-electron"></a>将 Microsoft Graph Toolkit与管理中心
+# <a name="use-the-microsoft-graph-toolkit-with-electron"></a>将 Microsoft Graph Toolkit与管理
 
-本文介绍使用 Microsoft Graph Toolkit创建一个"电子数据"应用，Microsoft 365。 完成这些步骤后，你将拥有一个显示当前登录用户即将在 Microsoft 365 的约会。
+本文介绍使用 Microsoft 应用创建"Graph Toolkit"应用并连接到应用应用的分Microsoft 365。 完成这些步骤后，你将拥有一个显示当前登录用户即将从 Microsoft 365 的约会。
 
 ## <a name="create-an-electron-app"></a>创建一个"时价"应用 
 通过克隆 [显示快速启动类型代码存储库来创建新的一个](https://github.com/electron/electron-quick-start-typescript) "显示"应用。 这将使用 TypeScript 创建一个新的"显示"应用，这将帮助你编写更可靠的代码并避免运行时错误。
@@ -60,11 +60,11 @@ npm start
 1. 从顶部菜单中，选择"新建 **注册"** 按钮。
 1. 输入应用的名称;例如， `My Electron-App` 。
 1. 对于受支持的帐户类型 [](/azure/active-directory/develop/single-and-multi-tenant-apps#who-can-sign-in-to-your-app)类型，请选择任何组织目录中的帐户 (任何 Azure AD 目录 - 多租户) 和个人 Microsoft 帐户 (例如 **Skype、Xbox) 。**
-1. 在" **重定向 URI"** 字段中的下拉列表中，选择"公共客户端/本机 (**移动 & 桌面) "，在**"URL"字段中输入 `msal://redirect` 。
+1. 在" **重定向 URI"** 字段中的下拉列表中，选择"公共客户端/本机 (移动 & **桌面) "，** 在"URL"字段中输入 `msal://redirect` 。
 1. 通过选择"注册" **按钮确认** 更改。
 1. 转到应用程序注册。
 1. 验证是否位于"概述 **"** 页上。
-1. 从 **Essentials** 部分，将 Application (**客户端的值**) ID 属性。
+1. 从 **Essentials** 部分，将 Application (**客户端的值) ID** 属性。
 
 ## <a name="configure-the-microsoft-graph-toolkit-authentication-provider"></a>配置 Microsoft Graph Toolkit身份验证提供程序
 
@@ -72,7 +72,7 @@ npm start
 
 负责与主进程中 (用户通信) 请求访问令牌，并接收有关 mgt 组件正常工作所需的登录 `ElectronProvider` `ElectronAuthenticator` 状态的信息。 
 
-若要初始化 `ElectronProvider` ，请向 *src/renderer.ts 文件添加以下* 代码。
+若要初始化 `ElectronProvider` ，将以下代码添加到 *src/renderer.ts* 文件。
 ```ts
 import {Providers} from '@microsoft/mgt-element';
 import {ElectronProvider} from '@microsoft/mgt-electron-provider/dist/Provider';
@@ -83,7 +83,7 @@ import '@microsoft/mgt-components';
 Providers.globalProvider = new ElectronProvider();
 ```
 
-### <a name="initializing-electronauthenticator-in-your-main-process"></a>在主进程中初始化一个操作方法
+### <a name="initializing-electronauthenticator-in-your-main-process"></a>在主进程中初始化一个使用Authenticator
 
 负责为 MSAL 身份验证设置配置变量、获取访问令牌并与 `ElectronAuthenticator` 通信 `ElectronProvider` 。 在主进程中初始化 ，并设置配置变量，如客户端 `ElectronAuthenticator` ID 和所需作用域。 
 
@@ -92,7 +92,7 @@ Providers.globalProvider = new ElectronProvider();
 ```ts
 import { ElectronAuthenticator, MsalElectronConfig } from '@microsoft/mgt-electron-provider/dist/Authenticator'; 
 ```
-接下来，在 函数中添加这些代码行，以初始化在 声明位置之后 `createWindow()` 的一个 `mainWindow` 。。 将 `<your_client_id>` 替换为应用注册中的客户端 ID。
+接下来，在 函数中添加这些代码行，以初始化在 声明位置之后 `createWindow()` 的一部分 `mainWindow` 。。 将 `<your_client_id>` 替换为应用注册中的客户端 ID。
 
 ```ts
 const config: MsalElectronConfig = {
@@ -129,7 +129,7 @@ const mainWindow = new BrowserWindow({
  
 ### <a name="add-components-to-your-html-page"></a>将组件添加到 HTML 页面
  
-向应用添加一些内容。 现在，可以使用 Graph l 页面中的 Microsoftindex.htm *工具包* 组件，并显示用户议程。 将 *"index.htm"页* 的内容替换为以下内容。
+向应用添加一些内容。 现在，可以使用 Graph 页面中的 Microsoftindex.htm *工具包* 组件，并显示用户议程。 将 *"index.htm"页* 的内容替换为以下内容。
  
  ```html
 <!DOCTYPE html>
@@ -212,7 +212,7 @@ const mainWindow = new BrowserWindow({
 
  ```
  
- 如你所见，前端 (呈现器) 和后端 (主进程) 分开捆绑。 这是因为在"In一线"中，呈现器进程在浏览器上下文中运行，而主进程在节点上下文中运行。
+ 如你所见，前端 (呈现器进程) 和后端 (进程) 绑定。 这是因为在"在 In一页"中，呈现器进程在浏览器上下文中运行，而主进程在节点上下文中运行。
  
  #### <a name="add-the-webpacking-script-in-packagejson"></a>将 webpacking 脚本添加到 ```package.json```
  
@@ -233,7 +233,7 @@ const mainWindow = new BrowserWindow({
 
 ### <a name="add-token-caching-capabilities-to-your-app-and-enable-silent-sign-ins-advanced"></a>向应用添加令牌缓存功能，并启用无提示登录 (高级) 
 
-MSAL 节点默认支持内存中缓存，并提供 ICachePlugin 接口以执行缓存序列化，但不提供将令牌缓存存储到磁盘的默认方法。 如果需要永久缓存存储来启用无提示登录或跨平台缓存，我们建议使用 MSAL Node 提供的默认实现作为 [扩展](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/extensions/msal-node-extensions)。 你可以导入此插件，在初始化 时传递缓存插件的实例 `ElectronAuthenticator` 。
+MSAL 节点默认支持内存中缓存，并提供 ICachePlugin 接口来执行缓存序列化，但不提供将令牌缓存存储到磁盘的默认方法。 如果需要永久缓存存储来启用无提示登录或跨平台缓存，我们建议使用 MSAL Node 提供的默认实现作为 [扩展](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/extensions/msal-node-extensions)。 你可以导入此插件，在初始化 时传递缓存插件的实例 `ElectronAuthenticator` 。
 
 ```ts
 let config: MsalElectronConfig = {

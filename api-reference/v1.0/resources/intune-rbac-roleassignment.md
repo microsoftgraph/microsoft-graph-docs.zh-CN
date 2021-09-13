@@ -2,15 +2,15 @@
 title: roleAssignment 资源类型
 description: 角色分配资源。 角色分配将角色定义与成员和作用域绑定在一起。 每个角色可以具有一个或多个角色分配。 这适用于自定义和内置角色。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fc474f933a558eb0d7ab5894b29ca926a06e2d9b5edde968b7379275400f9077
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 24d37379db351f059b6309d3d86223ae1bb5512d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54205232"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59126798"
 ---
 # <a name="roleassignment-resource-type"></a>roleAssignment 资源类型
 

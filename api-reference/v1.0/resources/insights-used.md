@@ -2,15 +2,15 @@
 title: usedInsight 资源类型
 description: 代表特定用户使用的文档的见解。 见解将返回用户查看或修改的最相关的文档。
 author: simonhult
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 6c1933231c9294daf4cccfeeba41ecd71582e3fe4324e28121f40b444c848e34
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4163fa241a31b259e87c312b90f07ed05893f682
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54230688"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036485"
 ---
 # <a name="usedinsight-resource-type"></a>usedInsight 资源类型
 
@@ -25,14 +25,14 @@ ms.locfileid: "54230688"
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
-|[使用的列表](../api/insights-list-used.md) |[usedInsight](insights-used.md) 集合| 获取已用文件的列表。|
+|[使用的列表](../api/insights-list-used.md) |[usedInsight](insights-used.md) 集合| 获取已使用文件的列表。|
 
 ## <a name="properties"></a>属性
 
 | 属性              | 类型                      | 说明  |
 | -------------         |---------------            | -------------|
 | id                    | String                    | 关系的唯一标识符。 只读。        |
-| lastUsed              | [usageDetails](insights-usagedetails.md)              | 有关用户上次查看或修改项目的信息。 只读。      |
+| lastUsed              | [usageDetails](insights-usagedetails.md)              | 有关用户上次查看或修改项目时间的信息。 只读。      |
 | resourceVisualization | [resourceVisualization](insights-resourcevisualization.md)                | 可用于在体验中可视化文档的属性。 只读      |
 | resourceReference     | [resourceReference](insights-resourcereference.md)                      | 引用已用文档的属性，如文档的 url 和类型。 只读     |
 

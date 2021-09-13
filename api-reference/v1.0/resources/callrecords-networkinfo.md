@@ -1,16 +1,16 @@
 ---
 title: networkInfo 资源类型
 description: networkInfo 类型
-localization_priority: Normal
+ms.localizationpriority: medium
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: d12d9364b33a288aa750b565c7fa60157d020a5a9c00eb5092a71c04178ff237
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e5f3115b5f450c3998ffb93f8b843dcc80e9f6d9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54121436"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59029155"
 ---
 # <a name="networkinfo-resource-type"></a>networkInfo 资源类型
 
@@ -31,7 +31,7 @@ ms.locfileid: "54121436"
 |linkSpeed|Int64|媒体终结点使用的网络适配器报告的链接速度（以位/秒为单位）。|
 |macAddress|String|媒体访问控制 (MAC) 终结点的网络设备的地址。|
 |端口|Int32|媒体终结点使用的网络端口号。|
-|receivedQualityEventRatio|双精度|媒体终结点检测到网络导致接收的音频质量差的呼叫的一小部分。|
+|receivedQualityEventRatio|双精度|媒体终结点检测到网络导致接收的音频质量差的通话的一小部分。|
 |将iveIPAddress|String|媒体中继服务器所看到的媒体终结点的 IP 地址。 这通常是与终结点关联的公共 Internet IP 地址。|
 |relayIPAddress|String|媒体终结点分配的媒体中继服务器的 IP 地址。|
 |relayPort|Int32|媒体终结点在媒体中继服务器上分配的网络端口号。|

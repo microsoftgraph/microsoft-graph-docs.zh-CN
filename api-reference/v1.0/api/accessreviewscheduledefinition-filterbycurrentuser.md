@@ -1,18 +1,18 @@
 ---
-title: accessReviewScheduleDefinition： filterByCurrentUser
+title: accessReviewScheduleDefinition：filterByCurrentUser
 description: 返回 accessReviewScheduleDefinition 对象，其中调用用户是审阅者。
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 2185e064dcd39049e90063dbcbe1100f9da36344
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: c3a7edf9b7be1921cd645b1dec9b896b02f1adc9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53209582"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59038613"
 ---
-# <a name="accessreviewscheduledefinition-filterbycurrentuser"></a>accessReviewScheduleDefinition： filterByCurrentUser
+# <a name="accessreviewscheduledefinition-filterbycurrentuser"></a>accessReviewScheduleDefinition：filterByCurrentUser
 命名空间：microsoft.graph
 
 返回 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象，其中调用用户是一个或多个 [accessReviewInstance](../resources/accessreviewinstance.md) 对象的审阅者。

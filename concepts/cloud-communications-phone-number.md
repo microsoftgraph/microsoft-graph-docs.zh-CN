@@ -2,18 +2,18 @@
 title: 管理机器人的电话号码
 description: 本文介绍如何创建可以通过电话号码访问的机器人。
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
-ms.openlocfilehash: 4f9215c0416001cd69d3fb4ad0728d0e858221fe1f06957e3251d0a253a7f791
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7ef62359d658ce848f922b5d2e083e7e952ddbcc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54246444"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136143"
 ---
 # <a name="manage-phone-numbers-for-bots"></a>管理机器人的电话号码 
 
-本文介绍如何创建可以通过电话号码访问的机器人。 创建自动程序时，熟悉以下术语会很有帮助：
+本文介绍如何创建可以通过电话号码访问的机器人。 创建自动程序时，熟悉以下术语将很有帮助：
 
 - **应用程序** – 托管在 Azure 上的应用程序，也称为自动 **程序**。
 
@@ -36,7 +36,7 @@ To get started， follow the instructions to [register a calling bot](https://mi
 有关与呼叫相关的权限详细信息，请参阅 [权限参考](permissions-reference.md#calls-permissions)。
 
 
-## <a name="assign-a-phone-number-to-your-bot"></a>向自动程序分配电话号码
+## <a name="assign-a-phone-number-to-your-bot"></a>将电话号码分配给自动程序
 
 将电话号码分配给机器人涉及三个步骤：
 
@@ -60,11 +60,11 @@ To get started， follow the instructions to [register a calling bot](https://mi
 
 ### <a name="assign-microsoft-365-licenses-to-your-application-instance"></a>将Microsoft 365许可证分配给应用程序实例
 
-将虚拟用户许可证分配给应用程序实例。 有关详细信息，请参阅电话[虚拟用户许可证](/microsoftteams/teams-add-on-licensing/virtual-user)。
+将虚拟用户许可证分配给应用程序实例。 有关详细信息，请参阅电话[系统虚拟用户许可证](/microsoftteams/teams-add-on-licensing/virtual-user)。
 
 将通话套餐分配给应用程序实例。 有关详细信息，请参阅[通话套餐Microsoft 365。](/microsoftteams/calling-plans-for-office-365)
 
-### <a name="assign-a-phone-number-to-the-application-instance-only-tenant-admin"></a>仅租户管理员为应用程序实例 (电话号码) 
+### <a name="assign-a-phone-number-to-the-application-instance-only-tenant-admin"></a>将电话号码分配给仅租户管理员 (应用程序实例) 
 
 在进行组织用户拨打和接听电话的设置之前，必须先为用户获取电话号码。 有关详细信息，请参阅 [获取用户的电话号码](/microsoftteams/getting-phone-numbers-for-your-users#get-new-phone-numbers-for-your-users)。
 

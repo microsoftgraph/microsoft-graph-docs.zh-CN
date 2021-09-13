@@ -2,15 +2,15 @@
 title: resourceReference 资源类型
 description: 包含属性的复杂Insights。
 author: simonhult
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 7ade1e86fc601d1f00a16136a8610634934d0b4faf7b377a85ff55cf65fab671
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c7694aa2c9a487a3e07ce99d9850445de26c3acb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54152619"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123361"
 ---
 # <a name="resourcereference-resource-type"></a>resourceReference 资源类型
 

@@ -2,15 +2,15 @@
 title: deviceManagement 资源类型
 description: 充当设备管理下的 Android for Work 设置功能容器的单例实体。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e405d26e210a9f7d5e29e76b75e4e45876e2c97e29cd5b737ee41690c240f721
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 926180cf017fb55a5b280e073dc0c08ceace8373
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54182516"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123340"
 ---
 # <a name="devicemanagement-resource-type"></a>deviceManagement 资源类型
 

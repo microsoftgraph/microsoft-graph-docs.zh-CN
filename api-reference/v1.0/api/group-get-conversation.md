@@ -2,15 +2,15 @@
 title: 获取对话
 description: 获取 conversation 对象。
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: bd434a9c820559d2834776ef934c6fdb6c3056b3
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: e220fa0ba48f5d4b3c28ae60a2fe98e4cbfcf03a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681016"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59037871"
 ---
 # <a name="get-conversation"></a>获取对话
 

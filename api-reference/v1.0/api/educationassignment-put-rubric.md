@@ -1,22 +1,22 @@
 ---
 title: 将 educationRubric 附加到 educationAssignment
 description: 将现有 educationRubric 对象附加到 educationAssignment。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 51c2cf968f1064b3e8bbe8cb157cb95f8e46d959
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: a2b9b4428153c0f05bea254e8a41d2a2cf64a766
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52992490"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020096"
 ---
 # <a name="attach-educationrubric-to-an-assignment"></a>将 educationRubric 附加到作业
 
 命名空间：microsoft.graph
 
-将现有的 [educationRubric](../resources/educationrubric.md) 对象附加到 [educationAssignment](../resources/educationassignment.md)。
+将现有 [educationRubric](../resources/educationrubric.md) 对象附加到 [educationAssignment](../resources/educationassignment.md)。
 
 ## <a name="permissions"></a>权限
 

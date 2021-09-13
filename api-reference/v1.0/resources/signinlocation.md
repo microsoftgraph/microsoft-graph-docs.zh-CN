@@ -1,16 +1,16 @@
 ---
 title: signInLocation 资源类型
 description: 提供发生登录的城市、省/市/自治区和国家/地区。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dhanyahk
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: fb22cf430ec3bffd04150398600beae5af4c41579f00f3cf49196587efb9f44b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 826daa833829b8ca9da9f4844827b308c8843044
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54124155"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139595"
 ---
 # <a name="signinlocation-resource-type"></a>signInLocation 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "54124155"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |城市|String|提供登录的来源城市。 这是使用登录活动中的经纬度信息计算的。|
-|countryOrRegion|String|提供登录来源 (2 个字母) 代码的国家/地区代码信息。  这是使用登录活动中的经纬度信息计算的。|
+|countryOrRegion|String|提供登录来源 (2 个字母) 的国家/地区代码信息。  这是使用登录活动中的经纬度信息计算的。|
 |geoCoordinates|[geoCoordinates](geocoordinates.md)|提供登录来源的纬度、经度和海拔高度。|
 |state|String|提供登录来源的状态。 这是使用登录活动中的经纬度信息计算的。|
 

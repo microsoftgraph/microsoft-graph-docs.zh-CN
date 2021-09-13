@@ -2,15 +2,15 @@
 title: serviceUpdateMessage：unfavorite
 description: 删除已登录用户的 serviceUpdateMessage 的收藏夹状态。
 author: payiAzure
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 221dfd0f19c9699068198099219546ad9a0c2432
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 98a2f3302177fa454341e51172405fecfcefe4ea
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257960"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59119000"
 ---
 # <a name="serviceupdatemessage-unfavorite"></a>serviceUpdateMessage：unfavorite
 命名空间：microsoft.graph
@@ -49,7 +49,7 @@ POST /admin/serviceAnnouncement/messages/unfavorite
 
 |参数|类型|说明|
 |:---|:---|:---|
-|messageIds|String collection|要从收藏夹中删除的邮件 ID 的列表。|
+|messageIds|字符串集合|要从收藏夹中删除的邮件 ID 的列表。|
 
 ## <a name="response"></a>响应
 

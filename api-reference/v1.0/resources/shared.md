@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: 共享的内容
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 共享 资源指示 DriveItem 已与他人共享。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 7dc4eb845b1458da996a0ccbd23724b502cd899c205dca4515183b74162c6f5b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4298f35f95e4e5e5f18c8ee8492c70fae30d4928
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54251755"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59126623"
 ---
 # <a name="shared-resource-type"></a>Shared 资源类型
 

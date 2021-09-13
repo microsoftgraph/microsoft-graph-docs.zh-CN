@@ -1,16 +1,16 @@
 ---
 title: 删除 b2xIdentityUserFlow
 description: 删除 b2xIdentityUserFlow 对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 48ef3fcceb0e98b71c1beaaee2d552bec8549d26
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: dcff39771dc6cff7e9fb6ffc67f60a806a456c79
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51922017"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59090801"
 ---
 # <a name="delete-b2xidentityuserflow"></a>删除 b2xIdentityUserFlow
 
@@ -31,7 +31,7 @@ ms.locfileid: "51922017"
 工作或学校帐户需要属于以下角色之一：
 
 * 全局管理员
-* 外部标识用户流管理员
+* 外部标识用户Flow管理员
 
 ## <a name="http-request"></a>HTTP 请求
 

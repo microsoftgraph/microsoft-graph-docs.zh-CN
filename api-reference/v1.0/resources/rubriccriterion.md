@@ -1,16 +1,16 @@
 ---
 title: rubricCriterion 资源类型
 description: 标准标准。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 0b6a3dd9381d6c805ebb865866be83420d1a0498833ee309cc3ed0c2756bc0d4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2f383e5be9e0ef015320d345b345b427d256d748
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54231493"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59108847"
 ---
 # <a name="rubriccriterion-resource-type"></a>rubricCriterion 资源类型
 

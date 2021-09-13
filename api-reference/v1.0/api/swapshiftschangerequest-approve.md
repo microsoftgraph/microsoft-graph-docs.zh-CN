@@ -1,16 +1,16 @@
 ---
 title: swapShiftsChangeRequest：approve
 description: 批准交换班次请求。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ed0cb01e2244b8b103933bccff793c10bbdb56c7
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 1dc33cb5aeab50299bdd506f9003e7045026aa5b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787096"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019452"
 ---
 # <a name="swapshiftschangerequest-approve"></a>swapShiftsChangeRequest：approve
 

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8c9c69db9eeaf3bb8488f08ba023834934c9ee4f
-ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
+ms.openlocfilehash: 8326ff69e472fb283184d30c0b2c148f0844d1d9e5d8792c17c0ecd3f70245c7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49910365"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "57218424"
 ---
 ```objc
 

@@ -2,15 +2,15 @@
 title: 更新 linkedResource
 description: 更新 linkedResource 对象的属性。
 author: avijityadav
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b41e4d3948ccca6f58c1ab701367f4432b489551
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 1bb6ee51b81eb9d76cb125c8848a65deb27e3cb6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873806"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019767"
 ---
 # <a name="update-linkedresource"></a>更新 linkedResource
 命名空间：microsoft.graph
@@ -50,11 +50,11 @@ PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/l
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|链接实体的服务器生成 ID 继承自 [实体](../resources/entity.md)|
+|id|String|链接实体的服务器生成的 ID 继承自 [实体](../resources/entity.md)|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回响应代码和更新的 [linkedResource](../resources/linkedresource.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [linkedResource](../resources/linkedresource.md) 对象。
 
 ## <a name="examples"></a>示例
 

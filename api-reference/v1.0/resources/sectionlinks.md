@@ -1,22 +1,22 @@
 ---
 title: sectionLinks 资源类型
-description: 用于打开"OneNote"部分的链接。
-localization_priority: Normal
+description: 用于打开"OneNote部分的链接。
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: c38c7f5418fd0aed2b49db487771795d127ba38dfa2af13c8c7bcbba9d3a2361
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8c227c7963566e01c863fefa4aacb53cff31ce4a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235273"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139658"
 ---
 # <a name="sectionlinks-resource-type"></a>sectionLinks 资源类型
 
 命名空间：microsoft.graph
 
-用于打开"OneNote"部分的链接。
+用于打开"OneNote部分的链接。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

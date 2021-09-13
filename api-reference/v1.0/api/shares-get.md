@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: 访问共享项目
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 通过使用 shareId 或共享 URL 访问共享 DriveItem 或共享项目集合。
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 1685a402df438155ce377f6493e6ba1766b10914
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: bdb3cad31818423117c13f20f89067471fc16c1f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238727"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085110"
 ---
 # <a name="accessing-shared-driveitems"></a>访问共享 DriveItem
 
@@ -74,7 +74,7 @@ string encodedUrl = "u!" + base64Value.TrimEnd('=').Replace('/','_').Replace('+'
 | redeemSharingLink             | 如果 **shareIdOrEncodedSharingUrl** 是共享链接，则向调用方授予对项目的持久访问权限    |
 | redeemSharingLinkIfNecessary  | 与 redeemSharingLink 相同，但仅保证在此请求的持续时间内授予访问权限 |
 
-redeemSharingLink 应视为等效于导航到浏览器的共享链接的调用方 (接受共享手势) ，而 redeemSharingLinkIfNecessary 用于目的只是查看链接元数据的方案。
+redeemSharingLink 应视为等效于导航到浏览器 (接受共享手势) 的共享链接的调用方，而 redeemSharingLinkIfNecessary 适用于目的只是速览链接元数据的方案。
 
 ## <a name="response"></a>响应
 
@@ -252,7 +252,7 @@ Content-Type: application/json
 
 ## <a name="error-responses"></a>错误响应
 
-请参阅[错误响应][error-response]主题，详细了解错误返回方式。
+请阅读 [错误响应][error-response] 主题，了解有关如何返回错误的详细信息。
 
 ## <a name="remarks"></a>注解
 

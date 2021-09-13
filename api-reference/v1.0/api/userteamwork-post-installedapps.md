@@ -3,14 +3,14 @@ title: 为用户安装应用
 description: 在指定用户的个人范围内安装应用。
 author: akjo
 doc_type: apiPageType
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: a6e28eff164653cd0a59621418e5a42ac99f16bb
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: af578039231cee40ba015e66ea28ddd27772ebbb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53060546"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59099124"
 ---
 # <a name="install-app-for-user"></a>为用户安装应用
 

@@ -2,15 +2,15 @@
 title: resultInfo 资源类型
 description: 其中包含特定于成功和失败的结果信息。
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 37a6d7a1881a26d79df568b2fa8f81382ae8b32089ea7683d003522b82805b8c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 89ac770d9ace4a35365e1c215e00c51e1d060bdd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54177980"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59113537"
 ---
 # <a name="resultinfo-resource-type"></a>resultInfo 资源类型
 

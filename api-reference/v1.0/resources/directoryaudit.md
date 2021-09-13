@@ -2,15 +2,15 @@
 title: directoryAudit 资源类型
 description: 表示目录审核项目及其集合。
 author: SarahBar
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 83ac3a1df7162d680d6fa0b17955a0746e6d986ed847372ccbeb020123573afa
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c542f020e7b67866239dbc0ef8a5612d8f0e5be5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54130357"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59089828"
 ---
 # <a name="directoryaudit-resource-type"></a>directoryAudit 资源类型
 
@@ -36,7 +36,7 @@ ms.locfileid: "54130357"
 | correlationId       | GUID                                                | 指示有助于关联跨各种服务的活动的唯一 ID。 可用于跨服务跟踪日志。                                                                                                                                                |
 | id                  | String                                              | 指示活动的唯一 ID。 这是 GUID。                                                                                                                                                                                                                          |
 | initiatedBy         | [auditActivityInitiator](auditactivityinitiator.md) | 指示有关启动活动的用户或应用的信息。                                                                                                                                                                                                                |
-| loggedByService     | String                                              | 指示有关哪个服务启动活动 (例如 `Self-service Password Management` `Core Directory` ：、、、、、。 `B2C` `Invited Users` `Microsoft Identity Manager` `Privileged Identity Management`                                                                      |
+| loggedByService     | String                                              | 指示有关哪个服务启动活动 (例如 `Self-service Password Management` `Core Directory` `B2C` `Invited Users` `Microsoft Identity Manager` ：、、、。 `Privileged Identity Management`                                                                      |
 | result              | operationResult                                              | 指示活动的结果。 可取值为：`success`、`failure`、`timeout`、`unknownFutureValue`。                                                                                                                                                                   |
 | resultReason        | String                                              | 指示结果为 或 **时失败** `failure` 的原因 `timeout` 。                                                                                                                                                                                                                                 |
 | targetResources     | [targetResource](targetresource.md) 集合      | 指示由于活动而更改的资源的信息。 目标资源类型可以是 `User` `Device` `Directory` `App` 、、、、、 `Role` 或 `Group` `Policy` `Other` 。                                                                                                                   |

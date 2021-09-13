@@ -1,16 +1,16 @@
 ---
 title: 创建 permissionGrantPolicy
 description: 创建一个 permissionGrantPolicy 对象，该对象描述授予权限的条件。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: a29bf42b3f9bab89e3a498aaab4154cd91b7e0e4
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e3beac215c931c015d87c18a8ef56abe07e349bf
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051261"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104926"
 ---
 # <a name="create-permissiongrantpolicy"></a>创建 permissionGrantPolicy
 

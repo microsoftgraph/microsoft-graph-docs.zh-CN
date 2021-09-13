@@ -1,22 +1,22 @@
 ---
 title: 会话资源类型
 description: 会话类型
-localization_priority: Normal
+ms.localizationpriority: medium
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 8aa0874f0f6853d49472ff756b152aee06f7504fa42a4141c110d10830ae27aa
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c8afac51a3e1709c5aafd4314045c36d8b34184b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54155181"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59113782"
 ---
 # <a name="session-resource-type"></a>会话资源类型
 
 命名空间：microsoft.graph.callRecords
 
-代表User-User电话会议User-Meeting通信的一种通信方式。
+代表User-User电话会议User-Meeting通信的一种通信。
 
 ## <a name="methods"></a>方法
 

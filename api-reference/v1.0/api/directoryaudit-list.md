@@ -1,22 +1,22 @@
 ---
 title: 列出 directoryAudits
-description: 介绍 microsoft (API) directoryAudit 资源Graph方法。
-localization_priority: Normal
+description: 介绍 microsoft Graph API 中 directoryAudit (实体) 的列表方法。
+ms.localizationpriority: medium
 author: SarahBar
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 8105ba2dd072ce5ed540a1a44df59f27c05ea56d
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 7dcf6aeeb5a9053503de9f43d0945f77d2fe7788
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53579216"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59038074"
 ---
 # <a name="list-directoryaudits"></a>列出 directoryAudits
 
 命名空间：microsoft.graph
 
-获取由用户生成的审核日志Azure Active Directory。 这包括 Azure AD 中各种服务生成的审核日志，包括用户、应用、设备和组管理、特权标识管理 (PIM) 、访问评审、使用条款、标识保护、密码管理 (自助服务和管理员密码重置) 以及自助服务组管理等。
+获取由用户生成的审核Azure Active Directory。 这包括 Azure AD 中各种服务生成的审核日志，包括用户、应用、设备和组管理、特权标识管理 (PIM) 、访问评审、使用条款、标识保护、密码管理 (自助服务和管理员密码重置) 以及自助服务组管理等。
 
 ## <a name="permissions"></a>权限
 
@@ -27,6 +27,9 @@ ms.locfileid: "53579216"
 | 委派（工作或学校帐户）     | AuditLog.Read.All 和 Directory.Read.All    |
 | 委派（个人 Microsoft 帐户） | 不支持                               |
 | 应用程序                            | AuditLog.Read.All 和 Directory.Read.All    |
+
+> [!IMPORTANT]
+> 此 API 有 [一个已知](/graph/known-issues#azure-ad-activity-reports) 问题，当前需要同意 **AuditLog.Read.All** 和 **Directory.Read.All** 权限。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -62,7 +65,7 @@ GET /auditLogs/directoryaudits
 | targetResources/any (t：t/displayName eq '{value}')             | eq                  |
 | targetResources/any (x： startswith (x/displayName， '{value}') )  | startswith          |
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称          | 说明   |
 | :------------ | :------------ |

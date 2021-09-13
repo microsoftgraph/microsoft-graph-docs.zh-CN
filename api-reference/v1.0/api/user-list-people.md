@@ -2,15 +2,15 @@
 title: 列出人员
 description: 检索一组 person 对象，这些对象按与 user 的相关程度进行排序，相关程度由用户的通信和协作模式以及业务关系决定。
 author: dkershaw10
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 0ae6dd0d81435626b4205eba581576002ef35de4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f33aea8dc2dd441cd14bca7332b1568627455617
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47992081"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59044823"
 ---
 # <a name="list-people"></a>列出人员
 
@@ -46,7 +46,7 @@ GET /users/{id | userPrincipalName}/people
 |名称|值|说明|
 |:---------------|:--------|:-------|
 |$filter|string|将响应限制为仅记录中包含指定条件的那些人员。|
-|$orderby|string|默认情况下，按与查询的相关程度对响应中的人员进行排序。 可以使用 *$orderby* 参数更改响应中的人员排序。|
+|$orderby|string|默认情况下，按与查询的相关程度对响应中的人员进行排序。可以使用 *$orderby* 参数更改响应中的人员排序。|
 |$search|string|按姓名或别名搜索人员。 支持模糊匹配。 参数仅适用于搜索已登录用户的相关人员，而不适用于搜索与其他用户相关的人员。 此外还支持 `topic` 关键字，以根据从与此人的电子邮件对话中提取的主题查找人员。 有关信息和示例，请参阅“[获取相关人员的信息](/graph/people-example#perform-a-fuzzy-search)”的“*执行模糊搜索*”部分。 |
 |$select|string|要在响应中添加的属性列表（以逗号分隔）。为获得最佳结果，请仅选择所需属性的子集。|
 |$skip|int|跳过前 n 个结果，可用于分页。使用 *$search* 时不支持此参数。|

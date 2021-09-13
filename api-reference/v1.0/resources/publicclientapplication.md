@@ -1,22 +1,22 @@
 ---
 title: publicClientApplication 资源类型
 description: '指定非 Web 应用或 Web Api 的设置。  (例如移动或其他公共客户端，例如桌面设备上运行的已安装) '
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: b8172eb64c1f54e33f8b5775a9234a7a30a42b641b68dd328c2fef5355fb9688
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a5769d2fcbc01114b9a79a6eb3bad21c65566663
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54228993"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067050"
 ---
 # <a name="publicclientapplication-resource-type"></a>publicClientApplication 资源类型
 
 命名空间：microsoft.graph
 
-指定非 Web 应用或非 Web API (例如移动或其他公共客户端（如桌面设备上运行的已安装应用程序）的设置) 。
+指定非 Web 应用或非 Web API 应用程序的设置 (例如移动或其他公共客户端，例如桌面设备上运行的已安装) 。
 
 ## <a name="properties"></a>属性
 

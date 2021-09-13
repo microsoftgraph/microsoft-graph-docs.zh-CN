@@ -2,15 +2,15 @@
 title: deviceCategory 资源类型
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d455d1788cdb9f992201228be3ca6fbad67bd45cf5637795f2539b2fd7f0f84f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 451109faf24b78e572c3534595d92a524206cad8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54192402"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59098774"
 ---
 # <a name="devicecategory-resource-type"></a>deviceCategory 资源类型
 

@@ -2,21 +2,21 @@
 title: authenticationMethodsPolicy 资源类型
 description: 定义身份验证方法以及允许使用这些方法登录并执行 MFA (多重) 。
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: e704d7584aad0b2309863743f58663f0c04b23ab2fee99b8c21f7e9e2b210bad
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9abab0af31a67465db9989b42186759b12f746bb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54124568"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59126959"
 ---
 # <a name="authenticationmethodspolicy-resource-type"></a>authenticationMethodsPolicy 资源类型
 
 命名空间：microsoft.graph
 
-定义身份验证方法以及允许使用它们登录和在 Azure AD) 中 (MFA) 执行Azure Active Directory (身份验证) 。
+定义身份验证方法以及允许使用它们登录并执行 (Azure AD) 中的多重Azure Active Directory (身份验证) 。
 
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|

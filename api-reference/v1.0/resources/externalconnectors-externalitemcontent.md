@@ -2,15 +2,15 @@
 title: externalItemContent 资源类型
 description: 通过连接建立索引的项目Microsoft 搜索内容。
 author: mecampos
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: dbd84ff788cf79e212fa4031d85a6578d52343facdeee06a0bd5a4bde9af8fe7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: eade917bcee86acbc44917d8809fb26a1776bf42
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249312"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123424"
 ---
 # <a name="externalitemcontent-resource-type"></a>externalItemContent 资源类型
 

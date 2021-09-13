@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: Deleted
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 已删除资源指示该项已被删除。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 066baf9af2bb8274527df384436004c21f7c9e54004b01ee1e225ed40f81c788
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 603e66c9256cf433cf3928db1432f90389a8f203
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54218805"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104227"
 ---
 # <a name="deleted-facet"></a>Deleted Facet
 

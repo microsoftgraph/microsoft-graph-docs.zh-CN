@@ -2,21 +2,21 @@
 title: Add attachment
 description: 使用此 API 将 附件 添加到事件。 自此处起
 author: svpsiva
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 14d62182f4d21618dae5d8009c4376404fff66eb
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 99141257bf507b1c00ade38993c641e1867bee73
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50473815"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100181"
 ---
 # <a name="add-attachment"></a>添加附件
 
 命名空间：microsoft.graph
 
-使用此 API 将附件 [添加到](../resources/attachment.md) 现有 [事件](../resources/event.md)。 此操作将可添加到的附件大小限制在 3 MB 以下。
+使用此 API 将附件 [添加到](../resources/attachment.md) 现有 [事件](../resources/event.md)。 此操作将可添加到的附件的大小限制在 3 MB 以下。
 
 如果组织者向会议事件添加附件，组织者随后可以更新事件以发送附件[](event-update.md)并更新每个与会者的事件。
 

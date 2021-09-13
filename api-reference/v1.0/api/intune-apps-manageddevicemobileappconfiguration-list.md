@@ -2,15 +2,15 @@
 title: 列出 managedDeviceMobileAppConfigurations
 description: 列出 managedDeviceMobileAppConfiguration 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2f5ee70e3a90e10d1ea63ad97dd18eb567c8a6591fe6dbac58e5eafdd1950684
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bd73778c8baf25f14118418df980870c3c5ea990
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249662"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100076"
 ---
 # <a name="list-manageddevicemobileappconfigurations"></a>列出 managedDeviceMobileAppConfigurations
 
@@ -41,7 +41,7 @@ GET /deviceAppManagement/mobileAppConfigurations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

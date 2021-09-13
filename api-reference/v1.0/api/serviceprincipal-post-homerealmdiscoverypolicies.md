@@ -1,16 +1,16 @@
 ---
 title: 分配 homeRealmDiscoveryPolicy
 description: 将 homeRealmDiscoveryPolicy 分配给 servicePrincipal。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: hpsin
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 8a361503ad29fbaf4fae198b3c3843f07d0fc5fd
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 57d306bd880082c19cac409299120ad97f8a3284
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50128699"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032489"
 ---
 # <a name="assign-homerealmdiscoverypolicy"></a>分配 homeRealmDiscoveryPolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "50128699"
 
 将 [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) 分配给 [servicePrincipal](../resources/serviceprincipal.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

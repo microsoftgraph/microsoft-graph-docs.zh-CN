@@ -2,21 +2,21 @@
 title: localizedName 资源类型
 description: 表示术语库中使用的本地化名称，该名称用本地化语言标识该名称。
 author: vishriv
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: resourcePageType
-ms.openlocfilehash: eb515cea31fd092d2040edddcff806355829ab79
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: e4ef39aff45906c70195a92dfe6c4cabe87385e8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514904"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128044"
 ---
 # <a name="localizedname-resource-type"></a>localizedName 资源类型
 
 命名空间：microsoft.graph.termStore
 
-表示术语库 中使用的 [本地化名称，]该名称以本地化语言标识。 有关详细信息，请参阅 [localizedLabel]。
+表示术语库 中使用的 [本地化名称，]该名称用本地化语言标识该名称。 有关详细信息，请参阅 [localizedLabel]。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
@@ -44,7 +44,7 @@ ms.locfileid: "58514904"
 
 [microsoft.graph.termStore.localizedLabel]: termstore-localizedlabel.md
 [microsoft.graph.termstore.store]: termstore-store.md
-[store]: ../resources/termstore-store.md
+[商店]: ../resources/termstore-store.md
 [localizedLabel]: ../resources/termstore-localizedlabel.md
 
 <!--

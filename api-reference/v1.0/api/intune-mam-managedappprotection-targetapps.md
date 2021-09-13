@@ -2,15 +2,15 @@
 title: targetApps 操作
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e329a7bbd34c566bd3ed66500f5e98d0cc21e079b4b5bcb2b16c5235c25ab3fa
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1d23c0ecee0be5990aa5d7dd356b17eaa8dc5cba
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54121674"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59130571"
 ---
 # <a name="targetapps-action"></a>targetApps 操作
 

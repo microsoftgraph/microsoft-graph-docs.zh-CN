@@ -1,16 +1,16 @@
 ---
 title: detailsInfo 资源类型
 description: 可以包含有关关联标识或系统的任何信息的属性包。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: e5beb5d281186b16acfa38087b6ee2d9ed3f0058f972aaeba2941467c545f523
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f755e7014e1a381697874e3e8da1afe72fa51fe0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54130378"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104213"
 ---
 # <a name="detailsinfo-resource-type"></a>detailsInfo 资源类型
 

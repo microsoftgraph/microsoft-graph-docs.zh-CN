@@ -2,15 +2,15 @@
 title: 更新 educationAssignmentDefaults
 description: 更新 educationAssignmentDefaults 对象的属性。
 author: sharad-sharma-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 57054d86e683fd91ffacc1f601d549405ffa5c17
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: e5eb0ba61ac20633a3a6a9dc722bc1da32531a1e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52991016"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020026"
 ---
 # <a name="update-educationassignmentdefaults"></a>更新 educationAssignmentDefaults
 命名空间：microsoft.graph

@@ -1,16 +1,16 @@
 ---
 title: group： checkMemberObjects
 description: 检查指定组对象的组或目录角色列表中的成员身份。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 50761be98dba7871258223c16f5944fbbafe053c
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: d89727a1fecc4f94093e123e36e918e083c067bc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680764"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59114489"
 ---
 # <a name="group-checkmemberobjects"></a>group： checkMemberObjects
 

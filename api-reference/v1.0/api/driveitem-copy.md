@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: 复制文件或文件夹
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 description: 以异步方式在新父项下或使用新名称创建一个 driveItem 副本（包括任何子项）。
 doc_type: apiPageType
-ms.openlocfilehash: 697f52cae983802af2a6c0a2bf39774873f82e46
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: bdbb412b01a2d8e3703f36e1929d376e660752c3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239595"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100251"
 ---
 # <a name="copy-a-driveitem"></a>复制 DriveItem
 

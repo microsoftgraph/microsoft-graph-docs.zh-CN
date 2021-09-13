@@ -2,15 +2,15 @@
 title: domainState 资源类型
 description: 表示在域中安排的异步操作的状态。
 author: adimitui
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 3d2140d0b0067ec576433b442446472d0a6af80fd4152131ea79d384a8d623c0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d69beb993de7bc6e87d5945e321b89e1007c6910
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54218798"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123725"
 ---
 # <a name="domainstate-resource-type"></a>domainState 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54218798"
 
 | 属性   | 类型 | 说明 |
 |:---------------|:--------|:----------|
-| lastActionDateTime | DateTimeOffset | 上次活动发生时的时间戳。 在计划操作、异步任务启动以及操作完成时，将更新该值。 |
+| lastActionDateTime | DateTimeOffset | 上次活动发生时的时间戳。 在计划操作、异步任务启动和操作完成时更新值。 |
 | operation | String | 异步操作的类型。 值可以是 *ForceDelete 或* *Verification* |
 | status | String | 操作的当前状态。 <br> *计划* - 操作已计划，但尚未启动。 <br> *InProgress* - 任务已启动，正在进行中。 <br> *失败* - 操作失败。 |
 

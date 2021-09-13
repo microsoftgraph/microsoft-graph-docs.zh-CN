@@ -2,15 +2,15 @@
 author: learafa
 description: columnDefinition 资源上的 geolocationColumn 指示列包含地理位置。
 title: GeolocationColumn
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: files
-ms.openlocfilehash: 2c7640d8e92b1b241fbb67c0bcb69a539877076b18cf62323ee962c3b25474da
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 61b7f72b8fba961028705a202a66af5925648d35
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54246869"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094315"
 ---
 # <a name="geolocationcolumn-resource-type"></a>geolocationColumn 资源类型
 

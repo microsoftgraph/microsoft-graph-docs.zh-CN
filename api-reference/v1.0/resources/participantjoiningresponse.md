@@ -2,15 +2,15 @@
 title: participantJoiningResponse 资源类型
 description: 包含对参与者加入通知的响应的抽象基类。
 author: yizhenww
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: ed48569a942a8b70fdf8fbbeeadb2921623f1a77db55acb948fb61d7dd778ec3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f93d664360ddaddc4a2b65cced517cd21f6f8552
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54141397"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036037"
 ---
 # <a name="participantjoiningresponse-resource-type"></a>participantJoiningResponse 资源类型
 

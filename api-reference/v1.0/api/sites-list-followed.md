@@ -2,15 +2,15 @@
 author: learafa
 description: 已登录用户的关注网站列表。
 title: 关注网站列表
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: SharePoint
 doc_type: apiPageType
-ms.openlocfilehash: 4520d428511601ad2fa17c4d993a6ab373566eb0
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 3213043cd020dafb13871b348f768ce4d0e2d212
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50473677"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118891"
 ---
 # <a name="list-followed-sites"></a>关注网站列表
 
@@ -30,19 +30,19 @@ ms.locfileid: "50473677"
 
 ## <a name="http-request"></a>HTTP 请求
 
-此方法只能通过 OneDrive for Business 访问。
+此方法只能通过 OneDrive for Business。
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
 GET /me/followedSites
 ```
-根据目标用户的 ID 获取网站列表。
+获取目标用户关注的网站列表（基于其 ID）。
 
 ```http
 GET /users/{user-id}/followedSites
 ```
-**注意：** 若要访问其他目标用户的已关注网站列表，需要应用程序权限。
+**注意：** 若要访问另一目标用户的已关注网站列表，您需要应用程序权限。
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query_parameters)来帮助自定义响应。

@@ -2,15 +2,15 @@
 title: win32LobAppPowerShellScriptRuleOperationType 枚举类型
 description: 包含所有受支持的 Powershell 脚本输出检测类型。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8b0561982db3d4678c2976b3db10a9fbed0a6f86acf5214a75882605be40858f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f2491953bafb9a2a26e0ecf1f288d992c59304f3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54182509"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109015"
 ---
 # <a name="win32lobapppowershellscriptruleoperationtype-enum-type"></a>win32LobAppPowerShellScriptRuleOperationType 枚举类型
 
@@ -29,7 +29,7 @@ ms.locfileid: "54182509"
 |integer|3|输出数据类型是整数。|
 |float|4 |输出数据类型浮点。|
 |version|5 |输出数据类型版本。|
-|boolean|6 |输出数据类型布尔值。|
+|布尔|6 |输出数据类型布尔值。|
 
 
 

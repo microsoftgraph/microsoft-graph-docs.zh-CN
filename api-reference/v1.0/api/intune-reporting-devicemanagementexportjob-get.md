@@ -2,15 +2,15 @@
 title: 获取 deviceManagementExportJob
 description: 读取 deviceManagementExportJob 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7f14c99455ae9100a947fca6ff184eccb85a10702efcb6261bda4d684bca2316
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 41a76d6c913b82fb5eb464a578224452f356b7a4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54208949"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59099481"
 ---
 # <a name="get-devicemanagementexportjob"></a>获取 deviceManagementExportJob
 
@@ -44,7 +44,7 @@ GET /deviceManagement/reports/exportJobs/{deviceManagementExportJobId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

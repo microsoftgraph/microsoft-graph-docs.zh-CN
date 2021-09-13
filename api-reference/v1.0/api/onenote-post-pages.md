@@ -1,24 +1,24 @@
 ---
 title: 创建页面
-description: 在默认笔记本OneNote新建一个"页面"页面。
+description: 在默认笔记本OneNote分区中创建新的页面。
 author: jewan-microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 53f770410fe130d3ec723a975701246bd28388840d92343904941f03698e4e3d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 14a2947e95b57b58c84daa0732b9c198f0ab4a1c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54225795"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032620"
 ---
 # <a name="create-page"></a>创建页面
 
 命名空间：microsoft.graph
 
-在默认笔记本OneNote新建一个"页面"页面。
+在默认笔记本OneNote分区中创建新的页面。
 
-若要在默认笔记本的不同节中创建页面，可以使用 `sectionName` 查询参数。  示例：`../onenote/pages?sectionName=My%20section`
+若要在默认笔记本的不同节中创建页面，可以使用 `sectionName` 查询参数。  例如：`../onenote/pages?sectionName=My%20section`
 
 `POST /onenote/pages`此操作仅用于在当前用户的默认笔记本中创建页面。 如果面向其他笔记本，可以在指定的 [分区创建页面](../api/section-post-pages.md)。  
 

@@ -1,16 +1,16 @@
 ---
 title: optionalClaims 类型
 description: 声明应用程序请求的可选声明。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 01fb75a12b27dba82066255300519cd3f830a4beeea7de77b64215170ef4f11a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 11d504a24e438e4c11327838f302b1737818e12e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54180577"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104094"
 ---
 # <a name="optionalclaims-resource-type"></a>optionalClaims 资源类型
 

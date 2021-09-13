@@ -1,22 +1,22 @@
 ---
 title: 'message: createReplyAll'
-description: 创建草稿以 JSON 或 MIME 格式答复指定邮件的发件人及所有收件人。
-localization_priority: Normal
+description: 创建草稿以 JSON 或 MIME 格式答复指定邮件的发件人和所有收件人。
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2d1b3970995db5e3d678e0e1b6daeef6a72ee40b
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 010376e64e118e417b1ac8530afa6ccb6df8e739
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52870414"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110275"
 ---
 # <a name="message-createreplyall"></a>message: createReplyAll
 
 命名空间：microsoft.graph
 
-创建一个草稿以 JSON 或 MIME[](../resources/message.md)格式答复邮件的发件人和所有收件人。 
+创建草稿以 JSON 或 MIME 格式答复[](../resources/message.md)邮件的发件人及所有收件人。 
 
 使用 JSON 格式时：
 - 指定参数的 comment 或 **body** `message` 属性。 指定这两者将返回 HTTP 400 错误请求错误。

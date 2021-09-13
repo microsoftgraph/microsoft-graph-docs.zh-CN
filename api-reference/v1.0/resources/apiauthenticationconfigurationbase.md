@@ -2,15 +2,15 @@
 title: apiAuthenticationConfigurationBase 资源类型
 description: 表示用于调用 API 的身份验证配置的基本类型。
 author: nickgmicrosoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: c897bc970fc4527a03593a72e1ea760ab78fc696a75180e0e718a81ab90455ee
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3e3086ac90eabc15527a84f9c215659def06b7ea
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54150043"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094476"
 ---
 # <a name="apiauthenticationconfigurationbase-resource-type"></a>apiAuthenticationConfigurationBase 资源类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "54150043"
 派生类型包括：
 - 用于 HTTP 基本身份验证的[basicAuthentication](basicauthentication.md)
 - [用于客户端证书身份验证的 pkcs12certificate](pkcs12certificate.md) (API 连接器创建或上载) 
-- [clientCertificateAuthentication](pkcs12certificate.md) 用于 (API 连接器客户端证书的客户端证书身份验证) 
+- [clientCertificateAuthentication，](pkcs12certificate.md) 用于 (API 连接器客户端证书的客户端证书的客户端) 
 
 ## <a name="properties"></a>属性
 

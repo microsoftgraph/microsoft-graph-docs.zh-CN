@@ -2,15 +2,15 @@
 title: 用户资源类型
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 183c751ace228293cb20c0e459e8de75e6fb143d7e4f374e35ee2cf8a3ad884a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 508a49c0e8d51a8dcbd7da30aabaae41ee119f73
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189519"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118192"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 

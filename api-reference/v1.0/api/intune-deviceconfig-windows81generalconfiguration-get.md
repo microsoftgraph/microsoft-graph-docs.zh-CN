@@ -2,15 +2,15 @@
 title: 获取 windows81GeneralConfiguration
 description: 读取 windows81GeneralConfiguration 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e6b0b465971afbd601aa595de7da987fa7624df50c8495c7f7969d0cf28f15ad
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5f0a363511a1bd9629f722e821918110cbeea672
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54225921"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032809"
 ---
 # <a name="get-windows81generalconfiguration"></a>获取 windows81GeneralConfiguration
 

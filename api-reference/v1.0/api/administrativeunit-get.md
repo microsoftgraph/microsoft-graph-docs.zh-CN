@@ -2,15 +2,15 @@
 title: 获取 administrativeUnit
 description: 检索 administrativeUnit 对象的属性和关系。
 author: DougKirschner
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 4e7d55a0d94887009e377a3160245dcfafc0e794
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 052a23619f89be4096b21487596b1b83c453ffee
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52991532"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128352"
 ---
 # <a name="get-administrativeunit"></a>获取 administrativeUnit
 

@@ -2,14 +2,14 @@
 title: 云通信 API 概述
 description: Microsoft 中的云通信 API Graph通过各种通信相关功能（如通话和联机会议）为应用和服务如何与用户交互添加了新的维度。
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
-ms.openlocfilehash: 81f7caf23c6e1ced7e98f5a907d073fa3bf18c66d725fe5b8376dcbd2c67e5c1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 304e35f3b6ad89d2d996dd75568c04887068002e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54246535"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136199"
 ---
 # <a name="cloud-communications-api-overview"></a>云通信 API 概述
 Microsoft 中的云通信 API Graph通过各种通信相关功能（如通话和联机会议）为应用和服务如何与用户交互添加了新的维度。 通过了解如何响应客户需求以及员工如何相互协作来发展业务。
@@ -20,7 +20,7 @@ Microsoft 中的云通信 API Graph通过各种通信相关功能（如通话和
 
 ### <a name="handle-incoming-calls"></a>处理传入呼叫
 
-当工作人员收到大量业务呼叫，并且无法或无法高效应答所有业务呼叫时，这一切可能会非常不知所措。 机器人可以充当前台助理，通过拒绝看起来像垃圾邮件呼叫的呼叫，以及将 (将) 呼叫重定向到其他号码来处理这些呼叫。
+当工作人员收到大量业务呼叫，并且无法或无法高效应答所有业务呼叫时，可能会非常不知所措。 机器人可以充当前端助理，通过拒绝看起来像垃圾邮件呼叫的呼叫，以及将 (将) 呼叫重定向到其他号码来处理这些呼叫。
 
 可以使用云通信 API：
 
@@ -75,7 +75,7 @@ Microsoft 中的云通信 API Graph通过各种通信相关功能（如通话和
 
 可以使用云通信 API 生成以下机器人：
 
-- [呼叫客户](/graph/api/application-post-calls?view=graph-rest-1.0)Teams。
+- [在客户电话上](/graph/api/application-post-calls?view=graph-rest-1.0)Teams。
 - [播放录制的提示](/graph/api/call-playprompt?view=graph-rest-1.0) 以用作提醒。
 - [结束调用](/graph/api/call-delete?view=graph-rest-1.0)。
 

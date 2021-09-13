@@ -1,16 +1,16 @@
 ---
 title: 获取 signIn
 description: 介绍从 Microsoft (API) signIn Graph get 方法。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 6c5e3f215409e065ce6548e59827beb8ae1eafdf
-ms.sourcegitcommit: 8a9be6f65f62f29973508d82e0348d4142c18f23
+ms.openlocfilehash: 4597962082c4043f63a3e7596b1b33297778a27a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53129460"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59130207"
 ---
 # <a name="get-signin"></a>获取 signIn
 
@@ -27,6 +27,9 @@ ms.locfileid: "53129460"
 |委派（工作或学校帐户） | AuditLog.Read.All 和 Directory.Read.All |
 |委派（个人 Microsoft 帐户） | 不支持   |
 |应用程序 | AuditLog.Read.All 和 Directory.Read.All |
+
+> [!IMPORTANT]
+> 此 API 有 [一个已知](/graph/known-issues#azure-ad-activity-reports) 问题，当前需要同意 **AuditLog.Read.All** 和 **Directory.Read.All** 权限。
 
 应用必须 [正确注册到](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) Azure AD。
 

@@ -1,16 +1,16 @@
 ---
 title: assignedPlan 资源类型
 description: '**用户** 实体和 组织 实体的 AssignedPlans 属性都是一个 **assignedPlan** 集合。'
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jpettere
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 443b7c161a1d1742ec01b7b39537c07de2b25c781ed22e13ac5a8ad122e0cdd9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fefb2f204af1f3f64d7b23968722c13fdc36a51b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54218833"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123802"
 ---
 # <a name="assignedplan-resource-type"></a>assignedPlan 资源类型
 

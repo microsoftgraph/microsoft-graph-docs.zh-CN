@@ -1,16 +1,16 @@
 ---
 title: 'message: createReply'
 description: '创建以 JSON 或 MIME 格式答复邮件的草稿。 '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1f9962a6432b130bfeb121bc273271cb3591e181
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 3c6e55e6150bb1f8401e47c9b5f5060425a25c20
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52868936"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110282"
 ---
 # <a name="message-createreply"></a>message: createReply
 

@@ -2,22 +2,22 @@
 title: 创建权限
 description: 创建新的 permission 对象。
 author: BarrySh
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: c950085b9271b5c3f39eb32a69e93048b55b549f
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: bfe3c1e68d904950d1e412db651d4ce13c026acc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473617"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118919"
 ---
 # <a name="create-permission"></a>创建权限
 命名空间：microsoft.graph
 
 在网站 [中](../resources/permission.md) 创建新的 permission 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）

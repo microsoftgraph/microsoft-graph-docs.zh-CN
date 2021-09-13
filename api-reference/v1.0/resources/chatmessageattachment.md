@@ -1,16 +1,16 @@
 ---
 title: chatMessageAttachment 资源类型
 description: 表示聊天消息实体的附件。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: microsoft-teams
 author: RamjotSingh
-ms.openlocfilehash: e42eca895b00c46561673991745f9a60a1476a4f2286b0cb3b530213422620c7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1b02a5c034be39ee9eeb941b7fe875e8d4c9e8c1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54175327"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094413"
 ---
 # <a name="chatmessageattachment-resource-type"></a>chatMessageAttachment 资源类型
 
@@ -28,7 +28,7 @@ ms.locfileid: "54175327"
 |contentUrl|string|附件内容的 URL。 支持的协议：http、https、文件和数据。|
 |content|string|附件的内容。 如果附件是富 [卡片，](/microsoftteams/platform/task-modules-and-cards/cards/cards-reference)将 属性设置为富卡片对象。 此属性和 contentUrl 相互排斥。|
 |name|string|附件的名称。|
-|thumbnailUrl| string |指向缩略图图像的 URL，如果频道支持使用其他较小格式的内容或 contentUrl，可以使用该图像。 例如，如果将 contentType 设置为 application/word，并且将 contentUrl 设置为 Word 文档的位置，则可能包含表示文档的缩略图图像。 通道可以显示缩略图图像而不是文档。 当用户单击该图像时，通道将打开文档。|
+|thumbnailUrl| string |指向缩略图图像的 URL，如果频道支持使用其他较小格式的内容或 contentUrl，可以使用该图像。 例如，如果将 contentType 设置为 application/word，并且将 contentUrl 设置为 Word 文档的位置，则可能包含表示该文档的缩略图图像。 通道可以显示缩略图图像而不是文档。 当用户单击该图像时，通道将打开文档。|
 
 ## <a name="json-representation"></a>JSON 表示形式
  下面是资源的 JSON 表示形式

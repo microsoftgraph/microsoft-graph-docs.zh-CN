@@ -1,16 +1,16 @@
 ---
 title: 删除 tokenLifetimePolicy
 description: 删除 tokenLifetimePolicy。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: lujiangfeng666
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 05d666e0c4a6d18b4ddeb859c5e67c4e5287bbb1
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 901e66d9bbf9caa5fd485b2dc7c4a1d4b599c842
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440022"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59130095"
 ---
 # <a name="delete-tokenlifetimepolicy"></a>删除 tokenLifetimePolicy
 

@@ -2,15 +2,15 @@
 title: appHostedMediaConfig 资源类型
 description: 应用程序托管的媒体堆栈。
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: a5f40e1a29969f20046ba8f4439177b7a1b8209c2db36b14ac388b16639bbc4a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c9524f44e856f2dd81ae8197b4bb042d80e49364
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54205953"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062822"
 ---
 # <a name="apphostedmediaconfig-resource-type"></a>appHostedMediaConfig 资源类型
 

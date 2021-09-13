@@ -1,16 +1,16 @@
 ---
 title: servicePrincipal： addKey
 description: 向 servicePrincipal 添加密钥凭据。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: bda31627efafa60b261ec7f182618d546d7bed07
-ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
+ms.openlocfilehash: 337f7d3faea189e66476932792f91455f96b38bd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58490411"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59113940"
 ---
 # <a name="serviceprincipal-addkey"></a>servicePrincipal： addKey
 
@@ -23,7 +23,7 @@ ms.locfileid: "58490411"
 
 作为此方法的请求验证的一部分，将验证拥有现有密钥的证明，然后才能执行该操作。 
 
-没有任何现有有效证书的 ServicePrincipals (即：尚未添加任何证书，或所有证书都已过期) ，将不能使用此服务操作。 [Update servicePrincipal](../api/serviceprincipal-update.md) 可用于执行更新。
+没有任何现有有效证书的 ServicePrincipals (即尚未添加任何证书，或者所有证书) ，将不能使用此服务操作。 [Update servicePrincipal](../api/serviceprincipal-update.md) 可用于执行更新。
 
 ## <a name="permissions"></a>权限
 
