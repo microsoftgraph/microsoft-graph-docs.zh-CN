@@ -2,15 +2,15 @@
 title: 删除 iosLobAppProvisioningConfiguration
 description: 删除 iosLobAppProvisioningConfiguration。
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: eac52c23061e63c6d301ae8d0533ce50693b4b24
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 056f9da089fdc3a1f48a93e5ed947f00aab37b6a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794495"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59116260"
 ---
 # <a name="delete-ioslobappprovisioningconfiguration"></a>删除 iosLobAppProvisioningConfiguration
 
@@ -47,7 +47,7 @@ DELETE /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvis
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

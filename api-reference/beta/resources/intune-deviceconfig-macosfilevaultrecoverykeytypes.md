@@ -2,15 +2,15 @@
 title: macOSFileVaultRecoveryKeyTypes 枚举类型
 description: macOS FileVault 的恢复密钥类型
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8db5e6a7de178d58da08cbe569c5a724825fdec4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c7f3d6fc43c38e2d5c51c909d64b0421230e876a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783489"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59106166"
 ---
 # <a name="macosfilevaultrecoverykeytypes-enum-type"></a>macOSFileVaultRecoveryKeyTypes 枚举类型
 

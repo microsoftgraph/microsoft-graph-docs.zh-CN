@@ -1,16 +1,16 @@
 ---
 title: cloudAppSecurityState 资源类型
 description: 包含有关云应用程序的状态信息 (destinationServiceName、destinationServiceIp) 。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: f5b82357d91889aada97c835fcab2c327c05fe143988a9ed3bf47ee293687770
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 80011803b1e73a4b0377d739c6f0d0b21e38eeb7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54253766"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59126070"
 ---
 # <a name="cloudappsecuritystate-resource-type"></a>cloudAppSecurityState 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "54253766"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |destinationServiceIp|String|与云应用程序/服务的连接的目标 IP 地址。|
-|destinationServiceName|字符串|云应用程序/服务 (例如"Salesforce"、"DropBox"等) 。|
+|destinationServiceName|String|云应用程序/服务名称 (例如"Salesforce"、"DropBox"等) 。|
 |riskScore|String|云应用程序/服务的提供商生成/计算的风险评分。 建议的值范围为 0-1，等于百分比。|
 
 ## <a name="json-representation"></a>JSON 表示形式

@@ -2,15 +2,15 @@
 title: bulkManagedDeviceActionResult 资源类型
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 181f916d65c785dec25fb2d0f2b946af4e810a35
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 02a4d6537c8ab76f1045f4453af94255133370b3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785127"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59120120"
 ---
 # <a name="bulkmanageddeviceactionresult-resource-type"></a>bulkManagedDeviceActionResult 资源类型
 
@@ -25,10 +25,10 @@ ms.locfileid: "58785127"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|successfulDeviceIds|String collection|成功的设备|
-|failedDeviceIds|String collection|发生故障的设备|
-|notFoundDeviceIds|String collection|未找到设备|
-|notSupportedDeviceIds|String collection|不支持的设备|
+|successfulDeviceIds|字符串集合|成功的设备|
+|failedDeviceIds|字符串集合|发生故障的设备|
+|notFoundDeviceIds|字符串集合|未找到设备|
+|notSupportedDeviceIds|字符串集合|不支持的设备|
 
 ## <a name="relationships"></a>关系
 无

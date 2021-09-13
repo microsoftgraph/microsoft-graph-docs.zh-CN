@@ -1,16 +1,16 @@
 ---
 title: 删除 itemPatent
 description: 删除 itemPatent 对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 4c819a4ca1bb50a572fbbe593a7ec951714cf4cc
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 6a5148ae489902a461f420db45567d22e101aefb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50776275"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59087490"
 ---
 # <a name="delete-itempatent"></a>删除 itemPatent
 

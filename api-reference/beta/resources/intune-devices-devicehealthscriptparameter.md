@@ -2,15 +2,15 @@
 title: deviceHealthScriptParameter 资源类型
 description: script 参数的基本属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ddfd8eb3d251060961429c511114a7ebc1dd7286
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 65102807cee2d369e658f2c0de1ffc9822380015
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793815"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59144299"
 ---
 # <a name="devicehealthscriptparameter-resource-type"></a>deviceHealthScriptParameter 资源类型
 
@@ -26,9 +26,9 @@ script 参数的基本属性。
 |属性|类型|说明|
 |:---|:---|:---|
 |name|String|参数的名称|
-|description|String|参数的说明|
+|说明|String|参数的说明|
 |isRequired|Boolean|参数是否是必需的|
-|applyDefaultValueWhenNotAssigned|布尔值|未分配时是否应用 DefaultValue|
+|applyDefaultValueWhenNotAssigned|Boolean|未分配时是否应用 DefaultValue|
 
 ## <a name="relationships"></a>关系
 无

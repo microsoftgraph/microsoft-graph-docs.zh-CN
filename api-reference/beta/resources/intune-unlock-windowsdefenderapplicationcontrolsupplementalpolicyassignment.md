@@ -2,15 +2,15 @@
 title: windowsDefenderApplicationControlSupplementalPolicyAssignment 资源类型
 description: 包含用于向组分配 WindowsDefenderApplicationControl 补充策略的属性的类。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a15f6aada4c052b7fb7fc85c0c1b1a8f8d67830c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4b410a9fd4d6d9b8dbf51711436a30d7834b1261
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58782894"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100825"
 ---
 # <a name="windowsdefenderapplicationcontrolsupplementalpolicyassignment-resource-type"></a>windowsDefenderApplicationControlSupplementalPolicyAssignment 资源类型
 

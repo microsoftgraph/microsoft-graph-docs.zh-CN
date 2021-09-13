@@ -2,15 +2,15 @@
 title: win32LobAppPowerShellScriptDetectionType 枚举类型
 description: 包含所有受支持的 Powershell 脚本输出检测类型。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 889e91a335c98285fbf838ff95bf9d499b9ff785
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5773cde95a2ddf1e6e8733d9aa7c08a2708fbcd6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58779345"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127505"
 ---
 # <a name="win32lobapppowershellscriptdetectiontype-enum-type"></a>win32LobAppPowerShellScriptDetectionType 枚举类型
 
@@ -28,10 +28,10 @@ ms.locfileid: "58779345"
 |notConfigured|0|未配置。|
 |string|1|输出数据类型字符串。|
 |dateTime|2|输出数据类型是日期时间。|
-|integer|3|输出数据类型是整数。|
+|integer|3|输出数据类型整数。|
 |float|4 |输出数据类型浮点。|
 |version|5 |输出数据类型版本。|
-|布尔|6 |输出数据类型布尔值。|
+|boolean|6 |输出数据类型布尔值。|
 
 
 

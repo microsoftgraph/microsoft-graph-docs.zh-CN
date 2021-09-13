@@ -2,15 +2,15 @@
 title: 删除 iosEducationDeviceConfiguration
 description: 删除 iosEducationDeviceConfiguration。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 478a9f6961c14162348c3d71114fbc28df39cf75
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 08a147eb9f9da902619ddb8374af5e486778590c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794235"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59116960"
 ---
 # <a name="delete-ioseducationdeviceconfiguration"></a>删除 iosEducationDeviceConfiguration
 
@@ -45,7 +45,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

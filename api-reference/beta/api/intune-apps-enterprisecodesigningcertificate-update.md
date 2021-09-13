@@ -2,15 +2,15 @@
 title: 更新 enterpriseCodeSigningCertificate
 description: 更新 enterpriseCodeSigningCertificate 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b9992c4bb52275e2e8b21691ec2800f000d1aa49
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c56c628adac69b83ca708695b568bd0d9d6efd03
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818503"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59103660"
 ---
 # <a name="update-enterprisecodesigningcertificate"></a>更新 enterpriseCodeSigningCertificate
 
@@ -43,7 +43,7 @@ PATCH /deviceAppManagement/enterpriseCodeSigningCertificates/{enterpriseCodeSign
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,12 +53,12 @@ PATCH /deviceAppManagement/enterpriseCodeSigningCertificates/{enterpriseCodeSign
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
-|content|二进制|原始Windows Enterprise Code-Signing格式的证书。|
-|状态|[certificateStatus](../resources/intune-apps-certificatestatus.md)|证书状态已设置或未设置。 可取值为：`notProvisioned`、`provisioned`。|
+|id|String|实体的键。|
+|content|二进制|Windows Enterprise Code-Signing数据格式的证书。|
+|status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|证书状态已设置或未设置。 可取值为：`notProvisioned`、`provisioned`。|
 |SubjectName|String|证书的主题名称。|
 |subject|String|证书的主题值。|
-|issuerName|字符串|证书的颁发者名称。|
+|issuerName|String|证书的颁发者名称。|
 |issuer|String|证书的 Issuer 值。|
 |expirationDateTime|DateTimeOffset|证书到期日期。|
 |uploadDateTime|DateTimeOffset|CodeSigning 证书上载时的日期时间。|

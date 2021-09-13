@@ -2,15 +2,15 @@
 title: deviceManagementSettingAppConstraint 资源类型
 description: 强制设置的约束仅包含应用类型。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: acf0e8842d2ab0493b896d390f9ef8655610d168
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 98e3b71fc9db924667bfe8cf89bcb2a0318597d8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816520"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59091459"
 ---
 # <a name="devicemanagementsettingappconstraint-resource-type"></a>deviceManagementSettingAppConstraint 资源类型
 
@@ -26,9 +26,9 @@ ms.locfileid: "58816520"
 继承自 [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
-|supportedTypes|String collection|允许此设置的可接受应用类型|
+|supportedTypes|字符串集合|允许此设置的可接受应用类型|
 
 ## <a name="relationships"></a>关系
 无

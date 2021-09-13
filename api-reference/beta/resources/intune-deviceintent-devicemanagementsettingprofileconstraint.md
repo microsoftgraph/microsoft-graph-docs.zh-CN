@@ -2,15 +2,15 @@
 title: deviceManagementSettingProfileConstraint 资源类型
 description: 强制使用给定配置文件元数据的约束
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 547869614895183e3d60b7965bdd97b9a05b1f90
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a3d10dbf6e7d301835cee86210a442f043b6076d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790162"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086405"
 ---
 # <a name="devicemanagementsettingprofileconstraint-resource-type"></a>deviceManagementSettingProfileConstraint 资源类型
 

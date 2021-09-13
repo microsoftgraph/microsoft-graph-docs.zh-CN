@@ -1,16 +1,16 @@
 ---
 title: yammerDeviceUsageUserCounts 资源类型
 description: 下面是资源的 JSON 表示形式。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: 9f5bee5edf3dbde4d889af6ecd607d3323a7c1eabc9c92a5443e174d34646bf9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ce50ce89521a491d152d1bfc325195a8963fd0a3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249669"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128534"
 ---
 # <a name="yammerdeviceusageusercounts-resource-type"></a>yammerDeviceUsageUserCounts 资源类型
 
@@ -28,7 +28,7 @@ ms.locfileid: "54249669"
 | iPad              | Int32  |
 | other             | Int32  |
 | reportDate        | 日期   |
-| reportPeriod      | 字符串 |
+| reportPeriod      | String |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

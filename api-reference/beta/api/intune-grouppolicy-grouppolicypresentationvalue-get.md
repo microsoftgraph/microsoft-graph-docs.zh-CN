@@ -2,15 +2,15 @@
 title: 获取 groupPolicyPresentationValue
 description: 读取 groupPolicyPresentationValue 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 05a46888a08e56d7e408b70506173142eaf59979
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f30866b3c790c7411aad0aab33cf6fa5b54db72a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788315"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59107797"
 ---
 # <a name="get-grouppolicypresentationvalue"></a>获取 groupPolicyPresentationValue
 
@@ -46,7 +46,7 @@ GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/def
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

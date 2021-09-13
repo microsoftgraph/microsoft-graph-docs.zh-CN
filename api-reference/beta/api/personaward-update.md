@@ -1,16 +1,16 @@
 ---
 title: 更新 personAward
 description: 更新 personAward 对象的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: f1724f0b623c1e2b9b6ea57933509121b72c32cf
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 956a44d63438803fe9d74d66d5efc3fdce768280
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50774094"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59141457"
 ---
 # <a name="update-personaward"></a>更新 personAward
 
@@ -51,13 +51,13 @@ PATCH /users/{id | userPrincipalName}/profile/awards/{id}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|allowedAudiences|字符串|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|说明|字符串|奖励或奖励的奖励。 |
-|displayName|字符串|奖励或奖励的名称。 |
+|allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
+|说明|String|奖励或奖励的奖励。 |
+|displayName|String|奖励或奖励的名称。 |
 |inference|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断出来的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |issuedDate|日期|授予奖励或奖励的日期。 |
-|issuingAuthority|字符串|授予该奖励或奖励的颁发机构。  |
-|thumbnailUrl|字符串|引用奖励或奖励缩略图的 URL。  |
+|issuingAuthority|String|授予该奖励或奖励的颁发机构。  |
+|thumbnailUrl|String|引用奖励或奖励缩略图的 URL。  |
 |WebUrl|String|引用奖励或奖励的 URL。 |
 
 ## <a name="response"></a>响应

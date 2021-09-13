@@ -1,16 +1,16 @@
 ---
 title: 删除 windowsOfficeClientConfiguration
 description: 删除特定的非安全策略。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dougeby
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2804a82c84c87c18ce480e4d6fc4a1406231dcab
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 45c30241df49c01479e4298f34b61640d8e2df6b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784999"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117233"
 ---
 # <a name="delete-windowsofficeclientconfiguration"></a>删除 windowsOfficeClientConfiguration
 
@@ -43,7 +43,7 @@ DELETE /officeConfiguration/clientConfigurations/{key}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

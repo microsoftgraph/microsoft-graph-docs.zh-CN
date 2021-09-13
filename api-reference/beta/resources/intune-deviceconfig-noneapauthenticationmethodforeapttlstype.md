@@ -2,15 +2,15 @@
 title: nonEapAuthenticationMethodForEapTtlsType 枚举类型
 description: 用于身份验证的非 EAP 方法。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 01d5a4b9fa924b60985c08dba160d4ab449d3c6b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 526fceca9bb4ab3b305a916501b3d5cb46397628
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58782124"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59111108"
 ---
 # <a name="noneapauthenticationmethodforeapttlstype-enum-type"></a>nonEapAuthenticationMethodForEapTtlsType 枚举类型
 
@@ -25,8 +25,8 @@ ms.locfileid: "58782124"
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|unencryptedPassword|0|PAP (密码) 。|
-|challengeHandshakeAuthenticationProtocol|1|CHAP 协议质询握手身份验证 () 。|
+|unencryptedPassword|0|PAP (未) 。|
+|challengeHandshakeAuthenticationProtocol|1|CHAP 质询握手身份验证协议 (CHAP) 。|
 |microsoftChap|2| Microsoft CHAP (MS-CHAP) 。|
 |microsoftChapVersionTwo|3|Microsoft CHAP 版本 2 (MS-CHAP v2) 。|
 

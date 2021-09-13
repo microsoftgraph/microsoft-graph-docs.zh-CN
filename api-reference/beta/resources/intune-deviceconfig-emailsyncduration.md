@@ -2,15 +2,15 @@
 title: emailSyncDuration 枚举类型
 description: 电子邮件同步持续时间的可能值。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0eb90fe7d2bddacc5c3d1db2b771e6056ce646dc
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c5fae18e8f97c800e4c50305ef6b913c45872fce
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805427"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59101511"
 ---
 # <a name="emailsyncduration-enum-type"></a>emailSyncDuration 枚举类型
 

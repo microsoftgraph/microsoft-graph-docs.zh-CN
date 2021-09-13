@@ -2,15 +2,15 @@
 title: managementAgentType 枚举类型
 description: 管理代理类型。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 88670bf7bee32898bd18efea79153096c289cf5e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: afda1f2dd54cbb0ee63dc47e3ca14bf6cd946a1b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789613"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086769"
 ---
 # <a name="managementagenttype-enum-type"></a>managementAgentType 枚举类型
 
@@ -32,7 +32,7 @@ ms.locfileid: "58789613"
 |easIntuneClient|5 |设备是 EAS 和 Intune 客户端双托管设备。|
 |configurationManagerClient|8 |设备由 Configuration Manager 管理。|
 |configurationManagerClientMdm|10 |设备由 Configuration Manager 和 MDM 管理。|
-|configurationManagerClientMdmEas|11 |设备由 Configuration Manager、MDM 和 Eas 管理。|
+|configurationManagerClientMdmEas|11|设备由 Configuration Manager、MDM 和 Eas 管理。|
 |unknown|16 |未知管理代理类型。|
 |jamf|32|设备属性从 Jamf 获取。|
 |googleCloudDevicePolicyController|64|设备由 Google 的 CloudDPC 管理。|

@@ -1,16 +1,16 @@
 ---
 title: emailAppUsageUserCounts 资源类型
 description: 下面是资源的 JSON 表示形式。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sarahwxy
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 811df58d494cfb8ccfc8d8a3d84383bbbb3c816a0bc815f7d3ce778785195b92
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9b27ee4f07da8843748ce7d245d9c222d42868d6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54122759"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59092005"
 ---
 # <a name="emailappusageusercounts-resource-type"></a>emailAppUsageUserCounts 资源类型
 
@@ -31,7 +31,7 @@ ms.locfileid: "54122759"
 | imap4App          | Int64  |
 | smtpApp           | Int64  |
 | reportDate        | 日期   |
-| reportPeriod      | 字符串 |
+| reportPeriod      | String |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

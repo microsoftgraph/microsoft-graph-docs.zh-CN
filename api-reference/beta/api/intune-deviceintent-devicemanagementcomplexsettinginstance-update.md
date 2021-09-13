@@ -2,15 +2,15 @@
 title: 更新 deviceManagementComplexSettingInstance
 description: 更新 deviceManagementComplexSettingInstance 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cd166ee63658c16cdb5a94981127fd58791875b6
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 99fe2153e5feecc19dfbd3930dbab438b49bff45
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796759"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59133035"
 ---
 # <a name="update-devicemanagementcomplexsettinginstance"></a>更新 deviceManagementComplexSettingInstance
 
@@ -46,7 +46,7 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/categories/{devic
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -56,9 +56,9 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/categories/{devic
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|设置实例 ID 继承自 [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
+|id|String|设置实例 ID 继承自 [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
 |definitionId|String|此实例的设置定义的 ID 继承自 [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
-|valueJson|字符串|值的 JSON 表示形式 继承自 [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
+|valueJson|String|值的 JSON 表示形式 继承自 [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
 
 
 

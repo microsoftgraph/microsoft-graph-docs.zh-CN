@@ -2,15 +2,15 @@
 title: groupPolicyPresentationDropdownList 资源类型
 description: 表示 ADMX dropdownList 元素和 ADMX 枚举元素。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9fe4410f0f6d433b62874a5d8ddc6d8ef4e13712
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 703690c2ee30baae912558158bfc90e9bc825bda
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58817052"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085991"
 ---
 # <a name="grouppolicypresentationdropdownlist-resource-type"></a>groupPolicyPresentationDropdownList 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "58817052"
 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)
 
 ## <a name="methods"></a>方法
-|方法|返回类型|Description|
+|方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 groupPolicyPresentationDropdownLists](../api/intune-grouppolicy-grouppolicypresentationdropdownlist-list.md)|[groupPolicyPresentationDropdownList](../resources/intune-grouppolicy-grouppolicypresentationdropdownlist.md) 集合|列出 [groupPolicyPresentationDropdownList 对象的属性和](../resources/intune-grouppolicy-grouppolicypresentationdropdownlist.md) 关系。|
 |[获取 groupPolicyPresentationDropdownList](../api/intune-grouppolicy-grouppolicypresentationdropdownlist-get.md)|[groupPolicyPresentationDropdownList](../resources/intune-grouppolicy-grouppolicypresentationdropdownlist.md)|读取 [groupPolicyPresentationDropdownList 对象的属性和](../resources/intune-grouppolicy-grouppolicypresentationdropdownlist.md) 关系。|
@@ -35,7 +35,7 @@ ms.locfileid: "58817052"
 |[更新 groupPolicyPresentationDropdownList](../api/intune-grouppolicy-grouppolicypresentationdropdownlist-update.md)|[groupPolicyPresentationDropdownList](../resources/intune-grouppolicy-grouppolicypresentationdropdownlist.md)|更新 [groupPolicyPresentationDropdownList 对象](../resources/intune-grouppolicy-grouppolicypresentationdropdownlist.md) 的属性。|
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |标签|String|任何演示文稿实体的本地化文本标签。 默认值为空白。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |id|String|实体的键。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
@@ -45,7 +45,7 @@ ms.locfileid: "58817052"
 |必需|Boolean|要求在参数框中输入值。 默认值为 false。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|Description|
+|关系|类型|说明|
 |:---|:---|:---|
 |definition|[groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|与演示文稿关联的组策略定义。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 

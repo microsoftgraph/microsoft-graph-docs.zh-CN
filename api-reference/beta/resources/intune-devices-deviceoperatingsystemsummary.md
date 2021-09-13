@@ -2,15 +2,15 @@
 title: deviceOperatingSystemSummary 资源类型
 description: 设备操作系统摘要。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7b6dbf7adc11c7272db535a6ffdec27937198c15
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1268f32a2d414d670bb8b3f35d69f29d69d80a3c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784798"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59125881"
 ---
 # <a name="deviceoperatingsystemsummary-resource-type"></a>deviceOperatingSystemSummary 资源类型
 
@@ -35,7 +35,7 @@ ms.locfileid: "58784798"
 |androidDeviceAdminCount|Int32|设备管理员 Android 设备的数量。|
 |androidFullyManagedCount|Int32|完全托管的 Android 设备的数量。|
 |androidWorkProfileCount|Int32|工作配置文件 Android 设备的数量。|
-|androidCorporateWorkProfileCount|Int32|公司工作配置文件 Android 设备计数。 也称为"企业拥有的个人拥有" (一) 。 有效值 -1 到 2147483647|
+|androidCorporateWorkProfileCount|Int32|公司工作配置文件 Android 设备计数。 也称为"公司拥有的个人拥有" (一) 。 有效值 -1 到 2147483647|
 |configMgrDeviceCount|Int32|ConfigMgr 托管设备的数量。|
 |aospUserlessCount|Int32|无用户 AOSP Android 设备的数量。 有效值为 0 到 2147483647|
 |aospUserAssociatedCount|Int32|AOSP 用户关联的 Android 设备的数量。 有效值为 0 到 2147483647|

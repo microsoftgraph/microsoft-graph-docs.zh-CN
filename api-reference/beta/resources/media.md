@@ -2,15 +2,15 @@
 author: MarcMroz
 description: 媒体资源包含有关驱动器项 (或视频) 元数据。
 title: 媒体资源类型
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 5b25d24ffb566e4c7030a02ee03f691ad397553bfb8dea599877c588a1f60cdb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3dd985c7259088f41412ea5d579c1e49d99acf4c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54224262"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59091200"
 ---
 # <a name="media-resouce-type"></a>media resouce 类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "54224262"
 
 | 属性                 | 类型                  | 说明                                                                                                   |
 | :----------------------- | :-------------------- | :------------------------------------------------------------------------------------------------------------ 
-| **isTranscriptionShown** | 布尔值               | 如果文件具有脚本，则此设置控制在查看过程中是否向用户显示媒体文件的隐藏式字幕/转录。 读写。                                                    |
+| **isTranscriptionShown** | Boolean               | 如果文件具有脚本，则此设置控制在查看过程中是否向用户显示媒体文件的隐藏式字幕/转录。 读写。                                                    |
 | **mediaSource**          | [mediaSource](mediaSource.md)         | 有关媒体源的信息。 只读。                                                             | 
 
 

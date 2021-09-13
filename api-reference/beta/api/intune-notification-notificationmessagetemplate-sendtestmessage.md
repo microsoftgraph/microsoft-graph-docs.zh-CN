@@ -2,15 +2,15 @@
 title: sendTestMessage 操作
 description: 使用默认区域设置中指定的 notificationMessageTemplate 发送测试消息
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7afee803765391cacc091d7658ae634f7a98daec
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6112020d1deeeacaaf33c5356d89e40c2f51ef2f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805827"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59107727"
 ---
 # <a name="sendtestmessage-action"></a>sendTestMessage 操作
 
@@ -43,7 +43,7 @@ POST /deviceManagement/notificationMessageTemplates/{notificationMessageTemplate
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -2,15 +2,15 @@
 title: windowsUpdateForBusinessConfiguration 资源类型
 description: 适用于企业的 Windows 更新配置。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2cea85098a96bd056f9c1ebd227983f9815a897a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5c8715a0d8fa2018ddce58806a4f6a4d23569d44
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816070"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147876"
 ---
 # <a name="windowsupdateforbusinessconfiguration-resource-type"></a>windowsUpdateForBusinessConfiguration 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "58816070"
 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)
 
 ## <a name="methods"></a>方法
-|方法|返回类型|Description|
+|方法|返回类型|说明|
 |:---|:---|:---|
 |[List windowsUpdateForBusinessConfigurations](../api/intune-deviceconfig-windowsupdateforbusinessconfiguration-list.md)|[windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md) 集合|列出 [windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md) 对象的属性和关系。|
 |[Get windowsUpdateForBusinessConfiguration](../api/intune-deviceconfig-windowsupdateforbusinessconfiguration-get.md)|[windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md)|读取 [windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md) 对象的属性和关系。|
@@ -34,7 +34,7 @@ ms.locfileid: "58816070"
 |[Delete windowsUpdateForBusinessConfiguration](../api/intune-deviceconfig-windowsupdateforbusinessconfiguration-delete.md)|无|删除 [windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md)。|
 |[Update windowsUpdateForBusinessConfiguration](../api/intune-deviceconfig-windowsupdateforbusinessconfiguration-update.md)|[windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md)|更新 [windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md) 对象的属性。|
 |[extendFeatureUpdatesPause 操作](../api/intune-deviceconfig-windowsupdateforbusinessconfiguration-extendfeatureupdatespause.md)|无|扩展适用于企业更新环Windows暂停功能更新。|
-|[extendQualityUpdatesPause 操作](../api/intune-deviceconfig-windowsupdateforbusinessconfiguration-extendqualityupdatespause.md)|无|扩展适用于企业更新环Windows暂停质量更新。|
+|[extendQualityUpdatesPause 操作](../api/intune-deviceconfig-windowsupdateforbusinessconfiguration-extendqualityupdatespause.md)|无|扩展适用于企业更新环Windows质量更新暂停。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
@@ -47,8 +47,8 @@ ms.locfileid: "58816070"
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deliveryOptimizationMode|[windowsDeliveryOptimizationMode](../resources/intune-deviceconfig-windowsdeliveryoptimizationmode.md)|传递优化模式。 可取值为：`userDefined`、`httpOnly`、`httpWithPeeringNat`、`httpWithPeeringPrivateGroup`、`httpWithInternetPeering`、`simpleDownload` 或 `bypassMode`。|
 |prereleaseFeatures|[prereleaseFeatures](../resources/intune-deviceconfig-prereleasefeatures.md)|预发布功能。 可取值为：`userDefined`、`settingsOnly`、`settingsAndExperimentations`、`notAllowed`。|
@@ -80,14 +80,14 @@ ms.locfileid: "58816070"
 |deadlineGracePeriodInDays|Int32|自截止时间到重启自动发生的天数，有效范围为 0 到 7 天|
 |postponeRebootUntilAfterDeadline|Boolean|指定设备是否等到使用时段外重启的截止时间|
 |autoRestartNotificationDismissal|[autoRestartNotificationDismissalMethod](../resources/intune-deviceconfig-autorestartnotificationdismissalmethod.md)|指定消除所需的自动重启通知的方法。 可取值为：`notConfigured`、`automatic`、`user`。|
-|scheduleRestartWarningInHours|Int32|指定自动重启警告提醒通知的时间段。 支持的值：2、4、8、12 或 24 (小时) 。|
+|scheduleRestartWarningInHours|Int32|指定自动重启警告提醒通知的时间段。 支持的值：2、4、8、12 或 24 小时 (小时) 。|
 |scheduleImminentRestartWarningInMinutes|Int32|指定自动重启即将发生的警告通知的时间段。 支持的值：15、30 或 60 (分钟) 。|
 |userPauseAccess|[enablement](../resources/intune-shared-enablement.md)|指定是否允许最终用户暂停软件更新。 可取值为：`notConfigured`、`enabled`、`disabled`。|
-|userWindowsUpdateScanAccess|[enablement](../resources/intune-shared-enablement.md)|指定是否禁用用户对更新Windows访问权限。 可取值为：`notConfigured`、`enabled`、`disabled`。|
+|userWindowsUpdateScanAccess|[enablement](../resources/intune-shared-enablement.md)|指定是否禁用用户对"更新"Windows扫描。 可取值为：`notConfigured`、`enabled`、`disabled`。|
 |updateNotificationLevel|[windowsUpdateNotificationDisplayOption](../resources/intune-deviceconfig-windowsupdatenotificationdisplayoption.md)|指定更新Windows用户看到哪些内容。 可取值为：`notConfigured`、`defaultNotifications`、`restartWarningsOnly`、`disableAllNotifications`。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|Description|
+|关系|类型|说明|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md) 集合|设备配置文件的组分配列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) 集合|设备配置文件的分配列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|

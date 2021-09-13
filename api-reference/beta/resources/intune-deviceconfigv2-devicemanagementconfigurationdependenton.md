@@ -2,15 +2,15 @@
 title: deviceManagementConfigurationDependentOn 资源类型
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6a19f2b7ffe20954bf34cb01ffb0889c0294f56d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f216b43ae577d670763a3fe3c2b26f3a14d84072
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784497"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128947"
 ---
 # <a name="devicemanagementconfigurationdependenton-resource-type"></a>deviceManagementConfigurationDependentOn 资源类型
 

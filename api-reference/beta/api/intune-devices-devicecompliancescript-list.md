@@ -2,15 +2,15 @@
 title: 列出 deviceComplianceScripts
 description: 列出 deviceComplianceScript 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fbeaad63bf382d34b3ff3142f9b4bc42b00bd876
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: cbe063d33f0c217f7cfce59946403f82cddec735
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58798249"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59121968"
 ---
 # <a name="list-devicecompliancescripts"></a>列出 deviceComplianceScripts
 
@@ -43,7 +43,7 @@ GET /deviceManagement/deviceComplianceScripts
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

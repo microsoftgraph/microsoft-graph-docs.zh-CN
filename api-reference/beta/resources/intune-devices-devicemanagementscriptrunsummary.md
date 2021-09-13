@@ -2,15 +2,15 @@
 title: deviceManagementScriptRunSummary 资源类型
 description: 包含设备管理脚本的运行摘要的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ad5a72192186e098e87f3a7285ac4a8db5e1d5da
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a409bff5addf078e14352217b2bb9cdbeab6f74b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818987"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59125951"
 ---
 # <a name="devicemanagementscriptrunsummary-resource-type"></a>deviceManagementScriptRunSummary 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58818987"
 包含设备管理脚本的运行摘要的属性。
 
 ## <a name="methods"></a>方法
-|方法|返回类型|Description|
+|方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 deviceManagementScriptRunSummary](../api/intune-devices-devicemanagementscriptrunsummary-get.md)|[deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md)|读取 [deviceManagementScriptRunSummary 对象的属性和](../resources/intune-devices-devicemanagementscriptrunsummary.md) 关系。|
 |[更新 deviceManagementScriptRunSummary](../api/intune-devices-devicemanagementscriptrunsummary-update.md)|[deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md)|更新 [deviceManagementScriptRunSummary 对象](../resources/intune-devices-devicemanagementscriptrunsummary.md) 的属性。|

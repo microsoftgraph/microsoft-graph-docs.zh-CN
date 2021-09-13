@@ -2,15 +2,15 @@
 title: 创建 iosDeviceFeaturesConfiguration
 description: 创建新的 iosDeviceFeaturesConfiguration 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a0d1ebd024117250374574b0c15522b44255d18f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d96d7d92853da3fcd49d9e67dc93b683335aba56
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804223"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59103219"
 ---
 # <a name="create-iosdevicefeaturesconfiguration"></a>创建 iosDeviceFeaturesConfiguration
 
@@ -44,7 +44,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -62,7 +62,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|字符串|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |airPrintDestinations|[airPrintDestination](../resources/intune-deviceconfig-airprintdestination.md) 集合|应始终显示的 AirPrint 打印机数组。 该集合最多可包含 500 个元素。 继承自 [appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig-appledevicefeaturesconfigurationbase.md)|
@@ -75,7 +75,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |homeScreenGridHeight|Int32|获取或设置配置 iOS 主屏幕布局设置时要呈现的行数。 如果配置此值，还必须配置 homeScreenGridWidth。|
 |notificationSettings|[iosNotificationSettings](../resources/intune-deviceconfig-iosnotificationsettings.md) 集合|每个捆绑 ID 的通知设置。仅适用于监督模式下的设备（iOS 9.3 及更高版本）。 该集合最多可包含 500 个元素。|
 |singleSignOnSettings|[iosSingleSignOnSettings](../resources/intune-deviceconfig-iossinglesignonsettings.md)|Kerberos 登录设置，使接收设备上的应用能够顺利进行身份验证。|
-|wallpaperDisplayLocation|[iosWallpaperDisplayLocation](../resources/intune-deviceconfig-ioswallpaperdisplaylocation.md)|墙纸显示位置说明器。 可能的值是：`notConfigured`、`lockScreen`、`homeScreen`、`lockAndHomeScreens`。|
+|wallpaperDisplayLocation|[iosWallpaperDisplayLocation](../resources/intune-deviceconfig-ioswallpaperdisplaylocation.md)|墙纸显示位置说明器。 可取值为：`notConfigured`、`lockScreen`、`homeScreen`、`lockAndHomeScreens`。|
 |wallpaperImage|[mimeContent](../resources/intune-shared-mimecontent.md)|墙纸图像必须为 PNG 或 JPEG 格式。 它需要具有 iOS 8 或更高版本的受监督设备。|
 |singleSignOnExtension|[singleSignOnExtension](../resources/intune-deviceconfig-singlesignonextension.md)|获取或设置单一登录扩展配置文件。 已弃用：改为使用 IOSSingleSignOnExtension。|
 |iosSingleSignOnExtension|[iosSingleSignOnExtension](../resources/intune-deviceconfig-iossinglesignonextension.md)|获取或设置单一登录扩展配置文件。|

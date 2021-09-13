@@ -2,15 +2,15 @@
 title: 创建 macOSCompliancePolicy
 description: 创建新的 macOSCompliancePolicy 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 99866edc123e97197bd3fd4113e5780343583cb2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c0bf6f5bb3073af492924fc3b4daaf3bd87bfb63
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805589"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59097731"
 ---
 # <a name="create-macoscompliancepolicy"></a>创建 macOSCompliancePolicy
 
@@ -43,7 +43,7 @@ POST /deviceManagement/deviceCompliancePolicies
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -56,9 +56,9 @@ POST /deviceManagement/deviceCompliancePolicies
 |roleScopeTagIds|字符串集合|此实体实例的范围标记列表。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |id|String|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
-|description|字符串|管理员提供的设备配置的说明。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|说明|String|管理员提供的设备配置的说明。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
-|displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|displayName|String|管理员提供的设备配置的名称。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |passwordRequired|Boolean|是否需要密码。|
 |passwordBlockSimple|Boolean|指示是否阻止简单密码。|
@@ -71,13 +71,13 @@ POST /deviceManagement/deviceCompliancePolicies
 |osMinimumVersion|String|最低 MacOS 版本。|
 |osMaximumVersion|String|最大 MacOS 版本。|
 |osMinimumBuildVersion|String|最低 MacOS 内部版本。|
-|osMaximumBuildVersion|字符串|最大 MacOS 内部版本。|
+|osMaximumBuildVersion|String|最大 MacOS 内部版本。|
 |systemIntegrityProtectionEnabled|Boolean|要求设备已启用系统完整性保护。|
 |deviceThreatProtectionEnabled|Boolean|要求设备已启用设备威胁防护。|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|要求移动威胁防护最低风险级别来报告不符合情况。 可取值为：`unavailable`、`secured`、`low`、`medium`、`high`、`notSet`。|
 |advancedThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|MDATP 要求移动威胁防护最低风险级别来报告不相容情况。 可取值为：`unavailable`、`secured`、`low`、`medium`、`high`、`notSet`。|
 |storageRequireEncryption|Boolean|要求对 Mac OS 设备加密。|
-|gatekeeperAllowedAppSource|[macOSGatekeeperAppSources](../resources/intune-deviceconfig-macosgatekeeperappsources.md)|系统和隐私设置，用于确定可从 macOS 设备上运行应用的下载位置。 可能的值是：`notConfigured`、`macAppStore`、`macAppStoreAndIdentifiedDevelopers`、`anywhere`。|
+|gatekeeperAllowedAppSource|[macOSGatekeeperAppSources](../resources/intune-deviceconfig-macosgatekeeperappsources.md)|系统和隐私设置，用于确定可从 macOS 设备上运行应用的下载位置。 可取值为：`notConfigured`、`macAppStore`、`macAppStoreAndIdentifiedDevelopers`、`anywhere`。|
 |firewallEnabled|Boolean|防火墙是否应该启用。|
 |firewallBlockAllIncoming|Boolean|对应于"阻止所有传入连接"选项。|
 |firewallEnableStealthMode|Boolean|对应于"启用隐藏模式"。|

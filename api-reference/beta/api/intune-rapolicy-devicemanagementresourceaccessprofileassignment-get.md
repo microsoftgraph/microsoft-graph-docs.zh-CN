@@ -2,15 +2,15 @@
 title: 获取 deviceManagementResourceAccessProfileAssignment
 description: 读取 deviceManagementResourceAccessProfileAssignment 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 15ce2e9332cfcf8b818f3182448f8ba3474ec528
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: fb9e8f708d49fd3a9045454397f2a2b6fd32db9b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820742"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59135513"
 ---
 # <a name="get-devicemanagementresourceaccessprofileassignment"></a>获取 deviceManagementResourceAccessProfileAssignment
 
@@ -46,7 +46,7 @@ GET /deviceManagement/resourceAccessProfiles/{deviceManagementResourceAccessProf
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

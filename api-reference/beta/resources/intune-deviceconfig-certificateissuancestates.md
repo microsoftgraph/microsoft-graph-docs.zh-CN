@@ -2,15 +2,15 @@
 title: certificateIssuanceStates 枚举类型
 description: 证书颁发状态选项。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8f3439f53269bc6126d098016805dd541ad4ad58
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0d4dd08d3068052562098d407ef13d007d6de8a7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797294"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127463"
 ---
 # <a name="certificateissuancestates-enum-type"></a>certificateIssuanceStates 枚举类型
 
@@ -36,7 +36,7 @@ ms.locfileid: "58797294"
 |issuePending|8 |尚未记录|
 |issued|9 |尚未记录|
 |responseProcessingFailed|10 |尚未记录|
-|responsePending|11 |尚未记录|
+|responsePending|11|尚未记录|
 |enrollmentSucceeded|12 |尚未记录|
 |enrollmentNotNeeded|13|尚未记录|
 |revoked|14 |尚未记录|

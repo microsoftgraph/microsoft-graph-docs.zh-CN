@@ -1,16 +1,16 @@
 ---
 title: yammerActivityUserDetail 资源类型
 description: 下面是资源的 JSON 表示形式。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: 5f257632052959b189fb216419ac83211190f2e19c536a924f2d03a318589ab0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e1145e8eea4dbe11a467d2e4dbd704f5ec66e229
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249690"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128562"
 ---
 # <a name="yammeractivityuserdetail-resource-type"></a>yammerActivityUserDetail 资源类型
 
@@ -22,14 +22,14 @@ ms.locfileid: "54249690"
 | :---------------- | :---------------- |
 | reportRefreshDate | 日期              |
 | userPrincipalName | String            |
-| displayName       | 字符串            |
+| displayName       | String            |
 | userState         | String            |
 | stateChangeDate   | 日期              |
 | lastActivityDate  | 日期              |
 | postedCount       | Int64             |
 | readCount         | Int64             |
 | likedCount        | Int64             |
-| assignedProducts  | String collection |
+| assignedProducts  | 字符串集合 |
 | reportPeriod      | String            |
 
 ## <a name="json-representation"></a>JSON 表示形式

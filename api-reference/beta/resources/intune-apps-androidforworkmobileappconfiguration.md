@@ -2,15 +2,15 @@
 title: androidForWorkMobileAppConfiguration 资源类型
 description: 包含 AFW 移动应用配置的属性、继承的属性和操作。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 28bc479e3e00b9691d3da38bca54d9573feba8e7
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7b15932a12f7ea8303fb2fdecc20178e716e6d8d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788491"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129164"
 ---
 # <a name="androidforworkmobileappconfiguration-resource-type"></a>androidForWorkMobileAppConfiguration 资源类型
 
@@ -39,14 +39,14 @@ ms.locfileid: "58788491"
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |targetedMobileApps|String 集合|关联的应用。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
-|roleScopeTagIds|String collection|此应用配置实体的范围标记列表。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
+|roleScopeTagIds|字符串集合|此应用配置实体的范围标记列表。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
-|description|字符串|管理员提供的设备配置说明。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
+|说明|String|管理员提供的设备配置说明。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |displayName|String|管理员提供的设备配置名称。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |packageId|String|Android For Work 应用配置包 ID。|
-|payloadJson|字符串|Android For Work 应用配置 JSON 有效负载。|
+|payloadJson|String|Android For Work 应用配置 JSON 有效负载。|
 |permissionActions|[androidPermissionAction](../resources/intune-apps-androidpermissionaction.md) 集合|Android 应用权限和相应权限操作的列表。|
 |profileApplicability|[androidProfileApplicability](../resources/intune-apps-androidprofileapplicability.md)|Android Enterprise AndroidWorkProfile (DeviceOwner 或默认配置文件 (适用于这两) ) 。 可取值为：`default`、`androidWorkProfile`、`androidDeviceOwner`。|
 

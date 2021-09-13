@@ -2,15 +2,15 @@
 title: deliveryOptimizationBandwidth 资源类型
 description: 带宽限制类型
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 16288f072a1bb3f6c941b32b8e563f6e69570528
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 833057eff226f06ef37b692e587f99a1cec225b5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795247"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147995"
 ---
 # <a name="deliveryoptimizationbandwidth-resource-type"></a>deliveryOptimizationBandwidth 资源类型
 

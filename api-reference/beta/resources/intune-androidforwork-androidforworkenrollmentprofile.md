@@ -2,15 +2,15 @@
 title: androidForWorkEnrollmentProfile 资源类型
 description: 注册配置文件，用于使用 Google 的云管理注册 COSU 设备。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 84436012a9c536e1917b6170df3ecd04cd5e0b72
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0136b8d81546ad85ef9c0b0a30a1eb95b84c84f1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58792622"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59106768"
 ---
 # <a name="androidforworkenrollmentprofile-resource-type"></a>androidForWorkEnrollmentProfile 资源类型
 
@@ -38,8 +38,8 @@ ms.locfileid: "58792622"
 |:---|:---|:---|
 |accountId|String|注册配置文件隶属的租户 GUID。|
 |id|String|注册配置文件的唯一 GUID。|
-|displayName|字符串|注册配置文件的显示名称。|
-|description|字符串|注册配置文件的说明。|
+|displayName|String|注册配置文件的显示名称。|
+|说明|String|注册配置文件的说明。|
 |createdDateTime|DateTimeOffset|注册配置文件的创建日期/时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改注册配置文件的日期/时间。|
 |tokenValue|String|为此注册配置文件最新创建的令牌的值。|

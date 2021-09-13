@@ -2,15 +2,15 @@
 title: androidMinimumOperatingSystem 资源类型
 description: 包含 Android 移动应用需要的最低操作系统的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9f77577b7cb0596fafb79d109a562957a47336c2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b3444ad607908e4c37b1751b5f5a8f3755ea6e7b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820553"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59115623"
 ---
 # <a name="androidminimumoperatingsystem-resource-type"></a>androidMinimumOperatingSystem 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58820553"
 包含 Android 移动应用需要的最低操作系统的属性。
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |v4_0|布尔值|版本 4.0 或更高版本。|
 |v4_0_3|布尔值|版本 4.0.3 或更高版本。|

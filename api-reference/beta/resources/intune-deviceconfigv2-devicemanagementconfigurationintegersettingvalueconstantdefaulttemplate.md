@@ -2,15 +2,15 @@
 title: deviceManagementConfigurationIntegerSettingValueConstantDefaultTemplate 资源类型
 description: 整数设置值常量默认模板
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 31c775d857fdce4d1e416d99a33e35deae6a4606
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9d0f4ba0fac13b7f127fe1749b598c94d981ee40
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819883"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128870"
 ---
 # <a name="devicemanagementconfigurationintegersettingvalueconstantdefaulttemplate-resource-type"></a>deviceManagementConfigurationIntegerSettingValueConstantDefaultTemplate 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "58819883"
 继承自 [deviceManagementConfigurationIntegerSettingValueDefaultTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationintegersettingvaluedefaulttemplate.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|描述|
 |:---|:---|:---|
 |constantValue|Int32|默认常量值。 有效值 -2147483648 2147483647|
 

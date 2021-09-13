@@ -2,15 +2,15 @@
 title: 列出 enrollmentRestrictionsConfigurationPolicySetItems
 description: 列出 enrollmentRestrictionsConfigurationPolicySetItem 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4b26c9947d1f61b6b93ec66654b325755e6a69f7
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 61bd72f64f51eb4b994bb69d9202bb2a45586f18
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790015"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59096709"
 ---
 # <a name="list-enrollmentrestrictionsconfigurationpolicysetitems"></a>列出 enrollmentRestrictionsConfigurationPolicySetItems
 
@@ -43,7 +43,7 @@ GET /deviceAppManagement/policySets/{policySetId}/items
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

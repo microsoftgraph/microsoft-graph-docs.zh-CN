@@ -2,15 +2,15 @@
 title: deliveryOptimizationGroupIdSource 资源类型
 description: GroupId 支持类型
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 294d6b71fcde1019e2e7adc101aa03928312855b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 70710159c11fbf962eea8be0d6ffd97b332e710c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790519"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147946"
 ---
 # <a name="deliveryoptimizationgroupidsource-resource-type"></a>deliveryOptimizationGroupIdSource 资源类型
 

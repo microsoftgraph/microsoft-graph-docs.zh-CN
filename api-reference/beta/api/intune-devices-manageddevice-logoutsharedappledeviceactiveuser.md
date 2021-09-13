@@ -2,15 +2,15 @@
 title: logoutSharedAppleDeviceActiveUser 操作
 description: 注销共享 Apple 设备活动用户
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 33186ff459b406ff1200cd6be55e4c5e748c619b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 84b5a1a887c9e637f6e1da5c50794c77eaecd1fe
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791647"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59121821"
 ---
 # <a name="logoutsharedappledeviceactiveuser-action"></a>logoutSharedAppleDeviceActiveUser 操作
 
@@ -49,7 +49,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

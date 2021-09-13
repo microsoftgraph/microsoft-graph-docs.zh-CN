@@ -2,15 +2,15 @@
 title: androidDeviceOwnerKioskModeIconSize 枚举类型
 description: Android 设备所有者展台模式托管主屏幕图标大小。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c3b656994f2de42620c5254f0145bc12adf577e6
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 36933b41232eee9bb95daee9a5fe72f455ae44ec
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58813136"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59146783"
 ---
 # <a name="androiddeviceownerkioskmodeiconsize-enum-type"></a>androidDeviceOwnerKioskModeIconSize 枚举类型
 

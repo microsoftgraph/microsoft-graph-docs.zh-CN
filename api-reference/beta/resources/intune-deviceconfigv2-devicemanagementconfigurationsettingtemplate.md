@@ -2,15 +2,15 @@
 title: deviceManagementConfigurationSettingTemplate 资源类型
 description: 设置模板
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 78499c007ae2e2e7659fe49bd91ada31e6230197
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e59dcabfd6dfc86ff0e8aea1034135aa2d45539c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804279"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59101210"
 ---
 # <a name="devicemanagementconfigurationsettingtemplate-resource-type"></a>deviceManagementConfigurationSettingTemplate 资源类型
 

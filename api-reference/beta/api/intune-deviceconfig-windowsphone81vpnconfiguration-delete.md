@@ -2,15 +2,15 @@
 title: 删除 windowsPhone81VpnConfiguration
 description: 删除 windowsPhone81VpnConfiguration。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: db2e248ac1f8d7ad0fef130c48e2a9e19c9b0cc1
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6f701e76878cd17104fca416bbe5a9379b1d3d9b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804181"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59088337"
 ---
 # <a name="delete-windowsphone81vpnconfiguration"></a>删除 windowsPhone81VpnConfiguration
 
@@ -45,7 +45,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -2,15 +2,15 @@
 title: deviceComplianceUserStatus 资源类型
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9ee6b5612e60bf804cf2b5637e5f557a2030fbad
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 061ec59307e98060f0f72d386330351842d30ef9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58800065"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59115511"
 ---
 # <a name="devicecomplianceuserstatus-resource-type"></a>deviceComplianceUserStatus 资源类型
 

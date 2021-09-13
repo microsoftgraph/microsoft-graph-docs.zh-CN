@@ -2,15 +2,15 @@
 title: changeUefiSettingsPermission 枚举类型
 description: 定义授予用户的权限级别以允许用户更改 Uefi 设置
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f4ef2ce13a06a27258b219037ea715a84dcd2151
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e3d609d8b0adca146ae58386b02f54e778e9bcdb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58778134"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127365"
 ---
 # <a name="changeuefisettingspermission-enum-type"></a>changeUefiSettingsPermission 枚举类型
 
