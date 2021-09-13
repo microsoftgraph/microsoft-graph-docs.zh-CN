@@ -2,15 +2,15 @@
 title: managedDeviceMobileAppConfiguration 资源类型
 description: 已注册设备移动应用配置的抽象类
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8e7ba28b10823b6cbd1417e456984b5e13141c41
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: dbfb1a51400733d870b81e294e9eb87176a194cd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806115"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59087098"
 ---
 # <a name="manageddevicemobileappconfiguration-resource-type"></a>managedDeviceMobileAppConfiguration 资源类型
 
@@ -34,9 +34,9 @@ ms.locfileid: "58806115"
 |:---|:---|:---|
 |id|String|实体的键。|
 |targetedMobileApps|String 集合|关联的应用。|
-|roleScopeTagIds|String collection|此应用配置实体的范围标记列表。|
+|roleScopeTagIds|字符串集合|此应用配置实体的范围标记列表。|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。|
-|description|String|管理员提供的设备配置说明。|
+|说明|String|管理员提供的设备配置说明。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
 |displayName|String|管理员提供的设备配置名称。|
 |version|Int32|设备配置的版本。|

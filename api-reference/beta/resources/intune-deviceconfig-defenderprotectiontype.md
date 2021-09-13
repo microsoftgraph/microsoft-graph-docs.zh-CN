@@ -2,15 +2,15 @@
 title: defenderProtectionType 枚举类型
 description: Defender PUA Protection 的可能值
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2f3ef3f068a6994ee4ffcc48cbf583a38e3ef1bc
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: eee7d078bc8183fc1955ce43815612e059b89bd2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801534"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59115532"
 ---
 # <a name="defenderprotectiontype-enum-type"></a>defenderProtectionType 枚举类型
 

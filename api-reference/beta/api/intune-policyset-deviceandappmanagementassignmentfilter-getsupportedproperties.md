@@ -2,15 +2,15 @@
 title: getSupportedProperties 函数
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cd6383e479ef3f2225e285e70af0e4c588ceccf7
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 34cb3b1ace1d35b9e52456a4886d301c9fb14c3d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791576"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59092621"
 ---
 # <a name="getsupportedproperties-function"></a>getSupportedProperties 函数
 
@@ -43,7 +43,7 @@ GET /deviceManagement/assignmentFilters/{deviceAndAppManagementAssignmentFilterI
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

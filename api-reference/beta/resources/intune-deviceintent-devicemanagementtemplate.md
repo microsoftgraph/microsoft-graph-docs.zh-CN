@@ -2,15 +2,15 @@
 title: deviceManagementTemplate 资源类型
 description: 表示定义的设备设置集合的实体
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e830e4d879b3cf3a096e9919ad75c0e3966dc21e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 434f62be55ebd1fef116d07e27fd9fcb7541d009
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819008"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086387"
 ---
 # <a name="devicemanagementtemplate-resource-type"></a>deviceManagementTemplate 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58819008"
 表示定义的设备设置集合的实体
 
 ## <a name="methods"></a>方法
-|方法|返回类型|Description|
+|方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceManagementTemplates](../api/intune-deviceintent-devicemanagementtemplate-list.md)|[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md) 集合|列出 [deviceManagementTemplate 对象的属性和](../resources/intune-deviceintent-devicemanagementtemplate.md) 关系。|
 |[获取 deviceManagementTemplate](../api/intune-deviceintent-devicemanagementtemplate-get.md)|[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|读取 [deviceManagementTemplate 对象的属性和](../resources/intune-deviceintent-devicemanagementtemplate.md) 关系。|
@@ -39,7 +39,7 @@ ms.locfileid: "58819008"
 |:---|:---|:---|
 |id|String|模板 ID|
 |displayName|String|模板的显示名称|
-|description|String|模板的说明|
+|说明|String|模板的说明|
 |versionInfo|String|模板的版本信息|
 |isDeprecated|Boolean|模板是否被弃用。 无法从已弃用模板创建意图。|
 |intentCount|Int32|从此模板创建的意图数。|
@@ -49,9 +49,9 @@ ms.locfileid: "58819008"
 |publishedDateTime|DateTimeOffset|模板发布时间|
 
 ## <a name="relationships"></a>关系
-|关系|类型|Description|
+|关系|类型|说明|
 |:---|:---|:---|
-|settings|[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md) 集合|此模板具有的所有设置的集合|
+|设置|[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md) 集合|此模板具有的所有设置的集合|
 |categories|[deviceManagementTemplateSettingCategory](../resources/intune-deviceintent-devicemanagementtemplatesettingcategory.md) 集合|模板中的设置类别集合|
 |migratableTo|[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md) 集合|此模板可以迁移到的模板集合|
 

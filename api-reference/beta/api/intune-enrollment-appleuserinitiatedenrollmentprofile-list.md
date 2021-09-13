@@ -2,15 +2,15 @@
 title: 列出 appleUserInitiatedEnrollmentProfiles
 description: 列出 appleUserInitiatedEnrollmentProfile 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 508b3952c7fde1480a666156fcb853c56ddd9a12
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 850ee974d729c643d94b4080e4e71f2338331888
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793990"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59116645"
 ---
 # <a name="list-appleuserinitiatedenrollmentprofiles"></a>列出 appleUserInitiatedEnrollmentProfiles
 
@@ -43,7 +43,7 @@ GET /deviceManagement/appleUserInitiatedEnrollmentProfiles
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

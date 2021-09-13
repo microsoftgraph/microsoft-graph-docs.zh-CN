@@ -2,15 +2,15 @@
 title: androidDeviceOwnerKioskCustomizationSystemNavigation 枚举类型
 description: 表示展台自定义系统导航的可能值的枚举。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1d4e2ea963413316f090a23a9a3c4b9e59575339
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7abbffd5ad0a400ba9f4e07d6234d0f7e0d32c46
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820931"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59106586"
 ---
 # <a name="androiddeviceownerkioskcustomizationsystemnavigation-enum-type"></a>androidDeviceOwnerKioskCustomizationSystemNavigation 枚举类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58820931"
 表示展台自定义系统导航的可能值的枚举。
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置;此值默认为 NAVIGATION_DISABLED。|
 |navigationEnabled|1|"主页"和"概述"按钮已启用。|

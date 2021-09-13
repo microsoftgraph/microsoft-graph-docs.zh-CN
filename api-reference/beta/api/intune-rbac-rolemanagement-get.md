@@ -2,15 +2,15 @@
 title: 获取 roleManagement
 description: 读取 roleManagement 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 69517a30336d25e8a8d1c9f960e027d6f12ac216
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e338f315db3d55d03425782e7e652a12f3c57de7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796675"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59096506"
 ---
 # <a name="get-rolemanagement"></a>获取 roleManagement
 
@@ -46,7 +46,7 @@ GET /roleManagement
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

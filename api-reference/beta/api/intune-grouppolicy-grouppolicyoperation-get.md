@@ -2,15 +2,15 @@
 title: 获取 groupPolicyOperation
 description: 读取 groupPolicyOperation 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6f0d8712e4cc89ba7d990a98a82b2a903fa84c9c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 71896cc29c131df5a62e2a01905470f3c9a78721
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784042"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59087791"
 ---
 # <a name="get-grouppolicyoperation"></a>获取 groupPolicyOperation
 
@@ -46,7 +46,7 @@ GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/def
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

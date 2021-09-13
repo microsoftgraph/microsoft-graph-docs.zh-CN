@@ -2,15 +2,15 @@
 title: androidDeviceOwnerKioskModeApp 资源类型
 description: Android 设备所有者托管主屏幕上的应用程序
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9e4012bff268811e264561076348d21a15cc98a0
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: da86af4248136fe35f0674834113c98ae580bf45
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820504"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59106593"
 ---
 # <a name="androiddeviceownerkioskmodeapp-resource-type"></a>androidDeviceOwnerKioskModeApp 资源类型
 
@@ -26,7 +26,7 @@ Android 设备所有者托管主屏幕上的应用程序
 继承自 [androidDeviceOwnerKioskModeFolderItem](../resources/intune-deviceconfig-androiddeviceownerkioskmodefolderitem.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |package|String|应用程序的程序包名称|
 |className|String|应用程序的类名称|

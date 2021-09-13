@@ -2,15 +2,15 @@
 title: 删除 windows81TrustedRootCertificate
 description: 删除 windows81TrustedRootCertificate。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6941dd9421982c57b0690867f9783f9e984a07b8
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 26d355c3f8cc65f0f9966ddbdcdaa81dbe08baff
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791689"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59097479"
 ---
 # <a name="delete-windows81trustedrootcertificate"></a>删除 windows81TrustedRootCertificate
 

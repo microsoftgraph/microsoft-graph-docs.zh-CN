@@ -2,15 +2,15 @@
 title: groupPolicyPresentationComboBox 资源类型
 description: 表示 ADMX comboBox 元素和 ADMX 文本元素。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d431d96d3747ce1d9ea764ca924c596391224fa3
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2a873e9dceb08e16166d1d48dca0b801ce42bd02
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58810265"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086006"
 ---
 # <a name="grouppolicypresentationcombobox-resource-type"></a>groupPolicyPresentationComboBox 资源类型
 
@@ -40,7 +40,7 @@ ms.locfileid: "58810265"
 |标签|String|任何演示文稿实体的本地化文本标签。 默认值为空白。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |id|String|实体的键。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|defaultValue|字符串|显示在组合框中的本地化默认字符串。 默认值为空白。|
+|defaultValue|String|显示在组合框中的本地化默认字符串。 默认值为空白。|
 |suggestions|字符串集合|组合框的下拉列表中列出的本地化字符串。 默认值为空白。|
 |必需|Boolean|指定是否必须为参数指定值。 默认值为 false。|
 |maxLength|Int64|一个无符号整数，指定参数的最大文本字符数。 默认值为 1023。|

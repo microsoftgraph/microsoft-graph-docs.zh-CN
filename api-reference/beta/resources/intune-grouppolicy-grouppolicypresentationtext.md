@@ -2,15 +2,15 @@
 title: groupPolicyPresentationText 资源类型
 description: 表示 ADMX 文本元素。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bf3eb2d1d99a62699950421ce2bde69a85c8e834
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 99a9d3e198151265ae4b740f49c9471c379f5c2c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788659"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085997"
 ---
 # <a name="grouppolicypresentationtext-resource-type"></a>groupPolicyPresentationText 资源类型
 

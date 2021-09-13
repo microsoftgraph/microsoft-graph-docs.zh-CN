@@ -2,15 +2,15 @@
 title: 创建 groupPolicyPresentationLongDecimalTextBox
 description: 创建新的 groupPolicyPresentationLongDecimalTextBox 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 54c67bb0639d9a8c5d08acac57c8709f5dba5e07
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: fc451eff0d01a8304466f4383ba238a416469d0c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793976"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59121590"
 ---
 # <a name="create-grouppolicypresentationlongdecimaltextbox"></a>创建 groupPolicyPresentationLongDecimalTextBox
 
@@ -43,7 +43,7 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -59,7 +59,7 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 |defaultValue|Int64|一个无符号整数，指定小数文本框的初始值。 默认值为 1。|
 |spin|Boolean|如果为 true，则创建旋转控件;否则，为数字输入创建一个文本框。 默认值为 true。|
 |spinStep|Int64|一个无符号整数，指定旋转控件更改的增量。 默认值为 1。|
-|必需|布尔值|要求在参数框中输入值。 默认值为 false。|
+|必需|Boolean|要求在参数框中输入值。 默认值为 false。|
 |minValue|Int64|指定允许的最小值的无符号长。 默认值为 0。|
 |maxValue|Int64|无符号长指定允许的最大值。 默认值为 9999。|
 

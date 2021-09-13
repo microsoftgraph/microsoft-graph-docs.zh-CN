@@ -2,15 +2,15 @@
 title: deviceManagementSettingAbstractImplementationConstraint 资源类型
 description: 强制使用 AbstractComplex 类型的约束具有或设置为特定值
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d46768defd5b5245a662002b3a65e8a34e61bf5c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f90e142981b3f0f964d2ebe90db62522571219a1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58821127"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59091466"
 ---
 # <a name="devicemanagementsettingabstractimplementationconstraint-resource-type"></a>deviceManagementSettingAbstractImplementationConstraint 资源类型
 
@@ -28,7 +28,7 @@ ms.locfileid: "58821127"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|allowedAbstractImplementationDefinitionIds|String collection|值列表，表示未针对设置进行配置|
+|allowedAbstractImplementationDefinitionIds|字符串集合|值列表，表示未针对设置进行配置|
 
 ## <a name="relationships"></a>关系
 无

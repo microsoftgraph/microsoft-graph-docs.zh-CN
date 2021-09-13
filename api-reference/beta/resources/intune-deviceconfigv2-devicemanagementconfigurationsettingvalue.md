@@ -2,15 +2,15 @@
 title: deviceManagementConfigurationSettingValue 资源类型
 description: 设置值
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bcf4409553201b5fa53205e253e5d315350fd895
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 42890a2490169d663c4808abf21c83bbaa035046
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805035"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59091536"
 ---
 # <a name="devicemanagementconfigurationsettingvalue-resource-type"></a>deviceManagementConfigurationSettingValue 资源类型
 

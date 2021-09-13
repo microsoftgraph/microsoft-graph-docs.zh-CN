@@ -2,15 +2,15 @@
 title: networkSingleSignOnType 枚举类型
 description: Wi-Fi网络单一登录类型设置。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a3ff7b1c6e2ee380065ba2d2d19f22dbb294f67e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f29d0fd52f43cc63efcba20c917f2f1c7b8ae043
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795204"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59115427"
 ---
 # <a name="networksinglesignontype-enum-type"></a>networkSingleSignOnType 枚举类型
 

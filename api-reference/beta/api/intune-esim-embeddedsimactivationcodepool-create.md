@@ -2,15 +2,15 @@
 title: 创建 embeddedSIMActivationCodePool
 description: 创建新的 embeddedSIMActivationCodePool 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ec02f28c50f4001a2ea2901113945568f104b73d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ab5ca0aace5afcf9da898c212950e307fcc1ef57
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58802598"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59097003"
 ---
 # <a name="create-embeddedsimactivationcodepool"></a>创建 embeddedSIMActivationCodePool
 
@@ -43,7 +43,7 @@ POST /deviceManagement/embeddedSIMActivationCodePools
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,7 +53,7 @@ POST /deviceManagement/embeddedSIMActivationCodePools
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|嵌入式 SIM 卡激活代码池的唯一标识符。 创建时分配的系统生成值。|
+|id|String|嵌入式 SIM 卡激活代码池的唯一标识符。 创建时分配的系统生成值。|
 |displayName|String|管理员定义的嵌入式 SIM 卡激活代码池的名称。|
 |createdDateTime|DateTimeOffset|嵌入式 SIM 卡激活代码池的创建时间。 生成的服务器端。|
 |modifiedDateTime|DateTimeOffset|上次修改嵌入式 SIM 卡激活代码池的时间。 更新的服务器端。|

@@ -2,15 +2,15 @@
 title: 创建 windowsInformationProtectionDeviceRegistration
 description: 创建新的 windowsInformationProtectionDeviceRegistration 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ea007cee7a6ce90c36602b31262cbccfc4107dbc
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c322453fc482f58d9551d82a34aa3473080dbb65
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784301"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59087755"
 ---
 # <a name="create-windowsinformationprotectiondeviceregistration"></a>创建 windowsInformationProtectionDeviceRegistration
 
@@ -43,7 +43,7 @@ POST /deviceAppManagement/windowsInformationProtectionDeviceRegistrations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,7 +54,7 @@ POST /deviceAppManagement/windowsInformationProtectionDeviceRegistrations
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|userId|字符串|与此设备注册记录关联的 UserId。|
+|userId|String|与此设备注册记录关联的 UserId。|
 |deviceRegistrationId|字符串|此设备注册记录的设备标识符。|
 |deviceName|String|设备名称。|
 |deviceType|String|设备类型，例如，Windows笔记本电脑 VS Windows电话。|

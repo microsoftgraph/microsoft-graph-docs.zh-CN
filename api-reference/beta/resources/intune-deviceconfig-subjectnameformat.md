@@ -2,15 +2,15 @@
 title: subjectNameFormat 枚举类型
 description: 主题名称格式选项。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 02378a4963f99cb21d331f739ce727d25ccce8ff
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 274c731c67661d12171dc2fbf02fbc8c62854477
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795541"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59095477"
 ---
 # <a name="subjectnameformat-enum-type"></a>subjectNameFormat 枚举类型
 

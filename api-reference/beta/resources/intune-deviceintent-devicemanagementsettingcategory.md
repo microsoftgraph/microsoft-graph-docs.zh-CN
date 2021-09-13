@@ -2,15 +2,15 @@
 title: deviceManagementSettingCategory 资源类型
 description: 表示设置类别的实体
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e5bb023319284c4d1a455f9cac98c2b62f227129
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7dd0e8d84dbe5f55f6c6e24764d5cddabe036174
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797259"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59091431"
 ---
 # <a name="devicemanagementsettingcategory-resource-type"></a>deviceManagementSettingCategory 资源类型
 
@@ -36,7 +36,7 @@ ms.locfileid: "58797259"
 |:---|:---|:---|
 |id|String|类别 ID|
 |displayName|String|类别名称|
-|hasRequiredSetting|布尔值|类别包含所需的顶级设置|
+|hasRequiredSetting|Boolean|类别包含所需的顶级设置|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|

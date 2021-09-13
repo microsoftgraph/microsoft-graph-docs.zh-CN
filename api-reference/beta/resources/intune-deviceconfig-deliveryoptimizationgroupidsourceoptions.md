@@ -2,15 +2,15 @@
 title: deliveryOptimizationGroupIdSourceOptions 资源类型
 description: 组 ID 选项类型
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7837a358052a8e2ee91508be64e60fda5bf13cee
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1991686405ec7d03135c0f2f8a0aa1a811043650
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789959"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59120204"
 ---
 # <a name="deliveryoptimizationgroupidsourceoptions-resource-type"></a>deliveryOptimizationGroupIdSourceOptions 资源类型
 

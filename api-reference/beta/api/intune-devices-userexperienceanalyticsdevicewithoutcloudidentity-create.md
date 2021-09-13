@@ -2,15 +2,15 @@
 title: 创建 userExperienceAnalyticsDeviceWithoutCloudIdentity
 description: 创建新的 userExperienceAnalyticsDeviceWithoutCloudIdentity 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 242006ff86391a6a34ab26207f3525e7a96b8623
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2c2ad4ef486a75ca390e7491710bf79fc8b98dd9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58807074"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59097171"
 ---
 # <a name="create-userexperienceanalyticsdevicewithoutcloudidentity"></a>创建 userExperienceAnalyticsDeviceWithoutCloudIdentity
 
@@ -43,7 +43,7 @@ POST /deviceManagement/userExperienceAnalyticsDevicesWithoutCloudIdentity
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,7 +53,7 @@ POST /deviceManagement/userExperienceAnalyticsDevicesWithoutCloudIdentity
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|用户体验分析租户附加设备的唯一标识符。|
+|id|String|用户体验分析租户附加设备的唯一标识符。|
 |deviceName|String|租户附加设备的名称。|
 |azureAdDeviceId|String|Azure Active Directory设备 ID|
 

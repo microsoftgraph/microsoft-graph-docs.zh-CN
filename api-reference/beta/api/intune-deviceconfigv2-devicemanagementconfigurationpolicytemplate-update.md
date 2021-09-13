@@ -2,15 +2,15 @@
 title: 更新 deviceManagementConfigurationPolicyTemplate
 description: 更新 deviceManagementConfigurationPolicyTemplate 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5a12607c84e53cc77797c8868c96939f156147bd
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 17b266cd13872b056c0caff709f9091c3953bcd7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805154"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59088218"
 ---
 # <a name="update-devicemanagementconfigurationpolicytemplate"></a>更新 deviceManagementConfigurationPolicyTemplate
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/configurationPolicyTemplates/{deviceManagementConfigurat
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,10 +54,10 @@ PATCH /deviceManagement/configurationPolicyTemplates/{deviceManagementConfigurat
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|由 BaseId 和 Version 组成的模板文档的键。 自动生成。|
-|baseId|字符串|模板基本标识符|
+|baseId|String|模板基本标识符|
 |version|Int32|模板版本。 有效值为 1 到 2147483647。 此属性是只读的。|
 |displayName|String|模板显示名称|
-|description|String|模板说明|
+|说明|String|模板说明|
 |displayVersion|String|模板版本说明|
 |lifecycleState|[deviceManagementTemplateLifecycleState](../resources/intune-deviceconfigv2-devicemanagementtemplatelifecyclestate.md)|指示模板的当前生命周期状态。 可取值为：`invalid`、`draft`、`active`、`superseded`、`deprecated`、`retired`。|
 |平台|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|此模板的平台。 可取值为：`none`、`macOS`、`windows10X`、`windows10`。|

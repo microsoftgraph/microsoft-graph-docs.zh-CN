@@ -2,15 +2,15 @@
 title: 创建 auditEvent
 description: 创建新的 auditEvent 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 072814b378c4474262ad3c01b3ee091e761f28b8
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b8cb3830c414e91b3a3d04090c6df8dec7b16568
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790358"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117372"
 ---
 # <a name="create-auditevent"></a>创建 auditEvent
 
@@ -43,7 +43,7 @@ POST /deviceManagement/auditEvents
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,8 +53,8 @@ POST /deviceManagement/auditEvents
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
-|displayName|字符串|事件显示名称。|
+|id|String|实体的键。|
+|displayName|String|事件显示名称。|
 |componentName|String|组件名称。|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|与审核事件关联的 AAD 用户和应用程序。|
 |activity|String|活动的友好名称。|

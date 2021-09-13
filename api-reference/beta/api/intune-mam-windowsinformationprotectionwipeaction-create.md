@@ -2,15 +2,15 @@
 title: 创建 windowsInformationProtectionWipeAction
 description: 创建新的 windowsInformationProtectionWipeAction 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 055f9f63f7e42673ef34150f9addec50b3c5d0bd
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 38848c913618e49be5bdd0a096699ccfd7cef6d0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804629"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59092831"
 ---
 # <a name="create-windowsinformationprotectionwipeaction"></a>创建 windowsInformationProtectionWipeAction
 
@@ -43,7 +43,7 @@ POST /deviceAppManagement/windowsInformationProtectionWipeActions
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,11 +54,11 @@ POST /deviceAppManagement/windowsInformationProtectionWipeActions
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|状态|[actionState](../resources/intune-shared-actionstate.md)|擦除操作状态。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed` 或 `notSupported`。|
-|targetedUserId|字符串|此擦除操作所针对的 UserId。|
+|status|[actionState](../resources/intune-shared-actionstate.md)|擦除操作状态。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed` 或 `notSupported`。|
+|targetedUserId|String|此擦除操作所针对的 UserId。|
 |targetedDeviceRegistrationId|String|此擦除操作所针对的 DeviceRegistrationId。|
 |targetedDeviceName|String|目标设备名称。|
-|targetedDeviceMacAddress|字符串|目标设备 Mac 地址。|
+|targetedDeviceMacAddress|String|目标设备 Mac 地址。|
 |lastCheckInDateTime|DateTimeOffset|此擦除操作针对的设备的最后签入时间。|
 
 

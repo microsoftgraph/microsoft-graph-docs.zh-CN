@@ -2,15 +2,15 @@
 title: unmanagedDevice 资源类型
 description: 在网络中发现的非托管设备。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0286d1ac8790cff207ff754d49cd6d3ee51986de
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1606ba0aaedc46ea9a27f6d7d8a0565480c59a01
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806591"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100972"
 ---
 # <a name="unmanageddevice-resource-type"></a>unmanagedDevice 资源类型
 
@@ -30,7 +30,7 @@ ms.locfileid: "58806591"
 |ipAddress|String|IP 地址。|
 |deviceName|String|设备名称。|
 |macAddress|String|MAC 地址。|
-|domain|字符串|域。|
+|domain|String|域。|
 |manufacturer|String|制造商。|
 |model|String|模型。|
 |位置|String|位置。|

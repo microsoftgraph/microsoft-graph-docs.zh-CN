@@ -2,15 +2,15 @@
 title: 更新 windowsManagementApp
 description: 更新 windowsManagementApp 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 088c139a302f07ef4ec954d8401b4e6c77775255
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 88f7655a9819da4afb9b7a64665ecf912b208c26
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790526"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59087889"
 ---
 # <a name="update-windowsmanagementapp"></a>更新 windowsManagementApp
 
@@ -43,7 +43,7 @@ PATCH /deviceAppManagement/windowsManagementApp
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,10 +53,10 @@ PATCH /deviceAppManagement/windowsManagementApp
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|管理应用程序的唯Windows标识符|
+|id|String|管理应用程序的唯Windows标识符|
 |availableVersion|String|Windows管理应用可用版本。|
 |managedInstaller|[managedInstallerStatus](../resources/intune-devices-managedinstallerstatus.md)|托管安装程序状态。 可取值为：`disabled`、`enabled`。|
-|managedInstallerConfiguredDateTime|字符串|托管安装程序配置的日期时间|
+|managedInstallerConfiguredDateTime|String|托管安装程序配置的日期时间|
 
 
 

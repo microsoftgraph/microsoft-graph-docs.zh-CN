@@ -2,15 +2,15 @@
 title: deviceManagementSettingXmlConstraint 资源类型
 description: 强制设置的约束格式为 XML 格式良好
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: af027d33611e1428abeb97acb8bc10e184f5bbaf
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5c16c3132e5cd2d55a28310edb5d1569f7a211ad
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806045"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59091361"
 ---
 # <a name="devicemanagementsettingxmlconstraint-resource-type"></a>deviceManagementSettingXmlConstraint 资源类型
 

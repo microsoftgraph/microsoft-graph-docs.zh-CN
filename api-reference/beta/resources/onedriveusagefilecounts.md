@@ -1,16 +1,16 @@
 ---
 title: oneDriveUsageFileCounts 资源类型
 description: 下面是资源的 JSON 表示形式。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
 author: JeremyKelley
-ms.openlocfilehash: e80273ee5c9a8228872a9fcb2e3ba50456030fda3abb662094341ab1b688fd02
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1519b2674f850d1445908298bf15a0ebbff3b019
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54230933"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085873"
 ---
 # <a name="onedriveusagefilecounts-resource-type"></a>oneDriveUsageFileCounts 资源类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "54230933"
 | 属性          | 类型   |
 | :---------------- | :----- |
 | reportRefreshDate | 日期   |
-| siteType          | 字符串 |
+| siteType          | String |
 | total             | Int64  |
 | active            | Int64  |
 | reportDate        | 日期   |

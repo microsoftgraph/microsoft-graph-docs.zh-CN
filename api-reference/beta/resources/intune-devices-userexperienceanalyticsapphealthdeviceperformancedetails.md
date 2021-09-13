@@ -2,15 +2,15 @@
 title: userExperienceAnalyticsAppHealthDevicePerformanceDetails 资源类型
 description: 用户体验分析设备性能实体包含设备性能详细信息。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4e6905faac844f91925f875e893d710e7a8286e5
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 128628505c68938426416e4cbfd2dc8b6913031f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58817374"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086251"
 ---
 # <a name="userexperienceanalyticsapphealthdeviceperformancedetails-resource-type"></a>userExperienceAnalyticsAppHealthDevicePerformanceDetails 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58817374"
 用户体验分析设备性能实体包含设备性能详细信息。
 
 ## <a name="methods"></a>方法
-|方法|返回类型|Description|
+|方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 userExperienceAnalyticsAppHealthDevicePerformanceDetailses](../api/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails-list.md)|[userExperienceAnalyticsAppHealthDevicePerformanceDetails](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md) 集合|列出 [userExperienceAnalyticsAppHealthDevicePerformanceDetails 对象的属性和](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md) 关系。|
 |[获取 userExperienceAnalyticsAppHealthDevicePerformanceDetails](../api/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails-get.md)|[userExperienceAnalyticsAppHealthDevicePerformanceDetails](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md)|读取 [userExperienceAnalyticsAppHealthDevicePerformanceDetails 对象的属性和](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md) 关系。|
@@ -36,7 +36,7 @@ ms.locfileid: "58817374"
 |:---|:---|:---|
 |id|String|用户体验分析设备性能对象的唯一标识符。|
 |eventDateTime|DateTimeOffset|事件发生的时间。|
-|eventType|字符串|事件的类型。|
+|eventType|String|事件的类型。|
 |appDisplayName|String|发生事件的应用程序的友好名称。|
 |appPublisher|String|应用程序的发布者。|
 |appVersion|String|应用程序的版本。|

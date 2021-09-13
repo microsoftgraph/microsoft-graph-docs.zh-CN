@@ -2,15 +2,15 @@
 title: deviceManagementConfigurationOptionDefinitionTemplate 资源类型
 description: 选项定义模板
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0c900f9f94302cd51b71d547331cc7e9e9cd10cc
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: fe6dc8b8ec1e093744b89f1af14fc6f61d736e1a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805049"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59115385"
 ---
 # <a name="devicemanagementconfigurationoptiondefinitiontemplate-resource-type"></a>deviceManagementConfigurationOptionDefinitionTemplate 资源类型
 
