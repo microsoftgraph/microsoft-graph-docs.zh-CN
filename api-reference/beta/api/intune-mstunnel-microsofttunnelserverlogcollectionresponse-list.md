@@ -2,15 +2,15 @@
 title: 列出 microsoftTunnelServerLogCollectionResponses
 description: 列出 microsoftTunnelServerLogCollectionResponse 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b7629e5025d12fb6696f3e95c3ead21ee41f0504
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7f703e391aba6d6fb89fb259838de89bd4d9b060
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58821975"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59096898"
 ---
 # <a name="list-microsofttunnelserverlogcollectionresponses"></a>列出 microsoftTunnelServerLogCollectionResponses
 
@@ -43,7 +43,7 @@ GET /deviceManagement/microsoftTunnelServerLogCollectionResponses
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -2,15 +2,15 @@
 title: createCopy 操作
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2813975e711b4131009147ba456989bed1b31607
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 69d37a726a8a0528745a03b8c129f24edb2adefe
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804727"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59088239"
 ---
 # <a name="createcopy-action"></a>createCopy 操作
 
@@ -44,7 +44,7 @@ POST /deviceManagement/reusablePolicySettings/{deviceManagementReusablePolicySet
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -55,7 +55,7 @@ POST /deviceManagement/reusablePolicySettings/{deviceManagementReusablePolicySet
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|尚未记录|
-|description|String|尚未记录|
+|说明|String|尚未记录|
 
 
 

@@ -2,15 +2,15 @@
 title: 列出 securityBaselineCategoryStateSummaries
 description: 列出 securityBaselineCategoryStateSummary 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6c67b4a8c65c84aba0f06c592b1635b02955e88b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0ecbcbf10daad3ddae9c4c206b6669c1a02e4d34
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797077"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59103016"
 ---
 # <a name="list-securitybaselinecategorystatesummaries"></a>列出 securityBaselineCategoryStateSummaries
 
@@ -43,7 +43,7 @@ GET /deviceManagement/templates/{deviceManagementTemplateId}/microsoft.graph.sec
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

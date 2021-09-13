@@ -2,15 +2,15 @@
 title: bitLockerRecoveryOptions 资源类型
 description: BitLocker 恢复选项。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fc20c8f23a05a872f7dcd3ebf00d8e496bf31b24
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7c9798225a4d9cb6fe44221a7030e6836803ff51
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58807305"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59146721"
 ---
 # <a name="bitlockerrecoveryoptions-resource-type"></a>bitLockerRecoveryOptions 资源类型
 
@@ -26,8 +26,8 @@ BitLocker 恢复选项。
 |属性|类型|说明|
 |:---|:---|:---|
 |blockDataRecoveryAgent|Boolean|指示是否阻止基于证书的数据恢复代理。|
-|recoveryPasswordUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|指示是允许用户还是要求用户为固定磁盘或系统磁盘生成 48 位数的恢复密码。 可能的值是：`blocked`、`required`、`allowed`、`notConfigured`。|
-|recoveryKeyUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|指示是允许用户还是需要为固定磁盘或系统磁盘生成 256 位恢复密钥。 可能的值是：`blocked`、`required`、`allowed`、`notConfigured`。|
+|recoveryPasswordUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|指示是允许用户还是要求用户为固定磁盘或系统磁盘生成 48 位数的恢复密码。 可取值为：`blocked`、`required`、`allowed`、`notConfigured`。|
+|recoveryKeyUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|指示是允许用户还是需要为固定磁盘或系统磁盘生成 256 位恢复密钥。 可取值为：`blocked`、`required`、`allowed`、`notConfigured`。|
 |hideRecoveryOptions|Boolean|指示是否允许在 BitLocker 安装向导中显示固定磁盘或系统磁盘的恢复选项。|
 |enableRecoveryInformationSaveToStore|Boolean|指示是否允许 BitLocker 恢复信息存储在 AD DS 中。|
 |recoveryInformationToStore|[bitLockerRecoveryInformationType](../resources/intune-deviceconfig-bitlockerrecoveryinformationtype.md)|配置将哪些 BitLocker 恢复信息存储到 AD DS。 可取值为：`passwordAndKey`、`passwordOnly`。|

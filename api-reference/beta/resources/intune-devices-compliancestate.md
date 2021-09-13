@@ -2,15 +2,15 @@
 title: complianceState 枚举类型
 description: 合规性状态。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9bc115882461351f28a954f35be7267fca3c1c1b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 051cc43f82dc1ed9a2e1155778eb111387219b86
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791837"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59111017"
 ---
 # <a name="compliancestate-enum-type"></a>complianceState 枚举类型
 

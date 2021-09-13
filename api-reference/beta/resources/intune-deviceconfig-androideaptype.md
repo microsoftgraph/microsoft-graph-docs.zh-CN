@@ -2,15 +2,15 @@
 title: androidEapType 枚举类型
 description: 可扩展身份验证协议 (EAP) 配置类型。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 72a5de377188271f40c47e628bc834425dab5718
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9d03e7fd077d151d9d33adecda3c3f61b8076ac7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820490"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59106537"
 ---
 # <a name="androideaptype-enum-type"></a>androidEapType 枚举类型
 
@@ -23,10 +23,10 @@ ms.locfileid: "58820490"
 可扩展身份验证协议 (EAP) 配置类型。
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
-|eapTls|13|可扩展身份验证Protocol-Transport EAP-TLS (层安全性) 。|
-|eapTtls| 21|可扩展身份验证Protocol-Tunneled EAP-TTLS (传输层安全性) 。|
+|eapTls|13|可扩展身份验证Protocol-Transport层安全性 (EAP-TLS) 。|
+|eapTtls| 21|可扩展身份验证Protocol-Tunneled EAP-TTLS (传输层) 。|
 |peap|25|受保护的可扩展身份验证协议 (PEAP) 。|
 
 

@@ -2,15 +2,15 @@
 title: 删除 targetedManagedAppConfigurationPolicySetItem
 description: 删除 targetedManagedAppConfigurationPolicySetItem。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6289e4e030fc2d0ba0f78820add1da0924dedf77
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 44734b6be0a8960b4202a575ccc801922e545847
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785246"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59116414"
 ---
 # <a name="delete-targetedmanagedappconfigurationpolicysetitem"></a>删除 targetedManagedAppConfigurationPolicySetItem
 
@@ -43,7 +43,7 @@ DELETE /deviceAppManagement/policySets/{policySetId}/items/{policySetItemId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

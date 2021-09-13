@@ -2,15 +2,15 @@
 title: 创建 intuneBrandingProfileAssignment
 description: 创建新的 intuneBrandingProfileAssignment 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5326285f048d6534632bb5c7944bf21566f8fc8b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8990a0351ed95c5058a5fa8eec7e4877be7a5e5c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796907"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59102400"
 ---
 # <a name="create-intunebrandingprofileassignment"></a>创建 intuneBrandingProfileAssignment
 
@@ -43,7 +43,7 @@ POST /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}/assignme
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

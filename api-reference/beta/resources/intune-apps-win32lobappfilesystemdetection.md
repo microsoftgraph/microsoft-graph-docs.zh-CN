@@ -2,15 +2,15 @@
 title: win32LobAppFileSystemDetection 资源类型
 description: 包含用于检测 Win32 应用的文件或文件夹路径
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2019ed6f54ea5a9924665fa5b7ee746b7fb8a866
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 732ce5845c6b4965f28b8afca6526b17964622d0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797301"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127617"
 ---
 # <a name="win32lobappfilesystemdetection-resource-type"></a>win32LobAppFileSystemDetection 资源类型
 

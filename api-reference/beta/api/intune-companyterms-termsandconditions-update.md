@@ -2,15 +2,15 @@
 title: 更新 termsAndConditions
 description: 更新 termsAndConditions 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 51170bc83822b61c519621a7b72f3c7b3162b9e3
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f1ebce8a94439910911f9f54e7b596da6df4e600
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58776341"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127834"
 ---
 # <a name="update-termsandconditions"></a>更新 termsAndConditions
 
@@ -45,7 +45,7 @@ PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStat
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -55,12 +55,12 @@ PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStat
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|T&C 策略的唯一标识符。|
+|id|String|T&C 策略的唯一标识符。|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。|
 |modifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
 |displayName|String|管理员提供的 T&C 策略名称。 |
-|description|字符串|管理员提供的 T&C 策略描述。|
+|说明|String|管理员提供的 T&C 策略描述。|
 |title|String|管理员提供的条款和条件标题。 这会向用户显示，提示用户接受 T&C 策略。|
 |bodyText|String|管理员提供的条款和条件正文文本，通常为条款本身。 这会向用户显示，提示用户接受 T&C 策略。|
 |acceptanceStatement|String|管理员提供的条款和条件说明，通常会说明接受 T&C 策略中陈述的条款和条件意味着什么。 这会向用户显示，提示用户接受 T&C 策略。|

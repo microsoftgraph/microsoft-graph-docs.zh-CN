@@ -2,15 +2,15 @@
 title: 更新 userPFXCertificate
 description: 更新 userPFXCertificate 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ac33c79e9c853c4dd19ae768bde2a69ade86752f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5887b90927933101b4a0cd64cd27eea134319bf6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788280"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59107454"
 ---
 # <a name="update-userpfxcertificate"></a>更新 userPFXCertificate
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/userPfxCertificates/{userPFXCertificateId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -60,7 +60,7 @@ PATCH /deviceManagement/userPfxCertificates/{userPFXCertificateId}
 |startDateTime|DateTimeOffset|证书的有效期开始日期/时间。|
 |expirationDateTime|DateTimeOffset|证书的有效期过期日期/时间。|
 |providerName|String|用于加密此 blob 的加密提供程序。|
-|keyName|字符串|提供程序中用于 (blob) 密钥的名称。|
+|keyName|String|提供程序中用于 (blob) 密钥的名称。|
 |paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|提供程序在加密/解密期间使用的填充方案。 可取值为：`none`、`pkcs1`、`oaepSha1`、`oaepSha256`、`oaepSha384`、`oaepSha512`。|
 |encryptedPfxBlob|二进制|加密的 PFX blob。|
 |encryptedPfxPassword|String|加密的 PFX 密码。|

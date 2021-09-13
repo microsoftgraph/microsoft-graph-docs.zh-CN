@@ -2,15 +2,15 @@
 title: deviceManagementConfigurationTechnologies 枚举类型
 description: 描述可以使用哪种技术部署此设置
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d79bf933623e94d48013d3259326fdd45a9115bf
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d7766d88b7670a4cd0a96a3e4a52a462478a9a41
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806234"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59148184"
 ---
 # <a name="devicemanagementconfigurationtechnologies-enum-type"></a>deviceManagementConfigurationTechnologies 枚举类型
 
@@ -30,7 +30,7 @@ ms.locfileid: "58806234"
 |windows10XManagement|2|可通过 Windows10XManagement 通道部署设置|
 |configManager|4 |可通过 ConfigManager 通道部署设置|
 |microsoftSense|128|可以通过 SENSE 代理通道部署设置|
-|exchangeOnline|256|可以通过管理代理通道Exchange Online设置|
+|exchangeOnline|256|可以通过代理通道部署Exchange Online设置|
 
 
 

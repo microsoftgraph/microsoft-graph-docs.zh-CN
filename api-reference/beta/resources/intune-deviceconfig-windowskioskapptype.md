@@ -2,15 +2,15 @@
 title: windowsKioskAppType 枚举类型
 description: 展台应用Windows类型。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d13bbddd0541002cc8e0f0a1ffb078929efbcc44
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1b723edf1b765ff725dc9259044850b9a2e0b815
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796612"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086678"
 ---
 # <a name="windowskioskapptype-enum-type"></a>windowsKioskAppType 枚举类型
 

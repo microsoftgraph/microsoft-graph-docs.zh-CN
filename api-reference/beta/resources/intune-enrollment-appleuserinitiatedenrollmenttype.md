@@ -2,15 +2,15 @@
 title: appleUserInitiatedEnrollmentType 枚举类型
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 007314905bbcb89fb6e30f59cae0dc856bdf940a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 58510561d69f6a8e8d8b9564fc4ff28925b4ff32
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58817367"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59095330"
 ---
 # <a name="appleuserinitiatedenrollmenttype-enum-type"></a>appleUserInitiatedEnrollmentType 枚举类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58817367"
 尚未记录
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |unknown|0|未知注册类型|
 |设备|1|设备注册类型|

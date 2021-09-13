@@ -2,15 +2,15 @@
 title: 更新 ndesConnector
 description: 更新 ndesConnector 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c0057a4e9879ebd7bfcd9e07991d62c870c04496
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 074d0e82f5e60b32723e73addfef2d6e9d51d73d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58792419"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59112613"
 ---
 # <a name="update-ndesconnector"></a>更新 ndesConnector
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/ndesConnectors/{ndesConnectorId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,7 +53,7 @@ PATCH /deviceManagement/ndesConnectors/{ndesConnectorId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|NDES 连接器的键。|
+|id|String|NDES 连接器的键。|
 |lastConnectionDateTime|DateTimeOffset|Ndes 连接器的上次连接时间|
 |state|[ndesConnectorState](../resources/intune-deviceconfig-ndesconnectorstate.md)|Ndes 连接器状态。 可取值为：`none`、`active`、`inactive`。|
 |displayName|String|Ndes 连接器的友好名称。|

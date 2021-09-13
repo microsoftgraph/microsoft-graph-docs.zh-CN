@@ -2,15 +2,15 @@
 title: 创建 vulnerableManagedDevice
 description: 创建新的 vulnerableManagedDevice 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 483e55e078c2a00671ba7e87119bff38e3354f7c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5893e068d8c2d08354dc72c5488e80650a0c8760
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803705"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59092656"
 ---
 # <a name="create-vulnerablemanageddevice"></a>创建 vulnerableManagedDevice
 
@@ -43,7 +43,7 @@ POST ** Collection URI for microsoft.management.services.api.vulnerableManagedDe
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,8 +53,8 @@ POST ** Collection URI for microsoft.management.services.api.vulnerableManagedDe
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体密钥和 AAD 设备 ID。|
-|managedDeviceId|字符串|Intune 托管设备 ID。|
+|id|String|实体密钥和 AAD 设备 ID。|
+|managedDeviceId|String|Intune 托管设备 ID。|
 |displayName|String|设备名称。|
 |lastSyncDateTime|DateTimeOffset|上次同步日期。|
 

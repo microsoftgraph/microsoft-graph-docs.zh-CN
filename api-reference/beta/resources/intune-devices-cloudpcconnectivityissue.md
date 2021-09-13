@@ -2,15 +2,15 @@
 title: cloudPCConnectivityIssue 资源类型
 description: 用户体验分析连接问题实体。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5b232a2848a66dfc242f83da39667e9b891f852f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4f1b08cc38f0d152a1b01fb7fa972781bbe5b4aa
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784476"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59131201"
 ---
 # <a name="cloudpcconnectivityissue-resource-type"></a>cloudPCConnectivityIssue 资源类型
 
@@ -40,7 +40,7 @@ ms.locfileid: "58784476"
 |errorDateTime|DateTimeOffset|连接启动的时间。 时间以 ISO 8601 格式显示，协调世界时 (UTC) 时间。|
 |userId|String|初始化连接的用户的唯一 ID。|
 |errorDescription|String|错误的详细说明。|
-|recommendedAction|字符串|修复相应错误的推荐操作。|
+|recommendedAction|String|修复相应错误的推荐操作。|
 
 ## <a name="relationships"></a>关系
 无

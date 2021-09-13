@@ -2,15 +2,15 @@
 title: 更新 groupPolicyPresentationMultiTextBox
 description: 更新 groupPolicyPresentationMultiTextBox 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8d7ce7015eed12e3d12a571d98eeb3d3d3fd32ea
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 45d596e6a0aae78220188d5e960e2c8001dfbac8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794544"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59116554"
 ---
 # <a name="update-grouppolicypresentationmultitextbox"></a>更新 groupPolicyPresentationMultiTextBox
 
@@ -44,7 +44,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -57,7 +57,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 |标签|String|任何演示文稿实体的本地化文本标签。 默认值为空白。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |id|String|实体的键。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|必需|布尔值|要求在文本框中输入值。 默认值为 false。|
+|必需|Boolean|要求在文本框中输入值。 默认值为 false。|
 |maxLength|Int64|一个无符号整数，指定最大文本字符数。 默认值为 1023。|
 |maxStrings|Int64|一个无符号整数，指定字符串的最大数目。 默认值为 0 。|
 

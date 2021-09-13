@@ -2,15 +2,15 @@
 title: deviceHealthScriptTimeSchedule 资源类型
 description: 设备运行状况脚本时间计划的基本类型。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 972dc1eef8532974694baedb793a3b1a2473e716
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b56f208d466a237def9a7916192abfcae7d0f2d6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796213"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59144215"
 ---
 # <a name="devicehealthscripttimeschedule-resource-type"></a>deviceHealthScriptTimeSchedule 资源类型
 

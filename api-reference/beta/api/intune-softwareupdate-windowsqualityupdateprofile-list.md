@@ -2,15 +2,15 @@
 title: 列出 windowsQualityUpdateProfiles
 description: 列出 windowsQualityUpdateProfile 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a78f5fdb16a74b2aaeb7cb3f70542ad18d36fcb9
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0ad7028e9ecba095d66ce338ddd71e89e817f024
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788252"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59096184"
 ---
 # <a name="list-windowsqualityupdateprofiles"></a>列出 windowsQualityUpdateProfiles
 
@@ -43,7 +43,7 @@ GET /deviceManagement/windowsQualityUpdateProfiles
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

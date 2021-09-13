@@ -2,15 +2,15 @@
 title: 创建 microsoftStoreForBusinessContainedApp
 description: 创建新的 microsoftStoreForBusinessContainedApp 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 11800dbe2718f7b32ca55a22ebe99a8e68c99d4d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: fbf8efcf9ff993f328bada42c803ed46a6999696
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795807"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117464"
 ---
 # <a name="create-microsoftstoreforbusinesscontainedapp"></a>创建 microsoftStoreForBusinessContainedApp
 
@@ -45,7 +45,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUniver
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

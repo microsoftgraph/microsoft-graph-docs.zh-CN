@@ -2,15 +2,15 @@
 title: groupPolicyPresentationValue 资源类型
 description: 存储单个组策略演示文稿的值的基本演示文稿值实体。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7ffd062e43e62c28c01cb0314233c8a97f6ab437
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8783cce5c6175a18cbc490743479ca5e1c8eb17b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803480"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085978"
 ---
 # <a name="grouppolicypresentationvalue-resource-type"></a>groupPolicyPresentationValue 资源类型
 

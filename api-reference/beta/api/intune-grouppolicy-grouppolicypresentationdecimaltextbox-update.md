@@ -2,15 +2,15 @@
 title: 更新 groupPolicyPresentationDecimalTextBox
 description: 更新 groupPolicyPresentationDecimalTextBox 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2315fefecb56d9fbe37709d5d7a07f1c2c885820
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f34c55c0621d171b95281d33bd29c965865e820e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797962"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59087777"
 ---
 # <a name="update-grouppolicypresentationdecimaltextbox"></a>更新 groupPolicyPresentationDecimalTextBox
 
@@ -44,7 +44,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -58,7 +58,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 |id|String|实体的键。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |defaultValue|Int64|一个无符号整数，指定小数文本框的初始值。 默认值为 1。|
-|spin|布尔值|如果为 true，则创建旋转控件;否则，为数字输入创建一个文本框。 默认值为 true。|
+|spin|Boolean|如果为 true，则创建旋转控件;否则，为数字输入创建一个文本框。 默认值为 true。|
 |spinStep|Int64|一个无符号整数，指定旋转控件更改的增量。 默认值为 1。|
 |必需|Boolean|要求在参数框中输入值。 默认值为 false。|
 |minValue|Int64|一个无符号整数，指定允许的最小值。 默认值为 0。|

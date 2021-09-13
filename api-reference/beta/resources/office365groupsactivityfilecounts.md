@@ -1,16 +1,16 @@
 ---
 title: office365GroupsActivityFileCounts 资源类型
 description: 下面是资源的 JSON 表示形式。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: f05cf16e1b2e0273aaa62241bbeac3b0d872bf87605e2c852ac2ab28e25f9526
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0c7d2b89dde8e288fb8ca81dc7ca67e6830a4122
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54160861"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59142829"
 ---
 # <a name="office365groupsactivityfilecounts-resource-type"></a>office365GroupsActivityFileCounts 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "54160861"
 | reportRefreshDate | 日期   | 内容的最新日期。          |
 | total             | Int64  | 组的文档库中的文件SharePoint总数。 |
 | active            | Int64  | 在组的文档库中查看、编辑、共享或同步SharePoint的数量。 |
-| reportDate        | 日期   | 在组的网站中激活多个文件SharePoint的日期。 |
+| reportDate        | 日期   | 许多文件在组的网站中处于活动状态SharePoint的日期。 |
 | reportPeriod      | String | 报告涵盖的天数。    |
 
 ## <a name="json-representation"></a>JSON 表示形式

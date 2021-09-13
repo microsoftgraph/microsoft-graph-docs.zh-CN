@@ -2,15 +2,15 @@
 title: 删除 auditEvent
 description: 删除 auditEvent
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: afc2711541332a219461b823dcb0224edc1399b4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4c02a847610f87a4e36bdd9a4ed4c5667471141a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783426"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117359"
 ---
 # <a name="delete-auditevent"></a>删除 auditEvent
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/auditEvents/{auditEventId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

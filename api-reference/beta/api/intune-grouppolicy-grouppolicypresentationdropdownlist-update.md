@@ -2,15 +2,15 @@
 title: 更新 groupPolicyPresentationDropdownList
 description: 更新 groupPolicyPresentationDropdownList 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d56c32860ab9283db31f1eaef69cea578b8e5659
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b784ed7dd50ee06bad8fc6e8d72e7322d2242c8a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786093"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59112326"
 ---
 # <a name="update-grouppolicypresentationdropdownlist"></a>更新 groupPolicyPresentationDropdownList
 
@@ -44,7 +44,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -2,15 +2,15 @@
 title: 删除 windows81SCEPCertificateProfile
 description: 删除 windows81SCEPCertificateProfile。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ba8624f98f5690de1c1f4cc88dbdb329b7c32fce
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e69d8b4b927b1439bd12e140566dfa66e440c396
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803165"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59097528"
 ---
 # <a name="delete-windows81scepcertificateprofile"></a>删除 windows81SCEPCertificateProfile
 
@@ -45,7 +45,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

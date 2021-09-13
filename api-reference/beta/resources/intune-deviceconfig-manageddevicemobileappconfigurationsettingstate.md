@@ -2,15 +2,15 @@
 title: managedDeviceMobileAppConfigurationSettingState 资源类型
 description: 给定设备的托管设备移动应用配置设置状态。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d40de92661ac13f3c499678fc78177e3d33ac9d6
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b6f1d7adc13274414f289ac0f37b3eaa88250a88
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58807298"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086783"
 ---
 # <a name="manageddevicemobileappconfigurationsettingstate-resource-type"></a>managedDeviceMobileAppConfigurationSettingState 资源类型
 
@@ -37,7 +37,7 @@ ms.locfileid: "58807298"
 |userPrincipalName|String|UserPrincipalName。|
 |源|[settingSource](../resources/intune-deviceconfig-settingsource.md) 集合|参与策略|
 |currentValue|String|设备上设置的当前值|
-|settingInstanceId|字符串|SettingInstanceId|
+|settingInstanceId|String|SettingInstanceId|
 
 ## <a name="relationships"></a>关系
 无

@@ -2,15 +2,15 @@
 title: 删除 vppToken
 description: 删除 vppToken。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9e581039eb41f4e9ba948335f7f065143999a2ae
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: bf09ec7fc53990cfd5f32c2564908dffb21708c7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783685"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59087721"
 ---
 # <a name="delete-vpptoken"></a>删除 vppToken
 
@@ -43,7 +43,7 @@ DELETE /deviceAppManagement/vppTokens/{vppTokenId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

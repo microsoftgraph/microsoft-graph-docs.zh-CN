@@ -2,15 +2,15 @@
 title: iosSingleSignOnExtension 资源类型
 description: 所有 iOS 特定的单一登录扩展类型的抽象基类。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 28999704a9a9c9a3355a1f13b1425838f85a73d7
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: fcc5860aa905cf9eebf5944f2627de377fe268c9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58821940"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59131334"
 ---
 # <a name="iossinglesignonextension-resource-type"></a>iosSingleSignOnExtension 资源类型
 

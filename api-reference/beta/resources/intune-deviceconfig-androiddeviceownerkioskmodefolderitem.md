@@ -2,15 +2,15 @@
 title: androidDeviceOwnerKioskModeFolderItem 资源类型
 description: '表示可以添加到 Android 设备所有者文件夹中的项 (应用程序或 weblink) '
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3186154369bd25c14c7a28d2bcf6c7e439f090a2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: cea8969692379a27e35ff27223f6f938bbd15b35
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818812"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086930"
 ---
 # <a name="androiddeviceownerkioskmodefolderitem-resource-type"></a>androidDeviceOwnerKioskModeFolderItem 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "58818812"
 继承自 [androidDeviceOwnerKioskModeHomeScreenItem](../resources/intune-deviceconfig-androiddeviceownerkioskmodehomescreenitem.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 
 ## <a name="relationships"></a>关系

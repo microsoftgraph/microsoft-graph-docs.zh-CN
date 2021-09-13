@@ -2,15 +2,15 @@
 title: 创建 appleUserInitiatedEnrollmentProfile
 description: 创建新的 appleUserInitiatedEnrollmentProfile 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5b5bc1a80ff6451cac64b51b9825d71a9ace154e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9df044328b3c595fb9496bf7e350bb4719383974
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803123"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59107937"
 ---
 # <a name="create-appleuserinitiatedenrollmentprofile"></a>创建 appleUserInitiatedEnrollmentProfile
 
@@ -43,7 +43,7 @@ POST /deviceManagement/appleUserInitiatedEnrollmentProfiles
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -56,8 +56,8 @@ POST /deviceManagement/appleUserInitiatedEnrollmentProfiles
 |defaultEnrollmentType|[appleUserInitiatedEnrollmentType](../resources/intune-enrollment-appleuserinitiatedenrollmenttype.md)|默认配置文件注册类型。 可取值为：`unknown`、`device`、`user`。|
 |availableEnrollmentTypeOptions|[appleOwnerTypeEnrollmentType](../resources/intune-enrollment-appleownertypeenrollmenttype.md) 集合|可用注册类型选项列表|
 |id|String|对象的 GUID|
-|displayName|字符串|配置文件的名称|
-|description|String|配置文件的说明|
+|displayName|String|配置文件的名称|
+|说明|String|配置文件的说明|
 |priority|Int32|优先级，0 为最高|
 |平台|[devicePlatformType](../resources/intune-enrollment-deviceplatformtype.md)|设备平台。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`unknown`。|
 |createdDateTime|DateTimeOffset|配置文件创建时间|

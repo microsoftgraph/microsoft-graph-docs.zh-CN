@@ -2,15 +2,15 @@
 title: 更新 deviceConfigurationConflictSummary
 description: 更新 deviceConfigurationConflictSummary 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f09a732e9a4a5c247510869d5a3aff9bc528c903
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6e20c052cd41ed5d2da772f4c73df16ac25a917f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806444"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59133609"
 ---
 # <a name="update-deviceconfigurationconflictsummary"></a>更新 deviceConfigurationConflictSummary
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/deviceConfigurationConflictSummary/{deviceConfigurationC
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,11 +51,11 @@ PATCH /deviceManagement/deviceConfigurationConflictSummary/{deviceConfigurationC
 
 下表显示创建 [deviceConfigurationConflictSummary 时所需的属性](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md)。
 
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |conflictingDeviceConfigurations|[settingSource](../resources/intune-deviceconfig-settingsource.md) 集合|与给定设置相冲突的策略集|
 |id|String|这组冲突策略的 ID。 此 id 是 ConflictingDeviceConfigurations 中所有策略的 ID，按字典顺序使用下划线分隔。|
-|contributingSettings|String collection|与给定策略相冲突的设置集|
+|contributingSettings|字符串集合|与给定策略相冲突的设置集|
 |deviceCheckinsImpacted|Int32|受冲突策略和设置影响的签入计数|
 
 

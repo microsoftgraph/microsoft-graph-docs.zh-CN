@@ -2,15 +2,15 @@
 title: androidWorkProfileVpnConnectionType 枚举类型
 description: Android 工作配置文件 VPN 连接类型。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a5b77523aa891a8c191adc2e95f910c9e28633d9
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b0675033f399438e9d754d37161c2014a3113547
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797561"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59120309"
 ---
 # <a name="androidworkprofilevpnconnectiontype-enum-type"></a>androidWorkProfileVpnConnectionType 枚举类型
 

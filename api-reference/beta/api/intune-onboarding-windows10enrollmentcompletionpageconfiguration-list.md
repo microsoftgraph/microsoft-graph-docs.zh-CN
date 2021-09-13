@@ -2,15 +2,15 @@
 title: 列出 windows10EnrollmentCompletionPageConfigurations
 description: 列出 windows10EnrollmentCompletionPageConfiguration 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7029093af6fb3f04de05f0ef93f266a142cd7538
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c868df11fffb77c9b1e4be40e2d8208b0026e3d3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786051"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59107635"
 ---
 # <a name="list-windows10enrollmentcompletionpageconfigurations"></a>列出 windows10EnrollmentCompletionPageConfigurations
 
@@ -43,7 +43,7 @@ GET /deviceManagement/deviceEnrollmentConfigurations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -6,11 +6,11 @@ ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
 ms.openlocfilehash: 812bdb8fe13b7c5619afd857ee270d25f681f089
-ms.sourcegitcommit: cb90b32fba5f03aaffe1de30886513083d8113db
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/01/2021
-ms.locfileid: "58850261"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59133588"
 ---
 # <a name="get-deviceconfigurationdeviceoverview"></a>获取 deviceConfigurationDeviceOverview
 
@@ -29,7 +29,7 @@ ms.locfileid: "58850261"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

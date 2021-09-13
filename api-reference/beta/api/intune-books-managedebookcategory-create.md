@@ -2,15 +2,15 @@
 title: 创建 managedEBookCategory
 description: 创建新的 managedEBookCategory 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 97e79be537d24fc4d1de877a7ffc650383944842
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 57170dc1fe781e0f2bdd5ec77de71f63f51da63a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785631"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59103632"
 ---
 # <a name="create-managedebookcategory"></a>创建 managedEBookCategory
 
@@ -44,7 +44,7 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/categories
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,7 +54,7 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/categories
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |displayName|String|电子图书类别的名称。|
 |lastModifiedDateTime|DateTimeOffset|ManagedEBookCategory 上次修改的日期和时间。|
 

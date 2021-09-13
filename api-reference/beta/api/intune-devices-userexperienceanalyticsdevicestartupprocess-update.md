@@ -2,15 +2,15 @@
 title: 更新 userExperienceAnalyticsDeviceStartupProcess
 description: 更新 userExperienceAnalyticsDeviceStartupProcess 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c9951add8211ab2f3ac3cb7edc18438177126e2c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 566110a6441273c6027ca1f7853ccb968fb16396
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797021"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59097192"
 ---
 # <a name="update-userexperienceanalyticsdevicestartupprocess"></a>更新 userExperienceAnalyticsDeviceStartupProcess
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/userExperienceAnalyticsDeviceStartupProcesses/{userExper
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

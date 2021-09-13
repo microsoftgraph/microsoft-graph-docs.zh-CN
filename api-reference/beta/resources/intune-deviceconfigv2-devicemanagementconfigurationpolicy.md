@@ -2,15 +2,15 @@
 title: deviceManagementConfigurationPolicy 资源类型
 description: 设备管理配置策略
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 26cd4f91cfaa0a28c3d13f26fd5764d571c47ce4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7feba3c3ca0305cd6fab197285938b9cc563790a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58792587"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59115364"
 ---
 # <a name="devicemanagementconfigurationpolicy-resource-type"></a>deviceManagementConfigurationPolicy 资源类型
 
@@ -38,21 +38,21 @@ ms.locfileid: "58792587"
 |:---|:---|:---|
 |id|String|策略文档的键。 自动生成。|
 |name|String|策略名称|
-|description|字符串|策略说明|
-|平台|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|此策略的平台。 可能的值是：`none`、`macOS`、`windows10X`、`windows10`。|
+|说明|String|策略说明|
+|平台|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|此策略的平台。 可取值为：`none`、`macOS`、`windows10X`、`windows10`。|
 |technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|此策略的技术。 可取值为：`none`、`mdm`、`windows10XManagement`、`configManager`、`microsoftSense`、`exchangeOnline`。|
 |createdDateTime|DateTimeOffset|策略创建日期和时间。 此属性是只读的。|
 |lastModifiedDateTime|DateTimeOffset|策略上次修改日期和时间。 此属性是只读的。|
 |settingCount|Int32|设置数。 此属性是只读的。|
 |creationSource|String|策略创建源|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
+|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。|
 |isAssigned|Boolean|策略分配状态。 此属性是只读的。|
 |templateReference|[deviceManagementConfigurationPolicyTemplateReference](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicytemplatereference.md)|模板参考信息|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
-|settings|[deviceManagementConfigurationSetting](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md) 集合|策略设置|
+|设置|[deviceManagementConfigurationSetting](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md) 集合|策略设置|
 |assignments|[deviceManagementConfigurationPolicyAssignment](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicyassignment.md) 集合|策略分配|
 
 ## <a name="json-representation"></a>JSON 表示形式
