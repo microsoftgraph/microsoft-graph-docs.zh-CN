@@ -2,15 +2,15 @@
 title: 删除 deviceManagementScriptGroupAssignment
 description: 删除 deviceManagementScriptGroupAssignment。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e5fb7648481a8cfef486fda5765fab95ebeede0f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: dff869d73ebe9d7bd7b5aaca557c769533a9b883
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795709"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59121933"
 ---
 # <a name="delete-devicemanagementscriptgroupassignment"></a>删除 deviceManagementScriptGroupAssignment
 
@@ -45,7 +45,7 @@ DELETE /deviceManagement/deviceCustomAttributeShellScripts/{deviceCustomAttribut
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

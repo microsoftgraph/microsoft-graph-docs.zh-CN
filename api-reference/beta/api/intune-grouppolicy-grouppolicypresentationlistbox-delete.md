@@ -2,15 +2,15 @@
 title: 删除 groupPolicyPresentationListBox
 description: 删除 groupPolicyPresentationListBox。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: be3c983c35b2312cb9252eae2429a9a7feff9eaa
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6ed8478100104b4169257b2263dce2963f4faef1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806780"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59092922"
 ---
 # <a name="delete-grouppolicypresentationlistbox"></a>删除 groupPolicyPresentationListBox
 
@@ -44,7 +44,7 @@ DELETE /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

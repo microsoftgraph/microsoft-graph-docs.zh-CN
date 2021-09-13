@@ -2,15 +2,15 @@
 title: deviceManagementComplexSettingInstance 资源类型
 description: 表示复杂值的设置实例
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4b3c8afeed7102f1267349dc72824a8cace6427f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0789c0720ff773666c992c86fb389c4ea010e5b4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58802990"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59137999"
 ---
 # <a name="devicemanagementcomplexsettinginstance-resource-type"></a>deviceManagementComplexSettingInstance 资源类型
 

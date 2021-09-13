@@ -2,15 +2,15 @@
 title: deviceLogCollectionResponse 资源类型
 description: WindowsLog Collection 请求实体。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bf550298b3c7b74ccc2e4a0af38718b9f5be500a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5727156187200a35d3d1d1ddfc8c30fb942f620e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58815048"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59091340"
 ---
 # <a name="devicelogcollectionresponse-resource-type"></a>deviceLogCollectionResponse 资源类型
 
@@ -36,7 +36,7 @@ WindowsLog Collection 请求实体。
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|表单的唯一标识符tenantId_deviceId_requestId|
-|状态|String|日志集合请求的状态|
+|status|String|日志集合请求的状态|
 |managedDeviceId|Guid|设备 ID|
 |errorCode|Int64|错误代码（如果有）。 有效值 -9.22337203685478E+18 到 9.22337203685478E+18|
 |requestedDateTimeUTC|DateTimeOffset|请求的 DateTime|

@@ -2,15 +2,15 @@
 title: 更新 userExperienceAnalyticsNotAutopilotReadyDevice
 description: 更新 userExperienceAnalyticsNotAutopilotReadyDevice 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a6f2987c85c6322c2b3d0447f0cb59806d91bff4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7e0eb200c25fa2d1bdf025e91b037a4fea6c8e4d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58798614"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59142185"
 ---
 # <a name="update-userexperienceanalyticsnotautopilotreadydevice"></a>更新 userExperienceAnalyticsNotAutopilotReadyDevice
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/userExperienceAnalyticsNotAutopilotReadyDevice/{userExpe
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -58,10 +58,10 @@ PATCH /deviceManagement/userExperienceAnalyticsNotAutopilotReadyDevice/{userExpe
 |serialNumber|String|intune 设备的序列号。|
 |manufacturer|String|intune 设备的制造商。|
 |model|String|intune 设备的型号。|
-|managedBy|字符串|intune 设备的托管者。|
+|managedBy|String|intune 设备的托管者。|
 |autoPilotRegistered|Boolean|intune 设备的 autopilotRegistered。|
 |autoPilotProfileAssigned|Boolean|intune 设备的 autopilotProfileAssigned。|
-|azureAdRegistered|布尔值|intune 设备的 azureAdRegistered。|
+|azureAdRegistered|Boolean|intune 设备的 azureAdRegistered。|
 |azureAdJoinType|String|intune 设备的 azure Ad joinType。|
 
 

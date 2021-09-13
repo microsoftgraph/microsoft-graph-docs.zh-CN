@@ -2,15 +2,15 @@
 title: 列出 targetedManagedAppConfigurationPolicySetItems
 description: 列出 targetedManagedAppConfigurationPolicySetItem 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 93382b3dd461648d3951fafd799696bed37ae7de
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c388f833179dc8aea02cb18bc89b9ec3fa0ff121
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58799871"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59096653"
 ---
 # <a name="list-targetedmanagedappconfigurationpolicysetitems"></a>列出 targetedManagedAppConfigurationPolicySetItems
 
@@ -43,7 +43,7 @@ GET /deviceAppManagement/policySets/{policySetId}/items
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

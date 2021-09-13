@@ -1,16 +1,16 @@
 ---
 title: report 资源类型
 description: 介绍支持多个工作流的 Microsoft Graph API 的报告资源。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: rolyon
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4adeb91bc4015585485c78fdaab04c24ad9e95d553d1792944392b8643915326
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2af9d026444b42a588a236842b3ee48963193192
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54160994"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100943"
 ---
 # <a name="report-resource-type"></a>report 资源类型
 
@@ -47,7 +47,6 @@ ms.locfileid: "54160994"
   "content": "<Unknown Primitive Type Edm.Stream>"
 }
 ```
-
 
 
 

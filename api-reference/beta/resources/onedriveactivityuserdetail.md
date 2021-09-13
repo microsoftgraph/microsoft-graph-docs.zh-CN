@@ -1,16 +1,16 @@
 ---
 title: oneDriveActivityUserDetail 资源类型
 description: 下面是资源的 JSON 表示形式。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
 author: JeremyKelley
-ms.openlocfilehash: e2c2a0155d0bd571dad12ba94efaf080343d984560feefd9aa354241b4c61e9d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 89b6cd03e4f4b4876806ca0588073b98e3c235c7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54229400"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085887"
 ---
 # <a name="onedriveactivityuserdetail-resource-type"></a>oneDriveActivityUserDetail 资源类型
 
@@ -22,14 +22,14 @@ ms.locfileid: "54229400"
 | :------------------------ | :---------------- |
 | reportRefreshDate         | 日期              |
 | userPrincipalName         | String            |
-| isDeleted                 | 布尔值           |
+| isDeleted                 | Boolean           |
 | deletedDate               | 日期              |
 | lastActivityDate          | 日期              |
 | viewedOrEditedFileCount   | Int64             |
 | syncedFileCount           | Int64             |
 | sharedInternallyFileCount | Int64             |
 | sharedExternallyFileCount | Int64             |
-| assignedProducts          | String collection |
+| assignedProducts          | 字符串集合 |
 | reportPeriod              | String            |
 
 ## <a name="json-representation"></a>JSON 表示形式

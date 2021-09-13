@@ -2,15 +2,15 @@
 title: 创建 depEnrollmentProfile
 description: 创建新的 depEnrollmentProfile 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 09035c70218fbf36aa8ec0a94acc72f956327103
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 44960dffab057a897350c3fc1e0ec1611ef272b0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793629"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59141933"
 ---
 # <a name="create-depenrollmentprofile"></a>创建 depEnrollmentProfile
 
@@ -43,7 +43,7 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -55,25 +55,25 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 |:---|:---|:---|
 |id|String|对象的 GUID 继承自 [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |displayName|String|配置文件的名称 继承自 [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|description|String|配置文件的说明 继承自 [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|说明|String|配置文件的说明 继承自 [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |requiresUserAuthentication|Boolean|指示配置文件是否要求用户身份验证 继承自 [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|configurationEndpointUrl|字符串|用于注册的配置终结点 URL 继承自 [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|configurationEndpointUrl|String|用于注册的配置终结点 URL 继承自 [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |enableAuthenticationViaCompanyPortal|Boolean|指示使用 Apple Setup Assistant 而不是 公司门户。 继承自 [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|指示在公司门户注册的设备上需要此权限。继承自[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|指示在公司门户注册的设备上需要安装文件。继承自[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |isDefault|Boolean|指示这是否为默认配置文件|
 |supervisedModeEnabled|Boolean|监督模式，如果为 True，则启用，否则为 false。 有关 https://docs.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune 其他信息，请参阅 。|
 |supportDepartment|String|支持部门信息|
 |passCodeDisabled|Boolean|指示密码设置窗格是否被禁用|
 |isMandatory|Boolean|指示配置文件是否是必需的|
 |locationDisabled|Boolean|指示位置服务设置窗格是否被禁用|
-|supportPhoneNumber|字符串|支持电话号码|
+|supportPhoneNumber|String|支持电话号码|
 |iTunesPairingMode|[iTunesPairingMode](../resources/intune-enrollment-itunespairingmode.md)|指示 iTunes 配对模式。 可取值为：`disallow`、`allow`、`requiresCertificate`。|
 |profileRemovalDisabled|Boolean|指示配置文件删除选项是否被禁用|
 |managementCertificates|[managementCertificateWithThumbprint](../resources/intune-enrollment-managementcertificatewiththumbprint.md) 集合|Apple Configurator 的管理证书|
 |restoreBlocked|Boolean|指示是否阻止了"还原设置"窗格|
 |restoreFromAndroidDisabled|Boolean|指示是否禁用从 Android 还原|
 |appleIdDisabled|Boolean|指示 Apple ID 设置窗格是否被禁用|
-|termsAndConditionsDisabled|布尔值|指示"条款和条件"设置窗格是否被禁用|
+|termsAndConditionsDisabled|Boolean|指示"条款和条件"设置窗格是否被禁用|
 |touchIdDisabled|Boolean|指示触摸 ID 设置窗格是否被禁用|
 |applePayDisabled|Boolean|指示 Apple 付款设置窗格是否被禁用|
 |zoomDisabled|Boolean|指示是否禁用了缩放设置窗格|

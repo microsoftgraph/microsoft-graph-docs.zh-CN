@@ -2,15 +2,15 @@
 title: androidDeviceOwnerGlobalProxyDirect 资源类型
 description: Android 设备所有者全局代理 Direct。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: af5a53d35ce552e0c9a5b04c25d03f000bff3385
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6f1c3e169492176e2420af46c85fbd3c596c5b77
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58813647"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59148037"
 ---
 # <a name="androiddeviceownerglobalproxydirect-resource-type"></a>androidDeviceOwnerGlobalProxyDirect 资源类型
 
@@ -30,7 +30,7 @@ Android 设备所有者全局代理 Direct。
 |:---|:---|:---|
 |host|String|主机名|
 |端口|Int32|端口|
-|excludedHosts|String collection|排除的主机|
+|excludedHosts|字符串集合|排除的主机|
 
 ## <a name="relationships"></a>关系
 无

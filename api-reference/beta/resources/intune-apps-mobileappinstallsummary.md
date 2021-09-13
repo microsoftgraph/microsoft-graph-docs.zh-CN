@@ -2,15 +2,15 @@
 title: mobileAppInstallSummary 资源类型
 description: 包含移动应用的安装摘要的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d92ba2afe56607490c4bdf8b1d0443eb500be912
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1cc168933bad8a1eef5e177cc5361dd196c31cb5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58817416"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59124229"
 ---
 # <a name="mobileappinstallsummary-resource-type"></a>mobileAppInstallSummary 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58817416"
 包含移动应用的安装摘要的属性。
 
 ## <a name="methods"></a>方法
-|方法|返回类型|Description|
+|方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 mobileAppInstallSummary](../api/intune-apps-mobileappinstallsummary-get.md)|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|读取 [mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md) 对象的属性和关系。|
 |[更新 mobileAppInstallSummary](../api/intune-apps-mobileappinstallsummary-update.md)|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|更新 [mobileAppInstallSummary 对象](../resources/intune-apps-mobileappinstallsummary.md) 的属性。|

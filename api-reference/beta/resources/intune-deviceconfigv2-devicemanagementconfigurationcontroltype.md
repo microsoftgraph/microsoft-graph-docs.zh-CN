@@ -2,15 +2,15 @@
 title: deviceManagementConfigurationControlType 枚举类型
 description: 在 UX 中设置控件类型表示形式
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 00ea3880b4349ac4534e47bcb7a55e0eb95ceac0
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e2a2496b749149745ea0c6fac8491b47525ae0bc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789917"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128954"
 ---
 # <a name="devicemanagementconfigurationcontroltype-enum-type"></a>deviceManagementConfigurationControlType 枚举类型
 

@@ -2,15 +2,15 @@
 title: configurationManagerAction 资源类型
 description: 操作 triggerConfigurationManagerAction 的参数
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 68e8dfebf1f02b837189cff33bdb7a5da2193fc1
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f39a52588896f4d90cd3c07b34c2bddd68ca393b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788477"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59111010"
 ---
 # <a name="configurationmanageraction-resource-type"></a>configurationManagerAction 资源类型
 

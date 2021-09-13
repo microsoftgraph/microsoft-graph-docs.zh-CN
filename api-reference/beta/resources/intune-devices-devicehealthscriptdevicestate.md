@@ -2,15 +2,15 @@
 title: deviceHealthScriptDeviceState 资源类型
 description: 包含设备运行状况脚本的设备运行状态的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: dfdf8398f9551a68a450d053060959f92463779c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e6bfea941ad34a0fd2d58277d544d4e5ea0daf5e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793822"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59115343"
 ---
 # <a name="devicehealthscriptdevicestate-resource-type"></a>deviceHealthScriptDeviceState 资源类型
 
@@ -41,7 +41,7 @@ ms.locfileid: "58793822"
 |lastSyncDateTime|DateTimeOffset|Intune 管理扩展上次与 Intune 同步的时间|
 |preRemediationDetectionScriptOutput|String|修正前检测脚本的输出|
 |preRemediationDetectionScriptError|String|修正前检测脚本的错误|
-|remediationScriptError|字符串|修正脚本的错误输出|
+|remediationScriptError|String|修正脚本的错误输出|
 |postRemediationDetectionScriptOutput|String|修正后检测脚本输出|
 |postRemediationDetectionScriptError|String|修正后检测脚本中的错误|
 |remediationState|[remediationState](../resources/intune-devices-remediationstate.md)|自上次设备运行状况脚本执行以来的修正状态。 可取值为：`unknown`、`skipped`、`success`、`remediationFailed`、`scriptError`。|

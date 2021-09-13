@@ -2,15 +2,15 @@
 title: deviceManagementConfigurationStringSettingValueDefinition 资源类型
 description: 字符串约束
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9731c46e9ae80f346bef29d951f4e430d76743f3
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a497972c8d84781cb5984993389fdb1163514f0d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58815076"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128842"
 ---
 # <a name="devicemanagementconfigurationstringsettingvaluedefinition-resource-type"></a>deviceManagementConfigurationStringSettingValueDefinition 资源类型
 
@@ -32,7 +32,7 @@ ms.locfileid: "58815076"
 |inputValidationSchema|String|输入字符串应匹配的正则表达式或任何 xml 或 json 架构|
 |maximumLength|Int64|字符串的最大长度。 有效值为 0 到 87516|
 |minimumLength|Int64|字符串的最小长度。 有效值为 0 到 87516|
-|isSecret|Boolean|指定是否需要将设置视为机密。 设置标记为"是"的内容将在传输中和处于其余状态时进行加密，并且将在 UX 中表示时显示为星号。|
+|isSecret|Boolean|指定是否需要将设置视为机密。 设置标记为"是"的内容将在传输中和处于其余状态进行加密，并且将在 UX 中表示时显示为星号。|
 
 ## <a name="relationships"></a>关系
 无

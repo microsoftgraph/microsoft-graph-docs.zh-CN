@@ -2,22 +2,24 @@
 title: 获取 directoryObject
 description: 检索 directoryObject 对象的属性和关系。
 author: keylimesoda
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ae93f6b665a8b4d6ce4ccb1c039302575e18a8f7
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 7e2bd9cf5553d4053f87cc753b434f11d9f1bcb8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051499"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020131"
 ---
 # <a name="get-directoryobject"></a>获取 directoryObject
 
 命名空间：microsoft.graph
 
 检索 directoryObject 对象的属性和关系。
+
 ## <a name="permissions"></a>权限
+
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -31,9 +33,10 @@ ms.locfileid: "52051499"
 ```http
 GET /directoryObjects/{id}
 ```
-## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+
+
 ## <a name="request-headers"></a>请求标头
+
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
@@ -44,8 +47,10 @@ GET /directoryObjects/{id}
 ## <a name="response"></a>响应
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [directoryObject](../resources/directoryobject.md) 对象。
+
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+
+### <a name="request"></a>请求
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -74,8 +79,10 @@ GET https://graph.microsoft.com/v1.0/directoryObjects/{id}
 
 ---
 
-##### <a name="response"></a>响应
-注意：为了提高可读性，可能缩短了此处显示的响应对象。
+### <a name="response"></a>响应
+
+下面展示了示例响应。 
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -86,7 +93,20 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "id-value"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryObjects/$entity",
+    "@odata.type": "#microsoft.graph.user",
+    "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0/Microsoft.DirectoryServices.User",
+    "id": "6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0",
+    "businessPhones": [],
+    "displayName": "Conf Room Adams",
+    "givenName": null,
+    "jobTitle": null,
+    "mail": "Adams@Contoso.com",
+    "mobilePhone": null,
+    "officeLocation": null,
+    "preferredLanguage": null,
+    "surname": null,
+    "userPrincipalName": "Adams@Contoso.com"
 }
 ```
 

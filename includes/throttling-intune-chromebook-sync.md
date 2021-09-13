@@ -1,14 +1,14 @@
 ---
 author: davidmu1
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: msgraph
 ms.topic: include
-ms.openlocfilehash: 53198bddaad29597d83769010c0ea19f72bac4592a2f0c99e6505223195cb2c1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bb9ccbdc86d6d36c96a98cac996be0626ce142ac
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196613"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035664"
 ---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
@@ -20,4 +20,7 @@ ms.locfileid: "54196613"
 | 任何 | 每 20 秒 2000 个请求 | 每 20 秒 1000 个请求 |
 
 上述限制适用于下列资源:  
-chromeOSOnboardingSettings.
+
+| <!-- fake header-->                                                                            |
+|------------------------------------------------------------------------------------------------|
+| <ul> <li> [chromeOSOnboardingSettings](/graph/api/resources/chromeosonboardingsettings)  </ul> |

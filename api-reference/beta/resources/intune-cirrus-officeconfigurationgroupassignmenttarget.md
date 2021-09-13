@@ -1,16 +1,16 @@
 ---
 title: officeConfigurationGroupAssignmentTarget 资源类型
 description: Office配置 AAD 组分配目标。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 997fb37d69083d05543c8acfe0c5741a6ccf3461
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1c4a613d0ec7754e448c3844713dacbe214de318
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785555"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59148072"
 ---
 # <a name="officeconfigurationgroupassignmenttarget-resource-type"></a>officeConfigurationGroupAssignmentTarget 资源类型
 

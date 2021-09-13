@@ -2,15 +2,15 @@
 title: androidDeviceOwnerEnrollmentProfileType 枚举类型
 description: Android 设备所有者注册配置文件类型。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8a614d34eefc8a26a3b8c769a5f3a82b7e3bfe98
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6cac94b724417bfdae3cdb5a4e6c34044ffb1d77
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818306"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086916"
 ---
 # <a name="androiddeviceownerenrollmentprofiletype-enum-type"></a>androidDeviceOwnerEnrollmentProfileType 枚举类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58818306"
 Android 设备所有者注册配置文件类型。
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置;将忽略此值。|
 |dedicatedDevice|1|专用设备。|

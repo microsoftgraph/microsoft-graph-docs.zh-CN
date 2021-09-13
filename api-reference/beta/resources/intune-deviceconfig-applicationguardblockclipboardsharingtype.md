@@ -2,15 +2,15 @@
 title: applicationGuardBlockClipboardSharingType 枚举类型
 description: applicationGuardBlockClipboardSharingType 的可能值
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 879d61352702e0eb7a6b3b77b462ed9c24e0fd7d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 52ce5dbdbbe2c13c3d07b6797770cb089cf8e7f8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805757"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59106327"
 ---
 # <a name="applicationguardblockclipboardsharingtype-enum-type"></a>applicationGuardBlockClipboardSharingType 枚举类型
 

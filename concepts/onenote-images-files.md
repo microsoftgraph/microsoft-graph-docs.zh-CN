@@ -2,14 +2,14 @@
 title: 将图像、视频和文件添加到 OneNote 页面
 description: " Microsoft 365 中的企业笔记本"
 author: jewan-microsoft
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: onenote
-ms.openlocfilehash: 06252d15755d7e11cce703657cb0aea0ff914075021c1d11cf548c96359fe4dc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e22b573a65ebd2baabfc39428f580737dddc716d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54159671"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035512"
 ---
 # <a name="add-images-videos-and-files-to-onenote-pages"></a>将图像、视频和文件添加到 OneNote 页面
 
@@ -272,19 +272,19 @@ Content-Type: image/jpeg
 
 #### <a name="data-original-src"></a>data-original-src
 
-必需。 视频的 URL。
+必填。视频的 URL。
 
 示例：`data-original-src="https://www.youtube.com/watch?v=3Ztr44aKmQ8"`
 
 #### <a name="width"></a>width
 
-可选。 包含视频的 iframe 的宽度。 默认值为 480。
+可选。包含视频的 iframe 宽度。默认值为 480。
 
 示例：`width="300"`
 
 #### <a name="height"></a>height
 
-可选。 包含视频的 iframe 的高度。 默认值为 360。
+可选。包含视频的 iframe 高度。默认值为 360。
 
 示例：`height="300"`
 

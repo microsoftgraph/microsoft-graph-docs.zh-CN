@@ -2,15 +2,15 @@
 title: plannerTeamsPublicationInfo 资源类型
 description: 包含有关创建 plannerTask 的发布过程的详细信息。
 author: TarkanSevilmis
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 7cf298b4e9933e3019a72b0750cf01a95c2bf892609f3b601c0742eaf3b9e27d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 77441184468a87e6d12d32adedc98a26c228db68
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54244293"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59115042"
 ---
 # <a name="plannerteamspublicationinfo-resource-type"></a>plannerTeamsPublicationInfo 资源类型
 
@@ -22,10 +22,10 @@ ms.locfileid: "54244293"
 |属性|类型|说明|
 |:---|:---|:---|
 |lastModifiedDateTime|DateTimeOffset|发布过程上次修改此任务的日期和时间。 只读。 |
-|publicationId|字符串| 出版物的标识符。 只读。|
-|publishedToPlanId|字符串|plannerPlan 此任务最初放置的标识符。 只读。 |
+|publicationId|String| 出版物的标识符。 只读。|
+|publishedToPlanId|String|plannerPlan 此任务最初放置的标识符。 只读。 |
 |publishingTeamId|String| 启动发布 [过程的](team.md) 团队的标识符。 只读。|
-|publishingTeamName|字符串|启动显示名称流程的团队的组组。 此显示名称仅供参考，可能并不代表团队最新的名称。 只读。 |
+|publishingTeamName|String|启动显示名称过程的团队的组组。 此显示名称仅供参考，可能并不代表团队最新的名称。 只读。 |
 
 ## <a name="relationships"></a>关系
 无。

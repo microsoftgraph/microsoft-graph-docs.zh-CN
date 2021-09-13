@@ -2,15 +2,15 @@
 title: 更新 pfxRecryptionRequest
 description: 更新 pfxRecryptionRequest 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cbfcf353a3549cfb49a5c0f188dd21ebb42be90a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 537a35351ae04a3f6a4b4b220a0a4c4ef47cdb85
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58800805"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59107489"
 ---
 # <a name="update-pfxrecryptionrequest"></a>更新 pfxRecryptionRequest
 
@@ -43,7 +43,7 @@ PATCH /pfxRecryptionRequests/{pfxRecryptionRequestsId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -59,7 +59,7 @@ PATCH /pfxRecryptionRequests/{pfxRecryptionRequestsId}
 |profileId|Guid|尚未记录|
 |thumbprint|String|尚未记录|
 |deviceKeyThumbprint|String|尚未记录|
-|状态|Int32|尚未记录|
+|status|Int32|尚未记录|
 |sourceType|Int32|尚未记录|
 |createdTime|DateTimeOffset|尚未记录|
 |lastModifiedTime|DateTimeOffset|尚未记录|

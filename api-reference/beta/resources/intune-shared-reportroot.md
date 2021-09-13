@@ -1,16 +1,16 @@
 ---
 title: reportRoot 资源类型
 description: 表示设备或疑难解答报告的实例的资源，具体取决于上下文。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: rolyon
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b8dc76b595e5a9d628dc19ef464238d844864073a8ecbb80d0d8db2baa3292b3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 56e3bc6d11c913a35ee69a803a7e038a86971518
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54160987"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59115273"
 ---
 # <a name="reportroot-resource-type"></a>reportRoot 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54160987"
 
 表示设备或疑难解答报告的实例的资源，具体取决于上下文。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 reportRoot](../api/intune-shared-reportroot-get.md)|读取 [reportRoot](../resources/intune-shared-reportroot.md) 对象的属性和关系。|
@@ -59,7 +59,6 @@ ms.locfileid: "54160987"
   "id": "String (identifier)"
 }
 ```
-
 
 
 

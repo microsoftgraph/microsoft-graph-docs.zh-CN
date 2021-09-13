@@ -1,16 +1,16 @@
 ---
 title: 命令资源类型
 description: 发送到设备的命令集。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: directory-management
 author: spunukol
-ms.openlocfilehash: 4dc57976da620db7350d12d5b45a378fba10ce0827e707384ea5a8f68372a3a8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5d2e6dad5abfc9d6483d49699d8cce33aa15fe40
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54203363"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59131677"
 ---
 # <a name="command-resource-type"></a>命令资源类型
 

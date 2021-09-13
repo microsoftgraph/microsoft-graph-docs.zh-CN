@@ -2,15 +2,15 @@
 title: 创建 policySet
 description: 创建新的 policySet 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a9737ca826ca5530b915c75285fb4ea3506382f9
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a8192f0d8ffa78b91c3f8d31d721a2d4cfdcee1d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784917"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59121128"
 ---
 # <a name="create-policyset"></a>创建 policySet
 
@@ -43,7 +43,7 @@ POST /deviceAppManagement/policySets
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -57,11 +57,11 @@ POST /deviceAppManagement/policySets
 |createdDateTime|DateTimeOffset|PolicySet 的创建时间。|
 |lastModifiedDateTime|DateTimeOffset|PolicySet 的上次修改时间。|
 |displayName|String|PolicySet 的 DisplayName。|
-|description|String|PolicySet 的说明。|
-|状态|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|PolicySet 的验证/分配状态。 可取值为：`unknown`、`validating`、`partialSuccess`、`success`、`error`、`notAssigned`。|
+|说明|String|PolicySet 的说明。|
+|status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|PolicySet 的验证/分配状态。 可取值为：`unknown`、`validating`、`partialSuccess`、`success`、`error`、`notAssigned`。|
 |errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|错误代码（如果发生了任何错误）。 可取值为：`noError`、`unauthorized`、`notFound`、`deleted`。|
 |guidedDeploymentTags|字符串集合|引导式部署的标记|
-|roleScopeTags|String collection|PolicySet 的 RoleScopeTags|
+|roleScopeTags|字符串集合|PolicySet 的 RoleScopeTags|
 
 
 

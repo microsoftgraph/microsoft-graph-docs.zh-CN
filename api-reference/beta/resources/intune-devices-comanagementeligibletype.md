@@ -2,15 +2,15 @@
 title: comanagementEligibleType 枚举类型
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c8e2f1e413521967ef2fd23a3146facfbdbb6fc7
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: fdcf40a12bce88991341dfff02b9ef8a0778c567
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790141"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59111045"
 ---
 # <a name="comanagementeligibletype-enum-type"></a>comanagementEligibleType 枚举类型
 

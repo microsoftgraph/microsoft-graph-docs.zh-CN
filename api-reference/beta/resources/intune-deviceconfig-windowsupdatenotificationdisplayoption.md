@@ -2,15 +2,15 @@
 title: windowsUpdateNotificationDisplayOption 枚举类型
 description: Windows更新通知显示选项
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f5adc450506d5faa352b47aa7996c82821822ab3
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b07cd18220704055a75a20c9b80df34961ff60ea
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58800037"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59095421"
 ---
 # <a name="windowsupdatenotificationdisplayoption-enum-type"></a>windowsUpdateNotificationDisplayOption 枚举类型
 
