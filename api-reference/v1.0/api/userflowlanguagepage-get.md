@@ -1,22 +1,22 @@
 ---
 title: 获取 userFlowLanguagePage
-description: 读取用户流中某种语言的 userFlowLanguagePage 对象中的值。
+description: 读取用户流中某一语言的 userFlowLanguagePage 对象中的值。
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: bf35e829e0c5f8cc9df6af502962aab4a6a4a83b
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: d816cf5a5fc91a24263f13a8b32a55dcf5024923
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51920465"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021825"
 ---
 # <a name="get-userflowlanguagepage"></a>获取 userFlowLanguagePage
 
 命名空间：microsoft.graph
 
-读取用户流中某种语言的 [userFlowLanguagePage](../resources/userflowlanguagepage.md) 对象中的值。 这些值在用户流定义的用户旅程中向用户显示。
+读取用户流中某一语言的 [userFlowLanguagePage](../resources/userflowlanguagepage.md) 对象中的值。 这些值在用户流定义的用户旅程中向用户显示。
 
 ## <a name="permissions"></a>权限
 
@@ -31,7 +31,7 @@ ms.locfileid: "51920465"
 工作或学校帐户需要属于以下角色之一：
 
 * 全局管理员
-* 外部标识用户流管理员
+* 外部标识用户Flow管理员
 
 ## <a name="http-request"></a>HTTP 请求
 

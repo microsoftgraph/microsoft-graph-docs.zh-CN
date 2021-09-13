@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/11/2017
 title: ListInfo
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 description: listInfo 复杂类型提供有关 list 的其他信息。
 doc_type: resourcePageType
-ms.openlocfilehash: 90d216101ba9844e1c607fcdfc92bd774add11d8258ec6dd42984b3eadb50b06
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 965355dd04b68c72c701e9ed6fd62253d1620fdb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196948"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021468"
 ---
 # <a name="listinfo-resource"></a>ListInfo 资源
 

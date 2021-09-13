@@ -2,15 +2,15 @@
 title: 列出 externalConnections
 description: 获取 externalConnection 对象及其属性的列表。
 author: mecampos
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 57d1f56496b380f38bfd4bc8bc7d46381578e758
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 4091ed003361341dd001914a571d308efe91d0a8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53579985"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022512"
 ---
 # <a name="list-externalconnections"></a>列出 externalConnections
 命名空间：microsoft.graph.externalConnectors

@@ -1,18 +1,18 @@
 ---
 title: 导航 Microsoft Graph PowerShell SDK
 description: Microsoft Graph PowerShell SDK 包含大量命令。 了解如何找到适用于想要实现的目标的命令。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jasonjoh
-ms.openlocfilehash: 40e441d620e72283f5c376422ebdc121cc461cb31d6bee8506a833ed4331b291
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2c231ca186e9274a09500247827141cbf03e0e7c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54230275"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139035"
 ---
 # <a name="navigating-the-microsoft-graph-powershell-sdk"></a>导航 Microsoft Graph PowerShell SDK
 
-Microsoft Graph API 是一个巨大且不断增长的 API。 因此，Microsoft Graph PowerShell SDK 中的命令数量也非常大。 找到想要实现的目标正确的命令可能充满挑战，尤其是在你尚未熟悉 Microsoft Graph。 让我们看一下一些有助于查找特定命令的方法。
+Microsoft Graph API 是一个巨大而不断增长的 API。 因此，Microsoft Graph PowerShell SDK 中的命令数量也非常大。 找到想要实现的目标正确的命令可能非常困难，尤其是在你尚未熟悉 Microsoft Graph。 让我们看一下一些有助于查找特定命令的方法。
 
 ## <a name="command-naming-conventions"></a>命令命名约定
 
@@ -32,9 +32,9 @@ PowerShell 命令使用动词-名词对命名，例如 或 `Get-Command` `Update
 | PATCH       | 更新       | `Update-MgUserEvent` [API 参考](/graph/api/event-update?view=graph-rest-1.0&preserve-view=true) |
 | DELETE      | 删除       | `Remove-MgDriveItem` [API 参考](/graph/api/driveitem-delete?view=graph-rest-1.0&preserve-view=true) |
 
-对于函数和操作，它稍微复杂一些。 Microsoft 中的 API Graph作为 OData 函数或操作实现的 API 通常使用至少一个动词进行命名。 相应命令的动作基于函数或操作名称中的动词。 但是，PowerShell 中的命令谓词必须符合特定的命名规则[](/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands)，因此这可能会导致名称到命令的映射不直观。
+对于函数和操作，它有点复杂。 Microsoft 中的 API Graph作为 OData 函数或操作实现的 API 通常使用至少一个动词进行命名。 相应命令的动作基于函数或操作名称中的动词。 但是，PowerShell 中的命令谓词必须符合特定的命名规则[](/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands)，因此这可能会导致名称到命令的映射不直观。
 
-让我们看一些示例。 [getSchedule](/graph/api/calendar-getschedule?view=graph-rest-1.0&preserve-view=true) API 使用 `get` ，且 `Get` 是已批准的 PowerShell 谓词，因此其命令为 `Get-MgUserCalendarSchedule` 。 另 [一](/graph/api/event-cancel?view=graph-rest-beta&preserve-view=true) 方面，事件的取消 API 使用未批准的动词 `cancel` 。 用于取消或终止某些内容的批准动词是 ， `Stop` 因此它的命令是 `Stop-MgUserEvent` 。 最后 [，snoozeReminder](/graph/api/event-snoozereminder?view=graph-rest-1.0&preserve-view=true) API 的动词 `snooze` 没有经过 PowerShell 批准的等效项。 对于 API，SDK 使用谓词 ， `Invoke` 因此 API 的命令为 `Invoke-MgSnoozeUserEventReminder` 。
+让我们看一些示例。 [getSchedule](/graph/api/calendar-getschedule?view=graph-rest-1.0&preserve-view=true) API 使用 `get` ，且 `Get` 是已批准的 PowerShell 谓词，因此其命令为 `Get-MgUserCalendarSchedule` 。 另 [一](/graph/api/event-cancel?view=graph-rest-beta&preserve-view=true) 方面，事件的取消 API 使用未批准的动词 `cancel` 。 用于取消或停止使用某些内容的批准动词是 ， `Stop` 因此它的命令是 `Stop-MgUserEvent` 。 最后 [，snoozeReminder](/graph/api/event-snoozereminder?view=graph-rest-1.0&preserve-view=true) API 的动词 `snooze` 没有经过 PowerShell 批准的等效项。 对于 API，SDK 使用谓词 ， `Invoke` 因此 API 的命令为 `Invoke-MgSnoozeUserEventReminder` 。
 
 ### <a name="command-nouns"></a>命令名词
 

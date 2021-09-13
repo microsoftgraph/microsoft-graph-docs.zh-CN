@@ -2,14 +2,14 @@
 title: 在 Microsoft Graph 中使用 $search 查询参数
 description: Microsoft Graph 支持 $search OData 查询参数，以便限制请求的结果来匹配搜索条件。
 author: mumbi-o
-localization_priority: Priority
+ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 4655d94e868ae5125d9bf12da989906aeb47bae8b62005d51ae3efed741ba790
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f6cb8f9d8fe1a1c8b14872f5979dabed2eff4717
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54177742"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59093972"
 ---
 # <a name="use-the-search-query-parameter-to-match-a-search-criterion"></a>使用搜索查询参数匹配搜索条件
 

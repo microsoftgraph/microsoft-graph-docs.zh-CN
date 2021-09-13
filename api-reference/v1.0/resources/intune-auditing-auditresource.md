@@ -2,15 +2,15 @@
 title: auditResource 资源类型
 description: 包含审核资源的属性的类。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d381f8f9d25da07ce5ab52d05a90add1519e3e2fa695caf8a94b50b9bb1bc7bb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6ab3393193e6bf2c6011deb32a68a5482464ec9a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54184814"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59029035"
 ---
 # <a name="auditresource-resource-type"></a>auditResource 资源类型
 

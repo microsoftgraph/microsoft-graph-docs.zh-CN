@@ -1,16 +1,16 @@
 ---
 title: application： addKey
 description: 向应用程序添加密钥凭据。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 2194af555769d8eb5423a5c08a59926cb3e004f4
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: c96de52426a85e6ffd50ddea77d9197795d416e5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50958760"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016951"
 ---
 # <a name="application-addkey"></a>application： addKey
 
@@ -21,7 +21,7 @@ ms.locfileid: "50958760"
 > [!NOTE]
 > [Create application](../api/application-post-applications.md) and [Update application](../api/application-update.md) operations can continue to be used to add and update key credentials for any application with or without a user's context.
 
-作为此方法的请求验证的一部分，将先验证现有密钥的证明，然后才能执行该操作。 
+作为此方法的请求验证的一部分，将验证拥有现有密钥的证明，然后才能执行该操作。 
 
 如果没有任何现有有效证书 (尚未添加任何证书，或者所有证书) ，将无法使用此服务操作。 可改用[更新应用程序](../api/application-update.md)操作来执行更新。
 

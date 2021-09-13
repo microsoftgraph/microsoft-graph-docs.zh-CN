@@ -2,21 +2,21 @@
 title: 获取警报
 description: " 检索 alert 对象的属性和关系。"
 author: preetikr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 19d371bb2b61ae33c310251420e88df67b53a4df
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2ee372c3f4bbbe68ec874520261a15440f2e391a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47992851"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017021"
 ---
 # <a name="get-alert"></a>获取警报
 
 命名空间：microsoft.graph
 
- 检索 [alert](../resources/alert.md) 对象的属性和关系。
+ 检索 alert 对象的属性 [和](../resources/alert.md) 关系。
 
 ## <a name="permissions"></a>权限
 
@@ -48,7 +48,7 @@ GET /security/alerts/{alert_id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 **alert** 对象。 如果从提供程序返回了 2xx 或 404 以外的状态代码，或者提供程序超时，则响应将是 `206 Partial Content` 状态代码，提供程序的响应位于警告标头中。 有关详细信息，请参阅 [Microsoft Graph 安全性 API 错误响应](../resources/security-error-codes.md)。
+如果成功，此方法在响应 `200 OK` 正文中返回 **响应** 代码和 alert 对象。 如果从提供程序返回了 2xx 或 404 以外的状态代码，或者提供程序超时，则响应将是 `206 Partial Content` 状态代码，提供程序的响应位于警告标头中。 有关详细信息，请参阅 [Microsoft Graph 安全性 API 错误响应](../resources/security-error-codes.md)。
 
 ## <a name="example"></a>示例
 

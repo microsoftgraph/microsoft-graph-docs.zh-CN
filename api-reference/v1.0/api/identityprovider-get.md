@@ -1,16 +1,16 @@
 ---
 title: 获取 identityProvider
 description: 检索现有 identityProvider 中的属性
-localization_priority: Priority
+ms.localizationpriority: high
 author: namkedia
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 09dddd20c4551402e9877d84b6f75e6df44f8ca1
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 7503965f6cc497b7216cbd5e1dd31cca85b8dde1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53580651"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59073898"
 ---
 # <a name="get-identityprovider-deprecated"></a>获取 identityProvider（已弃用）
 命名空间：microsoft.graph

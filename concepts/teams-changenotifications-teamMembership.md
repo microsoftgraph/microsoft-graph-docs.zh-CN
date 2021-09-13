@@ -2,15 +2,15 @@
 title: 使用 Microsoft Graph 获取 Teams 成员资格任何更改的更改通知
 description: 使用 Microsoft Graph 获取 Teams 成员资格任何更改（创建、更新和删除）的更改通知
 author: anandab
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 8d136e81c51ee470577706f1515f5950abdd58c641a30f340a62f1f9298626e1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bcd2a7e936b52932a67dde4a83642ba7d980323a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54165502"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59071698"
 ---
 # <a name="get-change-notifications-for-changes-in-teams-membership-using-microsoft-graph"></a>使用 Microsoft Graph 获取 Teams 成员资格更改的更改通知
 

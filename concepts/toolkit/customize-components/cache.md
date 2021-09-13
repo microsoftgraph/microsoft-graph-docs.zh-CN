@@ -1,14 +1,14 @@
 ---
 title: Microsoft Graph Toolkit缓存
 description: 解释缓存的工作原理以及如何配置提供给开发人员的选项
-localization_priority: Normal
+ms.localizationpriority: medium
 author: adchau
-ms.openlocfilehash: 0e1c987adffe6433d5fcf681647d8e48f1dc06fdaea3ff997b6eb057fd124a4a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 79ac43d0a0cc1a09ded730a9957fd1735f7790de
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54251609"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129640"
 ---
 # <a name="microsoft-graph-toolkit-caching"></a>Microsoft Graph Toolkit缓存
 
@@ -17,7 +17,7 @@ Microsoft Graph Toolkit支持缓存选择 Microsoft Graph API 调用。 呼叫�
 > [!TIP]
 > 有关每个组件缓存哪些实体的信息，请参阅组件的文档。
 
-由 mgt 创建的用于缓存的数据库的前缀为 `mgt-` 。 每个实体的数据都存储在单独的对象存储中。 若要检查缓存，请使用开发人员面板中的"应用程序"选项卡 (F12 工具) - 在"存储"部分下，单击 **"IndexedDB"** 选项卡。  
+由 mgt 创建的用于缓存的数据库的前缀为 `mgt-` 。 每个实体的数据都存储在单独的对象存储中。 若要检查缓存，请使用开发人员面板中的"应用程序"选项卡 (F12 工具) - 在 **"存储"** 部分下，单击 **"IndexedDB"** 选项卡。 
 
 ![devtools indexedDB](../images/indexedDBpanel.png)
 

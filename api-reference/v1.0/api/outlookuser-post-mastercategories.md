@@ -1,16 +1,16 @@
 ---
 title: 创建 Outlook 类别
 description: 在用户主类别列表中创建 outlookCategory 对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0117b075dae4e7e38572781526fdc4e369f4d2fc
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 2f7bc79329ee05e19b9b3df878ff870289844b2b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055860"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59037297"
 ---
 # <a name="create-outlook-category"></a>创建 Outlook 类别
 
@@ -86,7 +86,7 @@ Content-Length: 70
 
 在请求正文中，提供 [outlookCategory](../resources/outlookcategory.md) 对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

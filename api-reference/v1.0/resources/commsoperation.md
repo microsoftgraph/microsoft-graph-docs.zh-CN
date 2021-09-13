@@ -2,15 +2,15 @@
 title: commsOperation 资源类型
 description: 某些长时间运行的操作的状态。
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: dd924966c34d39ceb26e7b92077f01f085f9f6779896db439c1ae6c7a57eae9c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 37283084060d555957f6de7a476b87ba6b32a84c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54130385"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036765"
 ---
 # <a name="commsoperation-resource-type"></a>commsOperation 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "54130385"
 
 此资源可返回为对操作的响应，或作为 [commsNotification 的内容返回](commsNotification.md)。  
 
-当作为对操作的响应返回时，状态将指示是否将发生后续通知。 例如，如果返回状态为 或 的操作，将不会通过通知通道执行 `completed` `failed` 任何后续操作。 
+当作为对操作的响应返回时，状态将指示是否将进行后续通知。 例如，如果返回状态为 或 的操作，将不会通过通知通道执行 `completed` `failed` 任何后续操作。 
 
 如果操作或状态为 或 的操作返回，后续更新 `null` `notStarted` `running` 将通过通知通道提供。
 

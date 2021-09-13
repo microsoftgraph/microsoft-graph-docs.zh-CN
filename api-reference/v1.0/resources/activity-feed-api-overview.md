@@ -1,16 +1,16 @@
 ---
 title: 使用活动源 REST API
 description: '可以使用 Microsoft 活动源 API Graph跨设备和平台恢复用户的活动。 活动源 API 请求通过委派权限和用户活动权限代表用户执行，这些权限可以与个人帐户或工作和学校帐户一同使用。 '
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: project-rome
 author: ailae
 doc_type: conceptualPageType
-ms.openlocfilehash: 82724552fffb7b9d9832fa5d131dde145eeed22e76cbb4afde2d25e08399ea7c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 37b4a7113d0f52155d6fa8a96167600cf9a33a86
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178624"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056114"
 ---
 # <a name="use-the-activity-feed-rest-api"></a>使用活动源 REST API
 
@@ -43,14 +43,14 @@ Each activity represents a unique...
 **请勿：** 为用户将来不需要恢复的操作创建用户活动。
 如果应用程序用于完成简单、一次的操作，这些操作不会保留状态，因此将来可能不需要编写用户活动。
 
-为清楚说明，尽管用户活动显示在 Windows 时间线中，但这不是设计为版本控制工具 - 选择基于文档的活动应始终显示该文档的最新版本 (包括其他用户所做的更改。) 
+为清楚说明，尽管用户活动显示在 Windows 时间线中，但这不是设计为版本控制工具 - 选择基于文档的活动应始终显示该文档的最新版本 (包括由其他用户所做的更改。) 
 
 **请勿：** 为其他用户完成的操作创建 *用户活动*。
 如果有人向用户发送消息，或@mentions应用中的用户发送邮件，则不应编写新活动。 通过显示通知可以更好地提供这些交互。
 
-*协作方案：* 如果多个用户正在处理同一活动 (如 Word 文档) ，则在您上次编辑文档后，其他用户会对其进行更改。 在这种情况下，应用开发人员可能需要更新活动中的可视元素以反映对文档所做的更改。 为此，应用可能会更新现有活动，而无需创建新的历史记录项。
+*协作方案：* 如果多个用户正在处理同一活动 (如 Word 文档) ，则在某些情况下，其他用户在您上次编辑文档后对其进行了更改。 在这种情况下，应用开发人员可能需要更新活动中的可视元素，以反映对文档所做的更改。 为此，应用可能会更新现有活动，而无需创建新的历史记录项。
 
->**注意：** 如果要为 Web 应用程序发布活动，则对于每个活动都包括 和 ，这 `activationURL` `fallbackURL` 一点很重要。 从 Microsoft 体验（如时间线）中，活动将用户启动回Windows应用。
+>**注意：** 如果要为 Web 应用程序发布活动，则对于每个活动都包括 和 ，这 `activationURL` `fallbackURL` 一点很重要。 活动将用户从 Microsoft 体验（如时间线）中预期启动Windows应用。
 
 ## <a name="app-interaction-patterns-and-user-activities"></a>应用交互模式和用户活动
 你创建的用户活动将因应用的交互模式而异。 虽然每个应用都不同，但大多数应用将属于以下交互模式之一：

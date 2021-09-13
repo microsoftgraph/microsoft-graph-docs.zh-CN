@@ -2,15 +2,15 @@
 title: approvalStage 资源类型
 description: 与 userConsentRequest 关联的 approvalStage 对象。
 author: psignoret
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 49629542b36d7724b17406c14d925844873c8c964334c71b5eec81451376783c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 69e90233a5b9ae0221e7016ebdd255058ea95cad
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54147110"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067603"
 ---
 # <a name="approvalstage-resource-type"></a>approvalStage 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54147110"
 
 |属性|类型|说明|
 |:---|:---|:---|
-|assignedToMe|Boolean|指示是否将阶段分配给呼叫用户进行审阅。 只读。|
+|assignedToMe|布尔值|指示是否将阶段分配给呼叫用户进行审阅。 只读。|
 |displayName|String|策略创建者提供用于标识审批阶段的标签。 只读。|
 |id|String|与审批对象关联的阶段的标识符。 只读。|
 |justification|String|与审批阶段决策相关的理由。|

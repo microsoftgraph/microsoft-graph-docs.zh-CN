@@ -2,15 +2,15 @@
 author: daspek
 title: moveAction 资源类型
 description: MoveAction 对象提供有关移动项目的活动的信息。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 160afbc51196c60473dc40bec7b79daab6dc39eb3f302c1a1b9689c9c25929fe
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 953c932d83060ed650b0e3ad096cf1de40941e1c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189462"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067057"
 ---
 # <a name="moveaction-resource-type"></a>moveAction 资源类型
 

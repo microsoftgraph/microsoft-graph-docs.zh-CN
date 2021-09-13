@@ -2,15 +2,15 @@
 title: callRecord： getDirectRoutingCalls
 description: 获取直接路由呼叫的日志。
 author: williamlooney
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: c926aed6ee6431167ac7c02343871e4adfc087d5
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 340e9020076872b42be7a3b11a8b6e076f266f8f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58792021"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016717"
 ---
 # <a name="callrecord-getdirectroutingcalls"></a>callRecord： getDirectRoutingCalls
 
@@ -43,7 +43,7 @@ GET /communications/callRecords/getDirectRoutingCalls
 
 |名称|说明|
 |:---|:---|
-|Authorization|Bearer {token}。必需。|
+|Authorization|持有者{令牌}。必需。|
 
 ## <a name="function-parameters"></a>函数参数
 
@@ -67,6 +67,8 @@ GET /communications/callRecords/getDirectRoutingCalls
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "callrecord_getdirectroutingcalls"
@@ -76,6 +78,24 @@ GET /communications/callRecords/getDirectRoutingCalls
 ``` http
 GET https://graph.microsoft.com/v1.0/communications/callRecords/getDirectRoutingCalls(fromDateTime=2019-11-01,toDateTime=2019-12-01)
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/callrecord-getdirectroutingcalls-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/callrecord-getdirectroutingcalls-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/callrecord-getdirectroutingcalls-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/callrecord-getdirectroutingcalls-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

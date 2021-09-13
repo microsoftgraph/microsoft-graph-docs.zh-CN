@@ -1,16 +1,16 @@
 ---
 title: 删除 schemaExtension
 description: 删除架构扩展定义。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: 79fd5d4d2f71ea20018462ac4cb364f47b2d898c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f363d49d5d102470bcdef74f5832935e2c986f4f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015566"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019599"
 ---
 # <a name="delete-schemaextension"></a>删除 schemaExtension
 
@@ -27,12 +27,12 @@ ms.locfileid: "48015566"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.accessasuser.all 的所有应用程序。    |
+|委派（工作或学校帐户） | Application.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | 不支持。 |
 
 > [!NOTE]
-> 此外，对于委派的流程，登录用户只能删除他们自己 (的 Schemaextension，其中 schemaExtension 的 **owner** 属性是 `appId` 登录用户拥有) 的应用程序的所有者属性。
+> 此外，对于委派流，登录用户只能删除他们拥有 (其中 schemaExtension 的所有者属性是已登录用户拥有) 的应用程序的 。 `appId`
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

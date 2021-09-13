@@ -2,15 +2,15 @@
 title: 标识保护 API
 description: identityProtectionRoot 资源类型
 author: cloudhandler
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: f4766138275b034f2fd5dc1980c9bb266b667cf4f68a2a437a2512fccac750e5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 23a356597092a6bf7f75de3cf359c2026979489b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54230709"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056079"
 ---
 # <a name="identityprotectionroot-resource-type"></a>identityProtectionRoot 资源类型
 
@@ -22,9 +22,9 @@ ms.locfileid: "54230709"
 
 * [riskyUsers](riskyuser.md) - 查询 Microsoft Graph，获取标识保护检测到有风险的用户的信息。 用户风险表示给定标识或帐户受到威胁的可能性。 这些风险使用 Microsoft 的内部和外部威胁情报源（包括安全研究人员、执法机构、Microsoft 的安全团队和其他受信任来源）脱机计算。
 
-* [signIn](signin.md) - 查询 Microsoft Graph，获取与风险状态、详细信息和级别相关的特定属性的 Azure AD 登录信息。 登录风险表示给定身份验证请求未由标识所有者授权的概率。 可以使用 Microsoft 的内部和外部威胁情报源（包括安全研究人员、执法机构、Microsoft 的安全团队和其他受信任来源）实时计算或脱机计算这些风险。
+* [signIn](signin.md) - 查询 Microsoft Graph，获取与风险状态、详细信息和级别相关的特定属性的 Azure AD 登录信息。 登录风险表示给定身份验证请求未由标识所有者授权的概率。 可以使用 Microsoft 的内部和外部威胁情报源（包括安全研究人员、执法机构专业人员、Microsoft 的安全团队和其他受信任来源）实时计算或脱机计算这些风险。
 
-## <a name="what-can-i-do-with-identity-protection-apis-in-microsoft-graph"></a>在 Microsoft 服务中，可以使用标识保护 API Graph？
+## <a name="what-can-i-do-with-identity-protection-apis-in-microsoft-graph"></a>在 Microsoft Graph 中，可以使用标识保护 API 执行哪些Graph？
 
 以下是处理审核日志数据的常见请求：
 
@@ -45,4 +45,4 @@ Azure AD Identity Protection 是一项高级功能。 你需要一Azure AD Premi
 ## <a name="see-also"></a>另请参阅
 
 * [关于 Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection)
-* [开始使用 microsoft Azure Active Directory 和 Microsoft Graph](/azure/active-directory/identity-protection/howto-identity-protection-graph-api)
+* [开始使用Azure Active Directory和 Microsoft Graph](/azure/active-directory/identity-protection/howto-identity-protection-graph-api)

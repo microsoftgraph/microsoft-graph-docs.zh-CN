@@ -1,16 +1,16 @@
 ---
 title: scheduleItem 资源类型
 description: 描述用户与用户默认日历上的实际事件相对应的可用性的项目。 此项还适用于会议室 (设备) 资源。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: harini84
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: c097bb722e69c25e4709f1ef5465eb5d603e1f6a96591a94f799009a9c97c51c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 86dc2c44f93635bd38363984d7dda8debe21147f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54216635"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035967"
 ---
 # <a name="scheduleitem-resource-type"></a>scheduleItem 资源类型
 

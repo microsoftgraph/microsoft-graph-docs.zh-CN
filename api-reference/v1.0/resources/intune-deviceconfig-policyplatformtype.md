@@ -2,15 +2,15 @@
 title: policyPlatformType 枚举类型
 description: 策略支持的平台类型。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7786247dfd77d1db0b46c8a06e243c01c33b22cb2be31fa5735c3146589e7990
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fba9630d8d6fd142ad790d6311d57d4b646942e6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54152549"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067260"
 ---
 # <a name="policyplatformtype-enum-type"></a>policyPlatformType 枚举类型
 

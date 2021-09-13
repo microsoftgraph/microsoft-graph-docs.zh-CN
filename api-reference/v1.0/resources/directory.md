@@ -1,24 +1,24 @@
 ---
 title: 目录资源类型（已删除的项目）
 description: . 已删除的项目将保留最多 30 天的还原时间。 30 天后，这些项目将永久删除。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: d4a68680c62fd97229190bac921a22246e01b79f
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 9f337a8a516dbd1bc3bd772a52f74000d412c071
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695292"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072552"
 ---
-# <a name="directory-resource-type-deleted-items"></a>目录资源类型（已删除的项目）
+# <a name="directory-resource-type"></a>目录资源类型
 
 命名空间：microsoft.graph
 
 表示目录中已删除的项目。 删除某个项目后，它会被添加到已删除项目“容器”中。 已删除的项目将保留最多 30 天的还原时间。 30 天后，这些项目将永久删除。
 
-目前，仅应用程序、组和用户资源支持已删除的项目[](application.md)功能。 [](group.md) [](user.md)
+目前，仅应用程序、组和用户资源支持[已删除项目功能](user.md)。 [](group.md) [](application.md)
 
 继承自 [实体](entity.md)。
 
@@ -30,7 +30,7 @@ ms.locfileid: "58695292"
 |[Restore deleted item](../api/directory-deleteditems-restore.md) |[directoryObject](directoryobject.md)| 还原最近删除的项目。 |
 |[List deleted items](../api/directory-deleteditems-list.md) |[directoryObject](directoryobject.md) 集合| 获取最近删除的项目列表。 |
 |[Permanently delete an item](../api/directory-deleteditems-delete.md) | 无 | 永久删除项目。 |
-|[列出用户拥有的已删除项目](../api/directory-deleteditems-user-owned.md) | [directoryObject](directoryobject.md) collection | 列出用户拥有的目录项。 |
+|[列出用户拥有的已删除项目](../api/directory-deleteditems-user-owned.md) | [directoryObject](directoryobject.md) 集合 | 列出用户拥有的目录项。 |
 
 
 ## <a name="properties"></a>属性
@@ -53,28 +53,14 @@ ms.locfileid: "58695292"
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
+  "keyProperty":"id",
+  "optionalProperties": [],
   "@odata.type": "microsoft.graph.directory"
 }-->
 
 ```json
 {
-}
-```
-
-## <a name="example"></a>示例
-
-<!--{"blockType": "request"}-->
-```http
-GET https://graph.microsoft.com/v1.0/directory
-```
-
-<!--{"blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.directory"}-->
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
+  "@odata.type": "#microsoft.graph.directory"
 }
 ```
 

@@ -1,16 +1,16 @@
 ---
 title: educationAssignment 资源类型
 description: '**educationAssignment** 资源表示一个任务或工作单位分配给课堂中的学生或团队成员，作为他们学习的一部分。'
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 0d0862be39ca7dbaffe60b57294d407808e6c8329f9c8bd837f55b7a2bd52918
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 932a11e32514b8ee8a3ab6a7c3f2280f61b530a5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54230793"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021720"
 ---
 # <a name="educationassignment-resource-type"></a>educationAssignment 资源类型
 
@@ -31,23 +31,23 @@ ms.locfileid: "54230793"
 |[创建作业资源](../api/educationassignment-post-resource.md) |[educationAssignmentResource](educationassignmentresource.md)| 通过发布到 **资源集合创建新的 educationAssignmentResource。**|
 |[获取作业](../api/educationassignment-get.md) | [educationAssignment](educationassignment.md) |读取 **educationAssignment** 对象的属性和关系。|
 |[更新](../api/educationassignment-update.md) | [educationAssignment](educationassignment.md) |更新 **educationAssignment** 对象。 |
-|[删除](../api/educationassignment-delete.md) | 无 |删除 **educationAssignment** 对象。 |
-|[发布](../api/educationassignment-publish.md)|[educationAssignment](educationassignment.md)|将 **educationAssignment** 对象的状态从草稿更改为已发布。|
+|[删除](../api/educationassignment-delete.md) | None |删除 **educationAssignment** 对象。 |
+|[Publish](../api/educationassignment-publish.md)|[educationAssignment](educationassignment.md)|将 **educationAssignment** 对象的状态从草稿更改为已发布。|
 |[设置工作分配资源文件夹](../api/educationassignment-setupresourcesfolder.md)| string| 在SharePoint位置 (创建一个) 文件夹以将文件作为分配资源上载|
 |[列出资源](../api/educationassignment-list-resources.md) |[educationAssignmentResource](educationassignmentresource.md) 集合| 获取 **educationAssignmentResource** 对象集合。|
 |[列出提交](../api/educationassignment-list-submissions.md) |[educationSubmission](educationsubmission.md) 集合| 获取 **educationSubmission** 对象集合。|
 |[List categories](../api/educationassignment-list-categories.md) |[educationCategory](educationcategory.md) 集合| 获取 **educationCategory** 对象集合。|
 |[添加类别](../api/educationassignment-post-categories.md) |[educationCategory](educationcategory.md) | 将 **属于课程的 educationCategory** 分配给此作业。|
-|[删除类别](../api/educationassignment-remove-category.md) |无| 从此作业中删除属于课程的 **educationCategory。**|
-|[附加度分](../api/educationassignment-put-rubric.md)|无|将现有 **educationRubric** 附加到此作业。|
-|[删除 rubric](../api/educationassignment-delete-rubric.md)|无|从此 **作业分离 educationRubric。**|
+|[删除类别](../api/educationassignment-remove-category.md) |None| 从此作业中删除属于课程的 **educationCategory。**|
+|[附加度分](../api/educationassignment-put-rubric.md)|None|将现有 **educationRubric** 附加到此作业。|
+|[删除 rubric](../api/educationassignment-delete-rubric.md)|None|从此 **作业分离 educationRubric。**|
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |id|String| 只读。|
 |addedStudentAction|String|可选字段，用于控制在作业发布后添加的学生的作业行为。 如果未指定，则默认为 `none` value。 当前仅支持两个值： `none` 或 `assignIfOpen` 。|
-|allowLateSubmissions|Boolean| 标识学生是否可以在截止日期后提交。 如果在创建过程中未指定此属性，则默认为 true。 |
+|allowLateSubmissions|布尔值| 标识学生是否可以在截止日期后提交。 如果在创建过程中未指定此属性，则默认为 true。 |
 |allowStudentsToAddResourcesToSubmission|Boolean| 标识学生是否可以将自己的资源添加到提交中，或是否只能修改教师添加的资源。 |
 |assignDateTime|DateTimeOffset|工作分配应处于活动状态的日期。  如果将来，在此日期之前不会向学生显示作业。  **时间戳类型表示** 使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |assignTo|[educationAssignmentRecipient](educationassignmentrecipient.md)| 发布作业后，哪些用户或整个类应接收提交对象。 |
@@ -60,19 +60,19 @@ ms.locfileid: "54230793"
 |dueDateTime|DateTimeOffset|学生作业截止日期。  时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |一个|[educationAssignmentGradeType](educationassignmentgradetype.md)|如何对作业进行评分。 |
 |instructions|[itemBody](itembody.md)| 工作分配的说明。  这一点显示名称告知学生要执行哪些工作。 |
-|lastModifiedBy|[identitySet](identityset.md)| Who上次修改了工作分配。 |
+|lastModifiedBy|[identitySet](identityset.md)| Who上次修改工作分配。 |
 |lastModifiedDateTime|DateTimeOffset|上次修改工作分配的时刻。  时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |notificationChannelUrl|String|可选字段，用于指定发布 [工作](channel.md) 分配发布通知的通道的 URL。 如果未指定或为空，则默认为 `General` 频道。 此字段仅适用于 **assignTo** 值为 [educationAssignmentClassRecipient 的作业](educationassignmentclassrecipient.md)。 在发布分配后，不允许更新 **notificationChannelUrl。**|
 |状态|string| 工作分配 **的状态**。  无法修补此值。  可取值为：`draft`、`scheduled`、`published`、`assigned`。|
-|webUrl|string| 给定分配的深层链接 URL。|
-|resourcesFolderUrl|string| 存储此分配的所有文件资源的文件夹 URL。|
+|WebUrl|string| 给定分配的深层链接 URL。|
+|resourcesFolderUrl|字符串| 存储此分配的所有文件资源的文件夹 URL。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |resources|[educationAssignmentResource](educationassignmentresource.md) 集合| Learning分配关联的对象。  只有教师可以修改此列表。 可为空。|
-|提交|[educationSubmission](educationsubmission.md) 集合| 发布后，每个学生都有一个表示其工作和成绩的提交对象。  只读。 可为 NULL。|
-|categories|[educationCategory](educationcategory.md) 集合| 设置后，使用户能够轻松查找给定类型的工作分配。  只读。 可为 NULL。|
+|提交|[educationSubmission](educationsubmission.md) 集合| 发布后，每个学生都有一个表示其工作和成绩的提交对象。  只读。 可为空。|
+|categories|[educationCategory](educationcategory.md) 集合| 设置后，使用户能够轻松查找给定类型的工作分配。  只读。 可为空。|
 |rubric|[educationRubric](educationrubric.md)|设置后，此工作分配附加的评分标准。|
 
 ## <a name="json-representation"></a>JSON 表示形式

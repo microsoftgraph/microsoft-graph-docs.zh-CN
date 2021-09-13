@@ -2,15 +2,15 @@
 title: 创建表
 description: 使用此 API 创建新的表。
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: d1e5acbcabb7628f121c99f3280f41d3aeabe1e4f812a0ad14c5c2b93f17ce0a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7502d0b394d100b029f98d3b1217b4b107078f8a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249361"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036807"
 ---
 # <a name="create-table"></a>创建表
 
@@ -36,7 +36,7 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/add
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer {token}。必需。 |
+| Authorization  | 持有者{令牌}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ## <a name="request-body"></a>请求正文

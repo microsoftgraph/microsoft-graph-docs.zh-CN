@@ -2,15 +2,15 @@
 title: 更新 identityApiConnector
 description: 更新 identityApiConnector 对象的属性。
 author: nickgmicrosoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 09733c849f99c2928ba7c2cc3b1702f411952cd7
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 5b41679d67ddbc44d908523f9d8c40cef8007dce
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921611"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59073897"
 ---
 # <a name="update-identityapiconnector"></a>更新 identityApiConnector
 
@@ -31,7 +31,7 @@ ms.locfileid: "51921611"
 工作或学校帐户需要属于以下角色之一：
 
 * 全局管理员
-* 外部标识用户流管理员
+* 外部标识用户Flow管理员
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -68,7 +68,7 @@ PATCH /identity/apiConnectors/{identityApiConnectorId}
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-changing-display-name-targeturl-and-username--password-used-for-basic-authentication"></a>示例 1：更改显示名称身份验证所使用的 &、targetUrl 和 username 密码
+### <a name="example-1-changing-display-name-targeturl-and-username--password-used-for-basic-authentication"></a>示例 1：更改用于显示名称身份验证的 &、targetUrl 和 username 密码
 
 #### <a name="request"></a>请求
 
@@ -130,7 +130,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-2-changing-api-connector-to-use-client-certificate-authentication"></a>示例 2：将 API 连接器更改为使用客户端证书身份验证
 
-这将覆盖之前的任何 authenticationConfiguration 设置。 若要从基本身份验证更改为证书身份验证，请使用此模式。 若要向证书列表中添加其他证书，请使用 [上载客户端证书](../api/identityapiconnector-uploadclientcertificate.md) 方法。 使用此方法时，API 连接器的"Get"或"List"操作将为 `authenticationConfiguration` [microsoft.graph.clientCertificateAuthentication 类型](../resources/clientcertificateauthentication.md)。
+这将覆盖之前的任何 authenticationConfiguration 设置。 若要从基本身份验证更改为证书身份验证，请使用此模式。 若要向证书列表中添加其他证书，请使用Upload[证书方法](../api/identityapiconnector-uploadclientcertificate.md)。 使用此方法时，API 连接器的"Get"或"List"操作的类型将为 `authenticationConfiguration` [microsoft.graph.clientCertificateAuthentication](../resources/clientcertificateauthentication.md)。
 
 #### <a name="request"></a>请求
 

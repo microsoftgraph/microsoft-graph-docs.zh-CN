@@ -2,15 +2,15 @@
 title: 删除 windowsPhone81CustomConfiguration
 description: 删除 windowsPhone81CustomConfiguration。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 366adcace4c0c75708d02be91edc1edcac89a8698fe992e5349b076ad3b920c1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ade4130eb6729af7199b12fd63e49e30ef6ff0df
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54223989"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59037633"
 ---
 # <a name="delete-windowsphone81customconfiguration"></a>删除 windowsPhone81CustomConfiguration
 

@@ -2,15 +2,15 @@
 title: 更新 iosCustomConfiguration
 description: 更新 iosCustomConfiguration 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2711545d812dbdbaa86c3223865fb4e3d027920a5f370e4fe52aa9c00497678e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c3dfeeae2de69d3d9daec79d65084fb6eb93e7fe
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54175831"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022224"
 ---
 # <a name="update-ioscustomconfiguration"></a>更新 iosCustomConfiguration
 

@@ -1,16 +1,16 @@
 ---
 title: 'conversationThread: reply'
-description: '回复组对话中的线程并向其添加新帖子。 您可以指定父对话 '
+description: '回复组对话中的线程并向其添加新帖子。 可以指定父对话 '
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 20dbb5c9734777ba127419c4fbcb1602131467ff
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7b24a61222f0a26b330f5528c52d7ff156f46d5c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009980"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59050619"
 ---
 # <a name="conversationthread-reply"></a>conversationThread: reply
 

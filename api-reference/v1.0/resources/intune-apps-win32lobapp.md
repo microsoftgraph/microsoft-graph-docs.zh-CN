@@ -2,15 +2,15 @@
 title: win32LobApp 资源类型
 description: 包含 Win32 应用的属性和继承的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f5e9af31d8bddaeea5ec2edc9465f1cf0e3d47c68ff739ef7945415cc74f8024
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 928200f65cd9388b2ed8cf8091c3479e02f57ab4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54126534"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072440"
 ---
 # <a name="win32lobapp-resource-type"></a>win32LobApp 资源类型
 
@@ -29,7 +29,7 @@ ms.locfileid: "54126534"
 |[列出 win32LobApps](../api/intune-apps-win32lobapp-list.md)|[win32LobApp](../resources/intune-apps-win32lobapp.md) 集合|列出 [win32LobApp 对象的属性和](../resources/intune-apps-win32lobapp.md) 关系。|
 |[获取 win32LobApp](../api/intune-apps-win32lobapp-get.md)|[win32LobApp](../resources/intune-apps-win32lobapp.md)|读取 [win32LobApp 对象的属性和](../resources/intune-apps-win32lobapp.md) 关系。|
 |[创建 win32LobApp](../api/intune-apps-win32lobapp-create.md)|[win32LobApp](../resources/intune-apps-win32lobapp.md)|创建新的 [win32LobApp](../resources/intune-apps-win32lobapp.md) 对象。|
-|[删除 win32LobApp](../api/intune-apps-win32lobapp-delete.md)|无|删除 [win32LobApp](../resources/intune-apps-win32lobapp.md)。|
+|[删除 win32LobApp](../api/intune-apps-win32lobapp-delete.md)|None|删除 [win32LobApp](../resources/intune-apps-win32lobapp.md)。|
 |[更新 win32LobApp](../api/intune-apps-win32lobapp-update.md)|[win32LobApp](../resources/intune-apps-win32lobapp.md)|更新 [win32LobApp 对象](../resources/intune-apps-win32lobapp.md) 的属性。|
 
 ## <a name="properties"></a>属性
@@ -45,7 +45,7 @@ ms.locfileid: "54126534"
 |isFeatured|Boolean|指示应用是否被管理员标记为特色的值。继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |privacyInformationUrl|String|隐私声明 URL。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |informationUrl|String|详细信息 URL。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|所有者|String|应用的所有者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|owner|String|应用的所有者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |developer|String|应用的开发者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |notes|String|应用的备注。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|

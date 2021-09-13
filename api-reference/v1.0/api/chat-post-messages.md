@@ -1,16 +1,16 @@
 ---
 title: 在聊天中发送消息
 description: 在聊天中发送新消息。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 905f064c6133e04076f9506839d37e5048204d7c
-ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
+ms.openlocfilehash: bf0ec71500109f768c5e83171d9c468140980ce2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51612002"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022945"
 ---
 # <a name="send-message-in-a-chat"></a>在聊天中发送消息
 
@@ -20,7 +20,7 @@ ms.locfileid: "51612002"
 
 > **注意**：不建议使用此 API 进行数据迁移。 它不具有典型迁移所需的吞吐量。
 
-> **注意**：使用 Microsoft Teams [](/legal/microsoft-apis/terms-of-use)作为 microsoft Teams 日志文件。 仅发送用户将阅读的邮件。
+> **注意**：使用 Microsoft Teams 违反使用条款 [](/legal/microsoft-apis/terms-of-use)日志文件。 仅发送用户将阅读的邮件。
 
 ## <a name="permissions"></a>权限
 

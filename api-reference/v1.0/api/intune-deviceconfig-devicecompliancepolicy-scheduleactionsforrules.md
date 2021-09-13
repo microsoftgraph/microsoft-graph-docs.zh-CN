@@ -2,15 +2,15 @@
 title: scheduleActionsForRules 操作
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bd872964fed07d29646fd6ff31f3050eb1111ae8c3187100e140bfad9abfc1ae
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 409365b238ea26ed5b8c3bb29ebb5f697693bf3f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54224045"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59073531"
 ---
 # <a name="scheduleactionsforrules-action"></a>scheduleActionsForRules 操作
 

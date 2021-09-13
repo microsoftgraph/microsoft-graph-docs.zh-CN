@@ -2,15 +2,15 @@
 title: complianceManagementPartner 资源类型
 description: 所有平台的合规性管理合作伙伴
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 40383df26775e880f45b5f79013c945fe091c87a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: fc3e4ebd5009a410942cbfe6324bed259bf964a7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801456"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017238"
 ---
 # <a name="compliancemanagementpartner-resource-type"></a>complianceManagementPartner 资源类型
 
@@ -28,7 +28,7 @@ ms.locfileid: "58801456"
 |[列出 complianceManagementPartners](../api/intune-onboarding-compliancemanagementpartner-list.md)|[complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) 集合|列出 [complianceManagementPartner 对象的属性和](../resources/intune-onboarding-compliancemanagementpartner.md) 关系。|
 |[获取 complianceManagementPartner](../api/intune-onboarding-compliancemanagementpartner-get.md)|[complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)|读取 [complianceManagementPartner 对象的属性和](../resources/intune-onboarding-compliancemanagementpartner.md) 关系。|
 |[创建 complianceManagementPartner](../api/intune-onboarding-compliancemanagementpartner-create.md)|[complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)|创建新的 [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) 对象。|
-|[删除 complianceManagementPartner](../api/intune-onboarding-compliancemanagementpartner-delete.md)|无|删除 [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)。|
+|[删除 complianceManagementPartner](../api/intune-onboarding-compliancemanagementpartner-delete.md)|None|删除 [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)。|
 |[更新 complianceManagementPartner](../api/intune-onboarding-compliancemanagementpartner-update.md)|[complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)|更新 [complianceManagementPartner 对象](../resources/intune-onboarding-compliancemanagementpartner.md) 的属性。|
 
 ## <a name="properties"></a>属性
@@ -38,9 +38,9 @@ ms.locfileid: "58801456"
 |lastHeartbeatDateTime|DateTimeOffset|管理员载入合规性管理合作伙伴后最后检测信号的时间戳|
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|此租户的合作伙伴状态。 可取值为：`unknown`、`unavailable`、`enabled`、`terminated`、`rejected`、`unresponsive`。|
 |displayName|String|合作伙伴显示名称|
-|macOsOnboarded|Boolean|为 Mac 设备载入的合作伙伴。|
-|windowsOnboarded|Boolean|合作伙伴已载入Windows设备。|
-|androidOnboarded|Boolean|针对 Android 设备加入的合作伙伴。|
+|macOsOnboarded|布尔值|为 Mac 设备载入的合作伙伴。|
+|windowsOnboarded|布尔值|合作伙伴已载入Windows设备。|
+|androidOnboarded|布尔值|针对 Android 设备加入的合作伙伴。|
 |iosOnboarded|布尔值|为 ios 设备载入的合作伙伴。|
 |macOsEnrollmentAssignments|[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md) 集合|通过合作伙伴注册 Mac 设备的用户组。|
 |windowsEnrollmentAssignments|[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md) 集合|通过合作伙伴注册Windows的用户组。|

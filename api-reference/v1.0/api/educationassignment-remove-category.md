@@ -1,16 +1,16 @@
 ---
 title: 删除 educationCategory
 description: 从此 educationAssignment 中删除现有 educationCategory
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 70bde8c8549486347542ff90f9088f1c78bde14a
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: e827551fc2d1ca2d388dd42e67e632bbdaa60795
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52992469"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020089"
 ---
 # <a name="remove-educationcategory"></a>删除 educationCategory
 

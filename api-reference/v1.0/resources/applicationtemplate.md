@@ -1,16 +1,16 @@
 ---
 title: applicationTemplate 资源类型
 description: 表示 Azure AD 应用程序库中的应用程序
-localization_priority: Normal
+ms.localizationpriority: medium
 author: luleonpla
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: f9ec36c667bdf4e253b0b8bcc555e77bf7659e554a115f1f7ec39b7b22f3f8f6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9080a41c1ec4e503e064e406ee4e884654618100
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54155195"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59078978"
 ---
 # <a name="applicationtemplate-resource-type"></a>applicationTemplate 资源类型
 
@@ -37,7 +37,7 @@ ms.locfileid: "54155195"
 | id                         | String            | 应用程序的唯一标识符。 只读。                                                                                                                                                                                                                                                                                                                                                                                               |
 | logoUrl                    | String            | 获取此应用程序徽标的 URL。                                                                                                                                                                                                                                                                                                                                                                                                   |
 | 发布者                  | String            | 此应用程序的发布者的名称。                                                                                                                                                                                                                                                                                                                                                                                                 |
-| supportedProvisioningTypes | String collection | 此应用程序支持的预配模式列表。 唯一有效的值为 `sync` 。                                                                                                                                                                                                                                                                                                                                                   |
+| supportedProvisioningTypes | 字符串集合 | 此应用程序支持的预配模式列表。 唯一有效的值为 `sync` 。                                                                                                                                                                                                                                                                                                                                                   |
 | supportedSingleSignOnModes | String collection | 此应用程序支持的单一登录模式列表。 支持的值是：`oidc`、`password`、`saml` 和 `notSupported`。                                                                                                                                                                                                                                                                                                            |
 
 ## <a name="relationships"></a>关系

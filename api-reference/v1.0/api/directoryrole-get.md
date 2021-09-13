@@ -2,15 +2,15 @@
 title: 获取 directoryRole
 description: 检索 directoryRole 对象的属性。
 author: abhijeetsinha
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: e3a64d75b1501f5c88154d483cc10342b6b5c551
-ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
+ms.openlocfilehash: b15d0e9f18549e209e3bfcd62993a8a6eef1efa1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53118684"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046300"
 ---
 # <a name="get-directoryrole"></a>获取 directoryRole
 

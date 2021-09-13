@@ -2,15 +2,15 @@
 title: 列出 educationSchool 的班级
 description: 检索学校所拥有的课程列表。
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: cbd644e5994f8039a29c16f0463445d92500a865
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: ed08fe72a70afdf9066073439ac90c6b3fe739d6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52232030"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59050549"
 ---
 # <a name="list-classes-of-an-educationschool"></a>列出 educationSchool 的班级
 

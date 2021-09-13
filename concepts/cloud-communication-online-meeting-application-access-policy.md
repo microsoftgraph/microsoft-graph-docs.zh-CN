@@ -2,18 +2,18 @@
 title: 允许应用程序代表用户访问联机会议
 description: 了解如何配置应用程序以代表用户访问联机会议。
 author: mkhribech
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
-ms.openlocfilehash: 6856e35fa9bad4f220b10e5a8c945f91ae4a2ff6a43c65ed5fe7af34ce69ded5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 15e1fca9df26eb6302ecab9bb1fc8d43a666abe5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235175"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127925"
 ---
 # <a name="allow-applications-to-access-online-meetings-on-behalf-of-a-user"></a>允许应用程序代表用户访问联机会议
 
-在某些情况下，例如对于在服务器上运行的后台服务或守护程序应用，在没有登录用户的情况下运行，应用可以调用 Microsoft Graph 代表用户采取措施。 例如，应用可能需要致电 Microsoft Graph，根据发布的计划（如课程 (或外部计划) 安排多个会议。 在这些情况下，应用程序代表的用户将被标识为会议组织者。
+在某些情况下，例如对于在服务器上运行的后台服务或守护程序应用，在没有登录用户的情况下运行，应用可以调用 Microsoft Graph 代表用户采取措施。 例如，应用可能需要致电 Microsoft Graph，根据已发布的计划安排多个会议 (如课程) 或外部计划工具。 在这些情况下，应用程序代表的用户将被标识为会议组织者。
 
 希望允许应用程序代表用户访问联机会议资源的管理员可以使用 **New-CsApplicationAccessPolicy** 和 **Grant-CsApplicationAccessPolicy** PowerShell cmdlet 配置访问控制。 本文介绍了配置应用程序访问策略的基本步骤。
 

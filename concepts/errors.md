@@ -1,13 +1,13 @@
 ---
 title: Microsoft Graph 错误响应和资源类型
 description: 本主题介绍了 Microsoft Graph 响应中可能返回的一些错误。
-localization_priority: Priority
-ms.openlocfilehash: 1f29f178161f322ac9e5d1096d54e12d9bebb833b1934499e192782d974ad089
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.localizationpriority: high
+ms.openlocfilehash: c5b1dcc6a6540580483b4bf668c5c7ae9f28676c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54177763"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136115"
 ---
 # <a name="microsoft-graph-error-responses-and-resource-types"></a>Microsoft Graph 错误响应和资源类型
 

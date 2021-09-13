@@ -2,15 +2,15 @@
 title: deviceComplianceSettingState 资源类型
 description: 给定设备的设备符合性设置状态。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f96e775dd250f79e5b3970409944311347174999bc5c22cbbfdc6bfb2f91c30d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 495f9feac7db88851006f2d3a2392fd85a4cadb6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54159958"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072279"
 ---
 # <a name="devicecompliancesettingstate-resource-type"></a>deviceComplianceSettingState 资源类型
 

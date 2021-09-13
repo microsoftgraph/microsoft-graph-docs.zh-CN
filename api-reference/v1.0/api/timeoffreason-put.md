@@ -2,15 +2,15 @@
 title: 替换 timeOffReason
 description: 替换现有的 timeOffReason。
 author: akumar39
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ee87ff78baa7ae9b1fd5cf4428b99a167c960fc5
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b66a258a55304cbbc41f5f402f9094ff16c4ccbc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050232"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049933"
 ---
 # <a name="replace-timeoffreason"></a>替换 timeOffReason
 

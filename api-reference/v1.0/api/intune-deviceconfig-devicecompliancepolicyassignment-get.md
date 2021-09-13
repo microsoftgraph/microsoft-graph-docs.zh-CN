@@ -2,15 +2,15 @@
 title: 获取 deviceCompliancePolicyAssignment
 description: 读取 deviceCompliancePolicyAssignment 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8241894280a142ea7695bfcc3b8d55e7bfa947031e5737bf949de24623b6ceb0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1d698235d39178081484ec3af76c524f48fb44ca
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54167504"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59073497"
 ---
 # <a name="get-devicecompliancepolicyassignment"></a>获取 deviceCompliancePolicyAssignment
 

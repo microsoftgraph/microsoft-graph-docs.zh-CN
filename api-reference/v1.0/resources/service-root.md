@@ -1,16 +1,16 @@
 ---
 title: 服务根
 description: 2015-10-25 14：57：30 UTC -->
-localization_priority: Normal
+ms.localizationpriority: medium
 author: MSGraphDocsVteam
 ms.prod: ''
 doc_type: conceptualPageType
-ms.openlocfilehash: cd2faa63f1959f80d85025ebe211cd9965831ce30027f1926bb9387ae4df23d3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 69361e9da65b17e7ef63e9d266b28606db132ef6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54149651"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019151"
 ---
 # <a name="service-root"></a>服务根
 

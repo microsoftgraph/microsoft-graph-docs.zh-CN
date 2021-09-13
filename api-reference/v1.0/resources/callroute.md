@@ -2,15 +2,15 @@
 title: callRoute 资源类型
 description: 表示呼叫路由类型。
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 82d69edb17d1a68ab3fc0f22402bd26c94c02dd3f922f0eb091cce95ce0b921f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: be40f95a79802358bfa24fe57e94df895f3c4d2b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54141817"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067505"
 ---
 # <a name="callroute-resource-type"></a>callRoute 资源类型
 

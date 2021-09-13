@@ -1,16 +1,16 @@
 ---
 title: servicePrincipal：checkMemberObjects
 description: 检查指定服务原则对象的组、目录角色或管理单元列表中的成员身份。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: a64009da0085bb09f181ac6adaa52dd9b592f779
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 5bf81d9b41a6c342400eae4e3e76076966acf258
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053844"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59053259"
 ---
 # <a name="serviceprincipal-checkmemberobjects"></a>servicePrincipal：checkMemberObjects
 

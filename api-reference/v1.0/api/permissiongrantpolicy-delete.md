@@ -1,16 +1,16 @@
 ---
 title: 删除 permissionGrantPolicy
 description: 删除 permissionGrantPolicy 对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 3eef514fd9d10f734f8991776813815013a5b5b4
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: edc20cd628588214a1436a5e66731a4b161d4388
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787553"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072776"
 ---
 # <a name="delete-permissiongrantpolicy"></a>删除 permissionGrantPolicy
 

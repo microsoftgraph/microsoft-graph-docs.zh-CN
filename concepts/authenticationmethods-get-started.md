@@ -2,14 +2,14 @@
 title: Microsoft Graph 身份验证方法 API 入门
 description: Microsoft Graph 中的身份验证方法 API 使组织能够以编程方式管理其用户身份验证方法，从而使已注册用户能够执行多重身份验证 (MFA) 和自助服务密码重置 (SSPR)。
 author: mmcla
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 8750f56db54c1dd5c2ef8708ccd1f3b873c9ea0328517743b881f7502f299f89
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bfd0167e0237a35dc6fd19a43e917d7c8899cf0d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54251657"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59122913"
 ---
 # <a name="get-started-with-the-microsoft-graph-authentication-methods-api"></a>Microsoft Graph 身份验证方法 API 入门
 

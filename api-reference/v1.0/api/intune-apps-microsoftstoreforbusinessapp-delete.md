@@ -2,15 +2,15 @@
 title: 删除 microsoftStoreForBusinessApp
 description: 删除 microsoftStoreForBusinessApp。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1d3207918f08037c9e6524b2d4e0e28200759c6265fadbba03a1e29e3f84ae9d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3c4f4de6d2ff08fcca721d285ed59782d021d957
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54247373"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016531"
 ---
 # <a name="delete-microsoftstoreforbusinessapp"></a>删除 microsoftStoreForBusinessApp
 

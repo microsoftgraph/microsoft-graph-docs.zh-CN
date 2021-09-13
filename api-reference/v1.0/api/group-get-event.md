@@ -2,15 +2,15 @@
 title: 获取事件
 description: 获取 event 对象。
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: b5b2dbd9b952f1a78eea04dbfa9a82be0b4bce53
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 328f106793525ec18c2204062ffd67a78f5e0570
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681009"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59037864"
 ---
 # <a name="get-event"></a>获取事件
 

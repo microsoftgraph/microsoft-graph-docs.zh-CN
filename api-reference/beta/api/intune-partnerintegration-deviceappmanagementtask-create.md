@@ -2,15 +2,15 @@
 title: 创建 deviceAppManagementTask
 description: 创建新的 deviceAppManagementTask 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cf98ca829ed6a870ca4ec561e5e42264102e6371
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0950634d93d9803cf8eb4d90affaf1fc101d3b5e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783321"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017869"
 ---
 # <a name="create-deviceappmanagementtask"></a>创建 deviceAppManagementTask
 
@@ -43,7 +43,7 @@ POST /deviceAppManagement/deviceAppManagementTasks
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,17 +53,17 @@ POST /deviceAppManagement/deviceAppManagementTasks
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体键。|
-|displayName|字符串|名称。|
-|description|String|说明。|
+|id|String|实体键。|
+|displayName|String|名称。|
+|说明|String|说明。|
 |createdDateTime|DateTimeOffset|创建日期。|
 |dueDateTime|DateTimeOffset|截止日期。|
 |“类别”|[deviceAppManagementTaskCategory](../resources/intune-partnerintegration-deviceappmanagementtaskcategory.md)|类别。 可取值为：`unknown`、`advancedThreatProtection`。|
 |priority|[deviceAppManagementTaskPriority](../resources/intune-partnerintegration-deviceappmanagementtaskpriority.md)|优先级。 可取值为：`none`、`high`、`low`。|
 |Creator|String|创建者的电子邮件地址。|
-|creatorNotes|字符串|创建者的备注。|
+|creatorNotes|String|创建者的备注。|
 |assignedTo|String|分配此任务的管理员的姓名或电子邮件。|
-|状态|[deviceAppManagementTaskStatus](../resources/intune-partnerintegration-deviceappmanagementtaskstatus.md)|状态。 可取值为：`unknown`、`pending`、`active`、`completed`、`rejected`。|
+|status|[deviceAppManagementTaskStatus](../resources/intune-partnerintegration-deviceappmanagementtaskstatus.md)|状态。 可取值为：`unknown`、`pending`、`active`、`completed`、`rejected`。|
 
 
 

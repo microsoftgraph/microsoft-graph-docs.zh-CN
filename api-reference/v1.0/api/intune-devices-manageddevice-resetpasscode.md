@@ -2,15 +2,15 @@
 title: resetPasscode 操作
 description: 重置密码
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6152c5c7d99c0eea87b39471082205f8e72f0cf350a2c1447e2a2cee69d9f4ed
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 92ce8167272402ccb54eddc8f746ae86fe735018
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54225907"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59026495"
 ---
 # <a name="resetpasscode-action"></a>resetPasscode 操作
 

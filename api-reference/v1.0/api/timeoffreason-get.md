@@ -2,15 +2,15 @@
 title: 获取 timeOffReason
 description: 按 ID 获取 timeOffReason。
 author: akumar39
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e7b61a5f20e53c3822cac6b482798eb58d594d74
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 92dff31b21e54147f87f3b100ed1410a4615c9a0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049406"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049940"
 ---
 # <a name="get-timeoffreason"></a>获取 timeOffReason
 

@@ -1,16 +1,16 @@
 ---
 title: 列出存储桶
 description: 检索 **plannerbucket** 对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 155fb4b331f7f78388c3811021bb675de11f3b14
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: f6f6564f4fcbde6e7d6dc026a8fc269a51d1ce7b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049469"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59007822"
 ---
 # <a name="list-buckets"></a>列出存储桶
 
@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/v1.0/planner/buckets
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

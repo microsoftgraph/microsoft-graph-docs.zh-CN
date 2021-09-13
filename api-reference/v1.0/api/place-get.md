@@ -1,16 +1,16 @@
 ---
 title: 获取位置
 description: 检索 place 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: eb36b9b79f6058644da8529ba353a613e97726b7
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 422fa035f320378c8369d09571bf1836d5dc3e0a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053998"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59007871"
 ---
 # <a name="get-place"></a>获取位置
 
@@ -20,7 +20,7 @@ ms.locfileid: "52053998"
 
 **place** 对象可以是下列类型之一：
 
-* [包含](../resources/room.md)丰富属性（如会议室的电子邮件地址）以及辅助功能、容量和设备支持的聊天室。
+* [包含](../resources/room.md)丰富属性（例如会议室的电子邮件地址）以及辅助功能、容量和设备支持的聊天室。
 * [包含会议室](../resources/roomlist.md)列表的电子邮件地址的会议室列表，以及用于获取该会议室列表中的会议室实例集合的导航属性。 
 
 **room 和** **roomList** 均派生自 [place](../resources/place.md)对象。
@@ -67,7 +67,7 @@ GET /places/{id}
 ### <a name="example-1-get-a-room"></a>示例 1：获取聊天室
 #### <a name="request"></a>请求
 
-以下示例指定要 **获取** 其 **属性的聊天室** 的 ID。
+以下示例指定要获取其 **属性的聊天室** 的 **ID。**
 
 
 # <a name="http"></a>[HTTP](#tab/http)

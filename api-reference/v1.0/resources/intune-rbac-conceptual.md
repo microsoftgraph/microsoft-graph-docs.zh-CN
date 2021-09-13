@@ -1,16 +1,16 @@
 ---
 title: Microsoft Intune 中的基于角色的访问控制
 description: 'Intune 的基于角色的访问控制决定哪些人可以对 Intune 对象执行操作并可更改托管应用程序、用户和设备。   '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dougeby
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: e127ee4653f10b680cb785eaceec814d9f75eb031f9e63bb6b33c2614fe8bc9f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0d4b871bf827f4a9c723f8c57ddcaf9740864910
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54205267"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59044473"
 ---
 # <a name="role-based-access-control-in-microsoft-intune"></a>Microsoft Intune 中的基于角色的访问控制
 

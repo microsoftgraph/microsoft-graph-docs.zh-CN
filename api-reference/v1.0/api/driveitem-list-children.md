@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: 列出文件夹的内容
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: sharepoint
 description: 在 DriveItem 的子项关系中返回 DriveItems 集合。
 doc_type: apiPageType
-ms.openlocfilehash: 8938cccdb0a8b2f1de76327d968aaceba1aedee0
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: d9acc9d0fd087c39aac5a71336c9ee2ccf2b4d21
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240281"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063452"
 ---
 # <a name="list-children-of-a-driveitem"></a>列出 DriveItem 的子项
 
@@ -127,8 +127,7 @@ GET /drives/{drive-id}/root:/{path-relative-to-root}:/children
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将返回目标项的子项集合列表。
-子项集合由 [driveItem][item-resource] 资源组成。
+如果成功，此方法将返回目标项的子项集合列表。 子项集合由 [driveItem][item-resource] 资源组成。
 
 <!-- { "blockType": "response", 
        "@odata.type": "Collection(microsoft.graph.driveItem)", 

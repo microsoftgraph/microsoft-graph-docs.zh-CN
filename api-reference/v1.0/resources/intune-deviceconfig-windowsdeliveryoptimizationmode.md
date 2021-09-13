@@ -2,15 +2,15 @@
 title: windowsDeliveryOptimizationMode 枚举类型
 description: 对等分发的传递优化模式
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 59feb6b35d85faa10b816f7d27310b32441ed7298b2202364ce8502d754287ca
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c720a9208f948e8a594b42df00119e5f3e45ded0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54223478"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59055959"
 ---
 # <a name="windowsdeliveryoptimizationmode-enum-type"></a>windowsDeliveryOptimizationMode 枚举类型
 

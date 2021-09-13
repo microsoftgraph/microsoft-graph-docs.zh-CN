@@ -2,14 +2,14 @@
 title: 在 OneNote 页中创建绝对定位的元素
 description: OneNote 页正文可以包含多个能在页面上独立定位的直接 `div`、`img` 和 `object` 子元素。
 author: jewan-microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: onenote
-ms.openlocfilehash: c8d85dda42c96f0afe4d218ab80e1d705ff5005679b9a5b3a086a74b59991b62
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 391ac7a7ed49f6b4eff22824ba649ae37eddd9c3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249082"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019074"
 ---
 # <a name="create-absolute-positioned-elements-in-onenote-pages"></a>在 OneNote 页中创建绝对定位元素
 

@@ -2,15 +2,15 @@
 title: 获取 educationSchool
 description: 读取 educationSchool 对象的属性和关系。
 author: mlafleur
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 3ec682a7674bc24eca3d168e3f92b3d3c05f3bda
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: 016333f6d5ee367377ff8cd9332969142c165843
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52474900"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59050577"
 ---
 # <a name="get-educationschool"></a>获取 educationSchool
 
@@ -18,7 +18,7 @@ ms.locfileid: "52474900"
 
 读取 [educationSchool 对象的属性和](../resources/educationschool.md) 关系。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

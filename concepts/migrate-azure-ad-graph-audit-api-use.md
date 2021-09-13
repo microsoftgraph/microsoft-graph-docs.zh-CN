@@ -1,17 +1,17 @@
 ---
-title: 检查 Azure AD Graph API 应用使用情况
-description: 介绍如何审核 Azure AD Azure Active Directory (API) 将应用迁移到 Microsoft Graph API。
+title: 检查Azure Active Directory (Azure AD) Graph API 应用使用情况
+description: 介绍如何审核 Azure AD Azure Active Directory (API) Graph将应用迁移到 Microsoft Graph API。
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: fbd75626e03cbd4c433a7fa955aa0bc476ed76e6375261bb3bad9d32409302c7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8386c3c77a5f42115236875d8405f97c5f49ff42
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54216390"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139168"
 ---
-# <a name="examine-azure-ad-graph-apis-app-usage"></a>检查 Azure AD Graph API 应用使用情况
+# <a name="examine-azure-active-directory-azure-ad-graph-apis-app-usage"></a>检查Azure Active Directory (Azure AD) Graph API 应用使用情况
 
 这是迁移应用 [过程的第](migrate-azure-ad-graph-planning-checklist.md)2 步。
 
@@ -33,6 +33,6 @@ Microsoft Graph支持 Azure AD 图形的许多相同特性和功能。  有一�
 
 ## <a name="next-steps"></a>后续步骤
 
-- 了解 Azure AD[应用程序与](migrate-azure-ad-graph-app-registration.md)Microsoft Graph 之间的应用注册、权限和Graph。
+- 了解 Azure AD[应用程序与](migrate-azure-ad-graph-app-registration.md)Microsoft Graph 之间的应用注册、权限Graph。
 - 再次查看 [检查](migrate-azure-ad-graph-planning-checklist.md) 表。
 

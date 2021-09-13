@@ -2,15 +2,15 @@
 title: 创建用户
 description: 新建用户对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2fdc59974394ef3cae8372d138daae5e3c020edd
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 2fa491be139bcbce2f1a6c7f4b7a186e957a2f33
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58264330"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056282"
 ---
 # <a name="create-user"></a>创建用户
 

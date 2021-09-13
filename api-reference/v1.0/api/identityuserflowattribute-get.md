@@ -1,16 +1,16 @@
 ---
 title: 获取 identityUserFlowAttribute
 description: 检索 identityUserFlowAttribute 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 3fca21be59ce2f54bf23633075ff2823c959f921
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 86a2d0e1b22115673304c8815e84732fe1b3f507
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51920911"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045719"
 ---
 # <a name="get-identityuserflowattribute"></a>获取 identityUserFlowAttribute
 
@@ -31,7 +31,7 @@ ms.locfileid: "51920911"
 工作或学校帐户需要属于以下角色之一：
 
 * 全局管理员
-* 外部标识用户流属性管理员
+* 外部标识用户Flow属性管理员
 
 ## <a name="http-request"></a>HTTP 请求
 

@@ -2,15 +2,15 @@
 title: 更新 macOSGeneralDeviceConfiguration
 description: 更新 macOSGeneralDeviceConfiguration 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5504a9701310c52d4ab24ba4054440f25697f3d0544b49be94762d80c7bbf925
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fa26283f31475dfc1e57d592f8d4bb71dee97e54
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54192906"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59073294"
 ---
 # <a name="update-macosgeneraldeviceconfiguration"></a>更新 macOSGeneralDeviceConfiguration
 

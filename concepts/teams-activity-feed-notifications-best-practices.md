@@ -2,14 +2,14 @@
 title: 使用活动源Microsoft Teams的最佳实践
 description: 本文提供了在 Microsoft Graph 中处理活动源通知的最佳实践和Graph。
 author: KirtiPereira
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: teamwork
-ms.openlocfilehash: e36c5df9314c09fb78b0a76a014c874156d91b404978a60201f44aaddc1c40f9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1be6c8e007de42dc014b6b457beae895bb59245b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54177708"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59138944"
 ---
 # <a name="best-practices-for-using-microsoft-teams-activity-feed-notifications"></a>使用活动源Microsoft Teams的最佳实践
 
@@ -18,7 +18,7 @@ ms.locfileid: "54177708"
 * 请求通知响应
 * 创建有关外部事件的通知
 
-下图显示了活动源通知中Teams：
+下图显示了活动源通知在活动源Teams：
 
 ![显示活动Teams视图的桌面应用屏幕截图。](./images/activity-feed-notification.png)
 
@@ -35,7 +35,7 @@ Microsoft Teams以活动源和 Toast 格式显示通知。 用户通过聊天、
 * 本地化通知 toast 或源中的内容。 本地化仅在应用内容本地化 [时发生](/microsoftteams/platform/concepts/build-and-test/apps-localization)。
 * 为活动类型提供适当的标题 **和说明**。 使用短标题，如 **@mention****和通知**。 避免使用长标题，例如"提到 **的用户"活动和** " **创建后"活动**。
 * 通知应传达与用户相关的重要信息。 例如 *，在 一个销售票证分配给你* 时，是一条相关消息; *Joni 未离开* 销售团队。
-* 避免发送本质上是促销性的通知，例如尝试循环 *应用中的新功能*。
+* 避免发送本质上是促销性的通知，例如尝试循环应用中 *的新功能*。
 * 避免来自自动程序消息和活动源通知的重复通知。 有关详细信息，请参阅活动 [源通知或自动程序框架消息](#activity-feed-notifications-or-bot-framework-messages)。
 * 使用 **通知中的** 文本预览部分。 提供可帮助用户确定通知重要性的信息，并在必要时采取措施。
 * 请勿在通知标题末尾添加一个时间段，以与通知标题中的所有其他通知设置Teams。
@@ -54,19 +54,19 @@ Microsoft Teams以活动源和 Toast 格式显示通知。 用户通过聊天、
 ### <a name="activity-feed-notifications"></a>活动源通知
 
 活动源通知显示在活动Teams中，并可以包含指向不同位置的链接。 这些通知： 
-* 允许用户采取措施或对通知进行会审。
+* 允许用户对通知采取措施或会审。
 * 将用户引导到聊天或频道、个人应用、聊天或频道消息中的选项卡。 
 
 活动源通知 API 允许用户根据通知设置为每个 **通知类型** 配置通知。
 
 如果使用活动源通知，请注意，如果应用向聊天或频道以及活动源发送自动程序通知，则应用可能会发送双重通知。 仅在方案需要时发送双重通知。 
 
-使用委派通知创建更好的通知体验。 活动源通知 API 可以发送委托调用或仅应用程序调用。 在委派呼叫中，通知的发件人显示为启动通知的用户，在仅应用程序呼叫中，发件人显示为应用程序。 
+使用委派通知创建更好的通知体验。 活动源通知 API 可以发送委托调用或仅应用程序调用。 在委派呼叫中，通知发件人显示为启动通知的用户，在仅应用程序呼叫中，发件人显示为应用程序。 
 
 可以更新现有活动源通知，而不是使用 *chainId* 参数创建新的通知。
 
 ### <a name="bot-framework-messages"></a>自动程序框架消息
 
-自动程序消息作为聊天或频道消息传递。 如果用户打开聊天或频道通知，则触发的通知将作为聊天或频道消息发送。 若要发送自动@mention，请指定通知显示在活动源中的用户名称。
+自动程序消息作为聊天或频道消息传递。 如果用户打开聊天或频道通知，则触发的通知将作为聊天或频道消息发送。 若要发送自动@mention，请指定要显示在活动源中的通知的用户名称。
 
 将警报用作聊天或频道消息非常有用;例如，所有频道成员使用的消息。

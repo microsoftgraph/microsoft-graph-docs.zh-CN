@@ -2,15 +2,15 @@
 title: 获取 deviceConfigurationDeviceStateSummary
 description: 读取 deviceConfigurationDeviceStateSummary 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5cf9587904fea02197ef406b26f6d306982392aabebc281d4d70408f16f697ab
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 035b9624800662c9cd91eb8e7a6669d3ba16c532
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54160406"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59037710"
 ---
 # <a name="get-deviceconfigurationdevicestatesummary"></a>获取 deviceConfigurationDeviceStateSummary
 

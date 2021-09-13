@@ -1,19 +1,19 @@
 ---
 title: 在 Microsoft Graph 中处理服务通信 API
-description: 可以使用 Microsoft 服务通信 API 访问Graph运行状况和消息中心帖子Microsoft 服务"。
+description: 可以使用 Microsoft Graph 中的服务通信 API 来访问有关 Microsoft 服务 的运行状况和消息Microsoft 服务。"
 author: payiAzure
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 1da1ca0acf4312cf7e4d33b9c64f95875280eba2
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 4fd39d5e488ba8abb459657a21e00fcd60940657
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266735"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019158"
 ---
 # <a name="working-with-service-communications-api-in-microsoft-graph"></a>在 Microsoft Graph 中处理服务通信 API
-服务通信 API 提供与租户订阅的 Microsoft 云服务相关的服务运行状况和消息中心帖子。 你可以获取 Microsoft 服务实例的当前和历史 (，例如，Exchange Online服务) 。 在致电支持人员或花时间进行故障排除之前，你可以检查服务运行状况以确定问题是否被跟踪且正在解决。 通过消息中心帖子，你可以跟踪即将进行的更改，包括新功能、更新和 (例如，Exchange Online获取新功能) 。
+服务通信 API 提供与租户订阅的 Microsoft 云服务相关的服务运行状况和消息中心帖子。 你可以获取 Microsoft 服务实例的当前和历史 (，例如，Exchange Online服务关闭) 。 在致电支持人员或花时间进行故障排除之前，你可以检查服务运行状况以确定问题是否被跟踪且正在解决。 通过消息中心帖子，你可以跟踪即将进行的更改，包括新功能、更新和 (例如，Exchange Online获取新功能) 。
 
 ## <a name="authorization"></a>Authorization
 Microsoft Graph允许应用程序获得对运行状况的授权访问权限，并更改有关租户订阅的 Microsoft 云服务的通信。 借助相应的委派权限或应用程序权限[](/graph/permissions-reference#service-communications-permissions)，应用可以代表登录用户或者没有租户中任何登录用户的情况下访问通信数据。 这些权限的委派和应用程序类型都仅由管理员授予。
@@ -43,7 +43,7 @@ Microsoft Graph允许应用程序获得对运行状况的授权访问权限，�
 | 更新已登录用户的服务消息状态 | 有关状态操作的列表，请参阅 [serviceUpdateMessage](/graph/api/resources/serviceupdatemessage?view=graph-rest-1.0&preserve-view=true)。| _ServiceMessageViewpoint.Write_ | Delegated |
 
 ## <a name="api-on-microsoft-graph-national-clouds"></a>Microsoft 云Graph API
-服务通信 API 还可用于 Microsoft Graph云。 你可以获取你的国家云租户的服务运行状况和通信数据。 有关 Microsoft 云[Graph云。](/graph/deployments)
+服务通信 API 可用于 Microsoft Graph国家云。 你可以获取你的国家云租户的服务运行状况和通信数据。 有关 Microsoft 云[Graph云。](/graph/deployments)
 
 |国家云|API url (部分) |
 |:--------------|:-----------------|

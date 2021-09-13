@@ -2,15 +2,15 @@
 title: 创建 telecomExpenseManagementPartner
 description: 创建新的 telecomExpenseManagementPartner 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 97607e564d59e166639e4f19eda9b74ca9c1e4f554c7faeff6a9cfcc7fd67d1a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a74ec9639c5b933083f79b2d11f548b5ed211a1b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54250453"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59073000"
 ---
 # <a name="create-telecomexpensemanagementpartner"></a>创建 telecomExpenseManagementPartner
 

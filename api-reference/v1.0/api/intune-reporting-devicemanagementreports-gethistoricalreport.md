@@ -2,15 +2,15 @@
 title: getHistoricalReport 操作
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 15ce374eeabc3acb02c8e0c5f14090c49efc4e4a9ac7e16e9a9382bd8d49d9e5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 26a84ff3ed44fe0836bafae93bc7222848de2c81
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249417"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063018"
 ---
 # <a name="gethistoricalreport-action"></a>getHistoricalReport 操作
 

@@ -2,16 +2,16 @@
 author: ananmishr
 ms.date: 09/10/2017
 title: 音频
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 description: Audio 资源将与音频相关的属性分组到一个单一结构。
 doc_type: resourcePageType
-ms.openlocfilehash: 1adb21bf00a3de74ac8976fa00d362a486aeb805cdfa4e43f46cfea43274150c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4bdf565bbb0ec3aba9b7a6571fc13844cb77d439
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54229379"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067533"
 ---
 # <a name="audio-facet"></a>Audio Facet
 

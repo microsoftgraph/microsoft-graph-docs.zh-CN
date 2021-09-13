@@ -2,15 +2,15 @@
 title: 获取 userAttributeAssignments
 description: 读取 identityUserFlowAttributeAssignment 对象的属性和关系。
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: af33a5b9694ed515b7b9f9fcb77b8927b34f65b1
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 0b035b2d4a475d714f8a91f11d3a1f1fbc341068
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51920712"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045656"
 ---
 # <a name="get-identityuserflowattributeassignment"></a>获取 identityUserFlowAttributeAssignment
 

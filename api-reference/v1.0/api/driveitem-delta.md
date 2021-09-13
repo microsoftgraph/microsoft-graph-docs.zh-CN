@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: 同步驱动器的内容
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: sharepoint
 description: 此方法使应用程序随着时间的推移跟踪驱动器及其子级的更改。
 doc_type: apiPageType
-ms.openlocfilehash: bcf638e5217768012a7e361ebed3cd760ac079c0
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: 93a88baa4db9ea48ebed18a0b8ad2cfb184448af
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52911310"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59038011"
 ---
 # <a name="track-changes-for-a-drive"></a>跟踪驱动器更改
 
@@ -272,9 +272,8 @@ Content-type: application/json
     
     | 操作类型 | Delta 查询忽略的属性 |
     |---------|----------|
-    | 创建/修改 | `ctag`, `lastModifiedBy` |
-    | 删除 | `ctag`, `lastModifiedBy`, `name` |
-
+    | 创建/修改 | `ctag` |
+    | 删除 | `ctag`, `name` |
 
     **OneDrive（消费者）**
     

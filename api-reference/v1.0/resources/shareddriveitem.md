@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: SharedDriveItem
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 使用 Shares API 访问共享的 driveItem 时，返回 sharedDriveItem 资源。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: da14e18c21f122646c7b7b86f3bc9e5401a60d8882762c4e4e096beecfda2cd6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e425d8d243722ffa29b9ffcedfaae566508d8f57
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54251748"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59066994"
 ---
 # <a name="shareddriveitem-resource-type"></a>SharedDriveItem 资源类型
 
@@ -60,10 +60,10 @@ ms.locfileid: "54251748"
 | 关系名称 | 类型                | 说明
 | ------------------|:--------------------|:-----------------------------------
 | **driveItem**     | [**driveItem**][driveItem]   | 用于访问基础 **driveItem**
-| **list**          | [**list**][list]        | 用于访问基础 **list**
+| **list**          | [**列表**][list]        | 用于访问基础 **list**
 | **listItem**      | [**listItem**][listItem]    | 用于访问基础 **listItem**
 | **permission**    | [**permission**][permission] | 用于访问 **表示** 基础共享链接的权限
-| **site**          | [**site**][site]        | 用于访问基础 **site**
+| **网站**          | [**网站**][site]        | 用于访问基础 **site**
 
 另外，对于从个人 OneDrive 帐户共享的 **driveItems**，也可使用以下关系。
 

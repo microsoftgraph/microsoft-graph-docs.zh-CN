@@ -2,15 +2,15 @@
 title: certificateConnectorSetting 资源类型
 description: 证书连接器设置。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0c1c99e202c83dce63e78ba97fc8ad9e27653729
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e8df09583947c35eb62255d4f743c150daf73f59
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788918"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017245"
 ---
 # <a name="certificateconnectorsetting-resource-type"></a>certificateConnectorSetting 资源类型
 

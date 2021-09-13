@@ -2,15 +2,15 @@
 title: participant： invite
 description: 邀请参与者加入活动呼叫。
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 9d39f5c00cafff7697c48b75fbf4c75bbfbe8ca0
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 203e57415d87795846928631c5fe710d82143a06
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52664802"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072863"
 ---
 # <a name="participant-invite"></a>participant： invite
 
@@ -698,7 +698,7 @@ Content-Type: application/json
 }
 ```
 
->**注意：** 在"已完成"状态下，您可以收到有关原始对等呼叫如何终止和删除的通知。
+>**注意：** 在"已完成"状态下，可以预期收到有关原始对等呼叫如何终止和删除的通知。
 
 ### <a name="example-4-invite-one-pstn-participant-to-an-existing-group-call"></a>示例 4：邀请一个 PSTN 参与者加入现有组呼叫
 

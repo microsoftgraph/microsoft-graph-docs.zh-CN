@@ -1,16 +1,16 @@
 ---
 title: ListItemVersion 资源类型
 description: '**listItemVersion** 资源表示先前版本的 ListItem 资源。'
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 author: JeremyKelley
 doc_type: resourcePageType
-ms.openlocfilehash: 59f7672c0569c3965bf7b473ca1584f77fc4694bd0a06dfc46374d4f7c8826ed
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3b8881ed9e2fbf13176562f25397e5596a25257a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163717"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062465"
 ---
 # <a name="listitemversion-resource-type"></a>ListItemVersion 资源类型
 

@@ -2,14 +2,14 @@
 title: 使用 Microsoft Graph 安全性 API 实现安全解决方案集成
 description: 可使用本文中描述的任一选项与 Microsoft Graph 安全性 API 进行连接。 这些选项让你能够通过单个集成在受支持的 Microsoft 和合作伙伴安全提供商之间按统一的格式处理数据。
 author: preetikr
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: security
-ms.openlocfilehash: 7f54a86d254222c4b7f3f4269f57e420727cc5625e9085e8fcbab506dd943028
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d083cdcbf6bd1cfaa717b5b88682cdbd0ed57398
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54168988"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59093895"
 ---
 # <a name="security-solution-integrations-using-the-microsoft-graph-security-api"></a>使用 Microsoft Graph 安全性 API 实现安全解决方案集成
 

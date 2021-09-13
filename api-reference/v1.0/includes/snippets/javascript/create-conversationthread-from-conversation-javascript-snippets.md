@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 2802fb6dfa7bd4cdd15dcb524ccf5163d05d8cedab9fde9383201a4292c8ed3b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a1a8b3124f36068d570e35df8a4462765d323e8a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57332633"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59068265"
 ---
 ```javascript
 
@@ -16,13 +16,15 @@ const options = {
 const client = Client.init(options);
 
 const conversationThread = {
-  topic: 'topic-value',
-  posts: [{
-      body: {
-        contentType: 'html',
-        content: 'this is body content'
-      }
-  }]
+    topic: 'Take your wellness days and rest',
+    posts: [
+        {
+            body: {
+                contentType: 'html',
+                content: 'Waiting for the summer holidays.'
+            }
+        }
+    ]
 };
 
 await client.api('/groups/{id}/conversations/{id}/threads')

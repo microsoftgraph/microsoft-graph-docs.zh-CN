@@ -2,15 +2,15 @@
 title: windowsInformationProtectionEnforcementLevel 枚举类型
 description: WIP 保护强制级别的可能值
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 031f77aaadb6eb129c9cc52969a4f5779b232a426434de6cf9c2a84cdf74be4f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6da0d60d3f4900626e605d7f2213ed5a5a03b89a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54218553"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59052949"
 ---
 # <a name="windowsinformationprotectionenforcementlevel-enum-type"></a>windowsInformationProtectionEnforcementLevel 枚举类型
 

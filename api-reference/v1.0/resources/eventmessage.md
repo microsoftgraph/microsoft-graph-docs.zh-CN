@@ -1,16 +1,16 @@
 ---
 title: eventMessage 资源类型
 description: 表示会议请求、取消或响应（可以是下列任一行为：接受、暂定接受或拒绝）的邮件。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: d704072ac46899ec3158ddd290bbc56a628e3f8c9b8a4cb6d7105505f5cfd969
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9a216718df8bb6245fb0138865f996de05809632
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54212093"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067414"
 ---
 # <a name="eventmessage-resource-type"></a>eventMessage 资源类型
 
@@ -24,14 +24,14 @@ ms.locfileid: "54212093"
 
 若要获取被邀请者邮箱中关联事件的属性，应用可以使用 **eventMessage** 的事件导航属性，如此获取事件消息 [示例所示](../api/eventmessage-get.md#example-2)。 应用还可以代表被邀请者以编程方式响应事件，方法为接受、[暂时接受](../api/event-tentativelyaccept.md)[或](../api/event-decline.md)拒绝[](../api/event-accept.md)事件。
 
-除了会议请求之外，事件组织者取消会议后，可以在被邀请者邮箱中发现 eventMessage 实例，或在被邀请者响应会议请求后在组织者的邮箱中找到 **eventMessage** 实例。 应用可以对事件邮件执行操作，就像对邮件执行操作一样，但略有不同。
+除了会议请求之外，事件组织者取消会议后，可以在被邀请者邮箱中发现 eventMessage 实例，也可在组织者的邮箱中找到 **eventMessage** 实例，因为被邀请者响应会议请求。 应用可以对事件邮件执行操作，就像对邮件执行操作一样，但略有不同。
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
 |[获取 eventMessage](../api/eventmessage-get.md) | [eventMessage](eventmessage.md) |读取 eventmessage 对象的属性和关系。|
 |[更新](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)  |更新 eventMessage 对象。 |
-|[删除](../api/message-delete.md) | 无 |更新 eventMessage 对象。 |
+|[删除](../api/message-delete.md) | None |更新 eventMessage 对象。 |
 |[copy](../api/message-copy.md)|[message](message.md)|将邮件复制到文件夹。|
 |[createForward](../api/message-createforward.md)|[message](message.md)|创建转发邮件的草稿。然后，你可以 [更新](../api/message-update.md) 或 [发送](../api/message-send.md) 草稿。|
 |[createReply](../api/message-createreply.md)|[message](message.md)|创建回复邮件的草稿。然后，你可以 [更新](../api/message-update.md) 或 [发送](../api/message-send.md) 草稿。|
@@ -43,7 +43,7 @@ ms.locfileid: "54212093"
 |[发送](../api/message-send.md)|无|发送以前创建的邮件草稿。然后邮件保存在已发送邮件文件夹中。|
 |**附件**| | |
 |[列出附件](../api/eventmessage-list-attachments.md) |[attachment](attachment.md) 集合| 获取 eventMessage 的所有附件。|
-|[Add attachment](../api/eventmessage-post-attachments.md) |[attachment](attachment.md)| 通过发布到附件集合，向 eventMessage 添加新附件。|
+|[Add attachment](../api/eventmessage-post-attachments.md) |[附件](attachment.md)| 通过发布到附件集合，向 eventMessage 添加新附件。|
 |**开放扩展**| | |
 |[创建开放扩展](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| 创建开放扩展，并在新建或现有的资源实例中添加自定义属性。|
 |[获取开放扩展](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) 集合| 获取通过名称或完全限定的名称识别的一个或多个开放扩展对象。|
@@ -73,7 +73,7 @@ ms.locfileid: "54212093"
 |inferenceClassification|String| 可能的值是 `focused` `other` ：、。|
 |internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) 集合 | 由 [RFC5322](https://www.ietf.org/rfc/rfc5322.txt) 定义的邮件头集合，它提供邮件获取的从发件人到收件人的网络路径的详细信息。 只读。|
 |internetMessageId |String |由 [RFC2822](https://www.ietf.org/rfc/rfc2822.txt) 指定格式的邮件 ID。 |
-|isDelegated|Boolean|如果代理可以访问此会议请求，则其为 True，否则为 false。 默认为 false。|
+|isDelegated|布尔值|如果代理可以访问此会议请求，则其为 True，否则为 false。 默认为 false。|
 |isDeliveryReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
 |isDraft|Boolean|指示邮件是否为草稿。如果尚未发送，则此邮件是一封草稿。|
 |isRead|Boolean|指示是否已阅读该邮件。|
@@ -88,12 +88,12 @@ ms.locfileid: "54212093"
 |subject|String|邮件的主题。|
 |toRecipients|[recipient](recipient.md) collection|邮件的收件人。|
 |uniqueBody|[itemBody](itembody.md)|当前邮件专用的邮件正文部分。|
-|webLink|String|要在 Outlook 网页版中打开邮件的 URL。<br><br>可以将 ispopout 参数附加到此 URL 的末尾以更改邮件的显示方式。 如果 ispopout 不存在或设置为 1，则邮件显示在弹出窗口中。 如果 ispopout 设置为 0，则浏览器将在 Outlook 网页版的审阅窗格中显示邮件。<br><br>如果通过 Outlook 网页版登录邮箱，该邮件将在浏览器中打开。 如果尚未使用浏览器登录，系统将提示你登录。<br><br>无法从 iFrame 中访问此 URL。|
+|webLink|String|要在 Outlook 网页版中打开邮件的 URL。<br><br>可以将 ispopout 参数附加到此 URL 的末尾以更改邮件的显示方式。如果 ispopout 不存在或设置为 1，则邮件显示在弹出窗口中。如果 ispopout 设置为 0，则浏览器将在 Outlook 网页版的审阅窗格中显示邮件。<br><br>如果通过 Outlook 网页版登录邮箱，该邮件将在浏览器中打开。如果你尚未使用浏览器登录，系统将提示你登录。<br><br>无法从 iFrame 中访问此 URL。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|attachments|[附件](attachment.md)集合| 只读。可为 NULL。|
+|attachments|[attachment](attachment.md) 集合| 只读。可为 NULL。|
 |event|[event](event.md)| 与事件消息相关联的事件。对于与会者或会议室资源，假定已将日历助理设为在会议请求事件消息到达时自动更新包含事件的日历。导航属性。只读。|
 |extensions|[扩展](extension.md)集合|为 eventMessage 定义的开放扩展集合。只读。可为 NULL。|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为 eventMessage 定义的多值扩展属性的集合。只读。可为 Null。|

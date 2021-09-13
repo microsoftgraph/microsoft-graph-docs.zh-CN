@@ -2,15 +2,15 @@
 title: 获取 calendarGroup
 description: 检索 calendargroup 对象的属性和关系。
 author: harini84
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d486f1c03bf0d0aa86ab97d2c694a1313098a9dd
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 0013738dd004ad48fd8a178b2dfa1f6d5ceb5ca6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52039963"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59038440"
 ---
 # <a name="get-calendargroup"></a>获取 calendarGroup
 
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/v1.0/me/calendarGroups/{id}
 
 ##### <a name="response"></a>响应
 
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

@@ -2,15 +2,15 @@
 title: 获取 iosVppApp
 description: 读取 iosVppApp 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2d263e5d3313af8051f4f0b1aa74bb07db96e08091d7e1c2587e5fac3602af16
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2a573df16b976910581cf4bdc8ff4471bb0c0a41
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54200136"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032949"
 ---
 # <a name="get-iosvppapp"></a>获取 iosVppApp
 

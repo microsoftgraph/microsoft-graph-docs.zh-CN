@@ -2,15 +2,15 @@
 title: 图表：图像
 description: 通过缩放图表以适应指定的尺寸，将图表呈现为 base64 编码的图像。
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 65ccc4dcc323914301fb5429a6cb3d0c3e29584fe3773417cfe4ec66bcb7ae65
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0cfe9f8b9bcb13174076444e63e04dc4dfb5fccb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54200185"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056765"
 ---
 # <a name="chart-image"></a>图表：图像
 
@@ -41,7 +41,7 @@ GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/ima
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer {token}。必需。 |
+| Authorization  | 持有者{令牌}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ## <a name="path-parameters"></a>路径参数
@@ -51,7 +51,7 @@ GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/ima
 |:---------------|:--------|:----------|
 |height|Int32|生成的图像的所需高度。 可选。|
 |width|Int32|生成的图像的所需宽度。 可选。|
-|fittingMode|string|用于将图表缩放到指定尺寸的方法 (如果将高度和宽度都设置为) 。"  可能的值包括 `Fit`、`FitAndCenter`、`Fill`。|
+|fittingMode|string|用于将图表缩放到指定尺寸的方法 (将高度和宽度都设置为) "。  可能的值包括 `Fit`、`FitAndCenter`、`Fill`。|
 
 ## <a name="response"></a>响应
 

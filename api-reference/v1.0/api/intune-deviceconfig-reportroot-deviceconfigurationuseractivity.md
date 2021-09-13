@@ -2,15 +2,15 @@
 title: deviceConfigurationUserActivity 函数
 description: 设备配置用户活动报告的元数据
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9d91e65b859a9412fe097b69d1ef8b52d34f38133c75ee5540b726f5a9033945
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 545ae8bedae72467fce7ca60b95972acec83a057
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54175810"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59073280"
 ---
 # <a name="deviceconfigurationuseractivity-function"></a>deviceConfigurationUserActivity 函数
 

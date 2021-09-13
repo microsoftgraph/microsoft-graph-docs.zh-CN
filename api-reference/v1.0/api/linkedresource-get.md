@@ -2,15 +2,15 @@
 title: 获取 linkedResource
 description: 读取 linkedResource 对象的属性和关系。
 author: avijityadav
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b353e6ca577bd27608e79674b53d6b34864c4155
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 994972edec90183f2dcd03574225a238c798ecae
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50949820"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019774"
 ---
 # <a name="get-linkedresource"></a>获取 linkedResource
 命名空间：microsoft.graph

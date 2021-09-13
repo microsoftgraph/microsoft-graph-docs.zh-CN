@@ -1,16 +1,16 @@
 ---
 title: teamsTab 资源类型
-description: 'teamsTab 是固定到 (附加到) 频道的选项卡。 '
-localization_priority: Normal
+description: 'teamsTab 是固定到团队中 (附加到) 频道的选项卡。 '
+ms.localizationpriority: medium
 author: AkJo
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: e77c6c20705856700717a0312178c5d9fe330df349293920293ebc54019a7409
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 66dfa63b09463fac67b95bf4e635d90ffa4348a7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54231459"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59066973"
 ---
 # <a name="teamstab-resource-type"></a>teamsTab 资源类型
 
@@ -37,7 +37,7 @@ teamsTab[是固定](../resources/teamstab.md)到 (附加到) 频道的[](channel
 |:---------------|:--------|:----------|
 |  id              |   string                  |  唯一标识通道选项卡的特定实例的标识符。只读。     |
 |  displayName            |   string                  |  选项卡的名称。     |
-|  webUrl          |   string                  |  选项卡实例的深层链接 URL。 只读。     |
+|  WebUrl          |   string                  |  选项卡实例的深层链接 URL。 只读。     |
 |  configuration        |   [teamsTabConfiguration](teamstabconfiguration.md) |  应用于选项卡的自定义设置的容器。只有在设置此属性后，选项卡才被视为已配置。     |
 
 ## <a name="relationships"></a>关系

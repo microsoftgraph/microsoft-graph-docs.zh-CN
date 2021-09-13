@@ -1,16 +1,16 @@
 ---
 title: attachment 资源类型
 description: 可向事件添加相关的内容，
-localization_priority: Priority
+ms.localizationpriority: high
 author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 1151ff7a9392ba6450651b8d5df24eed1b6a28189a25b935ec2570a0280d436b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9cb01380abbbf0e6b35c2af14cab6d5ad481de45
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178610"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067582"
 ---
 # <a name="attachment-resource-type"></a>attachment 资源类型
 

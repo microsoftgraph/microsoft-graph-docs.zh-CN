@@ -2,15 +2,15 @@
 title: 获取 deviceComplianceUserStatus
 description: 读取 deviceComplianceUserStatus 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6df9d28cc1b9025f4c3a745f5eb360e397f9781ec3edea2e6b4e7f1875f5e490
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1da1e2f9eff85b9fa3bddd05b7f2dbdbc83b45bb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54187236"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045299"
 ---
 # <a name="get-devicecomplianceuserstatus"></a>获取 deviceComplianceUserStatus
 

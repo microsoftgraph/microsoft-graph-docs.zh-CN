@@ -2,15 +2,15 @@
 title: stateManagementSetting 枚举类型
 description: 状态管理设置。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c33f9f9f0c4bd8b151cf54c42123068a8e49a0b882799840769a7438d8e688e2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 57eceb60eb723cd0f9561e2f64a25b871489477e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54180710"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072251"
 ---
 # <a name="statemanagementsetting-enum-type"></a>stateManagementSetting 枚举类型
 

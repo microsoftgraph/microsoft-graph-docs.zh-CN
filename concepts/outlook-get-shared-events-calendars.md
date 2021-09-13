@@ -2,14 +2,14 @@
 title: 获取共享或委托的 Outlook 日历及其事件
 description: 在 Outlook 中，日历所有者可与其他用户共享日历，并让他们查看或修改该日历中的事件；日历可以是自定义日历或主日历。 所有者还可以授权代理人代表其执行操作，接收或答复会议请求，或在电子邮件帐户的主日历中创建或更改项目。
 author: juforan
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 308381b951371943dea2c88a29a299f5190eab5bb99bca8b8a196acc5884023b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 89752e74222dadeb424d5c2a8b865c8b5536b572
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54126037"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59135884"
 ---
 # <a name="get-shared-or-delegated-outlook-calendar-and-its-events"></a>获取共享或委托的 Outlook 日历及其事件
 

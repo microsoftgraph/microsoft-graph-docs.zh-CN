@@ -1,16 +1,16 @@
 ---
 title: displayNameLocalization 资源类型
 description: 使管理员能够自定义共享体验中使用的Microsoft 365字符串。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: a45c64d8cb80d94a702cfd4be57012949a7c86e3
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: c20e4a9478c25a785253f47e86cb0f84db649e0f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696532"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072545"
 ---
 # <a name="displaynamelocalization-resource-type"></a>displayNameLocalization 资源类型
 

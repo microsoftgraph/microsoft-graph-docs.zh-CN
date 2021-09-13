@@ -1,22 +1,27 @@
 ---
 title: Microsoft Teams 提供程序
-description: 使用 Teams 选项卡内的 Microsoft Teams 提供程序便于进行身份验证Graph Microsoft 访问所有组件。
-localization_priority: Normal
+description: 使用"Teams"选项卡Microsoft Teams提供程序来简化身份验证，Microsoft Graph访问所有组件。
+ms.localizationpriority: medium
 author: nmetulev
-ms.openlocfilehash: 3ede17c756a5b8af009f03555041d2a1c08a1b0d8c6d0671522273aa445afbad
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c26df2772b974288eaba2bb239a46790f7229f0b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54208641"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59126525"
 ---
 # <a name="microsoft-teams-provider"></a>Microsoft Teams 提供程序
 
-使用 Teams 选项卡内的 Microsoft Teams 提供程序便于进行身份验证Graph Microsoft 访问所有组件。
+使用"管理"选项卡Microsoft Teams TeamsProvider，以便于进行身份验证Graph访问所有组件。
 
 若要了解有关身份验证提供程序的信息，请参阅 [提供程序](./providers.md)。
 
 >**提示：** 有关如何使用 Microsoft Teams 提供程序创建 Teams 应用程序的详细信息，请参阅生成Microsoft Teams [选项卡](../get-started/build-a-microsoft-teams-tab.md)入门指南。
+
+### <a name="difference-between-teams-provider-and-teams-msal2-provider"></a>MSAL2 Teams提供程序Teams差异
+与 TeamsProvider 不同，Teams MSAL2 提供程序支持单一 Sign-On (SSO) 且基于[msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser)构建，用于客户端身份验证。 [msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser)使用 PKCE 实现 OAuth 2.0 [Flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow)代码。 授权代码Flow Web 应用程序的隐式授权Flow，因此我们建议使用 MSAL2 提供程序Teams MSAL2 提供程序Teams提供程序。 有关与隐式授予流相关的安全问题的详细信息，请参阅 [隐式流的缺点](https://tools.ietf.org/html/draft-ietf-oauth-browser-based-apps-04#section-9.8.6)。
+
+所有新应用程序应尽可能Teams MSAL2 提供程序。 请参阅[Teams MSAL2 提供程序](./teams-msal2.md)了解迁移文档。
 
 ## <a name="get-started"></a>入门
 
@@ -24,7 +29,7 @@ ms.locfileid: "54208641"
 
 # <a name="npm"></a>[npm](#tab/ts)
 
-请确保同时安装工具包和 Microsoft Teams SDK。
+确保同时安装工具包和 Microsoft Teams SDK。
 
 ```cmd
 npm install @microsoft/mgt @microsoft/teams-js
@@ -70,7 +75,7 @@ export interface TeamsConfig {
 | 属性 | 说明 |
 | --- | --- |
 | client-id   | 字符串客户端 ID (配置[你的Teams应用](#configure-your-teams-app)。 必填。 |
-| auth-popup-url  | 将在弹出窗口中处理身份验证的页面的绝对路径或相对 (请参阅创建 [弹出窗口页面](#create-the-popup-page)) 。 必填。 |
+| auth-popup-url  | 将在弹出窗口中处理身份验证的页面的绝对路径或相对 (请参阅创建 [弹出窗口页面](#create-the-popup-page)) 。 必需。 |
 | scopes  | 用户登录时必须同意的范围的逗号分隔字符串。 可选。 |
 | depends-on | 另一个优先级较高的提供程序组件的元素选择器字符串。 可选。 |
 | authority    | 颁发机构字符串。 默认值为公共颁发机构。 对于单租户应用，请使用租户 ID 或租户名称。 例如， `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` `https://login.microsoftonline.com/[your-tenant-id]` 或 。 可选。 |
@@ -79,7 +84,7 @@ export interface TeamsConfig {
 
 ### <a name="create-the-popup-page"></a>创建弹出页
 
-为了使用 Teams 凭据登录，你需要提供 Teams 应用将在弹出窗口中打开的 URL，这将遵循身份验证流程。 此 URL 需要在你的域中，并且它需要调用 `TeamsProvider.handleAuth();` 方法。 这是此页面唯一需要执行的事情。 例如：
+为了使用 Teams 凭据登录，你需要提供 Teams 应用将在弹出窗口中打开的 URL，这将遵循身份验证流程。 此 URL 需要在你的域中，并且它需要调用 `TeamsProvider.handleAuth();` 方法。 这是此页面需要执行的唯一一个工作。 例如：
 
 # <a name="npm"></a>[npm](#tab/ts)
 
@@ -107,12 +112,12 @@ TeamsProvider.handleAuth();
 
 在网站上发布弹出窗口后，您需要使用 属性中的 `auth-popup-url/authPopupUrl` URL。 此 URL 还需要在 Azure AD 门户的应用配置中配置为有效的重定向 URI。
 
-## <a name="configure-your-teams-app"></a>配置 Teams 应用
+## <a name="configure-your-teams-app"></a>配置Teams应用
 
 如果你刚开始使用应用Teams，请参阅将选项卡添加到Microsoft Teams[应用中](/microsoftteams/platform/concepts/tabs/tabs-overview)。 您还可以使用 [App Studio](/microsoftteams/platform/get-started/get-started-app-studio) 快速开发应用清单。
 ### <a name="creating-an-appclient-id"></a>创建应用/客户端 ID
 若要获取客户端 ID，需要在 Azure AD 中 [注册](../get-started/add-aad-app-registration.md) 应用程序。 
->**注意**：MSAL 仅支持 OAuth Flow隐式身份验证。 请确保在 Azure 门户Flow在应用程序中启用隐式 (默认不启用隐式) 。 在 **身份验证** 下，找到 **隐式授予** 部分，并选中 **访问** 令牌和 **ID 令牌的复选框**。 
+>**注意**：MSAL 仅支持 OAuth Flow隐式类型。 请确保在 Azure 门户Flow在应用程序中启用隐式 (默认不启用隐式) 。 在 **身份验证** 下，找到 **隐式授予** 部分，并选中 **访问** 令牌和 **ID 令牌的复选框**。 
 
 ## <a name="see-also"></a>另请参阅
 * [Microsoft Teams选项卡示例](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/teams-tab)

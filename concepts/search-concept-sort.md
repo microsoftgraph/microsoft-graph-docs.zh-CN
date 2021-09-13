@@ -2,18 +2,18 @@
 title: '使用 Microsoft 搜索 API 对搜索结果进行排序 (预览) '
 description: 使用 api 对搜索结果Microsoft 搜索排序。
 author: nmoreau
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: f0914633d1d1d080f10205f1cd387d3aa5620cad79f707508930fa146ca477dd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 03d1b7e9751cb10f6936043ff9a620df9bf98741
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54151716"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59055708"
 ---
 # <a name="use-the-microsoft-search-api-to-sort-search-results-preview"></a>使用 Microsoft 搜索 API 对搜索结果进行排序 (预览) 
 
-可以使用 Microsoft Microsoft 搜索 API 对Graph进行排序。 若要对结果进行排序，请指定 [searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true)对象中的 **sortProperties** 属性，并确定 **entityTypes** 中的资源属性，以便按升序或降序对匹配项进行排序。
+可以使用 Microsoft Microsoft 搜索中的 Graph API 对搜索结果进行排序。 若要对结果进行排序，请指定 [searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true)对象中的 **sortProperties** 属性，并确定 **entityTypes** 中的资源属性，以便按升序或降序对匹配项进行排序。
 
 只有项目和项目SharePoint OneDrive排序。
 要排序的属性在搜索架构中应为 *Sortable。*

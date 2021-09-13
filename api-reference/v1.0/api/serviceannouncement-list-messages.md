@@ -2,15 +2,15 @@
 title: 列出 serviceAnnouncement 消息
 description: 从 messages 导航属性中检索 serviceUpdateMessage 资源。
 author: payiAzure
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 7ae2dfb7f5bb52e4c50abb4f1a67798250a89e7d
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 098e24a840b4db2c88777f291508bafc16fbc47c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256942"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59029232"
 ---
 # <a name="list-serviceannouncement-messages"></a>列出 serviceAnnouncement 消息
 命名空间：microsoft.graph
@@ -41,7 +41,7 @@ GET /admin/serviceAnnouncement/messages
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|

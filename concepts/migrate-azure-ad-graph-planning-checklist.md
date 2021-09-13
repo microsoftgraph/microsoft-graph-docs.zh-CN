@@ -1,28 +1,23 @@
 ---
 title: 应用迁移规划清单
-description: 将应用从 Azure AD Graph迁移到 Microsoft Graph
+description: 将应用从 Azure AD Azure Active Directory (迁移到 Microsoft) Graph清单Graph
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: 70d05c2b53b5cc2fe09d17a4188f625d14ed18c02f6faaae08f304eef083cea8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 23b650b9e1d8dc046f6b503a2ded6f9c8ae8a5ad
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163479"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139049"
 ---
 # <a name="app-migration-planning-checklist"></a>应用迁移规划清单
-
-> [!WARNING]
-> **Azure AD Graph已弃用**。 为了避免功能丢失，在 2022 年 6 月 30 日之前，将应用程序迁移到 Microsoft Graph，Azure AD Graph API 终结点将停止响应请求。
->
-> Microsoft 将继续提供技术支持，并应用 Azure AD Graph修补程序，直到 2022 年 6 月 30 日，所有功能和支持都将结束。 如果在 2022 年 6 月 30 Graph无法将应用程序迁移到 Microsoft Graph，则其功能和稳定性会面临风险。
 
 使用以下清单规划迁移。
 
 ## <a name="step-1-review-the-differences-between-the-apis"></a>步骤 1：查看 API 之间的差异
 
-许多方面，Microsoft Graph类似于早期的 Azure AD Graph。 在许多情况下，只需在代码中更改终结点服务名称和版本，所有内容都应继续工作。
+许多方面，Microsoft Graph Azure AD Azure Active Directory (与之前版本) Graph。 在许多情况下，只需在代码中更改终结点服务名称和版本，所有内容都应继续工作。
 
 尽管如此，仍有一些差异。 某些资源、属性、方法和核心功能已更改。
 
@@ -46,7 +41,7 @@ ms.locfileid: "54163479"
 
 ## <a name="step-3-review-app-details"></a>步骤 3：查看应用详细信息
 
-- [应用注册](migrate-azure-ad-graph-app-registration.md) 和同意 (更改，这些更改不应) 。
+- [应用注册](migrate-azure-ad-graph-app-registration.md) 和同意 (更改，此更改不应) 。
 - 令牌获取 [和身份验证库](migrate-azure-ad-graph-authentication-library.md)。
 - 对于 .NET 应用程序，请使用 [客户端库](migrate-azure-ad-graph-client-libraries.md)。
 
@@ -56,7 +51,7 @@ ms.locfileid: "54163479"
 
 现在，你已切换到 Microsoft Graph，那么解锁现在触手可及的更多数据集和功能从未如此简单。 通过查看 Microsoft Graph 中的一些主要服务和功能，你可以尝试[一下Graph。](./overview-major-services.md)
 
-[Microsoft 身份验证库](/azure/active-directory/develop/reference-v2-libraries) (MSAL) 现在是建议用于该身份验证库的Microsoft 标识平台。 如果当前正在使用 ADAL ([ADAL](/azure/active-directory/develop/active-directory-authentication-libraries)) ，请计划切换到 MSAL。 请参阅将应用程序迁移到[MSAL (Microsoft 身份验证库) 。 ](/azure/active-directory/develop/msal-migration)
+[Microsoft 身份验证库](/azure/active-directory/develop/reference-v2-libraries) (MSAL) 现在是建议用于该身份验证库的Microsoft 标识平台。 如果当前正在使用 ADAL [](/azure/active-directory/develop/active-directory-authentication-libraries) Azure Active Directory身份验证库 (，) 切换到 MSAL。 请参阅将应用程序迁移到 MSAL ([Microsoft 身份验证库) 。 ](/azure/active-directory/develop/msal-migration)
 
 ## <a name="next-steps"></a>后续步骤
 

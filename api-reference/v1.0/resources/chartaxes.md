@@ -2,15 +2,15 @@
 title: ChartAxes 资源类型
 description: 表示图表坐标轴。
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 3b6c99121186044820282da58ddbcf97ed28d30abbfdf9e1405140f042442a24
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7d743695c6d7cd94636a795f75a8059976f743e8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54135356"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032396"
 ---
 # <a name="chartaxes-resource-type"></a>ChartAxes 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "54135356"
 
 
 ## <a name="methods"></a>方法
-无
+None
 
 ## <a name="properties"></a>属性
 无

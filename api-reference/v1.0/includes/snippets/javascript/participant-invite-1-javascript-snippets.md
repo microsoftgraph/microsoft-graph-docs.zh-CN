@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f0c89a6ae56aae37a594d632639fbee9b25eae5e
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 5db162b22895c99a184a31d4e06b0f1e3261fe8d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50945152"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072866"
 ---
 ```javascript
 
@@ -25,7 +25,7 @@ const inviteParticipantsOperation = {
         user: {
           '@odata.type': '#microsoft.graph.identity',
           id: '278405a3-f568-4b3e-b684-009193463064',
-          displayName: 'string'
+          identityProvider: 'AAD'
         }
       }
     }
@@ -34,6 +34,7 @@ const inviteParticipantsOperation = {
 };
 
 await client.api('/communications/calls/{id}/participants/invite')
+    .version('beta')
     .post(inviteParticipantsOperation);
 
 ```

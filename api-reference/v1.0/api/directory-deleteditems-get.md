@@ -2,15 +2,15 @@
 title: 检索最近删除的项目的属性
 description: 检索已删除的项目中最近删除项目的属性。
 author: keylimesoda
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7095dc50e118e39f857373abda9071ba8701f75e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 54b164fcf6ae2daf76f3fe241df19becccebb404
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053200"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59033040"
 ---
 # <a name="get-deleted-item"></a>获取已删除项目
 

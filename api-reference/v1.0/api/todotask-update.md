@@ -2,15 +2,15 @@
 title: 更新 todoTask
 description: 更新 todoTask 对象的属性。
 author: avijityadav
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: bc3b5fc228d2c553dec3469825f74dfe4a5298ea
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 9c85d7e5e58c75b3f07cceb3b4fe6bf0242fb2ec
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874275"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59079055"
 ---
 # <a name="update-todotask"></a>更新 todoTask
 命名空间：microsoft.graph
@@ -46,7 +46,7 @@ PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [todoTask](../resources/todotask.md) 对象的 JSON 表示形式。
 
-下表显示创建 [todoTask](../resources/todotask.md)时所需的属性。
+下表显示创建 [todoTask 时所需的属性](../resources/todotask.md)。
 
 |属性|类型|说明|
 |:---|:---|:---|
@@ -58,7 +58,7 @@ PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}
 |isReminderOn|Boolean|如果设置警报以提醒用户有任务，则设置为 true。|
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|任务的定期模式。|
 |reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|提醒警报发出任务发生提醒的日期和时间。|
-|status|taskStatus|指示任务的状态或进度。 可取值为：`notStarted`、`inProgress`、`completed`、`waitingOnOthers`、`deferred`。|
+|状态|任务状态|指示任务的状态或进度。 可取值为：`notStarted`、`inProgress`、`completed`、`waitingOnOthers`、`deferred`。|
 |title|String|任务的简要说明。|
 |createdDateTime|DateTimeOffset|任务的创建日期和时间。 默认情况下，它采用 UTC 格式。 你可以在请求标头中提供自定义时区。|
 |lastModifiedDateTime|DateTimeOffset|上次修改任务的日期和时间。 默认情况下，它采用 UTC 格式。 你可以在请求标头中提供自定义时区。|
@@ -68,7 +68,7 @@ PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [todoTask](../resources/todotask.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [todoTask](../resources/todotask.md) 对象。
 
 ## <a name="examples"></a>示例
 

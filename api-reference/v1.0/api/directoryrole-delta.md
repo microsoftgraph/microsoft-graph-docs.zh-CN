@@ -1,16 +1,16 @@
 ---
 title: directoryRole： delta
 description: 获取新创建、更新或删除的目录角色，而无需执行整个资源集合的完全读取。 有关详细信息，请参阅使用增量查询。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 177c875f204a4019884fb025a2f06dc365e4a63b
-ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
+ms.openlocfilehash: 848b9cfb76ec22f97b6a8aee43e2209a398e95a2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53118642"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046314"
 ---
 # <a name="directoryrole-delta"></a>directoryRole： delta
 

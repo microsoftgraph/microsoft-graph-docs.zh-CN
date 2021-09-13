@@ -2,15 +2,15 @@
 title: deviceManagementPartnerTenantState 枚举类型
 description: 此租户的合作伙伴状态。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b20f243738b7a7d096341ba04df3d03382387b5ee0b17055290f80b521a70c2e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1a2cce171de7c141f5267ef0f52cd53dae90931a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249235"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062493"
 ---
 # <a name="devicemanagementpartnertenantstate-enum-type"></a>deviceManagementPartnerTenantState 枚举类型
 

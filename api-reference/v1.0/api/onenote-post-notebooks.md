@@ -2,21 +2,21 @@
 title: 创建笔记本
 description: 新建 OneNote 笔记本。
 author: jewan-microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: f6adea8f324d856e8b22c778f25f3c304d450532
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 0ff912cdefa30d7c38e9e82419ba6989ae3e9e98
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51509071"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022091"
 ---
 # <a name="create-notebook"></a>创建笔记本
 
 命名空间：microsoft.graph
 
-创建新的 OneNote [笔记本](../resources/notebook.md)。
+创建新的笔记本OneNote[笔记本](../resources/notebook.md)。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

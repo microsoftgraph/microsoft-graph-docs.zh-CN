@@ -2,23 +2,23 @@
 title: schedule： share
 description: 与计划成员共享计划时间范围。
 author: akumar39
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ddb77b5acacfacb66e397044771c3068ffff9daf
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: ee2469ed3e8f534caf0b8cbb1e8b9c31541a032a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787139"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019648"
 ---
 # <a name="schedule-share"></a>schedule： share
 
 命名空间：microsoft.graph
 
 与 [计划成员](../resources/schedule.md) 共享计划时间范围。
-使指定的团队成员[（](../resources/shift.md)包括员工和经理）可以查看计划中指定时间范围内班次、openshift 和[timeOff](../resources/timeoff.md)项目的集合。 [](../resources/openshift.md) [](../resources/schedule.md)
-计划[中的](../resources/shift.md)[每个班次、openshift](../resources/openshift.md)和[timeOff](../resources/timeoff.md) [实例都支持](../resources/schedule.md)草稿版本和项目的共享版本。 草稿版本仅由经理查看，员工和经理可查看共享版本。 对于指定[](../resources/shift.md)时间范围内的每个班次[、openshift](../resources/openshift.md)和[timeOff](../resources/timeoff.md)实例，共享操作从草稿版本更新共享版本，以便除经理外，员工还可以查看有关项目的最新信息。 **notifyTeam** 参数进一步指定哪些员工可以查看项目。
+使指定团队成员[（](../resources/shift.md)包括员工[](../resources/openshift.md)和经理）可查看计划指定时间范围内班次、开放临时和[](../resources/schedule.md) [timeOff](../resources/timeoff.md)项目的集合。
+计划[中的](../resources/shift.md)[每个班次、openshift](../resources/openshift.md)和[timeOff](../resources/timeoff.md) [实例都支持](../resources/schedule.md)草稿版本和项目的共享版本。 草稿版本仅由经理查看，而员工和经理可查看共享版本。 对于指定[](../resources/shift.md)时间范围内的每个班次[、openshift](../resources/openshift.md)和[timeOff](../resources/timeoff.md)实例，共享操作从草稿版本更新共享版本，以便除经理外，员工还可以查看有关项目的最新信息。 **notifyTeam** 参数进一步指定哪些员工可以查看项目。
 
 ## <a name="permissions"></a>权限
 
@@ -51,8 +51,8 @@ POST /teams/{teamId}/schedule/share
 
 |参数                   |类型           |说明  |
 |-----------------------|-------------------|--------------|
-| notifyTeam            |`Boolean`             |指示整个团队是应该收到此操作的可见通知，还是只收到分配有已共享班次的员工的通知。 必填。       |
-| startDateTime         |`DateTimeOffset`   |按计划共享班次的开始时间。 必填。   |
+| notifyTeam            |`Boolean`             |指示整个团队是应收到此操作的可见通知，还是只收到分配有已共享的班次的员工。 必需。       |
+| startDateTime         |`DateTimeOffset`   |按计划共享班次的开始时间。 必需。   |
 | endDateTime           |`DateTimeOffset`   | 在计划前共享班次的结束时间。   |
 
 ## <a name="response"></a>响应

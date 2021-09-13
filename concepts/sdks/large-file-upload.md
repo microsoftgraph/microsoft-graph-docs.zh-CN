@@ -1,18 +1,18 @@
 ---
 title: Upload Microsoft SDK 创建Graph文件
-description: 提供使用 Microsoft SDK 上传大Graph指南。
-localization_priority: Normal
+description: 提供使用 Microsoft SDK 上传Graph指南。
+ms.localizationpriority: medium
 author: DarrelMiller
-ms.openlocfilehash: 4d78c8be73f154f206d62ae8a52c0c2c8dc5ab4c
-ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
+ms.openlocfilehash: 7baac0871a189a4dc7f3965b8459314fd2b32615
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58490502"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59142374"
 ---
 # <a name="upload-large-files-using-the-microsoft-graph-sdks"></a>Upload Microsoft SDK 创建Graph文件
 
-Microsoft 中的许多实体Graph可恢复文件上载，以便[](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0&preserve-view=true)更轻松地上载大文件。 文件被切片为较小的片段，并且请求用于上载单个切片，而不是尝试在单个请求中上载整个文件。 为了简化此过程，Microsoft Graph SDK 实现了管理切片上载的大型文件上载任务。
+Microsoft 中的许多实体Graph可恢复文件[上载](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0&preserve-view=true)，以便更轻松地上载大文件。 文件被切片为较小的片段，并且请求用于上载单个切片，而不是尝试在单个请求中上载整个文件。 为了简化此过程，Microsoft Graph SDK 实现了管理切片上载的大型文件上载任务。
 
 ## <a name="upload-large-file-to-onedrive"></a>Upload大文件OneDrive
 
@@ -201,7 +201,7 @@ const resumedFile: DriveItem = await uploadTask.resume() as DriveItem;
 
 ---
 
-## <a name="upload-large-attachment-to-outlook-message"></a>Upload邮件添加Outlook附件
+## <a name="upload-large-attachment-to-outlook-message"></a>Upload大附件Outlook邮件
 
 ### <a name="c"></a>[C#](#tab/csharp)
 

@@ -1,24 +1,24 @@
 ---
-title: 从服务主体中删除 appRoleAssignment
+title: 删除 appRoleAssignment
 description: 从服务主体中删除 appRoleAssignment。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 73993ee629ad9752192329adf58ec61deb07ecf6
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 353f826197845ca871ace1db6b791ee96792fd42
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52870533"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59053238"
 ---
-# <a name="delete-an-approleassignment-granted-to-a-service-principal"></a>删除授予服务主体的 appRoleAssignment
+# <a name="delete-approleassignment"></a>删除 appRoleAssignment
 
 命名空间：microsoft.graph
 
 删除已授予服务主体的[appRoleAssignment。](../resources/approleassignment.md)
 
-分配给服务主体的应用程序角色也称为应用程序 [权限](/azure/active-directory/develop/v2-permissions-and-consent#permission-types)。 删除服务角色分配应用程序权限等效于撤销仅应用程序权限授予。
+分配给服务主体的应用程序角色也称为应用程序 [权限](/azure/active-directory/develop/v2-permissions-and-consent#permission-types)。 删除服务主体角色分配应用程序权限等效于撤销仅应用程序权限授予。
 
 ## <a name="permissions"></a>权限
 
@@ -39,7 +39,7 @@ DELETE /servicePrincipals/{servicePrincipal-id}/appRoleAssignments/{appRoleAssig
 ```
 
 > [!NOTE]
-> 作为最佳实践，我们建议通过资源服务主体的关系（而不是分配的用户、组或服务主体的关系）删除应用程序 `appRoleAssignedTo`  `appRoleAssignments` 角色分配。
+> 最佳做法是，我们建议你使用 Delete [appRoleAssignedTo](serviceprincipal-delete-approleassignedto.md)方法删除应用角色分配，该方法通过资源服务主体的 **appRoleAssignedTo** 关系删除，而不是使用此方法。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -59,7 +59,7 @@ DELETE /servicePrincipals/{servicePrincipal-id}/appRoleAssignments/{appRoleAssig
 
 ### <a name="request"></a>请求
 
-下面是一个请求删除应用示例角色分配。
+下面是一个请求删除应用角色分配。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

@@ -1,16 +1,16 @@
 ---
 title: 列出 homeRealmDiscoveryPolicy
 description: 获取 homeRealmDiscoveryPolicy 对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: hpsin
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a15ebfe7941dae6365b8cbc3d2c23289cce303c6
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ff2d77dd89620a2ef161b6f5c8f5e384910ed95e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051394"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045859"
 ---
 # <a name="list-homerealmdiscoverypolicies"></a>列出 homeRealmDiscoveryPolicy
 

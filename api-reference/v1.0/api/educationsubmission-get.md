@@ -2,15 +2,15 @@
 title: 获取 educationSubmission
 description: '检索特定提交。 提交对象表示学生作业的工作。 与提交关联的资源表示此工作。 只有分配提交的学生才能查看和修改提交。 具有应用程序权限的教师或应用程序具有所有提交的完全访问权限。 '
 author: sharad-sharma-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 25bdf9b833772e679b5ac54c7cd28efa8d20530c
-ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
+ms.openlocfilehash: 03e6e7d26ea089712c1274d458d560a7d3bf011e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58367203"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046188"
 ---
 # <a name="get-educationsubmission"></a>获取 educationSubmission
 
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/v1.0/education/classes/11010/assignments/ad8afb2
 
 
 ### <a name="response"></a>响应
-下面介绍响应示例。 
+下面展示了示例响应。 
 
 >**注意：** 为了可读性，可能会缩短此处所示的响应对象。 
 >

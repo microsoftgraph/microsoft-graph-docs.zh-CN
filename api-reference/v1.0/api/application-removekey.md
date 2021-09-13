@@ -1,16 +1,16 @@
 ---
 title: application： removeKey
 description: 从应用程序中删除密钥凭据
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: f2b2dfcc25fa7dfd88173572b71e9c52e580c5b6
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 35aeaca9e4ab6b6b8612b5d61662624dba5699b2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131451"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063536"
 ---
 # <a name="application-removekey"></a>application： removeKey
 
@@ -19,9 +19,9 @@ ms.locfileid: "50131451"
 从应用程序中删除密钥 [凭据](../resources/application.md)。 此方法和 [addKey](application-addkey.md) 可用于应用程序自动滚动其过期密钥。
 
 > [!NOTE]
-> [创建 servicePrincipal](../api/serviceprincipal-post-serviceprincipals.md) 和更新 [servicePrincipal](../api/serviceprincipal-update.md) 操作可以继续用于为具有应用程序或用户上下文的任何应用程序添加和更新密钥凭据。
+> [Create servicePrincipal](../api/serviceprincipal-post-serviceprincipals.md) 和更新 [servicePrincipal](../api/serviceprincipal-update.md) 操作可以继续用于为具有应用程序或用户上下文的任何应用程序添加和更新密钥凭据。
 
-作为此方法的请求验证的一部分，先验证现有密钥的拥有证明，然后才能执行该操作。
+作为此方法的请求验证的一部分，将验证拥有现有密钥的证明，然后才能执行该操作。
 
 ## <a name="permissions"></a>权限
 
@@ -56,7 +56,7 @@ POST /applications/{id}/removeKey
 | 属性  | 类型 | 说明|
 |:----------|:-----|:-----------|
 | keyId     | GUID | 密码的唯一标识符。|
-| proof | String | 自签名 JWT 令牌，用作现有密钥的拥有证明。 此 JWT 令牌必须使用应用程序现有有效证书之一的私钥进行签名。 令牌应包含以下声明：<ul><li>`aud` - 受众需要是 `00000002-0000-0000-c000-000000000000`。</li><li>`iss` -颁发者必须是正在进行呼叫的应用程序的 __ID__。</li><li>`nbf` -“不早于”时间。</li><li>`exp` - 过期时间应该是“不早于”+ 10 分钟。</li></ul><br>下面是可用于 [生成](/graph/application-rollkey-prooftoken) 此拥有令牌证明的代码示例。|
+| proof | String | 用作现有密钥拥有证明的自签名 JWT 令牌。 此 JWT 令牌必须使用应用程序现有有效证书之一的私钥进行签名。 令牌应包含以下声明：<ul><li>`aud` - 受众需要是 `00000002-0000-0000-c000-000000000000`。</li><li>`iss` -颁发者必须是正在进行呼叫的应用程序的 __ID__。</li><li>`nbf` -“不早于”时间。</li><li>`exp` - 过期时间应该是“不早于”+ 10 分钟。</li></ul><br>下面是可用于 [生成](/graph/application-rollkey-prooftoken) 此拥有令牌证明的代码示例。|
 
 ## <a name="response"></a>响应
 

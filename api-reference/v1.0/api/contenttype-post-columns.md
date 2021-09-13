@@ -3,15 +3,15 @@ author: swapnil1993
 ms.date: 08/30/2020
 title: 在内容类型创建 columnDefinition
 description: 向内容类型添加列。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: ece60217b08c6487a7d1cf33c725665f9ede38ac
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 1addef36f4c1b8b3974c82f47d181dd1a333795b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696538"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59038179"
 ---
 # <a name="create-a-columndefinition-in-a-content-type"></a>在内容类型创建 columnDefinition
 命名空间：microsoft.graph

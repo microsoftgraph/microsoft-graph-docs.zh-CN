@@ -2,15 +2,15 @@
 title: 删除 auditEvent
 description: 删除 auditEvent
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8cb4f39829155d85231f4bf8ce03c8c006bce0c17dc8ba54861231b7c570018e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1ae3989db82c9cc3d13ecf57910a4acaa0e14606
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54160441"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056443"
 ---
 # <a name="delete-auditevent"></a>删除 auditEvent
 

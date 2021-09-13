@@ -2,14 +2,14 @@
 title: 授权API读取Microsoft 365使用报告
 description: 可通过 Microsoft Graph 报告 API 访问的报告数据是敏感数据，并受到权限和 Azure Active Directory (Azure AD) 角色的保护。
 author: kszb
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: reports
-ms.openlocfilehash: 8f02807287771607d327c46fc27949132e6a85e313f99620c76be2107ec85996
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1710f5c1be640f61c0ff02340e90b991d3d69f9f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54151723"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139021"
 ---
 # <a name="authorization-for-apis-to-read-microsoft-365-usage-reports"></a>授权API读取Microsoft 365使用报告
 
@@ -18,7 +18,7 @@ ms.locfileid: "54151723"
 读取 Microsoft 365 使用报告的 API 支持两种类型的授权：
 
 - **应用程序级别授权** - 允许应用在没有登录用户的情况下读取所有服务使用情况报告。 授权由授予给应用程序的权限决定。
-- **用户委派的授权** - 允许应用代表已登录的用户读取所有服务使用情况报告。 除了向应用授予所需权限之外，用户必须是 Azure AD 受限管理员角色的成员。 可以是以下角色之一：公司管理员、Exchange 管理员、SharePoint 管理员、Lync 管理员、Teams 服务管理员、Teams 通信管理员、全局读取者或报告读取者。
+- **用户委派的授权** - 允许应用代表已登录的用户读取所有服务使用情况报告。 除了向应用授予所需权限之外，用户必须是 Azure AD 受限管理员角色的成员。 这可以是下列角色之一：公司管理员、Exchange 管理员、SharePoint 管理员、Lync 管理员、Teams 服务管理员、Teams 通信管理员、全局读取者、使用情况摘要报告读取者或报告读取者。 全局读取者角色和使用情况摘要报告读取者角色将只能访问租户级数据，而不能查看详细指标。
 
 如果从 Graph 浏览器调用 API：
 

@@ -2,15 +2,15 @@
 title: call： unmute
 description: 允许应用程序自行取消静音。
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 392f8af0e53c54d3c4f17f2db7837295eb7039e7
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 0d527b45fb139582333cb563331be5eacb4f50c5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52783636"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016811"
 ---
 # <a name="call-unmute"></a>call： unmute
 

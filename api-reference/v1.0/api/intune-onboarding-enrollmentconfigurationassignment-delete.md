@@ -2,15 +2,15 @@
 title: 删除 enrollmentConfigurationAssignment
 description: 删除 enrollmentConfigurationAssignment。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0ffadabbe0d44e8b98a51b4f86dfb501e9f65a84c74170c875a937489bb08ebc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d1543a5123c762f7ade3d1f2b4f747ed6bd2700d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54243845"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045159"
 ---
 # <a name="delete-enrollmentconfigurationassignment"></a>删除 enrollmentConfigurationAssignment
 

@@ -2,15 +2,15 @@
 title: 从 educationClass 中删除成员
 description: 从 educationClass 删除 educationUser
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d98245691a08ede09d16a290b1aef67935c4753c
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 2f978af4882ced649b77fcd19acc0c23b6496393
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52783653"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074400"
 ---
 # <a name="remove-member-from-educationclass"></a>从 educationClass 中删除成员
 

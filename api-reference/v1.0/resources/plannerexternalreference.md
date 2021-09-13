@@ -1,22 +1,22 @@
 ---
 title: plannerExternalReference 资源类型
-description: '**plannerExternalReference** 资源表示附件（如文件 (URL）的引用) 。 它是 externalReferences 对象中属性值对的值。'
-localization_priority: Normal
+description: '**plannerExternalReference** 资源表示引用的元数据 (附件，如文件、URL) 。 它是 externalReferences 对象中属性值对的值。'
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: cb856a9d147874428ab7e4d3e4169eba8bf1c028a80df4d0b6a459dc8bd1f430
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 225a4fb53875629eab093586193bf569d31693c4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54251869"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019270"
 ---
 # <a name="plannerexternalreference-resource-type"></a>plannerExternalReference 资源类型
 
 命名空间：microsoft.graph
 
-**plannerExternalReference** 资源表示附件（如文件 (URL）的引用) 。 它是 [externalReferences](plannerexternalreferences.md)对象中的属性值对的值。
+**plannerExternalReference** 资源表示引用的元数据 (附件，如文件、URL) 。 它是 [externalReferences](plannerexternalreferences.md)对象中的属性值对的值。
 
 
 

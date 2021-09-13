@@ -2,15 +2,15 @@
 title: updateRecordingStatusOperation 资源类型
 description: 描述更新录制状态操作的响应格式。
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: c79e97e3befcbce6b324cbaf2ac822edd9de49e1871deee815a27a4c0c62c4a3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1f377ac39ec8e216b883f644f086f888b025ef8c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54141278"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062409"
 ---
 # <a name="updaterecordingstatusoperation-resource-type"></a>updateRecordingStatusOperation 资源类型
 

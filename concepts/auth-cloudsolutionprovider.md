@@ -2,15 +2,15 @@
 title: 从云解决方案提供商应用程序中调用 Microsoft Graph
 description: 本主题介绍如何使应用程序使用授权代码授予流或服务到服务客户端凭据流，通过 Microsoft Graph 访问合作伙伴托管的客户数据。
 author: jackson-woods
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: applications
 ms.custom: graphiamtop20
-ms.openlocfilehash: 47bcefa610d3616e5c162c5c5f8946b75694213c25ce211557f47338de8706f8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8c610b1d795045c49b469ceb906a9994a4020b3a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54151898"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021391"
 ---
 # <a name="call-microsoft-graph-from-a-cloud-solution-provider-application"></a>从云解决方案提供商应用程序中调用 Microsoft Graph
 

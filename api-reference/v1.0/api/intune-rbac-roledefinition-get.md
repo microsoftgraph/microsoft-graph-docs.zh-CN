@@ -2,15 +2,15 @@
 title: 获取 roleDefinition
 description: 读取 roleDefinition 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d98bfebb4c66c70b888a6ffaf11fe63edb76633d6916acb1e7e1af33017f4b67
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 75a6ae7798a10d207dbc6e3dfbf67eb30174f47f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54138708"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019823"
 ---
 # <a name="get-roledefinition"></a>获取 roleDefinition
 

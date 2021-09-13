@@ -2,15 +2,15 @@
 title: mobileAppContentFileUploadState 枚举类型
 description: 包含上载请求状态的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3d5eba7f89bc12cc62d70761cc1528c5d78fd8120785beff23f3b2c8cdf3c594
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: aff36867137843fba9d86d9fec2cf4afafd7e05a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189686"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056030"
 ---
 # <a name="mobileappcontentfileuploadstate-enum-type"></a>mobileAppContentFileUploadState 枚举类型
 
