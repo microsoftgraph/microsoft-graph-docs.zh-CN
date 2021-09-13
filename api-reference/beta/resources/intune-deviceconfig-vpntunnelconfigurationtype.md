@@ -2,15 +2,15 @@
 title: vpnTunnelConfigurationType 枚举类型
 description: 将呈现给 VPN 客户端进行配置的隧道类型
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: dda81ee6fb35023c9ce06d3f24c00c0826c6b9ed
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f629fe4f5e644983199218aff819edc010781984
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58778008"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59026979"
 ---
 # <a name="vpntunnelconfigurationtype-enum-type"></a>vpnTunnelConfigurationType 枚举类型
 
@@ -26,8 +26,8 @@ ms.locfileid: "58778008"
 |成员|值|说明|
 |:---|:---|:---|
 |wifiAndCellular|0|WiFi 和手机网络隧道|
-|手机网络|1|仅Tunnel移动电话网络|
-|wifi|2|仅 wiFi Tunnel|
+|手机网络|1|仅Tunnel手机网络|
+|wifi|2|仅 WiFi Tunnel|
 
 
 

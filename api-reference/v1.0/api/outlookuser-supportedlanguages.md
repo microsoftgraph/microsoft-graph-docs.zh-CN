@@ -1,16 +1,16 @@
 ---
 title: 'outlookUser: supportedLanguages'
 description: 获取用户支持的区域设置和语言列表，用户的邮箱服务器上配置了此信息。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: dfb094b07ff89457e885c1b24ae882e653a9bc73
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: f02748d22f18dacc5cfb7c231c2904df69937118
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50128286"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104941"
 ---
 # <a name="outlookuser-supportedlanguages"></a>outlookUser: supportedLanguages
 
@@ -21,7 +21,7 @@ ms.locfileid: "50128286"
 在设置 Outlook 客户端时，用户从此受支持的列表中选择首选语言。 随后可以通过[获取用户的邮箱设置](user-get-mailboxsettings.md)获取首选语言。
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

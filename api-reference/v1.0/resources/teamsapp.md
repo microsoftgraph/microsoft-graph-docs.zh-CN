@@ -2,15 +2,15 @@
 title: teamsApp 资源类型
 description: Microsoft Teams 应用对话框中的应用。
 author: nkramer
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: f2217ead7547622ebf65f5f23b1e842b2528f944769300102df21d107c5a68bd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a6a50cdb00b274752f431f0c00c28bf2b49524d5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189266"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59028777"
 ---
 # <a name="teamsapp-resource-type"></a>teamsApp 资源类型
 

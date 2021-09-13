@@ -2,15 +2,15 @@
 title: androidManagedStoreAppConfigurationSchemaItem 资源类型
 description: Android 应用程序的自定义配置架构中的单个配置项。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e40612aa0486f6aeaa6c28394cc3bea338dbc66d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 91ed8095867017a4000a95a5f34c5cb8ea5cd3f6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801204"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59030548"
 ---
 # <a name="androidmanagedstoreappconfigurationschemaitem-resource-type"></a>androidManagedStoreAppConfigurationSchemaItem 资源类型
 
@@ -29,7 +29,7 @@ Android 应用程序的自定义配置架构中的单个配置项。
 |parentIndex|Int32|父架构项的索引，以跟踪嵌套架构项|
 |schemaItemKey|String|应用程序用于标识项的唯一键|
 |displayName|String|用户可读的名称|
-|description|字符串|项在应用程序内所控制内容的说明|
+|说明|String|项在应用程序内所控制内容的说明|
 |defaultBoolValue|布尔值|如果由应用开发人员指定，则为布尔类型项的默认值|
 |defaultIntValue|Int32|如果由应用开发人员指定，则为整数类型项的默认值|
 |defaultStringValue|String|如果由应用开发人员指定，则为字符串类型项的默认值|

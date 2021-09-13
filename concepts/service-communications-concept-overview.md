@@ -2,15 +2,15 @@
 title: 通过 Microsoft Graph 访问服务运行状况和通信的概述
 description: 使用 Microsoft Graph 中的服务通信 API 访问有关 Microsoft 云服务的运行状况和消息中心帖子。
 author: payiAzure
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: service-communications
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: db7005e9bfddd141a429c2d85320f9e1dd1d3666
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 0cd76530511ac5f8d59018d7bb8abcd69a1c5c53
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255168"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59093874"
 ---
 # <a name="overview-for-accessing-service-health-and-communications-in-microsoft-graph"></a>在 Microsoft Graph 中访问服务运行状况和通信的概述
 可以使用 Microsoft Graph 中的服务通信 API 访问有关 Microsoft 云服务的运行状况和消息中心帖子。 实际运行状况和帖子对应于 API 所支持且由租户订阅的 Microsoft 365 和 Dynamics 365 服务。

@@ -2,15 +2,15 @@
 title: ChartAxisTitle 资源类型
 description: 表示图表坐标轴的标题。
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 4e39d6c8ce7aa4d4523fac00591b251ed2a66b1247258f74a469f283cc21422b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e4c927eb6650e8effe67b432415a726f51ddefcb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54135286"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59126917"
 ---
 # <a name="chartaxistitle-resource-type"></a>ChartAxisTitle 资源类型
 

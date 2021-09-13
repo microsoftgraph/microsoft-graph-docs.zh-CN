@@ -1,16 +1,16 @@
 ---
 title: plannerTaskDetails 资源类型
 description: '**plannerTaskDetails** 资源表示有关任务的其他信息。 每个任务对象都有一个 details 对象。'
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 852deda3e48c78b2e70968cb7e8b7ec9a11956bbf2fcab66ecc127ea653abce9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 54d15bdd49d7f8bc61dcc057cf77dd710ca0d8df
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189392"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59052865"
 ---
 # <a name="plannertaskdetails-resource-type"></a>plannerTaskDetails 资源类型
 

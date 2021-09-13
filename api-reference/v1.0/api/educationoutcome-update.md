@@ -1,16 +1,16 @@
 ---
 title: 更新 educationOutcome
 description: 更新 educationOutcome 对象的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d8cee8bc1de16eb9412f68d2ba464a8b71067c6c
-ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
+ms.openlocfilehash: 35e84d0f86146d15d1de054cc9b55e2cb8ada1e8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58367042"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59090647"
 ---
 # <a name="update-educationoutcome"></a>更新 educationOutcome
 

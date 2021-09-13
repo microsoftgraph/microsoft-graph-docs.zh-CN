@@ -2,15 +2,15 @@
 title: androidDeviceOwnerKioskModeManagedFolder 资源类型
 description: 托管主屏幕上包含应用页面和 Web 链接的文件夹
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6144091708f3abfea6aa0f8e0b4ac7284cf58580
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d39dc856e2ef6f36e4188dc2694a7c23f4033183
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787025"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59030457"
 ---
 # <a name="androiddeviceownerkioskmodemanagedfolder-resource-type"></a>androidDeviceOwnerKioskModeManagedFolder 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58787025"
 托管主屏幕上包含应用页面和 Web 链接的文件夹
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |folderName|String|文件夹的显示名称|
 |folderIdentifier|String|文件夹的唯一标识符|

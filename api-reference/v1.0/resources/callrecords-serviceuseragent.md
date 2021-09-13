@@ -1,16 +1,16 @@
 ---
 title: serviceUserAgent 资源类型
 description: serviceUserAgent 类型
-localization_priority: Normal
+ms.localizationpriority: medium
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: bb8880b130c763599d75c5542725f1bb0fe850bad532693a62ee73ff25ffbfb3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7421be4deaee6dad2d8b9177a43b09a27683b465
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54243628"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59113789"
 ---
 # <a name="serviceuseragent-resource-type"></a>serviceUserAgent 资源类型
 

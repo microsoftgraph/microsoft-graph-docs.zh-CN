@@ -1,16 +1,16 @@
 ---
 title: 获取用户活动
 description: 获取给定用户的活动。 与 **最近的** OData 函数不同，将返回不带历史记录的活动。 权限 UserActivity.ReadWrite.CreatedByApp 将针对响应应用额外筛选，以便仅返回由应用程序创建的活动。 如果用户特别活动并且其他应用程序已创建最近的活动，则此服务器端筛选可能会导致空页。 若要获取应用程序的活动，请使用 **nextLink** 属性分页。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: project-rome
 author: ailae
 doc_type: apiPageType
-ms.openlocfilehash: bb099753a842b6aeef1a0c5f8353ea390ebb6de79a054db8081c72ca795a9dab
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9a9829c420cb937bd137875b775ab42479c56664
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54175446"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104759"
 ---
 # <a name="get-user-activities"></a>获取用户活动
 

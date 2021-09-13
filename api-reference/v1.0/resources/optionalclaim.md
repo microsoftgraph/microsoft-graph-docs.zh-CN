@@ -1,16 +1,16 @@
 ---
 title: optionalClaim 资源类型
 description: 在此处提供说明
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: a4302ac786dea126dad20562a8fbaa9aec3bd4128d3c4f4c315f30dc538b2661
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 91d110f47b9d3a95b32173bb1b8b8880799d6d11
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54180591"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104101"
 ---
 # <a name="optionalclaim-resource-type"></a>optionalClaim 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "54180591"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |additionalProperties|String collection| 声明的其他属性。 如果此集合中存在属性，则它会修改 name 属性中指定的可选声明的行为。 |
-|essential|Boolean| 如果值为 true，则客户端指定的声明是确保最终用户请求的特定任务的流畅授权体验所必需的。 默认值为 false。|
+|essential|布尔值| 如果值为 true，则客户端指定的声明是确保最终用户请求的特定任务的流畅授权体验所必需的。 默认值为 false。|
 |name|String| 可选声明的名称。 |
 |source|String| 源 (声明) 目录对象。 存在来自扩展属性的预定义声明和用户定义的声明。 如果源值为 null，则声明为预定义的可选声明。 如果源值为 user，name 属性中的值为 user 对象的扩展属性。 |
 

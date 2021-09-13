@@ -2,15 +2,15 @@
 title: driverUpdateProfileApprovalType 枚举类型
 description: 表示驱动程序更新配置文件的审批类型的枚举类型。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: dba6d0f21ebb8f86c00b0cc55181ee27d4cf0938
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 34bd584a82f24ea8a5a1930dda5bf42b92a5c423
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58821646"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59029925"
 ---
 # <a name="driverupdateprofileapprovaltype-enum-type"></a>driverUpdateProfileApprovalType 枚举类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58821646"
 表示驱动程序更新配置文件的审批类型的枚举类型。
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |手动|0|这表示需要手动批准驱动程序和固件配置文件。|
 |自动|1|这表示自动批准驱动程序和固件配置文件。|

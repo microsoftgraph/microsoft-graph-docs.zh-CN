@@ -2,15 +2,15 @@
 title: Microsoft Intune 中的设备配置
 description: 使用 Microsoft Intune 设备配置工作负载管理你管理的所有设备上的设置和功能。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: b33fc75d8856b2bee9d91c3441471ff71b377e34d7ec9ae1b883949a0c7c365e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d97fc069f7862d242cee325dd875d826ef747113
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54126513"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118472"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Microsoft Intune 中的设备配置
 
@@ -144,7 +144,7 @@ ms.locfileid: "54126513"
 - [分级英国电视类型](intune-deviceconfig-ratingunitedkingdomtelevisiontype.md)
 - [分级美国电影类型](intune-deviceconfig-ratingunitedstatesmoviestype.md)
 - [分级美国电视类型](intune-deviceconfig-ratingunitedstatestelevisiontype.md)
-- [报告](intune-deviceconfig-report.md)
+- [Report](intune-deviceconfig-report.md)
 - [报表根目录](intune-deviceconfig-reportroot.md)
 - [所需密码类型](intune-deviceconfig-requiredpasswordtype.md)
 - [安全搜索筛选器类型](intune-deviceconfig-safesearchfiltertype.md)

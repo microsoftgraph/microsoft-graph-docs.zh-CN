@@ -2,15 +2,15 @@
 title: serviceUpdateMessage：markUnread
 description: 将已登录用户的服务更新消息列表标记为未读。
 author: payiAzure
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 6785c92eab7d8cbe68a8ac45f20ea1396b82cd00
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 971382ac0cab7614d87b408da3a85788f193f029
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266755"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59119007"
 ---
 # <a name="serviceupdatemessage-markunread"></a>serviceUpdateMessage：markUnread
 命名空间：microsoft.graph
@@ -49,7 +49,7 @@ POST /admin/serviceAnnouncement/messages/markUnread
 
 |参数|类型|说明|
 |:---|:---|:---|
-|messageIds|String collection|要标记为未读的邮件标识号列表。|
+|messageIds|字符串集合|要标记为未读的邮件标识号列表。|
 
 ## <a name="response"></a>响应
 

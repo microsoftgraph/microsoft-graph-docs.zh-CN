@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: SpecialFolder
-localization_priority: Normal
+ms.localizationpriority: medium
 description: SpecialFolder 资源将与特殊文件夹相关的数据项分组到一个单一结构。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 696333867f06295640574449780db3f239674aedcbea3ce81c283c6f84211704
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f8bef54bc709cb457bf30e0ce01e8a774d785cbf
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54180444"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136341"
 ---
 # <a name="specialfolder-resource-type"></a>SpecialFolder 资源类型
 

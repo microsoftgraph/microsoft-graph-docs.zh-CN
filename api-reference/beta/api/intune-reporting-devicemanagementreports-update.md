@@ -2,15 +2,15 @@
 title: 更新 deviceManagementReports
 description: 更新 deviceManagementReports 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ebe77a74c0ed7faa41c6e0c6e8d6447069dd9d6e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 153a663d0562016cd145d36cda058a3d821251ff
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784532"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59030632"
 ---
 # <a name="update-devicemanagementreports"></a>更新 deviceManagementReports
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/reports
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

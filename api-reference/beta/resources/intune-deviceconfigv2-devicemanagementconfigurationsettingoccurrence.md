@@ -2,15 +2,15 @@
 title: deviceManagementConfigurationSettingOccurrence 资源类型
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d339ba6fce600c578ce4aa180a509ec685ca2216
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f75a0a4b55c0f9fbfe254952e353fa7a034a3af5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816912"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020383"
 ---
 # <a name="devicemanagementconfigurationsettingoccurrence-resource-type"></a>deviceManagementConfigurationSettingOccurrence 资源类型
 
@@ -23,9 +23,9 @@ ms.locfileid: "58816912"
 尚未记录
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|描述|
 |:---|:---|:---|
-|minDeviceOccurrence|Int32|可以在设备上设置最短时间设置。 MinDeviceOccurrence 为 0 意味着设置是可选的|
+|minDeviceOccurrence|Int32|可以在设备上设置最短时间设置。 MinDeviceOccurrence 为 0 表示设置是可选的|
 |maxDeviceOccurrence|Int32|可以在设备上设置"最大时间"设置。 |
 
 ## <a name="relationships"></a>关系

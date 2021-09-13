@@ -1,22 +1,22 @@
 ---
 title: identityCustomUserFlowAttribute 资源类型
-description: 表示租户中的自定义Azure Active Directory流属性，可用于自助服务注册用户流。
+description: 表示租户中的自定义用户Azure Active Directory属性，可用于自助服务注册用户流。
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 5fdad3bf3fabb75cfa882e2c9b78dd2f008a596e70630b5eb34b3f3aa215baff
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 592a350b03f282900cc4badbe7e5c2e1179e58a5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54126576"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056072"
 ---
 # <a name="identitycustomuserflowattribute-resource-type"></a>identityCustomUserFlowAttribute 资源类型
 
 命名空间：microsoft.graph
 
-表示租户中的自定义Azure Active Directory流属性，可用于自助服务注册用户流。 这些属性无法修改且为只读。
+表示租户中的自定义用户Azure Active Directory属性，可用于自助服务注册用户流。 这些属性无法修改且为只读。
 
 继承自 [identityUserFlowAttribute](../resources/identityuserflowattribute.md)。
 

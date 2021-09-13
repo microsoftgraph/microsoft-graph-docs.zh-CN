@@ -2,15 +2,15 @@
 title: ratingCanadaMoviesType 枚举类型
 description: 加拿大电影评级标签
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 586970be00e28267c653ae3332445ab59d4fe5bbd4fc911972eaf19ce0800265
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 31820cfeb41a39dc47b9beaaaa9fdd6f16077d4e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54197063"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59053012"
 ---
 # <a name="ratingcanadamoviestype-enum-type"></a>ratingCanadaMoviesType 枚举类型
 

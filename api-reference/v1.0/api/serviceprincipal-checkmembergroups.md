@@ -1,22 +1,22 @@
 ---
 title: servicePrincipal：checkMemberGroups
-description: 检查指定组列表中的成员身份。从列表中返回服务主体具有直接或可传递成员身份的组。
-localization_priority: Priority
+description: 检查指定组列表中的成员身份。从列表中返回服务主体具有直接或传递成员身份的组。
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 81708212bc108f6902a26b8f3b2ca7c7bdd220d0
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: fe9f1c354a2033a6953c4232dee85ebf2e43cb23
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053851"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59053258"
 ---
 # <a name="serviceprincipal-checkmembergroups"></a>servicePrincipal：checkMemberGroups
 
 命名空间：microsoft.graph
 
-检查指定组列表中的成员身份。 将列表中具有直接或可传递成员身份的 [servicePrincipal](../resources/serviceprincipal.md) 组返回。
+检查指定组列表中的成员身份。从列表中返回组中 [servicePrincipal](../resources/serviceprincipal.md) 具有直接或传递成员身份的组。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

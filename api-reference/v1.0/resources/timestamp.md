@@ -1,16 +1,16 @@
 ---
 title: timeStamp 资源类型
 description: 时间点的日期和时间信息。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: JeremyKelley
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: a07dc3c6c1aa9bc787bed2e519ce8d4e7db4d582637fe2fdfbf41e79789a52f1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f284439f63d15c1cf6d070894a8f9f9074f69e24
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163619"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59093986"
 ---
 # <a name="timestamp-resource-type"></a>timeStamp 资源类型
 

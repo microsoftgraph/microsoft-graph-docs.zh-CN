@@ -1,16 +1,16 @@
 ---
 title: 获取 eventMessage
 description: 展开事件 **导航属性** 上的参数，获取与会者日历中的关联事件。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4dc549c39c5113e972485fab647b5c4363b6ca14
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3f2545a287b2385573cf7f61791ecbb4f518fcfc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048741"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59080119"
 ---
 # <a name="get-eventmessage"></a>获取 eventMessage
 
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADYAAAImV_lAAA=
 ---
 
 #### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "name": "get_eventmessage",

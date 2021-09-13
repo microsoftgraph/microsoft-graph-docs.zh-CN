@@ -2,22 +2,22 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: 发送访问项目的邀请
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 description: 发送 driveItem 的共享邀请。
 doc_type: apiPageType
-ms.openlocfilehash: bbd7d4226cd4c289019dd5bcc6abd863f2be7688
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 05a1502363244b0ee438a4a1afb05e967ad7890d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50473845"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59026645"
 ---
 # <a name="send-a-sharing-invitation"></a>发送共享邀请
 
 命名空间：microsoft.graph
 
-发送 **driveItem** 的共享邀请。
+发送 **driveItem 的共享邀请**。
 共享邀请向收件人提供权限，并选择性地向其发送带[共享链接][]的电子邮件。
 
 ## <a name="permissions"></a>权限
@@ -68,8 +68,8 @@ POST /users/{userId}/drive/items/{itemId}/invite
 | requireSignIn    | Boolean                        | 指定邀请的收件人是否需要登录才能查看共享项。
 | sendInvitation   | Boolean                        | 如果为 true，则向收件人发送[共享链接][]。 否则，直接授予权限，而不发送通知。
 | 角色            | 集合（字符串）             | 指定要授予共享邀请收件人的角色。
-| expirationDateTime | DateTimeOffset                       | 指定权限过期后的日期/时间。 在 OneDrive for Business、SharePoint 和高级个人 OneDrive 帐户上可用。
-| 密码           | String                         | 创建者在邀请上设置的密码。 可选，仅 OneDrive 个人。
+| expirationDateTime | DateTimeOffset                       | 指定权限过期的 DateTime。 可用于OneDrive for Business、SharePoint和高级个人OneDrive帐户。
+| 密码           | String                         | 创建者邀请上设置的密码。 可选且OneDrive个人。
 
 ## <a name="example"></a>示例
 
@@ -156,11 +156,11 @@ Content-type: application/json
 ## <a name="remarks"></a>备注
 
 * **driveType** 为 `personal` 的 [Drives](../resources/drive.md)（OneDrive 个人版）无法创建或修改根 DriveItem 上的权限。
-* 有关可用角色的列表，请参阅 [角色属性值](../resources/permission.md#roles-property-values)。
+* 有关可用角色的列表，请参阅 [roles 属性值](../resources/permission.md#roles-property-values)。
 
 ## <a name="error-responses"></a>错误响应
 
-请参阅[错误响应][error-response]主题，详细了解错误返回方式。
+请阅读 [错误响应][error-response] 主题，以了解有关如何返回错误的详细信息。
 
 
 [driveRecipient]: ../resources/driverecipient.md

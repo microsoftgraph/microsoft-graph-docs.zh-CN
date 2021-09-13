@@ -2,15 +2,15 @@
 title: 获取 deviceInstallState
 description: 读取 deviceInstallState 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d2b57dd0a58cdba0881cb566d7033ddca54c9a7c8bd5043f236d44fe8264ce5e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: dd2d7418de3bf1070c27a43d1031ad863a108e4e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54247338"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056345"
 ---
 # <a name="get-deviceinstallstate"></a>获取 deviceInstallState
 

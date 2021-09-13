@@ -2,15 +2,15 @@
 title: 'message: copy'
 description: 将邮件复制到文件夹。
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f307743f534a9461e575bb10942d8b16fa30f3be
-ms.sourcegitcommit: 998c63e6290cfb5ad4a6bd3eb3e249d282f962a3
+ms.openlocfilehash: 871afe0e45b9f1f0ffc7a23320a3b5fa32194511
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58531353"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110317"
 ---
 # <a name="message-copy"></a>message: copy
 

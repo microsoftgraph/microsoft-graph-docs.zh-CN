@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: BaseItem
-localization_priority: Normal
+ms.localizationpriority: medium
 description: baseItem 资源是抽象资源，其中包含一组在若干其他资源类型中共享的常见类型。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 2352eb143bb0a8042ca38096d114c92fb3f181091d505df4487dd329c1abed15
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5937af012f61b804bc773de41a09cc94bdb51dc6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163857"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019403"
 ---
 # <a name="baseitem-resource-type"></a>BaseItem 资源类型
 
@@ -65,18 +65,18 @@ ms.locfileid: "54163857"
 | lastModifiedDateTime | dateTimeOffset    | 上次修改项目的日期和时间。只读。                                   |
 | name                 | string            | 项目名称。读写。                                                      |
 | parentReference      | [itemReference][] | 父信息（如果此项具有父级）。读写。                              |
-| webUrl               | string (url)      | 在浏览器中显示此资源的 URL。只读。                              |
+| WebUrl               | string (url)      | 在浏览器中显示此资源的 URL。只读。                              |
 
 ## <a name="relationships"></a>关系
 
 | 关系       | 类型     | 说明
 |:-------------------|:---------|:---------------------------------------------
-| createdByUser      | [user][] | 创建了项的用户的身份。 只读。
-| lastModifiedByUser | [user][] | 上次修改项的用户的标识。 只读。
+| createdByUser      | [user][] | 创建了项的用户的身份。只读。
+| lastModifiedByUser | [user][] | 上次修改项的用户的标识。只读。
 
 [identitySet]: identityset.md
 [itemReference]: itemreference.md
-[user]: user.md
+[用户]: user.md
 
 ## <a name="remarks"></a>注解
 

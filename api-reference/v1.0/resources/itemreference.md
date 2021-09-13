@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: ItemReference
-localization_priority: Normal
+ms.localizationpriority: medium
 description: ItemReference 资源提供通过 API 寻址 DriveItem 所需的必要信息。
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: bbd491fb47404ad0ae58f3a0e10964e90a1c710198733ac6994db15848f9b00b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f36fe0d4b4d7daff9a956a4d3d9c41f450dbeed0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54141530"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084284"
 ---
 # <a name="itemreference-resource-type"></a>ItemReference 资源类型
 

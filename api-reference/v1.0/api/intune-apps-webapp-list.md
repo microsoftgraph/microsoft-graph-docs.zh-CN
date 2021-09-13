@@ -2,15 +2,15 @@
 title: 列出 webApps
 description: 列出 webApp 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0017cb166b9f45b3ff572ca5032be76f2f38e8b8c9a2caed28f48682d3fe6ade
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 64ce06e4143f0e5c5820cd048b8e7e65fe42c07e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54212555"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016440"
 ---
 # <a name="list-webapps"></a>列出 webApps
 

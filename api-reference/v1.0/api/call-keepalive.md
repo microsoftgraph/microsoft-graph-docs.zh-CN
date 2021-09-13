@@ -2,15 +2,15 @@
 title: call： keepAlive
 description: 每隔 15 到 45 分钟对此 API 提出请求，以确保正在进行的调用保持活动状态。
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a2561e33810264587951ae3b20a19507bf6e6abf
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: a26b0b6cf2f9a3da8c19175bfbfffffd3276247b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788120"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59053761"
 ---
 # <a name="call-keepalive"></a>call： keepAlive
 
@@ -20,7 +20,7 @@ ms.locfileid: "52788120"
 
 必须在上一个请求或调用开始后 45 分钟内至少提出一个成功请求。
 
-我们建议您以较短的时间间隔发送请求， (15 分钟) 。 确保这些请求成功防止呼叫超时和结束。
+我们建议您以较短的时间间隔发送请求， (每隔 15 分钟) 。 确保这些请求成功防止呼叫超时和结束。
 
 尝试向已结束的呼叫发送请求将导致 `404 Not-Found` 错误。 与调用相关的资源应在应用程序端清理。
 

@@ -2,15 +2,15 @@
 title: deviceManagementConfigurationSettingDependedOnBy 资源类型
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: db277b1879ae70b27fa86fbb74fb6a72630f95c0
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 064ee7224af16b493e4d394402e64a024eb538ed
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806934"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59030401"
 ---
 # <a name="devicemanagementconfigurationsettingdependedonby-resource-type"></a>deviceManagementConfigurationSettingDependedOnBy 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58806934"
 尚未记录
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |dependedOnBy|String|依赖于当前设置的子设置的标识符|
 |必需|Boolean|根据父设置的选择确定是否需要子设置的值|

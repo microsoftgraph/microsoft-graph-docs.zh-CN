@@ -2,15 +2,15 @@
 title: 列出 mobileAppAssignments
 description: 列出 mobileAppAssignment 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: abf4e88d4c89ac5a5a730e5a095cf3ff59c3652b81c81c2b6bfb7ebd07d64b9b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7c711fa2a5d54b5eaaef9c4daade559efb06c531
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54145031"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016454"
 ---
 # <a name="list-mobileappassignments"></a>列出 mobileAppAssignments
 

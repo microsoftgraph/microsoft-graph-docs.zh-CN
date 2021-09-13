@@ -2,15 +2,15 @@
 title: 获取 riskDetection
 description: 读取 riskDetection 对象的属性和关系。
 author: cloudhandler
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 86dacb17a3f123daa5f60c249d02aa0725a2421e63d1a9bd9aa33af977ebe672
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1acc4b34144d77f5713b9d7c34812b8e98e487b3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54147222"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067743"
 ---
 # <a name="get-riskdetection"></a>获取 riskDetection
 命名空间：microsoft.graph
@@ -18,7 +18,7 @@ ms.locfileid: "54147222"
 读取 [riskDetection](../resources/riskdetection.md) 对象的属性和关系。
 
 >[!NOTE]
->必须具有许可证Azure AD Premium P1 P2 许可证才能使用风险检测 API。
+>你必须拥有一个Azure AD Premium P1 P2 许可证才能使用风险检测 API。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions_reference)。

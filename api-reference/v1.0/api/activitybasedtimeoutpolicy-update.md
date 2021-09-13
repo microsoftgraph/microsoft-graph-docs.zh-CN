@@ -1,16 +1,16 @@
 ---
 title: 更新 activitybasedtimeoutpolicy
 description: 更新 activityBasedTimeoutPolicy 对象的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: lujiangfeng666
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: f209332b18fff377c35508f856dc00f1a7b2c036
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: df6c781787814eb4e8404ee9c5684dcd4567d357
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050659"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59080479"
 ---
 # <a name="update-activitybasedtimeoutpolicy"></a>更新 activitybasedtimeoutpolicy
 
@@ -51,10 +51,10 @@ PATCH /policies/activityBasedTimeoutPolicies/{id}
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|definition|字符串集合| 包含 JSON 字符串的字符串集合，用于定义此策略的规则和设置。  必需。|
+|definition|String collection| 包含 JSON 字符串的字符串集合，用于定义此策略的规则和设置。  必需。|
 |description|String| 此策略的说明。|
-|displayName|String| 此策略的显示名称。 必需。|
-|isOrganizationDefault|布尔值|如果设置为 true，则激活此策略。 同一策略类型可以有很多策略，但只有一个策略可以激活为组织默认策略。 可选，默认值为 false。|
+|displayName|String| 此策略的显示名称。 必填。|
+|isOrganizationDefault|Boolean|如果设置为 true，则激活此策略。 同一策略类型可以有很多策略，但只有一个策略可以激活为组织默认策略。 可选，默认值为 false。|
 
 ## <a name="response"></a>响应
 

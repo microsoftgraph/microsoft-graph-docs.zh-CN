@@ -1,14 +1,14 @@
 ---
 title: 使用 Microsoft Graph 工具包构建 SharePoint Web 部件
 description: 开始使用 Microsoft Graph 工具包构建 SharePoint Web 部件。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: elisenyang
-ms.openlocfilehash: 74d13b37bf5de08540b938b55566ee16fbb269f1b84f736f8ef0e804edb10082
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d30a2dd4fbaa89890124332528ed157e9043f8a9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54221059"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59083808"
 ---
 # <a name="build-a-sharepoint-web-part-with-the-microsoft-graph-toolkit"></a>使用 Microsoft Graph 工具包构建 SharePoint Web 部件
 

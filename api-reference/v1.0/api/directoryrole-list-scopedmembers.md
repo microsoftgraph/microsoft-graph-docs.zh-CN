@@ -2,15 +2,15 @@
 title: 列出目录角色的 scopedMembers
 description: 检索目录角色的 scopedRoleMembership 对象列表。
 author: abhijeetsinha
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a31144a19d465584f3a26d3772f63dff97e76823
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 91d3db549bb9a629b1e9819d544522cd4d1556ae
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53208043"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046286"
 ---
 # <a name="list-scopedmembers-for-a-directory-role"></a>列出目录角色的 scopedMembers
 

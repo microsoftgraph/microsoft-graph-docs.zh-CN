@@ -1,15 +1,15 @@
 ---
 title: 通过应用程序服务创建和发送通知
 description: '将应用程序服务设置为通过 Microsoft Graph 向不同客户端发送以用户为中心的通知。 '
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: notifications
 author: merzink
-ms.openlocfilehash: 11cceb203b654113e16c2b7a1e9f461ea1bbac27342b15626754ccd5c6ccdbd2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 24cac26e548d5f05724ee38559f6ef3bb4801277
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54174722"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062318"
 ---
 # <a name="create-and-send-a-notification-from-your-app-service"></a>通过应用程序服务创建和发送通知
 

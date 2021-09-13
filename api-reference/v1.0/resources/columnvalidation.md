@@ -1,16 +1,16 @@
 ---
 author: swapnil1993
 title: columnValidation 资源类型
-description: 包含验证列值的数据。
-localization_priority: Normal
+description: 包含用于验证列值的数据。
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 5a92f15d4f8decf07f6791ee704f38f49d91fe00
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: a2c5b464b7f08fcd1de078b94b5ca1b039b6a6f9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696558"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062787"
 ---
 # <a name="columnvalidation-resource-type"></a>columnValidation 资源类型
 

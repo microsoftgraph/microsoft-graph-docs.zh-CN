@@ -1,14 +1,14 @@
 ---
 title: Microsoft 计划中的议程Graph Toolkit
 description: mgt-agenda Web 组件用于表示用户或组日历中的事件。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: nmetulev
-ms.openlocfilehash: 0cf1eff6e34716a30bc3479ec5c6d0ac4025442e4fcdbfa3ced1fe7a82b3bf47
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c69c4adf43a16c3a8c8e6af643e89091c28dc4a4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54134768"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035351"
 ---
 # <a name="agenda-component-in-the-microsoft-graph-toolkit"></a>Microsoft 计划中的议程Graph Toolkit
 
@@ -16,7 +16,7 @@ Web `mgt-agenda` 组件表示用户或组日历中的事件。 默认情况下�
 
 ## <a name="example"></a>示例
 
-以下示例显示使用 组件显示的已登录用户的日历 `mgt-agenda` 事件。 可以使用代码编辑器查看 [属性如何](#properties) 更改组件的行为。
+以下示例显示使用 组件显示的已登录用户的日历 `mgt-agenda` 事件。 可以使用代码编辑器查看属性 [如何](#properties) 更改组件的行为。
 
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-agenda--simple&source=docs" height="500"></iframe>
 
@@ -129,7 +129,7 @@ mgt-agenda {
 
 从控件中触发以下事件。
 
-事件 | 何时发出 | 自定义数据 | Cancelable | 气泡 | 使用自定义模板
+Event | 何时发出 | 自定义数据 | Cancelable | 气泡 | 使用自定义模板
 ------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
 `eventClick` | 用户单击或点击事件。 | 选定 [事件](/graph/api/resources/event) | 否 | 否 | 是，使用自定义 **事件** 模板
 
@@ -137,13 +137,13 @@ mgt-agenda {
 
 ## <a name="microsoft-graph-permissions"></a>Microsoft Graph 权限
 
-此组件使用以下 Microsoft Graph API 和权限：
+此组件使用下列 Microsoft Graph API 和权限：
 
 | 配置 | 权限 | API
 | - | - | - |
 | default | Calendars.Read | [/me/calendarview](/graph/api/calendar-list-calendarview) |
 
-该组件允许你指定不同的 Microsoft Graph查询来调用 (，如 `/groups/{id}/calendar/calendarView`) 。 在这种情况下，将权限追加到字符串的末尾，以 分隔 `|` 。
+该组件允许你指定其他 Microsoft Graph查询来调用 (，如 `/groups/{id}/calendar/calendarView`) 。 在这种情况下，将权限追加到字符串的末尾，以 分隔 `|` 。
 
 使用默认模板和默认 `renderAttendees` 模板时，需要其他 API 和权限。 此组件的默认模板对具有与会者的事件使用 [mgt-people](people.md) 组件，并继承所有权限。
 

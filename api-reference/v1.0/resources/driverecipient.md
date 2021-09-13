@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: DriveRecipient
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 description: DriveRecipient 资源表示用户、组或其他收件人使用 invite 操作进行共享。
 doc_type: resourcePageType
-ms.openlocfilehash: 72bb8c3ab42dc6240d6c088a6634f969dd6a03e14c71053c12a3abc742247093
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9a272a3a6bbfe32999a297635c2b189fb32324e3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54149987"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056100"
 ---
 # <a name="driverecipient-resource"></a>DriveRecipient 资源
 

@@ -2,14 +2,14 @@
 title: Microsoft Graph 数据连接策略和许可
 description: 介绍支持的策略以及如何为组织分配 ISV 访问 SKU。
 author: fercobo-msft
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: data-connect
-ms.openlocfilehash: 904890023526fac2d33d51347de53d4afc7bec46c9ef62479a32ebe9874561ab
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7bfff12f4ca8bb8f61f6e9e45fab3fff488ed9d6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54246400"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59108742"
 ---
 # <a name="microsoft-graph-data-connect-policies-and-billing"></a>Microsoft Graph 数据连接策略和计费
 

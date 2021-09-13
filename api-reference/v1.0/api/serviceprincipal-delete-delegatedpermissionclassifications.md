@@ -1,16 +1,16 @@
 ---
 title: 删除 delegatedPermissionClassification
 description: 从 API 的服务主体中删除委派权限分类。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: decce0d0a9e3f6915676cb7151da0d43ddff3067
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 135b1fb92560c989a3db193127796cf6a2c13443
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133096"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110135"
 ---
 # <a name="delete-delegatedpermissionclassification"></a>删除 delegatedPermissionClassification
 
@@ -18,7 +18,7 @@ ms.locfileid: "50133096"
 
 删除以前为委派权限设置的[delegatedPermissionClassification。](../resources/delegatedPermissionClassification.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

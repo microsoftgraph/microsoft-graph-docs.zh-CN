@@ -2,15 +2,15 @@
 title: 创建 serviceprincipal
 description: 创建新的 serviceprincipal 对象。
 author: sureshja
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
-ms.openlocfilehash: 83410afe63fadfc0d9e04e10cf8f8d66bb37c530
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 39c6ad44a8d5a668927f2adbbd06be1beee9aceb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053809"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59026065"
 ---
 # <a name="create-serviceprincipal"></a>创建 servicePrincipal
 

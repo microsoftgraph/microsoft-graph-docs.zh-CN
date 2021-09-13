@@ -1,14 +1,14 @@
 ---
 author: davidmu1
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: msgraph
 ms.topic: include
-ms.openlocfilehash: 41882177c727aa5098b0b6ccd7389e582ce39c88276e3085a4d08c27972bdd89
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: da30ddd679bdbdbcc84bf6a3980d8b42ee6cbd50
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196643"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035764"
 ---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
@@ -19,5 +19,9 @@ ms.locfileid: "54196643"
 | POST, PUT, DELETE, PATCH | 每 20 秒 200 个请求 | 每 20 秒 100 个请求 |
 | 任何 | 每 20 秒 2000 个请求 | 每 20 秒 1000 个请求 |
 
-上述限制适用于下列资源:  
-windowsDefenderApplicationControlSupplementalPolicy, windowsDefenderApplicationControlSupplementalPolicyAssignment, windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus, windowsDefenderApplicationControlSupplementalPolicyDeploymentSummary.
+上述限制适用于下列资源: 
+
+ 
+| <!-- fake header-->                                                                                                                                                                                                                                                                                                                                                                            |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <ul> <li> [windowsDefenderApplicationControlSupplementalPolicy](/graph/api/resources/windowsdefenderapplicationcontrolsupplementalpolicy) <li> [windowsDefenderApplicationControlSupplementalPolicyAssignment](/graph/api/resources/windowsdefenderapplicationcontrolsupplementalpolicyassignment) <li> [windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus](/graph/api/resources/windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus) <li> [windowsDefenderApplicationControlSupplementalPolicyDeploymentSummary](/graph/api/resources/windowsdefenderapplicationcontrolsupplementalpolicydeploymentsummary) </ul> |

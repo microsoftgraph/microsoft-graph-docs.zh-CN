@@ -2,15 +2,15 @@
 title: 列出 educationSchool 的用户
 description: 检索学校中的用户列表。
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d37bec88be07f9dba3e91d44558508ce82004c74
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 394ec23de3bb70b295a8542bea3f052cc7eb9921
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52232002"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046209"
 ---
 # <a name="list-users-of-an-educationschool"></a>列出 educationSchool 的用户
 

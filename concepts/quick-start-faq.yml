@@ -3,13 +3,13 @@ metadata:
   title: Microsoft Graph 快速入门 FAQ
   description: 此 FAQ 解答了与 Microsoft Graph 快速入门相关的问题。
   author: jasonjoh
-  localization_priority: Normal
-  ms.openlocfilehash: eacd894355f2ae9d298f797d00e14f02aa026786ad93efe39f07bbbda764c058
-  ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+  ms.localizationpriority: medium
+  ms.openlocfilehash: 9a102ce9cec318be5ced141dad413ad1cb45348e
+  ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/05/2021
-  ms.locfileid: "54182257"
+  ms.lasthandoff: 09/12/2021
+  ms.locfileid: "59019047"
 title: Microsoft Graph 快速入门 FAQ
 summary: >
   此 FAQ 解答了与 [Microsoft Graph 快速启动](https://developer.microsoft.com/graph/quick-start)相关的问题。
@@ -120,8 +120,8 @@ sections:
   - question: >
       登录后，告诉我需要管理员批准。
     answer: >
-      登录快速启动示例之一后，你可能会看到一条消息，显示需要管理员批准"XXX 教程需要访问组织中只有管理员可以授予的资源的权限。 Please ask an admin to grant permission to this app before you can use it." 这不是示例的 Bug！ 任何快速启动请求都不Graph需要 *管理员同意的"快速启动"* 权限范围。 租户管理员可以禁用你同意为Graph任何应用授予权限范围的能力。 在这种情况下，你将看到此错误。
+      登录快速启动示例之一后，你可能会看到一条消息，显示需要管理员批准"XXX 教程需要访问组织中只有管理员可以授予的资源的权限。 Please ask an admin to grant permission to this app before you can use it." 这不是示例的 Bug！ 任何快速启动请求都不Graph需要管理员同意 *的任何权限* 范围。 租户管理员可以禁用你同意Graph他们尚未批准的任何应用的权限范围。 在这种情况下，你将看到此错误。
 
 
-      你需要与管理员一起审批、使用个人 Microsoft 帐户 (Outlook.com) ，或使用 Microsoft 365 租户和 Exchange Online。
+      你需要与管理员一起审批、使用个人 Microsoft 帐户 (Outlook.com) 或使用具有 Exchange Online 的测试 Microsoft 365 租户。
 additionalContent: "\n## <a name=\"didnt-find-what-you-need\"></a>找不到需要的内容？\n\n如果此 FAQ 无法解答在使用一个或多个快速启动时遇到的问题，请使用下面的“反馈”部分告知我们。"

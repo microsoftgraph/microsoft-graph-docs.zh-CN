@@ -2,15 +2,15 @@
 title: 更新 windowsDefenderAdvancedThreatProtectionConfiguration
 description: 更新 windowsDefenderAdvancedThreatProtectionConfiguration 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 926221b74244fee3a854cb33a62f4811d54b1f7c45b2905b4cf33a3ebc0d1ac2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 898fef76759e3f9635ff0164613d80a01f97a497
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54234048"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59068086"
 ---
 # <a name="update-windowsdefenderadvancedthreatprotectionconfiguration"></a>更新 windowsDefenderAdvancedThreatProtectionConfiguration
 
