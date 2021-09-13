@@ -2,15 +2,15 @@
 title: 删除 onPremEncryptedPayload
 description: 删除 onPremEncryptedPayload。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5cf94c4d25c7e84343019d2671b1c8561b955be8
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 90c75b8548e223d5506800c67c047bb8e05c820c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816301"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59132650"
 ---
 # <a name="delete-onpremencryptedpayload"></a>删除 onPremEncryptedPayload
 
@@ -43,7 +43,7 @@ DELETE /onPremEncryptedPayloads/{onPremEncryptedPayloadsId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

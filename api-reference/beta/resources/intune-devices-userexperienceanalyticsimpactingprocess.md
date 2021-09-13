@@ -2,15 +2,15 @@
 title: userExperienceAnalyticsImpactingProcess 资源类型
 description: 用户体验分析影响最强的进程实体。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fe90734826416aca89065c47568ce9e68d085753
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d61d647db49c61960afdd15d9401138f465d662a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794404"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59125692"
 ---
 # <a name="userexperienceanalyticsimpactingprocess-resource-type"></a>userExperienceAnalyticsImpactingProcess 资源类型
 
@@ -37,8 +37,8 @@ ms.locfileid: "58794404"
 |id|String|用户体验分析影响最强的进程实体的唯一标识符。|
 |deviceId|String|受影响设备的唯一标识符。|
 |“类别”|String|影响流程的类别。|
-|processName|字符串|进程名称。|
-|description|String|过程说明。|
+|processName|String|进程名称。|
+|说明|String|过程说明。|
 |发布者|String|进程的发布者。|
 |impactValue|双精度|进程的影响值。 有效值为 0 到 1.79769313486232E+308|
 

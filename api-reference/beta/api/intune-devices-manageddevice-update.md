@@ -2,15 +2,15 @@
 title: 更新 managedDevice
 description: 更新 managedDevice 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9f2fb2a0618eb9df5592bc5e69543470a61b5792
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5d0b1055bcf6d1ccbe16cd562cd28b8606410e26
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806353"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59133021"
 ---
 # <a name="update-manageddevice"></a>更新 managedDevice
 
@@ -49,7 +49,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -59,7 +59,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|设备的唯一标识符。 此属性是只读的。|
+|id|String|设备的唯一标识符。 此属性是只读的。|
 |userId|String|与设备关联的用户的唯一标识符。 此属性是只读的。|
 |deviceName|String|设备的名称。 此属性是只读的。|
 |hardwareInformation|[hardwareInformation](../resources/intune-devices-hardwareinformation.md)|设备的硬向详细信息。  包括存储空间、制造商、序列号等信息。此属性为只读。|
@@ -132,7 +132,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |physicalMemoryInBytes|Int64|内存总量（以字节为单位）。 此属性是只读的。|
 |processorArchitecture|[managedDeviceArchitecture](../resources/intune-devices-manageddevicearchitecture.md)|处理器体系结构。 此属性是只读的。 可取值为：`unknown`、`x86`、`x64`、`arm`、`arM64`。|
 |specificationVersion|String|规范版本。 此属性是只读的。|
-|joinType|[joinType](../resources/intune-devices-jointype.md)|设备加入类型。 可能的值是：`unknown`、`azureADJoined`、`azureADRegistered`、`hybridAzureADJoined`。|
+|joinType|[joinType](../resources/intune-devices-jointype.md)|设备加入类型。 可取值为：`unknown`、`azureADJoined`、`azureADRegistered`、`hybridAzureADJoined`。|
 |skuFamily|String|设备 sku 系列|
 |skuNumber|Int32|设备 sku 号。 另请参阅 [：sysinfoapi.h (GetProductInfo) ](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getproductinfo)。 有效值为 0 到 2147483647。 此属性是只读的。|
 |managementFeatures|[managedDeviceManagementFeatures](../resources/intune-devices-manageddevicemanagementfeatures.md)|设备管理功能。 可取值为：`none`、`microsoftManagedDesktop`。|

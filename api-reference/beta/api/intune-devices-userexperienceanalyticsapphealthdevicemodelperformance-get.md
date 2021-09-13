@@ -2,15 +2,15 @@
 title: 获取 userExperienceAnalyticsAppHealthDeviceModelPerformance
 description: 读取 userExperienceAnalyticsAppHealthDeviceModelPerformance 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bc7caf733d961101d5fb74e0446e12929e7daf47
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4d430565adf2f0c5fccc62190d8e80f7351de2b0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788820"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59102791"
 ---
 # <a name="get-userexperienceanalyticsapphealthdevicemodelperformance"></a>获取 userExperienceAnalyticsAppHealthDeviceModelPerformance
 
@@ -46,7 +46,7 @@ GET /deviceManagement/userExperienceAnalyticsAppHealthDeviceModelPerformance/{us
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

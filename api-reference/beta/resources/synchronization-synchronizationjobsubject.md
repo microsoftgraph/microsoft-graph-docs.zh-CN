@@ -2,15 +2,15 @@
 title: synchronizationJobSubject 资源类型
 description: 表示将在按需预配期间设置的对象。
 author: ArvindHarinder1
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: c7dea31898cb0bfb521367042401be7c583c60c2868d4805682c9d0e707fc898
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1f4de7d4c3d518b795d739a80403903842d16a16
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54226110"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59090960"
 ---
 # <a name="synchronizationjobsubject-resource-type"></a>synchronizationJobSubject 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54226110"
 |属性|类型|说明|
 |:---|:---|:---|
 |objectId|String|要应用 synchronizationJob 的对象的标识符。|
-|objectTypeName|字符串|要应用 synchronizationJob 的对象的类型。|
+|objectTypeName|String|要应用 synchronizationJob 的对象的类型。|
 
 ## <a name="relationships"></a>关系
 无。

@@ -2,15 +2,15 @@
 title: omaSetting 资源类型
 description: OMA 设置定义。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 67a33c9d4cb1791e5d5de870805738dcd58f9cd5
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: fc811056217cb537cd3c02095c6551663ad5eb98
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805413"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59111066"
 ---
 # <a name="omasetting-resource-type"></a>omaSetting 资源类型
 
@@ -26,7 +26,7 @@ OMA 设置定义。
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|显示名称。|
-|description|String|说明。|
+|说明|String|说明。|
 |omaUri|String|OMA。|
 |secretReferenceValueId|String|用于查找解密密码的 ReferenceId。 此属性是只读的。|
 |isEncrypted|Boolean|指示值字段是否加密。 此属性是只读的。|

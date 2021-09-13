@@ -2,15 +2,15 @@
 title: 更新 comanagementEligibleDevice
 description: 更新 comanagementEligibleDevice 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c4483bda19f1436a51afffa7d389e7e3b64a5d3a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: eeddddce85e0853bd4e0c8e15e624dc450902702
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58792342"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59122101"
 ---
 # <a name="update-comanagementeligibledevice"></a>更新 comanagementEligibleDevice
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/comanagementEligibleDevices/{comanagementEligibleDeviceI
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,14 +53,14 @@ PATCH /deviceManagement/comanagementEligibleDevices/{comanagementEligibleDeviceI
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|设备的唯一 ID|
+|id|String|设备的唯一 ID|
 |deviceName|String|DeviceName|
 |deviceType|[deviceType](../resources/intune-devices-devicetype.md)|DeviceType。 可能的值是 `desktop` `windowsRT` `winMO6` ：、、、、、、、、、、 `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `windows10x` `androidnGMS` `chromeOS` `linux` `blackberry` `palm` `unknown` `cloudPC` 、|
 |clientRegistrationStatus|[deviceRegistrationState](../resources/intune-devices-deviceregistrationstate.md)|ClientRegistrationStatus。 可取值为：`notRegistered`、`registered`、`revoked`、`keyConflict`、`approvalPending`、`certificateReset`、`notRegisteredPendingEnrollment`、`unknown`。|
 |ownerType|[ownerType](../resources/intune-shared-ownertype.md)|OwnerType。 可取值为：`unknown`、`company`、`personal`。|
 |managementAgents|[managementAgentType](../resources/intune-devices-managementagenttype.md)|ManagementAgents。 可能的值是 `eas` `mdm` `easMdm` ：、、、、、、、、、、。 `intuneClient` `easIntuneClient` `configurationManagerClient` `configurationManagerClientMdm` `configurationManagerClientMdmEas` `unknown` `jamf` `googleCloudDevicePolicyController` `microsoft365ManagedMdm` `msSense` `intuneAosp`|
 |managementState|[managementState](../resources/intune-devices-managementstate.md)|ManagementState。 可取值为：`managed`、`retirePending`、`retireFailed`、`wipePending`、`wipeFailed`、`unhealthy`、`deletePending`、`retireIssued`、`wipeIssued`、`wipeCanceled`、`retireCanceled`、`discovered`。|
-|referenceId|字符串|ReferenceId|
+|referenceId|String|ReferenceId|
 |mdmStatus|String|MDMStatus|
 |osVersion|String|OSVersion|
 |serialNumber|String|序列号|
@@ -72,7 +72,7 @@ PATCH /deviceManagement/comanagementEligibleDevices/{comanagementEligibleDeviceI
 |upn|String|UPN|
 |userEmail|String|UserEmail|
 |userName|String|UserName|
-|状态|[comanagementEligibleType](../resources/intune-devices-comanagementeligibletype.md)|ComanagementEligibleStatus。 可取值为：`comanaged`、`eligible`、`eligibleButNotAzureAdJoined`、`needsOsUpdate`、`ineligible`。|
+|status|[comanagementEligibleType](../resources/intune-devices-comanagementeligibletype.md)|ComanagementEligibleStatus。 可取值为：`comanaged`、`eligible`、`eligibleButNotAzureAdJoined`、`needsOsUpdate`、`ineligible`。|
 
 
 

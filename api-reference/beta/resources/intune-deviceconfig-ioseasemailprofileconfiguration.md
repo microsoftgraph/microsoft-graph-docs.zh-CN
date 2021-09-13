@@ -2,15 +2,15 @@
 title: iosEasEmailProfileConfiguration 资源类型
 description: 通过在此配置文件中提供配置，你可以指示 iOS 设备上本机电子邮件客户端与 Exchange 服务器通信，并获取电子邮件、联系人、日历、提醒和注释。 此外，还可以指定要同步的电子邮件以及设备应同步的频繁时间。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 341ef1dbf790cfe4ac1398dd7a49488d0fc31399
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 06015b02fe58ff9179b5ab9d68bfda9dcef184f1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58771111"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59101427"
 ---
 # <a name="ioseasemailprofileconfiguration-resource-type"></a>iosEasEmailProfileConfiguration 资源类型
 
@@ -45,7 +45,7 @@ ms.locfileid: "58771111"
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |usernameSource|[userEmailSource](../resources/intune-deviceconfig-useremailsource.md)|从 AAD 中选取并注入此配置文件的 Username 属性，在设备上安装之前。 继承自 [easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md)。 可取值为：`userPrincipalName`、`primarySmtpAddress`。|
@@ -56,7 +56,7 @@ ms.locfileid: "58771111"
 |authenticationMethod|[easAuthenticationMethod](../resources/intune-deviceconfig-easauthenticationmethod.md)|此电子邮件配置文件的身份验证方法。 可取值为：`usernameAndPassword`、`certificate`、`derivedCredential`。|
 |blockMovingMessagesToOtherEmailAccounts|Boolean|指示是否阻止将邮件移动到其他电子邮件帐户。|
 |blockSendingEmailFromThirdPartyApps|Boolean|指示是否阻止从第三方应用发送电子邮件。|
-|blockSyncingRecentlyUsedEmailAddresses|Boolean|指示是否在撰写新电子邮件时阻止同步最近使用的电子邮件地址，例如。|
+|blockSyncingRecentlyUsedEmailAddresses|Boolean|指示是否阻止同步最近使用的电子邮件地址，例如 - 撰写新电子邮件时。|
 |durationOfEmailToSync|[emailSyncDuration](../resources/intune-deviceconfig-emailsyncduration.md)|电子邮件应同步回的持续时间。 . 可取值为：`userDefined`、`oneDay`、`threeDays`、`oneWeek`、`twoWeeks`、`oneMonth` 或 `unlimited`。|
 |emailAddressSource|[userEmailSource](../resources/intune-deviceconfig-useremailsource.md)|从 AAD 中选取并注入到此配置文件中的电子邮件属性，在设备上安装之前。 可取值为：`userPrincipalName`、`primarySmtpAddress`。|
 |easServices|[easServices](../resources/intune-deviceconfig-easservices.md)|Exchange要同步的数据。可能的值是 `none` `calendars` `contacts` ：、、、、、。 `email` `notes` `reminders`|
@@ -69,12 +69,12 @@ ms.locfileid: "58771111"
 |smimeSigningUserOverrideEnabled|Boolean|如果设置为 true，用户可以打开或关闭 S/MIME 签名。|
 |smimeEncryptByDefaultUserOverrideEnabled|Boolean|如果设置为 true，用户可以默认切换加密设置。|
 |smimeSigningCertificateUserOverrideEnabled|Boolean|如果设置为 true，则用户可以选择签名标识。|
-|smimeEncryptionCertificateUserOverrideEnabled|布尔值|如果设置为 true，则用户可以选择 S/MIME 加密标识。 |
-|requireSsl|布尔值|指示是否使用 SSL。|
-|useOAuth|布尔值|指定连接是否应该使用 OAuth 进行身份验证。|
+|smimeEncryptionCertificateUserOverrideEnabled|Boolean|如果设置为 true，则用户可以选择 S/MIME 加密标识。 |
+|requireSsl|Boolean|指示是否使用 SSL。|
+|useOAuth|Boolean|指定连接是否应该使用 OAuth 进行身份验证。|
 |signingCertificateType|[emailCertificateType](../resources/intune-deviceconfig-emailcertificatetype.md)|签署此电子邮件配置文件的证书类型。 可取值为：`none`、`certificate`、`derivedCredential`。|
 |encryptionCertificateType|[emailCertificateType](../resources/intune-deviceconfig-emailcertificatetype.md)|加密 此电子邮件配置文件的证书类型。 可取值为：`none`、`certificate`、`derivedCredential`。|
-|perAppVPNProfileId|String|用于从本机Per-App访问电子邮件的邮箱 VPN 策略的配置文件 ID|
+|perAppVPNProfileId|String|用于从本机Per-App访问电子邮件的专用 VPN 策略的配置文件 ID|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|

@@ -2,15 +2,15 @@
 title: macOSSoftwareUpdateCategorySummary 资源类型
 description: 设备和用户的 MacOS 软件更新类别摘要报告
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 17f9c532d3f5297bdf239324fd637b18ac1b7138
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0f8d084eccf6e253c258f7ddd14c1c09feaa1ad2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790904"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59095561"
 ---
 # <a name="macossoftwareupdatecategorysummary-resource-type"></a>macOSSoftwareUpdateCategorySummary 资源类型
 
@@ -37,7 +37,7 @@ ms.locfileid: "58790904"
 |id|String|实体的键。|
 |displayName|String|报告的名称|
 |deviceId|String|设备 ID。|
-|userId|字符串|用户 ID。|
+|userId|String|用户 ID。|
 |updateCategory|[macOSSoftwareUpdateCategory](../resources/intune-deviceconfig-macossoftwareupdatecategory.md)|软件更新类型。 可取值为：`critical`、`configurationDataFile`、`firmware`、`other`。|
 |successfulUpdateCount|Int32|设备上成功更新的数量|
 |failedUpdateCount|Int32|设备上失败的更新数|

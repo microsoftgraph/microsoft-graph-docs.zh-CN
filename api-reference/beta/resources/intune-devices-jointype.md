@@ -2,15 +2,15 @@
 title: joinType 枚举类型
 description: 设备注册加入类型。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c73cc3dd65f7d8d407d75ec879d867daf7665765
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 375ff3673b9480c3495f3545959a554e1bfb9de8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784203"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59095358"
 ---
 # <a name="jointype-enum-type"></a>joinType 枚举类型
 

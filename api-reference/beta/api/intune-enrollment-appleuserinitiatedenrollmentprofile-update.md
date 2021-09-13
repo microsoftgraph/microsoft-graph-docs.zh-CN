@@ -2,15 +2,15 @@
 title: 更新 appleUserInitiatedEnrollmentProfile
 description: 更新 appleUserInitiatedEnrollmentProfile 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 81f35149c0d786361f1bfc4aa1e2c96de46e9aea
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e63e8f3647b508c3bf6919c1b5189ec1b7a8a1a9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58792314"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59124908"
 ---
 # <a name="update-appleuserinitiatedenrollmentprofile"></a>更新 appleUserInitiatedEnrollmentProfile
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/appleUserInitiatedEnrollmentProfiles/{appleUserInitiated
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,13 +51,13 @@ PATCH /deviceManagement/appleUserInitiatedEnrollmentProfiles/{appleUserInitiated
 
 下表显示创建 [appleUserInitiatedEnrollmentProfile 时所需的属性](../resources/intune-enrollment-appleuserinitiatedenrollmentprofile.md)。
 
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |defaultEnrollmentType|[appleUserInitiatedEnrollmentType](../resources/intune-enrollment-appleuserinitiatedenrollmenttype.md)|默认配置文件注册类型。 可取值为：`unknown`、`device`、`user`。|
 |availableEnrollmentTypeOptions|[appleOwnerTypeEnrollmentType](../resources/intune-enrollment-appleownertypeenrollmenttype.md) 集合|可用注册类型选项列表|
 |id|String|对象的 GUID|
-|displayName|字符串|配置文件的名称|
-|description|String|配置文件的说明|
+|displayName|String|配置文件的名称|
+|说明|String|配置文件的说明|
 |priority|Int32|优先级，0 为最高|
 |平台|[devicePlatformType](../resources/intune-enrollment-deviceplatformtype.md)|设备平台。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`unknown`。|
 |createdDateTime|DateTimeOffset|配置文件创建时间|

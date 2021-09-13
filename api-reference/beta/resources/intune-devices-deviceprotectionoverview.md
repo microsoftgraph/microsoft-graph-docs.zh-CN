@@ -2,15 +2,15 @@
 title: deviceProtectionOverview 资源类型
 description: 给定设备的硬件信息。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ff23b00466404bb58d43184a90a4f00dfd43fa2a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 310d7e8623dad1baac2d77b6b8e23e527e4e4709
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803992"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59125860"
 ---
 # <a name="deviceprotectionoverview-resource-type"></a>deviceProtectionOverview 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58803992"
 给定设备的硬件信息。
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |totalReportedDeviceCount|Int32|设备总数。|
 |inactiveThreatAgentDeviceCount|Int32|具有非活动威胁代理计数的设备|

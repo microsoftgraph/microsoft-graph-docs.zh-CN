@@ -2,15 +2,15 @@
 title: deviceManagementConfigurationReferenceSettingValue 资源类型
 description: ReferenceSettingValue 的模型
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fe1720b71d5de294d9c8f2ac57b9e1bd2bab7c72
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 12b6e60b63be0303603c63fa359bbdcc1820606d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805378"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59148219"
 ---
 # <a name="devicemanagementconfigurationreferencesettingvalue-resource-type"></a>deviceManagementConfigurationReferenceSettingValue 资源类型
 

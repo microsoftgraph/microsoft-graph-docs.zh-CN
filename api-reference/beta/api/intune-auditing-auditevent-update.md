@@ -2,15 +2,15 @@
 title: 更新 auditEvent
 description: 更新 auditEvent 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: be6f614a740188c6c16b675dad7456a124dd3559
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 43b5180950f20fd2c2ef5b53d7615fabd9d4f2b8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58798368"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59113068"
 ---
 # <a name="update-auditevent"></a>更新 auditEvent
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/auditEvents/{auditEventId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,7 +53,7 @@ PATCH /deviceManagement/auditEvents/{auditEventId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |displayName|String|事件显示名称。|
 |componentName|String|组件名称。|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|与审核事件关联的 AAD 用户和应用程序。|

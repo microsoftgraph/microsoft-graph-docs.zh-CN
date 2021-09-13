@@ -2,14 +2,14 @@
 title: 更新 OneNote 页面内容
 description: " Microsoft 365 中的企业笔记本"
 author: jewan-microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: onenote
-ms.openlocfilehash: 089f0034c5b3cf6ef3a5ab7984c83cb3b7ea00d34b51e7ff14b17af3343e0197
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 06594d0c5f584330b16d523e4f7dc2e8de4be080
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54123917"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59103975"
 ---
 # <a name="update-onenote-page-content"></a>更新 OneNote 页面内容
 
@@ -59,7 +59,7 @@ OneNote 页面的 HTML 包含文本、图像和组织到结构中的其他内容
 以下数组定义了两个更改。第一个更改在段落上方插入一张图像作为同级对象，第二个更改向列表中附加一个项目作为最后一个子元素。
 
 > [!NOTE]
-> 在更新网站页面上OneNote时，你无法使用 www 链接。 该服务不会尝试下载随机资源。 相反，图像必须是请求的一部分，无论是通过 image-data-url 还是多部分请求的部件名称。
+> 当更新页面上的图像OneNote，你无法使用 www 链接。 该服务不会尝试下载随机资源。 相反，图像必须是请求的一部分，无论是通过 image-data-url 还是多部分请求的部件名称。
 
 ```json
 [

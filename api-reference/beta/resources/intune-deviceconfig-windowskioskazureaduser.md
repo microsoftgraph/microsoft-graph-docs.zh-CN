@@ -2,15 +2,15 @@
 title: windowsKioskAzureADUser 资源类型
 description: 用于标识展台配置的 AzureAD 用户帐户的类
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b4d2948d39c91a5421ce470b11b6401b1b3504ae
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6b0a0528c119c9f75306cb8f132ff2d35aee5a29
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784833"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086531"
 ---
 # <a name="windowskioskazureaduser-resource-type"></a>windowsKioskAzureADUser 资源类型
 

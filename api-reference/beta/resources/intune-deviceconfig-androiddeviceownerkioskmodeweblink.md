@@ -2,15 +2,15 @@
 title: androidDeviceOwnerKioskModeWeblink 资源类型
 description: Android 设备所有者托管主屏幕上的 Web 链接
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ef7974e316ce78db63f999aa63c87a230b4456cd
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: edaa003fc6f963e43bf55ed8f0833cd59ca2a56e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820497"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59101805"
 ---
 # <a name="androiddeviceownerkioskmodeweblink-resource-type"></a>androidDeviceOwnerKioskModeWeblink 资源类型
 
@@ -26,10 +26,10 @@ Android 设备所有者托管主屏幕上的 Web 链接
 继承自 [androidDeviceOwnerKioskModeFolderItem](../resources/intune-deviceconfig-androiddeviceownerkioskmodefolderitem.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |标签|String|Weblink 的显示名称|
-|链接|String|Web 链接的链接|
+|链接|String|Weblink 的链接|
 
 ## <a name="relationships"></a>关系
 无

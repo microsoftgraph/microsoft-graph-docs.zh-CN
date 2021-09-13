@@ -2,15 +2,15 @@
 title: deviceManagementSettingComparison 资源类型
 description: 表示设置比较结果的实体
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0794e5ceadb46bf46bec11d96304c3f5c368766b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5a2f9dca86529821f24840e209ef10c25014d27b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58817087"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59091403"
 ---
 # <a name="devicemanagementsettingcomparison-resource-type"></a>deviceManagementSettingComparison 资源类型
 
@@ -28,7 +28,7 @@ ms.locfileid: "58817087"
 |id|String|设置 ID|
 |displayName|String|设置显示名称|
 |definitionId|String|此实例的设置定义的 ID|
-|currentValueJson|字符串|当前意图的 JSON 表示 (或) 模板设置的值|
+|currentValueJson|String|当前意图的 JSON 表示 (或) 模板设置的值|
 |newValueJson|String|新模板设置值的 JSON 表示形式|
 |comparisonResult|[deviceManagementComparisonResult](../resources/intune-deviceintent-devicemanagementcomparisonresult.md)|设置比较结果。 可取值为：`unknown`、`equal`、`notEqual`、`added`、`removed`。|
 

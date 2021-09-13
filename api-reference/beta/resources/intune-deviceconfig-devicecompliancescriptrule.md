@@ -2,15 +2,15 @@
 title: deviceComplianceScriptRule 资源类型
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 723fa805042e055075a52a5a134e213f1feef3bc
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: cdcb9209c71b42169962d35fe44ca2b6490ba2cd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801148"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59106222"
 ---
 # <a name="devicecompliancescriptrule-resource-type"></a>deviceComplianceScriptRule 资源类型
 
@@ -26,8 +26,8 @@ ms.locfileid: "58801148"
 |属性|类型|说明|
 |:---|:---|:---|
 |settingName|String|规则中指定的设置名称。|
-|operator|[operator](../resources/intune-deviceconfig-operator.md)|规则中指定的运算符。 可能的值是 `none` `and` `or` ：、、、、、、、、、、 `isEquals` `notEquals` `greaterThan` `lessThan` `between` `notBetween` `greaterEquals` `lessEquals` `dayTimeBetween` `beginsWith` `notBeginsWith` `endsWith` `notEndsWith` `contains` `notContains` `allOf` `oneOf` `noneOf` `setEquals` `orderedSetEquals` `subsetOf` `excludesAll` 、|
-|deviceComplianceScriptRulOperator|[deviceComplianceScriptRulOperator](../resources/intune-deviceconfig-devicecompliancescriptruloperator.md)|规则中指定的运算符。 可能的值是 `none` `and` `or` ：、、、、、、、、、、 `isEquals` `notEquals` `greaterThan` `lessThan` `between` `notBetween` `greaterEquals` `lessEquals` `dayTimeBetween` `beginsWith` `notBeginsWith` `endsWith` `notEndsWith` `contains` `notContains` `allOf` `oneOf` `noneOf` `setEquals` `orderedSetEquals` `subsetOf` `excludesAll` 、|
+|operator|[operator](../resources/intune-deviceconfig-operator.md)|规则中指定的运算符。 可能的值是 `none` `and` `or` ：、、、、、、、、、 `isEquals` `notEquals` `greaterThan` `lessThan` `between` `notBetween` `greaterEquals` `lessEquals` `dayTimeBetween` `beginsWith` `notBeginsWith` `endsWith` `notEndsWith` `contains` `notContains` `allOf` `oneOf` `noneOf` `setEquals` `orderedSetEquals` `subsetOf` `excludesAll` 、|
+|deviceComplianceScriptRulOperator|[deviceComplianceScriptRulOperator](../resources/intune-deviceconfig-devicecompliancescriptruloperator.md)|规则中指定的运算符。 可能的值是 `none` `and` `or` ：、、、、、、、、、 `isEquals` `notEquals` `greaterThan` `lessThan` `between` `notBetween` `greaterEquals` `lessEquals` `dayTimeBetween` `beginsWith` `notBeginsWith` `endsWith` `notEndsWith` `contains` `notContains` `allOf` `oneOf` `noneOf` `setEquals` `orderedSetEquals` `subsetOf` `excludesAll` 、|
 |DataType|[dataType](../resources/intune-deviceconfig-datatype.md)|规则中指定的数据类型。 可能的值是 `none` `boolean` `int64` ：、、、、、、、、、、 `double` `string` `dateTime` `version` `base64` `xml` `booleanArray` `int64Array` `doubleArray` `stringArray` `dateTimeArray` `versionArray` 。|
 |deviceComplianceScriptRuleDataType|[deviceComplianceScriptRuleDataType](../resources/intune-deviceconfig-devicecompliancescriptruledatatype.md)|规则中指定的数据类型。 可能的值是 `none` `boolean` `int64` ：、、、、、、、、、、 `double` `string` `dateTime` `version` `base64` `xml` `booleanArray` `int64Array` `doubleArray` `stringArray` `dateTimeArray` `versionArray` 。|
 |操作nd|String|规则中指定的操作数。|

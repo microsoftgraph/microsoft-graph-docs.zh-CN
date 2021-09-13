@@ -2,15 +2,15 @@
 title: deviceManagementConfigurationGroupSettingCollectionInstance 资源类型
 description: GroupSettingCollection 的实例
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 916d6be071ae58209a42771171e1e69f6f6a1120
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d3a4885dded47218d315cfda98172c3d76865132
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784819"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128884"
 ---
 # <a name="devicemanagementconfigurationgroupsettingcollectioninstance-resource-type"></a>deviceManagementConfigurationGroupSettingCollectionInstance 资源类型
 
@@ -26,7 +26,7 @@ GroupSettingCollection 的实例
 继承自 [deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |settingDefinitionId|String|设置定义 ID 继承自 [deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|
 |settingInstanceTemplateReference|[deviceManagementConfigurationSettingInstanceTemplateReference](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstancetemplatereference.md)|设置实例模板引用 继承自 [deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|

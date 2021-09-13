@@ -1,16 +1,16 @@
 ---
 title: office365GroupsActivityGroupCounts 资源类型
 description: 下面是资源的 JSON 表示形式。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: b7f38f2279e7cd575972d13ea411d972349131a4fe3a9943c4e5efa03365ffa2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6548d32250d99a99f83e98d40c40041102caeb16
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178708"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105781"
 ---
 # <a name="office365groupsactivitygroupcounts-resource-type"></a>office365GroupsActivityGroupCounts 资源类型
 

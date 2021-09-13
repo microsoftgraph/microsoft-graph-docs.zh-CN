@@ -2,15 +2,15 @@
 title: mobileAppIntentAndStateDetail 资源类型
 description: 给定设备的移动应用意图和安装状态。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6f0bb527af5e155ecb55558e890e551eb15b9791
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 92f3e301e16b14f7a1aac1ed9dc27a60d53b2850
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256645"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100888"
 ---
 # <a name="mobileappintentandstatedetail-resource-type"></a>mobileAppIntentAndStateDetail 资源类型
 

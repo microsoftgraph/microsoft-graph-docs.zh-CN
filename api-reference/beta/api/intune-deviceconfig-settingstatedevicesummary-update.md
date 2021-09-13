@@ -2,15 +2,15 @@
 title: 更新 settingStateDeviceSummary
 description: 更新 settingStateDeviceSummary 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 074a03b30d66831e786d674596edab262ff03cda
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ab2153ab26a434304d17a2e71b17210a9f848f87
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795723"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59137117"
 ---
 # <a name="update-settingstatedevicesummary"></a>更新 settingStateDeviceSummary
 
@@ -53,7 +53,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -63,7 +63,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |settingName|String|设置的名称|
 |instancePath|String|设置的 InstancePath 的名称|
 |unknownDeviceCount|Int32|设置的设备未知计数|

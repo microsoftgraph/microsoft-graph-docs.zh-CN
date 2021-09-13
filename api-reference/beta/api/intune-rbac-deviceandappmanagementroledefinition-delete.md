@@ -2,15 +2,15 @@
 title: 删除 deviceAndAppManagementRoleDefinition
 description: 删除 deviceAndAppManagementRoleDefinition。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2e1ce37db4bb2c34455693e6c0644f23d6178a2c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ffb8c33e46b08a6c9d37d5b82c029ab2d13ace3f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58821758"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59141569"
 ---
 # <a name="delete-deviceandappmanagementroledefinition"></a>删除 deviceAndAppManagementRoleDefinition
 
@@ -44,7 +44,7 @@ DELETE /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{rol
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

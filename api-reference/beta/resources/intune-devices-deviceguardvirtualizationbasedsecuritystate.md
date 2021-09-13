@@ -2,15 +2,15 @@
 title: deviceGuardVirtualizationBasedSecurityState 枚举类型
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f8a2871189630206c8ef5d83c510fbdd96a61132
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 029667d272c9cfc7213a693dd9228598df143a2c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793559"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59144334"
 ---
 # <a name="deviceguardvirtualizationbasedsecuritystate-enum-type"></a>deviceGuardVirtualizationBasedSecurityState 枚举类型
 

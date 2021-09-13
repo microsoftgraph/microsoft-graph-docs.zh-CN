@@ -2,15 +2,15 @@
 title: deliveryOptimizationBandwidthHoursWithPercentage 资源类型
 description: 带宽限制（以与工作时间的百分比表示）。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ce77b981759dae7db8a817bfa553e630c6b1514e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 88d21f6c2d73aa0fc4ad362f276994d1e5d3d4a0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786703"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147974"
 ---
 # <a name="deliveryoptimizationbandwidthhourswithpercentage-resource-type"></a>deliveryOptimizationBandwidthHoursWithPercentage 资源类型
 

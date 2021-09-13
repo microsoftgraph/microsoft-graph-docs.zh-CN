@@ -1,16 +1,16 @@
 ---
 title: 获取附件
 description: '读取附加到事件的附件的属性和关系 '
-localization_priority: Priority
+ms.localizationpriority: high
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 69160b9e583cd480c09baebed58b079472b3a65b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 64375dab1c14fb7563bcb2d3b69aa5c1caa0e035
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054201"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59038557"
 ---
 # <a name="get-attachment"></a>获取附件
 
@@ -29,7 +29,7 @@ ms.locfileid: "52054201"
 ### <a name="get-the-raw-contents-of-a-file-or-item-attachment"></a>获取文件或项目附件的原始内容
 你可以附加路径段 `/$value` 以获取文件或项目附件的原始内容。 
 
-对于文件附件，内容类型基于其原始内容类型。 请参阅 [示例 6](#example-6-get-the-raw-contents-of-a-file-attachment-on-a-message)。
+对于文件附件，内容类型基于其原始内容类型。请参阅 [示例 6](#example-6-get-the-raw-contents-of-a-file-attachment-on-a-message)。
 
 对于作为[联系人](../resources/contact.md)、[事件](../resources/event.md)或[邮件](../resources/message.md)的项目附件，返回的原始内容为 MIME 格式。
 
@@ -138,7 +138,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}/$va
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持一些 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
-使用 `$expand` 以获取项目附件的属性（联系人、事件或邮件）。 请参阅 [示例 3](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message) 和 [示例 4](#example-4-expand-and-get-the-properties-of-an-item-attached-to-a-message-including-any-attachment-to-the-item)。
+使用 `$expand` 获取项目附件（联系人、事件或邮件）的属性。请参阅 [示例 3](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message) 和 [示例 4](#example-4-expand-and-get-the-properties-of-an-item-attached-to-a-message-including-any-attachment-to-the-item)。
 
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
@@ -193,7 +193,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGUzY5QKjAAA=/attachments/A
 
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "name": "get_file_attachment_v1",
@@ -522,7 +522,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGUzY5QKgAAA=/attachments/A
 ---
 
 #### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "name": "get_reference_attachment",
@@ -709,7 +709,7 @@ END:VCALENDAR
 
 #### <a name="request"></a>请求
 
-下面是请求获取已附加到邮件的会议邀请（[eventMessage](../resources/eventmessage.md) 类型）的原始内容的示例。 **eventMessage** 实体基于 **邮件** 类型。
+下面是请求获取已附加到邮件的会议邀请（类型为 [eventMessage](../resources/eventmessage.md)）原始内容的示例。**eventMessage** 实体基于 **邮件** 类型。
 <!-- {
   "blockType": "ignored",
   "name": "get_value_message_attachment",

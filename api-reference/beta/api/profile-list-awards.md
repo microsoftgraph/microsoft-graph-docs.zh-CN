@@ -1,22 +1,22 @@
 ---
-title: 列表奖项
-description: 从奖项导航属性中获取 personAwards 的集合。
-localization_priority: Normal
+title: 列出奖励
+description: 从导航属性获取 personAwards 集合。
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 5e35a4a16fb1d7d58544dc7a1c32e432ed567b86
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 21fbb99e5aec6d7d3ac45935ac283de131f7d4a0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980802"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59092292"
 ---
-# <a name="list-awards"></a>列表奖项
+# <a name="list-awards"></a>列出奖励
 
 命名空间：microsoft.graph
 
-从用户的[配置文件](../resources/profile.md)中检索[personAward](../resources/personaward.md)对象的列表。
+从用户配置文件 [中检索 personAward](../resources/personaward.md) 对象 [的列表](../resources/profile.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -24,9 +24,9 @@ ms.locfileid: "48980802"
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| 委派（工作或学校帐户）     | User. Read、User.readbasic.all、user. all、All、user. all。 All |
-| 委派（个人 Microsoft 帐户） | User. Read、User.readbasic.all、user. all、All、user. all。 All |
-| 应用程序                            | User.readbasic.all、所有用户读写全部。 All                            |
+| 委派（工作或学校帐户）     | User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All |
+| 应用程序                            | User.ReadBasic.All、User.Read.All、User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -45,10 +45,10 @@ GET /users/{id | userPrincipalName}/profile/awards
 
 |名称            |值    |说明                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|$filter         |string   |将响应限制为仅包含指定条件的那些对象。                                                                                             |
-|$orderby        |string   |默认情况下，响应中的对象按其在查询中的 createdDateTime 值进行排序。 您可以使用 *$orderby* 参数更改响应的顺序。|
+|$filter         |string   |将响应范围限定为仅包含指定条件的对象。                                                                                             |
+|$orderby        |string   |默认情况下，响应中的对象按查询中的 createdDateTime 值进行排序。 可以使用 $orderby 参数 *更改响应* 的顺序。|
 |$select         |string   |要在响应中添加的属性列表（以逗号分隔）。为获得最佳结果，请仅选择所需属性的子集。                                        |
-|$skip           |int      |跳过前 n 个结果，对于分页非常有用。                                                                                                                                |
+|$skip           |int      |跳过前 n 个结果，可用于分页。                                                                                                                                |
 |$top            |int      |要返回的结果数。                                                                                                                                           |
 
 ## <a name="request-headers"></a>请求标头
@@ -61,7 +61,7 @@ GET /users/{id | userPrincipalName}/profile/awards
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [personAward](../resources/personaward.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [personAward](../resources/personaward.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

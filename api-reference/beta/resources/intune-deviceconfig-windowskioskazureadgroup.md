@@ -2,15 +2,15 @@
 title: windowsKioskAzureADGroup 资源类型
 description: 用于标识展台配置的 AzureAD 组的类
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 00d8be0cc4b469c8d361c5bdcfae822a6d279157
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c888ad3d14c522813d4959040b1c67b0dbb53777
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58802479"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086654"
 ---
 # <a name="windowskioskazureadgroup-resource-type"></a>windowsKioskAzureADGroup 资源类型
 
@@ -28,7 +28,7 @@ ms.locfileid: "58802479"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|AzureAD 显示名称锁定到此展台配置的 AzureAD 组|
+|displayName|String|将显示名称此展台配置的 AzureAD 组的成员|
 |groupId|String|将锁定到此展台配置的 AzureAD 组的 ID|
 
 ## <a name="relationships"></a>关系
