@@ -2,15 +2,15 @@
 title: 创建 managedDeviceMobileAppConfigurationUserStatus
 description: 创建新的 managedDeviceMobileAppConfigurationUserStatus 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1ea32f8c0722c642ffa948303ef6db3ba6eb6a78
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1a7eb2ee022ca0a88269102df5277cb6990daa60
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58802395"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021363"
 ---
 # <a name="create-manageddevicemobileappconfigurationuserstatus"></a>创建 managedDeviceMobileAppConfigurationUserStatus
 
@@ -44,7 +44,7 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisio
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,7 +54,7 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisio
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |userDisplayName|String|DevicePolicyStatus 的用户名。|
 |devicesCount|Int32|该用户的设备计数。|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|策略报告的符合性状态。 可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。|

@@ -2,15 +2,15 @@
 title: 获取聊天
 description: 检索一个聊天。
 author: RamjotSingh
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6991b5a2a6f154e07878a38d46da2f0469a59ef9
-ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
+ms.openlocfilehash: 3f0e89461ca59358f54c104663e88292bc83c595
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52696006"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100342"
 ---
 # <a name="get-chat"></a>获取聊天
 

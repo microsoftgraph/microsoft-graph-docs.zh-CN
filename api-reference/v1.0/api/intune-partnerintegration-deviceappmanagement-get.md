@@ -2,15 +2,15 @@
 title: 获取 deviceAppManagement
 description: 读取 deviceAppManagement 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4b5315fd429dc36b5c11cb81442da72ead04cae9524ea30a97eefedc8e36daae
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 700bee0e13a172ff6d53c32b7c6cb45b6724d70c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249452"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045138"
 ---
 # <a name="get-deviceappmanagement"></a>获取 deviceAppManagement
 

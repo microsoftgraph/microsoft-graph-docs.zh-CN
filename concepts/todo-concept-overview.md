@@ -2,14 +2,14 @@
 title: 微软待办 API 概述
 description: 微软待办提供一种管理任务和计划日常工作的简单方法
 author: avijityadav
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 0d93ba100fb48d2c6e833582a7f8238a5e51800e6b92d56ed4707e2aad2d8499
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3b4fd77adf93b2570ffbb3570a881aaa5e0c551e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54245393"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062304"
 ---
 # <a name="to-do-api-overview"></a>微软待办 API 概述
 微软待办提供了一种简单的方法便于用户管理其任务和计划日常工作。 任务以任务列表形式组织，可以从任何设备跨微软待办客户端、Outlook 和 Teams 访问。

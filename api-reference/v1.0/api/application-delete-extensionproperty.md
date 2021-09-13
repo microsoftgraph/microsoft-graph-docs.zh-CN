@@ -1,16 +1,16 @@
 ---
 title: 删除 extensionProperty
 description: 删除 extensionProperty。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 38e5358a39214c060a56513ff31120c3ea12ead8
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 5206c13b87786185c8459e8cf9979d588ede7c76
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131822"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100496"
 ---
 # <a name="delete-extensionproperty"></a>删除 extensionProperty
 
@@ -18,7 +18,7 @@ ms.locfileid: "50131822"
 
 删除 [extensionProperty](../resources/extensionproperty.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

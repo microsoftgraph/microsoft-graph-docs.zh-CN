@@ -2,15 +2,15 @@
 title: participant： mute
 description: 将呼叫中的特定参与者静音。
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a74b2ed36831960ba27b48742f91f99333c69efb
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: d7c7c053a46350f60355ffccc996f05ebe6f2ea8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051310"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072815"
 ---
 # <a name="participant-mute"></a>participant： mute
 
@@ -30,7 +30,7 @@ ms.locfileid: "52051310"
 | :-------------- | :------------------------------------------ |
 | 委派（工作或学校帐户）     | 不支持        |
 | 委派（个人 Microsoft 帐户） | 不支持        |
-| 应用程序     | 无                                        |
+| 应用程序     | None                                        |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -52,7 +52,7 @@ POST /communications/calls/{id}/participants/{id}/mute
 |clientContext|String|唯一的客户端上下文字符串。 最大限制为 256 个字符。|
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [muteParticipantOperation](../resources/muteParticipantoperation.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [muteParticipantOperation](../resources/muteParticipantoperation.md) 对象。
 
 >**注意：** 当此 API 返回成功响应时，所有参与者都将收到名单更新。
 

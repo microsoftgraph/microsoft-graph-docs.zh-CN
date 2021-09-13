@@ -2,15 +2,15 @@
 title: endpointSecurityConfigurationProfileType 枚举类型
 description: 终结点安全策略配置文件类型。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7c2086885e02aeed8df1e0c8bc9f5cadafb56c26
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6dd1a90da59e62eb8fa52de28ee4c534e50aabb4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787818"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59023386"
 ---
 # <a name="endpointsecurityconfigurationprofiletype-enum-type"></a>endpointSecurityConfigurationProfileType 枚举类型
 
@@ -36,7 +36,7 @@ ms.locfileid: "58787818"
 |deviceControl|8 |设备控件。|
 |appAndBrowserIsolation|9 |应用和浏览器隔离。|
 |exploitProtection|10 |Exploit Protection。|
-|webProtection|11 |Web 保护。|
+|webProtection|11|Web 保护。|
 |applicationControl|12 |应用程序控制。|
 |attackSurfaceReductionRules|13|攻击面减少规则。|
 |accountProtection|14 |帐户保护。|

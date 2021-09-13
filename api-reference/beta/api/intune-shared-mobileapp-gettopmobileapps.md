@@ -2,15 +2,15 @@
 title: getTopMobileApps 函数
 description: 尚未记录
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6a4e410a91aed262a56f3d68625171dc46306f38
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 46136c68ed22c5754ce77e6bcddea0d7ad3a4347
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58821954"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017722"
 ---
 # <a name="gettopmobileapps-function"></a>getTopMobileApps 函数
 
@@ -45,7 +45,7 @@ GET /deviceAppManagement/mobileApps/getTopMobileApps
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,7 +54,7 @@ GET /deviceAppManagement/mobileApps/getTopMobileApps
 
 |属性|类型|说明|
 |:---|:---|:---|
-|状态|String|尚未记录|
+|status|String|尚未记录|
 |count|Int64|尚未记录|
 
 

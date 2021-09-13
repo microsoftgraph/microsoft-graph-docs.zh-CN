@@ -2,15 +2,15 @@
 title: 创建 userAttributeAssignments
 description: 在 b2xIdentityUserFlow 中创建新的 identityUserFlowAttributeAssignment 对象。
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 821545418a4dabd8599e2bea6cedbb1a72354df4
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: fc7bee846afe433d0cb7639dba0ec7d77291c0a8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50944451"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59028588"
 ---
 # <a name="create-userattributeassignments"></a>创建 userAttributeAssignments
 

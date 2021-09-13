@@ -1,16 +1,16 @@
 ---
 title: siteActivitySummary 资源类型
 description: 下面是资源的 JSON 表示形式。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
 author: JeremyKelley
-ms.openlocfilehash: d8b9777c55e7a88b01f49bbaf8c522886b9b7900568735b6aada75cab0b781e9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d008e263640c42d4531404f69e659124333c58a8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54248304"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59033215"
 ---
 # <a name="siteactivitysummary-resource-type"></a>siteActivitySummary 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "54248304"
 | sharedInternally  | Int64  |
 | sharedExternally  | Int64  |
 | reportDate        | 日期   |
-| reportPeriod      | 字符串 |
+| reportPeriod      | String |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

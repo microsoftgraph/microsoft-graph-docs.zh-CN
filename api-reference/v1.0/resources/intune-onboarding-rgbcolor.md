@@ -2,15 +2,15 @@
 title: rgbColor 资源类型
 description: 以 RGB 表示的颜色。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7fe1219ca974ed8b3a3bfd594865b245cec2e91dcaa005305347f63bde214306
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c034510bda0014c86d8a5f5b631c9354f2e8fe78
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54218532"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036352"
 ---
 # <a name="rgbcolor-resource-type"></a>rgbColor 资源类型
 

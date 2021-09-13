@@ -2,15 +2,15 @@
 title: assign 操作
 description: 尚未记录
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5566a81ef88fe13714b777f12d47aa47f9cef6e3
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9ddbf85d1bd55dcbfb3666e14b9d1082c10bd5e4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795919"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59033985"
 ---
 # <a name="assign-action"></a>分配操作
 
@@ -45,7 +45,7 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisio
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,7 +53,7 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisio
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |appProvisioningConfigurationGroupAssignments|[mobileAppProvisioningConfigGroupAssignment](../resources/intune-apps-mobileappprovisioningconfiggroupassignment.md) 集合|尚未记录|
 |iOSLobAppProvisioningConfigAssignments|[iosLobAppProvisioningConfigurationAssignment](../resources/intune-apps-ioslobappprovisioningconfigurationassignment.md) 集合|尚未记录|

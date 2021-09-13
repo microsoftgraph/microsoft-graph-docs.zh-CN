@@ -2,15 +2,15 @@
 title: getDeviceNonComplianceReport 操作
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 335af2fe92c326ab44d451ec8d4b76f8bfefaec2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3a04b00a50335c65b2528adb00e8418bbc3535c6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803838"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59034083"
 ---
 # <a name="getdevicenoncompliancereport-action"></a>getDeviceNonComplianceReport 操作
 
@@ -43,7 +43,7 @@ POST /deviceManagement/reports/getDeviceNonComplianceReport
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,7 +51,7 @@ POST /deviceManagement/reports/getDeviceNonComplianceReport
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |name|String|尚未记录|
 |select|String collection|尚未记录|

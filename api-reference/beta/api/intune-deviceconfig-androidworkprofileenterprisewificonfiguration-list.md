@@ -2,15 +2,15 @@
 title: 列出 androidWorkProfileEnterpriseWiFiConfigurations
 description: 列出 androidWorkProfileEnterpriseWiFiConfiguration 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6efcd9d3d9ef157b673a6b8ae7f2a4207ad8d040
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 35f0a2d624bda4e29ee24e4e2c8a8d93df58f978
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783139"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59031290"
 ---
 # <a name="list-androidworkprofileenterprisewificonfigurations"></a>列出 androidWorkProfileEnterpriseWiFiConfigurations
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

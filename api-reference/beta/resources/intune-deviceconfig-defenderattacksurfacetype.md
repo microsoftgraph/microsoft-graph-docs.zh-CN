@@ -2,15 +2,15 @@
 title: defenderAttackSurfaceType 枚举类型
 description: Defender 攻击面减少规则的可能值
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 244523298e0d548763a0ce61aaa09478ae6b9111
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: bcb68a1c52389a47cabada211cca98975b24b347
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797920"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59033733"
 ---
 # <a name="defenderattacksurfacetype-enum-type"></a>defenderAttackSurfaceType 枚举类型
 

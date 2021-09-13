@@ -1,16 +1,16 @@
 ---
 title: emailAppUsageUserDetail 资源类型
 description: 下面是资源的 JSON 表示形式。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sarahwxy
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: dce83b17f029bec2bf8977d0e863dcdb5c7fc4e1a9c5dea731b654d5ce6ab9f3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d41597475133275761d3728fd99c513eb468777f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54210069"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59027132"
 ---
 # <a name="emailappusageuserdetail-resource-type"></a>emailAppUsageUserDetail 资源类型
 
@@ -22,8 +22,8 @@ ms.locfileid: "54210069"
 | :---------------- | :---------------- |
 | reportRefreshDate | 日期              |
 | userPrincipalName | String            |
-| displayName       | 字符串            |
-| isDeleted         | 布尔值           |
+| displayName       | String            |
+| isDeleted         | Boolean           |
 | deletedDate       | 日期              |
 | lastActivityDate  | 日期              |
 | mailForMac        | String collection |
@@ -35,7 +35,7 @@ ms.locfileid: "54210069"
 | pop3App           | String collection |
 | imap4App          | String collection |
 | smtpApp           | String collection |
-| reportPeriod      | 字符串            |
+| reportPeriod      | String            |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -2,15 +2,15 @@
 title: 列出语言
 description: 检索 B2C 用户流中支持自定义的语言列表。
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 2f29a8d5c87c73c5a42c0cc71775a8e0dc893cec
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 8bad5aadbd0f93ae3b34fece884de4ba153d97c7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50944783"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59028707"
 ---
 # <a name="list-languages"></a>列出语言
 
@@ -33,7 +33,7 @@ ms.locfileid: "50944783"
 工作或学校帐户需要属于以下角色之一：
 
 * 全局管理员
-* 外部标识用户流管理员
+* 外部标识用户Flow管理员
 
 ## <a name="http-request"></a>HTTP 请求
 

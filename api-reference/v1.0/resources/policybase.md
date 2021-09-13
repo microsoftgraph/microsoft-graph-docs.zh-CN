@@ -1,16 +1,16 @@
 ---
 title: policyBase 资源类型
 description: 表示要继承的策略类型的抽象基本类型。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: lujiangfeng666
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 2918543536f62627f7c2a742009c3d67012353b4
-ms.sourcegitcommit: 998c63e6290cfb5ad4a6bd3eb3e249d282f962a3
+ms.openlocfilehash: 6795065e7edbf9d31936007e842c24882d138185
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58531220"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59098480"
 ---
 # <a name="policybase-resource-type"></a>policyBase 资源类型
 
@@ -27,8 +27,8 @@ ms.locfileid: "58531220"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |id|String| 此策略的唯一标识符。 只读。 继承自 [directoryObject](directoryobject.md)。|
-|说明|String| 此策略的说明。|
-|displayName|String| 此策略的显示名称。 |
+|说明|String| 此策略的说明。 必需。|
+|displayName|String| 此策略的显示名称。 必填。 |
 
 ## <a name="relationships"></a>关系
 

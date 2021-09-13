@@ -2,15 +2,15 @@
 title: 删除 iosVppAppAssignedUserLicense
 description: 删除 iosVppAppAssignedUserLicense。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e4611c5df52f60982bf112f04422818bf59cd61f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 602d0cd2924bcacbe081055d6411a833ec780b77
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786254"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59018955"
 ---
 # <a name="delete-iosvppappassigneduserlicense"></a>删除 iosVppAppAssignedUserLicense
 
@@ -43,7 +43,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/a
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

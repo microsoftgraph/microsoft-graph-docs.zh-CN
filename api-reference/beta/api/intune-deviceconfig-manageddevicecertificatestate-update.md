@@ -2,15 +2,15 @@
 title: 更新 managedDeviceCertificateState
 description: 更新 managedDeviceCertificateState 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0f1f62b3b3fabc5a9e179175d8bc2386e10f54bf
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 95bb2e33c6de89294b97951106b713fb7ba70c46
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801709"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59018605"
 ---
 # <a name="update-manageddevicecertificatestate"></a>更新 managedDeviceCertificateState
 
@@ -64,7 +64,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -79,11 +79,11 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |certificateKeyUsage|[keyUsages](../resources/intune-shared-keyusages.md)|密钥用法。 可取值为：`keyEncipherment`、`digitalSignature`。|
 |certificateValidityPeriodUnits|[certificateValidityPeriodScale](../resources/intune-shared-certificatevalidityperiodscale.md)|有效期单位。 可取值为：`days`、`months`、`years`。|
 |certificateIssuanceState|[certificateIssuanceStates](../resources/intune-deviceconfig-certificateissuancestates.md)|颁发状态。 可能的值是 `unknown` `challengeIssued` `challengeIssueFailed` ：、、、、、、、、、、 `requestCreationFailed` `requestSubmitFailed` `challengeValidationSucceeded` `challengeValidationFailed` `issueFailed` `issuePending` `issued` `responseProcessingFailed` `responsePending` `enrollmentSucceeded` `enrollmentNotNeeded` `revoked` `removedFromCollection` `renewVerified` `installFailed` `installed` `deleteFailed` `deleted` `renewalRequested` `requested` 。|
-|certificateKeyStorageProvider|[keyStorageProviderOption](../resources/intune-shared-keystorageprovideroption.md)|密钥存储提供程序。 可能的值是：`useTpmKspOtherwiseUseSoftwareKsp`、`useTpmKspOtherwiseFail`、`usePassportForWorkKspOtherwiseFail`、`useSoftwareKsp`。|
+|certificateKeyStorageProvider|[keyStorageProviderOption](../resources/intune-shared-keystorageprovideroption.md)|密钥存储提供程序。 可取值为：`useTpmKspOtherwiseUseSoftwareKsp`、`useTpmKspOtherwiseFail`、`usePassportForWorkKspOtherwiseFail`、`useSoftwareKsp`。|
 |certificateSubjectNameFormat|[subjectNameFormat](../resources/intune-deviceconfig-subjectnameformat.md)|主题名称格式。 可取值为：`commonName`、`commonNameIncludingEmail`、`commonNameAsEmail`、`custom`、`commonNameAsIMEI`、`commonNameAsSerialNumber`、`commonNameAsAadDeviceId`、`commonNameAsIntuneDeviceId`、`commonNameAsDurableDeviceId`。|
 |certificateSubjectAlternativeNameFormat|[subjectAlternativeNameType](../resources/intune-shared-subjectalternativenametype.md)|主题备用名称格式。 可取值为：`none`、`emailAddress`、`userPrincipalName`、`customAzureADAttribute`、`domainNameService`、`universalResourceIdentifier`。|
 |certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)|撤销状态。 可取值为：`none`、`pending`、`issued`、`failed`、`revoked`。|
-|certificateProfileDisplayName|字符串|证书配置文件显示名称|
+|certificateProfileDisplayName|String|证书配置文件显示名称|
 |deviceDisplayName|String|设备显示名称|
 |userDisplayName|String|用户显示名称|
 |certificateExpirationDateTime|DateTimeOffset|证书到期日期|
@@ -91,7 +91,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |lastCertificateStateChangeDateTime|DateTimeOffset|上次证书颁发状态更改|
 |certificateIssuer|String|颁发者|
 |certificateThumbprint|String|指纹|
-|certificateSerialNumber|字符串|序列号|
+|certificateSerialNumber|String|序列号|
 |certificateKeyLength|Int32|密钥长度|
 |certificateEnhancedKeyUsage|String|扩展密钥用法|
 |certificateValidityPeriod|Int32|有效期|

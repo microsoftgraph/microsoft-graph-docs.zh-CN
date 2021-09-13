@@ -2,15 +2,15 @@
 title: 更新 mobileAppInstallSummary
 description: 更新 mobileAppInstallSummary 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 56e6a5379fec6cbbf25cb902df4ca2fca081884f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: fb69e7db1cf5f85a0655ee931f5d98778d9a98d1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58756360"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59025130"
 ---
 # <a name="update-mobileappinstallsummary"></a>更新 mobileAppInstallSummary
 
@@ -43,7 +43,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/installSummary
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -60,7 +60,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/installSummary
 |notInstalledDeviceCount|Int32|未安装此应用的设备数。|
 |pendingInstallDeviceCount|Int32|已通知安装此应用的设备数。|
 |installedUserCount|Int32|其设备全部成功安装此应用的用户数。|
-|failedUserCount|Int32|拥有 1 台或多台设备未能安装此应用的用户数量。|
+|failedUserCount|Int32|拥有 1 台或多台设备未能安装此应用的用户数。|
 |notApplicableUserCount|Int32|其设备均不适用于此应用的用户数。|
 |notInstalledUserCount|Int32|具有 1 台或多台设备未安装此应用的用户数量。|
 |pendingInstallUserCount|Int32|拥有 1 台或多台设备且已收到通知安装此应用且设备有 0 台失败的用户数量。|

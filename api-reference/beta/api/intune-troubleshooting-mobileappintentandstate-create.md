@@ -2,15 +2,15 @@
 title: 创建 mobileAppIntentAndState
 description: 创建新的 mobileAppIntentAndState 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 55c5484f482cda8d1f7f16deeebaeb81793d9389
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 006e104a6bc18aa48bba2941b0fe6285af4916e8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58260857"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59027517"
 ---
 # <a name="create-mobileappintentandstate"></a>创建 mobileAppIntentAndState
 
@@ -53,7 +53,7 @@ POST /users/{usersId}/mobileAppIntentAndStates
 |:---|:---|:---|
 |id|String|对象的 UUID|
 |managedDeviceIdentifier|String|Intune 创建或收集的设备标识符。|
-|userId|字符串|尝试注册设备的用户的标识符。|
+|userId|String|尝试注册设备的用户的标识符。|
 |mobileAppList|[mobileAppIntentAndStateDetail](../resources/intune-troubleshooting-mobileappintentandstatedetail.md) 集合|租户的有效负载意图和状态列表。|
 
 

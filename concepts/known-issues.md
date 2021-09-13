@@ -2,13 +2,13 @@
 title: Microsoft Graph 已知问题
 description: 本文介绍了 Microsoft Graph 已知问题。
 author: MSGraphDocsVTeam
-localization_priority: Priority
-ms.openlocfilehash: e6ef743a04d7b3edce53ef1a13d59b7f090c0c05
-ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
+ms.localizationpriority: high
+ms.openlocfilehash: c783cb4c277b4a711b8d9b146587f6856a4743b4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58397073"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062402"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
@@ -17,6 +17,28 @@ ms.locfileid: "58397073"
 若要报告已知问题，请参阅 [Microsoft Graph 支持](https://developer.microsoft.com/graph/support) 页面。
 
 若要了解 Microsoft Graph API 的最新更新，请参阅 [Microsoft Graph 更改日志](changelog.md)。
+
+## <a name="application-and-service-principal-apis"></a>应用程序和服务主体 API
+
+当前处于开发阶段的 [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) 和 [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true) 实体有变化。下面总结了当前限制和处于开发阶段的 API 功能。
+
+当前限制：
+
+* 只有在所有更改完成后，一些应用属性（如 appRoles 和 addIns）才可用。
+* 只能注册多租户应用。
+* 更新应用仅限于在首次 beta更新后注册的应用。
+* Azure Active Directory 用户可以注册应用并添加其他所有者。
+* 支持 OpenID Connect 和 OAuth 协议。
+* 无法向应用分配策略。
+* 无法对需要 appId 的 ownedObjects 执行操作（例如，users/{id|userPrincipalName}/ownedObjects/{id}/...）
+
+处于开发阶段的功能：
+
+* 可以注册单租户应用。
+* 更新 servicePrincipal。
+* 将现有 Azure AD 应用迁移到更新后的模型中。
+* 支持 appRoles、预授权客户端、可选声明、组成员身份声明和品牌塑造
+* Microsoft 帐户 (MSA) 用户可以注册应用。
 
 ## <a name="bookings"></a>Bookings
 
@@ -134,10 +156,6 @@ Beta 版本提供了一种变通方法，可以使用 [事件](/graph/api/resour
     New-AzureADServicePrincipal -AppId 00000003-0000-0000-c000-000000000000
     ```
 ## <a name="contacts"></a>联系人
-
-### <a name="organization-contacts-available-in-only-beta"></a>仅 beta 版支持组织联系人。
-
-目前只支持个人联系人。`/v1.0` 中目前暂不支持组织联系人，但可以在 `/beta` 中找到组织联系人。
 
 ### <a name="default-contacts-folder"></a>默认联系人文件夹
 
@@ -265,34 +283,20 @@ Microsoft Graph 为组和 Microsoft Teams 公开了两个用于访问 API 的权
 
 在为与 [团队](/graph/api/resources/team.md) 关联的组调用 [DELETE /groups/{id}/owners](/graph/api/group-delete-owners.md) 时，还会从 /groups/{id}/members 列表中删除用户。 要解决此问题，请从所有者和成员中移除用户，然后等待 10 秒，再将其添加回成员。
 
-## <a name="identity-and-access--application-and-service-principal-apis"></a>身份和访问 | 应用程序和服务主体 API
+## <a name="identity-and-access"></a>身份和访问
 
-当前处于开发阶段的 [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) 和 [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true) 实体有变化。下面总结了当前限制和处于开发阶段的 API 功能。
+### <a name="conditional-access-policy"></a>条件访问策略
 
-当前限制：
+[conditionalAccessPolicy](/graph/api/resources/conditionalaccesspolicy) API 当前需要同意 **Policy.Read.All** 权限才能调用 POST 和 PATCH 方法。 将来可以通过 **Policy.ReadWrite.ConditionalAccess** 权限读取目录中的策略。
 
-* 只有在所有更改完成后，一些应用属性（如 appRoles 和 addIns）才可用。
-* 只能注册多租户应用。
-* 更新应用仅限于在首次 beta更新后注册的应用。
-* Azure Active Directory 用户可以注册应用并添加其他所有者。
-* 支持 OpenID Connect 和 OAuth 协议。
-* 无法向应用分配策略。
-* 无法对需要 appId 的 ownedObjects 执行操作（例如，users/{id|userPrincipalName}/ownedObjects/{id}/...）
+### <a name="claims-mapping-policy"></a>声明映射策略
 
-处于开发阶段的功能：
+[claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy) API 可能需要得到 `LIST /policies/claimsMappingPolicies` 和 `GET /policies/claimsMappingPolicies/{id}` 方法的 **Policy.Read.All** 和 **Policy.ReadWrite.ConditionalAccess** 权限的同意，如下所示：
 
-* 可以注册单租户应用。
-* 更新 servicePrincipal。
-* 将现有 Azure AD 应用迁移到更新后的模型中。
-* 支持 appRoles、预授权客户端、可选声明、组成员身份声明和品牌塑造
-* Microsoft 帐户 (MSA) 用户可以注册应用。
-* 支持 SAML 和 WsFed 协议。
++ 如果没有 claimsMappingPolicy 对象可用于在 LIST 操作中检索，则任一权限都足以调用此方法。
++ 如果存在要检索的 claimsMappingPolicy 对象，则应用必须同意这两种权限。 如果没有，则返回 `403 Forbidden` 错误。
 
-## <a name="identity-and-access--conditional-access"></a>身份和访问 | 条件访问
-
-### <a name="permissions"></a>权限
-
-目前调用 POST 和 PATCH API 需要 Policy.Read.All 权限。 将来可以通过 Policy.ReadWrite.ConditionalAccess 权限读取目录中的策略。
+将来，任一权限都足以调用这两种方法。
 
 ## <a name="json-batching"></a>JSON 批处理
 
@@ -338,6 +342,30 @@ JSON 批处理请求目前限定为 20 个单独请求。
 ### <a name="get-messages-returns-chats-in-microsoft-teams"></a>GET 消息返回 Microsoft Teams 中的聊天
 
 在 v1 和 beta 终结点中，`GET /users/id/messages` 的响应包含出现在团队或通道范围外的用户的 Microsoft Teams 聊天。 这些聊天消息具有“即时信息”作为其主题。
+
+## <a name="reports"></a>报告
+
+### <a name="azure-ad-activity-reports"></a>Azure AD 活动报告
+
+当你拥有有效的 Azure AD Premium 许可证并调用 [directoryAudit](/graph/api/resources/directoryaudit)、[signIn](/graph/api/resources/signin) 或[预配 ](/graph/api/resources/provisioningobjectsummary)Azure AD 活动报告 API 时，你可能仍会遇到类似于以下内容的错误消息：
+
+```json
+{
+    "error": {
+        "code": "Authentication_RequestFromNonPremiumTenantOrB2CTenant",
+        "message": "Neither tenant is B2C or tenant doesn't have premium license",
+        "innerError": {
+            "date": "2021-09-02T17:15:30",
+            "request-id": "73badd94-c0ca-4b09-a3e6-20c1f5f9a307",
+            "client-request-id": "73badd94-c0ca-4b09-a3e6-20c1f5f9a307"
+        }
+    }
+}
+```
+在检索 [用户](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true)资源的 **signInActivity** 属性时，也可能发生此错误；例如，`https://graph.microsoft.com/beta/users?$select=signInActivity`。
+
+此错误是由于间歇性许可证检查失败造成的，我们正在努力解决此问题。 作为临时解决方法，请添加 **Directory.Read.All** 权限。 问题解决后，将不需要此临时解决方法。
+
 
 ## <a name="teamwork-microsoft-teams"></a>团队合作 (Microsoft Teams)
 

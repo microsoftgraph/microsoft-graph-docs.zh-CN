@@ -2,15 +2,15 @@
 title: keyLongValuePair 资源类型
 description: 键长值对
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7d0e2f624dcaffa9706f241814e5185a1bcb6341
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4c090fc21c4368c08a98d865a8a2ac8dc91cf9a3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786718"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59030044"
 ---
 # <a name="keylongvaluepair-resource-type"></a>keyLongValuePair 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58786718"
 键长值对
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |name|String|此键长值对的名称|
 |值|Int64|此键长值对的值|

@@ -2,15 +2,15 @@
 title: 更新 localizedNotificationMessage
 description: 更新 localizedNotificationMessage 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2b98caca76fe1b49ec5d743debd2f330dec8df0aa90bcd178c6cc27e0dfff8a9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 412d98d30f01b783e3c45379be0b3df6f0cf6625
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54250481"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147036"
 ---
 # <a name="update-localizednotificationmessage"></a>更新 localizedNotificationMessage
 

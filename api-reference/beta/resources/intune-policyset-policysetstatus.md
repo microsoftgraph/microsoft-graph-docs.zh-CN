@@ -2,15 +2,15 @@
 title: policySetStatus 枚举类型
 description: 用于指定 PolicySet 状态的枚举。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 384eb054757e2a71ff15b4af45d91cc940416adb
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 22091444272c3e88648e1e14483ec58ce6f78873
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58757900"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020320"
 ---
 # <a name="policysetstatus-enum-type"></a>policySetStatus 枚举类型
 

@@ -1,16 +1,16 @@
 ---
 title: chatMessageMention 资源类型
 description: '表示 chatMessage 实体中的提及。 提及内容可以提及用户、团队、机器人或频道。 '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: ed22514c0da50b3dfc6ec62c79c26858d4c0051ed0fcc16a485d937573cf6a6d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8b458393d73c7547dda1638e86c2fa4782e3b4d4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54238158"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109421"
 ---
 # <a name="chatmessagemention-resource-type"></a>chatMessageMention 资源类型
 

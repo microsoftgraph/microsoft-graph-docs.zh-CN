@@ -1,22 +1,22 @@
 ---
 title: 呼叫概述
-description: 了解支持的呼叫类型以及如何将这些类型用于信号过程。
+description: 了解受支持的呼叫类型以及如何将这些类型用于信号过程。
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
-ms.openlocfilehash: d7664e43d8555cb5f558f50b39ab873669a35ffcf3267f313661cbb740e5d769
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 34b7e2e507576333df36f7eae9185785872d24ec
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54151907"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59137488"
 ---
 # <a name="calls-overview"></a>呼叫概述
 
 Microsoft 中的云通信 API Graph通过各种通信相关功能（如呼叫和联机会议）为应用和服务如何与用户交互添加了新的维度。 本文介绍支持的呼叫类型以及如何将这些类型用于信号过程。
 
 ## <a name="peer-to-peer-calls"></a>对等呼叫
-当一个参与者直接呼叫另一个 (时，呼叫) P2P 对等呼叫。 如果机器人呼叫用户，并且该用户是唯一指定的呼叫目标，则这是 P2P 呼叫的一个示例。
+当一个参与者直接呼叫另一个 (时，呼叫) P2P 呼叫。 如果机器人呼叫用户，并且该用户是唯一指定的呼叫目标，则这是 P2P 呼叫的一个示例。
 
 ![P2P 呼叫图](images/communications-p2p-call.PNG)
 

@@ -2,15 +2,15 @@
 title: certificateConnectorHealthMetricValue 资源类型
 description: 响应 GetHealthMetricTimeSeries 请求时返回的指标快照值。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 91432e5b732c84ca9b94ffbe3f89934d1ac40416
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 47dc4eef94f3ca976ec71883d298fa90612699d0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788758"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020306"
 ---
 # <a name="certificateconnectorhealthmetricvalue-resource-type"></a>certificateConnectorHealthMetricValue 资源类型
 

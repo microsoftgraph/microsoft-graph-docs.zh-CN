@@ -2,15 +2,15 @@
 title: softwareUpdateStatusSummary 资源类型
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 67b22bd543b286cbcd714127483550a606fadf7c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0182b751a96bcc5e08efd0ff81a37eeaa12666ef
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793580"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59023531"
 ---
 # <a name="softwareupdatestatussummary-resource-type"></a>softwareUpdateStatusSummary 资源类型
 

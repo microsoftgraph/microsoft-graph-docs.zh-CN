@@ -2,15 +2,15 @@
 title: 删除 mdmWindowsInformationProtectionPolicy
 description: 删除 mdmWindowsInformationProtectionPolicy。
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2ae6a0c3e95b89e75811a4b414bd20812dcef12e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 268fdf90fd235e7d23724ce1740e5c82a2e94ce3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58807375"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59033971"
 ---
 # <a name="delete-mdmwindowsinformationprotectionpolicy"></a>删除 mdmWindowsInformationProtectionPolicy
 
@@ -47,7 +47,7 @@ DELETE /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsI
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

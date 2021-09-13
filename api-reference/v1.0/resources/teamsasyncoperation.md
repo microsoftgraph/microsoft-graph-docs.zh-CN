@@ -1,16 +1,16 @@
 ---
 title: teamsAsyncOperation 资源类型
-description: '异步Microsoft Teams操作会延长单个 API 请求的生存期。 '
+description: '异步Microsoft Teams操作将超出单个 API 请求的生存期。 '
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 643a7f57253af36e52484166492fd1e373f4ff5415ce24f1ccf84b69a3ec4fd1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a061ba8951013c12e825141f5a205c3e6d664733
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196535"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59071894"
 ---
 # <a name="teamsasyncoperation-resource-type"></a>teamsAsyncOperation 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "54196535"
 
 a Microsoft Teams async operation is an operation that lifetimes the lifetime of a single API request. 这些操作长时间运行或成本过高，在发起请求的时间范围内无法完成。
 
-启动异步操作时，该方法返回 202 Accepted 响应代码。 响应还将包含 Location 标头，其中包含 teamsAsyncOperation 的位置。 通过向此位置提出 GET 请求来定期检查操作的状态;检查>等待 30 秒。
+启动异步操作时，该方法返回 202 Accepted 响应代码。 响应还将包含 Location 标头，其中包含 teamsAsyncOperation 的位置。 通过对此位置提出 GET 请求来定期检查操作的状态;检查>等待 30 秒。
 当请求成功完成时，状态将为"已成功"，targetResourceLocation 将指向已创建/已修改的资源。
 
 ## <a name="properties"></a>属性

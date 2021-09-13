@@ -2,15 +2,15 @@
 title: deviceManagement 资源类型
 description: 充当所有设备管理功能的容器的单例实体。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2dfac44b206a9cfa11e3d6b3a27d4d2284493698
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 2e017b3fa6938aa99a0070f08504ecddae211278
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58264799"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59098557"
 ---
 # <a name="devicemanagement-resource-type"></a>deviceManagement 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "58264799"
 
 充当所有设备管理功能的容器的单例实体。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 deviceManagement](../api/intune-onboarding-devicemanagement-get.md)|[deviceManagement](../resources/intune-onboarding-devicemanagement.md)|读取 [deviceManagement](../resources/intune-onboarding-devicemanagement.md) 对象的属性和关系。|

@@ -3,14 +3,14 @@ title: 从频道中删除成员
 description: 从频道中删除成员。
 author: akjo
 doc_type: apiPageType
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: ae46702936fb82ac00c0744927c1d5b0b2ccc6dd
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: 3c3fe36044ace90dd3505cfe5644c3ca52f811c2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53060031"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59026670"
 ---
 # <a name="remove-member-from-channel"></a>从频道中删除成员
 

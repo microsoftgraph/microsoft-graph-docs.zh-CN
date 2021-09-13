@@ -2,15 +2,15 @@
 title: mobileApp 资源类型
 description: 包含 Intune 移动应用基属性的抽象类。
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 993b79f8b9ff18c5ecb46b22adf5ccfc8da8f113
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 475a253f19dcff71636e9431e4fac8477f6ed42e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805996"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59023315"
 ---
 # <a name="mobileapp-resource-type"></a>mobileApp 资源类型
 
@@ -40,8 +40,8 @@ ms.locfileid: "58805996"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|displayName|字符串|管理员提供或导入的应用标题。|
-|description|字符串|应用的说明。|
+|displayName|String|管理员提供或导入的应用标题。|
+|说明|String|应用的说明。|
 |publisher|String|应用的发布者。|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|要显示在应用详细信息中并用于图标上传的大图标。|
 |createdDateTime|DateTimeOffset|创建应用的日期和时间。|
@@ -49,7 +49,7 @@ ms.locfileid: "58805996"
 |isFeatured|Boolean|指示应用是否被管理员标记为特色的值。|
 |privacyInformationUrl|String|隐私声明 Url。|
 |informationUrl|String|详细信息 Url。|
-|Owner|String|应用的所有者。|
+|owner|String|应用的所有者。|
 |developer|String|应用的开发者。|
 |notes|String|应用的备注。|
 |uploadState|Int32|上载状态。|
@@ -59,7 +59,7 @@ ms.locfileid: "58805996"
 |dependentAppCount|Int32|子应用具有的依赖项总数。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|描述|
 |:---|:---|:---|
 |**应用**|
 |categories|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) 集合|此应用的类别列表。|

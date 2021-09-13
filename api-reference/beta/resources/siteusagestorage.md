@@ -1,16 +1,16 @@
 ---
 title: siteUsageStorage 资源类型
 description: 下面是资源的 JSON 表示形式。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
 author: JeremyKelley
-ms.openlocfilehash: e00e260bfcab2992ecf892ec66b0d39884a31d477c84b0b6c46d3e004b274485
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c8c6013da34233a9cb58baa067abe1c3ea4901b6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54167777"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59033194"
 ---
 # <a name="siteusagestorage-resource-type"></a>siteUsageStorage 资源类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "54167777"
 | 属性           | 类型   |
 | :----------------- | :----- |
 | reportRefreshDate  | 日期   |
-| siteType           | 字符串 |
+| siteType           | String |
 | storageUsedInBytes | Int64  |
 | reportDate         | 日期   |
 | reportPeriod       | String |

@@ -2,15 +2,15 @@
 title: managedAndroidStoreApp 资源类型
 description: 包含可以使用 Intune 应用保护策略管理的 Android 应用商店应用的属性和继承的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 368e5dd4837465c51f87a53663ef727c80c2ec62dc574bd1fee591c6227e3051
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a4aa1015343fb5795f74f3acbbfb046156d7f960
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54141677"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59044704"
 ---
 # <a name="managedandroidstoreapp-resource-type"></a>managedAndroidStoreApp 资源类型
 
@@ -45,7 +45,7 @@ ms.locfileid: "54141677"
 |isFeatured|Boolean|指示应用是否被管理员标记为特色的值。继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |privacyInformationUrl|String|隐私声明 URL。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |informationUrl|String|详细信息 URL。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|所有者|String|应用的所有者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|owner|String|应用的所有者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |developer|String|应用的开发者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |notes|String|应用的备注。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|

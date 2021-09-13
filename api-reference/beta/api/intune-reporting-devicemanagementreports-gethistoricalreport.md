@@ -2,15 +2,15 @@
 title: getHistoricalReport 操作
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ca2ed2e8290c5739aec5f0ad394043d93843712c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 512d48f53dd6469ab60627987608823200633e2a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787341"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59034069"
 ---
 # <a name="gethistoricalreport-action"></a>getHistoricalReport 操作
 
@@ -43,7 +43,7 @@ POST /deviceManagement/reports/getHistoricalReport
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,7 +51,7 @@ POST /deviceManagement/reports/getHistoricalReport
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |name|String|尚未记录|
 |select|String collection|尚未记录|

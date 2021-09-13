@@ -2,15 +2,15 @@
 title: invitationParticipantInfo 资源类型
 description: '**InvitationParticipant** 用于表示与对话邀请关联的一组标识，并提供其他邀请参数。'
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 5b8432cf28dd078add91b517f75bc33a71fc4e8134ecff8155c97cc0acc887c8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f048fae8d5d63aac8a64dc0e8d3193de5cc5aef5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54202243"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084424"
 ---
 # <a name="invitationparticipantinfo-resource-type"></a>invitationParticipantInfo 资源类型
 

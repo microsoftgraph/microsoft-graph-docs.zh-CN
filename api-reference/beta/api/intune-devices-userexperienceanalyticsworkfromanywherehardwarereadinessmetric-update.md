@@ -2,15 +2,15 @@
 title: 更新 userExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric
 description: 更新 userExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: afcb59af44a72f4643567b741737aa8ced4aa844
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c45ef2f94886aa02c1b931775014c43ce26bd856
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805519"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59034559"
 ---
 # <a name="update-userexperienceanalyticsworkfromanywherehardwarereadinessmetric"></a>更新 userExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/userExperienceAnalyticsWorkFromAnywhereHardwareReadiness
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

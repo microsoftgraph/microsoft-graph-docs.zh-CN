@@ -2,15 +2,15 @@
 title: importedAppleDeviceIdentityResult 资源类型
 description: importedAppleDeviceIdentityResult 资源表示尝试导入 Apple 设备标识的结果。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c7b4d86c9a516e7beebfe7a0c0854cff9ed6b6aa
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 22e21105a508d613aeaeb73fb4547d5f800d7a44
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58799154"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59033509"
 ---
 # <a name="importedappledeviceidentityresult-resource-type"></a>importedAppleDeviceIdentityResult 资源类型
 
@@ -46,10 +46,10 @@ importedAppleDeviceIdentityResult 资源表示尝试导入 Apple 设备标识的
 |isDeleted|Boolean|指示设备是否从 Apple Business Manager 中删除 继承自 [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|
 |createdDateTime|DateTimeOffset|设备的创建日期时间 继承自 [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|
 |lastContactedDateTime|DateTimeOffset|设备的上次联系日期时间 继承自 [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|
-|description|String|设备描述 继承自 [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|
+|说明|String|设备描述 继承自 [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|
 |enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Intune 中的设备状态 继承自 [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
 |平台|[平台](../resources/intune-enrollment-platform.md)|设备平台。 继承自 [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)。 可取值为：`unknown`、`ios`、`android`、`windows`、`windowsMobile`、`macOS`。|
-|状态|Boolean|导入的设备标识的状态|
+|status|Boolean|导入的设备标识的状态|
 
 ## <a name="relationships"></a>关系
 无

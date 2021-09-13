@@ -1,16 +1,16 @@
 ---
 title: itemAddress 资源类型
 description: itemAddress 资源类型
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 7e11ab6a69e377144a53c298e1c8ad99d496557769be5d799dd0afa2beb38ea7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 72c48b2f96e60ab208d17aa4bb46dc7499d16728
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54167882"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59033397"
 ---
 # <a name="itemaddress-resource-type"></a>itemAddress 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "54167882"
 
 继承自 [itemFacet](../resources/itemfacet.md)。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出地址](../api/profile-list-addresses.md)|[itemAddress](../resources/itemaddress.md) 集合|从 addresses 导航属性获取 itemAddress 资源。|
@@ -38,7 +38,7 @@ ms.locfileid: "54167882"
 |detail|[physicalAddress](../resources/physicaladdress.md)|有关地址本身的详细信息。|
 |displayName|String|用户分配给此地址的友好名称。 |
 |geoCoordinates|[geoCoordinates](../resources/geocoordinates.md)|地址的地理序号。|
-|id|字符串|用于单独寻址实体的标识符。 继承自 [实体](../resources/entity.md)|
+|id|String|用于单独寻址实体的标识符。 继承自 [实体](../resources/entity.md)|
 |inference|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断出来的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|提供上次修改实体的用户和/或应用程序的标识符。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |lastModifiedDateTime|DateTimeOffset|提供实体创建时的日期时间Offset。 继承自 [itemFacet](../resources/itemfacet.md)。|

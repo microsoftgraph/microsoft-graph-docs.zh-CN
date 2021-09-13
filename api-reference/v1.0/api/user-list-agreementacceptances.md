@@ -1,16 +1,16 @@
 ---
 title: List agreementAcceptances
 description: 检索用户 agreementAcceptance 对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: d922160488b3a87fcf8fbf57d42acdba12b87701
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 6214b832b63673a6d0e72c92fbd3051ebbd04793
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50948658"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021853"
 ---
 # <a name="list-agreementacceptances"></a>List agreementAcceptances
 

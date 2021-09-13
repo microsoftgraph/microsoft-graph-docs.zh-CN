@@ -2,15 +2,15 @@
 title: userExperienceAnalyticsRemoteConnection 资源类型
 description: 用户体验分析远程连接实体。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7e9717b2865ff0e0a4126cc7f010925e8ff43360
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 62d6d012e94a0423b3951d1345704d4447b81e1f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820875"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020348"
 ---
 # <a name="userexperienceanalyticsremoteconnection-resource-type"></a>userExperienceAnalyticsRemoteConnection 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58820875"
 用户体验分析远程连接实体。
 
 ## <a name="methods"></a>方法
-|方法|返回类型|Description|
+|方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 userExperienceAnalyticsRemoteConnections](../api/intune-devices-userexperienceanalyticsremoteconnection-list.md)|[userExperienceAnalyticsRemoteConnection](../resources/intune-devices-userexperienceanalyticsremoteconnection.md) 集合|列出 [userExperienceAnalyticsRemoteConnection](../resources/intune-devices-userexperienceanalyticsremoteconnection.md) 对象的属性和关系。|
 |[获取 userExperienceAnalyticsRemoteConnection](../api/intune-devices-userexperienceanalyticsremoteconnection-get.md)|[userExperienceAnalyticsRemoteConnection](../resources/intune-devices-userexperienceanalyticsremoteconnection.md)|读取 [userExperienceAnalyticsRemoteConnection](../resources/intune-devices-userexperienceanalyticsremoteconnection.md) 对象的属性和关系。|

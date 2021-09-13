@@ -2,15 +2,15 @@
 title: 删除 androidWorkProfileScepCertificateProfile
 description: 删除 androidWorkProfileScepCertificateProfile。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b292487d9ef4963c52fc1e9614d2677983fe92e7
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2d3c0d910e2127a5c97c9a7d38924e3a9140eaf1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816042"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021230"
 ---
 # <a name="delete-androidworkprofilescepcertificateprofile"></a>删除 androidWorkProfileScepCertificateProfile
 
@@ -45,7 +45,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

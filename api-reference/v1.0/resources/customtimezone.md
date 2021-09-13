@@ -1,16 +1,16 @@
 ---
 title: customTimeZone 资源类型
 description: 表示从标准时间到夏令时的切换不标准（反之亦然）的时区。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: e059e316b3e641fd32bbf305cc619929adb09d2a6618181197775c8ca8bcc276
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9c5b24e02adafbf3e6cd10e960e4fc8b333edab6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54121268"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062759"
 ---
 # <a name="customtimezone-resource-type"></a>customTimeZone 资源类型
 

@@ -1,16 +1,16 @@
 ---
 title: managedAppDataStorageLocation 枚举类型
-description: 存储应用可能存储其数据的位置
+description: 存储托管应用可能存储其数据的位置
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 87acc4a549e061d354d3e01b28c5b7b79e744822
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d522cde6ab1a5d9ccc22627503e0eff5f1bc2cbc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58800004"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59030170"
 ---
 # <a name="managedappdatastoragelocation-enum-type"></a>managedAppDataStorageLocation 枚举类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "58800004"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-存储应用可能存储其数据的位置
+存储托管应用可能存储其数据的位置
 
 ## <a name="members"></a>成员
 |成员|值|说明|

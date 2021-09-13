@@ -2,15 +2,15 @@
 title: windowsUpdateState 资源类型
 description: 尚未记录
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9c0f4e986483f5c4dce849295406ebad3cec721c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a904a2c30d134b0b54ac20304ada5a5cbfabee79
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803747"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59030008"
 ---
 # <a name="windowsupdatestate-resource-type"></a>windowsUpdateState 资源类型
 
@@ -39,7 +39,7 @@ ms.locfileid: "58803747"
 |userId|String|用户的 ID。|
 |deviceDisplayName|String|设备显示名称。|
 |userPrincipalName|String|用户主体名称。|
-|状态|[windowsUpdateStatus](../resources/intune-shared-windowsupdatestatus.md)|Windows udpate 状态。 可能的值是：`upToDate`、`pendingInstallation`、`pendingReboot`、`failed`。|
+|status|[windowsUpdateStatus](../resources/intune-shared-windowsupdatestatus.md)|Windows udpate 状态。 可取值为：`upToDate`、`pendingInstallation`、`pendingReboot`、`failed`。|
 |qualityUpdateVersion|String|质量更新设备的版本。|
 |featureUpdateVersion|String|设备的当前功能更新版本。|
 |lastScanDateTime|DateTimeOffset|更新代理执行Windows扫描的日期时间。|

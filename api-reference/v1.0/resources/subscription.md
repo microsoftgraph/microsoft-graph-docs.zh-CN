@@ -1,16 +1,16 @@
 ---
 title: 订阅资源类型
 description: 订阅允许客户端应用接收有关 Microsoft Graph 数据更改的通知。目前，支持订阅以下资源：
-localization_priority: Priority
+ms.localizationpriority: high
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: resourcePageType
-ms.openlocfilehash: 0ffd6ad7ebcaddca149b66004cef13f24ba72a1e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 22c70c9617838fa58276a0f5fe56c734759a4a52
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805989"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084074"
 ---
 # <a name="subscription-resource-type"></a>订阅资源类型
 

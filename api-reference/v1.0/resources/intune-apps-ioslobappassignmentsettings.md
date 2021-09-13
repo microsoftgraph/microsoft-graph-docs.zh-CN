@@ -2,15 +2,15 @@
 title: iosLobAppAssignmentSettings 资源类型
 description: 包含用于为组分配 iOS LOB 移动应用的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4119285989fc554f315dcbad815a7b3cba0207f9ddc43a6c3307c186859c756f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f481e00769a30fe6e7a5f3e3ae242d7e1ab82f1f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54202411"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084487"
 ---
 # <a name="ioslobappassignmentsettings-resource-type"></a>iosLobAppAssignmentSettings 资源类型
 

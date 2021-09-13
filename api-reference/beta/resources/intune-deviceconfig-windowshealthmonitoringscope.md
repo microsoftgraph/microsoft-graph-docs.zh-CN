@@ -2,15 +2,15 @@
 title: windowsHealthMonitoringScope 枚举类型
 description: 设备运行状况监视作用域
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b38f4822040757be890d5ee666678c9cbd002c3a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6f5bb6654e42f1c27c0f7b6cec9d30c9c3d83928
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58777938"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59026957"
 ---
 # <a name="windowshealthmonitoringscope-enum-type"></a>windowsHealthMonitoringScope 枚举类型
 

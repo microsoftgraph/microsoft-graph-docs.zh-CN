@@ -2,21 +2,21 @@
 author: learafa
 title: 关注网站
 description: 关注用户的网站/网站。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 1f643671f9d9ccb744974f278007ce26186b2c97
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 16120ffedd1600c6f2021b433891722b80fd84be
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50473719"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085069"
 ---
 # <a name="follow-site"></a>关注网站 
 
 命名空间：microsoft.graph
 
-关注用户 [的网站或](../resources/site.md) 多个网站。
+关注 [用户网站或多个](../resources/site.md) 网站。
 
 ## <a name="permissions"></a>权限
 
@@ -38,7 +38,7 @@ POST /users/{user-id}/followedSites/add
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供包含下表中提到的 id 参数的 JSON 对象的数组。 
+在请求正文中，提供 JSON 对象数组以及下表中提到的 id 参数。 
 
 
 | 名称                 | 值  | 说明                                                            |
@@ -49,7 +49,7 @@ POST /users/{user-id}/followedSites/add
 ## <a name="response"></a>响应 
 
 * 如果请求成功，此方法将返回一组已关注的网站。  
-* 如果在关注任何指定网站时发生错误，此方法将返回状态代码，响应正文将包含一组包含错误对象的条目和 siteId，这些条目指示无法关注哪些 `207` 网站[](/graph/errors)。
+* 如果在关注任何指定网站时发生错误，此方法将返回状态代码，响应正文将包含一组包含错误对象的条目和 siteId，用于指示哪些网站无法 `207` 被关注[](/graph/errors)。
 
 ## <a name="example"></a>示例
 

@@ -2,15 +2,15 @@
 title: configurationManagerClientInformation 资源类型
 description: 从 SCCM 同步的配置管理器客户端信息
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0fde63ebef1ce0e8e5ef48252e9014704c768ed8
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3af9373c8359ed28465cb580057d06850dcb3504
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818075"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59026936"
 ---
 # <a name="configurationmanagerclientinformation-resource-type"></a>configurationManagerClientInformation 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58818075"
 从 SCCM 同步的配置管理器客户端信息
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|描述|
 |:---|:---|:---|
 |clientIdentifier|String|SCCM 中的 Configuration Manager 客户端 ID|
 |isBlocked|Boolean|Configuration Manager 客户端从 SCCM 阻止状态|

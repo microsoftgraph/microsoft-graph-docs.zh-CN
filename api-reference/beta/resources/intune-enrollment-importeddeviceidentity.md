@@ -2,15 +2,15 @@
 title: importedDeviceIdentity 资源类型
 description: importedDeviceIdentity 资源表示设备的唯一硬件标识，该设备已预先进行预阶段，用于预注册配置。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f1dbcb41d30bec09335316503fbc8f93f6264c34
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c18a744e9a0a3aa7597c4d3d017e39b975be7693
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803488"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59033488"
 ---
 # <a name="importeddeviceidentity-resource-type"></a>importedDeviceIdentity 资源类型
 
@@ -42,7 +42,7 @@ importedDeviceIdentity 资源表示设备的唯一硬件标识，该设备已预
 |lastModifiedDateTime|DateTimeOffset|说明的上次修改日期/时间|
 |createdDateTime|DateTimeOffset|设备的创建日期时间|
 |lastContactedDateTime|DateTimeOffset|设备的上次联系日期时间|
-|description|String|设备说明|
+|说明|String|设备说明|
 |enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Intune 中的设备状态。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
 |平台|[平台](../resources/intune-enrollment-platform.md)|设备平台。 可取值为：`unknown`、`ios`、`android`、`windows`、`windowsMobile`、`macOS`。|
 

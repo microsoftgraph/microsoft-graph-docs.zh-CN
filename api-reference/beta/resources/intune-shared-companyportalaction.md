@@ -2,15 +2,15 @@
 title: companyPortalAction 枚举类型
 description: 可在设备上执行的操作公司门户
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3e9ac30d736480b041e9839fc95e2a8a334b528d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 22eea83761e3268c09674cd43674d2a4c4d64f2d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795106"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59023365"
 ---
 # <a name="companyportalaction-enum-type"></a>companyPortalAction 枚举类型
 

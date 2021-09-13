@@ -2,15 +2,15 @@
 title: 组：resetUnseenCount
 description: 重置当前用户自上次访问后未查看的所有帖子的 unseenCount。 仅支持 Microsoft 365 组。
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 66eaaac94065669600ea3d70202ced4b3d0972ce
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 20808ced5f064fb77983776619347c6d60fa2feb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680533"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074258"
 ---
 # <a name="group-resetunseencount"></a>组：resetUnseenCount
 
@@ -35,7 +35,7 @@ POST /groups/{id}/resetUnseenCount
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
-| Authorization  | Bearer {token}。必需。  |
+| Authorization  | 持有者{令牌}。必需。  |
 | Prefer | return=minimal。 如果 minimal 响应头包含在请求头中，那么成功响应返回 `204 No Content` 代码。 可选。  | 
 
 ## <a name="request-body"></a>请求正文

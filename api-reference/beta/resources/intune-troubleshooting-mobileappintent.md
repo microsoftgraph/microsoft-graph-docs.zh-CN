@@ -2,15 +2,15 @@
 title: mobileAppIntent 枚举类型
 description: 指示移动设备上移动应用的状态。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 485519fdc142a472cba5db0e05df374b6426e17a
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: d7a1d27ef7f3ce091382b3daa5f816708a97f173
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58265170"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59029792"
 ---
 # <a name="mobileappintent-enum-type"></a>mobileAppIntent 枚举类型
 
@@ -24,9 +24,9 @@ ms.locfileid: "58265170"
 |成员|值|说明|
 |:---|:---|:---|
 |可用|0|可用|
-|notAvailable|1 |不可用|
-|requiredInstall|2 |必需安装|
-|requiredUninstall|3 |需要卸载|
+|notAvailable|1|不可用|
+|requiredInstall|2|必需安装|
+|requiredUninstall|3|需要卸载|
 |requiredAndAvailableInstall|4 |RequiredAndAvailableInstall|
 |availableInstallWithoutEnrollment|5 |AvailableInstallWithoutEnrollment|
 |exclude|6 |排除|

@@ -2,15 +2,15 @@
 title: configManagerPolicySummary 资源类型
 description: ConfigManager 策略摘要。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2cdb8393bd791af124232c2be3b35ede171bcf50
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 88c31f9314f7cc4c55c68b328768e3119d913298
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805301"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59033453"
 ---
 # <a name="configmanagerpolicysummary-resource-type"></a>configManagerPolicySummary 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58805301"
 ConfigManager 策略摘要。
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |targetedDeviceCount|Int32|策略所面向的设备数量。|
 |compliantDeviceCount|Int32|评估为符合策略的设备数量。|

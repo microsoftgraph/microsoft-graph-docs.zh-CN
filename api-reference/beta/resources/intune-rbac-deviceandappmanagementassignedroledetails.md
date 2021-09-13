@@ -2,15 +2,15 @@
 title: deviceAndAppManagementAssignedRoleDetails 资源类型
 description: 分配给用户的角色定义和角色分配集。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 88d69e52049eb1dd90eeb6657e3403369ff4a14f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b82d762d5c20d64f917729a193f2914c87acf040
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806010"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59030128"
 ---
 # <a name="deviceandappmanagementassignedroledetails-resource-type"></a>deviceAndAppManagementAssignedRoleDetails 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58806010"
 分配给用户的角色定义和角色分配集。
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |roleDefinitionIds|String collection|分配给用户的指定角色定义的角色定义 ID。 此属性是只读的。|
 |roleAssignmentIds|String collection|分配给用户的指定角色分配的角色分配 ID。 此属性是只读的。|

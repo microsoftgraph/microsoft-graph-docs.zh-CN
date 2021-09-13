@@ -2,15 +2,15 @@
 title: 邮件：转发
 description: 使用 JSON 或 MIME 格式转发邮件。
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3e0004bae41d7b700ae3a337bce27b214ba209cb
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: c96d1211a6666d177d6da8c8ad3c166541f81881
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52870400"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062927"
 ---
 # <a name="message-forward"></a>邮件：转发
 

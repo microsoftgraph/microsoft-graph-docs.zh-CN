@@ -2,15 +2,15 @@
 title: 更新 certificateConnectorDetails
 description: 更新 certificateConnectorDetails 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: daec761daba4abace27af57f0915fcc073358e7c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7ccceda414923535abb13517f973226d6cf96192
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789272"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59027545"
 ---
 # <a name="update-certificateconnectordetails"></a>更新 certificateConnectorDetails
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/certificateConnectorDetails/{certificateConnectorDetails
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,8 +53,8 @@ PATCH /deviceManagement/certificateConnectorDetails/{certificateConnectorDetails
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|此 ConnectorDetails 集的唯一标识符。|
-|connectorName|字符串|连接器名称 (注册期间设置的) 。|
+|id|String|此 ConnectorDetails 集的唯一标识符。|
+|connectorName|String|连接器名称 (注册期间设置的) 。|
 |machineName|String|承载此连接器服务的机器的名称。|
 |enrollmentDateTime|DateTimeOffset|注册此连接器的日期/时间。|
 |lastCheckinDateTime|DateTimeOffset|此连接器上次连接到服务的日期/时间。|

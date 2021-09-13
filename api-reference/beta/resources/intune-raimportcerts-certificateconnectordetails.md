@@ -2,15 +2,15 @@
 title: certificateConnectorDetails 资源类型
 description: 用于检索有关 Intune 证书连接器的信息的实体。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a882591ea334824020bc09af67d102f7fac9aa0e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5dbbb8029f4734e0ea02c1c940e2edba05d84727
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58822087"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020299"
 ---
 # <a name="certificateconnectordetails-resource-type"></a>certificateConnectorDetails 资源类型
 
@@ -38,7 +38,7 @@ ms.locfileid: "58822087"
 |:---|:---|:---|
 |id|String|此 ConnectorDetails 集的唯一标识符。|
 |connectorName|String|连接器名称 (注册期间设置的) 。|
-|machineName|字符串|承载此连接器服务的机器的名称。|
+|machineName|String|承载此连接器服务的机器的名称。|
 |enrollmentDateTime|DateTimeOffset|注册此连接器的日期/时间。|
 |lastCheckinDateTime|DateTimeOffset|此连接器上次连接到服务的日期/时间。|
 

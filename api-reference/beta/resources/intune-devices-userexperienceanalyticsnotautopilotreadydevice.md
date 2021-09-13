@@ -2,15 +2,15 @@
 title: userExperienceAnalyticsNotAutopilotReadyDevice 资源类型
 description: 用户体验分析 设备未准备好 Windows autopilot。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e85b13e540547111e2aea513f7fe595f7ece7404
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d09e1c897833839aa2f8581b9ec8ea23e6ad561a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804272"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020369"
 ---
 # <a name="userexperienceanalyticsnotautopilotreadydevice-resource-type"></a>userExperienceAnalyticsNotAutopilotReadyDevice 资源类型
 
@@ -39,11 +39,11 @@ ms.locfileid: "58804272"
 |serialNumber|String|intune 设备的序列号。|
 |manufacturer|String|intune 设备的制造商。|
 |model|String|intune 设备的型号。|
-|managedBy|字符串|intune 设备的托管者。|
+|managedBy|String|intune 设备的托管者。|
 |autoPilotRegistered|Boolean|intune 设备的 autopilotRegistered。|
 |autoPilotProfileAssigned|Boolean|intune 设备的 autopilotProfileAssigned。|
 |azureAdRegistered|Boolean|intune 设备的 azureAdRegistered。|
-|azureAdJoinType|字符串|intune 设备的 azure Ad joinType。|
+|azureAdJoinType|String|intune 设备的 azure Ad joinType。|
 
 ## <a name="relationships"></a>关系
 无

@@ -1,22 +1,22 @@
 ---
 title: stsPolicy 资源类型
 description: 表示控制策略行为的策略类型的抽象Microsoft 标识平台类型。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: lujiangfeng666
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 8c36121274a3e1d1b6f574a7256b869fe94c7ea5d0fd9db8067ddd78a7d0bdb6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 04ab6b06bbe099759802a57b6bbfdc337a233ef6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54184478"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59122962"
 ---
 # <a name="stspolicy-resource-type"></a>stsPolicy 资源类型
 
 命名空间：microsoft.graph
 
-表示控制策略行为的策略类型的抽象[Microsoft 标识平台](/azure/active-directory/develop/)类型。
+表示控制策略行为的策略类型的抽象[Microsoft 标识平台类型。](/azure/active-directory/develop/)
 
 继承自 [policyBase](policyBase.md)。
 

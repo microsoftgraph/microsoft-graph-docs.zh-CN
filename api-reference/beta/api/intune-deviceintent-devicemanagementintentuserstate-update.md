@@ -2,15 +2,15 @@
 title: 更新 deviceManagementIntentUserState
 description: 更新 deviceManagementIntentUserState 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2256f6d8b211a7e50066aa77bd4e0d9d861254af
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4ab6f3d942049f6f7583489224d7c726715da3f2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58774415"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59024647"
 ---
 # <a name="update-devicemanagementintentuserstate"></a>更新 deviceManagementIntentUserState
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}/userStates/{deviceMan
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,8 +53,8 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}/userStates/{deviceMan
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|The ID|
-|userPrincipalName|字符串|在设备上报告的用户主体名称|
+|id|String|The ID|
+|userPrincipalName|String|在设备上报告的用户主体名称|
 |userName|String|在设备上报告的用户名|
 |deviceCount|Int32|出于意图而属于用户的设备的计数|
 |lastReportedDateTime|DateTimeOffset|意图报告的上次修改日期时间|

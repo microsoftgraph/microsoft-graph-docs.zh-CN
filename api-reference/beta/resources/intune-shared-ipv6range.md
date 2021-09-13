@@ -2,15 +2,15 @@
 title: iPv6Range 资源类型
 description: IPv6 范围定义。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 976f99cbe523717a8c576fcebd1cb5ad33fc27ee
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 954d3ad2a8457a824bb684e900ffea5042694ece
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816898"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59030072"
 ---
 # <a name="ipv6range-resource-type"></a>iPv6Range 资源类型
 
@@ -26,7 +26,7 @@ IPv6 范围定义。
 继承自 [ipRange](../resources/intune-shared-iprange.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|描述|
 |:---|:---|:---|
 |lowerAddress|String|较低的地址。|
 |upperAddress|String|地址上限。|

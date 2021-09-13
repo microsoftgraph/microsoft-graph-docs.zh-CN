@@ -2,15 +2,15 @@
 title: 获取 deviceComplianceSettingState
 description: 读取 deviceComplianceSettingState 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1d87c5453df273579c3cbb3881d17406ecb28a469941a66c80ef2226235a9648
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 964657e42aca5895be1e68e700c8ee12cfbd9825
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54234195"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045383"
 ---
 # <a name="get-devicecompliancesettingstate"></a>获取 deviceComplianceSettingState
 

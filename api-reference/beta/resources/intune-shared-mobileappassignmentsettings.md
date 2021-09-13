@@ -2,15 +2,15 @@
 title: mobileAppAssignmentSettings 资源类型
 description: 包含用于为组分配移动应用的属性的抽象类。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2400a1aea59e7162ad217c16049b91d36a64d89b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5077cb0a2893e335ea374e72b52edf65314ee122
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796150"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59023323"
 ---
 # <a name="mobileappassignmentsettings-resource-type"></a>mobileAppAssignmentSettings 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58796150"
 包含用于为组分配移动应用的属性的抽象类。
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 
 ## <a name="relationships"></a>关系

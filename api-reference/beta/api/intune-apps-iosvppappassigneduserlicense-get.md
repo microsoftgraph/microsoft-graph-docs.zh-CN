@@ -2,15 +2,15 @@
 title: 获取 iosVppAppAssignedUserLicense
 description: 读取 iosVppAppAssignedUserLicense 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9a0b5d7b0ced9e820fc6b329140adfa53f8ec736
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 07eb18cb06ecabaa771e8d2a36a059c808247ccf
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794333"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59018948"
 ---
 # <a name="get-iosvppappassigneduserlicense"></a>获取 iosVppAppAssignedUserLicense
 
@@ -46,7 +46,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/assi
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

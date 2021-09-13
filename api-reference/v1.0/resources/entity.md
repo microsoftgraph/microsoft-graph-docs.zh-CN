@@ -1,16 +1,16 @@
 ---
 title: 实体资源类型
 description: 表示实体。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 8c4afa7a3822927ebeb3d91a6ecd8e439c5032c3ba5b1fd87a13b119d15e112f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2e9903661ea417c8b4f78f4c3b3f7b0006c4db14
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54130329"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123585"
 ---
 # <a name="entity-resource-type"></a>实体资源类型
 

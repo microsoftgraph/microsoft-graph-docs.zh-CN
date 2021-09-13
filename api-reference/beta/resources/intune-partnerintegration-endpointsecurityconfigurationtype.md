@@ -2,15 +2,15 @@
 title: endpointSecurityConfigurationType 枚举类型
 description: 终结点安全策略类型。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2d05cc3107df46920787650ab96df68c6d702deb
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0d721ca1b87e75ff5f2410ff7ce8a1e9aa6349ef
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787811"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59023379"
 ---
 # <a name="endpointsecurityconfigurationtype-enum-type"></a>endpointSecurityConfigurationType 枚举类型
 

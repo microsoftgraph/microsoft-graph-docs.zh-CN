@@ -2,15 +2,15 @@
 title: 列出语言
 description: 检索 B2X 用户流中支持自定义的语言列表。
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 21f2611fe61d1a4165ba1fe0896f711869809aea
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: afbb5674c6c499f695874e46f98b9f6ceac9921f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51919895"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100412"
 ---
 # <a name="list-languages"></a>列出语言
 
@@ -31,7 +31,7 @@ ms.locfileid: "51919895"
 工作或学校帐户需要属于以下角色之一：
 
 * 全局管理员
-* 外部标识用户流管理员
+* 外部标识用户Flow管理员
 
 ## <a name="http-request"></a>HTTP 请求
 

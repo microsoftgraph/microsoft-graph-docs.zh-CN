@@ -1,16 +1,16 @@
 ---
 title: 在 permissionGrantPolicy 的 excludes 集合中创建 permissionGrantConditionSet
 description: 添加权限授予策略中排除权限授予事件的条件。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: c7d082b92c1e3378b47dda156e7323bc3c6ae3d5
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: de5d987532313433f90fef2997fb47057716a53c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051275"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59007900"
 ---
 # <a name="create-permissiongrantconditionset-in-excludes-collection-of-permissiongrantpolicy"></a>在 permissionGrantPolicy 的 excludes 集合中创建 permissionGrantConditionSet
 
@@ -49,7 +49,7 @@ POST /policies/permissionGrantPolicies/{id}/excludes
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应 [代码和 permissionGrantConditionSet](../resources/permissiongrantconditionset.md) 对象。
 
 ## <a name="examples"></a>示例
 

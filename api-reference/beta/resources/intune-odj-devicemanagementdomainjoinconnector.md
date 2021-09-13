@@ -2,15 +2,15 @@
 title: deviceManagementDomainJoinConnector 资源类型
 description: 域加入连接器是一个连接器，负责分配 (和删除) 帐户 blob
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f99f8dc17e292ca01a614cf1201cab8d0f918cd4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5d638537c50c10a9e8a520cd9dc50316e7e3e3f1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783860"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017273"
 ---
 # <a name="devicemanagementdomainjoinconnector-resource-type"></a>deviceManagementDomainJoinConnector 资源类型
 
@@ -28,14 +28,14 @@ ms.locfileid: "58783860"
 |[列出 deviceManagementDomainJoinConnectors](../api/intune-odj-devicemanagementdomainjoinconnector-list.md)|[deviceManagementDomainJoinConnector](../resources/intune-odj-devicemanagementdomainjoinconnector.md) 集合|列出 [deviceManagementDomainJoinConnector 对象的属性和](../resources/intune-odj-devicemanagementdomainjoinconnector.md) 关系。|
 |[获取 deviceManagementDomainJoinConnector](../api/intune-odj-devicemanagementdomainjoinconnector-get.md)|[deviceManagementDomainJoinConnector](../resources/intune-odj-devicemanagementdomainjoinconnector.md)|读取 [deviceManagementDomainJoinConnector 对象的属性和](../resources/intune-odj-devicemanagementdomainjoinconnector.md) 关系。|
 |[创建 deviceManagementDomainJoinConnector](../api/intune-odj-devicemanagementdomainjoinconnector-create.md)|[deviceManagementDomainJoinConnector](../resources/intune-odj-devicemanagementdomainjoinconnector.md)|创建新的 [deviceManagementDomainJoinConnector](../resources/intune-odj-devicemanagementdomainjoinconnector.md) 对象。|
-|[删除 deviceManagementDomainJoinConnector](../api/intune-odj-devicemanagementdomainjoinconnector-delete.md)|无|删除 [deviceManagementDomainJoinConnector](../resources/intune-odj-devicemanagementdomainjoinconnector.md)。|
+|[删除 deviceManagementDomainJoinConnector](../api/intune-odj-devicemanagementdomainjoinconnector-delete.md)|None|删除 [deviceManagementDomainJoinConnector](../resources/intune-odj-devicemanagementdomainjoinconnector.md)。|
 |[更新 deviceManagementDomainJoinConnector](../api/intune-odj-devicemanagementdomainjoinconnector-update.md)|[deviceManagementDomainJoinConnector](../resources/intune-odj-devicemanagementdomainjoinconnector.md)|更新 [deviceManagementDomainJoinConnector 对象](../resources/intune-odj-devicemanagementdomainjoinconnector.md) 的属性。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|表示连接器的唯一标识符。|
-|displayName|字符串|连接器显示名称。|
+|displayName|String|连接器显示名称。|
 |lastConnectionDateTime|DateTimeOffset|上次连接器与 Intune 联系的时间。|
 |state|[deviceManagementDomainJoinConnectorState](../resources/intune-odj-devicemanagementdomainjoinconnectorstate.md)|连接器状态。 可取值为：`active`、`error`、`inactive`。|
 |version|String|连接器的版本。|

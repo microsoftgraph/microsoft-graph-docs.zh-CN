@@ -2,15 +2,15 @@
 title: 列出用户拥有的已删除项目
 description: '检索指定用户拥有的最近删除的项目的列表。  '
 author: keylimesoda
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 4064c395ba3275575fa0c698d602f30ec2d164b90714e0e26ea4178efd0800c5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a8cbe88fa9673ae63e7e7dd0aa6dcbe505edfda1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54138967"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022770"
 ---
 # <a name="list-deleted-items-owned-by-a-user"></a>列出用户拥有的已删除项目
 
@@ -63,7 +63,7 @@ POST /directory/deletedItems/getUserOwnedObjects
 
 ## <a name="response"></a>响应
 
-成功的请求返回 `200 OK` 响应代码;响应对象包括 ([已删除项目) ](../resources/directory.md) 的目录。
+成功的请求将 `200 OK` 返回响应代码;响应对象包括 ([已删除项目) ](../resources/directory.md) 的目录。
 
 ## <a name="example"></a>示例
 

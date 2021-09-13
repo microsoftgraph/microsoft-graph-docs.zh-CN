@@ -2,15 +2,15 @@
 title: configurationManagerClientState 枚举类型
 description: 配置管理器客户端状态
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2cd31d7d2cde3e3e22a13bdfae3c7ed47b4fcbaa
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7c2080ba9713c00942dbf59487292f6d3b366e20
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58757956"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59026943"
 ---
 # <a name="configurationmanagerclientstate-enum-type"></a>configurationManagerClientState 枚举类型
 
@@ -29,7 +29,7 @@ ms.locfileid: "58757956"
 |已安装|1|配置管理器代理已安装，但可能尚未显示在配置管理器控制台中。 请等待几小时，等待刷新。|
 |healthy|7 |此设备能够成功签入配置管理器服务。|
 |installFailed|8 |配置管理器代理安装失败。|
-|updateFailed|11 |配置管理器代理从版本 x 更新到版本 y 失败。 |
+|updateFailed|11|配置管理器代理从版本 x 更新到版本 y 失败。 |
 |communicationError|19|配置管理器代理过去能够访问配置管理器服务，但现在无法再访问。 |
 
 

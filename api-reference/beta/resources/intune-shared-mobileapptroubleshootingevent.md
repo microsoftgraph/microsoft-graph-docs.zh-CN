@@ -1,16 +1,16 @@
 ---
 title: mobileAppTroubleshootingEvent 资源类型
 description: 介绍支持多个工作流的 Microsoft Graph API 的 mobileAppTroubleshootingEvent 资源。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: rolyon
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4e0e155f3c6e1fb28ee4b426b8b38031bb1e7faf
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c4c522e6b6adf2a6a41c5e1a6a9e5b63fd64b9b0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58782908"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020264"
 ---
 # <a name="mobileapptroubleshootingevent-resource-type"></a>mobileAppTroubleshootingEvent 资源类型
 
@@ -44,10 +44,10 @@ ms.locfileid: "58782908"
 |history|[mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md) 集合|Intune 移动应用程序疑难解答历史记录项|
 |managedDeviceIdentifier|String|Intune 创建或收集的设备标识符。|
 |troubleshootingErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|包含有关错误及其修正的详细信息的对象。 继承自 [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
-|userId|字符串|尝试注册设备的用户的标识符。|
+|userId|String|尝试注册设备的用户的标识符。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|描述|
 |:---|:---|:---|
 |**设备管理**|
 |appLogCollectionRequests|[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) 集合|AppLogUploadRequest 的集合属性。|

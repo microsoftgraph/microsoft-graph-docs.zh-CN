@@ -1,16 +1,16 @@
 ---
 title: 创建 mobileAppTroubleshootingEvent
-description: 介绍 Microsoft for Intune Graph API 的 Create mobileAppTroubleshootingEvent 方法，该方法支持多个工作流。
-localization_priority: Normal
+description: 介绍适用于 Intune 的 Microsoft Graph API 的 Create mobileAppTroubleshootingEvent 方法，该方法支持多个工作流。
+ms.localizationpriority: medium
 author: rolyon
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 00ebe1796c9293df0048b2f6ff408576c52d03ec
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 539cd4c502d4f053d74fdd8f9638ccb12676c733
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788519"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59033950"
 ---
 # <a name="create-mobileapptroubleshootingevent"></a>创建 mobileAppTroubleshootingEvent
 
@@ -48,7 +48,7 @@ POST /users/{usersId}/mobileAppTroubleshootingEvents
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -58,7 +58,7 @@ POST /users/{usersId}/mobileAppTroubleshootingEvents
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|对象的 GUID|
+|id|String|对象的 GUID|
 |**疑难解答**|
 |additionalInformation|[keyValuePair](../resources/intune-shared-keyvaluepair.md) 集合|一组字符串键和字符串值对，提供有关疑难解答事件的其他信息。|
 |applicationId|String|Intune 应用程序标识符。|

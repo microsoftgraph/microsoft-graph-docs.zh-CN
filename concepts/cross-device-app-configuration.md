@@ -1,14 +1,14 @@
 ---
 title: '构建由 Project Rome 提供支持的跨设备应用 '
 description: '可以使用 Project Rome 构建无缝跨设备和平台的体验，从而为用户减少摩擦并帮助促进应用参与。 对于要使用 Project Rome API 跨设备和平台共享数据的应用程序，你需要配置跨设备应用，其中包含有关你特定于平台的应用的信息。 '
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: project-rome
-ms.openlocfilehash: bb3b6bb5ce9cf420c647fff8e91d306e83de65193a958375cb7704af2f15b207
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8d1d58ec2da980efeab46423fd945a5afd2994fa
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54216516"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139224"
 ---
 # <a name="build-cross-device-apps-powered-by-project-rome"></a>构建由 Project Rome 提供支持的跨设备应用 
 

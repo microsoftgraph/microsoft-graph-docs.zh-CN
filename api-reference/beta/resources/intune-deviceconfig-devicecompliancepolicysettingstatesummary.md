@@ -2,15 +2,15 @@
 title: deviceCompliancePolicySettingStateSummary 资源类型
 description: 跨帐户的设备合规性策略设置状态摘要。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 15745dd14d0d5f8f95e4130462c18255026493dc
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: faa2aee4a4e8118b3f4a5bc5cb861ac96b6db181
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58799519"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59023575"
 ---
 # <a name="devicecompliancepolicysettingstatesummary-resource-type"></a>deviceCompliancePolicySettingStateSummary 资源类型
 
@@ -47,7 +47,7 @@ ms.locfileid: "58799519"
 |conflictDeviceCount|Int32|冲突设备的数量|
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|描述|
 |:---|:---|:---|
 |deviceComplianceSettingStates|[deviceComplianceSettingState](../resources/intune-deviceconfig-devicecompliancesettingstate.md) 集合|尚未记录|
 

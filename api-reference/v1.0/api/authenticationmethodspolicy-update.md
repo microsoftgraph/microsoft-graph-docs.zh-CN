@@ -2,15 +2,15 @@
 title: 更新 authenticationMethodsPolicy
 description: 更新 authenticationMethodsPolicy 对象的属性。
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 89c3f68a27ca67fdae0560fc43f02356ff93e5f1
-ms.sourcegitcommit: 10d9f4c2cee192bd80984d48cabba63b47c54551
+ms.openlocfilehash: 20f1cd2abb733876c5b8c82dacc620804292019c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53547563"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59038494"
 ---
 # <a name="update-authenticationmethodspolicy"></a>更新 authenticationMethodsPolicy
 命名空间：microsoft.graph
@@ -52,6 +52,8 @@ PATCH /policies/authenticationMethodsPolicy
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_authenticationmethodspolicy"
@@ -79,6 +81,20 @@ Content-Type: application/json
     ]
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-authenticationmethodspolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-authenticationmethodspolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-authenticationmethodspolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

@@ -1,16 +1,16 @@
 ---
 title: keyValuePair 资源类型
 description: 操作参数的键值对。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 2f9f92fd27c6bac37d573288835a805cce9b9d0b4632cb1f43f6b52d43a958fb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0fddcae05c6e440b81476ec0406a9d6c7d2ba9e4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178183"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036191"
 ---
 # <a name="keyvaluepair-resource-type"></a>keyValuePair 资源类型
 

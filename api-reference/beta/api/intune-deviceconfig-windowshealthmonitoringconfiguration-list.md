@@ -2,15 +2,15 @@
 title: 列出 windowsHealthMonitoringConfigurations
 description: 列出 windowsHealthMonitoringConfiguration 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: edc40310a1f81c31df721459dfd9f9b5617ea430
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 926e77722158956ded679b7e14d92850b0d45e1a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801330"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59028084"
 ---
 # <a name="list-windowshealthmonitoringconfigurations"></a>列出 windowsHealthMonitoringConfigurations
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

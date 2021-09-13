@@ -2,15 +2,15 @@
 title: enrollmentConfigurationAssignment 资源类型
 description: 注册配置分配
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4ddcd4c6235072999545124bb7481ec9f8c5a83f4beb2a3b720bb27fcfaadba0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 17bb8343911b065729d365ded277958cbb6fa1f8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54124295"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072125"
 ---
 # <a name="enrollmentconfigurationassignment-resource-type"></a>enrollmentConfigurationAssignment 资源类型
 

@@ -2,15 +2,15 @@
 title: 更新 notificationMessageTemplate
 description: 更新 notificationMessageTemplate 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b5f3811b0e41e7c6517bbebf3599c479ecdd7a3affbfcda279feece84d8f3d30
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ad3d0e2437b0174fefbcd85781ecb7044a25e914
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54225858"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59146987"
 ---
 # <a name="update-notificationmessagetemplate"></a>更新 notificationMessageTemplate
 

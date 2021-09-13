@@ -2,15 +2,15 @@
 author: daspek
 title: renameAction 资源类型
 description: renameAction 对象提供有关重命名项目的活动的信息。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: c1abe3f322f039339514aee0374c0e2e0bd4e3f62aa48534abe37856609cd975
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d513ae68a2f438483930dd51c40fa06bed626d5b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54202131"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084158"
 ---
 # <a name="renameaction-resource-type"></a>renameAction 资源类型
 

@@ -2,15 +2,15 @@
 title: deviceCustomAttributeShellScript 资源类型
 description: 表示 macOS 的自定义属性脚本。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 549a2a01384271e97ba22c301b1a4397752386d5
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 53e6daffb2445fba581b66eec0a497eaa9091aa4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791492"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59023463"
 ---
 # <a name="devicecustomattributeshellscript-resource-type"></a>deviceCustomAttributeShellScript 资源类型
 
@@ -36,19 +36,19 @@ ms.locfileid: "58791492"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|自定义属性实体的唯一标识符。|
-|customAttributeName|字符串|自定义属性的名称。|
+|customAttributeName|String|自定义属性的名称。|
 |customAttributeType|[deviceCustomAttributeValueType](../resources/intune-devices-devicecustomattributevaluetype.md)|自定义属性的值的预期类型。 可取值为：`integer`、`string`、`dateTime`。|
 |displayName|String|设备管理脚本的名称。|
-|description|String|设备管理脚本的可选说明。|
+|说明|String|设备管理脚本的可选说明。|
 |scriptContent|二进制|脚本内容。|
 |createdDateTime|DateTimeOffset|创建设备管理脚本的日期和时间。 此属性是只读的。|
 |lastModifiedDateTime|DateTimeOffset|上次修改设备管理脚本的日期和时间。 此属性是只读的。|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示执行上下文的类型。 可取值为：`system`、`user`。|
 |fileName|String|脚本文件名。|
-|roleScopeTagIds|字符串集合|此 PowerShellScript 实例的范围标记标识列表。|
+|roleScopeTagIds|String collection|此 PowerShellScript 实例的范围标记标识列表。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|描述|
 |:---|:---|:---|
 |groupAssignments|[deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md) 集合|设备管理脚本的组分配列表。|
 |assignments|[deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md) 集合|设备管理脚本的组分配列表。|

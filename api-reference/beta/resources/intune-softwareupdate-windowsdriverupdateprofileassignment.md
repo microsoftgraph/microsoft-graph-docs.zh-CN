@@ -2,15 +2,15 @@
 title: windowsDriverUpdateProfileAssignment 资源类型
 description: 此实体包含用于将 Windows 驱动程序更新配置文件分配给组的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6d8df704dfa8ff7706bf8daeb3f379bf5af776a5
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6be1fe99e023e75c35cd6926afd23730684fa825
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820312"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59029883"
 ---
 # <a name="windowsdriverupdateprofileassignment-resource-type"></a>windowsDriverUpdateProfileAssignment 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58820312"
 此实体包含用于将 Windows 驱动程序更新配置文件分配给组的属性。
 
 ## <a name="methods"></a>方法
-|方法|返回类型|Description|
+|方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 windowsDriverUpdateProfileAssignments](../api/intune-softwareupdate-windowsdriverupdateprofileassignment-list.md)|[windowsDriverUpdateProfileAssignment](../resources/intune-softwareupdate-windowsdriverupdateprofileassignment.md) 集合|列出 [windowsDriverUpdateProfileAssignment](../resources/intune-softwareupdate-windowsdriverupdateprofileassignment.md) 对象的属性和关系。|
 |[获取 windowsDriverUpdateProfileAssignment](../api/intune-softwareupdate-windowsdriverupdateprofileassignment-get.md)|[windowsDriverUpdateProfileAssignment](../resources/intune-softwareupdate-windowsdriverupdateprofileassignment.md)|读取 [windowsDriverUpdateProfileAssignment](../resources/intune-softwareupdate-windowsdriverupdateprofileassignment.md) 对象的属性和关系。|

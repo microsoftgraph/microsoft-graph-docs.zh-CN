@@ -1,16 +1,16 @@
 ---
 title: 删除 plannerPlan
 description: 删除 **plannerPlan**。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 3cd65d08a7a4482ae62fbd6cb18288faaa9476ce
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: d02d5f03409afb5c6b1f8089ff847a5bf96b39bb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053963"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59099313"
 ---
 # <a name="delete-plannerplan"></a>删除 plannerPlan
 
@@ -35,7 +35,7 @@ DELETE /planner/plans/{id}
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer {token}。必需。 |
+| Authorization  | 持有者{令牌}。必需。 |
 | If-Match  | 要删除的 **plannerPlan** 的上次已知 ETag 值。必需。|
 
 ## <a name="request-body"></a>请求正文
@@ -79,7 +79,7 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -2,15 +2,15 @@
 title: 列出列表
 description: 获取 todoTaskList 对象及其属性的列表。
 author: avijityadav
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e3a92c793e430025ffec8c8cb6784881aa3904d3
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 11ce613353a295bb78ae925459a77ea641b16ed9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50963511"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049821"
 ---
 # <a name="list-lists"></a>列出列表
 命名空间：microsoft.graph

@@ -2,15 +2,15 @@
 title: 列出 iosVppAppAssignedUserLicenses
 description: 列出 iosVppAppAssignedUserLicense 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8ec45981192d9f6404c18fd0c1f7b0dff7d2227e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a5e15fa106ecc2b4c06878a1c27f890c227319a5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818215"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59018941"
 ---
 # <a name="list-iosvppappassigneduserlicenses"></a>列出 iosVppAppAssignedUserLicenses
 
@@ -43,7 +43,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/assi
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

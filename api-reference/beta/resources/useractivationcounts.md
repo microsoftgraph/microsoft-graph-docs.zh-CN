@@ -2,15 +2,15 @@
 title: userActivationCounts 资源类型
 description: 下面是资源的 JSON 表示形式。
 author: jpettere
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 9e1783822daf9ead4ba130161976c2f65f4c74a2f8b0f8a828981b14e64bcdf9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 466ccc3f942bec2fbb09e094e7805c4fcf160e54
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54212827"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59033166"
 ---
 # <a name="useractivationcounts-resource-type"></a>userActivationCounts 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "54212827"
 
 ## <a name="properties"></a>属性
 
-| 属性          | 类型   | 说明                              |
+| 属性          | 类型   | 描述                              |
 | :---------------- | :----- | ---------------------------------------- |
 | productType       | String | 产品类型，例如"Microsoft 365 ProPlus"或"Project Client"。 |
 | lastActivatedDate | 日期   | 最新激活的日期。       |
@@ -27,7 +27,7 @@ ms.locfileid: "54212827"
 | windows10Mobile   | Int64  | 移动版上的Windows 10计数。 |
 | ios               | Int64  | iOS 上的激活计数。             |
 | android           | Int64  | Android 设备上的激活计数。  |
-| activatedOnSharedComputer   | 布尔值 | 如果用户之前在共享计算机上使用过该产品，则其为 True。 |
+| activatedOnSharedComputer   | Boolean | 如果用户之前在共享计算机上使用过该产品，则其为 True。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

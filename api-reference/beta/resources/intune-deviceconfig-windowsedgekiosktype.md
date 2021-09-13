@@ -2,15 +2,15 @@
 title: windowsEdgeKioskType 枚举类型
 description: Edge 展台类型
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4628de813b291730edba769ea0b991abf5fd6f19
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6e1663e0c010aeeb26d76ad1e36f0f3376c1b16e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819687"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59033614"
 ---
 # <a name="windowsedgekiosktype-enum-type"></a>windowsEdgeKioskType 枚举类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58819687"
 Edge 展台类型
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |publicBrowsing|0|公共浏览|
 |fullScreen|1|全屏显示|

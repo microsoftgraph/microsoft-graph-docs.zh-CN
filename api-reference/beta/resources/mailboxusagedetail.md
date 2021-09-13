@@ -1,16 +1,16 @@
 ---
 title: mailboxUsageDetail 资源类型
 description: 下面是资源的 JSON 表示形式。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sarahwxy
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 56f2046c1979226a7ea6bb4e6ffe2c0a5bbfcdccbbe3f93a3675490b1a4725a5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9ef21c27b57d643d56aa954842f65727612db1f5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54195083"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59033369"
 ---
 # <a name="mailboxusagedetail-resource-type"></a>mailboxUsageDetail 资源类型
 
@@ -22,8 +22,8 @@ ms.locfileid: "54195083"
 | :------------------------------ | :------ |
 | reportRefreshDate               | 日期    |
 | userPrincipalName               | String  |
-| displayName                     | 字符串  |
-| isDeleted                       | 布尔值 |
+| displayName                     | String  |
+| isDeleted                       | Boolean |
 | deletedDate                     | 日期    |
 | createdDate                     | 日期    |
 | lastActivityDate                | 日期    |
@@ -34,7 +34,7 @@ ms.locfileid: "54195083"
 | issueWarningQuotaInBytes        | Int64   |
 | prohibitSendQuotaInBytes        | Int64   |
 | prohibitSendReceiveQuotaInBytes | Int64   |
-| reportPeriod                    | 字符串  |
+| reportPeriod                    | String  |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

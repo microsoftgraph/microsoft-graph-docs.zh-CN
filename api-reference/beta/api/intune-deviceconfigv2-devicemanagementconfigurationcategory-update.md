@@ -2,15 +2,15 @@
 title: 更新 deviceManagementConfigurationCategory
 description: 更新 deviceManagementConfigurationCategory 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0c17bde322bbd70f517ac07b88909b18a482deda
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: da90535f601bff90ca2b75e7787f189560473ff7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803670"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59034678"
 ---
 # <a name="update-devicemanagementconfigurationcategory"></a>更新 deviceManagementConfigurationCategory
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/configurationCategories/{deviceManagementConfigurationCa
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,16 +54,16 @@ PATCH /deviceManagement/configurationCategories/{deviceManagementConfigurationCa
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|项的标识符|
-|description|字符串|项目说明|
+|说明|String|项目说明|
 |helpText|String|项目的帮助文本|
 |name|String|项目名称|
-|displayName|字符串|项目的显示名称|
+|displayName|String|项目的显示名称|
 |平台|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|平台类型，类别中的设置具有。 可取值为：`none`、`macOS`、`windows10X`、`windows10`。|
 |technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|技术类型，类别中的设置具有。 可取值为：`none`、`mdm`、`windows10XManagement`、`configManager`、`microsoftSense`、`exchangeOnline`。|
 |settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|指示类别包含用于合规性或配置的设置。 可取值为：`none`、`configuration`。|
 |parentCategoryId|String|类别的父 ID。|
 |rootCategoryId|String|类别的根 ID。|
-|childCategoryIds|字符串集合|类别的子 ID 列表。|
+|childCategoryIds|String collection|类别的子 ID 列表。|
 
 
 

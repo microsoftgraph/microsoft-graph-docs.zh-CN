@@ -1,16 +1,16 @@
 ---
 title: 创建 educationAssignment
 description: 创建新工作分配。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 8b76ca2dfa375c72355cb5c68a5bde381509a7ad
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: cb5bdd507d35bc004faa977dd2605637a60a4321
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58262881"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147463"
 ---
 # <a name="create-educationassignment"></a>创建 educationAssignment
 

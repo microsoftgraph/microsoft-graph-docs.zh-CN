@@ -2,15 +2,15 @@
 title: 列出 transitiveMemberOf
 description: 获取组织联系人是其中一个成员的组。 此 API 请求是可传递的，并且还将返回用户是嵌套成员的所有组。
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5049ecb59180eb6a62137ff2beaa83b42a19f7de
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 1d44a6be842d081f8f27ed547cb0be5c3a1abd94
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50773478"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59037388"
 ---
 # <a name="list-transitivememberof"></a>列出 transitiveMemberOf
 

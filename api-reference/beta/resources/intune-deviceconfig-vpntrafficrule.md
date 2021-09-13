@@ -2,15 +2,15 @@
 title: vpnTrafficRule 资源类型
 description: VPN 流量规则定义。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d62c0d2357b3d46cce5654d460853ad063a351ad
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b5a9986231c0f4d974a02ed8eaaaf44a032ac341
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58800051"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59027062"
 ---
 # <a name="vpntrafficrule-resource-type"></a>vpnTrafficRule 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58800051"
 VPN 流量规则定义。
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |name|String|名称。|
 |协议|Int32|协议 (0-255) 。 有效值为 0 到 255|
@@ -34,7 +34,7 @@ VPN 流量规则定义。
 |appId|String|应用标识符（如果此流量规则由应用触发）。|
 |appType|[vpnTrafficRuleAppType](../resources/intune-deviceconfig-vpntrafficruleapptype.md)|应用类型（如果此流量规则由应用触发）。 可取值为：`none`、`desktop`、`universal`。|
 |routingPolicyType|[vpnTrafficRuleRoutingPolicyType](../resources/intune-deviceconfig-vpntrafficruleroutingpolicytype.md)|当应用触发时，指示是否沿此路由启用拆分隧道。 可取值为：`none`、`splitTunnel`、`forceTunnel`。|
-|claims|字符串|与此流量规则关联的声明。|
+|claims|String|与此流量规则关联的声明。|
 
 ## <a name="relationships"></a>关系
 无

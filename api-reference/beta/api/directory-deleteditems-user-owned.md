@@ -2,15 +2,15 @@
 title: 列出用户拥有的已删除项目
 description: '检索指定用户拥有的最近删除的项目的列表。  '
 author: keylimesoda
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 0820b4187524f29b488852241944528712fc4f5e90a951605f75c51a520601f8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4728db7de81f9c9469bda3d4f79a6e6dc92efa14
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54165460"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021377"
 ---
 # <a name="list-deleted-items-owned-by-a-user"></a>列出用户拥有的已删除项目
 

@@ -2,15 +2,15 @@
 title: chat： sendActivityNotification
 description: 在聊天范围内发送活动源通知。
 author: eddie-lee-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1e3cd2d0ad69924ee5ca1b672a5cac12b3b63c69
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: bd702e98c28ae0409b10c9bef3bde1349f9a10b8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53333952"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022910"
 ---
 # <a name="chat-sendactivitynotification"></a>chat： sendActivityNotification
 命名空间：microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "53333952"
 |:---|:---|
 |委派（工作或学校帐户）|TeamsActivity.Send|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|TeamsActivity.Send|
+|应用程序|TeamsActivity.Send|
 
 ## <a name="http-request"></a>HTTP 请求
 

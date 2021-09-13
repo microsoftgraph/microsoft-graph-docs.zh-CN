@@ -1,16 +1,16 @@
 ---
 title: 获取 calendarPermission
 description: 获取 calendarpermission 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sochowdh
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e6286ec91e3ef75cf9ae5d35992a8794392d2ede
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6e950d3a8d8fd860408a266c7fed8e4b361bf51c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047684"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59031843"
 ---
 # <a name="get-calendarpermission"></a>获取 calendarPermission
 

@@ -1,15 +1,15 @@
 ---
 title: Microsoft Intune 中的基于角色的访问控制
 description: 列出 Microsoft Graph API for Intune 终结点 (REST) 定义和管理租户组织的基于角色的访问控制 (RBAC) 。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: db89b2c0cca5414b442480fb2049c697d33f176d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 22217c58a792eaf572f1077dfc21680e31e1aaeb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795134"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59030149"
 ---
 # <a name="role-based-access-control-in-microsoft-intune"></a>Microsoft Intune 中的基于角色的访问控制
 

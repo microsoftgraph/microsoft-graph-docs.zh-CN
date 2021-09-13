@@ -1,16 +1,16 @@
 ---
 title: microsoftStoreForBusinessPortalSelectionOptions 枚举类型
-description: 管理员将可用的应用同步到适用于企业的 Microsoft Store门户。 Intune 管理控制台中提供了此功能。
+description: 管理员将可用应用同步到的适用于企业的 Microsoft Store门户。 Intune 管理控制台中提供了此功能。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fd77a1c968374be8d9f9c0fe43ecb2765326ba12
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 70ee661608c0a009b9c280d586cd159d84fcc7f0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795499"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017203"
 ---
 # <a name="microsoftstoreforbusinessportalselectionoptions-enum-type"></a>microsoftStoreForBusinessPortalSelectionOptions 枚举类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "58795499"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-管理员将可用的应用同步到适用于企业的 Microsoft Store门户。 Intune 管理控制台中提供了此功能。
+管理员将可用应用同步到的适用于企业的 Microsoft Store门户。 Intune 管理控制台中提供了此功能。
 
 ## <a name="members"></a>成员
 |成员|值|说明|

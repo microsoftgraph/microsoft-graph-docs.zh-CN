@@ -2,14 +2,14 @@
 title: 使用云通信 API 创建或加入联机会议
 description: 你可以灵活地创建将来或即时举行的会议
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
-ms.openlocfilehash: 8e23438742f375914d87f5e5ed7289aaa2d202dd7b782a9345cba9121dbea33f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d8e084b148e91a4400a8367d47caa7b57b7fe890
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54246456"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136157"
 ---
 # <a name="use-the-cloud-communications-api-to-create-or-join-online-meetings"></a>使用云通信 API 创建或加入联机会议
 

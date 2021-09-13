@@ -2,15 +2,15 @@
 title: windowsDeviceType 枚举类型
 description: 包含设备Windows的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 60f24b5e5dd32f137a278344283d30d2aec3494c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4d6e1b4cbf02445a7a0d232d4104e2f2a3af3ed7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820532"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59023652"
 ---
 # <a name="windowsdevicetype-enum-type"></a>windowsDeviceType 枚举类型
 
@@ -23,13 +23,13 @@ ms.locfileid: "58820532"
 包含设备Windows的属性。
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |无|0|未设置标志。|
 |desktop|1|是否支持桌面Windows设备类型。|
 |mobile|2|是否支持移动设备Windows移动设备类型。|
 |全息版|4 |是否支持全息Windows设备类型。|
-|team|8 |是否支持团队Windows设备类型。|
+|team|8 |是否支持 Team Windows设备类型。|
 
 
 

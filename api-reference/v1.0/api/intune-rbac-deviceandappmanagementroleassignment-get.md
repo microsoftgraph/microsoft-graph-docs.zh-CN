@@ -2,15 +2,15 @@
 title: 获取 deviceAndAppManagementRoleAssignment
 description: 读取 deviceAndAppManagementRoleAssignment 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9349b5d977bc0cad5c0d5ca0edf3765bca07ed87b937283651bf0e8429733783
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 376c4973ee8826716cd1850f3d82f6df35e28b75
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249438"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019900"
 ---
 # <a name="get-deviceandappmanagementroleassignment"></a>获取 deviceAndAppManagementRoleAssignment
 

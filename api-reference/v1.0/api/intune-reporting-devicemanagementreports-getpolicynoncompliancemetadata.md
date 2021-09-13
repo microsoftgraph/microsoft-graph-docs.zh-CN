@@ -2,15 +2,15 @@
 title: getPolicyNonComplianceMetadata 操作
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: df7e3de9877876bd272d5302ae8948d19164c6e0e9ca9b6dfa929a0bfc89fd28
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5131bded56e3e725dcc225bc6e07b1ea97f6caa9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54243782"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062969"
 ---
 # <a name="getpolicynoncompliancemetadata-action"></a>getPolicyNonComplianceMetadata 操作
 

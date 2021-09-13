@@ -2,15 +2,15 @@
 title: 删除 windowsPhoneXAP
 description: 删除 windowsPhoneXAP。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2a9b65e2aacf2722f136aabdcec232e25f758d4b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 54e3867ed8658a685e8e730e6bb1c00112de16ce
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796108"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021335"
 ---
 # <a name="delete-windowsphonexap"></a>删除 windowsPhoneXAP
 
@@ -45,7 +45,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIn
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

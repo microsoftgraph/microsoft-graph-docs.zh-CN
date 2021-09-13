@@ -1,16 +1,16 @@
 ---
 title: 列出 extensionProperties
 description: 检索 extensionproperty 对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 4375f868d6588250c1bdd11b339565fa7f125ab8
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 2d288b89d0b4b77a4b94e63c0bcef9104fb7103d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132494"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59038571"
 ---
 # <a name="list-extensionproperties"></a>列出 extensionProperties
 
@@ -18,7 +18,7 @@ ms.locfileid: "50132494"
 
 检索应用程序上的 [extensionProperty](../resources/extensionproperty.md) 对象列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -52,7 +52,7 @@ GET /applications/{id}/extensionProperties
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应 `200 OK` 代码和 [extensionProperty](../resources/extensionproperty.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [extensionProperty](../resources/extensionproperty.md) 对象集合。
 
 ## <a name="examples"></a>示例
 

@@ -2,15 +2,15 @@
 title: 列出 androidWorkProfileGeneralDeviceConfigurations
 description: 列出 androidWorkProfileGeneralDeviceConfiguration 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8be8f1a03213d54cd6619ab47bf593c0ba5a01f4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: af2367656679596ba7e0cb8c4445457ff12ad472
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786219"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59028385"
 ---
 # <a name="list-androidworkprofilegeneraldeviceconfigurations"></a>列出 androidWorkProfileGeneralDeviceConfigurations
 
@@ -20,7 +20,7 @@ ms.locfileid: "58786219"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-列出 [androidWorkProfileGeneralDeviceConfiguration 对象的属性和](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md) 关系。
+列出 [androidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md) 对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

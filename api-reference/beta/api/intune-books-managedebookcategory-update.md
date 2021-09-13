@@ -2,15 +2,15 @@
 title: 更新 managedEBookCategory
 description: 更新 managedEBookCategory 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a38a69730832ee3cd984e6cdf873b0d25f3643f0
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 47e71d1e308255c4918756920cb3bdeb61efc8bf
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784721"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59031493"
 ---
 # <a name="update-managedebookcategory"></a>更新 managedEBookCategory
 
@@ -44,7 +44,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/categories/{managedEBo
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,7 +54,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/categories/{managedEBo
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |displayName|String|电子图书类别的名称。|
 |lastModifiedDateTime|DateTimeOffset|ManagedEBookCategory 上次修改的日期和时间。|
 

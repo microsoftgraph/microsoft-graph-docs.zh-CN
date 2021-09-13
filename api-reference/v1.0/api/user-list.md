@@ -2,15 +2,15 @@
 title: 列出用户
 description: 检索用户对象列表。
 author: jpettere
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 5d6db788a394c4ffb9c5a0b4a6f5a0434fe6c920
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: a5b269c3543142ed39abae5995d00d372b085293
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58667414"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59099292"
 ---
 # <a name="list-users"></a>列出用户
 
