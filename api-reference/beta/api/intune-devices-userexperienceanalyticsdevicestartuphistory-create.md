@@ -2,15 +2,15 @@
 title: 创建 userExperienceAnalyticsDeviceStartupHistory
 description: 创建新的 userExperienceAnalyticsDeviceStartupHistory 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cdcef9d891cd22ad4dae4d9ebd298c261f855074
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 74aa06c8486d0c29bbcad20425a4876da0dcd5fe
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783713"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59097283"
 ---
 # <a name="create-userexperienceanalyticsdevicestartuphistory"></a>创建 userExperienceAnalyticsDeviceStartupHistory
 
@@ -43,7 +43,7 @@ POST /deviceManagement/userExperienceAnalyticsDeviceStartupHistory
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,7 +53,7 @@ POST /deviceManagement/userExperienceAnalyticsDeviceStartupHistory
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|用户体验分析设备启动历史记录的唯一标识符。|
+|id|String|用户体验分析设备启动历史记录的唯一标识符。|
 |deviceId|String|用户体验分析设备 ID。|
 |startTime|DateTimeOffset|用户体验分析设备启动开始时间。|
 |coreBootTimeInMs|Int32|用户体验分析设备核心启动时间（以毫秒为单位）。|
@@ -65,11 +65,11 @@ POST /deviceManagement/userExperienceAnalyticsDeviceStartupHistory
 |responsiveDesktopTimeInMs|Int32|用户体验分析响应式桌面时间（以毫秒为单位）。|
 |totalLoginTimeInMs|Int32|用户体验分析设备登录总时间（以毫秒为单位）。|
 |isFirstLogin|Boolean|用户体验分析设备第一次登录。|
-|isFeatureUpdate|布尔值|用户体验分析设备启动记录是一项功能更新。|
+|isFeatureUpdate|Boolean|用户体验分析设备启动记录是一项功能更新。|
 |operatingSystemVersion|String|用户体验分析设备启动记录的操作系统版本。|
 |restartCategory|[userExperienceAnalyticsOperatingSystemRestartCategory](../resources/intune-devices-userexperienceanalyticsoperatingsystemrestartcategory.md)|操作系统重启类别。 可取值为：`unknown`、`restartWithUpdate`、`restartWithoutUpdate`、`blueScreen`、`shutdownWithUpdate`、`shutdownWithoutUpdate`、`longPowerButtonPress`、`bootError`、`update`。|
 |restartStopCode|String|操作系统重新启动停止代码。 这将显示可用于查找蓝屏原因的错误检查代码。|
-|restartFaultBucket|字符串|操作系统重新启动故障存储桶。 故障存储桶用于查找有关系统崩溃的其他信息。|
+|restartFaultBucket|String|操作系统重新启动故障存储桶。 故障存储桶用于查找有关系统崩溃的其他信息。|
 
 
 

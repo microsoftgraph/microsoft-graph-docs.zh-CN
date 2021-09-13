@@ -2,15 +2,15 @@
 title: 更新 userExperienceAnalyticsDevicePerformance
 description: 更新 userExperienceAnalyticsDevicePerformance 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 261d06e9e45b56145d149c22f5b6be71fa323c60
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3a76a8a2703e721a2ec2958e9665efb8e719fa43
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793131"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59092985"
 ---
 # <a name="update-userexperienceanalyticsdeviceperformance"></a>更新 userExperienceAnalyticsDevicePerformance
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/userExperienceAnalyticsDevicePerformance/{userExperience
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,7 +53,7 @@ PATCH /deviceManagement/userExperienceAnalyticsDevicePerformance/{userExperience
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|用户体验分析设备启动性能设备的唯一标识符。|
+|id|String|用户体验分析设备启动性能设备的唯一标识符。|
 |deviceName|String|用户体验分析设备名称。|
 |model|String|用户体验分析设备模型。|
 |manufacturer|String|用户体验分析设备制造商。|
@@ -62,7 +62,7 @@ PATCH /deviceManagement/userExperienceAnalyticsDevicePerformance/{userExperience
 |bootScore|Int32|用户体验分析设备启动分数。|
 |coreBootTimeInMs|Int32|用户体验分析设备核心启动时间（以毫秒为单位）。|
 |groupPolicyBootTimeInMs|Int32|用户体验分析设备组策略启动时间（以毫秒为单位）。|
-|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析设备的运行状况。 可能的值是：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
+|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析设备的运行状况。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
 |loginScore|Int32|用户体验分析设备登录分数。|
 |coreLoginTimeInMs|Int32|用户体验分析设备核心登录时间（以毫秒为单位）。|
 |groupPolicyLoginTimeInMs|Int32|用户体验分析设备组策略登录时间（以毫秒为单位）。|

@@ -2,20 +2,20 @@
 title: 获取 personAnnotation
 description: 读取 personAnnotation 对象的属性和关系。
 author: kevinbellinger
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 2d13769f6b9493d049496bbebd895e6516427266
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b2ed0b884040547a8c791dbe84be78efb2950a70
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968389"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59138307"
 ---
 # <a name="get-personannotation"></a>获取 personAnnotation
 命名空间：microsoft.graph
 
-从用户的[配置文件](../resources/profile.md)中读取[personAnnotation](../resources/personannotation.md)对象的属性和关系。
+从用户配置文件中读取 [personAnnotation](../resources/personannotation.md) 对象的属性和 [关系](../resources/profile.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -23,9 +23,9 @@ ms.locfileid: "48968389"
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| 委派（工作或学校帐户）     | User. Read、User.readbasic.all、user. all、All、user. all。 All |
-| 委派（个人 Microsoft 帐户） | User. Read、User.readbasic.all、user. all、All、user. all。 All |
-| 应用程序                            | User.readbasic.all、所有用户读写全部。 All                            |
+| 委派（工作或学校帐户）     | User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All |
+| 应用程序                            | User.ReadBasic.All、User.Read.All、User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -40,7 +40,7 @@ GET /users/{id | userPrincipalName}/profile/notes/{id}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$select` 查询参数。 指定要包含在响应中的属性的列表，并以逗号分隔。 为获得最佳性能，请仅选择所需的属性子集。
+此方法支持 `$select` 查询参数。 指定要包括在响应中的属性列表，用逗号分隔它们。 为获得最佳性能，请仅选择所需的属性子集。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -52,7 +52,7 @@ GET /users/{id | userPrincipalName}/profile/notes/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [personAnnotation](../resources/personannotation.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [personAnnotation](../resources/personannotation.md) 对象。
 
 ## <a name="examples"></a>示例
 

@@ -2,15 +2,15 @@
 title: loggedOnUser 资源类型
 description: 已登录用户
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f19c580d56ec5ca16e16132cde0a2f901f963af4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ed949ddabbc38420054be2c7d03613bf1a5f0660
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806619"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59095337"
 ---
 # <a name="loggedonuser-resource-type"></a>loggedOnUser 资源类型
 

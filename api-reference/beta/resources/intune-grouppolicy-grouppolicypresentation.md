@@ -2,15 +2,15 @@
 title: groupPolicyPresentation 资源类型
 description: 用于显示组策略定义中任何其他选项的显示的基本实体。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 424bda396ce51d9abc54b1330febc8230f7576cb
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5f05c34b34856b0e038d96a71aeb49117cab0d30
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816478"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086104"
 ---
 # <a name="grouppolicypresentation-resource-type"></a>groupPolicyPresentation 资源类型
 
@@ -23,20 +23,20 @@ ms.locfileid: "58816478"
 用于显示组策略定义中任何其他选项的显示的基本实体。
 
 ## <a name="methods"></a>方法
-|方法|返回类型|Description|
+|方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 groupPolicyPresentation](../api/intune-grouppolicy-grouppolicypresentation-get.md)|[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|读取 [groupPolicyPresentation 对象的属性和](../resources/intune-grouppolicy-grouppolicypresentation.md) 关系。|
 |[更新 groupPolicyPresentation](../api/intune-grouppolicy-grouppolicypresentation-update.md)|[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|更新 [groupPolicyPresentation 对象](../resources/intune-grouppolicy-grouppolicypresentation.md) 的属性。|
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |标签|String|任何演示文稿实体的本地化文本标签。 默认值为空白。|
 |id|String|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|Description|
+|关系|类型|说明|
 |:---|:---|:---|
 |definition|[groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|与演示文稿关联的组策略定义。|
 

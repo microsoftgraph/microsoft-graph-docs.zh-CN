@@ -2,15 +2,15 @@
 title: 创建 securityBaselineDeviceState
 description: 创建新的 securityBaselineDeviceState 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d1f9dd1dfb994eb2007bda62546b24908a5852ff
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 762aa9b2ba1c21fa16d6ef458c2b2bb329f818d4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58821015"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59102960"
 ---
 # <a name="create-securitybaselinedevicestate"></a>创建 securityBaselineDeviceState
 
@@ -43,7 +43,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/microsoft.graph.se
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,7 +53,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/microsoft.graph.se
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的唯一标识符|
+|id|String|实体的唯一标识符|
 |managedDeviceId|String|Intune 设备 ID|
 |deviceDisplayName|String|设备的显示名称|
 |userPrincipalName|String|用户主体名称|

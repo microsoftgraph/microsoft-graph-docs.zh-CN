@@ -2,15 +2,15 @@
 title: ratingUnitedKingdomMoviesType 枚举类型
 description: 英国电影评级标签
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7112347d7ad2451e096f973835e44e3431bdade4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 17bb209df6210476f71042e0881954c8dc6ca45d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819106"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59106082"
 ---
 # <a name="ratingunitedkingdommoviestype-enum-type"></a>ratingUnitedKingdomMoviesType 枚举类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58819106"
 英国电影评级标签
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |allAllowed|0|默认值，允许所有电影内容|
 |allBlocked|1|不允许任何电影内容|
@@ -32,7 +32,7 @@ ms.locfileid: "58819106"
 |parentalGuidance|4 |PG 分类适合成熟|
 |agesAbove12Video|5 |12，适用于 12 年以上的视频版本|
 |agesAbove12Cinema|6 |12A，适合 12 年以上电影版本|
-|agesAbove15|7 |15，仅适用于 15 年及更旧的|
+|agesAbove15|7 |15，仅适用于 15 年以上|
 |一些|8 |仅适用于成人|
 
 

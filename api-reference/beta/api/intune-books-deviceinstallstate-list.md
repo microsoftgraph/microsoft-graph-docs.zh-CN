@@ -2,15 +2,15 @@
 title: 列出 deviceInstallStates
 description: 列出 deviceInstallState 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9478e9414ce55695dadac05d301a0dce1acd4e85
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 862689abea4d18bacf5dc9bab1f5886490366c9d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801442"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59113026"
 ---
 # <a name="list-deviceinstallstates"></a>列出 deviceInstallStates
 
@@ -44,7 +44,7 @@ GET /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userIn
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

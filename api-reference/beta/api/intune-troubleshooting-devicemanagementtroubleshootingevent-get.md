@@ -2,15 +2,15 @@
 title: 获取 deviceManagementTroubleshootingEvent
 description: 读取 deviceManagementTroubleshootingEvent 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 408b48b6a427a6b688f314c9648913b333970078
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: dc2a4ed6e806e6c244076fde52dd263aeb9481c0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58263224"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59092481"
 ---
 # <a name="get-devicemanagementtroubleshootingevent"></a>获取 deviceManagementTroubleshootingEvent
 

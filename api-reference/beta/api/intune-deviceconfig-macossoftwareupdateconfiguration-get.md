@@ -2,15 +2,15 @@
 title: 获取 macOSSoftwareUpdateConfiguration
 description: 读取 macOSSoftwareUpdateConfiguration 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a7b5e2d122ab27aa5a185998a8bfc52bfd58d0d1
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 94ab55593f0cf83edf3294675318400ddf592e8c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788617"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59097619"
 ---
 # <a name="get-macossoftwareupdateconfiguration"></a>获取 macOSSoftwareUpdateConfiguration
 
@@ -48,7 +48,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

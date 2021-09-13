@@ -2,15 +2,15 @@
 title: userExperienceAnalyticsAppHealthDevicePerformance 资源类型
 description: 用户体验分析设备性能实体包含设备性能详细信息。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 59df08aa5f6cf4b70a6c667d4bd951bc7430ebd4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b57c6ca01d897b19d4bff06d2f6e92a13b47e7ff
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58770474"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086272"
 ---
 # <a name="userexperienceanalyticsapphealthdeviceperformance-resource-type"></a>userExperienceAnalyticsAppHealthDevicePerformance 资源类型
 

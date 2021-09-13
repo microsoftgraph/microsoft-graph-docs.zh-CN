@@ -2,15 +2,15 @@
 title: deviceManagementTemplateType 枚举类型
 description: 模板类型
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3e50a950819198766d5e6d0a1372010d69ebfa39
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 337ea607bbc14822d5efe470c3347fe5033a5175
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793836"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086377"
 ---
 # <a name="devicemanagementtemplatetype-enum-type"></a>deviceManagementTemplateType 枚举类型
 
@@ -36,7 +36,7 @@ ms.locfileid: "58793836"
 |deviceCompliance|8 |设备合规性模板|
 |deviceConfigurationForOffice365|9 |设备配置Microsoft Office 365设置|
 |cloudPC|10 |Windows 365 安全基线模板|
-|firewallSharedSettings|11 |用于引用设置的防火墙共享对象模板|
+|firewallSharedSettings|11|用于引用设置的防火墙共享对象模板|
 
 
 

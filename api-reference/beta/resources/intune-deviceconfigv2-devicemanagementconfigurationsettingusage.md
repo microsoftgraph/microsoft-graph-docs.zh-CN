@@ -2,15 +2,15 @@
 title: deviceManagementConfigurationSettingUsage 枚举类型
 description: 受支持的设置类型
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d183bb25acc76f75a311d57d18a6864ef3d4f6cd
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e18125e49c0bf879ec05a4afecd8df2287dd5ce1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801800"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59091564"
 ---
 # <a name="devicemanagementconfigurationsettingusage-enum-type"></a>deviceManagementConfigurationSettingUsage 枚举类型
 

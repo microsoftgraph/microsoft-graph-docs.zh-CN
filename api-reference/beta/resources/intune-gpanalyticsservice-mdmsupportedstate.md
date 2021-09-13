@@ -2,15 +2,15 @@
 title: mdmSupportedState 枚举类型
 description: Mdm 支持设置的状态。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a22da359837dd1897311e906176067ab22efdacd
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8f40a98544d41fdc9c4a0c13e6085d6670cca167
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58817059"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086146"
 ---
 # <a name="mdmsupportedstate-enum-type"></a>mdmSupportedState 枚举类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58817059"
 Mdm 支持设置的状态。
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |unknown|0|此设置的 Mdm 支持状态未知。|
 |支持|1|支持设置。|

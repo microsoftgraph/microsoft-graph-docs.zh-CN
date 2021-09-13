@@ -2,15 +2,15 @@
 title: importOffice365DeviceConfigurationPolicies 操作
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a03e9e6880cc045793a4660f1e8e9323944423a1
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c7611b07646eadac764775c4048030caec520cbf
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58799358"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59103065"
 ---
 # <a name="importoffice365deviceconfigurationpolicies-action"></a>importOffice365DeviceConfigurationPolicies 操作
 
@@ -44,7 +44,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/impor
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

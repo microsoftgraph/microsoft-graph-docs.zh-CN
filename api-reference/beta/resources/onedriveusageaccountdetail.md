@@ -1,16 +1,16 @@
 ---
 title: oneDriveUsageAccountDetail 资源类型
 description: 下面是资源的 JSON 表示形式。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
 author: JeremyKelley
-ms.openlocfilehash: 210728ee77bb013a4894156aef79d35248e7d2f32eed129baf8905655f192f5a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 56ac17d80338f37fa0026c06887bbbc10e9e1272
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54155972"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085880"
 ---
 # <a name="onedriveusageaccountdetail-resource-type"></a>oneDriveUsageAccountDetail 资源类型
 
@@ -21,10 +21,10 @@ ms.locfileid: "54155972"
 | 属性                | 类型    |
 | :---------------------- | :------ |
 | reportRefreshDate       | 日期    |
-| siteUrl                 | 字符串  |
-| ownerDisplayName        | 字符串  |
+| siteUrl                 | String  |
+| ownerDisplayName        | String  |
 | ownerPrincipalName      | String  |
-| isDeleted               | 布尔值 |
+| isDeleted               | Boolean |
 | lastActivityDate        | 日期    |
 | fileCount               | Int64   |
 | activeFileCount         | Int64   |

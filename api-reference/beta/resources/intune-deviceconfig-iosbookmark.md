@@ -2,15 +2,15 @@
 title: iosBookmark 资源类型
 description: iOS URL 书签
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ee61f1b0b45d735c6c738db6220d84b3cc962b6b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2df99ad3410864cc6bae922a6c8dafac4f022f2e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788231"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086846"
 ---
 # <a name="iosbookmark-resource-type"></a>iosBookmark 资源类型
 

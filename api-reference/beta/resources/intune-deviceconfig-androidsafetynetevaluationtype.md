@@ -2,15 +2,15 @@
 title: androidSafetyNetEvaluationType 枚举类型
 description: 表示 Android SafetyNet 证明评估类型的枚举。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ac0a3e2fa8c113339afb2f255efe088f97d51602
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 47590e6c13a72faf9b525cb62f335515ca08e53a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783258"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59101657"
 ---
 # <a name="androidsafetynetevaluationtype-enum-type"></a>androidSafetyNetEvaluationType 枚举类型
 

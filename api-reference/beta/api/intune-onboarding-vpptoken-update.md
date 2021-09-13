@@ -2,15 +2,15 @@
 title: 更新 vppToken
 description: 更新 vppToken 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 030a5467659edfa2754819bb20b1e44e28e6de4a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3fe82371ed0fdd12f6452cecce98248101738e32
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787958"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59116505"
 ---
 # <a name="update-vpptoken"></a>更新 vppToken
 
@@ -43,7 +43,7 @@ PATCH /deviceAppManagement/vppTokens/{vppTokenId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -70,7 +70,7 @@ PATCH /deviceAppManagement/vppTokens/{vppTokenId}
 |displayName|String|管理员指定的令牌友好名称。|
 |locationName|String|从 Apple VPP 返回的令牌位置。|
 |claimTokenManagementFromExternalMdm|Boolean|管理员同意允许从外部 MDM 进行声明令牌管理。|
-|roleScopeTagIds|字符串集合|角色作用域标记分配给此实体的标识。|
+|roleScopeTagIds|字符串集合|分配给此实体的角色作用域标记标识。|
 
 
 

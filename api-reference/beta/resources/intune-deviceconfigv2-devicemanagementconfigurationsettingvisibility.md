@@ -2,15 +2,15 @@
 title: deviceManagementConfigurationSettingVisibility 枚举类型
 description: 受支持的设置类型
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f974bfaeffacb688f1f822661e8ed902bea7fa97
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f11dd69921216bbd0c8a296e71fd324db8ec6c73
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788960"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59091480"
 ---
 # <a name="devicemanagementconfigurationsettingvisibility-enum-type"></a>deviceManagementConfigurationSettingVisibility 枚举类型
 

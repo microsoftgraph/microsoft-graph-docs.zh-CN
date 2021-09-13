@@ -1,16 +1,16 @@
 ---
 title: workbookComment 资源类型
 description: 表示工作簿中的注释。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: d7eea3f88605adb144e2fe4ab8061baf5da99fc93b912fa7438129ea35b32366
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3ff1508bb17ad584d11c1b14ebe95c32ab0c9f55
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54244181"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59119833"
 ---
 # <a name="workbookcomment-resource-type"></a>workbookComment 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "54244181"
 
 表示工作簿中的注释。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|

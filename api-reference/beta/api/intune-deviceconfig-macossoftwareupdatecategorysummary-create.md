@@ -2,15 +2,15 @@
 title: 创建 macOSSoftwareUpdateCategorySummary
 description: 创建新的 macOSSoftwareUpdateCategorySummary 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fc7f6dc68ba097c1b835db16b8d0905d3b3b23f4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 80f7155c96ddd377338ded6f046b60fd25cef3ed
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795737"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59112753"
 ---
 # <a name="create-macossoftwareupdatecategorysummary"></a>创建 macOSSoftwareUpdateCategorySummary
 
@@ -43,7 +43,7 @@ POST /deviceManagement/macOSSoftwareUpdateAccountSummaries/{macOSSoftwareUpdateA
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -57,7 +57,7 @@ POST /deviceManagement/macOSSoftwareUpdateAccountSummaries/{macOSSoftwareUpdateA
 |displayName|String|报告的名称|
 |deviceId|String|设备 ID。|
 |userId|String|用户 ID。|
-|updateCategory|[macOSSoftwareUpdateCategory](../resources/intune-deviceconfig-macossoftwareupdatecategory.md)|软件更新类型。 可能的值是：`critical`、`configurationDataFile`、`firmware`、`other`。|
+|updateCategory|[macOSSoftwareUpdateCategory](../resources/intune-deviceconfig-macossoftwareupdatecategory.md)|软件更新类型。 可取值为：`critical`、`configurationDataFile`、`firmware`、`other`。|
 |successfulUpdateCount|Int32|设备上成功更新的数量|
 |failedUpdateCount|Int32|设备上失败的更新数|
 |totalUpdateCount|Int32|设备上的总更新数|

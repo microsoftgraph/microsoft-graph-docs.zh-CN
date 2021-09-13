@@ -2,15 +2,15 @@
 title: deviceManagementTemplateSubtype 枚举类型
 description: 模板子类型
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 722762345ce4c61a859caf6d0efdf73a576270fd
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 509aec69f2a971a3d9fea955228f4aee2e1d95d0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788946"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086370"
 ---
 # <a name="devicemanagementtemplatesubtype-enum-type"></a>deviceManagementTemplateSubtype 枚举类型
 

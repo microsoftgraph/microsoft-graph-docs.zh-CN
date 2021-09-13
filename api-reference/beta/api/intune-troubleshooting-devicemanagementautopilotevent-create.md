@@ -2,15 +2,15 @@
 title: 创建 deviceManagementAutopilotEvent
 description: 创建新的 deviceManagementAutopilotEvent 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2e6909690f7289d5c91d171d520efd6d7f75d3c8
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: d1197d1a542df099243a00d989c25273db124a07
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58258038"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59116169"
 ---
 # <a name="create-devicemanagementautopilotevent"></a>创建 deviceManagementAutopilotEvent
 
@@ -59,7 +59,7 @@ POST /deviceManagement/autopilotEvents
 |enrollmentType|[windowsAutopilotEnrollmentType](../resources/intune-troubleshooting-windowsautopilotenrollmenttype.md)|注册类型。 可取值为：`unknown`、`azureADJoinedWithAutopilotProfile`、`offlineDomainJoined`、`azureADJoinedUsingDeviceAuthWithAutopilotProfile`、`azureADJoinedUsingDeviceAuthWithoutAutopilotProfile`、`azureADJoinedWithOfflineAutopilotProfile`、`azureADJoinedWithWhiteGlove`、`offlineDomainJoinedWithWhiteGlove`、`offlineDomainJoinedWithOfflineAutopilotProfile`。|
 |deviceSerialNumber|String|设备序列号。|
 |managedDeviceName|String|托管设备名称。|
-|userPrincipalName|字符串|用于注册设备的用户主体名称。|
+|userPrincipalName|String|用于注册设备的用户主体名称。|
 |windowsAutopilotDeploymentProfileDisplayName|String|Autopilot 配置文件名称。|
 |enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|注册状态，如已注册、已失败。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
 |windows10EnrollmentCompletionPageConfigurationDisplayName|String|注册状态页面配置文件名称|
@@ -77,7 +77,7 @@ POST /deviceManagement/autopilotEvents
 |deploymentEndDateTime|DateTimeOffset|部署结束时间。|
 |targetedAppCount|Int32|目标应用程序计数。|
 |targetedPolicyCount|Int32|目标策略计数。|
-|enrollmentFailureDetails|字符串|注册失败详细信息。|
+|enrollmentFailureDetails|String|注册失败详细信息。|
 
 
 

@@ -2,15 +2,15 @@
 title: auditActor 资源类型
 description: 包含审核主角的属性的类。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b94cfecfa00378832c58ef048454eb9cbf98edb4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 258624d97663da9b25ee6552e7eb3430191c135b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784861"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59146798"
 ---
 # <a name="auditactor-resource-type"></a>auditActor 资源类型
 
@@ -29,12 +29,12 @@ ms.locfileid: "58784861"
 |userPermissions|String collection|执行审核时的用户权限列表。|
 |applicationId|String|AAD 应用程序 ID。|
 |applicationDisplayName|String|应用程序的名称。|
-|userPrincipalName|字符串|用户主体名称 (UPN)。|
+|userPrincipalName|String|用户主体名称 (UPN)。|
 |servicePrincipalName|String|服务主体名称 (SPN)。|
 |ipAddress|String|IPAddress。|
 |userId|String|用户 ID。|
 |userRoleScopeTags|[roleScopeTagInfo](../resources/intune-auditing-rolescopetaginfo.md) 集合|执行审核时的用户范围标记列表。|
-|remoteTenantId|字符串|远程租户 ID|
+|remoteTenantId|String|远程租户 ID|
 |remoteUserId|String|远程用户 ID|
 
 ## <a name="relationships"></a>关系

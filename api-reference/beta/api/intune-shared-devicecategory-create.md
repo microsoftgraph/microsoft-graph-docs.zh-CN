@@ -2,15 +2,15 @@
 title: 创建 deviceCategory
 description: 创建新的 deviceCategory 对象。
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 388461d6d7fdd230e83b1db149346c05012f6ffa
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8688bd9435766bfafe33b1e371f3a0812a7b4ce7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816112"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59096317"
 ---
 # <a name="create-devicecategory"></a>创建 deviceCategory
 
@@ -47,7 +47,7 @@ POST /deviceManagement/deviceCategories
 
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -60,7 +60,7 @@ POST /deviceManagement/deviceCategories
 |:---|:---|:---|
 |id|String|设备类别的唯一标识符。 只读。|
 |**板载**|
-|description|字符串|设备类别的可选说明。|
+|说明|String|设备类别的可选说明。|
 |displayName|String|设备类别的显示名称。|
 
 ## <a name="response"></a>响应

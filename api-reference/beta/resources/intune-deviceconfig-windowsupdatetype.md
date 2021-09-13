@@ -2,15 +2,15 @@
 title: windowsUpdateType 枚举类型
 description: 哪些分支设备将接收其更新
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8d052a6f746fb37e936c2eb37126efd31cd74a7d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 03e5515adaa5e92aa90c5344d0891cff124be3cd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796851"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59095414"
 ---
 # <a name="windowsupdatetype-enum-type"></a>windowsUpdateType 枚举类型
 
@@ -30,7 +30,7 @@ ms.locfileid: "58796851"
 |businessReadyOnly|2|半年频道。 设备从半年频道获取功能更新。|
 |windowsInsiderBuildFast|3|Windows预览体验成员内部版本 - 快速|
 |windowsInsiderBuildSlow|4 |Windows预览体验成员内部版本 - 慢|
-|windowsInsiderBuildRelease|5 |预览Windows内部版本|
+|windowsInsiderBuildRelease|5 |预览体验Windows版本|
 
 
 

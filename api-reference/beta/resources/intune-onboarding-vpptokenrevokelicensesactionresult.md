@@ -2,15 +2,15 @@
 title: vppTokenRevokeLicensesActionResult 资源类型
 description: 对 Apple Volume Purchase Program 令牌执行的撤销许可证操作的状态。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bd08741b48e81afa4a3775fdb3cd4ed160e0e6b9
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ce5626f93ff2b869e8605e01ad187d68dc422ec4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790617"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59101168"
 ---
 # <a name="vpptokenrevokelicensesactionresult-resource-type"></a>vppTokenRevokeLicensesActionResult 资源类型
 

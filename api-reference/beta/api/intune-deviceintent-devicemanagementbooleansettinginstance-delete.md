@@ -2,15 +2,15 @@
 title: 删除 deviceManagementBooleanSettingInstance
 description: 删除 deviceManagementBooleanSettingInstance。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 202ee9af0d7dc751e3ce42a57ae6bd83aceb92d0
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6da14d9d94b7eb21f1f12ca01266933112d950b7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803144"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59116806"
 ---
 # <a name="delete-devicemanagementbooleansettinginstance"></a>删除 deviceManagementBooleanSettingInstance
 
@@ -46,7 +46,7 @@ DELETE /deviceManagement/templates/{deviceManagementTemplateId}/categories/{devi
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

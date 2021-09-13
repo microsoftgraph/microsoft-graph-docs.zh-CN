@@ -2,15 +2,15 @@
 title: macOSKernelExtension 资源类型
 description: 表示特定的 macOS 内核扩展。 macOS 内核扩展可通过其团队标识符及其捆绑包标识符进行描述。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 281fcab335fc5638c3d376d086bc3d7de6e07aac
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8f430f83dbd166ee93f9e0ebfc4baa4ddb9f39db
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789648"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59095568"
 ---
 # <a name="macoskernelextension-resource-type"></a>macOSKernelExtension 资源类型
 

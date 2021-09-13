@@ -1,16 +1,16 @@
 ---
 title: 更新 personCertification
 description: 更新 personCertification 对象的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: ac176cccb93d7cfce617c30aa7be27c4d061f393
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: eadaf0997d673fff4c3e4ca10f439be2c7577762
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50774577"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59120792"
 ---
 # <a name="update-personcertification"></a>更新 personCertification
 命名空间：microsoft.graph
@@ -50,17 +50,17 @@ PATCH /users/{id | userPrincipalName}/profile/certifications/{id}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|allowedAudiences|字符串|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|certificationId  |字符串      |证书的可引用标识符。 |
-|说明      |字符串      |认证说明。                   |
-|displayName      |字符串      |认证的标题。                         |
+|allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
+|certificationId  |String      |证书的可引用标识符。 |
+|说明      |String      |认证说明。                   |
+|displayName      |String      |认证的标题。                         |
 |endDate          |日期        |认证到期的日期。            |
 |inference|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断出来的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |issuedDate       |日期        |颁发证书的日期。         |
-|issuingAuthority |字符串      |授予证书的颁发机构。          |
-|issuingCompany   |字符串      |授予证书的颁发机构。          |
+|issuingAuthority |String      |授予证书的颁发机构。          |
+|issuingCompany   |String      |授予证书的颁发机构。          |
 |startDate        |日期        |认证生效的日期。       |
-|thumbnailUrl     |字符串      |引用认证缩略图的 URL。   |
+|thumbnailUrl     |String      |引用认证缩略图的 URL。   |
 |WebUrl           |String      |引用证书的 URL。                  |
 
 ## <a name="response"></a>响应

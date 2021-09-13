@@ -2,15 +2,15 @@
 title: unsupportedGroupPolicyExtension 资源类型
 description: 不支持的组策略扩展。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 133a6b5605f7a8efe880eb71d3354ba59623152b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e4c0493854e17204cf9e81231565ccd50d1bf3c2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785701"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086139"
 ---
 # <a name="unsupportedgrouppolicyextension-resource-type"></a>unsupportedGroupPolicyExtension 资源类型
 

@@ -2,15 +2,15 @@
 title: groupPolicyDefinitionValue 资源类型
 description: 定义值实体存储单个组策略定义的值。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9f448796d720369185fee2a2fe1bc3c19256eb73
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d0147c706711e9f34ee8680cb4ad70cf3e4b6a1f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796493"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086118"
 ---
 # <a name="grouppolicydefinitionvalue-resource-type"></a>groupPolicyDefinitionValue 资源类型
 

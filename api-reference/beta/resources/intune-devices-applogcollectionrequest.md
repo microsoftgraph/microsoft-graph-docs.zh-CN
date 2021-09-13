@@ -2,15 +2,15 @@
 title: appLogCollectionRequest 资源类型
 description: AppLogCollectionRequest 实体。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bd6c56f04570a42809b1168090be8f8f6609ebfe
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e2cd37ecd109720bf5a564c64d480037a9bd72fc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790155"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086307"
 ---
 # <a name="applogcollectionrequest-resource-type"></a>appLogCollectionRequest 资源类型
 
@@ -36,9 +36,9 @@ AppLogCollectionRequest 实体。
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|唯一标识符。 这是userId_DeviceId_AppId ID。|
-|状态|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|记录上载状态。 可取值为：`pending`、`completed`、`failed`。|
+|status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|记录上载状态。 可取值为：`pending`、`completed`、`failed`。|
 |errorMessage|String|上传过程中出现错误消息（如果有）|
-|customLogFolders|String collection|日志文件夹列表。 |
+|customLogFolders|字符串集合|日志文件夹列表。 |
 |completedDateTime|DateTimeOffset|上载日志请求达到终端状态的时间|
 
 ## <a name="relationships"></a>关系
