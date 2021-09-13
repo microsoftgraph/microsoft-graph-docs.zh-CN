@@ -2,15 +2,15 @@
 title: teamsCatalogApp 资源类型
 description: 请参阅 teamsApp。
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: efcd568fc0c826efcc39a9f3300cec85912996f2522b830034d33d4693b8e18e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7c5fd229f60444e096e79abaef5e7f91f685e89c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54209607"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147820"
 ---
 # <a name="teamscatalogapp-resource-type"></a>teamsCatalogApp 资源类型
 

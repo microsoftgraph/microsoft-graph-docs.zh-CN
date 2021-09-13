@@ -2,15 +2,15 @@
 title: 删除 windows10XSCEPCertificateProfile
 description: 删除 windows10XSCEPCertificateProfile。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cd90a99dea40c978047eb28b693788dbf97b18c9
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 866f01770e5e060608c967b93728f64a31eb8f80
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786423"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59141653"
 ---
 # <a name="delete-windows10xscepcertificateprofile"></a>删除 windows10XSCEPCertificateProfile
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/resourceAccessProfiles/{deviceManagementResourceAccessP
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

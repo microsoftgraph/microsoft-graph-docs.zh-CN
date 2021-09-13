@@ -2,15 +2,15 @@
 title: windowsKioskConfiguration 资源类型
 description: 此实体提供由展台资源公开的已声明方法、属性和关系的说明。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: feee32a7a08c31ab5cd0c11da11e4ada1710eb64
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b08b469477f7e957b14ee727b074dd7b4400e51d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805399"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086517"
 ---
 # <a name="windowskioskconfiguration-resource-type"></a>windowsKioskConfiguration 资源类型
 
@@ -45,18 +45,18 @@ ms.locfileid: "58805399"
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|字符串|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |kioskProfiles|[windowsKioskProfile](../resources/intune-deviceconfig-windowskioskprofile.md) 集合|此策略设置允许为展台配置定义展台配置文件列表。 此集合最多可包含 3 个元素。|
 |kioskBrowserDefaultUrl|String|指定浏览器在启动时应导航到的默认 URL。|
-|kioskBrowserEnableHomeButton|布尔值|启用展台浏览器的"主页"按钮。 默认情况下，"主页"按钮处于禁用状态。|
-|kioskBrowserEnableNavigationButtons|布尔值|启用展台浏览器的导航按钮 (/后退) 。 默认情况下，导航按钮处于禁用状态。|
+|kioskBrowserEnableHomeButton|Boolean|启用展台浏览器的"主页"按钮。 默认情况下，"主页"按钮处于禁用状态。|
+|kioskBrowserEnableNavigationButtons|Boolean|启用展台浏览器的导航按钮 (/后退) 。 默认情况下，导航按钮处于禁用状态。|
 |kioskBrowserEnableEndSessionButton|Boolean|启用展台浏览器的结束会话按钮。 默认情况下，结束会话按钮处于禁用状态。|
 |kioskBrowserRestartOnIdleTimeInMinutes|Int32|指定会话处于空闲状态，直到展台浏览器以全新状态重启的分钟数。  有效值为 1-1440。 有效值为 1 到 1440|
 |kioskBrowserBlockedURLs|字符串集合|指定展台浏览器不应导航到的 URL|
-|kioskBrowserBlockedUrlExceptions|String collection|指定允许展台浏览器导航到的 URL|
-|edgeKioskEnablePublicBrowsing|Boolean|为浏览器启用公共浏览Microsoft Edge模式。 默认值为 false。|
+|kioskBrowserBlockedUrlExceptions|字符串集合|指定允许展台浏览器导航到的 URL|
+|edgeKioskEnablePublicBrowsing|Boolean|为浏览器启用公共浏览展台Microsoft Edge模式。 默认值为 false。|
 |windowsKioskForceUpdateSchedule|[windowsKioskForceUpdateSchedule](../resources/intune-deviceconfig-windowskioskforceupdateschedule.md)|强制为展台设备更新计划。|
 
 ## <a name="relationships"></a>关系

@@ -2,15 +2,15 @@
 title: userExperienceAnalyticsDeviceStartupHistory 资源类型
 description: 用户体验分析设备启动历史记录实体包含设备启动性能历史记录详细信息。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8ffc994a7f6be02a361ea21422bfefccf31352aa
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c911b1dd9c111b9f2279edf2c42a0b11fc731716
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797245"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59125783"
 ---
 # <a name="userexperienceanalyticsdevicestartuphistory-resource-type"></a>userExperienceAnalyticsDeviceStartupHistory 资源类型
 

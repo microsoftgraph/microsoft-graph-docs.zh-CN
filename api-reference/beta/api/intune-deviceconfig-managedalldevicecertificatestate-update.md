@@ -2,15 +2,15 @@
 title: 更新 managedAllDeviceCertificateState
 description: 更新 managedAllDeviceCertificateState 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 402e244045b7ed0a05c45bc21293b050d65080b9
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a9f7027c8d4e6bffbdd17fde14edc8a870148b65
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804755"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59135660"
 ---
 # <a name="update-managedalldevicecertificatestate"></a>更新 managedAllDeviceCertificateState
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/deviceConfigurationsAllManagedDeviceCertificateStates/{m
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -57,14 +57,14 @@ PATCH /deviceManagement/deviceConfigurationsAllManagedDeviceCertificateStates/{m
 |certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)|撤销状态。 可取值为：`none`、`pending`、`issued`、`failed`、`revoked`。|
 |certificateRevokeStatusLastChangeDateTime|DateTimeOffset|上次更改撤消状态的时间|
 |managedDeviceDisplayName|String|设备显示名称|
-|userPrincipalName|字符串|用户主体名称|
+|userPrincipalName|String|用户主体名称|
 |certificateExpirationDateTime|DateTimeOffset|证书到期日期|
 |certificateIssuerName|String|颁发者|
-|certificateThumbprint|字符串|指纹|
+|certificateThumbprint|String|指纹|
 |certificateSerialNumber|String|序列号|
 |certificateSubjectName|String|证书主题名称|
 |certificateKeyUsages|Int32|密钥用法|
-|certificateExtendedKeyUsages|字符串|增强型密钥使用|
+|certificateExtendedKeyUsages|String|增强型密钥使用|
 |certificateIssuanceDateTime|DateTimeOffset|发布日期|
 
 

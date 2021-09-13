@@ -2,15 +2,15 @@
 title: operatingSystemUpgradeEligibility 枚举类型
 description: 从任意位置工作 Windows 设备升级资格状态
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3a6871d0168324a01e7d9a8ef39b8164e453ff2e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 498f08baf98ae1de1a650ae8b3e071761a357672
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805708"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59091319"
 ---
 # <a name="operatingsystemupgradeeligibility-enum-type"></a>operatingSystemUpgradeEligibility 枚举类型
 

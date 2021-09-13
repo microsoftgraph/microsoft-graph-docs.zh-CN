@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: 更新文件或文件夹
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: sharepoint
 description: 按 ID 或路径更新 DriveItem 元数据。
 doc_type: apiPageType
-ms.openlocfilehash: 01456ff44b20641b13b2718c20e87ae601ef764f
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 4af377c0f03436fa6364c347dce985f84fae3711
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240188"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59037983"
 ---
 # <a name="update-driveitem-properties"></a>更新 DriveItem 属性
 
@@ -53,8 +53,7 @@ PATCH /users/{user-id}/drive/items/{item-id}
 
 在请求正文中，提供应更新的属性的值。
 
-请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。
-为了获得最佳性能，应用不应包括尚未更改的属性。
+请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，应用不应包括尚未更改的属性。
 
 ## <a name="response"></a>响应
 

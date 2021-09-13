@@ -2,15 +2,15 @@
 title: 更新 windowsDomainJoinConfiguration
 description: 更新 windowsDomainJoinConfiguration 对象的属性。
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c97788655e26a9a681cea4d296f09ef6e07caa09
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f71a5fc0e9065c7173d73afa6611d09cfaa7e10b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58799288"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59132293"
 ---
 # <a name="update-windowsdomainjoinconfiguration"></a>更新 windowsDomainJoinConfiguration
 
@@ -56,10 +56,10 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 PATCH /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}/deploymentProfile/microsoft.graph.activeDirectoryWindowsAutopilotDeploymentProfile/domainJoinConfiguration
 ```
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -71,12 +71,12 @@ PATCH /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevice
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |**设备配置**|
-|activeDirectoryDomainName|字符串|要加入的 Active Directory 域名。|
-|computerNameStaticPrefix|字符串|用于计算机名称的固定前缀。|
+|activeDirectoryDomainName|String|要加入的 Active Directory 域名。|
+|computerNameStaticPrefix|String|用于计算机名称的固定前缀。|
 |computerNameSuffixRandomCharCount|Int32|动态生成的字符，用作计算机名称的后缀。 有效值为 3 至 14|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|字符串|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |organizationalUnit|String|组织单位 (OU) 将在其中创建计算机帐户的组织单位。 如果此参数为 NULL，则已知的计算机对象容器将用作域中发布的容器。|
 |roleScopeTagIds|字符串集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|

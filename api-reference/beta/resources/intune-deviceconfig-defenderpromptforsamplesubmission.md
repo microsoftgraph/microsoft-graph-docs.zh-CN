@@ -2,15 +2,15 @@
 title: defenderPromptForSampleSubmission 枚举类型
 description: 提示用户提交示例的可能值。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: bcdb34abe2c4223bc947c15271437a2bae829372
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 86b8bdb6096aa9ea86f3ce202b107c27610a1ff3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58751949"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59091760"
 ---
 # <a name="defenderpromptforsamplesubmission-enum-type"></a>defenderPromptForSampleSubmission 枚举类型
 

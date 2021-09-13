@@ -2,15 +2,15 @@
 title: comanagementEligibleDevicesSummary 资源类型
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c4950dd620adb21c9ebdbb45b7c1acbd3380dc70
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 90f4cb5f33b0ea1c260d6b6acaffac46d3e08434
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806626"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59111038"
 ---
 # <a name="comanagementeligibledevicessummary-resource-type"></a>comanagementEligibleDevicesSummary 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "58806626"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|comanagedCount|Int32|已更新的设备Co-Managed|
+|comanagedCount|Int32|已注册的设备Co-Managed|
 |eligibleCount|Int32|完全有资格使用 Co-Management|
 |eligibleButNotAzureAdJoinedCount|Int32|有资格加入Co-Management尚未加入 Azure Active Directory|
 |needsOsUpdateCount|Int32|在操作系统更新后有资格使用Co-Management的设备计数|

@@ -2,15 +2,15 @@
 title: 更新 windowsDriverUpdateProfile
 description: 更新 windowsDriverUpdateProfile 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cb9f89e1c90e746bda4650bc29d779f2583cbf28
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2dd5a6344a6c6ac09ce250fd436fb729f2e7c357
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816313"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59138461"
 ---
 # <a name="update-windowsdriverupdateprofile"></a>更新 windowsDriverUpdateProfile
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/windowsDriverUpdateProfiles/{windowsDriverUpdateProfileI
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,8 +54,8 @@ PATCH /deviceManagement/windowsDriverUpdateProfiles/{windowsDriverUpdateProfileI
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|Intune 策略 ID。|
-|displayName|字符串|配置文件显示名称的配置文件。|
-|description|String|由用户指定的配置文件的说明。|
+|displayName|String|配置文件显示名称的配置文件。|
+|说明|String|由用户指定的配置文件的说明。|
 |approvalType|[driverUpdateProfileApprovalType](../resources/intune-softwareupdate-driverupdateprofileapprovaltype.md)|驱动程序更新配置文件审批类型。 例如，手动或自动审批。 可取值为：`manual`、`automatic`。|
 |deviceReporting|Int32|此配置文件的报告设备数|
 |newUpdates|Int32|可用于此配置文件的新驱动程序更新数。|

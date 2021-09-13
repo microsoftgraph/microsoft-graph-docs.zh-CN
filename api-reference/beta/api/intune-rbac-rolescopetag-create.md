@@ -2,15 +2,15 @@
 title: 创建 roleScopeTag
 description: 创建新的 roleScopeTag 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bac2c26dd32f6ddb36c16595f10940f6a35f8595
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9b92a55380f624b2ab722c633c372d80dc3637b5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791935"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59096461"
 ---
 # <a name="create-rolescopetag"></a>创建 roleScopeTag
 
@@ -44,7 +44,7 @@ POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleA
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -56,7 +56,7 @@ POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleA
 |:---|:---|:---|
 |id|String|实体的键。 此为只读，且自动生成。 此属性是只读的。|
 |displayName|String|角色作用域标记的显示或友好名称。|
-|description|String|角色作用域标记的说明。|
+|说明|String|角色作用域标记的说明。|
 |isBuiltIn|Boolean|角色作用域标记的说明。 此属性是只读的。|
 
 

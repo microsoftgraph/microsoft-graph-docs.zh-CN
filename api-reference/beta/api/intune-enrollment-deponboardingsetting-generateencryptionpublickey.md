@@ -2,15 +2,15 @@
 title: generateEncryptionPublicKey 操作
 description: 生成公钥以用于加密 Apple 设备注册计划令牌
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 16e16c7bce826e3953a2ff06a9358dc766d21b7c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3ab3122994a09fdda15f7bc438eaa1ad733a8a36
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783706"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59124852"
 ---
 # <a name="generateencryptionpublickey-action"></a>generateEncryptionPublicKey 操作
 
@@ -43,7 +43,7 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/generateEn
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

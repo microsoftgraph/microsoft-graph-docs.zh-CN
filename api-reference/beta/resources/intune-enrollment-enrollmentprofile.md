@@ -2,15 +2,15 @@
 title: enrollmentProfile 资源类型
 description: enrollmentProfile 资源表示配置集合，必须预先提供这些配置才能注册其标识已预先存储的某些设备。 预部署设备标识将分配给此类型的配置文件，以在注册相应设备时应用配置文件的配置。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: eb5dc9a6d759e6f8a72097777b87d80a5dd33f5c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: bae158fb33e4d1fccc4e5b4b6fd527b0d17cc9df
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58799787"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59141086"
 ---
 # <a name="enrollmentprofile-resource-type"></a>enrollmentProfile 资源类型
 
@@ -38,12 +38,12 @@ enrollmentProfile 资源表示配置集合，必须预先提供这些配置才�
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|对象的 GUID|
-|displayName|字符串|配置文件的名称|
-|description|字符串|配置文件的说明|
-|requiresUserAuthentication|布尔值|指示配置文件是否要求用户身份验证|
+|displayName|String|配置文件的名称|
+|说明|String|配置文件的说明|
+|requiresUserAuthentication|Boolean|指示配置文件是否要求用户身份验证|
 |configurationEndpointUrl|String|用于注册的配置终结点 URL|
-|enableAuthenticationViaCompanyPortal|Boolean|指示使用 Apple Setup Assistant 而不是 公司门户。|
-|requireCompanyPortalOnSetupAssistantEnrolledDevices|布尔值|指示公司门户注册的设备上需要安装助手|
+|enableAuthenticationViaCompanyPortal|Boolean|指示使用 Apple Setup Assistant 进行身份验证，而不是公司门户。|
+|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|指示公司门户注册的设备上需要安装助手|
 
 ## <a name="relationships"></a>关系
 无

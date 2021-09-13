@@ -2,15 +2,15 @@
 title: 更新 deviceComplianceScriptDeviceState
 description: 更新 deviceComplianceScriptDeviceState 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2234de0f6eeb9a5a80ccaba0f6922e888b24b6a2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 242eb97a5e3083d1c4e37d61a52b22cf36eae755
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58822003"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59108168"
 ---
 # <a name="update-devicecompliancescriptdevicestate"></a>更新 deviceComplianceScriptDeviceState
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/devic
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -59,7 +59,7 @@ PATCH /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/devic
 |expectedStateUpdateDateTime|DateTimeOffset|下一次执行设备合规性脚本的时间戳|
 |lastSyncDateTime|DateTimeOffset|Intune 管理扩展上次与 Intune 同步的时间|
 |scriptOutput|String|检测脚本的输出|
-|scriptError|字符串|检测脚本中的错误|
+|scriptError|String|检测脚本中的错误|
 
 
 

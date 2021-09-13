@@ -2,15 +2,15 @@
 title: deviceManagementConstraint 资源类型
 description: 约束的基本实体
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5d9d30971a8f99cbec376569e51b3b8d6162bf47
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8a2e929eebf89e1fe3d7c168bcad6dad4cf5c050
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58799168"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59137992"
 ---
 # <a name="devicemanagementconstraint-resource-type"></a>deviceManagementConstraint 资源类型
 

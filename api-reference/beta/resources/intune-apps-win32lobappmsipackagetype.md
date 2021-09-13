@@ -2,15 +2,15 @@
 title: win32LobAppMsiPackageType 枚举类型
 description: 指示 MSI Win32LobApp 的程序包类型。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a2e9e754be098dcf19b29eea69fc6204754b4aff
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6b9bced64fd807a5bce3629b32f67e1df4a81764
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58782985"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59091921"
 ---
 # <a name="win32lobappmsipackagetype-enum-type"></a>win32LobAppMsiPackageType 枚举类型
 

@@ -2,15 +2,15 @@
 title: 删除 roleAssignment
 description: 删除 roleAssignment。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4382eeddccec64bc047cbbc2449ac7677fdffef8
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: edf1d3484674d51bb5cd941c14a4b7bcd94f95ab
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58807004"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59096638"
 ---
 # <a name="delete-roleassignment"></a>删除 roleAssignment
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{rol
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

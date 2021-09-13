@@ -2,15 +2,15 @@
 title: windowsUniversalAppXContainedApp 资源类型
 description: 表示 WindowsUniversalAppX 应用的包含应用的类。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3560ffe1584f22c7754d602e1da1564b12e88f6e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3dcdfcbe3bd61b175d9905337131e84b80a8ad82
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806087"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59091830"
 ---
 # <a name="windowsuniversalappxcontainedapp-resource-type"></a>windowsUniversalAppXContainedApp 资源类型
 

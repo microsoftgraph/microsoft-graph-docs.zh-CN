@@ -2,15 +2,15 @@
 title: updateRelationships 操作
 description: 尚未记录
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f35fee542c7f2a0cfa3b89291ec10e23b14d1af6
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c9d47b7e5d259110ec40e42813befaf4ce05e331
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785792"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59096268"
 ---
 # <a name="updaterelationships-action"></a>updateRelationships 操作
 
@@ -47,7 +47,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInst
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

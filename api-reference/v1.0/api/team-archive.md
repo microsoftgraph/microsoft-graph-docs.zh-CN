@@ -2,15 +2,15 @@
 title: 存档团队
 description: '存档指定的团队。 '
 author: nkramer
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 19274699297334a205ae1bf397ce3c4acb4a806b
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: 95c98fe613f5004383008b88ad2b7f497bc52e21
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48849184"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036884"
 ---
 # <a name="archive-team"></a>存档团队
 
@@ -19,7 +19,7 @@ ms.locfileid: "48849184"
 存档指定的[团队](../resources/team.md)。 存档团队后，用户无法再团队中的任意频道上发送或点赞消息，无法再编辑团队名称、说明和其他设置，且通常也无法再对团队进行大部分更改。
 仍可向团队进行成员身份更改。
 
-存档属于异步操作。 该异步操作成功完成后，团队即已存档，此 API 作出响应后就可能出现此情况。
+存档是异步操作。该异步操作成功完成后，团队即已存档，此 API 作出响应后就可能出现此情况。
 
 要对团队存档，团队和[组](../resources/group.md)都必须有一个所有者。
 
@@ -36,7 +36,7 @@ ms.locfileid: "48849184"
 
 > **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
 
-> **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
+> **注意**：此 API 支持管理员权限。全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

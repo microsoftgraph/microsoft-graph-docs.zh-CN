@@ -2,15 +2,15 @@
 title: 删除 windowsQualityUpdateCatalogItem
 description: 删除 windowsQualityUpdateCatalogItem。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d8282b81774251b9732fb4daa8928a3be8718c93
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9c6fbbe7ede4188f680ebee3dec5052f96310b76
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795597"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59120981"
 ---
 # <a name="delete-windowsqualityupdatecatalogitem"></a>删除 windowsQualityUpdateCatalogItem
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/windowsUpdateCatalogItems/{windowsUpdateCatalogItemId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

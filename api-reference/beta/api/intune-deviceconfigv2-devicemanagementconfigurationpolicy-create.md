@@ -2,15 +2,15 @@
 title: 创建 deviceManagementConfigurationPolicy
 description: 创建新的 deviceManagementConfigurationPolicy 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 974804309312b52023a59c200372e456b2524255
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4eb5eaad9256be888e87ea2b6001273016816970
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791002"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59088267"
 ---
 # <a name="create-devicemanagementconfigurationpolicy"></a>创建 deviceManagementConfigurationPolicy
 
@@ -44,7 +44,7 @@ POST /deviceManagement/reusablePolicySettings/{deviceManagementReusablePolicySet
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -55,9 +55,9 @@ POST /deviceManagement/reusablePolicySettings/{deviceManagementReusablePolicySet
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|策略文档的键。 自动生成。|
-|name|字符串|策略名称|
-|description|字符串|策略说明|
-|平台|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|此策略的平台。 可能的值是：`none`、`macOS`、`windows10X`、`windows10`。|
+|name|String|策略名称|
+|说明|String|策略说明|
+|平台|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|此策略的平台。 可取值为：`none`、`macOS`、`windows10X`、`windows10`。|
 |technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|此策略的技术。 可取值为：`none`、`mdm`、`windows10XManagement`、`configManager`、`microsoftSense`、`exchangeOnline`。|
 |createdDateTime|DateTimeOffset|策略创建日期和时间。 此属性是只读的。|
 |lastModifiedDateTime|DateTimeOffset|策略上次修改日期和时间。 此属性是只读的。|

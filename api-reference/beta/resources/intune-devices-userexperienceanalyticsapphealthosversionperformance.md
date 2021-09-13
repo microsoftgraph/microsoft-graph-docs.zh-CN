@@ -2,15 +2,15 @@
 title: userExperienceAnalyticsAppHealthOSVersionPerformance 资源类型
 description: 用户体验分析设备操作系统版本性能实体包含操作系统版本性能详细信息。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 56d846fccc9904d5f3f6d1a168fc638648dc7680
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d554e02b1fa3eabeea5448c494dd3da787b7c05f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806038"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086265"
 ---
 # <a name="userexperienceanalyticsapphealthosversionperformance-resource-type"></a>userExperienceAnalyticsAppHealthOSVersionPerformance 资源类型
 
@@ -40,7 +40,7 @@ ms.locfileid: "58806038"
 |activeDeviceCount|Int32|操作系统版本的活动设备的数量。 有效值 -2147483648 2147483647|
 |meanTimeToFailureInMinutes|Int32|操作系统版本的失败平均时间（分钟）。 有效值 -2147483648 2147483647|
 |osVersionAppHealthScore|双精度|操作系统版本的应用运行状况分数。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
-|osVersionAppHealthStatus|字符串|操作系统版本的总体应用运行状况状态。|
+|osVersionAppHealthStatus|String|操作系统版本的总体应用运行状况状态。|
 
 ## <a name="relationships"></a>关系
 无

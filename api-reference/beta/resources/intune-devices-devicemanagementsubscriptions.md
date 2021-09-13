@@ -2,15 +2,15 @@
 title: deviceManagementSubscriptions 枚举类型
 description: 租户移动设备管理订阅。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c84722ddf190ded950c9b4e9e419aaa0c60d606f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5950a03fbaad073eb0df4a0d9fb22138d21fc5a9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805715"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59125937"
 ---
 # <a name="devicemanagementsubscriptions-enum-type"></a>deviceManagementSubscriptions 枚举类型
 
@@ -28,9 +28,9 @@ ms.locfileid: "58805715"
 |无|0|None|
 |intune|1|Microsoft Intune订阅|
 |office365|2|Office365 订阅|
-|intunePremium|4 |Microsoft Intune 高级版 订阅|
+|intunePremium|4 |Microsoft Intune 高级版订阅|
 |intune_EDU|8 |Microsoft Intune教育版订阅|
-|intune_SMB|16 |Microsoft Intune 小型企业版订阅|
+|intune_SMB|16 |Microsoft Intune小型企业版订阅|
 
 
 

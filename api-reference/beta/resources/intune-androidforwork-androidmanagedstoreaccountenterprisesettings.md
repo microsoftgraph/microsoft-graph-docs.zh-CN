@@ -2,15 +2,15 @@
 title: androidManagedStoreAccountEnterpriseSettings 资源类型
 description: Enterprise Android 托管存储帐户的设置。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e55fd9dd68fcc0673b591e45c1ff4c240d752031
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f06f7d042977605214a286ec76ec4fd9c5ee88ca
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806983"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59101910"
 ---
 # <a name="androidmanagedstoreaccountenterprisesettings-resource-type"></a>androidManagedStoreAccountEnterpriseSettings 资源类型
 
@@ -38,7 +38,7 @@ Enterprise Android 托管存储帐户的设置。
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|Android 应用商店帐户企业设置标识符|
+|id|String|Android 应用商店帐户企业设置标识符|
 |bindStatus|[androidManagedStoreAccountBindStatus](../resources/intune-androidforwork-androidmanagedstoreaccountbindstatus.md)|使用 Google EMM API 绑定租户的状态。 可取值为：`notBound`、`bound`、`boundAndValidated`、`unbinding`。|
 |lastAppSyncDateTime|DateTimeOffset|应用同步的上次完成时间|
 |lastAppSyncStatus|[androidManagedStoreAccountAppSyncStatus](../resources/intune-androidforwork-androidmanagedstoreaccountappsyncstatus.md)|上次应用程序同步结果。 可取值为：`success`、`credentialsNotValid`、`androidForWorkApiError`、`managementServiceError`、`unknownError`、`none`。|
@@ -49,7 +49,7 @@ Enterprise Android 托管存储帐户的设置。
 |targetGroupIds|String collection|指定当 enrollmentTarget 设置为“定向”时可以在 Android for Work 设备管理中注册设备的 AAD 组。|
 |deviceOwnerManagementEnabled|Boolean|指示此帐户是否正在通过 CloudDPC 对 Android 设备所有者管理进行测试。|
 |companyCodes|[androidEnrollmentCompanyCode](../resources/intune-androidforwork-androidenrollmentcompanycode.md) 集合|AndroidManagedStoreAccountEnterpriseSettings 的公司代码|
-|androidDeviceOwnerFullyManagedEnrollmentEnabled|布尔值|AndroidManagedStoreAccountEnterpriseSettings 的公司代码|
+|androidDeviceOwnerFullyManagedEnrollmentEnabled|Boolean|AndroidManagedStoreAccountEnterpriseSettings 的公司代码|
 |managedGooglePlayInitialScopeTagIds|字符串集合|MGP 应用的初始范围标记|
 
 ## <a name="relationships"></a>关系

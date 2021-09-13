@@ -2,15 +2,15 @@
 title: appleVpnConnectionType 枚举类型
 description: Apple VPN 连接类型。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ba8d551b7e47d91671816aac524170b6270b3e10
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 922f00d23382e2144779464930d6b4b09ff89509
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790428"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59095610"
 ---
 # <a name="applevpnconnectiontype-enum-type"></a>appleVpnConnectionType 枚举类型
 
@@ -36,7 +36,7 @@ Apple VPN 连接类型。
 |ciscoAnyConnectV2|8 |Cisco AnyConnect V2。|
 |paloAltoGlobalProtect|9 |Palo Alto Networks GlobalProtect.|
 |zscalerPrivateAccess|10 |Zscaler 专用访问。|
-|f5Access2018|11 |F5 Access 2018。|
+|f5Access2018|11|F5 Access 2018。|
 |citrixSso|12 |Citrix Sso。|
 |paloAltoGlobalProtectV2|13|Palo Alto Networks GlobalProtect V2。|
 |ikEv2|14 |IKEv2。|

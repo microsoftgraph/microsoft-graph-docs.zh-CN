@@ -2,15 +2,15 @@
 title: 更新 userExperienceAnalyticsDeviceStartupHistory
 description: 更新 userExperienceAnalyticsDeviceStartupHistory 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c8896cc45b71bdb682a534c22eb6276568142e0b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 63be7938b6e604d5213fa2f8d05daf94c0c5c9e4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797049"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59097213"
 ---
 # <a name="update-userexperienceanalyticsdevicestartuphistory"></a>更新 userExperienceAnalyticsDeviceStartupHistory
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/userExperienceAnalyticsDeviceStartupHistory/{userExperie
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -64,12 +64,12 @@ PATCH /deviceManagement/userExperienceAnalyticsDeviceStartupHistory/{userExperie
 |coreLoginTimeInMs|Int32|用户体验分析设备核心登录时间（以毫秒为单位）。|
 |responsiveDesktopTimeInMs|Int32|用户体验分析响应式桌面时间（以毫秒为单位）。|
 |totalLoginTimeInMs|Int32|用户体验分析设备登录总时间（以毫秒为单位）。|
-|isFirstLogin|布尔值|用户体验分析设备第一次登录。|
-|isFeatureUpdate|布尔值|用户体验分析设备启动记录是一项功能更新。|
+|isFirstLogin|Boolean|用户体验分析设备第一次登录。|
+|isFeatureUpdate|Boolean|用户体验分析设备启动记录是一项功能更新。|
 |operatingSystemVersion|String|用户体验分析设备启动记录的操作系统版本。|
 |restartCategory|[userExperienceAnalyticsOperatingSystemRestartCategory](../resources/intune-devices-userexperienceanalyticsoperatingsystemrestartcategory.md)|操作系统重启类别。 可取值为：`unknown`、`restartWithUpdate`、`restartWithoutUpdate`、`blueScreen`、`shutdownWithUpdate`、`shutdownWithoutUpdate`、`longPowerButtonPress`、`bootError`、`update`。|
 |restartStopCode|String|操作系统重新启动停止代码。 这将显示可用于查找蓝屏原因的错误检查代码。|
-|restartFaultBucket|字符串|操作系统重新启动故障存储桶。 故障存储桶用于查找有关系统崩溃的其他信息。|
+|restartFaultBucket|String|操作系统重新启动故障存储桶。 故障存储桶用于查找有关系统崩溃的其他信息。|
 
 
 

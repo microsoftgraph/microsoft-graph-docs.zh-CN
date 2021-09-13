@@ -1,16 +1,16 @@
 ---
 title: officeClientConfiguration 资源类型
 description: Office客户端配置。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c380efedce9db2ff161f99b36dc72c758a3014e8
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: cacf0d4624b984e02a4051d9b8b166ecece7a38e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801016"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127512"
 ---
 # <a name="officeclientconfiguration-resource-type"></a>officeClientConfiguration 资源类型
 
@@ -36,9 +36,9 @@ Office客户端配置。
 |id|String|Office 客户端配置策略的 ID。|
 |userPreferencePayload|Stream|首选项设置 二进制格式的 JSON 字符串，用户可以替代这些值。|
 |policyPayload|Stream|策略设置 二进制格式的 JSON 字符串，用户无法更改这些值。|
-|description|String|尚未记录|
+|说明|String|尚未记录|
 |displayName|String|管理员提供了 Office 客户端配置策略的说明。|
-|lastModifiedDateTime|日期/时间|策略的上次修改日期/时间戳。|
+|lastModifiedDateTime|日期时间|策略的上次修改日期/时间戳。|
 |priority|Int32|优先级值应为租户下每个策略的唯一值，并且将用于冲突解决，较低的值表示优先级较高。|
 |userCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|策略的用户签入摘要。|
 |checkinStatuses|[officeClientCheckinStatus](../resources/intune-cirrus-officeclientcheckinstatus.md) 集合|Office 客户端签入状态列表。|

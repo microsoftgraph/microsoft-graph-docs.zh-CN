@@ -2,15 +2,15 @@
 title: userExperienceAnalyticsDeviceWithoutCloudIdentity 资源类型
 description: 用户体验分析设备（无云标识）。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a9183bc6dbe81155f174bd11a1b5e7c1a25859cf
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f0a82e3f5ba5589fb60d75a22aaf62b4a3d35504
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794418"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59125713"
 ---
 # <a name="userexperienceanalyticsdevicewithoutcloudidentity-resource-type"></a>userExperienceAnalyticsDeviceWithoutCloudIdentity 资源类型
 

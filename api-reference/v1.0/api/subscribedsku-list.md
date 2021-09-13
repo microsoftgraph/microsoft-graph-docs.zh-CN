@@ -1,22 +1,22 @@
 ---
 title: 列出 subscribedSkus
 description: 检索组织已获取的商业订阅列表。
-localization_priority: Priority
+ms.localizationpriority: high
 author: SumitParikh
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 3a3ce01c2d507d949888ab30f1931b8e721a4fe3
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 16d9d6e0454ae7752d3afd244874e7a425759b79
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787117"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59015726"
 ---
 # <a name="list-subscribedskus"></a>列出 subscribedSkus
 
 命名空间：microsoft.graph
 
-获取组织已获取的商业版订阅的列表。
+获取组织已获取的商业版订阅的列表。 有关在 Azure 门户或 Microsoft 365 管理中心上显示的许可证名称与其 Microsoft Graph **skuId** 和 **skuPartNumber** 属性的映射，请参阅 [许可的产品名称和服务计划标识符](/azure/active-directory/enterprise-users/licensing-service-plan-reference)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -33,8 +33,10 @@ ms.locfileid: "52787117"
 ```http
 GET /subscribedSkus
 ```
+
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法 **不支持** [OData 查询参数](/graph/query-parameters) 来帮助自定义响应，例如，此处$filter不支持此功能。
+
+此方法仅支持 `$select` [OData 查询参数](/graph//query-parameters) 来帮助自定义响应。 不支持 `$filter`。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -49,7 +51,7 @@ GET /subscribedSkus
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [subscribedSku](../resources/subscribedsku.md) 对象集合。
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 下面是一个请求示例。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -78,7 +80,7 @@ GET https://graph.microsoft.com/v1.0/subscribedSkus
 
 ---
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
@@ -138,6 +140,10 @@ Content-type: application/json
     ]
 }
 ```
+
+## <a name="see-also"></a>另请参阅
+
++ [许可的产品名称和服务计划标识符](/azure/active-directory/enterprise-users/licensing-service-plan-reference)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

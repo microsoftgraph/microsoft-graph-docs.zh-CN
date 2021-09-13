@@ -2,15 +2,15 @@
 title: 创建 deviceManagementTroubleshootingEvent
 description: 创建新的 deviceManagementTroubleshootingEvent 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1444868cb63d0b48d2ed1f92b6cbfdf10ec02c6e
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 904e071415cde70d63c7eac517d505c5613ab04e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58263231"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59092502"
 ---
 # <a name="create-devicemanagementtroubleshootingevent"></a>创建 deviceManagementTroubleshootingEvent
 
@@ -55,7 +55,7 @@ POST /deviceManagement/troubleshootingEvents
 |eventDateTime|DateTimeOffset|事件发生的时间。|
 |correlationId|String|用于跟踪服务中的故障的 ID。|
 |troubleshootingErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|包含有关错误及其修正的详细信息的对象。|
-|eventName|字符串|与疑难解答事件对应的事件名称。 它是一个"可选"字段|
+|eventName|String|与疑难解答事件对应的事件名称。 它是一个"可选"字段|
 |additionalInformation|[keyValuePair](../resources/intune-troubleshooting-keyvaluepair.md) 集合|一组字符串键和字符串值对，提供有关疑难解答事件的其他信息|
 
 

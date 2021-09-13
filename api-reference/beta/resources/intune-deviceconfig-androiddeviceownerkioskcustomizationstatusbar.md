@@ -2,15 +2,15 @@
 title: androidDeviceOwnerKioskCustomizationStatusBar 枚举类型
 description: 表示展台自定义系统导航的可能值的枚举。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: de405943d263e05f8a0c3b458dafa8184a40a793
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 89b0577a979e37a5e1950b4b19a67e5321560932
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787046"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59106600"
 ---
 # <a name="androiddeviceownerkioskcustomizationstatusbar-enum-type"></a>androidDeviceOwnerKioskCustomizationStatusBar 枚举类型
 

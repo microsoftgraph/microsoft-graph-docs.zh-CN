@@ -1,14 +1,14 @@
 ---
 author: davidmu1
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: msgraph
 ms.topic: include
-ms.openlocfilehash: 2690b1c6fe424633d11bb9126c7651fcb6be9f7ee160e6c496d4188c75fd9547
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a95a8d06b85487ed0b9fc5b9e81bf6ee8da9893b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196648"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035769"
 ---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
@@ -19,5 +19,8 @@ ms.locfileid: "54196648"
 | POST, PUT, DELETE, PATCH | 每 20 秒 200 个请求 | 每 20 秒 100 个请求 |
 | 任何 | 每 20 秒 2000 个请求 | 每 20 秒 1000 个请求 |
 
-上述限制适用于下列资源:  
-intuneBrandingProfile, intuneBrandingProfileAssignment, windowsInformationProtectionAppLearningSummary, windowsInformationProtectionNetworkLearningSummary.
+上述限制适用于下列资源:
+
+| <!-- fake header-->                                                                                                                                                                                                                                                                                                                                                                            |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <ul> <li> [intuneBrandingProfile](/graph/api/resources/intunebrandingprofile) <li> [intuneBrandingProfileAssignment](/graph/api/resources/intunebrandingprofileassignment) <li> [windowsInformationProtectionAppLearningSummary](/graph/api/resources/windowsinformationprotectionapplearningsummary) <li> [windowsInformationProtectionNetworkLearningSummary](/graph/api/resources/windowsinformationprotectionnetworklearningsummary) </ul>|

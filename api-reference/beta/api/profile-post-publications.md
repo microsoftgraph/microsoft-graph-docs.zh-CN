@@ -1,21 +1,21 @@
 ---
 title: 创建出版物
 description: 创建新的出版物对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: f01b936250b57307713b8156a415c90ab7ce6c42
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1b252758a35bec30f19480d37b2ab3d41857c857
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976260"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59138293"
 ---
 # <a name="create-itempublication"></a>创建 itemPublication
 命名空间：microsoft.graph
 
-在用户的[配置文件](../resources/profile.md)中创建新的[itemPublication](../resources/itempublication.md)对象。
+在用户配置文件 [中创建新的 itemPublication](../resources/itempublication.md) [对象](../resources/profile.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -23,8 +23,8 @@ ms.locfileid: "48976260"
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| 委派（工作或学校帐户）     | 所有用户读写。 |
-| 委派（个人 Microsoft 帐户） | 所有用户读写。 |
+| 委派（工作或学校帐户）     | User.ReadWrite、User.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | User.ReadWrite、User.ReadWrite.All |
 | 应用程序                            | User.ReadWrite.All                            |
 ## <a name="http-request"></a>HTTP 请求
 
@@ -46,28 +46,28 @@ POST /users/{id | userPrincipalName}/profile/publications
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [itemPublication](../resources/itempublication.md) 对象的 JSON 表示形式。
 
-下表显示了在用户[配置文件](../resources/profile.md)中创建新的[itemPublication](../resources/itempublication.md)对象时可以设置的属性。
+下表显示了在用户配置文件中创建新的 [itemPublication](../resources/itempublication.md) 对象时可以设置 [的属性](../resources/profile.md)。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
 |createdBy|[identitySet](../resources/identityset.md)|提供创建实体的用户和/或应用程序的标识符。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|createdDateTime|DateTimeOffset|为创建实体时提供 dateTimeOffset。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|createdDateTime|DateTimeOffset|提供实体创建时的日期时间Offset。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |说明    |String      |出版物的说明。                   |
 |displayName    |String      |出版物的标题。                         |
-|id|String|用于单独寻址实体的标识符。 继承自 [entity](../resources/entity.md)|
-|推导|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|id|String|用于单独寻址实体的标识符。 继承自 [实体](../resources/entity.md)|
+|inference|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断出来的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|提供上次修改实体的用户和/或应用程序的标识符。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|lastModifiedDateTime|DateTimeOffset|为创建实体时提供 dateTimeOffset。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|publishedDate  |日期        |发布出版物的日期。      |
-|发布者      |String      |出版物的出版物或发布者。     |
-|source|[personDataSource](../resources/persondatasource.md)|值的来源，如果从另一个服务同步。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|thumbnailUrl   |String      |URL 引用出版物的缩略图。   |
-|webUrl         |String      |引用发布的 URL。                  |
+|lastModifiedDateTime|DateTimeOffset|提供实体创建时的日期时间Offset。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|publishedDate  |日期        |出版物的发布日期。      |
+|发布者      |String      |出版物Publisher出版物。     |
+|source|[personDataSource](../resources/persondatasource.md)|如果从另一个服务同步，则值源自何处。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|thumbnailUrl   |String      |引用出版物缩略图的 URL。   |
+|WebUrl         |String      |引用出版物的 URL。                  |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [itemPublication](../resources/itempublication.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [itemPublication](../resources/itempublication.md) 对象。
 
 ## <a name="examples"></a>示例
 
