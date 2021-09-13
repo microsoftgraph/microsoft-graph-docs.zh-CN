@@ -1,16 +1,16 @@
 ---
 title: Excel 工作簿和图表 API 概述
 description: Excel 是一个提高工作效率不可或缺的工具。 所有行业和工作职能的用户都将其视为用于存储、跟踪和操作各类数据的工具。 从简单的任务跟踪和数据管理，到复杂的计算和专业报告，Excel 可用于处理各种各样的任务。 你可以使用 Microsoft Graph 中的 Excel REST API 扩展数据、计算、报告和仪表板的价值。
-localization_priority: Priority
+ms.localizationpriority: high
 author: lumine2008
 ms.prod: excel
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: cc6b456842b7a2256f96f84ab809a4b5d2e2ba3f4b69d8ec18d70cf06af4faa1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1380539804bdd4859385cc887a691b89b3e82965
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54129629"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136108"
 ---
 # <a name="excel-workbooks-and-charts-api-overview"></a>Excel 工作簿和图表 API 概述
 

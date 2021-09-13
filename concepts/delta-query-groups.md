@@ -2,14 +2,14 @@
 title: 获取组的增量更改
 description: Delta 查询允许你通过一系列 Delta 函数调用来查询对组的添加、删除或更新。Delta 查询可便于发现组的更改
 author: davidmu1
-localization_priority: Priority
+ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 4fc09f8005e72480e6b716ebdacc6a7f0242a80ef4f01f2311205e32f0c1e6c7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cea4e335a02c2ebdf107cdfbca72072b0b18d2f3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189140"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59142385"
 ---
 # <a name="get-incremental-changes-for-groups"></a>获取组的增量更改
 
@@ -173,7 +173,7 @@ Content-type: application/json
 
 ## <a name="deltalink-request"></a>deltaLink 请求
 
-通过使用[上次响应](#final-nextlink-response)的 `deltaLink`，你将能够获取自上次请求以来对组所做的新更改。 这些更改包括：
+通过使用[上次响应](#final-nextlink-response)的 `deltaLink`，你将能够获取自上次请求以来对组所做的新更改。更改包括：
 - 新创建的组对象。
 - 已删除的组对象。
 - 属性已更改的组对象（例如，修改了 **displayName**）。
@@ -234,7 +234,7 @@ Content-type: application/json
 
 - 这些对象连同一组相同的属性一起返回，这些属性最初通过 `$select` 查询参数指定。
 
-- 同时包括更改和未更改的属性。 在上述示例中，`description` 属性具有新值，而 `displayName` 属性未发生更改。
+- 同时包括已更改和未更改的属性。在上述示例中，`description` 属性具有新值，而 `displayName` 属性未发生更改。
 
 - `members@delta` 包含对成员身份的任何更改。
 

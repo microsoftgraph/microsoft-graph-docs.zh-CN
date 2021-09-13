@@ -2,15 +2,15 @@
 title: 更新 deviceComplianceUserOverview
 description: 更新 deviceComplianceUserOverview 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1e7156752a330d8299f5645f6a5e80c59bfca3237b49d1e0a6f6f0744d776573
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: eb62924ac80d03979d8167372c77c2937420d45f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54212527"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045334"
 ---
 # <a name="update-devicecomplianceuseroverview"></a>更新 deviceComplianceUserOverview
 

@@ -2,15 +2,15 @@
 title: 更新 deviceManagementPartner
 description: 更新 deviceManagementPartner 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 428c4c9d9b625063f3bba685610742d510f3e8c9597e1bb5a4a0270945431579
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0989bf24153bac8a1875799165babbab5888b566
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54130679"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063095"
 ---
 # <a name="update-devicemanagementpartner"></a>更新 deviceManagementPartner
 

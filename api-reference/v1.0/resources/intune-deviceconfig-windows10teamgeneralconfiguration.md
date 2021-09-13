@@ -2,15 +2,15 @@
 title: windows10TeamGeneralConfiguration 资源类型
 description: 本主题提供由 windows10TeamGeneralConfiguration 资源公开的已声明方法、属性和关系的说明。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 265c41303b6b2faa225db450b9e33d491c250a1b5eb81116de22bcd8bc692be7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a9fedf05eaac3453079d4c80514653e5b59909eb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54135153"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056016"
 ---
 # <a name="windows10teamgeneralconfiguration-resource-type"></a>windows10TeamGeneralConfiguration 资源类型
 

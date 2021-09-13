@@ -2,15 +2,15 @@
 title: 获取 managedAndroidStoreApp
 description: 读取 managedAndroidStoreApp 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f4c62bfcc23f51af4ab2172de32f182ca25c6e716d80fe77d895778adf201cf8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 577620ed9b7c259d4bab2ad6003ce5c549abbef0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54190224"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59050381"
 ---
 # <a name="get-managedandroidstoreapp"></a>获取 managedAndroidStoreApp
 

@@ -2,15 +2,15 @@
 author: learafa
 title: 授予权限
 description: 授予使用指定链接的用户列表访问权限
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: c388091fd194b2abc6efcfb8ac49b5d932e66c2a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 35aef77e8f47a1205819d20fd8e401329d1c95ba
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52035279"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072823"
 ---
 # <a name="permission-grant"></a>permission： grant
 
@@ -59,7 +59,7 @@ POST /shares/{encoded-sharing-url}/permission/grant
 
 | 参数          | 类型                           | 说明
 |:-------------------|:-------------------------------|:-------------------------
-| recipients         | [driveRecipient (集合][])  | 将接收访问权限的收件人的集合。
+| recipients         | collection ([driveRecipient][])  | 将接收访问权限的收件人的集合。
 | 角色              | 集合（字符串）             | 如果链接是"现有访问"链接，则指定要授予用户的角色。 否则，必须与链接的角色匹配。
 
 有关可用角色的列表，请参阅 [roles 属性值](../resources/permission.md#roles-property-values)。

@@ -2,22 +2,22 @@
 title: 更新 fido2AuthenticationMethodConfiguration
 description: 更新 fido2AuthenticationMethodConfiguration 对象的属性。
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d6001f93ef63654aff4e97299e9101f6e5b08865
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 6a5451329209448349b9cb246086ad9b1fe2a755
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51468014"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045971"
 ---
 # <a name="update-fido2authenticationmethodconfiguration"></a>更新 fido2AuthenticationMethodConfiguration
 命名空间：microsoft.graph
 
 更新 [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md) 对象的属性，该对象表示 Azure AD 租户的 FIDO2 安全密钥身份验证方法策略。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|

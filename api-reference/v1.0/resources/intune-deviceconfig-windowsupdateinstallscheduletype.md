@@ -2,15 +2,15 @@
 title: windowsUpdateInstallScheduleType 资源类型
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fcebd70497975908cdf352772cf282411b3272a27e5e657fd2d800a109bfbd2a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e3e3bd2eb71c4645e30843e869d72fd8e6645e56
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54175065"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019333"
 ---
 # <a name="windowsupdateinstallscheduletype-resource-type"></a>windowsUpdateInstallScheduleType 资源类型
 

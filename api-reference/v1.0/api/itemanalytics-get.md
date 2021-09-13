@@ -2,22 +2,22 @@
 author: daspek
 title: 获取 itemAnalytics
 description: 获取有关此资源下发生视图的 itemAnalytics。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 25965acd48ca69b68f0715d9e075a5e71d5d1529
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 58a1f0fc04885c855c4ccffe78b4d467bd8eab42
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471682"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019802"
 ---
 # <a name="get-itemanalytics"></a>获取 itemAnalytics
 
 命名空间：microsoft.graph
 
 获取有关此资源下发生视图的[itemAnalytics。][]
-**itemAnalytics** 资源是获取 和 的活动统计信息的 `allTime` 便捷方式 `lastSevenDays` 。
+**itemAnalytics** 资源是获取 和 的活动统计信息的便捷 `allTime` 方式 `lastSevenDays` 。
 对于自定义的时间间隔，请使用 [getActivitiesByInterval][] API。
 
 >**注意：****itemAnalytics** 资源尚未在所有的国家部署 [中可用](/graph/deployments)。
@@ -59,7 +59,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/analytics
 
 ## <a name="response"></a>响应 
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [itemAnalytics][] 对象集合。 
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [itemAnalytics][] 对象集合。 
 
 ## <a name="example"></a>示例
 

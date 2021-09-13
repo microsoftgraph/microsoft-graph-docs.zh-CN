@@ -2,15 +2,15 @@
 title: Microsoft Graph 中用户的概述
 description: 用户是 Microsoft Graph 中 Azure Active Directory (Azure AD) 工作或学校用户帐户或 Microsoft 帐户的表示形式。 Microsoft Graph 中的 **用户** 资源是一个中心，可以从这里访问与用户相关的关系和资源。
 author: dkershaw10
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: users
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 26e3eb7fe76cfabfd1b8a7348f84e575bc3590dca4f532b7b39196bcd646ad81
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 88f03a5fad2a6aa9ae473e8ce6d1f9f51cee018d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54169191"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127988"
 ---
 # <a name="overview-of-users-in-microsoft-graph"></a>Microsoft Graph 中用户的概述
 

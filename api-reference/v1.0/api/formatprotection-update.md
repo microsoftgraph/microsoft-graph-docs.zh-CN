@@ -1,16 +1,16 @@
 ---
 title: 更新 formatProtection
 description: 更新 formatprotection 对象的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: ruoyingl
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: ac306c94da49aae3b9a5f295f1ec8390d6027365
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 908625b2c9c01447cc14ad86153870f5f44370d1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048734"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045922"
 ---
 # <a name="update-formatprotection"></a>更新 formatProtection
 
@@ -91,7 +91,7 @@ Content-length: 45
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

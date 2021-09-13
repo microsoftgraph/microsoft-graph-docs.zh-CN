@@ -2,15 +2,15 @@
 title: 使用 Microsoft Graph API 配置基于 SAML 的单一登录
 description: 了解如何通过使用 Microsoft Graph API 来自动配置基于 SAML 的单一登录来节省时间。
 author: kenwith
-localization_priority: Priority
+ms.localizationpriority: high
 ms.custom: scenarios:getting-started
 ms.prod: applications
-ms.openlocfilehash: 0973dcbfadd4992beef9da71fe419c414366d4f1
-ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
+ms.openlocfilehash: 4f930e98ed76a56f8a7e94873389e09810b67dab
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58490572"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117688"
 ---
 # <a name="configure-saml-based-single-sign-on-for-your-application-using-the-microsoft-graph-api"></a>使用 Microsoft Graph API 为应用程序配置基于 SAML 的单一登录
 
@@ -287,7 +287,7 @@ Content-type: application/json
 
 ```http
 PATCH https://graph.microsoft.com/v1.0/servicePrincipals/a750f6cf-2319-464a-bcc3-456926736a91
-Content-type: servicePrincipal/json
+Content-type: application/json
 
 {
   "preferredSingleSignOnMode": "saml"
@@ -308,7 +308,7 @@ HTTP/1.1 204
 
 ```http
 PATCH https://graph.microsoft.com/v1.0/applications/a9be408a-6c31-4141-8cea-52fcd4a61be8
-Content-type: applications/json
+Content-type: application/json
 
 {
   "web": {
@@ -341,7 +341,7 @@ HTTP/1.1 204
 
 ```http
 PATCH https://graph.microsoft.com/v1.0/serviceprincipals/a750f6cf-2319-464a-bcc3-456926736a91
-Content-type: serviceprincipals/json
+Content-type: application/json
 
 {
   "appRoles": [
@@ -420,7 +420,7 @@ HTTP/1.1 204
 
 ```http
 POST https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies
-Content-type: claimsMappingPolicies/json
+Content-type: application/json
 
 {
   "definition": [
@@ -435,7 +435,7 @@ Content-type: claimsMappingPolicies/json
 
 ```http
 HTTP/1.1 201 OK
-Content-type: claimsMappingPolicies/json
+Content-type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/claimsMappingPolicies/$entity",
@@ -457,7 +457,7 @@ Content-type: claimsMappingPolicies/json
 
 ```http
 POST https://graph.microsoft.com/v1.0/servicePrincipals/a750f6cf-2319-464a-bcc3-456926736a91/claimsMappingPolicies/$ref
-Content-type: claimsMappingPolicies/json
+Content-type: application/json
 
 {
   "@odata.id":"https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies/a4b35718-fd5e-4ca8-8248-a3c9934b1b78"
@@ -481,7 +481,7 @@ HTTP/1.1 204
 #### <a name="request"></a>请求
 
 ```http
-POST https://graph.microsoft.com/beta/servicePrincipals/a750f6cf-2319-464a-bcc3-456926736a91/addTokenSigningCertificate
+POST https://graph.microsoft.com/v1.0/servicePrincipals/a750f6cf-2319-464a-bcc3-456926736a91/addTokenSigningCertificate
 Content-type: application/json
 
 {
@@ -493,11 +493,11 @@ Content-type: application/json
 #### <a name="response"></a>响应
 
 ```http
-HTTP/1.1 201 OK
+HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.selfSignedCertificate",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.selfSignedCertificate",
   "customKeyIdentifier": "p9PEYmuKhP2oaMzGfSdNQC/9ChA=",
   "displayName": "CN=AWSContoso",
   "endDateTime": "2024-01-25T00:00:00Z",
@@ -518,7 +518,7 @@ Content-type: application/json
 
 ```http
 PATCH https://graph.microsoft.com/v1.0/servicePrincipals/a750f6cf-2319-464a-bcc3-456926736a91
-Content-type: servicePrincipals/json
+Content-type: application/json
 
 {
   "preferredTokenSigningKeyThumbprint": "A7D3C4626B8A84FDA868CCC67D274D402FFD0A10"
@@ -563,13 +563,6 @@ Content-type: application/json
   "id": "040f9599-7c0f-4f94-aa75-8394c4c6ea9b",
   "businessPhones": [],
   "displayName": "MyTestUser1",
-  "givenName": null,
-  "jobTitle": null,
-  "mail": null,
-  "mobilePhone": null,
-  "officeLocation": null,
-  "preferredLanguage": null,
-  "surname": null,
   "userPrincipalName": "MyTestUser1@contoso.com"
 }
 ```
@@ -588,7 +581,7 @@ Content-type: application/json
 
 ```http
 POST https://graph.microsoft.com/v1.0/servicePrincipals/a750f6cf-2319-464a-bcc3-456926736a91/appRoleAssignments
-Content-type: appRoleAssignments/json
+Content-type: application/json
 
 {
   "principalId": "040f9599-7c0f-4f94-aa75-8394c4c6ea9b",
@@ -602,7 +595,7 @@ Content-type: appRoleAssignments/json
 
 ```http
 HTTP/1.1 201 
-Content-type: appRoleAssignments/json
+Content-type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#servicePrincipals('a750f6cf-2319-464a-bcc3-456926736a91')/appRoleAssignments/$entity",
@@ -703,4 +696,4 @@ No Content - 204
 - [application](/graph/api/resources/application)
 - [claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy)
 - [keyCredential](/graph/api/resources/keycredential)
-- [addTokenSigningCertificate](/graph/api/serviceprincipal-addtokensigningcertificate?view=graph-rest-beta&preserve-view=true)
+- [addTokenSigningCertificate](/graph/api/serviceprincipal-addtokensigningcertificate)

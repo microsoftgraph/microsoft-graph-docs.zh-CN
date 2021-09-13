@@ -1,16 +1,16 @@
 ---
 title: orgContact： delta
 description: 获取新建、更新或删除的组织联系人，而无需执行整个集合的完全读取。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d970701c23cdd065c6eb5976d7f55111d0d932da
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 888252dd014fa2217699a4b271215c94bc7bcb42
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051324"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022098"
 ---
 # <a name="orgcontact-delta"></a>orgContact： delta
 
@@ -48,7 +48,7 @@ GET /contacts/delta
 
 | 查询参数      | 类型   |说明|
 |:---------------|:--------|:----------|
-| $deltatoken | string | 对[同一](/graph/delta-query-overview)个组织联系人集合之前的 delta 函数调用的 URL 中返回的状态令牌，指示完成这一轮 `deltaLink` 更改跟踪。  在集合的下一轮更改跟踪的第一个请求中保存和应用整个 `deltaLink` URL（包括此令牌）。|
+| $deltatoken | string | 对[同](/graph/delta-query-overview)一组织联系人集合之前的 delta 函数调用的 URL 中返回的状态令牌，指示完成这一轮 `deltaLink` 更改跟踪。  在集合的下一轮更改跟踪的第一个请求中保存和应用整个 `deltaLink` URL（包括此令牌）。|
 | $skiptoken | string | 之前的[delta](/graph/delta-query-overview)函数调用的 URL 中返回的状态令牌，指示同一组织联系人集合中还有进一步 `nextLink` 的更改需要跟踪。  |
 
 ### <a name="odata-query-parameters"></a>OData 查询参数
@@ -96,7 +96,7 @@ GET /contacts/delta
 添加可选请求标头 - `prefer:return=minimal` - 将导致出现以下行为：
 
 - 如果属性已更改，则新值将包括在响应中。 这包括设为 Null 值的属性。
-- 如果属性未更改，则该属性不会包括在响应中。 （不同于默认行为。）
+- 如果尚未更改属性，则该属性不会包括在响应中。（不同于默认行为。）
 
 > **注意：** 可以在 Delta 循环中的任何时间点将标头添加到 `deltaLink` 请求中。 标头仅影响响应中包含的属性集，而不会影响增量查询的运行。 请参阅[示例 3](#example-3-alternative-minimal-response-behavior)。
 

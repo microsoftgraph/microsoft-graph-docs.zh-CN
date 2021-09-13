@@ -1,20 +1,26 @@
 ---
-title: MSAL 提供商
-description: MSAL 提供程序MSAL.js登录用户并获取令牌以与 Microsoft Graph
-localization_priority: Normal
+title: MSAL 提供程序
+description: MSAL 提供程序使用 MSAL.js 登录用户并获取与 Microsoft Graph 一Graph。
+ms.localizationpriority: medium
 author: nmetulev
-ms.openlocfilehash: dc994e404767c390011c35f93a6e1a4ee6a9b41fef9dc25d0cddcc4fb25a722a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5c9c3d8fc416f08b0386335aa518076e256fe0ad
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54204937"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143550"
 ---
-# <a name="msal-provider"></a>MSAL 提供商
+# <a name="msal-provider"></a>MSAL 提供程序
 
-MSAL 提供程序[使用MSAL.js](https://github.com/AzureAD/microsoft-authentication-library-for-js)登录用户并获取与 Microsoft Graph 一Graph。
+MSAL 提供程序[使用msal.js](https://github.com/AzureAD/microsoft-authentication-library-for-js)登录用户并获取与 Microsoft Graph 一Graph。
 
 若要了解更多信息，请参阅 [提供程序](./providers.md)。
+
+## <a name="difference-between-msal2-provider-and-msal-provider"></a>MSAL2 提供程序和 MSAL 提供程序的区别
+尽管用法相似，但 MSAL 提供程序和 MSAL2 提供程序构建在不同的 OAuth 流上。 MSAL 提供程序基于实现 OAuth2.0 隐式msal.js构建[于](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow)Flow。 MSAL2 提供程序基于[msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser)构建，它使用 PKCE 实现 OAuth 2.0 [Flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow)代码。
+由于授权代码Flow Web 应用程序的隐式授权Flow，因此我们建议通过 MSAL Provider 使用 MSAL2 提供程序。 有关与隐式授予流相关的安全问题的详细信息，请参阅 [隐式流的缺点](https://tools.ietf.org/html/draft-ietf-oauth-browser-based-apps-04#section-9.8.6)。
+
+所有新应用程序应尽可能使用 MSAL2 提供程序。 有关迁移信息，请参阅[MSAL2 Provider。](./msal2.md)
 
 ## <a name="get-started"></a>入门
 
@@ -36,7 +42,7 @@ MSAL 提供程序[使用MSAL.js](https://github.com/AzureAD/microsoft-authentica
 
 | 属性    | 说明                                                                                                                                                                                                                                                           |
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| client-id    | 字符串客户端 ID (创建应用/客户端 ID) 。 必填。                                                                                                                                                                                                           |
+| client-id    | 字符串客户端 ID (请参阅创建应用/客户端 ID) 。 必需。                                                                                                                                                                                                           |
 | login-type   | 和 之间的 `redirect` `popup` 枚举 - 默认值为 `redirect` 。 可选。                                                                                                                                                                                   |
 | scopes       | 用户登录时必须同意的范围的逗号分隔字符串。 可选。                                                                                                                                                                                     |
 | authority    | 颁发机构字符串 - 默认为公共颁发机构。 对于单租户应用，请使用租户 ID 或租户名称。 例如， `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` `https://login.microsoftonline.com/[your-tenant-id]` 或 。 可选。 |
@@ -79,7 +85,7 @@ interface MsalConfig {
 
 #### <a name="pass-an-existing-useragentapplication-in-the-useragentapplication-property"></a>在 属性 `UserAgentApplication` 中传递 `userAgentApplication` 现有的 。
 
-当你的应用使用 MSAL 功能（除了由 Microsoft 和其他 Microsoft 应用公开的功能Graph Toolkit `MsalProvider` 此功能。 当框架自动实例化 并公开 时，这尤其适用;例如， `UserAgentApplication` 使用 [msal-angular 时](/azure/active-directory/develop/tutorial-v2-angular)。
+当你的应用使用 MSAL 功能时，除了由 Microsoft 公开的功能和其他 Microsoft Graph Toolkit `MsalProvider` 此功能。 当框架自动实例化 并公开 时，这尤其适用;例如， `UserAgentApplication` 使用 [msal-angular 时](/azure/active-directory/develop/tutorial-v2-angular)。
 
 请务必了解使用此选项时发生冲突的机会。 从本质上说，存在可以更改会话状态的风险，例如，让用户登录或同意其他 `MsalProvider` 范围。 请确保应用和其他框架在状态中流畅地响应这些更改，或考虑改为使用 [自定义提供程序](./custom.md) 。
 

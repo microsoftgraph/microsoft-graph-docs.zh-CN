@@ -1,16 +1,16 @@
 ---
 title: featureRolloutPolicy 资源类型
 description: 表示与目录对象关联的功能推出策略。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: madhavpatel6
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 517ee0b3b24b7bde2e651aff704b729798da64a75f3377990c87df2be84f3cec
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e40682cf794dea6a2102df23a865578b957d77f6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54146872"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062724"
 ---
 # <a name="featurerolloutpolicy-resource-type"></a>featureRolloutPolicy 资源类型
 
@@ -28,7 +28,7 @@ ms.locfileid: "54146872"
 
 ### <a name="passthrough-authentication"></a>Passthrough 身份验证
 
-* 确定运行 R2 Windows Server 2012运行[PassthroughAuthentication](/azure/active-directory/hybrid/how-to-connect-pta)代理的服务器。确保服务器已加入域，可以使用 Active Directory 对所选用户进行身份验证，并且可以在出站端口/URL 上与 Azure AD 通信。
+* 确定在 R2 Windows Server 2012运行[PassthroughAuthentication](/azure/active-directory/hybrid/how-to-connect-pta)代理的服务器。确保服务器已加入域，可以使用 Active Directory 对所选用户进行身份验证，并且可以在出站端口/URL 上与 Azure AD 通信。
 * [下载](https://aka.ms/getauthagent)&在服务器上Microsoft Azure AD 连接身份验证代理。
 * 若要启用高可用性，请在其他服务器上安装其他身份验证代理，如下 [所述](/azure/active-directory/hybrid/how-to-connect-pta-quick-start#step-4-ensure-high-availability)。
 * 确保正确配置了 [智能锁定](/azure/active-directory/authentication/howto-password-smart-lockout) 设置。 这是为了确保你的用户本地 Active Directory 帐户不会被坏角色锁定。
@@ -82,7 +82,7 @@ ms.locfileid: "54146872"
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|appliesTo|[directoryObject](directoryobject.md) collection| 可为 NULL。 指定启用该功能的 directoryObjects 列表。|
+|appliesTo|[directoryObject](directoryobject.md) 集合| 可为空。 指定启用该功能的 directoryObjects 列表。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -2,15 +2,15 @@
 title: 获取 externalItem
 description: 读取 externalItem 对象的属性和关系。
 author: mecampos
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 94ffc4a7e0da4f57553367df1a06ca8638d343f0af97bc5aa5281efdb92df7b1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c6c68c73e1a96f4c0ff949100f29081e70452adf
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54219379"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59029596"
 ---
 # <a name="get-externalitem"></a>获取 externalItem
 命名空间：microsoft.graph.externalConnectors

@@ -2,15 +2,15 @@
 title: 更新域
 description: 更新 domain 对象的属性。
 author: adimitui
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: fc400d4790326e79d8ad8dea387d6027baf8f1de
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: f4fcd8c12a70bfb0608bf9d2a6cad7a7334bb90e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787301"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056674"
 ---
 # <a name="update-domain"></a>更新域
 
@@ -27,7 +27,7 @@ ms.locfileid: "52787301"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Domain.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Domain.ReadWrite.All |
 

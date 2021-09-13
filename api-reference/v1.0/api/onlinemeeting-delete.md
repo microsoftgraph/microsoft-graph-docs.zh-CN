@@ -2,15 +2,15 @@
 title: 删除 onlineMeeting
 description: 删除联机会议。
 author: mkhribech
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 8af5125d227c09ec2d115aabf626fc3b737d4085
-ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
+ms.openlocfilehash: 34c6fa475ab9aba6531aa4573752b10ae4521055
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52896562"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59053432"
 ---
 # <a name="delete-onlinemeeting"></a>删除 onlineMeeting
 

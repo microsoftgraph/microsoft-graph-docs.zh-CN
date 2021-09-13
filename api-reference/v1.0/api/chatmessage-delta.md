@@ -1,16 +1,16 @@
 ---
 title: chatMessage：delta
 description: 检索团队频道中的消息列表（无回复）。 通过使用增量查询，可以获取频道中新的或更新的消息。
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: ec91b75edb44f9c81ff420226bf9ebf984d002be
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 7e0789806ecca5e3677d54da875a46bf8e8ba94f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052465"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022889"
 ---
 # <a name="chatmessage-delta"></a>chatMessage：delta
 
@@ -20,7 +20,7 @@ ms.locfileid: "52052465"
 
 > **请注意：** 增量查询将仅返回过去 8 个月内的邮件。 要检索时间更早的邮件，可使用 [GET /teams/{team-id}/channels/{channel-id}/messages](channel-list-messages.md)。
 
-增量查询既支持可检索指定频道中的所有消息的完全同步，也支持可检索自上次同步后频道中添加或发生变化的消息的增量同步。 通常情况下，开始时会执行一次完全同步，随后会定期获取相应消息视图的增量更改。
+Delta 查询既支持可检索指定频道中所有消息的完全同步，也支持可检索自上次同步后频道中添加或更改的消息的增量同步。通常情况下，开始时会执行一次完全同步，然后会定期获取相应消息视图的增量更改。
 
 若要获取消息的回复，请使用[列出消息回复](chatmessage-list-replies.md)或[获取消息回复](chatmessage-get.md)操作。
 
@@ -103,7 +103,7 @@ GET /teams/{team-id}/channels/{channel-id}/messages/delta
 
 #### <a name="initial-request"></a>初始请求
 
-本示例中，频道消息正在进行首次同步，因此初始同步请求未包含任何状态令牌。 这一轮将返回此日历视图中的所有事件。
+在该示例中，由于频道消息为首次同步，因此第一个同步请求不含任何状态令牌。这一轮将返回该日历视图中的所有事件。
 
 请求指定可选请求标头 odata.top，每次返回 2 个事件。
 

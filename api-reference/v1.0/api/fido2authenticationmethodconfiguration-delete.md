@@ -2,22 +2,22 @@
 title: 删除 fido2AuthenticationMethodConfiguration
 description: 删除 fido2AuthenticationMethodConfiguration 对象。
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9718be65a374e4bd6dc55121a63f1c4040744f8b
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 96cb2a93b517ce86b91917bfc55771586f06e8f5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469358"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046013"
 ---
 # <a name="delete-fido2authenticationmethodconfiguration"></a>删除 fido2AuthenticationMethodConfiguration
 命名空间：microsoft.graph
 
 将 FIDO2 身份验证方法策略还原为默认配置，以删除对 [FIDO2](../resources/fido2authenticationmethodconfiguration.md) 身份验证方法策略所做的更改。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 

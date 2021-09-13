@@ -2,15 +2,15 @@
 title: 创建 externalConnection
 description: 创建新的 externalConnection 对象。
 author: mecampos
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 47603c008f94cdf27227e3ae5e6419283d3e3424
-ms.sourcegitcommit: 6efd9df497d795988cd85474f379d1989b0995b7
+ms.openlocfilehash: 30b0719359cce26658357915c6256402a4573169
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58697469"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022496"
 ---
 # <a name="create-externalconnection"></a>创建 externalConnection
 命名空间：microsoft.graph.externalConnectors
@@ -19,7 +19,7 @@ ms.locfileid: "58697469"
 
 创建新的 externalConnection 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -51,9 +51,9 @@ POST /external/connections
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|连接 ID。 此为必需属性。|
+|id|String|连接 ID。 必填。|
 |name|String|连接名称。 必需。|
-|description|String|连接说明。 此为必需属性。|
+|description|String|连接说明。 必填。|
 |configuration|[microsoft.graph.externalConnectors.configuration](../resources/externalconnectors-configuration.md)|连接配置。 可选。|
 
 

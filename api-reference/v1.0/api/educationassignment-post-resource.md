@@ -1,16 +1,16 @@
 ---
 title: 创建 educationAssignmentResource
 description: 创建教育作业资源。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 4a973b2e2791360bacd2c38bdfc41e5c8bae6ef3
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 9215dc35c38adb50d19f908601e7ed02d9e18e37
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58264393"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020124"
 ---
 # <a name="create-educationassignmentresource"></a>创建 educationAssignmentResource
 

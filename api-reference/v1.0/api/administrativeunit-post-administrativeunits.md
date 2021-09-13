@@ -2,15 +2,15 @@
 title: 创建 administrativeUnit
 description: 使用此 API 创建新的 administrativeUnit。
 author: DougKirschner
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 02239d7931528b93982539e6949ab068f4cd381e
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 1d7e7fbe88035ef4a7b1272aab510a5569efda54
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52991503"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59008487"
 ---
 # <a name="create-administrativeunit"></a>创建 administrativeUnit
 

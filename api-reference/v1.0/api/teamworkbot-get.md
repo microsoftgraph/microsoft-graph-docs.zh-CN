@@ -2,15 +2,15 @@
 title: 获取 teamworkBot
 description: 读取 teamworkBot 对象的属性和关系。
 author: AkJo
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3efbbf65c12e81f3c1ce243e97ad9e2bc98c4d0d
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: da488f526eb10b9549bf7fd2c803634f22a57691
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50774776"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109858"
 ---
 # <a name="get-teamworkbot"></a>获取 teamworkBot
 

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 34331e63427f66c5c2b18d720f5d5c213b8c77b8
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: d3d29be1fd6b3fa9309ae5c7902d3df79bdb04da73934171d19417c6f0aefa20
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44684260"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "57103898"
 ---
 ```objc
 
@@ -13,7 +13,7 @@ MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationPr
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/v1.0/";
 NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}"]]];
-[urlRequest setHTTPMethod:@"PATCH"];
+[urlRequest setHTTPMethod:@"PUT"];
 [urlRequest setValue:@"return=representation" forHTTPHeaderField:@"Prefer"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 

@@ -2,15 +2,15 @@
 title: getDeviceManagementIntentSettingsReport 操作
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a41240c77e48176c01d76d7cf04c3c50a3bab81f4648842908c5ed339447f512
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f61bfc1b75615f66db74ed79c46f7d0a3c6c0f61
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54160252"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063039"
 ---
 # <a name="getdevicemanagementintentsettingsreport-action"></a>getDeviceManagementIntentSettingsReport 操作
 

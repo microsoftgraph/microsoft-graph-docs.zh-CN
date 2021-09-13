@@ -2,15 +2,15 @@
 title: exclusionGroupAssignmentTarget 资源类型
 description: 表示应从赋值中排除的组。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d4f8750d23640e01334686eeacd407cef539c8c8f6d2bdce3b977c7c6ae3e0fc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f754db39095368db3b78d96b1cbfd97a1abaa071
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54124281"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036240"
 ---
 # <a name="exclusiongroupassignmenttarget-resource-type"></a>exclusionGroupAssignmentTarget 资源类型
 

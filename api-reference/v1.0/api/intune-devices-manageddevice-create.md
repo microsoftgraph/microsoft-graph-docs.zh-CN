@@ -2,15 +2,15 @@
 title: 创建 managedDevice
 description: 创建新的 managedDevice 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ce12430cbefedb0c5cf8728284e677916f792679
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 3632035ddf548f4f2bc518edfdfcbf0b1a4ea6c4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58260255"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59029463"
 ---
 # <a name="create-manageddevice"></a>创建 managedDevice
 
@@ -54,7 +54,7 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|设备的唯一标识符。 此属性是只读的。|
-|userId|字符串|与设备关联的用户的唯一标识符。 此属性是只读的。|
+|userId|String|与设备关联的用户的唯一标识符。 此属性是只读的。|
 |deviceName|String|设备的名称。 此属性是只读的。|
 |managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune-devices-manageddeviceownertype.md)|设备的所有权。 可以是"公司"或"个人"。 可取值为：`unknown`、`company`、`personal`。|
 |deviceActionResults|[deviceActionResult](../resources/intune-devices-deviceactionresult.md) 集合|ComplexType deviceActionResult 对象的列表。 此属性是只读的。|

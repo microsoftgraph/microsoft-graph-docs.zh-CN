@@ -1,21 +1,21 @@
 ---
 title: 使用 Microsoft Graph SDK 批处理请求
 description: 提供有关使用 Microsoft SDK 创建一批 API Graph的说明。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: DarrelMiller
-ms.openlocfilehash: d8e44f6ed2c1fe03f81150eb8dbf07140c2da513d9a6d9c192559a56362a8e43
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a8a1d2b7e4d214edbdef2424539030ab52d46442
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54146151"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129724"
 ---
 # <a name="use-the-microsoft-graph-sdks-to-batch-requests"></a>使用 Microsoft Graph SDK 批处理请求
 
 [批处理](../json-batching.md) 是一种将多个请求合并到单个 HTTP 请求中的方法。 请求组合在单个 JSON 有效负载中，该负载通过 POST 发送到 `\$batch` 终结点。 Microsoft Graph SDK 具有一组类，用于简化如何创建批处理有效负载和分析批处理响应有效负载。
 
 > [!IMPORTANT]
-> 有关 Microsoft Graph JSON 批处理的当前限制，请参阅[已知问题](../known-issues.md#json-batching)。
+> 有关 Microsoft Graph 中 JSON 批处理的当前限制，请参阅[已知问题](../known-issues.md#json-batching)。
 
 ## <a name="create-a-batch-request"></a>创建批处理请求
 
@@ -23,7 +23,7 @@ Microsoft Graph SDK 提供了三个类，用于处理批处理请求和响应。
 
 - **BatchRequestStep** - 表示单个请求 (，) `GET /me` 批处理中的请求。 它支持为请求分配唯一标识符并指定请求之间的依赖关系。
 - **BatchRequestContent** - 简化批处理请求有效负载的创建。 它包含多个 **BatchRequestStep** 对象。
-- **BatchResponseContent** - 简化了分析来自批处理请求的响应。 它提供获取所有响应、按 ID 获取特定响应以及获取 `@odata.nextLink` 属性（如果存在）的能力。
+- **BatchResponseContent** - 简化分析来自批处理请求的响应。 它提供获取所有响应、按 ID 获取特定响应以及获取 `@odata.nextLink` 属性（如果存在）的能力。
 
 ## <a name="simple-batching-example"></a>简单批处理示例
 
@@ -197,7 +197,7 @@ System.out.println(String.format("You have %d events on your calendar today", ev
 
 ## <a name="batches-with-dependent-requests"></a>具有相关请求的批处理
 
-此示例演示如何在批处理中发送多个相互依赖的请求。 请求将按依赖项指定的顺序由服务运行。 本示例向用户的日历添加一个事件，其开始时间为当前日期，并获取当前日期的用户日历视图。 若要确保返回的日历审阅包含创建的新事件，将日历视图请求配置为依赖于添加新事件的请求。 这将确保首先执行添加事件请求。
+此示例演示如何在批处理中发送多个相互依赖的请求。 请求将按依赖项指定的顺序由服务运行。 本示例向用户的日历添加一个事件，其开始时间为当前日期，并获取当前日期的用户日历视图。 若要确保返回的日历审阅包含创建的新事件，日历视图的请求将配置为依赖于添加新事件的请求。 这将确保首先执行添加事件请求。
 
 > [!NOTE]
 > 如果添加事件请求失败，则获取日历视图请求将失败并出现错误 `424 Failed Dependency` 。

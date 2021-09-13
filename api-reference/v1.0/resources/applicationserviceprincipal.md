@@ -1,16 +1,16 @@
 ---
 title: applicationServicePrincipal 资源类型
 description: 应用程序和 servicePrincipal 的组合。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: b5f864b03461fc21d8283245663786d618a2687f043901e7cb44d9a6df5421ee
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3c5bafde4452842494f7890b8492b29e42bc8730
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54231885"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59078992"
 ---
 # <a name="applicationserviceprincipal-resource-type"></a>applicationServicePrincipal 资源类型
 

@@ -1,16 +1,16 @@
 ---
 title: 更新工作人员集成
 description: 更新 workforceIntegration 对象的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5efd624bf4a8104465e7663a41b758ec8661a2eb
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c0e2a8329b1b80252a881471031bc2b775c4e9c5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52031515"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59044830"
 ---
 # <a name="update-workforceintegration"></a>更新工作人员集成
 
@@ -53,7 +53,7 @@ PATCH /teamwork/workforceIntegrations/{workforceIntegrationId}
 |apiVersion|Int32|用于回叫 URL 的 API 版本。 从 1 开始。|
 |displayName|String|员工集成的名称。|
 |加密|workforceIntegrationEncryption|员工集成加密资源。 |
-|isActive|布尔值|指示此员工集成当前是否处于活动状态且可用。|
+|isActive|Boolean|指示此员工集成当前是否处于活动状态且可用。|
 |supportedEntities|string| 可取值为：`none`、`shift`、`swapRequest`、`openshift`、`openShiftRequest`、`userShiftPreferences`。 如果选择多个值，则所有值必须以大写字母开头。|
 |url|String| 轮班服务中回调的员工集成 URL。 |
 

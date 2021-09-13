@@ -1,18 +1,18 @@
 ---
 title: 将 Microsoft Graph Toolkit与 Angular
 description: 在应用程序应用程序中Graph Toolkit Microsoft Angular入门。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: elisenyang
-ms.openlocfilehash: 8cd4c8039111dbc5f764cd4e698cf02c9aa0e1e621982e13947cb62846e1ea52
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: da50a18176a5945c3b90b136766149ff83951692
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54159657"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032081"
 ---
 # <a name="use-the-microsoft-graph-toolkit-with-angular"></a>将 Microsoft Graph Toolkit与 Angular
 
-除了Graph Toolkit JavaScript 和 HTML 外，Microsoft Angular 还非常支持 Web 框架（如 web 框架）。 本主题介绍如何将 Microsoft Graph Toolkit与 Angular。 有关介绍如何创建新的 Angular 应用程序并使用 Microsoft Graph Toolkit 的分步演练，请参阅将[Microsoft](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-14-using-microsoft-graph-toolkit-with-angular/)Graph Toolkit 与 Angular。
+除了Graph Toolkit JavaScript 和 HTML 外，Microsoft Angular 还非常支持 Web 框架（如 Web 框架）。 本主题介绍如何将 Microsoft Graph Toolkit与 Angular。 有关介绍如何创建新的 Angular 应用程序并使用 Microsoft Graph Toolkit 的分步演练，请参阅将[Microsoft](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-14-using-microsoft-graph-toolkit-with-angular/)Graph Toolkit 与 Angular。
 
 ## <a name="add-the-microsoft-graph-toolkit"></a>添加 Microsoft Graph Toolkit
 
@@ -32,7 +32,7 @@ import { AppComponent } from './app.component';
 })
 export class AppModule {}
 ```
-接下来，通过Graph Toolkit npm 包将 Microsoft 加载项添加到项目中：
+接下来，通过Graph Toolkit npm 包将 Microsoft 客户端添加到项目中：
 ```Command Line
 npm install @microsoft/mgt
 ```
@@ -40,9 +40,9 @@ npm install @microsoft/mgt
 
 Microsoft Graph 工具包提供程序为组件启用身份验证和对 Microsoft Graph 的访问。 若要了解详细信息，请参阅[使用提供程序](../providers/providers.md)。 使用的提供程序取决于将使用解决方案的上下文。
 
-以下示例演示如何添加 [MSAL 2 提供程序](../providers/msal2.md)，但您可以使用任何提供程序的相同模型。
+以下示例演示如何添加 [MSAL2 提供程序](../providers/msal2.md)，但您可以使用任何提供程序遵循同一模型。
 >[!NOTE] 
->如果您当前使用的是 MSAL 提供程序，并且希望更新到 MSAL 2 提供程序，请按照 [MSAL 2](../providers/msal2.md#migrating-from-msal-provider-to-msal-2-provider) 提供程序文章中的步骤操作。
+>如果当前使用的是 MSAL 提供程序，并且要更新到 MSAL2 提供程序，请按照 [MSAL2 提供程序文章中的步骤](../providers/msal2.md#migrating-from-msal-provider-to-msal2-provider) 操作。
 
 导入提供程序，将其设置为在应用程序初始化时进行初始化。 将 `<YOUR-CLIENT-ID>` 替换为应用程序的客户端 ID。
 
@@ -78,7 +78,7 @@ export class AppComponent implements OnInit {
 
 ## <a name="customizing-components-with-angular"></a>使用自定义组件Angular
 
-所有 Microsoft Graph Toolkit组件都[](../customize-components/templates.md)支持自定义模板，这允许你修改组件的内容。 自定义组件的默认语法是使用双括号来引用每个返回项目的属性数据，如下所示：
+所有 Microsoft Graph Toolkit 组件[](../customize-components/templates.md)都支持自定义模板，通过自定义模板可以修改组件的内容。 自定义组件的默认语法是使用双括号来引用每个返回项目的属性数据，如下所示：
 
 ```html
 <!-- Double braces are used for data binding in Angular. This will throw an error. -->
@@ -91,7 +91,7 @@ export class AppComponent implements OnInit {
 
 但是Angular，双括号用于数据绑定，如果尝试使用双大括号语法，Angular编译器将引发错误。
 
-可以通过使用 将用户所使用的默认字符Toolkit大括号，而不是双括号，避免这些 `TemplateHelper` 错误。 最好在顶级应用组件中这样做，以便它可全局应用。
+可以通过使用 将用户所使用的默认字符Toolkit双括号而非双括号来避免这些 `TemplateHelper` 错误。 最好在顶级应用组件中这样做，以便它可全局应用。
 
 导入 `TemplateHelper` 并使用 `.setBindingSyntax()` 方法设置自定义绑定语法。
 

@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/11/2017
 title: 列表
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: sharepoint
 description: ”列表”资源代表网站中的列表。
 doc_type: resourcePageType
-ms.openlocfilehash: 736c5d092587f5e6e57fc564bf9e5a22bc2efcea00c18bad4d4b5c7cba661971
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9d47d308ffa1171ff720d66f7ed21f254b5ec06b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54202236"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021496"
 ---
 # <a name="list-resource"></a>List 资源
 

@@ -2,15 +2,15 @@
 title: 获取 authenticationMethodsPolicy
 description: 读取 authenticationMethodsPolicy 对象的属性和关系。
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 7b4ddfd7a1e6676befd58845cfe3373db978649c
-ms.sourcegitcommit: 10d9f4c2cee192bd80984d48cabba63b47c54551
+ms.openlocfilehash: b522d0d8ba851b2766bffd368a0d112d62cef271
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53547565"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59038501"
 ---
 # <a name="get-authenticationmethodspolicy"></a>获取 authenticationMethodsPolicy
 命名空间：microsoft.graph
@@ -55,6 +55,8 @@ GET /policies/authenticationMethodsPolicy
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_authenticationmethodspolicy"
@@ -63,6 +65,24 @@ GET /policies/authenticationMethodsPolicy
 ``` http
 GET https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-authenticationmethodspolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-authenticationmethodspolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-authenticationmethodspolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-authenticationmethodspolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

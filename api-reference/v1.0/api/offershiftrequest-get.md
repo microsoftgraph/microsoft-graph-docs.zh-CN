@@ -1,16 +1,16 @@
 ---
 title: 获取 offerShiftRequest
 description: 检索 offerShiftRequest 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8b02d3bb5a9a228c2fa6f53c3243fc5bcc7de5a8
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: eb2248de856089cc12493b29ae784cc0ab85c8d7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050414"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59050220"
 ---
 # <a name="get-offershiftrequest"></a>获取 offerShiftRequest
 

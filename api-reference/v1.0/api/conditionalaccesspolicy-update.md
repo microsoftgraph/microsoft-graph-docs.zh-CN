@@ -1,16 +1,16 @@
 ---
 title: 更新 conditionalaccesspolicy
 description: 更新 conditionalAccessPolicy 对象的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c82bfd9d5c911068653527128b36c9e3578d189b
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: ce716d5e52ecb684b393cc56c50211392fff73e5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442115"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59029631"
 ---
 # <a name="update-conditionalaccesspolicy"></a>更新 conditionalaccesspolicy
 
@@ -29,7 +29,7 @@ ms.locfileid: "50442115"
 | 应用程序                            | Policy.Read.All、Policy.ReadWrite.ConditionalAccess 和 Application.Read.All |
 
 > [!NOTE]
-> 此 API 有 [一个与](/graph/known-issues#permissions) 权限相关的已知问题。
+> 此 API 有 [一个与](/graph/known-issues##conditional-access-policy) 权限相关的已知问题。
 
 ## <a name="http-request"></a>HTTP 请求
 

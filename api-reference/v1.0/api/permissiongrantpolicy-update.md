@@ -1,16 +1,16 @@
 ---
 title: 更新 permissionGrantPolicy
 description: 更新 permissionGrantPolicy 对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 6e40a6361ec5f72c936f4b8151e001308e48be2b
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: ed730bebb43e636ab4476c0c138a950dd46384a4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787153"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59007899"
 ---
 # <a name="update-permissiongrantpolicy"></a>更新 permissionGrantPolicy
 

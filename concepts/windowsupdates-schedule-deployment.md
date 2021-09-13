@@ -2,15 +2,15 @@
 title: 使用 Windows Update for Business 部署服务安排部署
 description: 使用部署服务部署更新时，可以计划部署，以便设备在未来日期接收更新。
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: ac30d812294f9c05f7a32748d8b2094d700a816aec50c07553032499b3010f71
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cb73aad6ab0aa850088e7e5e72c3cc096bb74b50
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54225613"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117505"
 ---
 # <a name="schedule-a-deployment-using-the-windows-update-for-business-deployment-service"></a>使用 Windows Update for Business 部署服务安排部署
 
@@ -93,7 +93,7 @@ Content-Type: application/json
 在一定时间阶段部署一种方式是设置部署的 **endDateTime。** 分配给部署的所有设备都将在 **startDateTime** 和 **endDateTime** 之间的窗口中提供更新。 如果 **未指定 startDateTime，** 则分配设备后将立即开始部署。
 
 
-本示例中，配置了一个新部署，以便从 2021 年 7 月 1 日开始，每周向一组新设备提供更新 (**durationBetweenOffers** 设置为) 七天。 在 2021 年 8 月 1 日之前，会向所有设备提供更新。
+本示例将配置新部署，以便从 2021 年 7 月 1 日开始，每周向一组新设备提供更新 (**durationBetweenOffers** 设置为) 年 7 天。 在 2021 年 8 月 1 日之前，会向所有设备提供更新。
 
 #### <a name="request"></a>请求
 
@@ -164,7 +164,7 @@ Content-Type: application/json
 
 在一段时间后部署阶段的另一种方式是使用 配置产品/服务费率 `devicesPerOffer` 。 分配给部署的设备将按照指定的速率提供更新，直到所有设备都获得更新。
 
-本示例中，配置了一个新部署，以便从 2021 年 7 月 1 日开始，每周向一组新设备提供更新 (**durationBetweenOffers** 设置为) 七天。 一次向 100 台设备提供更新，直到所有设备都获得更新。
+本示例将配置新部署，以便从 2021 年 7 月 1 日开始，每周向一组新设备提供更新 (**durationBetweenOffers** 设置为) 年 7 天。 一次向 100 台设备提供更新，直到所有设备都获得更新。
 
 #### <a name="request"></a>请求
 

@@ -1,18 +1,18 @@
 ---
 title: 自定义 Microsoft Graph SDK 服务客户端
 description: 提供有关如何更改 Microsoft Graph SDK 服务客户端的默认行为的说明。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: DarrelMiller
-ms.openlocfilehash: c41482fa04ce63ef976c2d9ddb26450dc0fb1f444dcaf98f183332b264b01e50
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6c98ed668db7dbcd710f95e72f7e965cfc2f9cc6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54204973"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59098403"
 ---
 # <a name="customize-the-microsoft-graph-sdk-service-client"></a>自定义 Microsoft Graph SDK 服务客户端
 
-Microsoft Graph SDK 客户端配置了一组默认的中间件，允许 SDK 与 Microsoft Graph终结点通信。 此默认集是可自定义的，允许您更改客户端的行为。 例如，可以插入自定义日志记录，或添加测试处理程序以模拟特定方案。 可以添加和删除中间件组件。 需要注意的是，中间件组件的运行顺序非常重要。
+Microsoft Graph SDK 客户端配置一组默认的中间件，允许 SDK 与 Microsoft Graph终结点通信。 此默认集是可自定义的，允许您更改客户端的行为。 例如，可以插入自定义日志记录，或添加测试处理程序以模拟特定方案。 可以添加和删除中间件组件。 需要注意的是，中间件组件的运行顺序非常重要。
 
 ## <a name="c"></a>[C#](#tab/csharp)
 
@@ -126,7 +126,7 @@ final GraphServiceClient graphServiceClient = GraphServiceClient
 
 ## <a name="configuring-the-http-proxy-for-the-client"></a>为客户端配置 HTTP 代理
 
-某些环境要求客户端应用程序在可以访问公共 Internet 之前使用 HTTP 代理。 本部分演示如何为 Microsoft SDK 配置Graph代理。
+某些环境要求客户端应用程序在可以访问公共 Internet 之前使用 HTTP 代理。 本部分演示如何为 Microsoft Graph SDK 配置代理。
 
 <!-- markdownlint-disable MD024 -->
 ## <a name="c"></a>[C#](#tab/csharp)

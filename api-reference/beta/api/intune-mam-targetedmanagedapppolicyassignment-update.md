@@ -2,15 +2,15 @@
 title: 更新 targetedManagedAppPolicyAssignment
 description: 更新 targetedManagedAppPolicyAssignment 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a23df118b26f2c90c6f71aba44ad56a82a4ce89d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f33d2bc5337e82cd8a4ee1b7ca01a4652f8d6fbb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788007"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59018038"
 ---
 # <a name="update-targetedmanagedapppolicyassignment"></a>更新 targetedManagedAppPolicyAssignment
 
@@ -47,7 +47,7 @@ PATCH /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsIn
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -60,7 +60,7 @@ PATCH /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsIn
 |id|String|Id|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|部署到组或应用的标识符|
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|用于部署到组、直接或直接/策略集的资源类型。 可取值为：`direct`、`policySets`。|
-|sourceId|字符串|用于部署到组的资源的标识符|
+|sourceId|String|用于部署到组的资源的标识符|
 
 
 

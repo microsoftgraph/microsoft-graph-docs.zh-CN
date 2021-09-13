@@ -1,20 +1,20 @@
 ---
 title: Microsoft Graph Toolkit
 description: 使用自定义模板修改组件的内容。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: nmetulev
-ms.openlocfilehash: cf8297e5e0f70ee1014c11a3ecbfc10ed5cc0e0aa1e15c7f2bb7239545c9105e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 93b595e3e8111d0a51c9c049cbf153bd287472f7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54231374"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59044221"
 ---
 # <a name="templates-in-the-microsoft-graph-toolkit"></a>Microsoft Graph Toolkit
 
 大多数 Microsoft Graph Toolkit组件都支持使用自定义模板来修改组件的内容。
 
-所有 Web 组件都支持基于 元素的 `<template>` 模板。 例如，若要替代组件的模板，在组件 `<template>` 内添加元素。
+所有 Web 组件都支持基于 元素的 `<template>` 模板。 例如，若要替代组件的模板，在组件 `<template>` 中添加元素。
 
 ```html
 <mgt-agenda>
@@ -178,7 +178,7 @@ TemplateHelper.setBindingSyntax('[[', ']]');
 
 2. 针对所有组件的全局性。
 
-    `TemplateHelper`类公开 `globalContext` 对象以添加应在全局上可用于所有组件的数据或函数。
+    `TemplateHelper`类公开 `globalContext` 对象以添加应在全局上可供所有组件使用的数据或函数。
 
     ```ts
     import { TemplateHelper } from '@microsoft/mgt';

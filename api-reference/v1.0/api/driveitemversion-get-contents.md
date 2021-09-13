@@ -1,16 +1,16 @@
 ---
 title: 下载 DriveItemVersion 资源的内容
 description: 检索某个特定版本的 DriveItem 的内容。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 author: JeremyKelley
 doc_type: apiPageType
-ms.openlocfilehash: 739762912030fbaf0a81ef3f2400b5caef8a933a
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 421a42d1a36fe8e02c53b8a5a6b0f52b3ce92cec
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516792"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59037969"
 ---
 # <a name="download-contents-of-a-driveitemversion-resource"></a>下载 DriveItemVersion 资源的内容
 
@@ -18,7 +18,7 @@ ms.locfileid: "50516792"
 
 检索某个特定版本的 [DriveItem](../resources/driveitem.md) 的内容。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

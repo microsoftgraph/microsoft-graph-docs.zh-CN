@@ -2,15 +2,15 @@
 title: 创建 managedIOSLobApp
 description: 创建新的 managedIOSLobApp 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c9d09874c2a982d8cc7fc336d7c9725f631390a3125515b72e9afd5914255002
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 025a2d9c6f5169dba7ef3c1afe2f83b14dafa7af
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54212604"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59073679"
 ---
 # <a name="create-managedioslobapp"></a>创建 managedIOSLobApp
 
@@ -61,7 +61,7 @@ POST /deviceAppManagement/mobileApps
 |isFeatured|Boolean|指示应用是否被管理员标记为特色的值。继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |privacyInformationUrl|String|隐私声明 URL。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |informationUrl|String|详细信息 URL。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|所有者|String|应用的所有者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|owner|String|应用的所有者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |developer|String|应用的开发者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |notes|String|应用的备注。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|

@@ -2,15 +2,15 @@
 title: 列出趋势
 description: 计算得出的见解，可返回用户常用的项目列表。
 author: simonhult
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: db5392cebe5762fb0e77f92860d0f2633c96c8712536f5d0a86d32909caed394
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6dcc77bc0b92870986bbff201979a1bfac04330c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54187383"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016588"
 ---
 # <a name="list-trending"></a>列出趋势
 
@@ -77,7 +77,7 @@ GET /users/{id | userPrincipalName}/insights/trending/{id}/resource
 GET https://graph.microsoft.com/v1.0/me/insights/trending
 ```
 #### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短此处显示的响应对象。 请参阅页面底部的未截断响应示例。
+下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。 请参阅页面底部的未截断响应示例。
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

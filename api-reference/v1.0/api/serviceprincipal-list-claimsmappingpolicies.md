@@ -1,16 +1,16 @@
 ---
 title: 列出分配的 claimsMappingPolicies
 description: 列出分配给服务主体的 claimsMappingPolicies。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: paulgarn
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 0f6c5d3b0b9217bef4394f9595a72980a973173e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 30ac1ab6d74ae9e7742965bb7c46bb10a43d3030
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52034901"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022028"
 ---
 # <a name="list-assigned-claimsmappingpolicy"></a>列出分配的 claimsMappingPolicy
 
@@ -105,16 +105,19 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "definition": [
-        "definition-value"
-      ],
-      "displayName": "displayName-value",
-      "isOrganizationDefault": true,
-      "id": "id-value"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.claimsMappingPolicy)",
+    "value": [
+        {
+            "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/8782712b-4368-4bc2-84d9-d47cd0146621/Microsoft.DirectoryServices.ClaimsMappingPolicy",
+            "id": "8782712b-4368-4bc2-84d9-d47cd0146621",
+            "deletedDateTime": null,
+            "definition": [
+                "{\"ClaimsMappingPolicy\":{\"Version\":1,\"IncludeBasicClaimSet\":\"true\", \"ClaimsSchema\":[{\"Source\":\"user\",\"ID\":\"extensionattribute1\"},{\"Source\":\"transformation\",\"ID\":\"DataJoin\",\"TransformationId\":\"JoinTheData\",\"JwtClaimType\":\"JoinedData\"}],\"ClaimsTransformations\":[{\"ID\":\"JoinTheData\",\"TransformationMethod\":\"Join\",\"InputClaims\":[{\"ClaimTypeReferenceId\":\"extensionattribute1\",\"TransformationClaimType\":\"string1\"}], \"InputParameters\": [{\"ID\":\"string2\",\"Value\":\"sandbox\"},{\"ID\":\"separator\",\"Value\":\".\"}],\"OutputClaims\":[{\"ClaimTypeReferenceId\":\"DataJoin\",\"TransformationClaimType\":\"outputClaim\"}]}]}}"
+            ],
+            "displayName": "TestclaimsPolicy",
+            "isOrganizationDefault": false
+        }
+    ]
 }
 ```
 

@@ -2,22 +2,22 @@
 title: 获取架构
 description: 读取架构对象的属性和关系。
 author: mecampos
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 32d51980069ef74bed0d3c72f7a2d112d2f1a1f7
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 0e9725e77b727c455364fae0bcb068118e4a9cc3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53580671"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046118"
 ---
 # <a name="get-schema"></a>获取架构
 命名空间：microsoft.graph.externalConnectors
 
 
 
-读取架构 [对象的属性和](../resources/externalconnectors-schema.md) 关系。
+读取架构对象的属性 [和](../resources/externalconnectors-schema.md) 关系。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

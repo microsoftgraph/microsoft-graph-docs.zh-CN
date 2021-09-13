@@ -2,20 +2,20 @@
 title: accessReviewInstance：batchRecordDecisions
 description: 使审阅者可以分批审阅所有 accessReviewInstanceDecisionItems。
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 8793838a67199a5d5d752e6865c2f8e3c97b262e
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 69ebef36a28629a1d4dabf4d55699c61a12c04b4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53210621"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59033138"
 ---
 # <a name="accessreviewinstance-batchrecorddecisions"></a>accessReviewInstance：batchRecordDecisions
 命名空间：microsoft.graph
 
-允许审阅者使用 **principalId** **、resourceId** 或两者成批查看所有 [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md)对象。
+允许审阅者使用 **principalId、resourceId** 或两者成批查看所有 [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md)对象。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -49,7 +49,7 @@ POST /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefiniti
 
 |参数|类型|说明|
 |:---|:---|:---|
-|decision|String|被审阅实体的访问决策。 可取值为：`Approve`、`Deny`、`NotReviewed`、`DontKnow`。 必填。|
+|decision|String|被审阅实体的访问决策。 可取值为：`Approve`、`Deny`、`NotReviewed`、`DontKnow`。 必需。|
 |justification|String|提供给管理员评价的上下文。 如果 **accessReviewScheduleDefinition** 的 settings 属性的 **justificationRequiredOnApproval** 为 ，则必需 `true` 。|
 |principalId|String|如果提供，将在此批处理中检查具有匹配 **principalId** 值的所有 **accessReviewInstanceDecisionItems。** 如果未提供，将检查 **所有 accessReviewInstanceDecisionItems。**|
 |resourceId|String|如果提供，将在此批处理中检查具有匹配 **resourceId** 的所有 **accessReviewInstanceDecisionItems。** 如果未提供，将检查 **所有 accessReviewInstanceDecisionItems。**|

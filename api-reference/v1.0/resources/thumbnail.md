@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: 缩略图
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 缩略图资源类型表示具有位图表示的图像、视频、文档 或任何项目的缩略图。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 66656ed7a286290691182b79cce079110fb602c1157a9eb064ac92c88c5b1cec
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3996ffa92e3387fc8a9aa24eaf7d7eb5395c2e73
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163640"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59055771"
 ---
 # <a name="thumbnail-resource-type"></a>Thumbnail 资源类型
 

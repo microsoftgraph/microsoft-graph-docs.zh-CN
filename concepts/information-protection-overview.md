@@ -2,14 +2,14 @@
 title: Microsoft 信息保护标签概述
 description: Microsoft 信息保护标签可帮助组织根据安全与合规中心敏感度标签Office 365分类、标记和保护数据。
 author: tommoser
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: security
-ms.openlocfilehash: dafa396b5c0d7a27400ddee5c6bb2965dd4abb1d83ccb5f9deef0f71283e1a02
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 20eb8b54d71e390f3a61f05117855d379a225321
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54237416"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136066"
 ---
 # <a name="information-protection-overview"></a>信息保护概述
 
@@ -29,21 +29,21 @@ Microsoft 信息保护可帮助组织根据敏感度对数据进行分类、标�
 
 ### <a name="label-information-in-line-of-business-applications"></a>在业务线应用程序中标记信息
 
-Enterprise开发人员Microsoft 信息保护在从业务线应用程序导出时标记和保护敏感的客户信息，以确保客户信息安全。 通过将应用程序连接到 Microsoft 信息保护生态系统，应用程序可以在自己的应用程序数据中应用、更新和删除敏感度[](/Office365/SecurityCompliance/sensitivity-labels)标签，而无需集成完整 SDK 的开销。
+Enterprise开发人员Microsoft 信息保护在从业务线应用程序导出时标记和保护敏感的客户信息，以确保客户信息安全。 通过将应用程序连接到 Microsoft 信息保护生态系统，应用程序可以在自己的应用程序数据中应用、更新和删除[](/Office365/SecurityCompliance/sensitivity-labels)敏感度标签，而无需集成完整 SDK 的开销。
 
-## <a name="what-can-i-do-with-microsoft-information-protection-label-apis-in-microsoft-graph"></a>使用 Microsoft Microsoft 信息保护 中的标签 API Graph？ 
+## <a name="what-can-i-do-with-microsoft-information-protection-label-apis-in-microsoft-graph"></a>使用 Microsoft Microsoft 信息保护 中的标签 API 可以Graph？ 
 
 ### <a name="discover-labels-available-to-a-user-or-organization"></a>发现可供用户或组织使用的标签
 
-使用 Microsoft Graph可以访问用户或组织可用的[](/graph/api/informationprotectionlabel?view=graph-rest-beta)敏感度标签。 标签由应用程序和服务应用于处于其余状态或动态的数据，帮助用户和下游应用程序和服务了解他们处理的信息的敏感性。
+使用 Microsoft Graph可以访问用户或组织[](/graph/api/informationprotectionlabel?view=graph-rest-beta)可用的敏感度标签。 标签由应用程序和服务应用于处于其余状态或动态的数据，帮助用户和下游应用程序和服务了解所处理信息的敏感性。
 
 ### <a name="understand-how-to-apply-labels"></a>了解如何应用标签
 
-通过提供有关现有和所需敏感度标签的信息，REST API 可以智能地通知应用正确应用标签应采取的[](/graph/api/resources/informationprotectionaction?view=graph-rest-beta)操作。 这包括元数据应用程序 [、](/graph/api/resources/metadataaction?view=graph-rest-beta) 水 [印](/graph/api/resources/addwatermarkaction?view=graph-rest-beta) 生成 [、保护](/graph/api/resources/protectbytemplateaction?view=graph-rest-beta)等操作。
+通过提供现有和所需敏感度标签的信息，REST API 可以智能地通知应用正确应用标签应采取的操作[](/graph/api/resources/informationprotectionaction?view=graph-rest-beta)。 这包括元数据应用程序 [、](/graph/api/resources/metadataaction?view=graph-rest-beta) 水 [印](/graph/api/resources/addwatermarkaction?view=graph-rest-beta) 生成 [、保护](/graph/api/resources/protectbytemplateaction?view=graph-rest-beta)等操作。
 
 ### <a name="interpret-labels-applied-to-data"></a>解释应用于数据的标签
 
-使用已应用了敏感度标签 [](/graph/api/resources/metadataaction?view=graph-rest-beta)元数据的信息的应用程序可以使用 **extractLabel** API 将标签元数据解析为Microsoft 信息保护 [标签](/graph/api/resources/informationprotectionlabel.md?view=graph-rest-beta)。 使用标签可标识应用程序在处理或使用已标记数据时应该采取的操作。 
+使用已应用了敏感度标签 [](/graph/api/resources/metadataaction?view=graph-rest-beta)元数据的信息的应用程序可以使用 **extractLabel** API 将标签元数据解析为Microsoft 信息保护 [敏感度标签](/graph/api/resources/informationprotectionlabel.md?view=graph-rest-beta)。 使用标签可标识应用程序在处理或使用已标记数据时应该采取的操作。 
 
 ## <a name="api-reference"></a>API 参考
 

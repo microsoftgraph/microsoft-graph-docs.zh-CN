@@ -1,16 +1,16 @@
 ---
 title: conversationMember 资源类型
 description: 表示对话中的用户。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akjo
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 73d7e7526c870887edbade4555b3a699e458183f3b3753176574448525997105
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 52b71c62e203bb1adba7c14f9bf72681ff4464a3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54155167"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067477"
 ---
 # <a name="conversationmember-resource-type"></a>conversationMember 资源类型
 

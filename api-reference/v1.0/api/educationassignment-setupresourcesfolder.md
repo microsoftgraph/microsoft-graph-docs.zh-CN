@@ -1,16 +1,16 @@
 ---
 title: educationAssignment： setUpResourcesFolder
 description: 创建一SharePoint文件夹以上传给定 educationAssignment 的文件。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sharmas
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: bde62e08376c7fa2e4bcc151da6e6d5d0438aa84
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: de863d94f5f4e3504664a19effc1c62c826dda75
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52993167"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020064"
 ---
 # <a name="educationassignment-setupresourcesfolder"></a>educationAssignment： setUpResourcesFolder
 
@@ -33,7 +33,7 @@ ms.locfileid: "52993167"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc-9e13-44a2-a6ac-a53322006454/setUpResourcesFolder
+POST /education/classes/{id}/assignments/{id}/setUpResourcesFolder
 ```
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
@@ -59,7 +59,7 @@ POST /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005f
   "name": "educationassignment_setupresourcesfolder"
 }-->
 ```msgraph-interactive
-POST https://graph.microsoft.com/v1.0/education/classes/d38ffdea-da93-46ac-90ba-d568c6073075/assignments/ad8afb28-c138-4ad7-b7f5-a6986c2655a8/setUpResourcesFolder
+POST https://graph.microsoft.com/v1.0/education/classes/955e0bd5-52c2-41ad-b7e8-5b33a18c5e78/assignments/18d17255-3278-49fb-8da7-d095b7f610c4/setUpResourcesFolder
 Content-type: application/json
 
 {
@@ -98,7 +98,7 @@ Content-type: application/json
 Content-length: 279
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('955e0bd5-52c2-41ad-b7e8-5b33a18c5e78')/assignments/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('955e0bd5-52c2-41ad-b7e8-5b33a18c5e78')/assignments/$entity",
     "classId": "955e0bd5-52c2-41ad-b7e8-5b33a18c5e78",
     "displayName": "Unit 3 Essay",
     "closeDateTime": "2021-04-06T00:00:00Z",

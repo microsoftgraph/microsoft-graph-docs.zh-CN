@@ -2,15 +2,15 @@
 title: settingSourceType 枚举类型
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 023fd437c0e028aee539282dbdc6cd257bf3e25184c818ea4f58cdf46d0989c9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c16d0fb5893b506fb44764459d2251573f5c62d5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54218588"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067183"
 ---
 # <a name="settingsourcetype-enum-type"></a>settingSourceType 枚举类型
 

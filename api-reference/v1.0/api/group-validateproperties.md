@@ -1,16 +1,16 @@
 ---
 title: group： validateProperties
 description: 验证 Microsoft 365 组的显示名称或邮件昵称是否符合命名策略。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a9d39c99e63607ded7ecaa194c7002f32cf36890
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: abeca2f5459d0d298bf98d7218ec4ad9acb963fa
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680526"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074015"
 ---
 # <a name="group-validateproperties"></a>group： validateProperties
 
@@ -22,7 +22,7 @@ ms.locfileid: "52680526"
 1. 验证前缀和后缀命名策略
 2. 验证自定义禁止字策略
 
-此 API 仅返回遇到的第一个验证失败。 如果属性无法通过多次验证，则仅返回第一个验证失败。 但是，如果您仅验证前缀和后缀命名策略，您可以验证邮件昵称和显示名称并接收验证错误集合。 若要了解有关配置命名策略的更多信息，请参阅 [配置命名策略](/azure/active-directory/users-groups-roles/groups-naming-policy#configure-naming-policy-in-powershell)。
+此 API 仅返回遇到的第一个验证失败。 如果属性无法通过多个验证，则仅返回第一个验证失败。 但是，如果仅验证前缀和后缀命名策略，您可以验证邮件昵称和显示名称并接收验证错误集合。 若要了解有关配置命名策略的更多信息，请参阅配置 [命名策略](/azure/active-directory/users-groups-roles/groups-naming-policy#configure-naming-policy-in-powershell)。
 
 ## <a name="permissions"></a>权限
 

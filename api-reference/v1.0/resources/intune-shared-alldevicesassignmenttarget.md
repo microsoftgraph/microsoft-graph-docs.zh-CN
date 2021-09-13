@@ -2,15 +2,15 @@
 title: allDevicesAssignmentTarget 资源类型
 description: 表示租户中所有托管设备的赋值。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8f1a62b8fd0706bcc5452554a587f0c4adf78eab10139363cce6dfb4393bbd3c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 909cc87d09cfe998c08e43fd14c8cbef96496c08
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54146459"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019277"
 ---
 # <a name="alldevicesassignmenttarget-resource-type"></a>allDevicesAssignmentTarget 资源类型
 

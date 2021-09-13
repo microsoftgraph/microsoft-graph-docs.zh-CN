@@ -1,16 +1,16 @@
 ---
 title: mediaStream 资源类型
 description: mediaStream 类型
-localization_priority: Normal
+ms.localizationpriority: medium
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 2ffa02db859321c09cf329e6404dcb5d065f5a688b19291548205f15858f39ad
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ead756447a5733c5d062daa2099ab36198c84c58
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54252100"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049744"
 ---
 # <a name="mediastream-resource-type"></a>mediaStream 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54252100"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|averageAudioDegradation|双精度|流降级的网络平均意见得分平均值。 表示网络丢失和抖动对接收的音频质量的影响。|
+|averageAudioDegradation|双精度|流降级的网络平均意见得分的平均值。 表示网络丢失和抖动对接收的音频质量的影响。|
 |averageAudioNetworkJitter|期限|按 [RFC 3550][]指定的流的平均抖动，以 [ISO 8601][] 格式表示。 例如，1 秒表示为 ，其中"P"是持续时间指示符 `'PT1S'` ，"T"是时间指示符，"S"是第二个指示符。|
 |averageBandwidthEstimate|Int64|两个终结点之间的可用平均估计带宽（以位/秒为单位）。|
 |averageJitter|期限|按 [RFC 3550][]指定的流的平均抖动，以 [ISO 8601][] 格式表示。 例如，1 秒表示为 ，其中"P"是持续时间指示符 `'PT1S'` ，"T"是时间指示符，"S"是第二个指示符。|
@@ -34,9 +34,9 @@ ms.locfileid: "54252100"
 |averageVideoFrameRate|双精度|在会话持续期间计算的视频流每秒接收的平均帧数。|
 |averageVideoPacketLossRate|双精度|按 [RFC 3550][]中指定的，数据包丢失的平均百分数在会话持续时间内计算。|
 |endDateTime|DateTimeOffset|流结束时的 UTC 时间。 DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
-|lowFrameRateRatio|双精度|帧速率小于每秒 7.5 帧的通话的分数。|
+|lowFrameRateRatio|双精度|帧速率低于 7.5 帧/秒的通话的分数。|
 |lowVideoProcessingCapabilityRatio|双精度|客户端运行低于预期视频处理容量的 70% 的通话的一小部分。|
-|maxAudioNetworkJitter|期限|在会话期间，在 20 秒窗口中每个窗口计算的最大音频网络抖动，以 [ISO 8601][] 格式表示。 例如，1 秒表示为 ，其中"P"是持续时间指示符 `'PT1S'` ，"T"是时间指示符，"S"是第二个指示符。|
+|maxAudioNetworkJitter|期限|在会话期间，在 20 秒窗口中计算的最大音频网络抖动，以 [ISO 8601][] 格式表示。 例如，1 秒表示为 ，其中"P"是持续时间指示符 `'PT1S'` ，"T"是时间指示符，"S"是第二个指示符。|
 |maxJitter|期限|RFC 3550 中指定的流的最大抖动，以 [ISO 8601][] 格式表示。 例如，1 秒表示为 ，其中"P"是持续时间指示符 `'PT1S'` ，"T"是时间指示符，"S"是第二个指示符。|
 |maxPacketLossRate|双精度|流的最大数据包丢失率。|
 |maxRatioOfConcealedSamples|双精度|修复程序隐藏的数据包的最大比率。|
@@ -46,7 +46,7 @@ ms.locfileid: "54252100"
 |startDateTime|DateTimeOffset|流启动的 UTC 时间。 DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |streamDirection|microsoft.graph.callRecords.mediaStreamDirection|指示媒体流的方向。 可取值为：`callerToCallee`、`calleeToCaller`。|
 |streamId|String|流的唯一标识符。|
-|wasMediaBypassed|Boolean|如果媒体流绕过中介服务器，直接在客户端和 PSTN 网关/PBX 之间传输，则其为 True，否则为 false。|
+|wasMediaBypassed|Boolean|如果媒体流绕过中介服务器，直接在客户端与 PSTN 网关/PBX 之间传输，则其为 True，否则为 false。|
 
 
 ## <a name="json-representation"></a>JSON 表示形式

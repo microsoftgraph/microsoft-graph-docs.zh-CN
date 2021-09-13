@@ -2,14 +2,14 @@
 title: 聊天信息订阅许可证
 description: 聊天信息订阅许可证
 author: nkramer
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 68e0bf1cd9aad33670d724dc413d6533468130ebfca15f542b363ae5b8bc12f4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e990ed79184fa23aab6762395473e93484745446
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54225690"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59071614"
 ---
 # <a name="licenses-for-subscribing-to-chat-messages"></a>聊天信息订阅许可证
 

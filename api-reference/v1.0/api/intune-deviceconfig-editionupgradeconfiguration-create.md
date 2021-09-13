@@ -2,15 +2,15 @@
 title: 创建 editionUpgradeConfiguration
 description: 创建新的 editionUpgradeConfiguration 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 72679452374a4c89b3e146331c93157270042545ecb1059ff56adcbfc0b3fa95
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 23dbbdd8220eeba46ca599d7d64cd881231a9f3e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54130819"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59037703"
 ---
 # <a name="create-editionupgradeconfiguration"></a>创建 editionUpgradeConfiguration
 

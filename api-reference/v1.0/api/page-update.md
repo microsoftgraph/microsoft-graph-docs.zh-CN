@@ -1,16 +1,16 @@
 ---
 title: 更新页面
 description: 更新页面OneNote内容。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 846461d1415d3748059a0c93fe5dc0866dccdc4e
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 9f40dbaca37d50873bfb22564dbefdaa77f8e91b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788057"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045012"
 ---
 # <a name="update-page"></a>更新页面
 

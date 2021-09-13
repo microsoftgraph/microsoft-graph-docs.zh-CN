@@ -1,16 +1,16 @@
 ---
 title: 列出 identityProvider
 description: 获取为租户配置且派生自 identityProviderBase 的标识提供程序资源的集合。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: f121e8ad12345b1a224cfd362b4c23779ac60f5e
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: b83620f6b8dc54f13d776ca22ec6f6650d6285fe
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58668003"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045763"
 ---
 # <a name="list-identityproviders"></a>列出 identityProvider
 命名空间：microsoft.graph

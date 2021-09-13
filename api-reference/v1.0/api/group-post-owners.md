@@ -1,16 +1,16 @@
 ---
 title: 添加组所有者
 description: 将用户添加到组所有者。所有者是一组具有 group 对象修改权限的非管理员用户。
-localization_priority: Priority
+ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 485f571d1d581d8448005c9a635226bfc7767aa4
-ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
+ms.openlocfilehash: 861c0d62bc57f88c0e5ad8cc8435d1d8c5b26c12
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58396723"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074257"
 ---
 # <a name="add-group-owner"></a>添加组所有者
 

@@ -2,15 +2,15 @@
 title: 获取应用程序
 description: 获取 application 对象的属性和关系。
 author: sureshja
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: b5dcf3845e8477f5b3795b481b97cfad988e09c9
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+ms.openlocfilehash: f6b8332b072fa29feabf60083712086990ade28b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53351305"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59023050"
 ---
 # <a name="get-application"></a>获取应用程序
 

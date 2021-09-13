@@ -1,15 +1,15 @@
 ---
 title: 通过 Microsoft Graph 使用 Excel 工作簿函数
 description: 可以使用以下语法调用任何工作簿函数：`POST /me/drive/root/workbook/functions/{function-name}`。 使用 JSON 对象提供正文中的函数参数。 该函数产生 `value`，所有 `error` 字符串均返回到函数结果对象中。 `null` 的 `error` 值表示该函数执行成功。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 39b93c633951ffe8997a66132a830673459776963d5d537c61aa67fb29a41fe0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 629f0d79503b89080c48c57ec83989060f794647
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54205157"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143578"
 ---
 # <a name="use-workbook-functions-in-excel-with-microsoft-graph"></a>通过 Microsoft Graph 使用 Excel 工作簿函数
 

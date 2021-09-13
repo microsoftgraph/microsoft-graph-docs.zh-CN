@@ -2,15 +2,15 @@
 title: 列出实例
 description: 从实例导航属性获取 accessReviewInstance 资源。
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 4cf4701e99754e80e59700fcf7542c5496812430
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 948741089d6608ab28bd5e85657aa4017f1b370d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53208609"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59008522"
 ---
 # <a name="list-instances"></a>列表实例
 命名空间：microsoft.graph

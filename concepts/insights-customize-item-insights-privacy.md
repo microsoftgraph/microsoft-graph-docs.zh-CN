@@ -2,15 +2,15 @@
 title: 自定义 Microsoft Graph 中的项目见解隐私
 description: 组织级别上自定义项见解的概述
 author: simonhult
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 55d045f8318848fa1eabbf677a923d5cbf19ec7174289dc83901fcf725e4dab0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b60a0699493e72b70999388b019de773ae9e4677
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54227244"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136031"
 ---
 # <a name="customizing-item-insights-privacy-in-microsoft-graph-preview"></a>自定义 Microsoft Graph 中的项目见解隐私（预览版）
 

@@ -2,15 +2,15 @@
 title: Microsoft Graph 连接器概述
 description: Microsoft Graph 连接器概述
 author: mecampos
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 9bac47cfcc766b5174a2cf39ac7c1c26cdebfce9
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: d17c187ed45194c3f99572202d50c7339e70f730
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453588"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139308"
 ---
 # <a name="microsoft-graph-connectors-overview"></a>Microsoft Graph 连接器概述
 

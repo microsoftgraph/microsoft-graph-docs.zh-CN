@@ -2,15 +2,15 @@
 title: 从已删除项目永久删除项目
 description: 永久删除已删除的项目中的项目
 author: keylimesoda
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 090f41ed4f6bc1410dccede72fe432e38320de0a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 1a2c936997d97bf4e3eba62ea73746c6a06c08d3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053207"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59033063"
 ---
 # <a name="permanently-delete-item"></a>永久删除项目
 

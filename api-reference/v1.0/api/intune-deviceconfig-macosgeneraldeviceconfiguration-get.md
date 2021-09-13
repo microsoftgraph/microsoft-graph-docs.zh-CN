@@ -2,15 +2,15 @@
 title: 获取 macOSGeneralDeviceConfiguration
 description: 读取 macOSGeneralDeviceConfiguration 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d612e681eb7861126397db6ef237f183403b0accdc8b32f35da03d280a6a740f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4d4ce525db02cf6337424c1c81a66b261c9d3885
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54245665"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063256"
 ---
 # <a name="get-macosgeneraldeviceconfiguration"></a>获取 macOSGeneralDeviceConfiguration
 

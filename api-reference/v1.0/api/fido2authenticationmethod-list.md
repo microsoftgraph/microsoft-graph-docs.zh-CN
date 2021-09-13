@@ -2,15 +2,15 @@
 title: 列出 fido2AuthenticationMethod
 description: 检索 fido2AuthenticationMethod 对象及其属性的列表。
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 2d556654059c3ae1a52b240b084882be064f30d11338042f8e28c970f7eb72ec
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7f95f81827f394962b8844bc367fb322e0ff1915
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54170088"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045999"
 ---
 # <a name="list-fido2authenticationmethod"></a>列出 fido2AuthenticationMethod
 命名空间：microsoft.graph

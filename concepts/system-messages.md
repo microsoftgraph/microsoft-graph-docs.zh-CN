@@ -2,15 +2,15 @@
 title: 使用 Microsoft Graph API 获取 Microsoft Teams 的系统消息
 description: 了解 Microsoft Teams 如何使用 Microsoft Graph API 为事件生成系统消息。
 author: RamjotSingh
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 6bcda1a589da647944f88734bc70bed0abea68a1
-ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
+ms.openlocfilehash: 306c45ecf79454e01353101fbf1196304935932f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58397045"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59138986"
 ---
 # <a name="get-system-messages-for-microsoft-teams-using-microsoft-graph-apis"></a>使用 Microsoft Graph API 获取 Microsoft Teams 的系统消息
 

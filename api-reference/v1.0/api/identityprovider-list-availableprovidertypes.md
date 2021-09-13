@@ -1,18 +1,18 @@
 ---
 title: 列出 availableProviderTypes
 description: 检索目录中所有可用的标识提供程序类型。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: b39f614b0f59aa5589c9642e132950e991b20c23
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 22b9c5e93f7c84e14eb4d1d1b9c808d377f6b432
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53580637"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59073849"
 ---
-# <a name="list-availableprovidertypes-deprecated"></a>列出已弃 (availableProviderTypes) 
+# <a name="list-availableprovidertypes-deprecated"></a>列出已弃 (的 availableProviderTypes) 
 命名空间：microsoft.graph
 
 [!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]

@@ -1,16 +1,16 @@
 ---
-title: 成员
+title: Members
 description: '描述团队的可见性。 '
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: enumPageType
-ms.openlocfilehash: 7eb08b9ff15f6f673abac14befd64e8e56fca58d704dcbcfef5d9983194d293e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f875ffd75256798d7e52e2728b29f278540865de
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54231463"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59052851"
 ---
 # <a name="teamvisibilitytype-enum-type"></a>teamVisibilityType 枚举类型
 

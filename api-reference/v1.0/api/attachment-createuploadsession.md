@@ -1,16 +1,16 @@
 ---
 title: attachment： createUploadSession
 description: 创建上载会话以迭代上载文件的范围，以便将文件附加到指定消息。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c9eb3eba452a5da377a9bc00fd1be527aeb5aa20
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: bb369da023b37a220ec443f290626effddabde50
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58250902"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046412"
 ---
 # <a name="attachment-createuploadsession"></a>attachment： createUploadSession
 
@@ -22,7 +22,7 @@ ms.locfileid: "58250902"
 
 作为响应的一部分，此操作返回可用于后续顺序查询的上载 `PUT` URL。 通过每个操作的请求 `PUT` 标头，可以指定要上载的字节的准确范围。 这允许恢复传输，以防在上载过程中网络连接中断。 
 
-以下是使用上载会话将文件附加到Outlook项的步骤：
+以下是使用上传会话将文件附加到Outlook项的步骤：
 
 1. 创建上载会话。
 2. 在此上载会话中，每次) 以迭代方式上载字节范围 (最多上载 4 MB，直到上载文件的所有字节，并且文件附加到指定项。
@@ -65,7 +65,7 @@ POST /me/messages/{id}/attachments/createUploadSession
 POST /users/{id | userPrincipalName}/messages/{id}/attachments/createUploadSession
 ```
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称          | 说明   |
 |:--------------|:--------------|
@@ -78,11 +78,11 @@ POST /users/{id | userPrincipalName}/messages/{id}/attachments/createUploadSessi
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|AttachmentItem|[attachmentItem](../resources/attachmentitem.md)|表示要上载和附加的项目的属性。 至少应指定附件 () 、名称和文件大小 `file` 。|
+|AttachmentItem|[attachmentItem](../resources/attachmentitem.md)|表示要上载和附加的项目的属性。 至少应指定附件 `file` () 、名称和文件大小。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和新 `201 Created` [uploadSession](../resources/uploadsession.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和新 [uploadSession](../resources/uploadsession.md) 对象。
 
 >**注意**： 
 >

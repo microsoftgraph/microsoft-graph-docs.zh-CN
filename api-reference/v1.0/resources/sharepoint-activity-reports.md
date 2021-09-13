@@ -1,16 +1,16 @@
 ---
 title: SharePoint 活动报表
 description: SharePoint 活动报表可用于获取每个有权使用 SharePoint 的用户的活动，具体是以用户与文件的交互为依据。 也可以查看以共享文件数为依据的协作级别。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: 4c67655dce0bbbe834051a536cb6917111c53fe0729f5430e0558886529edd7a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1985fc2b62a3dc18418bd62c1bba06970388b9ce
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54231472"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035603"
 ---
 # <a name="sharepoint-activity-reports"></a>SharePoint 活动报表
 

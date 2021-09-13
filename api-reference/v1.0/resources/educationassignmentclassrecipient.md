@@ -1,16 +1,16 @@
 ---
 title: educationAssignmentClassRecipient 资源类型
 description: assignment.assignTo 属性中使用的资源类型。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 88ed1cf88cbf357ca38de335c3a672ac1887ca7cc0d29fef5f148ee415b3c60a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1008045b26e8094c87ed279ee0c0e172da7e43d8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54149959"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036751"
 ---
 # <a name="educationassignmentclassrecipient-resource-type"></a>educationAssignmentClassRecipient 资源类型
 

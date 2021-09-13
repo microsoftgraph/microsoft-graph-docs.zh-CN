@@ -2,15 +2,15 @@
 author: swapnil1993
 title: 删除 columnDefinition
 description: 从网站、列表或内容类型中删除列。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: e367741d7225c0cee80626392458158de37cfb88
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 7954e08647be441d399a83ca10b89c7c60a74864
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696561"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59080195"
 ---
 # <a name="delete-columndefinition"></a>删除 columnDefinition
 命名空间：microsoft.graph
@@ -54,6 +54,8 @@ DELETE /sites/{site-id}/lists/{list-id}/contentTypes/{contentType-id}/columns/{c
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_columns_from_contenttype"
@@ -63,6 +65,24 @@ DELETE /sites/{site-id}/lists/{list-id}/contentTypes/{contentType-id}/columns/{c
 ```http
 DELETE https://graph.microsoft.com/v1.0/sites/{site-id}/contentTypes/{contentType-id}/columns/{column-id}
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-columns-from-contenttype-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-columns-from-contenttype-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-columns-from-contenttype-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-columns-from-contenttype-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 
@@ -78,4 +98,4 @@ HTTP/1.1 204 No Content
 [list]: ../resources/list.md
 [columndefinition]: ../resources/columndefinition.md
 [contentType]: ../resources/contentType.md
-[网站]: ../resources/site.md
+[site]: ../resources/site.md

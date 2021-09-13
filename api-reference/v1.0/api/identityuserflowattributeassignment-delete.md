@@ -2,15 +2,15 @@
 title: 删除 userAttributeAssignment
 description: 删除 identityUserFlowAttributeAssignment 对象。
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 8dab44862a1859851a4c3fb9b52dcd8f3692e8c1
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 54609ad8129c571c3426d4195ee408b1b15c79e2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51920771"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045677"
 ---
 # <a name="delete-userattributeassignment"></a>删除 userAttributeAssignment
 

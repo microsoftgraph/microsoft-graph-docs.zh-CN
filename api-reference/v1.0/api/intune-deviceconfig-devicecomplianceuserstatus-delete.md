@@ -2,15 +2,15 @@
 title: 删除 deviceComplianceUserStatus
 description: 删除 deviceComplianceUserStatus。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 891a8f752c2aeb3f62646055b1079fca019a9164ad8e4c0ffc052d9b32799d86
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5ab03e88438f54991dfdd180293da1e8040a3a1d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54187243"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045327"
 ---
 # <a name="delete-devicecomplianceuserstatus"></a>删除 deviceComplianceUserStatus
 

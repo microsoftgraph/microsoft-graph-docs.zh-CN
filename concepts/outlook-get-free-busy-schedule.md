@@ -2,14 +2,14 @@
 title: 获取用户和资源的忙/闲日程安排
 description: 在工作或学校设置中，一种常见方案是查看用户何时有空参加会议，或浏览团队、会议室或设备在一段时间内的状态。
 author: tariq-sharif
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 865b67e40dbf11f9e6d4a2d8b0cf92e49353d0257c7605a8fc998d9e134e080f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2a7a4fdfb61e5a769836bf8e85b06d1baabe0c63
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54157905"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139056"
 ---
 # <a name="get-freebusy-schedule-of-users-and-resources"></a>获取用户和资源的忙/闲日程安排
 

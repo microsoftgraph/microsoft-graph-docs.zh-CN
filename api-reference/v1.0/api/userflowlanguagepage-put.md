@@ -2,15 +2,15 @@
 title: 更新 userFlowLanguagePage
 description: 更新 userFlowLanguagePage 对象中的值。
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 4f38a29a7471eb48d039ded52f7ac4f24a3d17bf
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 56d0bc3be61661cfda89f1c12cf5b3e4865d2cc6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51920445"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021818"
 ---
 # <a name="update-userflowlanguagepage"></a>更新 userFlowLanguagePage
 
@@ -31,7 +31,7 @@ ms.locfileid: "51920445"
 工作或学校帐户需要属于以下角色之一：
 
 * 全局管理员
-* 外部标识用户流管理员
+* 外部标识用户Flow管理员
 
 ## <a name="http-request"></a>HTTP 请求
 

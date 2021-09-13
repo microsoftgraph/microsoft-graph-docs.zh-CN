@@ -2,15 +2,15 @@
 title: 获取呼叫
 description: 检索 call 对象的属性和关系。
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 6af7e3e67186eff92449bcbbf8f5b87ebbf5a7ec
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3415bdd37c844440d315838beaccd36154ad8aab
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52035923"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59053782"
 ---
 # <a name="get-call"></a>获取呼叫
 

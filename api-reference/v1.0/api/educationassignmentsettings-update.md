@@ -2,15 +2,15 @@
 title: 更新 educationAssignmentSettings
 description: 更新 educationAssignmentSettings 对象的属性。
 author: sharad-sharma-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 7c251885de43022f8e3065c7004dab33d4fa78a8
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 514a78995215ad1b803e10deeec04c368f0d66af
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52992969"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074463"
 ---
 # <a name="update-educationassignmentsettings"></a>更新 educationAssignmentSettings
 命名空间：microsoft.graph
@@ -49,7 +49,7 @@ PATCH /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignmentSettings
 
 |属性|类型|说明|
 |:---|:---|:---|
-|submissionAnimationDisabled|布尔|指示是否显示打开的庆祝动画。 的值 `true` 指示不会显示动画。 默认值为 `false`。|
+|submissionAnimationDisabled|Boolean|指示是否显示打开的庆祝动画。 的值 `true` 指示不会显示动画。 默认值为 `false`。|
 
 
 

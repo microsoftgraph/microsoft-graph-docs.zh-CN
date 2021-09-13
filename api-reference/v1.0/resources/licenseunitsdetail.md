@@ -1,16 +1,16 @@
 ---
 title: licenseUnitsDetail 资源类型
 description: '**subscribedSku** 实体的 prepaidUnits 属性为 **licenseUnitsDetail** 类型。'
-localization_priority: Normal
+ms.localizationpriority: medium
 author: 'michaelcurnutt '
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: af038eab4589fcaf98743b34cdc1ce6f43b09bd7b511d1f3a05862862155fa32
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3ffa692611bd1414d04f55200da8d4f398d34719
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54135062"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036163"
 ---
 # <a name="licenseunitsdetail-resource-type"></a>licenseUnitsDetail 资源类型
 

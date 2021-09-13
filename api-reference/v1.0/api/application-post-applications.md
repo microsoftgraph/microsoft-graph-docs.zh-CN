@@ -2,15 +2,15 @@
 title: 创建应用程序
 description: 创建新的应用程序。
 author: sureshja
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
-ms.openlocfilehash: 10d4dcff72e26e274e88b85c5e06a5ecda1de6f0
-ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
+ms.openlocfilehash: 45c06212c1c791d10f28e4c3b5f43d5c8720dc1f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58490537"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59023036"
 ---
 # <a name="create-application"></a>创建应用程序
 

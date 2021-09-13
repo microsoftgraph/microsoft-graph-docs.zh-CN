@@ -1,14 +1,14 @@
 ---
 title: Microsoft 服务中的人员Graph Toolkit
 description: 可以使用 Web 组件通过用户的照片或缩写显示一组 `mgt-people` 人员或联系人。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: nmetulev
-ms.openlocfilehash: 356b13bac27ba11c294694f8fa614af192e5871ef04433b4033d9dfd9c481330
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c93de8e60260d654624ae84896953dffe8f2e0b4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54171957"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59083815"
 ---
 # <a name="people-component-in-the-microsoft-graph-toolkit"></a>Microsoft 服务中的人员Graph Toolkit
 
@@ -18,7 +18,7 @@ ms.locfileid: "54171957"
 
 ## <a name="example"></a>示例
 
-以下示例显示使用组件显示的一组 `mgt-people` 人员。 可以使用代码编辑器查看 [属性如何](#properties) 更改组件的行为。
+以下示例显示使用组件显示的一组 `mgt-people` 人员。 可以使用代码编辑器查看属性 [如何](#properties) 更改组件的行为。
 
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-people--people&source=docs" height="350"></iframe>
 
@@ -34,12 +34,12 @@ ms.locfileid: "54171957"
 | people | people | 用于获取或设置组件呈现的联系人列表的一组人员。 使用此属性访问组件加载的人。 设置此值以加载您自己的人员。 |
 | group-id | groupId | 从特定 Microsoft Graph检索相应 ID 中的人员。 |
 | user-ids | userIds | 给定一组 Microsoft `ids` Graph，组件将呈现这些用户。  |
-| 人员查询 | peopleQueries | 给定一组人员查询 (、更新、电子邮件) ，组件将呈现这些用户。 |
+| 人员查询 | peopleQueries | 给定一组人员查询 (、upns、电子邮件) ，组件将呈现这些用户。 |
 | person-card | personCard | 一个枚举，用于确定激活飞出面板或 所需的用户 `hover` 操作 `click` 。 默认值为 `none`。 |
 | show-presence | showPresence | 一个布尔值，用于确定是否在人像上显示个人状态锁屏提醒。 |
 | resource | resource | 从 Microsoft 获取的资源Graph (例如 `/me/people` ，) 。 |
 | scopes | scopes | 字符串的可选数组（如果使用 属性）或逗号分隔的范围（如果使用 属性）。 组件将使用这些作用域 (支持) ，以确保用户已同意适当的权限。 |
-| version | version | 进行 GET 请求时使用的可选 API 版本。 默认值为“`v1.0`”。  |
+| version | version | 进行 GET 请求时使用的可选 API 版本。 默认值为 `v1.0`。  |
 
 以下示例设置要显示的最大人数。
 
@@ -90,7 +90,7 @@ mgt-people {
 
 ## <a name="microsoft-graph-permissions"></a>Microsoft Graph 权限
 
-此组件使用以下 Microsoft Graph API 和权限：
+此组件使用下列 Microsoft Graph API 和权限：
 
 | 配置 | 权限 | API
 | --- | ---------- | ------- |
@@ -109,7 +109,7 @@ mgt-people {
 
 ## <a name="cache"></a>缓存
 
-|对象存储|缓存数据|说明|
+|对象存储|缓存数据|备注|
 |---------|-----------|-------|
 |`people`|有关与查询匹配的人的信息|指定时 `resource` 使用|
 |`users`|有关与查询匹配的用户的信息|在 `groupId` 、 `userIds` 或 `peopleQueries` 未指定任何属性时使用|

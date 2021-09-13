@@ -1,16 +1,16 @@
 ---
 title: 创建组设置
 description: 基于 groupSettingTemplates 中可用的模板创建新设置。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: aa85af1c52ee2d62de000873806c34ea61a3a501
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 6734fbf028ff52dcd7e614ad18edfaa0815a9fc6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514710"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056590"
 ---
 # <a name="create-a-group-setting"></a>创建组设置
 

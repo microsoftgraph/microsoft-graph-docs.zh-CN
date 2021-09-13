@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: 更改共享权限
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 通过修补 permission 资源更新共享权限的属性。
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 1c3b8c4fdd9b0306aef909525c87facde6bdc6de
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 60d59547d77d30c9be267cf2d880a8c4f3917e78
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240380"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072825"
 ---
 # <a name="update-sharing-permission"></a>更新共享权限
 
@@ -60,10 +60,10 @@ PATCH /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 
 | 权限类型        | 属性 | 类型              | 说明                   |
 |:-----------------------|:---------|:------------------|:------------------------------|
-| 用户                   | 角色    | String 集合 | 权限类型的数组。 |
-| 匿名共享链接 | expirationDateTime | DateTimeOffset | 用于权限过期时间的日期时间Offset 的 yyyy-MM-ddTHH：mm：ssZ 的格式。 |
+| User                   | 角色    | String 集合 | 权限类型的数组。 |
+| 匿名共享链接 | expirationDateTime | DateTimeOffset | DateTimeOffset 的 yyyy-MM-ddTHH：mm：ssZ 格式，表示权限的过期时间。 |
 
-### <a name="remarks"></a>说明
+### <a name="remarks"></a>备注
 不受支持的权限修改包括：
 - 组织共享链接
 - 人员共享链接
@@ -131,7 +131,7 @@ Content-type: application/json
 
 ## <a name="error-responses"></a>错误响应
 
-请参阅[错误响应][error-response]主题，详细了解错误返回方式。
+请阅读 [错误响应][error-response] 主题，了解有关如何返回错误的详细信息。
 
 [error-response]: /graph/errors
 

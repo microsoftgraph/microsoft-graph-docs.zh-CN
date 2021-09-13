@@ -2,15 +2,15 @@
 title: vppTokenSyncStatus 枚举类型
 description: 与 Apple Volume Purchase Program 令牌关联的可能同步状态。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9be9c7752b74d22050b879317f6f7d68e69420361354b6e6ad81140aff1044e4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 98904e3d8dcb28a43954474953fdf58b02265562
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54169492"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019284"
 ---
 # <a name="vpptokensyncstatus-enum-type"></a>vppTokenSyncStatus 枚举类型
 

@@ -2,15 +2,15 @@
 author: JeremyKelley
 title: listItem 资源
 description: 表示 SharePoint 列表中的项目。
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 9fdce383b28ee71a682e920011787b191012e1a52ef013aa585fac244dad2c04
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 851b506b029d05bfac2bcecfcce57d9e3ce8684f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54130021"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021461"
 ---
 # <a name="listitem-resource"></a>listItem 资源
 
