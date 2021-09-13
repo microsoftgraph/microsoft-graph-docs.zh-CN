@@ -1,16 +1,16 @@
 ---
 title: passwordProfile 资源类型
 description: 包含与用户关联的密码配置文件。用户实体的 **passwordProfile** 属性是一个 **passwordProfile** 对象。
-localization_priority: Priority
+ms.localizationpriority: high
 author: eketo-msft
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 7288d2f737c0e04be9919ba0b2412df2ba1ebda8c377e1c66a3d6a91992af858
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e05221a07fcae5c60897e0b56ae28cc3642ff965
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189399"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117940"
 ---
 # <a name="passwordprofile-resource-type"></a>passwordProfile 资源类型
 

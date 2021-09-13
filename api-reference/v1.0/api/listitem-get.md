@@ -2,15 +2,15 @@
 author: JeremyKelley
 title: 获取 listItem
 description: 返回 SharePoint 列表中某个项的元数据。
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 9700f6b18271cc73b0a51d06dc7f8fccdebecb10
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: e1b983e92cc20792fb1bce785acf4c0de5adb6f9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50473740"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110373"
 ---
 # <a name="get-listitem"></a>获取 listItem
 

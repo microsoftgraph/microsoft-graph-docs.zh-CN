@@ -1,16 +1,16 @@
 ---
 title: 更新 schemaExtension
 description: 更新指定 schemaExtension 的定义中的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: 4e3fbf4c9acd3512031ca29dd502e225ece2f133
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 2cfe89bb5ece2c691976e21a81bcbe33680713a1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788050"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59099272"
 ---
 # <a name="update-schemaextension"></a>更新 schemaExtension
 
@@ -24,9 +24,9 @@ ms.locfileid: "52788050"
 
 此更新适用于扩展的 **targetTypes** 属性中包含的所有资源。 这些资源是支持 [的资源类型之一](/graph/extensibility-overview#supported-resources)。
 
-对于委派流，只要已登录用户拥有的应用程序的 **扩展** 的所有者属性设置为 **appId，** 登录用户就可以更新架构扩展。 该应用程序可以是最初创建扩展的应用程序，或者是登录用户拥有的一些其他应用程序。 
+对于委派流，登录用户可以更新架构扩展，只要该扩展的所有者属性设置为已登录用户拥有的应用程序的 **appId。** 该应用程序可以是最初创建扩展的应用程序，或者是登录用户拥有的一些其他应用程序。 
 
-owner 属性 **的** 此条件允许登录用户通过他们并不拥有的其他应用程序（如 Microsoft Graph Explorer）进行更新。 使用 Graph Explorer 更新 **schemaExtension** 资源时，请包含PATCH 请求正文中的 owner 属性。 有关详细信息，请参阅 Microsoft [](/graph/known-issues#extensions) Graph[已知问题中的扩展Graph。](/graph/known-issues)
+owner 属性 **的** 此条件允许登录用户通过他们并不拥有的其他应用程序（如 Microsoft Graph Explorer）进行更新。 使用 Graph Explorer 更新 **schemaExtension** 资源时，请包含 PATCH 请求正文中的 owner 属性。 有关详细信息，请参阅 Microsoft [](/graph/known-issues#extensions) Graph[已知问题中的扩展Graph。](/graph/known-issues)
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -60,7 +60,7 @@ PATCH /schemaExtensions/{id}
 |:---------------|:--------|:----------|
 |说明|String|架构扩展的说明。|
 |properties|[extensionSchemaProperty](../resources/extensionschemaproperty.md) 集合|构成架构扩展定义的属性名称和类型的集合。 只允许进行增量更改。 |
-|状态|String|架构扩展的生命周期状态。 创建时的初始状态为 **InDevelopment**。 可能的状态转换从"开发 **中"转换** 到 **"** 可用"和 **"** 可用"**到"已弃用"。**|
+|status|String|架构扩展的生命周期状态。 创建时的初始状态为 **InDevelopment**。 可能的状态转换从"开发 **中"转换为****"可用**"和 **"** 可用"**到"已弃用"。**|
 |targetTypes|String collection|架构扩展适用的支持扩展的 Microsoft Graph 类型集。  只允许进行增量更改。|
 
 ## <a name="response"></a>响应

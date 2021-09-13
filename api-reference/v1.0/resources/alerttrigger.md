@@ -2,15 +2,15 @@
 title: alertTrigger 资源类型
 description: 包含有关触发检测的属性的信息， (警报实体中的属性) 。
 author: preetikr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: a25f3b624d6e4d725386958a3c26c739276f4aaff207cf2c9bca50f196754d3a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 78cfe6afd2495291dd3d4b358ab500b41dab25d0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189877"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59089877"
 ---
 # <a name="alerttrigger-resource-type"></a>alertTrigger 资源类型
 

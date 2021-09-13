@@ -1,16 +1,16 @@
 ---
 title: Yammer 活动报表
 description: Yammer 活动报表可用于了解组织的 Yammer 交互级别，具体是以整个组织中生成的活动数以及在 Yammer 上发布、赞和阅读消息的唯一用户数为依据。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: 957c007fb2c9f1525578fadf8e6b9b3f4997a0735696717e68ac3193db9169bc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 73204077e6e1b529c95e6f04a92291fe5229ef9c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54141257"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59083906"
 ---
 # <a name="yammer-activity-reports"></a>Yammer 活动报告
 

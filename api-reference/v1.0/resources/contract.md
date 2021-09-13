@@ -1,16 +1,16 @@
 ---
 title: 合同资源类型
 description: 表示合作伙伴租户与客户租户的现有合作关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: adimitui
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 82ca68723aaefceaa2ed852bd663822bfb0830ab20a97d62e7b155f850671621
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f909b2b861f2b0c6da8f5f3c9a918599922fbac6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54243593"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049546"
 ---
 # <a name="contract-resource-type"></a>合同资源类型
 
@@ -31,7 +31,7 @@ ms.locfileid: "54243593"
 |contractType|String|合同类型。 可能的值是  `SyndicationPartner` `BreadthPartner` `ResellerPartner` ：、、。 请参阅下表中的 [，了解](#contracttype-values)。|
 |customerId|Guid|此合作关系引用的客户租户的唯一标识符。 对应于客户租户的组织资源的 id 属性。 |
 |defaultDomainName|String|客户租户的默认域名的副本。 建立与客户的合作关系后，即会进行复制。 如果客户租户的默认域名发生更改，将不会自动更新它。|
-|displayName|String|客户租户显示名称。 建立与客户的合作关系后，即会进行复制。 如果客户租户的订阅发生更改，将不会显示名称更新。|
+|displayName|String|客户租户显示名称。 建立与客户的合作关系后，即会进行复制。 如果客户租户的租户帐户发生更改，显示名称更新。|
 |id|String| 合作关系的唯一标识符。 键，只读 |
 
 ### <a name="contracttype-values"></a>contractType 值

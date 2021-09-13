@@ -2,15 +2,15 @@
 title: 更新 enrollmentTroubleshootingEvent
 description: 更新 enrollmentTroubleshootingEvent 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 802f42d61718804c83d3888ee80766173c7153bd
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: be7f68b1745158e585b7632ff7fde50b8f3caa93
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58259158"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59079398"
 ---
 # <a name="update-enrollmenttroubleshootingevent"></a>更新 enrollmentTroubleshootingEvent
 

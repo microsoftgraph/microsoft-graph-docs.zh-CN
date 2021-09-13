@@ -2,15 +2,15 @@
 title: TableRow 资源类型
 description: 表示表中的行。
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 0b9d9d07a6c2382194458913217b414a30000150bf61a2e4771cb9e8a27d53b8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 113e81f4730f093962a5ec5e0a2a2f19aa6fc57e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189273"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134393"
 ---
 # <a name="tablerow-resource-type"></a>TableRow 资源类型
 

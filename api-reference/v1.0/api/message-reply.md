@@ -1,16 +1,16 @@
 ---
 title: 消息：答复
 description: '使用 JSON 或 MIME 格式答复邮件的发件人。 '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c0b39d15f5c77fe141f4a75bb3beb7ac0852a255
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 044f5493b7a7c91f1be0a755261f3cc34af50aa2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52869917"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016104"
 ---
 # <a name="message-reply"></a>消息：答复
 
@@ -59,9 +59,9 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/reply
 | 参数    | 类型   | 说明 |
 |---------------|-------|---------|
 | 注释 | String | 要包含的注释。可以为空字符串。 |
-| message | [message](../resources/message.md) | 回复邮件中要更新的任何可写属性。 |
+| 消息 | [message](../resources/message.md) | 回复邮件中要更新的任何可写属性。 |
 
-指定 MIME 格式的正文时，请提供 MIME 内容以及适用的 Internet 邮件头，所有邮件头在请求正文中都以 **base64** 格式进行编码。 此方法使用原始邮件的发件人作为收件人。
+当指定 MIME 格式的正文时，向 MIME 内容提供适用的 Internet 邮件头，所有邮件头在请求正文中都以 **base64** 格式进行编码。 此方法使用原始邮件的发件人作为收件人。
 
 ## <a name="response"></a>响应
 

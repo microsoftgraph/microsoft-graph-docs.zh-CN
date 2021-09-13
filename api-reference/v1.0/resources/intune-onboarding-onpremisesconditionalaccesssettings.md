@@ -2,15 +2,15 @@
 title: onPremisesConditionalAccessSettings 资源类型
 description: 表示租户的 Exchange 本地条件访问设置的单例实体。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0b037c564dc4c953284df8933a5cd040f30e03ee2ac0f9da305860b53f7d08b9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d05378621144f46c9d789cb77ad9d3c8cc013646
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54246770"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094273"
 ---
 # <a name="onpremisesconditionalaccesssettings-resource-type"></a>onPremisesConditionalAccessSettings 资源类型
 

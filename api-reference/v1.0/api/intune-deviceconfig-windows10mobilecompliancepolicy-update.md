@@ -2,15 +2,15 @@
 title: 更新 windows10MobileCompliancePolicy
 description: 更新 windows10MobileCompliancePolicy 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cb0b57719c8740a3960e03b2ece9d8282dc76634613ee925bf4e9df0979947b7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bab3c3b8665c8901a439cba94ba690348e88d4f4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54243936"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105074"
 ---
 # <a name="update-windows10mobilecompliancepolicy"></a>更新 windows10MobileCompliancePolicy
 

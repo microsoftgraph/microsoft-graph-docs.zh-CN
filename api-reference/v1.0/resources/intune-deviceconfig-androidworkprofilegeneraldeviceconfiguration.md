@@ -2,15 +2,15 @@
 title: androidWorkProfileGeneralDeviceConfiguration 资源类型
 description: Android 工作配置文件常规设备配置。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4406aedfea25e4b2a909fb88fef398eefd5190a9cb795556320d5e88051c9f05
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e00be6ea028ea2cf77f52af68679f52d6647cec1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54231704"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136577"
 ---
 # <a name="androidworkprofilegeneraldeviceconfiguration-resource-type"></a>androidWorkProfileGeneralDeviceConfiguration 资源类型
 
@@ -26,7 +26,7 @@ Android 工作配置文件常规设备配置。
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列出 androidWorkProfileGeneralDeviceConfigurations](../api/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-list.md)|[androidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md) 集合|列出 [androidWorkProfileGeneralDeviceConfiguration 对象的属性和](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md) 关系。|
+|[列出 androidWorkProfileGeneralDeviceConfigurations](../api/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-list.md)|[androidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md) 集合|列出 [androidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md) 对象的属性和关系。|
 |[获取 androidWorkProfileGeneralDeviceConfiguration](../api/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-get.md)|[androidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md)|读取 [androidWorkProfileGeneralDeviceConfiguration 对象的属性和](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md) 关系。|
 |[创建 androidWorkProfileGeneralDeviceConfiguration](../api/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-create.md)|[androidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md)|创建新的 [androidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md) 对象。|
 |[删除 androidWorkProfileGeneralDeviceConfiguration](../api/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-delete.md)|无|删除 [androidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md)。|
@@ -50,17 +50,17 @@ Android 工作配置文件常规设备配置。
 |passwordSignInFailureCountBeforeFactoryReset|Int32|恢复出厂设置之前允许登录失败的次数。 有效值为 1 到 16|
 |passwordRequiredType|[androidWorkProfileRequiredPasswordType](../resources/intune-deviceconfig-androidworkprofilerequiredpasswordtype.md)|必需的密码类型。 可取值为：`deviceDefault`、`lowSecurityBiometric`、`required`、`atLeastNumeric`、`numericComplex`、`atLeastAlphabetic`、`atLeastAlphanumeric`、`alphanumericWithSymbols`。|
 |workProfileDataSharingType|[androidWorkProfileCrossProfileDataSharingType](../resources/intune-deviceconfig-androidworkprofilecrossprofiledatasharingtype.md)|允许的数据共享类型。 可取值为：`deviceDefault`、`preventAny`、`allowPersonalToWork`、`noRestrictions`。|
-|workProfileBlockNotificationsWhileDeviceLocked|Boolean|指示设备锁定时是否阻止通知。|
+|workProfileBlockNotificationsWhileDeviceLocked|布尔值|指示设备锁定时是否阻止通知。|
 |workProfileBlockAddingAccounts|Boolean|阻止用户在工作配置文件中添加/删除帐户。|
-|workProfileBluetoothEnableContactSharing|Boolean|允许蓝牙设备访问企业联系人。|
+|workProfileBluetoothEnableContactSharing|布尔值|允许蓝牙设备访问企业联系人。|
 |workProfileBlockScreenCapture|Boolean|阻止工作配置文件中的屏幕捕获。|
-|workProfileBlockCrossProfileCallerId|Boolean|阻止在个人配置文件中显示工作配置文件调用方 ID。|
+|workProfileBlockCrossProfileCallerId|布尔值|阻止在个人配置文件中显示工作配置文件调用方 ID。|
 |workProfileBlockCamera|Boolean|阻止工作配置文件相机。|
 |workProfileBlockCrossProfileContactsSearch|Boolean|阻止工作配置文件联系人在个人配置文件中的可用性。|
 |workProfileBlockCrossProfileCopyPaste|Boolean|指示设置是否禁用跨配置文件复制/粘贴的布尔值。|
 |workProfileDefaultAppPermissionPolicy|[androidWorkProfileDefaultAppPermissionPolicyType](../resources/intune-deviceconfig-androidworkprofiledefaultapppermissionpolicytype.md)|必需的密码类型。 可取值为：`deviceDefault`、`prompt`、`autoGrant`、`autoDeny`。|
 |workProfilePasswordBlockFingerprintUnlock|Boolean|指示是否阻止工作配置文件的指纹解锁。|
-|workProfilePasswordBlockTrustAgents|Boolean|指示是否阻止工作配置文件的智能锁定和其他信任代理。|
+|workProfilePasswordBlockTrustAgents|布尔值|指示是否阻止工作配置文件的智能锁定和其他信任代理。|
 |workProfilePasswordExpirationDays|Int32|工作配置文件密码过期前的天数。 有效值为 1 至 365。|
 |workProfilePasswordMinimumLength|Int32|工作配置文件密码的最小长度。 有效值为 4 至 16|
 |workProfilePasswordMinNumericCharacters|Int32|工作配置文件密码中所需的数字字符的最小值。 有效值为 1 到 10|

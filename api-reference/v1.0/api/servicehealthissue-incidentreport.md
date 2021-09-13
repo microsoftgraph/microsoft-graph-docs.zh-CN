@@ -2,15 +2,15 @@
 title: serviceHealthIssue：incidentReport
 description: 提供事件后评审 (PIR) 租户的指定服务问题文档。
 author: payiAzure
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 54fb15f72614bd3fecad6aec9b9de700b929f80f
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: b14b8deba65ac1aefba9d5af3d4ae1fd3e48b7a5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266140"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59113936"
 ---
 # <a name="servicehealthissue-incidentreport"></a>serviceHealthIssue：incidentReport
 命名空间：microsoft.graph

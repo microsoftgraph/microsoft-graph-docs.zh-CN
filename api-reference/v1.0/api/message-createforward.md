@@ -1,16 +1,16 @@
 ---
 title: 'message: createForward'
 description: 创建草稿以转发 JSON 或 MIME 格式的现有邮件。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9892fb41a6115abfad0e7c19167911db533ad213
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: bdcc3125fb05b6ffec7bedfc94dc1c3abca271d5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52645603"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110296"
 ---
 # <a name="message-createforward"></a>message: createForward
 
@@ -20,19 +20,19 @@ ms.locfileid: "52645603"
 
 使用 JSON 格式时，可以：
 - 指定参数的 comment 或 **body** `message` 属性。 指定这两者将返回 HTTP 400 错误请求错误。
-- 指定参数 `toRecipients` 的参数或 **toRecipients** `message` 属性。 指定两者或同时指定两者都将返回 HTTP 400 错误请求错误。
-- [稍后](../api/message-update.md) 更新草稿以将内容添加到 **正文或更改** 其他邮件属性。
+- 指定参数 `toRecipients` 的参数或 **toRecipients** `message` 属性。 同时指定或指定两者都将返回 HTTP 400 错误请求错误。
+- 随后 [更新](../api/message-update.md)草稿以将内容添加到 **正文**，或更改其他邮件属性。
 
 使用 MIME 格式时：
-- 在请求正文中提供适用的 [Internet](https://tools.ietf.org/html/rfc2076) 邮件头和 [MIME](https://tools.ietf.org/html/rfc2045)内容，这些内容均以 **base64** 格式进行编码。
-- 将任何附件和 S/MIME 属性添加到 MIME 内容。
+- 提供适用的 [Internet 邮件头](https://tools.ietf.org/html/rfc2076) 和 [MIME 内容](https://tools.ietf.org/html/rfc2045)，所有内容在请求正文中都通过 **base64** 格式进行编码。
+- 向 MIME 内容添加任何附件和 S/MIME 属性。
 
-[在](../api/message-send.md) 后续操作中发送草稿邮件。
+在后续操作中[发送](../api/message-send.md)草稿消息。
 
 或者， [在单个操作](../api/message-forward.md) 中转发邮件。
 
 ## <a name="permissions"></a>权限
-若要调用此 API，需要以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -56,18 +56,18 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createForwar
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
-| Content-Type | string  | 实体正文中的数据性质。 <br/> 用于 `application/json` JSON 对象和 `text/plain` MIME 内容。 |
+| Content-Type | string  | 实体正文中的数据性质。 <br/> 对 JSON 对象使用 `application/json`，对 MIME 内容使用 `text/plain`。 |
 
 ## <a name="request-body"></a>请求正文
 此方法不需要请求正文。
 
-但是，若要使用 MIME 格式创建转发草稿，请为 MIME 内容提供适用的 Internet 邮件头 ("收件人"、"抄送"、"密件抄送"、"主题") ，请求正文中均以 **base64** 格式编码。 
+但是，若要使用 MIME 格式创建转发草稿，请为 MIME 内容提供适用的 Internet 邮件头 ("收件人"、"抄送"、"密件抄送"、"主题") ，全部在请求正文中以 **base64** 格式进行编码。 
 
 ## <a name="response"></a>响应
 
 如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [Message](../resources/message.md) 对象。
 
-如果请求正文包含格式错误的 MIME 内容，此方法将返回以下错误消息："MIME 内容的 `400 Bad request` base64 字符串无效"。
+如果请求正文包含错误的 MIME 内容，此方法将返回 `400 Bad request` 和以下错误消息：“无效的 base64 字符串 MIME 内容”。
 
 ## <a name="examples"></a>示例
 
@@ -222,7 +222,7 @@ Content-type: application/json
 
 ```
 
-如果请求正文包含格式错误的 MIME 内容，此方法将返回以下错误消息。
+如果请求正文包含错误的 MIME 内容，此方法返回以下错误消息。
 
 <!-- { "blockType": "ignored" } -->
 

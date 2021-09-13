@@ -1,16 +1,16 @@
 ---
 title: informationalUrl 资源类型
 description: 应用程序的基本配置文件信息。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: e0c60cdde2d636321f3777b4b41bdf11bfe1da69d3303169f4fce1a3a71b3acc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c0f2fa7a71c4512336ada081bd65cd731b3d3165
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178386"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129885"
 ---
 # <a name="informationalurl-resource-type"></a>informationalUrl 资源类型
 

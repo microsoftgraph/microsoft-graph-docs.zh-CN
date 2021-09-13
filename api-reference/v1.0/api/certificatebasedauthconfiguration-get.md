@@ -1,16 +1,16 @@
 ---
 title: 获取 certificateBasedAuthConfiguration
 description: 获取 certificatebasedauthconfiguration 对象的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: adimitui
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 49d34e274d783750401479f76391ae7be09fe59b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 165f4be79e360a3a9aa87b9ab11dded62093f31f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051576"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056884"
 ---
 # <a name="get-certificatebasedauthconfiguration"></a>获取 certificateBasedAuthConfiguration
 

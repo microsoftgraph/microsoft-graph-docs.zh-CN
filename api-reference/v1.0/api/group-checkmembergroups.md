@@ -2,15 +2,15 @@
 title: 组：checkMemberGroups
 description: 检查指定组列表中的成员身份。
 author: Jordanndahl
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: d2822f295a9034dd60550898bf89bb543680c9bc
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 94e7a00d8a8fb45aed1016e9d322959833c78437
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52679839"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59114503"
 ---
 # <a name="group-checkmembergroups"></a>组：checkMemberGroups
 

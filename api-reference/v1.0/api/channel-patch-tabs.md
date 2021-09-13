@@ -2,15 +2,15 @@
 title: 更新选项卡
 description: 更新指定选项卡的属性。
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 71d3162b9abd661e0aac650477e1749d9756e6293a1b767c1b6e6aa8d253579b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2c7809942072eeb99ec04ea0c80944577a388701
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54131015"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59053691"
 ---
 # <a name="update-tab"></a>更新选项卡
 

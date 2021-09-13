@@ -1,16 +1,16 @@
 ---
 title: deviceInfo 资源类型
 description: deviceInfo 类型
-localization_priority: Normal
+ms.localizationpriority: medium
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 6d4897d861c23721a8132badc28295b3e78855cb6e02bd8bd50c24f99475e0b0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cc7482cb7ac1f6f096650db64ae340b273b5aec3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54180898"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084669"
 ---
 # <a name="deviceinfo-resource-type"></a>deviceInfo 资源类型
 
@@ -29,9 +29,9 @@ ms.locfileid: "54180898"
 |deviceClippingEventRatio|双精度|媒体终结点在捕获的音频中检测到剪辑导致发送的音频质量差的通话的一小部分。|
 |deviceGlitchEventRatio|双精度|媒体终结点检测到播放或捕获的音频出现故障或缺陷导致发送或接收的音频质量差的通话的一小部分。|
 |howlingEventCount|Int32|在呼叫期间，媒体终结点检测到声声或叫声音频次数。|
-|initialSignalLevelRootMeanSquare|双精度|根平均值 (RMS) 呼叫前 30 秒传入信号的平均值。|
+|initialSignalLevelRootMeanSquare|双精度|根平均 (RMS) 呼叫前 30 秒传入信号的平均值。|
 |lowSpeechLevelEventRatio|双精度|媒体终结点检测到语音级别低（导致发送的音频质量差）的通话的一小部分。|
-|lowSpeechToNoiseEventRatio|双精度|媒体终结点检测到语音级别低到噪音级别导致发送的音频质量差的呼叫的一小部分。|
+|lowSpeechToNoiseEventRatio|双精度|媒体终结点检测到语音级别低到噪音级别导致发送的音频质量差的通话的一小部分。|
 |micGlitchRate|双精度|媒体终结点的麦克风每 5 分钟发生一次故障。|
 |receivedNoiseLevel|Int32|对于被分类为单声道噪音或左声道立体声噪音的音频，媒体终结点接收的音频的平均能量水平。|
 |receivedSignalLevel|Int32|对于被分类为单声道语音或左声道立体声语音的音频，媒体终结点接收的音频的平均能量水平。|

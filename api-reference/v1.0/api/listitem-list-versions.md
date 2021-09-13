@@ -1,18 +1,18 @@
 ---
-title: 列出列表的版本
+title: 列出 ListItem 的版本
 description: SharePoint 可以配置为保留列表项的历史记录。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 author: JeremyKelley
 doc_type: apiPageType
-ms.openlocfilehash: 3edbd65ce3201b3595215f221fa5616a194306d4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e1e957b6dadfe77f1610c22e5acf7c98630948b2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057260"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110338"
 ---
-# <a name="listing-versions-of-a-listitem"></a>列出列表的版本
+# <a name="listing-versions-of-a-listitem"></a>列出 ListItem 的版本
 
 命名空间：microsoft.graph
 

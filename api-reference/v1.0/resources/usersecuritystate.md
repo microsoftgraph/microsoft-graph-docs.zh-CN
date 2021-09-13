@@ -2,15 +2,15 @@
 title: userSecurityState 资源类型
 description: 包含有关用户帐户的有状态信息。
 author: jpettere
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 65aadebaea821fd722b51587e1a504cc008ca7cacb9945a034cb877e2b92b275
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7bf0f249fd46ebff8b90d32159d47dd63c6682b5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54129930"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134274"
 ---
 # <a name="usersecuritystate-resource-type"></a>userSecurityState 资源类型
 
@@ -24,17 +24,17 @@ ms.locfileid: "54129930"
 |:---------------|:--------|:----------|
 |aadUserId|String|AAD 用户对象标识符 (GUID) - 表示物理/多帐户用户实体。|
 |accountName|String|没有 Active Directory 域 (DNS 域的用户帐户名 -)  (也称为 `mailNickName`) 。|
-|domainName|String|用户帐户的 NetBIOS/Active Directory (，即域\帐户格式) 。|
+|domainName|String|用户帐户的 NetBIOS/Active Directory 域 (，即域\帐户格式) 。|
 |emailRole|emailRole|对于电子邮件相关警报 - 用户帐户的电子邮件"角色"。 可取值为：`unknown`、`sender`、`recipient`。|
-|isVpn|Boolean|指示用户是否通过 VPN 登录。|
+|isVpn|布尔值|指示用户是否通过 VPN 登录。|
 |logonDateTime|DateTimeOffset|登录发生的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
 |logonId|String|用户登录 ID。|
 |logonIp|String|IP 地址 源自登录请求。|
-|logonLocation|String|位置 (IP 地址映射) 与此用户登录事件关联的 IP 地址映射。|
+|logonLocation|String|位置 (IP 地址映射) 与此用户登录事件关联的位置。|
 |logonType|logonType|用户登录方法。 可取值为：`unknown`、`interactive`、`remoteInteractive`、`network`、`batch`、`service`。|
-|onPremisesSecurityIdentifier|String|Active Directory (用户) SID (本地) 安全标识符。|
+|onPremisesSecurityIdentifier|String|Active Directory (本地) 安全标识符 (SID) 的 SID。|
 |riskScore|String|提供程序生成/计算用户帐户的风险评分。 建议的值范围为 0-1，等于百分比。|
-|userAccountType|userAccountSecurityType|根据组 (定义的) 用户帐户Windows类型。 可取值为：`unknown`、`standard`、`power`、`administrator`。|
+|userAccountType|userAccountSecurityType|根据用户定义 (组) 用户帐户Windows类型。 可取值为：`unknown`、`standard`、`power`、`administrator`。|
 |userPrincipalName|String|用户登录名 - Internet 格式： (用户帐户名) @ (用户帐户 DNS 域名) 。|
 
 ## <a name="json-representation"></a>JSON 表示形式

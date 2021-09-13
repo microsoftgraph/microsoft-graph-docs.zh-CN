@@ -1,16 +1,16 @@
 ---
 title: 列出 timeOffRequest
 description: 检索团队中的 timeOffRequest 对象列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8784cacb090a1c5a877cc7d4aa1142c50661cfa9
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 911e9d6ccc5be7d87d9fba36977da2f85eab5b21
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053788"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049828"
 ---
 # <a name="list-timeoffrequest"></a>列出 timeOffRequest
 

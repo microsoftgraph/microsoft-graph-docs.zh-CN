@@ -2,23 +2,23 @@
 title: 'event: tentativelyAccept'
 description: 暂时接受用户日历中的指定事件。
 author: harini84
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 17d7261c55af1290c1e67efe8f422f1f75c25d51
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: f832948af4d7bb1d1ff3bcae2a6059afb9ef2726
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448268"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59095141"
 ---
 # <a name="event-tentativelyaccept"></a>event: tentativelyAccept
 
 命名空间：microsoft.graph
 
-暂时接受用户 [日历](../resources/event.md) 中的指定 [事件](../resources/calendar.md)。
+暂时接受用户 [日历中的](../resources/event.md) 指定 [事件](../resources/calendar.md)。
 
-如果事件允许新时间的建议，则当对事件做出暂定响应时，被邀请者可以选择通过包含 **建议的NewTime** 参数来建议备选时间。 若要详细了解如何建议时间，以及如何接收和接受新时间建议，请参阅["建议新的会议时间"。](/graph/outlook-calendar-meeting-proposals)
+如果事件允许针对新时间的建议，则当对事件做出暂定响应时，被邀请者可以选择通过包含 **proposedNewTime** 参数来建议备选时间。 若要详细了解如何建议时间，以及如何接收和接受新时间建议，请参阅 [建议新的会议时间](/graph/outlook-calendar-meeting-proposals)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -63,15 +63,15 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 
 如果成功，此方法返回 `202 Accepted` 响应代码。它不在响应正文中返回任何内容。
 
-如果发生以下一个或两种情况，此操作将返回 HTTP 400：
+如果发生以下一个或两个情况，此操作将返回 HTTP 400：
 
-- 包含 **proposedNewTime** 参数， **但事件的 allowNewTimeProposals** **属性为** `false` 。 
+- **包含 proposedNewTime** 参数，但 **事件的 allowNewTimeProposals** 属性 **为** `false` 。 
 - 包含 **proposedNewTime** 参数，但 **sendResponse** 参数设置为 `false` 。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。
 ### <a name="request"></a>请求
-在下面的示例中，登录用户对指定事件做出暂定响应， **将 sendResponse** 参数设置为 true，并包含 **proposedNewTime** 参数中的备用时间。
+在下面的示例中，登录用户对指定事件做出暂定响应，将 **sendResponse** 参数设置为 true，并包括 **proposedNewTime** 参数中的备选时间。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

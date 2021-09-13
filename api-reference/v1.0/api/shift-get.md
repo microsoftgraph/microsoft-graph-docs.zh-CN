@@ -2,15 +2,15 @@
 title: 获取班次
 description: 按 ID 获取班次。
 author: akumar39
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e4754e86ecaae0c39c519362c25ba08a49a5cbfb
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: dda5cb5199608d7547e4cce21c1c6c384adaf527
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054411"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118958"
 ---
 # <a name="get-shift"></a>获取班次
 

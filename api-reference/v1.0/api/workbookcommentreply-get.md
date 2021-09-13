@@ -1,16 +1,16 @@
 ---
 title: 获取 workbookCommentReply
 description: 检索 workbookcommentreply 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: d75b96bee8a9ffb21ffecf4e1c44c4c77190331a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 843cb7e1dba2e173cdf3a43d13a5d31907cc93a7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053739"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104522"
 ---
 # <a name="get-workbookcommentreply"></a>获取 workbookCommentReply
 

@@ -2,14 +2,14 @@
 title: 获取共享文件夹或委托文件夹中的 Outlook 邮件
 description: 使用 Outlook，客户可以与其他人共享邮件文件夹，并授予对各个文件夹的读取、创建、修改或删除访问权限。 通过 Outlook，客户还可以委托其他用户代表自己执行操作。
 author: abheek-das
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 1687c6ca82c4188f4001e2cf4c472af9e39387f38746bb1e3726620f2af6859d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c2798e01d29badc1d3228692d02caca1ab89fa87
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54233656"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59071747"
 ---
 # <a name="get-outlook-messages-in-a-shared-or-delegated-folder"></a>获取共享文件夹或委托文件夹中的 Outlook 邮件
 

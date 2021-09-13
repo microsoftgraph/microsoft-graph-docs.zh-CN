@@ -2,21 +2,21 @@
 title: basicAuthentication 资源类型
 description: 表示在 API 调用中使用基本身份验证的配置。
 author: nickgmicrosoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 361d7f98f2d594ab6193103f9a67b969cbfe6d0cb1b97cd229b89ba9449402e3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9749d179ffa33020b73747e46ed21add6eb9316d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54126674"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019396"
 ---
 # <a name="basicauthentication-resource-type"></a>basicAuthentication 资源类型
 
 命名空间：microsoft.graph
 
-表示在 API 调用中使用 HTTP 基本身份验证的配置，这需要用户名和密码。 用户名和密码作为授权标头发送，其中 用户名：password 是 `Basic {value}` `value` base 64 编码版本。
+表示在 API 调用中使用 HTTP 基本身份验证的配置，这需要用户名和密码。 用户名和密码作为授权标头发送，因为 `Basic {value}` 其中是 `value` 用户名：password 的 base 64 编码版本。
 
 继承自 [apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md)。
 

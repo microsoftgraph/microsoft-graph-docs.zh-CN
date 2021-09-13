@@ -2,15 +2,15 @@
 title: properties 资源类型
 description: 为连接中的项目定义的属性。
 author: mecampos
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: ad0e57693b0ac48b5e1fa40f5fc9f0ed4cc4249409e68f678f47a8244cc105f1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 584ad28a5d7ca18865320c8154649dd3abc4029b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54124477"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123375"
 ---
 # <a name="properties-resource-type"></a>properties 资源类型
 

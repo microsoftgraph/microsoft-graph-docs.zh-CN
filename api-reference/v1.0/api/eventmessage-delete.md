@@ -2,15 +2,15 @@
 title: 删除 eventMessage
 description: 删除 eventMessage。
 author: harini84
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 833c2af37ae92cccea5abf0c2eefc3efbaa75c16
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 21b91164392d74d156212a2b6310de9aa1aad1f7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48038737"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59037927"
 ---
 # <a name="delete-eventmessage"></a>删除 eventMessage
 

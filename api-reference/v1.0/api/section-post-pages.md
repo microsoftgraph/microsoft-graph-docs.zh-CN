@@ -1,16 +1,16 @@
 ---
 title: 创建页面
 description: 在指定分区中新建页面。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 4116ecffd4c758a76b29d85eddecb37a7299f05efd9f7a213450b887f7befc4c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a7504061c4d55d28e1121c389bb35f79dcbf4c6f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54175411"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019564"
 ---
 # <a name="create-page"></a>创建页面
 

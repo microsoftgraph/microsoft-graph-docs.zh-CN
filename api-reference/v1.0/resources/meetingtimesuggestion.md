@@ -1,16 +1,16 @@
 ---
 title: meetingTimeSuggestion 资源类型
 description: '包含会议时间、出席可能性、个人信息的会议建议 '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: vrod9429
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: d023d77d987ff75d124f70fe805565c3a9a0c05082fe78ae48493fa9c578d344
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ce0fec16e243120ff55739aa390c3232c42a0a89
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163710"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118045"
 ---
 # <a name="meetingtimesuggestion-resource-type"></a>meetingTimeSuggestion 资源类型
 

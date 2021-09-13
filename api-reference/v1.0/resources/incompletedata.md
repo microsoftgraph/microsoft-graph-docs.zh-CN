@@ -2,15 +2,15 @@
 author: daspek
 title: incompleteData 资源类型
 description: incompleteData Facet 指示生成的资源包含不完整的数据。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: b632148991aefd9fad09bd794e5f3e1849365af8cea5455bbef0ba628b60f221
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f4d8c852a08780ecc0f48ac8a1dcef11b246673c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54223576"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128310"
 ---
 # <a name="incompletedata-resource-type"></a>incompleteData 资源类型
 

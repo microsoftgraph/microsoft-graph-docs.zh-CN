@@ -2,15 +2,15 @@
 title: 获取 educationAssignment
 description: 获取工作分配的属性和关系。
 author: sharad-sharma-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 8f1d56455991d3481c9919a6c4fe20f4651c6de5
-ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
+ms.openlocfilehash: ce12428da315ba770f4521fa484df1e1c716d9cc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58367021"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59130944"
 ---
 # <a name="get-educationassignment"></a>获取 educationAssignment
 

@@ -2,15 +2,15 @@
 title: 参与者资源类型
 description: 表示参与者类型。
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 3bada1be911bda02e49229a20793289b61934f74
-ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
+ms.openlocfilehash: a10b3d532ef49904d1fd09cef6690584dfce7e12
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58367140"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104080"
 ---
 # <a name="participant-resource-type"></a>参与者资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "58367140"
 
 表示呼叫中的参与者。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法                                                 | 返回类型                                                 | 说明                                    |
 |:-------------------------------------------------------|:------------------------------------------------------------|:-----------------------------------------------|

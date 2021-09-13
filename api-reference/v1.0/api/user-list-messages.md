@@ -1,16 +1,16 @@
 ---
 title: 列出邮件
 description: 获取登录用户的邮箱（包括“已删除邮件”和“待筛选邮件”文件夹）中的邮件。
-localization_priority: Priority
+ms.localizationpriority: high
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ad594f12603668d0684523a25cd708be8b61eae8
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 398642777da6426278e2292cef252ea44b893809
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473960"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072659"
 ---
 # <a name="list-messages"></a>列出邮件
 
@@ -31,7 +31,7 @@ ms.locfileid: "51473960"
 在以下两种情况下，应用可以获取其他用户的邮件文件夹中的邮件：
 
 * 如果该应用具有应用程序权限，或者
-* 如果应用具有来自某个用户的相应委派[权限](#permissions)，而另一个用户与该用户共享了邮件文件夹，或者已为该用户授予委派的访问权限。 请参阅[详细信息和示例](/graph/outlook-share-messages-folders)。
+* 如果应用具有来自某个用户的相应委派[权限](#permissions)，而另一个用户与该用户共享了邮件文件夹，或者已为该用户授予委派的访问权限。请参阅[详细信息和示例](/graph/outlook-share-messages-folders)。
 
 > **注意**：请注意 [已知问题](/graph/known-issues#get-messages-returns-chats-in-microsoft-teams)，即此操作在自己的响应中包含 Microsoft Teams 聊天消息。
 
@@ -123,7 +123,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$select=sender,subject
 ---
 
 #### <a name="response"></a>响应
-下面是一个响应示例。 若要获取下一页邮件，请将 `@odata.nextLink` 中返回的 URL 应用 于后续 GET 请求。
+下面是一个响应示例。若要获取下一页邮件，请将 `@odata.nextLink` 中返回的 URL 应用于后续 GET 请求。
 
 <!-- {
   "blockType": "response",

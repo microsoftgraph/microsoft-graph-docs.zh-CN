@@ -2,15 +2,15 @@
 title: ratingAustraliaMoviesType 枚举类型
 description: 澳大利亚电影评级标签
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 87bb9c688e97cbd4e5fc82cf79e1a111c00dc9991687fd5fbe83d7b1b9c7abe8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 278d18d5d6ed8b6bae50f499f1248b50c088a9e7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235630"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59053075"
 ---
 # <a name="ratingaustraliamoviestype-enum-type"></a>ratingAustraliaMoviesType 枚举类型
 

@@ -2,15 +2,15 @@
 title: 列出附件
 description: 检索附加到邮件的 attachment 对象列表。
 author: abheek-das
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7a8e6c6a3586ecc030f725c96c385376daf2f4a2
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 909a24f9c9c0843e97f8f1fd223bdb69706188b8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054558"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016153"
 ---
 # <a name="list-attachments"></a>列出附件
 
@@ -87,7 +87,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/{id}/attachments
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "name": "message_get_attachments_v1",

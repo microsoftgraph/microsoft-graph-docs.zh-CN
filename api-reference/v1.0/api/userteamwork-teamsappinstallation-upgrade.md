@@ -3,14 +3,14 @@ title: 个人作用域中的 teamsAppInstallation：升级
 description: 在用户的个人范围内升级应用安装
 author: akjo
 doc_type: apiPageType
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 7dc29124b00f4c72ff00c00a72069b39c5a65e2a
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: 82abdb5d7d2b8f50082fa285fe46442dec9eeb43
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53060540"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59113880"
 ---
 # <a name="teamsappinstallation-in-personal-scope-upgrade"></a>个人作用域中的 teamsAppInstallation：升级
 

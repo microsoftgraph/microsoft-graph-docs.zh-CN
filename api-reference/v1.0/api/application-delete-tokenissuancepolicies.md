@@ -1,16 +1,16 @@
 ---
 title: 删除 tokenIssuancePolicy
 description: 从应用程序中删除 tokenIssuancePolicy。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: ff9761354f1d47e1cfafcf144fea8cb1f1e912e2
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 33edea38007084f8e46662a4c0a23f358ace4e89
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050617"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59080463"
 ---
 # <a name="remove-tokenissuancepolicy"></a>删除 tokenIssuancePolicy
 

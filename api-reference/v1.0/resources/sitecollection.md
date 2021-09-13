@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: SiteCollection
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 description: siteCollection 资源提供有关网站集的详细信息。
 doc_type: resourcePageType
-ms.openlocfilehash: 196958674462095b8b47f82d07ac4fa7a885243b240473444c30b24014578c18
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8260970575a225b5a7fea415c783293a917e0b72
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54251741"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123039"
 ---
 # <a name="sitecollection-resource"></a>SiteCollection 资源
 

@@ -2,12 +2,13 @@
 author: angelgolfer-ms
 ms.topic: include
 ms.date: 09/15/2020
-ms.openlocfilehash: 41e32cd2fb1e373f09de7cdfd25286f767f14c266c0b928341bb97f0daff101b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.localizationpriority: medium
+ms.openlocfilehash: 2769329f9d8e2883728d9ba55dff0829c11380c2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54121340"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094002"
 ---
 <!-- markdownlint-disable MD041-->
 

@@ -2,15 +2,15 @@
 title: 更新 externalConnection
 description: 更新 externalConnection 对象的属性。
 author: mecampos
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 80241a86ce79917bf437634dfd9d91fe23018984
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 5e7afbb9084aa6e9a62924bd3ec33a29eaad70e1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53579950"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022511"
 ---
 # <a name="update-externalconnection"></a>更新 externalConnection
 

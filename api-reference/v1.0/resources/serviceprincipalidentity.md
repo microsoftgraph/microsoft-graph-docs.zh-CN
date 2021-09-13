@@ -2,15 +2,15 @@
 title: servicePrincipalIdentity 资源类型
 description: 为服务主体标识创建模型。
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 9f486efbbfefb9639551c4d7fa587d056aaf3211e5b53dd8d212b7171b59baac
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ae9d82ce65b7a6e8c82e0377df89939b9219f3db
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54202117"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59108826"
 ---
 # <a name="serviceprincipalidentity-resource-type"></a>servicePrincipalIdentity 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "54202117"
 |属性|类型|说明|
 |:---|:---|:---|
 |appId|String|服务主体的应用程序标识符。|
-|displayName|String|服务显示名称标识的组。 继承自 [标识](../resources/identity.md)|
+|displayName|String|服务显示名称标识的标识。 继承自 [标识](../resources/identity.md)|
 |id|String|服务主体标识的标识符。 继承自 [标识](../resources/identity.md)|
 
 ## <a name="relationships"></a>关系

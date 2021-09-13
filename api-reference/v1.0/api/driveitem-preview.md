@@ -1,16 +1,16 @@
 ---
 title: driveItem：预览
 description: 此操作允许你获取项目的短期嵌入 URL，以便呈现临时预览。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 author: JeremyKelley
 doc_type: apiPageType
-ms.openlocfilehash: b8cac897e67bc0a997b9ea486b1f6956e70c2f07dfe7fe5019ab7285b3eb977c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fecbdba30948dc89e0344a90574fe932562058fd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54234314"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022763"
 ---
 # <a name="driveitem-preview"></a>driveItem：预览
 

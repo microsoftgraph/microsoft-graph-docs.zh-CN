@@ -3,14 +3,14 @@ title: 更新 chatMessage
 description: 更新 chatMessage 的 policyViolation 属性。
 author: RamjotSingh
 doc_type: apiPageType
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: dc4afbd651bb6d4c498240dd49bac56a586446b2
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: 53a3eb63de9fbdb5741bfe76f3ff8aed99563d54
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582625"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022777"
 ---
 # <a name="update-chatmessage"></a>更新 chatMessage
 
@@ -53,7 +53,7 @@ PATCH /chats/{chatThread-id}/messages/{message-id}
 
 ### <a name="request"></a>请求
 
-下面是请求更新 Microsoft Teams 频道消息中的 **policyViolation** 属性的示例。
+下面是请求更新频道消息上 **policyViolation** 属性Microsoft Teams示例。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

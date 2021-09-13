@@ -2,15 +2,15 @@
 title: shutDown 操作
 description: 关闭设备
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d763a76c57cbfd41f7be4fd11d7ef614a03521a51ec9730e5ef2b7255213b2ea
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 20df28e5b0dab910183e18d5d4e854078b6fc9f3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54238473"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59029337"
 ---
 # <a name="shutdown-action"></a>shutDown 操作
 

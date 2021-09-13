@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: SharingLink
-localization_priority: Normal
+ms.localizationpriority: medium
 description: SharingLink 资源将与链接相关的数据项分组到一个单一结构。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 0f3af451817cbae0c4d4930b035792482e06afac07de77f1b4ff1c975d431a06
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5333d397af2627537017de1f90e193e6442fcac5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54237535"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032214"
 ---
 # <a name="sharinglink-resource-type"></a>SharingLink 资源类型
 
@@ -51,7 +51,7 @@ ms.locfileid: "54237535"
 | scope       | String        | 由该权限表示的链接范围。值 `anonymous` 表示该链接对任何人均可用，`organization` 表示该链接仅可由登录到同一个租户的用户使用。
 | preventsDownload | Boolean       | 如果为 true，则用户只能使用此链接来查看 Web 上的项目，并且不能使用它下载项目的内容。 仅适用于 OneDrive for Business 和 SharePoint。
 | webHtml     | String        | 对于 `embed` 链接，此属性包含在网页上嵌入项的 `<iframe>` 元素的 HTML 代码。
-| webUrl      | String        | 在 OneDrive 网站上的浏览器中打开项的 URL。
+| WebUrl      | String        | 在 OneDrive 网站上的浏览器中打开项的 URL。
 
 [Identity]: identity.md
 
@@ -59,7 +59,7 @@ ms.locfileid: "54237535"
 
 此表定义了 **type** 属性的可能值：
 
-| 值   | 角色    | 说明
+| 值   | Role    | 说明
 |:--------|:--------|:---------------------------------------------------------
 | `view`  | `read`  | 可查看共享链接，允许只读访问。
 | `edit`  | `write` | 授予读写权限的编辑共享链接。

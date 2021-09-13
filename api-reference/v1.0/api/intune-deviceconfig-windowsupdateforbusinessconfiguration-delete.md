@@ -2,15 +2,15 @@
 title: 删除 windowsUpdateForBusinessConfiguration
 description: 删除 windowsUpdateForBusinessConfiguration。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3d84600e6d2d7b709faceabd6569e59191fc12a705b51fbb589d22e0f9ba7cde
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e0bd45dee9d6bc0febc238f05384bbfa392c66e5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54135601"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59114209"
 ---
 # <a name="delete-windowsupdateforbusinessconfiguration"></a>删除 windowsUpdateForBusinessConfiguration
 
@@ -41,7 +41,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

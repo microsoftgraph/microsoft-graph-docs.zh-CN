@@ -1,21 +1,21 @@
 ---
 title: organizationalBrandingProperties 资源类型
 description: 包含组织品牌打造的详细信息。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: AlexanderMars
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: b815f5f1c75842939526a008e960444d475e5e54f9ce94abe16706c5c387851e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: db4dc3d52ad9bf3f1ff2c66443c7c909cbad9dd4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54135048"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032291"
 ---
 # <a name="organizationalbrandingproperties-resource-type"></a>organizationalBrandingProperties 资源类型
 
 >[!NOTE]
->添加自定义品牌打造需要Azure Active Directory Premium 1、高级版 2 或 Basic 版本，或拥有 Microsoft 365 许可证。 有关许可和版本的信息，请参阅注册[Azure AD Premium。](/azure/active-directory/fundamentals/active-directory-get-started-premium)<br><br>Azure AD Premium全球实例的 Azure Active Directory 中国客户可以使用基本Azure Active Directory。 Azure AD Premium由世纪银行在中国运营的 Azure 服务中当前不支持基本和基本版本。 有关详细信息，请通过 Azure Active Directory[论坛与我们联系](https://feedback.azure.com/forums/169401-azure-active-directory/)。
+>添加自定义品牌打造需要Azure Active Directory Premium 1、高级版 2 或 Basic 版本，或拥有 Microsoft 365 许可证。 有关许可和版本详细信息，请参阅注册[Azure AD Premium。](/azure/active-directory/fundamentals/active-directory-get-started-premium)<br><br>Azure AD Premium全球实例的 Azure Active Directory 中国客户可以使用 Azure Active Directory。 Azure AD Premium由世纪银行在中国运营的 Azure 服务中当前不支持 Azure AD Premium 和 Basic 版本。 有关详细信息，请通过以下论坛Azure Active Directory[我们](https://feedback.azure.com/forums/169401-azure-active-directory/)。
 
 包含有关组织品牌的详细信息。
 
@@ -32,7 +32,7 @@ ms.locfileid: "54135048"
 | [Create](../api/organizationalbrandingproperties-create.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | 使用 organizationalBrandingProperties 对象创建组织品牌。 |
 | [Get](../api/organizationalbrandingproperties-get.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | 读取 organizationalBrandingProperties 对象的属性和关系。 |
 | [更新](../api/organizationalbrandingproperties-update.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | 更新 organizationalBrandingProperties 对象。 |
-| [删除](../api/organizationalbrandingproperties-delete.md) | 无 | 删除 organizationalBrandingProperties 对象。 |
+| [删除](../api/organizationalbrandingproperties-delete.md) | None | 删除 organizationalBrandingProperties 对象。 |
 
 ## <a name="properties"></a>属性
 
@@ -41,9 +41,9 @@ ms.locfileid: "54135048"
 |backgroundColor|String| 将出现在低带宽连接中的背景图像上的颜色。 建议在此处使用横幅徽标或组织颜色的主要颜色。 以十六进制表示 (，例如，白色#FFFFFF) 。 |
 |backgroundImage|Stream| 显示为登录页背景的图像。 .png或 .jpg不超过 1920x1080 且小于 300kb。 较小的图像将降低带宽要求，提高页面加载性能。 |
 |bannerLogo|Stream| 显示在登录页上的公司徽标的横幅版本。 .png或.jpg不超过 36x245px。 我们建议使用透明图像，徽标周围没有填充。 |
-|id|String| 这是一个继承自 microsoft.graph.entity 的 id，是指定语言 ISO 639 标准（例如英语为"en-us"或"en"）区域设置。 今后，如果我们公开功能以针对一个区域设置具有多个品牌，这一点可能会更改。 请注意，默认 /branding 的 ID 始终为"und"，直到我们具有无键单一性。 只读。 |
+|id|String| 这是一个继承自 microsoft.graph.entity 的 id，是指定语言 ISO 639 标准（例如，英语为"en-us"或"en"）区域设置。 今后，如果我们公开功能以针对一个区域设置具有多个品牌，这一点可能会更改。 请注意，默认 /branding 的 ID 始终为"und"，直到我们具有无键单一性。 只读。 |
 |signInPageText|String| 显示在登录框底部的文本。 您可以使用此信息来传达其他信息，例如电话号码到技术支持或法律声明。 此文本必须是 Unicode 且不超过 1024 个字符。 |
-|squareLogo|Stream| 公司徽标的方形版本。 这将显示在Windows 10 OOBE 体验 (OOBE) ，以及启用 Windows Autopilot 进行部署时。 .png或 .jpg不超过 240x240px 且大小不超过 10kb。 我们建议使用透明图像，徽标周围没有填充。 |
+|squareLogo|Stream| 公司徽标的方形版本。 这将显示在Windows 10 OOBE 体验 (OOBE) 中，以及启用 Windows Autopilot 进行部署时。 .png或 .jpg不超过 240x240px 且大小不超过 10kb。 我们建议使用透明图像，徽标周围没有填充。 |
 |usernameHintText|String| 字符串，在登录屏幕的用户名文本框中作为提示显示。 此文本必须是 Unicode，不带链接或代码，并且不能超过 64 个字符。 |
 
 ## <a name="relationships"></a>关系

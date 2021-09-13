@@ -2,18 +2,18 @@
 title: 访问评审 API 概述
 description: 访问评审 API 允许你以编程方式查看对 Azure AD 资源的访问权限。
 author: FaithOmbongi
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
-ms.openlocfilehash: ea3caf2fd375d56ce128f8ec84be71b468f40b90
-ms.sourcegitcommit: b7e01a1331abe5f5c9aa2828d93dad08229573f1
+ms.openlocfilehash: 6eda31e5f35d03d5b5db136d46b14e93470389e0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58336654"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143592"
 ---
 # <a name="overview-of-the-access-reviews-api"></a>Access 审阅 API 概述
 
-Microsoft Graph中的访问评审[API](/graph/api/resources/accessreviewsv2-root)允许你以编程方式查看对 Azure AD 资源的访问权限。 此审查有助于确保合适的人员对组织中适当的资源具有适当的访问权限。
+Microsoft[访问评审 API](/graph/api/resources/accessreviewsv2-root) Graph允许你以编程方式查看对 Azure AD 资源的访问权限。 此审查有助于确保合适的人员对组织中适当的资源具有适当的访问权限。
 
 使用访问评审 API，可以执行以下操作：
 + 创建、读取、更新和删除访问评审、访问评审设置和计划。
@@ -21,12 +21,12 @@ Microsoft Graph中的访问评审[API](/graph/api/resources/accessreviewsv2-root
 
 ## <a name="scope-of-use"></a>使用范围
 
-访问评审 API 既支持委托上下文又支持应用程序上下文。 在用户 (委派) 上下文中，应用程序代表用户调用访问评审 API。 典型方案包括：
+访问评审 API 既支持委托上下文又支持应用程序上下文。 在委派 (上下文中) ，应用程序代表用户调用访问评审 API。 典型方案包括：
 + 使用脚本创建、读取或更新访问评审的管理员。
 + 使用应用或脚本为自己拥有的资源创建访问评审的资源所有者。
 + 管理员会自动收集一个或多个访问评审的所有决策。
   
-若要在委派 (上下文中) 你的应用，请参阅代表 [用户获取访问权限](/graph/auth-v2-user)。
+若要在用户环境中授权 (委派) ，请参阅代表 [用户获取访问权限](/graph/auth-v2-user)。
 
 在应用程序上下文中，应用程序在没有登录用户的情况下调用访问评审 API。 典型方案是安排的后台脚本定期收集所有访问评审的决策。 若要在此上下文中授权你的应用，请参阅 [在没有用户的情况下获取访问权限](/graph/auth-v2-service)。
 

@@ -2,15 +2,15 @@
 title: 列出班次
 description: 获取计划中的班次列表。
 author: akumar39
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 94b5a2d2f1d54ba387673f1b7b2cbb2475a53832
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 0722e49584547632d0885b74f7c3408946ad692b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053879"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019725"
 ---
 # <a name="list-shifts"></a>列出班次
 
@@ -39,7 +39,7 @@ GET /teams/{teamId}/schedule/shifts
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持使用 $filter [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法支持 $filter [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 

@@ -1,16 +1,16 @@
 ---
 title: 获取 plannerTaskDetails
 description: 检索 **plannertaskdetails** 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 037ccfd4c02e85c00c2cb1ef03137198646dbb71
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 125312397f8822c9d0e73273d65d86b3639cb9a9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049455"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072720"
 ---
 # <a name="get-plannertaskdetails"></a>获取 plannerTaskDetails
 
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/v1.0/planner/tasks/{task-id}/details
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

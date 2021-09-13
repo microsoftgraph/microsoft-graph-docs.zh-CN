@@ -1,16 +1,16 @@
 ---
 title: 获取组织
 description: 检索当前经过身份验证的组织的属性和关系。
-localization_priority: Priority
+ms.localizationpriority: high
 author: adimitui
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 87298a3862e7f0e5806ee39fdf3c7fcc8aea52cc
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 843db125acc27476e30106e4ab92e0d3ab71a9bc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052199"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59079230"
 ---
 # <a name="get-organization"></a>获取组织
 
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/v1.0/organization
 
 ##### <a name="response"></a>响应
 
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

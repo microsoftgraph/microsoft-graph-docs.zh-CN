@@ -2,15 +2,15 @@
 title: teamworkHostedContent 资源类型
 description: 表示由网站托管的丰富Microsoft Teams。
 author: RamjotSingh
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 7fca2d17db16e101edb22bd1ddfa31e4234e35ec6817f226209429f6cb97757a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8d53614b4d4f699890be7d244d78f7f1ec01890c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189252"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128178"
 ---
 # <a name="teamworkhostedcontent-resource-type"></a>teamworkHostedContent 资源类型
 
@@ -39,7 +39,6 @@ ms.locfileid: "54189252"
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.teamworkHostedContent",
   "id": "String (identifier)",
   "contentBytes": "Binary",
   "contentType": "String"

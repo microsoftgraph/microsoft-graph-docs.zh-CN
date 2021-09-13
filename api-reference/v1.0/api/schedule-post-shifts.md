@@ -2,21 +2,21 @@
 title: 创建班次
 description: 创建新的班次。
 author: akumar39
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a8e9cfcbc94d31f08ea7c2fc743a59bd1a1a7513
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: fdf86afdd561c28a5f2df521b8f2038531bb2b51
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053858"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019676"
 ---
 # <a name="create-shift"></a>创建班次
 
 命名空间：microsoft.graph
 
-在计划 [中](../resources/shift.md) 创建新的班次 [实例](../resources/schedule.md)。
+在日程安排 [中](../resources/shift.md) 创建新的班次 [实例](../resources/schedule.md)。
 
 ## <a name="permissions"></a>权限
 

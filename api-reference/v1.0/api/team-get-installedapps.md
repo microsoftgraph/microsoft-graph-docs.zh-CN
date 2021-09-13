@@ -2,15 +2,15 @@
 title: 在团队中获取已安装的应用
 description: 在团队中安装应用。
 author: AkJo
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2f27cff7f0f3006fa7704628fdd6b66f944de641
-ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
+ms.openlocfilehash: 8b6986f0c9c67a80658bbfd36b75829eeea93558
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52971396"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59130186"
 ---
 # <a name="get-installed-app-in-team"></a>在团队中获取已安装的应用
 

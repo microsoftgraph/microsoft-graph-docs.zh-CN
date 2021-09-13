@@ -1,16 +1,16 @@
 ---
 title: objectIdentity 资源类型
 description: 表示用于登录用户帐户的标识。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: users
 author: jpettere
-ms.openlocfilehash: a7c2e798d08bf0cd2d3a49af017af1d26f054943fbf827cf6f80d0fc45345fd9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: eebd9387d45ae44543e482ce8d57da61f7dfd4a4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235392"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59108889"
 ---
 # <a name="objectidentity-resource-type"></a>objectIdentity 资源类型
 
@@ -24,9 +24,9 @@ ms.locfileid: "54235392"
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|signInType|string| 指定目录中的用户登录类型，如 `emailAddress` 或 `userName` `federated` 。 在此处，表示颁发者中用户的唯一标识符，该标识符可以是颁发者 `federated` 选择的任何格式。 当登录类型设置为 或 时， **对 issuerAssignedId** 强制执行其他 `emailAddress` 验证 `userName` 。 此属性还可以设置为任何自定义字符串。|
+|signInType|string| 指定目录中的用户登录类型，如 `emailAddress` 或 `userName` `federated` 。 在此处，表示颁发者中用户的唯一标识符，该标识符可以使用颁发 `federated` 者选择的任何格式。 当登录类型设置为 或 时， **对 issuerAssignedId** 强制执行其他 `emailAddress` 验证 `userName` 。 此属性还可以设置为任何自定义字符串。|
 |issuer|string|指定标识的颁发者，例如 `facebook.com` 。<br>对于未 (**signInType** 的本地帐户) ，此属性是本地 `federated` B2C 租户的默认域名，例如 `contoso.onmicrosoft.com` 。<br>对于来自其他 Azure AD 组织的外部用户，这将是联盟组织的域，例如 `contoso.com` 。<br><br>支持 `$filter`。 512 个字符限制。|
-|issuerAssignedId|string|指定颁发者分配给用户的唯一标识符。 颁发者 **与** **issuerAssignedId** 的组合在组织中必须是唯一的。 表示用户的登录名，当 **signInType** 设置为 或 (也称为本地帐户 `emailAddress` `userName`) 。<br>当 **signInType** 设置为： <ul><li>`emailAddress`、 (或以 （如 `emailAddress` `emailAddress1`) **issuerAssignedId）** 开头的自定义字符串必须是有效的电子邮件地址</li><li>`userName`**，issuerAssignedId** 必须是电子邮件地址 [的有效本地部分](https://tools.ietf.org/html/rfc3696#section-3)</li></ul>支持 `$filter`。 100 个字符限制。|
+|issuerAssignedId|string|指定颁发者分配给用户的唯一标识符。 颁发者 **与** **issuerAssignedId** 的组合在组织中必须是唯一的。 表示用户的登录名，当 **signInType** 设置为 或 (也称为本地帐户 `emailAddress` `userName`) 。<br>当 **signInType** 设置为： <ul><li>`emailAddress`、 (或以开头的自定义字符串，) `emailAddress` `emailAddress1` **issuerAssignedId** 必须是有效的电子邮件地址</li><li>`userName`**，issuerAssignedId** 必须是电子邮件地址 [的有效本地部分](https://tools.ietf.org/html/rfc3696#section-3)</li></ul>支持 `$filter`。 100 个字符限制。|
 
 >**注意：** 筛选 **identities** 属性时，您必须同时提供 **issuer** 和 **issuerAssignedId**。
 

@@ -2,15 +2,15 @@
 title: 创建 managedEBookAssignment
 description: 创建新的 managedEBookAssignment 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f002f77c16cfb0ad15ebcc3fe51ff538201b5e7301a0dc94ebc758dc1e690e5b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 86edec6e1ce23dc32e39da498db9ffc583d7f3f2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54130842"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59114370"
 ---
 # <a name="create-managedebookassignment"></a>创建 managedEBookAssignment
 
@@ -41,7 +41,7 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/assignments
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

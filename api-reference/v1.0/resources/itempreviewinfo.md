@@ -2,16 +2,16 @@
 author: kevinlam
 ms.date: 3/16/2018
 title: ItemPreviewInfo
-localization_priority: Normal
+ms.localizationpriority: medium
 description: itemPreviewInfo 资源包含有关如何嵌入 driveItem 预览的信息。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: d6a3eaac24991c4c95da0dd4b4ae2640d6462f95c25b47d0fcbea6ff459962ec
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e0a56b5129e67af8dc0ac7b360664eb31433d137
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54130049"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084298"
 ---
 # <a name="itempreviewinfo-resource-type"></a>itemPreviewInfo 资源类型
 

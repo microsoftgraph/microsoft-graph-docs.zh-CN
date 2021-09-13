@@ -2,15 +2,15 @@
 title: 列出用户
 description: 列出 user 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9c080a4f13234273c5dd37850c486e68ce24ae4f
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 22063ee38e3e4f73c68c0890d5f5bd1853211d6e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58263203"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032781"
 ---
 # <a name="list-users"></a>列出用户
 

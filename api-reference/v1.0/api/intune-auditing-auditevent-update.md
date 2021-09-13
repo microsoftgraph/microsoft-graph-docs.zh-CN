@@ -2,15 +2,15 @@
 title: 更新 auditEvent
 description: 更新 auditEvent 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7029a8947015fd8bc55f8be3a1804ad7e6ed76e10549a106caff41c4a6db7c2a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 655344f88a44874be703b37ae345a62399c27799
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54121842"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110730"
 ---
 # <a name="update-auditevent"></a>更新 auditEvent
 
@@ -41,7 +41,7 @@ PATCH /deviceManagement/auditEvents/{auditEventId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

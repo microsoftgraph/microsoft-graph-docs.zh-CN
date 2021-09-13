@@ -2,15 +2,15 @@
 title: 列出聊天成员。
 description: 检索聊天成员。
 author: bhartono
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 18d075f8bef7871cd5c52644194f5d3aa2a27971
-ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
+ms.openlocfilehash: c3cd11fd0ee024221bfadff0c9be8a866b4826e5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52696245"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59080238"
 ---
 # <a name="list-members-of-a-chat"></a>列出聊天成员。
 
@@ -110,46 +110,46 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')/chats('19%3A8b081ef6-4792-4def-b2c9-c363a1bf41d5_5031bb31-22c0-4f6f-9f73-91d34ab2b32d%40unq.gbl.spaces')/members",
-    "@odata.count": 3,
-    "value": [
-        {
-            "@odata.type": "#microsoft.graph.aadUserConversationMember",
-            "id": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
-            "roles": [
-                "owner"
-            ],
-            "displayName": "John Doe",
-            "userId": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
-            "email": null,
-            "tenantId": "6e5147da-6a35-4275-b3f3-fc069456b6eb",
-            "visibleHistoryStartDateTime": "2019-04-18T23:51:43.255Z"
-        },
-        {
-            "@odata.type": "#microsoft.graph.aadUserConversationMember",
-            "id": "2de87aaf-844d-4def-9dee-2c317f0be1b3",
-            "roles": [
-                "owner"
-            ],
-            "displayName": "Bart Hogan",
-            "userId": "2de87aaf-844d-4def-9dee-2c317f0be1b3",
-            "email": null,
-            "tenantId": "6e5147da-6a35-4275-b3f3-fc069456b6eb",
-            "visibleHistoryStartDateTime": "0001-01-01T00:00:00Z"
-    },
-        {
-            "@odata.type": "#microsoft.graph.aadUserConversationMember",
-            "id": "07ad17ad-ada5-4f1f-a650-7a963886a8a7",
-            "roles": [
-                "owner"
-            ],
-            "displayName": "Minna Pham",
-            "userId": "07ad17ad-ada5-4f1f-a650-7a963886a8a7",
-            "email": null,
-            "tenantId": "6e5147da-6a35-4275-b3f3-fc069456b6eb",
-            "visibleHistoryStartDateTime": "2019-04-18T23:51:43.255Z"
-        }
-    ]
+   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')/chats('19%3A8b081ef6-4792-4def-b2c9-c363a1bf41d5_5031bb31-22c0-4f6f-9f73-91d34ab2b32d%40unq.gbl.spaces')/members",
+   "@odata.count":3,
+   "value":[
+      {
+         "@odata.type":"#microsoft.graph.aadUserConversationMember",
+         "id":"8b081ef6-4792-4def-b2c9-c363a1bf41d5",
+         "roles":[
+            "owner"
+         ],
+         "displayName":"John Doe",
+         "userId":"8b081ef6-4792-4def-b2c9-c363a1bf41d5",
+         "email":null,
+         "tenantId":"6e5147da-6a35-4275-b3f3-fc069456b6eb",
+         "visibleHistoryStartDateTime":"2019-04-18T23:51:43.255Z"
+      },
+      {
+         "@odata.type":"#microsoft.graph.aadUserConversationMember",
+         "id":"2de87aaf-844d-4def-9dee-2c317f0be1b3",
+         "roles":[
+            "owner"
+         ],
+         "displayName":"Bart Hogan",
+         "userId":"2de87aaf-844d-4def-9dee-2c317f0be1b3",
+         "email":null,
+         "tenantId":"6e5147da-6a35-4275-b3f3-fc069456b6eb",
+         "visibleHistoryStartDateTime":"0001-01-01T00:00:00Z"
+      },
+      {
+         "@odata.type":"#microsoft.graph.aadUserConversationMember",
+         "id":"07ad17ad-ada5-4f1f-a650-7a963886a8a7",
+         "roles":[
+            "owner"
+         ],
+         "displayName":"Minna Pham",
+         "userId":"07ad17ad-ada5-4f1f-a650-7a963886a8a7",
+         "email":null,
+         "tenantId":"6e5147da-6a35-4275-b3f3-fc069456b6eb",
+         "visibleHistoryStartDateTime":"2019-04-18T23:51:43.255Z"
+      }
+   ]
 }
 ```
 

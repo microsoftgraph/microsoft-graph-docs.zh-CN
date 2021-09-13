@@ -1,16 +1,16 @@
 ---
 title: 日历：getSchedule
 description: 获取用户、通讯组列表或资源在指定时间段内的忙/闲状态信息。
-localization_priority: Priority
+ms.localizationpriority: high
 author: tariq-sharif
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 267da79cf32f55de94b6d23fd87125c415973f03
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3a6d0fb91584b6158d354f4d880fafe4f6775ed0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054607"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59125410"
 ---
 # <a name="calendar-getschedule"></a>日历：getSchedule
 
@@ -39,7 +39,7 @@ POST /users/{id|userPrincipalName}/calendar/getSchedule
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 | Content-Type  | string | 实体正文中的数据性质（为 application/json）。必填。  |
-| Prefer: outlook.timezone | string | 使用此项指定响应中开始时间和结束时间的时区。如果未指定，则这些时间值采用 UTC 时区格式返回。可选。 |
+| Prefer: outlook.timezone | string | 用于指定响应中开始时间和结束时间的时区。如果未指定，返回的这些时间值采用 UTC 时区。可选。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
@@ -102,7 +102,7 @@ Content-Type: application/json
 
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：可能缩短此处显示的响应对象以提高可读性。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -2,15 +2,15 @@
 title: 列出 managedDeviceMobileAppConfigurationDeviceStatuses
 description: 列出 managedDeviceMobileAppConfigurationDeviceStatus 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9afdb42d0d58b689eb17e0c39fb278b999017dd7c73f94d30f5cce4ed92949a3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fdf023d9b6f8e27b35f2306a0526fdb203e53e3e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54247422"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59068226"
 ---
 # <a name="list-manageddevicemobileappconfigurationdevicestatuses"></a>列出 managedDeviceMobileAppConfigurationDeviceStatuses
 

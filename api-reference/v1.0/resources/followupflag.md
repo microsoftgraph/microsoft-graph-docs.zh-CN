@@ -1,16 +1,16 @@
 ---
 title: followupFlag 资源类型
 description: '允许用户在项中设置标记，供用户稍后跟进。 '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: e45fd04fa084fbc26c8eb43316de2f25b70cc0b7e2d5aa721bfc26ab1cfd0063
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 17d9b1d2e12a33d5df53acf434489377089d89ea
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54180850"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59078852"
 ---
 # <a name="followupflag-resource-type"></a>followupFlag 资源类型
 

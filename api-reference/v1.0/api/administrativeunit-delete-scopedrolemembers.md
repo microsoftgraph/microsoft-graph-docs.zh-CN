@@ -2,15 +2,15 @@
 title: 删除 scopedRoleMember
 description: 从管理单元中删除作用域角色成员。
 author: DougKirschner
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 47d4d6064d51ba068e55ef0308d7d69c90c20c65
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 8379da9a5f6b35caaa23593822df2b806dba51ea
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52991594"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128458"
 ---
 # <a name="remove-a-scopedrolemember"></a>删除 scopedRoleMember
 

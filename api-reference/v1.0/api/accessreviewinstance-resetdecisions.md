@@ -2,15 +2,15 @@
 title: accessReviewInstance：resetDecisions
 description: 将 accessReviewInstance 上的所有 accessReviewInstanceDecisionItem 对象重置为 `notReviewed` 。
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 269c3f4891fb62d9191991ffa50dc70635268020
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 5fb7589e4a5674c5c24e320985071fca1e5965ee
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53209760"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59033075"
 ---
 # <a name="accessreviewinstance-resetdecisions"></a>accessReviewInstance：resetDecisions
 命名空间：microsoft.graph

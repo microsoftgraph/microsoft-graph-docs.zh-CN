@@ -1,16 +1,16 @@
 ---
 title: secureScoreControlStateUpdate 资源类型
 description: 此资源包含由用户更新的控件状态历史记录 (控件状态包括 Default、Ignored、ThirdParty、Reviewed) 。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 3268b5f537b8538173031b3367ff0e13d2873a906dfe01a5b6d6562070812d56
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1e896d1b63a9b6024b62e5d7ada95049e2f717f1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54146361"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084088"
 ---
 #  <a name="securescorecontrolstateupdate-resource-type"></a>secureScoreControlStateUpdate 资源类型
 

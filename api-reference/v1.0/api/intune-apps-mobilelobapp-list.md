@@ -2,15 +2,15 @@
 title: 列出 mobileLobApps
 description: 列出 mobileLobApp 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c01d45923079ba5060d0b0bfe4f713bafa566cc4b012cb422047136868f97ffb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4120bc904584fa5b7f69cf4f1338e5fe785c8bde
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54224143"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59079797"
 ---
 # <a name="list-mobilelobapps"></a>列出 mobileLobApps
 
@@ -41,7 +41,7 @@ GET /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

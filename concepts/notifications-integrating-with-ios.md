@@ -1,14 +1,14 @@
 ---
 title: 将 iOS 应用与用户通知客户端 SDK 相集成
 description: 将 iOS 应用与用户通知客户端 SDK 相集成。
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: notifications
-ms.openlocfilehash: efe4505e0c56e37150f8066f9571c06f2b41797e04c1f671bb790bb27adb00b0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0a73626317195320a274430f32607f13b9920505
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54211724"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59066931"
 ---
 # <a name="integrate-your-ios-app-with-the-client-side-sdk-for-user-notifications"></a>将 iOS 应用与用户通知客户端 SDK 相集成
 
@@ -49,7 +49,7 @@ ms.locfileid: "54211724"
 
 ![iOS 应用的更新通知流](images/notifications-notification-update-ios.png)
 
-请注意，流的第二部分与用于处理新传入通知的流相似。 这是设计使然 - 设计的 SDK 编程模式使应用程序客户端可以相似的方式处理所有类型的用户通知数据更改（新传入的通知、通知状态更改、已删除的通知）。  
+请注意，流程的第二部分与处理新传入通知的流程类似。这是设计使然 - 设计的 SDK 编程模式使应用程序客户端可以相似的方式处理所有类型的用户通知数据更改 (新传入的通知、通知状态更改、已删除的通知)。  
 
 该图显示了以下步骤：
 
@@ -180,7 +180,7 @@ NSArray<MCDUserDataFeedSyncScope*>* syncScopes = @[ [MCDUserNotificationChannel 
 
 ## <a name="receiving-and-managing-user-notifications"></a>接收和管理用户通知
 
-本主题前面的流程图显示，处理来自应用服务器的新传入通知的编程模式与处理从另一个应用客户端实例启动的通知更新或删除的编程模式类似。 以下是处理这些数据更改的步骤。 
+本主题前面的流程图显示，处理来自应用服务器的新传入通知的编程模式与处理从另一个应用客户端实例启动的通知更新或删除的编程模式类似。以下是处理这些数据更改的步骤。 
 
 ### <a name="handling-incoming-push-notification-signal"></a>处理传入推送通知信号
 

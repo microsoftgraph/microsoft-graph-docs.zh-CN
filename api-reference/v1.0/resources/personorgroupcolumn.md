@@ -2,16 +2,16 @@
 author: simonhult
 ms.date: 09/11/2017
 title: PersonOrGroupColumn
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: insights
 description: columnDefinition 资源上的 personOrGroupColumn 指示列值，该值表示从目录中选择的个人或组。
 doc_type: resourcePageType
-ms.openlocfilehash: 728d9244a08d893eacc53f01106d07a952f536f5ea978a03584ed41d3151c3c1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: dd349e34fa08ecce8761e12bb50b45612bf00dcf
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196920"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117791"
 ---
 # <a name="personorgroupcolumn-resource-type"></a>PersonOrGroupColumn 资源类型
 

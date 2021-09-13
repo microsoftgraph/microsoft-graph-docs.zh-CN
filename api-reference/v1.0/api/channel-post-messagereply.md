@@ -2,15 +2,15 @@
 title: 在频道中回复消息
 description: 在渠道中回复现有消息。
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 29b37c02630a0d27e862b1f62e0bb56560d84ac8
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 5a667c82f5b1e19cfb3113fed868d00bfbcb7325
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51506937"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59131006"
 ---
 # <a name="reply-to-a-message-in-a-channel"></a>在频道中回复消息
 

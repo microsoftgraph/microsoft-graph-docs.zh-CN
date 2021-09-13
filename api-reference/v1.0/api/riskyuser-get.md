@@ -2,15 +2,15 @@
 title: 获取 riskyUser
 description: 读取 riskyUser 对象的属性和关系。
 author: cloudhandler
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6a209a07e8246e345a550e106e76a27cc51020c74abd4eb1d1ee7e8c69c47193
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8dd7ac09421456b9d8de417ac034448725b7049a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54155370"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59053285"
 ---
 # <a name="get-riskyuser"></a>获取 riskyUser
 命名空间：microsoft.graph

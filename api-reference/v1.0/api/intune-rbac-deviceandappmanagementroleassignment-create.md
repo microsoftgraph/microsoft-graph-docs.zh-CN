@@ -2,15 +2,15 @@
 title: 创建 deviceAndAppManagementRoleAssignment
 description: 创建新的 deviceAndAppManagementRoleAssignment 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f9a88170231deddb2e597555546473d7821bd6ba87f5cec041a8af107a8132ea
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e0b0310f1f018628b992e6b7f43eafc582fe74f5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54130651"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022112"
 ---
 # <a name="create-deviceandappmanagementroleassignment"></a>创建 deviceAndAppManagementRoleAssignment
 

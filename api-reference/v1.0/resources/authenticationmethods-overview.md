@@ -1,16 +1,16 @@
 ---
 title: Azure AD 身份验证方法 API 概述
 description: 身份验证方法是用户在 Azure AD 中进行身份验证的方式。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: conceptualPageType
-ms.openlocfilehash: b258d9985f1adf60c74e5de26bdbe7c17380ffd139cd681689a9c9f82a3f4393
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 22b9db5d6f38264f12397d4fc63724ce6939063f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54218819"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123774"
 ---
 # <a name="azure-ad-authentication-methods-api-overview"></a>Azure AD 身份验证方法 API 概述
 
@@ -21,7 +21,7 @@ ms.locfileid: "54218819"
 身份验证方法 API 用于管理用户的身份验证方法。 例如：
 
 * 可以检索用户的 FIDO2 安全密钥的详细信息，如果用户丢失了该密钥，则将其删除。
-* 可以检索用户注册Microsoft Authenticator的详细信息，如果用户丢失了电话，可将其删除。
+* 你可以检索用户注册Microsoft Authenticator的详细信息，如果用户丢失了电话，则将其删除。
 
 ## <a name="what-authentication-methods-can-be-managed-in-microsoft-graph"></a>Microsoft Graph 中可以管理哪些身份验证Graph？
 
@@ -35,9 +35,9 @@ Microsoft Graph v1.0 中尚不支持以下身份验证方法。
 
 |身份验证方法       | 说明 |示例     |
 |:---------------------------|:------------|:------------|
-|密码 | 密码当前是 Azure AD 中默认的主身份验证方法。|重置用户密码。|
-|phoneAuthenticationMethod (尚不支持)  |用户可以使用电话通过短信或语音呼叫进行身份验证， ([](/azure/active-directory/authentication/concept-authentication-methods#phone-options)策略策略允许) 。|查看用户的身份验证电话号码。 向用户添加、更新或删除电话号码。 启用或禁用用于短信登录的主移动电话。|
-|电子邮件 |电子邮件地址可以是用户作为 SSPR 密码重置过程Self-Service密码重置 (用户) 过程。|请参阅用户的身份验证电子邮件地址。 向用户添加、更新或删除电子邮件地址。|
+|Password | 密码当前是 Azure AD 中默认的主身份验证方法。|重置用户密码。|
+|phoneAuthenticationMethod (尚不支持)  |用户可以使用电话使用短信或语音呼叫进行身份验证， ([](/azure/active-directory/authentication/concept-authentication-methods#phone-options)策略策略允许) 。|查看用户的身份验证电话号码。 向用户添加、更新或删除电话号码。 启用或禁用用于短信登录的主移动电话。|
+|电子邮件 |电子邮件地址可以是用户作为 SSPR Self-Service密码重置 (的) 一部分。|请参阅用户的身份验证电子邮件地址。 向用户添加、更新或删除电子邮件地址。|
 |临时访问传递 |临时访问传递是一种有时间限制的密码，用作强凭据并允许载入无密码凭据。 | 为用户设置新的临时访问传递。|
 |硬件令牌 | 允许用户使用提供一次代码的物理设备执行多重身份验证。 | 获取分配给用户的硬件令牌。|
 |软件令牌 | 允许用户使用满足一系列函数的一次代码的应用程序执行多重身份验证。 | 获取并删除分配给用户的软件令牌。|

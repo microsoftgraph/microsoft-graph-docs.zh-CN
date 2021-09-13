@@ -2,15 +2,15 @@
 title: 更新用户
 description: 更新 user 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 90a66e139dfc3e6b0c2d6f37db8c8bf42bf80eb1
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: e4c3ca4a84f36090148c6c09f4d6c69b7195aee2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58265189"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59130536"
 ---
 # <a name="update-user"></a>更新用户
 
@@ -41,7 +41,7 @@ PATCH /users/{usersId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

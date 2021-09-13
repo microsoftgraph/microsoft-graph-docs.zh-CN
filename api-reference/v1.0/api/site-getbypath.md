@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: 按SharePoint获取网站
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 description: 检索网站资源的属性和关系。
 doc_type: apiPageType
-ms.openlocfilehash: 33f1d31188e679ffdc271604f016fe5849a9075bad9add8929ea6bd872bc4b50
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9c32c831153af1d0e817ecb7454954b2ced218ea
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54155293"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084949"
 ---
 # <a name="get-a-site-resource-by-path"></a>按路径获取网站资源
 

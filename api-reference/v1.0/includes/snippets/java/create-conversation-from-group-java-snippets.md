@@ -1,25 +1,25 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 3d7c61b21b626aa6e378bf67de358d0c26c2a40075c8aeb56337027495e18000
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4fba759fecabf4738f0bb3370fa7ea58cf7102e4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57106794"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022404"
 ---
 ```java
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Conversation conversation = new Conversation();
-conversation.topic = "New locations for this quarter";
+conversation.topic = "Take your wellness days and rest";
 LinkedList<ConversationThread> threadsList = new LinkedList<ConversationThread>();
 ConversationThread threads = new ConversationThread();
 LinkedList<Post> postsList = new LinkedList<Post>();
 Post posts = new Post();
 ItemBody body = new ItemBody();
 body.contentType = BodyType.HTML;
-body.content = "What do we know so far?";
+body.content = "Contoso cares about you: Rest and Recharge";
 posts.body = body;
 LinkedList<Recipient> newParticipantsList = new LinkedList<Recipient>();
 Recipient newParticipants = new Recipient();

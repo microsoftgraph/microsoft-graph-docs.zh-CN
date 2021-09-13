@@ -1,16 +1,16 @@
 ---
 title: secureScoreControlProfile 资源类型
 description: 表示每个控件数据的租户安全分数。 默认情况下，它返回租户的所有控件，并可以显式拉取单个控件。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: cfb05d70e098a1483827783d2e3e3755f3b9393c619133ea8a547b8d39bfe988
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 856ed0ca50a2aadb6945f5213de2f4b0f9ac286a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54184485"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084102"
 ---
 # <a name="securescorecontrolprofile-resource-type"></a>secureScoreControlProfile 资源类型
 
@@ -32,7 +32,7 @@ ms.locfileid: "54184485"
 
 |名称 |类型 |说明 |
 |:--|:--|:--|
-|id|String|提供程序生成的 GUID/唯一标识符。 只读。 必填。|
+|id|String|提供程序生成的 GUID/唯一标识符。 只读。 必需。|
 |azureTenantId|字符串|租户 ID 的 GUID 字符串。|
 |actionType|String|控件操作类型 (配置、审阅、行为) 。|
 |actionUrl|String|控件可操作位置的 URL。 |
@@ -46,7 +46,7 @@ ms.locfileid: "54184485"
 |remediation|String|该控件将帮助修正哪些内容的说明。|
 |remediationImpact|String|对修正用户的影响的说明。|
 |service|String|拥有 Azure AD (Exchange、Sharepoint、Azure AD) 。|
-|威胁|String collection|控制的威胁列表可缓解 (帐户Breach，dataDeletion，dataExfiltration，dataSpillage，
+|威胁|String collection|威胁列表控制可缓解 (、dataDeletion、dataExfiltration、dataSpillage、accountBreach、dataDeletion、dataExfiltration、dataSpillage、
 elevationOfPrivilege，maliciousInsider，passwordCracking，phishingOrLing，spoofing) 。|
 |tier|String|控制层 (核心、深度防御、高级)    |
 |userImpact|String|对低、中等、高 (控件的用户) 。   |

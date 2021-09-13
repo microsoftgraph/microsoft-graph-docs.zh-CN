@@ -1,17 +1,17 @@
 ---
-title: 请求 Azure AD Graph 和 Microsoft Graph
-description: 介绍 Microsoft Graph请求与 Azure AD 请求的区别，这有助于将应用迁移到较新的服务。
+title: 请求 Azure AD Azure Active Directory (和 Microsoft) Graph 之间的差异Graph
+description: 介绍 Microsoft Graph请求Azure Active Directory (Azure AD) Graph不同，这有助于将应用迁移到较新的服务。
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: 7a127393a6f0daf7743384b95b30e7ed7a1a16ff97522c4cad3b7d2317599b0c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2b253ee68cd0de691d173ebdeefadbe084c5dbc0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54129622"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59078558"
 ---
-# <a name="request-differences-between-azure-ad-graph-and-microsoft-graph"></a>请求 Azure AD Graph 和 Microsoft Graph
+# <a name="request-differences-between-azure-active-directory-azure-ad-graph-and-microsoft-graph"></a>请求 Azure AD Azure Active Directory (和 Microsoft) Graph 之间的差异Graph
 
 本文是步骤 *1：查看迁移应用的* 过程的 API [差异的一部分](migrate-azure-ad-graph-planning-checklist.md)。
 
@@ -28,12 +28,12 @@ Microsoft Graph 和 Azure AD Graph API 都是 REST API，它们各自支持查�
 |请求语法| `https://graph.windows.net/{tenant_id}/` <br> `{resource}?{version}&query-parameters` | `https://graph.microsoft.com/`<br>`{version}/{resource}?query-parameters`|
 |服务 &nbsp; 终结点：||
 |-&nbsp;全局|`https://graph.windows.net`|`https://graph.microsoft.com`|
-|-&nbsp;美国 &nbsp; Gov &nbsp; L4|`https://graph.microsoftazure.us`|`https://graph.microsoft.us`|
+|-&nbsp;US &nbsp; Gov &nbsp; L4|`https://graph.microsoftazure.us`|`https://graph.microsoft.us`|
 |-&nbsp;美国 &nbsp; Gov &nbsp; L5 &nbsp; (DOD) |`https://graph.microsoftazure.us`|`https://dod-graph.microsoft.us`|
 |-&nbsp;德国|`https://graph.cloudapi.de`|`https://graph.microsoft.de`|
 |-&nbsp;中国 &nbsp; (世纪) | `https://graph.chinacloudapi.cn`|`https://microsoftgraph.chinacloudapi.cn`|
 |{tenant_id}|在请求中指定租户的 ID。|可以选择在请求中指定租户 ID，因为这是从访问令牌推断出来的。<br><br>如果指定租户 ID，它将在 请求 URL 中的 `{version}` `{resource}` 和 之间。|
-|{version}|使用必需的查询参数Graph请求中 Azure AD 订阅的发布版本。|将请求中的 Microsoft Graph版本指定为服务终结点之后 URL 路径的一部分。|
+|{version}|使用必需的查询参数Graph请求中 Azure AD 订阅的发布版本。|在请求中指定 Microsoft Graph发布版本，作为服务终结点之后 URL 路径的一部分。|
 
 你可以继续在 Microsoft 应用商店中使用相同的查询参数Graph Azure AD Graph。
 
@@ -53,7 +53,7 @@ Microsoft Graph 和 Azure AD Graph API 都是 REST API，它们各自支持查�
 - 面向版本 1.6 的 Azure AD Graph。
 - 指定为 `contoso.com` 租户 ID。 替代项显示根据访问 `myOrganization` 令牌中的租户 ID 使用别名。
 - 调用 users 资源。
-- 使用 `$filter` query 参数将响应限制为以 开头的给定名称 `Dan` 。
+- 使用 `$filter` 查询参数将响应限制为以 开头的给定名称 `Dan` 。
 
 结果包括用户名为 Daniel、Danforth、Danielle、Danerys 等的用户。
 
@@ -71,17 +71,17 @@ Microsoft Graph 和 Azure AD Graph API 都是 REST API，它们各自支持查�
 
 ### <a name="key-identifiers-objectid-vs-id"></a>密钥标识符：objectId 与 id
 
-在 Azure AD Graph中，所有实体资源类型都有一个唯一标识符 (或) **objectId**。  大多数情况下， (除非另有说明) 在 Microsoft Graph 中称为 **id。**
+在 Azure AD Graph中，所有实体资源类型都有一个唯一标识符 (或) **objectId 。**  大多数情况下， (除非另有说明) 在 Microsoft Graph 中称为 **id。**
 
 ## <a name="default-properties-and-select"></a>默认属性和$select
 
 在 `$select` GET 请求中，使用查询参数自定义响应以包含应用需要的所有属性。
 
-Microsoft Graph或组资源的 get 或 **list** 操作仅返回所有属性的子集，称为 _默认属性_。 默认属性表示资源最常用的属性。 另一方面，Azure AD Graph返回相应资源的所有属性的完整集。
+Microsoft Graph **或** 组资源的 get 或 **list** 操作仅返回所有属性的子集，称为 _默认属性_。 默认属性表示资源最常用的属性。 另一方面，Azure AD Graph返回相应资源的所有属性的完整集。
 
-若要获取 v1.0 中的其他属性，你的应用需要使用查询参数显式请求 `$select` 它们。 这包括你的应用可能使用的任何目录架构扩展。 最佳做法是仅请求应用真正需要的属性。
+若要获取 v1.0 中的其他属性，应用需要使用 查询参数显式请求 `$select` 它们。 这包括你的应用可能使用的任何目录架构扩展。 最佳做法是仅请求应用真正需要的属性。
 
-若要说明这一Graph，请使用"资源管理器"运行以下请求并比较不同的响应。
+为了说明这一Graph，请使用资源管理器运行以下请求并比较不同的响应。
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/
@@ -100,13 +100,13 @@ https://graph.microsoft.com/v1.0/me/?$select=displayName,streetAddress,city,stat
 
 若要了解有关：
 
-- 用户的默认属性，请参阅 [用户](/graph/api/resources/users?view=graph-rest-1.0)
+- 用户的默认属性，请参阅 [用户](/graph/api/resources/users)
 - 参数 `$select` 和其他支持的 ODATA 查询参数，请参阅使用 [查询参数自定义响应](./query-parameters.md)。
 - 这和其他建议的优化，请参阅 [最佳做法](./best-practices-concept.md)。
 
 ## <a name="relationships-and-navigation-properties"></a>关系和导航属性
 
-关系 (或导航属性) 是 Azure AD Graph 和 Microsoft Graph 中的关键概念，用于创建相关资源网络。 例如 **，manager 和** **directReports** 属性扩展用户资源以提供组织层次结构。
+关系 (或导航) 是 Azure AD Graph 和 Microsoft Graph 中的关键概念，用于创建相关资源网络。 例如 **，manager 和** **directReports** 属性扩展用户资源以提供组织层次结构。
 
 关系还定义成员身份，如用户所属的组、属于组或目录角色的成员等。
 
@@ -121,7 +121,7 @@ Azure AD Graph请求 `$link` 用于指示资源之间的关系。  在 Microsoft
 | 列出成员      | ```GET /groups/{id}/members```                | ```GET /groups/{id}/members```               |
 | 删除成员     | ```DELETE /groups/{id}/$link/members/{id}``` | ```DELETE /groups/{id}/members/{id}/$ref``` |
 
-将应用迁移到 Microsoft Graph时，请查找用于关联资源的请求;将其 `$link` 更改为 `$ref` 使用。
+将应用迁移到 Microsoft Graph时，请查找用于关联资源的请求; `$link` 将其更改为 `$ref` 使用。
 
 ## <a name="next-steps"></a>后续步骤
 

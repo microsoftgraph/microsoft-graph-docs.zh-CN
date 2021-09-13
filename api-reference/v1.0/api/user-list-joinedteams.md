@@ -2,15 +2,15 @@
 title: 列出 joinedTeams
 description: 获取用户不是其直接成员的 Microsoft Teams 团队。
 author: nkramer
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e71209c4878e2eb02543d09341ffa4d408906322
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: cf0c49e7b51847070513d4597272adcbe0596a43
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53580910"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104545"
 ---
 # <a name="list-joinedteams"></a>列出 joinedTeams
 
@@ -55,7 +55,7 @@ GET /users/{id | user-principal-name}/joinedTeams
 如果成功，此方法在响应正文中返回`200 OK`响应代码和[team](../resources/team.md)对象集合。
 
 > [!Note]
-> 目前，此 API 调用仅返回 [团队](../resources/team.md)的 **id**、**displayName** 和 **说明** 属性。 若要获取所有属性，请使用“[获取团队](../api/team-get.md)”操作。 有关详细信息，请参阅[已知问题](/graph/known-issues#unable-to-return-all-values-for-properties-for-a-user-joined-teams)。
+> 目前，此 API 调用仅返回 [团队](../resources/team.md)的 **id**、**displayName** 和 **说明** 属性。 若要获取所有属性，请使用[获取团队](../api/team-get.md)操作。 有关详细信息，请参阅[已知问题](/graph/known-issues#unable-to-return-all-values-for-properties-for-a-user-joined-teams)。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

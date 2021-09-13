@@ -1,16 +1,16 @@
 ---
 title: 获取协议
 description: 检索协议对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: c467a87936739a9cd30649ec5a8f2ca8f03b7260
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 16a029a23bec87fb38511b70d5947d748fa6187c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52040138"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59053775"
 ---
 # <a name="get-agreement"></a>获取协议
 

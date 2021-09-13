@@ -1,16 +1,16 @@
 ---
 title: 更新 ipnamedlocation
 description: 更新 ipNamedLocation 对象的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: aaaacbda839d3296be0621b3294b85ddbe3c63b4
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 527b44473920cf35880664a09ac2bee0eb1e89e1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786669"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105046"
 ---
 # <a name="update-ipnamedlocation"></a>更新 ipNamedlocation
 
@@ -47,11 +47,13 @@ PATCH /identity/conditionalAccess/namedLocations/{id}
 
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
+必须将 **@odata.type** 指定为 `#microsoft.graph.ipNamedLocation` 。
+
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |displayName|String|位置的可读名称。|
 |ipRanges|[ipRange](../resources/iprange.md) 集合|IPv4 CIDR 格式的 IP 地址范围列表 (1.2.3.4/32) IETF RFC5962 中任何允许的 IPv6 格式。|
-|isTrusted|布尔值|如果此 `true` 位置是显式信任的，则值为 。|
+|isTrusted|Boolean|如果此 `true` 位置是显式信任的，则值为 。|
 
 ## <a name="response"></a>响应
 

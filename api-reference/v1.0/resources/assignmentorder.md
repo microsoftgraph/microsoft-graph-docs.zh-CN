@@ -2,15 +2,15 @@
 title: assignmentOrder 资源类型
 description: 定义在用户流中收集的属性的顺序。
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 6a68d1442135f62d7debbbed972d2187faab92188185ff5f1c6d75908ec289bd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2b4b4519aab605978f7afba1d538d3c7007b3599
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54126695"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123781"
 ---
 # <a name="assignmentorder-resource-type"></a>assignmentOrder 资源类型
 

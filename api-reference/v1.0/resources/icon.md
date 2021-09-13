@@ -1,16 +1,16 @@
 ---
 title: 图标资源类型
 description: 表示单元格图标。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: ruoyingl
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: e872bf7bccec06d1ac4fb956a0e8e3b244b5bbc8dc7fe1354c9baea8a0492f20
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 73ae9bbe240df7bd1e8ca2b6cb7a4a0556fae0f5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54238122"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59098998"
 ---
 # <a name="icon-resource-type"></a>图标资源类型
 

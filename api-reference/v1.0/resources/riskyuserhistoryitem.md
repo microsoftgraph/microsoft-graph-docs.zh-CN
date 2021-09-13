@@ -2,15 +2,15 @@
 title: riskyUserHistoryItem 资源类型
 description: 有风险的用户历史记录项
 author: cloudhandler
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: c83f35d9d8d187fd3a3bb64d727261431e3b13700735c4ad618f0a01b80fc1ce
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fa835aebf8ab5d1f4e5517ded131d7ac470927ae
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189385"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59108861"
 ---
 # <a name="riskyuserhistoryitem-resource-type"></a>riskyUserHistoryItem 资源类型
 
@@ -30,11 +30,11 @@ ms.locfileid: "54189385"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|活动|[riskUserActivity](../resources/riskuseractivity.md)|与用户风险级别相关的活动更改。|
+|活动|[riskUserActivity](../resources/riskuseractivity.md)|与用户风险级别相关的活动会发生变化。|
 |id|String|继承自 [实体](../resources/entity.md)|
 |initiatedBy|String|执行该操作的主角的 ID。|
 |isDeleted|Boolean| 继承自 [riskyUser](../resources/riskyuser.md)|
-|isProcessing|Boolean| 继承自 [riskyUser](../resources/riskyuser.md)|
+|isProcessing|布尔值| 继承自 [riskyUser](../resources/riskyuser.md)|
 |riskDetail|riskDetail|继承自 [riskyUser](../resources/riskyuser.md)。 可取值为：`none`、`adminGeneratedTemporaryPassword`、`userPerformedSecuredPasswordChange`、`userPerformedSecuredPasswordReset`、`adminConfirmedSigninSafe`、`aiConfirmedSigninSafe`、`userPassedMFADrivenByRiskBasedPolicy`、`adminDismissedAllRiskForUser`、`adminConfirmedSigninCompromised`、`hidden`、`adminConfirmedUserCompromised`、`unknownFutureValue`。|
 |riskLastUpdatedDateTime|DateTimeOffset|继承自 [riskyUser](../resources/riskyuser.md)|
 |riskLevel|riskLevel|继承自 [riskyUser](../resources/riskyuser.md)。 可取值为：`low`、`medium`、`high`、`hidden`、`none`、`unknownFutureValue`。|

@@ -2,15 +2,15 @@
 title: educationSubmission： return
 description: 向学生提供与此提交相关的成绩和反馈。
 author: sharad-sharma-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 8ef40b6ffe95a6e815ede6c44d4d0639be1c2524
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: a6ffac7e2cc4764f05abdcfdb86e2df71fcecf8a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52993370"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016643"
 ---
 # <a name="educationsubmission-return"></a>educationSubmission： return
 

@@ -1,16 +1,16 @@
 ---
 title: openShiftChangeRequest：approve
 description: 批准 openShiftChangeRequest 请求。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: db80db3f4cf3a588280398abc7e1d9798f503a2c
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 54187efc50bebedb915150d150cc728856dfac2b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787630"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59130389"
 ---
 # <a name="openshiftchangerequest-approve"></a>openShiftChangeRequest：approve
 

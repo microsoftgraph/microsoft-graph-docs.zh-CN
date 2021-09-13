@@ -1,16 +1,16 @@
 ---
 title: userIdentity 资源类型
 description: 在 Azure AD 审核日志，这表示启动或受审核活动影响的用户信息。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dhanyahk
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 37fe5dce01b14735b791ed86954afc25a6ea4bcf369227c4b99868b2ecf36b29
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 621574365bc8c14508eb87dc55df60f1fd9a3f08
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54230394"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136297"
 ---
 # <a name="useridentity-resource-type"></a>userIdentity 资源类型
 

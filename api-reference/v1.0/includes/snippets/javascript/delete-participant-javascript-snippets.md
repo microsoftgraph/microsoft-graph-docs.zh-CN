@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: eee3cd74a75f2aab6b86e9192c6dfed39d739f6134bba9d6332547c11cce1acf
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 66c8392b078b134322ffb99b0aa98ef3b6e9bc25
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57279160"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59090210"
 ---
 ```javascript
 
@@ -16,6 +16,7 @@ const options = {
 const client = Client.init(options);
 
 await client.api('/communications/calls/{id}/participants/{id}')
+    .version('beta')
     .delete();
 
 ```

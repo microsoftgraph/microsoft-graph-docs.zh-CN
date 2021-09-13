@@ -1,16 +1,16 @@
 ---
 title: 创建 certificateBasedAuthConfiguration
 description: 使用此 API 创建新的 certificateBasedAuthConfiguration。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: adimitui
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 061b8ec1fa3e0ef9fefbc326854bdb4030b27393
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: 98bf11a685980a4976999369b18767c05c54d243
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58667764"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59131026"
 ---
 # <a name="create-certificatebasedauthconfiguration"></a>创建 certificateBasedAuthConfiguration
 

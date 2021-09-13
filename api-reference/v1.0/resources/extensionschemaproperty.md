@@ -1,16 +1,16 @@
 ---
 title: extensionSchemaProperty 资源类型
 description: 使用 **extensionSchemaProperty** 资源将属性的名称及其类型定义为 schemaExtension 定义的一部分。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 493b42da4fc73d7bf0e37bb0be6f80be3754e20441568bb11d371c996819e8b4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 76f1c32857eb2912c5db85896277f0b80b4e1e0a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54141698"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123494"
 ---
 # <a name="extensionschemaproperty-resource-type"></a>extensionSchemaProperty 资源类型
 

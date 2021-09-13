@@ -1,16 +1,16 @@
 ---
 title: mailSearchFolder 资源类型
 description: mailSearchFolder 是用户邮箱中的虚拟文件夹，其中包含符合指定搜索条件的所有电子邮件项目。 mailSearchFolder 继承自 mailFolder。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 85d64d007f8a74f1475156a48dd3c281c591678838ca19f4644b1df3eec4c038
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 077ba877c80987456278bec654b3622da2b1ecc3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54141488"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036128"
 ---
 # <a name="mailsearchfolder-resource-type"></a>mailSearchFolder 资源类型
 
@@ -36,8 +36,8 @@ ms.locfileid: "54141488"
 | [列出搜索文件夹](../api/mailfolder-list-childfolders.md) | [mailFolder](mailfolder.md) 集合 | 列出此用户邮箱中所有文件夹，包括搜索文件夹。 |
 | [获取搜索文件夹](../api/mailfolder-get.md) | [mailSearchFolder](mailsearchfolder.md) | 获取指定的搜索文件夹。 |
 | [更新搜索文件夹](../api/mailsearchfolder-update.md) | [mailSearchFolder](mailsearchfolder.md) | 更新指定的搜索文件夹。 |
-| [删除搜索文件夹](../api/mailfolder-delete.md) | 无 | 删除指定的搜索文件夹。 |
-| [列出搜索文件夹中的所有邮件](../api/mailfolder-list-messages.md) | [message](message.md) 集合 | 列出指定搜索文件夹中的所有邮件。 |
+| [删除搜索文件夹](../api/mailfolder-delete.md) | None | 删除指定的搜索文件夹。 |
+| [列出搜索文件夹中的所有邮件](../api/mailfolder-list-messages.md) | [邮件](message.md)集合 | 列出指定搜索文件夹中的所有邮件。 |
 
 ## <a name="properties"></a>属性
 

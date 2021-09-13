@@ -1,16 +1,16 @@
 ---
 title: 获取 dataPolicyOperation
 description: 检索 dataPolicyOperation 对象的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 60284a0664c693168aa4279a1c48a6a6278d45eb
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 8b3d3ffa73ada9a12eece608fb9038ba1c5446b8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52039795"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063494"
 ---
 # <a name="get-datapolicyoperation"></a>获取 dataPolicyOperation
 

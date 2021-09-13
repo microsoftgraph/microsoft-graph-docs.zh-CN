@@ -2,15 +2,15 @@
 title: 列出 organizations
 description: 列出 organization 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dac123522e191c065de86160c658f4bc700c7b9b165fb5c0d8f46839eaa066b6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cbeb5b41f41b25dd20909164109e357be539b37c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54212422"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59119287"
 ---
 # <a name="list-organizations"></a>列出 organizations
 
@@ -41,7 +41,7 @@ GET /organization
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

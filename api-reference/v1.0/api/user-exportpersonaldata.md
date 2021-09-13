@@ -1,16 +1,16 @@
 ---
 title: user： exportPersonalData
 description: 提交由公司管理员提出的数据策略操作请求，以导出组织用户的数据。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 56e42bbde7df9ea08405616eaab1342ac654e8eb
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 5a1a31684aadd660ff2d85a21db5a6a710cc629a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787721"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59090003"
 ---
 # <a name="user-exportpersonaldata"></a>user： exportPersonalData
 
@@ -45,7 +45,7 @@ POST /users/{id}/exportPersonalData
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|storageLocation|String|这是一个共享访问签名 (SAS) URL Azure 存储帐户，将数据导出到其中。|
+|storageLocation|String|这是一个共享访问签名 (SAS) URL Azure 存储帐户，数据应导出到其中。|
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `202 Accepted` 响应代码。 它不会在响应正文中返回任何内容。 该响应包含以下响应标头。

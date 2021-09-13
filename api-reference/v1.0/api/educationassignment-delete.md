@@ -2,15 +2,15 @@
 title: 删除 educationAssignment
 description: 删除现有工作分配。 只有班级内的教师才能删除作业。
 author: sharad-sharma-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 683ecb684765710d1072b94a8557863156a55a5e
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 2d679a13a3a90853e246616930c0dc5e834fe9f8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52991415"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100216"
 ---
 # <a name="delete-educationassignment"></a>删除 educationAssignment
 

@@ -2,15 +2,15 @@
 title: 更新用户
 description: 更新 user 对象的属性。
 author: jpettere
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: b43440be1be87f4ff7846d21b5e7d98039829021
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 7da1279a39fd98e0284d875077a168bb4e5934c9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256548"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109652"
 ---
 # <a name="update-user"></a>更新用户
 

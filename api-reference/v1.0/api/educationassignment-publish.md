@@ -1,16 +1,16 @@
 ---
 title: 发布教育作业
 description: 此操作将发布教育作业。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 0ef7011e283e9c9c1139516a0261b52e4cfdfff5
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 8156dc3b0fb55c92684851649d5ae339d6bfe5d1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52993213"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020103"
 ---
 # <a name="publish-an-education-assignment"></a>发布教育作业
 

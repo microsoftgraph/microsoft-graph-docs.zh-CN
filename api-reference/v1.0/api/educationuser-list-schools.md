@@ -2,15 +2,15 @@
 title: 列出 educationUser 的学校
 description: 检索用户所在的学校列表。
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 180309cb87e3d8678e81235309338a1817fb0b91
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: 07701335c8d9ab476e821b883fd951cd4675c7de
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52911996"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59114559"
 ---
 # <a name="list-schools-of-an-educationuser"></a>列出 educationUser 的学校
 

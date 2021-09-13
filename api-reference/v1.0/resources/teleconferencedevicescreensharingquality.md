@@ -1,16 +1,16 @@
 ---
 title: teleconferenceDeviceScreenSharingQuality 资源类型
 description: 表示视频电话会议设备屏幕共享质量数据。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 626d0ba55080094a609fcf4496bae520266e1537b77a83457df0042093470bb4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 604aeb2151a7fd6cfc4b85bc3cab1fb373739eb8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54169233"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128065"
 ---
 # <a name="teleconferencedevicescreensharingquality-resource-type"></a>teleconferenceDeviceScreenSharingQuality 资源类型
 

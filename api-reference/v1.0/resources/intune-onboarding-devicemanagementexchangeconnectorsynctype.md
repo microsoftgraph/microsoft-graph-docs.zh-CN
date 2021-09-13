@@ -2,15 +2,15 @@
 title: deviceManagementExchangeConnectorSyncType 枚举类型
 description: 请求的 Exchange 连接器同步的类型。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f2931b3e6b0b353d44d67a33e7bae0c5c8849f3b01beda6f75116bd9f95aa758
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b9bb7d4b37254c69901717378c46921238a18756
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54202264"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59089408"
 ---
 # <a name="devicemanagementexchangeconnectorsynctype-enum-type"></a>deviceManagementExchangeConnectorSyncType 枚举类型
 

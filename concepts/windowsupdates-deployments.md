@@ -2,15 +2,15 @@
 title: Windows Update for Business 部署服务中的部署
 description: 部署是 Windows Update for Business 部署服务的基础。 通过部署，你可以将一组设备作为目标，以从 Windows 更新（如软件更新）接收特定内容。
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: 59cceb1db6bf3d9b045d2a734ae25561ce68fedfa50e7736fa4461c667b1b05f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 550879fed2ea694f4c7c8c9dd5470c2eeace446b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54225627"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117576"
 ---
 # <a name="deployments-in-the-windows-update-for-business-deployment-service"></a>Windows Update for Business 部署服务中的部署
 
@@ -20,7 +20,7 @@ ms.locfileid: "54225627"
 
 1. 内容：可从目录部署的更新。 这由 [deployableContent](/graph/api/resources/windowsupdates-deployablecontent)**类型的** content 属性表示。
 2. 访问群体：用于接收内容的设备。 这是[deploymentAudience 类型的访问群体](/graph/api/resources/windowsupdates-deploymentaudience)关系。 
-3. 设置：管理内容传递到设备的方式和时间的设置。 这由 [deploymentSettings](/graph/api/resources/windowsupdates-deploymentsettings)类型的 **settings** 属性表示。
+3. 设置：用于管理内容传递到设备的方式和时间的设置。 这由 [deploymentSettings](/graph/api/resources/windowsupdates-deploymentsettings)类型的 **settings** 属性表示。
 4. 状态：部署在其生命周期中的当前状态。 这由 [deploymentState](/graph/api/resources/windowsupdates-deploymentstate)类型的 **state** 属性表示。
 
 ## <a name="create-a-deployment-with-content-and-an-audience"></a>创建包含内容和访问群体部署的部署
@@ -81,8 +81,8 @@ ms.locfileid: "54225627"
 
 ## <a name="multiple-deployments"></a>多个部署
 
-你可以一次将设备分配给多个部署。 这些部署可用于相同更新类别的内容 (例如，所有部署都是功能更新) ，或用于不同更新类别的内容。
+你可以一次将设备分配给多个部署。 这些部署可以针对相同更新类别的内容 (例如，所有部署都是功能更新) 或用于不同更新类别的内容。
 
 为不同更新类别的内容分配设备 (例如功能更新和快速质量更新) 时，部署服务根据 Microsoft 的建议按顺序提供内容。
 
-为同一更新类别 (的内容分配设备时 (例如，功能更新版本 20H1 和 20H2，或 2021 年 3 月和 2021 年 4 月的质量更新) 部署服务会提供 Microsoft 排名更高的内容。 对于功能更新和质量更新，最新更新的排名更高。 如果其中一个部署仍为设备计划，并且尚未准备好提供内容，则此行为不适用。 在这种情况下，其他部署将内容交付到设备。
+当您为同一更新类别 (的内容分配设备（例如，功能更新版本 20H1 和 20H2）或 2021 年 3 月和 2021 年 4 月的质量更新（从) 年 3 月到 2021 年 4 月）时，部署服务会提供 Microsoft 排名更高的内容。 对于功能更新和质量更新，最新更新的排名更高。 如果其中一个部署仍为设备计划，并且尚未准备好提供内容，则此行为不适用。 在这种情况下，其他部署将内容交付到设备。

@@ -2,15 +2,15 @@
 title: presence： clearPresence
 description: 清除用户的应用程序状态会话状态信息。
 author: jsandoval-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: fcac210b9be3a9358133e22a6e8048b153c23126
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: a132bc090bedbb117ea51a20ea85341fd345d481
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514212"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085257"
 ---
 # <a name="presence-clearpresence"></a>presence： clearPresence
 

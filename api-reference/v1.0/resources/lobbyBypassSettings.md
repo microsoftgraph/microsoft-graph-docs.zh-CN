@@ -2,15 +2,15 @@
 title: lobbyBypassSettings 资源类型
 description: 指定哪些参与者可以绕过会议厅。
 author: mkhribech
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: e837f5e6b521988562f4d031845bf8c6cd63a3c4f80b49e543522a21eccb374f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d850b6335d3a3446516c4fccad1e1dd81518a189
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54126415"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134736"
 ---
 # <a name="lobbybypasssettings-resource-type"></a>lobbyBypassSettings 资源类型
 
@@ -23,13 +23,13 @@ ms.locfileid: "54126415"
 | 属性              | 类型             | 说明                                                                                                                                                          |
 | --------------------- | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | scope                 | [lobbyBypassScope](#lobbybypassscope-values) | 指定自动获准加入会议、绕过会议厅的参与者类型。 下表列出了可能的值。 可选。 |
-| isDialInBypassEnabled | Boolean          | 指定是否始终允许拨入呼叫者绕过大厅。 可选。                                                                                   |
+| isDialInBypassEnabled | 布尔值          | 指定是否始终允许拨入呼叫者绕过大厅。 可选。                                                                                   |
 
 ### <a name="lobbybypassscope-values"></a>lobbyBypassScope 值
 
 | 值                    | 说明                                                                                                                                                                     |
 | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| organizer － 组织者                | 仅组织者可以进入会议，绕过会议厅。 所有其他参与者都放置在会议厅中。                                                   |
+| 组织者                | 仅组织者可以进入会议，绕过会议厅。 所有其他参与者都放置在会议厅中。                                                   |
 | 组织             | 只有来自同一公司的参与者可以绕过会议厅参加会议。 所有其他参与者都放置在会议厅中。                         |
 | organizationAndFederated | 只有来自同一公司或受信任组织的参与者可以绕过会议厅参加会议。 所有其他参与者都放置在会议厅中。 |
 | everyone                 | 每个人都可以参加会议。 会议厅中不放置任何参与者。                                                                                         |

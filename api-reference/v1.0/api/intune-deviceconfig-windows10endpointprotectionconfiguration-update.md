@@ -2,15 +2,15 @@
 title: 更新 windows10EndpointProtectionConfiguration
 description: 更新 windows10EndpointProtectionConfiguration 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c74db1d0df974f2d45779d54030b390f1afd3760cebff11984cbbc1aa3499d88
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5005b6ce12bd0d817150f1d8443d123fbbae057d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54135622"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110646"
 ---
 # <a name="update-windows10endpointprotectionconfiguration"></a>更新 windows10EndpointProtectionConfiguration
 

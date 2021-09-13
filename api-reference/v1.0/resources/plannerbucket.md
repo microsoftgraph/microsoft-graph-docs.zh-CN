@@ -2,21 +2,21 @@
 title: plannerBucket 资源类型
 description: ) 中计划的任务Microsoft 365。 它包含在 plannerPlan 中，并且可以具有 plannerTasks 的集合。
 author: TarkanSevilmis
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: ee603f0c19c32e26abd4a18a17b3055815460930a63dcad306c00f8e2ba89f84
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 46360d413f676e6420f28b94b5ba91ec9237e681
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54154922"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129843"
 ---
 # <a name="plannerbucket-resource-type"></a>plannerBucket 资源类型
 
 命名空间：microsoft.graph
 
-**plannerBucket** 资源表示 (中任务的存储桶) 或"自定义列Microsoft 365。 它包含在 [plannerPlan 中](plannerplan.md) ，可以有 [plannerTasks 集合](plannertask.md)。
+**plannerBucket** 资源表示 (计划中的任务) 或"自定义列"Microsoft 365。 它包含在 [plannerPlan 中](plannerplan.md) ，可以有 [plannerTasks 集合](plannertask.md)。
 
 
 

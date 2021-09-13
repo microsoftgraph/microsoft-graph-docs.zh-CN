@@ -1,16 +1,16 @@
 ---
 title: 发起者资源类型
 description: 描述发起预配事件的人或发起者。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: ArvindHarinder1
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: b62c087f8a3519c80c5c3cda0103fd56a2e40f6c5abd0cedf4389270cce85300
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5a00be289964c749adcea2b7f4df80dd477c1a99
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178407"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129857"
 ---
 # <a name="initiator-resource-type"></a>发起者资源类型
 

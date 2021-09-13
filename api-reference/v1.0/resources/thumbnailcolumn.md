@@ -2,15 +2,15 @@
 author: swapnil1993
 title: thumbnailColumn 资源类型
 description: thumbnailColumn 资源指示列包含有关缩略图的信息。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 1ce09cf53291717c20fa0efbbc6753de8d13a8f1
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: b162bc8b8c65cade71401cb87bbf717beb185dd8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696476"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59122941"
 ---
 # <a name="thumbnailcolumn-resource-type"></a>thumbnailColumn 资源类型
 

@@ -3,14 +3,14 @@ title: callMediaState 资源类型
 description: 表示呼叫的媒体状态。
 author: ananmishr
 ms.prod: cloud-communications
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.openlocfilehash: 6e02c1fd4105e65622c6c1939ca3037e44d040d19909e8599d7af81e6dbae4f7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d07562bfaf14a69175535f8b38b73f56fdb0faa8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54141831"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104360"
 ---
 # <a name="callmediastate-resource-type"></a>callMediaState 资源类型
 

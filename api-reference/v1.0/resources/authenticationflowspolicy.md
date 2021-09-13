@@ -2,15 +2,15 @@
 title: authenticationFlowsPolicy 资源类型
 description: '表示租户级别的自助注册体验策略配置，允许外部用户请求注册以进行批准。 '
 author: linkhp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: a50d7ed083672577dcba2eaa45fc3a826d52cce017701d65694f07fefb5a4edb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 108b326010749235a2ecd631a4287d895de4ff71
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54216950"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127057"
 ---
 # <a name="authenticationflowspolicy-resource-type"></a>authenticationFlowsPolicy 资源类型
 

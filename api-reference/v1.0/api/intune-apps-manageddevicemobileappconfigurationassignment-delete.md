@@ -2,15 +2,15 @@
 title: 删除 managedDeviceMobileAppConfigurationAssignment
 description: 删除 managedDeviceMobileAppConfigurationAssignment。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c10e553dfc0e09fc7b676feaf9f88817d914bf864037865967f8a6bb4c9fbb4b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 186006b8a145ee48cbc2862ccddb909587a801f7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54164060"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59130872"
 ---
 # <a name="delete-manageddevicemobileappconfigurationassignment"></a>删除 managedDeviceMobileAppConfigurationAssignment
 
@@ -41,7 +41,7 @@ DELETE /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfi
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

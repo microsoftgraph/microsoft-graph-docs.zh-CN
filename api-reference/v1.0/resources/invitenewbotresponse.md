@@ -2,15 +2,15 @@
 title: inviteNewBotResponse 资源类型
 description: 包含对请求的响应，请求让参与者加入通知作为传入呼叫通知再次发送到所需位置。
 author: yizhenww
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 79f7f4b00aa8e549090ec06b5a22b522b9d966af86df02caf40762b0f661246a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cca303fff854fddff56f6bc8ffd30160f390401c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189476"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084403"
 ---
 # <a name="invitenewbotresponse-resource-type"></a>inviteNewBotResponse 资源类型
 

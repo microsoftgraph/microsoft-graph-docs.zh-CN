@@ -2,15 +2,15 @@
 title: resourceVisualization 资源类型
 description: 包含属性的复杂Insights。
 author: simonhult
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: a8f5d97a41e28e103d6cf756bb08790deef8c1ee0fa4a44b40a363bc759cf8ae
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e35848be021df48cb2ff10533bf597e91e58db24
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54126569"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109155"
 ---
 # <a name="resourcevisualization-resource-type"></a>resourceVisualization 资源类型
 
@@ -51,7 +51,7 @@ ms.locfileid: "54126569"
 | previewImageUrl       | String        | 指向项目的预览图像的 URL。 |
 | previewText           | String        | 项的预览文本。 |
 | containerWebUrl       | String        | 指向存储项目的文件夹的路径。 |
-| containerDisplayName  | String        | 一个描述项存储位置的字符串。 例如，网站名称SharePoint或用于标识项目存储OneDrive所有者的用户名。  |
+| containerDisplayName  | String        | 一个描述项存储位置的字符串。 例如，网站名称SharePoint或标识项目存储OneDrive所有者的用户名。  |
 | containerType         | String | 可用于按存储文件的容器类型进行筛选。 例如 Site 或 OneDriveBusiness。       |
 
 ## <a name="type-property-values"></a>类型属性值
@@ -87,7 +87,7 @@ ms.locfileid: "54126569"
 注意： `spsite` 可能需要按 `lastUsed/lastAccessedDateTime` desc 排序才能检索有效结果
 
 ## <a name="containertype-property-values"></a>containerType 属性值
-支持的类型可能因 [officeGraphInsights](officegraphinsights.md) 返回文件的容器不同。 例如，仅 [sharedInsight](insights-shared.md) 见解从"DropBox"、"Box"和"GDrive"返回文件。
+受支持的类型可能因 [officeGraphInsights](officegraphinsights.md) 返回文件的容器不同。 例如，仅 [sharedInsight](insights-shared.md) 见解从"DropBox"、"Box"和"GDrive"返回文件。
 
 -   OneDriveBusiness
 -   Site

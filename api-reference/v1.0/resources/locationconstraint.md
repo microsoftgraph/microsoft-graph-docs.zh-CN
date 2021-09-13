@@ -1,16 +1,16 @@
 ---
 title: locationConstraint 资源类型
 description: 客户端声明的会议地点条件。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: harini84
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 20e246cd8a55012327d7d357d869b73c7578903efed859ec2ada92788a608068
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a2cafad390f0283ddefa09ea25f9ddf8d16b4dd5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235406"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134694"
 ---
 # <a name="locationconstraint-resource-type"></a>locationConstraint 资源类型
 

@@ -1,16 +1,16 @@
 ---
 title: rubricQuality 资源类型
 description: 标准的质量。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 6230732caf190bc255f63e7eee79af6971d3e4a805f1ead94332c13b6115555b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f75b873d37acfa23b7c60a9cd435948b73c0eb7a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54211848"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117765"
 ---
 # <a name="rubricquality-resource-type"></a>rubricQuality 资源类型
 

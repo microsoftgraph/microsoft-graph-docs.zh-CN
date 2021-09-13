@@ -2,15 +2,15 @@
 author: daspek
 title: itemActivityTimeSet 资源类型
 description: itemActionSet 对象提供有关在项目上发生的活动的信息。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 1e69ac8c539dcce56f369adec3d0e634afeeece06cc0b043b48e10f681d12ad8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: be02959545592232ec9269df6613734c78f7862c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54130077"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084345"
 ---
 # <a name="itemactivitytimeset-resource-type"></a>itemActivityTimeSet 资源类型
 

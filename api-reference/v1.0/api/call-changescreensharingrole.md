@@ -2,15 +2,15 @@
 title: call： changeScreenSharingRole
 description: 允许应用程序与组呼叫的参与者共享屏幕内容。
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 2defaeb01463fbaed957990716d2870844345088
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: ff95c75b7f3500fcbf789ac6e3461a2043d3caa8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786052"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59114755"
 ---
 # <a name="call-changescreensharingrole"></a>call： changeScreenSharingRole
 

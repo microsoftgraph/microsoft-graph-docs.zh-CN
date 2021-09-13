@@ -2,15 +2,15 @@
 title: 列出提交资源
 description: 列出与提交关联的资源。
 author: sharad-sharma-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 74a26d9813c7660917a8d59e2a55a3d9eef91cd8
-ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
+ms.openlocfilehash: e175e63394e540267e7f9df3f04dc33f45ba0039
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58367119"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016650"
 ---
 # <a name="list-submission-resources"></a>列出提交资源
 
@@ -41,7 +41,7 @@ GET /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc
 
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 标头        | 值                     |
 | :------------ | :------------------------ |

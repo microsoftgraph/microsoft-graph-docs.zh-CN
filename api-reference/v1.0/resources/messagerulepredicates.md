@@ -2,15 +2,15 @@
 title: messageRulePredicates 资源类型
 description: 表示适用于某个规则的一组条件和例外情况。
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 0b4fe403387cb59b653e4cb5dfde24f0a8d781fcdc8b33344d91153031c01b56
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 483c2a3db82c8412cbdf11848dac24e96e6460d6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178189"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134561"
 ---
 # <a name="messagerulepredicates-resource-type"></a>messageRulePredicates 资源类型
 

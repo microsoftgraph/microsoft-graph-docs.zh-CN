@@ -1,16 +1,16 @@
 ---
 title: 删除 tokenLifetimePolicy
 description: 从应用程序中删除 tokenLifetimePolicy。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 3840de12c08d35629c3d383d3056104d757ce236
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: d3dc78c9e78808fd31ccf85c7ca954993ec5fca9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054187"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020159"
 ---
 # <a name="remove-tokenlifetimepolicy"></a>删除 tokenLifetimePolicy
 

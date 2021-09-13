@@ -2,15 +2,15 @@
 title: 列出 mobileAppContents
 description: 列出 mobileAppContent 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e3a39495fdd791e7b077d31dae56f395307b5a5bd30de0764948f27f596fe707
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a525838c9218ceafcbe332fcb715e8c3ff9a740b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54160525"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59079916"
 ---
 # <a name="list-mobileappcontents"></a>列出 mobileAppContents
 

@@ -1,24 +1,24 @@
 ---
 title: 活动资源类型
-description: 表示应用中的单个活动，例如，电视、文档或游戏中的当前活动。 当用户参与该活动时，该活动将捕获为指示该活动的开始时间和结束时间的历史项。 随着用户随着时间的过去重新参与该活动，将针对单个用户活动记录多个历史记录项。
-localization_priority: Normal
+description: 表示应用中的单个活动 -例如，电视节目、文档或游戏中的当前活动。 当用户参与该活动时，该活动将捕获为指示该活动的开始时间和结束时间的历史项。 随着用户随着时间的过去重新参与该活动，将针对单个用户活动记录多个历史记录项。
+ms.localizationpriority: medium
 ms.prod: project-rome
 author: ailae
 doc_type: resourcePageType
-ms.openlocfilehash: df12d18eb5314e4107863ef072e4c4dd412de83668f5200c241df9b97893995d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 06dfcd951826e65fc8c781b84156d89e542df370
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54229008"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59028791"
 ---
 # <a name="activity-resource-type"></a>活动资源类型
 
 命名空间：microsoft.graph
 
-表示应用中的单个活动，例如，电视、文档或游戏中的当前活动。 当用户参与该活动时，该活动将捕获为指示该活动的开始时间和[](projectrome-historyitem.md)结束时间的历史项。 随着用户随着时间的过去重新参与该活动，将针对单个用户活动记录多个历史记录项。
+表示应用中的单个活动 -例如，电视节目、文档或游戏中的当前活动。 当用户参与该活动时，该活动将捕获为指示该活动的开始时间和[](projectrome-historyitem.md)结束时间的历史项。 随着用户随着时间的过去重新参与该活动，将针对单个用户活动记录多个历史记录项。
 
-可以使用 Microsoft Graph中的活动，以便用户跨多台设备返回到他们在应用中所执行的活动。 你的应用创建的活动显示在所有用户的设备上，并作为指向应用中特定内容的深层链接向用户公开。 你可以将应用中的特定内容表示为在 Windows 中展示的目标，并通过通知在 iOS 和 Android Cortana访问。
+可以使用 Microsoft Graph中的活动，以便用户跨多台设备重新回到他们在应用中所执行的活动。 你的应用创建的活动显示在所有用户的设备上，并作为指向应用中特定内容的深层链接向用户公开。 你可以将应用中的特定内容表示为在 Windows 中展示的目标，并通过通知在 iOS 和 Android Cortana访问。
 
 由于每个应用都不同，因此由你了解将应用程序中的操作映射到将在"日程表"和"日程表"Cortana活动的最佳方法。 例如，游戏可能会为每个市场活动创建一个活动，文档创作应用可能会为每个唯一文档创建一个活动，业务线应用可能会为每个工作流创建一个活动。
 
@@ -43,12 +43,12 @@ ms.locfileid: "54229008"
 |id | String | 用于 URL 寻址的服务器生成的 ID。|
 |appActivityId | String | 必填。 应用上下文中的唯一活动 ID - 由调用方提供，此后不可变。|
 |activitySourceHost | String | 必填。 表示应用的跨平台标识映射的域的 URL。 映射存储为托管在域上的 JSON 文件，或可通过 Windows 开发人员中心。 JSON 文件命名为跨平台应用标识符，并托管在 HTTPS 域的根目录（顶级域）或包含子域。 例如：https://contoso.com 或 https://myapp.contoso.com，但不是 https://myapp.contoso.com/somepath。 每个跨平台应用标识 (一个唯一的文件和) 子域。 例如，Word 和 Word 应用程序需要单独的文件和PowerPoint。|
-|appDisplayName | String | 可选。 在用户的本地设备上未安装应用时，用于生成活动以使用的应用的简短文本说明。|
+|appDisplayName | String | 可选。 用于在用户的本地设备上未安装应用时生成活动以使用的应用的简短文本说明。|
 |activationUrl | String | 必填。 用于以 appId 表示的最佳本机体验启动活动的 URL。 如果不存在本机应用，则可能会启动基于 Web 的应用。|
 |fallbackUrl | String | 可选。 用于在基于 Web 的应用中启动活动的 URL（如果可用）。|
 |contentUrl | String | 可选。 在内容可以在本机或基于 Web 的应用体验之外呈现时使用 (例如，指向 RSS 源中的项的指针) 。|
-|visualElements| [visualInfo](../resources/projectrome-visualinfo.md) | 必填。 包含在 UX 中呈现活动的信息的对象。|
-|contentInfo | 未键入的 JSON 对象 | 可选。 一段自定义数据 - JSON-LD 根据自定义语法对内容 schema.org[说明。](https://schema.org)|
+|visualElements| [visualInfo](../resources/projectrome-visualinfo.md) | 必需。 包含在 UX 中呈现活动的信息的对象。|
+|contentInfo | 未键入的 JSON 对象 | 可选。 一条自定义数据 - JSON-LD 根据自定义语法对内容 schema.org[说明。](https://schema.org)|
 |expirationDateTime | DateTimeOffset | 由服务器设置。 对象在服务器上过期时的日期/时间（UTC 时间）。|
 |status | status | 由服务器设置。 用于标识有效对象的状态代码。 值：活动、已更新、已删除、已忽略。|
 

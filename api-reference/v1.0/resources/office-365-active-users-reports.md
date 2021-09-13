@@ -1,16 +1,16 @@
 ---
 title: Microsoft 365活动用户报告
 description: 可以使用活动Microsoft 365报告了解组织中个人使用的产品许可证数量，并向下钻取有关哪些用户使用哪些产品的信息。 此类报表有助于管理员发现未充分利用的产品或可能需要获取额外培训或信息的用户。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: 7d7e36e69c8819cfe7ddc862208c9a7eb21e99d63fada80a4ad425777a6c56a8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: da908b20bf182ac45b5deb29da1c04c0207382fc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54169408"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094217"
 ---
 # <a name="microsoft-365-active-users-reports"></a>Microsoft 365活动用户报告
 

@@ -2,15 +2,15 @@
 title: ratingCanadaTelevisionType 枚举类型
 description: 加拿大电视内容分级标签
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: edcbec763037ae989258fde39b784c7ccf33d5732a347d2d12fefee880726192
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a15ac009939691dcfe927300fd6e6efb0d0bcd39
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163731"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59052991"
 ---
 # <a name="ratingcanadatelevisiontype-enum-type"></a>ratingCanadaTelevisionType 枚举类型
 

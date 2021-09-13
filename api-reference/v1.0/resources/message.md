@@ -2,15 +2,15 @@
 title: 邮件资源类型
 description: mailFolder 中的邮件。
 author: abheek-das
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 172156bf63c045370e58c63a8933bcf3575a522408868d658a01683a67e1c0e7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1bb567cac7a49f31973b2bc42aa506863064cba2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54237642"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067120"
 ---
 # <a name="message-resource-type"></a>邮件资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "54237642"
 
 mailFolder 中的邮件。
 
-从 Exchange Online 邮箱发送的单个电子邮件的 **toRecipients**、**ccRecipients** 和 **bccRecipients** 属性包含的最大收件人数为 500。 有关详细信息，请参阅[发送限制](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits)。
+从 Exchange Online 邮箱发送的单个电子邮件的 **toRecipients**、**ccRecipients** 和 **bccRecipients** 属性中包含的最大收件人总数为 500。有关详细信息，请参阅 [发送限制](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits)。
 
 该资源支持：
 
@@ -71,29 +71,29 @@ mailFolder 中的邮件。
 |changeKey|String|邮件的版本。|
 |conversationId|String|电子邮件所属对话的 ID。|
 |conversationIndex|Edm.Binary|指出消息在对话中的位置。|
-|createdDateTime|DateTimeOffset|创建邮件的日期和时间。 <br><br> 日期和时间信息采用 ISO 8601 格式，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
+|createdDateTime|DateTimeOffset|创建邮件的日期和时间。 <br><br> 日期和时间信息使用 ISO 8601 格式并始终采用 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
 |flag|[followupFlag](followupflag.md)|指示邮件的状态、开始日期、截止日期或完成日期的标志值。|
 |发件人|[recipient](recipient.md)|发送邮件邮箱的所有者。 在多数情况中，此数值与“**发件人**”属性相同，但共享或委派情景除外。 值必须对应于使用的实际邮箱。 查看更多有关为邮件[设置 from 和 sender 属性](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties)的信息。|
 |hasAttachments|Boolean|指明邮件是否包含附件。此属性不涉及内联附件。因此，如果邮件仅包含内联附件，此属性为 false。若要验证是否存在内联附件，请分析 **body** 属性，以确定是否有 `src` 属性（例如，`<IMG src="cid:image001.jpg@01D26CD8.6C05F070">`）。|
 |id|String|邮件的唯一标识符（请注意，此值可能会随着邮件移动或更改而更改）|
 |importance|importance| 邮件的重要性。 可能的值为： `low`、 `normal`和 `high`。|
-|inferenceClassification | inferenceClassificationType | 根据推导出的相关性或重要性或根据显式重写，对用户邮件的分类。 可能的值为：`focused` 或 `other`。 |
-|internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) 集合 | 由 [RFC5322](https://www.ietf.org/rfc/rfc5322.txt) 定义的邮件头集合。 该集合包括指示邮件从发件人发送到收件人所采用的网络路径的邮件头。 还可以包含保存邮件应用数据的自定义邮件头。 <br><br> 仅在应用 `$select` 查询选项时返回。 只读。 |
+|inferenceClassification | inferenceClassificationType | 根据推导出的相关性或重要性或根据显式重写，对用户邮件的分类。可能的值是：`focused` 或 `other`。 |
+|internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) 集合 | 由 [RFC5322](https://www.ietf.org/rfc/rfc5322.txt) 定义的邮件头集合。 该集合包括指示邮件从发件人发送到收件人所采用的网络路径的邮件头。 还可以包含保存邮件应用数据的自定义邮件头。 <br><br> 仅在应用 `$select` 查询选项时返回。只读。 |
 |internetMessageId |String |由 [RFC2822](https://www.ietf.org/rfc/rfc2822.txt) 指定格式的邮件 ID。 |
 |isDeliveryReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
 |isDraft|Boolean|指示邮件是否为草稿。如果尚未发送，则此邮件是一封草稿。|
 |isRead|Boolean|指示是否已阅读该邮件。|
 |isReadReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
-|lastModifiedDateTime|DateTimeOffset|上次更改邮件的日期和时间。 <br><br> 日期和时间信息采用 ISO 8601 格式，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
+|lastModifiedDateTime|DateTimeOffset|上次更改邮件的日期和时间。 <br><br> 日期和时间信息使用 ISO 8601 格式并始终采用 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
 |parentFolderId|String|邮件的父 MailFolder 的唯一标识符。|
-|receivedDateTime|DateTimeOffset|收到邮件的日期和时间。 <br><br> 日期和时间信息采用 ISO 8601 格式，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
+|receivedDateTime|DateTimeOffset|收到邮件的日期和时间。 <br><br> 日期和时间信息使用 ISO 8601 格式并始终采用 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
 |replyTo|[recipient](recipient.md) collection|在答复时使用的电子邮件地址。|
 |sender|[recipient](recipient.md)|实际用于生成邮件的帐户。 大多数情况下，此值与“**from**”属性相同。 从[共享邮箱](/exchange/collaboration/shared-mailboxes/shared-mailboxes)发送邮件时，可以将此属性设置为其他值，[对于共享日历，或设置为代理人](/graph/outlook-share-delegate-calendar.md)。 在任何情况下，此值必须对应于使用的实际邮箱。 查看更多有关为邮件[设置 from 和 sender 属性](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties)的信息。|
-|sentDateTime|DateTimeOffset|发送邮件的日期和时间。 <br><br> 日期和时间信息采用 ISO 8601 格式，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
+|sentDateTime|DateTimeOffset|发送邮件的日期和时间。 <br><br> 日期和时间信息使用 ISO 8601 格式并始终采用 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
 |subject|String|邮件的主题。|
 |toRecipients|[recipient](recipient.md) collection|邮件的收件人。|
 |uniqueBody|[itemBody](itembody.md)|对于当前邮件独一无二的邮件正文部分。**uniqueBody** 默认不返回，但可以使用 `?$select=uniqueBody` 查询为给定邮件检索它。可以是 HTML 格式或文本格式。|
-|webLink|String|要在 Outlook 网页版中打开邮件的 URL。<br><br>可以将 ispopout 参数附加到此 URL 的末尾以更改邮件的显示方式。 如果 ispopout 不存在或设置为 1，则邮件显示在弹出窗口中。 如果 ispopout 设置为 0，则浏览器将在 Outlook 网页版的审阅窗格中显示邮件。<br><br>如果通过 Outlook 网页版登录邮箱，该邮件将在浏览器中打开。 如果尚未使用浏览器登录，系统将提示你登录。<br><br>无法从 iFrame 中访问此 URL。|
+|webLink|String|要在 Outlook 网页版中打开邮件的 URL。<br><br>可以将 ispopout 参数附加到此 URL 的末尾以更改邮件的显示方式。如果 ispopout 不存在或设置为 1，则邮件显示在弹出窗口中。如果 ispopout 设置为 0，则浏览器将在 Outlook 网页版的审阅窗格中显示邮件。<br><br>如果通过 Outlook 网页版登录邮箱，该邮件将在浏览器中打开。如果你尚未使用浏览器登录，系统将提示你登录。<br><br>无法从 iFrame 中访问此 URL。|
 
 
 ## <a name="relationships"></a>关系

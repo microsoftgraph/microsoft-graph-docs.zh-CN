@@ -2,15 +2,15 @@
 title: 获取 windows10CompliancePolicy
 description: 读取 windows10CompliancePolicy 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a0c1882111d6dc4bfd5d7c86a55971defc9ff43d730fae0a0a6301b91a8bbd40
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ace06aadd4e5012cf4f11ea2555a39a3be240f06
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249627"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022210"
 ---
 # <a name="get-windows10compliancepolicy"></a>获取 windows10CompliancePolicy
 

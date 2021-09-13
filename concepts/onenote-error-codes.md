@@ -2,14 +2,14 @@
 title: Microsoft Graph 中的 OneNote API 错误代码
 description: 本文介绍当通过 API 发送的请求失败时，Microsoft Graph 中的 OneNote API 返回的错误代码。
 author: jewan-microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: onenote
-ms.openlocfilehash: 7b135cb8275367a1c425fe2ab6aa41fec728982bc5028424016561e97d5585d7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 39427d86612682ea6aba37f026fd51ce396d6613
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54216355"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59113502"
 ---
 # <a name="error-codes-for-onenote-apis-in-microsoft-graph"></a>Microsoft Graph 中的 OneNote API 错误代码
 

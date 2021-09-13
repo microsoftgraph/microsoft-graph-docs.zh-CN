@@ -2,15 +2,15 @@
 title: call： reject
 description: 使机器人能够拒绝传入呼叫。
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 1355a826ab3bfaeea3392e20a6e40c71a279ca58
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: c49abaa569ae133657e37bce0e49367b5ac5fea5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787490"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016853"
 ---
 # <a name="call-reject"></a>call： reject
 
@@ -29,7 +29,7 @@ ms.locfileid: "52787490"
 | :-------------- | :--------------------------------------------------------- |
 | 委派（工作或学校帐户）     | 不支持                       |
 | 委派（个人 Microsoft 帐户） | 不支持                       |
-| 应用程序     | 无                                                       |
+| 应用程序     | None                                                       |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

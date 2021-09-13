@@ -1,16 +1,16 @@
 ---
 title: 节资源类型
 description: 笔记本中的OneNote节。 分区可包含页面。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: a64e07eb82f525caa2606afa8580d9805bcf328e378290f19baf1445253dd7fe
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8cbabaaae4ee1452cbce2e5c01859a50d0679358
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54216600"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123088"
 ---
 # <a name="section-resource-type"></a>节资源类型
 
@@ -65,7 +65,7 @@ ms.locfileid: "54216600"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|pages|[OnenotePage](page.md) 集合|分区中的一组页面。  只读。 可为 NULL。|
+|pages|[OnenotePage](page.md) 集合|分区中的一组页面。  只读。 可为空。|
 |parentNotebook|[笔记本](notebook.md)|包含分区的笔记本。  只读。|
 |parentSectionGroup|[SectionGroup](sectiongroup.md)|包含节的节组。  只读的。|
 

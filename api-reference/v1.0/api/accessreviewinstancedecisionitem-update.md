@@ -2,15 +2,15 @@
 title: 更新 accessReviewInstanceDecisionItem
 description: 更新 accessReviewInstanceDecisionItem 对象的属性。
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ca2f5c24f10bd287b73502ec3d8ba5b6c399da18
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 0d06d62ddcf5568e451e2309180022fdd1c77717
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53209613"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59038648"
 ---
 # <a name="update-accessreviewinstancedecisionitem"></a>更新 accessReviewInstanceDecisionItem
 命名空间：microsoft.graph
@@ -52,7 +52,7 @@ PATCH /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinit
 
 |属性|类型|说明|
 |:---|:---|:---|
-|decision|String|审阅者对主体是否应有权访问所审阅的资源的投票。 可能的值 `Approve` ：、 `Deny` 或 `DontKnow` 。 必填。|
+|decision|String|审阅者对主体是否应有权访问所审阅的资源的投票。 可能的值 `Approve` ：、 `Deny` 或 `DontKnow` 。 必需。|
 |justification|String|审阅者的决策原因。 如果 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md)的 settings 属性的 **justificationRequiredOnApproval** 为 ，则必需 `true` 。|
 
 ## <a name="response"></a>响应

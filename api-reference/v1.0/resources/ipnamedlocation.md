@@ -1,16 +1,16 @@
 ---
 title: ipNamedLocation 资源类型
 description: 表示一Azure Active Directory IP 范围定义的命名位置。 命名位置是定义网络位置的自定义规则，这些位置随后可在条件访问策略中使用。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 930db24ef40a68bb00f5724762652dfd1d75c1702d6af61be878a04cc68f1b94
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f8e2763b5b10b64a1e7e22807a31f24a7303d13a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54246722"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084375"
 ---
 # <a name="ipnamedlocation-resource-type"></a>ipNamedLocation 资源类型
 
@@ -35,10 +35,10 @@ ms.locfileid: "54246722"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |createdDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的位置的创建日期和时间，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。 继承自 [namedLocation](../resources/namedLocation.md)。|
-|displayName|String|位置的可读名称。|
+|displayName|String|位置的可读名称。 必需。|
 |id|String|namedLocation 对象的标识符。 只读。 继承自 [namedLocation](../resources/namedLocation.md)。|
-|ipRanges|[ipRange](iprange.md) 集合|IPv4 CIDR 格式的 IP 地址范围列表 (例如 1.2.3.4/32) IETF RFC596 中任何允许的 IPv6 格式。|
-|isTrusted|Boolean|如果显式信任此位置，则其为 True。|
+|ipRanges|[ipRange](iprange.md) 集合|IPv4 CIDR 格式的 IP 地址范围列表 (例如 1.2.3.4/32) IETF RFC596 中任何允许的 IPv6 格式。 必需。|
+|isTrusted|Boolean|`true` 如果显式信任此位置。 可选。 默认值为 `false`。|
 |modifiedDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的位置的上次修改日期和时间，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。 继承自 [namedLocation](../resources/namedLocation.md)。|
 
 ## <a name="relationships"></a>关系
@@ -67,6 +67,12 @@ ms.locfileid: "54246722"
   "modifiedDateTime": "String (timestamp)"
 }
 ```
+
+## <a name="see-also"></a>另请参阅
+
++ [什么是条件访问？](/azure/active-directory/conditional-access/overview)
++ [在条件访问策略中使用位置条件](/azure/active-directory/conditional-access/location-condition)
+
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

@@ -1,22 +1,22 @@
 ---
 author: learafa
-description: 签出 driveItem 资源，以防止其他人编辑该文档，并且在文档签入前，您所做的更改将一直可见。
+description: 签出 driveItem 资源以防止其他人编辑文档，并且您的更改在签入文档之前不可见。
 title: driveItem：签出
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 60b9f5de40f925354a0513c1b467295bf24ccb85
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fd10f488467047e4d5df3048b86fd98b21158f26
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009896"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063459"
 ---
 # <a name="driveitem-checkout"></a>driveItem：签出
 
 命名空间：microsoft.graph
 
-签出 **driveItem** 资源，以防止其他人编辑该文档，并在 [签](driveitem-checkin.md)入所记录的文档之前阻止您的更改可见。
+签出 **driveItem** 资源以防止其他人编辑文档，并阻止所做的更改在签入文档之前 [可见](driveitem-checkin.md)。
 
 ## <a name="permissions"></a>权限
 

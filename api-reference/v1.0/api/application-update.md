@@ -2,15 +2,15 @@
 title: 更新应用程序
 description: 更新 application 对象的属性。
 author: sureshja
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 027735c3bbffe4baf16e5a0f2fb94f2bfb192343
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: e5e66f1d03f0272b048172dddc7c8f70390031e9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787826"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59114811"
 ---
 # <a name="update-application"></a>更新应用程序
 
@@ -54,8 +54,8 @@ PATCH /applications/{id}
 | identifierUris          | String collection                                                           | URI，用于在应用程序的 Azure AD 租户中标识该应用程序；如果应用程序是多租户的，则用于在已验证的自定义域中标识该应用程序。 有关详细信息，请参阅[应用程序对象和服务主体对象](/azure/active-directory/develop/app-objects-and-service-principals)。 需要多值属性筛选器表达式的 *any* 运算符。 不可为 Null。                                                                                                                                                 |
 | info                    | [informationalUrl](../resources/informationalurl.md)                        | 应用程序的基本个人资料信息，例如应用的营销、支持、服务条款和隐私声明 URL。 服务条款和隐私声明通过用户同意体验展示给用户。 有关详细信息，请参阅为注册的 [Azure AD](/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement)应用添加服务条款和隐私声明。                                                                                                                       |
 | isFallbackPublicClient  | Boolean                                                                     | 将回退应用程序类型指定为公共客户端，例如在移动设备上运行的已安装应用程序。 默认值为 `false` ，这意味着回退应用程序类型是机密客户端，如 Web 应用。 在某些情况下，Azure AD 无法确定客户端应用程序类型 (例如 [ROPC](https://tools.ietf.org/html/rfc6749#section-4.3) 流，其中配置客户端应用程序类型时未指定重定向 URI) 。 在这种情况下，Azure AD 将基于此属性的值解释应用程序类型。 |
-| keyCredentials          | [keyCredential](../resources/keycredential.md) 集合                   | 与应用程序关联的密钥凭据集合。 不可为空。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| logo                    | Stream                                                                      | 应用程序的主徽标。 不可为 Null。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| keyCredentials          | [keyCredential](../resources/keycredential.md) 集合                   | 与应用程序关联的密钥凭据集合。不可为 Null。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| logo                    | Stream                                                                      | 应用程序的主徽标。不可为 Null。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | optionalClaims          | optionalClaims                                                              | 应用程序开发人员可以在其 Azure AD 应用中配置可选声明，以指定 Microsoft 安全令牌服务发送到他们应用程序的令牌中所需的声明。 有关详细信息 [，请参阅](/azure/active-directory/develop/active-directory-optional-claims) 可选声明。                                                                                                                                                                                                                                     |
 | parentalControlSettings | [parentalControlSettings](../resources/parentalcontrolsettings.md)          | 指定应用程序的家长控制设置。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | publicClient            | [publicClientApplication](../resources/publicclientapplication.md)          | 指定已安装客户端（如台式设备或移动设备）的设置。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |

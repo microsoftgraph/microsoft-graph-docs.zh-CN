@@ -2,15 +2,15 @@
 title: 获取 managedMobileLobApp
 description: 读取 managedMobileLobApp 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b0c68e9b3b607029c97096b5b028c8314d5f47b26485459e47266f54c9305fa5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9c6e7d9a13f87b5e924d9d72edad2048ab379856
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54209397"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100048"
 ---
 # <a name="get-managedmobilelobapp"></a>获取 managedMobileLobApp
 
@@ -44,7 +44,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

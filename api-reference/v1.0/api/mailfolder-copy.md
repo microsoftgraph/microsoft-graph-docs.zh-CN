@@ -2,15 +2,15 @@
 title: 'mailFolder: copy'
 description: 将 mailfolder 及其内容复制到其他 mailfolder。
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0c40d7bda2c0878a17b0268de8934a1aeda2debb
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3fa0e2909ac850ccfac69ef8cf09b13fce9b4b90
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049518"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045068"
 ---
 # <a name="mailfolder-copy"></a>mailFolder: copy
 

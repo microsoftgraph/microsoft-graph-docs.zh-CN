@@ -2,15 +2,15 @@
 title: 删除日历
 description: 删除默认日历以外的日历。
 author: harini84
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1ea1fa81b7917864d7d794bf66a10cdf507fa79a
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: d0fc57f06c67be3d142686f9ea97968634f6e91d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434907"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085712"
 ---
 # <a name="delete-calendar"></a>删除日历
 

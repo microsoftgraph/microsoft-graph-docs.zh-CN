@@ -1,16 +1,16 @@
 ---
 title: fileSecurityState 资源类型
 description: 包含有关未处理 (警报) 文件的信息。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: ac694c40e2f8a0a126d7849cf0131f4955af27d9e96aab73c30ead2d20ad42e1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2db9d028c6a1550886a956bbfaad3bb3141f3141
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54218721"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59078859"
 ---
 # <a name="filesecuritystate-resource-type"></a>fileSecurityState 资源类型
 

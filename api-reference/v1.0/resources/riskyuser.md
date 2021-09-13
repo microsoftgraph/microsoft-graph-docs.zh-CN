@@ -2,15 +2,15 @@
 title: riskyUser 资源类型
 description: 有风险的用户项
 author: cloudhandler
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: d54cab6905142282890f60042802c9f8060330bbffb5923505b5bae1a6cd9b45
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8d01e80acf9f05061cf69998d6ba94c444b67dd1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235301"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59078614"
 ---
 # <a name="riskyuser-resource-type"></a>riskyUser 资源类型
 
@@ -37,10 +37,10 @@ ms.locfileid: "54235301"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|处于风险中的用户的唯一 ID。|
-|isDeleted|Boolean|指示用户是否被删除。 可取值为：`true`、`false`。|
-|isProcessing|Boolean|指示后端是否正在处理用户的风险状态。|
+|isDeleted|布尔值|指示用户是否被删除。 可取值为：`true`、`false`。|
+|isProcessing|布尔值|指示后端是否正在处理用户的风险状态。|
 |riskDetail|riskDetail|检测到的风险的详细信息。 可取值为：`none`、`adminGeneratedTemporaryPassword`、`userPerformedSecuredPasswordChange`、`userPerformedSecuredPasswordReset`、`adminConfirmedSigninSafe`、`aiConfirmedSigninSafe`、`userPassedMFADrivenByRiskBasedPolicy`、`adminDismissedAllRiskForUser`、`adminConfirmedSigninCompromised`、`hidden`、`adminConfirmedUserCompromised`、`unknownFutureValue`。|
-|riskLastUpdatedDateTime|DateTimeOffset|上次更新有风险用户的日期和时间。  DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`2014-01-01T00:00:00Z`|
+|riskLastUpdatedDateTime|DateTimeOffset|上次更新有风险用户的日期和时间。  DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
 |riskLevel|riskLevel|检测到的风险用户级别。 可取值为：`low`、`medium`、`high`、`hidden`、`none`、`unknownFutureValue`。|
 |riskState|riskState|用户风险的状态。 可取值为：`none`、`confirmedSafe`、`remediated`、`dismissed`、`atRisk`、`confirmedCompromised` 或 `unknownFutureValue`。|
 |userDisplayName|String|有风险的用户显示名称。|

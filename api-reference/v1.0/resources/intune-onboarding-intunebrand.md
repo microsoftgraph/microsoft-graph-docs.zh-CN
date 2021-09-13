@@ -2,15 +2,15 @@
 title: intuneBrand 资源类型
 description: intuneBrand 包含在自定义公司门户应用程序以及最终用户 Web 门户的外观时使用的数据。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 00ef217ce79409b2152327f36303396eb3feacee6cb7c662392c11ccbb4f51db
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5ae76fc20f9489a16a5048373fd509532985c4d9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54229120"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118052"
 ---
 # <a name="intunebrand-resource-type"></a>intuneBrand 资源类型
 

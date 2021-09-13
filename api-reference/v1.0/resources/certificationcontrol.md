@@ -1,16 +1,16 @@
 ---
 title: certificationControl 资源类型
 description: 此资源包含与安全分数控制关联的合规性认证数据。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 96906ed33554e9e2acc407e3fd2f641ebaf7c8161a7701f02d9fa345ac3b7e11
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 031028d3eed25d0ed034c261b22d13f23b41000e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54223674"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104262"
 ---
 #  <a name="certificationcontrol-resource-type"></a>certificationControl 资源类型
 

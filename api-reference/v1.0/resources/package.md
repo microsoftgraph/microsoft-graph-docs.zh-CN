@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: 程序包
-localization_priority: Normal
+ms.localizationpriority: medium
 description: " 或应视为集合而不是单个项目的项目集合。"
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 09a335605e4a7ed258f27c120b9fdb4ecb95a59a42ccbf0a52866c5338f25d99
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cf4a0ec97c328bb10aa51800c7ec18b4a8512286
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54138491"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094119"
 ---
 # <a name="package-resource-type"></a>包资源类型
 

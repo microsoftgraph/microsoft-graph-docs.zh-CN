@@ -1,16 +1,16 @@
 ---
 title: licenseDetails 资源类型
 description: 包含有关分配给用户的许可证的信息。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: ba93377f3894bf9939238825040ce1f6fd453d67e266007a9cc0b046f5210e88
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ae262d8111c036fc4058cf8ace0b1f94fed4f132
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54246666"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104108"
 ---
 # <a name="licensedetails-resource-type"></a>licenseDetails 资源类型
 

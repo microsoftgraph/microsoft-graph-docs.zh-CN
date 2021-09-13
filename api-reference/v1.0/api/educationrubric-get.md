@@ -1,16 +1,16 @@
 ---
 title: 获取 educationRubric
 description: 检索 educationrubric 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 52aa155c0d0b0e8dbefc5527c40e853503c55034
-ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
+ms.openlocfilehash: 6ff70b50caea8aadffa52c058d1390977826bd1c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58367259"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59090626"
 ---
 # <a name="get-educationrubric"></a>获取 educationRubric
 
@@ -89,7 +89,7 @@ GET https://graph.microsoft.com/v1.0/education/me/rubrics/ceb3863e-6912-4ea9-ac4
 
 ### <a name="response"></a>响应
 
-下面介绍响应示例。
+下面展示了示例响应。
 
 > [!NOTE]
 > 为了提高可读性，可能缩短了此处显示的响应对象。

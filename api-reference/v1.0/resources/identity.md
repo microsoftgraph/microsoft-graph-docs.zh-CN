@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: 身份
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 身份资源表示主角的身份。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: b531a4eea8566947c8166f4ab89dd355958c757eb6c768b6504b266c3595a11e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3165b70282fd3a0a20c373e3c10ca8ab0c6fc909
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54121261"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59098977"
 ---
 # <a name="identity-resource-type"></a>Identity 资源类型
 

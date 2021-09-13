@@ -1,16 +1,16 @@
 ---
 title: personType 资源类型
 description: 表示人员类型。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: simonhult
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 6b9d88b688fbfe8886b4c19a31fba61a06cf0d09b6461b6bf756c4b15f4c853b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: db23f6bdffb26af7f74f0b08c40f4135b92f2e3f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196906"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117787"
 ---
 # <a name="persontype-resource-type"></a>personType 资源类型
 

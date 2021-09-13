@@ -1,16 +1,16 @@
 ---
 title: 分配 tokenLifetimePolicy
 description: 将 tokenLifetimePolicy 分配给应用程序。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 1d32530e70e1e08bda153ec83c459722eee0da1b
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: d28121acb9930881c0a61d4bea63c39432e076b0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131766"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063578"
 ---
 # <a name="assign-tokenlifetimepolicy"></a>分配 tokenLifetimePolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "50131766"
 
 将 [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) 分配给 [应用程序](../resources/application.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -47,7 +47,7 @@ POST /applications/{id}/tokenLifetimePolicies/$ref
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，使用 (应分配给应用程序或服务主体) 提供 [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) 对象的 `@odata.id` 标识符。
+在请求正文中，使用应分配给应用程序或服务 (的属性) 提供 [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) 对象的 `@odata.id` 标识符。
 
 ## <a name="response"></a>响应
 

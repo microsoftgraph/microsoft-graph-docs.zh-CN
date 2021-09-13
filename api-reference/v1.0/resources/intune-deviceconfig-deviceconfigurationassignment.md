@@ -2,15 +2,15 @@
 title: deviceConfigurationAssignment 资源类型
 description: 设备配置分配实体将 AAD 组分配到特定设备配置。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 60c8a336961b16cb62fafb4d6d92cf5bab55d62e332a99e58903b91f0c0ded0d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9dba31567de5ec9bca1a2314d9e609d03b620a86
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54169547"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118388"
 ---
 # <a name="deviceconfigurationassignment-resource-type"></a>deviceConfigurationAssignment 资源类型
 

@@ -2,15 +2,15 @@
 title: appConsentRequest 资源类型
 description: 一个代表特定应用程序的 userConsentRequest 对象集合的请求。
 author: psignoret
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: d6fae1c3914f901c24190b5c27b184b4c90aa5e67cfdc54416ec5e6f81703361
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ef5eed15ad094e35d4db49ee4e34def6de5f2861
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54155223"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094434"
 ---
 # <a name="appconsentrequest-resource-type"></a>appConsentRequest 资源类型
 
@@ -30,9 +30,9 @@ ms.locfileid: "54155223"
 
 |属性|类型|说明|
 |:---|:---|:---|
-|appDisplayName|String|请求显示名称的应用的一部分。 必填。 仅 `$filter` (和 `eq` `$orderby`) 。 |
-|appId|String|应用程序的标识符。 必填。 仅 `$filter` (和 `eq` `$orderby`) 。 |
-|id|String|应用同意请求的标识符。 必填。|
+|appDisplayName|String|请求显示名称的应用程序的一部分。 必需。 仅 `$filter` (和 `eq` `$orderby`) 。 |
+|appId|String|应用程序的标识符。 必需。 仅 `$filter` (和 `eq` `$orderby`) 。 |
+|id|String|应用同意请求的标识符。 必需。|
 |pendingScopes|[appConsentRequestScope](../resources/appconsentrequestscope.md) 集合|等待审批的挂起范围列表。 必填。|
 
 ## <a name="relationships"></a>关系

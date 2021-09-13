@@ -1,16 +1,16 @@
 ---
 title: conditionalAccessSessionControls 资源类型
 description: 表示登录后强制执行的复杂会话控件类型。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 9d48684205582dbb59b80fd5fa7b92eee5e425871afe3a6eed32a913795513fd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a531eb54d7dcb4221cd788a7f615ff006b75a648
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54229351"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129941"
 ---
 # <a name="conditionalaccesssessioncontrols-resource-type"></a>conditionalAccessSessionControls 资源类型
 

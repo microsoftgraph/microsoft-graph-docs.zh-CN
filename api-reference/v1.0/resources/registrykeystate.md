@@ -1,16 +1,16 @@
 ---
 title: registryKeyState 资源类型
 description: 包含有关与警报相关的注册表项更改以及更改注册表项的过程的信息。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: fa801fb0cc3e89acbd753d13337b8186449bb20dd5c70bb9a9707b9ede64c932
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: dff818881dbbaa2fe079a34850894251cb689bf3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54211869"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59044270"
 ---
 # <a name="registrykeystate-resource-type"></a>registryKeyState 资源类型
 
@@ -22,14 +22,14 @@ ms.locfileid: "54211869"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|hive|registryHive|一[Windows注册表配置单元](/windows/desktop/sysinfo/registry-hives)： <ul><li>HKEY_CURRENT_CONFIG</li> <li>HKEY_CURRENT_USER</li> <li>HKEY_LOCAL_MACHINE\SAM</li> <li>HKEY_LOCAL_MACHINE\Security</li> <li>HKEY_LOCAL_MACHINE\Software</li> <li>HKEY_LOCAL_MACHINE\System</li> <li>HKEY_USERS \\ 。默认值。</li></ul> 可取值为：`unknown`、`currentConfig`、`currentUser`、`localMachineSam`、`localMachineSecurity`、`localMachineSoftware`、`localMachineSystem`、`usersDefault`。|
+|hive|registryHive|注册表[Windows配置单元：](/windows/desktop/sysinfo/registry-hives) <ul><li>HKEY_CURRENT_CONFIG</li> <li>HKEY_CURRENT_USER</li> <li>HKEY_LOCAL_MACHINE\SAM</li> <li>HKEY_LOCAL_MACHINE\Security</li> <li>HKEY_LOCAL_MACHINE\Software</li> <li>HKEY_LOCAL_MACHINE\System</li> <li>HKEY_USERS \\ 。默认值。</li></ul> 可取值为：`unknown`、`currentConfig`、`currentUser`、`localMachineSam`、`localMachineSecurity`、`localMachineSoftware`、`localMachineSystem`、`usersDefault`。|
 |注册表项|String|当前 (，即更改) 注册表项 (HIVE) 。|
 |oldKey|String|以前的 (，即更改之前) 注册表项 (HIVE) 。|
 |oldValueData|String|上 (，即更改之前) 注册表项值数据 (内容) 。|
-|oldValueName|String|上 (项，即更改) 项值名称之前。|
+|oldValueName|String|上 (项，即更改) 注册表项值名称之前。|
 |operation|registryOperation|更改注册表项名称和/或值的操作。 可取值为：`unknown`、`create`、`modify`、`delete`。|
 |processId|Int32|进程 ID (PID) 修改了注册表项的进程的详细信息 (将显示在警报"进程"集合) 。|
-|valueData|String|当前 (，即更改) 项值数据 (内容) 。|
+|valueData|String|当前 (，即更改) 注册表项值数据 (内容) 。|
 |valueName|String|当前 (，即更改) 注册表项值名称|
 |valueType|registryValueType|[注册表项值类型](/windows/desktop/sysinfo/registry-value-types) <ul><li>REG_BINARY</li> <li>REG_DWORD</li> <li>REG_DWORD_LITTLE_ENDIAN</li> <li>REG_DWORD_BIG_ENDIAN</li><li>REG_EXPAND_SZ</li> <li>REG_LINK</li> <li>REG_MULTI_SZ</li> <li>REG_NONE</li> <li>REG_QWORD</li> <li>REG_QWORD_LITTLE_ENDIAN</li> <li>REG_SZ</li></ul> 可取值为：`unknown`、`binary`、`dword`、`dwordLittleEndian`、`dwordBigEndian`、`expandSz`、`link`、`multiSz`、`none`、`qword`、`qwordlittleEndian`、`sz`。|
 

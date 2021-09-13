@@ -1,16 +1,16 @@
 ---
 title: educationRubricOutcome 资源类型
 description: 提供评分标准评分的 educationOutcome。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 3fad9c8aa16653875060f1ec35a7abd09e875643aea77e40c665300878ba86b5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: dfeaae5b422c1d77fa5bfd64f991ed47d85e1778
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54229274"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123662"
 ---
 # <a name="educationrubricoutcome-resource-type"></a>educationRubricOutcome 资源类型
 

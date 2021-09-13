@@ -2,15 +2,15 @@
 title: 创建 resourceOperation
 description: 创建新的 resourceOperation 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cdb6f75c2d22f23f21a80958c92d768790c267a9f037a1d7d2b286aea07cad99
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 82d899258123bba5fdb34a110a9c02e66f7a6dcc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54175677"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59114069"
 ---
 # <a name="create-resourceoperation"></a>创建 resourceOperation
 
@@ -41,7 +41,7 @@ POST /deviceManagement/resourceOperations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

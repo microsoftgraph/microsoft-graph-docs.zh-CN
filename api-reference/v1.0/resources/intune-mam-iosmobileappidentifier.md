@@ -2,15 +2,15 @@
 title: iosMobileAppIdentifier 资源类型
 description: iOS 应用的标识符。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: faa7bcd53c53884283d65a8bc736d5b1ddaf38851a9a3a80f5aca8df48610024
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f8f529065f166481751b07dc13d0a0c868c67841
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54230555"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59089464"
 ---
 # <a name="iosmobileappidentifier-resource-type"></a>iosMobileAppIdentifier 资源类型
 

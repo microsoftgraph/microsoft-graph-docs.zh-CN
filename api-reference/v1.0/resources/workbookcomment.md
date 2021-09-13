@@ -1,16 +1,16 @@
 ---
 title: workbookComment 资源类型
 description: workbookComment 资源类型的定义
-localization_priority: Normal
+ms.localizationpriority: medium
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 8a81ac565e9dd65dfccfdef4eeb7eca86786eee4c225a8a1c91c4333e1c34573
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 19f3ba34e4da7ef485cfea30fdd69fea7716df3e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235231"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134169"
 ---
 # <a name="workbookcomment-resource-type"></a>workbookComment 资源类型
 

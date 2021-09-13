@@ -1,16 +1,16 @@
 ---
 title: namedLocation 资源类型
 description: 这是表示命名位置的Azure Active Directory类。 命名位置是定义网络位置的自定义规则，这些位置随后可在条件访问策略中使用。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 5083e526fcf1d9c4a6b844faa4584f7193144f0a813a53fa3e8446411e6d47f3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 01825465c415ef3a769812896dbc80105c50ed68
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54152360"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084270"
 ---
 # <a name="namedlocation-resource-type"></a>namedLocation 资源类型
 
@@ -60,6 +60,11 @@ ms.locfileid: "54152360"
   "modifiedDateTime": "String (timestamp)"
 }
 ```
+
+## <a name="see-also"></a>另请参阅
+
++ [什么是条件访问？](/azure/active-directory/conditional-access/overview)
++ [在条件访问策略中使用位置条件](/azure/active-directory/conditional-access/location-condition)
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

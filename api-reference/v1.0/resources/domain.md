@@ -2,15 +2,15 @@
 title: 域资源类型
 description: 表示与租户关联的域。
 author: adimitui
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: c832ba7b8d16964df53d9530f5aab0113afcd00f422bd701530cd4088b06f178
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: da0241057123a55882900e3d1a34a66640c814b6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54141810"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59099040"
 ---
 # <a name="domain-resource-type"></a>域资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "54141810"
 
 1. [将](../api/domain-post-domains.md) 域与租户关联。
 
-2. [检索](../api/domain-list-verificationdnsrecords.md) 域验证记录。 使用域注册器或 DNS 服务器配置将验证记录详细信息添加到域的区域文件。
+2. [检索](../api/domain-list-verificationdnsrecords.md) 域验证记录。 使用域注册机构或 DNS 服务器配置将验证记录详细信息添加到域的区域文件。
 
 3. [验证](../api/domain-verify.md) 域的所有权。 这将验证域，将 **isVerified** 属性设置为 `true` 。
 
@@ -38,7 +38,7 @@ ms.locfileid: "54141810"
 |:---------------|:--------|:----------|
 |[获取域](../api/domain-get.md) | [domain](domain.md) | 读取 domain 对象的属性和关系。|
 |[创建域](../api/domain-post-domains.md) | [domain](domain.md) | 向租户添加域。 |
-|[列出 domainNameReference](../api/domain-list-domainnamereferences.md) |[directoryObject](directoryobject.md) collection| 检索引用域的目录对象列表。|
+|[列出 domainNameReference](../api/domain-list-domainnamereferences.md) |[directoryObject](directoryobject.md) 集合| 检索引用域的目录对象列表。|
 |[列出 serviceConfigurationRecords](../api/domain-list-serviceconfigurationrecords.md) |[domainDnsRecord](domaindnsrecord.md) 集合|  检索域配置的域 DNS 记录列表。|
 |[列出 verificationDnsRecords](../api/domain-list-verificationdnsrecords.md) |[domainDnsRecord](domaindnsrecord.md) 集合|  检索域 DNS 记录列表以用于域验证。|
 |[更新域](../api/domain-update.md) | [domain](domain.md) |更新域。|
@@ -56,11 +56,11 @@ ms.locfileid: "54141810"
 |isAdminManaged|Boolean| 属性的值是域的 DNS 记录管理是否已被委派给 `false` Microsoft 365。 否则，值为 `true` 。 不可为 null |
 |isDefault|Boolean| `true` 如果这是用于用户创建的默认域。 每个公司只有一个默认域。 不可为 null |
 |isInitial|Boolean| `true` 如果这是由用户创建的初始Microsoft Online Services (companyname.onmicrosoft.com) 。 每个公司只有一个初始域。 不可为 null |
-|isRoot|Boolean| `true` 如果域是已验证的根域。 否则 `false` ，如果域是子域或未经验证。 不可为 null |
+|isRoot|布尔值| `true` 如果域是已验证的根域。 否则 `false` ，如果域是子域或未经验证。 不可为 null |
 |isVerified|Boolean| `true` 如果域已完成域所有权验证。 不可为 null |
 |passwordNotificationWindowInDays|Int32|指定用户收到其密码将过期的通知前的天数。 如果未设置该属性，则使用默认值 14 天。|
 |passwordValidityPeriodInDays|Int32| 指定密码在必须更改之前的有效时间长度。 如果未设置该属性，则使用默认值 90 天。 |
-|supportedServices|String collection| 分配给域的功能。 可以包含 `0` 、 `1` 或更多以下值： `Email` 、 、 、 、 、 、 、 `Sharepoint` `EmailInternalRelayOnly` `OfficeCommunicationsOnline` `SharePointDefaultDomain` `FullRedelegation` `SharePointPublic` `OrgIdAuthentication` `Yammer` `Intune` 。 可以使用 API 添加/删除Graph包括 `Email` `OfficeCommunicationsOnline` `Yammer` ：、、。 不可为 null|
+|supportedServices|String collection| 分配给域的功能。 可以包含 `0` 、 `1` 或更多以下值： `Email` 、 、 、 、 、 、 、 `Sharepoint` `EmailInternalRelayOnly` `OfficeCommunicationsOnline` `SharePointDefaultDomain` `FullRedelegation` `SharePointPublic` `OrgIdAuthentication` `Yammer` `Intune` 。 可以使用 api 添加/删除Graph包括 `Email` `OfficeCommunicationsOnline` `Yammer` ：、、。 不可为 null|
 |state|[domainState](domainstate.md)| 为域安排的异步操作的状态。 |
 
 ## <a name="relationships"></a>关系
@@ -69,7 +69,7 @@ ms.locfileid: "54141810"
 
 | 关系 | 类型 |说明|
 |:---------------|:--------|:----------|
-|domainNameReferences|[directoryObject](directoryobject.md) collection| 只读，可为空|
+|domainNameReferences|[directoryObject](directoryobject.md) 集合| 只读，可为空|
 |serviceConfigurationRecords|[domainDnsRecord](domaindnsrecord.md) 集合| 在 Microsoft Online Services 使用域之前，客户添加到域的 DNS 区域文件的 DNS 记录。 只读，可为空 |
 |verificationDnsRecords|[domainDnsRecord](domaindnsrecord.md) 集合| 客户添加到域的 DNS 区域文件的 DNS 记录，客户可以使用 Azure AD 完成域所有权验证。 只读，可为空|
 

@@ -2,15 +2,15 @@
 title: 获取聊天中的 conversationMember
 description: 检索聊天成员。
 author: bhartono
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 19dd93d0316e818b16afa2035ab9614f38aa269f
-ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
+ms.openlocfilehash: ece0cfdc7138b1eee6fc4b329ac426a3649530a9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52696140"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59038298"
 ---
 # <a name="get-conversationmember-in-a-chat"></a>获取聊天中的 conversationMember
 

@@ -1,16 +1,16 @@
 ---
 title: 配置邀请邮件
 description: invitedUserMessageInfo 对象允许您配置邀请消息。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Sammak
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: f35cd50c66d6d34b2837911514a9ac53387915bb19cbb46c0a0b36cb708ebe4b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 473e043da7669cc07e79fdf3a06edb0d36f657ba
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54218455"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084417"
 ---
 # <a name="configuring-the-invitation-message"></a>配置邀请邮件
 

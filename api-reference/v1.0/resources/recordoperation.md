@@ -2,15 +2,15 @@
 title: recordOperation 资源类型
 description: 此资源类型包含与音频录制有关的信息。
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: e655765044e7ed54746efda17e4e2e1c5129d0e6ca4bbf4a692d45817034f9f7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3611eb65f879ab6b70dbe65d9fb1769da6e5dd11
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54202138"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094098"
 ---
 # <a name="recordoperation-resource-type"></a>recordOperation 资源类型
 

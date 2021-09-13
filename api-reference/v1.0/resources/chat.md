@@ -2,15 +2,15 @@
 title: 聊天资源类型
 description: 聊天是一个或多个参与者之间的 chatMessages 集合。
 author: RamjotSingh
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 8f2077f4147f7048e3bf1aca6ed0716ed9c8e2bab320510c29dabea014f246ef
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c064025b1c60b0a6b391343a82c7c79ea0adebbd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54202526"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59099061"
 ---
 # <a name="chat-resource-type"></a>聊天资源类型
 
@@ -39,17 +39,17 @@ ms.locfileid: "54202526"
 | **应用** |||
 |[列出聊天中的应用](../api/chat-list-installedapps.md) |[teamsAppInstallation](teamsappinstallation.md) 集合 | 列出聊天网站中安装 (关联的会议) 。|
 |[在聊天中获取应用](../api/chat-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | 获取安装在聊天会话和关联会议 (中的特定) 。|
-|[在聊天中添加应用](../api/chat-post-installedapps.md) | | 添加 (在) 会议及其关联会议 (中安装) 。|
-|[升级聊天中的应用](../api/chat-teamsappinstallation-upgrade.md) | 无 | 更新到聊天会话和相关会议 (安装的应用的) 。|
+|[在聊天中添加应用](../api/chat-post-installedapps.md) | | 添加 (在) 会议及其关联的会议 (应用中安装) 。|
+|[升级聊天中的应用](../api/chat-teamsappinstallation-upgrade.md) | 无 | 更新到聊天活动和相关会议 (中安装的应用的) 。|
 |[从聊天中卸载应用](../api/chat-delete-installedapps.md) | 无 | 从 (和) 会议记录中删除 (卸载) 。|
 | **选项卡** |||
 |[列出聊天中的选项卡](../api/chat-list-tabs.md) | [teamsTab](teamstab.md) | 列出固定到聊天 (关联的会议选项卡) 。|
 |[在聊天中获取选项卡](../api/chat-get-tabs.md) | [teamsTab](teamstab.md) | 获取固定到聊天组和关联 (的特定选项卡) 。|
 |[向聊天添加选项卡](../api/chat-post-tabs.md) | [teamsTab](teamstab.md) | 将 (固定) 选项卡添加到聊天 (关联的会议) 。|
 |[聊天中的"更新"选项卡](../api/chat-patch-tabs.md) | [teamsTab](teamstab.md) | 更新聊天记录和相关会议 (选项卡) 。|
-|[从聊天中删除选项卡](../api/chat-delete-tabs.md) | 无 | 从 (和) 会议记录中删除 (取消固定选项卡) 。|
+|[从聊天中删除选项卡](../api/chat-delete-tabs.md) | 无 | 从 (和) 会议中删除 (取消固定选项卡) 。|
 
->**注意：** 使用应用程序权限时，请务必了解如何获取聊天 ID。 由于不支持列出具有应用程序权限的聊天，因此并非所有方案都可行。 可以获取具有委派权限的聊天 ID，以及从具有应用程序权限的 [/chats/getAllMessages](../api/subscription-post-subscriptions.md) 更改通知获取。
+>**注意：** 使用应用程序权限时，请务必了解如何获取聊天 ID。 由于不支持列出具有应用程序权限的聊天，因此并非所有方案都可行。 可以获取具有委派权限的聊天 ID，以及获取具有应用程序权限的 [/chats/getAllMessages](../api/subscription-post-subscriptions.md) 更改通知。
 
 ## <a name="properties"></a>属性
 
@@ -66,7 +66,7 @@ ms.locfileid: "54202526"
 | 成员             | 值 | 说明               |
 | :----------------- | :---- | :------------------------ |
 |oneOnOne            | 0     | 指示聊天为一对一聊天。 对于此类聊天，名单大小是固定的;无法删除/添加成员。|
-|group               | 1     | 指示聊天是群聊。 可以针对 (聊天类型更新至少两) 名单大小。 稍后可以删除/添加成员。|
+|组               | 1     | 指示聊天是群聊。 可以针对 (聊天类型更新至少两) 名单大小。 稍后可以删除/添加成员。|
 |meeting             | 2     | 指示聊天与联机会议相关联。 此类聊天仅在创建联机会议时创建。|
 |unknownFutureValue  | 3     | Sentinel 值，用于指示未来值。 |
 

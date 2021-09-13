@@ -2,15 +2,15 @@
 title: 在聊天中获取选项卡
 description: '检索聊天中指定选项卡的属性和关系。 '
 author: subray
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ca4c9e882de974df8a7ffb79fc168593acaa3f61
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 57f0321239f93d985f31b912f426ddd8629881d3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50950137"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105445"
 ---
 # <a name="get-tab-in-chat"></a>在聊天中获取选项卡
 

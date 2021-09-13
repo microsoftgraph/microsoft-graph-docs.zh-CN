@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: 根
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 根 Facet 指示对象是它的层次结构中最顶层的对象。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 78bf840f15d06f9ebb58681af19731e50981bf41e52e087ace05f92b36897476
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 260d7af5898acd07d7e27c0613bc7d218fd5ded0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196549"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59108854"
 ---
 # <a name="root-resource-type"></a>根资源类型
 

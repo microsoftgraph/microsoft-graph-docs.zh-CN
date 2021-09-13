@@ -1,16 +1,16 @@
 ---
 title: orgContact： checkMemberGroups
 description: 检查指定组列表中的成员身份。 从列表中返回组织联系人具有直接或可传递成员身份的组 ID。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5bdafc5ecaf7e2f95017267bf35ff140994bfb1d
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: f57d181dd1d053ac08140d9fb72be169e24e976e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761358"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59119322"
 ---
 # <a name="orgcontact-checkmembergroups"></a>orgContact： checkMemberGroups
 
@@ -18,10 +18,10 @@ ms.locfileid: "50761358"
 
 检查指定组列表中的成员身份。 从列表中返回组织联系人具有直接或可传递成员身份的[](../resources/orgcontact.md)组 ID。
 
-每个请求最多可检查 20 个组。 此函数支持 Microsoft 365 和 Azure AD (Azure Active Directory 中预配) 。
+每个请求最多可检查 20 个组。 此函数Microsoft 365 Azure AD Azure Active Directory (中预配的组和其他类型的) 。
 
 >[!NOTE]
->Microsoft 365 组不能包含组。 Microsoft 365 组的成员身份始终是直接的。
+>Microsoft 365组不能包含组。 用户组中Microsoft 365始终是直接的。
 
 
 ## <a name="permissions"></a>权限

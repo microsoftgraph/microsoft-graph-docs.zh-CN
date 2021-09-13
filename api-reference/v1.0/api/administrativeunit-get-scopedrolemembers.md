@@ -2,15 +2,15 @@
 title: 获取 scopedRoleMember
 description: 检索特定的 scopedRoleMembership 资源。
 author: DougKirschner
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: c6e0e3de92ee350a17b1821e7c567dbaa1792f9d
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: a871dc548fb11eabf75580c16fcfdc28729230ab
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52991533"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128415"
 ---
 # <a name="get-a-scopedrolemember"></a>获取 scopedRoleMember
 

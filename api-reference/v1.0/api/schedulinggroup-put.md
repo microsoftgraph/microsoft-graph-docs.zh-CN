@@ -2,15 +2,15 @@
 title: 更换 schedulingGroup
 description: 替换现有的 schedulingGroup。
 author: akumar39
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f6dd53bea34e39200bdc4a75d1013fc7537e203c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 4ac6507694bb3d5e9ac37a0379acdd1bc00ff276
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52038990"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019606"
 ---
 # <a name="replace-schedulinggroup"></a>更换 schedulingGroup
 

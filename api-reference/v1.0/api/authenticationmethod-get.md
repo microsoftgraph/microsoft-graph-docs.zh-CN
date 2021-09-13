@@ -1,16 +1,16 @@
 ---
 title: 获取 authenticationMethod
 description: 检索 authenticationMethod 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 898cf2d0532dfb9475acb69fe340169b262c78181d43207cc2f5493f41d3e61d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: afbcdda1a1cb0458a385606eada73f5795d6ac12
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54212775"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59114776"
 ---
 # <a name="get-authenticationmethod"></a>获取 authenticationMethod
 
@@ -42,7 +42,7 @@ ms.locfileid: "54212775"
 * 全局管理员
 * 全局读取者
 * 特权身份验证管理员
-* 身份验证管理员 (只能看到屏蔽的电话号码) 
+* 身份验证管理员 (只能看到屏蔽) 
 
 ## <a name="http-request"></a>HTTP 请求
 

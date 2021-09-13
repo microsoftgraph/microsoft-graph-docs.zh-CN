@@ -2,15 +2,15 @@
 title: 更新 iosDeviceFeaturesConfiguration
 description: 更新 iosDeviceFeaturesConfiguration 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2b2ac787a4b0ae0a93f4fb96e62d9abb3f9cd641bccc29a482816a508914cb13
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2e0cb42cce70b8cb8b3b49f98fdb9044bebe0ede
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54245671"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59130858"
 ---
 # <a name="update-iosdevicefeaturesconfiguration"></a>更新 iosDeviceFeaturesConfiguration
 

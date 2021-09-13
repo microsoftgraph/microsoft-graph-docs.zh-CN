@@ -2,15 +2,15 @@
 title: directoryObjectPartnerReference 资源类型
 description: 表示对合作伙伴租户中的目录对象的引用。 继承自 directoryObject。
 author: keylimesoda
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: dbf1746184c75c9a8ed748b293383679102dbb08664b3cc5f9c90d11c02c6237
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 35cc8be163a9bbbbcdf9330d6b6cf861673e7edf
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54150001"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123788"
 ---
 # <a name="directoryobjectpartnerreference-resource-type"></a>directoryObjectPartnerReference 资源类型
 

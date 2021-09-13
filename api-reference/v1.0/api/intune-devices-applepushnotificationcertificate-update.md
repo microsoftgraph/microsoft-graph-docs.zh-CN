@@ -2,15 +2,15 @@
 title: 更新 applePushNotificationCertificate
 description: 更新 applePushNotificationCertificate 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0f77bc0019ef74af530764669e04372da13623a6
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 1cda3261ba5e2cde5e5d6ed65afe32ac2feb927a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58260607"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59099621"
 ---
 # <a name="update-applepushnotificationcertificate"></a>更新 applePushNotificationCertificate
 
@@ -56,7 +56,7 @@ PATCH /deviceManagement/applePushNotificationCertificate
 |topicIdentifier|String|主题 ID。|
 |lastModifiedDateTime|DateTimeOffset|上次修改 Apple 推送通知证书的日期和时间。|
 |expirationDateTime|DateTimeOffset|Apple 推送通知证书的到期日期和时间。|
-|certificateSerialNumber|字符串|证书序列号。 此属性是只读的。|
+|certificateSerialNumber|String|证书序列号。 此属性是只读的。|
 |证书|String|尚未记录|
 
 

@@ -2,15 +2,15 @@
 title: 创建联系人
 description: 将联系人添加到联系人根文件夹或其他联系人文件夹的联系人端点中。
 author: kevinbellinger
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 318f72b56c057c13cb4e3a96a969a164f97b3007
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 55acfc5e144f7d76bf42f847cd6a3828079dd4a0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52031492"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59099180"
 ---
 # <a name="create-contact"></a>创建联系人
 
@@ -95,7 +95,7 @@ Content-type: application/json
 在请求正文中，提供 [Contact](../resources/contact.md) 对象的 JSON 表示形式。
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

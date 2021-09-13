@@ -2,15 +2,15 @@
 title: windowsInformationProtectionStoreApp 资源类型
 description: 用于 Windows 信息保护的应用商店应用
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0e41d1c7cf95f94c5cf74496ebf6d3c94d92497cc267c4b60f6b3a7b8cf7b8da
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7d2370daf066bbd96a7b7245129734e66228e5f9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235518"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59044571"
 ---
 # <a name="windowsinformationprotectionstoreapp-resource-type"></a>windowsInformationProtectionStoreApp 资源类型
 

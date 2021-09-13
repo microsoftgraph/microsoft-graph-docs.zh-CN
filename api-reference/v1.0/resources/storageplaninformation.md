@@ -2,15 +2,15 @@
 author: learafa
 description: storagePlanInformation 资源提供有关驱动器的存储配额计划的信息。
 title: StoragePlanInformation
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: files
-ms.openlocfilehash: 0000275139bef3765b7be2e44c26c5e6c12c3e73d04d52b009bfad558081202c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a26704495253d9dd33f4bcb37395b927ca8a4342
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163654"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136325"
 ---
 # <a name="storageplaninformation-resource-type"></a>storagePlanInformation 资源类型
 

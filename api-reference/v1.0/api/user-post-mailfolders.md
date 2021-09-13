@@ -1,16 +1,16 @@
 ---
 title: 创建 MailFolder
 description: 使用此 API 在用户邮箱的根文件夹中新建邮件文件夹。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a60f7166337933a3ee8897f9817c6adb148bd05c
-ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
+ms.openlocfilehash: c750b9ffe1c0bfdc40e96542aa881b2a5378e2bc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629397"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59099173"
 ---
 # <a name="create-mailfolder"></a>创建 MailFolder
 
@@ -20,7 +20,7 @@ ms.locfileid: "52629397"
 
 如果要隐藏新文件夹，必须在创建时将 **isHidden** `true` 属性设置为 。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -47,7 +47,7 @@ POST /users/{id | userPrincipalName}/mailFolders
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |displayName|String|新文件夹的显示名称。|
-|isHidden|布尔值|指示是否隐藏新文件夹。 默认值为 `false`。 设置属性是可选的。 设置后，将不能更新此属性。 在"隐藏邮件 [文件夹"中查看详细信息](../resources/mailfolder.md#hidden-mail-folders)|
+|IsHidden|布尔值|指示是否隐藏新文件夹。 默认值为 `false`。 设置属性是可选的。 设置后，将不能更新此属性。 在"隐藏邮件 [文件夹"中查看详细信息](../resources/mailfolder.md#hidden-mail-folders)|
 
 ## <a name="response"></a>响应
 

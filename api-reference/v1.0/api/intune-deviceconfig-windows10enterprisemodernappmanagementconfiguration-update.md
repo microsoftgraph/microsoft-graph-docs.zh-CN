@@ -2,15 +2,15 @@
 title: 更新 windows10EnterpriseModernAppManagementConfiguration
 description: 更新 windows10EnterpriseModernAppManagementConfiguration 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6110a8ad12fc01c9ea8e91f1ccaea82d2bff1a3b8e6b5b38674767d5bc9021a5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d11ccf33750c0db96c0be42bfe87a228412d76f9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54190141"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105067"
 ---
 # <a name="update-windows10enterprisemodernappmanagementconfiguration"></a>更新 windows10EnterpriseModernAppManagementConfiguration
 

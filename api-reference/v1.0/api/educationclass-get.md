@@ -1,16 +1,16 @@
 ---
 title: 获取 educationClass
 description: 从系统检索类
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mlafleur
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 76393b5d6e80fc00a78c0f4344ee4d567c880afe
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: 7fc653b85ed40f059ed46d2b858155f8db5efb87
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52474989"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59114664"
 ---
 # <a name="get-educationclass"></a>获取 educationClass
 
@@ -18,7 +18,7 @@ ms.locfileid: "52474989"
 
 从系统检索课程。 课程是带特殊属性的通用组，向系统表明该组是课程。 Group members represent the students;组管理员表示班级中的教师。 如果使用的是委派令牌，用户只会看到他们作为成员的课程。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

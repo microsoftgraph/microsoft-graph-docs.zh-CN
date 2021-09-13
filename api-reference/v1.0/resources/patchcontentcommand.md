@@ -1,16 +1,16 @@
 ---
 title: patchContentCommand 资源类型
 description: 对 PATCH 请求中的OneNote页所做的更改。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 0b34271f08cc8f8e234c6a10ecd28229ddbce451ca0f54b26197bc1a9d02f56f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 633bd39ec3bb3a95c9c2c9ba5755baf5e04dd298
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54205252"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117926"
 ---
 # <a name="patchcontentcommand-resource-type"></a>patchContentCommand 资源类型
 
