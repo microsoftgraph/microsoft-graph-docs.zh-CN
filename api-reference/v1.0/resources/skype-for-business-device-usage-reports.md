@@ -1,16 +1,16 @@
 ---
 title: Skype for Business 设备使用情况报表
 description: Skype for Business 设备使用情况报表可用于获取整个组织中使用的客户端和设备类型的详细信息。 为组织调查、计划和做出其他业务决策时，便会发现这些详细信息非常有用。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: d7b1480ccf68a31026cc20141d3749e91e50ceab821833c21d4892f0d0d0a0ee
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f50068bdb4c095f83f9479edd43fe7c07001bad7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54141299"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139567"
 ---
 # <a name="skype-for-business-device-usage-reports"></a>Skype for Business 设备使用情况报表
 
@@ -18,7 +18,7 @@ ms.locfileid: "54141299"
 
 Skype for Business 设备使用情况报表可用于获取整个组织中使用的客户端和设备类型的详细信息。 为组织调查、计划和做出其他业务决策时，便会发现这些详细信息非常有用。
 
-> **注意：** 有关不同的报告视图和名称的详细信息，请参阅Microsoft 365 [报告 - Skype for Business使用的客户端](https://support.office.com/client/Skype-for-Business-clients-used-b9019c36-034f-40c7-acb0-c2a0400b03c3)。
+> **注意：** 有关不同报表视图和名称的详细信息，请参阅Microsoft 365 [报告 - Skype for Business使用的客户端](https://support.office.com/client/Skype-for-Business-clients-used-b9019c36-034f-40c7-acb0-c2a0400b03c3)。
 
 ## <a name="reports"></a>报表
 

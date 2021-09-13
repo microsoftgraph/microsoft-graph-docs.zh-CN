@@ -2,15 +2,15 @@
 title: deviceEnrollmentPlatformRestriction 资源类型
 description: 平台特定注册限制
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: af5ac4604dc3fefa0bed02c2692af0d6c9059e83039c5b90eecc3b5c090e5a80
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8ab311af46b80c48e5860b2d42aaee68abddf590
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54135090"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59098613"
 ---
 # <a name="deviceenrollmentplatformrestriction-resource-type"></a>deviceEnrollmentPlatformRestriction 资源类型
 

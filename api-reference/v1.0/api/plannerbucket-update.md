@@ -1,16 +1,16 @@
 ---
 title: 更新 plannerbucket
 description: 更新 **plannerbucket** 对象的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 99694abe6e8640d821e116a204328f4f69cfdba8
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 5c2eb39c1b33a4ff3f524cae936af84da0db8718
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053956"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59037248"
 ---
 # <a name="update-plannerbucket"></a>更新 plannerbucket
 
@@ -34,7 +34,7 @@ PATCH /planner/buckets/{id}
 ## <a name="optional-request-headers"></a>可选的请求标头
 | 名称       | 说明|
 |:-----------|:-----------|
-| Authorization  | Bearer {token}。必需。 |
+| Authorization  | 持有者{令牌}。必需。 |
 | If-Match  | 要更新的 **plannerBucket** 的上次已知 ETag 值。必需。|
 
 ## <a name="request-body"></a>请求正文
@@ -91,7 +91,7 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

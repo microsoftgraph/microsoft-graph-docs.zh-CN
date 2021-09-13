@@ -2,15 +2,15 @@
 title: deviceManagementReportStatus 枚举类型
 description: 与生成的报告关联的可能状态
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b2d16b3ff47a95809a741acde277f91555c63b954d57f0d6214aa24b1e5392b3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d64e43413e8451d7fa8d432b6ec1a19e07582923
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54135069"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59098536"
 ---
 # <a name="devicemanagementreportstatus-enum-type"></a>deviceManagementReportStatus 枚举类型
 

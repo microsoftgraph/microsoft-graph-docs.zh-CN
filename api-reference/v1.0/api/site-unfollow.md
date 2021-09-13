@@ -2,15 +2,15 @@
 author: learafa
 title: 取消关注网站
 description: 取消关注用户的网站
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: daacd9a7ce66b337ba97c6c7c0953825e13b7ea5
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: ccc8ba3e812e5bb8824ea0932c00ea8d85765cfc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786648"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118900"
 ---
 # <a name="unfollow-site"></a>取消关注网站 
 
@@ -48,7 +48,7 @@ POST /users/{user-id}/followedSites/remove
 ## <a name="response"></a>响应
 
 * 如果请求成功，此方法返回 `204` 无内容的状态代码。  
-* 如果在取消关注任何指定网站时发生错误，此方法将返回状态代码，响应正文将包含一组包含 error 对象和 `207` siteId 的条目，[](/graph/errors)这些条目指示哪些网站无法取消处理。
+* 如果在取消关注任何指定网站时发生错误，此方法将返回状态代码，响应正文将包含一组包含错误对象和 siteId 的条目，这些条目指示哪些网站无法取消 `207` 处理[](/graph/errors)。
 
 ## <a name="example"></a>示例
 

@@ -2,15 +2,15 @@
 title: 创建 windowsDefenderAdvancedThreatProtectionConfiguration
 description: 创建新的 windowsDefenderAdvancedThreatProtectionConfiguration 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ddfdd078ef3e2dcf4d13fb6dcfab71c88c975504461205d0a1bbd6d39b13c021
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d081ff36863c2ec4d5105b4b7e6b76164a0f9053
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54197315"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59144077"
 ---
 # <a name="create-windowsdefenderadvancedthreatprotectionconfiguration"></a>创建 windowsDefenderAdvancedThreatProtectionConfiguration
 

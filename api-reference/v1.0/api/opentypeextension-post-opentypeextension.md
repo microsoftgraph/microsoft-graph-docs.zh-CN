@@ -1,16 +1,16 @@
 ---
 title: 创建开放扩展
 description: 创建开放扩展（openTypeExtension 对象），并在资源的新实例或现有实例中添加自定义属性。
-localization_priority: Priority
+ms.localizationpriority: high
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: f91a549e13b956d9c0d1fa4d8ca8765e7b7bd89a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 38fdd793c60784d89af6a8a4ad83d311f91d52da
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052220"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59079342"
 ---
 # <a name="create-open-extension"></a>创建开放扩展
 

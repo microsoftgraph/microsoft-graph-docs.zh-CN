@@ -2,15 +2,15 @@
 title: 列出作业资源
 description: 获取与此工作分配关联的所有资源。
 author: sharad-sharma-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 09f27495c1743102eb7324a9529ccb2fa4b01329
-ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
+ms.openlocfilehash: 7b7668cd8dd0c6eab63885961709e69e15bc3c10
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58367014"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105438"
 ---
 # <a name="list-assignment-resources"></a>列出作业资源
 

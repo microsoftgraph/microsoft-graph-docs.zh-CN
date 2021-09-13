@@ -2,15 +2,15 @@
 title: deviceManagementExchangeAccessStateReason 枚举类型
 description: 设备Exchange访问状态原因。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ee0bf43c6a6a0141128f48da43fc8d4e5570e0acd7bdb85de715011435765be8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e8925575994c840bde24ec1f00dd679867179caa
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54202285"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59148289"
 ---
 # <a name="devicemanagementexchangeaccessstatereason-enum-type"></a>deviceManagementExchangeAccessStateReason 枚举类型
 
@@ -30,14 +30,14 @@ ms.locfileid: "54202285"
 |exchangeDeviceRule|4 |由设备规则Exchange的访问状态|
 |exchangeUpgrade|5 |由于升级Exchange访问状态|
 |exchangeMailboxPolicy|6 |由邮箱策略Exchange的访问状态|
-|other|7 |访问状态由用户Exchange|
+|other|7 |由用户确定的访问Exchange|
 |compliant|8 |合规性质询授予的访问状态|
 |notCompliant|9 |合规性质询撤销的访问状态|
-|notEnrolled|10 |管理质询撤销的访问状态|
+|notEnrolled|10 |管理质询吊销的访问状态|
 |unknownLocation|12 |由于位置未知而进入访问状态|
 |mfaRequired|13|MFA 质询导致的访问状态|
 |azureADBlockDueToAccessPolicy|14 |AAD 访问策略吊销的访问状态|
-|compromisedPassword|15|通过泄露的密码吊销的访问状态|
+|compromisedPassword|15 |通过泄露的密码吊销的访问状态|
 |deviceNotKnownWithManagedApp|16 |托管应用程序质询吊销的访问状态|
 
 

@@ -1,16 +1,16 @@
 ---
 title: 更新协议
 description: 更新协议对象的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 5096b277061cb2f103c11c54066a759170282494
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e43934d8936a9f546a534f278b36cf02bc22cec1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52040096"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017035"
 ---
 # <a name="update-agreement"></a>更新协议
 

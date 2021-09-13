@@ -2,15 +2,15 @@
 title: resourceAction 资源类型
 description: 资源允许和不允许的操作集。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0ed370ad21ebd913fc9076cc2fbd1629940dd2f83f25a5afabf3207d4a613233
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ebaf1f7a9c2b9b3cdb5dc94894fcb45c97790a45
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235427"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59028890"
 ---
 # <a name="resourceaction-resource-type"></a>resourceAction 资源类型
 

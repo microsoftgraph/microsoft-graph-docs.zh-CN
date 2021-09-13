@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: 获取特殊文件夹
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 description: 使用特殊集合可以按名称访问特殊文件夹。
 doc_type: apiPageType
-ms.openlocfilehash: bf75cc4355f205fee58ec30291b5f71d7d590df7
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: f0312377e85e32046c1b45263512db93e164b77d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239735"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100286"
 ---
 # <a name="get-a-special-folder-by-name"></a>按名称获取特殊文件夹
 

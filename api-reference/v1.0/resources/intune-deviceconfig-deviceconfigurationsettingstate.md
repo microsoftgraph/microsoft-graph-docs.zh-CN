@@ -2,15 +2,15 @@
 title: deviceConfigurationSettingState 资源类型
 description: 给定设备的设备配置设置状态。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5bded3c009ca5e31dacf5250c0d1a0244c66f6ccb7b733ec7b6217ef1aa5253c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c6ea67ac1d042b7035a5cd940ce2ed9c0dba5f3c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54230632"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59148352"
 ---
 # <a name="deviceconfigurationsettingstate-resource-type"></a>deviceConfigurationSettingState 资源类型
 

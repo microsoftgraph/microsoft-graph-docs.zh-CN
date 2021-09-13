@@ -2,15 +2,15 @@
 title: teamworkNotificationRecipient 资源类型
 description: 表示在活动源中发送的通知Microsoft Teams收件人。
 author: eddie-lee-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 77ee747b57df3c0a2360b8d2011b94710dee62ca1f2d15730e36064f2458c14e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1e6e4021bd7c36801b645b89b3b5d8a448b4fa7d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54182348"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128163"
 ---
 # <a name="teamworknotificationrecipient-resource-type"></a>teamworkNotificationRecipient 资源类型
 

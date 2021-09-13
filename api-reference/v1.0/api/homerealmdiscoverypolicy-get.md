@@ -1,16 +1,16 @@
 ---
 title: 获取 homeRealmDiscoveryPolicy
 description: 检索 homeRealmDiscoveryPolicy 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: hpsin
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: bdd96dbd20429e0175f2d075f5e0abf6a95b764c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 14e610e207888779d5747fb2d2fbec72160635e4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52039592"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045901"
 ---
 # <a name="get-homerealmdiscoverypolicy"></a>获取 homeRealmDiscoveryPolicy
 

@@ -2,15 +2,15 @@
 title: accessReviewInstance：applyDecisions
 description: 对 accessReviewInstance 应用决策。
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 4d198df270427afa910ec962b5f92b821ebd7fa6
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: afe64d30ddd4e637aeb43a15195b0f1e627a79ec
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53209900"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59038655"
 ---
 # <a name="accessreviewinstance-applydecisions"></a>accessReviewInstance：applyDecisions
 命名空间：microsoft.graph

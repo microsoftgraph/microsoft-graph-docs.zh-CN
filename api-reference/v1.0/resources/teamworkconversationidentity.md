@@ -2,15 +2,15 @@
 title: teamworkConversationIdentity 资源类型
 description: 表示对话中的Microsoft Teams。
 author: RamjotSingh
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: fe6315b6546d603c203fad878c291f61e1f8394fc56acba4cfdf788ee86a2856
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2a463f37152b6d2108ac6ca04d9971cb908d6ba4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249109"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59055827"
 ---
 # <a name="teamworkconversationidentity-resource-type"></a>teamworkConversationIdentity 资源类型
 

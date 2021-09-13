@@ -2,15 +2,15 @@
 title: 获取 androidWorkProfileCustomConfiguration
 description: 读取 androidWorkProfileCustomConfiguration 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4943c90c940125256c48fd510cb51db79264bcb738a12007997800e4e1371df6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4cb241c5efb95d54dbeb7275daecc8203523829c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54170032"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59140323"
 ---
 # <a name="get-androidworkprofilecustomconfiguration"></a>获取 androidWorkProfileCustomConfiguration
 

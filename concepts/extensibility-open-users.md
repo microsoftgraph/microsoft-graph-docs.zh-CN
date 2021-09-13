@@ -2,14 +2,14 @@
 title: 使用开放扩展向用户添加自定义数据
 description: '本文将通过一个示例逐步介绍如何使用 *开放扩展*。 '
 author: dkershaw10
-localization_priority: Priority
+ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: f64269b32074909d4f03c3e060de9f00001b57e8e94ff4052e44a40221a15b14
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 06acd010f9528aae12e768aadd4f8e9e62ace651
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249067"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143565"
 ---
 # <a name="add-custom-data-to-users-using-open-extensions"></a>使用开放扩展向用户添加自定义数据
 本文将通过一个示例逐步介绍如何使用 *开放扩展*。 

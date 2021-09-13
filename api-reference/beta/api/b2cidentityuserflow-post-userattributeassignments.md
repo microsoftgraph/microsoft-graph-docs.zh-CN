@@ -2,15 +2,15 @@
 title: 创建 userAttributeAssignments
 description: 创建新的 identityUserFlowAttributeAssignment 对象。
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 52e459d65820ca1225e5aefe2eafff0f5a044ecc
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 2aa4a0fb3103c12a456780a73ef1b198546437c6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50944683"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59031969"
 ---
 # <a name="create-userattributeassignments"></a>创建 userAttributeAssignments
 

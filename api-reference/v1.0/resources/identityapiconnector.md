@@ -1,16 +1,16 @@
 ---
 title: identityApiConnector 资源类型
-description: 表示租户中的 API Azure Active Directory。
+description: 表示租户中的 API Azure Active Directory连接器。
 author: nickgmicrosoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 2f2ac4f9e94ace91182956b8147216d8016f092c17288fd594a731d86f7eed23
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 05c51b2468885daea730e597b2c4f7172699c28f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54126653"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59098963"
 ---
 # <a name="identityapiconnector-resource-type"></a>identityApiConnector 资源类型
 

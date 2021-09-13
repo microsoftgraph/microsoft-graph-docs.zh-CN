@@ -2,15 +2,15 @@
 title: win32LobAppReturnCode 资源类型
 description: 包含 Win32 应用的返回代码属性
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7e8f016ac569104a35e3f50a0f6b721373578d6ed7b1444e2356c4aa85366787
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5afd93641e68fa9b855c2a0003bc9192320eefac
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54149917"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59137558"
 ---
 # <a name="win32lobappreturncode-resource-type"></a>win32LobAppReturnCode 资源类型
 

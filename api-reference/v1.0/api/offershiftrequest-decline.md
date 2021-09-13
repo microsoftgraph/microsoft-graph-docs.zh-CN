@@ -1,16 +1,16 @@
 ---
 title: offerShiftRequest： decline
 description: 拒绝产品/服务班次请求。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9cdb5fbe381008b4146d649fb862b25a3687c251
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 6aea73a669162940c5be93536e4de06b728a1b11
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786330"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067890"
 ---
 # <a name="offershiftrequest-decline"></a>offerShiftRequest： decline
 

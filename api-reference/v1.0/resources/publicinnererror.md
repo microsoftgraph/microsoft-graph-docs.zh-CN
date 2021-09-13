@@ -2,15 +2,15 @@
 title: publicInnerError 资源类型
 description: 表示错误的内部详细信息。
 author: AkJo
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: e9e3bbc643666d3dc0596915e8734802065bca413f6d5d73bc51d880a64d1b5c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2c0189ee65de82edc87f1c9637351409241c00ca
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178001"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143816"
 ---
 # <a name="publicinnererror-resource-type"></a>publicInnerError 资源类型
 

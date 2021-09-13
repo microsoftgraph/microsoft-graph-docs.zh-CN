@@ -2,15 +2,15 @@
 title: 更新 eBookInstallSummary
 description: 更新 eBookInstallSummary 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4c61d57519ee618ed2b5ecbe23109ad9a79b83e90f929be452528b84c3cc3c3e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 35b2f9f25315e23e0d1b7553bc351ee26f24fe22
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54130882"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045439"
 ---
 # <a name="update-ebookinstallsummary"></a>更新 eBookInstallSummary
 

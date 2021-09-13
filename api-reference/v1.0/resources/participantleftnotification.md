@@ -2,15 +2,15 @@
 title: participantLeftNotification 资源类型
 description: 包含有关已离开呼叫的基于策略的参与者的详细信息。
 author: yizhenww
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: b0b74588d4014b53b79ec43adfd37443b52d60334319b8e126e1deccafb9dcd2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cdd3bb5b41fcd37c03b1814e7226ce84e6edafa1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54141390"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036051"
 ---
 # <a name="participantleftnotification-resource-type"></a>participantLeftNotification 资源类型
 

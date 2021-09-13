@@ -1,16 +1,16 @@
 ---
 title: 获取 workbookComment
 description: 获取 workbookcomment 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 132925396dd9f8e9acebfd2192b58d090d6d80b5
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: acf2ba79dee898dafcc2f7afd9f3f45f68caab75
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049567"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59027346"
 ---
 # <a name="get-workbookcomment"></a>获取 workbookComment
 

@@ -2,15 +2,15 @@
 title: managedAppDataTransferLevel 枚举类型
 description: 可以将数据从/传输到这些应用类别
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3ca86ac5fdc8afcb326ece8b65753e40acb99ae0
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5f863ef365d258ab6f03e2e5a23d62e4af7435bd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786955"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59030163"
 ---
 # <a name="managedappdatatransferlevel-enum-type"></a>managedAppDataTransferLevel 枚举类型
 

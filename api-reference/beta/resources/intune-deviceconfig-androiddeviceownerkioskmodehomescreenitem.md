@@ -2,15 +2,15 @@
 title: androidDeviceOwnerKioskModeHomeScreenItem 资源类型
 description: 表示 Android 设备所有者托管主屏幕上的 (应用程序、weblink 或文件夹
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3ca8a7052f0f67619047ce11c3acaa2424646473
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f5af5b430c528bb820c0e46ee4bd303555729ae6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787032"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59030471"
 ---
 # <a name="androiddeviceownerkioskmodehomescreenitem-resource-type"></a>androidDeviceOwnerKioskModeHomeScreenItem 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58787032"
 表示 Android 设备所有者托管主屏幕上的 (应用程序、weblink 或文件夹
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 
 ## <a name="relationships"></a>关系

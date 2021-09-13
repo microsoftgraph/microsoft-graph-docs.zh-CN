@@ -2,15 +2,15 @@
 title: macOSLobChildApp 资源类型
 description: 包含捆绑包中的 MacOS LOB 应用的属性
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d9518d975247f0ed3399524ca7c6d98839cadea9
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8a590ffdc3cb9e8d0a01724c9b6f2c37841817f5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804881"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020453"
 ---
 # <a name="macoslobchildapp-resource-type"></a>macOSLobChildApp 资源类型
 
@@ -23,10 +23,10 @@ ms.locfileid: "58804881"
 包含捆绑包中的 MacOS LOB 应用的属性
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |bundleId|String|标识名称。|
-|buildNumber|String|MacOS 业务线 (LoB) 内部版本。|
+|buildNumber|String|MacOS 业务线 (LoB 应用) 号。|
 |versionNumber|String|MacOS 业务线 (LoB) 版本号。|
 
 ## <a name="relationships"></a>关系

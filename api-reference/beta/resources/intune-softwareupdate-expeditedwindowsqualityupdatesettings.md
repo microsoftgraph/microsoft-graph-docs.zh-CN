@@ -2,15 +2,15 @@
 title: expeditedWindowsQualityUpdateSettings 资源类型
 description: 用于存储快速质量更新设置（如发布日期和强制重启前天数）的复杂类型。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 55328cb788ab1994eec2ec7e0f8984577b7b9a3b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 127a5ec4e1650cdd4e24787e24757b05732284d3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805273"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59029918"
 ---
 # <a name="expeditedwindowsqualityupdatesettings-resource-type"></a>expeditedWindowsQualityUpdateSettings 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58805273"
 用于存储快速质量更新设置（如发布日期和强制重启前天数）的复杂类型。
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |qualityUpdateRelease|String|用于标识质量更新的发布日期。|
 |daysUntilForcedReboot|Int32|安装后将发生强制重启的天数。|

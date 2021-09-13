@@ -2,15 +2,15 @@
 author: daspek
 title: ItemActionSet 资源类型
 description: itemActionSet 对象提供有关作为项目活动一部分所发生操作的信息。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 56a6e4ed3400be921dafcfd418a5bcb98b2e6e865939a93f22d06661a8df470c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 665ffbe2a34eeeb40735ba539c10eae00b5f0e0d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54130105"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59089359"
 ---
 # <a name="itemactionset-resource-type"></a>itemActionSet 资源类型
 

@@ -1,16 +1,16 @@
 ---
 title: certificateBasedAuthConfiguration 资源类型
 description: 表示证书颁发机构的集合。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: adimitui
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 2d46c8df25b46b62a0c987042178261a8b31a3c43ff8c542c8fc1234b2ed9d21
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 53e56f78508131e3a08e7896095a7f986346fba2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163843"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104255"
 ---
 # <a name="certificatebasedauthconfiguration-resource-type"></a>certificateBasedAuthConfiguration 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "54163843"
 
 基于证书的身份验证配置通过一组证书颁发机构提供。 证书颁发机构用于建立受信任的证书链，该链使客户端Azure Active Directory客户端证书进行身份验证。
 
-详细了解 Azure Active Directory 中[基于证书的身份验证](/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started)。
+详细了解在 Azure Active Directory 中[基于证书Azure Active Directory。](/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started)
 
 ## <a name="methods"></a>方法
 

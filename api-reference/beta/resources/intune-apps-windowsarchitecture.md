@@ -2,15 +2,15 @@
 title: windowsArchitecture 枚举类型
 description: 包含体系结构Windows属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2761e81215a002dfee56663c55c28a1285944c20
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 76ef88ff36088c3873b8b071196316527914c2e9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819232"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59023673"
 ---
 # <a name="windowsarchitecture-enum-type"></a>windowsArchitecture 枚举类型
 
@@ -23,13 +23,13 @@ ms.locfileid: "58819232"
 包含体系结构Windows属性。
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |无|0|未设置标志。|
 |x86|1|是否支持 X86 Windows体系结构类型。|
 |x64|2|是否支持 X64 Windows体系结构类型。|
 |arm|4 |是否支持 Arm Windows体系结构类型。|
-|neutral|8 |是否支持中性Windows体系结构类型。|
+|neutral|8 |中性体系结构Windows类型是否受支持。|
 |arm64|16 |是否支持 Arm64 Windows体系结构类型。|
 
 

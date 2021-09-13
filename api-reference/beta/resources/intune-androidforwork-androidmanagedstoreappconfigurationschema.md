@@ -2,15 +2,15 @@
 title: androidManagedStoreAppConfigurationSchema 资源类型
 description: 描述 Android 应用程序的自定义配置的架构。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ccb2a5af080368518368493dd9f31934e6a95d95
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5445f0bec409f823c1c4fad1586448a76d11180b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801211"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59030541"
 ---
 # <a name="androidmanagedstoreappconfigurationschema-resource-type"></a>androidManagedStoreAppConfigurationSchema 资源类型
 

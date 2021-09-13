@@ -2,15 +2,15 @@
 title: ratingGermanyTelevisionType 枚举类型
 description: 德国电视内容分级标签
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 02d5d67f6ecfdecc3e52c117ecc853d9c98a9158167c2537062500fcd25f1d50
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 21f498d5293527f0f657b7c4b2262f2a68801bb1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54180717"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59142668"
 ---
 # <a name="ratinggermanytelevisiontype-enum-type"></a>ratingGermanyTelevisionType 枚举类型
 

@@ -1,16 +1,16 @@
 ---
 title: mailboxUsageQuotaStatusMailboxCounts 资源类型
 description: 下面是资源的 JSON 表示形式。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sarahwxy
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 2be392d12aea4dfe5dfd9a7ae21a78fe79bb2fdbb8b571633277ede95687190d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4c26ddac97ecb3de1b35932a4b5c70869c502497
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54195069"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59033383"
 ---
 # <a name="mailboxusagequotastatusmailboxcounts-resource-type"></a>mailboxUsageQuotaStatusMailboxCounts 资源类型
 

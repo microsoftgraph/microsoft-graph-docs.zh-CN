@@ -1,16 +1,16 @@
 ---
 title: 列出所有者
-description: 检索应用程序 (directoryObject 对象) 列表。
+description: 检索应用程序 (directoryObject) 的所有者列表。
 author: sureshja
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: d9f942bb007ce3a3ade3632ddcbe9f2e79e9e9cb
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 35b7fbdf5d3ec5b0818819120ab5fcf43fc78aa6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134034"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59068380"
 ---
 # <a name="list-owners"></a>列出所有者
 
@@ -18,7 +18,7 @@ ms.locfileid: "50134034"
 
 检索作为 [directoryObject](../resources/directoryobject.md) 对象的应用程序的所有者列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

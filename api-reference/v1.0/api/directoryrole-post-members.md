@@ -2,15 +2,15 @@
 title: 添加目录角色成员
 description: 使用此 API 创建新的目录角色成员。
 author: abhijeetsinha
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: cfb6a722b50e16f3a0e51dbad5705409a1d96009
-ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
+ms.openlocfilehash: 534a7f73ad4c9a961c44f26c8465005b9ca43ee7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53118691"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046230"
 ---
 # <a name="add-directory-role-member"></a>添加目录角色成员
 

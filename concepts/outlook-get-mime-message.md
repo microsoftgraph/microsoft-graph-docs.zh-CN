@@ -2,18 +2,18 @@
 title: 获取邮件的 MIME 内容
 description: 多用途 Internet 邮件扩展 (MIME) 是一种行业电子邮件标准。 你现在可以使用 `$value` 段来获取 Outlook 邮件的 MIME 内容。
 author: abheek-das
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: ff2724f5dd2f9325d53e5a7506887f944ba350e96d592be778e46b5c8e2dc67a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 541c2481c8534cec7f96010a55beb6d02d825a62
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54126051"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59135933"
 ---
 # <a name="get-mime-content-of-a-message"></a>获取邮件的 MIME 内容
 
-MIME 是一种行业电子邮件标准。 许多电子邮件应用程序以 MIME 格式创建邮件并将其保存在扩展名为 .EML 的文件中。 
+MIME 是一种行业电子邮件标准。许多电子邮件应用程序以 MIME 格式创建邮件并将其保存在扩展名为 .EML 的文件中。 
 
 即使 Outlook _不_ 以 MIME 格式保存邮件，也有两种方法可以获得 MIME 格式的 Outlook 邮件正文：
 

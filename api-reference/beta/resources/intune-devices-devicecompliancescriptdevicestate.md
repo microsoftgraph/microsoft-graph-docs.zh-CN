@@ -2,15 +2,15 @@
 title: deviceComplianceScriptDeviceState 资源类型
 description: 包含设备合规性脚本的设备运行状态的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1a4c10878089d9d5cac4ccf43b0ebcebaca0427d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8143fc208811da51994cfc7f9d09e3c1304808f9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788175"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59033579"
 ---
 # <a name="devicecompliancescriptdevicestate-resource-type"></a>deviceComplianceScriptDeviceState 资源类型
 
@@ -43,7 +43,7 @@ ms.locfileid: "58788175"
 |scriptError|String|检测脚本中的错误|
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|描述|
 |:---|:---|:---|
 |managedDevice|[managedDevice](../resources/intune-devices-manageddevice.md)|执行设备合规性脚本的托管设备|
 

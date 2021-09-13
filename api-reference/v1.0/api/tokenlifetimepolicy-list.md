@@ -1,16 +1,16 @@
 ---
 title: 列出 tokenLifetimePolicies
 description: 获取 tokenLifetimePolicy 对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: lujiangfeng666
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 4bc182e1bd0e0f50509f471de6cf148541c87782
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 10625cad6968d63572d701ea86d5142d6383d72e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52033732"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59130074"
 ---
 # <a name="list-tokenlifetimepolicies"></a>列出 tokenLifetimePolicies
 
@@ -40,7 +40,7 @@ GET policies/tokenLifetimePolicies
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持使用 `$expand` 、 `$filter` 和 `$select` `$top` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。 使用 `$expand` 时，请确保你的应用请求读取扩展对象的权限。
+此方法支持使用 `$expand` 、 `$filter` 和 `$select` `$top` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。 使用 `$expand` 时，请确保应用请求读取扩展对象的权限。
 
 ## <a name="request-headers"></a>请求标头
 

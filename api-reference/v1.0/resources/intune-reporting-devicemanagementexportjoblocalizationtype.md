@@ -1,16 +1,16 @@
 ---
 title: deviceManagementExportJobLocalizationType 枚举类型
-description: 配置如何本地化请求的导出作业
+description: 配置所请求的导出作业的本地化方式
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2d442786827a753e9dd344b26c65260845924d3255c594011c5004ec48752c72
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e15e66067cd627ad2dcc37f76feecaec3bb29ad8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54192297"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036345"
 ---
 # <a name="devicemanagementexportjoblocalizationtype-enum-type"></a>deviceManagementExportJobLocalizationType 枚举类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "54192297"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-配置如何本地化请求的导出作业
+配置所请求的导出作业的本地化方式
 
 ## <a name="members"></a>成员
 |成员|值|说明|

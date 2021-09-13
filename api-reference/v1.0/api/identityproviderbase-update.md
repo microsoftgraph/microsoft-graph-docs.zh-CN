@@ -1,16 +1,16 @@
 ---
 title: 更新 identityProvider
 description: 更新 identityProvider 的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 0ad9230e1c6a9f9ba9e4b46451a95c529674b6d2
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: 1849374b40167d684cdd2d38e439615c3182b190
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58667904"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105298"
 ---
 # <a name="update-identityprovider"></a>更新 identityProvider
 命名空间：microsoft.graph
@@ -69,7 +69,7 @@ PATCH /identity/identityProviders/{id}
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-update-a-specific-social-identity-provider-azure-ad-or-azure-ad-b2c"></a>示例 1：使用 Azure AD 或 Azure AD B2C **(特定** 社会标识) 
+### <a name="example-1-update-a-specific-social-identity-provider-azure-ad-or-azure-ad-b2c"></a>示例 1：使用Azure AD 或 Azure AD B2C (特定社会标识) 
 
 #### <a name="request"></a>请求
 

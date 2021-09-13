@@ -2,15 +2,15 @@
 title: 删除 macOSSoftwareUpdateAccountSummary
 description: 删除 macOSSoftwareUpdateAccountSummary。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e301caa5b49a23cc398643c43e458f6493a7fd5e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: fb416ea07a7a229baa5bb693e7b209149b0e40d4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795758"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59030975"
 ---
 # <a name="delete-macossoftwareupdateaccountsummary"></a>删除 macOSSoftwareUpdateAccountSummary
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/macOSSoftwareUpdateAccountSummaries/{macOSSoftwareUpdat
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

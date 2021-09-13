@@ -2,15 +2,15 @@
 title: 获取 windowsManagementApp
 description: 读取 windowsManagementApp 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 05dc4a0c815c8b216e6c0d094d7e02a80395e25b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c983af416a665b442dadd4abda96f33434ca2900
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796332"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59030758"
 ---
 # <a name="get-windowsmanagementapp"></a>获取 windowsManagementApp
 
@@ -46,7 +46,7 @@ GET /deviceAppManagement/windowsManagementApp
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

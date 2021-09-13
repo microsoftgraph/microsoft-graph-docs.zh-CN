@@ -2,15 +2,15 @@
 title: 列出类别
 description: 列出与此工作分配关联的所有类别。
 author: sharad-sharma-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: c5ece16448dd047fb263149682352cdc8ea400b4
-ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
+ms.openlocfilehash: 000d3511973da64a12dfd14ed33a2c591d5babde
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58367161"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59130893"
 ---
 # <a name="list-categories"></a>列出类别
 
@@ -35,7 +35,7 @@ GET /education/classes/{id}/assignments/{id}/categories
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |

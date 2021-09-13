@@ -2,16 +2,16 @@
 author: daspek
 ms.date: 09/12/2017
 title: SystemFacet
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 系统 Facet 指示对象由系统为其自己的操作进行管理。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 82875fb53454e362f9efe78ce2bb17448ab85787e40150db6bad8963e7613ba1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 62858c85724bc74ed4f560f70bdfafcc01b63d8d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54228980"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134428"
 ---
 # <a name="system-facet"></a>系统 Facet
 

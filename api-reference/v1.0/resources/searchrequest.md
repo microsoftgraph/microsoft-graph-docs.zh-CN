@@ -1,16 +1,16 @@
 ---
 title: searchRequest 资源类型
 description: 要发送到查询终结点的搜索请求。 它包含响应中预期的实体类型、基础源、分页参数、字段请求和实际搜索查询。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: ec5ce984ac98c34c219e87e956a3e102ca5834ad39c748f17af33fcb1db79740
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 41b8c643228a4080dec1d6e27a7c23467ec6263b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196542"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134477"
 ---
 # <a name="searchrequest-resource-type"></a>searchRequest 资源类型
 
@@ -30,10 +30,10 @@ JSON blob 包含响应中预期的资源类型、基础源、分页参数、排�
 |:-------------|:------------|:------------|:------------|
 |contentSources|String collection|包含要定向的连接。|
 |enableTopResults|Boolean|这将触发邮件的混合排序：前 3 个邮件最相关。 此属性仅适用于 entityType= `message` 。 可选。|
-|entityTypes|entityType 集合| 响应中预期的一种或多种资源类型。 可取值为：`list`、`site`、`listItem`、`message`、`event`、`drive`、`driveItem`、`externalItem`。 有关 [同一](search-api-overview.md#known-limitations) 搜索请求中支持的两个或多个实体类型的组合，请参阅已知限制。 必填。|
+|entityTypes|entityType 集合| 响应中预期的一种或多种资源类型。 可取值为：`list`、`site`、`listItem`、`message`、`event`、`drive`、`driveItem`、`externalItem`。 有关 [同一](search-api-overview.md#known-limitations) 搜索请求中支持的两个或多个实体类型的组合，请参阅已知限制。 必需。|
 |fields|String collection |包含为 **entityTypes** 中指定的每个资源对象返回的字段，允许自定义默认情况下返回的字段，包括其他字段，如 SharePoint 和 OneDrive。 可选。|
 |起始数量|Int32|指定搜索结果的偏移量。 偏移量 0 返回第一个结果。 可选。|
-|查询|[searchQuery](searchquery.md)|包含查询词。 必填。|
+|查询|[searchQuery](searchquery.md)|包含查询词。 必需。|
 |大小|Int32|要检索的页面的大小。 可选。|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -55,7 +55,7 @@ JSON blob 包含响应中预期的资源类型、基础源、分页参数、排�
 ## <a name="see-also"></a>另请参阅
 - 搜索 [邮件](/graph/search-concept-messages)
 - 搜索 [日历事件](/graph/search-concept-events)
-- 搜索网站[SharePoint OneDrive (、列表和网站) ](/graph/search-concept-files)
+- 搜索网站SharePoint和OneDrive ([文件、列表和网站) ](/graph/search-concept-files)
 
 
 

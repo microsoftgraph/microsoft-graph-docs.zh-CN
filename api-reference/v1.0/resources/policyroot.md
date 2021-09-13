@@ -1,16 +1,16 @@
 ---
 title: policyRoot 资源类型
 description: 公开策略单一元素的导航属性的资源类型。
-author: shauliu
-localization_priority: Normal
+author: shauliu1
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 5bc9638b40741aa84bb84f69dda75de4d1ae59c101a0afd2128f59e445bbb289
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2847ce9952687bd985e065486e19cfa134ba6b42
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178043"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59098452"
 ---
 # <a name="policyroot-resource-type"></a>policyRoot 资源类型
 
@@ -28,7 +28,7 @@ ms.locfileid: "54178043"
 ## <a name="relationships"></a>关系
 | 关系                              | 类型                                                                                                      | 说明                                                                                                                                                          |
 |:------------------------------------------|:----------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| authenticationMethodsPolicy               | [authenticationMethodsPolicy](authenticationmethodspolicy.md)                                             | 身份验证方法以及允许使用它们登录并执行 Azure AD (MFA) 中的多重Azure Active Directory (身份验证) 。 |
+| authenticationMethodsPolicy               | [authenticationMethodsPolicy](authenticationmethodspolicy.md)                                             | 身份验证方法以及允许使用它们登录并执行 Azure AD (中的 MFA) 多重Azure Active Directory (用户) 。 |
 | authenticationFlowsPolicy                 | [authenticationFlowsPolicy](authenticationflowspolicy.md)                                                 | 外部用户的自助注册体验的策略配置。                                                                                   |
 | activityBasedTimeoutPolicies              | [activityBasedTimeoutPolicy](activitybasedtimeoutpolicy.md) 集合                                    | 控制应用程序的 Web 会话的空闲时间的策略。                                                                                        |
 | authorizationPolicy                       | [authorizationPolicy](authorizationpolicy.md) 集合                                                  | 控制 Azure AD 授权设置的策略。                                                                                                            |

@@ -1,16 +1,16 @@
 ---
 title: Yammer 组活动报表
 description: Yammer 组活动报表可用于深入了解组织中的 Yammer 组活动，并了解正在创建和使用多少个 Yammer 组。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: d9070b2848ac25f4e8324ff8c7edbc90629d86933118767832c0448bcd2f96b1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7365466d0cdb9971b35f0196b672091fddd12bac
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235203"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59078600"
 ---
 # <a name="yammer-groups-activity-reports"></a>Yammer 组活动报表
 

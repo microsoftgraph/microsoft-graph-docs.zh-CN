@@ -2,15 +2,15 @@
 title: deviceManagementConfigurationSettingAccessTypes 枚举类型
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ea2bed9cb102e6859a4ea2f3eb47b247b2f81d74
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8e1b0e338d7c0999072b85bf514af2c7b4fb333c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816528"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59030429"
 ---
 # <a name="devicemanagementconfigurationsettingaccesstypes-enum-type"></a>deviceManagementConfigurationSettingAccessTypes 枚举类型
 
@@ -23,11 +23,11 @@ ms.locfileid: "58816528"
 尚未记录
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |无|0|尚未记录|
 |add|1|尚未记录|
-|copy|2|尚未记录|
+|复制|2|尚未记录|
 |delete|4 |尚未记录|
 |获取|8 |尚未记录|
 |replace|16 |尚未记录|

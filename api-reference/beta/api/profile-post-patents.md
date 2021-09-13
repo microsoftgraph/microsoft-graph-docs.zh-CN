@@ -1,22 +1,22 @@
 ---
 title: 创建专利
 description: 创建新的专利对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: f290fc01a367fe0ee02a59264392eaf6143d4460
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 484fb8bba170110a08fe507be3d417a410ff8a03
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974663"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020523"
 ---
 # <a name="create-itempatent"></a>创建 itemPatent
 
 命名空间：microsoft.graph
 
-在用户的[配置文件](../resources/profile.md)中创建新的[itemPatent](../resources/itempatent.md)对象。
+在用户配置文件内创建新的 [itemPatent](../resources/itempatent.md) [对象](../resources/profile.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -24,8 +24,8 @@ ms.locfileid: "48974663"
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| 委派（工作或学校帐户）     | 所有用户读写。 |
-| 委派（个人 Microsoft 帐户） | 所有用户读写。 |
+| 委派（工作或学校帐户）     | User.ReadWrite、User.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | User.ReadWrite、User.ReadWrite.All |
 | 应用程序                            | User.ReadWrite.All                            |
 ## <a name="http-request"></a>HTTP 请求
 
@@ -47,24 +47,24 @@ POST /users/{id | userPrincipalName}/profile/patents
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [itemPatent](../resources/itempatent.md) 对象的 JSON 表示形式。
 
-下表显示了在用户[配置文件](../resources/profile.md)中创建新的[itemPatent](../resources/itempatent.md)对象时可以设置的属性。
+下表显示了在用户配置文件中创建新的 [itemPatent](../resources/itempatent.md) 对象时可以设置 [的属性](../resources/profile.md)。
 
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|说明|String|专利或档案的 Descpription。 |
-|displayName|String|专利或档案的标题。 |
-|推导|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|isPending        |Boolean     |指示专利处于待处理状态。        |
+|说明|String|专利或归档的去向。 |
+|displayName|String|专利或归档的标题。 |
+|inference|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断出来的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|isPending        |Boolean     |指示正在申请专利。        |
 |issuedDate       |日期        |授予专利的日期。   |
-|issuingAuthority |String      |授予专利的证书颁发机构。     |
-|number           |String      |专利号码。                      |
-|source|[personDataSource](../resources/persondatasource.md)|值的来源，如果从另一个服务同步。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|webUrl           |String      |引用专利或档案的 URL。 |
+|issuingAuthority |String      |授予专利的颁发机构。     |
+|数字           |String      |专利号。                      |
+|source|[personDataSource](../resources/persondatasource.md)|如果从另一个服务同步，则值源自何处。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|WebUrl           |String      |引用专利或归档的 URL。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [itemPatent](../resources/itempatent.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [itemPatent](../resources/itempatent.md) 对象。
 
 ## <a name="examples"></a>示例
 

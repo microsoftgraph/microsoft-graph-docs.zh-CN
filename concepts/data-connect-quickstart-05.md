@@ -1,6 +1,15 @@
+---
+ms.localizationpriority: medium
+ms.openlocfilehash: c36ed01a3d913a487864bfa2b77c13c707d0299f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59289528"
+---
 <!-- markdownlint-disable MD002 MD041 -->
 
-下一步是使用 Azure 数据工厂创建管道，以使用 Microsoft 365 将数据从 Azure 存储 帐户Microsoft Graph 数据连接。
+下一步是使用 Azure 数据工厂创建管道，以使用 Microsoft 365 将数据从 Azure 存储 帐户提取Microsoft Graph 数据连接。
 
 ## <a name="create-an-azure-data-factory-pipeline"></a>创建 Azure 数据工厂管道
 
@@ -14,7 +23,7 @@
 
     1. **订阅**：选择 Azure 订阅
     2. **资源组**：GraphDataConnect
-    3. **区域**：选取与你的区域相同的 azure Microsoft 365区域
+    3. **区域**：选取与你的客户区域Microsoft 365 Azure 区域
     4. **名称**：dfM365toBlobStorage
     5. **版本**： V2
 
@@ -28,7 +37,7 @@
 
 1. 通过从左侧 **导航****中选择**"概述"，从"管理"体验切换到"管理"体验。
 
-1. 默认情况下，Azure 数据工厂将使用自动解析区域集成运行时。 由于连接要求源和目标以及集成运行时存在于同一个 Microsoft 365 区域，因此建议您创建一个包含固定区域的新集成运行时。
+1. 默认情况下，Azure 数据工厂将使用自动解析区域集成运行时。 由于连接要求源和目标以及集成运行时存在于同一 Microsoft 365 区域，因此建议您创建一个包含固定区域的新集成运行时。
 
     1. 选择 **"集成运行时**  >  **""新建"。**
     2. 选择 **"Azure，自托管"，** 然后选择"继续 **"。**
@@ -40,7 +49,7 @@
 
         - **名称**：集成运行时的名称
         - **说明**：输入说明
-        - **区域**：选择匹配你的区域Microsoft 365区域
+        - **区域**：选择与你的区域Microsoft 365区域
         - **虚拟网络配置 (预览) ：** 已禁用
 
 1. 从左侧 **导航中选择** "管理 **"** 体验切换到"作者"体验。
@@ -75,7 +84,7 @@
     - 从 **Office365Table** 切换到 **管道>源**。 对 Date 筛选器 **使用以下值**。
 
       - **列名称**：CreatedDateTime
-      - **UTC (开始时间) ：** 选择当前日期之前的某个时间
+      - **开始时间 (UTC) ：** 选择当前日期之前的某个时间
       - **UTC (结束) ：** 选择当前日期
       - 选择 **"输出列** "部分 _中的"导入架构_ "。
 
@@ -103,14 +112,14 @@
 
 1. 创建管道后，选择设计器 **顶部的** "全部验证"按钮。
 
-1. 在验证 (并修复发现的所有) 问题后，选择设计器顶部的"全部发布"按钮。 
+1. 在验证 (并修复在) 发现的所有问题后，选择设计器顶部的"全部发布"按钮。 
 
 ## <a name="run-the-azure-data-factory-pipeline"></a>运行 Azure 数据工厂管道
 
 创建管道后，现在可以运行它了。
 
 > [!NOTE]
-> 可能需要几分钟时间才能显示同意请求，并且整个过程 (开始、请求同意以及批准完成管道运行) 后需要超过 40 分钟的时间。
+> 可能需要几分钟时间才能显示同意请求，并且整个过程 (开始、请求同意以及批准完成管道运行) 后，需要 40 分钟以上的时间。
 
 1. 在 Azure 数据工厂设计器中，打开管道后，选择"添加触发器 **>"现在触发"。**
 
@@ -132,4 +141,4 @@
 
     ![显示数据工厂服务的 Azure 门户 UI 的屏幕截图，其中请求的加载状态设置为"RequestingConsent"。](images/data-connect-adf-wait-for-approval.png)
 
-1. 此时，活动运行在内部暂停，直到有人手动批准通过 Microsoft 365 管理中心 或 PowerShell 同意请求。
+1. 此时，活动运行在内部暂停，直到有人通过管理员或 PowerShell Microsoft 365 管理中心同意请求。

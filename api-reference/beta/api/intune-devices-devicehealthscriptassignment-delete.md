@@ -2,15 +2,15 @@
 title: 删除 deviceHealthScriptAssignment
 description: 删除 deviceHealthScriptAssignment。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 37c66877d05131e615adafff0be68ccd6ad036c1
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ba587cd92ecae6341dc1fc8655b0929daf227a36
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786458"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59034629"
 ---
 # <a name="delete-devicehealthscriptassignment"></a>删除 deviceHealthScriptAssignment
 
@@ -44,7 +44,7 @@ DELETE /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/assi
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

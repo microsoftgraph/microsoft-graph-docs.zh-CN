@@ -1,16 +1,16 @@
 ---
 title: publicError 资源类型
 description: 表示一般错误及其详细信息。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: microsoft-teams
 author: AkJo
-ms.openlocfilehash: f378862ccd77b1a205e1997d7a5c31244717f728d60b9d8d6b505646db116a06
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4aa4f336ab2b5404e2e82d26f7c38a9ed9b239d2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54138351"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59044291"
 ---
 # <a name="publicerror-resource-type"></a>publicError 资源类型
 

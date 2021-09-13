@@ -2,15 +2,15 @@
 title: localSecurityOptionsSmartCardRemovalBehaviorType 枚举类型
 description: LocalSecurityOptionsSmartCardRemovalBehaviorType 的可能值
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7eafa795eaacb76dffe77a48095ad5e83cd15d71
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: aea13f91cd7c1f22bf82bee5623ecd6922b38e36
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58812219"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59033670"
 ---
 # <a name="localsecurityoptionssmartcardremovalbehaviortype-enum-type"></a>localSecurityOptionsSmartCardRemovalBehaviorType 枚举类型
 

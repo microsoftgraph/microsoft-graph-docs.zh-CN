@@ -1,16 +1,16 @@
 ---
 title: teamGuestSettings 资源类型
 description: 用于配置来宾是否可以在团队中创建、更新或删除频道的设置。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 8b8c0a47135af606d2bfb83d190bd88d6af4ad65356c99096563f76053f9a9ec
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 769930b28366b9918a92b9839331a421db5ff79a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54146354"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134337"
 ---
 # <a name="teamguestsettings-resource-type"></a>teamGuestSettings 资源类型
 

@@ -2,15 +2,15 @@
 title: 获取 educationSubmissionResource
 description: 检索与提交关联的特定资源的属性。
 author: sharad-sharma-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: c46312e6d09fabd7178353f3ba419b8d84a5ce16
-ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
+ms.openlocfilehash: 1653ec3311fc046bcf4a3b8a095e17ace5c757aa
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58367196"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074372"
 ---
 # <a name="get-educationsubmissionresource"></a>获取 educationSubmissionResource
 
@@ -37,7 +37,7 @@ GET /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |

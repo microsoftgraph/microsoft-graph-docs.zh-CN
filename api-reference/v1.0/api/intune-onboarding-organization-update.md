@@ -2,15 +2,15 @@
 title: 更新组织
 description: 更新 organization 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c6132f037454c5942af727446d39eb29f1b84209b53c399e70e5f652a44a9fab
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: af8249750b7458535c9d8a02a14377ecf702520c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54138743"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59119301"
 ---
 # <a name="update-organization"></a>更新组织
 

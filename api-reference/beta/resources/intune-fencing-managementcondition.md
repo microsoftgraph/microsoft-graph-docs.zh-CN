@@ -2,15 +2,15 @@
 title: managementCondition 资源类型
 description: 管理条件是可动态触发的事件，如地理围栏、时间围栏和网络围栏。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 79f0c0ef1c2c6525114ce4d7f58615c6c168539b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8db902ca0f5b0fb00a72e9fd8eee8af02d2c8cab
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786962"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59030254"
 ---
 # <a name="managementcondition-resource-type"></a>managementCondition 资源类型
 
@@ -35,14 +35,14 @@ ms.locfileid: "58786962"
 |id|String|管理条件的唯一标识符。 创建时分配的系统生成值。|
 |唯一名称|String|管理条件的唯一名称。 在管理条件表达式中使用。|
 |displayName|String|管理员定义的管理条件名称。|
-|description|字符串|管理员定义的管理条件说明。|
+|说明|String|管理员定义的管理条件说明。|
 |createdDateTime|DateTimeOffset|创建管理条件的时间。 生成的服务器端。|
 |modifiedDateTime|DateTimeOffset|上次修改管理条件的时间。 更新的服务器端。|
 |eTag|String|管理条件的 ETag。 更新的服务器端。|
 |applicablePlatforms|[devicePlatformType](../resources/intune-fencing-deviceplatformtype.md) 集合|此管理条件的适用平台。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|描述|
 |:---|:---|:---|
 |managementConditionStatements|[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) 集合|与管理条件关联的管理条件语句。|
 

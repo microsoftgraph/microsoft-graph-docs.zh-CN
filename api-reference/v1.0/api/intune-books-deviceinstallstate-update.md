@@ -2,15 +2,15 @@
 title: 更新 deviceInstallState
 description: 更新 deviceInstallState 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5b044e3dfed6a85617bb582d38e24628cd0bc676684ec6bd1fcca5e01dfbcd6e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c356d3870b0208ab51e5cd1c72ebeecc642d7537
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54250642"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59050340"
 ---
 # <a name="update-deviceinstallstate"></a>更新 deviceInstallState
 

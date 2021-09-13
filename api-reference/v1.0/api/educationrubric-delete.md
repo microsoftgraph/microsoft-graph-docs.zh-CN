@@ -1,16 +1,16 @@
 ---
 title: 删除 educationRubric
 description: 删除 educationRubric 对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 15d455e665026c3e0c86f7ef162a5602772d84aa
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: deff2921ff492a073b9cb044b9cd87e41189cc82
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52991184"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147421"
 ---
 # <a name="delete-educationrubric"></a>删除 educationRubric
 

@@ -1,17 +1,17 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c5cd197dbcc4dedea7d7ab95888b57cc1d1c28f8
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: d0f3975aac6112535e66e6f8dd570fbb4c43d040
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50945149"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072865"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
-NSString *MSGraphBaseURL = @"https://graph.microsoft.com/v1.0/";
+NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
 NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/communications/calls/{id}/participants/invite"]]];
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
@@ -24,7 +24,7 @@ MSGraphInvitationParticipantInfo *participants = [[MSGraphInvitationParticipantI
 MSGraphIdentitySet *identity = [[MSGraphIdentitySet alloc] init];
 MSGraphIdentity *user = [[MSGraphIdentity alloc] init];
 [user setId:@"278405a3-f568-4b3e-b684-009193463064"];
-[user setDisplayName:@"string"];
+[user setIdentityProvider:@"AAD"];
 [identity setUser:user];
 [participants setIdentity:identity];
 [participantsList addObject: participants];

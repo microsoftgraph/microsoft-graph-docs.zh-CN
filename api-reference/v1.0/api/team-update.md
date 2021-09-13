@@ -2,15 +2,15 @@
 title: 更新团队
 description: 更新指定团队的属性。
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bfb0efb4a4a435e7d177e13d1bfb5bb729bd41cb
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 5eb8e3d5a57a09a24d927bcdb0ca9a13efd86277
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787735"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109882"
 ---
 # <a name="update-team"></a>更新团队
 

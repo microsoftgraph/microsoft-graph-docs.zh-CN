@@ -2,15 +2,15 @@
 title: 删除 externalItem
 description: 删除 externalItem 对象。
 author: mecampos
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 6ed118b9eefe3ccf6922a734d8665ba2228c3cd7
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: e3a4501c12ad6dd231e8268605c47d4047ade4d5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53579883"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59029603"
 ---
 # <a name="delete-externalitem"></a>删除 externalItem
 命名空间：microsoft.graph.externalConnectors

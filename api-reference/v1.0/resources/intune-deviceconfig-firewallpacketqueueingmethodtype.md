@@ -2,15 +2,15 @@
 title: firewallPacketQueueingMethodType 枚举类型
 description: firewallPacketQueueingMethod 的可能值
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 77a1c26591fe529e1ec256351fb5397e96143d9b8d79eeba6b6781ca960fefa0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fde6546255160e91d698f2a7dfe8c15c9fda26a2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54202401"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139826"
 ---
 # <a name="firewallpacketqueueingmethodtype-enum-type"></a>firewallPacketQueueingMethodType 枚举类型
 

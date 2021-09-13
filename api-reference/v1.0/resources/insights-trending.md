@@ -2,15 +2,15 @@
 title: 趋势资源类型
 description: 连接用户与用户趋势文档（与用户相关）文档的丰富关系。 OneDrive 文件和 SharePoint 团队网站上存储的文件可能是用户趋势文件。
 author: simonhult
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: be87778d9544afc5ec6002ece46ebdb24e3e2c0214ebb5e718885c52bff253fe
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5cf846ca79088e250b4e37fa97495896fd88fe44
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54216887"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109134"
 ---
 # <a name="trending-resource-type"></a>趋势资源类型
 

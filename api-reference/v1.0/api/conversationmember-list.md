@@ -2,15 +2,15 @@
 title: 列出 conversationMembers
 description: 检索聊天或频道成员的列表。
 author: akjo
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 859eadec943eb9eeb4ea70643ce60e61e007da0c
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: 8e760ab10cfa95de9a4c31561021b4f1143ad57b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53060600"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59050682"
 ---
 # <a name="list-conversationmembers"></a>列出 conversationMembers
 

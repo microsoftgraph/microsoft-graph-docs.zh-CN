@@ -1,16 +1,16 @@
 ---
 title: calendarPermission 资源类型
 description: 与日历共享的用户的权限。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sochowdh
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 537055ca9f5ec1166d7c85f9d6a172384f564571e77a04c53c5a1c6d9331fc69
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e3e20ee82ed837ac5d14fa161917cad47cb7088f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54155188"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129948"
 ---
 # <a name="calendarpermission-resource-type"></a>calendarPermission 资源类型
 
@@ -36,8 +36,8 @@ ms.locfileid: "54155188"
 |:-------------|:------------|:------------|
 |allowedRoles|[calendarRoleType](#calendarroletype-values) 集合| 日历允许的共享或委派权限级别列表。 可取值为：`none`、`freeBusyRead`、`limitedRead`、`read`、`write`、`delegateWithoutPrivateEventAccess`、`delegateWithPrivateEventAccess`、`custom`。|
 |emailAddress|[emailAddress](emailaddress.md)| 表示有权访问日历的共享者或代理人。 对于"我的组织"共享者 **，address** 属性为 null。 只读。 |
-|id|String| 共享者或 (日历) 的用户的唯一标识符。 只读。|
-|isInsideOrganization|Boolean| 如此 如果上下文中的用户共享 (或委派) 日历所有者位于同一组织内部。|
+|id|String| 共享者或 (共享者或) 共享者的唯一标识符。 只读。|
+|isInsideOrganization|Boolean| 如此 如果上下文中的用户 (共享或委派) 日历所有者位于同一组织内部。|
 |isRemovable|Boolean| `True` 如果用户可以从指定日历的共享者或代理人列表中删除，否则 `false` 为 。 "我的组织"用户确定组织中其他人对给定日历拥有的权限。 不能删除"我的组织"作为日历共享者。|
 |role|[calendarRoleType](#calendarroletype-values)| 日历共享者或代理人的当前权限级别。 |
 

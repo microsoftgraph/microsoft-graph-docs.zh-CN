@@ -2,15 +2,15 @@
 title: 获取 servicePrincipal
 description: 检索 serviceprincipal 对象的属性和关系。
 author: sureshja
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 70b8802cb25cd7d731d48d5eededaaf188204155
-ms.sourcegitcommit: a2d81138de2a0404e611fbb535679199477ef3d5
+ms.openlocfilehash: f0946da403754db4cb9edf5ec2f42ed0e9428d1e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52813039"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110107"
 ---
 # <a name="get-serviceprincipal"></a>获取 servicePrincipal
 

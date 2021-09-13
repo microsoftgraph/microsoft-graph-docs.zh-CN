@@ -2,15 +2,15 @@
 title: ChartAreaFormat 资源类型
 description: 封装整个图表区域的格式属性。
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 2dd257316ab63d9dcfb9c1e6af43a00145274e7fc1ddae4e1f4fea3f16a4af8d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 73a0e6453d086f706e723cbd8f11e1fc026aca1c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249326"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032410"
 ---
 # <a name="chartareaformat-resource-type"></a>ChartAreaFormat 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "54249326"
 
 
 ## <a name="methods"></a>方法
-无
+None
 
 ## <a name="properties"></a>属性
 无

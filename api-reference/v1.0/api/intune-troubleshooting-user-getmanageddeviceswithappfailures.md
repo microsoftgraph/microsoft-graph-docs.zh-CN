@@ -2,15 +2,15 @@
 title: getManagedDevicesWithAppFailures 函数
 description: 检索具有失败应用的设备列表
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 158ddfe4e4c3e309c35b67b121ddb4a61f7680f6
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 057c903ddd37ba8c202f7a6dd0d1944c93d3bf46
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58263103"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59130543"
 ---
 # <a name="getmanageddeviceswithappfailures-function"></a>getManagedDevicesWithAppFailures 函数
 
@@ -41,7 +41,7 @@ GET /users/{usersId}/getManagedDevicesWithAppFailures
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

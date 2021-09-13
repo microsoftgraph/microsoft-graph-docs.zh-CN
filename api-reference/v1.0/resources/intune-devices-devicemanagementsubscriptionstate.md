@@ -2,15 +2,15 @@
 title: deviceManagementSubscriptionState 枚举类型
 description: 租户移动设备管理订阅状态。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8ce32caea8cf06c8db5896c156e4e4a4861b94bb98f21368c6464091fd889ed9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 10ae40a29405973b1428ca1428ce303aa3514ec3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54218574"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59148282"
 ---
 # <a name="devicemanagementsubscriptionstate-enum-type"></a>deviceManagementSubscriptionState 枚举类型
 
@@ -23,10 +23,10 @@ ms.locfileid: "54218574"
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|pending|0|Pending|
+|pending|0|挂起|
 |active|1|活动|
 |警告|2|警告|
-|disabled|3|禁用的|
+|disabled|3|禁用|
 |deleted|4 |Deleted|
 |blocked|5 |Blocked|
 |lockedOut|8 |LockedOut|

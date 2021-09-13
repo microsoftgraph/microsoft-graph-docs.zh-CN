@@ -1,16 +1,16 @@
 ---
 title: 更新 plannerPlan
 description: 更新 **plannerPlan 对象** 的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 9ff3eb5d6cb39a16a3c18f3475ec685558bef200
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 096745e0037b93f93ed0223527d1f3137a4fbf75
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52035097"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59050206"
 ---
 # <a name="update-plannerplan"></a>更新 plannerPlan
 
@@ -37,7 +37,7 @@ PATCH /planner/plans/{plan-id}
 
 | 名称       | 说明|
 |:-----------|:-----------|
-| Authorization  | Bearer {token}。必需。 |
+| Authorization  | 持有者{令牌}。必需。 |
 | If-Match  | 要更新的 plannerPlan 的上次已知 ETag 值。必需。|
 
 ## <a name="request-body"></a>请求正文

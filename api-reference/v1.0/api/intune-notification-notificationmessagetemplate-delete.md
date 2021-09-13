@@ -2,15 +2,15 @@
 title: 删除 notificationMessageTemplate
 description: 删除 notificationMessageTemplate。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 28cf5e1147244b1364813358d96ab23e14ae9a7f011c6db86ef6e39ee469f10d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3cec9fff9c3347f91b4c42f55586fd0006d5f120
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54155615"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147022"
 ---
 # <a name="delete-notificationmessagetemplate"></a>删除 notificationMessageTemplate
 

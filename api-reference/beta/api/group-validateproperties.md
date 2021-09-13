@@ -1,28 +1,28 @@
 ---
 title: group： validateProperties
-description: 验证组Microsoft 365或邮件昵显示名称是否符合命名策略。
-localization_priority: Normal
+description: 验证用户Microsoft 365或邮件昵显示名称是否符合命名策略。
+ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6f41ee4f9ae52133d3c7611b52b42997480dfc40
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 978dd1f718b0da49043b5f16872b8552e4139516
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681219"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59025207"
 ---
 # <a name="group-validateproperties"></a>group： validateProperties
 
 命名空间：microsoft.graph
 
-验证组Microsoft 365或邮件昵显示名称是否符合命名策略。 客户端可以使用 API 确定显示名称或邮件昵称是否有效，然后再尝试更新Microsoft 365组。  若要在创建组之前验证属性，请使用目录对象的 [validateProperties](directoryobject-validateproperties.md) 函数。
+验证用户Microsoft 365或邮件昵显示名称是否符合命名策略。 客户端可以使用 API 确定显示名称或邮件昵称是否有效，然后再尝试更新Microsoft 365组。  若要在创建组之前验证属性，请对目录 [对象使用 validateProperties](directoryobject-validateproperties.md) 函数。
 
-对别名和邮件昵称显示名称执行以下验证： 
+对邮件和邮件昵称显示名称执行以下验证： 
 1. 验证前缀和后缀命名策略
 2. 验证自定义禁止字策略
 
-此 API 返回遇到的第一个故障。 如果一个或多个属性未能通过多次验证，则仅返回第一个验证失败的属性。 但是，如果您仅验证前缀和后缀命名策略，您可以验证邮件昵称和显示名称并接收验证错误集合。
+此 API 返回遇到的第一个故障。 如果一个或多个属性未能通过多次验证，则仅返回第一个验证失败的属性。 但是，如果仅验证前缀和后缀命名策略，您可以验证邮件昵称和显示名称并接收验证错误集合。
 
 ## <a name="permissions"></a>权限
 

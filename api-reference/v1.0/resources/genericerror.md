@@ -1,16 +1,16 @@
 ---
 title: genericError 资源类型
 description: 通用错误。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
 author: abheek-das
-ms.openlocfilehash: 2d6d5829e3bd2e6772cd073358d98c61f471158311d9e93482997951d5dc67b0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3aaa756ed724f988a3b4af56dae4f648c82d202d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54180773"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036499"
 ---
 # <a name="genericerror-resource-type"></a>genericError 资源类型
 

@@ -1,16 +1,16 @@
 ---
 title: 向用户授予 appRoleAssignment
 description: 向用户授予应用角色分配。
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: users
 author: psignoret
-ms.openlocfilehash: c79435d1399af2b50f4d394c709031fd160a893b
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: f7f7150e6ccef0251f1f416a983b70a3fd5b3f93
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53578726"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59099208"
 ---
 # <a name="grant-an-approleassignment-to-a-user"></a>向用户授予 appRoleAssignment
 
@@ -28,9 +28,9 @@ ms.locfileid: "53578726"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | User.Read.All 和 AppRoleAssignment.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | AppRoleAssignment.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | User.Read.All 和 AppRoleAssignment.ReadWrite.All |
+|应用程序 | AppRoleAssignment.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

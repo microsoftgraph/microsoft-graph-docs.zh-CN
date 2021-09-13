@@ -2,15 +2,15 @@
 title: 用户资源类型
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f3b0e61f8f85b231ab11377a6811c3ee3e3745ff
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 18955869ac60de15d797ebc79cf7e179673d310d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266851"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59078782"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "58266851"
 
 尚未记录
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[List users](../api/intune-troubleshooting-user-list.md)|[user](../resources/intune-troubleshooting-user.md) 集合|列出 [user](../resources/intune-troubleshooting-user.md) 对象的属性和关系。|

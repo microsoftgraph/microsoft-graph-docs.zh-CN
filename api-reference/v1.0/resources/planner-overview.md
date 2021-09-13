@@ -2,15 +2,15 @@
 title: 使用 Planner REST API
 description: 可以使用 Microsoft Graph 中的 Planner API 创建任务，并将其分配给 Microsoft 365 中某个群组的用户。
 author: TarkanSevilmis
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: planner
 doc_type: conceptualPageType
-ms.openlocfilehash: 58b2ce49b337fe7b266886586dcef98b84677d6f89ef3aa58b3d714cb68d683a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7ac64817ab75e8aa61c1e8105edf05bd87c1d7a7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54169394"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59044418"
 ---
 # <a name="use-the-planner-rest-api"></a>使用 Planner REST API
 

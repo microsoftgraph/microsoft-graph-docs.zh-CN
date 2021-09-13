@@ -2,15 +2,15 @@
 title: 更新 administrativeunit
 description: 更新 administrativeUnit 对象的属性。
 author: DougKirschner
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 0921bc6366d34278d23701d11ddb21bf0793d219
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: f9ac818cc3f65de72938f6afb276cd08cb33f930
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53208209"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056898"
 ---
 # <a name="update-administrativeunit"></a>更新 administrativeunit
 
@@ -50,7 +50,7 @@ PATCH /directory/administrativeUnits/{id}
 |displayName|string|管理单元的显示名称。|
 |visibility|string|管理单元的可见性。 如果未设置，则默认值为"public"。 可以设置为"HiddenMembership"，这将对非成员隐藏成员身份。|
 
-由于 **administrativeUnit** 资源支持 [扩展](/graph/extensibility-overview)，因此可以使用 操作添加、更新或删除现有 `PATCH` **administrativeUnit** 实例中扩展的自定义属性中您自己的特定于应用的数据。
+由于 **administrativeUnit** 资源支持 [扩展](/graph/extensibility-overview)，因此可以使用 操作添加、更新或删除现有 administrativeUnit 实例中扩展的自定义属性中您自己的特定于应用 `PATCH` 的数据。
 
 ## <a name="response"></a>响应
 

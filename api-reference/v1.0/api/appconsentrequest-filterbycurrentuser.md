@@ -2,15 +2,15 @@
 title: appConsentRequest：filterByCurrentUser
 description: 检索当前用户是审阅者的 appConsentRequest 对象。
 author: psignoret
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: c17e44b27b135eec034eb66399d5ce5163a5928f
-ms.sourcegitcommit: ad1e4d758d4fe6025987c1c3528ce644edb27062
+ms.openlocfilehash: 1ebcaea80e1b9e451329b167f014042ccdbb447f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51697948"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016979"
 ---
 # <a name="appconsentrequest-filterbycurrentuser"></a>appConsentRequest：filterByCurrentUser
 
@@ -26,7 +26,7 @@ ms.locfileid: "51697948"
 |:---|:---|
 |委派（工作或学校帐户）|ConsentRequest.Read.All、ConsentRequest.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|ConsentRequest.Read.All、ConsentRequest.ReadWrite.All|
+|应用程序|ConsentRequest.Read.All、ConsentRequest.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -45,7 +45,7 @@ GET /identityGovernance/appConsent/appConsentRequests/filterByCurrentUser(on='pa
 
 |参数|类型|说明|
 |:---|:---|:---|
-|on|consentRequestFilterByCurrentUserOptions|筛选以查询当前用户是审阅者的 appConsentRequest 对象。 允许的值为 `reviewer` 。 必填。|
+|on|consentRequestFilterByCurrentUserOptions|筛选以查询当前用户是审阅者的 appConsentRequest 对象。 允许的值为 `reviewer` 。 必需。|
 
 ## <a name="query-parameters"></a>查询参数
 

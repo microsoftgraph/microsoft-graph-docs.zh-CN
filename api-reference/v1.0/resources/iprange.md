@@ -1,22 +1,24 @@
 ---
 title: ipRange 资源类型
 description: 表示 IPV4 和 IPV6 地址范围的 IP 范围基类。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: c8781ea0a739662fdfbe1c9db46139edd7c8e23e67b973179b38862deec2694c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b0bb1aba5e0a8f26e12aa8d8f1e273dd58617f68
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54246701"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59089380"
 ---
 # <a name="iprange-resource-type"></a>ipRange 资源类型
 
 命名空间：microsoft.graph
 
-表示 IPV4 和 IPV6 地址范围的 IP 范围基类。
+用于配置[ipNamedLocation](ipnamedlocation.md)对象的[iPv4CidrRange](ipv4cidrrange.md)和[iPv6CidrRange](ipv6cidrrange.md)资源类型的 IP 范围抽象类型。
+
+[iPv4CidrRange](ipv4cidrrange.md)派生类型用于配置 IPv4 地址范围，而[iPv6CidrRange](ipv6cidrrange.md)派生类型用于配置 IPv6 地址范围。
 
 ## <a name="properties"></a>属性
 
@@ -36,6 +38,7 @@ ms.locfileid: "54246701"
 
 ```json
 {
+    "@odata.type": "#microsoft.graph.ipRange"
 }
 ```
 

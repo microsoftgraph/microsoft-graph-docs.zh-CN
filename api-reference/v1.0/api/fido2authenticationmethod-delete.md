@@ -2,15 +2,15 @@
 title: 删除 fido2AuthenticationMethod
 description: 删除 fido2AuthenticationMethod 对象。
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a13120fcb629d484915d1b7d3f0f96e2d8774642
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 1d14d275cb669321f32b5a11566dae56e124de0e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51506867"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046048"
 ---
 # <a name="delete-fido2authenticationmethod"></a>删除 fido2AuthenticationMethod
 命名空间：microsoft.graph

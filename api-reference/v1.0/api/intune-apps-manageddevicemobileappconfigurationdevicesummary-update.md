@@ -2,15 +2,15 @@
 title: 更新 managedDeviceMobileAppConfigurationDeviceSummary
 description: 更新 managedDeviceMobileAppConfigurationDeviceSummary 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f631788c877ae074498c6e1dcd856a352d4b8ddd079f1871db1ed894d114cd66
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6dd9aec32ac06d07d2280a6249f769777041e60b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54175936"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59073770"
 ---
 # <a name="update-manageddevicemobileappconfigurationdevicesummary"></a>更新 managedDeviceMobileAppConfigurationDeviceSummary
 

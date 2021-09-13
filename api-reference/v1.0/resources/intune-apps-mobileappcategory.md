@@ -2,15 +2,15 @@
 title: mobileAppCategory 资源类型
 description: 包含单个 Intune 应用类别的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 51f316bb7a3b86c3e571c8af4d661f3820c4018dcd86508546c07d1a62419be9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e01e15f6d4e3cb1ed7306fa84a151538ca724221
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235672"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056065"
 ---
 # <a name="mobileappcategory-resource-type"></a>mobileAppCategory 资源类型
 

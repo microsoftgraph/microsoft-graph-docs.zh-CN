@@ -2,15 +2,15 @@
 title: insightIdentity
 description: 包含共享项的属性的复杂类型。
 author: simonhult
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 393a6c1f7fbd1a7fffac667afcf054cdc6b54d55576ffb220df6437166827622
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 701840cea5f1bc5e878e5d47c21caf97aed320de
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54229254"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129864"
 ---
 # <a name="insightidentity"></a>insightIdentity
 

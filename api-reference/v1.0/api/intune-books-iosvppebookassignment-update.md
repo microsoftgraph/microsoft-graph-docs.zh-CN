@@ -2,15 +2,15 @@
 title: 更新 iosVppEBookAssignment
 description: 更新 iosVppEBookAssignment 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6d7643de07ca07b4aa46f97ddb27ac9e993728d18954aecc4542c5b2ecb7c3eb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b1ee9e38735e50ceebed0eb368a7b8daf0f10ad9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54238669"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59114384"
 ---
 # <a name="update-iosvppebookassignment"></a>更新 iosVppEBookAssignment
 
@@ -41,7 +41,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/assignments/{managedEB
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

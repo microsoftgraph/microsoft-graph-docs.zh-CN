@@ -2,15 +2,15 @@
 title: 列出 administrativeUnits
 description: 检索 administrativeUnit 对象的列表。
 author: DougKirschner
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 1a746702d56ba4a8f8d10a5ea24c9d5c802d550e
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 0c1bad4d9defe45b989fb6d731d3282d8e3bf7b9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52991517"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128338"
 ---
 # <a name="list-administrativeunits"></a>列出 administrativeUnits
 
