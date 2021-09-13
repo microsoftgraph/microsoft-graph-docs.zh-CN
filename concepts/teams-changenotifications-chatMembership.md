@@ -2,15 +2,15 @@
 title: 使用 Microsoft Graph 获取聊天成员资格的更改通知
 description: 了解如何使用 Microsoft Graph API 获取聊天成员身份更改的通知。
 author: RamjotSingh
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 1423ee1de0330cfcfb9322bd324065fd8c31da7a27d65b77648669565cd339b9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 09babfebfccbd833ca1b969420f5ef3a3c75ba91
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54165509"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59138923"
 ---
 # <a name="get-change-notifications-for-chat-membership-using-microsoft-graph"></a>使用 Microsoft Graph 获取聊天成员资格的更改通知
 

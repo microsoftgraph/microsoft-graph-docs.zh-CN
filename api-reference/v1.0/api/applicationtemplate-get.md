@@ -1,16 +1,16 @@
 ---
 title: 获取 applicationTemplate
 description: 检索 applicationtemplate 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: luleonpla
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: db1957652d2abd29d79bce8c594b83deaf2992f3
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 87f4e2498f0daf4a0aafe9546a77441df89cd826
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50768879"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59026754"
 ---
 # <a name="get-applicationtemplate"></a>获取 applicationTemplate
 

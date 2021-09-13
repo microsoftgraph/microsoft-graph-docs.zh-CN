@@ -2,15 +2,15 @@
 title: Microsoft Bookings API 概述（预览版）
 description: Microsoft Bookings 提供了联机移动应用，可便于组织及他们的客户和用户轻松高效地安排约会。
 author: arvindmicrosoft
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: bookings
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 2da9393f7c374e96f540efad3ed7e2aeb1ce6cd077b44e0beb6495a12148daad
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 37cae1ba10db204bc646060131e32619bfa1b2d2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54237577"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134078"
 ---
 # <a name="microsoft-bookings-api-overview-preview"></a>Microsoft Bookings API 概述（预览版）
 

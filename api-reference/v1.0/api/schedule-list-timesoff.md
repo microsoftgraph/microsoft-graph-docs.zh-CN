@@ -2,15 +2,15 @@
 title: List timesOff
 description: 获取此计划中的 timesOff 列表。
 author: akumar39
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 30188397b31932bdf6f1648b1fd130db233d982a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 798cbf48acb31392988ea7e22f9ce2ce91cb3302
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053865"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019690"
 ---
 # <a name="list-timesoff"></a>List timesOff
 

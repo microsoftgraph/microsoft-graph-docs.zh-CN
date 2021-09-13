@@ -2,15 +2,15 @@
 title: educationSubmission： submit
 description: 指示学生已完成工作并准备好处理作业的操作。 此操作仅能由学生执行。
 author: sharad-sharma-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d63392079ad66d715c735ab5d6ddd989336fa958
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: b6a844e3f8e2c23559d6a525c18b8b04b21137ae
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52993300"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59068254"
 ---
 # <a name="educationsubmission-submit"></a>educationSubmission： submit
 

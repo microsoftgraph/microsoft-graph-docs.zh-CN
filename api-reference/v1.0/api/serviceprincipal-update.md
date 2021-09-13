@@ -1,16 +1,16 @@
 ---
 title: 更新 serviceprincipal
 description: 更新 serviceprincipal 对象的属性。
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 82e936f93c10acb6e63672faac08653373f45fe6
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 1e18fa4c59a11f568a3de4cbece8f23b9f616635
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787124"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019501"
 ---
 # <a name="update-serviceprincipal"></a>更新 servicePrincipal
 

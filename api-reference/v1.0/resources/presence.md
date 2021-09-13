@@ -2,15 +2,15 @@
 title: 状态资源类型
 description: 包含有关用户状态的信息，包括其可用性和用户活动。
 author: mkhribech
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 476d7b291438492d4ec22a2a9401ef7830ecabfe
-ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
+ms.openlocfilehash: 991ee7f2c48e6bec66775fbb41961c188aca88e2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58396968"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019207"
 ---
 # <a name="presence-resource-type"></a>状态资源类型
 
@@ -36,10 +36,10 @@ ms.locfileid: "58396968"
 | 关系 | 类型              | 说明                                                                                                                                                                                                                                                                                       |
 | :----------- | :---------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | id           | string            | 用户对象 ID                                                                                                                                                                                                                                                                                |
-| availability | 字符串集合 | 用户的基本状态信息。 可能的值为 `Available` `AvailableIdle` `Away` `BeRightBack` 、、、、、、、、、 `Busy` `BusyIdle` `DoNotDisturb` `Offline``PresenceUnknown`                                                                                                              |
+| availability | string collection | 用户的基本状态信息。 可能的值为 `Available` `AvailableIdle` `Away` `BeRightBack` 、、、、、、、、、 `Busy` `BusyIdle` `DoNotDisturb` `Offline``PresenceUnknown`                                                                                                              |
 | 活动     | 字符串集合 | 用户可用性的补充信息。 可能的值是 `Available` `Away` `BeRightBack` `Busy` 、、、、、、、、、 `DoNotDisturb` `InACall` `InAConferenceCall` `Inactive` `InAMeeting` `Offline` `OffWork` `OutOfOffice` `PresenceUnknown` `Presenting` `UrgentInterruptionsOnly` 。 |
 
->**注意：** 若要详细了解不同的状态，请参阅用户状态 [Teams。](/microsoftteams/presence-admins) 
+>**注意：** 若要详细了解不同的状态，请参阅用户 [状态Teams。](/microsoftteams/presence-admins) 
 
 ## <a name="relationships"></a>关系
 

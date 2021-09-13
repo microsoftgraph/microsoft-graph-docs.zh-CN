@@ -2,15 +2,15 @@
 title: call： transfer
 description: 转接活动对等呼叫。
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 2214d4276fc16c198ced411fe125e13389be3480
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: db9365c43bf1ab891c6f128feb4395c4b391109d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52784911"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016818"
 ---
 # <a name="call-transfer"></a>call： transfer
 
@@ -20,7 +20,7 @@ ms.locfileid: "52784911"
 
 > **注意：** 这仅在被转移方和转移目标都Microsoft Teams属于同一租户的用户时受支持。 仅应用程序实例支持转接到 PSTN 号码。 若要了解有关转移方、被转移方和转移目标有关详细信息，请参阅 [RFC 5589](https://tools.ietf.org/html/rfc5589#section-2)。
 
-咨询转接意味着在转接之前，转接人可以通知要呼叫 (转接) 转接给被叫方。 这与直接转移呼叫相反。
+咨询转接意味着在转接之前，转接者可以通知要呼叫 (转接) 转接给被叫方。 这与直接转移呼叫相反。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

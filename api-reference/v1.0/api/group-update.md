@@ -2,15 +2,15 @@
 title: 更新组
 description: 更新 group 对象的属性。
 author: Jordanndahl
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 7064d412b776f33c30b87dde34d79a167aa6a636
-ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
+ms.openlocfilehash: 8b2b41797945f8747efbd9078c26f092052da7a4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53317089"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074043"
 ---
 # <a name="update-group"></a>更新组
 
@@ -52,8 +52,6 @@ PATCH /groups/{id}
 |autoSubscribeNewMembers|Boolean|默认值为“`false`”。 指示添加到组中的新成员是否将自动订阅接收电子邮件通知。 当组上的 **subscriptionEnabled** 设置为 `false` 时，**autoSubscribeNewMembers** 不能为 `true`。|
 |说明|String|可选的组说明。 |
 |displayName|String|组的显示名称。此属性是在创建组时所必需的，并且在更新过程中不能清除。 |
-|groupTypes|String collection|指定组类型及其成员身份。  <br><br>如果集合包含 **Unified**，则该组是 Microsoft 365 组，否则它就是一个安全组。  <br><br>如果该集合包含 **DynamicMembership**，则该组具有动态成员身份；否则，成员身份是静态的。 |
-|mailEnabled|布尔|指定是否为启用邮件的组。|
 |mailNickname|String|组的邮件别名。创建组时必须指定此属性。 |
 |securityEnabled|布尔|指定是否为安全组。 |
 |visibility|String|指定 Microsoft 365 组的可见性。可能的值是：**专用**、**公用** 或空（解释为 **公用**）。|

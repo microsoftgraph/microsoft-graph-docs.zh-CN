@@ -2,15 +2,15 @@
 title: 获取日程安排
 description: 检索 schedule 对象的属性 **和** 关系。
 author: akumar39
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ec152a26d9ed7fe250334c931217726ff88e4e54
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: bb76ed46c9ecf37b6c80ec398a26fbeeb0d7bd00
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053893"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019760"
 ---
 # <a name="get-schedule"></a>获取日程安排
 

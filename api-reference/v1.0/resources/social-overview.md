@@ -2,15 +2,15 @@
 title: 使用 Microsoft Graph API 在应用程序中集成人员智能
 description: Microsoft Graph 允许访问相关人员的有用数据以及与之交互的文档。
 author: simonhult
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: insights
 doc_type: conceptualPageType
-ms.openlocfilehash: 2920776505d99e14bcbf2c56d05a1d6ed7022b75a79564a108f1992d25464082
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4d78275f1a2a7489233d49ce950cd349efe1dea9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189287"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032144"
 ---
 # <a name="use-the-microsoft-graph-api-to-integrate-people-intelligence-in-an-app"></a>使用 Microsoft Graph API 在应用程序中集成人员智能
 

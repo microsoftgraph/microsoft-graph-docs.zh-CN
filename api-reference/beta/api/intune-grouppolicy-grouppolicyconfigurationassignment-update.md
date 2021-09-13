@@ -2,15 +2,15 @@
 title: 更新 groupPolicyConfigurationAssignment
 description: 更新 groupPolicyConfigurationAssignment 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9827e0dfc89b4c19f8991306ffa6fc4fea4fa7dc
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e41a8d56a68df44f27012f7b7090ce624c5cf1d0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804125"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59018122"
 ---
 # <a name="update-grouppolicyconfigurationassignment"></a>更新 groupPolicyConfigurationAssignment
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/a
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

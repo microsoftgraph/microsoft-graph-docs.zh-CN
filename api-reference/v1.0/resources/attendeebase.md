@@ -1,16 +1,16 @@
 ---
 title: attendeeBase 资源类型
 description: 与会者类型。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: harini84
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 95732a896e6f0a03e4e1633fc13d1b611315a6dc180629e48aa77c7b79bd933c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 76ad64b53245f4e78dd082c10e85b4eeeb1de854
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54205939"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021741"
 ---
 # <a name="attendeebase-resource-type"></a>attendeeBase 资源类型
 

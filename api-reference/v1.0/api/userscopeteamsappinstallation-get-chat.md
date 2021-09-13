@@ -3,20 +3,20 @@ title: 获取指定用户与应用之间的 1：1 Teams聊天
 description: 检索指定用户与应用之间的一对一Teams聊天。
 author: AkJo
 doc_type: apiPageType
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 61f5aa005e58280bb20c54e8ef1ef92f92d85050
-ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
+ms.openlocfilehash: 5bf8d55f4c8a4c4581dc7cdc30aa8f2c8cc74801
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52696224"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021811"
 ---
 # <a name="get-one-on-one-chat-between-the-specified-user-and-teams-app"></a>获取指定用户与应用之间的一对一Teams聊天
 
 命名空间：microsoft.graph
 
-检索[指定用户的](../resources/chat.md)聊天[和Teams](../resources/user.md)[应用](../resources/teamsapp.md)。
+检索[指定用户的](../resources/chat.md)聊天[，Teams](../resources/user.md)[应用](../resources/teamsapp.md)。
 
 ## <a name="permissions"></a>权限
 

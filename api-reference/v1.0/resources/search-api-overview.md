@@ -1,16 +1,16 @@
 ---
 title: 使用 Microsoft 搜索 API 查询数据
 description: 使用搜索 API，应用程序可以在已认证用户的上下文中搜索 Microsoft 365 数据
-localization_priority: Priority
+ms.localizationpriority: high
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: e4ed171846772eaae142c1806a3710cb2e6ae6af9e860f3def8d96689c436d8a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e7d2ce6d2eb973eb68b4cbe14754c374eec9bd3c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163703"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035610"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>使用 Microsoft 搜索 API 查询数据
 

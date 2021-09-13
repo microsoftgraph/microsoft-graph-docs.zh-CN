@@ -2,15 +2,15 @@
 title: call： mute
 description: 允许应用程序自行静音。
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 016fbd3dbad85dfaf9eb0b09d840532ce27a1c01
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 6472f8ff0470d83b0ceaee38b04c24a33aaa2b71
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52784925"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016874"
 ---
 # <a name="call-mute"></a>call： mute
 
@@ -53,7 +53,7 @@ POST /communications/calls/{id}/mute
 |clientContext|String|唯一的客户端上下文字符串。 最大限制为 256 个字符。|
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [muteParticipantOperation](../resources/muteParticipantoperation.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [muteParticipantOperation](../resources/muteParticipantoperation.md) 对象。
 
 > **注意：** 此操作返回成功响应后，所有参与者都将收到名单更新
 

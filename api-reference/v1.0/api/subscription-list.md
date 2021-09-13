@@ -1,16 +1,16 @@
 ---
 title: 列出订阅
 description: 根据应用程序 ID、用户和用户的角色（含租户）检索 webhook 订阅的属性和关系。
-localization_priority: Priority
+ms.localizationpriority: high
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: apiPageType
-ms.openlocfilehash: cd5c72305e070745407c2c89cc5213758ce591b3
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 543b5fc026448b441b7c516eef7daa840304ee8b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51468842"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019466"
 ---
 # <a name="list-subscriptions"></a>列出订阅
 

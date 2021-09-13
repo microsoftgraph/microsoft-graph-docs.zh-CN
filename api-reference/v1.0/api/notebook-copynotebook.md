@@ -1,22 +1,22 @@
 ---
 title: notebook： copyNotebook
 description: 将笔记本复制到目标文档库中的笔记本文件夹。 如果文件夹不存在，则创建该文件夹。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: f46e65f200e87d0f39ef5e9307ee199de5595fb1
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 85b6a312ac17e45381cc8a8c6e39e623ef0386ef
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787455"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016069"
 ---
 # <a name="notebook-copynotebook"></a>notebook： copyNotebook
 
 命名空间：microsoft.graph 将笔记本复制到目标文档库中的笔记本文件夹。 如果文件夹不存在，则创建该文件夹。
 
-对于 Copy 操作，你可以遵循异步调用模式：首先调用 Copy 操作，然后轮询操作终结点的结果。
+对于复制操作，你可以遵循异步调用模式：首先调用 Copy 操作，然后轮询操作终结点的结果。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -41,7 +41,7 @@ POST /groups/{id}/onenote/notebooks/{id}/copyNotebook
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供包含操作所需参数的 JSON 对象。 如果不需要，可以发送空正文。
+在请求正文中，提供 JSON 对象，其中包含操作所需的参数。 如果不需要，可以发送空正文。
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|

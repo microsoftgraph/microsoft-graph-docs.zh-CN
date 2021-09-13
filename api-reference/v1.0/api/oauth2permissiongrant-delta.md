@@ -1,16 +1,16 @@
 ---
 title: oauth2permissiongrant： delta
 description: 获取新创建、更新或删除的 oauth2permissiongrants，而无需执行整个资源集合的完整读取。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: psignoret
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d8abc221be2e66bd82ece75eae6ee9615113a159
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 23b4e38d5ea91d2b66507ed5e2f98e3f2a218290
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58513935"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59015971"
 ---
 # <a name="oauth2permissiongrant-delta"></a>oauth2permissiongrant： delta
 

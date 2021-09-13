@@ -2,15 +2,15 @@
 title: 更新 windowsPhone81CustomConfiguration
 description: 更新 windowsPhone81CustomConfiguration 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6b2aff0752cc6e4935be8d3d24765fd3235aa4ee28b22ad9b8cad410af6e60bf
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 19e652c0ce693792f19fabde16465a292f77b044
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54143834"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59029526"
 ---
 # <a name="update-windowsphone81customconfiguration"></a>更新 windowsPhone81CustomConfiguration
 

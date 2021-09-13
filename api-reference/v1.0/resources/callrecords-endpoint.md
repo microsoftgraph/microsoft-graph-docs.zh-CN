@@ -1,16 +1,16 @@
 ---
 title: 终结点资源类型
 description: 终结点类型
-localization_priority: Normal
+ms.localizationpriority: medium
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 4fe19bd5a69b456a0e74e70b118477131f7c8f2cb0011eac4270dad956d6667c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: aa6338ad487ff4b662e85f8efef8c5f89841cdfe
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54252121"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59025578"
 ---
 # <a name="endpoint-resource-type"></a>终结点资源类型
 

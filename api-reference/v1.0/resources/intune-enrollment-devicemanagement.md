@@ -2,15 +2,15 @@
 title: deviceManagement 资源类型
 description: deviceManagement 资源表示已在 Intune 中预留的租户的集合设备标识，以及可能分配给支持预注册配置的设备标识的注册配置文件。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 75d859fcb01966a26ccc32f8cea200a18ae65f741cf820ca4f75e858368c21c7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3022e89e0eb1aadb1eff0e4bb15e8834d6cb1374
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54230562"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59029042"
 ---
 # <a name="devicemanagement-resource-type"></a>deviceManagement 资源类型
 

@@ -1,22 +1,22 @@
 ---
 title: Microsoft 服务中的文件列表Graph Toolkit
 description: 文件列表组件用于通过显示文件图标和名称来显示文件列表
-localization_priority: Normal
+ms.localizationpriority: medium
 author: beth-panx
-ms.openlocfilehash: 615adf1c889f3d4e86150e4ca2ba54713beb870cb074f6718376c4475b11fe71
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1f3aea2c4d012cd4627167523540fcfeaaaf7651
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54134761"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035344"
 ---
 # <a name="file-list-component-in-the-microsoft-graph-toolkit"></a>Microsoft 服务中的文件列表Graph Toolkit
 
-文件列表 [组件使用您](/graph/api/resources/onedrive) 指定的文件/文件夹名称、图标和其他属性显示多个文件夹和文件的列表。 此组件使用 [mgt 文件](./file.md) 组件。 您可以指定特定驱动器或网站、根据见解类型显示文件列表 (趋势、使用或共享) ，或者提供对自定义文件列表的查询。
+文件列表 [组件使用您](/graph/api/resources/onedrive) 指定的文件/文件夹名称、图标和其他属性显示多个文件夹和文件的列表。 此组件使用 [mgt 文件](./file.md) 组件。 您可以指定特定驱动器或站点，根据见解类型 (趋势、使用或共享) 显示文件列表，或者向自定义文件列表提供查询。 该组件还提供允许用户将文件上载到 One Drive 或 SharePoint 中的指定位置的选项。
 
 ## <a name="example"></a>示例
 
-以下示例使用 组件显示 `mgt-file-list` 文件。 可以使用代码编辑器查看 [属性如何](#properties) 更改组件的行为。
+以下示例使用 组件显示 `mgt-file-list` 文件。 可以使用代码编辑器查看属性 [如何](#properties) 更改组件的行为。
 
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-file-list--file-list&source=docs" height="250"></iframe>
 
@@ -36,10 +36,14 @@ ms.locfileid: "54134761"
 | group-id | groupId | 文件夹所属组的 ID。 还必须提供 或 `item-id` `item-path` 。 |
 | site-id | siteId | 文件夹所属网站的 ID。 还必须提供 或 `{item-id}` `{item-path}` 。 `{list-id}`如果从特定列表引用文件，则提供 。 |
 | item-id | itemId | 文件夹的 ID。 默认查询为 `/me/drive/items` 。 提供 `{drive-id}` `{group-id}` 、 、 或 `{site-id}` `{user-id}` 以查询特定位置。 |
-| item-path | itemPath | 文件夹的项目路径 (根文件夹) 。 默认查询为 `/me/drive/root` 。 提供 `{drive-id}` `{group-id}` 、 、 或 `{site-id}` `{user-id}` 以查询特定位置。 |
-| 页面大小 | pageSize | 一个数字值，指示每个页面上要呈现的最大文件数。 |
+| item-path | itemPath | 文件夹的项目路径 (相对于根文件夹) 。 默认查询为 `/me/drive/root` 。 提供 `{drive-id}` `{group-id}` 、 、 或 `{site-id}` `{user-id}` 以查询特定位置。 |
+| 页面大小 | pageSize | 一个数字值，指示每个页面上要呈现的最大文件数。 **注意：** `page-size` 不支持 `insight-type` 。 |
 | 文件扩展名 | fileExtensions | 用于筛选要显示的文件的文件扩展名数组。 |
 | hide-more-files-button | hideMoreFilesButton | 用于指示是否显示按钮以呈现更多文件的布尔值。 |
+| enable-file-upload | enableFileUpload | 启用或禁用文件上载功能的布尔值。 默认值为 `false`。  |
+| excluded-file-extensions | excludedFileExtensions | 要从文件上载中排除的文件扩展名的字符串数组。 还必须将 属性 `enable-file-upload` 设置为 `true` 。 |
+| max-file-size | maxFileSize | 一个数字，表示最大文件上载大小 (KB) 。 还必须将 属性 `enable-file-upload` 设置为 `true` 。 |
+| max-upload-file | maxUploadFile | 一个数字，表示允许上载的最大文件数。 默认值为 `10` files。 还必须将 属性 `enable-file-upload` 设置为 `true` 。 |
 
 下面的示例更改组件的行为，以从特定查询获取文件列表。
 
@@ -69,6 +73,30 @@ ms.locfileid: "54134761"
 
 ```html
 <mgt-file-list insight-type="shared"></mgt-file-list>
+```
+
+以下示例启用文件上载功能。
+
+```html
+<mgt-file-list enable-file-upload></mgt-file-list>
+```
+
+以下示例将可上载的最大文件数限制为 5 个。
+
+```html
+<mgt-file-list max-upload-file="5" enable-file-upload></mgt-file-list>
+```
+
+以下示例将可上载的最大文件大小限制为 10000 KB。
+
+```html
+<mgt-file-list max-file-size="10000" enable-file-upload></mgt-file-list>
+```
+
+以下示例排除文件扩展名为".doc，.pdf"的文件。
+
+```html
+<mgt-file-list excluded-file-extensions=".doc,.pdf" enable-file-upload></mgt-file-list>
 ```
 
 ## <a name="methods"></a>方法
@@ -107,6 +135,15 @@ mgt-file-list {
   --show-more-button-padding: 6px;
   --show-more-button-border-bottom-right-radius: 4px;
   --show-more-button-border-bottom-left-radius: 4px;
+
+  --file-upload-border: 4px dotted #ffbdc3;
+  --file-upload-background-color: rgba(255, 0, 0, 0.1);
+  --file-upload-button-float: left;
+  --file-upload-button-color: #323130;
+  --file-upload-button-background-color: #fef8dd;
+  --file-upload-dialog-content-background-color: #ffe7c7;
+  --file-upload-dialog-primarybutton-background-color: #ffe7c7;
+  --file-upload-dialog-primarybutton-color: #323130;
 }
 ```
 
@@ -114,19 +151,30 @@ mgt-file-list {
 
 ## <a name="microsoft-graph-apis-and-permissions"></a>Microsoft Graph API 和权限
 
-| 配置 | Permissions | API |
+| 配置 | 权限 | API |
 | ------------- | ----------------- | --- |
-| 默认 (未提供标识符或)  | Files.Read、Files.Read.All、Sites.Read.All | `GET /me/drive/root/children` |
-| 提供 `{drive-id}` AND `{item-id}` | Files.Read、Files.Read.All、Sites.Read.All | `GET /drives/{drive-id}/items/{item-id}/children` |
+| 默认 (未提供标识符或查询)  | Files.Read、Files.Read.All、Sites.Read.All | `GET /me/drive/root/children` |
+| 提供 `enable-file-upload` | Files.Read、Files.Read.All、Sites.Read.All、Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All | `GET /me/drive/root/children` <br /> `PUT /me/drive/root:/{filename}:/content` <br /> `POST /me/drive/root:/{filename}:/createUploadSession` |
+| 提供 `{drive-id}` AND `{item-id}` | Files.Read、Files.Read.All、Sites.Read.All | `GET /drives/{drive-id}/items/{item-id}/children`|
+| 提供 `{drive-id}` AND `{item-id}` 和 `enable-file-upload` | Files.Read、Files.Read.All、Sites.Read.All、Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All | `GET /drives/{drive-id}/items/{item-id}/children` <br /> `PUT /drives/{drive-id}/items/{item-id}:/{filename}:/content` <br /> `POST /drives/{drive-id}/items/{item-id}:/{filename}:/createUploadSession` |
 | 提供 `{group-id}` AND `{item-id}` | Files.Read、Files.Read.All、Sites.Read.All | `GET /groups/{group-id}/drive/items/{item-id}/children` |
+| 提供 `{group-id}` AND `{item-id}` 和 `enable-file-upload` | Files.Read、Files.Read.All、Sites.Read.All、Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All | `GET /groups/{group-id}/drive/items/{item-id}/children` <br /> `PUT /groups/{group-id}/drive/items/{item-id}:/{filename}:/content` <br /> `POST /groups/{group-id}/drive/items/{item-id}:/{filename}:/createUploadSession` |
 | 仅提供 `{item-id}` | Files.Read、Files.Read.All、Sites.Read.All | `GET /me/drive/items/{item-id}/children` |
+| 仅提供 `{item-id}` AND `enable-file-upload` | Files.Read、Files.Read.All、Sites.Read.All、Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All | `GET /me/drive/items/{item-id}/children` <br /> `PUT /me/drive/items/{item-id}:/{filename}:/content` <br /> `POST /me/drive/items/{item-id}:/{filename}:/createUploadSession` |
 | 提供 `{site-id}` AND `{item-id}` | Files.Read、Files.Read.All、Sites.Read.All | `GET /sites/{site-id}/drive/items/{item-id}/children` |
-| Pprovide `{user-id}` AND `{item-id}` | Files.Read、Files.Read.All、Sites.Read.All | `GET /users/{user-id}/drive/items/{item-id}/children` |
+| 提供 `{site-id}` AND `{item-id}` 和 `enable-file-upload` | Files.Read、Files.Read.All、Sites.Read.All、Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All | `GET /sites/{site-id}/drive/items/{item-id}/children` <br /> `PUT /sites/{site-id}/drive/items/{item-id}:/{filename}:/content` <br /> `POST /sites/{site-id}/drive/items/{item-id}:/{filename}:/createUploadSession` |
+| 提供 `{user-id}` AND `{item-id}` | Files.Read、Files.Read.All、Sites.Read.All | `GET /users/{user-id}/drive/items/{item-id}/children` |
+| 提供 `{user-id}` AND `{item-id}` 和 `enable-file-upload` | Files.Read、Files.Read.All、Sites.Read.All、Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All | `GET /users/{user-id}/drive/items/{item-id}/children` <br /> `PUT /users/{user-id}/drive/items/{item-id}:/{filename}:/content` <br /> `POST /users/{user-id}/drive/items/{item-id}:/{filename}:/createUploadSession` |
 | 提供 `{drive-id}` AND `{item-path}` | Files.Read、Files.Read.All、Sites.Read.All | `GET /drives/{drive-id}/root:/{item-path}:/children` |
+| 提供 `{drive-id}` AND `{item-path}` 和 `enable-file-upload` | Files.Read、Files.Read.All、Sites.Read.All、Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All | `GET /drives/{drive-id}/root:/{item-path}:/children` <br /> `PUT /drives/{drive-id}/root:/{item-path}/{filename}:/content` <br /> `POST /drives/{drive-id}/root:/{item-path}/{filename}:/createUploadSession` |
 | 提供 `{group-id}` AND `{item-path}` | Files.Read、Files.Read.All、Sites.Read.All | `GET /groups/{group-id}/root:/{item-path}:/children` |
+| 提供 `{group-id}` AND `{item-path}` 和 `enable-file-upload` | Files.Read、Files.Read.All、Sites.Read.All、Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All | `GET /groups/{group-id}/root:/{item-path}:/children` <br /> `PUT /groups/{group-id}/root:/{item-path}/{filename}:/content` <br /> `POST /groups/{group-id}/root:/{item-path}/{filename}:/createUploadSession` |
 | 提供 `{site-id}` AND `{item-path}` | Files.Read、Files.Read.All、Sites.Read.All | `GET /sites/{site-id}/root:/{item-path}:/children` |
+| 提供 `{site-id}` AND `{item-path}` 和 `enable-file-upload` | Files.Read、Files.Read.All、Sites.Read.All、Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All | `GET /sites/{site-id}/root:/{item-path}:/children` <br /> `PUT /sites/{site-id}/root:/{item-path}/{filename}:/content` <br /> `POST /sites/{site-id}/root:/{item-path}/{filename}:/createUploadSession` |
 | 提供 `{user-id}` AND `{item-path}` | Files.Read、Files.Read.All、Sites.Read.All | `GET /users/{user-id}/root:/{item-path}:/children` |
+| 提供 `{user-id}` AND `{item-path}` 和 `enable-file-upload` | Files.Read、Files.Read.All、Sites.Read.All、Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All | `GET /users/{user-id}/root:/{item-path}:/children` <br /> `PUT /users/{user-id}/root:/{item-path}/{filename}:/content` <br /> `POST /users/{user-id}/root:/{item-path}/{filename}:/createUploadSession` |
 | 仅提供 `{item-path}` | Files.Read、Files.Read.All、Sites.Read.All | `GET /me/drive/root:/{item-path}:/children` |
+| 仅提供 `{item-path}` AND `enable-file-upload` | Files.Read、Files.Read.All、Sites.Read.All、Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All | `GET /me/drive/root:/{item-path}:/children` <br /> `PUT /me/drive/root:/{item-path}/{filename}:/content` <br /> `POST /me/drive/root:/{item-path}/{filename}:/createUploadSession` |
 | `insight-type` 设置为趋势 | Sites.Read.All | `GET /me/insights/trending` |
 | " `{user-id or upn}` `insight-type` 提供 AND"设置为 `trending` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/trending` |
 | `insight-type` 设置为 `used` | Sites.Read.All | `GET /me/insights/used` |
@@ -136,7 +184,7 @@ mgt-file-list {
 
 ## <a name="events"></a>活动
 
-事件 | 何时发出 | 自定义数据 | Cancelable | 气泡 | 使用自定义模板
+Event | 何时发出 | 自定义数据 | Cancelable | 气泡 | 使用自定义模板
 ------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
 `itemClick` | 在用户单击文件时触发。 | 所选 [文件](/graph/api/resources/driveItem) | 否 | 否 | 是，使用自定义 **文件** 模板
 
@@ -159,12 +207,12 @@ mgt-file-list {
 
 ## <a name="cache"></a>缓存
 
-|对象存储|缓存数据|说明|
+|对象存储|缓存数据|备注|
 |---------|-----------|-------|
 |`fileLists`|文件列表列表|用于存储文件列表的默认缓存列表。|
 |`insightfileLists`|见解文件列表列表|提供时 `insightType` 使用。|
 
 > [!NOTE]
-> 组件 `mgt-file-list` 在提供时 `fileQueries` 还使用 `mgt-file` IndexedDB 中的对象存储来 `fileQueries` 缓存文件。
+> 组件 `mgt-file-list` 在提供时 `fileQueries` 还使用 IndexedDB 中的对象存储 `mgt-file` 来 `fileQueries` 缓存文件。
 
 若要详细了解如何配置缓存[，请参阅](../customize-components/cache.md)Caching。

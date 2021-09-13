@@ -1,16 +1,16 @@
 ---
 title: plannerExternalReferences 资源类型
 description: '**plannerExternalReferences** 资源表示对任务的引用的集合。 这是"打开类型"。 它是任务详细信息对象的一部分。 属性值对中的值是 externalReference 对象。'
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 6a82c13a4fd18c66be3b6d2c0e8753f9fefd1ab6fdc0c47ac305ef34ff6acfba
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e1284f07b7efc1b43465b0f7e9e4c6d5de078698
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54237542"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019263"
 ---
 # <a name="plannerexternalreferences-resource-type"></a>plannerExternalReferences 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "54237542"
 
 
 ## <a name="properties"></a>属性
-开放类型的属性可以通过客户端定义。 在这种情况下，客户端必须提供基于 **HTTP/HTTPS** 协议的有效 **URL** 作为属性，并且其值必须是 [externalReference](plannerexternalreference.md)对象。 基于 OData，Open Types 中的属性名称不能包含下列字符 `.` `:` `%` `@` `#` ：、，因此需要编码它们。 示例如下所示。 若要删除引用，将 属性的值设置为 `null` 。
+开放类型的属性可通过客户端定义。 在这种情况下，客户端必须提供基于 **HTTP/HTTPS** 协议的有效 **URL** 作为属性，并且其值必须是 [externalReference](plannerexternalreference.md)对象。 基于 OData，Open Types 中的属性名称不能包含下列字符 `.` `:` `%` `@` `#` ：、，因此需要对它们进行编码。 示例如下所示。 若要删除引用，将 属性的值设置为 `null` 。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

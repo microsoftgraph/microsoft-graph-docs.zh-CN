@@ -1,16 +1,16 @@
 ---
 title: 更新位置
 description: 更新 place 对象的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: vrod9429
 ms.prod: Outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1b009f51fc095c5832ea7638f2ee4edd1ff21110
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 93252d8d4ecb8d773986a44edd3475e4f8a6a279
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053970"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59007836"
 ---
 # <a name="update-place"></a>更新位置
 
@@ -59,11 +59,11 @@ PATCH /places/{id | emailAddress}
 | floorLabel             | String                                            | 指定房间的楼层号。 |
 | floorNumber            | Int32                                             | 指定房间的楼层。 |
 | geoCoordinates         | [outlookGeoCoordinates](../resources/outlookgeocoordinates.md) | 以纬度、经度和（可选）海拔坐标指定房间或房间列表位置。 |
-| isWheelChairAccessible | 布尔值                                           | 指定会议室是否可供访问。 |
-| label                  | String                                            | 指定会议室的描述性标签，例如数字或名称。 |
-| nickname               | String                                            | 指定会议室的昵称，例如"conf room"。 |
+| isWheelChairAccessible | Boolean                                           | 指定会议室是否可供访问。 |
+| 标签                  | String                                            | 指定会议室的描述性标签，例如数字或名称。 |
+| nickname               | String                                            | 为会议室指定昵称，例如"conf room"。 |
 | phone                  | String                                            | 会议室或会议室列表的电话号码。 |
-| tags                   | 字符串集合                                 | 指定会议室的其他功能，例如，视图类型或装饰类型等详细信息。 |
+| 标记                   | String collection                                 | 指定会议室的其他功能，例如，视图类型或装饰类型等详细信息。 |
 | videoDeviceName        | String                                            | 指定会议室中的视频设备的名称。 |
 
 ## <a name="response"></a>响应

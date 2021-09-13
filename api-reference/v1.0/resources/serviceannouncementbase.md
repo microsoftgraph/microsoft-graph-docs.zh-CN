@@ -2,15 +2,15 @@
 title: serviceAnnouncementBase 资源类型
 description: 这是 serviceHealthIssue 和 serviceUpdateMessage 的抽象基类型。
 author: payiAzure
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: resourcePageType
-ms.openlocfilehash: f5f1beb5918833703fbbff48ba991b850bcd1ceb
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 8ea4ddaed2a3ea67833be103da58f703957f2373
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266903"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019137"
 ---
 # <a name="serviceannouncementbase-resource-type"></a>serviceAnnouncementBase 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "58266903"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|详细信息|集合 ([keyValuePair](../resources/keyvaluepair.md)) |有关服务事件的其他详细信息。 此属性不支持筛选器。|
+|详细信息|collection ([keyValuePair](../resources/keyvaluepair.md)) |有关服务事件的其他详细信息。 此属性不支持筛选器。|
 |endDateTime|DateTimeOffset|服务事件的结束时间。|
 |id|String|服务事件的 ID。|
 |lastModifiedDateTime|DateTimeOffset|服务事件的上次修改时间。|

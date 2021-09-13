@@ -2,15 +2,15 @@
 title: call： playPrompt
 description: 在呼叫中播放提示。
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: ce89f0bbdaf665bb9f459f554a2e605324ead609
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 30f161218537d826c92ca2b96ab17caa2cfefea1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051604"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016867"
 ---
 # <a name="call-playprompt"></a>call： playPrompt
 

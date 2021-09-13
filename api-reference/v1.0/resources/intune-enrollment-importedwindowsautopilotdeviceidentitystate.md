@@ -2,15 +2,15 @@
 title: importedWindowsAutopilotDeviceIdentityState 资源类型
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e428733f5984889b4a2283d7e8f2fd76cf610b8e8f8992f5d4bc29fb7faad9f8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c223d036f8f5d2fe2099778c350ed40d8575e9df
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196993"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59028938"
 ---
 # <a name="importedwindowsautopilotdeviceidentitystate-resource-type"></a>importedWindowsAutopilotDeviceIdentityState 资源类型
 

@@ -1,16 +1,16 @@
 ---
 title: 列出 hostedContents
 description: 从消息中检索 chatMessageHostedContent 对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: cc6f5bcd883cc6f289444f253be29c12efcce2c0
-ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
+ms.openlocfilehash: 44726a579cf7a30865348ae8a71ef89d1363aee8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52971389"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022840"
 ---
 # <a name="list-hostedcontents"></a>列出 hostedContents
 

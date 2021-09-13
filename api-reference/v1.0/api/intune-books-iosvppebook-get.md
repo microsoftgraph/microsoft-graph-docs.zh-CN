@@ -2,15 +2,15 @@
 title: 获取 iosVppEBook
 description: 读取 iosVppEBook 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5285f20b4ab967773a510594d888c64854c2aab19c4298d91d664dcabe60476e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: db30f6137d5e1ead4e371ffc6e3244154f119655
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54130875"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016426"
 ---
 # <a name="get-iosvppebook"></a>获取 iosVppEBook
 

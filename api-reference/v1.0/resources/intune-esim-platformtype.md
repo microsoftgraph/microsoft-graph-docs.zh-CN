@@ -2,15 +2,15 @@
 title: platformType 枚举类型
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e4ad3316594ed2b0e0c3c9d4121511e0596f49d0daf6bf75b4292a280c5517f3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7319cea1f943fd97a6c767d567f1825ce1037664
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178246"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59028910"
 ---
 # <a name="platformtype-enum-type"></a>platformType 枚举类型
 

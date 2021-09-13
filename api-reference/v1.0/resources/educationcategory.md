@@ -2,15 +2,15 @@
 title: educationCategory 资源类型
 description: 可应用于工作分配的类别。
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 1b8454265c7c01b7e9a27653e06e0d383d0e7f944f451adc55e5688faecaa79a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b4bd1220e65b2c855d4698cbe24f1d4d8d9f6ac7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54130364"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59025564"
 ---
 # <a name="educationcategory-resource-type"></a>educationCategory 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "54130364"
 |:---------------|:--------|:----------|
 |[Create category](../api/educationclass-post-category.md) | [educationCategory](educationcategory.md) | 创建新的 **educationCategory**。|
 |[获取 educationCategory](../api/educationcategory-get.md) | [educationCategory](educationcategory.md) | 获取现有的 **educationCategory**。|
-|[删除类别](../api/educationcategory-delete.md) | 无 | 删除 **educationCategory**。|
+|[删除类别](../api/educationcategory-delete.md) | None | 删除 **educationCategory**。|
 
 
 ## <a name="properties"></a>属性

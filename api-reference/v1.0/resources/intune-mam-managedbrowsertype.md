@@ -2,15 +2,15 @@
 title: managedBrowserType 枚举类型
 description: 托管浏览器的类型
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c95373700da015c838ed789729ae4412d0007db787ae09c186123cd81ce97dd5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 81550d62e911a430a067ffd4093c597d7f4b04c2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54243362"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032340"
 ---
 # <a name="managedbrowsertype-enum-type"></a>managedBrowserType 枚举类型
 

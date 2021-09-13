@@ -2,15 +2,15 @@
 title: 列出 appConsentRequests
 description: 检索 appConsentRequest 对象及其属性
 author: psignoret
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 82013c90f4a90be14bf6ba57750bf8cafc62e4e0
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 307a761eb10d331155a134da2a2f2f5f6138f32b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51508181"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016930"
 ---
 # <a name="list-appconsentrequests"></a>列出 appConsentRequests
 命名空间：microsoft.graph
@@ -25,7 +25,7 @@ ms.locfileid: "51508181"
 |:---|:---|
 |委派（工作或学校帐户）|ConsentRequest.Read.All、ConsentRequest.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|ConsentRequest.Read.All、ConsentRequest.ReadWrite.All。|
+|应用程序|ConsentRequest.Read.All、ConsentRequest.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 

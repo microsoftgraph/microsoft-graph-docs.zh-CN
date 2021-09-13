@@ -2,15 +2,15 @@
 title: notificationTemplateBrandingOptions 枚举类型
 description: 邮件模板的品牌打造选项。 已在 Intune 管理员控制台中定义品牌。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 040efede4197433ee7189663d466a757f8b7f4a6
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d73a351826e0c2fd2b90cb91a122e555abcca3d3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803242"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017280"
 ---
 # <a name="notificationtemplatebrandingoptions-enum-type"></a>notificationTemplateBrandingOptions 枚举类型
 

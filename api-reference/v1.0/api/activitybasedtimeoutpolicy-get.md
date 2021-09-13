@@ -1,16 +1,16 @@
 ---
 title: 获取 activityBasedTimeoutPolicy
 description: 获取 activityBasedTimeoutPolicy 对象的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: lujiangfeng666
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ca7ff83aa0850b199569394634b622b781c0fbd9
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 73f5324b98bb11a5057d1be980eda26a3d8b6c62
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054236"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59008529"
 ---
 # <a name="get-activitybasedtimeoutpolicy"></a>获取 activityBasedTimeoutPolicy
 

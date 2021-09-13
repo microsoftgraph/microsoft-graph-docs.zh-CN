@@ -2,14 +2,14 @@
 title: OneNote 页中的输入和输出 HTML
 description: '创建或更新 OneNote 页时定义页面内容和结构的 HTML 被称为 *输入 HTML*。 '
 author: jewan-microsoft
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: onenote
-ms.openlocfilehash: 0d1aec43ad96c5d076f08928d554e639afc6f7164fde258235161ccf1433cfa3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 63898d10a7901ae9a3fd764de0550423a7482a38
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54123946"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035547"
 ---
 # <a name="input-and-output-html-in-onenote-pages"></a>OneNote 页中的输入和输出 HTML
 
@@ -60,7 +60,7 @@ Microsoft Graph 中的 OneNote API 至少在一个 div 中包装所有正文内�
 
 - 将输入 body 元素的 **data-absolute-enabled** 属性省略或设置为 **false**。在这种情况下，所有的正文内容都放置在默认 div 中。
 
-- 输入 body 元素的 **data-absolute-enabled** 属性为 **true**，但输入 HTML 包含的直接子级不是 [绝对定位](onenote-abs-pos.md)  **div**、**img** 或 **object** 元素。 在此情况下，不是 [绝对定位](onenote-abs-pos.md)  **div**、**img** 或 **object** 元素的直接子级被设置为默认的 div。
+- 输入 body 元素的 **data-absolute-enabled** 属性为 **true**，但输入 HTML 包含的直接子级不是 [绝对定位](onenote-abs-pos.md)&nbsp; **div**、**img** 或 **object** 元素。 在此情况下，不是 [绝对定位](onenote-abs-pos.md)&nbsp; **div**、**img** 或 **object** 元素的直接子级被设置为默认的 div。
 
 
 #### <a name="output-attributes"></a>输出属性
@@ -522,22 +522,22 @@ Microsoft Graph 中的 OneNote API 支持页面正文中元素的以下内联 CS
 
 <table id="simpletable">
 <tr>
-<td id="simplecell"><b></td>
-<td id="simplecell"><i></td>
-<td id="simplecell"><u></td>
+<td id="simplecell">&lt;b&gt;</td>
+<td id="simplecell">&lt;i&gt;</td>
+<td id="simplecell">&lt;u&gt;</td>
 </tr>
 <tr>
-<td id="simplecell"><em></td>
-<td id="simplecell"><strong></td>
-<td id="simplecell"><strike></td>
+<td id="simplecell">&lt;em&gt;</td>
+<td id="simplecell">&lt;strong&gt;</td>
+<td id="simplecell">&lt;strike&gt;</td>
 </tr>
 <tr>
-<td id="simplecell"><sup></td>
-<td id="simplecell"><sub></td>
-<td id="simplecell"><del></td>
+<td id="simplecell">&lt;sup&gt;</td>
+<td id="simplecell">&lt;sub&gt;</td>
+<td id="simplecell">&lt;del&gt;</td>
 </tr>
 <tr>
-<td id="simplecell"><cite></td>
+<td id="simplecell">&lt;cite&gt;</td>
 <td id="simplecell">&nbsp;</td>
 <td id="simplecell">&nbsp;</td>
 </tr>

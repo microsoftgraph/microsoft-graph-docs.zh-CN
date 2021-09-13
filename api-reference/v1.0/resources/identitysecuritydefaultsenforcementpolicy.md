@@ -1,16 +1,16 @@
 ---
 title: identitySecurityDefaultsEnforcementPolicy 资源类型
 description: 代表Azure Active Directory默认策略。 安全默认值包含预配置的安全设置，可抵御常见攻击。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: rohinigoyal1
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d2e3c4af8bbb7dbac35f2a28a4704010b6c6d50542d2c5de9bd1cad3cb443a90
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 07dcd2efc5fa7f83c10993293cd23c740003ef0b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54238088"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032375"
 ---
 # <a name="identitysecuritydefaultsenforcementpolicy-resource-type"></a>identitySecurityDefaultsEnforcementPolicy 资源类型
 

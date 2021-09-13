@@ -2,15 +2,15 @@
 title: macOSContentCachingType 枚举类型
 description: 指示 Apple 的内容缓存服务允许缓存的内容类型。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0bb0859eb7b409849341b03f51abb838c62f2a18
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c61a195e2b0c3025ca3659bdcfacc4075fe9367d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783538"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017476"
 ---
 # <a name="macoscontentcachingtype-enum-type"></a>macOSContentCachingType 枚举类型
 

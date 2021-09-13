@@ -2,15 +2,15 @@
 title: 列出 accessReviewInstances
 description: 获取 accessReviewInstance 对象及其属性的列表。
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 60b5ba7e35acfb72f033f90cd37d4fd32c8a3d8b
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 4c30315872b7b5f884a8912bfe327eb43c4e06b9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53210575"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59008599"
 ---
 # <a name="list-accessreviewinstances"></a>列出 accessReviewInstances
 命名空间：microsoft.graph

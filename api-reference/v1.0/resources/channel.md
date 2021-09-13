@@ -2,15 +2,15 @@
 title: 频道资源类型
 description: '频道是的团队中的 chatMessages 集合。 '
 author: nkramer
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 1d1a87bc5bc1fa7da7acb3500da88bda50b15b866bf980063eedfc481b443ff5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 27a81643c85d083ffcb526c0139ed3953191360c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54135349"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032459"
 ---
 # <a name="channel-resource-type"></a>频道资源类型
 

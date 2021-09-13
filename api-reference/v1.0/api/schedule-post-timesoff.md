@@ -2,15 +2,15 @@
 title: 创建 timeOff
 description: 创建新的 timeOff。
 author: akumar39
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 14cda6031e07ecf694ce771ad3a08a014057c25e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: f32c82bff58412b416648800faaf05896a5f777b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52039046"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019655"
 ---
 # <a name="create-timeoff"></a>创建 timeOff
 

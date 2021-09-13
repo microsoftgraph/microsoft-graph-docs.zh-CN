@@ -2,14 +2,14 @@
 title: 在 Outlook 日历中将事件启用为联机会议
 description: 在支持联机会议提供程序的机构中，管理员可以设置 Outlook 日历以支持使用这些提供程序的会议。
 author: juforan
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 337cc8e89b40a40a41b336ddd178eb97a3ced8c5abe90e211fce74e779b4bca2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8eb53027cb85a7d5d658cf98ce4744344bfc87aa
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54240532"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59066868"
 ---
 # <a name="enable-an-event-as-an-online-meeting-in-an-outlook-calendar"></a>在 Outlook 日历中将事件启用为联机会议 
 

@@ -2,15 +2,15 @@
 title: call： updateRecordingStatus
 description: 更新与呼叫关联的应用程序录制状态。
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: f9581584e415bd52b402ab6c677378e7f4cb8d8d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ef790accb41c0c7e52d92b6c7379aca0381e1acc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052486"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016797"
 ---
 # <a name="call-updaterecordingstatus"></a>call： updateRecordingStatus
 
@@ -47,7 +47,7 @@ POST /communications/calls/{id}/updateRecordingStatus
 | 参数       | 类型    | 说明                                                                           |
 |:----------------|:--------|:--------------------------------------------------------------------------------------|
 | clientContext   | String  | 唯一的客户端上下文字符串。 最大限制为 256 个字符。                                 |
-| 状态          | String  | 录制状态。 可能的值为： `notRecording`、 `recording`或 `failed`。  |
+| status          | String  | 录制状态。 可能的值为： `notRecording`、 `recording`或 `failed`。  |
 
 ## <a name="response"></a>响应
 此方法向为此 `200 OK` 请求创建的 [updateRecordingStatusOperation](../resources/updaterecordingstatusoperation.md) 对象返回响应代码和具有 URI 的位置标头。

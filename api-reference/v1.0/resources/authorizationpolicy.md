@@ -1,16 +1,16 @@
 ---
 title: authorizationPolicy 资源类型
 description: 表示可以控制用户授权设置Azure Active Directory。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 87199b5896c462efdb733842cebdfdb3c09711f0cea3eb0848540bf7a4d8bddc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 52ff42f8ec45885d8effcd73095cb16ba2512bb7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54147061"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59025606"
 ---
 # <a name="authorizationpolicy-resource-type"></a>authorizationPolicy 资源类型
 
@@ -23,21 +23,21 @@ ms.locfileid: "54147061"
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
 | [获取 authorizationPolicy](../api/authorizationpolicy-get.md) | [authorizationPolicy](authorizationpolicy.md) | 读取 authorizationPolicy 对象。 |
-| [更新 authorizationPolicy](../api/authorizationpolicy-update.md) | 无 | 更新 authorizationPolicy 对象。 |
+| [更新 authorizationPolicy](../api/authorizationpolicy-update.md) | None | 更新 authorizationPolicy 对象。 |
 
 ## <a name="properties"></a>属性  
 | 属性 | 类型 | 说明 | 
 |-|-|-|
-|allowedToSignUpEmailBasedSubscriptions|Boolean| 指示用户是否可以注册基于电子邮件的订阅。 | 
-|allowedToUseSSPR|Boolean| 指示租户Self-Serve是否可以使用密码重置功能。 | 
-|allowEmailVerifiedUsersToJoinOrganization|Boolean| 指示用户是否可以通过电子邮件验证加入租户。 | 
+|allowedToSignUpEmailBasedSubscriptions|布尔值| 指示用户是否可以注册基于电子邮件的订阅。 | 
+|allowedToUseSSPR|布尔值| 指示租户Self-Serve是否可以使用密码重置功能。 | 
+|allowEmailVerifiedUsersToJoinOrganization|布尔值| 指示用户是否可以通过电子邮件验证加入租户。 | 
 |allowInvitesFrom|allowInvitesFrom|指示谁可以邀请外部用户加入组织。 可取值为：`none`、`adminsAndGuestInviters`、`adminsGuestInvitersAndAllMembers`、`everyone`。  `everyone` 是除美国政府以外的所有云环境的默认设置。 请参阅下表中的 [，了解](#allowinvitesfrom-values)。 |
-|blockMsolPowerShell|Boolean| 若要禁止使用 MSOL PowerShell，将此属性设置为 `true` 。 这还将禁止基于用户对 MSOL PowerShell 使用的旧服务终结点的访问。 这不会影响 Azure AD 连接 或 Microsoft Graph。 | 
+|blockMsolPowerShell|布尔值| 若要禁止使用 MSOL PowerShell，将此属性设置为 `true` 。 这还将禁止基于用户对 MSOL PowerShell 使用的旧服务终结点的访问。 这不会影响 Azure AD 连接或 Microsoft Graph。 | 
 |defaultUserRolePermissions|[defaultUserRolePermissions](defaultuserrolepermissions.md)| 指定默认用户角色的某些可自定义权限。 | 
 |说明|String| 此策略的说明。|
 |displayName|String| 此策略的显示名称。 |    
-|guestUserRoleId|Guid| 表示应授予来宾用户的角色的角色 templateId。 当前支持以下角色：用户角色 () 、来宾用户 `a0b1b346-4d3e-4e8b-98f8-753987be4970` `10dae51f-b6af-4016-8d66-8c2a99b929b3` () 和受限来宾 `2af84b1e-32c8-42b7-82bc-daa82404023b` () 。 |
-|id|String| 授权策略的 ID。 必填。 只读。| 
+|guestUserRoleId|Guid| 表示应授予来宾用户的角色的角色 templateId。 目前支持以下角色：用户 () 、来宾用户 () 和受限来宾 `a0b1b346-4d3e-4e8b-98f8-753987be4970` `10dae51f-b6af-4016-8d66-8c2a99b929b3` `2af84b1e-32c8-42b7-82bc-daa82404023b` () 。 |
+|id|String| 授权策略的 ID。 必需。 只读。| 
 
 ### <a name="allowinvitesfrom-values"></a>allowInvitesFrom 值
 

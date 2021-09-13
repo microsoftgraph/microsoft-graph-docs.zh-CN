@@ -1,16 +1,16 @@
 ---
 title: 创建 delegatedPermissionClassification
 description: 通过将 delegatedPermissionClassification 添加到 API 的服务主体来对权限进行分类。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: adf21db353939dedd926792ddd0d3b7205e1ec2e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a804ef6ee195ad451c64919b10d17f74df29e95a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050309"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032490"
 ---
 # <a name="create-delegatedpermissionclassification"></a>创建 delegatedPermissionClassification
 
@@ -48,7 +48,7 @@ POST /servicePrincipals/{id}/delegatedPermissionClassifications
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应 [代码和 delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) 对象。
 
 ## <a name="examples"></a>示例
 

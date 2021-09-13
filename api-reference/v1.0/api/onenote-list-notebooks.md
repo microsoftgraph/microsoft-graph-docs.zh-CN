@@ -2,15 +2,15 @@
 title: 列出笔记本
 description: 检索 notebook 对象列表。
 author: jewan-microsoft
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: eacdf15d75e2f4274e11de36bec1f5a6c468665e
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 0cf61b99733d14b0a9eaf68c2c932b7c37244457
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473127"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59015929"
 ---
 # <a name="list-notebooks"></a>列出笔记本
 

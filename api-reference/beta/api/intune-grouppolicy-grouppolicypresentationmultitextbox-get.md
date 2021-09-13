@@ -2,15 +2,15 @@
 title: 获取 groupPolicyPresentationMultiTextBox
 description: 读取 groupPolicyPresentationMultiTextBox 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d4edaf9c3ed0653a35aa26ff08c8e8c11e00736a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 76c8aff1a5ada6e0890e92a8732ac36f7cb9cc42
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805490"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59018108"
 ---
 # <a name="get-grouppolicypresentationmultitextbox"></a>获取 groupPolicyPresentationMultiTextBox
 
@@ -47,7 +47,7 @@ GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/def
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

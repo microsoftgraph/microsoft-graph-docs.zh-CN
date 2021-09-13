@@ -2,15 +2,15 @@
 title: checkMemberGroups
 description: 检查指定组列表中的成员身份。从以下组的列表返回值
 author: Jordanndahl
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 7a4bf9b8487ffe5b4785b8729ea6a6307b3a80d2
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 371aa2dceeb2316b1470cf9e2bf2e3de6916ffa5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682213"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036863"
 ---
 # <a name="checkmembergroups"></a>checkMemberGroups
 
@@ -29,6 +29,8 @@ ms.locfileid: "52682213"
 | 委派（工作或学校帐户）     | User.ReadBasic.All、User.Read.All、Directory.Read.All、User.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
 | 委派（个人 Microsoft 帐户） | 不支持。                                                                                                     |
 | 应用程序                            | User.ReadBasic.All、User.Read.All、Directory.Read.All、User.ReadWrite.All、Directory.ReadWrite.All |
+
+> **注意：** 若要列出具有隐藏成员身份的组成员，需要 Member.Read.Hidden 权限。
 
 ## <a name="http-request"></a>HTTP 请求
 

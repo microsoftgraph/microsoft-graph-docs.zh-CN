@@ -2,27 +2,27 @@
 author: daspek
 title: 按间隔获取项目活动统计信息
 description: 获取指定时间间隔内在此资源上发生活动的 itemAnalyticyStats。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: e5a88a95a892d5b5e8e9404dc461e56eefaa566f
-ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
+ms.openlocfilehash: 2637dbf01a3b469f588c6b24f15dd65fe7af8061
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50626122"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019809"
 ---
 # <a name="get-item-activity-stats-by-interval"></a>按间隔获取项目活动统计信息
 
 命名空间：microsoft.graph
 
-获取指定时间间隔内在此资源上发生活动的 [itemActivityStats][] 资源集合。
+获取指定时间间隔内在此资源上发生活动的 [itemActivityStats][] 资源的集合。
 
->**注意：****itemAnalytics** 资源尚未可用于所有 [的国家部署](/graph/deployments)。 
+>**注意：****itemAnalytics** 资源尚未在所有的国家部署 [中可用](/graph/deployments)。 
 
-分析聚合可能并非可用于所有操作类型。
+分析聚合可能并非适用于所有操作类型。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -48,9 +48,9 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(sta
 |:---------------|:-------------------|:---------------------------------------
 | startDateTime  | 字符串 (时间戳)  | 聚合活动的开始时间。
 | endDateTime    | 字符串 (时间戳)  | 聚合活动的结束时间。
-| interval       | string             | 聚合间隔。
+| interval       | 字符串             | 聚合间隔。
 
->**注意：** 此 API 仅支持每日计数的 90 天时间范围。 和参数的值 `startDateTime` `endDateTime` 必须表示小于 90 天的时区。
+>**注意：** 此 API 仅支持每天计数的 90 天范围。 和 参数 `startDateTime` `endDateTime` 的值必须表示小于 90 天的时间范围。
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query_parameters)来帮助自定义响应。
@@ -67,7 +67,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(sta
 
 ## <a name="response"></a>响应 
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [itemActivityStats][] 对象集合。 
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [itemActivityStats][] 对象集合。 
 
 ## <a name="example"></a>示例
 

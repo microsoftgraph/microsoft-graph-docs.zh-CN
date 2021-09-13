@@ -2,15 +2,15 @@
 title: 更新组设置
 description: 更新特定组设置对象的属性。
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 98fcff8af2640cc106916654e66920a77ec8d20c
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: b6b0cc858636d5348d0273073f12b9ba6ad40647
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514647"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022301"
 ---
 # <a name="update-a-group-setting"></a>更新组设置
 

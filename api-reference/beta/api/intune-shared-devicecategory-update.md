@@ -2,15 +2,15 @@
 title: 更新 deviceCategory
 description: 更新 deviceCategory 对象的属性。
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1b38d78f760598c86acb75f602f9d62fe3bf1814
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d975ec8a0fdd5cc5f8987bba3858fb4ee9634e92
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816611"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017778"
 ---
 # <a name="update-devicecategory"></a>更新 deviceCategory
 
@@ -58,11 +58,11 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 PATCH /deviceManagement/deviceCategories/{deviceCategoryId}
 ```
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -75,8 +75,8 @@ PATCH /deviceManagement/deviceCategories/{deviceCategoryId}
 |:---|:---|:---|
 |id|String|设备类别的唯一标识符。 只读。|
 |**载入**|
-|description|String|设备类别的可选说明。|
-|displayName|字符串|设备类别的显示名称。|
+|说明|String|设备类别的可选说明。|
+|displayName|String|设备类别的显示名称。|
 
 ## <a name="response"></a>响应
 

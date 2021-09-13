@@ -2,15 +2,15 @@
 title: 更新 MailFolder
 description: 更新 mailfolder 对象的属性。
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4a0e595797ee67d5f5c818902e7136f50b0f0941
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: cef4a624828884ed8f6b094d9b34fb8e88b84335
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055909"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59026257"
 ---
 # <a name="update-mailfolder"></a>更新 MailFolder
 
@@ -85,7 +85,7 @@ Content-length: 159
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

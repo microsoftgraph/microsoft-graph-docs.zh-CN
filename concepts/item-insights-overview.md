@@ -2,15 +2,15 @@
 title: Microsoft Graph 中的项见解概述
 description: 用户级别的项见解功能和自定义概述
 author: simonhult
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: f74c83634f3484dff9d2c2b43c0d4c5bed072915
-ms.sourcegitcommit: 998c63e6290cfb5ad4a6bd3eb3e249d282f962a3
+ms.openlocfilehash: 1f68d3066acaf8499bc9645547be584e47373932
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58531290"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021419"
 ---
 # <a name="overview-of-item-insights"></a>项见解概述
 项见解是基于你在 Microsoft 365 中的协作工作，向你和与你协作的人员提供的以用户为中心的建议。

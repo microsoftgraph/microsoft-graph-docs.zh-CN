@@ -2,15 +2,15 @@
 title: win32LobAppRegistryRuleOperationType 枚举类型
 description: 包含所有支持的注册表数据检测类型。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 19e1626df7d756029033c992a68c3555d272d9e4cafeadc3d4ff8305d04edab2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 55b02e66f9735bc28ad0ec17bafc0ec5f549b7f1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54231749"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59015600"
 ---
 # <a name="win32lobappregistryruleoperationtype-enum-type"></a>win32LobAppRegistryRuleOperationType 枚举类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "54231749"
 |notConfigured|0|未配置。|
 |exists|1|指定的注册表项或值已存在。|
 |doesNotExist|2|指定的注册表项或值不存在。|
-|string|3|字符串值类型。|
+|字符串|3|字符串值类型。|
 |integer|4 |整数值类型。|
 |version|5 |版本值类型。|
 

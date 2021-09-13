@@ -2,15 +2,15 @@
 title: 获取 deviceCategory
 description: 读取 deviceCategory 对象的属性和关系。
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d346884d22ec9dbdae554b396eebdca00f4ac7af
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8f1b611f544d7f31df91165356956120fc7cd05d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787333"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017813"
 ---
 # <a name="get-devicecategory"></a>获取 deviceCategory
 
@@ -66,7 +66,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceR
 
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

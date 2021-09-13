@@ -2,14 +2,14 @@
 title: 查看应用身份验证库更改
 description: 介绍如何更新身份验证库使用，以将应用从 Azure AD Azure Active Directory (API) 迁移到 Microsoft Graph API。
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: f1b502c3d72fd194b809e355f09e43154ff5a4f27569c0fc534fcbfc55f11123
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9dfd24bb1bf956ee762c0419bce4866816fdc35e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163496"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59135968"
 ---
 # <a name="review-app-authentication-library-changes"></a>查看应用身份验证库更改
 
@@ -24,11 +24,11 @@ ms.locfileid: "54163496"
 
 如果你的应用当前使用 ADAL，请使用两阶段迁移方法：
 
-1. 更新应用以获取 Microsoft Graph 的访问Graph。 继续使用 ADAL 执行此步骤。 更新 **resourceURL**，其中保存了表示资源 Web API 的 URI，网址为：
+1. 更新应用以获取 Microsoft Graph 的访问令牌。 继续使用 ADAL 执行此步骤。 更新 **resourceURL**，其中保存了表示资源 Web API 的 URI，网址为：
 
     `https://graph.windows.net`  
 
-    自：  
+    收件人：  
 
     `https://graph.microsoft.com`
 
@@ -40,7 +40,7 @@ ms.locfileid: "54163496"
 
 ## <a name="migrating-to-msal"></a>迁移到 MSAL
 
-与 ADAL 相比，MSAL 提供了多个优势，包括增量同意、更丰富的单一登录体验、个人 Microsoft 帐户支持、使用基于标准的协议等。  
+MSAL 与 ADAL 相比提供了多个优势，包括增量同意、更丰富的单一登录体验、个人 Microsoft 帐户支持、使用基于标准的协议等。  
 
 在将应用切换到 MSAL 时，你需要进行一些更改，包括在令牌获取请求中设置 **scopes** 参数：
 
@@ -56,5 +56,5 @@ var scopes = new string[] { "https://graph.microsoft.com/.default" };
 
 ## <a name="next-steps"></a>后续步骤
 
-- 了解 Azure AD Graph 和 Microsoft Graph 之间的[.NET](migrate-azure-ad-graph-client-libraries.md)客户端库差异。
+- 了解 Azure AD Azure Active Directory (和 Microsoft) Graph 之间的[.NET](migrate-azure-ad-graph-client-libraries.md)客户端库Graph。
 - 再次查看 [检查](migrate-azure-ad-graph-planning-checklist.md) 表。

@@ -2,15 +2,15 @@
 title: 在没有用户的情况下获取访问权限
 description: 一些应用使用他们自己的标识（而不代表用户）调用 Microsoft Graph。 在许多情况下，这些是在服务器上运行的后台服务或守护程序，不存在登录用户。
 author: jackson-woods
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: applications
 ms.custom: graphiamtop20
-ms.openlocfilehash: f00aeb609b2941ef2f496fe64a80309361e8942a5ed70a83ec9950a25eb966a9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9e218fb7f570ff52587a1f9cd0921ea0efbce971
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54169265"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035561"
 ---
 # <a name="get-access-without-a-user"></a>在没有用户的情况下获取访问权限
 

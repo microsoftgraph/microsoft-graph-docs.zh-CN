@@ -2,15 +2,15 @@
 title: notebook： getNotebookFromWebUrl
 description: 使用笔记本对象 URL 路径检索其属性和关系。
 author: jewan-microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: e03c0d685d4f050b6f8401a6cdb46b5bacb387d8
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 31677503fa1982717768f10f58b6ce0365917957
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055881"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016055"
 ---
 # <a name="notebook-getnotebookfromweburl"></a>notebook： getNotebookFromWebUrl
 
@@ -18,7 +18,7 @@ ms.locfileid: "52055881"
 
 使用笔记本对象 URL [路径检索](../resources/notebook.md) 其属性和关系。
 
-该位置可以是用户笔记本Microsoft 365、组笔记本或SharePoint托管的工作组笔记本上Microsoft 365。
+该位置可以是用户笔记本，Microsoft 365组笔记本或SharePoint托管的工作组笔记本Microsoft 365。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

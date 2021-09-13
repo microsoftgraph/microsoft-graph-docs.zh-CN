@@ -1,16 +1,16 @@
 ---
 title: plannerUserIds 资源类型
-description: '**plannerUserIds** 资源表示共享计划的用户 ID 的列表。 这是"打开类型"。 如果要利用组Microsoft 365，请使用组 API 管理组成员身份以共享组计划。 您还可以将组的现有成员添加到此集合中，尽管他们无需访问组所拥有的计划。'
-localization_priority: Normal
+description: '**plannerUserIds** 资源表示共享计划的用户 ID 的列表。 这是"打开类型"。 如果你要利用Microsoft 365组，请使用组 API 管理组成员身份以共享组计划。 您还可以将组的现有成员添加到此集合中，尽管他们无需访问组所拥有的计划。'
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: b40b1681728bcebe85bab43254bb8414886ff3425d296596364992db7d5c8e7e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 53b10f1f1ca921446279c294782ceb68dbf182f6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54223247"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021440"
 ---
 # <a name="planneruserids-resource-type"></a>plannerUserIds 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "54223247"
 
 
 ## <a name="properties"></a>属性
-开放类型的属性可以通过客户端定义。 在这种情况下，客户端应提供用户 ID 作为属性，其值为 `true` 布尔值。 当不再与用户 ID 共享时，会自动通过将其值设置为布尔值来删除 `false` 属性。
+开放类型的属性可通过客户端定义。 在这种情况下，客户端应提供用户 ID 作为属性，其值为 `true` 布尔值。 当不再与用户 ID 共享时，会自动通过将其值设置为布尔值来删除 `false` 属性。
 
 
 ## <a name="json-representation"></a>JSON 表示形式

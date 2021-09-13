@@ -2,15 +2,15 @@
 title: 获取 appConsentRequest
 description: 读取 appConsentRequest 对象的属性和关系。
 author: psignoret
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: f18a5443f87c3d765d80c56cb5e88b9fab85e96e
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: af22c0001e9d2dd65263110fc253ecc7c68b7ff3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51508212"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016972"
 ---
 # <a name="get-appconsentrequest"></a>获取 appConsentRequest
 
