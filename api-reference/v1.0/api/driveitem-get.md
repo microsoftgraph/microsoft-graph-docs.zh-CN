@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: 获取文件或文件夹
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: sharepoint
 description: 通过文件系统路径或 ID 在驱动器中检索 DriveItem 的元数据。
 doc_type: apiPageType
-ms.openlocfilehash: 7fb47cd473114d5ecd376c092584b7166d6801eb
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: ec020e311de0c5df80b361ceb1fc3d4de36ca6ea
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240302"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59050598"
 ---
 # <a name="get-a-driveitem-resource"></a>获取 DriveItem 资源
 

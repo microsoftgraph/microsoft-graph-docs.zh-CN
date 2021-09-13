@@ -2,15 +2,15 @@
 title: 更新 iosVppAppAssignedLicense
 description: 更新 iosVppAppAssignedLicense 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a7cf6905e76208a68c1a3e960acde8d77185da43
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4d5ebd11642a71525ad39f5ccf16f7df8dd14fae
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793752"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062192"
 ---
 # <a name="update-iosvppappassignedlicense"></a>更新 iosVppAppAssignedLicense
 
@@ -43,7 +43,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/as
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

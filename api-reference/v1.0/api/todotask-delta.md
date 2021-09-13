@@ -1,16 +1,16 @@
 ---
 title: todoTask： delta
 description: 获取一组指定 todoTaskList 中已添加、删除或更新的 todoTask 资源。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: avijityadav
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c466415f1e65561f9f36838dffcd76721607905dc6b9701084e49951e651950c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: af791b7e4c2a6819d97b9e985a381b3cffe4f885
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54155286"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049786"
 ---
 # <a name="todotask-delta"></a>todoTask： delta
 
@@ -38,7 +38,7 @@ GET /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/delta
 
 ## <a name="query-parameters"></a>查询参数
 
-跟踪 **todoTask 集合** 中的更改会导致一次或多组 **delta** 函数调用。 如果要使用任意查询参数（`$deltatoken` 和 `$skiptoken` 除外），则必须在最初的 **delta** 请求中指定它。 Microsoft Graph 自动将指定的任意参数编码为响应中提供的 `nextLink` 或 `deltaLink` URL 的令牌部分。 只需预先指定所需的任何查询参数一次。 在后续请求中，只需复制并应用上一响应中的 或 URL，因为此 URL 已包含所需的编码 `nextLink` `deltaLink` 参数。
+跟踪 **todoTask** 集合中的更改会导致一次或多组 **delta** 函数调用。 如果要使用任意查询参数（`$deltatoken` 和 `$skiptoken` 除外），则必须在最初的 **delta** 请求中指定它。 Microsoft Graph 自动将指定的任意参数编码为响应中提供的 `nextLink` 或 `deltaLink` URL 的令牌部分。 只需预先指定所需的任何查询参数一次。 在后续请求中，只需复制并应用上一响应中的 或 URL，因为此 URL 已包含所需的编码 `nextLink` `deltaLink` 参数。
 
 | 查询参数      | 类型   |说明|
 |:---------------|:--------|:----------|
@@ -67,7 +67,7 @@ GET /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/delta
 
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
-若要跟踪自上一轮更改跟踪以来 **todoTaskList** 中 **todoTask** 资源的变化，需要执行一次或多个 **delta** 函数调用，获取增量更改集。 以下示例显示如何使用 上一轮的最后一个 delta 函数调用返回的 URL 开始下一轮更改跟踪，其中包含 `deltaLink`  `deltaToken` 。 此 **delta** 函数调用将响应正文 **中 todoTask** 的最大数目限制为 2。
+若要跟踪自上一轮更改跟踪以来 **todoTaskList** 中 **todoTask** 资源的变化，需要执行一次或多个 **delta** 函数调用，获取增量更改集。 以下示例显示如何使用上一轮的最后一个 delta 函数调用返回的 URL 开始下一轮更改跟踪， `deltaLink` 其中包含 `deltaToken` 。 此 **delta** 函数调用将响应正文 **中 todoTask** 的最大数目限制为 2。
  
 
 ### <a name="http-request"></a>HTTP 请求

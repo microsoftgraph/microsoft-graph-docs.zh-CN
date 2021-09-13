@@ -2,15 +2,15 @@
 title: deviceCompliancePolicySettingState 资源类型
 description: 给定设备的设备符合性策略设置状态。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7000ea2f35a49c9c0f025c456fee61e47bf3d030
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0d4f45f6d50f6f264301c8b8fa4caf637d8907b5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819197"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59023596"
 ---
 # <a name="devicecompliancepolicysettingstate-resource-type"></a>deviceCompliancePolicySettingState 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58819197"
 给定设备的设备符合性策略设置状态。
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|描述|
 |:---|:---|:---|
 |setting|String|报告的设置|
 |settingName|String|报告的本地化/用户友好设置名称|
@@ -37,7 +37,7 @@ ms.locfileid: "58819197"
 |userPrincipalName|String|UserPrincipalName。|
 |源|[settingSource](../resources/intune-deviceconfig-settingsource.md) 集合|参与策略|
 |currentValue|String|设备上设置的当前值|
-|settingInstanceId|字符串|SettingInstanceId|
+|settingInstanceId|String|SettingInstanceId|
 
 ## <a name="relationships"></a>关系
 无

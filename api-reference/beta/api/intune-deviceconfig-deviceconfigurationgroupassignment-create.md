@@ -2,15 +2,15 @@
 title: 创建 deviceConfigurationGroupAssignment
 description: 创建新的 deviceConfigurationGroupAssignment 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c6378556f6f5ada92bcd3caa969b433cc57073ae
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 988ada1ca070c5261763fa487f8212aaad9121ae
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804409"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59018661"
 ---
 # <a name="create-deviceconfigurationgroupassignment"></a>创建 deviceConfigurationGroupAssignment
 
@@ -52,7 +52,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -64,7 +64,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |:---|:---|:---|
 |id|String|实体的键。|
 |targetGroupId|String|面向设备配置的 AAD 组的 ID。|
-|excludeGroup|布尔值|指示是否应排除此组。 应包含组的默认值|
+|excludeGroup|Boolean|指示是否应排除此组。 应包含组的默认值|
 
 
 

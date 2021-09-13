@@ -2,15 +2,15 @@
 title: androidRequiredPasswordType 枚举类型
 description: Android 所需的密码类型。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e2148d1898979ff346a9ba6b749d9548a1a201a4c64b69620899b7f8fe12da09
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 536d0e2d72fc03e9b36d020fcee92163f32cc999
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54223555"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59148135"
 ---
 # <a name="androidrequiredpasswordtype-enum-type"></a>androidRequiredPasswordType 枚举类型
 

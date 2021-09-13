@@ -2,15 +2,15 @@
 title: enrollmentRestrictionPlatformType 枚举类型
 description: 此枚举指示应用注册限制的平台类型。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 773674557c64e339d912e0471cb6394f1fa0f465
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c347bc164d98b27c4f61d2af25b8360d99a64b59
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787825"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063725"
 ---
 # <a name="enrollmentrestrictionplatformtype-enum-type"></a>enrollmentRestrictionPlatformType 枚举类型
 

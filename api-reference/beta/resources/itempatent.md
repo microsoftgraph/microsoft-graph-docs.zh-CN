@@ -1,16 +1,16 @@
 ---
 title: itemPatent 资源类型
 description: itemPatent 资源类型
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 424d3e047af36307be8d2589e2ab1dddcadf87785e4f58fa020fb9eae085a1b5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a6e53816f9e239de0f1c928763d1e329cc8cb63f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54248325"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063620"
 ---
 # <a name="itempatent-resource-type"></a>itemPatent 资源类型
  
@@ -20,7 +20,7 @@ ms.locfileid: "54248325"
 
 继承自 [itemFacet](../resources/itemfacet.md)。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出专利](../api/profile-list-patents.md)|[itemPatent](../resources/itempatent.md) 集合|从专利导航属性获取 itemPatent 资源。|
@@ -30,16 +30,16 @@ ms.locfileid: "54248325"
 |[删除 itemPatent](../api/itempatent-delete.md)|无|删除 [itemPatent](../resources/itempatent.md) 对象。|
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
-|allowedAudiences|字符串|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
+|allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
 |createdBy|[identitySet](../resources/identityset.md)|提供创建实体的用户和/或应用程序的标识符。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |createdDateTime|DateTimeOffset|提供实体创建时的日期时间Offset。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|description|String|专利或归档的去向。 |
+|说明|String|专利或归档的去向。 |
 |displayName|String|专利或归档的标题。 |
-|id|字符串|用于单独寻址实体的标识符。 继承自 [实体](../resources/entity.md)|
+|id|String|用于单独寻址实体的标识符。 继承自 [实体](../resources/entity.md)|
 |inference|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断出来的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|isPending        |布尔值     |指示正在申请专利。        |
+|isPending        |Boolean     |指示正在申请专利。        |
 |issuedDate       |日期        |授予专利的日期。   |
 |issuingAuthority |String      |授予专利的颁发机构。     |
 |lastModifiedBy|[identitySet](../resources/identityset.md)|提供上次修改实体的用户和/或应用程序的标识符。 继承自 [itemFacet](../resources/itemfacet.md)。|

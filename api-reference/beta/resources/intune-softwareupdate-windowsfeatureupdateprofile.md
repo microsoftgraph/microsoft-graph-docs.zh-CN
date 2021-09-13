@@ -2,15 +2,15 @@
 title: windowsFeatureUpdateProfile 资源类型
 description: Windows功能更新配置文件
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9fc087d72f6b2e5198ea42141be9914510175e1e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8de71467651f732732b3eaaa3dfd88a79eaaf121
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793524"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59029869"
 ---
 # <a name="windowsfeatureupdateprofile-resource-type"></a>windowsFeatureUpdateProfile 资源类型
 
@@ -36,17 +36,17 @@ Windows功能更新配置文件
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的标识符。|
-|displayName|String|配置文件显示名称。|
-|description|String|由用户指定的配置文件的说明。|
+|displayName|String|配置文件显示名称的配置文件。|
+|说明|String|由用户指定的配置文件的说明。|
 |featureUpdateVersion|String|将部署到此配置文件所面向的设备的功能更新版本。 版本可以是任何受支持的版本，例如 1709、1803 或 1809 等。|
 |createdDateTime|DateTimeOffset|创建配置文件的日期时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改配置文件的日期时间。|
-|roleScopeTagIds|字符串集合|此功能更新实体的范围标记列表。|
-|deployableContentDisplayName|字符串|质量显示名称配置文件可部署内容的友好解决方案|
+|roleScopeTagIds|String collection|此功能更新实体的范围标记列表。|
+|deployableContentDisplayName|String|质量显示名称配置文件可部署内容的友好解决方案|
 |endOfSupportDate|DateTimeOffset|功能更新的上次支持日期|
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|描述|
 |:---|:---|:---|
 |assignments|[windowsFeatureUpdateProfileAssignment](../resources/intune-softwareupdate-windowsfeatureupdateprofileassignment.md) 集合|配置文件的组分配列表。|
 

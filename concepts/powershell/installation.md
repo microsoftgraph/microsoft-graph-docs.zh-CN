@@ -1,21 +1,21 @@
 ---
 title: 安装 Microsoft Graph PowerShell SDK
 description: 提供有关安装 Microsoft Graph PowerShell SDK 的说明。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jasonjoh
-ms.openlocfilehash: d5c4f731bf4d18faa74de5dfc5f51582d9da5ced
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 0e4a7f9269aef1700431921aead6014a15afd8dc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58259592"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139042"
 ---
 # <a name="install-the-microsoft-graph-powershell-sdk"></a>安装 Microsoft Graph PowerShell SDK
 
 > [!NOTE]
 > 安装 SDK 的主模块将安装所有 38 个子模块。 考虑仅安装必要的模块，包括 `Microsoft.Graph.Authentication` 。
 
-Microsoft Graph PowerShell SDK 在[PowerShell 库上发布](https://www.powershellgallery.com/packages/Microsoft.Graph)。 可以使用以下命令在 PowerShell 核心或 Windows PowerShell安装 SDK。
+Microsoft Graph PowerShell SDK 发布在[PowerShell 库上](https://www.powershellgallery.com/packages/Microsoft.Graph)。 可以使用以下命令在 PowerShell 核心或 Windows PowerShell安装 SDK。
 
 ```powershell
 Install-Module Microsoft.Graph -Scope CurrentUser

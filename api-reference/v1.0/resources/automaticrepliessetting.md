@@ -1,16 +1,16 @@
 ---
 title: automaticRepliesSetting 资源类型
 description: '配置设置，用于自动向发件人发送包含来自 以下发件人的邮件的传入电子邮件： '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 7e92dca6390e539a73d42bf27d248d5e9c90d38b281246278714246679584071
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1386ddde7fe51600f3b9e1d3bb91d2bf347411b1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54147033"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59089856"
 ---
 # <a name="automaticrepliessetting-resource-type"></a>automaticRepliesSetting 资源类型
 

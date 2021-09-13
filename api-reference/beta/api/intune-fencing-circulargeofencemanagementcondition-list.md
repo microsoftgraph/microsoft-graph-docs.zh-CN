@@ -2,15 +2,15 @@
 title: 列出 circularGeofenceManagementConditions
 description: 列出 circularGeofenceManagementCondition 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1ddf01b89fb8e198e750f51b6d4f0bb5f37c2126
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f4d82e22049c009d43f700938ca77f933af3cc65
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804692"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59065244"
 ---
 # <a name="list-circulargeofencemanagementconditions"></a>列出 circularGeofenceManagementConditions
 
@@ -44,7 +44,7 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

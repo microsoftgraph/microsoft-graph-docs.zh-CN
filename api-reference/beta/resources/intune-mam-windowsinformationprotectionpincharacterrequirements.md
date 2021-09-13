@@ -2,15 +2,15 @@
 title: windowsInformationProtectionPinCharacterRequirements 枚举类型
 description: 固定字符要求
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a067e90fc913659c6f4080b71d9899136e209bba
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6f1bad2c10600244578c561f3dcb61846137512c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58817311"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59023428"
 ---
 # <a name="windowsinformationprotectionpincharacterrequirements-enum-type"></a>windowsInformationProtectionPinCharacterRequirements 枚举类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58817311"
 固定字符要求
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |notAllow|0|不允许|
 |requireAtLeastOne|1|需要一个 atleast|

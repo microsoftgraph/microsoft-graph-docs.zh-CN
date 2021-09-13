@@ -1,16 +1,16 @@
 ---
 title: convertIdResult 资源类型
 description: translateExchangeIds 函数执行的 ID 格式转换的结果。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: outlook
 author: abheek-das
-ms.openlocfilehash: ec94f586f0f8233f1b56965f4dea4640360b63eb43f9d1fae69988ae61d401e2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e2bb28e7ee4d889fec24152de27e37399e8acfa1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54155160"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59053152"
 ---
 # <a name="convertidresult-resource-type"></a>convertIdResult 资源类型
 

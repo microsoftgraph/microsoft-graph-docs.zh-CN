@@ -2,15 +2,15 @@
 title: syncApps 操作
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 170c171257381bcd1bdd33047efaf36df333cdbf
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: fad006deb1b865abbe74a0d2b491903f23180782
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58781963"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062290"
 ---
 # <a name="syncapps-action"></a>syncApps 操作
 
@@ -43,7 +43,7 @@ POST /deviceManagement/androidForWorkSettings/syncApps
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

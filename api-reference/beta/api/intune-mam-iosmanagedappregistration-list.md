@@ -2,15 +2,15 @@
 title: 列出 iosManagedAppRegistrations
 description: 列出 iosManagedAppRegistration 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 964d22827535d1ce88f5869ff45362271ced0a84
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0a8e22d675d5232349c8d8a765f8e44a2a98ff39
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804083"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020579"
 ---
 # <a name="list-iosmanagedappregistrations"></a>列出 iosManagedAppRegistrations
 
@@ -43,7 +43,7 @@ GET /deviceAppManagement/managedAppRegistrations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -2,15 +2,15 @@
 title: keySize 枚举类型
 description: 键大小选项。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fb54ab9f58928c4c7e21650461365f69e1e85ccf
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9f8f44b2ce5f1b905f4f73bbbcfa5b2942d7302f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786282"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59030016"
 ---
 # <a name="keysize-enum-type"></a>keySize 枚举类型
 

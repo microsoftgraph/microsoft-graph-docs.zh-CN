@@ -2,15 +2,15 @@
 title: 列出 managedAppConfigurations
 description: 列出 managedAppConfiguration 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 52950a59c695a2a9c34c1214debaf10ff3eff95f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 53f61ea01552e53fe1e0d9713e0ca3f9a67799ec
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818847"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59058724"
 ---
 # <a name="list-managedappconfigurations"></a>列出 managedAppConfigurations
 
@@ -45,7 +45,7 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/inte
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

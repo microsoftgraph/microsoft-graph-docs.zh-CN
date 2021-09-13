@@ -2,15 +2,15 @@
 title: windowsQualityUpdateProfile 资源类型
 description: Windows质量更新配置文件
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 247b382ec9d12c621591a9efcd1a6904005a7f3d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 44fcad282f98e54bae569bf78b4c7464f430d915
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797470"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59029799"
 ---
 # <a name="windowsqualityupdateprofile-resource-type"></a>windowsQualityUpdateProfile 资源类型
 
@@ -37,16 +37,16 @@ Windows质量更新配置文件
 |:---|:---|:---|
 |id|String|Intune 策略 ID。|
 |displayName|String|配置文件显示名称的配置文件。|
-|description|字符串|由用户指定的配置文件的说明。|
+|说明|String|由用户指定的配置文件的说明。|
 |expeditedUpdateSettings|[expeditedWindowsQualityUpdateSettings](../resources/intune-softwareupdate-expeditedwindowsqualityupdatesettings.md)|加速更新设置。|
 |createdDateTime|DateTimeOffset|创建配置文件的日期时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改配置文件的日期时间。|
-|roleScopeTagIds|字符串集合|此质量更新实体的范围标记列表。|
+|roleScopeTagIds|String collection|此质量更新实体的范围标记列表。|
 |releaseDateDisplayName|String|为质量更新版本显示的友好发布日期|
-|deployableContentDisplayName|字符串|质量显示名称配置文件可部署内容的友好解决方案|
+|deployableContentDisplayName|String|质量显示名称配置文件可部署内容的友好解决方案|
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|描述|
 |:---|:---|:---|
 |assignments|[windowsQualityUpdateProfileAssignment](../resources/intune-softwareupdate-windowsqualityupdateprofileassignment.md) 集合|配置文件的组分配列表。|
 

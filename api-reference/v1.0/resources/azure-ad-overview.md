@@ -1,16 +1,16 @@
 ---
 title: 在 Microsoft Graph 中使用 Azure Active Directory 资源
 description: '借助 Microsoft Graph，用户可以访问 Azure Active Directory (Azure AD) 资源以支持诸多应用场景，如管理管理员（目录）角色，邀请外部用户进入组织，并且，如果你是云解决方案提供商 (CSP)，则可以管理客户的数据。 Microsoft Graph 还提供了可供应用使用的方法；例如，用于发现用户的可传递组和角色成员身份的相关信息的方法。 '
-localization_priority: Priority
+ms.localizationpriority: high
 author: dkershaw10
 ms.prod: identity-and-access
 doc_type: conceptualPageType
-ms.openlocfilehash: 6d0b1f94af4da6e94f803a5204583a8097acb1478b246fe312167b6d28488663
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: da7518a16122573b6c8c1080085ed1ca22c67723
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54126702"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019410"
 ---
 # <a name="working-with-azure-active-directory-resources-in-microsoft-graph"></a>在 Microsoft Graph 中使用 Azure Active Directory 资源
 

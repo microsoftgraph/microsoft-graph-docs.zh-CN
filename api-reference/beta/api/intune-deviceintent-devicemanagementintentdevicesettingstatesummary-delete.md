@@ -2,15 +2,15 @@
 title: 删除 deviceManagementIntentDeviceSettingStateSummary
 description: 删除 deviceManagementIntentDeviceSettingStateSummary。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ef2ebb8cd52133e3190e87d470332cc18c197cdf
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2c9e08328542a0de5e1a9dbd14de87101789b3b8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785897"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59065580"
 ---
 # <a name="delete-devicemanagementintentdevicesettingstatesummary"></a>删除 deviceManagementIntentDeviceSettingStateSummary
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/intents/{deviceManagementIntentId}/deviceSettingStateSu
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -2,15 +2,15 @@
 title: eapType 枚举类型
 description: 可扩展身份验证协议 (EAP) 配置类型。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9eb4a6832b36803732fdc2bf01a5c4ef164e2f09
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 824a31def3479f1aa1c9fed8cc1b480220eef02d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795226"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064327"
 ---
 # <a name="eaptype-enum-type"></a>eapType 枚举类型
 
@@ -29,8 +29,8 @@ ms.locfileid: "58795226"
 |leap|17 |轻型可扩展身份验证协议 (LEAP) 。|
 |eapSim|18 |用于 GSM 订阅者标识模块的 EAP (EAP-SIM) 。|
 |eapTtls| 21|EAP-Tunneled EAP-TTLS (传输层安全性) 。|
-|peap|25|PEAP (受保护的可扩展) 。|
-|eapFast|43|EAP-Flexible EAP-FAST) 安全隧道 (身份验证。|
+|peap|25|受保护的可扩展身份验证协议 (PEAP) 。|
+|eapFast|43|EAP-Flexible EAP- (安全隧道进行身份验证FAST) 。|
 
 
 

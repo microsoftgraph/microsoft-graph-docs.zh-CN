@@ -1,15 +1,15 @@
 ---
 title: 使用 Microsoft Graph API 在 Visual Studio 2017 中调用 Microsoft 365 服务
 description: 你可以使用 Visual Studio 中的连接服务配置应用，从而调用 Microsoft Graph API。本文介绍如何获取登录用户的个人资料照片、将其上载至 OneDrive，和发送一封包含指向照片的共享链接的电子邮件。
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: reports
 author: sarahwxy
-ms.openlocfilehash: 0a9dcd50126a7de5a27aadd7d47a492d2199f7b652bd5d8657e35b36b9afcef8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 48b8ea19993f37fce7deb55174a057c80174389d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54218322"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035526"
 ---
 # <a name="call-microsoft-365-services-in-visual-studio-2017-with-the-microsoft-graph-api"></a>使用 Microsoft Graph API 在 Visual Studio 2017 中调用 Microsoft 365 服务
 

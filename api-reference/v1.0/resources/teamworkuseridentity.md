@@ -2,15 +2,15 @@
 title: teamworkUserIdentity 资源类型
 description: 表示用户Microsoft Teams。
 author: RamjotSingh
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 107ff351d17cf999fa0d2dce085587f5b2ea16edd6bf5315ded551fe78554629
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d6989f7b3c5689fefe8e9516e25fd6ff3777fe16
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54146382"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128156"
 ---
 # <a name="teamworkuseridentity-resource-type"></a>teamworkUserIdentity 资源类型
 

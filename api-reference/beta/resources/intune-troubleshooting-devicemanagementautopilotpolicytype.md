@@ -2,15 +2,15 @@
 title: deviceManagementAutopilotPolicyType 枚举类型
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: edf9180428a5149e35a838f271584d5b46fec564
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 47dd6b58f481c61ea8f07717ab3d81924096eabe
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58259165"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063662"
 ---
 # <a name="devicemanagementautopilotpolicytype-enum-type"></a>deviceManagementAutopilotPolicyType 枚举类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "58259165"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|尚未记录|
-|应用程序|3 |尚未记录|
+|应用程序|3|尚未记录|
 |appModel|7 |尚未记录|
 |configurationPolicy|12 |尚未记录|
 

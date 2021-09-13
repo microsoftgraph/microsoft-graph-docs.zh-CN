@@ -2,15 +2,15 @@
 title: userExperienceAnalyticsOperatingSystemRestartCategory 枚举类型
 description: 操作系统重启类别
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8b68f119a463ad2e2cae5f5907e54188814f7ed3
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 61bb0c1dce0cc6c00bb4f59e3d9ad9d0b8ad7d80
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783209"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020355"
 ---
 # <a name="userexperienceanalyticsoperatingsystemrestartcategory-enum-type"></a>userExperienceAnalyticsOperatingSystemRestartCategory 枚举类型
 

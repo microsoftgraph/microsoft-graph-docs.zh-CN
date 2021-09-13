@@ -2,15 +2,15 @@
 title: macOSMinimumOperatingSystem 资源类型
 description: MacOS 应用所需的最低操作系统。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 718af8c04e604cb136537b6f0e1763c9d3a4ae53
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 46d6e02674af9683682e26d1a0af1839e3e5ff1a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786395"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064509"
 ---
 # <a name="macosminimumoperatingsystem-resource-type"></a>macOSMinimumOperatingSystem 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58786395"
 MacOS 应用所需的最低操作系统。
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |v10_7|Boolean|Mac OS 10.7 或更高版本。|
 |v10_8|Boolean|Mac OS 10.8 或更高版本。|

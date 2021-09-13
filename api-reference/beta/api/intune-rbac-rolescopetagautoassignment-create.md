@@ -2,15 +2,15 @@
 title: 创建 roleScopeTagAutoAssignment
 description: 创建新的 roleScopeTagAutoAssignment 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a70ee99e3865b34e16a0288d52a52f300e7f7de1
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1868bcef0e4dcfd605c60bbe3919c4995ad9029a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791928"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064936"
 ---
 # <a name="create-rolescopetagautoassignment"></a>创建 roleScopeTagAutoAssignment
 
@@ -43,7 +43,7 @@ POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleA
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

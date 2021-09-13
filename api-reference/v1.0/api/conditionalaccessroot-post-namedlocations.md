@@ -1,22 +1,22 @@
 ---
 title: 创建 namedLocation
 description: 创建新的 namedLocation。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c9128670e02a20f72060e8ff52d74034e6fc962b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a1f64d68a05516dab32b20dc2bf25bc3562971ef
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050547"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147813"
 ---
 # <a name="create-namedlocation"></a>创建 namedLocation
 
 命名空间：microsoft.graph
 
-创建新的 [namedLocation](../resources/namedlocation.md) 对象。
+创建新的 [namedLocation](../resources/namedlocation.md) 对象。 命名位置可以是 [ipNamedLocation 或](../resources/ipnamedlocation.md) [countryNamedLocation](../resources/countrynamedlocation.md) 对象。
 
 ## <a name="permissions"></a>权限
 
@@ -45,7 +45,21 @@ POST /identity/conditionalAccess/namedLocations
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [ipNamedLocation](../resources/ipnamedlocation.md) 或 [countryNamedLocation](../resources/countrynamedlocation.md) 对象的 JSON 表示形式。
+在请求正文中，提供 [ipNamedLocation](../resources/ipnamedlocation.md) 或 [countryNamedLocation](../resources/countrynamedlocation.md) 对象的 JSON 表示形式。 必须指定派生@odata的 **@odata.type，** 即 `#microsoft.graph.ipNamedLocation` [ipNamedLocation](../resources/ipnamedlocation.md) 对象或 `#microsoft.graph.countryNamedLocation` [countryNamedLocation](../resources/countrynamedlocation.md) 对象。
+
+下表列出了创建 [ipNamedLocation](../resources/ipnamedlocation.md) 对象所需的属性。
+
+| 属性     | 类型        | 说明 |
+|:-------------|:------------|:------------|
+|displayName|String|位置的可读名称。 必需。|
+|ipRanges|[ipRange](../resources/iprange.md) 集合|IPv4 CIDR 格式的 IP 地址范围列表 (例如 1.2.3.4/32) IETF RFC596 中任何允许的 IPv6 格式。 必需。 还需要 **@odata** ipRange 的 @odata.type。|
+
+下表列出了创建 [countryNamedLocation](../resources/countrynamedlocation.md) 对象所需的属性。
+
+| 属性     | 类型        | 说明 |
+|:-------------|:------------|:------------|
+|countriesAndRegions|String collection|ISO 3166-2 指定的两字母格式的国家/地区列表。 必需。|
+|displayName|String|位置的可读名称。 必需。|
 
 ## <a name="response"></a>响应
 

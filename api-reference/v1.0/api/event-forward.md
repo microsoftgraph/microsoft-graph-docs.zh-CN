@@ -2,15 +2,15 @@
 title: event： forward
 description: '此操作允许会议事件的组织者或与会者转发 '
 author: harini84
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 02a01fb75b17941dd4bcb8e3703eec0e0dcece61
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 3cb56c0edbf845fb5a91ff92840c82800d31bcbc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448303"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016622"
 ---
 # <a name="event-forward"></a>event： forward
 
@@ -18,7 +18,7 @@ ms.locfileid: "50448303"
 
 此操作允许会议事件的组织者或与会者将会议请求[](../resources/event.md)转发给新收件人。 
 
-如果会议事件从与会者的 Microsoft 365 邮箱转发到另一个收件人，此操作还会发送一条消息以通知组织者转发，并将收件人添加到组织者的会议事件副本中。 从帐户转发时，这种便利Outlook.com可用。
+如果会议事件从与会者的 Microsoft 365 邮箱转发到另一个收件人，此操作还会发送一条消息，通知组织者转发，并将该收件人添加到组织者的会议事件副本中。 从 Outlook.com 帐户转发时，这种便利不可用。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

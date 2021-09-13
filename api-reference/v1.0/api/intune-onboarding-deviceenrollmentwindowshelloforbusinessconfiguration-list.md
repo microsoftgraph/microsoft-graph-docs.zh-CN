@@ -2,15 +2,15 @@
 title: 列出 deviceEnrollmentWindowsHelloForBusinessConfigurations
 description: 列出 deviceEnrollmentWindowsHelloForBusinessConfiguration 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b18916271af974aec16cd6144225fe2d6416019d896f3a1c2a8d792db3b6cf7e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 984ad23291b15480e139fb987e31cea27c49346d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54209075"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59090248"
 ---
 # <a name="list-deviceenrollmentwindowshelloforbusinessconfigurations"></a>列出 deviceEnrollmentWindowsHelloForBusinessConfigurations
 
@@ -41,7 +41,7 @@ GET /deviceManagement/deviceEnrollmentConfigurations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

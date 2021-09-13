@@ -2,15 +2,15 @@
 title: call： recordResponse
 description: 录制来自呼叫方的简短音频回复。 如果机器人希望按照提示从呼叫者捕获语音响应，这将非常有用。
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 8766f2764852354fc178c97bd632db550b183f81
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c087d554bf7c7a9b44fa5c19a1821374e7d0f295
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050582"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016846"
 ---
 # <a name="call-recordresponse"></a>call： recordResponse
 
@@ -23,7 +23,7 @@ ms.locfileid: "52050582"
 
 >**注意：** 这仅 [支持通过](../resources/call.md)[serviceHostedMediaConfig 启动的呼叫](../resources/servicehostedmediaconfig.md)。
 
-此操作不用于记录整个呼叫。 录制的最大长度为 2 分钟。 云通信平台不会永久保存录制，呼叫结束后将丢弃录制。 录制操作完成后，自动程序必须使用已完成的通知中给出的 recordingLocation 值立即下载录制。
+此操作不用于记录整个呼叫。 录制的最大长度为 2 分钟。 云通信平台不会永久保存录制，呼叫结束后将丢弃录制。 录制操作完成后，机器人必须使用已完成的通知中给出的 recordingLocation 值立即下载录制。
 
 >**注意：** 收集的任何媒体 **可能无法** 保留。 在呼叫录制方面，请确保你遵守你地区的法律和法规。 有关详细信息，请咨询法律顾问。
 
@@ -53,11 +53,11 @@ POST /communications/calls/{id}/recordResponse
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
 |prompts|[mediaPrompt](../resources/mediaprompt.md) 集合 | 要播放的提示。 支持的最大 mediaPrompt 集合大小为 1。|
-|bargeInAllowed|布尔值| 如果为 true，recordResponse 请求将插入其他现有的排队向上/当前处理的记录/playprompt 请求。 默认值 = false。 |
-|initialSilenceTimeoutInSeconds | Int32| 在超时 (失败) ，从开始记录响应操作时，用户的最大初始静默表示用户静默。 如果播放提示，则此计时器在提示完成后启动。 默认值 = 5 秒，最小值 = 1 秒，最大值 = 120 秒 |
-|maxSilenceTimeoutInSeconds|Int32| 用户开始 (后) 允许的最大静默时间。 默认值 = 5 秒，最小值 = 1 秒，最大值 = 120 秒。|
+|bargeInAllowed|Boolean| 如果为 true，recordResponse 请求将插入其他现有的排队向上/当前处理的记录/playprompt 请求。 默认值 = false。 |
+|initialSilenceTimeoutInSeconds | Int32| 在超时 (失败) 记录响应操作时，允许的最大初始静默时间设置为用户静默。 如果我们播放提示，则此计时器在提示完成后启动。 默认值 = 5 秒，最小值 = 1 秒，最大值 = 120 秒 |
+|maxSilenceTimeoutInSeconds|Int32| 最大静 (在) 开始说话后允许的最大静默时间。 默认值 = 5 秒，最小值 = 1 秒，最大值 = 120 秒。|
 |maxRecordDurationInSeconds|Int32| 在停止录制之前，recordResponse 操作的最大持续时间。 默认值 = 5 秒，最小值 = 1 秒，最大值 = 120 秒。|
-|playBeep|布尔值| 如果为 true，则播放一个嘟嘟声，以向用户指示他们可以开始录制其消息。 默认值 = true。|
+|playBeep|Boolean| 如果为 true，则播放一个嘟嘟声，以向用户指示他们可以开始录制其消息。 默认值 = true。|
 |stopTones|字符串集合|结束录制指定的停止音调。|
 |clientContext|String|唯一的客户端上下文字符串。 最大限制为 256 个字符。|
 

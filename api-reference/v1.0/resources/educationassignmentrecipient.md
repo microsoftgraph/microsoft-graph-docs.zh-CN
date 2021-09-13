@@ -1,16 +1,16 @@
 ---
 title: educationAssignmentRecipient 资源类型
 description: '**assignments.assignTo** 属性中使用的资源类型。'
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 4c336a926e151104af9e0945ee967d9c453ad1359c9d7e944bb07d05c924140d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c3e0180a9bd15e9a0a2f16839df170f919b5e484
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54238109"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036737"
 ---
 # <a name="educationassignmentrecipient-resource-type"></a>educationAssignmentRecipient 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "54238109"
 
 **assignments.assignTo** 属性中使用的资源类型。 
 
-此 superclass 是抽象类，您不能在工作分配中将属性设置为此值。 此 superclass 表示工作分配发布时应分配给谁。
+此超级类是抽象类，您不能在工作分配中将属性设置为此值。 此 superclass 表示工作分配发布时应分配给谁。
 
 
 [educationAssignmentClassRecipient](educationassignmentclassrecipient.md)和[educationAssignmentIndividualRecipient](educationassignmentindividualrecipient.md)资源是此超级类的子类。

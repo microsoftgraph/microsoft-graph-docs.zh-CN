@@ -1,16 +1,16 @@
 ---
 title: List appliesTo
 description: 获取 tokenIssuancePolicy 对象已应用到的 directoryObject 对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: luleonpla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: f4a281f5398988a0f5fad151105a1ad40d8dc9c5
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 54e3720783c1fd063ea961f640c6aadae6d1f7e2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054348"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59090094"
 ---
 # <a name="list-appliesto"></a>List appliesTo
 

@@ -1,16 +1,16 @@
 ---
 title: pageLinks 资源类型
 description: 用于打开页面OneNote的链接。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: c8b588a84078b1d7a8f438d54e80e093e4f85ead342297460a8d9533ee88f44e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5ad703334f60d8cb540d4725f3fc37bdd0d3048e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54180493"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117954"
 ---
 # <a name="pagelinks-resource-type"></a>pageLinks 资源类型
 

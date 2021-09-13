@@ -2,15 +2,15 @@
 title: macOsVppAppAssignedLicense 资源类型
 description: MacOS 批量购买计划许可证分配。 此类不支持创建、删除或更新。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 036f3ed99dd9af00c5e663f5236817d041785f30
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7d1634285f7364fa063f39ea0272ecf8fc087c52
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789704"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064481"
 ---
 # <a name="macosvppappassignedlicense-resource-type"></a>macOsVppAppAssignedLicense 资源类型
 

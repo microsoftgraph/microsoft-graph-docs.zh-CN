@@ -2,15 +2,15 @@
 title: 创建 iosMobileAppConfiguration
 description: 创建新的 iosMobileAppConfiguration 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 97a4992e350a7fbe57937d4b4f4d6fc8a1e94ef73f28f04020a11ca489c44b47
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 93e998c4bb66873ec5ad83e78bbf532958940b79
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54190239"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085635"
 ---
 # <a name="create-iosmobileappconfiguration"></a>创建 iosMobileAppConfiguration
 
@@ -41,7 +41,7 @@ POST /deviceAppManagement/mobileAppConfigurations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

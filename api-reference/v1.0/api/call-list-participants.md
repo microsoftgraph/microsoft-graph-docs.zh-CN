@@ -1,22 +1,22 @@
 ---
 title: 列出参与者
-description: 在呼叫中检索参与者对象的列表。
+description: 检索调用中的参与者对象列表。
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 19df1df2502c5a13c0034d3910cb903d6a380032
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4bc016c4f9c762087e6d2acb6438efb31488d60a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47966336"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016916"
 ---
 # <a name="list-participants"></a>列出参与者
 
 命名空间：microsoft.graph
 
-在呼叫中检索参与者对象的列表。
+检索调用中的参与者对象列表。
 
 ## <a name="permissions"></a>权限
 
@@ -24,7 +24,7 @@ ms.locfileid: "47966336"
 | :-------------- | :------------------------------------------ |
 | 委派（工作或学校帐户）     | 不支持        |
 | 委派（个人 Microsoft 帐户） | 不支持        |
-| 应用程序     | 无                                        |
+| 应用程序     | None                                        |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -50,7 +50,7 @@ GET /communications/calls/{id}/participants
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [参与者](../resources/participant.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 [响应](../resources/participant.md) 代码和 participant 对象集合。
 
 ## <a name="example"></a>示例
 

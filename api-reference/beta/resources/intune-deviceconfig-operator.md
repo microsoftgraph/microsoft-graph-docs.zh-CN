@@ -2,15 +2,15 @@
 title: 运算符枚举类型
 description: 规则的运算符。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4d0a4cd55d78796e6fa096b266bb43d1be9a0c85
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4102344026ef51e1bedb0f68acc95575e80b09e4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796248"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064237"
 ---
 # <a name="operator-enum-type"></a>运算符枚举类型
 
@@ -36,7 +36,7 @@ ms.locfileid: "58796248"
 |notBetween|8 |NotBetween 运算符。|
 |greaterEquals|9 |GreaterEquals 运算符。|
 |lessEquals|10 |LessEquals 运算符。|
-|dayTimeBetween|11 |DayTimeBetween 运算符。|
+|dayTimeBetween|11|DayTimeBetween 运算符。|
 |beginsWith|12 |BeginsWith 运算符。|
 |notBeginsWith|13|NotBeginsWith 运算符。|
 |endsWith|14 |EndsWith 运算符。|

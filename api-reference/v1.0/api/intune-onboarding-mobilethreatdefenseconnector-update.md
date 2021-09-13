@@ -2,15 +2,15 @@
 title: 更新 mobileThreatDefenseConnector
 description: 更新 mobileThreatDefenseConnector 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8e08313273e44d3da7a01a9559e7b13391c3f30da7f327893d6e7918d533fa6b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ae49d3244bd21fa54884cdbf643c9da161f5f5f5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54209068"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139924"
 ---
 # <a name="update-mobilethreatdefenseconnector"></a>更新 mobileThreatDefenseConnector
 

@@ -2,15 +2,15 @@
 title: 获取 windowsHealthMonitoringConfiguration
 description: 读取 windowsHealthMonitoringConfiguration 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ab0da61fb12b80278524e8eae88924c48ad03b62
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e7933c5e9c2603ad1801ee3453c67ee40c35e7d5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796003"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59028105"
 ---
 # <a name="get-windowshealthmonitoringconfiguration"></a>获取 windowsHealthMonitoringConfiguration
 
@@ -48,7 +48,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

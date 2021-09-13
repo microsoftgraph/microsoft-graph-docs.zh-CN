@@ -2,15 +2,15 @@
 author: learafa
 description: 取消关注用户正在关注的项目。
 title: 取消关注驱动器项
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 5e73fdee9d1b6c6bc9329ec5cd6597a3f2d504c5
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: b09bf65b223cf7a0fb4066160433722737ee78d6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240183"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59026658"
 ---
 # <a name="unfollow-drive-item"></a>取消关注驱动器项
 
@@ -18,7 +18,7 @@ ms.locfileid: "50240183"
 
 取消关注 [driveItem](../resources/driveitem.md)。
 
->**注意：** 若要关注某个项目，请参阅"[关注项目"。](driveitem-follow.md)
+>**注意：** 若要关注某个项目，请参阅关注 [项目](driveitem-follow.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -47,12 +47,12 @@ POST /users/{user-id}/drive/items/{item-id}/unfollow
 
 ## <a name="response"></a>响应
 
-如果成功，该 API 调用会返回 `204 No Content`。 它不在响应正文中返回任何内容。
+如果成功，该 API 调用会返回 `204 No Content`。 它不会在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
 下面是一个请求示例。
-本示例取消关注标识的项 `{item-id}` 。
+本示例取消关注由 标识的项目 `{item-id}` 。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

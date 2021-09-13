@@ -2,15 +2,15 @@
 title: windowsInformationProtectionDataRecoveryCertificate 资源类型
 description: Windows 信息保护 DataRecoveryCertificate
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e8291d2e3e30d048f94a8dde1e3a27ed91f3054a2fd2f0979cc3249df74c8b4a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 99ef42128bd984a77b5a0e72ba1f86485b221e14
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54149784"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062556"
 ---
 # <a name="windowsinformationprotectiondatarecoverycertificate-resource-type"></a>windowsInformationProtectionDataRecoveryCertificate 资源类型
 

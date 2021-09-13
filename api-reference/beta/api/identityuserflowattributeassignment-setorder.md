@@ -2,15 +2,15 @@
 title: identityUserFlowAttributeAssignment：setOrder
 description: 设置在用户流中收集的 identityUserFlowAttributeAssignments 的顺序。
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6470470e9c6933ba421acc9af5a38847f5bc0337
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: a5393be6890a3d9790136bee3e6ce2787f374aab
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50759872"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59066268"
 ---
 # <a name="identityuserflowattributeassignment-setorder"></a>identityUserFlowAttributeAssignment：setOrder
 
@@ -53,7 +53,7 @@ POST /identity/b2xUserFlows/{b2xIdentityUserFlowId}/userAttributeAssignments/set
 
 下表显示了可用于此操作的参数。
 
-|参数|类型|说明|
+|参数|类型|描述|
 |:---|:---|:---|
 |newAssignmentOrder|[assignmentOrder](../resources/assignmentorder.md)|用于定义在用户流中收集的属性的顺序。|
 

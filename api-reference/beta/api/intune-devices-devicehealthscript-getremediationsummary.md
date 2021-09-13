@@ -2,15 +2,15 @@
 title: getRemediationSummary 函数
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e88d893e3f2c97e98d67c6b6454bdbb1054e6a7d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3c442d52400d3aac98123362c8c5f12fb1eaf9dc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794593"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59065517"
 ---
 # <a name="getremediationsummary-function"></a>getRemediationSummary 函数
 
@@ -43,7 +43,7 @@ GET /deviceManagement/deviceHealthScripts/getRemediationSummary
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -2,15 +2,15 @@
 title: 创建 advancedThreatProtectionOnboardingDeviceSettingState
 description: 创建新的 advancedThreatProtectionOnboardingDeviceSettingState 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1b4e78ded98ae44959fbbaccffc805484c4daa03
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b40656cc7b799c2579cddd099e6a78c82e1b81bf
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58815874"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59066042"
 ---
 # <a name="create-advancedthreatprotectiononboardingdevicesettingstate"></a>创建 advancedThreatProtectionOnboardingDeviceSettingState
 
@@ -43,7 +43,7 @@ POST /deviceManagement/advancedThreatProtectionOnboardingStateSummary/advancedTh
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,8 +53,8 @@ POST /deviceManagement/advancedThreatProtectionOnboardingStateSummary/advancedTh
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键|
-|platformType|[deviceType](../resources/intune-deviceconfig-devicetype.md)|设备平台类型。 可能的值是 `desktop` `windowsRT` `winMO6` ：、、、、、、、、、、 `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `windows10x` `androidnGMS` `cloudPC` `blackberry` `palm` `unknown` 、|
+|id|String|实体的键|
+|platformType|[deviceType](../resources/intune-deviceconfig-devicetype.md)|设备平台类型。 可能的值是 `desktop` `windowsRT` `winMO6` ：、、、、、、、、、 `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `windows10x` `androidnGMS` `cloudPC` `blackberry` `palm` `unknown` 、|
 |setting|String|设置类名和属性名。|
 |settingName|String|报告的设置名称|
 |deviceId|String|报告的设备 ID|

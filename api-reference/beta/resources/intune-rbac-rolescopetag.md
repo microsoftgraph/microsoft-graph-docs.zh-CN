@@ -2,15 +2,15 @@
 title: roleScopeTag 资源类型
 description: 角色作用域标记
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d121f48aec77684a8f770f7c5a65e23456459b91
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d504565cbc5f37a70fc813386024b1c32c4654e6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790113"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063683"
 ---
 # <a name="rolescopetag-resource-type"></a>roleScopeTag 资源类型
 
@@ -38,12 +38,12 @@ ms.locfileid: "58790113"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。 此为只读，且自动生成。 此属性是只读的。|
-|displayName|字符串|角色作用域标记的显示或友好名称。|
-|description|字符串|角色作用域标记的说明。|
+|displayName|String|角色作用域标记的显示或友好名称。|
+|说明|String|角色作用域标记的说明。|
 |isBuiltIn|Boolean|角色作用域标记的说明。 此属性是只读的。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|描述|
 |:---|:---|:---|
 |assignments|[roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md) 集合|此角色作用域标记的分配列表。|
 

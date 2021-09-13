@@ -1,16 +1,16 @@
 ---
 title: securityVendorInformation 资源类型
 description: " subProvider=AppLocker) 。"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: a0b0d5ece58a1db1ce929b4bc72de7e8f9c1a44fdd8ccab15aee0d2c47143dcc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ed666cb4948d658dc877567bbbf31a0e6d551778
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54216551"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59142507"
 ---
 # <a name="securityvendorinformation-resource-type"></a>securityVendorInformation 资源类型
 
@@ -23,9 +23,9 @@ ms.locfileid: "54216551"
 | 属性   | 类型|说明|
 |:---------------|:--------|:----------|
 |提供程序 |String|特定提供商 (/服务 - 不是供应商公司) ;例如，WindowsDefenderATP。|
-|providerVersion|String|生成警报的提供程序或子提供程序的版本（如果存在）。 *必需*|
+|providerVersion|String|生成警报的提供程序或子提供程序的版本（如果存在）。 *Required*|
 |subProvider|String|聚合提供程序 (下的特定子) ;例如，WindowsDefenderATP.SmartScreen。|
-|vendor |String|警报供应商的名称，例如 (Microsoft、Dell、FireEye) 。 *必需*|
+|vendor |String|警报供应商的名称 (例如，Microsoft、Dell、FireEye) 。 *Required*|
 
 
 ## <a name="json-representation"></a>JSON 表示形式

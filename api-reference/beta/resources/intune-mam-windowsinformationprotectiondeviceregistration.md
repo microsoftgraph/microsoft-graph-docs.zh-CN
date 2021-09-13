@@ -2,15 +2,15 @@
 title: windowsInformationProtectionDeviceRegistration 资源类型
 description: 代表 Bring-Your-Own-Device (BYOD) Windows记录。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9cb3be503f401675ba286961e89f027b36219b8a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d70436fc799b6fc472c665a2cfbb424e50bcda49
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796844"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063809"
 ---
 # <a name="windowsinformationprotectiondeviceregistration-resource-type"></a>windowsInformationProtectionDeviceRegistration 资源类型
 
@@ -36,11 +36,11 @@ ms.locfileid: "58796844"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|userId|字符串|与此设备注册记录关联的 UserId。|
+|userId|String|与此设备注册记录关联的 UserId。|
 |deviceRegistrationId|字符串|此设备注册记录的设备标识符。|
 |deviceName|String|设备名称。|
 |deviceType|String|设备类型，例如，Windows笔记本电脑 VS Windows电话。|
-|deviceMacAddress|字符串|设备 Mac 地址。|
+|deviceMacAddress|String|设备 Mac 地址。|
 |lastCheckInDateTime|DateTimeOffset|设备的上次签入时间。|
 
 ## <a name="relationships"></a>关系

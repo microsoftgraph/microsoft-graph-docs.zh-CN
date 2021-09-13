@@ -2,15 +2,15 @@
 title: 获取 Outlook category
 description: 获取指定的 outlookCategory 对象的属性和关系。
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8be4bc35a2d72794d269323097c1a68fe07a82de
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 4e321fc3efb6b548e1aac9e0ab6ea0559318fa04
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52039207"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59037353"
 ---
 # <a name="get-outlook-category"></a>获取 Outlook category
 
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/v1.0/me/outlook/masterCategories/de912e4d-c790-4
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

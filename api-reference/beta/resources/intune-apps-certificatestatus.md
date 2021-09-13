@@ -2,15 +2,15 @@
 title: certificateStatus 枚举类型
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 656aa62b8efce51b7572a7ea7d118ca7c23246a3
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1a23a5f60a5789a706c2dd982db37eba8de4c831
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795583"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064579"
 ---
 # <a name="certificatestatus-enum-type"></a>certificateStatus 枚举类型
 

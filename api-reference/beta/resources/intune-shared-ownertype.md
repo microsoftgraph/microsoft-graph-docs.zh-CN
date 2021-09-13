@@ -2,15 +2,15 @@
 title: ownerType 枚举类型
 description: 设备的所有者类型。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a08f46b8297ea0a0ed30e70641c7188c0e7b72b6
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e7d947c45eb4338785e33f561d235614838e6b5e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58782901"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020257"
 ---
 # <a name="ownertype-enum-type"></a>ownerType 枚举类型
 

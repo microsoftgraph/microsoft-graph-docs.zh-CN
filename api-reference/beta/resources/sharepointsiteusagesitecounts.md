@@ -1,16 +1,16 @@
 ---
 title: sharePointSiteUsageSiteCounts 资源类型
 description: 下面是资源的 JSON 表示形式。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
 author: JeremyKelley
-ms.openlocfilehash: 0c47696bddfac71c224c86a0f5e9f196990fc7c37a0641d7d7259e5e4bc309b8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 979cc846045d5a2039e328279885cbd1693b5559
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54176167"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063599"
 ---
 # <a name="sharepointsiteusagesitecounts-resource-type"></a>sharePointSiteUsageSiteCounts 资源类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "54176167"
 | 属性          | 类型   |
 | :---------------- | :----- |
 | reportRefreshDate | 日期   |
-| siteType          | 字符串 |
+| siteType          | String |
 | total             | Int64  |
 | active            | Int64  |
 | reportDate        | 日期   |

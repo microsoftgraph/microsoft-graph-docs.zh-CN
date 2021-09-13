@@ -2,15 +2,15 @@
 title: 更新 iosUpdateDeviceStatus
 description: 更新 iosUpdateDeviceStatus 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d8a74d3af504d88abc9771e55a40a784b9e5b59aae01aed4d9cfb17f441a0d06
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 581bf5deb30de123870eaff07f1c50eea46ebc38
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54169968"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59053565"
 ---
 # <a name="update-iosupdatedevicestatus"></a>更新 iosUpdateDeviceStatus
 

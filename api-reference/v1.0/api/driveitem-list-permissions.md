@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: 列出有权访问文件的人
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 description: 列出 driveItem 上的有效共享权限。
 doc_type: apiPageType
-ms.openlocfilehash: d1e245cdc879d79145924185026f90e3510288df
-ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
+ms.openlocfilehash: dd18d5874be75d76fbd724b2c52e7b84bede420e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53151543"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063445"
 ---
 # <a name="list-sharing-permissions-on-a-driveitem"></a>列出 driveItem 上的共享权限
 

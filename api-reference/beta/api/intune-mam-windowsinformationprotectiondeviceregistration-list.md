@@ -2,15 +2,15 @@
 title: 列出 windowsInformationProtectionDeviceRegistrations
 description: 列出 windowsInformationProtectionDeviceRegistration 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c4c3bd33bead19b1a8c341365d47e87727d85d10
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 46e8742fac7411fefd5f725356dfb677777df502
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58779800"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59058711"
 ---
 # <a name="list-windowsinformationprotectiondeviceregistrations"></a>列出 windowsInformationProtectionDeviceRegistrations
 
@@ -43,7 +43,7 @@ GET /deviceAppManagement/windowsInformationProtectionDeviceRegistrations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

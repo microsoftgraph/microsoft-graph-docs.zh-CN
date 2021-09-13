@@ -1,16 +1,16 @@
 ---
 title: 警报资源类型
 description: 指 Microsoft 或其合作伙伴安全解决方案在客户的租户中识别的潜在安全问题。 使用警报统一并简化所有集成解决方案中的安全问题管理。 若要了解详细信息，请参阅 Graph 浏览器中的查询示例。
-localization_priority: Priority
+ms.localizationpriority: high
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 2726eeac1a1b355a27ba45f998a463c3fc8ecbc4855c5caee9b58c8528f825f2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ac7198b4f45e9e79e12da878d28c3d245cefdf7a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54126709"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59089891"
 ---
 # <a name="alert-resource-type"></a>警报资源类型
 

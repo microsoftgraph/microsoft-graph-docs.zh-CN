@@ -1,22 +1,22 @@
 ---
-title: 创建奖项
-description: 创建新的奖项对象。
-localization_priority: Normal
+title: 创建奖励
+description: 创建新的对象。
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: c7745c6b31678bfbf793a0897edcfb6606953d42
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 829d3a5fb1ddb4ef14d7e6896881131782ffc36d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48964543"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59027454"
 ---
 # <a name="create-personaward"></a>创建 personAward
 
 命名空间：microsoft.graph
 
-在用户的[配置文件](../resources/profile.md)中创建新的[personAward](../resources/personaward.md)对象。
+在用户配置文件 [中创建新的 personAward](../resources/personaward.md) [对象](../resources/profile.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -24,8 +24,8 @@ ms.locfileid: "48964543"
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| 委派（工作或学校帐户）     | 所有用户读写。 |
-| 委派（个人 Microsoft 帐户） | 所有用户读写。 |
+| 委派（工作或学校帐户）     | User.ReadWrite、User.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | User.ReadWrite、User.ReadWrite.All |
 | 应用程序                            | User.ReadWrite.All                            |
 ## <a name="http-request"></a>HTTP 请求
 
@@ -47,23 +47,23 @@ POST /users/{id | userPrincipalName}/profile/awards
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [personAward](../resources/personaward.md) 对象的 JSON 表示形式。
 
-下表显示了在用户[配置文件](../resources/profile.md)中创建新的[personAward](../resources/personaward.md)对象时可以设置的属性。
+下表显示了在用户配置文件中创建新的 [personAward](../resources/personaward.md) 对象时可以设置 [的属性](../resources/profile.md)。
 
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|说明|String|奖励或荣誉的 Descpription。 |
-|displayName|String|获奖或荣誉的名称。 |
-|推导|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|issuedDate|日期|授予获奖或荣誉的日期。 |
-|issuingAuthority|String|授予奖项的证书颁发机构。  |
-|source|[personDataSource](../resources/persondatasource.md)|值的来源，如果从另一个服务同步。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|thumbnailUrl|String|URL 引用获奖或荣誉的缩略图。  |
-|webUrl|String|引用奖项或荣誉的 URL。 |
+|说明|String|奖励或奖励的奖励。 |
+|displayName|String|奖励或奖励的名称。 |
+|inference|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断出来的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|issuedDate|日期|授予奖励或奖励的日期。 |
+|issuingAuthority|String|授予该奖励或奖励的颁发机构。  |
+|source|[personDataSource](../resources/persondatasource.md)|如果从另一个服务同步，则值源自何处。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|thumbnailUrl|String|引用奖励或奖励缩略图的 URL。  |
+|WebUrl|String|引用奖励或奖励的 URL。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [personAward](../resources/personaward.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [personAward](../resources/personaward.md) 对象。
 
 ## <a name="examples"></a>示例
 

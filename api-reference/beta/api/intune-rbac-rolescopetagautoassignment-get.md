@@ -2,15 +2,15 @@
 title: 获取 roleScopeTagAutoAssignment
 description: 读取 roleScopeTagAutoAssignment 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 93ad3654ff88ece86c58b02e6ca622a79e25f4e6
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0f643caa0ade1468bde23460c4c4d961f1fb63f9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797941"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064894"
 ---
 # <a name="get-rolescopetagautoassignment"></a>获取 roleScopeTagAutoAssignment
 
@@ -46,7 +46,7 @@ GET /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAs
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -2,15 +2,15 @@
 title: specifiedCaptiveNetworkPlugins 资源类型
 description: 指定 IKEv2 AlwaysOn VPN 连接期间允许的所有强制网络插件
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0843c5a6cc6bc71eb10c8a42f0b9ad0ac49cb328
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4e8ff13aed2200c309ee83f5514b5cd421998262
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785141"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59023520"
 ---
 # <a name="specifiedcaptivenetworkplugins-resource-type"></a>specifiedCaptiveNetworkPlugins 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58785141"
 指定 IKEv2 AlwaysOn VPN 连接期间允许的所有强制网络插件
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |allowedBundleIdentifiers|String collection|IKEv2 服务器的地址。 必须是 FQDN、UserFQDN、网络地址或 ASN1DN|
 

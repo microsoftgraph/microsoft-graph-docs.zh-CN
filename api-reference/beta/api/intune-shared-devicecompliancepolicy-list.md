@@ -2,15 +2,15 @@
 title: 列出 deviceCompliancePolicies
 description: 列出 deviceCompliancePolicy 对象的属性和关系。
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 318b7f9baeb1fe61f9c198b4fd0fc03452d4cdb6
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7f0dd12edeae99d65d4fc7b68a1f966a501d1bb7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58798460"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59034020"
 ---
 # <a name="list-devicecompliancepolicies"></a>列出 deviceCompliancePolicies
 
@@ -47,7 +47,7 @@ GET /deviceManagement/deviceCompliancePolicies
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

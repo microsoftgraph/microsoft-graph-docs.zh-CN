@@ -2,15 +2,15 @@
 title: groupPolicyUploadedCategory 资源类型
 description: 类别实体存储组策略定义的类别
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bc1a97c16cf3d5ca132d2c78233c6627a1fae2a2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c28e048c5d6daeda4b3da72d47a6b6f3916f0097
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791808"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59030247"
 ---
 # <a name="grouppolicyuploadedcategory-resource-type"></a>groupPolicyUploadedCategory 资源类型
 
@@ -43,7 +43,7 @@ ms.locfileid: "58791808"
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。 继承自 [groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)|
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|描述|
 |:---|:---|:---|
 |父级|[groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)|父类别 继承自 [groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)|
 |children|[groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md) 集合|子类别 继承自 [groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)|

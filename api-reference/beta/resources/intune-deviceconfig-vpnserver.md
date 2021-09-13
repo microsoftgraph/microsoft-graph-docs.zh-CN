@@ -2,15 +2,15 @@
 title: vpnServer 资源类型
 description: VPN 服务器定义。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d81928758fc87b37954c2be38ee2c60e64a0d840
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e27966875bbf81ecfc8d2392acece779a2fcd329
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783951"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59023505"
 ---
 # <a name="vpnserver-resource-type"></a>vpnServer 资源类型
 
@@ -27,7 +27,7 @@ VPN 服务器定义。
 |:---|:---|:---|
 |说明|String|说明。|
 |address|String|地址 (IP 地址、FQDN 或 URL) |
-|isDefaultServer|布尔值|默认服务器。|
+|isDefaultServer|Boolean|默认服务器。|
 
 ## <a name="relationships"></a>关系
 无

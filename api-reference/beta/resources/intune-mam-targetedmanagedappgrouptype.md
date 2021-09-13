@@ -2,15 +2,15 @@
 title: targetedManagedAppGroupType 枚举类型
 description: 指示要面向的应用集合，这些应用可以是多个预定义的应用列表之一或手动选择的应用列表
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 716a9e646c6e0b320869998d30f2995c65d60636
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1b6dc30701baa475db098a48fe4bfce92b1e940c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58817318"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063879"
 ---
 # <a name="targetedmanagedappgrouptype-enum-type"></a>targetedManagedAppGroupType 枚举类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58817318"
 指示要面向的应用集合，这些应用可以是多个预定义的应用列表之一或手动选择的应用列表
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |selectedPublicApps|0|面向管理员手动选择的应用集合。|
 |allCoreMicrosoftApps|1|面向 Microsoft 应用的核心集 (Office、Edge 等) 。|

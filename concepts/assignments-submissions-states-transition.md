@@ -1,16 +1,16 @@
 ---
 title: Microsoft Graph 中作业和提交状态、转换和Graph
 description: 本文介绍了进程流期间作业和提交状态的变化，以及涉及 Microsoft Graph API。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: cristobal-buenrostro
 ms.prod: education
 doc_type: conceptualPageType
-ms.openlocfilehash: 98a283b02ddacdf05d4ffd20e8dd6cf436d256d3
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: 83589986cd0c490f4947744896665244a8de3633
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58668052"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117667"
 ---
 # <a name="states-transitions-and-limitations-for-assignments-and-submissions-in-microsoft-graph"></a>Microsoft Graph 中作业和提交状态、转换和Graph
 
@@ -26,7 +26,7 @@ ms.locfileid: "58668052"
 | 已发布 | 将作业分发给每个分配的学生时的背景处理状态。 | `POST /education/classes/{id}/assignments/{id}/publish` |
 | Scheduled | 教师计划将来发布作业时的状态。 | `PATCH /education/classes/{id}/assignments/{id}`<br/>`POST /education/classes/{id}/assignments/{id}/publish` |
 | 已分配 | 完成发布后，作业将移动到"已分配"状态，并且可供学生使用。 | `POST /education/classes/{id}/assignments/{id}/publish` |
-| Pending | 从现有工作分配复制新工作分配时的背景处理状态。 | `POST /education/classes/{id}/assignments/{id}/copy`<br/>`PATCH /education/classes/{id}/assignments/{id}` |
+| 挂起 | 从现有工作分配复制新工作分配时的背景处理状态。 | `POST /education/classes/{id}/assignments/{id}/copy`<br/>`PATCH /education/classes/{id}/assignments/{id}` |
 
 下图显示了工作分配可发生的状态转换。
 
@@ -36,7 +36,7 @@ ms.locfileid: "58668052"
 调用方必须使用 GET 分配操作来检查当前分配状态，并验证发布过程是否成功。
 
 ### <a name="assignments-states-transitions-based-on-the-allowed-actions"></a>工作分配根据允许的操作状态转换
-| 当前工作分配状态 | 操作 | 新状态 |
+| 当前工作分配状态 | Action | 新状态 |
 |:--|:--|:--|
 | Draft | 教师设置截止日期。 | Scheduled |
 | Draft | 发布 | 已发布 |
@@ -48,8 +48,8 @@ ms.locfileid: "58668052"
 | Scheduled | 取消计划 | Draft |
 | Scheduled | 重新计划 | Scheduled |
 | 已分配 | 已放弃 | |
-| Pending | 复制已完成 | Draft |
-| Pending | 已放弃 | |   
+| 挂起 | 复制已完成 | Draft |
+| 挂起 | 已放弃 | |   
 
 `Note: Any action and state transition not listed in the table is NOT allowed`
 
@@ -83,7 +83,7 @@ ms.locfileid: "58668052"
 ![提交状态转换图](images/states-transitions/diagram-submissions.PNG)
 
 ### <a name="submissions-states-transitions-based-on-allowed-actions"></a>提交状态基于允许的操作进行转换
-| 当前提交状态 | 操作 | 新状态 |
+| 当前提交状态 | Action | 新状态 |
 |:--|:--|:--|
 | Working | 启用 | Submitted |
 | Working | Return | 已返回 |

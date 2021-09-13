@@ -2,15 +2,15 @@
 title: 获取 externalConnection
 description: 读取 externalConnection 对象的属性和关系。
 author: mecampos
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 9d009abe4af791f7b2b2c804f425769ec9a78951
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 48b4f2b48d6e78b4a2879b3b5d05f0169b5b8041
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53580017"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022557"
 ---
 # <a name="get-externalconnection"></a>获取 externalConnection
 命名空间：microsoft.graph.externalConnectors

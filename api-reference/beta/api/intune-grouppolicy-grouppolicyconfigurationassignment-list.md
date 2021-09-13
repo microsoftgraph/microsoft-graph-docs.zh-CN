@@ -2,15 +2,15 @@
 title: 列出 groupPolicyConfigurationAssignments
 description: 列出 groupPolicyConfigurationAssignment 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 36a2a24ff4c21ea818b3492222be45dc4fb109f2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ab0ee4a497d4aa950689bb4eaeac44ed2aa571cc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804132"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59058866"
 ---
 # <a name="list-grouppolicyconfigurationassignments"></a>列出 groupPolicyConfigurationAssignments
 
@@ -43,7 +43,7 @@ GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/ass
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

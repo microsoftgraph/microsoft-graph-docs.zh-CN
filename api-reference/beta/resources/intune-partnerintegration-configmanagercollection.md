@@ -2,15 +2,15 @@
 title: configManagerCollection 资源类型
 description: ConfigManager 定义的设备或用户集合。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 961f43556622fd92cb990777155c8ab3debcb7df
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d7c4300dc1cedbc316e6e8cfa5c0efebd1e383f8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786612"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59033460"
 ---
 # <a name="configmanagercollection-resource-type"></a>configManagerCollection 资源类型
 
@@ -37,7 +37,7 @@ ConfigManager 定义的设备或用户集合。
 |:---|:---|:---|
 |id|String|ConfigManager 集合的键。|
 |displayName|String|DisplayName。|
-|collectionIdentifier|字符串|SCCM 中的集合标识符。|
+|collectionIdentifier|String|SCCM 中的集合标识符。|
 |hierarchyName|String|HierarchyName。|
 |hierarchyIdentifier|String|层次结构标识符。|
 |createdDateTime|DateTimeOffset|创建日期。|

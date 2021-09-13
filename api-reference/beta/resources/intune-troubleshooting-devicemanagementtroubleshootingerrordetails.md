@@ -2,15 +2,15 @@
 title: deviceManagementTroubleshootingErrorDetails 资源类型
 description: 包含有关错误及其修正的详细信息的对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c67de7db6a74c327e765e13a6440c7ec6bf3a1ce
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 4ae128466c0817dedb8e0ae435246a958967bba7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58248161"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063655"
 ---
 # <a name="devicemanagementtroubleshootingerrordetails-resource-type"></a>deviceManagementTroubleshootingErrorDetails 资源类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "58248161"
 包含有关错误及其修正的详细信息的对象。
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |context|String|尚未记录|
 |failure|String|尚未记录|

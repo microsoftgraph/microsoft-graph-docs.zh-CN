@@ -2,15 +2,15 @@
 title: 使用 Microsoft Graph 获取聊天的更改通知
 description: 了解如何使用 Microsoft Graph API 获取聊天更改（创建和更新）的通知。
 author: RamjotSingh
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 1537f68a0e2f3a1a55e7b677370bb005b3c7a60ff41f0aecf0327b987c3b9739
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 87e41e104ecc538d8b3a7d21e289d41430ff789b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54129559"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59138930"
 ---
 # <a name="get-change-notifications-for-chats-using-microsoft-graph"></a>使用 Microsoft Graph 获取聊天的更改通知
 

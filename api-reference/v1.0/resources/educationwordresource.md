@@ -1,16 +1,16 @@
 ---
 title: educationWordResource 资源类型
 description: educationResource 的子类。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 00ce0d3a31c62bc38c6a5f9893c69b51a58c3a32741e993691e234a753278385
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 182932115e7e0abef173b73f6e6a78677c5bac0b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54192528"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118631"
 ---
 # <a name="educationwordresource-resource-type"></a>educationWordResource 资源类型
 

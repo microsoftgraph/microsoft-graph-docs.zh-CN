@@ -2,15 +2,15 @@
 title: iosVppAppRevokeLicensesActionResult 资源类型
 description: 定义 iOS Vpp 应用上的操作结果，包含 ActionResult 的继承属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 27e8beb19c3d5d5a299b91a93de79afeaf57a2d4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: eb0fac205f7b63fe32519589988bf0a5933467d8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58802801"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064530"
 ---
 # <a name="iosvppapprevokelicensesactionresult-resource-type"></a>iosVppAppRevokeLicensesActionResult 资源类型
 

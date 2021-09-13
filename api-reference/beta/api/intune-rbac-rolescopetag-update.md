@@ -2,15 +2,15 @@
 title: 更新 roleScopeTag
 description: 更新 roleScopeTag 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 88ad2c1b120d0a09c28e5be3648391a1dcbc4379
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 681c80c4c94aa7e8a47ed67a56368473a3e6a68a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58813914"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064943"
 ---
 # <a name="update-rolescopetag"></a>更新 roleScopeTag
 
@@ -44,7 +44,7 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,9 +54,9 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。 此为只读，且自动生成。 此属性是只读的。|
+|id|String|实体的键。 此为只读，且自动生成。 此属性是只读的。|
 |displayName|String|角色作用域标记的显示或友好名称。|
-|description|字符串|角色作用域标记的说明。|
+|说明|String|角色作用域标记的说明。|
 |isBuiltIn|Boolean|角色作用域标记的说明。 此属性是只读的。|
 
 

@@ -2,15 +2,15 @@
 title: 更新 restrictedAppsViolation
 description: 更新 restrictedAppsViolation 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ffb547d7b5fd64916212b2f2332887cedb1b5665
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a225315b3c30685af715932bbb591a0f5f650fd5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820097"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59065713"
 ---
 # <a name="update-restrictedappsviolation"></a>更新 restrictedAppsViolation
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/deviceConfigurationRestrictedAppsViolations/{restrictedA
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -56,10 +56,10 @@ PATCH /deviceManagement/deviceConfigurationRestrictedAppsViolations/{restrictedA
 |id|String|对象的唯一标识符。 由 accountId、deviceId、policyId 和 userId 组成|
 |userId|String|用户唯一标识符，必须为 Guid|
 |userName|String|用户名|
-|managedDeviceId|字符串|托管设备唯一标识符，必须为 Guid|
+|managedDeviceId|String|托管设备唯一标识符，必须为 Guid|
 |deviceName|String|设备名称|
 |deviceConfigurationId|String|设备配置文件的唯一标识符，必须为 Guid|
-|deviceConfigurationName|字符串|设备配置文件名称|
+|deviceConfigurationName|String|设备配置文件名称|
 |platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|平台类型。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`windows10XProfile`、`androidAOSP`、`all`。|
 |restrictedAppsState|[restrictedAppsState](../resources/intune-deviceconfig-restrictedappsstate.md)|受限制的应用状态。 可取值为：`prohibitedApps`、`notApprovedApps`。|
 |restrictedApps|[managedDeviceReportedApp](../resources/intune-deviceconfig-manageddevicereportedapp.md) 集合|违反的受限应用列表|

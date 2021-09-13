@@ -2,15 +2,15 @@
 title: onenoteOperation 资源类型
 description: 某些长时间运行的操作的状态OneNote状态。
 author: jewan-microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: dd7d6cfc797416d0cc8922dac8305617bc46c4c8d26e0e138551a0f855cadcbb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ef25b94bb02ffaf721e7861eecacdd37c4c85e9f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54146445"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118038"
 ---
 # <a name="onenoteoperation-resource-type"></a>onenoteOperation 资源类型
 

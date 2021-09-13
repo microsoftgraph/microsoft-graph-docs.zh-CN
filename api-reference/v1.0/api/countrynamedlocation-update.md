@@ -1,16 +1,16 @@
 ---
 title: 更新 countryNamedlocation
 description: 更新 countryNamedLocation 对象的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 16c8fdbc1acd156dc2b4886f2edc68cc676fa1bf
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 1ab1a5f770864c1eb3e1003cb153c7bb01af682d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787469"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063515"
 ---
 # <a name="update-countrynamedlocation"></a>更新 countryNamedLocation
 
@@ -47,11 +47,13 @@ PATCH /identity/conditionalAccess/namedLocations/{id}
 
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
+必须将 **@odata.type** 指定为 `#microsoft.graph.countryNamedLocation` 。
+
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|countriesAndRegions|String collection|ISO 3166-2 指定的两字母格式的国家/地区列表。|
+|countriesAndRegions|字符串集合|ISO 3166-2 指定的两字母格式的国家/地区列表。|
 |displayName|String|位置的可读名称。|
-|includeUnknownCountriesAndRegions|布尔值|该值是未映射到国家/地区或地区的 IP 地址应包含在 `true` 命名位置中。|
+|includeUnknownCountriesAndRegions|Boolean|该值是未映射到国家/地区或地区的 IP 地址应包含在 `true` 命名位置中。|
 
 ## <a name="response"></a>响应
 

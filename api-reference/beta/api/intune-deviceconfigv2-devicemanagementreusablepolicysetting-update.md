@@ -2,15 +2,15 @@
 title: 更新 deviceManagementReusablePolicySetting
 description: 更新 deviceManagementReusablePolicySetting 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 644de5b14db4119ad4215f21f1c40fefe3b6cf91
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 68a2a397eb5e0984ca6dde87321550c6e74f663f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58792356"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59034664"
 ---
 # <a name="update-devicemanagementreusablepolicysetting"></a>更新 deviceManagementReusablePolicySetting
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/reusablePolicySettings/{deviceManagementReusablePolicySe
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,8 +54,8 @@ PATCH /deviceManagement/reusablePolicySettings/{deviceManagementReusablePolicySe
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|系统生成的可重用设置 ID。|
-|displayName|字符串|用户可显示名称可重用设置。|
-|description|字符串|由用户提供的可重用设置说明。|
+|displayName|String|由显示名称的可重用设置。|
+|说明|String|由用户提供的可重用设置说明。|
 |settingDefinitionId|String|与此可重用设置关联的设置定义 ID。|
 |settingInstance|[deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|可重用的设置配置实例|
 |createdDateTime|DateTimeOffset|可重用设置创建日期和时间。 此属性是只读的。|

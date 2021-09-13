@@ -2,15 +2,15 @@
 title: deviceAppManagement 资源类型
 description: 充当所有设备应用管理功能的容器的单例实体。
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 12394a2335968bfe06ea3ce5e35161c1c100615893cd1597a1249e1151d7e756
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a021bc627833ecc0187938b18b7ac39f515c2ff6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54219757"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063669"
 ---
 # <a name="deviceappmanagement-resource-type"></a>deviceAppManagement 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "54219757"
 
 充当所有设备应用管理功能的容器的单例实体。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 deviceAppManagement](../api/intune-shared-deviceappmanagement-get.md)|读取 [deviceAppManagement](../resources/intune-shared-deviceappmanagement.md) 对象的属性和关系。|
@@ -42,7 +42,7 @@ ms.locfileid: "54219757"
 |microsoftStoreForBusinessPortalSelection|[microsoftStoreForBusinessPortalSelectionOptions](../resources/intune-onboarding-microsoftstoreforbusinessportalselectionoptions.md)|最终用户门户信息用于将应用程序从 适用于企业的 Microsoft Store 同步到Intune 公司门户。 有三个选项可供选择：仅公司门户、公司门户和专用应用商店、仅 \[ 专用应用商店 \] 。 可取值为：`none`、`companyPortal`、`privateStore`。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|描述|
 |:---|:---|:---|
 |**应用**|
 |enterpriseCodeSigningCertificates|[enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md) 集合|代码Windows Enterprise证书。|
@@ -100,7 +100,6 @@ ms.locfileid: "54219757"
   "microsoftStoreForBusinessLastCompletedApplicationSyncTime": "String (timestamp)"
 }
 ```
-
 
 
 

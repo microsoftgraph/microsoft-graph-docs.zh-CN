@@ -2,15 +2,15 @@
 title: Windows Update for Business 部署服务的软件更新
 description: 软件更新是部署服务部署的主要内容类型。 您可以在目录中查找以查找可部署的特定更新。
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: 196b59b6fbe8e48643cb434d8f53c198a73c6279e1969f152e7efec9e9d97834
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1c3dfac442bdf4950f62d565db6bc1ceb7ebd468
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54225599"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117513"
 ---
 # <a name="software-updates-with-the-windows-update-for-business-deployment-service"></a>Windows Update for Business 部署服务的软件更新
 
@@ -32,14 +32,14 @@ ms.locfileid: "54225599"
 
 Microsoft 更新目录中的更新非常具体，特定于各个产品、版本和 CPU 体系结构。 
 
-例如，以下两个安全质量更新被视为 Microsoft 更新目录中的不同版本，尽管它们仅因体系结构不同而不同。
+例如，以下两个安全质量更新在 Microsoft 更新目录中被视为不同的版本，尽管它们仅因体系结构不同而不同。
 
 | 标题                                                                                   | 产品                           | 分类   |
 |-----------------------------------------------------------------------------------------|------------------------------------|------------------|
 | 基于 **x86** 的系统 2021-03 Windows 10 20H2 累积更新 (KB5000802)  | Windows 10版本 1903 及更高版本 | 安全更新 |
-| 基于 **x64** 的 systems Windows 10 Version 20H2 的 2021-03 累积 (KB5000802)  | Windows 10版本 1903 及更高版本 | 安全更新 |
+| 基于 **x64** 的系统的 Windows 10 版本 20H2 的 2021-03 累积 (KB5000802)  | Windows 10版本 1903 及更高版本 | 安全更新 |
 
-在 Windows Update for Business 部署服务提供的目录中，这些更新聚合到单个条目中。
+在 Windows Update for Business 部署服务提供的目录中，这些更新将聚合到单个条目中。
 
 | 显示名称                                           | 类型                                                     |
 |--------------------------------------------------------|----------------------------------------------------------|
@@ -79,30 +79,30 @@ Microsoft 更新目录中的更新非常具体，特定于各个产品、版本�
 
 ### <a name="quality-updates"></a>质量更新
 
-部署服务目录中的质量更新由发布日期/时间和更新分类标识。 条目聚合体系结构、产品 (（如 *Windows 10、版本 1903* 及更高版本与 *Windows 10* 与 *Windows 10 LTSB) ）* 以及相应功能更新版本之间的差异。
+部署服务目录中的质量更新由发布日期/时间和更新分类标识。 条目聚合了体系结构、产品 (（如 *Windows 10、版本 1903* 及更高版本与 *Windows 10* 与 *Windows 10 LTSB*) 以及相应功能更新版本）之间的差异。
 
 | 属性 | 说明 |
 |----------|-------------|
-| classification | 分类 (更新的安全性) 或非安全性。 |
+| classification | 分类 (更新的安全性) 安全性。 |
 | releaseDateTime | 发布或刷新更新的日期和时间。 |
 
 下表显示了部署服务目录和 Microsoft 更新目录之间的分类映射。
 
 | 部署服务目录 | Microsoft 更新目录                                                                                                               |
 |------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| 安全团队         | 安全更新<br>关键更新<br>如果需要 (依赖项，请更新) <br>如果需要， (堆栈更新作为依赖关系)  |
+| 安全性         | 安全更新<br>关键更新<br>如果需要 (依赖项，请更新) <br>如果需要， (堆栈更新作为依赖项进行)  |
 | 非安全性     | 更新<br>服务堆栈更新                                                                                               |
 
 与部署服务目录中的质量更新相对应的 Microsoft 更新目录中的条目和 `classification = security` `releaseDateTime = 2021-03-09` 可能包括以下内容。
 
 | 标题                                                                                   | 产品                           | 分类   |
 |-----------------------------------------------------------------------------------------|------------------------------------|------------------|
-| 基于 x86 的系统 2021-03 Windows 10 20H2 累积更新 (KB5000802)  | Windows 10版本 1903 及更高版本 | 安全更新 |
-| 基于 x64 的系统 2021-03 Windows 10 20H2 累积更新 (KB5000802)  | Windows 10版本 1903 及更高版本 | 安全更新 |
-| 基于 x86 的系统版本 1909 的 Windows 10 2021-03 (KB5000808)  | Windows 10版本 1903 及更高版本 | 安全更新 |
-| Windows 10 基于 x64 的系统版本 1809 的 2021-03 累积 (KB5000822)  | Windows 10、Windows 10 LTSB        | 安全更新 |
+| 基于 x86 的 systems Windows 10 Version 20H2 的 2021-03 累积 (KB5000802)  | Windows 10版本 1903 及更高版本 | 安全更新 |
+| 基于 x64 的 systems Windows 10 Version 20H2 的 2021-03 累积 (KB5000802)  | Windows 10版本 1903 及更高版本 | 安全更新 |
+| 基于 x86 的系统版本 1909 的 Windows 10 2021-03 年累积更新 (KB5000808)  | Windows 10版本 1903 及更高版本 | 安全更新 |
+| 基于 x64 的系统版本 1809 的 Windows 10 2021-03 年累积更新 (KB5000822)  | Windows 10、Windows 10 LTSB        | 安全更新 |
 
-确定所需更新后，使用 [qualityUpdateReference](/graph/api/resources/windowsupdates-qualityupdatereference) 并将其指定为部署的内容并指定 **releaseDateTime** 和 **分类** 属性。
+确定所需更新后，使用 [qualityUpdateReference](/graph/api/resources/windowsupdates-qualityupdatereference) 并将其指定为部署的内容并指定 **releaseDateTime** 和 **classification** 属性。
 
 ## <a name="examples"></a>示例
 

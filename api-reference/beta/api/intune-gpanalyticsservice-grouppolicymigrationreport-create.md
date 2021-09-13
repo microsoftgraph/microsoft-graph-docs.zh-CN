@@ -2,15 +2,15 @@
 title: 创建 groupPolicyMigrationReport
 description: 创建新的 groupPolicyMigrationReport 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 83e7186cfed8314a015d4ef080b9f9e6e8f5e0c6
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5306fe772bc36c9de10a74227ce04f626ce82b81
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793447"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59065209"
 ---
 # <a name="create-grouppolicymigrationreport"></a>创建 groupPolicyMigrationReport
 
@@ -43,7 +43,7 @@ POST /deviceManagement/groupPolicyMigrationReports
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -62,7 +62,7 @@ POST /deviceManagement/groupPolicyMigrationReports
 |groupPolicyCreatedDateTime|DateTimeOffset|创建 GroupPolicyMigrationReport 的日期和时间。|
 |groupPolicyLastModifiedDateTime|DateTimeOffset|上次修改 GroupPolicyMigrationReport 的日期和时间。|
 |migrationReadiness|[groupPolicyMigrationReadiness](../resources/intune-gpanalyticsservice-grouppolicymigrationreadiness.md)|关联的组策略对象文件的 Intune 覆盖范围。 可取值为：`none`、`partial`、`complete`、`error`、`notApplicable`。|
-|targetedInActiveDirectory|布尔值|GPO Xml 内容中的 AD 中的目标属性|
+|targetedInActiveDirectory|Boolean|GPO Xml 内容中的 AD 中的目标属性|
 |totalSettingsCount|Int32|来自 GPO 文件的组策略设置总数。|
 |supportedSettingsCount|Int32|Intune 支持的组设置的数量。|
 |supportedSettingsPercent|Int32|Intune 支持的组策略设置百分比。|

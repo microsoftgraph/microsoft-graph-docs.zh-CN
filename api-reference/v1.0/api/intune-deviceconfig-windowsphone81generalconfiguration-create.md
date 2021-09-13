@@ -2,15 +2,15 @@
 title: 创建 windowsPhone81GeneralConfiguration
 description: 创建新的 windowsPhone81GeneralConfiguration 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 16ea6dea96a33da8f7d54618517168fdf7932db40e7e8cad3d25b8f8609a92b8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e46723594a39829ded8966e288c7f780bcd72ecd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54199912"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59029491"
 ---
 # <a name="create-windowsphone81generalconfiguration"></a>创建 windowsPhone81GeneralConfiguration
 

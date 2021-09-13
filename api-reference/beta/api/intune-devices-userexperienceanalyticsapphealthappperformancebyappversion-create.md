@@ -2,15 +2,15 @@
 title: 创建 userExperienceAnalyticsAppHealthAppPerformanceByAppVersion
 description: 创建新的 userExperienceAnalyticsAppHealthAppPerformanceByAppVersion 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0e919d9a953949827bf55f5bc2909a0ce00fedc9
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3f5c4c2e40df48a811cf2db936284be189198842
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784336"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59027853"
 ---
 # <a name="create-userexperienceanalyticsapphealthappperformancebyappversion"></a>创建 userExperienceAnalyticsAppHealthAppPerformanceByAppVersion
 
@@ -43,7 +43,7 @@ POST /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformanceByA
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,11 +53,11 @@ POST /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformanceByA
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|用户体验分析应用性能对象的唯一标识符。|
-|appVersion|字符串|应用程序的版本。|
+|id|String|用户体验分析应用性能对象的唯一标识符。|
+|appVersion|String|应用程序的版本。|
 |appName|String|应用程序名。|
 |appDisplayName|String|应用程序的友好名称。|
-|appPublisher|字符串|应用程序的发布者。|
+|appPublisher|String|应用程序的发布者。|
 |appUsageDuration|Int32|应用程序的总使用时间（分钟）。 有效值 -2147483648 2147483647|
 |appCrashCount|Int32|应用的崩溃数。 有效值 -2147483648 2147483647|
 |meanTimeToFailureInMinutes|Int32|应用失败平均时间（分钟）。 有效值 -2147483648 2147483647|

@@ -2,15 +2,15 @@
 title: intuneBrandingProfileAssignment 资源类型
 description: 此实体包含用于向组分配品牌配置文件的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f974c936e8b5c3ad39abfdaaf37a5a3e69bee150
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 01206c92a604a2d38a80dc8f60adb0956ad3d229
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797463"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063634"
 ---
 # <a name="intunebrandingprofileassignment-resource-type"></a>intuneBrandingProfileAssignment 资源类型
 

@@ -2,15 +2,15 @@
 title: 更新 resourceOperation
 description: 更新 resourceOperation 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3a01c933908b57567add80479e6297145ea6870c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b0df13a5a08c451678799ddf2711274200f73c1f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794502"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064985"
 ---
 # <a name="update-resourceoperation"></a>更新 resourceOperation
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/resourceOperations/{resourceOperationId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,10 +54,10 @@ PATCH /deviceManagement/resourceOperations/{resourceOperationId}
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|资源操作的键。 只读，且自动生成。|
-|资源|字符串|此操作所属的资源类别。 此属性是只读的。|
+|resource|String|此操作所属的资源类别。 此属性是只读的。|
 |resourceName|String|执行此操作的资源的名称。|
 |actionName|String|此操作将执行的操作类型。 actionName 应简明，并尽可能限制在几个字以内。|
-|description|String|资源操作的说明。 当在 Azure 门户中显示时，会在操作的鼠标悬停文本中使用说明。|
+|说明|String|资源操作的说明。 当在 Azure 门户中显示时，会在操作的鼠标悬停文本中使用说明。|
 |enabledForScopeValidation|Boolean|确定是否针对每个角色分配定义的作用域验证权限。 此属性是只读的。|
 
 

@@ -2,15 +2,15 @@
 title: 创建 timeOffReason
 description: 创建新的 timeOffReason。
 author: akumar39
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6d57e287bee995f28cc738ac7a9b505ed143c59b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 61385062c378b04875335f5ac03ca417d7158264
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050344"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019662"
 ---
 # <a name="create-timeoffreason"></a>创建 timeOffReason
 

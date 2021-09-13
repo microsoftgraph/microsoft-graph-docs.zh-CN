@@ -2,15 +2,15 @@
 title: 列出 accessReviewInstanceDecisionItems
 description: 获取 accessReviewInstanceDecisionItem 对象及其属性的列表。
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 03f7232aab960dc5f4f9d6f2a2a5536793d92ba9
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 7742b6688f7bdd3481a8c0b2801607d2a5120723
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53210421"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128459"
 ---
 # <a name="list-accessreviewinstancedecisionitems"></a>列出 accessReviewInstanceDecisionItems
 命名空间：microsoft.graph
@@ -40,7 +40,7 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 `$select` 、 、 、 和 OData 查询参数 `$filter` `$orderBy` `$skip` `$top` 来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$select` 、 `$filter` `$orderBy` 、 、 `$skip` 和 `$top` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|

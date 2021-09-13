@@ -2,15 +2,15 @@
 title: inkAccessSetting 枚举类型
 description: InkWorkspaceAccess 设置的值。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 166d90ce153325bb358ec551f693ce9acf1c0cb3
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a804eab77ee6337d05e02a51d9f2565108b03aea
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801134"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064292"
 ---
 # <a name="inkaccesssetting-enum-type"></a>inkAccessSetting 枚举类型
 

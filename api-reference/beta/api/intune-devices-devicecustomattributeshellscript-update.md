@@ -2,15 +2,15 @@
 title: 更新 deviceCustomAttributeShellScript
 description: 更新 deviceCustomAttributeShellScript 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 18f60cb398dd554096e5258b7ee4d21bb16911f7
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ce6a1607c8b273f3e6291b98ae482baad21e92ab
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804923"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59065531"
 ---
 # <a name="update-devicecustomattributeshellscript"></a>更新 deviceCustomAttributeShellScript
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/deviceCustomAttributeShellScripts/{deviceCustomAttribute
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,16 +54,16 @@ PATCH /deviceManagement/deviceCustomAttributeShellScripts/{deviceCustomAttribute
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|自定义属性实体的唯一标识符。|
-|customAttributeName|字符串|自定义属性的名称。|
+|customAttributeName|String|自定义属性的名称。|
 |customAttributeType|[deviceCustomAttributeValueType](../resources/intune-devices-devicecustomattributevaluetype.md)|自定义属性的值的预期类型。 可取值为：`integer`、`string`、`dateTime`。|
-|displayName|字符串|设备管理脚本的名称。|
-|description|String|设备管理脚本的可选说明。|
+|displayName|String|设备管理脚本的名称。|
+|说明|String|设备管理脚本的可选说明。|
 |scriptContent|二进制|脚本内容。|
 |createdDateTime|DateTimeOffset|创建设备管理脚本的日期和时间。 此属性是只读的。|
 |lastModifiedDateTime|DateTimeOffset|上次修改设备管理脚本的日期和时间。 此属性是只读的。|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示执行上下文的类型。 可取值为：`system`、`user`。|
 |fileName|String|脚本文件名。|
-|roleScopeTagIds|字符串集合|此 PowerShellScript 实例的范围标记标识列表。|
+|roleScopeTagIds|String collection|此 PowerShellScript 实例的范围标记标识列表。|
 
 
 

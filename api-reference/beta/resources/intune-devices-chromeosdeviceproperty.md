@@ -2,15 +2,15 @@
 title: chromeOSDeviceProperty 资源类型
 description: 表示 ChromeOS 设备的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3746cdd02a3b12ad9c657c1e5377a4b0b02adc47
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 198a967ef6fe3121745685c594fdfd099c638bc7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818994"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59026929"
 ---
 # <a name="chromeosdeviceproperty-resource-type"></a>chromeOSDeviceProperty 资源类型
 
@@ -23,12 +23,12 @@ ms.locfileid: "58818994"
 表示 ChromeOS 设备的属性。
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|描述|
 |:---|:---|:---|
 |name|String|属性的名称|
 |value|String|属性的值|
 |valueType|String|值的类型|
-|updatable|布尔值|此属性是否可更新|
+|updatable|Boolean|此属性是否可更新|
 
 ## <a name="relationships"></a>关系
 无

@@ -1,16 +1,16 @@
 ---
 title: 更新 windowsOfficeClientConfiguration
 description: 修补特定的非安全策略有效负载。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dougeby
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a3d3a4e7a0b6c892222cf7004dc2eed3b38a7c9b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a21572fc1eaf10b1e2baf22e895fba57e6a143f6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794967"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021307"
 ---
 # <a name="update-windowsofficeclientconfiguration"></a>更新 windowsOfficeClientConfiguration
 
@@ -43,7 +43,7 @@ PATCH /officeConfiguration/clientConfigurations/{key}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,10 +53,10 @@ PATCH /officeConfiguration/clientConfigurations/{key}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|尚未记录 继承自 [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|id|String|尚未记录 继承自 [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |userPreferencePayload|Stream|尚未记录 继承自 [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |policyPayload|Stream|尚未记录 继承自 [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
-|description|字符串|尚未记录 继承自 [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|说明|String|尚未记录 继承自 [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |displayName|String|尚未记录 继承自 [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |priority|Int32|尚未记录 继承自 [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |userCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|尚未记录 继承自 [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|

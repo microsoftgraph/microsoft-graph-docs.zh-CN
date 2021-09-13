@@ -2,15 +2,15 @@
 title: identityUserFlowAttributeAssignment： getOrder
 description: 获取在用户流中收集的 identityUserFlowAttributeAssignments 的顺序。
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 93308846ecf1549efd70ebe8fc4b2915626d7b81
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 4b81421b82985c28ff4292e965f0667bec7da343
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50759956"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59066270"
 ---
 # <a name="identityuserflowattributeassignment-getorder"></a>identityUserFlowAttributeAssignment： getOrder
 

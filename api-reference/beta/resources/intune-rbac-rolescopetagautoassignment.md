@@ -2,15 +2,15 @@
 title: roleScopeTagAutoAssignment 资源类型
 description: 包含用于将角色作用域标记自动分配给要应用于设备的组的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 84bcaccc1206bb71e74e197bc7932a7a12ff6361
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f56bba9d1ea1c18a9774575998be8854d9a39102
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806003"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063676"
 ---
 # <a name="rolescopetagautoassignment-resource-type"></a>roleScopeTagAutoAssignment 资源类型
 

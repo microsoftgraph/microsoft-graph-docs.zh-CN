@@ -2,15 +2,15 @@
 title: 帖子资源类型
 description: 表示 conversationThread 实体中的各个帖子项。
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: f1af505f7c55ef46c855d92170679195bb390474
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: f9d70f67352de0d67d0c4fecbd4a10ac1b1caf03
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58513193"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59089310"
 ---
 # <a name="post-resource-type"></a>帖子资源类型
 
@@ -67,8 +67,8 @@ ms.locfileid: "58513193"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|attachments|[附件](attachment.md) 集合| 只读。 可为空。 支持 `$expand`。|
-|extensions|[扩展](extension.md)集合|为帖子定义的开放扩展集合。 只读。 可为空。 支持 `$expand`。|
+|attachments|[Attachment](attachment.md) 集合| 只读。 可为空。 支持 `$expand`。|
+|extensions|[Extension](extension.md) 集合|为帖子定义的开放扩展集合。 只读。 可为空。 支持 `$expand`。|
 |inReplyTo|[帖子](post.md)| 只读。 支持 `$expand`。|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为帖子定义的多值扩展属性的集合。只读。可为 NULL。|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 为帖子定义的单值扩展属性的集合。只读。可为 NULL。|

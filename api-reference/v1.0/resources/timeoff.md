@@ -2,15 +2,15 @@
 title: timeOff 资源类型
 description: 计划中的非工作单位。
 author: akumar39
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType_
-ms.openlocfilehash: 9390ec6e148bde2a5edab6b9984561a878d2d0d88e25078d4ecbbd7b50f2a63f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 185f292dbbc8a993699073be1f91b6a2902b18ed
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196478"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59122934"
 ---
 # <a name="timeoff-resource-type"></a>timeOff 资源类型
 
@@ -32,9 +32,9 @@ ms.locfileid: "54196478"
 |名称          |类型           |说明                                                                                                                                      |
 |--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | id            |`string`      |**timeOff** 的 ID。|
-| userId            |`string`      |分配给 **timeOff** 的用户的 ID。 必填。|
-| sharedTimeOff     | [timeOffItem](timeoffitem.md)  |员工和经理都可查看的 **此 timeOff** 的共享版本。 必填。|
-| draftTimeOff      | [timeOffItem](timeoffitem.md)        |经理可查看的 **此时间Off** 的草稿版本。 必填。|
+| userId            |`string`      |分配给 **timeOff** 的用户的 ID。 必需。|
+| sharedTimeOff     | [timeOffItem](timeoffitem.md)  |员工和经理都可查看的 **此 timeOff** 的共享版本。 必需。|
+| draftTimeOff      | [timeOffItem](timeoffitem.md)        |经理可查看的 **此时间Off** 的草稿版本。 必需。|
 | createdDateTime       |`DateTimeOffset`        |首次创建 **TimeOff** 的时间戳。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 |
 | lastModifiedDateTime      |`DateTimeOffset`        |上次更新 **TimeOff** 的时间戳。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 |
 | lastModifiedBy        | [identitySet](identityset.md)        |上次更新 **的标识Off**。 |

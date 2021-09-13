@@ -2,15 +2,15 @@
 title: 创建 groupPolicyPresentationComboBox
 description: 创建新的 groupPolicyPresentationComboBox 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8f0bd09c6671e13f4613f89c62ef17fb767e5526
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9a2092486a220106124575c92f991408607fe92e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804657"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59058871"
 ---
 # <a name="create-grouppolicypresentationcombobox"></a>创建 groupPolicyPresentationComboBox
 
@@ -43,7 +43,7 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,14 +51,14 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 
 下表显示创建 groupPolicyPresentationComboBox 时所需的属性。
 
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |标签|String|任何演示文稿实体的本地化文本标签。 默认值为空白。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|id|字符串|实体的键。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|id|String|实体的键。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。 继承自 [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |defaultValue|String|显示在组合框中的本地化默认字符串。 默认值为空白。|
-|suggestions|字符串集合|组合框的下拉列表中列出的本地化字符串。 默认值为空白。|
-|必需|布尔值|指定是否必须为参数指定值。 默认值为 false。|
+|suggestions|String collection|组合框的下拉列表中列出的本地化字符串。 默认值为空白。|
+|必需|Boolean|指定是否必须为参数指定值。 默认值为 false。|
 |maxLength|Int64|一个无符号整数，指定参数的最大文本字符数。 默认值为 1023。|
 
 

@@ -2,15 +2,15 @@
 title: iosDeviceType 资源类型
 description: 包含移动应用可以在上面运行的可能的 iOS 设备类型的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 68146368f2e31bcd946041f34611f0cb9e263f67
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 19bddfc8059f9a78475b8cec4c67b27e798500fd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58799267"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064551"
 ---
 # <a name="iosdevicetype-resource-type"></a>iosDeviceType 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58799267"
 包含移动应用可以在上面运行的可能的 iOS 设备类型的属性。
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |iPad|布尔值|应用是否应该在 iPad 上运行。|
 |iPhoneAndIPod|布尔值|应用是否应该在 iPhone 和 iPod 上运行。|

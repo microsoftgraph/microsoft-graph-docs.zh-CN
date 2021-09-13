@@ -2,15 +2,15 @@
 title: groupPolicyConfiguration 资源类型
 description: 组策略配置实体包含一个或多个组策略定义的配置值。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 699facf5b5e91a41a15105b2a59e00e95433f5ed
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e46f23dc14427b9f4c7feb55f9538b010574b508
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58800364"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063893"
 ---
 # <a name="grouppolicyconfiguration-resource-type"></a>groupPolicyConfiguration 资源类型
 
@@ -38,13 +38,13 @@ ms.locfileid: "58800364"
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|对象的创建日期和时间。|
 |displayName|String|用户为资源对象提供的名称。|
-|description|String|用户提供了资源对象的说明。|
-|roleScopeTagIds|字符串集合|配置的范围标记列表。|
+|说明|String|用户提供了资源对象的说明。|
+|roleScopeTagIds|String collection|配置的范围标记列表。|
 |id|String|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|描述|
 |:---|:---|:---|
 |definitionValues|[groupPolicyDefinitionValue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md) 集合|配置的已启用或已禁用组策略定义值的列表。|
 |assignments|[groupPolicyConfigurationAssignment](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md) 集合|配置的组分配列表。|

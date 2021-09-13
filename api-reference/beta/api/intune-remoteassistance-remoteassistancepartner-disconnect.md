@@ -2,15 +2,15 @@
 title: disconnect 操作
 description: 删除活动 TeamViewer 连接器的请求
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 349e1917227ff85f7cacbffc9fc95e36f4e57710
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 736507c6e30e02dfaee2a7e0c0945363d8d89e98
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804608"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064845"
 ---
 # <a name="disconnect-action"></a>断开连接操作
 
@@ -43,7 +43,7 @@ POST /deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}/disc
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -1,16 +1,16 @@
 ---
 title: educationFeedbackOutcome 资源类型
 description: 以文本形式提供反馈的 educationOutcome。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 5d3e28fa7ee3157a1cf05b2fcf4818878e292702738c5b3e813bccbf39caff9b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 120e7b603ca1d441b696e0fe50c64cb5d0373b7f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54146921"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036653"
 ---
 # <a name="educationfeedbackoutcome-resource-type"></a>educationFeedbackOutcome 资源类型
 
