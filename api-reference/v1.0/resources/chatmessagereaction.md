@@ -1,16 +1,16 @@
 ---
 title: chatMessageReaction 资源类型
 description: '表示对 chatMessage 实体的反应。 '
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1ba9bd4f17d0c0da3507896a66fa187ffda925928827ef7516019c9da6f213d1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7eb1aad41417bcbde320c04f5b93b466430911fa
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54238144"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109379"
 ---
 # <a name="chatmessagereaction-resource-type"></a>chatMessageReaction 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "54238144"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|createdDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
+|createdDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`2014-01-01T00:00:00Z`|
 |reactionType|String|支持的值包括 `like` `angry` `sad` `laugh` 、、、、、。 `heart` `surprised` |
 |用户|[chatMessageReactionIdentitySet](chatmessagereactionidentityset.md)|对邮件做出响应的用户。|
 

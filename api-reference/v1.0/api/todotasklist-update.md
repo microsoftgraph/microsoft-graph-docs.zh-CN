@@ -2,15 +2,15 @@
 title: 更新 todoTaskList
 description: 更新 todoTaskList 对象的属性。
 author: avijityadav
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8c575a938bb2a2689860cf3c58e46ae9d43d24c6
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 52c39a44b0720fc3410eca15eae84a1403e524f5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873519"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104619"
 ---
 # <a name="update-todotasklist"></a>更新 todoTaskList
 命名空间：microsoft.graph
@@ -56,7 +56,7 @@ PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [todoTaskList](../resources/todotasklist.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [todoTaskList](../resources/todotasklist.md) 对象。
 
 ## <a name="examples"></a>示例
 

@@ -1,16 +1,16 @@
 ---
 title: servicePrincipal： delta
 description: 获取新建、更新或删除的服务主体，而无需执行整个资源集合的完整读取。 有关详细信息，请参阅使用增量查询。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: dcbc05093737862c025b337d102696da718ccf99
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 8ce62e31a609226a8e2a5e46b9c301590bd7ca8f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054460"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110114"
 ---
 # <a name="serviceprincipal-delta"></a>servicePrincipal： delta
 

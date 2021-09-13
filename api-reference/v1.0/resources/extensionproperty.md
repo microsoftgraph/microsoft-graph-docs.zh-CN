@@ -1,16 +1,16 @@
 ---
 title: extensionProperty 资源类型
 description: 表示目录扩展
-localization_priority: Normal
+ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 9960c8840dfc7284f91d88d4818b57202cdbf2a90a3c4c16445869666d5121c7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 23312e64c3812f5235a52380ef8acec65d206699
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54141705"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123508"
 ---
 # <a name="extensionproperty-resource-type"></a>extensionProperty 资源类型
 
@@ -21,8 +21,8 @@ ms.locfileid: "54141705"
 可以将扩展添加到[用户](user.md)、组、[组织、](organization.md)[设备](device.md)[、应用程序](application.md)资源。 [](group.md) 所有类型和所有应用程序中只能将 100个扩展值写入任何单个 Azure AD 资源。 
 
 > [!IMPORTANT]
-> 此处所述的 Azure AD 架构扩展仅在出于向后兼容性Graph Microsoft Graph中提供。
-> 它允许你使用 Microsoft Graph管理通过 Azure AD Graph 或 Azure AD 连接 添加[的扩展连接。](/azure/active-directory/hybrid/whatis-azure-ad-connect)
+> 此处所述的 Azure AD 架构扩展仅在出于向后兼容性Graph Microsoft Graph中可用。
+> 它允许你使用 Microsoft Graph管理通过 Azure AD Graph 或 Azure AD 连接[添加的扩展连接。](/azure/active-directory/hybrid/whatis-azure-ad-connect)
 > 对于新的自定义扩展，建议使用 Microsoft Graph架构扩展[向资源添加自定义数据](/graph/extensibility-overview)。
 
 ## <a name="methods"></a>方法

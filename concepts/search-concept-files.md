@@ -2,14 +2,14 @@
 title: 使用 Microsoft Microsoft 搜索中的 Graph API 搜索文件
 description: 可以使用 Microsoft 搜索 API 搜索存储在 OneDrive 或 SharePoint。
 author: nmoreau
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: 321242bd694eb244f9fe688186d91e484587466e19a1c4520f96ae96f0741ec2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c1c4851e84a57a024341c8ab342e7ec7243086c0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54182264"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59103968"
 ---
 # <a name="use-the-microsoft-search-api-to-search-content-in-onedrive-and-sharepoint"></a>使用 Microsoft 搜索 API 搜索 OneDrive 和 SharePoint
 
@@ -245,7 +245,7 @@ Content-type: application/json
 
 ## <a name="example-4-search-all-content-in-onedrive-and-sharepoint"></a>示例 4：搜索 OneDrive 和 SharePoint
 
-此示例查询登录用户OneDrive SharePoint网站中的内容。 响应中的 **resource** 属性返回作为 **driveItem** 对象的文件和文件夹的匹配项、作为容器的匹配项 (SharePoint将) 作为列表列出，所有其他匹配项作为 **listItem** 列出。
+此示例查询登录用户OneDrive SharePoint网站中的内容。 响应中的 **resource** 属性返回作为 **driveItem** 对象的文件和文件夹的匹配项、作为 (SharePoint列出) **列表的** 匹配项，以及作为 **listItem** 的所有其他匹配项。
 
 ### <a name="request"></a>请求
 
@@ -354,8 +354,8 @@ Content-type: application/json
 - `"query": "contoso filetype:docx OR filetype:doc"` 将查询范围确定为 Word 文档。
 - `"query": "test path:\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\\""` 将查询的范围确定为网站中的特定文件夹。
 - `"query": "contoso AND isDocument=true"` 将查询的范围确定为仅返回文档。 不会返回 (文件夹、文档) 的任何容器。
-- `"query": "contoso contentclass:STS_List_Events"`将查询范围确定为存储在日历SharePoint。
-- `"query": "contoso (LastModifiedTime > 2021-02-01 AND Created > 2021-02-01)"`将查询的范围确定为按SharePoint OneDrive筛选项目
+- `"query": "contoso contentclass:STS_List_Events"`将查询的范围确定为存储在日历SharePoint。
+- `"query": "contoso (LastModifiedTime > 2021-02-01 AND Created > 2021-02-01)"`将查询的范围确定为按SharePoint OneDrive和筛选项目
 
 为了有效，属性限制应在条件中指定有效的可查询托管属性名称。
 

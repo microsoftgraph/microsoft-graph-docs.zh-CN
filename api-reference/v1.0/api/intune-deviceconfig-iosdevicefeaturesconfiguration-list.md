@@ -2,15 +2,15 @@
 title: 列出 iosDeviceFeaturesConfigurations
 description: 列出 iosDeviceFeaturesConfiguration 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 44684a4c442d8c120731a10cbe83f2d8b8c1a6f822a49d5c141471a1a2e71bf4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 38ff6806e5c87693cfe3599dec1f75d848077420
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54130798"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59068121"
 ---
 # <a name="list-iosdevicefeaturesconfigurations"></a>列出 iosDeviceFeaturesConfigurations
 

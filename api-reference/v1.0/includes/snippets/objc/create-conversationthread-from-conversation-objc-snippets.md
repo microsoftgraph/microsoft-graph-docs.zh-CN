@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 78daf89efc196b891f0ea9a42478d316d643345ed97149fe52488f8c44dd1fb5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e34be0522c749dac31b608d8e9006f81ae78d8ce
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57332634"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59068268"
 ---
 ```objc
 
@@ -17,12 +17,12 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphConversationThread *conversationThread = [[MSGraphConversationThread alloc] init];
-[conversationThread setTopic:@"topic-value"];
+[conversationThread setTopic:@"Take your wellness days and rest"];
 NSMutableArray *postsList = [[NSMutableArray alloc] init];
 MSGraphPost *posts = [[MSGraphPost alloc] init];
 MSGraphItemBody *body = [[MSGraphItemBody alloc] init];
 [body setContentType: [MSGraphBodyType html]];
-[body setContent:@"this is body content"];
+[body setContent:@"Waiting for the summer holidays."];
 [posts setBody:body];
 [postsList addObject: posts];
 [conversationThread setPosts:postsList];

@@ -2,15 +2,15 @@
 title: 更新 pfxUserCertificate
 description: 更新 pfxUserCertificate 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 389ab93f076bb2ef9aaf555865e83dbda80910e5
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 97be6a85b3c9ea7ab30fb173cebd218cbc0043a4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787643"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59065006"
 ---
 # <a name="update-pfxusercertificate"></a>更新 pfxUserCertificate
 
@@ -43,7 +43,7 @@ PATCH /pfxUserCertificates/{pfxUserCertificatesId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,7 +51,7 @@ PATCH /pfxUserCertificates/{pfxUserCertificatesId}
 
 下表显示创建 [pfxUserCertificate 时所需的属性](../resources/intune-raimportcerts-pfxusercertificate.md)。
 
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |tenantId|Guid|尚未记录|
 |userId|Guid|尚未记录|
@@ -64,7 +64,7 @@ PATCH /pfxUserCertificates/{pfxUserCertificatesId}
 |providerName|String|尚未记录|
 |encryptionKeyName|String|尚未记录|
 |paddingScheme|Int32|尚未记录|
-|状态|Int32|尚未记录|
+|status|Int32|尚未记录|
 |intendedPurpose|Int32|尚未记录|
 |createdTime|DateTimeOffset|尚未记录|
 |isDeleted|Boolean|尚未记录|

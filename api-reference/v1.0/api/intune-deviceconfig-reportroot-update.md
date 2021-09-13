@@ -2,15 +2,15 @@
 title: 更新 reportRoot
 description: 更新 reportRoot 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0dbe8b19d83e37ad222cd0cc404d70c2120b4c019bd684fb14f405936aaf8a32
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 51b0bca2b131d0d1ec56b37c6947159ac8e911ec
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54144639"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105181"
 ---
 # <a name="update-reportroot"></a>更新 reportRoot
 
@@ -41,7 +41,7 @@ PATCH /reports
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

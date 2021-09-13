@@ -2,15 +2,15 @@
 title: 创建 resourceOperation
 description: 创建新的 resourceOperation 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 58d9938270c4ad1b175d67c579c443f56865441b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 564f134699e9168758fa885951410ef1fab8aadb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58802822"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064999"
 ---
 # <a name="create-resourceoperation"></a>创建 resourceOperation
 
@@ -43,7 +43,7 @@ POST /deviceManagement/resourceOperations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,11 +54,11 @@ POST /deviceManagement/resourceOperations
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|资源操作的键。 只读，且自动生成。|
-|资源|字符串|此操作所属的资源类别。 此属性是只读的。|
+|resource|String|此操作所属的资源类别。 此属性是只读的。|
 |resourceName|String|执行此操作的资源的名称。|
 |actionName|String|此操作将执行的操作类型。 actionName 应简明，并尽可能限制在几个字以内。|
-|description|String|资源操作的说明。 当在 Azure 门户中显示时，会在操作的鼠标悬停文本中使用说明。|
-|enabledForScopeValidation|布尔值|确定是否针对每个角色分配定义的作用域验证权限。 此属性是只读的。|
+|说明|String|资源操作的说明。 当在 Azure 门户中显示时，会在操作的鼠标悬停文本中使用说明。|
+|enabledForScopeValidation|Boolean|确定是否针对每个角色分配定义的作用域验证权限。 此属性是只读的。|
 
 
 

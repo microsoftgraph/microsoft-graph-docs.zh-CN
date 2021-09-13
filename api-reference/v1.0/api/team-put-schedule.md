@@ -2,15 +2,15 @@
 title: 创建或替换日程安排
 description: 创建或替换 **schedule** 对象。
 author: akumar39
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 84bad58447680f6c152c1490f1fe88727dd7803b1779b7c0f8ea952ed60fa90b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b801d372947eb4152da3697b3cc65930cb56641e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54240608"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109967"
 ---
 # <a name="create-or-replace-schedule"></a>创建或替换日程安排
 

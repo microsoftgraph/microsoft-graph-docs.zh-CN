@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/11/2017
 title: 创建 SharePoint 列表
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 description: 在 site 中的创建新的 list。
 doc_type: apiPageType
-ms.openlocfilehash: 128e772681bae4b4fcc60eefb0b224fd2a4205d1
-ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
+ms.openlocfilehash: 94256d6eb2a0b89a5cd9c8ac0fec830232061851
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52080426"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110394"
 ---
 # <a name="create-a-new-list"></a>创建新列表
 
@@ -27,7 +27,7 @@ ms.locfileid: "52080426"
 | :------------------------------------- | :------------------------------------------ |
 | 委派（工作或学校帐户）     | Sites.Manage.All                            |
 | 委派（个人 Microsoft 帐户） | 不支持。                              |
-| Application                            | Sites.Manage.All                            |
+| 应用程序                            | Sites.Manage.All                            |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -126,8 +126,8 @@ Content-type: application/json
 **注意：** 为清楚起见，将截断 Response 对象。
 实际调用会返回默认属性。
 
-[列表]: ../resources/list.md
-[网站]: ../resources/site.md
+[list]: ../resources/list.md
+[site]: ../resources/site.md
 
 <!-- {
   "type": "#page.annotation",
