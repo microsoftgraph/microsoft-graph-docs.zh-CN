@@ -2,15 +2,15 @@
 title: managedAppDiagnosticStatus 资源类型
 description: 表示诊断状态。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3f73f0845657725af61c178460054fe8519f892277c3355bb16c1a03a101e98f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c13b101a79410e76fdbcc2372771304280539934
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54175023"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59142584"
 ---
 # <a name="managedappdiagnosticstatus-resource-type"></a>managedAppDiagnosticStatus 资源类型
 

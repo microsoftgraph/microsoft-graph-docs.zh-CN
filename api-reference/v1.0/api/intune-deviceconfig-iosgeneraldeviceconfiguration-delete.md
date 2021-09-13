@@ -2,15 +2,15 @@
 title: 删除 iosGeneralDeviceConfiguration
 description: 删除 iosGeneralDeviceConfiguration。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: eff15c92e612b115f11cd4cce952d4dd225e1b2d0d80dea11fa1c978d6fc2c1f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c46307cdd035d963e5de28f30cea81c19941d56f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54250593"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147302"
 ---
 # <a name="delete-iosgeneraldeviceconfiguration"></a>删除 iosGeneralDeviceConfiguration
 

@@ -2,15 +2,15 @@
 title: 删除 educationClass
 description: 从学校删除课程。
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 6ea143eed918df6513ad95a04ca143bdb4337847
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: c7728cbd1d9b0448d0c6b4ce096aa4ae95a1194a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788141"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147407"
 ---
 # <a name="remove-educationclass"></a>删除 educationClass
 

@@ -2,15 +2,15 @@
 title: 获取状态
 description: 获取用户状态信息。
 author: mkhribech
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 427a6140eb12b83d8195c55b68375e4d170449b6
-ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
+ms.openlocfilehash: 976173ebd61c032ed45c8f6f06efc383f629e5f3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52896597"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085250"
 ---
 # <a name="get-presence"></a>获取状态
 

@@ -2,15 +2,15 @@
 title: 删除 androidWorkProfileCompliancePolicy
 description: 删除 androidWorkProfileCompliancePolicy。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 874dd39c50d84123fe1a14c673c16478ef99a1feb3ae58e60953de0c923acf40
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f25526d9b59399164bca6fa74e9c95f4651e092b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54175880"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59140358"
 ---
 # <a name="delete-androidworkprofilecompliancepolicy"></a>删除 androidWorkProfileCompliancePolicy
 

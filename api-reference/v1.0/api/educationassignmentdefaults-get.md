@@ -2,15 +2,15 @@
 title: 获取 educationAssignmentDefaults
 description: 读取 educationAssignmentDefaults 对象的属性和关系。
 author: sharad-sharma-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: c2b4da48fd92ecfbcdf28cfa0456d0ecf8f44415
-ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
+ms.openlocfilehash: 6952d61cacc57af3ac2d27202228a5f26e7195ee
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58367007"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020033"
 ---
 # <a name="get-educationassignmentdefaults"></a>获取 educationAssignmentDefaults
 命名空间：microsoft.graph

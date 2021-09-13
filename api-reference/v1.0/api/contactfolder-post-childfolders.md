@@ -2,15 +2,15 @@
 title: 创建 ContactFolder
 description: '创建新的 contactFolder 作为指定文件夹的子文件夹。 '
 author: kevinbellinger
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1d02a908ee74744dbd4c79672941378dee1ba82f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 7e71ee69d32fbed6b67c2834fa55542ad8a9ec77
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052451"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147743"
 ---
 # <a name="create-contactfolder"></a>创建 ContactFolder
 
@@ -85,7 +85,7 @@ Content-type: application/json
 
 在请求正文中，提供 [contactFolder](../resources/contactfolder.md) 对象的 JSON 表示形式。
 ### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,16 +1,16 @@
 ---
 title: 列出策略
 description: 检索 conditionalaccesspolicy 对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 627bd59f882c490765d2b26228fc464fa2726694
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 08adbe4633c47384f1fe10c27db34ff9e826f82b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054075"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147806"
 ---
 # <a name="list-policies"></a>列出策略
 

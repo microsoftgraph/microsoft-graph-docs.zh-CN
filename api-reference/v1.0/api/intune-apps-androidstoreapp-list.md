@@ -2,15 +2,15 @@
 title: 列出 androidStoreApps
 description: 列出 androidStoreApp 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b7e97b19e4dfabe551f2600ea68d408e3491aa04ab264847bdcc42fe57d3b89c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1d3e49b49ee3150f6fee4eabab4a4c0ef1fe41d0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54135909"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147337"
 ---
 # <a name="list-androidstoreapps"></a>列出 androidStoreApps
 

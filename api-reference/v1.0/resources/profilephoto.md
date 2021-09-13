@@ -1,16 +1,16 @@
 ---
 title: profilePhoto 资源类型
 description: 从 Exchange Online 访问的用户、组或 Outlook 联系人的个人资料照片。它是不以 base-64 编码的二进制数据。
-localization_priority: Priority
+ms.localizationpriority: high
 author: kevinbellinger
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 1733a1cc102257345b609b34d40f44d972393cbacc37e321eac437b1a6da734b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1b5934eaca94c68e5e11e4131b2f684bb8cdd100
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163696"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143823"
 ---
 # <a name="profilephoto-resource-type"></a>profilePhoto 资源类型
 

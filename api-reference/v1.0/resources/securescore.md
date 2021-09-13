@@ -1,22 +1,22 @@
 ---
 title: secureScore 资源类型
 description: 表示租户和控制级别的租户每天评分数据的安全分数。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: fbc942784813545f5d276addbd4581cf30ea82c8c2d8d6cf17d5f3ef3fbc7246
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 01499bbd755739310bc309656379bde278401544
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54180479"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084123"
 ---
 # <a name="securescore-resource-type"></a>secureScore 资源类型
 
 命名空间：microsoft.graph
 
-表示租户和控制级别的租户每天评分数据的安全分数。 默认情况下，将存储 90 天的数据。 此数据按 **createdDateTime** 排序，从最新到最早。 这将允许您使用 $top=n 对响应进行页面响应，其中 n = 要检索的数据的天数。 
+表示租户和控制级别的租户每天评分数据的安全分数。 默认情况下，将存储 90 天的数据。 此数据按 **createdDateTime** 排序，从最新到最早。 这将允许您使用 $top=n 来分页响应，其中 n = 要检索的数据的天数。 
 
 
 ## <a name="methods"></a>方法

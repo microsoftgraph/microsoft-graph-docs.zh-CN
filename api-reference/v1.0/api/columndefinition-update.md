@@ -2,15 +2,15 @@
 author: swapnil1993
 title: 更新 columnDefinition
 description: 更新网站、列表或内容类型列。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 97a43044473b6b8e3a2136a3075771861b58725a
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 1c7d7fda5676f88aa0d1c546417f05fe5983c538
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696547"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59080133"
 ---
 # <a name="update-columndefinition"></a>更新 columnDefinition
 命名空间：microsoft.graph
@@ -119,5 +119,5 @@ Content-type: application/json
 [columnDefinition]: ../resources/columnDefinition.md
 [contentType]: ../resources/contentType.md
 [list]: ../resources/list.md
-[网站]: ../resources/site.md
+[site]: ../resources/site.md
 

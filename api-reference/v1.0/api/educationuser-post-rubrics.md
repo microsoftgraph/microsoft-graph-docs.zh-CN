@@ -1,16 +1,16 @@
 ---
 title: 创建 educationRubric
 description: 创建新的 educationRubric 对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 1fc070c5bba0db2924d3c9676602d393529e1ce5
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 21d391ef4f042c514d20ff211ff9b49fe13cceb3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52992906"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59114524"
 ---
 # <a name="create-educationrubric"></a>创建 educationRubric
 
@@ -245,7 +245,7 @@ Content-type: application/json
 
 ### <a name="example-2-post-a-points-rubric"></a>示例 2：发布分数
 
-下面是一个请求发布带分数的分数的分数的示例。
+下面是一个请求发布带分数的分值值的示例。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

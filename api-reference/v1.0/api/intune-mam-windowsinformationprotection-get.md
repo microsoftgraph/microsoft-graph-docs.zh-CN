@@ -2,15 +2,15 @@
 title: 获取 windowsInformationProtection
 description: 读取 windowsInformationProtection 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: afe526a7533227ee2a850b3630f4d292597537f943635f250f9b086cfcf2ffa1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 341b043333b42cab4b693983dfa8e7a95781effc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54252324"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147162"
 ---
 # <a name="get-windowsinformationprotection"></a>获取 windowsInformationProtection
 

@@ -1,16 +1,16 @@
 ---
 title: 创建 educationCategory
 description: 创建新类别。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 3677ad2537eebd5b305ed69e147e42b6a0a84ad6f4f00a3d4f2ae8cd50ba66d1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7ec59532a676b0e7c901129719f18a17ae1d1714
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54130938"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147449"
 ---
 # <a name="create-educationcategory"></a>创建 educationCategory
 

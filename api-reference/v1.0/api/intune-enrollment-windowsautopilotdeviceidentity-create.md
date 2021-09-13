@@ -2,15 +2,15 @@
 title: 创建 windowsAutopilotDeviceIdentity
 description: 创建新的 windowsAutopilotDeviceIdentity 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 28cf9132c6cad73157fc246254545b77ea7679d71c9bb62195542e6a40242452
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 154edcd01c4cca64172f583981f2b8f513653811
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54190071"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147260"
 ---
 # <a name="create-windowsautopilotdeviceidentity"></a>创建 windowsAutopilotDeviceIdentity
 
@@ -52,7 +52,7 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|对象的 GUID|
-|groupTag|String|autopilot Windows的 Group 标记。|
+|groupTag|String|autopilot Windows组标记。|
 |purchaseOrderIdentifier|String|Purchase Order Autopilot Windows标识符。|
 |serialNumber|String|Windows autopilot 设备序列号。|
 |productKey|String|Windows autopilot 设备产品密钥。|

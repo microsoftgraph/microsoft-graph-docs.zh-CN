@@ -1,16 +1,16 @@
 ---
 title: educationClass 资源类型
 description: '表示学校的课程。 **educationClass** 资源对应于 Microsoft 365 组并共享同一 ID。 学生是课程的正式成员，教师为所有者，且具有相应权限。 若要使 Office 体验正常进行，教师必须同时为教师和成员集合的成员。  '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mlafleur
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 3d1d6eb24e9d9b21ed8e828488ae306ec5c4bae549e51ecf0e69d63c5319e3a5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: dfe36d8068d0a9fa8d2c9f6c8d38b504ee9c83c5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54160056"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084557"
 ---
 # <a name="educationclass-resource-type"></a>educationClass 资源类型
 
@@ -52,7 +52,7 @@ ms.locfileid: "54160056"
 
 | 关系 | 类型                                                          | 说明                                               |
 | :----------- | :------------------------------------------------------------ | :-------------------------------------------------------- |
-| group        | [组](../resources/group.md)                                | 组Microsoft 365对象。                |
+| 组        | [组](../resources/group.md)                                | 组Microsoft 365对象。                |
 | members      | [educationUser](../resources/educationuser.md) 集合     | 课程中的所有用户。 可为 NULL。                         |
 | schools      | [educationSchool](../resources/educationschool.md) 集合 | 与此课程相关的所有学校。 可为 NULL。 |
 | teachers     | [educationUser](../resources/educationuser.md) 集合     | 课程中的所有教师。 可为 Null。                      |

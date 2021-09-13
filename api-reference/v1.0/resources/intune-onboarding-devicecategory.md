@@ -2,15 +2,15 @@
 title: deviceCategory 资源类型
 description: 设备类别提供了整理设备的方法。 公司管理员可以使用设备类别定义对其公司有意义的属于他们自己的类别。 然后可将这些类别应用于 Intune Azure 控制台中的设备，或在用户注册设备时供他们选择。 可以根据设备类别筛选报告并创建动态 Azure Active Directory 设备组。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 41e038643deecacb094ef8927ed1229ad1b76c114cf71f60cdca027a981a7047
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6d890d2807db9725372806c715a0b05b16bcb8ec
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54243348"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59098646"
 ---
 # <a name="devicecategory-resource-type"></a>deviceCategory 资源类型
 

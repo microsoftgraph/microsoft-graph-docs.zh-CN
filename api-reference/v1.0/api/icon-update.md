@@ -1,16 +1,16 @@
 ---
 title: 更新图标
 description: 更新 icon 对象的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: ruoyingl
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: ba939cae4c99b3f48b22a6fe9760051c873d69c256e0e193b943a6c1dcf1e48e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 610ad885aecddf4605c1ecf8d7f9dba80add63ec
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54175985"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063417"
 ---
 # <a name="update-icon"></a>更新图标
 

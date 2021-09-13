@@ -2,25 +2,25 @@
 title: Microsoft Graph 中的合规性概述
 description: Microsoft Graph 合规性 API 为组织提供了自动执行重复任务并与现有合规性工具集成的功能，以构建符合行业法规通常需要的可预测工作流。
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: e1c2d36d5960e4e0c0d4d171314794bf7e1f75aeb448e87697c8dbfd1027be07
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 938dc6b2b05e614856929714d18ec1e52ebfbc4d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54246435"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134029"
 ---
 # <a name="overview-of-compliance-in-microsoft-graph"></a>Microsoft Graph 中的合规性概述
 
-Microsoft Graph API 为组织提供了自动执行重复任务并与现有合规性工具集成的功能，以构建符合行业法规通常需要的可预测工作流。
+Microsoft Graph 合规性 API 为组织提供了自动执行重复任务并与现有合规性工具集成的功能，以构建符合行业法规通常需要的可预测工作流。
 
-合规性 API 旨在帮助实现以下愿景：帮助组织适应和扩展 Microsoft 365 合规性，使其符合自己的特定要求，实现现有自定义或第三方解决方案的集成，以及加速和支持在整个企业数字资产中使用 Microsoft 365 解决方案。
+合规性 API 旨在帮助实现以下愿景：帮助组织适应和扩展 Microsoft 365 合规性，使其符合自己的特定要求，实现现有自定义或第三方解决方案的集成，以及加速和支持在企业数字资产中使用 Microsoft 365 解决方案。
 
 ## <a name="develop-applications-that-ensure-a-repeatable-predictable-and-standard-process"></a>开发确保可重复、可预测和标准流程的应用程序
 
-组织依靠Microsoft 365电子数据展示功能，根据内部或外部要求（如诉讼、调查或法规遵从性）来了解组织在需要时发生的真实情况。
+组织依靠Microsoft 365电子数据展示功能来满足要求，根据内部或外部要求（如诉讼、调查或监管合规性）了解其组织中所需情况的真实情况。
 
 在许多组织中，电子数据展示工作流是频繁、关键且大量的。 在常见重复任务或大量活动的情况下，API 将有助于提供一种可伸缩的方式，以一致且有效地重复过程。
 

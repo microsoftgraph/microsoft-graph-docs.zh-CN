@@ -2,15 +2,15 @@
 title: 获取 notificationMessageTemplate
 description: 读取 notificationMessageTemplate 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e50ab72c0d21554968b4d0fe3dd197bc78e1f879a6f90c31675a0b7e338d54e4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a95b9f460be112dc65a2f363d4798a2b0243600d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54190057"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147008"
 ---
 # <a name="get-notificationmessagetemplate"></a>获取 notificationMessageTemplate
 

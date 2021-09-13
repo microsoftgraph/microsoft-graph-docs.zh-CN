@@ -2,15 +2,15 @@
 title: 创建 iosGeneralDeviceConfiguration
 description: 创建新的 iosGeneralDeviceConfiguration 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0520a27a95b20712917858d1637af7d1dccc20a121a94698d5240d5ca7c6c3f5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 65881c8d2771aa330d9ae583cc03422bae2b502c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54226005"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59144180"
 ---
 # <a name="create-iosgeneraldeviceconfiguration"></a>创建 iosGeneralDeviceConfiguration
 

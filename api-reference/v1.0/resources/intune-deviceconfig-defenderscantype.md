@@ -2,15 +2,15 @@
 title: defenderScanType 枚举类型
 description: 系统扫描类型的可能值。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 50791f9317b4e9d6e81c14aa331810f3c5d857a53d0a5a1059d5766e5e5ed4a3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7fb236c43be6e4d62b88e8e3aac654e07dbb1603
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54184786"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59146854"
 ---
 # <a name="defenderscantype-enum-type"></a>defenderScanType 枚举类型
 

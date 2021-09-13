@@ -2,15 +2,15 @@
 title: managedAppFlaggedReason 枚举类型
 description: 用户被标记的原因
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8f67371d231c0d29b9ef30437583f41b6ec738ee3366fecebd319ebb9aaa8799
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 20ea69bd2042e0783af0c9dbf585057664bb5b95
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54229127"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59142570"
 ---
 # <a name="managedappflaggedreason-enum-type"></a>managedAppFlaggedReason 枚举类型
 

@@ -1,16 +1,16 @@
 ---
 title: RangeFont 资源类型
 description: 此对象表示对象的字体属性（字体名称、字体大小、颜色等）。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 3754449b328f8b6d1217970b352cc11b28e998cf2e1b4f931c0f106eb97dc1ed
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 760883a43ef534dc52ab69a098f9d9f688d46172
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54152263"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143704"
 ---
 # <a name="rangefont-resource-type"></a>RangeFont 资源类型
 

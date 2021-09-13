@@ -2,15 +2,15 @@
 title: rangeView 资源类型
 description: RangeView 表示父范围的一组可见单元格。
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 8016bd6600a2c220823a2ea53260d41c381b4b9a4b56378888c2e73e49e7116b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9e49392b8a8ef6f79c199d7e7ce7bf2aba22f114
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54251685"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139420"
 ---
 # <a name="rangeview-resource-type"></a>rangeView 资源类型
 

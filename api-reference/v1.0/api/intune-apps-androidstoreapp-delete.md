@@ -2,15 +2,15 @@
 title: 删除 androidStoreApp
 description: 删除 androidStoreApp
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a6558cb289eba481b718462ec8aa5504bc0a2fc0bed7d96c93386279bac54c55
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 390b2007afd297a0a3d021625ef19df6a1c772dc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54170067"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147351"
 ---
 # <a name="delete-androidstoreapp"></a>删除 androidStoreApp
 

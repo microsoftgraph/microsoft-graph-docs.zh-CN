@@ -2,15 +2,15 @@
 title: 创建 windows10EndpointProtectionConfiguration
 description: 创建新的 windows10EndpointProtectionConfiguration 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: faaeee0678a61573f1af5b94dcee14a7b6f2830dffef2a41f0f646bd03ed3fb8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a0100d37817276881c87e9c352db096139f3bf97
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54175761"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59144089"
 ---
 # <a name="create-windows10endpointprotectionconfiguration"></a>创建 windows10EndpointProtectionConfiguration
 

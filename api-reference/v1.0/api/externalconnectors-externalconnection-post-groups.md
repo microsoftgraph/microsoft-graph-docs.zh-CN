@@ -2,15 +2,15 @@
 title: 创建 externalGroup
 description: 创建新的 externalGroup 对象。
 author: sacampbe-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: bd7a09ae83540ab739bdda97fcdbfc14827a7e25
-ms.sourcegitcommit: 6efd9df497d795988cd85474f379d1989b0995b7
+ms.openlocfilehash: 92b381434c664942aba9eb1e78ed4da6c62e2fec
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58697500"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022489"
 ---
 # <a name="create-externalgroup"></a>创建 externalGroup
 命名空间：microsoft.graph.externalConnectors
@@ -19,7 +19,7 @@ ms.locfileid: "58697500"
 
 创建新的 [externalGroup](../resources/externalconnectors-externalgroup.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
@@ -54,7 +54,7 @@ POST /connections/{connectionsId}/groups
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------------------|
 | id          | String | 连接内外部组的唯一 ID。 它必须是字母数字，并且最多为 128 个字符。 必需。 |
 | displayName | String | 外部组的友好名称。 可选。                                                                      |
-| description | String | 外部组的说明。 可选。                                                                         |
+| 说明 | String | 外部组的说明。 可选。                                                                         |
 
 
 
@@ -66,6 +66,8 @@ POST /connections/{connectionsId}/groups
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_externalgroup_from_connection"
@@ -82,6 +84,24 @@ Content-Type: application/json
   "description": "The product marketing team"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-externalgroup-from-connection-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-externalgroup-from-connection-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-externalgroup-from-connection-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-externalgroup-from-connection-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 <!-- markdownlint-disable MD024 -->
 ### <a name="response"></a>响应

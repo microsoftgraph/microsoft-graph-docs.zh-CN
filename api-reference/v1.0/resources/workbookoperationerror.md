@@ -1,16 +1,16 @@
 ---
 title: workbookOperationError 资源类型
 description: 表示失败的工作簿操作中的错误。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: df629e7fce25638dce64dbec6914026a36c42e8b88f98d7348832eb040afb87f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: aeddf940bfbbc9fdd7bba44afcd34990ffd7b671
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235245"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139434"
 ---
 # <a name="workbookoperationerror-resource-type"></a>workbookOperationError 资源类型
 

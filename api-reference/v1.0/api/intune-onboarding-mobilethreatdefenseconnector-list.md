@@ -2,15 +2,15 @@
 title: 列出 mobileThreatDefenseConnectors
 description: 列出 mobileThreatDefenseConnector 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 40fc0270cb2057f92e0200a2b72db198fa3a4cc41b7a4c2ee32e8d9a01e9fa29
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d26cf35aae46a4a633117e8afea08c9123892cb5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54155594"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139917"
 ---
 # <a name="list-mobilethreatdefenseconnectors"></a>列出 mobileThreatDefenseConnectors
 

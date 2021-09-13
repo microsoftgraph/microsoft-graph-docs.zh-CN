@@ -1,16 +1,16 @@
 ---
 title: 在频道或聊天中发送 chatMessage
 description: 在指定的频道或聊天中发送新的 chatMessage。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6e9b28d3e6992ad430100b9c915741d69a12b1f5
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: 595323bce69b31a4193ebfc2f96cb8cbb2d566d8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58667946"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147855"
 ---
 # <a name="send-chatmessage-in-a-channel-or-a-chat"></a>在频道或聊天中发送 chatMessage
 
@@ -173,7 +173,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-mentions-a-user-in-a-channel-message"></a>示例 2：@mentions频道消息中通知用户
+### <a name="example-2-mentions-a-user-in-a-channel-message"></a>示例 2：@mentions消息中通知用户
 
 #### <a name="request"></a>请求
 下面展示了示例请求。
@@ -871,7 +871,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-8--mention-a-team-in-a-channel-message"></a>示例 8：@mention频道消息中与团队通信
+### <a name="example-8--mention-a-team-in-a-channel-message"></a>示例 8：@mention频道消息中通知团队
 
 #### <a name="request"></a>请求
 下面展示了示例请求。

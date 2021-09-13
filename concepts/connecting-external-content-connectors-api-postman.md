@@ -2,15 +2,15 @@
 title: 将 Postman 与 Microsoft Graph 连接器 API 一并使用
 description: 使用 Postman 试用连接器 API
 author: mecampos
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 9e520b5fe4d777edbe0a1e7f2f5300486b1772ea3c1dcf54a718854e56bd243d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 15587804b130a009abc936ceb8af4379f67fcea2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54126151"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139357"
 ---
 # <a name="use-postman-with-the-microsoft-graph-connectors-api"></a>将 Postman 与 Microsoft Graph 连接器 API 一并使用
 
@@ -19,7 +19,7 @@ ms.locfileid: "54126151"
 ## <a name="prerequisites"></a>先决条件
 
 * Microsoft 帐户或者工作或学校帐户。
-* 访问 Microsoft 365 开发人员租户。 如果没有，可以注册 [Microsoft 365 开发人员计划]，获取免费的开发人员订阅。
+* 访问 Microsoft 365 开发人员租户。如果没有，可以注册 [Microsoft 365 开发人员计划]，以获取免费的开发人员订阅。
 
 ## <a name="step-1---import-the-microsoft-graph-postman-collection"></a>步骤 1 - 导入 Microsoft Graph Postman 集合
 

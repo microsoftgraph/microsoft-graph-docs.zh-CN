@@ -2,15 +2,15 @@
 title: 更新 managedEBookAssignment
 description: 更新 managedEBookAssignment 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0c6801073d588b80e71b79e7f190785955f4468c118a3973a435a7e304be9636
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 72b88e20d159ba50fe1797723bdb337763e392b1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54160427"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59140654"
 ---
 # <a name="update-managedebookassignment"></a>更新 managedEBookAssignment
 

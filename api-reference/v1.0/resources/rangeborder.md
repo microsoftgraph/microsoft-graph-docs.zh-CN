@@ -2,15 +2,15 @@
 title: RangeBorder 资源类型
 description: 代表对象的边框。
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: ad8cbd941b1af5a3a694be308ea2b5c0065a5e05b2f58b02c98c5e8d7bc26398
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3fe1c55ca1cac12ac5514c8b703be4d85254044f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54246617"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143781"
 ---
 # <a name="rangeborder-resource-type"></a>RangeBorder 资源类型
 

@@ -1,16 +1,16 @@
 ---
 title: openShiftChangeRequest： decline
 description: 拒绝 openShiftChangeRequest。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: eaa5e589a2c420203a4e03fbceda62a701873e3e
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 6d5568260debd0e57f83aaeaef120edf6c024efe
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787791"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085460"
 ---
 # <a name="openshiftchangerequest-decline"></a>openShiftChangeRequest： decline
 

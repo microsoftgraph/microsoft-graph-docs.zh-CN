@@ -1,16 +1,16 @@
 ---
 title: 获取 identityProvider
 description: 检索 identityProvider 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 82e8707d2179486aeeaf7f5fdede9b99d83169a5
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: 443d2e50f9bb480290874c976132e28e72ea94a5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58667939"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147386"
 ---
 # <a name="get-identityprovider"></a>获取 identityProvider
 命名空间：microsoft.graph

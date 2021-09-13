@@ -2,15 +2,15 @@
 title: sendTestMessage 操作
 description: 使用默认区域设置中指定的 notificationMessageTemplate 发送测试消息
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b02f3407bc74f2936d1914aef376adddda66bb81525564c6992ed5fd2eac23f5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2d644823366e23289ac5f5687aa0055e5d3ad169
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249501"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59146994"
 ---
 # <a name="sendtestmessage-action"></a>sendTestMessage 操作
 

@@ -1,16 +1,16 @@
 ---
 title: 更新组织
 description: 更新当前经过身份验证的组织的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: adimitui
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 6e848342b2a14d836f2fc9c0df68db2f44e0531b
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 454ba60b4cd76c52b0e14aaccec8b910c825c2ce
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787448"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59079193"
 ---
 # <a name="update-organization"></a>更新组织
 

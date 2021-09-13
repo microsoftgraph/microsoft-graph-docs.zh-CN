@@ -2,15 +2,15 @@
 title: 删除 complianceManagementPartner
 description: 删除 complianceManagementPartner。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1a20326285c9deedc0d6cf4ecd4002909339cf0a281534e575d82525f55c622c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3f91715e810cd58d40384f127d05dd0bc71acdb1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54225823"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59146980"
 ---
 # <a name="delete-compliancemanagementpartner"></a>删除 complianceManagementPartner
 
