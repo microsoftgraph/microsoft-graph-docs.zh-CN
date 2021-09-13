@@ -2,15 +2,15 @@
 title: policyRoot 资源类型
 description: 公开策略单一元素的导航属性的资源类型。
 author: shauliu1
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: bf51c84988ab6f549052a88943275075d2d96800
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: a49530f2db8d22d275e0fd9eba3a0dbe1daab108
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58454036"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59115028"
 ---
 # <a name="policyroot-resource-type"></a>policyRoot 资源类型
 
@@ -33,7 +33,7 @@ ms.locfileid: "58454036"
 | adminConsentRequestPolicy                 | [adminConsentRequestPolicy](adminconsentrequestpolicy.md)                                                 | 创建和管理整个租户的同意请求的策略。                                                                                  |
 | appManagementPolicies                     | [appManagementPolicy](appmanagementpolicy.md) 集合                                                  | 对特定应用程序和服务主体强制执行应用管理限制的策略，覆盖 defaultAppManagementPolicy。                   |
 | authenticationFlowsPolicy                 | [authenticationFlowsPolicy](authenticationflowspolicy.md)                                                 | 外部用户的自助注册体验的策略配置。                                                                                   |
-| authenticationMethodsPolicy               | [authenticationMethodsPolicy](authenticationmethodspolicy.md)                                             | 身份验证方法以及允许使用它们登录并执行 Azure AD (MFA) 中的多重Azure Active Directory (身份验证) 。 |
+| authenticationMethodsPolicy               | [authenticationMethodsPolicy](authenticationmethodspolicy.md)                                             | 身份验证方法以及允许使用它们登录并执行 Azure AD (中的 MFA) 多重Azure Active Directory (用户) 。 |
 | authorizationPolicy                       | [authorizationPolicy](authorizationpolicy.md) 集合                                                  | 控制 Azure AD 授权设置的策略。                                                                                                            |
 | b2cAuthenticationMethodsPolicy            | [b2cAuthenticationMethodsPolicy](b2cauthenticationmethodspolicy.md)                                       | 用于定义最终用户如何通过本地帐户注册的 Azure AD B2C 策略。                                                                                     |
 | claimsMappingPolicies                     | [claimsMappingPolicy](claimsmappingpolicy.md) 集合                                                  | WS-Fed、SAML、OAuth 2.0 和 OpenID 连接协议声明映射策略，用于颁发给特定应用程序的令牌。                                   |

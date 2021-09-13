@@ -1,16 +1,16 @@
 ---
 title: officeConfiguration 资源类型
 description: 充当所有设备管理功能的容器的单例实体。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 58e1aea2e6b8a03f69e63948675e4f4b7a9b6ebf
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: bd5720a577d8f45b22d146648a7ab205b2b38c17
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820525"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59111332"
 ---
 # <a name="officeconfiguration-resource-type"></a>officeConfiguration 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58820525"
 充当所有设备管理功能的容器的单例实体。
 
 ## <a name="methods"></a>方法
-|方法|返回类型|Description|
+|方法|返回类型|说明|
 |:---|:---|:---|
 |获取 officeConfiguration|[officeConfiguration](../resources/intune-cirrus-officeconfiguration.md)|读取 [officeConfiguration 对象的属性和](../resources/intune-cirrus-officeconfiguration.md) 关系。|
 |更新 officeConfiguration|[officeConfiguration](../resources/intune-cirrus-officeconfiguration.md)|更新 [officeConfiguration 对象](../resources/intune-cirrus-officeconfiguration.md) 的属性。|
@@ -36,7 +36,7 @@ ms.locfileid: "58820525"
 |tenantUserCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|描述租户签入计划的实体|
 
 ## <a name="relationships"></a>关系
-|关系|类型|Description|
+|关系|类型|说明|
 |:---|:---|:---|
 |clientConfigurations|[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md) 集合|Office 客户端配置列表。|
 

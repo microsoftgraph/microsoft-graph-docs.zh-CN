@@ -2,15 +2,15 @@
 title: localSecurityOptionsAdministratorElevationPromptBehaviorType 枚举类型
 description: LocalSecurityOptionsAdministratorElevationPromptBehavior 的可能值
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d25c61fe8ffc07de97332da9579abd3fdc433b7f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4fd3e7f8f128726efef0d380144110ed5a887047
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819162"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127089"
 ---
 # <a name="localsecurityoptionsadministratorelevationpromptbehaviortype-enum-type"></a>localSecurityOptionsAdministratorElevationPromptBehaviorType 枚举类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58819162"
 LocalSecurityOptionsAdministratorElevationPromptBehavior 的可能值
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置|
 |elevateWithoutPrompting|1|提升而不提示。|

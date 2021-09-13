@@ -2,15 +2,15 @@
 title: 创建 deviceComplianceDeviceStatus
 description: 创建新的 deviceComplianceDeviceStatus 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8f7cb77648f1dd312cafeceb55a6ecb7389ee61c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5e6f5b38490fca78ea80cafddb19728fa76c02a8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796087"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59108455"
 ---
 # <a name="create-devicecompliancedevicestatus"></a>创建 deviceComplianceDeviceStatus
 
@@ -43,7 +43,7 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/devic
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

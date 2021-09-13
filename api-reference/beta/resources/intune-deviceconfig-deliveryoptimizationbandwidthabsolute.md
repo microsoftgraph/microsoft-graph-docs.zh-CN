@@ -2,15 +2,15 @@
 title: deliveryOptimizationBandwidthAbsolute 资源类型
 description: 带宽限制（以 KB/秒为单位）。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2e184d3175cfc3643a7de870b0fdbd4be3af0949
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a8d625892c0d8651de284037d5a2ba4158a3b34a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791205"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147988"
 ---
 # <a name="deliveryoptimizationbandwidthabsolute-resource-type"></a>deliveryOptimizationBandwidthAbsolute 资源类型
 
@@ -29,7 +29,7 @@ ms.locfileid: "58791205"
 |属性|类型|说明|
 |:---|:---|:---|
 |maximumDownloadBandwidthInKilobytesPerSecond|Int64|指定设备可使用传递优化跨所有并发下载活动使用的最大下载带宽（以 Kb/秒为单位）。 有效值为 0 到 4294967295
-值 0 (零) 表示传递优化动态调整以使用可用带宽进行下载。 有效值为 0 到 4294967295|
+值 0 (零) 意味着传递优化动态调整以使用可用带宽进行下载。 有效值为 0 到 4294967295|
 |maximumUploadBandwidthInKilobytesPerSecond|Int64|指定设备将使用传递优化 (0-40000000) 的所有并发上载活动的最大上载带宽（以 Kb/秒为单位）。 有效值为 0 到 40000000
 默认值为 0，表示允许无限可能的带宽 (优化，以尽可能减少上载带宽) 。 有效值为 0 到 40000000|
 

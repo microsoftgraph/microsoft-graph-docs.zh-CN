@@ -2,15 +2,15 @@
 title: applicationGuardEnabledOptions 枚举类型
 description: ApplicationGuardEnabledOptions 的可能值
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 40dbefebf1cf3d9e514f1e9cd998b8e522f13d77
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c4ea8aa8d4cde9ed9d71eac0e6e7e8da384a0f3c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784504"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59106306"
 ---
 # <a name="applicationguardenabledoptions-enum-type"></a>applicationGuardEnabledOptions 枚举类型
 
@@ -28,7 +28,7 @@ ApplicationGuardEnabledOptions 的可能值
 |notConfigured|0|未配置|
 |enabledForEdge|1|为边缘启用|
 |enabledForOffice|2|已启用Office|
-|enabledForEdgeAndOffice|3|为 Edge 和 Office|
+|enabledForEdgeAndOffice|3|启用边缘和Office|
 
 
 

@@ -2,15 +2,15 @@
 title: 更新 windows10EnrollmentCompletionPageConfiguration
 description: 更新 windows10EnrollmentCompletionPageConfiguration 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 352670f7f3df06504773f1e35d2f113b16896090
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 545d0e15456556fac29d31b978b9e47bf2ec8b1a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785274"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59116498"
 ---
 # <a name="update-windows10enrollmentcompletionpageconfiguration"></a>更新 windows10EnrollmentCompletionPageConfiguration
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,8 +54,8 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|帐户的唯一标识符 继承自 [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|displayName|字符串|设备显示名称的配置类型 继承自 [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|description|字符串|设备注册配置的说明 继承自 [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|displayName|String|设备注册配置显示名称继承自 [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|说明|String|设备注册配置的说明 继承自 [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |priority|Int32|如果用户位于分配了注册配置的多个组中，则使用优先级。 用户仅受优先级值最低的配置使用。 继承自 [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |createdDateTime|DateTimeOffset|设备注册配置的创建日期时间（UTC）继承自 [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|设备注册配置的上次修改日期时间（UTC）继承自 [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
@@ -63,14 +63,14 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 |roleScopeTagIds|字符串集合|注册限制的可选角色范围标记。 继承自 [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |showInstallationProgress|Boolean|向用户显示或隐藏安装进度|
 |blockDeviceSetupRetryByUser|Boolean|允许用户在安装失败时重试安装|
-|allowDeviceResetOnInstallFailure|布尔值|安装失败时允许或阻止设备重置|
-|allowLogCollectionOnInstallFailure|布尔值|安装失败时允许或阻止日志收集|
+|allowDeviceResetOnInstallFailure|Boolean|安装失败时允许或阻止设备重置|
+|allowLogCollectionOnInstallFailure|Boolean|安装失败时允许或阻止日志收集|
 |customErrorMessage|String|将自定义错误消息设置为在安装失败时显示|
 |installProgressTimeoutInMinutes|Int32|设置安装进度超时（分钟）|
-|allowDeviceUseOnInstallFailure|布尔值|允许用户在安装失败时继续使用设备|
+|allowDeviceUseOnInstallFailure|Boolean|允许用户在安装失败时继续使用设备|
 |selectedMobileAppIds|字符串集合|用于跟踪安装状态的选定应用程序|
 |trackInstallProgressForAutopilotOnly|Boolean|仅显示 Autopilot 注册方案的安装进度|
-|disableUserStatusTrackingAfterFirstUser|布尔值|仅显示第一个用户注册后的安装进度|
+|disableUserStatusTrackingAfterFirstUser|Boolean|仅显示第一个用户注册后的安装进度|
 
 
 

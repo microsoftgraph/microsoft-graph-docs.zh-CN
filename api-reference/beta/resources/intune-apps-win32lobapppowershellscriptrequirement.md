@@ -2,15 +2,15 @@
 title: win32LobAppPowerShellScriptRequirement 资源类型
 description: 包含用于检测 Win32 应用的 PowerShell 脚本属性
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f3025ec2bd0ebc5eb4806f70d8672f4c6126f1d7
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e58da26ef6a6970e249a54e4cbe0fdb1c444705d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58771944"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59111346"
 ---
 # <a name="win32lobapppowershellscriptrequirement-resource-type"></a>win32LobAppPowerShellScriptRequirement 资源类型
 

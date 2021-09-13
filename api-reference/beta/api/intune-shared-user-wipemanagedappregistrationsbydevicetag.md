@@ -2,15 +2,15 @@
 title: wipeManagedAppRegistrationsByDeviceTag 操作
 description: 对包含指定设备标记的应用注册发布擦除操作。
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dfbb070af87a386b816431528669120a51c30cfc
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d4e4c976fec4d36f82565190cb6caed1c9dff2ed
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818833"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59132419"
 ---
 # <a name="wipemanagedappregistrationsbydevicetag-action"></a>wipeManagedAppRegistrationsByDeviceTag 操作
 
@@ -48,7 +48,7 @@ POST /users/{usersId}/wipeManagedAppRegistrationsByDeviceTag
 
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -57,7 +57,7 @@ POST /users/{usersId}/wipeManagedAppRegistrationsByDeviceTag
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |deviceTag|String|设备标记|
 

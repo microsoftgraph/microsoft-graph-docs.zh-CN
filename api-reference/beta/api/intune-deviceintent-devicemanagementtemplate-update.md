@@ -2,15 +2,15 @@
 title: 更新 deviceManagementTemplate
 description: 更新 deviceManagementTemplate 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1a4aeb8e88d6c081e75c75898f32b1e39a27c4db
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 746406b352a4498eafad872c115f0542ccfaaefc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784966"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59116792"
 ---
 # <a name="update-devicemanagementtemplate"></a>更新 deviceManagementTemplate
 
@@ -44,7 +44,7 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{dev
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,9 +54,9 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{dev
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|模板 ID|
+|id|String|模板 ID|
 |displayName|String|模板的显示名称|
-|description|字符串|模板的说明|
+|说明|String|模板的说明|
 |versionInfo|String|模板的版本信息|
 |isDeprecated|Boolean|模板是否被弃用。 无法从已弃用模板创建意图。|
 |intentCount|Int32|从此模板创建的意图数。|

@@ -2,15 +2,15 @@
 title: androidForWorkSettings 资源类型
 description: Android for Work 设置。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 18c881a18fd39c4775fab6ea4883a2de1de11901
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 66027cb930f4fc7933426d484d318af4c1493e95
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801877"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59106740"
 ---
 # <a name="androidforworksettings-resource-type"></a>androidForWorkSettings 资源类型
 
@@ -35,14 +35,14 @@ Android for Work 设置。
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|Android for Work 设置标识符|
-|bindStatus|[androidForWorkBindStatus](../resources/intune-androidforwork-androidforworkbindstatus.md)|使用 Google EMM API 绑定租户的状态。 可能的值是：`notBound`、`bound`、`boundAndValidated`、`unbinding`。|
+|id|String|Android for Work 设置标识符|
+|bindStatus|[androidForWorkBindStatus](../resources/intune-androidforwork-androidforworkbindstatus.md)|使用 Google EMM API 绑定租户的状态。 可取值为：`notBound`、`bound`、`boundAndValidated`、`unbinding`。|
 |lastAppSyncDateTime|DateTimeOffset|应用同步的上次完成时间|
 |lastAppSyncStatus|[androidForWorkSyncStatus](../resources/intune-androidforwork-androidforworksyncstatus.md)|上次应用程序同步结果。 可取值为：`success`、`credentialsNotValid`、`androidForWorkApiError`、`managementServiceError`、`unknownError`、`none`。|
 |ownerUserPrincipalName|String|创建了企业的所有者 UPN|
 |ownerOrganizationName|String|载入 Android for Work 时使用的组织名称|
 |lastModifiedDateTime|DateTimeOffset|Android for Work 设置的上次修改时间|
-|enrollmentTarget|[androidForWorkEnrollmentTarget](../resources/intune-androidforwork-androidforworkenrollmenttarget.md)|指示哪些用户可以在 Android for Work 设备管理中注册设备。 可能的值是：`none`、`all`、`targeted`、`targetedAsEnrollmentRestrictions`。|
+|enrollmentTarget|[androidForWorkEnrollmentTarget](../resources/intune-androidforwork-androidforworkenrollmenttarget.md)|指示哪些用户可以在 Android for Work 设备管理中注册设备。 可取值为：`none`、`all`、`targeted`、`targetedAsEnrollmentRestrictions`。|
 |targetGroupIds|String collection|指定当 enrollmentTarget 设置为“定向”时可以在 Android for Work 设备管理中注册设备的 AAD 组。|
 |deviceOwnerManagementEnabled|Boolean|指示此帐户是否正在通过 CloudDPC 对 Android 设备所有者管理进行测试。|
 

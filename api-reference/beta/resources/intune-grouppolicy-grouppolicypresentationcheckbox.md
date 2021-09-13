@@ -2,15 +2,15 @@
 title: groupPolicyPresentationCheckBox 资源类型
 description: 表示 ADMX checkBox 元素和 ADMX 布尔元素。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7d7b9124a58b9a740c6fbb2c9324d77d285740f2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b9afa92ae390e26f3198c48df9b60e09facbbf10
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795835"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086090"
 ---
 # <a name="grouppolicypresentationcheckbox-resource-type"></a>groupPolicyPresentationCheckBox 资源类型
 

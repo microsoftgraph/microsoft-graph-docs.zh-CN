@@ -2,15 +2,15 @@
 title: 创建 deviceManagementConfigurationSettingTemplate
 description: 创建新的 deviceManagementConfigurationSettingTemplate 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fd02c432689c44357545c5800289db5bf4296842
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6abfd1f9aac733a9dbe459af130336d9303a9e5c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791373"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59122283"
 ---
 # <a name="create-devicemanagementconfigurationsettingtemplate"></a>创建 deviceManagementConfigurationSettingTemplate
 
@@ -44,7 +44,7 @@ POST /deviceManagement/configurationPolicyTemplates/{deviceManagementConfigurati
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

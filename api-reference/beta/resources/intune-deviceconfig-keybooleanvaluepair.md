@@ -2,15 +2,15 @@
 title: keyBooleanValuePair 资源类型
 description: 具有字符串键和布尔值的键值对。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d9d388325948c13e382fb974e1c3f01191ef889a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 83356609441b8fe25b1e6b3715a171997f577312
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58821772"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127211"
 ---
 # <a name="keybooleanvaluepair-resource-type"></a>keyBooleanValuePair 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "58821772"
 继承自 [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |Key|String|键值对的字符串键。 继承自 [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)|
 |value|Boolean|键值对的布尔值。|

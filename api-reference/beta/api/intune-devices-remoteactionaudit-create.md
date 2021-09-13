@@ -2,15 +2,15 @@
 title: 创建 remoteActionAudit
 description: 创建新的 remoteActionAudit 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b8a33ecae3ac6b06bbbbac8c9674b2f072278510
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2fa77f1d1f2c2efc320c6872f4680b26d307ceff
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795702"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59102869"
 ---
 # <a name="create-remoteactionaudit"></a>创建 remoteActionAudit
 
@@ -43,7 +43,7 @@ POST /deviceManagement/remoteActionAudits
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -56,13 +56,13 @@ POST /deviceManagement/remoteActionAudits
 |id|String|报告 ID。|
 |deviceDisplayName|String|Intune 设备名称。|
 |userName|String|\[已弃用 \] 请改为使用 InitiatedByUserPrincipalName。|
-|initiatedByUserPrincipalName|字符串|启动设备操作的用户，格式为 UPN。|
+|initiatedByUserPrincipalName|String|启动设备操作的用户，格式为 UPN。|
 |action|[remoteAction](../resources/intune-devices-remoteaction.md)|操作名称。 可能的值是 `unknown` `factoryReset` ：、、、、、、、、、、。 `removeCompanyData` `resetPasscode` `remoteLock` `enableLostMode` `disableLostMode` `locateDevice` `rebootNow` `recoverPasscode` `cleanWindowsDevice` `logoutSharedAppleDeviceActiveUser` `quickScan` `fullScan` `windowsDefenderUpdateSignatures` `factoryResetKeepEnrollmentData` `updateDeviceAccount` `automaticRedeployment` `shutDown` `rotateBitLockerKeys` `rotateFileVaultKey` `getFileVaultKey` `setDeviceName` `activateDeviceEsim`|
 |requestDateTime|DateTimeOffset|发出操作的时间（以 UTC 表示）。|
 |deviceOwnerUserPrincipalName|String|设备所有者的 Upn。|
 |deviceIMEI|String|设备的 IMEI。|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|操作状态。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed` 或 `notSupported`。|
-|managedDeviceId|字符串|操作目标。|
+|managedDeviceId|String|操作目标。|
 
 
 

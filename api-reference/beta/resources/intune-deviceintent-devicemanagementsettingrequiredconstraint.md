@@ -2,15 +2,15 @@
 title: deviceManagementSettingRequiredConstraint 资源类型
 description: 强制未配置空/未定义/空字符串的特定必需设置的约束
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a8df835b185da3d2355907e753f14ed036442210
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7c5dbded2aa06abcbfaaba622408c304c32daed7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801477"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59148373"
 ---
 # <a name="devicemanagementsettingrequiredconstraint-resource-type"></a>deviceManagementSettingRequiredConstraint 资源类型
 

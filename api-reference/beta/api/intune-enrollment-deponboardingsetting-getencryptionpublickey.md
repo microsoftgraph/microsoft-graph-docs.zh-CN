@@ -2,15 +2,15 @@
 title: getEncryptionPublicKey 函数
 description: 获取公钥以用于加密 Apple 设备注册计划令牌
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d7f7990eda281072d143108190c22a93082582bb
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 300a9857579e06c387cdb10bfd23f7e0950e5a74
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796717"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59132846"
 ---
 # <a name="getencryptionpublickey-function"></a>getEncryptionPublicKey 函数
 
@@ -43,7 +43,7 @@ GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/getEncrypti
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

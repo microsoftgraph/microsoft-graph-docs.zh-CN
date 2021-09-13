@@ -2,15 +2,15 @@
 title: vpnProviderType 枚举类型
 description: 每个应用 VPN 的提供程序类型。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 180cd0ad739f67520e16945cf2e135a5c9ad88c4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ea1443948fd043ee5d2a5fe6e1d68c6469cddfc2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819715"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59101343"
 ---
 # <a name="vpnprovidertype-enum-type"></a>vpnProviderType 枚举类型
 
@@ -23,10 +23,10 @@ ms.locfileid: "58819715"
 每个应用 VPN 的提供程序类型。
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|Tunnel未显式配置流量。|
-|appProxy|1|Tunnel层的流量。|
+|appProxy|1|Tunnel应用程序层的流量。|
 |packetTunnel|2|Tunnel IP 层的流量。|
 
 

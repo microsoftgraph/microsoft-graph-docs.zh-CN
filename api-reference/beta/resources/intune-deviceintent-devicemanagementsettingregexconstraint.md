@@ -2,15 +2,15 @@
 title: deviceManagementSettingRegexConstraint 资源类型
 description: 强制设置与给定 RegEx 模式匹配的约束
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ee141de5e36e16ee490ee1c9e46f78182ab50224
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e548037fffc5839a097a793ec8ab6c833c344cee
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801484"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59115357"
 ---
 # <a name="devicemanagementsettingregexconstraint-resource-type"></a>deviceManagementSettingRegexConstraint 资源类型
 

@@ -2,15 +2,15 @@
 title: assignResourceAccountToDevice 操作
 description: 将资源帐户分配给 Autopilot 设备。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5b7cd2135cce2be24968b4bc05dc040606e433af
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8df238df745777ddb2c54b870bc999ecc176f993
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803621"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59132761"
 ---
 # <a name="assignresourceaccounttodevice-action"></a>assignResourceAccountToDevice 操作
 
@@ -44,7 +44,7 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -2,15 +2,15 @@
 title: 删除 payloadCompatibleAssignmentFilter
 description: 删除 payloadCompatibleAssignmentFilter。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 73f136301ec403164a4da1b25dd2d832afe1f446
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 34487454a101fe366e7349a5626531eb9d86d1bb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785491"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59107608"
 ---
 # <a name="delete-payloadcompatibleassignmentfilter"></a>删除 payloadCompatibleAssignmentFilter
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/assignmentFilters/{deviceAndAppManagementAssignmentFilt
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

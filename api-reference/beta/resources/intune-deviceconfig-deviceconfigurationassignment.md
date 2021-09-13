@@ -2,15 +2,15 @@
 title: deviceConfigurationAssignment 资源类型
 description: 设备配置分配实体将 AAD 组分配到特定设备配置。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 73bc123c0120537c45aeaaea8173964358627341
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 00eadc21655f9f10534a4b11cfc87a1e795a747f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58814684"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59101588"
 ---
 # <a name="deviceconfigurationassignment-resource-type"></a>deviceConfigurationAssignment 资源类型
 
@@ -37,7 +37,7 @@ ms.locfileid: "58814684"
 |id|String|分配的键。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|设备配置的分配目标。|
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|设备配置的分配源，直接或直接/策略集。 此属性是只读的。 可取值为：`direct`、`policySets`。|
-|sourceId|字符串|工作分配的源的标识符。 此属性是只读的。|
+|sourceId|String|工作分配的源的标识符。 此属性是只读的。|
 
 ## <a name="relationships"></a>关系
 无

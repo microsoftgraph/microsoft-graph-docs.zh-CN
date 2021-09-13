@@ -2,15 +2,15 @@
 title: keyTypedValuePair 资源类型
 description: 带字符串键和键入值的键值对。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 658cc2987b2ee27ea8ac2bf014c3e8d9b27d6d75
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2a6c00baed865c5278c6ada6d519c2aae09aace6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795870"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127183"
 ---
 # <a name="keytypedvaluepair-resource-type"></a>keyTypedValuePair 资源类型
 

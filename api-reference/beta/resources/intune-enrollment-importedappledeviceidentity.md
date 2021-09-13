@@ -2,15 +2,15 @@
 title: importedAppleDeviceIdentity 资源类型
 description: importedAppleDeviceIdentity 资源表示 Apple 设备的导入设备标识。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3f70ab03b99e9dbe7a0ebe75920f3670ee6e2ae4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f0e66ebabdfd4466d187778313644c83e5dfb542
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58817066"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59141072"
 ---
 # <a name="importedappledeviceidentity-resource-type"></a>importedAppleDeviceIdentity 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58817066"
 importedAppleDeviceIdentity 资源表示 Apple 设备的导入设备标识。
 
 ## <a name="methods"></a>方法
-|方法|返回类型|Description|
+|方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 importedAppleDeviceIdentities](../api/intune-enrollment-importedappledeviceidentity-list.md)|[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md) 集合|列出 [importedAppleDeviceIdentity 对象的属性和](../resources/intune-enrollment-importedappledeviceidentity.md) 关系。|
 |[获取 importedAppleDeviceIdentity](../api/intune-enrollment-importedappledeviceidentity-get.md)|[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|读取 [importedAppleDeviceIdentity 对象的属性和](../resources/intune-enrollment-importedappledeviceidentity.md) 关系。|
@@ -41,10 +41,10 @@ importedAppleDeviceIdentity 资源表示 Apple 设备的导入设备标识。
 |requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|向设备分配注册配置文件的时间|
 |isSupervised|Boolean|指示 Apple 设备是否受监督。 有关详细信息，请参阅： https://support.apple.com/en-us/HT202837|
 |discoverySource|[discoverySource](../resources/intune-enrollment-discoverysource.md)|Apple 设备发现源。 可取值为：`unknown`、`adminImport`、`deviceEnrollmentProgram`。|
-|isDeleted|布尔值|指示设备是否从 Apple Business Manager 中删除|
+|isDeleted|Boolean|指示设备是否从 Apple Business Manager 中删除|
 |createdDateTime|DateTimeOffset|设备的创建日期时间|
 |lastContactedDateTime|DateTimeOffset|设备的上次联系日期时间|
-|description|字符串|设备说明|
+|说明|String|设备说明|
 |enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Intune 中的设备状态。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
 |平台|[平台](../resources/intune-enrollment-platform.md)|设备平台。 可取值为：`unknown`、`ios`、`android`、`windows`、`windowsMobile`、`macOS`。|
 

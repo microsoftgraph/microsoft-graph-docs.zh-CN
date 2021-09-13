@@ -2,15 +2,15 @@
 title: automaticUpdateMode 枚举类型
 description: 自动更新模式的可能值。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d1a3aa7050342d370f8bc5b575303b2f036a71d9
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 510b28d926a70f0777ba559d9062e88de4099b11
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820462"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59146749"
 ---
 # <a name="automaticupdatemode-enum-type"></a>automaticUpdateMode 枚举类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58820462"
 自动更新模式的可能值。
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |userDefined|0|用户定义，默认值，无意图。|
 |notifyDownload|1|下载时通知。|

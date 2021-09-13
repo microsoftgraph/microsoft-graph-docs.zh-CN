@@ -2,15 +2,15 @@
 title: deviceComplianceDeviceStatus 资源类型
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 241f1cd27569a214493e70adb591018d0f9d08d4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: fa0b1fb9588510da2a7db126b097510a6fb8192a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790666"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086881"
 ---
 # <a name="devicecompliancedevicestatus-resource-type"></a>deviceComplianceDeviceStatus 资源类型
 

@@ -2,15 +2,15 @@
 title: 获取 complianceManagementPartner
 description: 读取 complianceManagementPartner 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0d89eee02aa77ec4e119bc78b38c8eb119573dcf
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 40efb7440ca02cfe17d24ae8db6f8ef32354844a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789746"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59096807"
 ---
 # <a name="get-compliancemanagementpartner"></a>获取 complianceManagementPartner
 
@@ -46,7 +46,7 @@ GET /deviceManagement/complianceManagementPartners/{complianceManagementPartnerI
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

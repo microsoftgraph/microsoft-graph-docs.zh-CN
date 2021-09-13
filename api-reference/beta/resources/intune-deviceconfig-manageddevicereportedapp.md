@@ -2,15 +2,15 @@
 title: managedDeviceReportedApp 资源类型
 description: 用于报告的应用程序数据
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: dfa6782d36b18c70b0816f8d96ab6db627c9919f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c3ce73cc54f21b6eab7a0ede8aca95ef2c767076
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818271"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086776"
 ---
 # <a name="manageddevicereportedapp-resource-type"></a>managedDeviceReportedApp 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58818271"
 用于报告的应用程序数据
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |appId|String|应用程序或应用程序的捆绑标识符|
 

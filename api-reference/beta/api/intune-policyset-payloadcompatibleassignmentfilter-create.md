@@ -2,15 +2,15 @@
 title: 创建 payloadCompatibleAssignmentFilter
 description: 创建新的 payloadCompatibleAssignmentFilter 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e408631a5774c36018b021aae2159833072d788b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7baa5fbb9349632e8a9d6b4fdf7300487bb176c6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785498"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59107615"
 ---
 # <a name="create-payloadcompatibleassignmentfilter"></a>创建 payloadCompatibleAssignmentFilter
 
@@ -43,7 +43,7 @@ POST /deviceManagement/assignmentFilters
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -57,7 +57,7 @@ POST /deviceManagement/assignmentFilters
 |createdDateTime|DateTimeOffset|工作分配筛选器的创建时间。 继承自 [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)|
 |lastModifiedDateTime|DateTimeOffset|工作分配筛选器的上次修改时间。 继承自 [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)|
 |displayName|String|工作分配筛选器的 DisplayName。 继承自 [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)|
-|description|字符串|工作分配筛选器的说明。 继承自 [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)|
+|说明|String|工作分配筛选器的说明。 继承自 [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)|
 |平台|[devicePlatformType](../resources/intune-policyset-deviceplatformtype.md)|工作分配筛选器适用的设备的平台类型。 继承自 [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`unknown`。|
 |rule|String|工作分配筛选器的规则定义。 继承自 [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)|
 |roleScopeTags|字符串集合|工作分配筛选器的 RoleScopeTags。 继承自 [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)|

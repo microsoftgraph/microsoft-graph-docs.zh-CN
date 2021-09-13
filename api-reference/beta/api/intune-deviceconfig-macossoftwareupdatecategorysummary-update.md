@@ -2,15 +2,15 @@
 title: 更新 macOSSoftwareUpdateCategorySummary
 description: 更新 macOSSoftwareUpdateCategorySummary 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6bda443ef5caffbec068274b5109c88f8651022c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d23d6ba472ce270ee97d073270c6a95740f9213c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816413"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59112711"
 ---
 # <a name="update-macossoftwareupdatecategorysummary"></a>更新 macOSSoftwareUpdateCategorySummary
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/macOSSoftwareUpdateAccountSummaries/{macOSSoftwareUpdate
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -57,7 +57,7 @@ PATCH /deviceManagement/macOSSoftwareUpdateAccountSummaries/{macOSSoftwareUpdate
 |displayName|String|报告的名称|
 |deviceId|String|设备 ID。|
 |userId|String|用户 ID。|
-|updateCategory|[macOSSoftwareUpdateCategory](../resources/intune-deviceconfig-macossoftwareupdatecategory.md)|软件更新类型。 可能的值是：`critical`、`configurationDataFile`、`firmware`、`other`。|
+|updateCategory|[macOSSoftwareUpdateCategory](../resources/intune-deviceconfig-macossoftwareupdatecategory.md)|软件更新类型。 可取值为：`critical`、`configurationDataFile`、`firmware`、`other`。|
 |successfulUpdateCount|Int32|设备上成功更新的数量|
 |failedUpdateCount|Int32|设备上失败的更新数|
 |totalUpdateCount|Int32|设备上的总更新数|

@@ -2,15 +2,15 @@
 title: 获取 macOSCompliancePolicy
 description: 读取 macOSCompliancePolicy 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 701a24a0ff71051b9709eaab6b545f4412cd9d6a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ff1afe310e1271dadad282b8703b3463f4716fde
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58802654"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59097703"
 ---
 # <a name="get-macoscompliancepolicy"></a>获取 macOSCompliancePolicy
 
@@ -46,7 +46,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

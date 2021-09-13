@@ -2,15 +2,15 @@
 title: createGooglePlayWebToken 操作
 description: 生成在可嵌入组件中使用的 Web 令牌。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 66dc542abcb41d9677b1f697ebfd10c42cdaf3d0
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 378f10ca6b54eb91d20977920d89546b7a6f56fa
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804475"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59103786"
 ---
 # <a name="creategoogleplaywebtoken-action"></a>createGooglePlayWebToken 操作
 
@@ -43,7 +43,7 @@ POST /deviceManagement/androidManagedStoreAccountEnterpriseSettings/createGoogle
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

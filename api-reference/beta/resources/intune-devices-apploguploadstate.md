@@ -2,15 +2,15 @@
 title: appLogUploadState 枚举类型
 description: AppLogUploadStatus
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d085351577a5ca7b21c8a42faff0e7aecde54dfe
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7d304c9d0b310d26eb7c4e83144c6fa1e8a9b1b5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790148"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086279"
 ---
 # <a name="apploguploadstate-enum-type"></a>appLogUploadState 枚举类型
 

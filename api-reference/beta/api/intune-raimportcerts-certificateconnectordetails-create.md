@@ -2,15 +2,15 @@
 title: 创建 certificateConnectorDetails
 description: 创建新的 certificateConnectorDetails 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 12333d0f2c509fe9d876a064f2ac020f174326d2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ec640219d77c991804f3ab5680c956a203df755f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820318"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59111997"
 ---
 # <a name="create-certificateconnectordetails"></a>创建 certificateConnectorDetails
 
@@ -43,7 +43,7 @@ POST /deviceManagement/certificateConnectorDetails
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,8 +53,8 @@ POST /deviceManagement/certificateConnectorDetails
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|此 ConnectorDetails 集的唯一标识符。|
-|connectorName|字符串|连接器名称 (注册期间设置的) 。|
+|id|String|此 ConnectorDetails 集的唯一标识符。|
+|connectorName|String|连接器名称 (注册期间设置的) 。|
 |machineName|String|承载此连接器服务的机器的名称。|
 |enrollmentDateTime|DateTimeOffset|注册此连接器的日期/时间。|
 |lastCheckinDateTime|DateTimeOffset|此连接器上次连接到服务的日期/时间。|

@@ -2,15 +2,15 @@
 title: comanagementEligibleDevice 资源类型
 description: 设备Co-Management资格状态
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 647554e93a790787d7acc4eb05a6e0bca5afe6d2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a198c326265195c43a331a1dd03996c0e3c3139a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806633"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59111052"
 ---
 # <a name="comanagementeligibledevice-resource-type"></a>comanagementEligibleDevice 资源类型
 
@@ -41,7 +41,7 @@ ms.locfileid: "58806633"
 |ownerType|[ownerType](../resources/intune-shared-ownertype.md)|OwnerType。 可取值为：`unknown`、`company`、`personal`。|
 |managementAgents|[managementAgentType](../resources/intune-devices-managementagenttype.md)|ManagementAgents。 可能的值是 `eas` `mdm` `easMdm` ：、、、、、、、、、、。 `intuneClient` `easIntuneClient` `configurationManagerClient` `configurationManagerClientMdm` `configurationManagerClientMdmEas` `unknown` `jamf` `googleCloudDevicePolicyController` `microsoft365ManagedMdm` `msSense` `intuneAosp`|
 |managementState|[managementState](../resources/intune-devices-managementstate.md)|ManagementState。 可取值为：`managed`、`retirePending`、`retireFailed`、`wipePending`、`wipeFailed`、`unhealthy`、`deletePending`、`retireIssued`、`wipeIssued`、`wipeCanceled`、`retireCanceled`、`discovered`。|
-|referenceId|字符串|ReferenceId|
+|referenceId|String|ReferenceId|
 |mdmStatus|String|MDMStatus|
 |osVersion|String|OSVersion|
 |serialNumber|String|序列号|
@@ -53,7 +53,7 @@ ms.locfileid: "58806633"
 |upn|String|UPN|
 |userEmail|String|UserEmail|
 |userName|String|UserName|
-|状态|[comanagementEligibleType](../resources/intune-devices-comanagementeligibletype.md)|ComanagementEligibleStatus。 可取值为：`comanaged`、`eligible`、`eligibleButNotAzureAdJoined`、`needsOsUpdate`、`ineligible`。|
+|status|[comanagementEligibleType](../resources/intune-devices-comanagementeligibletype.md)|ComanagementEligibleStatus。 可取值为：`comanaged`、`eligible`、`eligibleButNotAzureAdJoined`、`needsOsUpdate`、`ineligible`。|
 
 ## <a name="relationships"></a>关系
 无

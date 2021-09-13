@@ -2,15 +2,15 @@
 title: microsoftEdgeChannel 枚举类型
 description: 用于指定应用通道的Microsoft Edge枚举。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 69caa93aab9f5e2dacac5494f2f7f32535d3f6ec
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7e201c874994f8d4ec202a1a59b16b3364e47828
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816583"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59106691"
 ---
 # <a name="microsoftedgechannel-enum-type"></a>microsoftEdgeChannel 枚举类型
 
@@ -23,10 +23,10 @@ ms.locfileid: "58816583"
 用于指定应用通道的Microsoft Edge枚举。
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |dev|0|尚未记录|
-|beta|1|尚未记录|
+|beta 版|1|尚未记录|
 |stable|2|尚未记录|
 
 

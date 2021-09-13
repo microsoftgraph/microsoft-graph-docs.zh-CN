@@ -2,15 +2,15 @@
 title: iosVppAppAssignedDeviceLicense 资源类型
 description: iOS 批量购买计划设备许可证分配。 此类不支持创建、删除或更新。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 81714e2e61c379426ac1641a8b0d7197da713ec0
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: db224eb03499448cef30a5d89fe5a4767c1ed769
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58800079"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59101888"
 ---
 # <a name="iosvppappassigneddevicelicense-resource-type"></a>iosVppAppAssignedDeviceLicense 资源类型
 
@@ -38,11 +38,11 @@ iOS 批量购买计划设备许可证分配。 此类不支持创建、删除或
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
-|userEmailAddress|字符串|用户电子邮件地址。 继承自 [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
+|userEmailAddress|String|用户电子邮件地址。 继承自 [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
 |userId|String|用户 ID。 继承自 [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
 |userName|String|用户名。 继承自 [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
 |userPrincipalName|String|用户主体名称。 继承自 [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
-|managedDeviceId|字符串|托管设备 ID。|
+|managedDeviceId|String|托管设备 ID。|
 |deviceName|String|设备名称。|
 
 ## <a name="relationships"></a>关系

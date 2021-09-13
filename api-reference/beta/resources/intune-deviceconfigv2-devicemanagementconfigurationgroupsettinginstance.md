@@ -2,15 +2,15 @@
 title: deviceManagementConfigurationGroupSettingInstance 资源类型
 description: GroupSetting 的实例
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 64d47543139ed2ec2935e7db3b0819233653f750
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ab9eb0fa8f616f918dc6f5f9cb69282dde21d20e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58807284"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143004"
 ---
 # <a name="devicemanagementconfigurationgroupsettinginstance-resource-type"></a>deviceManagementConfigurationGroupSettingInstance 资源类型
 

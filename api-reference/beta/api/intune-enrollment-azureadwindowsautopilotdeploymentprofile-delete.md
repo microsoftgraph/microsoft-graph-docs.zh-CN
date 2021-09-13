@@ -2,15 +2,15 @@
 title: 删除 azureADWindowsAutopilotDeploymentProfile
 description: 删除 azureADWindowsAutopilotDeploymentProfile。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0eb50b3e66f90b88089786e6fc44deb95c58ece4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c72f275369e59de42fc1ee37fb23a99972aeedfd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58765209"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59107909"
 ---
 # <a name="delete-azureadwindowsautopilotdeploymentprofile"></a>删除 azureADWindowsAutopilotDeploymentProfile
 
@@ -45,7 +45,7 @@ DELETE /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevic
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

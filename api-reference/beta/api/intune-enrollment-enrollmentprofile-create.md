@@ -2,15 +2,15 @@
 title: 创建 enrollmentProfile
 description: 创建新的 enrollmentProfile 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dcc5934fcf10665aac92ac0c861134814b49d773
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: dc1eb9e169d0a890e3f0d821512c6bb168fa1c13
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795681"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59092978"
 ---
 # <a name="create-enrollmentprofile"></a>创建 enrollmentProfile
 
@@ -43,7 +43,7 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,12 +54,12 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|对象的 GUID|
-|displayName|字符串|配置文件的名称|
-|description|字符串|配置文件的说明|
+|displayName|String|配置文件的名称|
+|说明|String|配置文件的说明|
 |requiresUserAuthentication|Boolean|指示配置文件是否要求用户身份验证|
 |configurationEndpointUrl|String|用于注册的配置终结点 URL|
-|enableAuthenticationViaCompanyPortal|Boolean|指示使用 Apple Setup Assistant 而不是 公司门户。|
-|requireCompanyPortalOnSetupAssistantEnrolledDevices|布尔值|指示公司门户注册的设备上需要安装助手|
+|enableAuthenticationViaCompanyPortal|Boolean|指示使用 Apple Setup Assistant 进行身份验证，而不是公司门户。|
+|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|指示公司门户注册的设备上需要安装助手|
 
 
 

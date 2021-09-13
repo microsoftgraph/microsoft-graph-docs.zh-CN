@@ -2,15 +2,15 @@
 title: deviceManagementConfigurationIntegerSettingValueTemplate 资源类型
 description: 整数设置值模板
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8d1600fe2c4e14df083b5983d6fb42a439fc32bd
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 05b58a5c329a190733a9b4759b83054a52479b9f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818516"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59148226"
 ---
 # <a name="devicemanagementconfigurationintegersettingvaluetemplate-resource-type"></a>deviceManagementConfigurationIntegerSettingValueTemplate 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "58818516"
 继承自 [deviceManagementConfigurationSimpleSettingValueTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingvaluetemplate.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |settingValueTemplateId|String|设置值模板 ID 继承自 [deviceManagementConfigurationSimpleSettingValueTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingvaluetemplate.md)|
 |defaultValue|[deviceManagementConfigurationIntegerSettingValueDefaultTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationintegersettingvaluedefaulttemplate.md)|整数设置值默认模板。|

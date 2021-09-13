@@ -2,15 +2,15 @@
 title: macOSPrivacyAccessControlItem 资源类型
 description: 表示每个进程的隐私首选项。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 158729518b47be682e00bea9d77b8a7308c9d4b1
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 90e73831f6dd3b8163a1c0d9c11b7944c9623958
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789634"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59091711"
 ---
 # <a name="macosprivacyaccesscontrolitem-resource-type"></a>macOSPrivacyAccessControlItem 资源类型
 
@@ -25,15 +25,15 @@ ms.locfileid: "58789634"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|应用显示名称进程或可执行文件的名称。|
+|displayName|String|应用显示名称或可执行文件的名称。|
 |标识符|String|应用、进程或可执行文件的捆绑 ID 或路径。|
 |identifierType|[macOSProcessIdentifierType](../resources/intune-deviceconfig-macosprocessidentifiertype.md)|捆绑包 ID 用于标识应用。 路径用于标识进程或可执行文件。 可取值为：`bundleID`、`path`。|
 |codeRequirement|String|输入代码要求，可通过终端应用中的命令"codesign –display -r –"获取。 在"=>"之后包含所有内容。|
-|staticCodeValidation|布尔值|静态验证代码要求。 如果进程使动态代码签名失效，请使用此设置。|
+|staticCodeValidation|Boolean|静态验证代码要求。 如果进程使动态代码签名失效，请使用此设置。|
 |blockCamera|Boolean|阻止访问相机应用。|
-|blockMicrophone|布尔值|阻止访问麦克风。|
+|blockMicrophone|Boolean|阻止访问麦克风。|
 |blockScreenCapture|Boolean|阻止应用捕获系统显示的内容。 需要 macOS 10.15 或更高版本。|
-|blockListenEvent|布尔值|阻止应用或进程侦听来自输入设备（如鼠标、键盘和触控板）的事件。需要 macOS 10.15 或更高版本。|
+|blockListenEvent|Boolean|阻止应用或进程侦听来自输入设备（如鼠标、键盘和触控板）的事件。需要 macOS 10.15 或更高版本。|
 |speechRecognition|[enablement](../resources/intune-shared-enablement.md)|允许或阻止访问系统语音识别设备。 可取值为：`notConfigured`、`enabled`、`disabled`。|
 |辅助功能|[enablement](../resources/intune-shared-enablement.md)|允许应用或进程通过辅助功能子系统控制 Mac。 可取值为：`notConfigured`、`enabled`、`disabled`。|
 |addressBook|[enablement](../resources/intune-shared-enablement.md)|允许或阻止访问由联系人管理的联系人信息。 可取值为：`notConfigured`、`enabled`、`disabled`。|
