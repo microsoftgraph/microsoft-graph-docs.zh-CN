@@ -2,15 +2,15 @@
 title: 删除 iosImportedPFXCertificateProfile
 description: 删除 iosImportedPFXCertificateProfile。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1130cea45182075f5de4bdff8f4b753e1e64b2ae
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e94335456b62a44fdeec2080b38bd40feb7dbf82
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804398"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143214"
 ---
 # <a name="delete-iosimportedpfxcertificateprofile"></a>删除 iosImportedPFXCertificateProfile
 
@@ -45,7 +45,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

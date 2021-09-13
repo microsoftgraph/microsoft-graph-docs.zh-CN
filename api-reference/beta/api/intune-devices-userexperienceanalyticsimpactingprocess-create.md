@@ -2,15 +2,15 @@
 title: 创建 userExperienceAnalyticsImpactingProcess
 description: 创建新的 userExperienceAnalyticsImpactingProcess 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 84f8d54b25d9fe0be7fc921f8c20c362aa041a43
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0da159a410d7b550b535ec23875464edc557ee8f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783370"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59124915"
 ---
 # <a name="create-userexperienceanalyticsimpactingprocess"></a>创建 userExperienceAnalyticsImpactingProcess
 
@@ -43,7 +43,7 @@ POST /deviceManagement/userExperienceAnalyticsImpactingProcess
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -56,8 +56,8 @@ POST /deviceManagement/userExperienceAnalyticsImpactingProcess
 |id|String|用户体验分析影响最强的进程实体的唯一标识符。|
 |deviceId|String|受影响设备的唯一标识符。|
 |“类别”|String|影响流程的类别。|
-|processName|字符串|进程名称。|
-|description|String|过程说明。|
+|processName|String|进程名称。|
+|说明|String|过程说明。|
 |发布者|String|进程的发布者。|
 |impactValue|双精度|进程的影响值。 有效值为 0 到 1.79769313486232E+308|
 

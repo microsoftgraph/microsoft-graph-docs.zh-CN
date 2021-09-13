@@ -2,15 +2,15 @@
 title: userExperienceAnalyticsDeviceStartupProcess 资源类型
 description: 用户体验分析设备启动过程详细信息。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f41ad7b11904fdabc34182efd977e86698bf4855
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0ff11a7ed29902ebde395dbb7d3ed183d1c63915
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794432"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59125755"
 ---
 # <a name="userexperienceanalyticsdevicestartupprocess-resource-type"></a>userExperienceAnalyticsDeviceStartupProcess 资源类型
 
@@ -36,7 +36,7 @@ ms.locfileid: "58794432"
 |:---|:---|:---|
 |id|String|用户体验分析设备启动过程的唯一标识符。|
 |managedDeviceId|String|用户体验分析设备 ID。|
-|processName|字符串|用户体验分析设备启动进程名称。|
+|processName|String|用户体验分析设备启动进程名称。|
 |productName|String|用户体验分析设备启动过程产品名称。|
 |发布者|String|用户体验分析设备启动进程发布者。|
 |startupImpactInMs|Int32|用户体验分析设备启动过程影响（以毫秒为单位）。|

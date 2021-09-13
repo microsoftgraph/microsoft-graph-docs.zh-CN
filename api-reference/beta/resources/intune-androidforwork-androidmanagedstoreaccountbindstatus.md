@@ -2,15 +2,15 @@
 title: androidManagedStoreAccountBindStatus 枚举类型
 description: 使用 Google EMM API 绑定租户的状态
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f49424be314804fad90eefb22514a01c833f6715
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3dc677b3f22d183c6ccba652e095daf7bac89960
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58753335"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59106712"
 ---
 # <a name="androidmanagedstoreaccountbindstatus-enum-type"></a>androidManagedStoreAccountBindStatus 枚举类型
 

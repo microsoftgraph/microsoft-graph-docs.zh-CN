@@ -2,15 +2,15 @@
 title: managedDeviceModelsAndManufacturers 资源类型
 description: 帐户中托管设备型号和制造商的元数据
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 300fbc2dc03a4a8394449cc8a6575378feea1cc2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1b560cb95766d3216b566d33cfe00db2689c6efd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820882"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59137796"
 ---
 # <a name="manageddevicemodelsandmanufacturers-resource-type"></a>managedDeviceModelsAndManufacturers 资源类型
 
@@ -23,10 +23,10 @@ ms.locfileid: "58820882"
 帐户中托管设备型号和制造商的元数据
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
-|deviceModels|String collection|帐户中托管设备的型号列表|
-|deviceManufacturers|String collection|帐户中托管设备的制造者列表|
+|deviceModels|字符串集合|帐户中托管设备的型号列表|
+|deviceManufacturers|字符串集合|帐户中托管设备的制造者列表|
 
 ## <a name="relationships"></a>关系
 无

@@ -1,16 +1,16 @@
 ---
 title: yammerDeviceUsageUserDetail 资源类型
 description: 下面是资源的 JSON 表示形式。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: e93dde1a1cdd034461a44766df6538da663093ed5d7f4674a3688d0e847aa9f4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4a3232f87775f4e08e5296c21282e80ee2f1ee88
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54197770"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128485"
 ---
 # <a name="yammerdeviceusageuserdetail-resource-type"></a>yammerDeviceUsageUserDetail 资源类型
 
@@ -22,17 +22,17 @@ ms.locfileid: "54197770"
 | :---------------- | :------ |
 | reportRefreshDate | 日期    |
 | userPrincipalName | String  |
-| displayName       | 字符串  |
+| displayName       | String  |
 | userState         | String  |
 | stateChangeDate   | 日期    |
 | lastActivityDate  | 日期    |
-| usedWeb           | 布尔值 |
-| usedWindowsPhone  | 布尔值 |
-| usedAndroidPhone  | 布尔值 |
-| usediPhone        | 布尔值 |
-| usediPad          | 布尔值 |
-| usedOthers        | 布尔值 |
-| reportPeriod      | 字符串  |
+| usedWeb           | Boolean |
+| usedWindowsPhone  | Boolean |
+| usedAndroidPhone  | Boolean |
+| usediPhone        | Boolean |
+| usediPad          | Boolean |
+| usedOthers        | Boolean |
+| reportPeriod      | String  |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

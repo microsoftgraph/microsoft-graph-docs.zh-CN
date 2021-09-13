@@ -2,15 +2,15 @@
 title: deviceManagementConfigurationChoiceSettingValueTemplate 资源类型
 description: 选项设置值模板
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4c958598186ea73f6a0357aff200e3df08a3cbe2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 05598135e65a5e2bc5b755365fab713183f4563a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789924"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128961"
 ---
 # <a name="devicemanagementconfigurationchoicesettingvaluetemplate-resource-type"></a>deviceManagementConfigurationChoiceSettingValueTemplate 资源类型
 

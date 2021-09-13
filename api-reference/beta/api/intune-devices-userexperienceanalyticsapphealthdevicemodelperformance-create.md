@@ -2,15 +2,15 @@
 title: 创建 userExperienceAnalyticsAppHealthDeviceModelPerformance
 description: 创建新的 userExperienceAnalyticsAppHealthDeviceModelPerformance 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 87acf4fdfb3fe8680c51f8e3ea8cba95289606c7
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8b4af784a758d383359e8a5d636a81b516b3c620
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819954"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59102820"
 ---
 # <a name="create-userexperienceanalyticsapphealthdevicemodelperformance"></a>创建 userExperienceAnalyticsAppHealthDeviceModelPerformance
 
@@ -43,7 +43,7 @@ POST /deviceManagement/userExperienceAnalyticsAppHealthDeviceModelPerformance
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -59,7 +59,7 @@ POST /deviceManagement/userExperienceAnalyticsAppHealthDeviceModelPerformance
 |activeDeviceCount|Int32|型号的活动设备数。 有效值 -2147483648 2147483647|
 |meanTimeToFailureInMinutes|Int32|型号设备失败平均时间（分钟）。 有效值 -2147483648 2147483647|
 |modelAppHealthScore|双精度|设备型号的应用运行状况分数。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
-|modelAppHealthStatus|字符串|设备模型的总体应用运行状况状态。|
+|modelAppHealthStatus|String|设备模型的总体应用运行状况状态。|
 
 
 

@@ -2,15 +2,15 @@
 title: vpnOnDemandRule 资源类型
 description: VPN 按需规则定义。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4bcf5b6331777600bb847dc2aad4a921c2745702
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: cd9999ee2fdae94c21848535e39dc93f88949839
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58815097"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59146098"
 ---
 # <a name="vpnondemandrule-resource-type"></a>vpnOnDemandRule 资源类型
 
@@ -25,13 +25,13 @@ VPN 按需规则定义。
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|ssids|String collection|网络服务集标识符 (SSID) 。|
-|dnsSearchDomains|String collection|DNS 搜索域。|
-|probeUrl|String|探测器的 URL。 如果成功获取此 URL， (不重定向) 200 HTTP 状态代码，则此规则匹配。|
-|action|[vpnOnDemandRuleConnectionAction](../resources/intune-deviceconfig-vpnondemandruleconnectionaction.md)|操作。 可能的值是：`connect`、`evaluateConnection`、`ignore`、`disconnect`。|
-|domainAction|[vpnOnDemandRuleConnectionDomainAction](../resources/intune-deviceconfig-vpnondemandruleconnectiondomainaction.md)|域操作 (操作仅在 Action 评估连接连接) 。 可取值为：`connectIfNeeded`、`neverConnect`。|
-|domains|String collection|域 (仅在 Action 评估连接连接) 。|
-|probeRequiredUrl|String|探测器所需的 URL (仅在 Action 评估连接和 DomainAction 连接（如果需要）) 。|
+|ssids|字符串集合|网络服务集标识符 (SSID) 。|
+|dnsSearchDomains|字符串集合|DNS 搜索域。|
+|probeUrl|String|探测器的 URL。 如果成功获取此 URL， (200 HTTP 状态代码，) 重定向，则此规则匹配。|
+|action|[vpnOnDemandRuleConnectionAction](../resources/intune-deviceconfig-vpnondemandruleconnectionaction.md)|操作。 可取值为：`connect`、`evaluateConnection`、`ignore`、`disconnect`。|
+|domainAction|[vpnOnDemandRuleConnectionDomainAction](../resources/intune-deviceconfig-vpnondemandruleconnectiondomainaction.md)|域操作 (操作仅在操作评估连接) 。 可取值为：`connectIfNeeded`、`neverConnect`。|
+|domains|字符串集合|域 (仅在 Action 评估连接连接) 。|
+|probeRequiredUrl|String|Probe 所需的 URL (仅在 Action 评估连接和 DomainAction 连接（如果需要）) 。|
 
 ## <a name="relationships"></a>关系
 无

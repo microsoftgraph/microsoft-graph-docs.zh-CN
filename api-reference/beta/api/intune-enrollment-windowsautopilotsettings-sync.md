@@ -2,15 +2,15 @@
 title: sync 操作
 description: 从适用于企业应用商店和其他门户启动所有 AutoPilot 注册设备的同步。 如果同步成功，此操作将返回"204 无内容"响应代码。 如果同步正在进行，则此操作将返回 409 冲突响应代码。  如果在上一个同步的 10 分钟内调用此同步操作，则此操作将返回 429"请求过多"响应代码。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 01110f48e0756314a0b2df7f746f4d1c0730a958
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: cade3062ebcf881d830da458a6883b3ba9fefe6f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803880"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59124845"
 ---
 # <a name="sync-action"></a>sync 操作
 
@@ -43,7 +43,7 @@ POST /deviceManagement/windowsAutopilotSettings/sync
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -2,15 +2,15 @@
 title: keyRealValuePair 资源类型
 description: 键值对，包含字符串键和 (浮点) 值。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4b8ea78eadd397475a3f0c93b043f4d8d69cc559
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ca37d63a8a81a9d66e85890c7ed13b82f30cae15
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791177"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127204"
 ---
 # <a name="keyrealvaluepair-resource-type"></a>keyRealValuePair 资源类型
 
@@ -29,7 +29,7 @@ ms.locfileid: "58791177"
 |属性|类型|说明|
 |:---|:---|:---|
 |Key|String|键值对的字符串键。 继承自 [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)|
-|值|双精度|实数 (键值) 值对的浮点值。|
+|值|双精度|键 (对) 浮点值的实际值。|
 
 ## <a name="relationships"></a>关系
 无

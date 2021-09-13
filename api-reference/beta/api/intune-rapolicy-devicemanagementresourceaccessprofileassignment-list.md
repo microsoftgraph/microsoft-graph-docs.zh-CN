@@ -2,15 +2,15 @@
 title: 列出 deviceManagementResourceAccessProfileAssignments
 description: 列出 deviceManagementResourceAccessProfileAssignment 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 24e314a7af6f144ef938d199e0e96ef6d72dd478
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 501123d0aaeecc6baf4c6156e72129aee9950b09
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820735"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59135519"
 ---
 # <a name="list-devicemanagementresourceaccessprofileassignments"></a>列出 deviceManagementResourceAccessProfileAssignments
 
@@ -43,7 +43,7 @@ GET /deviceManagement/resourceAccessProfiles/{deviceManagementResourceAccessProf
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

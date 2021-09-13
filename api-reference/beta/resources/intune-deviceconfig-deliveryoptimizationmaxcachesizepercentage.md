@@ -2,15 +2,15 @@
 title: deliveryOptimizationMaxCacheSizePercentage 资源类型
 description: 传递优化 最大缓存大小百分比类型。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6888ade3fab8eea10698edee553bf178dbc22841
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: fb05fa4f38e6920d56862082d86b1d920d2bdcc7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58771209"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147939"
 ---
 # <a name="deliveryoptimizationmaxcachesizepercentage-resource-type"></a>deliveryOptimizationMaxCacheSizePercentage 资源类型
 

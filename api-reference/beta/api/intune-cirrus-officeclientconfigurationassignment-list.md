@@ -1,16 +1,16 @@
 ---
 title: 列出 officeClientConfigurationAssignments
 description: 列出 officeClientConfigurationAssignment 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dougeby
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2de9a38686f65c77b96b60cc4ba72248679e3f85
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 70a0acc67aa0e8682817d1f0145a63954ad1d660
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819035"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59133798"
 ---
 # <a name="list-officeclientconfigurationassignments"></a>列出 officeClientConfigurationAssignments
 
@@ -43,7 +43,7 @@ GET /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/assi
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

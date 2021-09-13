@@ -2,15 +2,15 @@
 title: deliveryOptimizationBandwidthPercentage 资源类型
 description: 指定为百分比的带宽限制。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8f1aab20ff6bbb7ab4e353e6d82fd2b19dd62281
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: cd7efc4fdcee3a827239f368a5854ee7965a4e2d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820455"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147960"
 ---
 # <a name="deliveryoptimizationbandwidthpercentage-resource-type"></a>deliveryOptimizationBandwidthPercentage 资源类型
 
@@ -26,12 +26,12 @@ ms.locfileid: "58820455"
 继承自 [deliveryOptimizationBandwidth](../resources/intune-deviceconfig-deliveryoptimizationbandwidth.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
-|maximumBackgroundBandwidthPercentage|Int32|指定传递优化在所有并发下载活动中使用的最大后台下载带宽，以 0-100 (下载带宽的百分比) 。 有效值为 0 至 100
-默认值 0 (零) 意味着传递优化动态调整以使用可用带宽进行后台下载。 有效值为 0 至 100|
-|maximumForegroundBandwidthPercentage|Int32|指定传递优化在所有并发下载活动中使用的最大前台下载带宽，以 0-100 (下载带宽的百分比) 。 有效值为 0 至 100
-默认值 0 (零) 表示传递优化动态调整以使用前台下载的可用带宽。 有效值为 0 至 100|
+|maximumBackgroundBandwidthPercentage|Int32|指定传递优化在所有并发下载活动中使用的最大后台下载带宽，以 0-100 (可用下载带宽的百分比) 。 有效值为 0 至 100
+默认值 0 (零) 表示传递优化动态调整以使用可用带宽进行后台下载。 有效值为 0 至 100|
+|maximumForegroundBandwidthPercentage|Int32|指定传递优化在所有并发下载活动中使用的最大前台下载带宽，以 0-100 (0-100) 。 有效值为 0 至 100
+默认值 0 (零) 意味着传递优化动态调整以使用前台下载的可用带宽。 有效值为 0 至 100|
 
 ## <a name="relationships"></a>关系
 无

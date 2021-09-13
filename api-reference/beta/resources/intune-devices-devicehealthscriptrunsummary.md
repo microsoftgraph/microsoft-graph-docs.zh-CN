@@ -2,15 +2,15 @@
 title: deviceHealthScriptRunSummary 资源类型
 description: 包含设备管理脚本的运行摘要的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 511c953f9c2d9ca9f126d433eb7477fc816759e0
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3c8e001772e886d1d9d5fa0835d8ace5e30c560e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806220"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59124131"
 ---
 # <a name="devicehealthscriptrunsummary-resource-type"></a>deviceHealthScriptRunSummary 资源类型
 

@@ -2,15 +2,15 @@
 title: 更新 deviceManagementCachedReportConfiguration
 description: 更新 deviceManagementCachedReportConfiguration 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f73f0de4ce12332f204f3742a94918d92ee8c712
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e91a43b87bd35930caf92f383f1e406976d82623
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58802549"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59138650"
 ---
 # <a name="update-devicemanagementcachedreportconfiguration"></a>更新 deviceManagementCachedReportConfiguration
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/reports/cachedReportConfigurations/{deviceManagementCach
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,12 +54,12 @@ PATCH /deviceManagement/reports/cachedReportConfigurations/{deviceManagementCach
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|此实体的唯一标识符|
-|reportName|字符串|报告的名称|
-|filter|字符串|创建报表时应用的筛选器。|
+|reportName|String|报告的名称|
+|filter|String|创建报表时应用的筛选器。|
 |select|字符串集合|从报表选择的列|
 |orderBy|字符串集合|报告中列的排序|
 |metadata|String|与报告关联的呼叫者管理的元数据|
-|状态|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|缓存报表的状态。 可取值为：`unknown`、`notStarted`、`inProgress`、`completed`、`failed`。|
+|status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|缓存报表的状态。 可取值为：`unknown`、`notStarted`、`inProgress`、`completed`、`failed`。|
 |lastRefreshDateTime|DateTimeOffset|上次刷新缓存报告的时间|
 |expirationDateTime|DateTimeOffset|缓存报告的过期时间|
 

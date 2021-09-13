@@ -2,22 +2,22 @@
 title: 创建责任
 description: 创建新的责任对象。
 author: kevinbellinger
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 086bc8af800c70a9282a04606f82818a135d65de
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 4202dbcfd268ac7e77a1d6e02865b0ed4a4b2774
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440955"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59141408"
 ---
 # <a name="create-personresponsibility"></a>创建 personResponsibility
 命名空间：microsoft.graph
 
-在用户配置文件中创建新的 [personResponsibility](../resources/personresponsibility.md) [对象](../resources/profile.md)。
+在用户配置文件 [中创建新的 personResponsibility](../resources/personresponsibility.md) [对象](../resources/profile.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -52,16 +52,16 @@ POST /users/{id | userPrincipalName}/responsibilities
 |属性|类型|说明|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|collaborationTags|字符串集合|包含用户与兴趣相关联的体验方案标记。 集合中允许的值是： `askMeAbout` ， `ableToMentor` ， `wantsToLearn` `wantsToImprove` 。|
+|collaborationTags|字符串集合|包含用户与兴趣相关联的体验方案标记。 集合中允许的值为 `askMeAbout` `ableToMentor` ：、、、。 `wantsToLearn` `wantsToImprove`|
 |说明|String|责任说明。|
-|displayName|String|包含责任的友好名称。 |
-|推断|[inferenceData](../resources/inferencedata.md)|包含实体是否由创建或修改应用程序推断的推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|displayName|String|包含该责任的友好名称。 |
+|inference|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断出来的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |source|[personDataSource](../resources/persondatasource.md)|如果从另一个服务同步，则值源自何处。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|WebUrl|String|包含指向有关该责任的网页或资源的链接。|
+|WebUrl|String|包含指向有关责任的网页或资源的链接。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `201 Created` [personResponsibility](../resources/personannotation.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [personResponsibility](../resources/personannotation.md) 对象。
 
 ## <a name="examples"></a>示例
 

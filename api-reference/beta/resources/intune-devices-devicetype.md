@@ -2,15 +2,15 @@
 title: deviceType 枚举类型
 description: 设备类型。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b0745f21f35e889f9ea035bd41fb1254ec69c0a3
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9721fa0001fd388fb885d7cf150022027cf9b4f1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818980"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59125839"
 ---
 # <a name="devicetype-enum-type"></a>deviceType 枚举类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58818980"
 设备类型。
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |desktop|0|桌面。|
 |windowsRT|1|WindowsRT。|
@@ -36,11 +36,11 @@ ms.locfileid: "58818980"
 |iPhone|8 |iPhone。|
 |iPad|9 |iPad。|
 |iPod|10 |iPodTouch。|
-|android|11 |Android。|
+|android|11|Android。|
 |iSocConsumer|12 |iSocConsumer。|
 |unix|13|Unix。|
 |macMDM|14 |使用内置 MDM 代理的 Mac OS X 客户端。|
-|holoLens|15 |表示奇特Windows 10式切换。|
+|holoLens|15 |代表奇特Windows 10式切换。|
 |surfaceHub|16 |Surface HUB 设备。|
 |androidForWork|17 |Android for work 设备。|
 |androidEnterprise|18 |Android 企业设备。|

@@ -1,16 +1,16 @@
 ---
 title: fileHash 资源类型
 description: 包含有关加密和位置 (文件哈希的有状态) 。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: 27b076a449e97d194262cb67393f25ebd9ef512d09c3d9fb41639cd18c7012ce
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e9ccd1839e7d73ed430e4de77b431a307ec5b089
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54224927"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59141219"
 ---
 # <a name="filehash-resource-type"></a>fileHash 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "54224927"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |hashType|[fileHashType](filehashtypeenumtype.md) 枚举|文件哈希类型。 可取值为：`unknown`、`sha1`、`sha256`、`md5`、`authenticodeHash256`、`lsHash`、`ctph`、`peSha1`、`peSha256`。|
-|hashValue|字符串|文件哈希的值。|
+|hashValue|String|文件哈希的值。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

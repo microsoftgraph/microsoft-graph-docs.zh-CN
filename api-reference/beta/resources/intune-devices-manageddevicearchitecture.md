@@ -2,15 +2,15 @@
 title: managedDeviceArchitecture 枚举类型
 description: 处理器体系结构
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 56c89ae8f087585b1314c8305378f3553f7a9038
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2c1e14db997a3c675c00e91b3996439c792cf8a2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796206"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59137831"
 ---
 # <a name="manageddevicearchitecture-enum-type"></a>managedDeviceArchitecture 枚举类型
 

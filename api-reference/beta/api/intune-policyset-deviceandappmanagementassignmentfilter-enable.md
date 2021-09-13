@@ -2,15 +2,15 @@
 title: 启用操作
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 71faf82d05c1fb8e0f5e462e622277c8dad40a9a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2b1a4c7feccbff2fe63d82c5f36a98fee1ef9022
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58772938"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59124601"
 ---
 # <a name="enable-action"></a>启用操作
 
@@ -43,7 +43,7 @@ POST /deviceManagement/assignmentFilters/enable
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,7 +51,7 @@ POST /deviceManagement/assignmentFilters/enable
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |enable|Boolean|尚未记录|
 

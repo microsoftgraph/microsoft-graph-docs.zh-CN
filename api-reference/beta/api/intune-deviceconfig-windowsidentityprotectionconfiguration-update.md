@@ -2,15 +2,15 @@
 title: 更新 windowsIdentityProtectionConfiguration
 description: 更新 windowsIdentityProtectionConfiguration 对象的属性。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ea9f6d879cab6bcb3673e68327ab91181457f9de
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7d94c08b5c46ec4c04496d2ac650cfdc3d2d12a2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796388"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59133294"
 ---
 # <a name="update-windowsidentityprotectionconfiguration"></a>更新 windowsIdentityProtectionConfiguration
 
@@ -45,7 +45,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -63,20 +63,20 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|字符串|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |useSecurityKeyForSignin|Boolean|用于启用安全密钥作为Windows Hello凭据的布尔值。|
 |enhancedAntiSpoofingForFacialFeaturesEnabled|Boolean|用于启用增强的反欺骗的布尔值，用于在面部身份验证上识别面部Windows Hello特征。|
 |pinMinimumLength|Int32|整数值，用于设置企业 PIN Windows Hello所需的最少字符数。 有效值为 4 到 127（含 4 和 127）以及小于或等于为最大 PIN 设置的值。 有效值为 4 至 127|
 |pinMaximumLength|Int32|用于设置工作 PIN 允许的最大字符数的整数值。 有效值为 4 到 127（含 4 和 127）并且大于或等于为最小 PIN 设置的值。 有效值为 4 至 127|
-|pinUppercaseCharactersUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|此值配置企业 PIN 中大写Windows Hello的使用。 可能的值是：`blocked`、`required`、`allowed`、`notConfigured`。|
-|pinLowercaseCharactersUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|此值配置企业 PIN 中小写Windows Hello的使用。 可能的值是：`blocked`、`required`、`allowed`、`notConfigured`。|
-|pinSpecialCharactersUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|控制在适用于企业 PIN 的 Windows Hello 中使用特殊字符的能力。 可能的值是：`blocked`、`required`、`allowed`、`notConfigured`。|
+|pinUppercaseCharactersUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|此值配置企业 PIN 中大写Windows Hello的使用。 可取值为：`blocked`、`required`、`allowed`、`notConfigured`。|
+|pinLowercaseCharactersUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|此值配置企业 PIN 中小Windows Hello字符的使用。 可取值为：`blocked`、`required`、`allowed`、`notConfigured`。|
+|pinSpecialCharactersUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|控制在适用于企业 PIN 的 Windows Hello 中使用特殊字符的能力。 可取值为：`blocked`、`required`、`allowed`、`notConfigured`。|
 |pinExpirationInDays|Int32|Integer 值指定在系统 (PIN) 之前可以使用 PIN 的时间段（以天为单位）。 有效值为 0 到 730（含 0 和 730）。 有效值为 0 至 730|
 |pinPreviousBlockCount|Int32|控制阻止用户使用过去 PIN 的能力。 这必须在 0 和 50 之间（包含 0 和 50）进行设置，并且用户的当前 PIN 包含在该计数中。 如果设置为 0，则不存储以前的 PIN。 PIN 历史记录不会通过 PIN 重置保留。 有效值为 0 至 50|
-|pinRecoveryEnabled|Boolean|允许用户使用适用于 Business PIN 恢复服务的 Windows Hello更改其 PIN 的布尔值。|
-|securityDeviceRequired|Boolean|控制是否需要受信任的平台模块 (TPM) 来预配适用于Windows Hello模块。 TPM 提供了额外的安全优势，因为存储在 TPM 上的数据不能用于其他设备。 如果设置为 False，则所有设备都可以预配 Windows Hello For Business，即使不存在可用 TPM。|
+|pinRecoveryEnabled|Boolean|允许用户使用 Windows Hello FOR Business PIN 恢复服务更改其 PIN 的布尔值。|
+|securityDeviceRequired|Boolean|控制是否需要受信任的平台模块 (TPM) 来预配 Windows Hello for Business。 TPM 提供了额外的安全优势，因为存储在 TPM 上的数据不能用于其他设备。 如果设置为 False，则所有设备都可以预配Windows Hello，即使不存在可用 TPM。|
 |unlockWithBiometricsEnabled|Boolean|控制使用生物识别手势（如人脸和指纹）作为适用于Windows Hello PIN 的替代方法。  如果设置为 False，则不允许生物识别手势。 用户仍必须将 PIN 配置为备份，以防发生故障。|
 |useCertificatesForOnPremisesAuthEnabled|Boolean|使企业Windows Hello使用证书对本地资源进行身份验证的布尔值。|
 |windowsHelloForBusinessBlocked|Boolean|阻止将 Windows Hello For Business 作为登录方法的布尔值Windows。|

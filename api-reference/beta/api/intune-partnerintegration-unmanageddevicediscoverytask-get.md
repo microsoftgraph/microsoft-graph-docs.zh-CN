@@ -2,15 +2,15 @@
 title: 获取 unmanagedDeviceDiscoveryTask
 description: 读取 unmanagedDeviceDiscoveryTask 对象的属性和关系。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bd01dbbed15fbe79fd3d56d191fb210bd9b1c765
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8c2bc33f3a7d8d5ea5dfb2b12256183b3489665b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794917"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59124641"
 ---
 # <a name="get-unmanageddevicediscoverytask"></a>获取 unmanagedDeviceDiscoveryTask
 
@@ -46,7 +46,7 @@ GET /deviceAppManagement/deviceAppManagementTasks/{deviceAppManagementTaskId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -2,15 +2,15 @@
 title: managedDeviceRemoteAction 枚举类型
 description: 尚未记录
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a8da1d5d85ce5e3c5444b41a1f655672bf799647
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 119af695547ac4e79805dcfd2b15a346b03a10d8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788939"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59137754"
 ---
 # <a name="manageddeviceremoteaction-enum-type"></a>managedDeviceRemoteAction 枚举类型
 
@@ -36,7 +36,7 @@ ms.locfileid: "58788939"
 |setDeviceName|8 |尚未记录|
 |syncDevice|9 |尚未记录|
 |deprovision|10 |取消设置操作的名称。|
-|disable|11 |禁用操作的名称。|
+|disable|11|禁用操作的名称。|
 |reenable|12 |可重新enable 操作的名称。|
 |moveDeviceToOrganizationalUnit|13|moveDevicesToOU 操作的名称。|
 |activateDeviceEsim|14 |在设备上激活 eSIM 的操作名称。|

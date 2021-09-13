@@ -2,15 +2,15 @@
 title: 删除 personAnnotation
 description: 删除 personAnnotation 对象。
 author: kevinbellinger
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 16993d5919c0d588710ac2835cc2bd0f4f46a1a7
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: d058bcc41dc76b872d1f0ad05450b7601e330c5f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50774213"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59138377"
 ---
 # <a name="delete-personannotation"></a>删除 personAnnotation
 命名空间：microsoft.graph
@@ -25,7 +25,7 @@ ms.locfileid: "50774213"
 |:---------------------------------------|:---------------------------------------------------------------------------------|
 | 委派（工作或学校帐户）     | User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All |
-| Application                            | User.ReadBasic.All、User.Read.All、User.ReadWrite.All                            |
+| 应用程序                            | User.ReadBasic.All、User.Read.All、User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP 请求
 

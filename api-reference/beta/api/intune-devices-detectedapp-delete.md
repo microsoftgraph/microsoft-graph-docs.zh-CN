@@ -2,15 +2,15 @@
 title: 删除 detectedApp
 description: 删除 detectedApp。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 47ed0a6cbecdbdc94555de10dc765c4fe957a88f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c5cdaa3575b79532de0bddb5512081d66ecd8312
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796745"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59108238"
 ---
 # <a name="delete-detectedapp"></a>删除 detectedApp
 
@@ -44,7 +44,7 @@ DELETE /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devi
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

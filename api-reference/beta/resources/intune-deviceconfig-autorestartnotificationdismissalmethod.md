@@ -2,15 +2,15 @@
 title: autoRestartNotificationDismissalMethod 枚举类型
 description: 需要自动重启的通知解除方法
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9e8db201eedc008f6dff25b9713c2aa462f3085d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5d65488d49052fb0c14d26d16d9e9ea7bbe329ef
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788687"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59146756"
 ---
 # <a name="autorestartnotificationdismissalmethod-enum-type"></a>autoRestartNotificationDismissalMethod 枚举类型
 

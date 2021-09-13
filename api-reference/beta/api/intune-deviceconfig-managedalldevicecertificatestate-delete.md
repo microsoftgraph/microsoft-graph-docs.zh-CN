@@ -2,15 +2,15 @@
 title: 删除 managedAllDeviceCertificateState
 description: 删除 managedAllDeviceCertificateState。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0a00ecc085126ceea12a120739ddd074f0d6dd2c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ab041af2bf936e642289d0914e4ee938de361032
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806164"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59135653"
 ---
 # <a name="delete-managedalldevicecertificatestate"></a>删除 managedAllDeviceCertificateState
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/deviceConfigurationsAllManagedDeviceCertificateStates/{
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文

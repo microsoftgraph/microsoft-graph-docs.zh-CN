@@ -2,15 +2,15 @@
 title: restrictedAppsState 枚举类型
 description: 受限的应用状态
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f88a5475f8d7df31acf5561201724bbdba50cb88
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: eba81528da96b02558fa2955e055855e598bc9f6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804846"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59106040"
 ---
 # <a name="restrictedappsstate-enum-type"></a>restrictedAppsState 枚举类型
 

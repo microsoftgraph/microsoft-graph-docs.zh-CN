@@ -2,15 +2,15 @@
 title: personAnnotation 资源类型
 description: personAnnotation 资源类型
 author: kevinbellinger
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 49e7945b1ba07d7daedbd197b826148921f2f0227dd71b5780413a3b67b6c6be
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 77830de34b36126db05f66cae0b2e43691f1d74b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54197847"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59125657"
 ---
 # <a name="personannotation-resource-type"></a>personAnnotation 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "54197847"
 
 继承自 [itemFacet](../resources/itemfacet.md)。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出注释](../api/profile-list-notes.md)|[personAnnotation](../resources/personannotation.md) 集合|从 notes 导航属性获取 personAnnotation 资源。|
@@ -30,14 +30,14 @@ ms.locfileid: "54197847"
 |[删除 personAnnotation](../api/personannotation-delete.md)|无|删除 [personAnnotation](../resources/personannotation.md) 对象。|
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
 |createdBy|[identitySet](../resources/identityset.md)|提供创建实体的用户和/或应用程序的标识符。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |createdDateTime|DateTimeOffset|提供实体创建时的日期时间Offset。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |detail|[itemBody](../resources/itembody.md)|包含注释本身的详细信息。|
 |displayName|String|包含便笺的友好名称。|
-|id|字符串|用于单独寻址实体的标识符。 继承自 [实体](../resources/entity.md)|
+|id|String|用于单独寻址实体的标识符。 继承自 [实体](../resources/entity.md)|
 |inference|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断出来的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|提供上次修改实体的用户和/或应用程序的标识符。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |lastModifiedDateTime|DateTimeOffset|提供实体创建时的日期时间Offset。 继承自 [itemFacet](../resources/itemfacet.md)。|

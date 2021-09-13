@@ -2,15 +2,15 @@
 title: deviceManagementConfigurationChoiceSettingCollectionInstanceTemplate 资源类型
 description: 选项设置集合实例模板
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d27e119d1dba2fa1e03c49da3c3d3191fc564ae2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 601780e1d882a34b04bbb4dabc21390eda7ed0f9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58799463"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129045"
 ---
 # <a name="devicemanagementconfigurationchoicesettingcollectioninstancetemplate-resource-type"></a>deviceManagementConfigurationChoiceSettingCollectionInstanceTemplate 资源类型
 

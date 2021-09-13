@@ -2,15 +2,15 @@
 title: 创建 windowsUpdateForBusinessConfiguration
 description: 创建新的 windowsUpdateForBusinessConfiguration 对象。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b6b73dc24108c4a68832521a986af04c498f1be8
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 070a8889f7a14abf40503e57ae2c7154f07a2824
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785344"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59125097"
 ---
 # <a name="create-windowsupdateforbusinessconfiguration"></a>创建 windowsUpdateForBusinessConfiguration
 
@@ -44,7 +44,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -62,7 +62,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|字符串|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deliveryOptimizationMode|[windowsDeliveryOptimizationMode](../resources/intune-deviceconfig-windowsdeliveryoptimizationmode.md)|传递优化模式。 可取值为：`userDefined`、`httpOnly`、`httpWithPeeringNat`、`httpWithPeeringPrivateGroup`、`httpWithInternetPeering`、`simpleDownload` 或 `bypassMode`。|
@@ -78,13 +78,13 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |qualityUpdatesPauseExpiryDateTime|DateTimeOffset|质量更新暂停到期日期/时间|
 |featureUpdatesPauseExpiryDateTime|DateTimeOffset|功能更新暂停到期日期/时间|
 |businessReadyUpdatesOnly|[windowsUpdateType](../resources/intune-deviceconfig-windowsupdatetype.md)|确定接收更新的分支设备。 可取值为：`userDefined`、`all`、`businessReadyOnly`、`windowsInsiderBuildFast`、`windowsInsiderBuildSlow`、`windowsInsiderBuildRelease`。|
-|skipChecksBeforeRestart|布尔值|设置为在重启前跳过所有检查：电池电量 = 40%，用户状态、需要显示、演示模式、全屏模式、电话呼叫状态、游戏模式等。 |
+|skipChecksBeforeRestart|Boolean|设置为在重启前跳过所有检查：电池电量 = 40%，用户状态、需要显示、演示模式、全屏模式、电话呼叫状态、游戏模式等。 |
 |updateWeeks|[windowsUpdateForBusinessUpdateWeeks](../resources/intune-deviceconfig-windowsupdateforbusinessupdateweeks.md)|将更新安装安排在当月中的几周。 可取值为：`userDefined`、`firstWeek`、`secondWeek`、`thirdWeek`、`fourthWeek`、`everyWeek`。|
 |qualityUpdatesPauseStartDate|日期|质量更新 暂停开始日期。 此属性是只读的。|
 |featureUpdatesPauseStartDate|日期|功能更新 暂停开始日期。 此属性是只读的。|
 |featureUpdatesRollbackWindowInDays|Int32|回滚有效的功能更新后的天数|
 |qualityUpdatesWillBeRolledBack|Boolean|指定是否在下一次设备签入时回滚质量更新|
-|featureUpdatesWillBeRolledBack|布尔值|指定是否在下一次设备签入时回滚功能更新|
+|featureUpdatesWillBeRolledBack|Boolean|指定是否在下一次设备签入时回滚功能更新|
 |qualityUpdatesRollbackStartDateTime|DateTimeOffset|质量更新回滚 开始日期时间|
 |featureUpdatesRollbackStartDateTime|DateTimeOffset|功能更新回滚开始日期时间|
 |engagedRestartDeadlineInDays|Int32|在使用时段外自动计划和执行挂起重启的截止时间（以天表示，有效范围为 2 到 30 天）|
@@ -98,7 +98,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |scheduleRestartWarningInHours|Int32|指定自动重启警告提醒通知的时间段。 支持的值：2、4、8、12 或 24 (小时) 。|
 |scheduleImminentRestartWarningInMinutes|Int32|指定自动重启即将发生的警告通知的时间段。 支持的值：15、30 或 60 (分钟) 。|
 |userPauseAccess|[enablement](../resources/intune-shared-enablement.md)|指定是否允许最终用户暂停软件更新。 可取值为：`notConfigured`、`enabled`、`disabled`。|
-|userWindowsUpdateScanAccess|[enablement](../resources/intune-shared-enablement.md)|指定是否禁用用户对更新Windows访问权限。 可取值为：`notConfigured`、`enabled`、`disabled`。|
+|userWindowsUpdateScanAccess|[enablement](../resources/intune-shared-enablement.md)|指定是否禁用用户对"更新"Windows扫描。 可取值为：`notConfigured`、`enabled`、`disabled`。|
 |updateNotificationLevel|[windowsUpdateNotificationDisplayOption](../resources/intune-deviceconfig-windowsupdatenotificationdisplayoption.md)|指定更新Windows用户看到哪些内容。 可取值为：`notConfigured`、`defaultNotifications`、`restartWarningsOnly`、`disableAllNotifications`。|
 
 

@@ -2,15 +2,15 @@
 title: wiredNetworkInterface 枚举类型
 description: Apple 网络接口类型。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2c3e8a300edd517d1081d584e019c9c30f93dcc2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5099a13e8a2e1c4bd1b88e518c67def82adcf715
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58815594"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59135009"
 ---
 # <a name="wirednetworkinterface-enum-type"></a>wiredNetworkInterface 枚举类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58815594"
 Apple 网络接口类型。
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |anyEthernet|0|任何以太网。|
 |firstActiveEthernet|1|第一个活动以太网。|

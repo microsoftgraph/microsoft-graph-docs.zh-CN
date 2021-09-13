@@ -1,16 +1,16 @@
 ---
 title: defenderPotentiallyUnwantedAppAction 枚举类型
-description: Defender 在 PUA 中对检测到可能不需要的应用程序 (的操作) 。
+description: Defender 对检测到的可能不需要的应用程序执行的操作 (PUA) 。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 25bf816c93d48030cf1937669293f4cadf8e1c5f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ba0d7de1c865f93edf9341288681aeff2137b632
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797547"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59101665"
 ---
 # <a name="defenderpotentiallyunwantedappaction-enum-type"></a>defenderPotentiallyUnwantedAppAction 枚举类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "58797547"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-Defender 在 PUA 中对检测到可能不需要的应用程序 (的操作) 。
+Defender 对检测到的可能不需要的应用程序执行的操作 (PUA) 。
 
 ## <a name="members"></a>成员
 |成员|值|说明|

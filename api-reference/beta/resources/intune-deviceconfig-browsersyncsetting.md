@@ -2,15 +2,15 @@
 title: browserSyncSetting 枚举类型
 description: 允许 (未配置) 或 (阻止) 浏览器Microsoft Edge同步。 用于阻止跨设备同步但允许用户替代的选项。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ef97db0168971b687d3dac5fb405f5c9482b2a3d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: cfaec7d41ae18d12ad4801fdc1110250d6288b62
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58802780"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127484"
 ---
 # <a name="browsersyncsetting-enum-type"></a>browserSyncSetting 枚举类型
 

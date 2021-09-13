@@ -2,15 +2,15 @@
 title: meteredConnectionLimitType 枚举类型
 description: 按流量计费的连接设置。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: bdcf918042c22cced461430e55870bcad7aab04a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5c5d7ffa61f771c664d6fcd987e4b4d67c9e0e47
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58821674"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59146644"
 ---
 # <a name="meteredconnectionlimittype-enum-type"></a>meteredConnectionLimitType 枚举类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "58821674"
 按流量计费的连接设置。
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |unrestricted|0|Unrestricted|
 |fixed|1|Fixed|

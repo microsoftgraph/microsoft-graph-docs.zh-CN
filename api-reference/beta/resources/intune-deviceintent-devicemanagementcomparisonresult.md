@@ -2,15 +2,15 @@
 title: deviceManagementComparisonResult 枚举类型
 description: 设置比较结果类型
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: dec891d78593fcbea6226666b4780704e83a2c7c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 08c93853b5ee36ba779e2b4be1aba1230a75e0f8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58815937"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134960"
 ---
 # <a name="devicemanagementcomparisonresult-enum-type"></a>deviceManagementComparisonResult 枚举类型
 
