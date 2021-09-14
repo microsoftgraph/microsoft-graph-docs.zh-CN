@@ -1,16 +1,16 @@
 ---
 title: 创建 schemaExtension
 description: 创建一个新的 schemaExtension 定义以扩展支持资源类型。
-localization_priority: Priority
+ms.localizationpriority: high
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: a498b23cc29c806f24cd620110ce731598ba2582
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 97ae815c8eead9e77eadebad03d5aa5fc7e881c8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054474"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085166"
 ---
 # <a name="create-schemaextension"></a>创建 schemaExtension
 
@@ -70,7 +70,7 @@ POST /schemaExtensions
 
 #### <a name="request"></a>请求
 
-这个示例演示了如何使用已验证的域名 `graphlearn` 和架构名称 `courses` 为架构扩展定义的 **id** 属性形成唯一的字符串。 唯一字符串采用此格式：\{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}.
+此示例演示了如何使用已验证的域名 `graphlearn` 和架构名称 `courses` 为架构扩展定义的 **id** 属性形成唯一的字符串。唯一字符串采用此格式：\{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -124,7 +124,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -164,7 +164,7 @@ Content-length: 420
 
 #### <a name="request"></a>请求
 
-这个示例演示了如何在请求的 **id** 属性中，仅指定架构名称、`courses` 以及 [schemaExtension](../resources/schemaextension.md) 对象中剩余属性的 JSON 表示形式。 Microsoft Graph 将在响应中分配并返回一个唯一的字符串值。
+此示例演示了如何在请求的 **id** 属性中，仅指定架构名称、`courses` 以及 [schemaExtension](../resources/schemaextension.md) 对象中剩余属性的 JSON 表示形式。Microsoft Graph 将在响应中分配并返回一个唯一的字符串值。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -219,7 +219,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-该响应包括一个基于请求中提供的架构名称的 **id** 属性中唯一的字符串，以及新创建的架构定义的其余部分。 响应中的 **id** 中的值采用此格式：ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+该响应包括一个基于请求中提供的架构名称的 **id** 属性中唯一的字符串，以及新创建的架构定义的其余部分。响应中的 **id** 中的值采用此格式：ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}。注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

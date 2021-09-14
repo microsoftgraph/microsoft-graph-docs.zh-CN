@@ -2,15 +2,15 @@
 title: 创建事件
 description: 使用此 API 在默认或指定的日历中创建新事件。
 author: harini84
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: fe894ed0ceb5cdeceadcc615503b0993f64c1c17
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 0157897e2ba9c8342602e3948f54b4e570f2c65f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434879"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59090794"
 ---
 # <a name="create-event"></a>创建事件
 
@@ -19,7 +19,7 @@ ms.locfileid: "50434879"
 使用此 API 在日历中创建新事件。 可以是[用户](../resources/user.md)的日历，也可以是 Microsoft 365 [组](../resources/group.md)的默认日历。 
 
 ## <a name="permissions"></a>权限
-根据创建事件的日历类型和所请求的权限类型（委派型或应用程序），需要下列某一权限来调用此 API。 要了解详细信息（包括如何选择权限），请参阅[权限](/graph/permissions-reference)。
+根据创建事件的日历类型和请求的权限类型（委派或应用程序），调用此 API 需要以下权限之一。要了解详细信息（包括如何选择权限），请参阅 [权限](/graph/permissions-reference)。
 
 | 日历 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|

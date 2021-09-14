@@ -1,16 +1,16 @@
 ---
 title: 更新 profilephoto
 description: 更新已登录的用户照片 **用户**、 **组** 或 **联系人**。因为有
-localization_priority: Priority
+ms.localizationpriority: high
 author: kevinbellinger
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: b4b3ef3e40f540c0ad3a8cfb75631e7069976b7f
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: fb813fbd135959f225d418fa94e7abe913612c15
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786315"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104808"
 ---
 # <a name="update-profilephoto"></a>更新 profilephoto
 
@@ -25,13 +25,33 @@ ms.locfileid: "52786315"
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-- 已登录 **用户** 的个人资料照片 - User.ReadWrite、User.ReadWrite.All
-- **组** 的个人资料照片 - Group.ReadWrite.All
-- **联系人** 的照片 - Contacts.ReadWrite
+### <a name="to-update-the-profile-photo-of-the-signed-in-user"></a>要更新已登录用户的个人资料照片
 
-> **注意** 要更新组织中任何用户的照片，应用必须具有 User.ReadWrite.All 应用程序权限，并以其自己的身份而不是代表用户来调用此 API。若要了解详细信息，请参阅 [无需已登录用户即可访问](/graph/auth-v2-service)。
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户）      |   User.ReadWrite、User.ReadWrite.All           |
+|委派（个人 Microsoft 帐户）      |   不支持。            |
+|应用程序      |    User.ReadWrite.All           |
 
-> **注意：** 当前有一个 [已知问题](/graph/known-issues#groups)，即使用应用程序权限访问组照片。
+### <a name="to-update-the-profile-photo-of-a-group"></a>要更新组的个人资料照片
+
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户）      |   Group.ReadWrite.All           |
+|委派（个人 Microsoft 帐户）      |   不支持。            |
+|应用程序      |    Group.ReadWrite.All           |
+
+### <a name="to-update-the-profile-photo-of-a-contact"></a>要更新联系人的个人资料照片
+
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户）      |   Contacts.ReadWrite           |
+|委派（个人 Microsoft 帐户）      |   不支持。            |
+|应用程序      |    Contacts.ReadWrite           |
+
+> **注意：** 要更新组织中任何用户的照片，应用必须具有 User.ReadWrite.All 应用程序权限，并以其自己的身份而不是代表用户来调用此 API。要了解详细信息，请参阅 [在没有已登录用户的情况下获取访问权限](/graph/auth-v2-service)。
+>
+> 当前在使用应用权限访问组照片方面存在一个 [已知问题](/graph/known-issues#groups)。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

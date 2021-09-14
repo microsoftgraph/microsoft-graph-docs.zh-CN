@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: 获取驱动器
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: sharepoint
 description: 检索 Drive 资源的属性和关系。
 doc_type: apiPageType
-ms.openlocfilehash: b9f2bdd93c331126ce1155344b44e59802e475b1
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 84cc50aca94170fb6cd81b5ff41d255380496566
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292649"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59140890"
 ---
 # <a name="get-drive"></a>获取驱动器
 
@@ -103,7 +103,7 @@ GET /users/{idOrUserPrincipalName}/drive
 
 | 参数名称 | 值  | 说明                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _idOrUserPrincipalName_     | string | 必需。 拥有 OneDrive 的用户对象的标识符。 |
+| _idOrUserPrincipalName_     | string | 必填。拥有 OneDrive 的用户对象的标识符。 |
 
 ## <a name="get-the-document-library-associated-with-a-group"></a>获取与组关联的文档库
 
@@ -141,7 +141,7 @@ GET /groups/{groupId}/drive
 
 | 参数名称 | 值  | 说明                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _groupId_      | string | 必需。 拥有文档库的组的标识符。 |
+| _groupId_      | string | 必填。拥有文档库的组的标识符。 |
 
 ## <a name="get-the-document-library-for-a-site"></a>获取某个站点的文档库
 
@@ -179,7 +179,7 @@ GET /sites/{siteId}/drive
 
 | 参数名称 | 值  | 说明                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _siteId_       | string | 必需。 包含文档库的站点的标识符。 |
+| _siteId_       | string | 必填。包含文档库的站点的标识符。 |
 
 ## <a name="get-a-drive-by-id"></a>根据 ID 获取驱动器
 
@@ -265,6 +265,6 @@ Content-type: application/json
   "section": "documentation",
   "suppressions": [
   ],
-  "tocPath": "Drives/Get drive"
+  "tocPath&quot;: &quot;Drives/Get drive"
 } -->
 

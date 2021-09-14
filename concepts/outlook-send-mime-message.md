@@ -2,14 +2,14 @@
 title: 发送含有 MIME 内容的电子邮件
 description: 电子邮件客户端可以通过 Exchange 以 MIME 邮件格式发送电子邮件。
 author: isvargasmsft
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 2cd092bcea50b800838a64dd0f8b89eb01dbe4d5d33b9ceb26e2fee910a050fc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d32aee40b5336c2a84fcc83d42692bede89c6bc8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54146158"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59071740"
 ---
 # <a name="send-messages-with-mime-content"></a>使用 MIME 内容发送邮件
 
@@ -48,7 +48,7 @@ Outlook 邮件 API 支持对含有 MIME 内容的邮件执行以下操作：
 - `Content-Type: application/json` 以在请求正文使用 JSON 格式。
 - `Content-Type: text/plain` 以在请求正文使用 MIME 格式。
 
-以 MIME 格式指定正文时，请提供适用的 [Internet 邮件头](https://tools.ietf.org/html/rfc2076)和 [MIME 内容](https://tools.ietf.org/html/rfc2045)，并在请求正文中以 **base64** 格式对其进行编码。 Microsoft Graph 不支持单独编辑或更新 MIME 属性。
+在以 MIME 格式指定正文时，请提供适用的 [Internet 消息标头](https://tools.ietf.org/html/rfc2076) 和 [MIME 内容](https://tools.ietf.org/html/rfc2045)，并在请求正文中以 **base64** 格式对其进行编码。Microsoft Graph 不支持单独编辑或更新 MIME 属性。
 
 ## <a name="example"></a>示例
 下面是有 Internet 邮件标头（编码前）的 MIME 内容的示例：

@@ -2,15 +2,15 @@
 title: 获取邮件
 description: 检索邮件对象的属性和关系。
 author: abheek-das
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: faef3fd45e331012b642624361c9fc03e35d9a97
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 4943632eb304300b4adc16de61167dc12cb1121e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52035377"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110268"
 ---
 # <a name="get-message"></a>获取邮件
 
@@ -18,12 +18,12 @@ ms.locfileid: "52035377"
 
 检索[邮件](../resources/message.md)对象的属性和关系。
 
-可使用 `$value` 参数来[获取邮件的 MIME 内容](/graph/outlook-get-mime-message)。 另请参阅下面的 [示例](#example-4-get-mime-content)。
+可以使用 `$value` 参数来 [获取邮件的 MIME 内容](/graph/outlook-get-mime-message)。另请参阅以下 [示例](#example-4-get-mime-content)。
 
 在以下两种情况下，应用可以获取其他用户的邮件文件夹中的邮件：
 
 * 如果该应用具有应用程序权限，或者
-* 如果应用具有来自某个用户的相应委派[权限](#permissions)，而另一个用户与该用户共享了邮件文件夹，或者已为该用户授予委派的访问权限。 请参阅[详细信息和示例](/graph/outlook-share-messages-folders)。
+* 如果应用具有来自某个用户的相应委派[权限](#permissions)，而另一个用户与该用户共享了邮件文件夹，或者已为该用户授予委派的访问权限。请参阅[详细信息和示例](/graph/outlook-share-messages-folders)。
 
 由于 **邮件** 资源支持 [扩展](/graph/extensibility-overview)，因此也可使用 `GET` 操作获取 **邮件** 实例中的自定义属性和扩展数据。
 
@@ -110,7 +110,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADhMGAAA=
 ---
 
 #### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "name": "get_message",

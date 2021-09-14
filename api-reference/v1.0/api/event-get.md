@@ -2,15 +2,15 @@
 title: 获取事件
 description: 获取指定的 event 对象的属性和关系。
 author: harini84
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e3cfbeba9940c6c7fe69aeb271ff7847dce7749b
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: e73364476e07c74866b1810ba6972a7dce705ed4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448310"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056709"
 ---
 # <a name="get-event"></a>获取事件
 
@@ -23,7 +23,7 @@ ms.locfileid: "50448310"
 在下列两种情况下，应用程序可获取其他用户的日历中的事件：
 
 * 如果该应用具有应用程序权限，或者
-* 如果应用程序具有来自某个用户的相应委派[权限](#permissions)，而另一个用户与该用户共享了日历，或者已为该用户授予委派的访问权限。 请参阅[详细信息和示例](/graph/outlook-get-shared-events-calendars)。
+* 如果应用具有来自某个用户的相应委派 [权限](#permissions)，而另一个用户与该用户共享了日历，或者已向该用户授予委派访问权限。请参阅 [详细信息和示例](/graph/outlook-get-shared-events-calendars)。
 
 由于 **event** 资源支持 [扩展](/graph/extensibility-overview)，因此也可使用 `GET` 操作获取 **事件** 实例中的自定义属性和扩展数据。
 
@@ -74,7 +74,7 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 | 名称       | 类型 | 说明 |
 |:---------------|:--------|:--------|
 | Authorization  | string | Bearer {token}。必需。  |
-| Prefer: outlook.timezone  | string | 此选项可用于指定响应中开始时间和结束时间的时区。 如果未指定，返回的这些时间值采用 UTC 时区。 可选。 |
+| Prefer: outlook.timezone  | string | 用于指定响应中开始时间和结束时间的时区。如果未指定，返回的这些时间值采用 UTC 时区。可选。 |
 | Prefer: outlook.body-content-type | string | 要返回的 **body** 属性的格式。 可取值为“text”或“html”。 如果指定此 `Preference-Applied` 头，返回 `Prefer` 头作为证明。 如果未指定此头，采用 HTML 格式返回 **body** 属性。 可选。 |
 
 ## <a name="request-body"></a>请求正文
@@ -246,7 +246,7 @@ GET https://graph.microsoft.com/v1.0/me/events/AAMkADAGAADDdm4NAAA=?$select=subj
 ---
 
 ##### <a name="response-2"></a>响应 2
-下面是一个响应示例。 **locations** 属性包括组织事件的 3 个地点的详细信息。 
+下面是响应的示例。**位置** 属性包含为其组织事件的 3 个位置的详细信息。 
 
 由于该请求未指定任何 `Prefer: outlook.timezone` 标头，**start** 和 **end** 属性将以默认的 UTC 时区显示。 
 

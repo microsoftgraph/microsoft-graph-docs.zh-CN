@@ -2,15 +2,15 @@
 title: 列出事件
 description: 检索日历中的事件列表。该列表包含单实例会议和系列主控事件。
 author: harini84
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 33bdadb28129183972f8fb6f7ee051708a3f2e55
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: df1a469ee464eb3299f21e3c4fda5a8a1e5fdd03
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054600"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59125417"
 ---
 # <a name="list-events"></a>列出事件
 
@@ -21,7 +21,7 @@ ms.locfileid: "52054600"
 要获取扩展的事件实例，可以[获取日历视图](calendar-list-calendarview.md)，或者[获取事件的实例](event-list-instances.md)。
 
 ## <a name="permissions"></a>权限
-根据事件所处的日历类型和所请求的权限类型（委派型或应用程序），需要下列某一权限来调用此 API。 要了解详细信息（包括如何选择权限），请参阅[权限](/graph/permissions-reference)。
+根据事件所在的日历类型和请求的权限类型（委派或应用程序），调用此 API 需要以下权限之一。要了解详细信息（包括如何选择权限），请参阅 [权限](/graph/permissions-reference)。
 
 | 日历 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
@@ -52,7 +52,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
 | 名称       | 类型 | 说明 |
 |:---------------|:--------|:--------|
 | Authorization  | string | Bearer {token}。必需。  |
-| Prefer: outlook.timezone  | string | 使用此项指定响应中开始时间和结束时间的时区。如果未指定，则这些时间值采用 UTC 时区格式返回。可选。 |
+| Prefer: outlook.timezone  | string | 用于指定响应中开始时间和结束时间的时区。如果未指定，返回的这些时间值采用 UTC 时区。可选。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/v1.0/me/calendar/events
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：可能缩短此处显示的响应对象以提高可读性。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -2,15 +2,15 @@
 author: JeremyKelley
 title: DriveItem 资源类型
 description: 项目是 OneDrive API 中的主数据模型。每一个都是一个项。
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: c7e611b40ab2d0f770760bbedcbddaea8d0c3eecbd6efcd1c437a1ab1a9ef326
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1113752f33fe5cf1773359b940e15083a449a253
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54182565"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094350"
 ---
 # <a name="driveitem-resource-type"></a>DriveItem 资源类型
 
@@ -36,6 +36,37 @@ OneDrive 和 SharePoint 中的所有文件系统对象将作为 **driveItem** �
 
 >**注意：** 在 OneDrive for Business 或 SharePoint 文档库中，如果 **driveItem** 具有 [folder][] Facet，则不返回 **cTag** 属性。
 
+## <a name="methods"></a>方法
+
+| 方法                                                   | 返回类型 | 说明
+|:---------------------------------------------------------|:------------|:------------
+| [获取项目](../api/driveitem-get.md)                      | driveItem |在驱动器中检索 DriveItem 的元数据。
+| [获取分析结果][]                                        | [itemAnalytics][] | 对此资源可获取分析。 
+| [按间隔获取活动][]                           | [itemActivityStat][] | 在指定的时间间隔内获取 itemActivityStats 的集合。
+| [列出子项](../api/driveitem-list-children.md)       | driveItem 集合 | 在 DriveItem 的子项关系中返回 DriveItems 集合。
+| [列出版本](../api/driveitem-list-versions.md)       | [DriveItemVersion][] 集合 | 检索当前用户驱动器中的文件的版本。
+| [创建项目](../api/driveitem-post-children.md)         | driveItem | 在指定的驱动器中创建一个 driveItem。
+| [更新项目](../api/driveitem-update.md)                | driveItem | 更新驱动器中的 driveItem。
+| [上传内容](../api/driveitem-put-content.md)        | driveItem | 将内容上传到 driveItem。
+| [下载内容](../api/driveitem-get-content.md)      | 下载 Url | 下载 driveItem 的内容。
+| [下载特定文件格式][download-format]         | 下载 Url | 下载具有特定格式的 driveItem 的内容。
+| [删除项](../api/driveitem-delete.md)                | 无内容 | 删除 DriveItem。
+| [移动项目](../api/driveitem-move.md)                    | driveItem | 将 DriveItem 移动到父项。
+| [复制项目](../api/driveitem-copy.md)                    | 有关如何[监视复制操作进度](/graph/long-running-actions-overview)的详细信息。 | 创建 driveItem（包括任何子项）的副本。
+| [搜索项目](../api/driveitem-search.md)               | driveItem 集合 | 在项目层次结构中搜索与查询匹配的项目。
+| [列出驱动器中的更改](../api/driveitem-delta.md)     | 三角链接 | 列出驱动器中的任何更改。
+| [关注项目](../api/driveitem-follow.md)                | driveItem  | 关注 driveItem。
+| [取消关注项目](../api/driveitem-unfollow.md)            | 无内容 | 取消关注 driveItem。
+| [列出缩略图](../api/driveitem-list-thumbnails.md)   | driveItem 集合 | 使用缩略图列出 driveItems。 
+| [创建共享链接](../api/driveitem-createlink.md)    | 共享链接 | 创建共享 driveItem 的链接。
+| [添加权限](../api/driveitem-invite.md)            | [权限][]集合 | 向用户发送共享邀请。
+| [列出权限](../api/driveitem-list-permissions.md) | [权限][]集合 | 检索 driveItem 上的权限集合。
+| [删除权限](../api/permission-delete.md)         | 无内容 | 从 driveItem 中删除权限。
+| [获取 WebSocket 频道][getWebSocket]                    | [订阅][] | 使用 socket.io 接收驱动器的近实时更改通知。
+| [预览项目][item-preview]                             | json object | 获取项目的短期可嵌入URL以呈现临时预览。
+| [签入](../api/driveitem-checkin.md)                  | `POST /drives/{driveId}/items/{itemId}/checkin`
+| [签出](../api/driveitem-checkout.md)                | `POST /drives/{driveId}/items/{itemId}/checkout`
+
 ## <a name="properties"></a>属性
 
 | 属性             | 类型               | 说明
@@ -56,6 +87,7 @@ OneDrive 和 SharePoint 中的所有文件系统对象将作为 **driveItem** �
 | lastModifiedBy       | [identitySet][]    | 上次修改项目的用户、设备和应用程序的标识。只读。
 | lastModifiedDateTime | DateTimeOffset     | 上次修改项目的日期和时间。只读。
 | location             | [geoCoordinates][] | 位置元数据（如果此项包含位置数据）。只读。
+| 恶意软件 (malware)              | [恶意软件][]        | 恶意软件元数据，如果检测到项目包含恶意软件。只读。
 | name                 | String             | 项目名称（文件名和扩展名）。读写。
 | package              | [package][]        | 如果存在，则表示此项是一个包，而不是文件夹或文件。包被视为某些上下文中的文件和其他上下文中的文件夹。只读。
 | parentReference      | [itemReference][]  | 父信息（如果此项具有父级）。读写。
@@ -135,6 +167,7 @@ OneDrive 和 SharePoint 中的所有文件系统对象将作为 **driveItem** �
   "folder": { "@odata.type": "microsoft.graph.folder" },
   "image": { "@odata.type": "microsoft.graph.image" },
   "location": { "@odata.type": "microsoft.graph.geoCoordinates" },
+  "malware": { "@odata.type": "microsoft.graph.malware" },
   "package": { "@odata.type": "microsoft.graph.package" },
   "pendingOperations": { "@odata.type": "microsoft.graph.pendingOperations" },
   "photo": { "@odata.type": "microsoft.graph.photo" },
@@ -178,37 +211,6 @@ OneDrive 和 SharePoint 中的所有文件系统对象将作为 **driveItem** �
 }
 ```
 
-## <a name="methods"></a>方法
-
-| 方法                                                   | 返回类型 | 说明
-|:---------------------------------------------------------|:------------|:------------
-| [获取项目](../api/driveitem-get.md)                      | driveItem |在驱动器中检索 DriveItem 的元数据。
-| [获取分析结果][]                                        | [itemAnalytics][] | 对此资源可获取分析。 
-| [按间隔获取活动][]                           | [itemActivityStat][] | 在指定的时间间隔内获取 itemActivityStats 的集合。
-| [列出子项](../api/driveitem-list-children.md)       | driveItem 集合 | 在 DriveItem 的子项关系中返回 DriveItems 集合。
-| [列出版本](../api/driveitem-list-versions.md)       | [DriveItemVersion][] 集合 | 检索当前用户驱动器中的文件的版本。
-| [创建项目](../api/driveitem-post-children.md)         | driveItem | 在指定的驱动器中创建一个 driveItem。
-| [更新项目](../api/driveitem-update.md)                | driveItem | 更新驱动器中的 driveItem。
-| [上传内容](../api/driveitem-put-content.md)        | driveItem | 将内容上传到 driveItem。
-| [下载内容](../api/driveitem-get-content.md)      | 下载 Url | 下载 driveItem 的内容。
-| [下载特定文件格式][download-format]         | 下载 Url | 下载具有特定格式的 driveItem 的内容。
-| [删除项](../api/driveitem-delete.md)                | 无内容 | 删除 DriveItem。
-| [移动项目](../api/driveitem-move.md)                    | driveItem | 将 DriveItem 移动到父项。
-| [复制项目](../api/driveitem-copy.md)                    | 有关如何[监视复制操作进度](/graph/long-running-actions-overview)的详细信息。 | 创建 driveItem（包括任何子项）的副本。
-| [搜索项目](../api/driveitem-search.md)               | driveItem 集合 | 在项目层次结构中搜索与查询匹配的项目。
-| [列出驱动器中的更改](../api/driveitem-delta.md)     | 三角链接 | 列出驱动器中的任何更改。
-| [关注项目](../api/driveitem-follow.md)                | driveItem  | 关注 driveItem。
-| [取消关注项目](../api/driveitem-unfollow.md)            | 无内容 | 取消关注 driveItem。
-| [列出缩略图](../api/driveitem-list-thumbnails.md)   | driveItem 集合 | 使用缩略图列出 driveItems。 
-| [创建共享链接](../api/driveitem-createlink.md)    | 共享链接 | 创建共享 driveItem 的链接。
-| [添加权限](../api/driveitem-invite.md)            | [权限][]集合 | 向用户发送共享邀请。
-| [列出权限](../api/driveitem-list-permissions.md) | [权限][]集合 | 检索 driveItem 上的权限集合。
-| [删除权限](../api/permission-delete.md)         | 无内容 | 从 driveItem 中删除权限。
-| [获取 WebSocket 频道][getWebSocket]                    | [订阅][] | 使用 socket.io 接收驱动器的近实时更改通知。
-| [预览项目][item-preview]                             | json object | 获取项目的短期可嵌入URL以呈现临时预览。
-| [签入](../api/driveitem-checkin.md)                  | `POST /drives/{driveId}/items/{itemId}/checkin`
-| [签出](../api/driveitem-checkout.md)                | `POST /drives/{driveId}/items/{itemId}/checkout`
-
 [item-preview]: ../api/driveitem-preview.md
 [获取分析结果]: ../api/itemanalytics-get.md
 [按间隔获取活动]: ../api/itemactivitystat-getactivitybyinterval.md
@@ -231,6 +233,7 @@ OneDrive 和 SharePoint 中的所有文件系统对象将作为 **driveItem** �
 [itemReference]: itemreference.md
 [geoCoordinates]: geocoordinates.md
 [listItem]: listitem.md
+[恶意软件]: malware.md
 [package]: package.md
 [权限]: permission.md
 [pendingOperations]: pendingoperations.md

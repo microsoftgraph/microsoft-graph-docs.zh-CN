@@ -1,20 +1,22 @@
 ---
 title: 在 Microsoft Graph 中使用 Microsoft 365 的使用情况报表
 description: 使用 Microsoft Graph，可以访问 Microsoft 365 使用情况报告资源，以获取有关企业中的人员如何使用Microsoft 365服务的信息。例如，你可以确定谁经常使用服务并达到配额，或者谁根本不需要 Microsoft 365 许可证。
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: reports
 author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: 6996c37c626722360d2577e030d95de3aa69fd2560a34b89b018224a71566006
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c2d45815515cf894b0f37c2e4f658abfef48a913
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54126303"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59055876"
 ---
 # <a name="working-with-microsoft-365-usage-reports-in-microsoft-graph"></a>在 Microsoft Graph 中使用 Microsoft 365 的使用情况报表
 
-使用 Microsoft Graph，可以访问 Microsoft 365 使用情况报告资源，以获取有关企业中的人员如何使用Microsoft 365服务的信息。例如，你可以确定谁经常使用服务并达到配额，或者谁根本不需要 Microsoft 365 许可证。
+使用 Microsoft Graph，可以访问 Microsoft 365 使用情况报告资源，以获取有关企业中的人员如何使用 Microsoft 365 服务的信息。例如，你可以确定谁经常使用服务并达到配额，或者谁可能根本不需要 Microsoft 365 许可证。 
+
+有关控制 Microsoft 365 使用情况报告数据中信息标识/取消标识设置的详细信息，请参阅 [管理中心内的 Microsoft 365报表](/microsoft-365/admin/activity-reports/activity-reports)。
 
 ## <a name="authorization"></a>Authorization
 

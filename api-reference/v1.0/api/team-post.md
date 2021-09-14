@@ -2,15 +2,15 @@
 title: 创建团队
 description: 新建团队。
 author: anandjo
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 18e752c01df3f1b8eafffdf75085e470a2bc70b6
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: d7a38f0452e3560d189fb2e58d8aa56dd8448d92
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787756"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110002"
 ---
 # <a name="create-team"></a>创建团队
 
@@ -100,7 +100,7 @@ Content-Type: application/json
 ---
 
 
-##### <a name="response"></a>响应
+#### <a name="response"></a>响应
 <!-- {
   "blockType": "response",
   "name": "create_team_post"

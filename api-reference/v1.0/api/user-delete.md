@@ -2,15 +2,15 @@
 title: 删除用户 - Microsoft Graph API
 description: 介绍删除 Microsoft Graph API (REST) 的用户资源（实体）的方法。
 author: jpettere
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: ed6288726c315580c24be14cc2143ffd5e2817a8
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 2a39e108551d601ccdd9d6daf4a96e855d307b4f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722361"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59090024"
 ---
 # <a name="delete-a-user"></a>删除用户
 
@@ -26,7 +26,7 @@ ms.locfileid: "50722361"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | User.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | User.ReadWrite.All |
 
