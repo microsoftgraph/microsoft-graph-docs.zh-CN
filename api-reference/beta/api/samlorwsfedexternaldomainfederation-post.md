@@ -2,15 +2,15 @@
 title: 创建 samlOrWsFedExternalDomainFederation
 description: 创建新的 samlOrWsFedExternalDomainFederation 对象。
 author: namkedia
-localization_priority: medium
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ab97f50625adf6064130abb8eebd8a163c9736e8
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 6d7dc9d422ebe5d3db6fe98b168956d820b92fdd
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58697039"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59508483"
 ---
 # <a name="create-samlorwsfedexternaldomainfederation"></a>创建 samlOrWsFedExternalDomainFederation
 命名空间：microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "58697039"
 
 创建新的 [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -65,7 +65,7 @@ POST /directory/federationConfigurations
 |metadataExchangeUri|String|用于从富客户端应用程序进行身份验证的元数据交换终结点的 URI。 继承自 [samlOrWsFedProvider](../resources/samlorwsfedprovider.md)。|
 |passiveSignInUri|String|登录 Azure AD 服务时基于 Web 的客户端定向到的 URI。 继承自 [samlOrWsFedProvider](../resources/samlorwsfedprovider.md)。|
 |preferredAuthenticationProtocol|String|首选身份验证协议。 支持的值包括 `saml` 或 `wsfed` 。 继承自 [samlOrWsFedProvider](../resources/samlorwsfedprovider.md)。|
-|signingCertificate|String|用于对传递到令牌的令牌进行签名的当前Microsoft 标识平台。 证书的格式设置为联合 IdP 令牌签名证书的公共部分的 Base64 编码字符串，并且必须与 X509Certificate2 类兼容。  <br/><br/> 此属性用于以下方案： <ul><li> 如果在自动注册更新之外需要滚动 <li>正在设置新的联合身份验证服务 <li> 如果更新联合身份验证服务证书后，联合身份验证属性中不存在新的令牌签名证书。 </ul> <br/><br/> Azure AD 通过自动注册过程更新证书，其中它尝试从联合身份验证服务元数据检索新证书，即当前证书到期前 30 天。 如果新证书不可用，Azure AD 将每天监视元数据，并且将在新证书可用时更新域的联盟设置。|
+|signingCertificate|String|用于对传递到证书的令牌进行签名的当前Microsoft 标识平台。 证书的格式设置为联合 IdP 令牌签名证书的公共部分的 Base64 编码字符串，并且必须与 X509Certificate2 类兼容。  <br/><br/> 此属性用于以下方案： <ul><li> 如果在自动注册更新之外需要滚动 <li>正在设置新的联合身份验证服务 <li> 如果更新联合身份验证服务证书后，联合身份验证属性中不存在新的令牌签名证书。 </ul> <br/><br/> Azure AD 通过自动注册过程更新证书，其中它尝试从联合身份验证服务元数据检索新证书，即当前证书到期前 30 天。 如果新证书不可用，Azure AD 将每天监视元数据，并且将在新证书可用时更新域的联盟设置。|
 
 ## <a name="response"></a>响应
 
@@ -74,6 +74,8 @@ POST /directory/federationConfigurations
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_samlorwsfedexternaldomainfederation_from_"
@@ -101,6 +103,20 @@ Content-length: 283
     "signingCertificate": "MIIDADCCAeigAwIBAgIQEX41y8r6"
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-samlorwsfedexternaldomainfederation-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-samlorwsfedexternaldomainfederation-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-samlorwsfedexternaldomainfederation-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 下面展示了示例响应。

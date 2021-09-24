@@ -2,15 +2,15 @@
 title: 删除 educationAssignment
 description: 删除现有工作分配。 只有班级内的教师才能删除作业。
 author: dipakboyed
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: bbab9c5a42c54d660e7962e16211158bdde7da05
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: f72c23507076265013f19686b23b93cfd09c56e7
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50951864"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59508186"
 ---
 # <a name="delete-educationassignment"></a>删除 educationAssignment
 
@@ -20,7 +20,7 @@ ms.locfileid: "50951864"
 
 删除现有工作分配。 只有班级内的教师才能删除作业。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -66,7 +66,7 @@ DELETE /education/classes/{id}/assignments/{id}
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/education/classes/11014/assignments/19002
+DELETE https://graph.microsoft.com/beta/education/classes/c42f493f-42b4-4e7d-8148-af894cbc518b/assignments/ad8afb28-c138-4ad7-b7f5-a6986c2655a8
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-educationassignment-1-csharp-snippets.md)]

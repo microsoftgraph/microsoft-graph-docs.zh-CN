@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 0e30fc052b21fdcfc9cb1bfc1efdff1a4bc88767
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: af1b7ec5a116c31c67fe4fe2a43165dc9bbb3d1a
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48635762"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59508716"
 ---
 ```objc
 
@@ -17,7 +17,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphInvitation *invitation = [[MSGraphInvitation alloc] init];
-[invitation setInvitedUserEmailAddress:@"yyy@test.com"];
+[invitation setInvitedUserEmailAddress:@"admin@fabrikam.com"];
 [invitation setInviteRedirectUrl:@"https://myapp.contoso.com"];
 
 NSError *error;

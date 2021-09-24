@@ -4856,24 +4856,27 @@ items:
                   - name: 创建邀请
                     href: api/invitation-post.md
               - name: 组织品牌打造
-                href: resources/organizationalbrandingproperties.md
+                href: resources/organizationalbranding.md
                 items:
-                  - name: 创建
-                    href: api/organizationalbrandingproperties-create.md
                   - name: 获取
-                    href: api/organizationalbrandingproperties-get.md
+                    href: api/organizationalbranding-get.md
                   - name: 更新
-                    href: api/organizationalbrandingproperties-update.md
+                    href: api/organizationalbranding-update.md
                   - name: 删除
-                    href: api/organizationalbrandingproperties-delete.md
-                  - name: 创建本地化
-                    href: api/organizationalbrandingpropertieslocalization-create.md
-                  - name: 本地化
-                    href: api/organizationalbrandingpropertieslocalization-get.md
-                  - name: 更新本地化
-                    href: api/organizationalbrandingpropertieslocalization-update.md
-                  - name: 删除本地化
-                    href: api/organizationalbrandingpropertieslocalization-delete.md
+                    href: api/organizationalbranding-delete.md
+                  - name: 品牌打造本地化
+                    href: resources/organizationalbrandinglocalization.md
+                    items:
+                      - name: 列出
+                        href: api/organizationalbranding-list-localizations.md
+                      - name: 创建
+                        href: api/organizationalbranding-post-localizations.md
+                      - name: 获取
+                        href: api/organizationalbrandinglocalization-get.md
+                      - name: 更新
+                        href: api/organizationalbrandinglocalization-update.md
+                      - name: 删除
+                        href: api/organizationalbrandinglocalization-delete.md
               - name: Policy
                 href: resources/policy-overview.md
                 items:

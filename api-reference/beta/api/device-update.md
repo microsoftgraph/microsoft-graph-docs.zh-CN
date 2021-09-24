@@ -2,15 +2,15 @@
 title: 更新设备
 description: 更新设备的属性。
 author: spunukol
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 0d3edaef650d51cdf28dded577c79a80d49d8fd3
-ms.sourcegitcommit: 998c63e6290cfb5ad4a6bd3eb3e249d282f962a3
+ms.openlocfilehash: 845b76fa0643d2991ae0186a94858c55d30f3937
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58531283"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59508199"
 ---
 # <a name="update-device"></a>更新设备
 
@@ -22,22 +22,23 @@ ms.locfileid: "58531283"
 
 设备的特定属性只能通过获准的移动设备管理 (MDM) 应用进行更新。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.ReadWrite.All、Directory.AccessAsUser.All |
+|委派（工作或学校帐户） | Device.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序 | Directory.ReadWrite.All |
+|应用程序 | Device.ReadWrite.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
+
+`{id}`请求中的 是设备的 **id** 属性的值，而不是 **deviceId** 属性的值。
+
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /devices/{id}
 ```
-
-> 注意：请求中的“id”是设备的“id”属性，不是“deviceId”属性。
 
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
@@ -50,12 +51,12 @@ PATCH /devices/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|accountEnabled|Boolean| 启用帐户时为 **true**，否则为 **false**。 |
+|accountEnabled|Boolean| 启用帐户时为 `true`，否则为 `false`。 只有全局管理员和云设备管理员角色中的呼叫者才能更新此属性。 |
 |operatingSystem|String|设备上的操作系统类型。|
 |operatingSystemVersion|String|设备上的操作系统版本|
 |displayName|String|设备显示名称。|
-|isCompliant|Boolean|如果设备符合移动设备管理 (MDM) 策略，则为 **true**；否则；为 **false**。 这仅可通过 Intune 针对任何设备操作系统类型进行更新，或由适用于 Windows 操作系统设备的已批准[MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm)应用更新。 |
-|isManaged|Boolean|如果设备由移动设备管理 (MDM) 应用进行托管，则为 **true**；否则，为 **false**。 这仅可通过 Intune 针对任何设备操作系统类型进行更新，或由适用于 Windows 操作系统设备的已批准[MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm)应用更新。 |
+|isCompliant|Boolean|`true` 如果设备符合移动设备管理 (MDM) 策略;否则为 `false` 。 这仅可通过 Intune 针对任何设备操作系统类型进行更新，或由适用于任何操作系统设备的已批准[MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) Windows更新。 |
+|isManaged|Boolean|`true` 如果设备由移动设备管理或 MDM (管理) 管理;否则为 `false` 。 这仅可通过 Intune 针对任何设备操作系统类型进行更新，或由适用于任何操作系统设备的已批准[MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) Windows更新。 |
 
 由于 **设备** 资源 [支持扩展](/graph/extensibility-overview)，因此可以使用 操作添加、更新或删除现有设备实例中扩展的自定义属性中你自己的特定于 `PATCH` 应用的数据。
 
@@ -65,7 +66,7 @@ PATCH /devices/{id}
 
 ## <a name="example"></a>示例
 
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -100,7 +101,7 @@ Content-length: 31
 
 ---
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 
 <!-- {
   "blockType": "response"

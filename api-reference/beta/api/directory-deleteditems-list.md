@@ -2,15 +2,15 @@
 title: 列出已删除的项目
 description: 从已删除的项目中检索最近删除的项目列表。
 author: keylimesoda
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 213860aa7a5b93247b1e98de8da2ace8528cd111
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: ef0143fa934d38467f3327001ca30377c3a09fcb
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53107646"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59508220"
 ---
 # <a name="list-deleted-items"></a>列出已删除项目
 
@@ -20,11 +20,11 @@ ms.locfileid: "53107646"
 
 从[已删除的项目](../resources/directory.md)中检索最近删除的项目列表。
 
-目前，仅应用程序、组和用户资源支持已删除的项目[](../resources/application.md)功能。 [](../resources/group.md) [](../resources/user.md)
+目前，仅应用程序、组和用户资源支持[已删除项目功能](../resources/user.md)。 [](../resources/group.md) [](../resources/application.md)
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 ### <a name="for-applications"></a>对于应用程序：
 
@@ -58,10 +58,18 @@ GET /directory/deleteditems/microsoft.graph.group
 GET /directory/deletedItems/microsoft.graph.user
 ```
 
-此 API 当前支持检索应用程序的对象类型 (microsoft.graph.application) 、组 (microsoft.graph.group) 或用户 (microsoft.graph.user) 删除的项目。 类型指定为 URI 的必需部分。 不支持在没有类型的情况下调用 GET /directory/deleteditems。
+此 API 当前支持检索应用程序的对象类型 () 、 () 用户 () `microsoft.graph.application` `microsoft.graph.group` `microsoft.graph.user` 已删除项目。 OData 转换类型是 URI 的必需部分，不支持在没有类型 `GET /directory/deleteditems` 的情况下 **调用** 。
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 `$orderBy` [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。 
+
+此方法支持 OData 转换指定的资源支持的查询参数。 即 `$count` `$expand` `$filter` ，、、、、、、 `$orderBy` `$search` `$select` 和 `$top` 查询参数。 只有将 **ConsistencyLevel** 标头设置为 `eventual` 和 `$count` 时，才支持某些查询。 例如: 
+
+```msgraph-interactive
+https://graph.microsoft.com/beta/directory/deletedItems/microsoft.graph.group?&$count=true&$orderBy=deletedDateTime desc&$select=id,displayName,deletedDateTime
+ConsistencyLevel: eventual
+```
+
+此示例需要 **ConsistencyLevel** 标头，因为 查询中使用了 和 `$orderBy` `$count` 查询参数。
 
 ### <a name="examples-using-the-orderby-odata-query-parameter"></a>使用 OData $orderBy参数的示例
 
@@ -86,9 +94,11 @@ GET /directory/deletedItems/microsoft.graph.user
 ## <a name="response"></a>响应
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [directoryObject](../resources/directoryobject.md) 对象集合。
-## <a name="example"></a>示例
-##### <a name="request"></a>请求
+## <a name="examples"></a>示例
 
+### <a name="example-1-retrieve-deleted-groups"></a>示例 1：检索已删除的组
+
+#### <a name="request"></a>请求
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -116,8 +126,8 @@ GET https://graph.microsoft.com/beta/directory/deleteditems/microsoft.graph.grou
 
 ---
 
-##### <a name="response"></a>响应
-注意：为了提高可读性，可能缩短了此处显示的响应对象。
+#### <a name="response"></a>响应
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -144,6 +154,79 @@ Content-type: application/json
   ]
 }
 ```
+
+### <a name="example-2-retrieve-the-count-of-deleted-user-objects-and-order-the-results-by-the-deleteddatetime-property"></a>示例 2：检索已删除用户对象的计数，并按 deletedDateTime 属性对结果排序
+
+#### <a name="request"></a>请求
+
+
+# <a name="http"></a>[HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_deleteditems_count"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/directory/deletedItems/microsoft.graph.group?$count=true&$orderBy=deletedDateTime asc&$select=id,displayName,deletedDateTime
+ConsistencyLevel: eventual
+```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-deleteditems-count-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-deleteditems-count-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-deleteditems-count-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-deleteditems-count-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a>响应
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directoryObject",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups(id,displayName,deletedDateTime)",
+    "@odata.count": 3,
+    "value": [
+        {
+            "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/54c8f8fa-7217-4846-baf9-94af2381864f/Microsoft.DirectoryServices.Group",
+            "id": "54c8f8fa-7217-4846-baf9-94af2381864f",
+            "displayName": "Digital Initiative Public Relations",
+            "deletedDateTime": "2021-09-07T15:41:06Z"
+        },
+        {
+            "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/a7acbd5f-07ec-4b97-9fbf-8fe94d44b044/Microsoft.DirectoryServices.Group",
+            "id": "a7acbd5f-07ec-4b97-9fbf-8fe94d44b044",
+            "displayName": "GitHub issue #13843",
+            "deletedDateTime": "2021-09-07T15:41:57Z"
+        },
+        {
+            "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/1a5999a0-3b42-498e-b408-0c2f9951db1d/Microsoft.DirectoryServices.Group",
+            "id": "1a5999a0-3b42-498e-b408-0c2f9951db1d",
+            "displayName": "GitHub issue #13843",
+            "deletedDateTime": "2021-09-07T15:42:03Z"
+        }
+    ]
+}
+```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

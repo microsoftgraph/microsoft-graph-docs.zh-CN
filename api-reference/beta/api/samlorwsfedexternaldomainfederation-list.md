@@ -2,15 +2,15 @@
 title: 列出 samlOrWsFedExternalDomainFederations
 description: 获取 samlOrWsFedExternalDomainFederation 对象及其属性的列表。
 author: namkedia
-localization_priority: medium
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9dd6473ec730e8c83f57f2075141fe468de4cfbd
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 210dd689ea2489003f5355395a76c4bd6da513a3
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58697010"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59508589"
 ---
 # <a name="list-samlorwsfedexternaldomainfederations"></a>列出 samlOrWsFedExternalDomainFederations
 命名空间：microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "58697010"
 
 获取 [samlOrWsFedExternalDomainFederation 对象](../resources/samlorwsfedexternaldomainfederation.md) 及其属性的列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -63,6 +63,8 @@ GET /directory/federationConfigurations/graph.samlOrWsFedExternalDomainFederatio
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_samlorwsfedexternaldomainfederation"
@@ -72,6 +74,24 @@ GET /directory/federationConfigurations/graph.samlOrWsFedExternalDomainFederatio
 ``` http
 GET https://graph.microsoft.com/beta/directory/federationConfigurations/graph.samlOrWsFedExternalDomainFederation
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-samlorwsfedexternaldomainfederation-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-samlorwsfedexternaldomainfederation-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-samlorwsfedexternaldomainfederation-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-samlorwsfedexternaldomainfederation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

@@ -2,15 +2,15 @@
 title: 创建 cloudPcUserSetting
 description: 创建新的 cloudPcUserSetting 。
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 3edffeab1a7eaf4cac05200093d0f7a49d840614
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: deea9748828a464d87b045002bd6dc9c53c861a4
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53208497"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59508031"
 ---
 # <a name="create-cloudpcusersetting"></a>创建 cloudPcUserSetting
 
@@ -20,9 +20,7 @@ ms.locfileid: "53208497"
 
 创建新的 [cloudPcUserSetting](../resources/cloudpcusersetting.md) 对象。
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -59,8 +57,8 @@ POST /deviceManagement/virtualEndpoint/userSettings
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|显示在 UI 中的设置名称。 |
-|localAdminEnabled|Boolean|若要启用本地管理员选项，将此设置更改为 `True` 。  |
-|selfServiceEnabled|Boolean|若要启用自助服务选项，将此设置更改为 `True` 。 |
+|localAdminEnabled|布尔值|若要启用本地管理员选项，将此设置更改为 `True` 。  |
+|selfServiceEnabled|布尔值|若要启用自助服务选项，将此设置更改为 `True` 。 |
 |lastModifiedDateTime|DateTimeOffset|上次修改设置的日期和时间。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示："2014-01-01T00：00：00Z"。 |
 
 ## <a name="response"></a>响应

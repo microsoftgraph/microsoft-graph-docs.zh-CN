@@ -1,16 +1,16 @@
 ---
 title: 创建邀请
 description: 使用该 API 创建新的邀请。邀请将外部用户添加至组织。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Sammak
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 99fb4703e4ae2b4d8714475577c7e34c1c34c8c6
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 1b30943cc2212c9df6a5da66993a7a265da2d56a
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053662"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59508730"
 ---
 # <a name="create-invitation"></a>创建邀请
 
@@ -61,8 +61,8 @@ POST /invitations
 如果成功，此方法将在响应正文中返回 `201 Created` 响应代码和 [invitation](../resources/invitation.md) 对象。
 
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
-下面是一个请求示例。
+### <a name="request"></a>请求
+下面展示了示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -72,10 +72,9 @@ POST /invitations
 ```http
 POST https://graph.microsoft.com/beta/invitations
 Content-type: application/json
-Content-length: 551
 
 {
-  "invitedUserEmailAddress": "yyy@test.com",
+  "invitedUserEmailAddress": "admin@fabrikam.com",
   "inviteRedirectUrl": "https://myapp.contoso.com"
 }
 ```
@@ -98,8 +97,9 @@ Content-length: 551
 ---
 
 
-##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+### <a name="response"></a>响应
+下面展示了示例响应。 
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -108,13 +108,14 @@ Content-length: 551
 ```http
 HTTP/1.1 201 OK
 Content-type: application/json
-Content-length: 551
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#invitations/$entity",
   "id": "7b92124c-9fa9-406f-8b8e-225df8376ba9",
   "inviteRedeemUrl": "https://invitations.microsoft.com/redeem/?tenant=04dcc6ab-388a-4559-b527-fbec656300ea&user=7b92124c-9fa9-406f-8b8e-225df8376ba9&ticket=VV9dmiExBsfRIVNFjb9ITj9VXAd07Ypv4gTg%2f8PiuJs%3d&lc=1033&ver=2.0",
-  "invitedUserDisplayName": "yyy",
-  "invitedUserEmailAddress": "yyy@test.com",
+  "invitedUserDisplayName": "Fabrikam Admin",
+  "invitedUserEmailAddress": "admin@fabrikam.com",
+  "resetRedemption": false,
   "sendInvitationMessage": false,
   "invitedUserMessageInfo": {
      "messageLanguage": null,

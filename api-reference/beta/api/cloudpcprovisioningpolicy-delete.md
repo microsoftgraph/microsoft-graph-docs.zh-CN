@@ -2,15 +2,15 @@
 title: 删除 cloudPcProvisioningPolicy
 description: 删除 cloudPcProvisioningPolicy 对象。
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 8c423bdc23ec090b56bc096a797daeaed61bdcd0
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 3115719fc57ba4682133a56e4076762742af38a5
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52546817"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59508262"
 ---
 # <a name="delete-cloudpcprovisioningpolicy"></a>删除 cloudPcProvisioningPolicy
 
@@ -20,7 +20,6 @@ ms.locfileid: "52546817"
 
 删除 [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) 对象。 无法删除使用中的策略。
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 ## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

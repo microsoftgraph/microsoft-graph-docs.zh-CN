@@ -2,15 +2,15 @@
 title: 获取 educationAssignmentResource
 description: '获取工作分配上特定资源的属性。  '
 author: dipakboyed
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 1a1a489eb28df0d3a3e66c63114615acb60e0078
-ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
+ms.openlocfilehash: 8e16548d244c47129a2c2d9f7c2609362e71439a
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58367175"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59508419"
 ---
 # <a name="get-educationassignmentresource"></a>获取 educationAssignmentResource
 
@@ -18,8 +18,9 @@ ms.locfileid: "58367175"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取工作分配上特定资源的属性。  
-## <a name="permissions"></a>权限
+获取工作分配上特定资源 [的属性](../resources/educationassignment.md)。  
+
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -43,11 +44,14 @@ GET /education/classes/{id}/assignments/{id}/resources/{id}
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
+
 ## <a name="response"></a>响应
 如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [educationAssignmentResource](../resources/educationassignmentresource.md) 对象。
+
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 下面展示了示例请求。
+
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -55,7 +59,7 @@ GET /education/classes/{id}/assignments/{id}/resources/{id}
   "name": "get_educationassignmentresource"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/resources/22002
+GET https://graph.microsoft.com/beta/education/classes/f4a941ff-9da6-4707-ba5b-0eae93cad0b4/assignments/9018ae7a-9953-4796-a152-4c54e0910922/resources/eec7f642-9d9a-406f-bbae-4b3b2c12e273
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationassignmentresource-csharp-snippets.md)]
@@ -75,7 +79,7 @@ GET https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/r
 
 ---
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 下面展示了示例响应。 
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
@@ -91,25 +95,31 @@ Content-type: application/json
 Content-length: 842
 
 {
-  "distributeForStudentWork": true,
-  "id": "22002",
-  "resource": {
-    "createdBy": {
-      "user": {
-        "displayName": "Susana Rocha",
-        "id": "14012"
-      },
-    },
-    "createdDateTime": "2014-01-01T00:00:00Z",
-    "displayName": "Excel workbook 1",
-    "lastModifiedBy": {
-      "user": {
-        "displayName": "Susana Rocha",
-        "id": "14012"
-      },
-    },
-    "lastModifiedDateTime": "2014-01-01T00:00:00Z"
-  }
+    "distributeForStudentWork": false,
+    "id": "eec7f642-9d9a-406f-bbae-4b3b2c12e273",
+    "resource": {
+        "@odata.type": "#microsoft.graph.educationFileResource",
+        "displayName": "First file uploaded as Education resource by t-cristobalb",
+        "createdDateTime": "2021-07-16T23:41:53.9378423Z",
+        "lastModifiedDateTime": "2021-07-16T23:41:53.9378423Z",
+        "fileUrl": "https://graph.microsoft.com/beta/drives/b!DPA6q59Tw0mtgmyXRUmrQRqBZTesG-lMkl1cBmvvMeU6BLWBcGc_R6UgCKyYyTin/items/016XPCQEA5VVDIMU4BSFG3VBI37MPHZ3OE",
+        "createdBy": {
+            "application": null,
+            "device": null,
+            "user": {
+                "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+                "displayName": null
+            }
+        },
+        "lastModifiedBy": {
+            "application": null,
+            "device": null,
+            "user": {
+                "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+                "displayName": null
+            }
+        }
+    }
 }
     
 ```

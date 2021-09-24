@@ -2,15 +2,15 @@
 title: 删除设备
 description: 删除已注册的设备。
 author: spunukol
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 9753faebf1d66604ba52657561387b8a43d7a96d
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 9533c8010dfc2468eca4b08e7ec7c48bb2938a60
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437210"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59508529"
 ---
 # <a name="delete-device"></a>删除设备
 
@@ -26,18 +26,19 @@ ms.locfileid: "50437210"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.AccessAsUser.All |
+|委派（工作或学校帐户） | Device.ReadWrite.All、Directory.AccessAsUser.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
+
+`{id}`请求中的 是设备的 **id** 属性的值，而不是 **deviceId** 属性的值。
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /devices/{id}
 
 ```
 
-> 注意：请求中的“id”是设备的“id”属性，不是“deviceId”属性。
 
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
@@ -52,7 +53,7 @@ DELETE /devices/{id}
 如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -81,7 +82,7 @@ DELETE https://graph.microsoft.com/beta/devices/{id}
 
 ---
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 
 <!-- {
   "blockType": "response",

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 27e1663576b7acc3c9376dfbf7db689513e78d0a
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: f40db6a2a81f91661c02909e5931985d6fa0657b
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48635745"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59508715"
 ---
 ```csharp
 
@@ -13,7 +13,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var invitation = new Invitation
 {
-    InvitedUserEmailAddress = "yyy@test.com",
+    InvitedUserEmailAddress = "admin@fabrikam.com",
     InviteRedirectUrl = "https://myapp.contoso.com"
 };
 
