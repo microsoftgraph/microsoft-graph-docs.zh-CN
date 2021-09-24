@@ -2,15 +2,15 @@
 title: cloudPcStatusDetails 资源类型
 description: 云电脑状态的详细信息。
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 61260bc7f3437fe1f10575afc616462eec2e47dc
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: ae9054e92279d976d65aafc72ac2c38190c88b84
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563834"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59507814"
 ---
 # <a name="cloudpcstatusdetails-resource-type"></a>cloudPcStatusDetails 资源类型
 
@@ -20,15 +20,13 @@ ms.locfileid: "49563834"
 
 云电脑状态的详细信息。
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
 ## <a name="properties"></a>属性
 
 |属性|类型|说明|
 |:---|:---|:---|
-|code|String|与云电脑状态关联的代码。|
-|message|String|状态邮件。|
-|additionalInformation|[KeyValuePair](../resources/keyvaluepair.md) 集合|有关云电脑状态的任何其他信息。|
+|code|String|与云电脑状态相关联的代码。|
+|message|String|状态消息。|
+|additionalInformation|[KeyValuePair](../resources/keyvaluepair.md) 集合|有关云电脑状态的其他信息。|
 
 ## <a name="relationships"></a>关系
 

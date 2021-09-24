@@ -2,15 +2,15 @@
 title: cloudPcAuditEvent 资源类型
 description: 表示审核事件实体。
 author: ecmadao
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: a863ea4128b7383c70bd14f025fcc5ce116dda25
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 155ecf60bcd160877fe905ef1bd6b328b60bb49d
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53211223"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59507513"
 ---
 # <a name="cloudpcauditevent-resource-type"></a>cloudPcAuditEvent 资源类型
 
@@ -20,11 +20,9 @@ ms.locfileid: "53211223"
 
 表示审核事件实体。
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
+## <a name="methods"></a>Methods
 
-## <a name="methods"></a>方法
-
-|方法|返回类型|说明|
+|方法|返回类型|Description|
 |:---|:---|:---|
 |[列出 auditEvents](../api/virtualendpoint-list-auditevents.md)|[cloudPcAuditEvent](../resources/cloudpcauditevent.md) 集合|列出租户 [中所有 cloudPcAuditEvent](../resources/cloudpcauditevent.md) 对象。|
 |[获取 cloudPcAuditEvent](../api/cloudpcauditevent-get.md)|[cloudPcAuditEvent](../resources/cloudpcauditevent.md)|读取 [cloudPcAuditEvent 对象的属性和](../resources/cloudpcauditevent.md) 关系。|

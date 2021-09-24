@@ -2,15 +2,15 @@
 title: 获取 cloudPC
 description: 查看 cloudPC 对象的属性和关系。
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: ad63ff3f4d152005624872f94482b44cb862ef9f
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: bf0f163d43c31e053e728da577f6b0f7514ed27a
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082214"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59507569"
 ---
 # <a name="get-cloudpc"></a>获取 cloudPC
 
@@ -20,8 +20,7 @@ ms.locfileid: "53082214"
 
 读取特定 [cloudPC](../resources/cloudpc.md) 对象的属性和关系。
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

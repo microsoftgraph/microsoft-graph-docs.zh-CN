@@ -1,22 +1,24 @@
 ---
 title: 删除 calendarPermission
 description: 删除 calendarPermission。
+author: Harini84
 ms.localizationpriority: medium
-author: sochowdh
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8b41476575c187d85bcd1d393886b5185cca2731
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6c663265304772254394f085c6fd2c76ed7530c6
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59050766"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59507205"
 ---
 # <a name="delete-calendarpermission"></a>删除 calendarPermission
 
+命名空间：microsoft.graph
+
 删除 calendarPermission。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -49,7 +51,7 @@ DELETE /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 
 | 名称          | 说明   |
 |:--------------|:--------------|
-| Authorization | 持有者 {token} |
+| Authorization | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -64,7 +66,6 @@ DELETE /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
-
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -93,7 +94,6 @@ DELETE https://graph.microsoft.com/v1.0/users/{id}/calendar/calendarPermissions/
 
 ---
 
-
 ### <a name="response"></a>响应
 
 下面展示了示例响应。
@@ -116,4 +116,3 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
-

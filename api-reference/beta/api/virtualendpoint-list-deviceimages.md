@@ -2,15 +2,15 @@
 title: 列出 cloudPcDeviceImages
 description: 列出上载到云电脑的操作系统映像的属性和关系。
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: dd5d6ea1f3363963fdb978766d788c167437bd66
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 6f8ec3ee7638c5ba30d329c714fcc154c514dab1
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53534086"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59507520"
 ---
 # <a name="list-deviceimages"></a>列出 deviceImages
 
@@ -18,11 +18,9 @@ ms.locfileid: "53534086"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-列出 [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) 对象的属性和关系 (上传到云) 操作系统映像。
+列出 [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) 对象的属性和关系 (上传到) 操作系统映像。
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

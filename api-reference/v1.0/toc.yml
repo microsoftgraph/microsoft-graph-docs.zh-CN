@@ -165,7 +165,7 @@ items:
             href: /graph/toolkit/get-started/mgt-spfx?context=graph/api/1.0
       - name: 构建首个应用
         items:
-          - name: 注册 Azure AD 应用
+          - name: 注册 Azure AD 租户应用
             href: /graph/toolkit/get-started/add-aad-app-registration?context=graph/api/1.0
           - name: 构建 Web 应用程序 (JavaScript)
             href: /graph/toolkit/get-started/build-a-web-app?context=graph/api/1.0
@@ -175,9 +175,9 @@ items:
             href: /graph/toolkit/get-started/use-/graph/toolkit-with-angular?context=graph/api/1.0
           - name: 构建 SharePoint Web 部件
             href: /graph/toolkit/get-started/build-a-sharepoint-web-part?context=graph/api/1.0
-          - name: 生成Teams选项卡
+          - name: 生成 Teams 选项卡
             href: /graph/toolkit/get-started/build-a-microsoft-teams-tab?context=graph/api/1.0
-          - name: 使用 SSO Teams选项卡
+          - name: 使用 SSO 生成 Teams 选项卡
             href: /graph/toolkit/get-started/build-a-microsoft-teams-sso-tab?context=graph/api/1.0
           - name: 构建电子应用
             href: /graph/toolkit/get-started/build-an-electron-app?context=graph/api/1.0
@@ -187,13 +187,13 @@ items:
             href: /graph/toolkit/providers/providers?context=graph/api/1.0
           - name: MSAL 提供商
             href: /graph/toolkit/providers/msal?context=graph/api/1.0
-          - name: MSAL2 提供程序
+          - name: MSAL2 提供商
             href: /graph/toolkit/providers/msal2?context=graph/api/1.0
-          - name: SharePoint 提供程序
+          - name: SharePoint 提供商
             href: /graph/toolkit/providers/sharepoint?context=graph/api/1.0
-          - name: Teams提供程序
+          - name: Teams 提供商
             href: /graph/toolkit/providers/teams?context=graph/api/1.0
-          - name: TeamsMSAL2 提供程序
+          - name: Teams MSAL2 提供商
             href: /graph/toolkit/providers/teams-msal2?context=graph/api/1.0
           - name: 电子提供程序
             href: /graph/toolkit/providers/electron?context=graph/api/1.0
@@ -280,7 +280,7 @@ items:
           - name: 应用角色分配
             href: resources/approleassignment.md
             items:
-              - name: 列表
+              - name: 列出
                 href: api/user-list-approleassignments.md
               - name: 加法
                 href: api/user-post-approleassignments.md
@@ -323,7 +323,7 @@ items:
                 href: api/user-list-contactfolders.md
           - name: 委派权限授予
             items:
-              - name: 列表
+              - name: 列出
                 href: api/user-list-oauth2permissiongrants.md
           - name: 目录对象
             href: resources/directoryobject.md
@@ -521,7 +521,7 @@ items:
         items:
           - name: 概述
             href: resources/groups-overview.md
-          - name: 组
+          - name: Group
             href: resources/group.md
             items:
               - name: 列出组
@@ -624,7 +624,7 @@ items:
           - name: 应用角色分配
             href: resources/approleassignment.md
             items:
-              - name: 列表
+              - name: 列出
                 href: api/group-list-approleassignments.md
               - name: 加法
                 href: api/group-post-approleassignments.md
@@ -823,7 +823,7 @@ items:
                         href: api/application-delete-extensionproperty.md
               - name: 所有者
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/application-list-owners.md
                   - name: 加法
                     href: api/application-post-owners.md
@@ -836,7 +836,7 @@ items:
                     items:
                       - name: Assign
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: 列表
+                      - name: 列出
                         href: api/application-list-tokenissuancepolicies.md
                       - name: 删除
                         href: api/application-delete-tokenissuancepolicies.md
@@ -845,14 +845,14 @@ items:
                     items:
                       - name: Assign
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: 列表
+                      - name: 列出
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: 删除
                         href: api/application-delete-tokenlifetimepolicies.md
               - name: 应用程序模板
                 href: resources/applicationtemplate.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/applicationtemplate-list.md
                   - name: 获取
                     href: api/applicationtemplate-get.md
@@ -880,7 +880,7 @@ items:
               - name: 应用角色分配
                 href: resources/approleassignment.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/serviceprincipal-list-approleassignments.md
                   - name: 加法
                     href: api/serviceprincipal-post-approleassignments.md
@@ -904,7 +904,7 @@ items:
                     href: api/serviceprincipal-removekey.md
               - name: 委派权限授予
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/serviceprincipal-list-oauth2permissiongrants.md
               - name: 委派权限分类
                 href: resources/delegatedpermissionclassification.md
@@ -931,7 +931,7 @@ items:
                     href: api/serviceprincipal-getmemberobjects.md
               - name: 所有者
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/serviceprincipal-list-owners.md
                   - name: 加法
                     href: api/serviceprincipal-post-owners.md
@@ -944,7 +944,7 @@ items:
                     items:
                       - name: Assign
                         href: api/serviceprincipal-post-claimsmappingpolicies.md
-                      - name: 列表
+                      - name: 列出
                         href: api/serviceprincipal-list-claimsmappingpolicies.md
                       - name: 删除
                         href: api/serviceprincipal-delete-claimsmappingpolicies.md
@@ -953,7 +953,7 @@ items:
                     items:
                       - name: Assign
                         href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
-                      - name: 列表
+                      - name: 列出
                         href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
                       - name: 删除
                         href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
@@ -990,7 +990,7 @@ items:
                     items:
                       - name: Assign
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: 列表
+                      - name: 列出
                         href: api/application-list-tokenissuancepolicies.md
                       - name: 删除
                         href: api/application-delete-tokenissuancepolicies.md
@@ -999,7 +999,7 @@ items:
                     items:
                       - name: Assign
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: 列表
+                      - name: 列出
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: 删除
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -1153,6 +1153,10 @@ items:
           - name: 日历权限
             href: resources/calendarpermission.md
             items:
+              - name: 列出
+                href: api/calendar-list-calendarpermissions.md
+              - name: 创建
+                href: api/calendar-post-calendarpermissions.md
               - name: 获取
                 href: api/calendarpermission-get.md
               - name: 更新
@@ -1264,7 +1268,7 @@ items:
               - name: 参与者
                 href: resources/participant.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/call-list-participants.md
                   - name: 获取
                     href: api/participant-get.md
@@ -1374,7 +1378,7 @@ items:
               - name: 打印连接器
                 href: resources/printconnector.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/print-list-connectors.md
                   - name: 获取
                     href: api/printconnector-get.md
@@ -1410,7 +1414,7 @@ items:
                     href: api/printjob-cancel.md
                   - name: 中止
                     href: api/printjob-abort.md
-                  - name: Redirect
+                  - name: 重定向
                     href: api/printjob-redirect.md
               - name: 打印操作
                 href: resources/printoperation.md
@@ -1519,7 +1523,7 @@ items:
               - name: 打印服务
                 href: resources/printservice.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/print-list-services.md
                   - name: 获取
                     href: api/printservice-get.md
@@ -3728,7 +3732,7 @@ items:
                   - name: 合规性管理合作伙伴
                     href: resources/intune-onboarding-compliancemanagementpartner.md
                     items:
-                      - name: 列表
+                      - name: 列出
                         href: api/intune-onboarding-compliancemanagementpartner-list.md
                       - name: 获取
                         href: api/intune-onboarding-compliancemanagementpartner-get.md
@@ -4665,14 +4669,6 @@ items:
                         href: api/unifiedroleassignment-delete.md
           - name: 身份和登录
             items:
-              - name: 身份验证流策略
-                items:
-                  - name: 身份验证流策略
-                    href: resources/authenticationflowspolicy.md
-                  - name: 获取
-                    href: api/authenticationflowspolicy-get.md
-                  - name: 更新
-                    href: api/authenticationflowspolicy-update.md
               - name: 身份验证方法
                 items:
                   - name: 概述
@@ -4682,7 +4678,7 @@ items:
                   - name: FIDO2 安全密钥
                     href: resources/fido2authenticationmethod.md
                     items:
-                      - name: 列表
+                      - name: 列出
                         href: api/fido2authenticationmethod-list.md
                       - name: 获取
                         href: api/fido2authenticationmethod-get.md
@@ -4691,7 +4687,7 @@ items:
                   - name: Microsoft Authenticator
                     href: resources/microsoftauthenticatorauthenticationmethod.md
                     items:
-                      - name: 列表
+                      - name: 列出
                         href: api/microsoftauthenticatorauthenticationmethod-list.md
                       - name: 获取
                         href: api/microsoftauthenticatorauthenticationmethod-get.md
@@ -4700,50 +4696,12 @@ items:
                   - name: Windows Hello 企业版
                     href: resources/windowshelloforbusinessauthenticationmethod.md
                     items:
-                      - name: 列表
+                      - name: 列出
                         href: api/windowshelloforbusinessauthenticationmethod-list.md
                       - name: 获取
                         href: api/windowshelloforbusinessauthenticationmethod-get.md
                       - name: 删除
                         href: api/windowshelloforbusinessauthenticationmethod-delete.md
-              - name: 身份验证方法策略
-                items:
-                  - name: 概述
-                    href: resources/authenticationmethodspolicies-overview.md
-                  - name: 身份验证方法策略
-                    href: resources/authenticationmethodspolicy.md
-                    items:
-                      - name: 获取
-                        href: api/authenticationmethodspolicy-get.md
-                      - name: 更新
-                        href: api/authenticationmethodspolicy-update.md
-                  - name: FIDO2 策略
-                    href: resources/fido2authenticationmethodconfiguration.md
-                    items:
-                      - name: 获取
-                        href: api/fido2authenticationmethodconfiguration-get.md
-                      - name: 更新
-                        href: api/fido2authenticationmethodconfiguration-update.md
-                      - name: 删除
-                        href: api/fido2authenticationmethodconfiguration-delete.md
-                  - name: Microsoft Authenticator策略
-                    href: resources/microsoftauthenticatorauthenticationmethodconfiguration.md
-                    items:
-                      - name: 获取
-                        href: api/microsoftauthenticatorauthenticationmethodconfiguration-get.md
-                      - name: 更新
-                        href: api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
-                      - name: 删除
-                        href: api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
-                  - name: 电子邮件策略
-                    href: resources/emailauthenticationmethodconfiguration.md
-                    items:
-                      - name: 获取
-                        href: api/emailauthenticationmethodconfiguration-get.md
-                      - name: 更新
-                        href: api/emailauthenticationmethodconfiguration-update.md
-                      - name: 删除
-                        href: api/emailauthenticationmethodconfiguration-delete.md
               - name: 基于证书的身份验证配置
                 href: resources/certificatebasedauthconfiguration.md
                 items:
@@ -4777,7 +4735,7 @@ items:
                         items:
                           - name: 命名位置
                             href: resources/namedlocation.md
-                          - name: 列表
+                          - name: 列出
                             href: api/conditionalaccessroot-list-namedlocations.md
                           - name: 获取
                             href: api/namedlocation-get.md
@@ -4837,7 +4795,7 @@ items:
                   - name: 风险检测
                     href: resources/riskdetection.md
                     items:
-                      - name: 列表
+                      - name: 列出
                         href: api/riskdetection-list.md
                       - name: 获取
                         href: api/riskdetection-get.md
@@ -4916,7 +4874,7 @@ items:
                     href: api/organizationalbrandingpropertieslocalization-update.md
                   - name: 删除本地化
                     href: api/organizationalbrandingpropertieslocalization-delete.md
-              - name: 策略
+              - name: Policy
                 href: resources/policy-overview.md
                 items:
                   - name: 基于活动的超时策略
@@ -4932,6 +4890,52 @@ items:
                         href: api/activitybasedtimeoutpolicy-update.md
                       - name: 删除
                         href: api/activitybasedtimeoutpolicy-delete.md
+                  - name: 身份验证流策略
+                    items:
+                      - name: 身份验证流策略
+                        href: resources/authenticationflowspolicy.md
+                      - name: 获取
+                        href: api/authenticationflowspolicy-get.md
+                      - name: 更新
+                        href: api/authenticationflowspolicy-update.md
+                  - name: 身份验证方法策略
+                    items:
+                      - name: 概述
+                        href: resources/authenticationmethodspolicies-overview.md
+                      - name: 身份验证方法策略
+                        href: resources/authenticationmethodspolicy.md
+                        items:
+                          - name: 获取
+                            href: api/authenticationmethodspolicy-get.md
+                          - name: 更新
+                            href: api/authenticationmethodspolicy-update.md
+                      - name: FIDO2 策略
+                        href: resources/fido2authenticationmethodconfiguration.md
+                        items:
+                          - name: 获取
+                            href: api/fido2authenticationmethodconfiguration-get.md
+                          - name: 更新
+                            href: api/fido2authenticationmethodconfiguration-update.md
+                          - name: 删除
+                            href: api/fido2authenticationmethodconfiguration-delete.md
+                      - name: Microsoft Authenticator策略
+                        href: resources/microsoftauthenticatorauthenticationmethodconfiguration.md
+                        items:
+                          - name: 获取
+                            href: api/microsoftauthenticatorauthenticationmethodconfiguration-get.md
+                          - name: 更新
+                            href: api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
+                          - name: 删除
+                            href: api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
+                      - name: 电子邮件策略
+                        href: resources/emailauthenticationmethodconfiguration.md
+                        items:
+                          - name: 获取
+                            href: api/emailauthenticationmethodconfiguration-get.md
+                          - name: 更新
+                            href: api/emailauthenticationmethodconfiguration-update.md
+                          - name: 删除
+                            href: api/emailauthenticationmethodconfiguration-delete.md
                   - name: 授权策略
                     href: resources/authorizationpolicy.md
                     items:
@@ -4939,21 +4943,6 @@ items:
                         href: api/authorizationpolicy-get.md
                       - name: 更新
                         href: api/authorizationpolicy-update.md
-                  - name: 主领域发现策略
-                    href: resources/homerealmdiscoverypolicy.md
-                    items:
-                      - name: 列出
-                        href: api/homerealmdiscoverypolicy-list.md
-                      - name: 创建
-                        href: api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies.md
-                      - name: 获取
-                        href: api/homerealmdiscoverypolicy-get.md
-                      - name: 更新
-                        href: api/homerealmdiscoverypolicy-update.md
-                      - name: 删除
-                        href: api/homerealmdiscoverypolicy-delete.md
-                      - name: 列出已应用到应用程序的策略
-                        href: api/homerealmdiscoverypolicy-list-appliesto.md
                   - name: 声明映射策略
                     href: resources/claimsmappingpolicy.md
                     items:
@@ -4986,6 +4975,21 @@ items:
                         href: api/featurerolloutpolicy-post-appliesto.md
                       - name: Delete appliesTo
                         href: api/featurerolloutpolicy-delete-appliesto.md
+                  - name: 主领域发现策略
+                    href: resources/homerealmdiscoverypolicy.md
+                    items:
+                      - name: 列出
+                        href: api/homerealmdiscoverypolicy-list.md
+                      - name: 创建
+                        href: api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies.md
+                      - name: 获取
+                        href: api/homerealmdiscoverypolicy-get.md
+                      - name: 更新
+                        href: api/homerealmdiscoverypolicy-update.md
+                      - name: 删除
+                        href: api/homerealmdiscoverypolicy-delete.md
+                      - name: 列出已应用到应用程序的策略
+                        href: api/homerealmdiscoverypolicy-list-appliesto.md
                   - name: 令牌颁发策略
                     href: resources/tokenissuancepolicy.md
                     items:
@@ -5111,7 +5115,7 @@ items:
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: 删除
                         href: api/identityapiconnector-delete.md
-          - name: 治理
+          - name: 管控
             items:
               - name: 访问审查
                 href: resources/accessreviewsv2-root.md
@@ -5119,7 +5123,7 @@ items:
                   - name: 访问评审计划定义
                     href: resources/accessreviewscheduledefinition.md
                     items:
-                      - name: 列表
+                      - name: 列出
                         href: api/accessreviewscheduledefinition-list.md
                       - name: 获取
                         href: api/accessreviewscheduledefinition-get.md
@@ -5134,7 +5138,7 @@ items:
                   - name: 访问评审实例
                     href: resources/accessreviewinstance.md
                     items:
-                      - name: 列表
+                      - name: 列出
                         href: api/accessreviewinstance-list.md
                       - name: 列出决策
                         href: api/accessreviewinstance-list-decisions.md
@@ -5178,7 +5182,7 @@ items:
                   - name: 应用同意请求
                     href: resources/appconsentrequest.md
                     items:
-                      - name: 列表
+                      - name: 列出
                         href: api/appconsentrequest-list.md
                       - name: 获取
                         href: api/appconsentrequest-get.md
@@ -5187,7 +5191,7 @@ items:
                   - name: 用户同意请求
                     href: resources/userconsentrequest.md
                     items:
-                      - name: 列表
+                      - name: 列出
                         href: api/userconsentrequest-list.md
                       - name: 获取
                         href: api/userconsentrequest-get.md
@@ -5970,7 +5974,7 @@ items:
                 href: api/list-create.md
               - name: 列出子网站
                 href: api/site-list-subsites.md
-              - name: 权限
+              - name: Permissions
                 href: resources/permission.md
                 items:
                   - name: 获取网站权限
@@ -5985,7 +5989,7 @@ items:
                     href: api/site-delete-permission.md
           - name: 列表
             items:
-              - name: 列表
+              - name: 列出
                 href: resources/list.md
               - name: 创建列表
                 href: api/list-create.md
@@ -6003,7 +6007,7 @@ items:
                 href: api/list-list-contenttypes.md
               - name: 添加内容类型副本
                 href: api/contenttype-addcopy.md
-          - name: 列
+          - name: 列数
             items:
               - name: 列定义
                 href: resources/columndefinition.md
@@ -6064,7 +6068,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: 更新
                     href: api/termstore-store-update.md
-              - name: 组
+              - name: Group
                 href: resources/termstore-group.md
                 items:
                   - name: 列出
@@ -6078,7 +6082,7 @@ items:
               - name: Set
                 href: resources/termstore-set.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/termstore-group-list-sets.md
                   - name: 列出子项
                     href: api/termstore-term-list-children.md
@@ -6309,6 +6313,10 @@ items:
                 href: api/channel-list-members.md
               - name: 列出消息回复
                 href: api/chatmessage-list-replies.md
+              - name: 设置电子邮件地址
+                href: api/channel-provisionemail.md
+              - name: 删除电子邮件地址
+                href: api/channel-removeemail.md
               - name: 删除成员
                 href: api/channel-delete-members.md
               - name: 回复消息
@@ -6525,7 +6533,7 @@ items:
                     href: api/offershiftrequest-post.md
                   - name: 获取
                     href: api/offershiftrequest-get.md
-                  - name: 列表
+                  - name: 列出
                     href: api/offershiftrequest-list.md
                   - name: 批准
                     href: api/offershiftrequest-approve.md
@@ -6727,6 +6735,8 @@ items:
                 href: api/workbook-list-worksheets.md
               - name: 列出名称
                 href: api/workbook-list-names.md
+              - name: '获取异步 (操作) '
+                href: api/workbook-tablerowoperationresult.md
           - name: 工作簿应用程序
             href: resources/workbookapplication.md
             items:
@@ -6737,7 +6747,7 @@ items:
           - name: 工作簿注释
             href: resources/workbookcomment.md
             items:
-              - name: 列表
+              - name: 列出
                 href: api/workbook-list-comments.md
               - name: 获取
                 href: api/workbookcomment-get.md

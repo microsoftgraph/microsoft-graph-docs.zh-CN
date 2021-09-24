@@ -1,16 +1,16 @@
 ---
 title: 删除 unifiedRoleAssignmentMultiple
 description: 删除 unifiedRoleAssignmentMultiple 对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 6d888d8755ca39fd4cfb7e9b8d4c93c18bfcb487
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: b2e933da27e57496d9584c570f71e23a02a750ec
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53534079"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59507219"
 ---
 # <a name="delete-unifiedroleassignmentmultiple"></a>删除 unifiedRoleAssignmentMultiple
 
@@ -24,11 +24,9 @@ ms.locfileid: "53534079"
 - 云电脑 
 - Intune (设备) 
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
+## <a name="permissions"></a>Permissions
 
-## <a name="permissions"></a>权限
-
-根据 RBAC 提供程序以及 (或应用程序) 的权限类型，从下表中选择调用此 API 所需的最低特权权限。 若要了解 [更多信息，包括在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 选择更多特权权限之前保持谨慎，请参阅 [权限](/graph/permissions-reference)。 
+根据 RBAC 提供程序以及 (或应用程序) 的权限类型，从下表中选择调用此 API 所需的最小特权权限。 若要了解 [更多信息，包括在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 选择更多特权权限之前保持谨慎，请参阅 [权限](/graph/permissions-reference)。 
 
 ### <a name="for-cloud-pc-provider"></a>对于云电脑提供商
 
@@ -38,7 +36,7 @@ ms.locfileid: "53534079"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | CloudPC.ReadWrite.All  |
 
-### <a name="for-device-management-intune-provider"></a>对于 Intune (提供程序的设备) 管理
+### <a name="for-device-management-intune-provider"></a>对于 Intune (设备) 提供程序
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|

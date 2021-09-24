@@ -2,15 +2,15 @@
 title: cloudPcUserRoleScopeTagInfo 资源类型
 description: 表示具有标识和显示名称范围标记信息。
 author: ecmadao
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 61df383dca51ec2494eb10b745bc227bcfc5d9b8
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: c070e11bb86b9a41ed5de05955a39599ee21e2f4
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53211213"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59507198"
 ---
 # <a name="cloudpcuserrolescopetaginfo-resource-type"></a>cloudPcUserRoleScopeTagInfo 资源类型
 
@@ -19,8 +19,6 @@ ms.locfileid: "53211213"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示具有标识和显示名称范围标记信息。
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|

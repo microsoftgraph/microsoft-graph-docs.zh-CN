@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 0deca2d2161bbdf278685108f6a1de1a89914987
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f1c26c7d8d10522820f3d51246bad22028ae0284
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59008311"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59507240"
 ---
 # <a name="get-group"></a>获取组
 
@@ -107,32 +107,43 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups/$entity",
+    "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/b320ee12-b1cd-4cca-b648-a437be61c5cd/Microsoft.DirectoryServices.Group",
     "id": "b320ee12-b1cd-4cca-b648-a437be61c5cd",
     "deletedDateTime": null,
     "classification": null,
-    "createdDateTime": "2018-12-22T00:51:37Z",
+    "createdDateTime": "2021-09-13T10:07:01Z",
     "creationOptions": [],
     "description": "Self help community for library",
     "displayName": "Library Assist",
+    "expirationDateTime": "2022-01-11T10:07:01Z",
     "groupTypes": [
         "Unified"
     ],
     "isAssignableToRole": null,
-    "mail": "library2@contoso.com",
+    "mail": "library@contoso.com",
     "mailEnabled": true,
     "mailNickname": "library",
+    "membershipRule": null,
+    "membershipRuleProcessingState": null,
+    "onPremisesDomainName": null,
     "onPremisesLastSyncDateTime": null,
+    "onPremisesNetBiosName": null,
+    "onPremisesSamAccountName": null,
     "onPremisesSecurityIdentifier": null,
     "onPremisesSyncEnabled": null,
-    "preferredDataLocation": "CAN",
+    "preferredDataLocation": "EU",
+    "preferredLanguage": null,
     "proxyAddresses": [
-        "smtp:library7423@contoso.com",
-        "SMTP:library2@contoso.com"
+        "SPO:SPO_0dbffe23-f6fb-4478-adcd-880daf88bb12@SPO_84841066-274d-4ec0-a5c1-276be684bdd3",
+        "SMTP:library@contoso.com"
     ],
-    "renewedDateTime": "2018-12-22T00:51:37Z",
+    "renewedDateTime": "2021-09-13T10:07:01Z",
     "resourceBehaviorOptions": [],
     "resourceProvisioningOptions": [],
     "securityEnabled": false,
+    "securityIdentifier": "S-1-12-1-1306860066-1319449225-59104187-458188010",
+    "theme": null,
     "visibility": "Public",
     "onPremisesProvisioningErrors": []
 }

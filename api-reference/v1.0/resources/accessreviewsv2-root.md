@@ -5,34 +5,32 @@ ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: deec1bb8fee27ec9751f65a56a8133b0f0a81a2b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2d1b72b557c5825b72cbf827609933bdc97edcfa
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59099096"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59507429"
 ---
 # <a name="azure-ad-access-reviews"></a>Azure AD 访问审查
 
 命名空间：microsoft.graph
 
+使用 [Azure AD 访问评审](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) 配置一次性或定期访问评审，以证明用户访问 Azure AD 资源的权利。 这些 Azure AD 资源包括组、服务主体、访问包和特权角色。
 
-使用 [Azure AD 访问评审](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) 配置一次性或定期访问评审，以证明用户对 Azure AD 资源的访问权限。
+访问评审的典型客户方案包括：
 
-访问组成员身份和应用程序以及 Azure AD 角色访问的典型客户方案包括：
+- 客户可以通过组成员身份查看和认证来宾用户对组的访问权限。 审阅者可以使用提供的见解来有效决定是否应让来宾继续访问。
+- 客户可以审阅并认证员工对 Azure AD 资源的访问权限。
+- 客户可以审阅和审核对 Azure AD 特权角色的分配。 这支持组织管理特权访问。
 
-- 客户可以审阅并认证来宾用户对应用程序、Azure AD 角色和组成员身份的访问权限。 审阅者可以使用提供的见解来有效决定是否应让来宾继续访问。
+访问评审功能（包括 API）仅在用户或 EMS E5 订阅的有效购买或试用Azure AD Premium P2可用。
 
-- 客户可以通过访问评审查看并认证员工对应用程序、Azure AD 角色和组成员身份的访问权限。
-
-访问评审功能（包括 API）仅提供有效的购买或试用许可证，Azure AD Premium P2 EMS E5 订阅。
-
-
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 下表列出了可用于与访问评审相关资源进行交互的方法。
 
-| 方法           | 返回类型    |说明|
+| 方法           | 返回类型    |Description|
 |:---------------|:--------|:----------|
 |**计划定义**| | |
 |[列出 accessReviewScheduleDefinitions](../api/accessreviewscheduledefinition-list.md)|[accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 集合|获取 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象及其属性的列表。|
@@ -60,9 +58,9 @@ ms.locfileid: "59099096"
 
 ## <a name="role-and-application-permission-authorization-checks"></a>角色和应用程序权限授权检查
 
-以下目录角色是呼叫用户管理访问评审所需的。 
+以下 [Azure AD](/azure/active-directory/roles/permissions-reference) 角色是呼叫用户管理访问评审所需的。
 
-| Operation | 应用程序权限 | 呼叫用户的必需目录角色 |
+| 操作 | 应用程序权限 | 呼叫用户的必需目录角色 |
 |:------------------|:------------|:--------------------------------------------|
 | 读取 | AccessReview.Read.All 或 AccessReview.ReadWrite.All | 全局管理员、全局读取者、安全管理员、安全读者或用户管理员 |
 | 创建、更新或删除 | AccessReview.ReadWrite.All | 全局管理员或用户管理员 |
@@ -71,5 +69,6 @@ ms.locfileid: "59099096"
 
 ## <a name="see-also"></a>另请参阅
 
+- [了解如何](/graph/accessreviews-overview) 使用访问评审 API 查看对 Azure AD 资源的访问权限的教程
 - [管理员如何使用 Azure AD 访问评审管理用户访问](/azure/active-directory/active-directory-azure-ad-controls-manage-user-access-with-access-reviews)
 - [管理员如何使用 Azure AD 访问评审管理来宾访问](/azure/active-directory/active-directory-azure-ad-controls-manage-guest-access-with-access-reviews)

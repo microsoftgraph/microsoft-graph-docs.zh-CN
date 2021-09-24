@@ -2,15 +2,15 @@
 title: cloudPC：重新设置
 description: 重新设置特定的云电脑。
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 483a58ca7c753ec0ee8e5a2f2465b8b4cad870b3
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: b86bc52fb971cb29d72d0643e3b8f20fa75bd6cd
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53533801"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59507534"
 ---
 # <a name="cloudpc-reprovision"></a>cloudPC：重新设置
 
@@ -20,8 +20,7 @@ ms.locfileid: "53533801"
 
 重新设置特定的云电脑。
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

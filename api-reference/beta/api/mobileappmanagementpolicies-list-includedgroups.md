@@ -2,15 +2,15 @@
 title: 列出 includedGroups
 description: 获取包含在移动应用管理策略中的组列表。
 author: ravennMSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7f0d48a74ce11a3809a42f9f2c26a8075d33155a
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 6d47f7bce7adae9c915f6f5c60c5aad46894b810
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53440961"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59508522"
 ---
 # <a name="list-includedgroups"></a>列出 includedGroups
 
@@ -20,7 +20,7 @@ ms.locfileid: "53440961"
 
 获取包含在移动应用管理策略中的组列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
