@@ -161,6 +161,8 @@ items:
             href: cloud-communications-callrecords.md
           - name: 管理机器人的电话号码
             href: cloud-communications-phone-number.md
+          - name: 联机会议项目和权限
+            href: cloud-communications-online-meeting-artifacts.md
       - name: 合规性分数（预览版）
         href: compliance-concept-overview.md
       - name: 连接外部内容
@@ -261,10 +263,14 @@ items:
         items:
           - name: 概述
             href: azuread-identity-access-management-concept-overview.md
-          - name: 身份验证方法
-            href: authenticationmethods-get-started.md
+          - name: 目录管理
+            items:
+              - name: 使用 PIM 分配特权角色
+                href: tutorial-assign-azureadroles.md
           - name: 身份和登录
             items:
+              - name: 身份验证方法
+                href: authenticationmethods-get-started.md
               - name: 识别和修正风险
                 href: tutorial-riskdetection-api.md
           - name: 管控
@@ -395,9 +401,9 @@ items:
             href: search-concept-custom-types.md
           - name: 搜索人员（预览版）
             href: search-concept-person.md
-          - name: 排序搜索结果（预览）
+          - name: 排序搜索结果
             href: search-concept-sort.md
-          - name: 改进搜索结果（预览）
+          - name: 改进搜索结果
             href: search-concept-aggregation.md
           - name: 请求拼写更正（预览）
             href: search-concept-speller.md
@@ -443,7 +449,6 @@ items:
           - name: 使用机器人发送主动邮件
             href: /microsoftteams/platform/graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages?context=graph/context
           - name: 活动源通知
-            href: teams-send-activityfeednotifications.md
             items:
               - name: 发送活动源通知
                 href: teams-send-activityfeednotifications.md
@@ -541,7 +546,7 @@ items:
                     href: teams-change-notification-in-microsoft-teams-overview.md
                   - name: Teams 和频道
                     href: teams-changenotifications-team-and-channel.md
-                  - name: 团队成员资格
+                  - name: 团队和频道成员身份
                     href: teams-changenotifications-teamMembership.md
                   - name: 聊天和频道消息
                     href: teams-changenotifications-chatmessage.md

@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: af0a24ad68f95b923b1c810a245b99d1b646a2af
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 2e808cdb3d877a796e1a593fb5665f91c212e072
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696916"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59508937"
 ---
 # <a name="list-users"></a>列出用户
 
@@ -192,7 +192,9 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-以下是请求示例。有关" **signInActivity** 属性的详细信息，需要 Azure AD Premium P1/P2 许可证和 AuditLog.Read.All 权限。
+以下是请求示例。有关" **signInActivity** 属性的详细信息，需要 Azure AD Premium P1/P2 许可证和 AuditLog.Read.All 权限。 
+
+>**注意：** 检索 **signInActivity** 属性存在 [已知问题](/graph/known-issues#azure-ad-activity-reports)。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -267,7 +269,9 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-以下是请求示例。有关" **signInActivity** 属性的详细信息，需要 Azure AD Premium P1/P2 许可证和 AuditLog.Read.All 权限。
+以下是请求示例。有关" **signInActivity** 属性的详细信息，需要 Azure AD Premium P1/P2 许可证和 AuditLog.Read.All 权限。 
+
+>**注意：** 检索 **signInActivity** 属性存在 [已知问题](/graph/known-issues#azure-ad-activity-reports)。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -331,7 +335,9 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-以下是请求示例。有关" **signInActivity** 属性的详细信息，需要 Azure AD Premium P1/P2 许可证和 AuditLog.Read.All 权限。
+以下是请求示例。有关" **signInActivity** 属性的详细信息，需要 Azure AD Premium P1/P2 许可证和 AuditLog.Read.All 权限。 
+
+>**注意：** 检索 **signInActivity** 属性存在 [已知问题](/graph/known-issues#azure-ad-activity-reports)。
 
 <!-- {
   "blockType": "ignored",
@@ -534,14 +540,34 @@ Content-type: application/json
 
 下面展示了示例请求。 此请求要求将 **ConsistencyLevel** 标头设置为 `eventual`，因为在请求中有 `$search`。 有关使用 **ConsistencyLevel** 和 `$count` 的详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_wa_count"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users?$search="displayName:wa"&$orderby=displayName&$count=true
 ConsistencyLevel: eventual
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-wa-count-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-wa-count-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-wa-count-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-wa-count-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 
@@ -581,7 +607,7 @@ Content-type: application/json
 下面展示了示例请求。 此请求要求将 **ConsistencyLevel** 标头设置为 `eventual`，因为在请求中有 `$search`。 有关使用 **ConsistencyLevel** 和 `$count` 的详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_to_count"
 }-->
 ```msgraph-interactive
@@ -633,13 +659,33 @@ Content-type: application/json
 
 下面展示了示例请求。 此请求要求将 **ConsistencyLevel** 标头设置为 `eventual`，因为在请求中有 `$search`。 有关使用 **ConsistencyLevel** 和 `$count` 的详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_user_assignedLicenses"
 } -->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users?$select=id,mail,assignedLicenses&$filter=assignedLicenses/any(u:u/skuId eq cbdc14ab-d96c-4c30-b9f4-6ada7cdc1d46)
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-user-assignedlicenses-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-user-assignedlicenses-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-user-assignedlicenses-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-user-assignedlicenses-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 

@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ccd9b1303d4c507d4a17bb16b04387ec08f7a43f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 24aff823670dbc48eee5a3149c0bcb4a21ac9bc8
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59074295"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59507471"
 ---
 # <a name="create-group"></a>创建组
 
@@ -62,9 +62,11 @@ POST /groups
 | securityEnabled | Boolean | 对于已启用安全机制的组（包括 Microsoft 365 组），请设置为 `true`。 必需。  **注意：** 使用 Microsoft Azure 门户创建的组始终将 **securityEnabled** 初始设置为 `true`。|
 
 > [!IMPORTANT]
-> 使用 **Group.Create** 应用程序权限创建组而不指定所有者时，将会以匿名方式创建组，并且该组不可修改。 创建组时，将所有者添加到组以指定可以修改该组的所有者。
+> + 使用 **Group.Create** 应用程序权限创建组而不指定所有者时，将会以匿名方式创建组，并且该组不可修改。 创建组时，将所有者添加到组以指定可以修改该组的所有者。
 >
->以编程方式创建 Microsoft 365 组时，若具有仅应用上下文且未指定所有者，则将以匿名方式创建组。 这样会导致在进一步执行手动操作前无法自动创建相关联的 SharePoint Online 网站。
+>+ 以编程方式创建 Microsoft 365 组时，若具有仅应用上下文且未指定所有者，则将以匿名方式创建组。 这样会导致在进一步执行手动操作前无法自动创建相关联的 SharePoint Online 网站。
+>
+>+ 无法在初始 POST 请求中设置以下属性，并且必须在后续 PATCH 请求中设置：**allowExternalSenders**，**autoSubscribeNewMembers**， **hideFromAddressLists**，**hideFromOutlookClients**， **isSubscribedByMail**，**unseenCount**。
 
 
 ### <a name="grouptypes-options"></a>groupTypes 选项
@@ -130,7 +132,7 @@ Content-length: 244
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面展示了示例响应。 **preferredDataLocation** 属性的值继承自组创建者的首选数据位置。
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
@@ -227,7 +229,7 @@ Content-Type: application/json
 
 #### <a name="response"></a>响应
 
-下面是成功响应的示例。 它仅包括默认属性。 随后可获取组的 **owners** 或 **members** 导航属性，以验证所有者或成员。 
+下面是成功响应的示例。 它仅包括默认属性。 随后可获取组的 **owners** 或 **members** 导航属性，以验证所有者或成员。 **preferredDataLocation** 属性的值继承自组创建者的首选数据位置。
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
@@ -243,36 +245,43 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups/$entity",
-    "id": "502df398-d59c-469d-944f-34a50e60db3f",
+    "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/21d05557-b7b6-418f-86fa-a3118d751be4/Microsoft.DirectoryServices.Group",
+    "id": "21d05557-b7b6-418f-86fa-a3118d751be4",
     "deletedDateTime": null,
     "classification": null,
-    "createdDateTime": "2018-12-27T22:17:07Z",
+    "createdDateTime": "2021-09-21T07:09:14Z",
     "creationOptions": [],
     "description": "Group with designated owner and members",
     "displayName": "Operations group",
-    "groupTypes": [
-        "Unified"
-    ],
-    "mail": "operations2019@contoso.com",
-    "mailEnabled": true,
+    "expirationDateTime": null,
+    "groupTypes": [],
+    "isAssignableToRole": null,
+    "mail": null,
+    "mailEnabled": false,
     "mailNickname": "operations2019",
+    "membershipRule": null,
+    "membershipRuleProcessingState": null,
+    "onPremisesDomainName": null,
     "onPremisesLastSyncDateTime": null,
+    "onPremisesNetBiosName": null,
+    "onPremisesSamAccountName": null,
     "onPremisesSecurityIdentifier": null,
     "onPremisesSyncEnabled": null,
-    "preferredDataLocation": "CAN",
-    "proxyAddresses": [
-        "SMTP:operations2019@contoso.com"
-    ],
-    "renewedDateTime": "2018-12-27T22:17:07Z",
+    "preferredDataLocation": null,
+    "preferredLanguage": null,
+    "proxyAddresses": [],
+    "renewedDateTime": "2021-09-21T07:09:14Z",
     "resourceBehaviorOptions": [],
     "resourceProvisioningOptions": [],
-    "securityEnabled": false,
-    "visibility": "Public",
+    "securityEnabled": true,
+    "securityIdentifier": "S-1-12-1-567301463-1099937718-295959174-3827004813",
+    "theme": null,
+    "visibility": null,
     "onPremisesProvisioningErrors": []
 }
 ```
 
-### <a name="example-3-create-a-group-that-can-be-assigned-to-an-azure-ad-role"></a>示例 3：创建可以分配给 Azure AD 角色的组
+### <a name="example-3-create-a-microsoft-365-group-that-can-be-assigned-to-an-azure-ad-role"></a>示例 3：创建可分配给Azure AD角色的Microsoft 365组
 
 #### <a name="request"></a>请求
 
@@ -289,16 +298,22 @@ POST https://graph.microsoft.com/v1.0/groups
 Content-Type: application/json
 
 {
-  "description": "Group assignable to a role",
-  "displayName": "Role assignable group",
-  "groupTypes": [
-    "Unified"
-  ],
-  "isAssignableToRole": true,
-  "mailEnabled": true,
-  "securityEnabled": true,
-  "mailNickname": "contosohelpdeskadministrators",
-  "visibility" : "Private"
+    "description": "Group assignable to a role",
+    "displayName": "Role assignable group",
+    "groupTypes": [
+        "Unified"
+    ],
+    "isAssignableToRole": true,
+    "mailEnabled": true,
+    "securityEnabled": true,
+    "mailNickname": "contosohelpdeskadministrators",
+    "owners@odata.bind": [
+        "https://graph.microsoft.com/v1.0/users/99e44b05-c10b-4e95-a523-e2732bbaba1e"
+    ],
+    "members@odata.bind": [
+        "https://graph.microsoft.com/v1.0/users/6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0",
+        "https://graph.microsoft.com/v1.0/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e"
+    ]
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -320,11 +335,11 @@ Content-Type: application/json
 ---
 
 
-> **注意：** 创建属性不需要 **可见性** 和 **groupTypes** 属性，但会使用这些值自动填充。 将 **isAssignableToRole** 属性设置为 `true` 的组不能具有动态成员资格类型，也不能拥有所有者。 有关更多信息，请参见[使用组来管理 Azure AD 角色分配](https://go.microsoft.com/fwlink/?linkid=2103037)。
+> **注意：****isAssignableToRole** 属性设置为`true`的组不能是动态成员身份类型，也不能具有所有者。 有关更多信息，请参见[使用组来管理 Azure AD 角色分配](https://go.microsoft.com/fwlink/?linkid=2103037)。
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。它仅包括默认属性。
+下面展示了示例响应。 它仅包括默认属性。 **preferredDataLocation** 属性的值继承自组创建者的首选数据位置。
 
 <!-- {
   "blockType": "response",
@@ -337,38 +352,51 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups/$entity",
-  "id": "502df398-d59c-469d-944f-34a50e60db3f",
-  "deletedDateTime": null,
-  "classification": null,
-  "createdDateTime": "2018-12-27T22:17:07Z",
-  "description": "Group assignable to a role",
-  "displayName": "Role assignable group",
-  "expirationDateTime": null,
-  "groupTypes": [
-    "Unified"
-  ],
-  "isAssignableToRole": true,
-  "mail": "operations2019@contoso.com",
-  "mailEnabled": true,
-  "mailNickname": "contosohelpdeskadministrators",
-  "membershipRule": null,
-  "membershipRuleProcessingState": null,
-  "onPremisesLastSyncDateTime": null,
-  "onPremisesSecurityIdentifier": null,
-  "onPremisesSyncEnabled": null,
-  "preferredDataLocation": "CAN",
-  "proxyAddresses": [
-    "SMTP:operations2019@contoso.com"
-  ],
-  "renewedDateTime": "2018-12-27T22:17:07Z",
-  "resourceBehaviorOptions": [],
-  "resourceProvisioningOptions": [],
-  "securityEnabled": true,
-  "securityIdentifier": "S-1-12-1-1905728287-1207447622-870010782-555555555",
-  "theme": null,
-  "visibility": "Private",
-  "onPremisesProvisioningErrors": []
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups/$entity",
+    "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/55ea2e8c-757f-4f2d-be9e-53c22e8c6a54/Microsoft.DirectoryServices.Group",
+    "id": "55ea2e8c-757f-4f2d-be9e-53c22e8c6a54",
+    "deletedDateTime": null,
+    "classification": null,
+    "createdDateTime": "2021-09-21T07:23:06Z",
+    "createdByAppId": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",
+    "organizationId": "84841066-274d-4ec0-a5c1-276be684bdd3",
+    "description": "Group assignable to a role",
+    "displayName": "Role assignable group",
+    "expirationDateTime": null,
+    "groupTypes": [
+        "Unified"
+    ],
+    "infoCatalogs": [],
+    "isAssignableToRole": true,
+    "isManagementRestricted": null,
+    "mail": "contosohelpdeskadministrators@M365x010717.onmicrosoft.com",
+    "mailEnabled": true,
+    "mailNickname": "contosohelpdeskadministrators",
+    "membershipRule": null,
+    "membershipRuleProcessingState": null,
+    "onPremisesDomainName": null,
+    "onPremisesLastSyncDateTime": null,
+    "onPremisesNetBiosName": null,
+    "onPremisesSamAccountName": null,
+    "onPremisesSecurityIdentifier": null,
+    "onPremisesSyncEnabled": null,
+    "preferredDataLocation": "EU",
+    "preferredLanguage": null,
+    "proxyAddresses": [
+        "SMTP:contosohelpdeskadministrators@M365x010717.onmicrosoft.com"
+    ],
+    "renewedDateTime": "2021-09-21T07:23:06Z",
+    "resourceBehaviorOptions": [],
+    "resourceProvisioningOptions": [],
+    "securityEnabled": true,
+    "securityIdentifier": "S-1-12-1-1441410700-1328379263-3260260030-1416268846",
+    "theme": null,
+    "visibility": "Private",
+    "writebackConfiguration": {
+        "isEnabled": null,
+        "onPremisesGroupType": null
+    },
+    "onPremisesProvisioningErrors": []
 }
 ```
 
