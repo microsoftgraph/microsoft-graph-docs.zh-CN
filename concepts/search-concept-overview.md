@@ -5,12 +5,12 @@ ms.localizationpriority: high
 ms.prod: search
 author: snlraju-msft
 scenarios: getting-started
-ms.openlocfilehash: b936bc0dd26ae3287f0a186d3309cc972a184da4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f501f90a8e7b82759db4f54f014de93fc0806047
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59129703"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765163"
 ---
 # <a name="overview-of-the-microsoft-search-api-in-microsoft-graph"></a>Microsoft Graph 中的 Microsoft 搜索 API 概述
 
@@ -23,7 +23,7 @@ Microsoft 搜索是一种企业搜索引擎，它为组织提高了生产力并�
 
 Microsoft 搜索 API 提供一个统一的搜索终结点，让你使用该终结点[查询](/graph/api/search-query) Microsoft 云中的数据（Outlook 邮箱中的邮件和事件）以及 OneDrive 和 SharePoint 中的文件（Microsoft 搜索已编制索引的数据）。
 
-### <a name="include-custom-external-data-in-search-experience-preview"></a>在搜索体验中加入自定义外部数据（预览版）
+### <a name="include-custom-external-data-in-search-experience"></a>在搜索体验中包括自定义外部数据
 
 使用 [Microsoft Graph 连接器](/microsoftsearch/connectors-overview)将 Microsoft 云之外的数据包含在你的搜索体验中。 例如，连接到组织的人力资源数据库或产品目录。 然后使用 Microsoft 搜索 API 无缝[查询](/graph/api/search-query)外部数据源。 
 

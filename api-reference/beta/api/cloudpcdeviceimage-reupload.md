@@ -2,15 +2,15 @@
 title: cloudPcDeviceImage：重新加载
 description: 重新加载 cloudPcDeviceImage 对象。
 author: RuiHou105
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 8e359f749f0b932f3061bf8750fcf7992fe23302
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 19448e066276c42865dd1407d01817ca81fe9aa4
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53439476"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764540"
 ---
 # <a name="cloudpcdeviceimage-reupload"></a>cloudPcDeviceImage：重新加载
 
@@ -20,7 +20,6 @@ ms.locfileid: "53439476"
 
 重新加载 [无法上载的 cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) 对象。
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 ## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

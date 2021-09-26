@@ -2,15 +2,15 @@
 title: 删除 cloudPcDeviceImage
 description: 删除 cloudPcDeviceImage 对象。
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 6e2e3a3bef480c8b269a57819f32f4a00e3b08f3
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 9bceb3f3f0bb89047a4710a779096ec72c16d600
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52546859"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766612"
 ---
 # <a name="delete-cloudpcdeviceimage"></a>删除 cloudPcDeviceImage
 
@@ -20,8 +20,7 @@ ms.locfileid: "52546859"
 
 删除 [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) 对象。
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: b292d072ad0322e46bb9bd9da6a62da2af1d3518
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e460222a8abff0bb7d9822b00cb5da14490094e4
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59083983"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765632"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -60,7 +60,7 @@ ms.locfileid: "59083983"
 | [checkMemberGroups](../api/user-checkmembergroups.md)                                      | String collection                                                                | 检查组列表中的成员身份。检查是可传递的。                                                                                                                                                                  |
 | [checkMemberObjects](../api/user-checkmemberobjects.md)                                    | String 集合                                                                | 检查组、目录角色或管理单元对象列表中的成员身份。该函数可传递。                                                                                                                |
 | [exportPersonalData](../api/user-exportpersonaldata.md)                                    | 无                                                                             | 提交公司管理员发出的数据策略操作请求，以导出组织用户的数据。                                                                                                                   |
-| [getByIds](../api/directoryobject-getbyids.md)                                             | 字符串集合                                                                | 返回 ID 列表中指定的目录对象。                                                                                                                                                                           |
+| [getByIds](../api/directoryobject-getbyids.md)                                             | String collection                                                                | 返回 ID 列表中指定的目录对象。                                                                                                                                                                           |
 | [getMemberGroups](../api/user-getmembergroups.md)                                          | String collection                                                                | 返回用户是其成员的所有组。检查是可传递的。                                                                                                                                                        |
 | [getMemberObjects](../api/user-getmemberobjects.md)                                        | String collection                                                                | 返回用户所属的所有组和目录角色。检查是可传递的。                                                                                                                                 |
 | [List createdObjects](../api/user-list-createdobjects.md)                                  | [directoryObject](directoryobject.md) collection                                 | 从 createdObjects 导航属性中获取此用户创建的目录对象。                                                                                                                                          |
@@ -192,6 +192,7 @@ ms.locfileid: "59083983"
 |passwordProfile|[passwordProfile](passwordprofile.md)|指定用户的密码配置文件。 配置文件包含用户的密码。 创建用户时此属性是必需的。 配置文件中的密码必须满足 **passwordPolicies** 属性指定的最低要求。 默认情况下，必须使用强密码。 **注意：** 对于 Azure B2C 租户， **forceChangePasswordNextSignIn** 属性应设置为 `false` ，并且应在第一次登录时使用自定义策略和用户流强制重置密码。 请参阅 [首次登录时强制重置](https://github.com/azure-ad-b2c/samples/tree/master/policies/force-password-reset-first-logon)。<br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `in`）。|
 |pastProjects|String collection|供用户枚举其过去项目的列表。 <br><br>仅在 `$select` 上返回。|
 |postalCode|String|用户邮政地址的邮政编码。邮政编码特定于用户所在的国家/地区。在美国，此属性包含邮政编码。最大长度为 40 个字符。<br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。|
+| preferredDataLocation | String | 用户的首选数据位置。 有关详细信息，请参阅 [OneDrive Online 多地理位置](/sharepoint/dev/solution-guidance/multigeo-introduction)。|
 |preferredLanguage|String|用户的首选语言。 应遵循 ISO 639-1 代码;例如， `en-US`。 <br><br>默认情况下返回。 支持 `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`)|
 |preferredName|String|用户的首选名称。 <br><br>仅在 `$select` 上返回。|
 |provisionedPlans|[provisionedPlan](provisionedplan.md) 集合|为用户设置的计划。只读。不可为 null。<br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `NOT`、 `ge`、 `le`）。|
@@ -275,12 +276,12 @@ Hence the type of the corresponding 3 properties remain as string type in the Pr
 |licenseDetails|[licenseDetails](licensedetails.md) 集合|此用户的许可证详细信息集合。只读。|
 |mailFolders|[mailFolder](mailfolder.md) 集合| 用户的邮件文件夹。只读。可为 Null。|
 |manager|[directoryObject](directoryobject.md)|是此用户的经理的用户或联系人。 只读。 （HTTP 方法：GET、PUT、DELETE） 支持 `$expand`。|
-|memberOf|[directoryObject](directoryobject.md) collection|用户所属的组和目录角色。 只读。 可为空。 支持 `$expand`。 |
+|memberOf|[directoryObject](directoryobject.md) collection|用户所属的组和目录角色。 只读。 可为 NULL。 支持 `$expand`。 |
 |messages|[message](message.md) 集合|邮箱或文件夹中的邮件。只读。可为 Null。|
 |onenote|[onenote](onenote.md)| 只读。|
 |outlook|[outlookUser](outlookuser.md)| 只读。|
-|ownedDevices|[directoryObject](directoryobject.md) collection|用户拥有的设备。 只读。 可为空。 支持 `$expand`。|
-|ownedObjects|[directoryObject](directoryobject.md) collection|用户拥有的 directory 对象。 只读。 可为空。 支持 `$expand`。|
+|ownedDevices|[directoryObject](directoryobject.md) collection|用户拥有的设备。 只读。 可为 NULL。 支持 `$expand`。|
+|ownedObjects|[directoryObject](directoryobject.md) collection|用户拥有的 directory 对象。 只读。 可为 NULL。 支持 `$expand`。|
 |people|[person](person.md) 集合| 与用户相关的人员。只读。可以为 null。
 |photo|[profilePhoto](profilephoto.md)| 用户的个人资料照片。只读。|
 |planner|[plannerUser](planneruser.md)| 对于用户可能存在的 Planner 资源入口点。只读。|
@@ -450,73 +451,74 @@ Hence the type of the corresponding 3 properties remain as string type in the Pr
 
 ```json
 {
-  "aboutMe": "string",
+  "aboutMe": "String",
   "accountEnabled": true,
-  "ageGroup": "string",
+  "ageGroup": "String",
   "assignedLicenses": [{"@odata.type": "microsoft.graph.assignedLicense"}],
   "assignedPlans": [{"@odata.type": "microsoft.graph.assignedPlan"}],
   "birthday": "String (timestamp)",
-  "businessPhones": ["string"],
-  "city": "string",
-  "companyName": "string",
-  "consentProvidedForMinor": "string",
-  "country": "string",
+  "businessPhones": ["String"],
+  "city": "String",
+  "companyName": "String",
+  "consentProvidedForMinor": "String",
+  "country": "String",
   "createdDateTime": "String (timestamp)",
-  "creationType": "string",
-  "department": "string",
-  "displayName": "string",
+  "creationType": "String",
+  "department": "String",
+  "displayName": "String",
   "employeeHireDate": "2020-01-01T00:00:00Z",
-  "employeeId": "string",
+  "employeeId": "String",
   "employeeOrgData": {"@odata.type": "microsoft.graph.employeeOrgData"},
-  "employeeType": "string",
-  "faxNumber" : "string",
-  "givenName": "string",
+  "employeeType": "String",
+  "faxNumber" : "String",
+  "givenName": "String",
   "hireDate": "String (timestamp)",
-  "id": "string (identifier)",
+  "id": "String (identifier)",
   "identities": [{"@odata.type": "microsoft.graph.objectIdentity"}],
-  "imAddresses": ["string"],
-  "interests": ["string"],
+  "imAddresses": ["String"],
+  "interests": ["String"],
   "isResourceAccount": false,
-  "jobTitle": "string",
-  "legalAgeGroupClassification": "string",
+  "jobTitle": "String",
+  "legalAgeGroupClassification": "String",
   "licenseAssignmentStates": [{"@odata.type": "microsoft.graph.licenseAssignmentState"}],
   "lastPasswordChangeDateTime": "String (timestamp)",
-  "mail": "string",
+  "mail": "String",
   "mailboxSettings": {"@odata.type": "microsoft.graph.mailboxSettings"},
-  "mailNickname": "string",
-  "mobilePhone": "string",
-  "mySite": "string",
-  "officeLocation": "string",
-  "onPremisesDistinguishedName": "string",
-  "onPremisesDomainName": "string",
+  "mailNickname": "String",
+  "mobilePhone": "String",
+  "mySite": "String",
+  "officeLocation": "String",
+  "onPremisesDistinguishedName": "String",
+  "onPremisesDomainName": "String",
   "onPremisesExtensionAttributes": {"@odata.type": "microsoft.graph.onPremisesExtensionAttributes"},
-  "onPremisesImmutableId": "string",
+  "onPremisesImmutableId": "String",
   "onPremisesLastSyncDateTime": "String (timestamp)",
   "onPremisesProvisioningErrors": [{"@odata.type": "microsoft.graph.onPremisesProvisioningError"}],
-  "onPremisesSamAccountName": "string",
-  "onPremisesSecurityIdentifier": "string",
+  "onPremisesSamAccountName": "String",
+  "onPremisesSecurityIdentifier": "String",
   "onPremisesSyncEnabled": true,
-  "onPremisesUserPrincipalName": "string",
-  "otherMails": ["string"],
-  "passwordPolicies": "string",
+  "onPremisesUserPrincipalName": "String",
+  "otherMails": ["String"],
+  "passwordPolicies": "String",
   "passwordProfile": {"@odata.type": "microsoft.graph.passwordProfile"},
-  "pastProjects": ["string"],
-  "postalCode": "string",
-  "preferredLanguage": "string",
-  "preferredName": "string",
+  "pastProjects": ["String"],
+  "postalCode": "String",
+  "preferredDataLocation": "String",
+  "preferredLanguage": "String",
+  "preferredName": "String",
   "provisionedPlans": [{"@odata.type": "microsoft.graph.provisionedPlan"}],
-  "proxyAddresses": ["string"],
-  "responsibilities": ["string"],
-  "schools": ["string"],
+  "proxyAddresses": ["String"],
+  "responsibilities": ["String"],
+  "schools": ["String"],
   "showInAddressList": true,
   "signInSessionsValidFromDateTime": "String (timestamp)",
-  "skills": ["string"],
-  "state": "string",
-  "streetAddress": "string",
-  "surname": "string",
-  "usageLocation": "string",
-  "userPrincipalName": "string",
-  "userType": "string",
+  "skills": ["String"],
+  "state": "String",
+  "streetAddress": "String",
+  "surname": "String",
+  "usageLocation": "String",
+  "userPrincipalName": "String",
+  "userType": "String",
 
   "calendar": { "@odata.type": "microsoft.graph.calendar" },
   "calendarGroups": [{ "@odata.type": "microsoft.graph.calendarGroup" }],

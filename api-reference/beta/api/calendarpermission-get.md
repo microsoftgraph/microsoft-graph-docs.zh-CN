@@ -1,20 +1,22 @@
 ---
 title: 获取 calendarPermission
 description: 获取 calendarpermission 对象的属性和关系。
+author: Harini84
 ms.localizationpriority: medium
-author: sochowdh
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6e950d3a8d8fd860408a266c7fed8e4b361bf51c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 79ee15b890fb8acbb69523982c0f087aa60cf4ef
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59031843"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765751"
 ---
 # <a name="get-calendarpermission"></a>获取 calendarPermission
 
 命名空间：microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取已共享的用户或组日历的指定 permissions 对象。
 
@@ -55,7 +57,7 @@ GET /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 
 | 名称      |说明|
 |:----------|:----------|
-| Authorization | 持有者 {token} |
+| Authorization | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -98,7 +100,6 @@ GET https://graph.microsoft.com/beta/users/{id}/calendar/calendarPermissions/{id
 
 ---
 
-
 ### <a name="response"></a>响应
 
 下面展示了示例响应。
@@ -119,7 +120,7 @@ Content-type: application/json
   "emailAddress": {
     "name": "My Organization",
   },
-  "isRemovable": true,
+  "isRemovable": false,
   "isInsideOrganization": true,
   "role": "write",
   "allowedRoles": [
@@ -142,5 +143,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

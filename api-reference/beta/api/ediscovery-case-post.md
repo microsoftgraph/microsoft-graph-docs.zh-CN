@@ -1,16 +1,16 @@
 ---
 title: 创建案例
 description: 使用此 API 创建新案例。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mahage-msft
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 7fa7331b9a75c9c9d787ab12804540b1e5efe31a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 9e926414d0806f5dbc6979f0ff360d5400193048
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52044723"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765702"
 ---
 # <a name="create-case"></a>创建案例
 
@@ -19,6 +19,9 @@ ms.locfileid: "52044723"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 创建新的 [case](../resources/ediscovery-case.md) 对象。
+
+>[!NOTE]
+>从 2021 年 9 月开始，此 API 将创建大案例类型。 若要了解有关大案例的更多信息，请参阅在 Advanced eDiscovery[中Advanced eDiscovery。](/microsoft-365/compliance/advanced-ediscovery-large-cases) 有关详细信息，请参阅对高级[电子数据Microsoft 365创建案例 API](https://go.microsoft.com/fwlink/?linkid=2172604)的变更博客文章。
 
 ## <a name="permissions"></a>权限
 

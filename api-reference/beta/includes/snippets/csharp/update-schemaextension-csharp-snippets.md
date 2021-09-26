@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c77c09dc75165cbe1660336fcbe9a810e1793a57
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 898fd9094b6cdb1660ac2c8ead3ad7150c4e3783
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50803201"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767312"
 ---
 ```csharp
 
@@ -13,17 +13,28 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var schemaExtension = new SchemaExtension
 {
+    Owner = "ef4cb9a8-97c3-4ca7-854b-5cb5ced376fa",
     Properties = new List<ExtensionSchemaProperty>()
     {
         new ExtensionSchemaProperty
         {
-            Name = "new-name-value",
-            Type = "new-type-value"
+            Name = "courseId",
+            Type = "Integer"
         },
         new ExtensionSchemaProperty
         {
-            Name = "additional-name-value",
-            Type = "additional-type-value"
+            Name = "courseName",
+            Type = "String"
+        },
+        new ExtensionSchemaProperty
+        {
+            Name = "courseType",
+            Type = "String"
+        },
+        new ExtensionSchemaProperty
+        {
+            Name = "courseSupervisors",
+            Type = "String"
         }
     }
 };

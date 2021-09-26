@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: f0946da403754db4cb9edf5ec2f42ed0e9428d1e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c3c749ed158c9553bc63946629631f3bdd16f071
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59110107"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59507975"
 ---
 # <a name="get-serviceprincipal"></a>获取 servicePrincipal
 
@@ -35,6 +35,11 @@ GET /servicePrincipals/{id}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+
+默认情况下，此 API 不会返回 **keyCredentials** 属性中 **密钥** 的公钥值，除非已在 `$select` 查询中指定了 **keyCredentials** 。
+例如，`$select=id,appId,keyCredentials`。
+
+对于每个租户，使用 `$select` 获取服务主体的 **keyCredentials** 限制为每分钟 150 个请求。
 
 ## <a name="request-headers"></a>请求标头
 | 名称           | 说明                |

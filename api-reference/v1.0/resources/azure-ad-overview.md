@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: dkershaw10
 ms.prod: identity-and-access
 doc_type: conceptualPageType
-ms.openlocfilehash: da7518a16122573b6c8c1080085ed1ca22c67723
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d914426725f32799cda2ab884fe531d47db5b940
+ms.sourcegitcommit: 7ce66321abb6a2cdca8685d3ce0a004c376ae33b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019410"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59777511"
 ---
 # <a name="working-with-azure-active-directory-resources-in-microsoft-graph"></a>在 Microsoft Graph 中使用 Azure Active Directory 资源
 
@@ -47,7 +47,7 @@ ms.locfileid: "59019410"
 | 获取组织的相关信息，如商家地址、技术和通知联系人、订阅的服务计划及其关联域。 | [组织](../resources/organization.md) | 无 |
 | 获取公司订阅的服务 SKU 的相关信息。 | [subscribedSku](../resources/subscribedsku.md) | 无 |
 | 邀请外部（来宾）用户加入组织。 | [邀请](../resources/invitation.md) | [什么是 Azure AD B2B 协作？](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) |
-| 管理组织的登录体验的品牌。 | [organizationalbranding](../resources/organizationalbrandingproperties.md) | [将品牌添加到组织的 Azure Active Directory 登录页面](/azure/active-directory/fundamentals/customize-branding)|
+| 管理组织的登录体验的品牌。 | [organizationalbranding](../resources/organizationalbranding.md) | [将品牌添加到组织的 Azure Active Directory 登录页面](/azure/active-directory/fundamentals/customize-branding)|
 | **许可请求** | | |
 | 管理尝试访问需要管理员授权的用户的请求许可请求工作流。  | [许可请求 API](../resources/consentrequests-root.md) |[配置管理员同意工作流](/azure/active-directory/manage-apps/configure-admin-consent-workflow) |
 

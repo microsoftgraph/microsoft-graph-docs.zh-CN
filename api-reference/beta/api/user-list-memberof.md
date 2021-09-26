@@ -1,16 +1,16 @@
 ---
 title: List user memberOf
 description: 获取用户是直接成员中的组、目录角色和管理单元。 此操作不可传递。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: dc874763490136c62e851585aaba3df9c5be3f13
-ms.sourcegitcommit: 2d0daa446c7b37ced1d214e0c6e18e2b8243bb09
+ms.openlocfilehash: cf437021b88339e1d279cbbd2abf0643bbee5469
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53010225"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766668"
 ---
 # <a name="list-user-memberof"></a>List user memberOf
 
@@ -26,9 +26,11 @@ ms.locfileid: "53010225"
 
 | 权限类型 | 权限（从最低特权到最高特权） |
 |:--------------- |:------------------------------------------- |
-| 委派（工作或学校帐户） | GroupMember.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
+| 委派（工作或学校帐户） | User.Read, GroupMember.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序 | Directory.Read.All、Directory.ReadWrite.All |
+
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -41,7 +43,7 @@ GET /users/{id | userPrincipalName}/memberOf
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持[OData query parameters](/graph/query_parameters)以帮助自定义响应，包括 `$search`、`$count`、 和 `$filter` 还启用了 OData 强制转换，例如，你可以强制转换为仅获取用户所属的 directoryRoles。 `$search`可以用在 **displayName** 属性。 为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。 在添加或更新项目与在索引中可用之间可能会稍有延迟。
+此方法支持[OData query parameters](/graph/query-parameters)以帮助自定义响应，包括 `$search`、`$count`、 和 `$filter` 还启用了 OData 强制转换，例如，你可以强制转换为仅获取用户所属的 directoryRoles。 `$search`可以用在 **displayName** 属性。 为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。 在添加或更新项目与在索引中可用之间可能会稍有延迟。
 
 ## <a name="request-headers"></a>请求标头
 

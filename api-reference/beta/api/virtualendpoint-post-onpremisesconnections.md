@@ -2,15 +2,15 @@
 title: 创建 cloudPcOnPremisesConnection
 description: 创建本地连接以预配云电脑。
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: eba6d573f22e07c125349efb72667e458642e7e7
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 6562bfb388a9bcb3997e36cea1ac02bd0043375e
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53534528"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59763098"
 ---
 # <a name="create-cloudpconpremisesconnection"></a>创建 cloudPcOnPremisesConnection
 
@@ -19,8 +19,6 @@ ms.locfileid: "53534528"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 创建新的 [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) 对象以预配云电脑。
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="permissions"></a>权限
 

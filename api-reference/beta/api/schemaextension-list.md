@@ -1,16 +1,16 @@
 ---
 title: 列出 schemaExtension
 description: '获取在当前租户中拥有的任何应用创建的 schemaExtension 对象 (可以是 '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 8e1d8e1810f579b7c1e5d31a6e0a221a1df1d7c6
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 440a8abf5246cbd882fff8bb11d7203c9155fcd9
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053501"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764239"
 ---
 # <a name="list-schemaextensions"></a>列出 schemaExtension
 
@@ -18,7 +18,7 @@ ms.locfileid: "52053501"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取由当前租户 (中拥有的任何应用创建的 [schemaExtension](../resources/schemaextension.md)对象的列表，这些应用可以是 **InDevelopment、Available** 或 **Deprecated**) ，以及标记为 Available 的其他应用所拥有的所有其他架构 **扩展。**  
+获取由你在当前租户 (中拥有的任何应用创建的 [schemaExtension](../resources/schemaextension.md)对象列表，这些应用可以是 **InDevelopment、Available** 或 **Deprecated**) ，以及标记为可用的其他应用所拥有的所有其他架构 **扩展。**  
 
 > **注意：** 该列表还将包含架构扩展定义 (标记为) `Available` 租户中其他开发人员创建的列表。 这不同于仅返回租户特定数据的其他 API。 基于架构扩展定义创建的扩展数据特定于租户，并且只有显式授予权限的应用才能访问这些数据。 
 
@@ -37,8 +37,6 @@ ms.locfileid: "52053501"
 ```http
 GET /schemaExtensions
 ```
-## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -53,7 +51,7 @@ GET /schemaExtensions
 
 如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [schemaExtension](../resources/schemaextension.md) 对象集合。
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 下面的示例演示如何通过筛选特定扩展的唯一 id 来查找其所有可访问 **的扩展**。 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -82,8 +80,9 @@ GET https://graph.microsoft.com/beta/schemaExtensions?$filter=id%20eq%20'graphle
 
 ---
 
-##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+### <a name="response"></a>响应
+下面展示了示例响应。 
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -93,7 +92,6 @@ GET https://graph.microsoft.com/beta/schemaExtensions?$filter=id%20eq%20'graphle
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 274
 
 {
   "value": [

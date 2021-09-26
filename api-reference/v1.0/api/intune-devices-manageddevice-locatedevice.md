@@ -5,12 +5,12 @@ author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 07e92bd7905fc941fd19cb57ea263e17fad20927
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a51d15c5fe296b46264538e4354fd21f509401b1
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59029379"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765870"
 ---
 # <a name="locatedevice-action"></a>locateDevice 操作
 
@@ -18,7 +18,7 @@ ms.locfileid: "59029379"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-查找设备
+查找设备。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

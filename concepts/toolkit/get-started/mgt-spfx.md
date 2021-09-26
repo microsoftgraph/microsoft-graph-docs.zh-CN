@@ -3,18 +3,21 @@ title: 用于 Microsoft Graph 工具包 的 SharePoint 框架 库
 description: 使用 SharePoint 框架 Microsoft Graph Toolkit 库在解决方案Graph Toolkit Microsoft SharePoint 框架 Microsoft。
 ms.localizationpriority: medium
 author: waldekmastykarz
-ms.openlocfilehash: 37f2570606b62de12f81e779fdcd4c33cb586f2c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 41a1b3703440ce42866c3aaf720bdda55e9d2b20
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59032088"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59507758"
 ---
 # <a name="sharepoint-framework-library-for-microsoft-graph-toolkit"></a>用于 Microsoft Graph 工具包 的 SharePoint 框架 库
 
 使用 SharePoint 框架 Microsoft Graph Toolkit 库在解决方案Graph Toolkit Microsoft SharePoint 框架 Microsoft。
 
-若要防止多个组件在页面上注册自己的一组 Microsoft Graph Toolkit 组件，您应该将此库部署到租户，并引用您在此库中的解决方案中使用的 Microsoft Graph Toolkit 组件。
+若要防止多个组件在页面上注册自己的一组 Microsoft Graph Toolkit 组件，您应将此库部署到租户，并从此库引用解决方案中使用的 Microsoft Graph Toolkit 组件。
+
+> [!CAUTION]
+> Microsoft SharePoint 框架 的 Graph Toolkit 库旨在与 SharePoint 框架 扩展和非独立 **Web 部件一同使用**。 如果要构建独立的 Web 部件，请不要使用 Microsoft SharePoint 框架 的 Graph Toolkit。 相反，如果你使用Graph Toolkit包，请直接从 @microsoft/mgt (或 @microsoft/mgt-react React) Microsoft 应用。 SharePoint 框架不支持从独立 Web 部件引用库组件，这样做将导致独立 Web 部件中的运行时错误。
 
 ## <a name="installation"></a>安装
 
@@ -30,14 +33,14 @@ npm install @microsoft/mgt-spfx
 yarn add @microsoft/mgt-spfx
 ```
 
-在将SharePoint 框架包部署到租户之前，你需要将SharePoint 框架 `@microsoft/mgt-spfx` 包部署到租户。 可以从项目发布部分下载与项目中使用的版本相对应的 `@microsoft/mgt-spfx` GitHub。 [](https://github.com/microsoftgraph/microsoft-graph-toolkit/releases)
+在将SharePoint 框架包部署到租户之前，你需要将SharePoint 框架 `@microsoft/mgt-spfx` 包部署到租户。 可以从项目上"发布"部分下载与项目中使用的版本对应的 `@microsoft/mgt-spfx` GitHub。 [](https://github.com/microsoftgraph/microsoft-graph-toolkit/releases)
 
 >[!IMPORTANT]
 >由于租户中只能安装 Microsoft Graph 工具包 SharePoint 框架库的一个版本，因此在解决方案中使用 Microsoft Graph 工具包之前，请确定你的组织或客户是否已部署某 SharePoint 框架库版本并使用相同版本。
 
 ## <a name="usage"></a>用法
 
-生成SharePoint 框架 Web 部件和扩展时，请引用 Microsoft Graph Toolkit `Provider` `SharePointProvider` 和从 `@microsoft/mgt-spfx` 程序包。 这将确保您的解决方案将使用 Microsoft Graph Toolkit已在页面上注册的组件，而不是实例化自己的组件。 无论 Web 部件使用哪个 JavaScript 框架，实例化过程对于所有 Web 部件都是相同的。
+生成SharePoint 框架 Web 部件和扩展时，请引用 Microsoft Graph Toolkit `Provider` `SharePointProvider` 和程序包 `@microsoft/mgt-spfx` 。 这将确保您的解决方案将使用 Microsoft Graph Toolkit已在页面上注册的组件，而不是实例化自己的组件。 无论 Web 部件使用哪个 JavaScript 框架，实例化过程对于所有 Web 部件都是相同的。
 
 ```ts
 import { Providers, SharePointProvider } from '@microsoft/mgt-spfx';

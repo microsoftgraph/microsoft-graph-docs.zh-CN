@@ -1,16 +1,16 @@
 ---
 title: educationResource 资源类型
-description: 系统中所有资源对象的超级类。 资源与工作分配和/或 **提交** 相关联，它表示正在学习的对象
-localization_priority: Normal
+description: 系统中所有资源对象的基类。
+ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: f82274782f84204be288c67365288891f64fedf6
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: eded1c6ff9362987634093602cbbb5d727a523d6
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53440944"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766605"
 ---
 # <a name="educationresource-resource-type"></a>educationResource 资源类型
 
@@ -18,7 +18,9 @@ ms.locfileid: "53440944"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-系统中所有资源对象的超级类。 资源与工作分配和/或 **提交** 相关联，它表示要分配或提交的学习对象。 不能直接实例化资源;您必须创建一个表示所使用的资源类型的子类。
+系统中所有资源对象的基类。 
+
+educationResource 与作业和/或[](educationassignment.md)提交相关联，它[](educationsubmission.md)表示正在提供或提交的学习对象。 不能直接实例化资源;您必须创建一个表示所使用的资源类型的子类。
 
 此资源存储所有资源类型的通用属性。
 
@@ -27,7 +29,7 @@ ms.locfileid: "53440944"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |createdBy|[identitySet](identityset.md)|Who创建了资源。|
-|createdDateTime|创建资源的时间。  DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
+|createdDateTime|创建资源的时间。  DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`2014-01-01T00:00:00Z`|
 |displayName|String|资源的显示名称。|
 |lastModifiedBy|[identitySet](identityset.md)|Who是最后一个修改资源的用户。|
 |lastModifiedDateTime|DateTimeOffset|上次修改资源的时间。  时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|

@@ -1,16 +1,16 @@
 ---
 title: searchEntity： query
-description: 运行请求正文中指定的查询。 响应中提供了搜索结果。
+description: 运行请求正文中指定的查询。 响应中提供了搜索结果
 ms.localizationpriority: medium
 author: nmoreau
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 3eead1fc16f99aebf81b0053d90cef06d05bde6d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a8271e5ff88616a2e6b91561c0bd278462eafc83
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59015761"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59507968"
 ---
 # <a name="searchentity-query"></a>searchEntity： query
 
@@ -165,8 +165,10 @@ Content-type: application/json
 ## <a name="see-also"></a>另请参阅
 - 搜索 [邮件](/graph/search-concept-messages)
 - 搜索 [日历事件](/graph/search-concept-events)
-- 搜索网站SharePoint和OneDrive ([文件、列表和网站) ](/graph/search-concept-files)
-- 搜索[连接器 (Graph数据的) ](/graph/search-concept-custom-types)类型
+- 搜索网站[SharePoint OneDrive (、列表和网站) ](/graph/search-concept-files)
+- 搜索[连接器 (Graph自定义) ](/graph/search-concept-custom-types)数据
+- [对](/graph/search-concept-sort) 搜索结果进行排序
+- 使用 [聚合](/graph/search-concept-aggregations) 优化搜索结果
 
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

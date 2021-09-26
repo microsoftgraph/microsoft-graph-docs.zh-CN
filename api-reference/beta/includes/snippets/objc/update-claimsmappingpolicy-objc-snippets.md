@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 896bad81f8bbd1a59665b9f7394982f5482abaef
-ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
+ms.openlocfilehash: 635092070787890ad30844e5033c7bb5114cd904
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49910642"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59763805"
 ---
 ```objc
 
@@ -17,11 +17,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphClaimsMappingPolicy *claimsMappingPolicy = [[MSGraphClaimsMappingPolicy alloc] init];
-NSMutableArray *definitionList = [[NSMutableArray alloc] init];
-[definitionList addObject: @"definition-value"];
-[claimsMappingPolicy setDefinition:definitionList];
-[claimsMappingPolicy setDisplayName:@"displayName-value"];
-[claimsMappingPolicy setIsOrganizationDefault: true];
+[claimsMappingPolicy setDisplayName:@"UpdateClaimsPolicy"];
 
 NSError *error;
 NSData *claimsMappingPolicyData = [claimsMappingPolicy getSerializedDataWithError:&error];

@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: c2311687881cd8f74e875f9d6c4fde3f6bcf69ed
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 0eddbe4e5e1f0b5197593214417642ce3706fa91
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695082"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764015"
 ---
 # <a name="list-applications"></a>列出应用程序
 
@@ -42,6 +42,11 @@ GET /applications
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
 此方法支持使用 `$count`、`$expand`、`$filter`、`$orderBy`、`$search`、`$select` 和 `$top` [ OData 查询参数 ](/graph/query-parameters) 以帮助自定义响应。 只有将 **ConsistencyLevel** 标头设置为 `eventual` 和 `$count` 时，才支持某些查询。 有关详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
+
+
+默认情况下，在列出所有应用程序时，此 API 不会在 **keyCredentials** 属性中返回 **键** 指纹的值。 若要检索 **键** 指纹，必须在`$select`查询中指定 **keyCredentials** 属性。 例如，`$select=id,appId,keyCredentials`。
+
+使用 `$select` 获取应用程序的 **keyCredentials** 对于每个租户，限制限制为每分钟 150 个请求。
 
 
 ## <a name="request-headers"></a>请求标头

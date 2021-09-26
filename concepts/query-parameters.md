@@ -4,12 +4,12 @@ description: Microsoft Graph 提供可选的查询参数，可用于指定和控
 author: mumbi-o
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: a6165b4172ebb97e42883e9bd857242873503388
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 38cd97227c6f39b88042f1361815cc2c4b6fb94e
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139028"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766395"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>使用查询参数自定义响应
 
@@ -97,7 +97,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=subject eq 'let''s meet
 GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 ```
 
-`$count`查询参数支持这些资源集合和派生自[directoryObject](/graph/api/resources/directoryobject)的关系，而且仅在[高级查询](/graph/filter-directory-objects)中支持:
+`$count`查询参数支持这些资源集合和派生自[directoryObject](/graph/api/resources/directoryobject)的关系，而且仅在[高级查询](/graph/aad-advanced-queries)中支持:
 - [application](/graph/api/resources/application)
 - [orgContact](/graph/api/resources/orgcontact)
 - [设备](/graph/api/resources/device)

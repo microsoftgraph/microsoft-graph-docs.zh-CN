@@ -2,15 +2,15 @@
 title: cloudPcOnPremisesConnectionStatusDetails 资源类型
 description: 云电脑本地连接的状态详细信息。
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 7ef9847190fb851482d29535d0709f3d74bbf3aa
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 3a0d584b035fc0c25a4fe8b9cf3b790d0d3c5a0d
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722172"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766416"
 ---
 # <a name="cloudpconpremisesconnectionstatusdetails-resource-type"></a>cloudPcOnPremisesConnectionStatusDetails 资源类型
 
@@ -20,15 +20,13 @@ ms.locfileid: "50722172"
 
 [cloudPcOnPremisesConnection 的状态详细信息](../resources/cloudpconpremisesconnection.md)。
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
 ## <a name="properties"></a>属性
 
 |属性|类型|说明|
 |:---|:---|:---|
 |startDateTime|DateTimeOffset|连接运行状况检查的开始时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
 |endDateTime|DateTimeOffset|连接运行状况检查的结束时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
-|healthChecks|[cloudPcOnPremisesConnectionHealthCheck](../resources/cloudpconpremisesconnectionhealthcheck.md) 集合|对连接执行的所有检查。|
+|healthChecks|[cloudPcOnPremisesConnectionHealthCheck](../resources/cloudpconpremisesconnectionhealthcheck.md) 集合|在连接上完成的所有检查。|
 
 ## <a name="relationships"></a>关系
 

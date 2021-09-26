@@ -1,16 +1,16 @@
 ---
 title: bucketAggregationRange 资源类型
-description: 允许在聚合请求中指定一些手动范围。 这仅适用于非字符串精简程序：数值和日期。
-localization_priority: Normal
+description: 指定聚合搜索结果的范围下限和上限。 仅适用于日期或数值类型的精简条件
+ms.localizationpriority: medium
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 77f89503a8f19bd8b057575643ebf89e6dbc43a8
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 8a101262dddd859e3c28ef0a32e117dee7546903
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193868"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767487"
 ---
 # <a name="bucketaggregationrange-resource-type"></a>bucketAggregationRange 资源类型
 
@@ -18,14 +18,14 @@ ms.locfileid: "48193868"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指定用于聚合搜索结果的范围的下限和上限。 仅适用于日期或数值类型的精简程序。
+指定聚合搜索结果的范围下限和上限。 仅适用于日期或数字类型的精简条件。
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | 描述 |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|from|字符串| 定义从中计算聚合的下限。 它可以是数字值，也可以是使用格式的日期的字符串表示形式 `YYYY-MM-DDTHH:mm:ss.sssZ` 。 必需。|
-|更改为|字符串| 定义要计算聚合的上限。 它可以是数字值，也可以是使用格式的日期的字符串表示形式 `YYYY-MM-DDTHH:mm:ss.sssZ` 。 此为必需属性。|
+|from|String| 定义用于计算聚合的下限。 这可以是数字值，或者是使用格式的日期的字符串 `YYYY-MM-DDTHH:mm:ss.sssZ` 表示形式。 必需。|
+|更改为|String| 定义要计算聚合的上限。 这可以是数字值，或者是使用格式的日期的字符串 `YYYY-MM-DDTHH:mm:ss.sssZ` 表示形式。 此为必需属性。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

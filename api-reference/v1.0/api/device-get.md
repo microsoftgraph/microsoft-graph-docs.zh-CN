@@ -5,12 +5,12 @@ author: spunukol
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 9216f5f879bee4b600fadf459ad67d11d392ca31
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2547ededb4657b3d185245ad0fadfdca82cf1fd5
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59074479"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766136"
 ---
 # <a name="get-device"></a>获取设备
 
@@ -28,11 +28,12 @@ ms.locfileid: "59074479"
 |应用程序 | Device.Read.All、Device.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
+
+`{id}`请求中的 是设备的 **id** 属性的值，而不是 **deviceId** 属性的值。
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /devices/{id}
 ```
-> 注意：请求中的“id”是设备的“id”属性，不是“deviceId”属性。
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 `$select` [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。

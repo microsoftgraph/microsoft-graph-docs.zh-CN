@@ -5,12 +5,12 @@ author: lumine2008
 ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 71f01bc2e08ce418dead3998c20aee3a67a92541
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3c122077dea5dd611f2db7b785c9879a93856fef
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59025921"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766759"
 ---
 # <a name="get-tablerow"></a>获取 TableRow
 
@@ -40,7 +40,7 @@ GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | 持有者{令牌}。必需。 |
+| Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ## <a name="request-body"></a>请求正文
@@ -48,7 +48,7 @@ GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [WorkbookTableRow](../resources/tablerow.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [WorkbookTableRow](../resources/workbooktablerow.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

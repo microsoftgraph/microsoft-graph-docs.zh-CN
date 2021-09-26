@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: a58260c3f81642d2e152526341028aae1f857f34
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f088b703d97165a7457c23593e56f00dad3c3de6
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59045698"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764596"
 ---
 # <a name="list-identityuserflowattributes"></a>列出 identityUserFlowAttributes
 
@@ -24,7 +24,7 @@ ms.locfileid: "59045698"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）|IdentityUserFlow.Read.All、IdentityUserflow.ReadWrite.All|
+|委派（工作或学校帐户）|IdentityUserFlow.Read.All、IdentityUserFlow.ReadWrite.All|
 |委派（个人 Microsoft 帐户）| 不支持。|
 |应用程序|IdentityUserFlow.Read.All、IdentityUserFlow.ReadWrite.All|
 

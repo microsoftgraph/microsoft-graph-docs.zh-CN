@@ -2,15 +2,15 @@
 title: 更新 onlineMeeting
 description: 更新联机会议的属性。
 author: mkhribech
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 90b9aeb3a428c90d19d1161ebc12fcad9bbd0cf4
-ms.sourcegitcommit: ac0e544853ce8476d76dc321e0d34e4b668b7651
+ms.openlocfilehash: cc81f0cd54c7a6e831339098510b1b4cde37bab7
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2021
-ms.locfileid: "58351008"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766388"
 ---
 # <a name="update-onlinemeeting"></a>更新 onlineMeeting
 
@@ -28,35 +28,33 @@ ms.locfileid: "58351008"
 | :------------------------------------- | :------------------------------------------ |
 | 委派（工作或学校帐户）     | OnlineMeetings.ReadWrite                    |
 | 委派（个人 Microsoft 帐户） | 不支持。                              |
-| 应用程序                            | OnlineMeetings.ReadWrite.All*                |
+| 应用程序                            | OnlineMeetings.ReadWrite.All                |
 
-> [!IMPORTANT]
-> \*管理员必须创建应用程序访问[](/graph/cloud-communication-online-meeting-application-access-policy)策略并授予用户，授权策略中配置的应用代表该用户更新联机会议 (请求路径) 中指定的用户 ID。
+若要对此 API 使用应用程序权限，租户管理员必须创建应用程序[](/graph/cloud-communication-online-meeting-application-access-policy)访问策略，并授予用户授权策略中配置的应用，以代表该用户 (使用请求路径) 中指定的用户 ID 获取联机会议项目。
 
 ## <a name="http-request"></a>HTTP 请求
-若要使用委派令牌通过会议 ID 更新指定的 onlineMeeting，请执行以下操作：
+
+若要使用具有委派权限的会议 ID 更新指定的 **onlineMeeting， ()** `/me` 应用 () `/users/{userId}/` 权限：
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /me/onlineMeetings/{meetingId}
-```
-
-若要使用应用程序令牌通过会议 ID 更新指定的 onlineMeeting，请执行以下操作：
-<!-- { "blockType": "ignored" } -->
-```http
 PATCH /users/{userId}/onlineMeetings/{meetingId}
 ```
 
 > [!NOTE]
+>
 > - `userId` 是 [Azure 用户管理门户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)中用户的对象 ID。 有关详细信息，请参阅应用程序 [访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
 > - `meetingId`是 [onlineMeeting 对象的](../resources/onlinemeeting.md) **ID。**
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
+
 | 名称          | 说明                 |
 | :------------ | :-------------------------- |
 | Authorization | Bearer {token}。必需。   |
 | Content-type  | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
+
 下表列出了可更新的属性。 在请求正文中，仅包括需要更新的属性，但以下例外：
 
 - 更新联机会议开始或结束日期/时间始终需要请求正文中的 **startDateTime** 和 **endDateTime** 属性。
@@ -67,23 +65,26 @@ PATCH /users/{userId}/onlineMeetings/{meetingId}
 
 | 属性                    | 类型                                                       | 说明                                                                         | 是否适用于进行中的会议？    |
 |-----------------------------|------------------------------------------------------------|-------------------------------------------------------------------------------------|------------------------------|
-| startDateTime               | 日期/时间                                                   | 会议开始时间（UTC）。                                                      | 否                           |
-| endDateTime                 | 日期/时间                                                   | 会议结束时间（UTC）。                                                        | 否                           |
+| startDateTime               | 日期时间                                                   | 会议开始时间（UTC）。                                                      | 否                           |
+| endDateTime                 | 日期时间                                                   | 会议结束时间（UTC）。                                                        | 否                           |
 | subject                     | String                                                     | 联机会议的主题。                                                  | 否                           |
 | participants                | [meetingParticipants](../resources/meetingparticipants.md) | 与联机会议关联的参与者。 仅与会者可以更新。 | 否                           |
-| isEntryExitAnnounced        | 布尔值                                                    | 呼叫者加入或离开时是否宣布。                              | 是                          |
+| isEntryExitAnnounced        | Boolean                                                    | 呼叫者加入或离开时是否宣布。                              | 是                          |
 | lobbyBypassSettings         | [lobbyBypassSettings](../resources/lobbyBypassSettings.md) | 指定哪些参与者可以绕过会议厅。                          | 是                          |
-| allowedPresenters           | onlineMeetingPresenters                                    | 指定可在会议中成为演示者的人。                                      | 是，除非值为 `roleIsPresenter` |
-| allowAttendeeToEnableCamera | 布尔值                                                    | 指示与会者是否可以打开其相机。                               | 是                          |
-| allowAttendeeToEnableMic    | 布尔值                                                    | 指示与会者是否可以打开其麦克风。                           | 是                          |
+| allowedPresenters           | onlineMeetingPresenters                                    | 指定可在会议中成为演示者的人。                                      | 是 |
+| allowAttendeeToEnableCamera | Boolean                                                    | 指示与会者是否可以打开其相机。                               | 是                          |
+| allowAttendeeToEnableMic    | Boolean                                                    | 指示与会者是否可以打开其麦克风。                           | 是                          |
 | allowMeetingChat            | meetingChatMode                                            | 指定会议聊天的模式。                                                 | 是                          |
-| allowTeamworkReactions      | 布尔值                                                    | 指示是否Teams会议的反应。                      | 是                          |
+| allowTeamworkReactions      | Boolean                                                    | 指示是否Teams会议的反应。                      | 是                          |
 
 > [!NOTE]
-> 有关 **allowedPresenters** 和 **allowMeetingChat** 的可能值的列表，请参阅 [onlineMeeting](../resources/onlinemeeting.md)。
+>
+>- 有关 **allowedPresenters** 和 **allowMeetingChat** 的可能值的列表，请参阅 [onlineMeeting](../resources/onlinemeeting.md)。
+>- 将 **allowedPresenters** 的值更新为 时，在请求正文中包括指定与会者设置为 `roleIsPresenter`  `role` `presenter` 的完整与会者列表。
 
 ## <a name="response"></a>响应
-如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和 [onlineMeeting](../resources/onlinemeeting.md) 对象。
+
+如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [onlineMeeting](../resources/onlinemeeting.md) 对象。
 
 ## <a name="examples"></a>示例
 

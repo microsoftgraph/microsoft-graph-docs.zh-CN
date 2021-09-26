@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: f363d49d5d102470bcdef74f5832935e2c986f4f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fe745af4edf572d196bfd2a00c364e3cccadf2b3
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019599"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766598"
 ---
 # <a name="delete-schemaextension"></a>删除 schemaExtension
 
@@ -53,8 +53,8 @@ DELETE /schemaExtensions/{id}
 如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
-下面是一个请求示例。
+### <a name="request"></a>请求
+下面展示了示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -82,8 +82,8 @@ DELETE https://graph.microsoft.com/v1.0/schemaExtensions/{id}
 
 ---
 
-##### <a name="response"></a>响应
-下面是一个响应示例。 
+### <a name="response"></a>响应
+下面展示了示例响应。 
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -10,7 +10,7 @@ ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/24/2021
-ms.locfileid: "59508816"
+ms.locfileid: "59767074"
 ---
 # <a name="dimensions-resource-type"></a>维度资源类型
 
@@ -20,8 +20,8 @@ ms.locfileid: "59508816"
 
 表示 Dynamics 365 Business Central 中的维度。
 
-## <a name="methods"></a>Methods
-| 方法       | 返回类型  |Description|
+## <a name="methods"></a>方法
+| 方法       | 返回类型  |说明|
 |:-------------|:-------------|:----------|
 |[获取维度](../api/dynamics-dimension-get.md)|dimension|获取维度。|
 

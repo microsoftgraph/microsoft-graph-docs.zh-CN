@@ -2,15 +2,15 @@
 title: 列出 cloudPcProvisioningPolicies
 description: 查看所有云电脑预配策略的属性和关系。
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 1e363698ad649116c67ab3dcf117b8b0978068a8
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 511ac27c2493cd11afc02ccc927472ab21133d24
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53534535"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59763091"
 ---
 # <a name="list-provisioningpolicies"></a>列出 provisioningPolicies
 
@@ -19,8 +19,6 @@ ms.locfileid: "53534535"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 列出 [cloudPcProvisioningPolicy 对象的属性和](../resources/cloudpcprovisioningpolicy.md) 关系。
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="permissions"></a>权限
 

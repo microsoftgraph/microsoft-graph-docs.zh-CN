@@ -2,15 +2,15 @@
 title: 获取 cloudPcOnPremisesConnection
 description: 读取 cloudPcOnPremisesConnection 对象的属性和关系。
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 291e6e17494bf8dcfc467b8d3c594f27d6b2e710
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: a51ce6f56d0586bd8cbfbd953f3051a9f726b176
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52546838"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766738"
 ---
 # <a name="get-cloudpconpremisesconnection"></a>获取 cloudPcOnPremisesConnection
 
@@ -20,8 +20,7 @@ ms.locfileid: "52546838"
 
 读取 [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) 对象的属性和关系。
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

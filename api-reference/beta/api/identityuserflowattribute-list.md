@@ -1,16 +1,16 @@
 ---
 title: 列出 identityUserFlowAttributes
 description: 检索 identityUserFlowAttribute 对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: af97b488cbc571c53363e088f6507d8c48593f42
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: fd7d9809d417ca9824d7f29c1471f53197d496a8
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50435251"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59763483"
 ---
 # <a name="list-identityuserflowattributes"></a>列出 identityUserFlowAttributes
 
@@ -20,20 +20,20 @@ ms.locfileid: "50435251"
 
 检索 [identityUserFlowAttribute 对象](../resources/identityuserflowattribute.md) 的列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）|IdentityUserFlow.Read.All、IdentityUserflow.ReadWrite.All|
+|委派（工作或学校帐户）|IdentityUserFlow.Read.All、IdentityUserFlow.ReadWrite.All|
 |委派（个人 Microsoft 帐户）| 不支持。|
-|Application|IdentityUserFlow.Read.All、IdentityUserFlow.ReadWrite.All|
+|应用程序|IdentityUserFlow.Read.All、IdentityUserFlow.ReadWrite.All|
 
 工作或学校帐户需要属于以下角色之一：
 
 * 全局管理员
-* 外部标识用户流属性管理员
+* 外部标识用户Flow属性管理员
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -55,7 +55,7 @@ GET /identity/userFlowAttributes
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [identityUserFlowAttribute](../resources/identityuserflowattribute.md)  对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [identityUserFlowAttribute](../resources/identityuserflowattribute.md)  对象集合。
 
 ## <a name="example"></a>示例
 

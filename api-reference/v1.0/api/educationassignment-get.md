@@ -5,18 +5,18 @@ author: sharad-sharma-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: ce12428da315ba770f4521fa484df1e1c716d9cc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 65ea2a9c7ef58a14af846892048a2ea4ce9460ca
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59130944"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765922"
 ---
 # <a name="get-educationassignment"></a>获取 educationAssignment
 
 命名空间：microsoft.graph
 
-获取工作分配的属性和关系。 
+获取工作分配 的属性和 [关系](../resources/educationassignment.md)。 
 
 学生只能看到分配给他们的作业;教师和具有应用程序权限的应用程序可以看到课程的所有作业。
 
@@ -33,7 +33,7 @@ ms.locfileid: "59130944"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc-9e13-44a2-a6ac-a53322006454
+GET /education/classes/{id}/assignments/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
@@ -53,15 +53,14 @@ GET /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc
 ### <a name="request"></a>请求
 下面展示了示例请求。
 
-
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["1fdf61ee-c129-4960-9b7c-8df159aa64b0"],
+  "sampleKeys":["f4a941ff-9da6-4707-ba5b-0eae93cad0b4","3c77de7f-539b-49e1-9c96-1274f2f0ee3b"],
   "name": "get_educationassignment"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/education/classes/5edb6a5f-fc6b-441b-8952-bcbfc33ef0e5/assignments/1fdf61ee-c129-4960-9b7c-8df159aa64b0
+GET https://graph.microsoft.com/v1.0/education/classes/f4a941ff-9da6-4707-ba5b-0eae93cad0b4/assignments/3c77de7f-539b-49e1-9c96-1274f2f0ee3b
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationassignment-csharp-snippets.md)]
@@ -81,7 +80,6 @@ GET https://graph.microsoft.com/v1.0/education/classes/5edb6a5f-fc6b-441b-8952-b
 
 ---
 
-
 ### <a name="response"></a>响应
 下面展示了示例响应。 
 
@@ -98,42 +96,50 @@ Content-type: application/json
 Content-length: 279
 
 {
-  "id": "19002",
-  "addedStudentAction": "none",
-  "allowLateSubmissions": true,
-  "allowStudentsToAddResourcesToSubmission": true,
-  "assignDateTime": "String (timestamp)",
-  "assignTo": {"@odata.type": "microsoft.graph.educationAssignmentRecipient"},
-  "assignedDateTime": "2014-01-01T00:00:00Z",
-  "classId": "11006",
-  "createdBy": {
-    "user": {
-      "displayName": "Shawn Hughes",
-      "id": "14012",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('f4a941ff-9da6-4707-ba5b-0eae93cad0b4')/assignments/$entity",
+    "classId": "f4a941ff-9da6-4707-ba5b-0eae93cad0b4",
+    "displayName": "07.30 SubmissionsUploadResource Word2",
+    "closeDateTime": null,
+    "dueDateTime": "2021-08-01T06:59:00Z",
+    "assignDateTime": null,
+    "assignedDateTime": "2021-07-30T16:01:32.5518042Z",
+    "allowLateSubmissions": true,
+    "resourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!DPA6q59Tw0mtgmyXRUmrQRqBZTesG-lMkl1cBmvvMeU6BLWBcGc_R6UgCKyYyTin/items/016XPCQECCTNQDGB5U4RCZFBXZBV5ZX24X",
+    "createdDateTime": "2021-07-30T16:00:52.1918016Z",
+    "lastModifiedDateTime": "2021-07-30T19:39:09.6384593Z",
+    "allowStudentsToAddResourcesToSubmission": true,
+    "status": "assigned",
+    "notificationChannelUrl": null,
+    "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7b%22subEntityId%22%3a%22%7b%5c%22version%5c%22%3a%5c%221.0%5c%22%2c%5c%22config%5c%22%3a%7b%5c%22classes%5c%22%3a%5b%7b%5c%22id%5c%22%3a%5c%22f4a941ff-9da6-4707-ba5b-0eae93cad0b4%5c%22%2c%5c%22displayName%5c%22%3anull%2c%5c%22assignmentIds%5c%22%3a%5b%5c%223c77de7f-539b-49e1-9c96-1274f2f0ee3b%5c%22%5d%7d%5d%7d%2c%5c%22action%5c%22%3a%5c%22navigate%5c%22%2c%5c%22view%5c%22%3a%5c%22assignment-viewer%5c%22%7d%22%2c%22channelId%22%3anull%7d",
+    "addedStudentAction": "none",
+    "id": "3c77de7f-539b-49e1-9c96-1274f2f0ee3b",
+    "instructions": {
+        "content": "<div style=\"font-family: inherit; font-size: inherit; color: inherit;\">upload a word document</div>",
+        "contentType": "html"
+    },
+    "grading": {
+        "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
+        "maxPoints": 10
+    },
+    "assignTo": {
+        "@odata.type": "#microsoft.graph.educationAssignmentClassRecipient"
+    },
+    "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+            "displayName": null
+        }
+    },
+    "lastModifiedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+            "displayName": null
+        }
     }
-  },
-  "closeDateTime": "2014-01-11T00:00:00Z",
-  "createdDateTime": "2014-01-01T00:00:00Z",
-  "displayName": "Mid term exam",
-  "dueDateTime": "2014-01-11T00:00:00Z",
-  "resourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!0sGAoOieeE6iSj1WXCV-nYYTuh2luKRDvUVGQBLOmvYpRzc5ARnCRorRht6P3MhU/items/01N74NOEZL7P3VK22SQFDKBZ3PHVPKDVAQ",
-  "grading": {
-      "@odata.type": "microsoft.graph.educationAssignmentPointsGradeType",
-      "maxPoints": 100
-  },
-  "instructions": {
-    "content": "Answer every question correctly",
-    "contentType": "Text"
-  },
-  "lastModifiedBy": {
-    "user": {
-      "displayName": "Shawn Hughes",
-      "id": "14012",
-    }
-  },
-  "lastModifiedDateTime": "2014-01-01T00:00:00Z",
-  "notificationChannelUrl": null,
-  "status": "assigned"
 }
 ```
 

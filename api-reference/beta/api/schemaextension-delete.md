@@ -1,16 +1,16 @@
 ---
 title: 删除 schemaExtension
 description: 删除架构扩展定义。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: e6f62b570a9befa762ac0f4f05db70cbb13f6c7e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 473924ffd4be2b8aa20d586f086af7b2ab6c268b
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975294"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766857"
 ---
 # <a name="delete-schemaextension"></a>删除 schemaExtension
 
@@ -34,7 +34,7 @@ ms.locfileid: "48975294"
 |应用程序 | 不支持。 |
 
 > [!NOTE]
-> 此外，对于委派的流程，登录用户只能删除他们自己 (的 Schemaextension，其中 schemaExtension 的 **owner** 属性是 `appId` 登录用户拥有) 的应用程序的所有者属性。
+> 此外，对于委派流，登录用户只能删除他们拥有 (其中 schemaExtension 的所有者属性是已登录用户拥有) 的应用程序的 。 `appId`
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -55,8 +55,8 @@ DELETE /schemaExtensions/{id}
 如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
-下面是一个请求示例。
+### <a name="request"></a>请求
+下面展示了示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -84,8 +84,8 @@ DELETE https://graph.microsoft.com/beta/schemaExtensions/{id}
 
 ---
 
-##### <a name="response"></a>响应
-下面是一个响应示例。 
+### <a name="response"></a>响应
+下面展示了示例响应。 
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -1,16 +1,16 @@
 ---
 title: sortProperty 资源类型
-description: 提供用于对搜索结果进行排序的选项。
-localization_priority: Normal
+description: 指示搜索结果排序的顺序
+ms.localizationpriority: medium
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 1f1288b2dc9ec05fe8aaedb5871c3bda68714f90
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 9606b76ec7679b543759f328fc7d64803e676df3
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193864"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766633"
 ---
 # <a name="sortproperty-resource-type"></a>sortProperty 资源类型
 
@@ -18,14 +18,14 @@ ms.locfileid: "48193864"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示对搜索结果进行排序的排序选项。
+指示搜索结果的排序顺序。
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | 描述 |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|name|字符串|要对其进行排序的属性的名称。 必需。|
-|isDescending|Boolean|`True` 如果排序次序为降序。 默认值为 `false` ，排序次序为升序。 可选。|
+|name|String|要排序的属性的名称。 必需。|
+|isDescending|Boolean|`True` 如果排序顺序为降序。 默认值为 `false` ，按升序排序。 可选。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

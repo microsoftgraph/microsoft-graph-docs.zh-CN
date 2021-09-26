@@ -1,16 +1,16 @@
 ---
 title: 列出提交
-description: 列出与此分配关联的所有提交。 教师或具有应用程序权限的应用程序可以获取所有提交，而学生只能获取与其关联的提交。
+description: 列出与工作分配关联的所有提交。
 author: dipakboyed
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: c71799d74a2714028d90531f6c8dcb8257e13e84
-ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
+ms.openlocfilehash: 0f28375a67b7db090fa1a3dda5f7bb91ddc900cd
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58367105"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59763188"
 ---
 # <a name="list-submissions"></a>列出提交
 
@@ -18,7 +18,9 @@ ms.locfileid: "58367105"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-列出与此分配关联的所有提交。 教师或具有应用程序权限的应用程序可以获取所有提交，而学生只能获取与其关联的提交。
+列出与作业关联的所有 [提交](../resources/educationassignment.md)。
+
+教师或具有应用程序权限的应用程序可以获取所有提交，而学生只能获取与其关联的提交。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -34,6 +36,7 @@ ms.locfileid: "58367105"
 ```http
 GET /education/classes/{id}/assignments/{id}/submissions
 ```
+
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
@@ -44,19 +47,22 @@ GET /education/classes/{id}/assignments/{id}/submissions
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
+
 ## <a name="response"></a>响应
 如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [educationSubmission](../resources/educationsubmission.md) 对象集合。
+
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 下面展示了示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["f4a941ff-9da6-4707-ba5b-0eae93cad0b4","3c77de7f-539b-49e1-9c96-1274f2f0ee3b"],
   "name": "get_submissions"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/submissions
+GET https://graph.microsoft.com/beta/education/classes/f4a941ff-9da6-4707-ba5b-0eae93cad0b4/assignments/3c77de7f-539b-49e1-9c96-1274f2f0ee3b/submissions
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-submissions-csharp-snippets.md)]
@@ -76,7 +82,7 @@ GET https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/s
 
 ---
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 下面展示了示例响应。 
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
@@ -93,31 +99,44 @@ Content-type: application/json
 Content-length: 873
 
 {
-  "value": [
-    {
-      "id": "33223",
-      "recipient": {
-        "userId": "13015",
-        "@Odata.type":"microsoft.graph.educationSubmissionRecipient"
-      },
-      "releasedBy": {
-          "user": {
-            "displayName": "Susana Rocha",
-            "id": "14012"
-          },
-        },
-      "releasedDateTime": "2014-01-01T00:00:00Z",
-      "resourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!8-QjN2tsv0WyGnTv7vOvnQkmGHbbeMNLqYKONmHLVnvCVmBYIGpeT456457AdW9f/items/017NJZI25NOB5XZNLABF7646XAMDZTQQ6T",
-      "status": "working",
-      "submittedBy": {
-          "user": {
-            "displayName": "Susana Rocha",
-            "id": "14012"
-          },
-        },
-      "submittedDateTime": "2014-01-01T00:00:00Z"
-    }
-  ]
+    "value": [
+        {
+            "status": "working",
+            "submittedDateTime": null,
+            "unsubmittedDateTime": null,
+            "returnedDateTime": null,
+            "resourcesFolderUrl": "https://graph.microsoft.com/beta/drives/b!DPA6q59Tw0mtgmyXRUmrQRqBZTesG-lMkl1cBmvvMeUEWrOk89nKRpUEr4ZhNYBc/items/016XPCQEDJCE5LX4OXABF37QSORAK5WKQD",
+            "id": "4af73d2b-6b9c-493f-0688-979087bed39b",
+            "recipient": {
+                "@odata.type": "#microsoft.graph.educationSubmissionIndividualRecipient",
+                "userId": "80cefd93-8d88-40e2-b5d3-67898383e226"
+            },
+            "submittedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+                    "displayName": null
+                }
+            },
+            "unsubmittedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": null,
+                    "displayName": null
+                }
+            },
+            "returnedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": null,
+                    "displayName": null
+                }
+            }
+        }
+    ]
 }
 ```
 

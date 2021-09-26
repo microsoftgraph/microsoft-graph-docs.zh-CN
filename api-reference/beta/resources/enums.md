@@ -5,12 +5,12 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 0bdb3293c6b5068ebb8a2e71a5c7923ce788c32f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0c54457f5b9a266cbdda0aa039fa6ff50ff8936f
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59023743"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766276"
 ---
 # <a name="enum-values"></a>枚举值
 
@@ -400,7 +400,7 @@ ms.locfileid: "59023743"
 
 |成员|
 |:---|
-|email|
+|电子邮件|
 |mobileSMS|
 |mobilePhone|
 |officePhone|
@@ -433,7 +433,7 @@ ms.locfileid: "59023743"
 |应用程序|
 |users|
 |devicePlatform|
-|位置|
+|location|
 |clientType|
 |signInRisk|
 |userRisk|
@@ -548,7 +548,7 @@ ms.locfileid: "59023743"
 
 |成员|
 |:---|
-|email|
+|电子邮件|
 |mobilePhone|
 |officePhone|
 |securityQuestion|
@@ -654,7 +654,7 @@ ms.locfileid: "59023743"
 
 |成员|
 |:---|
-|email|
+|电子邮件|
 |mobileSMS|
 |mobileCall|
 |officePhone|
@@ -689,6 +689,25 @@ ms.locfileid: "59023743"
 |studentsAndPublisher|
 |studentsAndTeamOwners|
 |unknownFutureValue|
+|studentsOnly|
+
+### <a name="educationassignmentstatus-values"></a>educationAssignmentStatus 值
+|成员|
+|:---|
+|draft|
+|published|
+|已分配|
+|unknownFutureValue|
+
+### <a name="educationsubmissionstatus-values"></a>educationSubmissionStatus 值
+|成员|
+|:---|
+|working|
+|submitted|
+|released|
+|已返回|
+|unknownFutureValue|
+|已重新分配|
 
 ### <a name="externalemailotpstate-values"></a>externalEmailOtpState 值
 
@@ -804,7 +823,7 @@ ms.locfileid: "59023743"
 
 |成员|
 |:---|
-|位置|
+|location|
 |应用|
 
 ### <a name="anniversarytype-values"></a>anniversaryType 值
@@ -873,7 +892,7 @@ ms.locfileid: "59023743"
 |:--------------
 | 通话
 | 聊天
-| email
+| 电子邮件
 | 焦点
 | meeting
 
@@ -881,7 +900,7 @@ ms.locfileid: "59023743"
 
 |成员|
 |:---|
-|email|
+|电子邮件|
 |mobilePhone|
 |officePhone|
 |securityQuestion|
@@ -927,7 +946,7 @@ ms.locfileid: "59023743"
 | aide               | 2     | 用户的助手。                         |
 | 一个             | 3     | 用户的。                       |
 | 保护者           | 4      | 用户的保护者。                     |
-| Child              | 5      | 用户的子级。                        |
+| Child              | 5     | 用户的子级。                        |
 | other              | 6      | 与用户未指定的关系。 |
 | unknownFutureValue | 7      | 用于将来兼容性的标记值。   |
 
@@ -1105,7 +1124,7 @@ ms.locfileid: "59023743"
 | lightOrange | 2     |
 | lightGray   | 3     |
 | lightYellow | 4      |
-| lightTeal   | 5      |
+| lightTeal   | 5     |
 | lightPink   | 6      |
 | lightBrown  | 7      |
 | lightRed    | 8      |
@@ -1118,7 +1137,7 @@ ms.locfileid: "59023743"
 | :----------------- | :---- |
 | 删除           | 2     |
 | deletionFailed     | 3     |
-| provisioningFailed | 5      |
+| provisioningFailed | 5     |
 | 已设置        | 6      |
 | 预配       | 7      |
 | unknownFutureValue | 8      |
@@ -1458,7 +1477,7 @@ ms.locfileid: "59023743"
 | home
 | 工时
 | 博客
-| 个人资料
+| profile
 
 
 ### <a name="categorycolor-values"></a>categoryColor 值
@@ -1471,7 +1490,7 @@ ms.locfileid: "59023743"
 | preset2  | 2     |
 | preset3  | 3     |
 | preset4  | 4      |
-| preset5  | 5      |
+| preset5  | 5     |
 | preset6  | 6      |
 | preset7  | 7      |
 | preset8  | 8      |
@@ -1512,7 +1531,7 @@ ms.locfileid: "59023743"
 | sha256              | 2     | SHA256 哈希类型。              |
 | md5                 | 3     | MD5 哈希类型。                 |
 | authenticodeHash256 | 4      | AuthenticodeHash256 哈希类型。 |
-| lsHash              | 5      | LsHash 哈希类型。              |
+| lsHash              | 5     | LsHash 哈希类型。              |
 | ctph                | 6      | CTPH 哈希类型。                |
 | peSha1              | 7      | PESHA1 哈希类型。              |
 | peSha256            | 8      | PESHA256 哈希类型。            |
@@ -1557,7 +1576,7 @@ ms.locfileid: "59023743"
 | currentUser             | 2     | HKEY_CURRENT_USER配置单元。           |
 | localMachineSam         | 3     | HKEY_LOCAL_MACHINE\SAM配置单元。      |
 | localMachineSamSoftware | 4      | HKEY_LOCAL_MACHINE\Software配置单元。 |
-| localMachineSystem      | 5      | HKEY_LOCAL_MACHINE\System配置单元。   |
+| localMachineSystem      | 5     | HKEY_LOCAL_MACHINE\System配置单元。   |
 | usersDefault            | 6      | HKEY_USERS \\ 。DEFAULT 配置单元。        |
 
 ### <a name="registryoperation-values"></a>registryOperation 值
@@ -1582,7 +1601,7 @@ ms.locfileid: "59023743"
 | dword             | 2     | REG_DWORD注册表值类型。               |
 | dwordLittleEndian | 3     | REG_DWORD_LITTLE_ENDIAN注册表值类型。 |
 | dwordBigEndian    | 4      | REG_DWORD_BIG_ENDIAN注册表值类型。    |
-| expandSz          | 5      | REG_EXPAND_SZ注册表值类型。           |
+| expandSz          | 5     | REG_EXPAND_SZ注册表值类型。           |
 | 链接              | 6      | REG_LINK注册表值类型。                |
 | multiSz           | 7      | REG_MULTI_SZ注册表值类型。            |
 | 无              | 8      | REG_NONE注册表值类型。                |
@@ -1923,7 +1942,7 @@ ms.locfileid: "59023743"
 | 成员  | 值 | 说明                          |
 | :------ | :---- | :----------------------------------- |
 | default | 0     | 内容是文件或非电子邮件类型。 |
-| email   | 1     | 内容是电子邮件。                 |
+| 电子邮件   | 1     | 内容是电子邮件。                 |
 
 ### <a name="contentstate-values"></a>contentState 值
 
@@ -2050,7 +2069,7 @@ ms.locfileid: "59023743"
 |:-------------------|:------|:-------------------|
 | 垃圾邮件 (spam)               | 1     | 垃圾邮件威胁。       |
 | 仿冒           | 2     | 网络钓鱼威胁。   |
-| 恶意软件            | 3     | 恶意软件威胁。    |
+| 恶意软件 (malware)            | 3     | 恶意软件威胁。    |
 | unknownFutureValue | 4      | sentinel 成员。 |
 
 ### <a name="threatassessmentstatus-values"></a>threatAssessmentStatus 值
@@ -2085,7 +2104,7 @@ ms.locfileid: "59023743"
 | safeSender            | 2     | 保险箱发件人列表。                   |
 | blockedSender         | 3     | 阻止的发件人列表。                |
 | advancedSpamFiltering | 4      | 高级垃圾邮件筛选选项。     |
-| domainAllowList       | 5      | 发件人域允许列表。           |
+| domainAllowList       | 5     | 发件人域允许列表。           |
 | domainBlockList       | 6      | 发件人域阻止列表。           |
 | notInAddressBook      | 7      | 排除不在通讯簿中的发件人。 |
 | firstTimeSender       | 8      | 因第一次发送者被阻止。   |
@@ -2155,11 +2174,11 @@ ms.locfileid: "59023743"
 |currency | currency 列。 |
 |dateTime | dateTime 列。 |
 |查找 | 查找列。 |
-|布尔 | 是/否列。 |
+|boolean | 是/否列。 |
 |用户 | 人员或组列。 |
 |url | 超链接或图片列。 |
 |calculated | 计算列。 |
-|位置 | location 列。 |
+|location | location 列。 |
 |地理位置 | 地理位置列。 |
 |term | 托管元数据列。 |
 |multiterm | 接受多个值的托管元数据列。 |
@@ -2180,10 +2199,10 @@ ms.locfileid: "59023743"
 | 成员                | 值 | 说明                         |
 |:----------------------|:------|:------------------------------------|
 | string                | 1     | String 数据类型                    |
-| 布尔               | 2     | Boolean 数据类型                   |
+| boolean               | 2     | Boolean 数据类型                   |
 | int64                 | 3     | Int 数据类型                       |
 | stringCollection      | 4      | 字符串集合数据类型         |
-|dateTime|5 ||
+|dateTime|5||
 | unknownFutureValue    | 6      | sentinel 成员。                  |
 
 ### <a name="identityuserflowattributetype-values"></a>identityUserFlowAttributeType 值
@@ -2283,7 +2302,7 @@ ms.locfileid: "59023743"
 |成员    |值    |说明 |
 |:---------|:--------|:----------- |
 |team      |0        |指示Teams应用可以安装在团队中，并有权访问该团队的数据。|
-|groupChat |1        |指示Teams应用可以安装在群聊中，并有权访问该群聊的数据。|
+|groupChat |1        |指示该Teams应用可以安装在群聊中，并有权访问该群聊的数据。|
 |personal  |2        |指示Teams应用可以安装在用户的个人范围内，并有权访问该用户的数据。|
 
 ### <a name="roleassignmentschedulerequestfilterbycurrentuseroptions-values"></a>roleAssignmentScheduleRequestFilterByCurrentUserOptions 值 

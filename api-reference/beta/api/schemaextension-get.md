@@ -1,16 +1,16 @@
 ---
 title: 获取 schemaExtension
 description: 获取指定 schemaExtension 定义的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: bb1cd6e7869faaf67e378a2e24709226c0afc14f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 40a8c9a413d35b2f9817d673bedb3e90e3a7d00b
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051989"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766850"
 ---
 # <a name="get-schemaextension"></a>获取 schemaExtension
 
@@ -35,8 +35,6 @@ ms.locfileid: "52051989"
 ```http
 GET /schemaExtensions/{id}
 ```
-## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -51,8 +49,8 @@ GET /schemaExtensions/{id}
 
 如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [schemaExtension](../resources/schemaextension.md) 对象。
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
-下面是一个请求示例。
+### <a name="request"></a>请求
+下面展示了示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -80,8 +78,8 @@ GET https://graph.microsoft.com/beta/schemaExtensions/graphlearn_test
 
 ---
 
-##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+### <a name="response"></a>响应
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -90,7 +88,6 @@ GET https://graph.microsoft.com/beta/schemaExtensions/graphlearn_test
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 201
 
 {
     "id":"graphlearn_test",

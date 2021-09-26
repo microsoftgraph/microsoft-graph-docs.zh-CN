@@ -4,12 +4,12 @@ description: Azure AD 目录对象支持高级查询功能以高效访问数据�
 author: Licantrop0
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 98147475615b34ad45d9f4f14fb67c69e1f8b96a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a1036aefdd9debaa54631a43f08867a1ef430c02
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59142445"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765319"
 ---
 # <a name="advanced-query-capabilities-on-azure-ad-directory-objects"></a>Azure AD 目录对象的高级查询功能
 
@@ -213,3 +213,4 @@ Content-type: application/json
 + [使用查询参数自定义响应](/graph/query-parameters)
 + [查询参数限制](known-issues.md#query-parameter-limitations)
 + [使用$search查询参数匹配搜索条件](/graph/search-query-parameter)
++ [使用 .NET SDK 探索 Azure AD Directory 对象的高级查询功能](https://github.com/microsoftgraph/dotnet-aad-query-sample/)

@@ -2,15 +2,15 @@
 title: 列出 cloudPcOnPremisesConnections
 description: 获取 cloudPcOnPremisesConnection 对象及其属性的列表。
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 4382453196900685363d72aa514b67cf98d94b1e
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 905904a1b98a6e6f48bdddd9aa637312f3c247ac
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52992840"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764050"
 ---
 # <a name="list-onpremisesconnections"></a>列出 onPremisesConnections
 
@@ -19,8 +19,6 @@ ms.locfileid: "52992840"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 列出 [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) 对象的属性和关系。
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="permissions"></a>权限
 

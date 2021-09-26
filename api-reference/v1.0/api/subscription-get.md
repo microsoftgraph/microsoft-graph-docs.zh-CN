@@ -1,16 +1,16 @@
 ---
 title: 获取订阅
 description: 检索订阅的属性和关系。
-localization_priority: Priority
+ms.localizationpriority: high
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: apiPageType
-ms.openlocfilehash: 36eff9ff9f54ad6873d0948d58b7637722d9a97f
-ms.sourcegitcommit: 74a1fb3874e04c488e1b87dcee80d76cc586c1f3
+ms.openlocfilehash: 7f11f8b85971a1aa6d05ca32e7793b53c8c5552e
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031119"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59763408"
 ---
 # <a name="get-subscription"></a>获取订阅
 
@@ -75,7 +75,7 @@ GET /subscriptions/{id}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 

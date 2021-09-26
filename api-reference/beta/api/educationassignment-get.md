@@ -1,16 +1,16 @@
 ---
 title: 获取 educationAssignment
-description: 获取给定分配的属性和关系。 请注意，教师和应用程序可以看到课程的所有作业。
+description: 获取工作分配的属性和关系。
 author: dipakboyed
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: bfa8a41f23ec5543467b19e767fb16842cbb8a0c
-ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
+ms.openlocfilehash: 76865142f465785027dfcf4a7cf867136c66dc82
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58367189"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766654"
 ---
 # <a name="get-educationassignment"></a>获取 educationAssignment
 
@@ -18,7 +18,7 @@ ms.locfileid: "58367189"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取工作分配的属性和关系。 
+获取工作分配 的属性和 [关系](../resources/educationassignment.md)。 
 
 学生只能看到分配给他们的作业;教师和具有应用程序权限的应用程序可以看到课程的所有作业。
 
@@ -52,17 +52,17 @@ GET /education/classes/{id}/assignments/{id}
 如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [educationAssignment](../resources/educationassignment.md) 对象。
 
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 下面展示了示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
-
 <!-- {
-  "blockType": "request",
+  "blockType": "request", 
+  "sampleKeys":["f4a941ff-9da6-4707-ba5b-0eae93cad0b4","3c77de7f-539b-49e1-9c96-1274f2f0ee3b"],
   "name": "get_educationassignment"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/education/classes/11014/assignments/19002
+GET https://graph.microsoft.com/beta/education/classes/f4a941ff-9da6-4707-ba5b-0eae93cad0b4/assignments/3c77de7f-539b-49e1-9c96-1274f2f0ee3b
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationassignment-csharp-snippets.md)]
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/education/classes/11014/assignments/19002
 
 ---
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 下面展示了示例响应。 
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
@@ -98,43 +98,51 @@ Content-type: application/json
 Content-length: 279
 
 {
-  "id": "19002",
-  "addedStudentAction": "none",
-  "addToCalendarAction": "studentsAndPublisher",
-  "allowLateSubmissions": true,
-  "allowStudentsToAddResourcesToSubmission": true,
-  "assignDateTime": "String (timestamp)",
-  "assignTo": {"@odata.type": "microsoft.graph.educationAssignmentRecipient"},
-  "assignedDateTime": "2014-01-01T00:00:00Z",
-  "classId": "11006",
-  "createdBy": {
-    "user": {
-      "displayName": "Susana Rocha",
-      "id": "14012",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('f4a941ff-9da6-4707-ba5b-0eae93cad0b4')/assignments/$entity",
+    "classId": "f4a941ff-9da6-4707-ba5b-0eae93cad0b4",
+    "displayName": "07.30 SubmissionsUploadResource Word2",
+    "closeDateTime": null,
+    "dueDateTime": "2021-08-01T06:59:00Z",
+    "assignDateTime": null,
+    "assignedDateTime": "2021-07-30T16:01:32.5518042Z",
+    "allowLateSubmissions": true,
+    "resourcesFolderUrl": "https://graph.microsoft.com/beta/drives/b!DPA6q59Tw0mtgmyXRUmrQRqBZTesG-lMkl1cBmvvMeU6BLWBcGc_R6UgCKyYyTin/items/016XPCQECCTNQDGB5U4RCZFBXZBV5ZX24X",
+    "createdDateTime": "2021-07-30T16:00:52.1918016Z",
+    "lastModifiedDateTime": "2021-07-30T19:39:09.6384593Z",
+    "allowStudentsToAddResourcesToSubmission": true,
+    "status": "assigned",
+    "notificationChannelUrl": null,
+    "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7b%22subEntityId%22%3a%22%7b%5c%22version%5c%22%3a%5c%221.0%5c%22%2c%5c%22config%5c%22%3a%7b%5c%22classes%5c%22%3a%5b%7b%5c%22id%5c%22%3a%5c%22f4a941ff-9da6-4707-ba5b-0eae93cad0b4%5c%22%2c%5c%22displayName%5c%22%3anull%2c%5c%22assignmentIds%5c%22%3a%5b%5c%223c77de7f-539b-49e1-9c96-1274f2f0ee3b%5c%22%5d%7d%5d%7d%2c%5c%22action%5c%22%3a%5c%22navigate%5c%22%2c%5c%22view%5c%22%3a%5c%22assignment-viewer%5c%22%7d%22%2c%22channelId%22%3anull%7d",
+    "addToCalendarAction": "none",
+    "addedStudentAction": "none",
+    "id": "3c77de7f-539b-49e1-9c96-1274f2f0ee3b",
+    "instructions": {
+        "content": "<div style=\"font-family: inherit; font-size: inherit; color: inherit;\">upload a word document</div>",
+        "contentType": "html"
+    },
+    "grading": {
+        "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
+        "maxPoints": 10
+    },
+    "assignTo": {
+        "@odata.type": "#microsoft.graph.educationAssignmentClassRecipient"
+    },
+    "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+            "displayName": null
+        }
+    },
+    "lastModifiedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+            "displayName": null
+        }
     }
-  },
-  "closeDateTime": "2014-01-11T00:00:00Z",
-  "createdDateTime": "2014-01-01T00:00:00Z",
-  "displayName": "Mid term exam",
-  "dueDateTime": "2014-01-11T00:00:00Z",
-  "resourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!0sGAoOieeE6iSj1WXCV-nYYTuh2luKRDvUVGQBLOmvYpRzc5ARnCRorRht6P3MhU/items/01N74NOEZL7P3VK22SQFDKBZ3PHVPKDVAQ",
-  "grading": {
-      "@odata.type": "microsoft.graph.educationAssignmentPointsGradeType",
-      "maxPoints": 100
-  },
-  "instructions": {
-    "content": "Answer every question correctly",
-    "contentType": "Text"
-  },
-  "lastModifiedBy": {
-    "user": {
-      "displayName": "Susana Rocha",
-      "id": "14012",
-    }
-  },
-  "lastModifiedDateTime": "2014-01-01T00:00:00Z",
-  "notificationChannelUrl": null,
-  "status": "assigned"
 }
 ```
 

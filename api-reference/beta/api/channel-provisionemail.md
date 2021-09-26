@@ -1,16 +1,16 @@
 ---
 title: channel： provisionEmail
-description: 预配频道的电子邮件。
+description: 设置频道的电子邮件地址。
 author: anandab-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b2e619970c0cdadd574a4873cb3231a88934a087
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: da0b490cbf7d894a4645d3e13f70f653c7f65439
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52869622"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764960"
 ---
 # <a name="channel-provisionemail"></a>channel： provisionEmail
 
@@ -20,9 +20,9 @@ ms.locfileid: "52869622"
 
 为频道设置 [电子邮件地址](../resources/channel.md)。
 
-Microsoft Teams默认情况下，系统不会自动为频道设置电子邮件地址。 若要Teams电子邮件地址，可以调用 **provisionEmail，** 或者通过 Teams 用户界面，选择"获取电子邮件地址"，这将触发 Teams以生成电子邮件地址（如果尚未设置电子邮件地址）。
+Microsoft Teams默认情况下，系统不会自动为 **频道设置电子邮件地址**。 若要Teams电子邮件地址，可以调用 **provisionEmail，** 或者通过 Teams 用户界面，选择"获取电子邮件地址"，这将触发 Teams以生成电子邮件地址（如果尚未设置电子邮件地址）。
 
-若要删除频道的预配电子邮件地址，请使用 [removeEmail](channel-removeemail.md) 方法。
+若要删除频道的电子邮件地址 **，** 请使用 [removeEmail](channel-removeemail.md) 方法。
 
 ## <a name="permissions"></a>权限
 
@@ -50,7 +50,7 @@ POST /teams/{team-id}/channels/{channel-id}/provisionEmail
 
 ## <a name="response"></a>响应
 
-如果频道的电子邮件设置成功，此方法在响应正文中返回 响应代码和 `200 OK` [provisionChannelEmailResult](../resources/provisionChannelEmailResult.md) 对象。 设置的电子邮件地址位于 **email** 属性中。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应 [代码和 provisionChannelEmailResult](../resources/provisionChannelEmailResult.md) 对象。 设置的电子邮件地址位于 `email` 属性中。
 
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求

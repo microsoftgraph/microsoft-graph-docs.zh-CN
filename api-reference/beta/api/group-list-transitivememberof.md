@@ -1,16 +1,16 @@
 ---
 title: List group transitive memberOf
 description: 获取组是该组的一个成员的组和管理单元。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: f2a1daf44989034c02abb780d3d53cdce9c6a166
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: c6df727204f92e6ea3d97058079dd910613f47bb
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681481"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764526"
 ---
 # <a name="list-group-transitive-memberof"></a>List group transitive memberOf
 
@@ -41,7 +41,7 @@ GET /groups/{id}/transitiveMemberOf
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持[OData query parameters](/graph/query_parameters)以帮助自定义响应，包括 `$search`、`$count`、 和 `$filter` 此外，还启用了 OData 转换，例如，您可以转换以仅获取组的可传递的组成员。 `$search`可以用在 **displayName** 属性。 为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。 在添加或更新项目与在索引中可用之间可能会稍有延迟。
+此方法支持[OData query parameters](/graph/query-parameters)以帮助自定义响应，包括 `$search`、`$count`、 和 `$filter` 此外，还启用了 OData 转换，例如，您可以转换以仅获取组的可传递的组成员。 `$search`可以用在 **displayName** 属性。 为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。 在添加或更新项目与在索引中可用之间可能会稍有延迟。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -186,7 +186,7 @@ Content-type: text/plain
 294
 
 
-### <a name="example-4-use-odata-cast-and-search-to-get-membership-in-groups-with-display-names-that-contain-the-letters-tier-including-a-count-of-returned-objects"></a>示例 4：使用 OData cast 和 $search 获取显示名称包含字母"tier"（包括返回对象计数）的组的成员身份
+### <a name="example-4-use-odata-cast-and-search-to-get-membership-in-groups-with-display-names-that-contain-the-letters-tier-including-a-count-of-returned-objects"></a>示例 4：使用 OData 转换和$search获取显示名称包含字母"tier"（包括返回对象计数）的组的成员身份
 
 #### <a name="request"></a>请求
 

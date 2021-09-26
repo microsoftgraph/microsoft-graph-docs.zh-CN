@@ -1,22 +1,18 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ecdcad38f4681141d6e3150fe1fec0a00dfd195bdcbe6113369e437eb72171f1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bfd8bf5455cbebaf2c71556ef47dc386b63be499
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57278849"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59929130"
 ---
 ```java
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ClaimsMappingPolicy claimsMappingPolicy = new ClaimsMappingPolicy();
-LinkedList<String> definitionList = new LinkedList<String>();
-definitionList.add("definition-value");
-claimsMappingPolicy.definition = definitionList;
-claimsMappingPolicy.displayName = "displayName-value";
-claimsMappingPolicy.isOrganizationDefault = true;
+claimsMappingPolicy.displayName = "UpdateClaimsPolicy";
 
 graphClient.policies().claimsMappingPolicies("{id}")
     .buildRequest()

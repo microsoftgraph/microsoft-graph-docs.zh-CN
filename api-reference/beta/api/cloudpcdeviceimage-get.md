@@ -2,15 +2,15 @@
 title: 获取 cloudPcDeviceImage
 description: 读取 cloudPcDeviceImage 对象的属性和关系。
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 78b6bedd6afcd16cfdc79c5be5dc49454889d419
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: f64c0e84f135388d23ada36a47e380db21bba80c
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52991844"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765268"
 ---
 # <a name="get-cloudpcdeviceimage"></a>获取 cloudPcDeviceImage
 
@@ -20,7 +20,6 @@ ms.locfileid: "52991844"
 
 读取特定 [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) 对象的属性和关系。
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 ## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

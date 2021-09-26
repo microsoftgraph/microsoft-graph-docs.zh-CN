@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: e7d2ce6d2eb973eb68b4cbe14754c374eec9bd3c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 04a9f843da8326f257a7a48537353a10ac458a81
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59035610"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766934"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>使用 Microsoft 搜索 API 查询数据
 
@@ -33,6 +33,8 @@ Microsoft Search API 提供了[查询](../api/search-query.md)方法，可在 Mi
 |[获取最相关的电子邮件](#get-the-most-relevant-emails) | **enableTopResults** |
 |[获取选定属性](#get-selected-properties) | **fields** |
 |[在查询条款中使用 KQL](#keyword-query-language-kql-support) | **查询** |
+|[排序搜索结果](#sort-search-results)| **sort** |
+|[使用聚合优化结果](#refine-results-using-aggregations)| **聚合** |
 
 ## <a name="scope-search-based-on-entity-types"></a>根据实体类型限定搜索范围
 
@@ -104,6 +106,37 @@ SharePoint 或 OneDrive 项没有上限。 合理的页面大小是 200。 较�
 - [电子邮件属性](/microsoft-365/compliance/keyword-queries-and-search-conditions#searchable-email-properties)
 - [站点属性](/microsoft-365/compliance/keyword-queries-and-search-conditions#searchable-site-properties)
 
+## <a name="sort-search-results"></a>排序搜索结果
+
+响应中的搜索结果按以下默认排序顺序排列：
+
+- **message** 和 **event** 按日期进行排序。
+- 所有 SharePoint、OneDrive 人员和连接器类型都按相关性排序。
+
+[query](../api/search-query.md) 方法可通过在 `requests` 参数中指定 **sortProperties** 来自定义搜索顺序，后者是 [searchRequest](./searchrequest.md) 对象的集合。 这可用于指定一个或多个可排序的属性列表和排序顺序。
+
+请注意，目前仅支持以下 SharePoint 和 OneDrive 类型的排序结果：[driveItem](driveitem.md)、[listItem](listitem.md)、[list](list.md)、[site](site.md)。
+
+应用排序子句的属性需要在 SharePoint [搜索架构](/sharepoint/manage-search-schema)中可排序。 如果请求中指定的属性不可排序或不存在，则响应将返回错误， `HTTP 400 Bad Request`。 请注意，不能指定按使用 [sortProperty](sortproperty.md) 的相关性对文档进行排序。
+
+指定 [sortProperty](sortproperty.md) 对象的 **名称** 时，可使用 Microsoft Graph 类型的属性名称（例如 [driveItem](driveitem.md)），或搜索索引中托管属性的名称。
+
+有关演示如何对结果进行排序的示例，请参阅[对搜索结果进行排序](/graph/search-concept-sort)。
+
+## <a name="refine-results-using-aggregations"></a>使用聚合优化结果
+
+聚合（SharePoint 中也称为精简程序）是增强搜索体验的一种常见的方式。 除结果外，还提供有关匹配的搜索结果集的一些级别的聚合信息。 例如，你可以提供与查询匹配的文档最多作者和表示的文件类型等信息。
+
+在 [searchRequest](./searchrequest.md)中，指定除了搜索结果以外应返回的聚合。 每个聚合的说明在 [aggregationOption](./aggregationoption.md) 中定义，其指定要在其中计算聚合的属性，以及在响应中需要返回的 [searchBucket](searchBucket.md) 数目。
+
+应用排序子句的属性需要在 SharePoint [搜索架构](/sharepoint/manage-search-schema)中可排序。 如果指定的属性不可精简或不存在，则响应将返回 `HTTP 400 Bad Request`。
+
+返回包含 [searchBucket](searchBucket.md) 对象的集合的响应后，可将搜索请求精确到 [searchBucket](searchBucket.md)中包含的匹配元素。 为实现此操作，可将 **aggregationFilters** 属性中的 **aggregationsFilterToken** 值返回到后续 [searchRequest](./searchrequest.md)中。
+
+聚合目前仅支持在以下 SharePoint 和 OneDrive 类型上的任何可细化属性：[driveItem](driveitem.md)、[listItem](listitem.md)、[列表](list.md)、[网站](site.md)以及在Microsoft Graph 连接器上的 [externalItem](externalconnectors-externalitem.md)。
+
+请参阅[优化搜索结果](/graph/search-concept-aggregation) ，显示使用聚合增强和缩小搜索结果的示例。
+
 ## <a name="error-handling"></a>错误处理
 
 搜索 API 将返回由 [OData 错误对象定义](http://docs.oasis-open.org/odata/odata-json-format/v4.01/cs01/odata-json-format-v4.01-cs01.html#sec_ErrorResponse)所定义的错误响应，其中每个是包含代码和消息的 JSON 对象。
@@ -133,6 +166,8 @@ SharePoint 或 OneDrive 项没有上限。 合理的页面大小是 200。 较�
   - [搜索 Outlook 邮件](/graph/search-concept-messages)
   - [搜索日历事件](/graph/search-concept-events)
   - [SharePoint 和 OneDrive 中的搜索内容](/graph/search-concept-files)
+  - [排序搜索结果](/graph/search-concept-sort)
+  - [改进搜索结果](/graph/search-concept-aggregation)
 
 - 在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中探索搜索 API。
 - 了解此 API 集的[最新功能和更新](/graph/whats-new-overview)。

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5b67e3e2ddf2c82d264b8c69b6bdf1f3142b3c0a
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 92aa0dad46de860682cdcfdea4bd0cac19ff260c
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50782537"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767308"
 ---
 ```javascript
 
@@ -16,19 +16,28 @@ const options = {
 const client = Client.init(options);
 
 const schemaExtension = {
-  properties: [
-    {
-      name: 'new-name-value',
-      type: 'new-type-value'
-    },
-    {
-      name: 'additional-name-value',
-      type: 'additional-type-value'
-    }
-  ]
+    owner: 'ef4cb9a8-97c3-4ca7-854b-5cb5ced376fa',
+    properties: [
+        {
+            name: 'courseId',
+            type: 'Integer'
+        },
+        {
+            name: 'courseName',
+            type: 'String'
+        },
+        {
+            name: 'courseType',
+            type: 'String'
+        },
+        {
+            name: 'courseSupervisors',
+            type: 'String'
+        }
+    ]
 };
 
-await client.api('/schemaExtensions/{id}')
+await client.api('/schemaExtensions/exto6x7sfft_courses')
     .version('beta')
     .update(schemaExtension);
 

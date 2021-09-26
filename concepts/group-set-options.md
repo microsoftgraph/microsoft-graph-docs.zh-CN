@@ -3,12 +3,12 @@ title: 设置 Microsoft 365 组行为与预配选项
 description: 在 Microsoft Graph 使用组资源，你可以设置创建 Microsoft 365 组时要预配的特定组行为和资源。
 author: Jordanndahl
 ms.localizationpriority: high
-ms.openlocfilehash: fb7de5a435b781d7b1a6aefd899420476b4ac468
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7a57dc26a5d1dafe59196edbe0750f78955be612
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59126581"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59507744"
 ---
 # <a name="set-microsoft-365-group-behaviors-and-provisioning-options-preview"></a>设置 Microsoft 365 组行为与预配选项（预览）
 
@@ -30,11 +30,11 @@ ms.locfileid: "59126581"
 | SubscribeNewGroupMembers|成员可以订阅接收组对话。 |组成员不接收组对话。|
 | WelcomeEmailDisabled|欢迎电子邮件不会发送给新成员。|加入组时，会将欢迎电子邮件发送到新成员。|
 
-**resourceProvisioningOptions** 是一个字符串集合，用于指定作为创建 Microsoft 365 组的一部分进行预配的组资源，但这些组资源通常不是默认组创建的组成部分。
+**resourceProvisioningOptions** 是一个字符串集合，指定要预配为 Microsoft 365 组的一部分的组资源。 可以在组创建或更新期间指定这些资源。
 
 | resourceProvisioningOptions 支持的值   |说明| 如果未设置，则为默认值 |
 |:---------------|:--------|:------------|
-| Teams|将此组预配为 Microsoft Teams 中的团队。此外，此值可通过 `PATCH` 操作添加到 [组更新](/graph/api/group-update?view=graph-rest-beta&preserve-view=true) 上的 **resourceProvisioningOptions** 字符串集合，以便将现有的 Microsoft 365 组转换为团队。| 此组是没有 Teams 功能的常规 Microsoft 365 组。|
+| Teams|在 Microsoft Teams 中将此组预配为团队。此外，还可以通过 `PATCH` 操作将此值添加在 [组更新](/graph/api/group-update?view=graph-rest-beta&preserve-view=true) 上，以便从现有 Microsoft 365 组中预配团队。| 此组是没有 Teams 功能的常规 Microsoft 365 组。|
 
 
 ## <a name="see-also"></a>另请参阅

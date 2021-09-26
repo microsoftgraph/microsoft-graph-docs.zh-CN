@@ -5,12 +5,12 @@ author: harini84
 ms.localizationpriority: high
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 51be99350c3564f20fa4a7eae161551a0ce43817
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 63886db86a38f986237ffb3e3c2cd053244d6051
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59037948"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766376"
 ---
 # <a name="update-event"></a>更新事件
 
@@ -18,7 +18,9 @@ ms.locfileid: "59037948"
 
 更新 [event](../resources/event.md) 对象的属性。
 
+<!-- markdownlint-disable MD001 -->
 ### <a name="notes-for-updating-specific-properties"></a>更新特定属性的注释
+
 更新相应属性时，请注意以下行为或建议：
 
 - **与会者** 属性和会议更新
@@ -27,20 +29,21 @@ ms.locfileid: "59037948"
 
 - **Body** 属性和联机会议
 
-  在更新已设置为联机会议的事件的正文之前，请确保首先获取 **Body** 属性，对内容应用适当的更改，并保留联机会议的会议 blob。 无意中从正文中删除会议 blob 会禁用联机会议。 
+  在更新已设置为联机会议的事件的正文之前，请确保首先获取 **Body** 属性，对内容应用适当的更改，并保留联机会议的会议 blob。无意中从正文中删除会议 blob 会禁用联机会议。
 
 - **结束** 和 **开始** 属性及其时区
-  
-  更新事件开始或结束时间的时区时，首先[找到支持的时区](outlookuser-supportedtimezones.md)，以确保仅设置针对用户的邮箱服务器配置的时区。 
+
+  更新事件开始或结束时间的时区时，首先[找到支持的时区](outlookuser-supportedtimezones.md)，以确保仅设置针对用户的邮箱服务器配置的时区。
 
 ## <a name="permissions"></a>权限
+
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型      | 权限（从最低特权到最高特权）              |
-|:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Calendars.ReadWrite    |
-|委派（个人 Microsoft 帐户） | Calendars.ReadWrite    |
-|应用程序 | Calendars.ReadWrite |
+| 权限类型                        | 权限（从最低特权到最高特权） |
+|:---------------------------------------|:------------------------------------|
+| 委派（工作或学校帐户）     | Calendars.ReadWrite                 |
+| 委派（个人 Microsoft 帐户） | Calendars.ReadWrite                 |
+| 应用程序                            | Calendars.ReadWrite                 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -59,57 +62,63 @@ PATCH /users/{id | userPrincipalName}/calendars/{id}/events/{id}
 PATCH /me/calendargroups/{id}/calendars/{id}/events/{id}
 PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}
 ```
+
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+
+| 名称          | 类型   | 说明               |
+|:--------------|:-------|:--------------------------|
+| Authorization | string | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
-| 属性     | 类型   |说明|
-|:---------------|:--------|:----------|
-|attendees|[与会者](../resources/attendee.md)|事件的与会者集合。|
-|body|[ItemBody](../resources/itembody.md)|与事件相关联的邮件正文。|
-|categories|String collection|与事件相关联的类别。|
-| end|DateTimeTimeZone|事件结束的日期、时间和时区。|
-|hideAttendees|布尔值|如果设置为 `true`，则每个与会者仅会在会议请求和会议 **跟踪** 列表中看到自己。默认值为 False。|
-|importance|String|事件的重要性。 可能的值包括 `low`、`normal`、`high`。|
-|isAllDay|Boolean|如果事件持续一整天，则设置为 true。|
-|isOnlineMeeting|Boolean| 若此事件包含联机会议信息则为 `True`，反之则为 `false`。 默认为 false。 可选。|
-|isReminderOn|Boolean|如果设置警报以提醒用户有事件，则设置为 true。|
-|位置|[位置](../resources/location.md)|事件的位置。|
-|locations|[location](../resources/location.md) 集合|举办或参加活动的地点。 **location** 和 **locations** 属性总是相互对应。 如果更新 **location** 属性，**locations** 集合中所有以前的位置都将被删除并替换为新的 **location** 值。 |
-|onlineMeetingProvider|onlineMeetingProviderType| 表示联机会议服务提供商。 可取值为：`teamsForBusiness`、`skypeForBusiness` 和 `skypeForConsumer`。 可选。 |
-|recurrence|[PatternedRecurrence](../resources/patternedrecurrence.md)|事件的定期模式。|
-|reminderMinutesBeforeStart|Int32|事件开始时间（即提醒警报发生时间）之前的分钟数。|
-|responseRequested|Boolean|如果发件人希望接收事件被接受或拒绝时的响应，则设置为 true。|
-|sensitivity|String| 可能的值包括 `normal`、`personal`、`private`、`confidential`。|
-|showAs|String|要显示的状态。 可能的值包括 `free`、`tentative`、`busy`、`oof`、`workingElsewhere`、`unknown`。|
-| start|DateTimeTimeZone|事件的开始日期、时间和时区。 |
-|subject|String|事件的主题行文本。|
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-由于 **事件** 资源支持 [扩展](/graph/extensibility-overview)，因此可以使用 `PATCH` 操作在现有 **事件** 实例的扩展自定义属性中添加、更新或删除自己的特定于应用的数据。  
-  
-如果你正更新的 **事件** 是定期系列的主事件，包含多个与会者，并且具有已单独更新的实例，则将发送多个通知电子邮件：一个用于主系列，另一个用于已更新的实例。  
+| 属性                   | 类型                                                       | 说明 |
+|:---------------------------|:-----------------------------------------------------------|:----|
+| attendees                  | [与会者](../resources/attendee.md)                       | 事件的与会者集合。 |
+| body                       | [ItemBody](../resources/itembody.md)                       | 与事件相关联的邮件正文。 |
+| categories                 | String collection                                          | 与事件相关联的类别。 |
+| end                        | DateTimeTimeZone                                           | 事件结束的日期、时间和时区。 |
+| hideAttendees              | 布尔值                                                    | 如果设置为 `true`，则每个与会者仅会在会议请求和会议 **跟踪** 列表中看到自己。默认值为 False。 |
+| importance                 | String                                                     | 事件的重要性。 可能的值包括 `low`、`normal`、`high`。 |
+| isAllDay                   | Boolean                                                    | 如果事件持续一整天，则设置为 true。 |
+| isOnlineMeeting            | Boolean                                                    | 若此事件包含联机会议信息则为 `True`，反之则为 `false`。 默认为 false。 可选。 |
+| isReminderOn               | Boolean                                                    | 如果设置警报以提醒用户有事件，则设置为 true。 |
+| 位置                   | [位置](../resources/location.md)                       | 事件的位置。 |
+| locations                  | [location](../resources/location.md) 集合            | 举办或参加活动的地点。 **location** 和 **locations** 属性总是相互对应。 如果更新 **location** 属性，**locations** 集合中所有以前的位置都将被删除并替换为新的 **location** 值。 |
+| onlineMeetingProvider      | onlineMeetingProviderType                                  | 表示联机会议服务提供商。 可取值为：`teamsForBusiness`、`skypeForBusiness` 和 `skypeForConsumer`。 可选。 |
+| recurrence                 | [PatternedRecurrence](../resources/patternedrecurrence.md) | 事件的定期模式。 |
+| reminderMinutesBeforeStart | Int32                                                      | 事件开始时间（即提醒警报发生时间）之前的分钟数。 |
+| responseRequested          | Boolean                                                    | 如果发件人希望接收事件被接受或拒绝时的响应，则设置为 true。 |
+| sensitivity                | String                                                     | 可能的值包括 `normal`、`personal`、`private`、`confidential`。 |
+| showAs                     | String                                                     | 要显示的状态。 可能的值包括 `free`、`tentative`、`busy`、`oof`、`workingElsewhere`、`unknown`。 |
+| start                      | DateTimeTimeZone                                           | 事件的开始日期、时间和时区。 |
+| subject                    | String                                                     | 事件的主题行文本。 |
+
+由于 **事件** 资源支持 [扩展](/graph/extensibility-overview)，因此可以使用 `PATCH` 操作在现有 **事件** 实例的扩展自定义属性中添加、更新或删除自己的特定于应用的数据。
+
+如果你正更新的 **事件** 是定期系列的主事件，包含多个与会者，并且具有已单独更新的实例，则将发送多个通知电子邮件：一个用于主系列，另一个用于已更新的实例。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [event](../resources/event.md) 对象。  
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [event](../resources/event.md) 对象。
 
 >**注意：** 此方法可以返回 HTTP 400 错误请求响应，错误代码为 `ErrorOccurrenceCrossingBoundary`，并显示以下错误消息：已修改的事件正在交叉或重叠相邻的事件。 这表示更新违反了重复例外的以下 Outlook 限制：事件无法移动到上一次发生的日期或之前，并且无法移动到下一次发生的日期或之后。 
 
 ## <a name="example"></a>示例
 
-### <a name="request"></a>请求
+##### <a name="request"></a>请求
 
 下面是一个请求示例。
 
+<!-- markdownlint-disable MD025 -->
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_event"
 }-->
+
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/events/{id}
 Content-type: application/json
@@ -132,19 +141,25 @@ Content-length: 285
   "categories": ["Red category"]
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-event-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-event-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/update-event-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+
+<!-- markdownlint-disable MD024 -->
 
 ##### <a name="response"></a>响应
 
@@ -155,6 +170,7 @@ Content-length: 285
   "truncated": true,
   "@odata.type": "microsoft.graph.event"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -167,7 +183,7 @@ Content-length: 285
     "response": "",
     "time": "datetime-value"
   },
-  "recurrence": null,  
+  "recurrence": null,
   "iCalUId": "iCalUId-value",
   "reminderMinutesBeforeStart": 99,
   "isOnlineMeeting": true,
@@ -188,8 +204,6 @@ Content-length: 285
 - [使用开放扩展向用户添加自定义数据](/graph/extensibility-open-users)
 - [使用架构扩展向组添加自定义数据](/graph/extensibility-schema-groups)
 
-
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
@@ -201,4 +215,3 @@ Content-length: 285
   "suppressions": [
   ]
 }-->
-

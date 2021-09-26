@@ -1,16 +1,16 @@
 ---
 title: 使用 Microsoft Graph API 获取更改通知
 description: 为客户提供更改通知。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: conceptualPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 6fcbfe79462bdd96e38a817f299feb4b43566fe5
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9f38f0b8539652e2eaf68d1ef285c325e9501c51
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58751900"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59763420"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>使用 Microsoft Graph API 获取更改通知
 
@@ -38,8 +38,8 @@ Microsoft Graph REST API 使用 Webhook 机制将更改通知传递到客户端�
 | Teams [callRecord][] | 更改 _所有_ 呼叫记录： `/communications/callRecords` | 否 |
 | Teams [频道][] | 更改所有团队中的频道：<br>`/teams/getAllChannels` <br>对特定团队中的频道的更改：<br>`/teams/{id}/channels` | 是 |
 | Teams [聊天][] | 对租户中任何聊天的更改：<br>`/chats` <br>对特定聊天的更改：<br>`/chats/{id}` | 是 |
-| Teams [chatMessage][] | 对所有团队中所有频道聊天消息更改：<br>`/teams/getAllMessages` <br>对特定频道中的聊天消息更改：<br>`/teams/{id}/channels/{id}/messages`<br>对所有聊天的消息更改：<br>`/chats/getAllMessages` <br>对特定聊天中的消息更改：<br>`/chats/{id}/messages` | 是 |
-| Teams [conversationMember][] | 对特定团队中的成员身份的更改：<br>`/teams/{id}/members` <br> 对特定聊天中的成员身份的更改：<br>`/chats/{id}/members` <br> 更改所有聊天中的成员身份：<br>`/chats/getAllMembers` | 是 |
+| Teams [chatmessage][] | 对所有团队中所有频道聊天消息更改：<br>`/teams/getAllMessages` <br>对特定频道中的聊天消息更改：<br>`/teams/{id}/channels/{id}/messages`<br>对所有聊天的消息更改：<br>`/chats/getAllMessages` <br>对特定聊天中的消息更改：<br>`/chats/{id}/messages`<br>特定用户参与的所有聊天中聊天消息的更改包括：<br>`/users/{id}/chats/getAllMessages` | 是 |
+| Teams [conversationMember][] | 对特定团队中的成员身份的更改：<br>`/teams/{id}/members` <br> 对特定聊天中的成员身份的更改：<br>`/chats/{id}/members` <br> 更改所有聊天中的成员身份：<br>`/chats/getAllMembers` <br> 对特定团队下所有频道中的成员身份的更改：<br>`teams/{id}/channels/getAllMembers` | 是 |
 | Teams[状态][] | 对单个用户状态所做的更改： `/communications/presences/{id}` <br> 对多个用户状态所做的更改：<br> `/communications/presences?$filter=id in ({id},{id}...)` | 是 |
 | Teams [团队][] | 对租户中任何团队的更改：<br>`/teams` <br>对特定团队的更改：<br>`/teams/{id}` | 是 |
 | [todoTask][] | 对特定任务列表中所有任务的更改：<br>`/me/todo/lists/{todoTaskListId}/tasks` | 否 |
@@ -72,7 +72,7 @@ Microsoft Graph REST API 使用 Webhook 机制将更改通知传递到客户端�
 [contact]: ./contact.md
 [对话]: ./conversation.md
 [conversationMember]: ./conversationmember.md
-[频道]: ./channel.md
+[channel]: ./channel.md
 [driveItem]: ./driveitem.md
 [list]: ./list.md
 [site]: ./site.md
@@ -82,7 +82,7 @@ Microsoft Graph REST API 使用 Webhook 机制将更改通知传递到客户端�
 [用户]: ./user.md
 [callRecord]: ./callrecords-callrecord.md
 [警报]: ./alert.md
-[状态]: ./presence.md
+[presence]: ./presence.md
 [打印机]: ./printer.md
 [printTaskDefinition]: ./printtaskdefinition.md
 [team]: ./team.md

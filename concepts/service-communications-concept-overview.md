@@ -5,12 +5,12 @@ author: payiAzure
 ms.localizationpriority: high
 ms.prod: service-communications
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 0cd76530511ac5f8d59018d7bb8abcd69a1c5c53
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: aa4654fdb1d3ebfaba2a4cf62000477d9c978684
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59093874"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766143"
 ---
 # <a name="overview-for-accessing-service-health-and-communications-in-microsoft-graph"></a>在 Microsoft Graph 中访问服务运行状况和通信的概述
 可以使用 Microsoft Graph 中的服务通信 API 访问有关 Microsoft 云服务的运行状况和消息中心帖子。 实际运行状况和帖子对应于 API 所支持且由租户订阅的 Microsoft 365 和 Dynamics 365 服务。
@@ -40,7 +40,7 @@ ms.locfileid: "59093874"
 
 ### <a name="service-health-dashboard"></a>服务运行状况仪表板
 
-在 **服务运行状况** 仪表板中，可以查看订阅的Microsoft 服务的运行状况，其中可以包括 Office 网页版、Yammer、Microsoft Dynamics CRM 和移动设备管理云服务。 请参阅图 1 中所述的示例。
+在 **服务运行状况** 仪表板中，可以查看订阅的 Microsoft 服务的运行状况，其中可以包括 Office 网页版、Yammer、Microsoft Dynamics CRM 和移动设备管理云服务。 请参阅图 1 中所述的示例。
 
 **图 1. Microsoft 365 管理中心中的服务运行状况仪表板**
 
@@ -48,7 +48,7 @@ ms.locfileid: "59093874"
 
 ### <a name="windows-release-health-dashboard"></a>Windows 版本运行状况仪表板
 
-从 **Windows 版本运行状况** 仪表板，可以查看有关每月质量和功能更新的重要信息，以及 Windows 的最新功能和增强功能。 请参阅图 2 中所述的示例。
+在 **Windows 版本运行状况** 仪表板中，可以查看有关每月质量和功能更新的重要信息，以及 Windows 的最新功能和增强功能。 请参阅图 2 中所述的示例。
 
 **图 2. Microsoft 365 管理中心中的 Windows 版本运行状况仪表板**
 
@@ -56,7 +56,7 @@ ms.locfileid: "59093874"
 
 
 ### <a name="message-center-dashboard"></a>消息中心仪表板
-从 **消息中心** 仪表板，可以查看即将发生的更改，包括新增和已更改的功能、计划内维护和其他重要公告。 请参阅图 3 中所述的示例。
+在 **消息中心** 仪表板中，可以查看即将发生的更改，包括新增和已更改的功能、计划的维护和其他重要公告。 请参阅图 3 中所述的示例。
 
 **图 3. Microsoft 365 管理中心中的消息中心仪表板**
 

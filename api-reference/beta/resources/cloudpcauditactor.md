@@ -2,15 +2,15 @@
 title: cloudPcAuditActor 资源类型
 description: 由 Azure AD 用户和与审核事件关联的应用程序表示的审核参与者。
 author: ecmadao
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: c0c63e9e9d0db7a5227f0ab7b818c8ab3d3944d9
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 5cd851d22d20eb5d0e466cae7b799ad70bd390a2
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53211224"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766311"
 ---
 # <a name="cloudpcauditactor-resource-type"></a>cloudPcAuditActor 资源类型
 
@@ -19,8 +19,6 @@ ms.locfileid: "53211224"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 由 Azure AD 用户和与审核事件关联的应用程序表示的审核参与者。
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="properties"></a>属性
 

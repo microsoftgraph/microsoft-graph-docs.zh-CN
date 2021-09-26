@@ -2,15 +2,15 @@
 title: cloudPcProvisioningPolicy：assign
 description: 将云电脑预配策略分配给你的组。
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 3dc0382bc32b459fa07abd5a763c6e62d4fd60ea
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 1be95d8b2402e90f8d4d4e308c4cb86266bfd4b6
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53533953"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764645"
 ---
 # <a name="cloudpcprovisioningpolicy-assign"></a>cloudPcProvisioningPolicy：assign
 
@@ -20,7 +20,6 @@ ms.locfileid: "53533953"
 
 将 [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) 分配给用户组。
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="permissions"></a>权限
 

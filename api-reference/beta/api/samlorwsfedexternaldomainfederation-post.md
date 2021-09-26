@@ -10,7 +10,7 @@ ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/24/2021
-ms.locfileid: "59508483"
+ms.locfileid: "59766878"
 ---
 # <a name="create-samlorwsfedexternaldomainfederation"></a>创建 samlOrWsFedExternalDomainFederation
 命名空间：microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "59508483"
 
 创建新的 [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -65,7 +65,7 @@ POST /directory/federationConfigurations
 |metadataExchangeUri|String|用于从富客户端应用程序进行身份验证的元数据交换终结点的 URI。 继承自 [samlOrWsFedProvider](../resources/samlorwsfedprovider.md)。|
 |passiveSignInUri|String|登录 Azure AD 服务时基于 Web 的客户端定向到的 URI。 继承自 [samlOrWsFedProvider](../resources/samlorwsfedprovider.md)。|
 |preferredAuthenticationProtocol|String|首选身份验证协议。 支持的值包括 `saml` 或 `wsfed` 。 继承自 [samlOrWsFedProvider](../resources/samlorwsfedprovider.md)。|
-|signingCertificate|String|用于对传递到证书的令牌进行签名的当前Microsoft 标识平台。 证书的格式设置为联合 IdP 令牌签名证书的公共部分的 Base64 编码字符串，并且必须与 X509Certificate2 类兼容。  <br/><br/> 此属性用于以下方案： <ul><li> 如果在自动注册更新之外需要滚动 <li>正在设置新的联合身份验证服务 <li> 如果更新联合身份验证服务证书后，联合身份验证属性中不存在新的令牌签名证书。 </ul> <br/><br/> Azure AD 通过自动注册过程更新证书，其中它尝试从联合身份验证服务元数据检索新证书，即当前证书到期前 30 天。 如果新证书不可用，Azure AD 将每天监视元数据，并且将在新证书可用时更新域的联盟设置。|
+|signingCertificate|String|用于对传递到证书的令牌进行签名的当前Microsoft 标识平台。 证书的格式设置为联合 IdP 令牌签名证书的公共部分的 Base64 编码字符串，并且必须与 X509Certificate2 类兼容。  <br/><br/> 此属性用于以下方案： <ul><li> 如果在自动注册更新之外需要滚动 <li>正在设置新的联合身份验证服务 <li> 如果更新联合身份验证服务证书后联合身份验证属性中不存在新的令牌签名证书。 </ul> <br/><br/> Azure AD 通过自动注册过程更新证书，其中它尝试从联合身份验证服务元数据检索新证书，即当前证书到期前 30 天。 如果新证书不可用，Azure AD 将每天监视元数据，并且将在新证书可用时更新域的联盟设置。|
 
 ## <a name="response"></a>响应
 

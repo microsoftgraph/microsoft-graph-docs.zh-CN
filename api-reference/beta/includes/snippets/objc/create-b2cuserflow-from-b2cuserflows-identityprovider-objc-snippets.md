@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: bf3892b0b0beaed7975bc297b1714136ef94c7af
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: 032a97a9e81a584652e308182148f798e7f489a4
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47329976"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59763499"
 ---
 ```objc
 
@@ -14,6 +14,7 @@ MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationPr
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
 NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/identity/b2cUserFlows"]]];
 [urlRequest setHTTPMethod:@"POST"];
+[urlRequest setValue:@"https://graph.microsoft.com/beta/identity/b2cUserFlows('B2C_1_Customer')" forHTTPHeaderField:@"Location"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphB2cIdentityUserFlow *b2cIdentityUserFlow = [[MSGraphB2cIdentityUserFlow alloc] init];
@@ -23,8 +24,6 @@ MSGraphB2cIdentityUserFlow *b2cIdentityUserFlow = [[MSGraphB2cIdentityUserFlow a
 NSMutableArray *identityProvidersList = [[NSMutableArray alloc] init];
 MSGraphIdentityProvider *identityProviders = [[MSGraphIdentityProvider alloc] init];
 [identityProviders setId:@"Facebook-OAuth"];
-[identityProviders setType:@"Facebook"];
-[identityProviders setName:@"Facebook"];
 [identityProvidersList addObject: identityProviders];
 [b2cIdentityUserFlow setIdentityProviders:identityProvidersList];
 

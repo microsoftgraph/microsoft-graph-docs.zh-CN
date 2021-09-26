@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: identity-and-access-reports
 author: besiler
-ms.openlocfilehash: c718e6dbe95d1aaf4b891470d07e714d4e0a9ee7
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: de22cfb9134afcb846b2679895c5cd8bb46f701f
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695126"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766479"
 ---
 # <a name="activity-reports-api-overview"></a>活动报告 API 概述
 
@@ -20,7 +20,7 @@ ms.locfileid: "58695126"
 
 Azure Active Directory (Azure AD) 可跟踪用户活动和创建报告，以帮助你了解用户如何访问和使用 Azure AD 服务。 使用 Microsoft Graph API for Azure AD 分析这些报告中的数据，并根据组织的特定需求创建自定义解决方案。
 
-这些活动报告的可用性受 Azure AD 的数据保留策略管理。 有关详细信息，请参阅 [数据保留策略](https://docs.microsoft.com/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)。
+这些活动报告的可用性受 Azure AD 的数据保留策略管理。 有关详细信息，请参阅 [数据保留策略](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)。
 
 ## <a name="what-are-activity-reports"></a>什么是活动报告？
 

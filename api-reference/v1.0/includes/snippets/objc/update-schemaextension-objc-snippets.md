@@ -1,30 +1,39 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5dbfec5952438062e5337f52e41691970f8ad71423160eb59ba009f974038a14
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1f055fc926888ad6e86ab780887eaf84668e966c
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57328942"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764675"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/v1.0/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/schemaExtensions/{id}"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/schemaExtensions/exto6x7sfft_courses"]]];
 [urlRequest setHTTPMethod:@"PATCH"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphSchemaExtension *schemaExtension = [[MSGraphSchemaExtension alloc] init];
+[schemaExtension setOwner:@"ef4cb9a8-97c3-4ca7-854b-5cb5ced376fa"];
 NSMutableArray *propertiesList = [[NSMutableArray alloc] init];
 MSGraphExtensionSchemaProperty *properties = [[MSGraphExtensionSchemaProperty alloc] init];
-[properties setName:@"new-name-value"];
-[properties setType:@"new-type-value"];
+[properties setName:@"courseId"];
+[properties setType:@"Integer"];
 [propertiesList addObject: properties];
 MSGraphExtensionSchemaProperty *properties = [[MSGraphExtensionSchemaProperty alloc] init];
-[properties setName:@"additional-name-value"];
-[properties setType:@"additional-type-value"];
+[properties setName:@"courseName"];
+[properties setType:@"String"];
+[propertiesList addObject: properties];
+MSGraphExtensionSchemaProperty *properties = [[MSGraphExtensionSchemaProperty alloc] init];
+[properties setName:@"courseType"];
+[properties setType:@"String"];
+[propertiesList addObject: properties];
+MSGraphExtensionSchemaProperty *properties = [[MSGraphExtensionSchemaProperty alloc] init];
+[properties setName:@"courseSupervisors"];
+[properties setType:@"String"];
 [propertiesList addObject: properties];
 [schemaExtension setProperties:propertiesList];
 

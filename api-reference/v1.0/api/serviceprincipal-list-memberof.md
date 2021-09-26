@@ -1,16 +1,16 @@
 ---
 title: List servicePrincipal memberOf
 description: 获取此服务主体作为直接成员所属的组和目录角色。 此操作不可传递。
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: ce371ee9554ed5b217ea768ebb7709d52921f8d6
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e6c1540f0f186b9b04309ba085660cdcc1b06ead
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054432"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767242"
 ---
 # <a name="list-serviceprincipal-memberof"></a>List servicePrincipal memberOf
 
@@ -39,7 +39,7 @@ GET /servicePrincipals/{id}/memberOf
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持[OData query parameters](/graph/query_parameters)以帮助自定义响应，包括 `$search`、`$count`、 和 `$filter` 还启用了 OData 强制转换，例如，你可以强制转换为仅获取用户所属的 directoryRoles。 可使用“**displayName**”和“**说明**”属性上的`$search`。 为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。 在添加或更新项目与在索引中可用之间可能会稍有延迟。
+此方法支持[OData query parameters](/graph/query-parameters)以帮助自定义响应，包括 `$search`、`$count`、 和 `$filter` 还启用了 OData 强制转换，例如，你可以强制转换为仅获取用户所属的 directoryRoles。 可使用“**displayName**”和“**说明**”属性上的`$search`。 为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。 在添加或更新项目与在索引中可用之间可能会稍有延迟。
 
 ## <a name="request-headers"></a>请求标头
 | 名称           | 说明                |

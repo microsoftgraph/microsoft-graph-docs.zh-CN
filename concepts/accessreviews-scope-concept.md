@@ -1,18 +1,18 @@
 ---
-title: 使用 Microsoft Graph API 配置访问Graph范围
+title: 使用 Microsoft Graph API 配置访问评审的范围
 description: 了解如何使用 Microsoft 应用商店中的访问评审 API Graph Azure AD 资源的访问权限。
 author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: bbd290d3be3acdbff45f3bb8739dca4ba86ecb4a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d261fd40629c75c40bf0c93fd42ac8221fdb09e1
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59136213"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766724"
 ---
-# <a name="configure-the-scope-of-your-access-review-using-the-microsoft-graph-api"></a>使用 Microsoft Graph API 配置访问Graph范围
+# <a name="configure-the-scope-of-your-access-review-using-the-microsoft-graph-api"></a>使用 Microsoft Graph API 配置访问评审的范围
 
 Azure AD [访问评审 API](/graph/api/resources/accessreviewsv2-root) 允许你以编程方式查看用户、服务主体或组对 Azure AD 资源的访问权限。
 
@@ -39,6 +39,7 @@ Azure AD [访问评审 API](/graph/api/resources/accessreviewsv2-root) 允许你
     "queryType": "MicrosoftGraph"
 }
 ```
+
 若要仅 *查看分配给该组* 的非活动用户，请：
 
 ```http
@@ -48,14 +49,14 @@ Azure AD [访问评审 API](/graph/api/resources/accessreviewsv2-root) 允许你
     "query": "/groups/{group id}/transitiveMembers",
     "queryType": "MicrosoftGraph"
 }
-````
+```
 
 ### <a name="example-2-review-guest-users-assigned-to-a-group"></a>示例 2：查看分配给组的来宾用户
 
 ```http
 "scope": {
     "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-    "query": "/groups/{group id}/transitiveMembers/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest')",    
+    "query": "/groups/{group id}/transitiveMembers/microsoft.graph.user/?$filter=(userType eq 'Guest')",    
     "queryType": "MicrosoftGraph"
 }
 ```
@@ -64,22 +65,7 @@ Azure AD [访问评审 API](/graph/api/resources/accessreviewsv2-root) 允许你
 
 ```http
 "instanceEnumerationScope": {
-    "query": "/groups?$filter=(groupTypes/any(c:c+eq+'Unified'))&$count=true ",
-    "queryType": "MicrosoftGraph"
-},
-"scope": {
-    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-    "query": "./members/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest')",
-    "queryType": "MicrosoftGraph"
-}
-```
-由于此审阅适用于所有Microsoft 365组，因此请配置 **instanceEnumerationScope** 以指定Microsoft 365组。
-    
-### <a name="example-4-review-of-all-guest-users-assigned-to-all-teams"></a>示例 4：查看分配给所有用户的所有来宾Teams
-
-```http
-"instanceEnumerationScope": {
-    "query": "/groups?$filter=(groupTypes/any(c:c+eq+'Unified') and resourceProvisioningOptions/Any(x:x eq 'Team')')",
+    "query": "/groups?$filter=(groupTypes/any(c:c eq 'Unified'))",
     "queryType": "MicrosoftGraph"
 },
 "scope": {
@@ -87,27 +73,44 @@ Azure AD [访问评审 API](/graph/api/resources/accessreviewsv2-root) 允许你
     "query": "./members/microsoft.graph.user/?$filter=(userType eq 'Guest')",
     "queryType": "MicrosoftGraph"
 }
-    
-Because this review is applied on all Teams-enabled Microsoft 365 groups, configure the **instanceEnumerationScope** to specify the Teams-enabled Microsoft 365 groups to review.
+```
 
-### Example 5: Review access of all inactive guest users to all groups
+由于此审阅适用于所有Microsoft 365组，因此请配置 **instanceEnumerationScope** 以指定Microsoft 365组。
+    
+### <a name="example-4-review-of-all-guest-users-assigned-to-all-teams"></a>示例 4：查看分配给所有来宾用户的所有Teams
+
+```http
+"instanceEnumerationScope": {
+    "query": "/groups?$filter=(groupTypes/any(c:c eq 'Unified') and resourceProvisioningOptions/Any(x:x eq 'Team')')",
+    "queryType": "MicrosoftGraph"
+},
+"scope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+    "query": "./members/microsoft.graph.user/?$filter=(userType eq 'Guest')",
+    "queryType": "MicrosoftGraph"
+}
+```
+    
+由于此审阅适用于所有Teams组Microsoft 365，因此请配置 **instanceEnumerationScope** 以指定Teams的Microsoft 365组。
+
+### <a name="example-5-review-access-of-all-inactive-guest-users-to-all-groups"></a>示例 5：查看所有非活动来宾用户对全部组的访问权限
 
 ```http
 "scope": {
     "@odata.type": "#microsoft.graph.accessReviewInactiveUsersQueryScope",
-    "query": "./members/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest')",
+    "query": "./members/microsoft.graph.user/?$filter=(userType eq 'Guest')",
     "queryType": "MicrosoftGraph",
     "inactiveDuration": "P30D"
 }
 ```
 
-由于此审阅适用于非活动用户，请使用 **accessReviewInactiveUsersQueryScope** 资源并使用值 **指定 @odata.type** 类型属性 `#microsoft.graph.accessReviewInactiveUsersQueryScope` 。
+由于此审阅适用于非活动用户，因此请使用 **accessReviewInactiveUsersQueryScope** 资源并使用值 **指定 @odata.type** 类型属性 `#microsoft.graph.accessReviewInactiveUsersQueryScope` 。
 
 ### <a name="example-6-review-of-all-inactive-guest-users-assigned-to-all-teams"></a>示例 6：查看分配给所有团队的所有非活动来宾用户
 
 ```http
 "instanceEnumerationScope": {
-    "query": "/groups?$filter=(groupTypes/any(c:c+eq+'Unified') and resourceProvisioningOptions/Any(x:x eq 'Team')')",
+    "query": "/groups?$filter=(groupTypes/any(c:c eq 'Unified') and resourceProvisioningOptions/Any(x:x eq 'Team')')",
     "queryType": "MicrosoftGraph"
 },
 "scope": {
@@ -174,7 +177,7 @@ Because this review is applied on all Teams-enabled Microsoft 365 groups, config
 
 **principalResourceMembershipsScope** 公开 **principalScopes** 和 **resourceScopes** 属性，以支持 **针对 accessReviewScheduleDefinition** 作用域的更定制的配置选项。 这包括查看多个主体或主体组对多个资源的访问权限。
 
-### <a name="example-1-review-access-of-all-inactive-guest-users-to-all-groups"></a>示例 1：查看所有非活动来宾用户对全部组的访问权限
+### <a name="example-12-review-access-of-all-inactive-guest-users-to-all-groups"></a>示例 12：查看所有非活动来宾用户对全部组的访问权限
 
 ```http
 "scope": {
@@ -199,7 +202,7 @@ Because this review is applied on all Teams-enabled Microsoft 365 groups, config
 
 此示例中，主体是处于非活动状态的所有来宾用户，其不活动期计算为自访问评审实例的开始日期起 30 天。
 
-### <a name="example-2-review-access-of-all-guest-users-to-a-directory-role"></a>示例 2：查看所有来宾用户对目录角色的访问权限
+### <a name="example-13-review-access-of-all-guest-users-to-a-directory-role"></a>示例 13：查看所有来宾用户对目录角色的访问权限
 
 ```http
 "scope": {
@@ -221,6 +224,7 @@ Because this review is applied on all Teams-enabled Microsoft 365 groups, config
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="next-steps"></a>后续步骤
 
 + [向访问评审定义分配审阅者](/graph/accessreviews-reviewers-concept)
++ [试用教程，](/graph/accessreviews-overview) 了解如何使用访问评审 API 查看对 Azure AD 资源的访问权限

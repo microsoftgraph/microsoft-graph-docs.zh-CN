@@ -1,20 +1,22 @@
 ---
 title: 删除 calendarPermission
 description: 删除 calendarPermission。
+author: Harini84
 ms.localizationpriority: medium
-author: sochowdh
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6be5fe8431364f12be8e034930d80b0acf87adb8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ad436fb8dd52abcf29b11b83e057a59e81a0390d
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59052760"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766451"
 ---
 # <a name="delete-calendarpermission"></a>删除 calendarPermission
 
 命名空间：microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 删除 calendarPermission。
 
@@ -27,6 +29,7 @@ ms.locfileid: "59052760"
 |委派（工作或学校帐户） | Calendars.ReadWrite    |
 |委派（个人 Microsoft 帐户） | Calendars.ReadWrite    |
 |应用程序 | Calendars.ReadWrite |
+
 ## <a name="http-request"></a>HTTP 请求
 
 删除用户的主日历的指定权限：
@@ -51,7 +54,7 @@ DELETE /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 
 | 名称          | 说明   |
 |:--------------|:--------------|
-| Authorization | 持有者 {token} |
+| Authorization | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -76,24 +79,6 @@ DELETE /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/users/{id}/calendar/calendarPermissions/{id}
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-calendarpermission-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-calendarpermission-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-calendarpermission-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-calendarpermission-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### <a name="response"></a>响应
 

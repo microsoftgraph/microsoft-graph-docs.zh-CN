@@ -4,14 +4,14 @@ description: 可以使用 Microsoft 搜索 API 检索 aggreations
 author: nmoreau
 ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: 48462a3bbf08e4836227cf73c21e4949766da62e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 83f7b347739719a4100afb0cbecfb3009c454fbc
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59129717"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59763979"
 ---
-# <a name="refine-search-results-using-aggregations-preview"></a>使用聚合和预览功能 (搜索结果) 
+# <a name="refine-search-results-using-aggregations"></a>使用聚合优化搜索结果
 
 优化搜索结果，在索引中显示其分布。
 
@@ -20,7 +20,7 @@ ms.locfileid: "59129717"
 以下示例搜索 **listItem** 资源，并按其文件类型和内容类聚合结果，两者都是字符串值。
 
 该响应包含两个聚合的 [searchBucket](/graph/api/resources/searchbucket?view=graph-rest-beta&preserve-view=true) 对象：
-- **key** 属性指定由实际值 (或) 聚合在同一存储桶中的那些匹配的 `FileType` `contentclass` **listItem** 对象的值。
+- **key** 属性指定实际值 (值) 同一存储桶中 `FileType` 聚合的 `contentclass` **listItem** 对象的项数。
 - **count** 属性指定聚合在同一存储桶中的此类对象的数量。 请注意，此数字是匹配数的近似值，不会提供匹配项的准确数量。
 - 按文件类型聚合的结果存储桶按计数降序排序。 本示例中，有 3 个存储桶用于 3 种文件类型 `docx` ：、 `xlsx` 和 `pptx` 。
 - 由内容类聚合的结果存储桶按内容类的字符串值按降序排序。 本示例中，只有一个存储桶，所有匹配对象共享同一个内容类 `STS_ListItem_DocumentLibrary` 。

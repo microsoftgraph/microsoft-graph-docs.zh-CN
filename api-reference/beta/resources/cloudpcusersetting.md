@@ -2,15 +2,15 @@
 title: cloudPcUserSetting 资源类型
 description: 表示云电脑用户设置
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 0772bfcb3ca6050ec9d920fef24613555e30f6db
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 35499b60e89a16f8b2aa3822ba44c3921459dfd0
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53534030"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59763051"
 ---
 # <a name="cloudpcusersetting-resource-type"></a>cloudPcUserSetting 资源类型
 
@@ -19,8 +19,6 @@ ms.locfileid: "53534030"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示云电脑用户设置。
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|

@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 790bfb908c54a5eec2e2274495f761baaea5fec9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: eb6644eae1f41f3eb5422a385720f22d88b0aa19
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59089317"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59763329"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -924,7 +924,7 @@ Files.ReadWrite.AppFolder 委派权限仅适于个人帐户，并仅用于访问
 | _Group.ReadWrite.All_ | 读取和写入所有组 | 允许应用创建组、读取和更新组成员以及删除组。 此外，还允许应用读取和写入所有组的日历、对话、文件和其他组内容。 应用可以在没有登录用户的情况下执行所有这些操作。<br/><br/>**注意：** 并非所有组 API 都支持使用仅限应用权限进行访问。 有关示例，请参阅[已知问题](known-issues.md)。| 是 |
 | _Group.Selected_ |    访问选定的组 | **注意：此权限在 Azure 门户中公开，适用于不可用作常规用途的功能。请不要使用此权限，因为它可能会发生更改。** | 是 |
 | _GroupMember.Read.All_ |    读取组成员身份 | 允许应用在没有已登录用户的情况下读取所有组的成员身份和基本组属性。 | 是 |
-| _GroupMember.ReadWrite.All_ |    读取和写入组成员身份 | 允许应用在没有已登录用户的情况下列出组、读取基本属性、读取和更新应用有权访问的组的成员身份。 无法更新组属性和所有者，并且无法删除组。 | 是 |
+| _GroupMember.ReadWrite.All_ |    读取和写入组成员身份 | 允许应用在没有已登录用户的情况下列出组、读取基本属性、读取和更新组的成员资格。 无法更新组属性和所有者，并且无法删除组。 | 是 |
 | _Group.Create_ |    创建组 | 允许呼叫应用在没有已登录用户的情况下创建组。 不允许读取、更新或删除任何组。 | 是 |
 
 ### <a name="remarks"></a>注解
@@ -1155,7 +1155,7 @@ _IdentityUserFlow.Read.All_ 和 _IdentityUserFlow.ReadWrite.ALL_ 仅适用于工
 |_DeviceManagementServiceConfig.Read.All_ | 读取 Microsoft Intune 配置 | 允许应用读取 Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 | 否 |
 |_DeviceManagementServiceConfig.ReadWrite.All_ | 读取和写入 Microsoft Intune 配置 | 允许应用读取和写入 Microsoft Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 | 否 |
 
-### <a name="remarks"></a>说明
+### <a name="remarks"></a>注解
 
 > **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户 [正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
@@ -1311,7 +1311,7 @@ _Member.Read.Hidden_ 仅对工作或学校帐户有效。
 | _Notes.ReadWrite.All_ |    读取和写入所有 OneNote 笔记本 | 允许应用无需具有已登录用户即可读取、共享和修改组织中的所有 OneNote 笔记本。| 是 |
 
 
-### <a name="remarks"></a>说明
+### <a name="remarks"></a>注解
 _Notes.Read.All_ 和 _Notes.ReadWrite.All_ 仅适用于工作或学校帐户。所有其他权限对于 Microsoft 帐户和工作或学校帐户均有效。
 
 通过 _Notes.Create_ 权限，应用可以查看已登录用户的 OneNote 笔记本层次结构，并创建 OneNote 内容（笔记本、分区组、分区、页面等）。
@@ -1358,13 +1358,15 @@ _Notes.ReadWrite_ 和 _Notes.ReadWrite.All_ 还允许应用修改针对已登录
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 |_OnlineMeetings.Read_|读取联机会议。|允许应用代表已登录的用户读取联机会议的详细信息。|否|否|
 |_OnlineMeetings.ReadWrite_|读取和创建联机会议。|允许应用代表已登录的用户创建和读取联机会议。 |否|否|
+|_OnlineMeetingArtifact.Read.All_|读取联机会议项目。|允许应用代表已登录用户读取联机会议项目。 |否|否|
 
 #### <a name="application-permissions"></a>应用程序权限
 
 |权限    |显示字符串   |说明 |需经过管理员同意 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 |_OnlineMeetings.Read.All_|从应用阅读联机会议详细信息 |允许应用在没有已登录用户的情况下读取组织中的联机会议详细信息。|是|
-|_OnlineMeetings.ReadWrite.All_|从应用阅读联机会议详细信息|使应用在无登录用户的情况下创建，阅读在线会议。|是|
+|_OnlineMeetings.ReadWrite.All_|从应用阅读联机会议详细信息|允许应用在没有已登录用户的情况下创建和读取联机会议。|是|
+|_OnlineMeetingArtifact.Read.All_|从应用读取联机会议项目 |允许应用在没有已登录用户的情况下读取组织中的联机会议项目。|是|
 
 > **重要** 管理员可以配置 [应用程序访问策略](cloud-communication-online-meeting-application-access-policy.md)以允许应用代表用户访问联机会议。
 

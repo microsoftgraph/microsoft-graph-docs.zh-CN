@@ -1,16 +1,16 @@
 ---
 title: 删除订阅
 description: 删除订阅。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 8f57db6f84ff0b4afa90a586532f80241d8537e8
-ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
+ms.openlocfilehash: bb0b68dc4075ec617fd5200b7e3e3b108e181a34
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "53366980"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764449"
 ---
 # <a name="delete-subscription"></a>删除订阅
 
@@ -29,7 +29,7 @@ ms.locfileid: "53366980"
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
 |[callRecord](../resources/callrecords-callrecord.md) | 不支持 | 不支持 | CallRecords.Read.All  |
-|[channels](../resources/channel.md) (/teams/getAllChannels – 组织中所有频道)  | 不支持  | 不支持 | Channel.ReadBasic.All，ChannelSettings.Read.All |
+|[频道](../resources/channel.md) (/teams/getAllChannels – 组织中所有频道)  | 不支持  | 不支持 | Channel.ReadBasic.All，ChannelSettings.Read.All |
 |[频道 (](../resources/channel.md) /teams/{id}/channels)  | Channel.ReadBasic.All，ChannelSettings.Read.All  | 不支持 | Channel.ReadBasic.All，ChannelSettings.Read.All  |
 |[chat](../resources/chat.md) (/chats – 组织内部的所有)  | 不支持 | 不支持 | Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
 |[chat](../resources/chat.md) (/chats/{id})  | Chat.ReadBasic, Chat.Read, Chat.ReadWrite | 不支持 | ChatSettings.Read.Chat *、ChatSettings.ReadWrite.Chat*、Chat.Manage.Chat*、Chat.ReadBasic.All、Chat.Read.All、Chat.ReadWrite.All |
@@ -37,8 +37,10 @@ ms.locfileid: "53366980"
 |[chatMessage](../resources/chatmessage.md)（/teams/getAllMessages -- 组织中所有频道消息） | 不支持 | 不支持 | ChannelMessage.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/chats/{id}/messages) | Chat.Read、Chat.ReadWrite | 不支持 | Chat.Read.All  |
 |[chatMessage](../resources/chatmessage.md)（/chats/getAllMessages -- 组织中所有聊天消息） | 不支持 | 不支持 | Chat.Read.All  |
+|[chatMessage](../resources/chatmessage.md) (/users/{id}/chats/getAllMessages - 特定用户参与的所有聊天的聊天)  | Chat.Read、Chat.ReadWrite | 不支持 | Chat.Read.All、Chat.ReadWrite.All |
 |[contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
-|[conversationMember](../resources/conversationmember.md) (/chats/getAllMembers)  | 不支持 | 不支持 | ChatMember.Read.All、ChatMember.ReadWrite.All、Chat.ReadBasic.All、Chat.Read.All、Chat.ReadWrite.All |
+|[conversationMember](../resources/conversationmember.md) (/teams/{id}/channels/getAllMembers)  | 不支持 | 不支持 | ChannelMember.Read.All |
+|[conversationMember](../resources/conversationmember.md) (/chats/getAllMembers)  | 不支持 | 不支持 | ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All. |
 |[conversationMember](../resources/conversationmember.md) (/chats/{id}/members)  | ChatMember.Read, ChatMember.ReadWrite, Chat.ReadBasic, Chat.Read, Chat.ReadWrite | 不支持 | ChatMember.Read.Chat *、Chat.Manage.Chat*、ChatMember.Read.All、ChatMember.ReadWrite.All、Chat.ReadBasic.All、Chat.Read.All、Chat.ReadWrite.All |
 |[conversationMember](../resources/conversationmember.md) (/teams/{id}/members)  | TeamMember.Read.All | 不支持 | TeamMember.Read.All |
 |[driveItem](../resources/driveitem.md)（用户的个人 OneDrive） | 不支持 | Files.ReadWrite | 不支持 |
@@ -48,7 +50,7 @@ ms.locfileid: "53366980"
 |[组对话](../resources/conversation.md) | Group.Read.All | 不支持 | 不支持 |
 |[列表](../resources/list.md) | Sites.ReadWrite.All | 不支持 | Sites.ReadWrite.All |
 |[邮件](../resources/message.md) | Mail.ReadBasic、Mail.Read | Mail.ReadBasic、Mail.Read | Mail.ReadBasic、Mail.Read |
-|[状态](../resources/presence.md) | Presence.Read.All | 不支持 | 不支持 |
+|[presence](../resources/presence.md) | Presence.Read.All | 不支持 | 不支持 |
 |[打印机](../resources/printer.md) | 不支持 | 不支持 | 打印机。阅读.All，Printer.ReadWrite.All |
 |[printTaskDefinition](../resources/printtaskdefinition.md) | 不支持 | 不支持 | PrintTaskDefinition.ReadWrite.All |
 |安全[警报](../resources/alert.md) | SecurityEvents.ReadWrite.All | 不支持 | SecurityEvents.ReadWrite.All |
@@ -163,5 +165,4 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-
 

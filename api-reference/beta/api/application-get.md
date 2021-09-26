@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 1c4b5d524074d687672f3ba7df651e236318d603
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 5f11cbd1753970749ccc6c22cdb1ccfc1ae1c0b8
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695089"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59763532"
 ---
 # <a name="get-application"></a>获取应用程序
 
@@ -35,7 +35,13 @@ ms.locfileid: "58695089"
 GET /applications/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
+
 此方法支持 `$select` [OData 查询参数](/graph/query-parameters) 检索特定应用程序属性。
+
+默认情况下，此 API 不会返回 **keyCredentials** 属性中 **密钥** 指纹的值，除非已在 `$select` 查询中指定了 **keyCredentials**。 例如，`$select=id,appId,keyCredentials`。
+
+对于每个租户，使用 `$select` 获取应用程序的 **keyCredentials** 的限制为每分钟 150 个请求。
+
 ## <a name="request-headers"></a>请求标头
 | 名称           | 说明                |
 |:---------------|:---------------------------|

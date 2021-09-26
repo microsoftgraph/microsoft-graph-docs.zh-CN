@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 57ebd54b1ccfa74141c0d3fcd7f2cc56caae569e158214b71b1168fd39f1a3b2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 30d6fd12ad2df43c478e783face8f6ea3895406e
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57332753"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764757"
 ---
 ```javascript
 
@@ -16,7 +16,7 @@ const options = {
 const client = Client.init(options);
 
 const invitation = {
-  invitedUserEmailAddress: 'yyy@test.com',
+  invitedUserEmailAddress: 'admin@fabrikam.com',
   inviteRedirectUrl: 'https://myapp.contoso.com'
 };
 

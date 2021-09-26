@@ -2,15 +2,15 @@
 title: 创建 cloudPcDeviceImage
 description: Upload自定义操作系统映像，稍后可以在云电脑中预配该映像。
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 3db7f2b479bb00f07dc11a64d058a59d2cc02168
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 721044cda7eb72db8dd86dd36c48df56a432b0dc
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53534156"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767291"
 ---
 # <a name="create-cloudpcdeviceimage"></a>创建 cloudPcDeviceImage
 
@@ -19,8 +19,6 @@ ms.locfileid: "53534156"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 创建新的 [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) 对象。 Upload自定义操作系统映像，稍后可以在云电脑中预配该映像。
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="permissions"></a>权限
 
@@ -58,7 +56,7 @@ POST /deviceManagement/virtualEndpoint/deviceImages
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|图像的显示名称。|
+|displayName|String|图像显示名称。|
 |sourceImageResourceId|String|Azure 上的源图像资源的 ID。 所需格式："/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}"。|
 |operatingSystem|String|映像的操作系统。 例如：Windows 10 企业版。|
 |osBuildNumber|String|映像的操作系统生成版本。 例如：1909。|

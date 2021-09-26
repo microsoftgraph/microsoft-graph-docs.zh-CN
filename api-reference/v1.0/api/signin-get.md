@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 4597962082c4043f63a3e7596b1b33297778a27a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 557390470608c65f19133538f9694965b00e4487
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59130207"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766997"
 ---
 # <a name="get-signin"></a>获取 signIn
 
@@ -39,7 +39,7 @@ ms.locfileid: "59130207"
 + 报告读取者
 + 安全管理员
 + 安全操作员
-+ 安全读取者
++ 安全信息读取者
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -50,7 +50,7 @@ GET /auditLogs/signIns/{id}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 OData 查询参数来帮助自定义响应。 关如何使用这些参数的详细信息，请参阅 [OData 查询参数](/graph/query_parameters)。
+此方法支持 OData 查询参数来帮助自定义响应。 关如何使用这些参数的详细信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 

@@ -2,15 +2,15 @@
 title: 更新 cloudPcUserSetting
 description: 更新 cloudPcUserSetting 对象的属性。
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: db17aa8410016ab713a9434da99c5d6ba0628881
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 042a5b6c77c520800d6fb43c09c0bddf0d82f8d3
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53207796"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765492"
 ---
 # <a name="update-cloudpcusersetting"></a>更新 cloudPcUserSetting
 
@@ -19,8 +19,6 @@ ms.locfileid: "53207796"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新 [cloudPcUserSetting 对象](../resources/cloudpcusersetting.md) 的属性。
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="permissions"></a>权限
 

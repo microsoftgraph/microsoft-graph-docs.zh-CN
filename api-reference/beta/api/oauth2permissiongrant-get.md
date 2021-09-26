@@ -1,16 +1,16 @@
 ---
 title: 获取 oAuth2PermissionGrant
 description: 检索表示委派权限授予的单个 oAuth2PermissionGrant 的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 05a21be27e0df9c408134556b38aa509b1881350
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 167588507b42428500ebcef3e578b7123b0183ec
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52038360"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767193"
 ---
 # <a name="get-a-delegated-permission-grant-oauth2permissiongrant"></a>获取 oAuth2PermissionGrant (委派) 
 
@@ -44,7 +44,7 @@ GET /oauth2PermissionGrants/{id}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持使用 [OData 查询参数](/graph/query_parameters)来帮助自定义响应。
+此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 

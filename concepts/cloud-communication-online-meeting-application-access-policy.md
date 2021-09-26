@@ -4,16 +4,16 @@ description: 了解如何配置应用程序以代表用户访问联机会议。
 author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
-ms.openlocfilehash: 15e1fca9df26eb6302ecab9bb1fc8d43a666abe5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 89e53bdceee530d314f22f6ab0788ef9f2cbc811
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59127925"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764561"
 ---
 # <a name="allow-applications-to-access-online-meetings-on-behalf-of-a-user"></a>允许应用程序代表用户访问联机会议
 
-在某些情况下，例如对于在服务器上运行的后台服务或守护程序应用，在没有登录用户的情况下运行，应用可以调用 Microsoft Graph 代表用户采取措施。 例如，应用可能需要致电 Microsoft Graph，根据已发布的计划安排多个会议 (如课程) 或外部计划工具。 在这些情况下，应用程序代表的用户将被标识为会议组织者。
+在某些情况下，例如对于在服务器上运行的后台服务或守护程序应用（在没有登录用户的情况下运行）来说，应用可以调用 Microsoft Graph 代表用户采取措施。 例如，应用可能需要致电 Microsoft Graph，根据发布的计划安排多个会议 (如课程) 或外部计划工具。 在这些情况下，应用程序代表的用户将被标识为会议组织者。
 
 希望允许应用程序代表用户访问联机会议资源的管理员可以使用 **New-CsApplicationAccessPolicy** 和 **Grant-CsApplicationAccessPolicy** PowerShell cmdlet 配置访问控制。 本文介绍了配置应用程序访问策略的基本步骤。
 
@@ -26,9 +26,9 @@ ms.locfileid: "59127925"
 1. 标识应用的应用程序 (客户端) ID 以及将授权应用访问联机会议的用户的用户 ID。
 
     - 在 [Azure 应用注册门户](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade)中标识应用的应用程序（客户端）ID。
-    - 在 Azure 用户管理门户 (用户) 标识 [用户对象 ID](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)
+    - 在[Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)用户管理门户中 (用户) ID
 
-2. 连接管理员Skype for Business PowerShell。 有关详细信息，请参阅[使用 PowerShell Skype for Business Online。](/microsoft-365/enterprise/manage-skype-for-business-online-with-microsoft-365-powershell)
+2. 连接管理员Skype for Business使用 PowerShell。 有关详细信息，请参阅[使用 PowerShell Skype for Business Online。](/microsoft-365/enterprise/manage-skype-for-business-online-with-microsoft-365-powershell)
 
 3. 创建包含应用 ID 列表的应用程序访问策略。
 
@@ -59,10 +59,11 @@ ms.locfileid: "59127925"
 
 ## <a name="supported-permissions-and-additional-resources"></a>受支持的权限和其他资源
 
-管理员可以使用 ApplicationAccessPolicy cmdlet 控制已被授予以下任一应用程序权限的应用的邮箱访问权限：
+管理员可以使用 ApplicationAccessPolicy cmdlet 控制已被授予以下任一应用程序权限的应用的联机会议访问：
 
 - OnlineMeetings.Read.All
 - OnlineMeetings.ReadWrite.All
+- OnlineMeetingArtifact.Read.All
 
 有关配置应用程序访问策略的详细信息，请参阅[适合于 New-ApplicationAccessPolicy 的 PowerShell cmdlet 参考](/powershell/module/skype/new-csapplicationaccesspolicy)。
 

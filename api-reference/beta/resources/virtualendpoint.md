@@ -2,15 +2,15 @@
 title: virtualEndpoint 资源类型
 description: virtualEndpoint 资源表示云电脑管理功能的容器。
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 929b6e1c404dad30d6009264ed8e6eb27985c9e8
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: cdb6b2d7eaa8d021f378f7046dec405054502d0a
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53533263"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767116"
 ---
 # <a name="virtualendpoint-resource-type"></a>virtualEndpoint 资源类型
 
@@ -22,12 +22,11 @@ ms.locfileid: "53533263"
 
 使用云电脑 API 为组织的员工预配和管理虚拟桌面。 将它与 [Intune API](../resources/intune-graph-overview.md) 结合使用，以管理物理和虚拟终结点。
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 ## <a name="methods"></a>方法
 
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[获取有效权限](../api/virtualendpoint-geteffectivepermissions.md)|字符串集合|查看当前经过身份验证的用户的有效权限。|
+|[获取有效权限](../api/virtualendpoint-geteffectivepermissions.md)|String collection|查看当前经过身份验证的用户的有效权限。|
 |[列出 cloudPCs](../api/virtualendpoint-list-cloudpcs.md)|[cloudPC](../resources/cloudpc.md) 集合|列出 [cloudPC 对象的属性和](../resources/cloudpc.md) 关系。|
 |[列出 deviceImages](../api/virtualendpoint-list-deviceimages.md)|[cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) 集合|列出 [cloudPcDeviceImage 对象的属性和](../resources/cloudpcdeviceimage.md) 关系。|
 |[创建 cloudPcDeviceImage](../api/virtualendpoint-post-deviceimages.md)|[cloudPcDeviceImage](../resources/cloudpcdeviceimage.md)|创建新的 [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) 对象。|

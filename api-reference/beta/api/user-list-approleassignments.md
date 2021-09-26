@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: users
 author: psignoret
-ms.openlocfilehash: b04b2ed87c0d3f7ef75129f97d57c96051b57744
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: cd274ede245301c6b2e480a3dcc0d64d043a1451
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696419"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764064"
 ---
 # <a name="list-approleassignments-granted-to-a-user"></a>列出向用户授予的 appRoleAssignment
 
@@ -39,9 +39,9 @@ GET /users/{id | userPrincipalName}/appRoleAssignments
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持使用 [OData 查询参数](/graph/query_parameters)来帮助自定义响应。
+此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称           | 说明                |
 |:---------------|:---------------------------|

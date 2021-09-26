@@ -2,15 +2,15 @@
 title: 删除 cloudPcUserSetting
 description: 删除 cloudPcUserSetting 对象。
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 6f434d4536eff7361311ad20d2bc17498b700af3
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 4df590b6be7fed73ff6b01d992130e5dc5377b3c
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53207832"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59763322"
 ---
 # <a name="delete-cloudpcusersetting"></a>删除 cloudPcUserSetting
 
@@ -20,7 +20,6 @@ ms.locfileid: "53207832"
 
 删除 [cloudPcUserSetting](../resources/cloudpcusersetting.md) 对象。
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 ## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

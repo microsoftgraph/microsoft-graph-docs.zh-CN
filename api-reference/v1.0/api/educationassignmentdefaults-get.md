@@ -5,19 +5,19 @@ author: sharad-sharma-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 6952d61cacc57af3ac2d27202228a5f26e7195ee
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 72c16bb23d0c98aa3e7ed8ea5ef86cf4faa9b99a
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59020033"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767102"
 ---
 # <a name="get-educationassignmentdefaults"></a>获取 educationAssignmentDefaults
 命名空间：microsoft.graph
 
 读取 [educationAssignmentDefaults 对象的属性和](../resources/educationassignmentdefaults.md) 关系。 
 
-这些是类中新建的工作分配所遵守的类级别分配默认值。 如果调用方不希望使用默认行为，可以继续为每个工作分配创建指定自定义值。
+这些是类中新建的工作分配所遵守的类级别分配默认值[](../resources/educationassignment.md)。 如果调用方不希望使用默认行为，可以继续为每个工作分配创建指定自定义值。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -35,7 +35,7 @@ ms.locfileid: "59020033"
 }
 -->
 ``` http
-GET /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignmentDefaults
+GET /education/classes/{id}/assignmentDefaults
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -53,19 +53,19 @@ GET /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignmentDefaults
 
 如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [educationAssignmentDefaults](../resources/educationassignmentdefaults.md) 对象。
 
-## <a name="examples"></a>示例
+## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
-
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["72a7baec-c3e9-4213-a850-f62de0adad5f"],
   "name": "get_educationassignmentdefaults"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignmentDefaults
+GET https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignmentDefaults
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationassignmentdefaults-csharp-snippets.md)]
@@ -99,11 +99,10 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "addedStudentAction": "none",
-    "dueTime": "23:59:00",
-    "notificationChannelUrl": "https://graph.microsoft.com/beta/teams('acdefc6b-2dc6-4e71-b1e9-6d9810ab1793')/channels('c6f4e171-da1f-4598-a648-05fcec6cd9ba')"
-  }
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignmentDefaults/$entity",
+    "dueTime": "2021-08-30T23:59:00Z",
+    "notificationChannelUrl": null,
+    "addedStudentAction": "none"
 }
 ```
 

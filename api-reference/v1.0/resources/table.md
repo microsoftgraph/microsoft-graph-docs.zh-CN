@@ -5,12 +5,12 @@ author: lumine2008
 ms.localizationpriority: high
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 1e1d386af6f1b073f039e911668249224005acf5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 35764b91133a943f378df3aaa359447727249ec3
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59134414"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764001"
 ---
 # <a name="table-resource-type"></a>表资源类型
 
@@ -26,8 +26,8 @@ ms.locfileid: "59134414"
 |[Get Table](../api/table-get.md) | [WorkbookTable](table.md) |读取 table 对象的属性和关系。|
 |[Create TableColumn](../api/table-post-columns.md) |[WorkbookTableColumn](workbooktablecolumn.md)| 通过发布到列集合创建新的 TableColumn。|
 |[List columns](../api/table-list-columns.md) |[WorkbookTableColumn](workbooktablecolumn.md) 集合| 获取 TableColumn 对象的集合。|
-|[Create TableRow](../api/table-post-rows.md) |[WorkbookTableRow](tablerow.md)| 通过发布到行集合创建新的 TableRow。|
-|[List rows](../api/table-list-rows.md) |[WorkbookTableRow](tablerow.md) 集合| 获取 TableRow 对象的集合。|
+|[Create TableRow](../api/table-post-rows.md) |[WorkbookTableRow]( workbooktablerow.md)| 通过发布到行集合创建新的 TableRow。|
+|[List rows](../api/table-list-rows.md) |[WorkbookTableRow]( workbooktablerow.md) 集合| 获取 TableRow 对象的集合。|
 |[Update](../api/table-update.md) | [WorkbookTable](table.md)   |更新 Table 对象。 |
 |[Databodyrange](../api/table-databodyrange.md)|[区域](range.md)|获取与表的数据体相关的 range 对象。|
 |[Headerrowrange](../api/table-headerrowrange.md)|[区域](range.md)|获取与表的标头行相关的 range 对象。|
@@ -47,7 +47,7 @@ ms.locfileid: "59134414"
 |name|string|表的名称。|
 |showHeaders|boolean|指示标头行是否可见。该值可以设置为显示或删除标头行。|
 |showTotals|boolean|指示总计行是否可见。该值可以设置为显示或删除总计行。|
-|style|string|表示表格样式的常量值。 可取值为：TableStyleLight1 到 TableStyleLight21、TableStyleMedium1 到 TableStyleMedium28、TableStyleStyleDark1 到 TableStyleStyleDark11。 还可以指定工作簿中显示的用户定义的自定义样式。|
+|style|string|表示表格样式的常量值。可能的值是：TableStyleLight1 thru TableStyleLight21、TableStyleMedium1 thru TableStyleMedium28、TableStyleStyleDark1 thru TableStyleStyleDark11。还可以指定工作簿中显示的用户定义的自定义样式。|
 |highlightFirstColumn|Boolean|指明第一列是否包含特殊格式。   |
 |highlightLastColumn|Boolean|指明最后一列是否包含特殊格式。 |
 |showBandedColumns|Boolean|指明列是否采用镶边格式来以不同的方式突出显示奇数列与偶数列，让表更易于阅读。   |
@@ -59,7 +59,7 @@ ms.locfileid: "59134414"
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |columns|[WorkbookTableColumn](workbooktablecolumn.md) 集合|表示表中所有列的集合。只读。|
-|rows|[WorkbookTableRow](tablerow.md) 集合|表示表中所有行的集合。只读。|
+|rows|[WorkbookTableRow]( workbooktablerow.md) 集合|表示表中所有行的集合。只读。|
 |sort|[WorkbookTableSort](tablesort.md)|表示表的排序。只读。|
 |worksheet|[WorkbookWorksheet](worksheet.md)|包含当前表的工作表。只读。|
 

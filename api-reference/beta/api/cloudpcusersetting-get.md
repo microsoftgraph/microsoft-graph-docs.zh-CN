@@ -2,15 +2,15 @@
 title: 获取 cloudPcUserSetting
 description: 读取 cloudPcUserSetting 对象的属性和关系。
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 7b3361b2c0ed7fdf2d97890aec78ef336912aeb2
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: e1cbf38e4b70b445c3f44937e862609c61eca8ff
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53207290"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765142"
 ---
 # <a name="get-cloudpcusersetting"></a>获取 cloudPcUserSetting
 
@@ -19,8 +19,6 @@ ms.locfileid: "53207290"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 读取 [cloudPcUserSetting 对象的属性和](../resources/cloudpcusersetting.md) 关系。
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="permissions"></a>权限
 

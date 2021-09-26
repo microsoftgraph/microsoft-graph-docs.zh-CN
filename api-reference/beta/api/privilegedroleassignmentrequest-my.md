@@ -1,22 +1,24 @@
 ---
 title: privilegedRoleAssignmentRequest： my
 description: 获取请求者对请求角色分配权限。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: shauliu1
-ms.openlocfilehash: 8c2fec79729b4ede406b27e973eaa23ae912baf3
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: ffb0a8a8b742df4b7549964f975484be71f7dc51
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58454225"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767216"
 ---
 # <a name="privilegedroleassignmentrequest-my"></a>privilegedRoleAssignmentRequest： my
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 获取请求者对请求角色分配权限。
 
@@ -35,7 +37,7 @@ ms.locfileid: "58454225"
 POST /privilegedRoleAssignmentRequests/my
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](http://graph.microsoft.io/docs/overview/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|

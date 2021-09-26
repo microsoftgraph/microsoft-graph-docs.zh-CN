@@ -2,15 +2,15 @@
 title: cloudPcDeviceImage：getSourceImages
 description: 查看 Azure 订阅中所有托管图像资源的列表。 这些源图像可以上载并用于云电脑。
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 338f05f7ae2645c76b9ddb34a0d1af6f29beb35f
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: fbaa5432a3874e988f644789fc4e2bb65cc27615
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52546845"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766899"
 ---
 # <a name="cloudpcdeviceimage-getsourceimages"></a>cloudPcDeviceImage：getSourceImages
 
@@ -18,10 +18,9 @@ ms.locfileid: "52546845"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取 [cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) 对象。 查看你的订阅的所有托管映像资源Azure Active Directory列表。
+获取 [cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) 对象。 查看你的订阅中所有托管图像资源Azure Active Directory列表。
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

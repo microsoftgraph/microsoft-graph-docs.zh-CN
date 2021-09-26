@@ -3,31 +3,31 @@ title: 将 Microsoft Graph Toolkit与 React
 description: 在应用程序应用程序中Graph Toolkit Microsoft React入门。
 ms.localizationpriority: medium
 author: waldekmastykarz
-ms.openlocfilehash: 464542cc85b9baab8c13a68a788d28d557effcde
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b36be900db8f76ee37a7e88ae5daac452848312b
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59089228"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766465"
 ---
 # <a name="use-the-microsoft-graph-toolkit-with-react"></a>将 Microsoft Graph Toolkit与 React
 
 Microsoft Graph Toolkit 是一组 Web 组件，可简化连接到 Microsoft Graph并让你专注于应用程序。 Microsoft Graph Toolkit作为通过 npm 包分发的一组通用 `@microsoft/mgt` Web 组件提供。
 
-如果你使用 React 生成应用，可以使用包 ，它将 Microsoft [ `@microsoft/mgt-react` ](./mgt-react.md)Graph Toolkit Web 组件包装在 React 组件中，并更轻松地传递复杂数据。
+如果你使用 React 生成应用，可以使用 包 ，它将[ `@microsoft/mgt-react` ](./mgt-react.md)Microsoft Graph Toolkit Web 组件包装在 React 组件中，并更轻松地传递复杂数据。
 
-本文介绍使用 Microsoft Graph Toolkit创建应用并React应用并连接到Microsoft 365。 完成这些步骤后，你将拥有一个React应用，该应用显示当前登录用户即将从 Microsoft 365。
+本文介绍使用 Microsoft Graph Toolkit创建应用并React应用的分步Microsoft 365。 完成这些步骤后，你将拥有一个React应用，该应用显示当前登录用户即将从 Microsoft 365。
 
 > [!TIP]
 > 还可以按照本教程作为交互式代码教程。 有关详细信息，请参阅初学者[GitHub存储库](https://github.com/microsoftgraph/mgt-react-codetour)。
 
 ## <a name="prerequisites"></a>先决条件
 
-若要按照本文中的步骤操作，您需要一个Microsoft 365和一些工具。 有关详细信息，请参阅 [入门](./overview.md)。
+若要按照本文中的步骤操作，你需要一个Microsoft 365和一些工具。 有关详细信息，请参阅 [入门](./overview.md)。
 
 ## <a name="create-a-react-app"></a>创建React应用
 
-通过运行React创建新的应用程序应用程序。 这将使用 TypeScript React一个新的应用程序，这将帮助您编写更可靠的代码并避免运行时错误。
+通过运行React新建一个应用。 这将使用 TypeScript React一个新的应用程序，这将帮助你编写更可靠的代码并避免运行时错误。
 
 ```Command Line
 npx create-react-app my-m365-app --template typescript --use-npm
@@ -69,7 +69,7 @@ npm start
 
 1. 在 Azure 门户中，转到应用程序注册。
 1. 验证是否位于"概述 **"** 页上。
-1. 从 **Essentials** 部分，复制 Application **(client) ID** 属性的值
+1. 从 **Essentials** 部分，复制 Application (**client) ID** 属性的值
 
 ### <a name="configure-the-microsoft-graph-toolkit-authentication-provider"></a>配置 Microsoft Graph Toolkit身份验证提供程序
 
@@ -78,14 +78,14 @@ npm start
 >[!NOTE] 
 >如果当前使用的是 MSAL 提供程序，并且要更新到 MSAL2 提供程序，请按照 [MSAL2 提供程序文章中的步骤](../providers/msal2.md#migrating-from-msal-provider-to-msal2-provider) 操作。
 
-1. 在代码编辑器中，打开 **"src/index"。** 文件，并添加到导入列表，添加：
+1. 在代码编辑器中，打开 **src/index.tsx** 文件，并添加到导入列表，添加：
 
     ```TypeScript
     import { Providers } from '@microsoft/mgt-element';
     import { Msal2Provider } from '@microsoft/mgt-msal2-provider';
     ```
 
-1. 最后一 `import` 个语句之后，使用 MSAL Graph Toolkit初始化 Microsoft 应用程序。
+1. 最后一 `import` 个语句之后，使用 MSAL Graph Toolkit Microsoft 应用程序。
 
     ```TypeScript
     Providers.globalProvider = new Msal2Provider({
@@ -126,7 +126,7 @@ npm start
 
 ### <a name="add-the-sign-in-button"></a>添加"登录"按钮
 
-添加 **"** 登录 Microsoft Graph Toolkit React"组件，该组件将显示"登录"按钮，用户可以使用它的 Microsoft 帐户登录你的应用。
+添加 **登录** Microsoft Graph Toolkit React组件，该组件将显示"登录"按钮，用户可以使用它的 Microsoft 帐户登录你的应用。
 
 1. 在代码编辑器中，打开 **src/App.tsx** 文件，并添加到导入列表添加：
 
@@ -134,7 +134,7 @@ npm start
     import { Login } from '@microsoft/mgt-react';
     ```
 
-1. 在 函数中，将 子句的内容替换为基本结构，包括 `App` `return` Microsoft Graph Toolkit 登录组件：
+1. 在 函数中，将 子句的内容替换为基本结构，包括 `App` `return` Microsoft Graph Toolkit登录组件：
 
     ```TypeScript
     <div className="App">
@@ -171,7 +171,7 @@ export default App;
 1. 返回到运行你的应用的React浏览器。 现在应该会看到" **登录"** 按钮。
 1. 单击" **登录** "按钮时，系统将提示你使用 Microsoft 帐户登录 (可以使用与使用) 访问 Azure 门户的帐户相同的帐户。
 1. 因为这是你第一次使用此 Azure AD 应用程序，你需要同意在组织中使用它。
-1. 登录后，你将被重定向到React应用。 请注意 **，"登录**"按钮已更改，以显示你的用户名React显示使用 Microsoft Graph Toolkit 从 Microsoft 365 检索 ![ 到的用户 ](../images/mgt-react-userinfo.png) Graph Toolkit。
+1. 登录后，你将被重定向到React应用。 请注意 **，"登录**"按钮已更改，显示你的用户名React显示使用 Microsoft Graph Toolkit 从应用中检索 ![ 到的用户Microsoft 365 ](../images/mgt-react-userinfo.png) 信息。
 
 ## <a name="load-data-from-microsoft-365"></a>从服务器加载Microsoft 365
 
@@ -179,7 +179,7 @@ Microsoft Graph Toolkit不仅简化了对 Microsoft 365 的身份验证，还加
 
 ### <a name="specify-permissions-needed-for-your-application"></a>指定应用程序所需的权限
 
-必须先指定必须授予应用程序以访问用户数据的权限范围列表，然后才能从 Microsoft 365 加载数据。 这些范围因要显示的信息类型不同而不同。 在这种情况下，您需要访问人员日历，以及访问日历中也显示的人的信息的基本访问权限。 可以在 Microsoft Graph API 文档中找到每个[API 所需的范围](/graph/api/overview)。
+您必须先指定Microsoft 365访问用户数据的权限范围列表，然后才能从应用程序加载数据。 这些范围因要显示的信息类型不同而不同。 在这种情况下，您需要访问人员日历，以及访问日历中也显示的人的信息的基本访问权限。 可以在 Microsoft Graph API 文档中找到每个[API 所需的范围](/graph/api/overview)。
 
 1. 在代码编辑器中，打开 **src/index.tsx** 文件，并更新提供程序初始化代码。
 
@@ -196,7 +196,7 @@ Microsoft Graph Toolkit不仅简化了对 Microsoft 365 的身份验证，还加
 
 #### <a name="track-users-sign-in-state"></a>跟踪用户的登录状态
 
-若要跟踪应用程序中的用户登录状态，你需要将 React 和挂钩与提供程序 `useState` `useEffect` 事件处理程序结合使用。
+若要在应用程序中跟踪用户的登录状态，你需要将 React 和 `useState` `useEffect` 挂钩与提供程序事件处理程序结合使用。
 
 1. 在代码编辑器中，打开 **src/App.tsx** 文件并扩展现有 React `import` 语句。
 
@@ -234,7 +234,7 @@ Microsoft Graph Toolkit不仅简化了对 Microsoft 365 的身份验证，还加
     }
     ```
 
-此函数执行两项操作。 首先，使用React `useState` 挂钩，它可以在组件内启用跟踪状态。 只要状态发生更改，React将重新呈现组件。 其次，使用 React 挂钩，它通过跟踪 Microsoft Graph Toolkit 提供程序中的更改并在必要时更新组件来扩展 `useEffect` 组件的生命周期。
+此函数执行两项操作。 首先，使用 React `useState` 挂钩，它可以在组件内启用跟踪状态。 只要状态发生更改，React将重新呈现组件。 其次，使用 React 挂钩，它通过跟踪 Microsoft Graph Toolkit 提供程序中的更改并在必要时更新组件来扩展 `useEffect` 组件的生命周期。
 
 #### <a name="load-users-calendar-if-user-is-signed-in"></a>如果用户已登录，则加载用户的日历
 
@@ -254,7 +254,7 @@ Microsoft Graph Toolkit不仅简化了对 Microsoft 365 的身份验证，还加
 
     这将定义一个布尔常量，该常量可用于确定用户当前是否已 `isSignedIn` 登录到您的应用程序。
 
-1. 使用附加和 Microsoft `return` Graph Toolkit `div` 组件扩展子句的内容。
+1. 使用附加和 Microsoft `return` Graph Toolkit `div` 组件扩展条款的内容。
 
     ```TypeScript
     <div>
@@ -266,7 +266,7 @@ Microsoft Graph Toolkit不仅简化了对 Microsoft 365 的身份验证，还加
 通过这些更改 **，src/App.tsx** 文件应如下所示。
 
 ```TypeScript
-import { Providers, ProviderState } from '@microsoft/mgt';
+import { Providers, ProviderState } from '@microsoft/mgt-element';
 import { Agenda, Login } from '@microsoft/mgt-react';
 import React, { useState, useEffect } from 'react';
 import './App.css';

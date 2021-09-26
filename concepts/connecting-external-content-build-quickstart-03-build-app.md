@@ -1,11 +1,11 @@
 ---
 ms.localizationpriority: medium
-ms.openlocfilehash: 5fb7ccc1c9e44db77f2ba199a556d229292cf7a4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 93112b4ae67b3fe6352f0569613f8df064bc9de3
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59289513"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59929126"
 ---
 <!-- markdownlint-disable MD002 MD025 MD041 -->
 
@@ -20,7 +20,7 @@ ms.locfileid: "59289513"
 !["配置新项目"部分屏幕截图](images/connectors-images/build7.png)
 
 > [!IMPORTANT]
-> 在移动到下一步之前，ApplianceParts.csv文件复制到项目的根文件夹。
+> 在移动到下一步之前，将ApplianceParts.csv文件复制到项目的根文件夹。
 
 ## <a name="add-nuget-packages"></a>添加 Nuget 程序包
 
@@ -53,7 +53,7 @@ dotnet add package Microsoft.Identity.Client --version 4.13.0
 
 需要此身份验证才能获取必要的 OAuth 访问令牌来调用连接器 API。
 
-1. 在 **PartsInventoryConnector** 目录中新建一个名为 **Authentication** 的目录。
+1. 在 **PartsInventoryConnector** 目录中创建一个名为 **Authentication** 的新目录。
 2. 在 Authentication 目录中新建一个名为 ClientCredentialAuthProvider.cs 的文件，将以下代码放在该文件中：
 
 ```c
@@ -413,7 +413,7 @@ namespace PartsInventoryConnector.MicrosoftGraph
 }
 ```
 
-3. 在 Microsoft Graph  MicrosoftGraphHelper.cs 目录中创建一个新文件，将下面的代码放在该文件中。
+3. 在 Microsoft Graph目录中创建一个名为 MicrosoftGraphHelper.cs **的新** 文件，将下面的代码放在该文件中。
 
     以下代码包含使用 **MicrosoftGraphServiceClient** 生成调用并将其发送到 Microsoft Graph 服务并处理响应的方法。
 
@@ -429,7 +429,7 @@ namespace PartsInventoryConnector.MicrosoftGraph
 {
     public class MicrosoftGraphHelper
     {
-        private class MicrosoftGraphServiceClient _microsoftGraphClient;
+        private GraphServiceClient _microsoftGraphClient;
 
         public MicrosoftGraphHelper(IAuthenticationProvider authProvider)
         {
@@ -439,7 +439,7 @@ namespace PartsInventoryConnector.MicrosoftGraph
             var httpProvider = new HttpProvider(serializer);
 
             // Initialize the Microsoft Graph client
-            _microsoftGraphClient = new MicrosoftGraphServiceClient(authProvider, httpProvider);
+            _microsoftGraphClient = new GraphServiceClient(authProvider, httpProvider);
         }
     }
 }
@@ -774,7 +774,7 @@ private static async Task RegisterSchemaAsync()
 
 ## <a name="sync-items"></a>同步项目
 
-1. 在 **"microsoft Graph"** 下，打开 MicrosoftGraphHelper.cs 文件，在 **构造函数** 方法后添加以下代码。
+1. 在 **"Microsoft Graph"** 下，打开 MicrosoftGraphHelper.cs 文件，在 **构造函数** 方法后添加以下代码。
 
 ```c
 #region PushData

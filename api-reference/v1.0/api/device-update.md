@@ -5,12 +5,12 @@ author: spunukol
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 25a5dce5242219384c42c5b363a5e7b6688d8e3f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: cfd0dee0992d3668e7d26ed9fd4bc79e53a8a3ef
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59053667"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766619"
 ---
 # <a name="update-device"></a>更新设备
 
@@ -30,11 +30,13 @@ ms.locfileid: "59053667"
 |应用程序 | Device.ReadWrite.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
+
+`{id}`请求中的 是设备的 **id** 属性的值，而不是 **deviceId** 属性的值。
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /devices/{id}
 ```
-> 注意：请求中的“id”是设备的“id”属性，不是“deviceId”属性。
+
 
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
@@ -47,12 +49,12 @@ PATCH /devices/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|accountEnabled|Boolean| 启用帐户时为 **true**，否则为 **false**。 |
+|accountEnabled|Boolean| 启用帐户时为 `true`，否则为 `false`。 只有全局管理员和云设备管理员角色中的呼叫者才能更新此属性。|
 |operatingSystem|String|设备上的操作系统类型。|
 |operatingSystemVersion|String|设备上的操作系统版本|
 |displayName|String|设备显示名称。|
-|isCompliant|Boolean|如果设备符合移动设备管理 (MDM) 策略，则为 **true**；否则；为 **false**。 这仅可通过 Intune 针对任何设备操作系统类型进行更新，或由适用于 Windows 操作系统设备的已批准[MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm)应用更新。 |
-|isManaged|Boolean|如果设备由移动设备管理 (MDM) 应用进行托管，则为 **true**；否则，为 **false**。 这仅可通过 Intune 针对任何设备操作系统类型进行更新，或由适用于 Windows 操作系统设备的已批准[MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm)应用更新。 |
+|isCompliant|Boolean|`true` 如果设备符合移动设备管理 (MDM) 策略;否则为 `false` 。 这仅可通过 Intune 针对任何设备操作系统类型进行更新，或由适用于任何操作系统设备的已批准[MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) Windows更新。 |
+|isManaged|Boolean|`true` 如果设备由移动设备管理或 MDM (管理) 管理;否则为 `false` 。 这仅可通过 Intune 针对任何设备操作系统类型进行更新，或由适用于任何操作系统设备的已批准[MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) Windows更新。 |
 
 ## <a name="response"></a>响应
 

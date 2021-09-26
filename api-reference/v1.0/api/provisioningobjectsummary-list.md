@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: ArvindHarinder1
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: a3a1f1a2536ebb125d778dedc4000a18ab3cc3a6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: cf13e19796e96ba63bef79e7cc8b5aa41bc9af4c
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59079237"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59763427"
 ---
 # <a name="list-provisioningobjectsummary"></a>列出 provisioningObjectSummary
 
@@ -49,7 +49,7 @@ GET /auditLogs/provisioning
 |[$top](/graph/query-parameters#top-parameter)|设置结果的页面大小。|`/auditLogs/provisioning?$top=20`|
 |[$skiptoken](/graph/query-parameters#skiptoken-parameter)|从跨多页的结果集中检索下一页结果。 必须在查询中传递顶部筛选器以生成令牌。 不能指定要跳过的结果数。|`/auditLogs/provisioning?$top=20&$skiptoken=g822a72df43b19c8ce94b71d153981b680a08800bc3e35f239dffb378ff72c25"`|
 
-若要了解一般信息，请参阅 [OData 查询参数](/graph/query_parameters)。
+若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ### <a name="attributes-supported-by-the-filter-parameter"></a>$filter 参数支持的属性
 

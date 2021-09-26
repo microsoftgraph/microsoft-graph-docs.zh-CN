@@ -1,16 +1,16 @@
 ---
 title: 创建 b2cIdentityUserFlow
 description: 创建新的 b2cIdentityUserFlow 对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 620d6a395c87c8507a9fd6c2bb9d5742a8b560da
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 25fa96f3cda7421affea96e48b62b7d228aea74f
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51508874"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59763504"
 ---
 # <a name="create-b2cidentityuserflow"></a>创建 b2cIdentityUserFlow
 
@@ -33,7 +33,7 @@ ms.locfileid: "51508874"
 工作或学校帐户需要属于以下角色之一：
 
 * 全局管理员
-* 外部标识用户流管理员
+* 外部标识用户Flow管理员
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -56,16 +56,16 @@ POST /identity/b2cUserFlows
 
 |属性|类型|说明|
 |:---------------|:--------|:----------|
-|id|String|必填。 用户流名称。 该名称将在创建后进行 `B2C_1` 预笔式处理。|
-|userFlowType|字符串|必填。 要创建的用户流的类型。 **userFlowType** 支持的值有：<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwner`</li>|
-|userFlowTypeVersion|浮点|必填。 用户流版本。|
+|id|String|必需。 用户流名称。 如果在请求期间未将前缀添加到名称中，则创建后，将预笔写该 `B2C_1_` 名称。 |
+|userFlowType|String|必需。 要创建的用户流的类型。 **userFlowType** 支持的值有：<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwner`</li>|
+|userFlowTypeVersion|浮点|必需。 用户流版本。|
 |isLanguageCustomizationEnabled|Boolean|可选。 确定是否在 Azure AD B2C 用户流中启用语言自定义。 默认情况下，不会为 Azure AD B2C 用户流启用语言自定义。|
 |defaultLanguageTag|String|可选。  指定在请求中未指定标记时所使用的 b2cIdentityUserFlow `ui_locale` 的默认语言。 此字段符合 [RFC 5646](https://tools.ietf.org/html/rfc5646)。|
 |identityProviders|[identityProvider](../resources/identityprovider.md)集合 |可选。 要包括在用户流中的标识提供程序。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将返回 响应代码和 Location 标头，其 URI 为为此请求创建的 `201 Created` [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) 对象，并添加前缀 `B2C_1` 到名称中。 如果失败，将返回 `4xx` 错误并显示具体详细信息。
+如果成功，此方法将返回 响应代码和 Location 标头，其 URI 为为此请求创建的 `201 Created` [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) 对象，并添加前缀 `B2C_1_` 到名称中。 如果失败，将返回 `4xx` 错误并显示具体详细信息。
 
 ## <a name="examples"></a>示例
 
@@ -85,7 +85,6 @@ POST /identity/b2cUserFlows
 ``` http
 POST https://graph.microsoft.com/beta/identity/b2cUserFlows
 Content-type: application/json
-Content-length: 154
 
 {
     "id": "Customer",
@@ -126,15 +125,21 @@ Content-length: 154
 
 ```http
 HTTP/1.1 201 Created
-Location: https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_Customer
+Location: https://graph.microsoft.com/beta/identity/b2cUserFlows('B2C_1_Customer')
 Content-type: application/json
 
 {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/b2cUserFlows/$entity",
     "id": "B2C_1_Customer",
     "userFlowType": "signUpOrSignIn",
     "userFlowTypeVersion": 3,
     "isLanguageCustomizationEnabled": false,
-    "defaultLanguageTag": "en"
+    "defaultLanguageTag": "en",
+    "authenticationMethods": "emailWithPassword",
+    "tokenClaimsConfiguration": {
+        "isIssuerEntityUserFlow": false
+    },
+    "apiConnectorConfiguration": {}
 }
 ```
 
@@ -153,8 +158,8 @@ Content-type: application/json
 
 ``` http
 POST https://graph.microsoft.com/beta/identity/b2cUserFlows
+Location: https://graph.microsoft.com/beta/identity/b2cUserFlows('B2C_1_Customer')
 Content-type: application/json
-Content-length: 154
 
 {
     "id": "Customer",
@@ -162,9 +167,7 @@ Content-length: 154
     "userFlowTypeVersion": 3,
     "identityProviders": [
         {
-            "id": "Facebook-OAuth",
-            "type": "Facebook",
-            "Name": "Facebook"
+            "id": "Facebook-OAuth"
         }
     ]
 }
@@ -202,15 +205,20 @@ Content-length: 154
 
 ```http
 HTTP/1.1 201 Created
-Location: https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_Customer
 Content-type: application/json
 
 {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/b2cUserFlows/$entity",
     "id": "B2C_1_Customer",
     "userFlowType": "signUpOrSignIn",
     "userFlowTypeVersion": 3,
     "isLanguageCustomizationEnabled": false,
-    "defaultLanguageTag": "en"
+    "defaultLanguageTag": "en",
+    "authenticationMethods": "0",
+    "tokenClaimsConfiguration": {
+        "isIssuerEntityUserFlow": false
+    },
+    "apiConnectorConfiguration": {}
 }
 ```
 

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: bc600835885037177df3a4e1039a2c6b1ad052ab
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e2192002b69a796b0dcff0a76a5004f66e2fa2c8
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59036625"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766962"
 ---
 # <a name="educationoutcome-resource-type"></a>educationOutcome 资源类型
 
@@ -25,6 +25,13 @@ ms.locfileid: "59036625"
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
 | [更新 educationOutcome](../api/educationoutcome-update.md) | [educationOutcome](educationoutcome.md) | 更新 educationOutcome 对象。 |
+
+## <a name="properties"></a>属性
+| 属性     | 类型   |说明|
+|:---------------|:--------|:----------|
+|id|String|只读。|
+|lastModifiedBy|[identitySet](identityset.md)|更新资源的人。|
+|lastModifiedDateTime|DateTimeOffset|上次修改资源的时间。  时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2021 年 1 月 1 日午夜 UTC 为 `2021-01-01T00:00:00Z` 。|
 
 ## <a name="relationships"></a>关系
 

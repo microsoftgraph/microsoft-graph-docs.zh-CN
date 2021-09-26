@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: f6b8332b072fa29feabf60083712086990ade28b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8e9fe8f5d37b8613a081c603145822048685cbf8
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59023050"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59508332"
 ---
 # <a name="get-application"></a>获取应用程序
 
@@ -32,21 +32,31 @@ ms.locfileid: "59023050"
 ```http
 GET /applications/{id}
 ```
+
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 `$select` [OData 查询参数](/graph/query-parameters) 检索特定应用程序属性。 
+
+此方法支持 `$select` [OData 查询参数](/graph/query-parameters) 检索特定应用程序属性。
+
+默认情况下，此 API 不会返回 **keyCredential** 属性中 **密钥** 的公钥值，除非已在 `$select` 查询中指定了 **keyCredentials** 。 例如，`$select=id,appId,keyCredentials`。
+
+使用 `$select` 获取应用程序的 **keyCredentials** 对于每个租户，限制限制为每分钟 150 个请求。
 
 ## <a name="request-headers"></a>请求标头
+
 | 名称           | 说明                |
 |:---------------|:---------------------------|
 | Authorization  | Bearer {token}。必需。  |
 
 ## <a name="request-body"></a>请求正文
+
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [application](../resources/application.md) 对象。
+
 ## <a name="examples"></a>示例
+
 ### <a name="request"></a>请求
 下面是一个请求示例。
 

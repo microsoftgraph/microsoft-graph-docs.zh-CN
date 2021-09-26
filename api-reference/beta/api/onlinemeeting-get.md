@@ -2,15 +2,15 @@
 title: 获取 onlineMeeting
 description: 检索 onlineMeeting 对象的属性和关系。
 author: mkhribech
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 97a87a592651fd963f979ebb14078b02a6cfe88d
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: 5290eb9b5868de908cef6d26404691bfe2d53ebe
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58452881"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767410"
 ---
 # <a name="get-onlinemeeting"></a>获取 onlineMeeting
 
@@ -21,63 +21,71 @@ ms.locfileid: "58452881"
 检索 [onlineMeeting 对象的属性和](../resources/onlinemeeting.md) 关系。
 
 例如，你能够：
-- 使用[VideoTeleconferenceId、](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid)[会议 ID](#example-2-retrieve-an-online-meeting-by-meeting-id)或[JoinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl)获取 onlineMeeting 的详细信息。
-- 使用 `/attendeeReport` 路径获取实时事件的与会者报告，如示例 [4 所示](#example-4-retrieve-the-attendee-report-of-a-live-event)。
-- 使用 `/recording` 和 `/alternativeRecording` 路径获取实时事件的录制，如示例 [5 所示](#example-5-retrieve-the-recording-of-a-live-event)。
-- 使用 `/meetingAttendanceReport` 路径获取计划会议的会议出席报告，如示例 [6 所示](#example-6-retrieve-the-attendance-report-of-a-meeting)。
 
-> [!NOTE]
->- 会议与会者报告可用于实时事件外的其他会议，并且仅在会议结束后可用。
->- 只有会议组织者可以访问会议与会者报告。
->- 录制和与会者报告仅适用于实时事件，并且仅在实时事件结束时可用。
->- 只有实时事件组织者可以访问与会者报告和录制。
->- 实时事件参与者报告的下载链接和录制将在 60 秒后过期。
+- 使用[VideoTeleconferenceId、](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid)[会议 ID](#example-2-retrieve-an-online-meeting-by-meeting-id)或[JoinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl)获取 onlineMeeting 的详细信息。
+- 使用 路径获取下载链接形式的实时事件的与会者报告， `/attendeeReport` 如示例 [4 所示](#example-4-fetch-attendee-report-of-a-live-event)。
+- 使用 和 路径以下载链接的形式获取实时事件的录制，如示例 `/recording` `/alternativeRecording` [5 所示](#example-5-fetch-recording-of-a-live-event)。
+- 使用 路径获取计划会议的会议出席报告， `/meetingAttendanceReport` 如示例 [6 所示](#example-6-fetch-attendance-report-of-an-online-meeting)。
+
+会议出席报告、实时事件参与者报表和实时事件录制是联机会议项目。 有关详细信息，请参阅 [联机会议项目与权限](/graph/cloud-communications-online-meeting-artifacts)。
 
 ## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 权限类型                        | 权限（从最低特权到最高特权）           |
-| :------------------------------------- | :---------------------------------------------------- |
-| 委派（工作或学校帐户）     | OnlineMeetings.Read、OnlineMeetings.ReadWrite         |
-| 委派（个人 Microsoft 帐户） | 不支持。                                        |
-| 应用程序                            | OnlineMeetings.Read.All、OnlineMeetings.ReadWrite.All* |
+| 权限类型                        | 权限（从最低特权到最高特权）                                            |
+|:---------------------------------------|:---------------------------------------------------------------------------------------|
+| 委派（工作或学校帐户）     | OnlineMeetingArtifact.Read.ALl、OnlineMeetings.Read、OnlineMeetings.ReadWrite          |
+| 委派（个人 Microsoft 帐户） | 不支持。                                                                         |
+| 应用程序                            | OnlineMeetingArtifact.Read.ALl、OnlineMeetings.Read.All、OnlineMeetings.ReadWrite.All  |
 
-> [!IMPORTANT]
-> \*管理员必须创建应用程序访问[](/graph/cloud-communication-online-meeting-application-access-policy)策略并授予用户，授权策略中配置的应用代表该用户检索联机会议 (请求路径) 中指定的用户 ID。
+若要对此 API 使用应用程序权限，租户管理员必须创建应用程序[](/graph/cloud-communication-online-meeting-application-access-policy)访问策略，并授予用户授权策略中配置的应用，以代表该用户 (使用请求路径) 中指定的用户 ID 获取联机会议项目。
+
+> [!CAUTION]
+> 如果获取联机会议项目，则仅需要 _OnlineMeetingArtifact.Read.All_ 权限。 在 **2022** 年 1 月 15 日之前，你仍然可以提取没有它们的会议项目。 有关详细信息，请参阅 [联机会议项目与权限](/graph/cloud-communications-online-meeting-artifacts)。
 
 ## <a name="http-request"></a>HTTP 请求
 
-若要使用具有委派权限的应用权限的会议 ID 获取 onlineMeeting：
+若要使用具有委派权限的会议 ID 获取 **onlineMeeting， ()** `/me` 应用 () `/users/{userId}` 权限：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}
 GET /users/{userId}/onlineMeetings/{meetingId}
 ```
 
-若要使用具有应用权限 **的 videoTeleconferenceId** 获取 onlineMeeting：
+若要使用具有应用权限 **的 videoTeleconferenceId** 获取 **onlineMeeting：**
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /app/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'
 GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'
 ```
 
-若要使用具有委派权限和应用权限的 **joinWebUrl** 获取 onlineMeeting：
+若要使用具有委派权限的 **joinWebUrl** 获取 **onlineMeeting， ()** `/me` 应用程序 () `/users/{userId}` 权限：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 ```
 
-若要获取具有委派和应用权限的活动参与者报告，请执行以下操作：
-<!-- { "blockType": "ignored" } -->
+若要获取具有委派的联机会议以及 `/me` ()  () `/users/{userId}` 报告：
+<!-- { "blockType": "ignored" }-->
+
+```http
+GET /me/onlineMeetings/{meetingId}/meetingAttendanceReport
+GET /users/{userId}/onlineMeetings/{meetingId}/meetingAttendanceReport
+```
+
+若要获取具有委派用户和应用的 () 实时事件的 `/me` 与会者 () `/users/{userId}` 权限：
+<!-- { "blockType": "ignored" }-->
+
 ```http
 GET /me/onlineMeetings/{meetingId}/attendeeReport
 GET /users/{userId}/onlineMeetings/{meetingId}/attendeeReport
 ```
 
-若要获取具有委派权限的应用权限的直播活动的录制，请执行以下操作：
-<!-- { "blockType": "ignored" } -->
+若要通过委派的用户和应用 () `/me` 实时事件 () `/users/{userId}` 权限：
+<!-- { "blockType": "ignored" }-->
+
 ```http
 GET /me/onlineMeetings/{meetingId}/recording
 GET /me/onlineMeetings/{meetingId}/alternativeRecording
@@ -85,17 +93,11 @@ GET /users/{userId}/onlineMeetings/{meetingId}/recording
 GET /users/{userId}/onlineMeetings/{meetingId}/alternativeRecording
 ```
 
-若要获取具有委派权限的会议的与会者报告，请执行以下操作：
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/onlineMeetings/{meetingId}/meetingAttendanceReport
-```
-
 > [!NOTE]
 >- 路径 `/app` 已弃用。 今后，请使用路径 `/communications`。
 >- `userId` 是 [Azure 用户管理门户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)中用户的对象 ID。 有关详细信息，请参阅应用程序 [访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
 >- `meetingId`是 [onlineMeeting 对象的](../resources/onlinemeeting.md) **ID。**
-> - **videoTeleconferenceId** 为 Cloud-Video-Interop 许可用户生成，可在 [onlineMeeting](../resources/onlinemeeting.md) 对象中找到。 有关更多详细信息 [，请参阅 VTC](/microsoftteams/cloud-video-interop-for-teams-set-up) 会议 ID。
+> - **videoTeleconferenceId** 为 Cloud-Video-Interop 许可用户生成，可在 [onlineMeeting](../resources/onlinemeeting.md) 对象中找到。 有关详细信息，请参阅 [VTC 会议 ID](/microsoftteams/cloud-video-interop-for-teams-set-up)。
 >- `joinWebUrl` 必须经过 URL 编码。
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -113,15 +115,14 @@ GET /me/onlineMeetings/{meetingId}/meetingAttendanceReport
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法返回 `200 OK` 响应代码。 方法还包括以下项之一：
 
-- 如果根据会议 **ID、videoTeleconferenceId** 或 **joinWebUrl** 获取联机会议，此方法还会在响应正文中返回 [onlineMeeting](../resources/onlinemeeting.md) 对象。
-- 如果你要获取实时联机会议的与会者报告或录制，此方法还会分别返回一个标头，指示与会者报告或录制 `Location` 的 URI。
+如果成功，此方法返回 `200 OK` 响应代码。 该响应还包括下列内容之一：
+
+- 如果通过会议 **ID、videoTeleconferenceId** 或 **joinWebUrl** 提取联机会议，此方法在响应正文中返回 [onlineMeeting](../resources/onlinemeeting.md) 对象。
+- 如果提取联机会议的会议出席报告，此方法在响应正文中返回 [meetingAttendanceReport](../resources/meetingAttendanceReport.md) 对象。
+- 如果提取与会者报告或录制实时事件，此方法将分别返回一个标头，指示与会者报告或 `Location` 录制的 URI。
 
 ## <a name="examples"></a>示例
-
-> [!NOTE]
-> 为了可读性，已缩短以下示例的响应对象。 所有属性都将通过实际调用返回。
 
 ### <a name="example-1-retrieve-an-online-meeting-by-videoteleconferenceid"></a>示例 1：通过 VideoTeleconferenceId 检索联机会议
 
@@ -155,6 +156,8 @@ GET https://graph.microsoft.com/beta/communications/onlineMeetings/?$filter=Vide
 ---
 
 #### <a name="response"></a>响应
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 
 
 <!-- {
   "blockType": "response",
@@ -257,6 +260,8 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 
 #### <a name="response"></a>响应
 
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 
+
 ```json
 {
     "id": "MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy",
@@ -314,6 +319,8 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 
 #### <a name="response"></a>响应
 
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 
+
 ```json
 {
     "value": [
@@ -356,166 +363,111 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 }
 ```
 
-### <a name="example-4-retrieve-the-attendee-report-of-a-live-event"></a>示例 4：检索实时事件的与会者报告
+### <a name="example-4-fetch-attendee-report-of-a-live-event"></a>示例 4：获取实时事件的与会者报告
+
 以下示例显示下载与会者报告的请求。
 
 #### <a name="request"></a>请求
-以下请求使用用户令牌。
-<!-- { "blockType": "ignored" } -->
-```http
-GET https://graph.microsoft.com/beta/me/onlineMeetings/dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw@thread.v2/attendeeReport
-```
 
-以下请求使用应用程序令牌。
-# <a name="http"></a>[HTTP](#tab/http)
+以下请求使用委派权限。
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["dc74d9bb-6afe-433d-8eaa-e39d80d3a647", "dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw@thread.v2"],
-  "name": "get-attendeeReport-app-token"
-}-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw@thread.v2/attendeeReport
-```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-attendeereport-app-token-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-attendeereport-app-token-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-attendeereport-app-token-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-attendeereport-app-token-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### <a name="response"></a>响应
-<!-- {
-  "blockType": "response"
-} -->
-```http
-HTTP/1.1 302 Found
-Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-5130-43e9-88f3-fcb3582cde37/dc17674c-81d9-4adb-bfb2-8f6a442e4622/19%3Ameeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw%40thread.v2/0/resource/attendeeReport
-```
-
-### <a name="example-5-retrieve-the-recording-of-a-live-event"></a>示例 5：检索实时事件的录制
-以下示例显示下载录制的请求。
-
-#### <a name="request"></a>请求
-以下请求使用用户令牌。
-<!-- { "blockType": "ignored" } -->
-```http
-GET https://graph.microsoft.com/beta/me/onlineMeetings/dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw@thread.v2/recording
-```
-
-以下请求使用应用程序令牌。
-# <a name="http"></a>[HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "sampleKeys": ["dc74d9bb-6afe-433d-8eaa-e39d80d3a647", "dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw@thread.v2"],
-  "name": "get-recording-app-token"
-}-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw@thread.v2/recording
-```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-recording-app-token-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-recording-app-token-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-recording-app-token-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-recording-app-token-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### <a name="response"></a>响应
-<!-- {
-  "blockType": "response"
-} -->
-```http
-HTTP/1.1 302 Found
-Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-5130-43e9-88f3-fcb3582cde37/dc17674c-81d9-4adb-bfb2-8f6a442e4622/19%3Ameeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw%40thread.v2/0/resource/recording
-```
-
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "Get onlineMeeting",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
-}
--->
-
-### <a name="example-6-retrieve-the-attendance-report-of-a-meeting"></a>示例 6：检索会议与会者报告
-以下示例显示获取会议出席报告的请求。
-
-#### <a name="request"></a>请求
-
-
-# <a name="http"></a>[HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "sampleKeys": ["dc74d9bb-6afe-433d-8eaa-e39d80d3a647", "MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy"],
-  "name": "get-meetingAttendanceReport"
+  "name": "get_attendee_report"
 }-->
 
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/meetingAttendanceReport
+```http
+GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/attendeeReport
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-meetingattendancereport-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-meetingattendancereport-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+以下请求使用应用程序权限。
 
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-meetingattendancereport-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-meetingattendancereport-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
----
+<!-- { "blockType": "ignored" }-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/attendeeReport
+```
 
 #### <a name="response"></a>响应
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.meetingAttendanceReport"
+  "name": "get_attendee_report"
+} -->
+
+```http
+HTTP/1.1 302 Found
+Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-5130-43e9-88f3-fcb3582cde37/dc17674c-81d9-4adb-bfb2-8f6a442e4622/19%3Ameeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw%40thread.v2/0/resource/attendeeReport
+```
+
+### <a name="example-5-fetch-recording-of-a-live-event"></a>示例 5：提取实时事件的录制
+
+以下示例显示下载录制的请求。
+
+#### <a name="request"></a>请求
+
+以下请求使用委派权限。
+<!-- {
+  "blockType": "request",
+  "name": "get_live_event_recording"
+}-->
+```http
+GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/recording
+```
+
+以下请求使用应用程序权限。
+<!-- { "blockType": "ignored" }-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/recording
+```
+
+#### <a name="response"></a>响应
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "name": "get_live_event_recording"
+} -->
+
+```http
+HTTP/1.1 302 Found
+Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-5130-43e9-88f3-fcb3582cde37/dc17674c-81d9-4adb-bfb2-8f6a442e4622/19%3Ameeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw%40thread.v2/0/resource/recording
+```
+
+### <a name="example-6-fetch-attendance-report-of-an-online-meeting"></a>示例 6：提取联机会议与会者报告
+
+以下示例显示获取会议出席报告的请求。
+
+#### <a name="request"></a>请求
+
+以下请求使用委派权限。
+<!-- {
+  "blockType": "request",
+  "name": "get_attendance_report"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/meetingAttendanceReport
+```
+
+以下请求使用应用程序权限。
+<!-- { "blockType": "ignored" }-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/meetingAttendanceReport
+```
+
+#### <a name="response"></a>响应
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.meetingAttendanceReport",
+  "name": "get_attendance_report"
 } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1876
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('dc74d9bb-6afe-433d-8eaa-e39d80d3a647')/onlineMeetings('MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy')/meetingAttendanceReport/$entity",
@@ -564,7 +516,7 @@ Content-Length: 1876
                 }
             ]
         }
-    ]
+    ],
+    "totalParticipantCount": 2
 }
-
 ```

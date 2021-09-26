@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e6e3154078356e57a2fd644668f786e17a300133
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 58a15783dba10f6eacdafa05abb9d5a5c522aa9d
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695481"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59763525"
 ---
 # <a name="get-group"></a>获取组
 
@@ -105,38 +105,52 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "45b7d2e7-b882-4a80-ba97-10b7a63b8fa4",
-  "deletedDateTime": null,
-  "classification": null,
-  "createdDateTime": "2018-12-22T02:21:05Z",
-  "description": "Self help community for golf",
-  "displayName": "Golf Assist",
-  "expirationDateTime": null,
-  "groupTypes": [
-      "Unified"
-  ],
-  "isAssignableToRole": null,
-  "mail": "golfassist@contoso.com",
-  "mailEnabled": true,
-  "mailNickname": "golfassist",
-  "membershipRule": null,
-  "membershipRuleProcessingState": null,
-  "onPremisesLastSyncDateTime": null,
-  "onPremisesSecurityIdentifier": null,
-  "onPremisesSyncEnabled": null,
-  "preferredDataLocation": "CAN",
-  "preferredLanguage": null,
-  "proxyAddresses": [
-      "smtp:golfassist@contoso.onmicrosoft.com",
-      "SMTP:golfassist@contoso.com"
-  ],
-  "renewedDateTime": "2018-12-22T02:21:05Z",
-  "resourceBehaviorOptions": [],
-  "resourceProvisioningOptions": [],
-  "securityEnabled": false,
-  "theme": null,
-  "visibility": "Public",
-  "onPremisesProvisioningErrors": []
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups/$entity",
+    "@odata.id": "https://graph.microsoft.com/v2/45b7d2e7-b882-4a80-ba97-10b7a63b8fa4/directoryObjects/4de51a22-3289-4ea5-bbdb-8503ea644f1b/Microsoft.DirectoryServices.Group",
+    "id": "4de51a22-3289-4ea5-bbdb-8503ea644f1b",
+    "deletedDateTime": null,
+    "classification": null,
+    "createdDateTime": "2021-09-13T10:07:01Z",
+    "createdByAppId": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",
+    "organizationId": "45b7d2e7-b882-4a80-ba97-10b7a63b8fa4",
+    "description": "Self help community for library",
+    "displayName": "Library Assist",
+    "expirationDateTime": "2022-01-11T10:07:01Z",
+    "groupTypes": [
+        "Unified"
+    ],
+    "infoCatalogs": [],
+    "isAssignableToRole": null,
+    "isManagementRestricted": null,
+    "mail": "library@contoso.com",
+    "mailEnabled": true,
+    "mailNickname": "library",
+    "membershipRule": null,
+    "membershipRuleProcessingState": null,
+    "onPremisesDomainName": null,
+    "onPremisesLastSyncDateTime": null,
+    "onPremisesNetBiosName": null,
+    "onPremisesSamAccountName": null,
+    "onPremisesSecurityIdentifier": null,
+    "onPremisesSyncEnabled": null,
+    "preferredDataLocation": "EU",
+    "preferredLanguage": null,
+    "proxyAddresses": [
+        "SPO:SPO_0dbffe23-f6fb-4478-adcd-880daf88bb12@SPO_45b7d2e7-b882-4a80-ba97-10b7a63b8fa4",
+        "SMTP:library@contoso.com"
+    ],
+    "renewedDateTime": "2021-09-13T10:07:01Z",
+    "resourceBehaviorOptions": [],
+    "resourceProvisioningOptions": [],
+    "securityEnabled": false,
+    "securityIdentifier": "S-1-12-1-1306860066-1319449225-59104187-458188010",
+    "theme": null,
+    "visibility": "Public",
+    "writebackConfiguration": {
+        "isEnabled": null,
+        "onPremisesGroupType": null
+    },
+    "onPremisesProvisioningErrors": []
 }
 ```
 

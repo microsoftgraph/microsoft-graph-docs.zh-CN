@@ -5,18 +5,19 @@ author: sharad-sharma-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 0626dd3a7875b6c05b358e43b2fef65f5dcef7e1
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 69097145ad9b34474ca1ba265a0b982cc8e4dbe0
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59074478"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766920"
 ---
 # <a name="get-educationassignmentresource"></a>获取 educationAssignmentResource
 
 命名空间：microsoft.graph
 
-获取工作分配上特定资源的属性。  
+获取工作分配上特定资源 [的属性](../resources/educationassignment.md)。  
+
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -29,7 +30,7 @@ ms.locfileid: "59074478"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc-9e13-44a2-a6ac-a53322006454/resources/8b01c1d0-aafc-4f8c-bd73-89faa3df1c1c
+GET /education/classes/{id}/assignments/{id}/resources/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
@@ -53,10 +54,11 @@ GET /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["f4a941ff-9da6-4707-ba5b-0eae93cad0b4", "9018ae7a-9953-4796-a152-4c54e0910922", "eec7f642-9d9a-406f-bbae-4b3b2c12e273"],
   "name": "get_educationassignmentresource"
 }-->
 ```msgraph-interactive
-GET /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc-9e13-44a2-a6ac-a53322006454/resources/8b01c1d0-aafc-4f8c-bd73-89faa3df1c1c
+GET https://graph.microsoft.com/v1.0/education/classes/f4a941ff-9da6-4707-ba5b-0eae93cad0b4/assignments/9018ae7a-9953-4796-a152-4c54e0910922/resources/eec7f642-9d9a-406f-bbae-4b3b2c12e273
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationassignmentresource-csharp-snippets.md)]
@@ -93,25 +95,31 @@ Content-type: application/json
 Content-length: 842
 
 {
-  "distributeForStudentWork": true,
-  "id": "22002",
-  "resource": {
-    "createdBy": {
-      "user": {
-        "displayName": "Shawn Hughes",
-        "id": "14012"
-      },
-    },
-    "createdDateTime": "2014-01-01T00:00:00Z",
-    "displayName": "Excel workbook 1",
-    "lastModifiedBy": {
-      "user": {
-        "displayName": "Shawn Hughes",
-        "id": "14012"
-      },
-    },
-    "lastModifiedDateTime": "2014-01-01T00:00:00Z"
-  }
+    "distributeForStudentWork": false,
+    "id": "eec7f642-9d9a-406f-bbae-4b3b2c12e273",
+    "resource": {
+        "@odata.type": "#microsoft.graph.educationFileResource",
+        "displayName": "First file uploaded as Education resource by t-cristobalb",
+        "createdDateTime": "2021-07-16T23:41:53.9378423Z",
+        "lastModifiedDateTime": "2021-07-16T23:41:53.9378423Z",
+        "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!DPA6q59Tw0mtgmyXRUmrQRqBZTesG-lMkl1cBmvvMeU6BLWBcGc_R6UgCKyYyTin/items/016XPCQEA5VVDIMU4BSFG3VBI37MPHZ3OE",
+        "createdBy": {
+            "application": null,
+            "device": null,
+            "user": {
+                "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+                "displayName": null
+            }
+        },
+        "lastModifiedBy": {
+            "application": null,
+            "device": null,
+            "user": {
+                "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+                "displayName": null
+            }
+        }
+    }
 }
     
 ```

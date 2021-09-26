@@ -2,15 +2,15 @@
 title: 获取 signIn
 doc_type: apiPageType
 description: 获取一个 signIn 对象，该对象包含租户的所有Azure Active Directory登录。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
-ms.openlocfilehash: 70691669c6047473c2ee98ed9c2c9e810bc061f0
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: a00e547ca360e0fa9c5fc9895ffade44289e968c
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53579755"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59763070"
 ---
 # <a name="get-signin"></a>获取 signIn
 
@@ -29,6 +29,9 @@ ms.locfileid: "53579755"
 | 委派（工作或学校帐户） | AuditLog.Read.All 和 Directory.Read.All |
 | 委派（个人 Microsoft 帐户） | 不支持 |
 | 应用程序 | AuditLog.Read.All 和 Directory.Read.All | 
+
+> [!IMPORTANT]
+> 此 API 有 [一个已知](/graph/known-issues#azure-ad-activity-reports) 问题，当前需要同意 **AuditLog.Read.All** 和 **Directory.Read.All** 权限。
 
 应用必须 [正确注册到](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) Azure AD。
 
@@ -49,7 +52,7 @@ GET /auditLogs/signIns/{id}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 OData 查询参数来帮助自定义响应。 关如何使用这些参数的详细信息，请参阅 [OData 查询参数](/graph/query_parameters)。
+此方法支持 OData 查询参数来帮助自定义响应。 关如何使用这些参数的详细信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 

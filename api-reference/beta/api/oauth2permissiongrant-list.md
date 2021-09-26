@@ -1,16 +1,16 @@
 ---
 title: 列出 oAuth2PermissionGrants
 description: 检索表示委派权限授予的 oauth2PermissionGrant 对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 3e42b422a358a0fc513a2b11014e74f91432ecfc
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 5b4773d249ae25dd00ab754b015569cb1bedf645
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231932"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765961"
 ---
 # <a name="list-oauth2permissiongrants"></a>List oauth2PermissionGrants
 
@@ -21,7 +21,7 @@ ms.locfileid: "52231932"
 检索 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象的列表，这些对象代表已授予客户端应用程序代表登录用户访问 API 的委派权限。
 
 > [!NOTE]
-> 此请求可能有最近创建、更新或删除的委派权限授予的复制延迟。 如果指定了筛选，此延迟 `clientId` 将最小化。
+> 此请求对最近创建、更新或删除的委派权限授予可能具有复制延迟。 如果指定了筛选，此延迟 `clientId` 将最小化。
 
 ## <a name="permissions"></a>权限
 
@@ -43,7 +43,7 @@ GET /oauth2PermissionGrants
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持使用 [OData 查询参数](/graph/query_parameters)来帮助自定义响应。
+此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 

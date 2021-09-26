@@ -2,15 +2,15 @@
 title: 更新 cloudPcOnPremisesConnection
 description: 更新 cloudPcOnPremisesConnection 对象的属性。
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: fa4e7470b607ff75df51de4ce978002ce4d59af1
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 26e856dae2e1c34b615330809c0cd4fe26398d36
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50158168"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766458"
 ---
 # <a name="update-cloudpconpremisesconnection"></a>更新 cloudPcOnPremisesConnection
 
@@ -19,9 +19,8 @@ ms.locfileid: "50158168"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新 [cloudPcOnPremisesConnection 对象](../resources/cloudpconpremisesconnection.md) 的属性。
-本地连接通过运行状况检查（由属性指示）后 `healthCheckStatus` ，将无法更新它。
+本地连接通过运行状况检查（由 属性指示）后 `healthCheckStatus` ，将无法更新它。
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="permissions"></a>权限
 
@@ -55,22 +54,22 @@ PATCH /deviceManagement/virtualEndpoint/onPremisesConnections/{id}
 
 在请求正文中，提供 [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) 对象的 JSON 表示形式。
 
-下表显示创建 [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md)时所需的属性。
+下表显示创建 [cloudPcOnPremisesConnection 时所需的属性](../resources/cloudpconpremisesconnection.md)。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|本地显示名称的基础结构。|
 |subscriptionId|String|与租户关联的目标 Azure 订阅的 ID。|
-|adDomainName|String|要加入的 Active Directory (的 FQDN) 完全限定域名。|
+|adDomainName|String|要加入的 Active Directory (完全限定) FQDN。|
 |adDomainUsername|String|Active Directory 帐户的用户名 (拥有在 Active Directory) 创建计算机对象的权限的用户或服务帐户。 所需格式：username@contoso.com。|
 |adDomainPassword|String|与 adDomainUsername 关联的密码。|
-|resourceGroupId|String|目标资源组的 ID。 必需格式："/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}"。|
-|virtualNetworkId|String|目标虚拟网络的 ID。 必需格式："/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}"。|
-|subnetId|String|目标子网的 ID。 必需格式："/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}"。|
+|resourceGroupId|String|目标资源组的 ID。 所需格式："/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}"。|
+|virtualNetworkId|String|目标虚拟网络的 ID。 所需格式："/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}"。|
+|subnetId|String|目标子网的 ID。 所需格式："/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}"。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) 对象。
 
 ## <a name="examples"></a>示例
 

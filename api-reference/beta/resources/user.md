@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 929f647a68e453529daaabf2b3f0b0dfdd3a76c7
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 8eb6d03523bab9824fe4164bdf509fcc4528a200
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696965"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766325"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -233,13 +233,13 @@ ms.locfileid: "58696965"
 | showInAddressList | Boolean | 如果 Outlook 全局地址列表应包含此用户，则值为 `true`，否则为 `false`。 如果未设置，则将其视为 `true`。 对于通过邀请管理器邀请的用户，此属性将设置为 `false`。 <br><br>支持 `$filter` （`eq`、 `ne`、 `NOT`、 `in`）。 |
 | signInSessionsValidFromDateTime | DateTimeOffset | 在此时间之前发出的任何刷新令牌或会话令牌（会话 Cookie）都是无效的，并且当使用无效的刷新令牌或会话令牌获取委托的访问令牌（用于访问 Microsoft Graph 等 API）时，应用程序将收到错误。  如果发生这种情况，应用程序将需要通过向授权端点发出请求来获取新的刷新令牌。 只读。 使用 [revokeSignInSessions](../api/user-revokesigninsessions.md) 进行重置。|
 | skills | String collection | 供用户枚举其技能的列表。 <br><br>仅在 `$select` 上返回。 |
-| signInActivity | [signInActivity](signinactivity.md) | 获取指定用户登录的最后一个登录日期和请求 ID。只读。<br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`） *但是*，不支持任何其他的可筛选属性。 **注意：** 此属性的详细信息需要 Azure AD Premium P1/P2 许可证和 **AuditLog.Read.All** 权限。|
+| signInActivity | [signInActivity](signinactivity.md) | 获取指定用户登录的最后一个登录日期和请求 ID。只读。<br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`） *但是*，不支持任何其他的可筛选属性。 **注意：** 此属性的详细信息需要 Azure AD Premium P1/P2 许可证和 **AuditLog.Read.All** 权限。<br><br>**注意：** 检索此属性时存在一个 [已知问题](/graph/known-issues#azure-ad-activity-reports)。|
 | state | String | 用户地址中的省/市/自治区或省。 最大长度为 128 个字符。 <br><br>支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。 |
 | streetAddress | String | 用户公司地点的街道地址。 最大长度为 1024 个字符。 <br><br>支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。|
 | surname | String | 用户的姓氏。 最大长度为 64 个字符。 <br><br>支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。 |
 | usageLocation | String | 两个字母的国家/地区代码（ISO 标准 3166）。 为检查服务在国家/地区的可用性，这对根据法律要求将分配许可证的用户而言是必需的。  示例包括： `US`、 `JP`和 `GB`。 不可为 null。 <br><br>支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。|
 | userPrincipalName | String | 用户的用户主体名称 (UPN)。 UPN 是用户基于 Internet 标准 RFC 822 的 Internet 式登录名。 按照惯例，此名称应映射到用户的电子邮件名称。 常规格式是 alias@domain，其中 domain 必须位于租户的已验证域集合中。 创建用户时此属性是必需的。 可从 [组织](organization.md) 的 **verifiedDomains** 属性访问租户的已验证域。<br>注意：此属性不能包含突出字符。 <br><br>支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`、 `endsWith`） 和 `$orderBy`。
-| userType | String | 可用于对目录中的用户类型进行分类的字符串值，例如`Member``Guest`。 <br><br>支持 `$filter`（`eq`、`ne`、`NOT`、`in`）。 |
+| userType | String | 可用于对目录中的用户类型进行分类的字符串值，例如 `Member` 和 `Guest`。 <br><br>支持 `$filter`（`eq`、`ne`、`NOT`、`in`）。 |
 
 ### <a name="legal-age-group-property-definitions"></a>法定年龄组属性定义
 
@@ -250,7 +250,7 @@ ms.locfileid: "58696965"
 例如：Cameron 是英国 Holyport 小学的名录管理员。 新学年开始，他根据英国与年龄相关的法规，使用入学文件获得未成年人父母的同意。 征得父母同意后，Holyport 学校和 Microsoft 应用可以使用未成年人的帐户。 Cameron 随后创建所有帐户，将 ageGroup 设置为“minor”，并将 consentProvidedForMinor 设置为“granted”。 然后，他的学生使用的应用程序可以禁止不适合未成年人的功能。
 <!-- Note that the following 3 sub-sections are only documented like enums for a consistent user experience.
 For some reason they are not defined as enums in the CSDL.
-Hence the type of the corresponding 3 properties remain as string type in the Properties table.
+Hence the type of the corresponding 3 properties remain as String type in the Properties table.
 -->
 
 #### <a name="legalagegroupclassification-values"></a>legalAgeGroupClassification values
@@ -373,76 +373,76 @@ Hence the type of the corresponding 3 properties remain as string type in the Pr
 
 ```json
 {
-  "aboutMe": "string",
+  "aboutMe": "String",
   "accountEnabled": true,
-  "ageGroup": "string",
+  "ageGroup": "String",
   "assignedLicenses": [{"@odata.type": "microsoft.graph.assignedLicense"}],
   "assignedPlans": [{"@odata.type": "microsoft.graph.assignedPlan"}],
   "birthday": "String (timestamp)",
-  "businessPhones": ["string"],
-  "city": "string",
-  "companyName": "string",
-  "consentProvidedForMinor": "string",
-  "country": "string",
+  "businessPhones": ["String"],
+  "city": "String",
+  "companyName": "String",
+  "consentProvidedForMinor": "String",
+  "country": "String",
   "createdDateTime": "2019-02-07T21:53:13.067Z",
-  "creationType": "string",
+  "creationType": "String",
   "deletedDateTime": "String (timestamp)",
-  "department": "string",
-  "displayName": "string",
+  "department": "String",
+  "displayName": "String",
   "employeeHireDate": "2020-01-01T00:00:00Z",
-  "employeeId": "string",
+  "employeeId": "String",
   "employeeOrgData": {"@odata.type": "microsoft.graph.employeeOrgData"},
-  "employeeType": "string",
+  "employeeType": "String",
   "externalUserState": "PendingAcceptance",
   "externalUserStateChangeDateTime": "2018-11-12T01:13:13Z",
-  "faxNumber": "string",
-  "givenName": "string",
+  "faxNumber": "String",
+  "givenName": "String",
   "hireDate": "String (timestamp)",
-  "id": "string (identifier)",
+  "id": "String (identifier)",
   "identities": [{"@odata.type": "microsoft.graph.objectIdentity"}],
-  "interests": ["string"],
+  "interests": ["String"],
   "isResourceAccount": false,
-  "jobTitle": "string",
-  "legalAgeGroupClassification": "string",
+  "jobTitle": "String",
+  "legalAgeGroupClassification": "String",
   "licenseAssignmentStates": [{"@odata.type": "microsoft.graph.licenseAssignmentState"}],
-  "mail": "string",
+  "mail": "String",
   "mailboxSettings": {"@odata.type": "microsoft.graph.mailboxSettings"},
-  "mailNickname": "string",
-  "mobilePhone": "string",
-  "mySite": "string",
-  "officeLocation": "string",
-  "onPremisesDistinguishedName": "string",
-  "onPremisesDomainName": "string",
+  "mailNickname": "String",
+  "mobilePhone": "String",
+  "mySite": "String",
+  "officeLocation": "String",
+  "onPremisesDistinguishedName": "String",
+  "onPremisesDomainName": "String",
   "onPremisesExtensionAttributes": {"@odata.type": "microsoft.graph.onPremisesExtensionAttributes"},
-  "onPremisesImmutableId": "string",
+  "onPremisesImmutableId": "String",
   "onPremisesLastSyncDateTime": "String (timestamp)",
   "onPremisesProvisioningErrors": [{"@odata.type": "microsoft.graph.onPremisesProvisioningError"}],
-  "onPremisesSamAccountName": "string",
-  "onPremisesSecurityIdentifier": "string",
+  "onPremisesSamAccountName": "String",
+  "onPremisesSecurityIdentifier": "String",
   "onPremisesSyncEnabled": true,
-  "onPremisesUserPrincipalName": "string",
-  "otherMails": ["string"],
-  "passwordPolicies": "string",
+  "onPremisesUserPrincipalName": "String",
+  "otherMails": ["String"],
+  "passwordPolicies": "String",
   "passwordProfile": {"@odata.type": "microsoft.graph.passwordProfile"},
-  "pastProjects": ["string"],
-  "postalCode": "string",
-  "preferredDataLocation": "string",
-  "preferredLanguage": "string",
-  "preferredName": "string",
+  "pastProjects": ["String"],
+  "postalCode": "String",
+  "preferredDataLocation": "String",
+  "preferredLanguage": "String",
+  "preferredName": "String",
   "provisionedPlans": [{"@odata.type": "microsoft.graph.provisionedPlan"}],
-  "proxyAddresses": ["string"],
+  "proxyAddresses": ["String"],
   "refreshTokensValidFromDateTime": "2019-02-07T21:53:13.084Z",
-  "responsibilities": ["string"],
-  "schools": ["string"],
+  "responsibilities": ["String"],
+  "schools": ["String"],
   "showInAddressList": true,
   "signInSessionsValidFromDateTime": "2019-02-07T21:53:13.084Z",
-  "skills": ["string"],
-  "state": "string",
-  "streetAddress": "string",
-  "surname": "string",
-  "usageLocation": "string",
-  "userPrincipalName": "string",
-  "userType": "string",
+  "skills": ["String"],
+  "state": "String",
+  "streetAddress": "String",
+  "surname": "String",
+  "usageLocation": "String",
+  "userPrincipalName": "String",
+  "userType": "String",
   "calendar": {"@odata.type": "microsoft.graph.calendar"},
   "calendarGroups": [{"@odata.type": "microsoft.graph.calendarGroup"}],
   "calendarView": [{"@odata.type": "microsoft.graph.event"}],

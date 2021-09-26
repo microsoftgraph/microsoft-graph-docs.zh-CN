@@ -2,15 +2,15 @@
 title: 列出 userSettings
 description: 检索 cloudPcUserSetting 对象的列表。
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 2a5665a1e1043296f3814bdc301c8f3c6b339655
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 1eb0a1aa7884de65ad4e558cea0fc7f4fb23fac5
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53208378"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766500"
 ---
 # <a name="list-usersettings"></a>列出 userSettings
 
@@ -19,8 +19,6 @@ ms.locfileid: "53208378"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索 [cloudPcUserSetting 对象](../resources/cloudpcusersetting.md) 的列表。
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="permissions"></a>权限
 

@@ -1,16 +1,16 @@
 ---
 title: 列出 provisioningObjectSummary
 description: 获取租户中发生的所有预配事件。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: ArvindHarinder1
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 9e907b5fd55d6022fde87816179c89a7689be41b
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 52b5348218817fd4f8974a529879d15df588ee91
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231373"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766892"
 ---
 # <a name="list-provisioningobjectsummary"></a>列出 provisioningObjectSummary
 
@@ -28,7 +28,10 @@ ms.locfileid: "52231373"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | AuditLog.Read.All 和 Directory.Read.All |
 |委派（个人 Microsoft 帐户） | 不支持   |
-|应用 | AuditLog.Read.All |
+|应用程序 | AuditLog.Read.All 和 Directory.Read.All |
+
+ > [!IMPORTANT]
+> 此 API 有 [一个已知](/graph/known-issues#azure-ad-activity-reports) 问题，当前需要同意 **AuditLog.Read.All** 和 **Directory.Read.All** 权限。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -48,7 +51,7 @@ GET /auditLogs/provisioning
 |[$top](/graph/query-parameters#top-parameter)|设置结果的页面大小。|`/auditLogs/provisioning?$top=20`|
 |[$skiptoken](/graph/query-parameters#skiptoken-parameter)|从跨多页的结果集中检索下一页结果。 必须在查询中传递顶部筛选器以生成令牌。 不能指定要跳过的结果数。|`/auditLogs/provisioning?$top=20&$skiptoken=g822a72df43b19c8ce94b71d153981b680a08800bc3e35f239dffb378ff72c25"`|
 
-若要了解一般信息，请参阅 [OData 查询参数](/graph/query_parameters)。
+若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ### <a name="attributes-supported-by-the-filter-parameter"></a>$filter 参数支持的属性
 

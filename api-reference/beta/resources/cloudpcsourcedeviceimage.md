@@ -2,15 +2,15 @@
 title: cloudPcSourceDeviceImage 资源类型
 description: '与 Azure 订阅关联的源映像。 '
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 1b0c656142ddad5af3d0af7778d0ae04f0c5d7b4
-ms.sourcegitcommit: de175a11806f9e9ba3c916384e897aee1cc7f75c
+ms.openlocfilehash: 3de1c3582ca792225b6aa7e6d36b5b33594249e2
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790739"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766472"
 ---
 # <a name="cloudpcsourcedeviceimage-resource-type"></a>cloudPcSourceDeviceImage 资源类型
 
@@ -20,13 +20,11 @@ ms.locfileid: "49790739"
 
 与 Azure 订阅关联的源映像。
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
 ## <a name="properties"></a>属性
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|源映像的 ID。|
+|id|String|源图像的 ID。|
 |displayName|String|源显示名称的源图像。|
 
 ## <a name="relationships"></a>关系

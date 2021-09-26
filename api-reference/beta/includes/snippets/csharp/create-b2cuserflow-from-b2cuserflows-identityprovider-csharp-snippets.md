@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: a353de7fda14eb24ad536f20dcc8ef823fc7da2a
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 7bc9077531fd562f270d438d35972ec337501c89
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51922546"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59763494"
 ---
 ```csharp
 
@@ -20,15 +20,14 @@ var b2cIdentityUserFlow = new B2cIdentityUserFlow
     {
         new IdentityProvider
         {
-            Id = "Facebook-OAuth",
-            Type = "Facebook",
-            Name = "Facebook"
+            Id = "Facebook-OAuth"
         }
     }
 };
 
 await graphClient.Identity.B2cUserFlows
     .Request()
+    .Header("Location","https://graph.microsoft.com/beta/identity/b2cUserFlows('B2C_1_Customer')")
     .AddAsync(b2cIdentityUserFlow);
 
 ```

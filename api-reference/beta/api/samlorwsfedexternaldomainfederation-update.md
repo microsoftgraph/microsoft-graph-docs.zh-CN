@@ -10,7 +10,7 @@ ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/24/2021
-ms.locfileid: "59508638"
+ms.locfileid: "59764289"
 ---
 # <a name="update-samlorwsfedexternaldomainfederation"></a>更新 samlOrWsFedExternalDomainFederation
 命名空间：microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "59508638"
 
 更新 [samlOrWsFedExternalDomainFederation 对象](../resources/samlorwsfedexternaldomainfederation.md) 的属性。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

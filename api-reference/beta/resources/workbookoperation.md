@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: e27d38aa1c04ca3be43955d15131b927f89fa5cc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1077cb078720ea76c13c5dc5ea7e3b353ad8860c
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59119742"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767466"
 ---
 # <a name="workbookoperation-resource-type"></a>workbookOperation 资源类型
 
@@ -42,7 +42,7 @@ ms.locfileid: "59119742"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "id", "status", "error", "resourceLocation"
   ],
   "@odata.type": "microsoft.graph.workbookOperation",
   "keyProperty": "id"
@@ -50,10 +50,14 @@ ms.locfileid: "59119742"
 
 ```json
 {
+  "@odata.type": "#microsoft.graph.workbookOperation",
   "id": "String (identifier)",
-  "status": {"@odata.type": "microsoft.graph.workbookOperationStatus"},
-  "error": {"@odata.type": "microsoft.graph.workbookOperationError"},
-  "resourceLocation": "String"
+  "status": "String",
+  "resourceLocation": "String",
+  "statusCode": "Integer",
+  "error": {
+    "@odata.type": "microsoft.graph.workbookOperationError"
+  }
 }
 ```
 

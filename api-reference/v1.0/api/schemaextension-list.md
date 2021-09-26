@@ -1,24 +1,24 @@
 ---
 title: 列出 schemaExtension
-description: '获取在当前租户中拥有的任何应用创建的 schemaExtension (可以是 '
+description: '获取在当前租户中拥有的任何应用创建的 schemaExtension 对象 (可以是 '
 ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: 1c6d76afca09ae025eac25bac6656a56be9953f4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c1d98d285355d297511050522f70a19ca95d2774
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019585"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764218"
 ---
 # <a name="list-schemaextensions"></a>列出 schemaExtension
 
 命名空间：microsoft.graph
 
-获取由你在当前租户 (中拥有的任何应用创建的 [schemaExtension](../resources/schemaextension.md)对象列表，这些应用可以是 **InDevelopment、Available** 或 **Deprecated**) ，以及标记为 Available 的其他应用所拥有的所有其他架构 **扩展。**  
+获取由你在当前租户 (中拥有的任何应用创建的 [schemaExtension](../resources/schemaextension.md)对象列表，这些应用可以是 **InDevelopment、Available** 或 **Deprecated**) ，以及标记为可用的其他应用所拥有的所有其他架构 **扩展。**  
 
-> **注意：** 该列表还将包含架构扩展定义 (其他租户) `Available` 开发人员创建架构扩展定义。 这不同于仅返回租户特定数据的其他 API。 基于架构扩展定义创建的扩展数据特定于租户，并且只有显式授予权限的应用才能访问这些数据。 
+> **注意：** 该列表还将包含架构扩展定义 (标记为) `Available` 租户中其他开发人员创建的列表。 这不同于仅返回租户特定数据的其他 API。 基于架构扩展定义创建的扩展数据特定于租户，并且只有显式授予权限的应用才能访问这些数据。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -35,8 +35,6 @@ ms.locfileid: "59019585"
 ```http
 GET /schemaExtensions
 ```
-## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -51,7 +49,7 @@ GET /schemaExtensions
 
 如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [schemaExtension](../resources/schemaextension.md) 对象集合。
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 下面的示例演示如何通过筛选特定扩展的唯一 id 来查找其所有可访问 **的扩展**。 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -80,7 +78,7 @@ GET https://graph.microsoft.com/v1.0/schemaExtensions?$filter=id%20eq%20'graphle
 
 ---
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
@@ -91,7 +89,6 @@ GET https://graph.microsoft.com/v1.0/schemaExtensions?$filter=id%20eq%20'graphle
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 274
 
 {
   "value": [

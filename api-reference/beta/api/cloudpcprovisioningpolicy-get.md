@@ -2,15 +2,15 @@
 title: 获取 cloudPcProvisioningPolicy
 description: 读取 cloudPcProvisioningPolicy 对象的属性和关系。
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 7a5f0c1bab5b0bd05667d6d4e75fc5ff19ef03c4
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 9a7a7a22cfe71fc57e2c4ffdfc46f7a06219d1a9
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52546698"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764141"
 ---
 # <a name="get-cloudpcprovisioningpolicy"></a>获取 cloudPcProvisioningPolicy
 
@@ -20,9 +20,8 @@ ms.locfileid: "52546698"
 
 读取 [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) 对象的属性和关系。
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
