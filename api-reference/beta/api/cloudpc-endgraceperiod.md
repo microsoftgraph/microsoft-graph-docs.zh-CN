@@ -2,15 +2,15 @@
 title: cloudPC：endGracePeriod
 description: 结束特定云电脑的宽限期。
 author: RuiHou105
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 195954af6486cb508b1da7a78ffe5466a063de35
-ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
+ms.openlocfilehash: 07b4a1f98e6bea144cc69c64693f4f1a889755ec
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58397130"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765892"
 ---
 # <a name="cloudpc-endgraceperiod"></a>cloudPC：endGracePeriod
 
@@ -18,9 +18,7 @@ ms.locfileid: "58397130"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-结束特定云电脑的宽限期。 删除云电脑许可证或取消分配预配策略时，将触发宽限期。 它允许用户在取消预配发生前访问云电脑最多七天。 结束宽限期会立即取消预配云电脑，而无需等待七天。
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
+结束特定云电脑的宽限期。 删除云电脑许可证或取消分配预配策略时，将触发宽限期。 它允许用户在取消预配发生前访问云电脑最多七天。 结束宽限期后，将立即取消预配云电脑，而无需等待七天。
 
 ## <a name="permissions"></a>权限
 
@@ -62,6 +60,8 @@ POST /deviceManagement/virtualEndpoint/cloudPCs/{cloudPCId}/endGracePeriod
 ### <a name="request"></a>请求
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "endgraceperiod_cloudpc"
@@ -71,6 +71,24 @@ POST /deviceManagement/virtualEndpoint/cloudPCs/{cloudPCId}/endGracePeriod
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/{cloudPCId}/endGracePeriod
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/endgraceperiod-cloudpc-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/endgraceperiod-cloudpc-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/endgraceperiod-cloudpc-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/endgraceperiod-cloudpc-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

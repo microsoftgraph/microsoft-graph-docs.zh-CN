@@ -1,16 +1,16 @@
 ---
 title: 获取 directoryAudit
 description: 介绍从 Microsoft Graph API (beta 版本) directoryAudit (实体的 get) 。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: SarahBar
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 6079c58dc4ba17cb185ed365ada24c902f310069
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: eba3d229ce68a874c40eb215b6b3c3924fae33af
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53579321"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764897"
 ---
 # <a name="get-directoryaudit"></a>获取 directoryAudit
 
@@ -18,7 +18,7 @@ ms.locfileid: "53579321"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取特定的Azure Active Directory 审核日志项。 这包括 Azure Active Directory 中各种服务生成的 审核日志 项，如用户、应用程序、设备和组管理、特权标识管理 (PIM) 、访问评审、使用条款、标识保护、密码管理 (自助服务和管理员密码重置) 、自助服务组管理等。
+获取特定的Azure Active Directory 审核日志项。 这包括 Azure Active Directory 中的各种服务生成的 审核日志 项，如用户、应用程序、设备和组管理、特权标识管理 (PIM) 、访问评审、使用条款、标识保护、密码管理 (自助服务和管理员密码重置) 、自助服务组管理等。
 
 ## <a name="permissions"></a>权限
 
@@ -29,6 +29,9 @@ ms.locfileid: "53579321"
 |委派（工作或学校帐户） | AuditLog.Read.All 和 Directory.Read.All |
 |委派（个人 Microsoft 帐户） | 不支持   |
 |应用程序 | AuditLog.Read.All 和 Directory.Read.All | 
+
+> [!IMPORTANT]
+> 此 API 有 [一个已知](/graph/known-issues#azure-ad-activity-reports) 问题，当前需要同意 **AuditLog.Read.All** 和 **Directory.Read.All** 权限。
 
 此外，应用还必须向 Azure AD [正确注册](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)。
 
@@ -41,9 +44,9 @@ GET /auditLogs/directoryAudits/{id}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 OData 查询参数来帮助自定义响应。 有关如何使用此参数的详细信息，请参阅 [OData 查询参数](/graph/query_parameters)。
+此方法支持 OData 查询参数来帮助自定义响应。 有关如何使用此参数的详细信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称      |说明|
 |:----------|:----------|

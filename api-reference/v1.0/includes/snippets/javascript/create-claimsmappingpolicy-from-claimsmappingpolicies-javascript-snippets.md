@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 37161787bb1cfa9424dbfeb4b7b66c052e204bcf3c560e0e65148510e737755e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d0de63c7eeb07147bbb157b7f4972caabee7d1e5
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57277549"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59929136"
 ---
 ```javascript
 
@@ -16,11 +16,10 @@ const options = {
 const client = Client.init(options);
 
 const claimsMappingPolicy = {
-  definition: [
-    'definition-value'
-  ],
-  displayName: 'displayName-value',
-  isOrganizationDefault: true
+    definition: [
+        '{\"ClaimsMappingPolicy\':{\'Version\':1,\'IncludeBasicClaimSet\':\'true\",\"ClaimsSchema\': [{\'Source\':\'user\",\"ID\':\'userprincipalname\",\"SamlClaimType\':\'http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier\"},{\"Source\':\'user\",\"ID\':\'givenname\",\"SamlClaimType\':\'http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname\"},{\"Source\':\'user\",\"ID\':\'displayname\",\"SamlClaimType\':\'http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name\"},{\"Source\':\'user\",\"ID\':\'surname\",\"SamlClaimType\':\'http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname\"},{\"Source\':\'user\",\"ID\':\'userprincipalname\",\"SamlClaimType\':\'username\"}],\"ClaimsTransformation\':[{\'ID\':\'CreateTermsOfService\",\"TransformationMethod\':\'CreateStringClaim\",\"InputParameters\': [{\'ID\':\'value\",\"DataType\':\'string\", \"Value\':\'sandbox\"}],\"OutputClaims\':[{\'ClaimTypeReferenceId\':\'TOS\",\"TransformationClaimType\':\"createdClaim\"}]}]}}"
+    ],
+    displayName: 'Test1234'
 };
 
 await client.api('/policies/claimsMappingPolicies')

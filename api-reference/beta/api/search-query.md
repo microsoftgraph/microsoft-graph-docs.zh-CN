@@ -1,16 +1,16 @@
 ---
 title: searchEntity： query
-description: 运行请求正文中指定的查询。 响应中提供了搜索结果。
-localization_priority: Normal
+description: 运行请求正文中指定的查询。 响应中提供了搜索结果
+ms.localizationpriority: medium
 author: nmoreau
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: f2e3fa1aff81051820fda4444a55d9916e99128b
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: d974311d25fcd887cf5714e71c777fa26a2f9076
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334575"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766843"
 ---
 # <a name="searchentity-query"></a>searchEntity： query
 

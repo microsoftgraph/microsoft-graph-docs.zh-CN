@@ -1,16 +1,16 @@
 ---
 title: 更新 schemaExtension
 description: 更新指定 schemaExtension 的定义中的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 6e5bef7a1ac978ccde1c84a9ee074d7fc6d91c28
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: b0736ce3becf49c0b308c6fc0932fc8bc2648f55
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787373"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767313"
 ---
 # <a name="update-schemaextension"></a>更新 schemaExtension
 
@@ -22,7 +22,7 @@ ms.locfileid: "52787373"
 
 此更新适用于扩展的 **targetTypes** 属性中包含的所有资源。 这些资源是支持 [的资源类型之一](/graph/extensibility-overview#supported-resources)。
 
-对于委派流，只要已登录用户拥有的应用程序的 **扩展** 的所有者属性设置为 **appId，** 登录用户就可以更新架构扩展。 该应用程序可以是最初创建扩展的应用程序，或者是登录用户拥有的一些其他应用程序。 
+对于委派流，登录用户可以更新架构扩展，只要该扩展的所有者属性设置为登录用户拥有的应用程序的 **appId。** 该应用程序可以是最初创建扩展的应用程序，或者是登录用户拥有的一些其他应用程序。 
 
 owner 属性 **的** 此条件允许登录用户通过他们并不拥有的其他应用程序（如 Microsoft Graph Explorer）进行更新。 使用 Graph Explorer 更新 **schemaExtension** 资源时，请包含PATCH 请求正文中的 owner 属性。 有关详细信息，请参阅 Microsoft [](/graph/known-issues#extensions) Graph[已知问题中的扩展Graph。](/graph/known-issues)
 
@@ -59,18 +59,18 @@ PATCH /schemaExtensions/{id}
 |:---------------|:--------|:----------|
 |说明|String|架构扩展的说明。|
 |properties|[extensionSchemaProperty](../resources/extensionschemaproperty.md) 集合|构成架构扩展定义的属性名称和类型的集合。 只允许进行增量更改。 |
-|状态|String|架构扩展的生命周期状态。 创建时的初始状态为 **InDevelopment**。 可能的状态转换从"开发 **中"转换** 到 **"** 可用"和 **"** 可用"**到"已弃用"。**|
+|status|String|架构扩展的生命周期状态。 创建时的初始状态为 **InDevelopment**。 可能的状态转换从"开发 **中"转换为****"可用**"和 **"** 可用"**到"已弃用"。**|
 |targetTypes|String collection|架构扩展适用的支持扩展的 Microsoft Graph 类型集。  只允许进行增量更改。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 `204 No Content` 响应代码。
+如果成功，此方法返回 `204 No Content` 响应代码。 尝试从未拥有 (且未将 **owner** 属性设置为你拥有的应用程序的 **appId** 的应用程序运行此) 将返回 `403 Forbidden` 响应代码。
 
 ## <a name="example"></a>示例
 
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 
-
+下面展示了示例请求。 如果您 **运行的是来自** 您不拥有的应用程序的请求，则必须包含 owner 属性。 在这种情况下，将 owner **属性** 设置为你拥有的应用程序的 **appId。**
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -78,21 +78,29 @@ PATCH /schemaExtensions/{id}
   "name": "update_schemaextension"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/schemaExtensions/{id}
+PATCH https://graph.microsoft.com/beta/schemaExtensions/exto6x7sfft_courses
 Content-type: application/json
-Content-length: 201
 
 {
-  "properties": [
-    {
-      "name":"new-name-value",
-      "type":"new-type-value"
-    },
-    {
-      "name":"additional-name-value",
-      "type":"additional-type-value"
-    }
-  ]
+    "owner": "ef4cb9a8-97c3-4ca7-854b-5cb5ced376fa",
+    "properties": [
+        {
+            "name": "courseId",
+            "type": "Integer"
+        },
+        {
+            "name": "courseName",
+            "type": "String"
+        },
+        {
+            "name": "courseType",
+            "type": "String"
+        },
+        {
+            "name": "courseSupervisors",
+            "type": "String"
+        }
+    ]
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -114,7 +122,7 @@ Content-length: 201
 ---
 
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 
 <!-- {
   "blockType": "response"

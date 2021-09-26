@@ -1,16 +1,16 @@
 ---
 title: 创建 schemaExtension
 description: 创建一个新的 schemaExtension 定义以扩展支持资源类型。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: a16c8e75d8e07f55a1592374b3d393362ef34252
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 2d9dc44af2bda69d9451ab76d1abdd3cabf64d37
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053494"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766983"
 ---
 # <a name="create-schemaextension"></a>创建 schemaExtension
 
@@ -72,7 +72,7 @@ POST /schemaExtensions
 
 #### <a name="request"></a>请求
 
-这个示例演示了如何使用已验证的域名 `graphlearn` 和架构名称 `courses` 为架构扩展定义的 **id** 属性形成唯一的字符串。 唯一字符串采用此格式：\{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}.
+下面的示例演示如何使用已验证的域名 和 架构名称 ，为架构扩展定义的 id 属性形成唯一 `graphlearn` `courses` 的字符串。  唯一字符串采用此格式：\{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}.
 
 在请求正文中，提供 [schemaExtension](../resources/schemaextension.md) 对象的 JSON 表示形式。
 
@@ -128,7 +128,8 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+下面展示了示例响应。 
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -137,7 +138,6 @@ Content-type: application/json
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 420
 
 {
     "id": "graphlearn_courses",
@@ -168,7 +168,7 @@ Content-length: 420
 
 #### <a name="request"></a>请求
 
-这个示例演示了如何在请求的 **id** 属性中，仅指定架构名称、`courses` 以及 [schemaExtension](../resources/schemaextension.md) 对象中剩余属性的 JSON 表示形式。 Microsoft Graph 将在响应中分配并返回一个唯一的字符串值。
+以下示例演示在请求的 id 属性中仅指定架构名称 ，以及 `courses` [schemaExtension](../resources/schemaextension.md)对象中其余属性的 JSON 表示形式。  Microsoft Graph 将在响应中分配并返回一个唯一的字符串值。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -223,7 +223,8 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-该响应在 **id** 属性中包含一个基于请求中提供的架构名称的唯一字符串，以及新创建的架构定义的其余部分。 响应中的 **id** 值基于架构名称 中的 ext \{ _&#65279;8-random-alphanumeric-chars_&#65279;\} \_ \{ _格式_ \} 。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+该响应包括一个基于请求中提供的架构名称的 **id** 属性中唯一的字符串，以及新创建的架构定义的其余部分。 响应中的 **id** 中的值采用此格式：ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -232,7 +233,6 @@ Content-type: application/json
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 420
 
 {
     "id": "extk9eruy7c_courses",
@@ -263,7 +263,7 @@ Content-length: 420
 
 #### <a name="request"></a>请求
 
-此示例演示如何设置 **所有者** 来创建架构扩展。  在此方案中，应用程序的用户可能不是应用程序的所有者（例如，当你使用的是 Microsoft Graph 资源管理器）。  在这种情况下，应将 **owner** 属性设置为你拥有的应用程序的 **appId** ，否则你将无权创建架构扩展。 在请求中设置 **owner** 属性，以及 [schemaExtension](../resources/schemaextension.md) 对象中其他属性的 JSON 表示形式。
+以下示例演示如何创建架构扩展 **设置所有者**。  在此方案中，应用程序的用户可能不是应用程序的所有者（例如，当你使用的是 Microsoft Graph 资源管理器）。  在这种情况下，应将 **owner** 属性设置为你拥有的应用程序的 **appId** ，否则你将无权创建架构扩展。 在请求中设置 **owner** 属性，以及 [schemaExtension](../resources/schemaextension.md) 对象中其他属性的 JSON 表示形式。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -320,7 +320,8 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-该响应包括 **owner** 设置为请求中提供的值。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+该响应 **包含所有者** 设置为请求中提供的值。 
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -330,7 +331,6 @@ Content-type: application/json
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 420
 
 {
     "id": "extk9eruy7c_courses",

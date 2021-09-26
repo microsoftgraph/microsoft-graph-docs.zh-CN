@@ -1,16 +1,16 @@
 ---
 title: List group transitive members
 description: 获取组的成员列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 923c94f61e319e70639e00d33ad709f5242117a4c8b38de7e48a82aeda13a7cc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f4af4dc2076a481793bbef87adc0f7c045ed9c39
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57219221"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59766402"
 ---
 # <a name="list-group-transitive-members"></a>List group transitive members
 
@@ -46,9 +46,9 @@ GET /groups/{id}/transitiveMembers
 
 此方法支持[OData query parameters](/graph/query-parameters)以帮助自定义响应，包括 `$search`、`$count`、 和 `$filter` 可使用“**displayName**”和“**说明**”属性上的`$search`。 为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。 在添加或更新项目与在索引中可用之间可能会稍有延迟。
 
-若要筛选 OData 类型的结果（如 `microsoft.graph.user` 或 `microsoft.graph.group` ），必须使用 [高级查询参数](/graph/aad-advanced-queries)。 即，将 **ConsistencyLevel** 标头设置为 `eventual` 和 `$count=true` 查询字符串。
+若要筛选 OData 类型（如 或 ）上的结果， `microsoft.graph.user` `microsoft.graph.group` 必须使用 [高级查询参数](/graph/aad-advanced-queries)。 即，将 **ConsistencyLevel** 标头设置为 `eventual` 和 `$count=true` 查询字符串。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称 | 说明 |
 |:---- |:----------- |
@@ -165,7 +165,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>响应
 
-下面介绍响应示例。
+下面展示了示例响应。
 
 <!-- {
   "blockType": "response",
@@ -258,7 +258,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-use-odata-cast-and-search-to-get-membership-in-groups-with-display-names-that-contain-the-letters-tier-including-a-count-of-returned-objects"></a>示例 4：使用 OData 转换和$search获取显示名称包含字母"tier"（包括返回对象计数）的组的成员身份
+### <a name="example-4-use-odata-cast-and-search-to-get-membership-in-groups-with-display-names-that-contain-the-letters-tier-including-a-count-of-returned-objects"></a>示例 4：使用 OData cast 和 $search 获取显示名称包含字母"tier"（包括返回对象计数）的组的成员身份
 
 #### <a name="request"></a>请求
 
@@ -320,7 +320,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-5-use-odata-cast-and-filter-to-get-user-membership-in-groups-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>示例 5：使用 OData 强制转换$filter获取组的用户成员资格，组显示名称以"A"开头（包括返回的对象计数）
+### <a name="example-5-use-odata-cast-and-filter-to-get-user-membership-in-groups-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>示例 5：使用 OData 强制转换$filter获取组中用户成员资格，组显示名称以"A"开头（包括返回的对象计数）
 
 #### <a name="request"></a>请求
 

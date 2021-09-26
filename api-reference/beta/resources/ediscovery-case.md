@@ -1,16 +1,16 @@
 ---
 title: case 资源类型
-description: 在电子数据展示上下文中，包含保管人、保留项、集合、审阅集和导出。
+description: 在电子数据展示的上下文中，包含保管人、保留项、集合、审阅集和导出。
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: 112a5551608df02378fca1793e0b3f469baf322d
-ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
+ms.openlocfilehash: ea4907edc66cd2c8d7713e816d561a0181c84d92
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52080532"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766304"
 ---
 # <a name="case-resource-type"></a>case 资源类型
 
@@ -18,7 +18,10 @@ ms.locfileid: "52080532"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在电子数据展示上下文中，包含保管人、保留项、集合、审阅集和导出。 有关详细信息[，请参阅](/microsoft-365/compliance/overview-ediscovery-20)Advanced eDiscovery。
+在电子数据展示的上下文中，包含保管人、保留项、集合、审阅集和导出。 有关详细信息[，请参阅](/microsoft-365/compliance/overview-ediscovery-20)Advanced eDiscovery。
+
+>[!NOTE]
+>从 2021 年 9 月开始，POST 操作将创建大案例。 若要了解有关大案例的更多信息，请参阅在 Advanced eDiscovery[中Advanced eDiscovery。](/microsoft-365/compliance/advanced-ediscovery-large-cases) 有关详细信息，请参阅对高级[电子数据Microsoft 365创建案例 API](https://go.microsoft.com/fwlink/?linkid=2172604)的变更博客文章。
 
 ## <a name="methods"></a>方法
 
@@ -33,7 +36,7 @@ ms.locfileid: "52080532"
 | [重新打开案例](../api/ediscovery-case-reopen.md)      | 无                                              | 重新打开已关闭电子数据展示案例。 有关详细信息，请参阅 [重新打开已关闭的案例](/microsoft-365/compliance/close-or-delete-case#reopen-a-closed-case)。|
 | Custodians |
 | [列出保管人](../api/ediscovery-case-list-custodians.md)   | [microsoft.graph.ediscovery.custodian](../resources/ediscovery-custodian.md) 集合 |获取保管 [人对象及其](../resources/ediscovery-custodian.md) 属性的列表。|
-| [创建保管人](../api/ediscovery-case-post-custodians.md)  | [microsoft.graph.ediscovery.custodian](../resources/ediscovery-custodian.md)           |创建新的保管 [人](../resources/ediscovery-custodian.md) 对象。 创建保管人对象后，你需要创建保管人[的用户来源](../resources/ediscovery-usersource.md)，以引用其邮箱和OneDrive for Business网站。|
+| [创建保管人](../api/ediscovery-case-post-custodians.md)  | [microsoft.graph.ediscovery.custodian](../resources/ediscovery-custodian.md)           |创建新的保管 [人](../resources/ediscovery-custodian.md) 对象。 创建保管人对象后，你需要创建保管人[的用户](../resources/ediscovery-usersource.md)来源，以引用其邮箱和OneDrive for Business网站。|
 | 合法保留 |
 | [列出 legalHolds](../api/ediscovery-case-list-legalholds.md)   | [microsoft.graph.ediscovery.legalHold](../resources/ediscovery-legalhold.md) 集合 | 获取[适用于案例的 legalHolds。](../resources/ediscovery-legalhold.md)|
 | [创建 legalHold](../api/ediscovery-case-post-legalholds.md)  | [microsoft.graph.ediscovery.legalHold](../resources/ediscovery-legalhold.md)           | 创建新的 [legalHold](../resources/ediscovery-legalhold.md) 对象。|
@@ -65,7 +68,7 @@ ms.locfileid: "52080532"
 |id|String| 电子数据展示案例的 ID。 只读。 |
 |lastModifiedBy|[identitySet](/graph/api/resources/identityset)|最后一个修改实体的用户。|
 |lastModifiedDateTime|DateTimeOffset| 修改案例的最新日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
-|状态|microsoft.graph.ediscovery.caseStatus| 大小写状态。 可能的值为 `unknown` `active` `pendingDelete` 、、、、 `closing` 和 `closed` `closedWithError` 。 有关详细信息，请参阅下表。|
+|status|microsoft.graph.ediscovery.caseStatus| 大小写状态。 可能的值为 `unknown` `active` `pendingDelete` 、、、、 `closing` 和 `closed` `closedWithError` 。 有关详细信息，请参阅下表。|
 
 ### <a name="casestatus-values"></a>caseStatus 值
 
@@ -82,14 +85,14 @@ ms.locfileid: "52080532"
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|custodians|[microsoft.graph.ediscovery.custodian](../resources/ediscovery-custodian.md) 集合| 返回此案例的 **case custodian** 对象 **列表**。  可为 NULL。|
-|legalHolds|[microsoft.graph.ediscovery.legalHold](../resources/ediscovery-legalhold.md) 集合| 返回此案例的 **case legalHold** 对象 **列表**。  可为 NULL。 |
+|custodians|[microsoft.graph.ediscovery.custodian](../resources/ediscovery-custodian.md) 集合| 返回此案例的 **case custodian** 对象 **列表**。  可为 Null。|
+|legalHolds|[microsoft.graph.ediscovery.legalHold](../resources/ediscovery-legalhold.md) 集合| 返回此案例的 **case legalHold** 对象 **列表**。  可为 null。 |
 |noncustodialDataSources|[microsoft.graph.ediscovery.noncustodialDataSource](../resources/ediscovery-noncustodialdatasource.md) 集合| 返回大小写非 **custodialDataSource** **对象的列表。**  可为 NULL。 |
-|operations|[microsoft.graph.ediscovery.caseOperation](../resources/ediscovery-caseoperation.md) 集合| 返回此案例的 **case 操作** 对象 **列表**。 可为 NULL。 |
-|reviewSets|[microsoft.graph.ediscovery.reviewSet](../resources/ediscovery-reviewset.md) 集合| 返回一个 **reviewSet** 对象列表（在这种情况下）。 只读。 可为 NULL。 |
-|设置|[microsoft.graph.ediscovery.settings](../resources/ediscovery-settings.md) 集合| 返回在这种情况下 **的设置** 对象列表。 只读。 可为 NULL。 |
+|operations|[microsoft.graph.ediscovery.caseOperation](../resources/ediscovery-caseoperation.md) 集合| 返回此案例的 **case 操作** 对象 **列表**。 可为 Null。 |
+|reviewSets|[microsoft.graph.ediscovery.reviewSet](../resources/ediscovery-reviewset.md) 集合| 返回一个 **reviewSet** 对象列表（在这种情况下）。 只读。 可为 null。 |
+|设置|[microsoft.graph.ediscovery.settings](../resources/ediscovery-settings.md) 集合| 返回在这种情况下 **的设置** 对象列表。 只读。 可为 null。 |
 |sourceCollections|[microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md) 集合|返回与 **这种情况相关联的 sourceCollection** 对象的列表。|
-|tags|[microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md) 集合|返回与这种情况 **相关联的 tag** 对象列表。|
+|标记|[microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md) 集合|返回与这种情况 **相关联的 tag** 对象列表。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 53961c4dbadfa2732d45a277233673aac1ddb41e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 78a8ce78337c2c2e00c96cea7dbb59a6df0e7a11
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139322"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59507751"
 ---
 # <a name="assign-reviewers-to-your-access-review-using-the-microsoft-graph-api"></a>使用 Microsoft Graph API 将审阅者分配给你的访问评审
 
@@ -89,6 +89,7 @@ Azure AD [访问评审 API](/graph/api/resources/accessreviewsv2-root) 允许你
 ]
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="next-steps"></a>后续步骤
 
 + [配置访问评审定义的范围](/graph/accessreviews-scope-concept)
++ [试用教程，](/graph/accessreviews-overview) 了解如何使用访问评审 API 查看对 Azure AD 资源的访问权限

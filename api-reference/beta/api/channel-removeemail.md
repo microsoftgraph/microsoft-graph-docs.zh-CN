@@ -2,15 +2,15 @@
 title: channel： removeEmail
 description: 删除频道的预配电子邮件。
 author: anandab-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 66efdd201217d34ba367df4ae1f30713cd939df4
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 7c958496ffc34b958b817fb69f5cf49d958334a2
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52869591"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765730"
 ---
 # <a name="channel-removeemail"></a>channel： removeEmail
 
@@ -18,9 +18,9 @@ ms.locfileid: "52869591"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除频道的已设置 [电子邮件地址](../resources/channel.md)。
+删除频道 [的电子邮件地址](../resources/channel.md)。
 
-只有当电子邮件地址是使用[provisionEmail](channel-provisionemail.md)方法或通过 Microsoft Teams 客户端预配时，才能删除。
+只有当电子邮件地址是使用[provisionEmail](channel-provisionemail.md)方法或通过 Microsoft Teams 客户端预配的，才能删除该地址。
 
 ## <a name="permissions"></a>权限
 

@@ -1,16 +1,16 @@
 ---
 title: 获取组织
 description: 检索当前经过身份验证的组织的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: adimitui
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: f5ac941122ebeb65a27aff0165fda398557ea164
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 5dc1e91d33a328f67d3288448be97f4704871de3
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050085"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764617"
 ---
 # <a name="get-organization"></a>获取组织
 
@@ -44,7 +44,7 @@ GET /organization
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法仅支持 `$select` [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -96,7 +96,7 @@ GET https://graph.microsoft.com/beta/organization
 
 ##### <a name="response"></a>响应
 
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

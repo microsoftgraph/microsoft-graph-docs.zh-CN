@@ -2,15 +2,15 @@
 title: 获取设备
 description: 获取 device 对象的属性和关系。
 author: spunukol
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 8c1c70578ed95ead160895e5d471a8c4ba56e6c8
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: c4b811a20fcb3d11cb420e29ba383325d2885f6a
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437203"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765688"
 ---
 # <a name="get-device"></a>获取设备
 
@@ -20,25 +20,27 @@ ms.locfileid: "50437203"
 
 获取 device 对象的属性和关系。
 
-由于 **设备** 资源 [支持扩展](/graph/extensibility-overview)，因此您还可以使用该操作获取设备实例中的自定义属性 `GET` 和 **扩展** 数据。
+由于 **设备** 资源 [支持扩展](/graph/extensibility-overview)，因此也可使用 操作获取设备实例中的自定义属性 `GET` 和 **扩展** 数据。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Device.Read.All、Device.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Device.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
+|应用程序 | Device.Read.All、Device.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
+
+`{id}`请求中的 是设备的 **id** 属性的值，而不是 **deviceId** 属性的值。
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /devices/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法支持 `$select` [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
@@ -60,7 +62,7 @@ GET /devices/{id}
   "name": "get_device"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/devices/{id}
+GET https://graph.microsoft.com/beta/devices/000005c3-b7a6-4c61-89fc-80bf5ccfc366
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-device-csharp-snippets.md)]
@@ -81,10 +83,10 @@ GET https://graph.microsoft.com/beta/devices/{id}
 ---
 
 
-> **注意：**`id`请求中的是 **设备的 id** 属性，而不是 **deviceId** 属性。
+> **注意：**`id`请求中的 是设备的 **id** 属性，而不是 **deviceId** 属性。
 
 ### <a name="response"></a>响应
-以下示例显示没有主机名的设备 **的响应**。 
+以下示例显示无 **hostNames** 的设备的响应。 
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
@@ -95,14 +97,15 @@ GET https://graph.microsoft.com/beta/devices/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 322
 
 {
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#devices/$entity",
+  "@odata.id": "https://graph.microsoft.com/v2/72f988bf-86f1-41af-91ab-2d7cd011db47/directoryObjects/000005c3-b7a6-4c61-89fc-80bf5ccfc366/Microsoft.DirectoryServices.Device",
   "accountEnabled": true,
-  "approximateLastSignInDateTime": "2016-10-19T10:37:00Z",
-  "deviceId": "deviceId-value",
-  "deviceMetadata": "deviceMetadata-value",
-  "deviceVersion": 99,
+  "approximateLastSignInDateTime": "2021-08-26T21:15:01Z",
+  "deviceId": "000005c3-b7a6-4c61-89fc-80bf5ccfc366",
+  "deviceMetadata": null,
+  "deviceVersion": 2,
   "hostNames": []
 }
 ```
@@ -118,7 +121,6 @@ Content-length: 322
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 322
 
 {
   "accountEnabled": true,

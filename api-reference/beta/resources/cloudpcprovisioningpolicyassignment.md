@@ -2,15 +2,15 @@
 title: cloudPcProvisioningPolicyAssignment 资源类型
 description: CloudPC 预配策略分配
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: a96c3717b97b3f721c77b1150841f1eb51ded89f
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: fba54fda5ad20142909b7fea7c01bb117e5b3911
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082235"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767389"
 ---
 # <a name="cloudpcprovisioningpolicyassignment-resource-type"></a>cloudPcProvisioningPolicyAssignment 资源类型
 
@@ -19,8 +19,6 @@ ms.locfileid: "53082235"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示已定义的设置策略分配集合。
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="properties"></a>属性
 

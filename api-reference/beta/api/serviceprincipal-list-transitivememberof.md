@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 8597f020c4977ed293213fd58ca59f705f6be07c
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 3aa5f08eb37d07b18b268c7f417dcdc182a8afb6
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695397"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767207"
 ---
 # <a name="list-serviceprincipal-transitive-memberof"></a>List servicePrincipal transitive memberOf
 
@@ -37,7 +37,7 @@ ms.locfileid: "58695397"
 GET /servicePrincipals/{id}/transitiveMemberOf
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持[OData query parameters](/graph/query_parameters)以帮助自定义响应，包括 `$search`、`$count`、 和 `$filter` 还启用了 OData 强制转换，例如，你可以强制转换为仅获取用户所属的 directoryRoles。 `$search`可以用在 **displayName** 属性。 为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。 在添加或更新项目与在索引中可用之间可能会稍有延迟。
+此方法支持[OData query parameters](/graph/query-parameters)以帮助自定义响应，包括 `$search`、`$count`、 和 `$filter` 还启用了 OData 强制转换，例如，你可以强制转换为仅获取用户所属的 directoryRoles。 `$search`可以用在 **displayName** 属性。 为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。 在添加或更新项目与在索引中可用之间可能会稍有延迟。
 
 ## <a name="request-headers"></a>请求标头
 

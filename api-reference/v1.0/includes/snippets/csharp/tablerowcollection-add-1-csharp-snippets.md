@@ -1,21 +1,25 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ffdfc65e2b6f826d139dd3fcdf96dbff494c58bc75de4bdae488eb8c1d92134e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: be61bcb54ab8f58bf1aebe27bd7b02d97c56976d
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57163750"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59763863"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var values = JsonDocument.Parse("[[1,2,3],[4,5,6]]");
+var workbookTableRow = new WorkbookTableRow
+{
+    Values = JsonDocument.Parse(@"""[\r\n    [1, 2, 3],\r\n    [4, 5, 6]\r\n  ]""")
+};
 
 await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Tables["{workbookTable-id}"].Rows
-    .Add(null,values)
     .Request()
-    .PostAsync();
+    .Header("Prefer","respond-async")
+    .Header("Workbook-Session-Id","{Workbook-Session-Id}")
+    .AddAsync(workbookTableRow);
 
 ```

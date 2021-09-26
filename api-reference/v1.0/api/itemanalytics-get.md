@@ -5,12 +5,12 @@ description: 获取有关此资源下发生视图的 itemAnalytics。
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 58a1f0fc04885c855c4ccffe78b4d467bd8eab42
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7889051fa6ae191fb8c5af7df84e7a63ffc8226c
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019802"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766332"
 ---
 # <a name="get-itemanalytics"></a>获取 itemAnalytics
 
@@ -45,7 +45,7 @@ GET /sites/{site-id}/analytics
 GET /sites/{site-id}/lists/{list-id}/items/{item-id}/analytics
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持使用 [OData 查询参数](/graph/query_parameters)来帮助自定义响应。
+此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 

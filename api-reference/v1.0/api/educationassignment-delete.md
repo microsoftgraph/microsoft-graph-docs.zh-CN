@@ -5,20 +5,18 @@ author: sharad-sharma-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 2d679a13a3a90853e246616930c0dc5e834fe9f8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3f5f932b32b419863f61d784e7fe93cbd821b16b
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59100216"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59507779"
 ---
 # <a name="delete-educationassignment"></a>删除 educationAssignment
 
 命名空间：microsoft.graph
 
-删除现有工作分配。 
-
-只有班级内的教师才能删除作业。
+删除现有工作分配。 只有班级内的教师才能删除作业。
 
 ## <a name="permissions"></a>权限
 
@@ -35,7 +33,7 @@ ms.locfileid: "59100216"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc-9e13-44a2-a6ac-a53322006454
+DELETE /education/classes/{id}/assignments/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头

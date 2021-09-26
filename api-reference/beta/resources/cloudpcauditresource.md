@@ -2,15 +2,15 @@
 title: cloudPcAuditResource 资源类型
 description: 表示审核资源。这将显示具有多个已编辑属性的目标已编辑资源实体。
 author: ecmadao
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: ebd61a14680c5e5f2917e273456bcce60672149e
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: c168fa404d00f855659a38a096673f0524938f56
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53211287"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767145"
 ---
 # <a name="cloudpcauditresource-resource-type"></a>cloudPcAuditResource 资源类型
 
@@ -19,8 +19,6 @@ ms.locfileid: "53211287"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示审核资源。这将显示具有多个已编辑属性的目标已编辑资源实体。
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|

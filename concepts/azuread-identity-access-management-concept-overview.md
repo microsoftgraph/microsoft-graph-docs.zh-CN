@@ -5,12 +5,12 @@ author: jackson-woods
 ms.localizationpriority: high
 ms.prod: identity-and-access
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: f21e6973d9c1dc79925c7361a51ef28c559d823e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ea9fd66eb24b4293a4b86af1e2fbbe2eb55a46e2
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59122899"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59507954"
 ---
 # <a name="azure-ad-identity-and-access-management-api-overview"></a>Azure AD 标识和访问管理 API 概述
 
@@ -30,7 +30,7 @@ Azure Active Directory (Azure AD) 有助于集中化标识和访问管理 (IAM)�
 
 你可以使用 Microsoft Graph 中的 Azure AD API 来查询用户配置文件、查找其他用户、管理组织关系、跟踪任务或创建包含现有组织数据的原始解决方案。 这些 API 提供了坚实基础，可将自定义业务应用程序无缝集成到组织现有的数字服务。
 
-### <a name="access-users-and-groups"></a>访问用户和组
+### <a name="manage-users-and-groups"></a>管理用户和组
 
 可以将 Microsoft Graph 中的 Azure AD API 用于：
 
@@ -60,21 +60,21 @@ Azure Active Directory (Azure AD) 有助于集中化标识和访问管理 (IAM)�
 - 获取公司订阅的[服务 SKU](/graph/api/resources/subscribedsku) 的相关信息。
 - [邀请外部](/graph/api/resources/invitation)（来宾）用户加入组织。
 
-### <a name="monitor-identity-risks-preview"></a>监视标识风险（预览版）
+### <a name="monitor-identity-risks"></a>监视标识风险
 
 大多数安全漏洞都会导致攻击者窃取用户的身份，攻击者利用第三方漏洞、密码喷洒攻击和复杂的网络钓鱼攻击，从而使攻击变得非常有效。 这就意味着，你需要保护所有用户帐户免受这些攻击，并主动防止泄露的身份信息被滥用。
 
 Azure AD 使用自适应机器学习算法和启发，检测表明帐户可能已遭入侵的异常。 使用此类数据，Azure AD Identity Protection 可使用基于风险的条件访问策略来保护用户，并根据检测结果生成报告和警报。
 
-现在，Azure AD Premium P2 客户可以通过 Microsoft Graph 轻松[查询 Identity Protection 检测到的风险事件](/graph/api/resources/identityprotection-root)，包括风险事件类型、严重性、日期、时间、位置、受影响用户等。 然后，客户可以在 SIEM 系统和安全应用中使用这些事件。
+现在，Azure AD Premium P2 客户可以通过 Microsoft Graph 轻松[查询 Identity Protection 检测到的风险事件](/graph/api/resources/identityprotectionroot)，包括风险事件类型、严重性、日期、时间、位置、受影响用户等。 然后，客户可以在 SIEM 系统和安全应用中使用这些事件。
+
+### <a name="review-access-to-organizational-resources"></a>审查对组织资源的访问权限
+
+审查对组织中的组、应用程序甚至特权角色的访问权限。 [访问评审](/graph/api/resources/accessreviews-root) 是 Azure AD Premium P2 中的特色功能。
 
 ### <a name="activate-users-into-privileged-roles-preview"></a>激活用户的特权角色（预览版）
 
-你可以通过按需激活管理权限来保护对资源的访问权限。 [Privileged Identity Management](/graph/api/resources/privilegedidentitymanagement-root) 是一项 Azure AD Premium P2 功能。
-
-### <a name="manage-user-access-reviews-preview"></a>管理用户访问评审（预览版）
-
-可以配置组成员资格和应用访问权限的访问评审。 [访问评审](/graph/api/resources/accessreviews-root)是一项 Azure AD Premium P2 功能。
+使用 [特权标识管理 (PIM) API](/graph/api/resources/rolemanagement?view=graph-rest-beta&preserve-view=true) 以按需激活管理员特权。 强制执行角色激活的强制理由，并为特权角色中的行动者强制执行多重身份验证。
 
 ## <a name="api-reference"></a>API 参考
 
@@ -89,4 +89,4 @@ Azure AD 使用自适应机器学习算法和启发，检测表明帐户可能�
 - 使用 Azure AD 对 Microsoft Graph [进行身份验证](./auth/index.yml)。
 - 将 [Azure AD 登录](https://azure.microsoft.com/develop/identity/signin/)集成到应用或网站中。
 - 有关 Azure AD API 中新增功能的信息，请参阅[更改日志](changelog.md)。
-- 浏览[示例](https://developer.microsoft.com/graph/graph/examples)，了解有关如何使用 Microsoft Graph 的更多信息。
+- 浏览 [示例](https://developer.microsoft.com/en-us/graph/gallery/?filterBy=Samples)，以了解有关如何使用 Microsoft Graph 的更多信息。

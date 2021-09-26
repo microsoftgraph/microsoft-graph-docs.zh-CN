@@ -1,20 +1,20 @@
 ---
 title: Microsoft Graph 中作业和提交状态、转换和Graph
-description: 本文介绍了进程流期间作业和提交状态的变化，以及涉及 Microsoft Graph API。
+description: 本文介绍了在流程流期间作业和提交状态的变化，以及涉及的 Microsoft Graph API。
 ms.localizationpriority: medium
 author: cristobal-buenrostro
 ms.prod: education
 doc_type: conceptualPageType
-ms.openlocfilehash: 83589986cd0c490f4947744896665244a8de3633
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1cedb6c2ab34511134716efe5c205a4738d10f0c
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59117667"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767335"
 ---
 # <a name="states-transitions-and-limitations-for-assignments-and-submissions-in-microsoft-graph"></a>Microsoft Graph 中作业和提交状态、转换和Graph
 
-作业和提交是教师和学生操作之间交互的重要部分。 本文介绍了进程流期间作业和提交状态的变化，以及涉及 Microsoft Graph API。
+作业和提交是教师和学生操作之间交互的重要部分。 本文介绍了在流程流期间作业和提交状态的变化，以及涉及的 Microsoft Graph API。
 
 ## <a name="assignment-states-and-transitions"></a>工作分配状态和转换
 
@@ -33,12 +33,12 @@ ms.locfileid: "59117667"
 ![工作分配状态转换图](images/states-transitions/diagram-assignments.PNG)
 
 ### <a name="how-to-verify-that-an-assignment-is-published"></a>如何验证工作分配是否发布
-调用方必须使用 GET 分配操作来检查当前分配状态，并验证发布过程是否成功。
+调用方必须使用 GET [分配](/graph/api/educationassignment-get.md) 操作检查当前分配状态并验证发布过程是否成功。
 
 ### <a name="assignments-states-transitions-based-on-the-allowed-actions"></a>工作分配根据允许的操作状态转换
 | 当前工作分配状态 | Action | 新状态 |
 |:--|:--|:--|
-| Draft | 教师设置截止日期。 | Scheduled |
+| Draft | 教师安排作业 | Scheduled |
 | Draft | 发布 | 已发布 |
 | Draft | 已编辑 | Draft |
 | Draft | 已放弃 | | 
@@ -67,7 +67,7 @@ ms.locfileid: "59117667"
 
 ## <a name="submission-states-and-transitions"></a>提交状态和转换
 
-提交表示单个用户或组 (为) 启用的资源。 提交归工作分配所有，在发布工作分配时自动创建。
+提交表示单个用户或 (组) 为分配启用的资源。 提交归工作分配所有，在发布工作分配时自动创建。
 
 状态是提交中的只读属性，并且根据学生和教师的操作进行更改。
  
@@ -77,6 +77,7 @@ ms.locfileid: "59117667"
 | Working | 创建提交后的初始状态。 | `POST /education/classes/{id}/assignments`<br/>`POST /education/classes/{id}/assignments/{id}/submissions/{id}/unsubmit` |
 | Submitted | 在学生打开作业后，会发生此情况。 | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/submit` |
 | 已返回 | 教师将作业返回给学生后。 | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/return` |
+| 已重新分配 | 教师将作业返回给学生进行修订后。 | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/reassign` |
 
 下图显示了状态转换流。
 
@@ -86,10 +87,17 @@ ms.locfileid: "59117667"
 | 当前提交状态 | Action | 新状态 |
 |:--|:--|:--|
 | Working | 启用 | Submitted |
+| Working | 返回修订 | 已重新分配 |
 | Working | Return | 已返回 |
 | Submitted | 撤消启用 | Working |
 | Submitted | Return | 已返回 |
+| Submitted | 返回修订 | 已重新分配 |
 | 已返回 | 启用 | Submitted |
+| 已返回 | Return | 已返回 |
+| 已返回 | 返回修订 | 已重新分配 |
+| 已重新分配 | 启用 | Submitted |
+| 已重新分配 | Return | 已返回 |
+| 已重新分配 | 返回修订 | 已重新分配 |
 
 `Note: Any action and state transition not listed in the table is NOT allowed`
 
@@ -103,6 +111,7 @@ ms.locfileid: "59117667"
 | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/submit` | Async | 投票 |
 | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/unsubmit` | Async | 投票 |
 | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/return` | Async | 投票 |
+| `POST /education/classes/{id}/assignments/{id}/submissions/{id}/reassign` | Async | 投票 |
 
 ### <a name="limits"></a>限制
 以下限制适用于所有 API 调用：

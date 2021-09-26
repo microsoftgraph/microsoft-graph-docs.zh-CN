@@ -1,22 +1,24 @@
 ---
 title: educationResource 资源类型
-description: 系统中所有资源对象的超级类。
+description: 系统中所有资源对象的基类。
 ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: e13ce13fd6bba8a67b1b10103d0c5225736b8360
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0706df40990468180e987f758f3217842631f214
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59036604"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765646"
 ---
 # <a name="educationresource-resource-type"></a>educationResource 资源类型
 
 命名空间：microsoft.graph
 
-系统中所有资源对象的超级类。 资源与工作分配和/或提交相关联，它表示正在分配或提交的学习对象。 不能直接实例化资源;您必须创建一个表示所使用的资源类型的子类。
+系统中所有资源对象的基类。 
+
+educationResource 与作业和/或[](educationassignment.md)提交相关联，它[](educationsubmission.md)表示正在提供或提交的学习对象。 不能直接实例化资源;您必须创建一个表示所使用的资源类型的子类。
 
 此资源存储所有资源类型的通用属性。
 

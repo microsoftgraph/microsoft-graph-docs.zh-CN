@@ -6,18 +6,18 @@ description: 在 SharePoint 租户中搜索与所提供的关键字匹配的 网
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 78132ed16539ebf1c0b2085e019f40ad6c19b977
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 93b0405ac8aeb48f4dc4bf0d40e23dde108ec9aa
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59118881"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765793"
 ---
 # <a name="search-for-sites"></a>搜索网站
 
 命名空间：microsoft.graph
 
-在租户中SharePoint[搜索与提供的][]关键字匹配的网站。
+在租户SharePoint[搜索与提供的][]关键字匹配的网站。
 
 唯一适用于排序的属性是 **createdDateTime**。 搜索筛选器是一种自由文本搜索，在检索搜索结果时使用多个属性。
 
@@ -58,6 +58,8 @@ GET /sites?search={query}
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_permission"
@@ -66,6 +68,24 @@ GET /sites?search={query}
 ``` http
 GET https://graph.microsoft.com/v1.0/sites?search={query}
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-permission-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-permission-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-permission-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-permission-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。

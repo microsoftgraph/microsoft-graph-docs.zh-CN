@@ -4,14 +4,14 @@ description: 使用 api 对搜索结果Microsoft 搜索排序。
 author: nmoreau
 ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: 03d1b7e9751cb10f6936043ff9a620df9bf98741
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 56c0c5ed92098afe9df4eb699d113b62baa5522e
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59055708"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766941"
 ---
-# <a name="use-the-microsoft-search-api-to-sort-search-results-preview"></a>使用 Microsoft 搜索 API 对搜索结果进行排序 (预览) 
+# <a name="use-the-microsoft-search-api-to-sort-search-results"></a>使用 Microsoft 搜索 API 对搜索结果进行排序
 
 可以使用 Microsoft Microsoft 搜索中的 Graph API 对搜索结果进行排序。 若要对结果进行排序，请指定 [searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true)对象中的 **sortProperties** 属性，并确定 **entityTypes** 中的资源属性，以便按升序或降序对匹配项进行排序。
 

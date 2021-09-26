@@ -2,15 +2,15 @@
 title: List group memberOf
 description: 获取组直接成员所包括的组和管理单元。
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 654df0d248e4b989babe087856df599d02352bc2
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 195753013b0e574e78be28bcb011072e5cbc65a1
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681548"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766584"
 ---
 # <a name="list-group-memberof"></a>List group memberOf
 
@@ -41,7 +41,7 @@ GET /groups/{id}/memberOf
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持[OData query parameters](/graph/query_parameters)以帮助自定义响应，包括 `$search`、`$count`、 和 `$filter` 还启用了 OData 强制转换。例如，你可以通过强制转换来仅获取组是其成员的组。 `$search`可以用在 **displayName** 属性。 为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。 在添加或更新项目与在索引中可用之间可能会稍有延迟。
+此方法支持[OData query parameters](/graph/query-parameters)以帮助自定义响应，包括 `$search`、`$count`、 和 `$filter` 还启用了 OData 强制转换。例如，你可以通过强制转换来仅获取组是其成员的组。 `$search`可以用在 **displayName** 属性。 为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。 在添加或更新项目与在索引中可用之间可能会稍有延迟。
 
 ## <a name="request-headers"></a>请求标头
 

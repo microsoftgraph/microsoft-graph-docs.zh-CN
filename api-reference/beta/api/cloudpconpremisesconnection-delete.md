@@ -2,15 +2,15 @@
 title: 删除 cloudPcOnPremisesConnection
 description: 删除 cloudPcOnPremisesConnection 对象。
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 01f9b5a7e4091492be7aa8eae0f0d3f8354169e6
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: cb2e8fa21331f005b44c054e4451976c2a6c8691
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872763"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764624"
 ---
 # <a name="delete-cloudpconpremisesconnection"></a>删除 cloudPcOnPremisesConnection
 
@@ -22,11 +22,10 @@ ms.locfileid: "49872763"
 
 删除连接时，将从指定的 Azure 资源中删除对服务的权限。
 
-一旦内部部署连接通过运行状况检查（由属性指示）后，将无法 `healthCheckStatus` 删除该连接。
+一旦内部部署连接通过运行状况检查（由 属性指示）后，将无法删除该 `healthCheckStatus` 连接。
 
-如果连接在使用中，则不能删除该连接，如属性 `inUse` 所指示。
+如果连接在使用中，则不能删除该连接，如 属性 `inUse` 所指示。
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 ## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

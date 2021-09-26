@@ -1,16 +1,16 @@
 ---
 title: 使用 Azure AD 权利管理 API
 description: 通过 Azure AD 权利管理管理对资源（包括组、应用和网站）的访问
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: c75c88c4f7fd2d35eb6e214bbe3479abdac6b4da
-ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
+ms.openlocfilehash: b08d44a0aaa1b99d2937fd68c1dc822328f7bdb3
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401469"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764792"
 ---
 # <a name="working-with-the-azure-ad-entitlement-management-api"></a>使用 Azure AD 权利管理 API
 
@@ -36,7 +36,7 @@ Azure Active Directory (Azure AD) 权限管理可帮助你管理内部用户以�
 - [entitlementManagementSettings：Azure](entitlementmanagementsettings.md)AD 权利管理的租户范围设置。
 - [approval](approval.md)：表示与访问包请求相关的决策。
 
-此外，可通过权利管理角色定义管理特定于权利管理的角色的角色 [分配](unifiedroledefinition.md)。
+此外，可通过权利管理角色定义管理特定于权利管理的角色[分配。](unifiedroledefinition.md)
 
 有关介绍如何使用权利管理创建内部用户可以自助请求的资源包的教程，请参阅使用 Microsoft Graph [API 创建访问包](/graph/tutorial-access-package-api)。
 
@@ -61,7 +61,7 @@ Azure Active Directory (Azure AD) 权限管理可帮助你管理内部用户以�
 | [列出 incompatibleAccessPackages](../api/accesspackage-list-incompatibleaccesspackages.md) | [accessPackage](accesspackage.md) 集合 | 检索此访问包 **的不兼容 accesspackage** 对象的列表。 |
 | [将 accessPackage 添加到 incompatibleAccessPackages](../api/accesspackage-post-incompatibleaccesspackage.md) | 无 | 添加一个链接以指示另一 **个 accesspackage** 与指定的访问包不兼容。 |
 | [从 incompatibleAccessPackages 中删除 accessPackage](../api/accesspackage-delete-incompatibleaccesspackage.md) | 无 | 删除指示 **accesspackage 不兼容** 的链接。 |
-| [列出 incompatibleGroups](../api/accesspackage-list-incompatiblegroups.md) | [group](group.md) 集合 | 检索此 **访问包的** 不兼容组对象的列表。 |
+| [列出 incompatibleGroups](../api/accesspackage-list-incompatiblegroups.md) | [组](group.md) 集合 | 检索此 **访问包的** 不兼容组对象的列表。 |
 | [将组添加到 incompatibleGroups](../api/accesspackage-post-incompatiblegroup.md) | 无 | 添加链接以指示组的成员身份 **与** 指定的访问包不兼容。 |
 | [从 incompatibleGroups 中删除组](../api/accesspackage-delete-incompatiblegroup.md) | 无 | 删除指示组成员身份 **不兼容** 的链接。|
 | [列出 accessPackagesIncompatibleWith](../api/accesspackage-list-accesspackagesincompatiblewith.md) | [accessPackage](accesspackage.md) 集合 | 检索  **accesspackage 对象** 的列表，这些对象将此访问包列出为不兼容。 |
@@ -73,8 +73,9 @@ Azure Active Directory (Azure AD) 权限管理可帮助你管理内部用户以�
 | [列出 accessPackageAssignmentRequests](../api/accesspackageassignmentrequest-list.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) 集合 | 检索 **accessPackageAssignmentRequest 对象** 的列表。 |
 | [创建 accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-post.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | 创建新的 **accessPackageAssignmentRequest**。 |
 | [获取 accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-get.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | 读取 **accessPackageAssignmentRequest** 对象的属性和关系。 |
+| [删除 accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-delete.md) |无 | 删除 **accessPackageAssignmentRequest**。 |
 |[FilterByCurrentUser](../api/accesspackageassignmentrequest-filterbycurrentuser.md)|[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) 集合|检索已登录 **用户筛选的 accessPackageAssignmentRequest** 对象列表。|
-|[取消](../api/accesspackageassignmentrequest-cancel.md)|[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) 集合|取消 **处于可取消状态的 accessPackageAssignmentRequest** 对象：、、、。 `accepted` `pendingApproval` `pendingNotBefore` `pendingApprovalEscalated`|
+|[取消](../api/accesspackageassignmentrequest-cancel.md)|[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) 集合|取消 **处于可取消状态的访问PackageAssignmentRequest** 对象：、、、。 `accepted` `pendingApproval` `pendingNotBefore` `pendingApprovalEscalated`|
 | [列出 accessPackageAssignments](../api/accesspackageassignment-list.md) | [accessPackageAssignment](accesspackageassignment.md) 集合 | 检索 **accessPackageAssignment 对象** 的列表。 |
 |[FilterByCurrentUser](../api/accesspackageassignment-filterbycurrentuser.md)|[accessPackageAssignment](../resources/accesspackageassignment.md) 集合|检索在登录用户上筛选的 **accessPackageAssignment** 对象列表。|
 | [列出 accessPackageAssignmentResourceRoles](../api/accesspackageassignmentresourcerole-list.md) | [accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md) 集合 | 检索 **accessPackageAssignmentResourceRole 对象** 的列表。 |

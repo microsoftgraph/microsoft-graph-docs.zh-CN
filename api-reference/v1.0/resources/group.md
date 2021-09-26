@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: bd3edb246ab9fce3b9b088d94ce043cbc690839a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a8e31222c36d88b3d0aed4453da9d89230d169c6
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59084564"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765639"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -146,8 +146,8 @@ ms.locfileid: "59084564"
 |onPremisesSamAccountName|String|包含从本地目录同步的本地 **SAM 帐户名**。 仅当客户正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 时，才会填充该属性。<br><br>默认情况下返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。 只读。 |
 |onPremisesSecurityIdentifier|String|包含从本地同步到云的组的本地安全标识符 (SID)。 <br><br>默认情况下返回。 支持 `null` 值上的 `$filter`。 只读。 |
 |onPremisesSyncEnabled|Boolean|如果此组从本地目录同步，则为 `true`；如果此组最初从本地目录同步，但以后不再同步，则为 `false`；如果此对象从未从本地目录同步，则为 **null**（默认值）。 <br><br>默认情况下返回。 只读。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `in`）。|
-|preferredDataLocation|String|组的首选数据位置。 有关详细信息，请参阅 [OneDrive Online 多地理位置](/sharepoint/dev/solution-guidance/multigeo-introduction)。 <br><br>默认情况下返回。|
-|preferredLanguage|字符串|Microsoft 365 组的首选语言。应遵循 ISO 639-1 代码；例如“EN-US”。<br><br>默认情况下返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。 |
+|preferredDataLocation|String|Microsoft 365 组的首选数据位置。 默认情况下，组继承组创建者的首选数据位置。 若要设置此属性，必须为调用用户分配以下 [Azure AD 角色之一](/azure/active-directory/roles/permissions-reference)： <br><ul><li> 全局管理员 <li> 用户帐户管理员 <li>目录写入程序 <li> Exchange 管理员 <li> SharePoint 管理员 </ul><br/> 有关此属性的详细信息，请参阅  [OneDrive Online 多地理位置](/sharepoint/dev/solution-guidance/multigeo-introduction)。 <br><br>默认返回。可为空。|
+|preferredLanguage|字符串|Microsoft 365 组的首选语言。 应遵循 ISO 639-1 代码;例如， `en-US`。 <br><br>默认情况下返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。 |
 |proxyAddresses|String 集合| 指向同一组邮箱的组的电子邮件地址。 例如：`["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`。 需要 **any** 运算符筛选多值属性上的表达式。 <br><br>默认情况下返回。 只读。 不可为 null。 支持 `$filter`（`eq`、`NOT`、`ge`、`le`、`startsWith`）。 |
 |renewedDateTime|DateTimeOffset| 组的上次续订时间戳。 值不能直接修改，只能通过[续订服务操作](../api/group-renew.md)进行更新。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 <br><br>默认情况下返回。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`）。 只读。|
 |resourceBehaviorOptions|字符串集合|指定在创建期间可为 Microsoft 365 组设置的组行为。 可设置为只为创建的一部分（POST）。 可取值为：`AllowOnlyMembersToPost`、`HideGroupInOutlook`、`SubscribeNewGroupMembers`、`WelcomeEmailDisabled`。 有关详细信息，请参阅 [ 设置 Microsoft 365 组行为和预配选项 ](/graph/group-set-options)。|
@@ -156,7 +156,7 @@ ms.locfileid: "59084564"
 |securityIdentifier|字符串|组的安全标识符，用于 Windows 方案。 <br><br>默认情况下返回。|
 |theme|string|指定 Microsoft 365 组的颜色主题。 可能的值为：`Teal`、`Purple`、`Green`、`Blue`、`Pink`、`Orange` 或 `Red`。 <br><br>默认情况下返回。 |
 |unseenCount|Int32|自登录用户上次访问该组以来收到新帖子的对话计数。 <br><br>仅在 `$select` 上返回。 仅支持"获取组 API"（`GET /groups/{ID}`）。 |
-|visibility|String| 指定组的组加入策略和组内容可见性。 可能的值为： `Private`、 `Public`或 `Hiddenmembership`。 `Hiddenmembership` 仅在创建组时，<a0/&;<a1>为 Microsoft 365 组设置 </a1><a2/&;。 以后无法更新它。 创建组后，可更新其他可见性值。<br> 如果在 Microsoft Graph 上的组创建期间未指定可见性值，则默认创建安全组 `Private` Microsoft 365 组 `Public`。 请参阅[组可见性选项](#group-visibility-options)以了解详细信息。 <br><br>默认返回。可为空。|
+|visibility|String| 指定组的组加入策略和组内容可见性。 可能的值为： `Private`、 `Public`或 `Hiddenmembership`。 `Hiddenmembership` 仅在创建组时，<a0/&;<a1>为 Microsoft 365 组设置 </a1><a2/&;。 以后无法更新它。 创建组后，可更新其他可见性值。<br> 如果在 Microsoft Graph 上的组创建期间未指定可见性值，则默认创建安全组 `Private` Microsoft 365 组 `Public`。 可分配给角色的组始终为 `Private`。 请参阅[组可见性选项](#group-visibility-options)以了解详细信息。 <br><br>默认返回。可为空。|
 
 
 ### <a name="group-visibility-options"></a>组可见性选项
@@ -182,7 +182,7 @@ ms.locfileid: "59084564"
 |events|[事件](event.md) 集合|组的日历事件。|
 |extensions|[扩展](extension.md)集合|为组定义的开放扩展集合。只读。可为 NULL。|
 |groupLifecyclePolicies|[groupLifecyclePolicy](grouplifecyclepolicy.md) 集合|此组的生命周期策略集合。只读。可为空。|
-|memberOf|[directoryObject](directoryobject.md) collection|此组所属的组。 HTTP 方法：GET（支持所有组） 只读。 可为空。 支持 `$expand`。|
+|memberOf|[directoryObject](directoryobject.md) collection|此组所属的组。 HTTP 方法：GET（支持所有组） 只读。 可为 NULL。 支持 `$expand`。|
 |members|[directoryObject](directoryobject.md) 集合| 属于此组成员的用户和组。 HTTP 方法：GET（支持所有组），POST（支持 Microsoft 365 组、安全组和启用邮件的安全组）、DELETE（支持 Microsoft 365 组和安全组）。 可为 NULL。 支持 `$expand`。|
 |membersWithLicenseErrors|[User](user.md) 集合|在该基于组的许可证分配中存在许可证错误的组成员列表。只读。|
 |onenote|[Onenote](onenote.md)| 只读。|

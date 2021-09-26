@@ -1,26 +1,26 @@
 ---
-title: 使用 Microsoft Graph 获取 Teams 成员资格任何更改的更改通知
-description: 使用 Microsoft Graph 获取 Teams 成员资格任何更改（创建、更新和删除）的更改通知
+title: 使用 Microsoft Graph 获取团队和频道中成员身份更改的更改通知
+description: 使用 Microsoft Graph 获取团队和频道成员资格任何更改（创建、更新和删除）的更改通知。
 author: anandab
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: bcd2a7e936b52932a67dde4a83642ba7d980323a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8f84a824825db4b174ec4b568afd1d0e1fdf2dfa
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59071698"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764324"
 ---
-# <a name="get-change-notifications-for-changes-in-teams-membership-using-microsoft-graph"></a>使用 Microsoft Graph 获取 Teams 成员资格更改的更改通知
+# <a name="get-change-notifications-for-membership-changes-in-teams-and-channels-using-microsoft-graph"></a>使用 Microsoft Graph 获取团队和频道中成员身份更改的更改通知
 
-通过更改通知，你可以订阅 Teams 成员资格更改（创建、更新和删除）。 每当在团队中添加、删除或更新成员时，你都可以收到通知。 你还可以在通知中获取资源数据，因此避免调用 API 来获取有效负载。
+通过更改通知，你可以订阅团队和专用频道中的成员资格更改（创建、更新和删除）。 每当在团队或专用频道中添加、删除或更新成员时，都可以收到通知。 你还可以在通知中获取资源数据，因此避免调用 API 来获取有效负载。
 
 ## <a name="subscribe-to-changes-in-membership-of-a-particular-team"></a>订阅特定团队的成员资格更改
 
 若要获取特定团队中成员资格更改的更改通知，请订阅 `/teams/{team-id}/members`。 此资源支持在通知中[包括资源数据](webhooks-with-resource-data.md)。
 
-#### <a name="permissions"></a>权限
+### <a name="permissions"></a>权限
 
 |权限类型      | 权限（从最低特权到最高特权）              | 支持的版本 |
 |:--------------------|:---------------------------------------------------------|:-------------------|
@@ -30,7 +30,7 @@ ms.locfileid: "59071698"
 
 >**注意：** 带有 * 标记的权限作为 [ 资源特定的许可](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) 的一部分受到支持。
 
-#### <a name="example"></a>示例
+### <a name="example"></a>示例
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -47,6 +47,38 @@ Content-Type: application/json
   "clientState": "{secretClientState}"
 }
 ```
+
+## <a name="subscribe-to-membership-changes-in-all-private-channels-of-a-particular-team"></a>订阅特定团队所有专用频道中的成员资格更改
+
+要获取特定团队中所有专用频道成员资格更改的更改通知，请订阅 `/teams/{team-id}/channels/getAllMembers`。 此资源支持在通知中[包括资源数据](webhooks-with-resource-data.md)。
+
+### <a name="permissions"></a>权限
+
+|权限类型      | 权限（从最低特权到最高特权）              | 支持的版本 |
+|:--------------------|:---------------------------------------------------------|:-------------------|
+|委派（工作或学校帐户） | 不支持。 | 不支持。 |
+|委派（个人 Microsoft 帐户） | 不支持。    | 不支持。 |
+|应用程序 | ChannelMember.Read.All   | beta 版 |
+
+
+### <a name="example"></a>示例
+
+```http
+POST https://graph.microsoft.com/beta/subscriptions
+Content-Type: application/json
+
+{
+  "changeType": "created,deleted,updated",
+  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
+  "resource": "/teams/{team-id}/channels/getAllMembers",
+  "includeResourceData": true,
+  "encryptionCertificate": "{base64encodedCertificate}",
+  "encryptionCertificateId": "{customId}",
+  "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
+  "clientState": "{secretClientState}"
+}
+```
+
 
 
 
@@ -78,6 +110,8 @@ Content-Type: application/json
     "validationTokens": ["<<--ValidationTokens-->>"]
 }
 ```
+
+频道成员资格事件的有效负载与之前的有效负载类似，只不过 **资源** 属性指向频道成员，而不是团队成员。
 
 有关如何验证令牌和解密负载的详细信息，请参阅[设置包含资源数据的更改通知](webhooks-with-resource-data.md)。
 
@@ -116,6 +150,8 @@ Content-Type: application/json
   }
 }
 ```
+
+频道成员资格事件的有效负载与之前的有效负载类似，只不过 **资源** 属性指向频道成员，而不是团队成员。
 
 **resource** 和 **@odata.id** 属性可用于对 Microsoft Graph 进行调用以获取消息负载。 GET 调用将始终返回消息的当前状态。 如果在发送通知和检索消息之间更改了消息，则该操作将返回更新的消息。
 

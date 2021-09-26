@@ -5,12 +5,12 @@ author: sharad-sharma-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 8edbd2ff5dfd8aa9b50f1d350793eb3df4dcf010
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7a4a2681ef4dc78d199ae3e771a919496e3b6359
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59130879"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766206"
 ---
 # <a name="get-educationassignmentsettings"></a>获取 educationAssignmentSettings
 命名空间：microsoft.graph
@@ -33,7 +33,7 @@ ms.locfileid: "59130879"
 }
 -->
 ``` http
-GET /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignmentSettings
+GET /education/classes/{id}/assignmentSettings
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -49,9 +49,9 @@ GET /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignmentSettings
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [educationAssignmentSettings](../resources/educationassignmentsettings.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [educationAssignmentSettings](../resources/educationassignmentsettings.md) 对象。
 
-## <a name="examples"></a>示例
+## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 
@@ -63,7 +63,7 @@ GET /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignmentSettings
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignmentSettings
+GET https://graph.microsoft.com/v1.0/education/classes/f4a941ff-9da6-4707-ba5b-0eae93cad0b4/assignmentsettings
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationassignmentsettings-csharp-snippets.md)]
@@ -97,9 +97,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
     "submissionAnimationDisabled": false
-  }
 }
 ```
 

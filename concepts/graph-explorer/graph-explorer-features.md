@@ -3,20 +3,20 @@ title: 使用 Graph 资源管理器
 description: 了解如何使用资源管理器中的一Graph功能。
 ms.localizationpriority: medium
 author: bettirosengugi
-ms.openlocfilehash: 97c4f3ccd0fdfd08da7f4696419df813f19840e3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 99404ccf7e38ecf2f2cfd2f8e627aee32b42bda7
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59014326"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766990"
 ---
 # <a name="working-with-graph-explorer"></a>使用 Graph 资源管理器
 
-[Graph资源管理器](https://developer.microsoft.com/graph/graph-explorer/)是一个开发人员工具，可方便你创建 Microsoft rest API Graph并查看相应的响应。 本文介绍如何使用资源管理器中的一Graph功能。
+[Graph资源管理器](https://developer.microsoft.com/graph/graph-explorer/)是一款开发人员工具，可方便你使用 Microsoft Graph REST API 请求并查看相应的响应。 本文介绍如何使用资源管理器中的一Graph功能。
 
 ## <a name="consent-to-permissions"></a>同意权限
 
-用户或管理员必须通过同意Graph向浏览器授予正确的权限，才能访问 Microsoft Graph。 登录时Graph通过"修改权限"选项卡或配置文件旁的设置齿轮中的"选择权限"选项同意浏览器权限。 " **修改权限** "选项卡列出了在地址栏中运行查询所需的所有权限。 
+用户或管理员必须通过同意Graph向浏览器授予正确的权限，以访问 Microsoft Graph。 登录时Graph"修改权限"选项卡或配置文件旁的设置齿轮中的"选择权限"选项，同意在资源管理器中授予权限。 " **修改权限** "选项卡列出了在地址栏中运行查询所需的所有权限。 
 
 同意权限：
 
@@ -42,7 +42,7 @@ Graph资源管理器包括 **一个访问** 令牌选项卡，该选项卡显示
 
 ## <a name="copy-code-snippets"></a>复制代码段
 
-对于你在 Graph 资源管理器中选择或输入的每个 REST API 查询，你可以找到如何在代码段选项卡下展示的四种语言（C#、Java、JavaScript 和 Objective-C）下调用该 API。  
+对于你在 Graph 资源管理器中选择或输入的每个 REST API 查询，你可以找到如何在代码段选项卡 -C#、Java、JavaScript 和Objective-C 下展示的四种语言中调用该 API。 
 
 ![突出显示代码Graph选项卡的"资源管理器"屏幕截图](./images/code-snippets.png)
 
@@ -52,9 +52,9 @@ GraphExplorer 包括多个功能，以便更轻松地实现 UI。 在应用中�
 
 ### <a name="microsoft-graph-toolkit-integration"></a>Microsoft Graph Toolkit 集成
 
-[Microsoft Graph Toolkit](../toolkit/overview.md)是可重用的、与框架无关的 Web 组件和帮助程序的集合，用于访问和使用 Microsoft Graph。 这些组件功能完全正常，内置提供程序使用 Microsoft Graph 进行身份验证和提取数据。
+[Microsoft Graph Toolkit](../toolkit/overview.md)是可重用的、与框架无关的 Web 组件和帮助程序的集合，用于访问和使用 Microsoft Graph。 这些组件具有功能齐全的内置提供程序，这些提供程序使用 Microsoft Graph 进行身份验证和提取数据。
 
-Graph资源管理器提供与 Microsoft 组件组件对应的示例 REST API Graph Toolkit查询。 "组件"选项卡Toolkit **一** 个蓝色点指示Toolkit资源管理器中为当前指定的 REST API 查询Graph组件。 你可以方便地将组件的代码复制到你的应用。
+Graph资源管理器提供与 Microsoft 组件组件对应的示例 REST API Graph Toolkit查询。 "组件"Toolkit **选项卡** 上的一个蓝色点指示Toolkit资源管理器中为当前指定的 REST API 查询Graph组件。 你可以方便地将组件的代码复制到你的应用。
 
 下表列出了当前包含应用程序组件Toolkit查询。
 
@@ -76,7 +76,7 @@ Graph资源管理器提供与 Microsoft 组件组件对应的示例 REST API Gra
 
 ## <a name="customize-the-theme-in-graph-explorer"></a>在资源管理器中Graph主题
 
-通过选择设置齿轮 **Graph"更改** 主题"选项，为浏览器选择主题。 主题选项为浅色、深色和高对比度。
+通过选择设置齿轮 **Graph"更改主题**"选项，为浏览器选择主题。 主题选项为浅色、深色和高对比度。
 
 ![突出显示主题选项Graph资源管理器中"更改主题"选项的屏幕截图](./images/change-theme.png)
 
@@ -84,18 +84,18 @@ Graph资源管理器提供与 Microsoft 组件组件对应的示例 REST API Gra
 
 在资源管理器中Graph查询在"历史记录"选项卡中保存 30 **天。** 在"历史记录"选项卡上，您可以：
 
-1.  导出 .har 格式的所有历史记录项。
+1.  以格式导出所有历史记录 `.har` 项。
 2.  删除所有历史记录项。
-3.  查看此历史记录项。
-4.  运行此查询。
-5.  以 .har 格式导出此历史记录项。
-6.  删除此历史记录项。
+3.  查看历史记录项。
+4.  运行查询。
+5.  导出格式的历史记录 `.har` 项。
+6.  删除历史记录项。
 
 ![突出显示选项的"历史记录"选项卡的屏幕截图](./images/storing-and-sharing-queries.png)
 
 若要共享您运行的查询，请单击响应窗格中的"共享查询"按钮，然后单击"复制 **"。** 这会复制链接进行共享，并允许其他人查看查询和结果。
 
-![突出显示"Graph和复制"选项的浏览器屏幕截图](./images/share-query.png)
+![突出显示"Graph和复制"选项的"资源管理器"屏幕截图](./images/share-query.png)
 
 ## <a name="graph-explorer-ui-features"></a>Graph资源管理器 UI 功能
 
@@ -107,7 +107,7 @@ Graph资源管理器提供与 Microsoft 组件组件对应的示例 REST API Gra
 
 ![突出显示展开和折叠选项的响应窗格屏幕截图](./images/expand-collapse-response-preview.png)
 
-通过浏览器 UI Microsoft 365开发人员计划Graph，获取包含要试验的示例数据的免费沙盒。 在设置齿轮下，选择 **"获取包含示例数据的沙盒"。**
+通过资源管理器 UI Microsoft 365访问开发人员计划Graph，获取包含要试验的示例数据的免费沙盒。 在设置齿轮下，选择 **"获取包含示例数据的沙盒"。**
 
 ![突出显示了Graph示例数据"选项的"获取沙盒"的浏览器屏幕截图](./images/link-to-m365-dev-program.png)
 

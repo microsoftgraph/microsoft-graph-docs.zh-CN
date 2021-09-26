@@ -2,15 +2,15 @@
 title: cloudPcAuditProperty 资源类型
 description: 表示审核属性。这将显示已编辑的属性名称、旧值和新值。
 author: ecmadao
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 1f73733f0ace4526d3cbae226c963887d5af37ce
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 769ba5aa685755477a0ee0dbcdaa05696ed96a79
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53211290"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767200"
 ---
 # <a name="cloudpcauditproperty-resource-type"></a>cloudPcAuditProperty 资源类型
 
@@ -19,8 +19,6 @@ ms.locfileid: "53211290"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示审核属性。这将显示已编辑的属性名称、旧值和新值。
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|

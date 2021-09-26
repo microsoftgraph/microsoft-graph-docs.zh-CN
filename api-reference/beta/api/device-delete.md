@@ -10,7 +10,7 @@ ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/24/2021
-ms.locfileid: "59508529"
+ms.locfileid: "59764316"
 ---
 # <a name="delete-device"></a>删除设备
 
@@ -20,7 +20,7 @@ ms.locfileid: "59508529"
 
 删除已注册的设备。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 

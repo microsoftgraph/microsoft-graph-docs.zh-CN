@@ -2,15 +2,15 @@
 title: 在组上创建目录设置
 description: 使用此 API 为组创建新的目录设置。
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: b9a6b32b762306d716019d0c790104338bb5f3c0
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: bb61dbf19a3348a749d3973a71583d8f106ea39c
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681338"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765394"
 ---
 # <a name="create-a-directory-setting-on-groups"></a>在组上创建目录设置
 
@@ -36,7 +36,7 @@ POST /groups/{id}/settings
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | 持有者 <token>。 必需|
+| Authorization  | Bearer {token}。 必需|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [directorySetting](../resources/directorysetting.md) 对象的 JSON 表示形式。
@@ -46,8 +46,9 @@ POST /groups/{id}/settings
 如果成功，此方法在 `201 Created` 响应正文中返回 响应代码和 [directorySetting](../resources/directorysetting.md) 对象。
 
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
-下面是一个请求示例。
+### <a name="request"></a>请求
+下面展示了示例请求。
+
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -72,19 +73,21 @@ Content-length: 222
   }
 }
 ```
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-directorysetting-from-group-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-directorysetting-from-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-directorysetting-from-group-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-在请求正文中，提供 [directorySetting](../resources/directorysetting.md) 对象的 JSON 表示形式。
-##### <a name="response"></a>响应
-这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
+
+
+### <a name="response"></a>响应
+下面展示了示例响应。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,20 +1,22 @@
 ---
 title: 更新 calendarpermission
 description: 更新 calendarpermission 对象的属性。
+author: Harini84
 ms.localizationpriority: medium
-author: sochowdh
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7b72241d0e7b266ae90408702eeef82383620968
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fe98657de5e0b96db4b38b3a26ffed1521736d4e
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59049408"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766171"
 ---
 # <a name="update-calendarpermission"></a>更新 calendarPermission
 
 命名空间：microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 通过日历的相应 [calendarPermission](../resources/calendarpermission.md) 对象更新分配给现有共享者或代理人的权限。
 
@@ -51,7 +53,8 @@ PATCH /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 
 | 名称       | 说明|
 |:-----------|:-----------|
-| Authorization | 持有者 {token} |
+| Authorization | Bearer {token}。必需。  |
+| Content-Type  | application/json. Required.  |
 
 ## <a name="request-body"></a>请求正文
 
@@ -101,9 +104,7 @@ Content-type: application/json
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-calendarpermission-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
-
 
 ### <a name="response"></a>响应
 
@@ -123,7 +124,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "id": "L289RXhlbGVW",
+    "id": "RGVmYXVsdA==",
     "isRemovable": true,
     "isInsideOrganization": true,
     "role": "write",

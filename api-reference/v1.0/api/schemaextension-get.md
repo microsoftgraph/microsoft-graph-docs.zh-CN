@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: 6e5153f93a8f0f643493545b85b13f7df5c65bd2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d3c1e5b2279b68ad127cf69c62e1604029717d7b
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019592"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765996"
 ---
 # <a name="get-schemaextension"></a>获取 schemaExtension
 
@@ -47,8 +47,8 @@ GET /schemaExtensions/{id}
 
 如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [schemaExtension](../resources/schemaextension.md) 对象。
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
-下面是一个请求示例。
+### <a name="request"></a>请求
+下面展示了示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -76,8 +76,9 @@ GET https://graph.microsoft.com/v1.0/schemaExtensions/graphlearn_test
 
 ---
 
-##### <a name="response"></a>响应
-这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
+### <a name="response"></a>响应
+下面展示了示例响应。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

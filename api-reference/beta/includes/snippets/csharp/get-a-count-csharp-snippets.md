@@ -1,20 +1,20 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 3b0291972845bb717865d129ea25336b84edc862
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
-ms.translationtype: HT
+ms.openlocfilehash: f000dd0d9bb482952fae703b37e86cdd28bcf063
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58368842"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59763744"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var contacts = await graphClient.Contacts
+var applications = await graphClient.Applications
     .Request()
     .Header("ConsistencyLevel","eventual")
-    .Filter("startswith(displayName,'A')")
+    .Filter("startswith(displayName, 'a')")
     .OrderBy("displayName")
     .Top(1)
     .GetAsync();

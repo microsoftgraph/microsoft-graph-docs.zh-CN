@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: 2cfe89bb5ece2c691976e21a81bcbe33680713a1
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d7f73406547770f8c24bbdafc311fd6a1e0a2e36
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59099272"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764681"
 ---
 # <a name="update-schemaextension"></a>更新 schemaExtension
 
@@ -26,7 +26,7 @@ ms.locfileid: "59099272"
 
 对于委派流，登录用户可以更新架构扩展，只要该扩展的所有者属性设置为已登录用户拥有的应用程序的 **appId。** 该应用程序可以是最初创建扩展的应用程序，或者是登录用户拥有的一些其他应用程序。 
 
-owner 属性 **的** 此条件允许登录用户通过他们并不拥有的其他应用程序（如 Microsoft Graph Explorer）进行更新。 使用 Graph Explorer 更新 **schemaExtension** 资源时，请包含 PATCH 请求正文中的 owner 属性。 有关详细信息，请参阅 Microsoft [](/graph/known-issues#extensions) Graph[已知问题中的扩展Graph。](/graph/known-issues)
+owner 属性 **的** 此条件允许登录用户通过他们并不拥有的其他应用程序（如 Microsoft Graph Explorer）进行更新。 使用 Graph Explorer 更新 **schemaExtension** 资源时，请包含 PATCH 请求正文中的 owner 属性。 有关详细信息，请参阅 Microsoft [](/graph/known-issues#extensions) Graph[已知问题中的扩展部分](/graph/known-issues)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -65,13 +65,13 @@ PATCH /schemaExtensions/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 `204 No Content` 响应代码。
+如果成功，此方法返回 `204 No Content` 响应代码。 尝试从未拥有 (且未将 **owner** 属性设置为你拥有的应用程序的 **appId** 的应用程序运行此) 将返回 `403 Forbidden` 响应代码。
 
 ## <a name="example"></a>示例
 
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 
-下面是一个请求示例。
+下面展示了示例请求。 如果您 **运行的是来自** 您不拥有的应用程序的请求，则必须包含 owner 属性。 在这种情况下，将 owner **属性** 设置为你拥有的应用程序的 **appId。**
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -79,21 +79,29 @@ PATCH /schemaExtensions/{id}
   "name": "update_schemaextension"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/schemaExtensions/{id}
+PATCH https://graph.microsoft.com/v1.0/schemaExtensions/exto6x7sfft_courses
 Content-type: application/json
-Content-length: 201
 
 {
-  "properties": [
-    {
-      "name":"new-name-value",
-      "type":"new-type-value"
-    },
-    {
-      "name":"additional-name-value",
-      "type":"additional-type-value"
-    }
-  ]
+    "owner": "ef4cb9a8-97c3-4ca7-854b-5cb5ced376fa",
+    "properties": [
+        {
+            "name": "courseId",
+            "type": "Integer"
+        },
+        {
+            "name": "courseName",
+            "type": "String"
+        },
+        {
+            "name": "courseType",
+            "type": "String"
+        },
+        {
+            "name": "courseSupervisors",
+            "type": "String"
+        }
+    ]
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -115,7 +123,7 @@ Content-length: 201
 ---
 
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 
 <!-- {
   "blockType": "response"

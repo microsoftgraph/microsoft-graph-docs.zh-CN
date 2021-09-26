@@ -1,16 +1,16 @@
 ---
 title: 列出 directoryAudits
-description: 介绍 microsoft Graph API 中 directoryAudit (实体) 的列表方法。
+description: 介绍 microsoft) API 中 directoryAudit (实体Graph方法。
 ms.localizationpriority: medium
 author: SarahBar
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 7dcf6aeeb5a9053503de9f43d0945f77d2fe7788
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4ce9c6c23b474c9100b66f463e790bccf0240887
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59038074"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765814"
 ---
 # <a name="list-directoryaudits"></a>列出 directoryAudits
 
@@ -25,7 +25,7 @@ ms.locfileid: "59038074"
 | 权限类型                        | 权限（从最低特权到最高特权） |
 | :------------------------------------- | :------------------------------------------ |
 | 委派（工作或学校帐户）     | AuditLog.Read.All 和 Directory.Read.All    |
-| 委派（个人 Microsoft 帐户） | 不支持                               |
+| 委派（个人 Microsoft 帐户） | 不支持。                              |
 | 应用程序                            | AuditLog.Read.All 和 Directory.Read.All    |
 
 > [!IMPORTANT]
@@ -41,13 +41,13 @@ GET /auditLogs/directoryaudits
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持以下 OData 查询参数来帮助自定义响应。 关如何使用这些参数的详细信息，请参阅 [OData 查询参数](/graph/query_parameters)。
+此方法支持以下 OData 查询参数来帮助自定义响应。 关如何使用这些参数的详细信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 | 参数                                                       | 说明                                                                   | 示例                                                                     |
 | :--------------------------------------------------------- | :---------------------------------------------------------------------------- | :-------------------------------------------------------------------------- |
-| [\$filter](/graph/query_parameters#filter-parameter)       | 筛选结果（行）。                                                       | `/auditLogs/directoryAudits?&$filter=activityDateTime le 2018-01-24`         |
-| [\$返回页首](/graph/query_parameters#top-parameter)             | 设置结果的页面大小。                                                | `/auditLogs/directoryAudits?$top=1`                                         |
-| [\$skiptoken](/graph/query_parameters#skiptoken-parameter) | 从跨多页的结果集中检索下一页结果。 | `/auditLogs/directoryAudits?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1` |
+| [\$filter](/graph/query-parameters#filter-parameter)       | 筛选结果（行）。                                                       | `/auditLogs/directoryAudits?&$filter=activityDateTime le 2018-01-24`         |
+| [\$返回页首](/graph/query-parameters#top-parameter)             | 设置结果的页面大小。                                                | `/auditLogs/directoryAudits?$top=1`                                         |
+| [\$skiptoken](/graph/query-parameters#skiptoken-parameter) | 从跨多页的结果集中检索下一页结果。 | `/auditLogs/directoryAudits?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1` |
 
 ### <a name="attributes-supported-by-filter-parameter"></a>filter 参数支持 \$ 的属性
 

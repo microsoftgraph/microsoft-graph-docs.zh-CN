@@ -2,15 +2,15 @@
 title: cloudPcAuditEvent：getAuditActivityTypes
 description: 按租户 ID 获取审核活动类型。
 author: ecmadao
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 7ea6612160474c2fbbfde792f3565f1100dac146
-ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
+ms.openlocfilehash: 27801a4851d5434ae6015c931dcb1f0d700fc345
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53316967"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765968"
 ---
 # <a name="cloudpcauditevent-getauditactivitytypes"></a>cloudPcAuditEvent：getAuditActivityTypes
 
@@ -19,8 +19,6 @@ ms.locfileid: "53316967"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 按租户 ID 获取审核活动类型。
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="permissions"></a>权限
 

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sharmas
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: de863d94f5f4e3504664a19effc1c62c826dda75
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 98458e5d0f3731631c4f520f1a17e615270c5d26
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59020064"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767004"
 ---
 # <a name="educationassignment-setupresourcesfolder"></a>educationAssignment： setUpResourcesFolder
 
@@ -31,7 +31,6 @@ ms.locfileid: "59020064"
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
-
 ```http
 POST /education/classes/{id}/assignments/{id}/setUpResourcesFolder
 ```
@@ -43,7 +42,9 @@ POST /education/classes/{id}/assignments/{id}/setUpResourcesFolder
 ## <a name="request-body"></a>请求正文
 你需要提供一个空 json `{}` 作为此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在请求正文中返回 200 Ok 响应代码和 [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) 对象。
+如果成功，此方法在请求 `200 OK` 正文中返回 响应代码和 [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-1.0&preserve-view=true) 对象。
+
+如果指定的 **工作分配** 已经有一个文件夹，此方法将返回 `400 Bad request` 和 错误响应。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。
@@ -55,7 +56,7 @@ POST /education/classes/{id}/assignments/{id}/setUpResourcesFolder
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["ad8afb28-c138-4ad7-b7f5-a6986c2655a8"],
+  "sampleKeys": ["d38ffdea-da93-46ac-90ba-d568c6073075", "ad8afb28-c138-4ad7-b7f5-a6986c2655a8"],  
   "name": "educationassignment_setupresourcesfolder"
 }-->
 ```msgraph-interactive
@@ -143,6 +144,33 @@ Content-length: 279
         "user": {
             "id": "42ff222c-571f-497c-a9d3-f77ea9ece327",
             "displayName": null
+        }
+    }
+}
+```
+
+如果指定的 **工作分配** 已经有一个文件夹，此方法将返回 `400 Bad request` 和 错误响应。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "odata.error"
+} -->
+```http
+HTTP/1.1 400 Bad request
+Content-type: application/json
+Content-length: 158
+
+{
+    "error": {
+        "code": "badRequest",
+        "message": "Bad request.",
+        "innerError": {
+            "code": "folderAlreadyExists",
+            "message": "Resource folder already exists and has previously been set up.",
+            "date": "2021-09-14T19:05:24",
+            "request-id": "f88be238-1339-49c8-b03d-37f45d54761f",
+            "client-request-id": "30d8081a-f3e8-73e0-2da4-3480fb56ccdb"
         }
     }
 }

@@ -2,15 +2,15 @@
 title: 创建 cloudPcProvisioningPolicy
 description: 创建新的云电脑预配策略。
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 5b8cb78a3ef0f706ef53f983b7b1b0cb05864a86
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 4de48c770a6c9aee4ae4174796147ece832340f5
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53534053"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764435"
 ---
 # <a name="create-cloudpcprovisioningpolicy"></a>创建 cloudPcProvisioningPolicy
 
@@ -19,8 +19,6 @@ ms.locfileid: "53534053"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 创建新的 [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) 对象。
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="permissions"></a>权限
 
@@ -61,8 +59,8 @@ POST /deviceManagement/virtualEndpoint/provisioningPolicies
 |displayName|String|设置显示名称策略的项。|
 |说明|String|设置策略说明。|
 |onPremisesConnectionId|String|cloudPcOnPremisesConnection 的 ID。 若要确保云电脑具有网络连接并且它们已加入域，请选择与通过云电脑服务验证的虚拟网络的连接。|
-|imageId|String|你想要在云电脑中预配的操作系统映像的 ID。 库类型图像的格式为：{publisher_offer_sku}。|
-|imageDisplayName|String|要显示名称的操作系统映像的映像的映像。|
+|imageId|String|你想要在云电脑中预配的操作系统映像的 ID。 库类型图像的格式为：{publisher_offer_sku}。 每个参数支持的值如下所示：<ul><li>发布者：Microsoftwindowsdesktop。</li> <li>offer：windows-ent-cpc。</li> <li>sku：21h1-ent-cpc-m365， 21h1-ent-cpc-os、20h2-ent-cpc-m365、20h2-ent-cpc-os、20h1-ent-cpc-m365、20h1-ent-cpc-os、19h2-ent-cpc-m365 和 19h2-ent-cpc-os。</li></ul>|
+|imageDisplayName|String|适用于显示名称的操作系统映像的映像。|
 |imageType|cloudPcProvisioningPolicyImageType|你想要在云 (预配的操作系统映像) 库类型。 可取值为：`gallery`、`custom`。|
 
 ## <a name="response"></a>响应

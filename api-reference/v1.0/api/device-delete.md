@@ -5,12 +5,12 @@ author: spunukol
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: fe73c6c8e083d3021e31dff1721e2d68b2594f73
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5672325b9ff87b0ad9e48375c56c710db8f9e8d5
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59114685"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766752"
 ---
 # <a name="delete-device"></a>删除设备
 
@@ -29,11 +29,12 @@ ms.locfileid: "59114685"
 |应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
+
+`{id}`请求中的 是设备的 **id** 属性的值，而不是 **deviceId** 属性的值。
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /devices/{id}
 ```
-> 注意：请求中的“id”是设备的“id”属性，不是“deviceId”属性。
 
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|

@@ -2,22 +2,22 @@
 title: 创建 externalDomainName
 description: 创建新的 externalDomainName 对象。
 author: namkedia
-localization_priority: medium
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1eb7e580fb5e2c469eaece2889a236b4cde02b6d
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 175c2f05335494f876a0f0121d9777d87013184b
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58697009"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59763904"
 ---
 # <a name="create-externaldomainname"></a>创建 externalDomainName
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-通过创建新的 [externalDomainName](../resources/externaldomainname.md) 对象，WS-Fed个或多个域添加到基于 SAML 或基于 SAML 的配置，并将其添加到现有 [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md)中。
+通过创建新的 [externalDomainName](../resources/externaldomainname.md) WS-Fed，将多个域添加到基于 SAML 或基于 SAML 的配置，并将其添加到现有 [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md)中。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -28,7 +28,7 @@ ms.locfileid: "58697009"
 |委派（个人 Microsoft 帐户）| 不支持。|
 |应用程序|Domain.ReadWrite.All|
 
-工作或学校帐户需要属于 Azure AD 角色Azure Active Directory ([之) 之一](/azure/active-directory/roles/permissions-reference)：
+工作或学校帐户需要属于以下 Azure [AD Azure Active Directory (角色) 之一](/azure/active-directory/roles/permissions-reference)：
 
 * 全局管理员
 * 外部标识提供程序管理员
@@ -69,6 +69,8 @@ POST /directory/federationConfigurations/{samlOrWsFedExternalDomainFederation ID
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_externaldomainname_from_"
@@ -85,6 +87,24 @@ Content-length: 60
     "id": "contososuites.com"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-externaldomainname-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-externaldomainname-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-externaldomainname-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-externaldomainname-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 下面展示了示例响应。

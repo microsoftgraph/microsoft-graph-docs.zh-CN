@@ -1,16 +1,16 @@
 ---
 title: 获取 unifiedRoleAssignmentMultiple
 description: 检索 unifiedRoleAssignmentMultiple 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 1ac14a035dc723c59534d5a3e8bb979aff8d4e39
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: c511015a25ede198357f814df1ab141d72140aa7
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53534072"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764883"
 ---
 # <a name="get-unifiedroleassignmentmultiple"></a>获取 unifiedRoleAssignmentMultiple
 
@@ -26,11 +26,9 @@ ms.locfileid: "53534072"
 
 For other Microsoft 365 applications (like Azure AD) ， use [unifiedRoleAssignment](../resources/unifiedroleassignment.md).
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
 ## <a name="permissions"></a>权限
 
-根据 RBAC 提供程序以及 (或应用程序) 的权限类型，从下表中选择调用此 API 所需的最低特权权限。 若要了解 [更多信息，包括在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 选择更多特权权限之前保持谨慎，请参阅 [权限](/graph/permissions-reference)。 
+根据 RBAC 提供程序以及 (或应用程序) 的权限类型，从下表中选择调用此 API 所需的最小特权权限。 若要了解 [更多信息，包括在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 选择更多特权权限之前保持谨慎，请参阅 [权限](/graph/permissions-reference)。 
 
 ### <a name="for-cloud-pc-provider"></a>对于云电脑提供商
 
@@ -40,7 +38,7 @@ For other Microsoft 365 applications (like Azure AD) ， use [unifiedRoleAssignm
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | CloudPC.Read.All、CloudPC.ReadWrite.All  |
 
-### <a name="for-device-management-intune-provider"></a>对于 Intune (提供程序的设备) 管理
+### <a name="for-device-management-intune-provider"></a>对于 Intune (设备) 提供程序
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -374,7 +372,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-5-get-a-roleassignmentmultiple-in-a-cloud-pc-provider-with-expand"></a>示例 5：获取云电脑提供商中具有的 roleAssignmentMultiple `$expand`
+### <a name="example-5-get-a-roleassignmentmultiple-in-a-cloud-pc-provider-with-expand"></a>示例 5：在云电脑提供商中获取 roleAssignmentMultiple `$expand`
 
 #### <a name="request"></a>请求
 

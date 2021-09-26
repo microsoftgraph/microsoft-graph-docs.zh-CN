@@ -5,12 +5,12 @@ title: 关注网站列表
 ms.localizationpriority: medium
 ms.prod: SharePoint
 doc_type: apiPageType
-ms.openlocfilehash: 3213043cd020dafb13871b348f768ce4d0e2d212
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6dd5aa30324924127626d2866fa43344265bfbce
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59118891"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764372"
 ---
 # <a name="list-followed-sites"></a>关注网站列表
 
@@ -45,7 +45,7 @@ GET /users/{user-id}/followedSites
 **注意：** 若要访问另一目标用户的已关注网站列表，您需要应用程序权限。
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持使用 [OData 查询参数](/graph/query_parameters)来帮助自定义响应。
+此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 

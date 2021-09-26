@@ -2,15 +2,15 @@
 title: 获取 samlOrWsFedExternalDomainFederation
 description: 读取 samlOrWsFedExternalDomainFederation 对象的属性和关系。
 author: namkedia
-localization_priority: medium
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 2622ab603d45fe85f2101441ea22380a80f41cc8
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: e4bdd9a2d1e4c8e39f1de0159791b265a0d4aeb1
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58697048"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766553"
 ---
 # <a name="get-samlorwsfedexternaldomainfederation"></a>获取 samlOrWsFedExternalDomainFederation
 命名空间：microsoft.graph
@@ -29,7 +29,7 @@ ms.locfileid: "58697048"
 |委派（个人 Microsoft 帐户）| 不支持。|
 |应用程序|Domain.Read.All、Domain.ReadWrite.All|
 
-工作或学校帐户需要属于 Azure AD 角色Azure Active Directory ([之) 之一](/azure/active-directory/roles/permissions-reference)：
+工作或学校帐户需要属于以下 Azure [AD Azure Active Directory (角色) 之一](/azure/active-directory/roles/permissions-reference)：
 
 * 全局管理员
 * 外部标识提供程序管理员
@@ -47,7 +47,7 @@ GET /directory/federationConfigurations/graph.samlOrWsFedExternalDomainFederatio
 
 ## <a name="query-parameters"></a>查询参数
 
-此方法需要 `$filter` OData 查询参数。 若要检索基于[externalDomainName](../resources/externaldomainname.md)的特定[samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md)筛选器，请添加 `?$filter=domains/any(x: x/id eq 'domainName-value')` 。 
+此方法需要 `$filter` OData 查询参数。 若要检索基于[externalDomainName](../resources/externaldomainname.md)的特定[samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md)筛选器，请添加 `?$filter=domains/any(x: x/id eq 'domainName-value')` 。
 
 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
@@ -69,6 +69,8 @@ GET /directory/federationConfigurations/graph.samlOrWsFedExternalDomainFederatio
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_samlorwsfedexternaldomainfederation"
@@ -78,6 +80,24 @@ GET /directory/federationConfigurations/graph.samlOrWsFedExternalDomainFederatio
 ``` http
 GET https://graph.microsoft.com/beta/directory/federationConfigurations/graph.samlOrWsFedExternalDomainFederation?$filter=domains/any(x: x/id eq 'contoso.com')
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-samlorwsfedexternaldomainfederation-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-samlorwsfedexternaldomainfederation-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-samlorwsfedexternaldomainfederation-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-samlorwsfedexternaldomainfederation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

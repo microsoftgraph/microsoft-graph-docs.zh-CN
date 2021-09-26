@@ -1,24 +1,24 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c9dc62d98f70bb745eb9028a61addb2e3cc36cde
-ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
-ms.translationtype: Auto
+ms.openlocfilehash: 666df90af6959066ae5abab89e30d9260010e78b
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45080684"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59763939"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/organization/settings"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/organization/a9f3c90b-04fd-4504-a302-47672bbca6c8/settings"]]];
 [urlRequest setHTTPMethod:@"GET"];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
     completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
-        MSGraphOrganization *organization = [[MSGraphOrganization alloc] initWithData:data error:&nserror];
+        MSGraphOrganizationSettings *organizationSettings = [[MSGraphOrganizationSettings alloc] initWithData:data error:&nserror];
 
 }];
 

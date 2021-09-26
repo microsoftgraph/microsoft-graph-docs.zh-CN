@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: b5b97e89694ab31bb4d771fb9a01b1ce28c3cc9c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e80bc7a94a0375598eaeb2007451504dd9aebaa0
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59015957"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764379"
 ---
 # <a name="get-a-delegated-permission-grant-oauth2permissiongrant"></a>获取 oAuth2PermissionGrant (委派) 
 
@@ -40,7 +40,7 @@ GET /oauth2PermissionGrants/{id}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持使用 [OData 查询参数](/graph/query_parameters)来帮助自定义响应。
+此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 

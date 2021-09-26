@@ -2,15 +2,15 @@
 title: cloudPcOnPremisesConnectionHealthCheck 资源类型
 description: 云电脑本地连接运行状况检查的结果。
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 3b3c2b47dd09c12a07d3adeec74b93a985701e34
-ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
+ms.openlocfilehash: d091f174fa308c44418e5332657f45bbf82cdaf9
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53400871"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767053"
 ---
 # <a name="cloudpconpremisesconnectionhealthcheck-resource-type"></a>cloudPcOnPremisesConnectionHealthCheck 资源类型
 
@@ -19,8 +19,6 @@ ms.locfileid: "53400871"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 云电脑本地连接运行状况检查的结果。
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="methods"></a>方法
 
@@ -33,7 +31,7 @@ ms.locfileid: "53400871"
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|此显示名称检查项目的详细信息。|
-|状态|[cloudPcOnPremisesConnectionStatus](../resources/cloudpconpremisesconnection.md#cloudpconpremisesconnectionstatus-values)|运行状况检查项目的状态。 可取值为：`pending`、`running`、`passed`、`failed`、`unknownFutureValue`。 只读。|
+|status|[cloudPcOnPremisesConnectionStatus](../resources/cloudpconpremisesconnection.md#cloudpconpremisesconnectionstatus-values)|运行状况检查项目的状态。 可取值为：`pending`、`running`、`passed`、`failed`、`unknownFutureValue`。 只读。|
 |startDateTime|DateTimeOffset|运行状况检查项目的开始时间。 只读。|
 |endDateTime|DateTimeOffset|运行状况检查项目的结束时间。 只读。|
 |errorType|[cloudPcOnPremisesConnectionHealthCheckErrorType](#cloudpconpremisesconnectionhealthcheckerrortype-values)|此运行状况检查期间发生的错误类型。|
@@ -46,7 +44,7 @@ ms.locfileid: "53400871"
 |:---|:---|
 |dnsCheckFqdnNotFound|域名的 DNS 解析失败。 可能的错误原因：1. 指定的 Azure vNet DNS 服务器无法解析域名。 请使用相应的 DNS 服务器更新 vNet;2. 提供的域名不存在或不正确。 请使用正确的域名更新本地网络连接。 请确保本地网络连接中定义的 vNet 可以解析域名。|
 |dnsCheckUnknownError|域名的 DNS 解析失败。 可能的错误原因：1. 指定的 Azure vNet DNS 服务器无法解析域名。 请使用相应的 DNS 服务器更新 vNet;2. 提供的域名不存在或不正确。 请使用正确的域名更新本地网络连接。 请确保本地网络连接中定义的 vNet 可以解析域名。|
-|adJoinCheckFqdnNotFound|域加入检查失败，因为找不到域名。 请确保域名的域控制器可通过本地网络连接中定义的 vNet 联系。|
+|adJoinCheckFqdnNotFound|域加入检查失败，因为找不到域名。 请确保可通过本地网络连接中定义的 vNet 联系域名的域控制器。|
 |adJoinCheckIncorrectCredentials|域加入检查失败，因为为域提供的凭据不正确。 请使用正确的凭据更新本地网络连接。|
 |adJoinCheckOrganizationalUnitNotFound|域加入检查失败，因为找不到 (OU) 组织单位。 请在域中提供 OU。 OU 必须采用可分辨名称格式。 示例格式："OU=OU1，OU=OU2，OU=OU3，DC=DC1"。|
 |adJoinCheckOrganizationalUnitIncorrectFormat|域加入检查失败，因为找不到 (OU) 组织单位。 请在域中提供 OU。 OU 必须采用可分辨名称格式。 示例格式："OU=OU1，OU=OU2，OU=OU3，DC=DC1"。|
@@ -58,7 +56,7 @@ ms.locfileid: "53400871"
 |endpointConnectivityCheckIntuneUrlNotAllowListed|预配期间，无法联系一个或多个所需的 Intune URL。 请确保所有所需的 URL 都可以通过防火墙和代理。|
 |endpointConnectivityCheckUnknownError|预配期间，无法联系一个或多个所需的 URL。 请确保所有所需的 URL 都可以通过防火墙和代理。|
 |azureAdDeviceSyncCheckDeviceNotFound|在 Azure AD Azure Active Directory (找不到云电脑) 。 请确保 Azure AD 连接频繁工作并同步，以便云电脑计算机对象同步到 Azure AD。 必须最近 60 分钟内启用和同步 Azure AD 设备同步。|
-|azureAdDeviceSyncCheckLongSyncCircle|检查云电脑计算机对象是否已同步到 Azure AD Azure Active Directory (已) 已退出。请确保 Azure AD 连接频繁工作并同步，以便云电脑计算机对象同步到 Azure AD。 必须最近 60 分钟内启用和同步 Azure AD 设备同步。|
+|azureAdDeviceSyncCheckLongSyncCircle|检查云电脑计算机对象是否已同步到 Azure AD Azure Active Directory (已) Azure AD。请确保 Azure AD 连接频繁工作并同步，以便云电脑计算机对象同步到 Azure AD。 必须最近 60 分钟内启用和同步 Azure AD 设备同步。|
 |azureAdDeviceSyncCheckUnknownError|混合Azure Active Directory (Azure AD) 连接检查失败。 请确保 Azure AD 连接频繁工作并同步，以便云电脑计算机对象同步到 Azure AD。 必须最近 60 分钟内启用和同步 Azure AD 设备同步。|
 |resourceAvailabilityCheckNoSubnetIP|提供的子网没有可用的 IP 地址。 请确保本地网络连接中提供的子网具有足够的可用 IP 地址。 请展开当前选定的子网或选择要用于设置的不同子网。|
 |resourceAvailabilityCheckSubscriptionDisabled|提供的 Azure 订阅已禁用。 请确保 Azure 订阅已启用且可用于预配。|

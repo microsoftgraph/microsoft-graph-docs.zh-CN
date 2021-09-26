@@ -1,16 +1,16 @@
 ---
 title: aggregationOption 资源类型
-description: 指定 aggregationOption 实体
-localization_priority: Normal
+description: 指定应在搜索结果旁边返回哪些聚合
+ms.localizationpriority: medium
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: c18cc1801e5eac76d2fa4396f809ff68f59a78fe
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: c7cf67209fe7b043dcbf391322d3cc65db2a9b3a
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193863"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766017"
 ---
 # <a name="aggregationoption-resource-type"></a>aggregationOption 资源类型
 
@@ -18,15 +18,15 @@ ms.locfileid: "48193863"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指定在搜索结果的旁边应返回哪些聚合。
+指定应在搜索结果旁边返回哪些聚合。
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | 描述 |
-|:-------------|:------------|:------------|
-|字段|字符串|指定应在其上计算聚合的指定实体类型的架构中的字段。 必需。|
-|大小|Int32|要返回的 [searchBucket](searchBucket.md) 资源数。 当在搜索请求中手动提供范围时，这不是必需的。 可选。|
+| 属性     | 类型        | 说明 |
+|:-------------|:------------|:------------| 
 |bucketDefinition|[bucketAggregationDefinition](bucketaggregationdefinition.md)|指定计算聚合的条件。 可选。|
+|字段|String|在当前实体类型中存在字段时计算字段的聚合。 必需。|
+|大小|Int32|要返回 [的 searchBucket](searchBucket.md) 资源的数量。 当搜索请求中手动提供范围时，不需要这样做。 可选。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

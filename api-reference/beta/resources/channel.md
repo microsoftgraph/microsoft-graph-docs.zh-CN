@@ -5,12 +5,12 @@ author: akjo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 1a4640ac18882e7baa3ce94ba83911604843eb85
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: bef523345bfcb3636a66606b87764599dd606554
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696314"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766822"
 ---
 # <a name="channel-resource-type"></a>频道资源类型
 
@@ -47,8 +47,8 @@ ms.locfileid: "58696314"
 |[获取频道中的选项卡](../api/channel-get-tabs.md) | [teamsTab](teamstab.md) | 获取固定到频道的特定选项卡。|
 |[更新频道中的选项卡](../api/channel-patch-tabs.md) | [teamsTab](teamstab.md) | 更新频道中的选项卡的属性。|
 |[从频道中删除选项卡](../api/channel-delete-tabs.md) | 无 | 从频道中删除（取消固定）选项卡。|
-|[预配频道电子邮件地址](../api/channel-provisionemail.md) |[provisionChannelEmailResult](../resources/provisionchannelemailresult.md)| 预配电子邮件地址。|
-|[删除频道电子邮件地址](../api/channel-removeemail.md) | 无 | 删除电子邮件地址。|
+|[预配频道电子邮件地址](../api/channel-provisionemail.md) |[provisionChannelEmailResult](../resources/provisionchannelemailresult.md)| 为频道预配电子邮件地址。|
+|[删除频道电子邮件地址](../api/channel-removeemail.md) | 无 | 删除频道的电子邮件地址。|
 
 ## <a name="properties"></a>属性
 

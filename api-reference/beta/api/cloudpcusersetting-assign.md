@@ -2,15 +2,15 @@
 title: cloudPcUserSetting：assign
 description: 将云电脑用户设置分配给用户组。
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 7e2835e3882705a123626d84395e29d7f402628e
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: a77bd06273476768ec0c4e4e5deaff151808a417
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53533433"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765849"
 ---
 # <a name="cloudpcusersetting-assign"></a>cloudPcUserSetting：assign
 
@@ -19,8 +19,6 @@ ms.locfileid: "53533433"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 将 [cloudPcUserSetting](../resources/cloudpcusersetting.md) 分配给用户组。
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="permissions"></a>权限
 

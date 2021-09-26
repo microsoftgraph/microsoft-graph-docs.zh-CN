@@ -1,16 +1,16 @@
 ---
 title: onPremisesExtensionAttributes 资源类型
 description: user **实体的 onPremisesExtensionAttributes** 属性包含十五个自定义扩展属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: users
 author: jpettere
-ms.openlocfilehash: 902ebfa8efe11613d6622d93ec0d39becc9e9bae
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: d4fb2ca7361234abd5128ed331f1d0c3a9e13420
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52912101"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766360"
 ---
 # <a name="onpremisesextensionattributes-resource-type"></a>onPremisesExtensionAttributes 资源类型
 
@@ -18,7 +18,8 @@ ms.locfileid: "52912101"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-user **实体的 onPremisesExtensionAttributes** 属性包含十五个自定义扩展属性。 [](user.md) 对于 **onPremisesSyncEnabled** 用户，这组属性的颁发机构是同步到 Azure AD 且只读的本地 Active Directory。 对于仅云用户 (**onPremisesSyncEnabled**) ，可以在创建或更新期间设置 `false` [这些属性](../api/user-update.md)。 [](../api/user-post-users.md)
+user **实体的 onPremisesExtensionAttributes** 属性包含十五个自定义扩展属性。 [](user.md) 对于 **onPremisesSyncEnabled** 用户，这组属性的颁发机构是同步到 Azure AD 且只读的本地 Active Directory。 对于仅云用户 (**onPremisesSyncEnabled**) ，可以在创建或更新期间设置 `false` [这些属性](../api/user-update.md)。 [](../api/user-post-users.md) 如果以前从本地 Active Directory 同步了仅云用户，则这些属性无法通过 Microsoft Graph API 进行管理。 相反，可以通过 PowerShell 中的 Exchange管理中心或 Exchange Online V2 模块进行管理。
+
 
 > **注意：** 这些扩展属性也称为自定义Exchange 1-15。
 
