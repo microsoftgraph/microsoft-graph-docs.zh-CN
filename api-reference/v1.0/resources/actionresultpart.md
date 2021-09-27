@@ -1,22 +1,20 @@
 ---
 title: actionResultPart 资源类型
 description: 批量操作模型响应的抽象类型。
-author: AkJo
+author: abshar-teams
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 63a4f05e9096c0abd2bb2f207af2702fed3b47e3
+ms.openlocfilehash: fb09088bfdd298d286447b63453f1965f38a9e6a
 ms.sourcegitcommit: 30fca91ed203a9ab7b0562833ce0c20c7fb7b7b1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/27/2021
-ms.locfileid: "59931960"
+ms.locfileid: "59932059"
 ---
 # <a name="actionresultpart-resource-type"></a>actionResultPart 资源类型
 
 命名空间：microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 作为批量操作响应模型的基础的抽象类型。 error 属性根据响应是否表示错误进行选择性填充。
 
@@ -46,7 +44,6 @@ ms.locfileid: "59931960"
 ```
 ## <a name="see-also"></a>另请参阅
 
-- [aadUserConversationMemberResult](aadUserConversationMemberResult.md)
 - [将成员批量添加到团队](../api/conversationmembers-add.md)
 
 <!-- uuid: 20fd7863-9545-40d4-ae8f-fee2d115a690

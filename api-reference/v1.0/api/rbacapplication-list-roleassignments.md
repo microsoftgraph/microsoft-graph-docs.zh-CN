@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 225961b2323c4db8f8d9588ce9b7bf9c8019c8c9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: cd07f4ad9f343af7a3de1c1b4aff79f4ad527bd1
+ms.sourcegitcommit: 30fca91ed203a9ab7b0562833ce0c20c7fb7b7b1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59130420"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59931981"
 ---
 # <a name="list-unifiedroleassignments"></a>列出 unifiedRoleAssignments
 
 命名空间：microsoft.graph
 
-获取提供商的 [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象列表。
+获取目录提供程序 [的 unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象列表。
 
 ## <a name="permissions"></a>权限
 
@@ -33,8 +33,9 @@ ms.locfileid: "59130420"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /roleManagement/directory/roleAssignments?$filter=roleDefinitionId {eq roleDefinitionId}
-GET /roleManagement/directory/roleAssignments?$filter=principalId {eq principalId}
+GET /roleManagement/directory/roleAssignments?$filter=principalId eq '{principal id}'
+
+GET /roleManagement/directory/roleAssignments?$filter=roleDefinitionId eq '{roleDefinition id}'
 ```
 
 ## <a name="query-parameters"></a>查询参数

@@ -5,12 +5,12 @@ author: AkJo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: cbe965d4a567aaa6464df704c3086d5f793a2558
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9031ec80f735410477021fff3bbfc1aff7ae38d1
+ms.sourcegitcommit: 30fca91ed203a9ab7b0562833ce0c20c7fb7b7b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59134386"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59931953"
 ---
 # <a name="team-resource-type"></a>团队资源类型
 
@@ -36,6 +36,7 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。
 |[删除团队](../api/group-delete.md) | 无 |删除团队及其关联的组。 |
 |[List members](../api/team-list-members.md)|[conversationMember](../resources/conversationmember.md) 集合|获取此团队中的成员列表。|
 |[添加成员](../api/team-post-members.md)|[conversationMember](../resources/conversationmember.md)|向团队中添加新成员。|
+|[批量添加成员](../api/conversationmembers-add.md)|[actionResultPart](../resources/actionresultpart.md) 集合|在单个请求中将多个成员添加到团队中。|
 |[获取成员](../api/team-get-members.md) | [conversationMember](conversationmember.md) 集合 | 获取团队中的成员。|
 |[更新成员角色](../api/team-update-members.md)|[conversationMember](../resources/conversationmember.md)|将成员更改为所有者或返回为常规成员。|
 |[删除成员](../api/team-delete-members.md)|无|删除团队中的一个现有成员。|
@@ -76,7 +77,7 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。
 |:-----------------------|:-------|:-------------------------|
 |@microsoft. graph teamCreationMode|string|指示团队处于迁移状态，并且当前正用于迁移目的。 它接受一个值：`migration`。 **注意**：将来，Microsoft 可能会要求你或你的客户根据导入的数据量支付其他费用。|
 
-有关 POST 请求示例，请参阅[请求（创建处于迁移状态的团队）](https://docs.microsoft.com/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)。
+有关 POST 请求示例，请参阅[请求（创建处于迁移状态的团队）](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)。
 
 ## <a name="relationships"></a>关系
 

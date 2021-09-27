@@ -5,12 +5,12 @@ author: Harini84
 ms.localizationpriority: high
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: b210bff7fe8dafb7ad810fd193955d1b17f2aa6f
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 05d702ed053b5359a480c5838df75988f20849bc
+ms.sourcegitcommit: 30fca91ed203a9ab7b0562833ce0c20c7fb7b7b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766969"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59931995"
 ---
 # <a name="event-resource-type"></a>事件资源类型
 
@@ -82,8 +82,9 @@ ms.locfileid: "59766969"
 |exceptionOccurrences|字符串集合|包含定期系列中的例外事件实例的 **id** 属性值。<br>异常可能不同于定期系列中的其他事件，例如主题、开始或结束时间或与会者。异常不包括已取消的事件。<br><br>仅在 [Get](../api/event-get.md) 操作的 $select 和 $expand 中返回，该操作指定系列母版事件（即 seriesMasterId 属性值）的 ID。|
 |hasAttachments|Boolean|如果事件包含附件，则设置为 true。|
 |hideAttendees|布尔值|如果设置为 `true`，则每个与会者仅会在会议请求和会议 **跟踪** 列表中看到自己。默认值为 False。|
-|id|String| 事件的唯一标识符。 [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] 只读。 |
-|importance|String|事件的重要性。 可取值为：`low`、`normal`、`high`。|
+|iCalUId|字符串|跨日历事件的唯一标识符。 此 ID 对于定期系列中的每个单一事件来说是不同的。 只读。|
+|id|String| 事件的唯一标识符。 [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] 区分大小写和只读。|
+|importance|importance|事件的重要性。 可能的值包括 `low`、`normal`、`high`。|
 |isAllDay|Boolean|如果事件持续整天则设为 true。如果为 true，则无论是单天事件还是多天事件，都必须将开始和结束时间设置为午夜，并且必须处于同一时区。|
 |isCancelled|Boolean|如果事件已取消，则设置为 true。|
 |isDraft|Boolean|如果用户在 Outlook 中更新了会议，但尚未将更新发送给与会者，则设置为 true。 如果所有更改均已发送，或者如果事件是不带任何与会者的约会，则设置为 false。|
