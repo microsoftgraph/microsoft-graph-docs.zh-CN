@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 66a7cac0fcdf63a09daa190549ff442304c1d29d
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: ce8131340ffd07b61fedcf189af90911a322925f
+ms.sourcegitcommit: 84d9a50dfa9526a207696c69d92381c8763d986a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766486"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59979381"
 ---
 # <a name="update-onlinemeeting"></a>更新 onlineMeeting
 
@@ -67,18 +67,18 @@ PATCH /users/{userId}/onlineMeetings/{meetingId}
 | endDateTime                 | 日期时间                                                   | 会议结束时间（UTC）。                                                        | 否                           |
 | subject                     | String                                                     | 联机会议的主题。                                                  | 否                           |
 | participants                | [meetingParticipants](../resources/meetingparticipants.md) | 与联机会议关联的参与者。 仅与会者可以更新。 | 否                           |
-| isEntryExitAnnounced        | Boolean                                                    | 呼叫者加入或离开时是否宣布。                              | 是                          |
+| isEntryExitAnnounced        | 布尔值                                                    | 呼叫者加入或离开时是否宣布。                              | 是                          |
 | lobbyBypassSettings         | [lobbyBypassSettings](../resources/lobbyBypassSettings.md) | 指定哪些参与者可以绕过会议厅。                          | 是                          |
 | allowedPresenters           | onlineMeetingPresenters                                    | 指定可在会议中成为演示者的人。                                      | 是 |
-| allowAttendeeToEnableCamera | Boolean                                                    | 指示与会者是否可以打开其相机。                               | 是                          |
-| allowAttendeeToEnableMic    | Boolean                                                    | 指示与会者是否可以打开其麦克风。                           | 是                          |
+| allowAttendeeToEnableCamera | 布尔值                                                    | 指示与会者是否可以打开其相机。                               | 是                          |
+| allowAttendeeToEnableMic    | 布尔值                                                    | 指示与会者是否可以打开其麦克风。                           | 是                          |
 | allowMeetingChat            | meetingChatMode                                            | 指定会议聊天的模式。                                                 | 是                          |
-| allowTeamworkReactions      | Boolean                                                    | 指示是否Teams会议的反应。                      | 是                          |
+| allowTeamworkReactions      | 布尔值                                                    | 指示是否Teams会议的反应。                      | 是                          |
 
 > [!NOTE]
 >
 >- 有关 **allowedPresenters** 和 **allowMeetingChat** 的可能值的列表，请参阅 [onlineMeeting](../resources/onlinemeeting.md)。
->- 将 **allowedPresenters** 的值更新为 时，在请求正文中包括指定与会者设置为 `roleIsPresenter`  `role` `presenter` 的完整与会者列表。
+>- 将 **allowedPresenters** 的值更新为 时，在请求正文中包括指定与会者的角色设置为 `roleIsPresenter`  `presenter` 的完整与会者列表。
 
 ## <a name="response"></a>响应
 

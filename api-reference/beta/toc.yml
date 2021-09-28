@@ -440,7 +440,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: 发送邮件
                 href: api/user-sendmail.md
-          - name: 注意
+          - name: 注释
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -577,7 +577,7 @@ items:
         items:
           - name: 概述
             href: resources/groups-overview.md
-          - name: Group
+          - name: 组
             href: resources/group.md
             items:
               - name: 列出组
@@ -1914,7 +1914,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报表
+              - name: 报告
                 items:
                   - name: 按打印机组织
                     items:
@@ -1945,7 +1945,7 @@ items:
                     href: api/print-list-services.md
                   - name: 获取
                     href: api/printservice-get.md
-                  - name: 终结点
+                  - name: 端点
                     href: resources/printserviceendpoint.md
                     items:
                       - name: Get endpoint
@@ -11391,7 +11391,7 @@ items:
                 items:
                   - name: 创建邀请
                     href: api/invitation-post.md
-              - name: 组织品牌打造
+              - name: 组织品牌
                 href: resources/organizationalbranding.md
                 items:
                   - name: 获取
@@ -12784,7 +12784,7 @@ items:
                     href: api/personname-update.md
                   - name: 删除
                     href: api/personname-delete.md
-              - name: 注意
+              - name: 注释
                 items:
                   - name: 人员注释
                     href: resources/personannotation.md
@@ -12942,7 +12942,7 @@ items:
             items:
               - name: 项目见解
                 items:
-                  - name: '项目见解 (预览) '
+                  - name: '预览版 (项) '
                     href: resources/iteminsights.md
                   - name: 共享的内容
                     href: resources/insights-shared.md
@@ -13387,6 +13387,29 @@ items:
                     href: api/reportroot-getyammergroupsactivitygroupcounts.md
                   - name: 获取活动计数
                     href: api/reportroot-getyammergroupsactivitycounts.md
+          - name: Microsoft Defender for Office 365安全报告
+            items:
+              - name: 攻击模拟报告
+                displayname: Attack simulation and training
+                href: resources/report-m365defender-reports-overview.md
+              - name: 重复错误
+                items:
+                  - name: 重复错误
+                    href: resources/attacksimulationrepeatoffender.md
+                  - name: 获取重复错误
+                    href: api/reportroot-getattacksimulationrepeatoffenders.md
+              - name: 模拟数据
+                items:
+                  - name: 模拟用户覆盖范围
+                    href: resources/attacksimulationsimulationusercoverage.md
+                  - name: 获取用户的模拟覆盖范围
+                    href: api/reportroot-getattacksimulationsimulationusercoverage.md
+              - name: 培训数据
+                items:
+                  - name: 培训用户覆盖范围
+                    href: resources/attacksimulationtrainingusercoverage.md
+                  - name: 获取用户的培训覆盖范围
+                    href: api/reportroot-getattacksimulationtrainingusercoverage.md
       - name: 搜索
         displayname: Microsoft Search API
         items:
@@ -13461,7 +13484,7 @@ items:
         items:
           - name: 概述
             href: resources/security-api-overview.md
-          - name: 操作
+          - name: '预览 (操作) '
             href: resources/securityaction.md
             items:
               - name: 列出安全操作
@@ -13483,6 +13506,41 @@ items:
                 href: api/alert-update.md
               - name: 更新多个警报
                 href: api/alert-updatealerts.md
+          - name: '攻击模拟和培训 (预览) '
+            items:
+              - name: 模拟
+                items:
+                  - name: 模拟
+                    href: resources/simulation.md
+                  - name: 列出模拟
+                    href: api/attacksimulationroot-list-simulations.md
+                  - name: 列出模拟用户
+                    href: api/usersimulationdetails-list.md
+                  - name: 获取模拟概述
+                    href: api/simulationreportoverview-get.md
+              - name: 报告
+                items:
+                  - name: 攻击模拟报告
+                    displayname: Attack simulation and training
+                    href: resources/report-m365defender-reports-overview.md
+                  - name: 重复错误
+                    items:
+                      - name: 重复错误
+                        href: resources/attacksimulationrepeatoffender.md
+                      - name: 获取重复错误
+                        href: api/reportroot-getattacksimulationrepeatoffenders.md
+                  - name: 模拟数据
+                    items:
+                      - name: 模拟用户覆盖范围
+                        href: resources/attacksimulationsimulationusercoverage.md
+                      - name: 获取用户的模拟覆盖范围
+                        href: api/reportroot-getattacksimulationsimulationusercoverage.md
+                  - name: 培训数据
+                    items:
+                      - name: 培训用户覆盖范围
+                        href: resources/attacksimulationtrainingusercoverage.md
+                      - name: 获取用户的培训覆盖范围
+                        href: api/reportroot-getattacksimulationtrainingusercoverage.md
           - name: 信息保护
             items:
               - name: 标签
@@ -13532,7 +13590,7 @@ items:
                 href: api/securescorecontrolprofiles-list.md
               - name: 更新安全功能控制配置文件
                 href: api/securescorecontrolprofiles-update.md
-          - name: 威胁智能指示器
+          - name: '威胁情报指示器 (预览) '
             href: resources/tiindicator.md
             items:
               - name: 列出
@@ -13592,7 +13650,7 @@ items:
                 href: api/list-create.md
               - name: 列出子网站
                 href: api/site-list-subsites.md
-              - name: Permissions
+              - name: 权限
                 items:
                   - name: 权限
                     href: resources/permission.md
@@ -13708,7 +13766,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: 更新
                     href: api/termstore-store-update.md
-              - name: Group
+              - name: 组
                 href: resources/termstore-group.md
                 items:
                   - name: 创建
@@ -14163,7 +14221,7 @@ items:
                 href: api/team-sendactivitynotification.md
               - name: 向用户发送通知
                 href: api/userteamwork-sendactivitynotification.md
-          - name: Tab
+          - name: 选项卡
             href: resources/teamstab.md
             items:
               - name: 频道中的选项卡

@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 5290eb9b5868de908cef6d26404691bfe2d53ebe
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 32b8df664fa3206511b1bdb0a0f3d5559fd368d0
+ms.sourcegitcommit: 84d9a50dfa9526a207696c69d92381c8763d986a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59767410"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59979402"
 ---
 # <a name="get-onlinemeeting"></a>获取 onlineMeeting
 
@@ -23,7 +23,7 @@ ms.locfileid: "59767410"
 例如，你能够：
 
 - 使用[VideoTeleconferenceId、](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid)[会议 ID](#example-2-retrieve-an-online-meeting-by-meeting-id)或[JoinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl)获取 onlineMeeting 的详细信息。
-- 使用 路径获取下载链接形式的实时事件的与会者报告， `/attendeeReport` 如示例 [4 所示](#example-4-fetch-attendee-report-of-a-live-event)。
+- 使用路径获取下载链接形式的实时事件的与会者报告， `/attendeeReport` 如示例 [4 所示](#example-4-fetch-attendee-report-of-a-live-event)。
 - 使用 和 路径以下载链接的形式获取实时事件的录制，如示例 `/recording` `/alternativeRecording` [5 所示](#example-5-fetch-recording-of-a-live-event)。
 - 使用 路径获取计划会议的会议出席报告， `/meetingAttendanceReport` 如示例 [6 所示](#example-6-fetch-attendance-report-of-an-online-meeting)。
 
@@ -37,7 +37,7 @@ ms.locfileid: "59767410"
 |:---------------------------------------|:---------------------------------------------------------------------------------------|
 | 委派（工作或学校帐户）     | OnlineMeetingArtifact.Read.ALl、OnlineMeetings.Read、OnlineMeetings.ReadWrite          |
 | 委派（个人 Microsoft 帐户） | 不支持。                                                                         |
-| 应用程序                            | OnlineMeetingArtifact.Read.ALl、OnlineMeetings.Read.All、OnlineMeetings.ReadWrite.All  |
+| 应用程序                            | OnlineMeetingArtifact.Read.All、OnlineMeetings.Read.All、OnlineMeetings.ReadWrite.All  |
 
 若要对此 API 使用应用程序权限，租户管理员必须创建应用程序[](/graph/cloud-communication-online-meeting-application-access-policy)访问策略，并授予用户授权策略中配置的应用，以代表该用户 (使用请求路径) 中指定的用户 ID 获取联机会议项目。
 
@@ -83,7 +83,7 @@ GET /me/onlineMeetings/{meetingId}/attendeeReport
 GET /users/{userId}/onlineMeetings/{meetingId}/attendeeReport
 ```
 
-若要通过委派的用户和应用 () `/me` 实时事件 () `/users/{userId}` 权限：
+若要通过委派的用户和应用 () `/me` 实时 () `/users/{userId}` 权限：
 <!-- { "blockType": "ignored" }-->
 
 ```http
