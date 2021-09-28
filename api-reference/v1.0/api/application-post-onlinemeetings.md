@@ -5,45 +5,40 @@ author: mkhribech
 ms.localizationpriority: high
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a5c6848b257964474a590901b092affcdfe627e7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9f0a5e4f19fc06e5407350ef4b5c8372d2ed7a9c
+ms.sourcegitcommit: 84d9a50dfa9526a207696c69d92381c8763d986a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59008438"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59979416"
 ---
 # <a name="create-onlinemeeting"></a>创建 onlineMeeting
 
 命名空间：microsoft.graph
 
-代表用户使用用户令牌中的对象 ID (OID) 创建联机会议。
+代表用户创建联机会议。
 
-> [!NOTE]
-> 会议不会显示在用户的日历上。
+> [!TIP]
+> 此 API 创建与用户日历中的事件不关联的独立会议;因此，通过此 API 创建的会议不会显示在用户的日历上。
 
 ## <a name="permissions"></a>权限
+
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | OnlineMeetings.ReadWrite                    |
 | 委派（个人 Microsoft 帐户） | 不支持                               |
-| 应用程序                            | OnlineMeetings.ReadWrite.All*               |
+| 应用程序                            | OnlineMeetings.ReadWrite.All                |
 
-> [!IMPORTANT]
-> \* 管理员必须创建[应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy)并将其授予用户，才能授权在此策略中配置的应用代表该用户（在请求路径中指定的用户 ID）创建联机会议。
+若要对此 API 使用应用程序权限，租户管理员必须创建一个[应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy)并授予用户授权策略中配置的应用代表该用户（使用请求路径中指定的用户 ID）获取联机会议项目。
 
 ## <a name="http-request"></a>HTTP 请求
 
-使用委派令牌时的请求：
+若要创建具有委派（`/me`）和应用（）权限的联机会议 `/users/{userId}` ，请执行以下操作：
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onlineMeetings
-```
-
-使用应用程序令牌时的请求：
-<!-- { "blockType": "ignored" } -->
-```http
 POST /users/{userId}/onlineMeetings
 ```
 
@@ -65,7 +60,7 @@ POST /users/{userId}/onlineMeetings
 ## <a name="response"></a>响应
 如果成功，此方法将在响应正文中返回 `201 Created` 响应代码和 [onlineMeeting](../resources/onlinemeeting.md) 对象。
 
-## <a name="examples"></a>示例 
+## <a name="examples"></a>示例
 
 ### <a name="example-1-create-an-online-meeting-with-user-token"></a>示例 1：使用用户令牌创建联机会议
 

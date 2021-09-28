@@ -1,15 +1,15 @@
 ---
 title: 设置包含资源数据的更改通知
 description: Microsoft Graph 使用 Webhook 机制将更改通知传递到客户端。 更改通知可以包含资源属性。
-author: davidmu1
+author: Jumaodhiss
 ms.prod: non-product-specific
 ms.localizationpriority: high
-ms.openlocfilehash: f0e1c7698f147c9129cf495dbe3e7e831383a887
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4086189e31dcbe64f9d12aca1204320a3aff4428
+ms.sourcegitcommit: 84d9a50dfa9526a207696c69d92381c8763d986a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59028755"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59979234"
 ---
 # <a name="set-up-change-notifications-that-include-resource-data"></a>设置包含资源数据的更改通知
 
@@ -114,6 +114,9 @@ Content-Type: application/json
 ### <a name="validation-tokens-in-the-change-notification"></a>更改通知中的验证令牌
 
 带有资源数据的更改通知包含一个附加属性 **validationTokens**，其包含 Microsoft Graph 生成的 JWT 令牌数组。 Microsoft Graph 将为每个不同的应用和在 **值** 数组中有项的租户对，生成单独的令牌。 请记住，通知可能包含使用同一 **notificationUrl** 订阅的各种应用和租户的混合项。
+
+> **注意：** 如果要设置 [通过 Azure 事件中心传递的更改通知](change-notifications-delivery.md)，Microsoft Graph将不会发送验证令牌。 Microsoft Graph不需要验证 **notificationUrl**。
+
 
 在以下示例中，更改通知包含同一应用和两个不同租户的两个项目，因此 **validationTokens** 数组包含两个需要验证的令牌。
 
