@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: fe2ea214b1962cd5018c2ea7ba659fda886cfc0d637fff0e766fd549aec01721
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6faff2ceeeb6fa3bf56fcf528b2380eb73a4ce63
+ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57277442"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "59998181"
 ---
 ```objc
 
@@ -26,7 +26,6 @@ NSMutableArray *groupTypesList = [[NSMutableArray alloc] init];
 [group setMailEnabled: true];
 [group setSecurityEnabled: true];
 [group setMailNickname:@"contosohelpdeskadministrators"];
-[group setVisibility:@"Private"];
 
 NSError *error;
 NSData *groupData = [group getSerializedDataWithError:&error];

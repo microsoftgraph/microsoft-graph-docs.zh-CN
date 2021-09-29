@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 30c1c928c2cd98447476edc290b6e3c8936e4e100c4bfe07367cb2c18e3a8294
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2f439b23764e19955eb36cf7970b660663aa8d56
+ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57161242"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "59998187"
 ---
 ```javascript
 
@@ -17,8 +17,8 @@ const client = Client.init(options);
 
 let groups = await client.api('/groups')
     .version('beta')
-    .filter('membershipRuleProcessingState eq \'On\'')
-    .select('id,membershipRule,membershipRuleProcessingState,membershipRuleProcessingStatus')
+    .filter('mailEnabled eq false and securityEnabled eq true and NOT(groupTypes/any(s:s eq \'Unified\')) and membershipRuleProcessingState eq \'On\'')
+    .select('id,membershipRule,membershipRuleProcessingState')
     .get();
 
 ```
