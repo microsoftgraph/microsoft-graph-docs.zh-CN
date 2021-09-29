@@ -2,15 +2,15 @@
 title: 添加 noncustodialDataSource
 description: 通过发布到 noncustodialSources 集合添加 noncustodialSources。
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: b6d3dde3e779aad317e3d2827e602d5097300d22
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 639ee1e0f993b576e7a80ced9258c5f89421ca39
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786788"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59996787"
 ---
 # <a name="add-noncustodialdatasource"></a>添加 noncustodialDataSource
 
@@ -56,7 +56,7 @@ POST /compliance/ediscovery/cases/{caseId}/sourceCollections/{sourceCollectionId
 
 |属性|类型|说明|
 |:---|:---|:---|
-|@odata.id|String|定义空心对象的字符串。 请参阅下面的示例。  @odata.id 可以从 [非custodialDataSource 中检索](../resources/ediscovery-noncustodialdatasource.md)。|
+|@odata.id|字符串|定义空心对象的字符串。 请参阅下面的示例。  @odata.id 可以从 [非custodialDataSource 中检索](../resources/ediscovery-noncustodialdatasource.md)。|
 
 ## <a name="response"></a>响应
 

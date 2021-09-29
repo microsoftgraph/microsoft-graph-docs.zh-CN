@@ -2,15 +2,15 @@
 title: 删除 onlineMeeting
 description: 删除联机会议。
 author: mkhribech
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 991e8f70e2505b230c7091695abe2c594a274fee
-ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
+ms.openlocfilehash: 66833b70cc49ce595204ad72f0adbb8c476822bd
+ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52896534"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "59996001"
 ---
 # <a name="delete-onlinemeeting"></a>删除 onlineMeeting
 
@@ -28,20 +28,14 @@ ms.locfileid: "52896534"
 | 委派（个人 Microsoft 帐户） | 不支持。                              |
 | 应用程序                            | OnlineMeetings.ReadWrite.All*                |
 
-> [!IMPORTANT]
-> \*管理员必须创建应用程序访问[](/graph/cloud-communication-online-meeting-application-access-policy)策略，并授予用户该策略，授权策略中配置的应用代表该用户 (用户 ID（在) 已创建的重新指定路径中指定）删除联机会议。
+若要对此 API 使用应用程序权限，租户管理员必须创建应用程序[](/graph/cloud-communication-online-meeting-application-access-policy)访问策略，并授予用户授权策略中配置的应用代表该用户 (在请求路径) 中指定用户 ID 删除联机会议。
 
 ## <a name="http-request"></a>HTTP 请求
 
-使用委派令牌时的请求
+若要删除使用具有委派权限的会议 ID 的 onlineMeeting， () `/me` 应用 () `/users/{userId}` 权限：
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE https://graph.microsoft.com/beta/me/onlineMeetings/{meetingId}
-```
-
-使用应用程序令牌时的请求：
-<!-- { "blockType": "ignored" } -->
-```http
 DELETE https://graph.microsoft.com/beta/users/{userId}/onlineMeetings/{meetingId}
 ```
 

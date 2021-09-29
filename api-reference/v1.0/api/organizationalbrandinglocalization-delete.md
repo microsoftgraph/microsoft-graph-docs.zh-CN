@@ -5,17 +5,17 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 62df5020c5fb29a2e8987fbc25ec11fd1a5684ee
-ms.sourcegitcommit: 7ce66321abb6a2cdca8685d3ce0a004c376ae33b
+ms.openlocfilehash: d0881fdc9d0559b38bf42d6c3c4686b5c1e13bc9
+ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59778020"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "59995802"
 ---
 # <a name="delete-organizationalbrandinglocalization"></a>删除 organizationalBrandingLocalization
 命名空间：microsoft.graph
 
-删除本地化的品牌对象。 若要删除 [organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) 对象， (Stream 类型) 必须先从该对象中删除。
+删除本地化的品牌对象。 若要删除 [organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) 对象，必须先 (Stream 类型) 所有图像。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -54,6 +54,8 @@ DELETE /organization/{organizationId}/branding/localizations/{organizationalBran
 
 下面是一个请求删除本地化对象 `fr-FR` 的示例。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_organizationalbrandinglocalization"
@@ -62,6 +64,24 @@ DELETE /organization/{organizationId}/branding/localizations/{organizationalBran
 ```http
 DELETE https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr-FR
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-organizationalbrandinglocalization-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-organizationalbrandinglocalization-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-organizationalbrandinglocalization-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-organizationalbrandinglocalization-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

@@ -5,12 +5,12 @@ author: Harini84
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6c663265304772254394f085c6fd2c76ed7530c6
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 5dbf1f073668ee1355f12edce0a25f41535e5788
+ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59507205"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "59996358"
 ---
 # <a name="delete-calendarpermission"></a>删除 calendarPermission
 
@@ -18,7 +18,7 @@ ms.locfileid: "59507205"
 
 删除 calendarPermission。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

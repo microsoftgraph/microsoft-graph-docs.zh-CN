@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: cdb6b2d7eaa8d021f378f7046dec405054502d0a
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 5889af1cda3560a6b1b244443ee77226dfe57f03
+ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59767116"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "59996506"
 ---
 # <a name="virtualendpoint-resource-type"></a>virtualEndpoint 资源类型
 
@@ -37,12 +37,13 @@ ms.locfileid: "59767116"
 |[列出 userSettings](../api/virtualendpoint-list-usersettings.md)|[cloudPcUserSetting](../resources/cloudpcusersetting.md) 集合|从 userSettings 导航属性获取 cloudPcUserSetting 资源。|
 |[创建 cloudPcUserSetting](../api/virtualendpoint-post-usersettings.md)|[cloudPcUserSetting](../resources/cloudpcusersetting.md)|创建新的 cloudPcUserSetting 对象。|
 |[列出 auditEvents](../api/virtualendpoint-list-auditevents.md)|[cloudPcAuditEvent](../resources/cloudpcauditevent.md) 集合|列出 [cloudPcAuditEvent 对象的属性和](../resources/cloudpcauditevent.md) 关系。|
+|[列出 supportedRegions](../api/virtualendpoint-list-supportedregions.md)|[cloudPcSupportedRegion](../resources/cloudpcsupportedregion.md) 集合|列出 [cloudPcSupportedRegion](../resources/cloudpcsupportedregion.md) 对象的属性和关系。|
 
 ## <a name="properties"></a>属性
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|虚拟终结点 ID 的唯一标识符。只读。|
+|id|字符串|虚拟终结点 ID 的唯一标识符。只读。|
 
 ## <a name="relationships"></a>关系
 
@@ -54,6 +55,7 @@ ms.locfileid: "59767116"
 |provisioningPolicies|[cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) 集合|云电脑预配策略。|
 |userSettings|[cloudPcUserSetting](../resources/cloudpcusersetting.md) 集合|云电脑用户设置。 |
 |auditEvents|[cloudPcAuditEvent](../resources/cloudpcauditevent.md) 集合|云电脑审核事件。|
+|supportedRegions|[cloudPcSupportedRegion](../resources/cloudpcsupportedregion.md) 集合|云电脑支持的区域。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

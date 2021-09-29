@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 34c6fa475ab9aba6531aa4573752b10ae4521055
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7ab9efc32e47ccd7088db40ea93600a1d1274ff7
+ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59053432"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "59996695"
 ---
 # <a name="delete-onlinemeeting"></a>删除 onlineMeeting
 
@@ -26,21 +26,16 @@ ms.locfileid: "59053432"
 | 委派（个人 Microsoft 帐户） | 不支持。                         |
 | 应用程序                            | OnlineMeetings.ReadWrite.All*          |
 
-> [!IMPORTANT]
-> \*管理员必须创建应用程序访问[](/graph/cloud-communication-online-meeting-application-access-policy)策略，并授予用户该策略，授权策略中配置的应用代表该用户 (用户 ID（在) 已创建的重新指定路径中指定）删除联机会议。
+若要对此 API 使用应用程序权限，租户管理员必须创建应用程序[](/graph/cloud-communication-online-meeting-application-access-policy)访问策略，并授予用户授权策略中配置的应用代表该用户 (在请求路径) 中指定用户 ID 删除联机会议。
 
 ## <a name="http-request"></a>HTTP 请求
-若要通过具有委派权限的会议 ID 删除指定的 onlineMeeting，请执行以下操作：
+若要使用具有委派权限的会议 ID 获取 onlineMeeting， () `/me` 应用 () `/users/{userId}` 权限：
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/onlineMeetings/{meetingId}
-```
-
-若要通过具有应用程序权限的会议 ID 删除指定的 onlineMeeting，请执行以下操作：
-<!-- { "blockType": "ignored" } -->
-```http
 DELETE /users/{userId}/onlineMeetings/{meetingId}
 ```
+
 > [!NOTE]
 > - `userId` 是 [Azure 用户管理门户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)中用户的对象 ID。 有关详细信息，请参阅应用程序 [访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
 > - `meetingId`是 [onlineMeeting 对象的](../resources/onlinemeeting.md) **ID。**

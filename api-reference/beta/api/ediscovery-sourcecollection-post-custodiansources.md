@@ -2,15 +2,15 @@
 title: 添加 custodianSources
 description: 将实际 dataSource 对象添加到源集合。
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: e044843992bff6f68d01c35a549a6a9b57a61417
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 0f8830b7fe71e297cbbf4b3d470259b83e3e8125
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786003"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59996647"
 ---
 # <a name="add-custodiansources"></a>添加 custodianSources
 
@@ -56,7 +56,7 @@ POST /compliance/ediscovery/cases/{caseId}/sourceCollections/{sourceCollectionId
 
 |属性|类型|说明|
 |:---|:---|:---|
-|@odata.id|String|定义空心对象的字符串。 请参阅下面的示例。|
+|@odata.id|字符串|定义空心对象的字符串。 请参阅下面的示例。|
 
 ## <a name="response"></a>响应
 

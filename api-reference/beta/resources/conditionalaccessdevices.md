@@ -1,16 +1,16 @@
 ---
 title: conditionalAccessDevices 资源类型
 description: 表示策略作用域中的设备。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: cbb542420228a4a383dea4e165323fbb6e8abb17
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: 0c4bc7721566bd8210830e51dbe820b1b44813e1
+ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082354"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "59996365"
 ---
 # <a name="conditionalaccessdevices-resource-type"></a>conditionalAccessDevices 资源类型
 
@@ -24,11 +24,11 @@ ms.locfileid: "53082354"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| includeDevices | String 集合 | 策略作用域中的状态。 `All` 是唯一允许的值。 如果设置了 *deviceFIlter，则不能* 设置。 |
-| excludeDevices | String 集合 | 策略作用域中排除的州。 可能的值 `Compliant` `DomainJoined` ：、。 如果设置了 **deviceFIlter，则不能** 设置。 |
+| includeDevices | String collection | 策略作用域中的状态。 `All` 是唯一允许的值。 如果设置了 *deviceFIlter，则不能* 设置。 |
+| excludeDevices | 字符串集合 | 策略作用域中排除的州。 可能的值 `Compliant` `DomainJoined` ：、。 如果设置了 **deviceFIlter，则不能** 设置。 |
 | deviceFilter | [conditionalAccessFilter](conditionalaccessfilter.md) | 定义要包含/排除设备的动态设备语法规则的筛选器。 筛选器可以使用设备属性 (例如扩展属性) /排除它们。 如果设置了 **includeDevices** 或 **excludeDevices，则不能** 设置。 |
-| includeDeviceStates (弃) | String 集合 | 策略作用域中的状态。 `All` 是唯一允许的值。 |
-| excludeDeviceStates (弃) | String 集合 | 策略作用域中排除的州。 可能的值 `Compliant` `DomainJoined` ：、。 |
+| includeDeviceStates (弃用) | 字符串集合 | 策略作用域中的状态。 `All` 是唯一允许的值。 |
+| excludeDeviceStates (已弃) | 字符串集合 | 策略作用域中排除的州。 可能的值 `Compliant` `DomainJoined` ：、。 |
 
 ## <a name="relationships"></a>关系
 

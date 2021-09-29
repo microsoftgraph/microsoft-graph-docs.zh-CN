@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 3431284ae8e59c12a7d85578089a49c8fbc7012a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7486f4223f8d9a5df1545556ac00c5c1678bbb80
+ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59085509"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "59996498"
 ---
 # <a name="get-onlinemeeting"></a>获取 onlineMeeting
 
@@ -29,11 +29,10 @@ ms.locfileid: "59085509"
 | 委派（个人 Microsoft 帐户） | 不支持。                                        |
 | 应用程序                            | OnlineMeetings.Read.All、OnlineMeetings.ReadWrite.All* |
 
-> [!IMPORTANT]
-> \*管理员必须创建应用程序访问[](/graph/cloud-communication-online-meeting-application-access-policy)策略并授予用户，授权策略中配置的应用代表该用户检索联机会议 (请求路径) 中指定的用户 ID。
+若要对此 API 使用应用程序权限，租户管理员必须创建应用程序[](/graph/cloud-communication-online-meeting-application-access-policy)访问策略，并授予用户授权策略中配置的应用代表该用户 (获取联机会议和/或联机会议项目，请求路径) 中指定了用户 ID。
 
 ## <a name="http-request"></a>HTTP 请求
-若要使用具有委派权限的应用权限的会议 ID 获取 onlineMeeting：
+若要使用具有委派权限的会议 ID 获取 onlineMeeting， () `/me` 应用 () `/users/{userId}` 权限：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}
@@ -66,7 +65,7 @@ GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 ## <a name="request-headers"></a>请求标头
 | 名称          | 说明               |
 |:--------------|:--------------------------|
-| Authorization | 持有者{令牌}。必需。 |
+| Authorization | Bearer {token}。必需。 |
 | Accept-Language  | 语言。 可选。 |
 
 如果请求包含 `Accept-Language` HTTP 标头，`joinInformation` 的 `content` 将采用 `Accept-Language` 标头中指定的语言和区域设置变量中。 默认内容将为英语。
@@ -276,7 +275,7 @@ Content-Type: application/json
 ```
 
 ### <a name="example-3-retrieve-an-online-meeting-by-joinweburl"></a>示例 3：通过 JoinWebUrl 检索联机会议
-您可以使用用户令牌或应用程序令牌通过 JoinWebUrl 检索会议信息。 此选项可用于支持会议 ID 未知但 JoinWebUrl 为的用例，例如，当用户在 Microsoft Teams 客户端) 中创建会议 (，并且单独的应用程序需要检索会议详细信息作为后续操作。
+您可以使用用户令牌或应用程序令牌通过 JoinWebUrl 检索会议信息。 此选项可用于支持会议 ID 未知但 JoinWebUrl 为的用例，例如当用户在 Microsoft Teams 客户端) 中创建会议 (时，单独的应用程序需要检索会议详细信息作为后续操作。
 
 #### <a name="request"></a>请求
 

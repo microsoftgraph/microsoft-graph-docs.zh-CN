@@ -392,7 +392,7 @@ items:
             items:
               - name: 项目见解
                 items:
-                  - name: '预览版 (项) '
+                  - name: '项目见解 (预览) '
                     href: resources/iteminsights.md
                   - name: 共享的列表
                     href: api/insights-list-shared.md
@@ -533,7 +533,7 @@ items:
                 href: api/profile-get.md
               - name: 删除用户的配置文件
                 href: api/profile-delete.md
-          - name: 团队合作
+          - name: Teamwork
             items:
               - name: 已安装的应用
                 href: resources/teamsappinstallation.md
@@ -9755,6 +9755,11 @@ items:
                     href: api/cloudpcusersetting-delete.md
                   - name: Assign
                     href: api/cloudpcusersetting-assign.md
+              - name: 云电脑支持的区域
+                href: resources/cloudpcsupportedregion.md
+                items:
+                  - name: 列出
+                    href: api/virtualendpoint-list-supportedregions.md
           - name: 设备更新（预览）
             displayName: Windows updates
             items:
@@ -11267,7 +11272,7 @@ items:
                             href: api/organization-get.md
                           - name: 更新组织详细信息
                             href: api/organization-update.md
-              - name: 身份保护
+              - name: 标识保护
                 href: resources/identityprotection-root.md
                 items:
                   - name: '已弃 (标识风险) '
@@ -12942,7 +12947,7 @@ items:
             items:
               - name: 项目见解
                 items:
-                  - name: '预览版 (项) '
+                  - name: '项目见解 (预览) '
                     href: resources/iteminsights.md
                   - name: 共享的内容
                     href: resources/insights-shared.md
@@ -13166,7 +13171,7 @@ items:
                     items:
                       - name: 获取通过身份验证方法注册的用户
                         href: api/authenticationmethodsroot-usersregisteredbymethod.md
-          - name: Microsoft 365使用率报告
+          - name: Microsoft 365使用情况报告
             items:
               - name: 概述
                 href: resources/report.md
@@ -13484,7 +13489,7 @@ items:
         items:
           - name: 概述
             href: resources/security-api-overview.md
-          - name: '预览 (操作) '
+          - name: 操作（预览版）
             href: resources/securityaction.md
             items:
               - name: 列出安全操作
@@ -13506,7 +13511,7 @@ items:
                 href: api/alert-update.md
               - name: 更新多个警报
                 href: api/alert-updatealerts.md
-          - name: '攻击模拟和培训 (预览) '
+          - name: 攻击模拟和培训（预览版）
             items:
               - name: 模拟
                 items:
@@ -13590,7 +13595,7 @@ items:
                 href: api/securescorecontrolprofiles-list.md
               - name: 更新安全功能控制配置文件
                 href: api/securescorecontrolprofiles-update.md
-          - name: '威胁情报指示器 (预览) '
+          - name: 威胁情报指示器（预览版）
             href: resources/tiindicator.md
             items:
               - name: 列出
@@ -13817,7 +13822,7 @@ items:
         items:
           - name: 概述
             href: resources/planner-overview.md
-          - name: 计划
+          - name: 规划
             href: resources/plannerplan.md
             items:
               - name: 列出组计划
@@ -14528,7 +14533,7 @@ items:
                 href: api/linkedresource-delete.md
           - name: Outlook 任务（已弃用）
             items:
-              - name: 'Outlook任务 (已弃) '
+              - name: 'Outlook (任务) '
                 items:
                   - name: Outlook 任务
                     href: resources/outlooktask.md

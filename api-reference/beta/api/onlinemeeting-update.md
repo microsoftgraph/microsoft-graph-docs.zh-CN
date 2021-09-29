@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 3075b769342ab4e565679c82da50067ca5137476
-ms.sourcegitcommit: 84d9a50dfa9526a207696c69d92381c8763d986a
+ms.openlocfilehash: 4478c14346ab243ccc317468b00ed2a649891d77
+ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59979437"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "59996639"
 ---
 # <a name="update-onlinemeeting"></a>更新 onlineMeeting
 
@@ -30,7 +30,7 @@ ms.locfileid: "59979437"
 | 委派（个人 Microsoft 帐户） | 不支持。                              |
 | 应用程序                            | OnlineMeetings.ReadWrite.All                |
 
-若要对此 API 使用应用程序权限，租户管理员必须创建应用程序[](/graph/cloud-communication-online-meeting-application-access-policy)访问策略，并授予用户授权策略中配置的应用，以代表该用户 (使用请求路径) 中指定的用户 ID 获取联机会议项目。
+若要对此 API 使用应用程序权限，租户管理员必须创建应用程序[](/graph/cloud-communication-online-meeting-application-access-policy)访问策略，并授予用户授权策略中配置的应用，以代表该用户 (使用请求路径) 中指定的用户 ID 更新联机会议。
 
 ## <a name="http-request"></a>HTTP 请求
 

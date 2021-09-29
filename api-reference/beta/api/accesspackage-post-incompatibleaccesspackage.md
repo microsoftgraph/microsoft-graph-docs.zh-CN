@@ -1,16 +1,16 @@
 ---
 title: 将 accessPackage 添加到 incompatibleAccessPackages
 description: 添加链接以指示访问包与指定的访问包不兼容。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 4ddb6953346a5ea571a480dc073e29dca14cca31
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 1781cc55390eb0080ffb573c3abfc427697a7505
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53439826"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59995442"
 ---
 # <a name="add-accesspackage-to-incompatibleaccesspackages"></a>将 accessPackage 添加到 incompatibleAccessPackages
 

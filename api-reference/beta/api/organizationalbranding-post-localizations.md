@@ -5,12 +5,12 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: e1a3ec11cb558bd53e7f777f76bcef60ef353b31
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: cc6488559253165e85628588afc2b12fea1b2101
+ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59777369"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "59995468"
 ---
 # <a name="create-organizationalbrandinglocalization"></a>创建 organizationalBrandingLocalization
 命名空间：microsoft.graph
@@ -52,7 +52,7 @@ POST /organization/{organizationId}/branding/localizations
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| id | String | 表示 ISO 639-1 标准中指定的区域设置（例如，英语）的标识符 `en-US` 。 无法将 **id** 的值设置为 String 类型或 来创建默认 `0` 品牌 `default` 。  <br/><br/>**注意：** 目前不支持单个区域设置的多个品牌。 |
+| id | 字符串 | 表示 ISO 639-1 标准中指定的区域设置（例如，英语）的标识符 `en-US` 。 无法将 **id** 的值设置为 String 类型或 来创建默认 `0` 品牌 `default` 。  <br/><br/>**注意：** 目前不支持单个区域设置的多个品牌。 |
 
 ## <a name="response"></a>响应
 
@@ -66,6 +66,8 @@ POST /organization/{organizationId}/branding/localizations
 
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_organizationalbrandinglocalization"
@@ -80,6 +82,24 @@ Content-Type: application/json
     "signInPageText": " "
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-organizationalbrandinglocalization-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-organizationalbrandinglocalization-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-organizationalbrandinglocalization-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-organizationalbrandinglocalization-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应
