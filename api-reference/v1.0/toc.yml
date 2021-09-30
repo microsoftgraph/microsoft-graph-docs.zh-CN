@@ -416,7 +416,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: 发送邮件
                 href: api/user-sendmail.md
-          - name: 注释
+          - name: 备注
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -477,7 +477,7 @@ items:
             items:
               - name: 列出任务
                 href: api/planneruser-list-tasks.md
-          - name: 团队合作
+          - name: Teamwork
             items:
               - name: 已安装的应用
                 href: resources/teamsappinstallation.md
@@ -521,7 +521,7 @@ items:
         items:
           - name: 概述
             href: resources/groups-overview.md
-          - name: 组
+          - name: Group
             href: resources/group.md
             items:
               - name: 列出组
@@ -1278,6 +1278,10 @@ items:
                     href: api/participant-mute.md
                   - name: 邀请参与者
                     href: api/participant-invite.md
+                  - name: 开始保持音乐
+                    href: api/participant-startholdmusic.md
+                  - name: 停止保持音乐
+                    href: api/participant-stopholdmusic.md
               - name: 更改屏幕共享角色
                 href: api/call-changescreensharingrole.md
               - name: 取消应用程序静音
@@ -1496,7 +1500,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报告
+              - name: 报表
                 items:
                   - name: 按打印机组织
                     items:
@@ -1527,7 +1531,7 @@ items:
                     href: api/print-list-services.md
                   - name: 获取
                     href: api/printservice-get.md
-                  - name: 终结点
+                  - name: 端点
                     href: resources/printserviceendpoint.md
                     items:
                       - name: Get endpoint
@@ -4789,7 +4793,7 @@ items:
                     href: api/oauth2permissiongrant-delete.md
                   - name: 获取 Delta
                     href: api/oauth2permissiongrant-delta.md
-              - name: 身份保护
+              - name: 标识保护
                 href: resources/identityprotectionroot.md
                 items:
                   - name: 风险检测
@@ -5118,7 +5122,7 @@ items:
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: 删除
                         href: api/identityapiconnector-delete.md
-          - name: 管控
+          - name: 治理
             items:
               - name: 访问审查
                 href: resources/accessreviewsv2-root.md
@@ -5612,7 +5616,7 @@ items:
                 items:
                   - name: 列表预配
                     href: api/provisioningobjectsummary-list.md
-          - name: Microsoft 365使用率报告
+          - name: Microsoft 365使用情况报告
             items:
               - name: 概述
                 href: resources/report.md
@@ -5977,7 +5981,7 @@ items:
                 href: api/list-create.md
               - name: 列出子网站
                 href: api/site-list-subsites.md
-              - name: 权限
+              - name: Permissions
                 href: resources/permission.md
                 items:
                   - name: 获取网站权限
@@ -6071,7 +6075,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: 更新
                     href: api/termstore-store-update.md
-              - name: 组
+              - name: Group
                 href: resources/termstore-group.md
                 items:
                   - name: 列出

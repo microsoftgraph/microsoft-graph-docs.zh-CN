@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 15587804b130a009abc936ceb8af4379f67fcea2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c86c75de4ebf966e1fec02184af35aa4c12d4da7
+ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139357"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "59996030"
 ---
 # <a name="use-postman-with-the-microsoft-graph-connectors-api"></a>将 Postman 与 Microsoft Graph 连接器 API 一并使用
 
@@ -21,36 +21,25 @@ ms.locfileid: "59139357"
 * Microsoft 帐户或者工作或学校帐户。
 * 访问 Microsoft 365 开发人员租户。如果没有，可以注册 [Microsoft 365 开发人员计划]，以获取免费的开发人员订阅。
 
-## <a name="step-1---import-the-microsoft-graph-postman-collection"></a>步骤 1 - 导入 Microsoft Graph Postman 集合
+## <a name="step-1---fork-the-microsoft-graph-postman-collection"></a>步骤 1 - 导入 Microsoft Graph Postman 集合
 
-要使用 Postman 集合，需要将其导入到 Postman 工作区。从 Web 浏览器执行此操作。
+要使用 Postman 集合，需要将其导入到 Postman 工作区。在 Web 浏览器执行此操作。
 
 1. 转到 [Postman](https://identity.getpostman.com/signup) 并登录。 如果已有 Postman 帐户， [登录](https://identity.getpostman.com/login)。
 
-2. 登录后，转到" **工作区**。
+2. 登录后，转到以下 URL：`https://www.postman.com/microsoftgraph/workspace/microsoft-graph/collection/455214-085f7047-1bec-4570-9ed0-3a7253be148`然后选择 Microsoft Graph 集合。
 
-![屏幕截图显示"发布人"中的"工作区"选项卡和"选择我的工作区"的选项](./images/connectors-images/02-postman-my-workspace.png)
+3. 选择右边的三个点，然后选择 **创建分支** 选项。
 
-3. 转到 **"我的工作区"** 后， 选择 **"导入** 按钮。
+![显示 Postman 中 Microsoft Graph 集合和创建分支选项的屏幕截图](./images/connectors-images/16-postman.png)
 
-![一张屏幕截图，显示 Postman 中的"我的工作区"部分和"导入"选项](./images/connectors-images/03-postman-import.png)
+4. 在打开的对话框中，输入标签以标识您的分支。 在"**工作区**"下拉菜单中，选择"**我的工作区**"，然后选择"**分支集合**"。
 
-4. 在打开的对话框中，选择 **链接** 选项卡，然后输入以下 URL - 在文本框中：  `https://www.postman.com/collections/61bfc772fe030514b062`。
+![显示 Postman 中的"分支集合"对话框和用于输入标签选项的屏幕截图，并选择"我的工作区"](./images/connectors-images/17-postman.png)
 
-!["导入"对话框的屏幕截图](./images/connectors-images/04-postman-link.png)
+3. 现在，可以转到"**工作区**  >  ""**我的工作区**"，然后查看创建的分支。 你将在 **应用程序** 下找到 Microsoft Graph连接器文件夹。
 
-5. 选择 **继续**。
-6. 选择“**导入**”。
-
-![输入 URL 后"导入"对话框的屏幕截图](./images/connectors-images/05-postman-link-continue.png)
-
-现在，你应该在 Postman 内看到 Microsoft Graph 连接器 API 集合。
-
-![显示 Postman 中的 Microsoft Graph Connector API 的屏幕截图](./images/connectors-images/06-postman-collection-tab.png)
-
-> [!NOTE]
-> Microsoft Graph connector API 最近已添加到 [Microsoft Graph 邮政编码集合中](https://www.postman.com/microsoftgraph/workspace/microsoft-graph/overview)。
-将很快编辑此文档以改为使用该集合。
+![Postman 中"我的工作区"部分的屏幕截图，其中显示了分支 Microsoft Graph 集合 ](./images/connectors-images/18-postman.png)
 
 ## <a name="step-2---download-the-postman-agent-optional---postman-web-browser-only"></a>步骤 2 - 下载Postman代理（可选 - 仅适用于 Postman Web 浏览器）
 
@@ -88,7 +77,7 @@ ms.locfileid: "59139357"
 
 在 Postman 中设置变量。 此信息用于生成访问令牌。
 
-1. 选择 **Microsoft Graph connectors API** 选项卡，然后转到" **变量** 部分。
+1. 选择 **"Microsoft Graph"** 选项卡，然后转到 **"变量"** 部分。
 
 ![Microsoft Graph 连接器 API 选项卡和"变量"部分屏幕截图](./images/connectors-images/07-postman.png)
 
@@ -108,7 +97,7 @@ ms.locfileid: "59139357"
 
 由于这是你第一次通过应用程序身份验证流程运行请求，你需要获取访问令牌。 通过以下 POST 请求获取应用访问令牌：
 
-!["获取应用访问令牌"分区的屏幕截图](./images/connectors-images/09-postman.png)
+!["获取应用访问令牌"分区的屏幕截图](./images/connectors-images/09a-postman.png)
 
 
 以下示例显示了如何获取共享密码的访问令牌：
@@ -269,29 +258,19 @@ Content-type: application/json
 }
 ```
 
-以下是 **“获取操作状态”** 部分的屏幕截图。
+下面是"**获取连接操作状态**"部分屏幕截图。
 
 ![显示正在进行状态的"获取操作状态"分区的屏幕截图](./images/connectors-images/11-postman.png)
 
 将连接架构操作状态从 **“进行中”** 更改为 **“完成”后，** 您可以提取该连接的项目。
 
-以下屏幕截图显示状态为"已完成"。
-
- ![显示状态已完成的"获取操作状态"分区的屏幕截图](./images/connectors-images/12-postman.png)
-
-以下屏幕截图将状态显示为"草稿"。
-
- ![显示状态草稿的"获取操作状态"分区的屏幕截图](./images/connectors-images/13-postman.png)
-
-连接状态从 **草稿****准备就绪**（如下一个屏幕截图所示）后，您可以将项目放入当前连接。
-
-![显示状态已准备就绪的"获取操作状态"分区的屏幕截图](./images/connectors-images/14-postman.png)
+在连接状态从 **草稿** 变为 **就绪** 后，可以将项目加入当前连接。
 
 ## <a name="step-8---add-external-group-member-optional"></a>步骤 8 - 添加外部团队成员（可选）
 
 如果外部服务使用非 Azure AD ACL，请同步这些权限。  
 
-外部组（以及 Azure Active Directory 用户和组）用于设置 `externalItems` Microsoft Graph 连接的权限。 有关详细信息，请参阅 [externalGroups](/graph/api/resources/externalgroup?view=graph-rest-beta)。
+外部组（以及 Azure Active Directory 用户和组）用于设置 `externalItems` Microsoft Graph 连接的权限。 有关详细信息，请参阅 [externalGroups](/graph/api/resources/externalgroup?view=graph-rest-beta&preserve-view=true)。
 
 这是一个请求示例。
 
@@ -320,10 +299,6 @@ Content-Type: application/json
   "identitySource": "external" 
 } 
 ```
-
-以下屏幕截图显示了 **“创建外部组”** 部分。
-
-!["创建外部组"分区的屏幕截图](./images/connectors-images/15-postman.png)
 
 ## <a name="step-9---ingest-items"></a>步骤 9 - 正在购买项目
 

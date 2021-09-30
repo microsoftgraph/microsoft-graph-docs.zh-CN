@@ -5,22 +5,16 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 0d5a6a9b7dfa9ee0252d1f078ffb4c46304e7efd
-ms.sourcegitcommit: 84d9a50dfa9526a207696c69d92381c8763d986a
+ms.openlocfilehash: 5fdcdc1b7ed0098eb60e6470f34d3fefce6378e9
+ms.sourcegitcommit: cbad97d6a8ccb89b1822b30a11cc9b6f2670deda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59979409"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60016612"
 ---
 # <a name="enum-values"></a>枚举值
 
 命名空间：microsoft.graph
-
-### <a name="authenticatorappfeaturesettings-values"></a>authenticatorAppFeatureSettings 值
-
-|成员|
-|:---|
-|requireNumberMatching|
 
 ### <a name="appcredentialrestrictiontype-values"></a>appCredentialRestrictionType 值
 
@@ -818,13 +812,6 @@ ms.locfileid: "59979409"
 |allow|
 |block|
 |unknownFutureValue|
-
-### <a name="authenticatorappcontexttype-values"></a>authenticatorAppContextType 值
-
-|成员|
-|:---|
-|位置|
-|应用|
 
 ### <a name="anniversarytype-values"></a>anniversaryType 值
 
@@ -1893,7 +1880,7 @@ ms.locfileid: "59979409"
 | 成员   | Int 值 |  说明 |
 |:---------------|:--------|:----------|
 | 无 | 0 |  不允许用户覆盖邮件。 如果未提供策略提示，则不允许用户将邮件报告为误报。 在所有其他方案中，用户可以将邮件报告为误报。|
-| AllowFalsePositiveOverride | 1 |  除非此块与 或 标志组合在一起，否则不允许用户显式 `AllowOverrideWithoutJustification` 替代 `AllowOverrideWithJustification` 块。 报告违反误报会自动覆盖阻止并发送邮件。 |
+| AllowFalsePositiveOverride | 1 |  除非此块与 或 标志组合在一起，否则不允许用户显式 `AllowOverrideWithoutJustification` 覆盖 `AllowOverrideWithJustification` 块。 报告违反误报会自动覆盖阻止并发送邮件。 |
 | AllowOverrideWithoutJustification | 2 | 允许用户覆盖块并发送邮件。 理由文本不是必需的。 独占到 `AllowOverrideWithJustification` 。 |
 | AllowOverrideWithJustification | 4  |  允许用户覆盖块并发送邮件。 理由文本是必需的。 独占到 `AllowOverrideWithoutJustification` 。|
 
@@ -1950,7 +1937,7 @@ ms.locfileid: "59979409"
 | :----- | :---- | :------------------------------------------------------------------------------- |
 | rest   | 0     | 数据处于其余;例如，共享中的文件。                                 |
 | 动作 | 1     | 数据在运动中。 在传输过程中被网络设备截获的文件。         |
-| use    | 2     | 数据在使用中。 文件在客户端应用程序（如客户端应用程序）中Microsoft Office。 |
+| use    | 2     | 数据在使用中。 文件在客户端应用程序（如 Microsoft Office）中打开。 |
 
 ### <a name="assignmentmethod-values"></a>assignmentMethod 值
 
@@ -2258,7 +2245,7 @@ ms.locfileid: "59979409"
 | 成员             | 值 | 说明               |
 | :----------------- | :---- | :------------------------ |
 |oneOnOne            | 0     | 指示聊天为一对一聊天。 对于此类聊天，名单大小是固定的，无法删除/添加成员。                  |
-|组               | 1     | 指示聊天是群聊。 对于此 (，可以更新至少 2) 个用户的名单大小。 稍后可以删除/添加成员。   |
+|组               | 1     | 指示聊天是群聊。 至少 (2 个人) 可以针对此类型的聊天更新名单大小。 稍后可以删除/添加成员。   |
 |meeting             | 2     | 指示聊天是会议聊天，创建为创建 OnlineMeeting 的副作用。  |
 |unknownFutureValue  | 3     | Sentinel 值，用于指示未来值。 |
 
@@ -2301,7 +2288,7 @@ ms.locfileid: "59979409"
 
 |成员    |值    |说明 |
 |:---------|:--------|:----------- |
-|team      |0        |指示Teams应用可以安装在团队中，并有权访问该团队的数据。|
+|团队      |0        |指示Teams应用可以安装在团队中，并有权访问该团队的数据。|
 |groupChat |1        |指示该Teams应用可以安装在群聊中，并有权访问该群聊的数据。|
 |personal  |2        |指示Teams应用可以安装在用户的个人范围内，并有权访问该用户的数据。|
 
@@ -2474,8 +2461,8 @@ ms.locfileid: "59979409"
 
 |成员|
 |:---|
-|team|
-|频道|
+|团队|
+|channel|
 |聊天|
 |unknownFutureValue|
 

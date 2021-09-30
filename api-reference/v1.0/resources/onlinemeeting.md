@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: e07042b485276ab8d8e712d9bf64e32a5771f5c7
-ms.sourcegitcommit: 84d9a50dfa9526a207696c69d92381c8763d986a
+ms.openlocfilehash: 5d1c78ced2396741dfae7184aa260f56ba1d5f07
+ms.sourcegitcommit: cbad97d6a8ccb89b1822b30a11cc9b6f2670deda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59979353"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60016590"
 ---
 # <a name="onlinemeeting-resource-type"></a>onlineMeeting 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "59979353"
 
 包含有关会议的信息，包括用于加入会议的 URL、与会者列表和说明。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法                                                             | 返回类型                       | 说明                                                                                                  |
 | :----------------------------------------------------------------- | :-------------------------------- | :----------------------------------------------------------------------------------------------------------- |
@@ -37,6 +37,7 @@ ms.locfileid: "59979353"
 | allowAttendeeToEnableMic     | 布尔值                       | 指示与会者是否可以打开其麦克风。                          |
 | allowMeetingChat      | [meetingChatMode](#meetingchatmode-values) | 指定会议聊天的模式。 |
 | allowTeamworkReactions | 布尔值 | 指示是否Teams会议的反应。 |
+| attendeeReport | Stream | 实时事件的与会者报告的内容流。 只读。 |
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | 电话访问 (拨入) 联机会议的信息。 只读。                                                   |
 | broadcastSettings              | [broadcastMeetingSettings](broadcastMeetingSettings.md)                      | 设置实时事件相关。                                                                  |
 | chatInfo              | [chatInfo](chatinfo.md)                       | 与此联机会议关联的聊天信息。                                                                  |
@@ -49,6 +50,7 @@ ms.locfileid: "59979353"
 | joinWebUrl            | 字符串                                        | 联机会议加入 URL。 只读。                                                                             |
 | lobbyBypassSettings   | [lobbyBypassSettings](lobbyBypassSettings.md) | 指定哪些参与者可以绕过会议厅。                                                               |
 | participants          | [meetingParticipants](meetingparticipants.md) | 与联机会议关联的参与者。  这包括组织者和与会者。                       |
+| recordAutomatically | 布尔值 | 指示是否自动录制会议。 |
 | startDateTime         | 日期时间                                      | 会议开始时间（UTC）。                                                                                             |
 | subject               | String                                        | 联机会议的主题。                                                                                         |
 | videoTeleconferenceId | 字符串                                        | 视频电话会议 ID。 只读。                                                                                  |
@@ -65,7 +67,7 @@ ms.locfileid: "59979353"
 
 > [!TIP]
 >
->- 创建或更新联机会议时，将 **allowedPresenters** 的值设置为 ，在请求正文中包括指定与会者的角色设置为 `roleIsPresenter` 的与会者 `presenter` 的完整列表。
+>- 创建或更新联机会议时，将 **allowedPresenters** 的值设置为 ，在请求正文中包括指定与会者的角色设置为 的与会者 `roleIsPresenter`  `presenter` 的完整列表。
 >- 创建或更新联机会议时 **，allowedPresenters** 的值设置为除 其他值外，与会者的角色将在响应 `roleIsPresenter`  `null` 正文中显示。
 
 ### <a name="meetingchatmode-values"></a>meetingChatMode 值

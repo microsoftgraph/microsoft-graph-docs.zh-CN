@@ -5,57 +5,74 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 7486f4223f8d9a5df1545556ac00c5c1678bbb80
-ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
+ms.openlocfilehash: 66a6e5e2cb284672a03baf5907b16d1ad39dea2e
+ms.sourcegitcommit: cbad97d6a8ccb89b1822b30a11cc9b6f2670deda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "59996498"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60016618"
 ---
 # <a name="get-onlinemeeting"></a>获取 onlineMeeting
 
 命名空间：microsoft.graph
 
-检索 [onlineMeeting 对象的属性和](../resources/onlinemeeting.md) 关系。 可以使用 [VideoTeleconferenceId、](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid)会议 [ID](#example-2-retrieve-an-online-meeting-by-meeting-id) 或 [JoinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl)获取 onlineMeeting 的详细信息。
+检索 [onlineMeeting 对象的属性和](../resources/onlinemeeting.md) 关系。
 
+例如，你能够：
 
-## <a name="permissions"></a>权限
+- 使用[VideoTeleconferenceId、](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid)[会议 ID](#example-2-retrieve-an-online-meeting-by-meeting-id)或[JoinWebURL 获取联机会议的详细信息](#example-3-retrieve-an-online-meeting-by-joinweburl)。
+- 使用 路径获取下载链接形式的实时事件的与会者报告， `/attendeeReport` 如示例 [4 所示](#example-4-fetch-attendee-report-of-a-live-event)。
+
+实时事件参与者报告是联机会议项目。 有关详细信息，请参阅 [联机会议项目与权限](/graph/cloud-communications-online-meeting-artifacts)。
+
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权）           |
 |:---------------------------------------|:------------------------------------------------------|
-| 委派（工作或学校帐户）     | OnlineMeetings.Read、OnlineMeetings.ReadWrite         |
+| 委派（工作或学校帐户）     | OnlineMeetingArtifact.Read.All、OnlineMeetings.Read、OnlineMeetings.ReadWrite         |
 | 委派（个人 Microsoft 帐户） | 不支持。                                        |
-| 应用程序                            | OnlineMeetings.Read.All、OnlineMeetings.ReadWrite.All* |
+| Application                            | OnlineMeetingArtifact.Read.All、OnlineMeetings.Read.All、OnlineMeetings.ReadWrite.All |
 
 若要对此 API 使用应用程序权限，租户管理员必须创建应用程序[](/graph/cloud-communication-online-meeting-application-access-policy)访问策略，并授予用户授权策略中配置的应用代表该用户 (获取联机会议和/或联机会议项目，请求路径) 中指定了用户 ID。
 
+> [!IMPORTANT]
+> 如果您提取联机会议项目并且没有联机会议项目，则仅需要 _OnlineMeetingArtifact.Read.All_ 权限。 有关详细信息，请参阅 [联机会议项目与权限](/graph/cloud-communications-online-meeting-artifacts)。
+
 ## <a name="http-request"></a>HTTP 请求
-若要使用具有委派权限的会议 ID 获取 onlineMeeting， () `/me` 应用 () `/users/{userId}` 权限：
+若要使用具有委派权限的会议 ID 获取 **onlineMeeting， ()** `/me` 应用 () `/users/{userId}` 权限：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}
 GET /users/{userId}/onlineMeetings/{meetingId}
 ```
 
-若要使用具有应用权限 **的 videoTeleconferenceId** 获取 onlineMeeting*：
+若要使用具有应用权限 **的 videoTeleconferenceId** 获取 **onlineMeeting*：**
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'
 ```
 
-若要使用具有委派权限和应用权限的 **joinWebUrl** 获取 onlineMeeting：
+若要使用具有委派权限和应用权限的 **joinWebUrl** 获取 **onlineMeeting：**
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 ```
 
+若要获取具有委派用户和应用的 () 实时事件的 `/me` 与会者 () `/users/{userId}` 权限：
+<!-- { "blockType": "ignored" }-->
+
+```http
+GET /me/onlineMeetings/{meetingId}/attendeeReport
+GET /users/{userId}/onlineMeetings/{meetingId}/attendeeReport
+```
+
 > [!NOTE]
 > - `userId` 是 [Azure 用户管理门户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)中用户的对象 ID。 有关详细信息，请参阅应用程序 [访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
 > - `meetingId`是 [onlineMeeting 对象的](../resources/onlinemeeting.md) **ID。**
-> - **videoTeleconferenceId** 为 Cloud-Video-Interop 许可用户生成，可在 [onlineMeeting](../resources/onlinemeeting.md) 对象中找到。 有关更多详细信息 [，请参阅 VTC](/microsoftteams/cloud-video-interop-for-teams-set-up) 会议 ID。
+> - **videoTeleconferenceId** 为 Cloud-Video-Interop 许可用户生成，可在 [onlineMeeting](../resources/onlinemeeting.md) 对象中找到。 有关详细信息，请参阅 [VTC 会议 ID](/microsoftteams/cloud-video-interop-for-teams-set-up)。
 > - \* 此方案仅支持应用程序令牌，不支持应用程序访问策略。
 > - `joinWebUrl` 必须经过 URL 编码。
 
@@ -74,7 +91,12 @@ GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和 [onlineMeeting](../resources/onlinemeeting.md) 对象。
+
+如果成功，此方法返回 `200 OK` 响应代码。 该响应还包括下列内容之一：
+
+- 如果通过会议 ID 获取联机会议，此方法在响应正文中返回 [onlineMeeting](../resources/onlinemeeting.md) 对象。
+- 如果通过 **videoTeleconferenceId** 或 **joinWebUrl** 提取联机会议，此方法将返回响应正文中仅包含 [一个 onlineMeeting](../resources/onlinemeeting.md) 对象的集合。
+- 如果获取实时事件的与会者报告，此方法将返回一个标头，指示与会者报告的 `Location` URI。
 
 ## <a name="examples"></a>示例
 
@@ -338,6 +360,43 @@ Content-Type: application/json
         }
     ]
 }
+```
+
+### <a name="example-4-fetch-attendee-report-of-a-live-event"></a>示例 4：获取实时事件的与会者报告
+
+以下示例显示下载与会者报告的请求。
+
+#### <a name="request"></a>请求
+
+以下请求使用委派权限。
+
+<!-- {
+  "blockType": "request",
+  "name": "get_attendee_report"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/attendeeReport
+```
+
+以下请求使用应用程序权限。
+
+<!-- { "blockType": "ignored" }-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/attendeeReport
+```
+
+#### <a name="response"></a>响应
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "name": "get_attendee_report"
+} -->
+
+```http
+HTTP/1.1 302 Found
+Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-5130-43e9-88f3-fcb3582cde37/dc17674c-81d9-4adb-bfb2-8f6a442e4622/19%3Ameeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw%40thread.v2/0/resource/attendeeReport
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
