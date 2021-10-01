@@ -2,15 +2,15 @@
 title: 获取 educationSynchronizationProfile
 description: 根据标识符检索租户中的学校数据同步配置文件。
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 1810fe299b62a52c2b56d9fccb2f312638beff06
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3cbc3890f6009f2205ced2d07b5b8e047d19f04a
+ms.sourcegitcommit: 0ec845f93eaa140ad833ba163c76c5308197a92f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52043106"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60059946"
 ---
 # <a name="get-an-educationsynchronizationprofile"></a>获取 educationSynchronizationProfile
 
@@ -43,7 +43,7 @@ GET /education/synchronizationProfiles/{id}
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -99,12 +99,24 @@ Content-length: 2487
     "dataProvider": {
         "@odata.type": "microsoft.graph.educationCsvDataProvider",
         "customizations": {
+            "school": {
+                "isSyncDeferred": false,
+                "allowDisplayNameUpdate": false
+            },
+            "section": {
+                "optionalPropertiesToSync": [
+                    "Term Name",
+                    "Course Number",
+                    "Periods"
+                ],
+                "isSyncDeferred": false,
+                "allowDisplayNameUpdate": false
+            },
             "student": {
                 "optionalPropertiesToSync": [
                     "State ID",
                     "Middle Name"
                 ],
-                "synchronizationStartDate": "0001-01-01T00:00:00Z",
                 "isSyncDeferred": false,
                 "allowDisplayNameUpdate": false
             },
@@ -118,19 +130,15 @@ Content-length: 2487
                     "Title",
                     "Qualification"
                 ],
-                "synchronizationStartDate": "0001-01-01T00:00:00Z",
                 "isSyncDeferred": false,
                 "allowDisplayNameUpdate": false
             },
             "studentEnrollment": {
-                "optionalPropertiesToSync": [],
                 "synchronizationStartDate": "0001-01-01T00:00:00Z",
                 "isSyncDeferred": false,
                 "allowDisplayNameUpdate": false
             },
             "teacherRoster": {
-                "optionalPropertiesToSync": [],
-                "synchronizationStartDate": "0001-01-01T00:00:00Z",
                 "isSyncDeferred": false,
                 "allowDisplayNameUpdate": false
             }

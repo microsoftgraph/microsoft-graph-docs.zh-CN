@@ -2,15 +2,15 @@
 title: 列出 educationSynchronizationProfiles
 description: 检索租户中学校数据同步配置文件的集合。
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: bb4996140bc0ec7200bedb4243f4eef0f10f080d
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 465361e873cb9cb7cd3ab97373261608e0f93e8b
+ms.sourcegitcommit: 0ec845f93eaa140ad833ba163c76c5308197a92f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52664746"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60068578"
 ---
 # <a name="list-educationsynchronizationprofiles"></a>列出 educationSynchronizationProfiles
 
@@ -112,13 +112,11 @@ Content-length: 3296
                         "GradeHigh",
                         "Principal Name"
                     ],
-                    "synchronizationStartDate": "0001-01-01T00:00:00Z",
                     "isSyncDeferred": false,
                     "allowDisplayNameUpdate": false
                 },
                 "section": {
                     "optionalPropertiesToSync": [],
-                    "synchronizationStartDate": "0001-01-01T00:00:00Z",
                     "isSyncDeferred": false,
                     "allowDisplayNameUpdate": false
                 },
@@ -128,7 +126,6 @@ Content-length: 3296
                         "Email",
                         "Middle Name"
                     ],
-                    "synchronizationStartDate": "0001-01-01T00:00:00Z",
                     "isSyncDeferred": false,
                     "allowDisplayNameUpdate": false
                 },
@@ -137,19 +134,15 @@ Content-length: 3296
                         "Teacher Number",
                         "Middle Name"
                     ],
-                    "synchronizationStartDate": "0001-01-01T00:00:00Z",
                     "isSyncDeferred": false,
                     "allowDisplayNameUpdate": false
                 },
                 "studentEnrollment": {
-                    "optionalPropertiesToSync": [],
                     "synchronizationStartDate": "0001-01-01T00:00:00Z",
                     "isSyncDeferred": false,
                     "allowDisplayNameUpdate": false
                 },
                 "teacherRoster": {
-                    "optionalPropertiesToSync": [],
-                    "synchronizationStartDate": "0001-01-01T00:00:00Z",
                     "isSyncDeferred": false,
                     "allowDisplayNameUpdate": false
                 }
