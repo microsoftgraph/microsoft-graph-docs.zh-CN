@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: high
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 650821d9c79344b879f2fe1f8f4a1eaa608a39e7
-ms.sourcegitcommit: 84d9a50dfa9526a207696c69d92381c8763d986a
+ms.openlocfilehash: bcae8fdc688aa80f10cebef3e83a5c6ebdd8798a
+ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59979255"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "59995473"
 ---
 # <a name="create-onlinemeeting"></a>创建 onlineMeeting
 
@@ -21,7 +21,7 @@ ms.locfileid: "59979255"
 代表用户创建联机会议。
 
 > [!TIP]
-> 此 API 创建与用户日历中的事件不关联的独立会议;因此，通过此 API 创建的会议不会显示在用户的日历上。
+> 此 API 创建与用户日历中任何事件均不关联的独立会议；因此，通过此 API 创建的会议将不会显示在用户的日历上。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -32,7 +32,7 @@ ms.locfileid: "59979255"
 | 委派（个人 Microsoft 帐户） | 不支持。                                        |
 | 应用程序                            | OnlineMeetings.ReadWrite.All*                         |
 
-若要对此 API 使用应用程序权限，租户管理员必须创建一个[应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy)并授予用户授权策略中配置的应用代表该用户（使用请求路径中指定的用户 ID）获取联机会议项目。
+要对此 API 使用应用程序权限，租户管理员必须创建一个 [应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy)，并将其授予用户，以授权策略中配置的应用代表该用户创建联机会议（使用请求路径中指定的用户 ID）。
 
 ## <a name="http-request"></a>HTTP 请求
 

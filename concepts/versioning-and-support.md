@@ -2,12 +2,12 @@
 title: 'Microsoft Graph 的版本控制、支持和重大更改策略 '
 description: 本文介绍了 Microsoft Graph 的支持和重大更改策略，以及当前可用的 Microsoft Graph API 版本。
 ms.localizationpriority: high
-ms.openlocfilehash: e0ccf55cc9c6ec2890704dc5a10d9de862c19e89
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1ecf67a8630c055baf00993e3defbae7f57376da
+ms.sourcegitcommit: cbad97d6a8ccb89b1822b30a11cc9b6f2670deda
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59133980"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60016597"
 ---
 # <a name="versioning-support-and-breaking-change-policies-for-microsoft-graph"></a>Microsoft Graph 的版本控制、支持和中断性变更策略
 
@@ -62,14 +62,15 @@ Microsoft Graph 在版本中进行了许多更改。这些更改已在 [Microsof
 Microsoft Graph 的当前版本为 v1.0。Microsoft Graph API v1.0 版本在 `https://graph.microsoft.com/v1.0` 中公开，包含可正式发布和可用于生产的功能。可以浏览 [v1.0 API 文档](/graph/api/overview?view=graph-rest-1.0&preserve-view=true)。
 
 ## <a name="preview-status"></a>预览状态
-功能或 API 标记为“（预览）”，以表示其行为在 beta 终结点中为 _唯一_。 
+Microsoft Graph 中的 API 或功能标记为“(预览)”，以指示其行为在 Beta 终结点中是 _唯一_ 的。 
 
-v1.0 版本中大多数功能和 API 行为与 Beta 版本相同。 在以下两种情况之一中，“预览”限定了少数功能和 API： 
+v1.0 版本中大多数 API 行为和功能与 Beta 版本相同。 在以下两种情况之一中，“预览”限定了少数 API 和功能： 
 - 仅可在 Beta 中使用
 - Beta 版中提供的内容与 v1.0 不同
 
 与 Beta 终结点中的任何其他 API 一样，在文档中标记为“（预览）”的 API 可能会遇到重大更改，恕不另行通知。 请勿从生产应用程序中的 beta 终结点访问 API。
 
+例如，[攻击模拟培训](/microsoft-365/security/office-365-security/attack-simulation-training?view=o365-worldwide&preserve-view=true)是 [Microsoft 365 Defender 门户](https://security.microsoft.com/)中管理员通常可以使用的一项功能。 当用于攻击模拟培训的 REST API 在 Microsoft Graph 中仅在 Beta 终结点中可用时，REST API [文档](/graph/api/resources/security-api-overview?view=graph-rest-beta&preserve-view=true#attack-simulation-and-training-preview)将标记为“(预览)”。 “(预览)”标签适用于 Microsoft Graph 中的 REST API 及其文档，即使服务本身通常可用。
 
 ### <a name="deprecated-and-unsupported-versions"></a>已弃用和不支持的版本
 
