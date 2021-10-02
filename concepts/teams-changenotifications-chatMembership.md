@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 09babfebfccbd833ca1b969420f5ef3a3c75ba91
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9069a4b2ec82c14c5de0b7bdda91e48b5ae1b53a
+ms.sourcegitcommit: 6ae8c124fac63a195ccf516c9cff739f730b6b13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59138923"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "60084026"
 ---
 # <a name="get-change-notifications-for-chat-membership-using-microsoft-graph"></a>使用 Microsoft Graph 获取聊天成员资格的更改通知
 
@@ -19,6 +19,8 @@ ms.locfileid: "59138923"
 ## <a name="subscribe-to-changes-in-membership-of-any-chat-at-tenant-level"></a>在租户级别订阅任何聊天的成员身份更改
 
 若要获取租户中任何聊天中成员身份更改的更改通知，请订阅 `/chats/getAllMembers`。 此资源支持在通知中[包括资源数据](webhooks-with-resource-data.md)。
+
+[!INCLUDE [teams-model-A-and-B-disclaimer](../includes/teams-model-A-and-B-disclaimer.md)]
 
 ### <a name="permissions"></a>权限
 

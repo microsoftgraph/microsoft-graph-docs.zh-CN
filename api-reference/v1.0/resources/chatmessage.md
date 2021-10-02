@@ -5,12 +5,12 @@ doc_type: resourcePageType
 ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: 46c3962304d17b33d0c09c7e0b47afe0b0ee63f8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ba66bd1d8755f286f1cdda10ee785f410ae88ca1
+ms.sourcegitcommit: 6ae8c124fac63a195ccf516c9cff739f730b6b13
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59094427"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "60084054"
 ---
 # <a name="chatmessage-resource-type"></a>chatMessage 资源类型
 
@@ -39,12 +39,14 @@ ms.locfileid: "59094427"
 |**聊天消息**| | |
 |[列出聊天中的消息](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | 列出聊天中的聊天消息。 |
 |[获取聊天中的消息](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | 获取聊天中的单个聊天消息。 |
+|[获取用户的所有聊天消息](../api/chats-getallmessages.md)| [chat](chat.md) 集合| 从用户是参与者的所有聊天（包括一对一聊天、群聊和会议聊天）获取消息。 |
+|[获取所有频道消息](../api/channel-getallmessages.md)|[channel](channel.md) 集合 | 获取用户参与的所有频道中的所有消息。 |
 |[创建新聊天消息的订阅](../api/subscription-post-subscriptions.md) | [订阅](subscription.md) | 收听新的、编辑的和删除的聊天消息，并响应这些消息。 |
 |[在聊天中发送消息](../api/chat-post-messages.md) | [chatMessage](chatmessage.md)| 在现有的一对一或群组聊天对话中发送聊天消息。|
 |[更新聊天中的消息](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| 更新 **聊天消息的 policyViolation** 属性。|
 |**托管内容**| | |
 |[列出所有托管内容](../api/chatmessage-list-hostedcontents.md) | [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) 集合| 获取与邮件关联的所有托管内容。|
-|[获取托管内容](../api/chatmessagehostedcontent-get.md) | [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) | 获取托管内容 (其字节数) 消息的字节数。|
+|[获取托管内容](../api/chatmessagehostedcontent-get.md) | [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) | 获取托管内容 (及其字节数) 消息的字节数。|
 
 
 ## <a name="properties"></a>属性
@@ -58,7 +60,7 @@ ms.locfileid: "59094427"
 |messageType|chatMessageType|聊天消息的类型。 可能的值包括 `message`、`chatEvent`、`typing`、`unknownFutureValue`、`systemEventMessage`。 请注意，必须使用 `Prefer: include-unknown-enum-members` 请求标头获取此 [可进化枚举](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) 中的以下值: `systemEventMessage`。|
 |createdDateTime|dateTimeOffset|创建聊天消息的时间戳。|
 |lastModifiedDateTime|dateTimeOffset|只读。 创建聊天消息的时间戳 (设置) 修改，包括添加或删除回应时。 |
-|lastEditedDateTime|dateTimeOffset|只读。 编辑聊天消息的时间戳。 在用户界面中触发"已编辑Teams标记。 如果未进行编辑，则值为 `null` 。|
+|lastEditedDateTime|dateTimeOffset|只读。 编辑聊天消息的时间戳。 在用户界面中触发"已编辑"Teams标记。 如果未进行编辑，则值为 `null` 。|
 |deletedDateTime|dateTimeOffset|只读。 删除聊天消息的时间戳，如果未删除，则返回 null。 |
 |subject|string| 纯文本形式的聊天消息的主题。|
 |body|[itemBody](itembody.md)|聊天消息内容的纯文本/HTML 表示形式。 表示形式由正文中的 contentType 进行指定。 如果聊天消息包含 [chatMessageMention](chatmessagemention.md)，则内容始终为 HTML 格式。 |
@@ -68,10 +70,10 @@ ms.locfileid: "59094427"
 |importance|string | 聊天消息的重要性。 可能的值包括 `normal`、`high`、`urgent`。|
 |反应| [chatMessageReaction](chatmessagereaction.md) 集合 | 此聊天消息的反应 (例如，Like) 。|
 |区域设置|string|客户端设置的聊天消息区域设置。 始终设置为 `en-us`。|
-|policyViolation | [chatMessagePolicyViolation](chatmessagepolicyviolation.md) |定义 DLP 应用程序数据丢失防护设置的策略违反 () 属性。|
+|policyViolation | [chatMessagePolicyViolation](chatmessagepolicyviolation.md) |定义 DLP 应用程序中数据丢失防护设置的策略违反 () 的属性。|
 |chatId|string|如果消息是在聊天中发送的，则代表聊天的标识。|
 |channelIdentity|[channelIdentity](channelidentity.md)|如果消息是在频道中发送的，则代表频道的标识。|
-|WebUrl|string|只读。 指向邮件中Microsoft Teams。|
+|webUrl|string|只读。 指向邮件中Microsoft Teams。|
 
 ## <a name="relationships"></a>关系
 

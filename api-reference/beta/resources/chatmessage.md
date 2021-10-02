@@ -2,15 +2,15 @@
 title: chatMessage 资源类型
 description: 表示频道或聊天实体中的单个聊天消息。 聊天消息可以是根聊天消息，也可以是由聊天消息中的 **replyToId** 属性定义的线程的一部分。
 doc_type: resourcePageType
-localization_priority: Normal
+ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: bf79f49c57bcdaf840db2485d82b95f5e3aa32e8
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: 6475d46bfba12ec297b28295243f39da40f54f4a
+ms.sourcegitcommit: 6ae8c124fac63a195ccf516c9cff739f730b6b13
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58667897"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "60083893"
 ---
 # <a name="chatmessage-resource-type"></a>chatMessage 资源类型
 
@@ -42,12 +42,13 @@ ms.locfileid: "58667897"
 |[列出聊天中的消息](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | 列出聊天中的聊天消息。 |
 |[获取聊天中的消息](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | 获取聊天中的单个聊天消息。 |
 |[获取用户的所有聊天消息](../api/chats-getallmessages.md)| [chat](chat.md) 集合| 从用户是参与者的所有聊天获取消息，包括一对一聊天、群聊和会议聊天。 |
+|[获取所有频道消息](../api/channel-getallmessages.md)|[channel](channel.md) 集合 | 获取用户参与的所有频道中的所有消息。 |
 |[创建新聊天消息的订阅](../api/subscription-post-subscriptions.md) | [订阅](subscription.md) | 收听新的、编辑的和删除的聊天消息，并响应这些消息。 |
 |[在聊天中发送消息](../api/chat-post-messages.md) | [chatMessage](chatmessage.md)| 在现有的一对一或群组聊天对话中发送聊天消息。|
 |[更新聊天中的消息](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| 更新 **聊天消息的 policyViolation** 属性。|
 |**托管内容**| | |
 |[列出所有托管内容](../api/chatmessage-list-hostedcontents.md) | [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) 集合| 获取与邮件关联的所有托管内容。|
-|[获取托管内容](../api/chatmessagehostedcontent-get.md) | [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) | 获取托管内容 (其字节数) 消息的字节数。|
+|[获取托管内容](../api/chatmessagehostedcontent-get.md) | [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) | 获取托管内容 (及其字节数) 消息的字节数。|
 
 
 ## <a name="properties"></a>属性
@@ -56,7 +57,7 @@ ms.locfileid: "58667897"
 |:---------------|:--------|:----------|
 |id|String| 只读。 消息的唯一 ID。|
 |replyToId| string | 只读。 线程的父聊天消息或根聊天消息的 ID。  (仅适用于频道中的聊天消息，而仅适用于 chats)  |
-|发件人|[chatMessageFromIdentitySet](chatmessagefromidentityset.md)| 聊天消息的发送者的详细信息。 只能在迁移期间 [进行设置](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)。|
+|起始数量|[chatMessageFromIdentitySet](chatmessagefromidentityset.md)| 聊天消息的发送者的详细信息。 只能在迁移期间 [进行设置](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)。|
 |etag| string | 只读。 聊天消息的版本号。 |
 |messageType|chatMessageType|聊天消息的类型。 可能的值包括 `message`、`chatEvent`、`typing`、`unknownFutureValue`、`systemEventMessage`。 请注意，必须使用 `Prefer: include-unknown-enum-members` 请求标头获取此 [可进化枚举](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) 中的以下值: `systemEventMessage`。|
 |createdDateTime|dateTimeOffset|创建聊天消息的时间戳。|
@@ -74,7 +75,7 @@ ms.locfileid: "58667897"
 |policyViolation | [chatMessagePolicyViolation](chatmessagepolicyviolation.md) |定义 DLP 应用程序中数据丢失防护设置的策略违反 () 属性。|
 |chatId|string|如果消息是在聊天中发送的，则代表聊天的标识。|
 |channelIdentity|[channelIdentity](channelidentity.md)|如果消息是在频道中发送的，则代表频道的标识。|
-|WebUrl|string|只读。 指向邮件中Microsoft Teams。|
+|webUrl|string|只读。 指向邮件中Microsoft Teams。|
 |eventDetail|[eventMessageDetail](../resources/eventmessagedetail.md)|只读。  如果存在，表示聊天、频道或团队中发生的事件的详细信息，例如，已添加成员等。 对于事件消息 **，messageType** 属性将设置为 `systemEventMessage` 。|
 
 ## <a name="relationships"></a>关系

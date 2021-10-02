@@ -392,7 +392,7 @@ items:
             items:
               - name: 项目见解
                 items:
-                  - name: '项目见解 (预览) '
+                  - name: '预览版 (项) '
                     href: resources/iteminsights.md
                   - name: 共享的列表
                     href: api/insights-list-shared.md
@@ -577,7 +577,7 @@ items:
         items:
           - name: 概述
             href: resources/groups-overview.md
-          - name: Group
+          - name: 组
             href: resources/group.md
             items:
               - name: 列出组
@@ -13771,7 +13771,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: 更新
                     href: api/termstore-store-update.md
-              - name: Group
+              - name: 组
                 href: resources/termstore-group.md
                 items:
                   - name: 创建
@@ -14130,6 +14130,8 @@ items:
                 href: api/chatmessage-post-replies.md
               - name: 更新邮件
                 href: api/chatmessage-update.md
+              - name: 跨所有渠道获取消息
+                href: api/channel-getallmessages.md
               - name: 获取所有聊天的消息
                 href: api/chats-getallmessages.md
               - name: 列出托管内容
@@ -14553,7 +14555,7 @@ items:
                     href: api/outlooktask-list-attachments.md
                   - name: 添加附件
                     href: api/outlooktask-post-attachments.md
-              - name: 'Outlook任务文件夹 (已弃) '
+              - name: 'Outlook已 (任务文件夹) '
                 items:
                   - name: Outlook 任务文件夹
                     href: resources/outlooktaskfolder.md

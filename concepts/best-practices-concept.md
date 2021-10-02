@@ -3,12 +3,12 @@ title: 使用 Microsoft Graph 的最佳做法
 description: 本文介绍可用于帮助你的应用程序充分利用 Microsoft Graph 的最佳做法，内容涉及了解 Microsoft Graph、提高应用性能，以及让应用程序对最终用户更具可靠性等。
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 6372ca06843443e3801a0ddcb66006f3720ba1a7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1801586e1ce8e1f0b9798df4275d41ee95a09b9b
+ms.sourcegitcommit: 0ec845f93eaa140ad833ba163c76c5308197a92f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59035519"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60059932"
 ---
 # <a name="best-practices-for-working-with-microsoft-graph"></a>使用 Microsoft Graph 的最佳做法
 
@@ -45,7 +45,7 @@ ms.locfileid: "59035519"
   - 考虑谁将同意你的应用程序（终端用户或管理员），并适当将应用程序配置为[请求权限](/azure/active-directory/develop/active-directory-v2-scopes)。
   - 确保理解[静态、动态和增量同意](/azure/active-directory/develop/active-directory-v2-compare#incremental-and-dynamic-consent)之间的区别。
 
-- **请考虑多租户应用程序**。 预期客户有不同的应用程序和不同状态的同意控件。 例如：
+- **考虑多租户应用程序**。期望客户具有不同状态的各种应用程序和同意控制。例如：
 
   - 租户管理员可以禁用最终用户同意应用程序的功能。 在这种情况下，管理员需要代表他们的用户同意。
   - 租户管理员可以设置自定义授权策略，如阻止用户读取其他用户的配置文件，或者将自助服务组创建限制为一组有限用户。 在这种情况下，应用程序应在代表用户操作的情况下处理 403 错误响应。
@@ -148,6 +148,7 @@ JSON 批处理使你能够通过将多个请求合并为一个单一 JSON 对象
 ## <a name="reliability-and-support"></a>可靠性和支持
 若要确保可靠性并为应用程序提供支持：
 
+- 使用 TLS 1.2 支持 Microsoft Graph 的所有功能。 有关 Microsoft Graph TLS 1.0 和 1.1 弃用的详细信息，请参阅[在环境中启用对 TLS 1.2 的支持](/troubleshoot/azure/active-directory/enable-support-tls-environment)。
 - 接受 DNS TTL 并设置连接 TTL 以进行匹配。 这可确保在故障转移情况下的可用性。
 - 打开到所有播发 DNS 答案的连接。
 - 生成唯一的 GUID 并随每个 Microsoft Graph REST 请求发送。 如果需要报告 Microsoft Graph 的问题，那么这将有助于 Microsoft 更轻松地调查任何错误。

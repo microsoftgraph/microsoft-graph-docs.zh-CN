@@ -3,14 +3,14 @@ title: 更新 chatMessage
 description: 更新 chatMessage 的 policyViolation 属性。
 author: RamjotSingh
 doc_type: apiPageType
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 7de6500a4186871e7ccdbba8c0c07effd0e47d6e
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: c51abaf2928f3602e2bb36ddaef30ffde52e6cae
+ms.sourcegitcommit: 6ae8c124fac63a195ccf516c9cff739f730b6b13
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582667"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "60083923"
 ---
 # <a name="update-chatmessage"></a>更新 chatMessage
 
@@ -18,6 +18,8 @@ ms.locfileid: "51582667"
 
 
 更新 [chatMessage](../resources/chatMessage.md) 对象。 只能更新 **chatMessage** 的 **policyViolation** 属性。
+
+[!INCLUDE [teams-model-A-only-disclaimer](../../includes/teams-model-A-only-disclaimer.md)]
 
 ## <a name="permissions"></a>权限
 
@@ -56,7 +58,7 @@ PATCH /chats/{chatThread-id}/messages/{message-id}
 
 ### <a name="request"></a>请求
 
-下面是请求更新 Microsoft Teams 频道消息中的 **policyViolation** 属性的示例。
+下面是请求更新频道消息上 **policyViolation** 属性Microsoft Teams示例。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

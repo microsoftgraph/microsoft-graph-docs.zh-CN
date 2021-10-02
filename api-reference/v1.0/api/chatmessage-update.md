@@ -5,16 +5,18 @@ author: RamjotSingh
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 53a3eb63de9fbdb5741bfe76f3ff8aed99563d54
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6a07f33e9f9f16a139f3258c34be46e6173ac6f8
+ms.sourcegitcommit: 6ae8c124fac63a195ccf516c9cff739f730b6b13
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59022777"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "60084082"
 ---
 # <a name="update-chatmessage"></a>更新 chatMessage
 
 更新 [chatMessage](../resources/chatMessage.md) 对象。 只能更新 **chatMessage** 的 **policyViolation** 属性。
+
+[!INCLUDE [teams-model-A-only-disclaimer](../../includes/teams-model-A-only-disclaimer.md)]
 
 ## <a name="permissions"></a>权限
 

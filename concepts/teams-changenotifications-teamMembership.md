@@ -5,12 +5,12 @@ author: anandab
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 8f84a824825db4b174ec4b568afd1d0e1fdf2dfa
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 2a69b010885c79dba87ef80a23f035e50d7aec53
+ms.sourcegitcommit: 6ae8c124fac63a195ccf516c9cff739f730b6b13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59764324"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "60084089"
 ---
 # <a name="get-change-notifications-for-membership-changes-in-teams-and-channels-using-microsoft-graph"></a>使用 Microsoft Graph 获取团队和频道中成员身份更改的更改通知
 
@@ -51,6 +51,8 @@ Content-Type: application/json
 ## <a name="subscribe-to-membership-changes-in-all-private-channels-of-a-particular-team"></a>订阅特定团队所有专用频道中的成员资格更改
 
 要获取特定团队中所有专用频道成员资格更改的更改通知，请订阅 `/teams/{team-id}/channels/getAllMembers`。 此资源支持在通知中[包括资源数据](webhooks-with-resource-data.md)。
+
+[!INCLUDE [teams-model-A-and-B-disclaimer](../includes/teams-model-A-and-B-disclaimer.md)]
 
 ### <a name="permissions"></a>权限
 
