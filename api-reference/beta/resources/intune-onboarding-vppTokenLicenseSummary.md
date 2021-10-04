@@ -2,15 +2,15 @@
 title: vppTokenLicenseSummary 资源类型
 description: 令牌中给定应用的许可证摘要。
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 916891d0bd87796007805850cb54bc04cb9dad6d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b442f7968c84f465a86e4ef1a0fc43353a957ac8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789889"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046713"
 ---
 # <a name="vpptokenlicensesummary-resource-type"></a>vppTokenLicenseSummary 资源类型
 
