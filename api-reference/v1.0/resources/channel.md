@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 3f072392c763a9da4a759ebd8978847d659fae4b
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 11752d0a0f86ebbfb5c6e0d1650d15dac6f84a30
+ms.sourcegitcommit: 6ae8c124fac63a195ccf516c9cff739f730b6b13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59765765"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "60084012"
 ---
 # <a name="channel-resource-type"></a>频道资源类型
 
@@ -29,6 +29,7 @@ ms.locfileid: "59765765"
 |[删除频道](../api/channel-delete.md) | 无 | 删除通道。|
 |[获取消息 Delta](../api/chatmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) | 获取频道中的增量消息。 |
 |[列出频道消息](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | 获取频道中的消息 |
+|[获取所有频道消息](../api/channel-getallmessages.md)|[channel](channel.md) 集合 | 获取用户参与的所有频道中的所有消息。 |
 |[创建频道消息发布](../api/channel-post-messages.md) | [chatMessage](../resources/chatmessage.md) | 向频道发送消息。 |
 |[创建回复频道消息发布](../api/chatmessage-post-replies.md) | [chatMessage](../resources/chatmessage.md) | 在频道中回复消息。|
 |[获取文件文件夹](../api/channel-get-filesfolder.md)| [driveItem](driveitem.md) | 检索用于存储频道文件的 SharePoint 文件夹的详细信息。 |
@@ -57,7 +58,7 @@ ms.locfileid: "59765765"
 |isFavoriteByDefault|Boolean|指示是否应对团队的所有成员将频道自动标记到“收藏夹”。 仅可使用“[创建团队](../api/team-post.md)”以编程方式设置。 默认值：`false`。|
 |email|String| 用于向频道发送邮件的电子邮件地址。只读。|
 |webUrl|String|将转到 Microsoft Teams 中的频道的超链接。 在 Microsoft Teams 中右键单击某个频道并选择“获取频道链接”即可获得此 URL。 应将此 URL 视为不透明的 blob，而不对其进行解析。 只读。|
-|membershipType|[channelMembershipType](../resources/enums.md#channelmembershiptype-values)|频道的类型。 可在创建期间设置，但不可更改。 可能的值有：`standard` - 频道继承父团队的成员列表；`private` - 频道可以具有父团队中所有成员的子集的成员。
+|membershipType|[channelMembershipType](../resources/enums.md#channelmembershiptype-values)|通道的类型。可以在创建期间设置，并且不能更改。可能的值为：`standard`- Channel 继承父团队的成员列表；`private`- Channel 可以具有作为父团队中所有成员的子集的成员。
 |createdDateTime|dateTimeOffset|只读。 创建频道的时间戳。|
 
 ### <a name="instance-attributes"></a>实例属性
@@ -66,7 +67,7 @@ ms.locfileid: "59765765"
 
 | 属性名称| 类型   | 说明
 |:-----------------------|:-------|:-------------------------|
-|@microsoft. graph channelCreationMode|string|指示频道处于迁移状态，并且当前正用于迁移目的。 它接受一个值：`migration`。|
+|@microsoft. graph channelCreationMode|string|指示频道处于迁移状态，并且当前正用于迁移目的。它接受一个值：`migration`|
 
 > **注意**：`channelCreationMode` 是采用值 `migration`的枚举。
 

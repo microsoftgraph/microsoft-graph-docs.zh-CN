@@ -444,7 +444,7 @@ items:
             href: teams-configuring-builtin-tabs.md
           - name: 受保护的 API
             href: teams-protected-apis.md
-          - name: 聊天信息订阅许可证
+          - name: 许可和付款要求
             href: teams-licenses.md
           - name: 使用机器人发送主动邮件
             href: /microsoftteams/platform/graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages?context=graph/context

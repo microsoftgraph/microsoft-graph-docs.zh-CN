@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 40b6643e5d1b5008730212ff5239ea9de55f151c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3e62386b6d51c8e6fe97b0ede9f6a21f97f72a8b
+ms.sourcegitcommit: 6ae8c124fac63a195ccf516c9cff739f730b6b13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59071705"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "60083985"
 ---
 # <a name="get-change-notifications-for-messages-in-teams-channels-and-chats-using-microsoft-graph"></a>使用 Microsoft Graph 获取 Teams 频道和聊天中消息的更改通知
 
@@ -20,9 +20,11 @@ ms.locfileid: "59071705"
 
 若要跟踪与租户中的消息相关的所有更改，你可以使用租户级别的订阅来处理频道和聊天消息。 这需要你创建两个订阅：一个用于跟踪[频道](/graph/api/resources/channel?preserve-view=true)中的所有消息，另一个用于跟踪[聊天](/graph/api/resources/chat?preserve-view=true)中的所有消息。
 
-### <a name="subscribe-to-messages-across-channels"></a>跨频道订阅消息
+### <a name="subscribe-to-messages-across-all-channels"></a>跨频道订阅消息
 
 若要在租户中跨频道获取所有消息和答复的更改通知，请订阅 `/teams/getAllMessages`。 此资源支持在通知中[包括资源数据](webhooks-with-resource-data.md)。
+
+[!INCLUDE [teams-model-A-and-B-disclaimer](../includes/teams-model-A-and-B-disclaimer.md)]
 
 #### <a name="permissions"></a>权限
 
@@ -50,9 +52,11 @@ Content-Type: application/json
 }
 ```
 
-### <a name="subscribe-to-messages-across-chats"></a>跨聊天订阅消息
+### <a name="subscribe-to-messages-across-all-chats"></a>跨聊天订阅消息
 
 若要跨租户中的聊天获取所有消息的更改通知，请订阅 `/chats/getAllMessages`。 此资源支持在通知中[包括资源数据](webhooks-with-resource-data.md)。
+
+[!INCLUDE [teams-model-A-and-B-disclaimer](../includes/teams-model-A-and-B-disclaimer.md)]
 
 #### <a name="permissions"></a>权限
 

@@ -5,12 +5,12 @@ author: anandab-msft
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 821c45642ecd50154f8d618496264657b98160b8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a740c6cddf0292e44196bf7b028631d4d24e1c32
+ms.sourcegitcommit: 6ae8c124fac63a195ccf516c9cff739f730b6b13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59138937"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "60084068"
 ---
 # <a name="change-notifications-for-microsoft-teams-resources-using-microsoft-graph"></a>使用 Microsoft Graph 更改 Microsoft Teams 资源的通知
 
@@ -20,7 +20,7 @@ ms.locfileid: "59138937"
 
 ## <a name="change-notification-types"></a>更改通知类型
 Microsoft Teams 支持两种类型的更改通知：
-- **更改通知以跟踪与租户中的资源相关的所有更改** - 例如，你可以订阅租户范围内任何通道中的消息更改，并在租户中的任何通道中创建、更新或删除消息时收到通知。
+- **更改通知以跟踪租户中与资源相关的所有更改** - 例如，你可以订阅租户中任何通道中的消息更改，并在租户中的任何通道中创建、更新或删除消息时收到通知。这些通知可能有 [许可和付款要求](/graph/teams-licenses)，例如 [消息](teams-changenotifications-chatmessage.md)和 [成员资格](teams-changenotifications-chatMembership.md)的更改通知。
 - **更改通知以跟踪特定资源的所有更改** - 例如，你可以订阅特定通道中的消息更改，并在该通道中创建、更新或删除消息时收到通知。
 
 有关哪些资源支持哪些类型的更改通知的详细信息，请参阅 [Microsoft Graph 更改通知](webhooks.md)。
