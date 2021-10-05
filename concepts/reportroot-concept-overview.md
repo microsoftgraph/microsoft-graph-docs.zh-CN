@@ -5,12 +5,12 @@ ms.localizationpriority: high
 ms.prod: reports
 author: sarahwxy
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 4c2f8877cf8252e63bc06002db4bbb0596004447
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ec4077dfb44b4135463412d56ecbb38ec0fd2be4
+ms.sourcegitcommit: 94dc71a6d4fbdc46f2681a1add13416bc9b4a6e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59113495"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60115142"
 ---
 # <a name="microsoft-graph-reports-api-overview"></a>Microsoft Graph 报告 API 概述
 
@@ -62,7 +62,7 @@ Microsoft Graph 中的报告 API 可帮助你了解 Azure Active Directory 租�
 ## <a name="api-reference"></a>API 参考
 在查找此服务的 API 参考？
 
-- [Microsoft Graph beta 中的身份和访问权限报告 API](/graph/api/resources/report-identity-access?view=graph-rest-beta)
+- [Microsoft Graph beta 中的身份和访问报告 API](/graph/api/resources/report-identity-access?view=graph-rest-beta)
 - [Microsoft Graph v1.0 中的 Microsoft 365 使用情况报告 API](/graph/api/resources/report?view=graph-rest-1.0)
 - [Microsoft Graph beta 中的 Microsoft 365 使用情况报告 API](/graph/api/resources/report?view=graph-rest-beta)
 
