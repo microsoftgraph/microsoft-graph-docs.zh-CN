@@ -5,16 +5,33 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 5fdcdc1b7ed0098eb60e6470f34d3fefce6378e9
-ms.sourcegitcommit: cbad97d6a8ccb89b1822b30a11cc9b6f2670deda
+ms.openlocfilehash: 7e815c1164afccd946de20e86d7fd7040f142868
+ms.sourcegitcommit: 2f394a9f33f2fab3634d0f18882985ee211067d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60016612"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60127504"
 ---
 # <a name="enum-values"></a>枚举值
 
 命名空间：microsoft.graph
+
+### <a name="multifactorauthconfiguration-values"></a>multiFactorAuthConfiguration 值
+
+| 成员             | 值 | 说明 |
+|:-------------------|:------| :------|
+| notRequired        | 0     | 用户完成设备注册不需要多重身份验证。|
+| 必需           | 1     | 用户需要多重身份验证才能完成设备注册。|
+| unknownFutureValue | 2     | 可发展枚举 sentinel 值。 请勿使用。|
+
+### <a name="policyscope-values"></a>policyScope 值
+
+| 成员             | 值 | 说明 |
+|:-------------------|:------| :------|
+| 无               | 0     | 该策略不适用于组织的任何用户或组。 |
+| all                | 1     | 该策略适用于组织中所有用户和组。 默认值。 |
+| selected           | 2     | 该策略适用于组织中特定的用户或组。 |
+| unknownFutureValue | 3     | 可发展枚举 sentinel 值。 请勿使用。 |
 
 ### <a name="appcredentialrestrictiontype-values"></a>appCredentialRestrictionType 值
 
@@ -150,11 +167,11 @@ ms.locfileid: "60016612"
 
 |成员|
 |:---|
-|字符串|
+|String|
 |整数|
 |参考|
 |二进制|
-|布尔值|
+|布尔|
 |日期时间|
 
 ### <a name="mutability-values"></a>可变值
@@ -900,7 +917,7 @@ ms.locfileid: "60016612"
 |成员|
 |:---|
 |event|
-|消息|
+|message|
 |driveItem|
 |externalItem|
 |网站|
@@ -1808,7 +1825,7 @@ ms.locfileid: "60016612"
 
 |成员|
 |:---|
-|消息|
+|message|
 |chatEvent |
 |键入 |
 |unknownFutureValue|
@@ -1880,7 +1897,7 @@ ms.locfileid: "60016612"
 | 成员   | Int 值 |  说明 |
 |:---------------|:--------|:----------|
 | 无 | 0 |  不允许用户覆盖邮件。 如果未提供策略提示，则不允许用户将邮件报告为误报。 在所有其他方案中，用户可以将邮件报告为误报。|
-| AllowFalsePositiveOverride | 1 |  除非此块与 或 标志组合在一起，否则不允许用户显式 `AllowOverrideWithoutJustification` 覆盖 `AllowOverrideWithJustification` 块。 报告违反误报会自动覆盖阻止并发送邮件。 |
+| AllowFalsePositiveOverride | 1 |  除非此块与 或 标志组合在一起，否则不允许用户显式 `AllowOverrideWithoutJustification` 替代 `AllowOverrideWithJustification` 块。 报告违反误报会自动覆盖阻止并发送邮件。 |
 | AllowOverrideWithoutJustification | 2 | 允许用户覆盖块并发送邮件。 理由文本不是必需的。 独占到 `AllowOverrideWithJustification` 。 |
 | AllowOverrideWithJustification | 4  |  允许用户覆盖块并发送邮件。 理由文本是必需的。 独占到 `AllowOverrideWithoutJustification` 。|
 
@@ -1889,7 +1906,7 @@ ms.locfileid: "60016612"
 | 成员       |
 |:--------------|
 |event|
-|消息|
+|message|
 |driveItem|
 |externalFile|
 |externalItem|
@@ -1937,7 +1954,7 @@ ms.locfileid: "60016612"
 | :----- | :---- | :------------------------------------------------------------------------------- |
 | rest   | 0     | 数据处于其余;例如，共享中的文件。                                 |
 | 动作 | 1     | 数据在运动中。 在传输过程中被网络设备截获的文件。         |
-| use    | 2     | 数据在使用中。 文件在客户端应用程序（如 Microsoft Office）中打开。 |
+| use    | 2     | 数据在使用中。 文件在客户端应用程序（如客户端应用程序）中Microsoft Office。 |
 
 ### <a name="assignmentmethod-values"></a>assignmentMethod 值
 
@@ -2157,7 +2174,7 @@ ms.locfileid: "60016612"
 |text | 单行文本。 |
 |choice | choice 列 |
 |multichoice | multichoice 列。 |
-|数字 | 数字列。 |
+|number | 数字列。 |
 |currency | currency 列。 |
 |dateTime | dateTime 列。 |
 |查找 | 查找列。 |
@@ -2245,7 +2262,7 @@ ms.locfileid: "60016612"
 | 成员             | 值 | 说明               |
 | :----------------- | :---- | :------------------------ |
 |oneOnOne            | 0     | 指示聊天为一对一聊天。 对于此类聊天，名单大小是固定的，无法删除/添加成员。                  |
-|组               | 1     | 指示聊天是群聊。 至少 (2 个人) 可以针对此类型的聊天更新名单大小。 稍后可以删除/添加成员。   |
+|组               | 1     | 指示聊天是群聊。 可以针对 (聊天至少 2 人) 名单大小。 稍后可以删除/添加成员。   |
 |meeting             | 2     | 指示聊天是会议聊天，创建为创建 OnlineMeeting 的副作用。  |
 |unknownFutureValue  | 3     | Sentinel 值，用于指示未来值。 |
 
@@ -2288,7 +2305,7 @@ ms.locfileid: "60016612"
 
 |成员    |值    |说明 |
 |:---------|:--------|:----------- |
-|团队      |0        |指示Teams应用可以安装在团队中，并有权访问该团队的数据。|
+|团队      |0        |指示Teams应用程序可以安装在团队中，并有权访问该团队的数据。|
 |groupChat |1        |指示该Teams应用可以安装在群聊中，并有权访问该群聊的数据。|
 |personal  |2        |指示Teams应用可以安装在用户的个人范围内，并有权访问该用户的数据。|
 
@@ -2462,7 +2479,7 @@ ms.locfileid: "60016612"
 |成员|
 |:---|
 |团队|
-|channel|
+|频道|
 |聊天|
 |unknownFutureValue|
 

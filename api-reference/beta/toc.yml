@@ -517,7 +517,7 @@ items:
                 href: api/planneruser-list-tasks.md
               - name: 更新设置
                 href: api/planneruser-update.md
-          - name: '预览版的首选语言 (区域) '
+          - name: '预览版的首选语言和区域 () '
             items:
               - name: 区域和语言设置
                 href: resources/regionalandlanguagesettings.md
@@ -1580,7 +1580,7 @@ items:
                   - name: 获取设置
                     href: api/ediscovery-settings-get.md
                   - name: 更新设置
-                    href: ediscovery-settings-update.md
+                    href: api/ediscovery-settings-update.md
                   - name: 重置为默认值
                     href: api/ediscovery-settings-resettodefault.md
                   - name: 列出源集合
@@ -11636,6 +11636,13 @@ items:
                         href: api/continuousaccessevaluationpolicy-get.md
                       - name: 更新
                         href: api/continuousaccessevaluationpolicy-update.md
+                  - name: '设备注册策略 (预览) '
+                    href: resources/deviceregistrationpolicy.md
+                    items:
+                      - name: 获取
+                        href: api/deviceregistrationpolicy-get.md
+                      - name: 更新
+                        href: api/deviceregistrationpolicy-update.md
                   - name: 功能推出策略
                     href: resources/featurerolloutpolicy.md
                     items:
@@ -12973,7 +12980,7 @@ items:
             items:
               - name: 项目见解
                 items:
-                  - name: '项目见解 (预览) '
+                  - name: '预览版 (项) '
                     href: resources/iteminsights.md
                   - name: 共享的内容
                     href: resources/insights-shared.md
@@ -13197,7 +13204,7 @@ items:
                     items:
                       - name: 获取通过身份验证方法注册的用户
                         href: api/authenticationmethodsroot-usersregisteredbymethod.md
-          - name: Microsoft 365使用情况报告
+          - name: Microsoft 365使用率报告
             items:
               - name: 概述
                 href: resources/report.md
