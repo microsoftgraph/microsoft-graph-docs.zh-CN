@@ -3,12 +3,12 @@ author: nkramer
 ms.topic: include
 ms.date: 01/25/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: 9a1c86904767b9cb9f36082d06733b36449fe920
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
-ms.translationtype: HT
+ms.openlocfilehash: 398ba544748b3bf60728eda051059fc6f7e1d517
+ms.sourcegitcommit: 94dc71a6d4fbdc46f2681a1add13416bc9b4a6e9
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59763407"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60115165"
 ---
 <!-- markdownlint-disable MD041-->
 
@@ -19,4 +19,13 @@ ms.locfileid: "59763407"
 具有应用程序权限的 **chatMessage** 订阅包含资源数据，并且需要进行 [加密](/graph/webhooks-with-resource-data)。 如果未指定 [encryptionCertificate](/graph/api/resources/subscription)，则订阅创建将失败。 创建 **chatMessage** 订阅前，必须请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。
 
 > [!NOTE]
-> `/teams/getAllMessages` 和 `/chats/getAllMessages` 可供具有所需 [许可证](https://aka.ms/teams-changenotification-licenses) 的用户使用。将来，Microsoft 可能会要求你或你的客户根据通过 API 访问的数据量支付额外费用。
+>`/teams/getAllMessages``/chats/getAllMessages`和[具有许可和付款要求](/graph/teams-licenses)。
+> `/teams/getAllMessages` 支持 `/chats/getAllMessages` 和 `model=A` `model=B` 查询参数。
+> 如果未指定模型，将使用[评估模式](/graph/teams-licenses#evaluation-mode-default-requirements)。
+
+### <a name="conversationmember"></a>conversationMember
+
+> [!NOTE]
+>`/teams/getAllMembers``/chats/getAllMembers`和[具有许可和付款要求](/graph/teams-licenses)。
+> `/teams/getAllMembers` 支持 `/chats/getAllMembers` 和 `model=A` `model=B` 查询参数。
+> 如果未指定模型，将使用[评估模式](/graph/teams-licenses#evaluation-mode-default-requirements)。

@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: db843fadbf48c307169b5e49df2b81fb1e0bf0f0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b3002535f6530d46fc28158b1c64195527b093d8
+ms.sourcegitcommit: 94dc71a6d4fbdc46f2681a1add13416bc9b4a6e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59143963"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60115380"
 ---
 # <a name="create-message"></a>创建邮件
 
@@ -28,7 +28,7 @@ ms.locfileid: "59143963"
 
 默认情况下，此操作将草稿保存在“草稿”文件夹中。
 
-在后续操作中[发送](/graph/api-reference/beta/api/message-send.md)草稿消息。
+在后续操作中[发送](../api/message-send.md)草稿消息。
 
 或者，通过一次操作[发送新邮件](../api/user-sendmail.md) ，或创建一个草稿以[转发](../api/message-createforward.md)、[答复](../api/message-createreply.md)和[答复所有](../api/message-createreplyall.md)现有邮件。
 

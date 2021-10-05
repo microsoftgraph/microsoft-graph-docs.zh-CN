@@ -1,16 +1,16 @@
 ---
 title: 创建邮件
 description: 采用 JSON 或 MIME 格式创建新邮件的草稿。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4305a14ba2726102427c4f0b4c733656be2fd03b
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 45c5371d7d45cc895835408cc0fc85e920eb1595
+ms.sourcegitcommit: 94dc71a6d4fbdc46f2681a1add13416bc9b4a6e9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52868908"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60115324"
 ---
 # <a name="create-message"></a>创建邮件
 
@@ -31,7 +31,7 @@ ms.locfileid: "52868908"
 
 默认情况下，此操作将草稿保存在“草稿”文件夹中。
 
-在后续操作中[发送](/graph/api-reference/beta/api/message-send.md)草稿消息。
+在后续操作中[发送](../api/message-send.md)草稿消息。
 
 或者，[在单个操作中](../api/user-sendmail.md)发送新邮件，或创建转发草稿，以[](../api/message-createforward.md)[答复](../api/message-createreply.md)或[全部](../api/message-createreplyall.md)答复现有邮件。
 

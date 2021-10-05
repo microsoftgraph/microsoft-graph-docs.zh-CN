@@ -5,12 +5,12 @@ author: abheek-das
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c96d1211a6666d177d6da8c8ad3c166541f81881
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 06dd238ba048b88326089d4fa083d07e4393ce5d
+ms.sourcegitcommit: 94dc71a6d4fbdc46f2681a1add13416bc9b4a6e9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59062927"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60115303"
 ---
 # <a name="message-forward"></a>邮件：转发
 
@@ -20,7 +20,7 @@ ms.locfileid: "59062927"
 
 使用 JSON 格式时，可以：
 - 指定参数的 comment 或 **body** `message` 属性。 指定这两者将返回 HTTP 400 错误请求错误。
-- 指定参数 `toRecipients` 的参数或 **toRecipients** `message` 属性。 指定两者或同时指定两者都将返回 HTTP 400 错误请求错误。
+- 指定参数 `toRecipients` 的参数或 **toRecipients** `message` 属性。 同时指定或指定两者都将返回 HTTP 400 错误请求错误。
 
 使用 MIME 格式时：
 - 提供适用的 [Internet 邮件头](https://tools.ietf.org/html/rfc2076) 和 [MIME 内容](https://tools.ietf.org/html/rfc2045)，所有内容在请求正文中都通过 **base64** 格式进行编码。
@@ -123,7 +123,7 @@ Content-length: 166
   "truncated": true
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 202 Accepted
 ```
 
 ### <a name="example-2-forward-a-message-using-mime-content"></a>示例 2：使用 MIME 内容转发邮件

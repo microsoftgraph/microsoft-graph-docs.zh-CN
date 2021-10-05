@@ -1,6 +1,6 @@
 ---
 author：一位用户，作者：一位用户，她介绍："创建上传会话，以允许应用上传最大文件大小的文件。"
-title： driveItem： createUploadSession localization_priority： Normal ms.prod： "sites-and-lists" doc_type： apiPageType
+title： driveItem： createUploadSession ms.localizationpriority： medium ms.prod： "sites-and-lists" doc_type： apiPageType
 ---
 # <a name="driveitem-createuploadsession"></a>driveItem：createUploadSession
 
@@ -48,8 +48,7 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 
 ### <a name="request-body"></a>请求正文
 
-无需请求正文。
-但是，你可以在请求正文中指定属性，以提供有关正在上传的文件的其他数据，并自定义上传操作的语义。
+不需要任何请求正文。但是，你可以在请求正文中指定属性，以提供有关正在上传的文件的其他数据，并自定义上传操作的语义。
 
 例如， `item` 属性允许设置以下参数：
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.driveItemUploadableProperties" } -->
@@ -87,11 +86,13 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 | 参数            | 类型                          | 说明
 |:---------------------|:------------------------------|:---------------------------------
 | 项                 | [driveItemUploadableProperties](../resources/driveItemUploadableProperties.md) | 有关正在上传的文件的数据
-| deferCommit          | 布尔值                       | 如果设置为 true，则需要发出显式请求才能在目标位置中进行文件的最终创建。 仅适用于 OneDrive for Business。
+| deferCommit          | 布尔值                       | 如果设置为 true，则需要发出显式请求才能在目标位置中进行文件的最终创建。仅在 OneDrive for Business 上。
 
 ### <a name="request"></a>请求
 
 对此请求的响应将提供新建 [uploadSession](../resources/uploadsession.md) 的详细信息，其中包括用于上载部分文件的 URL。 
+
+>**注意：** {item-path} 必须包含请求正文中指定的项目的名称。
 
 <!-- { "blockType": "request", "name": "upload-fragment-create-session", "scopes": "files.readwrite", "target": "action" } -->
 
@@ -131,13 +132,12 @@ Content-Type: application/json
 
 ## <a name="upload-bytes-to-the-upload-session"></a>将字节上传到上传会话
 
-若要上传文件或文件的一部分，你的应用可以对在 **createUploadSession** 响应中收到的 **uploadUrl** 值创建 PUT 请求。
-可以上传整个文件，也可以将文件拆分为多个字节范围，只要任意给定请求的最大字节数少于 60 MiB 即可。
+若要上传文件或文件的一部分，你的应用程序可以对在 **createUploadSession** 响应中收到的 **uploadUrl** 值创建 PUT 请求。你可以上传整个文件，也可以将文件拆分为多个字节范围，只要任意给定请求的最大字节数少于 60 MiB 即可。
 
 必须按顺序上传文件的片段。
 不按顺序上载文件的片段将导致错误。
 
-**注意：** 如果应用将一个文件拆分为多个字节范围，则每个字节范围的大小 **必须** 是 320 KiB（327,680 个字节）的倍数。 如果使用的片断大小不能被 320 KiB 整除，会导致在提交某些文件时出错。
+**注意：** 如果应用将一个文件拆分成多个字节范围，则每个字节范围的大小 **必须** 是 320 KiB（327,680 字节）的倍数。如果使用的片断大小不能被 320 KiB 整除，将导致在提交某些文件时出错。
 
 ### <a name="example"></a>示例
 
@@ -157,8 +157,7 @@ Content-Range: bytes 0-25/128
 <bytes 0-25 of the file>
 ```
 
-**重要说明：** 应用必须确保 **Content-Range** 标头中指定的文件总大小对于所有的请求都相同。
-如果某字节范围声明有不同的文件大小，则请求将失败。
+**重要说明：** 应用程序必须确保 **Content-Range** 标头中指定的文件总大小对于所有的请求都相同。如果某字节范围声明有不同的文件大小，则请求将失败。
 
 ### <a name="response"></a>响应
 
@@ -176,11 +175,9 @@ Content-Type: application/json
 }
 ```
 
-应用可以使用 **nextExpectedRanges** 值来确定开始上传下一字节范围的位置。
-可能会发现指定了多个范围，这些范围指明了服务器尚未收到的文件部分。 如果需要恢复中断的传输，并且客户端不能确定服务的状态，这个方法很有用。
+你的应用程序可以使用 **nextExpectedRanges** 值来确定开始上传下一字节范围的位置。你可能会看到指定的多个范围，指示服务器尚未收到的文件部分。如果需要恢复中断的传输，并且客户端不能确定服务的状态，这个方法很有用。
 
-始终都应根据以下最佳实践确定字节范围大小。 请勿假定 **nextExpectedRanges** 将返回大小范围正确的上传字节范围。
-**nextExpectedRanges** 属性指示尚未收到的文件的范围，而不是应用应上传文件的方式。
+始终都应根据以下最佳实践确定字节范围大小。请勿假定 **nextExpectedRanges** 将返回大小范围正确的上传字节范围。**nextExpectedRanges** 属性指定尚未收到的文件的范围，而不是应用上传文件的方式。
 
 <!-- { "blockType": "ignored", "@odata.type": "microsoft.graph.uploadSession", "truncated": true } -->
 
@@ -340,8 +337,7 @@ Content-Type: application/json
 
 ## <a name="handle-upload-errors"></a>处理上传错误
 
-在上传文件的最后一个字节范围时，可能会出现错误。 这可能是由于名称冲突或超出配额限制所致。
-将保留未到期的上传会话，这允许应用通过显式提交上传会话来恢复上传。
+在上传文件的最后一个字节范围时，可能会出现错误。这可能是由于名称冲突或超出配额限制所致。将保留未到期的上传会话，这允许应用通过显式提交上传会话来恢复上传。
 
 若要显式提交上传会话，应用必须使用将用来提交上传会话的新 **driveItem** 资源发出 PUT 请求。
 此新请求应纠正生成原始上传错误的错误根源。
@@ -393,7 +389,7 @@ Content-Type: application/json
 * 对于其他错误，不应使用指数退避战略，而应限制尝试重试的次数。
 * 通过重新开始整个上传继续上传时，请处理 `404 Not Found` 错误。 这表示上传会话不再存在。
 * 对大于 10 MiB（10,485,760 个字节）的文件使用可恢复文件传输。
-* 最佳的字节范围大小是 10 MiB，可以实现稳定高速连接。 对于速度较慢或不可靠的连接，较小的文件片段大小可能会给你带来更好的结果。 建议使用的片段大小为 5-10 MiB 之间。
+* 最佳的字节范围大小是 10 MiB，可以实现稳定高速连接。对于速度较慢或不可靠的连接，较小的文件片段大小可能会给你带来更好的结果。建议使用的片段大小为 5-10 MiB 之间。
 * 使用 320 KiB（327,680 个字节）倍数的字节范围大小。 如果使用的片段大小不是 320 KiB 的倍数，可能会在上传最后一个字节范围后导致大文件传输失败。
 
 ## <a name="error-responses"></a>错误响应

@@ -1,16 +1,16 @@
 ---
 title: bookingWorkTimeSlot 资源类型
-description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
-localization_priority: Normal
+description: 定义工作的开始时间和结束时间。
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: dadeebfe65a8d502b8a401f551638c09f637625f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7b20514b52cbea033d3a4bccbca6def8f09ce46b
+ms.sourcegitcommit: 94dc71a6d4fbdc46f2681a1add13416bc9b4a6e9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071655"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60115286"
 ---
 # <a name="bookingworktimeslot-resource-type"></a>bookingWorkTimeSlot 资源类型
 
@@ -18,14 +18,14 @@ ms.locfileid: "48071655"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-工作的开始和结束时间。
+定义工作的开始时间和结束时间。
 
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|end|TimeOfDay|一天中开始工作的时间。 例如，08：00：00.0000000。|
-|start|TimeOfDay|一天中停止工作的时间。 例如，17：00：00.0000000。|
+|end|TimeOfDay|一天中停止工作的时间。 例如，17：00：00.0000000。|
+|start|TimeOfDay|一天中工作开始的时间。 例如，08：00：00.0000000。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

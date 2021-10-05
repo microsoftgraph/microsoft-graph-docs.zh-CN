@@ -1,16 +1,16 @@
 ---
 title: 在 Microsoft Graph 中使用 Excel
 description: 你可以使用 Microsoft Graph 来让 Web 和移动应用程序读取和修改存储在 OneDrive、SharePoint 或其他支持的存储平台中的 Excel 工作簿。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: grangery
 ms.prod: excel
 doc_type: conceptualPageType
-ms.openlocfilehash: 74ead11e84eaa1f8e1a716dd714e5c044eaed41f
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 4003c2df1f821d461720dcaf568174beb1466aab
+ms.sourcegitcommit: 94dc71a6d4fbdc46f2681a1add13416bc9b4a6e9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50578064"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60115366"
 ---
 # <a name="working-with-excel-in-microsoft-graph"></a>在 Microsoft Graph 中使用 Excel
 
@@ -25,11 +25,11 @@ ms.locfileid: "50578064"
 返回属于工作簿的工作表对象的集合。    
 
 
-**注意：** Excel REST API 仅支持 Office Open XML 文件格式的工作簿。 不支持扩展名为 `.xls` 的工作簿。 
+**注意：** 该Excel REST API 仅Office Open XML 文件格式的工作簿。 不支持扩展名为 `.xls` 的工作簿。 
 
 ## <a name="authorization-and-scopes"></a>授权和范围
 
-可以使用 [Azure AD v.20 终结点](../index.md) 对 Excel API 进行身份验证。所有 API 都要求提供 `Authorization: Bearer {access-token}` HTTP 标头。   
+可以使用 [Azure AD v.20 终结点](/graph/auth-register-app-v2) 对 Excel API 进行身份验证。所有 API 都要求提供 `Authorization: Bearer {access-token}` HTTP 标头。   
   
 要使用 Excel 资源，需要以下 [权限范围](/graph/permissions-reference) 之一：
 
@@ -1259,7 +1259,7 @@ API 将查找 *单个单元格值*，如果目标区域尺寸与输入区域尺�
 
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /me/drive/root/workbook/worksheets('Sheet1')/range(address="A1:B00")
+PATCH /me/drive/root/workbook/worksheets('Sheet1')/range(address="A1:B100")
 
 {
   "values" : "Sample text"
