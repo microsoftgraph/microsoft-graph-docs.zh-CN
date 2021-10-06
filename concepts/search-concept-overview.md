@@ -5,12 +5,12 @@ ms.localizationpriority: high
 ms.prod: search
 author: snlraju-msft
 scenarios: getting-started
-ms.openlocfilehash: f501f90a8e7b82759db4f54f014de93fc0806047
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 8cf6fd78cdb56523c92bc1d67e69bd0e87b999b4
+ms.sourcegitcommit: 94dc71a6d4fbdc46f2681a1add13416bc9b4a6e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59765163"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60115233"
 ---
 # <a name="overview-of-the-microsoft-search-api-in-microsoft-graph"></a>Microsoft Graph 中的 Microsoft 搜索 API 概述
 
@@ -25,7 +25,7 @@ Microsoft 搜索 API 提供一个统一的搜索终结点，让你使用该终�
 
 ### <a name="include-custom-external-data-in-search-experience"></a>在搜索体验中包括自定义外部数据
 
-使用 [Microsoft Graph 连接器](/microsoftsearch/connectors-overview)将 Microsoft 云之外的数据包含在你的搜索体验中。 例如，连接到组织的人力资源数据库或产品目录。 然后使用 Microsoft 搜索 API 无缝[查询](/graph/api/search-query)外部数据源。 
+使用 [Microsoft Graph 连接器](/microsoftsearch/connectors-overview)，在你的搜索体验中包括 Microsoft 云之外的数据。例如，连接到某个组织的人力资源数据库或产品目录。然后，使用 Microsoft 搜索 API 无缝[查询](/graph/api/search-query)外部数据源。 
 
 浏览 [Microsoft Graph 连接器库](/microsoftsearch/connectors-gallery)以查找随时可用的连接器。 或者，你可以[生成自己的连接器](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true#common-use-cases)，为外部自定义项目创建索引并查询特定外部数据源。
 

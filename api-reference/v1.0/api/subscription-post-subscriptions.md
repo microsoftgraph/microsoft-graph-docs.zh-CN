@@ -1,16 +1,16 @@
 ---
 title: 创建订阅
 description: 订阅侦听器应用程序，以在 Microsoft Graph 中的数据发生更改时接收更改通知。
-localization_priority: Priority
+ms.localizationpriority: high
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: apiPageType
-ms.openlocfilehash: 239de6da37b9e795c5b0c2eec359f0b4b457f5f4
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: 6f34ac4f2adc6042642c095280f299d39b9bc71d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52912052"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "60115164"
 ---
 # <a name="create-subscription"></a>创建订阅
 
@@ -131,8 +131,7 @@ Content-type: application/json
 ---
 
 
-在请求正文中，提供 [subscription](../resources/subscription.md) 对象的 JSON 表示形式。
-`clientState` 和 `latestSupportedTlsVersion` 是可选字段。
+在请求正文中，提供 [subscription](../resources/subscription.md) 对象的 JSON 表示形式。`clientState` 和 `latestSupportedTlsVersion` 字段是可选的。
 
 ##### <a name="resources-examples"></a>资源示例
 

@@ -5,16 +5,16 @@ ms.localizationpriority: high
 author: grangery
 ms.prod: excel
 doc_type: conceptualPageType
-ms.openlocfilehash: 877c2b34b24d77b145a539abff5ca72b51470163
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: cf035bc3d9cef6442a220bc14de6f9a0c81f589a
+ms.sourcegitcommit: 94dc71a6d4fbdc46f2681a1add13416bc9b4a6e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59123571"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60115149"
 ---
 # <a name="working-with-excel-in-microsoft-graph"></a>在 Microsoft Graph 中使用 Excel
 
-你可以使用 Microsoft Graph 来让 Web 和移动应用程序读取和修改存储在 OneDrive for Business、SharePoint 网站或组驱动器中的 Excel 工作簿。 `Workbook`（或 Excel 文件）资源通过关系包含所有其他 Excel 资源。 可以通过识别文件在该 URL 中的位置，借助 [驱动器 API](drive.md) 访问工作簿。 例如：
+可以使用 Microsoft Graph，让 Web 和移动应用都能读取和修改在 OneDrive for Business、SharePoint 网站或组驱动器中存储的 Excel 工作簿。`Workbook`（或 Excel 文件）资源通过关系包含其他所有 Excel 资源。可以确定文件在 URL 中的位置，从而使用[驱动器 API](drive.md) 访问工作簿。例如：
 
 `https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/`  
 `https://graph.microsoft.com/v1.0/me/drive/root:/{item-path}:/workbook/`  
@@ -29,7 +29,7 @@ Excel REST API 仅支持 Office Open XML 文件格式的工作簿。 不支持�
 
 ## <a name="authorization-and-scopes"></a>授权和范围
 
-可以使用 [Azure AD v.2 终结点](/graph/auth-register-app-v2)对 Excel API 进行身份验证。 所有 API 都要求提供 `Authorization: Bearer {access-token}` HTTP 标头。   
+可以使用 [Azure AD v.2 终结点](/graph/auth-register-app-v2)对 Excel API 进行身份验证。所有 API 都要求提供 `Authorization: Bearer {access-token}` HTTP 标头。   
   
 要使用 Excel 资源，需要以下[权限范围](/graph/permissions-reference)之一：
 
@@ -41,7 +41,7 @@ Excel REST API 仅支持 Office Open XML 文件格式的工作簿。 不支持�
 
 可以在以下三个模式之一下调用 Excel API： 
 
-1. 永久会话 - 保持（保存）对工作簿所做的全部更改。 这是效率和性能最高的操作模式。 
+1. 永久会话 - 保持（保存）对工作簿所做的全部更改。这是最有效、性能最强的操作模式。 
 2. 非永久会话 - 不会将 API 所做的更改保存到源位置。相反，Excel 后端服务器保留文件的临时副本，体现在特定 API 会话期间所做的更改。Excel 会话过期时，这些更改将丢失。此模式可用于需要进行分析或获得计算结果或图表图像的应用，但不会影响文档状态。 
 3. 无会话 - 在不使用会话信息的情况下进行 API 调用。 每次执行操作时，Excel 服务器都需要查找服务器的工作簿副本，因此这不是调用 Excel API 的高效方式。 它适用于发出一次性请求。 
 
@@ -1262,7 +1262,7 @@ API 将查找 *单个单元格值*，如果目标区域尺寸与输入区域尺�
 
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /me/drive/root/workbook/worksheets/{id}/range(address="A1:B00")
+PATCH /me/drive/root/workbook/worksheets/{id}/range(address="A1:B100")
 
 {
   "values" : "Sample text"

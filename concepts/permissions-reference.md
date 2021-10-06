@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: eb6644eae1f41f3eb5422a385720f22d88b0aa19
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 913188d1bbdc8949f08f90e95a573ce811d82bd4
+ms.sourcegitcommit: 94dc71a6d4fbdc46f2681a1add13416bc9b4a6e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59763329"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60115240"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -262,7 +262,7 @@ _AdministrativeUnit.Read.All_ 和 _AdministrativeUnit.ReadWrite.All_ 仅对工�
 
 ### <a name="remarks"></a>备注
 
-_Application.ReadWrite.OwnedBy_ 权限允许与 _Application.ReadWrite.All_ 相同的操作，只不过前者只允许对调用应用充当所有者的应用程序和服务主体执行这些操作。 所有权由目标 [application](/graph/api/application-list-owners?view=graph-rest-beta&preserve-view=true) 或 [service principal](/graph/api/serviceprincipal-list-owners?view=graph-rest-beta&preserve-view=true) 资源上的 `owners` 导航属性指示。
+_Application.ReadWrite.OwnedBy_ 权限允许与 _Application.ReadWrite.All_ 相同的操作，只不过前者只允许对调用应用充当所有者的应用程序和服务主体执行这些操作。所有权由目标 [应用](/graph/api/application-list-owners?view=graph-rest-beta&preserve-view=true)或 [服务主体](/graph/api/serviceprincipal-list-owners?view=graph-rest-beta&preserve-view=true)资源上的`owners`导航属性指示。
 > 注意：使用 _Application.Read Write.Owned by_ 权限调用 `GET /applications` 以列出应用程序将失败，并显示 403。  请改为使用 `GET servicePrincipals/{id}/ownedObjects` 列出调用应用程序充当所有者的应用程序。
 
 ### <a name="example-usage"></a>用法示例
@@ -1670,7 +1670,7 @@ _ProgramControl.Read.All_ 和 _ProgramControl.ReadWrite.All_ 仅对工作或学�
 
 ### <a name="remarks"></a>注解
 - 这些报告权限仅对工作或学校帐户有效。
-- 若要获得委派权限以允许应用代表用户读取服务使用情况报告，租户管理员必须事先为用户分配 Azure AD 受限管理员角色。 有关更多详细信息，请参阅[授权 API 读取 Microsoft 365 使用情况报告](reportroot-authorization.md)。
+- 若要获得委派权限以允许应用代表用户读取服务使用情况报告，租户管理员必须事先为用户分配的 Azure AD 受限管理员角色。有关更多详细信息，请参阅[ API 授权，读取 Microsoft 365使用情况报告](reportroot-authorization.md)。
 
 ### <a name="example-usage"></a>用法示例
 
@@ -1692,7 +1692,7 @@ _ProgramControl.Read.All_ 和 _ProgramControl.ReadWrite.All_ 仅对工作或学�
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _RoleAssignmentSchedule.Read.Directory_ | 读取公司目录中所有活动的角色分配。 | 允许应用代表已登录的用户读取公司目录中活动的基于角色的访问控制 (RBAC) 分配。这包括读取目录角色模板和目录角色。 | 是 | 否 |
 | _RoleEligibilitySchedule.Read.Directory_ | 读取公司目录中所有符合条件的角色分配。 | 允许应用代表已登录的用户读取公司目录中符合条件的基于角色的访问控制 (RBAC) 分配。这包括读取目录角色模板和目录角色。 | 是 | 否 |
-| _RoleManagement.Read.All_ | 读取所有 RBAC 提供程序的角色管理数据。 | 允许应用代表登录用户读取所有受支持的[ RBAC 提供程序](/graph/api/resources/rolemanagement?view=graph-rest-beta&preserve-view=true)基于角色的访问控制 (RBAC) 设置。 这包括读取角色定义和角色分配。 | 是 | 否 |
+| _RoleManagement.Read.All_ | 读取所有 RBAC 提供程序的角色管理数据。 | 允许应用代表登录用户读取所有受支持的[ RBAC 提供程序](/graph/api/resources/rolemanagement?view=graph-rest-beta&preserve-view=true)基于角色的访问控制 (RBAC) 设置。这包括读取角色和角色分配。 | 是 | 否 |
 | _RoleManagement.Read.Directory_ | 读取 Azure AD 的角色管理数据。 | 允许应用代表已登录的用户读取公司目录的基于角色的访问控制 (RBAC) 设置。这包括读取目录角色模板、目录角色和成员身份。 | 是 | 否 |
 | _RoleManagementPolicy.Read.Directory_ | 读取公司目录中所有特权角色分配的策略。 | 允许应用代表已登录的用户读取公司目录中具有特权的基于角色的访问控制 (RBAC) 分配策略。 | 是 | 否 |
 | _RoleAssignmentSchedule.ReadWrite.Directory_ | 读取、更新和删除公司目录中所有活动的角色分配。 | 允许应用代表已登录用户读取和管理公司目录中活动的基于角色的访问控制 （RBAC） 分配。这包括管理目录角色成员身份，以及阅读目录角色模板、目录角色和活动的成员身份。 | 是 | 否 |
@@ -1704,7 +1704,7 @@ _ProgramControl.Read.All_ 和 _ProgramControl.ReadWrite.All_ 仅对工作或学�
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
 |:----------------|:------------------|:-------------|:-----------------------|
-| _RoleManagement.Read.All_ | 读取所有 RBAC 提供程序的角色管理数据。 | 允许应用在没有登录用户的情况下读取所有受支持的[ RBAC 提供程序](/graph/api/resources/rolemanagement?view=graph-rest-beta&preserve-view=true)基于角色的访问控制 (RBAC) 设置。 这包括读取角色定义和角色分配。 | 是 |
+| _RoleManagement.Read.All_ | 读取所有 RBAC 提供程序的角色管理数据。 | 允许应用在没有登录用户的情况下读取所有受支持的[ RBAC 提供程序](/graph/api/resources/rolemanagement?view=graph-rest-beta&preserve-view=true)基于角色的访问控制 (RBAC) 设置。 | 是 |
 | _RoleManagement.Read.Directory_ | 读取 Azure AD 的角色管理数据。 | 允许应用代表已登录的用户读取公司目录的基于角色的访问控制 (RBAC) 设置。这包括读取目录角色模板、目录角色和成员身份。 | 是 |
 | _RoleManagement.ReadWrite.Directory_ | 读取和写入 Azure AD 的角色管理数据。 | 允许应用无需登录用户即可读取和管理公司目录基于角色的访问控制 (RBAC) 设置。这包括发送目录角色和管理目录角色成员身份，以及读取目录角色模板、目录角色和成员身份。 | 是 |
 
@@ -1861,7 +1861,7 @@ _ProgramControl.Read.All_ 和 _ProgramControl.ReadWrite.All_ 仅对工作或学�
 | _Sites.Read.All_        | 读取所有网站集中的项目 | 允许应用代表登录用户读取文档，并列出所有网站集中的项目。 | 否  | 否 |
 | _Sites.ReadWrite.All_   | 读取和写入所有网站集中的项目 | 允许应用代表登录用户编辑或删除所有网站集中的文档和列表项。 | 否  | 否 |
 | _Sites.Manage.All_      | 创建、编辑和删除所有网站集中的项目和列表 | 允许应用代表登录用户管理和创建所有网站集中的列表、文档和列表项。 | 否 | 否 |
-| _Sites.FullControl.All_ | 完全控制所有网站集 | 允许应用代表登录用户具有对所有网站集中的 SharePoint 网站的完全控制权限。  | 是  | 否 |
+| _Sites.FullControl.All_ | 具有对所有网站集的完全控制权限 | 允许应用代表登录用户具有对所有网站集中的 SharePoint 网站的完全控制权限。  | 是  | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
@@ -1905,8 +1905,8 @@ _Sites.Selected_ 应用程序权限仅在 Microsoft Graph API 中可用。
 
 无。
 
-### <a name="remarks"></a>说明
-_任务_ 权限用于控制对微软待办任务和 Outlook 任务的访问权限（已弃用）。 Microsoft Planner 任务的访问权限由 [_组_ 权限](#group-permissions)控制。
+### <a name="remarks"></a>注解
+_任务_ 权限用于控制对待办事项任务和 Outlook 任务（已弃用）的访问权限。Microsoft Planner 任务的访问权限由 [_组_ 权限](#group-permissions)控制。
 
 目前仅工作或学校帐户支持 _共享_ 权限。即使具有 _共享_ 权限，如果未授予拥有共享内容的用户在文件夹内修改内容访问用户权限，读取和写入仍会失败。
 
@@ -2136,9 +2136,9 @@ _任务_ 权限用于控制对微软待办任务和 Outlook 任务的访问权�
 
 上述所有权限仅对工作或学校帐户有效。
 
-若要使应用能够阅读或编写委派权限的所有协议或协议接受情况，登录用户必须分配有全局管理员、条件访问管理员或安全管理员角色。 若要详细了解管理员角色，请参阅[在 Azure Active Directory 中分配管理员角色](/azure/active-directory/active-directory-assign-admin-roles)。
+若要使应用能够阅读或编写委派权限的所有协议或协议接受情况，登录用户必须分配有全局管理员、条件访问管理员或安全管理员角色。如需了解有关管理员角色的更多信息，请参阅[在 Azure Active Directory 中分配管理员角色](/azure/active-directory/active-directory-assign-admin-roles)。
 
-### <a name="example-usage"></a>用法示例
+### <a name="example-usage"></a>示例用法
 
 #### <a name="delegated"></a>委派
 以下使用对两种委派权限均有效：
@@ -2378,11 +2378,11 @@ _User.ReadBasic.All_ 权限限制应用访问称为基本个人资料的有限�
 ### <a name="example-usage"></a>用法示例
 
 #### <a name="delegated"></a>委派
-* _UserActivity.ReadWrite.CreatedByApp_：基于最后一天发布的相关联的历史记录项来获取最近特定用户活动的列表。 (GET /me/activities/recent)。
-* _UserActivity.ReadWrite.CreatedByApp_：发布或更新可能由应用程序用户恢复的用户活动。 (PUT /me/activities/%2Farticle%3F12345)。
-*   _UserActivity.ReadWrite.CreatedByApp_：发布或更新指定用户活动的历史记录项，以表示用户参与的时间段。 (PUT /me/activities/{id}/historyItems/{id})。
-*   _UserActivity.ReadWrite.CreatedByApp_：根据用户发起的请求删除用户活动或删除无效数据。 (DELETE /me/activities/{id})。
-*   _UserActivity.ReadWrite.CreatedByApp_：根据用户发起的请求删除历史记录项或删除无效数据。 (DELETE /me/activities/{id}/historyItems/{id})。
+* _UserActivity.ReadWrite.CreatedByApp_：基于最后一天发布的相关联的历史记录项来获取最近特定用户活动的列表。(GET /me/activities/recent)。
+* _UserActivity.ReadWrite.CreatedByApp_：发布或更新可能由应用程序用户恢复的用户活动。(PUT /me/activities/%2Farticle%3F12345)。
+*   _UserActivity.ReadWrite.CreatedByApp_：发布或更新指定用户活动的历史记录项，以表示用户参与的时间段。(PUT /me/activities/{id}/historyItems/{id})。
+*   _UserActivity.ReadWrite.CreatedByApp_：根据用户发起的请求删除用户活动或删除无效数据。(DELETE /me/activities/{id})。
+*   _UserActivity.ReadWrite.CreatedByApp_：根据用户发起的请求删除历史记录项或删除无效数据。(DELETE /me/activities/{id}/historyItems/{id})。
 
 ---
 
@@ -2432,7 +2432,7 @@ _User.ReadBasic.All_ 权限限制应用访问称为基本个人资料的有限�
 
 上述所有权限仅对工作或学校帐户有效。
 
-登录用户必须分配有全局管理员或 Intune 管理员角色，应用才能使用委派权限读取或写入所有 Windows 更新部署设置。 若要详细了解管理员角色，请参阅[在 Azure Active Directory 中分配管理员角色](/azure/active-directory/active-directory-assign-admin-roles)。
+登录用户必须分配有全局管理员、Intune 管理员或 Windows 更新部署管理员角色，才能使用委派权限读取或写入所有 Windows 更新部署设置。 若要详细了解管理员角色，请参阅[在 Azure Active Directory 中分配管理员角色](/azure/active-directory/active-directory-assign-admin-roles)。
 
 ### <a name="example-usage"></a>用法示例
 
