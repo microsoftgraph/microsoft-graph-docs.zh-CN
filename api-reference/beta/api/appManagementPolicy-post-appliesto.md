@@ -1,16 +1,16 @@
 ---
 title: Assign appliesTo
 description: 将策略分配给应用程序或服务主体对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: madansr7
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 0bddfe37cbcf1571baed56bddc9c2097e7c5c253
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 3520ea93d20002b5ac68ff97452a2b39b1cec9df
+ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58262499"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60214410"
 ---
 # <a name="assign-appliesto"></a>Assign appliesTo
 
@@ -28,7 +28,7 @@ ms.locfileid: "58262499"
 | :------------------------------------- | :--------------------------------------------------------- |
 | 委派（工作或学校帐户）     | Policy.ReadWrite.ApplicationConfiguration |
 | 委派（个人 Microsoft 帐户） | 不支持。                                             |
-| 应用程序                            | Policy.ReadWrite.ApplicationConfiguration |
+| Application                            | Policy.ReadWrite.ApplicationConfiguration |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -40,9 +40,10 @@ POST /applications/{id}/appManagementPolicies/$ref
 
 ## <a name="request-headers"></a>请求标头
 
-| 名称          | 说明               |
-| :------------ | :------------------------ |
-| Authorization | Bearer {token}。必需。 |
+| 名称          | 说明                 |
+|:--------------|:----------------------------|
+| Authorization | Bearer {token}。必需。   |
+| Content-Type  | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
 
@@ -67,6 +68,7 @@ POST /applications/{id}/appManagementPolicies/$ref
 
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/applications/{id}/appManagementPolicies/$ref
+Content-type: application/json
 
 {
  "@odata.id":"https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}"

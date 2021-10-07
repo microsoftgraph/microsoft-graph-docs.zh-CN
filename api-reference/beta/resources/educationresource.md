@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: eded1c6ff9362987634093602cbbb5d727a523d6
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: e5da9bdd3a9c1046949c5be36b6c7f1ccc79709a
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766605"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60219778"
 ---
 # <a name="educationresource-resource-type"></a>educationResource 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "59766605"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-系统中所有资源对象的基类。 
+educationExcelResource、educationFileResource、educationLinkResource、educationPowerPointResource、educationWordResource、educationMediaResource[](../resources/educationmediaresource.md)和[](../resources/educationlinkresource.md)[educationExternalResource 的基类](../resources/educationexternalresource.md)。 [](../resources/educationexcelresource.md) [](../resources/educationfileresource.md) [](../resources/educationpowerpointresource.md) [](../resources/educationwordresource.md)
 
 educationResource 与作业和/或[](educationassignment.md)提交相关联，它[](educationsubmission.md)表示正在提供或提交的学习对象。 不能直接实例化资源;您必须创建一个表示所使用的资源类型的子类。
 

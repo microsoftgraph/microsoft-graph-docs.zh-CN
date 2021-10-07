@@ -1,16 +1,16 @@
 ---
 title: 删除 teamsApp
-description: '从Teams应用程序目录中从组织的应用程序目录中 (应用程序) 。 '
+description: '从Teams应用程序目录中删除租户应用程序目录 (应用程序) 。 '
 ms.localizationpriority: medium
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: cc1f678f6816ba6fb7ea3e91d244bf00d8a5edbf
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: afc81dd0cad8dc969f67f0d199a992b4c81f15fb
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59109855"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220715"
 ---
 # <a name="delete-teamsapp"></a>删除 teamsApp
 
@@ -19,7 +19,7 @@ ms.locfileid: "59109855"
 <!-- markdownlint-disable MD001 -->
 ### <a name="delete-an-app-from-your-organizations-app-catalog"></a>从组织的应用程序目录中删除应用程序
 
-从 [租户](../resources/teamsapp.md) 应用程序目录或租户应用程序目录中 (组织的应用程序) 。 若要删除应用，应用的 **distributionMethod** 属性必须设置为 `organization` 。
+从 [租户应用程序](../resources/teamsapp.md) 目录组织的应用程序目录中 (应用程序) 。 若要删除应用，应用的 **distributionMethod** 属性必须设置为 `organization` 。
 
 您还可以使用此 API 从评价过程中删除已提交的应用。
 
@@ -31,9 +31,9 @@ ms.locfileid: "59109855"
 
 | 权限类型                        | 权限（从最低特权到最高特权）|
 |:----------------------------------     |:-------------|
-| 委派（工作或学校帐户） | AppCatalog.Submit、AppCatalog.ReadWrite.All、Directory.ReadWrite.All |
+| 委派（工作或学校帐户） | AppCatalog.Submit、AppCatalog.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持|
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 

@@ -5,12 +5,12 @@ author: sharad-sharma-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: a6ffac7e2cc4764f05abdcfdb86e2df71fcecf8a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 46747a1ac5a735b36a26fd0b11fd7162b6fc4a9b
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59016643"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220351"
 ---
 # <a name="educationsubmission-return"></a>educationSubmission： return
 
@@ -27,12 +27,12 @@ ms.locfileid: "59016643"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  EduAssignments.ReadWriteBasic、EduAssignments.ReadWrite   |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|应用程序 | 不支持。 | 
+|Application | 不支持。 | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc-9e13-44a2-a6ac-a53322006454/submissions/d1bee293-d8bb-48d4-af3e-c8cb0e3c7fe7/return
+POST /education/classes/{class-id}/assignments/{assignment-id}/submissions/{submission-id}/return
 ```
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
@@ -43,9 +43,10 @@ POST /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005f
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
+如果成功，此方法在响应 `200 Ok` 正文中返回 响应代码和 [educationSubmission](../resources/educationsubmission.md) 对象。
 
 ## <a name="example"></a>示例
+以下示例演示如何调用此 API。
 
 ### <a name="request"></a>请求
 下面展示了示例请求。
@@ -58,7 +59,7 @@ POST /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005f
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/ad8afb28-c138-4ad7-b7f5-a6986c2655a8/submissions/fbe51c90-78b7-418a-b5f3-871bf8d8d21e/return
+POST https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/7192332b-e904-4891-81e2-356242ab1858/submissions/022fb52d-1278-d21f-e827-2221a6a3e516/return
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/educationsubmission-return-csharp-snippets.md)]
@@ -85,15 +86,55 @@ POST https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.educationAssignment"
+  "@odata.type": "microsoft.graph.educationSubmission"
 } -->
 
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 Ok
 
 {
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#educationSubmission",
+    "@odata.type": "#microsoft.graph.educationSubmission",
+    "status": "returned",
+    "submittedDateTime": "2021-09-03T18:20:11.2167718Z",
+    "unsubmittedDateTime": null,
+    "returnedDateTime": "2021-09-03T19:01:45.6526389Z",
+    "resourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXodJYOAkI7rTLhw7ME_e42J/items/01QTY63RKYRQDN3FDQWNA24OCLHBD5C2SH",
+    "id": "022fb52d-1278-d21f-e827-2221a6a3e516",
+    "recipient": {
+        "@odata.type": "#microsoft.graph.educationSubmissionIndividualRecipient",
+        "userId": "80cefd93-8d88-40e2-b5d3-67898383e226"
+    },
+    "submittedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+            "displayName": null
+        }
+    },
+    "unsubmittedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": null,
+            "displayName": null
+        }
+    },
+    "returnedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+            "displayName": null
+        }
+    }
 }
 ```
+
+## <a name="see-also"></a>另请参阅
+
+* [分配和提交状态、转换和限制](/graph/assignments-submissions-states-transition)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

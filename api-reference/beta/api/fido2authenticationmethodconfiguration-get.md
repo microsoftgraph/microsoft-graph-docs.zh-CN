@@ -2,22 +2,22 @@
 title: 获取 fido2AuthenticationMethodConfiguration
 description: 读取 fido2AuthenticationMethodConfiguration 对象的属性和关系。
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1c956d838a4edba209766d076b5b792f4b819c84
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 5ee791654da56a2a927ce548c94c57a762ebd7a4
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471112"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220456"
 ---
 # <a name="get-fido2authenticationmethodconfiguration"></a>获取 fido2AuthenticationMethodConfiguration
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md)对象的属性和关系，该对象代表 Azure Active Directory [](../resources/authenticationmethodspolicies-overview.md) (Azure AD) 租户的 FIDO2 安全密钥身份验证方法策略。
+检索[fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md)对象的属性和关系，该对象表示 Azure Active Directory (Azure AD[](../resources/authenticationmethodspolicies-overview.md)租户的 FIDO2 安全密钥) 策略。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -26,10 +26,12 @@ ms.locfileid: "50471112"
 |:---|:---|
 |委派（工作或学校帐户）|Policy.ReadWrite.AuthenticationMethod|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|Application|不支持。|
 
 对于委派方案，管理员需要以下 [角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 
+* 全局读取者
+* 身份验证策略管理员
 * 全局管理员
 
 
@@ -53,7 +55,7 @@ GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/fid
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md) 对象。
 
 ## <a name="examples"></a>示例
 

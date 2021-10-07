@@ -2,22 +2,22 @@
 title: 更新 microsoftAuthenticatorAuthenticationMethodConfiguration
 description: 更新 microsoftAuthenticatorAuthenticationMethodConfiguration 对象的属性。
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: bce76566495d0312679030b6e8b2fb16ea632fe9
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: f7c133794dc22c901e330bd63c2835d906533988
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50473013"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220617"
 ---
 # <a name="update-microsoftauthenticatorauthenticationmethodconfiguration"></a>更新 microsoftAuthenticatorAuthenticationMethodConfiguration
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md) 对象的属性，该对象表示 Azure AD 租户的 Microsoft Authenticator 身份验证方法策略。
+更新[microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md)对象的属性，该对象Microsoft Authenticator Azure AD 租户的身份验证方法策略。
 
 
 ## <a name="permissions"></a>权限
@@ -29,7 +29,10 @@ ms.locfileid: "50473013"
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|Policy.ReadWrite.AuthenticationMethod|
 
-对于委派方案，管理员需要全局管理员角色。 有关详细信息，请参阅 [角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)。
+对于委派方案，管理员需要以下 [角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
+
+* 身份验证策略管理员
+* 全局管理员
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -52,7 +55,7 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/m
 
 有关属性的列表，请参阅 [microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md)。
 
->**注意：**`@odata.type`属性值必须为 `#microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration` 1 的属性必须包含在正文中。
+>**注意：**`@odata.type`属性值为 的 属性 `#microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration` 必须包含在正文中。
 
 ## <a name="response"></a>响应
 

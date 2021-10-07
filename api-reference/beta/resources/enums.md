@@ -5,12 +5,12 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 7e815c1164afccd946de20e86d7fd7040f142868
-ms.sourcegitcommit: 2f394a9f33f2fab3634d0f18882985ee211067d1
+ms.openlocfilehash: 0629bc0561e65f381c4fba38d815c7886713547d
+ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60127504"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60214403"
 ---
 # <a name="enum-values"></a>枚举值
 
@@ -171,7 +171,7 @@ ms.locfileid: "60127504"
 |整数|
 |参考|
 |二进制|
-|布尔|
+|布尔值|
 |日期时间|
 
 ### <a name="mutability-values"></a>可变值
@@ -2305,7 +2305,7 @@ ms.locfileid: "60127504"
 
 |成员    |值    |说明 |
 |:---------|:--------|:----------- |
-|团队      |0        |指示Teams应用程序可以安装在团队中，并有权访问该团队的数据。|
+|团队      |0        |指示Teams应用可以安装在团队中，并有权访问该团队的数据。|
 |groupChat |1        |指示该Teams应用可以安装在群聊中，并有权访问该群聊的数据。|
 |personal  |2        |指示Teams应用可以安装在用户的个人范围内，并有权访问该用户的数据。|
 
@@ -2553,3 +2553,9 @@ ms.locfileid: "60127504"
 |meeting|
 |screenShare|
 |unknownFutureValue|
+### <a name="binaryoperator-values"></a>binaryOperator 值 
+
+|成员|
+|:---|
+|或者|
+|和|

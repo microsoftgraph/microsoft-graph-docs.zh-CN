@@ -2,15 +2,15 @@
 title: 删除 educationAssignmentResource
 description: 删除附加到工作分配的特定资源。
 author: dipakboyed
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 7e853534998978f89e44cbd8f657a56250c599a0
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: dcaf478202c4c58ee1a1abfc974e48a79d0a76b8
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52911903"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220659"
 ---
 # <a name="delete-educationassignmentresource"></a>删除 educationAssignmentResource
 
@@ -27,12 +27,12 @@ ms.locfileid: "52911903"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  EduAssignments.ReadWriteBasic、EduAssignments.ReadWrite  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|应用程序 | 不支持。 | 
+|Application | 不支持。 | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /education/classes/{id}/assignments/{id}/resources/{id}
+DELETE /education/classes/{class-id}/assignments/{assignment-id}/resources/{resource-id}
 
 ```
 ## <a name="request-headers"></a>请求标头
@@ -48,7 +48,7 @@ DELETE /education/classes/{id}/assignments/{id}/resources/{id}
 如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 下面展示了示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -58,7 +58,7 @@ DELETE /education/classes/{id}/assignments/{id}/resources/{id}
   "name": "delete_educationassignmentresource"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/resources/22002
+DELETE https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/dc1af5c4-8211-4e5d-92e6-f006477c2740/resources/7a686854-6d85-4fc0-9729-e36af26f7deb
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-educationassignmentresource-csharp-snippets.md)]
@@ -78,7 +78,7 @@ DELETE https://graph.microsoft.com/beta/education/classes/11021/assignments/1900
 
 ---
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 下面展示了示例响应。 
 
 

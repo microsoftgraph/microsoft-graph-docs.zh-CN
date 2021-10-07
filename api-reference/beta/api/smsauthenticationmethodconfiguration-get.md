@@ -2,15 +2,15 @@
 title: 获取 smsAuthenticationMethodConfiguration
 description: 读取 smsAuthenticationMethodConfiguration 对象的属性和关系。
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: cc09a85fefb46142c46d5383a0d7225636041b8b
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 5758fb28939d4ae039d0b752cc3d4ae5b63b3bbc
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761847"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220435"
 ---
 # <a name="get-smsauthenticationmethodconfiguration"></a>获取 smsAuthenticationMethodConfiguration
 命名空间：microsoft.graph
@@ -28,7 +28,11 @@ ms.locfileid: "50761847"
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|Policy.ReadWrite.AuthenticationMethod|
 
-对于委派方案，管理员需要全局管理员角色。 有关详细信息，请参阅 [角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)。
+对于委派方案，管理员需要以下 [角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
+
+* 全局读取者
+* 身份验证策略管理员
+* 全局管理员
 
 ## <a name="http-request"></a>HTTP 请求
 

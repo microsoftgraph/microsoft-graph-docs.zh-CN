@@ -1,16 +1,16 @@
 ---
 title: 更新 teamsApp
-description: '更新之前发布到应用程序Teams应用程序目录。 '
+description: '更新之前发布到应用程序Teams的应用程序。 '
 author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f10ae41876d4001c0de0592984019e3271ecb964
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: aec134e10d2c2d2768d07ea2a16003af640852e5
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59084907"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220512"
 ---
 # <a name="update-teamsapp"></a>更新 teamsApp
 
@@ -28,9 +28,9 @@ ms.locfileid: "59084907"
 
 | 权限类型                        | 权限（从最低特权到最高特权）|
 |:----------------------------------     |:-------------|
-| 委派（工作或学校帐户）     | AppCatalog.Submit、AppCatalog.ReadWrite.All、Directory.ReadWrite.All |
+| 委派（工作或学校帐户）     | AppCatalog.Submit、AppCatalog.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持|
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 

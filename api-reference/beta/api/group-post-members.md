@@ -1,16 +1,16 @@
 ---
 title: 添加成员
 description: 通过 members 导航属性Microsoft 365成员添加到安全组 **或** 安全组。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: f7ba21f4e132ea81a09309e5d010686c2e351b14
-ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
+ms.openlocfilehash: cbd076e7f725f7442a03301085ecb228534aa2ee
+ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58396739"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60214459"
 ---
 # <a name="add-member"></a>添加成员
 
@@ -18,12 +18,12 @@ ms.locfileid: "58396739"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-通过 members 导航属性Microsoft 365成员添加到安全组 **或** 安全组。
+通过 members 导航属性向组 **添加** 成员。
 
 可以添加用户、服务主体或其他组。 
 
 > [!Important]
-> + 只能向通过云管理的安全组和 Microsoft 365 组添加用户。
+> + 只能将用户添加到通过云管理的组。
 > + 不能将安全组添加到 Microsoft 365 组。
 > + 不能将 Microsoft 365 组添加到安全组或其他 Microsoft 365 组。
 
@@ -103,7 +103,7 @@ HTTP/1.1 204 No Content
 
 ## <a name="see-also"></a>另请参阅
 - [添加成员至团队](team-post-members.md)
-- [更新团队中成员的角色](team-update-members.md)
+- [更新成员在团队中的角色](team-update-members.md)
 - [从团队删除成员](team-delete-members.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

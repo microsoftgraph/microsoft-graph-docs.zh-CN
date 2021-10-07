@@ -5,12 +5,12 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 20f1cd2abb733876c5b8c82dacc620804292019c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3b138c9cc59bb51e43d815874a228de4a0a5f9a5
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59038494"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220365"
 ---
 # <a name="update-authenticationmethodspolicy"></a>更新 authenticationMethodsPolicy
 命名空间：microsoft.graph
@@ -25,6 +25,11 @@ ms.locfileid: "59038494"
 |委派（工作或学校帐户）|Policy.ReadWrite.AuthenticationMethod|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|Policy.ReadWrite.AuthenticationMethod|
+
+对于委派方案，管理员需要以下 [角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
+
+* 身份验证策略管理员
+* 全局管理员
 
 ## <a name="http-request"></a>HTTP 请求
 

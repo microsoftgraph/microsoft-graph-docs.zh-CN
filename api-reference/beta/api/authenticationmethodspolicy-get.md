@@ -2,15 +2,15 @@
 title: 获取 authenticationMethodsPolicy
 description: 读取 authenticationMethodsPolicy 对象的属性和关系。
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 8c4e737187726f45bb546ea16d09d3ce476401fa
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: e47e48b1e954d13671c5f37fd546d10447f0d7e7
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52869479"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60219826"
 ---
 # <a name="get-authenticationmethodspolicy"></a>获取 authenticationMethodsPolicy
 命名空间：microsoft.graph
@@ -27,6 +27,12 @@ ms.locfileid: "52869479"
 |委派（工作或学校帐户）|Policy.ReadWrite.AuthenticationMethod|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|Policy.ReadWrite.AuthenticationMethod|
+
+对于委派方案，管理员需要以下 [角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
+
+* 全局读取者
+* 身份验证策略管理员
+* 全局管理员
 
 ## <a name="http-request"></a>HTTP 请求
 

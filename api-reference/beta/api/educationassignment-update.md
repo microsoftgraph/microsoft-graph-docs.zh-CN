@@ -1,16 +1,16 @@
 ---
 title: 更新 educationassignment
-description: 更新分配对象。 只有班级中的教师可以这样做。 请注意，你不能使用 PATCH 请求更改工作分配的状态。 使用发布操作可更改工作分配状态。
-localization_priority: Normal
+description: 更新 educationAssigment 对象。
+ms.localizationpriority: medium
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 39f9f1a56fca07078b4be74447de563b7b7f8d31
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: 51ee97696f89a0b2145a278d57329ccd4545425d
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52780769"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220639"
 ---
 # <a name="update-educationassignment"></a>更新 educationassignment
 
@@ -18,7 +18,9 @@ ms.locfileid: "52780769"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新分配对象。 只有班级中的教师可以这样做。 请注意，你不能使用 PATCH 请求更改工作分配的状态。 使用 [发布](../api/educationassignment-publish.md) 操作可更改工作分配状态。
+更新 [educationAssignment](../resources/educationassignment.md) 对象。 
+
+只有班级中的教师可以这样做。 请注意，你不能使用 PATCH 请求更改工作分配 **的状态**。 使用 [发布](../api/educationassignment-publish.md) 操作可更改 **工作分配** 状态。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -27,12 +29,12 @@ ms.locfileid: "52780769"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  EduAssignments.ReadWriteBasic、EduAssignments.ReadWrite  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|应用程序 | 不支持。 | 
+|Application | 不支持。 | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /education/classes/{id}/assignments/{id}
+PATCH /education/classes/{class-id}/assignments/{assignment-id}
 ```
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
@@ -45,9 +47,10 @@ PATCH /education/classes/{id}/assignments/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|addedStudentAction|String| 控制在作业发布后添加的学生的行为。|
-|allowLateSubmissions|Boolean| 提交是否可在截止日期后提交。|
-|allowStudentsToAddResourcesToSubmission|Boolean| 学生是否可以向提交中添加资源。 指示提交中的唯一项目是否来自工作分配资源列表。 |
+|addedStudentAction|字符串| 控制在作业发布后添加的学生的行为。|
+|addToCalendarAction|educationAddToCalendarOptions|可选字段，用于控制发布作业时将作业添加到学生和教师日历的作业行为。 可能的值是 `none` `studentsAndPublisher` ：、、 `studentsAndTeamOwners` `studentsOnly` 和 `unknownFutureValue` 。 默认值为 `none`。|
+|allowLateSubmissions|布尔值| 提交是否可在截止日期后提交。|
+|allowStudentsToAddResourcesToSubmission|布尔值| 学生是否可以向提交中添加资源。 指示提交中的唯一项目是否来自工作分配资源列表。 |
 |assignDateTime|DateTimeOffset| 作业应发布到学生的日期。 |
 |assignTo|educationAssignmentRecipient| 获得作业的学生。|
 |closeDateTime|DateTimeOffset| 工作分配关闭提交的日期。 如果分配不允许LateSubmissions或 closeDateTime 与 dueDateTime 相同，则该字段可以是 null 的可选字段，但如果指定，它必须大于或等于 dueDateTime。|
@@ -55,7 +58,7 @@ PATCH /education/classes/{id}/assignments/{id}
 |dueDateTime|DateTimeOffset| 日期分配到期。 |
 |一个|educationAssignmentGradeType| 如何对作业进行评分。|
 |instructions|itemBody| 要与作业一起向学生提供的说明。 |
-|notificationChannelUrl|String| 发布工作分配发布通知的频道。 发布分配后不允许更新通道 URL，并且仅在 **assignTo** 值为 [educationAssignmentClassRecipient 时允许更新](../resources/educationassignmentclassrecipient.md)。|
+|notificationChannelUrl|字符串| 发布分配发布通知的频道。 发布分配后不允许更新通道 URL，并且仅在 **assignTo** 值为 [educationAssignmentClassRecipient 时允许更新](../resources/educationassignmentclassrecipient.md)。|
 
 ## <a name="response"></a>响应
 如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [educationAssignment](../resources/educationassignment.md) 对象。
@@ -66,22 +69,23 @@ PATCH /education/classes/{id}/assignments/{id}
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["72a7baec-c3e9-4213-a850-f62de0adad5f","4679bc1b-90c5-45af-ae1a-d5357672ed39"],
   "name": "update_educationassignment"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/education/classes/11021/assignments/19002
+PATCH https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/4679bc1b-90c5-45af-ae1a-d5357672ed39
 Content-type: application/json
 Content-length: 279
 
 {
-  "displayName": "Week 1 reading assignment",
-  "instructions": {
-    "contentType": "Text",
-    "content": "Read chapters 1 through 3"
-  },
-  "dueDateTime": "2014-02-01T00:00:00Z",
-  "addedStudentAction": "none",
-  "addToCalendarAction": "studentsAndPublisher",
+    "displayName": "Reading and review test 09.03 #5",
+    "instructions": {
+        "contentType": "text",
+        "content": "Read chapter 5 and write your review"
+    },
+    "dueDateTime": "2021-09-10T00:00:00Z",
+    "addedStudentAction": "none",
+    "addToCalendarAction": "studentsAndPublisher"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -118,20 +122,57 @@ Content-type: application/json
 Content-length: 279
 
 {
-  "classId": "11021",
-  "displayName": "Week 1 reading assignment",
-  "instructions": {
-    "contentType": "Text",
-    "content": "Read chapters 1 through 3"
-  },
-  "closeDateTime": "2014-02-11T00:00:00Z",
-  "addToCalendarAction": "studentsAndPublisher",
-  "dueDateTime": "2014-02-01T00:00:00Z",
-  "assignDateTime": "2014-01-01T00:00:00Z",
-  "assignedDateTime": "2014-01-01T00:00:00Z",
-  "resourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!0sGAoOieeE6iSj1WXCV-nYYTuh2luKRDvUVGQBLOmvYpRzc5ARnCRorRht6P3MhU/items/01N74NOEZL7P3VK22SQFDKBZ3PHVPKDVAQ",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments/$entity",
+    "classId": "72a7baec-c3e9-4213-a850-f62de0adad5f",
+    "displayName": "Reading and review test 09.03 #5",
+    "closeDateTime": null,
+    "dueDateTime": "2021-09-10T00:00:00Z",
+    "assignDateTime": null,
+    "assignedDateTime": null,
+    "allowLateSubmissions": true,
+    "resourcesFolderUrl": null,
+    "createdDateTime": "2021-09-03T23:57:14.6088791Z",
+    "lastModifiedDateTime": "2021-09-04T15:01:35.3361649Z",
+    "allowStudentsToAddResourcesToSubmission": true,
+    "status": "draft",
+    "notificationChannelUrl": null,
+    "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%2272a7baec-c3e9-4213-a850-f62de0adad5f%5C%22,%5C%22displayName%5C%22%3Anull,%5C%22assignmentIds%5C%22%3A%5B%5C%224679bc1b-90c5-45af-ae1a-d5357672ed39%5C%22%5D%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22assignment-viewer%5C%22%7D%22,%22channelId%22%3Anull%7D",
+    "addToCalendarAction": "studentsAndPublisher",
+    "addedStudentAction": "none",
+    "id": "4679bc1b-90c5-45af-ae1a-d5357672ed39",
+    "instructions": {
+        "content": "Read chapter 5 and write your review",
+        "contentType": "text"
+    },
+    "grading": {
+        "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
+        "maxPoints": 50
+    },
+    "assignTo": {
+        "@odata.type": "#microsoft.graph.educationAssignmentClassRecipient"
+    },
+    "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+            "displayName": null
+        }
+    },
+    "lastModifiedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+            "displayName": null
+        }
+    }
 }
 ```
+
+## <a name="see-also"></a>另请参阅
+
+* [分配和提交状态转换](/graph/assignments-submissions-states-transition)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

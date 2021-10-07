@@ -2,22 +2,22 @@
 title: 删除 smsAuthenticationMethodConfiguration
 description: 删除 smsAuthenticationMethodConfiguration 对象。
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: b573914ead8df3f5439eb3eddc85315fbca79adc
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 8dc3e7b3525b54022ce6eb634042fe7e717606dc
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761266"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220523"
 ---
 # <a name="delete-smsauthenticationmethodconfiguration"></a>删除 smsAuthenticationMethodConfiguration
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将 [文本消息身份验证](../resources/smsauthenticationmethodconfiguration.md) 方法策略还原为默认配置，以删除对策略所做的更改。
+将文本消息身份验证 [方法](../resources/smsauthenticationmethodconfiguration.md) 策略还原为默认配置，以删除对策略所做的更改。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -28,7 +28,10 @@ ms.locfileid: "50761266"
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|Policy.ReadWrite.AuthenticationMethod|
 
-对于委派方案，管理员需要全局管理员角色。 有关详细信息，请参阅 [角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)。
+对于委派方案，管理员需要以下 [角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
+
+* 身份验证策略管理员
+* 全局管理员
 
 ## <a name="http-request"></a>HTTP 请求
 

@@ -2,15 +2,15 @@
 title: 更新 emailAuthenticationMethodConfiguration
 description: 更新 emailAuthenticationMethodConfiguration 对象的属性。
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d2cdf7eeff97bc8bf28edb1fd4e139922cafa472
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 7c0753e4802211c2b5eca461356e32f381d51334
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231345"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220596"
 ---
 # <a name="update-emailauthenticationmethodconfiguration"></a>更新 emailAuthenticationMethodConfiguration
 
@@ -27,10 +27,11 @@ ms.locfileid: "52231345"
 |:---|:---|
 |委派（工作或学校帐户）|Policy.ReadWrite.AuthenticationMethod|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|Application|不支持。|
 
-对于委派方案，管理员需要以下角色之 [一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
+对于委派方案，管理员需要以下 [角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 
+* 身份验证策略管理员
 * 全局管理员
 
 ## <a name="http-request"></a>HTTP 请求
@@ -57,7 +58,7 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/e
 
 有关可更新的属性的列表，请参阅 [emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md)。
 
->**注意：**`@odata.type`属性值为 的 `#microsoft.graph.emailAuthenticationMethodConfiguration` 属性必须包含在正文中。
+>**注意：**`@odata.type`属性值为 的 属性 `#microsoft.graph.emailAuthenticationMethodConfiguration` 必须包含在正文中。
 
 ## <a name="response"></a>响应
 

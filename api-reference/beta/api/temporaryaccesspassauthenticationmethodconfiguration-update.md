@@ -2,15 +2,15 @@
 title: 更新 temporaryAccessPassAuthenticationMethodConfiguration
 description: 更新 temporaryAccessPassAuthenticationMethodConfiguration 对象的属性。
 author: inbarckms
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6cd30c6016739fcb40c3d6541b1fd1b03f72bee6
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c614258f0d591a7033cb905390730048874e8d4c
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049637"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60219798"
 ---
 # <a name="update-temporaryaccesspassauthenticationmethodconfiguration"></a>更新 temporaryAccessPassAuthenticationMethodConfiguration
 命名空间：microsoft.graph
@@ -28,7 +28,10 @@ ms.locfileid: "52049637"
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|Policy.ReadWrite.AuthenticationMethod|
 
- 对于委派方案，管理员需要全局管理员角色。 有关详细信息，请参阅[角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)。
+对于委派方案，管理员需要以下 [角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
+
+* 身份验证策略管理员
+* 全局管理员
 
 
 ## <a name="http-request"></a>HTTP 请求

@@ -517,7 +517,7 @@ items:
                 href: api/planneruser-list-tasks.md
               - name: 更新设置
                 href: api/planneruser-update.md
-          - name: '预览版的首选语言和区域 () '
+          - name: '预览版的首选语言 (区域) '
             items:
               - name: 区域和语言设置
                 href: resources/regionalandlanguagesettings.md
@@ -533,7 +533,7 @@ items:
                 href: api/profile-get.md
               - name: 删除用户的配置文件
                 href: api/profile-delete.md
-          - name: 团队合作
+          - name: Teamwork
             items:
               - name: 已安装的应用
                 href: resources/teamsappinstallation.md
@@ -1940,7 +1940,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报告
+              - name: 报表
                 items:
                   - name: 按打印机组织
                     items:
@@ -6580,7 +6580,7 @@ items:
                         href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-delete.md
                       - name: 更新
                         href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-update.md
-                  - name: Windows Defender 防篡改保护选项
+                  - name: Windows防篡改保护选项
                     href: resources/intune-deviceconfig-windowsdefendertamperprotectionoptions.md
                   - name: Windows 传递优化配置
                     href: resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md
@@ -11301,38 +11301,6 @@ items:
               - name: 标识保护
                 href: resources/identityprotection-root.md
                 items:
-                  - name: '已弃 (标识风险) '
-                    items:
-                      - name: 标识风险事件
-                        href: resources/identityriskevent.md
-                      - name: 列出 identityRiskEvent
-                        href: api/identityriskevent-list.md
-                      - name: 获取 identityRiskEvent
-                        href: api/identityriskevent-get.md
-                      - name: 列出 anonymousIpRiskEvent
-                        href: api/anonymousipriskevent-list.md
-                      - name: 获取 anonymousIpRiskEvent
-                        href: api/anonymousipriskevent-get.md
-                      - name: 列出 impossibleTravelRiskEvent
-                        href: api/impossibletravelriskevent-list.md
-                      - name: 获取 impossibleTravelRiskEvent
-                        href: api/impossibletravelriskevent-get.md
-                      - name: 列出 leakedCredentialsRiskEvent
-                        href: api/leakedcredentialsriskevent-list.md
-                      - name: 获取 leakedCredentialsRiskEvent
-                        href: api/leakedcredentialsriskevent-get.md
-                      - name: 列出 malwareRiskEvent
-                        href: api/malwareriskevent-list.md
-                      - name: 获取 malwareRiskEvent
-                        href: api/malwareriskevent-get.md
-                      - name: 列出 suspiciousIpRiskEvent
-                        href: api/suspiciousipriskevent-list.md
-                      - name: 获取 suspiciousIpRiskEvent
-                        href: api/suspiciousipriskevent-get.md
-                      - name: 列出 unfamiliarLocationRiskEvent
-                        href: api/unfamiliarlocationriskevent-list.md
-                      - name: 获取 unfamiliarLocationRiskEvent
-                        href: api/unfamiliarlocationriskevent-get.md
                   - name: 风险检测
                     items:
                       - name: 风险检测
@@ -11564,7 +11532,7 @@ items:
                             href: api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
                           - name: 删除
                             href: api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
-                      - name: 'Microsoft Authenticator无密码电话已弃 (登录策略) '
+                      - name: 'Microsoft Authenticator已电话密码登录策略 (已弃) '
                         href: resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md
                         items:
                           - name: 获取
@@ -11922,7 +11890,7 @@ items:
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: 删除
                         href: api/identityapiconnector-delete.md
-          - name: 管控
+          - name: 治理
             items:
               - name: 访问审查
                 href: resources/accessreviewsv2-root.md
@@ -13204,7 +13172,7 @@ items:
                     items:
                       - name: 获取通过身份验证方法注册的用户
                         href: api/authenticationmethodsroot-usersregisteredbymethod.md
-          - name: Microsoft 365使用率报告
+          - name: Microsoft 365使用情况报告
             items:
               - name: 概述
                 href: resources/report.md
@@ -13523,8 +13491,9 @@ items:
           - name: 概述
             href: resources/security-api-overview.md
           - name: 操作（预览版）
-            href: resources/securityaction.md
             items:
+              - name: 操作
+                href: resources/securityaction.md
               - name: 列出安全操作
                 href: api/securityactions-list.md
               - name: 创建安全操作
@@ -13556,7 +13525,7 @@ items:
                     href: api/usersimulationdetails-list.md
                   - name: 获取模拟概述
                     href: api/simulationreportoverview-get.md
-              - name: 报告
+              - name: 报表
                 items:
                   - name: 攻击模拟报告
                     displayname: Attack simulation and training
@@ -13579,6 +13548,14 @@ items:
                         href: resources/attacksimulationtrainingusercoverage.md
                       - name: 获取用户的培训覆盖范围
                         href: api/reportroot-getattacksimulationtrainingusercoverage.md
+          - name: '预览 (事件) '
+            items:
+              - name: 事件
+                href: resources/incident.md
+              - name: 列出事件
+                href: api/security-list-incidents.md
+              - name: 获取事件
+                href: api/incident-get.md
           - name: 信息保护
             items:
               - name: 标签

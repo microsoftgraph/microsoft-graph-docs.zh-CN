@@ -6,12 +6,12 @@ ms.localizationpriority: medium
 ms.prod: search
 ms.author: emzho
 author: emzho
-ms.openlocfilehash: 39922c98f3d6ce27c8be01a6b5a8ffbb67bd7705
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a15712ce6fe32efe9e26d659b8e763432c478040
+ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59040580"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60214648"
 ---
 # <a name="external-connectors-enum-values"></a>外部连接器枚举值
 
@@ -107,7 +107,7 @@ ms.locfileid: "59040580"
 
 | 成员
 |:--------------
-| 字符串
+| string
 | int64
 | double
 | dateTime
@@ -117,6 +117,20 @@ ms.locfileid: "59040580"
 | doubleCollection
 | dateTimeCollection
 | unknownFutureValue
+
+### <a name="ruleoperation-values"></a>ruleOperation 值 
+
+|成员|
+|:---|
+|空|
+|equals|
+|notEquals|
+|contains|
+|notContains|
+|lessThan|
+|greaterThan|
+|startsWith|
+|unknownFutureValue|
 
 <!--
 {

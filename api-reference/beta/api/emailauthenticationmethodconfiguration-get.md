@@ -2,15 +2,15 @@
 title: 获取 emailAuthenticationMethodConfiguration
 description: 读取 emailAuthenticationMethodConfiguration 对象的属性和关系。
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9f0b19a44998134d9b4fc1b3d25b194c10ed80e4
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 97cf832f2cb65045c51e4f1407dd1a1d4369a89a
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231380"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220603"
 ---
 # <a name="get-emailauthenticationmethodconfiguration"></a>获取 emailAuthenticationMethodConfiguration
 
@@ -28,10 +28,12 @@ ms.locfileid: "52231380"
 |:---|:---|
 |委派（工作或学校帐户）|Policy.ReadWrite.AuthenticationMethod|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|Application|不支持。|
 
-对于委派方案，管理员需要以下角色之 [一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
+对于委派方案，管理员需要以下 [角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 
+* 全局读取者
+* 身份验证策略管理员
 * 全局管理员
 
 ## <a name="http-request"></a>HTTP 请求

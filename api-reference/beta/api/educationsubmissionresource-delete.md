@@ -2,15 +2,15 @@
 title: 删除 educationSubmissionResource
 description: 从提交中删除资源。 此操作仅能由学生完成。 如果从工作分配复制了资源，将在删除当前副本后创建资源的新副本。
 author: dipakboyed
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f989c1854ee952b53bfd5df123e425bd25a0d2ca
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 6f8928157bb1bda9fd7f1c9be3e59d0a44afe80d
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52664753"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220393"
 ---
 # <a name="delete-educationsubmissionresource"></a>删除 educationSubmissionResource
 
@@ -27,12 +27,12 @@ ms.locfileid: "52664753"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  EduAssignments.ReadWriteBasic、EduAssignments.ReadWrite  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|应用程序 | 不支持。 | 
+|Application | 不支持。 | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /education/classes/{id}/assignments/{id}/submissions/{id}/resources/{id}
+DELETE /education/classes/{class-id}/assignments/{assignment-id}/submissions/{submission-id}/resources/{resource-id}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -48,7 +48,7 @@ DELETE /education/classes/{id}/assignments/{id}/submissions/{id}/resources/{id}
 如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 下面展示了示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -57,7 +57,7 @@ DELETE /education/classes/{id}/assignments/{id}/submissions/{id}/resources/{id}
   "name": "delete_educationsubmissionresource"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/submissions/850f51b7/resources/f2387c3b-ec39-4bf2-a399-d7242677f024
+DELETE https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/submissions/da443246-384d-673b-32db-bdba9d7f2b51/resources/88b441b0-cb05-45ab-a0f0-139f978e0993
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-educationsubmissionresource-csharp-snippets.md)]
@@ -77,7 +77,7 @@ DELETE https://graph.microsoft.com/beta/education/classes/11021/assignments/1900
 
 ---
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 下面展示了示例响应。 
 
 <!-- {

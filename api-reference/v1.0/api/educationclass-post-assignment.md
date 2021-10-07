@@ -5,20 +5,20 @@ ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: cb5bdd507d35bc004faa977dd2605637a60a4321
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4c3a4d8d0f74793dd11b1759756e2592ede19eea
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147463"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220722"
 ---
 # <a name="create-educationassignment"></a>创建 educationAssignment
 
 命名空间：microsoft.graph
 
-创建新的工作分配。 
+创建新工作分配。 
 
-只有班级中的教师才能创建作业。 作业从"草稿"状态开始，这意味着学生在发布之前不会看到作业。 
+只有班级中的教师才能创建作业。 作业从"草稿"状态开始，这意味着学生在发布之前不会看到作业。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -27,12 +27,12 @@ ms.locfileid: "59147463"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  EduAssignments.ReadWriteBasic、EduAssignments.ReadWrite  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|应用程序 | 不支持。 | 
+|Application | 不支持。 | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /education/classes/{id}/assignments
+POST /education/classes/{class-id}/assignments
 ```
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
@@ -56,26 +56,26 @@ POST /education/classes/{id}/assignments
   "name": "create_educationassignment_from_educationclass"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/education/classes/8ddcac47-0b45-4cdb-b10a-d36a07a3dd62/assignments
+POST https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments
 Content-type: application/json
 Content-length: 279
 
-{ 
-  "dueDateTime": "2014-02-01T00:00:00Z",
-  "displayName": "Midterm 1",
-    "instructions":  {
-      "contentType": "text",
-      "content": "Read chapters 1 through 3"
+{
+    "dueDateTime": "2021-09-07T00:00:00Z",
+    "displayName": "Reading test 09.03 #4",
+    "instructions": {
+        "contentType": "text",
+        "content": "Read chapter 4"
     },
-      "grading": {
+    "grading": {
         "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
-        "maxPoints": 100
-      },
-      "assignTo": {
+        "maxPoints": 50
+    },
+    "assignTo": {
         "@odata.type": "#microsoft.graph.educationAssignmentClassRecipient"
-      },
-      "status":"draft",
-      "allowStudentsToAddResourcesToSubmission": true
+    },
+    "status": "draft",
+    "allowStudentsToAddResourcesToSubmission": true
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -114,51 +114,56 @@ Content-type: application/json
 Content-length: 279
 
 {
-  "addedStudentAction": "none",
-  "allowLateSubmissions": true,
-  "allowStudentsToAddResourcesToSubmission": true,
-  "assignDateTime": "2014-02-01T00:00:00Z",
-  "assignTo": {"@odata.type": "microsoft.graph.educationAssignmentRecipient"},
-  "assignedDateTime": "2014-02-01T00:00:00Z",
-  "classId": "11018",
-  "closeDateTime": "2014-02-11T00:00:00Z",
-  "createdBy": {
-      "application": null,
-      "device": null,
-      "user": {
-          "id": "63cc91d2-59c7-4732-9594-35b91a26b340",
-          "displayName": null
-      }
-  },
-  "createdDateTime": "2014-02-01T00:00:00Z",
-  "displayName": "published",
-  "dueDateTime": "2014-02-01T00:00:00Z",
-  "grading": {
-    "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
-    "maxPoints": 100
-  },
-  "instructions": {
-    "contentType": "text",
-    "content": "Read chapters 1 through 3"
-  },
-  "lastModifiedBy": {
-      "application": null,
-      "device": null,
-      "user": {
-          "id": "63cc91d2-59c7-4732-9594-35b91a26b340",
-          "displayName": null
-      }
-  },
-  "lastModifiedDateTime": "2014-02-01T00:00:00Z",
-  "notificationChannelUrl": null,
-  "resourcesFolderUrl": null,
-  "allowStudentsToAddResourcesToSubmission": false,
-  "status": "draft",
-  "notificationChannelUrl": null,
-  "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7b%22subEntityId%22%3a%22%7b%5c%22version%5c%22%3a%5c%221.0%5c%22%2c%5c%22config%5c%22%3a%7b%5c%22classes%5c%22%3a%5b%7b%5c%22id%5c%22%3a%5c%228b8cec7f-d0d8-4974-982a-e29396ddbe7f%5c%22%2c%5c%22displayName%5c%22%3anull%2c%5c%22assignmentIds%5c%22%3a%5b%5c%22107dac08-35a5-4546-b4b5-1736fea56847%5c%22%5d%7d%5d%7d%2c%5c%22action%5c%22%3a%5c%22navigate%5c%22%2c%5c%22view%5c%22%3a%5c%22assignment-viewer%5c%22%7d%22%2c%22channelId%22%3anull%7d",
-  "addedStudentAction": "none"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments/$entity",
+    "classId": "72a7baec-c3e9-4213-a850-f62de0adad5f",
+    "displayName": "Reading test 09.03 #5",
+    "closeDateTime": null,
+    "dueDateTime": "2021-09-07T00:00:00Z",
+    "assignDateTime": null,
+    "assignedDateTime": null,
+    "allowLateSubmissions": true,
+    "resourcesFolderUrl": null,
+    "createdDateTime": "2021-09-03T23:57:14.6088791Z",
+    "lastModifiedDateTime": "2021-09-03T23:57:14.6398613Z",
+    "allowStudentsToAddResourcesToSubmission": true,
+    "status": "draft",
+    "notificationChannelUrl": null,
+    "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%2272a7baec-c3e9-4213-a850-f62de0adad5f%5C%22,%5C%22displayName%5C%22%3Anull,%5C%22assignmentIds%5C%22%3A%5B%5C%224679bc1b-90c5-45af-ae1a-d5357672ed39%5C%22%5D%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22assignment-viewer%5C%22%7D%22,%22channelId%22%3Anull%7D",
+    "addedStudentAction": "none",
+    "id": "4679bc1b-90c5-45af-ae1a-d5357672ed39",
+    "instructions": {
+        "content": "Read chapter 5",
+        "contentType": "text"
+    },
+    "grading": {
+        "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
+        "maxPoints": 50
+    },
+    "assignTo": {
+        "@odata.type": "#microsoft.graph.educationAssignmentClassRecipient"
+    },
+    "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+            "displayName": null
+        }
+    },
+    "lastModifiedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+            "displayName": null
+        }
+    }
 }
 ```
+
+## <a name="see-also"></a>另请参阅
+
+* [分配和提交状态、转换和限制](/graph/assignments-submissions-states-transition)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

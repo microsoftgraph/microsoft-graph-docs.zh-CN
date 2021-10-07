@@ -1,16 +1,16 @@
 ---
 title: 删除 teamsApp
-description: '从Teams应用程序目录中从组织的应用程序目录中删除 (应用程序) 。 '
-localization_priority: Normal
+description: '从Teams租户应用程序目录组织的应用程序目录中删除 (应用程序) 。 '
+ms.localizationpriority: medium
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 34e9e7a1f8e98eda66bf34950c9d7f0b9cac7d6e
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 7859ee48e3d5b324d61ff356c643fe449feaf010
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786697"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220533"
 ---
 # <a name="delete-teamsapp"></a>删除 teamsApp
 
@@ -20,21 +20,21 @@ ms.locfileid: "52786697"
 
 <!-- markdownlint-disable MD001 -->
 
-从 [租户](../resources/teamsapp.md) 应用程序目录组织的应用程序目录中 (应用程序) 。 若要删除应用，应用的 **distributionMethod** 属性必须设置为 `organization` 。
+从 [租户应用程序](../resources/teamsapp.md) 目录组织的应用程序目录中 (应用程序) 。 若要删除应用，应用的 **distributionMethod** 属性必须设置为 `organization` 。
 
 您还可以使用此 API 从评价过程中删除已提交的应用。
 
 ## <a name="permissions"></a>权限
 
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 >**注意：** 只有全局管理员可以调用此 API。 
 
 | 权限类型                        | 权限（从最低特权到最高特权）|
 |:----------------------------------     |:-------------|
-| 委派（工作或学校帐户） | AppCatalog.Submit、AppCatalog.ReadWrite.All、Directory.ReadWrite.All |
+| 委派（工作或学校帐户） | AppCatalog.Submit、AppCatalog.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。|
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 

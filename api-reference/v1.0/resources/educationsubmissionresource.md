@@ -5,12 +5,12 @@ author: sharad-sharma-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 632e2d746e4204e2c3c64f429f443ff40ed5a69f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0663fb168100d3dcded42dcd621650899d8b72a9
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59118734"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220750"
 ---
 # <a name="educationsubmissionresource-resource-type"></a>educationSubmissionResource 资源类型
 
@@ -18,21 +18,22 @@ ms.locfileid: "59118734"
 
 用于提交的资源的包装器。 
 
-如果从工作分配复制了工作分配资源，包装器会添加一个指向该分配资源的指针。  
+如果从工作分配复制了工作分配资源，包装器会添加一个指向该工作分配的指针。  
 
 
 ## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
+|[列出资源](../api/educationsubmission-list-resources.md) | [educationSubmissionResource](educationsubmissionresource.md) 对象 |返回 **educationSubmissionResource 对象** 的列表。|
 |[获取 educationSubmissionResource](../api/educationsubmissionresource-get.md) | [educationSubmissionResource](educationsubmissionresource.md) |读取 **educationSubmissionResource 对象的属性和** 关系。|
-|[删除](../api/educationsubmissionresource-delete.md) | 无 |删除 **educationSubmissionResource** 对象。 |
+|[Delete](../api/educationsubmissionresource-delete.md) | 无 |删除 **educationSubmissionResource** 对象。 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |assignmentResourceUrl|String|指向从其中复制此资源的分配的指针。 如果为空，则学生已上传资源。|
-|id|String| 只读。|
+|id|字符串| 只读。|
 |resource|[educationResource](educationresource.md)|Resource 对象。|
 
 ## <a name="relationships"></a>关系

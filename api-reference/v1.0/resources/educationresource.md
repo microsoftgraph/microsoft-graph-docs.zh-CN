@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 0706df40990468180e987f758f3217842631f214
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 17accd1da2d273878297ddba1c6e8d9caac8f46b
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59765646"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220540"
 ---
 # <a name="educationresource-resource-type"></a>educationResource 资源类型
 
 命名空间：microsoft.graph
 
-系统中所有资源对象的基类。 
+educationExcelResource、educationFileResource、educationLinkResource、educationPowerPointResource、educationWordResource、educationMediaResource[](../resources/educationmediaresource.md)和[](../resources/educationlinkresource.md)[educationExternalResource 的基类](../resources/educationexternalresource.md)。 [](../resources/educationexcelresource.md) [](../resources/educationfileresource.md) [](../resources/educationpowerpointresource.md) [](../resources/educationwordresource.md)
 
 educationResource 与作业和/或[](educationassignment.md)提交相关联，它[](educationsubmission.md)表示正在提供或提交的学习对象。 不能直接实例化资源;您必须创建一个表示所使用的资源类型的子类。
 

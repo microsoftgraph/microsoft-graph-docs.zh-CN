@@ -1,16 +1,16 @@
 ---
 title: 发布 teamsapp
-description: 将应用发布到 Microsoft Teams 应用目录。
+description: 将应用程序发布到Microsoft Teams目录。
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a62760b46c66d2046c8d42a476275c5430ad043a
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: ba64d880edb73f3fab51fcfaf6edc1c9122abb21
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50942220"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220743"
 ---
 # <a name="publish-teamsapp"></a>发布 teamsApp
 
@@ -18,10 +18,10 @@ ms.locfileid: "50942220"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将 [应用](../resources/teamsapp.md) 发布到 Microsoft Teams 应用目录。
+将[应用程序发布到](../resources/teamsapp.md)Microsoft Teams目录。
 具体而言，此 API 将应用程序发布到组织的目录 (租户应用程序目录) ;创建的资源将 **具有 的 distributionMethod** 属性值 `organization` 。
 
-**requiresReview** 属性允许任何用户提交应用供管理员审阅。 管理员可以通过此 API 或 Microsoft Teams 管理中心批准或拒绝这些应用。
+**requiresReview** 属性允许任何用户提交应用供管理员审阅。 管理员可以通过此 API 或管理中心批准Microsoft Teams应用。
 
 ## <a name="permissions"></a>权限
 
@@ -29,9 +29,9 @@ ms.locfileid: "50942220"
 
 | 权限类型                        | 权限（从最低特权到最高特权）|
 |:----------------------------------     |:-------------|
-| 委派（工作或学校帐户） | AppCatalog.Submit、AppCatalog.ReadWrite.All、Directory.ReadWrite.All |
+| 委派（工作或学校帐户） | AppCatalog.Submit、AppCatalog.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持|
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -51,18 +51,18 @@ POST /appCatalogs/teamsApps?requiresReview:{Boolean}
 
 |属性|类型|说明|
 |----|----|----|
-|requiresReview| Boolean | 此可选查询参数将触发应用评审过程。 具有管理员权限的用户无需触发审查即可提交应用。 如果用户想要在发布之前请求审阅，则必须将 设置为  `requiresReview` `true` 。 具有管理员权限的用户可以选择不设置或将值设置为 ，应用将被视为已批准， `requiresReview` `false`  并且将立即发布。|
+|requiresReview| 布尔值 | 此可选查询参数将触发应用评审过程。 具有管理员权限的用户无需触发审查即可提交应用。 如果用户想要在发布之前请求审阅，则必须将 设置为  `requiresReview` `true` 。 具有管理员权限的用户可以选择不设置或将值设置为 ，应用将被视为已批准， `requiresReview` `false`  并且将立即发布。|
 
 ## <a name="request-headers"></a>请求标头
 
 | 标头        | 值           |
 |:--------------|:--------------  |
 | Authorization | Bearer {token}。必需。  |
-| Content-Type  | application/zip。 必填。 |
+| Content-Type  | application/zip。 必需。 |
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，包括 Teams zip 清单有效负载。 有关详细信息，请参阅 [创建应用包](/microsoftteams/platform/concepts/apps/apps-package)。  
+在请求正文中，包括Teams zip 清单有效负载。 有关详细信息，请参阅 [创建应用包](/microsoftteams/platform/concepts/apps/apps-package)。  
 
 应用程序目录中的每个应用程序必须具有唯一的清单 `id` 。
 
@@ -100,7 +100,7 @@ Content-length: 244
 
 ---
 
-若要了解如何创建 Microsoft Teams 应用程序 zip 文件，请参阅 [创建应用包](/microsoftteams/platform/concepts/apps/apps-package)。
+若要了解如何创建应用程序 zip Microsoft Teams，请参阅[创建应用包](/microsoftteams/platform/concepts/apps/apps-package)。
 <!-- markdownlint-disable MD024 -->
 #### <a name="response"></a>响应
 
@@ -123,7 +123,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-upload-a-new-application-for-review-to-an-organizations-app-catalog"></a>示例 2：将新应用程序上载到组织的应用程序目录进行审阅
+### <a name="example-2-upload-a-new-application-for-review-to-an-organizations-app-catalog"></a>示例 2：Upload新应用程序以检查组织的应用程序目录
 
 #### <a name="request"></a>请求
 

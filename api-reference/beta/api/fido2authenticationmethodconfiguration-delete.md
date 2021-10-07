@@ -2,15 +2,15 @@
 title: 删除 fido2AuthenticationMethodConfiguration
 description: 删除 fido2AuthenticationMethodConfiguration 对象。
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 369f2effe3a2a11a6af57f276999022af7fc3d60
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 36b26adc18cdd8767194f927cd30a5a91ced7bfd
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50959194"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220589"
 ---
 # <a name="delete-fido2authenticationmethodconfiguration"></a>删除 fido2AuthenticationMethodConfiguration
 命名空间：microsoft.graph
@@ -27,10 +27,11 @@ ms.locfileid: "50959194"
 |:---|:---|
 |委派（工作或学校帐户）|Policy.ReadWrite.AuthenticationMethod|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|Application|不支持。|
 
 对于委派方案，管理员需要以下 [角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 
+* 身份验证策略管理员
 * 全局管理员
 
 
