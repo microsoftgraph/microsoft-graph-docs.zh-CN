@@ -1,19 +1,19 @@
 ---
-title: 使用 Microsoft Microsoft 搜索 中的 Graph API 搜索自定义类型
-description: 可以使用 Microsoft 搜索 API 通过[externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true)资源导入外部数据，并针对此外部内容运行搜索查询。
+title: 使用 Microsoft Microsoft 搜索中的 Graph API 搜索自定义类型
+description: 可以使用 Microsoft 搜索 API 通过[externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true)资源导入外部数据，并对此外部内容运行搜索查询。
 author: nmoreau
 ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: 53716d886f586207fce607234d3cae993fc38794
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 18269238f77c1c9405242326a5015cdc620c4092
+ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59127904"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60214823"
 ---
 # <a name="use-the-microsoft-search-api-to-search-custom-types-imported-using-microsoft-graph-connectors-preview"></a>使用 Microsoft 搜索 API 搜索使用 Microsoft Graph 连接器导入的自定义 (预览)  
 
-使用 Microsoft 搜索 API 跨 Microsoft Graph 连接器进行检索[和索引的内容](/microsoftsearch/connectors-overview)。 内容通过 Microsoft 提供的内置[](/microsoftsearch/connectors-gallery)连接器或通过使用[Microsoft](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true)Graph连接器 API 实现的自定义连接器导入。
+使用 Microsoft 搜索 API 跨 Microsoft Graph 连接器进行内容[搜索](/microsoftsearch/connectors-overview)。 内容通过 Microsoft 提供的内置[](/microsoftsearch/connectors-gallery)连接器或通过使用[Microsoft](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true)Graph连接器 API 实现的自定义连接器导入。
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
@@ -121,7 +121,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-2-retrieve-items-using-semantic-labels"></a>示例 2：使用语义标签检索项目
+## <a name="example-2-retrieve-items-using-semantic-labels"></a>示例 2：使用语义标签检索项
 
 ### <a name="request"></a>请求
 
