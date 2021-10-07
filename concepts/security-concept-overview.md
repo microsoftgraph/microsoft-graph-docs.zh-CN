@@ -5,16 +5,16 @@ author: preetikr
 ms.localizationpriority: high
 ms.prod: security
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: eb11b07c2770fc3724ed374b42f94bf1b4ade520
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0b054c0defdce7ba026e5391bd16aadc3bbead8a
+ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59093944"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60214655"
 ---
 # <a name="microsoft-graph-security-api-overview"></a>Microsoft Graph 安全性 API 概述
 
-Microsoft Graph 安全性 API 可用于连接 Microsoft 安全产品、服务和合作伙伴，以简化安全操作并改进威胁防护、检测和响应功能。 作为中介服务（或代理），Microsoft Graph 安全性 API 提供了一个编程接口，用于连接多个 [Microsoft Graph 安全提供程序](/graph/api/resources/securityvendorinformation?view=graph-rest-1.0)（亦称为“安全提供程序”或“提供程序”）。 向 Microsoft Graph 安全性 API 发出的请求被联合到所有适用的安全提供程序。 结果以通用架构的形式聚合并返回到发出请求的应用，如下图所示。 有关详细信息，请参阅 [Microsoft Graph 安全性 API 数据流](security-dataflow.md)。
+Microsoft Graph 安全性 API 可用于连接 Microsoft 安全产品、服务和合作伙伴，以简化安全操作并改进威胁防护、检测和响应功能。 作为中介服务（或代理），Microsoft Graph 安全性 API 提供了一个编程接口，用于连接多个 [Microsoft Graph 安全提供程序](/graph/api/resources/securityvendorinformation)（亦称为“安全提供程序”或“提供程序”）。 向 Microsoft Graph 安全性 API 发出的请求被联合到所有适用的安全提供程序。 结果以通用架构的形式聚合并返回到发出请求的应用，如下图所示。 有关详细信息，请参阅 [Microsoft Graph 安全性 API 数据流](security-dataflow.md)。
 
 ![security_overview_diagram_1.png](./images/security-overview-diagram-1.png)
 
@@ -24,11 +24,11 @@ Microsoft Graph 安全性 API 可用于连接 Microsoft 安全产品、服务和
 
 ## <a name="why-use-the-microsoft-graph-security-api"></a>为什么要使用 Microsoft Graph 安全性 API？
 
-[Microsoft Graph 安全性 API](/graph/api/resources/security-api-overview?view=graph-rest-1.0) 可让你轻松连接来自 Microsoft 和合作伙伴的安全解决方案。 借助它，可以更容易地实现并丰富这些解决方案的价值。 你可以使用以下方法之一轻松连接 Microsoft Graph 安全性 API，具体取决于你的要求：
+[Microsoft Graph 安全性 API](/graph/api/resources/security-api-overview) 可让你轻松连接来自 Microsoft 和合作伙伴的安全解决方案。 借助它，可以更容易地实现并丰富这些解决方案的价值。 你可以使用以下方法之一轻松连接 Microsoft Graph 安全性 API，具体取决于你的要求：
 
 - [编写代码](https://aka.ms/graphsecuritysdk) – 查找以 C#、Java、NodeJS 等语言编写的[代码示例](https://aka.ms/graphsecurityapicode)。
 - [使用脚本进行连接](https://aka.ms/graphsecuritypowershellsampleblog) – 查找 [PowerShell 示例](https://aka.ms/graphsecuritypowershellsample)。
-- [拖放到工作流和方案中](https://aka.ms/graphsecurityconnectorsblogpost) – 将 [Microsoft Graph 安全连接器](/azure/connectors/connectors-integrate-security-operations-create-api-microsoft-graph-security)用于 [Azure Logic Apps](/azure/logic-apps/logic-apps-overview)、[Microsoft Flow](https://flow.microsoft.com/) 和 [PowerApps](https://powerapps.microsoft.com/)。
+- [拖放到工作流和行动手册中](https://aka.ms/graphsecurityconnectorsblogpost) - 将 [Microsoft Graph 安全连接器](/azure/connectors/connectors-integrate-security-operations-create-api-microsoft-graph-security) 用于 [Azure 逻辑应用](/azure/logic-apps/logic-apps-overview)、[Microsoft Flow](https://flow.microsoft.com/) 和 [Power Apps](https://powerapps.microsoft.com/)。
 - [将数据导入报告和仪表板](https://aka.ms/graphsecuritypowerbiconnectorblogpost) – 将 [Microsoft Graph 安全连接器用于 Power BI](/power-bi/connect-data/desktop-connect-graph-security)。
 - [使用 Jupyter 笔记本进行连接](https://jupyter.org/) – 查找 [Jupyter 笔记本示例](https://aka.ms/graphsecurityjupyternotebooks)。  
 
@@ -81,11 +81,11 @@ Microsoft Graph 安全性 API 可用于连接 Microsoft 安全产品、服务和
 ## <a name="api-reference"></a>API 参考
 在查找此服务的 API 参考？
 
-- [Microsoft Graph v1.0 中的安全性 API](/graph/api/resources/security-api-overview?view=graph-rest-1.0)
-- [Microsoft Graph beta 中的安全性 API](/graph/api/resources/security-api-overview?view=graph-rest-beta)
+- [Microsoft Graph v1.0 中的安全性 API](/graph/api/resources/security-api-overview)
+- [Microsoft Graph beta 中的安全性 API](/graph/api/resources/security-api-overview?view=graph-rest-beta&preserve-view=true)
 
 ## <a name="next-steps"></a>后续步骤
 
-- [使用 Microsoft Graph 安全性 API](/graph/api/resources/security-api-overview?view=graph-rest-1.0)
+- [使用 Microsoft Graph 安全性 API](/graph/api/resources/security-api-overview?)
 - 浏览 [Microsoft Graph 安全 API 示例](https://aka.ms/graphsecurityapicode)
 - 想要成为安全提供程序？ 请联系 [graphsecfeedback](mailto:graphsecfeedback@microsoft.com)。

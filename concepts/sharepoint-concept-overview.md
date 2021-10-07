@@ -4,12 +4,12 @@ description: SharePoint 是移动且智能的内部网。 借助 SharePoint，�
 ms.localizationpriority: high
 ms.prod: sharepoint
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: d952f2fb0e907f22eea60290d92f16cdd09101cf
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2ad423d789585263da8bc0812c78337ed9dee6e3
+ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59093860"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60214585"
 ---
 # <a name="sharepoint-sites-and-content-api-overview"></a>SharePoint 网站和内容 API 概述
 
@@ -25,7 +25,7 @@ SharePoint 网站可增强团队的协作和沟通。 Microsoft 365 组、Micros
 ### <a name="unleash-your-data-with-sharepoint-lists"></a>借助 SharePoint 列表充分使用数据
 
 [列表][list]是 SharePoint 中数据存储的基础。
-[创建列表][create]以存储各种不同的业务数据，从简单的客户联系人列表到前端具有 PowerApps 的自定义业务应用程序。
+[创建列表][创建] 以存储各种不同的业务数据，从简单的客户联系人列表到以 Power Apps 为前端的自定义业务应用程序。
 使用[列][]定义架构时，SharePoint 可以保护数据的完整性，并启用丰富的索引、查询和搜索功能。
 
 ### <a name="bring-the-power-of-lists-to-your-teams-files"></a>将列表的强大功能引入团队文件中
@@ -54,22 +54,22 @@ SharePoint 将文件存储在名为文档库的特殊[列表类型][]中。
 ## <a name="api-reference"></a>API 参考
 在查找此服务的 API 参考？
 
-- [Microsoft Graph v1.0 中的 SharePoint API](/graph/api/resources/sharepoint?view=graph-rest-1.0)
-- [Microsoft Graph beta 中的 SharePoint API](/graph/api/resources/sharepoint?view=graph-rest-beta)
+- [Microsoft Graph v1.0 中的 SharePoint API](/graph/api/resources/sharepoint)
+- [Microsoft Graph beta 中的 SharePoint API](/graph/api/resources/sharepoint?view=graph-rest-beta&preserve-view=true)
 
 ## <a name="next-steps"></a>后续步骤
 
-详细了解[使用网站](/graph/api/resources/sharepoint?view=graph-rest-1.0)，开始在 Microsoft Graph 中使用 SharePoint。
+详细了解[使用网站](/graph/api/resources/sharepoint)，开始在 Microsoft Graph 中使用 SharePoint。
 
-[list]: /graph/api/resources/list?view=graph-rest-1.0
-[列]: /graph/api/resources/columndefinition?view=graph-rest-1.0
-[列表类型]: /graph/api/resources/listinfo?view=graph-rest-1.0
-[创建]: /graph/api/list-create?view=graph-rest-1.0
-[查询]: /graph/api/listitem-get?view=graph-rest-1.0
-[驱动器]: /graph/api/resources/drive?view=graph-rest-1.0
-[OneDrive API]: /graph/api/resources/onedrive?view=graph-rest-1.0
+[list]: /graph/api/resources/list
+[列]: /graph/api/resources/columndefinition
+[列表类型]: /graph/api/resources/listinfo
+[创建]: /graph/api/list-create
+[查询]: /graph/api/listitem-get
+[驱动器]: /graph/api/resources/drive
+[OneDrive API]: /graph/api/resources/onedrive
 [SharePoint Framework]: /sharepoint/dev/spfx/sharepoint-framework-overview
 [SharePoint 外接程序]: /sharepoint/dev/sp-add-ins/sharepoint-add-ins
 [SharePoint 开发人员中心]: https://developer.microsoft.com/sharepoint
 [SharePoint 开发人员文档]: /sharepoint/dev/
-[SharePoint]: /graph/api/resources/sharepoint?view=graph-rest-1.0
+[SharePoint]: /graph/api/resources/sharepoint

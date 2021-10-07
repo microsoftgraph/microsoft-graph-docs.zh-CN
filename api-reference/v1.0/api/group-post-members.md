@@ -5,23 +5,23 @@ ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: efb7fbb29b33551edcbc33d86b63193fa7658a19
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a64b03cd73ea7150a2058a31bf23ce1735429ca3
+ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59074288"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60214718"
 ---
 # <a name="add-member"></a>添加成员
 
 命名空间：microsoft.graph
 
-通过 **members** 导航属性将成员添加到 Microsoft 365 组或安全组中。
+通过 **成员** 导航属性将成员添加到组。
 
 可以添加用户、组织联系人、服务主体或其他组。 
 
 > [!IMPORTANT]
-> + 只能向通过云管理的安全组和 Microsoft 365 组添加用户。
+> + 只能向通过云管理的组添加用户。
 > + 不能将安全组添加到 Microsoft 365 组。
 > + 不能将 Microsoft 365 组添加到安全组或其他 Microsoft 365 组。
 

@@ -3,12 +3,12 @@ title: Microsoft Graph 早期版本的亮点
 description: Microsoft Graph 早期版本中的新增功能
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: 3bd65907e98b9997f9cbeb6c7c023329e7f7b030
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: efdb89c348e6da6b6f794ee5c6365e25d64a0147
+ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59765611"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60214382"
 ---
 # <a name="highlights-of-earlier-releases"></a>早期版本的亮点
 
@@ -38,7 +38,7 @@ ms.locfileid: "59765611"
 详情和建议的补救措施见[参考文献](/graph/api/resources/cloudpconpremisesconnectionhealthcheck?view=graph-rest-beta&preserve-view=true#cloudpconpremisesconnectionhealthcheckerrortype-values)。
 
 ### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 公司管理
-Intune beta 版每月更新。 设置 2021 年 7 月的 **日期** 筛选器，并查找具有相同标题的部分。
+Beta 版本的 Intune 月度更新。将 **日期** 筛选器设置为 2021 年 7 月，并查找具有此相同标题的部分。
 
 ### <a name="devices-and-apps--multi-tenant-management"></a>设备和应用|多租户管理
 [Microsoft 365 Lighthouse API](managedtenants-concept-overview.md) 的首次亮相，使管理服务提供商 (MSP) 能够大规模地远程管理多个客户租户的合规性和威胁检测，并帮助使租户设备处于健康和安全状态。
@@ -408,7 +408,7 @@ Intune [3](https://developer.microsoft.com/graph/changelog/?from=2021-03-01&to=2
 使用 **membershipRuleProcessingStatus** 属性获取基于规则的动态组的处理状态。当用户的属性发生更改时，此选项非常有用，用户在基于规则的 [Microsoft 365 组](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true)中的会员资格将根据为组织设置的组会员资格规则重新评估。 
 
 ### <a name="identity-and-access--directory-management"></a>身份和访问 | 目录管理
-获取用户或设备对构建在PowerApps上的第三方软件的[使用权](/graph/api/resources/UsageRight?view=graph-rest-beta&preserve-view=true)，或者，设备对订阅的使用权。 使用权包括相应服务或产品的标识符，以及使用权的当前状态，如激活、未激活、警告或暂停。
+获取用户或设备对构建在 Power Apps 上的第三方软件的 [使用权](/graph/api/resources/UsageRight?view=graph-rest-beta&preserve-view=true)，或者设备对订阅的使用权。 使用权包括相应服务或产品的标识符，以及使用权的当前状态，如激活、未激活、警告或暂停。
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
 - 应用可以使用应用程序权限，让管理员管理用户的 [身份验证方法](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta&preserve-view=true)。
@@ -1020,7 +1020,7 @@ v1.0 中 [ shifts API](/graph/api/resources/shift?view=graph-rest-1.0&preserve-v
 - [创建事件并作为联机会议更新](outlook-calendar-online-meetings.md)：
   - 对于每个 **日历**，指定允许的和默认的在线会议提供程序。
   - 创建或更新[事件](/graph/api/resources/event?view=graph-rest-1.0&preserve-view=true)以使其在线可用，并提供详细信息供与会者加入在线会议。 
-  - 具体来说，使用 **事件** 的新 **onlineMeetingProvider** 和 **onlineMeeting** 属性来将 Microsoft Teams 设置或标识为在线会议提供程序，这是 **onlineMeetingUrl** 属性的 [已知问题](known-issues.md#onlinemeetingurl-property-support-for-microsoft-teams)的解决方法。
+  - 具体来说，使用 **事件** 的新 **onlineMeetingProvider** 和 **onlineMeeting** 属性来将 Microsoft Teams 设置或标识为在线会议提供程序，这是 **onlineMeetingUrl** 属性的 [已知问题](known-issues.md#onlinemeetingurl-property-is-not-supported-for-microsoft-teams)的解决方法。
 - 将[高达 150MB 的文件附件](outlook-large-attachments.md)添加到[event](/graph/api/resources/event?view=graph-rest-1.0&preserve-view=true)。
 
 ### <a name="files"></a>文件
@@ -1320,14 +1320,14 @@ GET /teams/{teamId}/channels/{channelId}/filesFolder
 ## <a name="october-2019-new-in-preview"></a>2019 年 10 月：预览版中的新增功能
 
 ### <a name="calendar"></a>日历
-- 会议组织者可以[允许被邀请者提议备选会议时间](outlook-calendar-meeting-proposals.md)。 当收到包含建议的备选时间的会议响应时，组织者可以决定接受该建议并[更新](/graph/api/event-update?view=graph-rest-beta&preserve-view=true)会议时间。
+- 会议组织者可以 [允许受邀者建议备选会议时间](outlook-calendar-meeting-proposals.md)。当收到包含建议备选时间的会议响应时，组织者可以决定接受该建议，并 [更新](/graph/api/event-update?view=graph-rest-beta&preserve-view=true) 会议时间。
 - 编程日历共享与 Outlook 用户体验的奇偶校验更加接近。 除了跟踪日历的当前用户权限和共享状态之外：
   - 对于每个[日历](/graph/api/resources/calendar?view=graph-rest-beta&preserve-view=true)，你现在可以管理与之共享日历的每个用户的[权限](/graph/api/resources/calendarpermission?view=graph-rest-beta&preserve-view=true)。 
   - 对于每个[邮箱](/graph/api/resources/mailboxsettings?view=graph-rest-beta&preserve-view=true)，你现在可以指定代理人、邮箱所有者，还是两者同时接收会议邮件和会议响应。 
 - 其他在线会议支持：
   - 对于每个 **日历**，指定允许的和默认的在线会议提供程序。
   - 创建或更新[事件](/graph/api/resources/event?view=graph-rest-beta&preserve-view=true)以使其在线可用，并提供详细信息供与会者加入在线会议。 
-  - 具体来说，使用 **事件** 的新 **onlineMeetingProvider** 和 **onlineMeeting** 属性来将 Microsoft Teams 设置或标识为在线会议提供程序，这是 **onlineMeetingUrl** 属性的 [已知问题](known-issues.md#onlinemeetingurl-property-support-for-microsoft-teams)的解决方法。
+  - 具体来说，使用 **事件** 的新 **onlineMeetingProvider** 和 **onlineMeeting** 属性来将 Microsoft Teams 设置或标识为在线会议提供程序，这是 **onlineMeetingUrl** 属性的 [已知问题](known-issues.md#onlinemeetingurl-property-is-not-supported-for-microsoft-teams)的解决方法。
 
 ### <a name="devices-and-apps"></a>设备和应用
 Intune [10 月](changelog.md#october-2019)更新
@@ -1340,7 +1340,7 @@ Intune [10 月](changelog.md#october-2019)更新
 - [分配](/graph/api/group-assignlicense?view=graph-rest-beta&preserve-view=true)或删除[组](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true)中用户的许可证。
 
 ### <a name="identity-and-access"></a>标识和访问
-- 使用[条件访问策略](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta&preserve-view=true)自定义组织的访问规则。 这些规则会考虑有关用户或设备标识（如用户或组成员身份、IP 位置）的信号，以及尝试访问特定应用程序等行为和有风险的登录行为。
+- 使用 [条件访问策略](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta&preserve-view=true) 来自定义组织的访问规则。这些规则考虑有关用户或设备标识的信号，例如用户或组成员身份、IP 位置以及例如尝试访问特定应用程序的行为，以及有风险的登录行为。
 - 使用[权利管理](/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta&preserve-view=true)来管理组织内外的用户对组、应用程序和 SharePoint Online 网站的访问。
 - 为[应用程序](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true)和[服务主体](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true)添加和删除[密码凭据](/graph/api/resources/passwordcredential?view=graph-rest-beta&preserve-view=true)。
 - 管理 Azure AD B2C [信任框架策略密钥](/graph/api/resources/trustframeworkkeyset?view=graph-rest-beta&preserve-view=true)。
@@ -1354,7 +1354,7 @@ Intune [10 月](changelog.md#october-2019)更新
 
 ### <a name="microsoft-graph-security-api"></a>Microsoft Graph 安全性 API
 - 预览版与 RSA NetWitness、ServiceNow 和 Splunk 集成，以关联和同步[警报](/graph/api/resources/security-api-overview?view=graph-rest-beta&preserve-view=true#alerts)，并改善威胁防护和响应。
-- 已将新触发器添加到适用于逻辑应用和流的 [Microsoft Graph 安全连接器](/connectors/microsoftgraphsecurity/)和 [playbook](/azure/security-center/security-center-playbooks) 中。 请参阅 [playbook 示例](https://github.com/microsoftgraph/security-api-solutions/tree/master/Playbooks)。
+- 已将新触发器添加到适用于逻辑应用和流的 [Microsoft Graph 安全连接器](/connectors/microsoftgraphsecurity/) 和 [行动手册](/azure/security-center/security-center-playbooks) 中。请参阅 [行动手册示例](https://github.com/microsoftgraph/security-api-solutions/tree/master/Playbooks)。
 - 支持向 Microsoft Defender ATP 发送[威胁指示器](/graph/api/resources/security-api-overview?view=graph-rest-beta&preserve-view=true#threat-indicators-preview)，以使用其自己的智能源阻止威胁或发出威胁警报。 通过与 ThreatConnect 等合作伙伴集成，客户能够直接从威胁智能和自动化解决方案发送指示器。 
 
 ### <a name="notifications"></a>通知
@@ -1392,7 +1392,7 @@ Intune [10 月](changelog.md#october-2019)更新
 ## <a name="september-2019-new-in-preview"></a>2019 年 9 月：预览版中的新增功能
 
 > [!IMPORTANT]
-> _预览_ 状态下的功能（包括 API 和工具）可能会发生更改，恕不另行通知，有些功能可能永远不会提升为 GA 状态。 请不要在成品应用中使用它们。
+> 处于 _预览_ 状态的功能（包括 API 和工具）可能发生更改，恕不另行通知，并且有些功能可能永远不会提升为 GA 状态。请勿在生产应用中使用这些功能。
 
 ### <a name="devices-and-apps"></a>设备和应用
 Intune [9 月](changelog.md#september-2019)更新
@@ -1429,14 +1429,14 @@ Intune [9 月](changelog.md#september-2019)更新
 - 在[获取每 Microsoft 365 服务的用户计数报告](/graph/api/reportroot-getoffice365servicesusercounts?view=graph-rest-1.0&preserve-view=true)时，获取 Microsoft 365 上的活动和非活动用户数。
 
 ### <a name="security"></a>安全性
-- 使用新的[适用于 Splunk 的 Microsoft Graph 安全性 API 加载项](https://aka.ms/graphsecuritysplunkaddon)将多个合作伙伴产品的安全警报和看法传输至 Splunk，从而更轻松地实时关联其安全性数据。 有关详细信息，请参阅[公告](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Introducing-the-new-Microsoft-Graph-Security-API-add-on-for/ba-p/815972)。 
+- 使用新的 [适用于 Splunk 的 Microsoft Graph 安全性 API 加载项](https://aka.ms/graphsecuritysplunkaddon) 将多个合作伙伴产品的安全警报和见解传输至 Splunk，从而更轻松地实现其安全性数据的实时关联。有关详细信息，请参阅 [公告](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Introducing-the-new-Microsoft-Graph-Security-API-add-on-for/ba-p/815972)。 
 - [查看由 Microsoft 或者与安全性 API 相关的 Microsoft 合作伙伴构建的其他解决方案和连接器列表](security-integration.md)，使你以统一的格式使用数据。
 
 
 ## <a name="august-2019-new-in-preview"></a>2019 年 8 月：预览版新增功能
 
 > [!IMPORTANT]
-> _预览_ 状态下的功能（包括 API 和工具）可能会发生变更，恕不另行通知；一些功能可能永远不会升级为 GA 状态。 请不要在成品应用中使用它们。
+> 处于 _预览_ 状态的功能（包括 API 和工具）可能发生更改，恕不另行通知，并且有些功能可能永远不会提升为 GA 状态。请勿在生产应用中使用这些功能。
 
 ### <a name="devices-and-apps"></a>设备和应用
 Intune [8 月](changelog.md#august-2019)更新
@@ -1477,7 +1477,7 @@ Intune [8 月](changelog.md#august-2019)更新
 ## <a name="july-2019-new-in-preview"></a>2019 年 7 月：预览版新增功能
 
 > [!IMPORTANT]
-> _预览_ 状态下的功能（包括 API 和工具）可能会发生更改，恕不另行通知，有些功能可能永远不会提升为 GA 状态。 请不要在生产应用中使用它们。
+> 处于 _预览_ 状态的功能（包括 API 和工具）可能发生更改，恕不另行通知，并且有些功能可能永远不会提升为 GA 状态。请勿在生产应用中使用这些功能。
 
 ### <a name="calendar"></a>日历 
 按照 Exchange Online 管理员的设置，使用新的[位置 API](/graph/api/resources/place?view=graph-rest-beta&preserve-view=true) 来使用诸如 [room](/graph/api/resources/room?view=graph-rest-beta&preserve-view=true) 和 [room list](/graph/api/resources/roomlist?view=graph-rest-beta&preserve-view=true) 之类的富位置类型。
@@ -1496,14 +1496,14 @@ Intune [7 月](changelog.md#july-2019)更新
 - 使用[功能推出策略](/graph/api/resources/featureRolloutPolicy?view=graph-rest-beta&preserve-view=true)帮助租户管理员在为整个组织启用一些功能之前，针对特定组试用这些功能。
 
 ### <a name="mail"></a>邮件
-使用更精确的应用程序权限 _Mail.ReadBasic.All_ 来读取用户邮箱（邮件正文除外）、预览正文、附件和扩展属性，不包括搜索邮箱。 现适用于 [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-beta&preserve-view=true) 以及针对 [邮件](/graph/api/resources/message?view=graph-rest-beta&preserve-view=true) 和 **mailFolder** 的 [更改跟踪](delta-query-overview.md)
+使用更精细的应用程序权限，_Mail.ReadBasic.All_，来读取用户的邮箱（除任何邮件正文、预览正文、附件和扩展属性，以及搜索邮箱之外）。现在适用于 [电子邮件](/graph/api/resources/message?view=graph-rest-beta&preserve-view=true) 和 **mailFolder** 的 [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-beta&preserve-view=true) 和 [更改跟踪](delta-query-overview.md)。
 
 ### <a name="reports"></a>报告
 - 获取与已删除的项目计数和大小相关的其他[邮箱使用情况数据](/graph/api/reportroot-getmailboxusagedetail?view=graph-rest-beta&preserve-view=true)。
 
 ### <a name="teamwork"></a>团队合作
 - 为用户[安装](/graph/api/user-add-teamsappinstallation?view=graph-rest-beta&preserve-view=true)、[卸载](/graph/api/user-delete-teamsappinstallation?view=graph-rest-beta&preserve-view=true)、[升级](/graph/api/user-upgrade-teamsappinstallation?view=graph-rest-beta&preserve-view=true)和[列出已安装的 Microsoft Teams 应用](/graph/api/user-list-teamsappinstallation?view=graph-rest-beta&preserve-view=true)。
-- 使用仅应用访问权限来读取频道消息、频道消息回复以及聊天中的消息。 [请求和批准](teams-protected-apis.md)此类访问。
+- 使用仅限应用的访问权限读取频道消息、对频道消息的回复和聊天中的消息。[请求并获得此类访问权限的审批](teams-protected-apis.md)。
 
 ## <a name="may---june-2019-new-and-generally-available"></a>2019 年 5 月 - 7 月：新版本和正式版
 
@@ -1511,7 +1511,7 @@ Intune [7 月](changelog.md#july-2019)更新
 Exchange 管理员可以向应用程序授予应用程序权限, 并[限制该应用仅访问邮箱 ](auth-limit-mailbox-access.md) 的子集, 而不是默认的访问组织中的所有邮箱。 此类受限访问适用于授予[日历](permissions-reference.md#calendars-permissions)、 [联系人](permissions-reference.md#contacts-permissions)及[邮件和邮箱设置](permissions-reference.md#mail-permissions)的应用的任何应用程序权限。 查看相关的[博客公告](https://developer.microsoft.com/graph/blogs/scoping-microsoft-graph-application-permissions-to-specific-exchange-online-mailboxes/)。
 
 ### <a name="mail"></a>邮件
-使用[邮件搜索文件夹](/graph/api/resources/mailsearchfolder?view=graph-rest-1.0&preserve-view=true) API 来搜索邮件, 并访问 Outlook 电子邮件搜索结果。 查看相关的[博客公告](https://developer.microsoft.com/graph/blogs/mail-search-folder-support-for-microsoft-graph-apis/)。
+使用 [邮件搜索文件夹](/graph/api/resources/mailsearchfolder?view=graph-rest-1.0&preserve-view=true) API 搜索邮件并访问 Outlook 电子邮件搜索结果。请参阅相关 [博客公告](https://developer.microsoft.com/graph/blogs/mail-search-folder-support-for-microsoft-graph-apis/)。
 
 ### <a name="postman"></a>Postman
 除 Graph 资源管理器外, 请在[Microsoft Graph Postman 集合](use-postman.md)中试用 Microsoft Graph API, 了解 API 行为并加速应用程序开发。
@@ -1526,7 +1526,7 @@ Exchange 管理员可以向应用程序授予应用程序权限, 并[限制该�
 ## <a name="may---june-2019-new-in-preview"></a>2019 年 5 月 - 7 月：预览版新增功能
 
 > [!IMPORTANT]
-> _预览_ 状态下的功能（包括 API 和工具）可能会发生更改，恕不另行通知，有些功能可能永远不会提升为 GA 状态。 请不要在成品应用中使用它们。
+> 处于 _预览_ 状态的功能（包括 API 和工具）可能发生更改，恕不另行通知，并且有些功能可能永远不会提升为 GA 状态。请勿在生产应用中使用这些功能。
 
 ### <a name="devices-and-apps"></a>设备和应用
 - Intune [5月](changelog.md#may-2019)更新 
@@ -1545,7 +1545,7 @@ Exchange 管理员可以向应用程序授予应用程序权限, 并[限制该�
 - 获取有关 Azure AD 环境中[检测到的用户或登录风险](/graph/api/resources/riskdetection?view=graph-rest-beta&preserve-view=true)的信息。 此风险检测功能是 Azure AD 标识保护的一部分。
 
 ### <a name="mail"></a>邮件
-使用更精确的代理权限 _Mail.ReadBasic_ 来读取用户邮箱（邮件正文除外）、预览正文、附件和扩展属性，不包括搜索邮箱。 可用于读取 [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-beta&preserve-view=true) 方法和更改 [message](/graph/api/resources/message?view=graph-rest-beta&preserve-view=true) 和 **mailFolder** 的 [跟踪](delta-query-overview.md)。
+使用更精细的委派权限，_Mail.ReadBasic.All_，来读取用户的邮箱（除任何邮件正文、预览正文、附件和扩展属性，以及搜索邮箱之外）。适用于 [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-beta&preserve-view=true) 的读取方法，以及 [电子邮件](/graph/api/resources/message?view=graph-rest-beta&preserve-view=true) 和 **mailFolder** 的 [更改跟踪](delta-query-overview.md)。
 
 ### <a name="microsoft-graph-toolkit"></a>Microsoft Graph 工具包
 [Microsoft Graph 工具包](./toolkit/overview.md)是一组框架不可知的 web 组件和帮助器, 提供对 Microsoft Graph 中的数据进行身份验证和访问的便利。  由于 Microsoft Graph 工具包处于预览状态，请仅在非生产应用中使用工具包提供程序和组件。
