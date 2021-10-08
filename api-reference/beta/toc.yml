@@ -533,7 +533,7 @@ items:
                 href: api/profile-get.md
               - name: 删除用户的配置文件
                 href: api/profile-delete.md
-          - name: Teamwork
+          - name: 团队合作
             items:
               - name: 已安装的应用
                 href: resources/teamsappinstallation.md
@@ -577,7 +577,7 @@ items:
         items:
           - name: 概述
             href: resources/groups-overview.md
-          - name: 组
+          - name: Group
             href: resources/group.md
             items:
               - name: 列出组
@@ -10679,7 +10679,7 @@ items:
                 href: api/dynamics-vendor-update.md
               - name: 删除供应商
                 href: api/dynamics-vendor-delete.md
-      - name: 身份和访问
+      - name: 身份和访问控制
         displayName: 'Azure AD, Microsoft identity platform'
         items:
           - name: 概述
@@ -10975,7 +10975,7 @@ items:
                   - name: 角色分配
                     href: resources/unifiedroleassignment.md
                     items:
-                      - name: 列出角色分配
+                      - name: 列表角色分配
                         href: api/rbacapplication-list-roleassignments.md
                       - name: 创建角色分配
                         href: api/rbacapplication-post-roleassignments.md
@@ -11532,7 +11532,7 @@ items:
                             href: api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
                           - name: 删除
                             href: api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
-                      - name: 'Microsoft Authenticator已电话密码登录策略 (已弃) '
+                      - name: 'Microsoft Authenticator无密码电话已弃 (登录策略) '
                         href: resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md
                         items:
                           - name: 获取
@@ -12948,7 +12948,7 @@ items:
             items:
               - name: 项目见解
                 items:
-                  - name: '预览版 (项) '
+                  - name: '项目见解 (预览) '
                     href: resources/iteminsights.md
                   - name: 共享的内容
                     href: resources/insights-shared.md
@@ -13172,7 +13172,7 @@ items:
                     items:
                       - name: 获取通过身份验证方法注册的用户
                         href: api/authenticationmethodsroot-usersregisteredbymethod.md
-          - name: Microsoft 365使用情况报告
+          - name: Microsoft 365使用率报告
             items:
               - name: 概述
                 href: resources/report.md
@@ -13491,9 +13491,8 @@ items:
           - name: 概述
             href: resources/security-api-overview.md
           - name: 操作（预览版）
+            href: resources/securityaction.md
             items:
-              - name: 操作
-                href: resources/securityaction.md
               - name: 列出安全操作
                 href: api/securityactions-list.md
               - name: 创建安全操作
@@ -13548,14 +13547,6 @@ items:
                         href: resources/attacksimulationtrainingusercoverage.md
                       - name: 获取用户的培训覆盖范围
                         href: api/reportroot-getattacksimulationtrainingusercoverage.md
-          - name: '预览 (事件) '
-            items:
-              - name: 事件
-                href: resources/incident.md
-              - name: 列出事件
-                href: api/security-list-incidents.md
-              - name: 获取事件
-                href: api/incident-get.md
           - name: 信息保护
             items:
               - name: 标签
@@ -13635,7 +13626,7 @@ items:
             href: resources/sharepoint.md
           - name: 网站
             items:
-              - name: 网站
+              - name: Site
                 href: resources/site.md
               - name: 获取站点
                 href: api/site-get.md
@@ -13781,7 +13772,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: 更新
                     href: api/termstore-store-update.md
-              - name: 组
+              - name: Group
                 href: resources/termstore-group.md
                 items:
                   - name: 创建
@@ -14238,7 +14229,7 @@ items:
                 href: api/team-sendactivitynotification.md
               - name: 向用户发送通知
                 href: api/userteamwork-sendactivitynotification.md
-          - name: 选项卡
+          - name: Tab
             href: resources/teamstab.md
             items:
               - name: 频道中的选项卡
@@ -14545,7 +14536,7 @@ items:
                 href: api/linkedresource-delete.md
           - name: Outlook 任务（已弃用）
             items:
-              - name: 'Outlook (任务) '
+              - name: 'Outlook任务 (已弃) '
                 items:
                   - name: Outlook 任务
                     href: resources/outlooktask.md
