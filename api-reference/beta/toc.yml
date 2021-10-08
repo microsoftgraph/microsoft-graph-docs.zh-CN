@@ -440,7 +440,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: 发送邮件
                 href: api/user-sendmail.md
-          - name: 备注
+          - name: 注释
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -6580,7 +6580,7 @@ items:
                         href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-delete.md
                       - name: 更新
                         href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-update.md
-                  - name: Windows防篡改保护选项
+                  - name: Windows Defender 防篡改保护选项
                     href: resources/intune-deviceconfig-windowsdefendertamperprotectionoptions.md
                   - name: Windows 传递优化配置
                     href: resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md
@@ -10975,7 +10975,7 @@ items:
                   - name: 角色分配
                     href: resources/unifiedroleassignment.md
                     items:
-                      - name: 列表角色分配
+                      - name: 列出角色分配
                         href: api/rbacapplication-list-roleassignments.md
                       - name: 创建角色分配
                         href: api/rbacapplication-post-roleassignments.md
@@ -11397,8 +11397,6 @@ items:
                     href: api/organizationalbranding-get.md
                   - name: 更新
                     href: api/organizationalbranding-update.md
-                  - name: 删除
-                    href: api/organizationalbranding-delete.md
                   - name: 品牌打造本地化
                     href: resources/organizationalbrandinglocalization.md
                     items:
@@ -12225,7 +12223,7 @@ items:
                 items:
                   - name: Privileged Identity Management
                     href: resources/privilegedidentitymanagement-root.md
-                  - name: 'Azure AD (已弃) ) '
+                  - name: '已弃 (Azure AD) ) '
                     items:
                       - name: Azure AD
                         href: resources/privilegedidentitymanagement-directory.md
@@ -12790,7 +12788,7 @@ items:
                     href: api/personname-update.md
                   - name: 删除
                     href: api/personname-delete.md
-              - name: 备注
+              - name: 注释
                 items:
                   - name: 人员注释
                     href: resources/personannotation.md
@@ -13172,7 +13170,7 @@ items:
                     items:
                       - name: 获取通过身份验证方法注册的用户
                         href: api/authenticationmethodsroot-usersregisteredbymethod.md
-          - name: Microsoft 365使用率报告
+          - name: Microsoft 365使用情况报告
             items:
               - name: 概述
                 href: resources/report.md
@@ -14536,7 +14534,7 @@ items:
                 href: api/linkedresource-delete.md
           - name: Outlook 任务（已弃用）
             items:
-              - name: 'Outlook任务 (已弃) '
+              - name: 'Outlook (任务) '
                 items:
                   - name: Outlook 任务
                     href: resources/outlooktask.md
@@ -14691,6 +14689,8 @@ items:
                 href: api/worksheet-usedrange.md
               - name: 更新工作表
                 href: api/worksheet-update.md
+              - name: 删除工作表
+                href: api/worksheet-delete.md
               - name: 获取单元格
                 href: api/worksheet-cell.md
               - name: 获取范围

@@ -4,12 +4,12 @@ description: '本文将通过一个示例逐步介绍如何使用 *架构扩展*
 author: dkershaw10
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 9a84499f8b967b57a82187ee467a1eedd445764b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c4226a642c2e6651cf4168c81d7188f0edd76270
+ms.sourcegitcommit: 6cea9bc17d3859e475a74c4a6f661f848e837e89
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59066917"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240654"
 ---
 # <a name="add-custom-data-to-groups-using-schema-extensions"></a>使用架构扩展向组添加自定义数据 
 
@@ -35,14 +35,26 @@ ms.locfileid: "59066917"
 
 
 ### <a name="request"></a>请求
+
+<!-- {
+  "blockType": "request",
+  "name": "schemaextensions-groups-get"
+}-->
 ```http
 GET https://graph.microsoft.com/v1.0/schemaExtensions?$filter=id eq 'graphlearn_test'
 ```
+
 ### <a name="response"></a>响应
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.schemaExtension"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-length: 420
+
 {
     "value": [
         {
@@ -75,6 +87,11 @@ Content-length: 420
 请注意，初次创建架构扩展时，其状态是 **InDevelopment**。在开发扩展期间，可以将其保持在此状态，在此期间仅创建该扩展的应用可以使用增量更改更新它或将其删除。准备共享此扩展以供其他应用使用时，请将 **状态** 设置为 **可用**
 
 ### <a name="request"></a>请求
+
+<!-- {
+  "blockType": "request",
+  "name": "schemaextensions-groups-createExtension"
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/schemaExtensions
 Content-type: application/json
@@ -100,7 +117,14 @@ Content-type: application/json
     ]
 }
 ```
+
 ### <a name="response"></a>响应
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.schemaExtension"
+} -->
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -134,6 +158,11 @@ Content-length: 420
 使用我们刚刚注册的 `graphlearn_courses` 架构扩展定义创建一个 _新_ 组并使用额外数据进行扩展。这是 **组** 资源的标准 ```POST```，其他 `graphlearn_courses` 复杂类型扩展在请求正文中定义。响应将不会返回任何数据扩展的镜像。我们需要使用 ```GET``` 操作按名称显式 ```$select``` 扩展。
 
 ### <a name="request"></a>请求
+
+<!-- {
+  "blockType": "request",
+  "name": "schemaextensions-groups-createGroupWithExtension"
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/groups
 Content-type: application/json
@@ -152,6 +181,12 @@ Content-type: application/json
 }
 ```
 ### <a name="response"></a>响应
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group"
+} -->
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -177,6 +212,11 @@ Content-length: 420
 可以使用在 ```PATCH``` 请求的正文中定义的其他 `graphlearn_courses` 复杂类型扩展来扩展自定义数据并将其添加到 _现有_ 组实例。  
 
 ### <a name="request"></a>请求
+
+<!-- {
+  "blockType": "request",
+  "name": "schemaextensions-groups-updateGroupWithExtension"
+}-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/groups/dfc8016f-db97-4c47-a582-49cb8f849355
 Content-type: application/json
@@ -189,7 +229,14 @@ Content-length: 230
     }   
 }
 ```
+
 ### <a name="response"></a>响应
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
 ```http
 HTTP/1.1 204 No Content
 ```
@@ -210,12 +257,22 @@ HTTP/1.1 204 No Content
 
 ### <a name="request"></a>请求
 
+<!-- {
+  "blockType": "request",
+  "name": "schemaextensions-groups-getGroupSelectExtension"
+}-->
 ```http
 GET https://graph.microsoft.com/v1.0/groups?$filter=graphlearn_courses/courseId eq ‘123’&$select=displayName,id,description,graphlearn_courses
 ```
 
 
 ### <a name="response"></a>响应
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -244,8 +301,3 @@ Content-length: 326
 - [Microsoft 365 域](/office365/servicedescriptions/office-365-platform-service-description/domains)
 - [添加并验证新 Microsoft 365 的域](/microsoft-365/admin/setup/add-domain)
 - [schemaExtension 资源类型](/graph/api/resources/schemaextension)
-- [列出 schemaExtension](/graph/api/schemaextension-list)
-- [创建 schemaExtension](/graph/api/schemaextension-post-schemaextensions)
-- [获取 schemaExtension](/graph/api/schemaextension-get)
-- [更新 schemaExtension](/graph/api/schemaextension-update)
-- [删除 schemaExtension](/graph/api/schemaextension-delete)

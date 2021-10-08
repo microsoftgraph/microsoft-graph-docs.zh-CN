@@ -6,12 +6,12 @@ ms.localizationpriority: high
 ms.prod: sharepoint
 description: ”列表”资源代表网站中的列表。
 doc_type: resourcePageType
-ms.openlocfilehash: 9d47d308ffa1171ff720d66f7ed21f254b5ec06b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 801d0be6fc3da1800c9ae70edef82dcc869d54b8
+ms.sourcegitcommit: 6cea9bc17d3859e475a74c4a6f661f848e837e89
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59021496"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240913"
 ---
 # <a name="list-resource"></a>List 资源
 
@@ -23,8 +23,7 @@ ms.locfileid: "59021496"
 ## <a name="tasks-on-a-list"></a>list 上的任务
 
 下面列出了可执行的 list 资源任务。
-**注意：** 此测试版只允许导航列表，不允许创建或更新列表。
-但是，可以创建或更新[列表项][listItem]。
+
 
 下面的所有示例都与网站相关，例如：`https://graph.microsoft.com/v1.0/sites/{site-id}`。
 

@@ -5,12 +5,12 @@ author: dipakboyed
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: c66a3a21c7e9f1a0d61d845f788a15403573a67b
-ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
+ms.openlocfilehash: a25c393c95693bc3c8a0bbe9567ebeed11da1608
+ms.sourcegitcommit: 6cea9bc17d3859e475a74c4a6f661f848e837e89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60220631"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240809"
 ---
 # <a name="get-educationassignmentresource"></a>获取 educationAssignmentResource
 
@@ -27,7 +27,7 @@ ms.locfileid: "60220631"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite   |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|Application |  EduAssignments.ReadBasic.All、EduAssignments.ReadWriteBasic.All、EduAssignments.Read.All、EduAssignments.ReadWrite.All  | 
+|应用程序 |  EduAssignments.ReadBasic.All、EduAssignments.ReadWriteBasic.All、EduAssignments.Read.All、EduAssignments.ReadWrite.All  | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -35,7 +35,7 @@ ms.locfileid: "60220631"
 GET /education/classes/{class-id}/assignments/{assignment-id}/resources/{resource-id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询 pParameters](/graph/query-parameters) 来帮助自定义响应。
+此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
@@ -139,7 +139,7 @@ GET https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f
 ```
 
 #### <a name="response"></a>响应
-下面介绍响应示例。 
+下面展示了示例响应。 
 
 <!-- {
   "blockType": "response",
@@ -194,7 +194,7 @@ GET https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f
 ```
 
 #### <a name="response"></a>响应
-下面介绍响应示例。 
+下面展示了示例响应。 
 
 <!-- {
   "blockType": "response",
@@ -249,7 +249,7 @@ GET https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f
 ```
 
 #### <a name="response"></a>响应
-下面介绍响应示例。 
+下面展示了示例响应。 
 
 <!-- {
   "blockType": "response",
@@ -304,7 +304,7 @@ GET https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f
 ```
 
 #### <a name="response"></a>响应
-下面介绍响应示例。 
+下面展示了示例响应。 
 
 <!-- {
   "blockType": "response",

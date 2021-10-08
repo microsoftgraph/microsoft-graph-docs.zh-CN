@@ -5,12 +5,12 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 05ad63c01ba6d62543caaa3e4902ccae47b28904
-ms.sourcegitcommit: 30fca91ed203a9ab7b0562833ce0c20c7fb7b7b1
+ms.openlocfilehash: 60a6d26d2d6eb3ee46341ece37bdb141ee36c9fd
+ms.sourcegitcommit: 6cea9bc17d3859e475a74c4a6f661f848e837e89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59932044"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240774"
 ---
 # <a name="organizationalbrandingproperties-resource-type"></a>organizationalBrandingProperties 资源类型
 
@@ -22,12 +22,12 @@ ms.locfileid: "59932044"
 
 组织可以自定义其 Azure Active Directory (Azure AD) 登录页，当用户登录到其组织的租户特定应用时，或者当 Azure AD 通过用户名标识用户的租户时，会显示这些登录页。 开发人员还可以阅读公司的品牌信息并自定义其应用体验，以使用其公司的品牌专门为登录用户定制它。
 
-你无法更改原始配置的语言。 但是，公司可以基于区域设置添加不同的品牌。 有关特定语言的品牌，请参阅 [organizationalBrandingLocalization](organizationalbrandinglocalization.md) 对象。
+不能更改由 [organizationalBranding](organizationalbranding.md) 对象表示的原始配置语言。 但是，公司可以基于区域设置添加不同的品牌。 有关特定语言的品牌，请参阅 [organizationalBrandingLocalization](organizationalbrandinglocalization.md) 对象。
 
 >[!NOTE]
->添加自定义品牌打造需要你Azure Active Directory (Azure AD) 高级版 1、高级版 2 或 Office 365 (应用Office 365许可证) 应用。 有关许可和版本的信息，请参阅注册[Azure AD Premium。](/azure/active-directory/fundamentals/active-directory-get-started-premium)
+>添加自定义品牌打造需要你Azure Active Directory (Azure AD) 高级版 1、高级版 2 或 Office 365 (Office 365许可证) Azure AD。 有关许可和版本详细信息，请参阅注册[Azure AD Premium。](/azure/active-directory/fundamentals/active-directory-get-started-premium)
 >
->Azure AD Premium全球实例为中国客户提供 Azure Active Directory。 Azure AD Premium版本目前在中国由世纪银行运营的 Azure 服务中不受支持。 有关详细信息，请通过 Azure Active Directory[论坛与我们联系](https://feedback.azure.com/forums/169401-azure-active-directory/)。
+>Azure AD Premium全球实例为中国客户提供 Azure Active Directory。 Azure AD Premium由世纪银行在中国运营的 Azure 服务中目前不支持这些版本。 有关详细信息，请通过以下论坛Azure Active Directory[我们](https://feedback.azure.com/forums/169401-azure-active-directory/)。
 
 ## <a name="methods"></a>方法
 无。
@@ -35,17 +35,17 @@ ms.locfileid: "59932044"
 ## <a name="properties"></a>属性
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| backgroundColor | 字符串 | 将出现在低带宽连接中的背景图像上的颜色。 我们建议你使用横幅徽标的主要颜色或你的组织颜色。 以十六进制格式指定此参数，例如，white 为 `#FFFFFF` 。 |
-| backgroundImage | Stream | 显示为登录页背景的图像。 允许的类型是 PNG 或 JPEG，不小于 300 KB 且大小不超过 1920 × 1080 像素。 较小的图像将降低带宽要求，并加快页面加载速度。 |
+| backgroundColor | String | 将出现在低带宽连接中的背景图像上的颜色。 我们建议你使用横幅徽标的主要颜色或你的组织颜色。 以十六进制格式指定此参数，例如，white 为 `#FFFFFF` 。 |
+| backgroundImage | Stream | 显示为登录页背景的图像。 允许的类型是 PNG 或 JPEG，不小于 300 KB 且不超过 1920 × 1080 像素。 较小的图像将降低带宽要求，并加快页面加载速度。 |
 | backgroundImageRelativeUrl | String | **backgroundImage** 属性的相对 URL，与 **cdnList** CDN基 URL 结合使用以提供由 CDN。 只读。 |
 | bannerLogo | Stream | 显示在登录页上的公司徽标的横幅版本。 允许的类型为 PNG 或 JPEG，不超过 36 × 245 像素。 我们建议使用透明图像，徽标周围没有填充。 |
-| bannerLogoRelativeUrl | 字符串 | **bannerLogo** 属性的相对 URL，与 **cdnList** CDN基 URL 结合使用以提供由 CDN 提供的只读版本。 只读。 |
+| bannerLogoRelativeUrl | 字符串 | **bannerLogo** 属性的相对 URL，与 **cdnList** CDN基 URL 结合使用以提供由 CDN 提供的只读CDN。 只读。 |
 | cdnList | 字符串集合 | 提供当前资源资产的所有可用CDN提供程序的基 URL 列表。 多个CDN提供程序同时用于读取请求的高可用性。 只读。 |
 | id | String | 表示 ISO 639-1 标准中指定的区域设置（例如，英语）的标识符 `en-US` 。 默认 /branding 的 **ID** 始终为 String `0` 类型或 `default` 。 只读。 <br/><br/>**注意：** 目前不支持单个区域设置的多个品牌。 |
-| signInPageText | String | 显示在登录框底部的文本。 您可以使用此信息来传达其他信息，例如电话号码到技术支持或法律声明。 此文本必须是 Unicode 且不超过 1024 个字符。 |
-| squareLogo | Stream | Windows 10 OOBE (OOBE) 且启用 Windows Autopilot 进行部署时显示的公司徽标的正方形版本。 允许的类型为 PNG 或 JPEG，大小不超过 240 x 240 像素和不超过 10 KB。 我们建议使用透明图像，徽标周围没有填充。 |
+| signInPageText | 字符串 | 显示在登录框底部的文本。 您可以使用此信息来传达其他信息，例如电话号码到技术支持或法律声明。 此文本必须是 Unicode 且不超过 1024 个字符。 |
+| squareLogo | Stream | 在 OOBE Windows 10中显示公司徽标的正方形 (OOBE) 时Windows Autopilot 进行部署。 允许的类型为 PNG 或 JPEG，大小不超过 240 x 240 像素和不超过 10 KB。 我们建议使用透明图像，徽标周围没有填充。 |
 | squareLogoRelativeUrl | String | **squareLogo** 属性的相对 url，与 **cdnList** CDN基 URL 结合使用以提供由 CDN。 只读。 |
-| usernameHintText | 字符串 | 在登录屏幕的用户名文本框中显示为提示的字符串。 此文本必须是不带链接或代码的 Unicode，并且不能超过 64 个字符。 |
+| usernameHintText | String | 在登录屏幕的用户名文本框中显示为提示的字符串。 此文本必须是不带链接或代码的 Unicode，并且不能超过 64 个字符。 |
 
 ## <a name="relationships"></a>关系
 无。
