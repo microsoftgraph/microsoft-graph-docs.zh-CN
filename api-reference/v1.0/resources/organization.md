@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: adimitui
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: ef6a84303ad63e673ffbca0b061e23346208489a
-ms.sourcegitcommit: 7ce66321abb6a2cdca8685d3ce0a004c376ae33b
+ms.openlocfilehash: 2b4ac86a3dd1bad876c6819b9f49c28ca4bac7fb
+ms.sourcegitcommit: 6cea9bc17d3859e475a74c4a6f661f848e837e89
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59777518"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240885"
 ---
 # <a name="organization-resource-type"></a>组织资源类型
 
@@ -25,21 +25,24 @@ ms.locfileid: "59777518"
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
 |[获取组织](../api/organization-get.md) | [organization](organization.md) 集合|读取 organization 对象的属性和关系。|
-|[更新](../api/organization-update.md) | [组织](organization.md)  |更新 organization 对象。 可更新的限定属性：**marketingNotificationMails**、**technicalNotificationMails**、**securityComplianceNotificationMails**、**securityComplianceNotificationPhones** 和 **privacyProfile**。 |
+|[更新](../api/organization-update.md) | [组织](organization.md)  |更新组织对象。唯一可以更新的属性是： **marketingNotificationMails**、 **technicalNotificationMails**、 **securityComplianceNotificationMails**、 **securityComplianceNotificationPhones** 和 **privacyProfile**。 |
 |**开放扩展**| 
 |[创建开放扩展](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| 创建开放扩展，并将自定义属性添加到新资源或现有资源。|
 |[获取开放扩展](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) 集合| 获取扩展名称标识的开放扩展。|
 |**架构扩展**| 
 |[添加架构扩展值](/graph/extensibility-schema-groups) || 创建架构扩展定义，然后使用它向资源添加自定义键入数据。|
 |**组织品牌**| | |
-|[创建 organizationalBrandingLocalization](../api/organizationalbranding-post-localizations.md) | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | 创建新的本地化（特定语言的）品牌打造和默认品牌对象（如果不存在）。 |
 |[Get organizationalBranding](../api/organizationalbranding-get.md) | [organizationalBranding](organizationalbranding.md) | 获取默认组织的品牌对象。 |
 |[Update organizationalBranding](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | 更新默认组织的品牌对象。 |
-|[Delete organizationalBranding](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | 删除默认组织的品牌对象。 |
-|[List organizationalBrandingLocalization](../api/organizationalbrandinglocalization-get.md) | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) 集合 | 检索租户中的所有本地化品牌对象。 |
+|[创建 organizationalBrandingLocalization](../api/organizationalbranding-post-localizations.md) | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | 创建新的本地化（特定语言的）品牌打造和默认品牌对象（如果不存在）。 |
+|[List organizationalBrandingLocalization](../api/organizationalbranding-list-localizations.md) | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) 集合 | 检索租户中的所有本地化品牌对象。 |
 |[Get organizationalBrandingLocalization](../api/organizationalbrandinglocalization-get.md) | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | 读取本地化品牌对象的属性。 |
-|[Update organizationalBranding](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | 更新本地化品牌对象。 |
-|[Delete organizationalBranding](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | 删除本地化品牌对象。 |
+|[更新 organizationalBrandingLocalization](../api/organizationalbrandinglocalization-update.md) | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | 更新本地化品牌对象。 |
+|[删除 organizationalBrandingLocalization](../api/organizationalbrandinglocalization-delete.md) | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | 删除本地化品牌对象。 |
+<!--|[Delete organizationalBranding](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | 删除默认组织的品牌对象。 |
+
+**注意： 若要在解决所有不一致性后，将 Delete organizationalBranding 操作还原回"更新组织品牌"后的表中。-->
+
 ## <a name="properties"></a>属性
 
 | 属性 | 类型 | 说明 |
@@ -50,15 +53,15 @@ ms.locfileid: "59777518"
 | country | String | 组织地址所在的国家/地区名称。 |
 | countryLetterCode | String | 组织所在的国家/地区缩写。 |
 | createdDateTime | DateTimeOffset | 组织的创建时间戳。 值无法修改，并在组织创建时自动填充。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。 |
-| deletedDateTime | DateTimeOffset | 表示采用 ISO 8601 格式创建 Azure AD 的日期和时间，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。 |
+| deletedDateTime | DateTimeOffset | 表示使用 ISO 8601 格式删除Azure AD租户的日期和时间，并且始终采用 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC `2014-01-01T00:00:00Z`。只读。 |
 | displayName | String | 租户的显示名称。 |
 | id | 字符串 | 租户 ID，表示组织（或租户）的唯一标识符。 继承自 [directoryObject](directoryobject.md)。 键。 不可为 null。 只读。 |
 | isMultipleDataLocationsForServicesEnabled | 布尔值 | `true` 如果组织已启用多异地; **未** 多地理"则显示 false 信息; **null** （默认）。 只读。 有关详细信息，请参阅 [OneDrive Online 多地理位置](/sharepoint/dev/solution-guidance/multigeo-introduction)。 |
 | marketingNotificationEmails | String collection | 不可为空。 |
-| onPremisesLastSyncDateTime | DateTimeOffset | 租户上次与本地目录同步的时间和日期。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。|
-| onPremisesSyncEnabled | Boolean | `true` 是否此对象从本地目录同步; `false` 是否此对象最初从本地目录同步，但不再同步。 可为空。 `null` 如果此对象从未从本地目录（默认）进行同步。 |
+| onPremisesLastSyncDateTime | DateTimeOffset | 租户上次与本地目录同步的时间和日期。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC `2014-01-01T00:00:00Z`。只读。|
+| onPremisesSyncEnabled | Boolean | `true` 此对象是否从本地目录同步; `false` 此对象最初是从本地目录同步但不再同步的。空。 `null` 此对象是否从未从本地目录同步（默认）。 |
 | postalCode | String | 组织地址的邮政编码。 |
-| preferredLanguage | String | 组织的首选语言。 应遵循 ISO 639-1 代码；例如，`en`。 |
+| preferredLanguage | String | 组织的首选语言。应遵循 ISO 639-1 代码;例如， `en`。 |
 | privacyProfile | [privacyProfile](privacyprofile.md) | 组织的隐私配置文件。 |
 | provisionedPlans | [ProvisionedPlan](provisionedplan.md) 集合 | 不可为 null。 |
 | securityComplianceNotificationMails | String collection ||

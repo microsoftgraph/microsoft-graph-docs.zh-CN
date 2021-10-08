@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: d0fb95047006dac5e94d247c4003bed225d3ff47
-ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
+ms.openlocfilehash: 02bce24bc92fea5a83c6cb7dfc6df688f677731b
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60214319"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220778"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>使用 Microsoft Graph 安全性 API
 
@@ -61,6 +61,24 @@ Microsoft Graph 安全性 API 提供来自以下提供商的警报。 下表显�
 
 [攻击模拟和培训](/microsoft-365/security/office-365-security/attack-simulation-training)是 [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365?view=o365-worldwide&preserve-view=true) 的一部分。 此服务可让租户中的用户体验真实的恶意钓鱼攻击，并从中学习。 最终用户的社交工程模拟和培训体验有助于降低用户被这些攻击技术入侵的风险。 攻击模拟和培训 API 使租户管理员能够查看启动的[模拟](simulation.md)练习和培训，并获取有关网络钓鱼模拟中用户在线行为的派生见解的[报告](report-m365defender-reports-overview.md)。
 
+## <a name="incidents-preview"></a>事件 (预览) 
+
+事件是构成攻击案例的相关警报和关联数据的集合。 [事件管理](/microsoft-365/security/defender/manage-incidents?view=o365-worldwide&preserve-view=true)是 [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender?view=o365-worldwide&preserve-view=true) 的一部分，可在 Microsoft 365 Defender 门户 ([https://security.microsoft.com/](https://security.microsoft.com/)) 中使用。
+
+Microsoft 365 服务和应用将在检测到可疑或恶意事件或活动时创建警报。 单个警报可提供有关已完成或持续攻击的有价值的线索。 但是，攻击通常对不同类型的实体（如设备、用户和邮箱）使用多种技术。 结果是租户中的多个实体将收到多个警报。
+
+由于将单个警报组合在一起以深入了解攻击可能非常困难且耗时，Microsoft 365 Defender 会自动将警报及其相关信息聚合到事件中。
+
+将相关警报组合为一个事件可使你对攻击具有全面了解。 例如，你可以看到：
+
+- 攻击开始的位置。
+- 使用了什么策略。
+- 攻击侵入租户的程度。
+- 攻击范围，例如受影响的设备、用户和邮箱数。
+- 与攻击有关的所有数据。
+
+[事件](incident.md)资源及其 API 允许你对事件进行排序，以创建合理的网络安全响应。 它将公开在环境保留策略中指定的时间范围内网络中标记的事件集合。
+
 ## <a name="information-protection"></a>信息保护
 
 **标签** - 信息保护标签提供有关如何正确地将敏感度标签应用到信息的详细信息。 信息保护标签 API 描述对某一用户或租户应用的敏感度标签配置。
@@ -108,6 +126,8 @@ Microsoft Graph 安全性 API 提供来自以下提供商的警报。 下表显�
 |列出模拟|[列出模拟](../api/attacksimulationroot-list-simulations.md)|[https://graph.microsoft.com/beta/security/attackSimulation/simulations](https://developer.microsoft.com/graph/graph-explorer?request=security/attackSimulation/simulations&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
 |获取模拟概述报告|[获取模拟概述报告](../api/simulationreportoverview-get.md)|[https://graph.microsoft.com/beta/security/attackSimulation/simulations/{id}/report/overview](https://developer.microsoft.com/graph/graph-explorer?request=security/attackSimulation/simulations/{id}/report/overview&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
 |列出模拟用户报告|[列出模拟用户报告](../api/usersimulationdetails-list.md)|[https://graph.microsoft.com/beta/security/attackSimulation/simulations/{id}/report/simulationUsers](https://developer.microsoft.com/graph/graph-explorer?request=security/attackSimulation/simulations/{id}/report/simulationUsers&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
+| **事件 (预览)**|||
+| 列出事件 | [列出事件](../api/security-list-incidents.md) | [https://graph.microsoft.com/beta/security/incidents](https://developer.microsoft.com/graph/graph-explorer?request=security/incidents&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
 | **安全功能分数**|||
 |列出安全功能分数|[列出 secureScores](../api/securescores-list.md)|[https://graph.microsoft.com/beta/security/secureScores](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScores&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
 | **安全功能分数控制配置文件**|||
@@ -148,7 +168,7 @@ Microsoft Graph 安全性 API 示例的[代码和贡献情况](https://github.co
 
 了解可与 Microsoft Graph 安全性 API 连接的其他选项：
 
-- [适用于逻辑应用、Flow 和 Power Apps 的 Microsoft Graph 安全性连接器](https://aka.ms/graphsecurityconnectors)
+- [适用于 Logic Apps、Flow 和 PowerApps 的 Microsoft Graph 安全性连接器](https://aka.ms/graphsecurityconnectors)
 - [适用于 Power BI 的 Microsoft Graph 安全性连接器](https://aka.ms/graphsecuritypowerbiconnectordoc)
 - [Jupyter Notebook 示例](https://aka.ms/graphsecurityjupyternotebooks)
 

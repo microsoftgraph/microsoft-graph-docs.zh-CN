@@ -265,7 +265,7 @@ items:
             href: azuread-identity-access-management-concept-overview.md
           - name: 目录管理
             items:
-              - name: 使用 PIM 分配特权角色
+              - name: 将 PIM 用于Azure AD分配角色
                 href: tutorial-assign-azureadroles.md
           - name: 身份和登录
             items:
@@ -285,6 +285,8 @@ items:
                     href: tutorial-accessreviews-securitygroup.md
                   - name: 审阅对 Microsoft 365 组的访问权限
                     href: tutorial-accessreviews-M365group.md
+              - name: 将 PIM 用于Azure AD分配角色
+                href: tutorial-assign-azureadroles.md
       - name: 邮件
         displayName: 'Outlook, Outlook mail'
         items:

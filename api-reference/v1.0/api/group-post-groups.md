@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 24aff823670dbc48eee5a3149c0bcb4a21ac9bc8
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 5e9df2c581b48d5e937202d829c0576866ca6abc
+ms.sourcegitcommit: 6cea9bc17d3859e475a74c4a6f661f848e837e89
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59507471"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240962"
 ---
 # <a name="create-group"></a>创建组
 
@@ -25,7 +25,7 @@ ms.locfileid: "59507471"
 
 若要获取 _非_ 默认返回的属性，请执行 [GET 操作](group-get.md)，并在 `$select` OData 查询选项中指定这些属性。
 
-> **注意：** 虽然 Microsoft Teams 是在 Microsoft 365 组的基础之上构建而成，但暂不能通过此 API 创建团队。 可以使用其他组 API 来管理已在 Microsoft Teams UI 中创建的团队。
+> **注意**：虽然 Microsoft Teams 是基于Microsoft 365组构建的，但当前无法通过此 API 创建团队。可以使用其他组 API 来管理已在 Microsoft Teams UI 中创建的团队。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -57,8 +57,8 @@ POST /groups
 | 属性 | 类型 | 说明|
 |:---------------|:--------|:----------|
 | displayName | String | 要在组的通讯簿中显示的名称。最大长度：256 个字符。必需。 |
-| mailEnabled | Boolean | 对于已启用邮件的组，请设置为 `true`。 必需。 |
-| mailNickname | String | 组的邮件别名。 最大 长度：64 个字符。 此属性只能包含[ASCII 字符集 0 - 127](/office/vba/language/reference/user-interface-help/character-set-0127) 中的字符，以下除外：` @ () \ [] " ; : . <> , SPACE`。 必需。 |
+| mailEnabled | Boolean | 设置为启用邮件的组的 `true`。必填。 |
+| mailNickname | String | 组的邮件别名，在组织中是唯一的。 最大长度为 64 个字符。 此属性只能包含[ASCII 字符集 0 - 127](/office/vba/language/reference/user-interface-help/character-set-0127) 中的字符，以下除外：` @ () \ [] " ; : . <> , SPACE`。 必需。 |
 | securityEnabled | Boolean | 对于已启用安全机制的组（包括 Microsoft 365 组），请设置为 `true`。 必需。  **注意：** 使用 Microsoft Azure 门户创建的组始终将 **securityEnabled** 初始设置为 `true`。|
 
 > [!IMPORTANT]
@@ -285,7 +285,7 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-下面展示了示例请求。 必须为调用用户或应用分配 *RoleManagement.ReadWrite.Directory* 权限才能设置 **isAssignableToRole** 属性或更新此类组的成员身份。
+下面是请求的示例。必须为调用用户或应用分配 *RoleManagement.ReadWrite.Directory* 权限，才能设置 **isAssignableToRole** 属性或更新此类组的成员身份。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

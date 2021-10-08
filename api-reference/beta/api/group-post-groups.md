@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: fe3d386153d04df9ea716d2f624afd2a89f02a39
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: d15ce53f063cf8b7ce3c9dcdc22951afc29186dd
+ms.sourcegitcommit: 6cea9bc17d3859e475a74c4a6f661f848e837e89
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59765114"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240892"
 ---
 # <a name="create-group"></a>创建组
 
@@ -18,7 +18,7 @@ ms.locfileid: "59765114"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建请求正文中指定的新[组](../resources/group.md)。 你可以创建以下组之一：
+创建请求正文中指定的新[组](../resources/group.md)。可以创建以下其中一个组：
 
 * Microsoft 365 组（统一组）
 * 安全组
@@ -58,8 +58,8 @@ POST /groups
 | 属性 | 类型 | 说明|
 |:---------------|:--------|:----------|
 | displayName | string | 将在组的通讯簿中显示的名称。必填。 |
-| mailEnabled | 布尔 | 对于已启用邮件的组，请设置为 `true`。 必需。 |
-| mailNickname | string | 组的邮件别名。 最大 长度：64 个字符。 此属性只能包含[ASCII 字符集 0 - 127](/office/vba/language/reference/user-interface-help/character-set-0127) 中的字符，以下除外：` @ () \ [] " ; : . <> , SPACE`。 必需。 |
+| mailEnabled | 布尔 | 设置为启用邮件的组的 `true`。必填。 |
+| mailNickname | string | 组的邮件别名，在组织中是唯一的。 最大长度为 64 个字符。 此属性只能包含[ASCII 字符集 0 - 127](/office/vba/language/reference/user-interface-help/character-set-0127) 中的字符，以下除外：` @ () \ [] " ; : . <> , SPACE`。 必需。 |
 | securityEnabled | boolean | 对于已启用安全机制的组（包括 Microsoft 365 组），请设置为 `true`。 必需。 **注意：** 使用 Microsoft Azure 门户创建的组始终将 **securityEnabled** 初始设置为 `true`。|
 
 > [!IMPORTANT]
@@ -286,7 +286,7 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-下面展示了示例请求。  必须为调用用户或应用分配 *RoleManagement.ReadWrite.Directory* 权限才能设置 **isAssignableToRole** 属性或更新此类组的成员身份。 
+下面是请求的示例。 必须为调用用户或应用分配 *RoleManagement.ReadWrite.Directory* 权限才能设置 **isAssignableToRole** 属性或更新此类组的成员身份。 
 
 **注意：** 带有 **isAssignableToRole** 属性设置为 `true` 的组不能是动态成员资格类型。 有关详细信息，请参见 [使用组管理 Azure AD 角色分配](https://go.microsoft.com/fwlink/?linkid=2103037)。
 

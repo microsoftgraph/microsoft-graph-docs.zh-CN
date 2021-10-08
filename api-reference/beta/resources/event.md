@@ -5,12 +5,12 @@ author: harini84
 ms.localizationpriority: high
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: a53b5f7a2060d98c10f6e8dfeddf281fdda4996c
-ms.sourcegitcommit: 30fca91ed203a9ab7b0562833ce0c20c7fb7b7b1
+ms.openlocfilehash: 74bf1c7e3a28280a0aca86aefb9e056befc29dff
+ms.sourcegitcommit: 6cea9bc17d3859e475a74c4a6f661f848e837e89
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59931967"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240922"
 ---
 # <a name="event-resource-type"></a>事件资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "59931967"
 
 [用户](user.md)日历或 Microsoft 365 [组](group.md)默认日历中的事件。
 
-**事件** 中包含的最大与会者人数，以及发送自 Exchange Online 邮箱的 [eventMessage](eventmessage.md) 中的收件人数上限都是 500 人。 有关详细信息，请参阅[发送限制](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits)。
+**事件** 中包括的最大与会者数，以及从 Exchange Online 邮箱发送的 [eventMessage](eventmessage.md)的最大收件人数为 500。有关详细信息，请参阅 [发送限制](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits)。
 
 该资源支持：
 
@@ -71,24 +71,24 @@ ms.locfileid: "59931967"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|allowNewTimeProposals| 布尔值 | 如果会议组织者允许被邀请者在响应时建议新时间，则为`True`；否则为 `false`。 可选。 默认值为 `true`。 |
+|allowNewTimeProposals| 布尔值 | `true` 会议组织者是否允许受邀者在答复时建议新时间;否则 `false`。选。默认值为 `true`。 |
 |attendees|[Attendee](attendee.md) 集合|事件的与会者集合。|
 |body|[ItemBody](itembody.md)|与事件相关联的邮件正文。可以是 HTML 格式或文本格式。|
 |bodyPreview|字符串|与事件相关联的邮件预览。文本格式。|
 |cancelledOccurrences|字符串集合|包含定期系列中已取消实例的 **occurrenceId** 属性值（如果该事件为系列母版事件）。 定期系列中已取消的实例称为 cancelledOccurences。<br><br>仅在 [Get](../api/event-get.md) 操作的 $select 中返回，该操作指定系列母版事件（即 seriesMasterId 属性值）的 ID。|
-|categories|String collection|与事件相关联的类别。 每个类别对应于为用户定义的 [outlookCategory](outlookcategory.md) 的 **displayName** 属性。|
+|categories|String collection|与事件关联的类别。每个类别对应于为用户定义的 [outlookCategory](outlookcategory.md)的 **displayName** 属性。|
 |changeKey|String|标识 event 对象的版本。每次事件更改时，ChangeKey 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。|
 |createdDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`2014-01-01T00:00:00Z`|
 |end|[DateTimeTimeZone](datetimetimezone.md)|事件结束的日期、时间和时区。 默认情况下，结束时间为 UTC 时间。|
 |exceptionOccurrences|字符串集合|包含定期系列中的例外事件实例的 **id** 属性值。<br>异常可能不同于定期系列中的其他事件，例如主题、开始或结束时间或与会者。异常不包括已取消的事件。<br><br>仅在 [Get](../api/event-get.md) 操作的 $select 和 $expand 中返回，该操作指定系列母版事件（即 seriesMasterId 属性值）的 ID。|
 |hasAttachments|Boolean|如果事件包含附件，则设置为 true。|
 |hideAttendees|布尔值|如果设置为 `true`，则每个与会者仅会在会议请求和会议 **跟踪** 列表中看到自己。默认值为 False。|
-|id|String| 事件的唯一标识符。 [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] 区分大小写和只读。|
-|importance|String|事件的重要性。 可取值为：`low`、`normal`、`high`。|
+|id|String| 事件的唯一标识符。 [!INCLUDE [outlook-beta-id](../../includes/outlook-immutable-id.md)] 区分大小写和只读。|
+|importance|String|事件的重要性。可能的值为： `low`、 `normal`、 `high`。|
 |isAllDay|Boolean|如果事件持续整天则设为 true。如果为 true，则无论是单天事件还是多天事件，都必须将开始和结束时间设置为午夜，并且必须处于同一时区。|
 |isCancelled|Boolean|如果事件已取消，则设置为 true。|
 |isDraft|Boolean|如果用户在 Outlook 中更新了会议，但尚未将更新发送给与会者，则设置为 true。 如果所有更改均已发送，或者如果事件是不带任何与会者的约会，则设置为 false。|
-|isOnlineMeeting|Boolean| 若此事件包含联机会议信息（即 **onlineMeeting** 指向 [onlineMeetingInfo](onlinemeetinginfo.md) 资源）则为 `True`，反之则为 `false`。 默认值为 `false`（**onlineMeeting** 为 `null`）。 可选。 <br> 将 **isOnlineMeeting** 设置为 `true` 后，Microsoft Graph 将初始化 **onlineMeeting**。 随后，Outlook 将忽略对 **isOnlineMeeting** 的任何进一步更改，并且会议仍保持联机。 |
+|isOnlineMeeting|Boolean| `True`如果此事件具有联机会议信息（即，**onlineMeeting** 指向 [onlineMeetingInfo](onlinemeetinginfo.md)资源），则`false`否则。默认值为 `false` （**onlineMeeting**`null`）。可选。<br> 将 **isOnlineMeeting** 设置为 `true` 后，Microsoft Graph 将初始化 **onlineMeeting**。 随后，Outlook 将忽略对 **isOnlineMeeting** 的任何进一步更改，并且会议仍保持联机。 |
 |isOrganizer|Boolean|如果日历所有者（通过“[日历](calendar.md)”的“**所有者**”属性指定）是事件的组织者（通过“**事件**”的“**组织者**”属性指定），设定为 true。 这也适用于代理人代表所有者组织事件。|
 |isReminderOn|Boolean|如果设置警报以提醒用户有事件，则设置为 true。|
 |lastModifiedDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`2014-01-01T00:00:00Z`|
@@ -97,7 +97,7 @@ ms.locfileid: "59931967"
 |occurrenceId|字符串|定期事件系列中的事件的标识符。 如果该事件不属于定期系列，则为 Null。<br><br>属性值的格式为 OID.{seriesMasterId-value}.{occurrence-start-date}。 {occurrence-start-date} 的时区是为相应 [recurrenceRange](recurrencerange.md) 定义的 recurrenceTimeZone 属性。<br><br>此属性可以识别定期系列中的任何事件，包括已修改或已取消的事件。 可使用此属性执行定期系列中的事件所支持的所有操作。|
 |onlineMeeting|[OnlineMeetingInfo](onlinemeetinginfo.md)| 与会者联机加入会议的详细信息。默认值为 null。只读。 <br>设置 **isOnlineMeeting** 和 **onlineMeetingProvider** 属性以启用联机会议后，Microsoft Graph 将初始化 **onlineMeeting**。 设置后，会议仍保持联机，并且不能再次更改 **isOnlineMeeting**、**onlineMeetingProvider** 和 **onlneMeeting** 属性。|
 |onlineMeetingProvider|onlineMeetingProviderType| 表示联机会议服务提供商。 默认情况下，**onlineMeetingProvider** 为 `unknown`。 可取值为：`unknown`、`teamsForBusiness`、`skypeForBusiness` 和 `skypeForConsumer`。 可选。 <br> 设置 **isOnlineMeeting** 后，Microsoft Graph 将初始化 **onlineMeeting**。 随后，你不能再次更改 **onlineMeetingProvider**，并且会议仍保持联机。 |
-|onlineMeetingUrl|String|联机会议的 URL。仅当组织者在 Outlook 中将事件指定为联机会议（如 Skype）时才会设置此属性。只读。<br>若要访问 URL 参加联机会议，请使用通过 **event** 的 **onlineMeeting** 属性公开的 **joinUrl**。 未来即将弃用 **onlineMeetingUrl** 属性。 |
+|onlineMeetingUrl|String|联机会议的 URL。仅当组织者在 Outlook 中将事件指定为联机会议（如 Skype）时才会设置此属性。只读。<br>若要访问 URL 以加入联机会议，请使用通过 **事件** 的 **onlineMeeting** 属性公开的 **joinUrl**。**onlineMeetingUrl** 属性将在将来弃用。 |
 |组织者|[收件人](recipient.md)|事件的组织者。|
 |originalEndTimeZone|String|创建事件时设置的结束时区。`tzone://Microsoft/Custom` 值表示旧的自定义时区在桌面版 Outlook 中设置。|
 |originalStart|DateTimeOffset|表示最初创建为定期系列中的事件或异常的开始时间。 对于单个实例的事件，不返回此属性。 其日期和时间信息以 ISO 8601 格式表示，并且始终采用 UTC。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
@@ -133,7 +133,7 @@ ms.locfileid: "59931967"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|attachments|[Attachment](attachment.md) 集合|事件的 [FileAttachment](fileattachment.md)、[ItemAttachment](itemattachment.md) 和 [referenceAttachment](referenceattachment.md) 附件的集合。 导航属性。 只读。 可为 Null。|
+|attachments|[Attachment](attachment.md) 集合|[FileAttachment](fileattachment.md)、[ItemAttachment](itemattachment.md)和 [referenceAttachment](referenceattachment.md)事件附件的集合。导航属性。只读。空。|
 |日历|[Calendar](calendar.md)|包含 event. Navigation 属性的日历。只读。|
 |extensions|[Extension](extension.md) 集合|为事件定义的开放扩展集合。可为空。|
 |实例|[Event](event.md) 集合|定期系列的出现次数（如果该事件是系列母版事件）。 此属性包括定期模式的组成事件和已修改的例外，但不包括已从系列中取消的事件。 导航属性。 只读。 可为 Null。|
@@ -180,7 +180,7 @@ ms.locfileid: "59931967"
   "isDraft": false,
   "isOnlineMeeting": true,
   "isOrganizer": true,
-  "isReminderOn": true,  
+  "isReminderOn": true,
   "lastModifiedDateTime": "String (timestamp)",
   "location": {"@odata.type": "microsoft.graph.location"},
   "locations": [{"@odata.type": "microsoft.graph.location"}],
