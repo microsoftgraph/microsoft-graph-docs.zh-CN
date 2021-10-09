@@ -2,15 +2,15 @@
 title: 创建 registeredOwner
 description: 将用户添加为设备的已注册所有者。
 author: spunukol
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a87eae8ed1b46d0b83f0a6f1637cb20534f11fce
-ms.sourcegitcommit: 998c63e6290cfb5ad4a6bd3eb3e249d282f962a3
+ms.openlocfilehash: d050ed9e28b4020133773bbdba07efd1708b101a
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58531262"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60256485"
 ---
 # <a name="create-registeredowner"></a>创建 registeredOwner
 
@@ -36,9 +36,9 @@ POST /devices/{id}/registeredOwners/$ref
 
 ```
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| 名称       | 说明|
+|:---------------|:--------|
+| Authorization  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [directoryObject](../resources/directoryobject.md) 对象的 JSON 表示形式。

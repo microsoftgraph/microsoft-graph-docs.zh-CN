@@ -2,15 +2,15 @@
 title: 列出成员
 description: 检索分配给目录角色的用户列表。只能将用户分配给目录角色。
 author: abhijeetsinha
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 9ae55125cf14c5636346afcd447d417f577d6c84
-ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
+ms.openlocfilehash: 262c8142c1bbfc62e532ba3c38c09afa94d9c904
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53118509"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60256205"
 ---
 # <a name="list-members"></a>列出成员
 
@@ -43,9 +43,9 @@ GET /directoryRoles/roleTemplateId={roleTemplateId}/members
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| 名称       | 说明|
+|:-----------|:------|
+| Authorization  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

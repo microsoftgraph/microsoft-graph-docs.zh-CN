@@ -5,18 +5,18 @@ author: Alice-at-Microsoft
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: df749d8e9898cbf3bc9b9dcbab24a2c64a776946
-ms.sourcegitcommit: 6ae8c124fac63a195ccf516c9cff739f730b6b13
+ms.openlocfilehash: 9bc32b4f49a2cb985d1b19f49e72d2c373bb4e6e
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "60083851"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60255939"
 ---
 # <a name="deploy-a-feature-update-using-the-windows-update-for-business-deployment-service"></a>使用 Windows Update for Business 部署服务部署功能更新
 
 使用 Windows Update for Business 部署服务，Windows Azure AD 租户中的设备部署更新。 如今，部署服务[支持部署Windows 10](windowsupdates-deployments.md)更新和加速安全更新。 本主题重点介绍功能更新的部署。 有关部署快速安全更新的信息，请参阅 [D部署加速安全更新](windowsupdates-deploy-expedited-update.md)。
 
-将功能更新部署到设备时，Windows更新会向设备提供指定的更新（如果设备尚未收到更新）。 例如，如果将 Windows 10 功能更新版本 20H2 部署到在功能更新管理中注册并且当前位于较旧版本的 Windows 10 的设备，则设备将更新到版本 20H2。 如果设备已位于或高于 20H2 版本，它将保持其当前版本。 如果设备未注册功能更新管理，则此操作不会影响设备。
+将功能更新部署到设备时，Windows更新会向设备提供指定的更新（如果设备尚未收到更新）。 例如，如果将 Windows 10 功能更新版本 20H2 部署到已注册功能更新管理且当前位于较旧版本的 Windows 10 的设备，则设备将更新到版本 20H2。 如果设备已位于或高于 20H2 版本，它将保持其当前版本。 如果设备未注册功能更新管理，则此操作不会影响设备。
 
 只要设备仍在功能更新管理中注册，设备就不会从 Windows Update 接收任何其他功能更新，除非使用部署服务显式部署。
 
@@ -73,9 +73,6 @@ Content-Type: application/json
 [部署](/graph/api/resources/windowsupdates-deployment)指定要部署的内容、如何以及何时部署内容以及目标设备。 创建部署后，将自动将部署访问群体创建为关系。
 
 下面是使用配置部署计划及监视规则的可选设置创建功能[更新部署](windowsupdates-schedule-deployment.md)[的示例](windowsupdates-manage-monitoring-rules.md)。 目标设备在下一步中指定。
-
-> [!NOTE]
-> 如果在创建 [部署时未指定](/graph/api/resources/windowsupdates-monitoringrule) 监视规则，则创建默认监视规则。 此默认监视规则具有 **信号**、阈值 和 `rollback`  `20` **操作** `alertError` 。 在 API 的未来更新中，此行为将更改，并且不会创建默认监视规则。
 
 ### <a name="request"></a>请求
 
@@ -163,7 +160,7 @@ Content-Type: application/json
 
 创建部署后，你可以将设备分配给部署 [访问群体](/graph/api/resources/windowsupdates-deploymentaudience)。 成功更新部署访问群体后，Windows更新开始根据部署设置向相关设备提供更新。
 
-当设备添加到部署访问群体 (的成员或排除集合时，会自动向服务注册设备 (也就是说，如果 [azureADDevice](/graph/api/resources/windowsupdates-azureaddevice) 对象) 。
+在将设备添加到部署访问群体的成员或排除集合时 (会自动向服务注册设备 (也就是说，如果 [azureADDevice](/graph/api/resources/windowsupdates-azureaddevice) 对象) 。
 
 以下示例演示如何将 Azure AD 设备添加为部署访问群体的成员。
 

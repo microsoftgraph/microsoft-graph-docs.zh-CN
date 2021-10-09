@@ -5,12 +5,12 @@ author: abhijeetsinha
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 534a7f73ad4c9a961c44f26c8465005b9ca43ee7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b22e7466f601cafd40a5d7f1c86c570935b0eba5
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59046230"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60255967"
 ---
 # <a name="add-directory-role-member"></a>添加目录角色成员
 
@@ -37,10 +37,10 @@ POST /directoryRoles/roleTemplateId={roleTemplateId}/members/$ref
 ```
 
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
-| Content-Type  | string  | application/json. Required.  |
+| 名称       | 说明|
+|:---------------|:----------|
+| Authorization  | Bearer {token}。必需。 |
+| Content-Type  | application/json. Required.  |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供要添加的 [directoryObject](../resources/directoryobject.md) 或 [user](../resources/user.md) 对象的 JSON 表示形式。

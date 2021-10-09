@@ -2,23 +2,20 @@
 title: 创建部署
 description: 创建新的部署对象。
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: b6ab12d7687d63a46684496c071fb4f9045a8786
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: de9177163835a9500b02d01806644404b50ee144
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52239183"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60256499"
 ---
 # <a name="create-deployment"></a>创建部署
 命名空间：microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-> [!NOTE]
-> 如果在创建 [部署时未指定](/graph/api/resources/windowsupdates-monitoringrule) 监视规则，则创建默认监视规则。 此默认监视规则具有 **信号**、阈值 和 `rollback`  `20` **操作** `alertError` 。 在 API 的未来更新中，此行为将更改，并且不会创建默认监视规则。
 
 创建新的 [部署](../resources/windowsupdates-deployment.md) 对象。
 

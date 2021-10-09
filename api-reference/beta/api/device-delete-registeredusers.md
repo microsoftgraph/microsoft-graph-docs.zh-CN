@@ -1,16 +1,16 @@
 ---
 title: 删除 registeredUsers
 description: 删除作为设备的注册用户的用户。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: michaelrm97
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7657b06b55ab246ccf327a9f8dee97b6cb7da7f5
-ms.sourcegitcommit: 998c63e6290cfb5ad4a6bd3eb3e249d282f962a3
+ms.openlocfilehash: 1a356633196358d94e6a486ffda336af52206f84
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58531276"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60256401"
 ---
 # <a name="delete-registereduser"></a>删除 registeredUser
 
@@ -39,9 +39,9 @@ DELETE /devices/{id}/registeredUsers/{id}/$ref
 ```
 
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| 名称       | 说明|
+|:-----------|:------|
+| Authorization  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

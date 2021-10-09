@@ -3,25 +3,22 @@ title: 设置 Microsoft 365 组行为与预配选项
 description: 在 Microsoft Graph 使用组资源，你可以设置创建 Microsoft 365 组时要预配的特定组行为和资源。
 author: Jordanndahl
 ms.localizationpriority: high
-ms.openlocfilehash: 7a57dc26a5d1dafe59196edbe0750f78955be612
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 3d4675425b258484d7e9bcbc17f0814817e11e2d
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59507744"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60256457"
 ---
 # <a name="set-microsoft-365-group-behaviors-and-provisioning-options-preview"></a>设置 Microsoft 365 组行为与预配选项（预览）
 
-使用 Microsoft Graph 中的 [组](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) ，可设置创建 Microsoft 365 组时要预配的特定组行为和资源。 根据资源，还可在组更新时预配某些内容。
+使用 Microsoft Graph 中的 [组](/graph/api/resources/group) ，可设置创建 Microsoft 365 组时要预配的特定组行为和资源。 根据资源，还可在组更新时预配某些内容。
 
 ### <a name="configuring-and-provisioning-groups"></a>配置和预配组
 
 **组** 资源公开两个属性，即 **resourceBehaviorOptions** 和 **resourceProvisioningOptions**，用于自定义创建组时要预配的行为和资源。 
 
-> [!NOTE]
-> **resourceBehaviortions** 和 **resourceProvisioningOptions** 属性目前仅可用于 Microsoft Graph beta 版终结点。  请勿在生产应用中使用它们，因为它们可能在没有通知的情况下随时更改。
-
-**resourceBehaviorOptions** 是一个字符串集合，用于为 Microsoft 365 组指定组行为。 这些行为只能在 [组创建](/graph/api/group-post-groups?view=graph-rest-beta&preserve-view=true)时设置 (`POST`)。
+**resourceBehaviorOptions** 是一个字符串集合，用于为 Microsoft 365 组指定组行为。 这些行为只能在 [组创建](/graph/api/group-post-groups)时设置 (`POST`)。
 
 | resourceBehaviorOptions 支持的值   |说明|如果未设置，则为默认值|
 |:---------------|:--------|:-----------|
@@ -34,7 +31,7 @@ ms.locfileid: "59507744"
 
 | resourceProvisioningOptions 支持的值   |说明| 如果未设置，则为默认值 |
 |:---------------|:--------|:------------|
-| Teams|在 Microsoft Teams 中将此组预配为团队。此外，还可以通过 `PATCH` 操作将此值添加在 [组更新](/graph/api/group-update?view=graph-rest-beta&preserve-view=true) 上，以便从现有 Microsoft 365 组中预配团队。| 此组是没有 Teams 功能的常规 Microsoft 365 组。|
+| Teams|在 Microsoft Teams 中将此组预配为团队。此外，还可以通过 `PATCH` 操作将此值添加在 [组更新](/graph/api/group-update) 上，以便从现有 Microsoft 365 组中预配团队。| 此组是没有 Teams 功能的常规 Microsoft 365 组。|
 
 
 ## <a name="see-also"></a>另请参阅

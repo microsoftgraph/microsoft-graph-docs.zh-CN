@@ -2,15 +2,15 @@
 title: 添加目录角色成员
 description: 创建新的目录角色成员。
 author: abhijeetsinha
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 135640887f43952a83f93b1b4267645a228383c4
-ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
+ms.openlocfilehash: ad7ae6e9c269a23a6aeaa7a06d2daa293ff6a439
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53118495"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60256282"
 ---
 # <a name="add-directory-role-member"></a>添加目录角色成员
 
@@ -38,9 +38,9 @@ POST /directoryRoles/{role-id}/members/$ref
 POST /directoryRoles/roleTemplateId={roleTemplateId}/members/$ref
 ```
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| 名称       | 说明|
+|:---------------|:----------|
+| Authorization  | Bearer {token}。必需。 |
 | Content-type | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文

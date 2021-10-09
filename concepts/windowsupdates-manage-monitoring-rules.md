@@ -5,21 +5,18 @@ author: Alice-at-Microsoft
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: 1e4f0538a9e7a5d47b070514685a11860a86ac35
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: eaef1105d5163bd0c0ab1e4859ef9d4979eb7bee
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59117527"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60255946"
 ---
 # <a name="manage-monitoring-rules-for-a-feature-update-deployment-using-the-windows-update-for-business-deployment-service"></a>使用 Windows Update for Business 部署服务管理功能更新部署的监视规则
 
 对于部署服务启动的部署，可以使用监视规则根据部署信号配置警报和自动操作。
 
 监视规则与部署功能Windows 10兼容。
-
-> [!NOTE]
-> 如果在创建[部署时未指定](/graph/api/resources/windowsupdates-monitoringrule)监视规则，将创建默认[](/graph/api/resources/windowsupdates-deployment)监视规则。 此默认监视规则具有 **信号**、阈值 和 `rollback`  `20` **操作** `alertError` 。 在 API 的未来更新中，此行为将更改，并且不会创建默认监视规则。
 
 ## <a name="step-1-create-a-monitoring-rule"></a>步骤 1：创建监视规则
 
@@ -169,7 +166,7 @@ Content-Type: application/json
 ```
 
 ### <a name="example-resume-deployment-by-updating-a-monitoring-rule-threshold"></a>示例：通过更新监视规则阈值恢复部署
-恢复部署的另一种方式是更改相关监视规则的阈值。 当达到新阈值时， (，) `pauseDeployment` 将再次触发操作。 
+恢复部署的另一种方式是更改相关监视规则的阈值。 当达到新阈值时，操作 (，) `pauseDeployment` 将再次触发。 
 
 下面是通过更改监视规则阈值恢复部署的示例。 此示例还说明如何编辑任何现有的监视规则（即使尚未达到其阈值）以及如何在没有监控规则的部署上创建监视规则。
 

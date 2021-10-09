@@ -1,18 +1,18 @@
 ---
-title: 检查成员组
+title: directoryObject：checkMemberGroups
 description: 检查指定组列表中的成员身份，然后从该列表返回这些组
-localization_priority: Normal
+ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 0b52e42e3c610bf0f0020a2587ac7b649fc180be
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3d9518bcb2efe12146480ef76b5fc5cea43e75e8
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52046879"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60256194"
 ---
-# <a name="check-member-groups"></a>检查成员组
+# <a name="directoryobject-checkmembergroups"></a>directoryObject：checkMemberGroups
 
 命名空间：microsoft.graph
 
@@ -21,6 +21,7 @@ ms.locfileid: "52046879"
 检查指定组列表中的成员身份，然后从该列表返回指定的用户、组、服务主体或目录对象是其成员的组。 此函数是可传递的。
 
 ## <a name="permissions"></a>权限
+
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -30,14 +31,18 @@ ms.locfileid: "52046879"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | User.Read.All、Directory.Read.All |
 
-使用以下方案指南帮助确定要使用哪些权限类型：
-- 使用 User.Read 和 GroupMember.Read.All 或 User.Read 和 Group.Read.All 权限获取登录用户的组成员身份。
-- 使用 User.ReadBasic.All 和 GroupMember.Read.All、User.Read.All 和 GroupMember.Read.All、User.ReadBasic.All 和 Group.Read.All 或 User.Read.All 和 Group.Read.All 权限获取任何用户的组成员身份。
-- 使用 GroupMember.Read.All 或 Group.Read.All 权限获取组的组成员身份。
-- 使用 Application.ReadWrite.All 和 GroupMember.Read.All 或 Application.ReadWrite.All 和 Group.Read.All 权限获取服务主体的组成员身份。
-- 使用 Directory.Read.All 权限获取目录对象的组成员身份。
+下表列出了用于不同方案的权限类型。
+
+| 方案 | 权限 |
+|:-|:-|
+| 获取已登录用户的组成员身份 | 使用以下权限集之一： <br/> <li> **User.Read** 和 **GroupMember.Read.All** <li>**User.Read** 和 **Group.Read.All** |
+| 获取任何用户的组成员身份 | 使用以下权限集之一： <br/> <li> **User.ReadBasic.All** 和 **GroupMember.Read.All** <li>**User.Read.All** 和 **GroupMember.Read.All** <li>**User.ReadBasic.All** 和 **Group.Read.All** <li>**User.Read.All** 和 **Group.Read.All** |
+| 获取组的组成员身份 | 使用 **GroupMember.Read.All 或** **Group.Read.All** 权限。 |
+| 获取服务主体的组成员身份 | 使用以下权限集之一 <br/> <li>**Application.ReadWrite.All** 和 **GroupMember.Read.All** <li>**Application.ReadWrite.All** 和 **Group.Read.All** |
+| 获取目录对象的组成员身份 | 使用 **Directory.Read.All** 权限。 |
 
 ## <a name="http-request"></a>HTTP 请求
+
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/checkMemberGroups
@@ -47,12 +52,14 @@ POST /servicePrincipals/{id}/checkMemberGroups
 POST /directoryObjects/{id}/checkMemberGroups
 ```
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+
+| 名称       |说明|
+|:---------------|:--------|
+| Authorization  | Bearer {token}。必需。 |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
+
 在请求正文中，提供具有以下参数的 JSON 对象。
 
 | 参数    | 类型   |说明|
@@ -65,7 +72,7 @@ POST /directoryObjects/{id}/checkMemberGroups
 
 ## <a name="example"></a>示例
 
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -103,8 +110,8 @@ Content-type: application/json
 ---
 
 
-##### <a name="response"></a>响应
-注意：为了提高可读性，可能缩短了此处显示的响应对象。
+### <a name="response"></a>响应
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

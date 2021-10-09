@@ -2,15 +2,15 @@
 title: 创建 registeredUser
 description: 添加设备的已注册用户。
 author: spunukol
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 621be45c38ec8a4d1e66b3e2409b20f0eeb278d9
-ms.sourcegitcommit: 998c63e6290cfb5ad4a6bd3eb3e249d282f962a3
+ms.openlocfilehash: 677f163e981d00873183849f79423357adf700be
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58531332"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60256394"
 ---
 # <a name="create-registereduser"></a>创建 registeredUser
 
@@ -37,9 +37,9 @@ POST /devices/{id}/registeredUsers/$ref
 
 ```
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| 名称       | 说明|
+|:---------------|:--------|
+| Authorization  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [directoryObject](../resources/directoryobject.md) 对象的 JSON 表示形式。

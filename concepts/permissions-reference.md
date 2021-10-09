@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: ce99f64c4bace1893a4d93e8d3d0fb64a82c6fd2
-ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
+ms.openlocfilehash: 1d39965eb95fca26ef29d513fbfa76672374941a
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60220484"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60256072"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -44,7 +44,7 @@ Microsoft Graph 权限名称遵循简单模式：_resource.operation.constraint_
 
 ## <a name="user-and-group-search-limitations-for-guest-users-in-organizations"></a>组织中来宾用户的用户和组搜索限制
 
-用户和组搜索功能允许应用通过对 `/users` 或 `/groups` 资源集（例如 `https://graph.microsoft.com/v1.0/users`）执行查询来搜索组织目录中的任何用户或组。 管理员和用户都可以使用此功能；但来宾用户不可以。
+用户和组搜索功能允许应用对 `/users` 或 `/groups` 资源集(例如 `https://graph.microsoft.com/v1.0/users`)执行查询，以搜索组织目录中的任何用户或组。管理员和用户都具有此功能；但来宾用户没有。
 
 如果登录用户是来宾用户，应用程序可以读取特定用户或组的配置文件（例如，`https://graph.microsoft.com/v1.0/users/241f22af-f634-44c0-9a15-c8cd2cea5531`），具体视应用程序获得的授权而定；不过，不能对可能返回多个资源的 `/users` 或 `/groups` 资源集执行查询。
 
@@ -269,16 +269,16 @@ _Application.ReadWrite.OwnedBy_ 权限允许与 _Application.ReadWrite.All_ 相�
 
 #### <a name="delegated"></a>委派
 
-* _Application.Read.All_：列出所有应用程序 (`GET /beta/applications`)
-* _Application.ReadWrite.All_：更新服务主体 (`PATCH /beta/servicePrincipals/{id}`)
+* _Application.Read.All_：列出所有应用程序 (`GET /v1.0/applications`)
+* _Application.ReadWrite.All_：更新服务主体 (`PATCH /v1.0/servicePrincipals/{id}`)
 
 #### <a name="application"></a>应用程序
 
-* _Application.Read.All_：列出所有应用程序 (`GET /beta/applications`)
-* _Application.ReadWrite.All_：删除服务主体 (`DELETE /beta/servicePrincipals/{id}`)
-* _Application.ReadWrite.OwnedBy_：创建应用程序 (`POST /beta/applications`)
-* _Application.ReadWrite.OwnedBy_：列出调用应用程序拥有的所有应用程序 (`GET /beta/servicePrincipals/{id}/ownedObjects`)
-* _Application.ReadWrite.OwnedBy_：向拥有的应用程序添加另一个所有者 (`POST /applications/{id}/owners/$ref`)。
+* _Application.Read.All_：列出所有应用程序 (`GET /v1.0/applications`)
+* _Application.ReadWrite.All_：删除服务主体 (`DELETE /v1.0/servicePrincipals/{id}`)
+* _Application.ReadWrite.OwnedBy_：创建应用程序 (`POST /v1.0/applications`)
+* _Application.ReadWrite.OwnedBy_：列出调用应用程序拥有的所有应用程序 (`GET /v1.0/servicePrincipals/{id}/ownedObjects`)
+* _Application.ReadWrite.OwnedBy_：向拥有的应用程序添加另一个所有者 (`POST /v1.0/applications/{id}/owners/$ref`)。
     > 注意：这可能需要其他权限。
 
 ---
@@ -721,7 +721,7 @@ _CallRecord-PstnCalls.Read.All_ 权限授予应用程序访问 [PSTN（通话套
 
 Directory 权限提供访问目录资源（如组织中的 [user](/graph/api/resources/user)、[group](/graph/api/resources/group) 和 [device](/graph/api/resources/device)）的最高级特权。
 
-它们还专门控制对其他目录资源的访问，如 [组织联系人](/graph/api/resources/orgcontact?view=graph-rest-beta&preserve-view=true)、[架构扩展 API](/graph/api/resources/schemaextension?view=graph-rest-beta&preserve-view=true)、[Privileged Identity Management (PIM) API](/graph/api/resources/privilegedidentitymanagement-root?view=graph-rest-beta&preserve-view=true)，以及 v1.0 和 beta API 参考文档中 **Azure Active Directory** 节点下列出的许多资源和 API。 其中包括管理单元、目录角色、目录设置、策略等。
+其还专门控制对其他目录资源的访问权限，例如: [组织联系人](/graph/api/resources/orgcontact?view=graph-rest-beta&preserve-view=true)、[架构扩展 API](/graph/api/resources/schemaextension?view=graph-rest-beta&preserve-view=true)、[Privileged Identity Management (PIM) API](/graph/api/resources/privilegedidentitymanagement-root?view=graph-rest-beta&preserve-view=true) 以及 v1.0 和 beta 版 API 参考文档中 **Azure Active Directory** 节点下列出的多个资源和 API。其中包含管理单元、目录角色、目录设置以及策略等。
 
 > [!NOTE]
 > 2020 年 12 月 3 日之前，当向应用程序授予权限 *Directory.Read.All* 时， [目录阅读器](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#directory-readers-permissions) 目录角色也分配给了应用程序的服务主体。 当 *Directory.ReadWrite.* 授予所有项目时， [作者](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#directory-writers-permissions) 分配了目录角色。 撤销关联的应用程序权限时，不会自动删除这些目录角色。 要删除应用程序对目录的读写权限，客户还必须删除授予该应用程序的所有目录角色。
@@ -975,7 +975,7 @@ Microsoft 365 组的组权限授予应用访问组内容的访问权限；例如
 
 ### <a name="remarks"></a>注解
 
-_IdentityProvider.Read.All_ 和 _IdentityProvider.ReadWrite.All_ 仅对工作或学校帐户有效。 登录用户必须分配有全局管理员角色，应用程序才能通过委派权限读取或写入标识提供程序。 若要详细了解管理员角色，请参阅[在 Azure Active Directory 中分配管理员角色](/azure/active-directory/active-directory-assign-admin-roles)。
+_IdentityProvider.Read.All_ 和 _IdentityProvider.ReadWrite.All_ 仅对工作或学校帐户有效。对于使用委派权限读取或写入标识提供程序的应用，已登录用户必须分配为全局管理员角色。有关管理员角色的详细信息，请参阅 [在 Azure Active Directory 中分配管理员角色](/azure/active-directory/active-directory-assign-admin-roles)。
 
 ### <a name="example-usage"></a>示例用法
 
@@ -1043,9 +1043,9 @@ _IdentityRiskEvent.Read.All_ 仅适用于工作或学校帐户。对于通过委
 | _IdentityRiskyUser.ReadWrite.All_ |   读取和更新标识用户风险信息 | 允许应用在没有登录用户的情况下读取和更新组织中所有用户的标识用户风险信息。 | 是 |
 
 
-### <a name="remarks"></a>说明
+### <a name="remarks"></a>备注
 
-_IdentityRiskyUser.Read.All_ 和 _IdentityRiskyUser.ReadWrite.ALL_ 仅适用于工作或学校帐户。 对于通过委派权限读取标识用户风险信息的应用，登录用户必须是以下管理员角色之一的成员：全局管理员、安全管理员或安全读者。 若要详细了解管理员角色，请参阅[在 Azure Active Directory 中分配管理员角色](/azure/active-directory/active-directory-assign-admin-roles)。
+_IdentityRiskyUser.Read.All_ 和 _IdentityRiskyUser.ReadWrite.ALL_ 仅对工作或学校帐户有效。对于具有读取标识用户风险信息的委派权限的应用，已登录用户必须是以下管理员角色之一的成员: 全局管理员、安全管理员或安全信息读取者。有关管理员角色的详细信息，请参阅 [在 Azure Active Directory 中分配管理员角色](/azure/active-directory/active-directory-assign-admin-roles)。
 
 ### <a name="example-usage"></a>用法示例
 
@@ -1104,41 +1104,6 @@ _IdentityUserFlow.Read.All_ 和 _IdentityUserFlow.ReadWrite.ALL_ 仅适用于工
 
 ---
 
-## <a name="incidents-permissions"></a>事件权限
-
-#### <a name="delegated-permissions"></a>委派权限
-
-|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
-|:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Incidents.Read.All_ | 读取事件 | 允许应用代表已登录的用户读取事件。 | 是 | 否 |
-| _Incidents.ReadWrite.All_ | 读取和写入事件 | 允许应用代表已登录的用户读取和写入事件。 | 是 | 否 |
-
-
-#### <a name="application-permissions"></a>应用程序权限
-
-|   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
-|:----------------|:------------------|:-------------|:-----------------------|
-| _Incidents.Read.All_ | 读取所有事件 | 允许应用在没有已登录用户的情况下读取所有事件。 | 是 |
-| _Incidents.ReadWrite.All_ | 读取和写入所有事件 | 允许应用在没有已登录用户的情况下读取和写入所有事件。 | 是 |
-
-### <a name="remarks"></a>备注
-
-事件权限仅对工作或学校帐户有效。
-
-### <a name="example-usage"></a>示例用法
-
-#### <a name="delegated"></a>委派
-
-* _Incidents.Read.All_：读取允许用户读取的组织中的所有事件 (`GET /security/incidents`)
-* _Incidents.ReadWrite.All：_ 读取和写入允许用户读取和写入的组织中的所有事件 (`GET /security/incidents`)
-
-#### <a name="application"></a>Application
-
-* _Incidents.Read.All：_ 读取组织中的所有事件 (`GET /security/incidents`)
-* _Incidents.ReadWrite.All：_ 读取和写入组织中的所有事件 (`GET /security/incidents`) 
-
----
-
 ## <a name="information-protection-policy-permissions"></a>信息保护策略权限
 
 #### <a name="delegated-permissions"></a>委派权限
@@ -1190,7 +1155,7 @@ _IdentityUserFlow.Read.All_ 和 _IdentityUserFlow.ReadWrite.ALL_ 仅适用于工
 |_DeviceManagementServiceConfig.Read.All_ | 读取 Microsoft Intune 配置 | 允许应用读取 Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 | 否 |
 |_DeviceManagementServiceConfig.ReadWrite.All_ | 读取和写入 Microsoft Intune 配置 | 允许应用读取和写入 Microsoft Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 | 否 |
 
-### <a name="remarks"></a>说明
+### <a name="remarks"></a>注解
 
 > **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户 [正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
@@ -1346,7 +1311,7 @@ _Member.Read.Hidden_ 仅对工作或学校帐户有效。
 | _Notes.ReadWrite.All_ |    读取和写入所有 OneNote 笔记本 | 允许应用无需具有已登录用户即可读取、共享和修改组织中的所有 OneNote 笔记本。| 是 |
 
 
-### <a name="remarks"></a>说明
+### <a name="remarks"></a>注解
 _Notes.Read.All_ 和 _Notes.ReadWrite.All_ 仅适用于工作或学校帐户。所有其他权限对于 Microsoft 帐户和工作或学校帐户均有效。
 
 通过 _Notes.Create_ 权限，应用可以查看已登录用户的 OneNote 笔记本层次结构，并创建 OneNote 内容（笔记本、分区组、分区、页面等）。
@@ -1377,11 +1342,10 @@ _Notes.ReadWrite_ 和 _Notes.ReadWrite.All_ 还允许应用修改针对已登录
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Notifications.ReadWrite.CreatedByApp_ | 提供和管理此应用的通知。 | 允许应用代表登录用户提供其通知。 此外，还允许应用读取、更新和删除此应用的用户通知项目。 |否 |
 ### <a name="remarks"></a>注解
-*Notifications.ReadWrite.CreatedByApp* 对 Microsoft 帐户和工作或学校帐户均有效。
-与此权限相关联的 *CreatedByApp* 约束指示服务将基于通话应用的标识（Microsoft 帐户应用 ID 或针对跨平台应用程序标识配置的一组应用 ID）对结果应用隐式筛选。
+*Notifications.ReadWrite.CreatedByApp* 对 Microsoft 帐户和工作或学校帐户都有效。与此权限关联的 *CreatedByApp* 约束表明，服务将基于调用应用的标识(Microsoft 帐户应用 ID 或为跨平台应用程序标识配置的一组应用 ID)对结果应用隐式筛选。
 ### <a name="example-usage"></a>用法示例
 #### <a name="delegated"></a>委派
-* _Notifications.ReadWrite.CreatedByApp_：发布以用户为中心的通知，然后可能会将该通知传递至用户运行在不同端点上的多个应用程序客户端。 (POST /me/notifications/)。
+* _Notifications.ReadWrite.CreatedByApp_: 发布以用户为中心的通知，该通知之后可能会传递给在不同终结点上运行的用户的多个应用程序客户端。(POST /me/notifications/)。
 
 ---
 
@@ -2480,8 +2444,6 @@ _User.ReadBasic.All_ 权限限制应用访问称为基本个人资料的有限�
 #### <a name="application"></a>应用程序
 
 * _WindowsUpdates.ReadWrite.All_：创建部署(`POST /beta/admin/windows/updates/deployments`)。
-
----
 
 ## <a name="permission-scenarios"></a>权限方案
 

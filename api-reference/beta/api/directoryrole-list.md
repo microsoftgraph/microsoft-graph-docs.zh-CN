@@ -2,15 +2,15 @@
 title: 列出 directoryRoles
 description: 列出租户中激活的目录角色。
 author: abhijeetsinha
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b34011e1ed208405f40e4a5a5be6af20e1f217fe
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: f7f1d808608f3c1311ad9e6361d96c59b758ffe6
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334421"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60256177"
 ---
 # <a name="list-directoryroles"></a>列出 directoryRoles
 
@@ -42,9 +42,9 @@ GET /directoryRoles
 此方法 **不** 支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应（例如，此处不支持使用 $filter）。
 
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| 名称       | 说明|
+|:-----------|:------|
+| Authorization  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

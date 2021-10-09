@@ -2,15 +2,15 @@
 title: 获取 directoryRole
 description: 检索 directoryRole 对象的属性。
 author: abhijeetsinha
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 905afd750bce1976a25cd5e759df4659cbcb5fe0
-ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
+ms.openlocfilehash: e2eaf7702b36e4b8eb060b0e60881ef8bdffa602
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53118530"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60256289"
 ---
 # <a name="get-directoryrole"></a>获取 directoryRole
 
@@ -41,9 +41,9 @@ GET /directoryRoles/roleTemplateId={roleTemplateId}
 例如， **此方法不支持** 任何 [OData](/graph/query-parameters) 查询参数来帮助自定义响应 (，例如，本文不支持 `$filter`) 。
 
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| 名称       | 说明|
+|:-----------|:------|
+| Authorization  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

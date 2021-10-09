@@ -2,15 +2,15 @@
 title: 获取 directoryObject
 description: 检索 directoryobject 对象的属性和关系。
 author: keylimesoda
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 28714b7c1473c1e4ffcdc7a82bc4fa2b2115a95e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b6e635419d0f63645dd0714a2540d6d60f62a182
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52046865"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60256373"
 ---
 # <a name="get-directoryobject"></a>获取 directoryObject
 
@@ -18,7 +18,8 @@ ms.locfileid: "52046865"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 directoryobject 对象的属性和关系。
+检索 directoryObject 对象的属性和关系。
+
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -33,22 +34,25 @@ ms.locfileid: "52046865"
 ```http
 GET /directoryObjects/{id}
 ```
-## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+
+| 名称       | 说明|
+|:-----------|:------|
+| Authorization  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
+
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [directoryObject](../resources/directoryobject.md) 对象。
+
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
-下面是一个请求示例。
+
+### <a name="request"></a>请求
+下面展示了示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -76,8 +80,11 @@ GET https://graph.microsoft.com/beta/directoryObjects/{id}
 
 ---
 
-##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+### <a name="response"></a>响应
+
+下面展示了示例响应。 
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -86,10 +93,30 @@ GET https://graph.microsoft.com/beta/directoryObjects/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 22
 
 {
-  "id": "id-value"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#directoryObjects/$entity",
+    "@odata.type": "#microsoft.graph.user",
+    "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0/Microsoft.DirectoryServices.User",
+    "id": "6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0",
+    "accountEnabled": true,
+    "displayName": "Conf Room Adams",
+    "mail": "Adams@Contoso.com",
+    "mailNickname": "Adams",
+    "proxyAddresses": [
+        "SMTP:Adams@Contoso.com"
+    ],
+    "refreshTokensValidFromDateTime": "2021-08-09T09:30:59Z",
+    "signInSessionsValidFromDateTime": "2021-08-09T09:30:59Z",
+    "userPrincipalName": "Adams@Contoso.com",
+    "userType": "Member",
+    "identities": [
+        {
+            "signInType": "userPrincipalName",
+            "issuer": "Contoso.com",
+            "issuerAssignedId": "Adams@Contoso.com"
+        }
+    ]
 }
 ```
 

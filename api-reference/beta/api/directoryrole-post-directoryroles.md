@@ -1,16 +1,16 @@
 ---
 title: Activate directoryRole
 description: 激活目录角色。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a9cc827495345c4a08eff75a4baa53603ab29177
-ms.sourcegitcommit: 9eeb056f311044aaa40654cdb3ae5ae61f1c4d04
+ms.openlocfilehash: e3b8339678de47a93f25fec2243cd8405311c241
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52854200"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60256081"
 ---
 # <a name="activate-directoryrole"></a>Activate directoryRole
 
@@ -20,7 +20,7 @@ ms.locfileid: "52854200"
 
 激活目录角色。 要读取目录角色或更新其成员，首先必须在租户中将其激活。 默认情况下，仅公司管理员和隐式用户目录角色被激活。 若要访问成员并将分配到另一个目录角色，首先必须通过相应的目录角色模板 ([directoryRoleTemplate](../resources/directoryroletemplate.md)) 将其激活。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -36,9 +36,9 @@ POST /directoryRoles
 
 ```
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| 名称       | 说明|
+|:---------------|:--------|
+| Authorization  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [directoryRole](../resources/directoryrole.md) 对象的 JSON 表示形式。

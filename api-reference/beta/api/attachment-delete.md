@@ -1,16 +1,16 @@
 ---
 title: 删除附件
-description: 从日历事件、邮件、Outlook 任务或帖子中删除附件。
-localization_priority: Normal
+description: 从日历事件、邮件、Outlook或帖子中删除附件。
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: outlook
 author: abheek-das
-ms.openlocfilehash: 08f07b7c572f2874eefc636de9c35d8961039341
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 8dbb8fe04455a9432b8548333ebc9615fa3fbb97
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50438615"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60255983"
 ---
 # <a name="delete-attachment"></a>删除附件
 
@@ -20,11 +20,11 @@ ms.locfileid: "50438615"
 
 [!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
 
-从用户日历事件、邮件[、Outlook](../resources/outlooktask.md)[](../resources/message.md)任务或帖子中删除[附件](../resources/post.md)。 [](../resources/event.md)
+从用户日历事件、邮件、[](../resources/event.md)任务或[](../resources/message.md)帖子[Outlook附件](../resources/outlooktask.md)[。](../resources/post.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
-根据 **附件附加到的资源** (事件、邮件 **、outlookTask** 或帖子 **)** 以及请求的权限类型 (委派或应用程序) ，下表中指定的权限是调用此 API 所需的最小特权。 若要了解详细信息，包括在选择更多特权之前的[注意事项](/graph/auth/auth-concepts#best-practices-for-requesting-permissions)，请在“[权限](/graph/permissions-reference)”中搜索以下权限。
+根据附件附加到的资源 (**事件**、邮件 **、outlookTask** 或 post **)** 以及请求的权限类型 (委派或应用程序) ，下表中指定的权限是调用此 API 所需的最低权限。 若要了解其他信息， [在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 特权权限之前要特别小心，在"权限" [中搜索](/graph/permissions-reference)。
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
@@ -50,7 +50,7 @@ DELETE /me/calendar/events/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/calendar/events/{id}/attachments/{id}
 ```
 
-属于[用户的指定](../resources/event.md)[日历](../resources/calendar.md)中事件的附件。
+属于[用户的指定](../resources/event.md)[日历](../resources/calendar.md)中的事件的附件。
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/calendars/{id}/events/{id}/attachments/{id}
@@ -97,7 +97,7 @@ DELETE /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
 ```
 
-Outlook 任务的 [附件](../resources/outlooktask.md)。
+任务中的[Outlook附件](../resources/outlooktask.md)。
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -115,9 +115,9 @@ DELETE /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
 
 ## <a name="request-headers"></a>请求标头
 
-| 名称       | 类型 | 说明|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| 名称       | 说明|
+|:---------------|:----------|
+| Authorization  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 

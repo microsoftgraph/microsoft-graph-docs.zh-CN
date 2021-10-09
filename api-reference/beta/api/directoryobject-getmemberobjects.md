@@ -1,16 +1,16 @@
 ---
 title: 获取成员对象
 description: " 返回用户、组、服务主体或目录对象是其中成员的所有组、管理单元和目录角色。 此函数是可传递的。 "
-localization_priority: Normal
+ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a5f7ef92699cab5a7f39046e6ac5fe2fdab8585d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b4c141c02471ff8fe1d4985a67d3f6c4efe3280f
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52046844"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60256380"
 ---
 # <a name="get-member-objects"></a>获取成员对象
 
@@ -19,7 +19,8 @@ ms.locfileid: "52046844"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
  返回用户、组、服务主体或目录对象是其中成员的所有组、管理单元和目录角色。 此函数是可传递的。 
- > 注意：只有用户可以是目录角色的成员。
+
+**注意：** 只有用户才能是目录角色的成员。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -42,9 +43,9 @@ POST /directoryObjects/{id}/getMemberObjects
 
 ```
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| 名称       | 说明|
+|:---------------|:--------|
+| Authorization  | Bearer {token}。必需。 |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
@@ -52,7 +53,7 @@ POST /directoryObjects/{id}/getMemberObjects
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|Boolean| **true** 指定仅应返回包含实体的安全组；**false** 指定应返回包含实体的所有组和目录角色。**注意**：如果参数为 **true**，只能对一位用户调用此函数。 |
+|securityEnabledOnly|Boolean| `true` 指定仅返回实体是成员的安全组; `false` 指定应返回实体是成员的所有组和目录角色。 **注意**：如果参数为 ，则只能在用户上调用 函数 `true` 。 |
 
 ## <a name="response"></a>响应
 
@@ -95,7 +96,7 @@ Content-type: application/json
 
 
 ##### <a name="response"></a>响应
-注意：为了提高可读性，可能缩短了此处显示的响应对象。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
