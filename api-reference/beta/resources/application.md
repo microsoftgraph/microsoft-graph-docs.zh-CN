@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 8ca4dc403449f95f21328f0872c0dc1151468faf
-ms.sourcegitcommit: 0ec845f93eaa140ad833ba163c76c5308197a92f
+ms.openlocfilehash: b7aa417042622717e60e04dbb1050026681d161f
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60068592"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60256520"
 ---
 # <a name="application-resource-type"></a>应用程序资源类型
 
@@ -99,7 +99,7 @@ ms.locfileid: "60068592"
 | passwordCredentials | [passwordCredential](passwordcredential.md) 集合|与应用程序关联的密码凭据集合。不可为 Null。|
 | publicClient | [publicClientApplication](publicclientapplication.md) | 指定已安装客户端（如台式设备或移动设备）的设置。 |
 | publisherDomain | String | 应用程序的已验证发布者域。只读。支持 `$filter`（`eq`、`ne`、`ge`、`le`、`startsWith`）。|
-| requiredResourceAccess |[requiredResourceAccess](requiredresourceaccess.md) 集合| 指定应用程序需要访问的资源。 此属性还指定每个资源所需的 OAuth 权限范围和应用程序角色的集合。 该配置对所需的资源的访问将推动许可体验。 不可为 null。 <br><br>支持 `$filter`（`eq`、`NOT`、`ge`、`le`）。|
+| requiredResourceAccess |[requiredResourceAccess](requiredresourceaccess.md) 集合| 指定应用程序需要访问的资源。 此属性还指定每个资源所需的委派权限和应用程序角色的集合。 该配置对所需的资源的访问将推动许可体验。 可配置的资源服务 (API) 不能超过 50 个。 从 2021 年 10 月中旬开始，所需权限总数不得超过 400 个。 不可为 null。 <br><br>支持 `$filter`（`eq`、`NOT`、`ge`、`le`）。|
 | signInAudience | String | 指定当前应用程序支持的 Microsoft 帐户。 可能的值是：`AzureADMyOrg`、`AzureADMultipleOrgs`、`AzureADandPersonalMicrosoftAccount`（默认）和 `PersonalMicrosoftAccount`。 请参阅下表中的 [，了解](#signinaudience-values)。 <br><br>支持 `$filter`（`eq`、`ne`、`NOT`）。|
 | spa                     | [spaApplication](../resources/spaapplication.md)                            | 指定单页应用程序的设置，包括注销 URL 并重定向授权代码和访问令牌的 URI。 |
 | 标记 |字符串集合| 可用于分类和标识应用程序的自定义字符串。不可为 null。<br><br>支持 `$filter`（`eq`、`NOT`、`ge`、`le`、`startsWith`）。|

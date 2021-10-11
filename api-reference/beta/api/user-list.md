@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 2e808cdb3d877a796e1a593fb5665f91c212e072
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 062079f18f7eb03912aaf09614211eeb64f42964
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59765059"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60256415"
 ---
 # <a name="list-users"></a>列出用户
 
@@ -31,6 +31,8 @@ ms.locfileid: "59765059"
 |委派（工作或学校帐户） | User.ReadBasic.All、User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
+
+来宾用户无法调用此 API。 有关成员和来宾用户的权限的详细信息，请参阅 [Azure Active Directory 中的默认用户权限是什么？](/azure/active-directory/fundamentals/users-default-permissions#member-and-guest-users)
 
 ## <a name="http-request"></a>HTTP 请求
 

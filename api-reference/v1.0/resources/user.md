@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: d60cc903bba7a5a365b4a070961ab7951e9401e3
-ms.sourcegitcommit: 6ae8c124fac63a195ccf516c9cff739f730b6b13
+ms.openlocfilehash: 428fc62f15a6e7a761c6645822924a038db32e43
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "60084075"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60256065"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -57,7 +57,7 @@ ms.locfileid: "60084075"
 | [List contactFolders](../api/user-list-contactfolders.md)                                  | [ContactFolder](contactfolder.md) 集合                                     | 获取已登录用户的默认联系人文件夹中的联系人文件夹集合。                                                                                                                                             |
 | **目录对象**                                                                      |                                                                                  |                                                                                                                                                                                                                                     |
 | [assignLicense](../api/user-assignlicense.md)                                              | [user](user.md)                                                                  | 为用户添加或删除订阅。还可以启用和禁用与订阅相关的特定计划。                                                                                                            |
-| [checkMemberGroups](../api/user-checkmembergroups.md)                                      | String collection                                                                | 检查组列表中的成员身份。检查是可传递的。                                                                                                                                                                  |
+| [checkMemberGroups](../api/user-checkmembergroups.md)                                      | 字符串集合                                                                | 检查组列表中的成员身份。检查是可传递的。                                                                                                                                                                  |
 | [checkMemberObjects](../api/user-checkmemberobjects.md)                                    | String 集合                                                                | 检查组、目录角色或管理单元对象列表中的成员身份。该函数可传递。                                                                                                                |
 | [exportPersonalData](../api/user-exportpersonaldata.md)                                    | 无                                                                             | 提交公司管理员发出的数据策略操作请求，以导出组织用户的数据。                                                                                                                   |
 | [getByIds](../api/directoryobject-getbyids.md)                                             | 字符串集合                                                                | 返回 ID 列表中指定的目录对象。                                                                                                                                                                           |
@@ -162,13 +162,13 @@ ms.locfileid: "60084075"
 |faxNumber|String|用户的传真号。 <br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `NOT` 、 `ge`、 `le`、 `in`、 `startsWith`）。|
 |givenName|String|用户的名。 最大长度为 64 个字符。 <br><br>默认情况下返回。 支持 `$filter` （`eq`、 `ne`、 `NOT` 、 `ge`、 `le`、 `in`、 `startsWith`）。|
 | hireDate | DateTimeOffset | 用户的雇佣日期。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。<br><br>仅在 `$select` 上返回。 <br> **注意：** 此属性特定于 SharePoint Online。建议使用本机器 **employeeHireDate** 属性通过 Microsoft Graph API 设置和更新雇佣日期值。 |
-|id|String|用户的唯一标识符。 应视为不透明的标识符。 继承自 [directoryObject](directoryobject.md)。 键。 不可为 null。 只读。 <br><br>默认情况下返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `in`）。|
+|id|String|用户的唯一标识符。 应视为不透明的标识符。 继承自 [directoryObject](directoryobject.md)。 键。 不可为 null。 只读。 <br><br>默认返回。支持 `$filter`（`eq`、`ne`、`NOT`、`in`）。|
 |identities|[objectIdentity](objectIdentity.md) 集合| 表示可用于登录此用户帐户的标识。 标识可由 Microsoft （也称为本地帐户）、组织或社交身份提供商（如 Facebook、Google 和 Microsoft）提供，并绑定到用户帐户。 可能包含具有相同 **signInType** 值的多个项目。 <br><br>仅在 `$select` 返回。仅在 **signInType** 不为 `userPrincipalName` 的位置支持 `$filter` (`eq`)。|
 |imAddresses|String collection|用户的即时消息 IP 语音 (VOIP) 会话初始协议 (SIP) 地址。只读。<br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `NOT`、 `ge`、 `le`、 `startsWith`）。|
 |interests|String collection|用户介绍自身兴趣的列表。 <br><br>仅在 `$select` 上返回。|
 |isResourceAccount|布尔| 请勿使用 – 保留以备今后使用。|
 |jobTitle|String|用户的职务。 最大长度为 128 个字符。 <br><br>默认情况下返回。 支持 `$filter` （`eq`、 `ne`、 `NOT` 、 `ge`、 `le`、 `in`、 `startsWith`）。|
-|lastPasswordChangeDateTime| DateTimeOffset | 此 Azure AD 用户上次更改密码的时间。日期和时间信息使用 ISO 8601 格式，并且始终采用 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。<br><br>仅在 `$select` 上返回。|
+|lastPasswordChangeDateTime| DateTimeOffset | 此 Azure AD 用户上次更改密码或创建密码的时间，以最新操作的日期为准。日期和时间信息使用 ISO 8601 格式，并且始终以 UTC 时间标识。例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。<br><br>仅在 `$select` 上返回。|
 |legalAgeGroupClassification|[legalAgeGroupClassification](#legalagegroupclassification-values)| 由企业应用程序用于确定用户的法定年龄组。 此属性为只读，并且基于 **ageGroup** 和 **consentProvidedForMinor** 属性进行计算。 允许的值：`null`、`minorWithOutParentalConsent`、`minorWithParentalConsent`、`minorNoParentalConsentRequired`、`notAdult` 和 `adult`。 请参阅[法定年龄组属性定义](#legal-age-group-property-definitions)以了解详细信息。 <br><br>仅在 `$select` 上返回。|
 |licenseAssignmentStates|[licenseAssignmentState](licenseassignmentstate.md) 集合|此用户的许可证分配状态。只读。<br><br>仅在 `$select` 上返回。|
 |mail|String|用户的 SMTP 地址，例如， `jeff@contoso.onmicrosoft.com`。<br>对此属性进行更改也将更新用户的 **proxyAddresses** 集合，以便将该值包含为 SMTP 地址。 对于 Azure AD B2C 帐户，此属性最多可以使用唯一的 SMTP 地址更新 10 次。 此属性不能包含突出字符。<br><br>默认情况下返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`、 `endsWith`）。|
@@ -178,7 +178,7 @@ ms.locfileid: "60084075"
 |mySite|String|用户个人网站的 URL。 <br><br>仅在 `$select` 上返回。|
 |officeLocation|String|用户公司地点的办公室位置。 <br><br>默认返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。|
 |onPremisesDistinguishedName|String| 包含本地 Active Directory `distinguished name` 或 `DN`。仅针对通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 的客户填充该属性。只读。<br><br>仅在 `$select` 上返回。 |
-|onPremisesDomainName|String| 包含从本地目录同步的本地 `domainFQDN`（也称为 dnsDomainName）。 仅当客户正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 时，才会填充该属性。 只读。 <br><br>仅在 `$select` 上返回。|
+|onPremisesDomainName|String| 包含本地 `domainFQDN`，也称为 dnsDomainName。仅为正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 的客户填充该属性。只读。<br><br>仅在 `$select` 上返回。|
 |onPremisesExtensionAttributes|[onPremisesExtensionAttributes](onpremisesextensionattributes.md)|包含用户的 extensionAttributes 1-15。 请注意，单个扩展属性既不可选择，也不可筛选。 对于 `onPremisesSyncEnabled` 用户，这组属性集的授权来源是本地，并且为只读。 对于只使用云的用户（其中 `onPremisesSyncEnabled` 为假），可以在创建或更新期间设置这些属性。 这些扩展属性也称 Exchange 自定义属性 1-15。 <br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `NOT`、 `ge`、 `le`、 `in`）。 |
 |onPremisesImmutableId|String|此属性用于将本地 Active Directory 用户帐户关联到他们的 Azure AD 用户对象。如果对用户的 **userPrincipalName** (UPN) 属性使用联盟域，在 Graph 中创建新用户帐户时必须指定此属性。**注意：** 指定该属性时不能使用 **$** 和 **\_** 字符。<br><br>仅在 `$select` 上返回。 支持 `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`)..                            |
 |onPremisesLastSyncDateTime|DateTimeOffset|指示对象最后一次与本地目录同步的时间。例如：`2013-02-16T03:04:54Z`。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。只读。<br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`）。|
@@ -208,7 +208,7 @@ ms.locfileid: "60084075"
 |surname|String|用户的姓氏。 最大长度为 64 个字符。 <br><br>默认情况下返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。|
 |usageLocation|String|两个字母的国家/地区代码（ISO 标准 3166）。 由于法律要求，将被分配许可证的用户需要检查国家/地区的服务可用性。 示例包括：`US`、`JP`、`GB`。不可为 null。 <br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。|
 |userPrincipalName|String|用户的用户主体名称 (UPN)。UPN 是用户基于 Internet 标准 RFC 822 的 Internet 式登录名。按照惯例，此名称应映射到用户的电子邮件名称。常规格式是 alias@domain，其中，domain 必须位于租户的已验证域集合中。创建用户时此属性是必需的。可从 [组织](organization.md)的 **verifiedDomains** 属性访问租户的已验证域。<br>注意：此属性不能包含突出字符。 <br><br>默认情况下返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`、 `endsWith`） 和 `$orderBy`。
-|userType|String|可用于对目录中的用户类型进行分类的字符串值，例如`Member``Guest`。 <br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `in`）。          |
+|userType|String|可用于对目录中的用户类型进行分类的字符串值，例如`Member``Guest`。 <br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `in`）。 **注意：** 有关成员和来宾用户权限的详细信息，请参阅 [Azure Active Directory 中的默认用户权限是什么？](/azure/active-directory/fundamentals/users-default-permissions#member-and-guest-users)         |
 
 ### <a name="legal-age-group-property-definitions"></a>法定年龄组属性定义
 

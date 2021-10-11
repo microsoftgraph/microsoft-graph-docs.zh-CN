@@ -2,15 +2,15 @@
 title: 'directoryObject: getByIds'
 description: 返回 ID 列表中指定的目录对象。
 author: keylimesoda
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: bcd1e20de65f6ddefc08310572ff596865d438da
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 0aaaabfc456c6b0b71ef20ddce42bb9da57f443a
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051492"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60256534"
 ---
 # <a name="directoryobject-getbyids"></a>directoryObject: getByIds
 
@@ -19,7 +19,7 @@ ms.locfileid: "52051492"
 返回 ID 列表中指定的目录对象。
 
 >[!NOTE]
->此 API 存在一个[已知问题](/graph/known-issues#incomplete-objects-when-using-getbyids-request)。 返回的目录对象并非都是包含其所有属性的完整对象。
+>此 API 有一个[已知问题](/graph/known-issues#incomplete-objects-when-using-getbyids-request)。返回的目录对象并非都是包含其所有属性的完整对象。
 
 该函数的一些常见用途是：
 
@@ -49,10 +49,10 @@ POST /directoryObjects/getByIds
 
 ## <a name="request-headers"></a>请求标头
 
-| 名称       | 类型 | 说明|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
-| Content-type  | string | application/json. Required.  |
+| 名称       | 说明|
+|:---------------|:--------|
+| Authorization  | Bearer {token}。必需。 |
+| Content-type  | application/json. Required.  |
 
 ## <a name="request-body"></a>请求正文
 
@@ -60,8 +60,8 @@ POST /directoryObjects/getByIds
 
 | 参数   | 类型 |说明|
 |:---------------|:--------|:----------|
-|ids|String collection| 要返回其对象的 ID 集合。  ID 是 GUID，由字符串表示。  最多可以指定 1000 个 ID。 |
-|types|String collection| 指定要搜索的资源集合集的资源类型集合。 如果未指定，则默认为 [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0)，其包含目录中定义的所有资源类型。 可以在该集合中指定派生自 [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0) 的任何对象，例如：[user](/graph/api/resources/user?view=graph-rest-v1.0)、[group](/graph/api/resources/group?view=graph-rest-v1.0)、[device](/graph/api/resources/device?view=graph-rest-v1.0) 等。 若要搜索对[云解决方案提供商](https://partner.microsoft.com/cloud-solution-provider)合作伙伴组织的引用 ，请指定[directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-v1.0)。 如果未指定，则默认为 [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0)，其包含目录中定义的所有资源类型，对[云解决方案提供商](https://partner.microsoft.com/cloud-solution-provider)合作伙伴组织的引用除外。 这些值不区分大小写。|
+|ids|String collection| 要返回其对象的 ID 集合。 ID 是 GUID，由字符串表示。 最多可以指定 1000 个 ID。 |
+|types|String collection| 指定要搜索的资源集合集的资源类型集合。 如果未指定，则默认为 [directoryObject](../resources/directoryobject.md)，其包含目录中定义的所有资源类型。 可以在该集合中指定派生自 [directoryObject](../resources/directoryobject.md) 的任何对象，例如：[用户](../resources/user.md)、[组](../resources/group.md)、[设备](../resources/device.md)对象等。 <br/><br/>若要搜索[云解决方案提供商](https://partner.microsoft.com/cloud-solution-provider)合作伙伴组织，请指定 [directoryObjectPartnerReference](../resources/directoryobjectpartnerreference.md)。如果未指定，则默认为 [directoryObject](../resources/directoryobject.md)，其包含目录中定义的所有资源类型，对[云解决方案提供商](https://partner.microsoft.com/cloud-solution-provider)合作伙伴组织的引用除外。</br><br/> 这些值不区分大小写。|
 
 ## <a name="response"></a>响应
 

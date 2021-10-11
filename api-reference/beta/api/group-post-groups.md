@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: d15ce53f063cf8b7ce3c9dcdc22951afc29186dd
-ms.sourcegitcommit: 6cea9bc17d3859e475a74c4a6f661f848e837e89
+ms.openlocfilehash: 76bf80cedec4e1e6e3a45e1c791fa9ff746ea22c
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240892"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60256443"
 ---
 # <a name="create-group"></a>创建组
 
@@ -45,9 +45,9 @@ POST /groups
 
 ## <a name="request-headers"></a>请求标头
 
-| 名称       | 类型 | 说明|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| 名称       | 说明|
+|:---------------|:--------|
+| Authorization  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -88,7 +88,8 @@ POST /groups
 
 ### <a name="example-1-create-a-microsoft-365-group"></a>示例 1：创建 Microsoft 365 组
 
-以下示例将创建 Microsoft 365 组。
+以下示例将创建 Microsoft 365 组。 由于尚未指定所有者，调用用户将自动添加为组的所有者。
+
 
 #### <a name="request"></a>请求
 
@@ -102,7 +103,6 @@ POST /groups
 ``` http
 POST https://graph.microsoft.com/beta/groups
 Content-type: application/json
-Content-length: 244
 
 {
   "description": "Self help community for golf",
