@@ -4,12 +4,12 @@ description: 限制可调节并发调用服务的数量，以防止资源的过�
 author: davidmu1
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 655509eec37b9010596d4418e2873ad85f7345c8
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 38afc3388825b0b258bb51e6bcd6881600e1736f
+ms.sourcegitcommit: f7956d25472a55af03be83b6ab986a7149a7ac88
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59508045"
+ms.lasthandoff: 10/12/2021
+ms.locfileid: "60270360"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Microsoft Graph 限制指南
 
@@ -222,13 +222,13 @@ Retry-After: 2.128
 | GET | `applications/{id}/extensionProperties` | 2 | 0 |
 | GET | `contracts` | 3 | 0 |
 | POST | `directoryObjects/getByIds` |  3 | 0 |
-| GET | `domains/{id}/domainNameReferences` | 4 | 0 |
+| GET | `domains/{id}/domainNameReferences` | 4  | 0 |
 | POST | `getObjectsById` | 3 | 0 |
 | GET | `groups/{id}/members` | 3 | 0 |
 | GET | `groups/{id}/transitiveMembers` | 5 | 0 |
-| POST | `isMemberOf` | 4 | 0 |
-| POST | `me/checkMemberGroups` | 4 | 0 |
-| POST | `me/checkMemberObjects` | 4 | 0 |
+| POST | `isMemberOf` | 4  | 0 |
+| POST | `me/checkMemberGroups` | 4  | 0 |
+| POST | `me/checkMemberObjects` | 4  | 0 |
 | POST | `me/getMemberGroups` | 2 | 0 |
 | POST | `me/getMemberObjects` | 2 | 0 |
 | GET | `me/licenseDetails` | 2 | 0 |
@@ -291,10 +291,9 @@ Retry-After: 2.128
 
 ### <a name="identity-and-access-reports-service-limits"></a>身份和访问报告服务限制
 
-| 请求类型 | 所有应用的每个租户的使用限制 | 每个租户每个应用限制 |
-| ------------ | ----------------------------- | ------------------------ |
-| POST, PUT, DELETE, PATCH | 每 20 秒 200 个请求 | 每 20 秒 100 个请求 |
-| 任何 | 每 20 秒 2000 个请求 | 每 20 秒 1000 个请求 |
+| 请求类型 |  每个租户每个应用限制 |
+| ------------ | ------------------------ |
+| 任何 | 每 60 秒 60 个请求 |
 
 上述限制适用于下列资源:
 
