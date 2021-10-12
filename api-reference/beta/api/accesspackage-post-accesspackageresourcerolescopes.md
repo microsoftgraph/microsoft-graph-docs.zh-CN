@@ -1,16 +1,16 @@
 ---
 title: 创建 accessPackageResourceRoleScope
 description: 创建新的 accessPackageResourceRoleScope，以将资源角色添加到访问包。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 6b4abe2f9c2c0060e97560a26c22d19ed53e01b7
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: 7e7d476c38f8e46c2fd02d2072abb5bd501853aa
+ms.sourcegitcommit: f7956d25472a55af03be83b6ab986a7149a7ac88
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53466958"
+ms.lasthandoff: 10/12/2021
+ms.locfileid: "60270349"
 ---
 # <a name="create-accesspackageresourcerolescope"></a>创建 accessPackageResourceRoleScope
 
@@ -47,7 +47,7 @@ POST /identityGovernance/entitlementManagement/accessPackages/{id}/accessPackage
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) 对象的 JSON 表示形式。  在 对象中包括[与 accessPackageResourceRole](../resources/accesspackageresourcerole.md)对象的关系（可以从列出目录中资源的访问包资源角色的请求[](accesspackagecatalog-list-accesspackageresourceroles.md)获取）和[accessPackageResourceScope](../resources/accesspackageresourcescope.md)对象（可以从请求获取，以使用 列出[访问](accesspackagecatalog-list-accesspackageresources.md)包资源 `$expand=accessPackageResourceScopes` ）
+在请求正文中，提供 [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) 对象的 JSON 表示形式。  在 对象中包括与[accessPackageResourceRole](../resources/accesspackageresourcerole.md)对象的关系（可以从列出目录中资源的访问包资源角色的请求[](accesspackagecatalog-list-accesspackageresourceroles.md)获取）和[accessPackageResourceScope](../resources/accesspackageresourcescope.md)对象（可以从请求获取以使用 列出访问包资源[](accesspackagecatalog-list-accesspackageresources.md) `$expand=accessPackageResourceScopes` 获取）。
 
 ## <a name="response"></a>响应
 
@@ -132,7 +132,9 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-下面展示了示例请求。  网站的访问包资源必须已添加到包含此访问包的访问包目录中。
+以下是对非根范围资源的请求示例。  网站的访问包资源必须已添加到包含此访问包的访问包目录中。
+
+如果从之前请求列出访问包资源获取 [的 accessPackageResourceScope](../resources/accesspackageresourcescope.md)对象将资源作为根作用域 (**isRootScope** 设置为) ，则请求的 [](accesspackagecatalog-list-accesspackageresources.md) `true` **accessPackageResourceScope** 对象中包括 **isRootScope** 属性。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

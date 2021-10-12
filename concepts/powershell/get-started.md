@@ -1,14 +1,14 @@
 ---
 title: Microsoft Graph PowerShell SDK 入门
-description: 开始使用 Microsoft Graph PowerShell SDK 执行一些基本任务。
+description: 通过使用 Microsoft Graph PowerShell SDK 执行一些基本任务，开始使用它。
 ms.localizationpriority: medium
 author: jasonjoh
-ms.openlocfilehash: 6b0787861014985d1c411b651fa44ca45ff533e6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 623c034622054150ff6b58b97e063f3e833489de
+ms.sourcegitcommit: f7956d25472a55af03be83b6ab986a7149a7ac88
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139063"
+ms.lasthandoff: 10/12/2021
+ms.locfileid: "60270311"
 ---
 # <a name="get-started-with-the-microsoft-graph-powershell-sdk"></a>Microsoft Graph PowerShell SDK 入门
 
@@ -26,11 +26,11 @@ Select-MgProfile -Name "beta"
 
 PowerShell SDK 支持两种类型的身份验证：委派访问和仅应用访问。 在本指南中，你将使用委派访问权限以用户登录，同意 SDK 代表你操作，并调用 Microsoft Graph。
 
-有关对无人参与方案使用仅应用访问的详细信息，请参阅使用[Microsoft Graph PowerShell SDK 进行仅应用身份验证](app-only.md)。
+有关对无人参与方案使用仅应用访问的详细信息，请参阅使用 Microsoft Graph [PowerShell SDK 进行仅应用身份验证](app-only.md)。
 
 ### <a name="determine-required-permission-scopes"></a>确定所需的权限范围
 
-Microsoft 应用程序Graph API 都受一个或多个权限范围保护。 用户登录必须同意计划使用的 API 的所需范围之一。 本示例中，我们将使用以下 API。
+Microsoft 管理中心Graph API 都受一个或多个权限范围保护。 用户登录必须同意计划使用的 API 的所需范围之一。 本示例中，我们将使用以下 API。
 
 - [列出](/graph/api/user-list?view=graph-rest-1.0&preserve-view=true) 用户以查找登录用户的用户 ID
 - [列出 joinedTeams，Teams](/graph/api/user-list-joinedteams?view=graph-rest-1.0&preserve-view=true)用户是成员的列表。
@@ -54,7 +54,7 @@ Connect-MgGraph -Scopes "User.Read.All","Group.ReadWrite.All"
 
 ## <a name="call-microsoft-graph"></a>调用 Microsoft Graph
 
-现在，你已登录，可以开始向 Microsoft Graph。
+现在，你已登录，你可以开始调用 Microsoft Graph。
 
 ### <a name="get-the-signed-in-user"></a>获取登录用户
 
@@ -92,7 +92,7 @@ $user = Get-MgUser -Filter "displayName eq 'Megan Bowen'"
 $user.DisplayName
 ```
 
-### <a name="list-the-users-joined-teams"></a>列出用户的加入Teams
+### <a name="list-the-users-joined-teams"></a>列出用户加入的团队
 
 现在，使用用户的 ID 作为命令 `Get-MgUserJoinedTeam` 的参数。
 
@@ -100,11 +100,7 @@ $user.DisplayName
 Get-MgUserJoinedTeam -UserId $user.Id
 ```
 
-与命令 `Get-MgUser` 一样，这会提供一个Teams。 选择用户的已加入列表Teams并使用其 `DisplayName` 筛选列表。
-
-```powershell
-$team = Get-MgUserJoinedTeam -UserId $user.Id -Filter "displayName eq 'Sales and Marketing'"
-```
+与命令 `Get-MgUser` 一样，这会提供团队列表。 选择用户的加入团队之一并复制其 `Id` 。
 
 ### <a name="list-team-channels"></a>列出团队频道
 
@@ -112,7 +108,7 @@ $team = Get-MgUserJoinedTeam -UserId $user.Id -Filter "displayName eq 'Sales and
 
 ```powershell
 Get-MgTeamChannel -TeamId $team.Id
-$channel = Get-MgTeamChannel -TeamId $team.Id -Filter "displayName eq 'General'"
+$channel = Get-MgTeamChannel -TeamId ID_FROM_PREVIOUS_STEP -Filter "displayName eq 'General'"
 ```
 
 ### <a name="send-a-message"></a>发送消息

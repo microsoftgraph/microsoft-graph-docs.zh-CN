@@ -1,16 +1,16 @@
 ---
 title: 创建 accessPackageAssignmentRequest
 description: 创建新的 accessPackageAssignmentRequest。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 999adc6cf936f1e94a5c45bf4ca79c4841a9f4b3d6316f798a8ca377b308323d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d59a2bd74b79eddba33fff4432644a2e23f9974a
+ms.sourcegitcommit: f7956d25472a55af03be83b6ab986a7149a7ac88
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56902795"
+ms.lasthandoff: 10/12/2021
+ms.locfileid: "60270346"
 ---
 # <a name="create-accesspackageassignmentrequest"></a>创建 accessPackageAssignmentRequest
 
@@ -18,7 +18,7 @@ ms.locfileid: "56902795"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 [Azure AD 权利管理](../resources/entitlementmanagement-root.md)中，创建新的 [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) 对象。  此操作用于将用户分配给访问包或删除访问包分配。
+在[Azure AD管理](../resources/entitlementmanagement-root.md)中，创建新的[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md)对象。  此操作用于将用户分配给访问包或删除访问包分配。
 
 ## <a name="permissions"></a>权限
 
@@ -64,7 +64,7 @@ POST /identityGovernance/entitlementManagement/accessPackageAssignmentRequests
 如果这是请求，则随后会 `AdminAdd` [创建 accessPackageAssignment，](../resources/accesspackageassignment.md)如果需要，还会创建[accessPackageSubject。](../resources/accesspackagesubject.md) 在列出 [accessPackageAssignments](accesspackageassignment-list.md)时，可以使用查询参数查找这些参数。
 
 ## <a name="examples"></a>示例
-### <a name="example-1-admin-requests-a-direct-assignment-for-a-user"></a>示例 1：管理员请求直接分配用户
+### <a name="example-1-admin-requests-a-direct-assignment-for-a-user-already-in-the-directory"></a>示例 1：管理员为目录中已有的用户请求直接分配
 #### <a name="request"></a>请求
 
 下面是直接分配请求的一个示例，其中管理员请求为用户创建工作分配。 由于 [accessPackageSubject](../resources/accesspackagesubject.md) 可能尚不存在 **，targetID** 的值是分配的用户的对象 **ID，accessPackageId** 的值是该用户所需的访问包 **，assignmentPolicyId** 的值是该访问包中的直接分配策略。
@@ -414,6 +414,59 @@ Content-type: application/json
     "requestStatus": "Accepted"
 }
 ```
+
+### <a name="example-5-admin-requests-a-direct-assignment-for-a-user-not-yet-in-the-directory"></a>示例 5：管理员请求对目录中尚不存在的用户进行直接分配
+#### <a name="request"></a>请求
+
+下面是直接分配请求的一个示例，其中管理员请求为目录中不存在的用户创建一个工作分配。 **accessPackageId** 的值是该用户所需的访问包 **，assignmentPolicyId** 的值是该访问包中的直接分配策略。
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageassignmentrequest_from_accesspackageassignmentrequests_5"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentRequests
+Content-type: application/json
+
+{
+  "requestType": "AdminAdd",
+  "accessPackageAssignment":{
+     "target": {
+        "email": "user@contoso.com"
+     },
+     "assignmentPolicyId":"2264bf65-76ba-417b-a27d-54d291f0cbc8",
+     "accessPackageId":"a914b616-e04e-476b-aa37-91038f0b165b"
+  }
+}
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentRequest"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+
+  "id": "7e382d02-4454-436b-b700-59c7dd77f466",
+  "requestType": "AdminAdd",
+  "requestState": "Submitted",
+  "requestStatus": "Accepted",
+  "isValidationOnly": false
+}
+```
+
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

@@ -3,12 +3,12 @@ title: 使用 Microsoft SDK 分页Graph集合
 description: 提供有关使用 Microsoft Graph SDK 创建 Microsoft Graph API 请求的说明。
 ms.localizationpriority: medium
 author: DarrelMiller
-ms.openlocfilehash: ab76add730b0465ff7ef186f929573f6a360a1ce
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ca82ff4d5b91cead92a641795084c3d0c1928377
+ms.sourcegitcommit: f7956d25472a55af03be83b6ab986a7149a7ac88
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59113453"
+ms.lasthandoff: 10/12/2021
+ms.locfileid: "60270322"
 ---
 # <a name="page-through-a-collection-using-the-microsoft-graph-sdks"></a>使用 Microsoft SDK 分页Graph集合
 
@@ -162,7 +162,7 @@ await pageIterator.IterateAsync();
 while (pageIterator.State != PagingState.Complete)
 {
     Console.WriteLine("Iteration paused for 5 seconds...");
-    Thread.Sleep(5000);
+    await Task.Delay(5000);
     // Reset count
     count = 0;
     await pageIterator.ResumeAsync();

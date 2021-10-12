@@ -5,18 +5,18 @@ author: Alice-at-Microsoft
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: 1c3dfac442bdf4950f62d565db6bc1ceb7ebd468
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 72f56b46ceb27a8f4dbbb7c7cc52ccc10a0decc0
+ms.sourcegitcommit: f7956d25472a55af03be83b6ab986a7149a7ac88
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59117513"
+ms.lasthandoff: 10/12/2021
+ms.locfileid: "60270339"
 ---
 # <a name="software-updates-with-the-windows-update-for-business-deployment-service"></a>Windows Update for Business 部署服务的软件更新
 
 软件更新是部署服务部署的主要内容类型。 您可以在目录中查找以查找可部署的特定更新。
 
-您可能已经熟悉 Microsoft[更新目录，](https://www.catalog.update.microsoft.com/)该目录列出了 Windows。 部署服务提供自己的 [目录](/graph/api/resources/windowsupdates-catalog)，并聚合单个 [catalogEntry](/graph/api/resources/windowsupdates-catalogentry) 下的等效更新，以简化决策制定和审批工作流。
+您可能已经熟悉 Microsoft[更新](https://www.catalog.update.microsoft.com/)目录，该目录列出了 Windows。 部署服务提供自己的 [目录](/graph/api/resources/windowsupdates-catalog)，并聚合单个 [catalogEntry](/graph/api/resources/windowsupdates-catalogentry) 下的等效更新，以简化决策制定和审批工作流。
 
 ## <a name="windows-update-categories"></a>Windows更新类别
 
@@ -36,10 +36,10 @@ Microsoft 更新目录中的更新非常具体，特定于各个产品、版本�
 
 | 标题                                                                                   | 产品                           | 分类   |
 |-----------------------------------------------------------------------------------------|------------------------------------|------------------|
-| 基于 **x86** 的系统 2021-03 Windows 10 20H2 累积更新 (KB5000802)  | Windows 10版本 1903 及更高版本 | 安全更新 |
-| 基于 **x64** 的系统的 Windows 10 版本 20H2 的 2021-03 累积 (KB5000802)  | Windows 10版本 1903 及更高版本 | 安全更新 |
+| 基于 **x86** 的系统的 Windows 10 版本 20H2 的 2021-03 累积 (KB5000802)  | Windows 10版本 1903 及更高版本 | 安全更新 |
+| 基于 **x64** 的系统 2021-03 Windows 10 20H2 累积更新 (KB5000802)  | Windows 10版本 1903 及更高版本 | 安全更新 |
 
-在 Windows Update for Business 部署服务提供的目录中，这些更新将聚合到单个条目中。
+在 Windows Update for Business 部署服务提供的目录中，这些更新聚合到单个条目中。
 
 | 显示名称                                           | 类型                                                     |
 |--------------------------------------------------------|----------------------------------------------------------|
@@ -60,11 +60,11 @@ Microsoft 更新目录中的更新非常具体，特定于各个产品、版本�
 
 ### <a name="feature-updates"></a>功能更新
 
-部署服务目录中的功能更新由版本标识。 条目聚合了体系结构 (（例如，x86 与 x64) ）和 Microsoft 更新目录中的产品 (之间的差异，所有功能更新均针对 *Windows 10* 产品) 。
+部署服务目录中的功能更新由版本标识。 条目聚合了体系结构 (例如，x86 与 x64) 以及 Microsoft 更新目录中的产品 (，所有功能更新均针对 *Windows 10* 产品) 。
 
 | 属性 | 说明                                       |
 |----------|---------------------------------------------------|
-| version  | Windows 10 版本的功能更新版本。|
+| version  | 此版本的功能更新Windows 10版本。|
 
 下面是部署服务目录中功能更新的一些示例。
 
@@ -79,7 +79,7 @@ Microsoft 更新目录中的更新非常具体，特定于各个产品、版本�
 
 ### <a name="quality-updates"></a>质量更新
 
-部署服务目录中的质量更新由发布日期/时间和更新分类标识。 条目聚合了体系结构、产品 (（如 *Windows 10、版本 1903* 及更高版本与 *Windows 10* 与 *Windows 10 LTSB*) 以及相应功能更新版本）之间的差异。
+部署服务目录中的质量更新由发布日期/时间和更新分类标识。 条目聚合体系结构、产品 (（如 *Windows 10、版本 1903* 及更高版本与 *Windows 10* 与 *Windows 10 LTSB) ）* 以及相应功能更新版本之间的差异。
 
 | 属性 | 说明 |
 |----------|-------------|
@@ -90,16 +90,16 @@ Microsoft 更新目录中的更新非常具体，特定于各个产品、版本�
 
 | 部署服务目录 | Microsoft 更新目录                                                                                                               |
 |------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| 安全性         | 安全更新<br>关键更新<br>如果需要 (依赖项，请更新) <br>如果需要， (堆栈更新作为依赖项进行)  |
+| 安全性         | 安全更新<br>关键更新<br>如果需要 (依赖项，请更新) <br>如果需要， (堆栈更新作为依赖项)  |
 | 非安全性     | 更新<br>服务堆栈更新                                                                                               |
 
 与部署服务目录中的质量更新相对应的 Microsoft 更新目录中的条目和 `classification = security` `releaseDateTime = 2021-03-09` 可能包括以下内容。
 
 | 标题                                                                                   | 产品                           | 分类   |
 |-----------------------------------------------------------------------------------------|------------------------------------|------------------|
-| 基于 x86 的 systems Windows 10 Version 20H2 的 2021-03 累积 (KB5000802)  | Windows 10版本 1903 及更高版本 | 安全更新 |
-| 基于 x64 的 systems Windows 10 Version 20H2 的 2021-03 累积 (KB5000802)  | Windows 10版本 1903 及更高版本 | 安全更新 |
-| 基于 x86 的系统版本 1909 的 Windows 10 2021-03 年累积更新 (KB5000808)  | Windows 10版本 1903 及更高版本 | 安全更新 |
+| 基于 x86 的系统 2021-03 Windows 10 20H2 累积更新 (KB5000802)  | Windows 10版本 1903 及更高版本 | 安全更新 |
+| 基于 x64 的系统 2021-03 Windows 10 版本 20H2 的 2021-03 累积 (KB5000802)  | Windows 10版本 1903 及更高版本 | 安全更新 |
+| 基于 x86 的系统版本 1909 的 Windows 10 2021-03 累积更新 (KB5000808)  | Windows 10版本 1903 及更高版本 | 安全更新 |
 | 基于 x64 的系统版本 1809 的 Windows 10 2021-03 年累积更新 (KB5000822)  | Windows 10、Windows 10 LTSB        | 安全更新 |
 
 确定所需更新后，使用 [qualityUpdateReference](/graph/api/resources/windowsupdates-qualityupdatereference) 并将其指定为部署的内容并指定 **releaseDateTime** 和 **classification** 属性。
