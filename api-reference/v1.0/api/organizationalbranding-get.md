@@ -5,21 +5,21 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 5d1293a83b2fc8130b15fb1a6da7cd36a8a9985e
-ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
+ms.openlocfilehash: bd8e2e542730da44cf2ab010903c718358c11070
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "59997069"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60290111"
 ---
 # <a name="get-organizationalbranding"></a>Get organizationalBranding
 命名空间：microsoft.graph
 
-如果未指定 **Accept-Language** 标头，则检索默认组织品牌对象。 如果没有创建组织品牌对象，此方法将返回 `404 Not Found` 错误。
+如果 **Accept-Language** 标头设置为 或 ，则检索默认组织品牌 `0` 对象 `default` 。 如果不存在默认的组织品牌对象，此方法将返回 `404 Not Found` 错误。
 
-如果 **指定了 Accept-Language** 标头，此方法将检索指定区域设置的品牌。
+如果 **Accept-Language** 标头设置为由 **id** 的值标识的现有区域设置，此方法将检索指定区域设置的品牌。
 
-此方法仅检索非 Stream 属性，例如 **usernameHintText** 和 **signInPageText**。 若要检索默认品牌（例如 **bannerLogo** 和 **backgroundImage）** 的 Stream 类型，请使用 [GET organizationalBrandingLocalization](organizationalbrandinglocalization-get.md) 方法。 默认本地化的 **ID** 可以是 `0` 或 `default` 。
+此方法仅检索非 Stream 属性，例如 **usernameHintText** 和 **signInPageText**。 若要检索默认品牌（例如 **bannerLogo** 和 **backgroundImage）** 的 Stream 类型，请使用 [GET organizationalBrandingLocalization](organizationalbrandinglocalization-get.md) 方法。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -48,7 +48,7 @@ GET /organization/{organizationId}/branding
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
-|Accept-Language|有效的 ISO 639-1 区域设置。 可选。|
+|Accept-Language|有效的 ISO 639-1 区域设置。 必需。|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -74,6 +74,7 @@ GET /organization/{organizationId}/branding
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/organization/84841066-274d-4ec0-a5c1-276be684bdd3/branding
+Accept-Language: 0
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-organizationalbranding-csharp-snippets.md)]
@@ -143,6 +144,7 @@ Content-Type: application/json
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding
+Accept-Language: 0
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-organizationalbranding-error-csharp-snippets.md)]
@@ -177,7 +179,7 @@ HTTP/1.1 404 Not Found
 
 ### <a name="example-3-get-organizational-branding-for-the-french-locale"></a>示例 3：获取法语区域设置的组织品牌
 
-在下面的示例中，使用 **Accept-Language** 标头指定要检索的本地化品牌。
+在下面的示例中 **，Accept-Language** 标头用于指定检索 `fr-FR` 本地化品牌。
 
 #### <a name="request"></a>请求
 
@@ -230,8 +232,8 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#branding",
-    "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/$/Microsoft.DirectoryServices.Organization('84841066-274d-4ec0-a5c1-276be684bdd3')/branding/fr",
-    "id": "fr",
+    "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/$/Microsoft.DirectoryServices.Organization('84841066-274d-4ec0-a5c1-276be684bdd3')/branding/fr-FR",
+    "id": "fr-FR",
     "backgroundColor": "#FFFF33",
     "backgroundImageRelativeUrl": null,
     "bannerLogoRelativeUrl": null,
@@ -244,7 +246,7 @@ Content-Type: application/json
 
 ### <a name="example-4-get-the-bannerlogo-for-the-default-locale"></a>示例 4：获取默认区域设置的 bannerLogo
 
-下面的示例返回默认 **区域设置中的 bannerLogo** 对象。 您可以在请求 **URL 中** 指定 id 或 `default` `0` 。 如果未设置对象，请求将返回空响应。
+下面的示例返回默认 **区域设置中的 bannerLogo** 对象。 若要检索 Stream 对象类型（例如 **bannerLogo），** 请使用 [Get organizationalBrandingLocalization 方法](organizationalbrandinglocalization-get.md)。 您可以在请求 **URL 中或指定 id** `default` `0` 的值。 如果未设置属性，请求将返回空响应。
 
 #### <a name="request"></a>请求
 
@@ -276,9 +278,9 @@ Content-Type: image/*
 <Image>
 ```
 
-### <a name="example-5-get-the-bannerlogo-for-the-fr-fr-locale"></a>示例 5：获取 fr-FR 区域设置的 bannerLogo
+### <a name="example-5-get-the-bannerlogo-for-the-default-locale-when-it-is-not-set"></a>示例 5：在未设置默认区域设置时获取其 bannerLogo
 
-下面的示例返回 **未设置其 bannerLogo** 区域设置的 `fr-FR` bannerLogo 对象。
+以下示例返回未为默认区域设置设置的 **bannerLogo** 对象。
 
 #### <a name="request"></a>请求
 

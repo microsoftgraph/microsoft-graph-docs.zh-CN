@@ -2,15 +2,15 @@
 title: 更新选项卡
 description: 更新指定选项卡的属性。
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 121c9805b099aeb1d84843d085948f20695e6c7b
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: 8c0ab2920bfb800f5025eb47d6a3756540c741d8
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607502"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60288305"
 ---
 # <a name="update-tab"></a>更新选项卡
 
@@ -18,7 +18,7 @@ ms.locfileid: "49607502"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新指定 [选项卡](../resources/teamstab.md)的属性。这可用于配置选项卡的内容。
+更新指定选项卡 [的属性](../resources/teamstab.md)。这可用于配置选项卡的内容。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -26,13 +26,13 @@ ms.locfileid: "49607502"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  TeamsTab、ReadWriteForTeam、TeamsTab、all、All、All、All |
+|委派（工作或学校帐户） |  TeamsTab.ReadWriteForTeam、TeamsTab.ReadWrite.All、Group.ReadWrite.All、Directory.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | TeamsTab *、TeamsTab、ReadWriteForTeam、Group、all、all、all、all 和 All。 All |
+|应用程序 | TeamsTab.ReadWrite.Group *、TeamsTab.ReadWriteForTeam.All、TeamsTab.ReadWrite.All、Group.ReadWrite.All**、Directory.ReadWrite.All** |
 
-> **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
+> **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。 标记为 ** 的权限已弃用，不应使用。
 
-> **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
+> **注意**：此 API 支持管理员权限。全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
 ## <a name="http-request"></a>HTTP 请求
 ```http
@@ -46,7 +46,7 @@ PATCH /teams/{team-id}/channels/{channel-id}/tabs/{tab-id}
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [tab](../resources/teamstab.md) 对象的 JSON 表示形式。
+在请求正文中，提供 tab 对象的 JSON [表示](../resources/teamstab.md) 形式。
 
 ## <a name="response"></a>响应
 

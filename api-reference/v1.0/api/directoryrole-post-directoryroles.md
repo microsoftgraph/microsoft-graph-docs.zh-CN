@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ed6d6e07eeb58ab66905db0bcc1cf41f55454561
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a3704cd4a621891a263bacdcbf66b2e11cc8e17b
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59046258"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60288823"
 ---
 # <a name="activate-directoryrole"></a>Activate directoryRole
 
@@ -34,10 +34,10 @@ POST /directoryRoles
 
 ```
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
-| Content-Type  | string  | application/json  |
+| 名称       | 说明|
+|:---------------|:--------|
+| Authorization  | Bearer {token}。必需。 |
+| Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [directoryRole](../resources/directoryrole.md) 对象的 JSON 表示形式。

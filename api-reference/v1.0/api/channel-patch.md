@@ -5,12 +5,12 @@ author: anandjo
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 575a37b3df220dfb9b3b704041484c07591107d1
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4e76b6e38241d7055a2fb87b6a310a2305de3a6c
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59105627"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60288830"
 ---
 # <a name="patch-channel"></a>修补程序通道
 
@@ -24,11 +24,11 @@ ms.locfileid: "59105627"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | ChannelSettings.ReadWrite.All、Group.ReadWrite.All、Directory.ReadWrite.All |
+|委派（工作或学校帐户） | ChannelSettings.ReadWrite.All、Group.ReadWrite.All **、Directory.ReadWrite.All** |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | ChannelSettings.ReadWrite.Group*、ChannelSettings.ReadWrite.All、Group.ReadWrite.All、Directory.ReadWrite.All |
+|应用程序 | ChannelSettings.ReadWrite.Group *、ChannelSettings.ReadWrite.All、Group.ReadWrite.All**、Directory.ReadWrite.All** |
 
-> **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
+> **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。 标记为 ** 的权限已弃用，不应使用。
 
 > **注意**：此 API 支持管理员权限。全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 

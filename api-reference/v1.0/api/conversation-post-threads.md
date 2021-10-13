@@ -5,12 +5,12 @@ author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 2680c02ab7eee1babce54b67cab579955e72f449
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 329d52d20125ae1526c6497770eb320bffe6d428
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59068269"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289908"
 ---
 # <a name="create-thread"></a>创建线程
 
@@ -37,9 +37,9 @@ ms.locfileid: "59068269"
 POST /groups/{id}/conversations/{id}/threads
 ```
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| 名称       | 说明|
+|:---------------|:--------|
+| Authorization  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [ConversationThread](../resources/conversationthread.md) 对象的 JSON 表示形式。

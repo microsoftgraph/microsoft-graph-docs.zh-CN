@@ -517,7 +517,7 @@ items:
                 href: api/planneruser-list-tasks.md
               - name: 更新设置
                 href: api/planneruser-update.md
-          - name: '预览版的首选语言 (区域) '
+          - name: '预览版的首选语言和区域 () '
             items:
               - name: 区域和语言设置
                 href: resources/regionalandlanguagesettings.md
@@ -533,7 +533,7 @@ items:
                 href: api/profile-get.md
               - name: 删除用户的配置文件
                 href: api/profile-delete.md
-          - name: 团队合作
+          - name: Teamwork
             items:
               - name: 已安装的应用
                 href: resources/teamsappinstallation.md
@@ -1940,7 +1940,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报表
+              - name: 报告
                 items:
                   - name: 按打印机组织
                     items:
@@ -9841,14 +9841,14 @@ items:
                     href: api/windowsupdates-updatableasset-get.md
                   - name: 删除可更新资源
                     href: api/windowsupdates-updatableasset-delete.md
-                  - name: Azure AD 设备
+                  - name: Azure AD设备
                     href: resources/windowsupdates-azureaddevice.md
                     items:
-                      - name: 列出 Azure AD 设备
+                      - name: 列出Azure AD设备
                         href: api/windowsupdates-updates-list-updatableassets-azureaddevice.md
-                      - name: 获取 Azure AD 设备
+                      - name: 获取Azure AD设备
                         href: api/windowsupdates-azureaddevice-get.md
-                      - name: 删除 Azure AD 设备
+                      - name: 删除Azure AD设备
                         href: api/windowsupdates-azureaddevice-delete.md
                       - name: 注册更新管理
                         href: api/windowsupdates-updatableasset-enrollassets.md
@@ -10679,7 +10679,7 @@ items:
                 href: api/dynamics-vendor-update.md
               - name: 删除供应商
                 href: api/dynamics-vendor-delete.md
-      - name: 身份和访问控制
+      - name: 身份和访问
         displayName: 'Azure AD, Microsoft identity platform'
         items:
           - name: 概述
@@ -10975,7 +10975,7 @@ items:
                   - name: 角色分配
                     href: resources/unifiedroleassignment.md
                     items:
-                      - name: 列出角色分配
+                      - name: 列表角色分配
                         href: api/rbacapplication-list-roleassignments.md
                       - name: 创建角色分配
                         href: api/rbacapplication-post-roleassignments.md
@@ -11530,7 +11530,7 @@ items:
                             href: api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
                           - name: 删除
                             href: api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
-                      - name: 'Microsoft Authenticator无密码电话已弃 (登录策略) '
+                      - name: 'Microsoft Authenticator无电话已弃 (登录策略) '
                         href: resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md
                         items:
                           - name: 获取
@@ -12223,7 +12223,7 @@ items:
                 items:
                   - name: Privileged Identity Management
                     href: resources/privilegedidentitymanagement-root.md
-                  - name: '已弃 (Azure AD) ) '
+                  - name: 'Azure AD (弃用) ) '
                     items:
                       - name: Azure AD
                         href: resources/privilegedidentitymanagement-directory.md
@@ -13522,7 +13522,7 @@ items:
                     href: api/usersimulationdetails-list.md
                   - name: 获取模拟概述
                     href: api/simulationreportoverview-get.md
-              - name: 报表
+              - name: 报告
                 items:
                   - name: 攻击模拟报告
                     displayname: Attack simulation and training
@@ -13654,6 +13654,8 @@ items:
                 href: api/list-create.md
               - name: 列出子网站
                 href: api/site-list-subsites.md
+              - name: 搜索网站
+                href: api/site-search.md
               - name: 权限
                 items:
                   - name: 权限
@@ -14534,7 +14536,7 @@ items:
                 href: api/linkedresource-delete.md
           - name: Outlook 任务（已弃用）
             items:
-              - name: 'Outlook (任务) '
+              - name: 'Outlook任务 (已弃) '
                 items:
                   - name: Outlook 任务
                     href: resources/outlooktask.md

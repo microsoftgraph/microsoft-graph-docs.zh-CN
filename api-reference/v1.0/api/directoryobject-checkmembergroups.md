@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 3ffb6b68c0c37a0f6cb0d7a281dac46ea0b093cf
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ea609ea886ba7e6115e94a349981949c6c1334c8
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59038046"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289838"
 ---
 # <a name="directoryobject-checkmembergroups"></a>directoryObject：checkMemberGroups
 
@@ -49,10 +49,10 @@ POST /directoryObjects/{id}/checkMemberGroups
 ```
 ## <a name="request-headers"></a>请求标头
 
-| 名称       | 类型 | 说明|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
-| Content-Type  | string | application/json  |
+| 名称       | 说明|
+|:---------------|:--------|
+| Authorization  | Bearer {token}。必需。 |
+| Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
 

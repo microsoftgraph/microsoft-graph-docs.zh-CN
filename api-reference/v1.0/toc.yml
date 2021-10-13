@@ -477,7 +477,7 @@ items:
             items:
               - name: 列出任务
                 href: api/planneruser-list-tasks.md
-          - name: 团队合作
+          - name: Teamwork
             items:
               - name: 已安装的应用
                 href: resources/teamsappinstallation.md
@@ -1500,7 +1500,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报表
+              - name: 报告
                 items:
                   - name: 按打印机组织
                     items:
@@ -4452,7 +4452,7 @@ items:
                 href: api/permission-update.md
               - name: 删除权限
                 href: api/permission-delete.md
-      - name: 身份和访问控制
+      - name: 身份和访问
         displayName: 'Azure AD, Microsoft identity platform'
         items:
           - name: 概述
@@ -5953,8 +5953,6 @@ items:
                 href: api/site-get.md
               - name: 获取列表
                 href: api/list-list.md
-              - name: 列出子网站
-                href: api/site-list-subsites.md
               - name: 获取项分析
                 href: api/itemanalytics-get.md
               - name: 关注网站
@@ -5979,6 +5977,8 @@ items:
                 href: api/list-create.md
               - name: 列出子网站
                 href: api/site-list-subsites.md
+              - name: 搜索网站
+                href: api/site-search.md
               - name: 权限
                 href: resources/permission.md
                 items:

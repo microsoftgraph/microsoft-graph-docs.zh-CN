@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: d1d134eec6e6bef50eb7a97917a2f8aaa3b91148
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1cb408bf675668fb82374e4cfca5e67df2580a0e
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59104073"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289880"
 ---
 # <a name="participantinfo-resource-type"></a>participantInfo 资源类型
 
@@ -23,10 +23,11 @@ ms.locfileid: "59104073"
 | 属性       | 类型                          | 说明                                                                                                                                                |
 |:---------------|:------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | countryCode    | String                        | 呼叫开始时参与者的最佳估计物理位置的 ISO 3166-1 Alpha-2 国家/地区代码。 只读。                             |
-| endpointType   | String                        | 参与者使用的终结点类型。 可能的值为： `default`、 `skypeForBusiness`或 `skypeForBusinessVoipPhone`。 只读。              |
+| endpointType   | 字符串                        | 参与者使用的终结点类型。 可能的值为： `default`、 `skypeForBusiness`或 `skypeForBusinessVoipPhone`。 只读。              |
 | identity       | [identitySet](identityset.md) | 与此[参与者关联的 identitySet。](identityset.md) 只读。                                                                             |
-| languageId     | String                        | 语言区域性字符串。 只读。                                                                                                                    |
-| region         | String                        | 参与者的主页区域。 它可以是国家/地区、洲或较大的地理区域。 这不会根据参与者的当前物理位置而更改。 只读。 |
+| languageId     | 字符串                        | 语言区域性字符串。 只读。                                                                                                                    |
+| region         | 字符串                        | 参与者的主页区域。 它可以是国家/地区、洲或较大的地理区域。 这不会根据参与者的当前物理位置而更改。 只读。 |
+| participantId    | 字符串                          | 参与者的参与者 ID。 只读。    |
 
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -39,7 +40,8 @@ ms.locfileid: "59104073"
     "countryCode",
     "endpointType",
     "languageId",
-    "region"
+    "region",
+    "participantId"
   ],
   "@odata.type": "microsoft.graph.participantInfo"
 }-->
@@ -49,7 +51,8 @@ ms.locfileid: "59104073"
   "identity": { "@odata.type": "#microsoft.graph.identitySet" },
   "endpointType": "default | skypeForBusiness | skypeForBusinessVoipPhone",
   "languageId": "String",
-  "region": "String"
+  "region": "String",
+  "participantId": "String"
 }
 ```
 

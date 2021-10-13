@@ -1,22 +1,22 @@
 ---
 title: 删除组所有者
-description: 使用此 API 通过 owners 导航Microsoft 365组、安全组或启用邮件的安全组中删除所有者。
+description: 使用此 API 可以通过 owners 导航属性Microsoft 365组、安全组或启用邮件的安全组中删除所有者。
 ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 714f7006da4cd97daf8e38c541c0ee1c304a5af1
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 47558c1691fc40b0668e74a2b745323f70637ff3
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59105326"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60290307"
 ---
 # <a name="remove-group-owner"></a>删除组所有者
 
 命名空间：microsoft.graph
 
-使用此 API 通过 owners 导航Microsoft 365组、安全组或启用邮件的安全组中删除所有者。 将所有者分配给组后，无法删除组的最后一个所有者。 
+使用此 API 可以通过 owners 导航属性Microsoft 365组、安全组或启用邮件的安全组中删除所有者。 将所有者分配给组后，无法删除组的最后一个所有者。 
 
 > **注意：** 有关删除与团队关联的组的所有者时遇到的问题，请参阅 [已知问题](/graph/known-issues#removing-a-group-owner-also-removes-the-user-as-a-group-member)。 [](/graph/api/resources/team.md)
 
@@ -36,9 +36,9 @@ DELETE /groups/{id}/owners/{id}/$ref
 ```
 
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| 名称       | 说明|
+|:---------------|:--------|
+| Authorization  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

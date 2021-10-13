@@ -1,16 +1,16 @@
 ---
 title: 在频道或聊天中发送 chatMessage
 description: 在指定的频道或聊天中发送新的 chatMessage。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8947beb25170965e96a6cf12a91066d22b60e398
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: fa5c44b5671b30aefe9f13734f9e2aa0fc8dda10
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58667757"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60288928"
 ---
 # <a name="send-chatmessage-in-a-channel-or-a-chat"></a>在频道或聊天中发送 chatMessage
 
@@ -22,7 +22,7 @@ ms.locfileid: "58667757"
 
 > **注意**：不建议使用此 API 进行数据迁移。 它不具有典型迁移所需的吞吐量。
 
-> **注意**：使用 Microsoft Teams 违反使用条款 [](/legal/microsoft-apis/terms-of-use)日志文件。 仅发送用户将阅读的邮件。
+> **注意**：使用产品作为Microsoft Teams违反日志文件。 [](/legal/microsoft-apis/terms-of-use) 仅发送用户将阅读的邮件。
 
 ## <a name="permissions"></a>权限
 
@@ -31,9 +31,11 @@ ms.locfileid: "58667757"
 ### <a name="permissions-for-channel"></a>频道权限
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | ChannelMessage.Send、Group.ReadWrite.All |
+| 委派（工作或学校帐户）     | ChannelMessage.Send、Group.ReadWrite.All** |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | 不支持。 |
+
+> **注意**：标记为 ** 的权限已弃用，不应使用。
 
 ### <a name="permissions-for-chat"></a>聊天权限
 | 权限类型                        | 权限（从最低特权到最高特权） |
@@ -634,7 +636,7 @@ Content-type: application/json
 #### <a name="request"></a>请求
 下面展示了示例请求。
 
-> **注意：** hostedContents 集合中的 **temporaryId** 是一个随机 ID，但必须在附件和 **hostedContents** (中的内容) 相同。  (请注意 **，temporaryId 设置为** **1，** 内容中的引用设置为 `../hostedContents/1/$value` .) 
+> **注意：** hostedContents 集合中的 **temporaryId** 是一个随机 ID，但必须在附件和 **hostedContents** (内容) 相同。  (请注意 **，temporaryId 设置为** **1，** 内容中的引用设置为 `../hostedContents/1/$value` .) 
 
 **contentBytes** 必须设置为二进制字符串 Base64 编码字节。 为此，可以使用 C# `Convert.ToBase64String(File.ReadAllBytes("image.png"));`
 
@@ -753,12 +755,12 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-7--mention-a-channel-in-a-channel-message"></a>示例 7：@mention消息中的频道
+### <a name="example-7--mention-a-channel-in-a-channel-message"></a>示例 7：@mention频道消息中的频道
 
 #### <a name="request"></a>请求
 下面展示了示例请求。 若要了解如何获取团队中的频道列表，请参阅 [列出频道](../api/channel-list.md)。
 
-> 注意 **：conversationIdentityType** 必须设置为 `channel` @mention通道。
+> 注意 **：conversationIdentityType** 必须设置为 `channel` @mention频道。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -879,7 +881,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-8--mention-a-team-in-a-channel-message"></a>示例 8：@mention频道消息中与团队通信
+### <a name="example-8--mention-a-team-in-a-channel-message"></a>示例 8：@mention频道消息中通知团队
 
 #### <a name="request"></a>请求
 下面展示了示例请求。
@@ -1006,7 +1008,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-9--mention-a-tag-in-a-channel-message"></a>示例 9：@mention消息中的标记
+### <a name="example-9--mention-a-tag-in-a-channel-message"></a>示例 9：@mention频道消息中的标记
 
 #### <a name="request"></a>请求
 下面展示了示例请求。 若要了解如何获取团队中的标记列表，请参阅 [List teamworkTags](../api/teamworktag-list.md)。

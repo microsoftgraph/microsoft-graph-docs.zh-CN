@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 524fce8eebef041f494523fcac4ee7de44caea1c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: be57dc59fdc761bee92bcd1b5963bd6a869d945f
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59026635"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60290237"
 ---
 # <a name="delete-tab-from-channel"></a>从频道中删除选项卡
 
@@ -18,7 +18,7 @@ ms.locfileid: "59026635"
 
 
 
-从 (团队中) 频道取消固定[选项卡。](../resources/team.md) [](../resources/channel.md) 
+从 (团队中) 频道中删除[取消](../resources/channel.md)[固定选项卡。](../resources/team.md) 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -29,7 +29,7 @@ ms.locfileid: "59026635"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | TeamsTab.Delete.Group、TeamsTab.ReadWrite.Group、TeamsTab.ReadWriteForTeam.All、TeamsTab.ReadWrite.All、Group.ReadWrite.All、Directory.ReadWrite.All |
 
-> **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
+> **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。 标记为 ** 的权限已弃用，不应使用。
 
 > **注意**：此 API 支持管理员权限。全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 

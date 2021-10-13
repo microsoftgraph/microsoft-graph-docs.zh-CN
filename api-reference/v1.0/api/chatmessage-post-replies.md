@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2bec99d23c9e32d4bcf41cf364b47dce473f214c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e627377de0c207ec2a57d9200072e6b6945d4459
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59038305"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289432"
 ---
 # <a name="send-replies-to-a-message-in-a-channel"></a>在频道中发送对消息的答复
 
@@ -29,9 +29,11 @@ ms.locfileid: "59038305"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | ChannelMessage.Send、Group.ReadWrite.All |
+| 委派（工作或学校帐户）     | ChannelMessage.Send、Group.ReadWrite.All** |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | Teamwork.Migrate.All |
+
+> **注意**：标记为 ** 的权限已弃用，不应使用。
 
 > **注意**：仅迁移 *支持应用程序*[权限](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)。
 将来，Microsoft 可能要求你或你的客户根据导入的数据量支付其他费用。

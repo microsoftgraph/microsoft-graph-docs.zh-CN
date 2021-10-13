@@ -2,15 +2,15 @@
 title: 删除组 - Microsoft Graph API
 description: 删除组资源。
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: d6cfd6eb53c310e5841874b928fbf6869f7f43bc
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: d6e670f0d79905a4425690ef6b06ef4990978d26
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58262591"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60288550"
 ---
 # <a name="delete-group"></a>删除组
 
@@ -41,9 +41,9 @@ DELETE /groups/{id}
 
 ## <a name="request-headers"></a>请求标头
 
-| 名称       | 类型 | 说明|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| 名称       | 说明|
+|:---------------|:--------|
+| Authorization  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 

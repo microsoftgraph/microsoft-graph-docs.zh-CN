@@ -5,20 +5,20 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: aec134e10d2c2d2768d07ea2a16003af640852e5
-ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
+ms.openlocfilehash: a04f4d1f902fffc2f8a9f1eb268634c4f059a6cc
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60220512"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289166"
 ---
 # <a name="update-teamsapp"></a>更新 teamsApp
 
 命名空间：microsoft.graph
 
-更新[之前发布到](../resources/teamsapp.md)应用程序Microsoft Teams的应用程序。 若要更新应用， **必须将应用的 distributionMethod** 属性设置为 `organization` 。
+更新[之前发布到](../resources/teamsapp.md)应用程序目录Microsoft Teams应用程序。 若要更新应用， **必须将应用的 distributionMethod** 属性设置为 `organization` 。
 
-此 API 专门更新发布到组织的应用程序目录的应用程序 (租户应用程序目录) 。
+此 API 专门更新已发布到组织的应用程序目录的应用程序 (租户应用程序目录) 。
 
 ## <a name="permissions"></a>权限
 
@@ -28,9 +28,11 @@ ms.locfileid: "60220512"
 
 | 权限类型                        | 权限（从最低特权到最高特权）|
 |:----------------------------------     |:-------------|
-| 委派（工作或学校帐户）     | AppCatalog.Submit、AppCatalog.ReadWrite.All |
+| 委派（工作或学校帐户）     | AppCatalog.Submit、AppCatalog.ReadWrite.All、Directory.ReadWrite.All** |
 | 委派（个人 Microsoft 帐户） | 不支持|
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
+
+> **注意**：标记为 ** 的权限已弃用，不应使用。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -44,7 +46,7 @@ POST /appCatalogs/teamsApps/{id}/appDefinitions
 
 |属性|类型|说明|
 |----|----|----|
-|requiresReview| 布尔值 | 此可选查询参数将触发应用评审过程。 具有管理员权限的用户无需触发审查即可提交应用。 如果用户想要在发布之前请求审阅，则必须将 设置为  `requiresReview` `true` 。 具有管理员权限的用户可以选择不设置或将值设置为 ，应用将被视为已批准， `requiresReview` `false`  并且将立即发布。|
+|requiresReview| Boolean | 此可选查询参数将触发应用评审过程。 具有管理员权限的用户无需触发审查即可提交应用。 如果用户想要在发布之前请求审阅，则必须将 设置为  `requiresReview` `true` 。 具有管理员权限的用户可以选择不设置或将值设置为 ，应用将被视为已批准， `requiresReview` `false`  并且将立即发布。|
 
 ## <a name="request-headers"></a>请求标头
 

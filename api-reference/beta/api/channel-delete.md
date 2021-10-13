@@ -2,15 +2,15 @@
 title: 删除频道
 description: 删除频道。
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c804f607d5c3919036ebeee01319cf591fa5b966
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: 9a9528421a77a3fb07a046bf84439a5bc62b54d6
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51200971"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60288466"
 ---
 # <a name="delete-channel"></a>删除频道
 
@@ -27,13 +27,13 @@ ms.locfileid: "51200971"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Channel.Delete.All、Group.ReadWrite.All、Directory.ReadWrite.All |
+|委派（工作或学校帐户） | Channel.Delete.All、Group.ReadWrite.All **、Directory.ReadWrite.All** |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Channel.Delete.Group*、Channel.Delete.All、Group.ReadWrite.All、Directory.ReadWrite.All |
+|应用程序 | Channel.Delete.Group *、Channel.Delete.All、Group.ReadWrite.All**、Directory.ReadWrite.All** |
 
-> **注意**：标有 * 的权限用于 [特定于资源的同意](https://aka.ms/teams-rsc)。
+> **注意**：标有 * 的权限用于 [特定于资源的同意](https://aka.ms/teams-rsc)。 标记为 ** 的权限已弃用，不应使用。
 
-> **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
+> **注意**：此 API 支持管理员权限。全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

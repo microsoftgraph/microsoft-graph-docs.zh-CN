@@ -2,15 +2,15 @@
 title: '更新频道 '
 description: 更新指定频道的属性。
 author: akjo
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 33088ea188b1ac1efa1247770b3e0a044c13764e
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: 91836f71e2f5509907ed7ae4813d1560dc9967b8
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53059938"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60288361"
 ---
 # <a name="update-channel"></a>更新频道 
 
@@ -26,11 +26,11 @@ ms.locfileid: "53059938"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | ChannelSettings.ReadWrite.All、Group.ReadWrite.All、Directory.ReadWrite.All |
+|委派（工作或学校帐户） | ChannelSettings.ReadWrite.All、Group.ReadWrite.All **、Directory.ReadWrite.All** |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | ChannelSettings.ReadWrite.Group*、ChannelSettings.ReadWrite.All、Group.ReadWrite.All、Directory.ReadWrite.All |
+|应用程序 | ChannelSettings.ReadWrite.Group *、ChannelSettings.ReadWrite.All、Group.ReadWrite.All**、Directory.ReadWrite.All** |
 
-> **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
+> **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。 标记为 ** 的权限已弃用，不应使用。
 
 > **注意**：此 API 支持管理员权限。全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 

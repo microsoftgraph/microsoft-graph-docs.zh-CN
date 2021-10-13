@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 5a74f38451bf63e27e5b1152efc88f600428d3a8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ec9ded7ed63f041a6aa9604565a54fa394d08e34
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59053229"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289355"
 ---
 # <a name="delete-approleassignedto"></a>删除 appRoleAssignedTo
 
@@ -41,9 +41,9 @@ DELETE /servicePrincipals/{resource-SP-id}/appRoleAssignedTo/{appRoleAssignment-
 
 ## <a name="request-headers"></a>请求标头
 
-| 名称       | 类型 | 说明|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| 名称       | 说明|
+|:---------------|:--------|
+| Authorization  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -57,7 +57,7 @@ DELETE /servicePrincipals/{resource-SP-id}/appRoleAssignedTo/{appRoleAssignment-
 
 ### <a name="request"></a>请求
 
-下面是从资源服务主体角色分配应用程序请求的示例。
+下面是从资源服务主体中删除应用角色分配示例。
 
 
 

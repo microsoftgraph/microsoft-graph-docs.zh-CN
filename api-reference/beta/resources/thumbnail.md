@@ -3,15 +3,15 @@ author: JeremyKelley
 description: 缩略图资源类型表示具有位图表示的图像、视频、文档 或任何项目的缩略图。
 ms.date: 09/10/2017
 title: 缩略图
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 7a4a2254b50fd074622990db478cefdbf3cfe091
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0d5f9b3ced926820873800ba160cc5da8d368ca4
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973538"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60288452"
 ---
 # <a name="thumbnail-resource-type"></a>Thumbnail 资源类型
 
@@ -19,29 +19,7 @@ ms.locfileid: "47973538"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**缩略图**资源类型表示具有位图表示的图像、视频、文档 或任何项目的缩略图。
-
-## <a name="json-representation"></a>JSON 表示形式
-
-下面是**缩略图**资源的 JSON 表示形式。
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": ["content", "height", "width", "sourceItemId"],
-  "@odata.type": "microsoft.graph.thumbnail"
-}-->
-
-```json
-{
-  "height": 1024,
-  "sourceItemId": "string",
-  "url": "string",
-  "width": 1024,
-
-  /* relationships */
-  "content": "stream"
-}
-```
+**缩略图** 资源类型表示具有位图表示的图像、视频、文档 或任何项目的缩略图。
 
 ## <a name="properties"></a>属性
 
@@ -52,6 +30,28 @@ ms.locfileid: "47973538"
 | url          | String | 用于提取缩略图内容的 URL。                                                                                |
 | width        | Int32  | 缩略图宽度，以像素为单位。                                                                                      |
 | content | 流 | 缩略图的内容流。 |
+
+## <a name="json-representation"></a>JSON 表示形式
+
+下面是 **缩略图** 资源的 JSON 表示形式。
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": ["content", "height", "width", "sourceItemId"],
+  "@odata.type": "microsoft.graph.thumbnail"
+}-->
+
+```json
+{
+  "height": "Int32",
+  "sourceItemId": "String",
+  "url": "String",
+  "width": "Int32",
+
+  /* relationships */
+  "content": "Stream"
+}
+```
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

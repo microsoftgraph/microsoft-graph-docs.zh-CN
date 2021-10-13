@@ -1,26 +1,26 @@
 ---
-title: 从包含 permissionGrantPolicy 集合中删除 permissionGrantConditionSet
+title: 从包含 permissionGrantPolicy 集合的 Delete permissionGrantConditionSet
 description: 从权限授予策略中删除包含的条件集。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 7da3f63152c8dcca0902787fc8061c52141d3f6e
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: e2fa4f1bb7a31b9a8279efbc9cf9b2f018b31d74
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50447693"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60288333"
 ---
-# <a name="delete-permissiongrantconditionset-from-includes-collection-of-permissiongrantpolicy"></a>从包含 permissionGrantPolicy 集合中删除 permissionGrantConditionSet
+# <a name="delete-permissiongrantconditionset-from-includes-collection-of-permissiongrantpolicy"></a>从包含 permissionGrantPolicy 集合的 Delete permissionGrantConditionSet
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从 permissionGrantPolicy 的 includes集合中删除[permissionGrantConditionSet。](../resources/permissiongrantpolicy.md) [](../resources/permissiongrantconditionset.md)
+从 permissionGrantPolicy 的 **includes** 集合中删除 [permissionGrantConditionSet。](../resources/permissiongrantconditionset.md) [](../resources/permissiongrantpolicy.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "50447693"
 |:--------------------|:---------------------------------------------------------|
 | 委派（工作或学校帐户） | PermissionGrantPolicy.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。    |
-| Application | PermissionGrantPolicy.ReadWrite.All |
+| 应用程序 | PermissionGrantPolicy.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -40,9 +40,9 @@ DELETE /policies/permissionGrantPolicies/{permissiongrantpolicy-id}/includes/{in
 
 ## <a name="request-headers"></a>请求标头
 
-| 名称       | 类型 | 说明|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| 名称       | 说明|
+|:---------------|:--------|
+| Authorization  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 
