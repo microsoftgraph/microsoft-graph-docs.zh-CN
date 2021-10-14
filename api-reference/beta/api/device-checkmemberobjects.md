@@ -1,16 +1,16 @@
 ---
 title: device： checkMemberObjects
 description: 检查指定设备对象的组、目录角色或管理单元列表中的成员身份。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: spunukol
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 071ce116c26cea3fba8672c62d78fa054946295a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: cae626d4d6b4faaf18afbf2063245a0d34937c76
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52046984"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289670"
 ---
 # <a name="device-checkmemberobjects"></a>device： checkMemberObjects
 
@@ -26,9 +26,9 @@ ms.locfileid: "52046984"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
+| 委派（工作或学校帐户）     | Device.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Directory.Read.All、Directory.ReadWrite.All |
+| 应用程序                            | Device.Read.All、Device.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

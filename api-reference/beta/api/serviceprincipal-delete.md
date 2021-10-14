@@ -1,16 +1,16 @@
 ---
 title: 删除 servicePrincipal
 description: 删除 servicePrincipal。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 7066cd3184894f8de1cada2f1936ee1bd343d4a0
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 63294e95cd1dd95f1fbd4d22a1c84484592648f2
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137527"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289873"
 ---
 # <a name="delete-serviceprincipal"></a>删除 servicePrincipal
 
@@ -34,9 +34,9 @@ ms.locfileid: "50137527"
 DELETE /servicePrincipals/{id}
 ```
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| 名称       | 说明|
+|:---------------|:--------|
+| Authorization  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

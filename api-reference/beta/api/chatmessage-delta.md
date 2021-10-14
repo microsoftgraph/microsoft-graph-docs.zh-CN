@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8fc4ad2c8fa9240429fe62caec228c26cb5e119f
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 16c37a2ae403ef71c1c1e64d5c0960e00d671bf2
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695327"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60288593"
 ---
 # <a name="chatmessage-delta"></a>chatMessage：delta
 
@@ -31,7 +31,7 @@ Delta 查询既支持可检索指定频道中所有消息的完全同步，也�
 - `nextLink`（包含具有 **delta** 函数调用和 `skipToken` 的 URL），或
 - `deltaLink`（包含具有 **delta** 函数调用和 `deltaToken` 的 URL）。
 
-状态令牌对客户端完全不透明。 若要继续一轮事件更改跟踪，只需将最后一个 GET 请求返回的 `nextLink` 或 `deltaLink` URL 复制并应用到同一日历视图的下一个 delta 函数调用即可。 响应中返回的 `deltaLink` 表示当前一轮更改跟踪已完成。 开始检索其他更改（获取`deltaLink` 后更改或发布的消息）时，可以保存并使用 `deltaLink` URL。
+状态令牌对客户端完全不透明。若要继续一轮更改跟踪，只需将最后一个 GET 请求返回的 `nextLink` 或 `deltaLink` URL 复制并应用到同一日历视图的下一个 delta 函数调用即可。响应中返回的 `deltaLink` 表示当前一轮更改跟踪已完成。可以保存 `deltaLink` URL，并在开始检索其他更改时使用 (获取 `deltaLink` 后更改或发布的消息)。
 
 有关详细信息，请参阅[增量查询](/graph/delta-query-overview)文档。
 
@@ -41,11 +41,11 @@ Delta 查询既支持可检索指定频道中所有消息的完全同步，也�
 
 |权限类型                        |权限（从最低特权到最高特权）  |
 |---------------------------------------|---------------------------------------------|
-|委派（工作或学校帐户）     | ChannelMessage.Read.All、Group.Read.All、Group.ReadWrite.All |
+|委派（工作或学校帐户）     | ChannelMessage.Read.All、Group.Read.All **、Group.ReadWrite.All** |
 |委派（个人 Microsoft 帐户） | 不支持                                |
-|应用程序                            | ChannelMessage.Read.Group*, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
+|应用程序                            | ChannelMessage.Read.Group *、ChannelMessage.Read.All、Group.Read.All**、Group.ReadWrite.All** |
 
-> **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
+> **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。 标记为 ** 的权限已弃用，不应使用。
 
 > [!NOTE]
 > 在使用应用程序权限调用此 API 之前，你必须先请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。
@@ -66,7 +66,7 @@ GET /teams/{team-id}/channels/{channel-id}/messages/delta
 
 | 查询参数      | 类型   |说明|
 |:---------------|:--------|:----------|
-| `$deltatoken` | string | 之前的 **delta** 函数调用的 `deltaLink` URL 中返回的 [状态令牌](/graph/delta-query-overview)，指示该组更改跟踪的完成状态。 将此令牌包含在对该集合的下一个更改追踪迭代的首次请求中，并保存和应用整个 `deltaLink` URL。|
+| `$deltatoken` | string | 之前的 **delta** 函数调用的 `deltaLink` URL 中返回的 [状态令牌](/graph/delta-query-overview)，指示该轮更改跟踪的完成状态。将整个 `deltaLink` URL (包括此令牌) 保存并应用在该集合下一轮更改跟踪的首个请求中。|
 | `$skiptoken` | 字符串 | 上一个 **delta** 函数调用中的 `nextLink` URL 返回的 [状态令牌](/graph/delta-query-overview)，指示需要跟踪进一步的更改。 |
 
 ### <a name="optional-odata-query-parameters"></a>OData 可选查询参数

@@ -1,16 +1,16 @@
 ---
 title: 删除成员
-description: 使用此 API 可以通过 members 导航属性从Microsoft 365组、安全组或启用邮件的安全 **组中删除** 成员。 可以删除用户或其他组。
-localization_priority: Normal
+description: 使用此 API 可以通过 members 导航属性从Microsoft 365组、安全组或启用邮件的安全 **组** 中删除成员。 可以删除用户或其他组。
+ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 1dc4e226f0d2ecfa64a7803542c77901c925c02d
-ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
+ms.openlocfilehash: ea903e7144891ed0591522d5ce146c3615cd6975
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58396821"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289663"
 ---
 # <a name="remove-member"></a>删除成员
 
@@ -36,9 +36,9 @@ DELETE /groups/{id}/members/{id}/$ref
 ```
 
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| 名称       | 说明|
+|:---------------|:--------|
+| Authorization  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -90,7 +90,7 @@ HTTP/1.1 204 No Content
 
 ## <a name="see-also"></a>另请参阅
 - [添加成员至团队](team-post-members.md)
-- [更新团队中成员的角色](team-update-members.md)
+- [更新成员在团队中的角色](team-update-members.md)
 - [从团队删除成员](team-delete-members.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

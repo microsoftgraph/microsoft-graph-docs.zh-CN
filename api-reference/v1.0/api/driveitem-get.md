@@ -1,23 +1,23 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
-title: 获取文件或文件夹
+title: 获取 driveItem 资源
 ms.localizationpriority: high
 ms.prod: sharepoint
-description: 通过文件系统路径或 ID 在驱动器中检索 DriveItem 的元数据。
+description: 按文件系统路径或 ID 检索驱动器中 driveItem 的元数据。
 doc_type: apiPageType
-ms.openlocfilehash: ec020e311de0c5df80b361ceb1fc3d4de36ca6ea
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0a4adf8b6e1a241380f357a6a71e8c291d5903da
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59050598"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289810"
 ---
-# <a name="get-a-driveitem-resource"></a>获取 DriveItem 资源
+# <a name="get-a-driveitem-resource"></a>获取 driveItem 资源
 
 命名空间：microsoft.graph
 
-通过文件系统路径或 ID 在[驱动器](../resources/drive.md)中检索 [DriveItem](../resources/driveitem.md) 的元数据。
+按文件系统路径或 ID 检索[驱动器](../resources/drive.md)中 [driveItem](../resources/driveitem.md) 的元数据。
+`item-id` 是 driveItem 的 ID。 它也可以是 [SharePoint 列表项](../resources/listitem.md)的唯一 ID。
 
 ## <a name="permissions"></a>权限
 
@@ -65,7 +65,7 @@ GET /users/{user-id}/drive/root:/{item-path}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [DriveItem](../resources/driveitem.md) 资源。
+如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和 [driveItem](../resources/driveitem.md) 资源。
 
 ## <a name="example"></a>示例
 
@@ -135,9 +135,9 @@ Content-type: application/json
 }
 ```
 
-## <a name="remarks"></a>说明
+## <a name="see-also"></a>另请参阅
 
-请参阅[错误响应][error-response]，详细了解错误返回方式。
+要详细了解错误返回方式，请参阅[错误响应][error-response]。
 
 [error-response]: /graph/errors
 [odata-parameters]: /graph/query-parameters

@@ -2,15 +2,15 @@
 title: 在频道中发送对消息的答复
 description: 回复频道中的现有消息。
 author: RamjotSingh
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ac0417b34a6adad584ef584dd1ba02fa81e06cdd
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: 431571a86ef9c9150fa1061f4a4ca0f8ecfaedfa
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58667596"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289271"
 ---
 # <a name="send-replies-to-a-message-in-a-channel"></a>在频道中发送对消息的答复
 
@@ -31,9 +31,11 @@ ms.locfileid: "58667596"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | ChannelMessage.Send、Group.ReadWrite.All |
+| 委派（工作或学校帐户）     | ChannelMessage.Send、Group.ReadWrite.All** |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | Teamwork.Migrate.All |
+
+> **注意**：标记为 ** 的权限已弃用，不应使用。
 
 > **注意**：仅迁移 *支持应用程序*[权限](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)。
 将来，Microsoft 可能要求你或你的客户根据导入的数据量支付其他费用。

@@ -1,16 +1,16 @@
 ---
 title: 获取 chatMessageHostedContent
 description: 检索 chatMessageHostedContent 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: be76606a9093f59dd2952ad6ca1646b1419f3643
-ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
+ms.openlocfilehash: 5d3cbc2dd8d82bcb7cb94690d6f5d475a9c68221
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58384476"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289859"
 ---
 # <a name="get-chatmessagehostedcontent"></a>获取 chatMessageHostedContent
 
@@ -32,6 +32,8 @@ ms.locfileid: "58384476"
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序| ChannelMessage.Read.Group、ChannelMessage.Read.All、Group.Read.All、Group.ReadWrite.All |
 
+> **注意**：标记为 ** 的权限已弃用，不应使用。
+
 ### <a name="permissions-for-chat"></a>聊天权限
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
@@ -40,7 +42,7 @@ ms.locfileid: "58384476"
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序| ChatMessage.Read.Chat、Chat.Read.All、Chat.ReadWrite.All|
 
-> **注意**_：ChannelMessage.Read.Group_ 和 _ChatMessage.Read.Chat_ 权限使用 [特定于资源的同意]( https://aka.ms/teams-rsc)。
+> **注意**：_ChannelMessage.Read.Group_ 和 _ChatMessage.Read.Chat_ 权限使用 [特定于资源的许可]( https://aka.ms/teams-rsc)。
 
 > [!NOTE]
 > 在使用应用程序权限调用此 API 之前，你必须先请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。
@@ -116,7 +118,7 @@ GET https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@t
 
 #### <a name="response"></a>响应
 
-下面介绍响应示例。
+下面展示了示例响应。
 
 > **注意：** `contentBytes` 和 `contentType` 始终设置为 null。
 

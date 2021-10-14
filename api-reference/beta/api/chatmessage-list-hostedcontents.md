@@ -1,16 +1,16 @@
 ---
 title: 列出 hostedContents
 description: 从消息中检索 chatMessageHostedContent 对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5ff56f4181211eff40f2d1a808245e6707eb1573
-ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
+ms.openlocfilehash: e9e2e4cda052f39f60110c3ae5480da67b4e1e78
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58384173"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289551"
 ---
 # <a name="list-hostedcontents"></a>列出 hostedContents
 
@@ -30,6 +30,8 @@ ms.locfileid: "58384173"
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序| ChannelMessage.Read.Group、ChannelMessage.Read.All、Group.Read.All、Group.ReadWrite.All |
 
+> **注意**：标记为 ** 的权限已弃用，不应使用。
+
 ### <a name="permissions-for-chat"></a>聊天权限
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
@@ -38,7 +40,7 @@ ms.locfileid: "58384173"
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序| ChatMessage.Read.Chat、Chat.Read.All、Chat.ReadWrite.All|
 
-> **注意**_：ChannelMessage.Read.Group_ 和 _ChatMessage.Read.Chat_ 权限使用 [特定于资源的同意]( https://aka.ms/teams-rsc)。
+> **注意**：_ChannelMessage.Read.Group_ 和 _ChatMessage.Read.Chat_ 权限使用 [特定于资源的许可]( https://aka.ms/teams-rsc)。
 
 > [!NOTE]
 > 在使用应用程序权限调用此 API 之前，你必须先请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。
@@ -115,7 +117,7 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 
 #### <a name="response"></a>响应
 
-下面介绍响应示例。
+下面展示了示例响应。
 
 > **注意：** `contentBytes` 和 `contentType` 始终设置为 null。
 
@@ -183,7 +185,7 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 
 #### <a name="response"></a>响应
 
-下面介绍响应示例。
+下面展示了示例响应。
 
 > **注意：** `contentBytes` 和 `contentType` 始终设置为 null。
 
@@ -251,7 +253,7 @@ GET https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@t
 
 #### <a name="response"></a>响应
 
-下面介绍响应示例。
+下面展示了示例响应。
 
 > **注意：** `contentBytes` 和 `contentType` 始终设置为 null。
 

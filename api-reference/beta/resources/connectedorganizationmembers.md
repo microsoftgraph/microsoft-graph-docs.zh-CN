@@ -1,16 +1,16 @@
 ---
 title: connectedOrganizationMembers 复杂类型
 description: connectedOrganizationMembers 类型标识租户中将允许其成为请求者、审批者或审阅者的用户的集合。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 725926bc39583bda653294f0cc917ea7d2f08a45
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 0baaea3f8d6e917d072b8e9f5933b3388e1a0324
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761812"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289236"
 ---
 # <a name="connectedorganizationmembers-complex-type"></a>connectedOrganizationMembers 复杂类型
 
@@ -26,9 +26,9 @@ ms.locfileid: "50761812"
 
 | 属性                     | 类型                      | 说明 |
 | :--------------------------- | :------------------------ | :---------- |
-| id |String | 权利管理中连接的组织的 ID。 |
-| 说明 |String | 已连接组织的名称。 只读。 |
-| isBackup | 布尔 | 目前未使用。 |
+| id |字符串 | 权利管理中连接的组织的 ID。 |
+| 说明 |字符串 | 已连接组织的名称。 只读。 |
+| isBackup | 布尔值 | 目前未使用。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -45,8 +45,8 @@ ms.locfileid: "50761812"
 
 ```json
 {
-  "id": "string (identifier)",
-  "description": "string",
+  "id": "String (identifier)",
+  "description": "String",
   "isBackup": false
 }
 ```

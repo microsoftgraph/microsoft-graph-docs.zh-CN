@@ -2,15 +2,15 @@
 title: participantInfo 资源类型
 description: 包含有关参与者标识的其他属性
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 8c05222185b87e03c86257939cec098b3ac212e8
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: f6c759ba3936d500b34566ac894895ce7b0f7ff7
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49522959"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289852"
 ---
 # <a name="participantinfo-resource-type"></a>participantInfo 资源类型
 
@@ -24,12 +24,13 @@ ms.locfileid: "49522959"
 
 | 属性         | 类型                            | 说明                                                                                                                                                                                                      |
 | :--------------- | :------------------------------ | :-----------------------------------------------------------------------------------------------------------------------------------------------------------                                                     |
-| countryCode      | String                          | 呼叫开始时参与者最佳估计物理位置的 ISO 3166-1 Alpha-2 国家/地区代码。 只读。                                                                                   |
-| endpointType     | String                          | 参与者正在使用的终结点的类型。 可能的值包括： `default` 、 `skypeForBusiness` 或 `skypeForBusinessVoipPhone` 。 只读。                                                                    |
-| 窃取         | [identitySet](identityset.md)   | 与此参与者关联的 [了解 identityset](identityset.md) 。 只读。                                                                                                                                   |
-| languageId       | String                          | 语言区域性字符串。 只读。                                                                                                                                                                          |
-| 范围           | String                          | 参与者的家乡区域。 它可以是国家/地区、一个洲或更大的地理区域。 这不会根据参与者的当前物理位置而变化，这与 countryCode 不同。 只读。 |
-| platformId       | String                          | 参与者的客户端平台 ID。 只读。    |
+| countryCode      | String                          | 呼叫开始时参与者的最佳估计物理位置的 ISO 3166-1 Alpha-2 国家/地区代码。 只读。                                                                                   |
+| endpointType     | 字符串                          | 参与者使用的终结点类型。 可能的值为： `default`、 `skypeForBusiness`或 `skypeForBusinessVoipPhone`。 只读。                                                                    |
+| identity         | [identitySet](identityset.md)   | 与此[参与者关联的 identitySet。](identityset.md) 只读。                                                                                                                                   |
+| languageId       | 字符串                          | 语言区域性字符串。 只读。                                                                                                                                                                          |
+| region           | 字符串                          | 参与者的主页区域。 它可以是国家/地区、洲或较大的地理区域。 这与 countryCode 不同，这不会基于参与者的当前物理位置而更改。 只读。 |
+| platformId       | 字符串                          | 参与者的客户端平台 ID。 只读。    |
+| participantId    | 字符串                          | 参与者的参与者 ID。 只读。    |
 
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -42,7 +43,9 @@ ms.locfileid: "49522959"
     "countryCode",
     "endpointType",
     "languageId",
-    "region"
+    "region",
+    "platformId",
+    "participantId"
   ],
   "@odata.type": "microsoft.graph.participantInfo"
 }-->
@@ -54,6 +57,7 @@ ms.locfileid: "49522959"
   "languageId": "String",
   "region": "String",
   "platformId": "String",
+  "participantId": "String"
 }
 ```
 

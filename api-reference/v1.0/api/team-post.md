@@ -5,12 +5,12 @@ author: anandjo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d7a38f0452e3560d189fb2e58d8aa56dd8448d92
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 61f72ed154c2e8f82533efd53b77d50c0f04958a
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59110002"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289915"
 ---
 # <a name="create-team"></a>创建团队
 
@@ -24,12 +24,14 @@ ms.locfileid: "59110002"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 | :------------------------------------- | :------------------------------------------ |
-| 委派（工作或学校帐户）     | Team.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
+| 委派（工作或学校帐户）     | Team.Create、Group.ReadWrite.All **、Directory.ReadWrite.All** |
 | 委派（个人 Microsoft 帐户） | 不支持。                              |
-| 应用程序                            | Team.Create, Teamwork.Migrate.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+| 应用程序                            | Team.Create、Teamwork.Migrate.All、Group.ReadWrite.All **、Directory.ReadWrite.All** |
 
 > **注意**：Teamwork.Migrate.All 权限 *仅* 支持 [迁移](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)。
 将来，Microsoft 可能要求你或你的客户根据导入的数据量支付其他费用。
+
+> **注意**：标记为 ** 的权限已弃用，不应使用。
 
 ## <a name="http-request"></a>HTTP 请求
 

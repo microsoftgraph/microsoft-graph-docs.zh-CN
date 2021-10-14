@@ -1,16 +1,16 @@
 ---
 title: 从 permissionGrantPolicy 的排除集合中删除 permissionGrantConditionSet
 description: 从权限授予策略中删除排除的条件集。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 9215ee6d935f19581fbe855f50635f5dc0bd5c98
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: ca02aae94562b800e617622e442e573ed969e57a
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50447688"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60290083"
 ---
 # <a name="delete-permissiongrantconditionset-from-excludes-collection-of-permissiongrantpolicy"></a>从 permissionGrantPolicy 的排除集合中删除 permissionGrantConditionSet
 
@@ -20,7 +20,7 @@ ms.locfileid: "50447688"
 
 从 [permissionGrantPolicy](../resources/permissiongrantconditionset.md)的 **excludes** 集合中删除 [permissionGrantConditionSet。](../resources/permissiongrantpolicy.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "50447688"
 |:--------------------|:---------------------------------------------------------|
 | 委派（工作或学校帐户） | PermissionGrantPolicy.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。    |
-| Application | PermissionGrantPolicy.ReadWrite.All |
+| 应用程序 | PermissionGrantPolicy.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -40,9 +40,9 @@ DELETE /policies/permissionGrantPolicies/{permissiongrantpolicy-id}/excludes/{ex
 
 ## <a name="request-headers"></a>请求标头
 
-| 名称       | 类型 | 说明|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| 名称       | 说明|
+|:---------------|:--------|
+| Authorization  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 

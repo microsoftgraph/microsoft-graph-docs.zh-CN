@@ -1,16 +1,16 @@
 ---
 title: 更新 teamsApp
-description: '更新之前发布到应用程序Microsoft Teams的应用程序。 '
+description: '更新之前发布到应用程序目录Microsoft Teams应用程序。 '
 author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 20c9d628610a534ad998c561d7060038bbecb5db
-ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
+ms.openlocfilehash: c33d540e8fb2ea26fd8e65cd0c6bc606c6af2d26
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60220358"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60290272"
 ---
 # <a name="update-teamsapp"></a>更新 teamsApp
 
@@ -20,7 +20,7 @@ ms.locfileid: "60220358"
 
 更新[之前发布到](../resources/teamsapp.md)应用程序Microsoft Teams的应用程序。 若要更新应用， **必须将应用的 distributionMethod** 属性设置为 `organization` 。
 
-此 API 专门更新发布到组织的应用程序目录的应用程序 (租户应用程序目录) 。  
+此 API 专门更新已发布到组织的应用程序目录的应用程序 (租户应用程序目录) 。  
 
 ## <a name="permissions"></a>权限
 
@@ -30,9 +30,11 @@ ms.locfileid: "60220358"
 
 | 权限类型                        | 权限（从最低特权到最高特权）|
 |:----------------------------------     |:-------------|
-| 委派（工作或学校帐户） | AppCatalog.Submit、AppCatalog.ReadWrite.All |
+| 委派（工作或学校帐户） | AppCatalog.Submit、AppCatalog.ReadWrite.All、Directory.ReadWrite.All** |
 | 委派（个人 Microsoft 帐户） | 不支持|
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
+
+> **注意**：标记为 ** 的权限已弃用，不应使用。
 
 ## <a name="http-request"></a>HTTP 请求
 

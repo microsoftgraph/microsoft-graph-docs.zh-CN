@@ -2,12 +2,12 @@
 title: Microsoft Graph 错误响应和资源类型
 description: 本主题介绍了 Microsoft Graph 响应中可能返回的一些错误。
 ms.localizationpriority: high
-ms.openlocfilehash: c5b1dcc6a6540580483b4bf668c5c7ae9f28676c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4f080b18e2ef645a2045efe08437bb05684fb2a9
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59136115"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289159"
 ---
 # <a name="microsoft-graph-error-responses-and-resource-types"></a>Microsoft Graph 错误响应和资源类型
 
@@ -177,6 +177,8 @@ public bool IsError(string expectedErrorCode)
 | **pathIsTooLong**                  | 路径超出最大长度。
 | **pathTooDeep**                    | 已达到文件夹层次结构深度限制。
 | **propertyNotUpdateable**          | 属性无法更新。
+| **provisioningNotAllowed**         | 请求需要帐户预配，这是不允许的。
+| **resourceBeingProvisioned**       | 正在预配请求的资源。
 | **resyncApplyDifferences**         | 需要重新同步。如果您确定上次同步时服务与您的本地更改保持同步，则请将任意本地项目替换为服务器的版本（包括删除）。上载服务器并不清楚的任意本地更改。
 | **resyncRequired**                 | 需要重新同步。
 | **resyncUploadDifferences**        | 需要重新同步。上载服务未返回的任意本地项目，并上载与服务器版本不同的任意文件（如果不知道哪个是最新的，就请保留两份）。

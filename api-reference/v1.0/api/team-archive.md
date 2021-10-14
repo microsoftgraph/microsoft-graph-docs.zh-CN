@@ -5,19 +5,18 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 95c98fe613f5004383008b88ad2b7f497bc52e21
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f0f3c664e968cd60009e93f516b7158bb6a82c96
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59036884"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60290209"
 ---
 # <a name="archive-team"></a>存档团队
 
 命名空间：microsoft.graph
 
-存档指定的[团队](../resources/team.md)。 存档团队后，用户无法再团队中的任意频道上发送或点赞消息，无法再编辑团队名称、说明和其他设置，且通常也无法再对团队进行大部分更改。
-仍可向团队进行成员身份更改。
+将指定[团队](../resources/team.md)存档。存档团队后，用户将无法再在团队中的任意频道中发送或点赞消息，无法再编辑团队名称、说明和其他设置，且通常也无法再对团队进行大部分更改。将继续允许对团队进行成员身份更改。
 
 存档是异步操作。该异步操作成功完成后，团队即已存档，此 API 作出响应后就可能出现此情况。
 
@@ -30,11 +29,11 @@ ms.locfileid: "59036884"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | TeamSettings.ReadWrite.All、Group.ReadWrite.All、Directory.ReadWrite.All |
+|委派（工作或学校帐户） | TeamSettings.ReadWrite.All，Group.ReadWrite.All **，Directory.ReadWrite.All** |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | TeamSettings.ReadWrite.Group*、TeamSettings.ReadWrite.All、Group.ReadWrite.All、Directory.ReadWrite.All |
+|应用程序 | TeamSettings.ReadWrite.Group *、TeamSettings.ReadWrite.All、Group.ReadWrite.All**、Directory.ReadWrite.All** |
 
-> **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
+> **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。 标记为 **的权限已弃用，不应使用。
 
 > **注意**：此 API 支持管理员权限。全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 

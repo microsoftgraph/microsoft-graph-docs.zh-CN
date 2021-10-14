@@ -2,15 +2,15 @@
 title: 列出设备使用情况Rights
 description: 检索设备的 usageRights 对象列表。
 author: jeeshnair
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a855ebf34d8e97a7a5fad00df2a022779ff2bc0d
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 7ad57af7a7ac608bca5a29de94074ad81ec43944
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50946799"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60290097"
 ---
 # <a name="list-device-usagerights"></a>列出设备使用情况Rights
 命名空间：microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "50946799"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|Device.Read.All、Device.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All|
+|委派（工作或学校帐户）|Device.Read.All、Directory.Read.All、Directory.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|Device.Read.All、Device.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All|
 
@@ -39,7 +39,7 @@ GET /devices/{objectId}/usageRights
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此 API 支持 $filter [OData 查询参数](/graph/query-parameters)。 支持以下$filter模式：
+此 API 支持 `$filter` [OData 查询参数](/graph/query-parameters)。 支持以下 `$filter` 模式：
 
 - $filter = state eq 'value'
 - $filter = serviceIdentifier eq 'value'

@@ -1,16 +1,16 @@
 ---
 title: 'group: getMemberObjects'
 description: 返回组的成员的所有组和管理单元。 检查是可传递的。 注意：组不能是目录角色的成员，因此不会返回任何目录角色。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 0a97f02798d3a995d9b7eec8e0ce956de741df48
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 499c54fab21baadeabf572e7204babd933dc640d
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58513177"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289796"
 ---
 # <a name="group-getmemberobjects"></a>group: getMemberObjects
 
@@ -36,9 +36,9 @@ POST /groups/{id}/getMemberObjects
 ```
 
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| 名称       | 说明|
+|:---------------|:--------|
+| Authorization  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。

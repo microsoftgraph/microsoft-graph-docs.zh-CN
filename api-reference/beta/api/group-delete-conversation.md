@@ -2,15 +2,15 @@
 title: 删除对话
 description: 删除 conversation 对象。
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 8017e9151b15e61a61945ab1200c88d0fc92d563
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 6e47a8c9fffc13538ae8b78f22737c7f28d28fdc
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681863"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60290160"
 ---
 # <a name="delete-conversation"></a>删除对话
 
@@ -36,9 +36,9 @@ DELETE /groups/{id}/conversations/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| 名称       | 说明|
+|:---------------|:--------|
+| Authorization  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

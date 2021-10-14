@@ -2,15 +2,15 @@
 title: 从频道中删除选项卡
 description: '从 (频道) 取消固定选项卡。 '
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3241c48fb9cd396584b6a83bd7f48633643492f2
-ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
+ms.openlocfilehash: 533a17fe31b10f106f066a57cda9457e83671b1b
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52971277"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289558"
 ---
 # <a name="delete-tab-from-channel"></a>从频道中删除选项卡
 
@@ -18,7 +18,7 @@ ms.locfileid: "52971277"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从 (团队) 频道中删除取消固定选项卡[。](../resources/team.md) [](../resources/channel.md) 
+从 (团队中) 频道中删除[取消](../resources/channel.md)[固定选项卡。](../resources/team.md) 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -29,7 +29,7 @@ ms.locfileid: "52971277"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | TeamsTab.Delete.Group、TeamsTab.ReadWrite.Group、TeamsTab.ReadWriteForTeam.All、TeamsTab.ReadWrite.All、Group.ReadWrite.All、Directory.ReadWrite.All |
 
-> **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
+> **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。 标记为 **的权限已弃用，不应使用。
 
 > **注意**：此 API 支持管理员权限。全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
@@ -62,7 +62,7 @@ DELETE /teams/{team-id}/channels/{channel-id}/tabs/{tab-id}
 DELETE https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs/{id}
 ```
 #### <a name="response"></a>响应
-下面展示了示例响应。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 ```http
 HTTP/1.1 204 No Content
 ```
