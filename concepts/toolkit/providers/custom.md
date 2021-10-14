@@ -3,16 +3,16 @@ title: 自定义提供程序
 description: 如果应用程序中已有身份验证代码，请创建自定义提供程序，为 Microsoft Graph Toolkit组件启用身份验证和图形访问。
 ms.localizationpriority: medium
 author: nmetulev
-ms.openlocfilehash: be470ed25acccb3fcdd1499b0048a33dae7c5d13
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: db939fbad5eb8d488514eac9c2dfa275f4984c66
+ms.sourcegitcommit: 8ae180a32dbd5a2b12512aee64699a2c23b8678b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59143564"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "60355244"
 ---
 # <a name="custom-provider"></a>自定义提供程序
 
-如果应用程序中已有身份验证代码，可以创建自定义提供程序，以启用 Microsoft Graph 组件的身份验证Graph Toolkit访问。 有两种方法可创建自定义提供程序：
+如果应用程序中已有身份验证代码，可以创建自定义提供程序以启用 Microsoft Graph 组件的身份验证Graph Toolkit访问。 有两种方法可创建自定义提供程序：
 
 - 通过传递 `SimpleProvider` 用于获取访问令牌的函数创建新令牌
 - 扩展 `IProvider` 抽象类
@@ -91,7 +91,7 @@ this.graph = new Graph(this);
 
 ### <a name="example"></a>示例
 
-所有提供程序扩展 `IProvider` 抽象类。 例如，查看任何现有提供程序的 [源代码](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/main/packages/mgt/src/providers)。
+所有提供程序扩展 `IProvider` 抽象类。 例如，查看任何现有提供程序的 [源代码](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/main/packages/providers)。
 
 ## <a name="set-the-global-provider"></a>设置全局提供程序
 

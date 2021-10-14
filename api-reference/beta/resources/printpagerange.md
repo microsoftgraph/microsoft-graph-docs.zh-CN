@@ -2,15 +2,15 @@
 title: printPageRange 资源类型
 description: 指定要打印的页面范围。
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: a8bbf452c337cb5c2ade7302eb29cff4bdb73d23
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 229b13a398a01412a7c85e1df954dcddffb2ed9c
+ms.sourcegitcommit: 8ae180a32dbd5a2b12512aee64699a2c23b8678b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48052536"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "60354733"
 ---
 # <a name="printpagerange-resource-type"></a>printPageRange 资源类型
 
@@ -23,8 +23,8 @@ ms.locfileid: "48052536"
 ## <a name="properties"></a>属性
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|startPage|Int32|范围 (包含) 的起始页。 只读。|
-|endPage|Int32|区域 (包含) 的最后一页。 只读。|
+|startPage|Int32|起始页 (区域) 包含两者。 只读。|
+|endPage|Int32|结束页包含 (包含) 的页码。 只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -40,8 +40,8 @@ ms.locfileid: "48052536"
 
 ```json
 {
-  "startPage": 123456,
-  "endPage": 123456
+  "startPage": "Int32",
+  "endPage": "Int32"
 }
 ```
 

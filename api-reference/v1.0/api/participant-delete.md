@@ -6,16 +6,16 @@ author: jackry6350
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 5de80278f83cde511ef600f8bdb5c3b3cf9f914c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fc014bf01a74e8b3da616b6d615c6145c1fae702
+ms.sourcegitcommit: 8ae180a32dbd5a2b12512aee64699a2c23b8678b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59090208"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "60355167"
 ---
 # <a name="delete-participant"></a>删除参与者
 
-删除呼叫中的特定参与者。 在某些情况下，适合应用程序从活动呼叫中删除参与者。 此操作可在参与者应答呼叫之前或之后执行。 删除活动呼叫者后，会立即从呼叫中删除这些呼叫，同时不会发出删除前或删除后通知。 删除受邀参与者后，将取消任何未完成的添加参与者请求。 
+删除呼叫中的特定参与者。 在某些情况下，适合应用程序从活动呼叫中删除参与者。 此操作可在参与者应答呼叫之前或之后执行。 删除活动呼叫者后，会立即从呼叫中删除这些呼叫，同时不会发出删除前或删除后通知。 当删除受邀参与者时，将取消任何未完成的添加参与者请求。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -147,6 +147,10 @@ Content-Length: 464
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/participant-invite-1-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/participant-invite-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

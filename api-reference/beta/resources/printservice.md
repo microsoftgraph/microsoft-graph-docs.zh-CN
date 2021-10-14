@@ -1,16 +1,16 @@
 ---
 title: printService 资源类型
-description: 表示对打印服务实例的特定于 Azure AD 租户的说明。 打印基础结构的每个组件都有服务 (例如，发现、通知、注册和 IPP) 并具有一个或多个终结点。
+description: 表示Azure AD服务实例的租户特定说明。 打印基础结构的每个组件都有服务 (例如发现、通知、注册和 IPP) 具有一个或多个终结点。
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 00ba50369f2396250df632c13ed3945e8c9d40d1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 08b5a0857a62e91f545c6678398f54c4585436be
+ms.sourcegitcommit: 8ae180a32dbd5a2b12512aee64699a2c23b8678b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48052537"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "60355237"
 ---
 # <a name="printservice-resource-type"></a>printService 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48052537"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示对打印服务实例的特定于 Azure AD 租户的说明。 打印基础结构的每个组件都存在的服务 (发现、通知、注册和 IPP) 并具有一个或多个终结点。
+表示Azure AD服务实例的租户特定说明。 打印基础结构的每个组件都有服务 (发现、通知、注册和 IPP) 具有一个或多个终结点。
 
 ## <a name="methods"></a>方法
 
@@ -57,7 +57,6 @@ ms.locfileid: "48052537"
   "id": "String (identifier)",
   "endpoints": [ {"@odata.type": "microsoft.graph.printServiceEndpoint"} ]
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

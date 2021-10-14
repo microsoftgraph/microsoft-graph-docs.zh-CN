@@ -1,27 +1,24 @@
 ---
-title: DriveItemVersion 资源类型
-description: '**DriveItemVersion** 资源表示 DriveItem 的特定版本。'
+title: driveItemVersion 资源类型
+description: 表示 DriveItem 的特定版本。
 ms.localizationpriority: medium
 ms.prod: sharepoint
 author: JeremyKelley
 doc_type: resourcePageType
-ms.openlocfilehash: 63bb92871da03ecb6ee4d051274444f03ae95710
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9dea3f33013c4d6fe0530c4f65253873ec3a1a69
+ms.sourcegitcommit: 8ae180a32dbd5a2b12512aee64699a2c23b8678b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59094364"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "60354761"
 ---
-# <a name="driveitemversion-resource-type"></a>DriveItemVersion 资源类型
+# <a name="driveitemversion-resource-type"></a>driveItemVersion 资源类型
 
 命名空间：microsoft.graph
 
-**DriveItemVersion** 资源表示特定版本的 [DriveItem](driveitem.md)。
+表示 [driveItem 的特定版本](driveitem.md)。
 
-
-## <a name="tasks-on-driveitemversion-resources"></a>DriveItemVersion 资源上的任务
-
-下列任务可用于 driveItemVersion 资源。
+以下任务可用于 **driveItemVersion** 资源。
 
 |            常见任务             |         HTTP 方法         |
 | :--------------------------------- | :-------------------------- |
@@ -37,26 +34,6 @@ ms.locfileid: "59094364"
 
 在上表中，各示例使用的是 `/drive`，但有很多有效的请求。
 
-## <a name="json-representation"></a>JSON 表示形式
-
-<!--{
-  "blockType": "resource",
-  "baseType": "microsoft.graph.baseItemVersion",
-  "@odata.type": "microsoft.graph.driveItemVersion",
-  "@type.aka&quot;: &quot;oneDrive.driveItemVersion"
-}-->
-
-```json
-{
-  "content": { "@odata.type": "Edm.Stream" },
-  "id": "string",
-  "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
-  "lastModifiedDateTime": "2016-01-01T15:20:01.125Z",
-  "publication": { "@odata.type": "microsoft.graph.publicationFacet" },
-  "size": 12356
-}
-```
-
 ## <a name="properties"></a>属性
 
 |      属性名称       |                         类型                         |                               说明                               |
@@ -68,6 +45,39 @@ ms.locfileid: "59094364"
 | **size**                 | Int64                                                | 指示此版本项的内容流大小。  |
 | **content**              | Stream                                               | 此版本的项的内容流。                        |
 
+## <a name="instance-attributes"></a>实例属性
+
+| 属性名称                     | 类型   | 说明
+|:----------------------------------|:-------|:--------------------------------
+| @microsoft.graph.downloadUrl      | string | 可用于下载此版本的文件内容的 URL。 不需要使用此 URL 进行身份验证。 只读。
+
+>**注意：**`@microsoft.graph.downloadUrl`该值是短期 URL，无法缓存。 此 URL 在失效前只能使用很短的时间（1 小时）。
+>删除用户的文件权限可能不会立即使 URL 无效。
+
+## <a name="json-representation"></a>JSON 表示形式
+
+<!--{
+  "blockType": "resource",
+  "baseType": "microsoft.graph.baseItemVersion",
+  "@odata.type": "microsoft.graph.driveItemVersion",
+  "@type.aka": "oneDrive.driveItemVersion"
+}-->
+
+```json
+{
+  "content": { "@odata.type": "Edm.Stream" },
+  "id": "string",
+  "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
+  "lastModifiedDateTime": "2016-01-01T15:20:01.125Z",
+  "publication": { "@odata.type": "microsoft.graph.publicationFacet" },
+  "size": 12356,
+
+  /* instance annotations */
+  "@microsoft.graph.downloadUrl": "url",
+}
+```
+
+
 <!-- {
   "type": "#page.annotation",
   "description": "The version facet provides information about the properties of a file version.",
@@ -75,4 +85,3 @@ ms.locfileid: "59094364"
   "section": "documentation",
   "tocPath": "Facets/Version"
 } -->
-
