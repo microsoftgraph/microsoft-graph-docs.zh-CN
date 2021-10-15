@@ -1,32 +1,32 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 02503ec9da856609af8ebeb681ee90ba56324ba8ecc7bfe9e9f4dceed3392311
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2932a999e16dc76b2153375caf9779695af545a3
+ms.sourcegitcommit: 8ae180a32dbd5a2b12512aee64699a2c23b8678b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57279192"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "60365842"
 ---
 ```java
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 EducationAssignment educationAssignment = new EducationAssignment();
-educationAssignment.dueDateTime = OffsetDateTimeSerializer.deserialize("2014-02-01T00:00:00Z");
-educationAssignment.displayName = "Midterm 1";
+educationAssignment.dueDateTime = OffsetDateTimeSerializer.deserialize("2021-09-07T00:00:00Z");
+educationAssignment.displayName = "Reading test 09.03 #4";
 EducationItemBody instructions = new EducationItemBody();
 instructions.contentType = BodyType.TEXT;
-instructions.content = "Read chapters 1 through 3";
+instructions.content = "Read chapter 4";
 educationAssignment.instructions = instructions;
 EducationAssignmentPointsGradeType grading = new EducationAssignmentPointsGradeType();
-grading.maxPoints = 100;
+grading.maxPoints = 50;
 educationAssignment.grading = grading;
 EducationAssignmentClassRecipient assignTo = new EducationAssignmentClassRecipient();
 educationAssignment.assignTo = assignTo;
 educationAssignment.status = EducationAssignmentStatus.DRAFT;
 educationAssignment.allowStudentsToAddResourcesToSubmission = true;
 
-graphClient.education().classes("8ddcac47-0b45-4cdb-b10a-d36a07a3dd62").assignments()
+graphClient.education().classes("72a7baec-c3e9-4213-a850-f62de0adad5f").assignments()
     .buildRequest()
     .post(educationAssignment);
 

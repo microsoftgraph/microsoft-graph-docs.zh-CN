@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e2d9c90a5acc5e852f269eb450f5380e402705f8
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 6181346cfe4234f052b0a9f5b91dede4103e9ba5
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695868"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289453"
 ---
 # <a name="get-filesfolder"></a>获取 filesFolder
 
@@ -25,11 +25,11 @@ ms.locfileid: "58695868"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All |
+|委派（工作或学校帐户） | Files.Read.All、Files.ReadWrite.All、Group.Read.All **、Group.ReadWrite.All** |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | File.Read.Group*、Files.Read.All、Files.ReadWrite.All、Group.Read.All、Group.ReadWrite.All |
+|应用程序 | File.Read.Group *、Files.Read.All、Files.ReadWrite.All、Group.Read.All**、Group.ReadWrite.All** |
 
-> **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。
+> **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。 标记为 **的权限已弃用，不应使用。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

@@ -1,28 +1,28 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8934f6c691592d5ee283820aa5dea68cc73670915ce7b2ba802814d440eef915
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7d84dd751818663b97aeba5c9a0faf018bc603ff
+ms.sourcegitcommit: 8ae180a32dbd5a2b12512aee64699a2c23b8678b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57104801"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "60365836"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/education/classes/11021/assignments/19002"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/4679bc1b-90c5-45af-ae1a-d5357672ed39"]]];
 [urlRequest setHTTPMethod:@"PATCH"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphEducationAssignment *educationAssignment = [[MSGraphEducationAssignment alloc] init];
-[educationAssignment setDisplayName:@"Week 1 reading assignment"];
+[educationAssignment setDisplayName:@"Reading and review test 09.03 #5"];
 MSGraphEducationItemBody *instructions = [[MSGraphEducationItemBody alloc] init];
 [instructions setContentType: [MSGraphBodyType text]];
-[instructions setContent:@"Read chapters 1 through 3"];
+[instructions setContent:@"Read chapter 5 and write your review"];
 [educationAssignment setInstructions:instructions];
-[educationAssignment setDueDateTime: "2014-02-01T00:00:00Z"];
+[educationAssignment setDueDateTime: "2021-09-10T00:00:00Z"];
 [educationAssignment setAddedStudentAction: [MSGraphEducationAddedStudentAction none]];
 [educationAssignment setAddToCalendarAction: [MSGraphEducationAddToCalendarOptions studentsAndPublisher]];
 

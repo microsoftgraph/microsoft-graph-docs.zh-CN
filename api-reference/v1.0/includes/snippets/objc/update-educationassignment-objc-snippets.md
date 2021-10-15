@@ -1,28 +1,29 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 72536d8552735fcc9683adb9032392f5db2f48b89f20456c8951f74dd2c37bdc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 514d135da1459795c32c92fdeb1461074dd7347c
+ms.sourcegitcommit: 8ae180a32dbd5a2b12512aee64699a2c23b8678b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57105397"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "60365801"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/v1.0/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/ad8afb28-c138-4ad7-b7f5-a6986c2655a8"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/4679bc1b-90c5-45af-ae1a-d5357672ed39"]]];
 [urlRequest setHTTPMethod:@"PATCH"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphEducationAssignment *educationAssignment = [[MSGraphEducationAssignment alloc] init];
-[educationAssignment setDisplayName:@"Week 1 reading assignment"];
+[educationAssignment setDisplayName:@"Reading and review test 09.03 #5"];
 MSGraphEducationItemBody *instructions = [[MSGraphEducationItemBody alloc] init];
 [instructions setContentType: [MSGraphBodyType text]];
-[instructions setContent:@"Read chapters 1 through 3"];
+[instructions setContent:@"Read chapter 5 and write your review"];
 [educationAssignment setInstructions:instructions];
-[educationAssignment setDueDateTime: "2014-02-01T00:00:00Z"];
+[educationAssignment setDueDateTime: "2021-09-10T00:00:00Z"];
+[educationAssignment setAddedStudentAction: [MSGraphEducationAddedStudentAction none]];
 
 NSError *error;
 NSData *educationAssignmentData = [educationAssignment getSerializedDataWithError:&error];

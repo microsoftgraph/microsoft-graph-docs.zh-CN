@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4e8d25b20486c864beb24c35829b45d4550d5114
-ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
+ms.openlocfilehash: f22c1feab6f8a577e69ebdc27d1f873f1b59cf8b
+ms.sourcegitcommit: 8ae180a32dbd5a2b12512aee64699a2c23b8678b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58384375"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "60365805"
 ---
 ```csharp
 
@@ -13,16 +13,16 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var educationAssignment = new EducationAssignment
 {
-    DueDateTime = DateTimeOffset.Parse("2014-02-01T00:00:00Z"),
-    DisplayName = "Midterm 1",
+    DueDateTime = DateTimeOffset.Parse("2021-09-07T00:00:00Z"),
+    DisplayName = "Reading test 09.03 #4",
     Instructions = new EducationItemBody
     {
         ContentType = BodyType.Text,
-        Content = "Read chapters 1 through 3"
+        Content = "Read chapter 4"
     },
     Grading = new EducationAssignmentPointsGradeType
     {
-        MaxPoints = 100f
+        MaxPoints = 50f
     },
     AssignTo = new EducationAssignmentClassRecipient
     {

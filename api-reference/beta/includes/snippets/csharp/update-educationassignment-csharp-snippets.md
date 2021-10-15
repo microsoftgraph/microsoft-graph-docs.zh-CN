@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 2c1e36d374c7fb423da3777b7a5dccc95190b54e1bf096801b3ac5cd3adff173
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2024e85ead2f3b9ff6a7ebfeeeedf4b2aecc44d9
+ms.sourcegitcommit: 8ae180a32dbd5a2b12512aee64699a2c23b8678b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57161560"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "60365835"
 ---
 ```csharp
 
@@ -13,13 +13,13 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var educationAssignment = new EducationAssignment
 {
-    DisplayName = "Week 1 reading assignment",
+    DisplayName = "Reading and review test 09.03 #5",
     Instructions = new EducationItemBody
     {
         ContentType = BodyType.Text,
-        Content = "Read chapters 1 through 3"
+        Content = "Read chapter 5 and write your review"
     },
-    DueDateTime = DateTimeOffset.Parse("2014-02-01T00:00:00Z"),
+    DueDateTime = DateTimeOffset.Parse("2021-09-10T00:00:00Z"),
     AddedStudentAction = EducationAddedStudentAction.None,
     AddToCalendarAction = EducationAddToCalendarOptions.StudentsAndPublisher
 };

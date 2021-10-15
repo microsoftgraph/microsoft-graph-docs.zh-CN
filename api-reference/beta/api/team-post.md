@@ -5,12 +5,12 @@ author: anandjo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2252132ba14a5990639435fc659801385e835138
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 89d5808c0e31065eecc9a511cc23cb560afee11e
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695383"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289285"
 ---
 # <a name="create-team"></a>创建团队
 
@@ -26,12 +26,14 @@ ms.locfileid: "58695383"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 | :------------------------------------- | :------------------------------------------ |
-| 委派（工作或学校帐户）     | Team.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
+| 委派（工作或学校帐户）     | Team.Create、Group.ReadWrite.All **、Directory.ReadWrite.All** |
 | 委派（个人 Microsoft 帐户） | 不支持。                              |
-| 应用程序                            | Team.Create, Teamwork.Migrate.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+| 应用程序                            | Team.Create、Teamwork.Migrate.All、Group.ReadWrite.All **、Directory.ReadWrite.All** |
 
 > **注意**：Teamwork.Migrate.All 权限 *仅* 支持 [迁移](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)。
 将来，Microsoft 可能要求你或你的客户根据导入的数据量支付其他费用。
+
+> **注意**：标记为 ** 的权限已弃用，不应使用。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -100,7 +102,7 @@ Content-Type: application/json
 <!-- markdownlint-disable MD024 -->
 <!-- markdownlint-disable MD001 -->
 
-##### <a name="response"></a>响应
+#### <a name="response"></a>响应
 
 <!-- {
   "blockType": "response",
@@ -182,7 +184,7 @@ Content-Length: 0
 
 ### <a name="example-3-create-a-team-with-multiple-channels-installed-apps-and-pinned-tabs-using-delegated-permissions"></a>示例 3：通过委派的权限，创建一个包含多个频道、安装了应用且固定有选项卡的团队。
 
-下面是具有完整有效负载的请求。 客户端可以覆盖基础模板中的值，并将数组值项添加到 `specialization` 的验证规则允许的区间。
+以下是具有完整有效负载的请求。客户端可以覆盖基础模板中的值，并将数组值项添加到 `specialization` 的验证规则允许的区间。
 
 #### <a name="request"></a>请求
 

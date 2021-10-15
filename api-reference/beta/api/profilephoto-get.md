@@ -3,14 +3,14 @@ title: 获取照片
 description: 获取指定的 profilePhoto 或其元数据（**profilePhoto** 属性）。
 ms.localizationpriority: high
 doc_type: apiPageType
-ms.prod: ''
+ms.prod: people
 author: kevinbellinger
-ms.openlocfilehash: 690720e1c2de153a7b56aab30a1212f4b530a468
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 21a48e87dd4582024294503165e092cd7fa76751
+ms.sourcegitcommit: 8ae180a32dbd5a2b12512aee64699a2c23b8678b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695411"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "60355552"
 ---
 # <a name="get-photo"></a>获取照片
 
@@ -31,13 +31,33 @@ Microsoft 365 支持以下高清照片尺寸：48x48、64x64、96x96、120x120�
 
 > **注意：** beta 版中的获取照片方法支持用户的工作、学校或个人帐户。 但是获取照片元数据方法仅支持用户的工作或学校帐户，不支持个人帐户。
 
+### <a name="to-retrieve-the-profile-photo-of-a-user"></a>检索用户的个人资料照片
+
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | 对于 **user** 资源：<br/>User.Read、User.ReadBasic.All、User.Read.All、User.ReadWrite、User.ReadWrite.All<br /><br />对于 **group** 资源：<br />Group.Read.All、Group.ReadWrite.All<br /><br />对于 **contact** 资源：<br />Contacts.Read、Contacts.ReadWrite |
-|委派（个人 Microsoft 帐户）  <br /> **注意**：不支持元数据操作。 | 对于 **user** 资源：<br/>User.Read、User.ReadWrite<br /><br />对于 **contact** 资源：<br />Contacts.Read、Contacts.ReadWrite |
-|应用程序                        | 对于 **user** 资源：<br/>User.Read.All、User.ReadWrite.All<br /><br />对于 **group** 资源：<br />Group.Read.All、Group.ReadWrite.All<br /><br />对于 **contact** 资源：<br />Contacts.Read、Contacts.ReadWrite |
+|委派（工作或学校帐户）      |   User.Read、User.ReadBasic.All、User.Read.All、User.ReadWrite、User.ReadWrite.All           |
+|委派（个人 Microsoft 帐户）      |   User.Read、User.ReadWrite            |
+|应用程序      |    User.Read.All、User.ReadWrite.All           |
 
-> **注意：** 当前有一个 [已知问题](/graph/known-issues#groups)，即使用应用程序权限访问组照片。
+### <a name="to-retrieve-the-profile-photo-of-a-group"></a>检索组的个人资料照片
+
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户）      |   Group.Read.All、Group.ReadWrite.All           |
+|委派（个人 Microsoft 帐户）      |   不支持。            |
+|应用程序      |    Group.Read.All、Group.ReadWrite.All           |
+
+### <a name="to-retrieve-the-profile-photo-of-a-contact"></a>检索联系人的个人资料照片
+
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户）      |   Contacts.Read、Contacts.ReadWrite           |
+|委派（个人 Microsoft 帐户）      |   Contacts.Read、Contacts.ReadWrite            |
+|应用程序      |    Contacts.Read、Contacts.ReadWrite           |
+
+> **注意：**  
+> 1. 个人 Microsoft 帐户不支持元数据操作。 
+> 2. 当前在使用应用权限访问组照片方面存在一个 [已知问题](/graph/known-issues#groups)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -85,7 +105,7 @@ GET /groups/{id}/photos/{size}
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
