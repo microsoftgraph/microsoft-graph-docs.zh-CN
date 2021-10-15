@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 595323bce69b31a4193ebfc2f96cb8cbb2d566d8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9128a2d0441420d82e82275163f555751b9f574a
+ms.sourcegitcommit: c3f849e5a052b1926373a4b316ec303250e6d09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147855"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60369166"
 ---
 # <a name="send-chatmessage-in-a-channel-or-a-chat"></a>在频道或聊天中发送 chatMessage
 
@@ -173,7 +173,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-mentions-a-user-in-a-channel-message"></a>示例 2：@mentions消息中通知用户
+### <a name="example-2-mentions-a-user-in-a-channel-message"></a>示例 2：@mentions频道消息中通知用户
 
 #### <a name="request"></a>请求
 下面展示了示例请求。
@@ -528,7 +528,7 @@ Content-type: application/json
 
 > **注意：****hostedContents** 集合中的 **temporaryId** 是一个随机 ID，但在整个 **body** 和 **hostedContents** 元素中必须相同。  (注意 **temporaryId** 设置为 **1，** 正文中的引用设置为 `../hostedContents/1/$value` .) 
 
-**contentBytes** 必须设置为二进制字符串 Base64 编码字节。 为此，可以使用 C# `Convert.ToBase64String(File.ReadAllBytes("image.png"));`
+**contentBytes** 必须设置为二进制字符串 Base64 编码字节。 可以使用 在 C# 中执行此操作 `Convert.ToBase64String(File.ReadAllBytes("image.png"));` 。 .NET SDK 用户无需执行到 Base64 编码字节的转换，因为 SDK 会处理它。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -629,7 +629,7 @@ Content-type: application/json
 
 > **注意：** hostedContents 集合中的 **temporaryId** 是一个随机 ID，但必须在附件和 **hostedContents** (中的内容) 相同。  (请注意 **，temporaryId 设置为** **1，** 内容中的引用设置为 `../hostedContents/1/$value` .) 
 
-**contentBytes** 必须设置为二进制字符串 Base64 编码字节。 为此，可以使用 C# `Convert.ToBase64String(File.ReadAllBytes("image.png"));`
+**contentBytes** 必须设置为二进制字符串 Base64 编码字节。  可以使用 在 C# 中执行此操作 `Convert.ToBase64String(File.ReadAllBytes("image.png"));` 。 .NET SDK 用户无需执行到 Base64 编码字节的转换，因为 SDK 会处理它。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -876,7 +876,7 @@ Content-type: application/json
 #### <a name="request"></a>请求
 下面展示了示例请求。
 
-> 注意 **：conversationIdentityType** 必须设置为@mention `team` 团队。
+> 注意 **：conversationIdentityType** 必须设置为 `team` @mention团队。
 
 
 # <a name="http"></a>[HTTP](#tab/http)

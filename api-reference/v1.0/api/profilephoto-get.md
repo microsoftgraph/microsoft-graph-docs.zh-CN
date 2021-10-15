@@ -3,14 +3,14 @@ title: 获取照片
 description: 获取指定的 profilePhoto 或其元数据（profilePhoto 属性）。
 ms.localizationpriority: high
 author: kevinbellinger
-ms.prod: ''
+ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 855d8f72dcbc1804a07dd84ae3788693131ed8ca
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: af3e8ce6aa70980fbcbb1516f302aebf74d3c7fa
+ms.sourcegitcommit: 8ae180a32dbd5a2b12512aee64699a2c23b8678b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59104801"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "60354754"
 ---
 # <a name="get-photo"></a>获取照片
 
@@ -33,7 +33,7 @@ Microsoft 365 支持以下高清照片尺寸：48x48、64x64、96x96、120x120�
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）      |   User.Read、User.ReadBasic.All、User.Read.All、User.ReadWrite、User.ReadWrite.All           |
-|委派（个人 Microsoft 帐户）      |   不支持。            |
+|委派（个人 Microsoft 帐户）      |   User.Read、User.ReadWrite            |
 |应用程序      |    User.Read.All、User.ReadWrite.All           |
 
 ### <a name="to-retrieve-the-profile-photo-of-a-group"></a>检索组的个人资料照片
@@ -49,10 +49,12 @@ Microsoft 365 支持以下高清照片尺寸：48x48、64x64、96x96、120x120�
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）      |   Contacts.Read、Contacts.ReadWrite           |
-|委派（个人 Microsoft 帐户）      |   不支持。            |
+|委派（个人 Microsoft 帐户）      |   Contacts.Read、Contacts.ReadWrite            |
 |应用程序      |    Contacts.Read、Contacts.ReadWrite           |
 
-> **注意：** 当前有一个 [已知问题](/graph/known-issues#groups)，即使用应用程序权限访问组照片。
+> **注意：**  
+> 1. 个人 Microsoft 帐户不支持元数据操作。 
+> 2. 当前在使用应用权限访问组照片方面存在一个 [已知问题](/graph/known-issues#groups)。
 
 ## <a name="http-request"></a>HTTP 请求
 

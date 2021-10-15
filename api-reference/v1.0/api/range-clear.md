@@ -5,18 +5,19 @@ ms.localizationpriority: medium
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: dda92842ca077f3521b5fbf3b726276e6bac1400
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 41e61c4adae951acc3602f37809f6903b8f3a79a
+ms.sourcegitcommit: c3f849e5a052b1926373a4b316ec303250e6d09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59130341"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60369341"
 ---
 # <a name="range-clear"></a>Range: clear
 
 命名空间：microsoft.graph
 
-清除范围值、格式、填充、边框等。
+清除区域值，如格式、填充和边框。
+
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -35,12 +36,12 @@ POST /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>
 POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/clear
 POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/clear
 POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/clear
-
 ```
+
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | 持有者{令牌}。必需。 |
+| Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ## <a name="request-body"></a>请求正文

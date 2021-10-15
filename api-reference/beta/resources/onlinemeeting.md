@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 5f84034463044d3f8c832f1a8b0e0c17656c0f3a
-ms.sourcegitcommit: 84d9a50dfa9526a207696c69d92381c8763d986a
+ms.openlocfilehash: f9752b08a6d9e3a912e485cd6a8d2d4bf0ad19e8
+ms.sourcegitcommit: c3f849e5a052b1926373a4b316ec303250e6d09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59979430"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60369753"
 ---
 # <a name="onlinemeeting-resource-type"></a>onlineMeeting 资源类型
 
@@ -22,46 +22,45 @@ ms.locfileid: "59979430"
 
 ## <a name="methods"></a>方法
 
-| 方法                                                             | 返回类型                       | 说明                                                                                                       |
-| :----------------------------------------------------------------- | :-------------------------------- | :---------------------------------------------------------------------------------------------------------------- |
-| [Create](../api/application-post-onlineMeetings.md)                | [onlineMeeting](onlinemeeting.md) | 创建联机会议。                                                                                         |
-| [Get](../api/onlinemeeting-get.md)                                 | [onlineMeeting](onlinemeeting.md) | 读取 **onlineMeeting 对象的属性和** 关系。                                             |
-| [更新](../api/onlinemeeting-update.md)                           | [onlineMeeting](onlinemeeting.md) | 更新 **onlineMeeting 对象** 的属性。 |
-| [删除](../api/onlinemeeting-delete.md)                           | 无                              | 删除 **onlineMeeting** 对象。                                                                             |
-| [创建或获取 onlineMeeting](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | 使用自定义外部 ID 创建联机会议。 如果会议已存在，请检索其属性。      |
+| 方法 | 返回类型 |说明 |
+| ------ | ----------- | ---------- |
+| [Create](../api/application-post-onlineMeetings.md) | [onlineMeeting](onlinemeeting.md) | 创建联机会议。 |
+| [Get](../api/onlinemeeting-get.md) | [onlineMeeting](onlinemeeting.md) | 读取 **onlineMeeting 对象的属性和** 关系。 |
+| [更新](../api/onlinemeeting-update.md) | [onlineMeeting](onlinemeeting.md) | 更新 **onlineMeeting 对象** 的属性。 |
+| [删除](../api/onlinemeeting-delete.md) | 无 | 删除 **onlineMeeting** 对象。 |
+| [创建或获取 onlineMeeting](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | 使用自定义外部 ID 创建联机会议。 如果会议已存在，请检索其属性。 |
 
 ## <a name="properties"></a>属性
 
-| 属性              | 类型                                          | 说明                                                                                                                                                                                                                                                 |
-| :-------------------- | :-------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)| 指定可在会议中成为演示者的人。 可能的值是 `everyone` `organization` `roleIsPresenter` 、、、 `organizer` 和 `unknownFutureValue` 。                                                                                                    |
-| allowAttendeeToEnableCamera | 布尔值 | 指示与会者是否可以打开其相机。 |
-| allowAttendeeToEnableMic | 布尔值 | 指示与会者是否可以打开其麦克风。 |
+| 属性              | 类型                                          | 说明    |
+| :-------------------- | :-------------------------------------------- | :------------------------------------ |
+| allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)| 指定可在会议中成为演示者的人。 |
+| allowAttendeeToEnableCamera | Boolean | 指示与会者是否可以打开其相机。 |
+| allowAttendeeToEnableMic | Boolean | 指示与会者是否可以打开其麦克风。 |
 | allowMeetingChat      | [meetingChatMode](#meetingchatmode-values) | 指定会议聊天的模式。 |
-| allowTeamworkReactions | 布尔值 | 指示是否Teams会议的反应。 |
-| alternativeRecording  | Stream                                        | 实时事件的备用录制的内容流。 只读。                                                                                                                                                                                 |
-| attendeeReport        | Stream                                        | 实时事件的与会者报告的内容流。 只读。                                                                                                                                                                                       |
-| audioConferencing     | [audioConferencing](audioconferencing.md)     | 电话访问 (拨入) 联机会议的信息。 只读。                                                                                                                                                                                    |
-| broadcastSettings     | [broadcastMeetingSettings](broadcastMeetingSettings.md)     | 设置实时事件相关。                                                                                                                                                                                                                     |
-| chatInfo              | [chatInfo](chatinfo.md)                       | 与此联机会议关联的聊天信息。                                                                                                                                                                                                   |
-| creationDateTime      | 日期时间                                      | 会议创建时间（UTC）。 只读。                                                                                                                                                                                                                |
-| endDateTime           | 日期时间                                      | 会议结束时间（UTC）。                                                                                                                                                                                                                                |
-| externalId            | String                                        | 外部 ID。 自定义 ID。 可选。                                                                                                                                                                                                                     |
-| id                    | 字符串                                        | 与联机会议关联的默认 ID。 只读。                                                                                                                                                                                               |
-| isBroadcast           | 布尔值                                       | 指示这是否是实时事件。                                                                                                                                                                                                                   |
-| isEntryExitAnnounced  | 布尔值                                       | 指示呼叫者加入或离开时是否宣布。                                                                                                                                                                                                      |
-| joinWebUrl            | 字符串                                        | 联机会议加入 URL。 只读。                                                                                                                                                                                                              |
-| joinInformation       | [itemBody](itembody.md)                       | "Accept-Language"中指定的语言和区域设置变量中的联接信息请求 HTTP 标头。 只读                                                                                                                                       |
-| lobbyBypassSettings   | [lobbyBypassSettings](lobbyBypassSettings.md) | 指定哪些参与者可以绕过会议厅。                                                                                                                                                                                                  |
-| meetingAttendanceReport | [meetingAttendanceReport](meetingAttendanceReport.md) | 安排的会议的与会者报告。 只读。 |
-| participants          | [meetingParticipants](meetingparticipants.md) | 与联机会议关联的参与者。 这包括组织者和与会者。                                                                                                                                                        |
-| recordAutomatically | 布尔值 | 指示是否自动录制会议。 |
-| recording             | Stream                                        | 录制实时事件的内容流。 只读。                                                                                                                                                                                             |
-| startDateTime         | 日期时间                                      | 会议开始时间（UTC）。                                                                                                                                                                                                                              |
-| subject               | String                                        | 联机会议的主题。                                                                                                                                                                                                                          |
-| videoTeleconferenceId | 字符串                                        | 视频电话会议 ID。 只读。                                                                                                                                                                                                                   |
-| autoAdmittedUsers (弃用)     | 字符串                                        | 用于指定将自动允许加入联机会议的参与者类型的设置。 可取值为：`everyone`、`everyoneInSameAndFederatedCompany`、`everyoneInCompany`、`invitedUsersInCompany`、`organizer`。 只读。 |
-| 功能 (弃用)          | meetingCapabilities 集合                             | 会议功能列表。 可能的值是 `questionAndAnswer` `unknownFutureValue` ：、。                                                                                                                                                                                 |
+| allowTeamworkReactions | Boolean | 指示是否Teams会议的反应。 |
+| alternativeRecording  | Stream | 实时事件的备用录制的内容流。 只读。 |
+| attendeeReport        | Stream | 实时事件的与会者报告的内容流。 只读。   |
+| audioConferencing     | [audioConferencing](audioconferencing.md)     | 电话访问 (拨入) 联机会议的信息。 只读。 |
+| broadcastSettings     | [broadcastMeetingSettings](broadcastMeetingSettings.md)     | 设置实时事件相关。      |
+| chatInfo              | [chatInfo](chatinfo.md) | 与此联机会议关联的聊天信息。  |
+| creationDateTime      | 日期时间 | 会议创建时间（UTC）。 只读。     |
+| endDateTime           | 日期时间 | 会议结束时间（UTC）。   |
+| externalId            | String | 外部 ID。 自定义 ID。 可选。      |
+| id | String | 与联机会议关联的默认 ID。 只读。    |
+| isBroadcast | Boolean | 指示这是否是实时事件。 |
+| isEntryExitAnnounced  | Boolean | 指示呼叫者加入或离开时是否宣布。 |
+| joinWebUrl | String | 联机会议加入 URL。 只读。 |
+| joinInformation | [itemBody](itembody.md) | "Accept-Language"中指定的语言和区域设置变量中的联接信息请求 HTTP 标头。 只读。 |
+| lobbyBypassSettings | [lobbyBypassSettings](lobbyBypassSettings.md) | 指定哪些参与者可以绕过会议厅。 |
+| participants | [meetingParticipants](meetingparticipants.md) | 与联机会议关联的参与者。 这包括组织者和与会者。 |
+| recordAutomatically | Boolean | 指示是否自动录制会议。 |
+| recording | Stream | 录制实时事件的内容流。 只读。 |
+| startDateTime | 日期时间 | 会议开始时间（UTC）。 |
+| subject | String | 联机会议的主题。 |
+| videoTeleconferenceId | String | 视频电话会议 ID。 只读。 |
+| autoAdmittedUsers (弃用)  | String | 用于指定将自动允许加入联机会议的参与者类型的设置。 可取值为：`everyone`、`everyoneInSameAndFederatedCompany`、`everyoneInCompany`、`invitedUsersInCompany`、`organizer`。 只读。 |
+| 功能 (弃)  | meetingCapabilities 集合 | 会议功能列表。 可能的值是 `questionAndAnswer` `unknownFutureValue` ：、。 |
 
 > [!CAUTION]
 >
@@ -80,7 +79,7 @@ ms.locfileid: "59979430"
 
 > [!TIP]
 >
->- 创建或更新联机会议时，将 **allowedPresenters** 的值设置为 ，在请求正文中包括指定与会者的角色设置为 `roleIsPresenter` 的与会者 `presenter` 的完整列表。
+>- 创建或更新联机会议时，将 **allowedPresenters** 的值设置为 ，在请求正文中包括指定与会者的角色设置为 的与会者 `roleIsPresenter`  `presenter` 的完整列表。
 >- 创建或更新联机会议时 **，allowedPresenters** 的值设置为除 其他值外，与会者的角色将在响应 `roleIsPresenter`  `null` 正文中显示。
 
 ### <a name="meetingchatmode-values"></a>meetingChatMode 值
@@ -91,6 +90,13 @@ ms.locfileid: "59979430"
 | disabled           | 会议聊天被禁用。                                              |
 | limited            | 会议聊天已启用，但仅在会议呼叫期间启用。 |
 | unknownFutureValue | 未知未来值。                                                  |
+
+## <a name="relationships"></a>关系
+
+| 关系 | 类型 | 说明 |
+| ------------ | ---- | ----------- |
+| meetingAttendanceReport | [meetingAttendanceReport](meetingAttendanceReport.md) | 联机会议与会者报告。 只读。 |
+| 注册 | [meetingRegistration](meetingregistration.md) | 为联机会议启用的注册。 一个联机会议只能启用一个注册。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
