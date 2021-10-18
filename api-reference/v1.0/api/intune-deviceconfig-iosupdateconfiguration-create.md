@@ -2,15 +2,15 @@
 title: 创建 iosUpdateConfiguration
 description: 创建新的 iosUpdateConfiguration 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a0666b681096f7d000ea71ade8ba6ff5f8009612
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9ad0de0aad3f2b905cecc4b93d4e7d15f015d697
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59099747"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448105"
 ---
 # <a name="create-iosupdateconfiguration"></a>创建 iosUpdateConfiguration
 
@@ -113,7 +113,6 @@ Content-Length: 497
   "utcTimeOffsetInMinutes": 6
 }
 ```
-
 
 
 

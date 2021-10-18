@@ -2,15 +2,15 @@
 title: 列出 roleAssignments
 description: 列出 roleAssignment 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a7a945baf2297aca535b0589bcbc21516c7f8a3c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b4387636ba9e7307d5ae12a5ca8a1479f9bebc28
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59026362"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457342"
 ---
 # <a name="list-roleassignments"></a>列出 roleAssignments
 
@@ -79,7 +79,6 @@ Content-Length: 303
   ]
 }
 ```
-
 
 
 

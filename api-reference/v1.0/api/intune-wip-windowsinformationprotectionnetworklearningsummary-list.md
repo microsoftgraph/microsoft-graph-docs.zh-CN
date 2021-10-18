@@ -2,15 +2,15 @@
 title: 列出 windowsInformationProtectionNetworkLearningSummaries
 description: 列出 windowsInformationProtectionNetworkLearningSummary 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9b8d71548c31fe4e31a6c86366ce9bdb7cdc3fc0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e5e864c558f2da930c818df41870585757fed9e3
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59032648"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60444891"
 ---
 # <a name="list-windowsinformationprotectionnetworklearningsummaries"></a>列出 windowsInformationProtectionNetworkLearningSummaries
 
@@ -76,7 +76,6 @@ Content-Length: 235
   ]
 }
 ```
-
 
 
 

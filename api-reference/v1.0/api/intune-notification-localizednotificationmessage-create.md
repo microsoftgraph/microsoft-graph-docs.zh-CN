@@ -2,15 +2,15 @@
 title: 创建 localizedNotificationMessage
 description: 创建新的 localizedNotificationMessage 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0f9516425d3df22d970485ed571b42b07a8d1d94
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ddaad594d7cec35699df4cbde4d61c6832cd0f35
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147057"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60435706"
 ---
 # <a name="create-localizednotificationmessage"></a>创建 localizedNotificationMessage
 
@@ -98,7 +98,6 @@ Content-Length: 313
   "isDefault": true
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: 更新 androidGeneralDeviceConfiguration
 description: 更新 androidGeneralDeviceConfiguration 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3f8bbc3b2f1143a6d8e4bdb45f4af944ac5bf20e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3dcb51b4afc3658ed866c87a3349fa5eddce96c9
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59140386"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446124"
 ---
 # <a name="update-androidgeneraldeviceconfiguration"></a>更新 androidGeneralDeviceConfiguration
 
@@ -321,7 +321,6 @@ Content-Length: 3205
   "securityRequireVerifyApps": true
 }
 ```
-
 
 
 

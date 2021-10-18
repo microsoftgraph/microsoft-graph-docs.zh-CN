@@ -2,15 +2,15 @@
 title: 列出 windows10MobileCompliancePolicies
 description: 列出 windows10MobileCompliancePolicy 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7f95e807517673155bccd7737d4a01f0ef5909ff
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c3ef41a2b92810294dae182372fa7dc47bbbb11a
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59056317"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60453917"
 ---
 # <a name="list-windows10mobilecompliancepolicies"></a>列出 windows10MobileCompliancePolicies
 
@@ -95,7 +95,6 @@ Content-Length: 1089
   ]
 }
 ```
-
 
 
 

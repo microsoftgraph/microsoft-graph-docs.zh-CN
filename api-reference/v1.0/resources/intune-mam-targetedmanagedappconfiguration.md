@@ -2,15 +2,15 @@
 title: targetedManagedAppConfiguration 资源类型
 description: 用于将一组自定义设置按原样提供给目标安全组中的所有用户的配置
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 022bc6398a1f33c7d9d7794478e32ac9bcd11baf
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ae10c8b51bfde85d2f16ec20a2fa348a444e62b7
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59098690"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454465"
 ---
 # <a name="targetedmanagedappconfiguration-resource-type"></a>targetedManagedAppConfiguration 资源类型
 
@@ -82,7 +82,6 @@ ms.locfileid: "59098690"
   "isAssigned": true
 }
 ```
-
 
 
 

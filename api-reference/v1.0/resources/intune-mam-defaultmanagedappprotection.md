@@ -2,15 +2,15 @@
 title: defaultManagedAppProtection 资源类型
 description: 用于为 TargetedManagedAppProtection 策略未针对的所有用户配置指定的一组应用的详细管理设置的策略。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9dcc95c14b9a11fd7e1a324107abc38c89d4443c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a2cf3f85adaa8301ac3c6fdf839037f82402361c
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59062580"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451848"
 ---
 # <a name="defaultmanagedappprotection-resource-type"></a>defaultManagedAppProtection 资源类型
 
@@ -68,7 +68,7 @@ ms.locfileid: "59062580"
 |minimumRequiredAppVersion|String|低于指定版本的版本将阻止托管应用访问公司数据。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |minimumWarningAppVersion|String|低于指定版本的版本将导致托管应用出现警告消息。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |managedBrowser|[managedBrowserType](../resources/intune-mam-managedbrowsertype.md)|指示应在哪个托管 () 打开 Internet 链接。 配置此属性时，ManagedBrowserToOpenLinksRequired 应为 true。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)。 可取值为：`notConfigured`、`microsoftEdge`。|
-|appDataEncryptionType|[managedAppDataEncryptionType](../resources/intune-mam-managedappdataencryptiontype.md)|应该用于托管应用中的数据的加密类型。  (仅 iOS) 。 可取值为：`useDeviceSettings`、`afterDeviceRestart`、`whenDeviceLockedExceptOpenFiles`、`whenDeviceLocked`。|
+|appDataEncryptionType|[managedAppDataEncryptionType](../resources/intune-mam-managedappdataencryptiontype.md)|应该用于托管应用中的数据的加密类型。  (仅 iOS) 。 可能的值是：`useDeviceSettings`、`afterDeviceRestart`、`whenDeviceLockedExceptOpenFiles`、`whenDeviceLocked`。|
 |screenCaptureBlocked|Boolean|指示是否阻止捕获屏幕。 （仅限 Android）|
 |encryptAppData|Boolean|指示是否应加密托管应用数据。 （仅限 Android）|
 |disableAppEncryptionIfDeviceEncryptionIsEnabled|Boolean|启用此设置后，如果启用了设备级别加密，则应用级别加密将被禁用。 （仅限 Android）|
@@ -149,7 +149,6 @@ ms.locfileid: "59062580"
   "faceIdBlocked": true
 }
 ```
-
 
 
 

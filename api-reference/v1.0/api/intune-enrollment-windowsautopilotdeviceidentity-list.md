@@ -2,15 +2,15 @@
 title: 列出 windowsAutopilotDeviceIdentities
 description: 列出 windowsAutopilotDeviceIdentity 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b9198a2bd087d4c809dbd3b188b6f6794a8f8c80
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 27c6e210eb99cfbee0bef70223ac84847dff8014
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59094875"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457153"
 ---
 # <a name="list-windowsautopilotdeviceidentities"></a>列出 windowsAutopilotDeviceIdentities
 
@@ -90,7 +90,6 @@ Content-Length: 968
   ]
 }
 ```
-
 
 
 

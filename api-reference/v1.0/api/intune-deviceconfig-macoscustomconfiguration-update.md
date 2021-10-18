@@ -2,15 +2,15 @@
 title: 更新 macOSCustomConfiguration
 description: 更新 macOSCustomConfiguration 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ecebf04722cc9c3318e78d1f2a9c359c81e05b5f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 26116953f511f5c5dd9b61c710328e1c7d09e38e
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59110667"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449697"
 ---
 # <a name="update-macoscustomconfiguration"></a>更新 macOSCustomConfiguration
 
@@ -106,7 +106,6 @@ Content-Length: 453
   "payload": "cGF5bG9hZA=="
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: 列出 windowsDefenderAdvancedThreatProtectionConfigurations
 description: 列出 windowsDefenderAdvancedThreatProtectionConfiguration 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: aba119456fce23563b249abfae4b164c1b0092f0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: dde044430267ec8ac3007b3c8fe75a67bc74766e
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019956"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457216"
 ---
 # <a name="list-windowsdefenderadvancedthreatprotectionconfigurations"></a>列出 windowsDefenderAdvancedThreatProtectionConfigurations
 
@@ -81,7 +81,6 @@ Content-Length: 508
   ]
 }
 ```
-
 
 
 

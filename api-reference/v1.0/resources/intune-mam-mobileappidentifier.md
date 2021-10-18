@@ -2,15 +2,15 @@
 title: mobileAppIdentifier 资源类型
 description: 移动应用的标识符。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 32af153be4ecc8f32fdf1c30115579568fa2e606
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a0441e2684b8da8b7a89ff19f64a1ec726aca47c
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59036366"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448988"
 ---
 # <a name="mobileappidentifier-resource-type"></a>mobileAppIdentifier 资源类型
 
@@ -39,7 +39,6 @@ ms.locfileid: "59036366"
   "@odata.type": "#microsoft.graph.mobileAppIdentifier"
 }
 ```
-
 
 
 

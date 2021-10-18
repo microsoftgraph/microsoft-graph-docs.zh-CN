@@ -2,15 +2,15 @@
 title: iosHomeScreenApp 资源类型
 description: 表示主屏幕上应用的图标
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a0c222eeeb8def8e127fbe8b27ee326193ebc0d8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d842896b16b8887a0663c0be23ee91c1d757bac8
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59136465"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449770"
 ---
 # <a name="ioshomescreenapp-resource-type"></a>iosHomeScreenApp 资源类型
 
@@ -46,7 +46,6 @@ ms.locfileid: "59136465"
   "bundleID": "String"
 }
 ```
-
 
 
 

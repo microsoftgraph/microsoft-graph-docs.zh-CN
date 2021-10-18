@@ -2,15 +2,15 @@
 title: windowsDefenderScanActionResult 资源类型
 description: Windows Defender 最后扫描结果
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5145b5a94358becb63f3a25e4e4a1167bd9e38c4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a087076f85cf38aef5ae081048211f22d6bb8cd5
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59055939"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454066"
 ---
 # <a name="windowsdefenderscanactionresult-resource-type"></a>windowsDefenderScanActionResult 资源类型
 
@@ -52,7 +52,6 @@ Windows Defender 最后扫描结果
   "scanType": "String"
 }
 ```
-
 
 
 

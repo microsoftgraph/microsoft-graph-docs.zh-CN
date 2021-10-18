@@ -2,15 +2,15 @@
 title: ratingAppsType 枚举类型
 description: 应用在媒体内容中分级
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fb3b4fca051577e17ce82b7df4b8158b47fbe0bc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4eec19c6f09f980a3e3ca701f8d7af2dc2caaf73
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59109008"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450732"
 ---
 # <a name="ratingappstype-enum-type"></a>ratingAppsType 枚举类型
 
@@ -28,8 +28,7 @@ ms.locfileid: "59109008"
 |agesAbove4|2|4+、年龄 4 及以上|
 |agesAbove9|3|9+、年龄 9 及以上|
 |agesAbove12|4 |12+、12 岁以下的儿童 |
-|agesAbove17|5 |17 及以上、17 岁以下的儿童|
-
+|agesAbove17|5|17 及以上、17 岁以下的儿童|
 
 
 

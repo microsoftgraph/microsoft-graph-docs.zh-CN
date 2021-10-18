@@ -2,15 +2,15 @@
 title: 更新 iosVppEBook
 description: 更新 iosVppEBook 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9f1182f66e36c80f6879349f4cb511f0da788c5e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3eb4df3c1a24325574720964fa52c0ae9f316bd1
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59114391"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446685"
 ---
 # <a name="update-iosvppebook"></a>更新 iosVppEBook
 
@@ -145,7 +145,6 @@ Content-Length: 964
   "usedLicenseCount": 0
 }
 ```
-
 
 
 

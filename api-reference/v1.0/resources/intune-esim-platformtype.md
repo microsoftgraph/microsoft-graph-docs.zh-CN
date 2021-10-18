@@ -2,15 +2,15 @@
 title: platformType 枚举类型
 description: 尚未记录
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7319cea1f943fd97a6c767d567f1825ce1037664
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f38ef7a14a1c1831a4ea57f67e670a818ef541ee
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59028910"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446973"
 ---
 # <a name="platformtype-enum-type"></a>platformType 枚举类型
 
@@ -28,11 +28,10 @@ ms.locfileid: "59028910"
 |androidForWork|2|尚未记录|
 |iOS|3|尚未记录|
 |macOS|4 |尚未记录|
-|windowsPhone81|5 |尚未记录|
+|windowsPhone81|5|尚未记录|
 |windows81AndLater|6 |尚未记录|
 |windows10AndLater|7 |尚未记录|
 |androidWorkProfile|8 |尚未记录|
-
 
 
 

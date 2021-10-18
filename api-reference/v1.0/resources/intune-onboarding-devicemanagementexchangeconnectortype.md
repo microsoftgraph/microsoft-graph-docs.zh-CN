@@ -2,15 +2,15 @@
 title: deviceManagementExchangeConnectorType 枚举类型
 description: 连接器Exchange类型。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ecedee47d9fb5f4b9bc473698cf6e6eb9066163a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9fa095b99ce9882ec72ddfa6d57decd0850dbd95
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59007059"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60445068"
 ---
 # <a name="devicemanagementexchangeconnectortype-enum-type"></a>deviceManagementExchangeConnectorType 枚举类型
 
@@ -27,7 +27,6 @@ ms.locfileid: "59007059"
 |托管|1|连接到 O365 多租户Exchange环境|
 |serviceToService|2|Intune 服务直接连接到 O365 多租户Exchange环境|
 |dedicated|3|连接到 O365 专用Exchange环境。|
-
 
 
 

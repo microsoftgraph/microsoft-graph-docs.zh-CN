@@ -1,22 +1,22 @@
 ---
 title: 'WorksheetCollection: add'
-description: .activate () 上。
+description: .activate () 。
 author: lumine2008
 ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 8f1652ecb610d4d567adac300bddfcd2f382f72d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 844be86737d786c13ea71b261a8b02edff6e5001
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59072580"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60444530"
 ---
 # <a name="worksheetcollection-add"></a>WorksheetCollection: add
 
 命名空间：microsoft.graph
 
-向工作簿添加新工作表。 工作表将添加到现有工作表的末尾。 如果要激活新添加的工作表，请对 () .activate。
+向工作簿添加新工作表。 工作表将添加到现有工作表的末尾。 如果要激活新添加的工作表，请对它调用 .activate () 。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -36,7 +36,7 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | 持有者{令牌}。必需。 |
+| Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ## <a name="request-body"></a>请求正文
@@ -48,7 +48,7 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在 `200 OK` 响应正文中返回 响应代码和 [WorkbookWorksheet](../resources/worksheet.md) 对象。
+如果成功，此方法在 `201 Created` 响应正文中返回 响应代码和 [WorkbookWorksheet](../resources/worksheet.md) 对象。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。

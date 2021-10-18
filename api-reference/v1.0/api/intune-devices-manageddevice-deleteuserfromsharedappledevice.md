@@ -2,15 +2,15 @@
 title: deleteUserFromSharedAppleDevice 操作
 description: 从共享 Apple 设备中删除用户
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 53c2e66917faba84f9ea1c9cd2a45016992c8d91
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ee0218b1db750108d6ebc61c52690ad6a72d0a14
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59029428"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457349"
 ---
 # <a name="deleteuserfromsharedappledevice-action"></a>deleteUserFromSharedAppleDevice 操作
 
@@ -80,7 +80,6 @@ Content-length: 56
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

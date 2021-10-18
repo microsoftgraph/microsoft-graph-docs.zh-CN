@@ -2,15 +2,15 @@
 title: 更新 mobileAppContentFile
 description: 更新 mobileAppContentFile 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a9c3ade78c3d42c8671be4dffaf2c900e1d59a73
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1c2977cb43d8b81272dd827f86de97e40a3eb601
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59079846"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457363"
 ---
 # <a name="update-mobileappcontentfile"></a>更新 mobileAppContentFile
 
@@ -110,7 +110,6 @@ Content-Length: 450
   "uploadState": "transientError"
 }
 ```
-
 
 
 

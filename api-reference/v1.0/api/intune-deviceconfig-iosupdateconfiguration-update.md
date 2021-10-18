@@ -2,15 +2,15 @@
 title: 更新 iosUpdateConfiguration
 description: 更新 iosUpdateConfiguration 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ffc7dca6288dfd10e2ba4d5f68ecd07d7bf15b2c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7d51f822afbc20065afd46e0b0590085fbfff91c
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59099719"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60444639"
 ---
 # <a name="update-iosupdateconfiguration"></a>更新 iosUpdateConfiguration
 
@@ -41,7 +41,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -113,7 +113,6 @@ Content-Length: 497
   "utcTimeOffsetInMinutes": 6
 }
 ```
-
 
 
 

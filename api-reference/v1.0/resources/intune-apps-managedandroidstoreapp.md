@@ -2,15 +2,15 @@
 title: managedAndroidStoreApp 资源类型
 description: 包含可以使用 Intune 应用保护策略管理的 Android 应用商店应用的属性和继承的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a4aa1015343fb5795f74f3acbbfb046156d7f960
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 26cea3d172cd8a892dd2ea602552c7590cbfae98
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59044704"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449798"
 ---
 # <a name="managedandroidstoreapp-resource-type"></a>managedAndroidStoreApp 资源类型
 
@@ -109,7 +109,6 @@ ms.locfileid: "59044704"
   }
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: keyValuePair 资源类型
 description: 用于存储自定义设置的键值对
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bd569a4d41b1d85f81cea86886a80467b9b67ea8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d5cd57d5c51875ce263215d137efb481a2aedb07
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59089443"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457384"
 ---
 # <a name="keyvaluepair-resource-type"></a>keyValuePair 资源类型
 
@@ -43,7 +43,6 @@ ms.locfileid: "59089443"
   "value": "String"
 }
 ```
-
 
 
 

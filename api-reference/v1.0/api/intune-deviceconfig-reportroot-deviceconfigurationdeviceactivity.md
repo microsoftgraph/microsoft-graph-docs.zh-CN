@@ -2,15 +2,15 @@
 title: deviceConfigurationDeviceActivity 函数
 description: 设备配置设备活动报告的元数据
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 668156942398bec27681df0b19965e5c4ed57d19
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a6f03de9b558aa4f50530ba406be144435a8922c
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59073287"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60453406"
 ---
 # <a name="deviceconfigurationdeviceactivity-function"></a>deviceConfigurationDeviceActivity 函数
 
@@ -72,7 +72,6 @@ Content-Length: 136
   }
 }
 ```
-
 
 
 

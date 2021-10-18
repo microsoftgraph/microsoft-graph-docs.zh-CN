@@ -2,15 +2,15 @@
 title: managedApp 资源类型
 description: 包含可以使用 Intune 应用保护策略管理的应用的属性和继承属性的抽象类。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 67271f3b89f93d3c52068cd11131e7eb8f8e2691
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fa34666caf020b8dfe313aa09ce0bfc5b481f3b7
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59118514"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60452009"
 ---
 # <a name="managedapp-resource-type"></a>managedApp 资源类型
 
@@ -88,7 +88,6 @@ ms.locfileid: "59118514"
   "version": "String"
 }
 ```
-
 
 
 

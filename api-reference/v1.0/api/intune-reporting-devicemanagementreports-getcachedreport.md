@@ -2,15 +2,15 @@
 title: getCachedReport 操作
 description: 尚未记录
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 46c8ec8d0fd7db59e3bf3c60d306b4b93bde4d3e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4f8059fe9ede23cd749a515c21b24a47e15af3d0
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59079517"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457517"
 ---
 # <a name="getcachedreport-action"></a>getCachedReport 操作
 
@@ -102,7 +102,6 @@ Content-Length: 79
   "value": "Z2V0Q2FjaGVkUmVwb3J0IEludHVuZSBEb2MgU2FtcGxlIDc5MjIxODQ3OA=="
 }
 ```
-
 
 
 

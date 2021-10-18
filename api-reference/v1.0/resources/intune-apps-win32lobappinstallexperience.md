@@ -2,15 +2,15 @@
 title: win32LobAppInstallExperience 资源类型
 description: 包含 Win32 应用的安装体验属性
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5368719e9b8795eb5473ccf8dc7af355eedc3ddf
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b1b16148f0a2c61525c58d459709115d99d79c2e
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59044690"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448027"
 ---
 # <a name="win32lobappinstallexperience-resource-type"></a>win32LobAppInstallExperience 资源类型
 
@@ -43,7 +43,6 @@ ms.locfileid: "59044690"
   "deviceRestartBehavior": "String"
 }
 ```
-
 
 
 

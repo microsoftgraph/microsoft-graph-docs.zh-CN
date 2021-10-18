@@ -2,15 +2,15 @@
 title: 创建 mobileAppAssignment
 description: 创建新的 mobileAppAssignment 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 18d4190b885b33137195f90a8e1c3434719a2dec
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d29a4f13fea181721478ae17d79242131eee08f8
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59016475"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454873"
 ---
 # <a name="create-mobileappassignment"></a>创建 mobileAppAssignment
 
@@ -103,7 +103,6 @@ Content-Length: 373
   }
 }
 ```
-
 
 
 

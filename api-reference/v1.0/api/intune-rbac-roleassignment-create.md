@@ -2,15 +2,15 @@
 title: 创建 roleAssignment
 description: 创建新的 roleAssignment 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d7d8918805b0443e3ddcfecfc1c7d0712a69ed01
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a08f908b6e6c2bd018112a1095be389f2cca5022
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59079573"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457047"
 ---
 # <a name="create-roleassignment"></a>创建 roleAssignment
 
@@ -97,7 +97,6 @@ Content-Length: 242
   ]
 }
 ```
-
 
 
 

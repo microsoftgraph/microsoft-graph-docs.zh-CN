@@ -2,15 +2,15 @@
 title: windowsDeliveryOptimizationMode 枚举类型
 description: 对等分发的传递优化模式
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c720a9208f948e8a594b42df00119e5f3e45ded0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1591959c45abcbf71f20f1e8f910d9d7d499efac
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59055959"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454171"
 ---
 # <a name="windowsdeliveryoptimizationmode-enum-type"></a>windowsDeliveryOptimizationMode 枚举类型
 
@@ -30,7 +30,6 @@ ms.locfileid: "59055959"
 |httpWithInternetPeering|4 |HTTP 与 Internet 对等混合|
 |simpleDownload|99|无对等的简单下载模式|
 |bypassMode|100|绕过模式。 请勿使用传递优化并改为使用 BITS|
-
 
 
 

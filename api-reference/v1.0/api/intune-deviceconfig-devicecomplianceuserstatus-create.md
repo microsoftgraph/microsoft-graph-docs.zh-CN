@@ -2,15 +2,15 @@
 title: 创建 deviceComplianceUserStatus
 description: 创建新的 deviceComplianceUserStatus 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5136d4f2cf1cd7477d89af42e36781e96fb81414
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 89db48b49c883b79b512ab77a6399310cce12999
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59045341"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446103"
 ---
 # <a name="create-devicecomplianceuserstatus"></a>创建 deviceComplianceUserStatus
 
@@ -99,7 +99,6 @@ Content-Length: 336
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

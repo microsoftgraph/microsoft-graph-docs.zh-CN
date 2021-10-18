@@ -2,15 +2,15 @@
 title: 更新 macOSOfficeSuiteApp
 description: 更新 macOSOfficeSuiteApp 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1f40d16af14ef467c747ebf649bb8b373f6bd463
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4ece22735093100bbf47455770cbc058c59757ac
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59050507"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447576"
 ---
 # <a name="update-macosofficesuiteapp"></a>更新 macOSOfficeSuiteApp
 
@@ -129,7 +129,6 @@ Content-Length: 756
   "publishingState": "processing"
 }
 ```
-
 
 
 

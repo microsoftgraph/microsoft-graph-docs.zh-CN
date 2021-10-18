@@ -2,15 +2,15 @@
 title: 删除 telecomExpenseManagementPartner
 description: 删除 telecomExpenseManagementPartner。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a717f01726aa8d44d439b5c3ceaddec799d7e90b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 942a952bf4943a126e0a0c3337b7748794f1e909
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59110429"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60441635"
 ---
 # <a name="delete-telecomexpensemanagementpartner"></a>删除 telecomExpenseManagementPartner
 
@@ -63,7 +63,6 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/telecomExpenseManagemen
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

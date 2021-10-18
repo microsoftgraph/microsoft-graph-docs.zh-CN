@@ -2,15 +2,15 @@
 title: iosUpdateConfiguration 资源类型
 description: IOS 更新配置，允许配置一周内的时间范围，用于安装 iOS 更新。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5fe00fb2d307b7188662f2166f4224974913220d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f33832b823ace9dd255a4d269c36437a4fc1f2a5
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59148121"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60452536"
 ---
 # <a name="iosupdateconfiguration-resource-type"></a>iosUpdateConfiguration 资源类型
 
@@ -81,7 +81,6 @@ IOS 更新配置，允许配置一周内的时间范围，用于安装 iOS 更�
   "utcTimeOffsetInMinutes": 1024
 }
 ```
-
 
 
 

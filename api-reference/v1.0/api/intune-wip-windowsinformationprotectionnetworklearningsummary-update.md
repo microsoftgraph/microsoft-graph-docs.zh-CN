@@ -2,15 +2,15 @@
 title: 更新 windowsInformationProtectionNetworkLearningSummary
 description: 更新 windowsInformationProtectionNetworkLearningSummary 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0d7f0923a18f3fcb035ded0edda7a3162afa8b30
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ded18fd260bf4cd9f37a7300a2a5bbd24491a5b0
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59032634"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446432"
 ---
 # <a name="update-windowsinformationprotectionnetworklearningsummary"></a>更新 windowsInformationProtectionNetworkLearningSummary
 
@@ -90,7 +90,6 @@ Content-Length: 186
   "deviceCount": 11
 }
 ```
-
 
 
 

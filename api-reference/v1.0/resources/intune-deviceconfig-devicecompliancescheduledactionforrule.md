@@ -2,15 +2,15 @@
 title: deviceComplianceScheduledActionForRule 资源类型
 description: 计划的规则操作
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d9db57c5607fc6486ed4acc4eac455e9cc241dc3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: bf4301a1f38c46a203cc583bb32e271098280698
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59072300"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60440400"
 ---
 # <a name="devicecompliancescheduledactionforrule-resource-type"></a>deviceComplianceScheduledActionForRule 资源类型
 
@@ -33,12 +33,12 @@ ms.locfileid: "59072300"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|ruleName|String|此计划操作适用的规则名称。|
+|ruleName|String|此计划操作适用的规则名称。 当前计划的操作是按策略而不是按规则创建的，因此 RuleName 始终设置为默认值 PasswordRequired。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
-|scheduledActionConfigurations|[deviceComplianceActionItem](../resources/intune-deviceconfig-devicecomplianceactionitem.md) 集合|此合规性策略的计划操作配置列表。|
+|scheduledActionConfigurations|[deviceComplianceActionItem](../resources/intune-deviceconfig-devicecomplianceactionitem.md) 集合|此合规性策略的计划操作配置列表。 合规性策略必须具有一个且只有一个阻止计划操作。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -55,7 +55,6 @@ ms.locfileid: "59072300"
   "ruleName": "String"
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: win32LobAppNotification 枚举类型
 description: 包含通知状态的值。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 429fe3202b2132a940ed364b3c1a9b200aaa2fa3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7fdc7d6227e8e86d079d4f5b188e1b92ceae2cfb
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019368"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60456535"
 ---
 # <a name="win32lobappnotification-enum-type"></a>win32LobAppNotification 枚举类型
 
@@ -26,7 +26,6 @@ ms.locfileid: "59019368"
 |showAll|0|显示所有通知。|
 |showReboot|1|只显示重启通知并禁止显示其他通知。|
 |hideAll|2|隐藏所有通知。|
-
 
 
 

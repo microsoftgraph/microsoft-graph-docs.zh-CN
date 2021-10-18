@@ -2,15 +2,15 @@
 title: 创建 windowsAutopilotDeviceIdentity
 description: 创建新的 windowsAutopilotDeviceIdentity 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 154edcd01c4cca64172f583981f2b8f513653811
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a1a2de6012d1a576b5f4c2c55e671d700313bfd0
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147260"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449833"
 ---
 # <a name="create-windowsautopilotdeviceidentity"></a>创建 windowsAutopilotDeviceIdentity
 
@@ -65,7 +65,7 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities
 |resourceName|String|资源名称。|
 |skuNumber|String|SKU 号|
 |systemFamily|String|系统系列|
-|azureActiveDirectoryDeviceId|String|AAD 设备 ID - 已弃用|
+|azureActiveDirectoryDeviceId|String|AAD设备 ID - 要弃用|
 |managedDeviceId|String|托管设备 ID|
 |displayName|String|显示名称|
 
@@ -132,7 +132,6 @@ Content-Length: 863
   "displayName": "Display Name value"
 }
 ```
-
 
 
 

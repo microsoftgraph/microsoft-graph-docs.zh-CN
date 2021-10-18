@@ -2,15 +2,15 @@
 title: deviceConfigurationDeviceStatus 资源类型
 description: 尚未记录
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 826f398f5cae55c0b01d991c1297c01411dc976c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5ace3da4a7d715255cd0c527777fe717d0c5dc07
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59148359"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454360"
 ---
 # <a name="deviceconfigurationdevicestatus-resource-type"></a>deviceConfigurationDeviceStatus 资源类型
 
@@ -65,7 +65,6 @@ ms.locfileid: "59148359"
   "userPrincipalName": "String"
 }
 ```
-
 
 
 

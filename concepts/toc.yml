@@ -163,7 +163,7 @@ items:
             href: cloud-communications-phone-number.md
           - name: 联机会议项目和权限
             href: cloud-communications-online-meeting-artifacts.md
-      - name: 合规性分数（预览版）
+      - name: 合规性
         href: compliance-concept-overview.md
       - name: 连接外部内容
         displayName: connectors

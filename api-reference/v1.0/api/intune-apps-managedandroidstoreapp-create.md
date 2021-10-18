@@ -2,15 +2,15 @@
 title: 创建 managedAndroidStoreApp
 description: 创建新的 managedAndroidStoreApp 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d8358a4308487a3c9111a87ba4a30c5b00a7f9d4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1b28d48602e1e497cebf2d3f7100ab5f7453b4aa
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59050458"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450437"
 ---
 # <a name="create-managedandroidstoreapp"></a>创建 managedAndroidStoreApp
 
@@ -168,7 +168,6 @@ Content-Length: 1228
   }
 }
 ```
-
 
 
 

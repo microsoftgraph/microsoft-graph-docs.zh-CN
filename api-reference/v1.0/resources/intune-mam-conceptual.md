@@ -5,12 +5,12 @@ author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: 4faf4c81211cf08ae6e0d823039415b3fb8b28e7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4a09cd527644f58f4389e47a23d96f812705b2d3
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59062591"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454472"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>如何通过 Microsoft Intune 保护公司的应用数据
 
@@ -61,6 +61,7 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [移动应用标识符](intune-mam-mobileappidentifier.md)
 - [代理域](intune-mam-proxieddomain.md)
 - [目标托管应用配置](intune-mam-targetedmanagedappconfiguration.md)
+- [目标托管应用组类型](intune-mam-targetedmanagedappgrouptype.md)
 - [目标托管应用程序策略分配](intune-mam-targetedmanagedapppolicyassignment.md)
 - [目标托管应用保护](intune-mam-targetedmanagedappprotection.md)
 - [用户](intune-mam-user.md)

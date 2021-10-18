@@ -2,15 +2,15 @@
 title: managedAppDataEncryptionType 枚举类型
 description: 表示对托管应用加密的应用数据的级别
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3840d0e2249225974e04017bca3e8d8c19be5c2a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7ca4e0fe6580cbc06002ff49c1d7b078c60da71f
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59118073"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446966"
 ---
 # <a name="managedappdataencryptiontype-enum-type"></a>managedAppDataEncryptionType 枚举类型
 
@@ -27,7 +27,6 @@ ms.locfileid: "59118073"
 |afterDeviceRestart|1|应用数据在设备重启时加密。|
 |whenDeviceLockedExceptOpenFiles|2|与此策略关联的应用数据在设备锁定时加密，打开的文件的数据除外|
 |whenDeviceLocked|3|与此策略关联的应用数据在设备锁定时加密|
-
 
 
 

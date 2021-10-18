@@ -2,15 +2,15 @@
 title: deviceManagementPartner 资源类型
 description: 表示与设备管理合作伙伴的连接的实体。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bb60da10b4bb2c36a4c797e725878569a2f7a0d8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4a482f0da6999eea026df9a07dc9a4d3165d417c
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59062542"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60445933"
 ---
 # <a name="devicemanagementpartner-resource-type"></a>deviceManagementPartner 资源类型
 
@@ -67,7 +67,6 @@ ms.locfileid: "59062542"
   "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

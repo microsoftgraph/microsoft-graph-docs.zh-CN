@@ -2,15 +2,15 @@
 title: deviceManagementReports 资源类型
 description: 充当所有报告功能的容器的单一实体。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 65e384a9e05fd426b960baf595c35eb21c117340
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3aa8987b3f5ad615803d287f39d9d7af6c19b6ce
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59036324"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448904"
 ---
 # <a name="devicemanagementreports-resource-type"></a>deviceManagementReports 资源类型
 
@@ -36,6 +36,7 @@ ms.locfileid: "59036324"
 |[getConfigurationPolicyNonComplianceReport 操作](../api/intune-reporting-devicemanagementreports-getconfigurationpolicynoncompliancereport.md)|Stream|尚未记录|
 |[getConfigurationSettingNonComplianceReport 操作](../api/intune-reporting-devicemanagementreports-getconfigurationsettingnoncompliancereport.md)|Stream|尚未记录|
 |[getDeviceManagementIntentSettingsReport 操作](../api/intune-reporting-devicemanagementreports-getdevicemanagementintentsettingsreport.md)|Stream|尚未记录|
+|[getDeviceManagementIntentPerSettingContributingProfiles 操作](../api/intune-reporting-devicemanagementreports-getdevicemanagementintentpersettingcontributingprofiles.md)|Stream|尚未记录|
 |[getCompliancePolicyNonComplianceSummaryReport 操作](../api/intune-reporting-devicemanagementreports-getcompliancepolicynoncompliancesummaryreport.md)|Stream|尚未记录|
 |[getCompliancePolicyNonComplianceReport 操作](../api/intune-reporting-devicemanagementreports-getcompliancepolicynoncompliancereport.md)|Stream|尚未记录|
 |[getComplianceSettingNonComplianceReport 操作](../api/intune-reporting-devicemanagementreports-getcompliancesettingnoncompliancereport.md)|Stream|尚未记录|
@@ -65,7 +66,6 @@ ms.locfileid: "59036324"
   "id": "String (identifier)"
 }
 ```
-
 
 
 

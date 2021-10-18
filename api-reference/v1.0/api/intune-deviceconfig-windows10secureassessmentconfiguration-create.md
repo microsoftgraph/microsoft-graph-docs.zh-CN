@@ -2,15 +2,15 @@
 title: 创建 windows10SecureAssessmentConfiguration
 description: 创建新的 windows10SecureAssessmentConfiguration 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9a9297437ffa619e5563041f47aaea196d9672ea
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 48951520cece99c78b009c330826f3a3cdfe3855
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59045236"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454437"
 ---
 # <a name="create-windows10secureassessmentconfiguration"></a>创建 windows10SecureAssessmentConfiguration
 
@@ -112,7 +112,6 @@ Content-Length: 531
   "allowTextSuggestion": true
 }
 ```
-
 
 
 

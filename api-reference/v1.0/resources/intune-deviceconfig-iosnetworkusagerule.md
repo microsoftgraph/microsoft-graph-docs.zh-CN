@@ -2,15 +2,15 @@
 title: iosNetworkUsageRule 资源类型
 description: 网络使用规则允许企业指定托管应用使用网络的方式，例如手机数据网络。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 31de0f61e474a9ae3501dd387972155ddcf78aab
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0e8e2cfe0626d56aeb945bd2bd3446c8f19ba039
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59118353"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60452998"
 ---
 # <a name="iosnetworkusagerule-resource-type"></a>iosNetworkUsageRule 资源类型
 
@@ -53,7 +53,6 @@ ms.locfileid: "59118353"
   "cellularDataBlocked": true
 }
 ```
-
 
 
 

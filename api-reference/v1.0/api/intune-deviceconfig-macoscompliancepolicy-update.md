@@ -2,15 +2,15 @@
 title: 更新 macOSCompliancePolicy
 description: 更新 macOSCompliancePolicy 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2cdf4fd794c8c43fff05c6a47082a096deea665c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6386f06e1323ae626f8288c41459855273c7224c
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59144103"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60455749"
 ---
 # <a name="update-macoscompliancepolicy"></a>更新 macOSCompliancePolicy
 
@@ -148,7 +148,6 @@ Content-Length: 1021
   "firewallEnableStealthMode": true
 }
 ```
-
 
 
 

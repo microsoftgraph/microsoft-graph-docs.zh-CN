@@ -2,15 +2,15 @@
 title: appLockerApplicationControlType 枚举类型
 description: AppLocker 应用程序控件类型的可能值
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a7b29aba139162b76a9694e7d65d1bcdcd815e88
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: dbd02e9add1fe098c4f52762bc9aa8902633fc37
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59136493"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457314"
 ---
 # <a name="applockerapplicationcontroltype-enum-type"></a>appLockerApplicationControlType 枚举类型
 
@@ -28,7 +28,6 @@ AppLocker 应用程序控件类型的可能值
 |auditComponentsAndStoreApps|2|审核Windows组件和存储应用。|
 |enforceComponentsStoreAppsAndSmartlocker|3|强制Windows组件、应用商店应用和智能保险箱。|
 |auditComponentsStoreAppsAndSmartlocker|4 |审核Windows组件、应用商店应用和智能保险箱。|
-
 
 
 

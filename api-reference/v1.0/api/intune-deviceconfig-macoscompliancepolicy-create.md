@@ -2,15 +2,15 @@
 title: 创建 macOSCompliancePolicy
 description: 创建新的 macOSCompliancePolicy 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3a197e7f83c8a36de3ce4f867243a759fe435334
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a5d69f9dc404af6dd1d4d371dafb3763e89f4605
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59063333"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447492"
 ---
 # <a name="create-macoscompliancepolicy"></a>创建 macOSCompliancePolicy
 
@@ -71,9 +71,9 @@ POST /deviceManagement/deviceCompliancePolicies
 |deviceThreatProtectionEnabled|Boolean|要求设备已启用设备威胁防护。|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|要求移动威胁防护最低风险级别来报告不符合情况。 可取值为：`unavailable`、`secured`、`low`、`medium`、`high`、`notSet`。|
 |storageRequireEncryption|Boolean|要求对 Mac OS 设备加密。|
-|firewallEnabled|布尔值|防火墙是否应该启用。|
-|firewallBlockAllIncoming|布尔值|对应于"阻止所有传入连接"选项。|
-|firewallEnableStealthMode|布尔值|对应于"启用隐藏模式"。|
+|firewallEnabled|Boolean|防火墙是否应该启用。|
+|firewallBlockAllIncoming|Boolean|对应于"阻止所有传入连接"选项。|
+|firewallEnableStealthMode|Boolean|对应于"启用隐藏模式"。|
 
 
 
@@ -148,7 +148,6 @@ Content-Length: 1021
   "firewallEnableStealthMode": true
 }
 ```
-
 
 
 

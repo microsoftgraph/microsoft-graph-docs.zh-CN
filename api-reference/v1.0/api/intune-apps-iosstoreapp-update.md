@@ -2,15 +2,15 @@
 title: 更新 iosStoreApp
 description: 更新 iosStoreApp 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d4f3f8129316ad730fbbaac078653aa0d3d04d62
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1608ddf93c019e6edcfe3933ab758248eaf2f003
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59016566"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447212"
 ---
 # <a name="update-iosstoreapp"></a>更新 iosStoreApp
 
@@ -167,7 +167,6 @@ Content-Length: 1218
   }
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: 创建 importedWindowsAutopilotDeviceIdentity
 description: 创建新的 importedWindowsAutopilotDeviceIdentity 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fc4f688d1750240db9aaad0efa40d236a5084038
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: addcede1e7fe5c5cb433414f88da14144cbada25
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019942"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60456599"
 ---
 # <a name="create-importedwindowsautopilotdeviceidentity"></a>创建 importedWindowsAutopilotDeviceIdentity
 
@@ -52,7 +52,7 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentities
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|对象的 GUID|
-|groupTag|String|autopilot Windows组标记。|
+|groupTag|String|autopilot 设备的组Windows标记。|
 |serialNumber|String|Windows autopilot 设备序列号。|
 |productKey|String|Windows autopilot 设备产品密钥。|
 |importId|String|autopilot 设备的Windows ID。|
@@ -117,7 +117,6 @@ Content-Length: 680
   "assignedUserPrincipalName": "Assigned User Principal Name value"
 }
 ```
-
 
 
 

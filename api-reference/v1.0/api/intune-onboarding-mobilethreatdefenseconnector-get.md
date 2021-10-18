@@ -2,15 +2,15 @@
 title: 获取 mobileThreatDefenseConnector
 description: 读取 mobileThreatDefenseConnector 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 40c47ff4734e8785dd0707c2139c3e7dd68e93e2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 60a8c703d5e6e8a48ee87262c77b1f8325ecec10
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59110422"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446742"
 ---
 # <a name="get-mobilethreatdefenseconnector"></a>获取 mobileThreatDefenseConnector
 
@@ -83,7 +83,6 @@ Content-Length: 502
   }
 }
 ```
-
 
 
 

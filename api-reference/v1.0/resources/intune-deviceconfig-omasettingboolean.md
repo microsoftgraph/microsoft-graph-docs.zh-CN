@@ -2,15 +2,15 @@
 title: omaSettingBoolean 资源类型
 description: OMA 设置布尔定义。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1be6dee838fe0e36347786841abb51c0bc554a45
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 81d1e6d08f0517aa30f4ff1200c12510cab9a39c
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59067267"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454901"
 ---
 # <a name="omasettingboolean-resource-type"></a>omaSettingBoolean 资源类型
 
@@ -50,7 +50,6 @@ OMA 设置布尔定义。
   "value": true
 }
 ```
-
 
 
 

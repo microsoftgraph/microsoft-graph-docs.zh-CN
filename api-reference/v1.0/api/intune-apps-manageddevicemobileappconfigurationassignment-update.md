@@ -2,15 +2,15 @@
 title: 更新 managedDeviceMobileAppConfigurationAssignment
 description: 更新 managedDeviceMobileAppConfigurationAssignment 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f30da602a187026776e702aa6fea033e5ae1fa97
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d0a543d59c14abf2cdf520cab1e14b82a95bff6b
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59073812"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448511"
 ---
 # <a name="update-manageddevicemobileappconfigurationassignment"></a>更新 managedDeviceMobileAppConfigurationAssignment
 
@@ -91,7 +91,6 @@ Content-Length: 228
   }
 }
 ```
-
 
 
 

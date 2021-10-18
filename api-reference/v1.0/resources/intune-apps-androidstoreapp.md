@@ -2,15 +2,15 @@
 title: androidStoreApp 资源类型
 description: 包含 Android 应用商店应用的属性和继承的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 296563fc1e33638d122805490e3397e7370bb9ed
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f6b1b70cd4a6faa9a761cbbcd169b017a65d2cca
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59089730"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60453749"
 ---
 # <a name="androidstoreapp-resource-type"></a>androidStoreApp 资源类型
 
@@ -105,7 +105,6 @@ ms.locfileid: "59089730"
   }
 }
 ```
-
 
 
 

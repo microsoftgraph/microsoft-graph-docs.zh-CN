@@ -2,15 +2,15 @@
 title: 更新 deviceAndAppManagementRoleAssignment
 description: 更新 deviceAndAppManagementRoleAssignment 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bc2496f3debbd7aea295aaf3d216a48cacc2c300
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0e2fe9d445bda4dff5364083d4e5fbe53633aa9d
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019879"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447324"
 ---
 # <a name="update-deviceandappmanagementroleassignment"></a>更新 deviceAndAppManagementRoleAssignment
 
@@ -104,7 +104,6 @@ Content-Length: 307
   ]
 }
 ```
-
 
 
 

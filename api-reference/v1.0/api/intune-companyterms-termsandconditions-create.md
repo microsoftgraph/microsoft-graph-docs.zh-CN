@@ -2,15 +2,15 @@
 title: 创建 termsAndConditions
 description: 创建新的 termsAndConditions 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ec95b7b7e3a2b20c835eb178dc09cef3c5f1b89f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7ac9001dc0df9171cda4ade944795f3f517b3355
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59140522"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60456634"
 ---
 # <a name="create-termsandconditions"></a>创建 termsAndConditions
 
@@ -106,7 +106,6 @@ Content-Length: 445
   "version": 7
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: mdmAuthority 枚举类型
 description: 移动设备管理机构。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 78d9f2e3d6b0abd663584245bf2ef85e08eb6d87
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1b0dd3db25f84a05f8346510ad143f2d1d8be797
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59072118"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449458"
 ---
 # <a name="mdmauthority-enum-type"></a>mdmAuthority 枚举类型
 
@@ -27,7 +27,6 @@ ms.locfileid: "59072118"
 |intune|1|Intune|
 |sccm|2|SCCM|
 |office365|3|Office365|
-
 
 
 

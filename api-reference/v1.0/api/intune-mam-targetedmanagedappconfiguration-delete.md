@@ -2,15 +2,15 @@
 title: 删除 targetedManagedAppConfiguration
 description: 删除 targetedManagedAppConfiguration。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 99eb24286851b40b7d2dea7f9dd8545a9d4697fe
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: bab6a87efb5f37e437ebc7e02e8a5e77a69aaf2a
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59016238"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449536"
 ---
 # <a name="delete-targetedmanagedappconfiguration"></a>删除 targetedManagedAppConfiguration
 
@@ -63,7 +63,6 @@ DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/targetedManagedAppCo
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

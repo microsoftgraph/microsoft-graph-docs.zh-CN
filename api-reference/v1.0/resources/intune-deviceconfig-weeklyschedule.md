@@ -2,15 +2,15 @@
 title: weeklySchedule 枚举类型
 description: 每周计划的可能值。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e766c2bb6b75c4a36163472e22144e47e3796af9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 03d24026215bfb119a895d702b623d6118cbac54
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59072167"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446622"
 ---
 # <a name="weeklyschedule-enum-type"></a>weeklySchedule 枚举类型
 
@@ -28,11 +28,10 @@ ms.locfileid: "59072167"
 |sunday|2|星期日。|
 |monday|3|星期一。|
 |tuesday|4 |星期二。|
-|星期三|5 |星期三。|
+|星期三|5|星期三。|
 |thursday|6 |星期四。|
 |星期五|7 |星期五。|
 |saturday|8 |星期六。|
-
 
 
 

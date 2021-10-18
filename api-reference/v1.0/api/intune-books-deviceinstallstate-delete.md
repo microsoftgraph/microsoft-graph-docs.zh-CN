@@ -2,15 +2,15 @@
 title: 删除 deviceInstallState
 description: 删除 deviceInstallState。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1d526044ca5663641b44f57413716976414a1c39
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 04643375135cddf21f85d7afca90d15908b56329
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59056359"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451813"
 ---
 # <a name="delete-deviceinstallstate"></a>删除 deviceInstallState
 
@@ -64,7 +64,6 @@ DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/managedEBooks/{manag
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

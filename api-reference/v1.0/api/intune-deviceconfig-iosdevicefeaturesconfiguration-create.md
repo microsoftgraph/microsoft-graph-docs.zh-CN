@@ -2,15 +2,15 @@
 title: 创建 iosDeviceFeaturesConfiguration
 description: 创建新的 iosDeviceFeaturesConfiguration 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6fe79cef1ebe7eb2bcfc4ccb27e253ac768d31a2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 98b112fcb3143c11565c46ad75a99c3b057b991b
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59073385"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60456289"
 ---
 # <a name="create-iosdevicefeaturesconfiguration"></a>创建 iosDeviceFeaturesConfiguration
 
@@ -222,7 +222,6 @@ Content-Length: 2160
   ]
 }
 ```
-
 
 
 

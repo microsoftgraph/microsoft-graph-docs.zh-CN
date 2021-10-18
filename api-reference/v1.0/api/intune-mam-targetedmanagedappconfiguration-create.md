@@ -2,15 +2,15 @@
 title: 创建 targetedManagedAppConfiguration
 description: 创建新的 targetedManagedAppConfiguration 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 20088579a06c31d59c7aa0d88b4ca01bf073e4f4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e676b260f7a51afc1e1cf170518b9d88626ceedd
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59016251"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60445547"
 ---
 # <a name="create-targetedmanagedappconfiguration"></a>创建 targetedManagedAppConfiguration
 
@@ -118,7 +118,6 @@ Content-Length: 560
   "isAssigned": true
 }
 ```
-
 
 
 

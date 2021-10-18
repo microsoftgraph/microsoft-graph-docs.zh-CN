@@ -2,15 +2,15 @@
 title: 获取 windowsDefenderAdvancedThreatProtectionConfiguration
 description: 读取 windowsDefenderAdvancedThreatProtectionConfiguration 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ad3eacedbdd42359a452545a997102cbb1500e2e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a1aac29404370741a9cecf0fac3f9fcdbda3355b
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019977"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446791"
 ---
 # <a name="get-windowsdefenderadvancedthreatprotectionconfiguration"></a>获取 windowsDefenderAdvancedThreatProtectionConfiguration
 
@@ -82,7 +82,6 @@ Content-Length: 476
   }
 }
 ```
-
 
 
 

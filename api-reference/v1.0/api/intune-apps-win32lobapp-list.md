@@ -2,15 +2,15 @@
 title: 列出 win32LobApps
 description: 列出 win32LobApp 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8f51b097ae455a7b4630260c0ac7cdfecb953192
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 175b15efb0ee1e9897e7d40390abfd59306a4669
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59099950"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60452585"
 ---
 # <a name="list-win32lobapps"></a>列出 win32LobApps
 
@@ -137,7 +137,6 @@ Content-Length: 2599
   ]
 }
 ```
-
 
 
 

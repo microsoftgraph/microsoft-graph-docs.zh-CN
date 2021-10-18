@@ -2,15 +2,15 @@
 title: 更新 webApp
 description: 更新 webApp 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1aa55c9182a036b382b6f1359ac5cea4bfb76de9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8671e9f4b6dd98e6216d39b2de7b430d69ac7b04
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59100013"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60452613"
 ---
 # <a name="update-webapp"></a>更新 webApp
 
@@ -41,7 +41,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -135,7 +135,6 @@ Content-Length: 817
   "useManagedBrowser": true
 }
 ```
-
 
 
 

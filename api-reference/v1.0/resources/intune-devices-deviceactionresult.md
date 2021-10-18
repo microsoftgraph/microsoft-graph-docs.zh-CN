@@ -2,15 +2,15 @@
 title: deviceActionResult 资源类型
 description: 设备操作结果
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d7ca5217159ef39d2a1914e2be2067e8e570177f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: bb5dfca79388401ac4f4bad2ed5e2ee365cb64c9
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59098788"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451421"
 ---
 # <a name="deviceactionresult-resource-type"></a>deviceActionResult 资源类型
 
@@ -47,7 +47,6 @@ ms.locfileid: "59098788"
   "lastUpdatedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

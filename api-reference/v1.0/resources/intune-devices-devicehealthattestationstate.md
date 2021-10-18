@@ -2,15 +2,15 @@
 title: deviceHealthAttestationState 资源类型
 description: 尚未记录
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f1bc9e9759ea5a0c4b98b4eee5784b3b7e6bb9cb
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a3d9b597853a22d167af8c41a7b41523163fa9a6
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59148303"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60445940"
 ---
 # <a name="devicehealthattestationstate-resource-type"></a>deviceHealthAttestationState 资源类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "59148303"
 尚未记录
 
 ## <a name="properties"></a>属性
-|属性|类型|描述|
+|属性|类型|说明|
 |:---|:---|:---|
 |lastUpdateDateTime|String|上次更新时间戳。|
 |contentNamespaceUrl|String|DHA 报告版本。 （命名空间版本）|
@@ -103,7 +103,6 @@ ms.locfileid: "59148303"
   "healthAttestationSupportedStatus": "String"
 }
 ```
-
 
 
 

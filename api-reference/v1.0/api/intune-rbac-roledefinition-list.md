@@ -2,15 +2,15 @@
 title: 列出 roleDefinitions
 description: 列出 roleDefinition 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c8bcfecd150395b8523add30a9874a9543cabc3f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 51cb2710110a74857a738d281fe92c6740f5a796
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59037570"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60445527"
 ---
 # <a name="list-roledefinitions"></a>列出 roleDefinitions
 
@@ -93,7 +93,6 @@ Content-Length: 746
   ]
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: windowsDefenderUpdateSignatures 操作
 description: 尚未记录
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b2aec874a3c1fb9d23d0c173f30e3430cefa60a6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 38c86c6ec6e1a36066309bc5562b578e620931b3
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59090346"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60453896"
 ---
 # <a name="windowsdefenderupdatesignatures-action"></a>windowsDefenderUpdateSignatures 操作
 
@@ -65,7 +65,6 @@ POST https://graph.microsoft.com/v1.0/users/{usersId}/managedDevices/{managedDev
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

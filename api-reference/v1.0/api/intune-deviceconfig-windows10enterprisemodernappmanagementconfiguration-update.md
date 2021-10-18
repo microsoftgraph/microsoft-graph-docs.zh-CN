@@ -2,15 +2,15 @@
 title: 更新 windows10EnterpriseModernAppManagementConfiguration
 description: 更新 windows10EnterpriseModernAppManagementConfiguration 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d11ccf33750c0db96c0be42bfe87a228412d76f9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 17fd911f134c97ff9727415e4790a380bff09b7a
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59105067"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446033"
 ---
 # <a name="update-windows10enterprisemodernappmanagementconfiguration"></a>更新 windows10EnterpriseModernAppManagementConfiguration
 
@@ -100,7 +100,6 @@ Content-Length: 394
   "uninstallBuiltInApps": true
 }
 ```
-
 
 
 

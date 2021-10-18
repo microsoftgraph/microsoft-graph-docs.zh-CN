@@ -2,15 +2,15 @@
 title: macOSOfficeSuiteApp 资源类型
 description: 包含 MacOS Office 套件应用的属性和继承的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5cd774c78a71adf4a743f8a5751ed8a0fae606ae
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2a4bd2e85f66ee184c86c38ddbb454cd3db3beb7
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59113691"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60453875"
 ---
 # <a name="macosofficesuiteapp-resource-type"></a>macOSOfficeSuiteApp 资源类型
 
@@ -87,7 +87,6 @@ ms.locfileid: "59113691"
   "publishingState": "String"
 }
 ```
-
 
 
 

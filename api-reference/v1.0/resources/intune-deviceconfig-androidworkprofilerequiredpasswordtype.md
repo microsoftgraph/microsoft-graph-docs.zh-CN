@@ -2,15 +2,15 @@
 title: androidWorkProfileRequiredPasswordType 枚举类型
 description: Android 工作配置文件所需的密码类型。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 20415e29b488a831d23856702f773a07276c9967
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 094babbe76ff6d395ee5ece0125cd89da15826ce
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59137530"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450234"
 ---
 # <a name="androidworkprofilerequiredpasswordtype-enum-type"></a>androidWorkProfileRequiredPasswordType 枚举类型
 
@@ -28,10 +28,9 @@ Android 工作配置文件所需的密码类型。
 |必需|2|必需。|
 |atLeastNumeric|3|至少需要数字密码。|
 |numericComplex|4 |需要数字复杂密码。|
-|atLeastAlphabetic|5 |至少需要字母密码。|
+|atLeastAlphabetic|5|至少需要字母密码。|
 |atLeastAlphanumeric|6 |至少需要字母数字密码。|
 |alphanumericWithSymbols|7 |至少包含需要符号密码的字母数字。|
-
 
 
 

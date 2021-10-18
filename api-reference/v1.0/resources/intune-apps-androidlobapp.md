@@ -2,15 +2,15 @@
 title: androidLobApp 资源类型
 description: 包含 Android 业务线应用的属性和继承的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0d01cfde3997cac56069865c1e2db518554bd3a6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 800a511730157a2627bd09858c83dd3117e7b243
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59098935"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454612"
 ---
 # <a name="androidlobapp-resource-type"></a>androidLobApp 资源类型
 
@@ -114,7 +114,6 @@ ms.locfileid: "59098935"
   "versionCode": "String"
 }
 ```
-
 
 
 

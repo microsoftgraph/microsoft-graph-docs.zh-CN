@@ -2,15 +2,15 @@
 title: 更新 deviceComplianceDeviceStatus
 description: 更新 deviceComplianceDeviceStatus 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 09f62d7ec0c260e5f8a9bebc4243acfebfdbd594
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6d8d3c0dcbcad308a1ff65f5028e3820a481bee3
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59140092"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454290"
 ---
 # <a name="update-devicecompliancedevicestatus"></a>更新 deviceComplianceDeviceStatus
 
@@ -105,7 +105,6 @@ Content-Length: 475
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

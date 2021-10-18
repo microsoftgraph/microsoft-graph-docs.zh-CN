@@ -2,15 +2,15 @@
 title: 获取 deviceManagementReports
 description: 读取 deviceManagementReports 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c490710b80b61f0cf63d0e7987839ae5c7cfe135
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d04caef5d13fea8ef70bd39ea041408bbb768096
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59079538"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449508"
 ---
 # <a name="get-devicemanagementreports"></a>获取 deviceManagementReports
 
@@ -75,7 +75,6 @@ Content-Length: 137
   }
 }
 ```
-
 
 
 

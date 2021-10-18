@@ -2,15 +2,15 @@
 title: edgeCookiePolicy 枚举类型
 description: 可能的值，用于指定允许哪些 cookie 在Microsoft Edge。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f8fa00cd00ec4bb8b74caaaee11cd4e51f9e5cd0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 77049a6b5005a47fd48b83129f39dd7cbf15ef6c
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59142731"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450479"
 ---
 # <a name="edgecookiepolicy-enum-type"></a>edgeCookiePolicy 枚举类型
 
@@ -27,7 +27,6 @@ ms.locfileid: "59142731"
 |allow|1|允许。|
 |blockThirdParty|2|仅阻止第三方 Cookie。|
 |blockAll|3|阻止所有 Cookie。|
-
 
 
 

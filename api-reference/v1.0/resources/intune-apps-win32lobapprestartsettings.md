@@ -2,15 +2,15 @@
 title: win32LobAppRestartSettings 资源类型
 description: 包含描述应用安装后重启协调的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ee93a2b24327e27f6a726c9f1e1d07888df5e5d2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3385eed1dfc741959143d0a7c6ab11645ee6afc6
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59029029"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448602"
 ---
 # <a name="win32lobapprestartsettings-resource-type"></a>win32LobAppRestartSettings 资源类型
 
@@ -45,7 +45,6 @@ ms.locfileid: "59029029"
   "restartNotificationSnoozeDurationInMinutes": 1024
 }
 ```
-
 
 
 

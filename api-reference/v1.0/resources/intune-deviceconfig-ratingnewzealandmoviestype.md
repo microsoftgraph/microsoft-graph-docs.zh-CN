@@ -2,15 +2,15 @@
 title: ratingNewZealandMoviesType 枚举类型
 description: 新西兰电影评级标签
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 66da2ed772779ceca83cf76175fa34f00c1af503
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fad41872532556e69aec87b0f4b8aab5d4cbaeaa
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59142647"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457489"
 ---
 # <a name="ratingnewzealandmoviestype-enum-type"></a>ratingNewZealandMoviesType 枚举类型
 
@@ -28,13 +28,12 @@ ms.locfileid: "59142647"
 |general|2|适用于普通受众|
 |parentalGuidance|3|PG 分类推荐家长指南|
 |到期|4 |M 分类适合成熟受众|
-|agesAbove13|5 |R13 分类仅限于 13 年及超过 13 年的人员|
+|agesAbove13|5|R13 分类仅限于 13 年及超过 13 年的人员|
 |agesAbove15|6 |R15 分类仅限于 15 年及超过 15 年的人员|
 |agesAbove16|7 |R16 分类仅限于 16 年及超过 16 年的人员|
 |agesAbove18|8 |R18 分类仅限于 18 年及超过 18 年的人员|
 |restricted|9 |R 分类仅限于特定访问群体|
 |agesAbove16Restricted|10 |RP16 分类要求 16 以下的查看者附带家长或成人|
-
 
 
 

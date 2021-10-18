@@ -2,15 +2,15 @@
 title: appleDeviceFeaturesConfigurationBase 资源类型
 description: Apple 设备功能配置的配置文件。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4c11f3ec71e2dcf72a84362e91531fa62b97a4c2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e6c4b671ad0aef214d23a816dec5770fb59430bd
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59136535"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448020"
 ---
 # <a name="appledevicefeaturesconfigurationbase-resource-type"></a>appleDeviceFeaturesConfigurationBase 资源类型
 
@@ -68,7 +68,6 @@ Apple 设备功能配置的配置文件。
   "version": 1024
 }
 ```
-
 
 
 
