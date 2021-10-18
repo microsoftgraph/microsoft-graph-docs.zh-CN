@@ -2,15 +2,15 @@
 title: 获取 deviceManagementPartner
 description: 读取 deviceManagementPartner 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d4e9b05b3d4653735cc9923c389c1d5c96bece5a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6d47cd9df9368e609d072df0c2af8a69a46955c3
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59119427"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451554"
 ---
 # <a name="get-devicemanagementpartner"></a>获取 deviceManagementPartner
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceManagementPartners/{deviceManagementPartnerId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -83,7 +83,6 @@ Content-Length: 590
   }
 }
 ```
-
 
 
 

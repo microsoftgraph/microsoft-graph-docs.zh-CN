@@ -2,15 +2,15 @@
 title: windowsUpdateForBusinessConfiguration 资源类型
 description: 适用于企业的 Windows 更新配置。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f39c094e3e7ddd21c09dd5b88541c15e913b264c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6ecd5efd6946d1b2c967bc43ade66ec37bb91fc5
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59108959"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450043"
 ---
 # <a name="windowsupdateforbusinessconfiguration-resource-type"></a>windowsUpdateForBusinessConfiguration 资源类型
 
@@ -101,7 +101,6 @@ ms.locfileid: "59108959"
   "businessReadyUpdatesOnly": "String"
 }
 ```
-
 
 
 

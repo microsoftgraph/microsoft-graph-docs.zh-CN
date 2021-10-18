@@ -2,15 +2,15 @@
 title: 创建 mobileThreatDefenseConnector
 description: 创建新的 mobileThreatDefenseConnector 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 64ca480fbf1057a96af8546ed60192f7fd20a393
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f9296605dd326e82c8ea5153055354a404f33d99
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59119406"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60452914"
 ---
 # <a name="create-mobilethreatdefenseconnector"></a>创建 mobileThreatDefenseConnector
 
@@ -41,7 +41,7 @@ POST /deviceManagement/mobileThreatDefenseConnectors
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -108,7 +108,6 @@ Content-Length: 463
   "partnerUnresponsivenessThresholdInDays": 6
 }
 ```
-
 
 
 

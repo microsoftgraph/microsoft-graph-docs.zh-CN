@@ -2,15 +2,15 @@
 title: 创建 windowsPhone81CustomConfiguration
 description: 创建新的 windowsPhone81CustomConfiguration 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b05dec5b1e280060869037a1974a92527126a164
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c1a00b93c3ff47f5865a850535d050b00ff0a77d
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59037654"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454262"
 ---
 # <a name="create-windowsphone81customconfiguration"></a>创建 windowsPhone81CustomConfiguration
 
@@ -114,7 +114,6 @@ Content-Length: 555
   ]
 }
 ```
-
 
 
 

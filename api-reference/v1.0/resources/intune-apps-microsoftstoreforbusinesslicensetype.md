@@ -2,15 +2,15 @@
 title: microsoftStoreForBusinessLicenseType 枚举类型
 description: 尚未记录
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c6e63ef7c465aa9d01f2eb2fe7779cff1ec2c31e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9deed076bfe538ec13ccb3d8742436a7849d86b3
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59089590"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457040"
 ---
 # <a name="microsoftstoreforbusinesslicensetype-enum-type"></a>microsoftStoreForBusinessLicenseType 枚举类型
 
@@ -25,7 +25,6 @@ ms.locfileid: "59089590"
 |:---|:---|:---|
 |offline|0|尚未记录|
 |online|1|尚未记录|
-
 
 
 

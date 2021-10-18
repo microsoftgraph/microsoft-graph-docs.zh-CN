@@ -2,15 +2,15 @@
 title: 更新 windows10TeamGeneralConfiguration
 description: 更新 windows10TeamGeneralConfiguration 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 63409eced9ad2b34c8fb74c1d566a1688e68ebb7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7ecf5ad838f1719ba9af01c4c58812c1047158d9
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147295"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447711"
 ---
 # <a name="update-windows10teamgeneralconfiguration"></a>更新 windows10TeamGeneralConfiguration
 
@@ -157,7 +157,6 @@ Content-Length: 1322
   "welcomeScreenMeetingInformation": "showOrganizerAndTimeOnly"
 }
 ```
-
 
 
 

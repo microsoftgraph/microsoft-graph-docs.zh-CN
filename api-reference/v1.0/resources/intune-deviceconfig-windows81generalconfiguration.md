@@ -2,15 +2,15 @@
 title: windows81GeneralConfiguration 资源类型
 description: 本主题提供由 windows81GeneralConfiguration 资源公开的已声明方法、属性和关系的说明。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0d611b5e54fadf581021b64013abfc3f510c9a06
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 77e4b395437b3ebe29df8601fc515548ff82c69e
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59055967"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60452522"
 ---
 # <a name="windows81generalconfiguration-resource-type"></a>windows81GeneralConfiguration 资源类型
 
@@ -137,7 +137,6 @@ ms.locfileid: "59055967"
   "workFoldersUrl": "String"
 }
 ```
-
 
 
 

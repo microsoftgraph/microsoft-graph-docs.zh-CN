@@ -2,15 +2,15 @@
 title: iosHomeScreenItem 资源类型
 description: 表示 iOS 主屏幕上的项
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3f468368e9fe0fb92727c0d6e7d2ca61dcec38dd
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d4bff1399e72339e269deec70dab147e89e8634e
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59136437"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450753"
 ---
 # <a name="ioshomescreenitem-resource-type"></a>iosHomeScreenItem 资源类型
 
@@ -41,7 +41,6 @@ ms.locfileid: "59136437"
   "displayName": "String"
 }
 ```
-
 
 
 

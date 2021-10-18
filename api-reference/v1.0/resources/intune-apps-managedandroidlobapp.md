@@ -2,15 +2,15 @@
 title: managedAndroidLobApp 资源类型
 description: 包含托管 Android 业务线应用的属性和继承的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 89557903ce134f3fb3e612e77c49b8da2b13e81e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f8fea9f471b92bd944335a571ea765fdd7fc100a
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59113684"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451210"
 ---
 # <a name="managedandroidlobapp-resource-type"></a>managedAndroidLobApp 资源类型
 
@@ -118,7 +118,6 @@ ms.locfileid: "59113684"
   "versionCode": "String"
 }
 ```
-
 
 
 

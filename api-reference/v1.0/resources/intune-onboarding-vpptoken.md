@@ -2,15 +2,15 @@
 title: vppToken 资源类型
 description: 通过 Apple Volume Purchase Program 企业版或教育版为 iOS 应用购买多个许可证。 这涉及从 Apple 网站设置 Apple VPP 帐户并将 Apple VPP 企业版 或教育版令牌上传到 Intune。 然后可以将批量采购信息与 Intune 同步，并跟踪批量采购应用的使用情况。 可上传多个 Apple VPP 企业版或教育版令牌。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d412fb0a7067601107c8bb3a2becee758c302365
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0f52e3bab37b4dd076a645d7e024762c4f80fbe4
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59072111"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60455637"
 ---
 # <a name="vpptoken-resource-type"></a>vppToken 资源类型
 
@@ -74,7 +74,6 @@ ms.locfileid: "59072111"
   "countryOrRegion": "String"
 }
 ```
-
 
 
 

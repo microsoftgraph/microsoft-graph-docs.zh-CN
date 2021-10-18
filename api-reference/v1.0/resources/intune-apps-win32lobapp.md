@@ -2,15 +2,15 @@
 title: win32LobApp 资源类型
 description: 包含 Win32 应用的属性和继承的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 928200f65cd9388b2ed8cf8091c3479e02f57ab4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6c81ebab9e915d7d55fc1dea0d5f3f94d5b37629
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59072440"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454985"
 ---
 # <a name="win32lobapp-resource-type"></a>win32LobApp 资源类型
 
@@ -29,7 +29,7 @@ ms.locfileid: "59072440"
 |[列出 win32LobApps](../api/intune-apps-win32lobapp-list.md)|[win32LobApp](../resources/intune-apps-win32lobapp.md) 集合|列出 [win32LobApp 对象的属性和](../resources/intune-apps-win32lobapp.md) 关系。|
 |[获取 win32LobApp](../api/intune-apps-win32lobapp-get.md)|[win32LobApp](../resources/intune-apps-win32lobapp.md)|读取 [win32LobApp 对象的属性和](../resources/intune-apps-win32lobapp.md) 关系。|
 |[创建 win32LobApp](../api/intune-apps-win32lobapp-create.md)|[win32LobApp](../resources/intune-apps-win32lobapp.md)|创建新的 [win32LobApp](../resources/intune-apps-win32lobapp.md) 对象。|
-|[删除 win32LobApp](../api/intune-apps-win32lobapp-delete.md)|None|删除 [win32LobApp](../resources/intune-apps-win32lobapp.md)。|
+|[删除 win32LobApp](../api/intune-apps-win32lobapp-delete.md)|无|删除 [win32LobApp](../resources/intune-apps-win32lobapp.md)。|
 |[更新 win32LobApp](../api/intune-apps-win32lobapp-update.md)|[win32LobApp](../resources/intune-apps-win32lobapp.md)|更新 [win32LobApp 对象](../resources/intune-apps-win32lobapp.md) 的属性。|
 
 ## <a name="properties"></a>属性
@@ -150,7 +150,6 @@ ms.locfileid: "59072440"
   "minimumSupportedWindowsRelease": "String"
 }
 ```
-
 
 
 

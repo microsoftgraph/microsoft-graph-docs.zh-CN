@@ -2,15 +2,15 @@
 title: 删除 managedMobileApp
 description: 删除 managedMobileApp。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ef0111f36b0ecc7825fe705034d6c565417ce94c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c692e9190a4d8ac76de53d2b47aaa90e51331848
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59073098"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457594"
 ---
 # <a name="delete-managedmobileapp"></a>删除 managedMobileApp
 
@@ -66,7 +66,6 @@ DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/iosManagedAppProtect
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

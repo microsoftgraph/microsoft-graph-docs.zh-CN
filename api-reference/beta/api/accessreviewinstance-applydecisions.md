@@ -2,15 +2,15 @@
 title: accessReviewInstance：applyDecisions
 description: 对 accessReviewInstance 应用决策。
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: cb3d91137753ae3383bdaea2700a6664f8b48356
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 9bdd28e57dfc2a9f5071e33d5d3604a205060059
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439224"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60440050"
 ---
 # <a name="accessreviewinstance-applydecisions"></a>accessReviewInstance：applyDecisions
 
@@ -18,18 +18,18 @@ ms.locfileid: "50439224"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-对 [accessReviewInstance](../resources/accessreviewinstance.md)应用审阅决策。
+如果由于 autoApplyDecisionsEnabled 属性位于审阅的 accessReviewScheduleSettings 中而未自动应用决策，则对 [accessReviewInstance](../resources/accessreviewinstance.md) 应用审阅 `false` [决策](../resources/accessreviewschedulesettings.md)。
 
-请注意，如果 autoApplyDecisionsEnabled 参数在审阅的 [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)中为 True，将自动应用决策。
+accessReviewInstance 的状态必须为 `Completed` ，以调用此方法。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | AccessReview.ReadWrite.All |
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application                            | AccessReview.ReadWrite.All |
+|应用程序                            | AccessReview.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

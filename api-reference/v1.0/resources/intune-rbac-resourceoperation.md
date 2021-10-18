@@ -1,16 +1,16 @@
 ---
 title: resourceOperation 资源类型
-description: 介绍 Microsoft Graph (API (REST (的 resourceOperation) 实体) ，它支持与基于角色的访问控制 (RBAC) 相关的 Intune 工作流。
+description: 介绍 Microsoft Graph API (REST) 的 resourceOperation () 实体) ，它支持与基于角色的访问控制 (RBAC) 相关的 Intune 工作流。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5ea5d6dfa4847877cbad6036c774e1e8c9d5385b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 80a57a4fccb367813b95c31aa47c2038e5281964
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59028875"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446714"
 ---
 # <a name="resourceoperation-resource-type"></a>resourceOperation 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "59028875"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-介绍 Microsoft Graph (API (REST (的 resourceOperation) 实体) ，它支持与基于角色的访问控制 (RBAC) 相关的 Intune 工作流。
+介绍 Microsoft Graph API (REST) 的 resourceOperation () 实体) ，它支持与基于角色的访问控制 (RBAC) 相关的 Intune 工作流。
 
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
@@ -57,7 +57,6 @@ ms.locfileid: "59028875"
   "description": "String"
 }
 ```
-
 
 
 

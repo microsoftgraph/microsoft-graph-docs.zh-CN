@@ -2,15 +2,15 @@
 title: 创建 androidCompliancePolicy
 description: 创建新的 androidCompliancePolicy 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c92d67f6f181c82994e9bb5a2f176e1f17a72346
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c9a7190d50e2181d0aadf85ef19cd09d71c946e0
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59016370"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60445905"
 ---
 # <a name="create-androidcompliancepolicy"></a>创建 androidCompliancePolicy
 
@@ -160,7 +160,6 @@ Content-Length: 1331
   "securityRequireCompanyPortalAppIntegrity": true
 }
 ```
-
 
 
 

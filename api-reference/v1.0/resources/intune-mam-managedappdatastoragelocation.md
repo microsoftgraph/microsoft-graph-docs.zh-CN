@@ -2,15 +2,15 @@
 title: managedAppDataStorageLocation 枚举类型
 description: 存储托管应用可能存储其数据的位置
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: bbac7a10cb099f7bd1827cf74d8cee8f6de7ea5e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e26c4abf2e8299ff37dba38ba6e392d15433ffaa
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59142640"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60455286"
 ---
 # <a name="managedappdatastoragelocation-enum-type"></a>managedAppDataStorageLocation 枚举类型
 
@@ -27,7 +27,6 @@ ms.locfileid: "59142640"
 |sharePoint|2|SharePoint|
 |box|3|盒状|
 |localStorage|6 |设备上的本地存储|
-
 
 
 

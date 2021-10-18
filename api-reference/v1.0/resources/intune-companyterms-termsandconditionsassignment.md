@@ -2,15 +2,15 @@
 title: termsAndConditionsAssignment 资源类型
 description: termsAndConditionsAssignment 实体表示对给定组的给定条款和条件 (T & C) 策略的分配。 组中的用户需要接受这些条款，才能将设备注册到 Intune。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 79845e5c3c68f2e540b12bdf92fc81756c8e7189
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 91303c362407807c5a943fc50e70ab7764eb6af7
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59007051"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60453721"
 ---
 # <a name="termsandconditionsassignment-resource-type"></a>termsAndConditionsAssignment 资源类型
 
@@ -56,7 +56,6 @@ termsAndConditionsAssignment 实体表示对给定组的给定条款和条件 (T
   }
 }
 ```
-
 
 
 

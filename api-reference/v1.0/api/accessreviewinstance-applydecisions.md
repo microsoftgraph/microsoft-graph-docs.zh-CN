@@ -5,19 +5,20 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: afe64d30ddd4e637aeb43a15195b0f1e627a79ec
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 66cfeb5aecbb8ee8525eb97316d7a2afb6202d6a
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59038655"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446173"
 ---
 # <a name="accessreviewinstance-applydecisions"></a>accessReviewInstance：applyDecisions
 命名空间：microsoft.graph
 
-将审阅决策应用于 [accessReviewInstance 中审阅的资源](../resources/accessreviewinstance.md)。
+如果由于 autoApplyDecisionsEnabled 属性位于审阅的 accessReviewScheduleSettings 中而未自动应用决策，则对 [accessReviewInstance](../resources/accessreviewinstance.md) 应用审阅 `false` [决策](../resources/accessreviewschedulesettings.md)。
 
-如果 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md)的 **settings** 参数的 **autoApplyDecisionsEnabled** 为 ，则自动应用决策 `true` 。
+
+accessReviewInstance 的状态必须为 `Completed` ，以调用此方法。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

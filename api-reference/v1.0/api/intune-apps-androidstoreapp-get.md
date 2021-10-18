@@ -2,15 +2,15 @@
 title: 获取 androidStoreApp
 description: 读取 androidStoreApp 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c7d5622d9580d92d35563eb5a8a2ee911e4ae1bb
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fa3f89af3588e18018a04c76f5fe82b8aca82393
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147344"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450170"
 ---
 # <a name="get-androidstoreapp"></a>获取 androidStoreApp
 
@@ -107,7 +107,6 @@ Content-Length: 1237
   }
 }
 ```
-
 
 
 

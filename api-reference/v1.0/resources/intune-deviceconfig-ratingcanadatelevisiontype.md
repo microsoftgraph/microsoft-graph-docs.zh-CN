@@ -2,15 +2,15 @@
 title: ratingCanadaTelevisionType 枚举类型
 description: 加拿大电视内容分级标签
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a15ac009939691dcfe927300fd6e6efb0d0bcd39
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4d4afaa749009c7399c512e624995a0ba650cd67
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59052991"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457118"
 ---
 # <a name="ratingcanadatelevisiontype-enum-type"></a>ratingCanadaTelevisionType 枚举类型
 
@@ -28,10 +28,9 @@ ms.locfileid: "59052991"
 |children|2|C 分类适用于 2 到 7 年年龄的子级|
 |childrenAbove8|3|C8 分类适用于 8 及以上年龄的子级|
 |general|4 |G 分类适用于普通受众|
-|parentalGuidance|5 |PG，家长指南|
+|parentalGuidance|5|PG，家长指南|
 |agesAbove14|6 |14+ 分类适用于 14 和 14 岁年龄的查看者|
 |agesAbove18|7 |18+ 分类适用于 18 和 18 岁年龄的查看者|
-
 
 
 

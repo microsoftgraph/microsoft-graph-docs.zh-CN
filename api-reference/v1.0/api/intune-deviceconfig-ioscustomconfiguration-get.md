@@ -2,15 +2,15 @@
 title: 获取 iosCustomConfiguration
 description: 读取 iosCustomConfiguration 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8cfb7c0290f9d34798cd1e6b08ad710298b1914a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c1f05243c08e940248caf19159671a7e829e8aa5
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59063347"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447732"
 ---
 # <a name="get-ioscustomconfiguration"></a>获取 iosCustomConfiguration
 
@@ -83,7 +83,6 @@ Content-Length: 490
   }
 }
 ```
-
 
 
 

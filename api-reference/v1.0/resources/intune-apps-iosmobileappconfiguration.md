@@ -2,15 +2,15 @@
 title: iosMobileAppConfiguration 资源类型
 description: 包含 iOS 移动应用配置的属性、继承属性和操作。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c9d1db256f2b7943536d42bf8c752da1fcfc2cdf
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 780d0cb47b2a9690479b219e72b139e6bac8318c
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59098921"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454248"
 ---
 # <a name="iosmobileappconfiguration-resource-type"></a>iosMobileAppConfiguration 资源类型
 
@@ -85,7 +85,6 @@ ms.locfileid: "59098921"
   ]
 }
 ```
-
 
 
 

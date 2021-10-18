@@ -2,15 +2,15 @@
 title: webApp 资源类型
 description: 包含 Web 应用的属性和继承的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4954f53f92e74bc0456384c9c066b28c98c179a3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e5aed7272f94d87008188ed265efb3792197ab5c
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59072461"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60455223"
 ---
 # <a name="webapp-resource-type"></a>webApp 资源类型
 
@@ -91,7 +91,6 @@ ms.locfileid: "59072461"
   "useManagedBrowser": true
 }
 ```
-
 
 
 

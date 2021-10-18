@@ -2,15 +2,15 @@
 title: 更新 mobileAppAssignment
 description: 更新 mobileAppAssignment 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ab8d5e0e06574e91ad76400474e524c702775cd2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3c4240970d479429cd868f578825524a303663d9
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59080007"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448722"
 ---
 # <a name="update-mobileappassignment"></a>更新 mobileAppAssignment
 
@@ -103,7 +103,6 @@ Content-Length: 373
   }
 }
 ```
-
 
 
 

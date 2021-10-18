@@ -2,15 +2,15 @@
 title: 更新 iosCompliancePolicy
 description: 更新 iosCompliancePolicy 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3e533bdaa12450275664f26e8e03b7648013e847
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: afc13b00eca33e38768c9cd213bd8c76faff4a53
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59022231"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447761"
 ---
 # <a name="update-ioscompliancepolicy"></a>更新 iosCompliancePolicy
 
@@ -139,7 +139,6 @@ Content-Length: 917
   "managedEmailProfileRequired": true
 }
 ```
-
 
 
 

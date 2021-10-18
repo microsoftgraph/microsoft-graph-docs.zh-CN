@@ -2,15 +2,15 @@
 title: 更新 deviceCategory
 description: 更新 deviceCategory 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b65c20f3d4a5afe4b34f6d709030f87f355be354
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 760f9ba26ce52019d34d5fd6becaba70346f88be
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59146889"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60453770"
 ---
 # <a name="update-devicecategory"></a>更新 deviceCategory
 
@@ -90,7 +90,6 @@ Content-Length: 184
   "description": "Description value"
 }
 ```
-
 
 
 

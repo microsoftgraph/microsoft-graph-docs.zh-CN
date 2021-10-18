@@ -2,15 +2,15 @@
 title: telecomExpenseManagementPartner 资源类型
 description: telecomExpenseManagementPartner 资源表示给定 TEM 服务的元数据和状态。 组织通过合作伙伴载入后，即可允许或禁止合作伙伴打开或关闭 TEM 功能。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8d083e9bd92cae588fdde7c29ac58c35e40a6bd2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5343f13a83b2d7403410d5dfe7dae62277ddef5e
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59021559"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60444789"
 ---
 # <a name="telecomexpensemanagementpartner-resource-type"></a>telecomExpenseManagementPartner 资源类型
 
@@ -61,7 +61,6 @@ telecomExpenseManagementPartner 资源表示给定 TEM 服务的元数据和状�
   "lastConnectionDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

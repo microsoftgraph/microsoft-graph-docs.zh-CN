@@ -2,15 +2,15 @@
 title: 更新 androidWorkProfileGeneralDeviceConfiguration
 description: 更新 androidWorkProfileGeneralDeviceConfiguration 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 95e0f23c4088302822fa28516fa0db54a0440b78
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: bf7d0a98de593d785fbf1af670bdc1b209771085
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59026537"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447922"
 ---
 # <a name="update-androidworkprofilegeneraldeviceconfiguration"></a>更新 androidWorkProfileGeneralDeviceConfiguration
 
@@ -65,18 +65,18 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |passwordPreviousPasswordBlockCount|Int32|要阻止的以前密码的数量。 有效值为 0 至 24|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|恢复出厂设置之前允许登录失败的次数。 有效值为 1 到 16|
 |passwordRequiredType|[androidWorkProfileRequiredPasswordType](../resources/intune-deviceconfig-androidworkprofilerequiredpasswordtype.md)|必需的密码类型。 可取值为：`deviceDefault`、`lowSecurityBiometric`、`required`、`atLeastNumeric`、`numericComplex`、`atLeastAlphabetic`、`atLeastAlphanumeric`、`alphanumericWithSymbols`。|
-|workProfileDataSharingType|[androidWorkProfileCrossProfileDataSharingType](../resources/intune-deviceconfig-androidworkprofilecrossprofiledatasharingtype.md)|允许的数据共享类型。 可取值为：`deviceDefault`、`preventAny`、`allowPersonalToWork`、`noRestrictions`。|
+|workProfileDataSharingType|[androidWorkProfileCrossProfileDataSharingType](../resources/intune-deviceconfig-androidworkprofilecrossprofiledatasharingtype.md)|允许的数据共享类型。 可能的值是：`deviceDefault`、`preventAny`、`allowPersonalToWork`、`noRestrictions`。|
 |workProfileBlockNotificationsWhileDeviceLocked|Boolean|指示设备锁定时是否阻止通知。|
-|workProfileBlockAddingAccounts|布尔值|阻止用户在工作配置文件中添加/删除帐户。|
-|workProfileBluetoothEnableContactSharing|布尔值|允许蓝牙设备访问企业联系人。|
+|workProfileBlockAddingAccounts|Boolean|阻止用户在工作配置文件中添加/删除帐户。|
+|workProfileBluetoothEnableContactSharing|Boolean|允许蓝牙设备访问企业联系人。|
 |workProfileBlockScreenCapture|Boolean|阻止工作配置文件中的屏幕捕获。|
 |workProfileBlockCrossProfileCallerId|Boolean|阻止在个人配置文件中显示工作配置文件调用方 ID。|
 |workProfileBlockCamera|Boolean|阻止工作配置文件相机。|
-|workProfileBlockCrossProfileContactsSearch|布尔值|阻止工作配置文件联系人在个人配置文件中的可用性。|
-|workProfileBlockCrossProfileCopyPaste|布尔值|指示设置是否禁用跨配置文件复制/粘贴的布尔值。|
-|workProfileDefaultAppPermissionPolicy|[androidWorkProfileDefaultAppPermissionPolicyType](../resources/intune-deviceconfig-androidworkprofiledefaultapppermissionpolicytype.md)|必需的密码类型。 可取值为：`deviceDefault`、`prompt`、`autoGrant`、`autoDeny`。|
+|workProfileBlockCrossProfileContactsSearch|Boolean|阻止工作配置文件联系人在个人配置文件中的可用性。|
+|workProfileBlockCrossProfileCopyPaste|Boolean|指示设置是否禁用跨配置文件复制/粘贴的布尔值。|
+|workProfileDefaultAppPermissionPolicy|[androidWorkProfileDefaultAppPermissionPolicyType](../resources/intune-deviceconfig-androidworkprofiledefaultapppermissionpolicytype.md)|必需的密码类型。 可能的值是：`deviceDefault`、`prompt`、`autoGrant`、`autoDeny`。|
 |workProfilePasswordBlockFingerprintUnlock|Boolean|指示是否阻止工作配置文件的指纹解锁。|
-|workProfilePasswordBlockTrustAgents|布尔值|指示是否阻止工作配置文件的智能锁定和其他信任代理。|
+|workProfilePasswordBlockTrustAgents|Boolean|指示是否阻止工作配置文件的智能锁定和其他信任代理。|
 |workProfilePasswordExpirationDays|Int32|工作配置文件密码过期前的天数。 有效值为 1 至 365。|
 |workProfilePasswordMinimumLength|Int32|工作配置文件密码的最小长度。 有效值为 4 至 16|
 |workProfilePasswordMinNumericCharacters|Int32|工作配置文件密码中所需的数字字符的最小值。 有效值为 1 到 10|
@@ -89,7 +89,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |workProfilePasswordPreviousPasswordBlockCount|Int32|要阻止的以前工作配置文件密码的数量。 有效值为 0 至 24|
 |workProfilePasswordSignInFailureCountBeforeFactoryReset|Int32|在删除工作配置文件和删除所有公司数据之前允许的登录失败次数。 有效值为 1 到 16|
 |workProfilePasswordRequiredType|[androidWorkProfileRequiredPasswordType](../resources/intune-deviceconfig-androidworkprofilerequiredpasswordtype.md)|所需的工作配置文件密码类型。 可取值为：`deviceDefault`、`lowSecurityBiometric`、`required`、`atLeastNumeric`、`numericComplex`、`atLeastAlphabetic`、`atLeastAlphanumeric`、`alphanumericWithSymbols`。|
-|workProfileRequirePassword|布尔值|工作配置文件中是否要求密码|
+|workProfileRequirePassword|Boolean|工作配置文件中是否要求密码|
 |securityRequireVerifyApps|Boolean|要求启用 Android 验证应用功能。|
 
 
@@ -199,7 +199,6 @@ Content-Length: 2003
   "securityRequireVerifyApps": true
 }
 ```
-
 
 
 

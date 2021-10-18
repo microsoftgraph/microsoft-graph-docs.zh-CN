@@ -2,15 +2,15 @@
 title: actionState 枚举类型
 description: 设备上操作的状态
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 60fd98273344253ee916b2a3d06bcde7965067d1
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 11f4c3fd8e310351cc09ab853a4eea7ee65961e6
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59148310"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449017"
 ---
 # <a name="actionstate-enum-type"></a>actionState 枚举类型
 
@@ -28,9 +28,8 @@ ms.locfileid: "59148310"
 |canceled|2|操作已取消。|
 |active|3|操作处于活动状态。|
 |done|4 |操作已完成，没有错误。|
-|failed|5 |操作失败|
+|failed|5|操作失败|
 |notSupported|6 |不支持操作。|
-
 
 
 

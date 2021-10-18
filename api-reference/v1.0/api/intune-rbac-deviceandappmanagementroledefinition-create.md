@@ -2,15 +2,15 @@
 title: 创建 deviceAndAppManagementRoleDefinition
 description: 创建新的 deviceAndAppManagementRoleDefinition 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1063ea0bd76a1e4e22b06e9473f8ae4cf2212782
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6cced8045cf548d4aed973f027286854d4e3038f
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019872"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447317"
 ---
 # <a name="create-deviceandappmanagementroledefinition"></a>创建 deviceAndAppManagementRoleDefinition
 
@@ -126,7 +126,6 @@ Content-Length: 651
   "isBuiltIn": true
 }
 ```
-
 
 
 

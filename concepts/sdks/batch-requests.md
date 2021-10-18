@@ -3,19 +3,19 @@ title: 使用 Microsoft Graph SDK 批处理请求
 description: 提供有关使用 Microsoft SDK 创建一批 API Graph的说明。
 ms.localizationpriority: medium
 author: DarrelMiller
-ms.openlocfilehash: a8a1d2b7e4d214edbdef2424539030ab52d46442
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 222200851b3b6d5a1b85e49a1af741e5dbb1a809
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59129724"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451953"
 ---
 # <a name="use-the-microsoft-graph-sdks-to-batch-requests"></a>使用 Microsoft Graph SDK 批处理请求
 
 [批处理](../json-batching.md) 是一种将多个请求合并到单个 HTTP 请求中的方法。 请求组合在单个 JSON 有效负载中，该负载通过 POST 发送到 `\$batch` 终结点。 Microsoft Graph SDK 具有一组类，用于简化如何创建批处理有效负载和分析批处理响应有效负载。
 
 > [!IMPORTANT]
-> 有关 Microsoft Graph 中 JSON 批处理的当前限制，请参阅[已知问题](../known-issues.md#json-batching)。
+> 有关 Microsoft Graph JSON 批处理的当前限制，请参阅[已知问题](../known-issues.md#json-batching)。
 
 ## <a name="create-a-batch-request"></a>创建批处理请求
 
@@ -23,7 +23,7 @@ Microsoft Graph SDK 提供了三个类，用于处理批处理请求和响应。
 
 - **BatchRequestStep** - 表示单个请求 (，) `GET /me` 批处理中的请求。 它支持为请求分配唯一标识符并指定请求之间的依赖关系。
 - **BatchRequestContent** - 简化批处理请求有效负载的创建。 它包含多个 **BatchRequestStep** 对象。
-- **BatchResponseContent** - 简化分析来自批处理请求的响应。 它提供获取所有响应、按 ID 获取特定响应以及获取 `@odata.nextLink` 属性（如果存在）的能力。
+- **BatchResponseContent** - 简化了分析来自批处理请求的响应。 它提供获取所有响应、按 ID 获取特定响应以及获取 `@odata.nextLink` 属性（如果存在）的能力。
 
 ## <a name="simple-batching-example"></a>简单批处理示例
 
@@ -439,5 +439,95 @@ final EventCollectionResponse events = batchResponseContent.getResponseById(cale
 System.out.println(String.format("You have %d events on your calendar today", events.value.size()));
 ```
 
+---
+
+## <a name="implementing-batching-using-batchrequestcontent-batchrequeststep-and-httprequestmessage"></a>使用 BatchRequestContent、BatchRequestStep 和 HttpRequestMessage 实现批处理
+
+以下示例演示如何使用 、 和 在批处理中发送多个请求，以及如何使用 Microsoft Graph API 请求处理 `BatchRequestContent` `BatchRequestStep` `HttpRequestMessage` 20 的限制。 此示例使用指定用户 ID 的 `onlineMeetings/createOrGet` 终结点创建会议链接。 也可以将此示例与其他 Microsoft Graph终结点一同使用。
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Text;
+using System.Threading.Tasks;
+using Microsoft.Graph;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+
+public async void GenerateBatchedMeetingLink(List<ItemCollections> meetingLinksToBeGenerated)
+        {            
+            List<string> _joinWebUrls = new List<string>();
+            //Total number of items per batch supported is 20
+            int maxNoBatchItems = 20;
+            try
+            {
+                //valid GraphAccessToken is required to execute the call
+                var graphClient = GetAuthenticatedClient(GraphAccessToken);
+                var events = new List<OnlineMeetingCreateOrGetRequestBody>();
+                foreach (var item in meetingLinksToBeGenerated)
+                {
+                    var externalId = Guid.NewGuid().ToString();
+                    var @event = new OnlineMeetingCreateOrGetRequestBody
+                    {
+                        StartDateTime = item.StartTime,
+                        EndDateTime = item.EndTime,
+                        Subject = "Test Meeting",
+                        ExternalId = externalId,
+                        
+                    };
+                    events.Add(@event);
+                }
+                // if the requests are more than 20 limit, we need to create multiple batches of the BatchRequestContent
+                List<BatchRequestContent> batches = new List<BatchRequestContent>();
+                var batchRequestContent = new BatchRequestContent();
+                foreach (OnlineMeetingCreateOrGetRequestBody e in events)
+                { 
+                    //create online meeting for particular user or we can use /me as well
+                    var httpRequestMessage = new HttpRequestMessage(HttpMethod.Post, $"https://graph.microsoft.com/v1.0/users/{userID}/onlineMeetings/createOrGet")
+                    {
+                        Content = new StringContent(JsonConvert.SerializeObject(e), Encoding.UTF8, "application/json")
+                    };
+                    BatchRequestStep requestStep = new BatchRequestStep(events.IndexOf(e).ToString(), httpRequestMessage, null);
+                    batchRequestContent.AddBatchRequestStep(requestStep);
+                    if (events.IndexOf(e) > 0 && ((events.IndexOf(e) + 1) % maxNoBatchItems == 0))
+                    {
+                        batches.Add(batchRequestContent);
+                        batchRequestContent = new BatchRequestContent();
+                    }
+                }
+                if (batchRequestContent.BatchRequestSteps.Count < maxNoBatchItems)
+                {
+                    batches.Add(batchRequestContent);
+                }
+
+                if (batches.Count == 0 && batchRequestContent != null)
+                {
+                    batches.Add(batchRequestContent);
+                }
+
+                foreach (BatchRequestContent batch in batches)
+                {
+                    BatchResponseContent response = null;
+                    response = await graphClient.Batch.Request().PostAsync(batch);
+                    Dictionary<string, HttpResponseMessage> responses = await response.GetResponsesAsync();
+                    foreach (string key in responses.Keys)
+                    {
+                        HttpResponseMessage httpResponse = await response.GetResponseByIdAsync(key);
+                        var responseContent = await httpResponse.Content.ReadAsStringAsync();
+                        JObject eventResponse = JObject.Parse(responseContent);
+                        //do something below
+                        Console.writeline(eventResponse["joinWebUrl"].ToString());                      
+                    }                 
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.Writeline(ex.Message + ex.StackTrace);               
+            }
+        }    
+
+```
 ---
 <!-- markdownlint-enable MD024 -->

@@ -2,15 +2,15 @@
 title: 删除 managedDevice
 description: 删除 managedDevice。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 36f1f600205c0a9d3d9ff7c7927180385fcc0a8f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: bc6905a2228edda8c6370e16152af24125537336
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59029456"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448083"
 ---
 # <a name="delete-manageddevice"></a>删除 managedDevice
 
@@ -25,9 +25,9 @@ ms.locfileid: "59029456"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/v1.0/users/{usersId}/managedDevices/{managedD
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

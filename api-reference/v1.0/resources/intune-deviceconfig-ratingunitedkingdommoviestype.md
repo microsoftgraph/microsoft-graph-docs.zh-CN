@@ -2,15 +2,15 @@
 title: ratingUnitedKingdomMoviesType 枚举类型
 description: 英国电影评级标签
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9254d76dbcf5ce16cbc8f545e894ba4abb569b85
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9c69267a8c6e9bbc87c54883a56ff8f531b84b8c
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59056009"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450866"
 ---
 # <a name="ratingunitedkingdommoviestype-enum-type"></a>ratingUnitedKingdomMoviesType 枚举类型
 
@@ -28,11 +28,10 @@ ms.locfileid: "59056009"
 |general|2|U 分类适用于所有年龄|
 |universalChildren|3|UC 分类适用于学前儿童，这是一个旧分级标签|
 |parentalGuidance|4 |PG 分类适合成熟|
-|agesAbove12Video|5 |12，适用于 12 年以上的视频版本|
+|agesAbove12Video|5|12，适用于 12 年以上的视频版本|
 |agesAbove12Cinema|6 |12A，适合 12 年以上电影版本|
-|agesAbove15|7 |15，仅适用于 15 年以上|
+|agesAbove15|7 |15，仅适用于 15 年及更旧的|
 |一些|8 |仅适用于成人|
-
 
 
 

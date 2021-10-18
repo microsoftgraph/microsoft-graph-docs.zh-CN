@@ -2,15 +2,15 @@
 title: windowsInformationProtectionAppLearningSummary 资源类型
 description: Windows 信息保护应用学习摘要实体。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8625ef2e512774dae432ba3dda72339b73f5b586
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9b733ee53a31f75a49ea89a8d571b444774da1df
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59134778"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60456648"
 ---
 # <a name="windowsinformationprotectionapplearningsummary-resource-type"></a>windowsInformationProtectionAppLearningSummary 资源类型
 
@@ -57,7 +57,6 @@ Windows 信息保护应用学习摘要实体。
   "deviceCount": 1024
 }
 ```
-
 
 
 

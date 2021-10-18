@@ -2,15 +2,15 @@
 title: 删除 deviceAndAppManagementRoleAssignment
 description: 删除 deviceAndAppManagementRoleAssignment。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 200df722082c24e1d1f98a121b0f7330b46efb7b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6b557a5940e64b1a67b6323bec85b190925e8a4c
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019914"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60455651"
 ---
 # <a name="delete-deviceandappmanagementroleassignment"></a>删除 deviceAndAppManagementRoleAssignment
 
@@ -63,7 +63,6 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/roleAssignments/{device
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

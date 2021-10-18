@@ -2,15 +2,15 @@
 title: managedDeviceOwnerType 枚举类型
 description: 设备的所有者类型。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3b46decb862c17b42d024a6f49e5ffd6818c8a1f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8890ee985cd6cea738aa0a4e69d62881f7a4564b
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59118227"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60452984"
 ---
 # <a name="manageddeviceownertype-enum-type"></a>managedDeviceOwnerType 枚举类型
 
@@ -26,7 +26,6 @@ ms.locfileid: "59118227"
 |unknown|0|未知。|
 |公司|1|归公司所有。|
 |personal|2|归个人所有。|
-
 
 
 

@@ -2,15 +2,15 @@
 title: disableLostMode 操作
 description: 禁用丢失模式
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 34f2aff2061c2ff6a05e5286b5f0f1e81b705718
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9ee3b65ce2f2979c825d145000984f697e64ef2f
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59029442"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454255"
 ---
 # <a name="disablelostmode-action"></a>disableLostMode 操作
 
@@ -65,7 +65,6 @@ POST https://graph.microsoft.com/v1.0/users/{usersId}/managedDevices/{managedDev
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

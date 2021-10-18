@@ -2,15 +2,15 @@
 title: editionUpgradeConfiguration 资源类型
 description: Windows 10 版本升级配置。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: dc3432003893934701a0cfb4f5c2058e01c9fe48
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fd1b02843826cb1e492f7a7897666b508d54daab
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59113677"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457622"
 ---
 # <a name="editionupgradeconfiguration-resource-type"></a>editionUpgradeConfiguration 资源类型
 
@@ -79,7 +79,6 @@ Windows 10 版本升级配置。
   "productKey": "String"
 }
 ```
-
 
 
 

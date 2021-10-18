@@ -2,15 +2,15 @@
 title: 列出 iosCertificateProfiles
 description: 列出 iosCertificateProfile 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ddd35ac7af21826435a13db3384cd8afbcb699dd
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1ba8769200fb2c7fa3846b4f0485386bc8ecfd75
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59045250"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447555"
 ---
 # <a name="list-ioscertificateprofiles"></a>列出 iosCertificateProfiles
 
@@ -79,7 +79,6 @@ Content-Length: 392
   ]
 }
 ```
-
 
 
 

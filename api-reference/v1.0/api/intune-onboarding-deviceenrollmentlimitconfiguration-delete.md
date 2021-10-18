@@ -2,15 +2,15 @@
 title: 删除 deviceEnrollmentLimitConfiguration
 description: 删除 deviceEnrollmentLimitConfiguration。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4ce0a19791559ca25ed40d3dc67a0bcb61d54664
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 33cdd5966dd9c43d4a1479acd592e657dfca9307
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59110597"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450078"
 ---
 # <a name="delete-deviceenrollmentlimitconfiguration"></a>删除 deviceEnrollmentLimitConfiguration
 
@@ -41,7 +41,7 @@ DELETE /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigu
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -63,7 +63,6 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceEnrollmentConfigu
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

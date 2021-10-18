@@ -2,15 +2,15 @@
 title: windowsDeviceADAccount 资源类型
 description: 尚未记录
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0cb3f8291540be00b7704ccf487ec2d7bfd564bd
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 94ce7543d12bc0fc037b2f54a74315bc13645ace
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019319"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60453616"
 ---
 # <a name="windowsdeviceadaccount-resource-type"></a>windowsDeviceADAccount 资源类型
 
@@ -48,7 +48,6 @@ ms.locfileid: "59019319"
   "userName": "String"
 }
 ```
-
 
 
 

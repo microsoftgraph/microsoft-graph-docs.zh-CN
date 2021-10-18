@@ -2,15 +2,15 @@
 title: getConfigurationPolicyNonComplianceSummaryReport 操作
 description: 尚未记录
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 864900fa2ca4a55a56e067a05e1e016664a3314e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: cdd8b2243e7204a53a1b699b757264439b76c1c0
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59063053"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60455933"
 ---
 # <a name="getconfigurationpolicynoncompliancesummaryreport-action"></a>getConfigurationPolicyNonComplianceSummaryReport 操作
 
@@ -106,7 +106,6 @@ Content-Length: 123
   "value": "Z2V0Q29uZmlndXJhdGlvblBvbGljeU5vbkNvbXBsaWFuY2VTdW1tYXJ5UmVwb3J0IEludHVuZSBEb2MgU2FtcGxlIC0xNjM2NzI4OTg4"
 }
 ```
-
 
 
 

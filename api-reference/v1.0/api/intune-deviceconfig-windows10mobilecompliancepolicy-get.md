@@ -2,15 +2,15 @@
 title: 获取 windows10MobileCompliancePolicy
 description: 读取 windows10MobileCompliancePolicy 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ceaaf9bfbc33a83ca4a6ce77c660bcb461fe050e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7aaf394cc3a6de451158794a45be35e92f1ef28a
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59130718"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60453924"
 ---
 # <a name="get-windows10mobilecompliancepolicy"></a>获取 windows10MobileCompliancePolicy
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -96,7 +96,6 @@ Content-Length: 1029
   }
 }
 ```
-
 
 
 

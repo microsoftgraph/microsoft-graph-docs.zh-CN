@@ -2,15 +2,15 @@
 title: getAuditActivityTypes 函数
 description: 尚未记录
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: af0a1f23f47b337b93d7d91aad4aed38068982e0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8a827ed62a53d2746aa31964e3adb5c5d5232254
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59056408"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457552"
 ---
 # <a name="getauditactivitytypes-function"></a>getAuditActivityTypes 函数
 
@@ -78,7 +78,6 @@ Content-Length: 61
   ]
 }
 ```
-
 
 
 

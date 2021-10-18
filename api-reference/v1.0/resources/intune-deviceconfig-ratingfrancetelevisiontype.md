@@ -2,15 +2,15 @@
 title: ratingFranceTelevisionType 枚举类型
 description: 法国电视内容分级标签
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5b42781e192bfea45579b9c71b93bcc3126963a0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1aa4d630174ee5cf220cd3e5de7062090e1d8a5c
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59021615"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448560"
 ---
 # <a name="ratingfrancetelevisiontype-enum-type"></a>ratingFranceTelevisionType 枚举类型
 
@@ -28,8 +28,7 @@ ms.locfileid: "59021615"
 |agesAbove10|2|对于 10 以下的子级，不建议使用 -10 分类|
 |agesAbove12|3|不建议对 12 以下的子用户使用 -12 分类|
 |agesAbove16|4 |不建议对 16 以下的子用户使用 -16 分类|
-|agesAbove18|5 |不建议 18 以下人员使用 -18 分类|
-
+|agesAbove18|5|不建议 18 以下人员使用 -18 分类|
 
 
 

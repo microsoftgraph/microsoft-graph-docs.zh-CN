@@ -2,15 +2,15 @@
 title: 更新 deviceAndAppManagementRoleDefinition
 description: 更新 deviceAndAppManagementRoleDefinition 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 372b3c344cb7e3eb02e77234569f52e5b305b626
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5e28d46422028265a25c4d696c7cc51a7b18ab4d
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019837"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447296"
 ---
 # <a name="update-deviceandappmanagementroledefinition"></a>更新 deviceAndAppManagementRoleDefinition
 
@@ -127,7 +127,6 @@ Content-Length: 651
   "isBuiltIn": true
 }
 ```
-
 
 
 

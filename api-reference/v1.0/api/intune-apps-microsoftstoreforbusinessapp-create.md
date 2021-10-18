@@ -2,15 +2,15 @@
 title: 创建 microsoftStoreForBusinessApp
 description: 创建新的 microsoftStoreForBusinessApp 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9e5b22cf9caf0680b7aedc3903feb920a2af07e4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fc93eea6a6e0332e45ce6136d01e3db3df30305b
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59016552"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60455188"
 ---
 # <a name="create-microsoftstoreforbusinessapp"></a>创建 microsoftStoreForBusinessApp
 
@@ -144,7 +144,6 @@ Content-Length: 941
   "packageIdentityName": "Package Identity Name value"
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: 创建 iosVppEBookAssignment
 description: 创建新的 iosVppEBookAssignment 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8eb99509aeb1c27cd29895d60ccbc08a9572795c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 52b970460b8ee1cb490fc0cc5fe740b85e1081c1
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59114377"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447789"
 ---
 # <a name="create-iosvppebookassignment"></a>创建 iosVppEBookAssignment
 
@@ -94,7 +94,6 @@ Content-Length: 242
   "installIntent": "required"
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: managedDevicePartnerReportedHealthState 枚举类型
 description: 设备运行状况 API 的可用运行状况状态
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c7ff45e140634c7683372628560a1fdb30efe446
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5d4f14464412fd009c45c195737345ebc81c1723
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59118220"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449002"
 ---
 # <a name="manageddevicepartnerreportedhealthstate-enum-type"></a>managedDevicePartnerReportedHealthState 枚举类型
 
@@ -28,12 +28,11 @@ ms.locfileid: "59118220"
 |deactivated|2|设备已被移动威胁防护合作伙伴停用。 设备运行状况未知。|
 |secured|3|设备被视为受移动威胁防护合作伙伴保护。|
 |lowSeverity|4 |移动威胁防护合作伙伴将设备视为低威胁。|
-|mediumSeverity|5 |移动威胁防护合作伙伴将设备视为中等威胁。|
+|mediumSeverity|5|移动威胁防护合作伙伴将设备视为中等威胁。|
 |highSeverity|6 |移动威胁防护合作伙伴将设备视为高威胁。|
 |unresponsive|7 |移动威胁防护合作伙伴认为设备无响应。 设备运行状况未知。|
-|compromised|8 |威胁防护合作伙伴认为设备遭到入侵。 这意味着设备存在一个活动的"威胁或风险"，最终用户无法轻松修复此威胁或风险，并且用户应联系其 IT 管理员。|
+|compromised|8 |威胁防护合作伙伴认为设备遭到入侵。 这意味着设备具有活动的威胁或风险，最终用户无法轻松修复此威胁或风险，用户应联系其 IT 管理员。|
 |misconfigured|9 |设备被视为与威胁防护合作伙伴配置不当。 这意味着设备缺少所需配置文件或配置，威胁防护合作伙伴才能正常运行，因此无法完成威胁或风险分析。|
-
 
 
 

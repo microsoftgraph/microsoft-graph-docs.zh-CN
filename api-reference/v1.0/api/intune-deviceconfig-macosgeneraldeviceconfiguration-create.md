@@ -2,15 +2,15 @@
 title: 创建 macOSGeneralDeviceConfiguration
 description: 创建新的 macOSGeneralDeviceConfiguration 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 89c3ac70965bd3ff4b5e8feb1555ce9189c8c1a6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4f051710d5c5d53504d1842d120678b796e334cc
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59037668"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447471"
 ---
 # <a name="create-macosgeneraldeviceconfiguration"></a>创建 macOSGeneralDeviceConfiguration
 
@@ -153,7 +153,6 @@ Content-Length: 1078
   "passwordRequired": true
 }
 ```
-
 
 
 

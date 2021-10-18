@@ -2,15 +2,15 @@
 title: deviceManagementExportJob 资源类型
 description: 表示要导出报告的作业的实体
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d3bd80503e57d579294c7d6f0636571185916287
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6ac375ce598a71a2da7e228a4b3d31809b2f1677
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59036331"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448925"
 ---
 # <a name="devicemanagementexportjob-resource-type"></a>deviceManagementExportJob 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "59036331"
 |[列出 deviceManagementExportJobs](../api/intune-reporting-devicemanagementexportjob-list.md)|[deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md) 集合|列出 [deviceManagementExportJob 对象的属性和](../resources/intune-reporting-devicemanagementexportjob.md) 关系。|
 |[获取 deviceManagementExportJob](../api/intune-reporting-devicemanagementexportjob-get.md)|[deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md)|读取 [deviceManagementExportJob 对象的属性和](../resources/intune-reporting-devicemanagementexportjob.md) 关系。|
 |[创建 deviceManagementExportJob](../api/intune-reporting-devicemanagementexportjob-create.md)|[deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md)|创建新的 [deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md) 对象。|
-|[删除 deviceManagementExportJob](../api/intune-reporting-devicemanagementexportjob-delete.md)|None|删除 [deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md)。|
+|[删除 deviceManagementExportJob](../api/intune-reporting-devicemanagementexportjob-delete.md)|无|删除 [deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md)。|
 |[更新 deviceManagementExportJob](../api/intune-reporting-devicemanagementexportjob-update.md)|[deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md)|更新 [deviceManagementExportJob 对象](../resources/intune-reporting-devicemanagementexportjob.md) 的属性。|
 
 ## <a name="properties"></a>属性
@@ -73,7 +73,6 @@ ms.locfileid: "59036331"
   "expirationDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

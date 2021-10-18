@@ -2,15 +2,15 @@
 title: applicationType 枚举类型
 description: 可能的应用程序类型
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 176c8c88f9b488308c1a4b4f48058a32992d21a1
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d1a9f5e32dfad27524dcbedf219e9ace8d01942a
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59078761"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60456457"
 ---
 # <a name="applicationtype-enum-type"></a>applicationType 枚举类型
 
@@ -25,7 +25,6 @@ ms.locfileid: "59078761"
 |:---|:---|:---|
 |universal|1|Windows 通用应用程序|
 |desktop|2|Windows 桌面应用程序|
-
 
 
 

@@ -2,15 +2,15 @@
 title: iosHomeScreenFolderPage 资源类型
 description: 主页上包含应用和 Web 剪辑的文件夹的页面。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: eb6b27fa9cf033914cc1471c75e78fd2cc244e87
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 580c84aeda70499944772828c10fe39242cc1d37
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59136451"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60455476"
 ---
 # <a name="ioshomescreenfolderpage-resource-type"></a>iosHomeScreenFolderPage 资源类型
 
@@ -49,7 +49,6 @@ ms.locfileid: "59136451"
   ]
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: 列出 termsAndConditionsAcceptanceStatuses
 description: 列出 termsAndConditionsAcceptanceStatus 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8c650d6b8bc0229396df6c1d64b9a7ce45d5041e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ae08db7e18172f738fe0011fab3fde17df87cf9c
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59026551"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60445477"
 ---
 # <a name="list-termsandconditionsacceptancestatuses"></a>列出 termsAndConditionsAcceptanceStatuses
 
@@ -78,7 +78,6 @@ Content-Length: 370
   ]
 }
 ```
-
 
 
 

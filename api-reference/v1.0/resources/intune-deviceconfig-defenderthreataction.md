@@ -2,15 +2,15 @@
 title: defenderThreatAction 枚举类型
 description: Defender 对检测到的恶意软件威胁采取的默认操作。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 706a068817d972ba1a9ed2bc3c55d880c849cddb
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a29ca5d0016c90d49ac6cc8febdf21b95feafef6
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59044662"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454598"
 ---
 # <a name="defenderthreataction-enum-type"></a>defenderThreatAction 枚举类型
 
@@ -28,9 +28,8 @@ Defender 对检测到的恶意软件威胁采取的默认操作。
 |隔离|2|隔离检测到的威胁。|
 |remove|3|删除检测到的威胁。|
 |allow|4 |允许检测到的威胁。|
-|userDefined|5 |允许用户确定对检测到的威胁要采取的操作。|
+|userDefined|5|允许用户确定对检测到的威胁要采取的操作。|
 |block|6 |阻止检测到的威胁。|
-
 
 
 

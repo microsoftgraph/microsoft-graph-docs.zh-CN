@@ -2,15 +2,15 @@
 title: configurationManagerClientEnabledFeatures 资源类型
 description: Configuration Manager 客户端已启用的功能
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8e600695d6a99a5ab7d9af5c719d85ba61db49d4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e3d9d96ebf9c43125af934789137cd68422191c9
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59098823"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446390"
 ---
 # <a name="configurationmanagerclientenabledfeatures-resource-type"></a>configurationManagerClientEnabledFeatures 资源类型
 
@@ -51,7 +51,6 @@ Configuration Manager 客户端已启用的功能
   "windowsUpdateForBusiness": true
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: ratingUnitedStatesTelevisionType 枚举类型
 description: 美国的电视内容分级标签
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8d1a557fc38765cdbfb023727c377e041b37c167
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3e28cc7d3b71239f5556367e3bb512dc9102671c
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59007038"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451876"
 ---
 # <a name="ratingunitedstatestelevisiontype-enum-type"></a>ratingUnitedStatesTelevisionType 枚举类型
 
@@ -28,10 +28,9 @@ ms.locfileid: "59007038"
 |childrenAll|2|TV-Y，所有子级|
 |childrenAbove7|3|TV-Y7，7 岁以下的儿童及以上|
 |general|4 |TV-G，适合所有年龄|
-|parentalGuidance|5 |TV-PG， 家长指南|
+|parentalGuidance|5|TV-PG， 家长指南|
 |childrenAbove14|6 |TV-14，14 岁以下的儿童及以上|
 |一些|7 |TV-MA，仅限成人|
-
 
 
 

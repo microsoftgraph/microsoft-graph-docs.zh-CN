@@ -2,15 +2,15 @@
 title: 更新 androidCustomConfiguration
 description: 更新 androidCustomConfiguration 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: daf4beb9441ee979e620be5f8b4428d4d9201eae
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 445c077d58ab021a8af49c2e8e8f177c0b2ac536
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59140484"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454675"
 ---
 # <a name="update-androidcustomconfiguration"></a>更新 androidCustomConfiguration
 
@@ -114,7 +114,6 @@ Content-Length: 548
   ]
 }
 ```
-
 
 
 

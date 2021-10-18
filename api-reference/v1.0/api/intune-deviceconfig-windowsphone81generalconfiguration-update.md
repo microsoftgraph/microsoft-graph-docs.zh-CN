@@ -2,15 +2,15 @@
 title: 更新 windowsPhone81GeneralConfiguration
 description: 更新 windowsPhone81GeneralConfiguration 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f348e1c38fa43592f1a1df067cd2622221b71d48
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d165129aeabf6dda0b1d46b3c079ba01abd1ed4b
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59114216"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457608"
 ---
 # <a name="update-windowsphone81generalconfiguration"></a>更新 windowsPhone81GeneralConfiguration
 
@@ -200,7 +200,6 @@ Content-Length: 1633
   "windowsStoreBlocked": true
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: 更新 windows10GeneralConfiguration
 description: 更新 windows10GeneralConfiguration 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 458d860e12fd7a2b573a41135db21476b1c521da
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: aba75bfe7e2f0d728a957134167f6f707c197f7d
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59130753"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60452571"
 ---
 # <a name="update-windows10generalconfiguration"></a>更新 windows10GeneralConfiguration
 
@@ -750,7 +750,6 @@ Content-Length: 9994
   "tenantLockdownRequireNetworkDuringOutOfBoxExperience": true
 }
 ```
-
 
 
 

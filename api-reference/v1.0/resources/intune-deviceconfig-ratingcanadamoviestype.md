@@ -2,15 +2,15 @@
 title: ratingCanadaMoviesType 枚举类型
 description: 加拿大电影评级标签
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 31820cfeb41a39dc47b9beaaaa9fdd6f16077d4e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fc078b39518984e5ffb5f5d72fa5517dfabdae7c
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59053012"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447394"
 ---
 # <a name="ratingcanadamoviestype-enum-type"></a>ratingCanadaMoviesType 枚举类型
 
@@ -28,9 +28,8 @@ ms.locfileid: "59053012"
 |general|2|G 分类适用于所有年龄|
 |parentalGuidance|3|PG 分类建议家长指南|
 |agesAbove14|4 |14A 分类适用于 14 或以上年龄的查看者|
-|agesAbove18|5 |18A 分类适用于 18 及以上年龄的查看者|
+|agesAbove18|5|18A 分类适用于 18 及以上年龄的查看者|
 |restricted|6 |R 分类限制为 18 年及更久|
-
 
 
 

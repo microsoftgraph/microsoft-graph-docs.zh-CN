@@ -2,15 +2,15 @@
 title: 创建 windows10TeamGeneralConfiguration
 description: 创建新的 windows10TeamGeneralConfiguration 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 58b2e665d5dd744a3efb2ee8befa5faae93e534a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 41ed151289edfde92371a6d714e1d2c0d838488b
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59140064"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60452093"
 ---
 # <a name="create-windows10teamgeneralconfiguration"></a>创建 windows10TeamGeneralConfiguration
 
@@ -157,7 +157,6 @@ Content-Length: 1322
   "welcomeScreenMeetingInformation": "showOrganizerAndTimeOnly"
 }
 ```
-
 
 
 

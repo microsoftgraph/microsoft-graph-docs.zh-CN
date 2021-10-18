@@ -2,15 +2,15 @@
 title: win32LobAppRule 资源类型
 description: 用于存储 Win32 LOB 应用的检测或要求规则数据的基复杂类型。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3c001b6baf5be316fd38c74c532692ec9f3997d5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7f2d8df36ae769934918007fe10b52ecf56fe17e
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59134862"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448588"
 ---
 # <a name="win32lobapprule-resource-type"></a>win32LobAppRule 资源类型
 
@@ -41,7 +41,6 @@ ms.locfileid: "59134862"
   "ruleType": "String"
 }
 ```
-
 
 
 

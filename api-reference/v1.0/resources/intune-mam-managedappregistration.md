@@ -2,15 +2,15 @@
 title: managedAppRegistration 资源类型
 description: ManagedAppEntity 是应用管理工作流下所有其他实体类型的基实体类型。 ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应用的详细信息。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0972c5fffb6a8ab7e7ce2549af4ce621c88bb3d7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2f8deabefd05a67d0ffc0fa31d6f04e98d60eac4
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59148254"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450838"
 ---
 # <a name="managedappregistration-resource-type"></a>managedAppRegistration 资源类型
 
@@ -83,7 +83,6 @@ ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应
   "version": "String"
 }
 ```
-
 
 
 

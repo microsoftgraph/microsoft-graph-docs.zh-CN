@@ -2,15 +2,15 @@
 title: 创建 macOSCustomConfiguration
 description: 创建新的 macOSCustomConfiguration 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 659694a3e94a1409553df43b98b8143de9b5f609
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 35eed43b3c5fdee3de3fefbcae2bbb3f9f7a4cb0
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59063291"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449430"
 ---
 # <a name="create-macoscustomconfiguration"></a>创建 macOSCustomConfiguration
 
@@ -106,7 +106,6 @@ Content-Length: 453
   "payload": "cGF5bG9hZA=="
 }
 ```
-
 
 
 

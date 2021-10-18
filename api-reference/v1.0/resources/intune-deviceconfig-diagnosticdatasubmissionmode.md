@@ -2,15 +2,15 @@
 title: diagnosticDataSubmissionMode 枚举类型
 description: 允许设备发送诊断和使用情况遥测数据，例如 Watson。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c4c9103de20d6a9e3296dc8f03459925e17009c2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: cc92f564c323d3a0d7303b1074c523f158a96979
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59142773"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60445136"
 ---
 # <a name="diagnosticdatasubmissionmode-enum-type"></a>diagnosticDataSubmissionMode 枚举类型
 
@@ -28,7 +28,6 @@ ms.locfileid: "59142773"
 |basic|2|发送基本遥测数据。|
 |增强|3|发送增强的遥测数据，包括使用情况和见解数据。|
 |full|4 |发送完整的遥测数据，包括诊断数据，如系统状态。|
-
 
 
 

@@ -2,15 +2,15 @@
 title: 列出 mobileAppContentFiles
 description: 列出 mobileAppContentFile 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4c88c2426b9df97047e37b78a786164e612f7374
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fac3366296a11df36f4fef530693f9804d121899
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59085621"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446159"
 ---
 # <a name="list-mobileappcontentfiles"></a>列出 mobileAppContentFiles
 
@@ -41,7 +41,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCont
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -83,7 +83,6 @@ Content-Length: 527
   ]
 }
 ```
-
 
 
 

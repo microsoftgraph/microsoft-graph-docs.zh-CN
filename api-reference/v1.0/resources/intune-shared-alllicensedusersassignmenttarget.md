@@ -2,15 +2,15 @@
 title: allLicensedUsersAssignmentTarget 资源类型
 description: 表示租户中所有许可用户的赋值。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 45163b81f44ed079545624e37829b4ec827e089a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fc686ed9d48a106a4031deaa8a92871c0e908d9a
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59134827"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454978"
 ---
 # <a name="alllicensedusersassignmenttarget-resource-type"></a>allLicensedUsersAssignmentTarget 资源类型
 
@@ -42,7 +42,6 @@ ms.locfileid: "59134827"
   "@odata.type": "#microsoft.graph.allLicensedUsersAssignmentTarget"
 }
 ```
-
 
 
 

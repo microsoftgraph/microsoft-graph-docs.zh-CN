@@ -2,15 +2,15 @@
 title: 更新 remoteAssistancePartner
 description: 更新 remoteAssistancePartner 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0763c15995d12b3b1a8979ed3261394d16b1bbd4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2547a07968457ddaaaa6c453b62ffc0dfb9a3d23
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59037493"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60445998"
 ---
 # <a name="update-remoteassistancepartner"></a>更新 remoteAssistancePartner
 
@@ -96,7 +96,6 @@ Content-Length: 315
   "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
 }
 ```
-
 
 
 

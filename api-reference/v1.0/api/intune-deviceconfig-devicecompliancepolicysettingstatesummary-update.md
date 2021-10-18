@@ -2,15 +2,15 @@
 title: 更新 deviceCompliancePolicySettingStateSummary
 description: 更新 deviceCompliancePolicySettingStateSummary 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 67bd8641658046bd194f4f23dd95a07d3c6ae0d3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 18ab7ebb4886f9e1510f37ff7ed6209b762281b5
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59099845"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448469"
 ---
 # <a name="update-devicecompliancepolicysettingstatesummary"></a>更新 deviceCompliancePolicySettingStateSummary
 
@@ -41,7 +41,7 @@ PATCH /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompl
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -114,7 +114,6 @@ Content-Length: 440
   "conflictDeviceCount": 3
 }
 ```
-
 
 
 

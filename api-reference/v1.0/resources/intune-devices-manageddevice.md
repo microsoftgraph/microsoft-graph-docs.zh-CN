@@ -2,15 +2,15 @@
 title: managedDevice 资源类型
 description: 通过 Intune 托管或预注册的设备
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3203b99766c861f4a7b89401ef3c0cc14383fa2f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 71aacb93f0731c8f1a41a5135f9383818145bfb2
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59118304"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446383"
 ---
 # <a name="manageddevice-resource-type"></a>managedDevice 资源类型
 
@@ -66,7 +66,7 @@ ms.locfileid: "59118304"
 |easDeviceId|String|设备的 Exchange ActiveSync ID。 此属性是只读的。|
 |easActivationDateTime|DateTimeOffset|设备的 Exchange ActivationSync 激活时间。 此属性是只读的。|
 |azureADRegistered|Boolean|设备是否已注册 Azure Active Directory。 此属性是只读的。|
-|deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|设备的注册类型。 此属性是只读的。 可能的值是：`unknown`、`userEnrollment`、`deviceEnrollmentManager`、`appleBulkWithUser`、`appleBulkWithoutUser`、`windowsAzureADJoin`、`windowsBulkUserless`、`windowsAutoEnrollment`、`windowsBulkAzureDomainJoin`、`windowsCoManagement`、`windowsAzureADJoinUsingDeviceAuth`、`appleUserEnrollment`、`appleUserEnrollmentWithServiceAccount`。|
+|deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-devices-deviceenrollmenttype.md)|设备的注册类型。 此属性是只读的。 可能的值是：`unknown`、`userEnrollment`、`deviceEnrollmentManager`、`appleBulkWithUser`、`appleBulkWithoutUser`、`windowsAzureADJoin`、`windowsBulkUserless`、`windowsAutoEnrollment`、`windowsBulkAzureDomainJoin`、`windowsCoManagement`、`windowsAzureADJoinUsingDeviceAuth`、`appleUserEnrollment`、`appleUserEnrollmentWithServiceAccount`。|
 |activationLockBypassCode|String|允许绕过设备上的激活锁的代码。 此属性是只读的。|
 |emailAddress|String|电子邮件 () 设备关联的用户的邮箱。 此属性是只读的。|
 |azureADDeviceId|String|Azure Active Directory 设备的唯一标识符。 只读。 此属性是只读的。|
@@ -223,7 +223,6 @@ ms.locfileid: "59118304"
   "physicalMemoryInBytes": 1024
 }
 ```
-
 
 
 

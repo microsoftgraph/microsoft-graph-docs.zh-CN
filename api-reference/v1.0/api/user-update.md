@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: a9b371040cf14f8d0ceeca67918504a088d72e04
-ms.sourcegitcommit: c3f849e5a052b1926373a4b316ec303250e6d09e
+ms.openlocfilehash: 89adfe6088b7ab78c34010fd3a9eaa1cd9c26ac4
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60369760"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60445984"
 ---
 # <a name="update-user"></a>更新用户
 
@@ -28,7 +28,7 @@ ms.locfileid: "60369760"
 |应用程序 | User.ReadWrite.All、User.ManageIdentities.All、Directory.ReadWrite.All |
 
 >[!NOTE]
-> - 如需更新其他用户的 **businessPhones**、**mobilePhone** 或 **otherMails** 属性，仅允许针对非管理员或分配了以下角色之一的用户执行该操作：目录读取者、来宾邀请者、消息中心读取者和报告读取者。 有关详细信息，请参阅 [Azure AD 内置角色帮助人员（密码）](/azure/active-directory/roles/permissions-reference)。  这适用于获得了 User.ReadWrite.All 或 Directory.ReadWrite.All 委派或应用程序权限的应用。
+> - 如需更新其他用户的 **businessPhones**、**mobilePhone** 或 **otherMails** 属性，仅允许针对非管理员或分配了以下角色之一的用户执行该操作：目录读取者、来宾邀请者、消息中心读取者和报告读取者。 有关详细信息，请参阅 [Azure AD 内置角色帮助人员（密码）](/azure/active-directory/roles/permissions-reference)。  这适用于获得了 User.ReadWrite.All 或 Directory.ReadWrite.All 委派或应用程序权限的应用。 只有分配了 Directory.AccessAsUser.All 权限的全局管理员才能为更多特权管理员更新这些属性。
 > - 个人 Microsoft 帐户必须绑定到 AAD 租户，才能使用 User.ReadWrite 对个人 Microsoft 帐户的委派权限更新配置文件。
 > - 更新 **标识** 属性需要 User.ManageIdentities.All 权限。此外，不允许将 [B2C 本地帐户](../resources/objectidentity.md)添加到现有 **用户** 对象，除非 **用户** 对象已包含本地帐户标识。
 

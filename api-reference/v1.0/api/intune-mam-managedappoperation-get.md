@@ -2,15 +2,15 @@
 title: 获取 managedAppOperation
 description: 读取 managedAppOperation 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 56d224b12eef79296eabff51332246d2c56eb9b1
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: db01464ee260a67872ab1310536ad87a0f96dd66
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59037577"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60437092"
 ---
 # <a name="get-managedappoperation"></a>获取 managedAppOperation
 
@@ -79,7 +79,6 @@ Content-Length: 303
   }
 }
 ```
-
 
 
 

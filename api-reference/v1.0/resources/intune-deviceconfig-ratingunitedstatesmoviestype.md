@@ -2,15 +2,15 @@
 title: ratingUnitedStatesMoviesType 枚举类型
 description: 美国电影评级标签
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b9497d9514f98ef9fd1f10e498d025dd587c413d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 145ae32df41ad90d24727ac6c9b736aeb00f483e
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59044620"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447387"
 ---
 # <a name="ratingunitedstatesmoviestype-enum-type"></a>ratingUnitedStatesMoviesType 枚举类型
 
@@ -28,9 +28,8 @@ ms.locfileid: "59044620"
 |general|2|G，所有年龄均接受|
 |parentalGuidance|3|PG，某些材料可能不适合子材料|
 |parentalGuidance13|4 |PG13，某些材料可能不适合 13 下的子用户|
-|restricted|5 |R，17 下的查看器需要伴随的家长或成人监护人|
+|restricted|5|R，17 下的查看器需要伴随的家长或成人监护人|
 |一些|6 |NC17，仅|
-
 
 
 

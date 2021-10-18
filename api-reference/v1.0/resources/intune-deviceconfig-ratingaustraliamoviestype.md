@@ -2,15 +2,15 @@
 title: ratingAustraliaMoviesType 枚举类型
 description: 澳大利亚电影评级标签
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 278d18d5d6ed8b6bae50f499f1248b50c088a9e7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: bf19040a7db3a7f3cc8aa099f9e0bb45ec9b31d2
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59053075"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60445519"
 ---
 # <a name="ratingaustraliamoviestype-enum-type"></a>ratingAustraliaMoviesType 枚举类型
 
@@ -28,9 +28,8 @@ ms.locfileid: "59053075"
 |general|2|G 分类适合所有人|
 |parentalGuidance|3|PG 建议 15 以下的查看者在家长或监护人指导下查看|
 |到期|4 |不建议 15 以下的查看者使用 M 分类|
-|agesAbove15|5 |MA15+ 分类不适合 15 以下的查看者|
+|agesAbove15|5|MA15+ 分类不适合 15 以下的查看者|
 |agesAbove18|6 |R18+ 分类不适用于 18 以下的查看者|
-
 
 
 

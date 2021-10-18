@@ -2,15 +2,15 @@
 title: miracastChannel 枚举类型
 description: 频道的可能Miracast值。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fd9b4c96038a9539a34dd128f464d0e2c087cf48
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ff6da57a92087f7591f2b118854bdebb84db7dcb
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59089500"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451883"
 ---
 # <a name="miracastchannel-enum-type"></a>miracastChannel 枚举类型
 
@@ -28,7 +28,7 @@ ms.locfileid: "59089500"
 |two|2|两个。|
 |three|3|三。|
 |four|4 |四。|
-|five|5 |五。|
+|five|5|五。|
 |六|6 |六。|
 |七|7 |七。|
 |八|8 |八。|
@@ -44,7 +44,6 @@ ms.locfileid: "59089500"
 |oneHundredFiftySeven|157|OneHundredFifty-Seven。|
 |oneHundredSixtyOne|161|OneHundredSixty-One。|
 |oneHundredSixtyFive|165|OneHundredSixty-Five。|
-
 
 
 

@@ -2,15 +2,15 @@
 title: 创建 managedIOSLobApp
 description: 创建新的 managedIOSLobApp 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 025a2d9c6f5169dba7ef3c1afe2f83b14dafa7af
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 46ce596026c0160ff747bcf6ef93fc61f9771cc2
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59073679"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451834"
 ---
 # <a name="create-managedioslobapp"></a>创建 managedIOSLobApp
 
@@ -188,7 +188,6 @@ Content-Length: 1499
   "buildNumber": "Build Number value"
 }
 ```
-
 
 
 

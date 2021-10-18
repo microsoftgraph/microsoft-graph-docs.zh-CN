@@ -2,15 +2,15 @@
 title: wipeManagedAppRegistrationsByDeviceTag 操作
 description: 对包含指定设备标记的应用注册发布擦除操作。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 558a58f78ec2c14a17fac1aff77804a9fe524e41
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 520da54221bef923d6406093f2740c91ee20235f
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147176"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457776"
 ---
 # <a name="wipemanagedappregistrationsbydevicetag-action"></a>wipeManagedAppRegistrationsByDeviceTag 操作
 
@@ -78,7 +78,6 @@ Content-length: 39
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

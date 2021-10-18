@@ -2,15 +2,15 @@
 title: updateWindowsDeviceAccount 操作
 description: 尚未记录
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ee561e8674c75cc3b453e730958a48a322247a78
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 565c1faf071e72ccd7d46364348e26f392654d00
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59090360"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60453903"
 ---
 # <a name="updatewindowsdeviceaccount-action"></a>updateWindowsDeviceAccount 操作
 
@@ -43,7 +43,7 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -91,7 +91,6 @@ Content-length: 532
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

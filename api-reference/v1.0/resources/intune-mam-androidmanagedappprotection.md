@@ -2,15 +2,15 @@
 title: androidManagedAppProtection 资源类型
 description: 用于配置针对特定安全组和 Android 设备上指定的一组应用的详细管理设置的策略
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bde9411748d2984a517f7e641452232e489efd51
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f51ba6dd5aeb0f4c516840c8d32795e0224d8bee
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59052977"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457286"
 ---
 # <a name="androidmanagedappprotection-resource-type"></a>androidManagedAppProtection 资源类型
 
@@ -142,7 +142,6 @@ ms.locfileid: "59052977"
   "customBrowserDisplayName": "String"
 }
 ```
-
 
 
 

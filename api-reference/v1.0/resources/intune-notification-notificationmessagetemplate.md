@@ -2,15 +2,15 @@
 title: notificationMessageTemplate 资源类型
 description: 通知消息是要发送给最终用户的消息，这些最终用户被确定为不符合管理员定义的合规策略要求。 管理员会选择通知，并使用“非合规性操作”部分下的合规策略创建页面，在 Intune 管理控制台中进行配置。 使用 notificationMessageTemplate 对象创建自定义通知，以便管理员在配置非合规操作时进行选择。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6a8ac7a0b5adf4c38bb5f3296100941d8a15c74f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 059d853605d99873ca3b0204b365fa0f9906674f
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59044543"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451315"
 ---
 # <a name="notificationmessagetemplate-resource-type"></a>notificationMessageTemplate 资源类型
 
@@ -62,7 +62,6 @@ ms.locfileid: "59044543"
   "brandingOptions": "String"
 }
 ```
-
 
 
 

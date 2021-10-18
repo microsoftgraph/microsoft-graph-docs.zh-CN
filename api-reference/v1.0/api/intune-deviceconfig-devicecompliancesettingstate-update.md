@@ -2,15 +2,15 @@
 title: 更新 deviceComplianceSettingState
 description: 更新 deviceComplianceSettingState 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0dc87df0e232d244d3f8d77e67db884cab3075d4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d57b944eae075681b2e6ead002ac4dd0c56fc2bf
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59045390"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451617"
 ---
 # <a name="update-devicecompliancesettingstate"></a>更新 deviceComplianceSettingState
 
@@ -117,7 +117,6 @@ Content-Length: 566
   "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00"
 }
 ```
-
 
 
 

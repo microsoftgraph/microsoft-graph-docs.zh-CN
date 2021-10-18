@@ -2,15 +2,15 @@
 title: windows10EnterpriseModernAppManagementConfiguration 资源类型
 description: Windows 10 企业版新式应用管理配置。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 70bb9e3fd3e9c16cc339de86da79e6daa3f10b3a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 78dc8f14cd770035eed70b45c9e20d384fc29eb5
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59126812"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457475"
 ---
 # <a name="windows10enterprisemodernappmanagementconfiguration-resource-type"></a>windows10EnterpriseModernAppManagementConfiguration 资源类型
 
@@ -73,7 +73,6 @@ Windows 10 企业版新式应用管理配置。
   "uninstallBuiltInApps": true
 }
 ```
-
 
 
 

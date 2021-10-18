@@ -2,15 +2,15 @@
 title: mdmAppConfigKeyType 枚举类型
 description: 应用配置密钥类型。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9c7530303928cc17ed4853abfbebcc13c2783b62
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5fc987dccb92a76798845876325bdcd3afb678eb
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59123221"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451202"
 ---
 # <a name="mdmappconfigkeytype-enum-type"></a>mdmAppConfigKeyType 枚举类型
 
@@ -28,7 +28,6 @@ ms.locfileid: "59123221"
 |realType|2|尚未记录|
 |booleanType|3|尚未记录|
 |tokenType|4 |尚未记录|
-
 
 
 

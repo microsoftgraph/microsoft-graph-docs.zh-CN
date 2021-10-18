@@ -2,15 +2,15 @@
 title: win32LobAppAssignmentSettings 资源类型
 description: 包含用于将 Win32 LOB 移动应用分配给组的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1f94cd9ddcfe6c4136a1ee427cf2290a50792290
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ad7b1a51a4d291c7068413968951fe397b0637a7
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59072433"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446418"
 ---
 # <a name="win32lobappassignmentsettings-resource-type"></a>win32LobAppAssignmentSettings 资源类型
 
@@ -60,7 +60,6 @@ ms.locfileid: "59072433"
   "deliveryOptimizationPriority": "String"
 }
 ```
-
 
 
 

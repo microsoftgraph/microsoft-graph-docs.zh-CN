@@ -2,15 +2,15 @@
 title: 更新 termsAndConditionsAssignment
 description: 更新 termsAndConditionsAssignment 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 71f53ec53672d8fb7f3d3b0376bae4e0f3abe814
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0aa7352d7bfedd406db8f269902ec14bc4ad7ea9
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59016384"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446131"
 ---
 # <a name="update-termsandconditionsassignment"></a>更新 termsAndConditionsAssignment
 
@@ -93,7 +93,6 @@ Content-Length: 269
   }
 }
 ```
-
 
 
 

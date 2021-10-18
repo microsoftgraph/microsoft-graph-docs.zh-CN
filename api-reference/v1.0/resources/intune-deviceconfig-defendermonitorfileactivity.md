@@ -2,15 +2,15 @@
 title: defenderMonitorFileActivity 枚举类型
 description: 监视文件活动的可能值。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 095ea434b4ae9a7759dd40f9264339525cb86921
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1a782a7a246648502ddc06887e22d1f5a8970094
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59118458"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447852"
 ---
 # <a name="defendermonitorfileactivity-enum-type"></a>defenderMonitorFileActivity 枚举类型
 
@@ -28,7 +28,6 @@ ms.locfileid: "59118458"
 |monitorAllFiles|2|监视所有文件。|
 |monitorIncomingFilesOnly|3| 仅监视传入文件。|
 |monitorOutgoingFilesOnly|4 |仅监视传出文件。|
-
 
 
 

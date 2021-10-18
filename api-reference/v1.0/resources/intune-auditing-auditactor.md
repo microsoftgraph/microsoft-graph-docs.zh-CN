@@ -2,15 +2,15 @@
 title: auditActor 资源类型
 description: 包含审核主角的属性的类。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 653731b4ce04ec39317017ca9ae28e3d36ae3573
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1b6c6eadca68c8c41bc13b9aee3dd547ae1f7921
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59123137"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450057"
 ---
 # <a name="auditactor-resource-type"></a>auditActor 资源类型
 
@@ -57,7 +57,6 @@ ms.locfileid: "59123137"
   "userId": "String"
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: 更新 windows10CompliancePolicy
 description: 更新 windows10CompliancePolicy 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ea25c26bed70651f63989aaaf992d54010096a93
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: decd42b91e71fb8a5ebdf5d700d6372d3447cbff
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59016335"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60453952"
 ---
 # <a name="update-windows10compliancepolicy"></a>更新 windows10CompliancePolicy
 
@@ -154,7 +154,6 @@ Content-Length: 1126
   "storageRequireEncryption": true
 }
 ```
-
 
 
 

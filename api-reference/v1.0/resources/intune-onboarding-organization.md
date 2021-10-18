@@ -2,15 +2,15 @@
 title: 组织资源类型
 description: 组织资源表示在租户级别操作和配置的全局设置和资源的实例。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a65b4a42c9850ca01f293b9eed204da85e4192a8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5f974ae033389deba42a838f122e2b2bb200db84
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59094252"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454775"
 ---
 # <a name="organization-resource-type"></a>组织资源类型
 
@@ -52,7 +52,6 @@ ms.locfileid: "59094252"
   "mobileDeviceManagementAuthority": "String"
 }
 ```
-
 
 
 

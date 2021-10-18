@@ -2,15 +2,15 @@
 title: editionUpgradeLicenseType 枚举类型
 description: 版本升级许可证类型
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 91be90a7ac2cdacfbf9a0bf1c8d22c5d10ef41dc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 29b2d74fa89b66df452e1adec43e7d0a2d5abdec
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139798"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446643"
 ---
 # <a name="editionupgradelicensetype-enum-type"></a>editionUpgradeLicenseType 枚举类型
 
@@ -25,7 +25,6 @@ ms.locfileid: "59139798"
 |:---|:---|:---|
 |productKey|0|产品密钥类型|
 |licenseFile|1|许可证文件类型|
-
 
 
 

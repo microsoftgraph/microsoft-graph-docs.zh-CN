@@ -2,15 +2,15 @@
 title: ratingNewZealandTelevisionType 枚举类型
 description: 新西兰的电视内容分级标签
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 015559beb9ec29db85b534a99f811b1fe66d74ec
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5f22f67f8490e5a52ee10460888077a99882ff97
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59015579"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60455728"
 ---
 # <a name="ratingnewzealandtelevisiontype-enum-type"></a>ratingNewZealandTelevisionType 枚举类型
 
@@ -28,7 +28,6 @@ ms.locfileid: "59015579"
 |general|2|G 分类排除可能危害 14 以下儿童的材料|
 |parentalGuidance|3|PGR 分类鼓励家长和监护人监督较新的查看者|
 |一些|4 |AO 分类不适合子级|
-
 
 
 

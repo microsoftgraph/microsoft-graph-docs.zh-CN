@@ -2,15 +2,15 @@
 title: 更新 enrollmentConfigurationAssignment
 description: 更新 enrollmentConfigurationAssignment 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c2d2f95f4e966429efd0aff3364b4e28a7927ee3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9856828d9f9558f0d86494ee37229979f38a1340
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59094777"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60452921"
 ---
 # <a name="update-enrollmentconfigurationassignment"></a>更新 enrollmentConfigurationAssignment
 
@@ -41,7 +41,7 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -93,7 +93,6 @@ Content-Length: 274
   }
 }
 ```
-
 
 
 

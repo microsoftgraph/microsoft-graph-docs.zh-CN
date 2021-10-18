@@ -2,15 +2,15 @@
 title: localizedNotificationMessage 资源类型
 description: 指定区域设置的通知消息模板的文本内容。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1fe179c45c4ce332880eb5532720a2df141e1243
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1c5c472376bc2dac15d3fff8dcaad1a655020363
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59044550"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60445075"
 ---
 # <a name="localizednotificationmessage-resource-type"></a>localizedNotificationMessage 资源类型
 
@@ -61,7 +61,6 @@ ms.locfileid: "59044550"
   "isDefault": true
 }
 ```
-
 
 
 

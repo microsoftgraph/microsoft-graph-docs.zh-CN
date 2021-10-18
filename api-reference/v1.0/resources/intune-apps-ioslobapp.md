@@ -2,15 +2,15 @@
 title: iosLobApp 资源类型
 description: 包含 iOS 业务线应用的属性和继承的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6b02866ab6adcb9185d8ea92a41a6e96ca3e05ad
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0a95fb1aa49e13806ab23a48d6ffd02541de265e
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59137614"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454500"
 ---
 # <a name="ioslobapp-resource-type"></a>iosLobApp 资源类型
 
@@ -119,7 +119,6 @@ ms.locfileid: "59137614"
   "buildNumber": "String"
 }
 ```
-
 
 
 

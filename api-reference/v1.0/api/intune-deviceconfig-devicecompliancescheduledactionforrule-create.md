@@ -2,15 +2,15 @@
 title: 创建 deviceComplianceScheduledActionForRule
 description: 创建新的 deviceComplianceScheduledActionForRule 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3a3feffa386c705137cf5918e6d9234d1eb90f72
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2fddacdbd203d161aa0917fabae34f2b42dc7695
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59099810"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454276"
 ---
 # <a name="create-devicecompliancescheduledactionforrule"></a>创建 deviceComplianceScheduledActionForRule
 
@@ -41,7 +41,7 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/sched
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -52,7 +52,7 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/sched
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|ruleName|String|此计划操作适用的规则名称。|
+|ruleName|String|此计划操作适用的规则名称。 当前计划的操作是按策略而不是按规则创建的，因此 RuleName 始终设置为默认值 PasswordRequired。|
 
 
 
@@ -87,7 +87,6 @@ Content-Length: 163
   "ruleName": "Rule Name value"
 }
 ```
-
 
 
 

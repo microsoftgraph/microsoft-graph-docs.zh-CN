@@ -2,15 +2,15 @@
 title: 删除 deviceCategory
 description: 删除 deviceCategory。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d62ad48035eb2fd650517fb78499d1cb41b0d516
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b562aed3c81749095c94d7e1c7d6675f7649f6c1
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59146924"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454423"
 ---
 # <a name="delete-devicecategory"></a>删除 deviceCategory
 
@@ -63,7 +63,6 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceCategories/{devic
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 
