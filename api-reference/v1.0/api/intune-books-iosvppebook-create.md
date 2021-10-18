@@ -2,15 +2,15 @@
 title: 创建 iosVppEBook
 description: 创建新的 iosVppEBook 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d33545d497d3da21c0e8a2fc6af329b7d710d105
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e48479a520f866d03d7fde2df477c574e8b619c5
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59032907"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60453686"
 ---
 # <a name="create-iosvppebook"></a>创建 iosVppEBook
 
@@ -145,7 +145,6 @@ Content-Length: 964
   "usedLicenseCount": 0
 }
 ```
-
 
 
 

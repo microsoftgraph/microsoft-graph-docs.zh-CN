@@ -2,15 +2,15 @@
 title: 获取 managedEBook
 description: 读取 managedEBook 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 58987f7be98e05efc588d559a19d9aa117a74738
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7f5c1057e16c7117499cf0d803ccb56adf573ad9
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59090528"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451799"
 ---
 # <a name="get-managedebook"></a>获取 managedEBook
 
@@ -88,7 +88,6 @@ Content-Length: 712
   }
 }
 ```
-
 
 
 

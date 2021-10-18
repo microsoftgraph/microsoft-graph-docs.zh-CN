@@ -2,15 +2,15 @@
 title: 删除 mdmWindowsInformationProtectionPolicy
 description: 删除 mdmWindowsInformationProtectionPolicy。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f43eb97a9ad28fb4ec3edbec275cf8939b80e212
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d20733f2c4b560cd75f56a9d9a740717bb3a3a51
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59032753"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60455968"
 ---
 # <a name="delete-mdmwindowsinformationprotectionpolicy"></a>删除 mdmWindowsInformationProtectionPolicy
 
@@ -63,7 +63,6 @@ DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/mdmWindowsInformatio
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

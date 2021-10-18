@@ -2,15 +2,15 @@
 title: getCompliancePolicyNonComplianceReport 操作
 description: 尚未记录
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 99651044e2012f479e8a36f4ab8071af3a509cc2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c4cebdba081b7faab75b118eeada4cd022c3c882
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59113992"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446650"
 ---
 # <a name="getcompliancepolicynoncompliancereport-action"></a>getCompliancePolicyNonComplianceReport 操作
 
@@ -106,7 +106,6 @@ Content-Length: 111
   "value": "Z2V0Q29tcGxpYW5jZVBvbGljeU5vbkNvbXBsaWFuY2VSZXBvcnQgSW50dW5lIERvYyBTYW1wbGUgMTA0ODU4MDU5OQ=="
 }
 ```
-
 
 
 

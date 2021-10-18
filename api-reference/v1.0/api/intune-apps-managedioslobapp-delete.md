@@ -2,15 +2,15 @@
 title: 删除 managedIOSLobApp
 description: 删除 managedIOSLobApp。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 874fdf6df81cc6ec2ad312f227caaebdcb4574bf
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4e397d287930bce6f186c4539c1db4d75b52dde5
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59073665"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451827"
 ---
 # <a name="delete-managedioslobapp"></a>删除 managedIOSLobApp
 
@@ -63,7 +63,6 @@ DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

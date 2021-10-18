@@ -2,15 +2,15 @@
 title: 创建 androidGeneralDeviceConfiguration
 description: 创建新的 androidGeneralDeviceConfiguration 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6ea5863b99652c1e74ebb7a50340fd1b43fb3bc2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6274254550edd25e0ef49bfb5c4aeab0df69834a
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59140470"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60453075"
 ---
 # <a name="create-androidgeneraldeviceconfiguration"></a>创建 androidGeneralDeviceConfiguration
 
@@ -321,7 +321,6 @@ Content-Length: 3205
   "securityRequireVerifyApps": true
 }
 ```
-
 
 
 

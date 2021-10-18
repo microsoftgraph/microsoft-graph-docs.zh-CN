@@ -2,15 +2,15 @@
 title: termsAndConditions 资源类型
 description: TermsAndConditions 实体表示给定条款和条件 (T&C) 策略的元数据和内容。 当用户第一次尝试注册到 Intune 时向用户显示 T&C 策略的内容，之后会在进行了管理员要求重新接受的编辑时显示。 这允许管理员与用户必须同意的预配进行通信，以便将设备注册到 Intune 中。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 136e351386deef49c6833e56e997e18ff4fd7454
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c31c0ac86075bcf8c9d74f82efb6fefabf374dfc
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59007073"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451195"
 ---
 # <a name="termsandconditions-resource-type"></a>termsAndConditions 资源类型
 
@@ -70,7 +70,6 @@ TermsAndConditions 实体表示给定条款和条件 (T&C) 策略的元数据和
   "version": 1024
 }
 ```
-
 
 
 

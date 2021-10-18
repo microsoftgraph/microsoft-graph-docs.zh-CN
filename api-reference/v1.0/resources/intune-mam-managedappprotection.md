@@ -2,15 +2,15 @@
 title: managedAppProtection 资源类型
 description: 用于为指定的一组应用配置详细管理设置的策略
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4d83fe815a9c6ead2183054bf34a9e679bbb71a0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 261ed4092621c25b056a09d23f81c0aaf66ee76f
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59098711"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60452858"
 ---
 # <a name="managedappprotection-resource-type"></a>managedAppProtection 资源类型
 
@@ -65,7 +65,7 @@ ms.locfileid: "59098711"
 |minimumWarningOsVersion|String|低于指定版本的版本将导致托管应用访问公司数据时出现警告消息。|
 |minimumRequiredAppVersion|String|低于指定版本的版本将阻止托管应用访问公司数据。|
 |minimumWarningAppVersion|String|低于指定版本的版本将导致托管应用出现警告消息。|
-|managedBrowser|[managedBrowserType](../resources/intune-mam-managedbrowsertype.md)|指示应在哪个托管 () 打开 Internet 链接。 配置此属性时，ManagedBrowserToOpenLinksRequired 应为 true。 可取值为：`notConfigured`、`microsoftEdge`。|
+|managedBrowser|[managedBrowserType](../resources/intune-mam-managedbrowsertype.md)|指示应在哪个托管 (浏览器) 打开 Internet 链接。 配置此属性时，ManagedBrowserToOpenLinksRequired 应为 true。 可取值为：`notConfigured`、`microsoftEdge`。|
 
 ## <a name="relationships"></a>关系
 无
@@ -118,7 +118,6 @@ ms.locfileid: "59098711"
   "managedBrowser": "String"
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: 更新 managedIOSStoreApp
 description: 更新 managedIOSStoreApp 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: be1db54c217ef14ab35e704048ddfc0cefc942ff
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c598971946f1456a2aa6dae3159c222901de238f
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59100069"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454045"
 ---
 # <a name="update-managediosstoreapp"></a>更新 managedIOSStoreApp
 
@@ -41,7 +41,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -173,7 +173,6 @@ Content-Length: 1296
   }
 }
 ```
-
 
 
 

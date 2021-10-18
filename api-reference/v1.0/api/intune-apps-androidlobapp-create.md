@@ -2,15 +2,15 @@
 title: 创建 androidLobApp
 description: 创建新的 androidLobApp 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 224b78a75e45a67429540483e0cc280a34cb91c7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ae54a9db80262f36a475d324592ef4a24044aa1f
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59008096"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60453103"
 ---
 # <a name="create-androidlobapp"></a>创建 androidLobApp
 
@@ -174,7 +174,6 @@ Content-Length: 1287
   "versionCode": "Version Code value"
 }
 ```
-
 
 
 

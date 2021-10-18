@@ -2,15 +2,15 @@
 title: deviceThreatProtectionLevel 枚举类型
 description: 设备威胁防护 API 的设备威胁防护级别。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7abddf2e31a1e435c32116637bd2ddfebd6a6cf8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 937d77e69312ac4957c4fd7ad364c0fe5817c213
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59142780"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450487"
 ---
 # <a name="devicethreatprotectionlevel-enum-type"></a>deviceThreatProtectionLevel 枚举类型
 
@@ -29,7 +29,6 @@ ms.locfileid: "59142780"
 |中等|3|设备威胁防护级别要求：中等。 中等表示威胁的严重性，对设备或设备数据带来中等风险。|
 |high|4 |设备威胁防护级别要求：高。 高表示威胁的严重性，对设备或设备数据带来高风险。|
 |notSet|10 |设备威胁防护级别要求：未设置。 未设置表示设备无需满足威胁防护级别。|
-
 
 
 

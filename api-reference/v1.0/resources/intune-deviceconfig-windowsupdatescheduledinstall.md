@@ -2,15 +2,15 @@
 title: windowsUpdateScheduledInstall 资源类型
 description: 尚未记录
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 535259eb7fabb3b68e0cf9e76ba081c87e569703
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6a29525c9c2150063bd0fe7c8efc3564b7ce12ee
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59067127"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449332"
 ---
 # <a name="windowsupdatescheduledinstall-resource-type"></a>windowsUpdateScheduledInstall 资源类型
 
@@ -46,7 +46,6 @@ ms.locfileid: "59067127"
   "scheduledInstallTime": "String (time of day)"
 }
 ```
-
 
 
 

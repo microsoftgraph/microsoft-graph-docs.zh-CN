@@ -2,15 +2,15 @@
 title: 获取 windowsPhone81GeneralConfiguration
 description: 读取 windowsPhone81GeneralConfiguration 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 169067b41267430faafb94f0aabd10519ea548fd
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9b55cbc57923eacb984bb66afa0a7cced7be0cbc
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59029470"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449094"
 ---
 # <a name="get-windowsphone81generalconfiguration"></a>获取 windowsPhone81GeneralConfiguration
 
@@ -117,7 +117,6 @@ Content-Length: 1740
   }
 }
 ```
-
 
 
 

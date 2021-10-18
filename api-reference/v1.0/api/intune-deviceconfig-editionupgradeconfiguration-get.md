@@ -2,15 +2,15 @@
 title: 获取 editionUpgradeConfiguration
 description: 读取 editionUpgradeConfiguration 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e1cb49d2d2fbd17357a159ef6932ebe3bf3929e5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: dadc8d6838cdbb69591ebc693f8d12a4f4aaf49f
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59037682"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60452114"
 ---
 # <a name="get-editionupgradeconfiguration"></a>获取 editionUpgradeConfiguration
 
@@ -84,7 +84,6 @@ Content-Length: 524
   }
 }
 ```
-
 
 
 

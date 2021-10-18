@@ -2,15 +2,15 @@
 title: 创建 enrollmentConfigurationAssignment
 description: 创建新的 enrollmentConfigurationAssignment 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2bf7b626ed019901b884c451573422e4d9e1d288
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2abc3eec5058ec5dcb63bfb4933a1b8c846c288c
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59063088"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446756"
 ---
 # <a name="create-enrollmentconfigurationassignment"></a>创建 enrollmentConfigurationAssignment
 
@@ -93,7 +93,6 @@ Content-Length: 274
   }
 }
 ```
-
 
 
 

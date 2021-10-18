@@ -2,15 +2,15 @@
 title: iosVppEBook 资源类型
 description: 包含 iOS Vpp eBook的属性的类。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 256fe5ce3648de9e86d68eaa5d24741178fcb76a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 97e397ec96119b549fdb8187b3ddc9ab8ea858a7
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59007192"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449388"
 ---
 # <a name="iosvppebook-resource-type"></a>iosVppEBook 资源类型
 
@@ -99,7 +99,6 @@ ms.locfileid: "59007192"
   "usedLicenseCount": 1024
 }
 ```
-
 
 
 

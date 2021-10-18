@@ -2,15 +2,15 @@
 title: mediaContentRatingUnitedKingdom 资源类型
 description: 尚未记录
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 621ccbeb6b22c8485aa53b372a8745311fb3d1a1
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c464d67b1ccee6998d3d52a4ba6e90ec84458aa8
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59089569"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447254"
 ---
 # <a name="mediacontentratingunitedkingdom-resource-type"></a>mediaContentRatingUnitedKingdom 资源类型
 
@@ -43,7 +43,6 @@ ms.locfileid: "59089569"
   "tvRating": "String"
 }
 ```
-
 
 
 

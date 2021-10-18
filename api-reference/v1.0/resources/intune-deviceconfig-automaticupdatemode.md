@@ -2,15 +2,15 @@
 title: automaticUpdateMode 枚举类型
 description: 自动更新模式的可能值。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e3a076fcc88cb64ddeebddcb7f97c3e77c2b34ec
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 55f706fb15ab2c6f40800ea9b2170977de8b3c65
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59136479"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60455742"
 ---
 # <a name="automaticupdatemode-enum-type"></a>automaticUpdateMode 枚举类型
 
@@ -28,8 +28,7 @@ ms.locfileid: "59136479"
 |autoInstallAtMaintenanceTime|2|在维护时自动安装。|
 |autoInstallAndRebootAtMaintenanceTime|3|在维护时自动安装和重启。|
 |autoInstallAndRebootAtScheduledTime|4 |按计划时间自动安装和重启。|
-|autoInstallAndRebootWithoutEndUserControl|5 |在没有最终用户控制的情况下自动安装和重启|
-
+|autoInstallAndRebootWithoutEndUserControl|5|在没有最终用户控制的情况下自动安装和重启|
 
 
 

@@ -5,24 +5,24 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 98d0416c47695a757c4daa939a9f1b7c8e745fc1
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5feb228b1cc29d6a2f608431520cca78591f8b5b
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59094091"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60452655"
 ---
 # <a name="resourceaccess-resource-type"></a>resourceAccess 资源类型
 
 命名空间：microsoft.graph
 
-指定 OAuth 2.0 权限范围或应用程序所需的应用程序角色。 **requiredResourceAccess** 类型的 [resourceAccess](requiredresourceaccess.md)属性是 **ResourceAccess 的集合**。
+用于通过 [requiredResourceAccess](requiredresourceaccess.md)资源类型的 **resourceAccess** 属性指定 OAuth 2.0 权限范围或应用程序所需的应用程序角色的对象。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|id|Guid|资源应用程序公开其中一个 [oauth2PermissionScopes](permissionscope.md) 或 [appRole](approle.md) 实例的唯一标识符。|
-|type|String|指定 id **属性引用** [oauth2PermissionScopes](permissionscope.md) 还是 [appRole](approle.md)。 可能的值为 `Scope` 或 `Role`。|
+|id|GUID|资源应用程序公开其中一个 [oauth2PermissionScopes](permissionscope.md) 或 [appRole](approle.md) 实例的唯一标识符。|
+|type|String|指定 id **属性引用** [oauth2PermissionScopes](permissionscope.md) 还是 [appRole](approle.md)。 可能的值包括 `Scope` ： (OAuth 2.0 权限范围) 或 (`Role` 应用角色) 。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -38,8 +38,8 @@ ms.locfileid: "59094091"
 
 ```json
 {
-  "id": "guid",
-  "type": "string"
+  "id": "GUID",
+  "type": "String"
 }
 
 ```

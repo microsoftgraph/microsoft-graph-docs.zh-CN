@@ -2,15 +2,15 @@
 title: deviceCompliancePolicySettingState 资源类型
 description: 给定设备的设备符合性策略设置状态。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2ee19a9059ff6fa15bd13c9dfc4a789a40dfb989
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 05cfe56fc0ca2c3ebb2c36293aabc807db1fc089
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59072293"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450050"
 ---
 # <a name="devicecompliancepolicysettingstate-resource-type"></a>deviceCompliancePolicySettingState 资源类型
 
@@ -70,7 +70,6 @@ ms.locfileid: "59072293"
   "currentValue": "String"
 }
 ```
-
 
 
 

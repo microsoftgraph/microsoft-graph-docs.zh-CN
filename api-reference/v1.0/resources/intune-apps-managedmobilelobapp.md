@@ -2,15 +2,15 @@
 title: managedMobileLobApp 资源类型
 description: 包含所有托管移动业务线应用的属性的抽象基类。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 436e4b65a900fe7ad8c5933dad23e46a04f47ca7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 21bea4c42d2f89f6779f9807df48c248ece557f5
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59123228"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60453644"
 ---
 # <a name="managedmobilelobapp-resource-type"></a>managedMobileLobApp 资源类型
 
@@ -95,7 +95,6 @@ ms.locfileid: "59123228"
   "size": 1024
 }
 ```
-
 
 
 

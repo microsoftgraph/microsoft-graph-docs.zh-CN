@@ -2,15 +2,15 @@
 title: windowsUniversalAppX 资源类型
 description: 包含 Windows Universal AppX 业务线应用的属性和继承的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c3c7bd2e8c093558b40beffc316e4f8e67661a2e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 535e038fec24d8e658ff388dd673e7ba7deceee0
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59067336"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449493"
 ---
 # <a name="windowsuniversalappx-resource-type"></a>windowsUniversalAppX 资源类型
 
@@ -115,7 +115,6 @@ ms.locfileid: "59067336"
   "identityVersion": "String"
 }
 ```
-
 
 
 

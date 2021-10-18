@@ -2,15 +2,15 @@
 title: fileEncryptionInfo 资源类型
 description: 包含业务线应用内容版本文件加密信息的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: dafbbe5b90a098ed1b3c26226a0dad031b95a539
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: abf8e5372d305fc3144fc80afd05c16ee8cc50f9
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59089688"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446728"
 ---
 # <a name="fileencryptioninfo-resource-type"></a>fileEncryptionInfo 资源类型
 
@@ -53,7 +53,6 @@ ms.locfileid: "59089688"
   "fileDigestAlgorithm": "String"
 }
 ```
-
 
 
 

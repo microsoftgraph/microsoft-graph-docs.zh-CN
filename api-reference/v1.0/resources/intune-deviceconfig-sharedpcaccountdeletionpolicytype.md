@@ -2,15 +2,15 @@
 title: sharedPCAccountDeletionPolicyType 枚举类型
 description: 在共享电脑上删除帐户时的可能值。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 621775b9e3ba10d13cbad8d96f5ffda70834cb43
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f41cfc20132577d11d94cdd66d28cdccfa203b4f
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59067162"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457300"
 ---
 # <a name="sharedpcaccountdeletionpolicytype-enum-type"></a>sharedPCAccountDeletionPolicyType 枚举类型
 
@@ -26,7 +26,6 @@ ms.locfileid: "59067162"
 |immediate|0|立即删除。|
 |diskSpaceThreshold|1|达到磁盘空间阈值时删除。|
 |diskSpaceThresholdOrInactiveThreshold|2|达到磁盘空间阈值或非活动阈值时删除。|
-
 
 
 

@@ -2,15 +2,15 @@
 title: 获取 windows10EndpointProtectionConfiguration
 description: 读取 windows10EndpointProtectionConfiguration 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: face88e3549b2b7c829318b218ce790f994ae6e8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1dac9b6bd73e5efefc8d694c0771e68ed3ddf75a
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59105151"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454535"
 ---
 # <a name="get-windows10endpointprotectionconfiguration"></a>获取 windows10EndpointProtectionConfiguration
 
@@ -169,7 +169,6 @@ Content-Length: 4628
   }
 }
 ```
-
 
 
 

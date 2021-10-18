@@ -2,15 +2,15 @@
 title: 列出 deviceEnrollmentLimitConfigurations
 description: 列出 deviceEnrollmentLimitConfiguration 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f11c3ffb23e0bbacf47bf7553bb17d0416dd868c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 525ad63ee636e9cce161e760d6f320a15c122592
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59110464"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454416"
 ---
 # <a name="list-deviceenrollmentlimitconfigurations"></a>列出 deviceEnrollmentLimitConfigurations
 
@@ -41,7 +41,7 @@ GET /deviceManagement/deviceEnrollmentConfigurations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -81,7 +81,6 @@ Content-Length: 446
   ]
 }
 ```
-
 
 
 

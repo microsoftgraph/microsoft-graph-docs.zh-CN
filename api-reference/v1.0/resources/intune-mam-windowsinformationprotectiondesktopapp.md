@@ -2,15 +2,15 @@
 title: windowsInformationProtectionDesktopApp 资源类型
 description: 用于 Windows 信息保护的桌面应用
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d2f3d5d9b75e3770f635667d5fc0d305e178c3a0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0a9a0658e145d446a2291655674d12d785a683f6
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59062549"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60452851"
 ---
 # <a name="windowsinformationprotectiondesktopapp-resource-type"></a>windowsInformationProtectionDesktopApp 资源类型
 
@@ -58,7 +58,6 @@ ms.locfileid: "59062549"
   "binaryVersionHigh": "String"
 }
 ```
-
 
 
 

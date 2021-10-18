@@ -2,15 +2,15 @@
 title: deviceManagementExportJobLocalizationType 枚举类型
 description: 配置所请求的导出作业的本地化方式
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e15e66067cd627ad2dcc37f76feecaec3bb29ad8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: bd7ea9ac34125224c1ca54270cc919807dfafb3e
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59036345"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448918"
 ---
 # <a name="devicemanagementexportjoblocalizationtype-enum-type"></a>deviceManagementExportJobLocalizationType 枚举类型
 
@@ -25,7 +25,6 @@ ms.locfileid: "59036345"
 |:---|:---|:---|
 |localizedValuesAsAdditionalColumn|0|配置导出作业以将本地化值作为附加列公开|
 |replaceLocalizableValues|1|配置导出作业以将可枚举值替换为其本地化值|
-
 
 
 

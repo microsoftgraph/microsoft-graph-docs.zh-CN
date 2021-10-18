@@ -2,15 +2,15 @@
 title: visibilitySetting 枚举类型
 description: 通用可见性状态。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3bd519ff3ad2f23eef3df23194e02840df4659c3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d604eec156050c84e3415c6380c7b5fe11e2e23b
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59072244"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447177"
 ---
 # <a name="visibilitysetting-enum-type"></a>visibilitySetting 枚举类型
 
@@ -26,7 +26,6 @@ ms.locfileid: "59072244"
 |notConfigured|0|未配置。|
 |hide|1|隐藏。|
 |show|2|显示。|
-
 
 
 

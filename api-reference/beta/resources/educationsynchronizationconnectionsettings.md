@@ -1,16 +1,16 @@
 ---
 title: educationSynchronizationConnectionSettings 资源类型
-description: '表示提供程序连接设置。 这使系统可以了解如何连接到提供程序 Api。 '
+description: '表示提供程序连接设置。 这允许系统了解如何连接到提供程序 API。 '
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 449dc1c4265355d55e6d3ceb51fe86be9f84ac31
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7b64b52946e2391378a34ee3cba3db852d61666d
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47979558"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60445898"
 ---
 # <a name="educationsynchronizationconnectionsettings-resource-type"></a>educationSynchronizationConnectionSettings 资源类型
 
@@ -18,10 +18,10 @@ ms.locfileid: "47979558"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示提供程序连接设置。 这使系统可以了解如何连接到提供程序 Api。
+表示提供程序连接设置。 这允许系统了解如何连接到提供程序 API。
 
 > [!NOTE]
-> 此复杂类型是抽象的。 请参阅列出的特定类型的连接设置。
+> 此复杂类型为抽象类型。 请参阅列出的特定类型的连接设置。
 
 ## <a name="derived-types"></a>派生类型
 
@@ -35,6 +35,21 @@ ms.locfileid: "47979558"
 | 属性     | 类型   | 说明                                                   |
 | :----------- | :----- | :------------------------------------------------------------ |
 | clientId     | 字符串 | 用于连接到提供程序的客户端 ID。                    |
-| clientSecret | 字符串 | 用于对与提供程序的连接进行身份验证的客户端密码。 |
+| clientSecret | 字符串 | 用于验证与提供程序的连接的客户端密码。 |
 
+## <a name="json-representation"></a>JSON 表示形式
 
+下面是此资源的 JSON 表示形式。
+
+<!-- {
+  "blockType": "resource",
+   "isAbstract":true,
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.educationSynchronizationConnectionSettings"
+}-->
+
+```json
+{}
+```

@@ -2,15 +2,15 @@
 title: iosMinimumOperatingSystem 资源类型
 description: 包含 iOS 移动应用需要的最低操作系统的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f7e10245c8541dd67435b7164760931ffa624435
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 043466eba844f12ea2d38155106198522afb4d3d
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59109127"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60455870"
 ---
 # <a name="iosminimumoperatingsystem-resource-type"></a>iosMinimumOperatingSystem 资源类型
 
@@ -53,7 +53,6 @@ ms.locfileid: "59109127"
   "v14_0": true
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: windowsMobileMSI 资源类型
 description: 包含 Windows Mobile MSI 业务线应用的属性和继承的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 30aa37496ae4fa25817e858ef416202ce56791b2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c09e3c604a863763002450fe07911d80283b3d6a
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59118486"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449501"
 ---
 # <a name="windowsmobilemsi-resource-type"></a>windowsMobileMSI 资源类型
 
@@ -102,7 +102,6 @@ ms.locfileid: "59118486"
   "ignoreVersionDetection": true
 }
 ```
-
 
 
 

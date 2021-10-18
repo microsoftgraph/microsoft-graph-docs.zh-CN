@@ -2,15 +2,15 @@
 title: deviceManagementReportFileFormat 枚举类型
 description: 报告的文件格式的可能值
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 09442debb24ecb6e1b0577e789730a2a96c113ee
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: bec897a1ba9bd8e79373aa3a4e28761b86748d64
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59036338"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448911"
 ---
 # <a name="devicemanagementreportfileformat-enum-type"></a>deviceManagementReportFileFormat 枚举类型
 
@@ -25,7 +25,6 @@ ms.locfileid: "59036338"
 |:---|:---|:---|
 |csv|0|逗号分隔值|
 |pdf|1|Portable Document Format|
-
 
 
 

@@ -2,15 +2,15 @@
 title: 删除 iosCompliancePolicy
 description: 删除 iosCompliancePolicy。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b97cf8e45d042e0ea173ada2943f3fb3246623cc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a03f5614f33d5ff95b23e03f9167bc8d97799a29
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59073378"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451266"
 ---
 # <a name="delete-ioscompliancepolicy"></a>删除 iosCompliancePolicy
 
@@ -63,7 +63,6 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicie
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

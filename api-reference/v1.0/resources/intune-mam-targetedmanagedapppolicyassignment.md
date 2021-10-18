@@ -2,15 +2,15 @@
 title: targetedManagedAppPolicyAssignment 资源类型
 description: 组或应用的部署类型。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0833e8661c3a01e2574be6a2cc0efb1d8e4e12d5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 798c3ac86a07c2f5113a07ba89f1f4f8a65d9264
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59148240"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60453300"
 ---
 # <a name="targetedmanagedapppolicyassignment-resource-type"></a>targetedManagedAppPolicyAssignment 资源类型
 
@@ -55,7 +55,6 @@ ms.locfileid: "59148240"
   }
 }
 ```
-
 
 
 

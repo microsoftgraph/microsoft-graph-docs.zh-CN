@@ -2,15 +2,15 @@
 title: 更新 managedAndroidLobApp
 description: 更新 managedAndroidLobApp 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 50f6238406426f8f562932662a79b7f92cd06d7a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 19148317d51864948d339b5d0d308a659f2bb05f
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59050465"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60435804"
 ---
 # <a name="update-managedandroidlobapp"></a>更新 managedAndroidLobApp
 
@@ -180,7 +180,6 @@ Content-Length: 1365
   "versionCode": "Version Code value"
 }
 ```
-
 
 
 

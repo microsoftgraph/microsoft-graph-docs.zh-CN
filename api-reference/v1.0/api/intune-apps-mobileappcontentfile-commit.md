@@ -2,15 +2,15 @@
 title: commit 操作
 description: 提交给定应用的文件。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 622064de6ccf4720f8aa60028405a5756177bb51
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ea1f64fadc471208ae2021d02031bb0819451996
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59079895"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447796"
 ---
 # <a name="commit-action"></a>提交操作
 
@@ -87,7 +87,6 @@ Content-length: 399
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

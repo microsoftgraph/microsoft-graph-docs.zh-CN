@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: keylimesoda
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: b5b5d67be7d94ca2400c29b4a05415f979419e9e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2dea299fa794877e2e180cb2fadcb3cd8480adb5
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59089793"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448034"
 ---
 # <a name="directoryobject-resource-type"></a>directoryObject 资源类型
 
@@ -25,6 +25,7 @@ ms.locfileid: "59089793"
 |[获取 directoryObject](../api/directoryobject-get.md) | [directoryObject](directoryobject.md) |读取 directory 对象的属性。|
 |[删除 directoryObject](../api/directoryobject-delete.md) | 无 |删除 directory 对象。 |
 |[checkMemberGroups](../api/directoryobject-checkmembergroups.md)|String collection|检查组列表中的成员身份。检查是可传递的。|
+|[checkMemberObjects](../api/user-checkmemberobjects.md)|String 集合|检查指定用户对象的组或目录角色列表中的成员身份。 此方法是可传递的。|
 |[获取可用扩展属性](../api/directoryobject-getavailableextensionproperties.md)|[extensionProperty](../resources/extensionproperty.md) 集合|获取已在目录中注册的目录扩展属性的所有或筛选列表。|
 |[getMemberGroups](../api/directoryobject-getmembergroups.md)|String collection|返回 user、group 或 directory 对象所属的所有组。检查是可传递的。|
 |[getMemberObjects](../api/directoryobject-getmemberobjects.md)|String collection| 返回 user、group 或 directory 对象所属的所有组和目录角色。检查是可传递的。 |

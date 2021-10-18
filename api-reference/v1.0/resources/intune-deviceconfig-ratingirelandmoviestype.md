@@ -2,15 +2,15 @@
 title: ratingIrelandMoviesType 枚举类型
 description: 爱尔兰电影评级标签
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e7fadbf0b9b62f8daf1f50002dc95a9ca7a912af
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 34b4b1820db1543ac8646558f0c12d05e489da2f
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59142661"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449360"
 ---
 # <a name="ratingirelandmoviestype-enum-type"></a>ratingIrelandMoviesType 枚举类型
 
@@ -28,10 +28,9 @@ ms.locfileid: "59142661"
 |general|2|适合学校适中年龄的子|
 |parentalGuidance|3|PG 分类建议家长指南|
 |agesAbove12|4 |12A 分类适用于 12 或更旧的查看者|
-|agesAbove15|5 |15A 分类适用于 15 位或更旧的查看者|
+|agesAbove15|5|15A 分类适用于 15 位或更旧的查看者|
 |agesAbove16|6 |16 分类适用于 16 位或更旧的查看者|
 |一些|7 |18 分类，仅适用于成人|
-
 
 
 

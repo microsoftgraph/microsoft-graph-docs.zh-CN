@@ -2,15 +2,15 @@
 title: bitLockerRemovableDrivePolicy 资源类型
 description: BitLocker 可移动驱动器策略。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9c7ab51d290406bfd9c18d793a77b0b116706110
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f6008e2795717f2fe3134c2158997a367008f33c
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139804"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454073"
 ---
 # <a name="bitlockerremovabledrivepolicy-resource-type"></a>bitLockerRemovableDrivePolicy 资源类型
 
@@ -45,7 +45,6 @@ BitLocker 可移动驱动器策略。
   "blockCrossOrganizationWriteAccess": true
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: deviceGeoLocation 资源类型
 description: 设备位置
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9b3f90df3c0cb4fd9d7165192ffcf6db7339f2bb
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a2e73afda5c149fc58a5c743046d584a130188fc
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59098732"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449763"
 ---
 # <a name="devicegeolocation-resource-type"></a>deviceGeoLocation 资源类型
 
@@ -55,7 +55,6 @@ ms.locfileid: "59098732"
   "speed": "4.2"
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: ratingAustraliaTelevisionType 枚举类型
 description: 澳大利亚电视内容分级标签
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 616d0e35a5c7e8be95b069c4337766d17c40c9fb
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 355de37de884852e6148199ef2d37b41ef491d40
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59053005"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60445512"
 ---
 # <a name="ratingaustraliatelevisiontype-enum-type"></a>ratingAustraliaTelevisionType 枚举类型
 
@@ -28,11 +28,10 @@ ms.locfileid: "59053005"
 |一些|2|P 分类适用于分类者|
 |children|3|C 分类适用于 14 以下的子级|
 |general|4 |G 分类适用于所有年龄|
-|parentalGuidance|5 |建议让年青查看者使用 PG 分类|
+|parentalGuidance|5|建议让年青查看者使用 PG 分类|
 |到期|6 |建议超过 15 的查看者使用 M 分类|
 |agesAbove15|7 |MA15+ 分类不适合 15 以下的查看者|
 |agesAbove15AdultViolence|8 |AV15+ 分类不适用于 15- 成人特定暴力的查看器|
-
 
 
 

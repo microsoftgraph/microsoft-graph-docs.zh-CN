@@ -2,15 +2,15 @@
 title: 更新 managedMobileApp
 description: 更新 managedMobileApp 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e426899df5cf3d7eaa27b8e6c8d85c2907343718
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a76d249bfdc89af6371a0b16b9b1550a1307c77d
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59032774"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457797"
 ---
 # <a name="update-managedmobileapp"></a>更新 managedMobileApp
 
@@ -99,7 +99,6 @@ Content-Length: 275
   "version": "Version value"
 }
 ```
-
 
 
 

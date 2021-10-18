@@ -2,15 +2,15 @@
 title: windows10NetworkProxyServer 资源类型
 description: 网络代理服务器策略。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a6f5562619b2e5ffa26a44cba2eb67a56c787a51
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 22d42ddb59a73a0acccd8b21628e47dbc9614a7f
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59123081"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448546"
 ---
 # <a name="windows10networkproxyserver-resource-type"></a>windows10NetworkProxyServer 资源类型
 
@@ -47,7 +47,6 @@ ms.locfileid: "59123081"
   "useForLocalAddresses": true
 }
 ```
-
 
 
 

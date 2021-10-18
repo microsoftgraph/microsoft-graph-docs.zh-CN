@@ -2,15 +2,15 @@
 title: 获取 iosUpdateConfiguration
 description: 读取 iosUpdateConfiguration 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: be916edf0e4c37999da48997a25e3e1dc1313654
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 921157fd38072662881ad270b1e3baebe68fab5f
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59099726"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447548"
 ---
 # <a name="get-iosupdateconfiguration"></a>获取 iosUpdateConfiguration
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -86,7 +86,6 @@ Content-Length: 542
   }
 }
 ```
-
 
 
 

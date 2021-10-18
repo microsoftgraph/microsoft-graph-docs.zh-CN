@@ -2,15 +2,15 @@
 title: ratingJapanTelevisionType 枚举类型
 description: 日本电视内容分级标签
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a741164845a04e041725eec6dbeb6c78e8acd0fd
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 655a3e3caf4ed30ea22364cb70f0d3ab54e48e84
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59128191"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60445744"
 ---
 # <a name="ratingjapantelevisiontype-enum-type"></a>ratingJapanTelevisionType 枚举类型
 
@@ -26,7 +26,6 @@ ms.locfileid: "59128191"
 |allAllowed|0|默认值，允许所有电视显示内容|
 |allBlocked|1|不允许任何电视展示内容|
 |explicitAllowed|2|显式允许所有电视内容|
-
 
 
 

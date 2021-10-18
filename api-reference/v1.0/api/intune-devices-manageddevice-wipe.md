@@ -2,15 +2,15 @@
 title: wipe 操作
 description: 擦除设备
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c794dacb6277d21999c4e76e723f885b49a74cb8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0a72e52ba181bb4007c6b4bf18d34b4f4f066022
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59090332"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60444544"
 ---
 # <a name="wipe-action"></a>擦除操作
 
@@ -25,9 +25,9 @@ ms.locfileid: "59090332"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.IliiligedOperation.All|
+|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.IliiligedOperation.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.IliiligedOperation.All|
+|应用程序|DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.IliiligedOperation.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -86,7 +86,6 @@ Content-length: 141
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: 获取 managedAppStatusRaw
 description: 读取 managedAppStatusRaw 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ea4313334f34b1525982985732cba41c7d47bc3a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 50b080d288470ba1621603173cd20671fcc403a9
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59073126"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60437049"
 ---
 # <a name="get-managedappstatusraw"></a>获取 managedAppStatusRaw
 
@@ -80,7 +80,6 @@ Content-Length: 279
   }
 }
 ```
-
 
 
 

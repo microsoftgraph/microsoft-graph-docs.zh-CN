@@ -2,15 +2,15 @@
 title: importedWindowsAutopilotDeviceIdentity 资源类型
 description: 导入 Windows AutoPilot 的设备。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6f9fa651547c8b91b371cec7bfe28171edd4fea8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 62c8441a5d96853f8f7f08a7db19f4ea81aa2f7a
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59029015"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454346"
 ---
 # <a name="importedwindowsautopilotdeviceidentity-resource-type"></a>importedWindowsAutopilotDeviceIdentity 资源类型
 
@@ -71,7 +71,6 @@ ms.locfileid: "59029015"
   "assignedUserPrincipalName": "String"
 }
 ```
-
 
 
 

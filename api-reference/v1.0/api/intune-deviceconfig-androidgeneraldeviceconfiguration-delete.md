@@ -2,15 +2,15 @@
 title: 删除 androidGeneralDeviceConfiguration
 description: 删除 androidGeneralDeviceConfiguration。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5458c31958b0a4c6046f6932841c83cc9d4ffbf5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c28b171f302bde04cee1f5702d9a41c4808d92c9
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59140463"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60444997"
 ---
 # <a name="delete-androidgeneraldeviceconfiguration"></a>删除 androidGeneralDeviceConfiguration
 
@@ -63,7 +63,6 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

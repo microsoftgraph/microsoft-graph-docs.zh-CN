@@ -2,15 +2,15 @@
 title: deviceAppManagement 资源类型
 description: 充当所有设备应用管理功能的容器的单例实体。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 33ceef467914c6297cb17274ac3a2a6fdfc99d0e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 72a11c21cd02560f38cce07248d56e7f3e5232e6
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59098662"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450198"
 ---
 # <a name="deviceappmanagement-resource-type"></a>deviceAppManagement 资源类型
 
@@ -59,7 +59,6 @@ ms.locfileid: "59098662"
   "microsoftStoreForBusinessLastCompletedApplicationSyncTime": "String (timestamp)"
 }
 ```
-
 
 
 

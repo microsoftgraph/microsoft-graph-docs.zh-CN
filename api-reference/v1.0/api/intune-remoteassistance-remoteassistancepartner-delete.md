@@ -2,15 +2,15 @@
 title: 删除 remoteAssistancePartner
 description: 删除 remoteAssistancePartner。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 976e6ed18e2cc9c9574ab7be5459682c8ac9978b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e59a4323723c33b4bbf457af4b94c7c607f1e7cf
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59037528"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60445772"
 ---
 # <a name="delete-remoteassistancepartner"></a>删除 remoteAssistancePartner
 
@@ -63,7 +63,6 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/remoteAssistancePartner
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

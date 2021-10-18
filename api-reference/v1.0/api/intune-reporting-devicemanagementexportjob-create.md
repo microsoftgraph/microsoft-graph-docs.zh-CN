@@ -2,15 +2,15 @@
 title: 创建 deviceManagementExportJob
 description: 创建新的 deviceManagementExportJob 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 39d3f8e2ad3b37a8311917328931d7f501d6baae
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 204213d5e9eca15ea8765f6154d27cc8771f276d
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59099516"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60456549"
 ---
 # <a name="create-devicemanagementexportjob"></a>创建 deviceManagementExportJob
 
@@ -41,7 +41,7 @@ POST /deviceManagement/reports/exportJobs
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -118,7 +118,6 @@ Content-Length: 504
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00"
 }
 ```
-
 
 
 

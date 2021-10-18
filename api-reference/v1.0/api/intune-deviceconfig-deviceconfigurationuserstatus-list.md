@@ -2,15 +2,15 @@
 title: 列出 deviceConfigurationUserStatuses
 description: 列出 deviceConfigurationUserStatus 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f25cadc7da99551418bdffe8de83982129922d22
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b48f0525136ce4bea51d81010f98592eb9b5fb20
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59090416"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60452949"
 ---
 # <a name="list-deviceconfigurationuserstatuses"></a>列出 deviceConfigurationUserStatuses
 
@@ -41,7 +41,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/userStatuses
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -79,7 +79,6 @@ Content-Length: 400
   ]
 }
 ```
-
 
 
 

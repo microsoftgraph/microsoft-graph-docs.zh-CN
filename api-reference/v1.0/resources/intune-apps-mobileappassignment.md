@@ -2,15 +2,15 @@
 title: mobileAppAssignment 资源类型
 description: 包含用于移动应用的组分配的属性的类。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b8a635684ea6010bef8eabe7a5244d20024d4389
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f286b39985f310c0a466405fd5814fbbb31e643b
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59123207"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457321"
 ---
 # <a name="mobileappassignment-resource-type"></a>mobileAppAssignment 资源类型
 
@@ -62,7 +62,6 @@ ms.locfileid: "59123207"
   }
 }
 ```
-
 
 
 

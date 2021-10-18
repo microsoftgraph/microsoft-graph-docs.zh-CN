@@ -2,15 +2,15 @@
 title: 获取 deviceConfigurationDeviceStatus
 description: 读取 deviceConfigurationDeviceStatus 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e055dece39166f945c26e46a5ffb8674c5bf0170
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: bfbd4245673db1139afd3d1f119258ebac94cba6
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59105172"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60455693"
 ---
 # <a name="get-deviceconfigurationdevicestatus"></a>获取 deviceConfigurationDeviceStatus
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceStatuse
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -82,7 +82,6 @@ Content-Length: 515
   }
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: win32LobAppRegistryRule 资源类型
 description: 用于存储 Win32 LOB 应用的注册表规则数据的复杂类型。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e96b06d6e8f5ca9836b9bc624e01c9aa6aa49e05
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c3163a3c9baf489e9545a2dc326e88b0fcf5ed2e
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59021692"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60434815"
 ---
 # <a name="win32lobappregistryrule-resource-type"></a>win32LobAppRegistryRule 资源类型
 
@@ -56,7 +56,6 @@ ms.locfileid: "59021692"
   "comparisonValue": "String"
 }
 ```
-
 
 
 

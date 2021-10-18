@@ -2,15 +2,15 @@
 title: 创建 deviceManagementPartner
 description: 创建新的 deviceManagementPartner 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8c7eefb3b6e1bf43479ec0e6013705835500aaaf
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e4333716f4dcf44c05e12407d21014e51dfb68c5
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59099579"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454409"
 ---
 # <a name="create-devicemanagementpartner"></a>创建 deviceManagementPartner
 
@@ -108,7 +108,6 @@ Content-Length: 551
   "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "2016-12-31T23:58:42.2131231-08:00"
 }
 ```
-
 
 
 

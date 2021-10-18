@@ -2,15 +2,15 @@
 title: 更新 managedAndroidStoreApp
 description: 更新 managedAndroidStoreApp 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ac8fa9e6c32103c1604a7436a8f29954d4a2019a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7f98358d6f0c78dab622197810d614ceefd304e8
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59050367"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60444782"
 ---
 # <a name="update-managedandroidstoreapp"></a>更新 managedAndroidStoreApp
 
@@ -168,7 +168,6 @@ Content-Length: 1228
   }
 }
 ```
-
 
 
 

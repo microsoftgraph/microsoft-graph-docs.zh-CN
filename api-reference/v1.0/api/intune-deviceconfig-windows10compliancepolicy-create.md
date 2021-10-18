@@ -2,15 +2,15 @@
 title: 创建 windows10CompliancePolicy
 description: 创建新的 windows10CompliancePolicy 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0e43f191a7ce9eb3d2a3b79189158c13dc757b54
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 95c33f4d7cb357e70cf6ef6640dfd32d0d4d28ae
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59094924"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447352"
 ---
 # <a name="create-windows10compliancepolicy"></a>创建 windows10CompliancePolicy
 
@@ -41,7 +41,7 @@ POST /deviceManagement/deviceCompliancePolicies
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -154,7 +154,6 @@ Content-Length: 1126
   "storageRequireEncryption": true
 }
 ```
-
 
 
 

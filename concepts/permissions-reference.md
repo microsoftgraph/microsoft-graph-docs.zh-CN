@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 1d39965eb95fca26ef29d513fbfa76672374941a
-ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
+ms.openlocfilehash: dcda42adda5a5d5dab0e1688e1550fae1dae656f
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60256072"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447233"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -663,7 +663,6 @@ _CallRecord-PstnCalls.Read.All_ 权限授予应用程序访问 [PSTN（通话套
 * _Contacts.ReadWrite_：将联系人添加到组织中任意用户的根文件夹 (`POST /users/{id | userPrincipalName}/contacts`)。
 
 有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
-
 
 ## <a name="device-permissions"></a>设备权限
 
@@ -1890,6 +1889,29 @@ _Sites.Selected_ 应用程序权限仅在 Microsoft Graph API 中可用。
 * _Sites.FullControl.All_：对 SharePoint 网站和列表的完全访问权限。
 
 ---
+
+## <a name="subject-rights-request-permissions"></a>主体权利请求权限
+
+#### <a name="delegated-permissions"></a>委派权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+SubjectRightsRequest.Read.All* | 读取主体权利请求 | 允许应用代表已登录用户读取主体权利请求。 | 是 | 否 |
+SubjectRightsRequest.ReadWrite.All* | 读取和写入主体权利请求 | 允许应用代表已登录用户读取和写入主体权利请求。 | 是 | 否 |
+
+> **重要** 标有星号 (*) 的权限当前不可用。 有关详细信息，请参阅[已知问题](/graph/known-issues#compliance)。
+
+
+#### <a name="application-permissions"></a>应用程序权限
+无。
+
+### <a name="example-usage"></a>用法示例
+#### <a name="delegated"></a>Delegated
+- SubjectRightsRequest.Read.All_：获取可供用户 (`GET /privacy/subjectrightsrequests`) 使用的主体权利请求列表。
+- _SubjectRightsRequest.ReadWrite.All_：创建主体权利请求 (`POST /privacy/subjectrightsrequests`)。
+
+有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
+
 
 ## <a name="tasks-permissions"></a>任务权限
 

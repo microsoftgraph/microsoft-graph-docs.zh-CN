@@ -2,15 +2,15 @@
 title: iosStoreAppAssignmentSettings 资源类型
 description: 包含用于为组分配 iOS 应用商店移动应用的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: dd5aa2a877b0b25a43395f1d1d96b0b9a1066049
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: bb63e0e9b481508492290ea06eadbe06d7e0b260
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59109113"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60445765"
 ---
 # <a name="iosstoreappassignmentsettings-resource-type"></a>iosStoreAppAssignmentSettings 资源类型
 
@@ -44,7 +44,6 @@ ms.locfileid: "59109113"
   "vpnConfigurationId": "String"
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: 获取 onPremisesConditionalAccessSettings
 description: 读取 onPremisesConditionalAccessSettings 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ff802776fcc6894df63d83bdecbf2469f51fcf1f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 19dfd336d998f7dada11f6d838c257a5fb6bfef3
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59119399"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447100"
 ---
 # <a name="get-onpremisesconditionalaccesssettings"></a>获取 onPremisesConditionalAccessSettings
 
@@ -44,7 +44,7 @@ GET /deviceManagement/conditionalAccessSettings
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -83,7 +83,6 @@ Content-Length: 363
   }
 }
 ```
-
 
 
 

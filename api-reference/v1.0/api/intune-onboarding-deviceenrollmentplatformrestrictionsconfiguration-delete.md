@@ -2,15 +2,15 @@
 title: 删除 deviceEnrollmentPlatformRestrictionsConfiguration
 description: 删除 deviceEnrollmentPlatformRestrictionsConfiguration。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c4042b111942d4a944778068009cc52294ad8f51
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9a4807728a1a89e81a188f05f0c69fc464844c9c
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59110415"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60453763"
 ---
 # <a name="delete-deviceenrollmentplatformrestrictionsconfiguration"></a>删除 deviceEnrollmentPlatformRestrictionsConfiguration
 
@@ -63,7 +63,6 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceEnrollmentConfigu
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

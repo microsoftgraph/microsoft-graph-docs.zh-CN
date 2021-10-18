@@ -2,15 +2,15 @@
 title: welcomeScreenMeetingInformation 枚举类型
 description: 欢迎屏幕会议信息的可能值。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e3ede77f6489e559887e63d6943984e2d9d1957d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6b0fd96b1ae27145f1161370bc85d7b59bc9bd83
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59072153"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446615"
 ---
 # <a name="welcomescreenmeetinginformation-enum-type"></a>welcomeScreenMeetingInformation 枚举类型
 
@@ -26,7 +26,6 @@ ms.locfileid: "59072153"
 |userDefined|0|用户定义，默认值，无意图。|
 |showOrganizerAndTimeOnly|1|只显示组织者和时间。|
 |showOrganizerAndTimeAndSubject|2|为私人会议隐藏 (组织者、时间和主题) 。|
-
 
 
 

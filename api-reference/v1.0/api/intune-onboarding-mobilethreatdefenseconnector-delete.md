@@ -2,15 +2,15 @@
 title: 删除 mobileThreatDefenseConnector
 description: 删除 mobileThreatDefenseConnector。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1d4dbddecf7554d4621de1e45f4e71de4348aa09
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 577fa43510adad01b9f63f16e0164b38b120d1d7
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139931"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449038"
 ---
 # <a name="delete-mobilethreatdefenseconnector"></a>删除 mobileThreatDefenseConnector
 
@@ -63,7 +63,6 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/mobileThreatDefenseConn
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: 更新 managedDeviceMobileAppConfigurationUserStatus
 description: 更新 managedDeviceMobileAppConfigurationUserStatus 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 60fcafb264aec21316e51b766dbee0a888717f06
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 94452dea82b3857ecb394a251eb798a24d34d5c5
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59073707"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60445926"
 ---
 # <a name="update-manageddevicemobileappconfigurationuserstatus"></a>更新 managedDeviceMobileAppConfigurationUserStatus
 
@@ -99,7 +99,6 @@ Content-Length: 355
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

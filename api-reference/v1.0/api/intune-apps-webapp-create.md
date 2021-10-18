@@ -2,15 +2,15 @@
 title: 创建 webApp
 description: 创建新的 webApp 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ed152676a486d288a6f95d8ac1a6d7b7389d597a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 98fc3aa3dc9137a8581f49ba11bd53ca0e242cb1
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59045488"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60452641"
 ---
 # <a name="create-webapp"></a>创建 webApp
 
@@ -135,7 +135,6 @@ Content-Length: 817
   "useManagedBrowser": true
 }
 ```
-
 
 
 

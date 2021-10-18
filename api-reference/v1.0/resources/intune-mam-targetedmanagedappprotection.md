@@ -2,15 +2,15 @@
 title: targetedManagedAppProtection 资源类型
 description: 用于配置针对特定安全组的详细管理设置的策略
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 379e07e1d0d1ecdbbe5593454b67d455dadcae14
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 602a1c2bacf230704c868b6bb357ef62bb7e8425
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59118059"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447366"
 ---
 # <a name="targetedmanagedappprotection-resource-type"></a>targetedManagedAppProtection 资源类型
 
@@ -123,7 +123,6 @@ ms.locfileid: "59118059"
   "isAssigned": true
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: iosVppEBookAssignment 资源类型
 description: 包含用于为组分配 iOS VPP 电子书的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7e5f3650a2d39b0c611ac14b0b22c88f9c9da02c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3c2b0327abf7df07e0eb868fdbac1cb723f8c393
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59007178"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451456"
 ---
 # <a name="iosvppebookassignment-resource-type"></a>iosVppEBookAssignment 资源类型
 
@@ -60,7 +60,6 @@ ms.locfileid: "59007178"
   "installIntent": "String"
 }
 ```
-
 
 
 

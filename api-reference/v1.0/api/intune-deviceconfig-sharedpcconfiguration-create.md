@@ -2,15 +2,15 @@
 title: 创建 sharedPCConfiguration
 description: 创建新的 sharedPCConfiguration 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d16fcf320f4e40518de8a278922626a07572e1ba
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f523a8dd3526c38232f624b203751dbab02b4cd6
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59130830"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451245"
 ---
 # <a name="create-sharedpcconfiguration"></a>创建 sharedPCConfiguration
 
@@ -145,7 +145,6 @@ Content-Length: 1032
   "maintenanceStartTime": "11:59:24.7240000"
 }
 ```
-
 
 
 

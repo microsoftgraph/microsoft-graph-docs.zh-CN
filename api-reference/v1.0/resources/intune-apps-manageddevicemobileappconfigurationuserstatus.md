@@ -2,15 +2,15 @@
 title: managedDeviceMobileAppConfigurationUserStatus 资源类型
 description: 包含某个用户的 MDM 移动应用配置状态的属性、继承属性和操作。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 52d4fb01cfe4768222488d5a04fe8a14f9460619
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f588b991d04566b3d524d036d73876d06df0233c
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59123298"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448672"
 ---
 # <a name="manageddevicemobileappconfigurationuserstatus-resource-type"></a>managedDeviceMobileAppConfigurationUserStatus 资源类型
 
@@ -61,7 +61,6 @@ ms.locfileid: "59123298"
   "userPrincipalName": "String"
 }
 ```
-
 
 
 

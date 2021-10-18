@@ -2,15 +2,15 @@
 title: mobileAppInstallTimeSettings 资源类型
 description: 包含用于确定何时向设备提供应用以及何时在设备上安装应用的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: eeff26a918e12ce0b08685f8c64385ea77e6873c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 63107dec2435ee0b8cbcda2f13febb18e1a64356
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59062668"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457629"
 ---
 # <a name="mobileappinstalltimesettings-resource-type"></a>mobileAppInstallTimeSettings 资源类型
 
@@ -45,7 +45,6 @@ ms.locfileid: "59062668"
   "deadlineDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

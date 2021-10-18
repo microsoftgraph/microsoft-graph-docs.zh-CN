@@ -2,15 +2,15 @@
 title: 更新 deviceComplianceActionItem
 description: 更新 deviceComplianceActionItem 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bbe208741e9d157a147a00ecc6a910db60fc884c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8bf7f3e665aaa907ce16ba4625d2b64e2a58f9f8
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59140197"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451792"
 ---
 # <a name="update-devicecomplianceactionitem"></a>更新 deviceComplianceActionItem
 
@@ -100,7 +100,6 @@ Content-Length: 320
   ]
 }
 ```
-
 
 
 

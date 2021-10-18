@@ -2,15 +2,15 @@
 title: iosManagedAppProtection 资源类型
 description: 用于配置针对特定安全组和 iOS 设备上指定的一组应用的详细管理设置的策略
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b55a28e6be1a9383d7384649e142ac793467c685
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 747e4aa8d370c3befe462b8b126daa9f8e5dfd82
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59113670"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449479"
 ---
 # <a name="iosmanagedappprotection-resource-type"></a>iosManagedAppProtection 资源类型
 
@@ -136,7 +136,6 @@ ms.locfileid: "59113670"
   "customBrowserProtocol": "String"
 }
 ```
-
 
 
 

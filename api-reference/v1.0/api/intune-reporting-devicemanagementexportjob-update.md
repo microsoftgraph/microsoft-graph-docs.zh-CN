@@ -2,15 +2,15 @@
 title: 更新 deviceManagementExportJob
 description: 更新 deviceManagementExportJob 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dba16096e180368101b2bd6283066538c371c9b0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 53b94b37dd98ff94279b11d925cac7ecd0e1d2b8
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59099467"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60445991"
 ---
 # <a name="update-devicemanagementexportjob"></a>更新 deviceManagementExportJob
 
@@ -41,7 +41,7 @@ PATCH /deviceManagement/reports/exportJobs/{deviceManagementExportJobId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -118,7 +118,6 @@ Content-Length: 504
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00"
 }
 ```
-
 
 
 

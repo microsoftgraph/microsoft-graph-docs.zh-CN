@@ -2,15 +2,15 @@
 title: 列出 windows81GeneralConfigurations
 description: 列出 windows81GeneralConfiguration 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d28e03e92ffccf06f4bffbc1d1dc3e2bea748d10
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a4eb81e8963f6307447ab3677800abc500c44b96
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59068101"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449423"
 ---
 # <a name="list-windows81generalconfigurations"></a>列出 windows81GeneralConfigurations
 
@@ -112,7 +112,6 @@ Content-Length: 2058
   ]
 }
 ```
-
 
 
 

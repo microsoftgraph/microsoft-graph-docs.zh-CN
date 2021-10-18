@@ -2,15 +2,15 @@
 title: applicationGuardBlockFileTransferType 枚举类型
 description: applicationGuardBlockFileTransfer 的可能值
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a2c0b36c70387d234f01021e9864683ea79c8587
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 38ce56a9ef2685b21fbe15e1b1a191fd55da03dd
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59053117"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454192"
 ---
 # <a name="applicationguardblockfiletransfertype-enum-type"></a>applicationGuardBlockFileTransferType 枚举类型
 
@@ -28,7 +28,6 @@ applicationGuardBlockFileTransfer 的可能值
 |blockImageFile|2|阻止剪贴板传输图像文件|
 |blockNone|3|不会阻止任何文本文件或图像文件传输|
 |blockTextFile|4 |阻止剪贴板传输文本文件|
-
 
 
 

@@ -2,15 +2,15 @@
 title: assign 操作
 description: 尚未记录
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 79f273a833d7d5b58bedaa0a44ef507967375046
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 01b7dcb05ef1ac10d26ba55cdf211a5634283518
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59073819"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60444758"
 ---
 # <a name="assign-action"></a>分配操作
 
@@ -86,7 +86,6 @@ Content-length: 287
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

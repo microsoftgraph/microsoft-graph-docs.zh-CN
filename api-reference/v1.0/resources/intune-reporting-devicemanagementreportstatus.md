@@ -2,15 +2,15 @@
 title: deviceManagementReportStatus 枚举类型
 description: 与生成的报告关联的可能状态
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d64e43413e8451d7fa8d432b6ec1a19e07582923
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e01484e0bf3422633128492e60d23db8c178cc3e
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59098536"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448897"
 ---
 # <a name="devicemanagementreportstatus-enum-type"></a>deviceManagementReportStatus 枚举类型
 
@@ -28,7 +28,6 @@ ms.locfileid: "59098536"
 |inProgress|2|报告生成正在进行中|
 |已完成|3|报告生成已完成|
 |failed|4 |报告生成失败|
-
 
 
 

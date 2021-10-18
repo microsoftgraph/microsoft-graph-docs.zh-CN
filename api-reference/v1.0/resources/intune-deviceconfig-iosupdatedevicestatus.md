@@ -2,15 +2,15 @@
 title: iosUpdateDeviceStatus 资源类型
 description: 尚未记录
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0ac992036f37b9b4c622e2bfc01310d2c2e8e1fc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b6ca827545b2b6883be9c62a101b6a131b0c8415
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59148114"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447261"
 ---
 # <a name="iosupdatedevicestatus-resource-type"></a>iosUpdateDeviceStatus 资源类型
 
@@ -73,7 +73,6 @@ ms.locfileid: "59148114"
   "userPrincipalName": "String"
 }
 ```
-
 
 
 

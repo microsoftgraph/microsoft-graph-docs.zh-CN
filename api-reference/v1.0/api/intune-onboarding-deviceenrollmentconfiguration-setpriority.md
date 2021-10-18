@@ -2,15 +2,15 @@
 title: setPriority 操作
 description: 尚未记录
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f692fc4fca4b8b09441b77d17a7c771735c3ef79
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b003c67e2caa5268398a7f6841e8dbedf68a401f
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59146861"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450255"
 ---
 # <a name="setpriority-action"></a>setPriority 操作
 
@@ -78,7 +78,6 @@ Content-length: 21
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

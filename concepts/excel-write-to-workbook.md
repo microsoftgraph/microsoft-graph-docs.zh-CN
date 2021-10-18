@@ -4,12 +4,12 @@ description: q=excelstarter)。
 ms.localizationpriority: high
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: c47ba15a22d4ad15ef0b64a9ac5805304f53c4e5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 266427ed2853c26a2267b043b84e04f346467ab2
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59143558"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457111"
 ---
 # <a name="write-data-to-an-excel-workbook-with-microsoft-graph"></a>使用 Microsoft Graph 将数据写入 Excel 工作簿
 
@@ -35,7 +35,7 @@ POST 正文如下所示：
 {
   "index": null,
   "values": [
-    ['alex darrow', 'adarrow@tenant.onmicrosoft.com']
+    ["alex darrow", "adarrow@tenant.onmicrosoft.com"]
   ]
 }
 ```

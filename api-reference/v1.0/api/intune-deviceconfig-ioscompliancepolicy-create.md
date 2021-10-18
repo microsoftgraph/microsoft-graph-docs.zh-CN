@@ -2,15 +2,15 @@
 title: 创建 iosCompliancePolicy
 description: 创建新的 iosCompliancePolicy 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 29cf00f9267422c6f30cd036ed8578e40cbae1ab
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 22c7305008a455b444a4b4f4f3e5a072d4d38a34
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59073392"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448112"
 ---
 # <a name="create-ioscompliancepolicy"></a>创建 iosCompliancePolicy
 
@@ -139,7 +139,6 @@ Content-Length: 917
   "managedEmailProfileRequired": true
 }
 ```
-
 
 
 

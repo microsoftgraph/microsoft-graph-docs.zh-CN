@@ -2,15 +2,15 @@
 title: 获取 deviceCompliancePolicySettingStateSummary
 description: 读取 deviceCompliancePolicySettingStateSummary 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: def477471f9888071ad6462bbb25b8446e90f4ad
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 34eb35a457cf63f31b0f3d9ec059734fd6c65cd9
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59032879"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448708"
 ---
 # <a name="get-devicecompliancepolicysettingstatesummary"></a>获取 deviceCompliancePolicySettingStateSummary
 
@@ -85,7 +85,6 @@ Content-Length: 483
   }
 }
 ```
-
 
 
 

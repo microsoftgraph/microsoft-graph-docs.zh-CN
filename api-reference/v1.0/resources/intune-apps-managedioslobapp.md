@@ -2,15 +2,15 @@
 title: managedIOSLobApp 资源类型
 description: 包含托管 iOS 业务线应用的属性和继承的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c89eb14a133e3e3b1adbde79579fbe6202f35f6a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 683b19dc48691c3d5b52eeaab4708b8d4a346192
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59123242"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450760"
 ---
 # <a name="managedioslobapp-resource-type"></a>managedIOSLobApp 资源类型
 
@@ -123,7 +123,6 @@ ms.locfileid: "59123242"
   "buildNumber": "String"
 }
 ```
-
 
 
 

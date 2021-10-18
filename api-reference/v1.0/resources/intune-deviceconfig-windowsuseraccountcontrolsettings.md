@@ -2,15 +2,15 @@
 title: windowsUserAccountControlSettings 枚举类型
 description: 用户帐户控制Windows的可能值。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4414bc5fdb6d6febd2d38b076a50afd2cecfe832
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d9f7dab49fa95376875772d1135b0066376f33d9
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59148317"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60453314"
 ---
 # <a name="windowsuseraccountcontrolsettings-enum-type"></a>windowsUserAccountControlSettings 枚举类型
 
@@ -28,7 +28,6 @@ ms.locfileid: "59148317"
 |notifyOnAppChanges|2|通知应用更改。|
 |notifyOnAppChangesWithoutDimming|3|通知应用更改时，桌面不会变暗。|
 |neverNotify|4 |从不通知。|
-
 
 
 

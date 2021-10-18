@@ -2,15 +2,15 @@
 title: syncLicenses 操作
 description: 同步与特定 appleVolumePurchaseProgramToken 关联的许可证
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4fbf45b8cfd28568e9d5d5436bc58743556f69d0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b825b38ff9f1119b92695a8482f97fc2837a5a7a
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59026383"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60444925"
 ---
 # <a name="synclicenses-action"></a>syncLicenses 操作
 
@@ -83,7 +83,6 @@ Content-Length: 619
   }
 }
 ```
-
 
 
 

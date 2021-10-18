@@ -2,15 +2,15 @@
 title: 更新 deviceCompliancePolicyAssignment
 description: 更新 deviceCompliancePolicyAssignment 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fadb64543699108dc9a2443ac51ac5b64a99c0cd
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3316f26d98a6eb4e0a1a4c63def6d38b30ed9042
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59073455"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447114"
 ---
 # <a name="update-devicecompliancepolicyassignment"></a>更新 deviceCompliancePolicyAssignment
 
@@ -93,7 +93,6 @@ Content-Length: 273
   }
 }
 ```
-
 
 
 
