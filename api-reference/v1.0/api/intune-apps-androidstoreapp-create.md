@@ -2,15 +2,15 @@
 title: 创建 androidStoreApp
 description: 创建新的 androidStoreApp 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8eb1aea28fab11a2604af371764d116cfd055ab6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 89ede4176c88d51b6bdc081f214e4baa034cd338
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147358"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451301"
 ---
 # <a name="create-androidstoreapp"></a>创建 androidStoreApp
 
@@ -162,7 +162,6 @@ Content-Length: 1150
   }
 }
 ```
-
 
 
 

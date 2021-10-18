@@ -2,15 +2,15 @@
 title: 更新 iosVppApp
 description: 更新 iosVppApp 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 282e8d5f1290a4a9c242fefbaeb348e37863c92c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: cf5339bd82cd097cf1c4c1c7a0cfeb9400894a2a
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59032921"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447149"
 ---
 # <a name="update-iosvppapp"></a>更新 iosVppApp
 
@@ -175,7 +175,6 @@ Content-Length: 1394
   "bundleId": "Bundle Id value"
 }
 ```
-
 
 
 

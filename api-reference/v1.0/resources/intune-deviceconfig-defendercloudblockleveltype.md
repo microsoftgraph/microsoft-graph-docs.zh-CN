@@ -2,15 +2,15 @@
 title: defenderCloudBlockLevelType 枚举类型
 description: 云阻止级别的可能值
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d3af9d2d259eb7b92be1973fdfb1d9a1968c335f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 14752803e22cdb991ecf9b7b93f3b01e49993efe
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59078803"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451526"
 ---
 # <a name="defendercloudblockleveltype-enum-type"></a>defenderCloudBlockLevelType 枚举类型
 
@@ -27,7 +27,6 @@ ms.locfileid: "59078803"
 |high|1|High 应用强级别的检测。|
 |highPlus|2|High + 使用高级别，并应用其他保护措施|
 |zeroTolerance|3|零容限阻止所有未知可执行文件|
-
 
 
 

@@ -2,15 +2,15 @@
 title: remoteAssistancePartner 资源类型
 description: RemoteAssistPartner 资源表示给定远程协助合作伙伴服务的元数据和状态。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cc06437d0a7a1282217d920cecd40944a8c93ea9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6857d47fbed69bc74d92bce1e7ccb63dc84059e1
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59134848"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448939"
 ---
 # <a name="remoteassistancepartner-resource-type"></a>remoteAssistancePartner 资源类型
 
@@ -61,7 +61,6 @@ RemoteAssistPartner 资源表示给定远程协助合作伙伴服务的元数据
   "lastConnectionDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

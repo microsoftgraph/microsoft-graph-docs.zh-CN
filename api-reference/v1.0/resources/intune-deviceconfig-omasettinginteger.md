@@ -2,15 +2,15 @@
 title: omaSettingInteger 资源类型
 description: OMA 设置整数定义。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f291e638097773906e9dd1d6ff7173863d185353
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0d0fba5d29ac5fd11e8863878d6afc28c36eeb78
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59148093"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454894"
 ---
 # <a name="omasettinginteger-resource-type"></a>omaSettingInteger 资源类型
 
@@ -50,7 +50,6 @@ OMA 设置整数定义。
   "value": 1024
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: microsoftStoreForBusinessApp 资源类型
 description: 适用于企业的 Microsoft Store 应用。 此类不支持创建、删除或更新。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 634f773d1e59ae411ae5f3d0f33f53e5cf688b99
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1a6a593d75a32723c33af8c00232468d4da62527
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59089611"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60452002"
 ---
 # <a name="microsoftstoreforbusinessapp-resource-type"></a>microsoftStoreForBusinessApp 资源类型
 
@@ -97,7 +97,6 @@ ms.locfileid: "59089611"
   "packageIdentityName": "String"
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: 更新 deviceCategory
 description: 更新 deviceCategory 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: be1dd5ec3764925ecdf073a1c86cd329908a77b7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c10a00dcb46c72488f0d4d51417f98698ea30e5d
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59022175"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457083"
 ---
 # <a name="update-devicecategory"></a>更新 deviceCategory
 
@@ -25,9 +25,9 @@ ms.locfileid: "59022175"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -84,7 +84,6 @@ Content-Length: 105
   "id": "f881b841-b841-f881-41b8-81f841b881f8"
 }
 ```
-
 
 
 

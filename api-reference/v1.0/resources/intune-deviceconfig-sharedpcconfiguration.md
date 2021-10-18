@@ -2,15 +2,15 @@
 title: sharedPCConfiguration 资源类型
 description: 本主题提供由 sharedPCConfiguration 资源公开的已声明方法、属性和关系的说明。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cdbd1cef7e22380c328f5ef3bd0913764ab8bf29
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f432719df513a4a86ce6599ded4e34f86a38ad73
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59049527"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450859"
 ---
 # <a name="sharedpcconfiguration-resource-type"></a>sharedPCConfiguration 资源类型
 
@@ -101,7 +101,6 @@ ms.locfileid: "59049527"
   "maintenanceStartTime": "String (time of day)"
 }
 ```
-
 
 
 

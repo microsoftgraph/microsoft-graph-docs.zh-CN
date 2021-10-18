@@ -2,15 +2,15 @@
 title: mimeContent 资源类型
 description: 包含通用 MIME 内容的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c0d26a0c8729c9ba9b1afe93274acc76ef901f4b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 24892ca35147a10638673206011b16d1b758190f
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59021594"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446187"
 ---
 # <a name="mimecontent-resource-type"></a>mimeContent 资源类型
 
@@ -43,7 +43,6 @@ ms.locfileid: "59021594"
   "value": "binary"
 }
 ```
-
 
 
 

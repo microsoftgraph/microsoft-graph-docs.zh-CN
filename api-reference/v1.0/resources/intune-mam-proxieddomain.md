@@ -2,15 +2,15 @@
 title: proxiedDomain 资源类型
 description: 代理域
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0a08229690610b641b0d69d8ba33dddc745efce8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 22df2056dda32884b25cd7bc1e59ab12ce9eccbd
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019312"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454059"
 ---
 # <a name="proxieddomain-resource-type"></a>proxiedDomain 资源类型
 
@@ -43,7 +43,6 @@ ms.locfileid: "59019312"
   "proxy": "String"
 }
 ```
-
 
 
 

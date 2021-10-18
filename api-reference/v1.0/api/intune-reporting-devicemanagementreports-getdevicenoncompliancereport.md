@@ -2,15 +2,15 @@
 title: getDeviceNonComplianceReport 操作
 description: 尚未记录
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 147b99031e74f27e99ef212005b00b37e8281acf
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6fea9604c496b7e9c5796fc8e12843ca9abd2fc4
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59063032"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60455912"
 ---
 # <a name="getdevicenoncompliancereport-action"></a>getDeviceNonComplianceReport 操作
 
@@ -106,7 +106,6 @@ Content-Length: 99
   "value": "Z2V0RGV2aWNlTm9uQ29tcGxpYW5jZVJlcG9ydCBJbnR1bmUgRG9jIFNhbXBsZSAtMTY1MDA3NDI3OA=="
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: 创建 iosLobApp
 description: 创建新的 iosLobApp 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 30893f303fb2819e36ef7dc9fed609b6ae45c373
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 00a8633d0bbe4ac033557b88884a5fa1d5ae04d8
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59095092"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446594"
 ---
 # <a name="create-ioslobapp"></a>创建 iosLobApp
 
@@ -41,7 +41,7 @@ POST /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -182,7 +182,6 @@ Content-Length: 1421
   "buildNumber": "Build Number value"
 }
 ```
-
 
 
 

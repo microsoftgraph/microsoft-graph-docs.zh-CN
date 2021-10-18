@@ -2,15 +2,15 @@
 title: 列出 deviceConfigurations
 description: 列出 deviceConfiguration 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fc661692d3455e9a9b595fd191f1cd0c4dde76aa
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a381a8533e95d519d713a66caab79338087fb33a
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59079720"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449115"
 ---
 # <a name="list-deviceconfigurations"></a>列出 deviceConfigurations
 
@@ -79,7 +79,6 @@ Content-Length: 390
   ]
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: 更新 managedIOSLobApp
 description: 更新 managedIOSLobApp 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f350cc7efd0a1e64ada6a2f765b8f27a97ea1afd
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6e6c68532be4fd804c923a08953d37e61e560919
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59068184"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60455623"
 ---
 # <a name="update-managedioslobapp"></a>更新 managedIOSLobApp
 
@@ -188,7 +188,6 @@ Content-Length: 1499
   "buildNumber": "Build Number value"
 }
 ```
-
 
 
 

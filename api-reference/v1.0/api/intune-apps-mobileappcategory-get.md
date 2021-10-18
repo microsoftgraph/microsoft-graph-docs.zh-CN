@@ -2,15 +2,15 @@
 title: 获取 mobileAppCategory
 description: 读取 mobileAppCategory 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cec20f6e758553a8695edb02e5d2cffc6515875c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c9bf8dfb008029917831af0a0e3f6b950fb9bdab
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59050341"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60456436"
 ---
 # <a name="get-mobileappcategory"></a>获取 mobileAppCategory
 
@@ -78,7 +78,6 @@ Content-Length: 239
   }
 }
 ```
-
 
 
 

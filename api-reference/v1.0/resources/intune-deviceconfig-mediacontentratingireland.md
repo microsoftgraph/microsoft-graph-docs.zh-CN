@@ -2,15 +2,15 @@
 title: mediaContentRatingIreland 资源类型
 description: 尚未记录
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2b6be6e0a60f56ec5441e31687cced78b76a8ec6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e281a233b000adc189c071148959e058f9cfa5fa
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59148331"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451890"
 ---
 # <a name="mediacontentratingireland-resource-type"></a>mediaContentRatingIreland 资源类型
 
@@ -43,7 +43,6 @@ ms.locfileid: "59148331"
   "tvRating": "String"
 }
 ```
-
 
 
 

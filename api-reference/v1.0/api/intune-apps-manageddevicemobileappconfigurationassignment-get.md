@@ -2,15 +2,15 @@
 title: 获取 managedDeviceMobileAppConfigurationAssignment
 description: 读取 managedDeviceMobileAppConfigurationAssignment 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ad79344cd29a9b80b4750aa82e563ab2cfba66de
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0038d442d17bd272c641a823932f746103dd21fa
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59037822"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448490"
 ---
 # <a name="get-manageddevicemobileappconfigurationassignment"></a>获取 managedDeviceMobileAppConfigurationAssignment
 
@@ -78,7 +78,6 @@ Content-Length: 257
   }
 }
 ```
-
 
 
 

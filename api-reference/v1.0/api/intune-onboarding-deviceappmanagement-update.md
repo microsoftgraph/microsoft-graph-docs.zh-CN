@@ -2,15 +2,15 @@
 title: 更新 deviceAppManagement
 description: 更新 deviceAppManagement 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7a7997a242b1a56aa07137500bf24594b2818881
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e40d5cbcecc1f8a5bcaeb6c6f1c1ff08b20bae0c
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59146938"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447887"
 ---
 # <a name="update-deviceappmanagement"></a>更新 deviceAppManagement
 
@@ -96,7 +96,6 @@ Content-Length: 443
   "microsoftStoreForBusinessLastCompletedApplicationSyncTime": "2017-01-01T00:02:00.0421137-08:00"
 }
 ```
-
 
 
 

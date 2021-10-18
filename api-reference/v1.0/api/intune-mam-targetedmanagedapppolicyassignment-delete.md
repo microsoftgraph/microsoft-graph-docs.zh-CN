@@ -2,15 +2,15 @@
 title: 删除 targetedManagedAppPolicyAssignment
 description: 删除 targetedManagedAppPolicyAssignment。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dc466567b0774b9e172023638758be76a2431b8c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b181516eaf7819a86c29865d18e1515cfe9b9b60
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59053516"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449080"
 ---
 # <a name="delete-targetedmanagedapppolicyassignment"></a>删除 targetedManagedAppPolicyAssignment
 
@@ -67,7 +67,6 @@ DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/iosManagedAppProtect
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

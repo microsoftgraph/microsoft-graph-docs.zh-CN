@@ -2,15 +2,15 @@
 title: 获取 termsAndConditionsAcceptanceStatus
 description: 读取 termsAndConditionsAcceptanceStatus 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3ca7b031e51e32a05f10fc079f9e4fd6647dd1a4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 799828d73a3deed6ae7dc9d91bd79a41d6908559
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59026621"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60455181"
 ---
 # <a name="get-termsandconditionsacceptancestatus"></a>获取 termsAndConditionsAcceptanceStatus
 
@@ -79,7 +79,6 @@ Content-Length: 344
   }
 }
 ```
-
 
 
 

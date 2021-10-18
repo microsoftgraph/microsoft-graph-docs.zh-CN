@@ -2,15 +2,15 @@
 title: win32LobAppDeliveryOptimizationPriority 枚举类型
 description: 包含传递优化优先级的值。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a9038a2fce8890c4b9457cbe6f60a17e9181d954
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f38fe3cf59ac0d95de4c247907b18e65cdab2cd8
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59036471"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451463"
 ---
 # <a name="win32lobappdeliveryoptimizationpriority-enum-type"></a>win32LobAppDeliveryOptimizationPriority 枚举类型
 
@@ -25,7 +25,6 @@ ms.locfileid: "59036471"
 |:---|:---|:---|
 |notConfigured|0|未配置或后台正常传递优化优先级。|
 |foreground|1|前台传递优化优先级。|
-
 
 
 
