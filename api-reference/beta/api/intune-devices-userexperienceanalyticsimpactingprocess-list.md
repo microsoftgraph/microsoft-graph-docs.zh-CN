@@ -2,15 +2,15 @@
 title: 列出 userExperienceAnalyticsImpactingProcesses
 description: 列出 userExperienceAnalyticsImpactingProcess 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1bfdae88014f0d3df5e7e1c5b2fdead546a87c73
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: defeff60d222273a5890d3432eae655697b63c18
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59030786"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60486584"
 ---
 # <a name="list-userexperienceanalyticsimpactingprocesses"></a>列出 userExperienceAnalyticsImpactingProcesses
 
@@ -29,7 +29,7 @@ ms.locfileid: "59030786"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

@@ -2,15 +2,15 @@
 title: 列出 microsoftTunnelSites
 description: 列出 microsoftTunnelSite 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8ce3859a0a2cd5a3499e83a06933d9c04aca84e1
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5a5fe748d7a699c5d925b46e9bd0a09ebb0789c5
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59027657"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60492431"
 ---
 # <a name="list-microsofttunnelsites"></a>列出 microsoftTunnelSites
 
@@ -27,7 +27,7 @@ ms.locfileid: "59027657"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 

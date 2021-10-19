@@ -2,15 +2,15 @@
 title: 创建 enrollmentRestrictionsConfigurationPolicySetItem
 description: 创建新的 enrollmentRestrictionsConfigurationPolicySetItem 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ac72e8b00c5d50c9b972cda96f9374afd5eca541
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6b853446e32bd24b8474117279330d8effef383f
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59081911"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60488204"
 ---
 # <a name="create-enrollmentrestrictionsconfigurationpolicysetitem"></a>创建 enrollmentRestrictionsConfigurationPolicySetItem
 
@@ -29,7 +29,7 @@ ms.locfileid: "59081911"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

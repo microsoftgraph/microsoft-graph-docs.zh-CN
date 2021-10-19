@@ -2,15 +2,15 @@
 title: 列出 mobileAppPolicySetItems
 description: 列出 mobileAppPolicySetItem 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b905e46ae6e2689d82a820dd1df7037e20edb838
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c33a58eb2fe4b3a4ff4d06b22622e540b31d2129
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59141716"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60487111"
 ---
 # <a name="list-mobileapppolicysetitems"></a>列出 mobileAppPolicySetItems
 
@@ -29,7 +29,7 @@ ms.locfileid: "59141716"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

@@ -2,15 +2,15 @@
 title: 创建 payloadCompatibleAssignmentFilter
 description: 创建新的 payloadCompatibleAssignmentFilter 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7baa5fbb9349632e8a9d6b4fdf7300487bb176c6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d105574eb8b901eead86ba9329a02c18b16fc599
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59107615"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60492508"
 ---
 # <a name="create-payloadcompatibleassignmentfilter"></a>创建 payloadCompatibleAssignmentFilter
 
@@ -29,7 +29,7 @@ ms.locfileid: "59107615"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -60,7 +60,7 @@ POST /deviceManagement/assignmentFilters
 |说明|String|工作分配筛选器的说明。 继承自 [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)|
 |平台|[devicePlatformType](../resources/intune-policyset-deviceplatformtype.md)|工作分配筛选器适用的设备的平台类型。 继承自 [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`unknown`。|
 |rule|String|工作分配筛选器的规则定义。 继承自 [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)|
-|roleScopeTags|字符串集合|工作分配筛选器的 RoleScopeTags。 继承自 [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)|
+|roleScopeTags|String 集合|工作分配筛选器的 RoleScopeTags。 继承自 [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)|
 |payloadType|[assignmentFilterPayloadType](../resources/intune-policyset-assignmentfilterpayloadtype.md)|工作分配筛选器的 PayloadType。 可取值为：`notSet`、`enrollmentRestrictions`。|
 
 

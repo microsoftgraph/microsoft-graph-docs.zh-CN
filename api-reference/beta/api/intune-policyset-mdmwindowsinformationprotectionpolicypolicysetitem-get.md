@@ -2,15 +2,15 @@
 title: 获取 mdmWindowsInformationProtectionPolicyPolicySetItem
 description: 读取 mdmWindowsInformationProtectionPolicyPolicySetItem 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8b543c2a01e1db1079f96247a8f340f9f8866868
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 49fd1b15f1f3f6b9f400cbedd19461472db99942
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59135597"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60494155"
 ---
 # <a name="get-mdmwindowsinformationprotectionpolicypolicysetitem"></a>获取 mdmWindowsInformationProtectionPolicyPolicySetItem
 
@@ -29,7 +29,7 @@ ms.locfileid: "59135597"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

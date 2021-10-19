@@ -1,16 +1,16 @@
 ---
 title: windowsManagedDevice 资源类型
-description: Windows Intune 托管或预注册的设备
+description: Windows Intune 管理或预注册的设备
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c5c242b1fb91d38dd6d0cbb4579f9e0541eb4211
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 763a5921509558bc5deb87e7cef001a63d23029b
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59091305"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60486971"
 ---
 # <a name="windowsmanageddevice-resource-type"></a>windowsManagedDevice 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "59091305"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-Windows Intune 托管或预注册的设备
+Windows Intune 管理或预注册的设备
 
 
 继承自 [managedDevice](../resources/intune-devices-manageddevice.md)
@@ -100,7 +100,7 @@ Windows Intune 托管或预注册的设备
 |managementCertificateExpirationDate|DateTimeOffset|报告设备管理证书到期日期。 此属性是只读的。 继承自 [managedDevice](../resources/intune-devices-manageddevice.md)|
 |iccid|String|集成的电路卡标识符，它是 SIM 卡的唯一标识号。 此属性是只读的。 继承自 [managedDevice](../resources/intune-devices-manageddevice.md)|
 |udid|String|iOS 和 macOS 设备的唯一设备标识符。 此属性是只读的。 继承自 [managedDevice](../resources/intune-devices-manageddevice.md)|
-|roleScopeTagIds|字符串集合|此设备实例的范围标记标识列表。 继承自 [managedDevice](../resources/intune-devices-manageddevice.md)|
+|roleScopeTagIds|String collection|此设备实例的范围标记标识列表。 继承自 [managedDevice](../resources/intune-devices-manageddevice.md)|
 |windowsActiveMalwareCount|Int32|此 Windows 设备的活动恶意软件计数。 此属性是只读的。 继承自 [managedDevice](../resources/intune-devices-manageddevice.md)|
 |windowsRemediatedMalwareCount|Int32|此 Windows 设备的已修复恶意软件计数。 此属性是只读的。 继承自 [managedDevice](../resources/intune-devices-manageddevice.md)|
 |notes|String|由 IT 管理员创建的设备的备注 继承自 [managedDevice](../resources/intune-devices-manageddevice.md)|
@@ -112,7 +112,7 @@ Windows Intune 托管或预注册的设备
 |specificationVersion|String|规范版本。 此属性是只读的。 继承自 [managedDevice](../resources/intune-devices-manageddevice.md)|
 |joinType|[joinType](../resources/intune-devices-jointype.md)|设备加入类型 继承自 [managedDevice](../resources/intune-devices-manageddevice.md)。 可取值为：`unknown`、`azureADJoined`、`azureADRegistered`、`hybridAzureADJoined`。|
 |skuFamily|String|设备 sku 系列 继承自 [managedDevice](../resources/intune-devices-manageddevice.md)|
-|skuNumber|Int32|设备 sku 号，另请参阅 https://docs.microsoft.com/en-us/windows/win32/api/sysinfoapi/nf-sysinfoapi-getproductinfo ：。 有效值为 0 到 2147483647。 此属性是只读的。 继承自 [managedDevice](../resources/intune-devices-manageddevice.md)|
+|skuNumber|Int32|设备 sku 号，另请参阅 https://docs.microsoft.com/windows/win32/api/sysinfoapi/nf-sysinfoapi-getproductinfo ：。 有效值为 0 到 2147483647。 此属性是只读的。 继承自 [managedDevice](../resources/intune-devices-manageddevice.md)|
 |managementFeatures|[managedDeviceManagementFeatures](../resources/intune-devices-manageddevicemanagementfeatures.md)|设备管理功能 继承自 [managedDevice](../resources/intune-devices-manageddevice.md)。 可取值为：`none`、`microsoftManagedDesktop`。|
 |chromeOSDeviceInfo|[chromeOSDeviceProperty](../resources/intune-devices-chromeosdeviceproperty.md) 集合|ChromeOS 设备的属性列表。 继承自 [managedDevice](../resources/intune-devices-manageddevice.md)|
 |enrollmentProfileName|String|分配给设备的注册配置文件的名称。 默认值为空字符串，表示未对注册配置文件进行分页。 此属性是只读的。 继承自 [managedDevice](../resources/intune-devices-manageddevice.md)|

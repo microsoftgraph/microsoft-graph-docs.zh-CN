@@ -2,15 +2,15 @@
 title: 获取 userExperienceAnalyticsRegressionSummary
 description: 读取 userExperienceAnalyticsRegressionSummary 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b17f9794bfd5e8e3629b11824dd6dd9c97e673fd
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 49a39f3f102db9e4c7da7f76287db84d42dacc15
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59142192"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60486493"
 ---
 # <a name="get-userexperienceanalyticsregressionsummary"></a>获取 userExperienceAnalyticsRegressionSummary
 
@@ -29,7 +29,7 @@ ms.locfileid: "59142192"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

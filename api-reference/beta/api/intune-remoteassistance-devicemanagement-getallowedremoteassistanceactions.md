@@ -2,15 +2,15 @@
 title: getAllowedRemoteAssistanceActions 函数
 description: 尚未记录
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c60e1bd0657fcbbedb69ba1bd2a87fd47b694e64
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 21639998d33a1841fa4e53d9995e9abca237ceaf
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59069976"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60489771"
 ---
 # <a name="getallowedremoteassistanceactions-function"></a>getAllowedRemoteAssistanceActions 函数
 
@@ -29,7 +29,7 @@ ms.locfileid: "59069976"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|应用程序|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -50,7 +50,7 @@ GET /deviceManagement/getAllowedRemoteAssistanceActions
 在请求 URL 中，提供以下查询参数（含值）。
 下表显示了可用于此函数的参数。
 
-|属性|类型|描述|
+|属性|类型|说明|
 |:---|:---|:---|
 |sharerAadDeviceId|String|尚未记录|
 |sharerDeviceIntuneMDMEnrolled|Boolean|尚未记录|

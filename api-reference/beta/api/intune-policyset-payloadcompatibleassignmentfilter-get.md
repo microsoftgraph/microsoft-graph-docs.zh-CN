@@ -2,15 +2,15 @@
 title: 获取 payloadCompatibleAssignmentFilter
 description: 读取 payloadCompatibleAssignmentFilter 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e44d89c91553f212bc3c0181dce60352ad66a104
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 811e0b83439b8e033513faba9af8e01b9a63d1bb
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59107594"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60487097"
 ---
 # <a name="get-payloadcompatibleassignmentfilter"></a>获取 payloadCompatibleAssignmentFilter
 
@@ -29,7 +29,7 @@ ms.locfileid: "59107594"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

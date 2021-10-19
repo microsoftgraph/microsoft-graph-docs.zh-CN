@@ -2,15 +2,15 @@
 title: 列出 remoteAssistancePartners
 description: 列出 remoteAssistancePartner 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a70d70042087e875fdaf1deb1ffc884ef0e551ae
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9774394a6e95fba1ccb9c86be470b7234bd5afdc
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59064859"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60487756"
 ---
 # <a name="list-remoteassistancepartners"></a>列出 remoteAssistancePartners
 
@@ -29,7 +29,7 @@ ms.locfileid: "59064859"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|应用程序|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

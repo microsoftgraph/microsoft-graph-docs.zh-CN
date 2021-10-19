@@ -2,15 +2,15 @@
 title: 列出 microsoftTunnelHealthThresholds
 description: 列出 microsoftTunnelHealthThreshold 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 51e5f60dd0182b6dd01257e5eb87221cb50672c6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4d51c64274fe608c61e99ff6b21a27f90564348b
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59065125"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60490559"
 ---
 # <a name="list-microsofttunnelhealththresholds"></a>列出 microsoftTunnelHealthThresholds
 
@@ -27,7 +27,7 @@ ms.locfileid: "59065125"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 

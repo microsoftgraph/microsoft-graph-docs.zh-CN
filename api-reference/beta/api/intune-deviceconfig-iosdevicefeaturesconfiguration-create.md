@@ -2,15 +2,15 @@
 title: 创建 iosDeviceFeaturesConfiguration
 description: 创建新的 iosDeviceFeaturesConfiguration 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d96d7d92853da3fcd49d9e67dc93b683335aba56
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8328c667e4a4ccf3baddcb1d6622feff68fd3496
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59103219"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60482733"
 ---
 # <a name="create-iosdevicefeaturesconfiguration"></a>创建 iosDeviceFeaturesConfiguration
 
@@ -56,7 +56,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|指示基础设备配置是否支持分配范围标记。 当此值为 false 且实体对范围用户不可见时，不允许分配给 ScopeTags 属性。 这适用于在 Silverlight 中创建的旧版策略，可通过在 Azure 门户中删除和重新创建策略来解决。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|此策略的操作系统版本适用性。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -92,7 +92,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 6889
+Content-length: 7083
 
 {
   "@odata.type": "#microsoft.graph.iosDeviceFeaturesConfiguration",
@@ -269,7 +269,9 @@ Content-length: 6889
     "activeDirectorySiteCode": "Active Directory Site Code value",
     "passwordEnableLocalSync": true,
     "blockActiveDirectorySiteAutoDiscovery": true,
-    "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
+    "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
+    "signInHelpText": "Sign In Help Text value",
+    "managedAppsInBundleIdACLIncluded": true
   },
   "iosSingleSignOnExtension": {
     "@odata.type": "microsoft.graph.iosKerberosSingleSignOnExtension",
@@ -299,7 +301,9 @@ Content-length: 6889
     "activeDirectorySiteCode": "Active Directory Site Code value",
     "passwordEnableLocalSync": true,
     "blockActiveDirectorySiteAutoDiscovery": true,
-    "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
+    "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
+    "signInHelpText": "Sign In Help Text value",
+    "managedAppsInBundleIdACLIncluded": true
   }
 }
 ```
@@ -309,7 +313,7 @@ Content-length: 6889
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 7061
+Content-Length: 7255
 
 {
   "@odata.type": "#microsoft.graph.iosDeviceFeaturesConfiguration",
@@ -489,7 +493,9 @@ Content-Length: 7061
     "activeDirectorySiteCode": "Active Directory Site Code value",
     "passwordEnableLocalSync": true,
     "blockActiveDirectorySiteAutoDiscovery": true,
-    "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
+    "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
+    "signInHelpText": "Sign In Help Text value",
+    "managedAppsInBundleIdACLIncluded": true
   },
   "iosSingleSignOnExtension": {
     "@odata.type": "microsoft.graph.iosKerberosSingleSignOnExtension",
@@ -519,7 +525,9 @@ Content-Length: 7061
     "activeDirectorySiteCode": "Active Directory Site Code value",
     "passwordEnableLocalSync": true,
     "blockActiveDirectorySiteAutoDiscovery": true,
-    "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
+    "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
+    "signInHelpText": "Sign In Help Text value",
+    "managedAppsInBundleIdACLIncluded": true
   }
 }
 ```

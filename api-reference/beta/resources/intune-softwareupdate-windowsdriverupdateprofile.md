@@ -2,15 +2,15 @@
 title: windowsDriverUpdateProfile 资源类型
 description: Windows驱动程序更新配置文件
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8837992e47e44dc24a7d49518866d9427d6082e3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d8c50188b941c7196e3f2771c64dbffb51efe7de
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59029890"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60488603"
 ---
 # <a name="windowsdriverupdateprofile-resource-type"></a>windowsDriverUpdateProfile 资源类型
 
@@ -30,6 +30,8 @@ Windows驱动程序更新配置文件
 |[创建 windowsDriverUpdateProfile](../api/intune-softwareupdate-windowsdriverupdateprofile-create.md)|[windowsDriverUpdateProfile](../resources/intune-softwareupdate-windowsdriverupdateprofile.md)|创建新的 [windowsDriverUpdateProfile](../resources/intune-softwareupdate-windowsdriverupdateprofile.md) 对象。|
 |[删除 windowsDriverUpdateProfile](../api/intune-softwareupdate-windowsdriverupdateprofile-delete.md)|无|删除 [windowsDriverUpdateProfile](../resources/intune-softwareupdate-windowsdriverupdateprofile.md)。|
 |[更新 windowsDriverUpdateProfile](../api/intune-softwareupdate-windowsdriverupdateprofile-update.md)|[windowsDriverUpdateProfile](../resources/intune-softwareupdate-windowsdriverupdateprofile.md)|更新 [windowsDriverUpdateProfile 对象](../resources/intune-softwareupdate-windowsdriverupdateprofile.md) 的属性。|
+|[分配操作](../api/intune-softwareupdate-windowsdriverupdateprofile-assign.md)|无|尚未记录|
+|[executeAction 操作](../api/intune-softwareupdate-windowsdriverupdateprofile-executeaction.md)|[bulkDriverActionResult](../resources/intune-softwareupdate-bulkdriveractionresult.md)|尚未记录|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
@@ -43,10 +45,10 @@ Windows驱动程序更新配置文件
 |deploymentDeferralInDays|Int32|部署延迟设置（以天表示）仅在 ApprovalType 设置为自动审批时适用。|
 |createdDateTime|DateTimeOffset|创建配置文件的日期时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改配置文件的日期时间。|
-|roleScopeTagIds|String collection|此驱动程序更新实体的范围标记列表。|
+|roleScopeTagIds|String 集合|此驱动程序更新实体的范围标记列表。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|描述|
+|关系|类型|说明|
 |:---|:---|:---|
 |assignments|[windowsDriverUpdateProfileAssignment](../resources/intune-softwareupdate-windowsdriverupdateprofileassignment.md) 集合|配置文件的组分配列表。|
 |driverInventories|[windowsDriverUpdateInventory](../resources/intune-softwareupdate-windowsdriverupdateinventory.md) 集合|此配置文件的驱动程序清单。|

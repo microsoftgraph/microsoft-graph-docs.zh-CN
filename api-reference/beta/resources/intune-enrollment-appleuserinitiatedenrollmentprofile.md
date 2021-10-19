@@ -2,15 +2,15 @@
 title: appleUserInitiatedEnrollmentProfile 资源类型
 description: enrollmentProfile 资源表示配置集合，必须预先提供这些配置才能注册其标识已预先存储的某些设备。 预部署设备标识将分配给此类型的配置文件，以在注册相应设备时应用配置文件的配置。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f9fd4060d2f5606326744522e0a9e519714ee28f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2ded729deaa453f9a3b80f77714b5a3738e6cf3f
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59081008"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60494666"
 ---
 # <a name="appleuserinitiatedenrollmentprofile-resource-type"></a>appleUserInitiatedEnrollmentProfile 资源类型
 
@@ -33,7 +33,7 @@ enrollmentProfile 资源表示配置集合，必须预先提供这些配置才�
 |[setPriority action](../api/intune-enrollment-appleuserinitiatedenrollmentprofile-setpriority.md)|无|尚未记录|
 
 ## <a name="properties"></a>属性
-|属性|类型|描述|
+|属性|类型|说明|
 |:---|:---|:---|
 |defaultEnrollmentType|[appleUserInitiatedEnrollmentType](../resources/intune-enrollment-appleuserinitiatedenrollmenttype.md)|默认配置文件注册类型。 可取值为：`unknown`、`device`、`user`。|
 |availableEnrollmentTypeOptions|[appleOwnerTypeEnrollmentType](../resources/intune-enrollment-appleownertypeenrollmenttype.md) 集合|可用注册类型选项列表|
@@ -41,12 +41,12 @@ enrollmentProfile 资源表示配置集合，必须预先提供这些配置才�
 |displayName|String|配置文件的名称|
 |说明|String|配置文件的说明|
 |priority|Int32|优先级，0 为最高|
-|平台|[devicePlatformType](../resources/intune-enrollment-deviceplatformtype.md)|设备平台。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`unknown`。|
+|平台|[devicePlatformType](../resources/intune-enrollment-deviceplatformtype.md)|设备平台。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`unknown`、`androidAOSP`。|
 |createdDateTime|DateTimeOffset|配置文件创建时间|
 |lastModifiedDateTime|DateTimeOffset|配置文件上次修改时间|
 
 ## <a name="relationships"></a>关系
-|关系|类型|描述|
+|关系|类型|说明|
 |:---|:---|:---|
 |assignments|[appleEnrollmentProfileAssignment](../resources/intune-enrollment-appleenrollmentprofileassignment.md) 集合|此配置文件的工作分配列表。|
 

@@ -2,15 +2,15 @@
 title: 获取 deviceManagementConfigurationPolicyAssignment
 description: 读取 deviceManagementConfigurationPolicyAssignment 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a7c3ccbd540d936c4dd2c310a0442547943962a6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 539d9a9dbca71571e2ea97aa91c544a4170ae0f0
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59077298"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60494120"
 ---
 # <a name="get-devicemanagementconfigurationpolicyassignment"></a>获取 deviceManagementConfigurationPolicyAssignment
 
@@ -29,7 +29,7 @@ ms.locfileid: "59077298"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

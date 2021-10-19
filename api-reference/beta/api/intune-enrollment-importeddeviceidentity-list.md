@@ -2,15 +2,15 @@
 title: 列出 importedDeviceIdentities
 description: 列出 importedDeviceIdentity 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 731a0767ed3fbac3a4227e6caa8320508da36fe9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0ed9f98719d0d0a026acdd4a65c84510e1522924
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59020642"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60492003"
 ---
 # <a name="list-importeddeviceidentities"></a>列出 importedDeviceIdentities
 
@@ -29,7 +29,7 @@ ms.locfileid: "59020642"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|应用程序|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

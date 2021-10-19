@@ -2,15 +2,15 @@
 title: 列出 deviceManagementConfigurationChoiceSettingCollectionDefinitions
 description: 列出 deviceManagementConfigurationChoiceSettingCollectionDefinition 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f2f4bc359bd7d3fcb45ef61acae0ce7baee4f555
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 92fce5a9a14ba2271ae593fef3d448b7e62c27e7
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59048540"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60493780"
 ---
 # <a name="list-devicemanagementconfigurationchoicesettingcollectiondefinitions"></a>列出 deviceManagementConfigurationChoiceSettingCollectionDefinitions
 
@@ -29,7 +29,7 @@ ms.locfileid: "59048540"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/reusableSettings
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 20319
+Content-Length: 20321
 
 {
   "value": [
@@ -77,7 +77,7 @@ Content-Length: 20319
       "applicability": {
         "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingApplicability",
         "description": "Description value",
-        "platform": "macOS",
+        "platform": "android",
         "deviceMode": "kiosk",
         "technologies": "mdm"
       },

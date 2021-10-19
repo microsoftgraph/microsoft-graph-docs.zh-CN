@@ -2,15 +2,15 @@
 title: 列出 userExperienceAnalyticsNotAutopilotReadyDevices
 description: 列出 userExperienceAnalyticsNotAutopilotReadyDevice 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3cfe21d2db8ee6d5d8797ea03d5c3f42faa62ee6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 11d51b9683ef3cc408a7e92a890bfb322ee49b20
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59077081"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60493127"
 ---
 # <a name="list-userexperienceanalyticsnotautopilotreadydevices"></a>列出 userExperienceAnalyticsNotAutopilotReadyDevices
 
@@ -29,7 +29,7 @@ ms.locfileid: "59077081"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

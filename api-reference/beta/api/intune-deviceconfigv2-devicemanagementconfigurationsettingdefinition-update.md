@@ -2,15 +2,15 @@
 title: 更新 deviceManagementConfigurationSettingDefinition
 description: 更新 deviceManagementConfigurationSettingDefinition 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cae559080a9d9b789342a59edf1dc54e5eac18cc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 281b863d61fc113a7880622235a82d1239816167
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59097388"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60488029"
 ---
 # <a name="update-devicemanagementconfigurationsettingdefinition"></a>更新 deviceManagementConfigurationSettingDefinition
 
@@ -29,7 +29,7 @@ ms.locfileid: "59097388"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -58,13 +58,13 @@ PATCH /deviceManagement/configurationPolicyTemplates/{deviceManagementConfigurat
 |:---|:---|:---|
 |适用性|[deviceManagementConfigurationSettingApplicability](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingapplicability.md)|有关适用设备设置的详细信息|
 |accessTypes|[deviceManagementConfigurationSettingAccessTypes](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingaccesstypes.md)|设置的读/写访问模式。 可取值为：`none`、`add`、`copy`、`delete`、`get`、`replace` 或 `execute`。|
-|keywords|字符串集合|要搜索设置的标记|
-|infoUrls|字符串集合|可在以下链接列表中找到有关设置详细信息|
+|keywords|String 集合|要搜索设置的标记|
+|infoUrls|String collection|可在以下链接列表中找到有关设置详细信息|
 |occurrence|[deviceManagementConfigurationSettingOccurrence](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingoccurrence.md)|指示是否要求设置|
 |baseUri|String|基本云解决方案提供商路径|
 |offsetUri|String|从基本位置偏移云解决方案提供商路径|
 |rootDefinitionId|String|根设置定义（如果该设置是子设置）。|
-|categoryId|String|指定在云解决方案提供商解决方案提供商的指定配置服务提供程序中配置 (区域) |
+|categoryId|String|指定在云解决方案提供商计划云解决方案提供商的指定配置服务提供程序中配置 (区域) |
 |settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|设置类型，例如配置和合规性。 可取值为：`none`、`configuration`。|
 |uxBehavior|[deviceManagementConfigurationControlType](../resources/intune-deviceconfigv2-devicemanagementconfigurationcontroltype.md)|在 UX 中设置控件类型表示形式。 可取值为：`default`、`dropdown`、`smallTextBox`、`largeTextBox`、`toggle`、`multiheaderGrid` 或 `contextPane`。|
 |visibility|[deviceManagementConfigurationSettingVisibility](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvisibility.md)|将可见性范围设置为 UX。 可取值为：`none`、`settingsCatalog`、`template`。|
@@ -88,14 +88,14 @@ PATCH /deviceManagement/configurationPolicyTemplates/{deviceManagementConfigurat
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/reusableSettings/{deviceManagementConfigurationSettingDefinitionId}
 Content-type: application/json
-Content-length: 1258
+Content-length: 1260
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationSettingDefinition",
   "applicability": {
     "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingApplicability",
     "description": "Description value",
-    "platform": "macOS",
+    "platform": "android",
     "deviceMode": "kiosk",
     "technologies": "mdm"
   },
@@ -137,14 +137,14 @@ Content-length: 1258
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1307
+Content-Length: 1309
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationSettingDefinition",
   "applicability": {
     "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingApplicability",
     "description": "Description value",
-    "platform": "macOS",
+    "platform": "android",
     "deviceMode": "kiosk",
     "technologies": "mdm"
   },

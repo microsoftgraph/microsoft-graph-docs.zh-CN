@@ -2,15 +2,15 @@
 title: 获取 windows10EnrollmentCompletionPageConfiguration
 description: 读取 windows10EnrollmentCompletionPageConfiguration 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a9c76d73910887f8917dfb214d5ffeb020527547
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ba0a6dcb920b75d77e8095a5b367a41a29ce348e
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59141891"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60488890"
 ---
 # <a name="get-windows10enrollmentcompletionpageconfiguration"></a>获取 windows10EnrollmentCompletionPageConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "59141891"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|应用程序|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

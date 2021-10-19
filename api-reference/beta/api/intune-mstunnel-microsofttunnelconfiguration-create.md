@@ -2,15 +2,15 @@
 title: 创建 microsoftTunnelConfiguration
 description: 创建新的 microsoftTunnelConfiguration 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 942f9268327d521c3fe3698ebe31d1c956d6d2a9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 50ab0a344365eb46e2da890a926025b559cc1dec
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59034307"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60488211"
 ---
 # <a name="create-microsofttunnelconfiguration"></a>创建 microsoftTunnelConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "59034307"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
@@ -57,7 +57,7 @@ POST /deviceManagement/microsoftTunnelConfigurations
 |displayName|String|MicrosoftTunnelConfiguration 的显示名称|
 |说明|String|MicrosoftTunnelConfiguration 的说明|
 |network|String|将用于为客户端分配虚拟地址的子网|
-|dnsServers|String collection|客户端将使用的 DNS 服务器|
+|dnsServers|String 集合|客户端将使用的 DNS 服务器|
 |defaultDomainSuffix|String|客户端将使用的默认域附录|
 |routesInclude|String collection|服务器将路由的路由|
 |routesExclude|String collection|服务器不会路由的路由子集|

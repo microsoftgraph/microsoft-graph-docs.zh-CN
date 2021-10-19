@@ -1,37 +1,33 @@
 ---
 title: microsoftAuthenticatorAuthenticationMethodTarget 资源类型
-description: 启用以使用身份验证方法策略Microsoft Authenticator组的集合。
+description: 启用以使用身份验证方法策略Microsoft Authenticator或组的集合。
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 4baf2713789a54707c65fe8c2b94fe60ac275626
-ms.sourcegitcommit: b7e01a1331abe5f5c9aa2828d93dad08229573f1
+ms.openlocfilehash: 8276f01bca86025c11eddeef21d5cce28263c379
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58336668"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60493478"
 ---
 # <a name="microsoftauthenticatorauthenticationmethodtarget-resource-type"></a>microsoftAuthenticatorAuthenticationMethodTarget 资源类型
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 Azure AD 中启用以使用 Microsoft Authenticator[方法策略的用户](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md)或组的集合。  继承自 [authenticationMethodTarget](authenticationMethodTarget.md)。
+启用以使用 Microsoft Authenticator[身份验证方法](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md)策略的用户或组Azure AD。  继承自 [authenticationMethodTarget](authenticationMethodTarget.md)。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
 |authenticationMode|microsoftAuthenticatorAuthenticationMode|确定可用于登录的通知类型。 可能的值包括 `deviceBasedPush` ： (、和) 无 `push` 密码 `any` 。|
-|featureSettings|authenticatorAppFeatureSettings|确定应应用于其他设置Microsoft Authenticator。 可能的值是 `requireNumberMatching` ： (MFA 通知需要匹配号码。 对于手机登录通知，此值将被忽略) 。 可为 NULL。|
-|id|String|Azure AD 用户或组的对象标识符。 继承自 [authenticationMethodTarget](authenticationmethodtarget.md)。|
-|isRegistrationRequired|布尔值|确定是否强制用户注册身份验证方法。 继承自 [authenticationMethodTarget](authenticationmethodtarget.md)。 *不支持*。 |
+|id|String|用户或组Azure AD标识符。 继承自 [authenticationMethodTarget](authenticationmethodtarget.md)。|
+|isRegistrationRequired|Boolean|确定是否强制用户注册身份验证方法。 继承自 [authenticationMethodTarget](authenticationmethodtarget.md)。 *不支持*。 |
 |targetType|authenticationMethodTargetType| 可能的值为： `user`、 `group`和 `unknownFutureValue`。 继承自 [authenticationMethodTarget](authenticationMethodTarget.md)。|
-<!--
-|numberMatchingRequiredState|advancedConfigState|Requires number matching for MFA notifications. Value is ignored for phone sign-in notifications. Possible values are: `enabled`, `disabled`, `default`.|
-|displayLocationInformationRequiredState|advancedConfigState|Determines whether the location of the sign-in should be shown to the user in the body of the notification. Possible values are: `enabled`, `disabled`, `default`.|
-|displayAppInformationRequiredState|advancedConfigState|Determines whether the app the user is signing into should be shown to the user in the body of the notification. Possible values are: `enabled`, `disabled`, `default`.|
--->
+|numberMatchingRequiredState|advancedConfigState|需要匹配 MFA 通知的号码。 手机登录通知的值将被忽略。 可取值为：`enabled`、`disabled`、`default`。|
+|displayAppInformationRequiredState|advancedConfigState|确定用户是否在应用通知中Authenticator上下文。 在通知Authenticator正文中，用户将显示他们登录的应用以及身份验证请求源自的位置。 可取值为：`enabled`、`disabled`、`default`。|
 
 ## <a name="relationships"></a>关系
 无。
@@ -53,7 +49,8 @@ ms.locfileid: "58336668"
   "id": "String (identifier)",
   "isRegistrationRequired": "Boolean",
   "authenticationMode": "String",
-  "featureSettings": "String"
+  "numberMatchingRequiredState": "String",
+  "displayAppInformationRequiredState": "String"
 }
 
 ```

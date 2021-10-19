@@ -2,15 +2,15 @@
 title: 创建 deviceManagementConfigurationSetting
 description: 创建新的 deviceManagementConfigurationSetting 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e736b42c106b7e21c8e1e40ce57afdce54a1ad46
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e6ae50ca1794ffb9f1c19bfe01165ad4909a3486
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59077221"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60490615"
 ---
 # <a name="create-devicemanagementconfigurationsetting"></a>创建 deviceManagementConfigurationSetting
 
@@ -29,7 +29,7 @@ ms.locfileid: "59077221"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

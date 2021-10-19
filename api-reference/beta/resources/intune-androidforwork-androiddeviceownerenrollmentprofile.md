@@ -2,15 +2,15 @@
 title: androidDeviceOwnerEnrollmentProfile 资源类型
 description: 注册配置文件，用于Enterprise Google 的云管理注册 Android 设备。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f88410522f63b289a2b2d6f55a2a1ebf85b46b5e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 41db800f2e14e5806b2354e9b59d95f9249da545
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59057654"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60489743"
 ---
 # <a name="androiddeviceownerenrollmentprofile-resource-type"></a>androidDeviceOwnerEnrollmentProfile 资源类型
 
@@ -40,7 +40,7 @@ ms.locfileid: "59057654"
 |id|String|注册配置文件的唯一 GUID。|
 |displayName|String|注册配置文件的显示名称。|
 |说明|String|注册配置文件的说明。|
-|enrollmentMode|[androidDeviceOwnerEnrollmentMode](../resources/intune-androidforwork-androiddeviceownerenrollmentmode.md)|使用此注册配置文件的设备注册模式。 可取值为：`corporateOwnedDedicatedDevice`、`corporateOwnedFullyManaged`、`corporateOwnedWorkProfile`。|
+|enrollmentMode|[androidDeviceOwnerEnrollmentMode](../resources/intune-androidforwork-androiddeviceownerenrollmentmode.md)|使用此注册配置文件的设备注册模式。 可取值为：`corporateOwnedDedicatedDevice`、`corporateOwnedFullyManaged`、`corporateOwnedWorkProfile`、`corporateOwnedAOSPUserlessDevice`、`corporateOwnedAOSPUserAssociatedDevice`。|
 |enrollmentTokenType|[androidDeviceOwnerEnrollmentTokenType](../resources/intune-androidforwork-androiddeviceownerenrollmenttokentype.md)|注册配置文件的注册令牌类型。 可取值为：`default`、`corporateOwnedDedicatedDeviceWithAzureADSharedMode`。|
 |createdDateTime|DateTimeOffset|注册配置文件的创建日期/时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改注册配置文件的日期/时间。|
@@ -48,9 +48,14 @@ ms.locfileid: "59057654"
 |tokenCreationDateTime|DateTimeOffset|最近创建的令牌的创建日期时间。|
 |tokenExpirationDateTime|DateTimeOffset|最新创建的令牌的到期日期/时间。|
 |enrolledDeviceCount|Int32|已使用此注册配置文件进行注册的 Android 设备总数。|
+|enrollmentTokenUsageCount|Int32|已使用当前令牌注册的 AOSP 设备总数。|
 |qrCodeContent|String|用于生成此令牌的 QR 码的字符串。|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|用于生成此令牌的 QR 码的字符串。|
-|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
+|wifiSsid|String|包含 WLAN 登录 ssid 的字符串|
+|wifiPassword|String|包含 WLAN 登录密码的字符串|
+|wifiSecurityType|[aospWifiSecurityType](../resources/intune-androidforwork-aospwifisecuritytype.md)|包含 WLAN 安全类型的字符串。 可取值为：`none`、`wpa`、`wep`。|
+|wifiHidden|Boolean|指示是否已启用隐藏的 wifi 网络的布尔值|
 
 ## <a name="relationships"></a>关系
 无
@@ -78,6 +83,7 @@ ms.locfileid: "59057654"
   "tokenCreationDateTime": "String (timestamp)",
   "tokenExpirationDateTime": "String (timestamp)",
   "enrolledDeviceCount": 1024,
+  "enrollmentTokenUsageCount": 1024,
   "qrCodeContent": "String",
   "qrCodeImage": {
     "@odata.type": "microsoft.graph.mimeContent",
@@ -86,7 +92,11 @@ ms.locfileid: "59057654"
   },
   "roleScopeTagIds": [
     "String"
-  ]
+  ],
+  "wifiSsid": "String",
+  "wifiPassword": "String",
+  "wifiSecurityType": "String",
+  "wifiHidden": true
 }
 ```
 

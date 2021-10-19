@@ -392,7 +392,7 @@ items:
             items:
               - name: 项目见解
                 items:
-                  - name: '项目见解 (预览) '
+                  - name: '预览版 (项) '
                     href: resources/iteminsights.md
                   - name: 共享的列表
                     href: api/insights-list-shared.md
@@ -517,7 +517,7 @@ items:
                 href: api/planneruser-list-tasks.md
               - name: 更新设置
                 href: api/planneruser-update.md
-          - name: '预览版的首选语言和区域 () '
+          - name: '预览版的首选语言 (区域) '
             items:
               - name: 区域和语言设置
                 href: resources/regionalandlanguagesettings.md
@@ -1984,7 +1984,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报告
+              - name: 报表
                 items:
                   - name: 按打印机组织
                     items:
@@ -2259,6 +2259,8 @@ items:
                         href: api/intune-apps-androidstoreapp-delete.md
                       - name: 更新
                         href: api/intune-apps-androidstoreapp-update.md
+                  - name: Aosp Wi-Fi安全类型
+                    href: resources/intune-androidforwork-aospwifisecuritytype.md
                   - name: 应用配置设置项
                     href: resources/intune-apps-appconfigurationsettingitem.md
                   - name: 证书状态
@@ -6034,6 +6036,8 @@ items:
                     href: resources/intune-deviceconfig-operator.md
                   - name: 完美前向保密组
                     href: resources/intune-deviceconfig-perfectforwardsecrecygroup.md
+                  - name: 个人配置文件个人游戏存储模式
+                    href: resources/intune-deviceconfig-personalprofilepersonalplaystoremode.md
                   - name: Pfx 重新加密请求
                     href: resources/intune-raimportcerts-pfxrecryptionrequest.md
                     items:
@@ -9228,6 +9232,60 @@ items:
                         href: api/intune-rbac-deviceandappmanagementroledefinition-delete.md
                       - name: 更新
                         href: api/intune-rbac-deviceandappmanagementroledefinition-update.md
+                  - name: 标识
+                    href: resources/intune-rbac-identity.md
+                  - name: 标识集
+                    href: resources/intune-rbac-identityset.md
+                  - name: 操作审批策略
+                    href: resources/intune-rbac-operationapprovalpolicy.md
+                    items:
+                      - name: 列表
+                        href: api/intune-rbac-operationapprovalpolicy-list.md
+                      - name: 获取
+                        href: api/intune-rbac-operationapprovalpolicy-get.md
+                      - name: 创建
+                        href: api/intune-rbac-operationapprovalpolicy-create.md
+                      - name: 删除
+                        href: api/intune-rbac-operationapprovalpolicy-delete.md
+                      - name: 更新
+                        href: api/intune-rbac-operationapprovalpolicy-update.md
+                  - name: 操作审批策略平台
+                    href: resources/intune-rbac-operationapprovalpolicyplatform.md
+                  - name: 操作审批策略集
+                    href: resources/intune-rbac-operationapprovalpolicyset.md
+                  - name: 操作审批策略类型
+                    href: resources/intune-rbac-operationapprovalpolicytype.md
+                  - name: 操作审批请求
+                    href: resources/intune-rbac-operationapprovalrequest.md
+                    items:
+                      - name: 列表
+                        href: api/intune-rbac-operationapprovalrequest-list.md
+                      - name: 获取
+                        href: api/intune-rbac-operationapprovalrequest-get.md
+                      - name: 创建
+                        href: api/intune-rbac-operationapprovalrequest-create.md
+                      - name: 删除
+                        href: api/intune-rbac-operationapprovalrequest-delete.md
+                      - name: 更新
+                        href: api/intune-rbac-operationapprovalrequest-update.md
+                      - name: 审批操作
+                        href: api/intune-rbac-operationapprovalrequest-approve.md
+                      - name: 拒绝操作
+                        href: api/intune-rbac-operationapprovalrequest-reject.md
+                      - name: cancelApproval 操作
+                        href: api/intune-rbac-operationapprovalrequest-cancelapproval.md
+                      - name: getRequestStatus 操作
+                        href: api/intune-rbac-operationapprovalrequest-getrequeststatus.md
+                      - name: getMyRequestById
+                        href: api/intune-rbac-operationapprovalrequest-getmyrequestbyid.md
+                      - name: getMyRequests
+                        href: api/intune-rbac-operationapprovalrequest-getmyrequests.md
+                      - name: cancelMyRequest 操作
+                        href: api/intune-rbac-operationapprovalrequest-cancelmyrequest.md
+                  - name: 操作审批请求实体状态
+                    href: resources/intune-rbac-operationapprovalrequestentitystatus.md
+                  - name: 操作审批请求状态
+                    href: resources/intune-rbac-operationapprovalrequeststatus.md
                   - name: Rbac 应用程序多个
                     href: resources/intune-rbac-rbacapplicationmultiple.md
                     items:
@@ -9450,10 +9508,10 @@ items:
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-get.md
                       - name: 更新
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
-                      - name: 列出
+                      - name: 列表
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
-                      - name: 创建
-                        href: resources/intune-shared-devicemanagementderivedcredentialsettings.md
+                      - name: 'deviceManagementDerivedCredentialSettings] (。。/resources/intune-shared-devicemanagementderivedcredentialsettings.md) |创建'
+                        href: api/intune-shared-devicemanagementderivedcredentialsettings.md
                       - name: 删除
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
                   - name: 设备管理脚本
@@ -11574,7 +11632,7 @@ items:
                             href: api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
                           - name: 删除
                             href: api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
-                      - name: 'Microsoft Authenticator无密码电话已弃 (登录策略) '
+                      - name: 'Microsoft Authenticator已电话密码登录策略 (已弃) '
                         href: resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md
                         items:
                           - name: 获取
@@ -12008,7 +12066,7 @@ items:
                         href: api/accessreviewhistorydefinition-post.md
                       - name: 生成下载 URI
                         href: api/accessreviewhistorydefinition-generatedownloaduri.md
-              - name: '已弃 (的访问) '
+              - name: '已弃 (访问) '
                 href: resources/accessreviews-root.md
                 items:
                   - name: 访问审查
@@ -12990,7 +13048,7 @@ items:
             items:
               - name: 项目见解
                 items:
-                  - name: '预览版 (项) '
+                  - name: '项目见解 (预览) '
                     href: resources/iteminsights.md
                   - name: 共享的内容
                     href: resources/insights-shared.md
@@ -13566,7 +13624,7 @@ items:
                     href: api/usersimulationdetails-list.md
                   - name: 获取模拟概述
                     href: api/simulationreportoverview-get.md
-              - name: 报告
+              - name: 报表
                 items:
                   - name: 攻击模拟报告
                     displayname: Attack simulation and training

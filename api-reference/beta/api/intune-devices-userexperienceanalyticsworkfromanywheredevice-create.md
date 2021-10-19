@@ -2,15 +2,15 @@
 title: 创建 userExperienceAnalyticsWorkFromAnywhereDevice
 description: 创建新的 userExperienceAnalyticsWorkFromAnywhereDevice 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a7261d1141472399221ae991a5adadab4892e30b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5eea32ba708c4d7dc8d5ca0169818f94a3871603
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59065363"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60494729"
 ---
 # <a name="create-userexperienceanalyticsworkfromanywheredevice"></a>创建 userExperienceAnalyticsWorkFromAnywhereDevice
 
@@ -54,6 +54,7 @@ POST /deviceManagement/userExperienceAnalyticsWorkFromAnywhereMetrics/{userExper
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|用户体验分析的唯一标识符从任何设备工作。|
+|deviceId|String|用户体验从任何设备 ID 开始工作。|
 |deviceName|String|来自任何设备名称的工作。|
 |serialNumber|String|用户体验随设备序列号随处工作。|
 |manufacturer|String|用户体验从任何设备制造商处工作。|
@@ -70,6 +71,7 @@ POST /deviceManagement/userExperienceAnalyticsWorkFromAnywhereMetrics/{userExper
 |tenantAttached|Boolean|用户体验从任何设备的 tenantAttached 工作。|
 |compliancePolicySetToIntune|Boolean|用户体验从任何设备的 compliancePolicySetToIntune 工作。|
 |otherWorkloadsSetToIntune|Boolean|用户体验从任何设备的其他WorkloadsSetToIntune 工作。|
+|isCloudManagedGatewayEnabled|Boolean|在启用了 Configuration Manager 的云管理网关的任何位置，用户体验都可用。|
 |upgradeEligibility|[operatingSystemUpgradeEligibility](../resources/intune-devices-operatingsystemupgradeeligibility.md)|用户体验从设备的任何 Windows 升级资格状态工作。 可取值为：`upgraded`、`unknown`、`notCapable`、`capable`。|
 |ramCheckFailed|Boolean|用户体验分析是否从任何设备 RAM 硬件检查失败，设备无法升级到最新版本的 Windows|
 |storageCheckFailed|Boolean|用户体验适用于任何设备，设备升级到最新版本的 Windows 时存储硬件检查是否失败。|
@@ -80,6 +82,7 @@ POST /deviceManagement/userExperienceAnalyticsWorkFromAnywhereMetrics/{userExper
 |processorFamilyCheckFailed|Boolean|用户体验适用于任何设备，设备升级到最新版本的 Windows 时处理器硬件系列检查是否失败。|
 |processor64BitCheckFailed|Boolean|用户体验适用于任何设备，处理器硬件 64 位体系结构检查是否失败，设备无法升级到最新版本的 Windows。|
 |osCheckFailed|Boolean|用户体验适用于任何设备，操作系统检查是否失败，设备是否升级到最新版本的 Windows。|
+|workFromAnywhereScore|双精度|用户体验从每个设备的整体分数的任何位置工作。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
 |windowsScore|双精度|用户体验从每个设备窗口分数的任何位置工作。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
 |cloudManagementScore|双精度|用户体验按设备云管理分数从任意位置工作。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
 |cloudIdentityScore|双精度|用户体验从每个设备云标识分数的任何位置工作。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
@@ -98,10 +101,11 @@ POST /deviceManagement/userExperienceAnalyticsWorkFromAnywhereMetrics/{userExper
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsWorkFromAnywhereMetrics/{userExperienceAnalyticsWorkFromAnywhereMetricId}/metricDevices
 Content-type: application/json
-Content-length: 1215
+Content-length: 1323
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsWorkFromAnywhereDevice",
+  "deviceId": "Device Id value",
   "deviceName": "Device Name value",
   "serialNumber": "Serial Number value",
   "manufacturer": "Manufacturer value",
@@ -118,6 +122,7 @@ Content-length: 1215
   "tenantAttached": true,
   "compliancePolicySetToIntune": true,
   "otherWorkloadsSetToIntune": true,
+  "isCloudManagedGatewayEnabled": true,
   "upgradeEligibility": "unknown",
   "ramCheckFailed": true,
   "storageCheckFailed": true,
@@ -128,6 +133,7 @@ Content-length: 1215
   "processorFamilyCheckFailed": true,
   "processor64BitCheckFailed": true,
   "osCheckFailed": true,
+  "workFromAnywhereScore": 7.0,
   "windowsScore": 4.0,
   "cloudManagementScore": 6.666666666666667,
   "cloudIdentityScore": 6.0,
@@ -141,11 +147,12 @@ Content-length: 1215
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1264
+Content-Length: 1372
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsWorkFromAnywhereDevice",
   "id": "83d5adfc-adfc-83d5-fcad-d583fcadd583",
+  "deviceId": "Device Id value",
   "deviceName": "Device Name value",
   "serialNumber": "Serial Number value",
   "manufacturer": "Manufacturer value",
@@ -162,6 +169,7 @@ Content-Length: 1264
   "tenantAttached": true,
   "compliancePolicySetToIntune": true,
   "otherWorkloadsSetToIntune": true,
+  "isCloudManagedGatewayEnabled": true,
   "upgradeEligibility": "unknown",
   "ramCheckFailed": true,
   "storageCheckFailed": true,
@@ -172,6 +180,7 @@ Content-Length: 1264
   "processorFamilyCheckFailed": true,
   "processor64BitCheckFailed": true,
   "osCheckFailed": true,
+  "workFromAnywhereScore": 7.0,
   "windowsScore": 4.0,
   "cloudManagementScore": 6.666666666666667,
   "cloudIdentityScore": 6.0,

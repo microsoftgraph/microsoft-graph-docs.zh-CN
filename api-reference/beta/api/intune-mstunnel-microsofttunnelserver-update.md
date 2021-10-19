@@ -2,15 +2,15 @@
 title: 更新 microsoftTunnelServer
 description: 更新 microsoftTunnelServer 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bf7cf0b8023919819186d876bcf0e8c095a59152
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 115faf5de18b113120540d96e954df2d7a0f04b2
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59041701"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60486556"
 ---
 # <a name="update-microsofttunnelserver"></a>更新 microsoftTunnelServer
 
@@ -27,7 +27,7 @@ ms.locfileid: "59041701"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|DeviceManagementConfiguration.ReadWrite.All|
 

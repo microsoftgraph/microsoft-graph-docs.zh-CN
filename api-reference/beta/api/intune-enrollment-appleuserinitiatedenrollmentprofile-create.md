@@ -2,15 +2,15 @@
 title: 创建 appleUserInitiatedEnrollmentProfile
 description: 创建新的 appleUserInitiatedEnrollmentProfile 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9df044328b3c595fb9496bf7e350bb4719383974
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7f35bd6e908ea6497de1c0cfa03188fe77bc6743
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59107937"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60479198"
 ---
 # <a name="create-appleuserinitiatedenrollmentprofile"></a>创建 appleUserInitiatedEnrollmentProfile
 
@@ -59,7 +59,7 @@ POST /deviceManagement/appleUserInitiatedEnrollmentProfiles
 |displayName|String|配置文件的名称|
 |说明|String|配置文件的说明|
 |priority|Int32|优先级，0 为最高|
-|平台|[devicePlatformType](../resources/intune-enrollment-deviceplatformtype.md)|设备平台。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`unknown`。|
+|平台|[devicePlatformType](../resources/intune-enrollment-deviceplatformtype.md)|设备平台。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`unknown`、`androidAOSP`。|
 |createdDateTime|DateTimeOffset|配置文件创建时间|
 |lastModifiedDateTime|DateTimeOffset|配置文件上次修改时间|
 

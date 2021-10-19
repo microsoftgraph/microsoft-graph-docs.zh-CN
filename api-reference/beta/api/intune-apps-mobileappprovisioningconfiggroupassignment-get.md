@@ -2,15 +2,15 @@
 title: 获取 mobileAppProvisioningConfigGroupAssignment
 description: 读取 mobileAppProvisioningConfigGroupAssignment 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 39d4d059fd9f20e486264c714911da2d13826493
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0d9f22f8c0897f4d0752e9431efa84efd3037d60
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59035183"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60489407"
 ---
 # <a name="get-mobileappprovisioningconfiggroupassignment"></a>获取 mobileAppProvisioningConfigGroupAssignment
 
@@ -29,7 +29,7 @@ ms.locfileid: "59035183"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
+|应用程序|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

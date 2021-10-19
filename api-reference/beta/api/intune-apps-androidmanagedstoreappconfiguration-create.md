@@ -2,15 +2,15 @@
 title: 创建 androidManagedStoreAppConfiguration
 description: 创建新的 androidManagedStoreAppConfiguration 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 169109c836f783c4d27722fa06fc8cfe6f40cbf6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 239c94c309e01b4a18c724e101b313f3d6606c18
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019039"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60489891"
 ---
 # <a name="create-androidmanagedstoreappconfiguration"></a>创建 androidManagedStoreAppConfiguration
 
@@ -65,7 +65,8 @@ POST /deviceAppManagement/mobileAppConfigurations
 |payloadJson|String|Android Enterprise应用配置 JSON 有效负载。|
 |permissionActions|[androidPermissionAction](../resources/intune-apps-androidpermissionaction.md) 集合|Android 应用权限和相应权限操作的列表。|
 |appSupportsOemConfig|Boolean|此 AppConfig 是否是 OEMConfig 策略。|
-|profileApplicability|[androidProfileApplicability](../resources/intune-apps-androidprofileapplicability.md)|Android Enterprise AndroidWorkProfile (DeviceOwner 或默认配置文件 (适用于这两) ) 。 可取值为：`default`、`androidWorkProfile`、`androidDeviceOwner`。|
+|profileApplicability|[androidProfileApplicability](../resources/intune-apps-androidprofileapplicability.md)|Android Enterprise AndroidWorkProfile (DeviceOwner 或默认 (适用于) ) 的配置文件适用性。 可取值为：`default`、`androidWorkProfile`、`androidDeviceOwner`。|
+|connectedAppsEnabled|Boolean|用于指定是否允许此应用的 ConnectedApps 体验的设置。|
 
 
 
@@ -79,7 +80,7 @@ POST /deviceAppManagement/mobileAppConfigurations
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations
 Content-type: application/json
-Content-length: 641
+Content-length: 674
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreAppConfiguration",
@@ -102,7 +103,8 @@ Content-length: 641
     }
   ],
   "appSupportsOemConfig": true,
-  "profileApplicability": "androidWorkProfile"
+  "profileApplicability": "androidWorkProfile",
+  "connectedAppsEnabled": true
 }
 ```
 
@@ -111,7 +113,7 @@ Content-length: 641
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 813
+Content-Length: 846
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreAppConfiguration",
@@ -137,7 +139,8 @@ Content-Length: 813
     }
   ],
   "appSupportsOemConfig": true,
-  "profileApplicability": "androidWorkProfile"
+  "profileApplicability": "androidWorkProfile",
+  "connectedAppsEnabled": true
 }
 ```
 

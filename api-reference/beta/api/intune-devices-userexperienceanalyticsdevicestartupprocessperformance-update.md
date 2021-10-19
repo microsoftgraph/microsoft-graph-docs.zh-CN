@@ -2,15 +2,15 @@
 title: 更新 userExperienceAnalyticsDeviceStartupProcessPerformance
 description: 更新 userExperienceAnalyticsDeviceStartupProcessPerformance 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2443a15980dac7d20f6dcbbb8a07510ae4f28f5a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a45f2f57017d2dafa86dd46519f31e222a0119e3
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59097178"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60488963"
 ---
 # <a name="update-userexperienceanalyticsdevicestartupprocessperformance"></a>更新 userExperienceAnalyticsDeviceStartupProcessPerformance
 
@@ -60,6 +60,8 @@ PATCH /deviceManagement/userExperienceAnalyticsDeviceStartupProcessPerformance/{
 |deviceCount|Int64|用户体验分析设备启动过程汇总计数。|
 |medianImpactInMs|Int32|用户体验分析设备启动过程中值影响（以毫秒为单位）。|
 |totalImpactInMs|Int32|用户体验分析设备启动过程总影响（以毫秒为单位）。|
+|medianImpactInMs2|Int64|用户体验分析设备启动过程中值影响（以毫秒为单位）。|
+|totalImpactInMs2|Int64|用户体验分析设备启动过程总影响（以毫秒为单位）。|
 
 
 
@@ -73,7 +75,7 @@ PATCH /deviceManagement/userExperienceAnalyticsDeviceStartupProcessPerformance/{
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDeviceStartupProcessPerformance/{userExperienceAnalyticsDeviceStartupProcessPerformanceId}
 Content-type: application/json
-Content-length: 285
+Content-length: 338
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDeviceStartupProcessPerformance",
@@ -82,7 +84,9 @@ Content-length: 285
   "publisher": "Publisher value",
   "deviceCount": 11,
   "medianImpactInMs": 0,
-  "totalImpactInMs": 15
+  "totalImpactInMs": 15,
+  "medianImpactInMs2": 1,
+  "totalImpactInMs2": 0
 }
 ```
 
@@ -91,7 +95,7 @@ Content-length: 285
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 334
+Content-Length: 387
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDeviceStartupProcessPerformance",
@@ -101,7 +105,9 @@ Content-Length: 334
   "publisher": "Publisher value",
   "deviceCount": 11,
   "medianImpactInMs": 0,
-  "totalImpactInMs": 15
+  "totalImpactInMs": 15,
+  "medianImpactInMs2": 1,
+  "totalImpactInMs2": 0
 }
 ```
 

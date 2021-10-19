@@ -2,15 +2,15 @@
 title: createCopy 操作
 description: 尚未记录
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 69d37a726a8a0528745a03b8c129f24edb2adefe
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a6feec284599b3ccafe656a6896bce9ccbc0d320
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59088239"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60493759"
 ---
 # <a name="createcopy-action"></a>createCopy 操作
 
@@ -29,7 +29,7 @@ ms.locfileid: "59088239"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -83,7 +83,7 @@ Content-length: 82
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 918
+Content-Length: 920
 
 {
   "value": {
@@ -91,7 +91,7 @@ Content-Length: 918
     "id": "3ffd7cd0-7cd0-3ffd-d07c-fd3fd07cfd3f",
     "name": "Name value",
     "description": "Description value",
-    "platforms": "macOS",
+    "platforms": "android",
     "technologies": "mdm",
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",

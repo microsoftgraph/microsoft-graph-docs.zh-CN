@@ -2,15 +2,15 @@
 title: 列出 macOSDeviceFeaturesConfigurations
 description: 列出 macOSDeviceFeaturesConfiguration 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b49bc4eb06967dc4f0c0694bb1e6ffc7ea058187
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 21ab45053ff94241208b99abcaaf137d8ced240f
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59135814"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60492060"
 ---
 # <a name="list-macosdevicefeaturesconfigurations"></a>列出 macOSDeviceFeaturesConfigurations
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 6559
+Content-Length: 7076
 
 {
   "value": [
@@ -197,7 +197,18 @@ Content-Length: 6559
         "activeDirectorySiteCode": "Active Directory Site Code value",
         "passwordEnableLocalSync": true,
         "blockActiveDirectorySiteAutoDiscovery": true,
-        "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
+        "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
+        "modeCredentialUsed": "Mode Credential Used value",
+        "usernameLableCustom": "Username Lable Custom value",
+        "userSetupDelayed": true,
+        "signInHelpText": "Sign In Help Text value",
+        "kerberosAppsInBundleIdACLIncluded": true,
+        "managedAppsInBundleIdACLIncluded": true,
+        "credentialsCacheMonitored": true,
+        "singleSignOnExtensionPreferredKDCs": [
+          "Single Sign On Extension Preferred KDCs value"
+        ],
+        "tlsForLDAPRequired": true
       },
       "contentCachingEnabled": true,
       "contentCachingType": "userContentOnly",

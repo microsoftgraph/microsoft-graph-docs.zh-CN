@@ -2,15 +2,15 @@
 title: 获取 userExperienceAnalyticsBaseline
 description: 读取 userExperienceAnalyticsBaseline 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3ede82ea080b45146e9486acec4ba2f7d721f191
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c8328b6648677a26aea01c1e0fb43cbc63e9a13e
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59102785"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60492010"
 ---
 # <a name="get-userexperienceanalyticsbaseline"></a>获取 userExperienceAnalyticsBaseline
 
@@ -29,7 +29,7 @@ ms.locfileid: "59102785"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

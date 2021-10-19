@@ -2,15 +2,15 @@
 title: 获取 deviceManagementScriptDeviceState
 description: 读取 deviceManagementScriptDeviceState 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 67b993f8d49f49f6ee9de82c83d392220e420e95
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6e35da5c60f747af222c6de1b5edc5da4ce06c0c
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59042289"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60490342"
 ---
 # <a name="get-devicemanagementscriptdevicestate"></a>获取 deviceManagementScriptDeviceState
 
@@ -29,7 +29,7 @@ ms.locfileid: "59042289"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -56,7 +56,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRun
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) 对象。
 
 ## <a name="example"></a>示例
 

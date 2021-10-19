@@ -2,15 +2,15 @@
 title: 创建 deviceManagementReusablePolicySetting
 description: 创建新的 deviceManagementReusablePolicySetting 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ed2c0d14f1b7608f63ec38b53adb98cd081daa45
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 795b300d5443cbd82e9c71c25af622e3af236f04
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59018374"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60489203"
 ---
 # <a name="create-devicemanagementreusablepolicysetting"></a>创建 deviceManagementReusablePolicySetting
 
@@ -29,7 +29,7 @@ ms.locfileid: "59018374"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

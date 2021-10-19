@@ -2,15 +2,15 @@
 title: 创建 importedAppleDeviceIdentity
 description: 创建新的 importedAppleDeviceIdentity 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d7e2ba321afa8ce8c4c871dbff15048ed66e522a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c1940dd465aa397d92021495bef5f3895829d5b2
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59082494"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60490003"
 ---
 # <a name="create-importedappledeviceidentity"></a>创建 importedAppleDeviceIdentity
 
@@ -57,7 +57,7 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedAp
 |serialNumber|String|设备序列号|
 |requestedEnrollmentProfileId|String|注册配置文件 ID 管理员打算在下一次注册期间应用到设备|
 |requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|向设备分配注册配置文件的时间|
-|isSupervised|Boolean|指示 Apple 设备是否受监督。 有关详细信息，请参阅： https://support.apple.com/HT202837|
+|isSupervised|Boolean|指示 Apple 设备是否受监督。 有关详细信息，请参阅： https://support.apple.com/en-us/HT202837|
 |discoverySource|[discoverySource](../resources/intune-enrollment-discoverysource.md)|Apple 设备发现源。 可取值为：`unknown`、`adminImport`、`deviceEnrollmentProgram`。|
 |isDeleted|Boolean|指示设备是否从 Apple Business Manager 中删除|
 |createdDateTime|DateTimeOffset|设备的创建日期时间|

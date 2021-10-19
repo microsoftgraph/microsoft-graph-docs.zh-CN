@@ -2,15 +2,15 @@
 title: getSuggestedEnrollmentLimit 函数
 description: 尚未记录
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5e8cf18410c3b1975e26716d5e30d9ddb2ae7224
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7105a3135eea37bb43f5a7fea69996ffb8a3c1a9
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59027706"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60484230"
 ---
 # <a name="getsuggestedenrollmentlimit-function"></a>getSuggestedEnrollmentLimit 函数
 
@@ -29,7 +29,7 @@ ms.locfileid: "59027706"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|应用程序|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -50,7 +50,7 @@ GET /deviceManagement/getSuggestedEnrollmentLimit
 在请求 URL 中，提供以下查询参数（含值）。
 下表显示了可用于此函数的参数。
 
-|属性|类型|描述|
+|属性|类型|说明|
 |:---|:---|:---|
 |enrollmentType|String|尚未记录|
 

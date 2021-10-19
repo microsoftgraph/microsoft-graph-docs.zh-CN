@@ -2,15 +2,15 @@
 title: 列出 managedAppPolicies
 description: 列出 managedAppPolicy 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f5d276da54b0f00ba8c28d83cadda08c1005be09
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: dbae867a4307ae3fca2a7b4e41853fdabe4c3093
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59121548"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60492819"
 ---
 # <a name="list-managedapppolicies"></a>列出 managedAppPolicies
 
@@ -29,7 +29,7 @@ ms.locfileid: "59121548"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
+|应用程序|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

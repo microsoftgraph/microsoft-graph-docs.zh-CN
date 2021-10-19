@@ -2,15 +2,15 @@
 title: 获取 cloudPCConnectivityIssue
 description: 读取 cloudPCConnectivityIssue 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c7818405ba94ba01e5f3b5d8e395883be3577b49
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2a8e607d013e613ee43c90fe1b8e65d435096f5c
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59122199"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60479842"
 ---
 # <a name="get-cloudpcconnectivityissue"></a>获取 cloudPCConnectivityIssue
 
@@ -29,7 +29,7 @@ ms.locfileid: "59122199"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

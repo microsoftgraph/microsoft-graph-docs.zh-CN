@@ -2,15 +2,15 @@
 title: 获取 userExperienceAnalyticsModelScores
 description: 读取 userExperienceAnalyticsModelScores 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fce7ddd18071f925013cb02506926ba29e895b1b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 30a75128f66cba879a6e773e3849180284c1d941
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59070312"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60492459"
 ---
 # <a name="get-userexperienceanalyticsmodelscores"></a>获取 userExperienceAnalyticsModelScores
 
@@ -29,7 +29,7 @@ ms.locfileid: "59070312"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

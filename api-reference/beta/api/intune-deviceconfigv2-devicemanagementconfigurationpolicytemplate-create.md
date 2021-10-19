@@ -2,15 +2,15 @@
 title: 创建 deviceManagementConfigurationPolicyTemplate
 description: 创建新的 deviceManagementConfigurationPolicyTemplate 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c20caa41e28de50a407e180b594929aa82c5bd68
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c6ba7ad8448bf5416afbbb909791d1b57df60a74
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59077277"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60491414"
 ---
 # <a name="create-devicemanagementconfigurationpolicytemplate"></a>创建 deviceManagementConfigurationPolicyTemplate
 
@@ -29,7 +29,7 @@ ms.locfileid: "59077277"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -60,9 +60,9 @@ POST /deviceManagement/configurationPolicyTemplates
 |说明|String|模板说明|
 |displayVersion|String|模板版本说明|
 |lifecycleState|[deviceManagementTemplateLifecycleState](../resources/intune-deviceconfigv2-devicemanagementtemplatelifecyclestate.md)|指示模板的当前生命周期状态。 可取值为：`invalid`、`draft`、`active`、`superseded`、`deprecated`、`retired`。|
-|平台|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|此模板的平台。 可取值为：`none`、`macOS`、`windows10X`、`windows10`。|
-|technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|此模板的技术。 可取值为：`none`、`mdm`、`windows10XManagement`、`configManager`、`microsoftSense`、`exchangeOnline`。|
-|templateFamily|[deviceManagementConfigurationTemplateFamily](../resources/intune-deviceconfigv2-devicemanagementconfigurationtemplatefamily.md)|此模板的 TemplateFamily。 可取值为：`none`、`endpointSecurityAntivirus`、`endpointSecurityDiskEncryption`、`endpointSecurityFirewall`、`endpointSecurityEndpointDetectionAndResponse`、`endpointSecurityAttackSurfaceReduction`、`endpointSecurityAccountProtection`、`endpointSecurityApplicationControl`。|
+|平台|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|此模板的平台。 可取值为：`none`、`android`、`iOS`、`macOS`、`windows10X`、`windows10`。|
+|technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|此模板的技术。 可取值为：`none`、`mdm`、`windows10XManagement`、`configManager`、`microsoftSense`、`exchangeOnline`、`linuxMdm`、`unknownFutureValue`。|
+|templateFamily|[deviceManagementConfigurationTemplateFamily](../resources/intune-deviceconfigv2-devicemanagementconfigurationtemplatefamily.md)|此模板的 TemplateFamily。 可取值为：`none`、`endpointSecurityAntivirus`、`endpointSecurityDiskEncryption`、`endpointSecurityFirewall`、`endpointSecurityEndpointDetectionAndResponse`、`endpointSecurityAttackSurfaceReduction`、`endpointSecurityAccountProtection`、`endpointSecurityApplicationControl`、`baseline`。|
 |allowUnmanagedSettings|Boolean|允许非托管设置模板|
 |settingTemplateCount|Int32|设置模板的数量。 有效值为 0 到 2147483647。 此属性是只读的。|
 
@@ -78,7 +78,7 @@ POST /deviceManagement/configurationPolicyTemplates
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/configurationPolicyTemplates
 Content-type: application/json
-Content-length: 453
+Content-length: 455
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationPolicyTemplate",
@@ -88,7 +88,7 @@ Content-length: 453
   "description": "Description value",
   "displayVersion": "Display Version value",
   "lifecycleState": "draft",
-  "platforms": "macOS",
+  "platforms": "android",
   "technologies": "mdm",
   "templateFamily": "endpointSecurityAntivirus",
   "allowUnmanagedSettings": true,
@@ -101,7 +101,7 @@ Content-length: 453
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 502
+Content-Length: 504
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationPolicyTemplate",
@@ -112,7 +112,7 @@ Content-Length: 502
   "description": "Description value",
   "displayVersion": "Display Version value",
   "lifecycleState": "draft",
-  "platforms": "macOS",
+  "platforms": "android",
   "technologies": "mdm",
   "templateFamily": "endpointSecurityAntivirus",
   "allowUnmanagedSettings": true,

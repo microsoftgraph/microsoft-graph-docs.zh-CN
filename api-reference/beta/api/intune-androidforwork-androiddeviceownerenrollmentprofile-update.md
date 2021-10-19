@@ -2,15 +2,15 @@
 title: 更新 androidDeviceOwnerEnrollmentProfile
 description: 更新 androidDeviceOwnerEnrollmentProfile 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e8f83545c4de369c270eea7b63793418f88821d5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: bb53c8ed29fc72eea91756e26ddd45fa0db9df1e
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59071334"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60489288"
 ---
 # <a name="update-androiddeviceownerenrollmentprofile"></a>更新 androidDeviceOwnerEnrollmentProfile
 
@@ -57,7 +57,7 @@ PATCH /deviceManagement/androidDeviceOwnerEnrollmentProfiles/{androidDeviceOwner
 |id|String|注册配置文件的唯一 GUID。|
 |displayName|String|注册配置文件的显示名称。|
 |说明|String|注册配置文件的说明。|
-|enrollmentMode|[androidDeviceOwnerEnrollmentMode](../resources/intune-androidforwork-androiddeviceownerenrollmentmode.md)|使用此注册配置文件的设备注册模式。 可取值为：`corporateOwnedDedicatedDevice`、`corporateOwnedFullyManaged`、`corporateOwnedWorkProfile`。|
+|enrollmentMode|[androidDeviceOwnerEnrollmentMode](../resources/intune-androidforwork-androiddeviceownerenrollmentmode.md)|使用此注册配置文件的设备注册模式。 可取值为：`corporateOwnedDedicatedDevice`、`corporateOwnedFullyManaged`、`corporateOwnedWorkProfile`、`corporateOwnedAOSPUserlessDevice`、`corporateOwnedAOSPUserAssociatedDevice`。|
 |enrollmentTokenType|[androidDeviceOwnerEnrollmentTokenType](../resources/intune-androidforwork-androiddeviceownerenrollmenttokentype.md)|注册配置文件的注册令牌类型。 可取值为：`default`、`corporateOwnedDedicatedDeviceWithAzureADSharedMode`。|
 |createdDateTime|DateTimeOffset|注册配置文件的创建日期/时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改注册配置文件的日期/时间。|
@@ -65,9 +65,14 @@ PATCH /deviceManagement/androidDeviceOwnerEnrollmentProfiles/{androidDeviceOwner
 |tokenCreationDateTime|DateTimeOffset|最近创建的令牌的创建日期时间。|
 |tokenExpirationDateTime|DateTimeOffset|最新创建的令牌的到期日期/时间。|
 |enrolledDeviceCount|Int32|已使用此注册配置文件进行注册的 Android 设备总数。|
+|enrollmentTokenUsageCount|Int32|已使用当前令牌注册的 AOSP 设备总数。|
 |qrCodeContent|String|用于生成此令牌的 QR 码的字符串。|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|用于生成此令牌的 QR 码的字符串。|
 |roleScopeTagIds|String collection|此实体实例的范围标记列表。|
+|wifiSsid|String|包含 WLAN 登录 ssid 的字符串|
+|wifiPassword|String|包含 WLAN 登录密码的字符串|
+|wifiSecurityType|[aospWifiSecurityType](../resources/intune-androidforwork-aospwifisecuritytype.md)|包含 WLAN 安全类型的字符串。 可取值为：`none`、`wpa`、`wep`。|
+|wifiHidden|Boolean|指示是否已启用隐藏的 wifi 网络的布尔值|
 
 
 
@@ -81,7 +86,7 @@ PATCH /deviceManagement/androidDeviceOwnerEnrollmentProfiles/{androidDeviceOwner
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/androidDeviceOwnerEnrollmentProfiles/{androidDeviceOwnerEnrollmentProfileId}
 Content-type: application/json
-Content-length: 758
+Content-length: 922
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerEnrollmentProfile",
@@ -94,6 +99,7 @@ Content-length: 758
   "tokenCreationDateTime": "2017-01-01T00:01:38.5314127-08:00",
   "tokenExpirationDateTime": "2016-12-31T23:59:54.0590989-08:00",
   "enrolledDeviceCount": 3,
+  "enrollmentTokenUsageCount": 9,
   "qrCodeContent": "Qr Code Content value",
   "qrCodeImage": {
     "@odata.type": "microsoft.graph.mimeContent",
@@ -102,7 +108,11 @@ Content-length: 758
   },
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
+  ],
+  "wifiSsid": "Wifi Ssid value",
+  "wifiPassword": "Wifi Password value",
+  "wifiSecurityType": "wpa",
+  "wifiHidden": true
 }
 ```
 
@@ -111,7 +121,7 @@ Content-length: 758
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 930
+Content-Length: 1094
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerEnrollmentProfile",
@@ -127,6 +137,7 @@ Content-Length: 930
   "tokenCreationDateTime": "2017-01-01T00:01:38.5314127-08:00",
   "tokenExpirationDateTime": "2016-12-31T23:59:54.0590989-08:00",
   "enrolledDeviceCount": 3,
+  "enrollmentTokenUsageCount": 9,
   "qrCodeContent": "Qr Code Content value",
   "qrCodeImage": {
     "@odata.type": "microsoft.graph.mimeContent",
@@ -135,7 +146,11 @@ Content-Length: 930
   },
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
+  ],
+  "wifiSsid": "Wifi Ssid value",
+  "wifiPassword": "Wifi Password value",
+  "wifiSecurityType": "wpa",
+  "wifiHidden": true
 }
 ```
 

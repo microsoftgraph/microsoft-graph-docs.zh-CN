@@ -2,15 +2,15 @@
 title: 创建 androidForWorkMobileAppConfiguration
 description: 创建新的 androidForWorkMobileAppConfiguration 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 52a2f58e199aeb6758a5eb6400956906833c3261
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f3c1d77b1d187e4aca9e8f92db320fbfdedf9300
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59066126"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60490377"
 ---
 # <a name="create-androidforworkmobileappconfiguration"></a>创建 androidForWorkMobileAppConfiguration
 
@@ -64,7 +64,8 @@ POST /deviceAppManagement/mobileAppConfigurations
 |packageId|String|Android For Work 应用配置包 ID。|
 |payloadJson|String|Android For Work 应用配置 JSON 有效负载。|
 |permissionActions|[androidPermissionAction](../resources/intune-apps-androidpermissionaction.md) 集合|Android 应用权限和相应权限操作的列表。|
-|profileApplicability|[androidProfileApplicability](../resources/intune-apps-androidprofileapplicability.md)|Android Enterprise AndroidWorkProfile (DeviceOwner 或默认配置文件 (适用于这两) ) 。 可取值为：`default`、`androidWorkProfile`、`androidDeviceOwner`。|
+|profileApplicability|[androidProfileApplicability](../resources/intune-apps-androidprofileapplicability.md)|Android Enterprise AndroidWorkProfile (DeviceOwner 或默认 (适用于) ) 的配置文件适用性。 可取值为：`default`、`androidWorkProfile`、`androidDeviceOwner`。|
+|connectedAppsEnabled|Boolean|用于指定是否允许此应用的 ConnectedApps 体验的设置。|
 
 
 
@@ -78,7 +79,7 @@ POST /deviceAppManagement/mobileAppConfigurations
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations
 Content-type: application/json
-Content-length: 609
+Content-length: 642
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkMobileAppConfiguration",
@@ -100,7 +101,8 @@ Content-length: 609
       "action": "autoGrant"
     }
   ],
-  "profileApplicability": "androidWorkProfile"
+  "profileApplicability": "androidWorkProfile",
+  "connectedAppsEnabled": true
 }
 ```
 
@@ -109,7 +111,7 @@ Content-length: 609
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 781
+Content-Length: 814
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkMobileAppConfiguration",
@@ -134,7 +136,8 @@ Content-Length: 781
       "action": "autoGrant"
     }
   ],
-  "profileApplicability": "androidWorkProfile"
+  "profileApplicability": "androidWorkProfile",
+  "connectedAppsEnabled": true
 }
 ```
 

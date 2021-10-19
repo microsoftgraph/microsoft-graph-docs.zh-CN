@@ -2,15 +2,15 @@
 title: userExperienceAnalyticsWorkFromAnywhereDevice 资源类型
 description: 用户体验分析设备：从任何位置工作的报告
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ae621a500d0b3cef0151ccf2763aa78db182ed67
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 40f43602000fa120b08e5b89a065572f23f90504
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59046874"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60494134"
 ---
 # <a name="userexperienceanalyticsworkfromanywheredevice-resource-type"></a>userExperienceAnalyticsWorkFromAnywhereDevice 资源类型
 
@@ -35,6 +35,7 @@ ms.locfileid: "59046874"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|用户体验分析的唯一标识符从任何设备工作。|
+|deviceId|String|用户体验从任何设备 ID 开始工作。|
 |deviceName|String|来自任何设备名称的工作。|
 |serialNumber|String|用户体验随设备序列号随处工作。|
 |manufacturer|String|用户体验从任何设备制造商处工作。|
@@ -51,6 +52,7 @@ ms.locfileid: "59046874"
 |tenantAttached|Boolean|用户体验从任何设备的 tenantAttached 工作。|
 |compliancePolicySetToIntune|Boolean|用户体验从任何设备的 compliancePolicySetToIntune 工作。|
 |otherWorkloadsSetToIntune|Boolean|用户体验从任何设备的其他WorkloadsSetToIntune 工作。|
+|isCloudManagedGatewayEnabled|Boolean|在启用了 Configuration Manager 的云管理网关的任何位置，用户体验都可用。|
 |upgradeEligibility|[operatingSystemUpgradeEligibility](../resources/intune-devices-operatingsystemupgradeeligibility.md)|用户体验从设备的任何 Windows 升级资格状态工作。 可取值为：`upgraded`、`unknown`、`notCapable`、`capable`。|
 |ramCheckFailed|Boolean|用户体验分析是否从任何设备 RAM 硬件检查失败，设备无法升级到最新版本的 Windows|
 |storageCheckFailed|Boolean|用户体验适用于任何设备，设备升级到最新版本的 Windows 时存储硬件检查是否失败。|
@@ -61,6 +63,7 @@ ms.locfileid: "59046874"
 |processorFamilyCheckFailed|Boolean|用户体验适用于任何设备，设备升级到最新版本的 Windows 时处理器硬件系列检查是否失败。|
 |processor64BitCheckFailed|Boolean|用户体验适用于任何设备，处理器硬件 64 位体系结构检查是否失败，设备无法升级到最新版本的 Windows。|
 |osCheckFailed|Boolean|用户体验适用于任何设备，操作系统检查是否失败，设备是否升级到最新版本的 Windows。|
+|workFromAnywhereScore|双精度|用户体验从每个设备的整体分数的任何位置工作。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
 |windowsScore|双精度|用户体验从每个设备窗口分数的任何位置工作。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
 |cloudManagementScore|双精度|用户体验按设备云管理分数从任意位置工作。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
 |cloudIdentityScore|双精度|用户体验从每个设备云标识分数的任何位置工作。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
@@ -82,6 +85,7 @@ ms.locfileid: "59046874"
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsWorkFromAnywhereDevice",
   "id": "String (identifier)",
+  "deviceId": "String",
   "deviceName": "String",
   "serialNumber": "String",
   "manufacturer": "String",
@@ -98,6 +102,7 @@ ms.locfileid: "59046874"
   "tenantAttached": true,
   "compliancePolicySetToIntune": true,
   "otherWorkloadsSetToIntune": true,
+  "isCloudManagedGatewayEnabled": true,
   "upgradeEligibility": "String",
   "ramCheckFailed": true,
   "storageCheckFailed": true,
@@ -108,6 +113,7 @@ ms.locfileid: "59046874"
   "processorFamilyCheckFailed": true,
   "processor64BitCheckFailed": true,
   "osCheckFailed": true,
+  "workFromAnywhereScore": "4.2",
   "windowsScore": "4.2",
   "cloudManagementScore": "4.2",
   "cloudIdentityScore": "4.2",

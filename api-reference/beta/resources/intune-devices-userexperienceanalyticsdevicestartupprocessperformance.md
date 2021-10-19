@@ -2,15 +2,15 @@
 title: userExperienceAnalyticsDeviceStartupProcessPerformance 资源类型
 description: 用户体验分析设备启动过程性能。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e6f8ade092e5927792386140b53caa1ea769f3f9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a9dbca4f587a7e58fdd2862e0f6e2d5b7debc0c0
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59125720"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60486675"
 ---
 # <a name="userexperienceanalyticsdevicestartupprocessperformance-resource-type"></a>userExperienceAnalyticsDeviceStartupProcessPerformance 资源类型
 
@@ -41,6 +41,8 @@ ms.locfileid: "59125720"
 |deviceCount|Int64|用户体验分析设备启动过程汇总计数。|
 |medianImpactInMs|Int32|用户体验分析设备启动过程中值影响（以毫秒为单位）。|
 |totalImpactInMs|Int32|用户体验分析设备启动过程总影响（以毫秒为单位）。|
+|medianImpactInMs2|Int64|用户体验分析设备启动过程中值影响（以毫秒为单位）。|
+|totalImpactInMs2|Int64|用户体验分析设备启动过程总影响（以毫秒为单位）。|
 
 ## <a name="relationships"></a>关系
 无
@@ -62,7 +64,9 @@ ms.locfileid: "59125720"
   "publisher": "String",
   "deviceCount": 1024,
   "medianImpactInMs": 1024,
-  "totalImpactInMs": 1024
+  "totalImpactInMs": 1024,
+  "medianImpactInMs2": 1024,
+  "totalImpactInMs2": 1024
 }
 ```
 

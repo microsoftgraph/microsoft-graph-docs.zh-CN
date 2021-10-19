@@ -2,15 +2,15 @@
 title: 列出 userExperienceAnalyticsDeviceStartupProcessPerformances
 description: 列出 userExperienceAnalyticsDeviceStartupProcessPerformance 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0279e941141f6562da82b8b332870a6d5143dc29
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e987abfbf9ce4366262eb522101a78ccda326d78
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59112354"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60490594"
 ---
 # <a name="list-userexperienceanalyticsdevicestartupprocessperformances"></a>列出 userExperienceAnalyticsDeviceStartupProcessPerformances
 
@@ -29,7 +29,7 @@ ms.locfileid: "59112354"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDev
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 399
+Content-Length: 460
 
 {
   "value": [
@@ -77,7 +77,9 @@ Content-Length: 399
       "publisher": "Publisher value",
       "deviceCount": 11,
       "medianImpactInMs": 0,
-      "totalImpactInMs": 15
+      "totalImpactInMs": 15,
+      "medianImpactInMs2": 1,
+      "totalImpactInMs2": 0
     }
   ]
 }

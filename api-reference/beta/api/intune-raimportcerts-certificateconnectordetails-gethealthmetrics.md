@@ -2,15 +2,15 @@
 title: getHealthMetrics 操作
 description: 尚未记录
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 802f0fea0844c5e4da2941c06e970e028366fe32
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 35fd06ecde961c9560d657448e60e652cc61fdc9
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59111920"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60486703"
 ---
 # <a name="gethealthmetrics-action"></a>getHealthMetrics 操作
 
@@ -37,7 +37,7 @@ ms.locfileid: "59111920"
 }
 -->
 ``` http
-POST /deviceManagement/certificateConnectorDetails/getHealthMetrics
+POST /deviceManagement/certificateConnectorDetails/{certificateConnectorDetailsId}/getHealthMetrics
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -65,7 +65,7 @@ POST /deviceManagement/certificateConnectorDetails/getHealthMetrics
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/certificateConnectorDetails/getHealthMetrics
+POST https://graph.microsoft.com/beta/deviceManagement/certificateConnectorDetails/{certificateConnectorDetailsId}/getHealthMetrics
 
 Content-type: application/json
 Content-length: 55
