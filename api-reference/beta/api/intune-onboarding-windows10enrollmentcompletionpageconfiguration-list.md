@@ -2,15 +2,15 @@
 title: 列出 windows10EnrollmentCompletionPageConfigurations
 description: 列出 windows10EnrollmentCompletionPageConfiguration 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c868df11fffb77c9b1e4be40e2d8208b0026e3d3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ff3ddef845a251e968aef8d942df960e290f135c
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59107635"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60491021"
 ---
 # <a name="list-windows10enrollmentcompletionpageconfigurations"></a>列出 windows10EnrollmentCompletionPageConfigurations
 
@@ -29,7 +29,7 @@ ms.locfileid: "59107635"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|应用程序|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

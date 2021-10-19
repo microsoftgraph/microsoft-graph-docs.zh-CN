@@ -2,15 +2,15 @@
 title: getRemoteAssistanceMonitorTotalSessionsReport 操作
 description: 尚未记录
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8186c3b573fe47f36034a20743708614da0ea815
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: adc5117b8fb5430efdef73e75fde2424f869459a
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59041408"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60489750"
 ---
 # <a name="getremoteassistancemonitortotalsessionsreport-action"></a>getRemoteAssistanceMonitorTotalSessionsReport 操作
 
@@ -29,7 +29,7 @@ ms.locfileid: "59041408"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|应用程序|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

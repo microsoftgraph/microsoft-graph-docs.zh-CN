@@ -2,15 +2,15 @@
 title: 获取 iosDeviceFeaturesConfiguration
 description: 读取 iosDeviceFeaturesConfiguration 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bc6967cd8968980439533f40114ceba5bfb843ce
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2eaee8da1add1b67fcfe826d922d53365c2cd3fc
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59103212"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60489217"
 ---
 # <a name="get-iosdevicefeaturesconfiguration"></a>获取 iosDeviceFeaturesConfiguration
 
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7498
+Content-Length: 7700
 
 {
   "value": {
@@ -251,7 +251,9 @@ Content-Length: 7498
       "activeDirectorySiteCode": "Active Directory Site Code value",
       "passwordEnableLocalSync": true,
       "blockActiveDirectorySiteAutoDiscovery": true,
-      "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
+      "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
+      "signInHelpText": "Sign In Help Text value",
+      "managedAppsInBundleIdACLIncluded": true
     },
     "iosSingleSignOnExtension": {
       "@odata.type": "microsoft.graph.iosKerberosSingleSignOnExtension",
@@ -281,7 +283,9 @@ Content-Length: 7498
       "activeDirectorySiteCode": "Active Directory Site Code value",
       "passwordEnableLocalSync": true,
       "blockActiveDirectorySiteAutoDiscovery": true,
-      "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
+      "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
+      "signInHelpText": "Sign In Help Text value",
+      "managedAppsInBundleIdACLIncluded": true
     }
   }
 }

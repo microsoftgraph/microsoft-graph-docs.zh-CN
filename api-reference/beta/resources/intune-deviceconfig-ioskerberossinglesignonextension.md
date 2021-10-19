@@ -2,15 +2,15 @@
 title: iosKerberosSingleSignOnExtension 资源类型
 description: 表示适用于 iOS 设备的 Kerberos 类型的单Sign-On扩展配置文件。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8db3aa63bbb4cd9e8a909a92757200efcb86d7da
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 888075038454471756b5e2831ed5fd67fafc0636
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59127358"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60493987"
 ---
 # <a name="ioskerberossinglesignonextension-resource-type"></a>iosKerberosSingleSignOnExtension 资源类型
 
@@ -26,14 +26,14 @@ ms.locfileid: "59127358"
 继承自 [iosSingleSignOnExtension](../resources/intune-deviceconfig-iossinglesignonextension.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|描述|
+|属性|类型|说明|
 |:---|:---|:---|
 |realm|String|获取或设置此配置文件的区分大小写的领域名称。|
-|domains|字符串集合|获取或设置应用扩展执行 SSO 的主机或域名的列表。|
+|domains|String 集合|获取或设置应用扩展执行 SSO 的主机或域名的列表。|
 |blockAutomaticLogin|Boolean|启用或禁用钥匙链用法。|
 |cacheName|String|获取或设置要用于此配置文件的 Kerberos 缓存的通用安全服务名称。|
-|credentialBundleIdAccessControlList|字符串集合|获取或设置允许访问 Kerberos 票证授予票证的应用程序包 ID 的列表。|
-|domainRealms|字符串集合|获取或设置自定义域领域映射的领域列表。 领域区分大小写。|
+|credentialBundleIdAccessControlList|String 集合|获取或设置允许访问 Kerberos 票证授予票证的应用程序包 ID 的列表。|
+|domainRealms|String collection|获取或设置自定义域领域映射的领域列表。 领域区分大小写。|
 |isDefaultRealm|Boolean|如果为 true，则此配置文件的领域将选择为默认值。 如果配置了多个 Kerberos 类型的配置文件，则是必需的。|
 |passwordBlockModification|Boolean|启用或禁用密码更改。|
 |passwordExpirationDays|Int32|替代默认密码过期天数。 对于大多数域，此值将自动计算。|
@@ -49,6 +49,8 @@ ms.locfileid: "59127358"
 |passwordEnableLocalSync|Boolean|启用或禁用密码同步。 这不会影响使用 macOS 上的移动帐户登录的用户。|
 |blockActiveDirectorySiteAutoDiscovery|Boolean|启用或禁用 Kerberos 扩展是否可自动确定其站点名称。|
 |passwordChangeUrl|String|获取或设置用户启动密码更改时将发送到的 URL。|
+|signInHelpText|String|在 Kerberos 登录窗口向用户显示的文本。 适用于运行 iOS 和 iPadOS 版本 14 及更高版本的设备。|
+|managedAppsInBundleIdACLIncluded|Boolean|设置为 True 时，Kerberos 扩展允许托管应用以及使用应用程序包 ID 输入的任何应用访问凭据。 设置为 False 时，Kerberos 扩展允许所有应用访问凭据。 适用于运行 iOS 和 iPadOS 版本 14 及更高版本的设备。|
 
 ## <a name="relationships"></a>关系
 无
@@ -89,7 +91,9 @@ ms.locfileid: "59127358"
   "activeDirectorySiteCode": "String",
   "passwordEnableLocalSync": true,
   "blockActiveDirectorySiteAutoDiscovery": true,
-  "passwordChangeUrl": "String"
+  "passwordChangeUrl": "String",
+  "signInHelpText": "String",
+  "managedAppsInBundleIdACLIncluded": true
 }
 ```
 

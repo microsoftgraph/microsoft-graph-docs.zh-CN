@@ -2,15 +2,15 @@
 title: 创建 macOSDeviceFeaturesConfiguration
 description: 创建新的 macOSDeviceFeaturesConfiguration 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 46c2e936f5c7da311494bdb208a58934b896c298
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5a5aeb243743484840b99645d777c13b4ec9b429
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59103198"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60492882"
 ---
 # <a name="create-macosdevicefeaturesconfiguration"></a>创建 macOSDeviceFeaturesConfiguration
 
@@ -56,7 +56,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|指示基础设备配置是否支持分配范围标记。 当此值为 false 且实体对范围用户不可见时，不允许分配给 ScopeTags 属性。 这适用于在 Silverlight 中创建的旧版策略，可通过在 Azure 门户中删除和重新创建策略来解决。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|此策略的操作系统版本适用性。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -78,8 +78,8 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |shutDownDisabled|Boolean|是否在登录窗口中隐藏"关闭"按钮项。|
 |restartDisabled|Boolean|是否在登录窗口中隐藏"重启"按钮项。|
 |sleepDisabled|Boolean|是否在登录窗口上隐藏"睡眠"菜单项。|
-|consoleAccessDisabled|Boolean|其他用户是否忽略使用控制台特殊用户名。|
-|shutDownDisabledWhileLoggedIn|Boolean|登录窗口上的"关闭"菜单项在用户登录时是否将被禁用。|
+|consoleAccessDisabled|Boolean|其他用户是否忽略使用 `console` 特殊用户名。|
+|shutDownDisabledWhileLoggedIn|Boolean|登录窗口上的"关机"菜单项在用户登录时是否将被禁用。|
 |restartDisabledWhileLoggedIn|Boolean|登录时是否禁用登录窗口上的"重新启动"菜单项。|
 |powerOffDisabledWhileLoggedIn|Boolean|登录窗口上的"电源关闭"菜单项在用户登录时是否将被禁用。|
 |logOutDisabledWhileLoggedIn|Boolean|登录窗口上的"注销"菜单项在用户登录时是否将被禁用。|
@@ -100,7 +100,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |contentCachingPeerListenRanges|[ipRange](../resources/intune-shared-iprange.md) 集合|内容缓存将用于侦听对等缓存的自定义 IP 范围列表。 该集合最多可包含 500 个元素。|
 |contentCachingPeerFilterRanges|[ipRange](../resources/intune-shared-iprange.md) 集合|自定义 IP 范围内容缓存将用于查询对等缓存中的内容的列表。 该集合最多可包含 500 个元素。|
 |contentCachingParentSelectionPolicy|[macOSContentCachingParentSelectionPolicy](../resources/intune-deviceconfig-macoscontentcachingparentselectionpolicy.md)|确定内容缓存服务器选择父项（如果存在多个父项）的方法。 可取值为：`notConfigured`、`roundRobin`、`firstAvailable`、`urlPathHash`、`random`、`stickyAvailable`。|
-|contentCachingParents|字符串集合|表示父内容缓存的 IP 地址列表。|
+|contentCachingParents|String 集合|表示父内容缓存的 IP 地址列表。|
 |contentCachingLogClientIdentities|Boolean|启用请求缓存内容的客户端的 IP 地址和端口的日志记录。|
 |contentCachingPublicRanges|[ipRange](../resources/intune-shared-iprange.md) 集合|Apple 的内容缓存服务应该用于将客户端与内容缓存匹配的自定义 IP 范围列表。 该集合最多可包含 500 个元素。|
 |contentCachingBlockDeletion|Boolean|防止内容缓存清除内容以释放其他应用的磁盘空间。|
@@ -120,7 +120,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 5662
+Content-length: 6135
 
 {
   "@odata.type": "#microsoft.graph.macOSDeviceFeaturesConfiguration",
@@ -246,7 +246,18 @@ Content-length: 5662
     "activeDirectorySiteCode": "Active Directory Site Code value",
     "passwordEnableLocalSync": true,
     "blockActiveDirectorySiteAutoDiscovery": true,
-    "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
+    "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
+    "modeCredentialUsed": "Mode Credential Used value",
+    "usernameLableCustom": "Username Lable Custom value",
+    "userSetupDelayed": true,
+    "signInHelpText": "Sign In Help Text value",
+    "kerberosAppsInBundleIdACLIncluded": true,
+    "managedAppsInBundleIdACLIncluded": true,
+    "credentialsCacheMonitored": true,
+    "singleSignOnExtensionPreferredKDCs": [
+      "Single Sign On Extension Preferred KDCs value"
+    ],
+    "tlsForLDAPRequired": true
   },
   "contentCachingEnabled": true,
   "contentCachingType": "userContentOnly",
@@ -301,7 +312,7 @@ Content-length: 5662
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 5834
+Content-Length: 6307
 
 {
   "@odata.type": "#microsoft.graph.macOSDeviceFeaturesConfiguration",
@@ -430,7 +441,18 @@ Content-Length: 5834
     "activeDirectorySiteCode": "Active Directory Site Code value",
     "passwordEnableLocalSync": true,
     "blockActiveDirectorySiteAutoDiscovery": true,
-    "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
+    "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
+    "modeCredentialUsed": "Mode Credential Used value",
+    "usernameLableCustom": "Username Lable Custom value",
+    "userSetupDelayed": true,
+    "signInHelpText": "Sign In Help Text value",
+    "kerberosAppsInBundleIdACLIncluded": true,
+    "managedAppsInBundleIdACLIncluded": true,
+    "credentialsCacheMonitored": true,
+    "singleSignOnExtensionPreferredKDCs": [
+      "Single Sign On Extension Preferred KDCs value"
+    ],
+    "tlsForLDAPRequired": true
   },
   "contentCachingEnabled": true,
   "contentCachingType": "userContentOnly",

@@ -1,18 +1,18 @@
 ---
-title: 列出 roleScopeTagAutoAssignments
-description: 列出 roleScopeTagAutoAssignment 对象的属性和关系。
+title: 审批操作
+description: 批准请求的操作实例ApprovalRequest
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9efac7559f2d24c34d2a3ce041797de625e1cf17
+ms.openlocfilehash: ca0b3eea15eb2dc9693d061097e370131105745d
 ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/19/2021
-ms.locfileid: "60490220"
+ms.locfileid: "60487367"
 ---
-# <a name="list-rolescopetagautoassignments"></a>列出 roleScopeTagAutoAssignments
+# <a name="approve-action"></a>审批操作
 
 命名空间：microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "60490220"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-列出 [roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md) 对象的属性和关系。
+批准请求的操作实例ApprovalRequest
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -37,7 +37,7 @@ ms.locfileid: "60490220"
 }
 -->
 ``` http
-GET /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAssignmentId}/microsoft.graph.deviceAndAppManagementRoleAssignment/roleScopeTags/{roleScopeTagId}/assignments
+POST /deviceManagement/operationApprovalRequests/{operationApprovalRequestId}/approve
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -47,17 +47,32 @@ GET /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAs
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-请勿提供此方法的请求正文。
+在请求正文中，提供参数的 JSON 表示形式。
+
+下表显示了可用于此操作的参数。
+
+|属性|类型|说明|
+|:---|:---|:---|
+|justification|String|尚未记录|
+
+
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md) 对象集合。
+如果成功，此操作会在响应正文中返回 `200 OK` 响应代码和一个 String。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAssignmentId}/microsoft.graph.deviceAndAppManagementRoleAssignment/roleScopeTags/{roleScopeTagId}/assignments
+POST https://graph.microsoft.com/beta/deviceManagement/operationApprovalRequests/{operationApprovalRequestId}/approve
+
+Content-type: application/json
+Content-length: 46
+
+{
+  "justification": "Justification value"
+}
 ```
 
 ### <a name="response"></a>响应
@@ -65,21 +80,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/roleDefinitions/{roleDefin
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 499
+Content-Length: 32
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.roleScopeTagAutoAssignment",
-      "id": "256e6375-6375-256e-7563-6e2575636e25",
-      "target": {
-        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
-        "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-        "deviceAndAppManagementAssignmentFilterType": "include",
-        "collectionId": "Collection Id value"
-      }
-    }
-  ]
+  "value": "Approve value"
 }
 ```
 

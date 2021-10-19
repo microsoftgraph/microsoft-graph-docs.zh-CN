@@ -2,15 +2,15 @@
 title: 列出 userExperienceAnalyticsAppHealthAppPerformanceByOSVersions
 description: 列出 userExperienceAnalyticsAppHealthAppPerformanceByOSVersion 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b99fb85e792ea688c17dd4e3f2b0009ee470e79a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1ede9a02b2d5fba0e800934a1e53e4f5e1a7a889
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59102834"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60488970"
 ---
 # <a name="list-userexperienceanalyticsapphealthappperformancebyosversions"></a>列出 userExperienceAnalyticsAppHealthAppPerformanceByOSVersions
 
@@ -29,7 +29,7 @@ ms.locfileid: "59102834"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

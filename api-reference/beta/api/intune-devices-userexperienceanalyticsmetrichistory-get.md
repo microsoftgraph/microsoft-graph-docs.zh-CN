@@ -2,15 +2,15 @@
 title: 获取 userExperienceAnalyticsMetricHistory
 description: 读取 userExperienceAnalyticsMetricHistory 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 87d686b71f31dfd36d6e8fae2acdccacde3741b0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7d8c2b240f4e6f48e5d3b8ea354c84ceae3941b8
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59070417"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60486577"
 ---
 # <a name="get-userexperienceanalyticsmetrichistory"></a>获取 userExperienceAnalyticsMetricHistory
 
@@ -29,7 +29,7 @@ ms.locfileid: "59070417"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

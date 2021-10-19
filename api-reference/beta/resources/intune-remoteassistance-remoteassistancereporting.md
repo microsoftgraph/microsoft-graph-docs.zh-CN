@@ -2,15 +2,15 @@
 title: remoteAssistanceReporting 资源类型
 description: RemoteAssistanceReporting 资源表示给定远程协助报告有效负载的元数据
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7793b8ef8bffa33e5d2e77de9fd102b9d0c59288
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 65103b951d41328d4e1b414a06ef99b8a99001bd
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59039460"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60485161"
 ---
 # <a name="remoteassistancereporting-resource-type"></a>remoteAssistanceReporting 资源类型
 
@@ -33,15 +33,17 @@ RemoteAssistanceReporting 资源表示给定远程协助报告有效负载的元
 |helperTenantId|String|帮助程序租户 ID|
 |helperFirstName|String|帮助程序的名字|
 |helperLastName|String|帮助程序姓氏|
-|helperDeviceAadId|String|帮助程序的设备 AAD ID|
+|helperOs|String|帮助程序的操作系统|
+|helperDeviceAadId|String|帮助程序的设备AAD ID|
 |helperDeviceName|String|帮助程序的设备名称|
 |helperEnrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|帮助程序设备的 Intune 注册状态。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
 |sharerEmail|String|共享者用于建立会话的登录电子邮件|
 |sharerTenantId|String|共享者租户 ID|
 |sharerFirstName|String|Sharer 的名字|
 |sharerLastName|String|Sharer 的姓氏|
-|sharerDeviceAadId|String|Sharer 的设备 AAD ID|
+|sharerDeviceAadId|String|共享者的设备AAD ID|
 |sharerDeviceName|String|Sharer 的设备名称|
+|sharerOs|String|Sharer 的操作系统|
 |sharerEnrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|共享者设备的 Intune 注册状态。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
 
 ## <a name="relationships"></a>关系
@@ -65,6 +67,7 @@ RemoteAssistanceReporting 资源表示给定远程协助报告有效负载的元
   "helperTenantId": "String",
   "helperFirstName": "String",
   "helperLastName": "String",
+  "helperOs": "String",
   "helperDeviceAadId": "String",
   "helperDeviceName": "String",
   "helperEnrollmentState": "String",
@@ -74,6 +77,7 @@ RemoteAssistanceReporting 资源表示给定远程协助报告有效负载的元
   "sharerLastName": "String",
   "sharerDeviceAadId": "String",
   "sharerDeviceName": "String",
+  "sharerOs": "String",
   "sharerEnrollmentState": "String"
 }
 ```

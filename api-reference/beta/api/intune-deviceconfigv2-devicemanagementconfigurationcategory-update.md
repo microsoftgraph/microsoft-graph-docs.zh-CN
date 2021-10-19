@@ -2,15 +2,15 @@
 title: 更新 deviceManagementConfigurationCategory
 description: 更新 deviceManagementConfigurationCategory 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: da90535f601bff90ca2b75e7787f189560473ff7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2bf0eba0f648a6a87bd8a632f4b419418f53668f
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59034678"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60491421"
 ---
 # <a name="update-devicemanagementconfigurationcategory"></a>更新 deviceManagementConfigurationCategory
 
@@ -29,7 +29,7 @@ ms.locfileid: "59034678"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -58,8 +58,8 @@ PATCH /deviceManagement/configurationCategories/{deviceManagementConfigurationCa
 |helpText|String|项目的帮助文本|
 |name|String|项目名称|
 |displayName|String|项目的显示名称|
-|平台|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|平台类型，类别中的设置具有。 可取值为：`none`、`macOS`、`windows10X`、`windows10`。|
-|technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|技术类型，类别中的设置具有。 可取值为：`none`、`mdm`、`windows10XManagement`、`configManager`、`microsoftSense`、`exchangeOnline`。|
+|平台|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|平台类型，类别中的设置具有。 可取值为：`none`、`android`、`iOS`、`macOS`、`windows10X`、`windows10`。|
+|technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|技术类型，类别中的设置具有。 可取值为：`none`、`mdm`、`windows10XManagement`、`configManager`、`microsoftSense`、`exchangeOnline`、`linuxMdm`、`unknownFutureValue`。|
 |settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|指示类别包含用于合规性或配置的设置。 可取值为：`none`、`configuration`。|
 |parentCategoryId|String|类别的父 ID。|
 |rootCategoryId|String|类别的根 ID。|
@@ -77,7 +77,7 @@ PATCH /deviceManagement/configurationCategories/{deviceManagementConfigurationCa
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/configurationCategories/{deviceManagementConfigurationCategoryId}
 Content-type: application/json
-Content-length: 465
+Content-length: 467
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationCategory",
@@ -85,7 +85,7 @@ Content-length: 465
   "helpText": "Help Text value",
   "name": "Name value",
   "displayName": "Display Name value",
-  "platforms": "macOS",
+  "platforms": "android",
   "technologies": "mdm",
   "settingUsage": "configuration",
   "parentCategoryId": "Parent Category Id value",
@@ -101,7 +101,7 @@ Content-length: 465
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 514
+Content-Length: 516
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationCategory",
@@ -110,7 +110,7 @@ Content-Length: 514
   "helpText": "Help Text value",
   "name": "Name value",
   "displayName": "Display Name value",
-  "platforms": "macOS",
+  "platforms": "android",
   "technologies": "mdm",
   "settingUsage": "configuration",
   "parentCategoryId": "Parent Category Id value",

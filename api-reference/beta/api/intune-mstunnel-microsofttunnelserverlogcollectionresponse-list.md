@@ -2,15 +2,15 @@
 title: 列出 microsoftTunnelServerLogCollectionResponses
 description: 列出 microsoftTunnelServerLogCollectionResponse 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7f703e391aba6d6fb89fb259838de89bd4d9b060
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3527c5189382ec6cab7791798f3ad195dd06c434
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59096898"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60491379"
 ---
 # <a name="list-microsofttunnelserverlogcollectionresponses"></a>列出 microsoftTunnelServerLogCollectionResponses
 
@@ -27,7 +27,7 @@ ms.locfileid: "59096898"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 

@@ -2,15 +2,15 @@
 title: 列出 iosVppEBooks
 description: 列出 iosVppEBook 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b6593a836324553c1a8a7bc2e3ae59ab1f7d0c4a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a49d222bd1c234fe1c5a6122d55d5dd4d03f677e
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59049006"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60488099"
 ---
 # <a name="list-iosvppebooks"></a>列出 iosVppEBooks
 
@@ -29,7 +29,7 @@ ms.locfileid: "59049006"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
+|应用程序|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

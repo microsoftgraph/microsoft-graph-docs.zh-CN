@@ -2,15 +2,15 @@
 title: 列出 deviceConfigurationPolicySetItems
 description: 列出 deviceConfigurationPolicySetItem 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6f1ecca30796fd9a65f6f356d757d888a6415697
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5908986000349c4ebd567c815220eee903e75f09
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59051962"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60484029"
 ---
 # <a name="list-deviceconfigurationpolicysetitems"></a>列出 deviceConfigurationPolicySetItems
 
@@ -29,7 +29,7 @@ ms.locfileid: "59051962"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

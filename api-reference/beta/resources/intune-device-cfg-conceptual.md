@@ -1,15 +1,15 @@
 ---
 title: Microsoft Intune 中的设备配置 - Microsoft Gaaph API
-description: 列出定义Graph配置设备的适用于 Intune 终结点 (REST) 的 Microsoft API。
+description: 列出定义Graph组织的设备的 Microsoft (REST (REST) 。
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: cd98835baf70f760929bb19c840ed01cc57d0589
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3d0b6983ad4a4b54e774c767ebf8d1c18d2823d5
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59051459"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60482943"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Microsoft Intune 中的设备配置
 
@@ -454,8 +454,9 @@ ms.locfileid: "59051459"
 - [OMA 设置字符串 XML](intune-deviceconfig-omasettingstringxml.md)
 - [On prem encrypted payload](intune-raimportcerts-onpremencryptedpayload.md)
 - [操作系统版本范围](intune-deviceconfig-operatingsystemversionrange.md)
-- [Operator](intune-deviceconfig-operator.md)
+- [运算符](intune-deviceconfig-operator.md)
 - [完美前向保密组](intune-deviceconfig-perfectforwardsecrecygroup.md)
+- [个人配置文件个人游戏存储模式](intune-deviceconfig-personalprofilepersonalplaystoremode.md)
 - [Pfx 重新加密请求](intune-raimportcerts-pfxrecryptionrequest.md)
 - [Pfx 用户证书](intune-raimportcerts-pfxusercertificate.md)
 - [策略平台类型](intune-deviceconfig-policyplatformtype.md)

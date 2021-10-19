@@ -2,15 +2,15 @@
 title: 获取 windowsManagementAppHealthState
 description: 读取 windowsManagementAppHealthState 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 59943833ad7620b8562e324a06ab0d8b8a5c9bcc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 626640c844a9009a110ec2c888f15e4a75c3f06b
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59065349"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60484946"
 ---
 # <a name="get-windowsmanagementapphealthstate"></a>获取 windowsManagementAppHealthState
 
@@ -29,7 +29,7 @@ ms.locfileid: "59065349"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

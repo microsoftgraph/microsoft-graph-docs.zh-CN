@@ -2,15 +2,15 @@
 title: deviceManagementConfigurationSettingApplicability 资源类型
 description: 尚未记录
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fb0b9c7fc6943e9a3caa7c499cdba9be3f2bde8c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e6c7039466b1a725b2242f9775d5917a50625dc4
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59148198"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60492074"
 ---
 # <a name="devicemanagementconfigurationsettingapplicability-resource-type"></a>deviceManagementConfigurationSettingApplicability 资源类型
 
@@ -26,9 +26,9 @@ ms.locfileid: "59148198"
 |属性|类型|说明|
 |:---|:---|:---|
 |说明|String|设置说明|
-|平台|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|可以应用平台设置。 可取值为：`none`、`macOS`、`windows10X`、`windows10`。|
+|平台|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|可以应用平台设置。 可取值为：`none`、`android`、`iOS`、`macOS`、`windows10X`、`windows10`。|
 |deviceMode|[deviceManagementConfigurationDeviceMode](../resources/intune-deviceconfigv2-devicemanagementconfigurationdevicemode.md)|可应用设置的设备模式。 可取值为：`none`、`kiosk`。|
-|technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|可通过哪些技术渠道部署此设置。 可取值为：`none`、`mdm`、`windows10XManagement`、`configManager`、`microsoftSense`、`exchangeOnline`。|
+|technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|可通过哪些技术渠道部署此设置。 可取值为：`none`、`mdm`、`windows10XManagement`、`configManager`、`microsoftSense`、`exchangeOnline`、`linuxMdm`、`unknownFutureValue`。|
 
 ## <a name="relationships"></a>关系
 无

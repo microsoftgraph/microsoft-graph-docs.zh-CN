@@ -1,18 +1,18 @@
 ---
-title: 获取 deviceManagementConfigurationSettingGroupCollectionDefinition
-description: 读取 deviceManagementConfigurationSettingGroupCollectionDefinition 对象的属性和关系。
+title: 获取 deviceManagementConfigurationRedirectSettingDefinition
+description: 读取 deviceManagementConfigurationRedirectSettingDefinition 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 55290c84ad3c1cf631774474f3aa562f1d67da0c
+ms.openlocfilehash: 8474f9ad53fa6b041f95202580f8181fb48a931b
 ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/19/2021
-ms.locfileid: "60493170"
+ms.locfileid: "60494354"
 ---
-# <a name="get-devicemanagementconfigurationsettinggroupcollectiondefinition"></a>获取 deviceManagementConfigurationSettingGroupCollectionDefinition
+# <a name="get-devicemanagementconfigurationredirectsettingdefinition"></a>获取 deviceManagementConfigurationRedirectSettingDefinition
 
 命名空间：microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "60493170"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-读取 [deviceManagementConfigurationSettingGroupCollectionDefinition 对象的属性和](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinggroupcollectiondefinition.md) 关系。
+读取 [deviceManagementConfigurationRedirectSettingDefinition 对象的属性和](../resources/intune-deviceconfigv2-devicemanagementconfigurationredirectsettingdefinition.md) 关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -56,7 +56,7 @@ GET /deviceManagement/configurationPolicyTemplates/{deviceManagementConfiguratio
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [deviceManagementConfigurationSettingGroupCollectionDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinggroupcollectiondefinition.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [deviceManagementConfigurationRedirectSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationredirectsettingdefinition.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -71,11 +71,11 @@ GET https://graph.microsoft.com/beta/deviceManagement/reusableSettings/{deviceMa
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1971
+Content-Length: 1548
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.deviceManagementConfigurationSettingGroupCollectionDefinition",
+    "@odata.type": "#microsoft.graph.deviceManagementConfigurationRedirectSettingDefinition",
     "applicability": {
       "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingApplicability",
       "description": "Description value",
@@ -108,31 +108,15 @@ Content-Length: 1971
         "settingDefinitionId": "Setting Definition Id value"
       }
     ],
-    "id": "739da194-a194-739d-94a1-9d7394a19d73",
+    "id": "3e6c3eab-3eab-3e6c-ab3e-6c3eab3e6c3e",
     "description": "Description value",
     "helpText": "Help Text value",
     "name": "Name value",
     "displayName": "Display Name value",
     "version": "Version value",
-    "childIds": [
-      "Child Ids value"
-    ],
-    "dependentOn": [
-      {
-        "@odata.type": "microsoft.graph.deviceManagementConfigurationDependentOn",
-        "dependentOn": "Dependent On value",
-        "parentSettingId": "Parent Setting Id value"
-      }
-    ],
-    "dependedOnBy": [
-      {
-        "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingDependedOnBy",
-        "dependedOnBy": "Depended On By value",
-        "required": true
-      }
-    ],
-    "maximumCount": 12,
-    "minimumCount": 12
+    "deepLink": "Deep Link value",
+    "redirectMessage": "Redirect Message value",
+    "redirectReason": "Redirect Reason value"
   }
 }
 ```

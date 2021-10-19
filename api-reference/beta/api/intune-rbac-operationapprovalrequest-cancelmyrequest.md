@@ -1,18 +1,18 @@
 ---
-title: 列出 roleScopeTagAutoAssignments
-description: 列出 roleScopeTagAutoAssignment 对象的属性和关系。
+title: cancelMyRequest 操作
+description: 尚未记录
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9efac7559f2d24c34d2a3ce041797de625e1cf17
+ms.openlocfilehash: c11566ec8f75e83c6baacdf825000155f68ef9d1
 ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/19/2021
-ms.locfileid: "60490220"
+ms.locfileid: "60488912"
 ---
-# <a name="list-rolescopetagautoassignments"></a>列出 roleScopeTagAutoAssignments
+# <a name="cancelmyrequest-action"></a>cancelMyRequest 操作
 
 命名空间：microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "60490220"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-列出 [roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md) 对象的属性和关系。
+尚未记录
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -37,7 +37,7 @@ ms.locfileid: "60490220"
 }
 -->
 ``` http
-GET /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAssignmentId}/microsoft.graph.deviceAndAppManagementRoleAssignment/roleScopeTags/{roleScopeTagId}/assignments
+POST /deviceManagement/operationApprovalRequests/cancelMyRequest
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -47,40 +47,38 @@ GET /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAs
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-请勿提供此方法的请求正文。
+在请求正文中，提供参数的 JSON 表示形式。
+
+下表显示了可用于此操作的参数。
+
+|属性|类型|说明|
+|:---|:---|:---|
+|id|String|尚未记录|
+
+
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md) 对象集合。
+如果成功，此操作返回 `204 No Content` 响应代码。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAssignmentId}/microsoft.graph.deviceAndAppManagementRoleAssignment/roleScopeTags/{roleScopeTagId}/assignments
+POST https://graph.microsoft.com/beta/deviceManagement/operationApprovalRequests/cancelMyRequest
+
+Content-type: application/json
+Content-length: 24
+
+{
+  "id": "Id value"
+}
 ```
 
 ### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 499
-
-{
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.roleScopeTagAutoAssignment",
-      "id": "256e6375-6375-256e-7563-6e2575636e25",
-      "target": {
-        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
-        "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-        "deviceAndAppManagementAssignmentFilterType": "include",
-        "collectionId": "Collection Id value"
-      }
-    }
-  ]
-}
+HTTP/1.1 204 No Content
 ```
 
 
