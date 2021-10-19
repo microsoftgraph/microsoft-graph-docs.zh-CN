@@ -2,15 +2,15 @@
 title: 删除 microsoftTunnelConfiguration
 description: 删除 microsoftTunnelConfiguration。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 99694ef40c5d1e8194368891f3a174e0fc3fbe1d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 44ff655c52a8061cd1ef992780e76a32182d8648
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59034293"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60491042"
 ---
 # <a name="delete-microsofttunnelconfiguration"></a>删除 microsoftTunnelConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "59034293"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|DeviceManagementConfiguration.ReadWrite.All|
 

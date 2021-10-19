@@ -2,15 +2,15 @@
 title: 删除 deviceManagementReusablePolicySetting
 description: 删除 deviceManagementReusablePolicySetting。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 90f23f3c0bc1bfae037c4e137bf651291c6e8d0b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 11bf0d641cb0ec178a1e8fea31f387c5b501dfd1
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59122262"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60493149"
 ---
 # <a name="delete-devicemanagementreusablepolicysetting"></a>删除 deviceManagementReusablePolicySetting
 
@@ -29,7 +29,7 @@ ms.locfileid: "59122262"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

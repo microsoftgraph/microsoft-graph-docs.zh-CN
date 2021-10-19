@@ -2,15 +2,15 @@
 title: 列出 termsAndConditionsGroupAssignments
 description: 列出 termsAndConditionsGroupAssignment 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a51805cc40b234a3bdf40dcf07381dc0d3cca1e7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0e73097b6d40fbbb08e1b0d1958ff7987d18214a
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59043192"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60491162"
 ---
 # <a name="list-termsandconditionsgroupassignments"></a>列出 termsAndConditionsGroupAssignments
 
@@ -29,7 +29,7 @@ ms.locfileid: "59043192"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|应用程序|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

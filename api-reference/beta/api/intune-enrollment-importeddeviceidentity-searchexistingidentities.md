@@ -2,15 +2,15 @@
 title: searchExistingIdentities 操作
 description: 尚未记录
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fe2e0a4137755eac769f5343797b60bce44001d2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a7f14137e7c5f1e01c523ae7653e7dd74abbbeb6
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59082478"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60489147"
 ---
 # <a name="searchexistingidentities-action"></a>searchExistingIdentities 操作
 
@@ -29,7 +29,7 @@ ms.locfileid: "59082478"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|应用程序|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -51,14 +51,14 @@ POST /deviceManagement/importedDeviceIdentities/searchExistingIdentities
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|描述|
+|属性|类型|说明|
 |:---|:---|:---|
 |importedDeviceIdentities|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) 集合|尚未记录|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此操作在响应正文中返回 响应代码和 `200 OK` [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) 集合。
+如果成功，此操作在响应 `200 OK` 正文中返回 响应 [代码和 importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) 集合。
 
 ## <a name="example"></a>示例
 

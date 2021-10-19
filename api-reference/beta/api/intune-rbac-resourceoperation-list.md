@@ -2,15 +2,15 @@
 title: 列出 resourceOperations
 description: 列出 resourceOperation 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d035c080e9ee018b7d44d33f27bd88e8dbca7d6a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a2336464cc997f0924b8d405677592fca83ef8a1
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59141471"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60487224"
 ---
 # <a name="list-resourceoperations"></a>列出 resourceOperations
 
@@ -29,7 +29,7 @@ ms.locfileid: "59141471"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementRBAC.Read.All、DeviceManagementRBAC.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementRBAC.Read.All、DeviceManagementRBAC.ReadWrite.All|
+|应用程序|DeviceManagementRBAC.Read.All、DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

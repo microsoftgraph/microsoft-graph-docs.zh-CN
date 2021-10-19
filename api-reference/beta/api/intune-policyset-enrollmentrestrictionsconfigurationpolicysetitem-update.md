@@ -2,15 +2,15 @@
 title: 更新 enrollmentRestrictionsConfigurationPolicySetItem
 description: 更新 enrollmentRestrictionsConfigurationPolicySetItem 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6df79e6bc8716f9c5c060b6de0a83a22cb8c0e27
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c17266a3dd3f5a7b11a9849363bfb18497f037cc
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59096702"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60492270"
 ---
 # <a name="update-enrollmentrestrictionsconfigurationpolicysetitem"></a>更新 enrollmentRestrictionsConfigurationPolicySetItem
 
@@ -29,7 +29,7 @@ ms.locfileid: "59096702"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -61,7 +61,7 @@ PATCH /deviceAppManagement/policySets/{policySetId}/items/{policySetItemId}
 |displayName|String|PolicySetItem 的 DisplayName。 继承自 [policySetItem](../resources/intune-policyset-policysetitem.md)|
 |status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|PolicySetItem 的状态。 继承自 [policySetItem](../resources/intune-policyset-policysetitem.md)。 可取值为：`unknown`、`validating`、`partialSuccess`、`success`、`error`、`notAssigned`。|
 |errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|错误代码（如果发生了任何错误）。 继承自 [policySetItem](../resources/intune-policyset-policysetitem.md)。 可取值为：`noError`、`unauthorized`、`notFound`、`deleted`。|
-|guidedDeploymentTags|字符串集合|引导式部署的标记 继承自 [policySetItem](../resources/intune-policyset-policysetitem.md)|
+|guidedDeploymentTags|String collection|引导式部署的标记 继承自 [policySetItem](../resources/intune-policyset-policysetitem.md)|
 |priority|Int32|EnrollmentRestrictionsConfigurationPolicySetItem 的优先级。|
 |limit|Int32|EnrollmentRestrictionsConfigurationPolicySetItem 的限制。|
 

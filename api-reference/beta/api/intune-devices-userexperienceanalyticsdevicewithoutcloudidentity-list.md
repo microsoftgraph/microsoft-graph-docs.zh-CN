@@ -2,15 +2,15 @@
 title: 列出 userExperienceAnalyticsDeviceWithoutCloudIdentities
 description: 列出 userExperienceAnalyticsDeviceWithoutCloudIdentity 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1206a823ab34801e337c36691ccf4d7e1a79e458
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e806002aa746e03edaf97612004da124900eabdc
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59042184"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60489063"
 ---
 # <a name="list-userexperienceanalyticsdevicewithoutcloudidentities"></a>列出 userExperienceAnalyticsDeviceWithoutCloudIdentities
 
@@ -29,7 +29,7 @@ ms.locfileid: "59042184"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

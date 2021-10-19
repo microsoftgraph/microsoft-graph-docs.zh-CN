@@ -2,15 +2,15 @@
 title: 删除 deviceManagementConfigurationPolicy
 description: 删除 deviceManagementConfigurationPolicy。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5815068dd442151ac367a168083db35939f3b256
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 30b594e0a166fe2ef3623a9b448a7857d00b7ba5
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59088246"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60493752"
 ---
 # <a name="delete-devicemanagementconfigurationpolicy"></a>删除 deviceManagementConfigurationPolicy
 
@@ -29,7 +29,7 @@ ms.locfileid: "59088246"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

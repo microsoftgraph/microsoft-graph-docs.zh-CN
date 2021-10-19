@@ -2,15 +2,15 @@
 title: 创建 windowsManagedDevice
 description: 创建新的 windowsManagedDevice 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3efd196d7574c275953e900092e81922a9180f2a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b180b23b1855b279d9197d7aa9e1bbd7c5ea9b9c
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59009789"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60491393"
 ---
 # <a name="create-windowsmanageddevice"></a>创建 windowsManagedDevice
 
@@ -129,9 +129,9 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |physicalMemoryInBytes|Int64|内存总量（以字节为单位）。 此属性是只读的。 继承自 [managedDevice](../resources/intune-devices-manageddevice.md)|
 |processorArchitecture|[managedDeviceArchitecture](../resources/intune-devices-manageddevicearchitecture.md)|处理器体系结构。 此属性是只读的。 继承自 [managedDevice](../resources/intune-devices-manageddevice.md)。 可取值为：`unknown`、`x86`、`x64`、`arm`、`arM64`。|
 |specificationVersion|String|规范版本。 此属性是只读的。 继承自 [managedDevice](../resources/intune-devices-manageddevice.md)|
-|joinType|[joinType](../resources/intune-devices-jointype.md)|设备加入类型 继承自 [managedDevice](../resources/intune-devices-manageddevice.md)。 可取值为：`unknown`、`azureADJoined`、`azureADRegistered`、`hybridAzureADJoined`。|
+|joinType|[joinType](../resources/intune-devices-jointype.md)|设备加入类型 继承自 [managedDevice](../resources/intune-devices-manageddevice.md)。 可能的值是：`unknown`、`azureADJoined`、`azureADRegistered`、`hybridAzureADJoined`。|
 |skuFamily|String|设备 sku 系列 继承自 [managedDevice](../resources/intune-devices-manageddevice.md)|
-|skuNumber|Int32|设备 sku 号。 另请参阅 [：sysinfoapi.h (GetProductInfo) ](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getproductinfo)。 有效值为 0 到 2147483647。 此属性是只读的。 继承自 [managedDevice](../resources/intune-devices-manageddevice.md)|
+|skuNumber|Int32|设备 sku 号，另请参阅 https://docs.microsoft.com/windows/win32/api/sysinfoapi/nf-sysinfoapi-getproductinfo ：。 有效值为 0 到 2147483647。 此属性是只读的。 继承自 [managedDevice](../resources/intune-devices-manageddevice.md)|
 |managementFeatures|[managedDeviceManagementFeatures](../resources/intune-devices-manageddevicemanagementfeatures.md)|设备管理功能 继承自 [managedDevice](../resources/intune-devices-manageddevice.md)。 可取值为：`none`、`microsoftManagedDesktop`。|
 |chromeOSDeviceInfo|[chromeOSDeviceProperty](../resources/intune-devices-chromeosdeviceproperty.md) 集合|ChromeOS 设备的属性列表。 继承自 [managedDevice](../resources/intune-devices-manageddevice.md)|
 |enrollmentProfileName|String|分配给设备的注册配置文件的名称。 默认值为空字符串，表示未对注册配置文件进行分页。 此属性是只读的。 继承自 [managedDevice](../resources/intune-devices-manageddevice.md)|

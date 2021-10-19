@@ -2,15 +2,15 @@
 title: 创建 deviceManagementConfigurationChoiceSettingCollectionDefinition
 description: 创建新的 deviceManagementConfigurationChoiceSettingCollectionDefinition 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8b5fd67bbf82c8ef74643c892347a1a63f2168a4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8ae98f1b1f092c1f7737229562c24423a064d068
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59125006"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60486612"
 ---
 # <a name="create-devicemanagementconfigurationchoicesettingcollectiondefinition"></a>创建 deviceManagementConfigurationChoiceSettingCollectionDefinition
 
@@ -29,7 +29,7 @@ ms.locfileid: "59125006"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -54,17 +54,17 @@ POST /deviceManagement/configurationPolicyTemplates/{deviceManagementConfigurati
 
 下表显示创建 deviceManagementConfigurationChoiceSettingCollectionDefinition 时所需的属性。
 
-|属性|类型|描述|
+|属性|类型|说明|
 |:---|:---|:---|
 |适用性|[deviceManagementConfigurationSettingApplicability](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingapplicability.md)|有关哪些设备设置适用于从[deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)继承的详细信息|
 |accessTypes|[deviceManagementConfigurationSettingAccessTypes](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingaccesstypes.md)|读取/写入访问模式的设置 继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)。 可取值为：`none`、`add`、`copy`、`delete`、`get`、`replace` 或 `execute`。|
-|keywords|字符串集合|要搜索上设置的令牌 继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)|
-|infoUrls|字符串集合|有关设置详细信息的链接列表，可在 Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)找到|
+|keywords|String 集合|要搜索上设置的令牌 继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)|
+|infoUrls|String collection|有关设置详细信息的链接列表，可在 Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)找到|
 |occurrence|[deviceManagementConfigurationSettingOccurrence](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingoccurrence.md)|指示设置是否必需。继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)|
 |baseUri|String|基本云解决方案提供商路径 继承 [自 deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)|
 |offsetUri|String|从基本位置偏移 CSP 路径 继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)|
 |rootDefinitionId|String|根设置定义（如果该设置是子设置）。 继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)|
-|categoryId|String|指定在 CSP (CSP) 中配置设置的子区域组。继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)|
+|categoryId|String|指定在指定的配置服务提供程序中配置设置的区域组 (CSP) 继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)|
 |settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|设置类型，例如，配置和合规性 继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)。 可取值为：`none`、`configuration`。|
 |uxBehavior|[deviceManagementConfigurationControlType](../resources/intune-deviceconfigv2-devicemanagementconfigurationcontroltype.md)|设置 UX 中的控件类型表示形式 继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)。 可取值为：`default`、`dropdown`、`smallTextBox`、`largeTextBox`、`toggle`、`multiheaderGrid` 或 `contextPane`。|
 |visibility|[deviceManagementConfigurationSettingVisibility](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvisibility.md)|将可见性范围设置为 UX 继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)。 可取值为：`none`、`settingsCatalog`、`template`。|
@@ -75,7 +75,7 @@ POST /deviceManagement/configurationPolicyTemplates/{deviceManagementConfigurati
 |name|String|项目名称 继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)|
 |displayName|String|项目的显示名称 继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)|
 |version|String|项目版本 继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)|
-|选项|[deviceManagementConfigurationOptionDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationoptiondefinition.md) 集合|可选设置的选项 继承自 [deviceManagementConfigurationChoiceSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationchoicesettingdefinition.md)|
+|选项|[deviceManagementConfigurationOptionDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationoptiondefinition.md) 集合|可以选择的设置选项 继承自 [deviceManagementConfigurationChoiceSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationchoicesettingdefinition.md)|
 |defaultOptionId|String|选项设置的默认选项 继承自 [deviceManagementConfigurationChoiceSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationchoicesettingdefinition.md)|
 |maximumCount|Int32|集合中的最大选项数。 有效值为 1 到 100|
 |minimumCount|Int32|集合中的最小选项数。 有效值为 1 到 100|
@@ -92,14 +92,14 @@ POST /deviceManagement/configurationPolicyTemplates/{deviceManagementConfigurati
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/reusableSettings
 Content-type: application/json
-Content-length: 19117
+Content-length: 19119
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingCollectionDefinition",
   "applicability": {
     "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingApplicability",
     "description": "Description value",
-    "platform": "macOS",
+    "platform": "android",
     "deviceMode": "kiosk",
     "technologies": "mdm"
   },
@@ -382,14 +382,14 @@ Content-length: 19117
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 19166
+Content-Length: 19168
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingCollectionDefinition",
   "applicability": {
     "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingApplicability",
     "description": "Description value",
-    "platform": "macOS",
+    "platform": "android",
     "deviceMode": "kiosk",
     "technologies": "mdm"
   },

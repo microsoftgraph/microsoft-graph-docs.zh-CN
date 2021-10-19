@@ -2,15 +2,15 @@
 title: 列出 activeDirectoryWindowsAutopilotDeploymentProfiles
 description: 列出 activeDirectoryWindowsAutopilotDeploymentProfile 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 837c434511ba38b1fbf1a43888a655411e610ce1
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b5ab5dc77eefe2d878f8f4b1f72f13f389a4209a
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59112333"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60479254"
 ---
 # <a name="list-activedirectorywindowsautopilotdeploymentprofiles"></a>列出 activeDirectoryWindowsAutopilotDeploymentProfiles
 
@@ -29,7 +29,7 @@ ms.locfileid: "59112333"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|应用程序|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

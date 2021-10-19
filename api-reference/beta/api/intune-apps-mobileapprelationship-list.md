@@ -2,15 +2,15 @@
 title: 列出 mobileAppRelationships
 description: 列出 mobileAppRelationship 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 20409cee0dc29769688e52fb8034d6205f0439ce
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5de2842127c844f7afff0975af9e698fd84159bd
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59061989"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60491442"
 ---
 # <a name="list-mobileapprelationships"></a>列出 mobileAppRelationships
 
@@ -29,7 +29,7 @@ ms.locfileid: "59061989"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
+|应用程序|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

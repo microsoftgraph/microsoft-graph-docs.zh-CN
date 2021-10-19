@@ -5,12 +5,12 @@ author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 260ce66248934772e386b8d4277970b1db3ee852
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 40dc8e13240cbeb1fe21bbaabcab38247cee25d2
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59036198"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60493191"
 ---
 # <a name="licenseassignmentstate-resource-type"></a>licenseAssignmentState 资源类型
 
@@ -31,6 +31,7 @@ user 实体的 **licenseAssignmentStates** 属性是 **licenseAssignmentState** 
 |assignedByGroup|string|分配此许可证的组的 ID。 如果分配是直接分配的许可证，则此字段将为 Null。 只读。|
 |disabledPlans|集合（字符串）|在此分配中禁用的服务计划。 只读。|
 |error|String|许可证分配失败错误。 如果许可证分配成功，则此字段将为 Null。 只读。 可能的值 `CountViolation` `MutuallyExclusiveViolation` `DependencyViolation` ：、、、、 `ProhibitedInUsageLocationViolation` `UniquenessViolation` 和 `Others` 。 若要详细了解如何识别和解决许可证分配错误，请参阅 [此处](/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems)。|
+|lastUpdatedDateTime|DateTimeOffset|上次更新许可证分配的状态的时间戳。|
 |skuId|String|此 SKU 的唯一标识符。 只读。|
 |state|String|指示此工作分配的当前状态。 只读。 可能的值：Active、ActiveWithError、Disabled 和 Error。|
 
@@ -43,6 +44,7 @@ user 实体的 **licenseAssignmentStates** 属性是 **licenseAssignmentState** 
   "assignedByGroup": "String",
   "disabledPlans": "Collection(String)",
   "error": " String ",  
+  "lastUpdatedDateTime": "String (timestamp)",
   "skuId": "String ",
   "state": "String"
 }

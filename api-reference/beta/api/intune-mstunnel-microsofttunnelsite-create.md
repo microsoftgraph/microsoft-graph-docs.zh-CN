@@ -2,15 +2,15 @@
 title: 创建 microsoftTunnelSite
 description: 创建新的 microsoftTunnelSite 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ec24b6fb069300d85fee5b0d7dbf26e8f42548ee
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6c59f9d75ad1b751e52dd1c4a5b1369a336f41be
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59096891"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60486479"
 ---
 # <a name="create-microsofttunnelsite"></a>创建 microsoftTunnelSite
 
@@ -27,7 +27,7 @@ ms.locfileid: "59096891"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
@@ -63,7 +63,7 @@ POST /deviceManagement/microsoftTunnelSites
 |upgradeAutomatically|Boolean|网站的自动升级设置。 True 表示自动升级，false 表示手动控制|
 |upgradeAvailable|Boolean|如果升级可用，则其为 True|
 |internalNetworkProbeUrl|String|MicrosoftTunnelSite 的内部网络访问探测器 URL|
-|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
 
 
 

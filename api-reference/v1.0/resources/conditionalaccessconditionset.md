@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 97a4f3079ccdf5f81cad16a15d31591e379b152b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ece6ab6984cf6d6feaf76955a666297e9f15a935
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59109239"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60482873"
 ---
 # <a name="conditionalaccessconditionset-resource-type"></a>conditionalAccessConditionSet 资源类型
 
@@ -24,10 +24,11 @@ ms.locfileid: "59109239"
 |:-------------|:------------|:------------|
 |应用程序|[conditionalAccessApplications](conditionalaccessapplications.md)| 策略中包含和排除的应用程序和用户操作。 必需。 |
 |users|[conditionalAccessUsers](conditionalaccessusers.md)| 策略中包含和排除的用户、组和角色。 必需。 |
-|clientAppTypes|conditionalAccessClientApp 集合| 策略中包含的客户端应用程序类型。 可取值为：`all`、`browser`、`mobileAppsAndDesktopClients`、`exchangeActiveSync`、`easSupported`、`other`。 必填。|
+|clientAppTypes|conditionalAccessClientApp 集合| 策略中包含的客户端应用程序类型。 可取值为：`all`、`browser`、`mobileAppsAndDesktopClients`、`exchangeActiveSync`、`easSupported`、`other`。 必需。|
+|设备|[conditionalAccessDevices](conditionalaccessdevices.md)| 策略中的设备。 |
 |位置|[conditionalAccessLocations](conditionalaccesslocations.md)| 策略中包含的位置和从策略中排除的位置。 |
 |平台|[conditionalAccessPlatforms](conditionalaccessplatforms.md)| 策略中包含和排除的平台。 |
-|signInRiskLevels|riskLevel 集合| 策略中包含的登录风险级别。 可取值为：`low`、`medium`、`high`、`hidden`、`none`、`unknownFutureValue`。 必填。|
+|signInRiskLevels|riskLevel 集合| 策略中包含的登录风险级别。 可取值为：`low`、`medium`、`high`、`hidden`、`none`、`unknownFutureValue`。 必需。|
 |userRiskLevels|riskLevel 集合| 策略中包含的用户风险级别。 可取值为：`low`、`medium`、`high`、`hidden`、`none`、`unknownFutureValue`。 必填。|
 
 ## <a name="relationships"></a>关系
@@ -56,6 +57,7 @@ ms.locfileid: "59109239"
   "applications": {"@odata.type": "microsoft.graph.conditionalAccessApplications"},
   "users": {"@odata.type": "microsoft.graph.conditionalAccessUsers"},
   "clientAppTypes": ["String"],
+  "devices": {"@odata.type": "microsoft.graph.conditionalAccessDevices"},
   "locations": {"@odata.type": "microsoft.graph.conditionalAccessLocations"},
   "platforms": {"@odata.type": "microsoft.graph.conditionalAccessPlatforms"},
   "signInRiskLevels": ["String"],

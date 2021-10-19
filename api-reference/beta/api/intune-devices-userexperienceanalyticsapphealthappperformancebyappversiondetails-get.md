@@ -2,15 +2,15 @@
 title: 获取 userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails
 description: 读取 userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cddc389e2216b0ec5d998b1014482d61fde25404
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 94864312460c2fe7ef642083a98d6c66add5e276
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59027741"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60493738"
 ---
 # <a name="get-userexperienceanalyticsapphealthappperformancebyappversiondetails"></a>获取 userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails
 
@@ -29,7 +29,7 @@ ms.locfileid: "59027741"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

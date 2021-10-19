@@ -2,15 +2,15 @@
 title: 列出 microsoftTunnelConfigurations
 description: 列出 microsoftTunnelConfiguration 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 63bd6dabd4cbf30414e359fa0d979d8e35253f55
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: aa4f6e3cf1fec2427853bf122002a991877e9e6d
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59034272"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60492798"
 ---
 # <a name="list-microsofttunnelconfigurations"></a>列出 microsoftTunnelConfigurations
 
@@ -27,7 +27,7 @@ ms.locfileid: "59034272"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 

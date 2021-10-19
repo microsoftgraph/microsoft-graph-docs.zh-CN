@@ -2,15 +2,15 @@
 title: 删除 microsoftTunnelHealthThreshold
 description: 删除 microsoftTunnelHealthThreshold。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 221e91699daa98d978d5043a7f1e3205f3592315
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9879a912a116d8a2c6ea03a310e95be4dd1fd272
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59041792"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60487805"
 ---
 # <a name="delete-microsofttunnelhealththreshold"></a>删除 microsoftTunnelHealthThreshold
 
@@ -27,7 +27,7 @@ ms.locfileid: "59041792"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|DeviceManagementConfiguration.ReadWrite.All|
 

@@ -2,15 +2,15 @@
 title: getLicensesForApp 函数
 description: 尚未记录
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e33f53d98f72a9adda79176179ad875762f6d9de
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b4989de8c1cf8c36dd376e3e1c7953f7f719b2cf
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59092698"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60486731"
 ---
 # <a name="getlicensesforapp-function"></a>getLicensesForApp 函数
 
@@ -29,7 +29,7 @@ ms.locfileid: "59092698"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|应用程序|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

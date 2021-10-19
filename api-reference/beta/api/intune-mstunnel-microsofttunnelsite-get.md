@@ -2,15 +2,15 @@
 title: 获取 microsoftTunnelSite
 description: 读取 microsoftTunnelSite 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ce5fa1dc63aae81e30fbb9d64ee2212baaec034d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0276995f2453cf4de8d51ae50a4cb64e1f8bd129
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59027664"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60494701"
 ---
 # <a name="get-microsofttunnelsite"></a>获取 microsoftTunnelSite
 
@@ -27,7 +27,7 @@ ms.locfileid: "59027664"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 

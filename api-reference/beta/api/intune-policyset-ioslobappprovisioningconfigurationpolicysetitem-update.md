@@ -2,15 +2,15 @@
 title: 更新 iosLobAppProvisioningConfigurationPolicySetItem
 description: 更新 iosLobAppProvisioningConfigurationPolicySetItem 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 747e5f2d948cac8c5a89b76ae6ecacf80276ce63
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e1a36881944a9770086078919a62ed715d73d6c4
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59065041"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60493930"
 ---
 # <a name="update-ioslobappprovisioningconfigurationpolicysetitem"></a>更新 iosLobAppProvisioningConfigurationPolicySetItem
 
@@ -29,7 +29,7 @@ ms.locfileid: "59065041"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -60,8 +60,8 @@ PATCH /deviceAppManagement/policySets/{policySetId}/items/{policySetItemId}
 |itemType|String|PolicySetItem 的 policySetType。 继承自 [policySetItem](../resources/intune-policyset-policysetitem.md)|
 |displayName|String|PolicySetItem 的 DisplayName。 继承自 [policySetItem](../resources/intune-policyset-policysetitem.md)|
 |status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|PolicySetItem 的状态。 继承自 [policySetItem](../resources/intune-policyset-policysetitem.md)。 可取值为：`unknown`、`validating`、`partialSuccess`、`success`、`error`、`notAssigned`。|
-|errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|错误代码（如果发生了任何错误）。 继承自 [policySetItem](../resources/intune-policyset-policysetitem.md)。 可取值为：`noError`、`unauthorized`、`notFound`、`deleted`。|
-|guidedDeploymentTags|String collection|引导式部署的标记 继承自 [policySetItem](../resources/intune-policyset-policysetitem.md)|
+|errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|错误代码（如果发生了任何错误）。 继承自 [policySetItem](../resources/intune-policyset-policysetitem.md)。 可能的值是：`noError`、`unauthorized`、`notFound`、`deleted`。|
+|guidedDeploymentTags|String 集合|引导式部署的标记 继承自 [policySetItem](../resources/intune-policyset-policysetitem.md)|
 
 
 

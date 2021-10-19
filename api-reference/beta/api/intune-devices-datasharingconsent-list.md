@@ -2,15 +2,15 @@
 title: 列出 dataSharingConsents
 description: 列出 dataSharingConsent 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3c3d3ea39114ba7598a632a3ba8b0638eb08b770
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ee2d6652304033da60f53d1e53ee86d1470d1160
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59122017"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60493745"
 ---
 # <a name="list-datasharingconsents"></a>列出 dataSharingConsents
 
@@ -29,7 +29,7 @@ ms.locfileid: "59122017"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

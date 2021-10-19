@@ -2,15 +2,15 @@
 title: 删除 microsoftTunnelSite
 description: 删除 microsoftTunnelSite。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1e2c0b53e47c73a8ea5a932710785a58b6c73e09
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 26a7c90b288f2c57b745b42390a6001a0e5fa716
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59096849"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60487798"
 ---
 # <a name="delete-microsofttunnelsite"></a>删除 microsoftTunnelSite
 
@@ -27,7 +27,7 @@ ms.locfileid: "59096849"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|DeviceManagementConfiguration.ReadWrite.All|
 

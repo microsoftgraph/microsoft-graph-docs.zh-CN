@@ -2,15 +2,15 @@
 title: 列出 mobileThreatDefenseConnectors
 description: 列出 mobileThreatDefenseConnector 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ff243abe24579159cfe008ab943f3eb292732c78
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c8fc9e303938ea22829717f4c3602394c7fda635
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59092782"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60492544"
 ---
 # <a name="list-mobilethreatdefenseconnectors"></a>列出 mobileThreatDefenseConnectors
 
@@ -29,7 +29,7 @@ ms.locfileid: "59092782"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|应用程序|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

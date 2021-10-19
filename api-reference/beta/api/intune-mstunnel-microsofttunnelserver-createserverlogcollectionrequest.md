@@ -2,15 +2,15 @@
 title: createServerLogCollectionRequest 操作
 description: 尚未记录
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 244847e5bf6d1a298e105d1bd0f325a0e5a1e8f1
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 337ad4f5ba335b79daea55b07ac580eb8a868ee5
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59102603"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60491989"
 ---
 # <a name="createserverlogcollectionrequest-action"></a>createServerLogCollectionRequest 操作
 
@@ -27,9 +27,9 @@ ms.locfileid: "59102603"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

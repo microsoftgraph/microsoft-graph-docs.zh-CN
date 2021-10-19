@@ -2,15 +2,15 @@
 title: 获取 windowsMicrosoftEdgeApp
 description: 读取 windowsMicrosoftEdgeApp 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4acb220536a278997d9124e7900f2be5e4e61154
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: efb43588e7f5feb3d453d70b2e5c080bfb56c7f0
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59018773"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60490031"
 ---
 # <a name="get-windowsmicrosoftedgeapp"></a>获取 windowsMicrosoftEdgeApp
 
@@ -29,7 +29,7 @@ ms.locfileid: "59018773"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
+|应用程序|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

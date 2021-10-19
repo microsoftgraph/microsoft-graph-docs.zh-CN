@@ -2,15 +2,15 @@
 title: depEnrollmentProfile 资源类型
 description: depEnrollmentProfile 资源表示 Apple Device Enrollment Program (DEP) 注册配置文件。 必须先将此类配置文件分配给 Apple DEP 序列号，然后相应的设备才能通过 DEP 注册。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2ed2fa9eb93eaf03d31d54390ab77569e9b976b0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3cebce946c6dae65e8f119c71bf30bd2fc682811
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59091214"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60486668"
 ---
 # <a name="depenrollmentprofile-resource-type"></a>depEnrollmentProfile 资源类型
 
@@ -42,10 +42,10 @@ depEnrollmentProfile 资源表示 Apple Device Enrollment Program (DEP) 注册�
 |说明|String|配置文件的说明 继承自 [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |requiresUserAuthentication|Boolean|指示配置文件是否要求用户身份验证 继承自 [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |configurationEndpointUrl|String|用于注册的配置终结点 URL 继承自 [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|enableAuthenticationViaCompanyPortal|Boolean|指示使用 Apple Setup Assistant 进行身份验证，而不是公司门户。 继承自 [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|指示在公司门户注册的设备上需要此权限。继承自[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|enableAuthenticationViaCompanyPortal|Boolean|指示使用 Apple Setup Assistant 而不是 公司门户。 继承自 [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|指示在公司门户注册的设备上需要安装文件。继承自[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |isDefault|Boolean|指示这是否为默认配置文件|
-|supervisedModeEnabled|Boolean|监督模式，如果为 True，则启用，否则为 false。 有关 https://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intune 其他信息，请参阅 。|
+|supervisedModeEnabled|Boolean|监督模式，如果为 True，则启用，否则为 false。 有关 https://docs.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune 其他信息，请参阅 。|
 |supportDepartment|String|支持部门信息|
 |passCodeDisabled|Boolean|指示密码设置窗格是否被禁用|
 |isMandatory|Boolean|指示配置文件是否是必需的|

@@ -2,15 +2,15 @@
 title: deviceManagementConfigurationPlatforms 枚举类型
 description: 支持的平台类型。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4023d2469348c7770fe5e7d9c9022dee6e512ae1
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3ce51f061b3711dee56bd848978bf054f3b58c7c
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59115399"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60490213"
 ---
 # <a name="devicemanagementconfigurationplatforms-enum-type"></a>deviceManagementConfigurationPlatforms 枚举类型
 
@@ -26,8 +26,10 @@ ms.locfileid: "59115399"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|无。|
+|android|1|Android。|
+|iOS|4 |iOS。|
 |macOS|8 |MacOS。|
-|windows10X|16 |Windows 10X.|
+|windows10X|16|Windows 10X.|
 |windows10|32|Windows 10。|
 
 

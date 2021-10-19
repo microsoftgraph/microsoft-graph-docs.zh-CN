@@ -2,15 +2,15 @@
 title: 列出 securityConfigurationTasks
 description: 列出 securityConfigurationTask 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0c21fc242e2dc1512d11e527a651a3b0f7b7c6ec
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ec7b9c4cd837f7bf986294f377ff21e1c68f700f
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59124698"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60493085"
 ---
 # <a name="list-securityconfigurationtasks"></a>列出 securityConfigurationTasks
 
@@ -29,7 +29,7 @@ ms.locfileid: "59124698"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
+|应用程序|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

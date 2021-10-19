@@ -2,15 +2,15 @@
 title: executeAction 操作
 description: 尚未记录
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 71a7c21914326498578b593111b81bf633e3cdcc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2a971c0672c5dc2782c62e5390c859aa7c58b8d1
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59102953"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60494435"
 ---
 # <a name="executeaction-action"></a>executeAction 操作
 
@@ -27,9 +27,9 @@ ms.locfileid: "59102953"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.PriviligedOperation.All|
+|委派（工作或学校帐户）|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.IligedOperation.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.PriviligedOperation.All|
+|应用程序|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.IligedOperation.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

@@ -2,15 +2,15 @@
 title: 删除 deviceManagementConfigurationChoiceSettingDefinition
 description: 删除 deviceManagementConfigurationChoiceSettingDefinition。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f0acba94f237a5934715ca14572d7858a34a2614
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 915b60afd6379af3f98d796416abc63e60bc440b
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59048512"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60493980"
 ---
 # <a name="delete-devicemanagementconfigurationchoicesettingdefinition"></a>删除 deviceManagementConfigurationChoiceSettingDefinition
 
@@ -29,7 +29,7 @@ ms.locfileid: "59048512"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

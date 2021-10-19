@@ -2,15 +2,15 @@
 title: 更新 managedDevice
 description: 更新 managedDevice 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5d0b1055bcf6d1ccbe16cd562cd28b8606410e26
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a44f2d0c4f4148619a4290b066ce04edd7179e87
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59133021"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60494099"
 ---
 # <a name="update-manageddevice"></a>更新 managedDevice
 
@@ -122,19 +122,19 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |managementCertificateExpirationDate|DateTimeOffset|报告设备管理证书到期日期。 此属性是只读的。|
 |iccid|String|集成的电路卡标识符，它是 SIM 卡的唯一标识号。 此属性是只读的。|
 |udid|String|iOS 和 macOS 设备的唯一设备标识符。 此属性是只读的。|
-|roleScopeTagIds|字符串集合|此设备实例的范围标记标识列表。|
+|roleScopeTagIds|String collection|此设备实例的范围标记标识列表。|
 |windowsActiveMalwareCount|Int32|此 Windows 设备的活动恶意软件计数。 此属性是只读的。|
 |windowsRemediatedMalwareCount|Int32|此 Windows 设备的已修复恶意软件计数。 此属性是只读的。|
 |notes|String|IT 管理员在设备上创建的备注|
 |configurationManagerClientHealthState|[configurationManagerClientHealthState](../resources/intune-devices-configurationmanagerclienthealthstate.md)|配置管理器客户端运行状况状态，仅对 MDM/ConfigMgr 代理管理的设备有效|
-|configurationManagerClientInformation|[configurationManagerClientInformation](../resources/intune-devices-configurationmanagerclientinformation.md)|配置管理器客户端信息，仅对 ConfigMgr 代理托管、duel 托管或三管理的设备有效|
+|configurationManagerClientInformation|[configurationManagerClientInformation](../resources/intune-devices-configurationmanagerclientinformation.md)|配置管理器客户端信息，仅对由 ConfigMgr 代理托管、duel 托管或三管理的设备有效|
 |ethernetMacAddress|String|以太网 MAC。 此属性是只读的。|
 |physicalMemoryInBytes|Int64|内存总量（以字节为单位）。 此属性是只读的。|
 |processorArchitecture|[managedDeviceArchitecture](../resources/intune-devices-manageddevicearchitecture.md)|处理器体系结构。 此属性是只读的。 可取值为：`unknown`、`x86`、`x64`、`arm`、`arM64`。|
 |specificationVersion|String|规范版本。 此属性是只读的。|
 |joinType|[joinType](../resources/intune-devices-jointype.md)|设备加入类型。 可取值为：`unknown`、`azureADJoined`、`azureADRegistered`、`hybridAzureADJoined`。|
 |skuFamily|String|设备 sku 系列|
-|skuNumber|Int32|设备 sku 号。 另请参阅 [：sysinfoapi.h (GetProductInfo) ](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getproductinfo)。 有效值为 0 到 2147483647。 此属性是只读的。|
+|skuNumber|Int32|设备 sku 号，另请参阅 https://docs.microsoft.com/windows/win32/api/sysinfoapi/nf-sysinfoapi-getproductinfo ：。 有效值为 0 到 2147483647。 此属性是只读的。|
 |managementFeatures|[managedDeviceManagementFeatures](../resources/intune-devices-manageddevicemanagementfeatures.md)|设备管理功能。 可取值为：`none`、`microsoftManagedDesktop`。|
 |chromeOSDeviceInfo|[chromeOSDeviceProperty](../resources/intune-devices-chromeosdeviceproperty.md) 集合|ChromeOS 设备的属性列表。|
 |enrollmentProfileName|String|分配给设备的注册配置文件的名称。 默认值为空字符串，表示未对注册配置文件进行分页。 此属性是只读的。|

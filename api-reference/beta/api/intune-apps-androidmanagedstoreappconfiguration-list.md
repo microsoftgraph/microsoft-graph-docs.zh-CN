@@ -2,15 +2,15 @@
 title: 列出 androidManagedStoreAppConfigurations
 description: 列出 androidManagedStoreAppConfiguration 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6c1dd8e51badf711727d1ed53a3e8b679681f7bc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 63aeb4a9e5dfdb2b745759075c3b4f5d328609b0
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019004"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60486816"
 ---
 # <a name="list-androidmanagedstoreappconfigurations"></a>列出 androidManagedStoreAppConfigurations
 
@@ -29,7 +29,7 @@ ms.locfileid: "59019004"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
+|应用程序|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 942
+Content-Length: 979
 
 {
   "value": [
@@ -93,7 +93,8 @@ Content-Length: 942
         }
       ],
       "appSupportsOemConfig": true,
-      "profileApplicability": "androidWorkProfile"
+      "profileApplicability": "androidWorkProfile",
+      "connectedAppsEnabled": true
     }
   ]
 }

@@ -2,15 +2,15 @@
 title: 获取 enterpriseCodeSigningCertificate
 description: 读取 enterpriseCodeSigningCertificate 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 39d850de744a5e3c59a2e5419a990febd85e435f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8d3e445da61ac7e54fd2e0165bb796f1885ad57b
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59014242"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60491744"
 ---
 # <a name="get-enterprisecodesigningcertificate"></a>获取 enterpriseCodeSigningCertificate
 
@@ -29,7 +29,7 @@ ms.locfileid: "59014242"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
+|应用程序|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

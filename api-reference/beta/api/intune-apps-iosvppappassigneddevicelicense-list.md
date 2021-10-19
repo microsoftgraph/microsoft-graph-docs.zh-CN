@@ -2,15 +2,15 @@
 title: 列出 iosVppAppAssignedDeviceLicenses
 description: 列出 iosVppAppAssignedDeviceLicense 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b6284b7d04a0dcf3ce6378d7c9e315973a33c325
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1a3e9ccd4a25cd77ca5dac06d65162c86b2000e9
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59093545"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60488393"
 ---
 # <a name="list-iosvppappassigneddevicelicenses"></a>列出 iosVppAppAssignedDeviceLicenses
 
@@ -29,7 +29,7 @@ ms.locfileid: "59093545"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
+|应用程序|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

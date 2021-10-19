@@ -2,15 +2,15 @@
 author: JeremyKelley
 title: permission 资源类型
 description: 表示为 driveItem 授予的共享权限的权限资源
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: e7eb160bf7899feec9afda49c6087072aab83c3b
-ms.sourcegitcommit: 2d8b04725ea4eaf304f3da1056a6451457a4630f
+ms.openlocfilehash: f2b58acc06b1a7478c2728f8e371fee67e917d3e
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52335602"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60493471"
 ---
 # <a name="permission-resource-type"></a>permission 资源类型
 
@@ -67,12 +67,12 @@ permission 资源提供有关为[driveItem](driveitem.md)资源授予的共享�
 |:--------------------|:----------------------------|:-------------------------
 | id                  | String                      | 在项目的所有权限中，某个权限的唯一标识符。只读。
 | grantedTo           | [IdentitySet][]             | 对于用户类型权限，此权限的用户和应用程序的详细信息。只读。
-| grantedToIdentities | Collection([IdentitySet][]) | 对于链接类型权限，被授予权限的用户的详细信息。 只读。
-| invitation          | [SharingInvitation][]       | 此权限的全部关联共享邀请的详细信息。只读。
+| grantedToIdentities | Collection([IdentitySet][]) | 对于链接类型权限，被授予权限的用户的详细信息。只读。
+| 邀请          | [SharingInvitation][]       | 此权限的全部关联共享邀请的详细信息。只读。
 | inheritedFrom       | [ItemReference][]           | 如果当前权限继承自上级，则提供对当前权限的上级的引用。只读。
 | link                | [SharingLink][]             | 如果当前权限是链接类型权限，则提供当前权限的链接详细信息。只读。
 | 角色               | 集合（字符串）          | 权限类型，例如 `read`。有关角色的完整列表，请参阅如下内容。只读。
-| shareId             | String                      | 可用于通过 **[shares API][]** 访问此共享项的唯一令牌。 只读。
+| shareId             | String                      | 可通过 **[共享 API][]** 访问此共享项目的唯一令牌。只读。
 | expirationDateTime  | DateTimeOffset              | DateTimeOffset 的格式 yyyy-MM-ddTHH:mm:ssZ 表示权限的过期时间。 DateTime.MinValue 表示此权限没有设置过期时间。 可选。
 | HasPassword         | 布尔值                     | 这表示是否为该权限设置了密码，它只在响应中显示。 可选、只读和仅限 OneDrive 个人版。
 
@@ -82,7 +82,7 @@ permission 资源提供有关为[driveItem](driveitem.md)资源授予的共享�
 |:------------------|:-------------------------------------------------------------------------------|
 | 阅读            | 提供读取项的元数据和内容的功能。            |
 | 写入           | 提供读取并修改项的元数据和内容的功能。 |
-| owner           | 对于 SharePoint 和 OneDrive for Business，这表示所有者角色。       |
+| 所有者           | 对于 SharePoint 和 OneDrive for Business，这表示所有者角色。       |
 
 权限资源使用 _facet_ 提供有关由该资源表示的权限类型的信息。
 
@@ -166,7 +166,7 @@ permission 资源提供有关为[driveItem](driveitem.md)资源授予的共享�
 
 此链接向 `grantedToIdentities` 集合中的特定人员提供读写访问权限。
 
-<!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-people-link" } -->
+<!-- {"blockType": "example", truncated: true, "@odata.type": "microsoft.graph.permission", "name": "permission-people-link" } -->
 
 ```json
 {
@@ -199,7 +199,7 @@ permission 资源提供有关为[driveItem](driveitem.md)资源授予的共享�
 
 邀请或授予 API[][]发送[][]的权限可以在邀请[][SharingInvitation] Facet 中包含与已知帐户不匹配的电子邮件地址的其他信息。 在这种情况下，在用户第一次单击该链接并登录时，可能不会设置 **grantedTo** 属性，直到兑换邀请链接。
 
-<!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-invite-email" } -->
+<!-- {"blockType": "example", truncated: true, "@odata.type": "microsoft.graph.permission", "name": "permission-invite-email" } -->
 
 ```json
 {
@@ -216,7 +216,7 @@ permission 资源提供有关为[driveItem](driveitem.md)资源授予的共享�
 
 在用户兑换共享邀请后，**grantedTo** 属性将包含兑换权限的帐户的相关信息：
 
-<!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-invite-redeemed" } -->
+<!-- {"blockType": "example", truncated: true,"@odata.type": "microsoft.graph.permission", "name": "permission-invite-redeemed" } -->
 
 ```json
 {

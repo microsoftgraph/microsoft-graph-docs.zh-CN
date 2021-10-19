@@ -2,15 +2,15 @@
 title: 更新 importedAppleDeviceIdentityResult
 description: 更新 importedAppleDeviceIdentityResult 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2077922f8727566d3c2830516da2a3a0f4bc9ea0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ab44bef68cefcb51665c9fbdd53806fb7f257794
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59034524"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60487483"
 ---
 # <a name="update-importedappledeviceidentityresult"></a>更新 importedAppleDeviceIdentityResult
 
@@ -57,7 +57,7 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedA
 |serialNumber|String|设备序列号 继承自 [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|
 |requestedEnrollmentProfileId|String|注册配置文件 ID 管理员打算在下一次注册期间应用到设备 继承自 [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|
 |requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|向设备分配注册配置文件的时间 继承自 [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|
-|isSupervised|Boolean|指示 Apple 设备是否受监督。 详细信息位于： https://support.apple.com/HT202837 继承自 [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|
+|isSupervised|Boolean|指示 Apple 设备是否受监督。 详细信息位于： https://support.apple.com/en-us/HT202837 继承自 [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|
 |discoverySource|[discoverySource](../resources/intune-enrollment-discoverysource.md)|Apple 设备发现源。 继承自 [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)。 可取值为：`unknown`、`adminImport`、`deviceEnrollmentProgram`。|
 |isDeleted|Boolean|指示设备是否从 Apple Business Manager 中删除 继承自 [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|
 |createdDateTime|DateTimeOffset|设备的创建日期时间 继承自 [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|

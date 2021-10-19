@@ -2,15 +2,15 @@
 title: 列出 windows10XVpnConfigurations
 description: 列出 windows10XVpnConfiguration 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 745f464392573511e3cd7009c0bba76b46bef9a3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: bbbf1178fc6a8f119f5e6ce741de1f323b97ff00
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59009642"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60492770"
 ---
 # <a name="list-windows10xvpnconfigurations"></a>列出 windows10XVpnConfigurations
 
@@ -29,7 +29,7 @@ ms.locfileid: "59009642"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|应用程序|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

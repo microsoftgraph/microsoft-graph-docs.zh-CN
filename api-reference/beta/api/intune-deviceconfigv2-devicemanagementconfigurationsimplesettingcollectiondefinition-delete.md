@@ -2,15 +2,15 @@
 title: 删除 deviceManagementConfigurationSimpleSettingCollectionDefinition
 description: 删除 deviceManagementConfigurationSimpleSettingCollectionDefinition。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 08228a60d83766bef965d1320921ede88a38e938
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b1e6cbbdb1f0fef9e80a5de33e7a57ade6bf9ebd
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59009901"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60486598"
 ---
 # <a name="delete-devicemanagementconfigurationsimplesettingcollectiondefinition"></a>删除 deviceManagementConfigurationSimpleSettingCollectionDefinition
 
@@ -29,7 +29,7 @@ ms.locfileid: "59009901"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

@@ -2,15 +2,15 @@
 title: depEnrollmentBaseProfile 资源类型
 description: DepEnrollmentBaseProfile 资源表示 Apple Device Enrollment Program (DEP) 注册配置文件。 必须先将此类配置文件分配给 Apple DEP 序列号，然后相应的设备才能通过 DEP 注册。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 999b00260443c9c7efdc8c2d84a131f92b4ad35d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8f381af9b3b97579bf14a2a34c00bfb9f82f8040
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59091235"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60493485"
 ---
 # <a name="depenrollmentbaseprofile-resource-type"></a>depEnrollmentBaseProfile 资源类型
 
@@ -42,7 +42,7 @@ DepEnrollmentBaseProfile 资源表示 Apple Device Enrollment Program (DEP) 注�
 |enableAuthenticationViaCompanyPortal|Boolean|指示使用 Apple Setup Assistant 进行身份验证，而不是公司门户。 继承自 [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|指示在公司门户注册的设备上需要此权限。继承自[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |isDefault|Boolean|指示这是否为默认配置文件|
-|supervisedModeEnabled|Boolean|监督模式，如果为 True，则启用，否则为 false。 有关 https://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intune 其他信息，请参阅 。|
+|supervisedModeEnabled|Boolean|监督模式，如果为 True，则启用，否则为 false。 有关 https://docs.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune 其他信息，请参阅 。|
 |supportDepartment|String|支持部门信息|
 |isMandatory|Boolean|指示配置文件是否是必需的|
 |locationDisabled|Boolean|指示位置服务设置窗格是否被禁用|

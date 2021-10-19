@@ -2,15 +2,15 @@
 title: 列出 mobileAppDependencies
 description: 列出 mobileAppDependency 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 30407c8c4f47b9d954bd1b7d6126970b3af41079
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7828d03e9ac77b8d6a4a20ced783fdd7a74a97a6
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59125265"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60481039"
 ---
 # <a name="list-mobileappdependencies"></a>列出 mobileAppDependencies
 
@@ -29,7 +29,7 @@ ms.locfileid: "59125265"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
+|应用程序|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

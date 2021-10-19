@@ -2,15 +2,15 @@
 title: 获取 userExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric
 description: 读取 userExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dfe7ba904ec4ae0a18f567d2d6b98bb9c596c377
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 438e253d22945b9099d4491bab8f347e3ed4ea53
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59058998"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60494421"
 ---
 # <a name="get-userexperienceanalyticsworkfromanywherehardwarereadinessmetric"></a>获取 userExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric
 
@@ -29,7 +29,7 @@ ms.locfileid: "59058998"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

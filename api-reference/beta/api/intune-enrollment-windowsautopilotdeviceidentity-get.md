@@ -2,15 +2,15 @@
 title: 获取 windowsAutopilotDeviceIdentity
 description: 读取 windowsAutopilotDeviceIdentity 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c21bfb8f68a815f266567d6998a241dbdb94aa35
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 84e0686d5f8cc5421f70af8b19a662d07f16cb67
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59076962"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60489996"
 ---
 # <a name="get-windowsautopilotdeviceidentity"></a>获取 windowsAutopilotDeviceIdentity
 
@@ -29,7 +29,7 @@ ms.locfileid: "59076962"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|应用程序|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

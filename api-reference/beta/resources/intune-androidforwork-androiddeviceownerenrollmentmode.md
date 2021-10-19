@@ -2,15 +2,15 @@
 title: androidDeviceOwnerEnrollmentMode 枚举类型
 description: 注册配置文件的注册模式。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b7700c5fd5d9647286561dde4687b3ef2675f325
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e369682fda379ce8d4b4905839be42ca4ff523c5
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59069416"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60487210"
 ---
 # <a name="androiddeviceownerenrollmentmode-enum-type"></a>androidDeviceOwnerEnrollmentMode 枚举类型
 
@@ -28,6 +28,8 @@ ms.locfileid: "59069416"
 |corporateOwnedDedicatedDevice|0|尚未记录|
 |corporateOwnedFullyManaged|1|尚未记录|
 |corporateOwnedWorkProfile|2|尚未记录|
+|corporateOwnedAOSPUserlessDevice|3|企业拥有、无用户 Android 开放Project (AOSP) 设备，无需 Google 移动服务。|
+|corporateOwnedAOSPUserAssociatedDevice|4 |企业拥有的、与用户关联的 Android 开放源代码Project (AOSP) 设备，无需 Google 移动服务。|
 
 
 

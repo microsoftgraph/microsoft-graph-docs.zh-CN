@@ -2,15 +2,15 @@
 title: deviceManagementConfigurationTechnologies 枚举类型
 description: 描述可以使用哪种技术部署此设置
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d7766d88b7670a4cd0a96a3e4a52a462478a9a41
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a87452e3f00887895e8a89a2b845e077a25f7bf7
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59148184"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60485168"
 ---
 # <a name="devicemanagementconfigurationtechnologies-enum-type"></a>deviceManagementConfigurationTechnologies 枚举类型
 
@@ -31,6 +31,8 @@ ms.locfileid: "59148184"
 |configManager|4 |可通过 ConfigManager 通道部署设置|
 |microsoftSense|128|可以通过 SENSE 代理通道部署设置|
 |exchangeOnline|256|可以通过代理通道部署Exchange Online设置|
+|linuxMdm|1024|可通过 Linux Mdm 通道部署设置|
+|unknownFutureValue|1073741824|Sentinel 成员，适用于客户端无法处理新枚举值的情况。|
 
 
 

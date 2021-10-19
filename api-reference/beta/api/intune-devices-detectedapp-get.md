@@ -2,15 +2,15 @@
 title: 获取 detectedApp
 description: 读取 detectedApp 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a6a9d6ab97c03e32ad4d946d635e376f8c99923b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 80268721c458a03375cf181e9fb14bfb8dc69c20
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59116764"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60487266"
 ---
 # <a name="get-detectedapp"></a>获取 detectedApp
 
@@ -29,7 +29,7 @@ ms.locfileid: "59116764"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

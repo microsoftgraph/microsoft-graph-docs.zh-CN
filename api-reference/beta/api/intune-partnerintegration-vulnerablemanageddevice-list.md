@@ -2,15 +2,15 @@
 title: 列出 vulnerableManagedDevices
 description: 列出 vulnerableManagedDevice 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d680e9401c12a417dc127d5429c5a9918574ddd0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b9af630ad6cb60bf988d486df4f86c5368f7f820
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59141793"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60479175"
 ---
 # <a name="list-vulnerablemanageddevices"></a>列出 vulnerableManagedDevices
 
@@ -29,7 +29,7 @@ ms.locfileid: "59141793"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
+|应用程序|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

@@ -2,15 +2,15 @@
 title: 列出 userExperienceAnalyticsWorkFromAnywhereDevices
 description: 列出 userExperienceAnalyticsWorkFromAnywhereDevice 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 599a66a5d38d3133e1979e4e34819565eaa79d45
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1c58fd93f658f98af1b52658a8bb09edad9ee8d6
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59087931"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60491084"
 ---
 # <a name="list-userexperienceanalyticsworkfromanywheredevices"></a>列出 userExperienceAnalyticsWorkFromAnywhereDevices
 
@@ -29,7 +29,7 @@ ms.locfileid: "59087931"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -65,13 +65,14 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsWor
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1429
+Content-Length: 1549
 
 {
   "value": [
     {
       "@odata.type": "#microsoft.graph.userExperienceAnalyticsWorkFromAnywhereDevice",
       "id": "83d5adfc-adfc-83d5-fcad-d583fcadd583",
+      "deviceId": "Device Id value",
       "deviceName": "Device Name value",
       "serialNumber": "Serial Number value",
       "manufacturer": "Manufacturer value",
@@ -88,6 +89,7 @@ Content-Length: 1429
       "tenantAttached": true,
       "compliancePolicySetToIntune": true,
       "otherWorkloadsSetToIntune": true,
+      "isCloudManagedGatewayEnabled": true,
       "upgradeEligibility": "unknown",
       "ramCheckFailed": true,
       "storageCheckFailed": true,
@@ -98,6 +100,7 @@ Content-Length: 1429
       "processorFamilyCheckFailed": true,
       "processor64BitCheckFailed": true,
       "osCheckFailed": true,
+      "workFromAnywhereScore": 7.0,
       "windowsScore": 4.0,
       "cloudManagementScore": 6.666666666666667,
       "cloudIdentityScore": 6.0,

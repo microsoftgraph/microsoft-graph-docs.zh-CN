@@ -2,15 +2,15 @@
 title: 列出 macOsVppApps
 description: 列出 macOsVppApp 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cd6d66843b954a6d15eec1d2b7e1b251ffdb8431
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5a5b3e5c7563a11298ba3ced9e882bbfb8546cfd
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59088722"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60488869"
 ---
 # <a name="list-macosvppapps"></a>列出 macOsVppApps
 
@@ -29,7 +29,7 @@ ms.locfileid: "59088722"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
+|应用程序|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

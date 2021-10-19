@@ -2,15 +2,15 @@
 title: reportRemoteAssistance 操作
 description: 提交报告有效负载的 Post 调用
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 40be075dca577bb1febbeb68390fccb51dbeb0be
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 181ac4bdb452fc0746e73cbb0f2679fd152b744e
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59041449"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60489028"
 ---
 # <a name="reportremoteassistance-action"></a>reportRemoteAssistance 操作
 
@@ -27,9 +27,9 @@ ms.locfileid: "59041449"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
+|应用程序|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -68,7 +68,7 @@ POST /deviceManagement/reportRemoteAssistance
 POST https://graph.microsoft.com/beta/deviceManagement/reportRemoteAssistance
 
 Content-type: application/json
-Content-length: 972
+Content-length: 1044
 
 {
   "reportingPayload": {
@@ -81,6 +81,7 @@ Content-length: 972
     "helperTenantId": "Helper Tenant Id value",
     "helperFirstName": "Helper First Name value",
     "helperLastName": "Helper Last Name value",
+    "helperOs": "Helper Os value",
     "helperDeviceAadId": "Helper Device Aad Id value",
     "helperDeviceName": "Helper Device Name value",
     "helperEnrollmentState": "enrolled",
@@ -90,6 +91,7 @@ Content-length: 972
     "sharerLastName": "Sharer Last Name value",
     "sharerDeviceAadId": "Sharer Device Aad Id value",
     "sharerDeviceName": "Sharer Device Name value",
+    "sharerOs": "Sharer Os value",
     "sharerEnrollmentState": "enrolled"
   }
 }

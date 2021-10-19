@@ -2,15 +2,15 @@
 title: 列出 windowsMicrosoftEdgeApps
 description: 列出 windowsMicrosoftEdgeApp 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9bd545b66b159d396d9959a0ea714b7fbe455f4e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c9ae3dbc9bb5f8dc5639e5bb0a94185112b8bcc3
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59018759"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60489400"
 ---
 # <a name="list-windowsmicrosoftedgeapps"></a>列出 windowsMicrosoftEdgeApps
 
@@ -29,7 +29,7 @@ ms.locfileid: "59018759"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
+|应用程序|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

@@ -2,15 +2,15 @@
 title: 获取 androidManagedStoreApp
 description: 读取 androidManagedStoreApp 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8b7c949cbcd87da8b7b8ba07144be404d9229d4a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ee5a26994c5a6a9d7d68beeb307580b4f463835d
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59031591"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60488344"
 ---
 # <a name="get-androidmanagedstoreapp"></a>获取 androidManagedStoreApp
 
@@ -29,7 +29,7 @@ ms.locfileid: "59031591"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
+|应用程序|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

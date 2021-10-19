@@ -2,15 +2,15 @@
 title: 列出 androidDeviceOwnerGeneralDeviceConfigurations
 description: 列出 androidDeviceOwnerGeneralDeviceConfiguration 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3004b53dca3b37a46bd1d359bdbe972555c42ae9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 461709a7d22223a7b1438822dccbc06c8ecc5210
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59088519"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60492572"
 ---
 # <a name="list-androiddeviceownergeneraldeviceconfigurations"></a>列出 androidDeviceOwnerGeneralDeviceConfigurations
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 9272
+Content-Length: 9636
 
 {
   "value": [
@@ -265,6 +265,16 @@ Content-Length: 9272
       "personalProfileAppsAllowInstallFromUnknownSources": true,
       "personalProfileCameraBlocked": true,
       "personalProfileScreenCaptureBlocked": true,
+      "personalProfilePlayStoreMode": "blockedApps",
+      "personalProfilePersonalApplications": [
+        {
+          "@odata.type": "microsoft.graph.appListItem",
+          "name": "Name value",
+          "publisher": "Publisher value",
+          "appStoreUrl": "https://example.com/appStoreUrl/",
+          "appId": "App Id value"
+        }
+      ],
       "workProfilePasswordExpirationDays": 1,
       "workProfilePasswordMinimumLength": 0,
       "workProfilePasswordMinimumNumericCharacters": 11,

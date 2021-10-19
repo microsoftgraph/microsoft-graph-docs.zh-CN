@@ -2,15 +2,15 @@
 title: 获取 macOsVppApp
 description: 读取 macOsVppApp 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4e868077b348fce9b4002c1b1d3f28ff685795a1
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 01dbfaf40bbf37fba318b7018569b7202c2eac13
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59088736"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60487315"
 ---
 # <a name="get-macosvppapp"></a>获取 macOsVppApp
 
@@ -29,7 +29,7 @@ ms.locfileid: "59088736"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
+|应用程序|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

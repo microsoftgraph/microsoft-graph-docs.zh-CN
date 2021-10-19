@@ -2,15 +2,15 @@
 title: 创建 deviceManagementConfigurationPolicy
 description: 创建新的 deviceManagementConfigurationPolicy 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4eb5eaad9256be888e87ea2b6001273016816970
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 890fa18f884607b8e7fa3f6da65abc6a573a5a85
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59088267"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60493766"
 ---
 # <a name="create-devicemanagementconfigurationpolicy"></a>创建 deviceManagementConfigurationPolicy
 
@@ -29,7 +29,7 @@ ms.locfileid: "59088267"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -57,13 +57,13 @@ POST /deviceManagement/reusablePolicySettings/{deviceManagementReusablePolicySet
 |id|String|策略文档的键。 自动生成。|
 |name|String|策略名称|
 |说明|String|策略说明|
-|平台|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|此策略的平台。 可取值为：`none`、`macOS`、`windows10X`、`windows10`。|
-|technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|此策略的技术。 可取值为：`none`、`mdm`、`windows10XManagement`、`configManager`、`microsoftSense`、`exchangeOnline`。|
+|平台|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|此策略的平台。 可取值为：`none`、`android`、`iOS`、`macOS`、`windows10X`、`windows10`。|
+|technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|此策略的技术。 可取值为：`none`、`mdm`、`windows10XManagement`、`configManager`、`microsoftSense`、`exchangeOnline`、`linuxMdm`、`unknownFutureValue`。|
 |createdDateTime|DateTimeOffset|策略创建日期和时间。 此属性是只读的。|
 |lastModifiedDateTime|DateTimeOffset|策略上次修改日期和时间。 此属性是只读的。|
 |settingCount|Int32|设置数。 此属性是只读的。|
 |creationSource|String|策略创建源|
-|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
 |isAssigned|Boolean|策略分配状态。 此属性是只读的。|
 |templateReference|[deviceManagementConfigurationPolicyTemplateReference](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicytemplatereference.md)|模板参考信息|
 
@@ -79,13 +79,13 @@ POST /deviceManagement/reusablePolicySettings/{deviceManagementReusablePolicySet
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/configurationPolicies
 Content-type: application/json
-Content-length: 685
+Content-length: 687
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationPolicy",
   "name": "Name value",
   "description": "Description value",
-  "platforms": "macOS",
+  "platforms": "android",
   "technologies": "mdm",
   "settingCount": 12,
   "creationSource": "Creation Source value",
@@ -108,14 +108,14 @@ Content-length: 685
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 857
+Content-Length: 859
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationPolicy",
   "id": "3ffd7cd0-7cd0-3ffd-d07c-fd3fd07cfd3f",
   "name": "Name value",
   "description": "Description value",
-  "platforms": "macOS",
+  "platforms": "android",
   "technologies": "mdm",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",

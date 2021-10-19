@@ -2,15 +2,15 @@
 title: 获取 appleEnrollmentProfileAssignment
 description: 读取 appleEnrollmentProfileAssignment 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3e033987c00a046922f7b0e40f26a0ccfa93f5b2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e3ce8f964bda3b2ad7285c6795acd3ee77323cc6
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59082534"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60487140"
 ---
 # <a name="get-appleenrollmentprofileassignment"></a>获取 appleEnrollmentProfileAssignment
 
@@ -20,7 +20,7 @@ ms.locfileid: "59082534"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-读取 [appleEnrollmentProfileAssignment 对象的属性和](../resources/intune-enrollment-appleenrollmentprofileassignment.md) 关系。
+读取 [appleEnrollmentProfileAssignment](../resources/intune-enrollment-appleenrollmentprofileassignment.md) 对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -29,7 +29,7 @@ ms.locfileid: "59082534"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|应用程序|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

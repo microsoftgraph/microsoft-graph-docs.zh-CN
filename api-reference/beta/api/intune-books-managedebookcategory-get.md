@@ -2,15 +2,15 @@
 title: 获取 managedEBookCategory
 description: 读取 managedEBookCategory 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: df7afc76b9b2d61cdcba4bc404bcc007ac091a81
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 834414f755a52b1bee3973b5f1918d8d08db2555
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59077746"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60487168"
 ---
 # <a name="get-managedebookcategory"></a>获取 managedEBookCategory
 
@@ -29,7 +29,7 @@ ms.locfileid: "59077746"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
+|应用程序|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

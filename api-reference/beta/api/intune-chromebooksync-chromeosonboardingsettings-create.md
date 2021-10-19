@@ -2,15 +2,15 @@
 title: 创建 chromeOSOnboardingSettings
 description: 创建新的 chromeOSOnboardingSettings 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6a7200f79be8647c127135ae471a23d155f4d3d2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9f43820e7c3956ee85ca48820445b9326f339b0f
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59112991"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60489274"
 ---
 # <a name="create-chromeosonboardingsettings"></a>创建 chromeOSOnboardingSettings
 
@@ -27,9 +27,9 @@ ms.locfileid: "59112991"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

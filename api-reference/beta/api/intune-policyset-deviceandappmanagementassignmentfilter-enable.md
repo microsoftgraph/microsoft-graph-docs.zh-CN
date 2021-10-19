@@ -2,15 +2,15 @@
 title: 启用操作
 description: 尚未记录
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2b1a4c7feccbff2fe63d82c5f36a98fee1ef9022
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 952d6bc63881f3d7bac1c15486b070d0615f2e67
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59124601"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60489337"
 ---
 # <a name="enable-action"></a>启用操作
 
@@ -27,9 +27,9 @@ ms.locfileid: "59124601"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.Read.All、DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -51,7 +51,7 @@ POST /deviceManagement/assignmentFilters/enable
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|描述|
+|属性|类型|说明|
 |:---|:---|:---|
 |enable|Boolean|尚未记录|
 

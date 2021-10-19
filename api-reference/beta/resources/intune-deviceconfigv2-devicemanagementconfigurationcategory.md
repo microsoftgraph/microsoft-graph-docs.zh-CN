@@ -2,15 +2,15 @@
 title: deviceManagementConfigurationCategory 资源类型
 description: 设备管理配置策略
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c36cbd2ce5d2b4f47852fcd7946ac97f11c3ab35
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2e26b6930617d195cab4445e31e30e5d866dfaea
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59126000"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60487196"
 ---
 # <a name="devicemanagementconfigurationcategory-resource-type"></a>deviceManagementConfigurationCategory 资源类型
 
@@ -39,12 +39,12 @@ ms.locfileid: "59126000"
 |helpText|String|项目的帮助文本|
 |name|String|项目名称|
 |displayName|String|项目的显示名称|
-|平台|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|平台类型，类别中的设置具有。 可取值为：`none`、`macOS`、`windows10X`、`windows10`。|
-|technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|技术类型，类别中的设置具有。 可取值为：`none`、`mdm`、`windows10XManagement`、`configManager`、`microsoftSense`、`exchangeOnline`。|
+|平台|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|平台类型，类别中的设置具有。 可取值为：`none`、`android`、`iOS`、`macOS`、`windows10X`、`windows10`。|
+|technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|技术类型，类别中的设置具有。 可取值为：`none`、`mdm`、`windows10XManagement`、`configManager`、`microsoftSense`、`exchangeOnline`、`linuxMdm`、`unknownFutureValue`。|
 |settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|指示类别包含用于合规性或配置的设置。 可取值为：`none`、`configuration`。|
 |parentCategoryId|String|类别的父 ID。|
 |rootCategoryId|String|类别的根 ID。|
-|childCategoryIds|字符串集合|类别的子 ID 列表。|
+|childCategoryIds|String collection|类别的子 ID 列表。|
 
 ## <a name="relationships"></a>关系
 无

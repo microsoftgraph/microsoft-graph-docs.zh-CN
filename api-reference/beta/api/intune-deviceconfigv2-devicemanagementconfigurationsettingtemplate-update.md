@@ -2,15 +2,15 @@
 title: 更新 deviceManagementConfigurationSettingTemplate
 description: 更新 deviceManagementConfigurationSettingTemplate 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6661d74fa8d10071ae5e22cefb9e1ca121d635a8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 39c440566b9900d47d7cf93c1a56ec58ba0c7fda
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59093083"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60484820"
 ---
 # <a name="update-devicemanagementconfigurationsettingtemplate"></a>更新 deviceManagementConfigurationSettingTemplate
 
@@ -29,7 +29,7 @@ ms.locfileid: "59093083"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

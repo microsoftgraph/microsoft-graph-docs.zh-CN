@@ -2,15 +2,15 @@
 title: 获取 managedAppConfiguration
 description: 读取 managedAppConfiguration 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 504ba1db8912fa89f0f497230950903543284b2e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1a006fdba89f4ee5de0c3fb4d57798db67bdb4be
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59020572"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60491681"
 ---
 # <a name="get-managedappconfiguration"></a>获取 managedAppConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "59020572"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
+|应用程序|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

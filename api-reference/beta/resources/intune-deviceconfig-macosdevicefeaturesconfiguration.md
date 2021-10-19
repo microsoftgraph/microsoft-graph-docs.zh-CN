@@ -2,15 +2,15 @@
 title: macOSDeviceFeaturesConfiguration 资源类型
 description: MacOS 设备功能配置的配置文件。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9062bdce77c0dea983d61d9de5a668676c257bbe
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: aab587bd0fcc4d4840363701a570a31b66702e18
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59091732"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60493206"
 ---
 # <a name="macosdevicefeaturesconfiguration-resource-type"></a>macOSDeviceFeaturesConfiguration 资源类型
 
@@ -39,7 +39,7 @@ MacOS 设备功能配置的配置文件。
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|指示基础设备配置是否支持分配范围标记。 当此值为 false 且实体对范围用户不可见时，不允许分配给 ScopeTags 属性。 这适用于在 Silverlight 中创建的旧版策略，可通过在 Azure 门户中删除和重新创建策略来解决。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|此策略的操作系统版本适用性。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -83,9 +83,9 @@ MacOS 设备功能配置的配置文件。
 |contentCachingPeerListenRanges|[ipRange](../resources/intune-shared-iprange.md) 集合|内容缓存将用于侦听对等缓存的自定义 IP 范围列表。 该集合最多可包含 500 个元素。|
 |contentCachingPeerFilterRanges|[ipRange](../resources/intune-shared-iprange.md) 集合|自定义 IP 范围内容缓存将用于查询对等缓存中的内容的列表。 该集合最多可包含 500 个元素。|
 |contentCachingParentSelectionPolicy|[macOSContentCachingParentSelectionPolicy](../resources/intune-deviceconfig-macoscontentcachingparentselectionpolicy.md)|确定内容缓存服务器选择父项（如果存在多个父项）的方法。 可取值为：`notConfigured`、`roundRobin`、`firstAvailable`、`urlPathHash`、`random`、`stickyAvailable`。|
-|contentCachingParents|字符串集合|表示父内容缓存的 IP 地址列表。|
+|contentCachingParents|String collection|表示父内容缓存的 IP 地址列表。|
 |contentCachingLogClientIdentities|Boolean|启用请求缓存内容的客户端的 IP 地址和端口的日志记录。|
-|contentCachingPublicRanges|[ipRange](../resources/intune-shared-iprange.md) 集合|Apple 的内容缓存服务应该用于将客户端与内容缓存相匹配的自定义 IP 范围的列表。 该集合最多可包含 500 个元素。|
+|contentCachingPublicRanges|[ipRange](../resources/intune-shared-iprange.md) 集合|Apple 的内容缓存服务应该用于将客户端与内容缓存匹配的自定义 IP 范围列表。 该集合最多可包含 500 个元素。|
 |contentCachingBlockDeletion|Boolean|防止内容缓存清除内容以释放其他应用的磁盘空间。|
 |contentCachingShowAlerts|Boolean|将内容缓存警报显示为系统通知。|
 |contentCachingKeepChingke|Boolean|如果启用了内容缓存，则防止设备休眠。|
@@ -239,7 +239,18 @@ MacOS 设备功能配置的配置文件。
     "activeDirectorySiteCode": "String",
     "passwordEnableLocalSync": true,
     "blockActiveDirectorySiteAutoDiscovery": true,
-    "passwordChangeUrl": "String"
+    "passwordChangeUrl": "String",
+    "modeCredentialUsed": "String",
+    "usernameLableCustom": "String",
+    "userSetupDelayed": true,
+    "signInHelpText": "String",
+    "kerberosAppsInBundleIdACLIncluded": true,
+    "managedAppsInBundleIdACLIncluded": true,
+    "credentialsCacheMonitored": true,
+    "singleSignOnExtensionPreferredKDCs": [
+      "String"
+    ],
+    "tlsForLDAPRequired": true
   },
   "contentCachingEnabled": true,
   "contentCachingType": "String",

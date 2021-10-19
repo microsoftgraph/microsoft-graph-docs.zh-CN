@@ -2,15 +2,15 @@
 title: 获取 androidForWorkMobileAppConfiguration
 description: 读取 androidForWorkMobileAppConfiguration 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ade684b4968b179d6dcdf5eb82a1c3ae601907f4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fe61d375d87cf24ed21e0a2024b66d6bc1271acb
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59088918"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60489414"
 ---
 # <a name="get-androidforworkmobileappconfiguration"></a>获取 androidForWorkMobileAppConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "59088918"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
+|应用程序|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 846
+Content-Length: 881
 
 {
   "value": {
@@ -94,7 +94,8 @@ Content-Length: 846
         "action": "autoGrant"
       }
     ],
-    "profileApplicability": "androidWorkProfile"
+    "profileApplicability": "androidWorkProfile",
+    "connectedAppsEnabled": true
   }
 }
 ```

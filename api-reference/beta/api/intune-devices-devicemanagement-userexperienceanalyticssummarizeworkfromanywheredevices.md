@@ -2,15 +2,15 @@
 title: userExperienceAnalyticsSummarizeWorkFromAnywhereDevices 函数
 description: 尚未记录
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: eacf83b2871fbc67d6cbdea8cb909d16e6b81bdf
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b9ad5256f5c7110f2653ffaca6edc1710f3594bd
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59042359"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60488977"
 ---
 # <a name="userexperienceanalyticssummarizeworkfromanywheredevices-function"></a>userExperienceAnalyticsSummarizeWorkFromAnywhereDevices 函数
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsSum
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 998
+Content-Length: 1355
 
 {
   "value": {
@@ -89,7 +89,17 @@ Content-Length: 998
     "cloudIdentityDevicesSummary": {
       "@odata.type": "microsoft.graph.userExperienceAnalyticsCloudIdentityDevicesSummary",
       "deviceWithoutCloudIdentityCount": 15
-    }
+    },
+    "totalDevices": 12,
+    "coManagedDevices": 0,
+    "intuneDevices": 13,
+    "tenantAttachDevices": 3,
+    "windows10Devices": 0,
+    "windows10DevicesWithoutTenantAttach": 3,
+    "unsupportedOSversionDevices": 11,
+    "devicesWithoutCloudIdentity": 11,
+    "devicesNotAutopilotRegistered": 13,
+    "devicesWithoutAutopilotProfileAssigned": 6
   }
 }
 ```

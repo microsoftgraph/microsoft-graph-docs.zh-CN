@@ -2,15 +2,15 @@
 title: 列出 androidForWorkApps
 description: 列出 androidForWorkApp 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 572075a5dad6176c0816d8e3547301e1c834079c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7a93b59e36a0a64dd3ce420f9e58d0b3124350d4
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59066140"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60490818"
 ---
 # <a name="list-androidforworkapps"></a>列出 androidForWorkApps
 
@@ -29,7 +29,7 @@ ms.locfileid: "59066140"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
+|应用程序|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

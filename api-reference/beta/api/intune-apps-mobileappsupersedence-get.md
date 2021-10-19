@@ -2,15 +2,15 @@
 title: 获取 mobileAppSupersedence
 description: 读取 mobileAppSupersedence 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e4142fb3bb2bb3bbee6418a9446bac1d20d1e60f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2bcadbf06c7bfab19c2bd5c743beed5ace769f0a
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59066070"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60487567"
 ---
 # <a name="get-mobileappsupersedence"></a>获取 mobileAppSupersedence
 
@@ -29,7 +29,7 @@ ms.locfileid: "59066070"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
+|应用程序|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

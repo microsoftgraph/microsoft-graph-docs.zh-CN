@@ -1,0 +1,122 @@
+---
+title: deviceManagementConfigurationRedirectSettingDefinition 资源类型
+description: 尚未记录
+author: dougeby
+localization_priority: Normal
+ms.prod: intune
+doc_type: resourcePageType
+ms.openlocfilehash: 6915159797cd325839883564660eefd261775b38
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60493794"
+---
+# <a name="devicemanagementconfigurationredirectsettingdefinition-resource-type"></a>deviceManagementConfigurationRedirectSettingDefinition 资源类型
+
+命名空间：microsoft.graph
+
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+
+尚未记录
+
+
+继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)
+
+## <a name="methods"></a>方法
+|方法|返回类型|说明|
+|:---|:---|:---|
+|[列出 deviceManagementConfigurationRedirectSettingDefinitions](../api/intune-deviceconfigv2-devicemanagementconfigurationredirectsettingdefinition-list.md)|[deviceManagementConfigurationRedirectSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationredirectsettingdefinition.md) 集合|列出 [deviceManagementConfigurationRedirectSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationredirectsettingdefinition.md) 对象的属性和关系。|
+|[获取 deviceManagementConfigurationRedirectSettingDefinition](../api/intune-deviceconfigv2-devicemanagementconfigurationredirectsettingdefinition-get.md)|[deviceManagementConfigurationRedirectSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationredirectsettingdefinition.md)|读取 [deviceManagementConfigurationRedirectSettingDefinition 对象的属性和](../resources/intune-deviceconfigv2-devicemanagementconfigurationredirectsettingdefinition.md) 关系。|
+|[创建 deviceManagementConfigurationRedirectSettingDefinition](../api/intune-deviceconfigv2-devicemanagementconfigurationredirectsettingdefinition-create.md)|[deviceManagementConfigurationRedirectSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationredirectsettingdefinition.md)|创建新的 [deviceManagementConfigurationRedirectSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationredirectsettingdefinition.md) 对象。|
+|[删除 deviceManagementConfigurationRedirectSettingDefinition](../api/intune-deviceconfigv2-devicemanagementconfigurationredirectsettingdefinition-delete.md)|无|删除 [deviceManagementConfigurationRedirectSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationredirectsettingdefinition.md)。|
+|[更新 deviceManagementConfigurationRedirectSettingDefinition](../api/intune-deviceconfigv2-devicemanagementconfigurationredirectsettingdefinition-update.md)|[deviceManagementConfigurationRedirectSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationredirectsettingdefinition.md)|更新 [deviceManagementConfigurationRedirectSettingDefinition 对象](../resources/intune-deviceconfigv2-devicemanagementconfigurationredirectsettingdefinition.md) 的属性。|
+
+## <a name="properties"></a>属性
+|属性|类型|说明|
+|:---|:---|:---|
+|适用性|[deviceManagementConfigurationSettingApplicability](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingapplicability.md)|有关哪些设备设置适用于从[deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)继承的详细信息|
+|accessTypes|[deviceManagementConfigurationSettingAccessTypes](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingaccesstypes.md)|读取/写入访问模式的设置 继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)。 可取值为：`none`、`add`、`copy`、`delete`、`get`、`replace` 或 `execute`。|
+|keywords|String 集合|要搜索上设置的令牌 继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)|
+|infoUrls|String collection|有关设置详细信息的链接列表，可在 Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)找到|
+|occurrence|[deviceManagementConfigurationSettingOccurrence](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingoccurrence.md)|指示设置是否必需。继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)|
+|baseUri|String|基本云解决方案提供商路径 继承 [自 deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)|
+|offsetUri|String|从基本位置偏移 CSP 路径 继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)|
+|rootDefinitionId|String|根设置定义（如果该设置是子设置）。 继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)|
+|categoryId|String|指定在指定的配置服务提供程序中配置设置的区域组 (CSP) 继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)|
+|settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|设置类型，例如，配置和合规性 继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)。 可取值为：`none`、`configuration`。|
+|uxBehavior|[deviceManagementConfigurationControlType](../resources/intune-deviceconfigv2-devicemanagementconfigurationcontroltype.md)|设置 UX 中的控件类型表示形式 继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)。 可取值为：`default`、`dropdown`、`smallTextBox`、`largeTextBox`、`toggle`、`multiheaderGrid` 或 `contextPane`。|
+|visibility|[deviceManagementConfigurationSettingVisibility](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvisibility.md)|将可见性范围设置为 UX 继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)。 可取值为：`none`、`settingsCatalog`、`template`。|
+|referredSettingInformationList|[deviceManagementConfigurationReferredSettingInformation](../resources/intune-deviceconfigv2-devicemanagementconfigurationreferredsettinginformation.md) 集合|引用的设置信息的列表。 继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)|
+|id|String|项目的标识符 继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)|
+|说明|String|项目说明 继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)|
+|helpText|String|项目的帮助文本 继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)|
+|name|String|项目名称 继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)|
+|displayName|String|项目的显示名称 继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)|
+|version|String|项目版本 继承自 [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)|
+|deepLink|String|指向 Intune 控制台中必须管理功能支持的特定位置的深层链接。|
+|redirectMessage|String|一条消息，说明单击链接会将用户重定向到支持的页面以管理设置。|
+|redirectReason|String|指示将用户重定向到控制台中的备用位置的原因。  例如：WiFi 配置文件在设置目录中不受支持，必须使用模板策略创建。|
+
+## <a name="relationships"></a>关系
+无
+
+## <a name="json-representation"></a>JSON 表示形式
+下面是资源的 JSON 表示形式。
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.deviceManagementConfigurationRedirectSettingDefinition"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.deviceManagementConfigurationRedirectSettingDefinition",
+  "applicability": {
+    "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingApplicability",
+    "description": "String",
+    "platform": "String",
+    "deviceMode": "String",
+    "technologies": "String"
+  },
+  "accessTypes": "String",
+  "keywords": [
+    "String"
+  ],
+  "infoUrls": [
+    "String"
+  ],
+  "occurrence": {
+    "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingOccurrence",
+    "minDeviceOccurrence": 1024,
+    "maxDeviceOccurrence": 1024
+  },
+  "baseUri": "String",
+  "offsetUri": "String",
+  "rootDefinitionId": "String",
+  "categoryId": "String",
+  "settingUsage": "String",
+  "uxBehavior": "String",
+  "visibility": "String",
+  "referredSettingInformationList": [
+    {
+      "@odata.type": "microsoft.graph.deviceManagementConfigurationReferredSettingInformation",
+      "settingDefinitionId": "String"
+    }
+  ],
+  "id": "String (identifier)",
+  "description": "String",
+  "helpText": "String",
+  "name": "String",
+  "displayName": "String",
+  "version": "String",
+  "deepLink": "String",
+  "redirectMessage": "String",
+  "redirectReason": "String"
+}
+```
+
+
+

@@ -2,15 +2,15 @@
 title: 删除 mdmWindowsInformationProtectionPolicyPolicySetItem
 description: 删除 mdmWindowsInformationProtectionPolicyPolicySetItem。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6a8412487a09455468a2cae0b19ef786813a7796
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a35801e1af5942d6d2517431afbf81b2fbf9b53d
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59076675"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60487343"
 ---
 # <a name="delete-mdmwindowsinformationprotectionpolicypolicysetitem"></a>删除 mdmWindowsInformationProtectionPolicyPolicySetItem
 
@@ -29,7 +29,7 @@ ms.locfileid: "59076675"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

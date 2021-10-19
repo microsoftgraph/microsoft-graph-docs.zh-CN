@@ -2,15 +2,15 @@
 title: 列出 mobileAppCategories
 description: 列出 mobileAppCategory 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5a8d00bd8e75f1ef663cf77c9cadcbc2b2dfeed7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 94ee78db4a1a0bfb57bf15852b53b1e26ad7f3c6
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59071201"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60486801"
 ---
 # <a name="list-mobileappcategories"></a>列出 mobileAppCategories
 
@@ -29,7 +29,7 @@ ms.locfileid: "59071201"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
+|应用程序|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

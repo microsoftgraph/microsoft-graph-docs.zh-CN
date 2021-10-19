@@ -2,15 +2,15 @@
 title: getRemoteAssistanceSessionsReport 操作
 description: 尚未记录
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 384e00bcc23114042538dc2625117b75b454f898
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e4b61c88f76137fb393aa4512b3712caf0dcebed
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59081848"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60483847"
 ---
 # <a name="getremoteassistancesessionsreport-action"></a>getRemoteAssistanceSessionsReport 操作
 
@@ -29,7 +29,7 @@ ms.locfileid: "59081848"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|应用程序|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -51,7 +51,7 @@ POST /deviceManagement/reports/getRemoteAssistanceSessionsReport
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|描述|
+|属性|类型|说明|
 |:---|:---|:---|
 |name|String|尚未记录|
 |select|String collection|尚未记录|

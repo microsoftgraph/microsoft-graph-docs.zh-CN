@@ -2,15 +2,15 @@
 title: getComanagementEligibleDevicesSummary 函数
 description: 尚未记录
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 67f7a4af113329b31f3b07ca5dbf2b710a29b2d6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5026c0bf33aa593a1c7534375f3bc95911398cef
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59042373"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60488281"
 ---
 # <a name="getcomanagementeligibledevicessummary-function"></a>getComanagementEligibleDevicesSummary 函数
 
@@ -29,7 +29,7 @@ ms.locfileid: "59042373"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

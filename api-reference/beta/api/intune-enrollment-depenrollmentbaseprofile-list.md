@@ -2,15 +2,15 @@
 title: 列出 depEnrollmentBaseProfiles
 description: 列出 depEnrollmentBaseProfile 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f7e2d3a1e30cfc0ec52c2b62f5f3f90be13c118f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fd7727b5108f11be266ae7adddcb744995827451
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59116561"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60493435"
 ---
 # <a name="list-depenrollmentbaseprofiles"></a>列出 depEnrollmentBaseProfiles
 
@@ -29,7 +29,7 @@ ms.locfileid: "59116561"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|应用程序|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

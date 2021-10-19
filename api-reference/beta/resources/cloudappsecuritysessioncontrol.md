@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: cb199328c95d1f60cd1149f7aa5a686218b0ee76
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 689b065a6156f009d2425a294aaec8e49c4bee93
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59507807"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60488610"
 ---
 # <a name="cloudappsecuritysessioncontrol-resource-type"></a>cloudAppSecuritySessionControl 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "59507807"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |isEnabled     |Boolean      | 指定是否启用会话控件。 |
-|cloudAppSecurityType|cloudAppSecuritySessionControlType| 可取值为：`mcasConfigured`、`monitorOnly`、`blockDownloads`。 若要了解有关这些值的信息，请为特别推荐的应用 [部署条件访问应用控制](https://docs.microsoft.com/en-us/cloud-app-security/proxy-deployment-aad#step-1--configure-your-idp-to-work-with-cloud-app-security)。 |
+|cloudAppSecurityType|cloudAppSecuritySessionControlType| 可取值为：`mcasConfigured`、`monitorOnly`、`blockDownloads`。 若要了解有关这些值的信息，请为特别推荐的应用 [部署条件访问应用控制](https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad#step-1--configure-your-idp-to-work-with-cloud-app-security)。 |
 
 ## <a name="relationships"></a>关系
 

@@ -2,15 +2,15 @@
 title: 创建 microsoftTunnelServer
 description: 创建新的 microsoftTunnelServer 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4f35257914dd251a31ce0fb2c5b92eb33190068e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9b1030ed45e4ac30de34535a5361dc1e1d425f18
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59030730"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60493238"
 ---
 # <a name="create-microsofttunnelserver"></a>创建 microsoftTunnelServer
 
@@ -27,7 +27,7 @@ ms.locfileid: "59030730"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|DeviceManagementConfiguration.ReadWrite.All|
 

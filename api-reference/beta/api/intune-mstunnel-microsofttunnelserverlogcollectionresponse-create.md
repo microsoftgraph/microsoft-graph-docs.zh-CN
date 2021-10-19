@@ -2,15 +2,15 @@
 title: 创建 microsoftTunnelServerLogCollectionResponse
 description: 创建新的 microsoftTunnelServerLogCollectionResponse 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a5d0e3ec207d97fd3a7d9c54aed9504f504490ab
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 376334679269bcfe34bf79af9925a886071023bb
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59041694"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60487973"
 ---
 # <a name="create-microsofttunnelserverlogcollectionresponse"></a>创建 microsoftTunnelServerLogCollectionResponse
 
@@ -27,7 +27,7 @@ ms.locfileid: "59041694"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|DeviceManagementConfiguration.ReadWrite.All|
 

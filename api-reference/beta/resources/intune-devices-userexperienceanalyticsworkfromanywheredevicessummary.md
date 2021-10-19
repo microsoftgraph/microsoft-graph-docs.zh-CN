@@ -2,15 +2,15 @@
 title: userExperienceAnalyticsWorkFromAnywhereDevicesSummary 资源类型
 description: 用户体验分析从 Anywhere 指标设备摘要工作。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c3f34ed09d9012f13987aed291ff632f16d064c6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8be606cb2cc291adf878b5194c4b9063d993464e
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59046881"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60481053"
 ---
 # <a name="userexperienceanalyticsworkfromanywheredevicessummary-resource-type"></a>userExperienceAnalyticsWorkFromAnywhereDevicesSummary 资源类型
 
@@ -29,6 +29,16 @@ ms.locfileid: "59046881"
 |cloudManagementDevicesSummary|[userExperienceAnalyticsCloudManagementDevicesSummary](../resources/intune-devices-userexperienceanalyticscloudmanagementdevicessummary.md)|用户体验从任意位置云管理设备摘要工作。|
 |windows10DevicesSummary|[userExperienceAnalyticsWindows10DevicesSummary](../resources/intune-devices-userexperienceanalyticswindows10devicessummary.md)|用户体验分析从任意位置到设备Windows 10工作。|
 |cloudIdentityDevicesSummary|[userExperienceAnalyticsCloudIdentityDevicesSummary](../resources/intune-devices-userexperienceanalyticscloudidentitydevicessummary.md)|用户体验分析从任意位置云标识设备摘要工作。|
+|totalDevices|Int32|设备总数。 有效值 -2147483648 to 2147483647|
+|coManagedDevices|Int32|共同管理的设备的总数。 有效值 -2147483648 to 2147483647|
+|intuneDevices|Int32|未注册 autopilot 的 intune 设备计数。 有效值 -2147483648 to 2147483647|
+|tenantAttachDevices|Int32|租户附加设备总数。 有效值 -2147483648 to 2147483647|
+|windows10Devices|Int32|Windows 10 设备计数。 有效值 -2147483648 to 2147483647|
+|windows10DevicesWithoutTenantAttach|Int32|Intune 和 Comanaged 的 Windows 10 设备计数。 有效值 -2147483648 to 2147483647|
+|unsupportedOSversionDevices|Int32|操作系统Windows 10不支持的设备数量。 有效值 -2147483648 to 2147483647|
+|devicesWithoutCloudIdentity|Int32|非云标识的设备计数。 有效值 -2147483648 to 2147483647|
+|devicesNotAutopilotRegistered|Int32|未注册 autopilot 的 intune 设备计数。 有效值 -2147483648 to 2147483647|
+|devicesWithoutAutopilotProfileAssigned|Int32|未分配 autopilot 配置文件的 intune 设备计数。 有效值 -2147483648 to 2147483647|
 
 ## <a name="relationships"></a>关系
 无
@@ -62,7 +72,17 @@ ms.locfileid: "59046881"
   "cloudIdentityDevicesSummary": {
     "@odata.type": "microsoft.graph.userExperienceAnalyticsCloudIdentityDevicesSummary",
     "deviceWithoutCloudIdentityCount": 1024
-  }
+  },
+  "totalDevices": 1024,
+  "coManagedDevices": 1024,
+  "intuneDevices": 1024,
+  "tenantAttachDevices": 1024,
+  "windows10Devices": 1024,
+  "windows10DevicesWithoutTenantAttach": 1024,
+  "unsupportedOSversionDevices": 1024,
+  "devicesWithoutCloudIdentity": 1024,
+  "devicesNotAutopilotRegistered": 1024,
+  "devicesWithoutAutopilotProfileAssigned": 1024
 }
 ```
 

@@ -2,15 +2,15 @@
 title: 获取 targetedManagedAppPolicyAssignment
 description: 读取 targetedManagedAppPolicyAssignment 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c2a814ad2c29d82e2c9069f7b2cb283ef870e49d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7d2574d83211c66e2c08155e2c57f43791aceaf2
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59018073"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60493246"
 ---
 # <a name="get-targetedmanagedapppolicyassignment"></a>获取 targetedManagedAppPolicyAssignment
 
@@ -29,7 +29,7 @@ ms.locfileid: "59018073"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
+|应用程序|DeviceManagementApps.Read.All、DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

@@ -2,15 +2,15 @@
 title: 获取 managedDeviceOverview
 description: 读取 managedDeviceOverview 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 141a0c2d51f1f4945912bb151ea6438e4a9cc524
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f52617f6d99950ed66a28c8ecc4e822dc4d7d77e
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59102876"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60489855"
 ---
 # <a name="get-manageddeviceoverview"></a>获取 managedDeviceOverview
 
@@ -29,7 +29,7 @@ ms.locfileid: "59102876"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

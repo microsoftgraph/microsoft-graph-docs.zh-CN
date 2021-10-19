@@ -2,15 +2,15 @@
 title: 获取 deviceCustomAttributeShellScript
 description: 读取 deviceCustomAttributeShellScript 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2f23d1b54c4f20d85101847d82077f71f0ecaa94
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 973ee92babafd0b5783305e77ef0b62fdafed3a5
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59065552"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60491400"
 ---
 # <a name="get-devicecustomattributeshellscript"></a>获取 deviceCustomAttributeShellScript
 
@@ -29,7 +29,7 @@ ms.locfileid: "59065552"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.Read.All、DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

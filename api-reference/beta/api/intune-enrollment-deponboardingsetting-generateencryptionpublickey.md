@@ -2,15 +2,15 @@
 title: generateEncryptionPublicKey 操作
 description: 生成公钥以用于加密 Apple 设备注册计划令牌
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3ab3122994a09fdda15f7bc438eaa1ad733a8a36
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3c50167e606b2ac157fbda27e5cf271f46a26406
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59124852"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60490580"
 ---
 # <a name="generateencryptionpublickey-action"></a>generateEncryptionPublicKey 操作
 
@@ -29,7 +29,7 @@ ms.locfileid: "59124852"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|应用程序|DeviceManagementServiceConfig.Read.All、DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

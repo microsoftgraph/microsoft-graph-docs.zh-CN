@@ -2,15 +2,15 @@
 title: iosDeviceFeaturesConfiguration 资源类型
 description: iOS 设备功能配置的配置文件。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 193dd2f9692b0b840fa0421e17d39423edf20148
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 447215e3ada07a5768fd75d4c38c2b1cf7076097
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59101455"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60486866"
 ---
 # <a name="iosdevicefeaturesconfiguration-resource-type"></a>iosDeviceFeaturesConfiguration 资源类型
 
@@ -39,7 +39,7 @@ iOS 设备功能配置的配置文件。
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|指示基础设备配置是否支持分配范围标记。 当此值为 false 且实体对范围用户不可见时，不允许分配给 ScopeTags 属性。 这适用于在 Silverlight 中创建的旧版策略，可通过在 Azure 门户中删除和重新创建策略来解决。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|此策略的操作系统版本适用性。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -58,7 +58,7 @@ iOS 设备功能配置的配置文件。
 |homeScreenGridHeight|Int32|获取或设置配置 iOS 主屏幕布局设置时要呈现的行数。 如果配置此值，还必须配置 homeScreenGridWidth。|
 |notificationSettings|[iosNotificationSettings](../resources/intune-deviceconfig-iosnotificationsettings.md) 集合|每个捆绑 ID 的通知设置。仅适用于监督模式下的设备（iOS 9.3 及更高版本）。 该集合最多可包含 500 个元素。|
 |singleSignOnSettings|[iosSingleSignOnSettings](../resources/intune-deviceconfig-iossinglesignonsettings.md)|Kerberos 登录设置，使接收设备上的应用能够顺利进行身份验证。|
-|wallpaperDisplayLocation|[iosWallpaperDisplayLocation](../resources/intune-deviceconfig-ioswallpaperdisplaylocation.md)|墙纸显示位置说明器。 可取值为：`notConfigured`、`lockScreen`、`homeScreen`、`lockAndHomeScreens`。|
+|wallpaperDisplayLocation|[iosWallpaperDisplayLocation](../resources/intune-deviceconfig-ioswallpaperdisplaylocation.md)|墙纸显示位置说明器。 可能的值是：`notConfigured`、`lockScreen`、`homeScreen`、`lockAndHomeScreens`。|
 |wallpaperImage|[mimeContent](../resources/intune-shared-mimecontent.md)|墙纸图像必须为 PNG 或 JPEG 格式。 它需要具有 iOS 8 或更高版本的受监督设备。|
 |singleSignOnExtension|[singleSignOnExtension](../resources/intune-deviceconfig-singlesignonextension.md)|获取或设置单一登录扩展配置文件。 已弃用：改为使用 IOSSingleSignOnExtension。|
 |iosSingleSignOnExtension|[iosSingleSignOnExtension](../resources/intune-deviceconfig-iossinglesignonextension.md)|获取或设置单一登录扩展配置文件。|
@@ -263,7 +263,9 @@ iOS 设备功能配置的配置文件。
     "activeDirectorySiteCode": "String",
     "passwordEnableLocalSync": true,
     "blockActiveDirectorySiteAutoDiscovery": true,
-    "passwordChangeUrl": "String"
+    "passwordChangeUrl": "String",
+    "signInHelpText": "String",
+    "managedAppsInBundleIdACLIncluded": true
   },
   "iosSingleSignOnExtension": {
     "@odata.type": "microsoft.graph.iosKerberosSingleSignOnExtension",
@@ -293,7 +295,9 @@ iOS 设备功能配置的配置文件。
     "activeDirectorySiteCode": "String",
     "passwordEnableLocalSync": true,
     "blockActiveDirectorySiteAutoDiscovery": true,
-    "passwordChangeUrl": "String"
+    "passwordChangeUrl": "String",
+    "signInHelpText": "String",
+    "managedAppsInBundleIdACLIncluded": true
   }
 }
 ```
