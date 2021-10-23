@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 71fcf507370286328d8027943fc8c7d23abf4aa9
-ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
+ms.openlocfilehash: 092c4d9f72b282d487bca24d61fbb10b47c451fd
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "59996257"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60562778"
 ---
 ```javascript
 
@@ -17,6 +17,7 @@ const client = Client.init(options);
 
 let organizationalBranding = await client.api('/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding')
     .version('beta')
+    .header('Accept-Language','0')
     .get();
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 2970c016ee0bbf8b16a8798387c773b2e17006abcb1283fe56cb5cf42e426f85
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ac0acc0a606f7104904ff600534d1960c9a30943
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57158677"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60562770"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-await client.api('/me/drive/root/workbook/worksheets/{id}/pivotTables/refreshAll')
+await client.api('/me/drive/root/workbook/worksheets/{id|name}/pivotTables/refreshAll')
     .post();
 
 ```
