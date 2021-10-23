@@ -5,12 +5,12 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9ee4f8bf167016d3ed0945723bbde676db6b8bf4
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: bc1f2e22feaa62566e595d4cbbf8cb95d1ede920
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60289789"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60561554"
 ---
 # <a name="update-organizationalbranding"></a>Update organizationalBranding
 命名空间：microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "60289789"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Organization.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -52,11 +52,11 @@ PATCH /organization/{organizationId}/branding
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| backgroundColor | 字符串 | 将出现在低带宽连接中的背景图像上的颜色。 我们建议你使用横幅徽标的主要颜色或你的组织颜色。 以十六进制格式指定此参数，例如，white 为 `#FFFFFF` 。 |
+| backgroundColor | String | 将出现在低带宽连接中的背景图像上的颜色。 我们建议你使用横幅徽标的主要颜色或你的组织颜色。 以十六进制格式指定此参数，例如，white 为 `#FFFFFF` 。 |
 | backgroundImage | Stream | 显示为登录页背景的图像。 允许的类型是 PNG 或 JPEG，不小于 300 KB 且不超过 1920 × 1080 像素。 较小的图像将降低带宽要求，并加快页面加载速度。 |
-| bannerLogo | Stream | 显示在登录页上的公司徽标的横幅版本。 允许的类型为 PNG 或 JPEG，不超过 36 × 245 像素。 我们建议使用透明图像，徽标周围没有填充。 |
+| bannerLogo | Stream | 显示在登录页上的公司徽标的横幅版本。 允许的类型是 PNG 或 JPEG 不超过 36 × 245 像素。 我们建议使用透明图像，徽标周围没有填充。 |
 | signInPageText | String | 显示在登录框底部的文本。 您可以使用此信息来传达其他信息，例如电话号码到技术支持或法律声明。 此文本必须是 Unicode 且不超过 1024 个字符。 |
-| squareLogo | Stream | 显示在 OO) BE Windows 10 OOBE (和启用 Windows Autopilot 进行部署时 (公司徽标的正方形版本。 允许的类型为 PNG 或 JPEG，大小不超过 240 x 240 像素和不超过 10 KB。 我们建议使用透明图像，徽标周围没有填充。 |
+| squareLogo | Stream | 在 OOBE Windows 10 OOBE (和启用 Windows Lot 进行部署时) 显示公司徽标的正方形版本。 允许的类型为 PNG 或 JPEG，大小不超过 240 x 240 像素和不超过 10 KB。 我们建议使用透明图像，徽标周围没有填充。 |
 | usernameHintText | String | 在登录屏幕的用户名文本框中显示为提示的字符串。 此文本必须是不带链接或代码的 Unicode，并且不能超过 64 个字符。 |
 
 
@@ -129,6 +129,8 @@ HTTP/1.1 204 No Content
 下面展示了示例请求。
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_organizationalbrandinglocaliation_2"
@@ -140,6 +142,16 @@ Content-Type: image/jpeg
 
 <Image>
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-organizationalbrandinglocaliation-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-organizationalbrandinglocaliation-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### <a name="response"></a>响应

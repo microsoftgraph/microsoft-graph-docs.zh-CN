@@ -1,16 +1,16 @@
 ---
 title: 更新 externalItem
 description: 更新 externalitem 的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 985580042972b5ab649592467ff18b3e574df6e5
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: d4e53891336c6a32d932cce280605391aeefba92
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53466977"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60558565"
 ---
 # <a name="update-externalitem"></a>更新 externalItem
 
@@ -28,7 +28,7 @@ ms.locfileid: "53466977"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持。 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All |
+| Application                            | ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -80,7 +80,7 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 
 下面展示了示例请求。
 
-# <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_externalitem",
@@ -88,7 +88,7 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/connections/contosohr/items/TSP228082938
+PATCH https://graph.microsoft.com/beta/external/connections/contosohr/items/TSP228082938
 Content-type: application/json
 
 {
@@ -102,23 +102,6 @@ Content-type: application/json
   ]
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-externalitem-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-externalitem-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-externalitem-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-externalitem-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 <!-- markdownlint-disable MD024 -->

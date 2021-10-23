@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 4a7ee4b656bf3552dcfa3c45fbd76bb541250fad
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fe21b9408a8a96b16c25a144e22967dcf4ce0ebd
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59029589"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60558915"
 ---
 # <a name="update-externalitem"></a>更新 externalItem
 命名空间：microsoft.graph.externalConnectors
@@ -26,7 +26,7 @@ ms.locfileid: "59029589"
 |:---|:---|
 |委派（工作或学校帐户）|不适用|
 |委派（个人 Microsoft 帐户）|不适用|
-|应用程序| ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All|
+|Application| ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -40,7 +40,7 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 
 | 参数     | 类型   | 说明                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| connection-id | 字符串 | `id`包含[externalConnection 的 属性](../resources/externalconnectors-externalconnection.md) |
+| connection-id | string | `id`包含[externalConnection 的 属性](../resources/externalconnectors-externalconnection.md) |
 | item-id       | string | 由开发人员提供的 `id` [externalItem 属性](../resources/externalconnectors-externalitem.md)。 |
 
 ## <a name="request-headers"></a>请求标头
@@ -76,7 +76,7 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 
 ### <a name="request"></a>请求
 
-# <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_externalitem",
@@ -84,7 +84,7 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/v1.0/connections/contosohr/items/TSP228082938
+PATCH https://graph.microsoft.com/v1.0/external/connections/contosohr/items/TSP228082938
 Content-Type: application/json
 Content-length: 360
 
@@ -98,23 +98,6 @@ Content-length: 360
   ]
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-externalitem-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-externalitem-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-externalitem-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-externalitem-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 

@@ -2,22 +2,22 @@
 title: 创建术语
 description: 创建新的术语对象。
 author: mohitpcad
-localization_priority: Normal
-ms.prod: Sharepoint
+ms.localizationpriority: medium
+ms.prod: taxonomy
 doc_type: apiPageType
-ms.openlocfilehash: 06d1d0179723a068108672f402c2b13f1680cf43
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: d91ad5dc9f813ff3e06ddfe5da99c61872b911bd
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874296"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60560749"
 ---
 # <a name="create-term"></a>创建术语
 命名空间：microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的 [术语对象](../resources/termstore-term.md) 。
+创建新的 [术语](../resources/termstore-term.md) 对象。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -26,7 +26,7 @@ ms.locfileid: "49874296"
 |:---|:---|
 |委派（工作或学校帐户） | TermStore.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 
 ## <a name="http-request"></a>HTTP 请求
@@ -51,7 +51,7 @@ POST /termStore/sets/{setId}/terms/{termId}/children
 
 下表显示创建术语时所需的 [属性](../resources/termstore-term.md)。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |labels|[microsoft.graph.termStore.localizedLabel](../resources/termstore-localizedlabel.md) 集合|要创建的术语的标签|
 
@@ -59,7 +59,7 @@ POST /termStore/sets/{setId}/terms/{termId}/children
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `201 Created` 正文中返回响应代码[](../resources/termstore-term.md)和术语对象。
+如果成功，此方法在响应正文中返回 响应代码 `201 Created` 和术语对象。 [](../resources/termstore-term.md)
 
 ## <a name="examples"></a>示例
 
@@ -72,7 +72,7 @@ POST /termStore/sets/{setId}/terms/{termId}/children
 } -->
 
 ``` http
-POST https://graph.microsoft.com/beta/termStore/sets/{setId}/terms
+POST https://graph.microsoft.com/beta/termStore/sets/{setId}/children
 Content-Type: application/json
 Content-length: 366
 

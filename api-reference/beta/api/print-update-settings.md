@@ -2,15 +2,15 @@
 title: 更新 printSettings
 description: 更新通用打印服务的租户范围设置。
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 000e8513bd4c1bfff047d50dad1fd8d1dc7fa4fa
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 3529fb345c9c322c3e63c2519f2f6e15cfc75525
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787607"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "60560819"
 ---
 # <a name="update-printsettings"></a>更新 printSettings
 
@@ -21,7 +21,7 @@ ms.locfileid: "52787607"
 更新通用打印服务的租户范围设置。
 
 ## <a name="permissions"></a>权限
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 若要使用通用打印服务，除了下表中列出的权限之外，用户或应用的租户还必须具有活动的通用打印订阅。 登录的用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
 
@@ -29,7 +29,7 @@ ms.locfileid: "52787607"
 |:---------------|:--------------------------------------------|
 |委派（工作或学校帐户）| PrintSettings.ReadWrite.All |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|Application|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -48,7 +48,7 @@ PATCH /print/settings
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|documentConversionEnabled|Boolean|指定是否对租户启用文档转换。 如果启用文档转换，则通用打印服务将自动将文档转换为与打印机模式兼容的格式 (例如，XPS 转换为 PDF) 进行打印。|
+|documentConversionEnabled|布尔值|指定是否对租户启用文档转换。 如果启用文档转换，通用打印服务将自动将文档转换为与打印机模式兼容的格式 (例如，XPS 转换为 PDF) 时。|
 
 ## <a name="response"></a>响应
 如果成功，此方法将返回 `204 No Content` 响应代码和空响应正文。

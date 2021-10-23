@@ -1,16 +1,16 @@
 ---
 title: 获取设备
 description: 获取 device 对象的属性和关系。
-author: spunukol
+author: sandeo-MSFT
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 1d05a288ddaefc4b2e0ed8496586dd63cbc786f3
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: 9c5f578906c9ee073dbeda154b766eea57f73303
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60289019"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60560077"
 ---
 # <a name="get-device"></a>获取设备
 
@@ -25,7 +25,7 @@ ms.locfileid: "60289019"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Device.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Device.Read.All、Device.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
+|Application | Device.Read.All、Device.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -49,8 +49,12 @@ GET /devices/{id}
 ## <a name="response"></a>响应
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [device](../resources/device.md) 对象。
-## <a name="example"></a>示例
-### <a name="request"></a>请求
+## <a name="examples"></a>示例
+
+### <a name="example-1-get-a-device"></a>示例 1：获取设备
+
+#### <a name="request"></a>请求
+
 下面展示了示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -79,7 +83,7 @@ GET https://graph.microsoft.com/v1.0/devices/000005c3-b7a6-4c61-89fc-80bf5ccfc36
 
 ---
 
-### <a name="response"></a>响应
+#### <a name="response"></a>响应
 下面展示了示例响应。 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
@@ -100,6 +104,56 @@ Content-type: application/json
   "id": "000005c3-b7a6-4c61-89fc-80bf5ccfc366",
   "operatingSystem":"Windows",
   "operatingSystemVersion":"10.0.19043.1165"
+}
+```
+
+### <a name="example-2-get-a-device-and-return-only-its-id-and-extensionattributes-properties"></a>示例 2：获取设备并仅返回其 id 和 extensionAttributes 属性
+
+#### <a name="request"></a>请求
+
+以下请求检索 **设备的 id** 和 **extensionAttributes** 属性。
+
+<!-- {
+  "blockType": "request",
+  "name": "get_device_select"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/devices/6a59ea83-02bd-468f-a40b-f2c3d1821983?$select=id,extensionAttributes
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.device"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#devices(id,extensionAttributes)/$entity",
+    "id": "6a59ea83-02bd-468f-a40b-f2c3d1821983",
+    "extensionAttributes": {
+        "extensionAttribute1": "BYOD-Device",
+        "extensionAttribute2": null,
+        "extensionAttribute3": null,
+        "extensionAttribute4": null,
+        "extensionAttribute5": null,
+        "extensionAttribute6": null,
+        "extensionAttribute7": null,
+        "extensionAttribute8": null,
+        "extensionAttribute9": null,
+        "extensionAttribute10": null,
+        "extensionAttribute11": null,
+        "extensionAttribute12": null,
+        "extensionAttribute13": null,
+        "extensionAttribute14": null,
+        "extensionAttribute15": null
+    }
 }
 ```
 

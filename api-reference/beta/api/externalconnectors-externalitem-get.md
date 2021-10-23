@@ -1,16 +1,16 @@
 ---
 title: 获取 externalItem
 description: 获取 externalItem。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: a60fdfb7a44e8f5d2cda4eb8f726da34c4929a00
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: 1cf796a5cf498feb7669f8ba84ab91f288832631
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53466976"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60561666"
 ---
 # <a name="get-externalitem"></a>获取 externalItem
 
@@ -30,7 +30,7 @@ ms.locfileid: "53466976"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持。 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All |
+| Application                            | ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -72,7 +72,7 @@ GET /external/connections/{connection-id}/items/{item-id}
 下面展示了示例请求。
 
 ```http
-GET https://graph.microsoft.com/beta/connections/contosohr/items/TSP228082938
+GET https://graph.microsoft.com/beta/external/connections/contosohr/items/TSP228082938
 ```
 
 <!-- markdownlint-disable MD024 -->

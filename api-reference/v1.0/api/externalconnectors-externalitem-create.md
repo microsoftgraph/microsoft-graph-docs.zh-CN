@@ -5,12 +5,12 @@ author: snlraju-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: db4aaef48be86ea0525f6ef2d1353b768c9d90a7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e0d7bb9066ba09dfb6b133a64d796e89f4b195a9
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59022350"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60560833"
 ---
 # <a name="create-externalitem"></a>创建 externalItem
 
@@ -25,7 +25,7 @@ ms.locfileid: "59022350"
 |:---|:---|
 |委派（工作或学校帐户）|不适用|
 |委派（个人 Microsoft 帐户）|不适用|
-|应用程序| ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All |
+|Application| ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -34,7 +34,7 @@ ms.locfileid: "59022350"
 }
 -->
 ``` http
-POST /connections/{connectionsId}/items
+POST /external/connections/{connectionsId}/items
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -50,8 +50,8 @@ POST /connections/{connectionsId}/items
 
 |属性|类型| 说明|
 |:---|:---|:---|
-|id|String|项目 ID。 必填。|
-|properties|[microsoft.graph.externalConnectors.properties](../resources/externalconnectors-properties.md)|项目属性。 `properties`对象必须至少包含一个属性。 所有 `DateTime` 类型属性都必须采用 ISO 8601 格式。 必填。|
+|id|String|项目 ID。 必需。|
+|properties|[microsoft.graph.externalConnectors.properties](../resources/externalconnectors-properties.md)|项目属性。 `properties`对象必须至少包含一个属性。 所有 `DateTime` 类型属性都必须采用 ISO 8601 格式。 必需。|
 |content|[microsoft.graph.externalConnectors.externalItemContent](../resources/externalconnectors-externalitemcontent.md)|外部项内容。 可选。|
 |acl|[microsoft.graph.externalConnectors.acl](../resources/externalconnectors-acl.md) 集合|访问控制列表。 必需。|
 
@@ -75,7 +75,7 @@ POST /connections/{connectionsId}/items
     ```
 
     > [!IMPORTANT]
-    > 当包含类型的 属性 `Collection(DateTime)` 时，必须使用类型说明器 `Collection(DateTimeOffset)` 。
+    > 当包含 类型的 属性 `Collection(DateTime)` 时，必须使用类型说明器 `Collection(DateTimeOffset)` 。
 
 ## <a name="response"></a>响应 
 
@@ -87,14 +87,14 @@ POST /connections/{connectionsId}/items
 
 ### <a name="request"></a>请求
 
-# <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_externalitem_from_externalConnections"
 }
 -->
 ``` http
-PUT https://graph.microsoft.com/v1.0/connections/contosohr/items/TSP228082938
+PUT https://graph.microsoft.com/v1.0/external/connections/contosohr/items/TSP228082938
 Content-type: application/json
 
 {
@@ -121,19 +121,6 @@ Content-type: application/json
   }
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-externalitem-from-externalconnections-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-externalitem-from-externalconnections-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-externalitem-from-externalconnections-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 

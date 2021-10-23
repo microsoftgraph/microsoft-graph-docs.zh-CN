@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: b89d48eacacae956ce91a8c0c663b554e924a4e7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1a34627d95b2e65798c93fae1bf45beb3772b93f
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59022509"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60560009"
 ---
 # <a name="delete-externalconnection"></a>删除 externalConnection
 命名空间：microsoft.graph.externalConnectors
@@ -26,7 +26,7 @@ ms.locfileid: "59022509"
 |:---|:---|
 |委派（工作或学校帐户）|不适用|
 |委派（个人 Microsoft 帐户）|不适用|
-|应用程序| ExternalConnection.ReadWrite.OwnedBy|
+|Application| ExternalConnection.ReadWrite.OwnedBy|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -35,7 +35,7 @@ ms.locfileid: "59022509"
 }
 -->
 ``` http
-DELETE /connections/{connectionsId}
+DELETE /external/connections/{connectionsId}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -54,32 +54,15 @@ DELETE /connections/{connectionsId}
 
 ### <a name="request"></a>请求
 
-# <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "delete_externalconnection"
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/v1.0/connections/contosohr
+DELETE https://graph.microsoft.com/v1.0/external/connections/contosohr
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-externalconnection-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-externalconnection-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-externalconnection-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-externalconnection-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 

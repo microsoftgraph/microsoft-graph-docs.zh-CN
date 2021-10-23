@@ -1,16 +1,16 @@
 ---
-title: 列出 cloudPcDeviceImages
+title: 列出 deviceImages
 description: 列出上载到云电脑的操作系统映像的属性和关系。
 author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 6f8ec3ee7638c5ba30d329c714fcc154c514dab1
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 808eb03245e63c665ee6e5fb22c3abf0424b095c
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59507520"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60558929"
 ---
 # <a name="list-deviceimages"></a>列出 deviceImages
 
@@ -18,9 +18,9 @@ ms.locfileid: "59507520"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-列出 [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) 对象的属性和关系 (上传到) 操作系统映像。
+列出 [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) 对象的属性和关系， (上传到) 操作系统映像。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "59507520"
 |:---|:---|
 |委派（工作或学校帐户）|CloudPC.Read.All、CloudPC.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|CloudPC.Read.All、CloudPC.ReadWrite.All|
+|Application|CloudPC.Read.All、CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 

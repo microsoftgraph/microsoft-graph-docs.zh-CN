@@ -5,17 +5,17 @@ author: eddie-lee-msft
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bd702e98c28ae0409b10c9bef3bde1349f9a10b8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f24f745a4cc0fc8c4c7136a01f6c5ac51a5a6011
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59022910"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60561624"
 ---
 # <a name="chat-sendactivitynotification"></a>chat： sendActivityNotification
 命名空间：microsoft.graph
 
-在聊天范围内发送活动源通知。 有关发送通知的更多详细信息以及发送通知的要求，请参阅[发送Teams活动通知](/graph/teams-send-activityfeednotifications)。
+在聊天范围内发送活动源通知。 有关发送通知的更多详细信息以及发送通知的要求，请参阅[发送Teams通知](/graph/teams-send-activityfeednotifications)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -24,7 +24,7 @@ ms.locfileid: "59022910"
 |:---|:---|
 |委派（工作或学校帐户）|TeamsActivity.Send|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|TeamsActivity.Send|
+|Application|TeamsActivity.Send|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -54,7 +54,7 @@ POST /chats/{chatId}/sendActivityNotification
 |chainId|Int64|可选。 用于替代上一个通知。 在后续 `chainId` 请求中使用相同的方法替代上一个通知。|
 |previewText|[itemBody](../resources/itembody.md)|预览通知文本。 Microsoft Teams显示前 150 个字符。|
 |templateParameters|[keyValuePair](../resources/keyvaluepair.md) 集合|活动源条目中定义的模板变量的值与应用程序Teams `activityType` [相对应](/microsoftteams/platform/overview)。|
-|recipient|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|通知的收件人。 仅支持 Azure AD 用户。 另请参阅 [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md)。 |
+|recipient|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|通知的收件人。 仅Azure AD用户。 另请参阅 [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md)。 |
 
 将 topic 属性的值设置为 时 `source` ，支持 **以下** 资源 `entityURL` ：
 
@@ -71,7 +71,7 @@ POST /chats/{chatId}/sendActivityNotification
 
 ### <a name="example-1-notify-a-user-about-a-task-created-in-a-chat"></a>示例 1：通知用户在聊天中创建的任务
 
-此示例演示如何发送在聊天中创建的新任务的活动源通知。 有关详细信息，请参阅[发送Teams活动通知](/graph/teams-send-activityfeednotifications)。
+此示例演示如何发送在聊天中创建的新任务的活动源通知。 有关详细信息，请参阅发送[Teams活动通知](/graph/teams-send-activityfeednotifications)。
 
 #### <a name="request"></a>请求
 
@@ -182,7 +182,55 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-3-notify-a-user-about-an-event-in-relation-to-a-chat"></a>示例 3：向用户通知与聊天相关的事件
+### <a name="example-3-notify-a-user-about-an-approval-needed-in-a-chat-message-using-user-principal-name"></a>示例 3：使用用户主体名称通知用户聊天消息中所需的审批
+
+与上一示例类似，此示例对 `entityUrl` 使用 `topic` 。 但是，在这种情况下，它会链接到聊天中的消息。 邮件可包含一个卡片，其中包含审批按钮。
+
+#### <a name="request"></a>请求
+
+<!-- {
+  "blockType": "request",
+  "name": "chat_sendactivitynotification_upn"
+}
+-->
+``` http
+POST https://graph.microsoft.com/v1.0/chats/{chatId}/sendActivityNotification
+Content-Type: application/json
+
+{
+    "topic": {
+        "source": "entityUrl",
+        "value": "https://graph.microsoft.com/v1.0/chats/{chatId}/messages/{messageId}"
+    },
+    "activityType": "approvalRequired",
+    "previewText": {
+        "content": "Deployment requires your approval"
+    },
+    "recipient": {
+        "@odata.type": "Microsoft.Teams.GraphSvc.aadUserNotificationRecipient",
+        "userId": "jacob@contoso.com"
+    },
+    "templateParameters": [
+        {
+            "name": "approvalTaskId",
+            "value": "2020AAGGTAPP"
+        }
+    ]
+}
+```
+
+
+#### <a name="response"></a>响应
+<!-- {
+  "blockType": "response",
+  "truncated": false
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
+### <a name="example-4-notify-a-user-about-an-event-in-relation-to-a-chat"></a>示例 4：向用户通知与聊天相关的事件
 
 如前面的示例所示，您可以链接到聊天的不同方面。 但是，如果要链接到不是聊天的一部分或不是由 Microsoft Graph 表示的方面，可以将 的源设置为 并传递其自定义 `topic` `text` 值。 此外， `webUrl` 将 source 设置为 时 `topic` ，也是必需的 `text` 。
 

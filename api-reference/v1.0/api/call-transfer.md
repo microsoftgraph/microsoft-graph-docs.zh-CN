@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 1e54c62c4d5a52ee45bb25d129e5f3d7961c29a0
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: bca4bff1feaa23edfc6b3fbf04de08ad7a15da61
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60289971"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60560776"
 ---
 # <a name="call-transfer"></a>call： transfer
 
@@ -20,7 +20,7 @@ ms.locfileid: "60289971"
 
 > **注意：** 这仅在被转移方和转移目标都Microsoft Teams属于同一租户的用户时受支持。 仅应用程序实例支持转接到 PSTN 号码。 若要了解有关转移方、被转移方和转移目标有关详细信息，请参阅 [RFC 5589](https://tools.ietf.org/html/rfc5589#section-2)。
 
-咨询转接意味着在转接之前，转接人可以通知要 (转接) 转接给被叫方。 这与直接转移呼叫相反。
+咨询转接意味着，在转接之前，转接者可以通知要 (转接) 转接给被叫方。 这与直接转移呼叫相反。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -29,7 +29,7 @@ ms.locfileid: "60289971"
 | :-------------- | :-------------------------------------------------- |
 | 委派（工作或学校帐户）     | 不支持                |
 | 委派（个人 Microsoft 帐户） | 不支持                |
-| 应用程序     | Calls.Initiate.All                                  |
+| Application     | Calls.Initiate.All                                  |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -825,6 +825,20 @@ Content-Length: 430
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/call-transfer-5-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/call-transfer-5-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/call-transfer-5-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### <a name="response"></a>响应
 

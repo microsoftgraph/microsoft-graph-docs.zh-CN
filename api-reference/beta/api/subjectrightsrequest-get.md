@@ -5,12 +5,12 @@ author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 9098716a1c15e6d9cf36aaa5731f6183c4658f70
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 3393800e3ff98fee797229e9294f5464ca4fc96b
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60453736"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60560343"
 ---
 # <a name="get-subjectrightsrequest"></a>获取 subjectRightsRequest
 命名空间：microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "60453736"
 |:---|:---|
 |委派（工作或学校帐户）|SubjectRightsRequest.Read.All *、SubjectRightsRequest.ReadWrite.All*|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持|
+|Application|不支持|
 
 >[!IMPORTANT]
 >标有星号* (*) 当前不可用。 有关详细信息，请参阅[已知问题](/graph/known-issues#compliance)。
@@ -60,6 +60,8 @@ GET /privacy/subjectRightsRequests/{subjectRightsRequestId}
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_subjectRightsRequest"
@@ -68,6 +70,24 @@ GET /privacy/subjectRightsRequests/{subjectRightsRequestId}
 ``` http
 GET https://graph.microsoft.com/beta/privacy/subjectRightsRequests/{subjectRightsRequestId}
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-subjectrightsrequest-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-subjectrightsrequest-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-subjectrightsrequest-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-subjectrightsrequest-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

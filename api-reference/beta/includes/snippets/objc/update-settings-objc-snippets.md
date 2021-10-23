@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 894c9841326e7980445324c7ae3c6ffd19d2f367
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: a42958399b0e80a6a20b5a44b033aec69c3436f9
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52240830"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60559713"
 ---
 ```objc
 
@@ -16,27 +16,27 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setHTTPMethod:@"PATCH"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphEdiscoverySettings *settings = [[MSGraphEdiscoverySettings alloc] init];
+MSGraphEdiscoveryCaseSettings *caseSettings = [[MSGraphEdiscoveryCaseSettings alloc] init];
 MSGraphEdiscoveryRedundancyDetectionSettings *redundancyDetection = [[MSGraphEdiscoveryRedundancyDetectionSettings alloc] init];
 [redundancyDetection setIsEnabled: false];
 [redundancyDetection setSimilarityThreshold: 70];
 [redundancyDetection setMinWords: 12];
 [redundancyDetection setMaxWords: 400000];
-[settings setRedundancyDetection:redundancyDetection];
+[caseSettings setRedundancyDetection:redundancyDetection];
 MSGraphEdiscoveryTopicModelingSettings *topicModeling = [[MSGraphEdiscoveryTopicModelingSettings alloc] init];
 [topicModeling setIsEnabled: false];
 [topicModeling setIgnoreNumbers: false];
 [topicModeling setTopicCount: 50];
 [topicModeling setDynamicallyAdjustTopicCount: false];
-[settings setTopicModeling:topicModeling];
+[caseSettings setTopicModeling:topicModeling];
 MSGraphEdiscoveryOcrSettings *ocr = [[MSGraphEdiscoveryOcrSettings alloc] init];
 [ocr setIsEnabled: true];
 [ocr setMaxImageSize: 12000];
-[settings setOcr:ocr];
+[caseSettings setOcr:ocr];
 
 NSError *error;
-NSData *settingsData = [settings getSerializedDataWithError:&error];
-[urlRequest setHTTPBody:settingsData];
+NSData *caseSettingsData = [caseSettings getSerializedDataWithError:&error];
+[urlRequest setHTTPBody:caseSettingsData];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
     completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {

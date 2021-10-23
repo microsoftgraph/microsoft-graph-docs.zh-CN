@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 0e9725e77b727c455364fae0bcb068118e4a9cc3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: df0646d582702b59a5c6a8f5199a00422fd7ac1b
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59046118"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60558887"
 ---
 # <a name="get-schema"></a>获取架构
 命名空间：microsoft.graph.externalConnectors
@@ -26,7 +26,7 @@ ms.locfileid: "59046118"
 |:---|:---|
 |委派（工作或学校帐户）|不适用|
 |委派（个人 Microsoft 帐户）|不适用|
-|应用程序| ExternalConnection.ReadWrite.OwnedBy|
+|Application| ExternalConnection.ReadWrite.OwnedBy|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -35,7 +35,7 @@ ms.locfileid: "59046118"
 }
 -->
 ``` http
-GET /connections/{connectionsId}/schema
+GET /external/connections/{connectionsId}/schema
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -57,32 +57,15 @@ GET /connections/{connectionsId}/schema
 
 ### <a name="request"></a>请求
 
-# <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_schema"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/connections/contosohr/schema
+GET https://graph.microsoft.com/v1.0/external/connections/contosohr/schema
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-schema-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-schema-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-schema-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-schema-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 

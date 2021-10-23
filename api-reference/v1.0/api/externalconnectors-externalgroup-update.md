@@ -5,12 +5,12 @@ author: sacampbe-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: f0a6f079adc463392475d743413210d980a4c6b5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8e2c51843f0558bea93b264edb4243456cc065fa
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59022368"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60558558"
 ---
 # <a name="update-externalgroup"></a>更新 externalGroup
 命名空间：microsoft.graph.externalConnectors
@@ -27,7 +27,7 @@ ms.locfileid: "59022368"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持                               |
 | 委派（个人 Microsoft 帐户） | 不支持                               |
-| 应用程序                            | ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All             
+| Application                            | ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All             
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -36,7 +36,7 @@ ms.locfileid: "59022368"
 }
 -->
 ``` http
-PATCH /connections/{connectionsId}/groups/{externalGroupId}
+PATCH /external/connections/{connectionsId}/groups/{externalGroupId}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -64,14 +64,14 @@ PATCH /connections/{connectionsId}/groups/{externalGroupId}
 
 ### <a name="request"></a>请求
 
-# <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_externalgroup"
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/v1.0/connections/{connectionsId}/groups/{externalGroupId}
+PATCH https://graph.microsoft.com/v1.0/external/connections/{connectionsId}/groups/{externalGroupId}
 Content-Type: application/json
 
 {
@@ -79,23 +79,6 @@ Content-Type: application/json
   "description": "The product marketing team"
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-externalgroup-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-externalgroup-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-externalgroup-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-externalgroup-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 

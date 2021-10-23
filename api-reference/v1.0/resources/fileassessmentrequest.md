@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: hafen-ms
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: cecd2e0a092f21017a0cab2f5a5f7a2612e2ddeb
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 730abf835877fa2f22588d04e5ce43374a495750
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59062682"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60561841"
 ---
 # <a name="fileassessmentrequest-resource-type"></a>fileAssessmentRequest 资源类型
 
@@ -36,8 +36,8 @@ ms.locfileid: "59062682"
 |createdBy|[identitySet](identityset.md)|威胁评估请求创建者。|
 |createdDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
 |expectedAssessment|[threatExpectedAssessment](enums.md#threatexpectedassessment-values)|提交者的预期评估。 可能的值是：`block`、`unblock`。|
-|id|String|威胁评估请求 ID 是 GUID (全局唯) 。|
-|requestSource|[threatAssessmentRequestSource](enums.md#threatassessmentrequestsource-values)|威胁评估请求的来源。 可取值为：`user`、`administrator`。|
+|id|String|威胁评估请求 ID 是 GUID (全局唯一) 。|
+|requestSource|[threatAssessmentRequestSource](enums.md#threatassessmentrequestsource-values)|威胁评估请求的来源。 可能的值是 `administrator` ：。|
 |status|[threatAssessmentStatus](enums.md#threatassessmentstatus-values)|评估流程状态。 可取值为：`pending`、`completed`。|
 
 ## <a name="relationships"></a>关系

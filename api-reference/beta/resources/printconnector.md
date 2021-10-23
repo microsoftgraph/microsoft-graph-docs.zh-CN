@@ -1,16 +1,16 @@
 ---
 title: printConnector 资源类型
-description: 表示已使用通用打印订阅注册的打印连接器。 PrintConnector 资源可用于查看连接器状态和更新属性。
+description: 表示已使用通用打印订阅注册的打印连接器。 printConnector 资源可用于查看连接器状态和更新属性。
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 9962bad290d6a07c214107e58c8a96afb9148394
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: ad4a8f733f39490bbf126d60fe193a664b06888a
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48727988"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60561771"
 ---
 # <a name="printconnector-resource-type"></a>printConnector 资源类型
 
@@ -18,28 +18,29 @@ ms.locfileid: "48727988"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示已使用通用打印订阅注册的打印连接器。 PrintConnector 资源可用于查看连接器状态和更新属性。
+表示已使用通用打印订阅注册的打印连接器。 printConnector 资源可用于查看连接器状态和更新属性。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [Get connector](../api/printconnector-get.md) | [printConnector](printconnector.md) | 读取连接器对象的属性和关系。 |
+| [List connectors](../api/print-list-connectors.md) | [printConnector](printconnector.md) | 检索打印连接器的列表。 |
+| [Get connector](../api/printconnector-get.md) | [printConnector](printconnector.md) | 读取 connector 对象的属性和关系。 |
 | [更新连接器](../api/printconnector-update.md) | [printConnector](printconnector.md) | 更新连接器对象。 |
-| [删除连接器](../api/printconnector-delete.md) | 无 | 从通用打印服务中注销连接器。 |
+| [删除连接器](../api/printconnector-delete.md) | 无 | 从通用打印服务注销连接器。 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |id|String| 只读。|
 |displayName|String|连接器的名称。|
-|fullyQualifiedDomainName|String|连接器计算机的主机名。|
+|fullyQualifiedDomainName|String|连接器计算机主机名。|
 |operatingSystem|String|连接器计算机的操作系统版本。|
 |appVersion|String|连接器的版本。|
 |deviceHealth|[deviceHealth](devicehealth.md)|连接器的设备运行状况。|
-|location|[printerLocation](printerlocation.md)|连接器的物理位置和/或组织位置。|
-|registeredDateTime|DateTimeOffset|注册连接器时的 DateTimeOffset。|
-|registeredBy|[userIdentity](useridentity.md)|注册了连接器的用户。|
+|位置|[printerLocation](printerlocation.md)|连接器的物理和/或组织位置。|
+|registeredDateTime|DateTimeOffset|注册连接器时的日期时间Offset。|
+|registeredBy|[userIdentity](useridentity.md)|注册连接器的用户。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

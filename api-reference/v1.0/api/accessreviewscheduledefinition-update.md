@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 19d7613e7b2dfd59c5ed0c92f88d36488bd16943
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ffff9d0a46e32c76e1c650fe3a07dd70a182b22a
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59023085"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60562023"
 ---
 # <a name="update-accessreviewscheduledefinition"></a>更新 accessReviewScheduleDefinition
 命名空间：microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "59023085"
 |:---|:---|
 |委派（工作或学校帐户）|AccessReview.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|AccessReview.ReadWrite.All|
+|Application|AccessReview.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -54,11 +54,11 @@ PUT /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 | displayName | String | 访问评审系列的名称。 |
 | descriptionForAdmins | String | 提供给管理员评价的上下文。 |
 | descriptionForReviewers | String | 提供给审阅者的审阅上下文。 |
-| settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md) | 访问评审系列的设置。 请参阅 [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)。 |
+| fallbackReviewers |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合|用于定义回退审阅者列表的审阅者范围的集合，如果从指定的审阅者列表中找不到用户，将通知这些审阅者采取措施。 当组所有者指定为审阅者但组所有者不存在时，或者将经理指定为审阅者但用户的经理不存在时，可能会发生这种情况。|
 | reviewers | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合|  定义审阅者是谁。 如果未指定任何内容，则评论是自 (用户查看自己的访问权限) 。 只有在 **将** 单个用户分配为审阅者时，审阅者属性才可更新。 请参阅 [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)。 |
-|fallbackReviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合|用于定义回退审阅者列表的审阅者范围的集合，如果从指定的审阅者列表中找不到用户，将通知这些审阅者采取措施。 当组所有者指定为审阅者但组所有者不存在时，或者将经理指定为审阅者但用户的经理不存在时，可能会发生这种情况。|
+| settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md) | 访问评审系列的设置。 请参阅 [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)。 |
 
-**PUT** 请求希望传入完整对象，其中包括所有可写属性，而不只是要更新的属性。
+**PUT** 请求希望传入完整的对象，其中包括所有可写属性，而不只是要更新的属性。
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 响应 `204 No Content` 代码，无响应正文。

@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 3c05e94883baaf2109672adf44d7ef268e56f467
-ms.sourcegitcommit: c3f849e5a052b1926373a4b316ec303250e6d09e
+ms.openlocfilehash: cd1c651d8d8d9bafe559551e2300da7437cf965e
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60370332"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60561673"
 ---
 # <a name="create-meetingregistrant"></a>创建 meetingRegistrant
 
@@ -20,7 +20,7 @@ ms.locfileid: "60370332"
 
 在[代表注册人](../resources/meetingregistrant.md)启用会议注册的联机会议中[](../resources/meetingregistration.md)注册会议注册人。 此操作有两种方案：
 
-- 如果 **meetingRegistration 对象的 allowedRegistrant** 属性的值为 ，则注册人需要先登录，然后才能 [](../resources/meetingregistration.md) `organization` 注册会议。 **firstName** **、lastName** 和 **email** 必须匹配存储在 Azure Active Directory (Azure AD) 。
+- 如果 **meetingRegistration 对象的 allowedRegistrant** 属性的值为 ，则注册人需要先登录，然后才能 [](../resources/meetingregistration.md) `organization` 注册会议。 **firstName、lastName** 和 **email** 必须匹配存储在 Azure Active Directory (Azure AD) 。 
 - 如果 **meetingRegistration 对象的 allowedRegistrant** 属性的值为 ，则注册人无需登录，并且 [](../resources/meetingregistration.md) `everyone` 将被视为匿名。
 
 在任一方案中，注册人将收到包含其注册信息的电子邮件通知。
@@ -33,7 +33,7 @@ ms.locfileid: "60370332"
 |:----------------|:--------------------------------------------|
 | 委派（工作或学校帐户） | OnlineMeetings.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序 | OnlineMeetings.Read.All |
+| Application | OnlineMeetings.Read.All |
 
 > [!TIP]
 >
@@ -76,6 +76,8 @@ POST /users/{userId}/onlineMeetings/{id}/registration/registrants
 
 #### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "add-registratrant-user"
@@ -101,6 +103,24 @@ Content-Type: application/json
   ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/add-registratrant-user-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/add-registratrant-user-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/add-registratrant-user-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/add-registratrant-user-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 
@@ -133,6 +153,8 @@ Content-Type: application/json
 
 #### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "add-registratrant-app"
@@ -158,6 +180,24 @@ Content-Type: application/json
   ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/add-registratrant-app-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/add-registratrant-app-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/add-registratrant-app-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/add-registratrant-app-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 

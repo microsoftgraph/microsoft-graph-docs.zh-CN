@@ -5,12 +5,12 @@ author: bhartono
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 226d2a3a0c4a41ceec56dab7395b65c21b2343c6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 88e6d5019439aebabbcdca99bf4bde3b07e6e408
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59022917"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60558838"
 ---
 # <a name="create-chat"></a>创建聊天
 命名空间：microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "59022917"
 |:---|:---|
 |委派（工作或学校帐户）|Chat.Create、Chat.ReadWrite|
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -208,6 +208,59 @@ Content-Type: application/json
     "createdDateTime": "2020-12-04T23:11:16.175Z",
     "lastUpdatedDateTime": "2020-12-04T23:11:16.175Z",
     "chatType": "group"
+}
+```
+
+### <a name="example-3-create-a-one-on-one-chat-using-user-principal-name"></a>示例 3：使用用户主体名称创建一对一聊天
+
+#### <a name="request"></a>请求
+
+<!-- {
+  "blockType": "request",
+  "name": "create_chat_oneOnOne_upn"
+}
+-->
+``` http
+POST https://graph.microsoft.com/v1.0/chats
+Content-Type: application/json
+
+{
+  "chatType": "oneOnOne",
+  "members": [
+    {
+      "@odata.type": "#microsoft.graph.aadUserConversationMember",
+      "roles": ["owner"],
+      "user@odata.bind": "https://graph.microsoft.com/v1.0/users('jacob@contoso.com')"
+    },
+    {
+      "@odata.type": "#microsoft.graph.aadUserConversationMember",
+      "roles": ["owner"],
+      "user@odata.bind": "https://graph.microsoft.com/v1.0/users('alex@contoso.com')"
+    }
+  ]
+}
+```
+
+
+#### <a name="response"></a>响应
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chat"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#chats/$entity",
+    "id": "19:82fe7758-5bb3-4f0d-a43f-e555fd399c6f_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca@unq.gbl.spaces",
+    "topic": null,
+    "createdDateTime": "2020-12-04T23:10:28.51Z",
+    "lastUpdatedDateTime": "2020-12-04T23:10:28.51Z",
+    "chatType": "oneOnOne"
 }
 ```
 

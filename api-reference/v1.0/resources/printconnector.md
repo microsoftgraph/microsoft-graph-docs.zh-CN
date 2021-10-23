@@ -2,15 +2,15 @@
 title: printConnector 资源类型
 description: 表示已使用通用打印订阅注册的打印连接器。 printConnector 资源可用于查看连接器状态和更新属性。
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: c0d24ff6dca0a8866165b40f440ecc2e0d31c1f118d3d3e8a8a41dda96f6038d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ab2f1718837c88af61e0e790acb2ad198cfded32
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54205281"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60560042"
 ---
 # <a name="printconnector-resource-type"></a>printConnector 资源类型
 
@@ -23,6 +23,7 @@ ms.locfileid: "54205281"
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
+| [List connectors](../api/print-list-connectors.md) | [printConnector](printconnector.md) | 检索打印连接器的列表。 |
 | [Get connector](../api/printconnector-get.md) | [printConnector](printconnector.md) | 读取 connector 对象的属性和关系。 |
 | [更新连接器](../api/printconnector-update.md) | [printConnector](printconnector.md) | 更新连接器对象。 |
 | [删除连接器](../api/printconnector-delete.md) | 无 | 从通用打印服务注销连接器。 |

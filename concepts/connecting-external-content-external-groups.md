@@ -5,33 +5,33 @@ author: mecampos
 doc_type: conceptualPageType
 ms.prod: search
 ms.localizationpriority: medium
-ms.openlocfilehash: 5a4da4e8dbe61f73f2806cc2f9e2bc41b18ac1f7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 779c25cf4ccb1c56195cefb6e8476cc38e6d91c2
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139315"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60561456"
 ---
 # <a name="use-external-groups-to-manage-permissions-to-microsoft-graph-connector-data-sources"></a>使用外部组管理对 Microsoft Graph连接器数据源的权限
 
-[外部组](/graph/api/resources/externalgroup?view=graph-rest-beta&preserve-view=true)允许你管理查看 Microsoft Graph[](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true)连接中的外部项的权限，并连接到 Azure AD Azure Active Directory (外部) 源。
+[通过外部](/graph/api/resources/externalgroup?view=graph-rest-beta&preserve-view=true)组，您可以管理查看 Microsoft [](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) Graph 连接中的外部项以及连接到外部组Azure Active Directory (Azure AD) 的权限。
 
-对于依赖 Azure AD 用户和组的数据源，在创建或更新外部项时，通过将访问控制列表 (ACL) 与 Azure AD 用户和组 ID 关联来设置外部[](/graph/api/externalconnection-put-items?view=graph-rest-beta&preserve-view=true)项的权限。
+对于依赖 Azure AD 用户和组的数据源，在创建或更新外部项时，通过将访问控制列表 (ACL) 与 Azure AD 用户和组 ID 关联来设置对外部项的权限。 [](/graph/api/externalconnection-put-items?view=graph-rest-beta&preserve-view=true)
 
-但是，对于使用非 Azure AD 组或类似组构造的数据源（如 Salesforce 配置文件、Dynamics 业务单位、SharePoint 组、ServiceNow 本地组或 Confluence 本地组，建议使用外部 *组*。
+但是，对于使用非 Azure AD 组或类似组构造的数据源（如 Salesforce 配置文件、Dynamics 业务单位、SharePoint 组、ServiceNow 本地组或 Confluence 本地组），建议使用外部 *组*。
 
 ## <a name="common-external-group-scenarios"></a>常见的外部组方案
 
-以下是常见的非 Azure AD 应用程序特定的组示例。
+以下是常见的非Azure AD应用程序特定的组示例。
 
-Microsoft Dynamics 365 允许客户使用业务部门和团队构建其 CDM。这些业务部门和团队的成员身份信息未存储在 Azure AD 中。
+Microsoft Dynamics 365 允许客户使用业务部门和团队构建其 CDM。这些业务部门和团队的成员身份信息不会存储在Azure AD。
 
 下图显示了业务部门和团队的结构。
 
 <!---Using html to adjust the size of the image --->
 <br><p align="center"><img src="images/connectors-images/bu-teams-D365.png" alt="Diagram of an structure in Dynamics 365. A business unit has a team and a manager under it. This manager has other users." style="width:400px;"/></p>
 
-Salesforce 使用配置文件、角色和权限集进行授权。 这些信息特定于 Salesforce，并且成员身份信息在 Azure AD 中不可用。
+Salesforce 使用配置文件、角色和权限集进行授权。 这些信息特定于 Salesforce，并且成员资格信息在 Azure AD。
 
 下图显示了 Salesforce 中成员身份信息的结构。
 
@@ -42,7 +42,7 @@ Salesforce 使用配置文件、角色和权限集进行授权。 这些信息�
 
 若要在连接内使用外部组：
 
-1. 对于每个非 Azure AD 组，使用组 API 在 Microsoft Graph创建[外部组](/en-us/graph/api/resources/group?view=graph-rest-beta&preserve-view=true)。
+1. 对于每个非Azure AD组，使用组 API 在 Microsoft Graph创建[一个外部组](/en-us/graph/api/resources/group?view=graph-rest-beta&preserve-view=true)。
 2. 如有必要，在定义外部项的 ACL 时，请使用外部组。
 3. 使外部组的成员身份保持最新并同步。
 
@@ -55,7 +55,7 @@ Salesforce 使用配置文件、角色和权限集进行授权。 这些信息�
     > [displayName 和](/graph/api/resources/externalgroup?view=graph-rest-beta&preserve-view=true) **description** 是可选的字段。
 
     ```http
-    POST /connections/{connectionId}/groups
+    POST /external/connections/{connectionId}/groups
 
     { 
       "id": "contosoEscalations", 
@@ -70,14 +70,14 @@ Salesforce 使用配置文件、角色和权限集进行授权。 这些信息�
     > ID 字段允许您使用 URL 和 filename-safe Base64 字符集，并且该字符集限制为 128 个字符。
 
 外部组可以包含以下一个或多个：
-* Azure AD 用户。
-* Azure AD 组。
+* 一Azure AD用户。
+* 一Azure AD组。
 * 另一个外部组，包括嵌套外部组。
 
 创建组后，可以将成员添加到组，如以下示例所示。
 
 ```http
-POST https://graph.microsoft.com/beta/connections/{connectionId}/groups/{groupId}/members
+POST https://graph.microsoft.com/beta/external/connections/{connectionId}/groups/{groupId}/members
 
 {
   "id": "contosoSupport",
@@ -86,7 +86,7 @@ POST https://graph.microsoft.com/beta/connections/{connectionId}/groups/{groupId
 }
 ```
 ```http
-POST https://graph.microsoft.com/beta/connections/{connectionId}/groups/{groupId}/members
+POST https://graph.microsoft.com/beta/external/connections/{connectionId}/groups/{groupId}/members
 
 {
   "id": "25f143de-be82-4afb-8a57-e032b9315752",
@@ -95,7 +95,7 @@ POST https://graph.microsoft.com/beta/connections/{connectionId}/groups/{groupId
 }
 ```
 ```http
-POST https://graph.microsoft.com/beta/connections/{connectionId}/groups/{groupId}/members
+POST https://graph.microsoft.com/beta/external/connections/{connectionId}/groups/{groupId}/members
 
 {
   "id": "99a3b3d6-71ee-4d21-b08b-4b6f22e3ae4b",
@@ -106,7 +106,7 @@ POST https://graph.microsoft.com/beta/connections/{connectionId}/groups/{groupId
 
 ### <a name="use-external-groups-in-acl"></a>在 ACL 中使用外部组
 
-定义外部项的 [ACL](connecting-external-content-manage-items.md#access-control-list) 时，可以使用外部组，如以下示例所示。 除了 Azure AD 用户和组外，外部项的访问控制条目中还可以包含外部组。
+定义外部项的 [ACL](connecting-external-content-manage-items.md#access-control-list) 时，可以使用外部组，如以下示例所示。 除了用户Azure AD组外，外部项的访问控制条目中还可以包含外部组。
 
 ```http
 PUT https://graph.microsoft.com/beta/external/connections/{id}/items/{id} 

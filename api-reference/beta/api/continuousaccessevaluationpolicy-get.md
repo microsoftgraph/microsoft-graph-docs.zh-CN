@@ -2,15 +2,15 @@
 title: 获取 continuousAccessEvaluationPolicy
 description: 读取 continuousAccessEvaluationPolicy 对象的属性。
 author: jerrysai
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 0f0aac891c40e84266ebb48fb3e196bbdfd13d03
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 642dfc75a72dd7cda5414202842b5a79e32b8c5d
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437287"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60558936"
 ---
 # <a name="get-continuousaccessevaluationpolicy"></a>获取 continuousAccessEvaluationPolicy
 命名空间：microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "50437287"
 
 读取 [continuousAccessEvaluationPolicy](../resources/continuousaccessevaluationpolicy.md) 对象的属性和关系。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -48,7 +48,7 @@ GET /identity/continuousAccessEvaluationPolicy
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和连续 `200 OK` [AccessEvaluationPolicy](../resources/continuousaccessevaluationpolicy.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [continuousAccessEvaluationPolicy](../resources/continuousaccessevaluationpolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -104,6 +104,7 @@ Content-type: application/json
   "displayName": "Continuous Access Evaluation",
   "isEnabled": true,
   "users": [ "1608be63-df14-42a4-8932-1c9d963b026f" ],
-  "groups": [ "4308b567-df14-0000-8932-1c9d963b026f" ]
+  "groups": [ "4308b567-df14-0000-8932-1c9d963b026f" ],
+  "migrate": true
 }
 ```

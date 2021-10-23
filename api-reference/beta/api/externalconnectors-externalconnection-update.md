@@ -1,16 +1,16 @@
 ---
 title: 更新 externalConnection
 description: 更新 externalConnection 的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 8b14abf1a010b8d28e80308077bcc5aa2f72eecf
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: 7552132ba6762d69c977dba4044a58026e4424c4
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467580"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60559580"
 ---
 # <a name="update-connection"></a>更新连接
 
@@ -28,7 +28,7 @@ ms.locfileid: "53467580"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持。 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | ExternalConnection.ReadWrite.OwnedBy |
+| Application                            | ExternalConnection.ReadWrite.OwnedBy |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -65,7 +65,7 @@ PATCH /external/connections/{id}
 
 下面展示了示例请求。
 
-# <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_connection",
@@ -73,7 +73,7 @@ PATCH /external/connections/{id}
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/connections/contosohr
+PATCH https://graph.microsoft.com/beta/external/connections/contosohr
 Content-type: application/json
 
 {
@@ -81,23 +81,6 @@ Content-type: application/json
   "description": "Connection to index HR service tickets"
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-connection-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-connection-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-connection-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-connection-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 <!-- markdownlint-disable MD024 -->

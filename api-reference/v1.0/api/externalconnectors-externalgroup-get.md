@@ -5,12 +5,12 @@ author: sacampbe-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 20f58681555a94296c6f2bef184300ff2c1faa48
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e24af303d0b9195680a7bb59d68d979b1d24d944
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59022482"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60560742"
 ---
 # <a name="get-externalgroup"></a>获取 externalGroup
 命名空间：microsoft.graph.externalConnectors
@@ -26,7 +26,7 @@ ms.locfileid: "59022482"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持                               |
 | 委派（个人 Microsoft 帐户） | 不支持                               |
-| 应用程序                            | ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All|
+| Application                            | ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All|
 
 
 ## <a name="http-request"></a>HTTP 请求
@@ -36,7 +36,7 @@ ms.locfileid: "59022482"
 }
 -->
 ``` http
-GET /connections/{connectionsId}/groups/{externalGroupId}
+GET /external/connections/{connectionsId}/groups/{externalGroupId}
 ```
 
 ## <a name="request-headers"></a>请求标头

@@ -2,15 +2,15 @@
 title: 创建聊天
 description: 创建新的聊天对象。
 author: bhartono
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a1e6f844b1c216eae63c85644aca556812fdadc1
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: af00e04679f99c79606bcbb3ac3b3884317da6df
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53207920"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60561533"
 ---
 # <a name="create-chat"></a>创建聊天
 命名空间：microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "53207920"
 |:---|:---|
 |委派（工作或学校帐户）|Chat.Create、Chat.ReadWrite|
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -53,7 +53,7 @@ POST /chats
 |:---|:---|:---|
 |topic| (可选) 字符串|聊天的标题。 只有在聊天类型为时，才能提供聊天 `group` 标题。|
 |chatType|[chatType](../resources/chat.md#chattype-values)| 指定聊天类型。 可能的值是： `group` 和 `oneOnOne` 。 |
-|成员|[conversationMember](../resources/conversationmember.md) 集合|应该添加的对话成员列表。 必须在此列表中指定将参与聊天的每一个用户（包括发起创建请求的用户）。|
+|members|[conversationMember](../resources/conversationmember.md) 集合|应该添加的对话成员列表。 必须在此列表中指定将参与聊天的每一个用户（包括发起创建请求的用户）。|
 |installedApps| [teamsApp](../resources/teamsapp.md) 集合|聊天中应安装的应用列表。|
 
 > **注意：** 目前，仅支持一个应用安装。 如果请求中列出了多个应用安装，则响应将为 `Bad Request` 错误。
@@ -291,6 +291,60 @@ Location: /chats('19:82fe7758-5bb3-4f0d-a43f-e555fd399c6f_bfb5bb25-3a8d-487d-982
 ```
 
 异步操作已启动，响应包含 Location 标头，其中包含指向 [teamsAsyncOperation 的链接](../resources/teamsasyncoperation.md)。 该链接可用于获取操作状态和详细信息。 有关详细信息，请参阅 [获取聊天操作](teamsasyncoperation-get.md#example-get-operation-on-chat)。
+
+### <a name="example-4-create-a-one-on-one-chat-using-user-principal-name"></a>示例 4：使用用户主体名称创建一对一聊天
+
+#### <a name="request"></a>请求
+
+<!-- {
+  "blockType": "request",
+  "name": "create_chat_oneOnOne_upn"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/chats
+Content-Type: application/json
+
+{
+  "chatType": "oneOnOne",
+  "members": [
+    {
+      "@odata.type": "#microsoft.graph.aadUserConversationMember",
+      "roles": ["owner"],
+      "user@odata.bind": "https://graph.microsoft.com/beta/users('jacob@contoso.com')"
+    },
+    {
+      "@odata.type": "#microsoft.graph.aadUserConversationMember",
+      "roles": ["owner"],
+      "user@odata.bind": "https://graph.microsoft.com/beta/users('alex@contoso.com')"
+    }
+  ]
+}
+```
+
+
+#### <a name="response"></a>响应
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chat"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#chats/$entity",
+    "id": "19:82fe7758-5bb3-4f0d-a43f-e555fd399c6f_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca@unq.gbl.spaces",
+    "topic": null,
+    "createdDateTime": "2020-12-04T23:10:28.51Z",
+    "lastUpdatedDateTime": "2020-12-04T23:10:28.51Z",
+    "chatType": "oneOnOne",
+    "webUrl": "https://teams.microsoft.com/l/chat/19%3A82fe7758-5bb3-4f0d-a43f-e555fd399c6f_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca@unq.gbl.spaces/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
+}
+```
 
 ## <a name="see-also"></a>另请参阅
 - [获取 teamsAsyncOperation](teamsasyncoperation-get.md)

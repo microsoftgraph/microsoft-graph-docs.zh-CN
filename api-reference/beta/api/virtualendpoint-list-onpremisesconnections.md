@@ -1,16 +1,16 @@
 ---
-title: 列出 cloudPcOnPremisesConnections
+title: 列出 onPremisesConnections
 description: 获取 cloudPcOnPremisesConnection 对象及其属性的列表。
 author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 905904a1b98a6e6f48bdddd9aa637312f3c247ac
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 7af723bc5d672113a72afe4acd7d217cb37e3817
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59764050"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60560341"
 ---
 # <a name="list-onpremisesconnections"></a>列出 onPremisesConnections
 
@@ -28,7 +28,7 @@ ms.locfileid: "59764050"
 |:---|:---|
 |委派（工作或学校帐户）|CloudPC.Read.All、CloudPC.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|CloudPC.Read.All、CloudPC.ReadWrite.All|
+|Application|CloudPC.Read.All、CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 

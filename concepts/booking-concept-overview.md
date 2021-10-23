@@ -5,12 +5,12 @@ author: arvindmicrosoft
 ms.localizationpriority: high
 ms.prod: bookings
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 3caf87b95533088bb1d0968fbcad6050c54fa51d
-ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
+ms.openlocfilehash: 4652765f9832ab36d11ff640743e4b0c2c996097
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60256506"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60560728"
 ---
 # <a name="microsoft-bookings-api-overview-preview"></a>Microsoft Bookings API 概述（预览版）
 
@@ -35,7 +35,7 @@ Microsoft Bookings 提供了联机移动应用，可便于小型企业及其客�
 ## <a name="api-reference"></a>API 参考
 在查找此服务的 API 参考？
 
-请参阅 [Microsoft Graph beta 中的 Microsoft Bookings API](/graph/api/resources/booking-api-overviewa)。
+请参阅 [Microsoft Graph beta 中的 Microsoft Bookings API](/graph/api/resources/booking-api-overview)。
 
 
 ## <a name="next-steps"></a>后续步骤

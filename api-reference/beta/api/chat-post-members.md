@@ -3,14 +3,14 @@ title: 向聊天添加成员
 description: 向聊天中添加 conversationMember。
 author: bhartono
 doc_type: apiPageType
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: b320a3303925b6c1527d891210a330df401f2c1f
-ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
+ms.openlocfilehash: a07e24d52e604070cd70680221be6f0172e04ed7
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430072"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60559552"
 ---
 # <a name="add-member-to-a-chat"></a>向聊天添加成员
 
@@ -28,7 +28,7 @@ ms.locfileid: "53430072"
 |---------|-------------|
 |委派（工作或学校帐户）| ChatMember.ReadWrite、Chat.ReadWrite |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序| Chat.Manage.Chat*、ChatMember.ReadWrite.All、Chat.ReadWrite.All |
+|Application| Chat.Manage.Chat*、ChatMember.ReadWrite.All、Chat.ReadWrite.All |
 
 > **注意**：标有 * 的权限用于 [特定于资源的同意](https://aka.ms/teams-rsc)。
 
@@ -237,4 +237,42 @@ HTTP/1.1 201 Created
 Location: /chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/MCMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOTpiZDlkYTQ2MzIzYWY0MjUzOTZkMGZhNjcyMDAyODk4NEB0aHJlYWQudjIjIzQ4YmY5ZDUyLWRjYTctNGE1Zi04Mzk4LTM3Yjk1Y2M3YmQ4Mw==
 ```
 
+### <a name="example-4-add-a-single-member-to-a-chat-using-user-principal-name"></a>示例 4：使用用户主体名称向聊天中添加单个成员
+
+#### <a name="request"></a>请求
+
+下面是一个请求示例。
+
+<!-- {
+  "blockType": "request",
+  "name": "create_conversation_member_upn"
+} -->
+```msgraph-interactive
+POST https://graph.microsoft.com/beta/chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members
+content-type: application/json
+
+{
+    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+    "user@odata.bind": "https://graph.microsoft.com/beta/users/jacob@contoso.com",
+    "visibleHistoryStartDateTime": "2019-04-18T23:51:43.255Z",
+    "roles": ["owner"]
+}
+```
+
+
+#### <a name="response"></a>响应
+
+下面是一个响应示例。
+
+<!-- 
+{
+ "blockType": "response",
+  "truncated": true,
+  "name": "create_conversation_member_upn"
+}
+-->
+```http
+HTTP/1.1 201 Created
+Location: /chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/MCMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOTpiZDlkYTQ2MzIzYWY0MjUzOTZkMGZhNjcyMDAyODk4NEB0aHJlYWQudjIjIzQ4YmY5ZDUyLWRjYTctNGE1Zi04Mzk4LTM3Yjk1Y2M3YmQ4Mw==
+```
 

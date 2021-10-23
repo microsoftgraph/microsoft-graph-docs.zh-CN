@@ -5,12 +5,12 @@ author: vishriv
 ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: apiPageType
-ms.openlocfilehash: 6882e583f52d026c60c68815058d9d5c36a97e99
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 48ddb448b13d73d3a7c54177018f3de645e7192c
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59094564"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60559209"
 ---
 # <a name="create-term"></a>创建术语
 命名空间：microsoft.graph.termStore
@@ -24,7 +24,7 @@ ms.locfileid: "59094564"
 |:---|:---|
 |委派（工作或学校帐户） | TermStore.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 
 ## <a name="http-request"></a>HTTP 请求
@@ -71,7 +71,7 @@ POST sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}/children
 } -->
 
 ``` http
-POST https://graph.microsoft.com/v1.0/sites/microsoft.sharepoint.com,b9b0bc03-cbc4-40d2-aba9-2c9dd9821ddf,6a742cee-9216-4db5-8046-13a595684e74/termStore/sets/462bd0ae-30bb-4c58-845c-761ff6481ac1/terms
+POST https://graph.microsoft.com/v1.0/sites/microsoft.sharepoint.com,b9b0bc03-cbc4-40d2-aba9-2c9dd9821ddf,6a742cee-9216-4db5-8046-13a595684e74/termStore/sets/462bd0ae-30bb-4c58-845c-761ff6481ac1/children
 Content-Type: application/json
 Content-length: 366
 

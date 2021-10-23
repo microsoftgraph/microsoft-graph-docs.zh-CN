@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 4a144b91cc74ce35f5c810ced9461c68a6c63b8f
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 50e146ee83d75a582ab21650dde69bca12a359de
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766815"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60560049"
 ---
 # <a name="create-accessreviewscheduledefinition"></a>创建 accessReviewScheduleDefinition
 
@@ -26,7 +26,7 @@ ms.locfileid: "59766815"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | AccessReview.ReadWrite.All  |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序                            | AccessReview.ReadWrite.All |
+|Application                            | AccessReview.ReadWrite.All |
 
 登录用户还必须具有允许其创建访问评审的目录角色。  有关详细信息，请参阅访问评审的角色和 [权限要求](../resources/accessreviewsv2-root.md)。
 
@@ -48,14 +48,15 @@ POST /identityGovernance/accessReviews/definitions
 
 | 属性 | 类型 | 说明 |
 |:-------------|:------------|:------------|
-| displayName | String | 访问评审系列的名称。 必需。|
+| additionalNotificationRecipients   |[accessReviewNotificationRecipientItem](../resources/accessReviewNotificationRecipientItem.md) 集合| 定义要接收访问评审进度通知的其他用户或组成员的列表。 |
 | descriptionForAdmins | String | 提供给管理员评价的上下文。 必需。 |
-  descriptionForReviewers | String | 电子邮件通知中提供给审阅者评论的上下文。 电子邮件通知最多支持 256 个字符。 必需。 |
+| descriptionForReviewers | String | 电子邮件通知中提供给审阅者评论的上下文。 电子邮件通知最多支持 256 个字符。 必需。 |
+| displayName | String | 访问评审系列的名称。 必需。|
+| fallbackReviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合|如果提供，当主审阅者不存在时，会要求回退审阅者完成审阅。 例如，如果选择经理作为经理，而审核中的主体没有经理Azure AD，则回退审阅者需要 `reviewers` 审阅该主体。|
+| instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | 对于所有组评审，这将确定将审核哪些组的范围。 请参阅 [accessReviewScope，](../resources/accessreviewscope.md) 并了解如何 [配置访问评审定义的范围](/graph/accessreviews-scope-concept)。|
+| reviewers | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合 | 定义审阅者是谁。 如果未指定任何内容，则评论是自 (用户查看自己的访问权限) 。 有关分配审阅者的选项示例，请参阅使用 Microsoft Graph API 将审阅者[分配给你的访问Graph定义](/graph/accessreviews-reviewers-concept)。  |
 | 范围 | [accessReviewScope](../resources/accessreviewscope.md) |  定义将检查其访问权限的实体。 请参阅  [accessReviewScope，](../resources/accessreviewscope.md) 并了解如何 [配置访问评审定义的范围](/graph/accessreviews-scope-concept)。 必需。| 
-| instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | 对于所有组评审，这将确定将审核哪些组的范围。 请参阅 [accessReviewScope，](../resources/accessreviewscope.md) 并了解如何 [配置访问评审定义的范围](/graph/accessreviews-scope-concept)。| 
-| 设置 | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| 访问评审系列的设置。 定期在此处确定。 请参阅 [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)。 |
-| reviewers | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合 | 定义审阅者是谁。 如果未指定任何内容，则评论是自 (用户查看自己的访问权限) 。 有关分配审阅者的选项示例，请参阅使用 Microsoft Graph API 将审阅者分配给你的访问[Graph定义](/graph/accessreviews-reviewers-concept)。  |
-|fallbackReviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合|如果提供，当主审阅者不存在时，会要求回退审阅者完成审阅。 例如，如果选择了经理作为，而审核中的主体在 Azure AD 中没有经理，则回退审阅者 `reviewers` 需要审阅该主体。|
+| settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| 访问评审系列的设置。 定期在此处确定。 请参阅 [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)。 |
 
 ## <a name="response"></a>响应
 如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象。
@@ -136,7 +137,6 @@ Content-type: application/json
 ---
 
 
----
 
 
 #### <a name="response"></a>响应
@@ -204,7 +204,8 @@ Content-type: application/json
       }
     },
   "applyActions": []
-  }
+  },
+  "additionalNotificationRecipients": []
 }
 ```
 
@@ -388,7 +389,8 @@ Content-type: application/json
         "@odata.type": "#microsoft.graph.removeAccessApplyAction"
       }
     ]
-  }
+  },
+  "additionalNotificationRecipients": []
 }
 ```
 
@@ -400,6 +402,7 @@ Content-type: application/json
 + 它每半年重复一次，自 startDate 起 1 年后结束。
 
 #### <a name="request"></a>请求
+
 
 <!-- {
   "blockType": "request",
@@ -547,10 +550,10 @@ Content-type: application/json
         "endDate": "2022-05-05"
       }
     }
-  }
+  },
+  "additionalNotificationRecipients": []
 }
 ```
-
 
 <!--
 {

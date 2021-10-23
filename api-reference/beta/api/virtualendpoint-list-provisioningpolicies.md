@@ -1,16 +1,16 @@
 ---
-title: 列出 cloudPcProvisioningPolicies
+title: 列出 provisioningPolicies
 description: 查看所有云电脑预配策略的属性和关系。
 author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 511ac27c2493cd11afc02ccc927472ab21133d24
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 45b546c427e4e563804cd90f5f7a62dfffa7d4c1
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59763091"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60558922"
 ---
 # <a name="list-provisioningpolicies"></a>列出 provisioningPolicies
 
@@ -28,7 +28,7 @@ ms.locfileid: "59763091"
 |:---|:---|
 |委派（工作或学校帐户）|CloudPC.Read.All、CloudPC.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|CloudPC.Read.All、CloudPC.ReadWrite.All|
+|Application|CloudPC.Read.All、CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 

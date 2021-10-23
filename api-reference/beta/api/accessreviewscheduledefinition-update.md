@@ -1,16 +1,16 @@
 ---
 title: 更新 accessReviewScheduleDefinition
 description: 更新现有 accessReviewScheduleDefinition 对象以更改其一个或多个属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 57dafe464a286f61dafbc348d6818e933eac9778
-ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
+ms.openlocfilehash: aecea534fd74707241928424fe32fb2135c7d64b
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58384066"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60559167"
 ---
 # <a name="update-accessreviewscheduledefinition"></a>更新 accessReviewScheduleDefinition
 
@@ -31,7 +31,7 @@ ms.locfileid: "58384066"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | AccessReview.ReadWrite.All |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序                            | AccessReview.ReadWrite.All |
+|Application                            | AccessReview.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -51,12 +51,12 @@ PUT /identityGovernance/accessReviews/definitions/{review-id}
 
 | 属性 | 类型 | 说明 |
 |:-------------|:------------|:------------|
-| displayName | String | 访问评审系列的名称。 |
 | descriptionForAdmins | String | 提供给管理员评价的上下文。 |
 | descriptionForReviewers | String | 提供给审阅者的审阅上下文。 |
-| 设置 | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md) | 访问评审系列的设置。 请参阅 [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)。 |
-| reviewers | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合|  定义审阅者是谁。 如果未指定任何权限，则评论是自 (用户查看自己的访问权限) 。 只有在 **将** 单个用户分配为审阅者时，审阅者属性才可更新。 请参阅 [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)。 |
-|fallbackReviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合|用于定义回退审阅者列表的审阅者范围的集合，如果从指定的审阅者列表中找不到用户，将通知这些审阅者采取措施。 当组所有者指定为审阅者但组所有者不存在时，或者将经理指定为审阅者但用户的经理不存在时，可能会发生这种情况。|
+| displayName | String | 访问评审系列的名称。 |
+| fallbackReviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合|用于定义回退审阅者列表的审阅者范围的集合，如果从指定的审阅者列表中找不到用户，将通知这些审阅者采取措施。 当组所有者指定为审阅者但组所有者不存在时，或者将经理指定为审阅者但用户的经理不存在时，可能会发生这种情况。|
+| reviewers | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合|  定义审阅者是谁。 如果未指定任何内容，则评论是自 (用户查看自己的访问权限) 。 只有在 **将** 单个用户分配为审阅者时，审阅者属性才可更新。 请参阅 [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)。 |
+| settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md) | 访问评审系列的设置。 请参阅 [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)。 |
 | backupReviewers (已弃) |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合| 此属性已被 **fallbackReviewers 取代**。 但是，指定 **backupReviewers** 或 **fallbackReviewers** 会自动向另一个属性填充相同的值。 |
 
 **PUT** 请求希望传入完整的对象，其中包括所有可写属性，而不只是要更新的属性。

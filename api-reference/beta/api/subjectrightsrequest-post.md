@@ -5,12 +5,12 @@ author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 17b39898a7bdfebe3ff147329033b5044646d6e0
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 043aa156ac456039708e6a36f5306139f291ad86
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60447020"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60561778"
 ---
 # <a name="create-subjectrightsrequest"></a>创建 subjectRightsRequest
 命名空间：microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "60447020"
 |:---|:---|
 |委派（工作或学校帐户）|SubjectRightsRequest.ReadWrite.All*|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持|
+|Application|不支持|
 
 >[!IMPORTANT]
 >标有星号* (*) 当前不可用。 有关详细信息，请参阅[已知问题](/graph/known-issues#compliance)。
@@ -70,6 +70,8 @@ POST /privacy/subjectRightsRequests
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_subjectRightsRequest_from_"
@@ -97,6 +99,20 @@ Content-length: 849
     }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-subjectrightsrequest-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-subjectrightsrequest-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-subjectrightsrequest-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

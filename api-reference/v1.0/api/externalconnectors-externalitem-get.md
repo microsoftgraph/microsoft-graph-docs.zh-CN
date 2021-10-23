@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: c6c68c73e1a96f4c0ff949100f29081e70452adf
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c983947208ea02f4af0f395c3e294acedc894b89
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59029596"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60558544"
 ---
 # <a name="get-externalitem"></a>获取 externalItem
 命名空间：microsoft.graph.externalConnectors
@@ -26,7 +26,7 @@ ms.locfileid: "59029596"
 |:---|:---|
 |委派（工作或学校帐户）|不适用|
 |委派（个人 Microsoft 帐户）|不适用|
-|应用程序| ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All |
+|Application| ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -35,7 +35,7 @@ ms.locfileid: "59029596"
 }
 -->
 ``` http
-GET /connections/{connectionsId}/items/{externalItemId}
+GET /external/connections/{connectionsId}/items/{externalItemId}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -59,7 +59,7 @@ GET /connections/{connectionsId}/items/{externalItemId}
 下面展示了示例请求。
 
 ```http
-GET https://graph.microsoft.com/beta/connections/contosohr/items/TSP228082938
+GET https://graph.microsoft.com/beta/external/connections/contosohr/items/TSP228082938
 ```
 
 

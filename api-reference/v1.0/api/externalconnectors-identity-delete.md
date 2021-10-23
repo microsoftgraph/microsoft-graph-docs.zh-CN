@@ -5,12 +5,12 @@ author: sacampbe-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 0f56893f6234d00c09a82abc115f014b357ba973
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ba848acc414fbd797bac39662df69c779fe5a220
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59046136"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60561477"
 ---
 # <a name="delete-identity"></a>删除标识
 命名空间：microsoft.graph.externalConnectors
@@ -25,7 +25,7 @@ ms.locfileid: "59046136"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持                               |
 | 委派（个人 Microsoft 帐户） | 不支持                               |
-| 应用程序                            | ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All                 |
+| Application                            | ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All                 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -34,7 +34,7 @@ ms.locfileid: "59046136"
 }
 -->
 ``` http
-DELETE /connections/{connectionId}/groups/{externalGroupId}/members/{identityId}
+DELETE /external/connections/{connectionId}/groups/{externalGroupId}/members/{identityId}
 ```
 
 ## <a name="request-headers"></a>请求标头

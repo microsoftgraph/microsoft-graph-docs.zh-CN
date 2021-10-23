@@ -5,12 +5,12 @@ author: jerrysai
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 7ee03ae95f73fe334175749c0ad938c1a63aaa2a
-ms.sourcegitcommit: 94dc71a6d4fbdc46f2681a1add13416bc9b4a6e9
+ms.openlocfilehash: e468c12d83ed1fbebdf23a546373270415bf807b
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60115415"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60561449"
 ---
 # <a name="update-continuousaccessevaluationpolicy"></a>更新 continuousAccessEvaluationPolicy
 命名空间：microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "60115415"
 |:--------------------------------------|:---------------------------------------------------------------|
 |委派（工作或学校帐户）     | Policy.Read.All、Policy.ReadWrite.ConditionalAccess 和 Application.Read.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | Policy.Read.All、Policy.ReadWrite.ConditionalAccess 和 Application.Read.All |
+|Application                            | Policy.Read.All、Policy.ReadWrite.ConditionalAccess 和 Application.Read.All |
 
 > [!NOTE]
 > 此 API 有 [一个与](/graph/known-issues#permissions) 权限相关的已知问题。  
@@ -52,10 +52,7 @@ PATCH /identity/continuousAccessEvaluationPolicy
 
 |属性|类型|说明|
 |:---|:---|:---|
-|groups|字符串集合|作用域中用于评估的组标识符的集合。 当集合为空时，所有组都位于范围内。|
-|isEnabled|Boolean| `true` 指示是否应该执行连续访问评估;否则 `false` 为 。 |
-|users|String collection|评估范围内用户标识符的集合。 当集合为空时，所有用户都位于范围内。|
-
+|migrate|布尔值| `true` 指示连续访问评估策略设置应为或已迁移到条件访问策略。 |
 
 ## <a name="response"></a>响应
 
@@ -77,8 +74,7 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.continuousAccessEvaluationPolicy",
-  "users": [ "88139f01-1f8d-4c06-ad74-a2544cee9aee" ],
-  "groups": [ "9972fb3f-7a40-49f5-85f6-129d9dfbd47a", "ea178055-4713-4d9a-a06c-ff17466b7e77"]
+  "migrate": true
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: akjo
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d363020cd5458d385302f1a4cd8bb617a5f24433
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: b535efc42d34a6f8b4285f4dbaabf58f8b0e71d7
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60289684"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60561736"
 ---
 # <a name="create-channel"></a>创建频道
 
@@ -28,7 +28,7 @@ ms.locfileid: "60289684"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | **Channel.Create、Group.ReadWrite.All、Directory.ReadWrite.All** |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Channel.Create.Group *、Channel.Create、Teamwork.Migrate.All、Group.ReadWrite.All**、Directory.ReadWrite.All** |
+|Application | Channel.Create.Group *、Channel.Create、Teamwork.Migrate.All、Group.ReadWrite.All**、Directory.ReadWrite.All** |
 
 > **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。 标记为 **的权限已弃用，不应使用。
 
@@ -338,6 +338,68 @@ Content-length: 201
     "isFavoriteByDefault": null,
     "email": "",
     "webUrl": "https://teams.microsoft.com/l/channel/19:12b76eea88574bd1969dca37e2b7a819@thread.skype/My%20First%20Private%20Channel?groupId=57fb72d0-d811-46f4-8947-305e6072eaa5&tenantId=0fddfdc5-f319-491f-a514-be1bc1bf9ddc",
+    "membershipType": "private"
+}
+```
+
+### <a name="example-5-create-private-channel-on-behalf-of-user-using-user-principal-name"></a>示例 5：使用用户主体名称代表用户创建私人频道
+
+#### <a name="request"></a>请求
+
+以下示例显示创建私人频道和将用户添加为团队所有者的请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "create_private_channel_upn"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels
+Content-type: application/json
+
+{
+  "@odata.type": "#Microsoft.Graph.channel",
+  "membershipType": "private",
+  "displayName": "My First Private Channel",
+  "description": "This is my first private channels",
+  "members":
+     [
+        {
+           "@odata.type":"#microsoft.graph.aadUserConversationMember",
+           "user@odata.bind":"https://graph.microsoft.com/beta/users('jacob@contoso.com')",
+           "roles":["owner"]
+        }
+     ]
+}
+```
+
+
+---
+
+#### <a name="response"></a>响应
+
+以下示例显示了相应的响应。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "name": "create_private_channel_upn",
+  "@odata.type": "microsoft.graph.channel"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+Content-length: 201
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels/$entity",
+    "id": "19:33b76eea88574bd1969dca37e2b7a819@thread.skype",
+    "displayName": "My First Private Channel",
+    "description": "This is my first private channels",
+    "isFavoriteByDefault": null,
+    "email": "",
+    "webUrl": "https://teams.microsoft.com/l/channel/19:33b76eea88574bd1969dca37e2b7a819@thread.skype/My%20First%20Private%20Channel?groupId=57fb72d0-d811-46f4-8947-305e6072eaa5&tenantId=0fddfdc5-f319-491f-a514-be1bc1bf9ddc",
     "membershipType": "private"
 }
 ```
