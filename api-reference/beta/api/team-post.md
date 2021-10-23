@@ -5,12 +5,12 @@ author: anandjo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 89d5808c0e31065eecc9a511cc23cb560afee11e
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: 6935e5497b5ab28a2808dcd90e6b6fcc3c2171c2
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60289285"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60559685"
 ---
 # <a name="create-team"></a>创建团队
 
@@ -631,6 +631,52 @@ Content-Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')
 
 * **createdDateTime** 将在未来设置。
 * 正确指定了 **createdDateTime**，但缺少 **teamCreationMode** 实例属性或者将其设置成了无效值。
+
+### <a name="example-9-application-permissions-using-user-principal-name"></a>示例 9：使用用户主体名称的应用程序权限
+
+下面是使用应用程序权限的最小请求示例。 通过省略其他属性，客户端可以隐式采用 `template` 表示的预定义模板的默认值。 通过应用程序权限发出请求时，必须在 `members` 集合中指定[用户](../resources/user.md)。
+
+#### <a name="request"></a>请求
+
+<!-- {
+  "blockType": "request",
+  "name": "create_team_post_upn"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/teams
+Content-Type: application/json
+
+{
+   "template@odata.bind":"https://graph.microsoft.com/beta/teamsTemplates('standard')",
+   "displayName":"My Sample Team",
+   "description":"My Sample Team’s Description",
+   "members":[
+      {
+         "@odata.type":"#microsoft.graph.aadUserConversationMember",
+         "roles":[
+            "owner"
+         ],
+         "user@odata.bind":"https://graph.microsoft.com/beta/users('jacob@contoso.com')"
+      }
+   ]
+}
+```
+
+
+#### <a name="response"></a>响应
+<!-- {
+  "blockType": "response",
+  "name": "create_team_post_upn"
+}-->
+
+```http
+HTTP/1.1 202 Accepted
+Content-Type: application/json
+Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')/operations('3a6fdce1-c261-48bc-89de-1cfef658c0d5')
+Content-Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')
+Content-Length: 0
+```
 
 
 ## <a name="see-also"></a>另请参阅

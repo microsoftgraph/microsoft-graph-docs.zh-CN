@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9740cb4db3e65602d0041dc9c43c14430c9c88ae
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9c8e862ae28a07046419f582550ba7008a7cf112
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59109988"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60559048"
 ---
 # <a name="add-member-to-team"></a>向团队添加新成员
 命名空间：microsoft.graph
@@ -56,7 +56,9 @@ POST /teams/{team-id}/members
 
 ## <a name="examples"></a>示例
 
-### <a name="request"></a>请求
+### <a name="example-1-add-a-member-to-a-team"></a>示例 1：将成员添加到团队
+
+#### <a name="request"></a>请求
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -93,7 +95,7 @@ Content-length: 100
 
 ---
 
-### <a name="response"></a>响应
+#### <a name="response"></a>响应
 **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- 
@@ -119,6 +121,53 @@ Content-type: application/json
     "email": "CameronW@M365x987948.OnMicrosoft.com"
 }
 ```
+
+### <a name="example-2-add-a-member-to-a-team-using-user-principal-name"></a>示例 2：使用用户主体名称向团队添加成员
+
+#### <a name="request"></a>请求
+
+<!-- {
+  "blockType": "request",
+  "name": "create_conversationmember_upn"
+}
+-->
+``` http
+POST https://graph.microsoft.com/v1.0/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members
+Content-type: application/json
+Content-length: 100
+
+{
+    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+    "roles": ["owner"],
+    "user@odata.bind": "https://graph.microsoft.com/v1.0/users('jacob@contoso.com')"
+}
+```
+
+
+### <a name="response"></a>响应
+**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.conversationMember"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+    "id": "ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=",
+    "roles": [
+        "owner"
+    ],
+    "userId": "50dffbae-ad0f-428e-a86f-f53b0acfc641",
+    "displayName": "Jacob Hancock",
+    "email": "jacob@contoso.com"
+}
+```
+
 ## <a name="see-also"></a>另请参阅
 
 - [在频道中创建成员](channel-post-members.md)

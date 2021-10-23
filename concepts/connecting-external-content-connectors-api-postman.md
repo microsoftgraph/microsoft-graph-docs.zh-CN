@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: c86c75de4ebf966e1fec02184af35aa4c12d4da7
-ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
+ms.openlocfilehash: 2049332c4eb5f82cf44d3cde3fad71f02bd9049a
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "59996030"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60561463"
 ---
 # <a name="use-postman-with-the-microsoft-graph-connectors-api"></a>将 Postman 与 Microsoft Graph 连接器 API 一并使用
 
@@ -270,7 +270,7 @@ Content-type: application/json
 
 如果外部服务使用非 Azure AD ACL，请同步这些权限。  
 
-外部组（以及 Azure Active Directory 用户和组）用于设置 `externalItems` Microsoft Graph 连接的权限。 有关详细信息，请参阅 [externalGroups](/graph/api/resources/externalgroup?view=graph-rest-beta&preserve-view=true)。
+外部组（以及 Azure Active Directory 用户和组）用于设置 `externalItems` Microsoft Graph 连接的权限。有关详细信息，请参阅 [externalGroups](/graph/api/resources/externalgroup?view=graph-rest-beta&preserve-view=true)。
 
 这是一个请求示例。
 
@@ -311,7 +311,7 @@ Content-Type: application/json
 请求示例如下所示。
 
 ```http
-PUT https://graph.microsoft.com/beta/connections/contosohr/items/TSP228082938 
+PUT https://graph.microsoft.com/beta/external/connections/contosohr/items/TSP228082938 
 Content-type: application/json 
 
 { 

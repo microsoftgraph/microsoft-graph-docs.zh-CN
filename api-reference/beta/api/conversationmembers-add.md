@@ -5,12 +5,12 @@ author: nkramer
 doc_type: apiPageType
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: c54b13d0b0388d35def5989dbe840274a7f79358
-ms.sourcegitcommit: 30fca91ed203a9ab7b0562833ce0c20c7fb7b7b1
+ms.openlocfilehash: 3db7b6d9355d57f12c3789f0c70c3f4ae9b58e35
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59932009"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60560007"
 ---
 # <a name="conversationmember-add"></a>conversationMember: add
 
@@ -225,6 +225,70 @@ Content-Type: application/json
                 "code": "NotFound",
                 "message": ""
             }
+        },
+        {
+            "@odata.type": "#microsoft.graph.aadUserConversationMemberResult",
+            "userId": "86503198-b81b-43fe-81ee-ad45b8848ac9",
+            "error": null
+        }
+    ]
+}
+```
+
+### <a name="example-3-add-members-in-bulk-to-a-team-using-user-principal-name"></a>示例 3：使用用户主体名称将成员批量添加到团队
+
+#### <a name="request"></a>请求
+
+下面的示例展示了使用成员的用户主体名称向团队添加多个成员的请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "bulkaddmembers_team_upn"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/teams/e4183b04-c9a2-417c-bde4-70e3ee46a6dc/members/add
+Content-Type: application/json
+
+{
+    "values": [
+        {
+            "@odata.type": "microsoft.graph.aadUserConversationMember",
+            "roles":[],
+            "user@odata.bind": "https://graph.microsoft.com/beta/users('jacob@contoso.com')"
+        },
+        {
+            "@odata.type": "microsoft.graph.aadUserConversationMember",
+            "roles":["owner"],
+            "user@odata.bind": "https://graph.microsoft.com/beta/users('alex@contoso.com')"
+        }
+    ]
+}
+```
+
+
+#### <a name="response"></a>响应
+
+以下是答复。
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.actionResultPart)"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.aadUserConversationMemberResult)",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.aadUserConversationMemberResult",
+            "userId": "18a80140-b0fb-4489-b360-2f6efaf225a0",
+            "error": null
         },
         {
             "@odata.type": "#microsoft.graph.aadUserConversationMemberResult",
