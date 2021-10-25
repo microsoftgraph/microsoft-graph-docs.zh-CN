@@ -1,11 +1,11 @@
 ---
 ms.localizationpriority: medium
-ms.openlocfilehash: a78f3a256688e54a6232bb79e2a5bb792ff3dc00
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 95e6218d0f21d81491652a0229d3272a6a61d243
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59765318"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60562772"
 ---
 ### <a name="application-properties"></a>应用程序属性
 
@@ -53,6 +53,7 @@ ms.locfileid: "59765318"
 | alternativeSecurityIds/any(a:a/type)             | ![默认支持][RDS]               |                              | ![需要高级查询参数。][AQP] | ![需要高级查询参数。][AQP] | ![不支持][NS]                       |
 | approximateLastSignInDateTime                    | ![默认支持][RDS]               |                              | ![默认支持][RDS]               | ![默认支持][RDS]               | ![需要高级查询参数。][AQP] |
 | deviceId                                         | ![默认支持][RDS]               |                              |                                            |                                            | ![不支持][NS]                       |
+| extensionAttributes/extensionAttribute1-15 | ![需要高级查询参数。][AQP] | ![需要高级查询参数。][AQP]         |                                            |                                            | ![需要高级查询参数。][AQP]                       |
 | displayName                                      | ![默认支持][RDS]               | ![默认支持][RDS] |                                            |                                            | ![需要高级查询参数。][AQP] |
 | isCompliant                                      | ![默认支持][RDS]               |                              |                                            |                                            | ![不支持][NS]                       |
 | isManaged                                        | ![默认支持][RDS]               |                              |                                            |                                            | ![不支持][NS]                       |
