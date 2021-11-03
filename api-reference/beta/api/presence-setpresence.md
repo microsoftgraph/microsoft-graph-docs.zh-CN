@@ -2,15 +2,15 @@
 title: presence： setPresence
 description: 设置用户的应用程序状态会话状态信息。
 author: jsandoval-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 7734283f513bd50d9f0187a24ec41e30ebadb38d
-ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
+ms.openlocfilehash: 5753f09d69a0a81e41c25b51508f4af65d642d63
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58396961"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "60697000"
 ---
 # <a name="presence-setpresence"></a>presence： setPresence
 
@@ -21,13 +21,13 @@ ms.locfileid: "58396961"
 将用户的状态设置为应用程序状态。
 
 ### <a name="presence-sessions"></a>状态会话
-一个用户可以具有多个状态会话，因为用户可以在桌面、Teams和 web (多个) 。 每个Teams客户端都有一个独立的状态会话，并且用户的状态是来自所有隐藏会话的聚合状态。
+用户可以具有多个状态会话，因为用户可以在桌面、移动和 web Teams多个 (客户端) 。 每个Teams客户端都有一个独立的状态会话，并且用户的状态是来自所有隐藏会话的聚合状态。
 
 同样，应用程序可以具有其自己的用户状态会话，并能够更新状态。
 
 以下是会话状态聚合方式的优先级：
-* 用户配置>应用配置 (状态会覆盖其他用户) 
-* 在已配置应用之间： (状态设置""忙碌""离开) >> DoNotDisturb >支持
+* 用户配置>应用配置 (用户配置的状态会覆盖其他用户) 
+* 在已配置应用之间： (状态设置状态) >忙碌>状态> DoNotDisturb
 
 ### <a name="timeout-expiration-and-keep-alive"></a>超时、到期并保持活动状态
 状态会话 **可能会超时并** 过期，因此应用程序需要在超时之前调用此 API，以维护会话的状态;或过期 **之前，** 使会话保持活动状态。

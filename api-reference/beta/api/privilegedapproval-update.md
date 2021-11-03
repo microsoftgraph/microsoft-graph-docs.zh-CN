@@ -1,22 +1,24 @@
 ---
 title: 更新 privilegedapproval
 description: 更新 privilegedapproval 对象的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: cad3eb0b6f7e974cfa761c7b0b94d1bbf3538f10
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: a69f359e50fb03c25ed7aa5185c13086ff53e85c
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453154"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688189"
 ---
 # <a name="update-privilegedapproval"></a>更新 privilegedapproval
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 更新 privilegedapproval 对象的属性。
 ## <a name="permissions"></a>权限
@@ -47,10 +49,10 @@ PATCH /privilegedApproval/{id}
 |approvalDuration|期限||
 |approvalState|string| 可取值为：`pending`、`approved`、`denied`、`aborted`、`canceled`。|
 |approvalType|字符串||
-|approverReason|String||
+|approverReason|字符串||
 |endDateTime|DateTimeOffset||
-|requestorReason|字符串||
-|roleId|字符串||
+|requestorReason|String||
+|roleId|String||
 |startDateTime|DateTimeOffset||
 |userId|String||
 

@@ -5,12 +5,12 @@ author: bhartono
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: a07e24d52e604070cd70680221be6f0172e04ed7
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 7e54a3ea6dec4185760a67b5f39afbf33f8f2dc7
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60559552"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688940"
 ---
 # <a name="add-member-to-a-chat"></a>向聊天添加成员
 
@@ -28,7 +28,7 @@ ms.locfileid: "60559552"
 |---------|-------------|
 |委派（工作或学校帐户）| ChatMember.ReadWrite、Chat.ReadWrite |
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application| Chat.Manage.Chat*、ChatMember.ReadWrite.All、Chat.ReadWrite.All |
+|应用程序| Chat.Manage.Chat*、ChatMember.ReadWrite.All、Chat.ReadWrite.All |
 
 > **注意**：标有 * 的权限用于 [特定于资源的同意](https://aka.ms/teams-rsc)。
 
@@ -243,6 +243,8 @@ Location: /chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/MCMjMjQzM
 
 下面是一个请求示例。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_conversation_member_upn"
@@ -258,6 +260,24 @@ content-type: application/json
     "roles": ["owner"]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-conversation-member-upn-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-conversation-member-upn-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-conversation-member-upn-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-conversation-member-upn-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### <a name="response"></a>响应

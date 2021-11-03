@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
 author: jesakowi
-ms.openlocfilehash: 4c63c0cdcfb6324077092923eeff91eed65e7b60
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c65456a7dbe9b1adcb57a19a75ebf6322e84a189
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59134281"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60684061"
 ---
 # <a name="verifiedpublisher-resource-type"></a>verifiedPublisher 资源类型
 
@@ -22,9 +22,9 @@ ms.locfileid: "59134281"
 
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|displayName|String|应用发布者的合作伙伴中心帐户中的已验证发布者名称。|
-|verifiedPublisherId|String| 应用发布者的合作伙伴中心帐户中经过验证的发布者的 ID。 |
 |addedDateTime|DateTimeOffSet| 首次添加或最近更新已验证发布者的时间戳。 |
+|displayName|字符串|应用发布者的合作伙伴中心帐户中的已验证发布者名称。|
+|verifiedPublisherId|String| 应用发布者的合作伙伴中心帐户中经过验证的发布者的 ID。 |
 
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -44,7 +44,6 @@ ms.locfileid: "59134281"
   "verifiedPublisherId": "String",
   "addedDateTime": "DateTimeOffSet"
 }
-
 ```
 
 

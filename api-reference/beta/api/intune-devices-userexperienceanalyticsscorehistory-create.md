@@ -2,15 +2,15 @@
 title: 创建 userExperienceAnalyticsScoreHistory
 description: 创建新的 userExperienceAnalyticsScoreHistory 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 96f2c6940abf44a8a89cf91c2fa1a70e4ed2207c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 263a044429462ba3c6f073d0a19b795205ccd6e9
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59059005"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688652"
 ---
 # <a name="create-userexperienceanalyticsscorehistory"></a>创建 userExperienceAnalyticsScoreHistory
 
@@ -61,9 +61,11 @@ POST /deviceManagement/userExperienceAnalyticsScoreHistory
 |coreSigninScore|Int32|用户体验分析设备核心登录分数。 分数范围为 0-100，100 是理想分数。|
 |recommendedSoftwareScore|Int32|用户体验分析设备核心登录分数。 分数范围为 0-100，100 是理想分数。|
 |appHealthOverallScore|Int32|用户体验分析应用运行状况总体分数。|
+|batteryHealthScore|Int32|用户体验分析电池运行状况分数。|
 |startupTotalDevices|Int32|用户体验分析类别启动性能的总设备计数。|
 |recommendedSoftwareTotalDevices|Int32|用户体验分析类别推荐软件的总设备计数。|
 |appHealthTotalDevices|Int32|用户体验分析类别应用运行状况的总设备计数。|
+|batteryHealthTotalDevices|Int32|用户体验分析类别电池运行状况的总设备计数。|
 |restartScore|Int32|重启分数。 分数将在 0-100 之间，100 是理想分数，0 表示重启过多。 有效值为 0 到 9999999|
 
 
@@ -78,7 +80,7 @@ POST /deviceManagement/userExperienceAnalyticsScoreHistory
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsScoreHistory
 Content-type: application/json
-Content-length: 422
+Content-length: 485
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsScoreHistory",
@@ -89,9 +91,11 @@ Content-length: 422
   "coreSigninScore": 15,
   "recommendedSoftwareScore": 8,
   "appHealthOverallScore": 5,
+  "batteryHealthScore": 2,
   "startupTotalDevices": 3,
   "recommendedSoftwareTotalDevices": 15,
   "appHealthTotalDevices": 5,
+  "batteryHealthTotalDevices": 9,
   "restartScore": 12
 }
 ```
@@ -101,7 +105,7 @@ Content-length: 422
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 471
+Content-Length: 534
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsScoreHistory",
@@ -113,9 +117,11 @@ Content-Length: 471
   "coreSigninScore": 15,
   "recommendedSoftwareScore": 8,
   "appHealthOverallScore": 5,
+  "batteryHealthScore": 2,
   "startupTotalDevices": 3,
   "recommendedSoftwareTotalDevices": 15,
   "appHealthTotalDevices": 5,
+  "batteryHealthTotalDevices": 9,
   "restartScore": 12
 }
 ```

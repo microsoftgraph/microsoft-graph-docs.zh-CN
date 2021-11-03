@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ddded490679de564a6864e363f8d95e45ecd2504bf70f1c7eff6efe049d56e88
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8e85276c56d4df4fb59f360f78911c6492f5beb5
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57378775"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60687941"
 ---
 ```java
 
@@ -15,7 +15,7 @@ ExternalConnection externalConnection = new ExternalConnection();
 externalConnection.name = "Contoso HR Service Tickets";
 externalConnection.description = "Connection to index HR service tickets";
 
-graphClient.connections("contosohr")
+graphClient.external().connections("contosohr")
     .buildRequest()
     .patch(externalConnection);
 

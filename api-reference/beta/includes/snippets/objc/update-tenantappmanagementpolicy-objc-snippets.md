@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 46738b05dfe088e8b3efa3e89084ae988024af4a
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 29ec480be59a445cad0094b10be0bdafcf035155
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58513816"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60676779"
 ---
 ```objc
 
@@ -30,7 +30,24 @@ MSGraphPasswordCredentialConfiguration *passwordCredentials = [[MSGraphPasswordC
 [passwordCredentials setMaxLifetime:@"P4DT12H30M5S"];
 [passwordCredentials setRestrictForAppsCreatedAfterDateTime: "2019-01-01T10:37:00Z"];
 [passwordCredentialsList addObject: passwordCredentials];
+MSGraphPasswordCredentialConfiguration *passwordCredentials = [[MSGraphPasswordCredentialConfiguration alloc] init];
+[passwordCredentials setRestrictionType: [MSGraphAppCredentialRestrictionType symmetricKeyAddition]];
+[passwordCredentials setMaxLifetime: null];
+[passwordCredentials setRestrictForAppsCreatedAfterDateTime: "2021-04-01T10:37:00Z"];
+[passwordCredentialsList addObject: passwordCredentials];
+MSGraphPasswordCredentialConfiguration *passwordCredentials = [[MSGraphPasswordCredentialConfiguration alloc] init];
+[passwordCredentials setRestrictionType: [MSGraphAppCredentialRestrictionType symmetricKeyLifetime]];
+[passwordCredentials setMaxLifetime:@"P40D"];
+[passwordCredentials setRestrictForAppsCreatedAfterDateTime: "2015-04-01T10:37:00Z"];
+[passwordCredentialsList addObject: passwordCredentials];
 [applicationRestrictions setPasswordCredentials:passwordCredentialsList];
+NSMutableArray *keyCredentialsList = [[NSMutableArray alloc] init];
+MSGraphKeyCredentialConfiguration *keyCredentials = [[MSGraphKeyCredentialConfiguration alloc] init];
+[keyCredentials setRestrictionType: [MSGraphAppKeyCredentialRestrictionType asymmetricKeyLifetime]];
+[keyCredentials setMaxLifetime:@"P30D"];
+[keyCredentials setRestrictForAppsCreatedAfterDateTime: "2015-01-01T10:37:00Z"];
+[keyCredentialsList addObject: keyCredentials];
+[applicationRestrictions setKeyCredentials:keyCredentialsList];
 [tenantAppManagementPolicy setApplicationRestrictions:applicationRestrictions];
 
 NSError *error;

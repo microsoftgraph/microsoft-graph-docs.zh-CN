@@ -2,15 +2,15 @@
 title: 获取 windows10VpnConfiguration
 description: 读取 windows10VpnConfiguration 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 48c9815c46eb870ec0fb8ba610175aad08b45cfc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3d65e3e06233ac1624f6e78df7207e29ea0b21f6
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59010020"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60693931"
 ---
 # <a name="get-windows10vpnconfiguration"></a>获取 windows10VpnConfiguration
 
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4950
+Content-Length: 5014
 
 {
   "value": {
@@ -125,6 +125,7 @@ Content-Length: 4950
     "dnsSuffixes": [
       "Dns Suffixes value"
     ],
+    "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value",
     "authenticationMethod": "usernameAndPassword",
     "rememberUserCredentials": true,
     "enableConditionalAccess": true,

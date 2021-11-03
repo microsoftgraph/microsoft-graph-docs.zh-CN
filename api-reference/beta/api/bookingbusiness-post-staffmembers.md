@@ -1,16 +1,16 @@
 ---
 title: 创建 bookingStaffMember
 description: 在指定的 bookingbusiness 中创建新员工。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: e92b3cc416d3cfe462c65da35f8bb4dd6d2e6b50
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e4900d9295cfac1d48a20899080734bfa757b16f
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047852"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688722"
 ---
 # <a name="create-bookingstaffmember"></a>创建 bookingStaffMember
 
@@ -18,7 +18,7 @@ ms.locfileid: "52047852"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在指定的[bookingbusiness](../resources/bookingstaffmember.md)中创建新的[员工。](../resources/bookingbusiness.md)
+在指定的[bookingBusiness](../resources/bookingstaffmember.md)中创建新的[员工。](../resources/bookingbusiness.md)
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -37,7 +37,7 @@ POST /bookingBusinesses/{id}/staffMembers
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {code}。 必需。|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [bookingStaffMember](../resources/bookingstaffmember.md) 对象的 JSON 表示形式。 必须包括以下属性：
@@ -48,10 +48,10 @@ POST /bookingBusinesses/{id}/staffMembers
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在 `201, Created` 响应正文中返回 响应代码和 [bookingStaffMember](../resources/bookingstaffmember.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [bookingStaffMember](../resources/bookingstaffmember.md) 对象。
 
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 下面展示了示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -71,6 +71,7 @@ Content-length: 309
     "emailAddress":"danas@contoso.com",
     "role@odata.type":"#microsoft.graph.bookingStaffRole",
     "role":"externalGuest",
+    "timeZone":"America/Chicago",
     "useBusinessHours":true,
     "workingHours@odata.type":"#Collection(microsoft.graph.bookingWorkHours)",
     "workingHours":[
@@ -160,9 +161,10 @@ Content-length: 309
 
 ---
 
-在请求正文中，提供 [bookingStaffMember](../resources/bookingstaffmember.md) 对象的 JSON 表示形式。
-##### <a name="response"></a>响应
-下面展示了示例响应。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+### <a name="response"></a>响应
+下面展示了示例响应。 
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -180,6 +182,7 @@ Content-type: application/json
     "availabilityIsAffectedByPersonalCalendar":false,
     "colorIndex":1,
     "role":"externalGuest",
+    "timeZone":"America/Chicago",
     "useBusinessHours":true,
     "workingHours":[
         {

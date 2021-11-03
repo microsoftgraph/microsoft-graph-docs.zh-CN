@@ -1,22 +1,24 @@
 ---
 title: 列出 privilegedOperationEvents
-description: filter'' expression.
-localization_priority: Normal
+description: 检索 PIM 为角色操作生成的审核事件。
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 8d24f55f942f33bb2d831f6479461acfa65f96ca
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 5eaafd77c903a006bdfb01a077de1a006b34ac9d
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58454260"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694713"
 ---
 # <a name="list-privilegedoperationevents"></a>列出 privilegedOperationEvents
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 检索[privilegedOperationEvent](../resources/privilegedoperationevent.md)对象的列表，这些对象代表角色操作Privileged Identity Management生成的审核事件。 有关审核事件的详细信息，请参阅 [privilegedOperationEvent](../resources/privilegedoperationevent.md)。 若要筛选查询结果，请使用标准 OData ``$filter`` 表达式。
 
@@ -66,7 +68,7 @@ GET /privilegedOperationEvents
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType%20eq%20'Assign'
 ```
 ##### <a name="response"></a>响应
-以下示例显示了相应的响应。 注意：为了提高可读性，可能缩短此处显示的响应对象。
+以下示例显示了相应的响应。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -126,7 +128,7 @@ Content-length: 547
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType%20eq%20'Activate'
 ```
 ##### <a name="response"></a>响应
-以下示例显示了相应的响应。 注意：为了提高可读性，可能缩短此处显示的响应对象。
+以下示例显示了相应的响应。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -180,14 +182,14 @@ Content-length: 547
 
 ### <a name="get-audit-events-for-role-assignment-deactivation"></a>获取停用的角色分配事件
 ##### <a name="request"></a>请求
-以下示例显示一个请求，请求获取用于停用的角色分配事件。 在这种情况下，值为 ``requestType`` ``Deactivate`` 。
+以下示例显示一个请求，请求获取停用的角色分配事件。 在这种情况下，值为 ``requestType`` ``Deactivate`` 。
 
 <!-- { "blockType": "request" } -->
 ```http
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType%20eq%20'Deactivate'
 ```
 ##### <a name="response"></a>响应
-以下示例显示了相应的响应。 注意：为了提高可读性，可能缩短此处显示的响应对象。
+以下示例显示了相应的响应。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -230,7 +232,7 @@ Content-length: 547
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=(creationDateTime%20ge%202017-06-25T07:00:00Z)%20and%20(creationDateTime%20le%202017-07-25T17:30:17Z)&$count=true&$orderby=creationDateTime%20desc
 ```
 ##### <a name="response"></a>响应
-以下示例显示了相应的响应。 注意：为了提高可读性，可能缩短此处显示的响应对象。
+以下示例显示了相应的响应。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,16 +1,16 @@
 ---
 title: Windows更新 API 概述
-description: 适用于Windows更新部署服务可让你的组织控制提供给你的设备的更新。
+description: 适用于Windows更新部署服务可让你的组织控制提供给设备的更新。
 author: Alice-at-Microsoft
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: df2977584ba523f6efcc71366bd63db481539ce1
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f8d369de9f9caf92c4c07a55cc291cc300f281c0
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59117625"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688631"
 ---
 # <a name="windows-updates-api-overview"></a>Windows更新 API 概述
 
@@ -19,12 +19,12 @@ The Windows Update for Business deployment service provides control over device 
 ## <a name="why-use-the-windows-update-for-business-deployment-service"></a>为什么使用 Windows Update for Business 部署服务？
 
 IT 专业人员和管理工具供应商都可以使用部署服务：
-* 将更新部署安排在特定的日期开始
-* 使用富表达式在几天或几周内阶段部署
-* 绕过预配置的 Windows Update for Business 策略以立即部署安全更新
-* 通过针对唯一设备填充和移动设备配置定制的部署，确保 (硬件和软件) 
+* 将更新部署安排在特定的日期开始。
+* 使用富表达式在几天或几周内阶段部署。
+* 绕过预配置的 Windows 更新 for Business 策略，以立即部署安全更新。
+* 通过针对唯一设备总体部署定制的部署，确保组织中硬件和软件 (范围) 。
 
-如今，部署服务支持管理Windows 10功能更新和Windows 10安全更新。 若要了解有关企业更新上下文中部署服务Windows，请参阅[部署服务概述](https://docs.microsoft.com/windows/deployment/update/deployment-service-overview)。
+如今，部署服务支持Windows 10功能更新和Windows 10安全更新。 若要了解有关企业更新上下文中的部署服务Windows，请参阅[部署服务概述](/windows/deployment/update/deployment-service-overview)。
 
 ## <a name="prerequisites"></a>先决条件    
 
@@ -35,7 +35,7 @@ IT 专业人员和管理工具供应商都可以使用部署服务：
 * Microsoft 365 商业高级版
 
 此外，部署服务管理的设备必须：
-* 加入 Azure AD 或加入混合 AD
+* 已Azure AD或混合 AD 加入
 * 运行下列版本之Windows 10：Windows 10 专业版、Windows 10 企业版、Windows 10 教育版、Windows 10 专业教育版
 * 已安装Windows 10版本 1709 或更高版本
 
@@ -62,7 +62,9 @@ IT 专业人员和管理工具供应商都可以使用部署服务：
 
 ## <a name="protect-devices-by-default"></a>默认情况下保护设备
 
-享受保护 [保留的好处](https://docs.microsoft.com/windows/deployment/update/safeguard-holds) ，防止出现质量或兼容性问题的设备安装更新，否则导致失败或回滚。
+享受保护 [保留的好处](/windows/deployment/update/safeguard-holds) ，防止出现质量或兼容性问题的设备安装更新，否则导致失败或回滚。 对于部署Windows 11，部署服务扩展了这些安全措施，以进一步保护设备。 随着设备升级到 Windows 11，Microsoft 使用机器学习算法来监视 Windows 生态系统的广度。 对于确定存在升级后问题的高风险的设备，部署服务在调查和确认问题时应用早期安全措施来保护这些设备。
+
+若要了解更多信息，请参阅 [管理部署的安全措施](windowsupdates-manage-safeguards.md)。
 
 此外，还可以配置组织独有的监视规则。 这些规则可以基于设备信号（如回滚）发送警报或暂停部署。
 

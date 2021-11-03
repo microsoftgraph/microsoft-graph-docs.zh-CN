@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 503bfdfb5bb74c1bc83edfed64eb0b0d787f099e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8540ee0ed46e3536900888b7a23ece3564481f34
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59022371"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60687802"
 ---
 ```javascript
 
@@ -20,7 +20,7 @@ const externalGroup = {
   description: 'The product marketing team'
 };
 
-await client.api('/connections/{connectionsId}/groups/{externalGroupId}')
+await client.api('/external/connections/{connectionsId}/groups/{externalGroupId}')
     .update(externalGroup);
 
 ```

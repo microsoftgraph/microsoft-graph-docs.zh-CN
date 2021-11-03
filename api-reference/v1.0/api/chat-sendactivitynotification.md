@@ -5,17 +5,17 @@ author: eddie-lee-msft
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f24f745a4cc0fc8c4c7136a01f6c5ac51a5a6011
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 235336cec50bf56cc95ac8bc723e692970d6d7c9
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60561624"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696496"
 ---
 # <a name="chat-sendactivitynotification"></a>chat： sendActivityNotification
 命名空间：microsoft.graph
 
-在聊天范围内发送活动源通知。 有关发送通知的更多详细信息以及发送通知的要求，请参阅[发送Teams通知](/graph/teams-send-activityfeednotifications)。
+在聊天范围内发送活动源通知。 有关发送通知的更多详细信息以及发送通知的要求，请参阅[发送Teams活动通知](/graph/teams-send-activityfeednotifications)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -24,7 +24,7 @@ ms.locfileid: "60561624"
 |:---|:---|
 |委派（工作或学校帐户）|TeamsActivity.Send|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|TeamsActivity.Send|
+|应用程序|TeamsActivity.Send|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -71,7 +71,7 @@ POST /chats/{chatId}/sendActivityNotification
 
 ### <a name="example-1-notify-a-user-about-a-task-created-in-a-chat"></a>示例 1：通知用户在聊天中创建的任务
 
-此示例演示如何发送在聊天中创建的新任务的活动源通知。 有关详细信息，请参阅发送[Teams活动通知](/graph/teams-send-activityfeednotifications)。
+此示例演示如何发送在聊天中创建的新任务的活动源通知。 有关详细信息，请参阅[发送Teams活动通知](/graph/teams-send-activityfeednotifications)。
 
 #### <a name="request"></a>请求
 
@@ -188,6 +188,8 @@ HTTP/1.1 204 No Content
 
 #### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "chat_sendactivitynotification_upn"
@@ -218,6 +220,24 @@ Content-Type: application/json
     ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/chat-sendactivitynotification-upn-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/chat-sendactivitynotification-upn-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/chat-sendactivitynotification-upn-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/chat-sendactivitynotification-upn-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### <a name="response"></a>响应

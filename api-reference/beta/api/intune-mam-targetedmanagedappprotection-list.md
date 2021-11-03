@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 74d10a15f955d1665b5ab76dbda2760d22eed741
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: a8ff252086bcb1ec966efe1718deb767a98feaab
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60492805"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60674382"
 ---
 # <a name="list-targetedmanagedappprotections"></a>列出 targetedManagedAppProtections
 
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/managedAppPolicies
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2976
+Content-Length: 3046
 
 {
   "value": [
@@ -130,6 +130,7 @@ Content-Length: 2976
       ],
       "appActionIfUnableToAuthenticateUser": "wipe",
       "dialerRestrictionLevel": "managedApps",
+      "gracePeriodToBlockAppsDuringOffClockHours": "PT2M4.5004762S",
       "isAssigned": true,
       "targetedAppManagementLevels": "unmanaged",
       "appGroupType": "allCoreMicrosoftApps"

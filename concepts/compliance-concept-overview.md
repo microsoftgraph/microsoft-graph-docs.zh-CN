@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 0803a74921fc3bc398fcbb56fc01c00959573cd9
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: fd774e77c6f7c7ae2b996daa1d5a99e6f6ab7fb4
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60561743"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60684041"
 ---
 # <a name="overview-of-compliance-and-privacy-apis-in-microsoft-graph"></a>Microsoft Graph 中的合规性和隐私 API 概述
 
@@ -22,7 +22,7 @@ Microsoft Graph API 实现合规性和隐私，为组织提供了自动执行重
 
 ### <a name="develop-applications-that-ensure-a-repeatable-predictable-and-standard-process"></a>开发确保可重复、可预测和标准流程的应用程序
 
-组织依靠Microsoft 365电子数据展示功能来满足要求，以根据内部或外部要求（如诉讼、调查或法规合规性）查找其组织中所需情况的真实情况。
+组织依靠[Microsoft 365](/microsoft-365/compliance/ediscovery?view=o365-worldwide&preserve-view=true)电子数据展示功能，根据内部或外部要求（如诉讼、调查或监管合规性）了解其组织中所需情况的真实情况。
 
 在许多组织中，电子数据展示工作流是频繁、关键且大量的。 在常见重复任务或大量活动的情况下，API 将有助于提供一种可伸缩的方式，以一致且有效地重复过程。
 
@@ -44,16 +44,16 @@ Microsoft Graph API 实现合规性和隐私，为组织提供了自动执行重
 
 ## <a name="privacy-management-by-subject-rights-requests"></a>按主体权限请求的隐私管理
 
-根据全球的某些隐私法规，个人可以请求查看或管理公司收集的有关自己的个人数据。 这些请求在隐私管理解决方案中称为Microsoft 365权限请求;它们有时也称为数据主体请求 (DSR) 或数据主体访问请求 (DSAR) 。 Microsoft 365隐私管理使负责履行主体权利请求的人员能够轻松地识别数据主体，并查找 Exchange、SharePoint、OneDrive 和 Teams 中组织数据中的个人信息。 
+根据全球的某些隐私法规，个人可以请求查看或管理公司收集的有关自己的个人数据。 这些请求在隐私管理解决方案中称为Microsoft 365权限请求;它们有时也称为数据主体请求 (DSR) 或数据主体访问请求 (DSAR) 。 [Microsoft 365隐私](/privacy/solutions/privacymanagement/privacy-management?view=o365-worldwide&preserve-view=true)管理使负责履行主体权利请求的人员可以轻松识别数据主体，并找到 Exchange、SharePoint、OneDrive 和 Teams 中组织数据中的个人信息。 
 
-Microsoft Graph权限请求的 API 为组织提供了自动执行重复任务并与现有数据主体请求工具集成的功能，以便能够构建可合并到其业务流程中的可重复工作流。 可以使用主题权限请求 API 来帮助自动执行组织在 Microsoft 365 中执行主题权限请求搜索并扩展其能力，并更有效地满足行业法规。
+Microsoft Graph主题权限请求 API 为组织提供了自动执行重复任务并与现有数据主体请求工具集成的功能，以便能够构建可合并到其业务流程中的可重复工作流。 可以使用主题权限请求 API 来帮助你自动执行和扩展组织在 Microsoft 365 中执行主题权限请求搜索的能力，并帮助更有效地满足行业法规。
 
 ## <a name="api-reference"></a>API 参考
 
 在查找这些服务的 API 参考？
 - [在 Microsoft Graph](/graph/api/resources/ediscovery-ediscoveryapioverview?view=graph-rest-beta&preserve-view=true) beta 版中使用 Microsoft Graph电子数据展示 API
 - [使用 Microsoft Graph](/graph/api/resources/subjectrightsrequest-subjectrightsrequestapioverview) v1.0 中的 Microsoft Graph主体权限请求 API
-- [在 Microsoft Graph beta 版中](/graph/api/resources/subjectrightsrequest-subjectrightsrequestapioverview?view=graph-rest-beta&preserve-view=true)使用 Microsoft Graph主题权限请求 API
+- [在 Microsoft Graph](/graph/api/resources/subjectrightsrequest-subjectrightsrequestapioverview?view=graph-rest-beta&preserve-view=true) beta 版中使用 Microsoft Graph主题权限请求 API
 
 ## <a name="next-steps"></a>后续步骤
 

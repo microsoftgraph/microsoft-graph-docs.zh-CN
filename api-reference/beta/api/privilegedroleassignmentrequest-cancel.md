@@ -1,22 +1,24 @@
 ---
 title: 取消 privilegedRoleAssignmentRequest
 description: 取消 privilegedRoleAssignmentRequest。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: dac7c1395b1a3cb46dc5158d7dced235b2583c6a
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 3b65811ad502a9b7f568a52d09dadb4b22e716a4
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58452874"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694706"
 ---
 # <a name="cancel-privilegedroleassignmentrequest"></a>取消 privilegedRoleAssignmentRequest
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 取消 [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md)。
 

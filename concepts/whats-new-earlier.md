@@ -3,14 +3,80 @@ title: Microsoft Graph 早期版本的亮点
 description: Microsoft Graph 早期版本中的新增功能
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: efdb89c348e6da6b6f794ee5c6365e25d64a0147
-ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
+ms.openlocfilehash: e9c62070be3dd1d646768fd207c5c1304bcf727b
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60214382"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695021"
 ---
 # <a name="highlights-of-earlier-releases"></a>早期版本的亮点
+
+## <a name="august-2021-new-and-generally-available"></a>2021 年 8 月: 新增功能和正式发布
+
+### <a name="cloud-communications--calls"></a>云通信 | 呼叫
+[参与者](/graph/api/resources/participant) 可以将元数据作为数据的 blob 包含在 [呼叫](/graph/api/resources/call) 名单中。
+
+### <a name="cloud-communications--online-meetings"></a>云通信 | 联机会议
+- 将 [联机会议](/graph/api/resources/onlinemeeting) 创建为实时事件，并使用制作者角色配置 [广播设置](/graph/api/resources/broadcastMeetingSettings) 和 [会议参与者信息](/graph/api/resources/meetingparticipantinfo)。 请参阅 [示例](/graph/api/application-post-onlinemeetings#example-2-create-a-live-event-with-user-token)。
+- 使用 "allowMeetingChat **属性为联机会议启用、禁用** 或限制聊天持续时间。
+- 通过使用 **allowTeamworkReactions** 属性来启用或禁用联机会议的响应。
+- 允许与会者分别使用 **allowAttendeeToEnableCamera** 或 **allowAttendeeToEnableMic** 属性启用相机或麦克风。
+
+### <a name="cloud-communications--presence"></a>云通信 | 在线
+- [设置用户的在线状态](/graph/api/presence-setpresence)，这是每个 Teams 客户端(桌面、移动或 Web)上的聚合状态。
+- 为用户 [清除在线会话](/graph/api/presence-clearpresence)。
+
+
+### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 企业管理
+v1.0 版本的 Intune 月度更新。设置 2021 年 8 月的 **日期** 筛选器，并查找具有此相同标题的节。
+
+### <a name="devices-and-apps--service-health-and-communications"></a>设备和应用|服务运行状况和通信
+使用 Microsoft Graph 中的[服务通信 API](service-communications-concept-overview.md) 访问有关 Microsoft 云服务的运行状况和消息中心帖子。
+
+### <a name="identity-and-access--governance"></a>身份和访问 | 治理
+获取访问评审范围的集合，这些范围用于定义[访问评审实例](/graph/api/resources/accessReviewInstance)的审阅者和回退审阅者。
+
+### <a name="sites-and-lists--taxonomy"></a>站点和列表 | 分类
+访问 SharePoint [术语库](/graph/api/resources/termstore-store) 分类，以及由 [组](/graph/api/resources/termstore-group)、[设置](/graph/api/resources/termstore-set)、[术语](/graph/api/resources/termstore-term) 资源以及术语之间的 [关系](/graph/api/resources/termstore-relation) 资源组成的层次结构。
+
+### <a name="teamwork"></a>团队合作
+在委派上下文中 [列出聊天](/graph/api/chat-list) (用户所属)。
+
+## <a name="august-2021-new-in-preview-only"></a>2021 年 8 月: 仅预览版新增功能
+
+### <a name="cloud-communications--calls"></a>云通信 | 呼叫
+- 使用 [startHoldMusic](/graph/api/participant-startHoldMusic?view=graph-rest-beta&preserve-view=true) 操作让 [参与者](/graph/api/resources/participant?view=graph-rest-beta&preserve-view=true) 保持呼叫并在后台播放音乐。
+- 使用 [stopHoldMusic](/graph/api/participant-stopHoldMusic?view=graph-rest-beta&preserve-view=true) 操作重新合并之前呼叫保持的参与者。
+
+### <a name="cloud-communications--online-meetings"></a>云通信 | 联机会议
+将 [联机会议](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) 设置为自动录制。
+
+### <a name="devices-and-apps--cloud-pc"></a>设备和应用 | 云电脑
+为云电脑 [结束宽限期](/graph/api/cloudPC-endGracePeriod?view=graph-rest-beta&preserve-view=true)。 宽限期允许用户最多可在取消设置前的 7 天内访问云电脑。 结束宽限期会立即取消设置云电脑，无需等待七天。
+
+### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 企业管理
+beta 版本的 Intune 月度更新。将 **日期** 筛选器设置为 2021 年 6 月，并查找具有此相同标题的节。
+
+### <a name="identity-and-access--governance"></a>身份和访问 | 治理
+- [重新处理](/graph/api/accesspackageassignmentrequest-reprocess?view=graph-rest-beta&preserve-view=true)[访问包分配请求](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta&preserve-view=true)以自动重试用户对包的访问请求。
+- [重新处理](/graph/api/accesspackageassignment-reprocess?view=graph-rest-beta&preserve-view=true)[访问包分配](/graph/api/resources/accesspackageassignment?view=graph-rest-beta&preserve-view=true)以自动重新评估和强制执行用户分配。
+- [获取一组策略要求](/graph/api/accesspackage-getapplicablepolicyrequirements?view=graph-rest-beta&preserve-view=true)以便[为访问包创建分配请求](/graph/api/resources/accesspackageassignmentrequestrequirements?view=graph-rest-beta&preserve-view=true)。
+- 获取[访问评审审阅者](/graph/api/resources/accessreviewreviewer?view=graph-rest-beta&preserve-view=true)资源的集合，这些资源用于定义与[访问审阅实例](/graph/api/resources/accessReviewInstance?view=graph-rest-beta&preserve-view=true)联系的审阅者。
+- 使用 **recommendationLookBackDuration** 属性，获取或设置在 [访问评审的计划设置中](/graph/api/resources/accessReviewScheduleSettings?view=graph-rest-beta&preserve-view=true)配置建议的非活动持续时间。
+
+### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
+- 组织可以使用[策略来强制应用使用应用程序身份验证方法的最佳做法](/graph/api/resources/applicationauthmethodpolicy?view=graph-rest-beta&preserve-view=true)。 此类策略可以应用于[特定应用程序和服务主体](/graph/api/resources/appmanagementpolicy?view=graph-rest-beta&preserve-view=true)，或[租户中的所有应用程序和服务主体](/resources/tenantappmanagementpolicy?view=graph-rest-beta&preserve-view=true)。
+- 支持在 [用户](/api/user-list-approleassignments?view=graph-rest-beta&preserve-view=true)、[组](/api/group-list-approleassignments?view=graph-rest-beta&preserve-view=true) 和 [服务主体](/api/serviceprincipal-list-approleassignments?view=graph-rest-beta&preserve-view=true) 的 **appRoleAssignments** 导航属性上进行分页。
+- 允许 Azure Active Directory (Azure AD)租户设置 [与另一个标识提供程序(IdP)支持 SAML 或 WS-Fed 协议的组织联盟](/graph/api/resources/samlOrWsFedExternalDomainFederation?view=graph-rest-beta&preserve-view=true)。 这使得 Azure AD 租户能够允许来宾用户访问其资源。
+
+### <a name="teamwork"></a>团队合作
+- 获取与 [聊天](/api/resources/chat?view=graph-rest-beta&preserve-view=true) 关联的 [联机会议的信息](/graph/api/resources/teamworkOnlineMeetingInfo?view=graph-rest-beta&preserve-view=true)。
+- 获取在其中创建 **聊天** 的租户的标识符。
+
+### <a name="users"></a>用户
+使用用户 [signInActivity](/graph/api/resources/signInActivity?view=graph-rest-beta&preserve-view=true) 的最后一个交互式和非交互式登录日期/时间值来 [管理非活动帐户](/azure/active-directory/reports-monitoring/howto-manage-inactive-user-accounts)。
+
 
 ## <a name="july-2021-new-and-generally-available"></a>2021 年 7 月: 新版本和正式版
 

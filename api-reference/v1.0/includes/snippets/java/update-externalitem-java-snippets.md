@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f171a90a9234ac7ae7fc0f80b628dd37e3d78f2d1ddceedc9297ea273f9a2043
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 085f49fb61ca47454ec6672c5f4936b956a66e45
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57279358"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688747"
 ---
 ```java
 
@@ -20,7 +20,7 @@ acl.accessType = AccessType.GRANT;
 aclList.add(acl);
 externalItem.acl = aclList;
 
-graphClient.connections("contosohr").items("TSP228082938")
+graphClient.external().connections("contosohr").items("TSP228082938")
     .buildRequest()
     .patch(externalItem);
 

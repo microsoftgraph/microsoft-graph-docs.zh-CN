@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 92fc1a7f18b5de1fca1a42aea3e8218ff89f4a47
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 29e4a8ea915b0350ff74ecc3e03de4028842b3b2
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60481928"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688708"
 ---
 # <a name="get-devicemanagementconfigurationsetting"></a>获取 deviceManagementConfigurationSetting
 
@@ -37,6 +37,7 @@ ms.locfileid: "60481928"
 }
 -->
 ``` http
+GET /deviceManagement/compliancePolicies/{deviceManagementCompliancePolicyId}/settings/{deviceManagementConfigurationSettingId}
 GET /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/settings/{deviceManagementConfigurationSettingId}
 ```
 
@@ -60,7 +61,7 @@ GET /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicy
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/settings/{deviceManagementConfigurationSettingId}
+GET https://graph.microsoft.com/beta/deviceManagement/compliancePolicies/{deviceManagementCompliancePolicyId}/settings/{deviceManagementConfigurationSettingId}
 ```
 
 ### <a name="response"></a>响应

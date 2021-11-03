@@ -1,22 +1,24 @@
 ---
 title: 创建 privilegedRoleAssignmentRequest
 description: 创建 privilegedroleassignmentrequest 对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: a8ab04d03efa9c54fdc226db9e57939ba193d9ee
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: d93208b587490b75ae563ec960e158411b32164b
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453707"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695998"
 ---
 # <a name="create-privilegedroleassignmentrequest"></a>创建 privilegedRoleAssignmentRequest
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 创建 [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md) 对象。
 
@@ -45,24 +47,24 @@ POST /privilegedRoleAssignmentRequests
 
 | 属性     | 类型    |  说明|
 |:---------------|:--------|:----------|
-|roleId|String|角色的 ID。 此为必需属性。|
+|roleId|字符串|角色的 ID。 此为必需属性。|
 |type|String|表示对项目执行的操作角色分配。 值可以是 `AdminAdd` ：管理员将用户添加到角色 `UserAdd` ;：用户添加角色分配。 必需。|
 |assignmentState|String|工作分配的状态。 该值可用于符合条件的分配 - 如果直接由管理员分配，或由用户对符合条件的分配 `Eligible` `Active` `Active` 进行激活。 可取值为：``NotStarted``、`Completed`、`RequestedApproval`、`Scheduled`、`Approved`、`ApprovalDenied`、`ApprovalAborted`、`Cancelling`、`Cancelled`、`Revoked`、`RequestExpired`。 必需。|
-|reason|String|需要为请求审核和审核角色分配提供原因。|
+|reason|字符串|需要为请求审核和审核角色分配提供原因。|
 |schedule|[governanceSchedule](../resources/governanceschedule.md)|请求角色分配计划。|
 
 ## <a name="response"></a>响应
 如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) 对象。
 
 ### <a name="error-codes"></a>错误代码
-此 API 返回该标准 HTTP 错误代码。 此外，它可以返回下表中列出的错误代码。
+此 API 返回标准 HTTP 错误代码。 此外，它可以返回下表中列出的错误代码。
 
 |错误代码     | 错误消息              | 
 |:--------------------| :---------------------|
 | 400 BadRequest | RoleAssignmentRequest 属性为 NULL |
 | 400 BadRequest | 无法反初始化 roleAssignmentRequest 对象。 |
 | 400 BadRequest | RoleId 是必需的。 |
-| 400 BadRequest | 必须指定计划开始日期，并且应大于 Now。 |
+| 400 BadRequest | 必须指定计划开始日期，并且应大于"现在"。 |
 | 400 BadRequest | 此用户、角色和计划类型已存在计划。 |
 | 400 BadRequest | 此用户、角色和审批类型已存在待审批。 |
 | 400 BadRequest | 缺少请求者原因。 |

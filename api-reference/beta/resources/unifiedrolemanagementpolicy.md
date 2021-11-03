@@ -1,16 +1,16 @@
 ---
 title: unifiedRoleManagementPolicy 资源类型
 description: unifiedRoleManagementPolicy 指定与作用域和角色定义关联的各种策略。 它派生自 microsoft.graph.policyBase。
-author: shauliu1
+author: carolinetempleton
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: b27726e12815f058091bc09308344c150cb73b2f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4680bc93bed7995eb35d08ecf4d10750710ca40e
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59046517"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60687534"
 ---
 # <a name="unifiedrolemanagementpolicy-resource-type"></a>unifiedRoleManagementPolicy 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "59046517"
 
 unifiedRoleManagementPolicy 指定与作用域和角色定义关联的各种策略。 它派生自 microsoft.graph.policyBase。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 unifiedRoleManagementPolicies](../api/unifiedrolemanagementpolicy-list.md)|[unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) 集合|获取 [unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) 对象及其属性的列表。|
@@ -30,9 +30,9 @@ unifiedRoleManagementPolicy 指定与作用域和角色定义关联的各种策�
 |属性|类型|说明|
 |:---|:---|:---|
 |说明|String|策略的说明。|
-|displayName|String|策略的显示名称。|
-|id|String|策略的唯一标识符。|
-|isOrganizationDefault|Boolean|对于将适用于所有作用域和角色的单个租户范围策略，这只能设置为 true。 将 scopeId 设置为"/"，将 scopeType 设置为 Directory。|
+|displayName|字符串|策略的显示名称。|
+|id|字符串|策略的唯一标识符。|
+|isOrganizationDefault|布尔值|对于将应用于所有作用域和角色的单个租户范围策略，这只能设置为 true。 将 scopeId 设置为"/"，将 scopeType 设置为 Directory。|
 |lastModifiedBy|[identity](../resources/identity.md)|上次修改角色设置的标识。|
 |lastModifiedDateTime|DateTimeOffset|上次修改角色设置的时间。|
 |scopeId|String|创建策略的范围的 ID。 例如， "/"、groupId 等。|

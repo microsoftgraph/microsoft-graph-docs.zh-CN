@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: enumTypes
-ms.openlocfilehash: 1c60b5718a0e5006754aae5e07cfbc19969946a0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8542515437150e95aa54f01a9a9e28de2eb9eb71
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59040552"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695963"
 ---
 # <a name="microsoft-graph-windows-updates-enumeration-values"></a>Microsoft Graph Windows Updates 枚举值
 
@@ -18,7 +18,7 @@ ms.locfileid: "59040552"
 
 ### <a name="azureaddeviceregistrationerrorreason-values"></a>azureADDeviceRegistrationErrorReason 值 
 
-|成员|
+|Member|
 |:---|
 |invalidGlobalDeviceId|
 |invalidAzureADDeviceId|
@@ -27,16 +27,17 @@ ms.locfileid: "59040552"
 
 ### <a name="deploymentstatereasonvalue-values"></a>deploymentStateReasonValue 值 
 
-|成员|
+|Member|
 |:---|
 |scheduledByOfferWindow|
 |offeringByRequest|
 |pausedByRequest|
 |pausedByMonitoring|
+|faultedByContentOutdated|
 
 ### <a name="deploymentstatevalue-values"></a>deploymentStateValue 值 
 
-|成员|
+|Member|
 |:---|
 |scheduled|
 |offering|
@@ -46,27 +47,27 @@ ms.locfileid: "59040552"
 
 ### <a name="equivalentcontentoption-values"></a>equivalentContentOption 值 
 
-|成员|
+|Member|
 |:---|
 |无|
 |latestSecurity|
 
 ### <a name="monitoringaction-values"></a>monitoringAction 值 
 
-|成员|
+|Member|
 |:---|
 |alertError|
 |pauseDeployment|
 
 ### <a name="monitoringsignal-values"></a>monitoringSignal 值 
 
-|成员|
+|Member|
 |:---|
 |rollback|
 
 ### <a name="qualityupdateclassification-values"></a>qualityUpdateClassification 值 
 
-|成员|
+|Member|
 |:---|
 |all|
 |security|
@@ -74,15 +75,21 @@ ms.locfileid: "59040552"
 
 ### <a name="requesteddeploymentstatevalue-values"></a>requestedDeploymentStateValue 值 
 
-|成员|
+|Member|
 |:---|
 |无|
 |paused|
 |archived|
 
+### <a name="safeguardcategory-values"></a>safeguardCategory 值 
+
+|Member|
+|:---|
+|likelyIssues|
+
 ### <a name="updatecategory-values"></a>updateCategory 值 
 
-|成员|
+|Member|
 |:---|
 |功能|
 |quality|

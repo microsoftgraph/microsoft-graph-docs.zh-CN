@@ -1,16 +1,16 @@
 ---
 title: 列出 privilegedRoleAssignmentRequests
 description: '检索 privilegedRoleAssignmentRequest 的集合。 '
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 89eb70733d5b3db1991d93679b963bd6b303ef48
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 02278b23fc27f0b8876b3a8ab37344c07f2a93a3
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453994"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60687703"
 ---
 # <a name="list-privilegedroleassignmentrequests"></a>列出 privilegedRoleAssignmentRequests
 
@@ -18,9 +18,11 @@ ms.locfileid: "58453994"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+
 检索 [privilegedRoleAssignmentRequest 的集合](../resources/privilegedroleassignmentrequest.md)。 
 
-**注意：** 此请求者必须对资源角色分配一个资源。
+**注意：** 此请求者必须至少有一角色分配资源资源。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

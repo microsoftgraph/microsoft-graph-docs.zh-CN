@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b08b802029b4687fddf0d2586e4899840d77a92d
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 7b1b417125ffc742e30f42b934c6a7964295655c
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60494449"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688855"
 ---
 # <a name="list-devicemanagementconfigurationsettinggroupdefinitions"></a>列出 deviceManagementConfigurationSettingGroupDefinitions
 
@@ -38,6 +38,7 @@ ms.locfileid: "60494449"
 -->
 ``` http
 GET /deviceManagement/reusableSettings
+GET /deviceManagement/complianceSettings
 GET /deviceManagement/configurationSettings
 GET /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/settings/{deviceManagementConfigurationSettingId}/settingDefinitions
 GET /deviceManagement/configurationPolicyTemplates/{deviceManagementConfigurationPolicyTemplateId}/settingTemplates/{deviceManagementConfigurationSettingTemplateId}/settingDefinitions

@@ -1,16 +1,16 @@
 ---
 title: unifiedRoleManagementPolicyNotificationRule 资源类型
 description: unifiedRoleManagementPolicyNotificationRule 指定与角色管理策略关联的通知规则。 它派生自 microsoft.graph.unifiedRoleManagementPolicyRule。
-author: shauliu1
+author: carolinetempleton
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: eae130fb4fdf2781aa8cb8a83d6cdd03314bb1fd
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: af01ef759635b125748871b95d892ffe5bf37adf
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59074485"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688147"
 ---
 # <a name="unifiedrolemanagementpolicynotificationrule-resource-type"></a>unifiedRoleManagementPolicyNotificationRule 资源类型
 
@@ -28,7 +28,7 @@ unifiedRoleManagementPolicyNotificationRule 指定与角色管理策略关联的
 |notificationRecipients|String collection|通知接收者列表，如电子邮件。|
 |notificationType|String|通知的类型。 电子邮件之一。|
 |recipientType|String|收件人的类型。 请求者、审批者、管理员之一。|
-|isDefaultRecipientsEnabled|Boolean|默认收件人是否收到电子邮件。|
+|isDefaultRecipientsEnabled|布尔值|默认收件人是否收到电子邮件。|
 |target|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|规则的目标。 继承自 [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
 
 ## <a name="relationships"></a>关系

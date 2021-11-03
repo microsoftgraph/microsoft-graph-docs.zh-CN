@@ -1,16 +1,16 @@
 ---
 title: rbacApplication：roleSchedules
 description: 检索 roleAssignmentSchedules 和 roleEligibilitySchedules。
-author: shauliu1
-localization_priority: Normal
+author: carolinetempleton
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 3e098692d1c34b0b1eee077554e7620ace9a31f8
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: 51b175f2a7cf53cfe9a7778ccfc8ae6f2202fe18
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453987"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695970"
 ---
 # <a name="rbacapplication-roleschedules"></a>rbacApplication：roleSchedules
 命名空间：microsoft.graph
@@ -43,9 +43,9 @@ GET /roleManagement/directory/roleSchedules
 
 |参数|类型|说明|
 |:---|:---|:---|
-|directoryScopeId|String|表示工作分配范围的目录对象的标识符。 工作分配的范围决定了已授予主体访问权限的资源集。 目录范围是存储在目录中的多个应用程序可以理解的共享范围。 用于 `/` 租户范围范围。 使用 **appScopeId** 将作用域限制为仅应用程序。 |
-|appScopeId|String|当分配范围特定于应用时，特定于应用的范围的标识符。 工作分配的范围决定了已授予主体访问权限的资源集。 应用程序作用域是仅由此应用程序定义和理解的范围。 用于 `/` 租户范围的应用范围。 使用 **directoryScopeId** 将作用域限制为特定目录对象，例如管理单元。 |
-|principalId|String| 要向其中授予工作分配的主体的标识符。 可以是组或用户。 |
+|directoryScopeId|String|表示工作分配范围的目录对象的标识符。 工作分配的范围决定了已授予主体访问权限的资源集。 目录作用域是存储在目录中的多个应用程序可以理解的共享范围。 用于 `/` 租户范围范围。 使用 **appScopeId** 将作用域限制为仅应用程序。 |
+|appScopeId|字符串|当分配范围特定于应用时，特定于应用的范围的标识符。 工作分配的范围决定了已授予主体访问权限的资源集。 应用程序作用域是仅由此应用程序定义和理解的范围。 用于 `/` 租户范围的应用范围。 使用 **directoryScopeId** 将作用域限制为特定的目录对象，例如管理单元。 |
+|principalId|字符串| 要向其中授予工作分配的主体的标识符。 可以是组或用户。 |
 |roleDefinitionId|String|工作分配的 unifiedRoleDefinition 的标识符。 只读。|
 
 

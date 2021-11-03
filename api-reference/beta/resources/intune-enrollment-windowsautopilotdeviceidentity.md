@@ -2,15 +2,15 @@
 title: windowsAutopilotDeviceIdentity 资源类型
 description: windowsAutopilotDeviceIdentity 资源表示一Windows Autopilot 设备。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 18988b5a22e84ae97e412ae0dfc7daab738027b2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 19f2d6f341ea91676f722224fea3e08ae29a95e4
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59054287"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688154"
 ---
 # <a name="windowsautopilotdeviceidentity-resource-type"></a>windowsAutopilotDeviceIdentity 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "59054287"
 
 windowsAutopilotDeviceIdentity 资源表示一Windows Autopilot 设备。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 windowsAutopilotDeviceIdentities](../api/intune-enrollment-windowsautopilotdeviceidentity-list.md)|[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) 集合|列出 [windowsAutopilotDeviceIdentity 对象的属性和](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) 关系。|
@@ -40,23 +40,23 @@ windowsAutopilotDeviceIdentity 资源表示一Windows Autopilot 设备。
 |:---|:---|:---|
 |id|String|对象的 GUID|
 |deploymentProfileAssignmentStatus|[windowsAutopilotProfileAssignmentStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|autopilot 设备的Windows分配状态。 可取值为：`unknown`、`assignedInSync`、`assignedOutOfSync`、`assignedUnkownSyncState`、`notAssigned`、`pending` 或 `failed`。|
-|deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|配置文件分配 autopilot Windows状态。 可取值为：`none`、`hardwareRequirementsNotMet`、`surfaceHubProfileNotSupported`、`holoLensProfileNotSupported`、`windowsPcProfileNotSupported`。|
-|deploymentProfileAssignedDateTime|DateTimeOffset|autopilot 设备的Windows设置时间。|
+|deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|配置文件分配 autopilot Windows状态。 可取值为：`none`、`hardwareRequirementsNotMet`、`surfaceHubProfileNotSupported`、`holoLensProfileNotSupported`、`windowsPcProfileNotSupported`、`surfaceHub2SProfileNotSupported` 或 `unknownFutureValue`。|
+|deploymentProfileAssignedDateTime|DateTimeOffset|autopilot 设备的配置文件Windows时间。|
 |groupTag|String|autopilot Windows组标记。|
 |purchaseOrderIdentifier|String|Purchase Order Autopilot Windows标识符。|
 |serialNumber|String|Windows autopilot 设备序列号。|
 |productKey|String|Windows autopilot 设备产品密钥。|
 |manufacturer|String|autopilot Windows Oem 制造商。|
 |model|String|autopilot Windows型号名称。|
-|enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Autopilot 设备的 Intune Windows状态。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
+|enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Autopilot 设备的 intune Windows状态。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
 |lastContactedDateTime|DateTimeOffset|Intune Autopilot 设备的上次Windows日期时间。|
 |addressableUserName|String|可地址用户名。|
 |userPrincipalName|String|用户主体名称。|
 |resourceName|String|资源名称。|
-|skuNumber|String|SKU 号|
+|skuNumber|字符串|SKU 号|
 |systemFamily|String|系统系列|
-|azureActiveDirectoryDeviceId|String|AAD 设备 ID - 已弃用|
-|azureAdDeviceId|String|AAD 设备 ID|
+|azureActiveDirectoryDeviceId|字符串|AAD设备 ID - 要弃用|
+|azureAdDeviceId|String|AAD设备 ID|
 |managedDeviceId|String|托管设备 ID|
 |displayName|String|显示名称|
 

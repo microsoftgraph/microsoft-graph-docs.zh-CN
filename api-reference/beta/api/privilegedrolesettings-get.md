@@ -1,22 +1,24 @@
 ---
 title: 获取 privilegedRoleSettings
 description: 检索给定角色的角色设置。 将返回 privilegedRoleSettings 对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 08013e57888bd9c8d40dd925c11465721f2a326e
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 3d18c990461f53022b99ecd65d661b1142892b8f
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453693"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695991"
 ---
 # <a name="get-privilegedrolesettings"></a>获取 privilegedRoleSettings
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 检索给定角色的角色设置。 将 [返回 privilegedRoleSettings](../resources/privilegedrolesettings.md) 对象。
 ## <a name="permissions"></a>权限

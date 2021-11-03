@@ -1,20 +1,20 @@
 ---
 title: Windows Update for Business 部署服务中的部署
-description: 部署是 Windows Update for Business 部署服务的基础。 通过部署，你可以将一组设备作为目标，以从 Windows 更新（如软件更新）接收特定内容。
+description: 部署是 Windows Update for Business 部署服务的基础。 通过部署，你可以面向一组设备，以接收来自 Windows 更新（如软件更新）的特定内容。
 author: Alice-at-Microsoft
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: 550879fed2ea694f4c7c8c9dd5470c2eeace446b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5b875a62b3fe8fe35b7d7f0b69acc3395e8ab67f
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59117576"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688617"
 ---
 # <a name="deployments-in-the-windows-update-for-business-deployment-service"></a>Windows Update for Business 部署服务中的部署
 
-部署是 Windows Update for Business 部署服务的基础。 通过部署，你可以面向一组设备，以接收来自 Windows Update 的特定内容，例如[软件更新](windowsupdates-software-updates.md)。
+部署是 Windows Update for Business 部署服务的基础。 通过部署，你可以将一组设备作为目标，以接收来自 Windows Update 的特定内容，例如[软件更新](windowsupdates-software-updates.md)。
 
 部署具有以下主要方面：
 
@@ -57,21 +57,23 @@ ms.locfileid: "59117576"
 
 部署在生命周期状态中移动，如下表所述。
 
-| 状态     | 说明                                                                                       |
-|-----------|---------------------------------------------------------------------------------------------------|
+| 状态       | 说明                                                                                       |
+|-------------|---------------------------------------------------------------------------------------------------|
 | `scheduled` | 部署正在等待满足产品/服务条件，以开始向设备提供更新。 |
 | `offering`  | 部署正在向设备提供更新。                                                 |
 | `paused`    | 部署将暂停，并阻止向设备提供更新，直到未暂停。  |
+| `faulted`   | 由于服务无法解析的原因，部署不会向设备提供更新。  |
 
 
 ### <a name="transitions"></a>Transitions
 
-| Transition                     | Condition                                |
-|--------------------------------|------------------------------------------|
-| `scheduled` → `offering`           | 满足计划条件。             |
-| `offering` → `scheduled`           | 不满足计划条件。         |
+| Transition                           | 条件                                |
+|--------------------------------------|------------------------------------------|
+| `scheduled` → `offering`             | 满足计划条件。             |
+| `offering` → `scheduled`             | 不满足计划条件。         |
 | `scheduled` 或 `offering` → `paused` | 有一个暂停的请求或自动操作。 |
 | `paused` → `scheduled` 或 `offering` | 不再有要暂停的请求或自动操作。 |
+| `offering`、 `scheduled` 或 `paused` → `faulted` | 服务无法解决错误。 |
 
 ### <a name="resource-model"></a>资源模型
 
@@ -81,8 +83,8 @@ ms.locfileid: "59117576"
 
 ## <a name="multiple-deployments"></a>多个部署
 
-你可以一次将设备分配给多个部署。 这些部署可以针对相同更新类别的内容 (例如，所有部署都是功能更新) 或用于不同更新类别的内容。
+你可以一次将设备分配给多个部署。 这些部署可用于相同更新类别的内容 (例如，所有部署都是功能更新) 或不同更新类别的内容。
 
 为不同更新类别的内容分配设备 (例如功能更新和快速质量更新) 时，部署服务根据 Microsoft 的建议按顺序提供内容。
 
-当您为同一更新类别 (的内容分配设备（例如，功能更新版本 20H1 和 20H2）或 2021 年 3 月和 2021 年 4 月的质量更新（从) 年 3 月到 2021 年 4 月）时，部署服务会提供 Microsoft 排名更高的内容。 对于功能更新和质量更新，最新更新的排名更高。 如果其中一个部署仍为设备计划，并且尚未准备好提供内容，则此行为不适用。 在这种情况下，其他部署将内容交付到设备。
+当您为同一更新类别 (的内容分配设备（例如，功能更新版本 20H1 和 20H2）或 2021 年 3 月和 2021 年 4 月质量更新（从) 年 3 月到 2021 年 4 月）时，部署服务会提供 Microsoft 排名更高的内容。 对于功能更新和质量更新，最新更新的排名更高。 如果其中一个部署仍为设备计划，并且尚未准备好提供内容，则此行为不适用。 在这种情况下，其他部署将内容交付到设备。

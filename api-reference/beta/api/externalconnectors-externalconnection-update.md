@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 7552132ba6762d69c977dba4044a58026e4424c4
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 4da7db10cfc625961edc8729148ac0a2bf6f9c52
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60559580"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60689107"
 ---
 # <a name="update-connection"></a>更新连接
 
@@ -28,7 +28,7 @@ ms.locfileid: "60559580"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持。 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | ExternalConnection.ReadWrite.OwnedBy |
+| 应用程序                            | ExternalConnection.ReadWrite.OwnedBy |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -53,7 +53,7 @@ PATCH /external/connections/{id}
 |:--------------|:-----------------------------------------------|:------------|
 | configuration | [microsoft.graph.externalConnectors.configuration](../resources/externalconnectors-configuration.md) | 指定允许管理连接和索引连接内容的其他应用程序 ID。 |
 | 说明   | String                                         | 网站中显示的连接Microsoft 365 管理中心。 |
-| name          | String                                         | 要显示名称中显示的连接的Microsoft 365 管理中心。 最大长度为 128 个字符。 |
+| name          | 字符串                                         | 要显示名称中显示的连接的Microsoft 365 管理中心。 最大长度为 128 个字符。 |
 
 ## <a name="response"></a>响应
 
@@ -66,6 +66,8 @@ PATCH /external/connections/{id}
 下面展示了示例请求。
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_connection",
@@ -81,6 +83,24 @@ Content-type: application/json
   "description": "Connection to index HR service tickets"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-connection-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-connection-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-connection-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-connection-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 <!-- markdownlint-disable MD024 -->

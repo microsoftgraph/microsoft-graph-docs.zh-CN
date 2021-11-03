@@ -1,16 +1,16 @@
 ---
 title: unifiedRoleEligibilityScheduleInstance 资源类型
-description: 表示通过 Azure AD 角色分配符合条件的应用程序操作的计划Privileged Identity Management。
-author: shauliu1
-localization_priority: Normal
+description: 表示一个计划实例，该实例用于角色分配一个Azure AD Privileged Identity Management。
+author: carolinetempleton
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: bf4e689e4379f34a0196506bcdecafa991b6d38c
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: 514c731693cf0f04037d5ee413ef4a66f17397e3
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453784"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695235"
 ---
 # <a name="unifiedroleeligibilityscheduleinstance-resource-type"></a>unifiedRoleEligibilityScheduleInstance 资源类型
 
@@ -18,11 +18,11 @@ ms.locfileid: "58453784"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示通过 Azure AD 角色分配符合条件的用户Privileged Identity Management。 **unifiedRoleEligibilityScheduleInstance** 由 [unifiedRoleEligibilitySchedule](unifiedroleeligibilityschedule.md)创建，表示通过 Privileged Identity Management 创建的实际合格角色分配。 此资源支持"列表"和"获取"操作，以便查看当前和将来的工作分配。
+表示符合条件的应用程序实例角色分配Azure AD Privileged Identity Management。 **unifiedRoleEligibilityScheduleInstance** 由 [unifiedRoleEligibilitySchedule](unifiedroleeligibilityschedule.md)创建，表示通过 Privileged Identity Management 创建的实际合格角色分配。 此资源支持"列表"和"获取"操作，以便查看当前和将来的工作分配。
 
 继承自 [unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md)。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 unifiedRoleEligibilityScheduleInstances](../api/unifiedroleeligibilityscheduleinstance-list.md)|[unifiedRoleEligibilityScheduleInstance](../resources/unifiedroleeligibilityscheduleinstance.md) 集合|获取 [unifiedRoleEligibilityScheduleInstance](../resources/unifiedroleeligibilityscheduleinstance.md) 对象及其属性的列表。|
@@ -32,14 +32,14 @@ ms.locfileid: "58453784"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|appScopeId|String|当分配范围特定于应用时，特定于应用的范围的标识符。 工作分配的范围决定了已授予主体访问权限的资源集。 应用程序作用域是仅由此应用程序定义和理解的范围。 用于 `/` 租户范围的应用范围。 使用 **directoryScopeId** 将作用域限制为特定目录对象，例如管理单元。 继承自 [unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md)。|
-|directoryScopeId|String|表示工作分配范围的目录对象的标识符。 工作分配的范围决定了已授予主体访问权限的资源集。 目录范围是存储在目录中的多个应用程序可以理解的共享范围。 用于 `/` 租户范围范围。 使用 **appScopeId** 将作用域限制为仅应用程序。 继承自 [unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md)。|
+|appScopeId|String|当分配范围特定于应用时，特定于应用的范围的标识符。 工作分配的范围决定了已授予主体访问权限的资源集。 应用程序作用域是仅由此应用程序定义和理解的范围。 用于 `/` 租户范围的应用范围。 使用 **directoryScopeId** 将作用域限制为特定的目录对象，例如管理单元。 继承自 [unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md)。|
+|directoryScopeId|String|表示工作分配范围的目录对象的标识符。 工作分配的范围决定了已授予主体访问权限的资源集。 目录作用域是存储在目录中的多个应用程序可以理解的共享范围。 用于 `/` 租户范围范围。 使用 **appScopeId** 将作用域限制为仅应用程序。 继承自 [unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md)。|
 |endDateTime|DateTimeOffset|roleEligibilityScheduleInstance 到期的时间。|
 |id|String|roleEligibilityScheduleInstance 的唯一标识符。 键，不可为 null，只读。继承自 [unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md)。|
 |memberType|String|工作分配的成员身份类型。 它可以是 `Inherited` `Direct` 、、 或 `Group` 。|
-|principalId|字符串|要向其中授予工作分配的主体的标识符。 可以是组或用户。 继承自 [unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md)。|
+|principalId|String|要向其中授予工作分配的主体的标识符。 可以是组或用户。 继承自 [unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md)。|
 |roleDefinitionId|字符串|分配所针对的 unifiedRoleDefinition 的标识符。 只读。 继承自 [unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md)。<br> 支持 `$filter`（`eq`）。|
-|roleEligibilityScheduleId|String|此实例的父 roleEligibilitySchedule 的标识符。|
+|roleEligibilityScheduleId|字符串|此实例的父 roleEligibilitySchedule 的标识符。|
 |startDateTime|DateTimeOffset|roleEligibilityScheduleInstance 将启动的时间。|
 
 ## <a name="relationships"></a>关系

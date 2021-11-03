@@ -1,16 +1,16 @@
 ---
 title: governanceResource： register
 description: 在 PIM 中注册 governanceResource 对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 05ab764e1cb4876889cc4627d1f94048990f61ff
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 88f379e283fcfb2cdee2fb44f4f33baa3eeb3c3b
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453861"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60687107"
 ---
 # <a name="governanceresource-register"></a>governanceResource： register
 
@@ -18,7 +18,9 @@ ms.locfileid: "58453861"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 Privileged Identity Management 中注册[governanceResource](../resources/governanceresource.md)对象。
+[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
+
+在 Privileged Identity Management 中注册[governanceResource](../resources/governanceresource.md) Privileged Identity Management。
 
 ## <a name="permissions"></a>权限
 

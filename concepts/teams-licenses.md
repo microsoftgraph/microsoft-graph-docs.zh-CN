@@ -4,12 +4,12 @@ description: 了解适用于 Microsoft Graph 中的 Microsoft Teams API 的许�
 author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0b05f72da75fd364489ba408503edd99a62b4b5c
-ms.sourcegitcommit: c3f849e5a052b1926373a4b316ec303250e6d09e
+ms.openlocfilehash: 4f0f8c41d52ec54711e002253f691a3c298686f0
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60368515"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688687"
 ---
 # <a name="licensing-and-payment-requirements-for-microsoft-teams-apis-in-microsoft-graph"></a>Microsoft Graph 中 Microsoft Teams API 的许可和付款要求
 
@@ -30,7 +30,7 @@ ms.locfileid: "60368515"
 
 |API                   | 需要[许可证](#required-licenses-for-modela)的人员  | 种子设定容量 | 其他用途的价格 | 备注 |
 |:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|
-| [chatMessage 更改通知](/graph/api/subscription-post-subscriptions) | 邮件发件人 | 每个应用每个月每个用户 800 条消息 | 每条消息 0.00075 美元 | |
+| [chatMessage 更改通知](/graph/api/subscription-post-subscriptions) | 邮件发件人 | 每个应用每个月每个用户 800 条消息 | 每条消息 0.00075 美元 | 种子设定容量与 conversationMember 更改通知共享 |
 | [conversationMember 更改通知](/graph/api/subscription-post-subscriptions) | 租户中的任何用户 | 每个应用每个月每个用户 800 条通知  | 每条通知 0.00075 美元 | 种子设定容量与 chatMessage 更改通知共享 |
 | [为用户在所有聊天中获取消息](/graph/api/chats-getallmessages) | 已命名用户 | 每个应用每个月每个用户 1600 条消息 | 每条消息 0.00075 美元 | 命名用户是在 GET 请求 URL 中标识的用户。 每个 API 请求的最小费用为 1 条消息。 种子设定容量与通道导出共享。 |
 |  [在所有通道中获取消息](/graph/api/channel-getallmessages)| 任何团队成员 | 每个应用每个月每个用户 1600 条消息 | 每条消息 0.00075 美元 |  每个 API 请求的最小费用为 1 条消息。 种子设定容量与聊天导出共享。 |
@@ -40,10 +40,10 @@ ms.locfileid: "60368515"
 
 |API                   | 需要[许可证](#required-licenses-for-modela)的人员  | 种子设定容量 | 其他用途的价格 | 备注 |
 |:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|
-| [chatMessage 更改通知](/graph/api/subscription-post-subscriptions) | 不适用 | 无 | 每条消息 0.00075 美元 | 种子设定容量与 conversationMember 更改通知共享。 |
-| [conversationMember 更改通知](/graph/api/subscription-post-subscriptions) | 不适用 | 无  | 每条通知 0.00075 美元 | 种子设定容量与 chatMessage 更改通知共享。 |
-| [为用户在所有聊天中获取消息](/graph/api/chats-getallmessages) |  不适用 | 无 | 每条消息 0.00075 美元 |  每个 API 请求的最小费用为 1 条消息。 种子设定容量与通道导出共享。 |
-|  [在所有通道中获取消息](/graph/api/channel-getallmessages)|  不适用 | 无 | 每条消息 0.00075 美元 | 每个 API 请求的最小费用为 1 条消息。 种子设定容量与聊天导出共享。 |
+| [chatMessage 更改通知](/graph/api/subscription-post-subscriptions) | 不适用 | 无 | 每条消息 0.00075 美元 |  |
+| [conversationMember 更改通知](/graph/api/subscription-post-subscriptions) | 不适用 | 无  | 每条通知 0.00075 美元 | |
+| [为用户在所有聊天中获取消息](/graph/api/chats-getallmessages) |  不适用 | 无 | 每条消息 0.00075 美元 |  每个 API 请求的最小费用为 1 条消息。 |
+|  [在所有通道中获取消息](/graph/api/channel-getallmessages)|  不适用 | 无 | 每条消息 0.00075 美元 | 每个 API 请求的最小费用为 1 条消息。 |
 
 ## <a name="evaluation-mode-default-requirements"></a>评估模式（默认）要求
 

@@ -1,16 +1,16 @@
 ---
 title: 列出 privilegedRoleAssignments
-description: 检索 privilegedRoleAssignment 对象的列表，该列表对应于组织的所有角色分配。
-localization_priority: Normal
+description: 检索 privilegedRoleAssignment 对象的列表，这些对象对应于组织的所有角色分配。
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: cbbc5be2edc0cb9f86ab008559f1e7f6daa9f83a
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 14e5b60cc7b0dd40e4211d1b0c108826d033e8ac
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453420"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695774"
 ---
 # <a name="list-privilegedroleassignments"></a>列出 privilegedRoleAssignments
 
@@ -18,7 +18,9 @@ ms.locfileid: "58453420"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [privilegedRoleAssignment](../resources/privilegedroleassignment.md) 对象的列表，该列表对应于组织的所有角色分配。
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+
+检索 [privilegedRoleAssignment](../resources/privilegedroleassignment.md) 对象的列表，这些对象对应于组织的所有角色分配。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -83,7 +85,7 @@ GET https://graph.microsoft.com/beta/privilegedRoleAssignments
 ---
 
 ##### <a name="response"></a>响应
-以下示例显示了相应的响应。 注意：为了提高可读性，可能缩短此处显示的响应对象。
+以下示例显示了相应的响应。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -139,7 +141,7 @@ GET https://graph.microsoft.com/beta/privilegedRoleAssignments?$filter=isElevate
 ---
 
 ##### <a name="response"></a>响应
-以下示例显示了相应的响应。 注意：为了提高可读性，可能缩短此处显示的响应对象。
+以下示例显示了相应的响应。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -203,7 +205,7 @@ GET https://graph.microsoft.com/beta/privilegedRoleAssignments?$filter=isElevate
 ---
 
 ##### <a name="response"></a>响应
-以下示例显示了相应的响应。 注意：为了提高可读性，可能缩短此处显示的响应对象。
+以下示例显示了相应的响应。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -267,7 +269,7 @@ GET https://graph.microsoft.com/beta/privilegedRoleAssignments?$filter=isElevate
 ---
 
 ##### <a name="response"></a>响应 
-以下示例显示了相应的响应。 注意：为了提高可读性，可能缩短此处显示的响应对象。
+以下示例显示了相应的响应。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

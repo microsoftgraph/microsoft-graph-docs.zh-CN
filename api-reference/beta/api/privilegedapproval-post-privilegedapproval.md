@@ -1,22 +1,24 @@
 ---
 title: 创建 privilegedApproval
 description: 使用此 API 创建新的 privilegedApproval。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 5e99d06616d3ddfa08119a6fed352b4ba7b274a1
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 76128555f3a248c27fe580efce95cb800293ed98
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453553"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696012"
 ---
 # <a name="create-privilegedapproval"></a>创建 privilegedApproval
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 使用此 API 创建新的 privilegedApproval。
 ## <a name="permissions"></a>权限

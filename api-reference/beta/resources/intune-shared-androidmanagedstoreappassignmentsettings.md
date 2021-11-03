@@ -2,15 +2,15 @@
 title: androidManagedStoreAppAssignmentSettings 资源类型
 description: 包含用于将 Android 托管应用商店移动应用分配给组的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 18b1b52ac92fee819a7e4f7e690df850947f2a5b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8a2afa3243cc19b016430e2b9960f6aecc349cdf
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59039201"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60691538"
 ---
 # <a name="androidmanagedstoreappassignmentsettings-resource-type"></a>androidManagedStoreAppAssignmentSettings 资源类型
 
@@ -29,6 +29,7 @@ ms.locfileid: "59039201"
 |属性|类型|说明|
 |:---|:---|:---|
 |androidManagedStoreAppTrackIds|String collection|为此应用分配启用的轨 ID。|
+|autoUpdateMode|[androidManagedStoreAutoUpdateMode](../resources/intune-shared-androidmanagedstoreautoupdatemode.md)|此应用程序分配的自动更新优先顺序。 可取值为：`default`、`postponed`、`priority`、`unknownFutureValue`。|
 
 ## <a name="relationships"></a>关系
 无
@@ -45,7 +46,8 @@ ms.locfileid: "59039201"
   "@odata.type": "#microsoft.graph.androidManagedStoreAppAssignmentSettings",
   "androidManagedStoreAppTrackIds": [
     "String"
-  ]
+  ],
+  "autoUpdateMode": "String"
 }
 ```
 

@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: de9177163835a9500b02d01806644404b50ee144
-ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
+ms.openlocfilehash: 70b0f81e3262f9191dc279cb73e4e09f2e2b2ec6
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60256499"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695438"
 ---
 # <a name="create-deployment"></a>创建部署
 命名空间：microsoft.graph.windowsUpdates
@@ -59,7 +59,7 @@ POST /admin/windows/updates/deployments
 
 如果成功，此方法在响应 `201 Created` 正文中返回 响应[](../resources/windowsupdates-deployment.md)代码和部署对象。
 
-## <a name="examples"></a>示例
+## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 
@@ -167,7 +167,8 @@ Content-Type: application/json
         }
       ]
     },
-    "userExperience": null
+    "userExperience": null,
+    "safeguard": null
   },
   "createdDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)"

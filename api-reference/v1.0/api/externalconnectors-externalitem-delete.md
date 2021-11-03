@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: c195180570ae1bc4877cf2462fdbbe8d6a2139fc
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: b6be3bcf2dd78c56b2da96da10b7c001e16cda60
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60558549"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60687765"
 ---
 # <a name="delete-externalitem"></a>删除 externalItem
 命名空间：microsoft.graph.externalConnectors
@@ -26,7 +26,7 @@ ms.locfileid: "60558549"
 |:---|:---|
 |委派（工作或学校帐户）|不适用|
 |委派（个人 Microsoft 帐户）|不适用|
-|Application| ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All|
+|应用程序| ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -55,6 +55,8 @@ DELETE /external/connections/{connectionsId}/items/{externalItemId}
 ### <a name="request"></a>请求
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_externalitem"
@@ -63,6 +65,24 @@ DELETE /external/connections/{connectionsId}/items/{externalItemId}
 ``` http
 DELETE https://graph.microsoft.com/v1.0/external/connections/contosohr/items/TSP228082938
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-externalitem-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-externalitem-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-externalitem-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-externalitem-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 

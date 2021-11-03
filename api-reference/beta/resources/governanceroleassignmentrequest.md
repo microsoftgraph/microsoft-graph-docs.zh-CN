@@ -1,16 +1,16 @@
 ---
 title: governanceRoleAssignmentRequest 资源类型
-description: 表示在 角色分配 Identity Management 中执行安全操作的请求。
-localization_priority: Normal
+description: 表示在"角色分配 Identity Management"中执行安全操作的请求。
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 1ba2478b855d480e846e5b6e5435829ce6e8e4b0
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 8bee3a0abe303d1fe14e592104388b229e4d6424
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453791"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694272"
 ---
 # <a name="governanceroleassignmentrequest-resource-type"></a>governanceRoleAssignmentRequest 资源类型
 
@@ -18,34 +18,36 @@ ms.locfileid: "58453791"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示在"角色分配 Identity Management"中执行所有操作的请求。
+[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
+
+表示请求在角色分配中执行Privileged Identity Management。
 
 `governanceRoleAssignmentRequest` 是一个票证模型实体，用于管理角色分配的生命周期。 它表示用户和管理员的意图/决定，还提供了实现反复选择、审批入口等的灵活性，与直接公开 、 和 操作相比 `POST` `PUT` `DELETE` `governanceRoleAssignment` 。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法          |返回类型  |说明|
 |:------------|:--------|:--------|
 |[Get](../api/governanceroleassignmentrequest-get.md) | [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|获取角色分配 ID 指定的请求。  
-|[列出](../api/governanceroleassignmentrequest-list.md) | [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)  集合|获取角色分配请求。|
+|[列表](../api/governanceroleassignmentrequest-list.md) | [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)  集合|获取角色分配请求。|
 |[Create](../api/governanceroleassignmentrequest-post.md)|  [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|创建管理现有或新数据库生命周期角色分配。|
 |[Cancel](../api/governanceroleassignmentrequest-cancel.md)|  |取消挂起角色分配请求。|
-|[Update](../api/governanceroleassignmentrequest-update.md)| [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|如果请求的状态为 ，则管理员更新对请求的决策 `PendingAdminDecision` 。|
+|[更新](../api/governanceroleassignmentrequest-update.md)| [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|如果请求的状态为 ，则管理员更新对请求的决策 `PendingAdminDecision` 。|
 
 ## <a name="properties"></a>属性
 | 属性                  | 类型          |说明|
 |:--------------------------|:--------------|:----------|
 |id                         |String         |请求角色分配 ID。|
-|resourceId                 |String         |必填。 与请求关联的角色分配的 ID。|
-|roleDefinitionId           |字符串         |必填。 与请求关联的角色角色分配的 ID。|
-|subjectId                  |String         |必填。 与请求关联的角色分配的 ID。|
-|type                       |String        |必填。 表示在操作项上角色分配。 可能的值是 `AdminAdd` `UserAdd` `AdminUpdate` `AdminRemove` `UserRemove` `UserExtend` `AdminExtend` `UserRenew` ：、、、、。 `AdminRenew`|
-|assignmentState|字符串  |必填。 工作分配的状态。 可能的值包括： (符合条件的分配) 、 (（如果由管理员直接分配) 、 (或由) 用户对符合条件的分配 `Eligible`  `Active` 进行激活 `Active` ）。|
+|resourceId                 |String         |必需。 与请求关联的角色分配的 ID。|
+|roleDefinitionId           |字符串         |必需。 与请求关联的角色角色分配的 ID。|
+|subjectId                  |String         |必需。 与请求关联的角色分配的 ID。|
+|type                       |String        |必需。 表示对项目执行的操作角色分配。 可能的值是 `AdminAdd` `UserAdd` `AdminUpdate` `AdminRemove` `UserRemove` `UserExtend` `AdminExtend` `UserRenew` ：、、、、。 `AdminRenew`|
+|assignmentState|String  |必需。 工作分配的状态。 可能的值包括： (分配) 、 (（如果管理员直接分配) 、 (或由) 用户对符合条件的分配 `Eligible`  `Active` `Active` 激活）。|
 |requestedDateTime          |DateTimeOffset |只读。 请求创建时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |schedule                   |[governanceSchedule](governanceschedule.md)|请求的计划角色分配对象。|
 |reason                     |String         |创建请求时由用户和管理员提供的消息，说明为什么需要该请求。|
-|状态                     |[governanceRoleAssignmentRequestStatus](governanceroleassignmentrequeststatus.md)         |请求角色分配状态。|
-|linkedEligibleRoleAssignmentId|String        |如果这是角色激活请求，则它表示被引用 `eligible assignment` 的 ID;否则，值为 `null` 。 |
+|status                     |[governanceRoleAssignmentRequestStatus](governanceroleassignmentrequeststatus.md)         |请求角色分配状态。|
+|linkedEligibleRoleAssignmentId|字符串        |如果这是角色激活请求，则它表示被引用 `eligible assignment` 的 ID;否则，值为 `null` 。 |
 
 |成员|说明|
 |:---|:---|

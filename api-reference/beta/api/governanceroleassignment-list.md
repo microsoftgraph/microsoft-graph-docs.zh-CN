@@ -1,22 +1,24 @@
 ---
 title: 列出 governanceRoleAssignments
 description: 检索 governanceRoleAssignments 的集合。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: e5f017f5c5e336cbec34b2bf84d5a690e256e823
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 00674a51ac95f1b40c6e4b12e2fbe72877279d86
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453385"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60685532"
 ---
 # <a name="list-governanceroleassignments"></a>列出 governanceRoleAssignments
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
 
 检索 [governanceRoleAssignments 的集合](../resources/governanceroleassignment.md)。
 
@@ -52,7 +54,7 @@ ms.locfileid: "58453385"
 
 列出资源上的 [governanceRoleAssignments](../resources/governanceroleassignment.md) 集合。
 
->**注意：** 除了权限范围之外，此请求还要求请求者至少具有一角色分配资源的权限。 
+>**注意：** 除了权限范围之外，此请求要求请求者至少具有一角色分配资源的权限。 
 ```http
 GET /privilegedAccess/azureResources/resources/{resourceId}/roleAssignments
 GET /privilegedAccess/azureResources/roleAssignments?$filter=resourceId+eq+'{resourceId}'

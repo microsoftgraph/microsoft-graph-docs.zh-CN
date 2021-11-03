@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e6ae50ca1794ffb9f1c19bfe01165ad4909a3486
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 3e7742a94ad97a4e3076c5a9aa57caa93c1aa194
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60490615"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688673"
 ---
 # <a name="create-devicemanagementconfigurationsetting"></a>创建 deviceManagementConfigurationSetting
 
@@ -37,6 +37,7 @@ ms.locfileid: "60490615"
 }
 -->
 ``` http
+POST /deviceManagement/compliancePolicies/{deviceManagementCompliancePolicyId}/settings
 POST /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/settings
 ```
 
@@ -66,7 +67,7 @@ POST /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolic
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/settings
+POST https://graph.microsoft.com/beta/deviceManagement/compliancePolicies/{deviceManagementCompliancePolicyId}/settings
 Content-type: application/json
 Content-length: 16129
 

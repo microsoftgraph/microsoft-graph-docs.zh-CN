@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: adimitui
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: f3a07629006f5f2cada6601dab09b952fdef7980
-ms.sourcegitcommit: 6cea9bc17d3859e475a74c4a6f661f848e837e89
+ms.openlocfilehash: 916da77d59fb4aee607145ffdbcd8cc40b7669e6
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240759"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60691566"
 ---
 # <a name="organization-resource-type"></a>组织资源类型
 
@@ -27,7 +27,7 @@ ms.locfileid: "60240759"
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
 |[获取组织](../api/organization-get.md) | [organization](organization.md) 集合|读取 organization 对象的属性和关系。|
-|[更新 organization](../api/organization-update.md) | [组织](organization.md)  |更新 organization 对象。 可更新的限定属性：**marketingNotificationMails**、**technicalNotificationMails**、**securityComplianceNotificationMails**、**securityComplianceNotificationPhones** 和 **privacyProfile**。 |
+|[更新 organization](../api/organization-update.md) | [组织](organization.md)  |更新组织对象。唯一可以更新的属性是： **marketingNotificationMails**、 **technicalNotificationMails**、 **securityComplianceNotificationMails**、 **securityComplianceNotificationPhones** 和 **privacyProfile**。 |
 | [获取组织设置](../api/organizationsettings-get.md) | [organizationSettings](organizationsettings.md) | 读取组织设置对象。 |
 |**开放扩展**| | |
 |[创建开放扩展](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| 创建开放扩展，并将自定义属性添加到新资源或现有资源。|
@@ -46,7 +46,7 @@ ms.locfileid: "60240759"
 |[删除 organizationalBrandingLocalization](../api/organizationalbrandinglocalization-delete.md) | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | 删除本地化品牌对象。 |
 <!--|[Delete organizationalBranding](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | 删除默认组织的品牌对象。 |
 
-**NOTE： To restore the Delete organizationalBranding operation back into the table after Update organizationalBranding if all inconsistencies are resolved.-->
+**注意： 若要在解决所有不一致性后，将 Delete organizationalBranding 操作还原回"更新组织品牌"后的表中。-->
 
 ## <a name="properties"></a>属性
 
@@ -56,13 +56,13 @@ ms.locfileid: "60240759"
 | businessPhones | String collection | 组织的电话号码。虽然这是字符串集合，但是只能为该属性设置一个号码。 |
 | 城市 | String | 组织地址所在的城市名称。 |
 | country | String | 组织地址所在的国家/地区名称。 |
-| countryLetterCode | String | 组织所在的国家/地区缩写。 |
+| countryLetterCode | String | ISO 3166-2 格式的组织国家/地区缩写。 |
 | createdDateTime | DateTimeOffset | 组织的创建时间戳。 值无法修改，并在组织创建时自动填充。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。 |
-| deletedDateTime | DateTimeOffset | 表示采用 ISO 8601 格式创建 Azure AD 的日期和时间，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。 |
+| deletedDateTime | DateTimeOffset | 表示使用 ISO 8601 格式删除Azure AD租户的日期和时间，并且始终采用 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC `2014-01-01T00:00:00Z`。只读。 |
 | directorySizeQuota | [directorySizeQuota](directorySizeQuota.md) | 组织的目录大小配额信息。 |
 | displayName | String | 租户的显示名称。 |
 | id | 字符串 | 租户 ID，表示组织（或租户）的唯一标识符。 继承自 [directoryObject](directoryobject.md)。 键。 不可为 null。 只读。 |
-| isMultipleDataLocationsForServicesEnabled | 布尔值 | `true` 如果组织已启用多地理位置; `false` 如果组织未启用多地理位置; `null` (默认) 。 只读。 有关详细信息，请参阅 [OneDrive Online 多地理位置](/sharepoint/dev/solution-guidance/multigeo-introduction)。 |
+| isMultipleDataLocationsForServicesEnabled | 布尔值 | `true` 如果组织已启用多地理位置; `false` 如果组织未启用多地理位置; `null` (默认值) 。 只读。 有关详细信息，请参阅 [OneDrive Online 多地理位置](/sharepoint/dev/solution-guidance/multigeo-introduction)。 |
 | marketingNotificationEmails | String collection | 不可为空。 |
 | objectType | String | 一个标识对象类型的字符串。 对于租户，该值始终为 `Company` 。|
 | onPremisesLastSyncDateTime | DateTimeOffset | 租户上次与本地目录同步的时间和日期。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
@@ -83,7 +83,7 @@ ms.locfileid: "60240759"
 | 关系  | 类型  |说明|
 |:---------------|:--------|:----------|
 |certificateBasedAuthConfiguration|[certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md) 集合| 用于管理基于证书的身份验证配置的导航属性。 只能在集合中创建 certificateBasedAuthConfiguration 的单个实例。  |
-|extensions|[扩展](extension.md)集合|为组织资源定义的开放扩展集合。 可为 Null。| 
+|extensions|[扩展](extension.md)集合|为组织资源定义的开放扩展集合。 可为 NULL。| 
 |organizationalbranding|[organizationalBranding](organizationalbranding.md) 集合| 用于管理组织的默认品牌的资源。 可为 Null。|
 |settings|[organizationSettings](organizationsettings.md) | 检索 organizationSettings 对象的属性和关系。 可为 Null。|
 

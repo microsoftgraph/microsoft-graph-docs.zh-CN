@@ -1,16 +1,16 @@
 ---
 title: 更新 bookingcustomer
 description: 更新 bookingCustomer 对象的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 476c827474026914a7839947d7a88a9c10b8a917
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c15279045eda8e6c884039ee075a3e63720142b6
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047817"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694678"
 ---
 # <a name="update-bookingcustomer"></a>更新 bookingcustomer
 
@@ -45,6 +45,8 @@ PATCH /bookingBusinesses/{id}/customers/{id}
 |:---------------|:--------|:----------|
 |displayName|String|客户的名称。|
 |emailAddress|String|客户的 SMTP 地址。|
+|地址|[physicalAddress](../resources/physicaladdress.md) 集合|与客户关联的地址，包括住宅、企业和其他地址。|
+|phones|[phone](../resources/phone.md) collection|电话客户关联的电话号码，包括家庭号码、商务号码和移动电话号码。|
 
 ## <a name="response"></a>响应
 如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和更新 [的 bookingCustomer](../resources/bookingcustomer.md) 对象。
@@ -85,7 +87,7 @@ Content-type: application/json
 ---
 
 ##### <a name="response"></a>响应
-下面展示了示例响应。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,22 +1,24 @@
 ---
 title: 导出 governanceRoleAssignmentRequests
-description: 检索格式为 的 governanceRoleAssignmentRequests 集合，该集合可在浏览器中.csv `application/octet-stream` 文件进行分析。
-localization_priority: Normal
+description: 检索格式为 的 governanceRoleAssignmentRequests 集合，该集合可在浏览器中.csv `application/octet-stream` 文件的形式进行分析。
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: badd8b3658698d1c413d2316eecf8230f04b45d3
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 5848d5515d262a6994a9e0fb0270ec8edb28f2a8
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453854"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694503"
 ---
 # <a name="export-governanceroleassignmentrequests"></a>导出 governanceRoleAssignmentRequests
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
 
 检索格式为 [的 governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) 集合，该集合可在浏览器中.csv `application/octet-stream` 文件的形式进行分析。
 
@@ -77,7 +79,7 @@ GET /privilegedAccess/azureResources/roleAssignments/export?$filter=subjectId+eq
 如果成功，此方法返回 响应 `200 OK` 代码和类型 的内容 `application/octet-stream` 。
 
 ## <a name="example"></a>示例
-本示例将所有角色分配另存为.csv Wingtip Toys - Prod 中的一个角色分配文件。 
+本示例将所有角色分配保存为订阅 Wingtip Toys .csv Prod 中的一个角色分配文件。 
 
 ##### <a name="request"></a>请求
 ```http

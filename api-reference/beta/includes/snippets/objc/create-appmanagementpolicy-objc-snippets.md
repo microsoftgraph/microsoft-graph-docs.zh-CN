@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 970fc2e67badbed8c2604149525efb53cc007859
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 0f2ab85d73ef314f9df2241da6534b4455795b94
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58262385"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60690106"
 ---
 ```objc
 
@@ -29,9 +29,26 @@ MSGraphPasswordCredentialConfiguration *passwordCredentials = [[MSGraphPasswordC
 MSGraphPasswordCredentialConfiguration *passwordCredentials = [[MSGraphPasswordCredentialConfiguration alloc] init];
 [passwordCredentials setRestrictionType: [MSGraphAppCredentialRestrictionType passwordLifetime]];
 [passwordCredentials setMaxLifetime:@"P4DT12H30M5S"];
-[passwordCredentials setRestrictForAppsCreatedAfterDateTime: "2018-10-19T10:37:00Z"];
+[passwordCredentials setRestrictForAppsCreatedAfterDateTime: "2014-10-19T10:37:00Z"];
+[passwordCredentialsList addObject: passwordCredentials];
+MSGraphPasswordCredentialConfiguration *passwordCredentials = [[MSGraphPasswordCredentialConfiguration alloc] init];
+[passwordCredentials setRestrictionType: [MSGraphAppCredentialRestrictionType symmetricKeyAddition]];
+[passwordCredentials setMaxLifetime: null];
+[passwordCredentials setRestrictForAppsCreatedAfterDateTime: "2019-10-19T10:37:00Z"];
+[passwordCredentialsList addObject: passwordCredentials];
+MSGraphPasswordCredentialConfiguration *passwordCredentials = [[MSGraphPasswordCredentialConfiguration alloc] init];
+[passwordCredentials setRestrictionType: [MSGraphAppCredentialRestrictionType symmetricKeyLifetime]];
+[passwordCredentials setMaxLifetime:@"P4D"];
+[passwordCredentials setRestrictForAppsCreatedAfterDateTime: "2014-10-19T10:37:00Z"];
 [passwordCredentialsList addObject: passwordCredentials];
 [restrictions setPasswordCredentials:passwordCredentialsList];
+NSMutableArray *keyCredentialsList = [[NSMutableArray alloc] init];
+MSGraphKeyCredentialConfiguration *keyCredentials = [[MSGraphKeyCredentialConfiguration alloc] init];
+[keyCredentials setRestrictionType: [MSGraphAppKeyCredentialRestrictionType asymmetricKeyLifetime]];
+[keyCredentials setMaxLifetime:@"P90D"];
+[keyCredentials setRestrictForAppsCreatedAfterDateTime: "2014-10-19T10:37:00Z"];
+[keyCredentialsList addObject: keyCredentials];
+[restrictions setKeyCredentials:keyCredentialsList];
 [appManagementPolicy setRestrictions:restrictions];
 
 NSError *error;

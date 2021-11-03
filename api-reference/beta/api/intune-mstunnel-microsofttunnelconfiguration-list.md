@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: aa4f6e3cf1fec2427853bf122002a991877e9e6d
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: f0c691a1e6922482c684d4df50629b11eab4e850
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60492798"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60693938"
 ---
 # <a name="list-microsofttunnelconfigurations"></a>列出 microsoftTunnelConfigurations
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/microsoftTunnelConfigurati
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 950
+Content-Length: 988
 
 {
   "value": [
@@ -99,7 +99,8 @@ Content-Length: 950
       "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00",
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
-      ]
+      ],
+      "disableUDPConnections": true
     }
   ]
 }

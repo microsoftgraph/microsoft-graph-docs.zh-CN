@@ -1,16 +1,16 @@
 ---
 title: broadcastMeetingSettings 资源类型
-description: 设置实时事件相关的事件
+description: 设置事件相关的Teams事件
 author: mkhribech
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 1de814ee520d1dbf8d0ea6ba1270c6893a07d2cd
-ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
+ms.openlocfilehash: 36e5778761ac792e84096fd54f48c766e524149d
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52896688"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696530"
 ---
 # <a name="broadcastmeetingsettings-resource-type"></a>broadcastMeetingSettings 资源类型
 
@@ -18,30 +18,26 @@ ms.locfileid: "52896688"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-设置实时事件相关。
-
-> [!CAUTION]
-> 此 API 不验证由策略 管理的活动 [事件设置](/microsoftteams/teams-live-events/set-teams-live-events-policies-using-powershell)。
-> 例如，如果管理员使用 设置实时事件策略，用户将被阻止在 Teams 客户端中设置实时事件权限，但能够通过 `Set-CsTeamsMeetingBroadcastPolicy -Identity Global -BroadcastAttendeeVisibility EveryoneInCompany` `public` 将 **allowedAudience** 设置为 ，通过 Microsoft Graph 创建实时事件 `everyone` 。
+设置实时事件[Microsoft Teams相关的事件](/microsoftteams/teams-live-events/what-are-teams-live-events)。
 
 ## <a name="properties"></a>属性
 
 | 属性                   | 类型                     | 说明                                                                     |
 | -------------------------- | ------------------------ | ------------------------------------------------------------------------------- |
-| allowedAudience            | [broadcastMeetingAudience](#broadcastmeetingaudience-values) | 定义可加入实时事件的人。 下表列出了可能的值。 |
-| isRecordingEnabled         | Boolean                  | 指示是否为此实时事件启用录制。 默认值为 `false`。          |
-| isAttendeeReportEnabled    | Boolean                  | 指示是否为此实时事件启用与会者报告。 默认值为 `false`。    |
-| isQuestionAndAnswerEnabled | Boolean                  | 指示是否为此&事件启用了问答。 默认值为 `false`。                |
-| isVideoOnDemandEnabled     | Boolean                  | 指示是否为此实时事件启用视频按需。 默认值为 `false`。    |
+| allowedAudience            | [broadcastMeetingAudience](#broadcastmeetingaudience-values) | 定义谁可以加入Teams活动。 下表列出了可能的值。 |
+| isRecordingEnabled         | 布尔值                  | 指示是否为此实时事件Teams录制。 默认值为 `false`。          |
+| isAttendeeReportEnabled    | 布尔值                  | 指示是否为此活动启用了参与者Teams活动。 默认值为 `false`。    |
+| isQuestionAndAnswerEnabled | 布尔值                  | 指示是否为此&事件启用了 Q Teams A。 默认值为 `false`。                |
+| isVideoOnDemandEnabled     | 布尔值                  | 指示是否为此实时事件启用Teams视频。 默认值为 `false`。    |
 
 ### <a name="broadcastmeetingaudience-values"></a>broadcastMeetingAudience 值
 
 | 值              | 说明                                                       |
 | ------------------ | ----------------------------------------------------------------- |
-| everyone           | 实时事件将向任何人开放。 此值为默认值。 |
-| 组织       | 组织中的每个人都可以加入实时事件。                     |
-| roleIsAttendee     | 只有指定的人员才能加入实时事件。                |
-| unknownFutureValue | 未知未来值。                                             |
+| everyone           | 此Teams事件将向任何人开放。 此值为默认值。 |
+| 组织       | 组织中的每个人都可以加入此Teams活动。                     |
+| roleIsAttendee     | 只有指定的人员才能加入此Teams活动。                |
+| unknownFutureValue | 可发展枚举 sentinel 值。 请勿使用。  |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -3,14 +3,14 @@ title: People-Picker组件
 description: 您可以使用 mgt-people-picker Web 组件搜索指定数量的人，然后通过 Microsoft Graph。
 ms.localizationpriority: medium
 author: elisenyang
-ms.openlocfilehash: 277a8423ef018d5663fa6aaae94e384554914686
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3646640ca9960d49e862d4791ddab3530e12e3a9
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59103849"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694783"
 ---
-# <a name="people-picker-component-in-the-microsoft-graph-toolkit"></a>People-Picker Microsoft Graph Toolkit
+# <a name="people-picker-component-in-the-microsoft-graph-toolkit"></a>People-Picker Microsoft Graph Toolkit 中的组件
 
 您可以使用 Web `mgt-people-picker` 组件来搜索用户和/或组。 默认情况下，组件将搜索组织中所有的用户和用户，但你可以将行为更改为同时搜索组或仅搜索组。 您还可以将搜索筛选到特定组。 此外，还可以允许用户输入并选择任何电子邮件地址。
 
@@ -29,7 +29,7 @@ ms.locfileid: "59103849"
 | 属性 | 属性 | 说明                                                                                                                                                                            |
 | -------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | show-max | showMax   | 一个数字值，指示要显示的最大人数。 默认值为 6。                                                                                             |
-| group-id    | groupId     | 一个字符串值，属于 Microsoft Graph组，用于进一步筛选搜索结果。                                                                            |
+| group-id    | groupId     | 一个字符串值，属于 Microsoft Graph定义组，用于进一步筛选搜索结果。                                                                            |
 | transitive-search     | transitiveSearch      | 一个布尔值，用于执行可传递搜索，返回简单列表嵌套成员的成员的索引 - 默认情况下，不会使用可传递搜索。|
 | type     | type      | 要搜索的实体类型。 可用选项包括 `person` `group` `any` ：、、。 默认值为 `person`。 如果设置了属性， `group-id` 则此属性无效。         
 | user-type     | userType      | 要搜索的用户的类型。 可用选项包括 `any` `user` ：、、组织用户或 `contact` 联系人。 默认值为 `any`。 |
@@ -37,11 +37,11 @@ ms.locfileid: "59103849"
 | selected-people  | selectedPeople     | 所选人员数组。 设置此值以编程方式选择人员。|
 | people   | people    | 在搜索结果中找到并呈现的一组人员 |
 | 占位符   | 占位符    | 用于说明如何使用该组件的默认文本。 默认值为 `Start typing a name`。
-| default-selected-user-ids | defaultSelectedUserIds | 当提供以逗号分隔的 Microsoft Graph ID 字符串时，组件将呈现初始化时选择各自的用户。
-| default-selected-group-ids | defaultSelectedGroupIds | 类似于 default-selected-user-ids，当提供以逗号分隔的 Microsoft Graph 组 ID 的字符串时，组件在初始化时将呈现选择各自的组。
+| default-selected-user-ids | defaultSelectedUserIds | 当提供以逗号分隔的 Microsoft Graph用户 ID 时，组件在初始化时将呈现选择各自的用户。
+| default-selected-group-ids | defaultSelectedGroupIds | 与 default-selected-user-ids 类似，当提供以逗号分隔的 Microsoft Graph 组 ID 的字符串时，组件在初始化时呈现选择各自的组。
 | 选择模式 | selectionMode | 用于指示是允许为用户或组选择 (项目，还是) 一个项目。 可用选项包括 `single` `multiple` ：、。 默认值为 `multiple`。
 | disabled | disabled | 设置是否禁用人员选取器。 禁用后，用户将无法搜索或选择人员。
-| allow-any-email | allowAnyEmail | 指示人员选取器是否可以在不选择人员的情况下接受电子邮件地址。 默认值为 `false`。 键入完电子邮件地址后，可以按逗号 () ，用分号 () ，按 Tab 键或输入键进行 `,` `;` 添加。
+| allow-any-email | allowAnyEmail | 指示人员选取器是否可以在不选择人员的情况下接受电子邮件地址。 默认值为 `false`。 键入完电子邮件地址后，可以按逗号 () 、分号 () 、制表符或输入键进行 `,` `;` 添加。
 
 下面是一 `show-max` 个示例。
 
@@ -73,7 +73,7 @@ ms.locfileid: "59103849"
     document.querySelector('mgt-people-picker').selectUsersById(["id","id"])
     ```
 
-- 使用 `selectGroupsById()` 方法（接受 Microsoft graph 组 [ID](/graph/api/resources/group) 的数组）查找与 (关联的) 组。
+- 使用 `selectGroupsById()` 方法，接受 Microsoft graph 组 [ID](/graph/api/resources/group) 数组，以查找 (用户) 组。
 
     ```javascript
     // groupid = Microsoft graph group "id"
@@ -84,9 +84,9 @@ ms.locfileid: "59103849"
 
 从组件中触发以下事件。
 
-Event | 何时发出 | 自定义数据 | Cancelable | 气泡 | 使用自定义模板
+事件 | 何时发出 | 自定义数据 | Cancelable | 气泡 | 使用自定义模板
 ------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
-`selectionChanged` | 用户在已选择/已选取人员列表中添加或删除了人员 | 选定人员数组，其中人员可以是包含Graph [URL](/graph/api/resources/user)的其他属性的用户、人员[](/graph/api/resources/person)或[](/graph/api/resources/contact) `personImage` 联系人 | 否 | 否 | 是，除非您覆盖默认模板
+`selectionChanged` | 用户在已选择/已选取人员列表中添加或删除了人员 | 选定人员数组，其中人员可以是包含Graph [URL](/graph/api/resources/user)的其他属性的用户、[](/graph/api/resources/person)人员或[](/graph/api/resources/contact) `personImage` 联系人 | 否 | 否 | 是，除非您覆盖默认模板
 
 有关处理事件的信息，请参阅 [事件](../customize-components/events.md)。
 
@@ -148,7 +148,7 @@ mgt-people-picker {
 
 | 配置 | 权限 | API
 | --- | ---------- | ------- |
-| `group-id` set | People.Read、User.Read.All | [/groups/ \$ {groupId}/members](/graph/api/group-list-members) |
+| `group-id` set | People.Read、User.Read.All、GroupMember.Read.All | [/groups/ \$ {groupId}/members](/graph/api/group-list-members) |
 | `type` 设置为 `Person` 或 `any` | People.Read | [/me/people](/graph/api/user-list-people) |
 | `type` 设置为 `Group` 或 搜索用户， `type` 并设置为 `Group` 或 `any` | Group.Read.All | [/groups](/graph/api/group-list) |
 | `default-selected-user-ids` set | User.ReadBasic.All | [/users](/graph/api/user-list) |

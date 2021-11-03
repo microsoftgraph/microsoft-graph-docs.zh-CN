@@ -2,15 +2,15 @@
 title: deviceManagementReports 资源类型
 description: 充当所有报告功能的容器的单一实体。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 531d1a7e3f2529982f5c1da4ab908edc765b7dc6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 639bec877dcdf1b7781011aba59e0ce3b1cb8ce0
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59039348"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60673695"
 ---
 # <a name="devicemanagementreports-resource-type"></a>deviceManagementReports 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "59039348"
 
 充当所有报告功能的容器的单一实体。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 deviceManagementReports](../api/intune-reporting-devicemanagementreports-get.md)|[deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md)|读取 [deviceManagementReports 对象的属性和](../resources/intune-reporting-devicemanagementreports.md) 关系。|
@@ -54,7 +54,6 @@ ms.locfileid: "59039348"
 |:---|:---|:---|
 |cachedReportConfigurations|[deviceManagementCachedReportConfiguration](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md) 集合|表示缓存报表的配置的实体|
 |exportJobs|[deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md) 集合|表示要导出报告的作业的实体|
-|reportSchedules|[deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md) 集合|表示送达报告的计划的实体|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

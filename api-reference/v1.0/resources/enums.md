@@ -5,16 +5,32 @@ ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: f01352fb2e5b9c05c8b5134e95d79cbc46547bbe
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 297544f4616c9a455ff519480b5a95e9db7953f0
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60446425"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688393"
 ---
 # <a name="enum-values"></a>枚举值
 
 命名空间：microsoft.graph
+
+### <a name="volumetype-values"></a>volumeType 值
+
+|Member|
+|:---|
+|operatingSystemVolume|
+|fixedDataVolume|
+|removableDataVolume|
+|unknownFutureValue|
+
+### <a name="filtermode-values"></a>filterMode 值
+
+|Member|
+|:---|
+|include|
+|exclude|
 
 ### <a name="lifecycleeventtype-values"></a>lifecycleEventType 值
 
@@ -920,7 +936,7 @@ ms.locfileid: "60446425"
 
 ### <a name="connectiondirection-values"></a>connectionDirection 值
 
-用于入站/出站 (网络连接方向的) 。
+入站/出站 (网络连接方向的) 。
 
 |成员|值|说明|
 |:---|:---|:---|
@@ -1267,7 +1283,7 @@ ms.locfileid: "60446425"
 | Member   | Int 值 |  说明 |
 |:---------------|:--------|:----------|
 | 无 | 0 |  不允许用户覆盖邮件。 如果未提供策略提示，则不允许用户将邮件报告为误报。 在所有其他方案中，用户可以将邮件报告为误报。|
-| AllowFalsePositiveOverride | 1 |  除非此块与 或 标志组合在一起，否则不允许用户显式 `AllowOverrideWithoutJustification` 替代 `AllowOverrideWithJustification` 块。 报告违反误报会自动覆盖阻止并发送邮件。 |
+| AllowFalsePositiveOverride | 1 |  除非此块与 或 标志组合在一起，否则不允许用户显式 `AllowOverrideWithoutJustification` 覆盖 `AllowOverrideWithJustification` 块。 报告违反误报会自动覆盖阻止并发送邮件。 |
 | AllowOverrideWithoutJustification | 2 | 允许用户覆盖块并发送邮件。 理由文本不是必需的。 独占到 `AllowOverrideWithJustification` 。 |
 | AllowOverrideWithJustification | 4  |  允许用户覆盖块并发送邮件。 理由文本是必需的。 独占到 `AllowOverrideWithoutJustification` 。|
 
@@ -1396,7 +1412,7 @@ ms.locfileid: "60446425"
 |counterclockwiseFromBottomLeft|
 |顺时针FromBottomLeft|
 |counterclockwiseFromBottomRight|
-|顺时针FromBottomRight|
+|clockwiseFromBottomRight|
 |unknownFutureValue|
 
 ### <a name="printorientation-values"></a>printOrientation 值 

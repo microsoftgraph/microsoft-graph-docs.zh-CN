@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 50d63dd2b4afc607614aea81c70bb40d46613a8e
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 58d959ffcc6c35cdcc851245ebf70590abce00e8
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60481949"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688827"
 ---
 # <a name="delete-devicemanagementconfigurationpolicyassignment"></a>删除 deviceManagementConfigurationPolicyAssignment
 
@@ -37,6 +37,7 @@ ms.locfileid: "60481949"
 }
 -->
 ``` http
+DELETE /deviceManagement/compliancePolicies/{deviceManagementCompliancePolicyId}/assignments/{deviceManagementConfigurationPolicyAssignmentId}
 DELETE /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/assignments/{deviceManagementConfigurationPolicyAssignmentId}
 ```
 
@@ -57,7 +58,7 @@ DELETE /deviceManagement/configurationPolicies/{deviceManagementConfigurationPol
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/assignments/{deviceManagementConfigurationPolicyAssignmentId}
+DELETE https://graph.microsoft.com/beta/deviceManagement/compliancePolicies/{deviceManagementCompliancePolicyId}/assignments/{deviceManagementConfigurationPolicyAssignmentId}
 ```
 
 ### <a name="response"></a>响应

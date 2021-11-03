@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 23312e64c3812f5235a52380ef8acec65d206699
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d1fd966e3efb4a8537cbad56cca2a3e0fb4cbb50
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59123508"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694363"
 ---
 # <a name="extensionproperty-resource-type"></a>extensionProperty 资源类型
 
@@ -18,14 +18,14 @@ ms.locfileid: "59123508"
 
 表示一个目录扩展，可用于向目录对象添加自定义属性，而无需外部数据存储。 例如，如果组织的业务线 (LOB) 应用程序需要目录中每个用户的 Skype ID，则 Microsoft Graph 可用于在目录的 User 对象上注册名为 skypeId 的新属性，然后将值写入特定用户的新属性。
 
-可以将扩展添加到[用户](user.md)、组、[组织、](organization.md)[设备](device.md)[、应用程序](application.md)资源。 [](group.md) 所有类型和所有应用程序中只能将 100个扩展值写入任何单个 Azure AD 资源。 
+可以将扩展添加到[用户](user.md)、组、[组织、](organization.md)[设备](device.md)[、应用程序](application.md)资源。 [](group.md) 所有类型和所有应用程序中只能将 100个扩展值写入任何单个Azure AD资源。 
 
 > [!IMPORTANT]
-> 此处所述的 Azure AD 架构扩展仅在出于向后兼容性Graph Microsoft Graph中可用。
-> 它允许你使用 Microsoft Graph管理通过 Azure AD Graph 或 Azure AD 连接[添加的扩展连接。](/azure/active-directory/hybrid/whatis-azure-ad-connect)
+> Azure AD介绍的架构扩展在 Microsoft Graph中仅出于向后兼容性原因提供。
+> 它允许你使用 Microsoft Graph管理通过已弃用Azure AD Graph (或[) 添加](/azure/active-directory/hybrid/whatis-azure-ad-connect)Azure AD 连接。
 > 对于新的自定义扩展，建议使用 Microsoft Graph架构扩展[向资源添加自定义数据](/graph/extensibility-overview)。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -39,7 +39,7 @@ ms.locfileid: "59123508"
 |:-------------|:------------|:------------|
 |appDisplayName|String| 定义此扩展属性的应用程序对象的显示名称。 只读。 |
 |DataType|String| 指定数据类型属性可以保留的值的值的值。 支持以下值。 不可为 null。 <ul><li>`Binary` - 最多 256 个字节</li><li>`Boolean`</li><li>`DateTime` - 必须以 ISO 8601 格式指定。 存储为 UTC 格式。</li><li>`Integer` - 32 位值。</li><li>`LargeInteger` - 64 位值。</li><li>`String` - 最多 256 个字符</li></ul>|
-|isSyncedFromOnPremises|Boolean| 指示此扩展属性是否从使用 Azure AD 托管的 onpremises 连接。 只读。 |
+|isSyncedFromOnPremises|布尔值| 指示是否使用此扩展属性从 onpremises 目录Azure AD 连接。 只读。 |
 |name|String| 扩展属性的名称。 不可为 null。 |
 |targetObjects|String collection| 支持以下值。 不可为空。 <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
 

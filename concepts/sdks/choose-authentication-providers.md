@@ -3,20 +3,20 @@ title: 选择 Microsoft Graph身份验证提供程序
 description: 了解如何为应用程序选择特定于方案的身份验证提供程序。
 ms.localizationpriority: medium
 author: MichaelMainer
-ms.openlocfilehash: 607759b11f1554a91cd169efe7fb56e17862354b
-ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
+ms.openlocfilehash: 85853f625c5c98f407e9621a7050015c48a91aa9
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60220568"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695028"
 ---
 <!-- markdownlint-disable MD001 MD024 MD025 -->
 
 # <a name="choose-a-microsoft-graph-authentication-provider-based-on-scenario"></a>根据方案选择 Microsoft Graph 身份验证提供程序
 
-身份验证提供程序使用 MICROSOFT 身份验证库和 MSAL (实现获取令牌) ;处理增量同意、密码过期和条件访问等情况下的一些潜在错误;，然后设置 HTTP 请求授权标头。 下表列出了一组与不同应用程序类型的方案匹配的 [提供程序](/azure/active-directory/develop/v2-app-types)。
+身份验证提供程序实现使用 MICROSOFT 身份验证库或 MSAL 证书获取令牌 (所需的) ;处理增量同意、密码过期和条件访问等情况下的一些潜在错误;，然后设置 HTTP 请求授权标头。 下表列出了一组与不同应用程序类型的方案匹配的 [提供程序](/azure/active-directory/develop/v2-app-types)。
 
-| 应用场景                                                                                               | Flow/Grant         | 受众               | 提供程序 |
+| 应用场景                                                                                               | Flow/授予         | 受众               | 提供程序 |
 |--------------------------------------------------------------------------------------------------------|--------------------|------------------------|-----|
 | [单页应用](/azure/active-directory/develop/scenario-spa-acquire-token)                          | 授权代码 |                        |     |
 |                                                                                                        | 使用 PKCE          | 委派使用者/组织 | [授权代码提供程序](#authorization-code-provider) |
@@ -37,7 +37,11 @@ ms.locfileid: "60220568"
 |                                                                                                        | Interactive        | 委派使用者/组织 | [交互式提供程序](#interactive-provider) |
 
 > [!NOTE]
-> Java和 Android 开发人员需要添加 [azure-identity](/java/api/overview/azure/identity-readme) 库才能访问不同的凭据类型。 .NET 开发人员需要添加 [Azure.Identity](/dotnet/api/azure.identity) 包才能访问不同的凭据类型。
+> 以下代码段是使用其各自 SDK 的最新版本编写的。 如果你遇到这些代码段的编译器错误，请确保你拥有最新版本。 使用的身份验证提供程序由以下 Azure 标识库提供：
+>
+> - .NET 开发人员需要添加 [Azure.Identity](/dotnet/api/azure.identity) 包。
+> - JavaScript 开发人员需要添加 [@azure/标识](/javascript/api/@azure/identity) 库。
+> - Java和 Android 开发人员需要添加 [azure 标识](/java/api/overview/azure/identity-readme) 库。
 
 ## <a name="authorization-code-provider"></a>授权代码提供程序
 
@@ -61,6 +65,7 @@ var clientSecret = "YOUR_CLIENT_SECRET";
 // with an authorization code in the query parameters
 var authorizationCode = "AUTH_CODE_FROM_REDIRECT";
 
+// using Azure.Identity;
 var options = new TokenCredentialOptions
 {
     AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
@@ -100,7 +105,7 @@ const options: AuthCodeMSALBrowserAuthenticationProviderOptions: {
 const authProvider: new AuthCodeMSALBrowserAuthenticationProvider(publicClientApplication, options),
 ```
 
-### <a name="using-azureidentity-for-server-side-applications"></a>对@azure应用程序使用 @azure/标识
+### <a name="using-azureidentity-for-server-side-applications"></a>对@azure应用程序使用 @azure/identity
 
 ```javascript
 const {
@@ -156,7 +161,7 @@ final User me = graphClient.me().buildRequest().get();
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-尚不可用。 如果这对你很重要[，请支持](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph)或Graph Microsoft 功能请求。
+尚不可用。 如果这对你很重要Graph支持或打开[Microsoft](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) Graph功能请求。
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
@@ -187,6 +192,7 @@ var tenantId = "common";
 var clientId = "YOUR_CLIENT_ID";
 var clientSecret = "YOUR_CLIENT_SECRET";
 
+// using Azure.Identity;
 var options = new TokenCredentialOptions
 {
     AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
@@ -212,6 +218,7 @@ var tenantId = "common";
 var clientId = "YOUR_CLIENT_ID";
 var clientCertificate = new X509Certificate2("MyCertificate.pfx");
 
+// using Azure.Identity;
 var options = new TokenCredentialOptions
 {
     AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
@@ -279,17 +286,17 @@ final User me = graphClient.me().buildRequest().get();
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-尚不可用。 如果这对你很重要[，请支持](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph)或Graph Microsoft 功能请求。
+尚不可用。 如果这对你很重要Graph支持或打开[Microsoft](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) Graph功能请求。
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-尚不可用。 如果这对你很重要[，请支持](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph)或Graph Microsoft 功能请求。
+尚不可用。 如果这对你很重要Graph支持或打开[Microsoft](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) Graph功能请求。
 
 ---
 
 ## <a name="on-behalf-of-provider"></a>代表提供程序
 
-当应用程序调用服务/Web API 时，代表流适用，而服务/Web API 则调用 Microsoft Graph API。 有关详细信息，Microsoft 标识平台[OAuth 2.0 代表流](/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow)
+当应用程序调用服务/Web API 时，代表流适用，而服务/Web API 则调用 Microsoft Graph API。 通过阅读 Microsoft 标识平台[和 OAuth 2.0 代表流了解更多信息](/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow)
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -306,6 +313,7 @@ var tenantId = "common";
 var clientId = "YOUR_CLIENT_ID";
 var clientSecret = "YOUR_CLIENT_SECRET";
 
+// using Azure.Identity;
 var options = new TokenCredentialOptions
 {
     AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
@@ -342,7 +350,24 @@ var graphClient = new GraphServiceClient(authProvider);
 
 # <a name="java"></a>[Java](#tab/Java)
 
-尚不可用。 请投票支持或打开[Microsoft Graph功能](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph)请求（如果这对你很重要）。
+```java
+final OnBehalfOfCredential onBehalfOfCredential = new OnBehalfOfCredentialBuilder()
+        .clientId(clientID)
+        .pfxCertificate(pfxCertificatePath) // or .pemCertificate(certificatePath) or .clientSecret("ClientSecret")
+        .clientCertificatePassword(pfxCertificatePassword) // remove if using pemCertificate or clientSecret
+        .tokenCachePersistenceOptions(tokenCachePersistenceOptions) //Optional: enables the persistent token cache which is disabled by default
+        .userAssertion(userAssertion)
+        .build();
+
+final TokenCredentialAuthProvider tokenCredentialAuthProvider = new TokenCredentialAuthProvider(scopes, onBehalfOfCredential);
+
+final GraphServiceClient graphClient = GraphServiceClient
+        .builder()
+        .authenticationProvider(tokenCredentialAuthProvider)
+        .buildClient();
+
+final User me = graphClient.me().buildRequest().get();
+```
 
 # <a name="android"></a>[Android](#tab/Android)
 
@@ -368,7 +393,7 @@ var graphClient = new GraphServiceClient(authProvider);
 
 ## <a name="device-code-provider"></a>设备代码提供程序
 
-设备代码流允许通过另一台设备登录到设备。 有关详细信息，请参阅[Microsoft 标识平台和 OAuth 2.0 设备代码流](/azure/active-directory/develop/v2-oauth2-device-code)。
+设备代码流允许通过另一台设备登录到设备。 有关详细信息，请参阅[Microsoft 标识平台 和 OAuth 2.0 设备代码流](/azure/active-directory/develop/v2-oauth2-device-code)。
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -382,6 +407,7 @@ var tenantId = "common";
 // Value from app registration
 var clientId = "YOUR_CLIENT_ID";
 
+// using Azure.Identity;
 var options = new TokenCredentialOptions
 {
     AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
@@ -468,7 +494,7 @@ final User me = graphClient.me().buildRequest().get();
 
 ## <a name="integrated-windows-provider"></a>集成Windows提供程序
 
-集成Windows流为Windows加入域时以静默方式获取访问令牌提供了一种方法。 有关详细信息，请参阅集成Windows[身份验证](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Integrated-Windows-Authentication)。
+集成Windows流为计算机提供了一Windows加入域时以静默方式获取访问令牌的方法。 有关详细信息，请参阅集成身份验证[Windows身份验证](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Integrated-Windows-Authentication)。
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -546,6 +572,7 @@ var tenantId = "common";
 // Value from app registration
 var clientId = "YOUR_CLIENT_ID";
 
+// using Azure.Identity;
 var options = new InteractiveBrowserCredentialOptions
 {
     TenantId = tenantId,
@@ -627,7 +654,7 @@ MSALAuthenticationProviderOptions *authProviderOptions= [[MSALAuthenticationProv
 
 ## <a name="usernamepassword-provider"></a>用户名/密码提供程序
 
-用户名/密码提供程序允许应用程序使用用户的用户名和密码登录。 只有在不能使用任何其他 OAuth 流时，才使用此流。 有关详细信息，请参阅 Microsoft 标识平台[和 OAuth 2.0 资源所有者密码凭据](/azure/active-directory/develop/v2-oauth-ropc)
+用户名/密码提供程序允许应用程序使用用户的用户名和密码登录。 只有在不能使用任何其他 OAuth 流时，才使用此流。 有关详细信息，请参阅Microsoft 标识平台[OAuth 2.0 资源所有者密码凭据](/azure/active-directory/develop/v2-oauth-ropc)
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -641,6 +668,7 @@ var tenantId = "common";
 // Value from app registration
 var clientId = "YOUR_CLIENT_ID";
 
+// using Azure.Identity;
 var options = new TokenCredentialOptions
 {
     AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
@@ -649,6 +677,7 @@ var options = new TokenCredentialOptions
 var userName = "adelev@contoso.com";
 var password = "P@ssword1!";
 
+// https://docs.microsoft.com/dotnet/api/azure.identity.usernamepasswordcredential
 var userNamePasswordCredential = new UsernamePasswordCredential(
     userName, password, tenantId, clientId, options);
 
@@ -699,6 +728,6 @@ final User me = graphClient.me().buildRequest().get();
 
 ## <a name="next-steps"></a>后续步骤
 
-* 有关显示如何使用 Microsoft 标识平台 保护不同应用程序类型的代码示例，请参阅[Microsoft 标识平台 v2.0](/azure/active-directory/develop/sample-v2-code)终结点 (代码) 。
+* 有关显示如何使用 Microsoft 标识平台 保护不同应用程序类型的代码示例，请参阅 Microsoft 标识平台[v2.0 终结点 (代码) 。 ](/azure/active-directory/develop/sample-v2-code)
 * 身份验证提供程序需要客户端 ID。 设置身份验证 [提供程序后](https://portal.azure.com/) ，需要注册应用程序。
 * 通过投票或打开 Microsoft Graph请求，请告诉我们所需的 OAuth[流当前是否受支持](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph)。

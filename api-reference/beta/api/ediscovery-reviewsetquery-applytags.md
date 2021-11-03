@@ -2,15 +2,15 @@
 title: reviewSetQuery：applyTags
 description: 将标记应用于与指定查询匹配的文档。
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 19e9e64d57ec2966ecc3ff1596849f322575a692
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 96d70f9e1d41ee279ceae3dd4edcaeffa9d73b8b
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50772820"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688364"
 ---
 # <a name="reviewsetquery-applytags"></a>reviewSetQuery：applyTags
 
@@ -26,7 +26,7 @@ ms.locfileid: "50772820"
 |:---|:---|
 |委派（工作或学校帐户）|eDiscovery.Read.All、eDiscovery.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -61,7 +61,7 @@ POST /compliance/ediscovery/cases/{caseId}/reviewSets/{reviewSetId}/queries/{rev
 
 如果成功，此操作返回 `202 Accepted` 响应代码。
 
-如果标记操作成功启动，此操作将返回 响应 `202 Accepted` 代码。 响应还将包含标头，其中包含为处理标记而创建的 `Location` [tagOperation](../resources/ediscovery-tagOperation.md) 的位置。 通过向位置发送 GET 请求来检查标记操作的状态，成功完成后， [状态](../resources/ediscovery-caseoperation.md#caseoperationstatus-values) 将更改为 `succeeded` 。
+如果标记操作成功启动，此操作将返回 响应 `202 Accepted` 代码。 响应还将包含标头，其中包含为处理标记而创建的 `Location` [tagOperation](../resources/ediscovery-tagOperation.md) 的位置。 通过向位置提出 GET 请求来检查标记操作的状态，成功完成后， [状态](../resources/ediscovery-caseoperation.md#caseoperationstatus-values) 将更改为 `succeeded` 。
 
 ## <a name="examples"></a>示例
 

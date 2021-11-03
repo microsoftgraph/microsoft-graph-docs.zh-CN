@@ -2,15 +2,15 @@
 title: deviceManagementConfigurationSetting 资源类型
 description: 在策略中设置实例
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 312dee429a734a3224aba62770d8408b9f390ddc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d9b55fb92c205e191ead3a61d01137d4c3dc7338
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59148205"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696523"
 ---
 # <a name="devicemanagementconfigurationsetting-resource-type"></a>deviceManagementConfigurationSetting 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "59148205"
 
 在策略中设置实例
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceManagementConfigurationSettings](../api/intune-deviceconfigv2-devicemanagementconfigurationsetting-list.md)|[deviceManagementConfigurationSetting](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md) 集合|列出 [deviceManagementConfigurationSetting](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md) 对象的属性和关系。|
@@ -40,7 +40,7 @@ ms.locfileid: "59148205"
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
-|settingDefinitions|[deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md) 集合|相关设置定义列表|
+|settingDefinitions|[deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md) 集合|相关设置定义的列表。 此属性是只读的。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

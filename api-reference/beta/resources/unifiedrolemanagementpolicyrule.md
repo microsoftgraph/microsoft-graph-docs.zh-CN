@@ -1,16 +1,16 @@
 ---
 title: unifiedRoleManagementPolicyRule 资源类型
 description: unifiedRoleManagementPolicyRule 指定与角色管理策略关联的规则。 它是抽象的。
-author: shauliu1
+author: carolinetempleton
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: b2d75b5ced7ca80bbbf9de4cb0feee2456e3eada
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: cc8f6e135c8dd569040f7d738b7a29fb54fdf98e
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59056989"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688140"
 ---
 # <a name="unifiedrolemanagementpolicyrule-resource-type"></a>unifiedRoleManagementPolicyRule 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "59056989"
 
 unifiedRoleManagementPolicyRule 指定与角色管理策略关联的规则。 它是抽象的。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 unifiedRoleManagementPolicyRules](../api/unifiedrolemanagementpolicyrule-list.md)|[unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) 集合|获取 [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) 对象及其属性的列表。|

@@ -1,16 +1,16 @@
 ---
 title: 列出作业
 description: 检索与角色关联的 privilegedRoleAssignment 对象列表。 每个 privilegedRoleAssignment 表示为用户分配的角色。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 55962741c22a89f126ad064294ce036d5b1905cc
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 4350321ac092646e55c2a0d8e6d546646ee3bca3
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58454246"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688007"
 ---
 # <a name="list-assignments"></a>列出作业
 
@@ -18,7 +18,9 @@ ms.locfileid: "58454246"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索与 [角色关联的 privilegedRoleAssignment](../resources/privilegedroleassignment.md) 对象列表。 每个 [privilegedRoleAssignment](../resources/privilegedroleassignment.md) 都角色分配用户的权限。
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+
+检索与 [角色关联的 privilegedRoleAssignment](../resources/privilegedroleassignment.md) 对象列表。 每个 [privilegedRoleAssignment](../resources/privilegedroleassignment.md) 代表角色分配的一个权限。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

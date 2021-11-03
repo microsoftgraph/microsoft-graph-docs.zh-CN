@@ -1,16 +1,16 @@
 ---
 title: 列出 staffMembers
 description: 获取指定 bookingbusiness 中的 bookingStaffMember 对象列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 32fd259d2ac7be2f8fbf9f7b2eda10ff13699315
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 80d9dbae8cac58166da127e92ffc8f8982f66337
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047873"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694608"
 ---
 # <a name="list-staffmembers"></a>列出 staffMembers
 
@@ -18,7 +18,7 @@ ms.locfileid: "52047873"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取指定的[bookingbusiness](../resources/bookingbusiness.md)[中的 bookingStaffMember](../resources/bookingstaffmember.md)对象列表。
+获取指定的[bookingBusiness](../resources/bookingbusiness.md)中的[bookingStaffMember](../resources/bookingstaffmember.md)对象列表。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -34,19 +34,19 @@ ms.locfileid: "52047873"
 GET /bookingBusinesses/{id}/staffMembers
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {code}。 必需。|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
 如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [bookingStaffMember](../resources/bookingstaffmember.md) 对象集合。
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 下面展示了示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -75,8 +75,10 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365
 
 ---
 
-##### <a name="response"></a>响应
-下面展示了示例响应。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+### <a name="response"></a>响应
+下面展示了示例响应。 
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -97,6 +99,7 @@ Content-type: application/json
             "availabilityIsAffectedByPersonalCalendar":false,
             "colorIndex":1,
             "role":"externalGuest",
+            "timeZone":"America/Chicago",
             "useBusinessHours":true,
             "workingHours":[
                 {
@@ -153,6 +156,7 @@ Content-type: application/json
             "availabilityIsAffectedByPersonalCalendar":true,
             "colorIndex":0,
             "role":"administrator",
+            "timeZone":"America/Chicago",
             "useBusinessHours":true,
             "workingHours":[
                 {

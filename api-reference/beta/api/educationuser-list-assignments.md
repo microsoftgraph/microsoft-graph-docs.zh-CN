@@ -1,16 +1,16 @@
 ---
 title: 列出用户的分配
 description: 返回分配给用户的所有课程的工作分配列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 9a3946db621f67460ffc712b61419d5abe437197
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: b3e03bc997c708cd8b6c2f0142b0c1d660d810ff
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58667785"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696180"
 ---
 # <a name="list-assignments-of-a-user"></a>列出用户的分配
 
@@ -20,7 +20,7 @@ ms.locfileid: "58667785"
 
 返回分配给用户的所有课程的工作分配列表。 
 
-此实用工具命名空间允许呼叫者在一次呼叫中查找学生的所有作业，而不必从每个班级请求作业。 工作分配列表包含从类命名空间内获取工作分配的详细信息所需的内容。 对分配执行的其他所有操作都应使用类命名空间。
+通过此实用工具命名空间，呼叫者可以在一次通话中查找属于学生或教师的所有作业，而不必从每个班级请求作业。 工作分配列表包含从类命名空间内获取工作分配的详细信息所需的内容。 对分配执行的其他所有操作都应使用类命名空间。
 
 ## <a name="permissions"></a>权限
 
@@ -30,12 +30,17 @@ ms.locfileid: "58667785"
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
 | 委派（工作或学校帐户）     | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。                                                                                         |
-| 应用程序                            | 不支持。                                                                                         |
+| 应用程序                            | EduAssignments.ReadBasic.All、EduAssignments.ReadWriteBasic.All、EduAssignments.Read.All、EduAssignments.ReadWrite.All |
+
+调用 `/me` 终结点需要已登录的用户，因此需要委派权限。 使用 `/me` 的终结点时不支持应用程序权限。
+
+`/users/{user-id}`终结点使用委派权限和应用程序权限。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /education/me/assignments
+GET /education/users/{user-id}/assignments
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -56,13 +61,15 @@ GET /education/me/assignments
 
 如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [educationAssignment](../resources/educationassignment.md) 对象集合。
 
-## <a name="example"></a>示例
+## <a name="examples"></a>示例
 
-##### <a name="request"></a>请求
+### <a name="example-1-get-the-assignments-of-the-logged-in-user"></a>示例 1：获取已登录用户的分配
+
+#### <a name="request"></a>请求
 下面展示了示例请求。
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_me_assignments"
 }-->
 
@@ -70,15 +77,14 @@ GET /education/me/assignments
 GET https://graph.microsoft.com/beta/education/me/assignments
 ```
 
-##### <a name="response"></a>响应
+#### <a name="response"></a>响应
 
 下面展示了示例响应。 
 
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
-
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationAssignment",
   "isCollection": true
@@ -89,44 +95,339 @@ Content-type: application/json
 Content-length: 344
 
 {
-  "value": [
-    {
-      "id": "19002",
-      "allowLateSubmissions": true,
-      "allowStudentsToAddResourcesToSubmission": true,
-      "assignDateTime": "2014-01-01T00:00:00Z",
-      "assignTo": {"@odata.type": "microsoft.graph.educationAssignmentRecipient"},
-      "assignedDateTime": "2014-01-01T00:00:00Z",
-      "classId": "11010",
-      "closeDateTime": "2014-01-11T00:00:00Z",
-      "createdBy": {
-        "user": {
-            "displayName": "Susana Rocha",
-            "id": "14012"
-          }
-      },
-      "createdDateTime": "2014-01-01T00:00:00Z",
-      "displayName": "Assignment 1",
-      "dueDateTime": "2014-01-01T00:00:00Z",
-      "grading": {
-        "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
-        "maxPoints": 100
-      },
-      "instructions": {
-        "content": "Answer every question correctly",
-        "contentType": "Text"
-      },
-      "lastModifiedBy": {
-        "user": {
-            "displayName": "Susana Rocha",
-            "id": "14012"
-          }
-      },
-      "lastModifiedDateTime": "2014-01-01T00:00:00Z",
-      "status": "assigned"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/me/assignments",
+    "value": [
+        {
+            "classId": "72a7baec-c3e9-4213-a850-f62de0adad5f",
+            "displayName": "Reading test 09.03 #4",
+            "closeDateTime": null,
+            "dueDateTime": "2021-09-07T00:00:00Z",
+            "assignDateTime": null,
+            "assignedDateTime": null,
+            "allowLateSubmissions": true,
+            "resourcesFolderUrl": null,
+            "createdDateTime": "2021-09-13T19:18:35.2587894Z",
+            "lastModifiedDateTime": "2021-09-13T19:19:56.6381405Z",
+            "allowStudentsToAddResourcesToSubmission": false,
+            "status": "assigned",
+            "notificationChannelUrl": null,
+            "webUrl": null,
+            "addToCalendarAction": "none",
+            "addedStudentAction": "none",
+            "id": "1618dfb0-3ff2-4edf-8d5c-b8f81df00e80",
+            "instructions": null,
+            "assignTo": null,
+            "grading": {
+                "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
+                "maxPoints": 50
+            },
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+                    "displayName": null
+                }
+            },
+            "lastModifiedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "AAAAAAAA-0123-4567-89AB-1B4BB48C3119",
+                    "displayName": null
+                }
+            }
+        },
+        {
+            "classId": "72a7baec-c3e9-4213-a850-f62de0adad5f",
+            "displayName": "Reading Test 09.03 3",
+            "closeDateTime": null,
+            "dueDateTime": "2021-09-05T06:59:00Z",
+            "assignDateTime": null,
+            "assignedDateTime": null,
+            "allowLateSubmissions": true,
+            "resourcesFolderUrl": null,
+            "createdDateTime": "2021-09-03T23:28:09.5916406Z",
+            "lastModifiedDateTime": "2021-09-03T23:28:09.612547Z",
+            "allowStudentsToAddResourcesToSubmission": false,
+            "status": "assigned",
+            "notificationChannelUrl": null,
+            "webUrl": null,
+            "addToCalendarAction": "none",
+            "addedStudentAction": "none",
+            "id": "1b6df208-ea5a-475c-8dd2-b92f693c928a",
+            "instructions": null,
+            "grading": null,
+            "assignTo": null,
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+                    "displayName": null
+                }
+            },
+            "lastModifiedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "AAAAAAAA-0123-4567-89AB-1B4BB48C3119",
+                    "displayName": null
+                }
+            }
+        }
+    ]
 }
+```
+
+### <a name="example-2-get-assignments-of-a-user"></a>示例 2：获取用户的工作分配
+
+#### <a name="request"></a>请求
+下面展示了示例请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "get_user_assignments"
+}-->
+
+```http 
+GET https://graph.microsoft.com/beta/education/users/80cefd93-8d88-40e2-b5d3-67898383e226/assignments
+```
+
+#### <a name="response"></a>响应
+
+如果用户尝试查询与自己的用户 ID 不同的用户 ID，此方法将返回 `403 Forbidden` 响应代码。
+
+、 `instructions` `assignedDateTime` 、 和 `assignTo` `resourcesFolderUrl` `webUrl` 属性将始终显示 null。
+
+下面展示了示例响应。 
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationAssignment",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 344
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/users('80cefd93-8d88-40e2-b5d3-67898383e226')/assignments",
+    "value": [
+        {
+            "classId": "72a7baec-c3e9-4213-a850-f62de0adad5f",
+            "displayName": "Reading test 09.03 #4",
+            "closeDateTime": null,
+            "dueDateTime": "2021-09-07T00:00:00Z",
+            "assignDateTime": null,
+            "assignedDateTime": null,
+            "allowLateSubmissions": true,
+            "resourcesFolderUrl": null,
+            "createdDateTime": "2021-09-13T19:18:35.2587894Z",
+            "lastModifiedDateTime": "2021-09-13T19:19:56.6381405Z",
+            "allowStudentsToAddResourcesToSubmission": false,
+            "status": "assigned",
+            "notificationChannelUrl": null,
+            "webUrl": null,
+            "addToCalendarAction": "none",
+            "addedStudentAction": "none",
+            "id": "1618dfb0-3ff2-4edf-8d5c-b8f81df00e80",
+            "instructions": null,
+            "assignTo": null,
+            "grading": {
+                "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
+                "maxPoints": 50
+            },
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+                    "displayName": null
+                }
+            },
+            "lastModifiedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "AAAAAAAA-0123-4567-89AB-1B4BB48C3119",
+                    "displayName": null
+                }
+            }
+        },
+        {
+            "classId": "72a7baec-c3e9-4213-a850-f62de0adad5f",
+            "displayName": "Reading Test 09.03 3",
+            "closeDateTime": null,
+            "dueDateTime": "2021-09-05T06:59:00Z",
+            "assignDateTime": null,
+            "assignedDateTime": null,
+            "allowLateSubmissions": true,
+            "resourcesFolderUrl": null,
+            "createdDateTime": "2021-09-03T23:28:09.5916406Z",
+            "lastModifiedDateTime": "2021-09-03T23:28:09.612547Z",
+            "allowStudentsToAddResourcesToSubmission": false,
+            "status": "assigned",
+            "notificationChannelUrl": null,
+            "webUrl": null,
+            "addToCalendarAction": "none",
+            "addedStudentAction": "none",
+            "id": "1b6df208-ea5a-475c-8dd2-b92f693c928a",
+            "instructions": null,
+            "grading": null,
+            "assignTo": null,
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+                    "displayName": null
+                }
+            },
+            "lastModifiedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "AAAAAAAA-0123-4567-89AB-1B4BB48C3119",
+                    "displayName": null
+                }
+            }
+        }
+    ]
+}
+```
+
+### <a name="example-3-get-user-assignments-with-expand-submissions"></a>示例 3：通过展开提交获取用户分配
+
+#### <a name="request"></a>请求
+下面展示了示例请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "get_user_assignments_expand_submissions"
+}-->
+
+```http 
+GET https://graph.microsoft.com/beta/education/users/80cefd93-8d88-40e2-b5d3-67898383e226/assignments?expand=submissions
+```
+
+#### <a name="response"></a>响应
+
+下面介绍响应示例。 
+
+> **注意：** 如果用户具有学生角色，它将展开提交，并且对于教师角色将为 null。
+
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationAssignment",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 344
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/users('80cefd93-8d88-40e2-b5d3-67898383e226')/assignments(submissions())",
+    "value": [
+        {
+            "classId": "72a7baec-c3e9-4213-a850-f62de0adad5f",
+            "displayName": "Reading test 09.03 #4",
+            "closeDateTime": null,
+            "dueDateTime": "2021-09-07T00:00:00Z",
+            "assignDateTime": null,
+            "assignedDateTime": null,
+            "allowLateSubmissions": true,
+            "resourcesFolderUrl": null,
+            "createdDateTime": "2021-09-13T19:18:35.2587894Z",
+            "lastModifiedDateTime": "2021-09-13T19:19:56.6381405Z",
+            "allowStudentsToAddResourcesToSubmission": false,
+            "status": "assigned",
+            "notificationChannelUrl": null,
+            "webUrl": null,
+            "addToCalendarAction": "none",
+            "addedStudentAction": "none",
+            "id": "1618dfb0-3ff2-4edf-8d5c-b8f81df00e80",
+            "instructions": null,
+            "assignTo": null,
+            "grading": {
+                "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
+                "maxPoints": 50
+            },
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+                    "displayName": null
+                }
+            },
+            "lastModifiedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "AAAAAAAA-0123-4567-89AB-1B4BB48C3119",
+                    "displayName": null
+                }
+            },
+            "submissions@odata.context": "https://graph.microsoft.com/beta/$metadata#education/users('80cefd93-8d88-40e2-b5d3-67898383e226')/assignments('1618dfb0-3ff2-4edf-8d5c-b8f81df00e80')/submissions",
+            "submissions": [
+                {
+                    "status": "working",
+                    "submittedDateTime": null,
+                    "unsubmittedDateTime": null,
+                    "returnedDateTime": null,
+                    "reassignedDateTime": null,
+                    "resourcesFolderUrl": null,
+                    "id": "da443246-384d-673b-32db-bdba9d7f2b51",
+                    "recipient": {
+                        "@odata.type": "#microsoft.graph.educationSubmissionIndividualRecipient",
+                        "userId": "80cefd93-8d88-40e2-b5d3-67898383e226"
+                    },
+                    "submittedBy": {
+                        "application": null,
+                        "device": null,
+                        "user": {
+                            "id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+                            "displayName": null
+                        }
+                    },
+                    "unsubmittedBy": {
+                        "application": null,
+                        "device": null,
+                        "user": {
+                            "id": null,
+                            "displayName": null
+                        }
+                    },
+                    "returnedBy": {
+                        "application": null,
+                        "device": null,
+                        "user": {
+                            "id": null,
+                            "displayName": null
+                        }
+                    },
+                    "reassignedBy": {
+                        "application": null,
+                        "device": null,
+                        "user": {
+                            "id": null,
+                            "displayName": null
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}        
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

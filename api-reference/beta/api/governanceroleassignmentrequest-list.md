@@ -1,22 +1,24 @@
 ---
 title: 列出 governanceRoleAssignmentRequests
 description: '检索 governanceRoleAssignmentRequests 的集合。 '
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 457b82415ecb8af2fc6a5629f5efaf412dc69faf
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 362bf41e9d7f94834a7002a46da2d076e0fbb944
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58452454"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694657"
 ---
 # <a name="list-governanceroleassignmentrequests"></a>列出 governanceRoleAssignmentRequests
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
 
 检索 [governanceRoleAssignmentRequests 的集合](../resources/governanceroleassignmentrequest.md)。 
 
@@ -51,7 +53,7 @@ ms.locfileid: "58452454"
 <!-- { "blockType": "ignored" } -->
 列出资源上的 [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) 集合。
     
->**注意：** 除了权限范围之外，请求还要求请求者至少对资源角色分配一个资源。
+>**注意：** 除了权限范围之外，请求还需要请求者至少具有一角色分配资源的权限。
 
 ```http
 GET /privilegedAccess/azureResources/resources/{resourceId}/roleAssignmentRequests
@@ -65,7 +67,7 @@ GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=subjectId+eq
 
 列出正在等待管理员 [决策的 governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) 集合。
     
->**注意：** 除了权限范围之外，此请求还要求请求者至少具有一个角色分配 (`Active` `owner` 或) `user access administrator` 管理员。
+>**注意：** 除了权限范围之外，此请求还要求请求者至少具有一个管理员角色分配 (`Active` `owner` 或) `user access administrator` 资源。
 
 ```http
 GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=status/subStatus+eq+'PendingAdminDecision'

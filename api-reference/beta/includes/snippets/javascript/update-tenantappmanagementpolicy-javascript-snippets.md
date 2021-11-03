@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4936cb4184466537dfda79de84f9617c1ad4e354
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 8c2d1a5f669c3ad9f48a5126513201eb7cbd9072
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58513821"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60676802"
 ---
 ```javascript
 
@@ -28,7 +28,24 @@ const tenantAppManagementPolicy = {
                 restrictionType: 'passwordLifetime',
                 maxLifetime: 'P4DT12H30M5S',
                 restrictForAppsCreatedAfterDateTime: '2019-01-01T10:37:00Z'
+            },
+            {
+                restrictionType: 'symmetricKeyAddition',
+                maxLifetime: null,
+                restrictForAppsCreatedAfterDateTime: '2021-04-01T10:37:00Z'
+            },
+            {
+                restrictionType: 'symmetricKeyLifetime',
+                maxLifetime: 'P40D',
+                restrictForAppsCreatedAfterDateTime: '2015-04-01T10:37:00Z'
             }
+        ],
+        keyCredentials: [
+            {
+                restrictionType: 'asymmetricKeyLifetime',
+                maxLifetime: 'P30D',
+                restrictForAppsCreatedAfterDateTime: '2015-01-01T10:37:00Z'
+            },
         ]
     }
 };

@@ -1,27 +1,29 @@
 ---
 title: privilegedRole 资源类型
-description: 表示 Azure AD 管理员角色，例如：全局管理员、帐单管理员、服务管理员、 **用户管理员、密码管理员** 等。
-localization_priority: Normal
+description: 代表一Azure AD管理员角色，例如：全局管理员、帐单管理员、服务管理员、用户管理员和密码管理员。
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 5784a28ec18c0ed02540321d92ee2bab386dc760
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 756ffd580a2f44fad1631bbfd153d1320f1aef05
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58452412"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60687674"
 ---
-# <a name="privilegedrole-resource-type"></a>privilegedRole 资源类型
+# <a name="privilegedrole-resource-type-deprecated"></a>privilegedRole 资源类型 (已弃) 
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示 Azure AD 管理员角色，例如：全局管理员、帐单管理员、服务管理员、 **用户管理员、密码管理员** 等。
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+
+代表Azure AD [管理员](/azure/active-directory/roles/permissions-reference)角色，例如全局管理员、帐务管理员、**服务管理员、用户管理员** 和 **密码管理员**。
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -34,7 +36,7 @@ ms.locfileid: "58452412"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|id|string|管理员角色的唯一标识符。 它是一个 GUID 字符串，其值与给定角色的 Azure AD 中的角色模板 ID 相同。 只读。|
+|id|string|管理员角色的唯一标识符。 它是一个 GUID 字符串，与给定角色的 Azure AD ID 具有相同的值。 只读。|
 |name|string|角色名称。|
 
 ## <a name="relationships"></a>关系

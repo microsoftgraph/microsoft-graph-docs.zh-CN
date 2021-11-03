@@ -1,22 +1,24 @@
 ---
 title: 更新 governanceRoleAssignmentRequests
 description: 使管理员能够根据处于 状态的 `AdminApproved` `AdminDenied` governanceRoleAssignmentRequests (或) 更新其决策 `PendingAdminDecision` 。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: d81bad403fbac4789c5cf5083c5eb8c85a815bf1
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 9d08b6786d16956161a3e4835e961cc893ae8241
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453931"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688484"
 ---
 # <a name="update-governanceroleassignmentrequests"></a>更新 governanceRoleAssignmentRequests
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
 
 使管理员能够更新其 (`AdminApproved` 或) `AdminDenied` 状态为 的 [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) 的决策 `PendingAdminDecision` 。
 
@@ -68,7 +70,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest
 |reason        |String                 |✓        |管理员提供其决策的原因。|
 |decision        |String                 |✓        |请求的管理员角色分配决定。 值应更新为 `AdminApproved` 或 `AdminDenied` 。|
 |schedule      |[governanceSchedule](../resources/governanceschedule.md)|        | 请求角色分配计划。 对于 状态 `AdminApproved` ，此为必填项。|
-|assignmentState      |String|         | 工作分配的状态，值可以是 `Eligible` 或 `Active` 。 为做出 `AdminApproved` 决策，需要此权限。 |
+|assignmentState      |字符串|         | 工作分配的状态，值可以是 `Eligible` 或 `Active` 。 为做出 `AdminApproved` 决策，需要此权限。 |
 ### <a name="response"></a>响应
 此方法只能应用于状态为 的请求 `PendingAdminDecision` 。
 

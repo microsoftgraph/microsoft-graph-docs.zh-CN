@@ -6,12 +6,12 @@ ms.localizationpriority: medium
 ms.prod: sharepoint
 description: 使用特殊集合可以按名称访问特殊文件夹。
 doc_type: apiPageType
-ms.openlocfilehash: f0312377e85e32046c1b45263512db93e164b77d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6b836ea0a2be134c498eb02c3c73566a9085d163
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59100286"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695389"
 ---
 # <a name="get-a-special-folder-by-name"></a>按名称获取特殊文件夹
 
@@ -37,31 +37,11 @@ ms.locfileid: "59100286"
 
 ## <a name="http-request"></a>HTTP 请求
 
+<!-- { "blockType": "ignored"} -->
 
-# <a name="http"></a>[HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "get-special-folder", "scopes": "files.read" } -->
-
-```msgraph-interactive
+```http
 GET /me/drive/special/{name}
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-special-folder-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-special-folder-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-special-folder-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-special-folder-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### <a name="special-folder-names"></a>特殊文件夹名称
 

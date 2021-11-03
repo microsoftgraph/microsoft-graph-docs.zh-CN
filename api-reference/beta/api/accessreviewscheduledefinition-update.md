@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: aecea534fd74707241928424fe32fb2135c7d64b
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 60473551b20dc38ba12c97d68b370fa524ddae03
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60559167"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688069"
 ---
 # <a name="update-accessreviewscheduledefinition"></a>更新 accessReviewScheduleDefinition
 
@@ -31,7 +31,7 @@ ms.locfileid: "60559167"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | AccessReview.ReadWrite.All |
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application                            | AccessReview.ReadWrite.All |
+|应用程序                            | AccessReview.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -88,10 +88,12 @@ Content-type: application/json
   "descriptionForAdmins": "Test world",
   "descriptionForReviewers": "Test world",
   "scope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
     "query": "/groups/b7a059cb-038a-4802-8fc9-b9d1ed0cf11f/transitiveMembers",
     "queryType": "MicrosoftGraph"
   },
   "instanceEnumerationScope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
     "query": "/groups/b7a059cb-038a-4802-8fc9-b9d1ed0cf11f",
     "queryType": "MicrosoftGraph"
   },

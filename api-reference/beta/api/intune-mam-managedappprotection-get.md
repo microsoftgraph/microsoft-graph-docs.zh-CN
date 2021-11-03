@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5e0cc8993280c45cca2e79a5e22a7e485ffc8187
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: fbfa675cf205cc2851134b27de262db739d9a7dc
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60492812"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696425"
 ---
 # <a name="get-managedappprotection"></a>获取 managedAppProtection
 
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/managedAppPolicies/{man
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2713
+Content-Length: 2781
 
 {
   "value": {
@@ -131,7 +131,8 @@ Content-Length: 2713
       "sharePoint"
     ],
     "appActionIfUnableToAuthenticateUser": "wipe",
-    "dialerRestrictionLevel": "managedApps"
+    "dialerRestrictionLevel": "managedApps",
+    "gracePeriodToBlockAppsDuringOffClockHours": "PT2M4.5004762S"
   }
 }
 ```

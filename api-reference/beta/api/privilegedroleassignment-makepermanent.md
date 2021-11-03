@@ -1,22 +1,24 @@
 ---
 title: privilegedRoleAssignment：makePermanent
 description: 使角色分配永久。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 20f78bd0f01c214a6f7c5fea40df4ac7042b141c
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 9e9f4ef235d0df877bd37a7cb8364e4729891afa
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58454148"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695767"
 ---
 # <a name="privilegedroleassignment-makepermanent"></a>privilegedRoleAssignment：makePermanent
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 使角色分配永久。
 

@@ -1,16 +1,16 @@
 ---
 title: 获取 governanceRoleAssignmentRequest
 description: '获取 governanceRoleAssignmentRequest。 '
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 3a7fa06029344c3593433ae2ef95119251d60584
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 3955de24dc00f484ada2daa4b5912f1b816d4434
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453105"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60687086"
 ---
 # <a name="get-governanceroleassignmentrequest"></a>获取 governanceRoleAssignmentRequest
 
@@ -18,7 +18,9 @@ ms.locfileid: "58453105"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取 [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)。 
+[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
+
+获取 [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference#privileged-access-permissions)。

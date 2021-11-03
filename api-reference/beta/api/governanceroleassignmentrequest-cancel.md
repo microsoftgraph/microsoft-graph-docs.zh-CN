@@ -1,22 +1,24 @@
 ---
 title: 取消 governanceRoleAssignmentRequest
 description: 取消 governanceRoleAssignmentRequest。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: a00eb98fa9c152bec555174c1196d4801b5e4e14
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 946e0dbfde3f097fb146d4725a2f4b3f9277aa14
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453847"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688217"
 ---
 # <a name="cancel-governanceroleassignmentrequest"></a>取消 governanceRoleAssignmentRequest
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
 
 取消 [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)。
 

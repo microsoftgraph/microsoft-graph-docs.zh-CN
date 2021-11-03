@@ -1,27 +1,29 @@
 ---
 title: privilegedOperationEvent 资源类型
 description: 表示由管理员为角色Privileged Identity Management生成的审核事件，例如管理员管理特权角色、用户激活其角色以及用户停用其角色。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: af317a8fa1257b9ba9e6bb4c80dc4291337b4d8c
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: ddeba79dba2bd3f329d62fff3b90a599f2ceb49a
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58454092"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60687541"
 ---
-# <a name="privilegedoperationevent-resource-type"></a>privilegedOperationEvent 资源类型
+# <a name="privilegedoperationevent-resource-type-deprecated"></a>privilegedOperationEvent 资源类型 (已弃) 
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+
 表示由管理员为角色Privileged Identity Management生成的审核事件，例如管理员管理特权角色、用户激活其角色以及用户停用其角色。
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -36,7 +38,7 @@ ms.locfileid: "58454092"
 |id|string|privilegedOperationEvent 的唯一标识符。 只读。|
 |referenceKey|string|角色激活期间的事件/请求票证编号。 该值仅在角色激活期间提供票证编号时显示。|
 |referenceSystem|string|在激活期间提供的事件/请求票证系统。 该值仅在角色激活期间提供票证系统时显示。|
-|requestType|String|请求操作类型。 requestType 值可以是 `Assign` ： (角色分配) 、 (角色) 、 (删除 角色分配) 、 (角色停用) 、 (扫描安全警报) 、 (消除安全警报) 、 (修复安全警报问题 `Activate` `Unassign` `Deactivate`) 、 (查看访问评审 `ScanAlertsNow` `DismissAlert`) 、 (创建访问评审 `FixAlertItem`  `AccessReview_Review`) 、 (更新访问评审 `AccessReview_Create` `AccessReview_Update`) 、 (`AccessReview_Delete` 删除访问评审) 。|
+|requestType|字符串|请求操作类型。 requestType 值可以是 `Assign` ： (角色分配) 、 (角色) 、 (删除 角色分配) 、 (角色停用) 、 (扫描安全警报) 、 (消除安全警报) 、 (修复安全警报问题 `Activate` `Unassign` `Deactivate`) 、 (查看访问评审 `ScanAlertsNow` `DismissAlert`) 、 (创建访问评审 `FixAlertItem`  `AccessReview_Review` `AccessReview_Create`) 、 (`AccessReview_Update` 更新访问评审) 、 `AccessReview_Delete` (Access Review) 。|
 |requestorId|string|启动操作的请求者的用户 ID。|
 |requestorName|string|启动操作的请求者的用户名称。|
 |roleId|string|与操作关联的角色的 ID。|

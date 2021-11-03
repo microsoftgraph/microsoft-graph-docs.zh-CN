@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 098eb7d3d961a3a8925c22e91b6417f811ed46db
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: e257675508bc1d92e9a7ee966da06f2245d5e121
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60487826"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60689093"
 ---
 # <a name="create-devicemanagementconfigurationpolicyassignment"></a>创建 deviceManagementConfigurationPolicyAssignment
 
@@ -37,6 +37,7 @@ ms.locfileid: "60487826"
 }
 -->
 ``` http
+POST /deviceManagement/compliancePolicies/{deviceManagementCompliancePolicyId}/assignments
 POST /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/assignments
 ```
 
@@ -53,7 +54,7 @@ POST /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolic
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|分配的键。|
+|id|字符串|分配的键。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|DeviceManagementConfigurationPolicy 的分配目标。|
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|设备合规性策略的分配源，即 direct 或更新/policySet。 可取值为：`direct`、`policySets`。|
 |sourceId|String|工作分配的源的标识符。|
@@ -68,7 +69,7 @@ POST /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolic
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/assignments
+POST https://graph.microsoft.com/beta/deviceManagement/compliancePolicies/{deviceManagementCompliancePolicyId}/assignments
 Content-type: application/json
 Content-length: 465
 

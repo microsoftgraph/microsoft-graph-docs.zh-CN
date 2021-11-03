@@ -1,16 +1,16 @@
 ---
 title: privilegedRoleSettings 资源类型
 description: 表示特权角色的设置。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: b954dbc0dc72028d60861c5c07820302f3cbe19d
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 6085d6bc74a1399ea4baf0cc575ecb316a3519e9
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58454120"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694165"
 ---
 # <a name="privilegedrolesettings-resource-type"></a>privilegedRoleSettings 资源类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "58454120"
 表示特权角色的设置。
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|

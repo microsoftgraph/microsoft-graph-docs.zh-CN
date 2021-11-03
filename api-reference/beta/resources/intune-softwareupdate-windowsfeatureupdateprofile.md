@@ -2,15 +2,15 @@
 title: windowsFeatureUpdateProfile 资源类型
 description: Windows功能更新配置文件
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8de71467651f732732b3eaaa3dfd88a79eaaf121
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fb381ace09fc3ee788f7b5f7fec3212285f21ad3
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59029869"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60691531"
 ---
 # <a name="windowsfeatureupdateprofile-resource-type"></a>windowsFeatureUpdateProfile 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "59029869"
 
 Windows功能更新配置文件
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 windowsFeatureUpdateProfiles](../api/intune-softwareupdate-windowsfeatureupdateprofile-list.md)|[windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) 集合|列出 [windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) 对象的属性和关系。|
@@ -35,18 +35,19 @@ Windows功能更新配置文件
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的标识符。|
-|displayName|String|配置文件显示名称的配置文件。|
-|说明|String|由用户指定的配置文件的说明。|
+|id|字符串|实体的标识符。|
+|displayName|字符串|配置文件显示名称。|
+|说明|字符串|由用户指定的配置文件的说明。|
 |featureUpdateVersion|String|将部署到此配置文件所面向的设备的功能更新版本。 版本可以是任何受支持的版本，例如 1709、1803 或 1809 等。|
+|rolloutSettings|[windowsUpdateRolloutSettings](../resources/intune-softwareupdate-windowsupdaterolloutsettings.md)|Windows 更新推出设置，包括优惠开始日期时间、优惠结束日期时间和每组产品/服务之间的天数。|
 |createdDateTime|DateTimeOffset|创建配置文件的日期时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改配置文件的日期时间。|
 |roleScopeTagIds|String collection|此功能更新实体的范围标记列表。|
-|deployableContentDisplayName|String|质量显示名称配置文件可部署内容的友好解决方案|
+|deployableContentDisplayName|字符串|质量显示名称配置文件可部署内容的友好解决方案|
 |endOfSupportDate|DateTimeOffset|功能更新的上次支持日期|
 
 ## <a name="relationships"></a>关系
-|关系|类型|描述|
+|关系|类型|说明|
 |:---|:---|:---|
 |assignments|[windowsFeatureUpdateProfileAssignment](../resources/intune-softwareupdate-windowsfeatureupdateprofileassignment.md) 集合|配置文件的组分配列表。|
 
@@ -65,6 +66,12 @@ Windows功能更新配置文件
   "displayName": "String",
   "description": "String",
   "featureUpdateVersion": "String",
+  "rolloutSettings": {
+    "@odata.type": "microsoft.graph.windowsUpdateRolloutSettings",
+    "offerStartDateTimeInUTC": "String (timestamp)",
+    "offerEndDateTimeInUTC": "String (timestamp)",
+    "offerIntervalInDays": 1024
+  },
   "createdDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)",
   "roleScopeTagIds": [

@@ -1,22 +1,24 @@
 ---
 title: 获取 governanceRoleAssignment
 description: 检索 governanceRoleAssignment 的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 474de4d9b5cc665de7802584191d64ad37a1d283
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: d5046c752d45f41c8e97eff171f6c88b578e4251
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453217"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696026"
 ---
 # <a name="get-governanceroleassignment"></a>获取 governanceRoleAssignment
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
 
 检索 [governanceRoleAssignment 的属性和关系](../resources/governanceroleassignment.md)。
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4c7b0076cd71f0ab5d5befcfe0315007700486a6
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: c90e2b9e98c0ed6e635ef9dc8752cd65354b472d
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60494715"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694241"
 ---
 # <a name="get-defaultmanagedappprotection"></a>获取 defaultManagedAppProtection
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/defaultManagedAppProtec
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5778
+Content-Length: 5846
 
 {
   "value": {
@@ -130,6 +130,7 @@ Content-Length: 5778
     ],
     "appActionIfUnableToAuthenticateUser": "wipe",
     "dialerRestrictionLevel": "managedApps",
+    "gracePeriodToBlockAppsDuringOffClockHours": "PT2M4.5004762S",
     "appDataEncryptionType": "afterDeviceRestart",
     "screenCaptureBlocked": true,
     "encryptAppData": true,

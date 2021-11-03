@@ -2,15 +2,15 @@
 title: 更新 windowsFeatureUpdateProfile
 description: 更新 windowsFeatureUpdateProfile 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: aa3f82101eba61f07745aa528dcab52b92e481fb
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 83721b5a2bcb64fa03359272279e0c0ea6bbe381
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59041323"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695431"
 ---
 # <a name="update-windowsfeatureupdateprofile"></a>更新 windowsFeatureUpdateProfile
 
@@ -54,9 +54,10 @@ PATCH /deviceManagement/windowsFeatureUpdateProfiles/{windowsFeatureUpdateProfil
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的标识符。|
-|displayName|String|配置文件显示名称的配置文件。|
-|说明|String|由用户指定的配置文件的说明。|
-|featureUpdateVersion|String|将部署到此配置文件所面向的设备的功能更新版本。 版本可以是任何受支持的版本，例如 1709、1803 或 1809 等。|
+|displayName|String|配置文件显示名称。|
+|说明|字符串|由用户指定的配置文件的说明。|
+|featureUpdateVersion|字符串|将部署到此配置文件所面向的设备的功能更新版本。 版本可以是任何受支持的版本，例如 1709、1803 或 1809 等。|
+|rolloutSettings|[windowsUpdateRolloutSettings](../resources/intune-softwareupdate-windowsupdaterolloutsettings.md)|Windows 更新推出设置，包括优惠开始日期时间、优惠结束日期时间和每组产品/服务之间的天数。|
 |createdDateTime|DateTimeOffset|创建配置文件的日期时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改配置文件的日期时间。|
 |roleScopeTagIds|String collection|此功能更新实体的范围标记列表。|
@@ -75,13 +76,19 @@ PATCH /deviceManagement/windowsFeatureUpdateProfiles/{windowsFeatureUpdateProfil
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/windowsFeatureUpdateProfiles/{windowsFeatureUpdateProfileId}
 Content-type: application/json
-Content-length: 405
+Content-length: 669
 
 {
   "@odata.type": "#microsoft.graph.windowsFeatureUpdateProfile",
   "displayName": "Display Name value",
   "description": "Description value",
   "featureUpdateVersion": "Feature Update Version value",
+  "rolloutSettings": {
+    "@odata.type": "microsoft.graph.windowsUpdateRolloutSettings",
+    "offerStartDateTimeInUTC": "2017-01-01T00:01:16.3697768-08:00",
+    "offerEndDateTimeInUTC": "2016-12-31T23:58:15.1925199-08:00",
+    "offerIntervalInDays": 3
+  },
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
@@ -95,7 +102,7 @@ Content-length: 405
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 577
+Content-Length: 841
 
 {
   "@odata.type": "#microsoft.graph.windowsFeatureUpdateProfile",
@@ -103,6 +110,12 @@ Content-Length: 577
   "displayName": "Display Name value",
   "description": "Description value",
   "featureUpdateVersion": "Feature Update Version value",
+  "rolloutSettings": {
+    "@odata.type": "microsoft.graph.windowsUpdateRolloutSettings",
+    "offerStartDateTimeInUTC": "2017-01-01T00:01:16.3697768-08:00",
+    "offerEndDateTimeInUTC": "2016-12-31T23:58:15.1925199-08:00",
+    "offerIntervalInDays": 3
+  },
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "roleScopeTagIds": [

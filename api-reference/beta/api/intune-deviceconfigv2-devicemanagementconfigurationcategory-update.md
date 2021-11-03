@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2bf0eba0f648a6a87bd8a632f4b419418f53668f
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 719e10621f6dcfa1c249ca75d743260dbf4da406
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60491421"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694636"
 ---
 # <a name="update-devicemanagementconfigurationcategory"></a>更新 deviceManagementConfigurationCategory
 
@@ -37,6 +37,7 @@ ms.locfileid: "60491421"
 }
 -->
 ``` http
+PATCH /deviceManagement/complianceCategories/{deviceManagementConfigurationCategoryId}
 PATCH /deviceManagement/configurationCategories/{deviceManagementConfigurationCategoryId}
 ```
 
@@ -55,12 +56,13 @@ PATCH /deviceManagement/configurationCategories/{deviceManagementConfigurationCa
 |:---|:---|:---|
 |id|String|项的标识符|
 |说明|String|项目说明|
-|helpText|String|项目的帮助文本|
-|name|String|项目名称|
-|displayName|String|项目的显示名称|
+|categoryDescription|字符串|类别标头的说明|
+|helpText|字符串|项目的帮助文本|
+|name|字符串|项目名称|
+|displayName|字符串|项目的显示名称|
 |平台|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|平台类型，类别中的设置具有。 可取值为：`none`、`android`、`iOS`、`macOS`、`windows10X`、`windows10`。|
 |technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|技术类型，类别中的设置具有。 可取值为：`none`、`mdm`、`windows10XManagement`、`configManager`、`microsoftSense`、`exchangeOnline`、`linuxMdm`、`unknownFutureValue`。|
-|settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|指示类别包含用于合规性或配置的设置。 可取值为：`none`、`configuration`。|
+|settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|指示类别包含用于合规性或配置的设置。 可取值为：`none`、`configuration`、`compliance`。|
 |parentCategoryId|String|类别的父 ID。|
 |rootCategoryId|String|类别的根 ID。|
 |childCategoryIds|String collection|类别的子 ID 列表。|
@@ -75,13 +77,14 @@ PATCH /deviceManagement/configurationCategories/{deviceManagementConfigurationCa
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-PATCH https://graph.microsoft.com/beta/deviceManagement/configurationCategories/{deviceManagementConfigurationCategoryId}
+PATCH https://graph.microsoft.com/beta/deviceManagement/complianceCategories/{deviceManagementConfigurationCategoryId}
 Content-type: application/json
-Content-length: 467
+Content-length: 523
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationCategory",
   "description": "Description value",
+  "categoryDescription": "Category Description value",
   "helpText": "Help Text value",
   "name": "Name value",
   "displayName": "Display Name value",
@@ -101,12 +104,13 @@ Content-length: 467
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 516
+Content-Length: 572
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationCategory",
   "id": "cff34dd2-4dd2-cff3-d24d-f3cfd24df3cf",
   "description": "Description value",
+  "categoryDescription": "Category Description value",
   "helpText": "Help Text value",
   "name": "Name value",
   "displayName": "Display Name value",

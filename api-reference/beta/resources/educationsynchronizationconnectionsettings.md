@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 7b64b52946e2391378a34ee3cba3db852d61666d
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 4885c2b661d2346eb80d274243c9b15d58769407
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60445898"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695277"
 ---
 # <a name="educationsynchronizationconnectionsettings-resource-type"></a>educationSynchronizationConnectionSettings 资源类型
 
@@ -43,6 +43,7 @@ ms.locfileid: "60445898"
 
 <!-- {
   "blockType": "resource",
+   truncated: true,
    "isAbstract":true,
   "optionalProperties": [
 

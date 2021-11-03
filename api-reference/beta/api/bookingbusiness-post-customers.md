@@ -1,16 +1,16 @@
 ---
 title: 创建 bookingCustomer
 description: 创建新的 bookingCustomer 对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 5206c6969f2a0f9504cfecd347e7e215577caae1
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e8533fc8eb387b8690c24b0806e370431ae8c11e
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047866"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60689170"
 ---
 # <a name="create-bookingcustomer"></a>创建 bookingCustomer
 
@@ -37,17 +37,17 @@ POST /bookingBusinesses/{id}/customers
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {code}。 必需。|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [bookingCustomer](../resources/bookingcustomer.md) 对象的 JSON 表示形式。
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在 `201, Created` 响应正文中返回 响应代码和 [bookingCustomer](../resources/bookingcustomer.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [bookingCustomer](../resources/bookingcustomer.md) 对象。
 
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 下面展示了示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -61,7 +61,37 @@ Content-type: application/json
 
 {
     "displayName": "Joni Sherman",
-    "emailAddress": "jonis@relecloud.com"
+    "emailAddress": "jonis@relecloud.com",
+    "addresses": [
+        {
+            "postOfficeBox":"",
+            "street":"4567 Main Street",
+            "city":"Buffalo",
+            "state":"NY",
+            "countryOrRegion":"USA",
+            "postalCode":"98052",
+            "type":"home"
+        },
+        {
+            "postOfficeBox":"",
+            "street":"4570 Main Street",
+            "city":"Buffalo",
+            "state":"NY",
+            "countryOrRegion":"USA",
+            "postalCode":"98054",
+            "type":"business"
+        }
+    ],
+    "phones": [
+        {
+            "number": "206-555-0100",
+            "type": "home"
+        },
+        {
+            "number": "206-555-0200",
+            "type": "business"
+        }
+     ]
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -82,9 +112,10 @@ Content-type: application/json
 
 ---
 
-在请求正文中，提供 [bookingCustomer](../resources/bookingcustomer.md) 对象的 JSON 表示形式。
-##### <a name="response"></a>响应
-下面展示了示例响应。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+### <a name="response"></a>响应
+下面展示了示例响应。 
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -98,7 +129,37 @@ Content-type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40M365B489948.onmicrosoft.com')/customers/$entity",
     "id": "36038f36-634e-44e4-9415-d7d59c2347aa",
     "displayName": "Joni Sherman",
-    "emailAddress": "jonis@relecloud.com"
+    "emailAddress": "jonis@relecloud.com",
+    "addresses": [
+        {
+            "postOfficeBox":"",
+            "street":"4567 Main Street",
+            "city":"Buffalo",
+            "state":"NY",
+            "countryOrRegion":"USA",
+            "postalCode":"98052",
+            "type":"home"
+        },
+        {
+            "postOfficeBox":"",
+            "street":"4570 Main Street",
+            "city":"Buffalo",
+            "state":"NY",
+            "countryOrRegion":"USA",
+            "postalCode":"98054",
+            "type":"business"
+        }
+    ],
+    "phones": [
+        {
+            "number": "206-555-0100",
+            "type": "home"
+        },
+        {
+            "number": "206-555-0200",
+            "type": "business"
+        }
+     ]
 }
 ```
 

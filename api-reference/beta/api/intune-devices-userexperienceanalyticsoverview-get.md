@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dc9a5851eae1554d4c5b3e3841a7295355b5f0cb
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 2db875bc2991d2042e30f5efe9fa0c1615cc0a72
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60492452"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688848"
 ---
 # <a name="get-userexperienceanalyticsoverview"></a>获取 userExperienceAnalyticsOverview
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsOve
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1129
+Content-Length: 1219
 
 {
   "value": {
@@ -80,6 +80,7 @@ Content-Length: 1129
     "workFromAnywhereOverallScore": 12,
     "appHealthOverallScore": 5,
     "resourcePerformanceOverallScore": 15,
+    "batteryHealthOverallScore": 9,
     "insights": [
       {
         "@odata.type": "microsoft.graph.userExperienceAnalyticsInsight",
@@ -99,7 +100,8 @@ Content-Length: 1129
     "bestPracticesHealthState": "insufficientData",
     "workFromAnywhereHealthState": "insufficientData",
     "appHealthState": "insufficientData",
-    "resourcePerformanceHealthState": "insufficientData"
+    "resourcePerformanceHealthState": "insufficientData",
+    "batteryHealthHealthState": "insufficientData"
   }
 }
 ```

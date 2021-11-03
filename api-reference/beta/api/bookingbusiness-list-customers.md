@@ -1,16 +1,16 @@
 ---
 title: 列出客户
 description: 获取 bookingCustomer 对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 9eff7f998ad5bf5f1c623e2a699c7c1be3636b8a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 79bdf7e5038f3b8db2e9762624922721d1e2b804
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047901"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60687457"
 ---
 # <a name="list-customers"></a>列出客户
 
@@ -34,7 +34,7 @@ ms.locfileid: "52047901"
 GET /bookingBusinesses/{id}/customers
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -46,7 +46,7 @@ GET /bookingBusinesses/{id}/customers
 ## <a name="response"></a>响应
 如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [bookingCustomer](../resources/bookingcustomer.md) 对象集合。
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 下面展示了示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -75,8 +75,11 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365
 
 ---
 
-##### <a name="response"></a>响应
-下面展示了示例响应。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+### <a name="response"></a>响应
+下面展示了示例响应。 
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -93,22 +96,58 @@ Content-type: application/json
         {
             "id": "80b5ddda-1e3b-4c9d-abe2-d606cc075e2e",
             "displayName": "Adele Vance",
-            "emailAddress": "adelev@proseware.com"
+            "emailAddress": "adelev@proseware.com",
+            "addresses": [],
+            "phones": []
         },
         {
             "id": "8bb19078-0f45-4efb-b2c5-da78b860f73a",
             "displayName": "Adele Vance",
-            "emailAddress": "adelev@proseware.com"
+            "emailAddress": "adelev@proseware.com",
+            "addresses": [
+                {
+                    "postOfficeBox":"",
+                    "street":"4567 Main Street",
+                    "city":"Buffalo",
+                    "state":"NY",
+                    "countryOrRegion":"USA",
+                    "postalCode":"98052",
+                    "type":"home"
+                },
+                {
+                    "postOfficeBox":"",
+                    "street":"4570 Main Street",
+                    "city":"Buffalo",
+                    "state":"NY",
+                    "countryOrRegion":"USA",
+                    "postalCode":"98054",
+                    "type":"business"
+                }
+            ],
+            "phones": [
+                {
+                    "number": "206-555-0100",
+                    "type": "home"
+                },
+                {
+                    "number": "206-555-0200",
+                    "type": "business"
+                }
+            ]
         },
         {
             "id": "829e3cb5-3d4d-4319-a8de-1953aedaa166",
             "displayName": "Bob Kelly",
-            "emailAddress": "bobk@tailspintoys.com"
+            "emailAddress": "bobk@tailspintoys.com",
+            "addresses": [],
+            "phones": []
         },
         {
             "id": "7ed53fa5-9ef2-4f2f-975b-27447440bc09",
             "displayName": "Jordan Miller",
-            "emailAddress": "jordanm@contoso.com"
+            "emailAddress": "jordanm@contoso.com",
+            "addresses": [],
+            "phones": []
         }
     ]
 }

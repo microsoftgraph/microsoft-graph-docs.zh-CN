@@ -1,16 +1,16 @@
 ---
 title: 更新 bookingservice
 description: 更新指定 bookingbusiness 中的 bookingService 对象的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 9e8eec740df193662c10a5ff9557fa3dafa30753
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f0e652e5fd4e96aba984589371fb1a95e706e1be
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960368"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695221"
 ---
 # <a name="update-bookingservice"></a>更新 bookingservice
 
@@ -18,21 +18,21 @@ ms.locfileid: "48960368"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新指定[bookingbusiness](../resources/bookingbusiness.md)中的[bookingService](../resources/bookingservice.md)对象的属性。
+更新指定的 [bookingBusiness](../resources/bookingservice.md) 中的 [bookingService](../resources/bookingbusiness.md)对象的属性。
 
-下面是可以为服务自定义的一些示例：
+以下是您可以为服务自定义的一些示例：
 - 价格
 - 约会的典型长度
 - Reminders
-- 在服务完成之前或结束前设置的任何时间缓冲
-- 将策略参数（如 "最低通知"）[安排](../resources/bookingschedulingpolicy.md)为 "书籍" 或 "取消"，以及客户是否可以选择约会的特定员工成员。
+- 在服务之前或之后完成设置的任何时间缓冲区
+- [计划策略](../resources/bookingschedulingpolicy.md) 参数，如预订或取消的最低通知，以及客户是否可以选择特定员工进行约会。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  全部预订. 全部，全部预订. 全部   |
+|委派（工作或学校帐户） |  Bookings.ReadWrite.All、Bookings.Manage.All   |
 |委派（个人 Microsoft 帐户） | 不支持。   |
 |应用程序 | 不支持。  |
 
@@ -44,34 +44,36 @@ PATCH /bookingBusinesses/{id}/services/{id}
 ## <a name="optional-request-headers"></a>可选的请求标头
 | 名称       | 说明|
 |:-----------|:-----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {code}。 必需。|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
+在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|defaultDuration|持续时间|服务的默认长度，以天数、小时数、分钟数和秒数表示。 例如，P11D23H59M 59.999999999999 S。 |
+|defaultDuration|期限|服务的默认长度，以天数、小时数、分钟数和秒数表示。 例如，P11D23H59M59.9999999999S。 |
 |defaultLocation|[location](../resources/location.md)|服务的默认物理位置。|
 |defaultPrice|双精度|服务的默认货币价格。|
 |defaultPriceType|string|服务收费的默认方式。 可取值为：`undefined`、`fixedPrice`、`startingAt`、`hourly`、`free`、`priceVaries`、`callUs`、`notSet`。|
-|defaultReminders|[bookingReminder](../resources/bookingreminder.md) 集合|此服务的约会的默认提醒集。 此属性的值仅在按 ID 读取此 **bookingService** 时可用。|
+|defaultReminders|[bookingReminder](../resources/bookingreminder.md) 集合|此服务约会的默认提醒集。 此属性的值仅在按其 ID 读取此 **bookingService** 时可用。|
 |说明|String|服务的文本说明。|
-|displayName|String|服务名称。|
+|displayName|字符串|服务名称。|
 |emailAddress|String|电子邮件地址|
-|id|String| 只读。|
-|isHiddenFromCustomers|Boolean|如果为 True，则表示此服务不可供客户预订。|
+|id|字符串| 只读。|
+|isHiddenFromCustomers|布尔值|True 表示客户无法预订此服务。|
+|isLocationOnline|布尔值|如果为 True，则表明该服务的约会将联机进行。 默认值为 false。|
 |notes|String|有关此服务的其他信息。|
-|postBuffer|持续时间|此服务的约会结束后以及下一个客户约会可以被预订前要缓冲的时间。|
-|preBuffer|持续时间|在此服务的约会开始之前要缓冲的时间。|
-|schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|确定应如何创建和管理此类服务的约会的一组策略。|
-|staffMemberIds|String collection|代表提供此服务的 [教职员工成员](../resources/bookingstaffmember.md) 。 |
+|postBuffer|期限|此服务的约会结束后以及下一个客户约会可以预订之前进行缓冲的时间。|
+|preBuffer|期限|在此服务的约会可以启动之前缓冲的时间。|
+|schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|用于确定如何创建和管理这种类型的服务的约会的策略集。|
+|smsNotificationsEnabled|布尔值|如果为 True，则表明可以针对服务约会将短信通知发送给客户。 默认值为 false。|
+|staffMemberIds|String collection|表示 [提供此服务](../resources/bookingstaffmember.md) 的员工。 |
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `204 No content` 响应代码。它不在响应正文中返回任何内容。
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
-下面的示例更新指定服务的持续时间。
+### <a name="request"></a>请求
+以下示例更新指定服务的持续时间。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -105,7 +107,7 @@ Content-type: application/json
 
 ---
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 下面展示了示例响应。
 <!-- {
   "blockType": "response",

@@ -281,6 +281,8 @@ items:
                 href: api/user-changepassword.md
               - name: 获取 Delta
                 href: api/user-delta.md
+              - name: 验证密码
+                href: api/user-validatepassword.md
               - name: 刷新令牌无效
                 href: api/user-invalidateallrefreshtokens.md
           - name: 应用角色分配
@@ -392,7 +394,7 @@ items:
             items:
               - name: 项目见解
                 items:
-                  - name: '预览版 (项) '
+                  - name: '项目见解 (预览) '
                     href: resources/iteminsights.md
                   - name: 共享的列表
                     href: api/insights-list-shared.md
@@ -440,7 +442,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: 发送邮件
                 href: api/user-sendmail.md
-          - name: 备注
+          - name: Notes
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -873,6 +875,23 @@ items:
                         href: api/application-post-extensionproperty.md
                       - name: 删除
                         href: api/application-delete-extensionproperty.md
+              - name: '联合身份凭据 (预览) '
+                items:
+                  - name: 概述
+                    href: resources/federatedidentitycredentials-overview.md
+                  - name: 联合身份凭据
+                    href: resources/federatedidentitycredential.md
+                    items:
+                      - name: 列出
+                        href: api/application-list-federatedidentitycredentials.md
+                      - name: 创建
+                        href: api/application-post-federatedidentitycredentials.md
+                      - name: 获取
+                        href: api/federatedidentitycredential-get.md
+                      - name: 更新
+                        href: api/federatedidentitycredential-update.md
+                      - name: 删除
+                        href: api/federatedidentitycredential-delete.md
               - name: 所有者
                 items:
                   - name: 列出所有者
@@ -1340,9 +1359,9 @@ items:
                 href: api/event-delta.md
               - name: 提醒视图
                 href: api/user-reminderview.md
-          - name: 类别
+          - name: Category
             items:
-              - name: 类别
+              - name: Category
                 href: resources/outlookcategory.md
               - name: 列出类别
                 href: api/outlookuser-list-mastercategories.md
@@ -1721,11 +1740,11 @@ items:
                     href: api/ediscovery-tag-childtags.md
                   - name: 将标记作为层次结构列出
                     href: api/ediscovery-tag-ashierarchy.md
-          - name: 主体权限请求
+          - name: 使用者权限请求
             items:
               - name: 概述
                 href: resources/subjectrightsrequest-subjectrightsrequestapioverview.md
-              - name: 主体权限请求
+              - name: 使用者权限请求
                 href: resources/subjectrightsrequest.md
                 items:
                   - name: 列出
@@ -4658,6 +4677,8 @@ items:
                         href: api/intune-deviceconfig-devicecomplianceuserstatus-delete.md
                       - name: 更新
                         href: api/intune-deviceconfig-devicecomplianceuserstatus-update.md
+                  - name: 设备配置分配意图
+                    href: resources/intune-deviceconfig-deviceconfigassignmentintent.md
                   - name: 设备配置分配
                     href: resources/intune-deviceconfig-deviceconfigurationassignment.md
                     items:
@@ -7004,29 +7025,12 @@ items:
                     href: resources/intune-auditing-auditproperty.md
                   - name: 审核资源
                     href: resources/intune-auditing-auditresource.md
-                  - name: 二进制管理条件表达式
-                    href: resources/intune-fencing-binarymanagementconditionexpression.md
-                  - name: 二进制管理条件表达式运算符类型
-                    href: resources/intune-fencing-binarymanagementconditionexpressionoperatortype.md
                   - name: 批量托管的设备操作结果
                     href: resources/intune-devices-bulkmanageddeviceactionresult.md
                   - name: 机箱类型
                     href: resources/intune-devices-chassistype.md
                   - name: Chrome o 的 device 属性
                     href: resources/intune-devices-chromeosdeviceproperty.md
-                  - name: 循环 geofence 管理条件
-                    href: resources/intune-fencing-circulargeofencemanagementcondition.md
-                    items:
-                      - name: 列出
-                        href: api/intune-fencing-circulargeofencemanagementcondition-list.md
-                      - name: 获取
-                        href: api/intune-fencing-circulargeofencemanagementcondition-get.md
-                      - name: 创建
-                        href: api/intune-fencing-circulargeofencemanagementcondition-create.md
-                      - name: 删除
-                        href: api/intune-fencing-circulargeofencemanagementcondition-delete.md
-                      - name: 更新
-                        href: api/intune-fencing-circulargeofencemanagementcondition-update.md
                   - name: 云电脑连接问题
                     href: resources/intune-devices-cloudpcconnectivityissue.md
                     items:
@@ -7686,8 +7690,6 @@ items:
                     href: resources/intune-deviceintent-devicemanangementintentvaluetype.md
                   - name: 设备操作系统摘要
                     href: resources/intune-devices-deviceoperatingsystemsummary.md
-                  - name: 设备平台类型
-                    href: resources/intune-fencing-deviceplatformtype.md
                   - name: 设备保护概述
                     href: resources/intune-devices-deviceprotectionoverview.md
                   - name: 设备注册状态
@@ -7783,13 +7785,6 @@ items:
                         href: api/intune-notification-localizednotificationmessage-update.md
                   - name: 查找设备操作结果
                     href: resources/intune-devices-locatedeviceactionresult.md
-                  - name: 位置管理条件
-                    href: resources/intune-fencing-locationmanagementcondition.md
-                    items:
-                      - name: 列出
-                        href: api/intune-fencing-locationmanagementcondition-list.md
-                      - name: 获取
-                        href: api/intune-fencing-locationmanagementcondition-get.md
                   - name: 登录用户
                     href: resources/intune-devices-loggedonuser.md
                   - name: 丢失模式状态
@@ -7903,71 +7898,8 @@ items:
                     href: resources/intune-devices-managedinstallerstatus.md
                   - name: 管理代理类型
                     href: resources/intune-devices-managementagenttype.md
-                  - name: 管理条件
-                    href: resources/intune-fencing-managementcondition.md
-                    items:
-                      - name: 列出
-                        href: api/intune-fencing-managementcondition-list.md
-                      - name: 获取
-                        href: api/intune-fencing-managementcondition-get.md
-                      - name: getManagementConditionsForPlatform
-                        href: api/intune-fencing-managementcondition-getmanagementconditionsforplatform.md
-                  - name: 管理条件表达式
-                    href: resources/intune-fencing-managementconditionexpression.md
-                  - name: 管理条件表达式模型
-                    href: resources/intune-fencing-managementconditionexpressionmodel.md
-                  - name: 管理条件表达式字符串
-                    href: resources/intune-fencing-managementconditionexpressionstring.md
-                  - name: 管理条件语句
-                    href: resources/intune-fencing-managementconditionstatement.md
-                    items:
-                      - name: 列出
-                        href: api/intune-fencing-managementconditionstatement-list.md
-                      - name: 获取
-                        href: api/intune-fencing-managementconditionstatement-get.md
-                      - name: 创建
-                        href: api/intune-fencing-managementconditionstatement-create.md
-                      - name: 删除
-                        href: api/intune-fencing-managementconditionstatement-delete.md
-                      - name: 更新
-                        href: api/intune-fencing-managementconditionstatement-update.md
-                      - name: getManagementConditionStatementsForPlatform
-                        href: api/intune-fencing-managementconditionstatement-getmanagementconditionstatementsforplatform.md
                   - name: 管理状态
                     href: resources/intune-devices-managementstate.md
-                  - name: 网络 IPv4 配置管理条件
-                    href: resources/intune-fencing-networkipv4configurationmanagementcondition.md
-                    items:
-                      - name: 列出
-                        href: api/intune-fencing-networkipv4configurationmanagementcondition-list.md
-                      - name: 获取
-                        href: api/intune-fencing-networkipv4configurationmanagementcondition-get.md
-                      - name: 创建
-                        href: api/intune-fencing-networkipv4configurationmanagementcondition-create.md
-                      - name: 删除
-                        href: api/intune-fencing-networkipv4configurationmanagementcondition-delete.md
-                      - name: 更新
-                        href: api/intune-fencing-networkipv4configurationmanagementcondition-update.md
-                  - name: 网络 IPv6 配置管理条件
-                    href: resources/intune-fencing-networkipv6configurationmanagementcondition.md
-                    items:
-                      - name: 列出
-                        href: api/intune-fencing-networkipv6configurationmanagementcondition-list.md
-                      - name: 获取
-                        href: api/intune-fencing-networkipv6configurationmanagementcondition-get.md
-                      - name: 创建
-                        href: api/intune-fencing-networkipv6configurationmanagementcondition-create.md
-                      - name: 删除
-                        href: api/intune-fencing-networkipv6configurationmanagementcondition-delete.md
-                      - name: 更新
-                        href: api/intune-fencing-networkipv6configurationmanagementcondition-update.md
-                  - name: 网络管理条件
-                    href: resources/intune-fencing-networkmanagementcondition.md
-                    items:
-                      - name: 列出
-                        href: api/intune-fencing-networkmanagementcondition-list.md
-                      - name: 获取
-                        href: api/intune-fencing-networkmanagementcondition-get.md
                   - name: 通知邮件模板
                     href: resources/intune-notification-notificationmessagetemplate.md
                     items:
@@ -8110,10 +8042,6 @@ items:
                     href: resources/intune-devices-sharedappledeviceuser.md
                   - name: Tuple_2操作type_collection_1执行顺序
                     href: resources/intune-esim-tuple_2ofexecutiontype_icollection_1ofoperation.md
-                  - name: 一元管理条件表达式
-                    href: resources/intune-fencing-unarymanagementconditionexpression.md
-                  - name: 一元管理条件表达式运算符类型
-                    href: resources/intune-fencing-unarymanagementconditionexpressionoperatortype.md
                   - name: 更新 Windows 设备帐户操作参数
                     href: resources/intune-devices-updatewindowsdeviceaccountactionparameter.md
                   - name: 用户体验分析应用运行状况应用性能（按应用版本）
@@ -8248,6 +8176,98 @@ items:
                         href: api/intune-devices-userexperienceanalyticsbaseline-delete.md
                       - name: 更新
                         href: api/intune-devices-userexperienceanalyticsbaseline-update.md
+                  - name: 用户体验分析电池运行状况应用影响
+                    href: resources/intune-devices-userexperienceanalyticsbatteryhealthappimpact.md
+                    items:
+                      - name: 列表
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthappimpact-list.md
+                      - name: 获取
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthappimpact-get.md
+                      - name: 创建
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthappimpact-create.md
+                      - name: 删除
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthappimpact-delete.md
+                      - name: 更新
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthappimpact-update.md
+                  - name: 用户体验分析电池运行状况容量详细信息
+                    href: resources/intune-devices-userexperienceanalyticsbatteryhealthcapacitydetails.md
+                    items:
+                      - name: 获取
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthcapacitydetails-get.md
+                      - name: 更新
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthcapacitydetails-update.md
+                  - name: 用户体验分析电池运行状况设备应用影响
+                    href: resources/intune-devices-userexperienceanalyticsbatteryhealthdeviceappimpact.md
+                    items:
+                      - name: 列表
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthdeviceappimpact-list.md
+                      - name: 获取
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthdeviceappimpact-get.md
+                      - name: 创建
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthdeviceappimpact-create.md
+                      - name: 删除
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthdeviceappimpact-delete.md
+                      - name: 更新
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthdeviceappimpact-update.md
+                  - name: 用户体验分析电池运行状况设备性能
+                    href: resources/intune-devices-userexperienceanalyticsbatteryhealthdeviceperformance.md
+                    items:
+                      - name: 列表
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthdeviceperformance-list.md
+                      - name: 获取
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthdeviceperformance-get.md
+                      - name: 创建
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthdeviceperformance-create.md
+                      - name: 删除
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthdeviceperformance-delete.md
+                      - name: 更新
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthdeviceperformance-update.md
+                  - name: 用户体验分析电池运行状况设备运行时历史记录
+                    href: resources/intune-devices-userexperienceanalyticsbatteryhealthdeviceruntimehistory.md
+                    items:
+                      - name: 列表
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthdeviceruntimehistory-list.md
+                      - name: 获取
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthdeviceruntimehistory-get.md
+                      - name: 创建
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthdeviceruntimehistory-create.md
+                      - name: 删除
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthdeviceruntimehistory-delete.md
+                      - name: 更新
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthdeviceruntimehistory-update.md
+                  - name: 用户体验分析电池运行状况模型性能
+                    href: resources/intune-devices-userexperienceanalyticsbatteryhealthmodelperformance.md
+                    items:
+                      - name: 列表
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthmodelperformance-list.md
+                      - name: 获取
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthmodelperformance-get.md
+                      - name: 创建
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthmodelperformance-create.md
+                      - name: 删除
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthmodelperformance-delete.md
+                      - name: 更新
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthmodelperformance-update.md
+                  - name: 用户体验分析电池运行状况操作系统性能
+                    href: resources/intune-devices-userexperienceanalyticsbatteryhealthosperformance.md
+                    items:
+                      - name: 列表
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthosperformance-list.md
+                      - name: 获取
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthosperformance-get.md
+                      - name: 创建
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthosperformance-create.md
+                      - name: 删除
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthosperformance-delete.md
+                      - name: 更新
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthosperformance-update.md
+                  - name: 用户体验分析电池运行状况运行时详细信息
+                    href: resources/intune-devices-userexperienceanalyticsbatteryhealthruntimedetails.md
+                    items:
+                      - name: 获取
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthruntimedetails-get.md
+                      - name: 更新
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthruntimedetails-update.md
                   - name: 用户体验分析类别
                     href: resources/intune-devices-userexperienceanalyticscategory.md
                     items:
@@ -8514,8 +8534,6 @@ items:
                         href: api/intune-devices-userexperienceanalyticsworkfromanywheremetric-delete.md
                       - name: 更新
                         href: api/intune-devices-userexperienceanalyticsworkfromanywheremetric-update.md
-                  - name: 变量管理条件表达式
-                    href: resources/intune-fencing-variablemanagementconditionexpression.md
                   - name: Windows Defender 产品状态
                     href: resources/intune-devices-windowsdefenderproductstatus.md
                   - name: Windows Defender 扫描操作结果
@@ -9405,6 +9423,8 @@ items:
                         href: api/intune-shared-androidmanagedappprotection-haspayloadlinks.md
                   - name: Android 托管应用商店应用分配设置
                     href: resources/intune-shared-androidmanagedstoreappassignmentsettings.md
+                  - name: Android 托管应用商店自动更新模式
+                    href: resources/intune-shared-androidmanagedstoreautoupdatemode.md
                   - name: 证书目标存储
                     href: resources/intune-shared-certificatedestinationstore.md
                   - name: 证书存储
@@ -9456,7 +9476,7 @@ items:
                         href: api/intune-shared-devicecompliancepolicy-get.md
                       - name: 分配操作
                         href: api/intune-shared-devicecompliancepolicy-assign.md
-                      - name: refreshDeviceComplianceReportSummarization 操作
+                      - name: action
                         href: api/intune-shared-devicecompliancepolicy-refreshdevicecompliancereportsummarization.md
                       - name: hasPayloadLinks 操作
                         href: api/intune-shared-devicecompliancepolicy-haspayloadlinks.md
@@ -9508,10 +9528,10 @@ items:
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-get.md
                       - name: 更新
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
-                      - name: 列表
+                      - name: 列出
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
-                      - name: 'deviceManagementDerivedCredentialSettings] (。。/resources/intune-shared-devicemanagementderivedcredentialsettings.md) |创建'
-                        href: api/intune-shared-devicemanagementderivedcredentialsettings.md
+                      - name: 创建
+                        href: resources/intune-shared-devicemanagementderivedcredentialsettings.md
                       - name: 删除
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
                   - name: 设备管理脚本
@@ -9788,6 +9808,8 @@ items:
                         href: api/intune-tem-telecomexpensemanagementpartner-update.md
           - name: '云电脑 (预览) '
             items:
+              - name: 概述
+                href: resources/cloudpc-api-overview.md
               - name: 虚拟终结点
                 href: resources/virtualendpoint.md
                 items:
@@ -9888,6 +9910,11 @@ items:
                 items:
                   - name: 列表
                     href: api/virtualendpoint-list-supportedregions.md
+              - name: 云电脑服务计划
+                href: resources/cloudpcserviceplan.md
+                items:
+                  - name: 列表
+                    href: api/virtualendpoint-list-serviceplans.md
           - name: 设备更新（预览）
             displayName: Windows updates
             items:
@@ -10335,7 +10362,7 @@ items:
                 href: api/educationassignmentdefaults-get.md
               - name: 更新工作分配默认值
                 href: api/educationassignmentdefaults-update.md
-          - name: 类别
+          - name: Category
             href: resources/educationcategory.md
             items:
               - name: 创建类别
@@ -11077,7 +11104,7 @@ items:
                   - name: 角色分配
                     href: resources/unifiedroleassignment.md
                     items:
-                      - name: 列出角色分配
+                      - name: 列表角色分配
                         href: api/rbacapplication-list-roleassignments.md
                       - name: 创建角色分配
                         href: api/rbacapplication-post-roleassignments.md
@@ -11400,7 +11427,7 @@ items:
                             href: api/organization-get.md
                           - name: 更新组织详细信息
                             href: api/organization-update.md
-              - name: 标识保护
+              - name: 身份保护
                 href: resources/identityprotection-root.md
                 items:
                   - name: 风险检测
@@ -11632,7 +11659,7 @@ items:
                             href: api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
                           - name: 删除
                             href: api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
-                      - name: 'Microsoft Authenticator已电话密码登录策略 (已弃) '
+                      - name: 'Microsoft Authenticator无密码电话已弃 (登录策略) '
                         href: resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md
                         items:
                           - name: 获取
@@ -12066,7 +12093,7 @@ items:
                         href: api/accessreviewhistorydefinition-post.md
                       - name: 生成下载 URI
                         href: api/accessreviewhistorydefinition-generatedownloaduri.md
-              - name: '已弃 (访问) '
+              - name: '已弃 (的访问) '
                 href: resources/accessreviews-root.md
                 items:
                   - name: 访问审查
@@ -12528,7 +12555,7 @@ items:
                 href: api/attachment-delete.md
           - name: 类别
             items:
-              - name: 类别
+              - name: Category
                 href: resources/outlookcategory.md
               - name: 列出类别
                 href: api/outlookuser-list-mastercategories.md
@@ -12890,7 +12917,7 @@ items:
                     href: api/personname-update.md
                   - name: 删除
                     href: api/personname-delete.md
-              - name: 备注
+              - name: Notes
                 items:
                   - name: 人员注释
                     href: resources/personannotation.md
@@ -13133,7 +13160,7 @@ items:
                 href: api/opentypeextension-get.md
           - name: 类别
             items:
-              - name: 类别
+              - name: Category
                 href: resources/outlookcategory.md
               - name: 列出类别
                 href: api/outlookuser-list-mastercategories.md
@@ -13493,7 +13520,7 @@ items:
                     href: api/reportroot-getyammergroupsactivitygroupcounts.md
                   - name: 获取活动计数
                     href: api/reportroot-getyammergroupsactivitycounts.md
-          - name: Microsoft Defender for Office 365 安全报告
+          - name: Microsoft Defender for Office 365安全报告
             items:
               - name: 攻击模拟报告
                 displayname: Attack simulation and training
@@ -14708,7 +14735,7 @@ items:
                     href: api/attachment-delete.md
               - name: 类别
                 items:
-                  - name: 类别
+                  - name: Category
                     href: resources/outlookcategory.md
                   - name: 列出类别
                     href: api/outlookuser-list-mastercategories.md

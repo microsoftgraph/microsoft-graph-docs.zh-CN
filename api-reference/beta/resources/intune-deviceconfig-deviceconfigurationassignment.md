@@ -2,15 +2,15 @@
 title: deviceConfigurationAssignment 资源类型
 description: 设备配置分配实体将 AAD 组分配到特定设备配置。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 00eadc21655f9f10534a4b11cfc87a1e795a747f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 50ec850986b907acf91c2c9f0518e9f76d1aa7be
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59101588"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696061"
 ---
 # <a name="deviceconfigurationassignment-resource-type"></a>deviceConfigurationAssignment 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "59101588"
 
 设备配置分配实体将 AAD 组分配到特定设备配置。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceConfigurationAssignments](../api/intune-deviceconfig-deviceconfigurationassignment-list.md)|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) 集合|列出 [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) 对象的属性和关系。|
@@ -38,6 +38,7 @@ ms.locfileid: "59101588"
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|设备配置的分配目标。|
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|设备配置的分配源，直接或直接/策略集。 此属性是只读的。 可取值为：`direct`、`policySets`。|
 |sourceId|String|工作分配的源的标识符。 此属性是只读的。|
+|intent|[deviceConfigAssignmentIntent](../resources/intune-deviceconfig-deviceconfigassignmentintent.md)|管理员应用或删除配置文件的意图。 此属性是只读的。 可取值为：`apply`、`remove`。|
 
 ## <a name="relationships"></a>关系
 无
@@ -61,7 +62,8 @@ ms.locfileid: "59101588"
     "collectionId": "String"
   },
   "source": "String",
-  "sourceId": "String"
+  "sourceId": "String",
+  "intent": "String"
 }
 ```
 

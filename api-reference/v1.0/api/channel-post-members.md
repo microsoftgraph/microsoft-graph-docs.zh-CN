@@ -5,12 +5,12 @@ author: akjo
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 73627c6be3800d1fe9f89b223d75a1b9031cb222
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 015bdc20e1e3fc7e72a422d7a89d8ea5bfa051ea
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60561764"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694871"
 ---
 # <a name="add-member-to-channel"></a>向频道添加成员
 
@@ -26,7 +26,7 @@ ms.locfileid: "60561764"
 |---------|-------------|
 |委派（工作或学校帐户）| ChannelMember.ReadWrite.All |
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application| ChannelMember.ReadWrite.All |
+|应用程序| ChannelMember.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored"} -->
@@ -176,6 +176,8 @@ Content-length: 468
 
 #### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "channel_add_member_3"
@@ -191,6 +193,24 @@ Content-length: 100
     "user@odata.bind": "https://graph.microsoft.com/v1.0/users('jacob@contoso.com')"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/channel-add-member-3-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/channel-add-member-3-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/channel-add-member-3-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/channel-add-member-3-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### <a name="response"></a>响应
