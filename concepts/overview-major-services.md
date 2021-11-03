@@ -4,12 +4,12 @@ description: '借助 Microsoft Graph，可以使用 REST API 和客户端库与 
 author: angelgolfer-ms
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: b262bfd61e59492aefe5214c3f44d517a49bcf47
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9e9a3c25f948a0e0599b40b247ec5790a7b1c424
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59071733"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688645"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Microsoft Graph 中的主要服务和功能
 
@@ -87,6 +87,7 @@ Microsoft Graph 中的一些服务是首次推出，其他服务则是我们所�
 |:-----------|:--------------------|:-----------|:----------------|
 | 云打印 | 通用打印 | 通用打印是基于 Microsoft 365 云的打印基础设施，可以为用户提供易用、丰富且安全的打印体验，并为 IT 人员减少管理方面的工作。 | [使用通用打印 API 进行云打印](universal-print-concept-overview.md) |
 |公司设备和应用管理 | Intune | 注册和配置设备，并管理组织中的移动应用程序。 | [Intune 设备和应用概述](intune-concept-overview.md) |
+| 云电脑（预览版） | Windows 365  | Windows 365 是一项基于云的服务，管理员可以轻松地为组织中的用户设置和管理 Windows 365 云电脑。 单个最终用户可以随时使用其云电脑安全地将其丰富的个性化 Windows 体验从 Microsoft 云流式传输到任何设备。 | [通过 Microsoft Graph API 使用 Windows 365 云电脑](/graph/api/resources/cloudpc-api-overview?view=graph-rest-beta&preserve-view=true) |
 | 设备更新（预览） | 适用于企业的 Windows 更新部署服务 | 可控制对从 Windows 更新网站传送内容的批准、计划、监测和防护。 | [Microsoft Graph 中的 Windows 更新](windowsupdates-concept-overview.md) |
 | 多租户管理（预览） | Microsoft 365 Lighthouse | 允许托管服务提供商 （MSP） 远程管理多个客户租户以进行合规性和威胁检测，并帮助使租户设备处于正常且安全的状态。 | [使用 Microsoft 365 Lighthouse 的多租户管理](managedtenants-concept-overview.md) |
 | 服务运行状况和通信 | Microsoft 365 和 Dynamics 365 服务 | 提供访问健康状态和关于 Microsoft 云服务的消息中心帖子。 使用服务通信 API 的值得注意的示例是 Microsoft 365 管理中心。 | [在 Microsoft Graph 中访问服务健康和通信](service-communications-concept-overview.md) |

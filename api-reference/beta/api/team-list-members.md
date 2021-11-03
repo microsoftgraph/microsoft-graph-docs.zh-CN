@@ -5,12 +5,12 @@ author: AkJo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f6473637010db4b973f6ddb0de480f792cd891ea
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: aeaec55f47de9d007ec06710c7d6dac49cda0715
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696433"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688547"
 ---
 # <a name="list-members-of-team"></a>列出团队成员
 命名空间：microsoft.graph
@@ -281,9 +281,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-4-list-only-those-members-who-are-owners-of-the-team"></a>示例 4：仅列出是团队 *所有者* 的成员
+### <a name="example-4-list-members-by-their-role-in-the-team"></a>示例 4：按成员在团队中的角色将他们列出
 
-以下示例显示了查找附加有 *所有者* 角色的所有成员的请求。
+下面的示例演示如何按成员在团队中的角色列出他们。 此示例列出了具有所有者角色的所有成员。
 
 > [!NOTE]
 > 此功能存在一些已知问题。 有关详细信息，请参阅[已知问题](/graph/known-issues#unable-to-filter-team-members-by-roles)。

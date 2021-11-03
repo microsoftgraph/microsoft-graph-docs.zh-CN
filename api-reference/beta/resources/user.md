@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 13ad5618f62c2d40cc0989e0d824a3fa0053a7e2
-ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
+ms.openlocfilehash: 60aa133d42842aeaa9121151bf2603223eefbff0
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60255974"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60689037"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -40,8 +40,9 @@ ms.locfileid: "60255974"
 | [Update user](../api/user-update.md) | [user](user.md) | 更新 user 对象。 |
 | [Delete user](../api/user-delete.md) | None | 删除 user 对象。 |
 | [Get delta](../api/user-delta.md) | 用户集合 | 获取用户的增量更改。 |
-| [invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md) | 无 | 使发给应用程序的所有用户刷新令牌无效。 |
 | [ChangePassword](../api/user-changepassword.md) | 无 | 更新自己的密码。 |
+| [invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md) | 无 | 使发给应用程序的所有用户刷新令牌无效。 |
+| [validatePassword](../api/user-validatepassword.md)|[passwordValidationInformation](../resources/passwordvalidationinformation.md)|根据组织的密码验证策略验证用户的密码，并报告密码是否有效。 |
 | **应用角色分配**|||
 | [列出 appRoleAssignments](../api/user-list-approleassignments.md) | [appRoleAssignment](approleassignment.md) 集合 | 获取分配给此用户的应用和应用角色。 |
 | [添加 appRoleAssignment](../api/user-post-approleassignments.md) | [appRoleAssignment](approleassignment.md) | 为此用户分配应用角色。 |
@@ -67,10 +68,10 @@ ms.locfileid: "60255974"
 | **目录对象**|||
 | [activateServicePlan](../api/user-activateserviceplan.md) | 无 | 为给定给定用户或`servicePlanId``skuId`许可证和[服务](user.md)。 |
 | [assignLicense](../api/user-assignlicense.md) | [user](user.md) | 为用户添加或删除订阅。还可以启用和禁用与订阅相关的特定计划。 |
-| [checkMemberGroups](../api/user-checkmembergroups.md) | 字符串集合 | 检查组列表中的成员身份。检查是可传递的。 |
+| [checkMemberGroups](../api/user-checkmembergroups.md) | String collection | 检查组列表中的成员身份。检查是可传递的。 |
 | [checkMemberObjects](../api/user-checkmemberobjects.md) | String 集合 | 检查组、目录角色或管理单元对象列表中的成员身份。检查是可传输的。 |
 | [exportPersonalData](../api/user-exportpersonaldata.md) | 无 | 提交公司管理员发出的数据策略操作请求，以导出组织用户的数据。 |
-| [getByIds](../api/directoryobject-getbyids.md) | 字符串集合 | 返回 ID 列表中指定的目录对象。 |
+| [getByIds](../api/directoryobject-getbyids.md) | String collection | 返回 ID 列表中指定的目录对象。 |
 | [getMemberGroups](../api/user-getmembergroups.md) | String collection | 返回用户是其成员的所有组。检查是可传递的。 |
 | [getMemberObjects](../api/user-getmemberobjects.md) | String 集合 | 返回用户所属的所有组、目录角色和管理单元。检查是可传递的。 |
 | [Get transitiveReports](../api/user-get-transitivereports.md) | 整数 | 从 transitiveReports 导航属性获取用户的可传递报表计数。 |

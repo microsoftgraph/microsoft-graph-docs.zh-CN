@@ -2,26 +2,25 @@
 title: Privileged Identity Management - Azure AD
 description: 使用适合于 Azure AD Privileged Identity Management 的 API 管理 Azure Active Directory 角色。
 ms.localizationpriority: high
-author: shauliu1
+author: carolinetempleton
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 045656549e00dce0a97586cfe02564e8271d70ed
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 900038e9c68517ac42ade68218b55d7cc52450f9
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695257"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688778"
 ---
-# <a name="privileged-identity-management---azure-ad"></a>Privileged Identity Management - Azure AD
+# <a name="privileged-identity-management---azure-ad-deprecated"></a>Privileged Identity Management - Azure AD（已弃用）
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-> [!IMPORTANT]
-> 用于管理 Azure AD 角色的 API 对于大多数租户已弃用，但使用较旧版本 Privileged Identity Management (PIM) 的少数租户除外。 有关 PIM 版本的详细信息，请参阅[确定 PIM 的版本](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-activate-role?tabs=new#determine-your-version-of-pim)。 如果你使用的是新版本，并且收到 **TenantEnabledInAadRoleMigration** 错误，你可以等待，直至新 API 在 Azure AD 角色的 [unifiedRoleManagement](/graph/api/resources/unifiedroledefinition?view=graph-rest-beta) API 下可用于 PIM 功能，或者你可以使用 Azure AD 角色的 [Azure 资源](/graph/api/resources/privilegedidentitymanagement-resources?view=graph-rest-beta) API。 若要使用 **Azure 资源** API，请将 `azureResources` 替换为 `provider_id` 的 `aadRoles`，然后将租户 ID 用于 `resource_id`。 建议等待新 API。 新 API 可用后，你将能够继续使用 **Azure 资源** API。 Azure 门户中提供的任何新功能也将通过新 API 专门提供。
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
-以下方法由 PIM 针对 Azure AD 角色提供。 此服务构建于 OData 之上。 若要筛选查询中的结果，请在 URL 中使用标准 OData ``$filter`` 表达式。
+以下方法由 PIM 针对 Azure AD 角色提供。 此服务构建于 OData 之上。 若要筛选查询中的结果，请在 URL 中使用标准 OData `$filter` 表达式。
 
 ## <a name="methods"></a>方法
 

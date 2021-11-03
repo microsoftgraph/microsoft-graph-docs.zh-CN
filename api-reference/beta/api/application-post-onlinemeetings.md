@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: high
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: bcae8fdc688aa80f10cebef3e83a5c6ebdd8798a
-ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
+ms.openlocfilehash: c8a3715d45cf4a4bc79082a1adfe359ad77daa19
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "59995473"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688680"
 ---
 # <a name="create-onlinemeeting"></a>创建 onlineMeeting
 
@@ -227,7 +227,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-3-create-a-live-event-with-a-user-token"></a>示例 3：使用用户令牌创建实时事件
+### <a name="example-3-create-a-microsoft-teams-live-event-with-a-user-token"></a>示例 3：使用用户令牌创建 Microsoft Teams 实时事件
 
 #### <a name="request"></a>请求
 

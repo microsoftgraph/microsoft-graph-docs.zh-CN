@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 5400fa51fd891b03112ed3fa3d1e32ee9c4b2591
-ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
+ms.openlocfilehash: 8b01f21ebb9607172c7faff7cafa979b0e010981
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60255932"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60691545"
 ---
 # <a name="application-resource-type"></a>应用程序资源类型
 
@@ -78,7 +78,7 @@ ms.locfileid: "60255932"
 | displayName | String | 应用程序的显示名称。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`、`startsWith`）、`$search` 和 `$orderBy`。 |
 | groupMembershipClaims | String | 配置应用程序预期的用户或 OAuth 2.0 访问令牌中发出的 `groups` 声明。要设置此属性，请使用以下有效字符串值之一：`None`、`SecurityGroup`（对于安全组和 Azure AD 角色）和 `All`（这将获取登录用户所属的所有安全组、通讯组和 Azure AD 目录角色）。 |
 | id | String | 应用程序的唯一标识符。继承自 [directoryObject](directoryobject.md)。密钥。不可为 null。只读。支持 `$filter`（`eq`、`ne`、`NOT`、`in`）|
-| identifierUris | String collection | URI，用于在应用程序的 Azure AD 租户中标识该应用程序；如果应用程序是多租户的，则用于在已验证的自定义域中标识该应用程序。 有关详细信息，请参阅[应用程序对象和服务主体对象](/azure/active-directory/develop/app-objects-and-service-principals)。 需要多值属性筛选器表达式的`any` 运算符。 不可为空。 <br><br>支持 `$filter`（`eq`、`ne`、`ge`、`le`、`startsWith`）。 |
+| identifierUris | String collection | 也称为应用 ID URI，此值在将应用程序用作资源应用时设置。 identifierUris 充当你将在 API 代码中引用的范围的前缀，必须具有全局唯一性。 可以使用提供的默认值（采用 `api://<application-client-id>` 形式）或指定更具有可读性的 URI（如 `https://contoso.com/api`）。 有关有效 identifierUris 模式和最佳做法的信息，请参阅 [Azure AD 应用程序注册安全性最佳做法](/azure/active-directory/develop/security-best-practices-for-app-registration#appid-uri-configuration)。 不可为 null。 <br><br>支持 `$filter`（`eq`、`ne`、`ge`、`le`、`startsWith`）。|
 | info | [informationalUrl](informationalurl.md) | 应用程序的基本配置文件信息，如应用的市场营销、支持、服务条款和隐私声明 URL。 服务条款和隐私声明通过用户同意体验展示给用户。 有关详细信息，请参阅[如何：为已注册的 Azure AD 应用添加服务条款和隐私声明](/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement)。 <br><br>支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`）。 |
 | isDeviceOnlyAuthSupported | 布尔值 | 指定此应用程序是否支持在无用户的情况下进行设备身份验证。默认值为 `false`。  |
 | isFallbackPublicClient | Boolean | 将回退应用程序类型指定为公共客户端，例如在移动设备上运行的已安装应用程序。 默认值为 `false`，这意味着，回退应用程序类型为机密客户端，例如 Web 应用。 某些情况下，Azure AD 无法确定客户端应用程序类型。 例如，在未指定重定向 URI 的情况下配置它的 [ROPC](https://tools.ietf.org/html/rfc6749#section-4.3) 流。 在这种情况下，Azure AD 将基于此属性的值解释应用程序类型。|
