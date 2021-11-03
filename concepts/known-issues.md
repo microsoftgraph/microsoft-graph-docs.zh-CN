@@ -3,12 +3,12 @@ title: Microsoft Graph 已知问题
 description: 本文介绍了 Microsoft Graph 已知问题。
 author: MSGraphDocsVTeam
 ms.localizationpriority: high
-ms.openlocfilehash: aac341142c5253cb2f7ed8c5d9dc635e2a54f8c9
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 925fa2538496b20b5b22a99823ea80fed8d9b1a0
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60445589"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688098"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
@@ -392,7 +392,11 @@ JSON 批处理请求目前限定为 20 个单独请求。
 若要获取团队列表，请参阅[列出所有团队](teams-list-all-teams.md)和[列出你的团队](/graph/api/user-list-joinedteams)。
 
 ### <a name="unable-to-filter-team-members-by-roles"></a>无法按角色筛选团队成员
-基于角色获取团队成员的筛选查询 `GET /teams/team-id/members?$filter=roles/any(r:r eq 'owner')` 可能无法正常工作。服务器可能以 `BAD REQUEST` 响应。
+角色查询筛选器以及其他筛选器 `GET /teams/team-id/members?$filter=roles/any(r:r eq 'owner') and displayName eq 'dummy'` 可能不起作用。 服务可能使用 `BAD REQUEST` 响应。
+
+### <a name="requests-to-filter-team-members-by-role-require-a-parameter"></a>按角色筛选团队成员的请求需要参数
+
+所有按角色筛选团队成员的请求都要求在请求中使用 _skipToken_ 参数或 _top_ 参数，但不能同时使用两者。 如果两个参数都在请求中传递，则将忽略 _top_ 参数。
 
 ### <a name="some-properties-for-chat-members-might-be-missing-in-the-response-to-a-get-request"></a>GET 请求的响应中可能缺少聊天成员的某些属性
 在某些情况下，聊天中`tenantId` / `email` / `displayName`成员的个人属性可能不会填充到请求`GET /chats/chat-id/members``GET /chats/chat-id/members/membership-id`中。
@@ -412,7 +416,8 @@ Microsoft Graph 允许 **userPrincipalName** 以美元 (`$`) 字符开头。 但
 
 ### <a name="access-to-a-users-profile-photo-is-limited"></a>对用户的个人资料照片的访问受限
 
-只有当用户有邮箱时，才能读取和更新用户的个人资料照片。另外，之前 *可能* 使用 **thumbnailPhoto** 属性（使用 Azure AD Graph 或通过 AD Connect 同步）存储过的任何照片无法再通过 [用户](/graph/api/resources/user)资源的 Microsoft Graph **照片** 属性进行访问。在这种情况下，无法读取或更新照片会生成以下错误：
+只有当用户有邮箱时，才能读取和更新用户的个人资料照片。 另外，之前 *可能* 使用 **thumbnailPhoto** 属性（使用 Azure AD Graph API（已弃用），或通过 AD Connect 同步）存储的所有照片无法再通过 [用户](/graph/api/resources/user)资源的 Microsoft Graph **照片** 属性进行访问。
+在这种情况下，无法读取或更新照片会导致以下错误：
 
 ```javascript
 {
@@ -459,6 +464,6 @@ Microsoft Graph 允许 **userPrincipalName** 以美元 (`$`) 字符开头。 但
 * 请求中指定的查询参数可能会自行失败。 不支持的查询参数以及不支持的查询参数组合的情况就是如此。
 
 
-## <a name="functionality-available-only-in-office-365-rest-or-azure-ad-graph-apis"></a>只有 Office 365 REST 或 Azure AD Graph API 才具有的功能
+## <a name="functionality-available-only-in-office-365-rest-or-azure-ad-graph-apis-deprecated"></a>功能仅在 Office 365 REST 或 Azure AD Graph API 中可用（已弃用）
 
-某些功能尚未在 Microsoft Graph 中提供。如果找不到所需的功能，请使用特定于终结点的 [Office 365 REST API](/previous-versions/office/office-365-api/)。有关 Azure Active Directory，请参考 [将 Azure AD Graph 应用迁移到 Microsoft Graph](./migrate-azure-ad-graph-planning-checklist.md)。
+某些功能尚未在 Microsoft Graph 中提供。 如果找不到所需的功能，请使用特定于终结点的 [Office 365 REST API](/previous-versions/office/office-365-api/)。 有关 Azure AD Graph，请参阅 [将 Azure Active Directory （Azure AD） Graph 应用迁移到 Microsoft Graph](./migrate-azure-ad-graph-overview.md)。
