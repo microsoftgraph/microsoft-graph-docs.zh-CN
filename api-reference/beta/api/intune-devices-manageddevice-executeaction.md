@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2a971c0672c5dc2782c62e5390c859aa7c58b8d1
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 1615ace4f979ad96ae0002ba378509ad4706d691
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60494435"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688659"
 ---
 # <a name="executeaction-action"></a>executeAction 操作
 
@@ -27,9 +27,9 @@ ms.locfileid: "60494435"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.IligedOperation.All|
+|委派（工作或学校帐户）|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.IliiligedOperation.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.IligedOperation.All|
+|应用程序|DeviceManagementManagedDevices.Read.All、DeviceManagementManagedDevices.IliiligedOperation.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -59,6 +59,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |actionName|[managedDeviceRemoteAction](../resources/intune-devices-manageddeviceremoteaction.md)|尚未记录|
 |keepEnrollmentData|布尔|尚未记录|
 |keepUserData|Boolean|尚未记录|
+|persistEsimDataPlan|Boolean|尚未记录|
 |deviceIds|String collection|尚未记录|
 |notificationTitle|String|尚未记录|
 |notificationBody|String|尚未记录|
@@ -80,12 +81,13 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/executeAction
 
 Content-type: application/json
-Content-length: 441
+Content-length: 473
 
 {
   "actionName": "delete",
   "keepEnrollmentData": true,
   "keepUserData": true,
+  "persistEsimDataPlan": true,
   "deviceIds": [
     "Device Ids value"
   ],

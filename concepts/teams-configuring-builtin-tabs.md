@@ -4,12 +4,12 @@ description: 使用 Microsoft Graph API 创建或配置 Microsoft Teams 选项�
 author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 7bb8438cbbfe54143a72ada3375b41e766a2b751
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 43668e76d4ad400193ab33b7925a0bd612f746c5
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59083871"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688091"
 ---
 # <a name="configuring-the-built-in-tab-types-in-microsoft-teams"></a>在 Microsoft Teams 中配置内置选项卡类型
 
@@ -133,3 +133,7 @@ Wiki 选项卡不支持通过 Microsoft Graph。
 对于 SharePoint 页和列表选项卡，`teamsAppId` 为 `2a527703-1f6f-4559-a332-d8a7d288cd88`。
 配置不受支持。
 若你想要配置选项卡，请考虑使用网站选项卡。
+
+## <a name="sharepoint-framework-based-tabs"></a>SharePoint 框架选项卡
+
+使用 Microsoft SharePoint 框架创建的自定义选项卡可以使用 Microsoft Graph，但不支持配置。

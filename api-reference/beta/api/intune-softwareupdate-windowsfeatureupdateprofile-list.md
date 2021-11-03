@@ -2,15 +2,15 @@
 title: 列出 windowsFeatureUpdateProfiles
 description: 列出 windowsFeatureUpdateProfile 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 251fe7b2b50d9c1bf9ffabe427a3df4b269952e7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6f30232f8d3b53d336cb0dd85c50c5695973fb3a
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59041372"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695445"
 ---
 # <a name="list-windowsfeatureupdateprofiles"></a>列出 windowsFeatureUpdateProfiles
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/windowsFeatureUpdateProfil
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 658
+Content-Length: 946
 
 {
   "value": [
@@ -75,6 +75,12 @@ Content-Length: 658
       "displayName": "Display Name value",
       "description": "Description value",
       "featureUpdateVersion": "Feature Update Version value",
+      "rolloutSettings": {
+        "@odata.type": "microsoft.graph.windowsUpdateRolloutSettings",
+        "offerStartDateTimeInUTC": "2017-01-01T00:01:16.3697768-08:00",
+        "offerEndDateTimeInUTC": "2016-12-31T23:58:15.1925199-08:00",
+        "offerIntervalInDays": 3
+      },
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
       "roleScopeTagIds": [

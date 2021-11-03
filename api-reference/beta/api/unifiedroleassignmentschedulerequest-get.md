@@ -1,16 +1,16 @@
 ---
 title: 获取 unifiedRoleAssignmentScheduleRequest
 description: 读取 unifiedRoleAssignmentScheduleRequest 对象的属性和关系。
-author: shauliu1
-localization_priority: Normal
+author: carolinetempleton
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 67724a75a463141508bc56a8f47e3e3414e84d0c
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: f1fa665bf447da07cf175fa939f70c8e0a1eb04f
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453868"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695823"
 ---
 # <a name="get-unifiedroleassignmentschedulerequest"></a>获取 unifiedRoleAssignmentScheduleRequest
 命名空间：microsoft.graph

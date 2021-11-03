@@ -1,15 +1,15 @@
 ---
-title: Microsoft Intune 中的设备管理 - Microsoft Graph API
-description: 列出定义Graph管理设备的适用于 Intune 终结点的 Microsoft (REST) 。
+title: Microsoft Intune中的设备管理 - Microsoft Graph API
+description: 列出定义Graph组织的设备的适用于 Intune (的 Microsoft) REST 终结点 API。
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: 3dffdd3e1b0fe50ac190fbbf3d9a60cf350d3efe
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 33592ed42a2147cb2b8ba861bf96cae88a334f05
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59120400"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696782"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Microsoft Intune 中的设备管理
 
@@ -32,12 +32,9 @@ ms.locfileid: "59120400"
 - [审核事件](intune-auditing-auditevent.md)
 - [审核属性](intune-auditing-auditproperty.md)
 - [审核资源](intune-auditing-auditresource.md)
-- [二进制管理条件表达式](intune-fencing-binarymanagementconditionexpression.md)
-- [二进制管理条件表达式运算符类型](intune-fencing-binarymanagementconditionexpressionoperatortype.md)
 - [批量托管的设备操作结果](intune-devices-bulkmanageddeviceactionresult.md)
 - [机箱类型](intune-devices-chassistype.md)
 - [Chrome o 的 device 属性](intune-devices-chromeosdeviceproperty.md)
-- [循环 geofence 管理条件](intune-fencing-circulargeofencemanagementcondition.md)
 - [云电脑连接问题](intune-devices-cloudpcconnectivityissue.md)
 - [Comanaged 设备摘要](intune-devices-comanageddevicessummary.md)
 - [托管符合条件的设备](intune-devices-comanagementeligibledevice.md)
@@ -143,7 +140,6 @@ ms.locfileid: "59120400"
 - [设备管理模板类型](intune-deviceintent-devicemanagementtemplatetype.md)
 - [设备管理意图值类型](intune-deviceintent-devicemanangementintentvaluetype.md)
 - [设备操作系统摘要](intune-devices-deviceoperatingsystemsummary.md)
-- [设备平台类型](intune-fencing-deviceplatformtype.md)
 - [设备保护概述](intune-devices-deviceprotectionoverview.md)
 - [设备注册状态](intune-devices-deviceregistrationstate.md)
 - [设备 shell 脚本](intune-devices-deviceshellscript.md)
@@ -162,7 +158,6 @@ ms.locfileid: "59120400"
 - [联接类型](intune-devices-jointype.md)
 - [已本地化的通知邮件](intune-notification-localizednotificationmessage.md)
 - [查找设备操作结果](intune-devices-locatedeviceactionresult.md)
-- [位置管理条件](intune-fencing-locationmanagementcondition.md)
 - [登录用户](intune-devices-loggedonuser.md)
 - [丢失模式状态](intune-devices-lostmodestate.md)
 - [Windows 设备的恶意软件状态](intune-devices-malwarestateforwindowsdevice.md)
@@ -176,15 +171,7 @@ ms.locfileid: "59120400"
 - [托管设备远程操作](intune-devices-manageddeviceremoteaction.md)
 - [托管安装程序状态](intune-devices-managedinstallerstatus.md)
 - [管理代理类型](intune-devices-managementagenttype.md)
-- [管理条件](intune-fencing-managementcondition.md)
-- [管理条件表达式](intune-fencing-managementconditionexpression.md)
-- [管理条件表达式模型](intune-fencing-managementconditionexpressionmodel.md)
-- [管理条件表达式字符串](intune-fencing-managementconditionexpressionstring.md)
-- [管理条件语句](intune-fencing-managementconditionstatement.md)
 - [管理状态](intune-devices-managementstate.md)
-- [网络 IPv4 配置管理条件](intune-fencing-networkipv4configurationmanagementcondition.md)
-- [网络 IPv6 配置管理条件](intune-fencing-networkipv6configurationmanagementcondition.md)
-- [网络管理条件](intune-fencing-networkmanagementcondition.md)
 - [通知邮件模板](intune-notification-notificationmessagetemplate.md)
 - [通知模板品牌选项](intune-notification-notificationtemplatebrandingoptions.md)
 - [操作系统升级资格](intune-devices-operatingsystemupgradeeligibility.md)
@@ -215,8 +202,6 @@ ms.locfileid: "59120400"
 - [安全基线模板](intune-deviceintent-securitybaselinetemplate.md)
 - [共享 Apple 设备用户](intune-devices-sharedappledeviceuser.md)
 - [Tuple_2操作type_collection_1执行顺序](intune-esim-tuple_2ofexecutiontype_icollection_1ofoperation.md)
-- [一元管理条件表达式](intune-fencing-unarymanagementconditionexpression.md)
-- [一元管理条件表达式运算符类型](intune-fencing-unarymanagementconditionexpressionoperatortype.md)
 - [更新 Windows 设备帐户操作参数](intune-devices-updatewindowsdeviceaccountactionparameter.md)
 - [用户体验分析应用运行状况应用性能（按应用版本）](intune-devices-userexperienceanalyticsapphealthappperformancebyappversion.md)
 - [用户体验分析应用运行状况应用性能（按应用版本详细信息）](intune-devices-userexperienceanalyticsapphealthappperformancebyappversiondetails.md)
@@ -229,6 +214,14 @@ ms.locfileid: "59120400"
 - [用户体验分析应用运行状况 o 版本性能](intune-devices-userexperienceanalyticsapphealthosversionperformance.md)
 - [用户体验分析 autopilot 设备摘要](intune-devices-userexperienceanalyticsautopilotdevicessummary.md)
 - [用户体验分析基线](intune-devices-userexperienceanalyticsbaseline.md)
+- [用户体验分析电池运行状况应用影响](intune-devices-userexperienceanalyticsbatteryhealthappimpact.md)
+- [用户体验分析电池运行状况容量详细信息](intune-devices-userexperienceanalyticsbatteryhealthcapacitydetails.md)
+- [用户体验分析电池运行状况设备应用影响](intune-devices-userexperienceanalyticsbatteryhealthdeviceappimpact.md)
+- [用户体验分析电池运行状况设备性能](intune-devices-userexperienceanalyticsbatteryhealthdeviceperformance.md)
+- [用户体验分析电池运行状况设备运行时历史记录](intune-devices-userexperienceanalyticsbatteryhealthdeviceruntimehistory.md)
+- [用户体验分析电池运行状况模型性能](intune-devices-userexperienceanalyticsbatteryhealthmodelperformance.md)
+- [用户体验分析电池运行状况操作系统性能](intune-devices-userexperienceanalyticsbatteryhealthosperformance.md)
+- [用户体验分析电池运行状况运行时详细信息](intune-devices-userexperienceanalyticsbatteryhealthruntimedetails.md)
 - [用户体验分析类别](intune-devices-userexperienceanalyticscategory.md)
 - [用户体验分析云标识设备摘要](intune-devices-userexperienceanalyticscloudidentitydevicessummary.md)
 - [用户体验分析云管理设备摘要](intune-devices-userexperienceanalyticscloudmanagementdevicessummary.md)
@@ -260,7 +253,6 @@ ms.locfileid: "59120400"
 - [用户体验分析从任意位置设备运行摘要](intune-devices-userexperienceanalyticsworkfromanywheredevicessummary.md)
 - [用户体验分析从任何硬件准备情况指标开始工作](intune-devices-userexperienceanalyticsworkfromanywherehardwarereadinessmetric.md)
 - [用户体验分析从任何位置工作指标](intune-devices-userexperienceanalyticsworkfromanywheremetric.md)
-- [变量管理条件表达式](intune-fencing-variablemanagementconditionexpression.md)
 - [Windows Defender 产品状态](intune-devices-windowsdefenderproductstatus.md)
 - [Windows Defender 扫描操作结果](intune-devices-windowsdefenderscanactionresult.md)
 - [Windows 设备帐户](intune-devices-windowsdeviceaccount.md)

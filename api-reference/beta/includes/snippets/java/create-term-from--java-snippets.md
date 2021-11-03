@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 36a57d04699392c8ddf7013834e2438efb6732bcb5055b5d28d01b33d342caed
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 91bf7c26a02edc19665e5459069f1fb03b83585f
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57158351"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60718094"
 ---
 ```java
 
@@ -20,7 +20,7 @@ labels.isDefault = true;
 labelsList.add(labels);
 term.labels = labelsList;
 
-graphClient.termStore().sets("{setId}").terms()
+graphClient.termStore().sets("{setId}").children()
     .buildRequest()
     .post(term);
 

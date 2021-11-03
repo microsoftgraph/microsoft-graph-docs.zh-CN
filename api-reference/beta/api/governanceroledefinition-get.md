@@ -1,22 +1,24 @@
 ---
 title: 获取 governanceRoleDefinition
 description: 检索 governanceRoleDefinition 的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: bb13a1ae30059aa0c5b220c7b68f20fb99a95053
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 0966444c8f08510a91afd9290bae2ef1241762ee
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58454057"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696663"
 ---
 # <a name="get-governanceroledefinition"></a>获取 governanceRoleDefinition
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
 
 检索 [governanceRoleDefinition 的属性和关系](../resources/governanceroledefinition.md)。
 
@@ -47,7 +49,7 @@ ms.locfileid: "58454057"
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序 | PrivilegedAccess.Read.AzureADGroup |
 
-除了权限范围之外，此 API 还要求请求者至少对资源角色分配一个权限 [，governanceRoleDefinition](../resources/governanceroledefinition.md) 属于该资源。
+除了权限范围之外，此 API 要求请求程序对 [governanceRoleDefinition](../resources/governanceroledefinition.md) 所属的资源角色分配至少一个权限。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

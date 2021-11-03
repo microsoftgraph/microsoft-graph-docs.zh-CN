@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 50b5e34cb755c41c55c877c4a6a42b551a970ed3
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 32ae5b2459908693112986bc8daa10ae67ce91ef
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58262500"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60690110"
 ---
 ```javascript
 
@@ -19,7 +19,7 @@ const appManagementPolicy = {
  '@odata.id':'https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}'
 };
 
-await client.api('/applications/{id}/appManagementPolicies/$ref')
+await client.api('/servicePrincipals/{id}/appManagementPolicies/$ref')
     .version('beta')
     .post(appManagementPolicy);
 

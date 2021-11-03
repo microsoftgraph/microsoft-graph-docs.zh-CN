@@ -1,16 +1,16 @@
 ---
 title: 列出 unifiedRoleAssignmentSchedules
 description: 获取 unifiedRoleAssignmentSchedule 对象及其属性的列表。
-author: shauliu1
-localization_priority: Normal
+author: carolinetempleton
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: cc692ec06dd1e9abfa6e8c33465cbcc002263413
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: f24fb73a144cd3aa0dfae87a18e22adb5c596f5e
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58454085"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695312"
 ---
 # <a name="list-unifiedroleassignmentschedules"></a>列出 unifiedRoleAssignmentSchedules
 命名空间：microsoft.graph

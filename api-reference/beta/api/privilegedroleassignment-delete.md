@@ -1,22 +1,24 @@
 ---
 title: Delete privilegedRoleAssignment
 description: 删除 privilegedRoleAssignment。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: ecaa47dbcf2d626437ad4c7e7730aa571db163bf
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: b5290846f7d222e2494eb2a3879188160b2cdf5d
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58454050"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696656"
 ---
 # <a name="delete-privilegedroleassignment"></a>Delete privilegedRoleAssignment
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 删除 [privilegedRoleAssignment](../resources/privilegedroleassignment.md)。
 ## <a name="permissions"></a>权限

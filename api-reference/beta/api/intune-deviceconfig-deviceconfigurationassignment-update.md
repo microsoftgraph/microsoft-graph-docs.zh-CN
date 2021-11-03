@@ -2,15 +2,15 @@
 title: 更新 deviceConfigurationAssignment
 description: 更新 deviceConfigurationAssignment 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8021d724fe2b246d5947778958b0490f0d5bacd7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b991a8b4eaa3135b82fdd97264f226f5f59055c0
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59133700"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694321"
 ---
 # <a name="update-deviceconfigurationassignment"></a>更新 deviceConfigurationAssignment
 
@@ -66,6 +66,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|设备配置的分配目标。|
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|设备配置的分配源，直接或直接/策略集。 此属性是只读的。 可取值为：`direct`、`policySets`。|
 |sourceId|String|工作分配的源的标识符。 此属性是只读的。|
+|intent|[deviceConfigAssignmentIntent](../resources/intune-deviceconfig-deviceconfigassignmentintent.md)|管理员应用或删除配置文件的意图。 此属性是只读的。 可取值为：`apply`、`remove`。|
 
 
 
@@ -79,7 +80,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/assignments/{deviceConfigurationAssignmentId}
 Content-type: application/json
-Content-length: 449
+Content-length: 472
 
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationAssignment",
@@ -90,7 +91,8 @@ Content-length: 449
     "collectionId": "Collection Id value"
   },
   "source": "policySets",
-  "sourceId": "Source Id value"
+  "sourceId": "Source Id value",
+  "intent": "remove"
 }
 ```
 
@@ -99,7 +101,7 @@ Content-length: 449
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 498
+Content-Length: 521
 
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationAssignment",
@@ -111,7 +113,8 @@ Content-Length: 498
     "collectionId": "Collection Id value"
   },
   "source": "policySets",
-  "sourceId": "Source Id value"
+  "sourceId": "Source Id value",
+  "intent": "remove"
 }
 ```
 

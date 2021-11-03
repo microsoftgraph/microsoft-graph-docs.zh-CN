@@ -1,16 +1,16 @@
 ---
 title: 创建 unifiedRoleEligibilityScheduleRequest
 description: 创建新的 unifiedRoleEligibilityScheduleRequest 对象。
-author: shauliu1
-localization_priority: Normal
+author: carolinetempleton
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 65106f971c11284a90ec508c6170af473f3398ff
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: b6b1ef4986a1c8e22e5298a35856c72933bdf131
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58513957"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696649"
 ---
 # <a name="create-unifiedroleeligibilityschedulerequest"></a>创建 unifiedRoleEligibilityScheduleRequest
 命名空间：microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "58513957"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|RoleEligibilitySchedule.ReadWrite.Directory、RoleManagement.ReadWrite.Directory |
+|委派（工作或学校帐户）|RoleEligibilitySchedule.ReadWrite.Directory|
 |委派（个人 Microsoft 帐户）|不支持|
 |应用程序|不支持|
 
@@ -47,20 +47,19 @@ POST /roleManagement/directory/roleEligibilityScheduleRequests
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) 对象的 JSON 表示形式。
 
-下表显示创建 [unifiedRoleEligibilityScheduleRequest 时所需的属性](../resources/unifiedroleeligibilityschedulerequest.md)。
+下表显示创建 [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md)时可选的和必需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|action|String|表示角色资格分配上的操作类型。 可能的值有： <ul><li>`AdminAdd`：供管理员向用户或组分配角色资格。</li><li>`AdminExtend`：供管理员扩展即将过期的工作分配。</li><li>`AdminUpdate`：供管理员更改现有角色分配。</li><li>`AdminRenew`：供管理员续订已过期的工作分配。</li><li>`AdminRemove`：供管理员从符合条件的角色中删除用户或组。</li><li>`UserAdd`：供用户激活其符合条件的工作分配。</li><li>`UserExtend`：用户请求延长其即将过期的合格分配。</li><li>`UserRemove`：让用户停用其活动符合条件的分配。</li><li>`UserRenew`：用户请求续订其已过期的合格分配。</li></ul>|
+|action|String|表示角色资格分配上的操作类型。 可能的值有： <ul><li>`AdminAssign`：供管理员向用户或组分配角色资格。</li><li>`AdminExtend`：供管理员扩展即将过期的工作分配。</li><li>`AdminUpdate`：供管理员更改现有角色分配。</li><li>`AdminRenew`：供管理员续订已过期的工作分配。</li><li>`AdminRemove`：供管理员从符合条件的角色中删除用户或组。</li><li>`UserAdd`：供用户激活其符合条件的工作分配。</li><li>`UserExtend`：用户请求延长其即将过期的合格分配。</li><li>`UserRemove`：让用户停用其活动符合条件的分配。</li><li>`UserRenew`：用户请求续订其已过期的合格分配。</li></ul>|
 |appScopeId|String|当分配范围特定于应用时，特定于应用的范围的标识符。 工作分配的范围决定了已授予主体访问权限的资源集。 应用程序作用域是仅由此应用程序定义和理解的范围。 用于 `/` 租户范围的应用范围。 使用 **directoryScopeId** 将作用域限制为特定的目录对象，例如管理单元或所有用户。|
-|directoryScopeId|String|表示工作分配范围的目录对象的标识符。 工作分配的范围决定了已授予主体访问权限的资源集。 目录范围是存储在目录中的多个应用程序可以理解的共享范围。 用于 `/` 租户范围范围。 使用 **appScopeId** 将作用域限制为仅应用程序。|
-|isValidationOnly|Boolean|确定调用是验证还是实际调用的布尔值。 仅在要检查激活是否受 MFA 等其他规则限制，然后再实际提交请求时设置此属性。|
-|justification|String|创建请求时由用户和管理员提供的消息，说明为什么需要该请求。|
+|directoryScopeId|字符串|表示工作分配范围的目录对象的标识符。 工作分配的范围决定了已授予主体访问权限的资源集。 目录范围是存储在目录中的多个应用程序可以理解的共享范围。 用于 `/` 租户范围范围。 使用 **appScopeId** 将作用域限制为仅应用程序。|
+|isValidationOnly|布尔值|确定调用是验证还是实际调用的布尔值。 仅在要检查激活是否受 MFA 等其他规则限制，然后再实际提交请求时设置此属性。|
+|justification|字符串|创建请求时由用户和管理员提供的消息，说明为什么需要该请求。 操作为时可选 `AdminRemove` 。|
 |principalId|String|要向其中授予工作分配的主体的标识符。 例如，用户或组。 对于组，它们必须可分配给角色，即组属性设置为 的 **isAssignableToRole。** `true`|
-|roleDefinitionId|String|分配所针对的 unifiedRoleDefinition 的标识符。 只读。|
-|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|请求的计划角色分配对象。|
-|targetScheduleId|String|资格分配有效的时间段。|
-|ticketInfo|[ticketInfo](../resources/ticketinfo.md)|附加到请求的 ticketInfo 角色分配包括票证编号和票证系统的详细信息。|
+|roleDefinitionId|String|分配所针对的 unifiedRoleDefinition 的标识符。 必需。 只读。|
+|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|请求的计划角色分配对象。 当操作为 时，此属性 **不** 是必需的 `AdminRemove` 。|
+|ticketInfo|[ticketInfo](../resources/ticketinfo.md)|附加到请求的 ticketInfo 角色分配，其中包含票证编号和票证系统的详细信息。 可选。|
 
 
 
@@ -230,7 +229,7 @@ Content-Type: application/json
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。 请求返回响应对象，该对象将以前符合条件的工作分配更改的状态显示为 `Revoked` 。 主体将不再看到其以前符合条件的角色。
+下面介绍响应示例。 请求返回响应对象，该对象将以前符合条件的工作分配更改的状态显示为 `Revoked` 。 主体将不再看到其以前符合条件的角色。
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {

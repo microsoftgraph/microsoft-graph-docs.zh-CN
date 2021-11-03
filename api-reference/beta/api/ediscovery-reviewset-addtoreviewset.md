@@ -1,16 +1,16 @@
 ---
 title: reviewSet： addToReviewSet
-description: 开始将集合从 Microsoft 365 服务添加到审阅集的过程。
+description: 开始将集合从 Microsoft 365添加到审阅集的过程。
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: a1002d8b322876f753f424a1bffeb7ef8a278b35
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 4669f627ac7d78e0090fa6c0977c979ad8e4a86a
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50772911"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60693955"
 ---
 # <a name="reviewset-addtoreviewset"></a>reviewSet： addToReviewSet
 
@@ -18,7 +18,7 @@ ms.locfileid: "50772911"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-开始将集合从 Microsoft 365 服务添加到审阅集的过程。 创建操作后，可以通过从响应标头中检索参数获取 `Location` 操作的状态。 该位置提供将返回 [caseExportOperation](../resources/ediscovery-caseexportoperation.md)的 URL。
+开始将集合从 Microsoft 365添加到审阅集的过程。 创建操作后，可以通过从响应标头中检索参数获取操作 `Location` 的状态。 该位置提供将返回 [caseExportOperation](../resources/ediscovery-caseexportoperation.md)的 URL。
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ ms.locfileid: "50772911"
 |:---|:---|
 |委派（工作或学校帐户）|eDiscovery.Read.All、eDiscovery.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -103,7 +103,6 @@ Content-length: 531
 [!INCLUDE [sample-code](../includes/snippets/java/reviewset-addtoreviewset-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
 
 
 ### <a name="response"></a>响应

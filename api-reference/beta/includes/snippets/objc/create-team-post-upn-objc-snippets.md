@@ -4,8 +4,8 @@ ms.openlocfilehash: 15b20cd942b7a744a0e55f2791712df620c9dc37
 ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60672009"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688517"
 ---
 ```objc
 

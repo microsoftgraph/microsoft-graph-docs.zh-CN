@@ -4,8 +4,8 @@ ms.openlocfilehash: efbdc97c60d7321d8ecf99beaeb7b013739e4ef4
 ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688516"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60672008"
 ---
 ```javascript
 

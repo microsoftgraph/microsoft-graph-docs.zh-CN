@@ -1,16 +1,16 @@
 ---
 title: governanceSubject 资源类型
 description: 表示在 PIM 管理中心中管理的用户、Privileged Identity Management () 。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: c3e37d9391bedba160c67f6c30e2f386a1524a9f
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 5552ba73a20ed4e27b906244d5610f84dccadfe7
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58454232"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695403"
 ---
 # <a name="governancesubject-resource-type"></a>governanceSubject 资源类型
 
@@ -24,9 +24,9 @@ ms.locfileid: "58454232"
 ## <a name="properties"></a>属性
 | 属性  | 类型       |说明|
 |:----------|:----------|:----------|
-|id         |String     | 主题的 ID。|
-|type       |String     |主题的类型。 值可以是 ``User`` 、 ``Group`` 和 ``ServicePrincipal`` 。|
-|displayName|String     |主题显示名称。|
+|id         |字符串     | 主题的 ID。|
+|type       |字符串     |主题的类型。 值可以是 ``User`` 、 ``Group`` 和 ``ServicePrincipal`` 。|
+|displayName|字符串     |主题显示名称。|
 |email      |String     |用户主题的电子邮件地址。 如果主题位于其他类型的中，则为空。|
 |principalName|String   |用户主题的主体名称。 如果主题位于其他类型的中，则为空。|
 

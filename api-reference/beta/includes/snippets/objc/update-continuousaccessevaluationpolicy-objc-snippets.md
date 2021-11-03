@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5de36e8a6505ae664bba8df69a01217f7af02009ef223a45b557b7baffd3cc3b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: abb5c21917bce79c081839094de1f13aa0872365
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57274191"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60718047"
 ---
 ```objc
 
@@ -17,13 +17,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphContinuousAccessEvaluationPolicy *continuousAccessEvaluationPolicy = [[MSGraphContinuousAccessEvaluationPolicy alloc] init];
-NSMutableArray *usersList = [[NSMutableArray alloc] init];
-[usersList addObject: @"88139f01-1f8d-4c06-ad74-a2544cee9aee"];
-[continuousAccessEvaluationPolicy setUsers:usersList];
-NSMutableArray *groupsList = [[NSMutableArray alloc] init];
-[groupsList addObject: @"9972fb3f-7a40-49f5-85f6-129d9dfbd47a"];
-[groupsList addObject: @"ea178055-4713-4d9a-a06c-ff17466b7e77"];
-[continuousAccessEvaluationPolicy setGroups:groupsList];
+[continuousAccessEvaluationPolicy setMigrate: true];
 
 NSError *error;
 NSData *continuousAccessEvaluationPolicyData = [continuousAccessEvaluationPolicy getSerializedDataWithError:&error];

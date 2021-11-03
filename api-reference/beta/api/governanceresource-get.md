@@ -1,22 +1,24 @@
 ---
 title: 获取 governanceResource
 description: 检索 governanceResource 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 366726676acf637d1f2a0ccf6ed82004c0cf4f97
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 79e564c1219417f5f065c41b6f2dba785bb85335
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58452447"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696726"
 ---
 # <a name="get-governanceresource"></a>获取 governanceResource
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
 
 检索 [governanceResource](../resources/governanceresource.md) 对象的属性和关系。
 
@@ -47,7 +49,7 @@ ms.locfileid: "58452447"
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序 | PrivilegedAccess.Read.AzureADGroup |
 
-除了权限范围之外，此 API 要求请求程序至少具有一角色分配资源的权限。
+除了权限范围之外，此 API 要求请求程序至少对资源角色分配一个权限。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -69,7 +71,7 @@ GET /privilegedAccess/azureResources/resources/{id}
 如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [governanceResource](../resources/governanceresource.md) 对象。
 
 ## <a name="example"></a>示例
-本示例演示如何获取订阅 Wingtip Toys - Prod (e5e7d29d-5465-45ac-885f-4716a5ee74b5) 的详细信息。
+此示例演示如何获取订阅 Wingtip Toys - Prod (e5e7d29d-5465-45ac-885f-4716a5ee74b5) 。
 <!-- {
   "blockType": "request",
   "name": "get_governanceresource"

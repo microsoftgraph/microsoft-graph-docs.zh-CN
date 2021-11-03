@@ -1,0 +1,109 @@
+---
+title: 创建 userExperienceAnalyticsBatteryHealthDeviceAppImpact
+description: 创建新的 userExperienceAnalyticsBatteryHealthDeviceAppImpact 对象。
+author: dougeby
+localization_priority: Normal
+ms.prod: intune
+doc_type: apiPageType
+ms.openlocfilehash: c10f186f5623c11eb1f048fb55947f5af88ea688
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60687240"
+---
+# <a name="create-userexperienceanalyticsbatteryhealthdeviceappimpact"></a>创建 userExperienceAnalyticsBatteryHealthDeviceAppImpact
+
+命名空间：microsoft.graph
+
+> **重要提示：** Microsoft Graph /beta 版本下的 API 可能会更改;不支持生产使用。
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+
+创建新的 [userExperienceAnalyticsBatteryHealthDeviceAppImpact](../resources/intune-devices-userexperienceanalyticsbatteryhealthdeviceappimpact.md) 对象。
+
+## <a name="prerequisites"></a>先决条件
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+
+|权限类型|权限（从最低特权到最高特权）|
+|:---|:---|
+|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（个人 Microsoft 帐户）|不支持。|
+|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+
+## <a name="http-request"></a>HTTP 请求
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /deviceManagement/userExperienceAnalyticsBatteryHealthDeviceAppImpact
+```
+
+## <a name="request-headers"></a>请求标头
+|标头|值|
+|:---|:---|
+|Authorization|Bearer &lt;token&gt;。必需。|
+|接受|application/json|
+
+## <a name="request-body"></a>请求正文
+在请求正文中，提供 userExperienceAnalyticsBatteryHealthDeviceAppImpact 对象的 JSON 表示形式。
+
+下表显示创建 userExperienceAnalyticsBatteryHealthDeviceAppImpact 时所需的属性。
+
+|属性|类型|说明|
+|:---|:---|:---|
+|id|字符串|用户体验分析电池设备应用影响对象的唯一标识符。|
+|deviceId|String|设备的唯一标识符，Intune DeviceID 或 SCCM 设备 ID。|
+|appName|String|应用名称。 例如：oltk.exe|
+|appDisplayName|String|应用的显示名称友好应用程序。 例如：Outlook|
+|appPublisher|String|应用发布者。 例如：Microsoft Corporation|
+|isForegroundApp|布尔值|如果用户与应用有活动交互，则其为 true。|
+|batteryUsagePercentage|双精度|在 14 天内，当设备未接通交流电源时，此应用程序使用的电池总电量的百分比。 百分比单位。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|
+
+
+
+## <a name="response"></a>响应
+如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [userExperienceAnalyticsBatteryHealthDeviceAppImpact](../resources/intune-devices-userexperienceanalyticsbatteryhealthdeviceappimpact.md) 对象。
+
+## <a name="example"></a>示例
+
+### <a name="request"></a>请求
+下面是一个请求示例。
+``` http
+POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsBatteryHealthDeviceAppImpact
+Content-type: application/json
+Content-length: 324
+
+{
+  "@odata.type": "#microsoft.graph.userExperienceAnalyticsBatteryHealthDeviceAppImpact",
+  "deviceId": "Device Id value",
+  "appName": "App Name value",
+  "appDisplayName": "App Display Name value",
+  "appPublisher": "App Publisher value",
+  "isForegroundApp": true,
+  "batteryUsagePercentage": 7.333333333333333
+}
+```
+
+### <a name="response"></a>响应
+下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+Content-Length: 373
+
+{
+  "@odata.type": "#microsoft.graph.userExperienceAnalyticsBatteryHealthDeviceAppImpact",
+  "id": "30a55e18-5e18-30a5-185e-a530185ea530",
+  "deviceId": "Device Id value",
+  "appName": "App Name value",
+  "appDisplayName": "App Display Name value",
+  "appPublisher": "App Publisher value",
+  "isForegroundApp": true,
+  "batteryUsagePercentage": 7.333333333333333
+}
+```
+
+
+

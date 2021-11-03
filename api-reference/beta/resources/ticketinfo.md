@@ -1,16 +1,16 @@
 ---
 title: ticketInfo 资源类型
 description: 表示与请求相关的票证角色分配的对象
-author: shauliu1
+author: carolinetempleton
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: b3a330071fa6d17ff510901376d1fb3b0c1c0cdb
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e75cd3f594a515e83abb59d0b476e4d130771875
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59023113"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694902"
 ---
 # <a name="ticketinfo-resource-type"></a>ticketInfo 资源类型
 
@@ -19,7 +19,7 @@ ms.locfileid: "59023113"
 表示与请求相关的票证角色分配的对象
 
 ## <a name="properties"></a>属性
-|属性|类型|描述|
+|属性|类型|说明|
 |:---|:---|:---|
 |ticketNumber|String|票证编号元数据|
 |ticketSystem|String|票证系统元数据|

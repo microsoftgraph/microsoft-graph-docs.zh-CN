@@ -9,8 +9,8 @@ ms.openlocfilehash: 639bec877dcdf1b7781011aba59e0ce3b1cb8ce0
 ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60673695"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696936"
 ---
 # <a name="devicemanagementreports-resource-type"></a>deviceManagementReports 资源类型
 

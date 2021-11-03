@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5c7aac9f6574e743c1b464ea69392b028aba2f8f
-ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
+ms.openlocfilehash: 2d15a661f3ec7e6a6c9510a13961732605a99d19
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58384064"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688066"
 ---
 ```java
 
@@ -16,11 +16,11 @@ accessReviewScheduleDefinition.id = "60860cdd-fb4d-4054-91ba-f75e04444aa6";
 accessReviewScheduleDefinition.displayName = "Test world UPDATED NAME!";
 accessReviewScheduleDefinition.descriptionForAdmins = "Test world";
 accessReviewScheduleDefinition.descriptionForReviewers = "Test world";
-AccessReviewScope scope = new AccessReviewScope();
+AccessReviewQueryScope scope = new AccessReviewQueryScope();
 scope.query = "/groups/b7a059cb-038a-4802-8fc9-b9d1ed0cf11f/transitiveMembers";
 scope.queryType = "MicrosoftGraph";
 accessReviewScheduleDefinition.scope = scope;
-AccessReviewScope instanceEnumerationScope = new AccessReviewScope();
+AccessReviewQueryScope instanceEnumerationScope = new AccessReviewQueryScope();
 instanceEnumerationScope.query = "/groups/b7a059cb-038a-4802-8fc9-b9d1ed0cf11f";
 instanceEnumerationScope.queryType = "MicrosoftGraph";
 accessReviewScheduleDefinition.instanceEnumerationScope = instanceEnumerationScope;

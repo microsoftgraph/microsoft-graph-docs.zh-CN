@@ -4,8 +4,8 @@ ms.openlocfilehash: f369c42179be70ffa9cc8813f21d9e0f85e3003a
 ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688518"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60672011"
 ---
 ```java
 

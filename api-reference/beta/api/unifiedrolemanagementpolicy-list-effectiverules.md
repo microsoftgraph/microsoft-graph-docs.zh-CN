@@ -1,16 +1,16 @@
 ---
 title: 列出 effectiveRules
 description: 从 effectiveRules 导航属性获取 unifiedRoleManagementPolicyRule 资源。
-author: shauliu1
-localization_priority: Normal
+author: carolinetempleton
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ce95b6d702e66655f13fed8cd78c5d5cc9e4a1c5
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: 1a9819ef980f982fc76e104c74b21056c207dd17
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58452433"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694692"
 ---
 # <a name="list-effectiverules"></a>列出 effectiveRules
 命名空间：microsoft.graph

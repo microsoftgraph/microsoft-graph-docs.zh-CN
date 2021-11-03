@@ -2,15 +2,15 @@
 title: 更新 userExperienceAnalyticsOverview
 description: 更新 userExperienceAnalyticsOverview 对象的属性。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b4d3f3b0ca442508660a4aa391a7511f0c16a922
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 543f9c32f66a3e39602ab60ad9bde5b4d2b9d192
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59070284"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695298"
 ---
 # <a name="update-userexperienceanalyticsoverview"></a>更新 userExperienceAnalyticsOverview
 
@@ -60,13 +60,15 @@ PATCH /deviceManagement/userExperienceAnalyticsOverview
 |workFromAnywhereOverallScore|Int32|用户体验分析从任意位置工作总体分数。|
 |appHealthOverallScore|Int32|用户体验分析应用运行状况总体分数。|
 |resourcePerformanceOverallScore|Int32|用户体验分析资源性能总体分数。|
+|batteryHealthOverallScore|Int32|用户体验分析电池运行状况总体分数。|
 |insights|[userExperienceAnalyticsInsight](../resources/intune-devices-userexperienceanalyticsinsight.md) 集合|用户体验分析见解。|
 |state|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析概述的当前运行状况。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
-|deviceBootPerformanceHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析"BootPerformance"类别的当前运行状况。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
+|deviceBootPerformanceHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析"BootPerformance"类别的当前运行状况。 可能的值是：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
 |bestPracticesHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析"BestPractices"类别的当前运行状况。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
-|workFromAnywhereHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析"WorkFromAnywhere"类别的当前运行状况。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
+|workFromAnywhereHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析"WorkFromAnywhere"类别的当前运行状况。 可能的值是：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
 |appHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析"BestPractices"类别的当前运行状况。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
 |resourcePerformanceHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析"ResourcePerformance"类别的当前运行状况。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
+|batteryHealthHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|用户体验分析"BatteryHealth"类别的当前运行状况。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
 
 
 
@@ -80,7 +82,7 @@ PATCH /deviceManagement/userExperienceAnalyticsOverview
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsOverview
 Content-type: application/json
-Content-length: 1005
+Content-length: 1091
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsOverview",
@@ -90,6 +92,7 @@ Content-length: 1005
   "workFromAnywhereOverallScore": 12,
   "appHealthOverallScore": 5,
   "resourcePerformanceOverallScore": 15,
+  "batteryHealthOverallScore": 9,
   "insights": [
     {
       "@odata.type": "microsoft.graph.userExperienceAnalyticsInsight",
@@ -109,7 +112,8 @@ Content-length: 1005
   "bestPracticesHealthState": "insufficientData",
   "workFromAnywhereHealthState": "insufficientData",
   "appHealthState": "insufficientData",
-  "resourcePerformanceHealthState": "insufficientData"
+  "resourcePerformanceHealthState": "insufficientData",
+  "batteryHealthHealthState": "insufficientData"
 }
 ```
 
@@ -118,7 +122,7 @@ Content-length: 1005
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1054
+Content-Length: 1140
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsOverview",
@@ -129,6 +133,7 @@ Content-Length: 1054
   "workFromAnywhereOverallScore": 12,
   "appHealthOverallScore": 5,
   "resourcePerformanceOverallScore": 15,
+  "batteryHealthOverallScore": 9,
   "insights": [
     {
       "@odata.type": "microsoft.graph.userExperienceAnalyticsInsight",
@@ -148,7 +153,8 @@ Content-Length: 1054
   "bestPracticesHealthState": "insufficientData",
   "workFromAnywhereHealthState": "insufficientData",
   "appHealthState": "insufficientData",
-  "resourcePerformanceHealthState": "insufficientData"
+  "resourcePerformanceHealthState": "insufficientData",
+  "batteryHealthHealthState": "insufficientData"
 }
 ```
 

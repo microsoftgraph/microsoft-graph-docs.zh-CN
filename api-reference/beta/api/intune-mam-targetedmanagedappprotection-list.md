@@ -9,8 +9,8 @@ ms.openlocfilehash: a8ff252086bcb1ec966efe1718deb767a98feaab
 ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60674382"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696642"
 ---
 # <a name="list-targetedmanagedappprotections"></a>列出 targetedManagedAppProtections
 

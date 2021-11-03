@@ -416,7 +416,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: 发送邮件
                 href: api/user-sendmail.md
-          - name: 备注
+          - name: Notes
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -1165,7 +1165,7 @@ items:
                 href: api/calendarpermission-delete.md
           - name: 类别
             items:
-              - name: 类别
+              - name: Category
                 href: resources/outlookcategory.md
               - name: 列出类别
                 href: api/outlookuser-list-mastercategories.md
@@ -1350,11 +1350,11 @@ items:
         items:
           - name: 概述
             href: resources/complianceapioverview.md
-          - name: 主体权限请求
+          - name: 使用者权限请求
             items:
               - name: 概述
                 href: resources/subjectrightsrequest-subjectrightsrequestapioverview.md
-              - name: 主体权限请求
+              - name: 使用者权限请求
                 href: resources/subjectrightsrequest.md
                 items:
                   - name: 列出
@@ -1528,7 +1528,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报告
+              - name: 报表
                 items:
                   - name: 按打印机组织
                     items:
@@ -4252,8 +4252,6 @@ items:
                 href: api/educationuser-list-taughtclasses.md
               - name: 创建 rubric
                 href: api/educationuser-post-rubrics.md
-              - name: 列出作业
-                href: api/educationuser-list-assignments.md
           - name: 作业
             href: resources/educationassignment.md
             items:
@@ -4305,7 +4303,7 @@ items:
                 href: api/educationassignmentdefaults-get.md
               - name: 更新工作分配默认值
                 href: api/educationassignmentdefaults-update.md
-          - name: 类别
+          - name: Category
             href: resources/educationcategory.md
             items:
               - name: 创建类别
@@ -4516,6 +4514,13 @@ items:
                     href: api/administrativeunit-get-scopedrolemembers.md
                   - name: 删除作用域角色管理员
                     href: api/administrativeunit-delete-scopedrolemembers.md
+              - name: BitLocker 恢复密钥
+                href: resources/bitlockerrecoverykey.md
+                items:
+                  - name: 列表
+                    href: api/bitlocker-list-recoverykeys.md
+                  - name: 获取
+                    href: api/bitlockerrecoverykey-get.md
               - name: 合同
                 href: resources/contract.md
                 items:
@@ -4821,7 +4826,7 @@ items:
                     href: api/oauth2permissiongrant-delete.md
                   - name: 获取 Delta
                     href: api/oauth2permissiongrant-delta.md
-              - name: 标识保护
+              - name: 身份保护
                 href: resources/identityprotectionroot.md
                 items:
                   - name: 风险检测
@@ -5313,7 +5318,7 @@ items:
                 href: api/attachment-delete.md
           - name: 类别
             items:
-              - name: 类别
+              - name: Category
                 href: resources/outlookcategory.md
               - name: 列出类别
                 href: api/outlookuser-list-mastercategories.md
@@ -5585,7 +5590,7 @@ items:
                 href: api/contact-delta.md
           - name: 类别
             items:
-              - name: 类别
+              - name: Category
                 href: resources/outlookcategory.md
               - name: 列出类别
                 href: api/outlookuser-list-mastercategories.md

@@ -2,15 +2,15 @@
 title: 列出 windowsUpdateForBusinessConfigurations
 description: 列出 windowsUpdateForBusinessConfiguration 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9db457786442d3fb6b6a9c2bc563e21e5f0229df
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 879402714d80b99342810dd618ceb4e1bcbe8a6b
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59070809"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694314"
 ---
 # <a name="list-windowsupdateforbusinessconfigurations"></a>列出 windowsUpdateForBusinessConfigurations
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3283
+Content-Length: 3321
 
 {
   "value": [
@@ -141,7 +141,8 @@ Content-Length: 3283
       "scheduleImminentRestartWarningInMinutes": 7,
       "userPauseAccess": "enabled",
       "userWindowsUpdateScanAccess": "enabled",
-      "updateNotificationLevel": "defaultNotifications"
+      "updateNotificationLevel": "defaultNotifications",
+      "allowWindows11Upgrade": true
     }
   ]
 }

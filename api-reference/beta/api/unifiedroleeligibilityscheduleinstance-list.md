@@ -1,16 +1,16 @@
 ---
 title: 列出 unifiedRoleEligibilityScheduleInstances
 description: 获取 unifiedRoleEligibilityScheduleInstance 对象及其属性的列表。
-author: shauliu1
-localization_priority: Normal
+author: carolinetempleton
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ecbed534fa342df6f3611b14270f6a7beded925a
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: 12dfb9bf0d883608ed8db3cf87e132f228784927
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58452440"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688505"
 ---
 # <a name="list-unifiedroleeligibilityscheduleinstances"></a>列出 unifiedRoleEligibilityScheduleInstances
 命名空间：microsoft.graph

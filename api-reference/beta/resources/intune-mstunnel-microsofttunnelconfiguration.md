@@ -2,15 +2,15 @@
 title: microsoftTunnelConfiguration 资源类型
 description: 表示设置集合Microsoft Tunnel实体
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a5e6ee3f7e14078b2fe5e345d362d0f0d5c9200b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4c76889a97288eb9723d4e965f0bb0971c581002
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59080930"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60685623"
 ---
 # <a name="microsofttunnelconfiguration-resource-type"></a>microsoftTunnelConfiguration 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "59080930"
 
 表示设置集合Microsoft Tunnel实体
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 microsoftTunnelConfigurations](../api/intune-mstunnel-microsofttunnelconfiguration-list.md)|[microsoftTunnelConfiguration](../resources/intune-mstunnel-microsofttunnelconfiguration.md) 集合|列出 [microsoftTunnelConfiguration 对象的属性和](../resources/intune-mstunnel-microsofttunnelconfiguration.md) 关系。|
@@ -35,18 +35,19 @@ ms.locfileid: "59080930"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|MicrosoftTunnelConfiguration 的 ID|
-|displayName|String|MicrosoftTunnelConfiguration 的 显示名称|
+|displayName|字符串|MicrosoftTunnelConfiguration 的显示名称|
 |说明|String|MicrosoftTunnelConfiguration 的说明|
-|network|String|将用于为客户端分配虚拟地址的子网|
+|network|字符串|将用于为客户端分配虚拟地址的子网|
 |dnsServers|String collection|客户端将使用的 DNS 服务器|
-|defaultDomainSuffix|String|客户端将使用的默认域附录|
+|defaultDomainSuffix|字符串|客户端将使用的默认域附录|
 |routesInclude|String collection|服务器将路由的路由|
 |routesExclude|String collection|服务器不会路由的路由子集|
-|splitDNS|String collection|使用提供的 dns 服务器解析的域|
+|splitDNS|String 集合|使用提供的 dns 服务器解析的域|
 |listenPort|Int32|TCP 和 UPD 将在服务器上侦听的端口|
 |advancedSettings|[keyValuePair](../resources/intune-mstunnel-keyvaluepair.md) 集合|可应用于服务器的其他设置|
 |lastUpdateDateTime|DateTimeOffset|上次更新 MicrosoftTunnelConfiguration 的时间|
 |roleScopeTagIds|String collection|此实体实例的范围标记列表。|
+|disableUDPConnections|布尔值|设置 DisableUDPConnections 时，客户端和 VPN 服务器不会使用 DTLS 连接来命名数据。|
 
 ## <a name="relationships"></a>关系
 无
@@ -90,7 +91,8 @@ ms.locfileid: "59080930"
   "lastUpdateDateTime": "String (timestamp)",
   "roleScopeTagIds": [
     "String"
-  ]
+  ],
+  "disableUDPConnections": true
 }
 ```
 

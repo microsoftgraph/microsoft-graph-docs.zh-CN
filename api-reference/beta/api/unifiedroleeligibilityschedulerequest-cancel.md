@@ -9,8 +9,8 @@ ms.openlocfilehash: e579ee8e0c5342a5bcf784a44915f5fc03ccbbfd
 ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60674375"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688792"
 ---
 # <a name="unifiedroleeligibilityschedulerequest-cancel"></a>unifiedRoleEligibilityScheduleRequest：cancel
 命名空间：microsoft.graph

@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 5889af1cda3560a6b1b244443ee77226dfe57f03
-ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
+ms.openlocfilehash: 0c271bbbbe37fe35e6d6a21ec5a232ca5f78a9f2
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "59996506"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694843"
 ---
 # <a name="virtualendpoint-resource-type"></a>virtualEndpoint 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "59996506"
 
 使用云电脑 API 为组织的员工预配和管理虚拟桌面。 将它与 [Intune API](../resources/intune-graph-overview.md) 结合使用，以管理物理和虚拟终结点。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 |方法|返回类型|说明|
 |:---|:---|:---|
@@ -38,12 +38,13 @@ ms.locfileid: "59996506"
 |[创建 cloudPcUserSetting](../api/virtualendpoint-post-usersettings.md)|[cloudPcUserSetting](../resources/cloudpcusersetting.md)|创建新的 cloudPcUserSetting 对象。|
 |[列出 auditEvents](../api/virtualendpoint-list-auditevents.md)|[cloudPcAuditEvent](../resources/cloudpcauditevent.md) 集合|列出 [cloudPcAuditEvent 对象的属性和](../resources/cloudpcauditevent.md) 关系。|
 |[列出 supportedRegions](../api/virtualendpoint-list-supportedregions.md)|[cloudPcSupportedRegion](../resources/cloudpcsupportedregion.md) 集合|列出 [cloudPcSupportedRegion](../resources/cloudpcsupportedregion.md) 对象的属性和关系。|
+|[List servicePlans](../api/virtualendpoint-list-serviceplans.md)|[cloudPcServicePlan](../resources/cloudpcserviceplan.md) 集合|列出 [cloudPcServicePlan 对象的属性和](../resources/cloudpcserviceplan.md) 关系。|
 
 ## <a name="properties"></a>属性
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|虚拟终结点 ID 的唯一标识符。只读。|
+|id|String|虚拟终结点 ID 的唯一标识符。只读。|
 
 ## <a name="relationships"></a>关系
 
@@ -56,6 +57,7 @@ ms.locfileid: "59996506"
 |userSettings|[cloudPcUserSetting](../resources/cloudpcusersetting.md) 集合|云电脑用户设置。 |
 |auditEvents|[cloudPcAuditEvent](../resources/cloudpcauditevent.md) 集合|云电脑审核事件。|
 |supportedRegions|[cloudPcSupportedRegion](../resources/cloudpcsupportedregion.md) 集合|云电脑支持的区域。|
+|servicePlans|[cloudPcServicePlan](../resources/cloudpcserviceplan.md) 集合|云电脑服务计划。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

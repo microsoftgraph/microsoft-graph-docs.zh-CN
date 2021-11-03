@@ -1,22 +1,24 @@
 ---
 title: 列出 privilegedApproval
 description: 检索 privilegedapproval 对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: e3fdd22825da7264541e90e58f8f6580a3ab5b3e
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: d827c15efa7f33819d1abbc67046695fcae31284
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453259"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694734"
 ---
 # <a name="list-privilegedapproval"></a>列出 privilegedApproval
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 检索 privilegedapproval 对象的列表。
 

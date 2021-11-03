@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 17d8d75a1437f5dc31bb8c0a78f1107c5d719084ed461323310bcf18909b39f0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d1b33c7a2ee92b75ade5703eb3bd32d95f79968e
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57328931"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60718046"
 ---
 ```javascript
 
@@ -17,8 +17,7 @@ const client = Client.init(options);
 
 const continuousAccessEvaluationPolicy = {
   '@odata.type': '#microsoft.graph.continuousAccessEvaluationPolicy',
-  users: [ '88139f01-1f8d-4c06-ad74-a2544cee9aee' ],
-  groups: [ '9972fb3f-7a40-49f5-85f6-129d9dfbd47a', 'ea178055-4713-4d9a-a06c-ff17466b7e77']
+  migrate: true
 };
 
 await client.api('/identity/continuousAccessEvaluationPolicy')

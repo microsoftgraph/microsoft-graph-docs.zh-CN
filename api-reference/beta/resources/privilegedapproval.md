@@ -1,27 +1,29 @@
 ---
 title: privilegedApproval 资源类型
-description: 表示在角色Privileged Identity Management请求的审批。
-localization_priority: Normal
+description: 表示在角色获取Privileged Identity Management请求的审批。
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 62291980357d5b4051293113b774f59bd85c875c
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: c2c6ef9ec7ca62b3ccc85cb14f848497b2858dce
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453924"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60687681"
 ---
-# <a name="privilegedapproval-resource-type"></a>privilegedApproval 资源类型
+# <a name="privilegedapproval-resource-type-deprecated"></a>privilegedApproval 资源类型 (已弃) 
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示在角色Privileged Identity Management请求的审批。
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+
+表示 PIM 角色Privileged Identity Management (请求) 审批。
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -37,18 +39,18 @@ ms.locfileid: "58453924"
 |approvalDuration|期限||
 |approvalState|approvalState| 可取值为：`pending`、`approved`、`denied`、`aborted`、`canceled`。|
 |approvalType|String||
-|approverReason|String||
+|approverReason|字符串||
 |endDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`2014-01-01T00:00:00Z`|
 |id|String| 只读。|
 |requestorReason|String||
-|roleId|字符串||
+|roleId|String||
 |startDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`2014-01-01T00:00:00Z`|
 |userId|String||
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|roleInfo|[privilegedRole](privilegedrole.md)| 只读。可为 NULL。|
+|roleInfo|[privilegedRole](privilegedrole.md)| 只读。可为 Null。|
 |request|[privilegedRoleAssignmentRequest](privilegedroleassignmentrequest.md)| 只读。 此角色分配对象的请求|
 
 ## <a name="json-representation"></a>JSON 表示形式

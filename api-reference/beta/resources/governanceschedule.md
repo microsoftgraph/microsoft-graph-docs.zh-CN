@@ -1,22 +1,24 @@
 ---
 title: governanceSchedule 资源类型
 description: '表示 governanceRoleAssignmentRequest 的计划。 对于角色分配请求，计划控制何时执行 角色分配 操作、何时停止 角色分配 以及执行 角色分配 操作的频率。 '
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 76f62186cca8e093459e0802497bab49dfbb0652
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 87abccdfac02bea7a3158feb786b39aad23fac3f
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58454099"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694265"
 ---
 # <a name="governanceschedule-resource-type"></a>governanceSchedule 资源类型
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 表示 [governanceRoleAssignmentRequest 的计划](../resources/governanceroleassignmentrequest.md)。 对于角色分配请求，计划控制何时执行 角色分配 操作、何时停止 角色分配 以及执行 角色分配 操作的频率。
 

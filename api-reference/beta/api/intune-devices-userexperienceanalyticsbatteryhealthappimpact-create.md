@@ -9,8 +9,8 @@ ms.openlocfilehash: 9465c8608df06181ffdf72268b91c14ff69421e7
 ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696019"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60676818"
 ---
 # <a name="create-userexperienceanalyticsbatteryhealthappimpact"></a>创建 userExperienceAnalyticsBatteryHealthAppImpact
 
@@ -54,9 +54,9 @@ POST /deviceManagement/userExperienceAnalyticsBatteryHealthAppImpact
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|用户体验分析电池应用影响对象的唯一标识符。|
-|activeDevices|Int32|14 天期间使用该应用的活动设备数。 有效值 -2147483648 2147483647|
+|activeDevices|Int32|14 天期间使用该应用的活动设备数。 有效值 -2147483648 to 2147483647|
 |appName|String|应用名称。 例如：oltk.exe|
-|appDisplayName|String|应用的显示名称友好应用程序。 例如：Outlook|
+|appDisplayName|String|适用于显示名称用户友好应用程序。 例如：Outlook|
 |appPublisher|String|应用发布者。 例如：Microsoft Corporation|
 |isForegroundApp|布尔值|如果用户与应用有活动交互，则其为 true。|
 |batteryUsagePercentage|双精度|当设备未接通交流电源时，此应用程序在 14 天内在租户中所有设备上计算出的总电池电源百分比。 百分比单位。 有效值 -1.79769313486232E+308 到 1.79769313486232E+308|

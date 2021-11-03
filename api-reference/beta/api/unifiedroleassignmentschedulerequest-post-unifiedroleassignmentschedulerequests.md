@@ -1,30 +1,30 @@
 ---
 title: 创建 unifiedRoleAssignmentScheduleRequest
 description: 创建新的 unifiedRoleAssignmentScheduleRequest 对象。
-author: shauliu1
-localization_priority: Normal
+author: carolinetempleton
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 85c013c4515b90a400d3ecf986ff5c475783b045
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: d08e6b7d5e8cec8fa42d4be5b6f0eb5f8f201cb0
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58513524"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695816"
 ---
 # <a name="create-unifiedroleassignmentschedulerequest"></a>创建 unifiedRoleAssignmentScheduleRequest
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的 [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) 对象。 此操作允许管理员和用户添加、删除、扩展或续订分配。 若要运行此请求，调用用户必须强制执行多重身份验证 (MFA) ，并且必须在要求他们进行 MFA 的会话中运行查询。 请参阅 [启用每用户 Azure AD 多重身份验证，以确保登录事件的安全](/azure/active-directory/authentication/howto-mfa-userstates)。
+创建新的 [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) 对象。 此操作允许管理员和用户添加、删除、扩展或续订分配。 若要运行此请求，调用用户必须强制执行多重身份验证 (MFA) ，并且必须在要求他们进行 MFA 的会话中运行查询。 请参阅[Enable per-user Azure AD Multi-Factor Authentication to secure sign-in events](/azure/active-directory/authentication/howto-mfa-userstates)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|RoleAssignmentSchedule.ReadWrite.Directory、RoleManagement.ReadWrite.Directory|
+|委派（工作或学校帐户）|RoleAssignmentSchedule.ReadWrite.Directory|
 |委派（个人 Microsoft 帐户）|不支持|
 |应用程序|不支持|
 
@@ -53,15 +53,15 @@ POST /roleManagement/directory/roleAssignmentScheduleRequests
 |:---|:---|:---|
 |id|String|unifiedRoleAssignmentScheduleRequest 的唯一标识符。 键，不可为 null，只读。|
 |action|String|表示对项目执行的操作角色分配。 可能的值有： <ul><li>`AdminAssign`：供管理员向用户或组分配角色。</li><li>`AdminRemove`：供管理员从角色中删除用户或组。</li><li> `AdminUpdate`：供管理员更改现有角色分配。</li><li>`AdminExtend`：供管理员扩展即将过期的工作分配。</li><li>`AdminRenew`：供管理员续订已过期的工作分配。</li><li>`SelfActivate`：供用户激活其工作分配。</li><li>`SelfDeactivate`：供用户停用其活动分配。</li><li>`SelfExtend`：用户请求延长其过期分配。</li><li>`SelfRenew`：用户请求续订其已过期的工作分配。</li></ul>
-|principalId|String|要向其中授予工作分配的主体的标识符。|
-|roleDefinitionId|String|分配所针对的 unifiedRoleDefinition 的标识符。 只读。|
-|directoryScopeId|String|表示工作分配范围的目录对象的标识符。 工作分配的范围决定了已授予主体访问权限的资源集。 目录范围是存储在目录中的多个应用程序可以理解的共享范围。 用于 `/` 租户范围范围。 使用 **appScopeId** 将作用域限制为仅应用程序。 |
-|appScopeId|String|当分配范围特定于应用时，特定于应用的范围的标识符。 工作分配的范围决定了已授予主体访问权限的资源集。 应用程序作用域是仅由此应用程序定义和理解的范围。 用于 `/` 租户范围的应用范围。 使用 **directoryScopeId** 将作用域限制为特定目录对象，例如管理单元。|
-|isValidationOnly|Boolean|指定调用是验证调用还是实际调用。 仅在要检查激活是否受 MFA 等其他规则限制，然后再实际提交请求时设置此属性。|
-|targetScheduleId|String|附加到工作分配的计划对象的 ID。|
+|principalId|字符串|要向其中授予工作分配的主体的标识符。|
+|roleDefinitionId|字符串|分配所针对的 unifiedRoleDefinition 的标识符。 只读。|
+|directoryScopeId|字符串|表示工作分配范围的目录对象的标识符。 工作分配的范围决定了已授予主体访问权限的资源集。 目录作用域是存储在目录中的多个应用程序可以理解的共享范围。 用于 `/` 租户范围范围。 使用 **appScopeId** 将作用域限制为仅应用程序。 |
+|appScopeId|String|当分配范围特定于应用时，特定于应用的范围的标识符。 工作分配的范围决定了已授予主体访问权限的资源集。 应用程序作用域是仅由此应用程序定义和理解的范围。 用于 `/` 租户范围的应用范围。 使用 **directoryScopeId** 将作用域限制为特定的目录对象，例如管理单元。|
+|isValidationOnly|布尔值|指定调用是验证调用还是实际调用。 仅在要检查激活是否受 MFA 等其他规则限制，然后再实际提交请求时设置此属性。|
+|targetScheduleId|字符串|附加到工作分配的计划对象的 ID。|
 |justification|String|创建请求时由用户和管理员提供的消息，说明为什么需要该请求。|
 |scheduleInfo|[requestSchedule](../resources/requestschedule.md)|请求的计划角色分配对象。|
-|ticketInfo|[ticketInfo](../resources/ticketinfo.md)|附加到请求的 ticketInfo 角色分配包括票证编号和票证系统的详细信息。|
+|ticketInfo|[ticketInfo](../resources/ticketinfo.md)|附加到请求的 ticketInfo 角色分配，其中包含票证编号和票证系统的详细信息。|
 
 ## <a name="response"></a>响应
 
@@ -75,7 +75,7 @@ POST /roleManagement/directory/roleAssignmentScheduleRequests
 
 #### <a name="request"></a>请求
 
-在下面的请求中，管理员创建一个请求，以将标识的角色分配给 id `fdd7a751-b60b-444a-984c-02652fe8fa1c` 标识的主体 `07706ff1-46c7-4847-ae33-3003830675a1` 。 其角色的作用域是租户中所有目录对象，并且分配是永久性的，即不会过期。
+在下面的请求中，管理员创建一个请求，以将标识的角色分配给由 `fdd7a751-b60b-444a-984c-02652fe8fa1c` id 标识的主体 `07706ff1-46c7-4847-ae33-3003830675a1` 。 其角色的作用域是租户中所有目录对象，并且分配是永久性的，即不会过期。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

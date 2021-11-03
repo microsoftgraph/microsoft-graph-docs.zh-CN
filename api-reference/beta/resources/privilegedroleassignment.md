@@ -1,27 +1,29 @@
 ---
 title: privilegedRoleAssignment 资源类型
-description: '表示特定角色分配的特权级别。 '
-localization_priority: Normal
+description: '表示特定角色分配的特权权限。 '
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 5589f15c06cd91dca7f23a88cb3140bdc8c0e36c
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 2786b2a7c2d231c8d3f87f8b538358e45b3fd3bc
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58454078"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694172"
 ---
-# <a name="privilegedroleassignment-resource-type"></a>privilegedRoleAssignment 资源类型
+# <a name="privilegedroleassignment-resource-type-deprecated"></a>privilegedRoleAssignment 资源类型 (已弃) 
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示特定角色分配的特权级别。 
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+
+表示特定角色分配的特权权限。 
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|

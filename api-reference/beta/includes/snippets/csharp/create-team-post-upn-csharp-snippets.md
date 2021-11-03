@@ -4,8 +4,8 @@ ms.openlocfilehash: 3b082711bebb6901ec7b26c64d86fd25c6432cc5
 ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688519"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60672010"
 ---
 ```csharp
 

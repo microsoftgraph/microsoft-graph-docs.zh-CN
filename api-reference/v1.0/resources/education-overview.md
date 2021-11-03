@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: mmast-msft
 ms.prod: education
 doc_type: conceptualPageType
-ms.openlocfilehash: 29d50f4628bbca80e7c40e032cc5d9010155f3b7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d7d4fe8b5040221cc7d54569af1cfc87429ef852
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59007241"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688967"
 ---
 # <a name="working-with-education-apis-in-microsoft-graph"></a>在 Microsoft Graph 中使用教育 API
 
@@ -92,7 +92,6 @@ client_id={clientId}&state=12345&redirect_uri={redirectUrl}
 - [提交作业](../api/educationsubmission-submit.md)
 - [取消提交作业](../api/educationsubmission-unsubmit.md)
 - [将成绩和反馈返回给学生](../api/educationsubmission-return.md)
-- [获取作业详细信息](../api/educationuser-list-assignments.md)
 
 以下是与作业相关的教育 API 的一些常见用例。
 

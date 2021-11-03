@@ -4,12 +4,12 @@ description: 列出支持Graph多个工作流的适用于 Intune 终结点的 Mi
 ms.localizationpriority: medium
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 86a4466538c88ca758cb91ff541e880b8722cd69
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 03a663f540ab51ea6f76274968b0ec52593dc597
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59074806"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60687548"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>共享资源Microsoft Intune
 
@@ -29,6 +29,7 @@ Intune Graph之间共享以下资源：
 - [Android 企业始终使用 VPN 程序包类型](intune-shared-androidenterprisealwaysonvpnpackagetype.md)
 - [Android 管理的应用保护](intune-shared-androidmanagedappprotection.md)
 - [Android 托管应用商店应用分配设置](intune-shared-androidmanagedstoreappassignmentsettings.md)
+- [Android 托管应用商店自动更新模式](intune-shared-androidmanagedstoreautoupdatemode.md)
 - [证书目标存储](intune-shared-certificatedestinationstore.md)
 - [证书存储](intune-shared-certificatestore.md)
 - [证书有效期范围](intune-shared-certificatevalidityperiodscale.md)
@@ -79,7 +80,7 @@ Intune Graph之间共享以下资源：
 - [移动应用疑难解答事件](intune-shared-mobileapptroubleshootingevent.md)
 - [所有者类型](intune-shared-ownertype.md)
 - [代理域](intune-shared-proxieddomain.md)
-- [报告](intune-shared-report.md)
+- [Report](intune-shared-report.md)
 - [报表根目录](intune-shared-reportroot.md)
 - [RGB 颜色](intune-shared-rgbcolor.md)
 - [按帐户类型运行](intune-shared-runasaccounttype.md)

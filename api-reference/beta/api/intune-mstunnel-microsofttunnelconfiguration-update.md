@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2b619ca01f1535b527ce7e52bac7e2a1024ad2a3
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 26c52bfdc399bb71b962c9fe40e49d60e07a0cc1
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60489358"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688799"
 ---
 # <a name="update-microsofttunnelconfiguration"></a>更新 microsoftTunnelConfiguration
 
@@ -55,18 +55,19 @@ PATCH /deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/microsoftTu
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|MicrosoftTunnelConfiguration 的 ID|
-|displayName|String|MicrosoftTunnelConfiguration 的显示名称|
+|displayName|String|MicrosoftTunnelConfiguration 的 显示名称|
 |说明|String|MicrosoftTunnelConfiguration 的说明|
 |network|String|将用于为客户端分配虚拟地址的子网|
 |dnsServers|String 集合|客户端将使用的 DNS 服务器|
-|defaultDomainSuffix|String|客户端将使用的默认域附录|
-|routesInclude|String collection|服务器将路由的路由|
+|defaultDomainSuffix|字符串|客户端将使用的默认域附录|
+|routesInclude|String 集合|服务器将路由的路由|
 |routesExclude|String collection|服务器不会路由的路由子集|
-|splitDNS|String collection|使用提供的 dns 服务器解析的域|
+|splitDNS|String 集合|使用提供的 dns 服务器解析的域|
 |listenPort|Int32|TCP 和 UPD 将在服务器上侦听的端口|
 |advancedSettings|[keyValuePair](../resources/intune-mstunnel-keyvaluepair.md) 集合|可应用于服务器的其他设置|
 |lastUpdateDateTime|DateTimeOffset|上次更新 MicrosoftTunnelConfiguration 的时间|
 |roleScopeTagIds|String collection|此实体实例的范围标记列表。|
+|disableUDPConnections|布尔值|设置 DisableUDPConnections 时，客户端和 VPN 服务器不会使用 DTLS 连接来命名数据。|
 
 
 
@@ -80,7 +81,7 @@ PATCH /deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/microsoftTu
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/microsoftTunnelConfigurations/{microsoftTunnelConfigurationId}
 Content-type: application/json
-Content-length: 748
+Content-length: 782
 
 {
   "@odata.type": "#microsoft.graph.microsoftTunnelConfiguration",
@@ -111,7 +112,8 @@ Content-length: 748
   "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
+  ],
+  "disableUDPConnections": true
 }
 ```
 
@@ -120,7 +122,7 @@ Content-length: 748
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 797
+Content-Length: 831
 
 {
   "@odata.type": "#microsoft.graph.microsoftTunnelConfiguration",
@@ -152,7 +154,8 @@ Content-Length: 797
   "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
+  ],
+  "disableUDPConnections": true
 }
 ```
 

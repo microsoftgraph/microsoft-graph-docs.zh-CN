@@ -1,27 +1,27 @@
 ---
 title: 使用 Windows Update for Business 部署服务部署功能更新
-description: 使用 Windows Update for Business 部署服务，Windows Azure AD 租户中的设备部署功能更新。
+description: 使用 Windows Update for Business 部署服务，可以将 Windows 功能更新部署到 Azure AD 租户中的设备。
 author: Alice-at-Microsoft
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: 9bc32b4f49a2cb985d1b19f49e72d2c373bb4e6e
-ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
+ms.openlocfilehash: 11dbc40cb405b7b673fa02ba4845ced6e57c9986
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60255939"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696040"
 ---
 # <a name="deploy-a-feature-update-using-the-windows-update-for-business-deployment-service"></a>使用 Windows Update for Business 部署服务部署功能更新
 
-使用 Windows Update for Business 部署服务，Windows Azure AD 租户中的设备部署更新。 如今，部署服务[支持部署Windows 10](windowsupdates-deployments.md)更新和加速安全更新。 本主题重点介绍功能更新的部署。 有关部署快速安全更新的信息，请参阅 [D部署加速安全更新](windowsupdates-deploy-expedited-update.md)。
+使用 Windows Update for Business 部署服务，可以将 Windows 更新部署到 Azure AD 租户中的设备。 如今，部署服务[支持部署](windowsupdates-deployments.md)Windows 10更新和加速安全更新。 本主题重点介绍功能更新的部署。 有关部署快速安全更新的信息，请参阅 [D部署加速安全更新](windowsupdates-deploy-expedited-update.md)。
 
-将功能更新部署到设备时，Windows更新会向设备提供指定的更新（如果设备尚未收到更新）。 例如，如果将 Windows 10 功能更新版本 20H2 部署到已注册功能更新管理且当前位于较旧版本的 Windows 10 的设备，则设备将更新到版本 20H2。 如果设备已位于或高于 20H2 版本，它将保持其当前版本。 如果设备未注册功能更新管理，则此操作不会影响设备。
+将功能更新部署到设备时，Windows更新会向设备提供指定的更新（如果设备尚未收到更新）。 例如，如果将 Windows 10 功能更新版本 20H2 部署到在功能更新管理中注册并且当前位于较旧版本的 Windows 10 的设备，则设备将更新到版本 20H2。 如果设备已位于或高于 20H2 版本，它将保持其当前版本。 如果设备未注册功能更新管理，则此操作不会影响设备。
 
 只要设备仍在功能更新管理中注册，设备就不会从 Windows Update 接收任何其他功能更新，除非使用部署服务显式部署。
 
 > [!IMPORTANT]
-> 通过使用 Windows Update for Business 部署服务将设备升级到 Windows 11 (，将部署的版本参数设置为"Windows 11， 版本 21H2") ，你同意在将此操作系统应用于设备时， (1) 通过批量许可购买了适用的 Windows 许可证，或你有权购买的 (2) 绑定你的组织并代表其接受相关 Microsoft 软件许可条款，可在此处找到[：Microsoft 软件许可条款](https://www.microsoft.com/Useterms)。
+> 通过使用适用于 Business 的 Windows Windows 11 (更新部署服务，将部署的版本参数设置为"Windows 11，版本 21H2") ，即表示你同意在将此操作系统应用于设备 (1) 通过批量许可购买适用的 Windows 许可证，或者你为 (2) uthorized to bind your organization and arehalf on itshalf accepting the relevant Microsoft Software License Terms to be found here： [Microsoft Software License Terms](https://www.microsoft.com/Useterms).
 
 ## <a name="prerequisites"></a>先决条件
 
@@ -32,7 +32,7 @@ ms.locfileid: "60255939"
 
 你可以查询部署服务目录，获取可以部署中的内容部署到设备的更新列表。
 
-下面是查询部署服务可部署的所有Windows 10功能更新的示例。
+下面是一个查询部署服务Windows 10部署功能更新的示例。
 
 ### <a name="request"></a>请求
 
@@ -72,7 +72,7 @@ Content-Type: application/json
 
 [部署](/graph/api/resources/windowsupdates-deployment)指定要部署的内容、如何以及何时部署内容以及目标设备。 创建部署后，将自动将部署访问群体创建为关系。
 
-下面是使用配置部署计划及监视规则的可选设置创建功能[更新部署](windowsupdates-schedule-deployment.md)[的示例](windowsupdates-manage-monitoring-rules.md)。 目标设备在下一步中指定。
+下面是使用配置部署计划及监视规则的可选设置创建功能[更新部署](windowsupdates-schedule-deployment.md)[的示例](windowsupdates-manage-monitoring-rules.md)。 [默认情况下](windowsupdates-manage-safeguards.md) ，将应用安全措施。 目标设备在下一步中指定。
 
 ### <a name="request"></a>请求
 
@@ -95,7 +95,6 @@ Content-type: application/json
         "monitoring": {
             "monitoringRules": [
                 {
-                    "@odata.type": "#microsoft.graph.windowsUpdates.monitoringRule",
                     "signal": "rollback",
                     "threshold": 5,
                     "action": "pauseDeployment"
@@ -149,6 +148,7 @@ Content-Type: application/json
                 }
             ]
         },
+        "safeguard": null,
         "userExperience": null
     },
     "createdDateTime": "String (timestamp)",
@@ -162,7 +162,7 @@ Content-Type: application/json
 
 在将设备添加到部署访问群体的成员或排除集合时 (会自动向服务注册设备 (也就是说，如果 [azureADDevice](/graph/api/resources/windowsupdates-azureaddevice) 对象) 。
 
-以下示例演示如何将 Azure AD 设备添加为部署访问群体的成员。
+以下示例演示如何将Azure AD添加为部署访问群体的成员。
 
 ### <a name="request"></a>请求
 
@@ -200,5 +200,5 @@ HTTP/1.1 202 Accepted
 
 ## <a name="after-a-deployment"></a>部署后
 
-在最初向部署访问群体分配的所有设备都提供更新后，由于设备连接等因素，并非所有设备都启动或完成了更新。 只要部署仍然存在，Windows只要重新连接，更新就会继续为分配的设备提供更新。
+在最初向部署访问群体分配的所有设备都提供更新后，由于设备连接等因素，并非所有设备都启动或完成了更新。 只要部署仍然存在，Windows只要重新连接，Update 就会继续为分配的设备提供更新。
 

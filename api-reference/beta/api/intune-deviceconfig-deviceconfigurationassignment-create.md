@@ -2,15 +2,15 @@
 title: 创建 deviceConfigurationAssignment
 description: 创建新的 deviceConfigurationAssignment 对象。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c66689ca85f480bc7c3f24f7a573d9ba5e5a3c24
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 86b8024426112a161d70c0ac459651efe670bde4
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59122535"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694335"
 ---
 # <a name="create-deviceconfigurationassignment"></a>创建 deviceConfigurationAssignment
 
@@ -66,6 +66,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|设备配置的分配目标。|
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|设备配置的分配源，直接或直接/策略集。 此属性是只读的。 可取值为：`direct`、`policySets`。|
 |sourceId|String|工作分配的源的标识符。 此属性是只读的。|
+|intent|[deviceConfigAssignmentIntent](../resources/intune-deviceconfig-deviceconfigassignmentintent.md)|管理员应用或删除配置文件的意图。 此属性是只读的。 可取值为：`apply`、`remove`。|
 
 
 
@@ -79,7 +80,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/assignments
 Content-type: application/json
-Content-length: 449
+Content-length: 472
 
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationAssignment",
@@ -90,7 +91,8 @@ Content-length: 449
     "collectionId": "Collection Id value"
   },
   "source": "policySets",
-  "sourceId": "Source Id value"
+  "sourceId": "Source Id value",
+  "intent": "remove"
 }
 ```
 
@@ -99,7 +101,7 @@ Content-length: 449
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 498
+Content-Length: 521
 
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationAssignment",
@@ -111,7 +113,8 @@ Content-Length: 498
     "collectionId": "Collection Id value"
   },
   "source": "policySets",
-  "sourceId": "Source Id value"
+  "sourceId": "Source Id value",
+  "intent": "remove"
 }
 ```
 

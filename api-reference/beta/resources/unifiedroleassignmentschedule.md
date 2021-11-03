@@ -1,16 +1,16 @@
 ---
 title: unifiedRoleAssignmentSchedule 资源类型
-description: 表示通过 Azure AD 角色分配活动应用程序操作Privileged Identity Management。
-author: shauliu1
-localization_priority: Normal
+description: 表示通过活动活动角色分配操作Azure AD Privileged Identity Management。
+author: carolinetempleton
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 8e528fe7fd6508d8cc5c3eac23f1796731c50d5f
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: 5fc9e1777dd3cb5510aa52bb8c6a6df25b4189a5
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453210"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696678"
 ---
 # <a name="unifiedroleassignmentschedule-resource-type"></a>unifiedRoleAssignmentSchedule 资源类型
 
@@ -18,11 +18,11 @@ ms.locfileid: "58453210"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示通过 Azure AD 角色分配活动Privileged Identity Management。 **unifiedRoleAssignmentSchedule** 由 [unifiedRoleAssignmentScheduleRequest](unifiedroleassignmentschedulerequest.md)创建，用于实例化 [unifiedRoleAssignmentScheduleInstance](unifiedroleassignmentscheduleinstance.md)。 此资源支持列表和获取操作以检索计划，以便查看当前和将来的工作分配。
+表示活动活动角色分配到Azure AD Privileged Identity Management。 **unifiedRoleAssignmentSchedule** 由 [unifiedRoleAssignmentScheduleRequest](unifiedroleassignmentschedulerequest.md)创建，用于实例化 [unifiedRoleAssignmentScheduleInstance](unifiedroleassignmentscheduleinstance.md)。 此资源支持列表和获取操作以检索计划，以便查看当前和将来的工作分配。
 
 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 unifiedRoleAssignmentSchedules](../api/unifiedroleassignmentschedule-list.md)|[unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) 集合|获取 [unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) 对象及其属性的列表。|
@@ -40,10 +40,10 @@ ms.locfileid: "58453210"
 |id|String|unifiedRoleAssignmentSchedule 的唯一标识符。 键，不可为 null，只读。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
 |memberType|字符串|工作分配的成员身份类型。 它可以是 `Inherited` `Direct` 、、 或 `Group` 。|
 |modifiedDateTime|DateTimeOffset|上次更新计划的时间。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
-|principalId|String| 要授予分配的主体的 Objectid。 可以是组或用户。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)。 <br> 支持 `$filter`（`eq`）。|
+|principalId|字符串| 要授予工作分配的主体的 Objectid。 可以是组或用户。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)。 <br> 支持 `$filter`（`eq`）。|
 |roleDefinitionId|字符串|分配所针对的 unifiedRoleDefinition 的 ID。 只读。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)。 <br> 支持 `$filter`（`eq`）。|
 |scheduleInfo|[requestSchedule](../resources/requestschedule.md)|请求的计划角色分配对象。|
-|状态|String|的状态 `roleAssignmentSchedule` 。 它可以包含与状态相关的消息，如 `Provisioned` `Revoked` `Pending Provisioning` 、、 和 `Pending Approval` 。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)。<br> 支持 `$filter`（`eq`）。|
+|status|String|的状态 `roleAssignmentSchedule` 。 它可以包含与状态相关的消息，如 `Provisioned` `Revoked` `Pending Provisioning` 、、 和 `Pending Approval` 。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)。<br> 支持 `$filter`（`eq`）。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -52,7 +52,7 @@ ms.locfileid: "58453210"
 |activeInstance|[unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md)|将弃用。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
 |appScope|[appScope](../resources/appscope.md)|只读属性，当分配范围特定于应用时，具有特定于应用的范围的详细信息。 包含实体。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
 |directoryScope|[directoryObject](../resources/directoryobject.md)|引用作为工作分配范围的目录对象的属性。 提供，以便调用方可以在获取目录对象的同时获取 `$expand` 角色分配。 只读。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
-|principal|[directoryObject](../resources/directoryobject.md)|引用通过请求获取角色分配主体的属性。 提供此权限，以便调用方可以在获取安全主体的同时获取 `$expand` 角色分配。 只读。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
+|principal|[directoryObject](../resources/directoryobject.md)|引用通过请求获取角色分配主体的属性。 提供此权限，以便调用方可以使用 与获取 角色分配 `$expand` 同时使用。 只读。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
 |roleDefinition|[unifiedRoleDefinition](../resources/unifiedroledefinition.md)|指示分配所针对的 roleDefinition 的属性。 提供，以便调用方可以在获取角色定义的同时使用 `$expand` 角色分配。 roleDefinition.Id 自动展开。 继承自 [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
 
 ## <a name="json-representation"></a>JSON 表示形式

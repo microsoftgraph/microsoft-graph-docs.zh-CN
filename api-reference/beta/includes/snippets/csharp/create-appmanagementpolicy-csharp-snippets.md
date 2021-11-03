@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 7825ccefb122e353a392dca05841188c2a07a719
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 92fa36a806ac02bf0c825a03ffd178701ae51663
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58262386"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60690105"
 ---
 ```csharp
 
@@ -30,7 +30,28 @@ var appManagementPolicy = new AppManagementPolicy
             {
                 RestrictionType = AppCredentialRestrictionType.PasswordLifetime,
                 MaxLifetime = new Duration("P4DT12H30M5S"),
-                RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2018-10-19T10:37:00Z")
+                RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2014-10-19T10:37:00Z")
+            },
+            new PasswordCredentialConfiguration
+            {
+                RestrictionType = AppCredentialRestrictionType.SymmetricKeyAddition,
+                MaxLifetime = null,
+                RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2019-10-19T10:37:00Z")
+            },
+            new PasswordCredentialConfiguration
+            {
+                RestrictionType = AppCredentialRestrictionType.SymmetricKeyLifetime,
+                MaxLifetime = new Duration("P4D"),
+                RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2014-10-19T10:37:00Z")
+            }
+        },
+        KeyCredentials = new List<KeyCredentialConfiguration>()
+        {
+            new KeyCredentialConfiguration
+            {
+                RestrictionType = AppKeyCredentialRestrictionType.AsymmetricKeyLifetime,
+                MaxLifetime = new Duration("P90D"),
+                RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2014-10-19T10:37:00Z")
             }
         }
     }

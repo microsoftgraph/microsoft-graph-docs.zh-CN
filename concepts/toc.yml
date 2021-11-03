@@ -234,6 +234,8 @@ items:
                 href: windowsupdates-deploy-expedited-update.md
               - name: 安排部署
                 href: windowsupdates-schedule-deployment.md
+              - name: 管理安全措施
+                href: windowsupdates-manage-safeguards.md
               - name: 管理监视规则
                 href: windowsupdates-manage-monitoring-rules.md
           - name: 多租户管理（预览）

@@ -2,15 +2,15 @@
 title: sourceCollection 资源类型
 description: 表示一个电子数据展示集合，通常称为搜索。
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: aca8b0dcf89f00ada59b093d1164104da0885578
-ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
+ms.openlocfilehash: 13d98f74ce4ce0c734f4950ec028b038a9819a30
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52080468"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60687990"
 ---
 # <a name="sourcecollection-resource-type"></a>sourceCollection 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "52080468"
 
 表示一个电子数据展示集合，通常称为搜索。 有关详细信息，请参阅 [电子数据展示中收集](/microsoft-365/compliance/collecting-data-for-ediscovery)。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 |方法|返回类型|说明|
 |:---|:---|:---|
@@ -41,13 +41,13 @@ ms.locfileid: "52080468"
 
 |属性|类型|说明|
 |:---|:---|:---|
-|contentQuery|String|KQL 中的查询字符串 (关键字查询语言) 查询。 有关详细信息，请参阅内容 [搜索和电子数据展示的关键字查询和搜索条件](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions)。  您可以通过使用与值配对的字段来优化搜索;例如 *，subject："Quarterly Financials" AND Date>=06/01/2016 AND Date<=07/01/2016*|
+|contentQuery|String|KQL 中的查询字符串 (关键字查询语言) 查询。 有关详细信息，请参阅内容 [搜索和电子数据展示的关键字查询和搜索条件](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions)。 您可以通过使用与值配对的字段来优化搜索;例如 *，subject："Quarterly Financials" AND Date>=06/01/2016 AND Date<=07/01/2016*。|
 |createdBy|[identitySet](../resources/identityset.md)|创建 **sourceCollection 的用户**。|
 |createdDateTime|DateTimeOffset|创建 **sourceCollection** 的日期和时间。|
-|dataSourceScopes|microsoft.graph.ediscovery.dataSourceScopes|指定此参数时，集合将跨越整个工作负荷的服务。 可能的值是 `none` `allTenantMailboxes` `allTenantSites` ：、、、、。 `allCaseCustodians` `allCaseNoncustodialDataSources`|
-|说明|String|**sourceCollection 的说明**|
-|displayName|String|**sourceCollection 显示名称**|
-|id|String| **sourceCollection 的** ID。 只读。 |
+|dataSourceScopes|microsoft.graph.ediscovery.dataSourceScopes|指定此参数时，集合将跨越整个工作负荷的服务。 可取值为：`none`、`allTenantMailboxes`、`allTenantSites`、`allCaseCustodians`、`allCaseNoncustodialDataSources`。|
+|说明|String|**sourceCollection 的说明**。|
+|displayName|String|**sourceCollection** 的 显示名称 。|
+|id|字符串| **sourceCollection 的** ID。 只读。 |
 |lastModifiedBy|[identitySet](../resources/identityset.md)|上次修改 **sourceCollection 的用户**。|
 |lastModifiedDateTime|DateTimeOffset|上次修改 **sourceCollection** 的日期和时间。|
 

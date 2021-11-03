@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ffcb43099fb6063a91ba2c94c7e51d584867f4a5c0e37b69cc3fc7b23a1e3582
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 372b45d547a4c9e534e42a7c9da21c36f3180e7c
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57103823"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60718096"
 ---
 ```csharp
 
@@ -24,7 +24,7 @@ var term = new Microsoft.Graph.TermStore.Term
     }
 };
 
-await graphClient.TermStore.Sets["{termStore.set-id}"].Terms
+await graphClient.TermStore.Sets["{termStore.set-id}"].Children
     .Request()
     .AddAsync(term);
 

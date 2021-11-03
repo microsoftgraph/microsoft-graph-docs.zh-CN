@@ -9,8 +9,8 @@ ms.openlocfilehash: d9b55fb92c205e191ead3a61d01137d4c3dc7338
 ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696523"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60668852"
 ---
 # <a name="devicemanagementconfigurationsetting-resource-type"></a>deviceManagementConfigurationSetting 资源类型
 

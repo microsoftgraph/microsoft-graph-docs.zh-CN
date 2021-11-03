@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8093754724e2e241cd88751d0f491da3512a2d2f
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 1add14daca15b810d4ee1a93385dbbf8ace6ffb2
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60492565"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696810"
 ---
 # <a name="get-macosdevicefeaturesconfiguration"></a>获取 macOSDeviceFeaturesConfiguration
 
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 6694
+Content-Length: 6823
 
 {
   "value": {
@@ -203,6 +203,7 @@ Content-Length: 6694
       "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
       "modeCredentialUsed": "Mode Credential Used value",
       "usernameLableCustom": "Username Lable Custom value",
+      "usernameLabelCustom": "Username Label Custom value",
       "userSetupDelayed": true,
       "signInHelpText": "Sign In Help Text value",
       "kerberosAppsInBundleIdACLIncluded": true,
@@ -210,6 +211,9 @@ Content-Length: 6694
       "credentialsCacheMonitored": true,
       "singleSignOnExtensionPreferredKDCs": [
         "Single Sign On Extension Preferred KDCs value"
+      ],
+      "preferredKDCs": [
+        "Preferred KDCs value"
       ],
       "tlsForLDAPRequired": true
     },

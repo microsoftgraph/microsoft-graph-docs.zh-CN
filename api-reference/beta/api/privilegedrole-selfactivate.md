@@ -1,22 +1,24 @@
 ---
 title: privilegedRole： selfActivate
 description: 激活分配给请求者的角色。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: db885decd61dfb7b09cdcc7084ef357300a1a830
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 3eb7ba6e02c10923c6289daf12e5063664285436
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453742"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695830"
 ---
 # <a name="privilegedrole-selfactivate"></a>privilegedRole： selfActivate
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 激活分配给请求者的角色。
 
@@ -53,7 +55,7 @@ POST /privilegedRoles/{id}/selfActivate
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |reason|string|可选。 有关此角色激活原因的说明。|
-|duration|string|可选。 有效值可以是 (激活)  (、角色) 的默认激活持续时间或用于指定激活小时数的双 ```min``` ```default``` 精度值。 指定持续时间不能长于角色设置中角色的激活持续时间。 |
+|duration|string|可选。 有效值可以是 (最短激活) 、 (角色) 的默认激活持续时间或用于指定激活小时数的双 ```min``` ```default``` 精度值。 指定持续时间不能长于角色设置中角色的激活持续时间。 |
 |ticketNumber|string|可选。 用于跟踪此角色激活的票证编号。|
 |ticketSystem|string|可选。 票证系统。|
 

@@ -2,15 +2,15 @@
 title: userExperienceAnalyticsBaseline 资源类型
 description: 用户体验分析基线实体包含比较用户体验分析分数的基线值。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f3426303818afc77dd167a041a3f1af0100a86c4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a929c43f0aad551ad80d9321bbaa1882d0c14201
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59141198"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60689051"
 ---
 # <a name="userexperienceanalyticsbaseline-resource-type"></a>userExperienceAnalyticsBaseline 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "59141198"
 
 用户体验分析基线实体包含比较用户体验分析分数的基线值。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 userExperienceAnalyticsBaselines](../api/intune-devices-userexperienceanalyticsbaseline-list.md)|[userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md) 集合|列出 [userExperienceAnalyticsBaseline 对象的属性和](../resources/intune-devices-userexperienceanalyticsbaseline.md) 关系。|
@@ -49,6 +49,7 @@ ms.locfileid: "59141198"
 |resourcePerformanceMetrics|[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)|用户体验分析资源性能指标。|
 |appHealthMetrics|[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)|用户体验分析应用运行状况指标。|
 |workFromAnywhereMetrics|[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)|用户体验分析从任何指标开始工作。|
+|batteryHealthMetrics|[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)|用户体验分析电池运行状况指标。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

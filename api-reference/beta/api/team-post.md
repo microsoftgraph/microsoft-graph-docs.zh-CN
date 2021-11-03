@@ -9,8 +9,8 @@ ms.openlocfilehash: abf5d0f44344099959eaf2883c2611a7c00ddc02
 ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688520"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60672007"
 ---
 # <a name="create-team"></a>创建团队
 

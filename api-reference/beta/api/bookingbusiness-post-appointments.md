@@ -1,16 +1,16 @@
 ---
 title: 创建 bookingAppointment
 description: 为指定的 bookingbusiness 创建新的 bookingAppointment。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 02ad305da8c4d42e6d63e8d511380a707c806b2a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 101ca7e6733d9b54f973d3b9a63dab346f69bf56
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047887"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60693962"
 ---
 # <a name="create-bookingappointment"></a>创建 bookingAppointment
 
@@ -18,7 +18,7 @@ ms.locfileid: "52047887"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-为指定的[bookingbusiness 创建新的 bookingAppointment。](../resources/bookingappointment.md) [](../resources/bookingbusiness.md)
+为指定的[bookingBusiness](../resources/bookingbusiness.md)创建新的[bookingAppointment。](../resources/bookingappointment.md)
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -37,17 +37,17 @@ POST /bookingBusinesses/{id}/appointments
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {code}。 必需。|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [bookingAppointment](../resources/bookingappointment.md) 对象的 JSON 表示形式。
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在 `201, Created` 响应正文中返回 响应代码和 [bookingAppointment](../resources/bookingappointment.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [bookingAppointment](../resources/bookingappointment.md) 对象。
 
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 下面展示了示例请求。 此约会不涉及预订特定员工。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -88,6 +88,8 @@ Content-type: application/json
     "customerName":"Jordan Miller",
     "customerNotes":"Please be on time.",
     "customerPhone":"213-555-0199",
+    "customerTimeZone":"America/Chicago",
+    "smsNotificationsEnabled":true,
     "end":{
         "@odata.type":"#microsoft.graph.dateTimeTimeZone",
         "dateTime":"2018-05-01T12:30:00.0000000+00:00",
@@ -103,6 +105,7 @@ Content-type: application/json
     "invoiceStatus@odata.type":"#microsoft.graph.bookingInvoiceStatus",
     "invoiceStatus":"open",
     "invoiceUrl":"theInvoiceUrl",
+    "isLocationOnline": true,
     "optOutOfCustomerEmail":false,
     "postBuffer":"PT10M",
     "preBuffer":"PT5M",
@@ -184,9 +187,11 @@ Content-type: application/json
 
 ---
 
-在请求正文中，提供 [bookingAppointment](../resources/bookingappointment.md) 对象的 JSON 表示形式。
-##### <a name="response"></a>响应
-下面展示了示例响应。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+### <a name="response"></a>响应
+下面展示了示例响应。 
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -200,10 +205,14 @@ Content-type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40M365B489948.onmicrosoft.com')/appointments/$entity",
     "id": "AAMkADc7zF4J0AAA8v_KnAAA=",
     "selfServiceAppointmentId": "00000000-0000-0000-0000-000000000000",
+    "isLocationOnline": true,
+    "joinWebUrl":"https://teams.microsoft.com/l/meetup-join/19%3ameeting_MTlhZTE3MDUtODk0Yy00MGZkLTlhNzktN2FmYTk3MDUxNmE2%40thread.v2/0?context=%7b%22Tid%22%3a%22995fa18c-b557-4694-8d07-b89779d6dc77%22%2c%22Oid%22%3a%22d4d260ab-989d-490e-b121-e2066391807a%22%7d",
+    "smsNotificationsEnabled":true,
     "customerId": "7ed53fa5-9ef2-4f2f-975b-27447440bc09",
     "customerName": "Jordan Miller",
     "customerEmailAddress": "jordanm@contoso.com",
     "customerPhone": "213-555-0199",
+    "customerTimeZone":"America/Chicago",
     "customerNotes": null,
     "serviceId": "57da6774-a087-4d69-b0e6-6fb82c339976",
     "serviceName": "Catered bento",

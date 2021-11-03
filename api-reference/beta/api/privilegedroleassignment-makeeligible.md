@@ -1,16 +1,16 @@
 ---
 title: privilegedRoleAssignment：makeEligible
 description: 使角色分配合格。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 26aa8ba7effdeb5aee270d02bec60ee2e7a950dd
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 5b659648741f24896bba2212a7e11a38d562a181
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453595"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694720"
 ---
 # <a name="privilegedroleassignment-makeeligible"></a>privilegedRoleAssignment：makeEligible
 
@@ -18,7 +18,9 @@ ms.locfileid: "58453595"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使角色分配合格。 如果角色分配在调用之前已符合条件，则它不执行任何操作。 如果角色分配是永久性的，并且请求者与目标用户不同，角色分配将变为合格状态，并且将为目标用户停用角色。 如果请求者是目标用户，并且角色是安全管理员或特权角色管理员，则角色将在默认过期后激活。
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+
+使角色分配合格。 如果角色分配在调用之前已符合条件，则不执行任何操作。 如果角色分配是永久性的，并且请求者与目标用户不同，角色分配将变为合格状态，并且将为目标用户停用角色。 如果请求者是目标用户，并且角色是安全管理员或特权角色管理员，则角色将在默认过期后激活。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

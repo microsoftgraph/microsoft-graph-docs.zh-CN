@@ -1,22 +1,24 @@
 ---
 title: 列出 governanceRoleSettings
 description: 检索资源上的 governanceRoleSettings 集合。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 16d1b395e60370365a885ce097606f7c22914570
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 14b0aff7b8ecc5617334ae9593f6b9ae64dbb516
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453959"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688869"
 ---
 # <a name="list-governancerolesettings"></a>列出 governanceRoleSettings
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
 
 检索资源上的 [governanceRoleSettings](../resources/governancerolesetting.md) 集合。
 

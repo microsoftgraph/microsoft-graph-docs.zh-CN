@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: conceptualPageType
-ms.openlocfilehash: a7fb85436e00fbb8c98c3b2a13a03e87ed2e25b6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f5ec1ea04008542e1705ea12da7e5701bfd211e9
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59137635"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688385"
 ---
 # <a name="working-with-groups-in-microsoft-graph"></a>在 Microsoft Graph 中使用组
 
@@ -72,7 +72,7 @@ Microsoft 365 组的强大之处在于它的协作本质，它是项目或团队
 
 安全组用于控制用户对资源的访问。 通过检查用户是否是安全组的成员，应用可以在用户尝试访问应用中的某些安全资源时决定是否授权。 安全组的成员可以是用户和其他安全组。
 
-启用邮件的安全组的使用方式与安全组基本相同，不同之处在于添加了组的共享邮箱功能。 无法通过 API 创建启用邮件的安全组，但其他组操作仍适用。  启用邮件的安全组为只读。 若要了解更多信息，请参阅 Exchange 文章[管理启用邮件的安全组](/Exchange/recipients/mail-enabled-security-groups)。
+启用邮件的安全组的使用方式与安全组基本相同，不同之处在于添加了组的共享邮箱功能。 启用邮件的安全组为只读。 若要了解更多信息，请参阅 Exchange 文章[管理启用邮件的安全组](/Exchange/recipients/mail-enabled-security-groups)。
 
 ### <a name="security-group-example"></a>安全组示例
 

@@ -1,15 +1,15 @@
 ---
 title: Microsoft Intune 中的设备配置 - Microsoft Gaaph API
-description: 列出定义Graph组织的设备的 Microsoft (REST (REST) 。
+description: 列出定义Graph组织的设备的 Microsoft (API (REST) REST 终结点。
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: 3d0b6983ad4a4b54e774c767ebf8d1c18d2823d5
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 106aed065f0480fcec01a8f680e8ee33001d5e45
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60482943"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696068"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Microsoft Intune 中的设备配置
 
@@ -209,6 +209,7 @@ ms.locfileid: "60482943"
 - [设备合规性设置状态](intune-deviceconfig-devicecompliancesettingstate.md)
 - [设备合规性用户概述](intune-deviceconfig-devicecomplianceuseroverview.md)
 - [设备合规性用户状态](intune-deviceconfig-devicecomplianceuserstatus.md)
+- [设备配置分配意图](intune-deviceconfig-deviceconfigassignmentintent.md)
 - [设备配置分配](intune-deviceconfig-deviceconfigurationassignment.md)
 - [设备配置冲突摘要](intune-deviceconfig-deviceconfigurationconflictsummary.md)
 - [设备配置设备概述](intune-deviceconfig-deviceconfigurationdeviceoverview.md)
@@ -580,7 +581,7 @@ ms.locfileid: "60482943"
 - [Windows 应用启动布局磁贴大小](intune-deviceconfig-windowsappstartlayouttilesize.md)
 - [Windows 证书配置文件基础](intune-deviceconfig-windowscertificateprofilebase.md)
 - [Windows Defender 高级威胁防护配置](intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration.md)
-- [Windows Defender 防篡改保护选项](intune-deviceconfig-windowsdefendertamperprotectionoptions.md)
+- [Windows防篡改保护选项](intune-deviceconfig-windowsdefendertamperprotectionoptions.md)
 - [Windows 传递优化配置](intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md)
 - [Windows 传递优化模式](intune-deviceconfig-windowsdeliveryoptimizationmode.md)
 - [Windows边缘展台类型](intune-deviceconfig-windowsedgekiosktype.md)

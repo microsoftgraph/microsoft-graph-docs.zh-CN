@@ -1,22 +1,22 @@
 ---
 title: unifiedRoleManagementPolicyAssignment 资源类型
 description: unifiedRoleManagementPolicyAssignment 将策略分配给特定作用域和角色定义。
-author: shauliu1
+author: carolinetempleton
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: e4b322501027c0ecace9f468fc057b142f0a61de
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 14c034a3cc843575d99436be7f4cb271290bf374
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59046475"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695056"
 ---
 # <a name="unifiedrolemanagementpolicyassignment-resource-type"></a>unifiedRoleManagementPolicyAssignment 资源类型
 
 unifiedRoleManagementPolicyAssignment 将策略分配给特定作用域和角色定义。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 unifiedRoleManagementPolicyAssignments](../api/unifiedrolemanagementpolicyassignment-list.md)|[unifiedRoleManagementPolicyAssignment](../resources/unifiedrolemanagementpolicyassignment.md) 集合|获取 [unifiedRoleManagementPolicyAssignment](../resources/unifiedrolemanagementpolicyassignment.md) 对象及其属性的列表。|
@@ -26,8 +26,8 @@ unifiedRoleManagementPolicyAssignment 将策略分配给特定作用域和角色
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|策略分配的唯一标识符。|
-|policyId|String|策略的 ID。|
-|roleDefinitionId|String|应用策略的角色定义的 ID。 如果未指定，则策略适用于所有角色。|
+|policyId|字符串|策略的 ID。|
+|roleDefinitionId|字符串|应用策略的角色定义的 ID。 如果未指定，则策略适用于所有角色。|
 |scopeId|String|分配策略的范围的 ID。 例如， "/"、groupId 等。|
 |scopeType|String|分配策略的范围类型。 Directory、DirectoryRole、Group 之一。|
 

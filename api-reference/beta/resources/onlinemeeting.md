@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: f9752b08a6d9e3a912e485cd6a8d2d4bf0ad19e8
-ms.sourcegitcommit: c3f849e5a052b1926373a4b316ec303250e6d09e
+ms.openlocfilehash: 5bb0946f7af1af852ad56ae362482015658c675c
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60369753"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695942"
 ---
 # <a name="onlinemeeting-resource-type"></a>onlineMeeting 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "60369753"
 
 包含有关会议的信息，包括用于加入会议的 URL、与会者列表和说明。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法 | 返回类型 |说明 |
 | ------ | ----------- | ---------- |
@@ -35,30 +35,30 @@ ms.locfileid: "60369753"
 | 属性              | 类型                                          | 说明    |
 | :-------------------- | :-------------------------------------------- | :------------------------------------ |
 | allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)| 指定可在会议中成为演示者的人。 |
-| allowAttendeeToEnableCamera | Boolean | 指示与会者是否可以打开其相机。 |
-| allowAttendeeToEnableMic | Boolean | 指示与会者是否可以打开其麦克风。 |
+| allowAttendeeToEnableCamera | 布尔值 | 指示与会者是否可以打开其相机。 |
+| allowAttendeeToEnableMic | 布尔值 | 指示与会者是否可以打开其麦克风。 |
 | allowMeetingChat      | [meetingChatMode](#meetingchatmode-values) | 指定会议聊天的模式。 |
-| allowTeamworkReactions | Boolean | 指示是否Teams会议的反应。 |
-| alternativeRecording  | Stream | 实时事件的备用录制的内容流。 只读。 |
-| attendeeReport        | Stream | 实时事件的与会者报告的内容流。 只读。   |
+| allowTeamworkReactions | 布尔值 | 指示是否Teams为会议启用响应。 |
+| alternativeRecording  | Stream | 实时事件 的替代录制[Microsoft Teams流](/microsoftteams/teams-live-events/what-are-teams-live-events)。 只读。 |
+| attendeeReport        | Stream | 活动参与者报告的内容流Teams[事件](/microsoftteams/teams-live-events/what-are-teams-live-events)。 只读。   |
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | 电话访问 (拨入) 联机会议的信息。 只读。 |
 | broadcastSettings     | [broadcastMeetingSettings](broadcastMeetingSettings.md)     | 设置实时事件相关。      |
 | chatInfo              | [chatInfo](chatinfo.md) | 与此联机会议关联的聊天信息。  |
 | creationDateTime      | 日期时间 | 会议创建时间（UTC）。 只读。     |
 | endDateTime           | 日期时间 | 会议结束时间（UTC）。   |
 | externalId            | String | 外部 ID。 自定义 ID。 可选。      |
-| id | String | 与联机会议关联的默认 ID。 只读。    |
-| isBroadcast | Boolean | 指示这是否是实时事件。 |
-| isEntryExitAnnounced  | Boolean | 指示呼叫者加入或离开时是否宣布。 |
+| id | 字符串 | 与联机会议关联的默认 ID。 只读。    |
+| isBroadcast | 布尔值 | 指示这是否是Teams[事件](/microsoftteams/teams-live-events/what-are-teams-live-events)。 |
+| isEntryExitAnnounced  | 布尔值 | 指示呼叫者加入或离开时是否宣布。 |
 | joinWebUrl | String | 联机会议加入 URL。 只读。 |
-| joinInformation | [itemBody](itembody.md) | "Accept-Language"中指定的语言和区域设置变量中的联接信息请求 HTTP 标头。 只读。 |
+| joinInformation | [itemBody](itembody.md) | 在"Accept-Language"中指定的语言和区域设置变量中的联接信息请求 HTTP 标头。 只读。 |
 | lobbyBypassSettings | [lobbyBypassSettings](lobbyBypassSettings.md) | 指定哪些参与者可以绕过会议厅。 |
 | participants | [meetingParticipants](meetingparticipants.md) | 与联机会议关联的参与者。 这包括组织者和与会者。 |
-| recordAutomatically | Boolean | 指示是否自动录制会议。 |
-| recording | Stream | 录制实时事件的内容流。 只读。 |
+| recordAutomatically | 布尔值 | 指示是否自动录制会议。 |
+| recording | Stream | 录制实时事件的内容[Teams流](/microsoftteams/teams-live-events/what-are-teams-live-events)。 只读。 |
 | startDateTime | 日期时间 | 会议开始时间（UTC）。 |
 | subject | String | 联机会议的主题。 |
-| videoTeleconferenceId | String | 视频电话会议 ID。 只读。 |
+| videoTeleconferenceId | 字符串 | 视频电话会议 ID。 只读。 |
 | autoAdmittedUsers (弃用)  | String | 用于指定将自动允许加入联机会议的参与者类型的设置。 可取值为：`everyone`、`everyoneInSameAndFederatedCompany`、`everyoneInCompany`、`invitedUsersInCompany`、`organizer`。 只读。 |
 | 功能 (弃)  | meetingCapabilities 集合 | 会议功能列表。 可能的值是 `questionAndAnswer` `unknownFutureValue` ：、。 |
 

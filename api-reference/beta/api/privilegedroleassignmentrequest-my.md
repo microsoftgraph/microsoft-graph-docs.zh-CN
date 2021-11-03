@@ -4,13 +4,13 @@ description: 获取请求者对请求角色分配权限。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: ffb0a8a8b742df4b7549964f975484be71f7dc51
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+author: carolinetempleton
+ms.openlocfilehash: b629e331142bb3f64805c0e6e287d7f7f19b9114
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59767216"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696971"
 ---
 # <a name="privilegedroleassignmentrequest-my"></a>privilegedRoleAssignmentRequest： my
 

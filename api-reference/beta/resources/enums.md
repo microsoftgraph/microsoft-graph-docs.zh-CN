@@ -5,12 +5,12 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 4d557100dcef2e94ecd8fc2ab219bb89490b948b
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: f1f4ef82726167a5484eae35531763d53dfaec0a
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60446707"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60693421"
 ---
 # <a name="enum-values"></a>枚举值
 
@@ -47,6 +47,15 @@ ms.locfileid: "60446707"
 |:-----|
 |passwordAddition|
 |passwordLifetime|
+|symmetricKeyAddition|
+|symmetricKeyLifetime|
+|unknownFutureValue|
+
+### <a name="appkeycredentialrestrictiontype-values"></a>appKeyCredentialRestrictionType 值
+
+|Member|
+|:-----|
+|asymmetricKeyLifetime|
 |unknownFutureValue|
 
 ### <a name="synchronizationsecret-values"></a>synchronizationSecret 值
@@ -179,7 +188,7 @@ ms.locfileid: "60446707"
 |整数|
 |参考|
 |二进制|
-|Boolean|
+|布尔值|
 |日期时间|
 
 ### <a name="mutability-values"></a>可变值
@@ -2566,7 +2575,7 @@ ms.locfileid: "60446707"
 
 |Member|
 |:---|
-|或|
+|或者|
 |和|
 
 

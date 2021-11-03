@@ -9,8 +9,8 @@ ms.openlocfilehash: cc61de10ca88101e71359f772179ff13539155bc
 ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60674694"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696922"
 ---
 # <a name="delete-devicemanagementconfigurationsimplesettingdefinition"></a>删除 deviceManagementConfigurationSimpleSettingDefinition
 

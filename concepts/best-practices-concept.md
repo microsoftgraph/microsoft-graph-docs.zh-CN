@@ -3,12 +3,12 @@ title: 使用 Microsoft Graph 的最佳做法
 description: 本文介绍可用于帮助你的应用程序充分利用 Microsoft Graph 的最佳做法，内容涉及了解 Microsoft Graph、提高应用性能，以及让应用程序对最终用户更具可靠性等。
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 1801586e1ce8e1f0b9798df4275d41ee95a09b9b
-ms.sourcegitcommit: 0ec845f93eaa140ad833ba163c76c5308197a92f
+ms.openlocfilehash: 1395bca7e84156e1e7eea640387c2167c147fbc3
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60059932"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688105"
 ---
 # <a name="best-practices-for-working-with-microsoft-graph"></a>使用 Microsoft Graph 的最佳做法
 
@@ -43,7 +43,7 @@ ms.locfileid: "60059932"
 
   - 应用程序的隐私声明、使用条款、名称、徽标和域名都将出现在同意和其他体验中，所以一定要仔细配置，以便终端用户可以理解它们。
   - 考虑谁将同意你的应用程序（终端用户或管理员），并适当将应用程序配置为[请求权限](/azure/active-directory/develop/active-directory-v2-scopes)。
-  - 确保理解[静态、动态和增量同意](/azure/active-directory/develop/active-directory-v2-compare#incremental-and-dynamic-consent)之间的区别。
+  - 确保理解[静态、动态和增量同意](/azure/active-directory/develop/v2-permissions-and-consent#consent-types)之间的区别。
 
 - **考虑多租户应用程序**。期望客户具有不同状态的各种应用程序和同意控制。例如：
 

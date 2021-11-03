@@ -2,15 +2,15 @@
 title: 列出 windows10VpnConfigurations
 description: 列出 windows10VpnConfiguration 对象的属性和关系。
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cf941840860838ad0b910017d647f24c141b2049
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2664e5b99ced6b7af12011d73b5bf5e8e243d56a
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59010013"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60687408"
 ---
 # <a name="list-windows10vpnconfigurations"></a>列出 windows10VpnConfigurations
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5260
+Content-Length: 5326
 
 {
   "value": [
@@ -122,6 +122,7 @@ Content-Length: 5260
       "dnsSuffixes": [
         "Dns Suffixes value"
       ],
+      "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value",
       "authenticationMethod": "usernameAndPassword",
       "rememberUserCredentials": true,
       "enableConditionalAccess": true,

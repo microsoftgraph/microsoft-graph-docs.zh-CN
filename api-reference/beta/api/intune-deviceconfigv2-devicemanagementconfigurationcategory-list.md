@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b5ce6e4ed6346a47b6a280ce0f9cdb7699320b47
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: da8da88c04febc60e3292c231bb08b5df1434a99
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60489084"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688715"
 ---
 # <a name="list-devicemanagementconfigurationcategories"></a>列出 deviceManagementConfigurationCategories
 
@@ -37,6 +37,7 @@ ms.locfileid: "60489084"
 }
 -->
 ``` http
+GET /deviceManagement/complianceCategories
 GET /deviceManagement/configurationCategories
 ```
 
@@ -57,7 +58,7 @@ GET /deviceManagement/configurationCategories
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/configurationCategories
+GET https://graph.microsoft.com/beta/deviceManagement/complianceCategories
 ```
 
 ### <a name="response"></a>响应
@@ -65,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/configurationCategories
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 605
+Content-Length: 665
 
 {
   "value": [
@@ -73,6 +74,7 @@ Content-Length: 605
       "@odata.type": "#microsoft.graph.deviceManagementConfigurationCategory",
       "id": "cff34dd2-4dd2-cff3-d24d-f3cfd24df3cf",
       "description": "Description value",
+      "categoryDescription": "Category Description value",
       "helpText": "Help Text value",
       "name": "Name value",
       "displayName": "Display Name value",
