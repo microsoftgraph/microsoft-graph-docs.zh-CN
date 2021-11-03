@@ -1,23 +1,23 @@
 ---
 title: accessPackageAssignment：filterByCurrentUser
 description: 检索在登录用户上筛选的 accesspackageassignment 对象列表。
-localization_priority: Normal
-author: sbounouh
+ms.localizationpriority: medium
+author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b9ea85fb61525c2d9a3d109b358e8295631ac627
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: ba2bdd6d772d6d0204b32d27a8c3bdde8691a99d
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52473998"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60729701"
 ---
 # <a name="accesspackageassignment-filterbycurrentuser"></a>accessPackageAssignment：filterByCurrentUser
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 [Azure AD 权利管理](../resources/entitlementmanagement-root.md)中，检索已登录用户筛选的 [accessPackageAssignment](../resources/accesspackageassignment.md) 对象列表。
+在[Azure AD管理](../resources/entitlementmanagement-root.md)"中，检索在已登录用户上筛选的[accessPackageAssignment](../resources/accesspackageassignment.md)对象列表。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -61,7 +61,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignments/filterByC
 
 如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [accessPackageAssignment](../resources/accesspackageassignment.md) 集合。
 
-当结果集跨多个页面时，Microsoft Graph 返回该页面，该页面在响应中包含指向下一 `@odata.nextLink` 页结果的 URL 中的属性。 如果存在该属性，请继续使用每个响应中的 URL 提出其他请求， `@odata.nextLink` 直到返回所有结果。 有关详细信息，请参阅分页[Microsoft Graph应用中的数据](/graph/paging.md)。
+当结果集跨多个页面时，Microsoft Graph在响应中返回包含指向下一页结果 `@odata.nextLink` 的 URL 的属性的页面。 如果存在该属性，请继续使用每个响应中的 URL 提出其他请求， `@odata.nextLink` 直到返回所有结果。 有关详细信息，请参阅分页[Microsoft Graph应用中的数据](/graph/paging)。
 
 ## <a name="examples"></a>示例
 

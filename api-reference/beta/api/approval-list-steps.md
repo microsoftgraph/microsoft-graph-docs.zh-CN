@@ -1,16 +1,16 @@
 ---
 title: 列出 approvalSteps
 description: 列出与审批对象关联的审批步骤。
-localization_priority: Normal
-author: sbounouh
+ms.localizationpriority: medium
+author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 8eda9d7e1524f0dbdbe727d4123f448b6375e585
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: f9eb3c3314f8443cc077ed0f51eafcbdb56fe47b
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048055"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60729232"
 ---
 # <a name="list-approvalsteps"></a>列出 approvalSteps
 
@@ -18,7 +18,7 @@ ms.locfileid: "52048055"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在[Azure AD 权利管理](../resources/entitlementmanagement-root.md)中，列出与审批对象关联的[approvalStep](../resources/approvalstep.md)对象。 [](../resources/approval.md)  此调用由审批者进行，提供访问包分配请求 [的标识符](../resources/accesspackageassignmentrequest.md)。
+在[Azure AD中](../resources/entitlementmanagement-root.md)，列出与审批对象关联的[approvalStep](../resources/approvalstep.md)[对象。](../resources/approval.md)  此调用由审批者进行，提供访问包分配请求 [的标识符](../resources/accesspackageassignmentrequest.md)。
 
 ## <a name="permissions"></a>权限
 

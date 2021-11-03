@@ -1,23 +1,23 @@
 ---
 title: accessPackage： filterByCurrentUser
 description: 检索在已登录用户上筛选的 accesspackage 对象列表。
-localization_priority: Normal
-author: sbounouh
+ms.localizationpriority: medium
+author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 9dbc8275bceceff6fb6beb90e3bfcf5acb476baa
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: e9835918f95d14e9526e3174d2e930261a822a0a
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52474034"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60730086"
 ---
 # <a name="accesspackage-filterbycurrentuser"></a>accessPackage： filterByCurrentUser
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 [Azure AD 权利管理](../resources/entitlementmanagement-root.md)中，检索已登录用户筛选的 [accessPackage](../resources/accesspackage.md) 对象列表。
+在[Azure AD管理](../resources/entitlementmanagement-root.md)"中，检索在已登录用户上筛选的[accessPackage](../resources/accesspackage.md)对象列表。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -57,7 +57,7 @@ GET /identityGovernance/entitlementManagement/accessPackages/filterByCurrentUser
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码 `200 OK` 和 [accessPackage](../resources/accesspackage.md) 集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [accessPackage](../resources/accesspackage.md) 集合。
 
 ## <a name="examples"></a>示例
 以下示例获取登录用户可以请求的访问包。

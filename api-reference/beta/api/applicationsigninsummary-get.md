@@ -1,16 +1,16 @@
 ---
 title: 获取 applicationSignInSummary
-description: 检索 **applicationSigninSummary** 对象的属性和关系。
-localization_priority: Normal
+description: 检索 **applicationSigninSummary 对象的属性和** 关系。
+ms.localizationpriority: medium
 author: dhanyahk
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 9fad0f7122a1d82cb1f0dfc2ca7172f7f4029e85
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 9e2dcbe21f5a40157d0a803b9a800c3177b4aab9
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50128972"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60730044"
 ---
 # <a name="get-applicationsigninsummary"></a>获取 applicationSignInSummary
 
@@ -18,16 +18,16 @@ ms.locfileid: "50128972"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [applicationSigninSummary](../resources/applicationsigninsummary.md) 对象的属性和关系。
+检索 [applicationSigninSummary 对象的属性和](../resources/applicationsigninsummary.md) 关系。
 
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Report.Read.All |
+|委派（工作或学校帐户） | Reports.Read.All |
 |委派（个人 Microsoft 帐户） | 不支持   |
-|Application | Report.Read.All | 
+|应用 | Reports.Read.All | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -39,7 +39,7 @@ GET reports/getAzureADApplicationSignInSummary(period='{period}')
 
 | 参数 | 说明 |
 |:----------|:----------|
-| period | 如果 (最近七天) ， (最近 30) 天;其他值 `D7` `D30` 将生成错误。 |
+| period | 如果 `D7` (最近七天) 或 (`D30` 最近 30) ，其他值将生成错误。 |
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -50,7 +50,7 @@ GET reports/getAzureADApplicationSignInSummary(period='{period}')
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [applicationSignInSummary](../resources/applicationsigninsummary.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [applicationSignInSummary](../resources/applicationsigninsummary.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -84,9 +84,9 @@ GET https://graph.microsoft.com/beta/reports/getAzureADApplicationSignInSummary(
 ---
 
 ### <a name="response"></a>响应
-下面展示了示例响应。 
+下面介绍响应示例。 
 
->**注意：** 为了可读性，缩短了此处 mmight 所示的响应对象。 所有属性都将通过实际调用返回。
+>**注意：** 为了可读性，缩短了 mmight 中显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,

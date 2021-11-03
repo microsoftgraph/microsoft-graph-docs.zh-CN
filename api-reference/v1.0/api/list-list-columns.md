@@ -5,12 +5,12 @@ description: 列出列表中的列。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: eb62e65c15ed25924c28066f45b4553d57c8f4fc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 03348ae421835e3a3241c5cde88bcf2ea3ffec98
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59062983"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60730100"
 ---
 # <a name="list-columndefinitions-in-a-list"></a>List columnDefinitions in a list
 命名空间：microsoft.graph
@@ -23,7 +23,7 @@ ms.locfileid: "59062983"
 
   
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions_reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
   
 

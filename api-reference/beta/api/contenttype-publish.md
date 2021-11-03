@@ -2,15 +2,15 @@
 author: swapnil1993
 title: contentType： publish
 description: 发布内容类型中心网站中的内容类型。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: d69cbdabbb82612945dc6df85617e50bc2ca5b2c
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: b83f37bf080f9ca7f2fdcd6156b5bc35f4289c3d
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467083"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60729344"
 ---
 # <a name="contenttype-publish"></a>contentType： publish
 命名空间：microsoft.graph
@@ -20,7 +20,7 @@ ms.locfileid: "53467083"
 
 ## <a name="permissions"></a>权限
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions_reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|

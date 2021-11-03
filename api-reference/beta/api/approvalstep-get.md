@@ -1,16 +1,16 @@
 ---
 title: 获取审批步骤
 description: 检索 approvalStep 对象的属性。
-localization_priority: Normal
-author: sbounouh
+ms.localizationpriority: medium
+author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: f55ead753f23862f48e9c89703cc38010f8fbe99
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: dfe16203514570dc9b7d7273a63b7c00f612e8aa
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048048"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60729239"
 ---
 # <a name="get-approvalstep"></a>获取审批步骤
 

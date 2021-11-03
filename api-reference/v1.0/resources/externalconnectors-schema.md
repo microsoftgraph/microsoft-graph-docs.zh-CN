@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: dcfea02e76c97a8bd946a3c1aa5294b843b0b739
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3e7c214b3f5151a13a93dd1a200f13dffe13f8b3
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59036583"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60730520"
 ---
 # <a name="schema-resource-type"></a>架构资源类型
 
@@ -48,7 +48,7 @@ ms.locfileid: "59036583"
   "properties": [
     {
       "name": "String",
-      "type": "String",
+      "type": "String"
     }
   ]
 }

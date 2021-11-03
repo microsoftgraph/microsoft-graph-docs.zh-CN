@@ -1,16 +1,16 @@
 ---
 title: 删除 trustFrameworkPolicy
-description: 此操作将从 Azure AD B2C 租户中删除现有的 trustFrameworkPolicy 对象。
+description: 此操作将从 B2C 租户中删除现有 trustFrameworkPolicy Azure AD对象。
 ms.localizationpriority: medium
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 988e6783e3f7c7edf7cf4adbd8702d4e2431c9d3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3ac830d5196fba15edb5d6d11acfe4e4b4cdd4f3
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59141289"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60730268"
 ---
 # <a name="delete-trustframeworkpolicy"></a>删除 trustFrameworkPolicy
 
@@ -22,7 +22,7 @@ ms.locfileid: "59141289"
 
 ## <a name="permissions"></a>权限
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|

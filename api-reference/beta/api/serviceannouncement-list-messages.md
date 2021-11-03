@@ -2,15 +2,15 @@
 title: 列出邮件
 description: 从 messages 导航属性中检索 serviceUpdateMessage 资源。
 author: payiAzure
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 556bf38ee32fe6652f36be7e909535c551b9f602
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: e8d0fb584977434b7499bc0e9ae9e5b99a766d53
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53208841"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60730142"
 ---
 # <a name="list-messages"></a>列出邮件
 命名空间：microsoft.graph
@@ -120,6 +120,7 @@ Content-Type: application/json
         "SharePoint Online",
         "OneDrive for Business"
       ],
+      "expiryDateTime": null,
       "details": [
         {
           "name": "ExternalLink",

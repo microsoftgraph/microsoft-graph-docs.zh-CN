@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: dcc12a3af47a96eeffd5078c2510dadeff69e484
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: e4ef696322f168ca317e29d0f5c74aee355c4f29
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53440809"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60730534"
 ---
 ```objc
 
@@ -18,9 +18,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
     completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
-        NSError *jsonError = nil;
-        MSCollection *collection = [[MSCollection alloc] initWithData:data error:&jsonError];
-        MSGraphRiskyUser *riskyUser = [[MSGraphRiskyUser alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
+        MSGraphRiskyUsers *riskyUsers = [[MSGraphRiskyUsers alloc] initWithData:data error:&nserror];
 
 }];
 

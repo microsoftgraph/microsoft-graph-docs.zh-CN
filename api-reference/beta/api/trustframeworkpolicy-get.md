@@ -1,16 +1,16 @@
 ---
 title: 获取 trustFrameworkPolicy
-description: 此操作从 Azure AD B2C 租户检索现有 trustFrameworkPolicy 内容。
+description: 此操作从 B2C 租户中检索现有 trustFrameworkPolicy Azure AD内容。
 ms.localizationpriority: medium
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a622998dfcce8e3d9824840fc41c5741e6ad789e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5f0e966dbcd313d25162c62403ab69d622d1c205
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59135149"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60730275"
 ---
 # <a name="get-trustframeworkpolicy"></a>获取 trustFrameworkPolicy
 
@@ -22,7 +22,7 @@ ms.locfileid: "59135149"
 
 ## <a name="permissions"></a>权限
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|

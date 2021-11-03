@@ -2,15 +2,15 @@
 title: 获取 riskyUser
 description: 读取 riskyUser 对象的属性和关系。
 author: isaiahwilliams
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 523e5c3abe471ac2951615411c232517895dce64
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 82b9db2c2a02bea7446c75777c030ab2ba5f389e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53441388"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "60730485"
 ---
 # <a name="get-riskyuser"></a>获取 riskyUser
 命名空间：microsoft.graph.managedTenants

@@ -3,18 +3,18 @@ title: 创建 Microsoft Graph 客户端
 description: 说明如何创建客户端，以使用客户端呼叫 Microsoft Graph。 包含如何设置身份验证和选择主权云。
 ms.localizationpriority: medium
 author: MichaelMainer
-ms.openlocfilehash: b528e195d48380be8371e5f91a9475644cdd56d3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 329e9365d3d33152f274cf4fceda05d8b192f65a
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59089275"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60729302"
 ---
 # <a name="create-a-microsoft-graph-client"></a>创建 Microsoft Graph 客户端
 
 Microsoft Graph 客户端用于简化呼叫 Microsoft Graph 的操作。 应用程序的生命周期内，仅需使用一个客户端实例。 有关如何添加和安装 Microsoft Graph 客户端程序包到项目中的信息，请参阅 [安装 SDK](sdk-installation.md)。
 
-以下代码示例说明了如何通过身份验证认证器以支持语言创建 Microsoft Graph 客户端示例。 身份验证认证器将负责获取应用程序的访问令牌。 每种语言和平台都有多个不同的身份验证认证器可用。 不同的身份验证认证器支持不同的客户端场景。 有关认证器和选项适用场景的详细信息，请参阅 [选择身份验证认证器](choose-authentication-providers.md)。
+以下代码示例说明了如何通过身份验证认证器以支持语言创建 Microsoft Graph 客户端示例。 身份验证认证器将负责获取应用程序的访问令牌。 每种语言和平台都有多个不同的身份验证认证器可用。 不同的身份验证提供程序支持不同的客户端方案。 有关认证器和选项适用场景的详细信息，请参阅 [选择身份验证认证器](choose-authentication-providers.md)。
 
 # <a name="c"></a>[C#](#tab/CS)
 

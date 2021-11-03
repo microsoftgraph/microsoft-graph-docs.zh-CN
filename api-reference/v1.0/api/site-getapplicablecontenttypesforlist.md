@@ -5,12 +5,12 @@ description: 获取可添加到列表的网站内容类型。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 0cab5418b1e8fc1f4251e3fa9d51e5ebe1e05f61
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ec0e453973c825da8ac6ed13094984a63ae71f88
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59084981"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60730401"
 ---
 # <a name="site-getapplicablecontenttypesforlist"></a>site： getApplicableContentTypesForList
 命名空间：microsoft.graph
@@ -75,7 +75,7 @@ GET /sites/{siteId}/getApplicableContentTypesForList
 }
 -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/sites/{siteId}/getApplicableContentTypesForList(listId='listId')
+GET https://graph.microsoft.com/v1.0/sites/{siteId}/getApplicableContentTypesForList(listId='{listId}')
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/site-getapplicablecontenttypesforlist-csharp-snippets.md)]
@@ -139,4 +139,4 @@ Content-type: application/json
 ```
 
 [contentType]: ../resources/contentType.md
-[site]: ../resources/site.md
+[网站]: ../resources/site.md

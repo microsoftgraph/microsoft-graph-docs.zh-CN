@@ -2,15 +2,15 @@
 author: swapnil1993
 title: 列出网站中的列
 description: 列出网站中的列。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: dd7abfad63b268efb9748335ff0ef34d3b485312
-ms.sourcegitcommit: fdd69d362d1debc7b08e78269d59b531f9dfdaae
+ms.openlocfilehash: ac2229852f328e05a5be4ddb7c0a03cfb2eb0685
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51697212"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60730450"
 ---
 # <a name="list-columns-in-a-site"></a>列出网站中的列
 命名空间：microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "51697212"
 
   
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions_reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
   
 

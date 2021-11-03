@@ -2,25 +2,25 @@
 author: swapnil1993
 title: contentType：copyToDefaultContentLocation
 description: 将文件复制到内容类型中的默认内容位置。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 744000abf5e216bb2fe82644b9600ce1be5730f5
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 176249e2e26054ca32a46051ec3c6c41e2e85cbe
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53439351"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60730310"
 ---
 # <a name="contenttype-copytodefaultcontentlocation"></a>contentType：copyToDefaultContentLocation
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-将文件复制到内容类型 中的默认 [内容位置][contentType]。 然后，可以通过 POST 操作将该文件添加为默认文件或模板。
+将文件复制到内容类型中的默认 [内容位置][contentType]。 然后，可以通过 POST 操作将该文件添加为默认文件或模板。
 
 ## <a name="permissions"></a>权限  
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions_reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
   
 
@@ -57,7 +57,7 @@ POST /sites/id/contentTypes/id/copyToDefaultContentLocation
 
 |参数|类型|说明|
 |-|-|-|
-|sourceFile| [itemReference](../resources/itemreference.md) |有关需要复制到默认内容位置的源文件的元数据。 必需项。|
+|sourceFile| [itemReference](../resources/itemreference.md) |有关需要复制到默认内容位置的源文件的元数据。 必需。|
 |destinationFileName| string |目标文件名。 |
 
 ## <a name="response"></a>响应

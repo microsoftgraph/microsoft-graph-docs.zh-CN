@@ -1,16 +1,16 @@
 ---
 title: 获取审批
 description: 检索审批对象的属性。
-localization_priority: Normal
-author: sbounouh
+ms.localizationpriority: medium
+author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 505133c6f26835440a0834b6553904562e449914
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 770ae62a6608ad4d3543d1dbe2826eda5d1837c9
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048062"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60729246"
 ---
 # <a name="get-approval"></a>获取审批
 
@@ -18,7 +18,7 @@ ms.locfileid: "52048062"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 [Azure AD 权利管理](../resources/entitlementmanagement-root.md)中，检索 [审批对象](../resources/approval.md) 的属性。  此调用由审批者进行，提供访问包分配请求 [的标识符](../resources/accesspackageassignmentrequest.md)。
+在[Azure AD中](../resources/entitlementmanagement-root.md)，检索审批[对象](../resources/approval.md)的属性。  此调用由审批者进行，提供访问包分配请求 [的标识符](../resources/accesspackageassignmentrequest.md)。
 
 ## <a name="permissions"></a>权限
 

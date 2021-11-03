@@ -2,15 +2,15 @@
 title: 更新 accessPackageAssignmentPolicy
 description: 更新 accessPackageAssignmentPolicy 对象的属性。
 author: markwahl-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 36de78af3061a489a2cc8027c18185d302c62ba5
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: 7d89271a0c925703c2b503e20aafc867f0c89a18
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53466942"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60729694"
 ---
 # <a name="update-accesspackageassignmentpolicy"></a>更新 accessPackageAssignmentPolicy
 
@@ -18,10 +18,10 @@ ms.locfileid: "53466942"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新现有 [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) 对象以更改其一个或多个属性，如显示名称或说明。
+更新现有 [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) 对象，以更改其一个或多个属性，如显示名称或说明。
 
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
@@ -50,9 +50,9 @@ PUT /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/{a
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|策略显示名称。|
+|displayName|字符串|策略显示名称。|
 |说明|String|策略的说明。|
-|canExtend|布尔|指示用户是否可以在审批后延长访问包分配持续时间。|
+|canExtend|布尔值|指示用户是否可以在审批后延长访问包分配持续时间。|
 |durationInDays|Int32|此策略中的分配在到期之前持续等待的天数。|
 |expirationDateTime|DateTimeOffset|在此策略中创建的工作分配的到期日期。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |requestorSettings|[requestorSettings](../resources/requestorsettings.md)|Who从此策略请求此访问包。|

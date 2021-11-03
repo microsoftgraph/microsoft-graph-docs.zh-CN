@@ -2,15 +2,15 @@
 author: swapnil1993
 title: 列出内容类型中的 columnDefinitions
 description: 列出内容类型中的列。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 0a22459519fe68c4359ef53b4700d080e5845bbd
-ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
+ms.openlocfilehash: b53810daffb466b0c3714e8f548e32b314bf030f
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430061"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60729225"
 ---
 # <a name="list-columns-in-a-content-type"></a>列出内容类型中的列
 命名空间：microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "53430061"
 
   
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions_reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
   
 

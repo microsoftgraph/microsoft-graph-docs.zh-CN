@@ -2,15 +2,15 @@
 author: swapnil1993
 title: 列出列表中的 contentTypes
 description: 列出列表中的内容类型
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: bb16750929a22634b594bf7ef862ca6104e4767a
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: 5fa1b39dbec1e23b046579eb43b04ddba9cbfd05
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51202497"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60730289"
 ---
 # <a name="list-contenttypes-in-a-list"></a>列出列表中的 contentTypes
 命名空间：microsoft.graph
@@ -20,7 +20,7 @@ ms.locfileid: "51202497"
 
 ## <a name="permissions"></a>权限
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions_reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|

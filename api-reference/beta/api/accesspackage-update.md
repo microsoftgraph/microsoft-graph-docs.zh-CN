@@ -2,15 +2,15 @@
 title: 更新 accessPackage
 description: 更新 accessPackage 对象的属性。
 author: markwahl-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 40f299edcca636a6f2041a36e10b0dc3963d8422
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 6f777520a9896760ba263dc12ff7a4c2b1631132
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439763"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60729729"
 ---
 # <a name="update-accesspackage"></a>更新 accessPackage
 
@@ -18,16 +18,16 @@ ms.locfileid: "50439763"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新现有 [accessPackage](../resources/accesspackage.md) 对象以更改其一个或多个属性，例如显示名称或说明。
+更新现有 [accessPackage](../resources/accesspackage.md) 对象以更改其一个或多个属性，如显示名称或说明。
 
-## <a name="permissions"></a>Permissions
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference.md)。
+## <a name="permissions"></a>权限
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）     | EntitlementManagement.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application                            | EntitlementManagement.ReadWrite.All |
+|应用程序                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -44,7 +44,7 @@ PATCH /identityGovernance/entitlementManagement/accessPackages/{accessPackageId}
 |Content-Type|application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [accessPackage](../resources/accesspackage.md) 对象参数的 JSON 表示形式。
+在请求正文中，提供 [accessPackage](../resources/accesspackage.md) 对象的参数的 JSON 表示形式。
 
 下表显示更新 [accessPackage](../resources/accesspackage.md)时提供的属性。
 

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 12e54f95f0b3bdaac077ce9df095d961c123497612ecfe06c0414f4f59911b3d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7964dd5e539b2ee5311cb6b9e21a3e496bf50084
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57277640"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "60729407"
 ---
 ```javascript
 
@@ -22,7 +22,7 @@ const associateWithHubSites = {
    propagateToExistingLists: false
 };
 
-await client.api('/sites/id/contentTypes/id/associateWithHubSites')
+await client.api('/sites/{siteId}/contentTypes/{contentTypeId}/associateWithHubSites')
     .version('beta')
     .post(associateWithHubSites);
 

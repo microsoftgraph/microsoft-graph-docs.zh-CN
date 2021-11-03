@@ -1,16 +1,16 @@
 ---
 title: 创建 trustFrameworkPolicy
-description: 此操作在 Azure AD B2C 租户中创建新的 trustFrameworkPolicy 对象。
+description: 此操作在 B2C 租户中创建新的 trustFrameworkPolicy Azure AD对象。
 ms.localizationpriority: medium
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: fff0d38394adccfbac85bd32b10a41f1b9911a4c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fc4c67962df0200bd9f8b6a788b740eaf2c75584
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59102127"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60729323"
 ---
 # <a name="create-trustframeworkpolicy"></a>创建 trustFrameworkPolicy
 
@@ -22,7 +22,7 @@ ms.locfileid: "59102127"
 
 ## <a name="permissions"></a>权限
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|

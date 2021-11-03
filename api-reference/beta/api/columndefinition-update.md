@@ -2,15 +2,15 @@
 author: swapnil1993
 title: 更新 columnDefinition
 description: 更新网站、列表或内容类型列
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 0a18f128b92496fa956600557a4a8923efc8d117
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 5f750648a83b663ecd185e7568634e19660184df
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51468906"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60730156"
 ---
 # <a name="update-columndefinition"></a>更新 columnDefinition
 命名空间：microsoft.graph
@@ -21,7 +21,7 @@ ms.locfileid: "51468906"
 
 ## <a name="permissions"></a>权限  
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions_reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
   
 
@@ -29,7 +29,7 @@ ms.locfileid: "51468906"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Sites.Manage.All、Sites.FullControl.All  |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application | Sites.Manage.All、Sites.FullControl.All |
+|应用程序 | Sites.Manage.All、Sites.FullControl.All |
 
   
 
@@ -143,5 +143,5 @@ Content-type: application/json
 [columnDefinition]: ../resources/columnDefinition.md
 [contentType]: ../resources/contentType.md
 [list]: ../resources/list.md
-[site]: ../resources/site.md
+[网站]: ../resources/site.md
 

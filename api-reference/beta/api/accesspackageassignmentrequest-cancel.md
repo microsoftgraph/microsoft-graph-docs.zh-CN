@@ -1,23 +1,23 @@
 ---
 title: accessPackageAssignmentRequest：cancel
 description: 取消处于可取消状态的访问PackageAssignmentRequest 对象。
-localization_priority: Normal
-author: sbounouh
+ms.localizationpriority: medium
+author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 281eebc1008f8c1c791ac6cc2694a458c86f526b
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 8abc80afd455c3f5057ede358f24b4a266a1e89d
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52679657"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60729673"
 ---
 # <a name="accesspackageassignmentrequest-cancel"></a>accessPackageAssignmentRequest：cancel
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 [Azure AD 权利管理](../resources/entitlementmanagement-root.md)中，取消处于可取消状态（、）的 [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) `accepted` `pendingApproval` `pendingNotBefore` `pendingApprovalEscalated` 对象。
+In [Azure AD Entitlement Management](../resources/entitlementmanagement-root.md)， cancel [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) objects that are in a cancellable state： `accepted` ， ， ， `pendingApproval` `pendingNotBefore` `pendingApprovalEscalated` .
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

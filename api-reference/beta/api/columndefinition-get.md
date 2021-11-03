@@ -2,15 +2,15 @@
 author: swapnil1993
 title: 获取 columnDefinition
 description: " 获取网站、列表或内容类型列。"
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: f2e9bbca28dd0096401a2c59b92d5a26e35ee75e
-ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
+ms.openlocfilehash: 87365cb26f43db82ce3d1f7db9d3366080f29305
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401391"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60729218"
 ---
 # <a name="get-columndefinition"></a>获取 columnDefinition
 命名空间：microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "53401391"
 
   
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions_reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
   
 

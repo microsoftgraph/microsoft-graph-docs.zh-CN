@@ -5,12 +5,12 @@ description: 列出内容类型中的列。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: be0bea04a422ea4365ed1d0dbd7c15a7f73e33f3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ff7077a25290db304707ad0082d210fc98543dc0
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59038236"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60729792"
 ---
 # <a name="list-columndefinitions-in-a-content-type"></a>列出内容类型中的 columnDefinitions
 命名空间：microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "59038236"
 
   
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions_reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
   
 

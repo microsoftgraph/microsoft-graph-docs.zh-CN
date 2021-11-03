@@ -2,15 +2,15 @@
 title: 列出 riskyUsers
 description: 获取 riskyUser 对象及其属性的列表。
 author: isaiahwilliams
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 4fb725623180e05396f468e30fcfd2c0f7306805
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 77dfc21112d921469d92e63c7706aeca83af0c7c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53440806"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "60730527"
 ---
 # <a name="list-riskyusers"></a>列出 riskyUsers
 命名空间：microsoft.graph.managedTenants

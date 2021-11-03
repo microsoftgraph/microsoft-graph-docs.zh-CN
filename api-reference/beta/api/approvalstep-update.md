@@ -1,16 +1,16 @@
 ---
 title: 更新 approvalStep
 description: 对 approvalStep 对象应用批准或拒绝决定。
-localization_priority: Normal
-author: sbounouh
+ms.localizationpriority: medium
+author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 0fe071b58709a7816a4ffd9c82627542c1905243
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 167cc4a36ee3d50d76b73ed311aa2012e1d89b4f
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048041"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60730030"
 ---
 # <a name="update-approvalstep"></a>更新 approvalStep
 
@@ -51,12 +51,12 @@ PATCH /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals
 | 属性       | 类型    |说明|
 |:---------------|:--------|:----------|
 | reviewResult | String | 审批者的决定。 可取值为：`Approve`、`Deny`。|
-| justification | String | 与审批者的决定相关的理由。 |
+| justification | String | 与审批者决策相关的理由。 |
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `204 No Content` 正文中返回 响应代码。 但是，如果调用方没有适当的权限，该方法将返回 响应代码，或者如果未找到审批 `403 Forbidden` ID，则该方法返回 `404 Not found` 。 如果请求已在同一审批阶段由另一个审批者批准，该方法在响应 `409 Conflict` 正文中返回。
+如果成功，此方法在响应 `204 No Content` 正文中返回 响应代码。 但是，如果调用方没有适当的权限，该方法将返回 响应代码，或者如果未找到审批 `403 Forbidden` ID，则该方法返回 `404 Not found` 。 如果请求已在同一审批阶段由另一个审批者批准，此方法在响应 `409 Conflict` 正文中返回。
 
 ## <a name="examples"></a>示例
 

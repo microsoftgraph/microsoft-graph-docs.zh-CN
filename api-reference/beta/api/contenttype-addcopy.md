@@ -2,15 +2,15 @@
 author: swapnil1993
 title: contentType：addCopy
 description: 将网站内容类型的副本添加到列表中。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: bb096cc0ad43641709e26559ee86e7fe9ad9f9db
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 70199b30d2748f4a6372b83326f93d36bf966c63
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514607"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60729456"
 ---
 # <a name="contenttype-addcopy"></a>contentType：addCopy
 命名空间：microsoft.graph
@@ -22,7 +22,7 @@ ms.locfileid: "58514607"
 
 ## <a name="permissions"></a>权限  
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions_reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
   
 

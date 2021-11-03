@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: 16c37a2ae403ef71c1c1e64d5c0960e00d671bf2
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: aba83746710694a987d4457b7c7f300923240d24
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60288593"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60729526"
 ---
 # <a name="chatmessage-delta"></a>chatMessage：delta
 
@@ -37,7 +37,7 @@ Delta 查询既支持可检索指定频道中所有消息的完全同步，也�
 
 ## <a name="permissions"></a>权限
 
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference.md)。
+需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        |权限（从最低特权到最高特权）  |
 |---------------------------------------|---------------------------------------------|
@@ -45,7 +45,7 @@ Delta 查询既支持可检索指定频道中所有消息的完全同步，也�
 |委派（个人 Microsoft 帐户） | 不支持                                |
 |应用程序                            | ChannelMessage.Read.Group *、ChannelMessage.Read.All、Group.Read.All**、Group.ReadWrite.All** |
 
-> **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。 标记为 ** 的权限已弃用，不应使用。
+> **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。 标记为 **的权限已弃用，不应使用。
 
 > [!NOTE]
 > 在使用应用程序权限调用此 API 之前，你必须先请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。

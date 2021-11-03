@@ -2,21 +2,21 @@
 author: swapnil1993
 title: List columnDefinitions in a list
 description: 列出列表中的列。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 4ad913c79adcb72978ec522102cd92968dd6c03d
-ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
+ms.openlocfilehash: 98c3c5715ac3a47dee40e923db9047189e858a76
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51611760"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60730548"
 ---
 # <a name="list-columns-in-a-list"></a>列出列表中的列
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-获取列表中表示为 [columnDefinition][columnDefinition] 资源的 [列的集合][list]。
+获取在列表中表示为 [columnDefinition][columnDefinition] 资源的 [列的集合][list]。
 
   
 
@@ -24,7 +24,7 @@ ms.locfileid: "51611760"
 
   
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions_reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
   
 

@@ -5,12 +5,12 @@ description: 获取网站中的列集合。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: e11d9f24fadfb9fd0b6f87d0df6cb3eeb979379a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4a2a4f21e4475208f1be0255a9332fbc4053bd0b
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59021997"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60729589"
 ---
 # <a name="list-columns-in-a-site"></a>列出网站中的列
 命名空间：microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "59021997"
 
   
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions_reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
   
 

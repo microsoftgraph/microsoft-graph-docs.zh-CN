@@ -5,12 +5,12 @@ description: 将内容类型与中心网站列表关联。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 759a2265cfd0d8a470ba6619acb7b8b1478cebb6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d092512fb0ccc669ca0ba9567f2e050eb01a3a45
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147663"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60729799"
 ---
 # <a name="contenttype-associatewithhubsites"></a>contentType：associateWithHubSites
 
@@ -19,12 +19,12 @@ ms.locfileid: "59147663"
 
 将内容 [类型中心][contentType] 中的已发布内容类型与中心网站列表关联。
 
->**注意：** 此功能仅限于拥有许可证SharePoint Syntex租户。
+>**注意：** 此功能仅限于拥有许可证的SharePoint Syntex租户。
   
 
 ## <a name="permissions"></a>权限  
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions_reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
   
 
@@ -60,7 +60,7 @@ POST /sites/{siteId}/contentTypes/{contentTypeId}/associateWithHubSites
 |参数|类型|说明|
 |-|-|-|
 |hubSiteUrls| 集合 (字符串)  |需要强制执行内容类型的中心网站的规范 URL 列表。 必需。|
-|propagateToExistingLists| Boolean |如果 `true` 为 ，内容类型将强制应用于中心网站中的现有列表;否则，将仅应用于新创建的列表。|
+|propagateToExistingLists| 布尔值 |如果 `true` 为 ，内容类型将强制应用于中心网站中的现有列表;否则，将仅应用于新创建的列表。|
 
 ## <a name="response"></a>响应
 

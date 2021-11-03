@@ -2,15 +2,15 @@
 author: swapnil1993
 title: 删除 contentType
 description: 从列表或网站SharePoint内容类型。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 9597f4b66a070ee40199b39f8accc8b3ab9f5c0e
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 8cee46edec94462d7f66a25a154fa361787c36d9
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53439376"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60729253"
 ---
 # <a name="delete-contenttype"></a>删除 contentType
 命名空间：microsoft.graph
@@ -21,7 +21,7 @@ ms.locfileid: "53439376"
 
 
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions_reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|

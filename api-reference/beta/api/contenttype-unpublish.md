@@ -2,15 +2,15 @@
 author: swapnil1993
 title: contentType：取消发布
 description: 从内容类型中心网站取消发布内容类型。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 8b7e8c63c6d92390731b670f8d95821fe5334b0d
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 418baec90ea4fde2c0dc08c8e52bc264fb9485ce
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50773380"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60730303"
 ---
 # <a name="contenttype-unpublish"></a>contentType：取消发布
 命名空间：microsoft.graph
@@ -20,13 +20,13 @@ ms.locfileid: "50773380"
 
 ## <a name="permissions"></a>权限
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions_reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Sites.FullControl.All    |
 |委派（个人 Microsoft 帐户） | Sites.FullControl.All    |
-|Application | Sites.FullControl.All |
+|应用程序 | Sites.FullControl.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
