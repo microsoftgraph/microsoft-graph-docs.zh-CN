@@ -2,15 +2,15 @@
 title: 列出权限
 description: 从网站上的权限导航属性获取权限资源。
 author: BarrySh
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: b4c950aec7b58eb6583e8b7a0a209a64f022368e
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 4d06a565d235991c1d9d3e983a969063451c43a7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473211"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "60780956"
 ---
 # <a name="list-permissions"></a>列出权限
 命名空间：microsoft.graph

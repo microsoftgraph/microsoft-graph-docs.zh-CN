@@ -2,15 +2,15 @@
 title: 添加 includedGroups
 description: 添加要包含在移动应用管理策略中的组。
 author: ravennMSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 23612a1aaa10c1a51af54dd184f6a7ea8497dd2d
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 4e3ad2f0da45082fe1159e4d45ecd9c5c9004246
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53440470"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "60780868"
 ---
 # <a name="add-includedgroups"></a>添加 includedGroups
 
@@ -47,7 +47,7 @@ POST /policies/mobileAppManagementPolicies/{id}/includedGroups/$ref
 |Content-Type|application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 group 对象的 JSON [表示](../resources/group.md) 形式。
+在请求正文中，提供[组](../resources/group.md)对象的 JSON 表示形式。
 
 下表显示添加组 时所需的 [属性](../resources/group.md)。
 
