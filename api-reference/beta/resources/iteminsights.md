@@ -5,12 +5,12 @@ author: simonhult
 ms.localizationpriority: high
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 602cb58130f801e129bc334163cd7dabcc0d0b1b
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 74452522b77e240c398c80a4dc8bec9c377efb09
+ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696979"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60780924"
 ---
 # <a name="iteminsights-resource-type"></a>itemInsights 资源类型
 
@@ -28,7 +28,11 @@ Insights 由以下 API 返回：
 
 ### <a name="limiting-item-insights"></a>限制项目见解
 
-更新 [itemInsightsSettings](iteminsightssettings.md) 以禁用特定 Azure AD 组或整个组织的项目见解。 有关详细信息，请参阅[自定义见解隐私](/graph/insights-customize-item-insights-privacy?view=graph-rest-1.0)。
+更新 [insightsSettings](insightssettings.md) 以禁用特定 Azure AD 组或整个组织的项目见解。 有关详细信息，请参阅[自定义见解隐私](/graph/insights-customize-item-insights-privacy)。
+
+## <a name="properties"></a>属性
+
+无。
 
 ## <a name="relationships"></a>关系
 

@@ -1,26 +1,68 @@
 ---
-title: 在 Microsoft Graph 中使用 People API 获取与你相关度最高的人员的信息
-description: 'Microsoft Graph 应用程序可以使用 People API 检索与用户相关度最高的人员。 '
+title: 使用 Microsoft Graph 人员 API 获取有关你最相关的人员的信息
+description: 'Microsoft Graph 应用程序可以使用人员 API 检索与用户最相关的人员。 '
 ms.date: 4/9/2019
 author: anthona
 ms.localizationpriority: high
 ms.prod: insights
-ms.openlocfilehash: e450062a10b4c7eb7dfb24f211af7cc357e305e7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c735af8d1e828f6a03d3a1ed1661212bf83738eb
+ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59028763"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60780469"
 ---
-# <a name="use-the-people-api-in-microsoft-graph-to-get-information-about-the-people-most-relevant-to-you"></a>在 Microsoft Graph 中使用 People API 获取与你相关度最高的人员的信息
+# <a name="use-the-people-api-in-microsoft-graph-to-get-information-about-the-people-most-relevant-to-you"></a>使用 Microsoft Graph 人员 API 获取有关你最相关的人员的信息
 
-Microsoft Graph 应用程序可以使用人员 API 检索与用户相关度最高的人员。相关性由用户的通信和协作模式及业务关系决定。人员可以是当地联系人，或其所在组织目录中的联系人以及来自最近通信中的人员。在生成此见解的同时，人员 API 还会提供模糊匹配搜索支持及检索登录用户组织中其他用户的相关用户列表的功能。人员 API 尤其适用于人员选择应用场景，例如撰写电子邮件或创建会议。例如，可以在撰写电子邮件的应用场景中使用人员 API。
+Microsoft Graph 应用程序可以使用人员 API 检索与用户最相关的人员。 相关性由用户的通信和协作模式及业务关系决定。 人员可以是本地联系人，也可以来自组织目录，也可以来自最近通信的人。 
+
+除了生成此见解外，人员 API 还提供模糊匹配搜索支持，以及检索与登录用户组织中其他用户相关的用户列表功能。
+人员 API 对于人员选取方案（例如撰写电子邮件或创建会议）特别有用。 例如，可以在电子邮件撰写方案中使用人员 API。
+
+## <a name="including-a-person-as-relevant-or-working-with"></a>将某人纳入相关人员或"正在处理"人员
+ 
+若要将人员作为与 Delve 中的配置文件所有者相关联或与之"合作"，要显示在所有者的个人资料卡片中或由人员 API 返回，则该人员与配置文件所有者之间必须存在 _公共_ 关系。 下图显示了用户 A、与其他用户（用户 B）的关系的索引，以及显示用户关系子集的公共配置文件。
+
+![“同事”关系的图像](images/working-with.png)
+ 
+下面是公共关系的示例：
+
+- 在组织结构图中连接的个人：经理、直接下属、 (共享同一经理)  
+- 人数少于 30 的公共组或通讯组列表的成员。 公共组具有可在目录中找到的成员身份列表。
+ 
+如果配置文件所有者与某人通信，并且他们之间 _没有公共关系_，例如组织结构图连接或共同的组，则他们一直在通信的事实对其他人 _不可见_。 
+
+人员的排名（即他们出现在配置文件所有者页面上的顺序）由配置文件所有者与列表上人员之间的私人和公共沟通确定。
+ 
+私人沟通的示例包括：
+- 相互发送电子邮件，另一个人的名字在“收件人”行中
+- 通过将用户名称包括在日历邀请中来邀请用户参加会议 
+ 
+公共交互的示例包括：
+- 作为公共组的一部分相互发送或接收电子邮件 
+- 作为组的一部分，或在已邀请了超过 X 名用户的情况下邀请用户参加会议
+ 
+排名不会根据用户 A（查看其他人的页面的用户）的身份发生变化。 排名由用户 B（配置文件所有者）和用户 C（显示在配置文件所有者的列表中）之间的交互级别确定。
+ 
+若要显示用户 C，配置文件所有者必须位于一个相对较小的组或通讯组列表中，该用户是公共用户 (这意味着成员资格列表在目录中) 。
+ 
+组织外部的人员不会显示在配置文件所有者的列表上。 与他们通过邮件或见面联系的，但不属于同一个组织的人，同样也不会作为老板的工作对象显示出来。
+
+## <a name="disabling-working-with"></a>禁用"正在使用"
+管理员可以在两个级别管理与配置文件所有者相关的人员显示或返回：
+* 对于组织：
+  - 为整个组织启用。 这是默认设置。
+  - 禁用整个组织，而不是配置文件所有者。
+* 对于组织中的 Azure AD 组：
+  - 禁用指定的 Azure AD 组。 这对于为组织启用"协作"非常有用，Azure AD 组中的成员除外。
+
+有关详细信息，请参阅 [自定义人员见解隐私控制](insights-customize-people-insights-privacy.md)。
 
 ## <a name="authorization"></a>Authorization
 
 若要在 Microsoft Graph 中调用 People API，应用必须拥有适当的权限：
 
-* People.Read - 用于进行常规的 People API 调用，例如 `https://graph.microsoft.com/v1.0/me/people/`。People.Read 需要获得最终用户的同意。
+* People.Read - 用于进行常规的个人资料 API 调用；例如 `https://graph.microsoft.com/v1.0/me/people/`。 People.Read 需要获得最终用户的同意。
 * People.Read.All - 在进行检索与登录用户组织中指定用户相关度最高的人员 (`https://graph.microsoft.com/v1.0/users/{id}/people`) 调用时需要。 People.Read.All 需要获得管理员的同意。
 
 ## <a name="browse-people"></a>浏览人员
@@ -694,7 +736,7 @@ Content-type: application/json
 
 ### <a name="browse-another-users-relevant-people"></a>浏览其他用户的相关人员
 
-以下请求获取与登录用户组织中的其他人员相关度最高的人员，例如在[实现参与工作功能](#implementation-of-the-working-with-feature) 中所述。 此请求需要具有 People.Read.All 权限。 上节所述的所有查询参数也都适用。
+以下请求获取与登录用户组织中的其他人员相关度最高的人员，例如在[实现参与工作功能](#including-a-person-as-relevant-or-working-with) 中所述。 此请求需要具有 People.Read.All 权限。 上节所述的所有查询参数也都适用。
 
 在本示例中显示了 Roscoe Seidel 的相关人员。
 
@@ -952,31 +994,3 @@ GET https://graph.microsoft.com/v1.0/me/people?$search="tiler"                //
 GET https://graph.microsoft.com/v1.0/me/people?$search="tyler lee"            //matches Tyler's name. Note the quotes to enclose the space.
 ```
 
-### <a name="implementation-of-the-working-with-feature"></a>实现参与工作功能
- 
-配置文件所有者和其他人员之间必须有公共关系，这些人员才会显示在配置文件所有者的列表中。 下图显示了用户 A、与其他用户（用户 B）的关系的索引，以及显示用户关系子集的公共配置文件。
-
-![“同事”关系的图像](images/working-with.png)
- 
-下面是公共关系的示例：
-
-- 在组织结构图中相连的个人：经理、直接下属、同事（其经理相同） 
-- 人数少于 30 的公共组或通讯组列表的成员。 公共组具有可在目录中找到的成员身份列表。
- 
-如果配置文件所有者与某人通信，并且他们之间没有公共关系（例如组织结构图联系或共同的组），则其他人将看不到他们已在进行通信的事实。
-
-人员的排名（即他们出现在配置文件所有者页面上的顺序）由配置文件所有者与列表上人员之间的私人和公共沟通确定。
- 
-私人沟通的示例包括：
-- 相互发送电子邮件，另一个人的名字在“收件人”行中
-- 通过将用户名称包括在日历邀请中来邀请用户参加会议 
- 
-公共交互的示例包括：
-- 作为公共组的一部分相互发送或接收电子邮件 
-- 作为组的一部分，或在已邀请了超过 X 名用户的情况下邀请用户参加会议
- 
-排名不会根据用户 A（查看其他人的页面的用户）的身份发生变化。 排名由用户 B（配置文件所有者）和用户 C（显示在配置文件所有者的列表中）之间的交互级别确定。
- 
-为了使用户 C 出现，配置文件所有者必须位于包含该用户的相对较小的公共组/DL（意味着可在目录中找到成员身份列表）中。
- 
-组织外部的人员不会显示在配置文件所有者的列表上。 与他们通过邮件或见面联系的，但不属于同一个组织的人，同样也不会作为老板的工作对象显示出来。

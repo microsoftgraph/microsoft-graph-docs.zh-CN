@@ -5,12 +5,12 @@ author: simonhult
 ms.localizationpriority: high
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 1f68d3066acaf8499bc9645547be584e47373932
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e65df53dc8ef6e9eec0f70ce7dbe4fe55e7b1466
+ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59021419"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60780910"
 ---
 # <a name="overview-of-item-insights"></a>项见解概述
 项见解是基于你在 Microsoft 365 中的协作工作，向你和与你协作的人员提供的以用户为中心的建议。
@@ -77,4 +77,4 @@ Microsoft 不会使用你在专用空间中工作的活动来为其他人计算�
 ## <a name="next-steps"></a>后续步骤
 
 - 使用 [Graph 管理器](https://developer.microsoft.com/graph/graph-explorer) 来通过自己的文件试用见解 API。 登录，在左侧列中展开 **见解**，然后尝试其示例查询。
-- 详细了解 [为用户自定义项见解隐私（预览版）](insights-customize-item-insights-privacy.md) 和支持自定义的 [项见解设置 API（预览版）](/graph/api/resources/iteminsightssettings?view=graph-rest-beta&preserve-view=true)。
+- 详细了解 [为用户自定义项见解隐私（预览版）](insights-customize-item-insights-privacy.md) 和支持自定义的 [见解设置 API（预览版）](/graph/api/resources/insightssettings?view=graph-rest-beta&preserve-view=true)。

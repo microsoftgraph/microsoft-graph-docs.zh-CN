@@ -5,12 +5,12 @@ author: simonhult
 ms.localizationpriority: high
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: b60a0699493e72b70999388b019de773ae9e4677
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 430c44adc75bf18d44d3e3bc6d3c0fc7dc724b45
+ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59136031"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60780931"
 ---
 # <a name="customizing-item-insights-privacy-in-microsoft-graph-preview"></a>自定义 Microsoft Graph 中的项目见解隐私（预览版）
 
@@ -38,7 +38,7 @@ ms.locfileid: "59136031"
 
 项目见解设置为管理员提供了使用 Azure AD 工具的灵活性。 管理员可为整个组织禁用项目见解，也可以仅针对指定 Azure AD 组的成员禁用项目见解。 他们可以在 Microsoft 365 管理中心内配置项目简介，或者使用具有适当权限的 PowerShell SDK 或 Microsoft Graph REST API 进行配置。 请记住，该操作需 要 _全局管理员角色_。 
 
-下一部分介绍管理中心的使用，然后是有关 PowerShell cmdlet 的部分。 如果正在使用 REST API，请跳过下一部分，并继续 [使用 REST API 配置项目见解](#configure-item-insights-using-rest-api)。 有关详细信息，请参阅 [读取](/graph/api/iteminsightssettings-get?view=graph-rest-beta&preserve-view=true) 或 [更新](/graph/api/iteminsightssettings-update?view=graph-rest-beta&preserve-view=true) REST 操作。
+下一部分介绍管理中心的使用，然后是有关 PowerShell cmdlet 的部分。 如果正在使用 REST API，请跳过下一部分，并继续 [使用 REST API 配置项目见解](#configure-item-insights-using-rest-api)。 有关详细信息，请参阅 [读取](/graph/api/organizationsettings-list-iteminsights?view=graph-rest-beta&preserve-view=true) 或 [更新](/graph/api/insightssettings-update?view=graph-rest-beta&preserve-view=true) REST 操作。
 
 ### <a name="how-to-configure-item-insights-settings-via-microsoft-admin-center"></a>如何通过 Microsoft 管理中心配置项目见解设置？
 拥有 _全局管理员角色_ 的管理员可以通过切换来调整项见解隐私设置。 要执行这一操作，请在 Micrsofot 365 管理中心展开“**设置**”，选择“**搜索和智能**”，并在“**项目见解**”下选择“**更改设置**”。
@@ -82,10 +82,10 @@ ms.locfileid: "59136031"
 ### <a name="configure-item-insights-using-rest-api"></a>使用 REST API 配置项目见解
 如前所述，默认情况下，将为整个组织启用项目见解隐私设置。 这些设置通过 [organizationSettings](/graph/api/resources/organizationsettings?view=graph-rest-beta&preserve-view=true) 中名为 **itemInsights** 的导航属性公开。 可采用以下两种方式之一来更改默认设置：
 
-- 为组织中的所有用户禁用项目见解：将 [itemInsightsSettings](/graph/api/resources/iteminsightssettings?view=graph-rest-beta&preserve-view=true) 资源的 **isEnabledInOrganization** 属性设置为 `false`。 
+- 通过将 [insightsSettings](/graph/api/resources/insightssettings?view=graph-rest-beta&preserve-view=true) 资源的 **isEnabledInOrganization** 属性设置为`false`，为组织中的所有用户禁用项目见解。 
 - 为用户的 _子集_ 禁用项目见解：将这些用户分配到一个 Azure AD 组中，将 **disabledForGroup** 属性设置为该组的 ID。 详细了解如何[创建组并将用户添加为成员](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)。 
 
-使用 [update](/graph/api/iteminsightssettings-update?view=graph-rest-beta&preserve-view=true) 操作来相应地设置 **isEnabledInOrganization** 和 **disabledForGroup** 属性。
+使用 [update](/graph/api/insightssettings-update?view=graph-rest-beta&preserve-view=true) 操作来相应地设置 **isEnabledInOrganization** 和 **disabledForGroup** 属性。
 
 | 如何启用项目见解 | isEnabledInOrganization | disabledForGroup |
 |:-------------|:------------|:------------|
@@ -94,7 +94,7 @@ ms.locfileid: "59136031"
 | 整个组织禁用 | `false` | 忽略 |
 
 更新项目见解设置时，请记住以下几点：
-- [项目见解设置](/graph/api/resources/iteminsightssettings?view=graph-rest-beta&preserve-view=true)仅可用于 beta 版终结点。
+- [insights 设置](/graph/api/resources/insightssettings?view=graph-rest-beta&preserve-view=true) 仅在 beta 终结点中可用。
 - 从 Azure 门户获取 Azure AD 组 ID，并确保该组存在，因为更新操作不会检查组是否存在。 在 **disabledForGroup** 中指定不存在的组 _不会_ 禁用组织中任何用户的见解。
 - 更新设置最多可能需要 24 个小时才能应用到所有 Microsoft 365 体验中。
 - 无论项目见解设置如何，Delve 都会继续采用 Delve 租户和用户级别的[隐私设置](/sharepoint/delve-for-office-365-admins#control-access-to-delve-and-related-features?view=graph-rest-beta&preserve-view=true)。

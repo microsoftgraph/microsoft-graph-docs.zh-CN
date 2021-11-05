@@ -370,6 +370,8 @@ items:
             href: social-intel-concept-overview.md
           - name: 获取相关人员的信息
             href: people-example.md
+          - name: 自定义人员见解隐私（预览）
+            href: insights-customize-people-insights-privacy.md
           - name: 自定义个人资料卡片（预览）
             href: add-properties-profilecard.md
           - name: 项见解概述
