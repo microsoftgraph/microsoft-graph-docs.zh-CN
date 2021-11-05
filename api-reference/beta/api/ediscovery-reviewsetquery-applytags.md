@@ -5,18 +5,20 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 96d70f9e1d41ee279ceae3dd4edcaeffa9d73b8b
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 8354ebaab02684e4850c13161b1e7deb8bf3db61
+ms.sourcegitcommit: f9e71d3b8a54a98c282ef49783babe5698300c06
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688364"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "60793919"
 ---
 # <a name="reviewsetquery-applytags"></a>reviewSetQuery：applyTags
 
 命名空间：microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+将 [标记](../resources/ediscovery-tag.md) 应用于与指定的 [reviewSetQuery 匹配的文档](../resources/ediscovery-reviewsetquery.md)。
 
 ## <a name="permissions"></a>权限
 

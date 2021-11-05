@@ -1,18 +1,18 @@
 ---
-title: Microsoft Graph Toolkit React 组件
-description: Microsoft Graph Toolkit React组件 () 允许React开发人员在 React 应用程序中使用 `mgt-react` Microsoft Graph Toolkit。
+title: Microsoft Graph Toolkit React组件
+description: Microsoft Graph Toolkit React组件 () 允许React开发人员将 `mgt-react` Microsoft Graph Toolkit用于React应用程序。
 ms.localizationpriority: medium
 author: nmetulev
-ms.openlocfilehash: 95c45379a46b4fe068c183e924c1268831fc15b6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f81446c2b8a2938bd86057b1cbf5f33d583b49f9
+ms.sourcegitcommit: f9e71d3b8a54a98c282ef49783babe5698300c06
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59103828"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "60793894"
 ---
-# <a name="microsoft-graph-toolkit-react-components"></a>Microsoft Graph Toolkit React 组件
+# <a name="microsoft-graph-toolkit-react-components"></a>Microsoft Graph Toolkit React组件
 
-Microsoft Graph Toolkit React组件 () 允许React开发人员在 React 应用程序中使用 `mgt-react` Microsoft Graph Toolkit。 库包装所有 Microsoft Graph Toolkit组件，并导出为React组件。
+Microsoft Graph Toolkit React组件 () 允许React开发人员将 `mgt-react` Microsoft Graph Toolkit用于React应用程序。 该库包装所有 Microsoft Graph Toolkit组件，并导出为React组件。
 
 ## <a name="what-components-can-i-use"></a>可以使用哪些组件？
 
@@ -28,7 +28,7 @@ Microsoft Graph Toolkit React组件 () 允许React开发人员在 React 应用�
 npm install @microsoft/mgt-react
 ```
 
-或
+或者
 
 ```bash
 yarn add @microsoft/mgt-react
@@ -93,7 +93,12 @@ import { MgtTemplateProps } from '@microsoft/mgt-react';
 
 const MyEvent = (props: MgtTemplateProps) => {
   const { event } = props.dataContext;
-  return <div>{event.subject}</div>;
+  return <div>
+    {event.subject}<br />
+    {event.attendees
+      .map((attendee: any) => attendee.emailAddress.name)
+      .join(', ')}
+  </div>;
 };
 ```
 

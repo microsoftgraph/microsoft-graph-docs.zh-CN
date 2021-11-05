@@ -1,16 +1,16 @@
 ---
 title: 获取 accessPackageAssignmentRequest
 description: 检索 accessPackageAssignmentRequest 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 78340e93b202d4088b453e39594b84345a247cbe
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6cb84d34e2a175a23c676d9cd5a5354c7b75c12e
+ms.sourcegitcommit: f9e71d3b8a54a98c282ef49783babe5698300c06
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048601"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "60793915"
 ---
 # <a name="get-accesspackageassignmentrequest"></a>获取 accessPackageAssignmentRequest
 
@@ -18,7 +18,7 @@ ms.locfileid: "52048601"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 [Azure AD 权利管理](../resources/entitlementmanagement-root.md)中，检索  [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) 对象的属性和关系。
+在[Azure AD中](../resources/entitlementmanagement-root.md)，检索[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md)对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 
@@ -40,7 +40,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentRequests/{i
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持一些 OData 查询参数来帮助自定义响应。 例如，若要检索请求的访问包，请包括在 `$expand=accessPackage` 查询中。 若要检索结果分配，请包括在 `$expand=accessPackageAssignment` 查询中。  若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$expand` OData 查询参数扩展关系，以检索 和 `accessPackage` `requestor` `acccessPackageAssignment` 。  例如，若要检索访问包分配的目标，请包括在 `$expand=accessPackageAssignment($expand=target)` 查询中。  若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 

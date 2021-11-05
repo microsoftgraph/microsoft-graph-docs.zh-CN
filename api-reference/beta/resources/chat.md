@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 7d572051d0889add7f68cc868d410bf3dc702d65
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 88094c1bc6af05a0454c2a02c35521f85f48730f
+ms.sourcegitcommit: f9e71d3b8a54a98c282ef49783babe5698300c06
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60560812"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "60793908"
 ---
 # <a name="chat-resource-type"></a>聊天资源类型
 
@@ -35,17 +35,19 @@ ms.locfileid: "60560812"
 |[添加聊天成员](../api/chat-post-members.md) | 位置标头 | 向聊天中添加用户。| 
 |[获取聊天成员](../api/chat-get-members.md) | [conversationMember](conversationmember.md) | 获取聊天中的单个用户。| 
 |[删除聊天成员](../api/chat-delete-members.md)|无|从聊天中删除用户。|
-|[获取用户和应用之间的聊天](../api/userscopeteamsappinstallation-get-chat.md) | [聊天](chat.md)| 获取用户与应用之间的一对一聊天 |
+|[获取用户和应用之间的聊天](../api/userscopeteamsappinstallation-get-chat.md) | [聊天](chat.md)| 获取用户与应用之间的一对一聊天。|
+|[将聊天标记为已读](../api/chat-markchatreadforuser.md) |无| 将用户聊天标记为已读。|
+|[将聊天标记为未读](../api/chat-markchatunreadforuser.md) |无| 将用户聊天标记为未读。|
 | **邮件** |||
 |[列出聊天中的消息](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | 获取聊天中的消息。 | 
 |[获取聊天中的消息](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | 获取聊天中的单个消息。 | 
 |[为用户在所有聊天中获取消息](../api/chats-getallmessages.md)| [chat](chat.md) 集合| 从用户参与的所有聊天中获取消息。 |
 | **应用** |||
 |[列出聊天中的应用](../api/chat-list-installedapps.md) |[teamsAppInstallation](teamsappinstallation.md) 集合 | 列出聊天网站中安装 (关联的会议) 。|
-|[在聊天中获取应用](../api/chat-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | 在聊天活动和相关会议 (安装特定) 。|
-|[在聊天中添加应用](../api/chat-post-installedapps.md) | | 添加 (在) 会议及其关联的会议 (中安装) 。|
-|[升级聊天中的应用](../api/chat-teamsappinstallation-upgrade.md) | 无 | 更新到聊天会话和关联会议 (安装的应用的) 。|
-|[从聊天中卸载应用](../api/chat-delete-installedapps.md) | 无 | 从 (会议) 中删除 (应用) 。|
+|[在聊天中获取应用](../api/chat-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | 获取安装在聊天会话和关联会议 (中的特定) 。|
+|[在聊天中添加应用](../api/chat-post-installedapps.md) | | 添加 (在) 会议及其关联会议 (应用中安装) 。|
+|[升级聊天中的应用](../api/chat-teamsappinstallation-upgrade.md) | 无 | 更新到聊天活动和相关会议 (安装的应用的) 。|
+|[从聊天中卸载应用](../api/chat-delete-installedapps.md) | 无 | 从 (和) 会议记录中删除 (卸载) 。|
 |[List permission grants](../api/chat-list-permissiongrants.md) | [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) 集合 | 列出已授予此聊天中的应用的权限。|
 | **选项卡** |||
 |[列出聊天中的选项卡](../api/chat-list-tabs.md) | [teamsTab](teamstab.md) | 列出固定到聊天 (关联的会议选项卡) 。|
@@ -53,7 +55,7 @@ ms.locfileid: "60560812"
 |[向聊天添加选项卡](../api/chat-post-tabs.md) | [teamsTab](teamstab.md) | 将 (固定) 选项卡添加到聊天 (关联的会议) 。|
 |[聊天中的"更新"选项卡](../api/chat-patch-tabs.md) | [teamsTab](teamstab.md) | 更新聊天记录和相关会议 (选项卡) 。|
 |[从聊天中删除选项卡](../api/chat-delete-tabs.md) | 无 | 从 (和) 会议记录中删除 (取消固定选项卡) 。|
-| **Operations** |||
+| **操作** |||
 |[列出聊天操作](../api/chat-list-operations.md) | [teamsAsyncOperation](teamsAsyncOperation.md) 集合 | 获取在聊天中运行或运行的异步操作列表。|
 |[获取聊天操作](../api/teamsasyncoperation-get.md#example-get-operation-on-chat) | [teamsAsyncOperation](teamsAsyncOperation.md) | 获取在聊天中运行或运行的单个异步操作。|
 
@@ -63,13 +65,13 @@ ms.locfileid: "60560812"
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-| chatType| [chatType](../resources/chat.md#chattype-values) | 指定聊天类型。 可取值为：`group`、`oneOnOne`、`meeting`、`unknownFutureValue`。|
+| chatType| [chatType](../resources/chat.md#chattype-values) | 指定聊天类型。 可能的值是：`group`、`oneOnOne`、`meeting`、`unknownFutureValue`。|
 | createdDateTime| dateTimeOffset|  创建聊天的日期和时间。 只读。|
 | id| String| 聊天的唯一标识符。 只读。|
 | lastUpdatedDateTime| dateTimeOffset|  上次更改聊天的日期和时间或成员列表。 只读。|
 | onlineMeetingInfo | [teamworkOnlineMeetingInfo](../resources/teamworkonlinemeetinginfo.md) | 表示有关联机会议的详细信息。 如果聊天未与联机会议关联，则属性为空。 只读。|
 | tenantId| String | 创建聊天的租户的标识符。 只读。|
-| topic| String|   (可选) 聊天的主题或主题。 仅适用于群聊。|
+| topic| String|   (聊天) 主题或主题的可选选项。 仅适用于群聊。|
 | 一个|[chatViewpoint](../resources/chatviewpoint.md)|表示有关聊天的特定于呼叫者的信息，例如上次消息读取日期和时间。 只有在委托上下文中提出请求时，才填充此属性。|
 | webUrl| String | 一个超链接，将转到 Microsoft Teams。 应将此 URL 视为不透明的 blob，而不对其进行解析。 只读。|
 
@@ -91,7 +93,7 @@ ms.locfileid: "60560812"
 | members | [conversationMember](conversationmember.md) 集合 | 聊天中所有成员的集合。 可为 Null。 |
 | messages | [chatMessage](chatmessage.md) 集合 | 聊天中所有消息的集合。 可为 NULL。 |
 | permissionGrants| [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) 集合| 授予聊天应用的权限集合。|
-| operations | [teamsAsyncOperation](teamsasyncoperation.md) 集合 | 在聊天中运行Teams运行的所有异步操作的集合。 可为 NULL。 
+| operations | [teamsAsyncOperation](teamsasyncoperation.md) 集合 | 在聊天中Teams运行或运行的异步操作的所有异步操作的集合。 可为 NULL。 
 | lastMessagePreview | [chatMessageInfo](chatmessageinfo.md)| 预览聊天中发送的最后一条消息。 如果聊天中未发送任何消息，则其为 Null。 目前，仅 [列表聊天](../api/chat-list.md) 操作支持此属性。|
 
 ## <a name="json-representation"></a>JSON 表示形式

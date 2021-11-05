@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 3b175b9235774cf620e8f450c92cc1f5752c9531
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: 24eff3d37049eee683c10a6e180af67d2cb1516c
+ms.sourcegitcommit: f9e71d3b8a54a98c282ef49783babe5698300c06
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60730107"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "60793920"
 ---
 # <a name="update-user"></a>更新用户
 
@@ -66,7 +66,7 @@ PATCH /users/{id | userPrincipalName}
 |employeeId|String|由组织分配给该用户的员工标识符。|
 | employeeType | String | 捕获企业员工类型。 例如，`Employee`、`Contractor`、`Consultant` 或 `Vendor`。|
 |givenName|String|用户的名。|
-|hireDate|DateTimeOffset|用户的雇佣日期。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
+|employeeHireDate|DateTimeOffset|用户的雇佣日期。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
 |identities|[objectIdentity](../resources/objectidentity.md) 集合| 表示可用于登录此用户帐户的标识。 标识可由 Microsoft、组织或诸如 Facebook、Google 和 Microsoft 等社交标识提供者提供，并绑定到用户帐户。 对标识 **的任何** 更新都将替换整个集合，并且您必须在集合中提供 userPrincipalName **signInType** 标识。|
 |interests|String collection|用户介绍自身兴趣的列表。|
 |jobTitle|String|用户的职务。|
@@ -96,7 +96,7 @@ PATCH /users/{id | userPrincipalName}
 由于 **用户** 资源 [支持扩展](/graph/extensibility-overview)，因此可以使用 操作在现有用户实例的扩展的自定义属性中添加、更新或删除你自己的特定于 `PATCH` **应用** 的数据。
 
 > [!NOTE] 
-> 以下属性不能由仅具有应用程序权限的应用更新：aboutMe、birthday、hireDate、interests、mySite、pastProjects、preferredName、responsibilities、schools和skills 。       
+> 仅具有应用程序权限的应用无法更新以下属性：aboutMe、birthday、employeeHireDate、interests、mySite、pastProjects、preferredName、responsibilities、schools和 **skills。**        
 
 ## <a name="response"></a>响应
 
