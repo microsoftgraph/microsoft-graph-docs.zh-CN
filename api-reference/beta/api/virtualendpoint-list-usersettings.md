@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 1eb0a1aa7884de65ad4e558cea0fc7f4fb23fac5
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 6b176e1d5c391ec0e1c0f299bb5b291678105048
+ms.sourcegitcommit: c00c61ce35a6f204a9907aa6f2644ea7a86a5b6e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766500"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "60805410"
 ---
 # <a name="list-usersettings"></a>列出 userSettings
 
@@ -97,7 +97,8 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/userSettin
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.cloudPcUserSetting)"
+  "@odata.type": "microsoft.graph.cloudPcUserSetting",
+  "isCollection": true
 }
 -->
 ``` http

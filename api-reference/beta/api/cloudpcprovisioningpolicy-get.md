@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 9a7a7a22cfe71fc57e2c4ffdfc46f7a06219d1a9
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 1629412f7a624cc057789e576f4810cc19f0aa40
+ms.sourcegitcommit: c00c61ce35a6f204a9907aa6f2644ea7a86a5b6e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59764141"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "60805514"
 ---
 # <a name="get-cloudpcprovisioningpolicy"></a>获取 cloudPcProvisioningPolicy
 
@@ -111,7 +111,6 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
     "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
     "id": "b0c2d35f-3385-46c8-a6f5-6c3dfad7ffff",
     "displayName": "Display Name value",
@@ -120,7 +119,6 @@ Content-Type: application/json
     "imageId": "Image ID value",
     "imageDisplayName": "Image Display Name value",
     "imageType": "custom"
-  }
 }
 ```
 
@@ -173,7 +171,6 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
     "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
     "id": "b0c2d35f-3385-46c8-a6f5-6c3dfad7ffff",
     "displayName": "Display Name value",
@@ -192,6 +189,5 @@ Content-Type: application/json
           }
       }
     ]
-  }
 }
 ```

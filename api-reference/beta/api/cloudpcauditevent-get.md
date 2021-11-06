@@ -5,12 +5,12 @@ author: ecmadao
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 31fbfe0e1aba23cded00fd0fddfe73a9ebfa669b
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: df84ce34667a7671b08946844cf6001bdae1a9f8
+ms.sourcegitcommit: c00c61ce35a6f204a9907aa6f2644ea7a86a5b6e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766731"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "60805526"
 ---
 # <a name="get-cloudpcauditevent"></a>获取 cloudPcAuditEvent
 
@@ -104,17 +104,16 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
       "@odata.type": "#microsoft.graph.cloudPcAuditEvent",
       "id": "250473f5-029f-4037-813d-ba4768201d61",
       "displayName": "Display Name value",
       "componentName": "Component Name value",  
       "activity": "Activity value",  
-      "activityDateTime": "2021-02-14T13:10:51.814636+08:00",  
+      "activityDateTime": "2021-02-14T13:10:51.814636+08:00",
       "activityType": " Activity Type value",  
-      "activityOperationType": "Activity Operation Type value",  
+      "activityOperationType": "Activity Operation Type value",
       "activityResult": "Activity Result value",  
-      "correlationId": "a5c71cc6-2271-4d5c-9bfe-d94781e83fe6",  
+      "correlationId": "a5c71cc6-2271-4d5c-9bfe-d94781e83fe6",
       "category": "Category value",
       "actor": {
           "@odata.type": "microsoft.graph.cloudPcAuditActor",
@@ -153,7 +152,6 @@ Content-Type: application/json
           "type": "Type value",
           "resourceId": "Resource Id value"
         }
-      ],
-  }
+      ]
 }
 ```

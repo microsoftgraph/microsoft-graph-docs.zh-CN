@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: e1cbf38e4b70b445c3f44937e862609c61eca8ff
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 52b40f3032475314ac49ada4cca1c380a0ce4624
+ms.sourcegitcommit: c00c61ce35a6f204a9907aa6f2644ea7a86a5b6e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59765142"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "60805428"
 ---
 # <a name="get-cloudpcusersetting"></a>获取 cloudPcUserSetting
 
@@ -168,7 +168,6 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
     "@odata.type": "#microsoft.graph.cloudPcUserSetting",
     "id": "b0c2d35f-3385-46c8-a6f5-6c3dfad7ffff",
     "displayName": "Display Name value",
@@ -187,6 +186,5 @@ Content-Type: application/json
           }
       }
     ]
-  }
 }
 ```

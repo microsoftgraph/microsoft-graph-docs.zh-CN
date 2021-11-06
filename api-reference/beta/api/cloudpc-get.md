@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: bf0f163d43c31e053e728da577f6b0f7514ed27a
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: cbba8afda6cc021ee1f487f82607515082c7b65a
+ms.sourcegitcommit: c00c61ce35a6f204a9907aa6f2644ea7a86a5b6e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59507569"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "60805498"
 ---
 # <a name="get-cloudpc"></a>获取 cloudPC
 
@@ -20,7 +20,7 @@ ms.locfileid: "59507569"
 
 读取特定 [cloudPC](../resources/cloudpc.md) 对象的属性和关系。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -109,12 +109,11 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
     "@odata.type": "#microsoft.graph.cloudPC",
     "id": "ac74ae8b-85f7-4272-88cc-54192674ffff",
     "displayName": "Demo-0",
     "imageDisplayName": "Windows-10 19h1-evd",
-    "managedDeviceId": "e87f50c7-fa7f-4687-aade-dd45f3d6ffff",  
+    "managedDeviceId": "e87f50c7-fa7f-4687-aade-dd45f3d6ffff",
     "managedDeviceName": "A00002GI001",
     "provisioningPolicyId": "13fa0778-ba00-438a-96d3-488c8602ffff",
     "provisioningPolicyName": "Marketing provisioning policy",
@@ -137,6 +136,5 @@ Content-Type: application/json
     "userPrincipalName": "pmitchell@cpccustomer001.onmicrosoft.com",
     "lastModifiedDateTime": "2020-11-03T18:14:34Z",
     "gracePeriodEndDateTime": "2020-11-010T20:00:34Z"
-  }
 }
 ```
