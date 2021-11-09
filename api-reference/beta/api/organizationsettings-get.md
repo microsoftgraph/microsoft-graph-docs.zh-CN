@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 9fcbe8041bd421d2d69cffb49814af82453a3a56
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1feebfb659907796d424e7daac474268aa11f4b9
+ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59763928"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60780484"
 ---
 # <a name="get-organizationsettings"></a>获取 organizationSettings
 
@@ -20,7 +20,7 @@ ms.locfileid: "59763928"
 
 检索 [organizationSettings](../resources/organizationsettings.md) 对象的属性和关系，包括 **profileCardProperties**。
 
-此操作不会通过 [itemInsights](../resources/iteminsightssettings.md)导航属性返回 **itemInsightsSettings。** 请[改为使用 get itemInsightsSettings。](iteminsightssettings-get.md)
+此操作不会返回 [insightsSettings](../resources/insightssettings.md)。 根据见解的类型，可以使用列表 [itemInsights](organizationsettings-list-iteminsights.md) 或 [list peopleInsights 获取其设置](organizationsettings-list-peopleinsights.md)。
 
 ## <a name="permissions"></a>权限
 

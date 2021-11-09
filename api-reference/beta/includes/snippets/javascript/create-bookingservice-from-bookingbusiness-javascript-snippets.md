@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 0958b7c4a628dcdaf9001cdd47567161de4bb41c8c0a6716a0bd404be58e66a6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4f183c81dcdc02d54fc32d6ea6b3474b1c14e33c
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56903139"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60736658"
 ---
 ```javascript
 
@@ -56,6 +56,8 @@ const bookingService = {
     ],
     description: 'Individual bento box lunch delivery',
     displayName: 'Bento',
+    isLocationOnline: true,
+    smsNotificationsEnabled: true,
     isHiddenFromCustomers: false,
     notes: 'Home-cooked special',
     postBuffer: 'PT10M',

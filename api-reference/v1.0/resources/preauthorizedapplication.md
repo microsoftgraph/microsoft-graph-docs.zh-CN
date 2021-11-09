@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 0f3225ad48c4faa44efedc1d0830a9bdfcc8d4b5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0f28c771f267324a25198edd66ac64ff7bcdaadd
+ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019221"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60780539"
 ---
 # <a name="preauthorizedapplication-resource-type"></a>preAuthorizedApplication 资源类型
 
 命名空间：microsoft.graph
 
-列出具有访问此应用程序 API 的指定权限的预授权客户端应用程序。 对于用户指定的权限，用户无需同意任何 (应用程序) 。 但是，在预先身份验证Applications中未列出的其他任何权限 (增量同意请求获取，例如) 用户同意。
+列出具有访问此应用程序 API 的指定权限的预授权客户端应用程序。 对于用户指定的权限，用户无需同意任何 (应用程序) 。 但是，在预先身份验证应用程序请求 (（例如，) ）请求的其他任何权限都将需要用户同意。
 
 ## <a name="properties"></a>属性
 
@@ -39,7 +39,7 @@ ms.locfileid: "59019221"
 ```json
 {
   "appId": "String",
-  "delegatedPermissionIds": ["String"]
+  "permissionIds": ["String"]
 }
 
 ```

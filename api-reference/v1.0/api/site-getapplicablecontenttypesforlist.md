@@ -1,16 +1,16 @@
 ---
 author: swapnil1993
 title: site： getApplicableContentTypesForList
-description: 获取可添加到列表的网站内容类型。
+description: 获取可添加到列表中的网站内容类型。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: ec0e453973c825da8ac6ed13094984a63ae71f88
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: dd6b3fbd5139692e31fafa1df4d6dfc64cf0422e
+ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60730401"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60780784"
 ---
 # <a name="site-getapplicablecontenttypesforlist"></a>site： getApplicableContentTypesForList
 命名空间：microsoft.graph
@@ -75,7 +75,7 @@ GET /sites/{siteId}/getApplicableContentTypesForList
 }
 -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/sites/{siteId}/getApplicableContentTypesForList(listId='{listId}')
+GET https://graph.microsoft.com/v1.0/sites/{siteId}/getApplicableContentTypesForList(listId='{list-id}')
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/site-getapplicablecontenttypesforlist-csharp-snippets.md)]

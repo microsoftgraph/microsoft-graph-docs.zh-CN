@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: b4857805febc6cc481d1c06829d8c81eab7761484d9c57c2d0c87f1eaa3cb01e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1e29c0d9cecc838464615347751c92507574d8f4
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56903134"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60736642"
 ---
 ```javascript
 
@@ -22,6 +22,7 @@ const bookingStaffMember = {
     emailAddress: 'danas@contoso.com',
     'role@odata.type':'#microsoft.graph.bookingStaffRole',
     role: 'externalGuest',
+    timeZone: 'America/Chicago',
     useBusinessHours: true,
     'workingHours@odata.type':'#Collection(microsoft.graph.bookingWorkHours)',
     workingHours: [

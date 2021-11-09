@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: ae9054e92279d976d65aafc72ac2c38190c88b84
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 28735467ef1bc233f5ba6d5ecc3144d64e31df3e
+ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59507814"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60780896"
 ---
 # <a name="cloudpcstatusdetails-resource-type"></a>cloudPcStatusDetails 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "59507814"
 
 |属性|类型|说明|
 |:---|:---|:---|
-|code|String|与云电脑状态相关联的代码。|
+|code|字符串|与云电脑状态相关联的代码。|
 |message|String|状态消息。|
 |additionalInformation|[KeyValuePair](../resources/keyvaluepair.md) 集合|有关云电脑状态的其他信息。|
 

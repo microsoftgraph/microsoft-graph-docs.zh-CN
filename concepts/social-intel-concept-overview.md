@@ -5,25 +5,25 @@ author: simonhult
 ms.localizationpriority: high
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 3107e7dbfcc54e1a2b9c76bdf35cecf1e80ef527
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7769bbce057dd387bdc7494c98f069f6a4d06c9b
+ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59103940"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60780861"
 ---
 # <a name="overview-of-people-and-workplace-intelligence-in-microsoft-graph"></a>Microsoft Graph 中的人员和工作场所智能概述
 
 Microsoft 365 云服务的亿万用户组成了 Microsoft Graph 的核心部分。 用户的数据通过 Microsoft Graph 提供的服务得到精心的管理、保护和适当的授权，以提升企业生产力和创造力。 
 
-通过配置文件API，您可以作为应用开发人员为 Microsoft 365 服务中的人员建模并代表他们，借助配置文件 API，管理员可以控制组织中用户个人资料卡上显示的信息。
+通过 _个人资料 API_，你可以作为应用开发人员为 Microsoft 365 服务中的人员建模并代表他们，借助个人资料卡片 API，管理员可以控制组织中用户个人资料卡上显示的信息。
 
 因为在 Microsoft Graph 中有大量的用户数据，所以派生自用户社交交互的数据将尤为受到关注。 它可以对回答类似以下问题提供智能见解：
 
 - “搜索名称以‘J’开头的人”
 - “此人最感兴趣的文档有哪些？”
 
-你可以在 Microsoft Graph 中使用人员 API 和见解 API 来构建更为智能的应用，分别访问与用户相关度高的人员和文档。
+你可以在 Microsoft Graph 中使用 _人员 API_ 和 _见解 API_ 来构建更为智能的应用，分别访问与用户相关度高的人员和文档。
 
 人员 API 基于用户的联系人、社交网络、组织目录以及电子邮件上的最近通信，返回按与该用户相关性排序的人员。这对于选取人员的应用场景尤为有用。
 

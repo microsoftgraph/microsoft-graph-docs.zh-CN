@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: fbaa5432a3874e988f644789fc4e2bb65cc27615
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 37d2cf9e908873abff9888a96a24f6d40cbbb298
+ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766899"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60780875"
 ---
 # <a name="cloudpcdeviceimage-getsourceimages"></a>cloudPcDeviceImage：getSourceImages
 
@@ -18,7 +18,7 @@ ms.locfileid: "59766899"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取 [cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) 对象。 查看你的订阅中所有托管图像资源Azure Active Directory列表。
+获取 [cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) 对象。 查看你的托管映像订阅中所有Azure Active Directory资源。
 
 ## <a name="permissions"></a>权限
 

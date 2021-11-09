@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 06ce1def7a5b7e269e4fb765221abc2a07a8c3894bb5d1cc22cc8c001264ae42
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6b51cd2794c1bae8aae5421487bf23b54b9acf4d
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57106200"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60736648"
 ---
 ```csharp
 
@@ -46,6 +46,8 @@ var bookingAppointment = new BookingAppointment
     CustomerName = "Jordan Miller",
     CustomerNotes = "Please be on time.",
     CustomerPhone = "213-555-0199",
+    CustomerTimeZone = "America/Chicago",
+    SmsNotificationsEnabled = true,
     End = new DateTimeTimeZone
     {
         DateTime = "2018-05-01T12:30:00+00:00",
@@ -60,6 +62,7 @@ var bookingAppointment = new BookingAppointment
     InvoiceId = "1001",
     InvoiceStatus = BookingInvoiceStatus.Open,
     InvoiceUrl = "theInvoiceUrl",
+    IsLocationOnline = true,
     OptOutOfCustomerEmail = false,
     PostBuffer = new Duration("PT10M"),
     PreBuffer = new Duration("PT5M"),

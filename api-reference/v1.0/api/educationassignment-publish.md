@@ -1,16 +1,16 @@
 ---
 title: educationAssignment： publish
-description: 此操作将发布教育作业。
+description: 将 educationAssignment 的状态从原始草稿状态更改为已发布状态。
 ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 5f7700ef7b45c7068f5f71d613e3a2ca31488948
-ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
+ms.openlocfilehash: e95b37a0a6a2090a9351827be9d19ea4c82eb295
+ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60219787"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60780812"
 ---
 # <a name="educationassignment-publish"></a>educationAssignment： publish
 
@@ -18,7 +18,13 @@ ms.locfileid: "60219787"
 
 发布教育作业。
 
+将 [educationAssignment 的状态](../resources/educationassignment.md) 从原始 `draft` 状态更改为 `published` 状态。 
+
+如果工作分配计划在将来的日期 `draft` ，您可以将状态 `scheduled` 从 更改为 。  
+
 只有课堂中的教师才能进行此呼叫。 当作业在草稿状态时，学生将看不到作业，也不会看到任何提交对象。 调用此 API 将 [创建 educationSubmission](../resources/educationsubmission.md) 对象，并在每个学生列表中显示作业。
+
+如果发布过程中出现任何后端故障，则分配 `draft` 的状态将返回。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -27,7 +33,7 @@ ms.locfileid: "60219787"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  EduAssignments.ReadWriteBasic、EduAssignments.ReadWrite  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|Application | 不支持。 | 
+|应用程序 | 不支持。 | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

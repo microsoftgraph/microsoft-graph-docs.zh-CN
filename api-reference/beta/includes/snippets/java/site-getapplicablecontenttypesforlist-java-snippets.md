@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 44df4938cf21b68c23bda537760d2adad5fc429fedac521698c9cbeff6149bfa
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3a98a257d6d07e31cce535e1cb912bef3a28cb10
+ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57106264"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60780825"
 ---
 ```java
 
@@ -14,7 +14,7 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 SiteGetApplicableContentTypesForListCollectionPage getApplicableContentTypesForList = graphClient.sites("{siteId}")
     .getApplicableContentTypesForList(SiteGetApplicableContentTypesForListParameterSet
         .newBuilder()
-        .withListId("listId")
+        .withListId("{list-id}")
         .build())
     .buildRequest()
     .get();

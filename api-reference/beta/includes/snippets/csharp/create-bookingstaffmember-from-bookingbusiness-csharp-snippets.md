@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: aa22df4ea44a4ec506f8911efd75b226d79151cb9e43e3261593619511af5d82
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: abe18cde512671439caf6581bacf43e2675c9e4f
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57105041"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60736645"
 ---
 ```csharp
 
@@ -17,6 +17,7 @@ var bookingStaffMember = new BookingStaffMember
     DisplayName = "Dana Swope",
     EmailAddress = "danas@contoso.com",
     Role = BookingStaffRole.ExternalGuest,
+    TimeZone = "America/Chicago",
     UseBusinessHours = true,
     WorkingHours = new List<BookingWorkHours>()
     {

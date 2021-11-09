@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 51781a2879a7769b3ddd7d3ae8adc50972732d56c27ce3614d8ad0c3a3111dc4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 85cc6e9d5987979a87709808b80bbe6e134da0a4
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57106202"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60736651"
 ---
 ```objc
 
@@ -39,6 +39,8 @@ MSGraphPhysicalAddress *address = [[MSGraphPhysicalAddress alloc] init];
 [bookingAppointment setCustomerName:@"Jordan Miller"];
 [bookingAppointment setCustomerNotes:@"Please be on time."];
 [bookingAppointment setCustomerPhone:@"213-555-0199"];
+[bookingAppointment setCustomerTimeZone:@"America/Chicago"];
+[bookingAppointment setSmsNotificationsEnabled: true];
 MSGraphDateTimeTimeZone *end = [[MSGraphDateTimeTimeZone alloc] init];
 [end setDateTime: "2018-05-01T12:30:00+00:00"];
 [end setTimeZone:@"UTC"];
@@ -51,6 +53,7 @@ MSGraphDateTimeTimeZone *invoiceDate = [[MSGraphDateTimeTimeZone alloc] init];
 [bookingAppointment setInvoiceId:@"1001"];
 [bookingAppointment setInvoiceStatus: [MSGraphBookingInvoiceStatus open]];
 [bookingAppointment setInvoiceUrl:@"theInvoiceUrl"];
+[bookingAppointment setIsLocationOnline: true];
 [bookingAppointment setOptOutOfCustomerEmail: false];
 [bookingAppointment setPostBuffer:@"PT10M"];
 [bookingAppointment setPreBuffer:@"PT5M"];

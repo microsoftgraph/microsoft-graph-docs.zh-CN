@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: e45d26c0d4952593ec543d62832b59ca4110b9a57699a6ff3fe7a02592bcf7dd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6d9ba5f5b113da0c4486da1b030c279f6b3d0b44
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57105044"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60736659"
 ---
 ```java
 
@@ -48,6 +48,8 @@ defaultRemindersList.add(defaultReminders);
 bookingService.defaultReminders = defaultRemindersList;
 bookingService.description = "Individual bento box lunch delivery";
 bookingService.displayName = "Bento";
+bookingService.isLocationOnline = true;
+bookingService.smsNotificationsEnabled = true;
 bookingService.isHiddenFromCustomers = false;
 bookingService.notes = "Home-cooked special";
 bookingService.postBuffer = DatatypeFactory.newInstance().newDuration("PT10M");

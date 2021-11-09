@@ -1,16 +1,16 @@
 ---
 title: 列出人员
 description: 检索 person 对象列表，这些对象按与 user 的相关程度进行排序，相关程度由用户的通信和协作模式以及业务关系决定。
-author: dkershaw10
-localization_priority: Normal
+author: anthona
+ms.localizationpriority: medium
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 8df99c32c43e947863c4a7713c984b99fbd4bb73
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e28372da45a246e92b696f8e8b7ed79e5e7cb050
+ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053354"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60780485"
 ---
 # <a name="list-people"></a>列出人员
 
@@ -26,9 +26,9 @@ ms.locfileid: "52053354"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | People.Read    |
+|委派（工作或学校帐户） | People.Read、People.Read.All    |
 |委派（个人 Microsoft 帐户） | People.Read    |
-|应用程序 | 不支持。 |
+|应用程序 | People.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -46,7 +46,7 @@ GET /users/{id | userPrincipalName}/people
 |名称|值|说明|
 |:---------------|:--------|:-------|
 |$filter|string|将响应限制为仅记录中包含指定条件的那些人员。|
-|$orderby|string|默认情况下，按与查询的相关程度对响应中的人员进行排序。 可以使用 *$orderby* 参数更改响应中的人员排序。|
+|$orderby|string|默认情况下，按与查询的相关程度对响应中的人员进行排序。可以使用 *$orderby* 参数更改响应中的人员排序。|
 |$search|string|按姓名或别名搜索人员。 支持模糊匹配。 参数仅适用于搜索已登录用户的相关人员，而不适用于搜索与其他用户相关的人员。 此外还支持 `topic` 关键字，以根据从与此人的电子邮件对话中提取的主题查找人员。 有关信息和示例，请参阅“[获取相关人员的信息](/graph/people-example#perform-a-fuzzy-search)”的“*执行模糊搜索*”部分。|
 |$select|string|要在响应中添加的属性列表（以逗号分隔）。为获得最佳结果，请仅选择所需属性的子集。|
 |$skip|int|跳过前 n 个结果，可用于分页。使用 *$search* 时不支持此参数。|
@@ -65,13 +65,13 @@ GET /users/{id | userPrincipalName}/people
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码 `200 OK` 和 [person](../resources/person.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [person](../resources/person.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
 ### <a name="browse"></a>浏览
 
-本节中的请求根据通信、协作和业务关系，获取与登录 () `/me` 相关最多的人员。
+本节中的请求根据通信、协作和业务关系，获取与登录 () `/me` 关系最相关的人员。
 
 默认情况下，每个响应都会返回10条记录，但您可以 改变这点 使用 *$顶部* 参数。 这些请求需要 People.Read 权限。
 

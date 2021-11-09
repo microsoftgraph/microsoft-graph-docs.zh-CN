@@ -2,12 +2,12 @@
 title: Microsoft Graph 错误响应和资源类型
 description: 本主题介绍了 Microsoft Graph 响应中可能返回的一些错误。
 ms.localizationpriority: high
-ms.openlocfilehash: 4f080b18e2ef645a2045efe08437bb05684fb2a9
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: 6894090958a53764a38b4be346fc1ab625ae9f23
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60289159"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694349"
 ---
 # <a name="microsoft-graph-error-responses-and-resource-types"></a>Microsoft Graph 错误响应和资源类型
 
@@ -142,7 +142,7 @@ public bool IsError(string expectedErrorCode)
 
 有关介绍如何正确处理错误的示例，请参阅 [错误代码处理](https://gist.github.com/rgregg/a1866be15e685983b441)。
 
-根处的 `message` 属性包含供开发人员阅读的错误消息。错误消息未本地化，并且不应直接向用户显示。处理错误时，代码不应关闭 `message` 值，因为它们随时会更改，并且它们通常包含特定于失败请求的动态信息。只应针对 `code` 属性中返回的错误代码进行编码。
+根处的 `message` 属性包含供开发人员阅读的错误消息。 错误消息未本地化，并且不应直接向用户显示。 在处理错误时，代码不应根据 `message` 值进行分支，因为它们随时会更改，并且它们通常包含特定于失败请求的动态信息。 只应针对 `code` 属性中返回的错误代码进行编码。
 
 #### <a name="detailed-error-codes"></a>详细的错误代码
 以下是你的应用可能会在嵌套的 `innererror` 对象中遇到的一些其他错误。应用不需要处理这些错误，但如果它们选择，也可以处理。服务可能会随时添加新的错误代码或者停止返回的旧代码，因此所有应用都能够处理 [基本错误代码](#code-property) 非常重要。
@@ -172,7 +172,7 @@ public bool IsError(string expectedErrorCode)
 | **maxItemCountExceeded**           | 已达到最大项目数量限制。
 | **maxQueryLengthExceeded**         | 已超出最大查询长度。
 | **maxStreamSizeExceeded**          | 已达到最大流大小。
-| **parameterIsTooLong**             | 参数超出最大长度。
+| **parameterIsTooLong**             | 参数超过最大长度。
 | **parameterIsTooSmall**            | 参数小于最小值。
 | **pathIsTooLong**                  | 路径超出最大长度。
 | **pathTooDeep**                    | 已达到文件夹层次结构深度限制。

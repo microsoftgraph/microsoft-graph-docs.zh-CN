@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: adimitui
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 2b4ac86a3dd1bad876c6819b9f49c28ca4bac7fb
-ms.sourcegitcommit: 6cea9bc17d3859e475a74c4a6f661f848e837e89
+ms.openlocfilehash: 816f0028c8250e497b4cf067c5bd22995b73973b
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240885"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695375"
 ---
 # <a name="organization-resource-type"></a>组织资源类型
 
@@ -51,7 +51,7 @@ ms.locfileid: "60240885"
 | businessPhones | String collection | 组织的电话号码。虽然这是字符串集合，但是只能为该属性设置一个号码。 |
 | 城市 | String | 组织地址所在的城市名称。 |
 | country | String | 组织地址所在的国家/地区名称。 |
-| countryLetterCode | String | 组织所在的国家/地区缩写。 |
+| countryLetterCode | 字符串 | 组织所在的国家/地区缩写，采用 ISO 3166-2 格式。 |
 | createdDateTime | DateTimeOffset | 组织的创建时间戳。 值无法修改，并在组织创建时自动填充。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。 |
 | deletedDateTime | DateTimeOffset | 表示使用 ISO 8601 格式删除Azure AD租户的日期和时间，并且始终采用 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC `2014-01-01T00:00:00Z`。只读。 |
 | displayName | String | 租户的显示名称。 |

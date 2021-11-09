@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: edb01a24dd03570224959ac1881754ecebc979e4d3965394d7a688092c47f327
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8476740025632732415a86cb7d535664d12c5473
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56903136"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60736643"
 ---
 ```objc
 
@@ -21,6 +21,7 @@ MSGraphBookingStaffMember *bookingStaffMember = [[MSGraphBookingStaffMember allo
 [bookingStaffMember setDisplayName:@"Dana Swope"];
 [bookingStaffMember setEmailAddress:@"danas@contoso.com"];
 [bookingStaffMember setRole: [MSGraphBookingStaffRole externalGuest]];
+[bookingStaffMember setTimeZone:@"America/Chicago"];
 [bookingStaffMember setUseBusinessHours: true];
 NSMutableArray *workingHoursList = [[NSMutableArray alloc] init];
 MSGraphBookingWorkHours *workingHours = [[MSGraphBookingWorkHours alloc] init];

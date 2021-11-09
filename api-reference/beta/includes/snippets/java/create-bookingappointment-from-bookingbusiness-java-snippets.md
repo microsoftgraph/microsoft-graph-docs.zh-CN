@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c500183e5d7d75e7eaaf0ff6b788645db97562fedff46f0731e25f5ac675d834
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e29ae25ff3ab29b30d1f1f9ceb8603af7d60b2dc
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57106201"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60736649"
 ---
 ```java
 
@@ -37,6 +37,8 @@ bookingAppointment.customerLocation = customerLocation;
 bookingAppointment.customerName = "Jordan Miller";
 bookingAppointment.customerNotes = "Please be on time.";
 bookingAppointment.customerPhone = "213-555-0199";
+bookingAppointment.customerTimeZone = "America/Chicago";
+bookingAppointment.smsNotificationsEnabled = true;
 DateTimeTimeZone end = new DateTimeTimeZone();
 end.dateTime = "2018-05-01T12:30:00+00:00";
 end.timeZone = "UTC";
@@ -50,6 +52,7 @@ bookingAppointment.invoiceId = "1001";
 bookingAppointment.additionalDataManager().put("invoiceStatus@odata.type", new JsonPrimitive("#microsoft.graph.bookingInvoiceStatus"));
 bookingAppointment.invoiceStatus = BookingInvoiceStatus.OPEN;
 bookingAppointment.invoiceUrl = "theInvoiceUrl";
+bookingAppointment.isLocationOnline = true;
 bookingAppointment.optOutOfCustomerEmail = false;
 bookingAppointment.postBuffer = DatatypeFactory.newInstance().newDuration("PT10M");
 bookingAppointment.preBuffer = DatatypeFactory.newInstance().newDuration("PT5M");

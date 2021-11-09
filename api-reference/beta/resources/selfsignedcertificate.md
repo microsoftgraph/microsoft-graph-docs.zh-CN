@@ -1,16 +1,16 @@
 ---
 title: selfSignedCertificate 资源类型
 description: 包含有关签名证书的公共部分的信息。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
 author: luleonpla
-ms.openlocfilehash: a32720520c804d13048babe8a779132780abc782
-ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
+ms.openlocfilehash: 546672e4f2df5908422312ee9df9496eaa5986e8
+ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52266862"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60780994"
 ---
 # <a name="selfsignedcertificate-resource-type"></a>selfSignedCertificate 资源类型
 
@@ -18,19 +18,19 @@ ms.locfileid: "52266862"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-包含签名证书的公共部分。 它是操作 [addSelfSignedSigningCertificate 的返回类型](../api/serviceprincipal-addtokensigningcertificate.md)。 服务提供商使用签名证书的公共部分来验证令牌的颁发者。
+包含签名证书的公共部分。 它是操作 [addTokenSigningCertificate 的返回类型](../api/serviceprincipal-addtokensigningcertificate.md)。 服务提供商使用签名证书的公共部分来验证令牌的颁发者。
 
 ## <a name="properties"></a>属性
 属性|类型|说明
 ----|--|---
 |customKeyIdentifier|二进制| 自定义密钥标识符。 |
 | displayName | String | 密钥的友好名称。 |
-|endDateTime|DateTimeOffset|凭据过期的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示："2014-01-01T00：00：00Z"。 |
-|keyId|Guid|该密钥 (GUID) 标识符。|
-|startDateTime|DateTimeOffset|凭据生效的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示："2014-01-01T00：00：00Z"。 |
-|type|String|密钥凭据的类型。 "AsymmetricX509Cert"。|
+|endDateTime|DateTimeOffset|凭据过期的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 |
+|keyId|Guid|唯一标识符 (项) GUID 值。|
+|startDateTime|DateTimeOffset|凭据生效的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 |
+|type|字符串|密钥凭据的类型。 "AsymmetricX509Cert"。|
 |usage|String|一个描述密钥的用途的字符串。 例如，"Verify"。|
-|key|二进制| 密钥凭据的值。 应为 Base64 编码的值。 |
+|key|二进制| 密钥凭据的值。 应为 Base64 编码值。 |
 |thumbprint| String | 键的指纹值。|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -47,15 +47,16 @@ ms.locfileid: "52266862"
 
 ```json
 {
-    "customKeyIdentifier": "string (binary)",
-    "displayName": "string",
-    "endDateTime": "string (timestamp)",
-    "key": "string (binary)",
-    "keyId": "guid",
-    "startDateTime": "String (timestamp)",
-    "type": "string",
-    "thumbprint":"string",
-    "usage": "string"
+  "@odata.type": "#microsoft.graph.selfSignedCertificate",
+  "customKeyIdentifier": "String (Binary)",
+  "displayName": "String",
+  "endDateTime": "String (timestamp)",
+  "key": "String (Binary)",
+  "keyId": "Guid",
+  "startDateTime": "String (timestamp)",
+  "thumbprint": "String",
+  "type": "String",
+  "usage": "String"
 }
 ```
 

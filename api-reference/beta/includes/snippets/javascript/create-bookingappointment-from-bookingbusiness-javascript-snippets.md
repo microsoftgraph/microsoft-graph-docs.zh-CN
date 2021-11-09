@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 63ef9da42b82612480edf1089be8bc01b0885e187a11b5e15ed1e6c7cb071a04
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 36c86947be0c781e1dbe5b7a040d32e7cea4fe0d
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56903708"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60736650"
 ---
 ```javascript
 
@@ -44,6 +44,8 @@ const bookingAppointment = {
     customerName: 'Jordan Miller',
     customerNotes: 'Please be on time.',
     customerPhone: '213-555-0199',
+    customerTimeZone: 'America/Chicago',
+    smsNotificationsEnabled: true,
     end: {
         '@odata.type':'#microsoft.graph.dateTimeTimeZone',
         dateTime: '2018-05-01T12:30:00.0000000+00:00',
@@ -59,6 +61,7 @@ const bookingAppointment = {
     'invoiceStatus@odata.type':'#microsoft.graph.bookingInvoiceStatus',
     invoiceStatus: 'open',
     invoiceUrl: 'theInvoiceUrl',
+    isLocationOnline: true,
     optOutOfCustomerEmail: false,
     postBuffer: 'PT10M',
     preBuffer: 'PT5M',

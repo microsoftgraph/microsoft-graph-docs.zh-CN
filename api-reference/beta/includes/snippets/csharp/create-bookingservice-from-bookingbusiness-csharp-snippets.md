@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 22d62962e9d42d30b878c941a2092432acce28e20e3b572237beed7ed06a4327
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6ef16a382f37a7b11246c3860851e22130d21916
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56903138"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60736661"
 ---
 ```csharp
 
@@ -60,6 +60,8 @@ var bookingService = new BookingService
     },
     Description = "Individual bento box lunch delivery",
     DisplayName = "Bento",
+    IsLocationOnline = true,
+    SmsNotificationsEnabled = true,
     IsHiddenFromCustomers = false,
     Notes = "Home-cooked special",
     PostBuffer = new Duration("PT10M"),

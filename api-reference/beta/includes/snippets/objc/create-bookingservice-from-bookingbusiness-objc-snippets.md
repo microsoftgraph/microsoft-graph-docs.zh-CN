@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: b80c3a3632f44ce0484d5d85fa2abe44df17d9e7f515cc100ac3050fcf873911
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c6f6539ff8f1385d2889ce10306ce10618cae9c1
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57105043"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60736660"
 ---
 ```objc
 
@@ -47,6 +47,8 @@ MSGraphBookingReminder *defaultReminders = [[MSGraphBookingReminder alloc] init]
 [bookingService setDefaultReminders:defaultRemindersList];
 [bookingService setDescription:@"Individual bento box lunch delivery"];
 [bookingService setDisplayName:@"Bento"];
+[bookingService setIsLocationOnline: true];
+[bookingService setSmsNotificationsEnabled: true];
 [bookingService setIsHiddenFromCustomers: false];
 [bookingService setNotes:@"Home-cooked special"];
 [bookingService setPostBuffer:@"PT10M"];

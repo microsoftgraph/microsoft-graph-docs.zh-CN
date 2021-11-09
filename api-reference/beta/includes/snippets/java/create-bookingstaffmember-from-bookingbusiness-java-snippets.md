@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 81d62ca53bdaeb5beb9dea5424007e2c98a055f60136cfb992c582919d5cd327
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b67b53b8218250f37b5f222e7054279c1917a84b
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56903135"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60736646"
 ---
 ```java
 
@@ -17,6 +17,7 @@ bookingStaffMember.displayName = "Dana Swope";
 bookingStaffMember.emailAddress = "danas@contoso.com";
 bookingStaffMember.additionalDataManager().put("role@odata.type", new JsonPrimitive("#microsoft.graph.bookingStaffRole"));
 bookingStaffMember.role = BookingStaffRole.EXTERNAL_GUEST;
+bookingStaffMember.timeZone = "America/Chicago";
 bookingStaffMember.useBusinessHours = true;
 bookingStaffMember.additionalDataManager().put("workingHours@odata.type", new JsonPrimitive("#Collection(microsoft.graph.bookingWorkHours)"));
 LinkedList<BookingWorkHours> workingHoursList = new LinkedList<BookingWorkHours>();

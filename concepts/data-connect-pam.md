@@ -4,16 +4,16 @@ description: Microsoft Graph 数据连接依赖于 Privileged Access Management 
 author: fercobo-msft
 ms.localizationpriority: high
 ms.prod: data-connect
-ms.openlocfilehash: 4cb136349684504520696c09ea7e5deb21479168
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f7e68ceb0a58d03818d838566fb8d8421018a97e
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59108756"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695179"
 ---
 # <a name="microsoft-graph-data-connect-integration-with-privileged-access-management"></a>Microsoft Graph 数据连接与 Privileged Access Management 的集成
 
-Microsoft Graph 数据连接依赖于 Privileged Access Management (PAM) 来允许 Microsoft 365 管理员批准数据移动请求。 数据连接管道必须由 Microsoft 365 管理员在启用期间指定的数据访问请求审批者批准。 若要设置审批者组，请参阅[入门](data-connect-get-started.md)。
+Microsoft Graph 数据连接依赖于 Privileged Access Management (PAM) 来允许 Microsoft 365 管理员批准数据移动请求。 数据连接管道必须由 Microsoft 365 管理员在启用期间指定的数据访问请求审批者批准。 若要设置审批者组，请参阅[设置 Microsoft 365 租户并启用 Microsoft Graph 数据连接](https://docs.microsoft.com/graph/data-connect-quickstart?tabs=Microsoft365&tutorial-step=1)。
 
 当复制活动请求访问权限以提取 Microsoft 365 数据时，系统会向审批者的每名成员发送审批请求电子邮件来通知他们。 审批者可以批准或拒绝这些请求，指定应从提取的数据中清理的用户组，或撤销以前批准的请求。 审批持续时间为 6 个月，并且 Azure 数据工厂管道中的每次复制活动都需要进行审批。
 

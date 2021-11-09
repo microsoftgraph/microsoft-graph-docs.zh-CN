@@ -1,16 +1,16 @@
 ---
 title: 列出人员
 description: 检索一组 person 对象，这些对象按与 user 的相关程度进行排序，相关程度由用户的通信和协作模式以及业务关系决定。
-author: dkershaw10
+author: anthona
 ms.localizationpriority: high
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: f33aea8dc2dd441cd14bca7332b1568627455617
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 61c4de130b4d5c75501e49e1a7d86b35a997e54b
+ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59044823"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60780938"
 ---
 # <a name="list-people"></a>列出人员
 
