@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ac896742e04e0446122723c6e284f771259316aa
-ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
+ms.openlocfilehash: a9342973607170c8c8e442b56076a0b9f3131761
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "59996079"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60891184"
 ---
 # <a name="list-groups"></a>列出组
 
@@ -36,7 +36,7 @@ GET /groups
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持使用 `$count`、`$expand`、`$filter`、`$orderBy`、`$search`、`$select` 和 `$top` [ OData 查询参数 ](/graph/query-parameters) 以帮助自定义响应。 只有将 **ConsistencyLevel** 标头设置为 `eventual` 和 `$count` 时，才支持某些查询。 有关详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
+此方法支持使用 `$count`、`$expand`、`$filter`、`$orderBy`、`$search`、`$select` 和 `$top` [ OData 查询参数 ](/graph/query-parameters) 以帮助自定义响应。 默认页面大小和最大页面大小分别为 100 和 999 个组对象。 只有将 **ConsistencyLevel** 标头设置为 `eventual` 和 `$count` 时，才支持某些查询。 有关详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
 
 若要仅列出 Microsoft 365 组（亦称为“统一组”），请对 **groupTypes** 应用筛选器：
 <!-- { "blockType": "ignored" } -->

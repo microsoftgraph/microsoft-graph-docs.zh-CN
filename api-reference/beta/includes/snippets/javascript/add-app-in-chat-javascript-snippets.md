@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 62c76a7b8bd5449a5062347e0b65dc0036c4ded00758228a448ed23a0c5a9a08
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cb675481a585ba5a28267b51e174e18be4cc908f
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57158558"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60891825"
 ---
 ```javascript
 
@@ -16,7 +16,7 @@ const options = {
 const client = Client.init(options);
 
 const teamsAppInstallation = {
-'teamsApp@odata.bind':'https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a'
+   'teamsApp@odata.bind':'https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a'
 };
 
 await client.api('/chats/19:ea28e88c00e94c7786b065394a61f296@thread.v2/installedApps')
