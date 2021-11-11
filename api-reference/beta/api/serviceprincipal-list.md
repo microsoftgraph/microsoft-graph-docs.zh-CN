@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: e8992b081933ce4264f32a4f1861a48993ca1949
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: dc0d136aac6c1c918e16832aaceb6cdeddf9087e
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59763750"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890890"
 ---
 # <a name="list-serviceprincipals"></a>List servicePrincipals
 
@@ -39,7 +39,7 @@ GET /servicePrincipals
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持使用 `$count`、`$expand`、`$filter`、`$orderBy`、`$search`、`$select` 和 `$top` [ OData 查询参数 ](/graph/query-parameters) 以帮助自定义响应。 只有将 **ConsistencyLevel** 标头设置为 `eventual` 和 `$count` 时，才支持某些查询。 有关详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
+此方法支持使用 `$count`、`$expand`、`$filter`、`$orderBy`、`$search`、`$select` 和 `$top` [ OData 查询参数 ](/graph/query-parameters) 以帮助自定义响应。 默认和最大页面大小分别为 100 和 999 个服务主体对象。 只有将 **ConsistencyLevel** 标头设置为 `eventual` 和 `$count` 时，才支持某些查询。 有关详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
 
 默认情况下，当列出所有服务主体时，此 API 不会返回 **keyCredentials** 属性中 **密钥** 的值。 要检索 **密钥** 中的公钥信息，必须在 `$select` 查询中指定 **keyCredentials** 属性。 例如，`$select=id,appId,keyCredentials`。
 

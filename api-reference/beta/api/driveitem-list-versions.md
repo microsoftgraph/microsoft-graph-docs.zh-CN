@@ -1,18 +1,18 @@
 ---
-title: 列出 DriveItem 的版本
+title: 列出 driveItem 的版本
 description: OneDrive 和 SharePoint 可以配置为保留文件的历史记录。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
 author: JeremyKelley
-ms.openlocfilehash: 3f3c2135f84d5c4b5a71a7a2e003528a72edb8b0
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: b047eece3a789feea3865be4155f6b69ac799eda
+ms.sourcegitcommit: 6b5bee1a1cea92c1f3d6439110c4916eb8b249a5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515533"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60908538"
 ---
-# <a name="listing-versions-of-a-driveitem"></a>列出 DriveItem 的版本
+# <a name="list-versions-of-a-driveitem"></a>列出 driveItem 的版本
 
 命名空间：microsoft.graph
 
@@ -23,7 +23,7 @@ OneDrive 和 SharePoint 可以配置为保留文件的历史记录。
 
 文档之前的版本可能会保留有限的一段时间，具体取决于管理员设置，这对于每个用户或位置可能是唯一的。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -55,7 +55,7 @@ GET /users/{user-id}/drive/items/{item-id}/versions
 
 本示例检索当前用户驱动器中的文件的版本。
 
-### <a name="http-request"></a>HTTP 请求
+### <a name="request"></a>请求
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -135,9 +135,11 @@ Content-Type: application/json
 
 ## <a name="remarks"></a>注解
 
+版本按降序返回， (最新到最旧) 。 OData `$orderBy` 查询字符串参数不受支持。
+
 OneDrive 不保留文件以前版本的完整元数据。
 
-当应用程序检索文件的可用版本列表时，将返回 [DriveItemVersion](../resources/driveitemversion.md) 资源，它提供有关特定版本的可用信息。
+当您的应用程序检索文件的可用版本列表时，将返回 [driveItemVersion](../resources/driveitemversion.md) 资源，该资源提供有关特定版本的可用信息。
 
 
 <!--

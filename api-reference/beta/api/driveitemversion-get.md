@@ -1,16 +1,16 @@
 ---
 title: 获取 DriveItemVersion 资源（预览）
 description: 检索 DriveItem 的某个特定版本的元数据。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
 author: JeremyKelley
-ms.openlocfilehash: d5beccc75cb1c6b79995f07ca4cb2dba729761e6
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 2884cecda95dc2e6f84bb9313a606c71184ef7e1
+ms.sourcegitcommit: 6b5bee1a1cea92c1f3d6439110c4916eb8b249a5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515714"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60908566"
 ---
 # <a name="get-a-driveitemversion-resource-preview"></a>获取 DriveItemVersion 资源（预览）
 
@@ -20,7 +20,7 @@ ms.locfileid: "50515714"
 
 检索 [DriveItem](../resources/driveitem.md) 的某个特定版本的元数据。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -48,11 +48,13 @@ GET /users/{user-id}/drive/items/{item-id}/versions/{version-id}
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [DriveItemVersion](../resources/driveitemversion.md) 对象。
 
 
-## <a name="example"></a>示例
+## <a name="examples"></a>示例
+
+### <a name="example-1-get-specified-version-of-a-file"></a>示例 1：获取文件的指定版本
 
 本示例检索当前用户驱动器中的文件版本。
 
-### <a name="http-request"></a>HTTP 请求
+#### <a name="request"></a>请求
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -80,9 +82,9 @@ GET /me/drive/items/{item-id}/versions/{version-id}
 ---
 
 
-### <a name="response"></a>响应
+#### <a name="response"></a>响应
 
-这将返回版本的集合：
+这将返回版本：
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItemVersion", "truncated": true } -->
 
@@ -95,7 +97,45 @@ Content-Type: application/json
     "lastModifiedBy": {
     "user": {
         "id": "CE251278-EF9E-4FE5-833C-1D89EEAE68E0",
-        "displayName": "Ryan Gregg"
+        "displayName": "Iheanetu Olamma"
+    }
+    },
+    "lastModifiedDateTime": "2017-09-14T12:34:53.912Z",
+    "size": 123
+}
+```
+
+
+### <a name="example-2-get-current-version-of-a-file"></a>示例 2：获取文件的当前版本
+
+本示例检索当前用户驱动器中文件的当前版本。
+
+#### <a name="request"></a>请求
+
+
+<!-- { "blockType": "request", "name": "get-current-version", "scopes": "files.read", "tags": "service.graph" } -->
+
+```http
+GET /me/drive/items/{item-id}/versions/current
+```
+
+
+#### <a name="response"></a>响应
+
+这将返回版本：
+
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItemVersion", "truncated": true } -->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "id": "D4990684-58CE-4FAB-9B87-D6C49E74F298",
+    "lastModifiedBy": {
+    "user": {
+        "id": "CE251278-EF9E-4FE5-833C-1D89EEAE68E0",
+        "displayName": "Iheanetu Olamma"
     }
     },
     "lastModifiedDateTime": "2017-09-14T12:34:53.912Z",

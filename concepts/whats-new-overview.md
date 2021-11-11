@@ -3,12 +3,12 @@ title: Microsoft Graph 新增功能
 description: Microsoft Graph 新增功能
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: 22deb547eda4301d1b8bb3f2830516aa2e3be682
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: a1934b1cc52ba26f6500ca585c76df3d9f85fb94
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688638"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890407"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
@@ -57,7 +57,7 @@ As part of [privacy management in Microsoft 365](/privacy/solutions/privacymanag
 - 了解适用于 Microsoft Graph 中的 Microsoft Teams API 的[许可和付款模式](teams-licenses.md)。
 
 ### <a name="users"></a>用户
-现在，Azure Active Directory (Azure AD) 服务的用户许可证，支持显示上次更新许可证分配[状态](/graph/api/resources/licenseassignmentstate)时的时间戳。 
+现在，Azure Active Directory (Azure AD) 服务的用户许可证支持使用时间戳来显示最后一次更新 [许可证分配状态](/graph/api/resources/licenseassignmentstate) 的时间。 
 
 ## <a name="october-2021-new-in-preview-only"></a>2021 年 10 月：仅限预览版中的新增功能
 
@@ -103,7 +103,7 @@ As part of [privacy management in Microsoft 365](/privacy/solutions/privacymanag
 - 还可以在 **connectorId** 属性的 [外部连接](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-beta&preserve-view=true)中指定 Teams 应用的 ID。
 
 ### <a name="users"></a>用户
-当用户输入密码时，根据组织的密码验证策略实时[验证密码](/graph/api/user-validatePassword?view=graph-rest-beta&preserve-view=true)。 根据策略中的规则，[从验证获取详细信息](/graph/api/resources/passwordValidationInformation?view=graph-rest-beta&preserve-view=true)。
+当用户键入密码时，根据组织的密码验证策略实时 [验证密码](/graph/api/user-validatePassword?view=graph-rest-beta&preserve-view=true)。 根据策略中的规则，[从验证获取详细信息](/graph/api/resources/passwordValidationInformation?view=graph-rest-beta&preserve-view=true)。
 
 
 ## <a name="september-2021-new-and-generally-available"></a>2021 年 9 月: 新增功能和正式发布
