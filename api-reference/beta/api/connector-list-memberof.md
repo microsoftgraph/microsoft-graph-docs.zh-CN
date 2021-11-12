@@ -1,16 +1,16 @@
 ---
 title: 列出 memberOf
 description: 检索连接器是该连接器的一个成员的连接器组。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 4a069e0e501d1916b310daa390a2b2af0de5318f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 93d81ae68681ce685e3639c754af7869a96b2338
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047214"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944199"
 ---
 # <a name="list-memberof"></a>列出 memberOf
 
@@ -20,7 +20,7 @@ ms.locfileid: "52047214"
 
 检索[连接器是](../resources/connectorgroup.md)[该连接器](../resources/connector.md)的成员组。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationPro
 
 
 ##### <a name="response"></a>响应
-下面展示了示例响应。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -90,7 +90,6 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationPro
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 164
 
 {
   "value": [

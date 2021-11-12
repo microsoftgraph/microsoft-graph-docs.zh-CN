@@ -2,15 +2,15 @@
 author: JeremyKelley
 description: 可以使用 createLink 操作通过共享链接共享 DriveItem。
 title: driveItem： createLink
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: e65cdc780b5c38441471dd14292f0420bf0ca629
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: bfa70cc4deb1062c2efc4d354b8787e9f607a8e9
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52990729"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944142"
 ---
 # <a name="driveitem-createlink"></a>driveItem： createLink
 
@@ -56,7 +56,7 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 请求正文定义应用程序正在请求的共享链接的属性。
 请求应为具有以下属性的 JSON 对象。
 
-|   属性                 |  类型  |                                 说明                                                               |
+|   属性                 |  类型  |                                 Description                                                               |
 | :----------------------| :----- | :---------------------------------------------------------------------------------------------------------|
 |type|String|可选。要创建的共享链接的类型。   |
 |scope|String|可选。 要创建的链接的范围。 匿名、组织或用户。|
@@ -73,7 +73,7 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 | view           | 创建到 **driveItem** 的只读链接。                                                                        |
 | review         | 创建 **driveItem 的审阅链接**。 此选项仅适用于 OneDrive for Business 和 SharePoint。                   |
 | edit           | 创建到 **driveItem** 的读写链接。                                                                       |
-| 嵌入          | 创建 **driveItem** 的可嵌入链接。                                                                      |
+| 嵌入          | 创建到 **driveItem** 的可嵌入链接。                                                                      |
 | blocksDownload | 创建阻止下载到 **driveItem** 的只读链接。 此选项仅适用于 OneDrive for Business 和 SharePoint。  |
 | createOnly     | 创建 **driveItem** 的仅上载链接。 此选项仅适用于 OneDrive for Business 和 SharePoint 中的文件夹。             |
 | addressBar     | 为新建的文件创建浏览器地址栏中显示的默认链接。 仅适用于 OneDrive for Business 和 SharePoint。 组织管理员配置此链接类型是否受支持，以及此链接类型支持哪些功能。 |
@@ -83,7 +83,7 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 
 **scope** 参数允许使用以下值。
 
-| 值          | 说明
+| 值          | Description
 |:---------------|:------------------------------------------------------------
 | anonymous    | 拥有该链接的任何人都可以访问，无需登录。 这可能包括组织外部的人员。 管理员可能会禁用匿名链接支持。
 | 组织 | 登录到组织（租户）的任何人都可以使用该链接获取访问权限。 仅适用于 OneDrive for Business 和 SharePoint。
@@ -111,7 +111,6 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 ```http
 POST /me/drive/items/{itemId}/createLink
 Content-Type: application/json
-Content-length: 212
 
 {
   "type": "view",
@@ -306,10 +305,10 @@ Content-Type: application/json
 
 ## <a name="remarks"></a>注解
 
-* 若要根据组织的默认策略和呼叫者对 **driveItem** 的权限创建链接，请省略 scope 和 type 参数
+* 若要基于组织的默认策略和呼叫者对 **driveItem** 的权限创建链接，请省略 scope 和 type 参数
 * 使用此操作创建的链接不会过期，除非对组织强制执行了默认过期策略。
 * 链接在 **driveItem** 的共享权限中可见，并且可以通过 **driveItem** 的所有者删除。
-* 链接始终指向 **driveItem** 的当前版本，除非仅将 **driveItem** (SharePoint签出) 。
+* 链接始终指向 **driveItem** 的当前版本，除非 **driveItem** 已签出 (SharePoint) 。
 
 <!--
 {

@@ -1,16 +1,16 @@
 ---
 title: 将 connectorGroup 分配给应用程序
 description: 使用此 API 将 connectorGroup 分配给应用程序
-localization_priority: Normal
+ms.localizationpriority: medium
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: ccf3255a5d8aa7416560848a0915cdb78aa77764
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: c27d659b8235dde9977db8e1fcf4c08d3fc5231a
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786150"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945710"
 ---
 # <a name="assign-a-connectorgroup-to-an-application"></a>将 connectorGroup 分配给应用程序
 
@@ -20,7 +20,7 @@ ms.locfileid: "52786150"
 
 将 [connectorGroup](../resources/connectorgroup.md) 分配给 [应用程序](../resources/application.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -60,7 +60,6 @@ PUT /applications/{id}/connectorGroup/$ref
 ```http
 PUT https://graph.microsoft.com/beta/applications/{id}/connectorGroup/$ref
 Content-type: application/json
-Content-length: 30
 
 {
   "@odata.id": "https://graph.microsoft.com/onPremisesPublishingProfiles/applicationproxy/connectorGroups/{id}"

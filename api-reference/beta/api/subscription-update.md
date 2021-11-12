@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 9c4f0d9f72d1be599535ef478369017ab0984315
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 1e340524ab2701064d264a08e06a15e5cef1e70f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766829"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945290"
 ---
 # <a name="update-subscription"></a>更新订阅
 
@@ -52,7 +52,7 @@ ms.locfileid: "59766829"
 |[组对话](../resources/conversation.md) | Group.Read.All | 不支持 | 不支持 |
 |[列表](../resources/list.md) | Sites.ReadWrite.All | 不支持 | Sites.ReadWrite.All |
 |[邮件](../resources/message.md) | Mail.ReadBasic、Mail.Read | Mail.ReadBasic、Mail.Read | Mail.ReadBasic、Mail.Read |
-|[presence](../resources/presence.md) | Presence.Read.All | 不支持 | 不支持 |
+|[状态](../resources/presence.md) | Presence.Read.All | 不支持 | 不支持 |
 |[打印机](../resources/printer.md) | 不支持 | 不支持 | 打印机。阅读.All，Printer.ReadWrite.All |
 |[printTaskDefinition](../resources/printtaskdefinition.md) | 不支持 | 不支持 | PrintTaskDefinition.ReadWrite.All |
 |安全[警报](../resources/alert.md) | SecurityEvents.ReadWrite.All | 不支持 | SecurityEvents.ReadWrite.All |
@@ -156,7 +156,6 @@ Content-type: application/json
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 252
 
 {
   "id":"7f105c7d-2dc5-4530-97cd-4e7ae6534c07",

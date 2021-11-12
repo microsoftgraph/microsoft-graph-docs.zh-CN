@@ -5,12 +5,12 @@ author: kevinbellinger
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d1351e925028c9ce620347cb27c9bb82957cc59e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: dd8563abbd22ff2e6ab3b3b36708ed54a3580e13
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147785"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924766"
 ---
 # <a name="get-contact"></a>获取联系人
 
@@ -51,12 +51,12 @@ GET /me/contactFolders/{id}/childFolders/{id}/.../contacts/{id}
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-|名称|值|说明|
+|名称|值|Description|
 |:---------------|:--------|:-------|
 |$expand|string|要在响应中扩展和包括的关系的列表（以逗号分隔）。请参阅支持的名称的 [contact](../resources/contact.md) 对象的关系表。 |
 |$select|string|要在响应中包括的属性的列表（以逗号分隔）。|
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
@@ -107,7 +107,6 @@ GET https://graph.microsoft.com/v1.0/me/contacts/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1977
 
 {
   "id": "AAMkAGI2THk0AAA=",

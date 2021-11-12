@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6181346cfe4234f052b0a9f5b91dede4103e9ba5
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: eca19c472e0e34c13c49aac5f265e596d38a87f9
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60289453"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946844"
 ---
 # <a name="get-filesfolder"></a>获取 filesFolder
 
@@ -95,7 +95,6 @@ GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/filesFolder
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 401
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('32e3b156-66b2-4135-9aeb-73295a35a55b')/channels('19%3Af253e46c035b42308e9a4a22a87037af%40thread.skype')/filesFolder/$entity",

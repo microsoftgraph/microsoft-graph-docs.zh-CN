@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4ea033d0b0fc4b2041f4bbf4910d009c540d4527
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: bcb6b706dcb562bc2b3b97d101037add8b99f2b1
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695271"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60928547"
 ---
 # <a name="create-team-from-group"></a>从组创建团队
 
@@ -128,7 +128,6 @@ Content-type: application/json
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 401
 
 {
   "memberSettings": {

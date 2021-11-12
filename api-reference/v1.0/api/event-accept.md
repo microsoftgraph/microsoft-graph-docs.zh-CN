@@ -5,12 +5,12 @@ author: harini84
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 34b581453cd413d819ca474e4550a2d00ec155ba
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 14225947dee3870c473c2b2d595ff654c72051d9
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59095191"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937300"
 ---
 # <a name="event-accept"></a>event: accept
 
@@ -18,7 +18,7 @@ ms.locfileid: "59095191"
 
 接受用户 [日历](../resources/event.md) 中的指定 [事件](../resources/calendar.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -51,7 +51,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |注释|String|响应中包含的文本。可选。|
 |sendResponse|Boolean|如果将响应发送给组织者，则值为 `true`；否则为 `false`。可选。默认值为 `true`。|
@@ -73,7 +73,6 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ```http
 POST https://graph.microsoft.com/v1.0/me/events/{id}/accept
 Content-type: application/json
-Content-length: 56
 
 {
   "comment": "comment-value",

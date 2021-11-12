@@ -5,19 +5,19 @@ author: kevinbellinger
 ms.localizationpriority: medium
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 4202dbcfd268ac7e77a1d6e02865b0ed4a4b2774
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d47c8646cc7455ffebbe43430c36ec3fded43da7
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59141408"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60932845"
 ---
 # <a name="create-personresponsibility"></a>创建 personResponsibility
 命名空间：microsoft.graph
 
 在用户配置文件 [中创建新的 personResponsibility](../resources/personresponsibility.md) [对象](../resources/profile.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -49,11 +49,11 @@ POST /users/{id | userPrincipalName}/responsibilities
 
 下表显示了在用户配置文件中的新 [personResponsibility](../resources/personresponsibility.md) 对象中可以设置 [的属性](../resources/profile.md)。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|collaborationTags|字符串集合|包含用户与兴趣相关联的体验方案标记。 集合中允许的值为 `askMeAbout` `ableToMentor` ：、、、。 `wantsToLearn` `wantsToImprove`|
-|说明|String|责任说明。|
+|collaborationTags|String 集合|包含用户与兴趣相关联的体验方案标记。 集合中允许的值为 `askMeAbout` `ableToMentor` ：、、、。 `wantsToLearn` `wantsToImprove`|
+|description|String|责任说明。|
 |displayName|String|包含该责任的友好名称。 |
 |inference|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断出来的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |source|[personDataSource](../resources/persondatasource.md)|如果从另一个服务同步，则值源自何处。 继承自 [itemFacet](../resources/itemfacet.md)。|
@@ -75,7 +75,6 @@ POST /users/{id | userPrincipalName}/responsibilities
 ``` http
 POST https://graph.microsoft.com/beta/me/responsibilities
 Content-Type: application/json
-Content-length: 413
 
 {
   "description": "Member of the Microsoft API Council",

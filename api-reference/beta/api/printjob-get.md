@@ -2,15 +2,15 @@
 title: 获取 printJob
 description: 检索打印作业的属性和关系。
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: d25876d53612fa43346ed330413553c02770ee10
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6eb887cd78d67f01d393a93ba7e0edae152d5f9a
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049889"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938558"
 ---
 # <a name="get-printjob"></a>获取 printJob
 
@@ -20,7 +20,7 @@ ms.locfileid: "52049889"
 
 检索打印作业的属性和关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 除了以下权限之外，用户或应用的租户还必须具有活动的通用打印订阅，并且具有根据使用的打印机还是 printerShare 授予获取 [打印机](printer-get.md) 或获取 [printerShare](printershare-get.md) 访问权限的权限。
@@ -100,7 +100,6 @@ GET https://graph.microsoft.com/beta/print/printers/c05f3726-0d4b-4aa1-8fe9-2eb9
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 408
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('c05f3726-0d4b-4aa1-8fe9-2eb981bb26fb')/jobs/$entity",
@@ -143,7 +142,6 @@ GET https://graph.microsoft.com/beta/print/printers/c05f3726-0d4b-4aa1-8fe9-2eb9
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 774
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('c05f3726-0d4b-4aa1-8fe9-2eb981bb26fb')/jobs(tasks())/$entity",
@@ -222,7 +220,6 @@ GET https://graph.microsoft.com/beta/print/printers/86b6d420-7e6b-4797-a05c-af4e
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1688
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('86b6d420-7e6b-4797-a05c-af4e56cd81bd')/jobs(documents())/$entity",

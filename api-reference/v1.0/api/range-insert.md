@@ -5,19 +5,19 @@ ms.localizationpriority: medium
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 73eb119b1d7b189ce8271c60dae8d8c2f0ded830
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d09ce523c6f069e7d5d69733b487794aff38dac0
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59029302"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945831"
 ---
 # <a name="range-insert"></a>Range: insert
 
 命名空间：microsoft.graph
 
 将单个单元格或一系列单元格插入到工作表中取代此区域，并移动其他单元格以留出空间。在现在空白的空间返回新的 Range 对象。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -40,13 +40,13 @@ POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/ra
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | 持有者{令牌}。必需。 |
+| Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |Shift|string|指定移动单元格的方式。  可能的值是 `Down` `Right` ：、。|
 
@@ -67,7 +67,6 @@ POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/ra
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/insert
 Content-type: application/json
-Content-length: 28
 
 {
   "shift": "shift-value"
@@ -102,7 +101,6 @@ Content-length: 28
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 169
 
 {
   "address": "address-value",

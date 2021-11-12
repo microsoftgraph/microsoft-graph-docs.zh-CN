@@ -5,12 +5,12 @@ author: sharad-sharma-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 65ea2a9c7ef58a14af846892048a2ea4ce9460ca
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 3670f2ff3c03664fa87472963db9c0c206aff52b
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59765922"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943036"
 ---
 # <a name="get-educationassignment"></a>获取 educationAssignment
 
@@ -20,7 +20,7 @@ ms.locfileid: "59765922"
 
 学生只能看到分配给他们的作业;教师和具有应用程序权限的应用程序可以看到课程的所有作业。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -93,7 +93,6 @@ GET https://graph.microsoft.com/v1.0/education/classes/f4a941ff-9da6-4707-ba5b-0
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 279
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('f4a941ff-9da6-4707-ba5b-0eae93cad0b4')/assignments/$entity",

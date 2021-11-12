@@ -2,15 +2,15 @@
 title: Update taskDefinition
 description: 更新任务定义。
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 5923c66eca2da9f2f2016434cfd0d92a0cfa7bef
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: ec3341b99b3bcc0c36b3122350a5a7aa937c3188
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51766488"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946669"
 ---
 # <a name="update-taskdefinition"></a>Update taskDefinition
 
@@ -22,7 +22,7 @@ ms.locfileid: "51766488"
 
 有关如何使用此 API 向通用打印添加拉页打印支持的详细信息，请参阅扩展 [通用打印以支持拉取打印](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。
@@ -31,7 +31,7 @@ ms.locfileid: "51766488"
 |:---------------|:--------------------------------------------|
 |委派（工作或学校帐户）| 不支持。 |
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application| PrintTaskDefinition.ReadWrite.All |
+|应用程序| PrintTaskDefinition.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -68,7 +68,6 @@ PATCH /print/taskDefinitions/{id}
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/beta/print/taskDefinitions/fab143fd-ee61-4358-8558-2c7dee953982
 Content-type: application/json
-Content-length: 122
 
 {
   "displayName": "Test TaskDefinitionName",

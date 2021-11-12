@@ -5,19 +5,19 @@ author: vishriv
 ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: apiPageType
-ms.openlocfilehash: 4e0a9a5a3228f4e45561cdd54bdbebc696ab89f2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ff08b50016ff40065ec09c462f6f14bd6d8face4
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59104633"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947449"
 ---
 # <a name="create-termstore-group"></a>创建 termStore 组
 命名空间：microsoft.graph.termStore
 
 在术语 [存储中](../resources/termstore-group.md) 创建新的组对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -44,7 +44,7 @@ POST sites/{site-id}/termStore/groups
 |Content-Type|application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 group 对象的 JSON [表示](../resources/termstore-group.md) 形式。
+在请求正文中，提供[组](../resources/termstore-group.md)对象的 JSON 表示形式。
 
 下表显示创建 group 对象 [时所需的属性](../resources/termstore-group.md) 。
 
@@ -69,7 +69,6 @@ POST sites/{site-id}/termStore/groups
 ``` http
 POST https://graph.microsoft.com/v1.0/sites/microsoft.sharepoint.com,b9b0bc03-cbc4-40d2-aba9-2c9dd9821ddf,6a742cee-9216-4db5-8046-13a595684e74/termStore/groups
 Content-Type: application/json
-Content-length: 135
 
 {
   "displayName" : "myGroup"

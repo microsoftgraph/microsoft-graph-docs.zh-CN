@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 41e61c4adae951acc3602f37809f6903b8f3a79a
-ms.sourcegitcommit: c3f849e5a052b1926373a4b316ec303250e6d09e
+ms.openlocfilehash: a6d1d30e411be58afa2557a50a0c2061762d2f65
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60369341"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937137"
 ---
 # <a name="range-clear"></a>Range: clear
 
@@ -18,7 +18,7 @@ ms.locfileid: "60369341"
 
 清除区域值，如格式、填充和边框。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -47,7 +47,7 @@ POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/ra
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |applyTo|string|可选。 确定清除操作的类型。  可能的值包括 `All`、`Formats`、`Contents`。|
 
@@ -68,7 +68,6 @@ POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/ra
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/clear
 Content-type: application/json
-Content-length: 32
 
 {
   "applyTo": "applyTo-value"

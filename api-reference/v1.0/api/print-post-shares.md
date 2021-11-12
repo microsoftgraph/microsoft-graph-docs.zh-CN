@@ -2,24 +2,22 @@
 title: 创建 printerShare
 description: 为指定的打印机创建新的打印机共享。
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: f477ce6c4a45b86677c38d2bc5d438474da46ad5
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: b953ed70d10d37389d44dd4ecbc97beaa92f97c7
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50777178"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937207"
 ---
 # <a name="create-printershare"></a>创建 printerShare
 命名空间：microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 新建 **printerShare** for the specified [printer](../resources/printer.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 若要使用通用打印服务，除了下表中列出的权限之外，用户或应用的租户还必须具有活动的通用打印订阅。 登录的用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
@@ -51,10 +49,10 @@ POST /print/shares
 
 下表显示创建 [printerShare](../resources/printershare.md)时提供的属性。
 
-|属性|类型|说明|是否必需？|
+|属性|类型|Description|是否必需？|
 |:---|:---|:---|:---|
 |打印机|microsoft.graph.printer|此打印机共享相关的打印机。 使用 `printer@odata.bind` 语法，如以下示例所示。|是|
-|displayName|字符串|打印客户端应显示的打印机共享的名称。 允许的最大长度为 50 个字符。|是|
+|displayName|String|打印客户端应显示的打印机共享的名称。 允许的最大长度为 50 个字符。|是|
 |allowAllUsers|Boolean|如果 `true` 为 ，将授予所有用户和组对此打印机共享的访问权限。 这将取代 **allowedUsers** 和 **allowedGroups** 导航属性定义的允许列表。|否|
 
 ## <a name="response"></a>响应
@@ -74,7 +72,6 @@ POST /print/shares
 ``` http
 POST https://graph.microsoft.com/v1.0/print/shares
 Content-Type: application/json
-Content-length: 509
 
 {
   "displayName": "ShareName",

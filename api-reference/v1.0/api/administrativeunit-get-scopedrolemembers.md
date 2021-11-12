@@ -5,19 +5,19 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a871dc548fb11eabf75580c16fcfdc28729230ab
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: acb8f00fc94ebbeea01fa5ce29203bf4a5a0bfa2
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59128415"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924815"
 ---
 # <a name="get-a-scopedrolemember"></a>获取 scopedRoleMember
 
 命名空间：microsoft.graph
 
 检索特定的 [scopedRoleMembership](../resources/scopedrolemembership.md) 资源。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -90,7 +90,6 @@ GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/scopedRo
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 307
 
 {
   "id": "id-value",

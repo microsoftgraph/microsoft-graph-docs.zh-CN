@@ -1,16 +1,16 @@
 ---
 title: 列出分区
-description: 从指定的笔记本中检索分区对象的列表。
+description: 从指定的笔记本中检索节对象的列表。
 author: jewan-microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 7ca40aede19e60b4c4b8462b917775a842643f68
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c5599b266516e74791f193c2407d2533598246aa
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48967720"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941272"
 ---
 # <a name="list-sections"></a>列出分区
 
@@ -18,8 +18,8 @@ ms.locfileid: "48967720"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从指定的笔记本中检索 [分区](../resources/onenotesection.md) 对象的列表。
-## <a name="permissions"></a>权限
+从指定的笔记本 [中检索节](../resources/onenotesection.md) 对象的列表。
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -41,10 +41,10 @@ GET /sites/{id}/onenote/notebooks/{id}/sections
 
 默认排序顺序是 `name asc`。
 
-默认查询将展开 `parentNotebook` 并选择其 `id` 、 `displayName` 和 `self` 属性。 `expand`节的有效值为 `parentNotebook` 和 `parentSectionGroup` 。
+默认查询将 `parentNotebook` 展开并选择其 、 `id` `displayName` 和 `self` 属性。 分区 `expand` 的有效值为 和 `parentNotebook` `parentSectionGroup` 。
 
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
@@ -55,7 +55,7 @@ GET /sites/{id}/onenote/notebooks/{id}/sections
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [onenoteSection](../resources/onenotesection.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [onenoteSection](../resources/onenotesection.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -97,7 +97,6 @@ GET https://graph.microsoft.com/beta/me/onenote/notebooks/{id}/sections
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 345
 
 {
   "value": [

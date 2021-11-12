@@ -5,19 +5,19 @@ author: vishriv
 ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: apiPageType
-ms.openlocfilehash: 635af5f08c21a8596047ce9fe61e27bef85d5d33
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5d76e8e424b9ab1aad1311eb1b9a8b3053bfef31
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59084844"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942595"
 ---
 # <a name="create-relation"></a>创建关系
 命名空间：microsoft.graph.termStore
 
 创建新的 [relation](../resources/termstore-relation.md) 对象。 它们用于在术语之间或术语和集之间创建固定和重复使用的关系。 如果在术语和 set 之间创建固定/重复使用的术语，则必须在发布正文中将 **fromTerm** 设置为 *null。*
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -48,7 +48,7 @@ POST sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}/relations
 
 下表显示创建 relation 对象 [时所需的属性](../resources/termstore-relation.md) 。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |关系|microsoft.graph.termStore.relationType|要创建的关系类型。 可取值为：`pin`、`reuse`。|
 |set| [microsoft.graph.termStore.set](../resources/termstore-set.md)| 需要创建关系的集。|
@@ -73,7 +73,6 @@ POST sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}/relations
 ``` http
 POST https://graph.microsoft.com/v1.0/sites/microsoft.sharepoint.com,b9b0bc03-cbc4-40d2-aba9-2c9dd9821ddf,6a742cee-9216-4db5-8046-13a595684e74/termStore/v1.0/27fd2d26-60d3-485c-9420-0c71f74a0cfd/terms/8861b57a-c777-49e7-826f-47d6afecf80d/relations
 Content-Type: application/json
-Content-length: 89
 
 {
   "@odata.type": "#microsoft.graph.termStore.relation",

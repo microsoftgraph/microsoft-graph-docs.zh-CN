@@ -2,15 +2,15 @@
 title: 列出班次
 description: 获取计划中的班次列表。
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0565f3e0d5e81bf7bc8cc3c9f153935a01bf90e6
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 7dc5808ef9199ecb953e4328b703a18034e14bf1
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050883"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946627"
 ---
 # <a name="list-shifts"></a>列出班次
 
@@ -19,7 +19,7 @@ ms.locfileid: "52050883"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 获取计划 [中的班次](../resources/shift.md) 实例 [列表](../resources/schedule.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -40,7 +40,7 @@ GET /teams/{teamId}/schedule/shifts
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 $filter [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 标头       | 值 |
 |:---------------|:--------|
@@ -101,7 +101,6 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/shifts?$filter=shar
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 401
 
 {
   "value": [

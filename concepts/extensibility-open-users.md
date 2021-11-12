@@ -4,12 +4,12 @@ description: '本文将通过一个示例逐步介绍如何使用 *开放扩展*
 author: dkershaw10
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 06acd010f9528aae12e768aadd4f8e9e62ace651
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4d66a008f253fd2097b4a9e8833022c825ee3db2
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59143565"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944233"
 ---
 # <a name="add-custom-data-to-users-using-open-extensions"></a>使用开放扩展向用户添加自定义数据
 本文将通过一个示例逐步介绍如何使用 *开放扩展*。 
@@ -45,7 +45,6 @@ Content-type: application/json
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-length: 420
 
 {
     "@odata.type": "#microsoft.graph.openTypeExtension",
@@ -68,7 +67,6 @@ GET https://graph.microsoft.com/v1.0/me?$select=id,displayName,mail,mobilePhone&
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-length: 420
 
 {
     "id": "84b80893-8749-40a3-97b7-68513b600544",

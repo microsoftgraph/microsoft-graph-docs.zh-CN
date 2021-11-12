@@ -2,15 +2,15 @@
 title: 获取事件
 description: 获取指定的 event 对象的属性和关系。
 author: harini84
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 44007d0c4b8ad4feaf97cb3940fac388b9cca902
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: c7ae6555e341d35507d0ebfa4725c57aebca8f56
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436230"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946228"
 ---
 # <a name="get-event"></a>获取事件
 
@@ -22,10 +22,10 @@ ms.locfileid: "50436230"
 
 如果：
 
-* 应用具有应用程序权限
-* 应用具有来自一个用户的适当委派[](#permissions)权限，另一个用户已与该用户共享日历，或已授予该用户委派访问权限。 请参阅[详细信息和示例](/graph/outlook-get-shared-events-calendars)。
+* 应用程序具有应用程序权限
+* 应用具有来自一个用户的适当委派[](#permissions)权限，另一个用户已与该用户共享日历，或者向该用户授予了委派访问权限。 请参阅[详细信息和示例](/graph/outlook-get-shared-events-calendars)。
 
-由于 **事件** 资源 [支持扩展](/graph/extensibility-overview)，因此您还可以使用该操作获取事件实例中的自定义属性 `GET` 和 **扩展** 数据。
+由于 **事件** 资源 [支持扩展](/graph/extensibility-overview)，因此您还可以使用 操作获取事件实例中的自定义属性 `GET` 和 **扩展** 数据。
 
 
 ### <a name="support-various-time-zones"></a>支持不同时区
@@ -69,11 +69,11 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
-| Prefer: outlook.timezone | string | 此选项可用于指定响应中开始时间和结束时间的时区。 如果未指定，返回的这些时间值采用 UTC 时区。 可选。 |
+| Prefer: outlook.timezone | string | 用于指定响应中开始时间和结束时间的时区。如果未指定，返回的这些时间值采用 UTC 时区。可选。 |
 | Prefer: outlook.body-content-type | string | 要返回的 **body** 属性的格式。 可取值为“text”或“html”。 如果指定此 `Preference-Applied` 头，返回 `Prefer` 头作为证明。 如果未指定此头，采用 HTML 格式返回 **body** 属性。 可选。 |
 
 ## <a name="request-body"></a>请求正文
@@ -133,7 +133,6 @@ Prefer: outlook.timezone="Pacific Standard Time"
 HTTP/1.1 200 OK
 Content-type: application/json
 Preference-Applied: outlook.timezone="Pacific Standard Time"
-Content-length: 1928
 
 {
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events(subject,body,bodyPreview,organizer,attendees,start,end,location,hideAttendees)/$entity",
@@ -256,7 +255,6 @@ Prefer: outlook.body-content-type="text"
 HTTP/1.1 200 OK
 Content-type: application/json
 Preference-Applied: outlook.body-content-type="text"
-Content-length: 636
 
 {
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events(subject,body,bodyPreview)/$entity",
@@ -304,9 +302,9 @@ GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=/?$select=sub
 ---
 
 #### <a name="response"></a>响应
-下面是一个响应示例。 **locations** 属性包括组织事件的 3 个地点的详细信息。 
+下面是响应的示例。**位置** 属性包含为其组织事件的 3 个位置的详细信息。 
 
-由于请求未指定任何或标头，因此起始和结束属性以默认的 UTC 时区显示，正文采用默认的 `Prefer: outlook.timezone` `Prefer: outlook.body-content-type` HTML 格式。    
+由于请求未指定任何 或 标头，start 和 end 属性以默认的 UTC 时区显示，并且正文 `Prefer: outlook.timezone` `Prefer: outlook.body-content-type` 采用默认 HTML 格式。    
 
 <!-- {
   "blockType": "response",
@@ -317,7 +315,6 @@ GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=/?$select=sub
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1992
 
 {
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/events(subject,body,bodyPreview,organizer,attendees,start,end,location,locations)/$entity",
@@ -408,7 +405,7 @@ Content-length: 1992
 ### <a name="example-4-expand-a-series-master-event"></a>示例 4：展开系列主事件
 #### <a name="request"></a>请求
 
-以下示例显示展开定期系列的系列主事件（发生异常和已取消）。 该请求指定返回特定属性的 `$select` 查询参数。 
+以下示例显示展开定期系列的系列主事件，并出现异常和已取消的事件。 该请求指定返回特定属性的 `$select` 查询参数。 
 
 <!-- {
   "blockType": "request",
@@ -418,7 +415,7 @@ Content-length: 1992
 GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=/?$select=subject,start,end,occurrenceId,exceptionOccurrences,cancelledOccurrences$expand=exceptionOccurrences
 ```
 #### <a name="response"></a>响应
-GET 操作返回系列主事件的选定属性。 具体而言，对于 **exceptionOccurrences** 集合中的事件，操作返回 **id** 属性，以及 (**subject、start、end** **、occurrenceId**) 。   对于 **cancelledOccurrences** 集合中的事件，由于事件不再存在，因此操作仅返回 **其 occurrenceId** 属性值。
+GET 操作返回系列主事件的选定属性。 具体而言，对于 **exceptionOccurrences** 集合中的事件，操作返回 **id** 属性，以及 **subject、start、end** 和 **occurrenceId** (**的** 适用选定属性) 。 对于 **cancelledOccurrences** 集合中的事件，由于这些事件不再存在，因此操作仅返回 **其 occurrenceId** 属性值。
 
 <!-- {
   "blockType": "response",
@@ -429,7 +426,6 @@ GET 操作返回系列主事件的选定属性。 具体而言，对于 **except
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1992
 
 {
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/events(subject,start,end,occurrenceId,exceptionOccurrences,cancelledOccurrences)/$entity",

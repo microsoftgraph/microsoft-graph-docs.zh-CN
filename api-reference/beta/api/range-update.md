@@ -2,15 +2,15 @@
 title: 更新区域
 description: 更新 range 对象的属性。
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 5d53da9dc653d303ff126d3c237386f856ad98cb
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 0e6bc9b5f5fc0450bb17e4f442617d1b8dd7f39f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055055"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60929541"
 ---
 # <a name="update-range"></a>更新区域
 
@@ -19,7 +19,7 @@ ms.locfileid: "52055055"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新 range 对象的属性。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -47,7 +47,7 @@ PATCH /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/r
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |columnHidden|boolean|表示当前区域中的所有列是否隐藏。|
 |formulas|Json|表示采用 A1 表示法的公式。|
@@ -73,7 +73,6 @@ PATCH /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/r
 ```http
 PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/sheet1/range(address='A1:B2')
 Content-type: application/json
-Content-length: 169
 
 {
 "values" : [["Hello", "100"],["1/1/2016", null]],
@@ -88,7 +87,7 @@ Content-length: 169
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -97,7 +96,6 @@ Content-length: 169
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 169
 
 {
   "address": "address-value",

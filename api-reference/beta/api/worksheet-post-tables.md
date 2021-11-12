@@ -2,15 +2,15 @@
 title: 创建表
 description: 使用此 API 创建新的表。
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 133b57c66cd0333c4dec1cd37895369749889bbb
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 83f64d2000120446f3d64583aedc6a1c4b831239
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050701"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924892"
 ---
 # <a name="create-table"></a>创建表
 
@@ -19,7 +19,7 @@ ms.locfileid: "52050701"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 使用此 API 创建新的表。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -44,7 +44,7 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/add
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。 
 
-| 参数       | 类型|说明|
+| 参数       | 类型|Description|
 |:---------------|:----------|:----------|
 | Address  | string| 区域地址。 如果要从路径调用此 API，则不需要在地址中支持工作表 `worksheets/{id|name}/tables/add` 名称前缀。 但是，如果要从路径中调用此表，则提供需要基于其创建表的工作表名称 `workbook/tables/add` (示例 `sheet1!A1:D4` ：) |
 | hasHeaders  | 布尔|指示区域是否具有列标签的布尔值。如果源不包含标头（即，当此属性设置为 false 时），Excel 将自动生成标头，数据将向下移动一行。|
@@ -65,7 +65,6 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/add
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/tables/$/add
 Content-type: application/json
-Content-length: 109
 
 {
   "address": "",
@@ -91,7 +90,7 @@ Content-length: 109
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -100,7 +99,6 @@ Content-length: 109
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 109
 
 {
   "id": "99",

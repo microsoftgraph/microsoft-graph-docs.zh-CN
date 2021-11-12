@@ -1,16 +1,16 @@
 ---
 title: 'Range: insert'
 description: 将单个单元格或一系列单元格插入到工作表中取代此区域，并移动其他单元格以留出空间。在现在空白的空间返回新的 Range 对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: daa52980d2cec9eb987810dd6083a2b5f723b462
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: cbc841263d923c6dc92749d51b6dc74da6dd123d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055104"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946137"
 ---
 # <a name="range-insert"></a>Range: insert
 
@@ -19,7 +19,7 @@ ms.locfileid: "52055104"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 将单个单元格或一系列单元格插入到工作表中取代此区域，并移动其他单元格以留出空间。在现在空白的空间返回新的 Range 对象。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -48,7 +48,7 @@ POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/ra
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |Shift|string|指定移动单元格的方式。可能的值是：`Down`、`Right`。|
 
@@ -69,7 +69,6 @@ POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/ra
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/insert
 Content-type: application/json
-Content-length: 28
 
 {
   "shift": "shift-value"
@@ -95,7 +94,7 @@ Content-length: 28
 
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -104,7 +103,6 @@ Content-length: 28
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 169
 
 {
   "address": "address-value",

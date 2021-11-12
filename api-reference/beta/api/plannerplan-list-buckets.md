@@ -1,16 +1,16 @@
 ---
 title: 列出存储桶
 description: 检索 plannerPlan 对象包含的 **plannerbucket** 对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 270bcbc548da47b7b3498e3f6fc6eb663284b0e5
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: fdc64c7b84ff67290abd1bb5aca2058b51868bb4
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052038"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939392"
 ---
 # <a name="list-buckets"></a>列出存储桶
 
@@ -19,7 +19,7 @@ ms.locfileid: "52052038"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索[plannerPlan](../resources/plannerplan.md) [对象包含的 plannerBucket](../resources/plannerbucket.md)对象的列表。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -90,7 +90,6 @@ GET https://graph.microsoft.com/beta/planner/plans/2txjA-BMZEq-bKi6Wfj5aGQAB1OJ/
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 251
 
 {
   "value": [

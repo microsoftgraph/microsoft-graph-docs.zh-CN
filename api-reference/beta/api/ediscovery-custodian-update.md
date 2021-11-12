@@ -2,15 +2,15 @@
 title: 更新保管人
 description: 更新保管人对象的属性。
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 051c7db53f9d949018583fcb2f6a1e44ce2eddb9
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 026b28a2fcaccd0c685a69c85a6d6ceeef98a734
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786010"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60927118"
 ---
 # <a name="update-custodian"></a>更新保管人
 
@@ -20,7 +20,7 @@ ms.locfileid: "52786010"
 
 更新保管 [人对象](../resources/ediscovery-custodian.md) 的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -52,7 +52,7 @@ PATCH /compliance/ediscovery/cases/{caseId}/custodians/{custodianId}
 
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |applyHoldToSources|Boolean|标识保管人的来源在创建期间是否处于保留状态。|
 
@@ -75,7 +75,6 @@ PATCH /compliance/ediscovery/cases/{caseId}/custodians/{custodianId}
 ``` http
 PATCH https://graph.microsoft.com/beta/compliance/ediscovery/cases/2192ca408ea2410eba3bec8ae873be6b/custodians/45454331323337443946343043464239
 Content-Type: application/json
-Content-length: 254
 
 {
   "applyHoldToSources": "false",

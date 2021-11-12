@@ -1,25 +1,25 @@
 ---
 title: 创建 todoTaskList
-description: 创建新的列表对象。
+description: 创建新的 lists 对象。
 author: avijityadav
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 92242d0973b3d47af0126f6fefb093d258f46d74
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 791e96c2b1f3319853270eb4c2350e761bdeaa9a
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874079"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944030"
 ---
 # <a name="create-todotasklist"></a>创建 todoTaskList
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的列表对象。
+创建新的 lists 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -52,11 +52,11 @@ POST /users/{id|userPrincipalName}/todo/lists
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|指示任务列表标题的域。|
+|displayName|String|指示任务列表标题的字段。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `201 Created` [todoTaskList](../resources/todotasklist.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [todoTaskList](../resources/todotasklist.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -71,7 +71,6 @@ POST /users/{id|userPrincipalName}/todo/lists
 ``` http
 POST https://graph.microsoft.com/beta/me/todo/lists
 Content-Type: application/json
-Content-length: 60
 
 {
   "displayName": "Travel items"

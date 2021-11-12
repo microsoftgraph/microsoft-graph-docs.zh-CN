@@ -2,27 +2,25 @@
 title: 更新 printTaskDefinition
 description: 更新任务定义。
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: af00ba623907a8e5817208ca4a0f92d69ca2dddc
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 61c5dc81551f5f72ca4dfd4108ba950dc9dfd491
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50777108"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945913"
 ---
 # <a name="update-printtaskdefinition"></a>更新 printTaskDefinition
 
 命名空间：microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 更新任务定义。
 
 有关如何使用此 API 向通用打印添加拉页打印支持的详细信息，请参阅扩展 [通用打印以支持拉取打印](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。
@@ -54,7 +52,7 @@ PATCH /print/taskDefinitions/{printTaskDefinitionId}
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|displayName|字符串|**printTaskDefinition 的名称**。|
+|displayName|String|**printTaskDefinition 的名称**。|
 |createdBy|String|有关创建任务定义的应用的信息。 只能 `createdBy.displayName` 更新属性。|
 
 ## <a name="response"></a>响应
@@ -74,7 +72,6 @@ PATCH /print/taskDefinitions/{printTaskDefinitionId}
 ``` http
 PATCH https://graph.microsoft.com/v1.0/print/taskDefinitions/{printTaskDefinitionId}
 Content-Type: application/json
-Content-length: 163
 
 {
   "displayName": "Test TaskDefinitionName",

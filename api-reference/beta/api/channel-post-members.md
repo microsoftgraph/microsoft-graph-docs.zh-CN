@@ -5,12 +5,12 @@ author: akjo
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3a0e37ee57c3530eb041975ff7c7067a623c722c
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 198b68cdc33b780cfa25b10a128f9ccacb5bda03
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60689143"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60934784"
 ---
 # <a name="add-member-to-channel"></a>向频道添加成员
 
@@ -20,7 +20,7 @@ ms.locfileid: "60689143"
 
 将 [conversationMember](../resources/conversationmember.md) 添加到 [频道](../resources/channel.md)。 此操作仅允许 **membershipType** 值为 的通道 `private` 。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -47,7 +47,7 @@ POST /teams/{team-id}/channels/{channel-id}/members
 
 请求正文中包含以下属性。
 
-| 属性   | 类型 |说明|
+| 属性   | 类型 |Description|
 |:---------------|:--------|:----------|
 |角色|string 集合|用户的角色。 必须为空 `owner` 。|
 |用户|[user](../resources/user.md)|要添加到频道的用户。|
@@ -70,7 +70,6 @@ POST /teams/{team-id}/channels/{channel-id}/members
 ```http
 POST https://graph.microsoft.com/beta/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d82/channels/19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype/members
 Content-type: application/json
-Content-length: 100
 
 {
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -109,7 +108,6 @@ Content-length: 100
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 468
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('ece6f0a1-7ca4-498b-be79-edf6c8fc4d82')/channels('19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype')/members/microsoft.graph.aadUserConversationMember/$entity",
@@ -135,7 +133,6 @@ Content-length: 468
 ```http
 POST https://graph.microsoft.com/beta/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d82/channels/19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype/members
 Content-type: application/json
-Content-length: 100
 
 {
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -176,7 +173,6 @@ Content-length: 100
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 468
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('ece6f0a1-7ca4-498b-be79-edf6c8fc4d82')/channels('19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype')/members/microsoft.graph.aadUserConversationMember/$entity",
@@ -202,7 +198,6 @@ Content-length: 468
 ```http
 POST https://graph.microsoft.com/beta/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d82/channels/19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype/members
 Content-type: application/json
-Content-length: 100
 
 {
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -242,7 +237,6 @@ Content-length: 100
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 468
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('ece6f0a1-7ca4-498b-be79-edf6c8fc4d82')/channels('19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype')/members/microsoft.graph.aadUserConversationMember/$entity",

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: f4ca8d05b6343ca1730b97731e7b0527a4932894
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 32a76bdc59024da3592d458f5054679545b51850
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59072944"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945136"
 ---
 # <a name="get-onenoteoperation"></a>获取 onenoteOperation
 
@@ -24,7 +24,7 @@ ms.locfileid: "59072944"
 
 如果状态为 `failed` ，则错误 `@api.diagnostics` 和属性提供错误信息。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -44,7 +44,7 @@ GET /sites/{id}/onenote/operations/{id}
 ## <a name="optional-query-parameters"></a>可选的查询参数
 无。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
@@ -96,7 +96,6 @@ GET https://graph.microsoft.com/v1.0/me/onenote/operations/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 215
 
 {
   "id": "id-value",

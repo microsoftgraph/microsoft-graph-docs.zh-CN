@@ -1,16 +1,16 @@
 ---
 title: 列出同步作业
 description: 列出给定应用程序实例的现有作业 (服务主体) 。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: c236b4bbd7afff7065932537c534aeb2d69dd57e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 288f5e4f27581bd7f56ac49bdb6688b3be826ae0
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054824"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60928646"
 ---
 # <a name="list-synchronization-jobs"></a>列出同步作业
 
@@ -20,7 +20,7 @@ ms.locfileid: "52054824"
 
 列出给定应用程序实例的现有作业 (服务主体) 。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
@@ -95,7 +95,6 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 2958
 
 {
     "value": [

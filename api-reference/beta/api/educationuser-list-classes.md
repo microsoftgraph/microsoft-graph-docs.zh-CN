@@ -1,16 +1,16 @@
 ---
 title: 列出课程
 description: '检索 class 对象的列表。 请注意，如果使用委派令牌，成员只能看到有关其自己课程的信息。 '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: ec0bcde1e53e3dfe801a4cdafbf49572b4c812b8
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c81e40afd224cb13baa0d4b6c5c316c739e85c70
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52042831"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937844"
 ---
 # <a name="list-classes"></a>列出课程
 
@@ -20,7 +20,7 @@ ms.locfileid: "52042831"
 
 检索 educationClass 资源的集合。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -114,7 +114,6 @@ GET https://graph.microsoft.com/beta/education/me/classes
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 277
 
 {
   "value": [

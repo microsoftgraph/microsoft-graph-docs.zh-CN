@@ -2,24 +2,22 @@
 title: 列出打印机的 printConnectors
 description: 检索与打印机关联的连接器列表。
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: b1b1acb6a0f998d272d04eef43e94a3ddfd92016
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 258001317eff1c003107cd023bd04dbb09d9b893
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50956321"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937186"
 ---
 # <a name="list-printconnectors-for-a-printer"></a>列出打印机的 printConnectors
 命名空间：microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 检索与 [打印机关联的 printConnectors](../resources/printconnector.md) [列表](../resources/printer.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅、授予获取打印机访问权限的权限以及下表中列出的权限之一[](printer-get.md)。

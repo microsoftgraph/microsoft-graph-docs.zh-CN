@@ -2,15 +2,15 @@
 title: 创建标记
 description: 创建新的标记对象。
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 412a0cd1ae4f8c38466a6526a5c84eea670897bb
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 439005577189f542790d389447e6f7a02369e30f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50773758"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941503"
 ---
 # <a name="create-tag"></a>创建标记
 
@@ -20,7 +20,7 @@ ms.locfileid: "50773758"
 
 为指定案例创建新标记。  标记在审阅内容时用于审阅集。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "50773758"
 |:---|:---|
 |委派（工作或学校帐户）|eDiscovery.Read.All、eDiscovery.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -54,10 +54,10 @@ POST /compliance/ediscovery/cases/{caseId}/tags
 
 下表显示创建 标记时所需的 [属性](../resources/ediscovery-tag.md)。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |childSelectability|[microsoft.graph.ediscovery.childSelectability](../resources/ediscovery-tag.md#childselectability-values)|指示是否可以将单个或多个子标记与文档关联。 可取值为：`One`、`Many`。  此值控制 UX 是作为复选框还是单选按钮组显示标记。 必需。|
-|displayName|字符串|标记的显示名称。 必需。|
+|displayName|String|标记的显示名称。 必需。|
 
 ## <a name="response"></a>响应
 
@@ -78,7 +78,6 @@ POST /compliance/ediscovery/cases/{caseId}/tags
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/47746044-fd0b-4a30-acfc-5272b691ba5b/tags
 Content-Type: application/json
-Content-length: 235
 
 {
   "displayName":"Privileged",

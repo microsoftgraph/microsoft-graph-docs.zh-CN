@@ -1,16 +1,16 @@
 ---
 title: educationUser： delta
 description: 获取新创建或更新的用户，而无需执行整个用户集合的完全读取。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mlafleur
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 7477bea6eeb01e74cb824a7d31b0cc5dba3161ef
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 2025c7272f54b635c290c6e5c18a8ee5d772a8d6
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52042924"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944844"
 ---
 # <a name="educationuser-delta"></a>educationUser： delta
 
@@ -20,7 +20,7 @@ ms.locfileid: "52042924"
 
 获取新创建或更新的 [educationUser，](../resources/educationuser.md) 而无需执行整个集合的完整读取。 有关详细信息 [，请参阅使用 delta](/graph/delta-query-overview) 查询。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -50,7 +50,7 @@ GET /education/users/delta
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [educationUser](../resources/educationuser.md) 集合对象。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [educationUser](../resources/educationuser.md) 集合对象。
 
 > [!IMPORTANT]
 > educationUser 增量不包括已删除的用户。
@@ -108,7 +108,6 @@ GET https://graph.microsoft.com/beta/education/users/delta
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1039
 
 {
   "value": [

@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: 8e57fa0498529cc7ae5679eddd6a242b7514d7d7
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 426d368606a3c3860ba89d2eff38f54f0802b5af
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59767158"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939117"
 ---
 # <a name="create-schemaextension"></a>创建 schemaExtension
 
@@ -134,7 +134,6 @@ Content-type: application/json
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 420
 
 {
     "id": "graphlearn_courses",

@@ -5,12 +5,12 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c0cf19a36f61db32e8950202ffd1b28eec37cf3c
-ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
+ms.openlocfilehash: 8914f18d74ee3a5c281dfd21410cc46174bbbaf2
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60219812"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939866"
 ---
 # <a name="update-authenticationmethodspolicy"></a>更新 authenticationMethodsPolicy
 命名空间：microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "60219812"
 
 更新 [authenticationMethodsPolicy 对象](../resources/authenticationmethodspolicy.md) 的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -52,7 +52,7 @@ PATCH /policies/authenticationMethodsPolicy
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [registrationEnforcement](../resources/registrationenforcement.md) 对象的 JSON 表示形式，以提示用户设置目标身份验证方法。 
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |registrationEnforcement|[registrationEnforcement](../resources/registrationenforcement.md)|在登录时强制注册。 此属性可用于提示用户设置目标身份验证方法。|
 
@@ -72,7 +72,6 @@ PATCH /policies/authenticationMethodsPolicy
 ``` http
 PATCH https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy
 Content-Type: application/json
-Content-length: 293
 
 {
   "registrationEnforcement": {

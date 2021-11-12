@@ -5,20 +5,20 @@ ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: c264f42458973daf452c780ff868b38602fd7def
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ce30931b12c007a764caf9185e10cc097a025394
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59104922"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944464"
 ---
 # <a name="page-copytosection"></a>page： copyToSection
 
 命名空间：microsoft.graph 将页面复制到特定部分。
 
-对于复制操作，你可以遵循异步调用模式：首先调用 Copy 操作，然后轮询操作终结点的结果。
+对于 Copy 操作，你可以遵循异步调用模式：首先调用 Copy 操作，然后轮询操作终结点的结果。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -43,7 +43,7 @@ POST /groups/{id}/onenote/pages/{id}/copyToSection
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 JSON 对象，其中包含操作所需的参数。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |groupId|String|要复制到的组的 ID。 仅在复制到组时Microsoft 365使用。|
 |id|String|必需。 目标节的 ID。|
@@ -65,7 +65,6 @@ POST /groups/{id}/onenote/pages/{id}/copyToSection
 ```http
 POST https://graph.microsoft.com/v1.0/me/onenote/pages/{id}/copyToSection
 Content-type: application/json
-Content-length: 52
 
 {
   "id": "id-value",

@@ -5,12 +5,12 @@ author: abheek-das
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 05a86cd4cb653fb455a73bbb400a8d64f3478aa2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8e2632ff0acd2bef4525092a16cefe250068358e
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59037290"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945101"
 ---
 # <a name="list-outlook-categories"></a>列出 Outlook 类别
 
@@ -19,7 +19,7 @@ ms.locfileid: "59037290"
 
 获取为用户定义的所有类别。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -89,7 +89,6 @@ GET https://graph.microsoft.com/v1.0/me/outlook/masterCategories
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 727
 
 {
   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('8ae6f565-0d7f-4ead-853e-7db94c912a1f')/outlook/masterCategories",

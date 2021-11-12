@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 68b07314c0a2bfd42729b44a01956488ba135a53
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 45c097f235570a034784997ac72aab1fe6a13542
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59130882"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60931830"
 ---
 # <a name="get-educationcategory"></a>获取 educationCategory
 
@@ -18,7 +18,7 @@ ms.locfileid: "59130882"
 
 检索 [educationCategory](../resources/educationcategory.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -39,7 +39,7 @@ GET /education/classes/{id}/assignmentCategories/{id}
 
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 标头        | 值                     |
 | :------------ | :------------------------ |
 | Authorization | Bearer {token}。必需。 |
@@ -101,7 +101,6 @@ GET https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 85
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignmentCategories/$entity",

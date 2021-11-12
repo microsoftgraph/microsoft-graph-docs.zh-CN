@@ -1,16 +1,16 @@
 ---
 title: 'Filter: apply'
 description: 在给定列中应用给定的筛选条件。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: ruoyingl
 ms.prod: ''
-ms.openlocfilehash: 4484f678c85b85fed0b659bfc45a7afaf869c840
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 17230cbe9e736b1bdf42b8070da377eabd42af1e
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787262"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944089"
 ---
 # <a name="filter-apply"></a>Filter: apply
 
@@ -19,7 +19,7 @@ ms.locfileid: "52787262"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 在给定列中应用给定的筛选条件。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -45,7 +45,7 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |条件|workbookFilterCriteria|要应用的条件。|
 
@@ -66,7 +66,6 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/filter/apply
 Content-type: application/json
-Content-length: 321
 
 {
   "criteria": {

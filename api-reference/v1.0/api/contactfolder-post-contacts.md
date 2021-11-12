@@ -5,12 +5,12 @@ author: kevinbellinger
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0905251c5e45e6100927223bf0122099d445e263
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 57fc7269e85560b5c01dfb5ef4ca8ec8ddcc4a95
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147736"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946984"
 ---
 # <a name="create-contact"></a>创建联系人
 
@@ -18,7 +18,7 @@ ms.locfileid: "59147736"
 
 将联系人添加到联系人根文件夹或其他联系人文件夹的 `contacts` 终结点中。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -72,7 +72,6 @@ POST /users/{id | userPrincipalName}/contactFolders/{id}/contacts
 ```http
 POST https://graph.microsoft.com/v1.0/me/contactFolders/{id}/contacts
 Content-type: application/json
-Content-length: 210
 
 {
   "parentFolderId": "parentFolderId-value",
@@ -121,7 +120,6 @@ Content-length: 210
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 210
 
 {
   "parentFolderId": "parentFolderId-value",

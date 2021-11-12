@@ -2,15 +2,15 @@
 title: workbookWorksheetProtection： protect
 description: 保护工作表。如果工作表处于受保护状态，则会引发它。
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 55f396960211ebda241c274feab824c39bb923df
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: d9e0bc2312fab1241d53d1b2a6faf16323f7462f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787700"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945962"
 ---
 # <a name="workbookworksheetprotection-protect"></a>workbookWorksheetProtection： protect
 
@@ -19,7 +19,7 @@ ms.locfileid: "52787700"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 保护工作表。如果工作表处于受保护状态，则会引发它。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -44,7 +44,7 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/protection/prote
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |选项|[workbookWorksheetProtectionOptions](../resources/workbookworksheetprotectionoptions.md)|可选。工作表保护选项。|
 
@@ -65,7 +65,6 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/protection/prote
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/protection/protect
 Content-type: application/json
-Content-length: 383
 
 {
   "options": {

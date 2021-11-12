@@ -2,15 +2,15 @@
 title: 列出用户
 description: 检索用户对象列表。 这些 user 对象将包含特定于教育的属性。
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 6313426738a63fd4f84f468892a00a7c6f6152f0
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b8fcdfb85534af36fecfa97dbc125ddefed31f6c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52043652"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60925312"
 ---
 # <a name="list-users"></a>列出用户
 
@@ -20,7 +20,7 @@ ms.locfileid: "52043652"
 
 检索 user 对象列表。 这些 user 对象将包含特定于教育的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -90,7 +90,6 @@ GET https://graph.microsoft.com/beta/education/users
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 593
 
 {
   "value": [

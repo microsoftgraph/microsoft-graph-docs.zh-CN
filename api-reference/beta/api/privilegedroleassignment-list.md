@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: 14e5b60cc7b0dd40e4211d1b0c108826d033e8ac
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 4fcc809abd9dfe0a55522959113df388577d9b3f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695774"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947257"
 ---
 # <a name="list-privilegedroleassignments"></a>列出 privilegedRoleAssignments
 
@@ -21,7 +21,7 @@ ms.locfileid: "60695774"
 [!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 检索 [privilegedRoleAssignment](../resources/privilegedroleassignment.md) 对象的列表，这些对象对应于组织的所有角色分配。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 请求程序需要具有以下角色之一 _：Privileged Role Administrator、Global_ _Administrator、Security_ _Administrator_ 或 _Security Reader。_ 
@@ -95,7 +95,6 @@ GET https://graph.microsoft.com/beta/privilegedRoleAssignments
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 237
 
 {
   "value": [
@@ -151,7 +150,6 @@ GET https://graph.microsoft.com/beta/privilegedRoleAssignments?$filter=isElevate
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 237
 
 {
   "value": [
@@ -215,7 +213,6 @@ GET https://graph.microsoft.com/beta/privilegedRoleAssignments?$filter=isElevate
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 237
 
 {
   "value": [
@@ -279,7 +276,6 @@ GET https://graph.microsoft.com/beta/privilegedRoleAssignments?$filter=isElevate
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 237
 
 {
   "value": [

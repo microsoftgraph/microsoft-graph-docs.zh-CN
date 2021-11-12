@@ -2,15 +2,15 @@
 title: 列出 dailyPrintUsageByUser
 description: 检索每日打印使用情况摘要的列表，按用户分组。
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: accf611304f83e7d3e245f09cbbde14749e84d67
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: 55455343775b1c5ed5f6c7fb65ca31a759abdc4f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52781220"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939285"
 ---
 # <a name="list-dailyprintusagebyuser"></a>列出 dailyPrintUsageByUser
 
@@ -20,7 +20,7 @@ ms.locfileid: "52781220"
 
 检索每日打印使用情况摘要的列表，按用户分组。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。
@@ -92,7 +92,6 @@ GET https://graph.microsoft.com/beta/print/reports/dailyPrintUsageByUser
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 268
 
 {
   "value": [

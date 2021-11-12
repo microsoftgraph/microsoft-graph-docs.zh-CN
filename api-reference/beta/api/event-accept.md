@@ -2,15 +2,15 @@
 title: 'event: accept'
 description: 接受用户日历中的指定事件。
 author: harini84
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4176dcffa8f8ffcbc2d0e1892647742720307ba6
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 0ec53cf5271edaf6c9eca8b77270cb1d78cf9410
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436273"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937767"
 ---
 # <a name="event-accept"></a>event: accept
 
@@ -53,7 +53,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |注释|String|响应中包含的文本。可选。|
 |sendResponse|Boolean|如果将响应发送给组织者，则值为 `true`；否则为 `false`。可选。默认值为 `true`。|
@@ -75,7 +75,6 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ```http
 POST https://graph.microsoft.com/beta/me/events/{id}/accept
 Content-type: application/json
-Content-length: 56
 
 {
   "comment": "comment-value",

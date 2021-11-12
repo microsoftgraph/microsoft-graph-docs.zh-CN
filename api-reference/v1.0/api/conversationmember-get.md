@@ -5,12 +5,12 @@ author: akjo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 04d38a9724aeeadd3214d05f7affaa0d01cc5679
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 44daddda91504432668e1f65e36d1318801cc385
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59050717"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924761"
 ---
 # <a name="get-conversationmember"></a>获取 conversationMember
 
@@ -107,7 +107,6 @@ GET https://graph.microsoft.com/V1.0/chats/{id}/members/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 201
 
 {
   "id": "id-value",

@@ -2,24 +2,22 @@
 title: 列出 monthlyPrintUsageByPrinter
 description: 检索按打印机分组的每月打印使用情况摘要列表。
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 69d8fc406f83b2ec82379767c188594fa4090ab9
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 3aa401a699b7266f3399a995ff0781cc44900f73
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50959589"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937116"
 ---
 # <a name="list-monthlyprintusagebyprinter"></a>列出 monthlyPrintUsageByPrinter
 命名空间：microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 检索按打印机分组的每月打印使用情况摘要 [的列表](../resources/printer.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。

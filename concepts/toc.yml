@@ -370,8 +370,6 @@ items:
             href: social-intel-concept-overview.md
           - name: 获取相关人员的信息
             href: people-example.md
-          - name: 自定义人员见解隐私（预览）
-            href: insights-customize-people-insights-privacy.md
           - name: 自定义个人资料卡片（预览）
             href: add-properties-profilecard.md
           - name: 项见解概述
@@ -628,6 +626,8 @@ items:
                 href: migrate-azure-ad-graph-deploy-test-extend.md
               - name: 迁移常见问题解答
                 href: migrate-azure-ad-graph-faq.md
+              - name: 配置 Azure AD Graph 权限
+                href: migrate-azure-ad-graph-configure-permissions.md
       - name: 使用 SDK
         items:
           - name: 概述

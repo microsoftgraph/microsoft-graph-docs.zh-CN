@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: d2f99cdd2608d2b72585de1161278b1ce4bd8cd3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 90581ea2ea2317363e4043c92e520f2bd379bf59
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59073973"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936262"
 ---
 # <a name="grouplifecyclepolicy-removegroup"></a>groupLifecyclePolicy: removeGroup
 
@@ -18,7 +18,7 @@ ms.locfileid: "59073973"
 
 从生命周期策略中删除组。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -44,7 +44,7 @@ POST /groupLifecyclePolicies/{id}/removeGroup
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数 | 类型 | 说明 |
+| 参数 | 类型 | Description |
 |:---------------|:--------|:----------|
 |groupId|String| 要从策略中删除的组的标识符。|
 
@@ -63,7 +63,6 @@ POST /groupLifecyclePolicies/{id}/removeGroup
 ```http
 POST https://graph.microsoft.com/v1.0/groupLifecyclePolicies/{id}/removeGroup
 Content-type: application/json
-Content-length: 57
 
 {
   "groupId": "ffffffff-ffff-ffff-ffff-ffffffffffff"
@@ -76,7 +75,6 @@ Content-length: 57
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 21
 
 {
   "value": true

@@ -1,16 +1,16 @@
 ---
 title: todoTaskList： delta
-description: 获取已添加、删除或删除的一组 todoTaskList 微软待办。
-localization_priority: Normal
+description: 获取一组已在 微软待办 中添加、删除或删除的 todoTaskList 微软待办。
+ms.localizationpriority: medium
 author: avijityadav
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ce5cc7202806b62afcc7f64bcd3b2393f2d31753
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ca81f053936e93fd5cecc31c285a739d5109a170
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048923"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943057"
 ---
 # <a name="todotasklist-delta"></a>todoTaskList： delta
 
@@ -22,7 +22,7 @@ ms.locfileid: "52048923"
 
 **todoTaskList** 的 **delta** 函数调用类似于 GET 请求，只不过通过在这些调用中的一 [](/graph/delta-query-overview)个或多个调用中正确应用状态令牌，您可以查询 **todoTaskList** 中的增量更改。 这样，您即可维护和同步用户的 **todoTaskList** 的本地存储，而无需每次从服务器获取所有 **todoTaskList。**
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -52,7 +52,7 @@ GET /users/{id|userPrincipalName}/todo/lists/delta
 
 像在任何 GET 请求中一样，你可以使用 `$select` 查询参数以仅指定获取最佳性能所需的属性。始终返回 _id_ 属性。 
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称       | 类型 | 说明 |
 |:---------------|:----------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
@@ -67,7 +67,7 @@ GET /users/{id|userPrincipalName}/todo/lists/delta
 ### <a name="request"></a>请求
 以下示例演示如何进行初始 **delta** 函数调用，将响应正文中 **todoTaskList** 的最大数目限制为 2。
 
-若要跟踪 **todoTaskList** 中的更改，可以使用适当的状态令牌进行一次或多次 **delta** 函数调用，获取自上次 delta 查询以来的增量更改集。 
+若要跟踪 **todoTaskList** 中的更改，可以使用适当的状态令牌进行一次或多个 **delta** 函数调用，获取自上次 delta 查询以来的增量更改集。 
 
 跟踪 **todoTaskList** 和跟踪列表中的 **todoTask** 资源之间的主要区别是 delta 查询请求 URL，查询响应返回 **todoTaskList** 而不是 **todoTask 集合** 。
 
@@ -88,7 +88,6 @@ Prefer: odata.maxpagesize=2
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 254
 
 {
   "@odata.deltaLink":"https://graph.microsoft.com/beta/me/todo/lists/delta?$skiptoken=ldfdgdgfoT5csv4k99nvQqyku0jaGqMhc6XyFff5qQTQ7RJOr",

@@ -1,16 +1,16 @@
 ---
 title: educationSubmission： setUpResourcesFolder
 description: 触发创建 SharePoint 资源文件夹，其中应针对给定提交 (Word、Excel 等) 所有基于文件的资源。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sharmas
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: c4acc92ad0c95041b39e84f04849d2f4095eab50
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 40f89dde3b1424af331970698746e183e23e2b5e
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52870134"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944085"
 ---
 # <a name="educationsubmission-setupresourcesfolder"></a>educationSubmission： setUpResourcesFolder
 
@@ -20,9 +20,9 @@ ms.locfileid: "52870134"
 
 触发创建 SharePoint 资源文件夹，其中应针对给定提交 (Word、Excel 等) 所有基于文件的资源。
 
-请注意，文件必须位于此文件夹中才能添加为资源。 只有班级中的学生可以确定要上载到给定提交级别资源文件夹中的文件。 
+请注意，文件必须位于此文件夹中才能添加为资源。 只有班级中的学生可以确定在给定提交级别资源文件夹中要上载的文件。 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -61,7 +61,7 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/setUpResourcesFol
   "name": "educationsubmission_setupresourcesfolder"
 }-->
 ```msgraph-interactive
-POST https://graph.microsoft.com/beta/education/classes/11012/assignments/19002/submissions/20302/setUpResourcesFolder
+POST https://graph.microsoft.com/beta/education/classes/b07edbef-7420-4b3d-8f7c-d599cf21e069/assignments/1e5222bd-b7d2-4d64-8a22-74b722ce2fc6/submissions/803fb5dd-3553-455f-3d94-f79fb54a1003/setUpResourcesFolder
 Content-type: application/json
 
 {
@@ -98,7 +98,6 @@ Content-type: application/json
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 279
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('b07edbef-7420-4b3d-8f7c-d599cf21e069')/assignments('1e5222bd-b7d2-4d64-8a22-74b722ce2fc6')/submissions/$entity",

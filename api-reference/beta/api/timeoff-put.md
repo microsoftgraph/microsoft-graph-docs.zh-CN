@@ -2,15 +2,15 @@
 title: 替换 timeOff
 description: 替换现有的 timeOff。
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 535feee59c1f3992d9d78eea1380b50bd841987c
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 7b31926221e9e261610c67733d9a98998c3e56b0
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787350"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947061"
 ---
 # <a name="replace-timeoff"></a>替换 timeOff
 
@@ -22,7 +22,7 @@ ms.locfileid: "52787350"
 
 如果指定的 [timeOff](../resources/timeoff.md) 不存在，此方法将返回 `404 Not found` 。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -124,7 +124,6 @@ Prefer: return=representation
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 401
 
 {
   "userId": "c5d0c76b-80c4-481c-be50-923cd8d680a1",

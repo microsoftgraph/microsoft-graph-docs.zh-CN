@@ -2,15 +2,15 @@
 title: Range:Column
 description: 获取范围中包含的列。
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: f3e7de29404775b3eb888fe617018503d81fea49
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 1d87daabc659c1363fd8686d32f3d768e339773f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055132"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946172"
 ---
 # <a name="range-column"></a>Range:Column
 
@@ -19,7 +19,7 @@ ms.locfileid: "52055132"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取范围中包含的列。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -48,7 +48,7 @@ GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/ran
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |column|number|要检索的区域的列号。从零开始编制索引。|
 
@@ -67,7 +67,6 @@ GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/ran
 ```http
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/Column
 Content-type: application/json
-Content-length: 21
 
 {
   "column": {
@@ -76,7 +75,7 @@ Content-length: 21
 ```
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -85,7 +84,6 @@ Content-length: 21
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 169
 
 {
   "address": "address-value",

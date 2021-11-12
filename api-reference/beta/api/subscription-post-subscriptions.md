@@ -1,16 +1,16 @@
 ---
 title: 创建订阅
-description: 订阅侦听器应用程序，以在 Microsoft 资源发生更改时Graph更改通知。
+description: 订阅侦听器应用程序，以在 Microsoft 数据或资源发生更改时Graph更改通知。
 ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 961b70e3e9815dbf72ac9e2c773c73569b29d051
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 7aa4965457eaa49f4645297f4471ce9f13ef82f8
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766836"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947145"
 ---
 # <a name="create-subscription"></a>创建订阅
 
@@ -52,7 +52,7 @@ ms.locfileid: "59766836"
 |[组对话](../resources/conversation.md) | Group.Read.All | 不支持 | 不支持 |
 |[列表](../resources/list.md) | Sites.ReadWrite.All | 不支持 | Sites.ReadWrite.All |
 |[邮件](../resources/message.md) | Mail.ReadBasic、Mail.Read | Mail.ReadBasic、Mail.Read | Mail.ReadBasic、Mail.Read |
-|[presence](../resources/presence.md) | Presence.Read.All | 不支持 | 不支持 |
+|[状态](../resources/presence.md) | Presence.Read.All | 不支持 | 不支持 |
 |[打印机](../resources/printer.md) | 不支持 | 不支持 | 打印机。阅读.All，Printer.ReadWrite.All |
 |[printTaskDefinition](../resources/printtaskdefinition.md) | 不支持 | 不支持 | PrintTaskDefinition.ReadWrite.All |
 |安全[警报](../resources/alert.md) | SecurityEvents.ReadWrite.All | 不支持 | SecurityEvents.ReadWrite.All |
@@ -111,8 +111,7 @@ POST /subscriptions
 
 ### <a name="request"></a>请求
 
-在请求正文中，提供 [subscription](../resources/subscription.md) 对象的 JSON 表示形式。
-`clientState` 和 `latestSupportedTlsVersion` 是可选字段。
+在请求正文中，提供 [subscription](../resources/subscription.md) 对象的 JSON 表示形式。`clientState` 和 `latestSupportedTlsVersion` 字段是可选的。
 
 此请求为当前登录用户收到的新邮件更改通知创建订阅。
 
@@ -153,8 +152,7 @@ Content-type: application/json
 
 ---
 
-在请求正文中，提供 [subscription](../resources/subscription.md) 对象的 JSON 表示形式。
-`clientState` 和 `latestSupportedTlsVersion` 是可选字段。
+在请求正文中，提供 [subscription](../resources/subscription.md) 对象的 JSON 表示形式。`clientState` 和 `latestSupportedTlsVersion` 字段是可选的。
 
 #### <a name="resources-examples"></a>资源示例
 
@@ -198,7 +196,6 @@ Content-type: application/json
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 252
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#subscriptions/$entity",

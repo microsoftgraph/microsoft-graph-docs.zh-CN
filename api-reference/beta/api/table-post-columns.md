@@ -2,15 +2,15 @@
 title: 创建 TableColumn
 description: 使用此 API 创建新的 TableColumn。
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: e5255c8dfd8e80b88720cd13a208fac89c928a2d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 7b1ec04ed44837548de2a6370b94150a3c1fef3e
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051828"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940984"
 ---
 # <a name="create-tablecolumn"></a>创建 TableColumn
 
@@ -19,7 +19,7 @@ ms.locfileid: "52051828"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 使用此 API 创建新的 TableColumn。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -62,7 +62,6 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/columns
 Content-type: application/json
-Content-length: 81
 
 {
   "id": "99",
@@ -91,7 +90,7 @@ Content-length: 81
 
 在请求正文中，提供 [workbookTableColumn](../resources/workbooktablecolumn.md) 对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -100,7 +99,6 @@ Content-length: 81
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 81
 
 {
   "id": "99",

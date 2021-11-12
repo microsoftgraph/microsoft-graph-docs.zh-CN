@@ -1,16 +1,16 @@
 ---
 title: 更新组织
 description: 更新当前经过身份验证的组织的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: adimitui
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: cae41ed267ea4595134247cf1ac3967ce34141a5
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: f124a3bb6b9a8bbbad6ba41ceffb46c5cee7caed
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52785929"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943344"
 ---
 # <a name="update-organization"></a>更新组织
 
@@ -20,7 +20,7 @@ ms.locfileid: "52785929"
 
 更新当前经过身份验证的组织的属性。 在这种情况下，定义为只包含一条记录的集合，因此必须在请求中指定 `organization` 其 **ID。**  **ID** 也称为组织的 **tenantId。**
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -50,7 +50,7 @@ PATCH /organization/{id}
 
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
-| 属性  | 类型 |说明|
+| 属性  | 类型 |Description|
 |:---------------|:--------|:----------|
 |marketingNotificationEmails|String collection|                                        **注意：** 不可为 null。            |
 |privacyProfile|[privacyProfile](../resources/privacyprofile.md)|组织的隐私配置文件（设置 statementUrl 和 contactEmail）。            |
@@ -58,7 +58,7 @@ PATCH /organization/{id}
 |securityComplianceNotificationPhones|String collection||
 |technicalNotificationMails|String collection|                                        **注意：** 不可为 null。            |
 
-由于 **组织** 资源 [支持扩展](/graph/extensibility-overview)，因此可以使用 操作在现有组织实例的扩展的自定义属性中添加、更新或删除你自己的特定于 `PATCH` **应用** 的数据。
+由于 **组织** 资源 [支持扩展](/graph/extensibility-overview)，因此可以使用 操作在现有组织实例的扩展的自定义属性中添加、更新或删除你自己的特定于 `PATCH` 应用的数据。
 
 ## <a name="response"></a>响应
 
@@ -77,7 +77,6 @@ PATCH /organization/{id}
 ```http
 PATCH https://graph.microsoft.com/beta/organization/{id}
 Content-type: application/json
-Content-length: 411
 
 {
   "marketingNotificationEmails" : ["marketing@contoso.com"],

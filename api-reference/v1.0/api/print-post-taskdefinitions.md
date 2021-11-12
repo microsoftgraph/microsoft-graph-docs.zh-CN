@@ -2,26 +2,24 @@
 title: 创建 printTaskDefinition
 description: 创建新的任务定义。
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: ee7172c76863cb62a24c44ba73de2f02bb27e30c
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 08c9c17169894571e4624c84c52fab2ba2855862
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50772210"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924368"
 ---
 # <a name="create-printtaskdefinition"></a>创建 printTaskDefinition
 命名空间：microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 创建新的任务定义。
 
 有关如何使用此 API 向通用打印添加拉页打印支持的详细信息，请参阅扩展 [通用打印以支持拉取打印](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。
@@ -70,7 +68,6 @@ POST /print/taskDefinitions
 ``` http
 POST https://graph.microsoft.com/v1.0/print/taskDefinitions
 Content-Type: application/json
-Content-length: 163
 
 {
   "displayName": "Test TaskDefinitionName",

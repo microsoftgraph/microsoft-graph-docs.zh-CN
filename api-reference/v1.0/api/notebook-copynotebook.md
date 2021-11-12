@@ -5,20 +5,20 @@ ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 85b6a312ac17e45381cc8a8c6e39e623ef0386ef
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 808236fe515d2a557a50c9ce5326229f5b89e6e1
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59016069"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945181"
 ---
 # <a name="notebook-copynotebook"></a>notebook： copyNotebook
 
 命名空间：microsoft.graph 将笔记本复制到目标文档库中的笔记本文件夹。 如果文件夹不存在，则创建该文件夹。
 
-对于复制操作，你可以遵循异步调用模式：首先调用 Copy 操作，然后轮询操作终结点的结果。
+对于 Copy 操作，你可以遵循异步调用模式：首先调用 Copy 操作，然后轮询操作终结点的结果。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -43,7 +43,7 @@ POST /groups/{id}/onenote/notebooks/{id}/copyNotebook
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 JSON 对象，其中包含操作所需的参数。 如果不需要，可以发送空正文。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |groupId|String|要复制到的组的 ID。 仅在复制到组时Microsoft 365使用。|
 |renameAs|String|副本的名称。 默认为现有项目的名称。 |
@@ -65,7 +65,6 @@ POST /groups/{id}/onenote/notebooks/{id}/copyNotebook
 ```http
 POST https://graph.microsoft.com/v1.0/me/onenote/notebooks/{id}/copyNotebook
 Content-type: application/json
-Content-length: 108
 
 {
   "groupId": "groupId-value",

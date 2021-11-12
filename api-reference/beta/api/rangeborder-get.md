@@ -2,15 +2,15 @@
 title: 获取 RangeBorder
 description: 检索 rangeborder 对象的属性和关系。
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 76238919d3f7ea3bb0847e9a247e87ff653f8244
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b77a6216e4ae027eb6ff82fa5fba30fda0db25ff
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055041"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947173"
 ---
 # <a name="get-rangeborder"></a>获取 RangeBorder
 
@@ -19,7 +19,7 @@ ms.locfileid: "52055041"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索 rangeborder 对象的属性和关系。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/r
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -93,7 +93,6 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/r
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 136
 
 {
   "id": "id-value",

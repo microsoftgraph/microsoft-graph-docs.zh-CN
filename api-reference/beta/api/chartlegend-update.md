@@ -2,15 +2,15 @@
 title: 更新 chartlegend
 description: 更新 chartlegend 对象的属性。
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: e84e0893f2003cb89dd4c7c60303ae1949bbd9c0
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 1d88af219bb39e8f54c955e676d1e9547fdf4286
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047397"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938984"
 ---
 # <a name="update-chartlegend"></a>更新 chartlegend
 
@@ -19,7 +19,7 @@ ms.locfileid: "52047397"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新 chartlegend 对象的属性。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -43,7 +43,7 @@ PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/l
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |overlay|布尔|表示图表图例是否应该与图表主体重叠的布尔值。|
 |position|string|表示图例在图表上的位置。可能的值是：`Top`、`Bottom`、`Left`、`Right`、`Corner`、`Custom`。|
@@ -64,7 +64,6 @@ PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/l
 ```http
 PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/legend
 Content-type: application/json
-Content-length: 72
 
 {
   "visible": true,
@@ -91,7 +90,7 @@ Content-length: 72
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -100,7 +99,6 @@ Content-length: 72
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 72
 
 {
   "visible": true,

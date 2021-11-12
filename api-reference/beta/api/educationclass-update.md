@@ -2,15 +2,15 @@
 title: 更新 educationclass 属性
 description: 更新课程属性。
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 425d2072e13dbf00d8fc2e81b94cf7da58df8c57
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e30b27e86f107c28313887ec9ed9158421536df7
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52043720"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942350"
 ---
 # <a name="update-educationclass-properties"></a>更新 educationclass 属性
 
@@ -20,7 +20,7 @@ ms.locfileid: "52043720"
 
 更新课程属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -67,7 +67,6 @@ PATCH /education/classes/{id}
 ```http
 PATCH https://graph.microsoft.com/beta/education/classes/11014
 Content-type: application/json
-Content-length: 224
 
 {
   "description": "History - World History 1",
@@ -105,7 +104,6 @@ Content-length: 224
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 224
 
 {
   "id": "11014",

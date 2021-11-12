@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 721044cda7eb72db8dd86dd36c48df56a432b0dc
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 943a248a8f30ee0febd7c64ab242e9d8ec38710c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59767291"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936451"
 ---
 # <a name="create-cloudpcdeviceimage"></a>创建 cloudPcDeviceImage
 
@@ -20,7 +20,7 @@ ms.locfileid: "59767291"
 
 创建新的 [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) 对象。 Upload自定义操作系统映像，稍后可以在云电脑中预配该映像。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -81,7 +81,6 @@ POST /deviceManagement/virtualEndpoint/deviceImages
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceImages
 Content-Type: application/json
-Content-length: 363
 
 {
   "@odata.type": "#microsoft.graph.cloudPcDeviceImage",
@@ -124,7 +123,6 @@ Content-length: 363
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-length: 508
 
 {
   "@odata.type": "#microsoft.graph.cloudPcDeviceImage",

@@ -1,16 +1,16 @@
 ---
 title: educationSchool： delta
-description: 获取新创建或更新的学校，而无需执行整个学校集合的完整读取。
-localization_priority: Normal
+description: 获取新建或更新的学校，而无需执行整个学校集合的完整读取。
+ms.localizationpriority: medium
 author: mlafleur
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 9491a958776797252eada5116b48b25a936b4111
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 754451d99472581f408f1598574d6fb392511359
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52043463"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936801"
 ---
 # <a name="educationschool-delta"></a>educationSchool： delta
 
@@ -18,9 +18,9 @@ ms.locfileid: "52043463"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取新创建或更新的学校，而无需执行整个学校集合的完整读取。 有关详细信息 [，请参阅使用 delta](/graph/delta-query-overview) 查询。
+获取新建或更新的学校，而无需执行整个学校集合的完整读取。 有关详细信息 [，请参阅使用 delta](/graph/delta-query-overview) 查询。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -108,7 +108,6 @@ GET https://graph.microsoft.com/beta/education/schools/delta
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 313
 
 {
   "value": [

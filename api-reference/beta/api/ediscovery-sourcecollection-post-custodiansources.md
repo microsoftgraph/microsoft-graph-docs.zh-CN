@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 0f8830b7fe71e297cbbf4b3d470259b83e3e8125
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a4c7562e66d6c41bc7507d1178573ab6c2bd4ec7
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59996647"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936843"
 ---
 # <a name="add-custodiansources"></a>添加 custodianSources
 
@@ -20,7 +20,7 @@ ms.locfileid: "59996647"
 
 将 custodian [dataSource](../resources/ediscovery-datasource.md) 对象添加到源集合。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -54,9 +54,9 @@ POST /compliance/ediscovery/cases/{caseId}/sourceCollections/{sourceCollectionId
 
 下表显示创建 [dataSource](../resources/ediscovery-datasource.md)时所需的属性。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
-|@odata.id|字符串|定义空心对象的字符串。 请参阅下面的示例。|
+|@odata.id|String|定义空心对象的字符串。 请参阅下面的示例。|
 
 ## <a name="response"></a>响应
 
@@ -77,7 +77,6 @@ POST /compliance/ediscovery/cases/{caseId}/sourceCollections/{sourceCollectionId
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/47746044-fd0b-4a30-acfc-5272b691ba5b/sourceCollections/1a9b4145d8f84e39bc45a7f68c5c5119/custodianSources/$ref
 Content-Type: application/json
-Content-length: 179
 
 {
   "@odata.id":"https://graph.microsoft.com/beta/compliance/ediscovery/cases/47746044-fd0b-4a30-acfc-5272b691ba5b/custodians/ab3a628a383045eba344b3caecba3104/userSources/31423539-3846-4333-4136-353644383531"

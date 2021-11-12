@@ -2,15 +2,15 @@
 title: Range:UsedRange
 description: 返回指定 range 对象的所用范围。
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: d705c89ca70616a57209bf788e43c433c6f8ee61
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 45433bec935f1f8d4a089e41462dbbbe7ee54806
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055048"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946123"
 ---
 # <a name="range-usedrange"></a>Range:UsedRange
 
@@ -19,7 +19,7 @@ ms.locfileid: "52055048"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 返回指定 range 对象的所用范围。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -48,7 +48,7 @@ GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/ran
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |valuesOnly|布尔|可选。仅将有值的单元格视为已使用的单元格。|
 
@@ -69,7 +69,6 @@ GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/ran
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/UsedRange
 Content-type: application/json
-Content-length: 24
 
 {
   "valuesOnly": true
@@ -95,7 +94,7 @@ Content-length: 24
 
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -104,7 +103,6 @@ Content-length: 24
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 169
 
 {
   "address": "address-value",

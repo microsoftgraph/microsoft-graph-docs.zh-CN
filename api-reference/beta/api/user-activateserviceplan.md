@@ -2,15 +2,15 @@
 title: user： activateServicePlan
 description: 为给定用户和给定用户 `servicePlanId` `skuId` 激活服务计划。
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: f4b343e14f5ed675a93f99559c64aaa8242c93b5
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: f324c839646f2f503ed065fa4c65c95e7f432965
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514600"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947043"
 ---
 # <a name="user-activateserviceplan"></a>user： activateServicePlan
 
@@ -20,7 +20,7 @@ ms.locfileid: "58514600"
 
 为给定用户和给定用户 `servicePlanId` `skuId` 激活服务计划。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -52,7 +52,7 @@ POST /users/{id | userPrincipalName}/activateServicePlan
 
 在请求正文中，提供具有以下参数的 JSON 对象：
 
-| 参数 | 类型 | 说明 |
+| 参数 | 类型 | Description |
 | :--- | :--- | :--- |
 | servicePlanId | Guid | 要激活的 ServicePlan 的 PlanId。 |
 | skuId | Guid | 服务计划已打开的 SKU 的 SkuId。 |
@@ -76,7 +76,6 @@ POST /users/{id | userPrincipalName}/activateServicePlan
 ``` http
 POST https://graph.microsoft.com/beta/me/activateServicePlan
 Content-type: application/json
-Content-length: 115
 
 {
   "servicePlanId": "28f42d6f-8034-4a0f-9d8a-a218a63b3299",

@@ -5,19 +5,19 @@ author: lumine2008
 ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 033ebf670cd76005a19c9bc012ea2cfbad57f6db
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 35cae3ce5b1be12ee84d36b958f9febee37faf54
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59508297"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940375"
 ---
 # <a name="update-tablerow"></a>更新 tablerow
 
 命名空间：microsoft.graph
 
 更新 tablerow 对象的属性。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -45,7 +45,7 @@ PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|values|Json|表示指定区域的原始值。返回的数据类型可能是字符串、数字或布尔值。包含一个将返回错误字符串的错误的单元格。|
+|值|Json|表示指定区域的原始值。返回的数据类型可能是字符串、数字或布尔值。包含一个将返回错误字符串的错误的单元格。|
 
 ## <a name="response"></a>响应
 
@@ -62,7 +62,6 @@ PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows/{index}
 Content-type: application/json
-Content-length: 45
 
 {
   "index": 99,
@@ -97,7 +96,6 @@ Content-length: 45
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 45
 
 {
   "index": 99,

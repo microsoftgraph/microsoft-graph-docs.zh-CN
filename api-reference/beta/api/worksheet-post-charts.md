@@ -2,15 +2,15 @@
 title: 创建图表
 description: 使用此 API 创建新图表。
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 5101a83c67f7c28d9859db27055db6e752748404
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 5e857f09e6efe1b3aaef8b9ca342fe210b1691c7
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051632"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937557"
 ---
 # <a name="create-chart"></a>创建图表
 
@@ -19,7 +19,7 @@ ms.locfileid: "52051632"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 使用此 API 创建新图表。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -60,7 +60,6 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts
 Content-type: application/json
-Content-length: 52
 
 {
   "id": "id-value",
@@ -88,7 +87,7 @@ Content-length: 52
 
 在请求正文中，提供 [workbookChart](../resources/workbookchart.md) 对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -97,7 +96,6 @@ Content-length: 52
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 52
 
 {
   "id": "id-value",

@@ -2,15 +2,15 @@
 title: 创建 administrativeUnit
 description: 使用此 API 创建新的 administrativeUnit。
 author: DougKirschner
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: c363c5a387cbc0824b558cebfc03732cdf8fccb3
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 20c134dfcbce5a71ef74a2d0c6e8328e7313a542
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52991918"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939978"
 ---
 # <a name="create-administrativeunit"></a>创建 administrativeUnit
 
@@ -19,7 +19,7 @@ ms.locfileid: "52991918"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 使用此 API 创建新的 [administrativeUnit](../resources/administrativeunit.md)。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -64,7 +64,6 @@ POST /administrativeUnits
 ```http
 POST https://graph.microsoft.com/beta/administrativeUnits
 Content-type: application/json
-Content-length: 150
 
 {
     "displayName": "Seattle District Technical Schools",
@@ -104,7 +103,6 @@ Content-length: 150
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 172
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#administrativeUnits/$entity",

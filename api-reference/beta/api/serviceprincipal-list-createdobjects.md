@@ -1,16 +1,16 @@
 ---
 title: 'servicePrincipal: List createdObjects'
 description: 检索 directoryObject 对象列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 23f93a48e808a72e312c55def59fae0a89d6daeb
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c17f52abbcf719aa165cf1a25b9b81e62c0947fb
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053487"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944695"
 ---
 # <a name="serviceprincipal-list-createdobjects"></a>servicePrincipal: List createdObjects
 
@@ -95,7 +95,6 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/createdObjects
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
 
 {
   "value": [

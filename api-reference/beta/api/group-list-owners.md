@@ -1,16 +1,16 @@
 ---
 title: 列出所有者
 description: 检索组的所有者列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 64ee4d48713518dd9b4005cf6932dfc90932195c
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: fa85061dd1d3245c6321fc5c433a9085494c6383
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681534"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945549"
 ---
 # <a name="list-owners"></a>列出所有者
 
@@ -20,14 +20,14 @@ ms.locfileid: "52681534"
 
 检索组的所有者列表。 所有者是一组允许用户修改组对象的用户。 对于已在 Exchange 中创建的组，或者已从本地环境中同步的组，Microsoft Graph 目前未提供所有者角色。 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | GroupMember.Read.All，Group.Read.All，GroupMember.ReadWrite.All，Group.ReadWrite.All，Directory.Read.All，Directory.AccessAsUser.All  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | GroupMember.Read.All，Group.Read.All，GroupMember.ReadWrite.All，Group.ReadWrite.All，Directory.Read.All，Directory.AccessAsUser.All  |
+|应用程序 | GroupMember.Read.All, Group.Read.All, GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.Read.All  |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -94,7 +94,6 @@ GET https://graph.microsoft.com/beta/groups/{id}/owners
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
 
 {
   "value": [

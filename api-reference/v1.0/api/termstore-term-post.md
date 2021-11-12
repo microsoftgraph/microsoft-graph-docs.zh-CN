@@ -5,26 +5,26 @@ author: vishriv
 ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: apiPageType
-ms.openlocfilehash: 48ddb448b13d73d3a7c54177018f3de645e7192c
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: cdd3324af372b7ec861cdd061656a5fb91337807
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60559209"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944366"
 ---
 # <a name="create-term"></a>创建术语
 命名空间：microsoft.graph.termStore
 
 创建新的 [术语](../resources/termstore-term.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户） | TermStore.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
 
 
 ## <a name="http-request"></a>HTTP 请求
@@ -49,7 +49,7 @@ POST sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}/children
 
 下表显示创建术语对象 [时所需的属性](../resources/termstore-term.md) 。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |labels|[microsoft.graph.termStore.localizedLabel](../resources/termstore-localizedlabel.md) 集合|要创建的术语的标签。|
 
@@ -73,7 +73,6 @@ POST sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}/children
 ``` http
 POST https://graph.microsoft.com/v1.0/sites/microsoft.sharepoint.com,b9b0bc03-cbc4-40d2-aba9-2c9dd9821ddf,6a742cee-9216-4db5-8046-13a595684e74/termStore/sets/462bd0ae-30bb-4c58-845c-761ff6481ac1/children
 Content-Type: application/json
-Content-length: 366
 
 {
   "labels": [

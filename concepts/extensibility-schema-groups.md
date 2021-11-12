@@ -4,12 +4,12 @@ description: '本文将通过一个示例逐步介绍如何使用 *架构扩展*
 author: dkershaw10
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: c4226a642c2e6651cf4168c81d7188f0edd76270
-ms.sourcegitcommit: 6cea9bc17d3859e475a74c4a6f661f848e837e89
+ms.openlocfilehash: 8e024e625258dca2eda46dd0b9cdde6bbefb6cbc
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240654"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60934791"
 ---
 # <a name="add-custom-data-to-groups-using-schema-extensions"></a>使用架构扩展向组添加自定义数据 
 
@@ -128,7 +128,6 @@ Content-type: application/json
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-length: 420
 {
     "id": "graphlearn_courses",
     "description": "Graph Learn training courses extensions",
@@ -190,7 +189,6 @@ Content-type: application/json
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-length: 420
 {
     "id": "dfc8016f-db97-4c47-a582-49cb8f849355",
     "createdDateTime": "2017-02-09T00:17:05Z",
@@ -220,7 +218,6 @@ Content-length: 420
 ```http
 PATCH https://graph.microsoft.com/v1.0/groups/dfc8016f-db97-4c47-a582-49cb8f849355
 Content-type: application/json
-Content-length: 230
 {
     "graphlearn_courses":{
         "courseId":"123",
@@ -276,7 +273,6 @@ GET https://graph.microsoft.com/v1.0/groups?$filter=graphlearn_courses/courseId 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-length: 326
 {
   "value": [
     {

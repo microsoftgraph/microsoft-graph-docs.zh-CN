@@ -5,12 +5,12 @@ author: sharad-sharma-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e5eb0ba61ac20633a3a6a9dc722bc1da32531a1e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 30eb5422e9bdb7d9870895f3ed5eb8ecc5a3d2be
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59020026"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924663"
 ---
 # <a name="update-educationassignmentdefaults"></a>更新 educationAssignmentDefaults
 命名空间：microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "59020026"
 
 只有教师可以更新这些设置。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -49,7 +49,7 @@ PATCH /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignmentDefaults
 
 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |addedStudentAction|educationAddedStudentAction| 在作业发布日期之后添加的学生的课堂级别默认操作。 可取值为：`none`、`assignIfOpen`。 默认值为 `none`。|
 |dueTime|TimeOfDay| "到期时间"字段的类级别默认值。 默认值为 `23:59:00`|
@@ -75,7 +75,6 @@ PATCH /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignmentDefaults
 ``` http
 PATCH https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignmentDefaults
 Content-Type: application/json
-Content-length: 181
 
 {
   "addedStudentAction": "assignIfOpen",

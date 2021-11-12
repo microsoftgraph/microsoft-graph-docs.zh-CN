@@ -5,27 +5,27 @@ ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ede7c76c1db63ed0c1c52d4ed7aab4eb6a91561d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 518894d8809bd0ec0d96fa756ce425a811adf8dc
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59083654"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944170"
 ---
 # <a name="directoryobject-validateproperties"></a>directoryObject： validateProperties
 
 命名空间：microsoft.graph
 
-验证 Microsoft 365 组的显示名称或邮件昵称是否符合命名策略。  客户端可以使用此 API 确定显示名称或邮件昵称是否有效，然后再尝试 **创建** Microsoft 365组。 若要验证现有组的属性，请对组使用 [validateProperties](group-validateproperties.md) 函数。
+验证 Microsoft 365 组的显示名称或邮件昵称是否符合命名策略。  客户端可以使用此 API 确定显示名称或邮件昵称是否有效，然后再尝试创建Microsoft 365组。  若要验证现有组的属性，请对组使用 [validateProperties](group-validateproperties.md) 函数。
 
 对邮件和邮件昵称显示名称执行以下验证： 
 1. 验证前缀和后缀命名策略
 2. 验证自定义禁止字策略
 3. 验证邮件昵称是否唯一
 
-此 API 返回遇到的第一个故障。 如果一个或多个属性未能通过多次验证，则仅返回第一个验证失败的属性。 但是，如果仅验证前缀和后缀命名策略，您可以验证邮件昵称和显示名称并接收验证错误集合。
+此 API 返回遇到的第一个故障。 如果一个或多个属性未能通过多次验证，则仅返回第一个验证失败的属性。 但是，如果您仅验证前缀和后缀命名策略，您可以验证邮件昵称和显示名称并接收验证错误集合。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -50,7 +50,7 @@ POST /directoryObjects/validateProperties
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |entityType|String| `Group` 是唯一受支持的实体类型。 |
 |displayName|String| 要显示名称组的成员。 属性不单独是必需的。 但是，至少需要一 (displayName 或 mailNickname) 属性。 |
@@ -79,7 +79,6 @@ POST /directoryObjects/validateProperties
 ``` http
 POST https://graph.microsoft.com/beta/directoryObjects/validateProperties
 Content-type: application/json
-Content-length: 164
 
 {
   "entityType": "Group",
@@ -122,7 +121,6 @@ HTTP/1.1 204 No Content
 ```http
 POST https://graph.microsoft.com/beta/directoryObjects/validateProperties
 Content-type: application/json
-Content-length: 164
 
 {
   "entityType": "Group",

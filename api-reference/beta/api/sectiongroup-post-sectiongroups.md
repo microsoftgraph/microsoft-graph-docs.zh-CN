@@ -1,16 +1,16 @@
 ---
 title: 创建 sectionGroup
 description: 在指定分区组中新建分区组。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: cd8fa08f61c2dbe980741eaaf4f9cbcc5a2c3018
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 9cfcffee57ee56cd7596607efdc625f5b5afdbde
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976820"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60926390"
 ---
 # <a name="create-sectiongroup"></a>创建 sectionGroup
 
@@ -19,7 +19,7 @@ ms.locfileid: "48976820"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 在指定分区组中新建[分区组](../resources/sectiongroup.md)。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -63,7 +63,6 @@ POST /sites/{id}/onenote/sectionGroups/{id}/sectionGroups
 ```http
 POST https://graph.microsoft.com/beta/me/onenote/sectionGroups/{id}/sectionGroups
 Content-type: application/json
-Content-length: 30
 
 {
   "displayName": "Section group name"
@@ -97,7 +96,6 @@ Content-length: 30
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 305
 
 {
   "sectionsUrl": "sectionsUrl-value",

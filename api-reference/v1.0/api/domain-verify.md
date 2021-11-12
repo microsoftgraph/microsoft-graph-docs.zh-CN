@@ -5,12 +5,12 @@ author: adimitui
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b55a819c1843df47a3ab1c0f4d09a0c319719b0e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f288d91c5b567e2f7129b53b2a2274a622b5e1c5
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59056697"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940803"
 ---
 # <a name="domain-verify"></a>域：验证
 
@@ -20,7 +20,7 @@ ms.locfileid: "59056697"
 
 > **重要说明：** 仅适用于未验证的域。对于未验证的域，[域](../resources/domain.md)的 isVerified 属性为 false。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -40,7 +40,7 @@ POST /domains/{id}/verify
 
 > 对于 {id}，请使用其完全限定的域名指定该域。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称       | 说明|
 |:---------------|:----------|
@@ -93,7 +93,6 @@ POST https://graph.microsoft.com/v1.0/domains/{domain-name}/verify
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 192
 
 {
   "authenticationType": "authenticationType-value",

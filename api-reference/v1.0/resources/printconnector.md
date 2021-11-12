@@ -5,23 +5,21 @@ author: nilakhan
 ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: ab2f1718837c88af61e0e790acb2ad198cfded32
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 184a2bc57252b3190754a4eb61e8415114a3c8d0
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60560042"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945010"
 ---
 # <a name="printconnector-resource-type"></a>printConnector 资源类型
 
 命名空间：microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 表示已使用通用打印订阅注册的打印连接器。 printConnector 资源可用于查看连接器状态和更新属性。
 
-## <a name="methods"></a>方法
-|方法|返回类型|说明|
+## <a name="methods"></a>Methods
+|方法|返回类型|Description|
 |:---|:---|:---|
 | [List connectors](../api/print-list-connectors.md) | [printConnector](printconnector.md) | 检索打印连接器的列表。 |
 | [Get connector](../api/printconnector-get.md) | [printConnector](printconnector.md) | 读取 connector 对象的属性和关系。 |

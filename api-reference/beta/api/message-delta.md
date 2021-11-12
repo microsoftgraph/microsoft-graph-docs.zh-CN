@@ -1,16 +1,16 @@
 ---
 title: 'message: delta'
 description: 获取指定文件夹中已添加、删除或更新的邮件集。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 105c8bdbc14293e66f96bd8a69895da2c5e53790
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a12377bcc74e721f3e43bb378051bca7248ff34b
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052150"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947271"
 ---
 # <a name="message-delta"></a>message: delta
 
@@ -115,7 +115,6 @@ Prefer: odata.maxpagesize=2
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 337
 
 {
   "@odata.nextLink":"https://graph.microsoft.com/beta/me/mailfolders/{id}/messages/delta?$skiptoken={_skipToken_}",
