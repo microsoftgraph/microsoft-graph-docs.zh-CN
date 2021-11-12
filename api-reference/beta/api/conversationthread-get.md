@@ -1,16 +1,16 @@
 ---
 title: 获取 conversationThread
 description: '获取属于某个组的特定线程。 你可以同时指定父会话和线程，或者， '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 59e39c13f406b5846aee59b06d22dc25b4e3996f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 1d26cc1666ce433b7af227719f5f3a1492fffdea
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047019"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945675"
 ---
 # <a name="get-conversationthread"></a>获取 conversationThread
 
@@ -19,7 +19,7 @@ ms.locfileid: "52047019"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取属于某个组的特定线程。可以指定父对话和线程，也可以指定线程，而不引用父对话。 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/threads/{id}
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -88,7 +88,6 @@ GET https://graph.microsoft.com/beta/groups/{id}/threads/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 419
 
 {
   "toRecipients": [

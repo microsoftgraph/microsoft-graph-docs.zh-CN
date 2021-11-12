@@ -2,15 +2,15 @@
 title: 获取 educationSubmission
 description: '检索特定提交。 提交对象表示学生作业的工作。 与提交关联的资源表示此工作。 只有分配提交的学生才能查看和修改提交。 具有应用程序权限的教师或应用程序具有所有提交的完全访问权限。 '
 author: dipakboyed
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 64abb166e4b13a1c72fbcba7350b42047d957050
-ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
+ms.openlocfilehash: e8ed784f6d5527c388a468f4f1b883c262e9a551
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58367091"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942273"
 ---
 # <a name="get-educationsubmission"></a>获取 educationSubmission
 
@@ -26,7 +26,7 @@ ms.locfileid: "58367091"
 
 教师的成绩和反馈是与此 [对象关联的 educationOutcome](../resources/educationoutcome.md) 的一部分。 只有具有应用程序权限的教师或应用程序才能添加或更改成绩和反馈。 在作业发布之前，学生将看不到成绩或反馈。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -83,7 +83,7 @@ GET https://graph.microsoft.com/beta/education/classes/11010/assignments/19002/s
 ---
 
 ### <a name="response"></a>响应
-下面介绍响应示例。 
+下面展示了示例响应。 
 
 >**注意：** 为了可读性，可能会缩短此处所示的响应对象。 
 >
@@ -97,7 +97,6 @@ GET https://graph.microsoft.com/beta/education/classes/11010/assignments/19002/s
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 712
 
 {
   "id": "33223",

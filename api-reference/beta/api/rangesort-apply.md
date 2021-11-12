@@ -2,15 +2,15 @@
 title: 'RangeSort: apply'
 description: 执行排序操作。
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 47e2076bb3c556cd277cb5a022ffcbba88ec2f6f
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: c65c2e1e1d217f677222518dde4c9be0a9193e7b
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788029"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947152"
 ---
 # <a name="rangesort-apply"></a>RangeSort: apply
 
@@ -19,7 +19,7 @@ ms.locfileid: "52788029"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 执行排序操作。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -48,7 +48,7 @@ POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/ra
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |域|workbookSortField 集合|要用作排序依据的条件列表。|
 |matchCase|布尔|可选。是否让大小写对字符串排序产生影响。|
@@ -73,7 +73,6 @@ POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/ra
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/sort/apply
 Content-type: application/json
-Content-length: 358
 
 {
   "fields": [

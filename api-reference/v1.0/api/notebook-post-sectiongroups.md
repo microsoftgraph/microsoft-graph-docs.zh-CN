@@ -5,19 +5,19 @@ author: jewan-microsoft
 ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: d50a9c03d44dfcb983b8bf92b8006383530ddd08
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f6ed31836a579eb2e1a38b99a20748858fa965dd
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59016013"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938201"
 ---
 # <a name="create-sectiongroup"></a>创建 sectionGroup
 
 命名空间：microsoft.graph
 
 在指定的 [笔记本中创建新的](../resources/sectiongroup.md) 分区组。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -61,7 +61,6 @@ POST /sites/{id}/onenote/notebooks/{id}/sectionGroups
 ```http
 POST https://graph.microsoft.com/v1.0/me/onenote/notebooks/{id}/sectionGroups
 Content-type: application/json
-Content-length: 30
 
 {
   "displayName": "Section group name"
@@ -96,7 +95,6 @@ Content-length: 30
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 305
 
 {
   "sectionsUrl": "sectionsUrl-value",

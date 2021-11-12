@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: cbd076e7f725f7442a03301085ecb228534aa2ee
-ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
+ms.openlocfilehash: 3c6710b38df1db84df77028effa623e02ccc1694
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60214459"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943393"
 ---
 # <a name="add-member"></a>添加成员
 
@@ -18,12 +18,12 @@ ms.locfileid: "60214459"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-通过 members 导航属性向组 **添加** 成员。
+通过 **成员** 导航属性将成员添加到组。
 
 可以添加用户、服务主体或其他组。 
 
 > [!Important]
-> + 只能将用户添加到通过云管理的组。
+> + 只能向通过云管理的组添加用户。
 > + 不能将安全组添加到 Microsoft 365 组。
 > + 不能将 Microsoft 365 组添加到安全组或其他 Microsoft 365 组。
 
@@ -65,7 +65,6 @@ POST /groups/{group-id}/members/$ref
 ```http
 POST https://graph.microsoft.com/beta/groups/{group-id}/members/$ref
 Content-type: application/json
-Content-length: 30
 
 {
   "@odata.id": "https://graph.microsoft.com/beta/directoryObjects/{id}"

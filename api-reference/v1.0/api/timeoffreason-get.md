@@ -5,12 +5,12 @@ author: akumar39
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 92dff31b21e54147f87f3b100ed1410a4615c9a0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 898db0e12075bc4c7580da871bafc11e76e08901
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59049940"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946935"
 ---
 # <a name="get-timeoffreason"></a>获取 timeOffReason
 
@@ -18,7 +18,7 @@ ms.locfileid: "59049940"
 
 按 ID 检索 [timeOffReason](../resources/timeoffreason.md) 对象的属性和关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -42,7 +42,7 @@ GET /teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}
 
 此方法不支持使用 OData 查询参数自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 标头       | 值 |
 |:---------------|:--------|
@@ -105,7 +105,6 @@ GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/timeOffReasons/{tim
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 401
 
 {
   "id": "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7",

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ee225b0308614a4066c832804cf941872ba99c9d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1f4dab5dbc2d8e4beae35351ff640eeee17146ce
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59007943"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945115"
 ---
 # <a name="orgcontact-getmemberobjects"></a>orgContact： getMemberObjects
 
@@ -18,7 +18,7 @@ ms.locfileid: "59007943"
 
 返回此组织联系人 [是](../resources/orgcontact.md) 成员的所有组。 检查是可传递的。 组织联系人不能是目录角色的成员。 不会返回任何目录角色。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -64,7 +64,6 @@ POST /contacts/{id}/getMemberObjects
 ```http
 POST https://graph.microsoft.com/v1.0/contacts/{id}/getMemberObjects
 Content-type: application/json
-Content-length: 33
 
 {
   "securityEnabledOnly": false
@@ -101,7 +100,6 @@ Content-length: 33
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 39
 
 {
   "value": [

@@ -1,16 +1,16 @@
 ---
 title: 列出人员
 description: 检索一组 person 对象，这些对象按与 user 的相关程度进行排序，相关程度由用户的通信和协作模式以及业务关系决定。
-author: anthona
+author: dkershaw10
 ms.localizationpriority: high
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 61c4de130b4d5c75501e49e1a7d86b35a997e54b
-ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
+ms.openlocfilehash: 24dc63c927aa82bcaeb7da9463f7364b946c5800
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60780938"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940182"
 ---
 # <a name="list-people"></a>列出人员
 
@@ -117,7 +117,6 @@ GET https://graph.microsoft.com/v1.0/me/people
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1370
 
 {
     "value": [

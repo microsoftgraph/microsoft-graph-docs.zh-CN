@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
-ms.openlocfilehash: 45c06212c1c791d10f28e4c3b5f43d5c8720dc1f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 80f52e3888b3ec443879f3f68938aff4ac8522d0
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59023036"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60926033"
 ---
 # <a name="create-application"></a>创建应用程序
 
@@ -63,7 +63,6 @@ POST /applications
 ```http
 POST https://graph.microsoft.com/v1.0/applications
 Content-type: application/json
-Content-length: 67
 
 {
   "displayName": "Display name"
@@ -100,7 +99,6 @@ Content-length: 67
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 1145
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#applications/$entity",

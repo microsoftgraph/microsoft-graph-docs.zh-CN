@@ -2,15 +2,15 @@
 title: 列出 scopedAdministratorOf
 description: 检索用户的 scopedRoleMembership 列表。
 author: jpettere
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 0686e0a6b8ac6bec26a2f30d8e52e59b52f3a192
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 34e758ae723b8fe1a49bc8f05cc1c7f4f11159cc
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051702"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937571"
 ---
 # <a name="list-scopedadministratorof"></a>列出 scopedAdministratorOf
 
@@ -19,7 +19,7 @@ ms.locfileid: "52051702"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索用户的 [scopedRoleMembership](../resources/scopedrolemembership.md) 列表。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/me/scopedRoleMemberOf
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -91,7 +91,6 @@ GET https://graph.microsoft.com/beta/me/scopedRoleMemberOf
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 307
 
 {
   "value": [

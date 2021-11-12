@@ -5,12 +5,12 @@ author: akumar39
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b66a258a55304cbbc41f5f402f9094ff16c4ccbc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f2682e9b085b5e89eb597ddf9d2a7ac528549f4d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59049933"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946352"
 ---
 # <a name="replace-timeoffreason"></a>替换 timeOffReason
 
@@ -20,7 +20,7 @@ ms.locfileid: "59049933"
 
 如果指定的 [timeOffReason](../resources/timeoffreason.md) 不存在，此方法将返回 `404 Not found` 。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -113,7 +113,6 @@ Prefer: return=representation
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 401
 
 {
   "id": "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7",

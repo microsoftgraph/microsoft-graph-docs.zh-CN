@@ -2,15 +2,15 @@
 title: 列出学校
 description: 检索教授该课程的学校列表。
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 28c08e2141106de40071601149c30fbf4b997790
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 39589483021fbacfbf861912ff1cd517250560fd
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52043932"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60935979"
 ---
 # <a name="list-schools"></a>列出学校
 
@@ -20,7 +20,7 @@ ms.locfileid: "52043932"
 
 检索教授该课程的学校列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -104,7 +104,6 @@ GET https://graph.microsoft.com/beta/education/classes/11014/schools
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 892
 
 {
   "value": [

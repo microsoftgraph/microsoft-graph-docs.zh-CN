@@ -1,16 +1,16 @@
 ---
 title: '将 identityProvider 添加到 b2cIdentityUserFlow (弃) '
-description: '将 identityProvider 添加到 b2cIdentityUserFlow。  (已弃) '
-localization_priority: Normal
+description: '将 identityProvider 添加到 b2cIdentityUserFlow。  (弃用) '
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 9a5591465329d879a4a1bd3e4b0028cad2b6cdef
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 0afbf31d1323660db9976ac69e2a4afe405b4923
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53439733"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939838"
 ---
 # <a name="add-identityprovider-to-a-b2cidentityuserflow-deprecated"></a>将 identityProvider 添加到 b2cIdentityUserFlow (弃) 
 
@@ -21,7 +21,7 @@ ms.locfileid: "53439733"
 
 在 [b2cIdentityUserFlow 对象中添加标识](../resources/b2cidentityuserflow.md) 提供程序。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -76,7 +76,6 @@ POST /identity/b2cUserFlows/{id}/identityProviders/$ref
 ``` http
 POST https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}/identityProviders/$ref
 Content-type: application/json
-Content-length: 30
 
 {
   "@odata.id": "https://graph.microsoft.com/beta/identityProviders/{id}"

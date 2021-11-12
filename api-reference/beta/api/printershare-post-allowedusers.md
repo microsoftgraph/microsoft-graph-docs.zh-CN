@@ -2,15 +2,15 @@
 title: 为 printerShare 创建 allowedUser
 description: 向指定的用户授予将打印作业提交到关联的打印机共享的权限。
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: a40a26372457faaaa18b27778235bd8de4d60ef6
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 872d2f02a508e390b18b1e87dcf07ec92517f3e0
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787399"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947690"
 ---
 # <a name="create-alloweduser-for-printershare"></a>为 printerShare 创建 allowedUser
 
@@ -20,8 +20,8 @@ ms.locfileid: "52787399"
 
 授予指定用户向关联的 printerShare 提交打印 [作业的权限](../resources/printershare.md)。
 
-## <a name="permissions"></a>权限
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
+## <a name="permissions"></a>Permissions
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 若要使用通用打印服务，除了下表中列出的权限之外，用户或应用的租户还必须具有活动的通用打印订阅。 登录的用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
 
@@ -61,7 +61,6 @@ POST /print/shares/{id}/allowedUsers/$ref
 ```http
 POST https://graph.microsoft.com/beta/print/shares/{id}/allowedUsers/$ref
 Content-type: application/json
-Content-length: 66
 
 {
   "@odata.id": "https://graph.microsoft.com/beta/users/{id}"
@@ -85,7 +84,7 @@ Content-length: 66
 
 ---
 
-在请求正文中，提供对用户实体的引用，将用户的 Microsoft Graph URI 包括在 JSON 正文的 `@odata.id` 字段中。
+在请求正文中，提供对用户实体的引用，将用户的 Microsoft Graph URI 包括在 `@odata.id` JSON 正文的字段中。
 
 ### <a name="response"></a>响应
 下面展示了示例响应。 

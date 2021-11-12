@@ -2,15 +2,15 @@
 title: 创建 printerShare
 description: 为指定的打印机创建新的打印机共享。
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 57d755532e2e56934f32aaa0940504073eef7473
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 9555798c9ec513400bacd2a673fb3fd40dabe260
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053627"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946683"
 ---
 # <a name="create-printershare"></a>创建 printerShare
 
@@ -20,7 +20,7 @@ ms.locfileid: "52053627"
 
 新建 **printerShare** for the specified [printer](../resources/printer.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 若要使用通用打印服务，除了下表中列出的权限之外，用户或应用的租户还必须具有活动的通用打印订阅。 登录的用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
@@ -47,11 +47,11 @@ POST /print/shares
 
 下表显示创建 [printerShare](../resources/printershare.md)时提供的属性。
 
-|属性|类型|说明|是否必需？|
+|属性|类型|Description|是否必需？|
 |:---|:---|:---|:---|
-|printer|microsoft.graph.printer|此打印机共享相关的打印机。 使用 `printer@odata.bind` 以下示例中所示的语法。|是|
+|打印机|microsoft.graph.printer|此打印机共享相关的打印机。 使用 `printer@odata.bind` 以下示例中所示的语法。|是|
 |displayName|String|打印客户端应显示的打印机共享的名称。 允许的最大长度为 50 个字符。|是|
-|allowAllUsers|布尔值| 如果为 true，将授予所有用户和组对此打印机共享的访问权限。 这将取代 allowedUsers 和 allowedGroups 导航属性定义的允许列表。|不支持|
+|allowAllUsers|Boolean| 如果为 true，将授予所有用户和组对此打印机共享的访问权限。 这将取代 allowedUsers 和 allowedGroups 导航属性定义的允许列表。|否|
 
 ## <a name="response"></a>响应
 如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [printerShare](../resources/printershare.md) 对象。
@@ -70,7 +70,6 @@ POST /print/shares
 ```http
 POST https://graph.microsoft.com/beta/print/shares
 Content-type: application/json
-Content-length: 114
 
 {
   "name": "name-value",
@@ -109,7 +108,6 @@ Content-length: 114
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 233
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/shares/$entity",

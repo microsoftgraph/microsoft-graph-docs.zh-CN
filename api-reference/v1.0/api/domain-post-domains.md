@@ -5,12 +5,12 @@ author: adimitui
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b8d4b05287ad2773b3819f51a5413fabb9f58452
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6583efd2d00e320bd268e1fad606bd6a30b7d0b6
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59100279"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940771"
 ---
 # <a name="create-domain"></a>创建域
 
@@ -20,7 +20,7 @@ ms.locfileid: "59100279"
 
 **重要说明**：必须完成所有权验证，才可以使用与 Azure AD 租户关联的域。有关详细信息，请参阅 [列出 verificationDnsRecords](domain-list-verificationdnsrecords.md)。需要对根域进行验证。例如，需要对 contoso.com 进行验证。如果已验证根域，则将自动验证该根域的子域。例如，如果已验证 contoso.com，则将自动验证 subdomain.contoso.com。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -64,7 +64,6 @@ POST /domains
 ```http
 POST https://graph.microsoft.com/v1.0/domains
 Content-type: application/json
-Content-length: 192
 
 {
   "id": "contoso.com"
@@ -81,7 +80,6 @@ Content-length: 192
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 192
 
 {
   "authenticationType": "authenticationType-value",

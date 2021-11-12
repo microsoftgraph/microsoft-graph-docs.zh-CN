@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6896a4441ea3ea96c0417e7154a74a6755a12caa
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: aef77a0eb5d45f030180014bb172374bb63085a7
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59766367"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939495"
 ---
 # <a name="list-orgcontacts"></a>List orgContacts
 
@@ -20,7 +20,7 @@ ms.locfileid: "59766367"
 
 获取该组织的组织联系人列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -98,7 +98,6 @@ GET https://graph.microsoft.com/beta/contacts
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 222
 
 {
   "value": [
@@ -228,7 +227,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-use-search-to-get-organizational-contacts-with-display-names-that-contain-the-letters-wa-including-a-count-of-returned-objects"></a>示例 4：使用 $search 获取显示名称包含字母"wa"的组织联系人，包括返回的对象计数
+### <a name="example-4-use-search-to-get-organizational-contacts-with-display-names-that-contain-the-letters-wa-including-a-count-of-returned-objects"></a>示例 4：使用 $search获取显示名称包含字母"wa"的组织联系人，包括返回的对象计数
 
 #### <a name="request"></a>请求
 

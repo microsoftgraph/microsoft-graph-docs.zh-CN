@@ -5,12 +5,12 @@ author: abheek-das
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ba53081c2d76a39b4c59fe8470979f773da1b1d4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0b7459cc3b5f4ee90d56708b9bd7648bd7ace693
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59140750"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943800"
 ---
 # <a name="add-attachment"></a>添加附件
 
@@ -26,7 +26,7 @@ ms.locfileid: "59140750"
 
 所有这些类型的 attachment 资源均派生自 [attachment](../resources/attachment.md) 资源。 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -66,7 +66,6 @@ POST /users/{id | userPrincipalName}/messages/{id}/attachments
 ```http
 POST https://graph.microsoft.com/v1.0/me/messages/{id}/attachments
 Content-type: application/json
-Content-length: 142
 
 {
   "@odata.type": "microsoft.graph.fileAttachment",
@@ -119,7 +118,6 @@ HTTP/1.1 201 Created
 ```http
 POST https://graph.microsoft.com/v1.0/me/events/{id}/attachments
 Content-type: application/json
-Content-length: 100
 
 {
   "@odata.type": "#Microsoft.OutlookServices.ItemAttachment",

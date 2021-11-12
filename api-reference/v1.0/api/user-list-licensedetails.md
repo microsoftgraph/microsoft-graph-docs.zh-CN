@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 2f96ade9df06566c2880dd1e642186ecfb4f363c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d4b8b11ac8ba3580a18e55873469b7acbaf1467f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59044844"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938117"
 ---
 # <a name="list-licensedetails"></a>List licenseDetails
 
@@ -18,7 +18,7 @@ ms.locfileid: "59044844"
 
 检索企业用户的 **licenseDetails** 对象列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -88,7 +88,6 @@ GET https://graph.microsoft.com/v1.0/me/licenseDetails
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 389
 
 {
   "value": [

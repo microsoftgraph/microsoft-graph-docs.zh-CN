@@ -2,15 +2,15 @@
 title: 在聊天中获取选项卡
 description: '检索聊天中指定选项卡的属性和关系。 '
 author: subray
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 891bb59e4c2000f73c454e66e9b1b1398b22bb1c
-ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
+ms.openlocfilehash: 77d4e399a9dd82af3b6007b05923898568cb4d46
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52971326"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943610"
 ---
 # <a name="get-tab-in-chat"></a>在聊天中获取选项卡
 
@@ -20,7 +20,7 @@ ms.locfileid: "52971326"
 
 检索聊天中指定 [选项卡](../resources/teamstab.md) 的属性和 [关系](../resources/chat.md)。 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -101,7 +101,6 @@ GET https://graph.microsoft.com/beta/chats/19:ea28e88c00e94c7786b065394a61f296@t
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 401
 
 {
   "id": "tabId",

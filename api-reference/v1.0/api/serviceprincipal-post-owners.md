@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: d22687a30eeb1075b2e9756c8c3f60ffefcaefac
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d4a12dbcc21eccdeaf977e4b00fec566eadcdd35
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59032491"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939047"
 ---
 # <a name="serviceprincipal-add-owner"></a>servicePrincipal：添加所有者
 
@@ -59,7 +59,6 @@ POST /servicePrincipals/{id}/owners/$ref
 ```http
 POST https://graph.microsoft.com/beta/servicePrincipals/{id}/owners/$ref
 Content-type: application/json
-Content-length: 30
 
 {
     "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{id}"

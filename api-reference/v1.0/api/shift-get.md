@@ -5,12 +5,12 @@ author: akumar39
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: dda5cb5199608d7547e4cce21c1c6c384adaf527
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: dded39fa9b4e8a15bae3ceebbcd7ecef58363b5b
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59118958"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939026"
 ---
 # <a name="get-shift"></a>获取班次
 
@@ -18,7 +18,7 @@ ms.locfileid: "59118958"
 
 按 ID 检索 [shift](../resources/shift.md) 对象的属性和关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -41,7 +41,7 @@ GET /teams/{teamId}/schedule/shifts/{shiftId}
 
 此方法不支持使用 OData 查询参数自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 标头       | 值 |
 |:---------------|:--------|
@@ -102,7 +102,6 @@ GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/shifts/{shiftId}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 401
 
 {
     "id": "SHFT_ca485cdd-a42c-4b93-9e6a-6fa54fd45fe1",

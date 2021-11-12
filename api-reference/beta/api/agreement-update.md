@@ -1,16 +1,16 @@
 ---
 title: 更新协议
 description: 更新协议对象的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 77c3fbf6aa37d283e02408a1000d4a5f521a3fd5
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 913aa8c43b489be48de632c80ab51b50703355ce
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048195"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939910"
 ---
 # <a name="update-agreement"></a>更新协议
 
@@ -19,7 +19,7 @@ ms.locfileid: "52048195"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新 [协议对象的属性](../resources/agreement.md) 。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
@@ -28,7 +28,7 @@ ms.locfileid: "52048195"
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序                            | 不支持。 |
 
-代表用户进行呼叫时，用户需要属于以下目录角色之一。 若要了解有关目录角色的信息，请参阅 [Azure AD 内置角色](/azure/active-directory/roles/permissions-reference)：
+代表用户进行呼叫时，用户需要属于以下目录角色之一。 若要详细了解目录角色，请参阅Azure AD[角色：](/azure/active-directory/roles/permissions-reference)
 + 全局管理员
 + 条件访问管理员
 + 安全管理员
@@ -49,7 +49,7 @@ PATCH /identityGovernance/termsOfUse/agreements/{id}
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |displayName|String|协议的显示名称。|
-|isViewingBeforeAcceptanceRequired|布尔值|用户是否必须展开和查看协议才能接受。|
+|isViewingBeforeAcceptanceRequired|Boolean|用户是否必须展开和查看协议才能接受。|
 
 ## <a name="response"></a>响应
 如果成功，此方法在响应 `200 OK` 正文中返回 响应代码[](../resources/agreement.md)和更新的协议对象。
@@ -65,7 +65,6 @@ PATCH /identityGovernance/termsOfUse/agreements/{id}
 ```http
 PATCH https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements/{id}
 Content-type: application/json
-Content-length: 85
 
 {
   "displayName": "displayName-value",
@@ -102,7 +101,6 @@ Content-length: 85
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 105
 
 {
   "displayName": "displayName-value",

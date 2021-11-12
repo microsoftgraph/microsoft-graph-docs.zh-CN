@@ -5,19 +5,19 @@ author: kevinbellinger
 ms.localizationpriority: medium
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 343fb581ec1e2a6b202a4430b3945bbb9c606969
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e9002b5052577bb0471d94a6934f7578f8035fee
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59051689"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936484"
 ---
 # <a name="update-personannotation"></a>更新 personAnnotation
 命名空间：microsoft.graph
 
 更新用户配置文件 [中的 personAnnotation](../resources/personannotation.md) 对象 [的属性](../resources/profile.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -50,7 +50,7 @@ PATCH /users/{id | userPrincipalName}/profile/notes/{id}
 
 下表显示了在用户配置文件中的现有 [personAnnotation](../resources/personannotation.md) 对象中可以更新 [的属性](../resources/profile.md)。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
 |detail|[itemBody](../resources/itembody.md)|包含注释本身的详细信息。|
@@ -73,7 +73,6 @@ PATCH /users/{id | userPrincipalName}/profile/notes/{id}
 ``` http
 PATCH https://graph.microsoft.com/beta/users/{userId}/profile/notes/{id}
 Content-Type: application/json
-Content-length: 413
 
 {
   "allowedAudiences": "organization"

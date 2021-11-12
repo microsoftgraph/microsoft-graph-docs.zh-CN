@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: 3955de24dc00f484ada2daa4b5912f1b816d4434
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 364021cdf0d9f29f278f316bd6aaee5d6ff0f2d3
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60687086"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60934588"
 ---
 # <a name="get-governanceroleassignmentrequest"></a>获取 governanceRoleAssignmentRequest
 
@@ -22,7 +22,7 @@ ms.locfileid: "60687086"
 
 获取 [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference#privileged-access-permissions)。
 
 ### <a name="azure-resources"></a>Azure 资源
@@ -92,7 +92,6 @@ GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignm
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 279
 
 {
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#governanceRoleAssignmentRequests/$entity",

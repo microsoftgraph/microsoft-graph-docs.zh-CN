@@ -2,15 +2,15 @@
 title: 获取 Outlook category
 description: 获取指定的 outlookCategory 对象的属性和关系。
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 14756a59adbbc84aeacd885420f72b26c053c1aa
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 2697e6128a5a32368a1f693fe3279adbf38aba4d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055503"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943288"
 ---
 # <a name="get-outlook-category"></a>获取 Outlook category
 
@@ -20,7 +20,7 @@ ms.locfileid: "52055503"
 
 获取指定的 [outlookCategory](../resources/outlookcategory.md) 对象的属性和关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/beta/me/outlook/masterCategories/de912e4d-c790-4
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -90,7 +90,6 @@ GET https://graph.microsoft.com/beta/me/outlook/masterCategories/de912e4d-c790-4
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 249
 
 {
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('8ae6f565-0d7f-4ead-853e-7db94c912a1f')/outlook/masterCategories/$entity",

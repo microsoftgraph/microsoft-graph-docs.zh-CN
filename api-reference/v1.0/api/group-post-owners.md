@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 861c0d62bc57f88c0e5ad8cc8435d1d8c5b26c12
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d2fd926e7e1c5a52adc6c94de8c166061eaef764
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59074257"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946536"
 ---
 # <a name="add-group-owner"></a>添加组所有者
 
@@ -58,7 +58,6 @@ POST /groups/{id}/owners/$ref
 ```http
 POST https://graph.microsoft.com/v1.0/groups/{id}/owners/$ref
 Content-type: application/json
-Content-length: 30
 
 {
   "@odata.id": "https://graph.microsoft.com/v1.0/users/{id}"

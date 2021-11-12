@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6a60ec2bcd186a86d0a11c2e0a8af11112476915
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: dc16b59d42e3e60d6c541ef36e83f55983adf3c5
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60288942"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938334"
 ---
 # <a name="update-team"></a>更新团队
 
@@ -20,13 +20,13 @@ ms.locfileid: "60288942"
 
 更新指定团队 [的属性](../resources/team.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | TeamSettings.ReadWrite.All、Group.ReadWrite.All **、Directory.ReadWrite.All** |
+|委派（工作或学校帐户） | TeamSettings.ReadWrite.All，Group.ReadWrite.All **，Directory.ReadWrite.All** |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | TeamSettings.ReadWrite.Group *、TeamSettings.ReadWrite.All、Group.ReadWrite.All**、Directory.ReadWrite.All** |
 
@@ -64,7 +64,6 @@ PATCH /teams/{team-id}
 ```http
 PATCH https://graph.microsoft.com/beta/teams/{id}
 Content-type: application/json
-Content-length: 211
 
 {  
  "isMembershipLimitedToOwners": true,

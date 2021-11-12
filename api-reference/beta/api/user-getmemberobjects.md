@@ -1,16 +1,16 @@
 ---
 title: 'user: getMemberObjects'
 description: 返回用户所属的所有组、目录角色和管理单元。检查是可传递的。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: a681a4edfe244bd835d7fe07d5aac3ceeedff472
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c1908d290e4cae969b1da9c7b782c77004393682
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053368"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937627"
 ---
 # <a name="user-getmemberobjects"></a>user: getMemberObjects
 
@@ -65,7 +65,6 @@ POST /users/{id | userPrincipalName}/getMemberObjects
 ```http
 POST https://graph.microsoft.com/beta/me/getMemberObjects
 Content-type: application/json
-Content-length: 33
 
 {
   "securityEnabledOnly": true
@@ -91,7 +90,7 @@ Content-length: 33
 
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -101,7 +100,6 @@ Content-length: 33
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 39
 
 {
   "value": [

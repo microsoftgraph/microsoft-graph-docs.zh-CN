@@ -1,16 +1,16 @@
 ---
 title: 添加组所有者
 description: 将用户添加到组所有者。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 660c3a900c0ef36884a16e8007fba6dc72723c18
-ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
+ms.openlocfilehash: 5033e4315dd4253f440bb3d03d6c6c30e916cde9
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58396738"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946207"
 ---
 # <a name="add-group-owner"></a>添加组所有者
 
@@ -60,7 +60,6 @@ POST /groups/{id}/owners/$ref
 ```http
 POST https://graph.microsoft.com/beta/groups/{id}/owners/$ref
 Content-type: application/json
-Content-length: 30
 
 {
   "@odata.id": "https://graph.microsoft.com/beta/users/{id}"
@@ -98,7 +97,7 @@ HTTP/1.1 204 No Content
 
 ## <a name="see-also"></a>另请参阅
 - [添加成员至团队](team-post-members.md)
-- [更新团队中成员的角色](team-update-members.md)
+- [更新成员在团队中的角色](team-update-members.md)
 - [从团队删除成员](team-delete-members.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: 1ee0d29be3fbd4e2bf908d5b457c6b7e3bc4ec67
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 50d060ccee7be19a52f26c4025e3f49cdde1d438
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694489"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946648"
 ---
 # <a name="get-privilegedapproval"></a>获取 privilegedApproval
 
@@ -21,7 +21,7 @@ ms.locfileid: "60694489"
 [!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 检索 privilegedapproval 对象的属性和关系。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -93,7 +93,6 @@ GET https://graph.microsoft.com/beta/privilegedApproval/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 193
 
 {
   "id": "id-value",

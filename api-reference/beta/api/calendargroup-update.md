@@ -2,15 +2,15 @@
 title: 更新 calendarGroup
 description: 更新 calendargroup 对象的属性。
 author: harini84
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9395d46f587aa49ed4f77dbe47d2b971e2baeb56
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e1d9e56313ffe86522e89150073067b800853ce2
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047691"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60930820"
 ---
 # <a name="update-calendargroup"></a>更新 calendarGroup
 
@@ -20,7 +20,7 @@ ms.locfileid: "52047691"
 
 更新 calendargroup 对象的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -41,7 +41,7 @@ PATCH /me/calendarGroups/{id}
 PATCH /users/{id | userPrincipalName}/calendarGroups/{id}
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 标头        | 值                       |
 | :------------ | :-------------------------- |
@@ -52,7 +52,7 @@ PATCH /users/{id | userPrincipalName}/calendarGroups/{id}
 
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
-| 属性 | 类型   | 说明     |
+| 属性 | 类型   | Description     |
 | :------- | :----- | :-------------- |
 | name     | String | 组名称。 |
 
@@ -76,7 +76,6 @@ PATCH /users/{id | userPrincipalName}/calendarGroups/{id}
 ```http
 PATCH https://graph.microsoft.com/beta/me/calendarGroups/{id}
 Content-type: application/json
-Content-length: 30
 
 {
   "name": "name-value"
@@ -103,7 +102,7 @@ Content-length: 30
 
 ##### <a name="response"></a>响应
 
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -114,7 +113,6 @@ Content-length: 30
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 110
 
 {
   "name": "name-value",

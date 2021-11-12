@@ -5,12 +5,12 @@ author: abheek-das
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2de0725028b812be63fd50a064f6183f02c4d3b0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fa34b974af5e5fca26ce1356b6a3eb3925a4a636
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59053495"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60931560"
 ---
 # <a name="mailfolder-move"></a>mailFolder: move
 
@@ -18,7 +18,7 @@ ms.locfileid: "59053495"
 
 将 Mailfolder 及其内容移动到其他 mailfolder。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -73,7 +73,6 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/move
 ```http
 POST https://graph.microsoft.com/v1.0/me/mailFolders/{id}/move
 Content-type: application/json
-Content-length: 44
 
 {
   "destinationId": "destinationId-value"
@@ -112,7 +111,6 @@ Content-length: 44
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 179
 
 {
   "displayName": "displayName-value",

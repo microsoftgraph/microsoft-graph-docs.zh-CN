@@ -2,15 +2,15 @@
 title: 获取打印机
 description: 检索租户中注册的打印机列表。
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 67abcedfd9b120b8d075530ec423a5f937ee5c27
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 97b6622041e17e5f159cdcc2a42170b3f5185c6f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52037534"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60933141"
 ---
 # <a name="list-printers"></a>列出打印机
 
@@ -20,7 +20,7 @@ ms.locfileid: "52037534"
 
 检索租户 **中** 注册的打印机列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 若要使用通用打印服务，除了下表中列出的权限之外，用户或应用的租户还必须具有活动的通用打印订阅。 登录的用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
@@ -40,11 +40,11 @@ GET /print/printers
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持一些 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
-### <a name="exceptions"></a>Exceptions
+### <a name="exceptions"></a>例外
 * 和 `$expand` `select` 运算符受导航属性 `share` 支持，但不支持 `jobs` 。
 * 不支持某些运算符 `$count` `$search` ：、。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称      |说明|
 |:----------|:----------|
 | Authorization | Bearer {token}。必需。 |
@@ -95,7 +95,6 @@ GET https://graph.microsoft.com/beta/print/printers
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1526
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers",

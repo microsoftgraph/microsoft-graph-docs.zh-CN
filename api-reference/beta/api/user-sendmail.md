@@ -2,15 +2,15 @@
 title: 发送邮件
 description: 使用 JSON 或 MIME 格式发送请求正文中指定的邮件。
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: eb97568e946bf1b145391c7c875500b05a3b93a6
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 38995048c71876a3e0ec05cc7eb586c347b1973e
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52868887"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60935219"
 ---
 # <a name="send-mail"></a>发送邮件
 
@@ -30,7 +30,7 @@ ms.locfileid: "52868887"
 
 或者，[创建草稿邮件](../api/user-post-messages.md)稍后发送。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -55,7 +55,7 @@ POST /users/{id | userPrincipalName}/sendMail
 ## <a name="request-body"></a>请求正文
 使用 JSON 格式时，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |邮件|[Message](../resources/message.md)|要发送的邮件。必需。|
 |SaveToSentItems|Boolean|指示是否将邮件保存在“已发送邮件”文件夹中。仅在该参数为 false 时指定它。默认值为 true。可选。|
@@ -86,7 +86,6 @@ POST /users/{id | userPrincipalName}/sendMail
 ```http
 POST https://graph.microsoft.com/beta/me/sendMail
 Content-type: application/json
-Content-length: 512
 
 {
   "message": {
@@ -153,7 +152,6 @@ HTTP/1.1 202 Accepted
 ```http
 POST https://graph.microsoft.com/beta/me/sendMail
 Content-type: application/json
-Content-length: 344
 
 {
   "Message": {

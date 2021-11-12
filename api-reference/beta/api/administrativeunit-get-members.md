@@ -2,15 +2,15 @@
 title: 获取成员
 description: 使用此 API 获取管理 (或) 组的特定成员。
 author: DougKirschner
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7db3137c8e1862d0b5c8ebf42c8e8a0efac65f27
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: a6355465e00e6d39cc1b8d34182c234131de2120
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52991986"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940048"
 ---
 # <a name="get-a-member"></a>获取成员
 
@@ -20,7 +20,7 @@ ms.locfileid: "52991986"
 
 使用此 API 获取管理 (或) 组的特定成员。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -56,12 +56,11 @@ GET https://graph.microsoft.com/beta/administrativeUnits/{id}/members/{id}
 ```
 
 ##### <a name="response"></a>响应
-下面是一个重发的示例。 注意：为了提高可读性，可能缩短此处显示的响应对象。
+下面是一个重发的示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 100
 
 {
   "@odata.type":"#microsoft.graph.user",

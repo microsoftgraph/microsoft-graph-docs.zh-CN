@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: avijityadav
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: af791b7e4c2a6819d97b9e985a381b3cffe4f885
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 417d8ba4b6c5bb273475e9626914fa265aafa2df
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59049786"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940217"
 ---
 # <a name="todotask-delta"></a>todoTask： delta
 
@@ -20,7 +20,7 @@ ms.locfileid: "59049786"
 
 **todoTaskList** 中 **todoTask** 资源的 **delta** 函数调用类似于 GET 请求，只不过通过在这些调用的一 [](/graph/delta-query-overview)个或多个调用中正确应用状态令牌，您可以在 **todoTaskList** 中查询 **todoTask** 中的增量更改。 这样，您即可维护和同步用户 **todoTask** 资源的本地存储，而无需每次从服务器提取整个集合。  
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -89,7 +89,6 @@ Prefer: odata.maxpagesize=2
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 337
 
 {
    "@odata.deltaLink":"https://graph.microsoft.com/v1.0/me/todo/lists/gDbc8U7HGwADDZocJgAAAA==/tasks/delta?$deltatoken=MoVMZ_DzHG4AhT3WE8VioVS1IXZJ-ArqK5fknOjnKFY",

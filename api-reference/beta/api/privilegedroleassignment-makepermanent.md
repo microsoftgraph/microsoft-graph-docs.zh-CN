@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: 9e9f4ef235d0df877bd37a7cb8364e4729891afa
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 64dd91d4fbfce73662f72ac51bd7c859a670f894
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695767"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947215"
 ---
 # <a name="privilegedroleassignment-makepermanent"></a>privilegedRoleAssignment：makePermanent
 
@@ -22,7 +22,7 @@ ms.locfileid: "60695767"
 
 使角色分配永久。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 租户需要注册到 PIM。 否则，将返回 HTTP 403 禁止错误。
@@ -48,7 +48,7 @@ POST /privilegedRoleAssignments/{id}/makePermanent
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |reason|string|可选。 进行此调用的原因。|
 |ticketNumber|string|可选。 与此操作关联的票证编号。|
@@ -71,7 +71,6 @@ POST /privilegedRoleAssignments/{id}/makePermanent
 ```http
 POST https://graph.microsoft.com/beta/privilegedRoleAssignments/{id}/makePermanent
 Content-type: application/json
-Content-length: 110
 
 {
   "reason": "reason-value",
@@ -108,7 +107,6 @@ Content-length: 110
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 184
 
 {
   "id": "id-value",

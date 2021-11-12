@@ -5,19 +5,19 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 2f80cdd2c348723ad4a39d083f12fb95c2c531b6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e5fd38eecebc07d6fa85fb032384221546ad4a05
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59046020"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924619"
 ---
 # <a name="get-fido2authenticationmethod"></a>获取 fido2AuthenticationMethod
 命名空间：microsoft.graph
 
 检索用户的单个 [FIDO2 安全密钥身份验证方法](../resources/fido2authenticationmethod.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -87,7 +87,6 @@ GET https://graph.microsoft.com/v1.0/me/authentication/fido2Methods/-2_GRUg2-HYz
 ``` http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 491
 
 {
   "value": {

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 7065fdced15ff04ff6e82a437378c217a486c94d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 845d25c2665d50c1f8a969a53e293b26528ee60f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59054707"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947641"
 ---
 # <a name="user-exportpersonaldata"></a>user： exportPersonalData
 
@@ -18,7 +18,7 @@ ms.locfileid: "59054707"
 
 提交公司管理员发出的数据策略操作请求，以导出组织用户的数据。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -43,7 +43,7 @@ POST /users/{id}/exportPersonalData
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明 |
+| 参数    | 类型   |Description |
 |:---------------|:--------|:----------|
 |storageLocation|String|这是一个共享访问签名 (SAS) URL Azure 存储帐户，数据应导出到其中。|
 
@@ -67,7 +67,6 @@ POST /users/{id}/exportPersonalData
 ```http
 POST https://graph.microsoft.com/beta/users/{id}/exportPersonalData
 Content-type: application/json
-Content-length: 48
 
 {
   "storageLocation": "storageLocation-value"

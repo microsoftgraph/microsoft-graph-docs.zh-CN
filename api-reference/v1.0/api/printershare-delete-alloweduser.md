@@ -2,25 +2,23 @@
 title: 从 printerShare 中删除 allowedUser
 description: 撤销指定用户向关联的打印机共享提交打印作业的访问权限。
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 453fd853c7631ccb84c8b5709a33a787fc859444
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: a1d6edce095e0cac5e0a416c5568c5cf5b7e8e85
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50771741"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924341"
 ---
 # <a name="delete-alloweduser-from-printershare"></a>从 printerShare 中删除 allowedUser
 
 命名空间：microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 撤销指定用户向关联的 [printerShare](../resources/printershare.md)提交打印作业的访问权限。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 若要使用通用打印服务，除了下表中列出的权限之外，用户或应用的租户还必须具有活动的通用打印订阅。 登录的用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。

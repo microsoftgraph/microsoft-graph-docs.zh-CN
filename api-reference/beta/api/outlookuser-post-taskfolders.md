@@ -1,16 +1,16 @@
 ---
 title: 创建 outlookTaskFolder
-description: 在用户邮箱的默认任务 () `My Tasks` 任务文件夹。
-localization_priority: Normal
+description: 在用户邮箱的默认任务 () `My Tasks` 创建任务文件夹。
+ms.localizationpriority: medium
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9aafda49a7d02169c791c4038195aca4d387928b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: d17186c55a1ac2e099db028ac1b20c67bdbd1a48
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52038003"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60933990"
 ---
 # <a name="create-outlooktaskfolder-deprecated"></a>创建已弃 (outlookTaskFolder) 
 
@@ -21,9 +21,9 @@ ms.locfileid: "52038003"
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-在用户邮箱的默认任务 () `My Tasks` 任务文件夹。
+在用户邮箱的默认任务 () `My Tasks` 创建任务文件夹。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -52,7 +52,7 @@ POST /users/{id|userPrincipalName}/outlook/taskFolders
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-下面的示例在用户邮箱的默认任务 () `My Tasks` 名为"志愿者"的任务文件夹。
+下面的示例在用户邮箱的默认任务 () 名为 `My Tasks` "志愿者"的任务文件夹。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -62,7 +62,6 @@ POST /users/{id|userPrincipalName}/outlook/taskFolders
 ```http
 POST https://graph.microsoft.com/beta/me/outlook/taskfolders 
 Content-type: application/json
-Content-length: 60
 
 {
   "name": "Volunteer"
@@ -88,7 +87,7 @@ Content-length: 60
 
 在请求正文中，提供 [outlookTaskFolder](../resources/outlooktaskfolder.md) 对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -97,7 +96,6 @@ Content-length: 60
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 151
 
 {
   "id": "AAMkADIyAAAhrbPWAAA=",

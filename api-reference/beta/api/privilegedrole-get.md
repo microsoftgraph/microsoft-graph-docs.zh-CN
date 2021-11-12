@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: 48b5d5840db896b8579822afc3080715618220ba
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: fd6fa759b09f922c9319a51dfe1f825c9abb2bc5
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694482"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60932964"
 ---
 # <a name="get-privilegedrole"></a>获取 privilegedRole
 
@@ -22,7 +22,7 @@ ms.locfileid: "60694482"
 
 检索 [privilegedRole 对象的属性和](../resources/privilegedrole.md) 关系。 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 请求程序需要具有以下角色之一 _：Privileged Role Administrator、Global_ _Administrator、Security_ _Administrator_ 或 _Security Reader。_
@@ -96,7 +96,6 @@ GET https://graph.microsoft.com/beta/privilegedRoles/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 46
 
 {
   "id": "id-value",

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: 02278b23fc27f0b8876b3a8ab37344c07f2a93a3
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 880efbdf912e605402b0346d6c6d68eb82e77da2
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60687703"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943135"
 ---
 # <a name="list-privilegedroleassignmentrequests"></a>列出 privilegedRoleAssignmentRequests
 
@@ -22,9 +22,9 @@ ms.locfileid: "60687703"
 
 检索 [privilegedRoleAssignmentRequest 的集合](../resources/privilegedroleassignmentrequest.md)。 
 
-**注意：** 此请求者必须至少有一角色分配资源资源。
+**注意：** 此请求者必须对资源角色分配一个资源。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
@@ -42,7 +42,7 @@ GET /privilegedRoleAssignmentRequests
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
@@ -94,7 +94,6 @@ GET https://graph.microsoft.com/beta/privilegedRoleAssignmentRequests
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 304
 
 {
   "@odata.context":"https://https://graph.microsoft.com/beta/$metadata#privilegedRoleAssignmentRequests",

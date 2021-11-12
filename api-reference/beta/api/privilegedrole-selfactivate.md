@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: 3eb7ba6e02c10923c6289daf12e5063664285436
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 58c4a5e0e57e2fe5f32e87ccc7f87429e1354a93
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695830"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938495"
 ---
 # <a name="privilegedrole-selfactivate"></a>privilegedRole： selfActivate
 
@@ -25,7 +25,7 @@ ms.locfileid: "60695830"
 >**注意：** 自 2018 年 12 月起，将不再支持此 API，也不应使用。 请[改为使用 Create PrivilegedRoleAssignmentRequest。](privilegedroleassignmentrequest-post.md)
 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 请求者只能 ```selfActivate``` 调用分配给他的角色。
@@ -44,7 +44,7 @@ POST /privilegedRoles/{id}/selfActivate
 ```
 
 请注意 ``{id}`` ，这是目标角色 ID。
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
@@ -52,10 +52,10 @@ POST /privilegedRoles/{id}/selfActivate
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |reason|string|可选。 有关此角色激活原因的说明。|
-|duration|string|可选。 有效值可以是 (最短激活) 、 (角色) 的默认激活持续时间或用于指定激活小时数的双 ```min``` ```default``` 精度值。 指定持续时间不能长于角色设置中角色的激活持续时间。 |
+|duration|string|可选。 有效值可以是 (激活) 、 (角色) 的默认激活持续时间或一个指定激活小时数的双 ```min``` ```default``` 精度值。 指定持续时间不能长于角色设置中角色的激活持续时间。 |
 |ticketNumber|string|可选。 用于跟踪此角色激活的票证编号。|
 |ticketSystem|string|可选。 票证系统。|
 
@@ -77,7 +77,6 @@ POST /privilegedRoles/{id}/selfActivate
 ```http
 POST https://graph.microsoft.com/beta/privilegedRoles/{id}/selfActivate
 Content-type: application/json
-Content-length: 142
 
 {
   "reason": "reason-value",
@@ -117,7 +116,6 @@ Content-length: 142
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 184
 
 {
   "id": "id-value",

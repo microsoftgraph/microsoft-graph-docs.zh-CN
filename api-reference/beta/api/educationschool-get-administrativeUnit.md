@@ -1,16 +1,16 @@
 ---
 title: 获取 administrativeUnit
 description: 检索对应于此 **educationSchool** 的简单目录 **administrativeUnit。**
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e3e619f67839f4ed733b87bf00d11da010330518
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6ae0e7a6bb949958090f80f17e50b89f434b6693
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52043442"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939677"
 ---
 # <a name="get-administrativeunit"></a>获取 administrativeUnit
 
@@ -89,7 +89,6 @@ GET https://graph.microsoft.com/beta/education/schools/2961761D-8094-4183-A9F6-8
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 134
 
 {
   "displayName": "displayName-value",

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 13bb77e048d0d28c272cb6b067957b451212e857
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a17e3fa523f1cf63c1d25b3b42fac172e62b589c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59046331"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937389"
 ---
 # <a name="directoryobject-validateproperties"></a>directoryObject： validateProperties
 
@@ -23,9 +23,9 @@ ms.locfileid: "59046331"
 2. 验证自定义禁止字策略
 3. 验证邮件昵称是否唯一
 
-此 API 仅返回遇到的第一个验证失败。 如果属性无法通过多次验证，则仅返回第一个验证失败。 但是，如果您仅验证前缀和后缀命名策略，您可以验证邮件昵称和显示名称并接收验证错误集合。 若要了解有关配置命名策略的更多信息，请参阅配置 [命名策略](/azure/active-directory/users-groups-roles/groups-naming-policy#configure-naming-policy-in-powershell)。
+此 API 仅返回遇到的第一个验证失败。 如果属性无法通过多个验证，则仅返回第一个验证失败。 但是，如果您仅验证前缀和后缀命名策略，您可以验证邮件昵称和显示名称并接收验证错误集合。 若要了解有关配置命名策略的更多信息，请参阅配置 [命名策略](/azure/active-directory/users-groups-roles/groups-naming-policy#configure-naming-policy-in-powershell)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -50,7 +50,7 @@ POST /directoryObjects/validateProperties
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |entityType|String| 组是唯一受支持的实体类型。 |
 |displayName|String| 要显示名称组的成员。 属性不单独是必需的。 但是，至少需要一 (**displayName** 或 **mailNickname**) 属性。 |
@@ -80,7 +80,6 @@ POST /directoryObjects/validateProperties
 ``` http
 POST https://graph.microsoft.com/v1.0/directoryObjects/validateProperties
 Content-type: application/json
-Content-length: 164
 
 {
   "entityType": "Group",
@@ -125,7 +124,6 @@ HTTP/1.1 204 No Content
 ```http
 POST https://graph.microsoft.com/v1.0/directoryObjects/validateProperties
 Content-type: application/json
-Content-length: 164
 
 {
   "entityType": "Group",

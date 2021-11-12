@@ -2,15 +2,15 @@
 title: 'ChartFill: setSolidColor'
 description: 将图表元素的填充格式设置为统一颜色。
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 8c8d78fbd5240c82105b94c36463cf2f0566f0e7
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: ff89c9983bf695f4a817b766c65809babe5a597c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786192"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60934749"
 ---
 # <a name="chartfill-setsolidcolor"></a>ChartFill: setSolidColor
 
@@ -19,7 +19,7 @@ ms.locfileid: "52786192"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 将图表元素的填充格式设置为统一颜色。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -48,7 +48,7 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/le
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |color|string|表示窗体 #RRGGBB（例如“FFA500”）的边框线条颜色或作为已命名的 HTML 颜色（例如“orange”）的 HTML 颜色代码。|
 
@@ -69,7 +69,6 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/le
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/format/fill/setSolidColor
 Content-type: application/json
-Content-length: 28
 
 {
   "color": "color-value"

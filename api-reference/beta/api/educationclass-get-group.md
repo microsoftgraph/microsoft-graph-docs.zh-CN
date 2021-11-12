@@ -1,16 +1,16 @@
 ---
 title: 获取组
 description: 检索Microsoft 365 **educationClass** 对应的组。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: ca134cfabe18defd818af94b9354b5f6458b0d61
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 596168f56bafc2ac3e663756e474ad6fa524f3d3
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52044051"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942364"
 ---
 # <a name="get-group"></a>获取组
 
@@ -89,7 +89,6 @@ GET https://graph.microsoft.com/beta/education/classes/2961761D-8094-4183-A9F6-8
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: xxx
 
 {
   "id": "id-value",

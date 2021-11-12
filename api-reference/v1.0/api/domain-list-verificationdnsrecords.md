@@ -5,12 +5,12 @@ author: adimitui
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: f143788eb0227eb1610127d9786c52f2ffcfa618
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1840afece9142adb7742855168c21214a3802581
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59008411"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943897"
 ---
 # <a name="list-verificationdnsrecords"></a>列出 verificationDnsRecords
 
@@ -18,11 +18,11 @@ ms.locfileid: "59008411"
 
 检索 [domainDnsRecord 对象](../resources/domaindnsrecord.md) 的列表。
 
-在所有权得到验证之前，无法将关联域与 Azure AD 租户一同使用。 若要验证域的所有权，请检索域验证记录，将详细信息添加到域的区域文件。 这可以通过域注册机构或 DNS 服务器配置完成。
+在验证所有权之前，Azure AD租户使用关联域。 若要验证域的所有权，请检索域验证记录，将详细信息添加到域的区域文件。 这可以通过域注册机构或 DNS 服务器配置完成。
 
-根域需要验证。 例如，contoso.com 需要验证。 如果验证根域，则会自动验证根域的子域。 例如，subdomain.contoso.com 验证是否自动 contoso.com 验证。
+根域需要验证。 例如，contoso.com 需要验证。 如果验证根域，将自动验证根域的子域。 例如，subdomain.contoso.com 验证是否自动 contoso.com 验证。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -103,7 +103,6 @@ GET https://graph.microsoft.com/v1.0/domains/{domain-name}/verificationDnsRecord
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 220
 
 {
   "value": [

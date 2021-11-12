@@ -5,19 +5,19 @@ author: harini84
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 094d2a91892e335230acb0225fdba81d423af2d1
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b6bcea426c1e1eec89c1077bb39a49b204b271eb
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59140736"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60931697"
 ---
 # <a name="update-eventmessage"></a>更新 eventMessage
 
 命名空间：microsoft.graph
 
 更新 [eventMessage](../resources/eventmessage.md) 对象的属性。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -43,7 +43,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。可写/可更新属性
 
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |categories|String|与邮件关联的类别。|
 |importance|String|邮件的重要性。 可能的值包括 `Low`、`Normal`、`High`。|
@@ -66,7 +66,6 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/messages/{id}
 Content-type: application/json
-Content-length: 248
 
 {
   "isRead": true,
@@ -100,7 +99,6 @@ Content-length: 248
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 248
 
 {
   "receivedDateTime": "datetime-value",

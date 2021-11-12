@@ -2,15 +2,15 @@
 title: 列出 monthlyPrintUsageByUser
 description: 检索按用户分组的每月打印使用情况摘要列表。
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 463f641d1514919c0b264f98188208d82f8bdeef
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: a71fc225c39ad506ecd4ae4dccd75e463a1cc471
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52781217"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944051"
 ---
 # <a name="list-monthlyprintusagebyuser"></a>列出 monthlyPrintUsageByUser
 
@@ -20,7 +20,7 @@ ms.locfileid: "52781217"
 
 检索按用户分组的每月打印使用情况摘要列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。
@@ -92,7 +92,6 @@ GET https://graph.microsoft.com/beta/print/reports/monthlyPrintUsageByUser
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 268
 
 {
   "value": [

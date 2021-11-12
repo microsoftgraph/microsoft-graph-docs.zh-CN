@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 50190e1138f18f916d2420e6e8dc8b884a4a8bd0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 27a1b239fa9bf8e854ef1981975ef34cca8ee464
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59105382"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944555"
 ---
 # <a name="create-educationcategories"></a>创建 educationCategories
 
@@ -18,7 +18,7 @@ ms.locfileid: "59105382"
 
 将一个或多个现有的 [educationCategory](../resources/educationcategory.md) 对象添加到指定的  [educationAssignment](../resources/educationassignment.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -59,7 +59,6 @@ POST /education/classes/{id}/assignments/{id}/categories/$ref
 ```http
 POST https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/ad8afb28-c138-4ad7-b7f5-a6986c2655a8/categories/$ref
 Content-type: application/json
-Content-length: 212
 
 {
   "@odata.id": "https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignmentCategories/ec98f158-341d-4fea-9f8c-14a250d489ac"

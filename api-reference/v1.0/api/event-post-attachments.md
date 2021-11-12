@@ -5,12 +5,12 @@ author: svpsiva
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 99141257bf507b1c00ade38993c641e1867bee73
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5b9113a47ab0f35ef057502661caf4ce323afe71
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59100181"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943801"
 ---
 # <a name="add-attachment"></a>添加附件
 
@@ -20,7 +20,7 @@ ms.locfileid: "59100181"
 
 如果组织者向会议事件添加附件，组织者随后可以更新事件以发送附件[](event-update.md)并更新每个与会者的事件。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -61,7 +61,7 @@ POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments
 ```
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
@@ -88,7 +88,6 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ```http
 POST https://graph.microsoft.com/v1.0/me/events/AAMkAGI1AAAt9AHjAAA=/attachments
 Content-type: application/json
-Content-length: 151
 
 {
     "@odata.type": "#microsoft.graph.fileAttachment",
@@ -160,7 +159,6 @@ Content-type: application/json
 ```http
 POST https://graph.microsoft.com/v1.0/me/events/AAMkAGI1AAAt9AHjAAA=/attachments
 Content-type: application/json
-Content-length: 600
 
 {
   "@odata.type": "#microsoft.graph.itemAttachment",
@@ -214,7 +212,6 @@ Content-length: 600
 ```http
 HTTP 201 Created
 Content-type: application/json
-Content-length: 162
 
 {
     "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#me/events('AAMkAGI1AAAt9AHjAAA=')/attachments/$entity",

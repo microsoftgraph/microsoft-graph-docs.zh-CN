@@ -2,15 +2,15 @@
 title: 为 printerShare 创建 printJob
 description: 为 printerShare 创建新的 printJob。
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 3d5d248e75472d7c0d60b43e5242d1668b4a5119
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 9ad0704df0fa1c4d06f4a7ea71acdf0124e73592
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055307"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938544"
 ---
 # <a name="create-printjob-for-a-printershare"></a>为 printerShare 创建 printJob
 
@@ -20,7 +20,7 @@ ms.locfileid: "52055307"
 
 为 printerShare 创建新的[printJob。](../resources/printJob.md) [](../resources/printerShare.md) 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 除了以下权限之外，用户或应用的租户还必须具有活动的通用打印订阅，并且具有授予 [获取 printerShare](printerShare-get.md) 访问权限的权限。 登录的用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
@@ -132,7 +132,6 @@ Content-type: application/json
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 1065
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printJobs/$entity",

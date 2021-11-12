@@ -1,16 +1,16 @@
 ---
 title: 更新 nameditem
 description: 更新 nameditem 对象的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: ''
 author: ruoyingl
-ms.openlocfilehash: b812058bcc7ce149b5a12b5c006e34c3f6368926
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 43cba5a5d06a90af30b594491a7b3fb4f45e105d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052108"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947264"
 ---
 # <a name="update-nameditem"></a>更新 nameditem
 
@@ -19,7 +19,7 @@ ms.locfileid: "52052108"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新 nameditem 对象的属性。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -43,7 +43,7 @@ PATCH /me/drive/root:/{item-path}:/workbook/names/{name}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |visible|布尔|指定对象是否可见。|
 |comment|   string  |表示与此名称相关联的注释。|
@@ -63,7 +63,6 @@ PATCH /me/drive/root:/{item-path}:/workbook/names/{name}
 ```http
 PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}
 Content-type: application/json
-Content-length: 87
 
 {
   "type": "type-value",
@@ -93,7 +92,7 @@ Content-length: 87
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -102,7 +101,6 @@ Content-length: 87
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 87
 
 {
   "name": "name-value",

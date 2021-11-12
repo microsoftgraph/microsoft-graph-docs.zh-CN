@@ -5,21 +5,21 @@ author: namkedia
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 175c2f05335494f876a0f0121d9777d87013184b
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 5038eebdc83c242ffce20668b1eb906f032e006f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59763904"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947669"
 ---
 # <a name="create-externaldomainname"></a>创建 externalDomainName
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-通过创建新的 [externalDomainName](../resources/externaldomainname.md) WS-Fed，将多个域添加到基于 SAML 或基于 SAML 的配置，并将其添加到现有 [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md)中。
+通过创建新的 [externalDomainName](../resources/externaldomainname.md) 对象WS-Fed将多个域添加到基于 SAML 或基于 SAML 的配置，并将其添加到现有 [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md)中。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -28,7 +28,7 @@ ms.locfileid: "59763904"
 |委派（个人 Microsoft 帐户）| 不支持。|
 |应用程序|Domain.ReadWrite.All|
 
-工作或学校帐户需要属于以下 Azure [AD Azure Active Directory (角色) 之一](/azure/active-directory/roles/permissions-reference)：
+工作或学校帐户需要属于以下角色Azure Active Directory (Azure AD) [之一](/azure/active-directory/roles/permissions-reference)：
 
 * 全局管理员
 * 外部标识提供程序管理员
@@ -80,7 +80,6 @@ POST /directory/federationConfigurations/{samlOrWsFedExternalDomainFederation ID
 ``` http
 POST https://graph.microsoft.com/beta/directory/federationConfigurations/d5a56845-6845-d5a5-4568-a5d54568a5d5/microsoft.graph.samlOrWsFedExternalDomainFederation/domains
 Content-Type: application/json
-Content-length: 60
 
 {
     "@odata.type": "microsoft.graph.externalDomainName",

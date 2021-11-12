@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: d40f6fd19eb1e037a092ea00f11089d16c5a350a
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 4d4d0af95f8873d1666f43fbc089922cc8b04b76
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695977"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944063"
 ---
 # <a name="get-privilegedrolesummary"></a>获取 privilegedRoleSummary
 
@@ -21,7 +21,7 @@ ms.locfileid: "60695977"
 [!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 检索 [privilegedRoleSummary 对象的属性和](../resources/privilegedrolesummary.md) 关系。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -92,7 +92,6 @@ GET https://graph.microsoft.com/beta/privilegedRoles/{id}/summary
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 137
 
 {
   "id": "id-value",

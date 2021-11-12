@@ -5,12 +5,12 @@ author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 043aa156ac456039708e6a36f5306139f291ad86
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: cd7a24499a6ac1de331c19763de20ad9a1695f02
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60561778"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941132"
 ---
 # <a name="create-subjectrightsrequest"></a>创建 subjectRightsRequest
 命名空间：microsoft.graph
@@ -19,14 +19,14 @@ ms.locfileid: "60561778"
 
 创建新的 [subjectRightsRequest](../resources/subjectRightsRequest.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|SubjectRightsRequest.ReadWrite.All*|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持|
+|应用程序|不支持|
 
 >[!IMPORTANT]
 >标有星号* (*) 当前不可用。 有关详细信息，请参阅[已知问题](/graph/known-issues#compliance)。
@@ -52,14 +52,14 @@ POST /privacy/subjectRightsRequests
 
 下表显示创建 [subjectRightsRequest 时所需的属性](../resources/subjectRightsRequest.md)。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |dataSubject|[microsoft.graph.dataSubject](../resources/datasubject.md)|包含请求的数据主体的属性。|
 |dataSubjectType|dataSubjectType|数据主体类型。 可取值为：`customer`、`currentEmployee`、`formerEmployee`、`prospectiveEmployee`、`student`、`teacher`、`faculty`、`other`、`unknownFutureValue`。|
-|说明|String|请求的说明。|
+|description|String|请求的说明。|
 |displayName|String|请求的名称。|
 |internalDueDateTime|DateTimeOffset|用于跟踪请求完成的内部截止日期。|
-|法规|String collection|请求的一个或多个法规。|
+|法规|String 集合|请求的一个或多个法规。|
 |type|subjectRightsRequestType|请求的类型。 可取值为：`export`、`delete`、`access`、`tagForAction`、`unknownFutureValue`。|
 
 
@@ -80,7 +80,6 @@ POST /privacy/subjectRightsRequests
 ``` http
 POST https://graph.microsoft.com/beta/privacy/subjectRightsRequests
 Content-Type: application/json
-Content-length: 849
 
 {
     "type": "microsoft.graph.subjectRightsRequestType",

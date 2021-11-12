@@ -5,12 +5,12 @@ author: akumar39
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4ac6507694bb3d5e9ac37a0379acdd1bc00ff276
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c4d7573dd7785fcf9f35613c9e785044803b4a7c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019606"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60927610"
 ---
 # <a name="replace-schedulinggroup"></a>更换 schedulingGroup
 
@@ -20,7 +20,7 @@ ms.locfileid: "59019606"
 
 如果指定的 [schedulingGroup](../resources/schedulinggroup.md) 不存在，此方法将返回 `404 Not found` 。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -114,7 +114,6 @@ Prefer: return=representation
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 401
 
 {
   "id": "TAG_f914d037-00a3-4ba4-b712-ef178cbea263",

@@ -5,12 +5,12 @@ author: keylimesoda
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 4728db7de81f9c9469bda3d4f79a6e6dc92efa14
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 82d17920a6f368fca36518b460fb81ffc753f760
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59021377"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947299"
 ---
 # <a name="list-deleted-items-owned-by-a-user"></a>列出用户拥有的已删除项目
 
@@ -22,7 +22,7 @@ ms.locfileid: "59021377"
 
 这是一种服务操作，这意味着它不支持分页。  API 最多返回用户拥有的 1，000 个已删除对象，按 ID 排序。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -81,7 +81,6 @@ Content-type: application/json
 ``` http
 HTTP/1.1 200
 Content-type: application/json
-Content-length: 1249
 
 {
 "value": [

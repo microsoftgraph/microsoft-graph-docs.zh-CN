@@ -5,12 +5,12 @@ author: harini84
 ms.localizationpriority: high
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: def0655a5a970fdec1dd9f2f49457f4a9a6cb419
-ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
+ms.openlocfilehash: ff4589d9b4a80b722d091da49a084045ae3bfd55
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "59996702"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947613"
 ---
 # <a name="update-event"></a>更新事件
 
@@ -122,7 +122,6 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/events/{id}
 Content-type: application/json
-Content-length: 285
 
 {
   "originalStartTimeZone": "originalStartTimeZone-value",
@@ -174,7 +173,6 @@ Content-length: 285
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 285
 
 {
   "originalStartTimeZone": "originalStartTimeZone-value",

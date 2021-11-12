@@ -1,16 +1,16 @@
 ---
 title: 列出 userCredentialUsageDetails
 description: 获取给定租户的 userCredentialUsageDetails 对象列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: e64d98318bcf9b083005f79156bc425a3b0d0fbc
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: f97fdc92f37fc0080e76ae4c5c4cdae5db447dd7
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134482"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941230"
 ---
 # <a name="list-usercredentialusagedetails"></a>列出 userCredentialUsageDetails
 
@@ -20,7 +20,7 @@ ms.locfileid: "50134482"
 
 获取给定 [租户的 userCredentialUsageDetails](../resources/usercredentialusagedetails.md) 对象列表。 详细信息包括用户信息、重置状态和失败原因。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -40,19 +40,19 @@ GET /reports/userCredentialUsageDetails
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此函数支持可选的 OData 查询 **参数**$filter。 你可以 **将$filter** [userCredentialUsageDetails](../resources/usercredentialusagedetails.md) 资源的以下一个或多个属性应用。
+此函数支持可选的 OData 查询参数 **$filter。** 你可以将 **$filter** [userCredentialUsageDetails](../resources/usercredentialusagedetails.md) 资源的以下一个或多个属性。
 
 | 属性 | 说明和示例 |
 |:--------- |:----------- |
-| 功能 | 按要注册和重置的使用情况 (类型) 。 例如：`/reports/userCredentialUsageDetails?$filter=feature eq 'registration'`。 支持的筛选器运算符： `eq` |
+| 功能 | 按要注册和重置 (使用率数据类型) 。 例如：`/reports/userCredentialUsageDetails?$filter=feature eq 'registration'`。 支持的筛选器运算符： `eq` |
 | userDisplayName | 按用户筛选显示名称。 例如：`/reports/userCredentialUsageDetails?$filter=userDisplayName eq 'Contoso'`。 支持的筛选器运算符： `eq` 和 `startswith()` 。 支持不区分大小写。 |
 | userPrincipalName  | 按用户主体名称进行筛选。 例如：`/reports/userCredentialUsageDetails?$filter=userPrincipalName eq 'Contoso'`。    支持的筛选器运算符： `eq` 和 `startswith()` 。 支持不区分大小写。 |
-| isSuccess | 按活动状态进行筛选。 例如：`/reports/userCredentialUsageDetails?$filter=isSuccess eq true`。 支持的筛选器运算符： `eq` 和 `orderby` 。 |
-| authMethod  | 按注册期间使用的身份验证方法进行筛选。 例如：`/reports/userCredentialUsageDetails?$filter=authMethod eq microsoft.graph.usageAuthMethod'email'`。 支持的筛选器运算符： `eq` . |
-| failureReason | 如果活动失败， (失败原因筛选) 。 例如：`/reports/userCredentialUsageDetails?$filter=failureReason eq 'Contoso'`。 支持的筛选器运算符： `eq` 和 `startswith()` 。 支持不区分大小写。 |
+| isSuccess | 按活动状态筛选。 例如：`/reports/userCredentialUsageDetails?$filter=isSuccess eq true`。 支持的筛选器运算符： `eq` 和 `orderby` 。 |
+| authMethod  | 按注册期间使用的身份验证方法进行筛选。 例如：`/reports/userCredentialUsageDetails?$filter=authMethod eq microsoft.graph.usageAuthMethod'email'`。 支持的筛选器运算符 `eq` ：。 |
+| failureReason | 按失败原因筛选 (活动是否失败) 。 例如：`/reports/userCredentialUsageDetails?$filter=failureReason eq 'Contoso'`。 支持的筛选器运算符： `eq` 和 `startswith()` 。 支持不区分大小写。 |
 
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称      |说明|
 |:----------|:----------|
@@ -65,7 +65,7 @@ GET /reports/userCredentialUsageDetails
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [userCredentialUsageDetails](../resources/usercredentialusagedetails.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [userCredentialUsageDetails](../resources/usercredentialusagedetails.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -107,7 +107,7 @@ GET https://graph.microsoft.com/beta/reports/userCredentialUsageDetails
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 从实际调用中返回所有属性。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都从实际调用中返回。
 
 <!-- {
   "blockType": "response",
@@ -119,7 +119,6 @@ GET https://graph.microsoft.com/beta/reports/userCredentialUsageDetails
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 258
 
 {
   "@odata.context":"https://graph.microsoft.com/beta/reports/$metadata#Collection(microsoft.graph.getUserCredentialUsageDetails)",

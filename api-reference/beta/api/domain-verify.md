@@ -2,15 +2,15 @@
 title: 域：验证
 description: 验证域的所有权。
 author: adimitui
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 68e9af76f7f970e70d314afc9d0607224f7f4a4c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: f24f82bcd6533e67d78c24694e697c728a433d57
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52046284"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937907"
 ---
 # <a name="domain-verify"></a>域：验证
 
@@ -22,16 +22,16 @@ ms.locfileid: "52046284"
 
 > **重要说明：** 仅适用于未验证的域。对于未验证的域，[域](../resources/domain.md)的 isVerified 属性为 false。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.Read.All    |
+|委派（工作或学校帐户） | Domain.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Directory.Read.All、Domain.ReadWrite.All |
+|应用程序 | Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -42,7 +42,7 @@ POST /domains/{id}/verify
 
 > 对于 {id}，请使用其完全限定的域名指定该域。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称       | 说明|
 |:---------------|:----------|
@@ -95,7 +95,6 @@ POST https://graph.microsoft.com/beta/domains/contoso.com/verify
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 192
 
 {
   "authenticationType": "authenticationType-value",

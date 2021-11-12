@@ -5,12 +5,12 @@ author: akjo
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: d25735dcde145b83823be07502a2176a300148e4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 02a0bfa4fb3027f4bae335262c1a3a9fb0c61724
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59050752"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941790"
 ---
 # <a name="add-conversationmember"></a>添加 conversationMember
 
@@ -18,7 +18,7 @@ ms.locfileid: "59050752"
 
 将 [conversationMember](../resources/conversationmember.md) 添加到 [频道](../resources/channel.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -44,10 +44,10 @@ POST /teams/{id}/channels/{id}/members
 
 请求正文中包含以下属性。
 
-| 属性   | 类型 |说明|
+| 属性   | 类型 |Description|
 |:---------------|:--------|:----------|
 |角色|string 集合|该用户的角色。|
-|用户|[用户](../resources/user.md)|要添加到频道的用户。|
+|用户|[user](../resources/user.md)|要添加到频道的用户。|
 
 ## <a name="response"></a>响应
 
@@ -109,7 +109,6 @@ content-length: 26
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 468
 
 {
   "@odata.context": "https://graph.microsoft.com/V1.0/$metadata#teams('ece6f0a1-7ca4-498b-be79-edf6c8fc4d82')/channels('19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype')/members/microsoft.graph.aadUserConversationMember/$entity",

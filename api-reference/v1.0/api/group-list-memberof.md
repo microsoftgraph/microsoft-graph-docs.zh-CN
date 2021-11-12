@@ -2,15 +2,15 @@
 title: 列出 memberOf
 description: '获取直接成员组构成的组集合。 '
 author: Jordanndahl
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 4d97f7fe1fc4d2b2c6e3dddf6efb90d4ecb1fb7c
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 908490a9546e0675a8d26dea33c25e3790d3d47b
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680635"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943764"
 ---
 # <a name="list-memberof"></a>列出 memberOf
 
@@ -103,7 +103,6 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/memberOf
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
 
 {
   "value": [

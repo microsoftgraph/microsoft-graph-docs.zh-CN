@@ -5,19 +5,19 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 0b5a7d032dbaa1da0a86f567c392529dd6944a48
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 25833a5aa348b518f66637fc17acfe72bafb0ada
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59058360"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945472"
 ---
 # <a name="update-itemaddress"></a>更新 itemAddress
 命名空间：microsoft.graph
 
 更新 [itemAddress 对象](../resources/itemaddress.md) 的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -48,7 +48,7 @@ PATCH /users/{id | userPrincipalName}/profile/addresses/{id}
 
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
 |detail|[physicalAddress](../resources/physicaladdress.md)|有关地址本身的详细信息。|
@@ -73,7 +73,6 @@ PATCH /users/{id | userPrincipalName}/profile/addresses/{id}
 ``` http
 PATCH https://graph.microsoft.com/beta/users/{userId}/profile/addresses/{id}
 Content-Type: application/json
-Content-length: 497
 
 {
   "allowedAudiences": "me",

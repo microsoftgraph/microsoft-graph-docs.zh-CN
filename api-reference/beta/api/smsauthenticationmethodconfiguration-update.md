@@ -5,21 +5,21 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: f1c0ac265239cff9d28358cf6a5291835d6f1b87
-ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
+ms.openlocfilehash: 75aa58e1c9def07e8eb9a3f9c6695531d81dfcac
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60220428"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944646"
 ---
 # <a name="update-smsauthenticationmethodconfiguration"></a>更新 smsAuthenticationMethodConfiguration
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [smsAuthenticationMethodConfiguration](../resources/smsauthenticationmethodconfiguration.md) 对象的属性，该对象表示 Azure AD 租户的文本消息身份验证方法策略。
+更新[smsAuthenticationMethodConfiguration](../resources/smsauthenticationmethodconfiguration.md)对象的属性，该对象代表 Azure AD 方法策略。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -59,7 +59,7 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/s
 |id|String|身份验证方法策略标识符。|
 |state|authenticationMethodState|可取值为：`enabled`、`disabled`。|
 
->**注意：**`@odata.type`属性值为 的 `#microsoft.graph.smsAuthenticationMethodConfiguration` 属性必须包含在正文中。
+>**注意：**`@odata.type`属性值为 的 属性 `#microsoft.graph.smsAuthenticationMethodConfiguration` 必须包含在正文中。
 
 ## <a name="response"></a>响应
 
@@ -78,7 +78,6 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/s
 ``` http
 PATCH https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/sms
 Content-Type: application/json
-Content-length: 100
 
 {
     "@odata.type": "#microsoft.graph.smsAuthenticationMethodConfiguration",

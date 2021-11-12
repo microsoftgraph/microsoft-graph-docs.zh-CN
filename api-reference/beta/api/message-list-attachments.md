@@ -2,15 +2,15 @@
 title: 列出附件
 description: 检索附加到邮件的 attachment 对象列表。
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 878d2f92297673d7ce66a23aeafdb2fb392dad7b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ec02df020c438812cd7a47150c0fd6b7a88d0255
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050148"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945437"
 ---
 # <a name="list-attachments"></a>列出附件
 
@@ -48,12 +48,12 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
-特别是，您可以使用 $expand 查询参数，以将所有内联邮件附件与邮件属性的其余部分一起包含。 例如：
+特别是，您可以使用 $expand 查询参数将内联的所有邮件附件与邮件属性的其余部分一起包含。 例如：
 
 ```
 GET https://graph.microsoft.com/beta/me/messages/{id}?$expand=attachments
 ```
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/beta/me/messages/{id}/attachments
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "name": "message_get_attachments_beta",
@@ -106,7 +106,6 @@ GET https://graph.microsoft.com/beta/me/messages/{id}/attachments
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 215
 
 {
   "value": [

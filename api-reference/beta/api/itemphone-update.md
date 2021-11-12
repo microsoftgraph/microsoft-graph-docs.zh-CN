@@ -1,16 +1,16 @@
 ---
 title: 更新 itemphone
 description: 更新 itemPhone 对象的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: c88e7eb1b3bd357735689ba36955170372b8b9e4
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 03705f91954b91e6074b2155faf619cbecc21d50
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50770402"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942224"
 ---
 # <a name="update-itemphonenumber"></a>更新 itemphonenumber
 
@@ -20,7 +20,7 @@ ms.locfileid: "50770402"
 
 更新用户配置文件 [中的 itemPhone](../resources/itemphone.md) 对象 [的属性](../resources/profile.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -53,12 +53,12 @@ PATCH /users/{userId}/profile/phones/{id}
 
 下表显示更新用户配置文件中的 [itemPhone](../resources/itemphone.md) 对象时可能设置的属性。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
-|allowedAudiences|字符串|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|displayName|字符串|用户已分配此电话号码的友好名称。 |
+|allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
+|displayName|String|用户已分配此电话号码的友好名称。 |
 |inference|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断出来的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|number|字符串|用户提供的电话号码。|
+|number|String|电话提供的号码。|
 |source|[personDataSource](../resources/persondatasource.md)|如果从另一个服务同步，则值源自何处。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |type|phoneType|对象中电话号码的类型。 可取值为：`home`、`business`、`mobile`、`other`、`assistant`、`homeFax`、`businessFax`、`otherFax`、`pager`、`radio`。|
 
@@ -78,7 +78,6 @@ PATCH /users/{userId}/profile/phones/{id}
 ``` http
 PATCH https://graph.microsoft.com/beta/users/{userId}/profile/phones/{id}
 Content-Type: application/json
-Content-length: 382
 
 {
   "type": "other"
