@@ -2,15 +2,15 @@
 title: 列出 printerShare 的 allowedGroups
 description: 检索已被授予将打印作业提交到关联的打印机共享的权限的组列表。
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: f5f08fe16c7a349fef81b4fba3006e662cb23274
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 33a1892ca58ea936d4b98849c9a7ce2ea27a5990
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052913"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60935513"
 ---
 # <a name="list-allowedgroups-for-printershare"></a>列出 printerShare 的 allowedGroups
 
@@ -20,7 +20,7 @@ ms.locfileid: "52052913"
 
 检索已被授予向关联的 printerShare 提交打印作业的权限的组 [列表](../resources/printershare.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 除了以下权限之外，用户或应用的租户还必须具有活动的通用打印订阅，并且具有授予 [列表](group-list.md) 组访问权限的权限。 登录的用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
@@ -89,7 +89,6 @@ GET https://graph.microsoft.com/beta/print/shares/{id}/allowedGroups
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 233
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.group)",

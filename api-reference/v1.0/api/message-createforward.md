@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: bdcc3125fb05b6ffec7bedfc94dc1c3abca271d5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 875b3ca8be27434218901a99d9e0b5f94f496c73
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59110296"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942959"
 ---
 # <a name="message-createforward"></a>message: createForward
 
@@ -20,7 +20,7 @@ ms.locfileid: "59110296"
 
 使用 JSON 格式时，可以：
 - 指定参数的 comment 或 **body** `message` 属性。 指定这两者将返回 HTTP 400 错误请求错误。
-- 指定参数 `toRecipients` 的参数或 **toRecipients** `message` 属性。 同时指定或指定两者都将返回 HTTP 400 错误请求错误。
+- 指定参数 `toRecipients` 的参数或 **toRecipients** `message` 属性。 指定两者或同时指定两者都将返回 HTTP 400 错误请求错误。
 - 随后 [更新](../api/message-update.md)草稿以将内容添加到 **正文**，或更改其他邮件属性。
 
 使用 MIME 格式时：
@@ -31,7 +31,7 @@ ms.locfileid: "59110296"
 
 或者， [在单个操作](../api/message-forward.md) 中转发邮件。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -61,7 +61,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createForwar
 ## <a name="request-body"></a>请求正文
 此方法不需要请求正文。
 
-但是，若要使用 MIME 格式创建转发草稿，请为 MIME 内容提供适用的 Internet 邮件头 ("收件人"、"抄送"、"密件抄送"、"主题") ，全部在请求正文中以 **base64** 格式进行编码。 
+但是，若要使用 MIME 格式创建转发草稿，请为 MIME 内容提供适用的 Internet 邮件头 ("收件人"、"抄送"、"密件抄送"、"主题") ，请求正文中均以 **base64** 格式编码。 
 
 ## <a name="response"></a>响应
 
@@ -118,7 +118,6 @@ POST https://graph.microsoft.com/v1.0/me/messages/{id}/createForward
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 248
 
 {
   "receivedDateTime": "datetime-value",

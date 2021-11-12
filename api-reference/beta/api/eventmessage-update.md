@@ -2,15 +2,15 @@
 title: 更新 eventMessage
 description: 更新 eventMessage 对象的属性。
 author: harini84
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 86b0d75af2e7327ba4c89bb10c30c6a0b5f5472c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 4189a6e9163c5400145e18bbdf1a7bf03650abec
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52042350"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943414"
 ---
 # <a name="update-eventmessage"></a>更新 eventMessage
 
@@ -19,7 +19,7 @@ ms.locfileid: "52042350"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新 [eventMessage](../resources/eventmessage.md) 对象的属性。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -45,7 +45,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。可写/可更新属性
 
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |categories|String|与邮件关联的类别。|
 |importance|String|邮件的重要性。可能的值是：`Low`、`Normal`、`High`。|
@@ -69,7 +69,6 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```http
 PATCH https://graph.microsoft.com/beta/me/messages/{id}
 Content-type: application/json
-Content-length: 248
 
 {
   "isRead": "true",
@@ -94,7 +93,7 @@ Content-length: 248
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -103,7 +102,6 @@ Content-length: 248
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 248
 
 {
   "receivedDateTime": "2016-10-19T10:37:00Z",

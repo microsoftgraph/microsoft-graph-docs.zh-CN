@@ -2,15 +2,15 @@
 title: 获取共享
 description: 检索打印机共享的列表。
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 3e759ab18f0de22a0b769b01f19df44bf1ac6fad
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a5ef981ab072ce5a021374b556a821533c060dcb
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053641"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942042"
 ---
 # <a name="list-shares"></a>列出共享项
 
@@ -20,7 +20,7 @@ ms.locfileid: "52053641"
 
 检索 **printerShares 列表**。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 若要使用通用打印服务，除了下表中列出的权限之外，用户或应用的租户还必须具有活动的通用打印订阅。
@@ -42,10 +42,10 @@ GET /print/shares
 
 若要查看每个打印机共享功能的列表，请包含可选的 `$select=capabilities` 查询参数。
 
-### <a name="exceptions"></a>Exceptions
+### <a name="exceptions"></a>例外
 不支持某些运算符 `$count` `$orderby` ：、、。 `$search`
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称      |说明|
 |:----------|:----------|
 | Authorization | Bearer {token}。必需。 |
@@ -96,7 +96,6 @@ GET https://graph.microsoft.com/beta/print/shares
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 269
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/shares",

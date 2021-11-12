@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 23d36f9cb3b14a1bf4f53e15623e47583d33e397
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5dd5469ee0d487ac458d8dff11596a774a5868ae
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147477"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942987"
 ---
 # <a name="list-teachers"></a>列出教师
 
@@ -18,7 +18,7 @@ ms.locfileid: "59147477"
 
 检索课程的教师列表。 委派令牌必须是课程的成员才能获取教师列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -88,7 +88,6 @@ GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/teachers
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 593
 
 {
   "value": [

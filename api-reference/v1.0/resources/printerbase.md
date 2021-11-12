@@ -2,26 +2,24 @@
 title: printerBase 资源类型
 description: 表示打印机和打印机共享的基本类型
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 12b611e73fab82d0ac1eafbdc19b26069ccfd94fa3806e4286da0f0c6516202b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9e770cd0dfdd29da549114ca5a688718e679855c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235371"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944982"
 ---
 # <a name="printerbase-resource-type"></a>printerBase 资源类型
 
 命名空间：microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 表示打印机和[printer 的基类型](printer.md)[Share](printerShare.md)实体类型。
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |capabilities|[printerCapabilities](printercapabilities.md)|printer/printerShare 的功能。|
 |defaults|[printerDefaults](printerdefaults.md)|printer/printerShare 的默认打印设置。|
@@ -34,7 +32,7 @@ ms.locfileid: "54235371"
 |status|[printerStatus](printerstatus.md)|printer/printerShare 的处理状态，包括任何错误。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|Description|
 |:---|:---|:---|
 |jobs|[printJob](printjob.md) 集合|由打印机/printerShare 排入打印队列的作业列表。|
 

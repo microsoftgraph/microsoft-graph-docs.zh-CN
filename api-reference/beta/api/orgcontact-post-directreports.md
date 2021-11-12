@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: bd0a154312aa55217ed3188bfa48206c51921adb
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: d79521b1f1f9b56c001d82d2942f5c0fafe49376
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60289894"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936619"
 ---
 # <a name="create-directreport"></a>创建 directReport
 
@@ -19,7 +19,7 @@ ms.locfileid: "60289894"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 使用此 API 创建新的 directReport。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -58,7 +58,6 @@ POST /contacts/{id}/directReports
 ```http
 POST https://graph.microsoft.com/beta/contacts/{id}/directReports
 Content-type: application/json
-Content-length: 30
 
 {
   "directoryObject": {
@@ -86,7 +85,6 @@ Content-length: 30
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 51
 
 {
   "directoryObject": {

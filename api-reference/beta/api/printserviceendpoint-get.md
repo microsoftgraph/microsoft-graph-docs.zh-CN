@@ -2,15 +2,15 @@
 title: 获取 printServiceEndpoint
 description: 检索打印服务终结点的属性和关系。
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 8e5e26d620d0285686859862c014cf1f2390659d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 58943059d9b643d51c73b12a030da5e7694b871f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053599"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60926544"
 ---
 # <a name="get-printserviceendpoint"></a>获取 printServiceEndpoint
 
@@ -20,7 +20,7 @@ ms.locfileid: "52053599"
 
 检索打印服务终结点的属性和关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 调用此 API 不需要任何权限，但若要使用通用打印服务，用户或应用的租户必须拥有活动的通用打印订阅。
 
 |权限类型 | 权限（从最低特权到最高特权） |
@@ -88,7 +88,6 @@ GET https://graph.microsoft.com/beta/print/services/{id}/endpoints/{name}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 260
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.printServiceEndpoint)",

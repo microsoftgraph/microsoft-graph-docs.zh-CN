@@ -2,31 +2,29 @@
 title: printerShare 资源类型
 description: 表示旨在供用户和打印应用程序发现的打印机。
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: ec674121a0d8785ee68b9939a10e42272924c5d1a2a1d6cd37b7a5a4c650cf26
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 52d3bc8adedd8f05c4cc4493df533d074ce19f58
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54218448"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944940"
 ---
 # <a name="printershare-resource-type"></a>printerShare 资源类型
 
 命名空间：microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 表示旨在供用户和打印应用程序发现的打印机。
 
 继承自 [printerBase](../resources/printerbase.md)。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|Description|
 |:---|:---|:---|
 | [List](../api/print-list-shares.md) | [printerShare](printershare.md) 集合 | 获取租户中打印机共享的列表。 |
-| [Get](../api/printershare-get.md) | [printerShare](printershare.md) | 读取 **printerShare** 对象的属性和关系。 |
+| [获取](../api/printershare-get.md) | [printerShare](printershare.md) | 读取 **printerShare** 对象的属性和关系。 |
 | [更新](../api/printershare-update.md) | [printerShare](printershare.md) | 更新 **printerShare** 对象。 |
 | [删除](../api/printershare-delete.md) | 无 | 取消共享打印机。 |
 | [列出作业](../api/printershare-list-jobs.md) | [printJob](printjob.md) 集合 | 获取等待 printerShare 处理的打印作业列表。 |
@@ -54,11 +52,11 @@ ms.locfileid: "54218448"
 |allowAllUsers|Boolean|如果为 true，将授予所有用户和组对此打印机共享的访问权限。 这将取代 **allowedUsers** 和 **allowedGroups** 导航属性定义的允许列表。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|Description|
 |:---|:---|:---|
 |打印机|[打印机](printer.md)|此打印机共享相关的打印机。 |
 |allowedUsers|[user](user.md) 集合|有权访问使用打印机打印的用户。|
-|allowedGroups|[组](group.md)|用户有权访问使用打印机打印的组。|
+|allowedGroups|[group](group.md)|用户有权访问使用打印机打印的组。|
 |jobs|[printJob](printjob.md) 集合| 由与此打印机共享关联的打印机排入打印队列的作业列表。|
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

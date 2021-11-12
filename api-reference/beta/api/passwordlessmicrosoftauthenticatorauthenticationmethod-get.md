@@ -2,27 +2,27 @@
 title: 获取 passwordlessMicrosoftAuthenticatorAuthenticationMethod
 description: 读取无密码MicrosoftAuthenticatorAuthenticationMethod 对象的属性和关系。
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c96a20eb7439367e2054213d92be08a609217c24
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: c15cdd534ffa1eda3857b0baf1bec6841a4f9112
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50962970"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60935639"
 ---
 # <a name="get-passwordlessmicrosoftauthenticatorauthenticationmethod-deprecated"></a>获取 passwordlessMicrosoftAuthenticatorAuthenticationMethod (弃) 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索用户的单个 Microsoft [Authenticator 无密码电话登录方法](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md) 对象。
+检索用户的单一密码[Microsoft Authenticator无电话登录方法](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md)对象。
 
 > [!CAUTION]
-> Microsoft Authenticator 无密码电话登录方法 API 已弃用，并且将于 2020 年 12 月 31 日停止返回结果。 请使用新的 [Microsoft Authenticator 身份验证方法](../resources/microsoftAuthenticatorAuthenticationMethod.md)。
+> The Microsoft Authenticator Passwordless 电话 Sign-in method API is deprecated and will stop returning results on December 31， 2020. 请使用新的身份验证[Microsoft Authenticator 方法](../resources/microsoftAuthenticatorAuthenticationMethod.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -117,7 +117,6 @@ GET https://graph.microsoft.com/beta/me/authentication/passwordlessMicrosoftAuth
 ``` http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 491
 
 {
   "value": {

@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 4669f627ac7d78e0090fa6c0977c979ad8e4a86a
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: bc489619c25b6bc58a60fe898f7e0275365ee5ac
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60693955"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943498"
 ---
 # <a name="reviewset-addtoreviewset"></a>reviewSet： addToReviewSet
 
@@ -18,9 +18,9 @@ ms.locfileid: "60693955"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-开始将集合从 Microsoft 365添加到审阅集的过程。 创建操作后，可以通过从响应标头中检索参数获取操作 `Location` 的状态。 该位置提供将返回 [caseExportOperation](../resources/ediscovery-caseexportoperation.md)的 URL。
+开始将集合从 Microsoft 365添加到审阅集的过程。 创建操作后，可以通过从响应标头中检索参数获取 `Location` 操作的状态。 该位置提供将返回 [caseExportOperation](../resources/ediscovery-caseexportoperation.md)的 URL。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -54,7 +54,7 @@ POST /compliance/ediscovery/cases/{caseId}/reviewSets/{reviewsetId}/addToReviewS
 
 下表显示了可用于此操作的参数。
 
-|参数|类型|说明|
+|参数|类型|Description|
 |:---|:---|:---|
 |sourceCollection|[microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md)|**sourceCollection 的** ID。|
 |additionalData|[microsoft.graph.ediscovery.dataCollectionScope](../resources/ediscovery-addtoreviewsetoperation.md#datacollectionscope-values)|集合 **中将包含的 dataCollectionScope。**|
@@ -78,7 +78,6 @@ POST /compliance/ediscovery/cases/{caseId}/reviewSets/{reviewsetId}/addToReviewS
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/080e8cad-f21f-4452-8826-0ddf7e949fdd/reviewSets/6fe25d32-8167-4625-b75c-c4181ccbd9d5/addToReviewSet
 Content-Type: application/json
-Content-length: 531
 
 {
     "sourceCollection": {

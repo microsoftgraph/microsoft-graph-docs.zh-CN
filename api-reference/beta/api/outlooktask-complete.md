@@ -1,16 +1,16 @@
 ---
 title: outlookTask：完成
-description: '完成Outlook **completedDateTime** 属性为当前日期的任务， '
-localization_priority: Normal
+description: '完成Outlook **completedDateTime** 属性为当前日期的一个任务， '
+ms.localizationpriority: medium
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 35ff88db1fb8cde5c84a6010fc6e33b81661c387
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 747d10e6f332d90a12e464f435a31830d08814b0
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055482"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60935814"
 ---
 # <a name="outlooktask-complete-deprecated"></a>outlookTask：完成 (弃) 
 
@@ -29,7 +29,7 @@ ms.locfileid: "52055482"
 
 默认情况下，此操作 (POST、GET 和 PATCH 任务) UTC 格式返回与日期相关的属性。 你可以使用 `Prefer: outlook.timezone` 标头将响应中的所有与日期相关的属性都表示为与 UTC 不同的时区。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -102,7 +102,7 @@ Prefer: outlook.timezone="Pacific Standard Time"
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。 **响应中的 completedDateTime** 和其他与日期相关的属性以 PST 表示。
+下面是一个响应示例。 响应 **中的 completedDateTime** 和其他与日期相关的属性以 PST 表示。
 
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
@@ -115,7 +115,6 @@ Prefer: outlook.timezone="Pacific Standard Time"
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 465
 
 {
   "value": [

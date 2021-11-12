@@ -5,19 +5,19 @@ author: lumine2008
 ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: a3eacdc28f471728bef3efd454e68ebc900f0c69
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9895478630646ddb0bd66b8f159254a246787b7f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59023001"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937508"
 ---
 # <a name="chartcollection-itemat"></a>ChartCollection: ItemAt
 
 命名空间：microsoft.graph
 
 根据其在集合中的位置获取图表。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -37,13 +37,13 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/itemAt
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | 持有者{令牌}。必需。 |
+| Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |index|Int32|要检索的对象的索引值。从零开始编制索引。|
 
@@ -67,7 +67,6 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/itemAt
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/itemAt
 Content-type: application/json
-Content-length: 20
 
 {
   "index": 8
@@ -94,7 +93,6 @@ Content-length: 20
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 52
 
 {
   "id": "id-value",

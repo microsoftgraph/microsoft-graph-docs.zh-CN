@@ -1,16 +1,16 @@
 ---
 title: page： copyToSection
 description: 将页面复制到特定节。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 665d244248c8af3a4ce3b5b01151d3debe196d92
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 5e69b9780d9ef08a426777946860a3a21d1e1a12
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52785233"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60935737"
 ---
 # <a name="page-copytosection"></a>page： copyToSection
 
@@ -22,7 +22,7 @@ ms.locfileid: "52785233"
 
 对于 Copy 操作，你可以遵循异步调用模式：首先调用 Copy 操作，然后轮询操作终结点的结果。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -46,14 +46,14 @@ POST /sites/{id}/onenote/pages/{id}/copyToSection
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供包含操作所需参数的 JSON 对象。
+在请求正文中，提供 JSON 对象，其中包含操作所需的参数。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |siteCollectionId|String|要复制到SharePoint网站的 ID。 仅在复制到网站时SharePoint使用。|
 |siteId|String|要复制到SharePoint Web 的 ID。 仅在复制到网站时SharePoint使用。|
 |groupId|String|要复制到的组的 ID。 仅在复制到组时Microsoft 365使用。|
-|id|String|必填。 目标节的 ID。|
+|id|String|必需。 目标节的 ID。|
 
 ## <a name="response"></a>响应
 
@@ -72,7 +72,6 @@ POST /sites/{id}/onenote/pages/{id}/copyToSection
 ```http
 POST https://graph.microsoft.com/beta/me/onenote/pages/{id}/copyToSection
 Content-type: application/json
-Content-length: 52
 
 {
   "id": "id-value",

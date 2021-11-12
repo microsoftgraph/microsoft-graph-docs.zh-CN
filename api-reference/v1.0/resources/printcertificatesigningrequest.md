@@ -1,27 +1,25 @@
 ---
 title: printCertificateSigningRequest 资源类型
-description: 证书签名请求 (CSR) 在通用打印服务注册打印机期间使用。
+description: 证书签名请求 (CSR) 在向通用打印服务注册打印机期间使用。
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 0c86e7a2ecbd164f40dcbb0865954c4549622f16aa1f2b008a392f150b626aa8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2136ae68a722242e8ad3b7f39743e20d7a54cfe7
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54129974"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944296"
 ---
 # <a name="printcertificatesigningrequest-resource-type"></a>printCertificateSigningRequest 资源类型
 
 命名空间：microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
-证书签名请求 (CSR) 在通用打印服务注册打印机期间使用。
+证书签名请求 (CSR) 在向通用打印服务注册打印机期间使用。
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |内容|String|base64 编码的 pkcs10 证书请求。 只读。|
 |transportKey|String|由客户端生成的非对称密钥的 base64 编码的公共部分。 只读。|

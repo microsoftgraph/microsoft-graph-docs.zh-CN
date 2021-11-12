@@ -2,15 +2,15 @@
 title: 获取 educationSynchronizationErrors
 description: '获取验证期间和/或同步租户中的特定学校数据同步配置文件期间生成的错误。 '
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 6bcf581d70d3c214bc18904d73ba5a69a1321824
-ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
+ms.openlocfilehash: e501ea913501a3f8c134e10d7f52525470b12372
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52971060"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60935947"
 ---
 # <a name="get-educationsynchronizationerrors"></a>获取 educationSynchronizationErrors
 
@@ -20,7 +20,7 @@ ms.locfileid: "52971060"
 
 获取验证期间和/或同步租户中的特定学校数据 [同步配置文件](../resources/educationsynchronizationprofile.md) 期间生成的错误。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -42,7 +42,7 @@ GET /education/synchronizationProfiles/{id}/errors
 
 此方法支持以下 [OData](/graph/query-parameters) 查询参数来帮助自定义响应：$filter、$orderby、$top、$skip 和 \$ count。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称          | 类型   | 说明               |
 | :------------ | :----- | :------------------------ |
@@ -103,7 +103,6 @@ GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/erro
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1568
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/synchronizationProfiles/{id}/errors",

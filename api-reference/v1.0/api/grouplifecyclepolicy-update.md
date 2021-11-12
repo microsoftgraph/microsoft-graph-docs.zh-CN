@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: fcfb2da1ade461016a375c7545cdb9e7f3bc125a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3aa5cd500b96c098d29edc502b0a8e186e64c2af
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59073952"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943715"
 ---
 # <a name="update-grouplifecyclepolicy"></a>更新 groupLifecyclePolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "59073952"
 
 更新 [groupLifecyclePolicy 资源类型](../resources/grouplifecyclepolicy.md)对象的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
  
@@ -43,7 +43,7 @@ PATCH /groupLifecyclePolicies/{id}
 
 在请求正文中，提供应更新的相关字段的值。 未添加到请求正文的现有属性要么保留旧值，要么根据其他属性值的更改重新计算。 为了实现最佳性能，不得添加未变化的现有值。
 
-| 属性 | 类型 | 说明 |
+| 属性 | 类型 | Description |
 |:---------------|:--------|:----------|
 |alternateNotificationEmails|String| 针对没有所有者的组向其发送通知的电子邮件地址列表。 可以用分号隔开电子邮件地址，从而定义多个电子邮件地址。 |
 |groupLifetimeInDays|Int32| 还剩多少天组就到期且需要续订。 续订后，组的有效期就会延长定义的天数。 |
@@ -65,7 +65,6 @@ PATCH /groupLifecyclePolicies/{id}
 ```http
 PATCH https://graph.microsoft.com/v1.0/groupLifecyclePolicies/{id}
 Content-type: application/json
-Content-length: 125
 
 {
   "groupLifetimeInDays": 180,
@@ -101,7 +100,6 @@ Content-length: 125
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 146
 
 {
   "id": "id-value",

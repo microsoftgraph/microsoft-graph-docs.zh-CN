@@ -5,12 +5,12 @@ author: lumine2008
 ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 7fcb8f22338bfda0ae0a7ecef7566dce7af8196c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 841df2e4f1be124279a2769ec1e054b3ab3ef970
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59129998"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944352"
 ---
 # <a name="workbook-createsession"></a>workbook：createSession
 
@@ -37,7 +37,7 @@ ms.locfileid: "59129998"
 
 此请求有时可能会收到 504 HTTP 错误。 此错误的适当响应做法是重复发出请求。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -78,7 +78,6 @@ POST /me/drive/root:/{item-path}:/workbook/createSession
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/createSession
 Content-type: application/json
-Content-length: 52
 
 {
   "persistChanges": true
@@ -112,7 +111,6 @@ Content-length: 52
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 52
 
 {
   "id": "id-value",

@@ -2,15 +2,15 @@
 title: 列出 assignmentCategories
 description: 检索类别对象的列表。
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: a930c83dbd2cb0331bef4865d29cd10a7e420f4c
-ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
+ms.openlocfilehash: 11a0087a3c120f8cc98d542bf90e4ed53a5a0ccc
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58366734"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936010"
 ---
 # <a name="list-assignmentcategories"></a>列出 assignmentCategories
 
@@ -20,7 +20,7 @@ ms.locfileid: "58366734"
 
 检索 [educationCategory 对象](../resources/educationcategory.md) 的列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -107,7 +107,6 @@ GET https://graph.microsoft.com/beta/education/classes/4797d052-ebf5-4018-a088-e
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 218
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/education/classes('4797d052-ebf5-4018-a088-e11adc6b2cbb')/assignmentCategories",

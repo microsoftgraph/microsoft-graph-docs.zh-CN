@@ -2,15 +2,15 @@
 title: 列出域
 description: 检索 domain 对象的列表。
 author: adimitui
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 6eeddc00a62efaa9b6432afe3d474b2f1019dfe6
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 0457791edb52bb3f19174048dccc36d7450cf456
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52046375"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937921"
 ---
 # <a name="list-domains"></a>列出域
 
@@ -20,12 +20,12 @@ ms.locfileid: "52046375"
 
 检索 domain 对象的列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.Read.All    |
+|委派（工作或学校帐户） | Domain.Read.All、Domain.ReadWrite.All、Directory.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Domain.Read.All、Domain.ReadWrite.All、Directory.Read.All |
 
@@ -90,7 +90,6 @@ GET https://graph.microsoft.com/beta/domains
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 245
 
 {
   "value": [

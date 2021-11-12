@@ -1,16 +1,16 @@
 ---
 title: 列出 memberOf
 description: 列出此组织其他联系人是其中一个成员的组。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5eec725428c80c79ef15e195c9d9459a9b97571d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 47959a7f38c051f876832133ef26343b449cda61
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52039256"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941751"
 ---
 # <a name="list-memberof"></a>列出 memberOf
 
@@ -18,7 +18,7 @@ ms.locfileid: "52039256"
 
 列出此组织 [联系人是](../resources/orgcontact.md) 其中一个成员的组。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -37,7 +37,7 @@ GET /contacts/{id}/memberOf
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](/graph/query-parameters) `$select` 来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 标头       | 值 |
 |:-----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
@@ -92,7 +92,6 @@ GET https://graph.microsoft.com/v1.0/contacts/{id}/memberOf
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 155
 
 {
   "value": [

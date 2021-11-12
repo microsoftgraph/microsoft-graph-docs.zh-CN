@@ -2,15 +2,15 @@
 title: 创建 plannerRoster
 description: 创建新的 plannerRoster 对象。
 author: tarkansevilmis
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 153a88951943ce1a66d73ee26be289eaae7631f0
-ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
+ms.openlocfilehash: 53a103a04dd899ce8b79911aadf09809694c6903
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50272004"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936511"
 ---
 # <a name="create-plannerroster"></a>创建 plannerRoster
 命名空间：microsoft.graph
@@ -47,11 +47,11 @@ POST /planner/rosters
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [plannerRoster](../resources/plannerroster.md) 对象的 JSON 表示形式。
 
-plannerRoster 上没有可 [写属性](../resources/plannerroster.md)。
+[plannerRoster 上没有可写属性](../resources/plannerroster.md)。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `201 Created` [plannerRoster](../resources/plannerroster.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [plannerRoster](../resources/plannerroster.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -66,7 +66,6 @@ plannerRoster 上没有可 [写属性](../resources/plannerroster.md)。
 ``` http
 POST https://graph.microsoft.com/beta/planner/rosters
 Content-Type: application/json
-Content-length: 55
 
 {
   "@odata.type": "#microsoft.graph.plannerRoster"
