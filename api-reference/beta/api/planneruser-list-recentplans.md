@@ -2,15 +2,15 @@
 title: 列出 recentPlans
 description: 检索用户最近查看的 plannerPlans 列表。 可以通过更新 plannerUser 资源来更新最近查看的计划。
 author: TarkanSevilmis
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 30409a99c089d490398b433b9bcd280240455ba8
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: f1a2f193c38b49392837e1c8b48a015063205a99
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049938"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946690"
 ---
 # <a name="list-recentplans"></a>列出 recentPlans
 
@@ -18,8 +18,8 @@ ms.locfileid: "52049938"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索用户最近查看的 [plannerPlans](../resources/plannerplan.md) 列表。 可以通过更新 [plannerUser](planneruser-update.md)资源 来更新最近查看的计划。
-## <a name="permissions"></a>权限
+检索用户最近查看 [的 plannerPlans](../resources/plannerplan.md) 列表。 可以通过更新 [plannerUser](planneruser-update.md)资源 来更新最近查看的计划。
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -88,7 +88,6 @@ GET https://graph.microsoft.com/beta/me/planner/recentPlans
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 979
 
 {
   "value": [

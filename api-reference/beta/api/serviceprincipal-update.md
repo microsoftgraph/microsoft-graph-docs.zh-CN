@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
-ms.openlocfilehash: c00d84d496fdd65fd071679641eb99360ed46bed
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 9160d3737adac706c556bde02e0e1cd67b0df7a3
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695929"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944660"
 ---
 # <a name="update-serviceprincipal"></a>更新 servicePrincipal
 
@@ -87,7 +87,6 @@ PATCH /servicePrincipals/{id}
 ```http
 PATCH https://graph.microsoft.com/beta/servicePrincipals/{id}
 Content-type: application/json
-Content-length: 391
 
 {
   "appRoleAssignmentRequired": true

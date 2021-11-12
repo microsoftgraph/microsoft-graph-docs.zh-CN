@@ -2,15 +2,15 @@
 title: 列出 scopedRoleMembers
 description: 检索 scopedRoleMembership 资源的列表。
 author: DougKirschner
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 03dac66e6b3b20d34d9081f7b0a41d6111a4fdcf
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: c41cfdafe9ec18321d42c89d646a6c6227e20044
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52991972"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940020"
 ---
 # <a name="list-scopedrolemembers"></a>列出 scopedRoleMembers
 
@@ -19,7 +19,7 @@ ms.locfileid: "52991972"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索 [scopedRoleMembership 资源](../resources/scopedrolemembership.md) 的列表。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -89,7 +89,6 @@ GET https://graph.microsoft.com/beta/administrativeUnits/{id}/scopedRoleMembers
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 307
 
 {
   "value": [

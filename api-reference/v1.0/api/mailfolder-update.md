@@ -5,19 +5,19 @@ author: abheek-das
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: cef4a624828884ed8f6b094d9b34fb8e88b84335
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1e973fcf9e338abcd97318f9ab1ddf1e1cb7e73c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59026257"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60931469"
 ---
 # <a name="update-mailfolder"></a>更新 MailFolder
 
 命名空间：microsoft.graph
 
 更新 mailfolder 对象的属性。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -60,7 +60,6 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/mailFolders/{id}
 Content-type: application/json
-Content-length: 159
 
 {
   "displayName": "displayName-value",
@@ -94,7 +93,6 @@ Content-length: 159
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 179
 
 {
   "displayName": "displayName-value",

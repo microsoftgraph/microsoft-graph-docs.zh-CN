@@ -5,12 +5,12 @@ author: braedenp-msft
 ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 3529fb345c9c322c3e63c2519f2f6e15cfc75525
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b5db43838c259c3c7807d407edec067a3db12a6a
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "60560819"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939348"
 ---
 # <a name="update-printsettings"></a>更新 printSettings
 
@@ -20,7 +20,7 @@ ms.locfileid: "60560819"
 
 更新通用打印服务的租户范围设置。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 若要使用通用打印服务，除了下表中列出的权限之外，用户或应用的租户还必须具有活动的通用打印订阅。 登录的用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
@@ -29,7 +29,7 @@ ms.locfileid: "60560819"
 |:---------------|:--------------------------------------------|
 |委派（工作或学校帐户）| PrintSettings.ReadWrite.All |
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -46,9 +46,9 @@ PATCH /print/settings
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关 [printSettings](../resources/printsettings.md) 字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性     | 类型        | 说明 |
+| 属性     | 类型        | Description |
 |:-------------|:------------|:------------|
-|documentConversionEnabled|布尔值|指定是否对租户启用文档转换。 如果启用文档转换，通用打印服务将自动将文档转换为与打印机模式兼容的格式 (例如，XPS 转换为 PDF) 时。|
+|documentConversionEnabled|Boolean|指定是否对租户启用文档转换。 如果启用文档转换，通用打印服务将自动将文档转换为与打印机模式兼容的格式 (例如，XPS 转换为 PDF) 时。|
 
 ## <a name="response"></a>响应
 如果成功，此方法将返回 `204 No Content` 响应代码和空响应正文。
@@ -95,7 +95,6 @@ Content-type: application/json
 } -->
 ```http
 HTTP/1.1 204 NoContent
-Content-length: 0
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

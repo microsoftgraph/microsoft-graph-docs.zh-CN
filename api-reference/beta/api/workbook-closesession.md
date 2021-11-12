@@ -5,12 +5,12 @@ author: lumine2008
 ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: eac001d9fabfbd62e95ee623252158077b57fe58
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f671ce1d927a1a9bbf475de4ed6252335f184965
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59115917"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945255"
 ---
 # <a name="close-session"></a>关闭会话
 
@@ -18,7 +18,7 @@ ms.locfileid: "59115917"
 
 使用此 API 关闭现有的工作簿会话。 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -60,7 +60,6 @@ workbook-session-id: {session-id}
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/closeSession
 Content-type: application/json
 workbook-session-id: {session-id}
-Content-length: 0
 
 {
 

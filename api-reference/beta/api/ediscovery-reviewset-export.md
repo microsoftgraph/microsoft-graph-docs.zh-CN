@@ -2,15 +2,15 @@
 title: reviewSet： export
 description: 从 reviewSet 启动导出。
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 2620f72eced3bc9f5c6fb02e5e034a6116af5f2c
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: dde236b960cc13eb8d07cee1a69f11eca6b1281c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50772855"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943491"
 ---
 # <a name="reviewset-export"></a>reviewSet： export
 
@@ -18,9 +18,9 @@ ms.locfileid: "50772855"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从 **reviewSet 中启动导出**。  有关详细信息，请参阅在高级电子数据展示 [中从审阅集导出文档](/microsoft-365/compliance/export-documents-from-review-set)。
+从 **reviewSet 中启动导出**。  有关详细信息，请参阅从文档[审阅集导出Advanced eDiscovery。](/microsoft-365/compliance/export-documents-from-review-set)
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "50772855"
 |:---|:---|
 |委派（工作或学校帐户）|eDiscovery.Read.All、eDiscovery.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -54,12 +54,12 @@ POST /compliance/ediscovery/cases/{caseId}/reviewsets/{reviewsetId}/export
 
 下表显示了可用于此操作的参数。
 
-|参数|类型|说明|
+|参数|类型|Description|
 |:---|:---|:---|
-|outputName|字符串| 导出的名称。 必需。 |
-|description|字符串| 导出说明 |
-|azureBlobContainer|字符串| 导出到你自己的 Azure 存储帐户时，这是容器 URL。 |
-|azureBlobToken|字符串| 导出到你自己的 Azure 存储帐户时，容器 URL 的 SAS 令牌。 |
+|outputName|String| 导出的名称。 必需。 |
+|description|String| 导出说明 |
+|azureBlobContainer|String| 导出到你自己的 Azure 存储帐户时，这是容器 URL。 |
+|azureBlobToken|String| 导出到你自己的 Azure 存储帐户时，容器 URL 的 SAS 令牌。 |
 |exportOptions| [microsoft.graph.ediscovery.exportOptions](../resources/ediscovery-caseexportoperation.md#exportoptions-values) |指定控制导出格式的选项。 可取值为：`originalFiles`、`text`、`pdfReplacement`、`fileInfo`、`tags`。|
 |exportStructure|[microsoft.graph.ediscovery.exportFileStructure](../resources/ediscovery-caseexportoperation.md#exportfilestructure-values)| 控制导出的文件结构和打包的选项。 可取值为：`none`、`directory`、`pst`。|
 
@@ -82,7 +82,6 @@ POST /compliance/ediscovery/cases/{caseId}/reviewsets/{reviewsetId}/export
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/99e865fc-e29f-479a-ba83-9e58eb017103/reviewsets/e44ac2cb-f8b4-4fd8-aa1c-1391b46ba9cc/export
 Content-Type: application/json
-Content-length: 186
 
 {
   "outputName": "2020-12-06 Contoso investigation export",

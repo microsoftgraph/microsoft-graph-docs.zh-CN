@@ -1,16 +1,16 @@
 ---
 title: 将文件上传到 educationSynchronizationProfile 后开始同步
 description: 验证上传到租户中特定学校数据同步配置文件的文件。 如果验证成功，将在配置文件上启动同步。 否则，响应将包含错误和警告。 如果响应包含错误，将不会启动同步。 如果响应仅包含警告，将启动同步。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 2150fd1e54cdb4d5afa2ecbd9a451104d00f2a38
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 01dbba5e593f0710a0c399ff168a772bc41051fe
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52664718"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945612"
 ---
 # <a name="start-sync-after-uploading-files-to-an-educationsynchronizationprofile"></a>将文件上传到 educationSynchronizationProfile 后开始同步
 
@@ -22,7 +22,7 @@ ms.locfileid: "52664718"
 
 > **注意：** 仅在数据提供程序的类型为 [educationcsvdataprovider 时使用此方法](../resources/educationcsvdataprovider.md)。 此外，需要设置配置文件的状态属性，然后才能启动它。 轮询配置文件对象以检查其状态属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限 |
@@ -92,7 +92,6 @@ POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/sta
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 2105
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/Collection(microsoft.graph.verificationMessage)",

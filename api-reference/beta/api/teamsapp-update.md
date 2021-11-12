@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c33d540e8fb2ea26fd8e65cd0c6bc606c6af2d26
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: b53266a5bc129d54081cf86f0be03b97fa6c7154
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60290272"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60926103"
 ---
 # <a name="update-teamsapp"></a>更新 teamsApp
 
@@ -20,9 +20,9 @@ ms.locfileid: "60290272"
 
 更新[之前发布到](../resources/teamsapp.md)应用程序Microsoft Teams的应用程序。 若要更新应用， **必须将应用的 distributionMethod** 属性设置为 `organization` 。
 
-此 API 专门更新已发布到组织的应用程序目录的应用程序 (租户应用程序目录) 。  
+此 API 专门更新发布到组织的应用程序目录的应用程序目录 (租户应用程序目录) 。  
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -46,11 +46,11 @@ POST /appCatalogs/teamsApps/{id}/appDefinitions
 
 ## <a name="query-parameters"></a>查询参数
 
-|属性|类型|说明|
+|属性|类型|Description|
 |----|----|----|
-|requiresReview| 布尔值 | 此可选查询参数将触发应用评审过程。 具有管理员权限的用户无需触发审查即可提交应用。 如果用户想要在发布之前请求审阅，则必须将 设置为  `requiresReview` `true` 。 具有管理员权限的用户可以选择不设置或将值设置为 ，应用将被视为已批准， `requiresReview` `false`  并且将立即发布。|
+|requiresReview| Boolean | 此可选查询参数将触发应用评审过程。 具有管理员权限的用户无需触发审查即可提交应用。 如果用户想要在发布之前请求审阅，则必须将 设置为  `requiresReview` `true` 。 具有管理员权限的用户可以选择不设置或将值设置为 ，应用将被视为已批准， `requiresReview` `false`  并且将立即发布。|
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 标头        | 值           |
 |:--------------|:--------------  |
@@ -78,7 +78,6 @@ POST /appCatalogs/teamsApps/{id}/appDefinitions
 ```http
 POST https://graph.microsoft.com/beta/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8/appDefinitions
 Content-type: application/zip
-Content-length: 244
 
 [Zip file containing a Teams app package]
 ```
@@ -105,7 +104,6 @@ Content-length: 244
 ```http
 POST https://graph.microsoft.com/beta/appCatalogs/teamsApps/e3e29acb-8c79-412b-b746-e6c39ff4cd22/appDefinitions?requiresReview=true
 Content-type: application/zip
-Content-length: 244
 
 [Zip file containing a Teams app package]
 ```

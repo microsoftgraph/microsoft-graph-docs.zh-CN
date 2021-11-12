@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dhanyahk
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 7f463e10e66f2f447707dbf4e34dcb74ec622d56
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: 381183ff83900961f79aeb900324e3df90c60494
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60730065"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942476"
 ---
 # <a name="get-applicationsignindetailedsummary"></a>获取 applicationSignInDetailedSummary
 
@@ -20,7 +20,7 @@ ms.locfileid: "60730065"
 
 检索 [applicationSignInDetailSummary 对象的属性和](../resources/applicationsignindetailedsummary.md) 关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
@@ -39,7 +39,7 @@ GET /reports/applicationSignInDetailedSummary/{id}
 
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称      |说明|
 |:----------|:----------|
@@ -95,7 +95,6 @@ GET https://graph.microsoft.com/beta/reports/applicationSignInDetailedSummary/{i
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 295
 
 {
   "id": "id-value",

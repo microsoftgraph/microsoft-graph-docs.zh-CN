@@ -2,15 +2,15 @@
 title: 获取 calendarGroup
 description: 检索 calendargroup 对象的属性和关系。
 author: harini84
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7288e5e96c4a32464d6e8a2574cd356f26d5c462
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3f20e02224370c99b00185d4779f501a9e46a03c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047712"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938019"
 ---
 # <a name="get-calendargroup"></a>获取 calendarGroup
 
@@ -20,7 +20,7 @@ ms.locfileid: "52047712"
 
 检索 calendargroup 对象的属性和关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -96,7 +96,7 @@ GET https://graph.microsoft.com/beta/me/calendarGroups/{id}
 
 ##### <a name="response"></a>响应
 
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -107,7 +107,6 @@ GET https://graph.microsoft.com/beta/me/calendarGroups/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 110
 
 {
   "name": "name-value",

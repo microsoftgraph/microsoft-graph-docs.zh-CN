@@ -5,12 +5,12 @@ author: abheek-das
 ms.localizationpriority: high
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c125f105ac97b297fd49c2ef422fea077f0ff0d8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 071492a0b9b32d1cddcb3bee22c8f08e5b685e91
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59073007"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60931452"
 ---
 # <a name="update-message"></a>更新邮件
 
@@ -51,7 +51,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 |flag|[followupFlag](../resources/followupflag.md)|指示邮件的状态、开始日期、截止日期或完成日期的标志值。|
 |发件人|收件人|邮箱所有者和邮件发件人。 必须对应于使用的实际邮箱。|
 |importance|String|邮件的重要性。 可能的值包括 `Low`、`Normal`、`High`。|
-|inferenceClassification | String | 根据推导出的相关性或重要性或根据显式重写，对用户邮件的分类。 可能的值为：`focused` 或 `other`。 |
+|inferenceClassification | String | 根据推导出的相关性或重要性或根据显式重写，对用户邮件的分类。可能的值是：`focused` 或 `other`。 |
 |internetMessageId |String |由 [RFC2822](https://www.ietf.org/rfc/rfc2822.txt) 指定格式的邮件 ID。仅当 isDraft = true 时可以更新。|
 |isDeliveryReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
 |isRead|Boolean|指示是否已阅读该邮件。|
@@ -80,7 +80,6 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/messages/{id}
 Content-type: application/json
-Content-length: 248
 
 {
   "subject": "subject-value",
@@ -115,7 +114,6 @@ Content-length: 248
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 248
 
 {
   "receivedDateTime": "datetime-value",

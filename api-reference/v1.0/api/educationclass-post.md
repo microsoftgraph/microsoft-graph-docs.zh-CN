@@ -5,12 +5,12 @@ author: mlafleur
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: db8cedc35b48478edd58a9beb2e29d742c4b5cb2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 38ab75a0a539088c4e1d1b67380875276dba47dd
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147435"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937347"
 ---
 # <a name="create-educationclass"></a>创建 educationClass
 
@@ -21,7 +21,7 @@ ms.locfileid: "59147435"
 > [!NOTE]
 > 此操作还会创建通用组。 使用此 API 创建课程时，它会向组添加特殊属性，这将在使用组创建团队时在 Microsoft Teams 中添加分配和特殊处理等功能。 请注意，此 API 仅创建通用组，不会创建团队。 Microsoft Teams为教师提供了用户界面，以使用此 API 创建的组创建自己的班级团队。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -60,7 +60,7 @@ POST /education/classes
 | id                   | String                                         | 对象标识符。 继承自 [实体](../resources/entity.md) |
 | displayName          | String                                         | 课程名称。                                                 |
 | mailNickname         | String                                         | 向所有成员发送电子邮件的邮件名称（如果已启用）。    |
-| 说明          | String                                         | 课程说明。                                          |
+| description          | String                                         | 课程说明。                                          |
 | createdBy            | [identitySet](../resources/identityset.md)     | 创建了课程的实体                                       |
 | classCode            | String                                         | 学校用于标识课程的课程代码。               |
 | externalName         | String                                         | 同步系统中的课程名称。                           |
@@ -89,7 +89,6 @@ POST /education/classes
 ```http
 POST https://graph.microsoft.com/v1.0/education/classes
 Content-Type: application/json
-Content-length: 533
 
 {
   "@odata.type": "#microsoft.graph.educationClass",

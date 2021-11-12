@@ -1,23 +1,23 @@
 ---
 title: synchronization： acquireAccessToken
-description: 获取 OAuth 访问令牌以授权 Azure AD 预配服务将用户预配到应用程序中
+description: 获取 OAuth 访问令牌以授权Azure AD预配服务以将用户预配到应用程序中
 author: ArvindHarinder1
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: e3fd33635fe7a3bc3faed116705583c5a6c299a9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: eaf8e7f43d7ab8afee239e88a52a6f286e626bf2
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59040993"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947131"
 ---
 # <a name="acquireaccesstoken"></a>acquireAccessToken
 命名空间：microsoft.graph
 
-获取 OAuth 访问令牌，以授权 Azure AD 预配服务将用户预配到应用程序中。
+获取 OAuth 访问令牌，以授权Azure AD预配服务将用户预配到应用程序中。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -48,7 +48,7 @@ POST /servicePrincipals/{servicePrincipalsId}/synchronization/acquireAccessToken
 
 下表显示了可用于此操作的参数。
 
-|参数|类型|说明|
+|参数|类型|Description|
 |:---|:---|:---|
 |credentials|[synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md) 集合|表示单个密码值。|
 
@@ -71,7 +71,6 @@ POST /servicePrincipals/{servicePrincipalsId}/synchronization/acquireAccessToken
 ``` http
 POST https://graph.microsoft.com/beta/applications/{applicationsId}/synchronization/acquireAccessToken
 Content-Type: application/json
-Content-length: 123
 
 {
   "credentials": [

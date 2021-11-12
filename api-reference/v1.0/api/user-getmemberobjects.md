@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 03837d79ff7ec6c1182bb75912353cb93b89491e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f62fab1a7e522322c6fa888fa4673f1229904e69
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59021867"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924233"
 ---
 # <a name="user-getmemberobjects"></a>user: getMemberObjects
 
@@ -61,7 +61,6 @@ POST /users/{id | userPrincipalName}/getMemberObjects
 ```http
 POST https://graph.microsoft.com/v1.0/me/getMemberObjects
 Content-type: application/json
-Content-length: 33
 
 {
   "securityEnabledOnly": true
@@ -97,7 +96,6 @@ Content-length: 33
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 39
 
 {
   "value": [

@@ -2,15 +2,15 @@
 title: 获取对话线程
 description: 获取 thread 对象。
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 7479271d972b36d2408517250038a0c359846f8c
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 36321991b9bb1a1bb79a0a35b64e4ba62f8493f3
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681681"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945542"
 ---
 # <a name="get-conversation-thread"></a>获取对话线程
 
@@ -20,7 +20,7 @@ ms.locfileid: "52681681"
 
 获取 [thread](../resources/conversationthread.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -92,7 +92,6 @@ GET https://graph.microsoft.com/beta/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 655
 
 {
     "id": "AAQkAGI5MWY5ZmUyLTJiNzYtNDE0ZC04OWEwLWM3M2FjYmM3NzNlZgMkABAAG5c7eC4NYEynIoXsuxXB9RAAG5c7eC4NYEynIoXsuxXB9Q==",

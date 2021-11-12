@@ -5,12 +5,12 @@ author: harini84
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3cb56c0edbf845fb5a91ff92840c82800d31bcbc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 52e75a8e10deb89a446bbd0d3bb66b6a1c0077f6
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59016622"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60931758"
 ---
 # <a name="event-forward"></a>event： forward
 
@@ -18,9 +18,9 @@ ms.locfileid: "59016622"
 
 此操作允许会议事件的组织者或与会者将会议请求[](../resources/event.md)转发给新收件人。 
 
-如果会议事件从与会者的 Microsoft 365 邮箱转发到另一个收件人，此操作还会发送一条消息，通知组织者转发，并将该收件人添加到组织者的会议事件副本中。 从 Outlook.com 帐户转发时，这种便利不可用。
+如果会议事件从与会者的 Microsoft 365 邮箱转发到另一个收件人，此操作还会发送一条消息以通知组织者转发，并将该收件人添加到组织者的会议事件副本中。 从 Outlook.com 帐户转发时，此便利不可用。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -55,7 +55,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |评论|字符串|要包含的注释。可以为空字符串。|
 |ToRecipients|[recipient](../resources/recipient.md) collection|将事件转发到的收件人列表。|
@@ -78,7 +78,6 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ```http
 POST https://graph.microsoft.com/v1.0/me/events/{id}/forward
 Content-type: application/json
-Content-length: 56
 
 {
   "ToRecipients":[

@@ -2,24 +2,22 @@
 title: 为 printerShare 创建 allowedGroup
 description: 授予指定的组访问权限，以将打印作业提交到关联的打印机。
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: a6a5e2cb69c2ee9ee65ef012108d001312666a74
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 7d54bac8e7f8f1767dfc36b419b39affdf1c2eb5
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787784"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937172"
 ---
 # <a name="create-allowedgroup-for-printershare"></a>为 printerShare 创建 allowedGroup
 命名空间：microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 向指定的组授予将打印作业提交到关联的 [printerShare 的权限](../resources/printershare.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 若要使用通用打印服务，除了下表中列出的权限之外，用户或应用的租户还必须具有活动的通用打印订阅。 登录的用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
@@ -66,7 +64,6 @@ POST /print/printers/{printerId}/shares/{printerShareId}/allowedGroups/$ref
 ``` http
 POST https://graph.microsoft.com/v1.0/print/shares/{printerShareId}/allowedGroups/$ref
 Content-Type: application/json
-Content-length: 47
 
 {
   "@odata.id": "https://graph.microsoft.com/v1.0/groups/{groupId}"

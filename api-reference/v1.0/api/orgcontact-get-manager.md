@@ -1,16 +1,16 @@
 ---
 title: 获取管理器
 description: 获取此组织联系人的经理。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 0a99bfc16c6380093d8e13930f8b6801ef86ce02
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 417b77f5cbd9a063b3e6b267c16913cca08f538a
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50943485"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938187"
 ---
 # <a name="get-manager"></a>获取管理器
 
@@ -18,7 +18,7 @@ ms.locfileid: "50943485"
 
 获取此组织联系人的经理。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -38,9 +38,9 @@ GET /contacts/{id}/manager
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 `$select` [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法支持使用 `$select` [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 标头       | 值 |
 |:-----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
@@ -97,7 +97,6 @@ GET https://graph.microsoft.com/v1.0/contacts/{id}/manager
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 455
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryObjects/$entity",

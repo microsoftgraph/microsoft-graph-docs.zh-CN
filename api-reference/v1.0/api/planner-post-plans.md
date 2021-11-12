@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: d307959eabe35ce86deebb4fbd06e9927f0576f2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0d77b27e7ccca1a82326c202000000225c047806
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59104903"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946487"
 ---
 # <a name="create-plannerplan"></a>创建 plannerPlan
 
@@ -18,7 +18,7 @@ ms.locfileid: "59104903"
 
 使用此 API 新建 **plannerPlan**。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -69,7 +69,6 @@ POST /planner/plans
 ``` http
 POST https://graph.microsoft.com/v1.0/planner/plans
 Content-type: application/json
-Content-length: 381
 
 {
   "owner": "ebf3b108-5234-4e22-b93d-656d7dae5874",
@@ -109,7 +108,6 @@ Content-length: 381
 ``` http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 357
 
 {
   "createdBy": {

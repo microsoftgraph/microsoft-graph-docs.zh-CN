@@ -2,24 +2,24 @@
 title: 更新集
 description: 更新 set 对象的属性。
 author: mohitpcad
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: fe2b221bc6e6852af5d8aadcf283e851e1c47872
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 90c9846b101679c117d9d9860dcb4104f6b44d46
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872056"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944591"
 ---
 # <a name="update-set"></a>更新集
 命名空间：microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 set [对象的属性](../resources/termstore-set.md) 。
+更新 [set 对象](../resources/termstore-set.md) 的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -54,14 +54,14 @@ PATCH /termStore/sets/{setId}
 |属性|类型|Description|
 |:---|:---|:---|
 |localizedNames|[microsoft.graph.termStore.localizedName](../resources/termstore-localizedname.md) 集合|集合的名称|
-|说明|String|集的说明|
-|properties|[microsoft.graph.keyValue](../resources/keyvalue.md) 集合|集合的属性|
+|description|String|集的说明|
+|properties|[microsoft.graph.keyValue](../resources/keyvalue.md) 集合|属性集|
 
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回响应代码和更新的 [set](../resources/termstore-set.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和更新的 [set](../resources/termstore-set.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -76,7 +76,6 @@ PATCH /termStore/sets/{setId}
 ``` http
 PATCH https://graph.microsoft.com/beta/termStore/sets/{setId}
 Content-Type: application/json
-Content-length: 288
 
 {
   "description": "mySet"

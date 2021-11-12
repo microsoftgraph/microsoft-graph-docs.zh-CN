@@ -5,12 +5,12 @@ author: akumar39
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: de1744c5b0570f8bb2833190522acef894a0093f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6aa32908337a4178ebc0620088f6a3b30e788b62
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59104647"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946942"
 ---
 # <a name="replace-timeoff"></a>替换 timeOff
 
@@ -20,7 +20,7 @@ ms.locfileid: "59104647"
 
 如果指定的 [timeOff](../resources/timeoff.md) 对象不存在，此方法将返回 `404 Not found` 。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -123,7 +123,6 @@ Prefer: return=representation
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 401
 
 {
   "userId": "c5d0c76b-80c4-481c-be50-923cd8d680a1",

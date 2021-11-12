@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: f6f6564f4fcbde6e7d6dc026a8fc269a51d1ce7b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9741859b975cd0385eb640a704e70a6d6f4aa0b8
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59007822"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937221"
 ---
 # <a name="list-buckets"></a>列出存储桶
 
@@ -18,7 +18,7 @@ ms.locfileid: "59007822"
 
 检索 **plannerbucket** 对象的列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -35,7 +35,7 @@ GET /planner/buckets
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法要求指定 planId [筛选器](/graph/query-parameters)。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
@@ -89,7 +89,6 @@ GET https://graph.microsoft.com/v1.0/planner/buckets
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 251
 
 {
   "value": [

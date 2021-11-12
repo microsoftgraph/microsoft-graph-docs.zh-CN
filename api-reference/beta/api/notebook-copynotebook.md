@@ -1,16 +1,16 @@
 ---
 title: notebook： copyNotebook
 description: 将笔记本复制到目标文档库中的笔记本文件夹。 如果文件夹不存在，则创建该文件夹。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 6f22838e9af2103f83f2c065e1376f931152fc2e
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: cc472fc6dec08ffaa8be7890755ff0cf190ab40f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786129"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938732"
 ---
 # <a name="notebook-copynotebook"></a>notebook： copyNotebook
 
@@ -22,7 +22,7 @@ ms.locfileid: "52786129"
 
 对于 Copy 操作，你可以遵循异步调用模式：首先调用 Copy 操作，然后轮询操作终结点的结果。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -46,9 +46,9 @@ POST /sites/{id}/onenote/notebooks/{id}/copyNotebook
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供包含操作所需参数的 JSON 对象。 如果不需要，可以发送空正文。
+在请求正文中，提供 JSON 对象，其中包含操作所需的参数。 如果不需要，可以发送空正文。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |siteCollectionId|String|要复制到SharePoint网站的 ID。 仅在复制到网站时SharePoint使用。|
 |siteId|String|要复制到SharePoint Web 的 ID。 仅在复制到网站时SharePoint使用。|
@@ -72,7 +72,6 @@ POST /sites/{id}/onenote/notebooks/{id}/copyNotebook
 ```http
 POST https://graph.microsoft.com/beta/me/onenote/notebooks/{id}/copyNotebook
 Content-type: application/json
-Content-length: 108
 
 {
   "groupId": "groupId-value",

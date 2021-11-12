@@ -2,15 +2,15 @@
 title: 更新 printJob
 description: 更新打印作业的配置。
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 6405acd01be075c44c4271c4c3395a83889f9d0e
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: ee4449e701aa8458a3318cc6c8b24ca1859cd1f3
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50777683"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943197"
 ---
 # <a name="update-printjob"></a>更新 printJob
 
@@ -22,7 +22,7 @@ ms.locfileid: "50777683"
 
 只有在状态为（由请求应用创建的触发器启动）的 [printTask](../resources/printTask.md) 与打印作业关联时，更新打印作业才能 `processing` 成功。 若要详细了解如何注册任务触发器，请参阅 [扩展通用打印以支持拉取打印](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅（Printer.Read.All 或 Printer.ReadWrite.All 应用程序权限）以及下表中列出的权限之一。
@@ -31,7 +31,7 @@ ms.locfileid: "50777683"
 |:---------------|:--------------------------------------------|
 |委派（工作或学校帐户）| 不支持。 |
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application| PrintJob.ReadWriteBasic.All、PrintJob.ReadWrite.All、PrintJob.Manage.All |
+|应用程序| PrintJob.ReadWriteBasic.All、PrintJob.ReadWrite.All、PrintJob.Manage.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -127,7 +127,6 @@ PATCH https://graph.microsoft.com/beta/print/printers/d5ef6ec4-07ca-4212-baf9-d4
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 225
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('d5ef6ec4-07ca-4212-baf9-d45be126bfbb')/jobs/$entity",

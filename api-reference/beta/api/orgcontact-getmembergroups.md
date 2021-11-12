@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: adimitui
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 005baa748f4c091609b05dffcd492578bb1de6e8
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: 727510794062e5aba33c432764650807f8083601
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60289985"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939474"
 ---
 # <a name="orgcontact-getmembergroups"></a>orgContact： getMemberGroups
 
@@ -18,7 +18,7 @@ ms.locfileid: "60289985"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -62,7 +62,6 @@ POST /contacts/{id}/getMemberGroups
 ```http
 POST https://graph.microsoft.com/beta/contacts/{id}/getMemberGroups
 Content-type: application/json
-Content-length: 33
 
 {
   "securityEnabledOnly": true
@@ -98,7 +97,6 @@ Content-length: 33
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 39
 
 {
   "value": [

@@ -2,22 +2,22 @@
 title: 更新 todoTask
 description: 更新 todoTask 对象的属性。
 author: avijityadav
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ffc7d5c90d2ec88638e35456ff74a2c48e3f1dc4
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: bd02da1b75064df8ad82d10e7ddd75466e21c896
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873932"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943071"
 ---
 # <a name="update-todotask"></a>更新 todoTask
 命名空间：microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新 [todoTask 对象](../resources/todotask.md) 的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -46,7 +46,7 @@ PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [todoTask](../resources/todotask.md) 对象的 JSON 表示形式。
 
-下表显示创建 [todoTask](../resources/todotask.md)时所需的属性。
+下表显示创建 [todoTask 时所需的属性](../resources/todotask.md)。
 
 |属性|类型|说明|
 |:---|:---|:---|
@@ -54,11 +54,11 @@ PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}
 |body|[itemBody](../resources/itembody.md)|通常包含有关任务的信息的任务正文。 请注意，仅支持 HTML 类型。|
 |completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|在指定时区内完成任务的日期。|
 |dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|要在指定时区内完成任务的日期。|
-|importance|importance|事件的重要性。 可取值为：`low`、`normal`、`high`。|
+|importance|importance|事件的重要性。可能的值为： `low`、 `normal`、 `high`。|
 |isReminderOn|Boolean|如果设置警报以提醒用户有任务，则设置为 true。|
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|任务的定期模式。|
 |reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|提醒警报发出任务发生提醒的日期和时间。|
-|status|taskStatus|指示任务的状态或进度。 可取值为：`notStarted`、`inProgress`、`completed`、`waitingOnOthers`、`deferred`。|
+|状态|任务状态|指示任务的状态或进度。 可取值为：`notStarted`、`inProgress`、`completed`、`waitingOnOthers`、`deferred`。|
 |title|String|任务的简要说明。|
 |createdDateTime|DateTimeOffset|任务的创建日期和时间。 默认情况下，它采用 UTC 格式。 你可以在请求标头中提供自定义时区。|
 |lastModifiedDateTime|DateTimeOffset|上次修改任务的日期和时间。 默认情况下，它采用 UTC 格式。 你可以在请求标头中提供自定义时区。|
@@ -68,7 +68,7 @@ PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和更新的 `200 OK` [todoTask](../resources/todotask.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [todoTask](../resources/todotask.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -85,7 +85,6 @@ PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}
 ``` http
 PATCH https://graph.microsoft.com/beta/me/todo/lists/AAMkADA1MTHgwAAA=/tasks/721a35e2-35e2-721a-e235-1a72e2351a72
 Content-Type: application/json
-Content-length: 608
 
 {
    "dueDateTime":{

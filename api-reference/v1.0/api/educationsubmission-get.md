@@ -5,12 +5,12 @@ author: sharad-sharma-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 03e6e7d26ea089712c1274d458d560a7d3bf011e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 823e67f0bdad8272d4e6a546bc86c7b2951cb907
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59046188"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60931806"
 ---
 # <a name="get-educationsubmission"></a>获取 educationSubmission
 
@@ -24,7 +24,7 @@ ms.locfileid: "59046188"
 
 教师的成绩和反馈是与此 [对象关联的 educationOutcome](../resources/educationoutcome.md) 的一部分。 只有具有应用程序权限的教师或应用程序才能添加或更改成绩和反馈。 在作业发布之前，学生将看不到成绩或反馈。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -96,7 +96,6 @@ GET https://graph.microsoft.com/v1.0/education/classes/11010/assignments/ad8afb2
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 712
 
 {
       "id": "33223",

@@ -5,12 +5,12 @@ author: mlafleur
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 8a7b7be0b41d3402d6ed339a5ecaad3949f99203
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 782a0b27ed47776d6f127e4eab75d980f391f4eb
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59100203"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940768"
 ---
 # <a name="update-educationuser"></a>更新 educationUser
 
@@ -18,7 +18,7 @@ ms.locfileid: "59100203"
 
 更新 [educationUser 对象](../resources/educationuser.md) 的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -49,7 +49,7 @@ PATCH /education/users/{id}
 | assignedPlans        | [assignedPlan](../resources/assignedplan.md) collection            | 分配给该用户的计划。只读。不可为 null。                                                                                                                                                                                                                                                                                           |
 | businessPhones       | String collection                                                  | 用户的电话号码。 **注意：** 虽然这是字符串集合，但是只能为该属性设置一个号码。                                                                                                                                                                                                                           |
 | createdBy            | [identitySet](../resources/identityset.md)                         | 创建了用户的实体。                                                                                                                                                                                                                                                                                                                                |
-| 部门           | String                                                             | 用户工作部门的名称。支持 $filter。                                                                                                                                                                                                                                                                                      |
+| department           | String                                                             | 用户工作部门的名称。支持 $filter。                                                                                                                                                                                                                                                                                      |
 | displayName          | String                                                             | 用户通讯簿中显示的名称。 这通常是用户名字、中间名首字母和姓氏的组合。 此属性在创建用户时是必需的，并且在更新过程中不能清除。 支持 $filter 和 $orderby。                                                                                      |
 | externalSource       | educationExternalSource                                            | 创建此用户的位置。 可取值为：`sis`、`manual`。                                                                                                                                                                                                                                                                                     |
 | externalSourceDetail | String                                                             | 生成此资源的外部源的名称。                                                                                                                                                                                                                                                                                          |
@@ -59,11 +59,11 @@ PATCH /education/users/{id}
 | mailNickname         | String                                                             | 用户的邮件别名。创建用户时必须指定此属性。支持 $filter。                                                                                                                                                                                                                                                      |
 | middleName           | String                                                             | 用户的中间名。                                                                                                                                                                                                                                                                                                                                    |
 | mobilePhone          | String                                                             | 用户的主要移动电话号码。                                                                                                                                                                                                                                                                                                         |
-| onPremisesInfo       | [educationOnPremisesInfo](../resources/educationonpremisesinfo.md) | 用于将 AAD 用户与它的 Active Directory 对应项关联的其他信息。                                                                                                                                                                                                                                                               |
+| onPremisesInfo       | [educationOnPremisesInfo](../resources/educationonpremisesinfo.md) | 用于将用户与 AAD对应的 Active Directory 关联的其他信息。                                                                                                                                                                                                                                                               |
 | passwordPolicies     | String                                                             | 指定用户的密码策略。 此值是一个枚举，具有一个可能值 “DisableStrongPassword”，允许指定比默认策略弱的密码。 还可以指定 “DisablePasswordExpiration”。 可以同时指定两个值；例如：“DisablePasswordExpiration、DisableStrongPassword”。 |
 | passwordProfile      | [passwordProfile](../resources/passwordprofile.md)                 | 指定用户的密码配置文件。配置文件包含用户的密码。创建用户时此属性是必需的。配置文件中的密码必须满足 **passwordPolicies** 属性指定的最低要求。默认情况下，必须使用强密码。                                                         |
 | preferredLanguage    | String                                                             | 用户的首选语言。 应遵循 ISO 639-1 代码；例如“en-US”。                                                                                                                                                                                                                                                                    |
-| primaryRole          | educationUserRole                                                  | 用户的默认角色。 用户的角色在各课程中可能有所不同。 可取值为：`student`、`teacher`、`none`、`unknownFutureValue`。                                                                                                                                                                                                |
+| primaryRole          | educationUserRole                                                  | 用户的默认角色。 用户的角色在各课程中可能有所不同。 可能的值是：`student`、`teacher`、`none`、`unknownFutureValue`。                                                                                                                                                                                                |
 | provisionedPlans     | [provisionedPlan](../resources/provisionedplan.md) 集合      | 为用户设置的计划。只读。不可为 null。                                                                                                                                                                                                                                                                                       |
 | residenceAddress     | [physicalAddress](../resources/physicaladdress.md)                 | 用户所在的地址。                                                                                                                                                                                                                                                                                                                                   |
 | student              | [educationStudent](../resources/educationstudent.md)               | 如果主要角色为学生，此部分将包含特定于学生的数据。                                                                                                                                                                                                                                                                              |
@@ -87,7 +87,6 @@ PATCH /education/users/{id}
 ```http
 PATCH https://graph.microsoft.com/v1.0/education/users/{user-id}
 Content-type: application/json
-Content-length: 508
 
 {
   "displayName": "Rogelio Cazares",
@@ -124,7 +123,6 @@ Content-length: 508
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 508
 
 {
   "id": "13020",

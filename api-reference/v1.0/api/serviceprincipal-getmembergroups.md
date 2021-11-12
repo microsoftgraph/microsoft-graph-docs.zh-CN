@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 0c9082f8bfb1bb984808b1b9f8ae2c815b32d85e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5357c3cee732d039da5b3c9b5878773b05a57944
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59110051"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60931357"
 ---
 # <a name="serviceprincipal-getmembergroups"></a>servicePrincipal：getMemberGroups
 
@@ -65,7 +65,6 @@ POST /servicePrincipals/{id}/getMemberGroups
 ```http
 POST https://graph.microsoft.com/v1.0/servicePrincipals/{id}/getMemberGroups
 Content-type: application/json
-Content-length: 33
 
 {
   "securityEnabledOnly": true
@@ -102,7 +101,6 @@ Content-length: 33
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 39
 
 {
   "value": [

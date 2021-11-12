@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 5c71b1b5ef4efc05c20d14de59f6e2d1fcabc1ab
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9ebd9b640eb8a780af7f64e021b3175e1b5bd92d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59090633"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936367"
 ---
 # <a name="list-schools"></a>列出学校
 
@@ -18,7 +18,7 @@ ms.locfileid: "59090633"
 
 检索教授该课程的学校列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -102,7 +102,6 @@ GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/schools
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 892
 
 {
   "value": [

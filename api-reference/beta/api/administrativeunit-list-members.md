@@ -2,15 +2,15 @@
 title: 列出成员
 description: 使用此 API 获取管理单元 (组) 成员列表。
 author: DougKirschner
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7bc9d19dc3680c011f5bbb763fee5d8d6ac47669
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: b72de9da19e7c50b6d42f3540f42c6e3b09437d9
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52991979"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940027"
 ---
 # <a name="list-members"></a>列出成员
 
@@ -20,7 +20,7 @@ ms.locfileid: "52991979"
 
 使用此 API 获取管理单元 (组) 成员列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -64,7 +64,6 @@ GET https://graph.microsoft.com/beta/administrativeUnits/{id}/members
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 100
 
 {
   "value":[
@@ -96,7 +95,6 @@ GET https://graph.microsoft.com/beta/administrativeUnits/{id}/members/$ref
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 100
 
 {
   "value":[

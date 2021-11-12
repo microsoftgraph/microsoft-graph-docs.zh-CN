@@ -5,19 +5,19 @@ ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: f811b6d6ae0fea971a395d9354244078af8d7d19
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 386ca3aa2d21f7d4be9d3c9149362bbf2e8a57af
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59044963"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60928124"
 ---
 # <a name="get-plannertask"></a>获取 plannerTask
 
 命名空间：microsoft.graph
 
 检索 **plannertask** 对象的属性和关系。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -86,7 +86,6 @@ GET https://graph.microsoft.com/v1.0/planner/tasks/{task-id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 707
 
 {
   "createdBy": {

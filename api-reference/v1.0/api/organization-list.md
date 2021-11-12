@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: adimitui
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 8523f8ba30b4c6203f005e319150ec4663de4d2f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a4c28c3affc9c5f82932dc05d525c7a189278121
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59079195"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60928236"
 ---
 # <a name="list-organization"></a>列出组织
 
@@ -19,7 +19,7 @@ ms.locfileid: "59079195"
 
 
 检索组织对象列表。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -89,7 +89,6 @@ GET https://graph.microsoft.com/v1.0/organization
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 500
 
 {
   "value": [

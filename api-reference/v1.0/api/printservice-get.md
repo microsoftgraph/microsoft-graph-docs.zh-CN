@@ -2,24 +2,22 @@
 title: 获取 printService
 description: 检索打印服务的属性和关系。
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 8333777d0d903501515be9ef65ec4b06bd48e226
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 923e63c219affece1e78483a6557da0786ffef39
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50771349"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937148"
 ---
 # <a name="get-printservice"></a>获取 printService
 命名空间：microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 检索打印服务的属性和关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 调用 **此** API 需要委派 [的通用打印权限](/graph/permissions-reference#universal-print-permissions) 之一。
 
 ## <a name="http-request"></a>HTTP 请求

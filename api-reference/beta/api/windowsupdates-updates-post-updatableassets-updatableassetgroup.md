@@ -2,15 +2,15 @@
 title: 创建 updatableAssetGroup
 description: 创建新的 updatableAssetGroup 对象。
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 4a7bb68439cd3fd2eade0eaf11b43e2bbf51a5b2
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: a8a6ae7525ef6de58d706cc607f40e4a215d3291
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52238440"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60926047"
 ---
 # <a name="create-updatableassetgroup"></a>创建 updatableAssetGroup
 命名空间：microsoft.graph.windowsUpdates
@@ -21,7 +21,7 @@ ms.locfileid: "52238440"
 
 **updatableAssetGroup** 资源继承自 [updatableAsset](../resources/windowsupdates-updatableasset.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -69,7 +69,6 @@ POST /admin/windows/updates/updatableAssets
 ``` http
 POST https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets
 Content-Type: application/json
-Content-length: 76
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.updatableAssetGroup"

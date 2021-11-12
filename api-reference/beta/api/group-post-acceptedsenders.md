@@ -2,15 +2,15 @@
 title: 删除 acceptedSender
 description: 向 acceptedSender 列表中添加新用户或组。
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 31a4dd44eb0f16b78dfe3b2cebe068ba825e6835
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: dc80dd73722235f25984f341e98e1584c593292e
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681415"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946214"
 ---
 # <a name="create-acceptedsender"></a>删除 acceptedSender
 
@@ -22,7 +22,7 @@ ms.locfileid: "52681415"
 
 在请求主体的 `@odata.id` 中指定用户或组。已接受的发件人列表中的用户可以发布到组对话。确保未在接受的发件人和拒绝的发件人列表中指定同一用户或组，否则会发生错误。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -59,7 +59,6 @@ POST /groups/{id}/acceptedSenders/$ref
 ```http
 POST https://graph.microsoft.com/beta/groups/{id}/acceptedSenders/$ref
 Content-type: application/json
-Content-length: 30
 
 {
   "@odata.id":"https://graph.microsoft.com/beta/users/alexd@contoso.com"

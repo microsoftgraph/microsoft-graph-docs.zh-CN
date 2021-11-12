@@ -5,12 +5,12 @@ author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 648b1aa8a119964f9600a6f1d6e2549fab7c07c5
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: e39ef15a3fb49138a475980a9e347505a4b48b16
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60559598"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60926376"
 ---
 # <a name="update-subjectrightsrequest"></a>更新 subjectRightsRequest
 命名空间：microsoft.graph
@@ -19,14 +19,14 @@ ms.locfileid: "60559598"
 
 更新 [subjectRightsRequest 对象](../resources/subjectRightsRequest.md) 的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|SubjectRightsRequest.ReadWrite.All*|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持|
+|应用程序|不支持|
 
 >[!IMPORTANT]
 >标有星号* (*) 当前不可用。 有关详细信息，请参阅[已知问题](/graph/known-issues#compliance)。
@@ -55,7 +55,7 @@ PATCH /privacy/subjectRightsRequests/{subjectRightsRequestId}
 |属性|类型|说明|
 |:---|:---|:---|
 |assignedTo|[microsoft.graph.identity](../resources/identity.md)|请求分配给的用户的标识信息。|
-|说明|String|更新了请求的说明。|
+|description|String|更新了请求的说明。|
 |displayName|String|请求的更新名称。|
 |internalDueDateTime|DateTimeOffset|更新了请求的内部截止日期。|
 
@@ -76,7 +76,6 @@ PATCH /privacy/subjectRightsRequests/{subjectRightsRequestId}
 ``` http
 PATCH https://graph.microsoft.com/beta/privacy/subjectRightsRequests/{subjectRightsRequestId}
 Content-Type: application/json
-Content-length: 837
 
 {
   "@odata.type": "#microsoft.graph.subjectRightsRequest",

@@ -2,26 +2,24 @@
 title: 创建 printJob
 description: 为打印机创建新的 printJob。
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 3cde9cc06c6f41f927530d02272c546d4a0cd37a
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: c6e5383a17c685aff9e3eea8c3c61a1b1ebd7fed
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50956216"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942840"
 ---
 # <a name="create-printjob"></a>创建 printJob
 命名空间：microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 为打印机[创建新的 printJob。](../resources/printJob.md) [](../resources/printer.md) 
 
 此外，还创建一个与 printJob 关联的新[printDocument。](../resources/printDocument.md)
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 除了以下权限之外，用户或应用的租户还必须具有活动的通用打印订阅，并且具有授予 [获取](printer-get.md) 打印机访问权限的权限。 登录的用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
@@ -70,7 +68,6 @@ POST /print/printers/{printerId}/jobs
 ``` http
 POST https://graph.microsoft.com/v1.0/print/printers/{printerId}/jobs
 Content-Type: application/json
-Content-length: 376
 
 {
   "configuration": {

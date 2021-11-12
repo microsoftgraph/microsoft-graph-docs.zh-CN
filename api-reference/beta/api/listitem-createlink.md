@@ -2,15 +2,15 @@
 title: listItem： createLink
 description: 创建链接以共享 listItem
 author: learafa
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 84bab42a808adbac01899da84010ce0c6ef05283
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: e12ceccbf8ea29893d185ba8564e831bbe850b5c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52992385"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941342"
 ---
 # <a name="listitem-createlink"></a>listItem： createLink
 
@@ -56,7 +56,7 @@ POST /sites/{siteId}/lists/{listId}/items/{itemId}/createLink
 
 下表显示了可用于此操作的参数。
 
-|   属性             |  类型  |           说明                        |
+|   属性             |  类型  |           Description                        |
 | :----------------------| :----- | :--------------------------------------------|
 |type|String|要创建的共享链接的类型。 可选。 |
 |scope|String|要创建的链接的范围。 、 `anonymous` `organization` 或 `users` 。 可选。 |
@@ -83,7 +83,7 @@ POST /sites/{siteId}/lists/{listId}/items/{itemId}/createLink
 
 **scope** 参数允许使用以下值。
 
-| 值          | 说明
+| 值          | Description
 |:---------------|:------------------------------------------------------------
 | anonymous    | 拥有该链接的任何人都可以访问，无需登录。 这可能包括组织外部的人员。 管理员可能会禁用匿名链接支持。
 | 组织 | 登录到组织（租户）的任何人都可以使用该链接获取访问权限。 仅适用于 OneDrive for Business 和 SharePoint。
@@ -114,7 +114,6 @@ POST /sites/{siteId}/lists/{listId}/items/{itemId}/createLink
 ```http
 POST sites/{siteId}/lists/{listId}/items/{itemId}/createLink
 Content-Type: application/json
-Content-length: 212
 
 {
   "type": "view",
@@ -292,7 +291,7 @@ Content-Type: application/json
 * 若要基于组织的默认策略和呼叫者对 listItem 的权限创建链接，请省略 scope 和 type 参数
 * 使用此操作创建的链接不会过期，除非对组织强制执行了默认过期策略。
 * 链接在 listItem 的共享权限中可见，并且可以通过 listItem 的所有者删除。
-* 链接始终指向 listItem 的当前版本，除非 listItem 已签出 (SharePoint仅) 。
+* 链接始终指向 listItem 的当前版本，除非 listItem 已签出 (SharePoint列表) 。
 
 <!--
 {

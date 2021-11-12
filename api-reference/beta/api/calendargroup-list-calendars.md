@@ -2,15 +2,15 @@
 title: 列出日历
 description: 检索属于日历组的日历列表。
 author: harini84
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d1dc7c556f304b15935f2c1ec14c16d035dfdf64
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: f42f76c8b2104e07cabcef09c557022d2482c733
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047705"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937977"
 ---
 # <a name="list-calendars"></a>列出日历
 
@@ -20,7 +20,7 @@ ms.locfileid: "52047705"
 
 检索属于日历组的日历列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -103,7 +103,7 @@ GET https://graph.microsoft.com/beta/me/calendarGroups/{id}/calendars
 
 ##### <a name="response"></a>响应
 
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -115,7 +115,6 @@ GET https://graph.microsoft.com/beta/me/calendarGroups/{id}/calendars
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 147
 
 {
   "value": [

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: d827c15efa7f33819d1abbc67046695fcae31284
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 61b940915fa6a4f86b8169c67aa32dc403ca298d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694734"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943188"
 ---
 # <a name="list-privilegedapproval"></a>列出 privilegedApproval
 
@@ -23,7 +23,7 @@ ms.locfileid: "60694734"
 检索 privilegedapproval 对象的列表。
 
 若要筛选查询中的结果，请在 URL 中使用标准 OData ``$filter`` 表达式。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -96,7 +96,6 @@ GET https://graph.microsoft.com/beta/privilegedApproval
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 246
 
 {
   "value": [

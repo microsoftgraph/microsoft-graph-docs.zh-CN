@@ -1,16 +1,16 @@
 ---
 title: 创建 plannerTask
 description: 使用此 API 新建 **plannerTask**。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: ba187286f88b22cb7c945ad98a75cc1669ab9127
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b646c088a97af515af6b267e54feaf02135f0161
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055349"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939425"
 ---
 # <a name="create-plannertask"></a>创建 plannerTask
 
@@ -59,7 +59,6 @@ POST /planner/tasks
 ```http
 POST https://graph.microsoft.com/beta/planner/tasks
 Content-type: application/json
-Content-length: 285
 
 {
   "planId": "xqQg5FS2LkCp935s-FIFm2QAFkHM",
@@ -85,7 +84,7 @@ Content-length: 285
 
 在请求正文中，提供 [plannerTask](../resources/plannertask.md) 对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -94,7 +93,6 @@ Content-length: 285
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 677
 
 {
   "createdBy": {

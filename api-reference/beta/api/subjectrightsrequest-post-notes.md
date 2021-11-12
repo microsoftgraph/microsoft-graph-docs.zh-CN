@@ -5,12 +5,12 @@ author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 783384d3f762f01b773a585cfab79b3d9dbdb342
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: de7790f0bee842495777372baa28682ef6ef581f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60561806"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60926383"
 ---
 # <a name="create-authorednote"></a>创建 authoredNote
 命名空间：microsoft.graph
@@ -19,14 +19,14 @@ ms.locfileid: "60561806"
 
 创建新的 [authoredNote](../resources/authorednote.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|SubjectRightsRequest.ReadWrite.All*|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持|
+|应用程序|不支持|
 
 >[!IMPORTANT]
 >标有星号* (*) 当前不可用。 有关详细信息，请参阅[已知问题](/graph/known-issues#compliance)。
@@ -52,7 +52,7 @@ POST /privacy/subjectRightsRequests/{subjectRightsRequestId}/notes
 
 下表显示创建 [authoredNote](../resources/authorednote.md)时所需的属性。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |内容|[microsoft.graph.itemBody](../resources/itembody.md)|请求的注释内容|
 
@@ -74,7 +74,6 @@ POST /privacy/subjectRightsRequests/{subjectRightsRequestId}/notes
 ``` http
 POST https://graph.microsoft.com/beta/privacy/subjectRightsRequests/{subjectRightsRequestId}/notes
 Content-Type: application/json
-Content-length: 203
 
 {
 "content": 

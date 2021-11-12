@@ -2,15 +2,15 @@
 title: Get taskTrigger
 description: 从打印机获取任务触发器。
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 3976b61801d6f7bff3a1355666849a8e46f56c70
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 23cd3dc21fd22f4aa02e7ca8fcd7a82818166e33
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053564"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941975"
 ---
 # <a name="get-tasktrigger"></a>Get taskTrigger
 
@@ -22,7 +22,7 @@ ms.locfileid: "52053564"
 
 有关如何使用此 API 向通用打印添加拉页打印支持的详细信息，请参阅扩展 [通用打印以支持拉取打印](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。
@@ -93,7 +93,6 @@ GET https://graph.microsoft.com/beta/print/printers/{printerId}/taskTriggers/{ta
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 181
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers/taskTriggers/$entity",

@@ -2,15 +2,15 @@
 title: 更新 administrativeunit
 description: 更新 administrativeUnit 对象的属性。
 author: DougKirschner
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 8f5974a1f0e599bd47708e50c6c551d151e9acb2
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: f040057540129156aeaee0b3df020cda5e04e5d2
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52991888"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939964"
 ---
 # <a name="update-administrativeunit"></a>更新 administrativeunit
 
@@ -19,7 +19,7 @@ ms.locfileid: "52991888"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新 [administrativeUnit 对象](../resources/administrativeunit.md) 的属性。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -70,7 +70,6 @@ PATCH /administrativeUnits/{id}
 ```http
 PATCH https://graph.microsoft.com/beta/administrativeUnits/{id}
 Content-type: application/json
-Content-length: 114
 
 {
   "displayName": "displayName-value",

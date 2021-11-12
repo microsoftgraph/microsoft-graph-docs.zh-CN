@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 83fb0f69cd6a6e3e614eb841819a03dc83476f9b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1edf8993701084ff661c4f9d0214c149f4d4687b
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59037318"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941735"
 ---
 # <a name="update-outlook-category"></a>更新 Outlook 类别
 
@@ -19,7 +19,7 @@ ms.locfileid: "59037318"
 
 更新指定 [outlookCategory](../resources/outlookcategory.md) 对象的可写属性 **color**。 创建类别后，不能修改 **displayName** 属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -43,7 +43,7 @@ PATCH /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |color|String|预先设定的颜色常数，它表示类别的特征，并映射到 25 种预定义颜色中的一种。 |
 
@@ -63,7 +63,6 @@ PATCH /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/outlook/masterCategories/bac262b7-485d-4739-b436-e31467d64fac
 Content-type: application/json
-Content-length: 30
 
 {
   "color":"preset15"
@@ -97,7 +96,6 @@ Content-length: 30
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 251
 
 {
   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('8ae6f565-0d7f-4ead-853e-7db94c912a1f')/outlook/masterCategories/$entity",

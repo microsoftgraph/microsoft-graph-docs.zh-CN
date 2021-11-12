@@ -1,16 +1,16 @@
 ---
 title: 'Range: clear'
 description: 清除范围值、格式、填充、边框等。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: cc737b9a1f07ce8274fe3ac7ed2ccd105802d24d
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 135b9fd800e30b75d8d6bf9b4e315f6cf1ca3400
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786134"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946179"
 ---
 # <a name="range-clear"></a>Range: clear
 
@@ -18,8 +18,9 @@ ms.locfileid: "52786134"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-清除范围值、格式、填充、边框等。
-## <a name="permissions"></a>权限
+清除区域值，如格式、填充和边框。
+
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -37,8 +38,8 @@ POST /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>
 POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/clear
 POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/clear
 POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/clear
-
 ```
+
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
@@ -48,7 +49,7 @@ POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/ra
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |applyTo|string|可选。确定清除操作的类型。可能的值是：`All`、`Formats`、`Contents`。|
 
@@ -69,7 +70,6 @@ POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/ra
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/clear
 Content-type: application/json
-Content-length: 32
 
 {
   "applyTo": "applyTo-value"

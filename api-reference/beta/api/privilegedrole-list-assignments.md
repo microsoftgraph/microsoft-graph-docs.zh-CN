@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: 4350321ac092646e55c2a0d8e6d546646ee3bca3
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 49b55c7488b7e7be1e61a50e2dac0b7bf9ffe755
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688007"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947224"
 ---
 # <a name="list-assignments"></a>列出作业
 
@@ -20,8 +20,8 @@ ms.locfileid: "60688007"
 
 [!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
-检索与 [角色关联的 privilegedRoleAssignment](../resources/privilegedroleassignment.md) 对象列表。 每个 [privilegedRoleAssignment](../resources/privilegedroleassignment.md) 代表角色分配的一个权限。
-## <a name="permissions"></a>权限
+检索与 [角色关联的 privilegedRoleAssignment](../resources/privilegedroleassignment.md) 对象列表。 每个 [privilegedRoleAssignment](../resources/privilegedroleassignment.md) 都角色分配用户的权限。
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 请求程序需要具有以下角色之一 _：Privileged Role Administrator、Global_ _Administrator、Security_ _Administrator_ 或 _Security Reader。_
@@ -97,7 +97,6 @@ GET https://graph.microsoft.com/beta/privilegedRoles/{id}/assignments
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 237
 
 {
   "value": [

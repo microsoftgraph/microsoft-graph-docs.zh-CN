@@ -2,19 +2,17 @@
 title: 使用 Microsoft Graph 通用打印 API 上载文档
 description: 通用打印是一种新式打印解决方案，组织可以使用它通过 Microsoft 云服务来管理自己的打印基础设施。
 author: nilakhan
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: universal-print
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 78f876cdd2269dac9f9b68915f59d9ae2dd0b51d
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 13d97001f95efabb31b2aaa5e0d8e02c19d35fc5
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58265810"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946851"
 ---
 # <a name="upload-documents-using-the-microsoft-graph-universal-print-api"></a>使用 Microsoft Graph 通用打印 API 上载文档
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../api-reference/includes/cloudprinting-pricing-disclaimer.md)]
 
 若要使用 Microsoft Graph 中的通用打印 API 打印文档，你需要 [创建一个打印作业](/graph/api/printershare-post-jobs)、上传文档，然后 [启动打印作业](/graph/api/printjob-start)。 本文介绍了如何上传文档，首先需要 [创建一个上载会话](/graph/api/printdocument-createuploadsession)。
 

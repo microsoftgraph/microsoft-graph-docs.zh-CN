@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 7eb8742f912158b20464cf456086d8246c21feaa
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: f8f72e1ad594b31eb4227e9db860462434da833b
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694517"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939628"
 ---
 # <a name="update-externalitem"></a>更新 externalItem
 
@@ -20,7 +20,7 @@ ms.locfileid: "60694517"
 
 更新 [externalitem 的属性](../resources/externalconnectors-externalitem.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -40,12 +40,12 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 
 ## <a name="path-parameters"></a>路径参数
 
-| 参数     | 类型   | 说明                                         |
+| 参数     | 类型   | Description                                         |
 |:--------------|:-------|:----------------------------------------------------|
 | connection-id | string | `id`包含[externalConnection 的 属性](../resources/externalconnectors-externalconnection.md) |
 | item-id       | string | 由开发人员提供的 `id` [externalItem 属性](../resources/externalconnectors-externalitem.md)。 |
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称          | 说明                 |
 |:--------------|:----------------------------|
@@ -56,7 +56,7 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 
 在请求正文中，提供应更新的相关字段的值。 现有 (不包括请求正文) 对象对象中的属性将保留其以前的值或根据其他属性值的更改 `properties` 重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。 可更新以下属性。
 
-| 属性   | 类型                                  | 说明               |
+| 属性   | 类型                                  | Description               |
 |:-----------|:--------------------------------------|:--------------------------|
 | acl        | [microsoft.graph.externalConnectors.acl](../resources/externalconnectors-acl.md) 集合 | 访问控制项数组。 每个条目指定授予用户或组的访问权限。 |
 | content    | [microsoft.graph.externalConnectors.externalItemContent](../resources/externalconnectors-externalitemcontent.md) | 项目内容的纯文本表示形式。 此属性中的文本已编制全文索引。 |
@@ -99,7 +99,6 @@ Content-type: application/json
       "type": "everyone",
       "value": "67a141d8-cf4e-4528-ba07-bed21bfacd2d",
       "accessType": "grant",
-      "identitySource": "azureActiveDirectory"
     }
   ]
 }
@@ -147,7 +146,6 @@ Content-type: application/json
       "type": "everyone",
       "value": "67a141d8-cf4e-4528-ba07-bed21bfacd2d",
       "accessType": "grant",
-      "identitySource": "azureActiveDirectory"
     }
   ],
   "properties": {
@@ -156,7 +154,6 @@ Content-type: application/json
     "assignee": "john@contoso.com"
   },
   "content": {
-    "@odata.type": "microsoft.graph.externalConnectors.externalItemContent",
     "value": "<h1>Error in payment gateway</h1><p>Error details...</p>",
     "type": "html"
   }
@@ -175,5 +172,3 @@ Content-type: application/json
     "Error: update_externalitem/properties:\r\n      Referenced type microsoft.graph.object is not defined in the doc set! Potential suggestion: microsoft.graph.directoryObject"
   ]
 }-->
-
-

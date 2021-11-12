@@ -2,15 +2,15 @@
 title: 更新团队合作标记
 description: 更新团队合作Tag 对象的属性。
 author: anniecolonna
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: teamwork
 doc_type: apiPageType
-ms.openlocfilehash: 93e78b863c0b03f475c0d6e52a12316d4eee580d
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: c5d3b361c6aa3263dcaddce79e4c2c2a88b09193
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53210105"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944611"
 ---
 # <a name="update-teamworktag"></a>更新团队合作标记
 命名空间：microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "53210105"
 
 更新团队合作 [Tag 对象](../resources/teamworktag.md) 的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
@@ -70,7 +70,6 @@ PATCH /teams/{team-Id}/tags/{teamworkTag-Id}
 ``` http
 PATCH https://graph.microsoft.com/beta/teams/53c53217-fe77-4383-bc5a-ed4937a1aecd/tags/MjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyM3ZDg4M2Q4Yi1hMTc5LTRkZDctOTNiMy1hOGQzZGUxYTIxMmUjI3RhY29VSjN2RGk==
 Content-Type: application/json
-Content-length: 185
 
 {
   "displayName": "Finance"

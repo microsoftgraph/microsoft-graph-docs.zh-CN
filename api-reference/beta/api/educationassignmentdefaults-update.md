@@ -2,15 +2,15 @@
 title: 更新 educationAssignmentDefaults
 description: 更新 educationAssignmentDefaults 对象的属性。
 author: dipakboyed
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 4dd6d6d8d2c5433ca2ad133c57cae8b17af79ad5
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: 04a701011bf1ac0889b0dbf54501cdadf7cf1830
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52780818"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60930098"
 ---
 # <a name="update-educationassignmentdefaults"></a>更新 educationAssignmentDefaults
 命名空间：microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "52780818"
 
 更新 [educationAssignmentDefaults 对象](../resources/educationassignmentdefaults.md) 的属性。 只有教师可以更新这些设置。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -47,7 +47,7 @@ PATCH /education/classes/{id}/assignmentDefaults
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [应更新的 educationAssignmentDefaults](../resources/educationassignmentdefaults.md) 对象的相关字段的值。 请求正文中未包含的现有属性将保留其以前的值。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |addedStudentAction|educationAddedStudentAction|用于处理作业发布后添加的学生的课堂级别默认行为。 可取值为：`none`、`assignIfOpen`。 默认值为 `none`。|
 |dueTime|TimeOfDay|"到期时间"字段的类级别默认值。 默认值为 `23:59:00`|
@@ -72,7 +72,6 @@ PATCH /education/classes/{id}/assignmentDefaults
 ``` http
 PATCH https://graph.microsoft.com/beta/education/classes/{id}/assignmentDefaults
 Content-Type: application/json
-Content-length: 181
 
 {
   "addedStudentAction": "assignIfOpen",

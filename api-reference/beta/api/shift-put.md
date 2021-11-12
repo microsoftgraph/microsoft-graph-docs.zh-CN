@@ -2,15 +2,15 @@
 title: 替换班次
 description: 替换现有班次。
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 63ae7275372a2caed4e675b3e8360b4e29478aed
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 0f9f3d226d96e84a7e0db1e88cb766e0446ae25c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051856"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60929050"
 ---
 # <a name="replace-shift"></a>替换班次
 
@@ -22,7 +22,7 @@ ms.locfileid: "52051856"
 
 如果指定的 [班次](../resources/shift.md) 不存在，此方法返回 `404 Not found` 。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -153,7 +153,6 @@ Prefer: return=representation
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 401
 
 {
   "id": "string",

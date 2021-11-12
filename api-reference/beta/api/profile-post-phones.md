@@ -1,16 +1,16 @@
 ---
 title: 创建 itemPhone
 description: 使用此 API 创建新的 itemPhone。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 5b9ad4c2321063234765aa4a5705dcf116e0fd9e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: bbe809637670e7acebd3fbac4a45838b274e66ff
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974646"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947187"
 ---
 # <a name="create-itemphonenumber"></a>创建 itemPhoneNumber
 
@@ -18,16 +18,16 @@ ms.locfileid: "48974646"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用此 API 在用户的[配置文件](../resources/profile.md)中创建新的[itemPhone](../resources/itemphone.md)对象。
+使用此 API 在用户配置文件中创建新的 [itemPhone](../resources/itemphone.md) [对象](../resources/profile.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | 所有用户读写。          |
-| 委派（个人 Microsoft 帐户） | 所有用户读写。          |
+| 委派（工作或学校帐户）     | User.ReadWrite、User.ReadWrite.All          |
+| 委派（个人 Microsoft 帐户） | User.ReadWrite、User.ReadWrite.All          |
 | 应用程序                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -51,18 +51,18 @@ POST /users/{userId}/profile/phones
 
 下表显示了在用户配置文件中创建新的 [itemPhone](../resources/itemphone.md) 对象时可以设置的属性。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|displayName|String|友好名称用户已分配了此电话号码。 |
-|推导|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|number|String|用户提供的电话号码。|
-|source|[personDataSource](../resources/persondatasource.md)|值的来源，如果从另一个服务同步。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|type|phoneType|对象中的电话号码的类型。 可取值为：`home`、`business`、`mobile`、`other`、`assistant`、`homeFax`、`businessFax`、`otherFax`、`pager`、`radio`。|
+|displayName|String|用户已分配此电话号码的友好名称。 |
+|inference|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断出来的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|number|String|电话提供的号码。|
+|source|[personDataSource](../resources/persondatasource.md)|如果从另一个服务同步，则值源自何处。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|type|phoneType|对象中电话号码的类型。 可取值为：`home`、`business`、`mobile`、`other`、`assistant`、`homeFax`、`businessFax`、`otherFax`、`pager`、`radio`。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [itemPhone](../resources/itemphone.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [itemPhone](../resources/itemphone.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -77,7 +77,6 @@ POST /users/{userId}/profile/phones
 ``` http
 POST https://graph.microsoft.com/beta/me/profile/phones
 Content-Type: application/json
-Content-length: 382
 
 {
   "displayName": "Car Phone",

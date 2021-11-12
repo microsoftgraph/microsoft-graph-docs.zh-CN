@@ -1,16 +1,16 @@
 ---
 title: 列出任务
 description: 获取用户邮箱中的所有 Outlook 任务。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3bd471f91bcccc7c57b75d878295e5e535404a93
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 776eccb70da2f847c3d9f87e495bae5f69d2a504
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055426"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946753"
 ---
 # <a name="list-tasks-deprecated"></a>列出任务（已弃用）
 
@@ -26,7 +26,7 @@ ms.locfileid: "52055426"
 默认情况下，此操作 (POST、PATCH 和 [完成](../api/outlooktask-complete.md) 任务操作) UTC 格式返回与日期相关的属性。
 你可以使用 `Prefer: outlook.timezone` 标头将响应中的所有与日期相关的属性都表示为与 UTC 不同的时区。 请参阅 [获取](outlooktask-get.md#example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time) 单个任务的示例。 可以以类似方式应用 标头，以获取多个任务。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -99,7 +99,6 @@ GET https://graph.microsoft.com/beta/me/outlook/tasks
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 465
 
 {
   "value": [

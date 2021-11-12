@@ -5,19 +5,19 @@ author: kevinbellinger
 ms.localizationpriority: medium
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 979cbf81654a20cae80aba601c278867ad7ffc1f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b2215ba5406b2320a5ec6f5f1848efb2907e446d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59126147"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943109"
 ---
 # <a name="create-account"></a>创建帐户
 命名空间：microsoft.graph
 
 在用户配置文件中创建新的 [userAccountInformation](../resources/useraccountinformation.md) [对象](../resources/profile.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -49,7 +49,7 @@ POST /users/{id | userPrincipalName}/profile/account
 
 下表显示创建新的 [userAccountInformation](../resources/useraccountinformation.md) 对象时所需的属性。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
 |countryCode|String|包含与用户帐户关联的两个字符的国家/地区代码。  |
@@ -73,7 +73,6 @@ POST /users/{id | userPrincipalName}/profile/account
 ``` http
 POST https://graph.microsoft.com/beta/me/profile/account
 Content-Type: application/json
-Content-length: 494
 
 {
   "allowedAudiences": "organization",

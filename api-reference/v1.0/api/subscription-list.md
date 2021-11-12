@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: apiPageType
-ms.openlocfilehash: 543b5fc026448b441b7c516eef7daa840304ee8b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4610f44e53943ee1190e9d3984176f1436b8bb16
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019466"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944452"
 ---
 # <a name="list-subscriptions"></a>列出订阅
 
@@ -122,7 +122,6 @@ GET https://graph.microsoft.com/v1.0/subscriptions
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 586
 
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#subscriptions",

@@ -2,15 +2,15 @@
 title: 更新设置
 description: '更新 settings 对象的属性。 '
 author: jpettere
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 72eb244cceeb5aa480baef1707877d31c2c69423
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4f72bddd1d7c14dccf6a30e3a9f88a8a386620e7
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783293"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943045"
 ---
 # <a name="update-settings"></a>更新设置
 
@@ -23,14 +23,14 @@ ms.locfileid: "58783293"
 
 ### <a name="batch-request"></a>批量请求
 
-也可以选择通过批处理请求从用户Delve用户。
+也可以选择退出通过批处理请求Delve用户。
 若要了解更多信息，请参阅 [JSON 批处理](/graph/json-batching)。
 
 >**重要** 提示：只有组织管理 [角色](https://support.office.com/article/permissions-in-the-office-365-security-compliance-center-d10608af-7934-490a-818e-e68f17d0e9c1?ui=en-US&rs=en-US&ad=US) 组的成员才能更新多个用户。 
 
 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -76,7 +76,6 @@ PATCH /users/{id | userPrincipalName}/settings/
 ```http
 PATCH https://graph.microsoft.com/beta/me/settings
 Content-type: application/json
-Content-length: 37
 
 {
   "contributionToContentDiscoveryDisabled": true
@@ -90,7 +89,6 @@ Content-length: 37
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 72
 
 {
   "contributionToContentDiscoveryAsOrganizationDisabled": false,

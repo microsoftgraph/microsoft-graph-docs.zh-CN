@@ -2,15 +2,15 @@
 title: 列出附件
 description: 获取附加到任务任务的附件Outlook列表。
 author: svpsiva
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 87b7a341be4e280a8b211bf03e814006d8240755
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: f4f530a01cbe3de350ea929078993c7c314a35dc
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055475"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60934078"
 ---
 # <a name="list-attachments-deprecated"></a>列出 (的附件) 
 
@@ -21,9 +21,9 @@ ms.locfileid: "52055475"
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-获取附加到任务任务的[附件](../resources/attachment.md)Outlook列表。
+获取附加到任务任务的[Outlook](../resources/attachment.md)列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -96,7 +96,7 @@ GET https://graph.microsoft.com/beta/users/{id}/outlook/tasks/{id}/attachments
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -107,7 +107,6 @@ GET https://graph.microsoft.com/beta/users/{id}/outlook/tasks/{id}/attachments
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 215
 
 {
   "value": [

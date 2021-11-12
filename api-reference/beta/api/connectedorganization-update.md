@@ -2,15 +2,15 @@
 title: 更新 connectedOrganization 对象
 description: 更新 connectedOrganization 对象。
 author: markwahl-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 36619c33de483693f35c3ca1163f8e57f063622a
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 7d4f8568c84176aaafb9cd1237f9f25465e4e245
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437406"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945731"
 ---
 # <a name="update-connectedorganization"></a>更新 connectedOrganization
 
@@ -27,7 +27,7 @@ ms.locfileid: "50437406"
 |:---|:---|
 |委派（工作或学校帐户）     | EntitlementManagement.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application                            | EntitlementManagement.ReadWrite.All |
+|应用程序                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -53,12 +53,12 @@ PATCH /identityGovernance/entitlementManagement/connectedOrganizations/{id}
 |属性|类型|说明|
 |:---|:---|:---|
 | displayName  |String | 连接的组织名称。  |
-| 说明  |String | 连接的组织说明。 |
+| description  |String | 已连接的组织说明。 |
 | state        |connectedOrganizationState|已连接组织的状态定义具有请求者作用域类型的分配策略 `AllConfiguredConnectedOrganizationSubjects` 是否适用。 可取值为：`configured`、`proposed`。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应 `204 Accepted` 代码和 [connectedOrganization](../resources/connectedorganization.md) 对象。
+如果成功，此方法在响应 `204 Accepted` 正文中返回 响应代码和 [connectedOrganization](../resources/connectedorganization.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -73,7 +73,6 @@ PATCH /identityGovernance/entitlementManagement/connectedOrganizations/{id}
 ``` http
 PATCH https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/connectedOrganizations/{id}
 Content-Type: application/json
-Content-length: 100
 
 {
   "displayName":"Connected organization new name",

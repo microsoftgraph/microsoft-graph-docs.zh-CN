@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ac04d13eb630d97c88bece5485bb28bf834c20a7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: da542b2f878aaef80a1e6f27ea233b54abf6556b
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59100153"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940681"
 ---
 # <a name="list-photos"></a>List photos
 
@@ -18,7 +18,7 @@ ms.locfileid: "59100153"
 
 检索 [profilePhoto](../resources/profilephoto.md) 对象列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -90,7 +90,6 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/photos
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 94
 
 {
   "value": [

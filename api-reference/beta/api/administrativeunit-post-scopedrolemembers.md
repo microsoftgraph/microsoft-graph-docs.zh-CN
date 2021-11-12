@@ -1,16 +1,16 @@
 ---
 title: 添加 scopedRoleMember
 description: 添加新的 scopedRoleMembership。 注意：作用域 *角色成员身份* 当前仅支持用户帐户管理员和支持人员管理员角色。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: DougKirschner
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 2eb0f3e687e86d9634c28ba4958e895718718625
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 4e128f8bb588c1a03d355dec61ff9ada42ed46cd
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52991920"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939971"
 ---
 # <a name="add-a-scopedrolemember"></a>添加 scopedRoleMember
 
@@ -20,7 +20,7 @@ ms.locfileid: "52991920"
 
 添加新的 [scopedRoleMembership](../resources/scopedrolemembership.md)。 注意：作用域 *角色成员身份* 当前仅支持用户帐户管理员和支持人员管理员角色。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -59,7 +59,6 @@ POST /administrativeUnits/{id}/scopedRoleMembers
 ```http
 POST https://graph.microsoft.com/beta/administrativeUnits/{id}/scopedRoleMembers
 Content-type: application/json
-Content-length: 272
 
 {
   "roleId": "roleId-value",
@@ -97,7 +96,6 @@ Content-length: 272
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 294
 
 {
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#scopedRoleMemberships/$entity",

@@ -5,20 +5,20 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c07a6a08056eae5348d5551a7b9da0d356b1d664
-ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
+ms.openlocfilehash: b948281317c79087ee8fae2dfc420618a362bfb3
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60220673"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943694"
 ---
 # <a name="update-microsoftauthenticatorauthenticationmethodconfiguration"></a>更新 microsoftAuthenticatorAuthenticationMethodConfiguration
 命名空间：microsoft.graph
 
-更新[microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md)对象的属性，该对象表示 Azure AD 租户的 Microsoft Authenticator 身份验证方法策略。
+更新[microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md)对象的属性，该对象表示 Microsoft Authenticator 租户的 Azure AD 方法策略。
 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -53,7 +53,7 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/m
 
 有关属性的列表，请参阅 [microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md)。
 
->**注意：**`@odata.type`属性值为 的 `#microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration` 属性必须包含在正文中。
+>**注意：**`@odata.type`属性值为 的 属性 `#microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration` 必须包含在正文中。
 
 ## <a name="response"></a>响应
 
@@ -72,7 +72,6 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/m
 ``` http
 PATCH https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/microsoftAuthenticator
 Content-Type: application/json
-Content-length: 119
 
 {
   "@odata.type": "#microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration",

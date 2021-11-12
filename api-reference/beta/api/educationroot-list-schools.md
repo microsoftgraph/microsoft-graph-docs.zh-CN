@@ -2,15 +2,15 @@
 title: 列出 educationSchools
 description: 检索所有 school 对象的列表。
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 5979de05618fee206dce7db9374f2d374d3a738f
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: a13a7af40704eb9b21794b07b3d16e1bb72d3677
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751305"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60925333"
 ---
 # <a name="list-educationschools"></a>列出 educationSchools
 
@@ -20,7 +20,7 @@ ms.locfileid: "52751305"
 
 检索所有 school 对象的列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -104,7 +104,6 @@ GET https://graph.microsoft.com/beta/education/schools
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 345
 
 {
    "value":[

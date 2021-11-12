@@ -2,15 +2,15 @@
 title: 创建 legalHold
 description: 创建新的 legalHold 对象。
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: a48774cd3613b2b2cdbcb376d5ffe9781a786c79
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 1de0f93821122786731673af08942a68027f585e
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50773849"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945628"
 ---
 # <a name="create-legalhold"></a>创建 legalHold
 
@@ -20,7 +20,7 @@ ms.locfileid: "50773849"
 
 创建新的 [legalHold](../resources/ediscovery-legalhold.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "50773849"
 |:---|:---|
 |委派（工作或学校帐户）|eDiscovery.Read.All、eDiscovery.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -56,7 +56,7 @@ POST /compliance/ediscovery/cases/{caseId}/legalHolds
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|字符串| 法定显示名称的保留项。 |
+|displayName|String| 法定显示名称的保留项。 |
 
 ## <a name="response"></a>响应
 
@@ -77,7 +77,6 @@ POST /compliance/ediscovery/cases/{caseId}/legalHolds
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/legalHolds
 Content-Type: application/json
-Content-length: 295
 
 {
   "@odata.type": "#microsoft.graph.ediscovery.legalHold",
