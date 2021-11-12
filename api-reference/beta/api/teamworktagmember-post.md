@@ -2,15 +2,15 @@
 title: 创建 teamworkTagMember
 description: 创建新的 teamworkTagMember 对象。
 author: anniecolonna
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9376b8ddb690d4aaee1d571c83e0d94b96482935
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: d224a8c09fd5bc442c5b921b71787151138870e3
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53534315"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60932072"
 ---
 # <a name="create-teamworktagmember"></a>创建 teamworkTagMember
 命名空间：microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "53534315"
 
 在团队 [中创建新的团队合作TagMember](../resources/teamworktagmember.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
@@ -72,7 +72,6 @@ POST /teams/{team-Id}/tags/{teamworkTag-Id}/members
 ``` http
 POST https://graph.microsoft.com/beta/teams/53c53217-fe77-4383-bc5a-ed4937a1aecd/tags/MjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyM3ZDg4M2Q4Yi1hMTc5LTRkZDctOTNiMy1hOGQzZGUxYTIxMmUjI3RhY29VSjN2RGk==/members
 Content-Type: application/json
-Content-length: 144
 
 {
     "userId":"97f62344-57dc-409c-88ad-c4af14158ff5"

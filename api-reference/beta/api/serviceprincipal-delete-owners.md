@@ -2,15 +2,15 @@
 title: 删除所有者
 description: 从 servicePrincipals 中删除所有者。
 author: sureshja
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: e5963c09e4dd56f2b7e1bde1bdbb821f44f45a65
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: ddb77a8bb19265bc17c22b3b9c289fa4850cfb57
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787217"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944723"
 ---
 # <a name="remove-owner"></a>删除所有者
 
@@ -20,7 +20,7 @@ ms.locfileid: "52787217"
 
 从 [servicePrincipal 对象中删除所有者](../resources/serviceprincipal.md) 。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -62,7 +62,6 @@ DELETE /servicePrincipals/{id}/owners/{id}/$ref
 ```http
 DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{id}/owners/{id}/$ref
 Content-type: application/json
-Content-length: 30
 
 {
     "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{id}"

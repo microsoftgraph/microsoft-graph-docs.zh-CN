@@ -4,12 +4,12 @@ description: '列出所有团队 '
 author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: a49f991b930ca8b5b7bb466716f30c66d32ba107
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 010c22046df95b684bad73632cf658c074723366
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59062297"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936080"
 ---
 # <a name="list-all-teams-in-microsoft-teams-for-an-organization"></a>列出组织中 Microsoft Teams 的所有团队
 
@@ -31,7 +31,6 @@ GET /groups?$select=id,resourceProvisioningOptions
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: xxx
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups",
@@ -69,7 +68,6 @@ GET /groups?$filter=resourceProvisioningOptions/Any(x:x eq 'Team')
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: xxx
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups",
@@ -129,7 +127,6 @@ GET /teams/{group-id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 401
 
 {
   "isArchived" : false,

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 0cc431ff96364bb8891d30d9d1b3c13912954b19
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: b9dfe29aa36d38429cb08a121978e1cd32c608d5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50946150"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "60934641"
 ---
 ```csharp
 
@@ -13,9 +13,9 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var siteSource = new Microsoft.Graph.Ediscovery.SiteSource
 {
-    AdditionalData = new Dictionary<string, object>()
+    Site = new Site
     {
-        {"site@odata.bind", "https://graph.microsoft.com/v1.0/sites/50073f3e-cb22-48e5-95a9-51a3da455181"}
+        WebUrl = "https://contoso.sharepoint.com/sites/HumanResources"
     }
 };
 

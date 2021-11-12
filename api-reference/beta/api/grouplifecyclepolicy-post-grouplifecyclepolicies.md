@@ -2,15 +2,15 @@
 title: 创建 groupLifecyclePolicy
 description: 新建 groupLifecyclePolicy。
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 7ae624f4bc02c257f2b7947a10a65634580e5f1e
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 599f1cb546959cf2545cc5cf907c9c4b31859663
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681128"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945535"
 ---
 # <a name="create-grouplifecyclepolicy"></a>创建 groupLifecyclePolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "52681128"
 
 新建 [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -65,7 +65,6 @@ POST /groupLifecyclePolicies
 ```http
 POST https://graph.microsoft.com/beta/groupLifecyclePolicies
 Content-type: application/json
-Content-length: 125
 
 {
   "groupLifetimeInDays": 100,
@@ -103,7 +102,6 @@ Content-length: 125
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 174
 
 {
   "id": "ffffffff-ffff-ffff-ffff-ffffffffffff",

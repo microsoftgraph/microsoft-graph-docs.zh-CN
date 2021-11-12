@@ -5,12 +5,12 @@ author: jkdouglas
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a5393be6890a3d9790136bee3e6ce2787f374aab
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fe0fbdd1f623e82cfd5c294d87617804cbf171f3
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59066268"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943337"
 ---
 # <a name="identityuserflowattributeassignment-setorder"></a>identityUserFlowAttributeAssignment：setOrder
 
@@ -18,7 +18,7 @@ ms.locfileid: "59066268"
 
 设置在用户流中收集的 identityUserFlowAttributeAssignments 的顺序。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -53,7 +53,7 @@ POST /identity/b2xUserFlows/{b2xIdentityUserFlowId}/userAttributeAssignments/set
 
 下表显示了可用于此操作的参数。
 
-|参数|类型|描述|
+|参数|类型|Description|
 |:---|:---|:---|
 |newAssignmentOrder|[assignmentOrder](../resources/assignmentorder.md)|用于定义在用户流中收集的属性的顺序。|
 
@@ -76,7 +76,6 @@ POST /identity/b2xUserFlows/{b2xIdentityUserFlowId}/userAttributeAssignments/set
 ``` http
 POST https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}/userAttributeAssignments/setOrder
 Content-Type: application/json
-Content-length: 90
 
 {
   "newAssignmentOrder": {

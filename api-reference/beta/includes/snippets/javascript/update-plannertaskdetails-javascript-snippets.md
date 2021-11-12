@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4dbcc705b9a712cf7caeb9da094f27446a6a7af2e6286273c9eed6236c7bb3f7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a62345e4bfcf50860be60a843aaa875bcac35ad6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57221084"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "60946700"
 ---
 ```javascript
 
@@ -24,7 +24,7 @@ const plannerTaskDetails = {
       previewPriority: ' !',
       type: 'Other'
     },
-    'https%3A//developer%2Emicrosoft%2Ecom/en-us/graph/graph-explorer':{
+    'https%3A//developer%2Emicrosoft%2Ecom/graph/graph-explorer':{
       '@odata.type': 'microsoft.graph.plannerExternalReference',
       previewPriority: '  !!',
     },

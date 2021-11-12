@@ -2,24 +2,22 @@
 title: 获取 printServiceEndpoint
 description: 检索打印服务终结点的属性和关系。
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 4963f673f3f5d54bce4e302fd50f9e35abf26aad
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 42347eefd7541000331c4d56d89decb36fbed214
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50777536"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945878"
 ---
 # <a name="get-printserviceendpoint"></a>获取 printServiceEndpoint
 命名空间：microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 检索打印服务终结点的属性和关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 调用 **此** API 需要委派 [的通用打印权限](/graph/permissions-reference#universal-print-permissions) 之一。
 
 ## <a name="http-request"></a>HTTP 请求

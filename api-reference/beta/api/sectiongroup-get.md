@@ -1,16 +1,16 @@
 ---
 title: 获取 sectionGroup
 description: 检索 sectionGroup 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 2c9b01f7b9836260403b80326ba810bb07316e9d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8dd980e28249ee17ccea6f6f05a8ed2658e3bc75
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978989"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924937"
 ---
 # <a name="get-sectiongroup"></a>获取 sectionGroup
 
@@ -19,7 +19,7 @@ ms.locfileid: "48978989"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索 [sectionGroup](../resources/sectiongroup.md) 对象的属性和关系。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -39,9 +39,9 @@ GET /sites/{id}/onenote/sectionGroups/{id}
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
-默认查询将展开 `parentNotebook` 并选择其 `id` 、 `name` 和 `self` 属性。 `expand`节组的有效值为 `parentNotebook` 和 `parentSectionGroup` 。
+默认查询将 `parentNotebook` 展开并选择其 、 `id` `name` 和 `self` 属性。 分区 `expand` 组的有效值为 和 `parentNotebook` `parentSectionGroup` 。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
@@ -93,7 +93,6 @@ GET https://graph.microsoft.com/beta/me/onenote/sectionGroups/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 305
 
 {
   "sectionsUrl": "sectionsUrl-value",

@@ -2,15 +2,15 @@
 title: printJob： redirect
 description: 将打印作业重定向到其他打印机。
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 916725283b86c59907ddd89e5441902fa0f8c756
-ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
+ms.openlocfilehash: 13a2f0248aec242f8a1a34b903b10d98e2454346
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52080174"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944786"
 ---
 # <a name="printjob-redirect"></a>printJob： redirect
 
@@ -24,7 +24,7 @@ ms.locfileid: "52080174"
 
 有关如何使用此 API 向通用打印添加拉页打印支持的详细信息，请参阅扩展 [通用打印以支持拉取打印](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅、授予获取打印机访问权限的权限以及下表中列出的权限之一[](printer-get.md)。
@@ -48,7 +48,7 @@ POST /print/printers/{id}/jobs/{id}/redirect
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供打印作业应重定向到的打印机的 ID。
 
-| 属性     | 类型        | 说明 |
+| 属性     | 类型        | Description |
 |:-------------|:------------|:------------|
 |destinationPrinterId|String|打印作业应重定向到的打印机的 ID。|
 |configuration|microsoft.graph.printJobConfiguration|更新了打印作业的配置。|
@@ -139,7 +139,6 @@ POST https://graph.microsoft.com/beta/print/printers/d5ef6ec4-07ca-4212-baf9-d45
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 437
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#printJob",

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c4cf8f2d59fb72f15a36d352cd129fb6f65af6f0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b19fa92c7ec4e370f2961f460e62de3eec950a3b
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147792"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941825"
 ---
 # <a name="contact-delta"></a>contact: delta
 
@@ -20,7 +20,7 @@ ms.locfileid: "59147792"
 
 对文件夹中的联系人的 **delta** 函数调用与 GET 请求相似，但是可通过在对其的一次或多次调用中正确应用 [状态令牌](/graph/delta-query-overview)来查询该文件夹中的联系人的增量更改这一点除外。通过此功能，你可以维护和同步本地存储的用户联系人，而无需每次都从服务器中获取整组联系人。  
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -50,7 +50,7 @@ GET /users/{id}/contactFolders/{id}/contacts/delta
 - 像在任何 GET 请求中一样，你可以使用 `$select` 查询参数以仅指定获取最佳性能所需的属性。始终返回 _id_ 属性。 
 
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称       | 类型 | 说明 |
 |:---------------|:----------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
@@ -114,7 +114,6 @@ Prefer: odata.maxpagesize=2
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 337
 
 {
   "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/contactfolders/{id}/contacts/delta?$skiptoken={_skipToken_}",

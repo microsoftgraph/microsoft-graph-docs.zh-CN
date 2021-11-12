@@ -5,12 +5,12 @@ author: harini84
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 553ef7754d596901fc3e3e51fa671c9a258187bc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a1da57358859caa293339a492df047472b04f7e0
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59105334"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924633"
 ---
 # <a name="event-snoozereminder"></a>event: snoozeReminder
 
@@ -18,7 +18,7 @@ ms.locfileid: "59105334"
 
 将用户日历 [中的事件](../resources/event.md) 提醒 [延迟到](../resources/calendar.md) 新时间。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -51,7 +51,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |newReminderTime|DateTimeTimeZone|触发提醒的新日期和时间。|
 
@@ -72,7 +72,6 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ```http
 POST https://graph.microsoft.com/v1.0/me/events/{id}/snoozeReminder
 Content-type: application/json
-Content-length: 97
 
 {
   "newReminderTime": {

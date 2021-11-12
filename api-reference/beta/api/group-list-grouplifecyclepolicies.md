@@ -2,15 +2,15 @@
 title: 列出 groupLifecyclePolicy
 description: 检索组所属的 groupLifecyclePolicy 对象的列表。
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ce847b566a7857399b5fca7fef96bffe110c2183
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: ad8e967ac062e7f0868646f08ca0130b1961e3a9
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681555"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60926992"
 ---
 # <a name="list-grouplifecyclepolicies"></a>列出 groupLifecyclePolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "52681555"
 
 检索组所属的 [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) 对象的列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -90,7 +90,6 @@ GET https://graph.microsoft.com/beta/groups/{id}/groupLifecyclePolicies
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 227
 
 {
   "value": [

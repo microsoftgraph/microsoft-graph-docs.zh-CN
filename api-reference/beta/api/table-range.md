@@ -2,15 +2,15 @@
 title: workbookTable： range
 description: 获取与整个表相关的 range 对象。
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 2b9cca788d01cddb236c345b921127847ddb940e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 10c7dfbc18f6b56fbb7d8498de8d940acc915b5d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049686"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944618"
 ---
 # <a name="workbooktable-range"></a>workbookTable： range
 
@@ -19,7 +19,7 @@ ms.locfileid: "52049686"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取与整个表相关的 range 对象。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -93,7 +93,6 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|nam
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 169
 
 {
   "address": "address-value",

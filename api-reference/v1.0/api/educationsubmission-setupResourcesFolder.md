@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sharmas
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: dcfa34792cac24aa3d45f820b8db0064b7566f42
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 46056e35ac29833deb20b1b1f421a9db9bf36e2b
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59095180"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60931799"
 ---
 # <a name="educationsubmission-setupresourcesfolder"></a>educationSubmission： setUpResourcesFolder
 
@@ -20,7 +20,7 @@ ms.locfileid: "59095180"
 
 请注意，文件必须位于此文件夹中才能添加为资源。 只有班级中的学生可以确定在给定提交级别资源文件夹中要上载的文件。 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -96,7 +96,6 @@ Content-type: application/json
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 279
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('b07edbef-7420-4b3d-8f7c-d599cf21e069')/assignments('1e5222bd-b7d2-4d64-8a22-74b722ce2fc6')/submissions/$entity",

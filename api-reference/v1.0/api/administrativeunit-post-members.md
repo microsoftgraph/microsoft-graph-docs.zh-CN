@@ -5,12 +5,12 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 67673cfb503c52fcf443ab6f4d374e515645aeb3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 15632f723152e53bc74413a6e888f016a94edd89
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59128324"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60928386"
 ---
 # <a name="add-a-member"></a>添加成员
 
@@ -20,7 +20,7 @@ ms.locfileid: "59128324"
 
 `NOTE: Currently it's only possible to add one member at a time to an administrative unit.`
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -61,7 +61,6 @@ POST /directory/administrativeUnits/{id}/members/$ref
 ```http
 POST https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/members/$ref
 Content-type: application/json
-Content-length: 109
 
 {
   "@odata.id":"https://graph.microsoft.com/v1.0/groups/{id}"

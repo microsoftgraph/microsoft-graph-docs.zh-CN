@@ -2,15 +2,15 @@
 title: 创建或替换日程安排
 description: 创建或替换 **schedule** 对象。
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4fcde2a694646bcdb363c23315a77a931072ed24
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 60c22b8c33b18abb0bcab531105ae87d9fdb1cd5
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52992436"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60928591"
 ---
 # <a name="create-or-replace-schedule"></a>创建或替换日程安排
 
@@ -20,7 +20,7 @@ ms.locfileid: "52992436"
 
 创建或替换 [schedule](../resources/schedule.md) 对象。
 
-计划创建过程符合针对基于资源的长时间运行的操作的 One API 准则 ([RELO) 。 ](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#131-resource-based-long-running-operations-relo)
+计划创建过程符合针对 RELO 中基于资源的长时间运行操作 ([一 API) 。 ](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#131-resource-based-long-running-operations-relo)
 当客户端使用 PUT 方法时，如果已设置计划，则操作将替换计划;否则，操作将在后台启动计划预配过程。
 
 在计划预配期间，客户端可以使用 [GET 方法](schedule-get.md) 获取计划并查看 属性，了解 `provisionStatus` 预配的当前状态。 如果设置失败，客户端可以从 属性获取其他 `provisionStatusCode` 信息。
@@ -28,7 +28,7 @@ ms.locfileid: "52992436"
 客户端还可以检查计划的配置。
 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -115,7 +115,6 @@ Content-type: application/json
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 401
 
 {
   "id": "833fc4df-c88b-4398-992f-d8afcfe41df2",
@@ -198,7 +197,6 @@ PUT https://graph.microsoft.com/beta/teams/871dbd5c-3a6a-4392-bfe1-042452793a50/
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 401
 
 {
    "enabled":true,

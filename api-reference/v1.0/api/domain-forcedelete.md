@@ -5,12 +5,12 @@ author: adimitui
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 16423e6a04a8baeb20a3a6b800cd2c5eced762aa
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 876d3f0b72391c0988f8015171a54bcd8c66809f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59056678"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936416"
 ---
 # <a name="force-domain-deletion"></a>强制删除域
 
@@ -22,7 +22,7 @@ ms.locfileid: "59056678"
 
 以下操作作为此操作的一部分执行：
 
-* 使用 `userPrincipalName` 对已删除域的引用更新 的 、 和 属性，以使用 onmicrosoft.com `mail` `proxyAddresses` `users` 域。
+* 使用 `userPrincipalName` 对已删除域的引用更新 的 、 和 属性，以使用初始 `mail` `proxyAddresses` onmicrosoft.com `users` 域。
 
 * 使用对已删除域的引用更新 的 属性，以使用初始 onmicrosoft.com `mail` `groups` 域。
 
@@ -34,7 +34,7 @@ ms.locfileid: "59056678"
 
 域删除完成后，已删除域的 API 操作将返回 HTTP 404 状态代码。 若要验证是否删除域，可以执行 get [域](domain-get.md) 操作。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -54,7 +54,7 @@ POST /domains/{id}/forceDelete
 
 > 对于 {id}，请使用其完全限定的域名指定该域。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称 | 说明 |
 |:---------------|:----------|
@@ -65,7 +65,7 @@ POST /domains/{id}/forceDelete
 
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数 | 类型 | 说明 |
+| 参数 | 类型 | Description |
 |:---------------|:--------|:----------|
 |`disableUserAccounts`|`Boolean`| 用于禁用重命名的用户帐户的选项。 如果禁用用户帐户，将不允许用户登录。 如果设置为 **true，** 将禁用作为此操作的 `users` 一部分进行更新。  默认值为 **True**。 |
 
@@ -87,7 +87,6 @@ POST /domains/{id}/forceDelete
 ```http
 POST https://graph.microsoft.com/v1.0/domains/{id}/forceDelete
 Content-type: application/json
-Content-length: 33
 
 {
   "disableUserAccounts": true

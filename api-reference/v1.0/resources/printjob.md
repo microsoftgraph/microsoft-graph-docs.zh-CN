@@ -2,34 +2,32 @@
 title: printJob 资源类型
 description: 表示已排入打印机队列的打印作业。
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 39c3ab6cbbf83773a28c5ce374322846e08fc43958eb0103640b080fa94b6e5a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d4c8d214c9a6cde11edc856f4682de1021486adf
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54237584"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942511"
 ---
 # <a name="printjob-resource-type"></a>printJob 资源类型
 
 命名空间：microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 表示已排入打印机队列的打印作业。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [Get](../api/printjob-get.md) | [printJob](printjob.md) | 读取 printJob 对象的属性和关系。 |
-| [Create](../api/printer-post-jobs.md) | [printJob](printjob.md) | 创建新的打印作业对象。 |
+| [获取](../api/printjob-get.md) | [printJob](printjob.md) | 读取 printJob 对象的属性和关系。 |
+| [创建](../api/printer-post-jobs.md) | [printJob](printjob.md) | 创建新的打印作业对象。 |
 | [更新](../api/printjob-update.md) | [printJob](printjob.md) | 更新打印作业对象。 |
 | [Start](../api/printjob-start.md)|无|启动打印作业。|
 | [Cancel](../api/printjob-cancel.md)|无|取消打印作业。|
 | [中止](../api/printjob-abort.md)|无|中止打印作业。|
-| [将 (重定向到另一个打印机) ](../api/printjob-redirect.md) | [printJob](printjob.md) | 针对目标打印机排队的打印作业。 |
+| [将 (重定向到另一台) ](../api/printjob-redirect.md) | [printJob](printjob.md) | 已排入目标打印机队列的打印作业。 |
 
 
 ## <a name="properties"></a>属性
@@ -45,7 +43,7 @@ ms.locfileid: "54237584"
 |createdBy|[userIdentity](useridentity.md)| 只读。可为 Null。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|Description|
 |:---|:---|:---|
 |documents|[printDocument](printdocument.md) 集合| 只读。|
 |tasks|[printTask](printtask.md) 集合|此打印作业触发的 [printTasks](printtask.md) 列表。|

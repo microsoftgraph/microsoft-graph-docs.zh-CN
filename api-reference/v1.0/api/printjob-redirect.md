@@ -2,20 +2,18 @@
 title: printJob： redirect
 description: 将打印作业重定向到其他打印机。
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 23e330a23c50e01f1d0e4ff5b05cadc3ae9b7cdc
-ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
+ms.openlocfilehash: dd6a4704d022c534a9215ff6fa86c189d594fc1e
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52080069"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924340"
 ---
 # <a name="printjob-redirect"></a>printJob： redirect
 命名空间：microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 将 [打印作业重定向到](../resources/printjob.md) 其他 [打印机](../resources/printer.md)。
 
@@ -23,7 +21,7 @@ ms.locfileid: "52080069"
 
 有关如何使用此 API 向通用打印添加拉页打印支持的详细信息，请参阅扩展 [通用打印以支持拉取打印](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅、授予获取打印机访问权限的权限以及下表中列出的权限之一[](printer-get.md)。
@@ -32,7 +30,7 @@ ms.locfileid: "52080069"
 |:---------------|:--------------------------------------------|
 |委派（工作或学校帐户）| 不支持。 |
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application| PrintJob.Manage.All |
+|应用程序| PrintJob.Manage.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -53,9 +51,9 @@ POST /print/printers/{printerId}/jobs/{printJobId}/redirect
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供打印作业应重定向到的打印机的 ID。
 
-| 属性     | 类型        | 说明 |
+| 属性     | 类型        | Description |
 |:-------------|:------------|:------------|
-|destinationPrinterId|字符串|打印作业应重定向到的打印机的 ID。|
+|destinationPrinterId|String|打印作业应重定向到的打印机的 ID。|
 |configuration|microsoft.graph.printJobConfiguration|更新了打印作业的配置。|
 
 ## <a name="response"></a>响应
@@ -74,7 +72,6 @@ POST /print/printers/{printerId}/jobs/{printJobId}/redirect
 ``` http
 POST https://graph.microsoft.com/v1.0/print/printers/{printerId}/jobs/{printJobId}/redirect
 Content-Type: application/json
-Content-length: 128
 
 {
   "destinationPrinterId": "9a3b3956-ce5b-4d06-a605-5b0bd3e9ddea",

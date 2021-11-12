@@ -2,15 +2,15 @@
 title: 获取 educationSynchronizationProfile 的状态
 description: 获取租户中特定学校数据同步配置文件的状态。 该响应将指示同步的状态。
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: ab2c4657d913985244ffe9d422859f0680a322de
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 1edd3099b7efc7157ffdefdc2f6bc133d2c242c3
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53533286"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942259"
 ---
 # <a name="get-the-status-of-an-educationsynchronizationprofile"></a>获取 educationSynchronizationProfile 的状态
 
@@ -20,7 +20,7 @@ ms.locfileid: "53533286"
 
 获取租户中特定学校数据 [同步配置文件](../resources/educationsynchronizationprofile.md) 的状态。 该响应将指示同步的状态。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -96,7 +96,6 @@ GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/prof
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 450
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/synchronizationProfiles/{id}/profileStatus/$entity",

@@ -1,16 +1,16 @@
 ---
 title: 创建 mailSearchFolder
 description: 使用此 API 在指定用户的邮箱中创建新的 mailSearchFolder。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9899276551b09c7e4a4da6e6b92f046d594d5ad5
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 2b791d4636f78c000a95d00bfd2e3d864d566881
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051142"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60934099"
 ---
 # <a name="create-mailsearchfolder"></a>创建 mailSearchFolder
 
@@ -20,7 +20,7 @@ ms.locfileid: "52051142"
 
 在指定的[用户的邮箱中创建新的 mailSearchFolder。](../resources/mailsearchfolder.md)
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -41,7 +41,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 
 在查询 URL 中将父文件夹指定为文件夹 ID 或已知文件夹名称。 有关受支持的已知文件夹名称的列表，请参阅 [mailFolder 资源类型](../resources/mailfolder.md)。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 标头 | 值 |
 |:-------|:------|
@@ -56,8 +56,8 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 |:----------|:-----|:------------|
 | @odata.type | String | 要创建的文件夹的类型。 设置为"microsoft.graph.mailSearchFolder"。 |
 | displayName | String | 新文件夹的显示名称。|
-| includeNestedFolders | 布尔值 | 指示如何在搜索中遍历邮箱文件夹层次结构。 `true` 意味着应该执行深层搜索，以在 **sourceFolderIds** 中显式指定的每个文件夹的层次结构中包括子文件夹。 `false` 表示仅对 **sourceFolderIds** 中显式指定的每个文件夹进行浅表搜索。 |
-| sourceFolderIds | 字符串集合 | 应缩小的邮箱文件夹。 |
+| includeNestedFolders | Boolean | 指示如何在搜索中遍历邮箱文件夹层次结构。 `true` 意味着应该执行深层搜索，以在 **sourceFolderIds** 中显式指定的每个文件夹的层次结构中包括子文件夹。 `false` 表示仅对 **sourceFolderIds** 中显式指定的每个文件夹进行浅表搜索。 |
+| sourceFolderIds | String 集合 | 应缩小的邮箱文件夹。 |
 | filterQuery | String | 用于筛选邮件的 OData 查询。 |
 
 ## <a name="response"></a>响应
@@ -68,7 +68,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 
 #### <a name="request"></a>请求
 
-下面是请求的一个示例 - 它创建主题中包含字符串"weekly digest"的邮件的搜索文件夹。 搜索文件夹位于应用指定筛选器查询的同一文件夹下。
+下面是请求的一个示例 - 它将创建主题中包含字符串"weekly digest"的邮件的搜索文件夹。 搜索文件夹位于应用指定筛选器查询的同一文件夹下。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -80,7 +80,6 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 ```http
 POST https://graph.microsoft.com/beta/me/mailfolders/AQMkADYAAAIBDAAAAA==/childfolders
 Content-type: application/json
-Content-length: 159
 
 {
   "@odata.type": "microsoft.graph.mailSearchFolder",

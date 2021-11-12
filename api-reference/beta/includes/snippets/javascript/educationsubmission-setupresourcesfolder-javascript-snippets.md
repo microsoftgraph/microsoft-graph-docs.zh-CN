@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8c24b9cd117869a63c0524d22bbca87f12670f96
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 8a5d5dae4de80809af88d1f598bf0994cb94b92e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52870127"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "60944083"
 ---
 ```javascript
 
@@ -18,7 +18,7 @@ const client = Client.init(options);
 const educationSubmission = {
 };
 
-await client.api('/education/classes/11012/assignments/19002/submissions/20302/setUpResourcesFolder')
+await client.api('/education/classes/b07edbef-7420-4b3d-8f7c-d599cf21e069/assignments/1e5222bd-b7d2-4d64-8a22-74b722ce2fc6/submissions/803fb5dd-3553-455f-3d94-f79fb54a1003/setUpResourcesFolder')
     .version('beta')
     .post(educationSubmission);
 

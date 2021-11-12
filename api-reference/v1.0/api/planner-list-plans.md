@@ -5,19 +5,19 @@ ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: a9a42ecf7023c9647bfb5d194df812be45ec2136
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 35b2c6c8d5bebaff3f24bbf62f3f3425adc306ed
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59104921"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941727"
 ---
 # <a name="list-plans"></a>列出计划
 
 命名空间：microsoft.graph
 
 检索 **plannerplan** 对象的列表。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -34,7 +34,7 @@ GET /planner/plans
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法要求指定所有者[筛选器](/graph/query-parameters)。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
@@ -89,7 +89,6 @@ GET https://graph.microsoft.com/v1.0/planner/plans
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 421
 
 {
   "value": [

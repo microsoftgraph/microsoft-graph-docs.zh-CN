@@ -2,15 +2,15 @@
 title: 获取任务
 description: 获取有关打印任务的详细信息。
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 06e83c3ca75c0e0e0f2a7fda730456388a43d7bb
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 2e3909c12fb04487cf0c3949775a9d2504c0389f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053592"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944779"
 ---
 # <a name="get-task"></a>获取任务
 
@@ -22,7 +22,7 @@ ms.locfileid: "52053592"
 
 有关如何使用此 API 向通用打印添加拉页打印支持的详细信息，请参阅扩展 [通用打印以支持拉取打印](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。
@@ -93,7 +93,6 @@ GET https://graph.microsoft.com/beta/print/taskDefinitions/3203656e-6069-4e10-81
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 392
 
 {
 

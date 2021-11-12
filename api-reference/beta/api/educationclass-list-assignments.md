@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 6e287683dbade562e4face1a31a9dfcf825e0c9b
-ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
+ms.openlocfilehash: 0bfa9bb6c7bddcac9da4e14e0d9259f5749f3766
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60780854"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60927013"
 ---
 # <a name="list-class-assignments"></a>列出课程分配
 
@@ -22,7 +22,7 @@ ms.locfileid: "60780854"
 
 教师或使用应用程序权限执行的应用程序可以看到课程的所有作业对象。 学生只能看到分配给他们的作业。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -44,7 +44,7 @@ GET /education/classes/{id}/assignments
 
 此方法 `$expand` 的可用选项包括：、、 `categories` `resources` `rubric` `submissions` 和 `*` ，其中包括之前的所有选项。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 标头        | 值                     |
 | :------------ | :------------------------ |
@@ -66,14 +66,34 @@ GET /education/classes/{id}/assignments
 
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_assignments"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/classes/{id}/assignments
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-assignments-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-assignments-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-assignments-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-assignments-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 
@@ -91,7 +111,6 @@ GET https://graph.microsoft.com/beta/education/classes/{id}/assignments
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 344
 
 {
   "value": [
@@ -146,18 +165,38 @@ Content-length: 344
 
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_assignments_resources"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/classes/{id}/assignments?$expand=resources
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-assignments-resources-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-assignments-resources-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-assignments-resources-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-assignments-resources-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 
-下面介绍响应示例。 该响应包括每个工作分配的资源列表。 
+下面展示了示例响应。 该响应包括每个工作分配的资源列表。 
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 

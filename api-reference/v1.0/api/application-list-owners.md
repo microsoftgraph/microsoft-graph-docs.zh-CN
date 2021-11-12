@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 35b7fbdf5d3ec5b0818819120ab5fcf43fc78aa6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 364189e3d2c5337a6ca4effaf983b5edd312c77c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59068380"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924794"
 ---
 # <a name="list-owners"></a>列出所有者
 
@@ -18,7 +18,7 @@ ms.locfileid: "59068380"
 
 检索作为 [directoryObject](../resources/directoryobject.md) 对象的应用程序的所有者列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -35,7 +35,7 @@ GET /applications/{id}/owners
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称           | 说明                |
 |:---------------|:---------------------------|
 | Authorization  | Bearer {token}。必需。  |
@@ -90,7 +90,6 @@ GET https://graph.microsoft.com/v1.0/applications/{id}/owners
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
 
 {
   "value": [

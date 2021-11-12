@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 25fa96f3cda7421affea96e48b62b7d228aea74f
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 4b8b91de426912d8a706a3af483e7a3257e1d325
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59763504"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947725"
 ---
 # <a name="create-b2cidentityuserflow"></a>创建 b2cIdentityUserFlow
 
@@ -20,7 +20,7 @@ ms.locfileid: "59763504"
 
 创建新的 [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -59,7 +59,7 @@ POST /identity/b2cUserFlows
 |id|String|必需。 用户流名称。 如果在请求期间未将前缀添加到名称中，则创建后，将预笔写该 `B2C_1_` 名称。 |
 |userFlowType|String|必需。 要创建的用户流的类型。 **userFlowType** 支持的值有：<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwner`</li>|
 |userFlowTypeVersion|浮点|必需。 用户流版本。|
-|isLanguageCustomizationEnabled|Boolean|可选。 确定是否在 Azure AD B2C 用户流中启用语言自定义。 默认情况下，不会为 Azure AD B2C 用户流启用语言自定义。|
+|isLanguageCustomizationEnabled|Boolean|可选。 确定是否在 B2C 用户流Azure AD语言自定义。 默认情况下，不会为 B2C 用户流Azure AD语言自定义。|
 |defaultLanguageTag|String|可选。  指定在请求中未指定标记时所使用的 b2cIdentityUserFlow `ui_locale` 的默认语言。 此字段符合 [RFC 5646](https://tools.ietf.org/html/rfc5646)。|
 |identityProviders|[identityProvider](../resources/identityprovider.md)集合 |可选。 要包括在用户流中的标识提供程序。|
 
@@ -251,7 +251,6 @@ Content-type: application/json
 ``` http
 POST https://graph.microsoft.com/beta/identity/b2cUserFlows
 Content-type: application/json
-Content-length: 154
 
 {
     "id": "UserFlowWithAPIConnector",

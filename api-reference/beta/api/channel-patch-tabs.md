@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8c0ab2920bfb800f5025eb47d6a3756540c741d8
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: 1ff88751003298befa87c0e040ce6d17246ede83
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60288305"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60925732"
 ---
 # <a name="update-tab"></a>更新选项卡
 
@@ -20,7 +20,7 @@ ms.locfileid: "60288305"
 
 更新指定选项卡 [的属性](../resources/teamstab.md)。这可用于配置选项卡的内容。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -30,7 +30,7 @@ ms.locfileid: "60288305"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | TeamsTab.ReadWrite.Group *、TeamsTab.ReadWriteForTeam.All、TeamsTab.ReadWrite.All、Group.ReadWrite.All**、Directory.ReadWrite.All** |
 
-> **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。 标记为 ** 的权限已弃用，不应使用。
+> **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。 标记为 **的权限已弃用，不应使用。
 
 > **注意**：此 API 支持管理员权限。全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
@@ -58,7 +58,6 @@ PATCH /teams/{team-id}/channels/{channel-id}/tabs/{tab-id}
 ```http
 PATCH https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs/{id}
 Content-type: application/json
-Content-length: 211
 
 {
   "displayName": "My Contoso Tab - updated"

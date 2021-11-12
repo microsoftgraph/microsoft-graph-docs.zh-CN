@@ -1,16 +1,16 @@
 ---
 title: Get endpoint
 description: 检索特定终结点对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: groups
 author: Jordanndahl
-ms.openlocfilehash: 8c07e342c295fb4aabad9dbec017c6776284ea1e
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 6e1a570ce4d5e39be77b21a12187703d699522d2
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681947"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942245"
 ---
 # <a name="get-endpoint"></a>Get endpoint
 
@@ -20,7 +20,7 @@ ms.locfileid: "52681947"
 
 检索特定终结点对象的属性 [和](../resources/endpoint.md) 关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/endpoints/{id}
 
 ### <a name="response"></a>响应
 下面是一个响应示例。
->注意：为了提高可读性，可能缩短此处显示的响应对象。
+>注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -90,7 +90,6 @@ GET https://graph.microsoft.com/beta/groups/{id}/endpoints/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 208
 
 {
   "capability": "Conversations",

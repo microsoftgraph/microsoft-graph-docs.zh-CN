@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: a7504061c4d55d28e1121c389bb35f79dcbf4c6f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3c1c49f14260b1ad644c06f543195143c6a569b4
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019564"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936164"
 ---
 # <a name="create-page"></a>创建页面
 
@@ -18,7 +18,7 @@ ms.locfileid: "59019564"
 
 在指定分区中新建[页面](../resources/page.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -57,7 +57,6 @@ POST /sites/{id}/onenote/sections/{id}/pages
 <!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/v1.0/me/onenote/sections/{id}/pages
-Content-length: 312
 Content-type: multipart/form-data; boundary=MyPartBoundary198374
 
 --MyPartBoundary198374
@@ -99,7 +98,6 @@ Content-Type:application/pdf
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 312
 
 {
   "title": "title-value",

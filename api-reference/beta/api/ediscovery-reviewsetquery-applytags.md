@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 8354ebaab02684e4850c13161b1e7deb8bf3db61
-ms.sourcegitcommit: f9e71d3b8a54a98c282ef49783babe5698300c06
+ms.openlocfilehash: 4cf3dde8e5825efa2c452dc3e0ce0ff9c2cc4fd8
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "60793919"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946221"
 ---
 # <a name="reviewsetquery-applytags"></a>reviewSetQuery：applyTags
 
@@ -20,7 +20,7 @@ ms.locfileid: "60793919"
 
 将 [标记](../resources/ediscovery-tag.md) 应用于与指定的 [reviewSetQuery 匹配的文档](../resources/ediscovery-reviewsetquery.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -54,7 +54,7 @@ POST /compliance/ediscovery/cases/{caseId}/reviewSets/{reviewSetId}/queries/{rev
 
 下表显示了可用于此操作的参数。
 
-|参数|类型|说明|
+|参数|类型|Description|
 |:---|:---|:---|
 |tagsToAdd|[microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md) 集合|要添加到与查询匹配的文档的标记的标识。|
 |tagsToRemove|[microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md) 集合|要从与查询匹配的文档中删除的标记的标识。|
@@ -80,7 +80,6 @@ POST /compliance/ediscovery/cases/{caseId}/reviewSets/{reviewSetId}/queries/{rev
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/47746044-fd0b-4a30-acfc-5272b691ba5b/reviewsets/6c95c2a6-31fa-45a8-93ef-dd4531974783/queries/b4798d14-748d-468e-a1ec-96a2b1d49677/applyTags
 Content-Type: application/json
-Content-length: 778
 
 {
     "tagsToAdd": [

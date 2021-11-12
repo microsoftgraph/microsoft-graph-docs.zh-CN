@@ -2,15 +2,15 @@
 title: 列出 printServices
 description: 检索 printService 对象的列表，这些对象代表可供租户使用的服务。
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 3461665b6d027fdba0ecd88e97af422b4f3865ff
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 8da3beb0a43044f962117c3db6aa307184bbdd9f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051093"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60933107"
 ---
 # <a name="list-printservices"></a>列出 printServices
 
@@ -20,7 +20,7 @@ ms.locfileid: "52051093"
 
 检索 [printService 对象](../resources/printservice.md) 的列表，这些对象 **代表** 可供租户使用的服务。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 调用此 API 不需要任何权限，但若要使用通用打印服务，用户或应用的租户必须拥有活动的通用打印订阅。
 
 |权限类型 | 权限（从最低特权到最高特权） |
@@ -89,7 +89,6 @@ GET https://graph.microsoft.com/beta/print/services
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 389
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/services",
