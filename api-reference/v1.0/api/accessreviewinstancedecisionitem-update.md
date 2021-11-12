@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 0d06d62ddcf5568e451e2309180022fdd1c77717
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2b5f4f45081319dedef68ca0ba157a8079b12559
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59038648"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941867"
 ---
 # <a name="update-accessreviewinstancedecisionitem"></a>更新 accessReviewInstanceDecisionItem
 命名空间：microsoft.graph
@@ -18,7 +18,7 @@ ms.locfileid: "59038648"
 更新 [accessReviewInstanceDecisionItem 对象](../resources/accessreviewinstancedecisionitem.md) 的属性。
 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -50,7 +50,7 @@ PATCH /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinit
 
 下表显示更新 [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md)时接受的属性。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |decision|String|审阅者对主体是否应有权访问所审阅的资源的投票。 可能的值 `Approve` ：、 `Deny` 或 `DontKnow` 。 必需。|
 |justification|String|审阅者的决策原因。 如果 [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md)的 settings 属性的 **justificationRequiredOnApproval** 为 ，则必需 `true` 。|
@@ -72,7 +72,6 @@ PATCH /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinit
 ``` http
 PATCH https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/abadf3b6-8ea4-4dea-90a5-9eac8fe93fbd/instances/4444f3b6-8ea4-4dea-90a5-9eac8fe95678/decisions/5555f3b6-8ea4-4dea-90a5-9eac8fe95555
 Content-Type: application/json
-Content-length: 691
 
 {
   "decision": "Approve",

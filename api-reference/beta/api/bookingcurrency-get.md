@@ -1,16 +1,16 @@
 ---
 title: 获取 bookingCurrency
 description: 获取可用于 Microsoft Bookings 业务的 bookingCurrency 对象的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: f6702d108c3b705749021ad79d7e9fe6ceb944b1
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c58245c4135cce04ed92d07c65e565b76f8b9e0e
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047838"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936094"
 ---
 # <a name="get-bookingcurrency"></a>获取 bookingCurrency
 
@@ -20,7 +20,7 @@ ms.locfileid: "52047838"
 
 获取可用于 Microsoft Bookings 业务的 [bookingCurrency](../resources/bookingcurrency.md) 对象的属性。 使用 **id** 属性（即货币代码）指定货币。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/beta/bookingCurrencies/USD
 ---
 
 ##### <a name="response"></a>响应
-下面展示了示例响应。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -86,7 +86,6 @@ GET https://graph.microsoft.com/beta/bookingCurrencies/USD
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 50
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingCurrencies/$entity",

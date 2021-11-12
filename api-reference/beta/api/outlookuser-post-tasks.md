@@ -1,16 +1,16 @@
 ---
 title: 创建 outlookTask
 description: 在Outlook邮箱的默认任务组 () 和默认任务 () `My Tasks` `Tasks` 创建任务。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a327acde8db0928b1ade7e5fcf660f86d6cdae96
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 885cabb1422a145e32e0055309aafb810e189361
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52037954"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60935751"
 ---
 # <a name="create-outlooktask-deprecated"></a>创建 outlookTask（已弃用）
 
@@ -27,7 +27,7 @@ POST 方法始终忽略请求正文中 **startDateTime** 和 **dueDateTime** 的
 
 默认情况下，此操作 (GET、PATCH 和 [完成](../api/outlooktask-complete.md) 任务操作) UTC 格式返回与日期相关的属性。 你可以使用 `Prefer: outlook.timezone` 标头将响应中的所有与日期相关的属性都表示为与 UTC 不同的时区。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -57,7 +57,7 @@ POST /users/{id|userPrincipalName}/outlook/tasks
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-以下示例显示标头 `Prefer: outlook.timezone` 的使用。 它创建一个任务，用东部标准时间 (EST) 表示 **startDateTime** 和 **dueDateTime，** 并包括太平洋 `Prefer` 标准时间 (PST) 标头。
+以下示例显示标头 `Prefer: outlook.timezone` 的使用。 它创建一个任务，用东部标准时间 (EST) 表示 **startDateTime** 和 **dueDateTime，** 并包括太平洋标准时间 (PST) 标头 `Prefer` 。
 <!-- {
   "blockType": "request",
   "name": "create_outlooktask_from_outlookuser"
@@ -66,7 +66,6 @@ POST /users/{id|userPrincipalName}/outlook/tasks
 POST https://graph.microsoft.com/beta/me/outlook/tasks
 Prefer: outlook.timezone="Pacific Standard Time"
 Content-type: application/json
-Content-length: 276
 
 {
   "subject": "Shop for children's weekend",
@@ -100,7 +99,7 @@ Content-length: 276
 
 在请求正文中，提供 [outlookTask](../resources/outlooktask.md) 对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
-POST 方法忽略请求正文中 **startDateTime** 和 **dueDateTime** 的时间部分，并假定指定时区 (EST 时间始终为午夜) 。
+POST 方法忽略请求正文中 **startDateTime** 和 **dueDateTime** 的时间部分，并假定指定时区 EST (始终为午夜) 。
 
 由于标头指定 PST，因此 POST 方法在 PST 中表示响应中所有与 `Prefer` 日期相关的属性。 特别是，对于 **startDateTime 和 dueDateTime** 属性，POST 方法将在 EST 中的午夜转换为 PST，在响应中以 PST 格式返回它们。 
 
@@ -113,7 +112,6 @@ POST 方法忽略请求正文中 **startDateTime** 和 **dueDateTime** 的时间
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 576
 
 {
   "id": "AAMkADA1MHgwAAA=",

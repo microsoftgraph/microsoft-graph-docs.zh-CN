@@ -1,22 +1,22 @@
 ---
 title: 创建页面
-description: 在默认笔记本OneNote分区中创建新的页面。
+description: 在默认笔记本OneNote新建一个页面。
 author: jewan-microsoft
 ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 14a2947e95b57b58c84daa0732b9c198f0ab4a1c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 66e9d95828f826be2cf8cb3f6ef032d8230b4be0
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59032620"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941713"
 ---
 # <a name="create-page"></a>创建页面
 
 命名空间：microsoft.graph
 
-在默认笔记本OneNote分区中创建新的页面。
+在默认笔记本OneNote新建一个页面。
 
 若要在默认笔记本的不同节中创建页面，可以使用 `sectionName` 查询参数。  例如：`../onenote/pages?sectionName=My%20section`
 
@@ -24,7 +24,7 @@ ms.locfileid: "59032620"
 
 > **注意：** 使用此 API 可添加到分区的页数存在限制。 有关详细信息，请参阅[创建OneNote](/graph/onenote-create-page)页面了解此 API 的所有限制。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -67,7 +67,6 @@ POST /sites/{id}/onenote/pages
 <!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/v1.0/me/onenote/pages
-Content-length: 312
 Content-type: multipart/form-data; boundary=MyPartBoundary198374
 
 --MyPartBoundary198374
@@ -109,7 +108,6 @@ Content-Type:application/pdf
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 312
 
 {
   "title": "title-value",

@@ -1,21 +1,19 @@
 ---
 title: printDocument： createUploadSession
 description: 创建上载会话以迭代上载 printDocument 的二进制文件范围。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: nilakhan
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 164a5ca3bf6b2f53c3c5952d49f605493b4d9275
-ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
+ms.openlocfilehash: 4a033bf7958cf67fde9ffe4c3345563b8d67772d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52080083"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60927950"
 ---
 # <a name="printdocument-createuploadsession"></a>printDocument： createUploadSession
 命名空间：microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 创建允许应用反复上载链接到打印文档的二进制文件范围的上载会话。
 
@@ -23,7 +21,7 @@ ms.locfileid: "52080083"
 
 >**注意**：只有在关联的打印作业上存在 [printTask](../resources/printTask.md) 状态（由请求应用创建的触发器启动）时，使用应用程序权限创建上载 `processing` 会话才能成功。 若要详细了解如何注册任务触发器，请参阅 [扩展通用打印以支持拉取打印](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 除了以下权限之外，用户或应用的租户还必须具有活动的通用打印订阅，并且具有根据使用的打印机还是 printerShare 授予获取 [打印机](printer-get.md) 或获取 [printerShare](printershare-get.md) 访问权限的权限。
@@ -32,7 +30,7 @@ ms.locfileid: "52080083"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | PrintJob.Create、PrintJob.ReadWrite、PrintJob.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | PrintJob.ReadWrite.All |
+| 应用程序                            | PrintJob.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -55,7 +53,7 @@ POST /print/printers/{id}/jobs/{id}/documents/{id}/createUploadSession
 POST /print/shares/{id}/jobs/{id}/documents/{id}/createUploadSession
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
@@ -64,7 +62,7 @@ POST /print/shares/{id}/jobs/{id}/documents/{id}/createUploadSession
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型        | 说明 |
+| 参数    | 类型        | Description |
 |:-------------|:------------|:------------|
 |properties|[printDocumentUploadProperties](../resources/printDocumentUploadProperties.md)|表示要上载的二进制文件的属性。|
 
@@ -86,6 +84,8 @@ POST /print/shares/{id}/jobs/{id}/documents/{id}/createUploadSession
 以下示例演示如何创建可用于后续文件上载操作到指定 printDocument 的上载会话。
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "printdocument_createuploadsession"
@@ -94,7 +94,6 @@ POST /print/shares/{id}/jobs/{id}/documents/{id}/createUploadSession
 ``` http
 POST https://graph.microsoft.com/v1.0/print/printers/{printerId}/jobs/{printJobId}/documents/{printDocumentId}/createUploadSession
 Content-Type: application/json
-Content-length: 96
 
 {
   "properties": {
@@ -104,6 +103,24 @@ Content-length: 96
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/printdocument-createuploadsession-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/printdocument-createuploadsession-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/printdocument-createuploadsession-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/printdocument-createuploadsession-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 978dd1f718b0da49043b5f16872b8552e4139516
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 75ab1337134124e54496d7c7615066ffb501eab9
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59025207"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945528"
 ---
 # <a name="group-validateproperties"></a>group： validateProperties
 
@@ -22,9 +22,9 @@ ms.locfileid: "59025207"
 1. 验证前缀和后缀命名策略
 2. 验证自定义禁止字策略
 
-此 API 返回遇到的第一个故障。 如果一个或多个属性未能通过多次验证，则仅返回第一个验证失败的属性。 但是，如果仅验证前缀和后缀命名策略，您可以验证邮件昵称和显示名称并接收验证错误集合。
+此 API 返回遇到的第一个故障。 如果一个或多个属性未能通过多次验证，则仅返回第一个验证失败的属性。 但是，如果您仅验证前缀和后缀命名策略，您可以验证邮件昵称和显示名称并接收验证错误集合。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -78,7 +78,6 @@ POST /groups/{id}/validateProperties
 ``` http
 POST https://graph.microsoft.com/beta/groups/{id}/validateProperties
 Content-type: application/json
-Content-length: 132
 
 {
   "displayName": "Myprefix_test_mysuffix",
@@ -120,7 +119,6 @@ HTTP/1.1 204 No Content
 ``` http
 POST https://graph.microsoft.com/beta/groups/{id}/validateProperties
 Content-type: application/json
-Content-length: 128
 
 {
   "displayName": "MyPrefix_test_mysuffix",
@@ -132,7 +130,6 @@ Content-length: 128
 ```http
 HTTP/1.1 422
 Content-type: application/json
-Content-length: 223
 
 {
   "error": {

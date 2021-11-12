@@ -2,15 +2,15 @@
 title: 创建保管人
 description: 创建新的保管人对象。
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 80c3a8f6bb7a204ddc5512d1f6c66b261ea342a6
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 2822932a76c334d75495585de0209515479fac40
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50446083"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942378"
 ---
 # <a name="create-custodian"></a>创建保管人
 
@@ -18,7 +18,7 @@ ms.locfileid: "50446083"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的保管 [人](../resources/ediscovery-custodian.md) 对象。 创建保管人对象后，你需要创建保管人 [的用户来源](../resources/ediscovery-usersource.md) 以引用其邮箱和 OneDrive for Business 网站。
+创建新的保管 [人](../resources/ediscovery-custodian.md) 对象。 创建保管人对象后，你需要创建保管人[的用户来源](../resources/ediscovery-usersource.md)，以引用其邮箱和OneDrive for Business网站。
 
 ## <a name="permissions"></a>Permissions
 
@@ -28,7 +28,7 @@ ms.locfileid: "50446083"
 |:---|:---|
 |委派（工作或学校帐户）|eDiscovery.Read.All、eDiscovery.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -50,18 +50,18 @@ POST /compliance/ediscovery/cases/{caseId}/custodians
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供保管人对象的 JSON [表示形式](../resources/ediscovery-custodian.md) 。
+在请求正文中，提供保管人对象的 JSON [表示](../resources/ediscovery-custodian.md) 形式。
 
-下表显示创建保管人时所需的 [属性](../resources/ediscovery-custodian.md)。
+下表显示创建保管人 时所需的 [属性](../resources/ediscovery-custodian.md)。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |email|String|保管人的主 SMTP 地址。 必需。|
-|applyHoldToSources|布尔|指示是否将保留应用于保管人的来源 (如邮箱、网站或 Teams) 。|
+|applyHoldToSources|Boolean|指示是否将保留应用于保管人的来源 (邮箱、网站或Teams) 。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `201 Created` [microsoft.graph.ediscovery.custodian](../resources/ediscovery-custodian.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [microsoft.graph.ediscovery.custodian](../resources/ediscovery-custodian.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -77,7 +77,6 @@ POST /compliance/ediscovery/cases/{caseId}/custodians
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/2192ca408ea2410eba3bec8ae873be6b/custodians
 Content-Type: application/json
-Content-length: 279
 
 {
     "email":"AdeleV@contoso.com",

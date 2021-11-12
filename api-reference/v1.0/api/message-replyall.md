@@ -5,12 +5,12 @@ author: abheek-das
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4c6d22d1623b03ce57ecbb8647af59200360878b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 191795d56368c028428709dbb489874f278171b4
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59016097"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944492"
 ---
 # <a name="message-replyall"></a>消息：replyAll
 
@@ -30,7 +30,7 @@ ms.locfileid: "59016097"
 
 或者，[创建一个草稿以全部答复邮件，](../api/message-createreplyall.md)[并稍后](../api/message-send.md)发送。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -56,7 +56,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/replyAll
 ## <a name="request-body"></a>请求正文
 使用 JSON 格式时，在请求正文中提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |注释|String|要包含的注释。可以为空字符串。|
 
@@ -82,7 +82,6 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/replyAll
 ```http
 POST https://graph.microsoft.com/v1.0/me/messages/{id}/replyAll
 Content-type: application/json
-Content-length: 32
 
 {
   "comment": "comment-value"

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sharmas
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 98458e5d0f3731631c4f520f1a17e615270c5d26
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: d7847f6e38f6a4ce1ce64773f0ced248417beae1
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59767004"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936381"
 ---
 # <a name="educationassignment-setupresourcesfolder"></a>educationAssignment： setUpResourcesFolder
 
@@ -20,7 +20,7 @@ ms.locfileid: "59767004"
 
 教师确定要上载到作业文件夹中的资源。 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -96,7 +96,6 @@ Content-type: application/json
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 279
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('955e0bd5-52c2-41ad-b7e8-5b33a18c5e78')/assignments/$entity",
@@ -159,7 +158,6 @@ Content-length: 279
 ```http
 HTTP/1.1 400 Bad request
 Content-type: application/json
-Content-length: 158
 
 {
     "error": {

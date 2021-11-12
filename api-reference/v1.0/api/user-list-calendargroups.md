@@ -5,19 +5,19 @@ ms.localizationpriority: medium
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: dde0ab65359822d7a7a9b41d7a3b3a0aa9aae598
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e63d140d8a78fe2e7c88ac925aaf29eb9640e227
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59021832"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942581"
 ---
 # <a name="list-calendargroups"></a>List calendarGroups
 
 命名空间：microsoft.graph
 
 获取用户的日历组。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -87,7 +87,6 @@ GET https://graph.microsoft.com/v1.0/me/calendarGroups
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 155
 
 {
   "value": [

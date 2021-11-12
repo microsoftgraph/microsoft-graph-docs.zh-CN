@@ -1,16 +1,16 @@
 ---
 title: 更新 plannerTask
 description: 更新 **plannertask** 对象的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: a0973fccf01a7f631e075cd6c4d3383b46613048
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: bda1bee006ff0f32ddf9b2ef71bd411a8f72b021
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049980"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60926719"
 ---
 # <a name="update-plannertask"></a>更新 plannerTask
 
@@ -19,7 +19,7 @@ ms.locfileid: "52049980"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新 **plannertask** 对象的属性。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -42,19 +42,19 @@ PATCH /planner/tasks/{id}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为获得最佳性能，请勿包含尚未更改的现有值。
 
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |appliedCategories|[plannerAppliedCategories](../resources/plannerappliedcategories.md)|此任务已应用的类别。有关可能的值，请参阅[已应用的类别](../resources/plannerappliedcategories.md)。|
 |assigneePriority|String|用于为列表视图中的此类型项目排序的提示。[此处](../resources/planner-order-hint-format.md)概述了此格式。|
 |assignments|[plannerAssignments](../resources/plannerassignments.md)|分配到任务的用户集合。|
 |bucketId|String|任务所属的存储桶 ID。 存储桶需要位于任务所在的计划中。 长度为 28 个字符，区分大小写。 [格式验证](../resources/tasks-identifiers-disclaimer.md)在服务上完成。 |
 |conversationThreadId|字符串|任务对话的线程 id。这是在组中创建的对话线程对象的 id。|
-|dueDateTime|DateTimeOffset|任务截止的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
+|dueDateTime|DateTimeOffset|任务截止的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`2014-01-01T00:00:00Z`|
 |orderHint|String|用于为列表视图中的此类型项目排序的提示。[此处](../resources/planner-order-hint-format.md)概述了此格式。|
 |percentComplete|Int32|任务完成的百分比。当设置为 `100` 时，任务被视为完成。 |
 |planId|String|此任务所属的计划 id。|
-|priority|Int32|任务的优先级。 值的有效范围介于 和 (之间) ，而增加的值具有较低的优先级 (具有最高优先级，并且具有最低优先级 `0` `10` `0` `10`) 。  目前，Planner 将值 和 解释为"紧急"，将 和 解释为 `0` `1` `2` `3` `4` "重要"、""、" 和 `5` `6` `7` "medium"， 和 ，并 `8` `9` `10` 解释为"低"。  目前，Planner 将设置 `1` `3` "urgent"、"important"、"medium"和 `5` `9` "low"的值。|
-|startDateTime|DateTimeOffset|任务开始的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
+|priority|Int32|任务的优先级。 值的有效范围介于 和 (之间) ，随着值的增加，优先级较低 (具有最高优先级，并且具有最低优先级 `0` `10` `0` `10`) 。  目前，Planner 将值 和 解释为"紧急"，将 和 解释为 `0` `1` `2` `3` `4` "重要"、""、" 和 `5` `6` `7` "medium"， 和 ，并 `8` `9` `10` 解释为"低"。  目前，Planner 将设置 `1` `3` "urgent"、"important"、"medium"和 `5` `9` "low"的值。|
+|startDateTime|DateTimeOffset|任务开始的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`2014-01-01T00:00:00Z`|
 |title|String|任务的标题。|
 
 ## <a name="response"></a>响应
@@ -75,7 +75,6 @@ PATCH /planner/tasks/{id}
 ```http
 PATCH https://graph.microsoft.com/beta/planner/tasks/01gzSlKkIUSUl6DF_EilrmQAKDhh
 Content-type: application/json
-Content-length: 247
 Prefer: return=representation
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
@@ -114,7 +113,6 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1423
 
 {
   "createdBy": {

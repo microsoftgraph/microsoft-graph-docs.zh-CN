@@ -5,19 +5,19 @@ author: vishriv
 ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: apiPageType
-ms.openlocfilehash: 0ecdf18da98696edebef6eeb6574e86e43c2a23e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ab12ed1b273d9d1f109035b872bdabfb678f17b9
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59015653"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943638"
 ---
 # <a name="update-store"></a>更新存储
 命名空间：microsoft.graph.termStore
 
 更新 store [对象的属性](../resources/termstore-store.md) 。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -47,10 +47,10 @@ PATCH sites/{site-id}/termStore
 
 下表显示了可编辑存储对象 [的属性](../resources/termstore-store.md) 。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |defaultLanguageTag|String|默认语言 [microsoft.graph.termstore.store](../resources/termstore-store.md)。|
-|languageTags|字符串集合|中可用的[microsoft.graph.termstore.store。](../resources/termstore-store.md)|
+|languageTags|String 集合|中可用的[microsoft.graph.termstore.store。](../resources/termstore-store.md)|
 
 
 
@@ -72,7 +72,6 @@ PATCH sites/{site-id}/termStore
 ``` http
 PATCH https://graph.microsoft.com/v1.0/sites/microsoft.sharepoint.com,b9b0bc03-cbc4-40d2-aba9-2c9dd9821ddf,6a742cee-9216-4db5-8046-13a595684e74/termStore
 Content-Type: application/json
-Content-length: 133
 
 {
   "defaultLanguageTag": "en-US"

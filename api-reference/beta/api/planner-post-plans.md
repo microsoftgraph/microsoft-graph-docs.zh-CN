@@ -1,16 +1,16 @@
 ---
 title: 创建 plannerPlan
 description: 使用此 API 新建 **plannerPlan**。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: a12e055c4972f7064cdf91239502b7bb54e5c787
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 8ac379336f0b9b4466c2332a63ca44618cc66ea1
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473813"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60935555"
 ---
 # <a name="create-plannerplan"></a>创建 plannerPlan
 
@@ -20,13 +20,13 @@ ms.locfileid: "51473813"
 
 创建新的 **plannerPlan**。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 | :------------------------------------- | :------------------------------------------ |
-| 委派（工作或学校帐户）     | Tasks.ReadWrite、Group.ReadWrite.All                         |
+| 委派（工作或学校帐户）     | Tasks.ReadWrite，Group.ReadWrite.All                         |
 | 委派（个人 Microsoft 帐户） | 不支持。                              |
 | 应用程序                            | 不支持。                              |
 
@@ -49,7 +49,7 @@ POST /planner/plans
 在请求正文中，提供 [plannerPlan](../resources/plannerplan.md) 对象的 JSON 表示形式。
 **必须设置 plannerPlan** 容器属性。
 
->**注意：** 如果容器是 Microsoft 365 组，则创建计划的用户必须是将包含该计划的组的成员。 使用“[创建组](../api/group-post-groups.md)”创建新组时，系统不会将你添加为组成员。 创建组后，使用“[组帖子成员](../api/group-post-members.md)”将自己添加为成员。
+>**注意：** 如果容器是Microsoft 365组，则创建计划的用户必须是将包含计划的组的成员。 使用“[创建组](../api/group-post-groups.md)”创建新组时，系统不会将你添加为组成员。 创建组后，使用“[组帖子成员](../api/group-post-members.md)”将自己添加为成员。
 
 ## <a name="response"></a>响应
 
@@ -71,7 +71,6 @@ POST /planner/plans
 ``` http
 POST https://graph.microsoft.com/beta/planner/plans
 Content-type: application/json
-Content-length: 140
 
 {
   "container": {
@@ -112,7 +111,6 @@ Content-length: 140
 ``` http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 544
 
 {
   "createdBy": {

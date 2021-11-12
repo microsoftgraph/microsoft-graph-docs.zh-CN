@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d1245bb70f2f92278bc3a3c2d5db4decb5d9b739
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7a4acb635a050b148ef6e30aa03dd625bf1ed22d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59007431"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941552"
 ---
 # <a name="get-primarychannel"></a>获取 primaryChannel
 
@@ -95,7 +95,6 @@ GET https://graph.microsoft.com/v1.0/teams/{id}/primaryChannel
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 401
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('32e3b156-66b2-4135-9aeb-73295a35a55b')/primaryChannel/$entity",

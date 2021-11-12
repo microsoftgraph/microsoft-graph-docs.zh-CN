@@ -5,12 +5,12 @@ author: abheek-das
 ms.localizationpriority: high
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 909a24f9c9c0843e97f8f1fd223bdb69706188b8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f2ee2a60e24fa023a7b3a48f5497c3dc6037371e
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59016153"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944520"
 ---
 # <a name="list-attachments"></a>列出附件
 
@@ -98,7 +98,6 @@ GET https://graph.microsoft.com/v1.0/me/messages/{id}/attachments
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 215
 
 {
   "value": [

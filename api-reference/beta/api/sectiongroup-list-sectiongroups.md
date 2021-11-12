@@ -1,16 +1,16 @@
 ---
 title: 列出 sectionGroups
-description: 从指定分区组中检索分区组列表。
-localization_priority: Normal
+description: 从指定的分区组检索分区组列表。
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 3e701566ab64e64bb1c1233a4d0ac0501d758310
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 142b1b989e3dc3e85a5bec225551f36ef5d3785d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976848"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945360"
 ---
 # <a name="list-sectiongroups"></a>列出 sectionGroups
 
@@ -18,8 +18,8 @@ ms.locfileid: "48976848"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从指定分区组中检索 [分区组](../resources/sectiongroup.md) 列表。
-## <a name="permissions"></a>权限
+从指定的 [分区组检索](../resources/sectiongroup.md) 分区组列表。
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -41,9 +41,9 @@ GET /sites/{id}/onenote/sectionGroups/{id}/sectionGroups
 
 默认排序顺序是 `name asc`。
 
-默认查询将展开 `parentNotebook` 并选择其 `id` 、 `displayName` 和 `self` 属性。 `expand`节组的有效值为 `sections` 、、 `sectionGroups` `parentNotebook` 和 `parentSectionGroup` 。
+默认查询将 `parentNotebook` 展开并选择其 、 `id` `displayName` 和 `self` 属性。 分区 `expand` 组的有效值为 `sections` `sectionGroups` 、、 `parentNotebook` 和 `parentSectionGroup` 。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
@@ -54,7 +54,7 @@ GET /sites/{id}/onenote/sectionGroups/{id}/sectionGroups
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [sectionGroup](../resources/sectiongroup.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [sectionGroup](../resources/sectiongroup.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -96,7 +96,6 @@ GET https://graph.microsoft.com/beta/me/onenote/sectionGroups/{id}/sectionGroups
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 378
 
 {
   "value": [

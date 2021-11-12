@@ -2,15 +2,15 @@
 title: 更换 schedulingGroup
 description: 替换现有的 schedulingGroup。
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 776dd553c6573455e5577156a52e9b5d69a7add8
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6375b0a42ab0d50fb9ef95d806f1a57412850307
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051996"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60926439"
 ---
 # <a name="replace-schedulinggroup"></a>更换 schedulingGroup
 
@@ -22,7 +22,7 @@ ms.locfileid: "52051996"
 
 如果指定的 [schedulingGroup](../resources/schedulinggroup.md) 不存在，此方法将返回 `404 Not found` 。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -113,7 +113,6 @@ Prefer: return=representation
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 401
 
 {
   "id": "TAG_f914d037-00a3-4ba4-b712-ef178cbea263",

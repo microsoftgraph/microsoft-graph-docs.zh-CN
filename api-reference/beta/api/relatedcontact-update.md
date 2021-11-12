@@ -2,15 +2,15 @@
 title: 更新 relatedContacts
 description: 更新 educationUser 对象的 relatedContact 集合。
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 8c57418c9f3e6f8380dd6110bcb2c6ff103cab502307992a5c7d1e37a8f2ec81
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3ab447edb970b2d2e164578ddec4de47d3690bec
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57158490"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941974"
 ---
 # <a name="update-relatedcontacts"></a>更新 relatedContacts
 
@@ -23,7 +23,7 @@ ms.locfileid: "57158490"
 > [!NOTE]
 > 更新 **relatedContacts** 将替换整个集合。 无法添加、删除或更新单个联系人。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -57,7 +57,7 @@ PATCH /education/users/{id}
 
 下表显示更新 [educationUser](../resources/educationuser.md)时所需的属性。
 
-| 属性        | 类型                                                        | 说明                                    |
+| 属性        | 类型                                                        | Description                                    |
 | :-------------- | :---------------------------------------------------------- | :--------------------------------------------- |
 | relatedContacts | [relatedContact](../resources/relatedcontact.md) 集合 | 用户的完整相关联系人集 |
 
@@ -84,7 +84,6 @@ PATCH /education/users/{id}
 ```http
 PATCH https://graph.microsoft.com/beta/education/users/{educationUserId}
 Content-Type: application/json
-Content-length: 408
 
 {
   "relatedContacts": [

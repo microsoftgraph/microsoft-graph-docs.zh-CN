@@ -2,15 +2,15 @@
 title: workbookChartCollection： add
 description: 创建新的 workbookChart。
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: d81bdb08f5efa503e56961b2bb5fdba694c5aba4
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 16b300f90cd841845e6f38e33b6164c72b706189
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047460"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60927224"
 ---
 # <a name="workbookchartcollection-add"></a>workbookChartCollection： add
 
@@ -19,7 +19,7 @@ ms.locfileid: "52047460"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 创建新图表。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -44,7 +44,7 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/add
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |类型|string|表示图表的类型。  可能的值是 `ColumnClustered` `ColumnStacked` `ColumnStacked100` `BarClustered` `BarStacked` `BarStacked100` ：、、、、、、、。 `LineStacked` `LineStacked100` `LineMarkers` `LineMarkersStacked` `LineMarkersStacked100` `PieOfPie` `etc.`|
 |sourceData|Json|对应于源数据的 Range 对象。|
@@ -67,7 +67,6 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/add
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/add
 Content-type: application/json
-Content-length: 94
 
 {
   "type": "ColumnStacked",
@@ -95,7 +94,7 @@ Content-length: 94
 
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -104,7 +103,6 @@ Content-length: 94
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 52
 
 {
   "id": "id-value",

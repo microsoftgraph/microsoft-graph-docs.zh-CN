@@ -2,15 +2,15 @@
 title: 更新 printConnector
 description: 更新 printConnector 对象的属性。
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 49b3cb83c3fb93867f8038d170a5c68b7b4c61cb
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 06f0d937a0461511c11a15dc18fc0463f0a40d03
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055314"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942007"
 ---
 # <a name="update-printconnector"></a>更新 printConnector
 
@@ -20,7 +20,7 @@ ms.locfileid: "52055314"
 
 更新 **printConnector 对象** 的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 若要使用通用打印服务，除了下表中列出的权限之外，用户或应用的租户还必须具有活动的通用打印订阅。 登录的用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
@@ -45,7 +45,7 @@ PATCH /print/connectors/{id}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性     | 类型        | 说明 |
+| 属性     | 类型        | Description |
 |:-------------|:------------|:------------|
 |name|String|连接器的名称。|
 |fullyQualifiedDomainName|String|连接器计算机主机名。|
@@ -69,7 +69,6 @@ PATCH /print/connectors/{id}
 ```http
 PATCH https://graph.microsoft.com/beta/print/connectors/{id}
 Content-type: application/json
-Content-length: 300
 
 {
   "displayName": "ConnectorName",
@@ -115,7 +114,6 @@ Content-length: 300
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 406
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/connectors/$entity",

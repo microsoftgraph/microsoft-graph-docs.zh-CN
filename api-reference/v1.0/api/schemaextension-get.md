@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: d3c1e5b2279b68ad127cf69c62e1604029717d7b
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: c0c6af6f7087fb189e780aefb840f627db8ed672
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59765996"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60927566"
 ---
 # <a name="get-schemaextension"></a>获取 schemaExtension
 
 命名空间：microsoft.graph 获取指定 [schemaExtension 定义](../resources/schemaextension.md) 的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -87,7 +87,6 @@ GET https://graph.microsoft.com/v1.0/schemaExtensions/graphlearn_test
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 201
 
 {
     "id":"graphlearn_test",

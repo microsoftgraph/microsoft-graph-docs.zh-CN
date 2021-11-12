@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 685667236af5e9f0fa599eeb0c9a8cfbd1f8e46f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 53f3ba4e56e5392f2dc98de6464b273d785f3ba4
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59007432"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938138"
 ---
 # <a name="get-a-user"></a>获取用户
 
@@ -94,7 +94,6 @@ GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 491
 
 {
   "businessPhones": [
@@ -157,7 +156,6 @@ GET https://graph.microsoft.com/v1.0/me
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 491
 
 {
   "businessPhones": [
@@ -217,7 +215,6 @@ GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}?$select=disp
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 491
 
 {
    "displayName": "Adele Vance",

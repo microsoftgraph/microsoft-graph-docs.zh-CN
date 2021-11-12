@@ -1,16 +1,16 @@
 ---
 title: 创建页面
 description: 在指定分区中新建页面。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 8df217f4ebc84eebaa0ff938028ef3b571058808
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 402ff69bf2277e65da2446a02a8e17e792e81e6b
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067662"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60926397"
 ---
 # <a name="create-page"></a>创建页面
 
@@ -19,7 +19,7 @@ ms.locfileid: "48067662"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 在指定分区中新建[页面](../resources/onenotepage.md)。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -49,7 +49,7 @@ POST /sites/{id}/onenote/sections/{id}/pages
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [onenotePage](../resources/onenotepage.md) 对象。
+如果成功，此方法在 `201 Created` 响应正文中返回 响应代码和新 [onenotePage](../resources/onenotepage.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -58,7 +58,6 @@ POST /sites/{id}/onenote/sections/{id}/pages
 <!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/beta/me/onenote/sections/{id}/pages
-Content-length: 312
 Content-type: multipart/form-data; boundary=MyPartBoundary198374
 
 --MyPartBoundary198374
@@ -100,7 +99,6 @@ Content-Type:application/pdf
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 312
 
 {
   "title": "title-value",

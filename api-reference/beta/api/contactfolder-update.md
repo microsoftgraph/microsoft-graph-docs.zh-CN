@@ -2,15 +2,15 @@
 title: 更新 contactfolder
 description: 更新 contactfolder 对象的属性。
 author: kevinbellinger
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 471b2965e39c8aa43e01f7df6bae1aaf91792b2e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 7f872d80aa31d4b93bb67ff778c73ffb2b0d0dfb
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047061"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944856"
 ---
 # <a name="update-contactfolder"></a>更新 contactfolder
 
@@ -19,7 +19,7 @@ ms.locfileid: "52047061"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新 contactfolder 对象的属性。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -64,7 +64,6 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}
 ```http
 PATCH https://graph.microsoft.com/beta/me/contactFolders/{id}
 Content-type: application/json
-Content-length: 84
 
 {
   "parentFolderId": "parentFolderId-value",
@@ -90,7 +89,7 @@ Content-length: 84
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -99,7 +98,6 @@ Content-length: 84
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 104
 
 {
   "parentFolderId": "parentFolderId-value",

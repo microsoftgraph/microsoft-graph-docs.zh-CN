@@ -2,15 +2,15 @@
 title: 将 educationClass 添加到 educationSchool
 description: 向学校添加课程。
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b2837ee537c5dfc52766fce0a680a3c367d290d2
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: ed4485f31f20e3e15824e21692ef96bae37bc8a1
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52785975"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936794"
 ---
 # <a name="add-educationclass-to-educationschool"></a>将 educationClass 添加到 educationSchool
 
@@ -20,7 +20,7 @@ ms.locfileid: "52785975"
 
 向学校添加课程。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -59,7 +59,6 @@ POST /education/schools/{id}/classes/$ref
 ```http
 POST https://graph.microsoft.com/beta/education/schools/10002/classes/$ref
 Content-type: application/json
-Content-length: 224
 
 {
  "@odata.id":"https://graph.microsoft.com/beta/education/classes/11006"

@@ -1,16 +1,16 @@
 ---
 title: 列出所有者
 description: '检索组的所有者列表。所有者是一组具有 group 对象修改权限的非管理员用户。 '
-localization_priority: Priority
+ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 37991b6dc0e879f88b48657853a79eaa75b1c530
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 74039261246a15160a51b5b8fc02f654d2da9d4d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680631"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943743"
 ---
 # <a name="list-owners"></a>列出所有者
 
@@ -27,7 +27,7 @@ ms.locfileid: "52680631"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | GroupMember.Read.All，Group.Read.All，GroupMember.ReadWrite.All，Group.ReadWrite.All，Directory.Read.All，Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | GroupMember.Read.All，Group.Read.All，GroupMember.ReadWrite.All，Group.ReadWrite.All，Directory.Read.All，Directory.AccessAsUser.All  |
+|应用程序 | GroupMember.Read.All, Group.Read.All, GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.Read.All  |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -94,7 +94,6 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/owners
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
 
 {
   "value": [

@@ -1,16 +1,16 @@
 ---
 title: 更新 educationUser 属性
 description: 更新 **educationuser** 对象的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 2cf940f4327d32082b95deb0658a316ac4e2ecac9c0fc03285c018ceecbd3bdf
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 81d821571007f8df619b536f1a975abf6617086b
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57163694"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936766"
 ---
 # <a name="update-educationuser-properties"></a>更新 educationUser 属性
 
@@ -20,7 +20,7 @@ ms.locfileid: "57163694"
 
 更新 **educationuser** 对象的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -53,7 +53,7 @@ PATCH /education/users/{id}
 | 属性         | 类型               | 说明                                                                                                                                     |
 | :--------------- | :----------------- | :---------------------------------------------------------------------------------------------------------------------------------------------- |
 | displayName      | String             | 显示用户名称                                                                                                                            |
-| givenName        | 字符串             | 名字                                                                                                                                      |
+| givenName        | String             | 名字                                                                                                                                      |
 | middleName       | String             | 用户的中间名                                                                                                                             |
 | surname          | String             | 用户的姓                                                                                                                                 |
 | mail             | String             | 电子邮件地址                                                                                                                                   |
@@ -85,7 +85,6 @@ PATCH /education/users/{id}
 ```http
 PATCH https://graph.microsoft.com/beta/education/users/13020
 Content-type: application/json
-Content-length: 508
 
 {
   "displayName": "Rogelio Cazares",
@@ -129,7 +128,6 @@ Content-length: 508
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 508
 
 {
   "id": "13020",

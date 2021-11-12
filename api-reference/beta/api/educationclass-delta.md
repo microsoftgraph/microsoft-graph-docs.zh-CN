@@ -1,16 +1,16 @@
 ---
 title: educationClass： delta
 description: 获取新创建或更新的类（包括成员身份更改）而无需执行整个类集合的完全读取。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mlafleur
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e8b93c8ddd251bbc25efc9203417d6736e6bf62c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 2fcf15553cbf9b8c632b0ea5739f39b93cada60d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52044079"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937865"
 ---
 # <a name="educationclass-delta"></a>educationClass： delta
 
@@ -20,7 +20,7 @@ ms.locfileid: "52044079"
 
 获取新创建或更新的类（包括成员身份更改）而无需执行整个类集合的完全读取。 有关详细信息 [，请参阅使用 delta](/graph/delta-query-overview) 查询。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "52044079"
 | :------------------------------------- | :----------------------------------------------------------------------- |
 | 委派（工作或学校帐户）     | EduRoster.ReadBasic、EduRoster.Read 或 EduRoster.ReadWrite              |
 | 委派（个人 Microsoft 帐户） | 不支持。                                                           |
-| 应用程序                            | EduRoster.ReadBasic.All、EduRoster.Read.All 或 EduRoster.WriteWrite.All |
+| 应用程序                            | EduRoster.ReadBasic.All、EduRoster.Read.All 或 EduRoster.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -108,7 +108,6 @@ GET https://graph.microsoft.com/beta/education/classes/delta
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 585
 
 {
   "value": [

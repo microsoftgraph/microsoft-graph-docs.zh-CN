@@ -1,16 +1,16 @@
 ---
 title: checkMemberGroups
-description: 检查指定组列表中的成员身份。 从列表返回这些组
+description: 检查指定组列表中的成员身份。从以下组的列表返回值
 author: jpettere
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: df3b03522ab8ee5e144cba8a6e38f0361cee3b96
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c42ea27c93a59f8b2d9c1384f95ce3443ef6e1b9
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053375"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937655"
 ---
 # <a name="checkmembergroups"></a>checkMemberGroups
 
@@ -77,7 +77,6 @@ POST /users/{id | userPrincipalName}/checkMemberGroups
 ```http
 POST https://graph.microsoft.com/beta/me/checkMemberGroups
 Content-type: application/json
-Content-length: 44
 
 {
   "groupIds": [
@@ -106,7 +105,7 @@ Content-length: 44
 
 ##### <a name="response"></a>响应
 
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -118,7 +117,6 @@ Content-length: 44
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 39
 
 {
   "value": [
