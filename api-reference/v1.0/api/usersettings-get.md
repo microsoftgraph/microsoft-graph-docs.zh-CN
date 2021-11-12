@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 06c94498a2755b6355f559a041d579e5275d3413
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 96e33ad5b9309251e3bf391d174b692dde5fc698
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59021790"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947390"
 ---
 # <a name="get-settings"></a>获取设置
 
@@ -63,7 +63,6 @@ GET https://graph.microsoft.com/v1.0/me/settings
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 72
 
 {
   "contributionToContentDiscoveryAsOrganizationDisabled": false,

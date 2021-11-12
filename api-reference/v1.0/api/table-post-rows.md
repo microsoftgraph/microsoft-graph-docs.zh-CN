@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 4612bcb06cb79e2802284fa780e8ac88b38228a3
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 32db28c90c4c3bed97daef72d05562edcdb01e89
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59763869"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947491"
 ---
 # <a name="create-tablerow"></a>创建 TableRow
 
@@ -22,7 +22,7 @@ ms.locfileid: "59763869"
 
 此请求有时可能会导致 `504 HTTP` 错误。 此错误的适当响应做法是重复发出请求。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -54,7 +54,7 @@ POST /me/drive/root:/{item-path}:/workbookworksheets/{id|name}/tables/{id|name}/
 
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-|参数|类型|说明|
+|参数|类型|Description|
 |:---------------|:--------|:----------|
 | index| Int32| 可选。指定新行的相对位置。如果为空，将在末尾进行添加。插入的行下方的任何行将向下移动。从零开始编制索引。|
 | 值| [Json](../resources/json.md)| 表格行的无格式值的二维数组。|
@@ -83,7 +83,6 @@ POST /me/drive/root:/{item-path}:/workbookworksheets/{id|name}/tables/{id|name}/
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/01CCETFLK7GVZTZHSQNRD2AEI5XWTCU6FJ/workbook/tables/Table1/rows
 Content-type: application/json
-Content-length: 90
 
 {
   "values": "[
@@ -124,7 +123,6 @@ Content-length: 90
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 45
 
 {
   "index": 99,
@@ -153,7 +151,6 @@ POST https://graph.microsoft.com/beta/me/drive/items/01CCETFLK7GVZTZHSQNRD2AEI5X
 Content-type: application/json
 Prefer: respond-async
 Workbook-Session-Id: {Workbook-Session-Id}
-Content-length: 51
 
 {
   "values": "[
@@ -177,7 +174,6 @@ Content-length: 51
 HTTP/1.1 202 Accepted
 Location: https://graph.microsoft.com/beta/me/drive/items/01CCETFLK7GVZTZHSQNRD2AEI5XWTCU6FJ/workbook/operations/0195cfac-bd22-4f91-b276-dece0aa2378b?sessionId=Y2x1c3Rlcj1QU0c0JnNlc3Npb249MTUuU0cyUEVQRjAwMDI4RjI1MS5BMTE2LjEuVTM2LmM4MGRiNjkwLTQwMTktNGNkNS1hYWJiLTJmYzczM2YxZTQ5ZjE0LjUuZW4tVVM1LmVuLVVTMjQuMTAwM2JmZmRhYzUyMzkzOS1Qcml2YXRlMS5TMjQuJTJmUEI0JTJmWjJqZmt1aXhJZHBjeE8xYmclM2QlM2QxNi4xNi4wLjE0NDEwLjM1MDUwMTQuNS5lbi1VUzUuZW4tVVMxLk0xLk4wLjEuUyZ1c2lkPWExOTMyNTU0LTlhNDAtNzYzNi1mNDU3LWEyNjExMmFkNDg2YQ==
 Content-type: application/json
-Content-length: 45
 
 {
 }

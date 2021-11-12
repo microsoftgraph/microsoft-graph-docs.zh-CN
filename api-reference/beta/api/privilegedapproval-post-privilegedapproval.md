@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: 76128555f3a248c27fe580efce95cb800293ed98
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: e3858e778fb317d947ad5f93e7d47c8f1d9e547f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696012"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60932981"
 ---
 # <a name="create-privilegedapproval"></a>创建 privilegedApproval
 
@@ -21,7 +21,7 @@ ms.locfileid: "60696012"
 [!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 使用此 API 创建新的 privilegedApproval。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -63,7 +63,6 @@ POST /privilegedApproval
 ```http
 POST https://graph.microsoft.com/beta/privilegedApproval
 Content-type: application/json
-Content-length: 180
 
 {
   "userId": "userId-value",
@@ -102,7 +101,6 @@ Content-length: 180
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 200
 
 {
   "id": "id-value",

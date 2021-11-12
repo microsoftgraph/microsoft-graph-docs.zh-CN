@@ -2,15 +2,15 @@
 title: 创建 plannerRosterMember
 description: 创建新的 plannerRosterMember 对象。
 author: tarkansevilmis
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: e7dac57941d50ee8b543c53982c216c4c19d5d07
-ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
+ms.openlocfilehash: 9ee7054f243dc220c7747feb9bb308c9d86e6c8c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50272425"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60925137"
 ---
 # <a name="create-plannerrostermember"></a>创建 plannerRosterMember
 命名空间：microsoft.graph
@@ -59,7 +59,7 @@ POST /planner/rosters/{plannerRosterId}/members
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `201 Created` [plannerRosterMember](../resources/plannerrostermember.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [plannerRosterMember](../resources/plannerrostermember.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -74,7 +74,6 @@ POST /planner/rosters/{plannerRosterId}/members
 ``` http
 POST https://graph.microsoft.com/beta/planner/rosters/6519868f-868f-6519-8f86-19658f861965/members
 Content-Type: application/json
-Content-length: 78
 
 {
   "@odata.type": "#microsoft.graph.plannerRosterMember",

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 09bb79e8d21aead6fd0ff126cc7c92ad8eaf9ced
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 661cdd8d6b5ef995cd14898a23f75cf85f75246d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59016636"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940688"
 ---
 # <a name="create-b2xidentityuserflow"></a>创建 b2xIdentityUserFlow
 
@@ -18,7 +18,7 @@ ms.locfileid: "59016636"
 
 创建新的 [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -54,8 +54,8 @@ POST /identity/b2xUserFlows
 
 |属性|类型|说明|
 |:---------------|:--------|:----------|
-|id|String|必填。 用户流名称。 该名称将在创建后进行 `B2X_1` 预笔式处理。|
-|userFlowType|String|必填。 要创建的用户流的类型。 此值将始终为 `signUpOrSignIn` 。|
+|id|String|必需。 用户流名称。 该名称将在创建后进行 `B2X_1` 预笔式处理。|
+|userFlowType|String|必需。 要创建的用户流的类型。 此值将始终为 `signUpOrSignIn` 。|
 |userFlowTypeVersion|浮点|必需。 用户流版本。 此值将始终为 1。|
 |apiConnectorConfiguration|[userFlowApiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)|可选。 用于启用 API 连接器的配置，以便其可以成为用户流的一部分。|
 
@@ -82,7 +82,6 @@ POST /identity/b2xUserFlows
 ``` http
 POST https://graph.microsoft.com/v1.0/identity/b2xUserFlows
 Content-type: application/json
-Content-length: 154
 
 {
     "id": "Partner",
@@ -150,7 +149,6 @@ Content-type: application/json
 ``` http
 POST https://graph.microsoft.com/v1.0/identity/b2xUserFlows
 Content-type: application/json
-Content-length: 154
 
 {
     "id": "Partner",
@@ -225,7 +223,6 @@ Content-type: application/json
 ``` http
 POST https://graph.microsoft.com/v1.0/identity/b2xUserFlows
 Content-type: application/json
-Content-length: 154
 
 {
     "id": "UserFlowWithAPIConnector",

@@ -1,33 +1,33 @@
 ---
-title: 打印机：创建
-description: 使用通用打印服务创建 (寄存器) 打印机。
+title: printer： create
+description: 创建 (通用) 在打印机上注册。
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 2173c4e8dfb4b4769d6c9fa5fe3b8f5df790670f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 01aea7fbcd4c4723f7d2253fc9591bd0c75d85e8
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972465"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939336"
 ---
-# <a name="printer-create"></a>打印机：创建
+# <a name="printer-create"></a>printer： create
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建 (注册) 使用通用打印服务的打印机。 这是一个长时间运行的操作，因此它返回可用于跟踪和验证打印机注册的 [printerCreateOperation](../resources/printercreateoperation.md) 。
+创建 (通用) 在打印机上注册。 这是一个长时间运行的操作，因此它将返回一个 [printerCreateOperation，](../resources/printercreateoperation.md) 该打印机可用于跟踪和验证打印机的注册。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。 登录用户必须是 [打印机管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
+除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。 登录的用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
-|委派（工作或学校帐户）| "完全控制"、"全部"、"全打印机" |
+|委派（工作或学校帐户）| Printer.Create、Printer.ReadWrite.All、Printer.FullControl.All |
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序| 不支持。 |
 
@@ -45,20 +45,20 @@ POST /print/printers/create
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下属性的 JSON 对象。
 
-| 参数      | 类型    |说明| 是否必需？ |
+| 参数      | 类型    |Description| 是否必需？ |
 |:---------------|:--------|:----------|:----------|
-|displayName|String|要分配给打印机的显示名称。|是|
+|displayName|String|要显示名称打印机的打印机。|是|
 |manufacturer|String|打印机的制造商。|是|
-|model|String|打印机的型号。|是|
-|physicalDeviceId|String|打印机的物理设备 UUID。 如果属性为 true，则为必需 `hasPhysicalDevice` 。|否|
-|hasPhysicalDevice|Boolean|如果打印机具有物理输出设备，则为 True，否则为 false。 如果省略，则默认值为 true。|否|
-|certificateSigningRequest|[printCertificateSigningRequest](../resources/printcertificatesigningrequest.md)|X.509 证书签名请求 (CSR) 为打印机创建并使用的证书来标识自己。|是|
-|connectorId|String|充当打印机代理的连接器的 Id。|否|
+|model|String|打印机的模型。|是|
+|physicalDeviceId|String|打印机的物理设备 UUID。 如果属性为 `hasPhysicalDevice` true，则必需。|否|
+|hasPhysicalDevice|Boolean|如果打印机具有物理输出设备，则其为 True，否则为 false。 如果省略，则默认值为 true。|否|
+|certificateSigningRequest|[printCertificateSigningRequest](../resources/printcertificatesigningrequest.md)|X.509 证书签名 (CSR) 由打印机创建和用于标识自身的证书。|是|
+|connectorId|String|充当打印机代理的连接器的 ID。|否|
 
 ## <a name="response"></a>响应
-如果成功，此方法将 `202 Accepted` 在标头中返回响应代码和关联的 [printerCreateOperation](../resources/printercreateoperation.md) 的链接 `Operation-Location` 。
+如果成功，此方法在标头中返回 响应代码和关联 `202 Accepted` [printerCreateOperation](../resources/printercreateoperation.md) `Operation-Location` 的链接。
 
-向链接的 URL 发出 GET 请求可用于获取正在进行的打印机注册的状态。 成功完成打印机注册后，对链接的 URL 的 GET 请求将包含创建的打印机对象和已注册的证书。
+对链接 URL 进行 GET 请求可用于获取正在进行的打印机注册的状态。 成功完成打印机注册后，对链接 URL 的 GET 请求将包含创建的打印机对象和注册的证书。
 
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
@@ -73,7 +73,6 @@ POST /print/printers/create
 ```http
 POST https://graph.microsoft.com/beta/print/printers/create
 Content-type: application/json
-Content-length: 319
 
 {
   "displayName": "Test Printer",

@@ -2,25 +2,23 @@
 title: 列出 printerShares for a printer
 description: 检索 printerShares 与打印机关联的列表。
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: d719cc04c4b4bc0694f42e80ce7ae317bc8ef104
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: e84bc0bc640cc7a60eab9559e0ff9821b11571cb
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50956251"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924352"
 ---
 # <a name="list-printershares-for-a-printer"></a>列出 printerShares for a printer
 命名空间：microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 检索与打印机关联的打印机共享 [列表](../resources/printer.md)。
 >**注意：** 目前，每个 **打印机** 仅支持一个打印机共享。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅、授予获取打印机访问权限的权限以及下表中列出的权限之一[](printer-get.md)。
@@ -56,7 +54,7 @@ GET /print/printers/{printerId}/shares
 
 如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [printerShare](../resources/printershare.md) 对象集合。
 
->**注意**：该响应将不包含 **defaults** **和 capabilities** 属性。 可以使用 Get [printerShare](printerShare-get.md) 请求查询这些属性。
+>**注意**：响应将不包含 **defaults** 和 **capabilities** 属性。 可以使用 Get [printerShare](printerShare-get.md) 请求查询这些属性。
 
 ## <a name="examples"></a>示例
 

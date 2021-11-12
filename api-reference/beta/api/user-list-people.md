@@ -1,16 +1,16 @@
 ---
 title: 列出人员
 description: 检索 person 对象列表，这些对象按与 user 的相关程度进行排序，相关程度由用户的通信和协作模式以及业务关系决定。
-author: anthona
+author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: e28372da45a246e92b696f8e8b7ed79e5e7cb050
-ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
+ms.openlocfilehash: 32caf72c3eb59589889827389c0cd2f4ab26c267
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60780485"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946047"
 ---
 # <a name="list-people"></a>列出人员
 
@@ -20,15 +20,15 @@ ms.locfileid: "60780485"
 
 检索[人员对象列表](../resources/person.md)，这些对象按与用户的相关性排序，这[](../resources/user.md)由用户的通信和协作模式以及业务关系决定。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | People.Read、People.Read.All    |
+|委派（工作或学校帐户） | People.Read    |
 |委派（个人 Microsoft 帐户） | People.Read    |
-|应用程序 | People.Read.All |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -71,7 +71,7 @@ GET /users/{id | userPrincipalName}/people
 
 ### <a name="browse"></a>浏览
 
-本节中的请求根据通信、协作和业务关系，获取与登录 () `/me` 关系最相关的人员。
+本节中的请求根据通信、协作和业务关系，获取与登录 () 关系 `/me` 最相关的人员。
 
 默认情况下，每个响应都会返回10条记录，但您可以 改变这点 使用 *$顶部* 参数。 这些请求需要 People.Read 权限。
 
@@ -123,7 +123,6 @@ GET https://graph.microsoft.com/beta/me/people
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1326
 
 {
     "value": [
@@ -220,7 +219,7 @@ GET https://graph.microsoft.com/beta/me/people/?$orderby=DisplayName
 
 可以通过设置 *$top* 参数更改响应中返回的人员数。
 
-以下示例请求与 最相关的 1，000 个人 `/me` 。 请求还通过仅请求用户的请求来限制从服务器显示名称的数量。
+以下示例请求与 最相关的 1，000 个人 `/me` 。 请求还通过仅请求用户的请求来限制从服务器显示名称数据量。
 
 ```http
 GET https://graph.microsoft.com/beta/me/people/?$top=1000&$select=DisplayName

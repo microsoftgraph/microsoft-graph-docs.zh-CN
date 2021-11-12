@@ -2,15 +2,15 @@
 title: 'TableColumnCollection: add'
 description: 向表中添加新列。
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 656340fafa39b074f7a1438b2ed9902b4e975ee4
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ee50c5257a9150eeafe557af531a7f377a1ffddc
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052675"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940978"
 ---
 # <a name="tablecolumncollection-add"></a>TableColumnCollection: add
 
@@ -19,7 +19,7 @@ ms.locfileid: "52052675"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 向表中添加新列。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -46,7 +46,7 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |index|number|指定新列的相对位置。之前位于此位置的列向右移动。索引值应等于或小于最后一列的索引值，因此不能用于在表末尾附加列。从零开始编制索引。|
 |值| (布尔值、字符串或数字) 集合|可选。未设置格式的表列值的二维数组。|
@@ -68,7 +68,6 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/columns/add
 Content-type: application/json
-Content-length: 51
 
 {
   "index": {
@@ -99,7 +98,7 @@ Content-length: 51
 
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -108,7 +107,6 @@ Content-length: 51
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 81
 
 {
   "id": "99",

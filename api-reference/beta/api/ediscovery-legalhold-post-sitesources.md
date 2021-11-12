@@ -2,15 +2,15 @@
 title: 创建 legalHold siteSource
 description: 创建新的 legalHold siteSource 对象。
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: bca1f4c54593cc92f9b085bc86669981974e4432
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 69c36bcaafbc1e97b81584f0bb6ad6bb8c5c54a6
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50952453"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945629"
 ---
 # <a name="create-legalhold-sitesource"></a>创建 legalHold siteSource
 
@@ -20,7 +20,7 @@ ms.locfileid: "50952453"
 
 将 siteSource 添加到 legalHold 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -54,9 +54,9 @@ POST /compliance/ediscovery/cases/{caseId}/legalHolds/{legalholdId}/siteSources
 
 下表显示创建 [siteSource](../resources/ediscovery-sitesource.md)时所需的属性。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
-|site@odata.bind|String|网站的 ID，您可以使用"按路径获取网站资源[](../resources/site.md)"方法[从网站资源获取此](../api/site-getbypath.md)ID。 用法为 {hostname}：/{relative-path}。 对于网站 `https://contoso.sharepoint.com/sites/HumanResources` URL，Microsoft Graph 请求为 `https://graph.microsoft.com/v1.0/sites/contoso.sharepoint.com:/sites/HumanResources` 。 ID 是 ID 字段中列出的第一个 GUID。  对于 OneDrive for Business 网站 `https://contoso-my.sharepoint.com/personal/adelev_contoso_com` URL，Microsoft Graph 请求为 `https://graph.microsoft.com/v1.0/sites/contoso-my.sharepoint.com:/personal/adelev_contoso_com` |
+|网站|String|网站的 URL;例如， `https://contoso.sharepoint.com/sites/HumanResources` 。|
 
 ## <a name="response"></a>响应
 
@@ -77,10 +77,11 @@ POST /compliance/ediscovery/cases/{caseId}/legalHolds/{legalholdId}/siteSources
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/c816dd6f-5af8-40c5-a760-331361e05c60/legalHolds/387566cc-38ae-4e85-ab4b-cd2dd34faa07/siteSources
 Content-Type: application/json
-Content-length: 154
 
 {
-    "site@odata.bind": "https://graph.microsoft.com/v1.0/sites/50073f3e-cb22-48e5-95a9-51a3da455181"
+    "site": {
+        "webUrl": "https://contoso.sharepoint.com/sites/SecretSite"
+    }
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -102,6 +103,8 @@ Content-length: 154
 ---
 
 
+---
+
 ### <a name="response"></a>响应
 
 **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
@@ -117,14 +120,14 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('c816dd6f-5af8-40c5-a760-331361e05c60')/legalHolds('387566cc-38ae-4e85-ab4b-cd2dd34faa07')/siteSources/$entity",
-    "displayName": "Adele Vance",
-    "createdDateTime": "2020-12-28T20:08:57.857Z",
-    "id": "50073f3e-cb22-48e5-95a9-51a3da455181",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('15d80234-8320-4f10-96d0-d98d53ffdfc9')/legalHolds('644db9d3-5a67-4ca0-aa1c-0cca02168875')/siteSources/$entity",
+    "displayName": "Secret Site",
+    "createdDateTime": "2021-08-11T23:17:31.687Z",
+    "id": "32443932-4343-3545-3339-373031353742",
     "createdBy": {
         "user": {
             "id": null,
-            "displayName": "EDiscovery admin"
+            "displayName": "Edisco Admin"
         }
     }
 }

@@ -2,15 +2,15 @@
 title: 更新事件
 description: 更新 event 对象。
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: becd6b1156b437176515aaba24b0c704fba41dd5
-ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
+ms.openlocfilehash: ef96f304e92d76017984e2ff55bf4cc3b538642c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58397003"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938816"
 ---
 # <a name="update-event"></a>更新事件
 
@@ -20,7 +20,7 @@ ms.locfileid: "58397003"
 
 更新 [event](../resources/event.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -60,7 +60,6 @@ PATCH /groups/{id}/calendar/events/{id}
 ```http
 PATCH https://graph.microsoft.com/beta/groups/{id}/events/{id}
 Content-type: application/json
-Content-length: 211
 
 {
   "originalStartTimeZone": "originalStartTimeZone-value",

@@ -2,15 +2,15 @@
 title: 列出线程
 description: 获取某个组的所有线程。
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: fe5bdb397a991d546f3296587f13f95e2439a1d8
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 0d7c6e31e282d415901ee445ab6bee326a8acc09
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681492"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60934120"
 ---
 # <a name="list-threads"></a>列出线程
 
@@ -22,7 +22,7 @@ ms.locfileid: "52681492"
 
 注意：还可以 [获取会话的所有线程](conversation-list-threads.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -94,33 +94,19 @@ GET https://graph.microsoft.com/beta/groups/{id}/threads
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 536
 
 {
   "value": [
     {
-      "toRecipients": [
-        {
-          "emailAddress": {
-            "name": "name-value",
-            "address": "address-value"
-          }
-        }
-      ],
+      "id": "thread-id",
       "topic": "topic-value",
       "hasAttachments": true,
-      "lastDeliveredDateTime": "2016-10-19T10:37:00Z",
+      "lastDeliveredDateTime": "datetime-value",
       "uniqueSenders": [
         "uniqueSenders-value"
       ],
-      "ccRecipients": [
-        {
-          "emailAddress": {
-            "name": "name-value",
-            "address": "address-value"
-          }
-        }
-      ]
+      "preview": "preview-value",
+      "isLocked": false
     }
   ]
 }

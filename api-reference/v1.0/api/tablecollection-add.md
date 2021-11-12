@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 23766510e20797fa17405e22fcdaf6847d2e60af
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 96ec8884f94407115d9b3bbb00643ba1352d9005
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59029239"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946949"
 ---
 # <a name="tablecollection-add"></a>TableCollection: add
 
@@ -22,7 +22,7 @@ ms.locfileid: "59029239"
 
 此请求有时可能会收到 504 HTTP 错误。 此错误的适当响应做法是重复发出请求。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -43,7 +43,7 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/add
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | 持有者{令牌}。必需。 |
+| Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ## <a name="request-body"></a>请求正文
@@ -71,7 +71,6 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/add
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/add
 Content-type: application/json
-Content-length: 54
 
 {
   "address": "Sheet1!A1:D5",
@@ -107,7 +106,6 @@ Content-length: 54
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 109
 
 {
   "id": "99",

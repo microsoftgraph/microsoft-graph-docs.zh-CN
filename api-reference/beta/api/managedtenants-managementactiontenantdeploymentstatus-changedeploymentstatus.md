@@ -2,15 +2,15 @@
 title: managementActionTenantDeploymentStatus： changeDeploymentStatus
 description: 更改管理操作租户级别的部署状态。 此信息用于提供对特定状态中的管理操作的见解。 例如，可能有一个计划对管理员应用需要多重身份验证，因此最好将状态更改为计划状态以反映相应的状态。
 author: isaiahwilliams
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 572ee7f6c6769ec500c47edee5d35dd18fe75d3f
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 01c7efcbea39f9360e9c1356103db89e7021df1e
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53440904"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947278"
 ---
 # <a name="managementactiontenantdeploymentstatus-changedeploymentstatus"></a>managementActionTenantDeploymentStatus： changeDeploymentStatus
 命名空间：microsoft.graph.managedTenants
@@ -19,7 +19,7 @@ ms.locfileid: "53440904"
 
 更改管理操作租户级别的部署状态。 此信息用于提供对特定状态中的管理操作的见解。 例如，可能有一个计划对管理员应用需要多重身份验证，因此最好将状态更改为计划状态以反映相应的状态。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -49,13 +49,13 @@ POST /tenantRelationships/managedTenants/managementActionTenantDeploymentStatuse
 
 下表显示了可用于此操作的参数。
 
-|参数|类型|说明|
+|参数|类型|Description|
 |:---|:---|:---|
 |tenantGroupId|String|租户组的标识符。|
 |tenantId|String|托管Azure Active Directory租户的租户[标识符](../resources/managedtenants-tenant.md)。|
 |managementActionId|String|管理操作 [的标识符](../resources/managedtenants-managementaction.md)。|
 |managementTemplateId|String|管理模板 [的标识符](../resources/managedtenants-managementtemplate.md)。|
-|状态|String|管理操作租户 [部署的新](../resources/managedtenants-managementaction.md) 状态。|
+|status|String|管理操作租户 [部署的新](../resources/managedtenants-managementaction.md) 状态。|
 
 ## <a name="response"></a>响应
 
@@ -74,7 +74,6 @@ POST /tenantRelationships/managedTenants/managementActionTenantDeploymentStatuse
 ``` http
 POST https://graph.microsoft.com/beta/tenantRelationships/managedTenants/managementActionTenantDeploymentStatuses/changeDeploymentStatus
 Content-Type: application/json
-Content-length: 153
 
 {
   "tenantGroupId": "String",

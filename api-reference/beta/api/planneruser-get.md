@@ -1,16 +1,16 @@
 ---
 title: 获取 plannerUser
 description: '检索 plannerUser 对象的属性和关系。 返回的属性包括用户最喜爱的计划和最近查看的计划。 '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: bc1d212f9f9e75770e66067bc3cf22438fa71988
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 16fed2d6fa01f74920b4da061b2df2ede8e65a05
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049959"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60933527"
 ---
 # <a name="get-planneruser"></a>获取 plannerUser
 
@@ -19,7 +19,7 @@ ms.locfileid: "52049959"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索 [plannerUser](../resources/planneruser.md) 对象的属性和关系。 返回的属性包括用户最喜爱的计划和最近查看的计划。 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -87,7 +87,6 @@ GET https://graph.microsoft.com/beta/me/planner
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 979
 
 {
   "favoritePlanReferences": {

@@ -2,15 +2,15 @@
 title: 获取设置
 description: 阅读用户和组织设置对象。
 author: jpettere
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: c9d28c56aeeec78c6e5e00cfc45d9223e8196b49
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 309e27bd0cc197347ebd87aec6d1a968586ab167
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052570"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60935156"
 ---
 # <a name="get-settings"></a>获取设置
 
@@ -18,8 +18,7 @@ ms.locfileid: "52052570"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-读取用户和组织 [userSettings](../resources/usersettings.md) 对象。
-若要了解如何更新 [userSettings](../resources/usersettings.md) 对象的属性，请参阅[更新用户设置](usersettings-update.md)。
+读取用户和组织 [userSettings](../resources/usersettings.md) 对象若要了解如何更新 [userSettings](../resources/usersettings.md) 对象的属性，请参阅[更新用户设置](usersettings-update.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -37,7 +36,7 @@ ms.locfileid: "52052570"
 GET /me/settings/
 ```
 
-具有“用户ID”或“userPrincipalName”的请求只能由用户或具有 User.ReadWrite.All 权限的用户访问。 若要了解详细信息，请参阅[权限](/graph/permissions-reference)。
+具有“用户ID”或“userPrincipalName”的请求只能由用户或具有 User.ReadWrite.All 权限的用户访问。若要了解详细信息，请参阅[权限](/graph/permissions-reference)。
 
 ```http
 GET /users/{id | userPrincipalName}/settings/
@@ -61,12 +60,11 @@ GET https://graph.microsoft.com/beta/me/settings
 
 ##### <a name="response"></a>响应
 
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 72
 
 {
   "contributionToContentDiscoveryAsOrganizationDisabled": false,

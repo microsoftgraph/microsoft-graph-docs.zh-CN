@@ -5,19 +5,19 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: f9ac818cc3f65de72938f6afb276cd08cb33f930
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 55a7d2b20ce3d4b1ad90e752c2c5835c5c7bbbff
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59056898"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60935107"
 ---
 # <a name="update-administrativeunit"></a>更新 administrativeunit
 
 命名空间：microsoft.graph
 
 更新 [administrativeUnit 对象](../resources/administrativeunit.md) 的属性。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -50,7 +50,7 @@ PATCH /directory/administrativeUnits/{id}
 |displayName|string|管理单元的显示名称。|
 |visibility|string|管理单元的可见性。 如果未设置，则默认值为"public"。 可以设置为"HiddenMembership"，这将对非成员隐藏成员身份。|
 
-由于 **administrativeUnit** 资源支持 [扩展](/graph/extensibility-overview)，因此可以使用 操作添加、更新或删除现有 administrativeUnit 实例中扩展的自定义属性中您自己的特定于应用 `PATCH` 的数据。
+由于 **administrativeUnit** 资源支持 [扩展](/graph/extensibility-overview)，因此可以使用 操作添加、更新或删除现有 `PATCH` **administrativeUnit** 实例中扩展的自定义属性中您自己的特定于应用的数据。
 
 ## <a name="response"></a>响应
 
@@ -69,7 +69,6 @@ PATCH /directory/administrativeUnits/{id}
 ```http
 PATCH https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}
 Content-type: application/json
-Content-length: 114
 
 {
   "displayName": "displayName-value",

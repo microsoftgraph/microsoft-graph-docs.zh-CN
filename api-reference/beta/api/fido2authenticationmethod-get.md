@@ -2,15 +2,15 @@
 title: 获取 fido2AuthenticationMethod
 description: 读取 fido2AuthenticationMethod 对象的属性和关系。
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 4b5bad06b344db8355b1c73c7bf7886517795027
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: c8cb5ac7e7711cc02cf31dc3353738eb4dcf1bdd
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50959232"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60929646"
 ---
 # <a name="get-fido2authenticationmethod"></a>获取 fido2AuthenticationMethod
 命名空间：microsoft.graph
@@ -19,14 +19,24 @@ ms.locfileid: "50959232"
 
 检索用户的单个 [FIDO2 安全密钥身份验证方法](../resources/fido2authenticationmethod.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型|自行操作的权限 (权限从最低权限级别) |对他人操作的权限 (权限从最低到最多特权) |
-|:---|:---|:--|
-| 委派（工作或学校帐户）     | UserAuthenticationMethod.Read、UserAuthenticationMethod.ReadWrite | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
-| 委派（个人 Microsoft 帐户） | 不支持。 | 不支持。 |
-| 应用程序                            | 不适用。 | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
+### <a name="permissions-acting-on-self"></a>自行操作的权限
+
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:---------------------------------------|:-------------------------|
+| 委派（工作或学校帐户）     | UserAuthenticationMethod.Read、UserAuthenticationMethod.ReadWrite |
+| 委派（个人 Microsoft 帐户） | 不支持。 |
+| 应用程序                            | 不支持。 |
+
+### <a name="permissions-acting-on-other-users"></a>对其他用户操作的权限
+
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:---------------------------------------|:-------------------------|:-----------------|
+| 委派（工作或学校帐户）     | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | 不支持。 |
+| 应用程序                            | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
 
 对于管理员正在操作其他用户的委派方案，管理员需要下列角色之 [一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 
@@ -104,7 +114,6 @@ GET https://graph.microsoft.com/beta/me/authentication/fido2Methods/-2_GRUg2-HYz
 ``` http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 491
 
 {
   "value": {

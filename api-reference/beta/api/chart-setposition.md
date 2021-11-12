@@ -2,15 +2,15 @@
 title: 'Chart: setPosition'
 description: 相对于工作表上的单元格放置图表。
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 03078c00054f2efd683eff85973302319b5a2efb
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 4d7771e684db332a8ab0235c2b1dcbc04ac6c48a
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786534"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938998"
 ---
 # <a name="chart-setposition"></a>Chart: setPosition
 
@@ -19,7 +19,7 @@ ms.locfileid: "52786534"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 相对于工作表上的单元格放置图表。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -44,7 +44,7 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/se
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |startCell|string|起始单元格。这是图表将移动到的位置。起始单元格为左上角或右上角的单元格，具体取决于用户的从右到左显示设置。|
 |endCell|string|可选。结束单元格。如果已指定，图表的宽度和高度将设置为完全覆盖此单元格/区域。|
@@ -66,7 +66,6 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/se
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/setPosition
 Content-type: application/json
-Content-length: 66
 
 {
   "startCell": "startCell-value",

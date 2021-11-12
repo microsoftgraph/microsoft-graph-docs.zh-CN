@@ -1,16 +1,16 @@
 ---
 title: 添加连接的组织外部发起人
 description: 将用户或组添加到已连接的组织的外部发起人。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 38332f46b5215989f0739450d0efef155058b443
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 5a72aa03846ebc7c084280a33b07ac014c7a6676
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786157"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60925601"
 ---
 # <a name="add-connected-organization-external-sponsor"></a>添加连接的组织外部发起人
 
@@ -18,9 +18,9 @@ ms.locfileid: "52786157"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将用户或组添加到已连接的组织的外部发起人。 外部发起人是一组用户，可以代表该连接的组织的其他用户批准请求。
+将用户或组添加到已连接的组织的外部发起人。 外部发起人是一组用户可以代表该已连接的组织的其他用户批准请求。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -62,7 +62,6 @@ POST /identityGovernance/entitlementManagement/connectedOrganizations/{id}/exter
 ``` http
 POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/connectedOrganizations/{id}/externalSponsors/$ref
 Content-type: application/json
-Content-length: 30
 
 {
   "@odata.id": "https://graph.microsoft.com/beta/users/{id}"

@@ -2,15 +2,15 @@
 title: 'user: reminderView'
 description: '返回指定开始时间和结束时间范围内的日历提醒列表。 '
 author: harini84
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3346a54c67207df57cedc698510d55549dc3697c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 13a4e6a27f41f6e8b09aa283b9ecc78cd5c0214c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050722"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947648"
 ---
 # <a name="user-reminderview"></a>user: reminderView
 
@@ -20,7 +20,7 @@ ms.locfileid: "52050722"
 
 返回指定开始时间和结束时间的用户日历中的事件提醒列表。 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -43,7 +43,7 @@ GET /users/{id | userPrincipalName}/reminderView(startDateTime=startDateTime-val
 |startDateTime|String|事件（已设置提醒）的开始日期和时间。该值用 ISO 8601 格式表示，例如，“2015-11-08T19:00:00.0000000”。|
 |endDateTime|String|事件（已设置提醒）的结束日期和时间。该值用 ISO 8601 格式表示，例如，“2015-11-08T20:00:00.0000000”。|
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 标头       | 值|
 |:-----------|:------|
 | Authorization  | Bearer {token}。必需。  |
@@ -90,7 +90,7 @@ GET https://graph.microsoft.com/beta/me/reminderView(startDateTime='2017-06-05T1
 
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -100,7 +100,6 @@ GET https://graph.microsoft.com/beta/me/reminderView(startDateTime='2017-06-05T1
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 673
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.reminder)",

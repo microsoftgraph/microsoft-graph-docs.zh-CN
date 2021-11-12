@@ -5,19 +5,19 @@ author: jewan-microsoft
 ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: f928dcb7a03ab4966c91ec55f3744a21c7091009
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f72d1fce2041509f9135bb1cf74264afae19f1df
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59015908"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924479"
 ---
 # <a name="list-pages"></a>列出页面
 
 命名空间：microsoft.graph
 
 检索页面 [对象](../resources/page.md) 的列表。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -41,7 +41,7 @@ GET /sites/{id}/onenote/pages
 
 默认响应将 `parentSection` 展开并选择节的 、 和 `id` `displayName` `self` 属性。 页面 `expand` 的有效值为 `parentNotebook` 和 `parentSection` 。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
@@ -65,7 +65,6 @@ GET https://graph.microsoft.com/v1.0/me/onenote/pages
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 393
 
 {
   "value": [

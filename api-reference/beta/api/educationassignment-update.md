@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 51ee97696f89a0b2145a278d57329ccd4545425d
-ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
+ms.openlocfilehash: 6b676f28d74484a35374bd61f2099bd9b540ac46
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60220639"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938886"
 ---
 # <a name="update-educationassignment"></a>更新 educationassignment
 
@@ -22,14 +22,14 @@ ms.locfileid: "60220639"
 
 只有班级中的教师可以这样做。 请注意，你不能使用 PATCH 请求更改工作分配 **的状态**。 使用 [发布](../api/educationassignment-publish.md) 操作可更改 **工作分配** 状态。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  EduAssignments.ReadWriteBasic、EduAssignments.ReadWrite  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|Application | 不支持。 | 
+|应用程序 | 不支持。 | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -45,12 +45,12 @@ PATCH /education/classes/{class-id}/assignments/{assignment-id}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
-|addedStudentAction|字符串| 控制在作业发布后添加的学生的行为。|
+|addedStudentAction|String| 控制在作业发布后添加的学生的行为。|
 |addToCalendarAction|educationAddToCalendarOptions|可选字段，用于控制发布作业时将作业添加到学生和教师日历的作业行为。 可能的值是 `none` `studentsAndPublisher` ：、、 `studentsAndTeamOwners` `studentsOnly` 和 `unknownFutureValue` 。 默认值为 `none`。|
-|allowLateSubmissions|布尔值| 提交是否可在截止日期后提交。|
-|allowStudentsToAddResourcesToSubmission|布尔值| 学生是否可以向提交中添加资源。 指示提交中的唯一项目是否来自工作分配资源列表。 |
+|allowLateSubmissions|Boolean| 提交是否可在截止日期后提交。|
+|allowStudentsToAddResourcesToSubmission|Boolean| 学生是否可以向提交中添加资源。 指示提交中的唯一项目是否来自工作分配资源列表。 |
 |assignDateTime|DateTimeOffset| 作业应发布到学生的日期。 |
 |assignTo|educationAssignmentRecipient| 获得作业的学生。|
 |closeDateTime|DateTimeOffset| 工作分配关闭提交的日期。 如果分配不允许LateSubmissions或 closeDateTime 与 dueDateTime 相同，则该字段可以是 null 的可选字段，但如果指定，它必须大于或等于 dueDateTime。|
@@ -58,7 +58,7 @@ PATCH /education/classes/{class-id}/assignments/{assignment-id}
 |dueDateTime|DateTimeOffset| 日期分配到期。 |
 |一个|educationAssignmentGradeType| 如何对作业进行评分。|
 |instructions|itemBody| 要与作业一起向学生提供的说明。 |
-|notificationChannelUrl|字符串| 发布分配发布通知的频道。 发布分配后不允许更新通道 URL，并且仅在 **assignTo** 值为 [educationAssignmentClassRecipient 时允许更新](../resources/educationassignmentclassrecipient.md)。|
+|notificationChannelUrl|String| 发布分配发布通知的频道。 发布分配后不允许更新通道 URL，并且仅在 **assignTo** 值为 [educationAssignmentClassRecipient 时允许更新](../resources/educationassignmentclassrecipient.md)。|
 
 ## <a name="response"></a>响应
 如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [educationAssignment](../resources/educationassignment.md) 对象。
@@ -75,7 +75,6 @@ PATCH /education/classes/{class-id}/assignments/{assignment-id}
 ```http
 PATCH https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/4679bc1b-90c5-45af-ae1a-d5357672ed39
 Content-type: application/json
-Content-length: 279
 
 {
     "displayName": "Reading and review test 09.03 #5",
@@ -119,7 +118,6 @@ Content-length: 279
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 279
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments/$entity",

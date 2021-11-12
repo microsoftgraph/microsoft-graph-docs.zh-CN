@@ -5,26 +5,26 @@ ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: abeca2f5459d0d298bf98d7218ec4ad9acb963fa
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b3ae0e3153adf4ad5b466f3d7f79fdde082e2642
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59074015"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60931625"
 ---
 # <a name="group-validateproperties"></a>group： validateProperties
 
 命名空间：microsoft.graph
 
-验证 Microsoft 365 组的显示名称或邮件昵称是否符合命名策略。  客户端可以使用此 API 确定显示名称或邮件昵称是否有效，然后再尝试更新Microsoft 365组。 [](group-update.md) 若要在创建组之前验证属性，请使用 [directoryobject：validateProperties](directoryobject-validateproperties.md) 函数。
+验证 Microsoft 365 组的显示名称或邮件昵称是否符合命名策略。  客户端可以使用此 API 确定显示名称或邮件昵称是否有效，然后再尝试更新Microsoft 365组[](group-update.md)。 若要在创建组之前验证属性，请使用 [directoryobject：validateProperties](directoryobject-validateproperties.md) 函数。
 
 对邮件和邮件昵称显示名称执行以下策略验证：
 1. 验证前缀和后缀命名策略
 2. 验证自定义禁止字策略
 
-此 API 仅返回遇到的第一个验证失败。 如果属性无法通过多个验证，则仅返回第一个验证失败。 但是，如果仅验证前缀和后缀命名策略，您可以验证邮件昵称和显示名称并接收验证错误集合。 若要了解有关配置命名策略的更多信息，请参阅配置 [命名策略](/azure/active-directory/users-groups-roles/groups-naming-policy#configure-naming-policy-in-powershell)。
+此 API 仅返回遇到的第一个验证失败。 如果属性无法通过多个验证，则仅返回第一个验证失败。 但是，如果您仅验证前缀和后缀命名策略，您可以验证邮件昵称和显示名称并接收验证错误集合。 若要了解有关配置命名策略的更多信息，请参阅配置 [命名策略](/azure/active-directory/users-groups-roles/groups-naming-policy#configure-naming-policy-in-powershell)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -79,7 +79,6 @@ POST /groups/{id}/validateProperties
 ``` http
 POST https://graph.microsoft.com/v1.0/groups/{id}/validateProperties
 Content-type: application/json
-Content-length: 132
 
 {
   "displayName": "Myprefix_test_mysuffix",
@@ -122,7 +121,6 @@ HTTP/1.1 204 No Content
 ``` http
 POST https://graph.microsoft.com/v1.0/groups/{id}/validateProperties
 Content-type: application/json
-Content-length: 128
 
 {
   "displayName": "MyPrefix_test_mysuffix",
@@ -134,7 +132,6 @@ Content-length: 128
 ```http
 HTTP/1.1 422
 Content-type: application/json
-Content-length: 223
 
 {
   "error": {

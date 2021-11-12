@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 30785c8917942acc63cacb4944ea70d18ab8daad
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 29f20bfb6e3cc9d31b6c176af15e60c9cdc9f705
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50952456"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "60945626"
 ---
 ```objc
 
@@ -17,6 +17,9 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphEdiscoverySiteSource *siteSource = [[MSGraphEdiscoverySiteSource alloc] init];
+MSGraphSite *site = [[MSGraphSite alloc] init];
+[site setWebUrl:@"https://contoso.sharepoint.com/sites/SecretSite"];
+[siteSource setSite:site];
 
 NSError *error;
 NSData *siteSourceData = [siteSource getSerializedDataWithError:&error];

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 096745e0037b93f93ed0223527d1f3137a4fbf75
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5fbb205650f50194b865d0ee9b9ff47c4d5623ed
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59050206"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946466"
 ---
 # <a name="update-plannerplan"></a>更新 plannerPlan
 
@@ -18,7 +18,7 @@ ms.locfileid: "59050206"
 
 更新 **plannerPlan 对象** 的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -37,15 +37,15 @@ PATCH /planner/plans/{plan-id}
 
 | 名称       | 说明|
 |:-----------|:-----------|
-| Authorization  | 持有者{令牌}。必需。 |
+| Authorization  | Bearer {token}。必需。 |
 | If-Match  | 要更新的 plannerPlan 的上次已知 ETag 值。必需。|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供要更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
-|owner|String|拥有计划的[组](../resources/group.md)`id`。必须存在有效的组才能设置此字段。设置后，只能由所有者更新此字段。|
+|所有者|String|拥有计划的[组](../resources/group.md)`id`。必须存在有效的组才能设置此字段。设置后，只能由所有者更新此字段。|
 |title|String|计划的标题。|
 
 ## <a name="response"></a>响应
@@ -66,7 +66,6 @@ PATCH /planner/plans/{plan-id}
 ```http
 PATCH https://graph.microsoft.com/v1.0/planner/plans/{plan-id}
 Content-type: application/json
-Content-length: 29
 Prefer: return=representation
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
@@ -104,7 +103,6 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 357
 
 {
   "createdBy": {

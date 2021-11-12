@@ -5,12 +5,12 @@ author: akumar39
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: fdf86afdd561c28a5f2df521b8f2038531bb2b51
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8df97e048d1ec95557bd59afee2cc7ea6a8d5b51
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019676"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945787"
 ---
 # <a name="create-shift"></a>创建班次
 
@@ -18,7 +18,7 @@ ms.locfileid: "59019676"
 
 在日程安排 [中](../resources/shift.md) 创建新的班次 [实例](../resources/schedule.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -136,7 +136,6 @@ Content-type: application/json
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 401
 
 {
   "id": "SHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8",

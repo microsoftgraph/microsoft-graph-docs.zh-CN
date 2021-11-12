@@ -1,16 +1,16 @@
 ---
 title: 获取 onenoteOperation
 description: '获取长时间运行的操作OneNote状态。 这适用于在响应中返回 **Operation-Location** 标头的操作，如 、 `CopyNotebook` `CopyToNotebook` 、 `CopyToSectionGroup` 、 `and CopyToSection` 。   '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 5dd65d44ea9d4df3bdd494586a17b67cc1e5b82b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a8ed7c83b50da0335895f270359eaea1ee24d19a
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050099"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946788"
 ---
 # <a name="get-onenoteoperation"></a>获取 onenoteOperation
 
@@ -26,7 +26,7 @@ ms.locfileid: "52050099"
 
 如果状态为 `failed` ，则错误 `@api.diagnostics` 和属性提供错误信息。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -46,7 +46,7 @@ GET /sites/{id}/onenote/operations/{id}
 ## <a name="optional-query-parameters"></a>可选的查询参数
 无。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
@@ -89,7 +89,7 @@ GET https://graph.microsoft.com/beta/me/onenote/operations/{id}
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -98,7 +98,6 @@ GET https://graph.microsoft.com/beta/me/onenote/operations/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 215
 
 {
   "id": "id-value",

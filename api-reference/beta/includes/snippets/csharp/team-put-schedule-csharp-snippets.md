@@ -1,37 +1,24 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 95dc4a32c48394f51264805854bbe3c73dbf26eb
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: a0a08ed99bf577d4a5efac87fedf5ab55982de1c3ca5eb6b50b18c3d35d5199d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52870596"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "57103929"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-using var schedule = new System.IO.MemoryStream(Encoding.UTF8.GetBytes(@"{
-   ""enabled"":true,
-   ""timeZone"":""America/Chicago"",
-   ""provisionStatus"":""Completed"",
-   ""provisionStatusCode"":null,
-   ""openShiftsEnabled"":true,
-   ""swapShiftsRequestsEnabled"":true,
-   ""offerShiftRequestsEnabled"":true,
-   ""timeOffRequestsEnabled"":true,
-   ""timeClockEnabled"":true,
-   ""timeClockSettings"":{
-      ""approvedLocation"":{
-         ""altitude"":1024.13,
-         ""latitude"":26.13246,
-         ""longitude"":24.34616
-      }
-   }
-}"));
+var schedule = new Schedule
+{
+    Enabled = true,
+    TimeZone = "America/Chicago"
+};
 
 await graphClient.Teams["{team-id}"].Schedule
     .Request()
-    .PutAsync<Team>(schedule);
+    .PutAsync(schedule);
 
 ```

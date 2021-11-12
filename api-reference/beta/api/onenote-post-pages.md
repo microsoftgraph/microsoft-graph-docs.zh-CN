@@ -1,16 +1,16 @@
 ---
 title: 创建页面
-description: 在默认笔记本的默认分区中创建新的 OneNote 页面。
+description: 在默认笔记本OneNote新建一个页面。
 author: jewan-microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 828fc09e3b7cdb281b682df93b3d6f94f264330d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f45a3fbd2619709dc547c420b052cf47d41a1fe4
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48004639"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947250"
 ---
 # <a name="create-page"></a>创建页面
 
@@ -18,15 +18,15 @@ ms.locfileid: "48004639"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在默认笔记本的默认分区中创建新的 OneNote 页面。
+在默认笔记本OneNote新建一个页面。
 
-若要在默认笔记本的不同节中创建页面，可以使用 `sectionName` 查询参数。  示例：`../onenote/pages?sectionName=My%20section`
+若要在默认笔记本的不同节中创建页面，可以使用 `sectionName` 查询参数。  例如：`../onenote/pages?sectionName=My%20section`
 
-该 `POST /onenote/pages` 操作仅用于在当前用户的默认笔记本中创建页面。 如果要将其他笔记本作为目标，可以 [在指定分区中创建页面](../api/section-post-pages.md)。      
+`POST /onenote/pages`此操作仅用于在当前用户的默认笔记本中创建页面。 如果面向其他笔记本，可以在指定的 [分区创建页面](../api/section-post-pages.md)。      
 
-> **注意：** 对可以使用此 API 添加到分区的页面数有限制。 有关详细信息，请参阅使用此 API 创建所有限制的 [OneNote 页面](/graph/onenote-create-page) 。
+> **注意：** 使用此 API 可添加到分区的页数存在限制。 有关详细信息，请参阅[创建OneNote](/graph/onenote-create-page)页面了解此 API 的所有限制。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -58,18 +58,17 @@ POST /sites/{id}/onenote/pages
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [onenotepage](../resources/onenotepage.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和新 [onenotepage](../resources/onenotepage.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
-在 `../onenote/pages` 路径中，可以使用 `sectionName` 查询参数在默认笔记本的特定节中创建页面。 示例：`../onenote/pages?sectionName=My%20section`。 如果该节不存在 (或已重命名) ，API 将创建一个新的节。
+在 `../onenote/pages` 路径中，可以使用查询参数在默认笔记本 `sectionName` 的特定节中创建页面。 示例：`../onenote/pages?sectionName=My%20section`。 如果此部分在 (或重命名为) ，API 将创建一个新节。
 
 <!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/beta/me/onenote/pages
-Content-length: 312
 Content-type: multipart/form-data; boundary=MyPartBoundary198374
 
 --MyPartBoundary198374
@@ -111,7 +110,6 @@ Content-Type:application/pdf
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 312
 
 {
   "title": "title-value",

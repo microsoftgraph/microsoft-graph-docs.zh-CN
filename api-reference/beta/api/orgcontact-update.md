@@ -1,16 +1,16 @@
 ---
 title: 更新 orgcontact
 description: 更新 orgcontact 对象的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 26396518b40023e7a4b5666fb1d00b4effd83546
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: d652b33ab34ebc98f423a1bc4c35fb5c2ee63407
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52785240"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939460"
 ---
 # <a name="update-orgcontact"></a>更新 orgcontact
 
@@ -19,7 +19,7 @@ ms.locfileid: "52785240"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新 orgcontact 对象的属性。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -41,7 +41,7 @@ PATCH /contacts/{id}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |城市|String||
 |country|String||
@@ -78,7 +78,6 @@ PATCH /contacts/{id}
 ```http
 PATCH https://graph.microsoft.com/beta/contacts/{id}
 Content-type: application/json
-Content-length: 222
 
 {
   "businessPhones": [

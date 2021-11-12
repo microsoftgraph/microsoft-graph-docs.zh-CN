@@ -2,15 +2,15 @@
 title: 获取 printService
 description: 检索打印服务的属性和关系。
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 1eb5f1475889e7f1d8b399baa40c739cad018f66
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: d7c7c272701e2c80ed7d4484de6ae8d9ca0b4ac7
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049882"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938516"
 ---
 # <a name="get-printservice"></a>获取 printService
 
@@ -20,7 +20,7 @@ ms.locfileid: "52049882"
 
 检索打印服务的属性和关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 调用此 API 不需要任何权限，但若要使用通用打印服务，用户或应用的租户必须拥有活动的通用打印订阅。
 
 |权限类型 | 权限（从最低特权到最高特权） |
@@ -88,7 +88,6 @@ GET https://graph.microsoft.com/beta/print/services/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 332
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/services/$entity",

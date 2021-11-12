@@ -2,26 +2,24 @@
 title: printMargin 资源类型
 description: 指定打印时使用的边距宽度。
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: d15b488985bbf1c51f03a0c030fab16fdf3d25cbd8c8b53b29368e4f0af2d151
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 20ad208efdac2890a45dfbebdcf51ace8e49d061
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196563"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924206"
 ---
 # <a name="printmargin-resource-type"></a>printMargin 资源类型
 
 命名空间：microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 指定打印时使用的边距宽度。
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |top|Int32|上边缘的边距（以边距表示）。|
 |bottom|Int32|下边缘的边距（以最低值表示）。|

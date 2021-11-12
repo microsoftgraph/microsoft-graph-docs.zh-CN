@@ -1,16 +1,16 @@
 ---
 title: todoTask： delta
 description: 获取一组指定 todoTaskList 中已添加、删除或更新的 todoTask 资源。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: avijityadav
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3c0d1759d1994c1fa9ae405d2a1895982e3ac99a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6917a732189ce505da75baaf716a0a2ed583b007
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048916"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947054"
 ---
 # <a name="todotask-delta"></a>todoTask： delta
 
@@ -22,7 +22,7 @@ ms.locfileid: "52048916"
 
 **todoTaskList** 中 **todoTask** 资源的 **delta** 函数调用类似于 GET 请求，只不过通过在这些调用的一 [](/graph/delta-query-overview)个或多个调用中正确应用状态令牌，您可以在 **todoTaskList** 中查询 **todoTask** 中的增量更改。 这样，您即可维护和同步用户 **todoTask** 资源的本地存储，而无需每次从服务器提取整个集合。  
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -40,7 +40,7 @@ GET /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/delta
 
 ## <a name="query-parameters"></a>查询参数
 
-跟踪 **todoTask 集合** 中的更改会导致一次或多组 **delta** 函数调用。 如果要使用任意查询参数（`$deltatoken` 和 `$skiptoken` 除外），则必须在最初的 **delta** 请求中指定它。 Microsoft Graph 自动将指定的任意参数编码为响应中提供的 `nextLink` 或 `deltaLink` URL 的令牌部分。 只需预先指定所需的任何查询参数一次。 在后续请求中，只需复制并应用上一响应中的 或 URL，因为此 URL 已包含所需的编码 `nextLink` `deltaLink` 参数。
+跟踪 **todoTask** 集合中的更改会导致一次或多组 **delta** 函数调用。 如果要使用任意查询参数（`$deltatoken` 和 `$skiptoken` 除外），则必须在最初的 **delta** 请求中指定它。 Microsoft Graph 自动将指定的任意参数编码为响应中提供的 `nextLink` 或 `deltaLink` URL 的令牌部分。 只需预先指定所需的任何查询参数一次。 在后续请求中，只需复制并应用上一响应中的 或 URL，因为此 URL 已包含所需的编码 `nextLink` `deltaLink` 参数。
 
 | 查询参数      | 类型   |说明|
 |:---------------|:--------|:----------|
@@ -69,7 +69,7 @@ GET /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/delta
 
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
-若要跟踪自上一轮更改跟踪以来 **todoTaskList** 中 **todoTask** 资源的变化，需要执行一次或多个 **delta** 函数调用，获取增量更改集。 以下示例显示如何使用 上一轮的最后一个 delta 函数调用返回的 URL 开始下一轮更改跟踪，其中包含 `deltaLink`  `deltaToken` 。 此 **delta** 函数调用将响应正文 **中 todoTask** 的最大数目限制为 2。
+若要跟踪自上一轮更改跟踪以来 **todoTaskList** 中 **todoTask** 资源的变化，需要执行一次或多个 **delta** 函数调用，获取增量更改集。 以下示例显示如何使用上一轮的最后一个 delta 函数调用返回的 URL 开始下一轮更改跟踪， `deltaLink` 其中包含 `deltaToken` 。 此 **delta** 函数调用将响应正文 **中 todoTask** 的最大数目限制为 2。
  
 
 ### <a name="http-request"></a>HTTP 请求
@@ -91,7 +91,6 @@ Prefer: odata.maxpagesize=2
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 337
 
 {
    "@odata.deltaLink":"https://graph.microsoft.com/beta/me/todo/lists/gDbc8U7HGwADDZocJgAAAA==/tasks/delta?$deltatoken=MoVMZ_DzHG4AhT3WE8VioVS1IXZJ-ArqK5fknOjnKFY",

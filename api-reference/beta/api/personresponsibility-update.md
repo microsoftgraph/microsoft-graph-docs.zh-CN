@@ -5,19 +5,19 @@ author: kevinbellinger
 ms.localizationpriority: medium
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 7b5928409db4bb202ee6e1375f3354ce40e46d3f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d3bc0618b223de768985db3be73472d252bc1ae9
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59116134"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946732"
 ---
 # <a name="update-personresponsibility"></a>更新 personResponsibility
 命名空间：microsoft.graph
 
 更新用户配置文件 [中的 personResponsibility](../resources/personresponsibility.md) 对象 [的属性](../resources/profile.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -49,11 +49,11 @@ PATCH /users/{id | userPrincipalName}/responsibilities/{id}
 
 下表显示创建 [personResponsibility 时所需的属性](../resources/personresponsibility.md)。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|collaborationTags|字符串集合|包含用户与兴趣相关联的体验方案标记。 集合中允许的值为 `askMeAbout` `ableToMentor` ：、、、。 `wantsToLearn` `wantsToImprove`|
-|说明|String|责任说明。|
+|collaborationTags|String 集合|包含用户与兴趣相关联的体验方案标记。 集合中允许的值为 `askMeAbout` `ableToMentor` ：、、、。 `wantsToLearn` `wantsToImprove`|
+|description|String|责任说明。|
 |displayName|String|包含该责任的友好名称。 |
 |inference|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断出来的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |WebUrl|String|包含指向有关责任的网页或资源的链接。|
@@ -77,7 +77,6 @@ PATCH /users/{id | userPrincipalName}/responsibilities/{id}
 ``` http
 PATCH https://graph.microsoft.com/beta/me/responsibilities/0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f
 Content-Type: application/json
-Content-length: 446
 
 {
   "collaborationTags": [

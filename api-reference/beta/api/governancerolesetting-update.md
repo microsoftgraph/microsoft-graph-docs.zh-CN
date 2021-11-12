@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: 889e83b08fdd7af8a48bb3a16a7b6f6d0d535506
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: c88ce71a93396aebc6d17be68b86fbd78b24fb24
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694664"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60925214"
 ---
 # <a name="update-governancerolesetting"></a>更新 governanceRoleSetting
 
@@ -22,10 +22,10 @@ ms.locfileid: "60694664"
 
 更新 [governanceRoleSetting 的属性](../resources/governancerolesetting.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference#privileged-access-permissions)。
 
->**注意：** 此 API 还要求请求者至少具有一个角色分配 (`Active` `owner` 或) `user access administrator` 管理员。
+>**注意：** 此 API 还要求请求者至少具有一个管理员角色分配 (`Active` `owner` 或) `user access administrator` 资源。
 
 |权限类型      | 权限              |
 |:--------------------|:---------------------------------------------------------|
@@ -71,10 +71,10 @@ PATCH /privilegedAccess/azureResources/roleSettings/{id}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [需要更新的 governanceRuleSettings](../resources/governancerulesetting.md) 的值。 
 
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |adminEligibleSettings|[governanceRuleSetting](../resources/governancerulesetting.md) 集合|管理员尝试添加符合条件的规则时评估的规则角色分配。|
-|adminMemberSettings|[governanceRuleSetting](../resources/governancerulesetting.md) 集合|管理员尝试向用户添加直接成员时评估的规则角色分配。|
+|adminMemberSettings|[governanceRuleSetting](../resources/governancerulesetting.md) 集合|管理员尝试添加直接成员角色时评估的规则角色分配。|
 |userEligibleSettings|[governanceRuleSetting](../resources/governancerulesetting.md) 集合|用户尝试添加符合条件的规则时评估的规则角色分配。 |
 |userMemberSettings|[governanceRuleSetting](../resources/governancerulesetting.md) 集合|用户尝试激活其密码时评估的规则角色分配。|
 
@@ -101,7 +101,6 @@ PATCH /privilegedAccess/azureResources/roleSettings/{id}
 ```http
 PATCH https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleSettings/5fb5aef8-1081-4b8e-bb16-9d5d0385bab5
 Content-type: application/json
-Content-length: 350
 
 {
    "adminEligibleSettings":[

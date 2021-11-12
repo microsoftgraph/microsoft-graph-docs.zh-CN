@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 6e6529a629af0aca480a6dc3deb1e013ee88404d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6bc6bcbdb1a9760163e1aa4c9ccace035a67f89d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59020019"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947634"
 ---
 # <a name="add-educationuser-to-an-educationschool"></a>向 educationSchool 添加 educationUser
 
@@ -18,7 +18,7 @@ ms.locfileid: "59020019"
 
 向学校添加用户。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -57,7 +57,6 @@ POST /education/schools/{id}/users/$ref
 ```http
 POST https://graph.microsoft.com/v1.0/education/schools/{id}/users/$ref
 Content-type: application/json
-Content-length: 56
 
 {
   "@odata.id":"https://graph.microsoft.com/v1.0/education/users/14008"

@@ -5,12 +5,12 @@ author: dipakboyed
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 53414b73b6e069da32c1cee41c3280cdca6199b8
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 6fbf22fcb76c53780403b167dfb7d6720503f7e1
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59765569"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60925522"
 ---
 # <a name="list-assignment-resources"></a>列出作业资源
 
@@ -20,7 +20,7 @@ ms.locfileid: "59765569"
 
 获取与工作分配 关联的所有 [资源](../resources/educationassignment.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -94,7 +94,6 @@ GET https://graph.microsoft.com/beta/education/classes/f4a941ff-9da6-4707-ba5b-0
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1011
 
 {
     "value": [

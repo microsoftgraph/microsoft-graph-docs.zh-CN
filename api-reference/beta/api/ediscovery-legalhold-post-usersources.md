@@ -2,15 +2,15 @@
 title: 创建 legalHold userSource
 description: 创建新的 legalHold userSource 对象。
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 5c49ba39da5967713d0b80ed51cf0aa95229f4be
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 4de26ccee02746fc956e57c0f7ad402ec0431dad
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50952418"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938914"
 ---
 # <a name="create-legalhold-usersource"></a>创建 legalHold userSource
 
@@ -20,7 +20,7 @@ ms.locfileid: "50952418"
 
 将 userSource 添加到 legalHold 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -54,9 +54,9 @@ POST /compliance/ediscovery/cases/{caseId}/legalHolds/{legalholdId}/userSources
 
 下表显示创建 [userSource](../resources/ediscovery-usersource.md)时所需的属性。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
-|email|String|用户的 SMTP 地址。|
+|email|String|用户的 SMTP 地址或组邮箱的 SMTP 地址。 若要获取组的电子邮件地址，请使用["列表](../api/group-list.md)组"或"[获取组"。](../api/group-get.md) 使用 get 组，可以使用 按组名称进行查询 `$filter` ;例如， `https://graph.microsoft.com/v1.0/groups?$filter=displayName eq 'secret group'&$select=mail,id,displayName` 。 |
 |includedSources|microsoft.graph.ediscovery.sourceType|指定此组中包含的源。 此值必须为 `mailbox` ， `site` 目前不支持 legalHolds。|
 
 ## <a name="response"></a>响应
@@ -66,6 +66,7 @@ POST /compliance/ediscovery/cases/{caseId}/legalHolds/{legalholdId}/userSources
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -78,7 +79,6 @@ POST /compliance/ediscovery/cases/{caseId}/legalHolds/{legalholdId}/userSources
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/c816dd6f-5af8-40c5-a760-331361e05c60/legalHolds/387566cc-38ae-4e85-ab4b-cd2dd34faa07/userSources
 Content-Type: application/json
-Content-length: 208
 
 {
   "email": "adelev@contoso.com",
@@ -103,6 +103,8 @@ Content-length: 208
 
 ---
 
+
+---
 
 ### <a name="response"></a>响应
 

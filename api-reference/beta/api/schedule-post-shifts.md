@@ -2,15 +2,15 @@
 title: 创建班次
 description: 创建新的班次。
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e74b00a6ec3563d5ee47b13fb4d082d6a0e9bfaf
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: fad7096cdf40930e2b20ca6bb0a5b5c511902db7
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052731"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946613"
 ---
 # <a name="create-shift"></a>创建班次
 
@@ -18,9 +18,9 @@ ms.locfileid: "52052731"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在计划 [中](../resources/shift.md) 创建新的班次 [实例](../resources/schedule.md)。
+在日程安排 [中](../resources/shift.md) 创建新的班次 [实例](../resources/schedule.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -135,7 +135,6 @@ Content-type: application/json
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 401
 
 {
   "id": "SHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8",

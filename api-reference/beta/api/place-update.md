@@ -1,16 +1,16 @@
 ---
 title: 更新位置
 description: 更新 place 对象的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: vrod9429
 ms.prod: Outlook
 doc_type: apiPageType
-ms.openlocfilehash: 16b483be47fd6b62eff05001ad99be0ebf554d2d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 9350e7d6ef0c19a62f05b8ef199f623b5a197c75
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055384"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60933983"
 ---
 # <a name="update-place"></a>更新位置
 
@@ -20,7 +20,7 @@ ms.locfileid: "52055384"
 
 更新 place [对象](../resources/place.md) 的属性，可以是 room [或](../resources/room.md) [roomList](../resources/roomlist.md)。 可以通过指定 **id** **或** **emailAddress** 属性来标识 room 或 **roomList。**
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -47,7 +47,7 @@ PATCH /places/{id | emailAddress}
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供应更新的相关字段的值。 一次只能更新 (**或** **roomList**) 一个实例。 在请求正文中，使用 指定位置的类型，并包括要 `@odata.type` 更新的类型的属性。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
+在请求正文中，提供应更新的相关字段的值。 一次只能更新 (**或** **roomList**) 资源实例。 在请求正文中，使用 指定位置的类型，并包括要 `@odata.type` 更新的类型的属性。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
 | 属性               | 类型                                              | 说明 |
 |:-----------------------|:--------------------------------------------------|:--|
@@ -60,11 +60,11 @@ PATCH /places/{id | emailAddress}
 | floorLabel             | String                                            | 指定房间的楼层号。 |
 | floorNumber            | Int32                                             | 指定房间的楼层。 |
 | geoCoordinates         | [outlookGeoCoordinates](../resources/outlookgeocoordinates.md) | 以纬度、经度和（可选）海拔坐标指定房间或房间列表位置。 |
-| isWheelChairAccessible | 布尔值                                           | 指定会议室是否可供访问。 |
-| label                  | String                                            | 指定会议室的描述性标签，例如数字或名称。 |
-| nickname               | String                                            | 指定会议室的昵称，例如"conf room"。 |
+| isWheelChairAccessible | Boolean                                           | 指定会议室是否可供访问。 |
+| 标签                  | String                                            | 指定会议室的描述性标签，例如数字或名称。 |
+| nickname               | String                                            | 为会议室指定昵称，例如"conf room"。 |
 | phone                  | String                                            | 会议室或会议室列表的电话号码。 |
-| tags                   | 字符串集合                                 | 指定会议室的其他功能，例如，视图类型或装饰类型等详细信息。 |
+| 标记                   | String 集合                                 | 指定会议室的其他功能，例如，视图类型或装饰类型等详细信息。 |
 | videoDeviceName        | String                                            | 指定会议室中的视频设备的名称。 |
 
 ## <a name="response"></a>响应
@@ -89,7 +89,6 @@ PATCH /places/{id | emailAddress}
 ```http
 PATCH https://graph.microsoft.com/beta/places/cf100@contoso.com
 Content-type: application/json
-Content-length: 285
 
 {
   "@odata.type": "microsoft.graph.room",

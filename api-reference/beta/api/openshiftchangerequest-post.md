@@ -1,16 +1,16 @@
 ---
 title: 创建 openShiftChangeRequest
 description: 创建 openShiftChangeRequest 对象的实例。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7c991a7b798f114df204c1731eba6a4a71bf29cf
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3129f844518025299276b4e74f66901ea0e15d2f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052990"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946774"
 ---
 # <a name="create-openshiftchangerequest"></a>创建 openShiftChangeRequest
 
@@ -19,7 +19,7 @@ ms.locfileid: "52052990"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 创建 [openShiftChangeRequest 对象](../resources/openshiftchangerequest.md) 的实例。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -70,7 +70,6 @@ POST /teams/{id}/schedule/openShiftChangeRequests
 POST https://graph.microsoft.com/beta/teams/788b75d2-a911-48c0-a5e2-dc98480457e3/schedule/openShiftChangeRequests
 Authorization: Bearer {token}
 Content-type: application/json
-Content-length: 244
 
 {
   "senderMessage": "Can I take this shift?",

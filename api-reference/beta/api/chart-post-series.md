@@ -2,15 +2,15 @@
 title: 创建 ChartSeries
 description: 使用此 API 创建新 ChartSeries。
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: fb7c3f0b4d323ad706bd2a270d90cf4cf1976733
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 75c56963e78f48b0797055757af3ffef708b8b3f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047502"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946340"
 ---
 # <a name="create-chartseries"></a>创建 ChartSeries
 
@@ -19,7 +19,7 @@ ms.locfileid: "52047502"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 使用此 API 创建新 ChartSeries。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -60,7 +60,6 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/se
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/series
 Content-type: application/json
-Content-length: 26
 
 {
   "name": "name-value"
@@ -86,7 +85,7 @@ Content-length: 26
 
 在请求正文中，提供 [workbookChartSeries](../resources/workbookchartseries.md) 对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -95,7 +94,6 @@ Content-length: 26
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 26
 
 {
   "name": "name-value"

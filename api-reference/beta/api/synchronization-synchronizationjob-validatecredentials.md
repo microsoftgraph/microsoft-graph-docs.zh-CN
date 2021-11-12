@@ -1,16 +1,16 @@
 ---
 title: synchronizationJob： validateCredentials
 description: 验证凭据在租户中是否有效。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 650cbc18aeb0dc28ef732c4065aa67d19f1a710f
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 96b9f7c396031e1e9621003f7c6e60e5419cb35d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787167"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938418"
 ---
 # <a name="synchronizationjob-validatecredentials"></a>synchronizationJob： validateCredentials
 
@@ -20,7 +20,7 @@ ms.locfileid: "52787167"
 
 验证凭据在租户中是否有效。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
@@ -43,9 +43,9 @@ POST /servicePrincipals/{id}/synchronization/jobs/{id}/validateCredentials
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
-|useSavedCredentials|Boolean|When `true` ， the parameter will be ignored and the previously saved `credentials` credentials (if any) will be validated instead. |
+|useSavedCredentials|Boolean|When `true` ， the parameter will be ignored and the previously saved `credentials` credentials (if any) will be validated. |
 |credentials|[synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md) 集合|要验证的凭据。 当参数为 时 `useSavedCredentials` 忽略 `true` 。|
 
 ## <a name="response"></a>响应
@@ -64,7 +64,6 @@ POST /servicePrincipals/{id}/synchronization/jobs/{id}/validateCredentials
 ```http
 POST https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{id}/validateCredentials
 Content-type: application/json
-Content-length: 218
 
 { 
     credentials: [ 

@@ -2,15 +2,15 @@
 title: 获取 shiftPreferences
 description: 按 ID 获取班次首选项。
 author: akumar39
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 285a10ecec454f87bc2cecd5543faaee9be8554b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 18153ea7c47d5847d1d9f85e7954e2383f7ced90
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051849"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938425"
 ---
 # <a name="get-shiftpreferences"></a>获取 shiftPreferences
 
@@ -20,7 +20,7 @@ ms.locfileid: "52051849"
 
 按 ID 检索 [shiftPreferences 对象](../resources/shiftpreferences.md) 的属性和关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -42,7 +42,7 @@ GET /users/{userId}/settings/shiftPreferences
 
 此方法不支持使用 OData 查询参数自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 标头       | 值 |
 |:---------------|:--------|
@@ -102,7 +102,6 @@ GET https://graph.microsoft.com/beta/users/871dbd5c-3a6a-4392-bfe1-042452793a50/
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 401
 
 {
     "id": "SHPR_eeab4fb1-20e5-48ca-ad9b-98119d94bee7",

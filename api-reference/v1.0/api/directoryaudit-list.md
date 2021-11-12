@@ -1,24 +1,24 @@
 ---
 title: 列出 directoryAudits
-description: 介绍 microsoft) API 中 directoryAudit (实体Graph方法。
+description: 介绍 microsoft Graph API 中的 directoryAudit (实体) 列表方法。
 ms.localizationpriority: medium
 author: SarahBar
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 4ce9c6c23b474c9100b66f463e790bccf0240887
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: f488a428913a21c4edc6adc640e0310f838fec78
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59765814"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924682"
 ---
 # <a name="list-directoryaudits"></a>列出 directoryAudits
 
 命名空间：microsoft.graph
 
-获取由用户生成的审核Azure Active Directory。 这包括 Azure AD 中各种服务生成的审核日志，包括用户、应用、设备和组管理、特权标识管理 (PIM) 、访问评审、使用条款、标识保护、密码管理 (自助服务和管理员密码重置) 以及自助服务组管理等。
+获取由用户生成的审核日志Azure Active Directory。 这包括 Azure AD 中各种服务生成的审核日志，包括用户、应用、设备和组管理、特权标识管理 (PIM) 、访问评审、使用条款、标识保护、密码管理 (自助服务和管理员密码重置) 以及自助服务组管理等。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -65,7 +65,7 @@ GET /auditLogs/directoryaudits
 | targetResources/any (t：t/displayName eq '{value}')             | eq                  |
 | targetResources/any (x： startswith (x/displayName， '{value}') )  | startswith          |
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称          | 说明   |
 | :------------ | :------------ |
@@ -132,7 +132,6 @@ GET https://graph.microsoft.com/v1.0/auditLogs/directoryAudits
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 271
 
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#auditlogs/directoryaudits",

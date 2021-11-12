@@ -2,15 +2,15 @@
 title: 获取 printerShare
 description: 检索打印机共享的属性和关系。
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 046d5a107ea2b92adf17bb24f585138764757b50
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 948975def7e66230fd10aabd052311c4a90b547a
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52037485"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939335"
 ---
 # <a name="get-printershare"></a>获取 printerShare
 
@@ -20,7 +20,7 @@ ms.locfileid: "52037485"
 
 检索打印机共享的属性和关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 除了以下权限之外，用户或应用的租户还必须具有活动的通用打印订阅。
@@ -46,10 +46,10 @@ GET /print/printers/{printerId}/shares/{printerShareId}
 GET /print/printers/{id}?$select=id,displayName,capabilities
 ```
 
-### <a name="exceptions"></a>Exceptions
+### <a name="exceptions"></a>例外
 * `$count`运算符不受支持。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称      |说明|
 |:----------|:----------|
 | Authorization | Bearer {token}。必需。 |
@@ -101,7 +101,6 @@ GET https://graph.microsoft.com/beta/print/shares/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 225
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/shares/$entity",
@@ -121,7 +120,6 @@ Content-length: 225
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1313
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/shares/$entity",

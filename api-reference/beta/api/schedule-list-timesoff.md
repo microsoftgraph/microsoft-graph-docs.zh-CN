@@ -2,15 +2,15 @@
 title: List timesOff
 description: 获取此计划中的 timesOff 列表。
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: aec47b6dcd27c9e9b05a4794e1fdef3465e06eec
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: d06d770448896bfdb227031adcf56f940c156203
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52036670"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946620"
 ---
 # <a name="list-timesoff"></a>List timesOff
 
@@ -20,7 +20,7 @@ ms.locfileid: "52036670"
 
 获取计划 [中的 timeOff](../resources/timeoff.md) 实例 [列表](../resources/schedule.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -42,7 +42,7 @@ GET /teams/{teamId}/schedule/timesOff
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 $filter [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 标头       | 值 |
 |:---------------|:--------|
@@ -104,7 +104,6 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timesOff?$filter=sh
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 401
 
 {
   "value": [

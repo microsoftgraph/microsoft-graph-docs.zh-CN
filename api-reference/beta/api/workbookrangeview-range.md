@@ -2,15 +2,15 @@
 title: 'workbookRangeView: range'
 description: 返回与 rangeView 资源相关联的范围。
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 1d9b1486971ad03496f889ac429af4e7501b0dd4
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a7a590ffbee6228105595b2206b78cc401f9fb64
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051688"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945969"
 ---
 # <a name="workbookrangeview-range"></a>workbookRangeView: range
 
@@ -20,7 +20,7 @@ ms.locfileid: "52051688"
 
 返回与 rangeView 资源相关联的范围。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/range(a
 
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -91,7 +91,6 @@ GET https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/range(a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 157
 
 {
   "address": "address-value",

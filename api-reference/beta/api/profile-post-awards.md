@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 829d3a5fb1ddb4ef14d7e6896881131782ffc36d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e91d6a983196b94a4b33d11881f138ff586e7fb8
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59027454"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947201"
 ---
 # <a name="create-personaward"></a>创建 personAward
 
@@ -18,7 +18,7 @@ ms.locfileid: "59027454"
 
 在用户配置文件 [中创建新的 personAward](../resources/personaward.md) [对象](../resources/profile.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -49,10 +49,10 @@ POST /users/{id | userPrincipalName}/profile/awards
 
 下表显示了在用户配置文件中创建新的 [personAward](../resources/personaward.md) 对象时可以设置 [的属性](../resources/profile.md)。
 
-|属性|类型|描述|
+|属性|类型|Description|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|说明|String|奖励或奖励的奖励。 |
+|description|String|奖励或奖励的奖励。 |
 |displayName|String|奖励或奖励的名称。 |
 |inference|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断出来的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |issuedDate|日期|授予奖励或奖励的日期。 |
@@ -76,7 +76,6 @@ POST /users/{id | userPrincipalName}/profile/awards
 ``` http
 POST https://graph.microsoft.com/beta/me/profile/awards
 Content-Type: application/json
-Content-length: 497
 
 {
   "description": "Lifetime Achievement award from the International Association of Branding Managers",

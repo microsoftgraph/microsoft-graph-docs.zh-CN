@@ -1,16 +1,16 @@
 ---
 title: 创建分区
-description: 在指定的分区组中新建分区。
-localization_priority: Normal
+description: 在指定的节组中创建新节。
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 7428532db09a30c6808154d1b7fe1754941e0c71
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b06d399c5ddcb4d8831f4c4188d6776528377dc4
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48982077"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946599"
 ---
 # <a name="create-section"></a>创建分区
 
@@ -18,8 +18,8 @@ ms.locfileid: "48982077"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在指定的分区组中新建 [分区](../resources/onenotesection.md) 。
-## <a name="permissions"></a>权限
+在指定的 [节组中](../resources/onenotesection.md) 创建新节。
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -49,7 +49,7 @@ POST /sites/{id}/onenote/sectionGroups/{id}/sections
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [onenoteSection](../resources/onenotesection.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [onenoteSection](../resources/onenotesection.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -63,7 +63,6 @@ POST /sites/{id}/onenote/sectionGroups/{id}/sections
 ```http
 POST https://graph.microsoft.com/beta/me/onenote/sectionGroups/{id}/sections
 Content-type: application/json
-Content-length: 27
 
 {
   "displayName": "Section name"
@@ -98,7 +97,6 @@ Content-length: 27
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 272
 
 {
   "isDefault": true,

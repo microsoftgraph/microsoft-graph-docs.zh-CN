@@ -1,16 +1,16 @@
 ---
 title: Range:OffsetRange
 description: 获取表示与指定区域偏移的区域的对象。返回的区域的尺寸将与该区域匹配。如果强制使生成的区域位于工作表网格的边界之外，则会引发异常。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: e30c732a6e4595229c693d55647e938e8b13e5c5
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a24287fef0bec8afa064b52e732ce28ffa4652cb
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055069"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60935212"
 ---
 # <a name="range-offsetrange"></a>Range:OffsetRange
 
@@ -19,7 +19,7 @@ ms.locfileid: "52055069"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取表示与指定区域偏移的区域的对象。返回的区域的尺寸将与该区域匹配。如果强制使生成的区域位于工作表网格的边界之外，则会引发异常。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -48,7 +48,7 @@ GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/ran
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |rowOffset|number|区域偏移的行数（正数、负数或 0）。正数表示向下偏移，负数表示向上偏移。|
 |columnOffset|number|区域偏移的列数（正数、负数或 0）。正数表示向右偏移，负数表示向左偏移。|
@@ -68,7 +68,6 @@ GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/ran
 ```http
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/OffsetRange
 Content-type: application/json
-Content-length: 49
 
 {
   "rowOffset": {
@@ -79,7 +78,7 @@ Content-length: 49
 ```
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -88,7 +87,6 @@ Content-length: 49
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 169
 
 {
   "address": "address-value",

@@ -2,15 +2,15 @@
 title: 添加教师
 description: 向课程添加教师。
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: ea59f56666c56397ac8077da3b215f7d5e53e1d6
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: cbbc4ac07ac94d4cdc34d03cfdad53f24d63e381
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786774"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60925473"
 ---
 # <a name="add-teacher"></a>添加教师
 
@@ -20,7 +20,7 @@ ms.locfileid: "52786774"
 
 向课程添加教师。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -59,7 +59,6 @@ POST /education/classes/{id}/teachers/$ref
 ```http
 POST https://graph.microsoft.com/beta/education/classes/11017/teachers/$ref
 Content-type: application/json
-Content-length: 508
 
 {
   "@odata.id":"https://graph.microsoft.com/beta/education/users/14011"

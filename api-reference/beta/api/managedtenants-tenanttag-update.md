@@ -2,15 +2,15 @@
 title: 更新 tenantTag
 description: 更新 tenantTag 对象的属性。
 author: isaiahwilliams
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 367fd71e769ae2fa4cd73b0f25f120b22fa5f0d9
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: fc3460209c4f6c8cb81663b75eb7d024999402c2
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53442710"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938746"
 ---
 # <a name="update-tenanttag"></a>更新 tenantTag
 命名空间：microsoft.graph.managedTenants
@@ -19,7 +19,7 @@ ms.locfileid: "53442710"
 
 更新 [tenantTag 对象](../resources/managedtenants-tenanttag.md) 的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -52,7 +52,7 @@ PATCH /tenantRelationships/managedTenants/tenantTags/{tenantTagId}
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |displayName|String|租户显示名称的变量。|
-|说明|String|租户标记的说明。|
+|description|String|租户标记的说明。|
 |tenants|[microsoft.graph.managedTenants.tenantInfo](../resources/managedtenants-tenantinfo.md) 集合|与租户标记关联的托管租户的集合。|
 
 ## <a name="response"></a>响应
@@ -72,7 +72,6 @@ PATCH /tenantRelationships/managedTenants/tenantTags/{tenantTagId}
 ``` http
 PATCH https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenantTags/{tenantTagId}
 Content-Type: application/json
-Content-length: 382
 
 {
   "displayName": "Onboarding",

@@ -2,15 +2,15 @@
 title: 获取 educationCategory
 description: 检索类别对象。
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: c79fc121f0fff65c26ac7d847d5ab16f4bd9aef8
-ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
+ms.openlocfilehash: a3c9a430826a89fac3fb6dcecd343d5e38561392
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58367133"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939684"
 ---
 # <a name="get-educationcategory"></a>获取 educationCategory
 
@@ -20,7 +20,7 @@ ms.locfileid: "58367133"
 
 检索 [educationCategory](../resources/educationcategory.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -105,7 +105,6 @@ GET https://graph.microsoft.com/beta/education/classes/dacbf757-888d-42ae-b701-5
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 85
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/education/classes/dacbf757-888d-42ae-b701-5e57cec300ae/assignmentCategories/$entity",

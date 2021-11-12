@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 author: harini84
 ms.prod: outlook
-ms.openlocfilehash: 320ddb3c2d3dbf5f25f185ed2565f2dce057be34
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f3d12beb9c327ab7698ab2a0bdf2a405c28e9f43
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59007455"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947418"
 ---
 # <a name="create-event"></a>创建事件
 
@@ -156,7 +156,6 @@ Content-type: application/json
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 2197
 
 {
     "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events/$entity",
@@ -263,7 +262,6 @@ Content-length: 2197
 POST https://graph.microsoft.com/v1.0/me/events
 Prefer: outlook.timezone="Pacific Standard Time"
 Content-type: application/json
-Content-length: 1390
 
 {
   "subject": "Plan summer company picnic",
@@ -355,7 +353,6 @@ Content-length: 1390
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 2985
 
 {
   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/events/$entity",

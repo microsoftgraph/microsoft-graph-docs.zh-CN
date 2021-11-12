@@ -2,15 +2,15 @@
 title: 列出 rejectedSender
 description: '获取此组的“遭拒的发件人”列表中的用户或组列表。 '
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 95ef002b64cd047a4a7dc13b7856c9e2be6f3de7
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 490a1879336f132d012b873a81f12b9c49a97d11
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680617"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924626"
 ---
 # <a name="list-rejectedsenders"></a>列出 rejectedSender
 
@@ -18,7 +18,7 @@ ms.locfileid: "52680617"
 
 已拒绝的发件人列表中的用户无法发布到组对话（在 GET 请求 URL 中标识）。确保未在拒绝的发件人和接受的发件人列表中指定同一用户或组，否则会发生错误。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -91,7 +91,6 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/rejectedSenders
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
 
 {
   "value": [

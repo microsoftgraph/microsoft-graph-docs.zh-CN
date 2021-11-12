@@ -1,16 +1,16 @@
 ---
 title: 列出订阅
 description: " 有关详细信息，请参阅下面的方案。"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 25b37c652eac03eb827abfc4f6b43481e8d3e8c3
-ms.sourcegitcommit: 74a1fb3874e04c488e1b87dcee80d76cc586c1f3
+ms.openlocfilehash: 2a4bb437b039d591babe911e5b2ea0dd2f0fecfc
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031007"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947138"
 ---
 # <a name="list-subscriptions"></a>列出订阅
 
@@ -112,7 +112,7 @@ GET https://graph.microsoft.com/beta/subscriptions
 
 ##### <a name="response"></a>响应
 
-下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应。 将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应。 所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",
@@ -124,7 +124,6 @@ GET https://graph.microsoft.com/beta/subscriptions
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 586
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#subscriptions",

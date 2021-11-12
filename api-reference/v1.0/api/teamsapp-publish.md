@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 06f65892d4ff7c13d2cfc9bc5995bef33e5d73e4
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: 658269bdbb05f29b04407c7470d52064c0c4b1d8
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60290006"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946368"
 ---
 # <a name="publish-teamsapp"></a>发布 teamsapp
 
@@ -19,9 +19,9 @@ ms.locfileid: "60290006"
 将[应用发布到](../resources/teamsapp.md)Microsoft Teams目录。
 具体而言，此 API 将应用程序发布到组织的目录 (租户应用程序目录) ;创建的资源将 **具有 的 distributionMethod** 属性值 `organization` 。
 
-**requiresReview** 属性允许任何用户提交应用供管理员审阅。 管理员可以通过此 API 或管理中心批准Microsoft Teams应用。
+**requiresReview** 属性允许任何用户提交应用供管理员审阅。 管理员可以通过此 API 或管理中心批准或拒绝Microsoft Teams应用。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -47,11 +47,11 @@ POST /appCatalogs/teamsApps?requiresReview:{Boolean}
 
 ## <a name="query-parameters"></a>查询参数
 
-|属性|类型|说明|
+|属性|类型|Description|
 |----|----|----|
 |requiresReview| Boolean | 此可选查询参数将触发应用评审过程。 具有管理员权限的用户无需触发审查即可提交应用。 如果用户想要在发布之前请求审阅，则必须将 设置为  `requiresReview` `true` 。 具有管理员权限的用户可以选择不设置或将值设置为 ，应用将被视为已批准， `requiresReview` `false`  并且将立即发布。|
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 标头        | 值           |
 |:--------------|:--------------  |
@@ -84,7 +84,6 @@ POST /appCatalogs/teamsApps?requiresReview:{Boolean}
 ```http
 POST https://graph.microsoft.com/v1.0/appCatalogs/teamsApps
 Content-type: application/zip
-Content-length: 244
 
 [Zip file containing a Teams app package]
 ```
@@ -119,7 +118,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-upload-a-new-application-for-review-to-an-organizations-app-catalog"></a>示例 2：Upload应用程序以检查组织的应用程序目录
+### <a name="example-2-upload-a-new-application-for-review-to-an-organizations-app-catalog"></a>示例 2：Upload新应用程序以检查组织的应用程序目录
 
 #### <a name="request"></a>请求
 
@@ -133,7 +132,6 @@ Content-Type: application/json
 ```http
 POST https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?requiresReview=true
 Content-type: application/zip
-Content-length: 244
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-teamsapp-2-javascript-snippets.md)]

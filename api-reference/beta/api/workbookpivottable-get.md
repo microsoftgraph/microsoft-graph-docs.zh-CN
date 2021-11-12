@@ -2,15 +2,15 @@
 title: Get workbookPivotTable
 description: 检索 workbookPivotTable 对象的属性和关系。
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: e2c3bcd447069182908ee2aa8441e9b8618d3238
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: eb9ccf53c884968599cb0100dfa0194723f0d32a
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049539"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945997"
 ---
 # <a name="get-workbookpivottable"></a>Get workbookPivotTable
 
@@ -20,7 +20,7 @@ ms.locfileid: "52049539"
 
 检索 workbookPivotTable 对象的属性和关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/pivotTa
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -91,7 +91,6 @@ GET https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/pivotTa
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 46
 
 {
   "id": "id-value",

@@ -2,26 +2,24 @@
 title: printServiceEndpoint 资源类型
 description: 表示打印服务实例的 URI 和标识信息。
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 7534e538c81c543671d996c7765125eafcad9d67cddbb13ad406d06edb8b9912
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 812e9367be06760e56299bd62c88c154f1c25c49
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178036"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924199"
 ---
 # <a name="printserviceendpoint-resource-type"></a>printServiceEndpoint 资源类型
 
 命名空间：microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 表示打印服务实例的 URI 和标识信息。
 
-## <a name="methods"></a>方法
-|方法|返回类型|说明|
+## <a name="methods"></a>Methods
+|方法|返回类型|Description|
 |:---|:---|:---|
 | [Get endpoint](../api/printserviceendpoint-get.md) | [printServiceEndpoint](printserviceendpoint.md) | 读取 endpoint 对象的属性和关系。 |
 

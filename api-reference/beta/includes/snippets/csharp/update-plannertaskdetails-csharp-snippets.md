@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5ee47902efd865c3e866ecf41522d96cd720549debf72cb3bcb5839f1c21a5c3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bd2382d8d43e7f307718b4c09c7eeed1b588dae9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57278761"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "60946699"
 ---
 ```csharp
 
@@ -19,7 +19,7 @@ var plannerTaskDetails = new PlannerTaskDetails
         AdditionalData = new Dictionary<string, object>()
         {
             {"http%3A//developer%2Emicrosoft%2Ecom", "{\"@odata.type\":\"microsoft.graph.plannerExternalReference\",\"alias\":\"Documentation\",\"previewPriority\":\" !\",\"type\":\"Other\"}"},
-            {"https%3A//developer%2Emicrosoft%2Ecom/en-us/graph/graph-explorer", "{\"@odata.type\":\"microsoft.graph.plannerExternalReference\",\"previewPriority\":\"  !!\"}"},
+            {"https%3A//developer%2Emicrosoft%2Ecom/graph/graph-explorer", "{\"@odata.type\":\"microsoft.graph.plannerExternalReference\",\"previewPriority\":\"  !!\"}"},
             {"http%3A//www%2Ebing%2Ecom", "null"}
         }
     },

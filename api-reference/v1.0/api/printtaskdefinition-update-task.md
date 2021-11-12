@@ -2,26 +2,24 @@
 title: 更新任务
 description: 更新打印任务。
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 1375b48ccecc800111b0e84065f58324124021d4
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 4ee2d0f6a77ccc2f326a1752c4420cadce1631a1
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50771293"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946417"
 ---
 # <a name="update-printtask"></a>更新 printTask
 命名空间：microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 更新打印任务。
 
 有关如何使用此 API 向通用打印添加拉页打印支持的详细信息，请参阅扩展 [通用打印以支持拉取打印](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。
@@ -52,9 +50,9 @@ PATCH /print/taskDefinitions/{taskDefinitionId}/tasks/{taskId}
 
 在请求正文中，提供应更新的相关 [printTask](../resources/printtask.md) 字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性     | 类型        | 说明 |
+| 属性     | 类型        | Description |
 |:-------------|:------------|:------------|
-|状态|字符串|包括 `state` `description` 描述任务当前状态的值。|
+|status|String|包括 `state` `description` 描述任务当前状态的值。|
 
 ## <a name="response"></a>响应
 
@@ -73,7 +71,6 @@ PATCH /print/taskDefinitions/{taskDefinitionId}/tasks/{taskId}
 ``` http
 PATCH https://graph.microsoft.com/v1.0/print/taskDefinitions/{taskDefinitionId}/tasks/{taskId}
 Content-Type: application/json
-Content-length: 152
 
 {
   "status": {

@@ -2,15 +2,15 @@
 title: 列出所有者
 description: 检索应用程序 (directoryObject) 的所有者列表。
 author: sureshja
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 69f6fe740b0e0377f73eedbef681589da2ffe56e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: d5c798b6933ecc6240c3a37656e3dba7d19c387a
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048118"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939909"
 ---
 # <a name="list-owners"></a>列出所有者
 
@@ -20,7 +20,7 @@ ms.locfileid: "52048118"
 
 检索作为 [directoryObject](../resources/directoryobject.md) 对象的应用程序的所有者列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/applications/{id}/owners
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -91,7 +91,6 @@ GET https://graph.microsoft.com/beta/applications/{id}/owners
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
 
 {
   "value": [

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 64fe2f3388b1743760802fc1c6d974692ce717dc
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: 48294e07ca9075ef780defb4a15009445db9aa33
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60290181"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60931932"
 ---
 # <a name="assign-a-manager"></a>指定经理
 
@@ -21,7 +21,7 @@ ms.locfileid: "60290181"
 使用此 API 指定用户的经理。
 > 注意：不能指定直接下属，请改用此 API。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -59,7 +59,6 @@ PUT /users/{id}/manager/$ref
 ```http
 PUT https://graph.microsoft.com/v1.0/users/{id}/manager/$ref
 Content-type: application/json
-Content-length: xxx
 
 {
   "@odata.id": "https://graph.microsoft.com/v1.0/users/{id}"

@@ -2,15 +2,15 @@
 title: 创建 sourceCollection
 description: 创建新的 sourceCollection 对象。
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 799601b3ca59c3522e4d023f7647bca523369659
-ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
+ms.openlocfilehash: ba810925c220451a7ff416d5bf065a565e2f1f13
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52080312"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60925585"
 ---
 # <a name="create-sourcecollection"></a>创建 sourceCollection
 
@@ -20,7 +20,7 @@ ms.locfileid: "52080312"
 
 创建新的 [sourceCollection](../resources/ediscovery-sourcecollection.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -54,10 +54,10 @@ POST /compliance/ediscovery/cases/{caseId}/sourceCollections
 
 下表显示创建 [sourceCollection 时所需的属性](../resources/ediscovery-sourcecollection.md)。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |dataSourceScopes|microsoft.graph.ediscovery.dataSourceScopes|指定此参数时，集合将跨越整个工作负荷的服务。 可能的值是 `none` `allTenantMailboxes` `allTenantSites` ：、、、、。 `allCaseCustodians` `allCaseNoncustodialDataSources` **注意：** 创建源集合时，需要一个保管人或指定 dataSourceScope。|
-|displayName|String|**sourceCollection 显示名称**|
+|displayName|String|**sourceCollection** 显示名称|
 |custodianSources|[microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md) 集合|要包含在此搜索中的保管人源。 你可以从保管人[siteSources、unifiedGroupSources](../api/ediscovery-custodian-list-sitesources.md)或[userSources](../api/ediscovery-custodian-list-usersources.md)获取 URL 以及源的 ID。 [](../api/ediscovery-custodian-list-unifiedgroupsources.md) **注意：** 创建源集合时，需要一个保管人或指定租户源。 |
 
 ## <a name="response"></a>响应
@@ -79,7 +79,6 @@ POST /compliance/ediscovery/cases/{caseId}/sourceCollections
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/47746044-fd0b-4a30-acfc-5272b691ba5b/sourceCollections
 Content-Type: application/json
-Content-length: 272
 
 {
     "displayName": "Quarterly Financials search",

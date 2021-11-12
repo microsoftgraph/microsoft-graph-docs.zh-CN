@@ -1,16 +1,16 @@
 ---
 title: 更新 accessReviewInstanceDecisionItem
 description: 更新调用用户是审阅者的现有 accessReviewInstanceDecisionItem 对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 8fb69b4088fe0366f19e076fb069a8d57826ae18
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 25db7736e01b80c5770cf6f74e17d751efc1c58b
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786634"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940104"
 ---
 # <a name="update-accessreviewinstancedecisionitem"></a>更新 accessReviewInstanceDecisionItem
 
@@ -45,9 +45,9 @@ PATCH /me/pendingAccessReviewInstances/{instance-id}/decisions/{decision-id}
 ## <a name="request-body"></a>请求正文
 下表显示接受更新 的属性 `accessReviewInstanceDecisionItem` 。
 
-| 属性     | 类型       | 说明 |
+| 属性     | 类型       | Description |
 |:-------------|:------------|:------------|
-| decision  | String | 被审阅实体的访问决策。 可能的值是 `Approve` `Deny` `NotReviewed` `DontKnow` ：。 必填。  |
+| decision  | String | 被审阅实体的访问决策。 可能的值是 `Approve` `Deny` `NotReviewed` `DontKnow` ：。 必需。  |
 |  justification | String | 提供给管理员评价的上下文。 如果 accessReviewScheduleDefinition 上的 justificationRequiredOnApproval 为 True，则必需。  |
 
 ## <a name="response"></a>响应
@@ -68,7 +68,6 @@ PATCH /me/pendingAccessReviewInstances/{instance-id}/decisions/{decision-id}
 ``` http
 PATCH https://graph.microsoft.com/beta/me/pendingAccessReviewInstances/70a68410-67f3-4d4c-b946-6989e050be19/decisions/12348410-67f3-4d4c-b946-6989e050be19
 Content-Type: application/json
-Content-length: 730
 
 {
   "decision": "Approve",

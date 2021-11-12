@@ -5,12 +5,12 @@ author: sharad-sharma-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 01c01220273e7f129ea1e398bc77c8b22ccf763f
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: c6016e486b98103c07a18608154daa8680109b03
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59767014"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924662"
 ---
 # <a name="list-assignment-resources"></a>列出作业资源
 
@@ -18,7 +18,7 @@ ms.locfileid: "59767014"
 
 获取与工作分配 关联的所有 [资源](../resources/educationassignment.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -93,7 +93,6 @@ GET https://graph.microsoft.com/v1.0/education/classes/f4a941ff-9da6-4707-ba5b-0
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1011
 
 {
     "value": [

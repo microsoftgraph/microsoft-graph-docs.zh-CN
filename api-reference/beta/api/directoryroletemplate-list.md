@@ -5,12 +5,12 @@ author: abhijeetsinha
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 9181a617aab5d79a7de1faf1ed15337c4e7c4397
-ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
+ms.openlocfilehash: 5e776bc45ce604d4c0994eb00377ca8ecaa3ff2f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60256471"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939698"
 ---
 # <a name="list-directoryroletemplates"></a>列出 directoryRoleTemplates
 
@@ -19,7 +19,7 @@ ms.locfileid: "60256471"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索 directoryroletemplate 对象的列表。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -88,7 +88,6 @@ GET https://graph.microsoft.com/beta/directoryRoleTemplates
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 139
 
 {
   "value": [

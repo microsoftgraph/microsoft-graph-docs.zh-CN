@@ -1,16 +1,16 @@
 ---
 title: 获取 workbookApplication
 description: 检索 workbookApplication 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 9832431657097efc28b77a72a23de23feeb40e5a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 749070c4ee15f4b54b46b39d25a5b0f5a1419762
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049574"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938285"
 ---
 # <a name="get-workbookapplication"></a>获取 workbookApplication
 
@@ -19,7 +19,7 @@ ms.locfileid: "52049574"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索 [workbookApplication](../resources/workbookapplication.md) 对象的属性和关系。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -37,7 +37,7 @@ GET /me/drive/root:/{item-path}:/workbook/application
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
@@ -90,7 +90,6 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/application
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 48
 
 {
   "calculationMode": "calculationMode-value"

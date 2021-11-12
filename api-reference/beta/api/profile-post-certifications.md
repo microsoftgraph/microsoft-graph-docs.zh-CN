@@ -5,19 +5,19 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: f1ee679da44d0bd5ca74e4ffbed497a25bbc8c6e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 775b382c24500d1789249926653461d533cfd267
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59027447"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947194"
 ---
 # <a name="create-personcertification"></a>创建 personCertification
 命名空间：microsoft.graph
 
 在用户配置文件中创建新的 [personCertification](../resources/personcertification.md) [对象](../resources/profile.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -48,11 +48,11 @@ POST /users/{id | userPrincipalName}/profile/certifications
 
 下表显示了在用户配置文件中创建新的 [personCertification](../resources/personcertification.md) 对象时可以设置 [的属性](../resources/profile.md)。
 
-|属性|类型|描述|
+|属性|类型|Description|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
 |certificationId  |String      |证书的可引用标识符。 |
-|说明      |String      |认证说明。                   |
+|description      |String      |认证说明。                   |
 |displayName      |String      |认证的标题。                         |
 |endDate          |日期        |认证到期的日期。            |
 |inference|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断出来的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
@@ -79,7 +79,6 @@ POST /users/{id | userPrincipalName}/profile/certifications
 ``` http
 POST https://graph.microsoft.com/beta/me/profile/certifications
 Content-Type: application/json
-Content-length: 497
 
 {
   "certificationId": "KB-1235466333663322",

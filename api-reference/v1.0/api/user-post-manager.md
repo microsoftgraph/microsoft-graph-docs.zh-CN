@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 15c0d3a2013c48c337c5c2691ad2d22cd4510cd8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 151b97924504d65f46ea34cae0d4f85cedfbeb32
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59109705"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940174"
 ---
 # <a name="assign-manager"></a>分配管理器
 
@@ -20,7 +20,7 @@ ms.locfileid: "59109705"
 > [!NOTE]
 > 不能分配直接下属;请改为使用此 API。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -59,7 +59,6 @@ PUT /users/{id}/manager/$ref
 ```http
 PUT https://graph.microsoft.com/v1.0/users/{id}/manager/$ref
 Content-type: application/json
-Content-length: xxx
 
 {
   "@odata.id": "https://graph.microsoft.com/v1.0/users/{id}"
