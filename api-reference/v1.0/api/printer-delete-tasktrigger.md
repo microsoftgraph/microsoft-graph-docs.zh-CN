@@ -2,24 +2,22 @@
 title: 删除 printTaskTrigger
 description: 删除打印机的任务触发器。
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: bba66bb6c11d930b1b9065769181f55efc114dd4
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: fc0ddc07abf801a3c32f1d740469a22072c54f43
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50772014"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60927916"
 ---
 # <a name="delete-printtasktrigger"></a>删除 printTaskTrigger
 命名空间：microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 删除[打印机的任务](../resources/printtasktrigger.md)[触发器](../resources/printer.md)，以防止相关打印事件触发指定打印机上的任务。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。

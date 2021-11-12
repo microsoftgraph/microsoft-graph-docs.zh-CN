@@ -2,15 +2,15 @@
 title: 列出 timeOffReasons
 description: 获取计划中的 timeOffReasons 列表。
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 428ede3f9f91f4239651f3a8efeb59f5faa4cebf
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: bf1b5faa60708a65221fd6eedb3acd9b0aebbd1f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052738"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60926453"
 ---
 # <a name="list-timeoffreasons"></a>列出 timeOffReasons
 
@@ -19,7 +19,7 @@ ms.locfileid: "52052738"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 获取计划中的 [timeOffReasons](../resources/timeoffreason.md) [列表](../resources/schedule.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -102,7 +102,6 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffReasons
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 401
 
 {
   "value": [

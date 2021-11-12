@@ -2,15 +2,15 @@
 title: 'message: createForward'
 description: 创建草稿以转发 JSON 或 MIME 格式的现有邮件。
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 758ca460786eb7e59c41762f8dfa4209b20a62b9
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 72e55cd65e531e5330103f5f8603fc2a8f3ce1c1
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52870421"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938739"
 ---
 # <a name="message-createforward"></a>message: createForward
 
@@ -33,7 +33,7 @@ ms.locfileid: "52870421"
 
 或者， [在单个操作](../api/message-forward.md) 中转发邮件。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -59,7 +59,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createForwar
 ## <a name="request-body"></a>请求正文
 若要发送 JSON 对象，请提供以下参数。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |注释|String|要包含的注释。可以为空字符串。|
 |toRecipients|[recipient](../resources/recipient.md) collection|收件人列表|
@@ -133,7 +133,6 @@ Content-Type: application/json
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 272
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Me/messages/$entity",

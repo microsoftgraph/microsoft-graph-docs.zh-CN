@@ -2,15 +2,15 @@
 title: Add attachment
 description: 使用此 API 将 附件 添加到事件。 自此处起
 author: svpsiva
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 18c73e333c98c86c66b8ed8227aa9f98cfcfcbb8
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 664e44c8b7703b3ec0e5a14ef47029d78f19799b
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52042532"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60935863"
 ---
 # <a name="add-attachment"></a>添加附件
 
@@ -22,7 +22,7 @@ ms.locfileid: "52042532"
 
 如果组织者向会议事件添加附件，组织者随后可以更新事件以发送附件[](event-update.md)并更新每个与会者的事件。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -75,7 +75,6 @@ POST /groups/{id}/events/{id}/attachments
 ```http
 POST https://graph.microsoft.com/beta/me/events('AAMkAGI1AAAt9AHjAAA=')/attachments
 Content-type: application/json
-Content-length: 151
 
 {
     "@odata.type": "#microsoft.graph.fileAttachment",
@@ -106,7 +105,7 @@ Content-length: 151
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "name": "create_file_attachment_from_event_beta",
@@ -147,7 +146,6 @@ Content-Length: 735
 ```http
 POST https://graph.microsoft.com/beta/me/events/{AAMkAGI1AAAt9AHjAAA=}/attachments
 Content-type: application/json
-Content-length: 600
 
 {
   "@odata.type": "#microsoft.graph.itemAttachment",
@@ -174,7 +172,7 @@ Content-length: 600
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "name": "create_item_attachment_from_event",
@@ -185,7 +183,6 @@ Content-length: 600
 ```http
 HTTP 201 Created
 Content-type: application/json
-Content-length: 162
 
 {
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#me/events('AAMkAGI1AAAt9AHjAAA=')/attachments/$entity",
@@ -216,7 +213,6 @@ Content-length: 162
 ```http
 POST https://graph.microsoft.com/beta/me/events/AAMkAGE1M88AADUv0uAAAG=/attachments
 Content-type: application/json
-Content-length: 319
 
 {
     "@odata.type": "#microsoft.graph.referenceAttachment",

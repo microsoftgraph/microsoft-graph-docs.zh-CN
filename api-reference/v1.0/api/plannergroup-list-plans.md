@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: e01349041c328ac7f9bb5a42b61e474c9218c351
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 63b3584b526d11bccf1106400a3bfb5b018d40e9
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59099320"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947564"
 ---
 # <a name="list-plans"></a>列出计划
 
@@ -86,7 +86,6 @@ GET https://graph.microsoft.com/v1.0/groups/{group-id}/planner/plans
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 421
 
 {
   "value": [

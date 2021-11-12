@@ -2,15 +2,15 @@
 title: 获取 printUsageByUser
 description: 检索特定时间段的用户使用情况摘要。
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: ab81ab84a1ff70a0de7fbfb6fce33f83d0260466
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 7902a21e8a0886492de6cc01e5632afa71bb1591
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52869840"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60935492"
 ---
 # <a name="get-printusagebyuser"></a>获取 printUsageByUser
 
@@ -22,8 +22,8 @@ ms.locfileid: "52869840"
 
 有关 [每个终结点的说明，请参阅 printUsageByUser](../resources/printUsageByUser.md) 文档。
 
-## <a name="permissions"></a>权限
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
+## <a name="permissions"></a>Permissions
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 若要使用通用打印服务，除了下表中列出的权限之外，用户或应用的租户还必须具有活动的通用打印订阅。
 
@@ -96,7 +96,6 @@ GET https://graph.microsoft.com/beta/print/reports/dailyPrintUsageByUser/016b556
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 251
 
 {
   "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",

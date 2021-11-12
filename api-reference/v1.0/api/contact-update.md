@@ -5,19 +5,19 @@ author: kevinbellinger
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7efb9013b43958ceee585975b8296a4ec607c016
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2277bca7f56c6db986082549c13544861166dde2
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59053665"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940869"
 ---
 # <a name="update-contact"></a>更新联系人
 
 命名空间：microsoft.graph
 
 更新 contact 对象的属性。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -43,7 +43,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/contacts/{id}
 PATCH /me/contactFolders/{id}/childFolders/{id}/.../contacts/{id}
 PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
 ```
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
@@ -62,7 +62,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |categories|String|与联系人关联的类别。|
 |children|String|联系人子女的姓名。|
 |companyName|String|联系人所在公司的名称。|
-|部门|String|联系人所在的部门。|
+|department|String|联系人所在的部门。|
 |displayName|String|联系人的显示名称。 请注意，对其他属性的后续更新可能会导致自动生成的值覆盖你指定的 displayName 值。 若要保留预先存在的值，请始终在更新操作中将其作为 displayName。|
 |emailAddresses|[EmailAddress](../resources/emailaddress.md) 集合|联系人的电子邮件地址。|
 |fileAs|String|联系人备案的姓名。|
@@ -104,7 +104,6 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/contacts/{id}
 Content-type: application/json
-Content-length: 1977
 
 {
   "homeAddress": {
@@ -144,7 +143,6 @@ Content-length: 1977
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1977
 
 {
   "id": "AAMkAGI2THk0AAA=",

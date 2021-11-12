@@ -5,19 +5,19 @@ ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 582b3021833e6b78ef6f1ae3b4435c04b6466a9c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 44d73f71a3d60b9cd6f11e5c9adf3173718d1969
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59007773"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947543"
 ---
 # <a name="update-plannerplandetails"></a>更新 plannerplandetails
 
 命名空间：microsoft.graph
 
 更新 **plannerplandetails** 对象的属性。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -34,13 +34,13 @@ PATCH /planner/plans/{id}/details
 ## <a name="optional-request-headers"></a>可选的请求标头
 | 名称       | 说明|
 |:-----------|:-----------|
-| Authorization  | 持有者{令牌}。必需。 |
+| Authorization  | Bearer {token}。必需。 |
 | If-Match  | 要更新的 plannerPlanDetails 的上次已知 ETag 值。必需。|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |categoryDescriptions|[plannerCategoryDescriptions](../resources/plannercategorydescriptions.md)|指定可与计划中的任务相关联的六个类别的描述的对象|
 |sharedWith|[plannerUserIds](../resources/planneruserids.md)|此计划共享的用户 ID 集。 如果你要利用Microsoft 365组，请使用组 API 管理组成员身份以[共享组计划](../resources/group.md)。 您还可以将组的现有成员添加到此集合中，尽管他们无需访问组所拥有的计划。|
@@ -63,7 +63,6 @@ PATCH /planner/plans/{id}/details
 ```http
 PATCH https://graph.microsoft.com/v1.0/planner/plans/{plan-id}/details
 Content-type: application/json
-Content-length: 212
 Prefer: return=representation
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
@@ -106,7 +105,6 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 373
 
 {
   "sharedWith": {

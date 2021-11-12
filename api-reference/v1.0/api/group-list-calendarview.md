@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 353fe905c2a60c212b89c763faa38eb6b4b1d42f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 53db728bf588e31a17e1fda8a0b2a2796d5b620f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59008256"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60931663"
 ---
 # <a name="list-calendarview"></a>列出 calendarView
 
@@ -18,7 +18,7 @@ ms.locfileid: "59008256"
 
 从群组的默认日历中，获取由时间范围定义的日历视图中的事件发生次数、异常和单个实例。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -106,7 +106,6 @@ Prefer: outlook.body-content-type="text"
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1354
 Preference-Applied: outlook.body-content-type="text"
 
 {

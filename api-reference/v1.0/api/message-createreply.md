@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3c6e55e6150bb1f8401e47c9b5f5060425a25c20
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a085f740e530c008e686f5d3e21a90179a31bdf0
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59110282"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60928308"
 ---
 # <a name="message-createreply"></a>message: createReply
 
@@ -20,7 +20,7 @@ ms.locfileid: "59110282"
 
 使用 JSON 格式时：
 - 指定参数的 comment 或 **body** `message` 属性。 指定这两者将返回 HTTP 400 错误请求错误。
-- 如果在原始邮件中指定了 **replyTo，** 则根据 Internet 邮件格式 ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)) ，您应该将答复发送给 **replyTo** 中的收件人，而不是 中的 **收件人**。
+- 如果在原始邮件中指定了 **replyTo，** 则根据 Internet 邮件格式 ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)) ，您应将答复发送给 **replyTo** 中的收件人，而不是 中的 **收件人**。
 - 您可以 [稍后](../api/message-update.md) 更新草稿以将回复内容添加到 **正文或更改** 其他邮件属性。
 
 使用 MIME 格式时：
@@ -31,7 +31,7 @@ ms.locfileid: "59110282"
 
 或者， [在单个操作中](../api/message-reply.md) 回复邮件。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -112,7 +112,6 @@ POST https://graph.microsoft.com/v1.0/me/messages/{id}/createReply
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 248
 
 {
   "receivedDateTime": "datetime-value",

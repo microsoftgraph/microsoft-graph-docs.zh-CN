@@ -2,15 +2,15 @@
 title: deploymentAudience：updateAudience
 description: 更新 deploymentAudience 的成员和排除集合。
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 23fe655e076987ffb33591eb8aaa1600ed4a8fa4
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+ms.openlocfilehash: cc9c343b0646710f59445ff8c4b6b713d45ae639
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53351123"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60926054"
 ---
 # <a name="deploymentaudience-updateaudience"></a>deploymentAudience：updateAudience
 
@@ -20,7 +20,7 @@ ms.locfileid: "53351123"
 
 更新 [deploymentAudience](../resources/windowsupdates-deploymentaudience.md)的成员和排除集合。
 
-向部署访问群体的成员或排除集合添加 [azureADDevice](../resources/windowsupdates-azureaddevice.md) 会自动创建 Azure AD 设备对象（如果该对象不存在）。
+将[azureADDevice](../resources/windowsupdates-azureaddevice.md)添加到部署访问群体的成员或排除集合会自动创建Azure AD对象（如果不存在）。
 
 如果 **deploymentAudience** 的排除和 **成员** 集合中包含相同的 [updatableAsset，](../resources/windowsupdates-updatableasset.md)则部署不会应用于该资产。 
 
@@ -29,14 +29,14 @@ ms.locfileid: "53351123"
 > [!NOTE]
 > 此 API 具有 [与](/Graph/known-issues#accessing-and-updating-deployment-audiences) 通过 Intune 创建的部署相关的已知问题。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|WindowsUpdates.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|WindowsUpdates.ReadWrite.All|
+|应用程序|WindowsUpdates.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -59,7 +59,7 @@ POST /admin/windows/updates/deployments/{deploymentId}/audience/updateAudience
 
 下表显示了可用于此操作的参数。
 
-|参数|类型|说明|
+|参数|类型|Description|
 |:---|:---|:---|
 |addMembers|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) 集合|要添加为部署访问群体成员的 [updatableAsset](../resources/windowsupdates-updatableasset.md) 资源的列表。|
 |removeMembers|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) 集合|要作为部署访问群体成员删除的可更新资源的列表。|
@@ -86,7 +86,6 @@ POST /admin/windows/updates/deployments/{deploymentId}/audience/updateAudience
 ``` http
 POST https://graph.microsoft.com/beta/admin/windows/updates/deployments/{deploymentId}/audience/updateAudience
 Content-Type: application/json
-Content-length: 599
 
 {
   "addMembers": [

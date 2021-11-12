@@ -5,12 +5,12 @@ author: cloudhandler
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 67c056a36e53cf3f6f332884265e30e9a40db12d
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: 3bd85442ded90d07fea8ea3a558bf738ced5c2c5
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60730261"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939089"
 ---
 # <a name="riskyuser-confirmcompromised"></a>riskyUser：confirmComprom一
 命名空间：microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "60730261"
 
 确认一个或多个 [riskyUser](../resources/riskyuser.md) 对象受到威胁。 此操作将目标用户的风险级别设置得较高。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -49,9 +49,9 @@ POST /identityProtection/riskyUsers/confirmCompromised
 
 下表显示了可用于此操作的参数。
 
-|参数|类型|说明|
+|参数|类型|Description|
 |:---|:---|:---|
-|userIds|String collection|在请求正文中指定要消除的风险用户 ID。|
+|userIds|String 集合|在请求正文中指定要消除的风险用户 ID。|
 
 
 
@@ -70,7 +70,6 @@ POST /identityProtection/riskyUsers/confirmCompromised
 ``` http
 POST https://graph.microsoft.com/v1.0/identityProtection/riskyUsers/confirmCompromised
 Content-Type: application/json
-Content-length: 39
 
 {
   "userIds": [

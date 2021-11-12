@@ -5,19 +5,19 @@ author: abheek-das
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f24a2ef3cf62b13dd5319ee9a4399aa125c24cb6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d1a4a12db1f6dd38e46ef60b960da8228cbd3717
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59095127"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924645"
 ---
 # <a name="list-attachments"></a>列出附件
 
 命名空间：microsoft.graph
 
 检索 attachment 对象列表。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -88,7 +88,6 @@ GET https://graph.microsoft.com/v1.0/me/messages/{id}/attachments
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 215
 
 {
   "value": [

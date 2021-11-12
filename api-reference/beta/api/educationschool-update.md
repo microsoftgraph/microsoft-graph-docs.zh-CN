@@ -2,15 +2,15 @@
 title: 更新 educationSchool 属性
 description: 更新 school 对象的属性。
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: bb25d6e2ff81542dcd5481215fd93687b388fe05
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: d54fcd22716e1c93e0e43951f5f92eb8de918e2f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52043365"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943477"
 ---
 # <a name="update-educationschool-properties"></a>更新 educationschool 属性
 
@@ -20,7 +20,7 @@ ms.locfileid: "52043365"
 
 更新 school 对象的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -50,7 +50,7 @@ PATCH /education/schools/{id}
 | 属性            | 类型                                               | 说明                        |
 | :------------------ | :------------------------------------------------- | :--------------------------------- |
 | displayName         | String                                             | 学校的显示名称         |
-| 说明         | String                                             | 学校描述          |
+| description         | String                                             | 学校描述          |
 | principalEmail      | String                                             | 主体的电子邮件地址     |
 | principalName       | String                                             | 主体名称              |
 | externalPrincipalId | String                                             | 同步系统中主体的 ID。 |
@@ -80,7 +80,6 @@ PATCH /education/schools/{id}
 ```http
 PATCH https://graph.microsoft.com/beta/education/schools/10002
 Content-type: application/json
-Content-length: 292
 
 {
   "displayName": "Fabrikam Arts High School",
@@ -117,7 +116,6 @@ Content-length: 292
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 292
 
 {
   "id": "10002",

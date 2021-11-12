@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: d5046c752d45f41c8e97eff171f6c88b578e4251
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: e4c93a97bebc38b66cdc73cc55fa1b8d7c752393
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696026"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60929615"
 ---
 # <a name="get-governanceroleassignment"></a>获取 governanceRoleAssignment
 
@@ -22,7 +22,7 @@ ms.locfileid: "60696026"
 
 检索 [governanceRoleAssignment 的属性和关系](../resources/governanceroleassignment.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference#privileged-access-permissions)。
 
 ### <a name="azure-resources"></a>Azure 资源
@@ -53,7 +53,7 @@ ms.locfileid: "60696026"
 <!-- { "blockType": "ignored" } -->
 1. 获取[资源的 governanceRoleAssignment](../resources/governanceroleassignment.md)
 
-    *注意：除了权限范围之外，它要求请求者至少对资源角色分配一个权限。* 
+    *注意：除了权限范围之外，它要求请求者对资源角色分配一个权限。* 
 ```http
 GET /privilegedAccess/azureResources/resources/{resourceId}/roleAssignments/{id}
 GET /privilegedAccess/azureResources/roleAssignments/{id}?$filter=resourceId+eq+'{resourceId}'
@@ -66,7 +66,7 @@ GET /privilegedAccess/azureResources/roleAssignments/{id}?$filter=subjectId+eq+'
 ## <a name="optional-query-parameters"></a>可选的查询参数
 除了帮助 **自定义** 响应外，此方法不支持 [OData](/graph/query-parameters) 查询 `$filter` 参数。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {code}|
@@ -94,7 +94,6 @@ GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignm
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 182
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#governanceRoleAssignments/$entity",

@@ -5,19 +5,19 @@ ms.localizationpriority: medium
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 5828f1c1e3e90a1299acd098e2509435543cd17a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5ebb7d99f69d6a01ffa26d896cb754c97a654cc9
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59051605"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938257"
 ---
 # <a name="worksheet-usedrange"></a>Worksheet:UsedRange
 
 命名空间：microsoft.graph
 
 使用的区域是包含分配了值或格式化的任何单元格的最小区域。如果工作表为空，此函数将返回左上角的单元格。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -37,11 +37,11 @@ GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/UsedRange
 ## <a name="function-parameters"></a>函数参数
 在请求 URL 中，提供可选的查询参数。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |valuesOnly|Boolean|可选。仅将具有值的单元格视为已使用的单元格（忽略格式）。|
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
@@ -96,7 +96,6 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 169
 
 {
   "address": "address-value",

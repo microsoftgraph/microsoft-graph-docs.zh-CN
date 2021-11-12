@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 600e3f1c800078aa9a221402d94f73dc6019be20
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 56d62705cef4018355d2ac3f4beececeb5ef5cc4
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59090052"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947442"
 ---
 # <a name="user-assignlicense"></a>用户：assignLicense
 
@@ -61,7 +61,6 @@ POST /users/{id | userPrincipalName}/assignLicense
 ```http
 POST https://graph.microsoft.com/v1.0/me/assignLicense
 Content-type: application/json
-Content-length: 185
 
 {
   "addLicenses": [
@@ -102,7 +101,6 @@ Content-length: 185
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 491
 
 {
   "accountEnabled": true,

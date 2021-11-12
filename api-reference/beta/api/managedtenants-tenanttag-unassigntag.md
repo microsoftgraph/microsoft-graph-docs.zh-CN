@@ -1,25 +1,25 @@
 ---
 title: tenantTag：unassignTag
-description: 从指定的托管租户中取消分配租户标记。
+description: 从指定的托管租户取消分配租户标记。
 author: isaiahwilliams
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 41a2cc35ea47374ef16131fd6190476bcac77847
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 4a33bcb950c923c50999cdce81584393c8054cb4
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53442776"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60926782"
 ---
 # <a name="tenanttag-unassigntag"></a>tenantTag：unassignTag
 命名空间：microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从指定的托管租户中取消分配租户标记。
+从指定的托管租户取消分配租户标记。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -49,9 +49,9 @@ POST /tenantRelationships/managedTenants/tenantTags/{tenantTagId}/unassignTag
 
 下表显示了可用于此操作的参数。
 
-|参数|类型|说明|
+|参数|类型|Description|
 |:---|:---|:---|
-|tenantIds|字符串集合|托管租户Azure Active Directory租户标识符的集合。|
+|tenantIds|String 集合|托管租户Azure Active Directory租户标识符的集合。|
 
 ## <a name="response"></a>响应
 
@@ -70,7 +70,6 @@ POST /tenantRelationships/managedTenants/tenantTags/{tenantTagId}/unassignTag
 ``` http
 POST https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenantTags/{tenantTagId}/unassignTag
 Content-Type: application/json
-Content-length: 41
 
 {
   "tenantIds": [

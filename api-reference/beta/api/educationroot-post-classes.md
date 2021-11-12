@@ -1,16 +1,16 @@
 ---
 title: 创建 educationClass
 description: 创建新课程。 此操作还会创建通用组。 使用此 API 创建类时，它将向组添加特殊属性，这将
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: df566e35dd2bed527ef36f181cd9c4c92791843e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ac680a64dcf5ea64bb11c8829645fae59a60c508
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52043641"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60925305"
 ---
 # <a name="create-educationclass"></a>创建 educationClass
 
@@ -18,9 +18,9 @@ ms.locfileid: "52043641"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新课程。 此操作还会创建通用组。 使用此 API 创建课程时，它会向组添加特殊属性，这将在使用组创建团队时在 Microsoft Teams 中添加分配和特殊处理等功能。 请注意，此 API 仅创建通用组，不会创建团队。 Microsoft Teams为教师提供用户界面，以使用此 API 创建的组创建自己的班级团队。
+创建新课程。 此操作还会创建通用组。 使用此 API 创建课程时，它会向组添加特殊属性，这将在使用组创建团队时在 Microsoft Teams 中添加分配和特殊处理等功能。 请注意，此 API 仅创建通用组，不会创建团队。 Microsoft Teams为教师提供了用户界面，以使用此 API 创建的组创建自己的班级团队。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -59,7 +59,6 @@ POST /education/classes
 ```http
 POST https://graph.microsoft.com/beta/education/classes
 Content-type: application/json
-Content-length: 224
 
 {
   "description": "Health Level 1",
@@ -103,7 +102,6 @@ Content-length: 224
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 224
 
 {
     "id": "11019",

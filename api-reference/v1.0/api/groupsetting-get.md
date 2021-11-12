@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: bdf215be6d48c0ea719695f5fc21d958a877797c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 98b432bed0758bc35081d9d2c91447cb6623086d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59022357"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943701"
 ---
 # <a name="get-a-group-setting"></a>获取组设置
 
@@ -18,7 +18,7 @@ ms.locfileid: "59022357"
 
 检索特定组设置对象的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -43,7 +43,7 @@ GET /groups/{id}/settings/{id}
 
 > 注意：不支持 $filter。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称 | 说明 |
 |:----------|:----------|
 | Authorization | Bearer {token}。必需。 |
@@ -97,7 +97,6 @@ GET https://graph.microsoft.com/v1.0/groupSettings/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 194
 
 {
   "displayName": "displayName-value",

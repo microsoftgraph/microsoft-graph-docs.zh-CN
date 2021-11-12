@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5d3cbc2dd8d82bcb7cb94690d6f5d475a9c68221
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: b4723f839f0acd34a46874f15f18df993944fe70
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60289859"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60925620"
 ---
 # <a name="get-chatmessagehostedcontent"></a>获取 chatMessageHostedContent
 
@@ -20,7 +20,7 @@ ms.locfileid: "60289859"
 
 检索 [chatMessageHostedContent 对象的属性和](../resources/chatmessagehostedcontent.md) 关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,9 +28,9 @@ ms.locfileid: "60289859"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-|委派（工作或学校帐户）| ChannelMessage.Read.All、Group.Read.All、Group.ReadWrite.All |
+|委派（工作或学校帐户）| ChannelMessage.Read.All、Group.Read.All **、Group.ReadWrite.All** |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序| ChannelMessage.Read.Group、ChannelMessage.Read.All、Group.Read.All、Group.ReadWrite.All |
+|应用程序| ChannelMessage.Read.Group、ChannelMessage.Read.All、Group.Read.All **、Group.ReadWrite.All** |
 
 > **注意**：标记为 ** 的权限已弃用，不应使用。
 
@@ -184,7 +184,6 @@ GET https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@t
 ```http
 HTTP/1.1 200 OK
 Content-type: image/jpeg
-Content-length: 201
 
 {
   "id": "id-value"

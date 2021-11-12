@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 9da4b635c92f82e4983da164218013ac96009734
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 954a38b88f659c7049dfca162e292fa5f035090a
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59143914"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946886"
 ---
 # <a name="update-settings"></a>更新设置
 
@@ -27,7 +27,7 @@ ms.locfileid: "59143914"
 
 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -49,7 +49,7 @@ PATCH /me/settings
 PATCH /users/{id | userPrincipalName}/settings/
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 标头       | 值|
 |:-----------|:------|
@@ -68,12 +68,11 @@ PATCH /users/{id | userPrincipalName}/settings/
 
 ##### <a name="request"></a>请求
 
-下面是一个示例请求，请求如何从用户选择退出Delve并禁用他针对整个组织的内容相关性的贡献。
+下面是一个示例请求，请求如何选择退出用户Delve并禁用他针对整个组织的内容相关性的贡献。
 
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/settings
 Content-type: application/json
-Content-length: 37
 
 {
   "contributionToContentDiscoveryDisabled": true
@@ -87,7 +86,6 @@ Content-length: 37
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 72
 
 {
   "contributionToContentDiscoveryAsOrganizationDisabled": false,

@@ -2,15 +2,15 @@
 title: List endpoints
 description: 检索终结点对象的列表。
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: be99b570d16193aa461fa8cc2d8cc3646d0e55a1
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 14b9e9f7cec61caf4a76e65e93953850dcfa1fcf
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681618"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936717"
 ---
 # <a name="list-endpoints"></a>List endpoints
 
@@ -20,7 +20,7 @@ ms.locfileid: "52681618"
 
 检索终结点 [对象](../resources/endpoint.md) 的列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/endpoints
 
 ### <a name="response"></a>响应
 下面是一个响应示例。
->注意：为了提高可读性，可能缩短此处显示的响应对象。
+>注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -91,7 +91,6 @@ GET https://graph.microsoft.com/beta/groups/{id}/endpoints
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 261
 
 {
   "value": [

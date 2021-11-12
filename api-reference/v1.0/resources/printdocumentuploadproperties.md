@@ -2,21 +2,19 @@
 author: nilakhan
 description: 表示打印文档上载的信息
 title: printDocumentUploadProperties 资源类型
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: cloud-printing
-ms.openlocfilehash: df563026b92905b075c1b26a9f22929bfe7dd6afca99963306dffc24b12982a6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 855f9fc66d7dc35c7fddc0904e76788e280fcdba
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54149742"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944996"
 ---
 # <a name="printdocumentuploadproperties-resource-type"></a>printDocumentUploadProperties 资源类型
 
 命名空间：microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 描述要上载的文档
 

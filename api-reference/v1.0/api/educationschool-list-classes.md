@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: ed08fe72a70afdf9066073439ac90c6b3fe739d6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f6d195eef2afaf558ea5a4a5fad1a5e3a0a65468
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59050549"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937326"
 ---
 # <a name="list-classes-of-an-educationschool"></a>列出 educationSchool 的班级
 
@@ -18,7 +18,7 @@ ms.locfileid: "59050549"
 
 获取[educationSchool](../resources/educationschool.md)所拥有的[educationClass](../resources/educationclass.md)资源。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -105,7 +105,6 @@ GET https://graph.microsoft.com/v1.0/education/schools/{school-id}/classes
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 277
 
 {
   "value": [

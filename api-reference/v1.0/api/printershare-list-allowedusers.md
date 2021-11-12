@@ -2,24 +2,22 @@
 title: 列出 printerShare 的 allowedUsers
 description: 检索已被授予将打印作业提交到关联的打印机共享的权限的用户的列表。
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: d1f55d9d4ae91d6ae41ee4656fbb1e90b7948304
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: a0d7699ec92a18fbfccf4d7c328b9d8d6cf80e3d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50771531"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60927868"
 ---
 # <a name="list-allowedusers"></a>列出 allowedUsers
 命名空间：microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 检索已被授予向关联的 printerShare 提交打印作业的权限 [的用户列表](../resources/printershare.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 除了以下权限之外，用户或应用的租户还必须具有活动的通用打印订阅，并且具有授予 [列表用户访问权限](user-list.md) 的权限。 登录的用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。

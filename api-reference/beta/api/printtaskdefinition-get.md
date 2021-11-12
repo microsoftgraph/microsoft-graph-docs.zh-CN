@@ -2,15 +2,15 @@
 title: 获取 taskDefinition
 description: 获取有关任务定义的详细信息。
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 40e3b2c32545cebc548cbaec27463904ea5ce384
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b5b96d6bb327b2295d3a8ff494631045aec9ef70
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053585"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60926495"
 ---
 # <a name="get-taskdefinition"></a>获取 taskDefinition
 
@@ -22,7 +22,7 @@ ms.locfileid: "52053585"
 
 有关如何使用此 API 向通用打印添加拉页打印支持的详细信息，请参阅扩展 [通用打印以支持拉取打印](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。
@@ -93,7 +93,6 @@ GET https://graph.microsoft.com/beta/print/taskDefinitions/fab143fd-ee61-4358-85
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 380
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/taskDefinitions/$entity",

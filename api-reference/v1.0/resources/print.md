@@ -2,26 +2,24 @@
 title: 打印资源类型
 description: 当随附通用打印订阅时，打印功能支持管理打印机和发现可用于在通用打印中管理打印机和打印作业的 printServiceEndpoints。
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 7ed4858a167a87be40ff31e540d402fa93a44cbd30f6ee6e67e63ed52510b9fb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 018ec497e5eccc94b668fe86d2a2d691c58f98d2
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54129986"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936990"
 ---
 # <a name="print-resource-type"></a>打印资源类型
 
 命名空间：microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 当随附通用打印订阅时，打印功能支持管理打印机和发现可用于在通用打印中管理打印机和打印作业的[printServiceEndpoints。](printserviceendpoint.md)
 
-## <a name="methods"></a>方法
-|方法|返回类型|说明|
+## <a name="methods"></a>Methods
+|方法|返回类型|Description|
 |:---|:---|:---|
 | [List connectors](../api/print-list-connectors.md) | [printConnector](printconnector.md) 集合 | 获取打印连接器的列表。 |
 | [列出打印机](../api/print-list-printers.md) | [printer](printer.md) 集合 | 获取打印机列表。 |
@@ -34,12 +32,12 @@ ms.locfileid: "54129986"
 | [Create taskDefinition](../api/print-post-taskdefinitions.md) | [printTaskDefinition](printtaskdefinition.md) | 创建新的 printTaskDefinition。 |
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |settings|[printSettings](../resources/printsettings.md)|通用打印服务的租户范围设置。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|Description|
 |:---|:---|:---|
 |服务|[printService](printservice.md) 集合|可用的通用打印服务终结点的列表。|
 |打印机|[printer](printer.md) 集合|租户中注册的打印机列表。|

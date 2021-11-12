@@ -1,16 +1,16 @@
 ---
 title: 更新页面
 description: 更新页面OneNote内容。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: f6f0fb24188beb64502d2ef91c389f66677465fe
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 27fc7d07eb61b050f7ec969b948d823a658ff904
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52785135"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60935695"
 ---
 # <a name="update-page"></a>更新页面
 
@@ -19,7 +19,7 @@ ms.locfileid: "52785135"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新页面OneNote内容。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -60,7 +60,6 @@ PATCH /sites/{id}/onenote/pages/{id}/content
 ```http
 PATCH https://graph.microsoft.com/beta/me/onenote/pages/{id}/content
 Content-type: application/json
-Content-length: 312
 
 [
    {

@@ -1,16 +1,16 @@
 ---
 title: 创建或替换 historyItem
-description: 为现有用户活动创建新的或替换现有的历史记录项。
-localization_priority: Normal
+description: 为现有用户活动创建新的或替换现有历史记录项。
+ms.localizationpriority: medium
 ms.prod: project-rome
 doc_type: apiPageType
 author: ailae
-ms.openlocfilehash: 9fce32cfadb8f8920d830342a5ba5bd47d91c13c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8d8601b4db09d200b0dd8e893c88e173afeb0d0e
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47999179"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60935352"
 ---
 # <a name="create-or-replace-a-historyitem"></a>创建或替换 historyItem
 
@@ -18,9 +18,9 @@ ms.locfileid: "47999179"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-为现有用户活动创建新的或替换现有的历史记录项。
+为现有用户活动创建新的或替换现有历史记录项。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -39,9 +39,9 @@ ms.locfileid: "47999179"
 PUT /me/activities/{id}/historyItems/{id}
 ```
 
-Id 必须是 GUID。
+ID 需要为 GUID。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 |名称 | 类型 | 说明|
 |:----|:-----|:-----------|
@@ -53,7 +53,7 @@ Id 必须是 GUID。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将在 `201 Created` 创建 historyItem 或 `200 OK` 替换 historyItem 时返回响应代码。
+如果成功，如果创建 `201 Created` historyItem 或 `200 OK` 替换 historyItem，此方法将返回 响应代码。
 
 ## <a name="example"></a>示例
 
@@ -69,7 +69,6 @@ Id 必须是 GUID。
 ```http
 PUT https://graph.microsoft.com/beta/me/activities/13881113971988980728/historyItems/390e06e2-7e5b-4133-8014-fac7ac5991af
 Content-type: application/json
-Content-length: 364
 
 {
     "startedDateTime": "2015-02-11T20:54:04.3457274+00:00",

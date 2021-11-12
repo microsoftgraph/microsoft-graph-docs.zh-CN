@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 94e7a00d8a8fb45aed1016e9d322959833c78437
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d1f7dc7b567fccc87be36639c84ad197891be366
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59114503"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947602"
 ---
 # <a name="group-checkmembergroups"></a>组：checkMemberGroups
 
@@ -76,7 +76,6 @@ POST /groups/{id}/checkMemberGroups
 ```http
 POST https://graph.microsoft.com/v1.0/groups/{id}/checkMemberGroups
 Content-type: application/json
-Content-length: 44
 
 {
   "groupIds": [
@@ -117,7 +116,6 @@ Content-length: 44
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 39
 
 {
   "value": [

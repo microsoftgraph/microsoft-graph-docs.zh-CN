@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7d6ee60a73beceb52b78c7ff46be25fee7a5084a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2f13aa83920c790369104a79bfc72f37fd16a0ae
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59067848"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938180"
 ---
 # <a name="create-openshift"></a>创建 openShift
 
@@ -18,7 +18,7 @@ ms.locfileid: "59067848"
 
 创建 [openShift 对象](../resources/openshift.md) 的实例。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -66,7 +66,6 @@ POST /teams/{id}/schedule/openShifts
 POST https://graph.microsoft.com/v1.0/teams/788b75d2-a911-48c0-a5e2-dc98480457e3/schedule/openshifts
 Authorization: Bearer {token}
 Content-type: application/json
-Content-length: 244
 
 {
    "id":"OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8",

@@ -1,16 +1,16 @@
 ---
 title: 帖子：转发
-description: '将帖子转发给收件人。 您可以在请求中同时指定父对话和线程， '
-localization_priority: Normal
+description: '将帖子转发给收件人。 可以在请求中同时指定父会话和线程， '
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 2095e5a22ed15ff5444f424da475cda314925e37
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6faa725de6788494ca24aafb13276a2cc0c716a8
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980435"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942077"
 ---
 # <a name="post-forward"></a>帖子：转发
 
@@ -20,7 +20,7 @@ ms.locfileid: "48980435"
 
 将帖子转发给收件人。可以在请求中同时指定父对话和线程，或者仅指定父线程，而不指定父对话。 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -44,7 +44,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/forward
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |注释|String|与帖子一起转发的可选注释。|
 |toRecipients|[recipient](../resources/recipient.md) collection|线程要转发至的收件人。|
@@ -66,7 +66,6 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/forward
 ```http
 POST https://graph.microsoft.com/beta/groups/{id}/threads/{id}/posts/{id}/forward
 Content-type: application/json
-Content-length: 166
 
 {
   "comment": "comment-value",

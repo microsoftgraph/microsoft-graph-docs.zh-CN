@@ -2,15 +2,15 @@
 title: 'ChartSeriesCollection: ItemAt'
 description: 根据其在集合中的位置检索系列
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: ea466f1aeb545f76519b11cc26d0f89bd7e07bc5
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: d59b4e3e01b123728a3659b77d6e1a859e19f434
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047320"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60925613"
 ---
 # <a name="chartseriescollection-itemat"></a>ChartSeriesCollection: ItemAt
 
@@ -19,7 +19,7 @@ ms.locfileid: "52047320"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 根据其在集合中的位置检索系列
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -44,7 +44,7 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/se
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |index|number|要检索的对象的索引值。从零开始编制索引。|
 
@@ -65,7 +65,6 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/se
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/series/ItemAt
 Content-type: application/json
-Content-length: 20
 
 {
   "index": {
@@ -80,7 +79,7 @@ Content-length: 20
 
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -89,7 +88,6 @@ Content-length: 20
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 26
 
 {
   "name": "name-value"

@@ -2,15 +2,15 @@
 title: 获取 printOperation
 description: 检索 printOperation。
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 35bc4e58616c79e060548108d81d59f345e20f32
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 684beea39900ddb52a4ad08e8ce8eef085c2dfda
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055300"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938518"
 ---
 # <a name="get-printoperation"></a>获取 printOperation
 
@@ -20,7 +20,7 @@ ms.locfileid: "52055300"
 
 检索 [printOperation 对象的属性和](../resources/printoperation.md) 关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 登录的用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
@@ -45,7 +45,7 @@ GET /print/operations/{id}
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [printOperation](../resources/printOperation.md) (**printOperation**) 派生对象。
+如果成功，此方法在响应正文中返回 响应代码 (printOperation 对象或 `200 OK` **printOperation**) 派生对象。 [](../resources/printOperation.md)
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
 下面展示了示例请求。
@@ -89,7 +89,6 @@ GET https://graph.microsoft.com/beta/print/operations/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1199
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/operations/$entity",

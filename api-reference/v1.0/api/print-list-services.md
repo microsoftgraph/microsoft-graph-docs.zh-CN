@@ -2,24 +2,22 @@
 title: 列出 printServices
 description: 检索 printService 对象的列表，这些对象代表可供租户使用的服务。
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 72bc0f46df6eccd5462a776f0d38aa70175ab6f0
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: a290d7c72a13ff83fc08f038793cd8a1738a63c3
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50777213"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60928079"
 ---
 # <a name="list-printservices"></a>列出 printServices
 命名空间：microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 检索 **printService 对象** 的列表，这些对象代表可供租户使用的服务。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 调用 **此** API 需要委派 [的通用打印权限](/graph/permissions-reference#universal-print-permissions) 之一。
 
 ## <a name="http-request"></a>HTTP 请求

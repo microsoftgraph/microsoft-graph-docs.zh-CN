@@ -2,15 +2,15 @@
 title: 列出提交资源
 description: 列出与提交关联的资源。
 author: dipakboyed
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: af5ef60c43b09e344e277d10ff88dcf98ffccd3a
-ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
+ms.openlocfilehash: a9f98ad9c047815a1207c76caaf9f35ec0130a94
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58367238"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943456"
 ---
 # <a name="list-submission-resources"></a>列出提交资源
 
@@ -22,7 +22,7 @@ ms.locfileid: "58367238"
 
 **submissionResource** 对象是学生正在处理的实际资源对象的包装。 如果资源是在分配过程中从分配复制的，包装器还包括指向分配上的资源的指针。 这些资源是工作分配的工作副本。 **submittedResources** 是已正式提交进行评分的资源。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -108,7 +108,6 @@ GET https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/sub
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1045
 
 {
   "value": [

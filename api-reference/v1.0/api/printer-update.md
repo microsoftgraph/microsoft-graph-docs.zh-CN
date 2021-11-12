@@ -2,24 +2,22 @@
 title: 更新打印机
 description: 更新打印机对象的属性。
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: a479aff38b24105e80d3fc0c3f098299b9eeafb4
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: b1349a55997dcad5305da0db15cf4fd59d0a16eb
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765879"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942812"
 ---
 # <a name="update-printer"></a>更新打印机
 命名空间：microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 更新 [打印机对象的属性](../resources/printer.md) 。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。 登录的用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
@@ -30,7 +28,7 @@ ms.locfileid: "51765879"
 |:---------------|:--------------------------------------------|
 |委派（工作或学校帐户）| Printer.ReadWrite.All、Printer.FullControl.All |
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application| Printer.ReadWrite.All |
+|应用程序| Printer.ReadWrite.All |
 
 >**注意：** 目前，只有没有物理设备的打印机可以使用应用程序权限进行更新。
 
@@ -48,7 +46,7 @@ PATCH /print/printers/{printerId}
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
-|Content-type|`application/json` 使用委派权限时， `application/ipp` 或者 `application/json` 使用应用程序权限时。 必填。|
+|Content-type|`application/json` 使用委派权限时， `application/ipp` 或者 `application/json` 使用应用程序权限时。 必需。|
 
 ## <a name="request-body"></a>请求正文
 
@@ -58,7 +56,7 @@ PATCH /print/printers/{printerId}
 
 可以使用委派权限更新以下属性。
 
-| 属性     | 类型        | 说明 |
+| 属性     | 类型        | Description |
 |:-------------|:------------|:------------|
 |defaults|[printerDefaults](../resources/printerdefaults.md)|打印机的默认打印设置。|
 |位置|[printerLocation](../resources/printerlocation.md)|打印机的物理和/或组织位置。|
@@ -69,26 +67,26 @@ PATCH /print/printers/{printerId}
 
 可以使用应用程序权限更新以下属性。
 
-| 属性     | 类型        | 说明 |
+| 属性     | 类型        | Description |
 |:-------------|:------------|:------------|
 |defaults|[printerDefaults](../resources/printerdefaults.md)|打印机的默认打印设置。|
 |capabilities|[printerCapabilities](../resources/printerCapabilities.md)|与此打印机共享关联的打印机的功能。|
 |displayName|String|打印机的名称。|
 |manufacturer|String|打印机的制造商。|
 |model|String|打印机的模型名称。|
-|状态|[printerStatus](../resources/printerstatus.md)|打印机的处理状态，包括任何错误。|
+|status|[printerStatus](../resources/printerstatus.md)|打印机的处理状态，包括任何错误。|
 |isAcceptingJobs|Boolean|打印机当前是否接受新的打印作业。|
 
 ### <a name="application-permissions-and-ipp-payload"></a>应用程序权限和 IPP 有效负载
 
-使用应用程序权限，还可使用 IPP 负载中的 Internet 打印 (更新) 打印机。 在这种情况下，请求正文包含表示 [IPP](https://tools.ietf.org/html/rfc8010)编码中的 Printer Attributes 组的二进制流。
+使用应用程序权限，还可使用 IPP 负载中的 Internet 打印 (更新) 打印机。 在这种情况下，请求正文包含表示 IPP 编码中的 Printer Attributes 组的二 [进制流](https://tools.ietf.org/html/rfc8010)。
 
-客户端必须为一组 Printer 属性提供一个或多个值 (包括 [RFC8011 第 5.2](https://tools.ietf.org/html/rfc8011#section-5.2) 节中定义的明确允许的带外值) 作业模板属性 ("xxx-default"、"xxx-supported"和"xxx-ready"属性) 、 [第 5.4](https://tools.ietf.org/html/rfc8011#section-5.4) 节打印机说明属性以及打印机支持的任何属性扩展。 提供 (每个 Printer) 的值将替换 (Printer) 的对应 Printer 属性的值。 对于在 1setOf (可以有多个值) ，客户端提供的所有值将替换相应的 Printer 对象属性的所有值。
+客户端必须为一组 Printer 属性提供一个或多个值 (包括 [RFC8011 第 5.2](https://tools.ietf.org/html/rfc8011#section-5.2) 节中定义的明确允许的带外值) 作业模板属性 ("xxx-default"、"xxx-supported"和"xxx-ready"属性) 、 [第 5.4](https://tools.ietf.org/html/rfc8011#section-5.4) 节打印机说明属性以及打印机支持的任何属性扩展。 每个 (Printer) 的值将替换 (Printer) 的对应 Printer 属性的值。 对于可以在 1setOf (多个值) ，客户端提供的所有值将替换相应的 Printer 对象属性的所有值。
 
 > **注意：** 不要传递请求正文中的操作属性。 请求正文应仅包含打印机属性。
 
 
-> **注意：** 对于使用特定平台的打印机，它应满足该平台的要求。 例如，在 Windows 客户端上，打印机应根据 [一些功能](https://mopria.org) 规范指定视为必需的所有属性。 请注意，一些 SPECRIA 规范仅适用于 PAIDRIA 的付费成员。
+> **注意：** 对于使用特定平台的打印机，它应满足该平台的要求。 例如，在 Windows 客户端上，打印机应根据 [一些功能](https://mopria.org) 规范指定被视为必需属性的所有属性。 请注意，一些 SPECRIA 规范仅适用于 PAIDRIA 的付费成员。
 
 ## <a name="response"></a>响应
 
@@ -117,7 +115,6 @@ PATCH /print/printers/{printerId}
 ``` http
 PATCH https://graph.microsoft.com/v1.0/print/printers/{printerId}
 Content-Type: application/json
-Content-length: 581
 
 {
   "name": "PrinterName",

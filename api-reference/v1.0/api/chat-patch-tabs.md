@@ -5,12 +5,12 @@ author: subray
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ca2a8b92468c4190af4b81f75900727cd003a8df
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f0a48fed3d52fa240073eb581f0573d692490545
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59022966"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60925907"
 ---
 # <a name="update-tab-in-chat"></a>聊天中的"更新"选项卡
 
@@ -20,7 +20,7 @@ ms.locfileid: "59022966"
 
 > **注意**：如果聊天与 [onlineMeeting](../resources/onlinemeeting.md) 实例关联，则实际上，将更新固定在会议中的选项卡。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -69,7 +69,6 @@ PATCH /chats/{chat-id}/tabs/{tab-id}
 ```http
 PATCH https://graph.microsoft.com/v1.0/chats/19:d65713bc498c4a428c71ef9353e6ce20@thread.v2/tabs/794f0e4e-4d10-4bb5-9079-3a465a629eff
 Content-type: application/json
-Content-length: 211
 
 {
   "displayName": "My Contoso Tab - updated again"

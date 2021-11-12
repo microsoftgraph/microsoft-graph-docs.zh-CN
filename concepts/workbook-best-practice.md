@@ -1,23 +1,23 @@
 ---
 title: Microsoft Excel API 的最佳实践Graph
-description: 列出 Microsoft Excel API 的最佳实践和Graph
+description: 列出 Microsoft Excel API 的最佳实践Graph
 author: grangeryy
 ms.localizationpriority: medium
 ms.prod: excel
-ms.openlocfilehash: 17833cacc58ddc431e1488826391e5eb36ee06b8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d5318b51316a20fff00c70df0e655a6058743c29
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59142339"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944226"
 ---
-# <a name="best-practices-for-working-with-the-excel-api-in-microsoft-graph"></a>在 Microsoft Excel 中处理 Graph API 的最佳实践
+# <a name="best-practices-for-working-with-the-excel-api-in-microsoft-graph"></a>在 Microsoft Graph 中处理 Excel API 的最佳实践
 
 本文提供有关在 Microsoft Excel 中处理 Graph。
 
 ## <a name="manage-sessions-in-the-most-efficient-way"></a>以最有效的方式管理会话
 
-如果你在一定时间内进行多个呼叫，我们建议你创建一个会话，并传递每个请求的会话 ID。 若要表示 API 中的会话，请使用 `workbook-session-id: {session-id}` 标头。 通过执行此操作，你可以最Excel使用应用程序 API。
+如果你在一定时间内进行多个呼叫，我们建议你创建一个会话，并传递每个请求的会话 ID。 若要表示 API 中的会话，请使用 `workbook-session-id: {session-id}` 标头。 通过执行此操作，你可以最Excel方式使用应用程序 API。
 
 以下示例演示如何将新数字添加到表中，然后使用这种方法在工作簿中查找一条记录。
 
@@ -28,7 +28,6 @@ ms.locfileid: "59142339"
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/createSession
 Content-type: application/json
-Content-length: 52
 
 {
   "persistChanges": true
@@ -41,7 +40,6 @@ Content-length: 52
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 52
 
 {
   "id": "id-value",
@@ -68,7 +66,6 @@ workbook-session-id: {session-id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 42
 
 {
   "index": 6,
@@ -112,7 +109,6 @@ content-type: application/json
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/closeSession
 Content-type: application/json
 workbook-session-id: {session-id}
-Content-length: 0
 
 {
 }
@@ -130,7 +126,7 @@ HTTP/1.1 204 No Content
 
 您可能会注意到，某些操作需要不确定的时间才能完成;例如，打开一个大型工作簿。 在等待这些请求的响应时，很容易命中超时。 为了解决此问题，我们提供长时间运行的操作模式。 使用此模式时，无需担心请求超时。
 
-目前，Microsoft Excel API 中的会话Graph已启用长时间运行的操作模式。 此模式涉及以下步骤：
+目前，Microsoft Excel API Graph会话创建已启用长时间运行的操作模式。 此模式涉及以下步骤：
 
 1. 向 `Prefer: respond-async` 请求添加标头，以指示在加入会话时这是一个长时间运行的操作。
 2. 长时间运行的操作将返回 响应 `202 Accepted` 以及 Location 标头，以检索操作状态。 如果会话创建在几秒后完成，它将返回常规创建会话响应，而不是使用长时间运行的操作模式。
@@ -169,7 +165,6 @@ Content-type: application/json
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 52
 
 {
   "id": "id-value",

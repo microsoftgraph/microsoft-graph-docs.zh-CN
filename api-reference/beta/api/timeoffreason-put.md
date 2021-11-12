@@ -2,15 +2,15 @@
 title: 替换 timeOffReason
 description: 替换现有的 timeOffReason。
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8750781b88cad2dc5ef055fed9084a6b9582f5a0
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: edb74435f00fffe60fdc51652ba1daba5c9f5103
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787329"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60926068"
 ---
 # <a name="replace-timeoffreason"></a>替换 timeOffReason
 
@@ -22,7 +22,7 @@ ms.locfileid: "52787329"
 
 如果指定的 [timeOffReason](../resources/timeoffreason.md) 不存在，此方法将返回 `404 Not found` 。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -114,7 +114,6 @@ Prefer: return=representation
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 401
 
 {
   "id": "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7",

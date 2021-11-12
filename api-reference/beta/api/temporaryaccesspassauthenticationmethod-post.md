@@ -2,15 +2,15 @@
 title: 创建 temporaryAccessPassAuthenticationMethod
 description: 创建新的 temporaryAccessPassAuthenticationMethod 对象。
 author: inbarckMS
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 504b81b94252ffde5e9247e0357763e05fb806ac
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 55f75409c57e7b676dcf93456cab2391a51cd88b
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049658"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941958"
 ---
 # <a name="create-temporaryaccesspassauthenticationmethod"></a>创建 temporaryAccessPassAuthenticationMethod
 命名空间：microsoft.graph
@@ -22,7 +22,7 @@ ms.locfileid: "52049658"
 * 临时访问传递过期后 - 新的临时访问传递将覆盖当前临时访问传递，并且不会撤消用户的会话。
 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -70,9 +70,9 @@ POST /users/{id | userPrincipalName}/authentication/temporaryAccessPassMethods
 
 |属性|类型|说明|必需| 
 |:---|:---|:---|:---|
-|startDateTime|DateTimeOffset|temporaryAccessPass 可供使用的日期和时间（如果未设置，则创建时可以使用临时访问传递）。| 不支持|
-|lifetimeInMinutes|Int32|temporaryAccessPass 的生存期，以分钟计，从创建时间开始或 startDateTime（如果已设置）。 最少 10 天，最多 43200 (相当于 30 天) 。| 不支持|
-|isUsableOnce|布尔值|确定是否将传递限制为一次使用。 如果为 True，则传递可以使用一次，如果为 False，则临时AccessPass 生命周期内可以多次使用传递。 多用途临时访问 (isUsableOnce = false) ，只有在临时访问传递身份验证方法策略允许时，才能创建并用于登录。|  不支持|
+|startDateTime|DateTimeOffset|temporaryAccessPass 可供使用的日期和时间（如果未设置，则创建时可以使用临时访问传递）。| 否|
+|lifetimeInMinutes|Int32|temporaryAccessPass 的生存期，以分钟计，从创建时间开始或 startDateTime（如果已设置）。 最少 10 天，最多 43200 (相当于 30 天) 。| 否|
+|isUsableOnce|Boolean|确定是否将传递限制为一次使用。 如果为 True，则传递可以使用一次，如果为 False，则 pass 可以在 temporaryAccessPass 生命周期内多次使用。 多用途临时访问 (isUsableOnce = false) ，只有在临时访问传递身份验证方法策略允许时，才能创建并用于登录。|  否|
 
 
 
@@ -93,7 +93,6 @@ POST /users/{id | userPrincipalName}/authentication/temporaryAccessPassMethods
 ``` http
 POST https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/temporaryAccessPassMethods
 Content-Type: application/json
-Content-length: 209
 
 {
   "@odata.type": "#microsoft.graph.temporaryAccessPassAuthenticationMethod",

@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 07701335c8d9ab476e821b883fd951cd4675c7de
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1d3afd77a38b991b33712deea8a7e9d0a0fb3132
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59114559"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937312"
 ---
 # <a name="list-schools-of-an-educationuser"></a>列出 educationUser 的学校
 
@@ -20,7 +20,7 @@ ms.locfileid: "59114559"
 
 >**注意：** 如果使用委派令牌，成员只能看到有关自己学校的信息。 在这种情况下，使用 `...v1.0/education/me/schools` 资源。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -105,7 +105,6 @@ GET https://graph.microsoft.com/v1.0/education/me/schools
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 345
 
 {
   "value": [

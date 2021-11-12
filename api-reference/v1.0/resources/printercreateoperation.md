@@ -2,28 +2,26 @@
 title: printerCreateOperation 资源类型
 description: 表示长时间运行的打印机注册操作。 派生自 printOperation。
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 91a1d70afccf94abe1c611e696bc4349a59964e1dbb176cce0ddb8aa32dc287a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c17b30b8644206d9815044bebda563d530af8a94
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54169352"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944289"
 ---
 # <a name="printercreateoperation-resource-type"></a>printerCreateOperation 资源类型
 
 命名空间：microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 表示长时间运行的打印机注册操作。 派生自 [printOperation](printoperation.md)。
 
 继承自 [printOperation](printoperation.md)。
 
-## <a name="methods"></a>方法
-|方法|返回类型|说明|
+## <a name="methods"></a>Methods
+|方法|返回类型|Description|
 |:---|:---|:---|
 | [获取操作](../api/printoperation-get.md) | [printOperation](printoperation.md) | 在当前用户或应用的租户中检索长时间运行的操作。 |
 
@@ -36,7 +34,7 @@ ms.locfileid: "54169352"
 |证书|String|在注册过程中创建的已签名证书。 只读。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|Description|
 |:---|:---|:---|
 |打印机|[打印机](printer.md)|创建的打印机实体。 只读。|
 

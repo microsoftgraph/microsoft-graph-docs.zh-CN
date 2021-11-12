@@ -5,12 +5,12 @@ author: abheek-das
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: outlook
-ms.openlocfilehash: 9a0198a2e071d64680b2f46ffa9cbcfcdbc5aa48
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c91f0866e2307fe25a36af8ade942e4ce9ec2f22
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59130011"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60925879"
 ---
 # <a name="list-mailfolders"></a>列出 mailFolder
 
@@ -20,7 +20,7 @@ ms.locfileid: "59130011"
 
 默认情况下，此操作不会返回隐藏文件夹。 使用查询参数 _includeHiddenFolders_，将它们包括在答复中。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -49,7 +49,7 @@ GET /users/{id | userPrincipalName}/mailFolders/?includeHiddenFolders=true
 若要返回所有 mailFolder 的列表（包括隐藏的项目，其 **isHidden** 属性为 true），则如 [HTTP 请求](#http-request) 部分所示，在请求 URL 中，将 `includeHiddenFolders` 查询参数指定为 `true`。
 
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
@@ -109,7 +109,6 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 232
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('68ca8ec0-11f8-456b-a785-70d9936650d5')/mailFolders",
@@ -249,7 +248,6 @@ GET https://graph.microsoft.com/beta/me/mailFolders/?includeHiddenFolders=true
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 232
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('68ca8ec0-11f8-456b-a785-70d9936650d5')/mailFolders",

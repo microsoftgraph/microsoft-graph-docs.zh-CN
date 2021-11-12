@@ -5,19 +5,19 @@ author: jpettere
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: b4f8a0d2a6d421442332ccfc2e516ac85d329d2d
-ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
+ms.openlocfilehash: fba10690878de7d69bf0ba9fc2e01ddfef7bad4e
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60214312"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940214"
 ---
 # <a name="list-owneddevices"></a>List ownedDevices
 
 命名空间：microsoft.graph
 
 获取用户拥有的设备列表。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -88,7 +88,6 @@ GET https://graph.microsoft.com/v1.0/me/ownedDevices
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
 
 {
   "value": [

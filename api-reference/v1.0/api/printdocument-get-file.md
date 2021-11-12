@@ -2,25 +2,23 @@
 title: 下载 printDocument 二进制文件
 description: 下载与文档关联的二进制文件。
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 51997302289a3998192e104c9b025678de680857
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 7808484095c576ce23cfc0cbda7a3d637ec7c784
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50772084"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60927933"
 ---
 # <a name="download-printdocument-binary-file"></a>下载 printDocument 二进制文件
 
 命名空间：microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 下载与 [printDocument 关联的二进制文件](../resources/printdocument.md)。 调用此方法会生成重定向响应，该响应具有可用于下载有效负载的预验证 URL。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 除了以下权限之外，用户或应用的租户还必须具有活动的通用打印订阅，并且具有授予获取打印机[访问权限的权限。](printer-get.md)

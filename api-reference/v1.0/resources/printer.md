@@ -2,21 +2,19 @@
 title: 打印机资源类型
 description: 表示已在通用打印服务中注册的物理打印机设备。 打印机资源可用于管理打印作业、打印机设置、打印机元数据和注册状态。
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 07e160d21696992588642cd904ffe1f2625c1d1af3fec8e3d56d0feaf9f5d372
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1c88a70f642c02303104220b13aea1dc8fe09122
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178057"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946879"
 ---
 # <a name="printer-resource-type"></a>打印机资源类型
 
 命名空间：microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 表示已在通用打印服务中注册的打印机设备。 打印机资源可用于管理打印作业、打印机设置、打印机元数据和注册状态。
 
@@ -25,11 +23,11 @@ ms.locfileid: "54178057"
 
 继承自 [printerBase](../resources/printerbase.md)。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
-| [Create](../api/printer-create.md) | [printerCreateOperation](printerCreateOperation.md) | 创建 (通用) 新打印机进行注册。 |
-| [Get](../api/printer-get.md) | [打印机](printer.md) | 读取打印机对象的属性和关系。 |
+| [创建](../api/printer-create.md) | [printerCreateOperation](printerCreateOperation.md) | 创建 (通用) 新打印机进行注册。 |
+| [获取](../api/printer-get.md) | [打印机](printer.md) | 读取打印机对象的属性和关系。 |
 | [更新](../api/printer-update.md) | [打印机](printer.md) | 更新打印机对象。 |
 | [删除](../api/printer-delete.md) | 无 | 从通用打印服务中注销物理打印机。 |
 | [restoreFactoryDefaults](../api/printer-restorefactorydefaults.md) | 无 | 将打印机的默认设置还原到制造商指定的值。 |
@@ -59,10 +57,10 @@ ms.locfileid: "54178057"
 |lastSeenDateTime|DateTimeOffset|打印机与通用打印交互时的最新 dateTimeOffset。 只读。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|Description|
 |:---|:---|:---|
 |jobs|[printJob](printjob.md) 集合| 由打印机排入打印队列的作业列表。  继承自 [printerBase](../resources/printerbase.md)。|
-|shares|[printerShare](printershare.md) 集合| printerShares 与打印机关联的列表。 目前，只有一个 printerShare 可以与打印机关联。 只读。 可为 NULL。|
+|shares|[printerShare](printershare.md) 集合| printerShares 与打印机关联的列表。 目前，只有一个 printerShare 可以与打印机关联。 只读。 可为 Null。|
 |连接器|[printConnector](printconnector.md)|与打印机关联的连接器。|
 |taskTriggers|[printTaskTrigger](printtasktrigger.md) 集合|与打印机关联的任务触发器列表。|
 

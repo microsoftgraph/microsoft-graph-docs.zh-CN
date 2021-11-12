@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sandeo-MSFT
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 13c4035ede3dd03f459a7695c2fa62503ca6baee
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 921fcd77aab9431f9e63f0c1fc1f035262e1af20
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60558537"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942539"
 ---
 # <a name="device-resource-type"></a>设备资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "60558537"
 
 ## <a name="methods"></a>方法
 
-| 方法       | 返回类型  |说明|
+| 方法       | 返回类型  |Description|
 |:---------------|:--------|:----------|
 |[获取设备](../api/device-get.md) | [设备](device.md) |读取 device 对象的属性和关系。|
 |[列出设备](../api/device-list.md) | [设备](device.md) 集合| 检索目录中的注册设备列表。 |
@@ -48,27 +48,27 @@ ms.locfileid: "60558537"
 |:---------------|:--------|:----------|
 |accountEnabled|Boolean| 启用帐户时为 `true`，否则为 `false`。 必需。 默认值为 `true`。 <br/><br/> 支持 `$filter`（`eq`、`ne`、`NOT`、`in`）。 只有全局管理员和云设备管理员角色中的呼叫者才能设置此属性。|
 |alternativeSecurityIds|[alternativeSecurityId](alternativeSecurityId.md) 集合| 仅供内部使用。 不可为 null。 支持 `$filter`（`eq`、`NOT`、`ge`、`le`）。|
-|approximateLastSignInDateTime|DateTimeOffset| 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。 支持 `$filter` `eq` `ne` `NOT` `ge` (、、、、) `le` 和 `$orderBy` 。 |
+|approximateLastSignInDateTime|DateTimeOffset| 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。 支持 `$filter` (`eq` `ne` `NOT` 、、、、 `ge` `le` `eq` `null` 和 值上的) `$orderBy` 和 。 |
 |complianceExpirationDateTime|DateTimeOffset| 不再认为设备合规的时间戳。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。 |
-|deviceId|String| 由 Azure 设备注册服务在设备注册时设置的唯一标识符。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `startsWith`）。|
+|deviceId|String| 由 Azure 设备注册服务在设备注册时设置的唯一标识符。 支持 `$filter`（`eq`、`ne`、`NOT`、`startsWith`）。|
 |deviceMetadata|String| 仅供内部使用。 设置为 `null` 。 |
 |deviceVersion|Int32| 仅供内部使用。 |
-|displayName|String|设备显示名称。 必需。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`、`startsWith`）、`$search` 和 `$orderBy`。  |
-| extensionAttributes | [onPremisesExtensionAttributes](onpremisesextensionattributes.md) | 包含设备的扩展属性 1-15。 单个扩展属性不可选择。 这些属性在云中主控，可以在创建或更新设备对象期间Azure AD。 <br><br>支持 `$filter`（`eq`、`NOT`、`startsWith`）。 |
+|displayName|String|设备显示名称。 必需。 支持 `$filter` `eq` `ne` `NOT` (、、、、、) `ge` `le` `in` `startsWith` `eq` `null` 值 `$search` `$orderBy` 。  |
+| extensionAttributes | [onPremisesExtensionAttributes](onpremisesextensionattributes.md) | 包含设备的扩展属性 1-15。 单个扩展属性不可选择。 这些属性在云中主控，可以在创建或更新设备对象期间Azure AD。 <br><br>支持 `$filter` (、 `eq` `NOT` 、 `startsWith` 和 `eq` 上的 `null`) 。 |
 |id|String|设备唯一标识符。 继承自 [directoryObject](directoryobject.md)。 密钥，不可为 NULL。 只读。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `in`）。 |
 |isCompliant|Boolean|`true` 如果设备符合移动设备管理 (MDM) 策略;否则为 `false` 。 只读。 这仅可通过 Intune 针对任何设备操作系统类型进行更新，或由适用于任何操作系统设备的已批准[MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) Windows更新。 支持 `$filter`（`eq`、`ne`、`NOT`）。|
 |isManaged|Boolean|`true` 如果设备由移动设备管理中心管理， (MDM) 应用;否则为 `false` 。 这仅可通过 Intune 针对任何设备操作系统类型进行更新，或由适用于任何操作系统设备的已批准[MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) Windows更新。 支持 `$filter`（`eq`、`ne`、`NOT`）。 |
 |manufacturer|String| 设备的制造商。 只读。 |
 |mdmAppId|String|用于向 MDM 中注册设备的应用程序标识符。 只读。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `startsWith`）。|
 |model|String| 设备型号。 只读。 |
-|onPremisesLastSyncDateTime|DateTimeOffset|最后一次将对象与本地目录同步的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC `2014-01-01T00:00:00Z` 为只读。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`）。|
-|onPremisesSyncEnabled|Boolean|如果此对象从本地目录同步，则为 `true`；如果此对象最初从本地目录同步，但以后不再同步，则为 `false`；如果此对象从未从本地目录同步，则为 `null`（默认值）。 只读。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `in`）。 |
-|operatingSystem|String| 设备上操作系统的类型。 必需。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`startsWith`）。 |
-|operatingSystemVersion|String|设备上操作系统的版本。 必需。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`startsWith`）。 |
+|onPremisesLastSyncDateTime|DateTimeOffset|最后一次将对象与本地目录同步的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC `2014-01-01T00:00:00Z` 为只读。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`）。|
+|onPremisesSyncEnabled|Boolean|如果此对象从本地目录同步，则为 `true`；如果此对象最初从本地目录同步，但以后不再同步，则为 `false`；如果此对象从未从本地目录同步，则为 `null`（默认值）。 只读。 支持 `$filter` `eq` `ne` `NOT` (、、、和 `in` `eq` 值 `null`) 。 |
+|operatingSystem|String| 设备上操作系统的类型。 必需。 支持 `$filter` `eq` `ne` (、、、、 和 `NOT` `ge` `le` `startsWith` `eq` 值 `null`) 。 |
+|operatingSystemVersion|String|设备上操作系统的版本。 必需。 支持 `$filter` `eq` `ne` (、、、、 和 `NOT` `ge` `le` `startsWith` `eq` 值 `null`) 。 |
 |physicalIds|String collection| 仅供内部使用。 不可为 null。 支持 `$filter`（`eq`、`NOT`、`ge`、`le`、`startsWith`）。 |
 |profileType|deviceProfileType|设备的配置文件类型。 可能的值 `RegisteredDevice` ： (默认值 `SecureVM`) 、、、、。 `Printer` `Shared` `IoT`|
 |systemLabels|String 集合| 系统应用于设备的标签列表。 |
-|trustType|String| 加入设备的信任类型。 只读。 可能的值： (将你自己的个人设备) 、 (仅加入云的设备) 、 (加入 Azure AD) 本地域 `Workplace`  `AzureAd` `ServerAd` 的设备。 如需了解更多详情，请参阅 [Azure Active Directory 中的设备管理简介](/azure/active-directory/device-management-introduction) |
+|trustType|String| 加入设备的信任类型。 只读。 可能的值： (表示将你自己的个人设备) 、 (仅加入云的设备) 、 (加入 Azure AD) 本地域的设备 `Workplace`  `AzureAd` `ServerAd` 。 如需了解更多详情，请参阅 [Azure Active Directory 中的设备管理简介](/azure/active-directory/device-management-introduction) |
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|

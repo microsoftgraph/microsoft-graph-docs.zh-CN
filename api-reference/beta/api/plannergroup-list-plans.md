@@ -1,16 +1,16 @@
 ---
 title: 列出计划
 description: 检索由 group 对象所拥有的 **plannerPlan** 对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: b8f2f9e6914d9ece822d463889093308fbdf9833
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a6a13daa990400f524e26e9d4447f8eca9ca14e6
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52037695"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60935534"
 ---
 # <a name="list-plans"></a>列出计划
 
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/beta/groups/ebf3b108-5234-4e22-b93d-656d7dae5874
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -88,7 +88,6 @@ GET https://graph.microsoft.com/beta/groups/ebf3b108-5234-4e22-b93d-656d7dae5874
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 421
 
 {
   "value": [

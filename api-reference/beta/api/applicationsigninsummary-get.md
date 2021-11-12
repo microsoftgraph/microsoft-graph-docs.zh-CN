@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dhanyahk
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 9e2dcbe21f5a40157d0a803b9a800c3177b4aab9
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: da8205d61ceaeb95aeab91fb4d6ae4d891174945
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60730044"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939880"
 ---
 # <a name="get-applicationsigninsummary"></a>获取 applicationSignInSummary
 
@@ -20,7 +20,7 @@ ms.locfileid: "60730044"
 
 检索 [applicationSigninSummary 对象的属性和](../resources/applicationsigninsummary.md) 关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -41,7 +41,7 @@ GET reports/getAzureADApplicationSignInSummary(period='{period}')
 |:----------|:----------|
 | period | 如果 `D7` (最近七天) 或 (`D30` 最近 30) ，其他值将生成错误。 |
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称      |说明|
 |:----------|:----------|
 | Authorization | Bearer {code} |
@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/beta/reports/getAzureADApplicationSignInSummary(
 ---
 
 ### <a name="response"></a>响应
-下面介绍响应示例。 
+下面展示了示例响应。 
 
 >**注意：** 为了可读性，缩短了 mmight 中显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
@@ -95,7 +95,6 @@ GET https://graph.microsoft.com/beta/reports/getAzureADApplicationSignInSummary(
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 157
 
 {
   "appId": "appId-value",

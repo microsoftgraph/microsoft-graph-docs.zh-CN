@@ -2,15 +2,15 @@
 title: 创建 timeOff
 description: 创建新的 timeOff。
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b9e57f24ff16c9140e012328f7fda8917fcb4dbe
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3f64282d0d1009d225645b3ebb9d022d571998e6
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052710"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924920"
 ---
 # <a name="create-timeoff"></a>创建 timeOff
 
@@ -20,7 +20,7 @@ ms.locfileid: "52052710"
 
 在计划 [中创建新的 timeOff](../resources/timeoff.md) [实例](../resources/schedule.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -116,7 +116,6 @@ Content-type: application/json
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 401
 
 {
   "userId": "c5d0c76b-80c4-481c-be50-923cd8d680a1",

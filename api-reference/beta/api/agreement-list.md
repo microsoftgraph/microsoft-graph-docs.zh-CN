@@ -1,16 +1,16 @@
 ---
 title: 列出协议
 description: 检索协议对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: b356e0fb945ca7cfe5d4aebe769cbc905b85d3d6
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 9cf7c1eb05cf794e6ddba8c3d7b7529d97bf7c46
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048215"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939957"
 ---
 # <a name="list-agreements"></a>列出协议
 
@@ -19,7 +19,7 @@ ms.locfileid: "52048215"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索协议 [对象](../resources/agreement.md) 的列表。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
@@ -28,7 +28,7 @@ ms.locfileid: "52048215"
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序                            | 不支持。 |
 
-代表用户进行呼叫时，用户需要属于以下目录角色之一。 若要了解有关目录角色的信息，请参阅 [Azure AD 内置角色](/azure/active-directory/roles/permissions-reference)：
+代表用户进行呼叫时，用户需要属于以下目录角色之一。 若要详细了解目录角色，请参阅Azure AD[角色：](/azure/active-directory/roles/permissions-reference)
 + 全局管理员
 + 条件访问管理员
 + 安全管理员
@@ -94,7 +94,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 146
 
 {
   "value": [

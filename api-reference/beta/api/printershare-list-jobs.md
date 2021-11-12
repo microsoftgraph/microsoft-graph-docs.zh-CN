@@ -2,15 +2,15 @@
 title: 列出 printerShare 的 printJobs
 description: 检索与打印共享关联的打印作业列表。
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: a7453677550e974536de20b6ad2b054d2040990e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 2761d466869c0b11ab4a49ff90fa47f2a74b0568
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52037455"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60933005"
 ---
 # <a name="list-printjobs-for-a-printershare"></a>列出 printerShare 的 printJobs
 
@@ -20,12 +20,12 @@ ms.locfileid: "52037455"
 
 检索与 [printerShare](../resources/printershare.md)关联的打印作业列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅、授予 [获取 printerShare](printershare-get.md) 访问权限的权限以及下表中列出的权限之一。 
 
-若要从其他用户读取打印作业，登录的用户需要是打印管理员，并且具有 PrintJob.ReadBasic.All、PrintJob.Read.All、PrintJob.ReadWriteBasic.All 或 PrintJob.ReadWrite.All 权限。
+若要从其他用户读取打印作业，登录用户需要是打印管理员，并且具有 PrintJob.ReadBasic.All、PrintJob.Read.All、PrintJob.ReadWriteBasic.All 或 PrintJob.ReadWrite.All 权限。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
@@ -45,10 +45,10 @@ GET /print/shares/{id}/jobs
 * 默认情况下 **，响应** 中将省略 documents 属性。 若要同时返回每个 [打印作业的 printDocuments](../resources/printdocument.md) 列表，请使用 `$expand=documents` 。
 * 此方法支持按创建打印作业的用户筛选打印作业。 使用 `$filter=createdBy/userPrincipalName eq '{upn}'` ，其中 **{upn}** 是关联 [用户](/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname) 的用户主体名称。
 
-### <a name="exceptions"></a>Exceptions
+### <a name="exceptions"></a>例外
 不支持某些运算符 `$count` `$search` ：、。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称      |说明|
 |:----------|:----------|
 | Authorization | Bearer {token}。必需。 |
@@ -101,7 +101,6 @@ GET https://graph.microsoft.com/beta/print/shares/{id}/jobs
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 461
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/shares('f37141d9-0afb-484f-96d3-0ef0a679e6c1')/jobs",

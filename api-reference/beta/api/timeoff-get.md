@@ -2,15 +2,15 @@
 title: 获取 timeOff
 description: 按 ID 获取 timeOff。
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ed27e604d15ae7df87b9f180a378bfec480d7632
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 539c25bc350cde887d92e4ea688081fa5dcad323
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787483"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941944"
 ---
 # <a name="get-timeoff"></a>获取 timeOff
 
@@ -20,7 +20,7 @@ ms.locfileid: "52787483"
 
 按 ID 检索 [timeOff 对象](../resources/timeoff.md) 的属性和关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -47,7 +47,7 @@ GET /teams/{teamId}/schedule/timesOff/{timeOffId}
 此方法不支持使用 OData 查询参数自定义响应。
 
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 标头       | 值 |
 |:---------------|:--------|
@@ -107,7 +107,6 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timesOff/{timeOffId
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 401
 
 {
   "userId": "c5d0c76b-80c4-481c-be50-923cd8d680a1",

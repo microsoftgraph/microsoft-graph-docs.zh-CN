@@ -2,15 +2,15 @@
 title: 列出附件
 description: 检索附加到事件的 attachment 对象列表。
 author: svpsiva
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: acfcbd41c07cd9e308e6ad1d705c8590298e04f3
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 5c68b776b8181dde5a60b5afaaf95fa473835ca9
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52042553"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60935919"
 ---
 # <a name="list-attachments"></a>列出附件
 
@@ -20,7 +20,7 @@ ms.locfileid: "52042553"
 
 检索附加到事件的 [attachment](../resources/attachment.md) 对象列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -53,7 +53,7 @@ GET /groups/{id}/events/{id}/attachments
 GET https://graph.microsoft.com/beta/me/events/{id}?$expand=attachments
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
@@ -103,7 +103,7 @@ GET https://graph.microsoft.com/beta/me/events/{id}/attachments
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "name": "event_get_attachments_beta",
@@ -115,7 +115,6 @@ GET https://graph.microsoft.com/beta/me/events/{id}/attachments
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 215
 
 {
   "value": [

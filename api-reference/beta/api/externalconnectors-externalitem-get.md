@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 1cf796a5cf498feb7669f8ba84ab91f288832631
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 8704e18f3c6abf16cff4ba6168c324236fa3083d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60561666"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60934616"
 ---
 # <a name="get-externalitem"></a>获取 externalItem
 
@@ -22,7 +22,7 @@ ms.locfileid: "60561666"
 
 此 API 仅供诊断使用。 它不能用于任何其他目的。 对此 API 的重复请求可能会导致 `429` HTTP 错误。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -30,7 +30,7 @@ ms.locfileid: "60561666"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持。 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All |
+| 应用程序                            | ExternalItem.ReadWrite.OwnedBy、ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -42,7 +42,7 @@ GET /external/connections/{connection-id}/items/{item-id}
 
 ## <a name="path-parameters"></a>路径参数
 
-| 参数     | 类型   | 说明                                         |
+| 参数     | 类型   | Description                                         |
 |:--------------|:-------|:----------------------------------------------------|
 | connection-id | string | `id`包含[externalConnection 的 属性](../resources/externalconnectors-externalconnection.md) |
 | item-id       | string | 由开发人员提供的 `id` [externalItem 属性](../resources/externalconnectors-externalitem.md)。 |
@@ -51,7 +51,7 @@ GET /external/connections/{connection-id}/items/{item-id}
 
 此方法不支持自定义响应的可选查询参数。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称          | 说明               |
 |:--------------|:--------------------------|
@@ -97,13 +97,11 @@ Content-type: application/json
       "type": "user",
       "value": "e811976d-83df-4cbd-8b9b-5215b18aa874",
       "accessType": "grant",
-      "identitySource": "azureActiveDirectory"
     },
     {
-      "type": "group",
+      "type": "externalGroup",
       "value": "14m1b9c38qe647f6a",
       "accessType": "deny",
-      "identitySource": "external"
     }
   ],
   "properties": {

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: 362bf41e9d7f94834a7002a46da2d076e0fbb944
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 69e73c7caac24855b143c2cf9698cc5c01e0290a
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694657"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939600"
 ---
 # <a name="list-governanceroleassignmentrequests"></a>列出 governanceRoleAssignmentRequests
 
@@ -22,7 +22,7 @@ ms.locfileid: "60694657"
 
 检索 [governanceRoleAssignmentRequests 的集合](../resources/governanceroleassignmentrequest.md)。 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference#privileged-access-permissions)。
 
 ### <a name="azure-resources"></a>Azure 资源
@@ -53,7 +53,7 @@ ms.locfileid: "60694657"
 <!-- { "blockType": "ignored" } -->
 列出资源上的 [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) 集合。
     
->**注意：** 除了权限范围之外，请求还需要请求者至少具有一角色分配资源的权限。
+>**注意：** 除了权限范围之外，请求还需要请求者对资源至少角色分配一个权限。
 
 ```http
 GET /privilegedAccess/azureResources/resources/{resourceId}/roleAssignmentRequests
@@ -67,7 +67,7 @@ GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=subjectId+eq
 
 列出正在等待管理员 [决策的 governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) 集合。
     
->**注意：** 除了权限范围之外，此请求还要求请求者至少具有一个管理员角色分配 (`Active` `owner` 或) `user access administrator` 资源。
+>**注意：** 除了权限范围之外，此请求还要求请求者至少具有一个角色分配 (`Active` `owner` 或) `user access administrator` 管理员。
 
 ```http
 GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=status/subStatus+eq+'PendingAdminDecision'
@@ -76,7 +76,7 @@ GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=status/subSt
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {code}|
@@ -111,7 +111,6 @@ GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignm
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 279
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#governanceRoleAssignmentRequests",

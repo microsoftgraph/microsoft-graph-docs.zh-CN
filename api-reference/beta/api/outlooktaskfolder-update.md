@@ -2,15 +2,15 @@
 title: 更新 outlooktaskfolder
 description: 更新任务文件夹的可Outlook属性。
 author: mashriv
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 07bf8e50dae35458f6071f92cfc361b91e7e2f91
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 03f259864c3045ce1a8e371f53238792b36203fc
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055440"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936584"
 ---
 # <a name="update-outlooktaskfolder-deprecated"></a>更新 outlooktaskfolder (已弃) 
 
@@ -24,7 +24,7 @@ ms.locfileid: "52055440"
 更新任务文件夹的可Outlook属性。
 
 无法更改 **默认任务文件夹** "Tasks"的名称属性值。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -49,7 +49,7 @@ PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |name|String|任务文件夹的名称。|
 
@@ -68,7 +68,6 @@ PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}
 ```http
 PATCH https://graph.microsoft.com/beta/me/outlook/taskFolders/AAMkADIyAAAhrbPWAAA=
 Content-type: application/json
-Content-length: 31
 
 {
   "name": "Charity work"
@@ -93,7 +92,7 @@ Content-length: 31
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -102,7 +101,6 @@ Content-length: 31
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 151
 
 {
   "id": "AAMkADIyAAAhrbPWAAA=",

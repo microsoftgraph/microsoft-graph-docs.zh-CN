@@ -2,24 +2,22 @@
 title: 创建 printTaskTrigger
 description: 在指定的打印机上创建新的任务触发器。
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 3ed74256934310df5f5ea99217f8f0956e109eda
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 86652ec6f5e43ce4bca442642b154f82d8849855
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50771832"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946438"
 ---
 # <a name="create-printtasktrigger"></a>创建 printTaskTrigger
 命名空间：microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
+在指定的 [打印机 上创建新的](../resources/printtasktrigger.md) 任务 [触发器](../resources/printer.md)。 目前， **每个打印机** 只能指定一个任务触发器，但以后可能会删除此限制。 
 
-在指定的 [打印机上创建新的](../resources/printtasktrigger.md) 任务 [触发器](../resources/printer.md)。 目前， **每个打印机** 只能指定一个任务触发器，但以后可能会删除此限制。 
-
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。 登录的用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
@@ -65,7 +63,6 @@ POST /print/printers/{printerId}/taskTriggers
 ``` http
 POST https://graph.microsoft.com/v1.0/print/printers/{printerId}/taskTriggers
 Content-Type: application/json
-Content-length: 80
 
 {
   "event": "jobStarted",

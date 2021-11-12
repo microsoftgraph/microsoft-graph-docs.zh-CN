@@ -5,19 +5,19 @@ author: kevinbellinger
 ms.localizationpriority: medium
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 65d0fa5f95d5563936e864d0959029aa92063e4c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8246044e54d876431695edeb66e8f09607814a8c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59020544"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60932930"
 ---
 # <a name="create-personannotation"></a>创建 personAnnotation
 命名空间：microsoft.graph
 
 在用户配置文件 [中创建新的 personAnnotation](../resources/personannotation.md) [对象](../resources/profile.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -49,7 +49,7 @@ POST /users/{id | userPrincipalName}/profile/notes
 
 下表显示了在用户配置文件中的新 [personAnnotation](../resources/personannotation.md) 对象中可以设置 [的属性](../resources/profile.md)。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
 |detail|[itemBody](../resources/itembody.md)|包含注释本身的详细信息。|
@@ -72,7 +72,6 @@ POST /users/{id | userPrincipalName}/profile/notes
 ``` http
 POST https://graph.microsoft.com/beta/me/profile/notes
 Content-Type: application/json
-Content-length: 413
 
 {
   "detail": {

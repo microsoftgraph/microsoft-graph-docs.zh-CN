@@ -2,15 +2,15 @@
 title: Add attachment
 description: '使用此 API 可将附件添加到邮件中。 '
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 33e88005c5840196b8f6c668b51ca0135e9e23f0
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: fb40831aca0f0cddb97df6358eb10aaf9d610881
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050134"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936647"
 ---
 # <a name="add-attachment"></a>添加附件
 
@@ -32,8 +32,8 @@ ms.locfileid: "52050134"
 
 >**注意**：此操作将可添加的附件的大小限制在 3 MB 以下。
 >
-> 但是，如果要向邮件附加 3MB 到 150MB 之间的文件，可以创建上载会话并反复上载[](attachment-createuploadsession.md)文件范围以附加它。 有关[示例，请参阅Outlook大文件附加到](/graph/outlook-large-attachments)邮件。
-## <a name="permissions"></a>权限
+> 但是，如果要向邮件附加 3MB 到 150MB 之间的文件，可以创建上传会话并反复上载[](attachment-createuploadsession.md)文件范围以附加它。 有关[示例，请参阅Outlook大文件附加到](/graph/outlook-large-attachments)邮件。
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -59,7 +59,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments
 POST /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
 ```
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
@@ -85,7 +85,6 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages
 ```http
 POST https://graph.microsoft.com/beta/me/messages/AAMkpsDRVK/attachments
 Content-type: application/json
-Content-length: 142
 
 {
   "@odata.type": "#microsoft.graph.fileAttachment",
@@ -124,7 +123,6 @@ Content-length: 142
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 202
 
 {
     "id": "AAMkADNkN2R",
@@ -152,7 +150,6 @@ Content-length: 202
 ```
 POST https://graph.microsoft.com/beta/me/messages/AAMkpsDRVK/attachments
 Content-type: application/json
-Content-length: 200
 
 {
   "@odata.type": "#microsoft.graph.itemAttachment",
@@ -179,7 +176,7 @@ Content-length: 200
 
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "name": "create_item_attachment_from_message_beta",
@@ -189,7 +186,6 @@ Content-length: 200
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 162
 
 {
   "id":"AAMkADNkNJp5JVnQIe9r0=",
@@ -217,7 +213,6 @@ Content-length: 162
 ```
 POST https://graph.microsoft.com/beta/me/messages/AAMkAGE1M88AADUv0uFAAA=/attachments
 Content-type: application/json
-Content-length: 319
 
 { 
     "@odata.type": "#microsoft.graph.referenceAttachment", 

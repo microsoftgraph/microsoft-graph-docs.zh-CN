@@ -5,12 +5,12 @@ author: abheek-das
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2f5cd821c8b78a76b85640c8748432ff9d50519f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ede74d6edb60e20c1c8579f9b94f476cc299ddf9
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59053481"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60928356"
 ---
 # <a name="create-child-folder"></a>创建子文件夹
 
@@ -20,7 +20,7 @@ ms.locfileid: "59053481"
 
 如果要隐藏新文件夹，必须在创建时将 **isHidden** `true` 属性设置为 。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -41,7 +41,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 
 在查询 URL 中将父文件夹指定为文件夹 ID 或已知文件夹名称。 有关受支持的已知文件夹名称的列表，请参阅 [mailFolder 资源类型](../resources/mailfolder.md)。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 标头 | 值 |
 |:-------|:------|
@@ -55,7 +55,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 | 参数 | 类型 | 说明 |
 |:----------|:-----|:------------|
 |displayName|String|新文件夹的显示名称。|
-|IsHidden|布尔值|指示是否隐藏新文件夹。 默认值为 `false`。 设置属性是可选的。 设置后，将不能更新此属性。 在"隐藏邮件 [文件夹"中查看详细信息](../resources/mailfolder.md#hidden-mail-folders)|
+|IsHidden|布尔值|指示是否隐藏新文件夹。 默认值为 `false`。 设置属性是可选的。 设置后，就无法更新此属性。 在"隐藏邮件 [文件夹"中查看详细信息](../resources/mailfolder.md#hidden-mail-folders)|
 
 ## <a name="response"></a>响应
 
@@ -76,7 +76,6 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 ```http
 POST https://graph.microsoft.com/v1.0/me/mailFolders/{id}/childFolders
 Content-type: application/json
-Content-length: 159
 
 {
   "displayName": "displayName-value",
@@ -115,7 +114,6 @@ Content-length: 159
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 179
 
 {
   "displayName": "displayName-value",

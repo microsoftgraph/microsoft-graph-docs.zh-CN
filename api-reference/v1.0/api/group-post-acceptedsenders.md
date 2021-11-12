@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 561f50909025844422106798d2399bd2f6ba101c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a1248f4a48e1ecac130a50eaceb68137cbdefab5
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59037829"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924612"
 ---
 # <a name="create-acceptedsender"></a>删除 acceptedSender
 
@@ -18,7 +18,7 @@ ms.locfileid: "59037829"
 
 在请求主体的 `@odata.id` 中指定用户或组。已接受的发件人列表中的用户可以发布到组对话。确保未在接受的发件人和拒绝的发件人列表中指定同一用户或组，否则会发生错误。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -55,7 +55,6 @@ POST /groups/{id}/acceptedSenders/$ref
 ```http
 POST https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders/$ref
 Content-type: application/json
-Content-length: 30
 
 {
   "@odata.id":"https://graph.microsoft.com/v1.0/users/alexd@contoso.com"

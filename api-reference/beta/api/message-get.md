@@ -2,15 +2,15 @@
 title: 获取邮件
 description: 检索 message 对象的属性和关系。
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a727179016a5352a55d0923dfcd5ac5834f73d84
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 32260db0f5176a29affab19280735b183324b0dd
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050155"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939565"
 ---
 # <a name="get-message"></a>获取邮件
 
@@ -22,12 +22,12 @@ ms.locfileid: "52050155"
 
 例如，您可以获取一条消息，并展开 [邮件中提及](../resources/mention.md) 的所有实例。 请参阅以下[示例](#example-2-get-all-mentions-in-a-specific-message)。
 
-可使用 `$value` 参数来[获取邮件的 MIME 内容](/graph/outlook-get-mime-message)。 另请参阅下面的 [示例](#example-5-get-mime-content)。
+可以使用 `$value` 参数来 [获取邮件的 MIME 内容](/graph/outlook-get-mime-message)。另请参阅以下 [示例](#example-5-get-mime-content)。
 
 在以下两种情况下，应用可以获取其他用户的邮件文件夹中的邮件：
 
 * 如果该应用具有应用程序权限，或者
-* 如果应用具有来自某个用户的相应委派[权限](#permissions)，而另一个用户与该用户共享了邮件文件夹，或者已为该用户授予委派的访问权限。 请参阅[详细信息和示例](/graph/outlook-share-messages-folders)。
+* 如果应用具有来自某个用户的相应委派[权限](#permissions)，而另一个用户与该用户共享了邮件文件夹，或者已为该用户授予委派的访问权限。请参阅[详细信息和示例](/graph/outlook-share-messages-folders)。
 
 由于 **邮件** 资源支持 [扩展](/graph/extensibility-overview)，因此也可使用 `GET` 操作获取 **邮件** 实例中的自定义属性和扩展数据。
 
@@ -79,7 +79,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}?$expand=menti
 
 
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
@@ -128,7 +128,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGI1AAAoZCfHAAA=
 
 #### <a name="response"></a>响应
 下面是一个响应示例。 body **和** **uniqueBody** 属性以默认 HTML 格式返回。
-注意：为简洁起见，将截断此处所示的响应对象。 将从实际调用中返回所有属性。
+注意：为简洁起见，将截断此处所示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "name": "get_message",
@@ -138,7 +138,6 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGI1AAAoZCfHAAA=
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 523
 
 {
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/messages/$entity",
@@ -190,7 +189,7 @@ GET https://graph.microsoft.com/beta/me/messages/AQMkADJmMTUAAAgVZAAAA/?$expand=
 ---
 
 #### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "name": "get_mentions_in_message",
@@ -200,7 +199,6 @@ GET https://graph.microsoft.com/beta/me/messages/AQMkADJmMTUAAAgVZAAAA/?$expand=
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 2248
 
 {
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#me/messages/$entity",

@@ -5,12 +5,12 @@ author: spunukol
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 677f163e981d00873183849f79423357adf700be
-ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
+ms.openlocfilehash: 85bedc7da63142a0a41d92f7d1ba18b48955f1ac
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60256394"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60930565"
 ---
 # <a name="create-registereduser"></a>创建 registeredUser
 
@@ -20,7 +20,7 @@ ms.locfileid: "60256394"
 
 添加设备的已注册用户。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -60,7 +60,6 @@ POST /devices/{id}/registeredUsers/$ref
 ```http
 POST https://graph.microsoft.com/beta/devices/{id}/registeredUsers/$ref
 Content-type: application/json
-Content-length: 30
 
 {
   "@odata.id": "https://graph.microsoft.com/beta/directoryObjects/{id}"

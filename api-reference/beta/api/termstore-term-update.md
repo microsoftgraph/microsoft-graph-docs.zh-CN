@@ -2,15 +2,15 @@
 title: 更新术语
 description: 更新术语对象的属性。
 author: mohitpcad
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: fff5c082a0d8a7b1c60a5430706c342a93bd09df
-ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
+ms.openlocfilehash: 21d9cd75cbd479e2f67efca6a983eee9f9f267d8
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58384455"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60931986"
 ---
 # <a name="update-term"></a>更新术语
 命名空间：microsoft.graph.termStore
@@ -19,7 +19,7 @@ ms.locfileid: "58384455"
 
 更新术语 [对象](../resources/termstore-term.md) 的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -50,7 +50,7 @@ PATCH /termStore/sets/{setId}/terms/{termId}
 
 下表显示了可以针对术语更新 [的属性](../resources/termstore-term.md)。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |labels|[microsoft.graph.termStore.localizedLabel](../resources/termstore-localizedlabel.md) 集合|术语的标签。|
 |说明|[microsoft.graph.termStore.localizedDescription](../resources/termstore-localizeddescription.md) 集合|有关术语的说明。|
@@ -75,7 +75,6 @@ PATCH /termStore/sets/{setId}/terms/{termId}
 ``` http
 PATCH https://graph.microsoft.com/beta/termStore/sets/{setId}/terms/{termId}
 Content-Type: application/json
-Content-length: 366
 
 {
   "labels" : [

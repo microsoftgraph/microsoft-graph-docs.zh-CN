@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: eafe89166a081e40e0d32432b2c47cae0987af5c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b60e36e70bb82421662474889d300e4f266dfa71
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59104542"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945794"
 ---
 # <a name="list-events"></a>列出事件
 
@@ -24,8 +24,8 @@ ms.locfileid: "59104542"
 
 在以下两种情况下，应用程序可以获取其他用户的日历中的事件：
 
-* 如果该应用程序具有应用程序权限，或者
-* 如果应用程序具有来自某个用户的相应委派[权限](#permissions)，而另一个用户与该用户共享了日历，或者已为该用户授予委派的访问权限。 请参阅[详细信息和示例](/graph/outlook-get-shared-events-calendars)。
+* 如果该应用具有应用程序权限，或者
+* 如果应用具有来自某个用户的相应委派 [权限](#permissions)，而另一个用户与该用户共享了日历，或者已向该用户授予委派访问权限。请参阅 [详细信息和示例](/graph/outlook-get-shared-events-calendars)。
 
 ### <a name="support-various-time-zones"></a>支持不同时区
 
@@ -126,7 +126,6 @@ Prefer: outlook.timezone="Pacific Standard Time"
 HTTP/1.1 200 OK
 Content-type: application/json
 Preference-Applied: outlook.timezone="Pacific Standard Time"
-Content-length: 1932
 
 {
     "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events(subject,body,bodyPreview,organizer,attendees,start,end,location)",

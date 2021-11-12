@@ -5,12 +5,12 @@ author: mlafleur
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 3e32688d0dd469b3d91df102dabb20e0f19bcea8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b9c42b9e2c40f4e9824c3fca8872b5152ee38b9b
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147428"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943864"
 ---
 # <a name="update-educationclass"></a>更新 educationClass
 
@@ -18,7 +18,7 @@ ms.locfileid: "59147428"
 
 更新 [educationClass 对象](../resources/educationclass.md) 的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -45,7 +45,7 @@ PATCH /education/classes/{id}
 | :------------------- | :------------------------------------------------- | :----------------------------------------------------------------- |
 | displayName          | String                                             | 课程名称。                                                 |
 | mailNickname         | String                                             | 向所有成员发送电子邮件的邮件名称（如果已启用）。    |
-| 说明          | String                                             | 课程说明。                                          |
+| description          | String                                             | 课程说明。                                          |
 | createdBy            | [identitySet](../resources/identityset.md)         | 创建了课程的实体                                       |
 | classCode            | String                                             | 学校用于标识课程的课程代码。               |
 | externalId           | String                                             | 来自同步系统的课程 ID。                           |
@@ -68,7 +68,6 @@ PATCH /education/classes/{id}
 ```http
 PATCH https://graph.microsoft.com/v1.0/education/classes/{class-id}
 Content-type: application/json
-Content-length: 224
 
 {
   "description": "History - World History 1",

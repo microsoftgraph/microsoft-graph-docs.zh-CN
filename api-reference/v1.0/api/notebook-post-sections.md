@@ -5,19 +5,19 @@ author: jewan-microsoft
 ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 9b520d9781599b17f9d000fbde2c1dac428394fc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 284e8af3ba985ea58add0964ba97ab00c85e29ae
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59015999"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946494"
 ---
 # <a name="create-section"></a>创建分区
 
 命名空间：microsoft.graph
 
 在指定的笔记本[中创建新的 onenoteSection。](../resources/section.md)
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -61,7 +61,6 @@ POST /sites/{id}/onenote/notebooks/{id}/sections
 ```http
 POST https://graph.microsoft.com/v1.0/me/onenote/notebooks/{id}/sections
 Content-type: application/json
-Content-length: 27
 
 {
   "displayName": "Section name"
@@ -95,7 +94,6 @@ Content-length: 27
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 272
 
 {
   "isDefault": true,

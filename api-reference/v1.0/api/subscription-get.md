@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: apiPageType
-ms.openlocfilehash: 7f11f8b85971a1aa6d05ca32e7793b53c8c5552e
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 44d2c4c0e64572ef8efdba2e1ce832ecc6f6b66a
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59763408"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924332"
 ---
 # <a name="get-subscription"></a>获取订阅
 
@@ -137,7 +137,6 @@ GET https://graph.microsoft.com/v1.0/subscriptions/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 252
 
 {
   "id":"7f105c7d-2dc5-4530-97cd-4e7ae6534c07",

@@ -1,16 +1,16 @@
 ---
 title: 更新 plannerUser
 description: 更新 plannerUser 对象的属性。 可以使用此操作在用户最喜爱的计划列表中添加或删除计划，并指示用户最近查看过的计划。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 112b87d6672a74265874279806d9e16b7dc3be6e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ed08fe3001d5a99a577f4671aebc4a403329312d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049924"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60933148"
 ---
 # <a name="update-planneruser"></a>更新 plannerUser
 
@@ -20,7 +20,7 @@ ms.locfileid: "52049924"
 
 更新 [plannerUser 对象](../resources/planneruser.md) 的属性。 可以使用此操作在用户最喜爱的计划列表中添加或删除计划，并指示用户最近查看过的计划。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -43,7 +43,7 @@ PATCH /me/planner
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |favoritePlanReferences|[plannerFavoritePlanReferenceCollection](../resources/plannerfavoriteplanreferencecollection.md)|对集合所做的更改，该集合包含对用户已标记为收藏的计划的引用。|
 |recentPlanReferences|[plannerRecentPlanReferenceCollection](../resources/plannerrecentplanreferencecollection.md)|对包含用户最近查看的计划的引用的集合的更改。|
@@ -54,7 +54,7 @@ PATCH /me/planner
 此方法可以返回任何 [HTTP 状态代码](/graph/errors)。应用应当为此方法处理的最常见的错误为 400、403、404、409 和 412 响应。有关这些错误的详细信息，请参阅[常见规划器错误情况](../resources/planner-overview.md#common-planner-error-conditions)。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-下面展示了示例请求。 此请求将 ID 为"jd8S5gOaFk2S8aWCIAJz42QAAxtD"的计划添加为用户最喜爱的计划，并从收藏夹计划列表中删除 ID 为"7oTB5aMIAE2rVo-1N-L7RmQAGX2q"的计划。
+下面展示了示例请求。 此请求将 ID 为"jd8S5gOaFk2S8aWCIAJz42QAAxtD"的"下一版本讨论"计划添加为用户最喜爱的计划，并从收藏夹计划列表中删除 ID 为"7oTB5aMIAE2rVo-1N-L7RmQAGX2q"的计划。
 它还更新计划"jd8S5gOaFk2S8aWCIAJz42QAAxtD"的最后查看时间。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -65,7 +65,6 @@ PATCH /me/planner
 ```http
 PATCH https://graph.microsoft.com/beta/me/planner
 Content-type: application/json
-Content-length: 504
 Prefer: return=representation
 If-Match: W/"JzEtVXNlckRldGFpbHMgQEBAQEBAQEBAQEBAQEBIWCc="
 
@@ -110,7 +109,6 @@ If-Match: W/"JzEtVXNlckRldGFpbHMgQEBAQEBAQEBAQEBAQEBIWCc="
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 979
 
 {
   "favoritePlanReferences": {

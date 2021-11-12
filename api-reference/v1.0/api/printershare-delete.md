@@ -1,25 +1,23 @@
 ---
 title: 删除 printerShare
-description: 删除打印机共享 (取消共享关联的打印机) 。 此操作无法撤消。 如果以后再次共享打印机，则之前安装了该打印机的任何 Windows 用户都需要发现并重新安装它。
+description: 删除打印机共享 (取消共享关联的打印机) 。 此操作无法撤消。 如果以后再次共享打印机，则Windows安装该打印机的任何用户都需要发现并重新安装它。
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 95a907f18693165304894fab41da36e28b551f35
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 311dfcf90c07728d588cced30af48f50c4f0a368
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50771664"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947522"
 ---
 # <a name="delete-printershare"></a>删除 printerShare
 命名空间：microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
+删除打印机共享 (取消共享关联的[打印机) 。](../resources/printer.md) 此操作无法撤消。 如果[以后](../resources/printer.md)再次共享打印机，则Windows安装该打印机的任何用户都需要发现并重新安装它。 [](../resources/printer.md)
 
-删除打印机共享 (取消共享关联的[打印机) 。](../resources/printer.md) 此操作无法撤消。 如果[以后](../resources/printer.md)再次共享打印机，则之前安装了打印机的任何 Windows 用户都需要发现并[](../resources/printer.md)重新安装打印机。
-
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 若要使用通用打印服务，除了下表中列出的权限之外，用户或应用的租户还必须具有活动的通用打印订阅。 登录的用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
