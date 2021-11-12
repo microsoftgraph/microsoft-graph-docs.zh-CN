@@ -2,15 +2,15 @@
 title: 列出任务
 description: 检索与任务定义关联的任务列表。
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: e489a7a1c34a60d1f1da45d151a50e46511e6ca0
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 8af9a8f660ad74c8308a0a5dbb63c5a8da16daa8
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053578"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947236"
 ---
 # <a name="list-tasks"></a>列出任务
 
@@ -22,7 +22,7 @@ ms.locfileid: "52053578"
 
 有关如何使用此 API 向通用打印添加拉页打印支持的详细信息，请参阅扩展 [通用打印以支持拉取打印](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。
@@ -42,10 +42,10 @@ GET /print/taskDefinitions/{id}/tasks
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持一些 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
-### <a name="exceptions"></a>Exceptions
+### <a name="exceptions"></a>例外
 不支持某些运算符 `$count` `$format` ：、、、、、。 `$search` `$select` `$skip` `$top`
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称      |说明|
 |:----------|:----------|
 | Authorization | Bearer {token}。必需。 |
@@ -100,7 +100,6 @@ GET https://graph.microsoft.com/beta/print/taskDefinitions/92d72a3d-cad7-4809-89
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 429
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.printTask)",

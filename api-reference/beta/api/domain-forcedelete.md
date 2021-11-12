@@ -2,15 +2,15 @@
 title: 域：forceDelete
 description: 使用异步操作删除域。
 author: adimitui
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 47f81a25fc29f6a7eb0bb79c0f4d84e37825183a
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: fd33af38243a22c2b2f9f3155b7ca67db0f0142e
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786823"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944149"
 ---
 # <a name="domain-forcedelete"></a>域：forceDelete
 
@@ -20,7 +20,7 @@ ms.locfileid: "52786823"
 
 使用异步操作删除域。
 
-在调用 [forceDelete](domain-forcedelete.md)之前，必须更新或删除对 **Exchange设置服务** 的任何引用。
+在调用 [forceDelete](domain-forcedelete.md)之前，你必须更新或删除对 Exchange **作为预配** 服务的任何引用。
 
 以下操作作为此操作的一部分执行：
 
@@ -34,16 +34,16 @@ ms.locfileid: "52786823"
 
 * 如果要重命名的应用程序之一是多租户应用，则返回错误。
 
-域删除完成后，已删除域的 API 操作将返回 404 HTTP 响应代码。 若要验证是否删除域，可以执行获取 [域](domain-get.md)。 如果成功删除域，响应中将返回 404 HTTP 响应代码。
+域删除完成后，已删除域的 API 操作将返回 404 HTTP 响应代码。 若要验证是否删除域，可以执行获取 [域](domain-get.md)。 如果已成功删除域，响应中将返回 404 HTTP 响应代码。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Domain.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Domain.ReadWrite.All |
 
@@ -56,7 +56,7 @@ POST /domains/{id}/forceDelete
 
 > 对于 {id}，请使用其完全限定的域名指定该域。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称       | 说明|
 |:---------------|:----------|
@@ -67,7 +67,7 @@ POST /domains/{id}/forceDelete
 
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |disableUserAccounts|Boolean| 用于禁用重命名的用户帐户的选项。 如果禁用用户帐户，将不允许用户登录。<br>*为* (默认) - 已禁用作为此操作的一部分重命名的用户帐户。<br>*False* - 不会禁用作为此操作的一部分重命名的用户帐户。 |
 
@@ -86,7 +86,6 @@ POST /domains/{id}/forceDelete
 ```http
 POST https://graph.microsoft.com/beta/domains/contoso.com/forceDelete
 Content-type: application/json
-Content-length: 33
 
 {
   "disableUserAccounts": true

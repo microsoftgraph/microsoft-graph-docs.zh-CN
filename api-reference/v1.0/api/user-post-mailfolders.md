@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c750b9ffe1c0bfdc40e96542aa881b2a5378e2bc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a8fcd0beb564788ecbe251f2f4badccd035692fb
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59099173"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940183"
 ---
 # <a name="create-mailfolder"></a>创建 MailFolder
 
@@ -20,7 +20,7 @@ ms.locfileid: "59099173"
 
 如果要隐藏新文件夹，必须在创建时将 **isHidden** `true` 属性设置为 。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -42,12 +42,12 @@ POST /users/{id | userPrincipalName}/mailFolders
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供具有以下参数的 JSON 对象。 **displayName** 和 **isHidden** 是 [mailFolder](../resources/mailfolder.md) 对象的唯一可写属性。
+在请求正文中，提供具有以下参数的 JSON 对象。 **displayName** **和 isHidden** 是 [mailFolder](../resources/mailfolder.md) 对象的唯一可写属性。
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |displayName|String|新文件夹的显示名称。|
-|IsHidden|布尔值|指示是否隐藏新文件夹。 默认值为 `false`。 设置属性是可选的。 设置后，将不能更新此属性。 在"隐藏邮件 [文件夹"中查看详细信息](../resources/mailfolder.md#hidden-mail-folders)|
+|IsHidden|布尔值|指示是否隐藏新文件夹。 默认值为 `false`。 设置属性是可选的。 设置后，就无法更新此属性。 在"隐藏邮件 [文件夹"中查看详细信息](../resources/mailfolder.md#hidden-mail-folders)|
 
 ## <a name="response"></a>响应
 
@@ -65,7 +65,6 @@ POST /users/{id | userPrincipalName}/mailFolders
 ```http
 POST https://graph.microsoft.com/v1.0/me/mailFolders
 Content-type: application/json
-Content-length: 159
 
 {
   "displayName": "Clutter",
@@ -103,7 +102,6 @@ Content-length: 159
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 179
 
 {
   "displayName": "Clutter",

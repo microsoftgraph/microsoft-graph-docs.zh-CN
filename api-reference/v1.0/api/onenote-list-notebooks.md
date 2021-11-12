@@ -5,12 +5,12 @@ author: jewan-microsoft
 ms.localizationpriority: high
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 0cf61b99733d14b0a9eaf68c2c932b7c37244457
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2a8ec2394ff3f2d5daf7d5fb71375535ab1056ec
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59015929"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942938"
 ---
 # <a name="list-notebooks"></a>列出笔记本
 
@@ -94,7 +94,6 @@ GET https://graph.microsoft.com/v1.0/me/onenote/notebooks
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 369
 
 {
   "value": [

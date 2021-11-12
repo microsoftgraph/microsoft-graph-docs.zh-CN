@@ -5,12 +5,12 @@ author: harini84
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a2b9ef019336422f0e5e54cde2645338f5452260
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 360608f1ee53f534442c9bedb2349ff95a4d7ada
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59038439"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939131"
 ---
 # <a name="list-calendars"></a>列出日历
 
@@ -18,7 +18,7 @@ ms.locfileid: "59038439"
 
 检索属于日历组的日历列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -113,7 +113,6 @@ GET https://graph.microsoft.com/v1.0/me/calendarGroups/{id}/calendars
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 147
 
 {
   "value": [

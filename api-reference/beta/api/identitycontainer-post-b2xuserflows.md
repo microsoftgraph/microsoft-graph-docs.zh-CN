@@ -1,16 +1,16 @@
 ---
 title: 创建 b2xIdentityUserFlow
 description: 创建新的 b2xIdentityUserFlow 对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 669a22b000f1273a56344c714b96257eb44d7e75
-ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
+ms.openlocfilehash: 40cff954da17651c80c3414ec13eda04508a0942
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51611330"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938830"
 ---
 # <a name="create-b2xidentityuserflow"></a>创建 b2xIdentityUserFlow
 
@@ -20,7 +20,7 @@ ms.locfileid: "51611330"
 
 创建新的 [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -33,7 +33,7 @@ ms.locfileid: "51611330"
 工作或学校帐户需要属于以下角色之一：
 
 * 全局管理员
-* 外部标识用户流管理员
+* 外部标识用户Flow管理员
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -56,9 +56,9 @@ POST /identity/b2xUserFlows
 
 |属性|类型|说明|
 |:---------------|:--------|:----------|
-|id|String|必填。 用户流名称。 该名称将在创建后进行 `B2X_1` 预笔式处理。|
-|userFlowType|String|必填。 要创建的用户流的类型。 此值将始终为 `signUpOrSignIn` 。|
-|userFlowTypeVersion|浮点|必填。 用户流版本。 此值将始终为 1。|
+|id|String|必需。 用户流名称。 该名称将在创建后进行 `B2X_1` 预笔式处理。|
+|userFlowType|String|必需。 要创建的用户流的类型。 此值将始终为 `signUpOrSignIn` 。|
+|userFlowTypeVersion|浮点|必需。 用户流版本。 此值将始终为 1。|
 |identityProviders|[identityProvider](../resources/identityprovider.md)集合 |可选。 要包括在用户流中的标识提供程序。|
 |apiConnectorConfiguration|[userFlowApiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)|可选。 用于启用 API 连接器的配置，以便其可以成为用户流的一部分。|
 
@@ -85,7 +85,6 @@ POST /identity/b2xUserFlows
 ``` http
 POST https://graph.microsoft.com/beta/identity/b2xUserFlows
 Content-type: application/json
-Content-length: 154
 
 {
     "id": "Partner",
@@ -153,7 +152,6 @@ Content-type: application/json
 ``` http
 POST https://graph.microsoft.com/beta/identity/b2xUserFlows
 Content-type: application/json
-Content-length: 154
 
 {
     "id": "Partner",
@@ -228,7 +226,6 @@ Content-type: application/json
 ``` http
 POST https://graph.microsoft.com/beta/identity/b2xUserFlows
 Content-type: application/json
-Content-length: 154
 
 {
     "id": "UserFlowWithAPIConnector",

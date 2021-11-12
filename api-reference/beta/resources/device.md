@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sandeo-MSFT
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 9568fca338d1d9b1a94a197eb8d13117f334f766
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 13412d6e9509fc2bde2877c648155e8d991f2399
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60558901"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938236"
 ---
 # <a name="device-resource-type"></a>设备资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "60558901"
 
 ## <a name="methods"></a>方法
 
-| 方法       | 返回类型  |说明|
+| 方法       | 返回类型  |Description|
 |:---------------|:--------|:----------|
 |[获取设备](../api/device-get.md) | [设备](device.md) |读取 device 对象的属性和关系。|
 |[列出设备](../api/device-list.md) | [设备](device.md) 集合| 检索目录中的注册设备列表。 |
@@ -51,45 +51,45 @@ ms.locfileid: "60558901"
 |:---------------|:--------|:----------|
 |accountEnabled|Boolean| 启用帐户时为 `true`，否则为 `false`。 默认值为 `true`。 <br/><br/> 支持 `$filter`（`eq`、`ne`、`NOT`、`in`）。 只有全局管理员和云设备管理员角色中的呼叫者才能设置此属性。|
 |alternativeSecurityIds|[alternativeSecurityId](alternativeSecurityId.md) 集合| 仅供内部使用。 不可为 null。 支持 `$filter`（`eq`、`NOT`、`ge`、`le`）。 |
-|approximateLastSignInDateTime|DateTimeOffset| 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。 支持 `$filter` `eq` `ne` `NOT` `ge` (、、、、) `le` 和 `$orderBy` 。 |
+|approximateLastSignInDateTime|DateTimeOffset| 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。 支持 `$filter` (`eq` `ne` `NOT` 、、、、 `ge` `le` `eq` `null` 和 值上的) `$orderBy` 和 。 |
 |complianceExpirationDateTime|DateTimeOffset| 不再认为设备合规的时间戳。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。 |
 |deviceCategory|String|由 Intune 设置的用户定义属性，用于将设备自动添加到组并简化设备的管理。|
 |deviceId|String| 由 Azure 设备注册服务在注册时设置的标识符。 支持 `$filter`（`eq`、`ne`、`NOT`、`startsWith`）。 |
 |deviceMetadata|String| 仅供内部使用。 设置为 `null` 。 |
 |deviceOwnership|String|设备的所有权。 此属性由 Intune 设置。 可取值为：`unknown`、`company`、`personal`。|
 |deviceVersion|Int32| 仅供内部使用。 |
-|displayName|String| 设备显示名称。 必需。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`、`startsWith`）、`$search` 和 `$orderBy`。  |
+|displayName|String| 设备显示名称。 必需。 支持 `$filter` `eq` `ne` `NOT` (、、、、、) `ge` `le` `in` `startsWith` `eq` `null` 值 `$search` `$orderBy` 。  |
 |domainName|String|已加入设备的混合Azure AD域名。 此属性由 Intune 设置。|
 |enrollmentProfileName|String|适用于设备的注册配置文件。 例如， `Apple Device Enrollment Profile` `Device enrollment - Corporate device identifiers` 、 或 `Windows Autopilot profile name` 。 此属性由 Intune 设置。|
 |enrollmentType|String|设备的注册类型。 此属性由 Intune 设置。 可取值为：`unknown`、`userEnrollment`、`deviceEnrollmentManager`、`appleBulkWithUser`、`appleBulkWithoutUser`、`windowsAzureADJoin`、`windowsBulkUserless`、`windowsAutoEnrollment`、`windowsBulkAzureDomainJoin`、`windowsCoManagement`。|
-| extensionAttributes | [onPremisesExtensionAttributes](onpremisesextensionattributes.md) | 包含设备的扩展属性 1-15。 单个扩展属性不可选择。 这些属性在云中主控，可以在创建或更新设备对象期间Azure AD。 <br><br>支持 `$filter`（`eq`、`NOT`、`startsWith`）。|
+| extensionAttributes | [onPremisesExtensionAttributes](onpremisesextensionattributes.md) | 包含设备的扩展属性 1-15。 单个扩展属性不可选择。 这些属性在云中主控，可以在创建或更新设备对象期间Azure AD。 <br><br>支持 `$filter` (、 `eq` `NOT` 、 `startsWith` 和 `eq` 上的 `null`) 。|
 |id|String|设备唯一标识符。 继承自 [directoryObject](directoryobject.md)。 密钥，不可为 NULL。 只读。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `in`）。 |
 |isCompliant|Boolean|`true` 如果设备符合移动设备管理 (MDM) 策略;否则为 `false` 。 只读。 这仅可通过 Intune 针对任何设备操作系统类型进行更新，或由适用于任何操作系统设备的已批准[MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) Windows更新。 支持 `$filter`（`eq`、`ne`、`NOT`）。|
 |isManaged|Boolean|`true` 如果设备由移动设备管理中心管理， (MDM) 应用;否则为 `false` 。 这仅可通过 Intune 针对任何设备操作系统类型进行更新，或由适用于任何操作系统设备的已批准[MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) Windows更新。 支持 `$filter`（`eq`、`ne`、`NOT`）。 |
-|isRooted|布尔值|`true` 如果设备具有 root 权限; `false` 如果设备已越狱。 这只能由 Intune 更新。|
+|isRooted|Boolean|`true` 如果设备具有 root 权限; `false` 如果设备已越狱。 这只能由 Intune 更新。|
 |managementType|String|设备的管理通道。  此属性由 Intune 设置。 可取值为：`eas`、`mdm`、`easMdm`、`intuneClient`、`easIntuneClient`、`configurationManagerClient`、`configurationManagerClientMdm`、`configurationManagerClientMdmEas`、`unknown`、`jamf`、`googleCloudDevicePolicyController`。|
 |manufacturer|String| 设备的制造商。 只读。 |
 |mdmAppId|String|用于向 MDM 中注册设备的应用程序标识符。 只读。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `startsWith`）。|
 |model|String| 设备型号。 只读。 |
-|onPremisesLastSyncDateTime|DateTimeOffset|最后一次将对象与本地目录同步的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC `2014-01-01T00:00:00Z` 为只读。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`）。 |
-|onPremisesSyncEnabled|Boolean|如果此对象从本地目录同步，则为 `true`；如果此对象最初从本地目录同步，但以后不再同步，则为 `false`；如果此对象从未从本地目录同步，则为 `null`（默认值）。 只读。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `in`）。 |
-|operatingSystem|String| 设备上操作系统的类型。 必需。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`startsWith`）。 |
-|operatingSystemVersion|String| 设备的操作系统版本。 必需。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`startsWith`）。 |
+|onPremisesLastSyncDateTime|DateTimeOffset|最后一次将对象与本地目录同步的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC `2014-01-01T00:00:00Z` 为只读。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`）。 |
+|onPremisesSyncEnabled|Boolean|如果此对象从本地目录同步，则为 `true`；如果此对象最初从本地目录同步，但以后不再同步，则为 `false`；如果此对象从未从本地目录同步，则为 `null`（默认值）。 只读。 支持 `$filter` `eq` `ne` `NOT` (、、、和 `in` `eq` 值 `null`) 。 |
+|operatingSystem|String| 设备上操作系统的类型。 必需。 支持 `$filter` `eq` `ne` `NOT` `ge` (、、、、、、 和 `le` `startsWith` `eq` 值 `null`) 。 |
+|operatingSystemVersion|String| 设备的操作系统版本。 必需。 支持 `$filter` `eq` `ne` `NOT` `ge` (、、、、、、 和 `le` `startsWith` `eq` 值 `null`) 。 |
 |physicalIds|String collection| 仅供内部使用。 不可为 null。 支持 `$filter`（`eq`、`NOT`、`ge`、`le`、`startsWith`）。 |
 |profileType|String|设备的配置文件类型。 可能的值 `RegisteredDevice` ： (默认值 `SecureVM`) 、、、、。 `Printer` `Shared` `IoT`|
 |registrationDateTime|DateTimeOffset|注册设备的日期和时间。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 只读。|
 |systemLabels|String 集合| 系统应用于设备的标签列表。 |
-|hostnames|String collection| 设备的 hostNames 列表。|
-|trustType|String| 加入设备的信任类型。 只读。 可能的值： (将你自己的个人设备) 、 (仅加入云的设备) 、 (加入 Azure AD) 本地域 `Workplace`  `AzureAd` `ServerAd` 的设备。 如需了解更多详情，请参阅 [Azure Active Directory 中的设备管理简介](/azure/active-directory/device-management-introduction) |
-|name| String | 设备的友好名称。 仅在用户使用 Microsoft 帐户登录作为 Rome 的一Project返回。 |
-|status | String| 设备是 `online` `offline` 或 。 仅在用户使用 Microsoft 帐户登录作为 Rome 的一Project返回。 |
-|平台 |String|设备平台。 仅在用户使用 Microsoft 帐户登录作为 Rome 的一Project返回。 仅在用户使用 Microsoft 帐户登录作为 Rome 的一Project返回。|
-|kind| String| 设备的外形要求。 仅在用户使用 Microsoft 帐户登录作为 Rome 的一Project返回。 |
-|model| String| 设备型号。 仅在用户使用 Microsoft 帐户登录作为 Rome 的一Project返回。 |
-|manufacturer| String| 设备制造商。 仅在用户使用 Microsoft 帐户登录作为 Rome 的一Project返回。 |
+|hostnames|String 集合| 设备的 hostNames 列表。|
+|trustType|String| 加入设备的信任类型。 只读。 可能的值： (将你自己的个人设备) 、 (仅加入云的设备) 、 (加入 Azure AD) 本地域的设备 `Workplace`  `AzureAd` `ServerAd` 。 如需了解更多详情，请参阅 [Azure Active Directory 中的设备管理简介](/azure/active-directory/device-management-introduction) |
+|name| String | 设备的友好名称。 仅在用户使用 Microsoft 帐户登录作为 Rome 的一部分时Project返回。 |
+|status | String| 设备是 `online` `offline` 或 。 仅在用户使用 Microsoft 帐户登录作为 Rome 的一部分时Project返回。 |
+|平台 |String|设备平台。 仅在用户使用 Microsoft 帐户登录作为 Rome 的一部分时Project返回。 仅在用户使用 Microsoft 帐户登录作为 Rome 的一部分时Project返回。|
+|kind| String| 设备的外形要求。 仅在用户使用 Microsoft 帐户登录作为 Rome 的一部分时Project返回。 |
+|model| String| 设备型号。 仅在用户使用 Microsoft 帐户登录作为 Rome 的一部分时Project返回。 |
+|manufacturer| String| 设备制造商。 仅在用户使用 Microsoft 帐户登录作为 Rome 的一部分时Project返回。 |
 
 ## <a name="relationships"></a>关系
-| 关系 | 类型   |说明|
+| 关系 | 类型   |Description|
 |:---------------|:--------|:----------|
 | 命令 | [命令](command.md) 集合 | 发送到此设备的命令集。|
 |extensions|[扩展](extension.md)集合|为设备定义的开放扩展集合。只读。可为 NULL。 |

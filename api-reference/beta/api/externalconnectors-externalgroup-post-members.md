@@ -2,15 +2,15 @@
 title: 创建 externalGroupMember
 description: 创建新的 externalGroupMember 对象。
 author: snlraju-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 2267ec63073d964b9cd162ff5331a8e7df99cec9
-ms.sourcegitcommit: 6efd9df497d795988cd85474f379d1989b0995b7
+ms.openlocfilehash: 89612341b9c730672591599fd38ed2c3e2420175
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58697476"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939670"
 ---
 # <a name="create-externalgroupmember"></a>创建 externalGroupMember
 
@@ -57,7 +57,7 @@ POST /external/connections/{connectionsId}/groups/{externalGroupId}/members
 | 属性       | 类型                    | 说明                                              |
 |:---------------|:------------------------|:---------------------------------------------------------|
 | id             | String                  | 成员 `id` 的唯一性。 对于用户或组，它将是 objectId Azure Active Directory，对于外部组，为 externalGroupId。 此为必需属性。                                   |
-| type           | microsoft.graph.externalConnectors.externalGroupMemberType | 添加到外部组的成员的类型。 可能的值是： `user` 或当 identitySource 为 时，或者 `group` 当 `azureActiveDirectory` `group` identitySource 为 `external` 时。 此为必需属性。 |
+| type           | microsoft.graph.externalConnectors.externalGroupMemberType | 添加到外部组的成员的类型。 可能的值是： `user` 或当 identitySource 为 时，或者 `group` 当 `azureActiveDirectory` `group` identitySource 为 `external` 时。 必需。 |
 | identitySource | microsoft.graph.externalConnectors.identitySourceType      | 成员所属的标识源。 可取值为：`azureActiveDirectory`、`external`。 必需。                                                                                       |
 
 ## <a name="response"></a>响应
@@ -85,7 +85,6 @@ Content-Type: application/json
 {
   "id": "e811976d-83df-4cbd-8b9b-5215b18aa874",
   "type": "user",
-  "identitySource": "azureActiveDirectory"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -125,7 +124,6 @@ Content-Type: application/json
 {
   "id": "e811976d-83df-4cbd-8b9b-5215b18aa874",
   "type": "user",
-  "identitySource": "azureActiveDirectory"
 }
 ```
 
@@ -147,8 +145,7 @@ Content-Type: application/json
 
 {
   "id": "e5477431-1038-484e-bf69-1dfedb97a110",
-  "type": "group",
-  "identitySource": "azureActiveDirectory"
+  "type": "externalGroup",
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -186,8 +183,7 @@ Content-Type: application/json
 
 {
   "id": "e5477431-1038-484e-bf69-1dfedb97a110",
-  "type": "group",
-  "identitySource": "azureActiveDirectory"
+  "type": "externalGroup",
 }
 ```
 
@@ -209,8 +205,7 @@ Content-Type: application/json
 
 {
   "id": "1431b9c38ee647f6a",
-  "type": "group",
-  "identitySource": "external"
+  "type": "externalGroup",
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -248,7 +243,6 @@ Content-Type: application/json
 
 {
   "id": "14m1b9c38qe647f6a",
-  "type": "group",
-  "identitySource": "external"
+  "type": "externalGroup",
 }
 ```

@@ -2,24 +2,22 @@
 title: reports： getUserArchivedPrintJobs
 description: 获取特定用户的已存档打印作业的列表。
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: ad153a471f495d1eaab7da896a86233e03242cc22331f4646e5ea3aa0940ddd1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 984a29220408b5c402193b3ee4cb257aa0829f6b
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54155377"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60927637"
 ---
 # <a name="reportroot-getuserarchivedprintjobs"></a>reportRoot： getUserArchivedPrintJobs
 命名空间：microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 获取特定用户的已存档打印作业的列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。
@@ -46,9 +44,9 @@ GET /reports/getUserArchivedPrintJobs
 |---------------|----------------------|-----------|----------------------------------------------------------------------|
 | `userId`      | `Edm.String`         | 是       | 要返回其数据的用户的 ID。                               |
 | `startDateTime` | `Edm.DateTimeOffset` | 否        | 开始日期包含 (数据) 时间段的包含时间（含这两者）。 |
-| `endDateTime`   | `Edm.DateTimeOffset` | 否        | 结束日期包括 (数据) 时间段的包含时间（含这两者）。   |
+| `endDateTime`   | `Edm.DateTimeOffset` | 否        | 结束日期 (包含) 的数据时间段的结束日期（含这两者）。   |
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|

@@ -2,15 +2,15 @@
 title: 列出 educationClasses
 description: 检索学校所拥有的课程列表。
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 72dde0faaeb72749c214ca4791a5b37037b1a84f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 601e7b2b3e3de54b10503460cc2a864bb05db53b
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52043407"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942301"
 ---
 # <a name="list-educationclasses"></a>列出 educationClasses
 
@@ -20,7 +20,7 @@ ms.locfileid: "52043407"
 
 检索学校所拥有的课程列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -90,7 +90,6 @@ GET https://graph.microsoft.com/beta/education/schools/10002/classes
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 277
 
 {
   "value": [

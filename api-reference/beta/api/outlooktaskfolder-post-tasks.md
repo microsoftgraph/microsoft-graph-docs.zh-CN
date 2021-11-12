@@ -1,16 +1,16 @@
 ---
 title: 创建 outlookTask
-description: 创建Outlook任务文件夹中的一个任务。
+description: 在Outlook文件夹中创建一个任务。
 author: mashriv
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 233e93529c2b4644a69643fd8bf1f49562765127
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 2ac35b9ff95086c9c39fa0ca06b2d9f518d46d03
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055433"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946760"
 ---
 # <a name="create-outlooktask-deprecated"></a>创建 outlookTask（已弃用）
 
@@ -21,11 +21,11 @@ ms.locfileid: "52055433"
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-创建Outlook任务文件夹中的一个任务。
+在Outlook文件夹中创建一个任务。
 
 POST 方法始终忽略请求正文中 **startDateTime** 和 **dueDateTime** 的时间部分，并假定时间始终为指定时区中的午夜。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -67,7 +67,6 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/task
 ```http
 POST https://graph.microsoft.com/beta/me/outlook/taskfolders('AAMkADIyAAAhrbPXAAA=')/tasks
 Content-type: application/json
-Content-length: 376
 
 {
   "subject": "Shop for dinner",
@@ -101,7 +100,7 @@ Content-length: 376
 
 在请求正文中，提供 [outlookTask](../resources/outlooktask.md) 对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
-POST 方法忽略请求正文中的时间部分，并假定在 PST (指定时区中始终午夜) 。 然后，默认情况下，POST 方法在响应中转换和显示所有与日期相关的属性（采用 UTC）。
+POST 方法忽略请求正文中的时间部分，并假定在 PST (时区中始终为午夜) 。 然后，默认情况下，POST 方法在响应中转换和显示所有与日期相关的属性（采用 UTC）。
 
 注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
@@ -112,7 +111,6 @@ POST 方法忽略请求正文中的时间部分，并假定在 PST (指定时区
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 376
 
 {
   "createdDateTime": "2016-04-22T05:44:01.2012012Z",

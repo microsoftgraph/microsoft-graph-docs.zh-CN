@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: a30c5f648ed084d38e9f5c0f18fbbdfdaee044f2
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 9b120f085e144b3f66fec1a742d16a909e80c29b
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60684129"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947223"
 ---
 # <a name="list-privilegedroles"></a>列出 privilegedRoles
 
@@ -23,7 +23,7 @@ ms.locfileid: "60684129"
 检索 [privilegedRole 对象](../resources/privilegedrole.md) 的列表。
 
 若要筛选查询中的结果，请在 URL 中使用标准 OData ``$filter`` 表达式。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 请求程序需要具有以下角色之一 _：Privileged Role Administrator、Global_ _Administrator、Security_ _Administrator_ 或 _Security Reader。_
@@ -97,7 +97,6 @@ GET https://graph.microsoft.com/beta/privilegedRoles
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 83
 
 {
   "value": [

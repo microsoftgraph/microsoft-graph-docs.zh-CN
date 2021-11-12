@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: bf59e05dbec3819c4e8750771c8ab0875eb2c582
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 6a4a2114a0119792ca23901c12c23113adb80545
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50952074"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "60936878"
 ---
 ```javascript
 
@@ -16,11 +16,13 @@ const options = {
 const client = Client.init(options);
 
 const dataSource = {
-    '@odata.type': '#microsoft.graph.ediscovery.userSource',
-    email: 'badguy@contoso.com'
+    '@odata.type': 'microsoft.graph.ediscovery.siteSource',
+    site: {
+        webUrl: 'https://contoso.sharepoint.com/sites/SecretSite'
+    }
 };
 
-await client.api('/compliance/ediscovery/cases/{caseId}/sourceCollections/{sourceCollectionId}/additionalSources')
+await client.api('/compliance/ediscovery/cases/15d80234-8320-4f10-96d0-d98d53ffdfc9/sourceCollections/39b0bafd920e4360995c62e18a5e8a49/additionalsources')
     .version('beta')
     .post(dataSource);
 

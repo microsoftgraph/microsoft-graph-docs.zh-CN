@@ -119,6 +119,8 @@ items:
             href: /graph/migrate-azure-ad-graph-deploy-test-extend?context=graph/api/1.0
           - name: 迁移常见问题解答
             href: /graph/migrate-azure-ad-graph-faq?context=graph/api/1.0
+          - name: 配置Azure AD Graph权限
+            href: /graph/migrate-azure-ad-graph-configure-permissions?context=graph/api/1.0
   - name: 使用 SDK
     items:
       - name: 概述
@@ -477,7 +479,7 @@ items:
             items:
               - name: 列出任务
                 href: api/planneruser-list-tasks.md
-          - name: Teamwork
+          - name: 团队合作
             items:
               - name: 已安装的应用
                 href: resources/teamsappinstallation.md
@@ -521,7 +523,7 @@ items:
         items:
           - name: 概述
             href: resources/groups-overview.md
-          - name: 组
+          - name: Group
             href: resources/group.md
             items:
               - name: 列出组
@@ -1165,7 +1167,7 @@ items:
                 href: api/calendarpermission-delete.md
           - name: 类别
             items:
-              - name: Category
+              - name: 类别
                 href: resources/outlookcategory.md
               - name: 列出类别
                 href: api/outlookuser-list-mastercategories.md
@@ -1528,7 +1530,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报表
+              - name: 报告
                 items:
                   - name: 按打印机组织
                     items:
@@ -4303,7 +4305,7 @@ items:
                 href: api/educationassignmentdefaults-get.md
               - name: 更新工作分配默认值
                 href: api/educationassignmentdefaults-update.md
-          - name: Category
+          - name: 类别
             href: resources/educationcategory.md
             items:
               - name: 创建类别
@@ -4826,7 +4828,7 @@ items:
                     href: api/oauth2permissiongrant-delete.md
                   - name: 获取 Delta
                     href: api/oauth2permissiongrant-delta.md
-              - name: 身份保护
+              - name: 标识保护
                 href: resources/identityprotectionroot.md
                 items:
                   - name: 风险检测
@@ -4859,6 +4861,8 @@ items:
                     href: resources/builtinidentityprovider.md
                   - name: 社会标识提供程序
                     href: resources/socialidentityprovider.md
+                  - name: Apple 标识提供程序
+                    href: resources/applemanagedidentityprovider.md
                   - name: 列出
                     href: api/identitycontainer-list-identityproviders.md
                   - name: 创建
@@ -5153,7 +5157,7 @@ items:
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: 删除
                         href: api/identityapiconnector-delete.md
-          - name: 治理
+          - name: 管控
             items:
               - name: 访问审查
                 href: resources/accessreviewsv2-root.md
@@ -5318,7 +5322,7 @@ items:
                 href: api/attachment-delete.md
           - name: 类别
             items:
-              - name: Category
+              - name: 类别
                 href: resources/outlookcategory.md
               - name: 列出类别
                 href: api/outlookuser-list-mastercategories.md
@@ -5590,7 +5594,7 @@ items:
                 href: api/contact-delta.md
           - name: 类别
             items:
-              - name: Category
+              - name: 类别
                 href: resources/outlookcategory.md
               - name: 列出类别
                 href: api/outlookuser-list-mastercategories.md
@@ -6012,7 +6016,7 @@ items:
                 href: api/site-list-subsites.md
               - name: 搜索网站
                 href: api/site-search.md
-              - name: 权限
+              - name: Permissions
                 href: resources/permission.md
                 items:
                   - name: 获取网站权限
@@ -6106,7 +6110,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: 更新
                     href: api/termstore-store-update.md
-              - name: 组
+              - name: Group
                 href: resources/termstore-group.md
                 items:
                   - name: 列出
@@ -6487,7 +6491,7 @@ items:
                 href: api/team-sendactivitynotification.md
               - name: 向用户发送通知
                 href: api/userteamwork-sendactivitynotification.md
-          - name: 选项卡
+          - name: Tab
             href: resources/teamstab.md
             items:
               - name: 频道中的选项卡

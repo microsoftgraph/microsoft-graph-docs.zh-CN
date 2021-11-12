@@ -2,15 +2,15 @@
 title: 添加所有者
 description: 使用此 API 将所有者添加到应用程序。
 author: sureshja
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 54fd7be410eeea8366a8c2263a0cbdd6ba3237aa
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 661cd33cb10f0d50d7f66c390ddb609038232eea
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786273"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942497"
 ---
 # <a name="add-owner"></a>添加所有者
 
@@ -20,7 +20,7 @@ ms.locfileid: "52786273"
 
 通过发布到 owners 集合，使用此 API 将所有者添加到应用程序。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -59,7 +59,6 @@ POST /applications/{id}/owners/$ref
 ```http
 POST https://graph.microsoft.com/beta/applications/{id}/owners/$ref
 Content-type: application/json
-Content-length: 30
 
 {
 "@odata.id": "https://graph.microsoft.com/beta/directoryObjects/{id}"

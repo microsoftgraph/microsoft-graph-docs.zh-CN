@@ -5,19 +5,19 @@ ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 481e816070e43ea0694f0a98d6e586a80d56a062
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c4b51099f227ad71bbe7b4ca9f0454dbfedc6558
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59079194"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936213"
 ---
 # <a name="section-copytonotebook"></a>section： copyToNotebook
 
 命名空间：microsoft.graph 将分区复制到特定笔记本。
 
-对于复制操作，你可以遵循异步调用模式：首先调用 Copy 操作，然后轮询操作终结点的结果。
-## <a name="permissions"></a>权限
+对于 Copy 操作，你可以遵循异步调用模式：首先调用 Copy 操作，然后轮询操作终结点的结果。
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -42,10 +42,10 @@ POST /groups/{id}/onenote/sections/{id}/copyToNotebook
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 JSON 对象，其中包含操作所需的参数。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |groupId|String|要复制到的组的 ID。 仅在复制到组时Microsoft 365使用。|
-|id|String|必填。 目标笔记本的 ID。 |
+|id|String|必需。 目标笔记本的 ID。 |
 |renameAs|String|副本的名称。 默认为现有项目的名称。 |
 
 ## <a name="response"></a>响应
@@ -65,7 +65,6 @@ POST /groups/{id}/onenote/sections/{id}/copyToNotebook
 ```http
 POST https://graph.microsoft.com/v1.0/me/onenote/sections/{id}/copyToNotebook
 Content-type: application/json
-Content-length: 84
 
 {
   "id": "id-value",

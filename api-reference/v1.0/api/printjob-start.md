@@ -1,25 +1,23 @@
 ---
 title: printJob：start
-description: 将打印作业提交到关联的打印机或 printerShare。 完成、中止或取消任何现有待定作业后，将打印该作业。
+description: 将打印作业提交到关联的打印机或 printerShare。 完成、中止或取消任何现有挂起的作业后，将打印该作业。
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: dd264c395538ee3d77fe22829edca27a6d7ad4b1
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: d24196b1ba66a439986ce05f3a823d2f3fda94fa
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50775918"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945892"
 ---
 # <a name="printjob-start"></a>printJob：start
 命名空间：microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 将打印作业提交到关联的 [打印机或](../resources/printer.md) [printerShare](../resources/printershare.md)。 将在完成、中止或取消任何现有待定作业后打印该作业。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 除了以下权限之外，用户或应用的租户还必须具有活动的通用打印订阅，并且具有根据所使用的打印机还是 printerShare 授予获取 [打印机](printer-get.md) 或获取 [printerShare](printershare-get.md) 的权限。

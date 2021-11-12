@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 484fb8bba170110a08fe507be3d417a410ff8a03
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 696019a9add48be241a495f4471cd006126f14ab
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59020523"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946641"
 ---
 # <a name="create-itempatent"></a>创建 itemPatent
 
@@ -18,7 +18,7 @@ ms.locfileid: "59020523"
 
 在用户配置文件内创建新的 [itemPatent](../resources/itempatent.md) [对象](../resources/profile.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -49,16 +49,16 @@ POST /users/{id | userPrincipalName}/profile/patents
 
 下表显示了在用户配置文件中创建新的 [itemPatent](../resources/itempatent.md) 对象时可以设置 [的属性](../resources/profile.md)。
 
-|属性|类型|描述|
+|属性|类型|Description|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|说明|String|专利或归档的去向。 |
+|description|String|专利或归档的去向。 |
 |displayName|String|专利或归档的标题。 |
 |inference|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断出来的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |isPending        |Boolean     |指示正在申请专利。        |
 |issuedDate       |日期        |授予专利的日期。   |
 |issuingAuthority |String      |授予专利的颁发机构。     |
-|数字           |String      |专利号。                      |
+|number           |String      |专利号。                      |
 |source|[personDataSource](../resources/persondatasource.md)|如果从另一个服务同步，则值源自何处。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |WebUrl           |String      |引用专利或归档的 URL。 |
 
@@ -77,7 +77,6 @@ POST /users/{id | userPrincipalName}/profile/patents
 ``` http
 POST https://graph.microsoft.com/beta/me/profile/patents
 Content-Type: application/json
-Content-length: 497
 
 {
   "description": "Calculating the intent of a user to purchase an item based on the amount of time they hover their mouse over a given pixel.",

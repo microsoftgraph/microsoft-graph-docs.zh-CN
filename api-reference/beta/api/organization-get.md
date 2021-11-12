@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: adimitui
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5dc1e91d33a328f67d3288448be97f4704871de3
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: d87880a1000008f785259392c2ad9be20c3fd326
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59764617"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938684"
 ---
 # <a name="get-organization"></a>获取组织
 
@@ -46,7 +46,7 @@ GET /organization
 
 此方法仅支持 `$select` [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称       | 说明|
 |:-----------|:----------|
@@ -106,7 +106,6 @@ GET https://graph.microsoft.com/beta/organization
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 411
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#organization",

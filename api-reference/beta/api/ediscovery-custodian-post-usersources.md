@@ -2,15 +2,15 @@
 title: 创建 custodian userSource
 description: 创建新的保管人 userSource 对象。
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 1fb67377785a8120bb6e4b1453901b9f8b0137ed
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 2764533911aa9d398233474dfe0fa9d9921d4c5d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50946110"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60927111"
 ---
 # <a name="create-custodian-usersource"></a>创建 custodian userSource
 
@@ -20,7 +20,7 @@ ms.locfileid: "50946110"
 
 创建新的保管人 [userSource](../resources/ediscovery-usersource.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -54,7 +54,7 @@ POST /compliance/ediscovery/cases/{caseId}/custodians/{custodianId}/userSources
 
 下表显示创建 [userSource](../resources/ediscovery-usersource.md)时所需的属性。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |email|String|用户的 SMTP 地址。|
 |includedSources|microsoft.graph.ediscovery.sourceType|指定此组中包含的源。 可取值为：`mailbox`、`site`。|
@@ -78,7 +78,6 @@ POST /compliance/ediscovery/cases/{caseId}/custodians/{custodianId}/userSources
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/4c8f8f70-7785-4bd4-b296-c98376a2c5e1/custodians/2192ca408ea2410eba3bec8ae873be6b/userSources
 Content-Type: application/json
-Content-length: 233
 
 {
     "email":"megan@contoso.com",

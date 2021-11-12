@@ -2,15 +2,15 @@
 title: 'post: reply'
 description: '在组对话中答复帖子，并向指定线程中添加新帖子。 可以指定 '
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 8acd39c63901dd90396ff2d44e7f206ece3bfe5a
-ms.sourcegitcommit: 7dc8ca82a8b2c25c5084e6b3121688766c9c14a6
+ms.openlocfilehash: 86e8a40e612cf4742b29d6cbd25a3eb3ecd01f98
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50072405"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938607"
 ---
 # <a name="post-reply"></a>post: reply
 
@@ -22,7 +22,7 @@ ms.locfileid: "50072405"
 
 可以在请求中同时指定父对话和线程，或者仅指定父线程，而不指定父对话。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -46,7 +46,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/reply
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |帖子|[帖子](../resources/post.md)|正在回复的新帖子。|
 
@@ -67,7 +67,6 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/reply
 ```http
 POST https://graph.microsoft.com/beta/groups/{id}/threads/{id}/posts/{id}/reply
 Content-type: application/json
-Content-length: 1131
 
 {
   "post": {

@@ -2,15 +2,15 @@
 title: 更新 mailFolder
 description: 更新 mailFolder 对象的属性。
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b6039bf189d88c46612fab8ec71ac6ae4eb7909b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 64d32a040f1060de82de4ed77babf8e013cc59e4
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053004"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941300"
 ---
 # <a name="update-mailfolder"></a>更新 mailFolder
 
@@ -20,7 +20,7 @@ ms.locfileid: "52053004"
 
 更新 [mailFolder 对象](../resources/mailfolder.md) 的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -64,7 +64,6 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}
 ```http
 PATCH https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM
 Content-type: application/json
-Content-length: 159
 
 {
   "displayName": "displayName-value",
@@ -100,7 +99,6 @@ Content-length: 159
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 179
 
 {
     "id": "AAMkAGVmMDEzM",

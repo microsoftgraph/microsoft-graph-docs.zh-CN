@@ -1,16 +1,16 @@
 ---
 title: 列出 mailFolder
-description: 获取已登录用户的邮箱中的所有邮件文件夹。
-localization_priority: Normal
+description: 获取已登录用户的邮箱中所有的邮件文件夹。
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: abheek-das
 ms.prod: outlook
-ms.openlocfilehash: c2cf43dc9d01ba2de2a3426cce84aaf3f92bbbb3
-ms.sourcegitcommit: df0778a4dbd1e7a2fde1846bdfbfd9440fc91672
+ms.openlocfilehash: 1532255c85f2505f23b143f9bc762ca5cd2d8f03
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49768202"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937585"
 ---
 # <a name="list-mailfolders"></a>列出 mailFolder
 
@@ -18,11 +18,11 @@ ms.locfileid: "49768202"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取指定用户邮箱中所有的邮件文件夹，包括任何 [邮件搜索文件夹](../resources/mailsearchfolder.md)。
+获取指定用户的邮箱中所有的邮件文件夹，包括任何 [邮件搜索文件夹](../resources/mailsearchfolder.md)。
 
-默认情况下，此操作不会返回隐藏文件夹。 使用查询参数 _includeHiddenFolders_ 将其包括在响应中。
+默认情况下，此操作不会返回隐藏文件夹。 使用查询参数 _includeHiddenFolders_，将它们包括在答复中。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -33,14 +33,14 @@ ms.locfileid: "49768202"
 
 ## <a name="http-request"></a>HTTP 请求
 
-若要获取指定用户邮箱中所有邮件文件夹（不包括隐藏的文件夹）：
+若要获取指定用户邮箱内的所有邮件文件夹（隐藏文件夹除外），请执行以下操作：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders
 GET /users/{id | userPrincipalName}/mailFolders
 ```
 
-若要在 _响应_ 中包括隐藏的邮件文件夹：
+若要在答复中包括 _隐藏的_ 邮件文件夹，请执行以下操作：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/?includeHiddenFolders=true
@@ -48,11 +48,11 @@ GET /users/{id | userPrincipalName}/mailFolders/?includeHiddenFolders=true
 ```
 
 ## <a name="query-parameters"></a>查询参数
-若要返回所有 mailFolders 的列表，包括隐藏的 mailFolders (其 **isHidden** 属性为 true) ，在请求 URL 中，将查询参数指定为 ， `includeHiddenFolders` 如 `true` [HTTP](#http-request) 请求部分所示。
+若要返回所有 mailFolder 的列表（包括隐藏的项目，其 **isHidden** 属性为 true），则如 [HTTP 请求](#http-request) 部分所示，在请求 URL 中，将 `includeHiddenFolders` 查询参数指定为 `true`。
 
 此方法还支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
@@ -65,9 +65,9 @@ GET /users/{id | userPrincipalName}/mailFolders/?includeHiddenFolders=true
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [mailFolder](../resources/mailfolder.md) 对象集合。
 ## <a name="examples"></a>示例
 
-### <a name="example-1-list-mail-folders-in-the-signed-in-users-mailbox"></a>示例 1：列出已登录用户的邮箱中的邮件文件夹
+### <a name="example-1-list-mail-folders-in-the-signed-in-users-mailbox"></a>示例 1：列出已登录用户邮箱中的邮件文件夹
 
-本示例在响应 **中包含 mailSearchFolder** 对象。 邮件搜索文件夹是收件箱下的子文件夹，其显示名称摘要"。
+此示例在答复中包括了 **mailSearchFolder** 对象。 邮件搜索文件夹是收件箱下的子文件夹，显示名称为"每周摘要"。
 
 #### <a name="request"></a>请求
 下面是一个请求示例。
@@ -213,9 +213,9 @@ Content-type: application/json
 ```
 
 
-### <a name="example-2-include-hidden-folders-in-the-signed-in-users-mailbox"></a>示例 2：在登录用户的邮箱中包括隐藏文件夹
+### <a name="example-2-include-hidden-folders-in-the-signed-in-users-mailbox"></a>示例 2：包含已登录用户邮箱中的隐藏文件夹
 
-下一个示例使用 `includeHiddenFolders` 查询参数获取包含隐藏邮件文件夹的邮件文件夹列表。 该响应包括将 **isHidden** 设置为 true 的"待筛选邮件"文件夹。
+下一个示例使用 `includeHiddenFolders` 查询参数获取邮件文件夹列表（包括隐藏的邮件文件夹）。 答复包含 **isHidden** 设置为 true 的“待筛选邮件”文件夹。
 
 #### <a name="request"></a>请求
 
@@ -250,7 +250,7 @@ GET https://graph.microsoft.com/beta/me/mailFolders/?includeHiddenFolders=true
 #### <a name="response"></a>响应
 下面是一个响应示例。
 
->**注意：** 为了可读性，此处所示的响应对象已缩短，并且不包含用户邮箱中所有的默认文件夹。
+>**注意：** 为提高可读性，此处显示的答复对象已缩短，并且用户邮箱中不包含所有默认文件夹。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -260,7 +260,6 @@ GET https://graph.microsoft.com/beta/me/mailFolders/?includeHiddenFolders=true
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 232
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('68ca8ec0-11f8-456b-a785-70d9936650d5')/mailFolders",

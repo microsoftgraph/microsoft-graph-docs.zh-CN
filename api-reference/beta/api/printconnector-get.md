@@ -2,15 +2,15 @@
 title: 获取 printConnector
 description: 检索 connector 对象的属性和关系。
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 8c275955aa4bd02059a38b2e79d9201529c312a3
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 466072e8506b06e9884e1e49b91587d443eb9cde
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052927"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938586"
 ---
 # <a name="get-printconnector"></a>获取 printConnector
 
@@ -20,7 +20,7 @@ ms.locfileid: "52052927"
 
 检索 **printConnector 对象的属性和** 关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 若要使用通用打印服务，除了下表中列出的权限之外，用户或应用的租户还必须具有活动的通用打印订阅。 登录的用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
@@ -90,7 +90,6 @@ GET https://graph.microsoft.com/beta/print/connectors/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1097
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/connectors/$entity",

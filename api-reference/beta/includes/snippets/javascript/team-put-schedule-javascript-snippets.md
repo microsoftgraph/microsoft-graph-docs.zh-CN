@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ea4b945d8713bc5187211e7aafbd4f59efd9980c
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: f9a4a72f36c788e31136325bbfb5711d19aab7e922c4ff050fb9f99a326ac75a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52870610"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "57103930"
 ---
 ```javascript
 
@@ -16,25 +16,11 @@ const options = {
 const client = Client.init(options);
 
 const schedule = {
-   enabled: true,
-   timeZone: 'America/Chicago',
-   provisionStatus: 'Completed',
-   provisionStatusCode: null,
-   openShiftsEnabled: true,
-   swapShiftsRequestsEnabled: true,
-   offerShiftRequestsEnabled: true,
-   timeOffRequestsEnabled: true,
-   timeClockEnabled: true,
-   timeClockSettings: {
-      approvedLocation: {
-         altitude: 1024.13,
-         latitude: 26.13246,
-         longitude: 24.34616
-      }
-   }
+  enabled: true,
+  timeZone: 'America/Chicago'
 };
 
-await client.api('/teams/871dbd5c-3a6a-4392-bfe1-042452793a50/schedule')
+await client.api('/teams/{teamId}/schedule')
     .version('beta')
     .put(schedule);
 

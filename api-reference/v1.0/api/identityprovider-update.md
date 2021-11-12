@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: namkedia
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 0838555515c9cd12a081c04b4724e3fb93606df7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d9b8fcf381556a36ca7ac8d48435a4304c19f874
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59100125"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939138"
 ---
 # <a name="update-identityprovider-deprecated"></a>更新 identityProvider （已弃用）
 命名空间：microsoft.graph
@@ -75,7 +75,6 @@ PATCH /identityProviders/{id}
 ```http
 PATCH https://graph.microsoft.com/v1.0/identityProviders/Amazon-OAuth
 Content-type: application/json
-Content-length: 41
 
 {
     "clientSecret": "1111111111111"

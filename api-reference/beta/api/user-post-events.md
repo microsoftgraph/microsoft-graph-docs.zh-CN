@@ -1,16 +1,16 @@
 ---
 title: 创建事件
 description: 在用户的默认日历或指定日历中创建事件。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: harini84
 ms.prod: outlook
-ms.openlocfilehash: cad97bd555d6d0388f6f402f1365a152942af34b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: fc5909cdca77d00dd5c8812f9d232c2b366193c0
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049623"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944058"
 ---
 # <a name="create-event"></a>创建事件
 
@@ -159,7 +159,6 @@ Content-type: application/json
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 2197
 
 {
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events/$entity",
@@ -266,7 +265,6 @@ Content-length: 2197
 POST https://graph.microsoft.com/beta/me/events
 Prefer: outlook.timezone="Pacific Standard Time"
 Content-type: application/json
-Content-length: 1390
 
 {
   "subject": "Plan summer company picnic",
@@ -358,7 +356,6 @@ Content-length: 1390
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 2985
 
 {
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/events/$entity",
@@ -556,8 +553,7 @@ Content-type: application/json
 
 在请求正文中，提供 [event](../resources/event.md) 对象的 JSON 表示形式。
 #### <a name="response"></a>响应
-下面是一个响应示例。
-注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "name": "create_event_recurring",
@@ -732,8 +728,7 @@ Content-type: application/json
 
 在请求正文中，提供 [event](../resources/event.md) 对象的 JSON 表示形式。
 #### <a name="response"></a>响应
-下面是一个响应示例。
-注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "name": "create_event_recurring_daily",
@@ -924,7 +919,6 @@ Content-type: application/json
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 2197
 
 {
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events/$entity",

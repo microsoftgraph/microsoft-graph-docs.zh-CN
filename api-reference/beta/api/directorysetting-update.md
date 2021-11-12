@@ -2,15 +2,15 @@
 title: 更新目录设置
 description: 更新特定目录设置对象的属性。
 author: adimitui
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 08f6c51413f751a0ce5a2818969e253d32f5e2fe
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: a1f7947bd0204e38c651232ec84eeb9503924715
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786830"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946305"
 ---
 # <a name="update-a-directory-setting"></a>更新目录设置
 
@@ -22,7 +22,7 @@ ms.locfileid: "52786830"
 
 > **注意**：此 API 的 /beta 版本仅适用于组。 此 API 的 /v1.0 版本已重命名为 *Update groupSettings*。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -66,7 +66,6 @@ PATCH /groups/{id}/settings/{id}
 ```http
 PATCH https://graph.microsoft.com/beta/settings/{id}
 Content-type: application/json
-Content-length: 178
 
 {
   "values": [

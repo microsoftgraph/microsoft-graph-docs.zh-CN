@@ -2,15 +2,15 @@
 title: 创建 rejectedSender
 description: 将新用户或组添加到 acceptedSender 列表中。
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 78574fbf0d739075da252e1794c0c1c5f63df295
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 1ee955359bc75ec1770e6de3f1ef2eb611c78e6d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681356"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60926971"
 ---
 # <a name="create-rejectedsender"></a>创建 rejectedSender
 
@@ -22,7 +22,7 @@ ms.locfileid: "52681356"
 
 在请求主体的 `@odata.id` 中指定用户或组。已拒绝的发件人列表中的用户无法发布到组对话（在 POST 请求 URL 中标识）。确保未在拒绝的发件人和接受的发件人列表中指定同一用户或组，否则会发生错误。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -60,7 +60,6 @@ POST /groups/{id}/rejectedSenders/$ref
 ```http
 POST https://graph.microsoft.com/beta/groups/{id}/rejectedSenders/$ref
 Content-type: application/json
-Content-length: 30
 
 {
   "@odata.id":"https://graph.microsoft.com/beta/users/alexd@contoso.com"

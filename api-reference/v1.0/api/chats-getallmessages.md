@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 065e948b4213619ff753cee01e3a122db61b212b
-ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
+ms.openlocfilehash: 6eaf21aaa1584d8c8c9759b639876a21bdd11c33
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60214479"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946991"
 ---
 # <a name="chats-getallmessages"></a>聊天： getAllMessages
 
@@ -28,7 +28,7 @@ ms.locfileid: "60214479"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）| 不支持。 |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application | Chat.Read.All、Chat.ReadWrite.All |
+|应用程序 | Chat.Read.All、Chat.ReadWrite.All |
 
 > [!NOTE]
 > 在使用应用程序权限调用此 API 之前，必须先请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。
@@ -99,7 +99,6 @@ GET https://graph.microsoft.com/v1.0/users/0b4f1cf6-54c8-4820-bbb7-2a1f4257ade5/
 ``` http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 347
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(chatMessage)",

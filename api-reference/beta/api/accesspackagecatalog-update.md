@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 8a7abc1ddaf03652aecf3c9dc7eb9e30af0f2b6e
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: 3fbdeaae5ce9f0f09ded8f47b25213183f2da3ca
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60729645"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940111"
 ---
 # <a name="update-accesspackagecatalog"></a>更新 accessPackageCatalog
 
@@ -20,7 +20,7 @@ ms.locfileid: "60729645"
 
 更新现有 [accessPackageCatalog](../resources/accesspackagecatalog.md) 对象以更改其一个或多个属性，如显示名称或说明。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -51,7 +51,7 @@ PATCH /identityGovernance/entitlementManagement/accessPackageCatalogs/{accessPac
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|访问包目录名称。|
-|说明|String|访问包目录的说明。|
+|description|String|访问包目录的说明。|
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `204 No Content` 响应代码。
@@ -71,7 +71,6 @@ PATCH /identityGovernance/entitlementManagement/accessPackageCatalogs/{accessPac
 ``` http
 PATCH https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/{accessPackageCatalogId}
 Content-Type: application/json
-Content-length: 39
 
 {
   "displayName":"Catalog One"

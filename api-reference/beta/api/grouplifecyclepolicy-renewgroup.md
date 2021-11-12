@@ -1,16 +1,16 @@
 ---
 title: groupLifecyclePolicy：renewGroup
 description: 续订组的过期时间。 续订后，组的有效期就会延长策略中定义的天数。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 51f6409d5d8e1b913c8b8efa38356b0aabd3e81f
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: c3579abc4b7e7769819243dd726e18718717cca2
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786935"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60926859"
 ---
 # <a name="grouplifecyclepolicy-renewgroup"></a>groupLifecyclePolicy：renewGroup
 
@@ -22,7 +22,7 @@ ms.locfileid: "52786935"
 
 > **注意：** 调用 v1.0 终结点时，请使用 [Renew 组](/graph/api/group-renew?view=graph-rest-1.0&preserve-view=true) 方法。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
  
@@ -50,7 +50,7 @@ POST /groupLifecyclePolicies/renewGroup
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数 | 类型 | 说明 |
+| 参数 | 类型 | Description |
 |:---------------|:--------|:----------|
 |groupId|Guid| 要续订的组的 ID。 |
 
@@ -71,7 +71,6 @@ POST /groupLifecyclePolicies/renewGroup
 ```http
 POST https://graph.microsoft.com/beta/groupLifecyclePolicies/renewGroup
 Content-type: application/json
-Content-length: 57
 
 {
   "groupId": "ffffffff-ffff-ffff-ffff-ffffffffffff"

@@ -1,16 +1,16 @@
 ---
 title: 更新 itememail
 description: 更新用户配置文件中的 itemEmail 对象的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: c94009ee907d626a6f59dbd7a9b9b4d7b4684df3
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 46e896cfdcc95cfb681e36d3b9ffc1d917d7a6ea
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50774346"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942238"
 ---
 # <a name="update-itememail"></a>更新 itememail
 
@@ -20,7 +20,7 @@ ms.locfileid: "50774346"
 
 更新用户配置文件 [中的 itemEmail](../resources/itememail.md) 对象 [的属性](../resources/profile.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -56,8 +56,8 @@ PATCH /users/{id | userPrincipalName}/profile/emails/{id}
 |属性|类型|说明|
 |:---|:---|:---|
 |address|String|电子邮件地址本身。|
-|allowedAudiences|字符串|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|displayName|字符串|用户与特定电子邮件地址关联的名称或标签。|
+|allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
+|displayName|String|用户与特定电子邮件地址关联的名称或标签。|
 |inference|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断出来的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |source|[personDataSource](../resources/persondatasource.md)|如果从另一个服务同步，则值源自何处。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |type|emailType|电子邮件地址的类型。 可取值为：`unknown`、`work`、`personal`、`main`、`other`。|
@@ -78,7 +78,6 @@ PATCH /users/{id | userPrincipalName}/profile/emails/{id}
 ``` http
 PATCH https://graph.microsoft.com/beta/users/{userId}/profile/emails/{id}
 Content-Type: application/json
-Content-length: 383
 
 {
   "displayName": "Business Email",

@@ -2,15 +2,15 @@
 title: 创建 noncustodialDataSource
 description: 创建新的 noncustodialDataSource 对象。
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 840cddbdfa4c0172bdce85a46238e95d5f059a86
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 4fd9284156518369bdc51de733760b0b5cabee49
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52266657"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60927061"
 ---
 # <a name="create-noncustodialdatasource"></a>创建 noncustodialDataSource
 
@@ -20,7 +20,7 @@ ms.locfileid: "52266657"
 
 创建新的 [noncustodialDataSource](../resources/ediscovery-noncustodialdatasource.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -54,10 +54,10 @@ POST /compliance/ediscovery/cases/{caseId}/noncustodialDataSources
 
 下表显示创建 [noncustodialDataSource](../resources/ediscovery-noncustodialdatasource.md)时所需的属性。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
-|applyHoldToSource|布尔|指示是否将保留应用于非 (数据源，如邮箱或网站) 。|
-|datasource|[microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md)|userSource 或 siteSource。  对于 userSource，请使用"dataSource" ： { "@odata.type" ： "microsoft.graph.ediscovery.userSource"， "email" ： "SMTP address"}。  对于网站源，请使用"dataSource" ： { "@odata.type" ： "microsoft.graph.ediscovery.siteSource"， "site@odata.bind" ： "siteId" }，其中 siteId 可以派生自网站 URL，例如 `https://contoso.sharepoint.com/sites/HumanResources` ，Microsoft Graph 请求为 `https://graph.microsoft.com/v1.0/sites/contoso.sharepoint.com:/sites/HumanResources` 。 ID 是 ID 字段中列出的第一个 GUID。
+|applyHoldToSource|Boolean|指示是否将保留应用于非 (数据源，如邮箱或网站) 。|
+|datasource|[microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md)|userSource 或 siteSource。  对于 userSource，请使用"dataSource" ： { "@odata.type" ： "microsoft.graph.ediscovery.userSource"， "email" ： "SMTP address"}。  对于网站源，请使用"dataSource" ： { "@odata.type" ： "microsoft.graph.ediscovery.siteSource"， "site@odata.bind" ： "siteId" }，其中 siteId 可以派生自网站 URL，例如，Microsoft Graph 请求为 `https://contoso.sharepoint.com/sites/HumanResources` `https://graph.microsoft.com/v1.0/sites/contoso.sharepoint.com:/sites/HumanResources` 。 ID 是 ID 字段中列出的第一个 GUID。
 
 ## <a name="response"></a>响应
 
@@ -65,20 +65,21 @@ POST /compliance/ediscovery/cases/{caseId}/noncustodialDataSources
 
 ## <a name="examples"></a>示例
 
-### <a name="request"></a>请求
+### <a name="example-1-add-a-non-custodial-data-source-user-or-group-mailbox-with-an-email"></a>示例 1：使用电子邮件添加非邮件数据源用户或组邮箱
+
+#### <a name="request"></a>请求
 
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_noncustodialdatasource_from_"
+  "name": "create_noncustodialdatasource_from_email"
 }
 -->
 
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/5b840b94-f821-4c4a-8cad-3a90062bf51a/noncustodialDataSources
 Content-Type: application/json
-Content-length: 206
 
 {
     "applyHoldToSource" : true,
@@ -89,27 +90,27 @@ Content-length: 206
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-noncustodialdatasource-from--csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-noncustodialdatasource-from-email-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-noncustodialdatasource-from--javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-noncustodialdatasource-from-email-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-noncustodialdatasource-from--objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/create-noncustodialdatasource-from-email-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-noncustodialdatasource-from--java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/create-noncustodialdatasource-from-email-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a>响应
+#### <a name="response"></a>响应
 
-**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -130,5 +131,76 @@ Content-Type: application/json
     "displayName": null,
     "createdDateTime": "2021-02-19T07:02:45.4863718Z",
     "applyHoldToSource": true
+}
+```
+
+### <a name="example-2-add-a-non-custodial-data-source-site-with-a-url"></a>示例 2：添加具有 URL 的非托管数据源网站
+
+#### <a name="request"></a>请求
+
+
+# <a name="http"></a>[HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_noncustodialdatasource_from_siteurl"
+}
+-->
+
+``` http
+POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/15d80234-8320-4f10-96d0-d98d53ffdfc9/noncustodialdatasources
+Content-Type: application/json
+
+{
+    "applyHoldToSource": false,
+    "dataSource": {
+        "@odata.type": "microsoft.graph.ediscovery.siteSource",
+        "site": {
+            "webUrl": "https://contoso.sharepoint.com/sites/SecretSite"
+        }
+    }
+}
+```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-noncustodialdatasource-from-siteurl-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-noncustodialdatasource-from-siteurl-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-noncustodialdatasource-from-siteurl-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-noncustodialdatasource-from-siteurl-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a>响应
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.ediscovery.noncustodialDataSource"
+}
+-->
+
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('15d80234-8320-4f10-96d0-d98d53ffdfc9')/noncustodialDataSources/$entity",
+    "status": "Active",
+    "lastModifiedDateTime": "2021-08-11T22:43:45.1079425Z",
+    "releasedDateTime": "0001-01-01T00:00:00Z",
+    "id": "35393843394546413031353146334134",
+    "displayName": "Secret Site",
+    "createdDateTime": "2021-08-11T22:43:45.0189955Z",
+    "applyHoldToSource": false
 }
 ```

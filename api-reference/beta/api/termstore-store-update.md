@@ -1,25 +1,25 @@
 ---
 title: 更新存储
-description: 更新存储对象的属性。
+description: 更新 store 对象的属性。
 author: mohitpcad
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 73d1fb22b92c134fc4ebb2b15fe4b9314dce2d5d
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: c13f6a9b7cab6adb1ae6d824fa33962cead56d05
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874100"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947077"
 ---
 # <a name="update-store"></a>更新存储
 命名空间：microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [存储对象的属性](../resources/termstore-store.md) 。
+更新 store [对象的属性](../resources/termstore-store.md) 。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -45,20 +45,20 @@ PATCH /termStore
 |Content-Type|application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供存储对象的 JSON [表示](../resources/termstore-store.md) 形式。
+在请求正文中，提供 store 对象的 JSON [表示](../resources/termstore-store.md) 形式。
 
 下表显示了可编辑应用商店 [的属性](../resources/termstore-store.md)。
 
 |属性|类型|Description|
 |:---|:---|:---|
-|defaultLanguageTag|String|[microsoft.graph.termstore.store 的默认语言](../resources/termstore-store.md)|
-|languageTags|String 集合|[microsoft.graph.termstore.store 中的可用语言](../resources/termstore-store.md)|
+|defaultLanguageTag|String|默认语言 [microsoft.graph.termstore.store](../resources/termstore-store.md)|
+|languageTags|String 集合|Microsoft.graph.termstore.store [](../resources/termstore-store.md)|
 
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回响应代码和更新[](../resources/termstore-store.md)的存储区对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和更新的 [store](../resources/termstore-store.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -73,7 +73,6 @@ PATCH /termStore
 ``` http
 PATCH https://graph.microsoft.com/beta/termStore
 Content-Type: application/json
-Content-length: 133
 
 {
   "defaultLanguageTag": "en-US"

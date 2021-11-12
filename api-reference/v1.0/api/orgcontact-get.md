@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 59e0e9c1903cc0dd864c3eb61399f69f86339251
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 91195f1c2ea5b58f2eb88e33e1a43483d89d6ef8
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59105032"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942917"
 ---
 # <a name="get-orgcontact"></a>获取 orgContact
 
@@ -18,7 +18,7 @@ ms.locfileid: "59105032"
 
 获取组织联系人的属性 [和关系](../resources/orgcontact.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -89,7 +89,6 @@ GET https://graph.microsoft.com/v1.0/contacts/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 222
 
 {
   "addresses":[

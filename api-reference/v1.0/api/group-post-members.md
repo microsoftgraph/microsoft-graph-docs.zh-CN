@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a64b03cd73ea7150a2058a31bf23ce1735429ca3
-ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
+ms.openlocfilehash: 8b706f7e70b964f8ba4a088f0df073ffbd4ed4d1
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60214718"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943722"
 ---
 # <a name="add-member"></a>添加成员
 
@@ -73,7 +73,6 @@ POST /groups/{group-id}/members/$ref
 ```http
 POST https://graph.microsoft.com/v1.0/groups/{group-id}/members/$ref
 Content-type: application/json
-Content-length: 30
 
 {
   "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
@@ -128,7 +127,6 @@ HTTP/1.1 204 No Content
 ```http
 PATCH https://graph.microsoft.com/v1.0/groups/{group-id}
 Content-type: application/json
-Content-length: 30
 
 {
   "members@odata.bind": [

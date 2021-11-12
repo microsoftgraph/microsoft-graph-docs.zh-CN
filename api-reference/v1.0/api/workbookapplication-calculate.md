@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: b515ff43a6f559eddfe67cb28e3048db9f635b6c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 160ba25600a3bb86d890f1a9a84051e33ed40759
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59113845"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947369"
 ---
 # <a name="workbookapplication-calculate"></a>workbookApplication： calculate
 
@@ -18,7 +18,7 @@ ms.locfileid: "59113845"
 
 重新计算 Excel 中当前打开的所有工作簿。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -43,7 +43,7 @@ POST /me/drive/root:/{item-path}:/workbook/application/calculate
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |calculationType|string|指定要使用的计算类型。  可取值为：`Recalculate`、`Full`、`FullRebuild`。|
 
@@ -65,7 +65,6 @@ POST /me/drive/root:/{item-path}:/workbook/application/calculate
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/application/calculate
 Content-type: application/json
-Content-length: 48
 
 {
   "calculationType": "calculationType-value"

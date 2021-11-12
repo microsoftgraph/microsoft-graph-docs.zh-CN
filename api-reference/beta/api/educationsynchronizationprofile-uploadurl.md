@@ -1,16 +1,16 @@
 ---
 title: educationSynchronizationProfile： uploadUrl
-description: 检索共享访问签名 (SAS) ，以将源文件上载到租户中特定学校数据同步配置文件的 Azure blob 存储。 SAS 令牌的有效期为 1 小时。
+description: 检索共享访问签名 (SAS) ，用于将源文件上载到租户中特定学校数据同步配置文件的 Azure blob 存储。 SAS 令牌的有效期为 1 小时。
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d8a8a7f1cfd01ed63b54b66d888b3eb9e80d3a30
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 5eab6e69edb352a7b750702e9d34cbc2df7bb4ed
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52664711"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946816"
 ---
 # <a name="educationsynchronizationprofile-uploadurl"></a>educationSynchronizationProfile： uploadUrl
 
@@ -18,13 +18,13 @@ ms.locfileid: "52664711"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 SAS (共享访问签名) ，以将源文件上载到租户中特定学校数据 [同步配置文件](../resources/educationsynchronizationprofile.md) 的 Azure blob 存储。 SAS 令牌的有效期为 1 小时。
+使用 SAS (检索) ，以将源文件上传到租户中特定学校数据同步配置文件的 Azure blob 存储。 [](../resources/educationsynchronizationprofile.md) SAS 令牌的有效期为 1 小时。
 
 上载 URL 仅为 CSV 数据 [提供程序提供](../resources/educationcsvdataprovider.md)。
 
 > **注意：** 若要使用 SAS 令牌访问 blob 存储，请使用 Azure 存储 [SDK](https://github.com/search?q=org%3AAzure+azure-storage) 或 [AzCopy](/azure/storage/storage-use-azcopy)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限 |
@@ -94,7 +94,6 @@ GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/uplo
 ```http
 HTTP/1.1 201 OK
 Content-type: application/json
-Content-length: 314
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#String",

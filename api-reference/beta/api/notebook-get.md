@@ -2,15 +2,15 @@
 title: 获取笔记本
 description: 检索笔记本对象的属性和关系。
 author: jewan-microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 67d1fbae81bc678f79d8c9f10ab3fcb4719dc56f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c03d8c82ba5af7d18da61a95c0ae7329b06d4a3c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978297"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941286"
 ---
 # <a name="get-notebook"></a>获取笔记本
 
@@ -18,8 +18,8 @@ ms.locfileid: "48978297"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [笔记本](../resources/notebook.md) 对象的属性和关系。
-## <a name="permissions"></a>权限
+检索笔记本 [对象的属性和](../resources/notebook.md) 关系。
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -52,7 +52,7 @@ GET /sites/{id}/onenote/notebooks/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [笔记本](../resources/notebook.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应[](../resources/notebook.md)代码和笔记本对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -93,7 +93,6 @@ GET https://graph.microsoft.com/beta/me/onenote/notebooks/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 284
 
 {
   "isDefault": true,

@@ -2,15 +2,15 @@
 title: 更新 printershare
 description: 更新打印机共享的属性。 此方法可用于"交换"打印机。
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: ebcf17c40b3d9175ec9db4c9621ebfc053647c1d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 142f965fe68bfaa84c827ee047c257729c6e4107
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52037445"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947241"
 ---
 # <a name="update-printershare"></a>更新 printershare
 
@@ -22,7 +22,7 @@ ms.locfileid: "52037445"
 
 例如，如果物理打印机设备中断，管理员可以注册新的打印机设备，并更新此[](../resources/printer.md) [printerShare](../resources/printerShare.md)以指向新打印机，而无需用户执行任何操作。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 除了以下权限之外，用户或应用的租户还必须具有活动的通用打印订阅。 登录的用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
@@ -50,11 +50,11 @@ PATCH /print/shares/{id}
 
 可以更新以下属性： 
 
-| 属性     | 类型        | 说明 |
+| 属性     | 类型        | Description |
 |:-------------|:------------|:------------|
-|printer|microsoft.graph.printer|此打印机共享相关的打印机。 使用 `printer@odata.bind` 以下示例中所示的语法更新与此打印机共享关联的打印机。|
+|打印机|microsoft.graph.printer|此打印机共享相关的打印机。 使用 `printer@odata.bind` 以下示例中所示的语法更新与此打印机共享关联的打印机。|
 |displayName|String|打印客户端应显示的打印机共享的名称。|
-|allowAllUsers|布尔值| 如果为 true，将授予所有用户和组对此打印机共享的访问权限。 这将取代 allowedUsers 和 allowedGroups 导航属性定义的允许列表。|
+|allowAllUsers|Boolean| 如果为 true，将授予所有用户和组对此打印机共享的访问权限。 这将取代 allowedUsers 和 allowedGroups 导航属性定义的允许列表。|
 
 ## <a name="response"></a>响应
 如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和更新的 [printerShare](../resources/printershare.md) 对象。
@@ -70,7 +70,6 @@ PATCH /print/shares/{id}
 ```http
 PATCH https://graph.microsoft.com/beta/print/shares/{id}
 Content-type: application/json
-Content-length: 109
 
 {
   "displayName": "ShareName",
@@ -107,7 +106,6 @@ Content-length: 109
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 225
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/shares/$entity",

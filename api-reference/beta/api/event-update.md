@@ -2,15 +2,15 @@
 title: 更新事件
 description: 更新 event 对象的属性。
 author: harini84
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 50c114a0d091a84708685f10c37e21e79ef04373
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: dab816db63ef132ddb4e71f65c7f7cff9395e098
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52042476"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945553"
 ---
 # <a name="update-event"></a>更新事件
 
@@ -20,7 +20,20 @@ ms.locfileid: "52042476"
 
 更新 [event](../resources/event.md) 对象的属性。
 
-更新事件开始或结束时间的时区时，首先[找到支持的时区](outlookuser-supportedtimezones.md)，以确保仅设置针对用户的邮箱服务器配置的时区。 
+### <a name="notes-for-updating-specific-properties"></a>更新特定属性的注释
+更新相应属性时，请注意以下行为或建议：
+
+- **与会者** 属性和会议更新
+  - 在请求正文中仅包含 **与会者** 属性的事件更新仅向已更改的与会者发送会议更新。
+  - 删除指定为通讯组列表成员的与会者的事件更新会向所有与会者发送会议更新。
+
+- **Body** 属性和联机会议
+
+  在更新已设置为联机会议的事件的正文之前，请确保首先获取 **Body** 属性，对内容应用适当的更改，并保留联机会议的会议 blob。无意中从正文中删除会议 blob 会禁用联机会议。 
+
+- **结束** 和 **开始** 属性及其时区
+  
+  更新事件开始或结束时间的时区时，首先[找到支持的时区](outlookuser-supportedtimezones.md)，以确保仅设置针对用户的邮箱服务器配置的时区。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -58,13 +71,13 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 
 | 属性       | 类型    | 说明 |
 |:---------------|:--------|:------------|
-| attendees|与会者版|事件的与会者集合。|
-| body|ItemBody|与事件相关联的邮件正文。|
+| attendees|与会者|事件的与会者集合。 请参阅 [其他有关更新特定属性的注释](#notes-for-updating-specific-properties)。|
+| body|ItemBody|与事件相关联的邮件正文。 请参阅 [其他有关更新特定属性的注释](#notes-for-updating-specific-properties)。|
 | categories|String collection|与事件相关联的类别。|
-| end|DateTimeTimeZone|事件结束的日期、时间和时区。 |
-|hideAttendees|布尔值|如果设置为 `true`，则每个与会者仅会在会议请求和会议 **跟踪** 列表中看到自己。 默认为 false。|
-| importance|String|事件的重要性。 可取值为：`low`、`normal`、`high`。|
-| isAllDay|Boolean|如果事件持续一整天，则设置为 true。 如果为 true，无论是单天事件还是多天事件，都必须将开始和结束时间设置为午夜，并且必须处于同一时区。|
+| end|DateTimeTimeZone|事件结束的日期、时间和时区。 请参阅 [其他有关更新特定属性的注释](#notes-for-updating-specific-properties)。 |
+|hideAttendees|布尔值|如果设置为 `true`，则每个与会者仅会在会议请求和会议 **跟踪** 列表中看到自己。默认值为 False。|
+| importance|String|事件的重要性。可能的值为： `low`、 `normal`、 `high`。|
+| isAllDay|Boolean|如果事件持续整天则设为 true。如果为 true，则无论是单天事件还是多天事件，都必须将开始和结束时间设置为午夜，并且必须处于同一时区。|
 |isOnlineMeeting|Boolean| 若此事件包含联机会议信息则为 `True`，反之则为 `false`。 默认为 false。 可选。|
 | isReminderOn|Boolean|如果设置警报以提醒用户有事件，则设置为 true。|
 | 位置|位置|事件的位置。|
@@ -75,7 +88,7 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 | responseRequested|Boolean|如果发件人希望接收事件被接受或拒绝时的响应，则设置为 true。|
 | sensitivity|String| 可能的值是：`normal`、`personal`、`private`、`confidential`。|
 | showAs|String|要显示的状态。 可能的值是 `free` `tentative` `busy` ：、、、、、。 `oof` `workingElsewhere` `unknown`|
-| start|DateTimeTimeZone|事件的开始日期、时间和时区。 |
+| start|DateTimeTimeZone|事件的开始日期、时间和时区。 请参阅 [其他有关更新特定属性的注释](#notes-for-updating-specific-properties)。 |
 | subject|String|事件的主题行文本。|
 
 由于 **事件** 资源支持 [扩展](/graph/extensibility-overview)，因此可以使用 `PATCH` 操作在现有 **事件** 实例的扩展自定义属性中添加、更新或删除自己的特定于应用的数据。
@@ -102,7 +115,6 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 ```http
 PATCH https://graph.microsoft.com/beta/me/events/{id}
 Content-type: application/json
-Content-length: 285
 
 {
   "originalStartTimeZone": "originalStartTimeZone-value",
@@ -138,7 +150,7 @@ Content-length: 285
 
 ##### <a name="response"></a>响应
 
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -148,7 +160,6 @@ Content-length: 285
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 285
 
 {
   "originalStartTimeZone": "originalStartTimeZone-value",
@@ -193,5 +204,3 @@ Content-length: 285
   ]
 }
 -->
-
-

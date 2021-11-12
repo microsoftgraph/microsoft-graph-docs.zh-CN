@@ -2,15 +2,15 @@
 title: deploymentAudience：updateAudienceById
 description: 使用相同类型的 updatableAsset 资源更新 deploymentAudience 的成员和排除集合。
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 1b948e644628eedc08fe470641b612501dfb80af
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+ms.openlocfilehash: 2a65a0e2357563156a9ef40d22d4eccd3093a052
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53351116"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945262"
 ---
 # <a name="deploymentaudience-updateaudiencebyid"></a>deploymentAudience：updateAudienceById
 
@@ -20,7 +20,7 @@ ms.locfileid: "53351116"
 
 使用相同类型的[updatableAsset](../resources/windowsupdates-updatableasset.md)资源更新[deploymentAudience](../resources/windowsupdates-deploymentaudience.md)的成员和排除集合。
 
-向部署访问群体的成员或排除集合添加 [azureADDevice](../resources/windowsupdates-azureaddevice.md) 会自动创建 Azure AD 设备对象（如果该对象不存在）。
+向部署访问群体的成员或排除集合添加[azureADDevice](../resources/windowsupdates-azureaddevice.md)会自动创建Azure AD对象（如果该对象不存在）。
 
 如果 **deploymentAudience** 的排除和 **成员** 集合中包含相同的 [updatableAsset，](../resources/windowsupdates-updatableasset.md)则部署不会应用于该资产。 
 
@@ -29,14 +29,14 @@ ms.locfileid: "53351116"
 > [!NOTE]
 > 此 API 具有 [与](/Graph/known-issues#accessing-and-updating-deployment-audiences) 通过 Intune 创建的部署相关的已知问题。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|WindowsUpdates.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|WindowsUpdates.ReadWrite.All|
+|应用程序|WindowsUpdates.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -59,13 +59,13 @@ POST /admin/windows/updates/deployments/{deploymentId}/audience/updateAudienceBy
 
 下表显示了可用于此操作的参数。
 
-|参数|类型|说明|
+|参数|类型|Description|
 |:---|:---|:---|
-|memberEntityType|字符串|可更新资源的完整类型。 可取值为：`#microsoft.graph.windowsUpdates.azureADDevice`、`#microsoft.graph.windowsUpdates.updatableAssetGroup`。|
-|addMembers|String collection|与要添加为部署访问群体成员的可更新资产对应的标识符列表。|
-|removeMembers|String collection|与要作为部署访问群体成员删除的可更新资源相对应的标识符列表。|
-|addExclusions|String collection|与要作为部署访问群体排除项添加的可更新资源相对应的标识符列表。|
-|removeExclusions|String collection|与要作为部署访问群体排除项删除的可更新资源相对应的标识符列表。|
+|memberEntityType|String|可更新资源的完整类型。 可取值为：`#microsoft.graph.windowsUpdates.azureADDevice`、`#microsoft.graph.windowsUpdates.updatableAssetGroup`。|
+|addMembers|String 集合|与要添加为部署访问群体成员的可更新资产相对应的标识符列表。|
+|removeMembers|String 集合|与要作为部署访问群体成员删除的可更新资源相对应的标识符列表。|
+|addExclusions|String 集合|与要作为部署访问群体排除项添加的可更新资源相对应的标识符列表。|
+|removeExclusions|String 集合|与要作为部署访问群体排除项删除的可更新资源相对应的标识符列表。|
 
 
 
@@ -87,7 +87,6 @@ POST /admin/windows/updates/deployments/{deploymentId}/audience/updateAudienceBy
 ``` http
 POST https://graph.microsoft.com/beta/admin/windows/updates/deployments/{deploymentId}/audience/updateAudienceById
 Content-Type: application/json
-Content-length: 204
 
 {
   "memberEntityType": "String",

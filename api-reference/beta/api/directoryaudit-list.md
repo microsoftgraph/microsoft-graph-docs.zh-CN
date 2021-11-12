@@ -1,16 +1,16 @@
 ---
 title: 列出 directoryAudits
-description: 介绍 microsoft (API) beta 版 Graph 中的 directoryAudit (实体) 。
+description: 介绍 microsoft Graph API (beta 版)  (directoryAudit 资源实体) 。
 ms.localizationpriority: medium
 author: SarahBar
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 0bc052fdb4d812bb733f9628b6d842f4ff8c50a3
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: b130b4f038e9e6ae5ce49e7e92822f11ca258069
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59507394"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60930457"
 ---
 # <a name="list-directoryaudits"></a>列出 directoryAudits
 
@@ -18,7 +18,7 @@ ms.locfileid: "59507394"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取由用户生成的审核Azure Active Directory。 这包括 Azure AD 中各种服务生成的审核日志，包括用户、应用、设备和组管理、特权标识管理 (PIM) 、访问评审、使用条款、标识保护、密码管理 (SSPR 和管理员密码重置) 以及自助服务组管理。
+获取由用户生成的审核日志Azure Active Directory。 这包括 Azure AD 中各种服务生成的审核日志，包括用户、应用、设备和组管理、特权标识管理 (PIM) 、访问评审、使用条款、标识保护、密码管理 (SSPR 和管理员密码重置) 以及自助服务组管理。
 
 ## <a name="permissions"></a>Permissions
 
@@ -130,7 +130,6 @@ GET https://graph.microsoft.com/beta/auditLogs/directoryAudits
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 271
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/directoryAudits",

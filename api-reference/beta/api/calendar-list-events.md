@@ -5,12 +5,12 @@ author: harini84
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: aa6df9ddbad26edfc841c882aaf61c369f0797c4
-ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
+ms.openlocfilehash: 97c77c49a393b2776cba55053115bcf6edc1e979
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "59996089"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938033"
 ---
 # <a name="list-events"></a>列出事件
 
@@ -114,7 +114,6 @@ GET https://graph.microsoft.com/beta/me/calendar/events
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 354
 
 {
   "value": [
@@ -146,7 +145,6 @@ Content-length: 354
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 354
 
 {
   "value": [

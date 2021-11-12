@@ -2,15 +2,15 @@
 title: 'Range: delete'
 description: 删除与范围相关的单元格。
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: e6c89780f02f521e6bc60427bdffc63d3e30fe6c
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 156eb82eff6f2e7fa45c37e002fef740140b742d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52785912"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946158"
 ---
 # <a name="range-delete"></a>Range: delete
 
@@ -19,7 +19,7 @@ ms.locfileid: "52785912"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 删除与范围相关的单元格。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -48,7 +48,7 @@ POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/ra
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |Shift|string|指定移动单元格的方式。可能的值是：`Up`、`Left`。|
 
@@ -69,7 +69,6 @@ POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/ra
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/delete
 Content-type: application/json
-Content-length: 28
 
 {
   "shift": "shift-value"

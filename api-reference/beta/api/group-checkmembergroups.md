@@ -2,15 +2,15 @@
 title: 组：checkMemberGroups
 description: 检查指定组列表中的成员身份。
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c66d8710347c1c84cf75afffd52b77924a604add
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 0a93128b10b435d73861227adc460199848013a0
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681912"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60934171"
 ---
 # <a name="group-checkmembergroups"></a>组：checkMemberGroups
 
@@ -76,7 +76,6 @@ POST /groups/{id}/checkMemberGroups
 ```http
 POST https://graph.microsoft.com/beta/groups/{id}/checkMemberGroups
 Content-type: application/json
-Content-length: 44
 
 {
   "groupIds": [
@@ -117,7 +116,6 @@ Content-length: 44
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 39
 
 {
   "value": [

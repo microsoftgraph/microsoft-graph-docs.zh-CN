@@ -2,15 +2,15 @@
 title: tenantGroup：tenantSearch
 description: 跨租户组搜索指定的托管租户。
 author: isaiahwilliams
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 73cf4f28cfa22bd0f881bc1d00c91aa8c0b2cf03
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 1c3e1983364237bf85a3ad9b3fef717698eb5d64
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53441811"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60925193"
 ---
 # <a name="tenantgroup-tenantsearch"></a>tenantGroup：tenantSearch
 命名空间：microsoft.graph.managedTenants
@@ -19,7 +19,7 @@ ms.locfileid: "53441811"
 
 跨租户组搜索指定的托管租户。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -49,7 +49,7 @@ POST /tenantRelationships/managedTenants/tenantGroups/tenantSearch
 
 下表显示了可用于此操作的参数。
 
-|参数|类型|说明|
+|参数|类型|Description|
 |:---|:---|:---|
 |tenantId|String|托管Azure Active Directory租户的租户[标识符](../resources/managedtenants-tenant.md)。|
 
@@ -72,7 +72,6 @@ POST /tenantRelationships/managedTenants/tenantGroups/tenantSearch
 ``` http
 POST https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenantGroups/tenantSearch
 Content-Type: application/json
-Content-length: 28
 
 {
   "tenantId": "String"

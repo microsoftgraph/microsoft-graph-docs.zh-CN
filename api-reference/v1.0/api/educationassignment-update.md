@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b494231a3ca0b3c2364a4e1171e4a44f22a39094
-ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
+ms.openlocfilehash: d995562a4e92980e3ac15d0b067f1297302953ea
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60220498"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60931823"
 ---
 # <a name="update-educationassignment"></a>更新 educationassignment
 
@@ -22,14 +22,14 @@ ms.locfileid: "60220498"
 
 或者，通过发布操作 **请求更改** 工作 [分配](../api/educationassignment-publish.md) 的状态。 请勿将 PATCH 操作用于此目的。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  EduAssignments.ReadWriteBasic、EduAssignments.ReadWrite  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|Application | 不支持。 | 
+|应用程序 | 不支持。 | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -47,15 +47,15 @@ PATCH /education/classes/{class-id}/assignments/{assignment-id}
 
 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |addedStudentAction|String| 描述是否应当将作业分发给在作业发布日期之后添加的学生。|
-|allowLateSubmissions|布尔值| 学生是否可以在截止日期后发送提交。|
-|allowStudentsToAddResourcesToSubmission|布尔值| 学生是否可以向提交中添加资源。 此外，指示提交中所有资源是否对应于工作分配资源列表。 |
+|allowLateSubmissions|Boolean| 学生是否可以在截止日期后发送提交。|
+|allowStudentsToAddResourcesToSubmission|Boolean| 学生是否可以向提交中添加资源。 此外，指示提交中所有资源是否对应于工作分配资源列表。 |
 |assignDateTime|DateTimeOffset| 指示向学生发布作业的日期。 |
 |assignTo|educationAssignmentRecipient| 获得作业的学生。|
-|closeDateTime|DateTimeOffset| 工作分配关闭提交的日期。 如果分配不允许LateSubmissions或 closeDateTime 与 dueDateTime 相同，则该字段可以是 null 的可选字段，但如果指定，则它必须大于或等于 dueDateTime。|
-|displayName|字符串| 工作分配的名称。 |
+|closeDateTime|DateTimeOffset| 工作分配关闭提交的日期。 如果分配不允许LateSubmissions或 closeDateTime 与 dueDateTime 相同，则该字段可以是 null 的可选字段，但如果指定，它必须大于或等于 dueDateTime。|
+|displayName|String| 工作分配的名称。 |
 |dueDateTime|DateTimeOffset| 日期分配到期。 |
 |一个|educationAssignmentGradeType| 如何对作业进行评分。|
 |instructions|itemBody| 要与作业一起向学生提供的说明。 |
@@ -79,7 +79,6 @@ PATCH /education/classes/{class-id}/assignments/{assignment-id}
 ```http
 PATCH https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/4679bc1b-90c5-45af-ae1a-d5357672ed39
 Content-type: application/json
-Content-length: 279
 
 {
     "displayName": "Reading and review test 09.03 #5",
@@ -123,7 +122,6 @@ Content-length: 279
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 279
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments/$entity",

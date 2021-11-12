@@ -2,15 +2,15 @@
 title: 获取 schedulingGroup
 description: 按 ID 检索 [schedulingGroup](../resources/schedulinggroup.md) 的属性和关系。
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 100c8cd2942668f3cca48d65abcd42eea1ed21de
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 0d8aa7715f77e7310918096f8fbab6fb0c0c33cd
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049028"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946606"
 ---
 # <a name="get-schedulinggroup"></a>获取 schedulingGroup
 
@@ -20,7 +20,7 @@ ms.locfileid: "52049028"
 
 按 ID 检索 [schedulingGroup](../resources/schedulinggroup.md) 的属性和关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -42,7 +42,7 @@ GET /teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
 
 此方法不支持使用 OData 查询参数自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 标头       | 值 |
 |:---------------|:--------|
@@ -102,7 +102,6 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/schedulingGroups/{s
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 401
 
 {
   "id": "TAG_f914d037-00a3-4ba4-b712-ef178cbea263",

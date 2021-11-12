@@ -1,16 +1,16 @@
 ---
 title: 创建 plannerBucket
 description: 使用此 API 新建 **plannerBucket**。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 2ab7899ffac413aa885c5d3c8e89399e95edbfb0
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a0b63a628a275ec3b7134c111ed42979bad0a47f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055356"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938628"
 ---
 # <a name="create-plannerbucket"></a>创建 plannerBucket
 
@@ -20,7 +20,7 @@ ms.locfileid: "52055356"
 
 使用此 API 新建 **plannerBucket**。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -61,7 +61,6 @@ POST /planner/buckets
 ```http
 POST https://graph.microsoft.com/beta/planner/buckets
 Content-type: application/json
-Content-length: 92
 
 {
   "name": "Advertising",
@@ -89,7 +88,7 @@ Content-length: 92
 
 在请求正文中，提供 [plannerBucket](../resources/plannerbucket.md) 对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -98,7 +97,6 @@ Content-length: 92
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 145
 
 {
   "name": "Advertising",

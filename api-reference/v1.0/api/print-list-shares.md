@@ -2,24 +2,22 @@
 title: 列出共享项
 description: 检索打印机共享的列表。
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 8fa29dfc5d9a9bafc82ed791eb43c75549f69c31
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: a07c531b0cdc82e772ae3a7d44a1b93738fc9c11
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51766558"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941650"
 ---
 # <a name="list-shares"></a>列出共享项
 命名空间：microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 检索 **printerShares 列表**。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 若要使用通用打印服务，除了下表中列出的权限之外，用户或应用的租户还必须具有活动的通用打印订阅。
@@ -28,7 +26,7 @@ ms.locfileid: "51766558"
 |:---------------|:--------------------------------------------|
 |委派（工作或学校帐户）| PrinterShare.ReadBasic.All、PrinterShare.Read.All、PrinterShare.ReadWrite.All |
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -45,10 +43,10 @@ GET /print/shares
 
 若要查看每个打印机共享功能的列表，请包含可选的 `$select=capabilities` 查询参数。
 
-### <a name="exceptions"></a>Exceptions
+### <a name="exceptions"></a>例外
 不支持某些运算符 `$count` `$orderby` ：、、。 `$search`
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
@@ -60,7 +58,7 @@ GET /print/shares
 
 如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [printerShare](../resources/printershare.md) 对象集合。
 
->**注意**：该响应将不包含 **defaults** **和 capabilities** 属性。 可以通过获取 [printerShare](printershare-get.md) 请求获取这些属性。
+>**注意**：响应将不包含 **defaults** 和 **capabilities** 属性。 可以通过获取 [printerShare](printershare-get.md) 请求获取这些属性。
 
 ## <a name="examples"></a>示例
 

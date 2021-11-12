@@ -1,16 +1,16 @@
 ---
 title: servicePrincipals： ownedObjects 列表
 description: 检索 servicePrincipal 所拥有的对象列表。  这可能包含应用程序或组。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: bbc25fbf7e23cfc076e138a1670f84a6e3c1f606
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 867304bf1a3a077d6663fcb703531fac4d9a6e20
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53580217"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945304"
 ---
 # <a name="serviceprincipals-list-ownedobjects"></a>servicePrincipals： ownedObjects 列表
 
@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/ownedObjects
 
 ### <a name="response"></a>响应
 下面是一个响应示例。 
->注意：为了提高可读性，可能缩短此处显示的响应对象。
+>注意：为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -95,7 +95,6 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/ownedObjects
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
 
 {
   "value": [

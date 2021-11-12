@@ -5,19 +5,19 @@ author: vishriv
 ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: apiPageType
-ms.openlocfilehash: dca67f78da5eadea414a43219006b39f5e97c2b7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 30037475c00515f8fb6a0250d899582fef24a21b
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59084764"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940249"
 ---
 # <a name="update-set"></a>更新集
 命名空间：microsoft.graph.termStore
 
 更新 [set 对象](../resources/termstore-set.md) 的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -49,10 +49,10 @@ PATCH sites/{site-id}/termStore/sets/{set-id}
 
 下表显示了可编辑 set 对象 [的属性](../resources/termstore-set.md) 。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |localizedNames|[microsoft.graph.termStore.localizedName](../resources/termstore-localizedname.md) 集合|集合的名称。|
-|说明|String|集的说明。|
+|description|String|集的说明。|
 |properties|[microsoft.graph.keyValue](../resources/keyvalue.md) 集合|集合的属性。|
 
 
@@ -75,7 +75,6 @@ PATCH sites/{site-id}/termStore/sets/{set-id}
 ``` http
 PATCH https://graph.microsoft.com/v1.0/sites/microsoft.sharepoint.com,b9b0bc03-cbc4-40d2-aba9-2c9dd9821ddf,6a742cee-9216-4db5-8046-13a595684e74/termStore/sets/3607e9f9-e9f9-3607-f9e9-0736f9e90736
 Content-Type: application/json
-Content-length: 288
 
 {
   "description": "mySet"

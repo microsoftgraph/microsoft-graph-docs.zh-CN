@@ -2,15 +2,15 @@
 title: 列出 trendingAround
 description: 计算得出的见解，可返回用户热门项目列表。
 author: jpettere
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: b1594d031f9ff007a87243ccf0cf481022b48d89
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c7b6450fae23c438b35ef4bf796209166dc0d3a1
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052584"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943044"
 ---
 # <a name="list-trendingaround"></a>列出 trendingAround
 
@@ -22,7 +22,7 @@ ms.locfileid: "52052584"
 
 **注意：** 此 API 将被弃用，并替换为趋势 [API。](../resources/insights-trending.md)
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -60,11 +60,10 @@ GET /drive/root/lastModifiedByUser/trendingAround
 GET https://graph.microsoft.com/beta/me/trendingAround
 ```
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 226
 
 {
   "id": "id-value",

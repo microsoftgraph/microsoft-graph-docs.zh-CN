@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: 610da25180814ed5b2dc6e2952d6a812be12aa46
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 1db58a2c59409f04e29dbb297f8f3f5bbe8a6b2a
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696327"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938474"
 ---
 # <a name="privilegedrole-selfdeactivate"></a>privilegedRole： selfDeactivate
 
@@ -21,7 +21,7 @@ ms.locfileid: "60696327"
 [!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 停用分配给请求者的角色。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 请求者只能 ```selfDeactivate``` 调用分配给他的角色。 
@@ -39,7 +39,7 @@ POST /privilegedRoles/{id}/selfDeactivate
 ```
 
 请注意， ``{id}`` 这是目标角色 ID。
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
@@ -94,7 +94,6 @@ POST https://graph.microsoft.com/beta/privilegedRoles/{id}/selfDeactivate
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 184
 
 {
   "id": "id-value",

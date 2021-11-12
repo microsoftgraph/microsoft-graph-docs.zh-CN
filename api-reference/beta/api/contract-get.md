@@ -1,16 +1,16 @@
 ---
 title: 获取合同
 description: 检索 contract 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: adimitui
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 433ce274f281b50e1bc473e4be7722b457afcd70
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 5c0ef2821d7b2fc82e858d00548bc1a2d2568a85
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047054"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938956"
 ---
 # <a name="get-contract"></a>获取合同
 
@@ -20,7 +20,7 @@ ms.locfileid: "52047054"
 
 检索 contract 对象 [的属性和](../resources/contract.md) 关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -96,7 +96,6 @@ GET https://graph.microsoft.com/beta/contracts/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 186
 
 {
   "contractType": "contractType-value",

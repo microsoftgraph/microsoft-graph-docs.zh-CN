@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 6a97aabd99fd1acad650ac93cfd6325edff64329
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: db4e0a91e57032d3923de99cc73b07414a3c8bc1
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60730233"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936787"
 ---
 # <a name="list-assignments-of-a-user"></a>列出用户的分配
 
@@ -22,7 +22,7 @@ ms.locfileid: "60730233"
 
 通过此实用工具命名空间，呼叫者可以在一次通话中查找属于学生或教师的所有作业，而不必从每个班级请求作业。 工作分配列表包含从类命名空间内获取工作分配的详细信息所需的内容。 对分配执行的其他所有操作都应使用类命名空间。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -112,7 +112,6 @@ GET https://graph.microsoft.com/beta/education/me/assignments
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 344
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/me/assignments",
@@ -254,7 +253,6 @@ GET https://graph.microsoft.com/beta/education/users/80cefd93-8d88-40e2-b5d3-678
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 344
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/users('80cefd93-8d88-40e2-b5d3-67898383e226')/assignments",
@@ -378,7 +376,7 @@ GET https://graph.microsoft.com/beta/education/users/80cefd93-8d88-40e2-b5d3-678
 
 #### <a name="response"></a>响应
 
-下面介绍响应示例。 
+下面展示了示例响应。 
 
 > **注意：** 如果用户具有学生角色，它将展开提交，并且对于教师角色将为 null。
 
@@ -392,7 +390,6 @@ GET https://graph.microsoft.com/beta/education/users/80cefd93-8d88-40e2-b5d3-678
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 344
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/users('80cefd93-8d88-40e2-b5d3-67898383e226')/assignments(submissions())",

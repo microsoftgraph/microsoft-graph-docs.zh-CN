@@ -1,16 +1,16 @@
 ---
 title: orgContact：获取管理器
 description: 获取联系人的经理
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ff171910adbe92e3ed936f2ea868487e761c3b05
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 5ff644f963434d9af99e7afd3062c15432aea461
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055566"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943323"
 ---
 # <a name="orgcontact-get-manager"></a>orgContact：获取管理器
 
@@ -20,7 +20,7 @@ ms.locfileid: "52055566"
 
 获取联系人的经理
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -98,7 +98,6 @@ GET https://graph.microsoft.com/beta/contacts/{id}/manager
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 455
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryObjects/$entity",

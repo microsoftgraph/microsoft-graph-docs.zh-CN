@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: f57d181dd1d053ac08140d9fb72be169e24e976e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1dc4b89e22f2e92e1faf0762c8b56e9bf149dcb5
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59119322"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945108"
 ---
 # <a name="orgcontact-checkmembergroups"></a>orgContact： checkMemberGroups
 
@@ -18,13 +18,13 @@ ms.locfileid: "59119322"
 
 检查指定组列表中的成员身份。 从列表中返回组织联系人具有直接或可传递成员身份的[](../resources/orgcontact.md)组 ID。
 
-每个请求最多可检查 20 个组。 此函数Microsoft 365 Azure AD Azure Active Directory (中预配的组和其他类型的) 。
+每个请求最多可检查 20 个组。 此函数Microsoft 365中预配的组和其他类型的Azure Active Directory (Azure AD) 。
 
 >[!NOTE]
 >Microsoft 365组不能包含组。 用户组中Microsoft 365始终是直接的。
 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -70,7 +70,6 @@ POST /contacts/{id}/checkMemberGroups
 ```http
 POST https://graph.microsoft.com/v1.0/contacts/{id}/checkMemberGroups
 Content-type: application/json
-Content-length: 44
 
 {
   "groupIds": [
@@ -109,7 +108,6 @@ Content-length: 44
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 39
 
 {
   "value": [

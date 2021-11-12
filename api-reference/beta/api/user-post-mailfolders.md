@@ -1,16 +1,16 @@
 ---
 title: 创建 MailFolder
 description: 使用此 API 在用户邮箱的根文件夹中新建邮件文件夹。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 07913741d015830d395c104c34786009703c8133
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 3377d0ae675286163b673f5c83b3f5ebee8648ab
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49754115"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946048"
 ---
 # <a name="create-mailfolder"></a>创建 MailFolder
 
@@ -20,9 +20,9 @@ ms.locfileid: "49754115"
 
 使用此 API 在用户邮箱的根文件夹中新建邮件文件夹。
 
-如果要隐藏新文件夹，则必须在创建时将 **isHidden** 属性 `true` 设置为。
+如果要隐藏新文件夹，必须在创建时将 **isHidden** `true` 属性设置为 。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -44,16 +44,16 @@ POST /users/{id | userPrincipalName}/mailFolders
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供具有以下参数的 JSON 对象。 **displayName** 和 **isHidden** 是 [mailFolder](../resources/mailfolder.md) 对象的唯一可写属性。
+在请求正文中，提供具有以下参数的 JSON 对象。 **displayName** **和 isHidden** 是 [mailFolder](../resources/mailfolder.md) 对象的唯一可写属性。
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |displayName|String|新文件夹的显示名称。|
-|isHidden|Boolean|指示是否隐藏新文件夹。 默认值为 `false`。 设置属性是可选的。 设置后，将无法更新此属性。 在"隐藏"邮件 [文件夹中查看详细信息](../resources/mailfolder.md#hidden-mail-folders)|
+|IsHidden|布尔值|指示是否隐藏新文件夹。 默认值为 `false`。 设置属性是可选的。 设置后，就无法更新此属性。 在"隐藏邮件 [文件夹"中查看详细信息](../resources/mailfolder.md#hidden-mail-folders)|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在 `201 Created` 响应正文中返回响应代码和 [mailFolder](../resources/mailfolder.md) 对象。
+如果成功，此方法在 `201 Created` 响应正文中返回 响应代码和 [mailFolder](../resources/mailfolder.md) 对象。
 
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
@@ -67,7 +67,6 @@ POST /users/{id | userPrincipalName}/mailFolders
 ```http
 POST https://graph.microsoft.com/beta/me/mailFolders
 Content-type: application/json
-Content-length: 159
 
 {
   "displayName": "Clutter",
@@ -105,7 +104,6 @@ Content-length: 159
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 179
 
 {
   "id": "hN2Y5OGRhNGYwODEALgAAA0DAKbvJvFhJgcT3lZpkhNQBAA1",

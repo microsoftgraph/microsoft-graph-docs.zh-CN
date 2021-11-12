@@ -5,19 +5,19 @@ author: lumine2008
 ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 844be86737d786c13ea71b261a8b02edff6e5001
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 490d4cbf2e2bd4baf50fa62415bc8bad904a812a
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60444530"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945717"
 ---
 # <a name="worksheetcollection-add"></a>WorksheetCollection: add
 
 命名空间：microsoft.graph
 
 向工作簿添加新工作表。 工作表将添加到现有工作表的末尾。 如果要激活新添加的工作表，请对它调用 .activate () 。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -42,7 +42,7 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |name|string|可选。要添加的工作表的名称。如果指定，名称应唯一。如果未指定，Excel 将确定新工作表的名称。|
 
@@ -63,7 +63,6 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/add
 Content-type: application/json
-Content-length: 26
 
 {
   "name": "name-value"
@@ -98,7 +97,6 @@ Content-length: 26
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 100
 
 {
   "id": "id-value",

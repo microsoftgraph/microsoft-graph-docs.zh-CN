@@ -5,19 +5,19 @@ author: spunukol
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: e26a1720be5c866be9c4b29f4cda71564d26ed0c
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: 3432d6e4afe0b6afe19a85113d90fd35acb2db7f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60290286"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940859"
 ---
 # <a name="create-registeredowner"></a>创建 registeredOwner
 
 命名空间：microsoft.graph
 
 将用户添加为设备的已注册所有者。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -57,7 +57,6 @@ POST /devices/{id}/registeredOwners/$ref
 ```http
 POST https://graph.microsoft.com/v1.0/devices/{id}/registeredOwners/$ref
 Content-type: application/json
-Content-length: 30
 
 {
   "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
