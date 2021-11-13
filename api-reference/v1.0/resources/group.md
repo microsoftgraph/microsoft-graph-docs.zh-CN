@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: a053f4aa553178db6c1f277da8256f2cfe20cb66
-ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
+ms.openlocfilehash: aaed63f6a8ac2ee0d762f71522a596abdf20d413
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60256436"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938075"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -126,7 +126,7 @@ ms.locfileid: "60256436"
 |createdDateTime|DateTimeOffset| 组的创建时间戳。 值无法修改，并在组创建时自动填充。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 <br><br>默认情况下返回。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`）。 只读。 |
 |deletedDateTime|DateTimeOffset| 对于某些Azure Active Directory对象（用户、组、应用程序），如果删除对象，则首先在逻辑上删除该对象，并且此属性将更新为删除对象的日期和时间。否则，此属性。 `null`如果还原对象，则此属性将更新为 `null`。 |
 |description|String|可选的组说明。 <br><br>默认情况下返回。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`startsWith`）和 `$search`。|
-|displayName|字符串|组的显示名称。创建组时需要此属性，更新期间无法清除此属性。 <br><br>默认情况下返回。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`、`startsWith`）、`$search` 和 `$orderBy`。 |
+|displayName|字符串|组的显示名称。创建组时需要此属性，更新期间无法清除此属性。 <br><br>默认情况下返回。 支持 `$filter` (`eq`、`ne`、`NOT`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`)、`$search` 和 `$orderBy`。 |
 |expirationDateTime|DateTimeOffset| 设置的组的过期时间戳。 值无法修改，并在组创建时自动填充。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 <br><br>默认情况下返回。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`）。 只读。 |
 |groupTypes|String collection| 指定组类型及其成员身份。  <br><br>如果集合包含 `Unified`，则该组为Microsoft 365组；否则，它是安全组或通讯组。有关详细信息，请参阅 [组概述](groups-overview.md)。<br><br>如果该集合包含 `DynamicMembership`，则该组具有动态成员身份；否则，成员身份是静态的。  <br><br>默认返回。支持 `$filter`（`eq`、`NOT`）。|
 |hasMembersWithLicenseErrors|Boolean|指示此组中是否有该基于组的许可证分配中存在许可证错误的成员。 <br><br>在 GET 操作中从不返回此属性。可以将其用作 $filter 参数，以获取具有许可证错误成员的组（即此属性的筛选为 true）。参阅[示例](../api/group-list.md)。 <br><br>支持 `$filter`（`eq`）。|
@@ -136,18 +136,18 @@ ms.locfileid: "60256436"
 |isAssignableToRole|Boolean|指示是否可以将此组分配给 Azure Active Directory 角色。可选。<br><br>此属性只能在创建组时设置，并且不可变。 如果设置为 `true`，则 **securityEnabled** 属性也必须设置为 `true`，并且该组不能是动态组（即，**groupTypes** 不能包含 `DynamicMembership`）。 只有全局管理员和特权角色管理员角色中的调用方可以设置此属性。 必须向调用方分配 *RoleManagement.ReadWrite.Directory* 权限，才能设置此属性或更新此类组成员的身份。 有关更多信息，请参阅[使用组来管理 Azure AD 角色分配](https://go.microsoft.com/fwlink/?linkid=2103037)<br><br>默认返回。支持 `$filter`（`eq`、`ne`、`NOT`）。|
 |isSubscribedByMail|Boolean|指示是否订阅已登录用户以接收电子邮件对话。默认值为 `true`。 <br><br>仅在 `$select` 上返回。仅在 Get 组 API（`GET /groups/{ID}`）上受支持。 |
 |licenseProcessingState|String|指示组的所有成员的组许可证分配状态。默认值为 `false`。只读。可能的值：`QueuedForProcessing`、`ProcessingInProgress`、`ProcessingComplete`。<br><br>仅在 `$select` 返回。只读。|
-|mail|String|组的 SMTP 地址，例如，“serviceadmins@contoso.onmicrosoft.com”。 <br><br>默认情况下返回。 只读。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。|
+|mail|String|组的 SMTP 地址，例如，“serviceadmins@contoso.onmicrosoft.com”。 <br><br>默认情况下返回。 只读。 支持 `$filter` (`eq`、`ne`、`NOT`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`)。|
 |mailEnabled|Boolean|指定组是否启用邮件。必需。<br><br>默认返回。支持 `$filter`（`eq`、`ne`、`NOT`）。|
-|mailNickname|String|组的邮件别名，在组织中是唯一的。 最大长度为 64 个字符。 此属性只能包含[ASCII 字符集 0 - 127](/office/vba/language/reference/user-interface-help/character-set-0127) 中的字符，以下除外：` @ () \ [] " ; : . <> , SPACE`。 <br><br>必需。 默认情况下返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。|
+|mailNickname|String|组的邮件别名，在组织中是唯一的。 最大长度为 64 个字符。 此属性只能包含[ASCII 字符集 0 - 127](/office/vba/language/reference/user-interface-help/character-set-0127) 中的字符，以下除外：` @ () \ [] " ; : . <> , SPACE`。 <br><br>必需。 默认情况下返回。 支持 `$filter` (`eq`、`ne`、`NOT`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`)。|
 |membershipRule|String|组为动态组时（groupTypes 包含 `DynamicMembership`），用于确定该组成员的规则。 有关成员身份规则语法的详细信息，请参阅[成员身份规则语法](/azure/active-directory/users-groups-roles/groups-dynamic-membership)。 <br><br>默认返回。支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`startsWith`）。 |
 |membershipRuleProcessingState|String|指示动态成员身份处理是打开还是暂停。可能的值为 `On` 或 `Paused`。 <br><br>默认返回。支持 `$filter`（`eq`、`ne`、`NOT`、`in`）。  |
 |onPremisesLastSyncDateTime|DateTimeOffset|指示上次将组与本地目录同步的时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC `2014-01-01T00:00:00Z`。 <br><br>默认情况下返回。 只读。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`）。|
 |onPremisesProvisioningErrors|[onPremisesProvisioningError](onpremisesprovisioningerror.md) 集合| 在预配期间使用 Microsoft 同步产品时发生的错误。 <br><br>默认返回。支持 `$filter`（`eq`、`NOT`）。 |
 |onPremisesSamAccountName|String|包含从本地目录同步的本地 **SAM 帐户名称**。该属性仅为通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 的客户填充。<br><br>默认情况下返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。 只读。 |
 |onPremisesSecurityIdentifier|String|包含从本地同步到云的组的本地安全标识符 (SID)。 <br><br>默认情况下返回。 支持 `null` 值上的 `$filter`。 只读。 |
-|onPremisesSyncEnabled|Boolean|如果此组从本地目录同步，则为 `true`；如果此组最初从本地目录同步，但以后不再同步，则为 `false`；如果此对象从未从本地目录同步，则为 **null**（默认值）。 <br><br>默认情况下返回。 只读。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `in`）。|
+|onPremisesSyncEnabled|Boolean|如果此组从本地目录同步，则为 `true`；如果此组最初从本地目录同步，但以后不再同步，则为 `false`；如果此对象从未从本地目录同步，则为 **null**（默认值）。 <br><br>默认情况下返回。 只读。 支持 `$filter` (`eq`、`ne`、`NOT`、`in` 和 `null` 值上的 `eq`)。|
 |preferredDataLocation|String|Microsoft 365 组的首选数据位置。 默认情况下，组继承组创建者的首选数据位置。 若要设置此属性，必须为调用用户分配以下 [Azure AD 角色之一](/azure/active-directory/roles/permissions-reference)： <br><ul><li> 全局管理员 <li> 用户帐户管理员 <li>目录写入程序 <li> Exchange 管理员 <li> SharePoint 管理员 </ul><br/> 有关此属性的详细信息，请参阅  [OneDrive Online 多地理位置](/sharepoint/dev/solution-guidance/multigeo-introduction)。 <br><br>默认返回。可为空。|
-|preferredLanguage|String|Microsoft 365 组的首选语言。应遵循 ISO 639-1 代码；例如，`en-US`。 <br><br>默认情况下返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。 |
+|preferredLanguage|String|Microsoft 365 组的首选语言。应遵循 ISO 639-1 代码；例如，`en-US`。 <br><br>默认情况下返回。 支持 `$filter` (`eq`、`ne`、`NOT`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`)。 |
 |proxyAddresses|String 集合| 指向同一组邮箱的组的电子邮件地址。 例如：`["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`。 需要 **any** 运算符筛选多值属性上的表达式。 <br><br>默认情况下返回。 只读。 不可为 null。 支持 `$filter`（`eq`、`NOT`、`ge`、`le`、`startsWith`）。 |
 |renewedDateTime|DateTimeOffset| 组的上次续订时间戳。 值不能直接修改，只能通过[续订服务操作](../api/group-renew.md)进行更新。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 <br><br>默认情况下返回。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`）。 只读。|
 |resourceBehaviorOptions|字符串集合|指定在创建期间可为 Microsoft 365 组设置的组行为。 可设置为只为创建的一部分（POST）。 可取值为：`AllowOnlyMembersToPost`、`HideGroupInOutlook`、`SubscribeNewGroupMembers`、`WelcomeEmailDisabled`。 有关详细信息，请参阅 [ 设置 Microsoft 365 组行为和预配选项 ](/graph/group-set-options)。|
@@ -169,7 +169,7 @@ ms.locfileid: "60256436"
 
 
 ## <a name="relationships"></a>关系
-| 关系 | 类型   |说明|
+| 关系 | 类型   |Description|
 |:---------------|:--------|:----------|
 |acceptedSenders|[directoryObject](directoryobject.md) 集合|允许在此组中创建帖子或日历事件的用户或组列表。如果此列表为非空，则仅允许此处列出的用户或组发布内容。|
 |appRoleAssignments|[appRoleAssignment](approleassignment.md) 集合|表示已为应用程序授予组的应用角色。支持 `$expand`。|
