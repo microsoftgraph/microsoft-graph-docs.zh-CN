@@ -1,16 +1,16 @@
 ---
 title: azureADDeviceRegistrationError 资源类型
-description: Azure AD 设备的注册过程中出现一个错误，该错误阻止该服务在更新管理中注册设备或将内容部署到设备。
+description: 在设备注册过程中Azure AD，该错误阻止服务在更新管理中注册设备或将内容部署到设备。
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: 1d08ab96d5298c70f34acf89e3c6c4605d9df0a1
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 8ef1d16203f4b2197a0f8cdb93aaeae073d77ccb
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067862"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890365"
 ---
 # <a name="azureaddeviceregistrationerror-resource-type"></a>azureADDeviceRegistrationError 资源类型
 
@@ -18,14 +18,14 @@ ms.locfileid: "52067862"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Azure [AD](../resources/windowsupdates-azureaddevice.md) 设备的注册过程中出现一个错误，该错误阻止该服务在更新管理中注册设备或将内容部署到设备。
+在设备注册过程中[Azure AD，](../resources/windowsupdates-azureaddevice.md)该错误阻止服务在更新管理中注册设备或将内容部署到设备。
 
 继承自 [updatableAssetError](../resources/windowsupdates-updatableasseterror.md)。
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
-|reason|microsoft.graph.windowsUpdates.azureADDeviceRegistrationErrorReason|注册遇到错误的原因。 可取值为：`invalidGlobalDeviceId`、`invalidAzureADDeviceId`、`missingTrustType`、`invalidAzureADJoin`。|
+|reason|microsoft.graph.windowsUpdates.azureADDeviceRegistrationErrorReason|注册遇到错误的原因。 可取值为：`invalidGlobalDeviceId`、`invalidAzureADDeviceId`、`missingTrustType`、`invalidAzureADJoin`、`unknownFutureValue`。|
 
 ## <a name="relationships"></a>关系
 无。

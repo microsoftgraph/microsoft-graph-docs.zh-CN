@@ -5,12 +5,12 @@ author: sweta-thapliyal
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 027711b00e5148d6730b7efb1c0f1f421d6c2ab5
-ms.sourcegitcommit: f9e71d3b8a54a98c282ef49783babe5698300c06
+ms.openlocfilehash: f107f67d388ead1876a0478b1a1a5840bff28e03
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "60793972"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890607"
 ---
 # <a name="chat-markchatunreadforuser"></a>chat： markChatUnreadForUser
 命名空间：microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "60793972"
 |:---|:---|
 |委派（工作或学校帐户）|Chat.ReadWrite|
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -49,7 +49,7 @@ POST /chats/{chat-id}/markChatUnreadForUser
 
 下表显示了可用于此操作的参数。
 
-|参数|类型|说明|
+|参数|类型|描述|
 |:---|:---|:---|
 |lastMessageReadDateTime|DateTimeOffset|指示所有已发送或已接收邮件标记为未读的时间的时间戳。|
 |tenantId|String|用户的租户 ID。|
@@ -64,6 +64,8 @@ POST /chats/{chat-id}/markChatUnreadForUser
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "chat_markchatunreadforuser"
@@ -82,6 +84,24 @@ Content-length: 158
   "lastMessageReadDateTime": "2021-05-27T22:13:01.577Z"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/chat-markchatunreadforuser-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/chat-markchatunreadforuser-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/chat-markchatunreadforuser-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/chat-markchatunreadforuser-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

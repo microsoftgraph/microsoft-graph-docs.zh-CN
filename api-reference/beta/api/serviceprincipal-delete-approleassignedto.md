@@ -5,16 +5,14 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 0c05fcee4bece33cfd4b6c0d4bf3d8dc5d7f65c8
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: 0793681ea314b1e57080852d454f62dfb36c46eb
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60290314"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60891093"
 ---
 # <a name="delete-approleassignedto"></a>删除 appRoleAssignedTo
-
-命名空间：microsoft.graph
 
 命名空间：microsoft.graph
 

@@ -1,27 +1,27 @@
 ---
-title: 删除 oAuth2PermissionGrant
+title: '删除委派权限授予 (oAuth2PermissionGrant) '
 description: 删除表示委派权限授予的 oAuth2PermissionGrant。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 3e85a9cac2652d8ad261b7e8e4035d5edc8a6ee7
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: c8ec0b52c613300b425cbf4bedea7eb58a861b9c
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60289124"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890316"
 ---
-# <a name="delete-a-delegated-permission-grant-oauth2permissiongrant"></a>删除 oAuth2PermissionGrant (委派) 
+# <a name="delete-oauth2permissiongrant-a-delegated-permission-grant"></a>删除委派权限授予 (oAuth2PermissionGrant) 
 
 命名空间：microsoft.graph
 
-删除 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md)。
+删除由 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象表示的委派权限授予。
 
 删除委派的权限授予后，将撤消授予该权限的访问权限。 现有访问令牌在生存期内将继续有效，但不会为已删除的 **oAuth2PermissionGrant** 中标识的委派权限授予新的访问令牌。
 
 > [!NOTE]
-> 可能有两个委派权限授予，授权应用程序在调用 API 时代表用户操作。 当用户代表自己同意应用程序时，可能会发生这种情况 (创建具有 **consentType** 主体的 **oAuth2PermissionGrant，** 标识用户) 然后管理员代表所有用户授予租户范围的管理员同意 (创建第二个具有 *AllPrincipals*) **consentType** 的 **oAuth2PermissionGrant。**
+> 可能有两个委派权限授予，授权应用程序在调用 API 时代表用户操作。 当用户代表自己同意应用程序时（ (创建具有 **consentType** 主体的 **oAuth2PermissionGrant，** 标识用户) 然后管理员代表所有用户授予租户范围的管理员同意 (创建第二个具有 *AllPrincipals*) **consentType** 的 **oAuth2PermissionGrant** 时，可能会发生这种情况。
 
 ## <a name="permissions"></a>权限
 
@@ -31,7 +31,7 @@ ms.locfileid: "60289124"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | DelegatedPermissionGrant.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Directory.ReadWrite.All |
+|Application | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -90,7 +90,7 @@ DELETE https://graph.microsoft.com/v1.0/oauth2PermissionGrants/{id}
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 <!-- {
   "blockType": "response",

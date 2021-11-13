@@ -5,19 +5,19 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 443d2e50f9bb480290874c976132e28e72ea94a5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 243b7e7f78c0376a8ee77f3849204b74e9e47862
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147386"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890330"
 ---
 # <a name="get-identityprovider"></a>获取 identityProvider
 命名空间：microsoft.graph
 
-获取租户中指定标识提供程序的属性和关系。
+获取在租户中配置的指定标识提供程序的属性和关系。
 
-在从 identityProviderBase 派生的提供程序类型中，当前可以在 Azure AD 中获取 [socialIdentityProvider](../resources/socialidentityprovider.md) 或 [builtinIdentityProvider](../resources/builtinidentityprovider.md) 资源。 在 Azure AD B2C 中，此操作当前可以获取 [socialIdentityProvider](../resources/socialidentityprovider.md) 资源。
+在从 identityProviderBase 派生的提供程序类型中，当前可以在 Azure AD 中获取[socialIdentityProvider](../resources/socialidentityprovider.md)或[builtinIdentityProvider](../resources/builtinidentityprovider.md)资源。 在 Azure AD B2C 中，此操作当前可以获取[socialIdentityProvider](../resources/socialidentityprovider.md)或[appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md)资源。
 
 ## <a name="permissions"></a>权限
 
@@ -27,7 +27,7 @@ ms.locfileid: "59147386"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）|IdentityProvider.Read.All、IdentityProvider.ReadWrite.All|
 |委派（Microsoft 个人帐户）| 不支持。|
-|应用程序|IdentityProvider.Read.All、IdentityProvider.ReadWrite.All|
+|Application|IdentityProvider.Read.All、IdentityProvider.ReadWrite.All|
 
 工作或学校帐户需要属于以下角色之一：
 
@@ -55,13 +55,13 @@ GET /identity/identityProviders/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在 Azure AD 租户的响应正文中返回 `200 OK` [socialIdentityProvider](../resources/socialidentityprovider.md) 或 [builtinIdentityProvider](../resources/builtinidentityprovider.md) 的响应代码和 JSON 表示形式。
+如果成功，此方法在 Azure AD 租户的响应正文中返回 `200 OK` [socialIdentityProvider](../resources/socialidentityprovider.md)或[builtinIdentityProvider](../resources/builtinidentityprovider.md)的响应代码和 JSON 表示形式。
 
-对于 Azure AD B2C 租户，此方法在响应正文中返回 响应代码和 `200 OK` [socialIdentityProvider](../resources/socialidentityprovider.md) 对象的 JSON 表示形式。
+对于 Azure AD B2C 租户，此方法在响应正文中返回 `200 OK` [socialIdentityProvider](../resources/socialidentityprovider.md)或[appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md)对象的 响应代码和 JSON 表示形式。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-retrieve-a-specific-social-identity-provider-azure-ad-or-azure-ad-b2c"></a>示例 1：在 Azure AD 或 Azure AD B2C (检索特定社会标识) 
+### <a name="example-1-retrieve-a-specific-social-identity-provider-azure-ad-or-azure-ad-b2c"></a>示例 1：检索特定社会标识提供程序 (Azure AD或Azure AD B2C) 
 
 #### <a name="request"></a>请求
 
@@ -120,7 +120,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-retrieve-a-specific-built-in-identity-provider-only-for-azure-ad"></a>示例 2：仅为 Azure AD (检索特定的内置标识) 
+### <a name="example-2-retrieve-a-specific-built-in-identity-provider-only-for-azure-ad"></a>示例 2：仅为用户检索 (内置标识Azure AD) 
 
 #### <a name="request"></a>请求
 
@@ -174,5 +174,46 @@ Content-type: application/json
     "id": "MSASignup-OAUTH",
     "identityProviderType": "MicrosoftAccount",
     "displayName": "MicrosoftAccount"
+}
+```
+
+### <a name="example-3-retrieves-apple-identity-provideronly-for-azure-ad-b2c"></a>示例 3：仅为 (B2C Azure AD检索 Apple 标识) 
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "get_applemanagedidentityprovider_from_identityproviderbase"
+}
+-->
+
+```http
+GET https://graph.microsoft.com/v1.0/identity/identityProviders/Apple-Managed-OIDC
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.appleManagedIdentityProvider"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "id": "Apple-Managed-OIDC",
+    "displayName": "Sign in with Apple",
+    "developerId": "UBF8T346G9",
+    "serviceId": "com.microsoft.rts.b2c.test.client",
+    "keyId": "99P6D879C4",
+    "certificateData": "******"
 }
 ```

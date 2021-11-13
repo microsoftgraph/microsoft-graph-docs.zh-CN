@@ -119,8 +119,6 @@ items:
             href: /graph/migrate-azure-ad-graph-deploy-test-extend?context=graph/api/1.0
           - name: 迁移常见问题解答
             href: /graph/migrate-azure-ad-graph-faq?context=graph/api/1.0
-          - name: 配置Azure AD Graph权限
-            href: /graph/migrate-azure-ad-graph-configure-permissions?context=graph/api/1.0
   - name: 使用 SDK
     items:
       - name: 概述
@@ -418,7 +416,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: 发送邮件
                 href: api/user-sendmail.md
-          - name: Notes
+          - name: 注释
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -6016,7 +6014,7 @@ items:
                 href: api/site-list-subsites.md
               - name: 搜索网站
                 href: api/site-search.md
-              - name: Permissions
+              - name: 权限
                 href: resources/permission.md
                 items:
                   - name: 获取网站权限

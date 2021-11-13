@@ -65,7 +65,7 @@ conceptualContent:
       links:
         - url: ./azuread-identity-access-management-concept-overview.md
           itemType: overview
-          text: 使用 Azure AD 方法管理访问和对用户进行身份验证。
+          text: 使用 Azure AD 方法来管理访问和对用户进行身份验证。
     - title: Microsoft Graph 数据连接
       links:
         - url: ./data-connect-concept-overview.md
@@ -94,15 +94,19 @@ additionalContent:
           links:
             - text: Microsoft Graph基础
               url: 'https://docs.microsoft.com/learn/paths/m365-msgraph-fundamentals/'
+            - text: '使用 Microsoft Graph API 构建应用 – 关联 '
+              url: 'https://docs.microsoft.com/learn/paths/m365-msgraph-associate/'
             - text: 了解用于 JavaScript 开发 Microsoft Graph 方案
               url: 'https://docs.microsoft.com/learn/paths/m365-msgraph-scenarios'
-            - text: 使用 Microsoft Graph Toolkit 开发应用
+            - text: 了解 ASP.NET Core 开发的 Microsoft Graph 方案
+              url: 'https://docs.microsoft.com/learn/paths/m365-msgraph-dotnet-core-scenarios/'
+            - text: 使用 Microsoft Graph Toolkit
               url: 'https://docs.microsoft.com/learn/paths/m365-msgraph-toolkit'
         - title: 使用说明
           links:
             - text: 连接器：生成首个自定义连接器
               url: 'https://docs.microsoft.com/en-us/graph/connecting-external-content-build-quickstart'
-            - text: Microsoft 搜索：搜索 OneDrive 和 Sharepoint 中的内容
+            - text: Microsoft 搜索：在 OneDrive 和 Sharepoint 中搜索内容
               url: 'https://docs.microsoft.com/graph/search-concept-files'
             - text: 标识：管理对资源的访问
               url: 'https://docs.microsoft.com/en-us/graph/tutorial-access-package-api'
@@ -120,7 +124,7 @@ additionalContent:
               url: ./known-issues.md
             - text: 支持
               url: 'https://developer.microsoft.com/graph/support'
-            - text: Microsoft Graph问答&上
+            - text: Microsoft Graph问答&
               url: 'https://docs.microsoft.com/en-us/answers/products/graph'
             - text: Microsoft Graph API
               url: 'https://developer.microsoft.com/graph/blogs/'

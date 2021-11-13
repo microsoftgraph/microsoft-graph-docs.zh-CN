@@ -1,25 +1,25 @@
 ---
 author: JeremyKelley
-description: 此方法使应用程序随着时间的推移跟踪驱动器及其子级的更改。
+description: 跟踪一段时间在驱动器项及其子项中的更改。
 ms.date: 09/10/2017
-title: 同步驱动器的内容
-localization_priority: Normal
+title: driveItem： delta
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 483bfdcdd08c5d01f69d1b12455e64b903d9fac8
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: 463e36e54897b6c1a617a66c31c6902ccaad7cb2
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52912073"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890295"
 ---
-# <a name="track-changes-for-a-drive"></a>跟踪驱动器更改
+# <a name="driveitem-delta"></a>driveItem： delta
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-此方法使应用程序随着时间的推移跟踪驱动器及其子级的更改。
+随着时间的推移，跟踪 [driveItem](../resources/driveitem.md) 及其子项中的更改。
 
 应用程序首先调用不带任何参数的 `delta`。服务开始枚举驱动器的层次结构，返回项目页面和 `@odata.nextLink` 或 `@odata.deltaLink`，如下所述。应用程序应该使用 `@odata.nextLink` 继续调用，直到不再返回 `@odata.nextLink`，或响应内容为空更改集。
 
@@ -61,6 +61,16 @@ GET /users/{userId}/drive/root/delta
 
 此方法支持使用 `$select`、`$expand` 和 `$top` [OData 查询参数](/graph/query-parameters)自定义响应。
 
+## <a name="request-headers"></a>请求标头
+
+|名称|说明|
+|:---|:---|
+|Authorization|Bearer {token}。必需。|
+
+## <a name="request-body"></a>请求正文
+
+请勿提供此方法的请求正文。
+
 ## <a name="response"></a>响应
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [DriveItem](../resources/driveitem.md) 资源集合。
@@ -72,11 +82,13 @@ GET /users/{userId}/drive/root/delta
 | **@odata.nextLink**  | url    | 如果当前集有其他更改，用来检索下一可用更改页的 URL。                                        |
 | **@odata.deltaLink** | url    | 返回当前所有更改后返回的 URL，而不是 **@odata.nextLink**。用于在将来读取下一组更改。  |
 
-## <a name="example-initial-request"></a>示例（初始请求）
+## <a name="examples"></a>示例
+
+### <a name="example-1-initial-request"></a>示例 1：初始请求
 
 下面是一个如何调用此 API 以建立本地状态的示例。
 
-### <a name="request"></a>请求
+#### <a name="request"></a>请求
 
 下面是一个初始请求的示例。
 
@@ -106,7 +118,7 @@ GET https://graph.microsoft.com/beta/me/drive/root/delta
 ---
 
 
-### <a name="response"></a>响应
+#### <a name="response"></a>响应
 
 下面是一个响应示例。
 
@@ -140,11 +152,11 @@ Content-type: application/json
 
 此响应包含第一页的更改，**@odata.nextLink** 属性指示当前的项目集中有更多项目。在检索完所有项目页之前，你的应用程序应继续请求 **@odata.nextLink** 的 URL 值。
 
-## <a name="example-last-page-in-a-set"></a>示例（集中的最后一页）
+### <a name="example-2-last-page-in-a-set"></a>示例 2：集合中的最后一页
 
 下面是一个如何调用此 API 以更新本地状态的示例。
 
-### <a name="request"></a>请求
+#### <a name="request"></a>请求
 
 下面是一个初始请求之后的请求示例。
 
@@ -174,7 +186,7 @@ GET https://graph.microsoft.com/beta/me/drive/root/delta(token='1230919asd190410
 ---
 
 
-### <a name="response"></a>响应
+#### <a name="response"></a>响应
 
 下面是一个响应示例。
 
@@ -213,17 +225,16 @@ Content-type: application/json
 | `resyncChangesApplyDifferences`  | 如果确定上次同步时服务与你的本地更改保持同步，请将任意本地项目替换为服务器的版本（包括删除）。上载服务器并不知道的任意本地更改。 |
 | `resyncChangesUploadDifferences` | 上载服务未返回的任意本地项目，并上载与服务器版本不同的任意文件（如果不知道哪个是最新的，请保留两份）。                                       |
 
-## <a name="retrieving-the-current-deltalink"></a>检索当前 deltaLink
+### <a name="example-3-retrieving-the-current-deltalink"></a>示例 3：检索当前 deltaLink
 
 在某些情况下，请求当前 deltaLink 值可能非常有用（无需首先枚举驱动器中已有的所有项）。
 
-如果应用只需了解更改，不需要了解现有项，这将非常有用。
-若要检索最新的 deltaLink，请使用查询字符串参数 `?token=latest` 调用 `delta`。
+如果应用只需了解更改，不需要了解现有项，这将非常有用。若要检索最新的 deltaLink，请使用查询字符串参数 `?token=latest` 调用 `delta`。
 
->**注意：** 如果尝试维护文件夹或驱动器中项的完整本地表示形式，则必须用于初始 `delta` 枚举。
+> **注意：** 如果尝试维护文件夹或驱动器中项的完整本地表示形式，则必须用于 `delta` 初始枚举。
 如果枚举期间发生任何写入操作，则不能保证其他方法（如分页浏览文件夹集合）返回每个 `children` 项。 `delta`使用 是保证已读取所有所需的数据的唯一方法。
 
-### <a name="request"></a>请求
+#### <a name="request"></a>请求
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -251,7 +262,7 @@ GET /me/drive/root/delta?token=latest
 ---
 
 
-### <a name="response"></a>响应
+#### <a name="response"></a>响应
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)" } -->
 
@@ -262,6 +273,51 @@ Content-type: application/json
 {
     "value": [ ],
     "@odata.deltaLink": "https://graph.microsoft.com/v1.0/me/drive/root/delta?token=1230919asd190410jlka"
+}
+```
+
+### <a name="example-4-retrieving-delta-results-using-a-timestamp"></a>示例 4：使用时间戳检索增量结果
+
+在某些情况下，客户端可能在一个特定时间前知道驱动器的状态，但没有该时间点的 deltaLink。 在这种情况下，客户端可以使用 URL 编码时间戳调用查询字符串参数的值，例如，或 `delta` `token` `?token=2021-09-29T20%3A00%3A00Z` "？token=2021-09-29T12%3A00%3A00%2B8%3A00"。
+
+仅在用户和用户上支持使用时间戳OneDrive for Business SharePoint。
+
+> **注意：** 客户端应在可能的情况下使用查询提供的 `delta` deltaLink，而不是生成自己的令牌。 只有在 deltaLink 未知时，才应利用此功能。
+
+
+#### <a name="request"></a>请求
+
+
+<!-- { "blockType": "request", "name": "get-delta-timestamp", "scopes": "files.read", "tags": "service.graph", "target": "action" } -->
+
+```http
+GET /me/drive/root/delta?token=2021-09-29T20%3A00%3A00Z
+```
+
+
+#### <a name="response"></a>响应
+
+<!-- { "blockType": "response", "truncated": true, "@odata.type": "Collection(microsoft.graph.driveItem)", "scope": "file.read" } -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "value": [
+        {
+            "id": "0123456789abc",
+            "name": "folder2",
+            "folder": { },
+            "deleted": { }
+        },
+        {
+            "id": "123010204abac",
+            "name": "file.txt",
+            "file": { }
+        }
+    ],
+    "@odata.deltaLink": "https://graph.microsoft.com/v1.0/me/drive/root/delta?(token='1230919asd190410jlka')"
 }
 ```
 
@@ -276,8 +332,8 @@ Content-type: application/json
     
     | 操作类型 | Delta 查询忽略的属性 |
     |---------|----------|
-    | 创建/修改 | `ctag`, `lastModifiedBy` |
-    | 删除 | `ctag`, `lastModifiedBy`, `name` |
+    | 创建/修改 | `ctag` |
+    | 删除 | `ctag`, `name` |
 
 
     **OneDrive（消费者）**

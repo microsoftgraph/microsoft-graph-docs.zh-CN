@@ -5,19 +5,19 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 0cc34c99e63a6f37db65093ddce31f8729e7f1d3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 697d6858b334b2a19eaa950368ca7a47e6c59fb5
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59105305"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60891072"
 ---
 # <a name="delete-identityprovider"></a>删除 identityProvider
 命名空间：microsoft.graph
 
 删除标识提供程序资源，该资源的类型由 **请求中的 id** 指定。
 
-在从 identityProviderBase 派生的提供程序类型中，当前可以删除 Azure AD 中的 [socialIdentityProvider](../resources/socialidentityprovider.md) 资源。 在 Azure AD B2C 中，此操作当前可以删除 [socialIdentityProvider](../resources/socialidentityprovider.md) 资源。
+在从 identityProviderBase 派生的提供程序类型中，当前可以在 Azure AD 中删除[socialIdentityProvider](../resources/socialidentityprovider.md)资源。 在 Azure AD B2C 中，此操作当前可以删除[socialIdentityProvider](../resources/socialidentityprovider.md)或[appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md)资源。
 
 ## <a name="permissions"></a>权限
 
@@ -27,7 +27,7 @@ ms.locfileid: "59105305"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）|IdentityProvider.ReadWrite.All|
 |委派（Microsoft 个人帐户）| 不支持。|
-|应用程序|IdentityProvider.ReadWrite.All|
+|Application|IdentityProvider.ReadWrite.All|
 
 工作或学校帐户需要属于以下角色之一：
 

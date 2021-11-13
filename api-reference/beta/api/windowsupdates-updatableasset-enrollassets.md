@@ -2,15 +2,15 @@
 title: updatableAsset： enrollAssets
 description: 在部署服务的更新管理中注册 updatableAsset 资源。
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: e83dd02ded297cde0e80b535a9d4fcb01ed45ae6
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 7ae0848507f6d46edfea6d7faf47d4083eed43a1
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241238"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60891086"
 ---
 # <a name="updatableasset-enrollassets"></a>updatableAsset： enrollAssets
 命名空间：microsoft.graph.windowsUpdates
@@ -21,7 +21,7 @@ ms.locfileid: "52241238"
 
 可以在更新管理中注册[azureADDevice](../resources/windowsupdates-azureaddevice.md)资源，但不能在更新管理中注册[updatableAssetGroup。](../resources/windowsupdates-updatableassetgroup.md)
 
-在更新管理中注册 Azure AD 设备会自动创建 **azureADDevice** 对象（如果该对象不存在）。
+在更新Azure AD注册设备将自动创建 **azureADDevice** 对象（如果该对象不存在）。
 
 您还可以使用 [enrollAssetsById 方法](windowsupdates-updatableasset-enrollassetsbyid.md) 注册资产。
 
@@ -32,7 +32,7 @@ ms.locfileid: "52241238"
 |:---|:---|
 |委派（工作或学校帐户）|WindowsUpdates.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|WindowsUpdates.ReadWrite.All|
+|Application|WindowsUpdates.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -55,9 +55,9 @@ POST /admin/windows/updates/updatableAssets/enrollAssets
 
 下表显示了可用于此操作的参数。
 
-|参数|类型|说明|
+|参数|类型|描述|
 |:---|:---|:---|
-|updateCategory|microsoft.graph.windowsUpdates.updateCategory|要管理的服务的更新类别。 支持 **updateCategory** 值的子集。 可能的值是 `feature` ：。|
+|updateCategory|microsoft.graph.windowsUpdates.updateCategory|要管理的服务的更新类别。 支持 **updateCategory** 值的子集。 可取值为：`feature`、`unknownFutureValue`。|
 |assets|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) 集合|要通过服务注册更新管理的 **updatableAsset** 资源列表，用于给定 **updateCategory**。|
 
 ## <a name="response"></a>响应

@@ -2,15 +2,15 @@
 title: expeditedQualityUpdateReference 资源类型
 description: 表示Windows 10质量更新内容以加快更新。
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: 685f65d8c5661cd4c8308ed712ab3fddedbae51d
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: c3313483305613cf684b066f2ba9569676974b23
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067877"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890820"
 ---
 # <a name="expeditedqualityupdatereference-resource-type"></a>expeditedQualityUpdateReference 资源类型
 
@@ -25,10 +25,10 @@ ms.locfileid: "52067877"
 继承自 [qualityUpdateReference](../resources/windowsupdates-qualityupdatereference.md)。
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
-|classification|microsoft.graph.windowsUpdates.qualityUpdateClassification|指定所引用内容的分类。 支持 **qualityUpdateClassification 值的子集**。 默认值为 `security`。 可能的值是 `security` ：。 继承自 [qualityUpdateReference](../resources/windowsupdates-qualityupdatereference.md)。|
-|equivalentContent|microsoft.graph.windowsUpdates.equivalentContentOption|指定要视为等效内容的其他内容。 支持 **equivalentContentOption 值的子集**。 默认值为 `latestSecurity`。 可能的值是 `latestSecurity` ：。|
+|classification|microsoft.graph.windowsUpdates.qualityUpdateClassification|指定所引用内容的分类。 支持 **qualityUpdateClassification 值的子集**。 默认值为 `security`。 可取值为：`security`、`unknownFutureValue`。 继承自 [qualityUpdateReference](../resources/windowsupdates-qualityupdatereference.md)。|
+|equivalentContent|microsoft.graph.windowsUpdates.equivalentContentOption|指定要视为等效内容的其他内容。 支持 **equivalentContentOption 值的子集**。 默认值为 `latestSecurity`。 可取值为：`latestSecurity`、`unknownFutureValue`。|
 |releaseDateTime|DateTimeOffset|按给定分类的发布日期指定质量更新 (即指定日期发布的最后一个) 。 任何具有在 **releaseDateTime** 之前发布的更新的设备都将收到快速的质量更新。 继承自 [qualityUpdateReference](../resources/windowsupdates-qualityupdatereference.md)。|
 
 ## <a name="relationships"></a>关系

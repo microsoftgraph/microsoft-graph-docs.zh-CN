@@ -2,15 +2,15 @@
 title: updatableAsset：unenrollAssets
 description: 从部署服务的更新管理中注销 updatableAsset 资源。
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 52f509c7086faea453c06ed3b9500e6fb65211e7
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: f2bd14810181f2e804bf3309402c104a33bc9447
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53442850"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890841"
 ---
 # <a name="updatableasset-unenrollassets"></a>updatableAsset：unenrollAssets
 命名空间：microsoft.graph.windowsUpdates
@@ -28,7 +28,7 @@ ms.locfileid: "53442850"
 |:---|:---|
 |委派（工作或学校帐户）|WindowsUpdates.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|WindowsUpdates.ReadWrite.All|
+|Application|WindowsUpdates.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -51,9 +51,9 @@ POST /admin/windows/updates/updatableAssets/unenrollAssets
 
 下表显示了可用于此操作的参数。
 
-|参数|类型|说明|
+|参数|类型|描述|
 |:---|:---|:---|
-|updateCategory|microsoft.graph.windowsUpdates.updateCategory|要停止管理的服务的更新类别。 支持 **updateCategory** 值的子集。 可能的值是 `feature` ：。|
+|updateCategory|microsoft.graph.windowsUpdates.updateCategory|要停止管理的服务的更新类别。 支持 **updateCategory** 值的子集。 可取值为：`feature`、`unknownFutureValue`。|
 |assets|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) 集合|要从服务的更新管理中注销的 **updatableAsset** 资源列表，用于给定 **updateCategory**。|
 
 

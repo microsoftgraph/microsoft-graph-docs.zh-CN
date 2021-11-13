@@ -5,21 +5,21 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: b83620f6b8dc54f13d776ca22ec6f6650d6285fe
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: aceff3245b2a4789b3b1059b551245197f6684c6
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59045763"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890127"
 ---
 # <a name="list-identityproviders"></a>列出 identityProvider
 命名空间：microsoft.graph
 
 获取为租户配置的、派生自 [identityProviderBase](../resources/identityproviderbase.md)的标识提供程序资源的集合。
 
-对于 Azure AD 租户，提供程序可以是 [socialIdentityProvider](../resources/socialidentityprovider.md) 或 [builtinIdentityProvider](../resources/builtinidentityprovider.md) 对象。
+对于Azure AD，提供程序可以是[socialIdentityProviders](../resources/socialidentityprovider.md)或[builtinIdentityProviders](../resources/builtinidentityprovider.md)对象。
 
-对于 Azure AD B2C，提供程序可以是 [socialIdentityProvider](../resources/socialidentityprovider.md) 对象。
+对于 Azure AD B2C，提供程序可以是[socialIdentityProvider](../resources/socialidentityprovider.md)或[appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md)对象。
 
 ## <a name="permissions"></a>权限
 
@@ -29,7 +29,7 @@ ms.locfileid: "59045763"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）|IdentityProvider.Read.All、IdentityProvider.ReadWrite.All|
 |委派（Microsoft 个人帐户）| 不支持。|
-|应用程序|IdentityProvider.Read.All、IdentityProvider.ReadWrite.All|
+|Application|IdentityProvider.Read.All、IdentityProvider.ReadWrite.All|
 
 工作或学校帐户需要属于以下角色之一：
 
@@ -57,13 +57,13 @@ GET /identity/identityProviders
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在 Azure AD 租户的响应正文中返回 响应代码和 `200 OK` [socialIdentityProvider](../resources/socialidentityprovider.md) 和/或 [builtinIdentityProvider](../resources/builtinidentityprovider.md) 对象集合。
+如果成功，此方法在 Azure AD 租户的响应正文中返回 响应代码和 `200 OK` [socialIdentityProvider](../resources/socialidentityprovider.md)或[builtinIdentityProvider](../resources/builtinidentityprovider.md)对象集合。
 
-对于 Azure AD B2C 租户，此方法在响应正文中返回 响应代码和 `200 OK` [socialIdentityProvider](../resources/socialidentityprovider.md) 对象集合。
+对于 Azure AD B2C 租户，此方法在响应正文中返回 响应代码和 `200 OK` [socialIdentityProvider](../resources/socialidentityprovider.md)或[appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md)对象集合。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-list-all-identity-provider-resources-configured-in-an-azure-ad-tenant"></a>示例 1：列出在 Azure AD 租户中配置的所有标识提供程序资源
+### <a name="example-1-list-all-identity-provider-resources-configured-in-an-azure-ad-tenant"></a>示例 1：列出在租户中配置的所有标识Azure AD资源
 
 #### <a name="request"></a>请求
 下面展示了示例请求。
@@ -134,7 +134,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-list-all-identity-provider-resources-configured-in-an-azure-ad-b2c-tenant"></a>示例 2：列出在 Azure AD B2C 租户中配置的所有标识提供程序资源
+### <a name="example-2-list-all-identity-provider-resources-configured-in-an-azure-ad-b2c-tenant"></a>示例 2：列出在 B2C 租户中Azure AD的所有标识提供程序资源
 
 #### <a name="request"></a>请求
 下面展示了示例请求。
@@ -175,6 +175,15 @@ Content-type: application/json
             "identityProviderType": "LinkedIn",
             "clientId": "866xc0qtyy00ih",
             "clientSecret": "******"
+        },
+{
+            "@odata.type": "#microsoft.graph.appleManagedIdentityProvider",
+            "id": "Apple-Managed-OIDC",
+            "displayName": "Sign in with Apple",
+            "developerId": "UBF8T346G9",
+            "serviceId": "com.microsoft.aad.b2c.iuyt.client",
+            "keyId": "99P6DD87C4",
+            "certificateData": "******"
         }
     ]
 }

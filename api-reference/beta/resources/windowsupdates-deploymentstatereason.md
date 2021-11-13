@@ -2,15 +2,15 @@
 title: deploymentStateReason 资源类型
 description: 特定部署状态的原因。
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: 19a5063cd4f103b0f065311118bc5d8ac97a3c7a
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 54240d057734d17df3e0df3a270d1aab00022586
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067977"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890449"
 ---
 # <a name="deploymentstatereason-resource-type"></a>deploymentStateReason 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "52067977"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|值|microsoft.graph.windowsUpdates.deploymentStateReasonValue|指定部署状态的原因。 可取值为：`scheduledByOfferWindow`、`offeringByRequest`、`pausedByRequest`、`pausedByMonitoring`。 只读。|
+|值|microsoft.graph.windowsUpdates.deploymentStateReasonValue|指定部署状态的原因。 可能的值是：`scheduledByOfferWindow`、`offeringByRequest`、`pausedByRequest`、`pausedByMonitoring`。 请注意，必须使用此可变化枚举中的 (标头) 获取以下 `Prefer: include-unknown-enum-members` [值](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) `faultedByContentOutdated` ： 。 只读。|
 
 ## <a name="relationships"></a>关系
 无。

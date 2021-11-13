@@ -1,16 +1,16 @@
 ---
 title: 添加成员
-description: 使用此 API 将用户或 (组的成员) 添加到管理单元。
+description: 使用此 API 将用户或 (组的成员) 管理单元。
 author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 6b71dcfb57167d4b4391ebd93fc52ee165aaa675
-ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
+ms.openlocfilehash: 6ae0b7d1f4451f736ffcc60efacf909156330bab
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60780476"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890244"
 ---
 # <a name="add-a-member"></a>添加成员
 
@@ -18,7 +18,7 @@ ms.locfileid: "60780476"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用此 API 将用户或 (组) 添加到管理单元，或在管理单元中创建新组。 可以在 [管理](/graph/api/resources/groups-overview) 单元内创建所有组类型。
+使用此 API 将用户或 (组的成员) 添加到管理单元，或在管理单元中创建新组。 可以在 [管理](/graph/api/resources/groups-overview) 单元内创建所有组类型。
 
 **注意：** 目前，一次只能向管理单元添加一个成员。
 
@@ -30,7 +30,7 @@ ms.locfileid: "60780476"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | AdministrativeUnit.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | AdministrativeUnit.ReadWrite.All |
+|Application | AdministrativeUnit.ReadWrite.All |
 
 ### <a name="permissions-to-create-a-new-group"></a>创建新组的权限
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -64,7 +64,7 @@ POST /administrativeUnits/{id}/members
 在请求正文中，提供 `id` 要 [添加的用户](../resources/user.md)、  [组](../resources/group.md)或 [directoryObject](../resources/directoryobject.md) 的 。
 
 ### <a name="creating-a-new-group"></a>创建新组
-下表显示了在管理 [单元中创建](../resources/group.md) 组时要指定的组资源的属性。 
+下表显示了在管理单元 [中创建组](../resources/group.md) 时要指定的组资源的属性。 
 
 | 属性 | 类型 | 说明|
 |:---------------|:--------|:----------|
@@ -80,7 +80,7 @@ POST /administrativeUnits/{id}/members
 
 ## <a name="response"></a>响应
 
-如果成功，使用 (添加现有) `$ref` 将返回 `204 No Content` 响应代码。 它不会在响应正文中返回任何内容。 
+如果成功，使用 (添加现有对象) `$ref` 返回 `204 No Content` 响应代码。 它不会在响应正文中返回任何内容。 
 
 当在未 (组) 时，此方法在响应正文中返回 响应代码和 `$ref` `201 Created` [group](../resources/group.md) 对象。 该响应仅包括组的默认属性。
 
@@ -91,6 +91,8 @@ POST /administrativeUnits/{id}/members
 #### <a name="request"></a>请求
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_administrativeunits_members_ref"
@@ -103,12 +105,30 @@ Content-type: application/json
   "@odata.id":"https://graph.microsoft.com/beta/groups/{id}"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/post-administrativeunits-members-ref-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/post-administrativeunits-members-ref-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/post-administrativeunits-members-ref-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/post-administrativeunits-members-ref-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 在请求正文中， `id` 提供 [要添加](../resources/user.md) 的用户或 [组](../resources/group.md) 对象的 。
 
 #### <a name="response"></a>响应
-下面介绍响应示例。
+下面展示了示例响应。
  
 <!-- {
   "blockType": "response",
@@ -125,6 +145,8 @@ HTTP/1.1 204 No Content
 #### <a name="request"></a>请求
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_administrativeunits_members"
@@ -146,6 +168,24 @@ Content-length: 244
   "securityEnabled": false
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/post-administrativeunits-members-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/post-administrativeunits-members-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/post-administrativeunits-members-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/post-administrativeunits-members-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 在请求正文中，提供要添加的 [group](../resources/group.md) 对象的属性。

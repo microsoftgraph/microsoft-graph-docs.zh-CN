@@ -5,12 +5,12 @@ author: sharad-sharma-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 50be0c9d90e502c73baa6f4dc91174bbc8b2be73
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 453dfe770bf64bd02e6d3e401aebf683820e4c3a
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60937355"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890541"
 ---
 # <a name="list-submissions"></a>列出提交
 
@@ -20,14 +20,14 @@ ms.locfileid: "60937355"
 
 教师或具有应用程序权限的应用程序可以获取所有提交，而学生只能获取与其关联的提交。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|应用程序 | EduAssignments.ReadBasic.All、EduAssignments.ReadWriteBasic.All、EduAssignments.Read.All、EduAssignments.ReadWrite.All | 
+|Application | EduAssignments.ReadBasic.All、EduAssignments.ReadWriteBasic.All、EduAssignments.Read.All、EduAssignments.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +40,7 @@ GET /education/classes/{id}/assignments/{id}/submissions
 
 以下是此方法的 `$expand` 可用选项：、、和 `outcomes` `resources` `submittedResources` `*` ，其中包括之前的所有选项。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
@@ -100,6 +100,7 @@ GET https://graph.microsoft.com/v1.0/education/classes/f4a941ff-9da6-4707-ba5b-0
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 873
 
 {
     "value": [

@@ -2,15 +2,15 @@
 title: updateManagementEnrollment 资源类型
 description: 表示通过特定更新类别的服务注册到管理中。
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: 1d00bc152d5fc3b7b4be267cd3ea56fab52b8b38
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 8d780894e90a1f6eec748a9f62f486b39d3c6cfb
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067298"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890183"
 ---
 # <a name="updatemanagementenrollment-resource-type"></a>updateManagementEnrollment 资源类型
 
@@ -23,9 +23,9 @@ ms.locfileid: "52067298"
 继承自 [updatableAssetEnrollment](../resources/windowsupdates-updatableassetenrollment.md)。
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
-|updateCategory|microsoft.graph.windowsUpdates.updateCategory|服务管理的更新类别。 支持 **updateCategory** 值的子集。 可能的值是 `feature` ：。|
+|updateCategory|microsoft.graph.windowsUpdates.updateCategory|服务管理的更新类别。 支持 **updateCategory** 值的子集。 可取值为：`feature`、`unknownFutureValue`。|
 
 ## <a name="relationships"></a>关系
 无。

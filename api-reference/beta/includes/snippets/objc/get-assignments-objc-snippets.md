@@ -1,18 +1,18 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 1b982936ad0571da14975c88a18ce5569f0f874ff7ce7e580645d8eb3134eb6d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 92c136deb1feed75e0331e83ab15ca7649f54455
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57161665"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890979"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/privilegedRoles/{id}/assignments"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/education/classes/{id}/assignments"]]];
 [urlRequest setHTTPMethod:@"GET"];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
@@ -20,7 +20,7 @@ MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest
 
         NSError *jsonError = nil;
         MSCollection *collection = [[MSCollection alloc] initWithData:data error:&jsonError];
-        MSGraphPrivilegedRoleAssignment *privilegedRoleAssignment = [[MSGraphPrivilegedRoleAssignment alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
+        MSGraphEducationAssignment *educationAssignment = [[MSGraphEducationAssignment alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
 
 }];
 

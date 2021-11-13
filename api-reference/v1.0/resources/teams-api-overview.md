@@ -1,20 +1,18 @@
 ---
 title: 将 Microsoft Graph API 与 Microsoft Teams 结合使用
 description: Microsoft Teams 是 Microsoft 365 中基于聊天的工作区，可提供对特定于团队的日历、文件、OneNote 笔记、规划器计划等对象的内置访问权限。
-localization_priority: Priority
+ms.localizationpriority: high
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: 764b659d16c197fca4d4398ca7b73ad4fad4e59f
-ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
+ms.openlocfilehash: 4bd125c401847a36271edebe6a6432343bd1f5f3
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58384490"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60891135"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>将 Microsoft Graph API 与 Microsoft Teams 结合使用
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Microsoft Teams 是 Microsoft 365 中基于聊天的工作区，可提供对特定于团队的日历、文件、OneNote 笔记、规划器计划、排班计划等对象的内置访问权限。
 
@@ -22,7 +20,7 @@ Microsoft Teams 是 Microsoft 365 中基于聊天的工作区，可提供对特�
 
 | 资源 | 方法 |
 |:---------------|:--------|
-|[team](../resources/team.md)| [列出你的团队](../api/user-list-joinedteams.md)、[列出所有团队](/graph/teams-list-all-teams)、[创建](../api/team-put-teams.md)、[读取](../api/team-get.md)、[更新](../api/team-update.md)、[删除](../api/group-delete.md)、[克隆](../api/team-clone.md)、[归档](../api/team-archive.md)[取消归档](../api/team-unarchive.md) |
+|[团队](../resources/team.md)| [列出你的团队](../api/user-list-joinedteams.md)、[列出所有团队](/graph/teams-list-all-teams)、[创建](../api/team-put-teams.md)、[读取](../api/team-get.md)、[更新](../api/team-update.md)、[删除](../api/group-delete.md)、[克隆](../api/team-clone.md)、[归档](../api/team-archive.md)[取消归档](../api/team-unarchive.md) |
 |[组](../resources/group.md)| [添加成员](../api/group-post-members.md)、 [移除成员](../api/group-delete-members.md)、[添加所有者](../api/group-post-owners.md)、 [移除所有者](../api/group-delete-owners.md)、[获取文件](drive.md)、[获取笔记本](../resources/notebook.md)、[获取计划](plannergroup.md)、[获取日历](event.md) |
 |[频道](../resources/channel.md)|[列出](../api/channel-list.md)、[创建](../api/channel-post.md)、[读取](../api/channel-get.md)、[更新](../api/channel-patch.md)、[删除](../api/channel-delete.md)|
 |[teamsTab](../resources/teamstab.md) |[列出](../api/channel-list-tabs.md)、[创建](../api/channel-post-tabs.md)、[读取](../api/channel-get-tabs.md)、[更新](../api/channel-patch-tabs.md)、[删除](../api/channel-delete-tabs.md) |
@@ -70,30 +68,10 @@ Microsoft Teams 的已测试性能和容量限制将记录在 [Microsoft Teams �
 
 | 用例      | 谓词      | URL |
 | ------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [添加成员](../api/team-post-members.md) | POST      | /teams/{id}/members  |
-| [删除成员](../api/team-delete-members.md)    | DELETE    | /teams/{id}/members/{userId} |
-| [更新成员角色](../api/team-update-members.md) | PATCH | /teams/{id}/members/{userId} |
-| [更新团队](../api/team-update.md)  | PATCH     | /teams/{id} |
-
-在添加和移除成员和所有者时，请勿在 ID 两边添加大括号 { }。
-
-| 速度 | 语法 |
-| ------ | ----- |
-| 快速 | `https://graph.microsoft.com/beta/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/members/48d31887-5fad-4d73-a9f5-3c356e68a038/$ref` |
-| 慢速 | `https://graph.microsoft.com/beta/groups/{02bd9fd6-8f93-4758-87c3-1fb73740a315}/members/{48d31887-5fad-4d73-a9f5-3c356e68a038}/$ref` |
-
-同样，如果 URL 或有效负载中的 `userId` 显示为 UPN 而不是 GUID，则性能会变慢。
-
-| 速度 | 语法 |
-| ------ | ----- |
-| 快速 | 48d31887-5fad-4d73-a9f5-3c356e68a038 |
-| 慢速 | john@example.com |
-
-当采用较慢的路径时，如果当前团队成员或所有者登录到 Microsoft Teams 应用程序/网站，则更改将在一小时内反映出来。
-如果这些用户都未登录到 Microsoft Teams 应用程序/网站，则更改将在其中一个用户登录后一小时内反映出来。
-
-> [!Note]
-> 租户来宾始终通过慢速路径进行处理。
+| [添加成员](../api/team-post-members.md) | POST      | /teams/{team-id}/members  |
+| [删除成员](../api/team-delete-members.md)    | DELETE    | /teams/{team-id}/members/{membership-id} |
+| [更新成员角色](../api/team-update-members.md) | PATCH | /teams/{team-id}/members/{membership-id} |
+| [更新团队](../api/team-update.md)  | PATCH     | /teams/{team-id} |
 
 ## <a name="polling-requirements"></a>轮询要求
 

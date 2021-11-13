@@ -2,15 +2,15 @@
 title: teamsAppUpgradedEventMessageDetail 资源类型
 description: 表示有关 teamsApp 升级的事件消息的详细信息。
 author: RamjotSingh
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 4bca8bbb7c218333d72cb290e508b352fd977f2d
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 1ab9353c2d64073b21ebc7551ac30a8dad6d8525
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53535705"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890568"
 ---
 # <a name="teamsappupgradedeventmessagedetail-resource-type"></a>teamsAppUpgradedEventMessageDetail 资源类型
 
@@ -18,18 +18,18 @@ ms.locfileid: "53535705"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示有关 teamsApp 升级的事件消息的详细信息。
-当 teamsApp 在频道、聊天或团队中升级时，将生成此消息。
+表示有关 **teamsApp** 升级的事件消息的详细信息。
+当 **teamsApp** 在频道、聊天或团队中升级时，将生成此消息。
 
 
 继承自 [eventMessageDetail](../resources/eventmessagedetail.md)。
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |initiator|[identitySet](../resources/identityset.md)|事件的发起人。|
-|teamsAppDisplayName|String|teamsApp 的显示名称。|
-|teamsAppId|String|teamsApp 的唯一标识符。|
+|teamsAppDisplayName|String|teamsApp 的 **显示名称**。|
+|teamsAppId|String|teamsApp 的唯一 **标识符**。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

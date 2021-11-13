@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: af7ed08b408ea6b0eb0cfad59b2302431a2f2b59
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 16a6a104806fc74b4e293bb094de7749dfc89373
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60943001"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890712"
 ---
 # <a name="list-class-assignments"></a>列出课程分配
 
@@ -20,7 +20,7 @@ ms.locfileid: "60943001"
 
 教师或使用应用程序权限执行的应用程序可以看到课程的所有作业对象。 学生只能看到分配给他们的作业。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "60943001"
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
 | 委派（工作或学校帐户）     | EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。                                                                                         |
-| 应用程序                            | EduAssignments.ReadBasic.All、EduAssignments.ReadWriteBasic.All、EduAssignments.Read.All、EduAssignments.ReadWrite.All |
+| Application                            | EduAssignments.ReadBasic.All、EduAssignments.ReadWriteBasic.All、EduAssignments.Read.All、EduAssignments.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -42,7 +42,7 @@ GET /education/classes/{id}/assignments
 
 以下是此方法的 `$expand` 可用选项：、 `categories` 和 `resources` `rubric` `submissions` `*` ，其中包括之前的所有选项。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 标头        | 值                     |
 | :------------ | :------------------------ |
@@ -109,6 +109,7 @@ GET https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 344
 
 {
   "value": [
@@ -194,7 +195,7 @@ GET https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6
 
 #### <a name="response"></a>响应
 
-下面是响应的一个示例，其中包括每个工作分配的资源列表。 
+下面是一个响应示例，其中包括每个工作分配的资源列表。 
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 

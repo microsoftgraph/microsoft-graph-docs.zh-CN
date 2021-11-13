@@ -2,15 +2,15 @@
 title: updatableAsset：unenrollAssetsById
 description: 从部署服务的更新管理中注销相同类型的 UpdatableAsset 资源。
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 72a3e97aee449953204225d40fee236126bddaa1
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: f741172cc9922483aa55ea47791d033150bd78f8
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52240690"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890414"
 ---
 # <a name="updatableasset-unenrollassetsbyid"></a>updatableAsset：unenrollAssetsById
 命名空间：microsoft.graph.windowsUpdates
@@ -28,7 +28,7 @@ ms.locfileid: "52240690"
 |:---|:---|
 |委派（工作或学校帐户）|WindowsUpdates.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|WindowsUpdates.ReadWrite.All|
+|Application|WindowsUpdates.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -51,11 +51,11 @@ POST /admin/windows/updates/updatableAssets/unenrollAssetsById
 
 下表显示了可用于此操作的参数。
 
-|参数|类型|说明|
+|参数|类型|描述|
 |:---|:---|:---|
-|updateCategory|microsoft.graph.windowsUpdates.updateCategory|要停止管理的服务的更新类别。 支持 **updateCategory** 值的子集。 可能的值是 `feature` ：。|
-|memberEntityType|字符串|**updatableAsset 资源的完整** 类型。 可能的值是 `#microsoft.graph.windowsUpdates.azureADDevice` ：。|
-|ids|String collection|与 **updatableAsset** 资源对应的标识符列表，用于注销给定 **updateCategory** 的服务的更新管理。|
+|updateCategory|microsoft.graph.windowsUpdates.updateCategory|要停止管理的服务的更新类别。 支持 **updateCategory** 值的子集。 可取值为：`feature`、`unknownFutureValue`。|
+|memberEntityType|String|**updatableAsset 资源的完整** 类型。 可能的值是 `#microsoft.graph.windowsUpdates.azureADDevice` ：。|
+|ids|String collection|与 **updatableAsset** 资源相对应的标识符列表，用于注销给定 **updateCategory** 的服务的更新管理。|
 
 ## <a name="response"></a>响应
 

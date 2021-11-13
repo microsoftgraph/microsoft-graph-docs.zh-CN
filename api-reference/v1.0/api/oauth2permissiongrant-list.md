@@ -1,18 +1,18 @@
 ---
-title: 列出 oAuth2PermissionGrants
+title: '列出 oAuth2PermissionGrants (委派的权限授予) '
 description: 检索表示委派权限授予的 oauth2PermissionGrant 对象的列表。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: e51ec987567b63797d325492902d8a8edfbef928
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 63b96796732d73f841e4d6f7b874e80a9a614bdd
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59767148"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60891170"
 ---
-# <a name="list-oauth2permissiongrants"></a>List oauth2PermissionGrants
+# <a name="list-oauth2permissiongrants-delegated-permission-grants"></a>列出 oauth2PermissionGrants (委派权限授予) 
 
 命名空间：microsoft.graph
 
@@ -92,6 +92,8 @@ GET https://graph.microsoft.com/v1.0/oauth2PermissionGrants
 
 ### <a name="response"></a>响应
 
+下面展示了示例响应。
+
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
@@ -104,19 +106,29 @@ GET https://graph.microsoft.com/v1.0/oauth2PermissionGrants
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 259
 
 {
-  "value": [
-    {
-      "id": "id-value",
-      "clientId": "clientId-value",
-      "consentType": "consentType-value",
-      "principalId": "principalId-value",
-      "resourceId": "resourceId-value",
-      "scope": "scope-value"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#oauth2PermissionGrants",
+    "value": [
+        {
+            "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/oauth2PermissionGrants/AVs6JuUDjkCFV7q2gd8QTPimBBgj5iBFj0C6GwwRxC0",
+            "clientId": "263a5b01-03e5-408e-8557-bab681df104c",
+            "consentType": "AllPrincipals",
+            "id": "AVs6JuUDjkCFV7q2gd8QTPimBBgj5iBFj0C6GwwRxC0",
+            "principalId": null,
+            "resourceId": "1804a6f8-e623-4520-8f40-ba1b0c11c42d",
+            "scope": "User.Read Group.ReadWrite.All"
+        },
+        {
+            "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/oauth2PermissionGrants/AVs6JuUDjkCFV7q2gd8QTOQDNpSH5-lPk9HjD3Sarjk",
+            "clientId": "263a5b01-03e5-408e-8557-bab681df104c",
+            "consentType": "AllPrincipals",
+            "id": "AVs6JuUDjkCFV7q2gd8QTOQDNpSH5-lPk9HjD3Sarjk",
+            "principalId": null,
+            "resourceId": "943603e4-e787-4fe9-93d1-e30f749aae39",
+            "scope": "Tasks.ReadWrite Files.ReadWrite.All Files.ReadWrite Contacts.ReadWrite Calendars.ReadWrite Mail.ReadWrite Directory.AccessAsUser.All Directory.ReadWrite.All Group.ReadWrite.All Group.Read.All User.ReadWrite Mail.ReadWrite.Shared Mail.Send.Shared Calendars.ReadWrite.Shared Contacts.ReadWrite.Shared Tasks.ReadWrite.Shared Sites.ReadWrite.All Files.ReadWrite.AppFolder Files.ReadWrite.Selected Notes.ReadWrite Notes.ReadWrite.All MailboxSettings.ReadWrite DeviceManagementManagedDevices.PrivilegedOperations.All DeviceManagementManagedDevices.ReadWrite.All DeviceManagementRBAC.ReadWrite.All DeviceManagementApps.ReadWrite.All DeviceManagementConfiguration.ReadWrite.All openid profile Directory.Read.All User.Read.All User.ReadWrite.All ChannelMember.ReadWrite.All DeviceManagementServiceConfiguration.ReadWrite.All"
+        }
+    ]
 }
 ```
 

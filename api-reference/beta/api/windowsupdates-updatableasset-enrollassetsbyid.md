@@ -2,15 +2,15 @@
 title: updatableAsset： enrollAssetsById
 description: 在部署服务更新管理中注册相同类型的 updatableAsset 资源。
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 127817e3623b86854f8c69812c385a25aee323f4
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: cededf7c8d555f65a85d975a9a809a59c3180895
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241168"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60891079"
 ---
 # <a name="updatableasset-enrollassetsbyid"></a>updatableAsset： enrollAssetsById
 命名空间：microsoft.graph.windowsUpdates
@@ -28,7 +28,7 @@ ms.locfileid: "52241168"
 |:---|:---|
 |委派（工作或学校帐户）|WindowsUpdates.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|WindowsUpdates.ReadWrite.All|
+|Application|WindowsUpdates.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -51,11 +51,11 @@ POST /admin/windows/updates/updatableAssets/enrollAssetsById
 
 下表显示了可用于此操作的参数。
 
-|参数|类型|说明|
+|参数|类型|描述|
 |:---|:---|:---|
-|updateCategory|microsoft.graph.windowsUpdates.updateCategory|要管理的服务的更新类别。 支持 **updateCategory** 值的子集。 可能的值是 `feature` ：。|
-|memberEntityType|字符串|**updatableAsset 资源的完整** 类型。 可能的值是 `#microsoft.graph.windowsUpdates.azureADDevice` ：。|
-|ids|String collection|与 **updatableAsset** 资源相对应的标识符列表，这些资源由服务针对给定 **updateCategory** 注册更新管理。|
+|updateCategory|microsoft.graph.windowsUpdates.updateCategory|要管理的服务的更新类别。 支持 **updateCategory** 值的子集。 可取值为：`feature`、`unknownFutureValue`。|
+|memberEntityType|String|**updatableAsset 资源的完整** 类型。 可能的值是 `#microsoft.graph.windowsUpdates.azureADDevice` ：。|
+|ids|String collection|与 **updatableAsset** 资源相对应的标识符列表，这些资源由服务注册为给定 **updateCategory** 的更新管理。|
 
 ## <a name="response"></a>响应
 

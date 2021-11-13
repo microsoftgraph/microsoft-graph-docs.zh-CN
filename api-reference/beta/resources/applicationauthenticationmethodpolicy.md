@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: madansr7
 ms.prod: identity-and-sign-in
 doc_type: conceptualPageType
-ms.openlocfilehash: 400408b1122feab3a10d951facb0fc40df938052
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: c9b9fd8ac70e8d00563ff2c96eb15e56eeae706d
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688258"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890372"
 ---
 # <a name="azure-ad-application-authentication-methods-api-overview-preview"></a>Azure AD应用程序身份验证方法 API 概述 (预览) 
 
@@ -32,13 +32,13 @@ ms.locfileid: "60688258"
 租户默认策略是始终存在的单个对象，默认情况下处于禁用状态。 它由 [tenantAppManagementPolicy](tenantappmanagementpolicy.md) 资源定义，并强制实施对应用程序和服务主体对象的限制。 它包含以下两个属性：
 
 - **applicationRestrictions** 允许将租户拥有的应用程序 (应用程序对象) 。
-- **servicePrincipalRestrictions** 允许从另一个租户设置目标 (服务主体对象。
+- **servicePrincipalRestrictions** 允许从另一个租户设置 (服务主体对象。
 
 这些属性允许组织锁定源自租户的应用，或提升从租户边界外预配的应用的质量栏。
 
 ## <a name="app-management-policy-for-applications-and-service-principals"></a>应用程序和服务主体的应用管理策略
 
-应用管理策略在 [appManagementPolicy](appmanagementpolicy.md) 资源中定义，其中包含一组策略，这些策略具有不同的限制或强制执行日期与租户默认策略中定义的日期不同。 可以将其中一个策略分配给应用程序或服务主体，将其从租户默认策略中排除。
+应用管理策略在 [appManagementPolicy](appmanagementpolicy.md) 资源中定义，其中包含一组策略，这些策略具有与租户默认策略中定义的不同限制或强制执行日期。 可以将其中一个策略分配给应用程序或服务主体，将其从租户默认策略中排除。
 
 当租户默认策略和应用管理策略同时存在时，应用管理策略优先，分配的应用程序或服务主体不会从租户默认策略继承。 只能将一个策略分配给应用程序或服务主体。
 
@@ -55,7 +55,10 @@ ms.locfileid: "60688258"
 | passwordLifetime | 强制实施密码密码的最长生存期范围。   | 对于在 01/01/2015 之后创建的应用程序，将所有新密码密码限制为最多 30 天。 |
 | symmetricKeyAddition | 限制应用程序上的对称密钥。 | 在 01/01/2019 或之后创建的应用程序上阻止新的对称密钥。 |
 | symmetricKeyLifetime | 强制执行对称密钥的最长生存期范围。   | 对于在 01/01/2019 之后创建的应用程序，将所有新的对称密钥限制为最多 30 天。 |
-| asymmetricKeyLifetime | 对非对称密钥和证书颁发机构强制执行 (生存期) 。   | 对于在 01/01/2019 之后创建的应用程序，将所有新的非对称密钥密钥最长限制为 30 天。 |
+| asymmetricKeyLifetime | 强制对非对称密钥和证书颁发 (最长) 。   | 对于在 01/01/2019 之后创建的应用程序，将所有新的非对称密钥密钥最长限制为 30 天。 |
+
+> [!Note]
+> 所有生存期限制都用 ISO-8601 持续时间格式表示 (例如：P4DT12H30M5S) 。
 
 ### <a name="single-vs-multi-tenant-apps"></a>单租户应用与多租户应用
 

@@ -1,28 +1,28 @@
 ---
-title: 创建 oAuth2PermissionGrant
-description: 创建一个 oAuth2PermissionGrant 对象，该对象代表委派的权限授予。
-localization_priority: Normal
+title: '创建 oAuth2PermissionGrant (委派权限授予) '
+description: 创建表示委派权限授予的 oAuth2PermissionGrant 对象。
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: e97cadee5e116104beb158a9977ab02c159eb43b
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 7132a4825ae2747b28789e88ad1e13fdb9429afc
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50447914"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890143"
 ---
-# <a name="create-a-delegated-permission-grant-oauth2permissiongrant"></a>通过 oAuth2PermissionGrant (创建委派) 
+# <a name="create-oauth2permissiongrant-a-delegated-permission-grant"></a>创建 oAuth2PermissionGrant (委派权限授予) 
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建委派权限授予。 委派的权限授予由 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象表示。
+创建由 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象表示的委派权限授予。
 
-委派权限授予授权客户端服务主体 (代表客户端应用程序) 访问代表 API) 的资源服务主体 (（代表登录用户）访问已授予的委派权限限制的访问级别。
+委派权限授予授权表示客户端应用程序) 的客户端服务主体 (代表已登录用户的 API) 访问代表 API) 的资源服务主体 (，从而获取已授予的委派权限所限制的访问级别。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -50,6 +50,18 @@ POST /oauth2PermissionGrants
 
 在请求正文中，提供 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象的 JSON 表示形式。
 
+下表显示创建 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md)时所需的属性。
+
+| 属性 | 类型 | 说明 |
+|:---------------|:--------|:----------|
+| clientId | 字符串 | **授权** 在访问 API [](../resources/serviceprincipal.md)时代表已登录用户操作的应用程序的客户端服务主体的 ID。 必需。  |
+| consentType | String | 指示是否向客户端应用程序授予了模拟所有用户或仅模拟特定用户的授权。 *AllPrincipals* 指示对模拟所有用户的授权。 *主体* 指示对模拟特定用户的授权。 管理员可以代表所有用户授予同意。 在某些情况下，可能会授权非管理员用户代表自己同意某些委派权限。 必需。  |
+| principalId | String | 当 **consentType** [为 Principal](../resources/user.md)时，客户端有权访问资源的用户的 **ID。**  如果 **consentType** 为 *AllPrincipals，* 则此值为 null。 当 **consentType** 为 Principal 时 *是必需的*。 |
+| resourceId | String | **有权访问** 的资源 [服务主体](../resources/serviceprincipal.md)的 ID。 这标识了客户端有权尝试代表登录用户调用的 API。 |
+| scope | String | 委派权限声明值的列表（以空格分隔）应包含在 API (访问令牌) 。 例如，`openid User.Read GroupMember.Read.All`。 每个声明值都应与资源服务主体 的 **publishedPermissionScopes** 属性中列出的 API 定义的委派权限之一的值 [字段匹配](../resources/serviceprincipal.md)。 |
+| startTime | DateTimeOffset | 目前，将忽略开始时间值，但需要一个值。 必需。 |
+| expiryTime | DateTimeOffset | 目前，将忽略结束时间值，但需要一个值。 必需。 |
+
 ## <a name="response"></a>响应
 
 如果成功，此方法在响应正文中返回 200 系列响应代码和新的 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象。
@@ -67,7 +79,6 @@ POST /oauth2PermissionGrants
 ```http
 POST https://graph.microsoft.com/beta/oauth2PermissionGrants
 Content-Type: application/json
-Content-Length: 30
 
 {
   "clientId": "clientId-value",
