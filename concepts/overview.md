@@ -4,12 +4,12 @@ description: Microsoft Graph 是 Microsoft 365 中数据和智能的网关。Mic
 author: angelgolfer-ms
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 4f96d2d867fc7eaf02da50d500af5acf5bc30b42
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0b6e65ca1c09b85120faabe11e288f9d512d1935
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139070"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936122"
 ---
 # <a name="overview-of-microsoft-graph"></a>Microsoft Graph 概述
 
@@ -21,7 +21,7 @@ Microsoft Graph 是 Microsoft 365 中通往数据和智能的网关。 它提供
 在 Microsoft 365 平台中，这三大组件让数据访问和传输变得轻松：
 
 - Microsoft Graph API 提供单一终结点 `https://graph.microsoft.com`，以访问 **Microsoft 云**（包括 Microsoft 365、Windows 10 和企业移动性 + 安全性）中以人为中心的丰富的数据和见解。 你可使用 REST API 或 SDK 来访问终结点并构建支持横跨生产力、协作、教育、人员和工作场所智能等 Microsoft 365 场景的应用。 Microsoft Graph 还包含一组功能强大的服务，可管理用户和设备标识、访问、合规性和安全性，并帮助保护组织防止数据泄露或丢失。
-- [Microsoft Graph连接器](/microsoftsearch/connectors-overview) 按传入方向工作， **将 Microsoft 云外部的数据传送到** Microsoft Graph服务和应用程序，以增强 microsoft 搜索等Microsoft 365体验。 许多常用数据源中均存在连接器，如 Box、Google Drive、Jira 和 Salesforce。
+- [Microsoft Graph连接器](connecting-external-content-connectors-overview.md) 按传入方向工作， **将 Microsoft 云外部的数据传送到** Microsoft Graph服务和应用程序，以增强 microsoft 搜索等Microsoft 365体验。 许多常用数据源中均存在连接器，如 Box、Google Drive、Jira 和 Salesforce。
 - [Microsoft Graph 数据连接](#access-microsoft-graph-data-at-scale-using-microsoft-graph-data-connect) 提供了一组工具，可以更加轻松地安全和可扩展地 **向热门 Azure 数据存储传递 Microsoft Graph 数据**。 缓存数据充当 Azure 开发工具的数据源，可用于构建智能应用程序。
 
 Microsoft Graph API、连接器和 Data Connect 共同为Microsoft 365平台提供支持。 借助可访问 Microsoft Graph 数据和其他数据集的能力，你可以获取见解和分析、扩展 Microsoft 365 体验和构建唯一而智能的应用程序。
@@ -48,7 +48,7 @@ Microsoft Graph 公开了 REST API 和客户端库，它们可访问以下 Micro
 - 查看你的下一场会议，提供与会者职务和所属经理、其正在处理的最新文档相关信息，以及其正在与之协作的人员等与会者个人资料信息，帮助你为该会议做好准备。
 - 扫描你的日历，并为下一次团队会议提出最佳时间建议。
 - 从 OneDrive 中的 Excel 文件获取最新销售预测图表，让你可以实时更新趋势预测，这一切通过手机就可以实现。
-- 订阅日历更改、当你在会议上花费太长时间时发出警报，还可以根据与会者和你的相关度，为可能错过或委派的会议提供建议。
+- 订阅日历中的更改、当你在会议上花费太长时间时向你发送警报，并且还可以根据与会者和你的相关度，为可能错过或委派的会议提供建议。
 - 帮助你整理手机上的个人和工作信息；例如，对应当归到个人 OneDrive 的照片和应当归到 OneDrive for Business 的业务收据进行分类。
 - 分析大量 Microsoft 365 数据，让决策者们能将宝贵的见解转化成能提升业务生产力的时间分配和协作模式中。
 - 将自定义业务数据引入到 Microsoft Graph，编制相关索引，使其可与来自 Microsoft 365 服务的数据一起供用户搜索。
@@ -86,7 +86,7 @@ Microsoft Graph 不断向开发人员开放 Microsoft 365 平台，且始终仅�
 |   获取我的日历事件 | [`https://graph.microsoft.com/v1.0/me/events`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fevents&version=v1.0) |
 |   获取我的经理 | [`https://graph.microsoft.com/v1.0/me/manager`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fmanager&version=v1.0) |
 |   获取上一个修改文件 foo.txt 的用户 | [`https://graph.microsoft.com/v1.0/me/drive/root/children/foo.txt/lastModifiedByUser`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fdrive%2Froot%2Fchildren%2Ffoo.txt%2FlastModifiedByUser&version=v1.0) |
-|   获取我隶属的 Microsoft 365 组| [`https://graph.microsoft.com/v1.0/me/memberOf/$/microsoft.graph.group?$filter=groupTypes/any(a:a%20eq%20'unified')`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2FmemberOf%2F%24%2Fmicrosoft.graph.group%3F%24filter%3DgroupTypes%2Fany(a%3Aa%2520eq%2520'unified')&version=v1.0) |
+|   获取我所属的 Microsoft 365 组| [`https://graph.microsoft.com/v1.0/me/memberOf/$/microsoft.graph.group?$filter=groupTypes/any(a:a%20eq%20'unified')`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2FmemberOf%2F%24%2Fmicrosoft.graph.group%3F%24filter%3DgroupTypes%2Fany(a%3Aa%2520eq%2520'unified')&version=v1.0) |
 |   获取我组织中的用户  | [`https://graph.microsoft.com/v1.0/users`](https://developer.microsoft.com/graph/graph-explorer/?request=users&version=v1.0) |
 |   获取我组织中的组 | [`https://graph.microsoft.com/v1.0/groups`](https://developer.microsoft.com/graph/graph-explorer/?request=groups&version=v1.0) |
 |   获取与我相关的人员 | [`https://graph.microsoft.com/v1.0/me/people`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fpeople&version=beta)  |
@@ -95,7 +95,7 @@ Microsoft Graph 不断向开发人员开放 Microsoft 365 平台，且始终仅�
 
 ## <a name="bring-data-from-an-external-content-source-to-microsoft-graph"></a>将外部内容源中的数据引入Microsoft Graph
 
-使用 Microsoft Graph _连接器_ 将 Microsoft 云外部的数据引入 Microsoft Graph。 此类数据的示例可以是组织的人力资源数据库或产品目录，它们在本地托管或在公有云或私有云中托管。 
+使用 Microsoft Graph _连接器_ 将 Microsoft 云外部的数据引入 Microsoft Graph。 此类数据的示例可以是组织的人力资源数据库或产品目录，它们在本地托管或在公有云或私有云中托管。
 
 Microsoft Graph 连接器创建与外部数据源的连接、对数据编制索引并将其作为外部自定义项和文件进行存储。 编制索引后，这些项将显示在 Microsoft 搜索中，并适用于使用 [Microsoft 搜索 API](search-concept-overview.md) 的应用。
 

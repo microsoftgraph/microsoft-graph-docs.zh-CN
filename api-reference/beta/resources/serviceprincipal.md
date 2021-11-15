@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 6f84f0199df62524a7dc90f75ad0309ea493a002
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 6cf324d438225c5cff7c23dd8931e49b58c65ccc
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696874"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939145"
 ---
 # <a name="serviceprincipal-resource-type"></a>servicePrincipal 资源类型
 
@@ -32,7 +32,7 @@ ms.locfileid: "58696874"
 |[更新 servicePrincipal](../api/serviceprincipal-update.md) | [servicePrincipal](serviceprincipal.md)  |更新 servicePrincipal 对象。 |
 |[删除 servicePrincipal](../api/serviceprincipal-delete.md) | 无 |删除 servicePrincipal 对象。|
 |[List createdObjects](../api/serviceprincipal-list-createdobjects.md) |[directoryObject](directoryobject.md) 集合| 获取 createdObject 对象集合。|
-|[List ownedObjects](../api/serviceprincipal-list-ownedobjects.md) |[directoryObject](directoryobject.md) collection| 获取 ownedObject 对象集合。|
+|[List ownedObjects](../api/serviceprincipal-list-ownedobjects.md) |[directoryObject](directoryobject.md) 集合| 获取 ownedObject 对象集合。|
 |[delta](../api/serviceprincipal-delta.md)|servicePrincipal 集合| 获取服务主体的增量更改。 |
 |**应用角色分配**| | |
 |[列出 appRoleAssignments](../api/serviceprincipal-list-approleassignments.md) |[appRoleAssignment](approleassignment.md) 集合| 获取已分配到此服务主体的应用角色。|
@@ -102,12 +102,12 @@ ms.locfileid: "58696874"
 |appRoles|[appRole](approle.md) 集合|该服务主体代表的应用程序公开的角色。 有关详细信息，请参阅 [应用程序](application.md)实体上的 **appRoles** 属性定义。 不可为 null。 |
 | deletedDateTime | DateTimeOffset | 删除服务主体的日期和时间。只读。 |
 | 说明 | 字符串 | 免费文本字段，提供面向内部最终用户的服务主体说明。 "MyApps ["](/azure/active-directory/user-help/my-apps-portal-end-user-access) 等最终用户门户将在此字段中显示应用程序说明。 最大允许大小为 1024 个字符。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`startsWith`）和 `$search`。|
-| disabledByMicrosoftStatus | String | 指定 Microsoft 是否已禁用已注册应用程序。 可能值是：`null` (默认值)、`NotDisabled` 和 `DisabledDueToViolationOfServicesAgreement` (原因可能包括可疑、滥用或恶意活动，或违反 Microsoft 服务协议)。 <br><br> 支持 `$filter`（`eq`、`ne`、`NOT`）。  |
-|displayName|String|服务主体的显示名称。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`、`startsWith`）、`$search` 和 `$orderBy`。 |
+| disabledByMicrosoftStatus | String | 指定 Microsoft 是否已禁用已注册的应用程序。可能的值为：`null`（默认值）、`NotDisabled` 和 `DisabledDueToViolationOfServicesAgreement`（原因可能包括可疑、滥用或恶意活动或违反 Microsoft 服务协议）。 <br><br> 支持 `$filter`（`eq`、`ne`、`NOT`）。  |
+|displayName|String|服务主体的显示名称。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）、`$search` 和 `$orderBy`。 |
 |errorUrl|String|已弃用。 请勿使用。|
 |homepage|String|应用程序的主页或登录页面。|
-| id | String | 服务主体的唯一标识符。 继承自 [directoryObject](directoryobject.md)。 键。 不可为 null。 只读。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `in`）。 |
-| info | [informationalUrl](informationalurl.md) | 所获取应用程序的基本配置文件信息，如应用的市场营销、支持、服务条款和隐私声明 URL。 服务条款和隐私声明通过用户同意体验展示给用户。 有关详细信息，请参阅[如何：为已注册的 Azure AD 应用添加服务条款和隐私声明](/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement)。 <br><br>支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`）。  |
+| id | String | 服务主体的唯一标识符。 继承自 [directoryObject](directoryobject.md)。 键。 不可为空。 只读。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `in`）。 |
+| info | [informationalUrl](informationalurl.md) | 所获取应用程序的基本配置文件信息，如应用的市场营销、支持、服务条款和隐私声明 URL。 服务条款和隐私声明通过用户同意体验展示给用户。 有关详细信息，请参阅[如何：为已注册的 Azure AD 应用添加服务条款和隐私声明](/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement)。 <br><br>支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le` 和 `null` 值上的 `eq`）。  |
 |keyCredentials|[keyCredential](keycredential.md) 集合|与服务帐户关联的密钥凭据集合。 不可为 null。 支持 `$filter`（`eq`、`NOT`、`ge`、`le`）。            |
 |loginUrl|String|指定服务提供商将用户重定向到 Azure AD 进行身份验证的 URL。 Azure AD 使用 URL 从 Microsoft 365 或Azure AD My Apps 启动应用程序。 该选项为空时，Azure AD 将对使用“[基于 SAML 的单一登录](/azure/active-directory/manage-apps/what-is-single-sign-on#saml-sso)”配置的应用程序执行 IdP 启动的登录。 用户从 Microsoft 365、Azure AD My Apps 或Azure AD SSO URL 启动应用程序。|
 |logoutUrl|String| 指定 Microsoft 授权服务使用 OpenId Connect [正向通道](https://openid.net/specs/openid-connect-frontchannel-1_0.html)、[反向通道](https://openid.net/specs/openid-connect-backchannel-1_0.html)或 SAML 注销协议注销用户时所使用的 URL。|

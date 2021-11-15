@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 428fc62f15a6e7a761c6645822924a038db32e43
-ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
+ms.openlocfilehash: 7a749db776de8c289bba0f103c67bea94e77e7c7
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60256065"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945703"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -144,56 +144,56 @@ ms.locfileid: "60256065"
 |assignedPlans|[assignedPlan](assignedplan.md) collection|分配给该用户的计划。只读。不可为 null。<br><br>仅在 `$select` 上返回。 支持 `$filter`（`eq` 和 `NOT`）。 |
 |birthday|DateTimeOffset|用户的生日。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 <br><br>仅在 `$select` 上返回。|
 |businessPhones|字符串集合|用户的电话号码。注意：虽然这是字符串集合，但是只能为该属性设置一个号码。本地目录同步的用户为只读。<br><br>默认情况下返回。 支持 `$filter`（`eq` 和 `NOT`）。|
-|城市|String|用户所在的城市。最大长度为 128 个字符。 <br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。|
-|companyName | String | 与用户关联的公司名称。 此属性可用于描述外部用户所属的公司。 公司名称的最大长度为 64 个字符。<br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。|
+|城市|String|用户所在的城市。最大长度为 128 个字符。 <br><br>仅在 `$select` 上返回。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。|
+|companyName | String | 与用户关联的公司名称。 此属性可用于描述外部用户所属的公司。 公司名称的最大长度为 64 个字符。<br><br>仅在 `$select` 上返回。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。|
 |consentProvidedForMinor|[consentProvidedForMinor](#consentprovidedforminor-values)|设置是否已获得未成年人的同意。 允许的值：`null`、`granted`、`denied` 和 `notRequired`。 请参阅[法定年龄组属性定义](#legal-age-group-property-definitions)以了解详细信息。 <br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`和 `in`）。|
-|country|String|用户所在的国家/地区，例如 `US` 或 `UK`。最大长度为 128 个字符。 <br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。|
-|createdDateTime | DateTimeOffset |用户对象的创建日期。只读<br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `NOT` 、 `ge`、 `le`和 `in` 运算符）。|
-| creationType | 字符串 | 指示是否通过以下方法之一创建用户帐户： <br/> <ul><li>作为常规学校或工作帐户（`null`）。 <li>作为外部帐户（`Invitation`）。 <li>作为 Azure Active Directory B2C 租户的本地帐户（`LocalAccount`）。 <li>通过使用电子邮件验证由内部用户（`EmailVerified`）进行自助注册。 <li>通过由外部用户通过属于用户流的链接注册的自助注册（`SelfServiceSignUp`）。</ul> <br>只读。<br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`和 `in`）。 |
-|deletedDateTime| DateTimeOffset | 删除用户的日期和时间。 <br><br>仅在 `$select` 上返回。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le` 和 `in`）。 |
-|部门|String|用户工作部门的名称。 最大长度为 64 个字符。 <br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `NOT` 、 `ge`、 `le`和 `in` 运算符）。|
-|displayName|字符串|用户通讯簿中显示的名称。通常是用户名字、中间名首字母和姓氏的组合。此属性在创建用户时是必需的，并且在更新过程中不能清除。最大长度为 256 个字符。 <br><br>默认情况下返回。 支持 `$filter` （`eq`、 `ne`、 `NOT` 、 `ge`、 `le`、 `in`、 `startsWith`、 `$orderBy`和 `$search`。|
+|country|String|用户所在的国家/地区，例如 `US` 或 `UK`。最大长度为 128 个字符。 <br><br>仅在 `$select` 上返回。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。|
+|createdDateTime | DateTimeOffset |用户对象的创建日期。只读<br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `NOT` 、 `ge`、 `le`、 `in`）。|
+| creationType | 字符串 | 指示是否通过以下方法之一创建用户帐户： <br/> <ul><li>作为常规学校或工作帐户（`null`）。 <li>作为外部帐户（`Invitation`）。 <li>作为 Azure Active Directory B2C 租户的本地帐户（`LocalAccount`）。 <li>通过使用电子邮件验证由内部用户（`EmailVerified`）进行自助注册。 <li>通过由外部用户通过属于用户流的链接注册的自助注册（`SelfServiceSignUp`）。</ul> <br>只读。<br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `in`）。 |
+|deletedDateTime| DateTimeOffset | 删除用户的日期和时间。 <br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`）。 |
+|department|String|用户工作部门的名称。 最大长度为 64 个字符。 <br><br>仅在 `$select` 上返回。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in` 和 `null` 值上的 `eq`）。|
+|displayName|字符串|用户通讯簿中显示的名称。通常是用户名字、中间名首字母和姓氏的组合。此属性在创建用户时是必需的，并且在更新过程中不能清除。最大长度为 256 个字符。 <br><br>默认情况下返回。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）、`$orderBy` 和 `$search`。|
 | employeeHireDate | DateTimeOffset | 聘请用户或用户将开始工作（如是未来招聘）的日期和时间。 <br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `NOT` 、 `ge`、 `le`、 `in`）。|
-| employeeId | String | 由组织分配给该用户的员工标识符。 <br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `NOT` 、 `ge`、 `le`、 `in`、 `startsWith`）。|
+| employeeId | String | 由组织分配给该用户的员工标识符。 <br><br>仅在 `$select` 上返回。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。|
 |employeeOrgData|[employeeOrgData](employeeorgdata.md) |表示与用户相关联的组织数据（例如，分部和 costCenter）。 <br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `NOT` 、 `ge`、 `le`、 `in`）。|
 | employeeType | String | 捕获企业员工类型。 例如，`Employee`、`Contractor`、`Consultant` 或 `Vendor`。 仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `NOT` 、 `ge`、 `le`、 `in`、 `startsWith`）。|
 |externalUserState|String|对于使用[邀请 API](../api/invitation-post.md) 邀请到租户的外部用户，此属性表示受邀用户的邀请状态。 对于受邀用户，状态可以是 `PendingAcceptance` 或 `Accepted`，而对于所有其他用户，状态为 `null`。 <br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `NOT` 、 `in`）。|
 |externalUserStateChangeDateTime|DateTimeOffset|显示最近一次修改 **externalUserState** 属性的时间戳。 <br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `NOT` 、 `in`）。|
-|faxNumber|String|用户的传真号。 <br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `NOT` 、 `ge`、 `le`、 `in`、 `startsWith`）。|
-|givenName|String|用户的名。 最大长度为 64 个字符。 <br><br>默认情况下返回。 支持 `$filter` （`eq`、 `ne`、 `NOT` 、 `ge`、 `le`、 `in`、 `startsWith`）。|
+|faxNumber|String|用户的传真号。 <br><br>仅在 `$select` 上返回。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。|
+|givenName|String|用户的名。 最大长度为 64 个字符。 <br><br>默认情况下返回。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。|
 | hireDate | DateTimeOffset | 用户的雇佣日期。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。<br><br>仅在 `$select` 上返回。 <br> **注意：** 此属性特定于 SharePoint Online。建议使用本机器 **employeeHireDate** 属性通过 Microsoft Graph API 设置和更新雇佣日期值。 |
 |id|String|用户的唯一标识符。 应视为不透明的标识符。 继承自 [directoryObject](directoryobject.md)。 键。 不可为 null。 只读。 <br><br>默认返回。支持 `$filter`（`eq`、`ne`、`NOT`、`in`）。|
-|identities|[objectIdentity](objectIdentity.md) 集合| 表示可用于登录此用户帐户的标识。 标识可由 Microsoft （也称为本地帐户）、组织或社交身份提供商（如 Facebook、Google 和 Microsoft）提供，并绑定到用户帐户。 可能包含具有相同 **signInType** 值的多个项目。 <br><br>仅在 `$select` 返回。仅在 **signInType** 不为 `userPrincipalName` 的位置支持 `$filter` (`eq`)。|
+|identities|[objectIdentity](objectIdentity.md) 集合| 表示可用于登录此用户帐户的标识。 标识可由 Microsoft （也称为本地帐户）、组织或社交身份提供商（如 Facebook、Google 和 Microsoft）提供，并绑定到用户帐户。 可能包含具有相同 **signInType** 值的多个项目。 <br><br>仅在 `$select` 上返回。 仅当 **signInType** 不是 `userPrincipalName` 时，支持包括在 `null` 值上的 `$filter`（`eq`）。|
 |imAddresses|String collection|用户的即时消息 IP 语音 (VOIP) 会话初始协议 (SIP) 地址。只读。<br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `NOT`、 `ge`、 `le`、 `startsWith`）。|
 |interests|String collection|用户介绍自身兴趣的列表。 <br><br>仅在 `$select` 上返回。|
 |isResourceAccount|布尔| 请勿使用 – 保留以备今后使用。|
-|jobTitle|String|用户的职务。 最大长度为 128 个字符。 <br><br>默认情况下返回。 支持 `$filter` （`eq`、 `ne`、 `NOT` 、 `ge`、 `le`、 `in`、 `startsWith`）。|
+|jobTitle|String|用户的职务。 最大长度为 128 个字符。 <br><br>默认情况下返回。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。|
 |lastPasswordChangeDateTime| DateTimeOffset | 此 Azure AD 用户上次更改密码或创建密码的时间，以最新操作的日期为准。日期和时间信息使用 ISO 8601 格式，并且始终以 UTC 时间标识。例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。<br><br>仅在 `$select` 上返回。|
 |legalAgeGroupClassification|[legalAgeGroupClassification](#legalagegroupclassification-values)| 由企业应用程序用于确定用户的法定年龄组。 此属性为只读，并且基于 **ageGroup** 和 **consentProvidedForMinor** 属性进行计算。 允许的值：`null`、`minorWithOutParentalConsent`、`minorWithParentalConsent`、`minorNoParentalConsentRequired`、`notAdult` 和 `adult`。 请参阅[法定年龄组属性定义](#legal-age-group-property-definitions)以了解详细信息。 <br><br>仅在 `$select` 上返回。|
 |licenseAssignmentStates|[licenseAssignmentState](licenseassignmentstate.md) 集合|此用户的许可证分配状态。只读。<br><br>仅在 `$select` 上返回。|
-|mail|String|用户的 SMTP 地址，例如， `jeff@contoso.onmicrosoft.com`。<br>对此属性进行更改也将更新用户的 **proxyAddresses** 集合，以便将该值包含为 SMTP 地址。 对于 Azure AD B2C 帐户，此属性最多可以使用唯一的 SMTP 地址更新 10 次。 此属性不能包含突出字符。<br><br>默认情况下返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`、 `endsWith`）。|
+|mail|String|用户的 SMTP 地址，例如， `jeff@contoso.onmicrosoft.com`。<br>对此属性进行更改也将更新用户的 **proxyAddresses** 集合，以便将该值包含为 SMTP 地址。 对于 Azure AD B2C 帐户，此属性最多可以使用唯一的 SMTP 地址更新 10 次。 此属性不能包含突出字符。<br><br>默认情况下返回。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`、`startsWith`、`endsWith` 和 `null` 值上的 `eq`）。|
 |mailboxSettings|[mailboxSettings](mailboxsettings.md)|已登录用户的主邮箱的设置。可以[获取](../api/user-get-mailboxsettings.md)或[更新](../api/user-update-mailboxsettings.md)用于向传入邮件发送自动答复、区域设置和时区的设置。<br><br>仅在 `$select` 上返回。|
-|mailNickname|String|用户的邮件别名。创建用户时必须指定此属性。最大长度为 64 个字符。 <br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。|
-|mobilePhone|String|用户的主要移动电话号码。 本地目录同步的用户为只读。 最大长度为 64 个字符。 <br><br>默认情况下返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。 |
+|mailNickname|String|用户的邮件别名。创建用户时必须指定此属性。最大长度为 64 个字符。 <br><br>仅在 `$select` 上返回。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。|
+|mobilePhone|String|用户的主要移动电话号码。 本地目录同步的用户为只读。 最大长度为 64 个字符。 <br><br>默认情况下返回。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。 |
 |mySite|String|用户个人网站的 URL。 <br><br>仅在 `$select` 上返回。|
-|officeLocation|String|用户公司地点的办公室位置。 <br><br>默认返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。|
+|officeLocation|String|用户公司地点的办公室位置。 <br><br>默认返回。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。|
 |onPremisesDistinguishedName|String| 包含本地 Active Directory `distinguished name` 或 `DN`。仅针对通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 的客户填充该属性。只读。<br><br>仅在 `$select` 上返回。 |
 |onPremisesDomainName|String| 包含本地 `domainFQDN`，也称为 dnsDomainName。仅为正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 的客户填充该属性。只读。<br><br>仅在 `$select` 上返回。|
-|onPremisesExtensionAttributes|[onPremisesExtensionAttributes](onpremisesextensionattributes.md)|包含用户的 extensionAttributes 1-15。 请注意，单个扩展属性既不可选择，也不可筛选。 对于 `onPremisesSyncEnabled` 用户，这组属性集的授权来源是本地，并且为只读。 对于只使用云的用户（其中 `onPremisesSyncEnabled` 为假），可以在创建或更新期间设置这些属性。 这些扩展属性也称 Exchange 自定义属性 1-15。 <br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `NOT`、 `ge`、 `le`、 `in`）。 |
+|onPremisesExtensionAttributes|[onPremisesExtensionAttributes](onpremisesextensionattributes.md)|包含用户的 extensionAttributes 1-15。 请注意，单个扩展属性既不可选择，也不可筛选。 对于 `onPremisesSyncEnabled` 用户，这组属性集的授权来源是本地，并且为只读。 对于只使用云的用户（其中 `onPremisesSyncEnabled` 为假），可以在创建或更新期间设置这些属性。 这些扩展属性也称 Exchange 自定义属性 1-15。 <br><br>仅在 `$select` 上返回。 支持 `$filter`（`eq`、`NOT`、`ge`、`le`、`in` 和 `null` 值上的 `eq`）。 |
 |onPremisesImmutableId|String|此属性用于将本地 Active Directory 用户帐户关联到他们的 Azure AD 用户对象。如果对用户的 **userPrincipalName** (UPN) 属性使用联盟域，在 Graph 中创建新用户帐户时必须指定此属性。**注意：** 指定该属性时不能使用 **$** 和 **\_** 字符。<br><br>仅在 `$select` 上返回。 支持 `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`)..                            |
 |onPremisesLastSyncDateTime|DateTimeOffset|指示对象最后一次与本地目录同步的时间。例如：`2013-02-16T03:04:54Z`。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。只读。<br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`）。|
 |onPremisesProvisioningErrors|[onPremisesProvisioningError](onpremisesprovisioningerror.md) 集合| 在预配期间使用 Microsoft 同步产品时发生的错误。 <br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `NOT`、 `ge`、 `le`）。|
 |onPremisesSamAccountName|String| 包含从本地目录同步的本地 `samAccountName`。仅为通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 的客户填充该属性。只读。<br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。|
-|onPremisesSecurityIdentifier|String|包含从本地同步到云的用户的本地安全标识符 (SID)。只读。<br><br>仅在 `$select` 上返回。 |
-|onPremisesSyncEnabled|Boolean| 如果此对象从本地目录同步，则为 `true`；如果此对象最初从本地目录同步，但以后不再同步，则为 `false`；如果此对象从未从本地目录同步（默认），则为 `null`。只读。<br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `in`）。|
+|onPremisesSecurityIdentifier|String|包含从本地同步到云的用户的本地安全标识符 (SID)。只读。<br><br>仅在 `$select` 上返回。 仅支持 `null` 值上的 `$filter`（`eq`）。 |
+|onPremisesSyncEnabled|Boolean| 如果此对象从本地目录同步，则为 `true`；如果此对象最初从本地目录同步，但以后不再同步，则为 `false`；如果此对象从未从本地目录同步（默认），则为 `null`。只读。<br><br>仅在 `$select` 上返回。 支持 `$filter`（`eq`、`ne`、`NOT`、`in` 和 `null` 值上的 `eq`）。|
 |onPremisesUserPrincipalName|String| 包含从本地目录同步的本地 `userPrincipalName`。仅为通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 的客户填充该属性。只读。<br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。|
 |otherMails|字符串集合| 用户的其他电子邮件地址列表；例如：`["bob@contoso.com", "Robert@fabrikam.com"]`。 <br>注意：此属性不能包含突出字符。 <br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。|
-|passwordPolicies|String|指定用户的密码策略。此值是一个枚举，其中一个可能的值为 `DisableStrongPassword`，这允许指定比默认策略更弱的密码。也可指定 `DisablePasswordExpiration`。两者可以一起指定，例如：`DisablePasswordExpiration, DisableStrongPassword`。<br><br>只在 `$select` 返回。有关默认密码策略的详细信息，请参阅 [Azure AD 密码策略](/azure/active-directory/authentication/concept-sspr-policy#password-policies-that-only-apply-to-cloud-user-accounts)。支持 `$filter` (`ne`、`NOT`)。|
-|passwordProfile|[passwordProfile](passwordprofile.md)|指定用户的密码配置文件。 配置文件包含用户的密码。 创建用户时此属性是必需的。 配置文件中的密码必须满足 **passwordPolicies** 属性指定的最低要求。 默认情况下，必须使用强密码。 **注意：** 对于 Azure B2C 租户， **forceChangePasswordNextSignIn** 属性应设置为 `false` ，并且应在第一次登录时使用自定义策略和用户流强制重置密码。 请参阅 [首次登录时强制重置](https://github.com/azure-ad-b2c/samples/tree/master/policies/force-password-reset-first-logon)。<br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `in`）。|
+|passwordPolicies|String|指定用户的密码策略。此值是一个枚举，其中一个可能的值为 `DisableStrongPassword`，这允许指定比默认策略更弱的密码。也可指定 `DisablePasswordExpiration`。两者可以一起指定，例如：`DisablePasswordExpiration, DisableStrongPassword`。<br><br>仅在 `$select` 上返回。 有关默认密码策略的详细信息，请参阅 [Azure AD pasword 策略](/azure/active-directory/authentication/concept-sspr-policy#password-policies-that-only-apply-to-cloud-user-accounts)。 支持 `$filter`（`ne`、`NOT` 和 `null` 值上的 `eq`）。|
+|passwordProfile|[passwordProfile](passwordprofile.md)|指定用户的密码配置文件。 配置文件包含用户的密码。 创建用户时此属性是必需的。 配置文件中的密码必须满足 **passwordPolicies** 属性指定的最低要求。 默认情况下，必须使用强密码。 **注意：** 对于 Azure B2C 租户， **forceChangePasswordNextSignIn** 属性应设置为 `false` ，并且应在第一次登录时使用自定义策略和用户流强制重置密码。 请参阅 [首次登录时强制重置](https://github.com/azure-ad-b2c/samples/tree/master/policies/force-password-reset-first-logon)。<br><br>仅在 `$select` 上返回。 支持 `$filter`（`eq`、`ne`、`NOT`、`in` 和 `null` 值上的 `eq`）。|
 |pastProjects|String collection|供用户枚举其过去项目的列表。 <br><br>仅在 `$select` 上返回。|
-|postalCode|String|用户邮政地址的邮政编码。邮政编码特定于用户所在的国家/地区。在美国，此属性包含邮政编码。最大长度为 40 个字符。<br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。|
+|postalCode|String|用户邮政地址的邮政编码。邮政编码特定于用户所在的国家/地区。在美国，此属性包含邮政编码。最大长度为 40 个字符。<br><br>仅在 `$select` 上返回。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。|
 | preferredDataLocation | String | 用户的首选数据位置。 有关详细信息，请参阅 [OneDrive Online 多地理位置](/sharepoint/dev/solution-guidance/multigeo-introduction)。|
-|preferredLanguage|String|用户的首选语言。应遵循 ISO 639-1 代码，例如 `en-US`。 <br><br>默认情况下返回。 支持 `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`)|
+|preferredLanguage|String|用户的首选语言。应遵循 ISO 639-1 代码，例如 `en-US`。 <br><br>默认情况下返回。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）|
 |preferredName|String|用户的首选名称。 <br><br>仅在 `$select` 上返回。|
 |provisionedPlans|[provisionedPlan](provisionedplan.md) 集合|为用户设置的计划。只读。不可为 null。<br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `NOT`、 `ge`、 `le`）。|
 |proxyAddresses|String collection|例如：`["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`。对于 Azure AD B2C 帐户，此属性限制为 10 个唯一地址。只读，不可为 null。<br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `NOT`、 `ge`、 `le`、 `startsWith`）。|
@@ -203,12 +203,12 @@ ms.locfileid: "60256065"
 |showInAddressList|Boolean|如果 Outlook 全局地址列表应包含此用户，则值为 `true`，否则为 `false`。 如果未设置，则将其视为 `true`。 对于通过邀请管理器邀请的用户，此属性将设置为 `false`。 <br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `in`）。|
 |skills|String collection|供用户枚举其技能的列表。 <br><br>仅在 `$select` 上返回。|
 |signInSessionsValidFromDateTime|DateTimeOffset| 在此时间之前发出的任何刷新令牌或会话令牌（会话 Cookie）都是无效的，并且当使用无效的刷新令牌或会话令牌获取委托的访问令牌（用于访问 Microsoft Graph 等 API）时，应用程序将收到错误。  如果发生这种情况，应用程序将需要通过向授权端点发出请求来获取新的刷新令牌。 只读。 使用 [revokeSignInSessions](../api/user-revokesigninsessions.md) 进行重置。 <br><br>仅在 `$select` 上返回。|
-|state|String|用户地址中的省/市/自治区或省。 最大长度为 128 个字符。 <br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。|
-|streetAddress|String|用户公司地点的街道地址。 最大长度为 1024 个字符。 <br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。|
-|surname|String|用户的姓氏。 最大长度为 64 个字符。 <br><br>默认情况下返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。|
-|usageLocation|String|两个字母的国家/地区代码（ISO 标准 3166）。 由于法律要求，将被分配许可证的用户需要检查国家/地区的服务可用性。 示例包括：`US`、`JP`、`GB`。不可为 null。 <br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`）。|
+|state|String|用户地址中的省/市/自治区或省。 最大长度为 128 个字符。 <br><br>仅在 `$select` 上返回。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。|
+|streetAddress|String|用户公司地点的街道地址。 最大长度为 1024 个字符。 <br><br>仅在 `$select` 上返回。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。|
+|surname|String|用户的姓氏。 最大长度为 64 个字符。 <br><br>默认情况下返回。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。|
+|usageLocation|String|两个字母的国家/地区代码（ISO 标准 3166）。 由于法律要求，将被分配许可证的用户需要检查国家/地区的服务可用性。 示例包括：`US`、`JP`、`GB`。不可为 null。 <br><br>仅在 `$select` 上返回。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。|
 |userPrincipalName|String|用户的用户主体名称 (UPN)。UPN 是用户基于 Internet 标准 RFC 822 的 Internet 式登录名。按照惯例，此名称应映射到用户的电子邮件名称。常规格式是 alias@domain，其中，domain 必须位于租户的已验证域集合中。创建用户时此属性是必需的。可从 [组织](organization.md)的 **verifiedDomains** 属性访问租户的已验证域。<br>注意：此属性不能包含突出字符。 <br><br>默认情况下返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`、 `startsWith`、 `endsWith`） 和 `$orderBy`。
-|userType|String|可用于对目录中的用户类型进行分类的字符串值，例如`Member``Guest`。 <br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `in`）。 **注意：** 有关成员和来宾用户权限的详细信息，请参阅 [Azure Active Directory 中的默认用户权限是什么？](/azure/active-directory/fundamentals/users-default-permissions#member-and-guest-users)         |
+|userType|String|可用于对目录中的用户类型进行分类的字符串值，例如`Member``Guest`。 <br><br>仅在 `$select` 上返回。 支持 `$filter`（`eq`、`ne`、`NOT`、`in` 和 `null` 值上的 `eq`）。 **注意：** 有关成员和来宾用户权限的详细信息，请参阅 [Azure Active Directory 中的默认用户权限是什么？](/azure/active-directory/fundamentals/users-default-permissions#member-and-guest-users)         |
 
 ### <a name="legal-age-group-property-definitions"></a>法定年龄组属性定义
 

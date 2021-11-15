@@ -5,20 +5,18 @@ ms.localizationpriority: high
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: af3e8ce6aa70980fbcbb1516f302aebf74d3c7fa
-ms.sourcegitcommit: 8ae180a32dbd5a2b12512aee64699a2c23b8678b
+ms.openlocfilehash: a57a6b8a700bdbc2e81da3d0503e420e3fdaff9c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "60354754"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940516"
 ---
 # <a name="get-photo"></a>获取照片
 
 命名空间：microsoft.graph
 
-获取指定的 [profilePhoto](../resources/profilephoto.md) 或其元数据（profilePhoto 属性）。
-
-> **注意**：在版本 1.0 中，此操作仅支持用户的工作或学校邮箱，不支持个人邮箱。
+获取指定的 [profilePhoto](../resources/profilephoto.md) 或其元数据（**profilePhoto** 属性）。
 
 Microsoft 365 支持以下高清照片尺寸：48x48、64x64、96x96、120x120、240x240、360x360、432x432、504x504 和 648x648。 如果照片存储在 Azure Active Directory 中，可以采用任何尺寸。
 
@@ -53,8 +51,8 @@ Microsoft 365 支持以下高清照片尺寸：48x48、64x64、96x96、120x120�
 |应用程序      |    Contacts.Read、Contacts.ReadWrite           |
 
 > **注意：**  
-> 1. 个人 Microsoft 帐户不支持元数据操作。 
-> 2. 当前在使用应用权限访问组照片方面存在一个 [已知问题](/graph/known-issues#groups)。
+> - 个人 Microsoft 帐户不支持元数据操作。 
+> - 当前在使用应用权限访问组照片方面存在一个 [已知问题](/graph/known-issues#groups)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -103,7 +101,7 @@ GET /groups/{id}/photos/{size}
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
@@ -120,7 +118,7 @@ GET /groups/{id}/photos/{size}
 ## <a name="examples"></a>示例
 
 ### <a name="example-1-get-the-photo-for-the-signed-in-user-in-the-largest-available-size"></a>示例 1：为已登录用户获取最大可用大小的照片
-##### <a name="request"></a>请求
+#### <a name="request"></a>请求
 <!-- {
   "blockType": "ignored"
 }-->
@@ -129,11 +127,11 @@ GET /groups/{id}/photos/{size}
 GET https://graph.microsoft.com/v1.0/me/photo/$value
 ```
 
-##### <a name="response"></a>响应
+#### <a name="response"></a>响应
 包含所请求照片的二进制数据。HTTP 响应代码为 200。
 
 ### <a name="example-2-get-the-48x48-photo-for-the-signed-in-user"></a>示例 2：获取已登录用户的 48x48 照片
-##### <a name="request"></a>请求
+#### <a name="request"></a>请求
 <!-- {
   "blockType": "ignored"
 }-->
@@ -143,11 +141,11 @@ GET https://graph.microsoft.com/v1.0/me/photos/48x48/$value
 Content-Type: image/jpg
 ```
 
-##### <a name="response"></a>响应
+#### <a name="response"></a>响应
 包含所请求的 48x48 照片的二进制数据。HTTP 响应代码为 200。
 
 ### <a name="example-3-get-the-metadata-of-the-user-photo-of-the-signed-in-user"></a>示例 3：获取已登录用户的用户照片的元数据
-##### <a name="request"></a>请求
+#### <a name="request"></a>请求
 <!-- {
   "blockType": "ignored"
 }-->
@@ -156,7 +154,7 @@ Content-Type: image/jpg
 GET https://graph.microsoft.com/v1.0/me/photo
 ```
 
-##### <a name="response"></a>响应
+#### <a name="response"></a>响应
 
 以下响应数据显示照片的元数据。
 
