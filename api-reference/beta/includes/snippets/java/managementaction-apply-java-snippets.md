@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4ae5a237d702e191ff2a6e59936d67a8444ee4f7c28c0396953123fde5c94bea
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9da9250e6eca9b34419e7b5e3e6811bf78ea7390
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57163969"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60980945"
 ---
 ```java
 
@@ -23,6 +23,9 @@ graphClient.tenantRelationships().managedTenants().managementActions("{managemen
         .withTenantId(tenantId)
         .withTenantGroupId(tenantGroupId)
         .withManagementTemplateId(managementTemplateId)
+        .withIncludeAllUsers(null)
+        .withIncludeGroups(null)
+        .withExcludeGroups(null)
         .build())
     .buildRequest()
     .post();

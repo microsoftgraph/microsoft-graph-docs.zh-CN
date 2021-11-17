@@ -5,12 +5,12 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: b373215106daec467660a5ea3eaacc9f7cc4ce04
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c00c56ab5cd88e3ccb82e8267552747632f888fd
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59072952"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60992898"
 ---
 # <a name="get-microsoftauthenticatorauthenticationmethod"></a>获取 microsoftAuthenticatorAuthenticationMethod
 命名空间：microsoft.graph
@@ -41,7 +41,7 @@ ms.locfileid: "59072952"
 * 全局管理员
 * 全局读取者
 * 特权身份验证管理员
-* 身份验证管理员 (只能看到屏蔽的电话号码) 
+* 身份验证管理员 (只能看到已屏蔽) 
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -96,6 +96,10 @@ GET https://graph.microsoft.com/v1.0/users/anirban@contoso.com/authentication/mi
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-microsoftauthenticatorauthenticationmethod-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-microsoftauthenticatorauthenticationmethod-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

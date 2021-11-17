@@ -2,15 +2,15 @@
 title: 更新 identityApiConnector
 description: 更新 identityApiConnector 对象的属性。
 author: nickgmicrosoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: b7383d82f30f76bc97fc9e66dd57c21044a963ca
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 2fa092757ab7cefc033bc5d67b796793f905d810
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51508643"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60986185"
 ---
 # <a name="update-identityapiconnector"></a>更新 identityApiConnector
 
@@ -33,7 +33,7 @@ ms.locfileid: "51508643"
 工作或学校帐户需要属于以下角色之一：
 
 * 全局管理员
-* 外部标识用户流管理员
+* 外部标识用户Flow管理员
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -60,8 +60,8 @@ PATCH /identity/apiConnectors/{identityApiConnectorId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|字符串| API 连接器的名称。 |
-|targetUrl|字符串| 要调用的 API 终结点的 URL。 |
+|displayName|String| API 连接器的名称。 |
+|targetUrl|String| 要调用的 API 终结点的 URL。 |
 |authenticationConfiguration|[apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md)|描述用于调用 API 的身份验证配置详细信息的对象。 仅 [支持基本](../resources/basicauthentication.md) 身份验证 [和 PKCS 12 客户端](../resources/pkcs12certificate.md) 证书。|
 
 ## <a name="response"></a>响应
@@ -70,7 +70,7 @@ PATCH /identity/apiConnectors/{identityApiConnectorId}
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-changing-display-name-targeturl-and-username--password-used-for-basic-authentication"></a>示例 1：更改显示名称身份验证所使用的 &、targetUrl 和 username 密码
+### <a name="example-1-changing-display-name-targeturl-and-username--password-used-for-basic-authentication"></a>示例 1：更改用于显示名称身份验证的 &、targetUrl 和 username 密码
 
 #### <a name="request"></a>请求
 
@@ -113,6 +113,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-identityapiconnector-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-identityapiconnector-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -131,7 +135,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-2-changing-api-connector-to-use-client-certificate-authentication"></a>示例 2：将 API 连接器更改为使用客户端证书身份验证
 
-> **注意：** 这将覆盖之前的任何 authenticationConfiguration 设置。 若要从基本身份验证更改为证书身份验证，请使用此模式。 若要向证书列表中添加其他证书，请使用 [上载客户端证书](../api/identityapiconnector-uploadclientcertificate.md) 方法。 使用此方法时，API 连接器的"Get"或"List"操作将为 `authenticationConfiguration` [microsoft.graph.clientCertificateAuthentication 类型](../resources/clientcertificateauthentication.md)。
+> **注意：** 这将覆盖之前的任何 authenticationConfiguration 设置。 若要从基本身份验证更改为证书身份验证，请使用此模式。 若要向证书列表中添加其他证书，请使用 Upload[客户端证书](../api/identityapiconnector-uploadclientcertificate.md)方法。 使用此方法时，API 连接器的"Get"或"List"操作的类型将为 `authenticationConfiguration` [microsoft.graph.clientCertificateAuthentication](../resources/clientcertificateauthentication.md)。
 
 #### <a name="request"></a>请求
 

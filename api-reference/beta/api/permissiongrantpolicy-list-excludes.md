@@ -1,16 +1,16 @@
 ---
 title: List excludes collection of permissionGrantPolicy
 description: 检索条件集的列表，这些条件集描述权限授予策略中排除权限授予事件的条件。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 482d96de6e4fe7bf71e06a7b8bd2cc1c7f0dee9d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 90bbf50e78d1b0a6f27d0224da4309795b70ec5e
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055419"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60985758"
 ---
 # <a name="list-excludes-collection-of-permissiongrantpolicy"></a>List excludes collection of permissionGrantPolicy
 
@@ -41,7 +41,7 @@ GET /policies/permissionGrantPolicies/{id}/excludes
 
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称           | 说明                |
 |:---------------|:---------------------------|
@@ -59,7 +59,7 @@ GET /policies/permissionGrantPolicies/{id}/excludes
 
 ### <a name="request"></a>请求
 
-下面是请求检索内置权限授予策略的排除条件集的示例 `microsoft-application-admin` 。 此权限授予策略包括所有委派权限，以及除 Microsoft Graph 应用程序权限和 Azure AD 应用程序应用程序权限外的所有应用程序Graph。
+下面是请求检索内置权限授予策略的排除条件集的示例 `microsoft-application-admin` 。 此权限授予策略包括所有委派权限，以及除 Microsoft 应用程序权限之外的所有应用程序权限Graph应用程序权限和 Azure AD Graph。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/policies/permissionGrantPolicies/microsoft-
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/permissiongrantpolicy-get-excludes-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/permissiongrantpolicy-get-excludes-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,16 +1,16 @@
 ---
 title: tiIndicator：deleteTiIndicatorsByExternalId
-description: 在一个 (（) 个请求）中删除多个威胁情报和 TI) 指示器，并且请求包含外部 ID 而不是 ID。
-localization_priority: Normal
+description: 在一个 (（) 个请求）中删除多个威胁情报和 TI 智能指示器，并且请求包含外部 ID 而不是 ID。
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: a163f2c2a362cda42964733bf6639a2138dcb98c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e1800ead9d1c3d84dca491014ab7073c9bee863e
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052661"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60977420"
 ---
 # <a name="tiindicator-deletetiindicatorsbyexternalid"></a>tiIndicator：deleteTiIndicatorsByExternalId
 
@@ -50,7 +50,7 @@ POST /security/tiIndicators/deleteTiIndicatorsByExternalId
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|值|字符串集合| 要 `externalIds` 删除的 **tiIndicator** 对象的集合。 |
+|值|String collection| 要 `externalIds` 删除的 **tiIndicator** 对象的集合。 |
 
 ## <a name="response"></a>响应
 
@@ -96,6 +96,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/tiindicator-deletetiindicatorsbyexternalid-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/tiindicator-deletetiindicatorsbyexternalid-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

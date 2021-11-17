@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: e92ad69bb1bd09811c2b65c35e70e748066fe20309ddce649656731fa1a61a31
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bf2e1b874ccbada9a43ac67aaee7a532d3079a79
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57334085"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60973804"
 ---
 ```csharp
 
@@ -15,7 +15,7 @@ var keyCredential = new KeyCredential
 {
     Type = "AsymmetricX509Cert",
     Usage = "Verify",
-    Key = Encoding.ASCII.GetBytes("MIIDYDCCAki...")
+    Key = Convert.FromBase64String("MIIDYDCCAki...")
 };
 
 PasswordCredential passwordCredential = null;

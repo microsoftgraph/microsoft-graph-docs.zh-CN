@@ -1,22 +1,22 @@
 ---
 title: applicationTemplate：实例化
-description: 将 Azure AD 应用程序库中的应用程序实例添加到目录中。
+description: 将应用程序实例从应用程序Azure AD添加到目录中。
 ms.localizationpriority: medium
 author: luleonpla
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 7935bac29767fee906f03d64a4d05af186a29e20
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 46fe76d14fc1b972cb0ce19222ee7a0343381c37
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59114783"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60974570"
 ---
 # <a name="applicationtemplate-instantiate"></a>applicationTemplate：实例化
 
 命名空间：microsoft.graph
 
-将 Azure AD 应用程序库中的应用程序实例添加到目录中。
+将应用程序实例从应用程序Azure AD添加到目录中。
 
 ## <a name="permissions"></a>权限
 
@@ -93,6 +93,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/applicationtemplate-instantiate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/applicationtemplate-instantiate-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -3,15 +3,15 @@ author: JeremyKelley
 description: 更新 listItem 上的属性。
 ms.date: 09/11/2017
 title: 更新 SharePoint 列表中的记录
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: c46206a77359a6a60aaa4193f1d5ff7395a597d7
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 44f8a8aa93d293c305e156641c14aa33d814bef5
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50942388"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61012024"
 ---
 # <a name="update-an-item-in-a-list"></a>更新列表中的项
 
@@ -78,6 +78,10 @@ Content-Type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-listitem-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-listitem-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

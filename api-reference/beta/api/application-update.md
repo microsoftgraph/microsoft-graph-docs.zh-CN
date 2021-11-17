@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 41b1576dbc30fe01dd6b1f80e9e0d7da202540c7
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 38a56d02e97dae6d813b57d6c6e46e98ace2894a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60939887"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60982791"
 ---
 # <a name="update-application"></a>更新应用程序
 
@@ -23,7 +23,7 @@ ms.locfileid: "60939887"
 > [!IMPORTANT]
 > 不支持使用 PATCH 设置 [**passwordCredential**](../resources/passwordcredential.md)。 使用 [addPassword](./application-addpassword.md) 和 [removePassword](./application-removepassword.md) 方法更新应用程序的密码。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -54,7 +54,7 @@ PATCH /applications/{id}
 | displayName             | String                                                                      | 应用程序的显示名称。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | groupMembershipClaims   | String                                                                      | 配置在 **用户** 或应用程序期望的 OAuth 2.0 访问令牌中颁发的组声明。 要设置此属性，请使用以下有效字符串值之一：<ul><li>`None`</li><li>`SecurityGroup`：对于安全组和Azure Active Directory (Azure AD) 角色</li><li>`All`：该操作可获取登录用户所属的所有安全组、通讯组和 Azure AD 目录角色</li></ul>                                                                                                                       |
 | identifierUris          | String collection                                                           | URI，用于在应用程序的 Azure AD 租户中标识该应用程序；如果应用程序是多租户的，则用于在已验证的自定义域中标识该应用程序。 有关详细信息，请参阅[应用程序对象和服务主体对象](/azure/active-directory/develop/app-objects-and-service-principals)。 需要多值属性筛选器表达式的 *any* 运算符。 不可为 Null。                                                                                                                                                                           |
-| info                    | [informationalUrl](../resources/informationalurl.md)                        | 应用程序的基本个人资料信息，如应用的营销、支持、服务条款和隐私声明 URL。 服务条款和隐私声明通过用户同意体验展示给用户。 有关详细信息，请参阅为已注册的应用添加服务条款和[Azure AD声明](/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement)。                                                                                                                                                 |
+| info                    | [informationalUrl](../resources/informationalurl.md)                        | 应用程序的基本个人资料信息，如应用的营销、支持、服务条款和隐私声明 URL。 服务条款和隐私声明通过用户同意体验展示给用户。 有关详细信息，请参阅为已注册的应用添加服务条款[和Azure AD声明](/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement)。                                                                                                                                                 |
 | isFallbackPublicClient  | Boolean                                                                     | 将回退应用程序类型指定为公共客户端，例如在移动设备上运行的已安装应用程序。 默认值为 `false` ，这意味着回退应用程序类型是机密客户端，如 Web 应用。 在某些情况下，Azure AD无法确定客户端应用程序类型 (例如[ROPC](https://tools.ietf.org/html/rfc6749#section-4.3)流，其中未指定重定向 URI) 。 在这种情况下，Azure AD将基于此属性的值解释应用程序类型。 |
 | keyCredentials          | [keyCredential](../resources/keycredential.md) 集合                   | 与应用程序关联的密钥凭据集合。不可为 Null。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | logo                    | Stream                                                                      | 应用程序的主徽标。不可为 Null。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
@@ -104,6 +104,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-application-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-application-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
