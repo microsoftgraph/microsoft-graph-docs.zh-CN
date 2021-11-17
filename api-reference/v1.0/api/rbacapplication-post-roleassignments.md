@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b19c4cd7ddb50b3337e9c4f89a27ef0f24afa5e7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 591da78a005b720ad5c247e7fd46b4e9706ac99a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59061027"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61006117"
 ---
 # <a name="create-unifiedroleassignment"></a>创建 unifiedRoleAssignment
 
@@ -44,7 +44,7 @@ POST /roleManagement/directory/roleAssignments
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象的 JSON 表示形式。 请求必须具有在由 **directoryScopeId** Azure Active Directory (Azure AD) 中定义的作用域，或 **appScopeId** 指定的特定于应用程序的范围。 Azure AD 范围的示例包括租户 `/` () 、管理单元或应用程序。 有关 appScope 详细信息，请参阅 [appScope](../resources/appscope.md)。
+在请求正文中，提供 [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象的 JSON 表示形式。 请求必须具有在 **directoryScopeId** Azure Active Directory (Azure AD) 中定义的作用域，或 **appScopeId** 指定的特定于应用程序的范围。 租户Azure AD包括租户 `/` () 、管理单元或应用程序。 有关 appScope 详细信息，请参阅 [appScope](../resources/appscope.md)。
 
 下表显示创建 [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象时所需的属性。
 
@@ -61,7 +61,7 @@ POST /roleManagement/directory/roleAssignments
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-create-a-role-assignment-with-a-tenant-wide-scope"></a>示例 1：角色分配范围创建租户范围
+### <a name="example-1-create-a-role-assignment-with-a-tenant-wide-scope"></a>示例 1：创建角色分配范围的范围的租户
 
 #### <a name="request"></a>请求
 
@@ -100,6 +100,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-unifiedroleassignment-from-rbacapplication-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-unifiedroleassignment-from-rbacapplication-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -172,6 +176,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-unifiedroleassignment-over-administrativeunit-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-unifiedroleassignment-over-administrativeunit-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -240,6 +248,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-unifiedroleassignment-over-application-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-unifiedroleassignment-over-application-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 7e7d476c38f8e46c2fd02d2072abb5bd501853aa
-ms.sourcegitcommit: f7956d25472a55af03be83b6ab986a7149a7ac88
+ms.openlocfilehash: 517406d67ba4892b45d9205056a69f553c0cccc7
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2021
-ms.locfileid: "60270349"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60983737"
 ---
 # <a name="create-accesspackageresourcerolescope"></a>创建 accessPackageResourceRoleScope
 
@@ -99,6 +99,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-accesspackageresourcerolescope-from-accesspackage-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-accesspackageresourcerolescope-from-accesspackage-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -134,7 +138,7 @@ Content-type: application/json
 
 以下是对非根范围资源的请求示例。  网站的访问包资源必须已添加到包含此访问包的访问包目录中。
 
-如果从之前请求列出访问包资源获取 [的 accessPackageResourceScope](../resources/accesspackageresourcescope.md)对象将资源作为根作用域 (**isRootScope** 设置为) ，则请求的 [](accesspackagecatalog-list-accesspackageresources.md) `true` **accessPackageResourceScope** 对象中包括 **isRootScope** 属性。
+如果从之前列表访问包资源请求获取的 [accessPackageResourceScope](../resources/accesspackageresourcescope.md)对象将资源作为根作用域 (**isRootScope** 设置为) ，则请求的 [](accesspackagecatalog-list-accesspackageresources.md) `true` **accessPackageResourceScope** 对象中包括 **isRootScope** 属性。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -176,6 +180,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-accesspackageresourcerolescope-from-accesspackage2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-accesspackageresourcerolescope-from-accesspackage2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

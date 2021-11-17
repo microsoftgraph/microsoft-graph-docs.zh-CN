@@ -3,15 +3,15 @@ author: rahmit
 description: 在网站的网站页面列表中创建新的 sitePage。
 ms.date: 05/07/2018
 title: 在网站中新建SharePoint页面
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 3094f5f42a56b5666c9aa0108de1840277ea876a
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 3b6119aaff157ea56f701437829b2aabce032a5d
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53534163"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61014096"
 ---
 # <a name="create-a-page-in-the-site-pages-list-of-a-site"></a>在网站的网站页面列表中创建页面
 
@@ -113,6 +113,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-page-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-page-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -203,7 +207,7 @@ Content-type: application/json
 
 [list]: ../resources/list.md
 [listItem]: ../resources/listitem.md
-[site]: ../resources/site.md
+[网站]: ../resources/site.md
 [sitePage]: ../resources/sitepage.md
 
 <!--

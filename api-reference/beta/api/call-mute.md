@@ -2,15 +2,15 @@
 title: call： mute
 description: 允许应用程序自行静音。
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: c681698b34395fda542a96f6a94941a8e3f25a74
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 2433a091aca6d76ccc5b55cd72255dc7666b6253
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786234"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61024063"
 ---
 # <a name="call-mute"></a>call： mute
 
@@ -26,7 +26,7 @@ ms.locfileid: "52786234"
 
 > **注意：** 此方法仅支持组调用。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
@@ -57,7 +57,7 @@ POST /communications/calls/{id}/mute
 |clientContext|String|客户端上下文。|
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [muteParticipantOperation](../resources/muteParticipantoperation.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [muteParticipantOperation](../resources/muteParticipantoperation.md) 对象。
 
 > **注意：** 此操作返回成功响应后，所有参与者都将收到名单更新
 
@@ -96,6 +96,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/call-mute-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/call-mute-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

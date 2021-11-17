@@ -2,15 +2,15 @@
 title: 删除 userFlowLanguageConfiguration
 description: 从 B2C 用户流中删除 userFlowLanguageConfiguration 对象。
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 3d750145561adefd7532e23ab6cbfc9bff8efe59
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: a0a66d1455eb53871933c647f867165604876a7f
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52546950"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61023538"
 ---
 # <a name="delete-userflowlanguageconfiguration"></a>删除 userFlowLanguageConfiguration
 
@@ -18,7 +18,7 @@ ms.locfileid: "52546950"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从[Azure AD B2C](../resources/b2cidentityuserflow.md)用户流中删除[userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md)对象。
+从[B2C](../resources/b2cidentityuserflow.md)用户流中删除[userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) Azure AD对象。
 
 **注意：** 不能从用户流 [中删除Azure Active Directory语言](../resources/b2xidentityuserflow.md)。
 
@@ -93,6 +93,10 @@ DELETE https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_Customer/lan
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-userflowlanguageconfiguration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-userflowlanguageconfiguration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

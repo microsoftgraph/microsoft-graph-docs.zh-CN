@@ -1,16 +1,16 @@
 ---
 title: servicePrincipal：addTokenSigningCertificate
 description: 将签名证书添加到 servicePrincipal。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: luleonpla
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 01aded24ecce1b15c7bb56b9c5054f887098dc38
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 0b835c493916f1f6216ba87625670538db96904b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787224"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61026317"
 ---
 # <a name="serviceprincipal-addtokensigningcertificate"></a>servicePrincipal：addTokenSigningCertificate
 
@@ -18,9 +18,15 @@ ms.locfileid: "52787224"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建自签名签名证书并返回 [selfSignedCertificate，](../resources/selfsignedcertificate.md)这是生成的证书的公共部分。 自签名签名证书由以下资源组成：使用 = "Sign") 的私钥 ([keyCredential、](../resources/keycredential.md) 使用 = "verify") 的公钥 ([keyCredential](../resources/keycredential.md) 和 [passwordCredential](../resources/passwordcredential.md)。 所有已创建的资源具有相同的 **customKeyIdentifier**。
+创建自签名签名证书并返回 [selfSignedCertificate](../resources/selfsignedcertificate.md) 对象，该对象是生成的证书的公共部分。 自签名签名证书由添加到 [servicePrincipal](../resources/serviceprincipal.md)中的以下对象组成： 
++ [具有下列对象的 keyCredentials](../resources/keycredential.md)对象：
+    + 用法设置为 的私钥对象 `Sign` 。
+    + 用法设置为 **的公钥对象** `Verify` 。
++ [passwordCredentials](../resources/passwordcredential.md)对象。
 
-**passwordCredential** 用于打开 pfx/私钥。 此外，它还与具有相同 **keyId** 的 privateKey 相关联。 证书的主题是一个常量值。 它不受 POST 调用中提供的可选 **displayName** 的影响。 **startDateTime** 设置为使用 操作创建证书的同一时间。 **endDateTime** 可在证书创建后最多三年。
+所有对象具有相同的 **customKeyIdentifier 值**。
+
+**passwordCredential** 用于打开 PFX 文件 (私钥) 。 它和关联的私钥对象具有相同的 **keyId 值**。 创建期间通过 **displayName** 属性设置后，证书的主题将无法更新。 **startDateTime** 设置为使用 操作创建证书的同一时间。 **endDateTime** 可在证书创建后最多三年。
 
 ## <a name="permissions"></a>权限
 
@@ -46,7 +52,7 @@ POST /servicePrincipals/{id}/addTokenSigningCertificate
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 | displayName | string | 密钥的友好名称。  它必须以 `CN=` 开始。|
-| endDateTime | DateTimeOffset |凭据过期的日期和时间。 从证书创建之日起，最多 3 年。 如果未提供，则默认值为自创建时起三年。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示："2014-01-01T00：00：00Z"。|
+| endDateTime | DateTimeOffset |凭据过期的日期和时间。 从证书创建之日起，最多 3 年。 如果未提供，则默认值为自创建时起三年。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。|
 
 ## <a name="response"></a>响应
 
@@ -88,6 +94,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-addtokensigningcertificate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-addtokensigningcertificate-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

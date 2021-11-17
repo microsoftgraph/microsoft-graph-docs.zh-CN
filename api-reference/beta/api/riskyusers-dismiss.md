@@ -2,16 +2,16 @@
 title: 消除 riskyUser
 description: 消除 riskyUser 对象的风险。
 author: cloudhandler
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 ms.date: 03/20/2019
 doc_type: apiPageType
-ms.openlocfilehash: eaf5ce5c0ed05777fa4ccb05a05adf1ed215ac2a
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: eefaf0017736e5ea1122e1d83d31f9927ef39f76
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50960853"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61002728"
 ---
 # <a name="riskyuser-dismiss"></a>riskyUser： dismiss
 
@@ -19,7 +19,7 @@ ms.locfileid: "50960853"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
->**注意：** 使用 riskyUsers API 需要 Azure AD Premium P2 许可证。
+>**注意：** 使用 riskyUsers API 需要Azure AD Premium P2许可证。
 
 消除一个或多个 [riskyUser 对象](../resources/riskyuser.md) 的风险。 此操作将目标用户的风险级别设定为无。 一次呼叫中要消除的最大用户数为 60。
 
@@ -36,7 +36,6 @@ ms.locfileid: "50960853"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /riskyUsers/dismiss
-GET /identityProtection/riskyUsers/dismiss
 ```
 
 
@@ -52,8 +51,8 @@ GET /identityProtection/riskyUsers/dismiss
 
 如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
 ## <a name="examples"></a>示例
-### <a name="example-1-dismiss-risky-users"></a>示例 1：消除有风险的用户
-#### <a name="request"></a>请求
+<!--### Example 1: Dismiss risky users-->
+### <a name="request"></a>请求
 下面是一个请求示例。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -88,10 +87,14 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/dismiss-riskyuser-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/dismiss-riskyuser-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-#### <a name="response"></a>响应
-下面是一个响应示例。
+### <a name="response"></a>响应
+下面展示了示例响应。
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -100,16 +103,17 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-dismiss-a-risky-user"></a>示例 2：消除有风险的用户
-#### <a name="request"></a>请求
-下面是一个请求示例。
+<!--
+### Example 2: Dismiss a risky user
+#### Request
+Here is an example of the request.
 
-# <a name="http"></a>[HTTP](#tab/http)
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "dismiss_riskyuser_2"
 }-->
-```http
+<!--```http
 POST https://graph.microsoft.com/beta/identityProtection/riskyUsers/dismiss
 Content-Type: application/json
 
@@ -119,31 +123,31 @@ Content-Type: application/json
   ]
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
+# [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/dismiss-riskyuser-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/dismiss-riskyuser-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
+# [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/dismiss-riskyuser-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[Java](#tab/java)
+# [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/dismiss-riskyuser-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-#### <a name="response"></a>响应
-下面是一个响应示例。
+#### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true
 } -->
-```http
+<!--```http
 HTTP/1.1 204 No Content
 ```
 
@@ -158,5 +162,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
-
 

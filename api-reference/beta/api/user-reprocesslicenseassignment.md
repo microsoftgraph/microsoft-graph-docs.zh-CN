@@ -1,16 +1,16 @@
 ---
 title: user： reprocessLicenseAssignment
 description: 重新处理用户的所有基于组的许可证分配。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 4ff1500ade221a24970f6cfbde38fab9101b67dc
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a2ffa675291fca51b6b70aad7275fcd4733aa854
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049595"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60984995"
 ---
 # <a name="user-reprocesslicenseassignment"></a>user： reprocessLicenseAssignment
 
@@ -18,7 +18,7 @@ ms.locfileid: "52049595"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-重新处理用户的所有基于组的许可证分配。 若要了解有关基于组的许可，请参阅什么是基于组的许可[Azure Active Directory。](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) 有关更多详细信息[，请参阅](/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems)标识并解决Azure Active Directory中组的许可证分配问题。
+重新处理用户的所有基于组的许可证分配。 若要了解有关基于组的许可，请参阅什么是基于组的许可[Azure Active Directory。](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) 另请参阅[确定并解决](/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems)组中组的许可证分配Azure Active Directory更多详细信息。
 
 
 ## <a name="permissions"></a>权限
@@ -75,6 +75,10 @@ POST https://graph.microsoft.com/beta/users/047dd774-f1c4-40f2-82f0-278de79f9b83
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-reprocesslicenseassignment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-reprocesslicenseassignment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

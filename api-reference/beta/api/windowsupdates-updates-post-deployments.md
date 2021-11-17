@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: af0df9e0544893229129020dbec89ee311240adc
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 00bc365385a01729084d0e852067607560db3399
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60946018"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61019219"
 ---
 # <a name="create-deployment"></a>创建部署
 命名空间：microsoft.graph.windowsUpdates
@@ -19,7 +19,7 @@ ms.locfileid: "60946018"
 
 创建新的 [部署](../resources/windowsupdates-deployment.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -49,7 +49,7 @@ POST /admin/windows/updates/deployments
 
 下表显示创建部署时所需的 [属性](../resources/windowsupdates-deployment.md)。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |内容|[microsoft.graph.windowsUpdates.deployableContent](../resources/windowsupdates-deployablecontent.md)|指定要部署的内容。 应作为以下派生类型之一提供可部署内容[：expeditedQualityUpdateReference、featureUpdateReference](../resources/windowsupdates-expeditedqualityupdatereference.md) [](../resources/windowsupdates-featureupdatereference.md)|
 
@@ -111,6 +111,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-deployment-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-deployment-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

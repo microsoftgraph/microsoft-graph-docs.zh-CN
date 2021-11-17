@@ -2,15 +2,15 @@
 title: call： playPrompt
 description: 在呼叫中播放提示。
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: b6bfd7aa2cf7392a4abd16b339d31f58f9e64aff
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ac3ce623d45e4ac8a802fbd0dae2c10894a5f7e5
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047642"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61025058"
 ---
 # <a name="call-playprompt"></a>call： playPrompt
 
@@ -25,7 +25,7 @@ ms.locfileid: "52047642"
 > [!Note]
 > **playPrompt** 操作仅支持 [通过](../resources/call.md) [serviceHostedMediaConfig 启动的呼叫](../resources/servicehostedmediaconfig.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
@@ -54,7 +54,7 @@ POST /communications/calls/{id}/playPrompt
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
 |prompts|[MediaPrompt](../resources/mediaprompt.md) 集合| 要播放的提示。 支持的最大 mediaPrompt 集合大小为 20。|
-|loop|布尔值| 循环值。 True 表示无限循环。 默认值为 false。 |
+|loop|布尔| 循环值。 True 表示无限循环。 默认值为 false。 |
 |clientContext|String|唯一的客户端上下文字符串。 最多可包含 256 个字符。|
 
 ## <a name="response"></a>响应
@@ -106,6 +106,10 @@ Content-Length: 166
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/call-playprompt-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/call-playprompt-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

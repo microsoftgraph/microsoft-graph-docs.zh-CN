@@ -1,16 +1,16 @@
 ---
 title: 更新 mailSearchFolder
 description: 更新 mailSearchFolder 对象的可写属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: aece212bdb2d78c5a3308e6f15161070f15bd7cf
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: bb69662efdaa4c3327644ade7a12c183f122e1db
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052178"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61022146"
 ---
 # <a name="update-mailsearchfolder"></a>更新 mailSearchFolder
 
@@ -48,8 +48,8 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 | displayName | String | mailFolder 的[显示名称 。](../resources/mailfolder.md)|
-| includeNestedFolders | 布尔值 | 如何遍历邮箱文件夹层次结构。 `true` 意味着应该执行深度搜索， `false` 而意味着应改为执行浅表搜索。 |
-| sourceFolderIds | 字符串集合 | 应缩小的邮箱文件夹。 |
+| includeNestedFolders | 布尔 | 如何遍历邮箱文件夹层次结构。 `true` 意味着应该执行深度搜索， `false` 而意味着应改为执行浅表搜索。 |
+| sourceFolderIds | String collection | 应缩小的邮箱文件夹。 |
 | filterQuery | String | 用于筛选邮件的 OData 查询。 |
 
 ## <a name="response"></a>响应
@@ -88,6 +88,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-mailsearchfolder-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-mailsearchfolder-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

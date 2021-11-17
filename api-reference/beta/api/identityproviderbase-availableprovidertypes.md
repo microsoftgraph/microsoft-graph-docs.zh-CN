@@ -1,16 +1,16 @@
 ---
 title: 列出 availableProviderTypes
 description: 检索目录中所有受支持的标识提供程序。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: a32724a245e154b5dd261d61f6f02a410930fb32
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: 807855072ed42170528ca9cdfd2c2d9604fe1d4d
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58668089"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61002959"
 ---
 # <a name="list-availableprovidertypes"></a>列出 availableProviderTypes
 
@@ -58,7 +58,7 @@ GET /identity/identityProviders/availableProviderTypes
 
 ## <a name="example"></a>示例
 
-### <a name="example-1-list-all-identityprovider-available-in-an-azure-ad-directory"></a>示例 1：列出 Azure AD 目录中可用的所有 **identityProvider**
+### <a name="example-1-list-all-identityprovider-available-in-an-azure-ad-directory"></a>示例 1：列出 **所有可用的 identityProvider** Azure AD目录
 
 #### <a name="request"></a>请求
 下面展示了示例请求。
@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/identity/identityProviders/availableProvide
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/identityprovider-availableprovidertypes-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/identityprovider-availableprovidertypes-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -120,7 +124,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-list-all-identityprovider-available-in-an-azure-ad-b2c-directory"></a>示例 2：列出 Azure AD B2C 目录中可用的所有 **identityProvider**
+### <a name="example-2-list-all-identityprovider-available-in-an-azure-ad-b2c-directory"></a>示例 2：列出 B2C 目录中Azure AD **identityProvider**
 
 #### <a name="request"></a>请求
 下面展示了示例请求。
@@ -150,6 +154,10 @@ GET https://graph.microsoft.com/beta/identity/identityProviders/availableProvide
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/identityprovider-availableprovidertypes-b2c-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/identityprovider-availableprovidertypes-b2c-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

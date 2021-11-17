@@ -1,16 +1,16 @@
 ---
 title: accessReviewInstance：pendingAccessReviewInstances
 description: 通过调用用户检索等待审批的 accessReviewInstance 对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: c62f954ea7fe70d46ff4a46879b4d568d619226c
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: ede1dd60226629d024dffb52958fa1308489f35a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53030524"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60991869"
 ---
 # <a name="accessreviewinstance-pendingaccessreviewinstances-deprecated"></a>accessReviewInstance：pendingAccessReviewInstances (弃) 
 
@@ -19,7 +19,7 @@ ms.locfileid: "53030524"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >[!NOTE]
->此方法将弃用，并将于 2023 年 5 月 19 日停止返回数据。 它已被 [filterByCurrentUser 取代](accessreviewinstance-filterbycurrentuser.md)。
+>此方法将弃用，并将于 2023 年 5 月 19 日停止返回数据。 它已被替换为 [filterByCurrentUser](accessreviewinstance-filterbycurrentuser.md)。
 
 >[!NOTE]
 >此 API 的默认页面大小为 100 accessReviewInstance 对象。 若要提高效率并避免由于大型结果集而超时，请通过使用 和 查询参数应用 `$skip` `$top` 分页。 有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。
@@ -33,7 +33,7 @@ ms.locfileid: "53030524"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | AccessReview.Read.All、AccessReview.ReadWrite.All  |
 
- 登录用户仅在实例的 accessReviewScheduleDefinition 中查看为其分配审阅者的实例。
+ 登录用户只会在实例的 accessReviewScheduleDefinition 中查看为其分配审阅者的实例。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/beta/me/pendingAccessReviewInstances?$expand=def
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-accessreviewinstance-pendingapproval-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-accessreviewinstance-pendingapproval-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

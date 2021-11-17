@@ -1,16 +1,16 @@
 ---
 title: 列出 subscribedSkus
 description: 检索组织已获取的商业订阅列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: SumitParikh
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 23ed7c866662f344a2f0034d87bba2bfc858f25f
-ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
+ms.openlocfilehash: 099c47194534b058a387b3ee90893863d70579b7
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58490621"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61013976"
 ---
 # <a name="list-subscribedskus"></a>列出 subscribedSkus
 
@@ -18,7 +18,7 @@ ms.locfileid: "58490621"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取组织已获取的商业版订阅的列表。
+获取组织已获取的商业版订阅的列表。 有关在 Azure 门户或 Microsoft 365 管理中心上显示的许可证名称与其 Microsoft Graph **skuId** 和 **skuPartNumber** 属性的映射，请参阅 [许可的产品名称和服务计划标识符](/azure/active-directory/enterprise-users/licensing-service-plan-reference)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -37,7 +37,7 @@ GET /subscribedSkus
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法不支持 `$select` [OData 查询参数](/graph//query-parameters) 来帮助自定义响应 (`$filter` 不支持) 。
+此方法仅支持 `$select` [OData 查询参数](/graph//query-parameters) 来帮助自定义响应。 不支持 `$filter`。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -52,7 +52,7 @@ GET /subscribedSkus
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [subscribedSku](../resources/subscribedsku.md) 对象集合。
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 下面是一个请求示例。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -79,10 +79,15 @@ GET https://graph.microsoft.com/beta/subscribedSkus
 [!INCLUDE [sample-code](../includes/snippets/java/get-subscribedskus-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-subscribedskus-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### <a name="response"></a>响应
-这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
+### <a name="response"></a>响应
+下面展示了示例响应。 
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -92,7 +97,6 @@ GET https://graph.microsoft.com/beta/subscribedSkus
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 547
 
 {
   "value": [
@@ -118,6 +122,10 @@ Content-length: 547
   ]
 }
 ```
+
+## <a name="see-also"></a>另请参阅
+
++ [许可的产品名称和服务计划标识符](/azure/active-directory/enterprise-users/licensing-service-plan-reference)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

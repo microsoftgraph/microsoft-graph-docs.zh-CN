@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 145352c724e93cd56178c21180e70b82bee4a098d51f8d1048830439815c87ce
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6059a85892817d4cac6916c7c4a727aab2fa8ec6
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57161331"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60983137"
 ---
 ```javascript
 
@@ -26,7 +26,7 @@ const call = {
         '@odata.type': '#microsoft.graph.identity',
         displayName: 'Calling Bot',
         id: '3d913abb-aec0-4964-8fa6-3c6850c4f278'
-      },
+      }
     },
     countryCode: null,
     endpointType: null,

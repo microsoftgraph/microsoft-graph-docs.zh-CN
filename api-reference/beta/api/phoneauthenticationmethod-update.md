@@ -1,16 +1,16 @@
 ---
 title: 更新 phoneAuthenticationMethod
 description: 更新与 phoneAuthenticationMethod 对象关联的电话号码。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 5230ca00a63f3543b95ef4f2a1dc7242c5460a1b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 1b6e14615a43abab33349d9f44ecbbe78cf42dc4
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055405"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61019731"
 ---
 # <a name="update-phoneauthenticationmethod"></a>更新 phoneAuthenticationMethod
 
@@ -22,7 +22,7 @@ ms.locfileid: "52055405"
 
 你无法更改电话的类型。 若要更改电话的类型，请添加所需类型的新号码，然后删除具有原始类型的对象。
 
-如果策略允许用户使用 短信登录并更改号码，系统将尝试注册号码以 `mobile` 用于该系统。
+如果策略允许用户使用短信登录并更改号码，系统将尝试注册用于 `mobile` 该系统的号码。
 
 ## <a name="permissions"></a>权限
 
@@ -62,7 +62,7 @@ PUT /users/{id | userPrincipalName}/authentication/phoneMethods/{id}
 + `e37fc753-ff3b-4958-9484-eaa9425c82bc` 更新 `office` **phoneType**。
 + `3179e48a-750b-4051-897c-87b9720928f7` 更新 `mobile` **phoneType**。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称       | 说明|
 |:-----------|:-----------|
@@ -75,7 +75,7 @@ PUT /users/{id | userPrincipalName}/authentication/phoneMethods/{id}
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|phoneNumber|String|要发送文本或呼叫进行身份验证的电话号码。 电话数字使用格式"+ \<country code\> \<number\> \<extension\> x"，扩展是可选的。 例如，+1 5555551234 或 +1 5555551234x123 有效。 如果数字与所需格式不匹配，则创建/更新时将拒绝数字。|
+|phoneNumber|String|要发送文本或呼叫进行身份验证的电话号码。 电话数字使用格式"+ \<country code\> \<number\>x \<extension\> "，扩展是可选的。 例如，+1 5555551234 +1 5555551234x123 有效。 如果数字与所需格式不匹配，则创建/更新时将拒绝数字。|
 |phoneType|string| 可能的值为： `mobile`、 `alternateMobile`或 `office`。|
 
 ## <a name="response"></a>响应
@@ -117,6 +117,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-phoneauthenticationmethod-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-phoneauthenticationmethod-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
