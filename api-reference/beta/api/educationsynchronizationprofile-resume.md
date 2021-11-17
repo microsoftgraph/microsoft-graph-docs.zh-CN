@@ -2,15 +2,15 @@
 title: 在 educationSynchronizationProfile 上恢复同步
 description: 恢复租户中特定学校数据同步配置文件的同步。
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 0f1cd4ca3e1569825bda00a16723801521d1bc08
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: b2858633f54ba15ea71fc376d1d7651d166dcdae
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52664725"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61003001"
 ---
 # <a name="resume-sync-on-an-educationsynchronizationprofile"></a>在 educationSynchronizationProfile 上恢复同步
 
@@ -71,6 +71,10 @@ POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/res
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/post-educationsynchronizationprofile-resume-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-educationsynchronizationprofile-resume-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

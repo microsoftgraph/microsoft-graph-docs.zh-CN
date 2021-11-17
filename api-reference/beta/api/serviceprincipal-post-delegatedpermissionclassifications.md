@@ -1,16 +1,16 @@
 ---
 title: 创建 delegatedPermissionClassification
 description: 通过将 delegatedPermissionClassification 添加到 API 的服务主体来对权限进行分类。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: 7d286984628d52948593671137e9fecdf173da31
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a04ddd6a4dd93bb17772a5db29c3950817f13796
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050855"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61002517"
 ---
 # <a name="create-delegatedpermissionclassification"></a>创建 delegatedPermissionClassification
 
@@ -50,7 +50,7 @@ POST /servicePrincipals/{id}/delegatedPermissionClassifications
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应 [代码和 delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -89,6 +89,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-create-delegatedpermissionclassification-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-create-delegatedpermissionclassification-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

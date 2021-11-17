@@ -1,16 +1,16 @@
 ---
 title: 列出 accessReviewScheduleDefinitions
 description: 检索 accessReviewScheduleDefinition 对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a2d29f6e1f3aa848b60351ed4972ab5b4f06cfd2
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: 1567937e8994607f8874da33c1d911793fe07c7e
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53059988"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60991718"
 ---
 # <a name="list-accessreviewscheduledefinition"></a>列出 accessReviewScheduleDefinition
 
@@ -57,8 +57,8 @@ GET /identityGovernance/accessReviews/definitions?$filter=contains(scope/microso
 
 |值|说明|
 |:---     |:---       |
-|/groups  |列出各个组上的每个 accessReviewScheduleDefinition (不包括作用域为具有来宾用户的所有Microsoft 365组的定义) 。|
-|/groups/{group id}  |列出特定组上的每个 accessReviewScheduleDefinition (不包括作用域为具有来宾用户的所有 Microsoft 365 组) 。|
+|/groups  |列出单个组上的每个 accessReviewScheduleDefinition (不包括作用域为包含来宾用户的所有Microsoft 365组) 。|
+|/groups/{group id}  |列出特定组上的每个 accessReviewScheduleDefinition (不包括作用域为具有来宾用户的所有Microsoft 365组) 。|
 |./members  |列出每个作用域为来宾用户的所有 Microsoft 365 AccessReviewScheduleDefinition。|
 |accessPackageAssignments  |列出访问包上的每个 accessReviewScheduleDefinition。|
 |roleAssignmentScheduleInstances  |列出分配给特权角色的服务主体的每个 accessReviewScheduleDefinition。|
@@ -103,6 +103,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-accessreviewscheduledefinition-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-accessreviewscheduledefinition-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -205,6 +209,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-accessreviewscheduledefinition-allgroups-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-accessreviewscheduledefinition-allgroups-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
