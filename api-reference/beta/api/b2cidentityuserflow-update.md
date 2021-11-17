@@ -5,12 +5,12 @@ author: jkdouglas
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 8e9166b02ada2623740fe90874a699044fa68944
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: cd02480dc9470d239a92818db59b87f88aa8e353
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60944219"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60994858"
 ---
 # <a name="update-b2cidentityuserflow"></a>更新 b2cIdentityUserFlow
 
@@ -57,7 +57,7 @@ PATCH /identity/b2cUserFlows/{id}
 
 下表显示创建 [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md)后可以更新的属性。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |isLanguageCustomizationEnabled|Boolean|此属性决定语言自定义是否在 B2C 用户流中启用。 默认情况下，语言自定义不会在 B2C 用户流中启用。|
 |defaultLanguageTag|String|指示在请求中没有指定 `ui_locale` 标签时使用的 b2cIdentityUserFlow 的默认语言。 此字段符合 [RFC 5646](https://tools.ietf.org/html/rfc5646)。|
@@ -103,6 +103,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-b2cidentityuserflow-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-b2cidentityuserflow-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

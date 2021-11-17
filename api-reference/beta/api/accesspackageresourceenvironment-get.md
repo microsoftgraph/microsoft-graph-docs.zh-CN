@@ -2,15 +2,15 @@
 title: 获取 accessPackageResourceEnvironment
 description: 读取 accessPackageResourceEnvironment 对象的属性和关系。
 author: hanki-microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 6ba500b5f20dfb9dbf29054d0015ebe372e3753d
-ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
+ms.openlocfilehash: e245e0a0fc76001e06dd2fe1dd2b876a372bc706
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52298367"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60988215"
 ---
 # <a name="get-accesspackageresourceenvironment"></a>获取 accessPackageResourceEnvironment
 命名空间：microsoft.graph
@@ -41,7 +41,7 @@ GET /identityGovernance/entitlementManagement/accessPackageResourceEnvironments/
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法当前不支持 [OData 查询参数](/graph/query-parameters)。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-accesspackageresourceenvironment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-accesspackageresourceenvironment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,16 +1,16 @@
 ---
 title: attachment： createUploadSession
 description: 创建上载会话以迭代上载文件的范围，以便将文件附加到指定消息。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 07b10b2134db7cc8f629a3bef0c6f80ea82d0295
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 00758998dd0fbb528868ebd5bdc0512e10a3be9f
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048034"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60982553"
 ---
 # <a name="attachment-createuploadsession"></a>attachment： createUploadSession
 
@@ -18,16 +18,16 @@ ms.locfileid: "52048034"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建允许应用反复上载文件范围的上载会话，以便将文件附加到Outlook项。 项目可以是消息[或](../resources/message.md)[事件](../resources/event.md)。
+创建允许应用迭代上载文件范围的上载会话，以便将文件附加到Outlook项。 项目可以是消息[或](../resources/message.md)[事件](../resources/event.md)。
 
-如果文件大小在 3 MB 到 150 MB 之间，则使用该方法附加文件。 若要附加小于 3 MB 的文件，请对 Outlook 项目的附件导航属性执行一个操作;请参阅如何为邮件或 `POST` [事件执行该操作](event-post-attachments.md)。  [](message-post-attachments.md) 
+如果文件大小在 3 MB 到 150 MB 之间，则使用该方法附加文件。 若要附加小于 3 MB 的文件，请对 Outlook 项目的 attachments 导航属性执行一个操作;请参阅如何为邮件或 `POST` [事件执行该操作](event-post-attachments.md)。  [](message-post-attachments.md) 
 
 作为响应的一部分，此操作返回可用于后续顺序查询的上载 `PUT` URL。 通过每个操作的请求 `PUT` 标头，可以指定要上载的字节的准确范围。 这允许恢复传输，以防在上载过程中网络连接中断。 
 
 以下是使用上载会话将文件附加到Outlook项的步骤：
 
 1. 创建上载会话。
-2. 在此上载会话中，每次) 以迭代方式上载字节范围 (最多上载 4 MB，直到上载文件的所有字节，并且文件附加到指定项。
+2. 在上载会话内， (上载字节范围，每次) 最多上载 4 MB，直到上载文件的所有字节，并且文件附加到指定项。
 3. 保存附件的 ID，供将来访问。
 4. 可选：删除上载会话。
 
@@ -37,10 +37,10 @@ ms.locfileid: "52048034"
 > Exchange Online管理员可自定义邮箱的邮件大小Microsoft 365，包括任何邮件附件。 默认情况下，此邮件大小限制为 35 MB。 了解如何自定义 [最大邮件大小](https://www.microsoft.com/microsoft-365/blog/2015/04/15/office-365-now-supports-larger-email-messages-up-to-150-mb) 以支持大于租户默认限制的附件。 
 
 > [!IMPORTANT] 
-> 如果将大文件 [附加到](/graph/known-issues#attaching-large-files-to-messages) 共享或委派邮箱中的邮件或事件，请注意已知问题。
+> 如果要将大 [文件附加到](/graph/known-issues#attaching-large-files-to-messages) 共享或委派邮箱中的邮件或事件，请注意已知问题。
 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -133,6 +133,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/attachment-createuploadsession-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/attachment-createuploadsession-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

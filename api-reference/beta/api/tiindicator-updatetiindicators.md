@@ -1,16 +1,16 @@
 ---
 title: tiIndicator：updateTiIndicators
-description: 在一个 (（) 请求）中更新多个威胁情报和 TI) 指示器。
-localization_priority: Normal
+description: 在一个请求 (TI) 指示器（而不是多个请求）中更新多个威胁情报。
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 4c594c9ba75ea0ee1cd1fcb8390d4b9ff738d48c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e90fd3b95e302956a250f2acf08ff18daa0298ca
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050771"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60989434"
 ---
 # <a name="tiindicator-updatetiindicators"></a>tiIndicator：updateTiIndicators
 
@@ -18,7 +18,7 @@ ms.locfileid: "52050771"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在一个 (（) 请求）中更新多个威胁情报和 TI) 指示器。
+在一个请求 (TI) 指示器（而不是多个请求）中更新多个威胁情报。
 
 ## <a name="permissions"></a>权限
 
@@ -102,6 +102,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/tiindicator-updatetiindicators-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/tiindicator-updatetiindicators-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

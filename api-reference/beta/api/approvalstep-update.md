@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 167cc4a36ee3d50d76b73ed311aa2012e1d89b4f
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: 1551007f5acb00b4c955b5734e3097cb3c5f1f93
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60730030"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60995341"
 ---
 # <a name="update-approvalstep"></a>更新 approvalStep
 
@@ -56,7 +56,7 @@ PATCH /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `204 No Content` 正文中返回 响应代码。 但是，如果调用方没有适当的权限，该方法将返回 响应代码，或者如果未找到审批 `403 Forbidden` ID，则该方法返回 `404 Not found` 。 如果请求已在同一审批阶段由另一个审批者批准，此方法在响应 `409 Conflict` 正文中返回。
+如果成功，此方法在响应 `204 No Content` 正文中返回 响应代码。 但是，如果调用方没有正确的权限，该方法将返回 响应代码，或者如果未找到审批 `403 Forbidden` ID，则该方法返回 `404 Not found` 。 如果请求已在同一审批阶段由另一个审批者批准，此方法在响应 `409 Conflict` 正文中返回。
 
 ## <a name="examples"></a>示例
 
@@ -76,6 +76,10 @@ PATCH https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/
 ```
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/patch-approvalstep-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/patch-approvalstep-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

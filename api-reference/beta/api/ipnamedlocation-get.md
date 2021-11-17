@@ -1,16 +1,16 @@
 ---
 title: 获取 ipNamedLocation
 description: 检索 ipnamedlocation 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ec64d5818cad91fd3ab1a75b5eb30ea78f23e8e3
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 43f1322db1e0a9fca661203b7d9dc22cc7fbc585
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055608"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60981390"
 ---
 # <a name="get-ipnamedlocation"></a>获取 ipNamedLocation
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations/0
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-ipnamedlocation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-ipnamedlocation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

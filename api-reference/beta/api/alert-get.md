@@ -1,16 +1,16 @@
 ---
 title: 获取警报
 description: 检索 alert 对象的属性和关系
-localization_priority: Normal
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: bc3eefb78f439a9cdf3c995f03acfde605227974
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 4fc3f4f090f3e152b53ac459d2171419bddb0b11
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48962384"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60995720"
 ---
 # <a name="get-alert"></a>获取警报
 
@@ -18,9 +18,9 @@ ms.locfileid: "48962384"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [alert](../resources/alert.md) 对象的属性和关系。
+检索 alert 对象的属性 [和](../resources/alert.md) 关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -50,7 +50,7 @@ GET /security/alerts/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 **alert** 对象。 如果从提供程序返回了 2xx 或 404 以外的状态代码，或者提供程序超时，则响应将是 `206 Partial Content` 状态代码，提供程序的响应位于警告标头中。 有关详细信息，请参阅 [Microsoft Graph 安全性 API 错误响应](../resources/security-error-codes.md)。
+如果成功，此方法在响应 `200 OK` 正文中返回 **响应** 代码和 alert 对象。 如果从提供程序返回了 2xx 或 404 以外的状态代码，或者提供程序超时，则响应将是 `206 Partial Content` 状态代码，提供程序的响应位于警告标头中。 有关详细信息，请参阅 [Microsoft Graph 安全性 API 错误响应](../resources/security-error-codes.md)。
 
 ## <a name="example"></a>示例
 
@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/beta/security/alerts/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-alert-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-alert-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

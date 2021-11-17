@@ -5,12 +5,12 @@ author: jsandoval-msft
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 5753f09d69a0a81e41c25b51508f4af65d642d63
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f70207e151a1ffeff48dacf4c06d854a5f6ffc0f
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "60697000"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60989678"
 ---
 # <a name="presence-setpresence"></a>presence： setPresence
 
@@ -26,13 +26,13 @@ ms.locfileid: "60697000"
 同样，应用程序可以具有其自己的用户状态会话，并能够更新状态。
 
 以下是会话状态聚合方式的优先级：
-* 用户配置>应用配置 (用户配置的状态会覆盖其他用户) 
-* 在已配置应用之间： (状态设置状态) >忙碌>状态> DoNotDisturb
+* 用户配置>应用配置 (用户配置的状态会覆盖其他) 
+* 在应用配置中：当前不支持 (状态设置状态") >忙碌>">离开"
 
 ### <a name="timeout-expiration-and-keep-alive"></a>超时、到期并保持活动状态
 状态会话 **可能会超时并** 过期，因此应用程序需要在超时之前调用此 API，以维护会话的状态;或过期 **之前，** 使会话保持活动状态。
 
-如果可用性为 ，并且超时为 5 分钟，则 `Available` 状态会话可能会超时。 当状态淡出时，状态将逐渐淡出。 例如，如果应用程序将状态会话设置为 ，状态将在 5 分钟内更改为第一个超时，然后在另外 5 分钟（第二个超时） `Available/Available` `Available/AvailableInactive` `Away/Away` 中更改。
+如果状态会话可用且超时为 5 分钟， `Available` 则状态会话可能会超时。 当状态淡出时，状态将逐渐淡出。 例如，如果应用程序将状态会话设置为 ，状态将在 5 分钟内更改为第一个超时，然后在另外 5 分钟（第二个超时） `Available/Available` `Available/AvailableInactive` `Away/Away` 中更改。
 
 状态会话的过期时间可用 参数 `expirationDuration` 进行配置。 当会话过期时，它将变为 `Offline` 。
 
@@ -120,6 +120,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/set-presence-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/set-presence-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

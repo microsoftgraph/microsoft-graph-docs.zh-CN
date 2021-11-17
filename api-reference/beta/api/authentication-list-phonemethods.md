@@ -1,16 +1,16 @@
 ---
 title: 列出 phoneMethods
 description: 检索电话身份验证方法对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 5decfae13c3a8a53c90d94a61ecf0584d1b9da63
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: d5c92d019855dac87e4bb533cfd3bf29d02daf8b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047978"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60982384"
 ---
 # <a name="list-phonemethods"></a>列出 phoneMethods
 
@@ -20,22 +20,32 @@ ms.locfileid: "52047978"
 
 检索电话 [身份验证方法对象](../resources/phoneauthenticationmethod.md) 的列表。 这将返回最多三个对象，因为用户最多有三部电话可用于身份验证。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 权限类型                        | 自行操作的权限 (权限从最低权限级别)  | 对他人操作的权限 (权限从最低到最多特权) |
+### <a name="permissions-acting-on-self"></a>自行操作的权限
+
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:---------------------------------------|:-------------------------|
+| 委派（工作或学校帐户）     | UserAuthenticationMethod.Read、UserAuthenticationMethod.ReadWrite |
+| 委派（个人 Microsoft 帐户） | 不支持。 |
+| 应用程序                            | 不支持。 |
+
+### <a name="permissions-acting-on-other-users"></a>对其他用户操作的权限
+
+|权限类型      | 权限（从最低特权到最高特权）              |
 |:---------------------------------------|:-------------------------|:-----------------|
-| 委派（工作或学校帐户）     | UserAuthenticationMethod.Read、UserAuthenticationMethod.ReadWrite | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
-| 委派（个人 Microsoft 帐户） | 不支持。 | 不支持。 |
-| 应用程序                            | 不适用。 | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
+| 委派（工作或学校帐户）     | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | 不支持。 |
+| 应用程序                            | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
 
 对于管理员正在操作其他用户的委派方案，管理员需要下列 [角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 
 * 全局管理员
 * 全局读取者
 * 特权身份验证管理员
-* 身份验证管理员 (只能看到屏蔽的电话号码) 
+* 身份验证管理员 (只能看到屏蔽) 
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -93,6 +103,10 @@ GET https://graph.microsoft.com/beta/me/authentication/phoneMethods
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-phonemethods-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-phonemethods-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
