@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 1ee955359bc75ec1770e6de3f1ef2eb611c78e6d
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 87004ddd69cddbfb05d469f8dcc44008b7407442
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60926971"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61030120"
 ---
 # <a name="create-rejectedsender"></a>创建 rejectedSender
 
@@ -79,6 +79,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-rejectedsender-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-rejectedsender-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

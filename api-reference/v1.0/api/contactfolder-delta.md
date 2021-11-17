@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f5eca017248d71c4a0c0b8e5f5e6484298441ee5
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: ae7895e5a8056123a744a5564eb197abc2d5249a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60937403"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61020214"
 ---
 # <a name="contactfolder-delta"></a>contactFolder: delta
 
@@ -20,7 +20,7 @@ ms.locfileid: "60937403"
 
 对邮箱的联系人文件夹的 **delta** 函数调用与 GET 请求相似，但是可通过在对其的一次或多次调用中正确应用 [状态令牌](/graph/delta-query-overview)来查询联系人文件夹中的增量更改这一点除外。通过此功能，你可以维护和同步本地存储的用户联系人文件夹，而无需每次都从服务器中获取该邮箱的所有联系人文件夹。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -93,6 +93,10 @@ Prefer: odata.maxpagesize=2
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/contactfolder-delta-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/contactfolder-delta-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

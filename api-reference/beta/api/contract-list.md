@@ -1,16 +1,16 @@
 ---
 title: 列出合同
 description: 检索与合作伙伴租户关联的合同对象列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: adimitui
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 87f5676202a7153bec38a61854535af2c039f820
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ee9434c4976e91ea0aa02dabc28d1218048cd02d
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047047"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61030407"
 ---
 # <a name="list-contracts"></a>列出合同
 
@@ -20,7 +20,7 @@ ms.locfileid: "52047047"
 
 检索与 [合作伙伴](../resources/contract.md) 租户关联的合同对象列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/beta/contracts
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-contract-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-contract-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

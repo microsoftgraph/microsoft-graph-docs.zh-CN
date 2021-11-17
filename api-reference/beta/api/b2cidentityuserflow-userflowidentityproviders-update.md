@@ -1,16 +1,16 @@
 ---
 title: 添加 userFlowIdentityProvider
 description: 将 identityProvider 添加到 b2cIdentityUserFlow。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: db24f6ab09dbb756abdd64afc24b0e67fa64c67a8ee4cc85a9b46c409baffafc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 69c9bdd7bd57ba733a7e9a298df26169c788cd99
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57161910"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60999822"
 ---
 # <a name="add-a-userflowidentityprovider"></a>添加 userFlowIdentityProvider
 
@@ -95,6 +95,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-b2cuserflows-userflowidentityproviders-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-b2cuserflows-userflowidentityproviders-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

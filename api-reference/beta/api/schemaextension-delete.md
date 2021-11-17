@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 473924ffd4be2b8aa20d586f086af7b2ab6c268b
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 86663279305196c6ee1448aec85aed4cd6ad98e2
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766857"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61020549"
 ---
 # <a name="delete-schemaextension"></a>删除 schemaExtension
 
@@ -80,6 +80,10 @@ DELETE https://graph.microsoft.com/beta/schemaExtensions/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-schemaextension-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-schemaextension-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

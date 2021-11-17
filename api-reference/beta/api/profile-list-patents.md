@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 62c20145b5edbde04cc8f62b1c0a392a09c0d2ce
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: aae8047b57bab7a0cbbfcda96d8c132b8e741b21
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59120764"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61019373"
 ---
 # <a name="list-patents"></a>列出专利
 
@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/me/profile/patents
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-itempatents-from-profile-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-itempatents-from-profile-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

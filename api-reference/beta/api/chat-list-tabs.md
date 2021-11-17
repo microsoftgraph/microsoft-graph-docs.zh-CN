@@ -2,15 +2,15 @@
 title: 列出聊天中的选项卡
 description: '检索指定聊天中的选项卡列表。 '
 author: subray
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7f0d7b1feff7205144193a389a3ef84158f570d3
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: c162769c1975d2100fe6e6596f354ce9fa334687
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50775771"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61021033"
 ---
 # <a name="list-tabs-in-chat"></a>列出聊天中的选项卡
 
@@ -29,7 +29,7 @@ ms.locfileid: "50775771"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | TeamsTab.ReadWriteForChat、TeamsTab.Read.All、TeamsTab.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | TeamsTab.ReadWriteForChat.All、TeamsTab.Read.All、TeamsTab.ReadWrite.All |
+|应用程序 | TeamsTab.ReadWriteForChat.All、TeamsTab.Read.All、TeamsTab.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -58,7 +58,7 @@ GET /chats/{chat-id}/tabs
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-list-all-the-tabs-in-the-chat-along-with-associated-teams-app"></a>示例 1：列出聊天中的所有选项卡以及关联的 Teams 应用
+### <a name="example-1-list-all-the-tabs-in-the-chat-along-with-associated-teams-app"></a>示例 1：列出聊天中所有选项卡以及关联的Teams选项卡
 #### <a name="request"></a>请求
 下面展示了示例请求。
 
@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/chats/19:d65713bc498c4a428c71ef9353e6ce20@t
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-tabs-in-chat-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-tabs-in-chat-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -200,6 +204,10 @@ GET https://graph.microsoft.com/beta/chats/19:d65713bc498c4a428c71ef9353e6ce20@t
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-tabs-in-chat-app-filter-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-tabs-in-chat-app-filter-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

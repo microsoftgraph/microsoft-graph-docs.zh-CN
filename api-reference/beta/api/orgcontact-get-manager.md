@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5ff644f963434d9af99e7afd3062c15432aea461
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: a8ab9b20340dbce5110e58504aa8ddf842ccb4f5
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60943323"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61030015"
 ---
 # <a name="orgcontact-get-manager"></a>orgContact：获取管理器
 
@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/beta/contacts/{id}/manager
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-manager-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-manager-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

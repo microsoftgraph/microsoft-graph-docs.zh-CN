@@ -5,12 +5,12 @@ author: jerrysai
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 642dfc75a72dd7cda5414202842b5a79e32b8c5d
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 98cef9d5a965311430c7123c318c2c1c46518838
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60558936"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61028754"
 ---
 # <a name="get-continuousaccessevaluationpolicy"></a>获取 continuousAccessEvaluationPolicy
 命名空间：microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "60558936"
 
 读取 [continuousAccessEvaluationPolicy](../resources/continuousaccessevaluationpolicy.md) 对象的属性和关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/beta/identity/continuousAccessEvaluationPolicy
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-continuousaccessevaluationpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-continuousaccessevaluationpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

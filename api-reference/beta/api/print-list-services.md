@@ -5,12 +5,12 @@ author: braedenp-msft
 ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 8da3beb0a43044f962117c3db6aa307184bbdd9f
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: a88305c55639cd66469b92e216d9f49f680a18b3
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60933107"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61019653"
 ---
 # <a name="list-printservices"></a>列出 printServices
 
@@ -20,7 +20,7 @@ ms.locfileid: "60933107"
 
 检索 [printService 对象](../resources/printservice.md) 的列表，这些对象 **代表** 可供租户使用的服务。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 调用此 API 不需要任何权限，但若要使用通用打印服务，用户或应用的租户必须拥有活动的通用打印订阅。
 
 |权限类型 | 权限（从最低特权到最高特权） |
@@ -73,6 +73,10 @@ GET https://graph.microsoft.com/beta/print/services
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-services-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-services-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

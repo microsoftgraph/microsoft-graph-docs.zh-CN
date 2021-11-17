@@ -1,16 +1,16 @@
 ---
 title: 获取 passwordAuthenticationMethod
 description: 检索 passwordauthentication 方法对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 32aad6e260b0eeb4df87cd9daa51f59d0fa82416
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: dd9e09a250df4b0dff1723796fcd24c30ad6e653
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049175"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61020634"
 ---
 # <a name="get-passwordauthenticationmethod"></a>获取 passwordAuthenticationMethod
 
@@ -44,7 +44,7 @@ ms.locfileid: "52049175"
 * 全局管理员
 * 全局读取者
 * 特权身份验证管理员
-* 身份验证管理员 (只能看到屏蔽的电话号码) 
+* 身份验证管理员 (只能看到屏蔽) 
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -59,7 +59,7 @@ GET /users/{id | userPrincipalName}/authentication/passwordMethods/{id}
 
 此方法不支持自定义响应的可选查询参数。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称      |说明|
 |:----------|:----------|
@@ -102,6 +102,10 @@ GET https://graph.microsoft.com/beta/me/authentication/passwordMethods/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-passwordauthenticationmethod-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-passwordauthenticationmethod-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

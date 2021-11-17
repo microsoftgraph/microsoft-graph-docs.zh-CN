@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: c087d554bf7c7a9b44fa5c19a1821374e7d0f295
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 266c4541293ee0f6a38b2b15c1037fe4d1347412
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59016846"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61029706"
 ---
 # <a name="call-recordresponse"></a>call： recordResponse
 
@@ -27,7 +27,7 @@ ms.locfileid: "59016846"
 
 >**注意：** 收集的任何媒体 **可能无法** 保留。 在呼叫录制方面，请确保你遵守你地区的法律和法规。 有关详细信息，请咨询法律顾问。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权） |
@@ -53,12 +53,12 @@ POST /communications/calls/{id}/recordResponse
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
 |prompts|[mediaPrompt](../resources/mediaprompt.md) 集合 | 要播放的提示。 支持的最大 mediaPrompt 集合大小为 1。|
-|bargeInAllowed|Boolean| 如果为 true，recordResponse 请求将插入其他现有的排队向上/当前处理的记录/playprompt 请求。 默认值 = false。 |
-|initialSilenceTimeoutInSeconds | Int32| 在超时 (失败) 记录响应操作时，允许的最大初始静默时间设置为用户静默。 如果我们播放提示，则此计时器在提示完成后启动。 默认值 = 5 秒，最小值 = 1 秒，最大值 = 120 秒 |
-|maxSilenceTimeoutInSeconds|Int32| 最大静 (在) 开始说话后允许的最大静默时间。 默认值 = 5 秒，最小值 = 1 秒，最大值 = 120 秒。|
+|bargeInAllowed|布尔| 如果为 true，recordResponse 请求将插入其他现有的排队向上/当前处理的记录/playprompt 请求。 默认值 = false。 |
+|initialSilenceTimeoutInSeconds | Int32| 在超时 (操作) 开始记录响应操作时，允许的最大初始静默和用户静默。 如果我们播放提示，则此计时器在提示完成后启动。 默认值 = 5 秒，最小值 = 1 秒，最大值 = 120 秒 |
+|maxSilenceTimeoutInSeconds|Int32| 用户开始 (后) 允许的最大静默时间。 默认值 = 5 秒，最小值 = 1 秒，最大值 = 120 秒。|
 |maxRecordDurationInSeconds|Int32| 在停止录制之前，recordResponse 操作的最大持续时间。 默认值 = 5 秒，最小值 = 1 秒，最大值 = 120 秒。|
-|playBeep|Boolean| 如果为 true，则播放一个嘟嘟声，以向用户指示他们可以开始录制其消息。 默认值 = true。|
-|stopTones|字符串集合|结束录制指定的停止音调。|
+|playBeep|布尔| 如果为 true，则播放一个嘟嘟声，以向用户指示他们可以开始录制其消息。 默认值 = true。|
+|stopTones|String collection|结束录制指定的停止音调。|
 |clientContext|String|唯一的客户端上下文字符串。 最大限制为 256 个字符。|
 
 ## <a name="response"></a>响应
@@ -116,6 +116,10 @@ Content-Length: 394
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/call-recordresponse-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/call-recordresponse-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

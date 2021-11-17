@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9e6c21ca81787b5e37e4d55da05d0ab0f76f0e2c
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 8224dbe78fd41201f66eab21bc45623a84304ac1
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696384"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61021067"
 ---
 # <a name="list-messages-in-a-chat"></a>列出聊天中的消息
 
@@ -94,6 +94,10 @@ GET https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@t
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-allchatmessages-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-allchatmessages-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

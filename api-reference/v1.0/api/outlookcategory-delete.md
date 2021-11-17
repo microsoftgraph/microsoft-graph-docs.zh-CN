@@ -5,12 +5,12 @@ author: abheek-das
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: da3a84b70b0af55beb85a6f74a012ed876b13326
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b6f52c07f1dc8a0917d95938a7cb84e6efdbddd9
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59037360"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61029385"
 ---
 # <a name="delete-outlook-category"></a>删除 Outlook 类别
 
@@ -19,7 +19,7 @@ ms.locfileid: "59037360"
 
 删除指定的 [outlookCategory](../resources/outlookcategory.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -74,6 +74,10 @@ DELETE https://graph.microsoft.com/v1.0/me/outlook/masterCategories/4b1c2495-54c
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-outlookcategory-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-outlookcategory-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

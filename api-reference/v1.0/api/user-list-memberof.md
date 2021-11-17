@@ -2,15 +2,15 @@
 title: 列出 memberOf
 description: '返回用户是其直接成员的组和目录角色。 '
 author: Jordanndahl
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 454c4245d8f4484ce577781f70e30b256fe726f4
-ms.sourcegitcommit: f645c2db38fe6354422a96b54569af53cd65b967
+ms.openlocfilehash: 801ad60a03eb5b0b156f4c8423d1f4d43c48e668
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "58409023"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61028979"
 ---
 # <a name="list-memberof"></a>列出 memberOf
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/v1.0/users/{id}/memberOf
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-get-memberof-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-get-memberof-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

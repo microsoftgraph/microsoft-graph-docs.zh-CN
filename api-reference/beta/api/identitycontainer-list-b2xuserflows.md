@@ -1,16 +1,16 @@
 ---
 title: 列出 b2xIdentityUserFlows
 description: 检索 b2xIdentityUserFlow 对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 672e98257776a0335c3b8691bc934a7641de6ed6
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 3ce488549a9d47c2a063ee6dc058b716642fe86e
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50435544"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60998198"
 ---
 # <a name="list-b2xidentityuserflows"></a>列出 b2xIdentityUserFlows
 
@@ -20,7 +20,7 @@ ms.locfileid: "50435544"
 
 检索 [b2xIdentityUserFlow 对象](../resources/b2xidentityuserflow.md) 的列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,12 +28,12 @@ ms.locfileid: "50435544"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）|IdentityUserFlow.Read.All、IdentityUserFlow.ReadWrite.All|
 |委派（个人 Microsoft 帐户）| 不支持。|
-|Application|IdentityUserFlow.Read.All、IdentityUserFlow.ReadWrite.All|
+|应用程序|IdentityUserFlow.Read.All、IdentityUserFlow.ReadWrite.All|
 
 工作或学校帐户需要属于以下角色之一：
 
 * 全局管理员
-* 外部标识用户流管理员
+* 外部标识用户Flow管理员
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -45,7 +45,7 @@ GET /identity/b2xUserFlows
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-可用于展开默认情况下未扩展 `$expand` 的特定用户流属性。
+可以使用 展开 `$expand` 默认不展开的特定用户流属性。
 
 有关详细信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
@@ -61,7 +61,7 @@ GET /identity/b2xUserFlows
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -96,6 +96,10 @@ GET https://graph.microsoft.com/beta/identity/b2xUserFlows
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-b2xuserflows-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-b2xuserflows-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -166,6 +170,10 @@ GET https://graph.microsoft.com/beta/identity/b2xUserFlows?$expand=identityProvi
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-b2xuserflows-expand-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-b2xuserflows-expand-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
