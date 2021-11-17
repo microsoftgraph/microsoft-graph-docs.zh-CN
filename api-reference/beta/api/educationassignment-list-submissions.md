@@ -5,12 +5,12 @@ author: dipakboyed
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 6789234c1e31959a8205e7431f84cb138e81dde8
-ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
+ms.openlocfilehash: b686e2ee89015491bab0ed1a0be7f80425211ae8
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60891045"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60993964"
 ---
 # <a name="list-submissions"></a>列出提交
 
@@ -22,14 +22,14 @@ ms.locfileid: "60891045"
 
 教师或具有应用程序权限的应用程序可以获取所有提交，而学生只能获取与其关联的提交。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  EduAssignments.ReadBasic、EduAssignments.ReadWriteBasic、EduAssignments.Read、EduAssignments.ReadWrite  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|Application | EduAssignments.ReadBasic.All、EduAssignments.ReadWriteBasic.All、EduAssignments.Read.All、EduAssignments.ReadWrite.All | 
+|应用程序 | EduAssignments.ReadBasic.All、EduAssignments.ReadWriteBasic.All、EduAssignments.Read.All、EduAssignments.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/beta/education/classes/f4a941ff-9da6-4707-ba5b-0
 [!INCLUDE [sample-code](../includes/snippets/java/get-submissions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-submissions-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### <a name="response"></a>响应
@@ -100,7 +104,6 @@ GET https://graph.microsoft.com/beta/education/classes/f4a941ff-9da6-4707-ba5b-0
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 873
 
 {
     "value": [
@@ -172,6 +175,10 @@ GET https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-submissions-expand-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-submissions-expand-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

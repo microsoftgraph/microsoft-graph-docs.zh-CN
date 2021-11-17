@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 7cd97ab4710ead825a6a507db71a3213a3a28444
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 0331eeec7481ec5ceaa26f97e6f9d015a2854abb
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60687939"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61016209"
 ---
 # <a name="update-externalconnection"></a>更新 externalConnection
 
@@ -51,7 +51,7 @@ PATCH /external/connections/{connectionsId}
 |:--------------|:-----------------------------------------------|:------------|
 | configuration | [microsoft.graph.externalConnectors.configuration](../resources/externalconnectors-configuration.md) | 指定允许管理连接和索引连接内容的其他应用程序 ID。 |
 | 说明   | String                                         | 网站中显示的连接Microsoft 365 管理中心。 |
-| name          | 字符串                                         | 要显示名称中显示的连接的Microsoft 365 管理中心。 最大长度为 128 个字符。 |
+| name          | String                                         | 要显示名称中显示的连接的Microsoft 365 管理中心。 最大长度为 128 个字符。 |
 
 
 ## <a name="response"></a>响应
@@ -93,6 +93,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-externalconnection-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-externalconnection-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1ab1a5f770864c1eb3e1003cb153c7bb01af682d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 919e5fb2c8ff652d376f43d98c900a66e94e4e35
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59063515"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61016440"
 ---
 # <a name="update-countrynamedlocation"></a>更新 countryNamedLocation
 
@@ -51,9 +51,9 @@ PATCH /identity/conditionalAccess/namedLocations/{id}
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|countriesAndRegions|字符串集合|ISO 3166-2 指定的两字母格式的国家/地区列表。|
+|countriesAndRegions|String collection|ISO 3166-2 指定的两字母格式的国家/地区列表。|
 |displayName|String|位置的可读名称。|
-|includeUnknownCountriesAndRegions|Boolean|该值是未映射到国家/地区或地区的 IP 地址应包含在 `true` 命名位置中。|
+|includeUnknownCountriesAndRegions|布尔|该值是未映射到国家/地区或地区的 IP 地址应包含在 `true` 命名位置中。|
 
 ## <a name="response"></a>响应
 
@@ -100,6 +100,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-countrynamedlocation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-countrynamedlocation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

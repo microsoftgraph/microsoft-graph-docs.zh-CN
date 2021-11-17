@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 6ce5cab018bff46070550f397cdebed06219dfbe
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 530fb08ab621385f3848bf2f3dbb79611efefc29
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60939754"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61005486"
 ---
 # <a name="add-connector-to-connectorgroup"></a>Add connector to connectorGroup
 
@@ -19,7 +19,7 @@ ms.locfileid: "60939754"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 将连接器 [添加到](../resources/connector.md) [connectorGroup](../resources/connectorgroup.md)。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -77,6 +77,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-connectorgroup-from-connector-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-connectorgroup-from-connector-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

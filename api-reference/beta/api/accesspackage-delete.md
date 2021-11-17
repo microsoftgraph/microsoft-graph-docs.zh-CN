@@ -1,16 +1,16 @@
 ---
 title: 删除 accessPackage
 description: 删除 accessPackage。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 710bbd3e015af5109b95905d6db68061de1506f5
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 61db7e5baf0c639a3adae55c11ffe7f429263a06
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52868866"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60983897"
 ---
 # <a name="delete-accesspackage"></a>删除 accessPackage
 
@@ -84,6 +84,10 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-accesspackage-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-accesspackage-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

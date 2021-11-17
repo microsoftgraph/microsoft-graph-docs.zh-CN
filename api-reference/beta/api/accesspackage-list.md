@@ -1,16 +1,16 @@
 ---
 title: 列出 accessPackages
 description: 检索 accessPackage 对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 1b4a364c980feeb311e64f67bec50993e51a742c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c68f20ff7333f0090af82a943891b84d6a130ce4
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52038563"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60983757"
 ---
 # <a name="list-accesspackages"></a>列出 accessPackages
 
@@ -40,7 +40,7 @@ GET /identityGovernance/entitlementManagement/accessPackages
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持一些 OData 查询参数来帮助自定义响应。 例如，若要检索每个访问包的访问包策略，请添加 `$expand=accessPackageAssignmentPolicies` 。 若要搜索具有特定名称的访问包，请包含一个筛选器， `$filter=contains(tolower(displayName),'team')` 如 在查询中。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持一些 OData 查询参数来帮助自定义响应。 例如，若要检索每个访问包的访问包策略，请添加 `$expand=accessPackageAssignmentPolicies` 。 若要搜索具有特定名称的访问包，请包含筛选器（ `$filter=contains(tolower(displayName),'team')` 如 在查询中）。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-accesspackages-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-accesspackages-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

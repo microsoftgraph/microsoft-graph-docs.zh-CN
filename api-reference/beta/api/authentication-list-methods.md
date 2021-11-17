@@ -1,16 +1,16 @@
 ---
 title: List 方法
 description: 检索身份验证方法对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 05606726178d2c1d2a2bb308f941810363e357c6
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6ddd8737fc8427d32e2ec4066de21a7e8beda0c1
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047999"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60982412"
 ---
 # <a name="list-methods"></a>List 方法
 
@@ -18,9 +18,10 @@ ms.locfileid: "52047999"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索身份验证 [方法对象](../resources/authenticationmethod.md) 的列表。
+检索身份验证 [方法对象](../resources/authenticationmethod.md) 的列表。 此 API 仅返回此 API 版本支持的身份验证方法。 请参阅[Azure AD](../resources/authenticationmethods-overview.md)方法 API 概述，了解当前支持的方法的列表。
 
-## <a name="permissions"></a>权限
+
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -44,7 +45,7 @@ ms.locfileid: "52047999"
 * 全局管理员
 * 全局读取者
 * 特权身份验证管理员
-* 身份验证管理员 (只能看到屏蔽的电话号码) 
+* 身份验证管理员 (只能看到屏蔽) 
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -102,6 +103,10 @@ GET https://graph.microsoft.com/beta/me/authentication/methods
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-methods-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-methods-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

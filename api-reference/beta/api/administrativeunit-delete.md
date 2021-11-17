@@ -2,15 +2,15 @@
 title: 删除 administrativeUnit
 description: 删除 administrativeUnit。
 author: DougKirschner
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 6b9f2c9813e56475280109ad8fd66ee4680ea663
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 2d8f47f138356b2d796a70b4b1783b995d4030a1
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52992049"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60991506"
 ---
 # <a name="delete-administrativeunit"></a>删除 administrativeUnit
 
@@ -74,6 +74,10 @@ DELETE https://graph.microsoft.com/beta/administrativeUnits/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-administrativeunit-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-administrativeunit-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

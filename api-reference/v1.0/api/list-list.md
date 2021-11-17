@@ -6,12 +6,12 @@ ms.localizationpriority: high
 ms.prod: sharepoint
 description: 获取网站列表的集合。
 doc_type: apiPageType
-ms.openlocfilehash: 145d73d01dcece1dafcf4ee7a7df1223d4864ae6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 90a42a0473c3d52012008e6893e06694219fea13
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59037437"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60984603"
 ---
 # <a name="enumerate-lists-in-a-site"></a>枚举网站中的列表
 
@@ -63,6 +63,10 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/enum-lists-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/enum-lists-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

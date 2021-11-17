@@ -1,16 +1,16 @@
 ---
 title: 创建 conditionalAccessPolicy
 description: 创建新的 conditionalAccessPolicy。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 4c9973fa4a51a8fa99dddbf63b35fc3bbfc45537
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: ff381f1008673e3216dab801cc4347f07596ab69
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50947293"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61005792"
 ---
 # <a name="create-conditionalaccesspolicy"></a>创建 conditionalAccessPolicy
 
@@ -50,7 +50,7 @@ POST /identity/conditionalAccess/policies
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [conditionalAccessPolicy 对象的](../resources/conditionalaccesspolicy.md) JSON 表示形式。
+在请求正文中，提供 [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) 对象的 JSON 表示形式。
 
 有效的策略应包含至少一个应用程序规则[](../resources/conditionalaccessapplications.md)（例如，一个用户规则，例如 ， ）和至少一个 `'includeApplications': 'none'` [](../resources/conditionalaccessusers.md) `'includeUsers': 'none'` [授予](../resources/conditionalaccessgrantcontrols.md) / [会话](../resources/conditionalaccesssessioncontrols.md)控制权限。
 
@@ -60,10 +60,10 @@ POST /identity/conditionalAccess/policies
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-require-mfa-to-access-exchange-online-outside-of-trusted-locations"></a>示例 1：要求 MFA 访问受信任位置之外的 Exchange Online
+### <a name="example-1-require-mfa-to-access-exchange-online-outside-of-trusted-locations"></a>示例 1：要求 MFA 访问Exchange Online外部的域
 
 #### <a name="request"></a>请求
-以下示例显示一个常见请求，要求多重身份验证以从特定组的受信任位置之外的新式身份验证客户端访问 Exchange Online。
+以下示例显示了一个要求多重身份验证以从新式身份验证客户端访问 Exchange Online受信任位置之外的特定组的常见请求。
 
 >**注意：** 在使用此操作之前，必须设置受信任位置。
 
@@ -125,6 +125,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-conditionalaccesspolicy-from-conditionalaccessroot-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-conditionalaccesspolicy-from-conditionalaccessroot-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -197,10 +201,10 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-block-access-to-exchange-online-from-non-trusted-regions"></a>示例 2：阻止从非受信任区域访问 Exchange Online
+### <a name="example-2-block-access-to-exchange-online-from-non-trusted-regions"></a>示例 2：阻止Exchange Online来自非受信任区域的访问权限
 
 #### <a name="request"></a>请求
-以下示例显示阻止从非受信任/未知区域访问 Exchange Online 的请求。
+以下示例显示一个阻止访问来自非Exchange Online/未知区域的请求。
 此示例假定 id 为 198ad66e-87b3-4157-85a3-8a7b51794ee9 的命名位置对应于不受信任的/未知区域的列表。
 
 
@@ -257,6 +261,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-conditionalaccesspolicy-from-conditionalaccessroot-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-conditionalaccesspolicy-from-conditionalaccessroot-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -461,6 +469,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-conditionalaccesspolicy-from-conditionalaccessroot-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-conditionalaccesspolicy-from-conditionalaccessroot-3-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -587,12 +599,12 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-require-mfa-to-exchange-online-from-non-complaint-devices"></a>示例 4：要求从非投诉设备向 Exchange Online 进行 MFA
+### <a name="example-4-require-mfa-to-exchange-online-from-non-complaint-devices"></a>示例 4：要求 MFA Exchange Online来自非投诉设备
 
 >**注意：** We are deprecating the **deviceStates** condition， and it may be removed in the future. 今后，使用 **设备** 条件。
 
 #### <a name="request"></a>请求
-以下示例显示要求从非投诉设备向 Exchange Online 进行 MFA 的请求。
+以下示例显示要求 MFA 从非Exchange Online设备进行配置的请求。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -648,6 +660,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-conditionalaccesspolicy-from-conditionalaccessroot-4-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-conditionalaccesspolicy-from-conditionalaccessroot-4-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

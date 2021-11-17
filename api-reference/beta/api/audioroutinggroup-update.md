@@ -2,15 +2,15 @@
 title: 更新音频路由组
 description: 修改 audioRoutingGroup 的源和接收器。
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 6e8bfe43529632988249206a0d84cc6e50e8324e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c5aafe6f290af213fba6d2bc9f0fac835d75c512
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048006"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60995328"
 ---
 # <a name="update-audio-routing-group"></a>更新音频路由组
 
@@ -47,9 +47,9 @@ PATCH /communications/calls/{id}/audioRoutingGroups/{id}
 
 | 属性       | 类型    |说明|
 |:---------------|:--------|:----------|
-| receivers | 字符串集合 | audioRoutingGroup 中的目标参与者。 |
+| receivers | String collection | audioRoutingGroup 中的目标参与者。 |
 | routingMode | String | 可取值为：`oneToOne`、`multicast`。 |
-| 源 | 字符串集合 | audioRoutingGroup 中的源参与者。 |
+| 源 | String collection | audioRoutingGroup 中的源参与者。 |
 
 ## <a name="response"></a>响应
 如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [audioRoutingGroup](../resources/audioroutinggroup.md) 对象。
@@ -95,6 +95,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-audioroutinggroup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-audioroutinggroup-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

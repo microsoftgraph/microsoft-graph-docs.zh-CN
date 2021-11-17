@@ -5,12 +5,12 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: db86d52de2aaadcf82373690d9e503211214dbb5
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 88cf5e8710d5a8ac0d6907569e891851044456da
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60940034"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60991491"
 ---
 # <a name="get-administrativeunit"></a>获取 administrativeUnit
 
@@ -22,7 +22,7 @@ ms.locfileid: "60940034"
 
 由于 **administrativeUnit** 资源 [支持扩展](/graph/extensibility-overview)，因此您还可以使用 操作获取 administrativeUnit 实例中的自定义属性 `GET` 和 **扩展** 数据。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/beta/administrativeUnits/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-administrativeunit-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-administrativeunit-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

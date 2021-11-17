@@ -1,16 +1,16 @@
 ---
 title: 列出 programControlTypes
-description: 在 Azure AD 访问评审功能中，列出所有 programControlType 对象。
-localization_priority: Normal
+description: 在"Azure AD评审"功能中，列出所有 programControlType 对象。
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: aea4607e5020207ecfe85968d5048dd33f1f9b3e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 7440326ca0d95ff2d631ab67311f62b9ab917bc3
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055209"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60979983"
 ---
 # <a name="list-programcontroltypes"></a>列出 programControlTypes
 
@@ -18,7 +18,7 @@ ms.locfileid: "52055209"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 Azure AD [访问评审](../resources/accessreviews-root.md) 功能中，列出 [所有 programControlType](../resources/programcontroltype.md) 对象。
+在"Azure AD评审"功能[](../resources/accessreviews-root.md)中，列出[所有 programControlType](../resources/programcontroltype.md)对象。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -72,6 +72,10 @@ GET https://graph.microsoft.com/beta/programControlTypes
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-programcontroltype-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-programcontroltype-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

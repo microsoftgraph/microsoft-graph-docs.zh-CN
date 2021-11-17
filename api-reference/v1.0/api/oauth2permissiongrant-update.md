@@ -5,14 +5,14 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 95418534651d7c29dfd2aa2c6c4e27b888b86d4f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8a7e0988fa5e29850cb9fe86410894c2e04ed190
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59062899"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60996146"
 ---
-# <a name="update-a-delegated-permission-grant-oauth2permissiongrant"></a>更新 oAuth2PermissionGrant (委派权限) 
+# <a name="update-a-delegated-permission-grant-oauth2permissiongrant"></a>更新 oAuth2PermissionGrant (委派) 
 
 命名空间：microsoft.graph
 
@@ -89,6 +89,10 @@ Content-Length: 30
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-oauth2permissiongrant-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-oauth2permissiongrant-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

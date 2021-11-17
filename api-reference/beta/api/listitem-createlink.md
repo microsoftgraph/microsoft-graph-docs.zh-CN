@@ -5,12 +5,12 @@ author: learafa
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: e12ceccbf8ea29893d185ba8564e831bbe850b5c
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 7a3d71a12958d551ba5ccce900cb7195bbcdd589
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60941342"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60981187"
 ---
 # <a name="listitem-createlink"></a>listItem： createLink
 
@@ -56,7 +56,7 @@ POST /sites/{siteId}/lists/{listId}/items/{itemId}/createLink
 
 下表显示了可用于此操作的参数。
 
-|   属性             |  类型  |           Description                        |
+|   属性             |  类型  |           说明                        |
 | :----------------------| :----- | :--------------------------------------------|
 |type|String|要创建的共享链接的类型。 可选。 |
 |scope|String|要创建的链接的范围。 、 `anonymous` `organization` 或 `users` 。 可选。 |
@@ -75,7 +75,7 @@ POST /sites/{siteId}/lists/{listId}/items/{itemId}/createLink
 | edit           | 创建指向该项目的读写链接。                                                                       |
 | 嵌入          | 创建到项目的可嵌入链接。                                                                      |
 | blocksDownload | 创建阻止下载到项目的只读链接。 此选项仅适用于 OneDrive for Business 和 SharePoint。  |
-| createOnly     | 创建项的仅上载链接。 此选项仅适用于 OneDrive for Business 和 SharePoint 中的文件夹。             |
+| createOnly     | 创建项的仅上载链接。 此选项仅适用于 OneDrive for Business 和 SharePoint。             |
 | addressBar     | 为新建的文件创建浏览器地址栏中显示的默认链接。 仅适用于 OneDrive for Business 和 SharePoint。 组织管理员配置此链接类型是否受支持，以及此链接类型支持哪些功能。 |
 | adminDefault   | 创建指向项目的默认链接，该链接由组织的管理员确定。 仅适用于 OneDrive for Business 和 SharePoint。 该策略由管理员为组织强制执行 |
 
@@ -83,7 +83,7 @@ POST /sites/{siteId}/lists/{listId}/items/{itemId}/createLink
 
 **scope** 参数允许使用以下值。
 
-| 值          | Description
+| 值          | 说明
 |:---------------|:------------------------------------------------------------
 | anonymous    | 拥有该链接的任何人都可以访问，无需登录。 这可能包括组织外部的人员。 管理员可能会禁用匿名链接支持。
 | 组织 | 登录到组织（租户）的任何人都可以使用该链接获取访问权限。 仅适用于 OneDrive for Business 和 SharePoint。
@@ -140,6 +140,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/listitem-createlink-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/listitem-createlink-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -212,6 +216,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/listitem-createlink-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/listitem-createlink-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,24 +1,24 @@
 ---
 title: 创建语言
-description: 在 Azure AD B2C 用户流中创建自定义语言。
+description: 在 B2C 用户流Azure AD自定义语言。
 author: jkdouglas
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 5f07f92b898656b06e4eea367ecd396a81ccd645
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b8aaa1feb192476548cec26d5b53615185562230
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59049457"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60999837"
 ---
 # <a name="create-languages"></a>创建语言
 
 命名空间：microsoft.graph
 
-此方法用于在 Azure AD B2C 用户流中创建或更新自定义语言。
+此方法用于在 B2C 用户流中Azure AD自定义语言。
 
-**注意：** 必须先在 Azure AD B2C 用户流中启用语言自定义，然后才能创建自定义语言。 有关详细信息，请参阅更新 [b2cIdentityUserFlow](../api/b2cidentityuserflow-update.md)。
+**注意：** 必须先在 B2C 用户Azure AD中启用语言自定义，然后才能创建自定义语言。 有关详细信息，请参阅更新 [b2cIdentityUserFlow](../api/b2cidentityuserflow-update.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -70,7 +70,7 @@ PUT /identity/b2cUserFlows/{id}/languages/{id}
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-create-a-custom-language-in-an-azure-ad-b2c-user-flow"></a>示例 1：在 Azure AD B2C 用户流中创建自定义语言
+### <a name="example-1-create-a-custom-language-in-an-azure-ad-b2c-user-flow"></a>示例 1：在 B2C 用户流Azure AD自定义语言
 
 #### <a name="request"></a>请求
 
@@ -109,6 +109,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-userflowlanguageconfiguration-from--1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-userflowlanguageconfiguration-from--1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -136,7 +140,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-update-a-custom-language-in-an-azure-ad-b2c-user-flow"></a>示例 2：更新 Azure AD B2C 用户流中的自定义语言
+### <a name="example-2-update-a-custom-language-in-an-azure-ad-b2c-user-flow"></a>示例 2：更新 B2C 用户Azure AD中的自定义语言
 
 #### <a name="request"></a>请求
 
@@ -172,6 +176,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-userflowlanguageconfiguration-from--2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-userflowlanguageconfiguration-from--2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

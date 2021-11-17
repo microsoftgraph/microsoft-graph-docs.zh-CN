@@ -1,16 +1,16 @@
 ---
 title: 列出 directReports
 description: 获取用户的直接下属。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 9939d14a71c56e7920eed7755bcb4be8abfe2c58
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c3e8d9f56e88ba94fff3aa30f0d8f0b1888d1a1c
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053361"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61013332"
 ---
 # <a name="list-directreports"></a>列出 directReports
 
@@ -39,7 +39,7 @@ GET /users/{id | userPrincipalName}/directReports
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 标头       | 值|
 |:-----------|:------|
 | Authorization  | Bearer {token}。必需。  |
@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/beta/me/directReports
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-directreports-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-directreports-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ description: 获取租户租户中的用户登录Azure Active Directory列表。
 ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
-ms.openlocfilehash: ed5e9d304278040a957347e8e2550b53f2e562b5
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: b16a26ae4871da469e154cd4d80250d48486d522
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59507828"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61002147"
 ---
 # <a name="list-signins"></a>列出 signIn
 
@@ -18,11 +18,11 @@ ms.locfileid: "59507828"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取 [signIn 对象](../resources/signin.md) 的列表。 该列表包含你的租户的用户登录Azure Active Directory。 用户名和密码作为授权令牌的一部分传递的登录，并且成功的联合登录当前包含在登录日志中。
+获取 [signIn 对象](../resources/signin.md) 的列表。 该列表包含你的租户的用户Azure Active Directory登录。 用户名和密码作为授权令牌的一部分传递的登录，并且成功的联合登录当前包含在登录日志中。
 
-最大和默认页面大小为 1，000 个对象，默认情况下，首先返回最新的登录。 只有 Azure AD Azure Active Directory (内发生的登录) [默认保留](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)期才可用。
+最大和默认页面大小为 1，000 个对象，默认情况下，首先返回最新的登录。 只有默认保留期Azure Active Directory (Azure AD) [登录事件](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)可用。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -35,9 +35,9 @@ ms.locfileid: "59507828"
 > [!IMPORTANT]
 > 此 API 有 [一个已知](/graph/known-issues#azure-ad-activity-reports) 问题，当前需要同意 **AuditLog.Read.All** 和 **Directory.Read.All** 权限。
 
-应用必须 [正确注册到](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) Azure AD。
+应用必须[正确注册到](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)Azure AD。
 
-除了委派的权限，登录用户还需要属于以下目录角色之一，以便他们阅读登录报告。 若要了解有关目录角色的信息，请参阅 [Azure AD 内置角色](/azure/active-directory/roles/permissions-reference)：
+除了委派的权限，登录用户还需要属于以下目录角色之一，以便他们阅读登录报告。 若要详细了解目录角色，请参阅Azure AD[角色：](/azure/active-directory/roles/permissions-reference)
 + 全局管理员
 + 全局读取者
 + 报告读取者
@@ -100,6 +100,10 @@ GET https://graph.microsoft.com/beta/auditLogs/signIns
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-signins-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-signins-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

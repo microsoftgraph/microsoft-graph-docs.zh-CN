@@ -1,16 +1,16 @@
 ---
 title: 更新 educationRubric
 description: 更新 educationRubric 对象的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 50e3d9a675a6052f6eb2f26b5ed28a3395b77063
-ms.sourcegitcommit: 40a8e4b9e344811267025e23c372a6e60e31a1b9
+ms.openlocfilehash: 18542960b1af086a388b06ae6a6dfe04f96009c8
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2021
-ms.locfileid: "52118988"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60975242"
 ---
 # <a name="update-educationrubric"></a>更新 educationRubric
 
@@ -20,7 +20,7 @@ ms.locfileid: "52118988"
 
 更新 [educationRubric 对象](../resources/educationrubric.md) 的属性。
 
-只有在发布工作分配 () 工作分配附加的一个分值才能更新，而更新的实际上是 下 `PATCH /education/classes/{id}/assignments/{id}/rubric` 的原始工作分配 `/education/users/{id}/rubrics` 。 工作分配发布后，将创建附加到该特定工作分配的不可变重复副本。 可以使用 [GET /education/classes/{id}/assignments/{id}/rubric](educationrubric-get.md)检索该标准，但无法更新。
+只有在发布工作分配 () 工作分配附加的一个分值，更新内容实际上是位于 下 `PATCH /education/classes/{id}/assignments/{id}/rubric` 的原始工作分配 `/education/users/{id}/rubrics` 。 工作分配发布后，将创建附加到该特定工作分配的不可变重复副本。 可以使用 [GET /education/classes/{id}/assignments/{id}/rubric](educationrubric-get.md)检索该标准，但无法更新。
 
 ## <a name="permissions"></a>权限
 
@@ -54,7 +54,7 @@ PATCH /education/classes/{id}/assignments/{id}/rubric
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |说明|itemBody|此分卡的说明。|
-|displayName|字符串|此分号的名称。|
+|displayName|String|此分号的名称。|
 |一个|educationAssignmentGradeType|此分值是否具有点。|
 |levels|rubricLevel 集合|此标准中的级别集合。|
 |一些|rubricQuality 集合|此分项由质量集合决定。|
@@ -97,6 +97,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-educationrubric-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-educationrubric-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

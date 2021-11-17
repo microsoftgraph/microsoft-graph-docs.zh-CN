@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 81a7fbb9dbed1f9fba27af74cee5ef776c2b8ffb
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d06eac577a23a9e71f270cf918dad209cbd7deef
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59016083"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61003981"
 ---
 # <a name="message-send"></a>邮件：发送
 
@@ -89,6 +89,10 @@ POST https://graph.microsoft.com/v1.0/me/messages/{id}/send
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/message-send-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/message-send-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

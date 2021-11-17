@@ -5,19 +5,19 @@ author: nilakhan
 ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 923e63c219affece1e78483a6557da0786ffef39
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: f0ce8491e85e76386542bf912a03ee78628a5b09
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60937148"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60992583"
 ---
 # <a name="get-printservice"></a>获取 printService
 命名空间：microsoft.graph
 
 检索打印服务的属性和关系。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 调用 **此** API 需要委派 [的通用打印权限](/graph/permissions-reference#universal-print-permissions) 之一。
 
 ## <a name="http-request"></a>HTTP 请求
@@ -72,6 +72,10 @@ GET https://graph.microsoft.com/v1.0/print/services/{printServiceId}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-printservice-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-printservice-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

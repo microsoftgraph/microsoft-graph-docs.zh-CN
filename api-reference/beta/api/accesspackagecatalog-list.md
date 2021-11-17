@@ -1,16 +1,16 @@
 ---
 title: 列出 accessPackageCatalogs
 description: 检索 accessPackageCatalog 对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a37b1455c9e958b2d249010a676a13e1ea4ab836
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 461f1e1d97f3f1bc12e947ff9e6ab43a2bb8027d
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048552"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60983295"
 ---
 # <a name="list-accesspackagecatalogs"></a>列出 accessPackageCatalogs
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-accesspackagecatalogs-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-accesspackagecatalogs-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

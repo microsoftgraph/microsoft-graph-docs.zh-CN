@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 87351ca8f7e9428773d5a2da251b4ee02f32571b
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 1e502cbc58a09a4f6e123dbca46e17bc6d4277d1
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60943568"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61003357"
 ---
 # <a name="update-cloudpconpremisesconnection"></a>更新 cloudPcOnPremisesConnection
 
@@ -22,7 +22,7 @@ ms.locfileid: "60943568"
 本地连接通过运行状况检查（由 属性指示）后 `healthCheckStatus` ，将无法更新它。
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -58,7 +58,7 @@ PATCH /deviceManagement/virtualEndpoint/onPremisesConnections/{id}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|内部显示名称的连接的基础结构。|
+|displayName|String|内部显示名称连接的连接。|
 |subscriptionId|String|与租户关联的目标 Azure 订阅的 ID。|
 |adDomainName|String|要加入的 Active Directory (完全限定) FQDN。|
 |adDomainUsername|String|Active Directory 帐户的用户名 (拥有在 Active Directory) 创建计算机对象的权限的用户或服务帐户。 所需格式：username@contoso.com。|
@@ -114,6 +114,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-onpremisesconnections-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-onpremisesconnections-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 5bb1cdd51412670cebceb2deb6e0fc9a8c97eb57
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 203a0d392b654f92e9b3edf6911f67f4f10bf42b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60928540"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61016566"
 ---
 # <a name="create-cloudpcusersetting"></a>创建 cloudPcUserSetting
 
@@ -20,7 +20,7 @@ ms.locfileid: "60928540"
 
 创建新的 [cloudPcUserSetting](../resources/cloudpcusersetting.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -57,8 +57,8 @@ POST /deviceManagement/virtualEndpoint/userSettings
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|显示在 UI 中的设置名称。 |
-|localAdminEnabled|Boolean|若要启用本地管理员选项，将此设置更改为 `True` 。  |
-|selfServiceEnabled|Boolean|若要启用自助服务选项，将此设置更改为 `True` 。 |
+|localAdminEnabled|布尔|若要启用本地管理员选项，将此设置更改为 `True` 。  |
+|selfServiceEnabled|布尔|若要启用自助服务选项，将此设置更改为 `True` 。 |
 |lastModifiedDateTime|DateTimeOffset|上次修改设置的日期和时间。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示："2014-01-01T00：00：00Z"。 |
 
 ## <a name="response"></a>响应
@@ -100,6 +100,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-cloudpcusersetting-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-cloudpcusersetting-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

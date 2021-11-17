@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 9bdd28e57dfc2a9f5071e33d5d3604a205060059
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 8c8d40e6f5548b7cf59e8f99b27f8b8e9e67981e
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60440050"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60987894"
 ---
 # <a name="accessreviewinstance-applydecisions"></a>accessReviewInstance：applyDecisions
 
@@ -76,6 +76,10 @@ POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitio
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/accessreviewinstance-applydecisions-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/accessreviewinstance-applydecisions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

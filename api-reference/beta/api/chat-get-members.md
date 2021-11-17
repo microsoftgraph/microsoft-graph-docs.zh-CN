@@ -5,12 +5,12 @@ author: bhartono
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3a40284314e284eeedf2a9983cb69e984cb7b575
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 59860768dc90c8f5ba5143f0c23f24cee4236168
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696930"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60994599"
 ---
 # <a name="get-conversationmember-in-a-chat"></a>获取聊天中的 conversationMember
 
@@ -95,6 +95,10 @@ GET https://graph.microsoft.com/beta/chats/19:b8577894a63548969c5c92bb9c80c5e1@t
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-conversation-member-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-conversation-member-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

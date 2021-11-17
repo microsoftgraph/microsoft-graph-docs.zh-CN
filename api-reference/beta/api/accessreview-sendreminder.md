@@ -1,16 +1,16 @@
 ---
 title: SendReminder accessReview
-description: '在 Azure AD 访问评审功能中，向当前处于活动状态的 accessReview 的审阅者发送提醒。  目标对象可以是一次性访问评审，也可以作为定期访问评审的实例。 '
-localization_priority: Normal
+description: '在Azure AD访问评审"功能中，向当前处于活动状态的 accessReview 的审阅者发送提醒。  目标对象可以是一次性访问评审，也可以作为定期访问评审的实例。 '
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 6796fcc52473d2e45be7c594ee4bce010a9d19e7
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 04e3a6c35e58a908bdc085179c1cd46859556f5a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751020"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60987978"
 ---
 # <a name="sendreminder-accessreview"></a>SendReminder accessReview
 
@@ -18,9 +18,9 @@ ms.locfileid: "52751020"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 Azure AD [访问评审](../resources/accessreviews-root.md) 功能中，向当前处于活动状态的 [accessReview](../resources/accessreview.md)的审阅者发送提醒。  目标对象可以是一次性访问评审，也可以作为定期访问评审的实例。 
+在Azure AD[访问评审](../resources/accessreviews-root.md)功能中，向当前处于活动状态的[accessReview](../resources/accessreview.md)的审阅者发送提醒。  目标对象可以是一次性访问评审，也可以作为定期访问评审的实例。 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
@@ -71,6 +71,10 @@ POST https://graph.microsoft.com/beta/accessReviews/2975E9B5-44CE-4E71-93D3-30F0
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/sendreminder-accessreview-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/sendreminder-accessreview-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

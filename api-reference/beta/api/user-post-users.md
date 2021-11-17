@@ -2,15 +2,15 @@
 title: 创建用户
 description: 新建用户。
 author: jpettere
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: e04afb007f70788b21253323adfb517ebab7ade6
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: d81d6aa0257aa9ae189aee50b331da2d10b8c6e5
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52911359"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60985054"
 ---
 # <a name="create-user"></a>创建用户
 
@@ -50,15 +50,15 @@ POST /users
 
 在请求正文中，提供 [user](../resources/user.md) 对象的 JSON 表示形式。
 
-下表列出了创建用户时所需的属性。 如果要为正在创建的用户包括 **identities** 属性，并非所有列出的属性都是必需的。 对于 [B2C 本地帐户标识](../resources/objectidentity.md)，只需要 **passwordProfile，passwordPolicies** 必须设置为 `DisablePasswordExpiration` 。 对于社交标识，则无需任何属性。
+下表列出了创建用户时所需的属性。 如果要为正在创建的用户包括 **identities** 属性，并非所有列出的属性都是必需的。 对于 [B2C 本地帐户标识](../resources/objectidentity.md)，只需要 **passwordProfile**，且 **passwordPolicies** 必须设置为 `DisablePasswordExpiration`。 对于社交标识，则无需任何属性。
 
 | 参数 | 类型 | 说明|
 |:---------------|:--------|:----------|
-|accountEnabled |Boolean |如果启用帐户，则其参数为 True;否则为 false。|
+|accountEnabled |布尔 |如果启用帐户，则其参数为 True;否则为 false。|
 |displayName |string |要在用户的通讯簿中显示的名称。|
 |onPremisesImmutableId |string |如果你对用户的 userPrincipalName (UPN) 属性使用联盟域，只需在创建新用户帐户时指定。|
 |mailNickname |string |用户的邮件别名。|
-|passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |用户的密码配置文件。 对于 Azure B2C 租户 **，forceChangePasswordNextSignIn** 属性应设置为 ，改为使用自定义策略在首次登录 `false` 时强制重置密码。|
+|passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |用户的密码配置文件。 对于 Azure B2C 租户，**forceChangePasswordNextSignIn** 属性应设置为 `false`，并且应在第一次登录时使用自定义策略强制重置密码。|
 |userPrincipalName |string |用户主体名称 (someuser@contoso.com)。|
 
 由于 **用户** 资源支持 [扩展](/graph/extensibility-overview)，因此可以使用 `POST` 操作，并在创建用户实例时向其添加含有自己的数据的自定义属性。
@@ -114,6 +114,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-user-from-users-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-user-from-users-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -210,6 +214,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-user-from-users-identities-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-user-from-users-identities-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

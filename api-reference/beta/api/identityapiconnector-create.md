@@ -2,15 +2,15 @@
 title: 创建 identityApiConnector
 description: 创建新的 identityApiConnector 对象。
 author: nickgmicrosoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 06515ca0ca1f302ee94cb06e7a58c5dcae518c1b
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: cd614ddce1ba2391dc5b1b01f9e9c75fdb3dbd09
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51508853"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60986262"
 ---
 # <a name="create-identityapiconnector"></a>创建 identityApiConnector
 
@@ -33,7 +33,7 @@ ms.locfileid: "51508853"
 工作或学校帐户需要属于以下角色之一：
 
 * 全局管理员
-* 外部标识用户流管理员
+* 外部标识用户Flow管理员
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -61,9 +61,9 @@ POST /identity/apiConnectors
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|字符串| API 连接器的名称。 |
-|targetUrl|字符串| 要调用的 API 终结点的 URL。 |
-|authenticationConfiguration|[apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md)|描述用于调用 API 的身份验证配置详细信息的对象。 [支持基本身份验证](../resources/basicauthentication.md)[和 PKCS 12 客户端](../resources/pkcs12certificate.md)证书。|
+|displayName|String| API 连接器的名称。 |
+|targetUrl|String| 要调用的 API 终结点的 URL。 |
+|authenticationConfiguration|[apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md)|描述用于调用 API 的身份验证配置详细信息的对象。 [支持基本](../resources/basicauthentication.md) 身份验证 [和 PKCS 12 客户端](../resources/pkcs12certificate.md) 证书。|
 
 ## <a name="response"></a>响应
 
@@ -113,6 +113,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-identityapiconnector-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-identityapiconnector-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

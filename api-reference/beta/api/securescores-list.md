@@ -1,16 +1,16 @@
 ---
 title: 列出 secureScores
 description: 检索 secureScores 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: db668c49386d5cdb2ba4169f1e7fef25c119ae13
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: fef6ab979699bd4e6d384967ca0c0fc0a3e06203
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976710"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61014313"
 ---
 # <a name="list-securescores"></a>列出 secureScores
 
@@ -18,7 +18,7 @@ ms.locfileid: "48976710"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [secureScores](../resources/securescores.md) 对象的属性和关系。
+检索 [secureScores 对象的属性和](../resources/securescores.md) 关系。
 
 ## <a name="permissions"></a>权限
 
@@ -50,7 +50,7 @@ GET /security/secureScores
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 **secureScores** 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 **secureScores** 对象。
 
 ## <a name="example"></a>示例
 
@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/beta/security/secureScores?$top=1
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/securescores-list-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/securescores-list-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

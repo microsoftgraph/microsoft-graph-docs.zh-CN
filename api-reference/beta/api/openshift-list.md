@@ -1,16 +1,16 @@
 ---
 title: 列出 openShifts
 description: 列出团队中的 openshift 对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 448b04103474c30640752ff351018f6efa5d094a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 86681eca56046d92a427ae8006933586978c8395
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052997"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61002853"
 ---
 # <a name="list-openshift"></a>列出 openShift
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/teams/{id}/schedule/openShifts
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-openshift-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-openshift-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -2,15 +2,15 @@
 title: 列出 connectedOrganizations
 description: 检索 connectedOrganization 对象的列表。
 author: markwahl-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: d891343bdc08b29db6a8680d84bb6f12e70b23ea
-ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
+ms.openlocfilehash: 9ca4014989a63bd5df9d297af76a4faa80df02b0
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52896296"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61005646"
 ---
 # <a name="list-connectedorganizations"></a>列出 connectedOrganizations
 
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/co
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-connectedorganizations-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-connectedorganizations-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

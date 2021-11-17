@@ -5,12 +5,12 @@ author: keylimesoda
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 4ff5791cb14806f06ca6ae1c7895ce8009542eb3
-ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
+ms.openlocfilehash: 9d8d3dc9397f7403f4d49ebbf05730956901e192
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60256422"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61005360"
 ---
 # <a name="directoryobject-getbyids"></a>directoryObject: getByIds
 
@@ -60,7 +60,7 @@ POST /directoryObjects/getByIds
 | 参数   | 类型 |说明|
 |:---------------|:--------|:----------|
 |ids|String collection| 要返回其对象的 ID 集合。 ID 是 GUID，由字符串表示。 最多可以指定 1000 个 ID。 |
-|types|String collection| 指定要搜索的资源集合集的资源类型集合。 如果未指定，则默认为 [directoryObject](../resources/directoryobject.md)，其包含目录中定义的所有资源类型。 可以在集合中指定从[directoryObject](../resources/directoryobject.md)派生的任何对象;例如[：user、group](../resources/user.md)[和设备](../resources/device.md)对象。 [](../resources/group.md) <br/><br/>若要搜索对[云解决方案提供商](https://partner.microsoft.com/cloud-solution-provider)合作伙伴组织的引用 ，请指定[directoryObjectPartnerReference](../resources/directoryobjectpartnerreference.md)。 如果未指定，则默认为 [directoryObject](../resources/directoryobject.md)，其包含目录中定义的所有资源类型，对[云解决方案提供商](https://partner.microsoft.com/cloud-solution-provider)合作伙伴组织的引用除外。 </br><br/> 这些值不区分大小写。|
+|types|String collection| 指定要搜索的资源集合集的资源类型集合。 如果未指定，则默认为 [directoryObject](../resources/directoryobject.md)，其包含目录中定义的所有资源类型。 可以在该集合中指定派生自 [directoryObject](../resources/directoryobject.md) 的任何对象，例如：[用户](../resources/user.md)、[组](../resources/group.md)、[设备](../resources/device.md)对象等。 <br/><br/>若要搜索[云解决方案提供商](https://partner.microsoft.com/cloud-solution-provider)合作伙伴组织，请指定 [directoryObjectPartnerReference](../resources/directoryobjectpartnerreference.md)。如果未指定，则默认为 [directoryObject](../resources/directoryobject.md)，其包含目录中定义的所有资源类型，对[云解决方案提供商](https://partner.microsoft.com/cloud-solution-provider)合作伙伴组织的引用除外。</br><br/> 这些值不区分大小写。|
 
 ## <a name="response"></a>响应
 
@@ -100,6 +100,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/directoryobject-getbyids-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/directoryobject-getbyids-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

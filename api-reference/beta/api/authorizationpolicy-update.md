@@ -1,16 +1,16 @@
 ---
 title: 更新 authorizationpolicy
 description: 更新 authorizationPolicy 对象的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 723f8b174a256cc3b739922101f897067594bd43
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 8919f4245c3ba3a48b85b5fc06b4102b852bc96c
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786851"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60995044"
 ---
 # <a name="update-authorizationpolicy"></a>更新 authorizationPolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "52786851"
 
 更新 [authorizationPolicy 对象](../resources/authorizationpolicy.md) 的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -52,14 +52,14 @@ PATCH /policies/authorizationPolicy/authorizationPolicy
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|  
 |displayName|String| 此策略的显示名称。 |  
-|description|String| 此策略的说明。 |  
-|guestUserRoleId|Guid| 表示应授予来宾用户的角色的角色 templateId。 请参阅 [列出 unifiedRoleDefinitions](./rbacapplication-list-roledefinitions.md) 以查找可用角色模板的列表。 目前仅支持用户角色 () 、来宾用户 `a0b1b346-4d3e-4e8b-98f8-753987be4970` `10dae51f-b6af-4016-8d66-8c2a99b929b3` () 和受限来宾用户 `2af84b1e-32c8-42b7-82bc-daa82404023b` () 。 | 
+|说明|String| 此策略的说明。 |  
+|guestUserRoleId|Guid| 表示应授予来宾用户的角色的角色 templateId。 请参阅 [列出 unifiedRoleDefinitions](./rbacapplication-list-roledefinitions.md) 以查找可用角色模板的列表。 目前仅支持用户 () 、来宾用户 () 和受限来宾用户 `a0b1b346-4d3e-4e8b-98f8-753987be4970` `10dae51f-b6af-4016-8d66-8c2a99b929b3` `2af84b1e-32c8-42b7-82bc-daa82404023b` () 。 | 
 |enabledPreviewFeatures|集合 (字符串) | 租户上启用专用预览的功能列表。 | 
-|blockMsolPowerShell|Boolean| 若要禁止使用 MSOL PowerShell，将此属性设置为 `true` 。 这还将禁止基于用户对 MSOL PowerShell 使用的旧服务终结点的访问。 这不会影响 Azure AD 连接 或 Microsoft Graph。 | 
+|blockMsolPowerShell|布尔| 若要禁止使用 MSOL PowerShell，将此属性设置为 `true` 。 这还将禁止基于用户对 MSOL PowerShell 使用的旧服务终结点的访问。 这不会影响 Azure AD 连接 或 Microsoft Graph。 | 
 |defaultUserRolePermissions|[defaultUserRolePermissions](../resources/defaultUserRolePermissions.md)| 指定默认用户角色的某些可自定义权限。 | 
-|allowedToUseSSPR|Boolean| 指示租户Self-Serve是否可以使用密码重置功能。 | 
-|allowedToSignUpEmailBasedSubscriptions|Boolean| 指示用户是否可以注册基于电子邮件的订阅。 | 
-|allowEmailVerifiedUsersToJoinOrganization|Boolean| 指示用户是否可以通过电子邮件验证加入租户。 |
+|allowedToUseSSPR|布尔| 指示租户Self-Serve是否可以使用密码重置功能。 | 
+|allowedToSignUpEmailBasedSubscriptions|布尔| 指示用户是否可以注册基于电子邮件的订阅。 | 
+|allowEmailVerifiedUsersToJoinOrganization|布尔| 指示用户是否可以通过电子邮件验证加入租户。 |
 | permissionGrantPolicyIdsAssignedToDefaultUserRole | String collection | 指示是否允许用户同意应用，如果是，由哪个应用许可策略管理用户授予[](/azure/active-directory/manage-apps/manage-app-consent-policies)同意的权限。 值的格式应为 ，其中 是内置或自定义应用同意策略 `managePermissionGrantsForSelf.{id}` `{id}` 的[ID。](/azure/active-directory/manage-apps/manage-app-consent-policies)  空列表表示已禁用用户对应用的同意。 |
 
 ## <a name="response"></a>响应
@@ -137,6 +137,10 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 [!INCLUDE [sample-code](../includes/snippets/java/update-authzpolicy-preview-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-authzpolicy-preview-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### <a name="response"></a>响应
@@ -184,6 +188,10 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-authzpolicy-blockmsolpowershell-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-authzpolicy-blockmsolpowershell-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -238,6 +246,10 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 [!INCLUDE [sample-code](../includes/snippets/java/update-authzpolicy-applications-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-authzpolicy-applications-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### <a name="response"></a>响应
@@ -286,6 +298,10 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-authzpolicy-sspr-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-authzpolicy-sspr-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -340,6 +356,10 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 [!INCLUDE [sample-code](../includes/snippets/java/update-authzpolicy-disableuserconsent-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-authzpolicy-disableuserconsent-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -359,7 +379,7 @@ HTTP/1.1 204 No Content
 
 #### <a name="request"></a>请求
 
-下面是一个请求示例，该请求允许用户同意应用，但需遵循内置的应用许可策略，该[](/azure/active-directory/manage-apps/manage-app-consent-policies)策略允许来自已验证发布者或在同一租户中注册的客户端应用分类为"低"的委派权限。 `microsoft-user-default-low`
+下面是一个请求示例，该请求允许用户同意应用，但需遵守内置的应用许可策略，该[](/azure/active-directory/manage-apps/manage-app-consent-policies)策略允许来自已验证发布者或在同一租户中注册的客户端应用分类为"低"的委派权限。 `microsoft-user-default-low`
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -391,6 +411,10 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-authzpolicy-enableuserconsentlow-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-authzpolicy-enableuserconsentlow-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

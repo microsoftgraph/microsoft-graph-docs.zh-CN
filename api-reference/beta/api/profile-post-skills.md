@@ -1,24 +1,24 @@
 ---
-title: 创建 skillProficiency
-description: 使用此 API 创建新的 skillProficiency。
-localization_priority: Normal
+title: Create skillProficiency
+description: 使用此 API 创建新技能技能。
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 873e568e86972e3d5b0581635e1ef8f4b6a1c612
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 4ad5899998f1451fe4fed723d4d080c2eae982b9
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972717"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60980066"
 ---
-# <a name="create-skillproficiency"></a>创建 skillProficiency
+# <a name="create-skillproficiency"></a>Create skillProficiency
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用此 API 在用户的[配置文件](../resources/profile.md)中创建新的[skillProficiency](../resources/skillproficiency.md)对象。
+使用此 API 在用户配置文件中创建新的 [skillProficiency](../resources/skillproficiency.md) [对象](../resources/profile.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -26,8 +26,8 @@ ms.locfileid: "48972717"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | 所有用户读写。          |
-| 委派（个人 Microsoft 帐户） | 所有用户读写。          |
+| 委派（工作或学校帐户）     | User.ReadWrite、User.ReadWrite.All          |
+| 委派（个人 Microsoft 帐户） | User.ReadWrite、User.ReadWrite.All          |
 | 应用程序                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -50,22 +50,22 @@ POST /users/{id | userPrincipalName}/profile/skills
 
 在请求正文中，提供 [skillProficiency](../resources/skillproficiency.md) 对象的 JSON 表示形式。
 
-下表显示了在用户的[配置文件](../resources/profile.md)中创建新的[skillProficiency](../resources/skillproficiency.md)对象时可以设置的属性。
+下表显示了在用户配置文件中创建新的 [skillProficiency](../resources/skillproficiency.md) 对象时可以设置 [的属性](../resources/profile.md)。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|categories|String collection|包含用户与技能相关联的类别 (例如，个人、职业、爱好) 。 |
-|collaborationTags|String collection|包含用户与兴趣相关的体验方案标记。 集合中允许的值为： `askMeAbout` 、 `ableToMentor` 、 `wantsToLearn` 、 `wantsToImprove` 。|
+|categories|String collection|包含用户与技能类别关联的类别 (例如个人、专业、爱好) 。 |
+|collaborationTags|String collection|包含用户与兴趣相关联的体验方案标记。 集合中允许的值为 `askMeAbout` `ableToMentor` ：、、、。 `wantsToLearn` `wantsToImprove`|
 |displayName|String|包含技能的友好名称。 |
-|推导|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|水平|skillProficiencyLevel|熟练掌握此技能的用户的详细信息。 可取值为：`elementary`、`limitedWorking`、`generalProfessional`、`advancedProfessional`、`expert`、`unknownFutureValue`。|
-|source|[personDataSource](../resources/persondatasource.md)|值的来源，如果从另一个服务同步。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|webUrl|String|包含指向有关技能的信息源的链接。 |
+|inference|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断出来的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|熟练程度|skillProficiencyLevel|此技能的用户熟练程度的详细信息。 可取值为：`elementary`、`limitedWorking`、`generalProfessional`、`advancedProfessional`、`expert`、`unknownFutureValue`。|
+|source|[personDataSource](../resources/persondatasource.md)|如果从另一个服务同步，则值源自何处。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|WebUrl|String|包含指向有关技能的信息源的链接。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201, Created` 在响应正文中返回响应代码和新的 [skillProficiency](../resources/skillproficiency.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和新 `201, Created` [skillProficiency](../resources/skillproficiency.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -109,6 +109,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-skillproficiency-from-profile-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-skillproficiency-from-profile-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
