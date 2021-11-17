@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getEmailActivityCounts'
 description: 可便于了解组织中的电子邮件活动趋势（如已发送、已阅读和已接收的电子邮件数）。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 2e5a2cdbda2bf282a0f345d0045a1882a005577d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e2b17160836a305fb1158bb89ef2f285e5887ba4
+ms.sourcegitcommit: 42e0e15ff90815e0126c34b928405486cfb1ed86
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050995"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61044769"
 ---
 # <a name="reportroot-getemailactivitycounts"></a>reportRoot: getEmailActivityCounts
 
@@ -32,7 +32,7 @@ ms.locfileid: "52050995"
 | 委派（个人 Microsoft 帐户） | 不支持。                           |
 | 应用                            | Reports.Read.All                         |
 
-**注意**：若要获得委派权限以允许应用代表用户读取服务使用情况报告，租户管理员必须事先为用户分配适当的 Azure AD 受限管理员角色。 有关更多详细信息，请参阅[授权 API 读取 Microsoft 365 使用情况报告](/graph/reportroot-authorization)。
+**注意**：若要获得委派权限以允许应用代表用户读取服务使用情况报告，租户管理员必须事先为用户分配适当的 Azure AD 受限管理员角色。有关更多详细信息，请参阅 [ API 授权，读取 Microsoft 365使用情况报告](/graph/reportroot-authorization)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -79,7 +79,7 @@ CSV 文件包含下面的列标题。
 
 ### <a name="json"></a>JSON
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` **[emailActivitySummary](../resources/emailactivitysummary.md)** 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 JSON 对象。
 
 ## <a name="example"></a>示例
 
@@ -157,7 +157,7 @@ GET https://graph.microsoft.com/beta/reports/getEmailActivityCounts(period='D7')
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.emailActivitySummary"
+  "@odata.type": "stream"
 } -->
 
 ```http
@@ -165,8 +165,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 242
 
-{
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.emailActivitySummary)", 
+{ 
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 

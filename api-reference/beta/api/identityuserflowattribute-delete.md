@@ -1,16 +1,16 @@
 ---
 title: 删除 identityUserFlowAttribute
 description: 删除 identityUserFlowAttribute。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 1a8cfd2849f79d4489503d7fe715ef6eeb16f03c
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 0abdd3b73161ea1c3d81d658e38b51b2e3a431d8
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50435292"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61030084"
 ---
 # <a name="delete-identityuserflowattribute"></a>删除 identityUserFlowAttribute
 
@@ -28,12 +28,12 @@ ms.locfileid: "50435292"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）|IdentityUserFlow.ReadWrite.All|
 |委派（个人 Microsoft 帐户）| 不支持。|
-|Application|IdentityUserFlow.ReadWrite.All|
+|应用程序|IdentityUserFlow.ReadWrite.All|
 
 工作或学校帐户需要属于以下角色之一：
 
 * 全局管理员
-* 外部标识用户流属性管理员
+* 外部标识用户Flow属性管理员
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -87,6 +87,10 @@ DELETE https://graph.microsoft.com/beta/identity/userFlowAttributes/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-userflowattributes-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-userflowattributes-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

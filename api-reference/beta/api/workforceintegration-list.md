@@ -1,16 +1,16 @@
 ---
 title: 列出 workforceIntegrations
 description: 检索 workforceIntegration 对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e28e40ec75833cde86d80cca26ea4d0a423ff018
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 371f4d2d254df27c9db676662342400c52179b27
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054698"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61013199"
 ---
 # <a name="list-workforceintegrations"></a>列出 workforceIntegrations
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/teamwork/workforceIntegrations
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-workforceintegrations-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-workforceintegrations-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

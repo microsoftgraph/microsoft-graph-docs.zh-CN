@@ -1,16 +1,16 @@
 ---
 title: 列出名称
 description: 从用户配置文件中检索 personName 对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 436fc66b7ae500dde0c4f05bb3c9fd761e048114
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a40f699536d8954debd8a74316fe8bbbd1ce15b8
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52037184"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61019415"
 ---
 # <a name="list-names"></a>列出名称
 
@@ -45,7 +45,7 @@ GET /users/{id | userPrincipalName}/profile/names
 
 |名称            |值    |说明                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|$filter         |string   |将响应限制到仅包含指定条件的对象。                                                                                             |
+|$filter         |string   |将响应范围限定为仅包含指定条件的对象。                                                                                             |
 |$orderby        |string   |默认情况下，响应中的对象按查询中的 createdDateTime 值进行排序。 可以使用 $orderby 参数 *更改响应* 的顺序。|
 |$select         |string   |要在响应中添加的属性列表（以逗号分隔）。为获得最佳结果，请仅选择所需属性的子集。                                        |
 |$skip           |int      |跳过前 n 个结果，可用于分页。                                                                                                                                |
@@ -95,6 +95,10 @@ GET https://graph.microsoft.com/beta/me/profile/names
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-names-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-names-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

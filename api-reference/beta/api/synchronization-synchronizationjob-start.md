@@ -1,16 +1,16 @@
 ---
 title: 启动 synchronizationJob
 description: 启动现有同步作业。 如果作业已暂停，它将从暂停点开始继续处理更改。 如果作业隔离，则清除隔离状态。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 510722b4571abec22bfda27aee117033391268b8
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 344778c87d7ce7751729c041c6113049ad43dbc3
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787175"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61010554"
 ---
 # <a name="start-synchronizationjob"></a>启动 synchronizationJob
 
@@ -76,6 +76,10 @@ POST https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/job
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/synchronizationjob-start-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/synchronizationjob-start-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

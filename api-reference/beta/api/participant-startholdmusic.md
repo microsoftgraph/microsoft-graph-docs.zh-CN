@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 71a3b8cc4bb9bc30d18df198552f73661944e8fd
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 268a70a77744a47d1712809951c6aa627d604ac2
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59507265"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61026527"
 ---
 # <a name="participant-startholdmusic"></a>participant： startHoldMusic
 
@@ -22,7 +22,7 @@ ms.locfileid: "59507265"
  
 > **注意：** 在任何给定时间只能将一个参与者置于保留状态。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
@@ -48,7 +48,7 @@ POST /communications/calls/{id}/participants/{id}/startHoldMusic
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数      | 类型    |Description|
+| 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
 |customPrompt|microsoft.graph.mediaPrompt|可选。 参与者置于保持时将听到的音频提示。|
 |clientContext|String|可选。 唯一的客户端上下文字符串。 最多可包含 256 个字符。|
@@ -98,6 +98,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/participant-startholdmusic-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/participant-startholdmusic-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

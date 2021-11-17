@@ -1,16 +1,16 @@
 ---
 title: 删除 personAnniversary
-description: 从用户的配置文件中删除 personAnniversary 对象。
-localization_priority: Normal
+description: 从用户配置文件中删除 personAnniversary 对象。
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: c23e51d89023ce5cb5442cf4267d1733ceffc241
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1fbe6781b410ebf0f8f010a6345de18a0caabbfd
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968496"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61033969"
 ---
 # <a name="delete-personanniversary"></a>删除 personAnniversary
 
@@ -18,7 +18,7 @@ ms.locfileid: "48968496"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从用户的[配置文件](../resources/profile.md)中删除[personAnniversary](../resources/personanniversary.md)对象。
+从用户配置文件中删除 [personAnniversary](../resources/personanniversary.md) [对象](../resources/profile.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -26,8 +26,8 @@ ms.locfileid: "48968496"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | 所有用户读写。          |
-| 委派（个人 Microsoft 帐户） | 所有用户读写。          |
+| 委派（工作或学校帐户）     | User.ReadWrite、User.ReadWrite.All          |
+| 委派（个人 Microsoft 帐户） | User.ReadWrite、User.ReadWrite.All          |
 | 应用程序                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -82,6 +82,10 @@ DELETE https://graph.microsoft.com/beta/me/profile/anniversaries/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-personanniversary-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-personanniversary-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

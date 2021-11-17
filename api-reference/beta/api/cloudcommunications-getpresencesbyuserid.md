@@ -2,15 +2,15 @@
 title: cloudCommunications：getPresencesByUserId
 description: 获取多个用户状态信息。
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 0a545df4e1195d057e5155ab18f5bcfe17de9102
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: a0da5262370e9b4b7f588b5ed58bc026647f8646
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53059913"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61030511"
 ---
 # <a name="cloudcommunications-getpresencesbyuserid"></a>cloudCommunications：getPresencesByUserId
 
@@ -20,7 +20,7 @@ ms.locfileid: "53059913"
 
 获取 [多个](../resources/presence.md) 用户状态信息。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 调用这些 API 需要以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权）                  |
@@ -89,6 +89,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-presence-multiple-users-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-presence-multiple-users-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

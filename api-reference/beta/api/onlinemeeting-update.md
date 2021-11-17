@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 4478c14346ab243ccc317468b00ed2a649891d77
-ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
+ms.openlocfilehash: e2bcabc61e832204fae87646b30d7c7c0bf49e34
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "59996639"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61014537"
 ---
 # <a name="update-onlinemeeting"></a>更新 onlineMeeting
 
@@ -46,7 +46,7 @@ PATCH /users/{userId}/onlineMeetings/{meetingId}
 > - `userId` 是 [Azure 用户管理门户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)中用户的对象 ID。 有关详细信息，请参阅应用程序 [访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
 > - `meetingId`是 [onlineMeeting 对象的](../resources/onlinemeeting.md) **ID。**
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称          | 说明                 |
 | :------------ | :-------------------------- |
@@ -69,13 +69,13 @@ PATCH /users/{userId}/onlineMeetings/{meetingId}
 | endDateTime                 | 日期时间                                                   | 会议结束时间（UTC）。                                                        | 否                           |
 | subject                     | String                                                     | 联机会议的主题。                                                  | 否                           |
 | participants                | [meetingParticipants](../resources/meetingparticipants.md) | 与联机会议关联的参与者。 仅与会者可以更新。 | 否                           |
-| isEntryExitAnnounced        | 布尔值                                                    | 呼叫者加入或离开时是否宣布。                              | 是                          |
+| isEntryExitAnnounced        | 布尔                                                    | 呼叫者加入或离开时是否宣布。                              | 是                          |
 | lobbyBypassSettings         | [lobbyBypassSettings](../resources/lobbyBypassSettings.md) | 指定哪些参与者可以绕过会议厅。                          | 是                          |
 | allowedPresenters           | onlineMeetingPresenters                                    | 指定可在会议中成为演示者的人。                                      | 是 |
-| allowAttendeeToEnableCamera | 布尔值                                                    | 指示与会者是否可以打开其相机。                               | 是                          |
-| allowAttendeeToEnableMic    | 布尔值                                                    | 指示与会者是否可以打开其麦克风。                           | 是                          |
+| allowAttendeeToEnableCamera | 布尔                                                    | 指示与会者是否可以打开其相机。                               | 是                          |
+| allowAttendeeToEnableMic    | 布尔                                                    | 指示与会者是否可以打开其麦克风。                           | 是                          |
 | allowMeetingChat            | meetingChatMode                                            | 指定会议聊天的模式。                                                 | 是                          |
-| allowTeamworkReactions      | 布尔值                                                    | 指示是否Teams会议的反应。                      | 是                          |
+| allowTeamworkReactions      | 布尔                                                    | 指示是否Teams会议的反应。                      | 是                          |
 
 > [!NOTE]
 >
@@ -125,6 +125,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-start-end-subject-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-start-end-subject-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -215,6 +219,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-lobbybypasssettings-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-lobbybypasssettings-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

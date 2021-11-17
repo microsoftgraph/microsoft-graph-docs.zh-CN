@@ -2,15 +2,15 @@
 title: 创建日历
 description: 此 API 可用于在用户的日历组中新建日历。
 author: harini84
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f0f3fac9b9dcccb41ebea46b689080cfce879f4f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ac4b0494441f3afddc52cc87457e76f3d3f396ee
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047698"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61012534"
 ---
 # <a name="create-calendar"></a>创建日历
 
@@ -48,7 +48,7 @@ POST /me/calendarGroups/{id}/calendars
 POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 标头        | 值                       |
 | :------------ | :-------------------------- |
@@ -101,6 +101,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-calendar-from-calendargroup-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-calendar-from-calendargroup-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -108,7 +112,7 @@ Content-type: application/json
 
 ##### <a name="response"></a>响应
 
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ author: vishriv
 ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: apiPageType
-ms.openlocfilehash: ab12ed1b273d9d1f109035b872bdabfb678f17b9
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 540170e5e89a603feb94da6edbff58ac3eaf0e2d
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60943638"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61032807"
 ---
 # <a name="update-store"></a>更新存储
 命名空间：microsoft.graph.termStore
@@ -47,10 +47,10 @@ PATCH sites/{site-id}/termStore
 
 下表显示了可编辑存储对象 [的属性](../resources/termstore-store.md) 。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |defaultLanguageTag|String|默认语言 [microsoft.graph.termstore.store](../resources/termstore-store.md)。|
-|languageTags|String 集合|中可用的[microsoft.graph.termstore.store。](../resources/termstore-store.md)|
+|languageTags|String collection|中可用的[microsoft.graph.termstore.store。](../resources/termstore-store.md)|
 
 
 
@@ -91,6 +91,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-store-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-store-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

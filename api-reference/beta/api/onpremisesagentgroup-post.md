@@ -1,16 +1,16 @@
 ---
 title: 创建 onPremisesAgentGroup
 description: 创建新的 **onPremisesAgentGroup** 对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: dab2584a5cb71732fb62352075aae433303e24c4
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: 66dcfd68e2cb2de82e8bae8fe7c6d230afa0b3f8
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52781119"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61028208"
 ---
 # <a name="create-onpremisesagentgroup"></a>创建 onPremisesAgentGroup
 
@@ -20,7 +20,7 @@ ms.locfileid: "52781119"
 
 创建新的 [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -79,6 +79,10 @@ POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-onpremisesagent-from-onpremisesagentgroup-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-onpremisesagent-from-onpremisesagentgroup-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

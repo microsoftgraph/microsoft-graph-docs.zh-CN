@@ -1,16 +1,16 @@
 ---
 title: 获取 trustFrameworkKeySet
 description: 检索 trustframeworkkeyset 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: aadc3fb05b467b91577711b29867ae0957eb8ebd
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: d4867a40020440cfbd548ea05cbc3f7cf6c4f04c
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048902"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61033542"
 ---
 # <a name="get-trustframeworkkeyset"></a>获取 trustFrameworkKeySet
 
@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/beta/trustFramework/keySets/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-trustframeworkkeyset-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-trustframeworkkeyset-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

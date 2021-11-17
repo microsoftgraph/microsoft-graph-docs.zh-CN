@@ -5,12 +5,12 @@ author: mlafleur
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 38ab75a0a539088c4e1d1b67380875276dba47dd
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 12fb7e86a06aa9445920192cb15f8b902f8109a4
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60937347"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61031085"
 ---
 # <a name="create-educationclass"></a>创建 educationClass
 
@@ -19,7 +19,7 @@ ms.locfileid: "60937347"
 创建新的 [educationClass](../resources/educationclass.md) 对象。
 
 > [!NOTE]
-> 此操作还会创建通用组。 使用此 API 创建课程时，它会向组添加特殊属性，这将在使用组创建团队时在 Microsoft Teams 中添加分配和特殊处理等功能。 请注意，此 API 仅创建通用组，不会创建团队。 Microsoft Teams为教师提供了用户界面，以使用此 API 创建的组创建自己的班级团队。
+> 此操作还会创建通用组。 使用此 API 创建课程时，它会向组添加特殊属性，这将在使用组创建团队时在 Microsoft Teams 中添加分配和特殊处理等功能。 请注意，此 API 仅创建通用组，不会创建团队。 Microsoft Teams为教师提供用户界面，以使用此 API 创建的组创建自己的班级团队。
 
 ## <a name="permissions"></a>Permissions
 
@@ -60,7 +60,7 @@ POST /education/classes
 | id                   | String                                         | 对象标识符。 继承自 [实体](../resources/entity.md) |
 | displayName          | String                                         | 课程名称。                                                 |
 | mailNickname         | String                                         | 向所有成员发送电子邮件的邮件名称（如果已启用）。    |
-| description          | String                                         | 课程说明。                                          |
+| 说明          | String                                         | 课程说明。                                          |
 | createdBy            | [identitySet](../resources/identityset.md)     | 创建了课程的实体                                       |
 | classCode            | String                                         | 学校用于标识课程的课程代码。               |
 | externalName         | String                                         | 同步系统中的课程名称。                           |
@@ -123,6 +123,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-educationclass-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-educationclass-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

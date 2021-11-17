@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e06e0488818ed4df01688bb7187c057b5cdf9a70
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: b4c710a0fd78a07de14c48b576084c3d12121525
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60289803"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61026066"
 ---
 # <a name="archive-team"></a>存档团队
 
@@ -18,8 +18,7 @@ ms.locfileid: "60289803"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-存档指定的[团队](../resources/team.md)。 存档团队后，用户无法再团队中的任意频道上发送或点赞消息，无法再编辑团队名称、说明和其他设置，且通常也无法再对团队进行大部分更改。
-仍可向团队进行成员身份更改。
+将指定[团队](../resources/team.md)存档。存档团队后，用户将无法再在团队中的任意频道中发送或点赞消息，无法再编辑团队名称、说明和其他设置，且通常也无法再对团队进行大部分更改。将继续允许对团队进行成员身份更改。
 
 存档是异步操作。该异步操作成功完成后，团队即已存档，此 API 作出响应后就可能出现此情况。
 
@@ -32,7 +31,7 @@ ms.locfileid: "60289803"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | TeamSettings.ReadWrite.All、Group.ReadWrite.All **、Directory.ReadWrite.All** |
+|委派（工作或学校帐户） | TeamSettings.ReadWrite.All，Group.ReadWrite.All **，Directory.ReadWrite.All** |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | TeamSettings.ReadWrite.Group *、TeamSettings.ReadWrite.All、Group.ReadWrite.All**、Directory.ReadWrite.All** |
 
@@ -89,6 +88,10 @@ POST https://graph.microsoft.com/beta/teams/{id}/archive
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/archive-team-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/archive-team-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

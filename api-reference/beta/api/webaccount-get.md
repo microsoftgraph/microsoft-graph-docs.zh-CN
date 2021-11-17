@@ -1,16 +1,16 @@
 ---
 title: 获取 webAccount
 description: 检索 webAccount 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 1d1f873632721f5fac2b0dd656b65f0f8128c132
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: d8e2ebc13a4be383756548f4ee31c2339d654572
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050715"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61031288"
 ---
 # <a name="get-webaccount"></a>获取 webAccount
 
@@ -20,7 +20,7 @@ ms.locfileid: "52050715"
 
 从用户配置文件中检索 [webAccount](../resources/webaccount.md) 对象的属性和 [关系](../resources/profile.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/me/profile/webAccounts/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-webaccount-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-webaccount-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

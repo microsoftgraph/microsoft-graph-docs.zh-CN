@@ -1,16 +1,16 @@
 ---
 title: 更新 inferenceClassificationOverride
 description: '按指定 **更改重点** 收件箱替代的 classifyAs 字段。 '
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: abheek-das
 ms.prod: ''
-ms.openlocfilehash: 655be2a14ca6948bcb76bda02c1aaca43c5ad09b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 5129199e339564147ffcecdc6258247892ecf5f5
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52040516"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61032366"
 ---
 # <a name="update-inferenceclassificationoverride"></a>更新 inferenceClassificationOverride
 
@@ -26,7 +26,7 @@ ms.locfileid: "52040516"
 
 如果发件人的替代存在，并且发件人更改了他/她的 SMTP 地址，“更新”此发件人的替代的唯一方法是：[删除](inferenceclassificationoverride-delete.md) 现有替代，然后使用新的 SMTP 地址 [创建](inferenceclassification-post-overrides.md) 新替代。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -92,10 +92,14 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-inferenceclassificationoverride-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-inferenceclassificationoverride-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

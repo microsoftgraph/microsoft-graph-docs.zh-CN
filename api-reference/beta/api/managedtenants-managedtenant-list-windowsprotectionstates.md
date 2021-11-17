@@ -2,15 +2,15 @@
 title: 列出 windowsProtectionStates
 description: 获取 windowsProtectionState 对象及其属性的列表。
 author: isaiahwilliams
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: ae7de7e8edbb0141df25db91464a45ac1a6499fe
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: a8ed5f9d2ec6b40f301247a0023633c204d1a276
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53442290"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61028411"
 ---
 # <a name="list-windowsprotectionstates"></a>列出 windowsProtectionStates
 命名空间：microsoft.graph.managedTenants
@@ -19,7 +19,7 @@ ms.locfileid: "53442290"
 
 获取 [windowsProtectionState](../resources/managedtenants-windowsprotectionstate.md) 对象及其属性的列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/windowsP
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-windowsprotectionstate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-windowsprotectionstate-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,16 +1,16 @@
 ---
 title: 列出位置
 description: 检索 place 对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 019198d0173155c673e12a266bcf41922e040f81
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 5bcb2e3f4ea7da96f88c8f0c820fb5e314a5455f
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055391"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61033936"
 ---
 # <a name="list-places"></a>列出位置
 
@@ -22,8 +22,8 @@ ms.locfileid: "52055391"
 
 **place** 对象可以是下列类型之一：
 
-* [包含](../resources/room.md)丰富属性（如会议室的电子邮件地址）以及辅助功能、容量和设备支持的聊天室。 
-* [包含会议室](../resources/roomlist.md)列表的电子邮件地址的会议室列表，以及用于获取会议室列表中会议室实例集合的导航属性。 
+* [包含](../resources/room.md)丰富属性（例如会议室的电子邮件地址）以及辅助功能、容量和设备支持的聊天室。 
+* [会议室列表](../resources/roomlist.md)，其中包括会议室列表的电子邮件地址，以及用于获取会议室列表中会议室实例集合的导航属性。 
 
 **room 和** **roomList** 均派生自 **place** 对象。
 
@@ -73,7 +73,7 @@ GET /places/{room-list-emailaddress}/microsoft.graph.roomlist/rooms
 - $skip
 - $count=true
 
-使用$top自定义页面大小。 默认页面大小是 100。
+使用 $top自定义页面大小。 默认页面大小是 100。
 
 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
@@ -122,6 +122,10 @@ GET https://graph.microsoft.com/beta/places/microsoft.graph.room
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-all-rooms-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-all-rooms-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -244,6 +248,10 @@ GET https://graph.microsoft.com/beta/places/microsoft.graph.roomlist
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-all-roomlists-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-all-roomlists-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

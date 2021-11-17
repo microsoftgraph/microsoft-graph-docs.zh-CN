@@ -1,16 +1,16 @@
 ---
 title: 邮件：发送
 description: 发送现有草稿邮件。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ea24ae69c3888e31124df758bc22199bde1048ea
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: 2ccbf8b182b75247a8dc91084cfefd89b4431c9b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52645519"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60974830"
 ---
 # <a name="message-send"></a>邮件：发送
 
@@ -20,14 +20,14 @@ ms.locfileid: "52645519"
 
 发送现有草稿邮件。 
 
-草稿邮件可以是新邮件草稿、答复[](../api/user-post-messages.md)[草稿](../api/message-createreply.md)[、全部答复草稿](../api/message-createreplyall.md)或转发[草稿](../api/message-createforward.md)。 
+邮件草稿可以是新邮件[草稿](../api/user-post-messages.md)、[答复草稿](../api/message-createreply.md)、[答复全部草稿](../api/message-createreplyall.md)或[转发草稿](../api/message-createforward.md)。 
 
-此方法将邮件保存在"已发送 **的项目"** 文件夹中。
+此方法将邮件保存在 **“已发送邮件”** 文件夹中。
 
-或者， [在单个操作中](../api/user-sendmail.md) 发送新邮件。
+或者，通过一次操作[发送新消息](../api/user-sendmail.md)。
 
 ## <a name="permissions"></a>权限
-若要调用此 API，需要以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -52,7 +52,7 @@ POST /users/{id | userPrincipalName}/messages/{id}/send
 | Content-Length | number | 0。必需。 |
 
 ## <a name="request-body"></a>请求正文
-由于此方法发送现有的草稿邮件，因此不需要指定请求正文。
+由于此方法发送了现有草稿邮件，因此不需要指定请求正文。
 
 ## <a name="response"></a>响应
 
@@ -90,6 +90,10 @@ POST https://graph.microsoft.com/beta/me/messages/{id}/send
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/message-send-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/message-send-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

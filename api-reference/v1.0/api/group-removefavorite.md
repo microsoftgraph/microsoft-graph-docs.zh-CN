@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 8ab79d00fd73a72c156a0a79fd9e52b1c6668d5a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: cdb958ad865756df6ca9e5f5c8d210b2ca67e054
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59074233"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61030911"
 ---
 # <a name="group-removefavorite"></a>group: removeFavorite
 
@@ -18,7 +18,7 @@ ms.locfileid: "59074233"
 
 从当前用户收藏夹组列表中删除组。 仅支持 Microsoft 365 组。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -35,7 +35,7 @@ POST /groups/{id}/removeFavorite
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
-| Authorization  | 持有者{令牌}。必需。  |
+| Authorization  | Bearer {token}。必需。  |
 | Prefer | return=minimal。 如果 minimal 响应头包含在请求头中，那么成功响应返回 `204 No Content` 代码。 可选。  | 
 
 ## <a name="request-body"></a>请求正文
@@ -70,6 +70,10 @@ POST https://graph.microsoft.com/v1.0/groups/{id}/removeFavorite
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/group-removefavorite-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/group-removefavorite-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

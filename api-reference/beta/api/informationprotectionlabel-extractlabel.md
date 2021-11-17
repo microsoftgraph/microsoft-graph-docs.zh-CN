@@ -1,16 +1,16 @@
 ---
 title: informationProtectionLabel： extractLabel
 description: 使用标记对象的元数据检索 informationProtectionContentLabel。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: tommoser
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: c0a7012c02132ad2ed46d82e857e8de62be1e746
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: 53283d6c90c99fa848bb67d0547a8ad12d285c93
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579611"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61012073"
 ---
 # <a name="informationprotectionlabel-extractlabel"></a>informationProtectionLabel： extractLabel
 
@@ -46,7 +46,7 @@ POST /informationprotection/policy/labels/extractLabel
 | 名称          | 说明                                                                                                                                                                       |
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Authorization | Bearer {token}。必需。                                                                                                                                                         |
-| Content-type  | 内容类型：application/json。 必填。                                                                                                                                         |
+| Content-type  | 内容类型：application/json。 必需。                                                                                                                                         |
 | User-Agent    | 描述调用应用程序的名称和版本。 详细信息将显示于 Azure 信息保护分析中。 建议的格式为 ApplicationName/Version。 可选。 |
 
 ## <a name="request-body"></a>请求正文
@@ -143,6 +143,10 @@ User-agent: ContosoLOBApp/1.0
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/informationprotectionlabel-extractlabel-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/informationprotectionlabel-extractlabel-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

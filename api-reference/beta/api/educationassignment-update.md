@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 6b676f28d74484a35374bd61f2099bd9b540ac46
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 615f9eec57a4ec87ef7dccad3226a83d2a4a9a5b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60938886"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61003148"
 ---
 # <a name="update-educationassignment"></a>更新 educationassignment
 
@@ -22,7 +22,7 @@ ms.locfileid: "60938886"
 
 只有班级中的教师可以这样做。 请注意，你不能使用 PATCH 请求更改工作分配 **的状态**。 使用 [发布](../api/educationassignment-publish.md) 操作可更改 **工作分配** 状态。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -45,12 +45,12 @@ PATCH /education/classes/{class-id}/assignments/{assignment-id}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |addedStudentAction|String| 控制在作业发布后添加的学生的行为。|
 |addToCalendarAction|educationAddToCalendarOptions|可选字段，用于控制发布作业时将作业添加到学生和教师日历的作业行为。 可能的值是 `none` `studentsAndPublisher` ：、、 `studentsAndTeamOwners` `studentsOnly` 和 `unknownFutureValue` 。 默认值为 `none`。|
-|allowLateSubmissions|Boolean| 提交是否可在截止日期后提交。|
-|allowStudentsToAddResourcesToSubmission|Boolean| 学生是否可以向提交中添加资源。 指示提交中的唯一项目是否来自工作分配资源列表。 |
+|allowLateSubmissions|布尔| 提交是否可在截止日期后提交。|
+|allowStudentsToAddResourcesToSubmission|布尔| 学生是否可以向提交中添加资源。 指示提交中的唯一项目是否来自工作分配资源列表。 |
 |assignDateTime|DateTimeOffset| 作业应发布到学生的日期。 |
 |assignTo|educationAssignmentRecipient| 获得作业的学生。|
 |closeDateTime|DateTimeOffset| 工作分配关闭提交的日期。 如果分配不允许LateSubmissions或 closeDateTime 与 dueDateTime 相同，则该字段可以是 null 的可选字段，但如果指定，它必须大于或等于 dueDateTime。|
@@ -101,6 +101,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-educationassignment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-educationassignment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

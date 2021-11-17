@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mlafleur
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 7fc653b85ed40f059ed46d2b858155f8db5efb87
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 678048d58225396b7ce41d5d5316a3edfb03e89f
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59114664"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61025652"
 ---
 # <a name="get-educationclass"></a>获取 educationClass
 
@@ -18,7 +18,7 @@ ms.locfileid: "59114664"
 
 从系统检索课程。 课程是带特殊属性的通用组，向系统表明该组是课程。 Group members represent the students;组管理员表示班级中的教师。 如果使用的是委派令牌，用户只会看到他们作为成员的课程。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -81,6 +81,10 @@ GET /education/classes/{educationClassId}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-educationclass-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-educationclass-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,27 +1,27 @@
 ---
 title: 列出 accessReviewInstanceDecisionItem 待审批
 description: 检索调用用户等待审批的 accessReviewInstanceDecisionItem 对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: d1ce0293510f2f9a6ca526216b3fc2ad024b6285
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: ea2ae928596ec02642d599fa29516d5da2c90808
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53030472"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60991813"
 ---
-# <a name="list-accessreviewinstancedecisionitems-pending-approval-deprecated"></a>列出 accessReviewInstanceDecisionItems 待审批 (已弃) 
+# <a name="list-accessreviewinstancedecisionitems-pending-approval-deprecated"></a>列出 accessReviewInstanceDecisionItems 待审批 (弃) 
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >[!NOTE]
->此方法将弃用，并将于 2023 年 5 月 19 日停止返回数据。 它已被 [filterByCurrentUser 取代](accessreviewinstancedecisionitem-filterbycurrentuser.md)。
+>此方法将弃用，并将于 2023 年 5 月 19 日停止返回数据。 它已被替换为 [filterByCurrentUser](accessreviewinstancedecisionitem-filterbycurrentuser.md)。
 
-检索[调用用户等待审批的特定 accessReviewInstanceDecisionItem](../resources/accessreviewinstance.md)对象的[accessReviewInstance。](../resources/accessreviewscheduledefinition.md) 返回零个或多个 accessReviewInstanceDecisionItem 对象的列表，包括其所有嵌套属性。
+检索[调用用户等待批准的特定 accessReviewInstanceDecisionItem](../resources/accessreviewinstance.md)对象的[accessReviewInstance。](../resources/accessreviewscheduledefinition.md) 返回零个或多个 accessReviewInstanceDecisionItem 对象的列表，包括所有嵌套属性。
 
 >[!NOTE]
 >此 API 的默认页面大小为 100 accessReviewInstanceDecisionItem 对象。 若要提高效率并避免由于大型结果集而超时，请通过使用 和 查询参数应用 `$skip` `$top` 分页。 有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。
@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/beta/me/pendingAccessReviewInstances/70a68410-67
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-accessreviewinstancedecisionitem-pendingapproval-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-accessreviewinstancedecisionitem-pendingapproval-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,16 +1,16 @@
 ---
 title: Get profileCardProperty
 description: 检索 profileCardProperty 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 35c6f2cf1d0beb56d1dafbc8e31b93973e0e2aa5
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 79762b94917b8d83c1bb0251ee07927176e8c504
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52036714"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61032149"
 ---
 # <a name="get-profilecardproperty"></a>Get profileCardProperty
 
@@ -18,9 +18,9 @@ ms.locfileid: "52036714"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[profileCardProperty](../resources/profilecardproperty.md)实体的属性和关系，其中包含给定字段的 Microsoft 365 组织中存在的配置文件卡自定义。 profileCardProperty 由 **它的 directoryPropertyName** 属性标识。
+检索[profileCardProperty](../resources/profilecardproperty.md)实体的属性和关系，其中包含给定字段的 Microsoft 365 组织中存在的配置文件卡自定义项。 profileCardProperty 由 **它的 directoryPropertyName** 属性标识。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/prof
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-profilecardproperty-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-profilecardproperty-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,16 +1,16 @@
 ---
 title: 列出 webAccounts
 description: 检索 webAccounts 对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: cfffb7852c2abd86503009cdb82b5ba6660698ff
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 59c7cf10ef2ae1288d2486544232f21f29c49568
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52037085"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61027962"
 ---
 # <a name="list-webaccounts"></a>列出 webAccounts
 
@@ -20,7 +20,7 @@ ms.locfileid: "52037085"
 
 从用户配置文件中检索 [webAccounts](../resources/webaccount.md) 对象 [的列表](../resources/profile.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -45,7 +45,7 @@ GET /users/{id | userPrincipalName}/profile/webAccounts
 
 |名称            |值    |说明                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|$filter         |string   |将响应限制到仅包含指定条件的对象。                                                                                             |
+|$filter         |string   |将响应范围限定为仅包含指定条件的对象。                                                                                             |
 |$orderby        |string   |默认情况下，响应中的对象按查询中的 createdDateTime 值进行排序。 可以使用 $orderby 参数 *更改响应* 的顺序。|
 |$select         |string   |要在响应中添加的属性列表（以逗号分隔）。为获得最佳结果，请仅选择所需属性的子集。                                        |
 |$skip           |int      |跳过前 n 个结果，可用于分页。                                                                                                                                |
@@ -94,6 +94,10 @@ GET https://graph.microsoft.com/beta/me/profile/webAccounts
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-webaccounts-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-webaccounts-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

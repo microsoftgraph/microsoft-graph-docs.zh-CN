@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 66833b70cc49ce595204ad72f0adbb8c476822bd
-ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
+ms.openlocfilehash: 1c714d48fe46983a4a6b76b0e023ee2036293c2b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "59996001"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61032262"
 ---
 # <a name="delete-onlinemeeting"></a>删除 onlineMeeting
 
@@ -28,7 +28,7 @@ ms.locfileid: "59996001"
 | 委派（个人 Microsoft 帐户） | 不支持。                              |
 | 应用程序                            | OnlineMeetings.ReadWrite.All*                |
 
-若要对此 API 使用应用程序权限，租户管理员必须创建应用程序[](/graph/cloud-communication-online-meeting-application-access-policy)访问策略，并授予用户授权策略中配置的应用代表该用户 (在请求路径) 中指定用户 ID 删除联机会议。
+若要对此 API 使用应用程序权限，租户管理员必须创建应用程序[](/graph/cloud-communication-online-meeting-application-access-policy)访问策略，并授予用户授权策略中配置的应用代表该用户 (使用请求路径) 中指定的用户 ID 删除联机会议。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -83,6 +83,10 @@ DELETE https://graph.microsoft.com/beta/me/onlineMeetings/550fae72-d251-43ec-868
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-call-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-call-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

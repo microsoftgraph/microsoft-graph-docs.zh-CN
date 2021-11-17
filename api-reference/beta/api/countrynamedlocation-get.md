@@ -1,16 +1,16 @@
 ---
 title: 获取 countryNamedLocation
 description: 检索 countryNamedlocation 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6cf9cb310db478ef7481ff514917fc49d5a4b8b9
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 7e6ed9903144e6443b8bfa745fd027e825e2afa9
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52046998"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61034613"
 ---
 # <a name="get-countrynamedlocation"></a>获取 countryNamedLocation
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations/1
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-countrynamedlocation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-countrynamedlocation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

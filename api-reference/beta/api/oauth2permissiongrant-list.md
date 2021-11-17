@@ -5,14 +5,14 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: d2bd9db01e1da526268c28cdec5332f63dfab0bd
-ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
+ms.openlocfilehash: 55e4e2477e2893b06044b099aab30b40fd67004d
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60891149"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61032304"
 ---
-# <a name="list-oauth2permissiongrants-delegated-permission-grants"></a>列出 oauth2PermissionGrants (委派权限授予) 
+# <a name="list-oauth2permissiongrants-delegated-permission-grants"></a>列出 oauth2PermissionGrants (委派的权限授予) 
 
 命名空间：microsoft.graph
 
@@ -23,7 +23,7 @@ ms.locfileid: "60891149"
 > [!NOTE]
 > 此请求对最近创建、更新或删除的委派权限授予可能具有复制延迟。 如果指定了筛选，此延迟 `clientId` 将最小化。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/oauth2PermissionGrants
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-oauth2permissiongrants-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-oauth2permissiongrants-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

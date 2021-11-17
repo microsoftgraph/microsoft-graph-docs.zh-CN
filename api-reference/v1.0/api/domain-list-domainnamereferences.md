@@ -2,15 +2,15 @@
 title: 列出 domainNameReferences
 description: 检索具有对域的引用的 directoryObject 列表。
 author: adimitui
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 87a244e1a89c3f23c184796777e027fd314dcfe992447c06618bfeef90e03132
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 55a476f8e9f38ddbde2cf42ac492d39381927c3a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57274081"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61006367"
 ---
 # <a name="list-domainnamereferences"></a>列出 domainNameReferences
 
@@ -25,16 +25,16 @@ ms.locfileid: "57274081"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | 不支持。 |
+|委派（工作或学校帐户） | Domain.Read.All、Domain.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Domain.ReadWrite.All |
+|应用程序 | Domain.Read.All、Domain.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /domains/{domain-id}/domainNameReferences
+GET /domains/{id}/domainNameReferences
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/v1.0/domains/contoso.com/domainNameReferences
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-domainnamereferences-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-domainnamereferences-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

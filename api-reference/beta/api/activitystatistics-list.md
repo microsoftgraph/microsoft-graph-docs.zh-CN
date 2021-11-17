@@ -1,16 +1,16 @@
 ---
 title: 列出 activityStatistics
 description: 获取 activityStatistics 对象的集合。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: madehmer
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 422d6b3d03129d2e1c7169f3131c46fadc457e35
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6b31c5abb34508431b86d9b57c54fa88c0f29ccd
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048307"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60987627"
 ---
 # <a name="list-activitystatistics"></a>列出 activityStatistics
 
@@ -43,7 +43,7 @@ GET /users/{id|userPrincipalName}/analytics/activitystatistics
 
 此方法不支持自定义响应的可选查询参数。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称      |说明|
 |:----------|:----------|
@@ -89,12 +89,16 @@ GET https://graph.microsoft.com/beta/me/analytics/activitystatistics
 [!INCLUDE [sample-code](../includes/snippets/java/get-activitystatistics-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-activitystatistics-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例，该响应具有用户的所有相关活动统计信息。 此响应只显示一周活动的第一天，以缩短其可读性。
+下面是一个响应示例，该响应具有用户的所有相关活动统计信息。 此响应只显示一周中活动的第一天，以缩短活动时间，提高可读性。
 
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 

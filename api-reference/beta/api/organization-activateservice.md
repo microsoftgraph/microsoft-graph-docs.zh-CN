@@ -2,15 +2,15 @@
 title: organization： activateService
 description: 为组织激活服务。
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: c65d864fcfcabab5616113528f3e347238828bc5
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 859bf503fb0fa2cdac018e194f3ead67e9ca4792
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53207667"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60985940"
 ---
 # <a name="organization-activateservice"></a>organization： activateService
 
@@ -21,7 +21,7 @@ ms.locfileid: "53207667"
 为组织激活服务。
 
 ## <a name="permissions"></a>权限
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 若要为组织激活服务，请求者需要具有以下权限的公司管理员角色。 
 
@@ -95,6 +95,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/organization-activateservice-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/organization-activateservice-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

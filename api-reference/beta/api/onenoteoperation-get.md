@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: a8ed7c83b50da0335895f270359eaea1ee24d19a
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 48e7b4cb1fcf3a40dfb82024bb282b77b047a848
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60946788"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60985969"
 ---
 # <a name="get-onenoteoperation"></a>获取 onenoteOperation
 
@@ -20,13 +20,13 @@ ms.locfileid: "60946788"
 
 获取长时间运行的操作OneNote状态。 这适用于在响应中返回 **Operation-Location** 标头的操作，如 、 `CopyNotebook` `CopyToNotebook` 、 `CopyToSectionGroup` 、 `and CopyToSection` 。   
 
-你可以轮询 Operation-Location 终结点，直到 `status` 属性返回 `completed` 或 `failed` 。 
+你可以轮询 Operation-Location 终结点，直到 `status` 属性返回 或 `completed` `failed` 。 
 
 如果状态为 `completed` ， `resourceLocation` 则 属性包含资源终结点 URI。 
 
 如果状态为 `failed` ，则错误 `@api.diagnostics` 和属性提供错误信息。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/beta/me/onenote/operations/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-onenoteoperation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-onenoteoperation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

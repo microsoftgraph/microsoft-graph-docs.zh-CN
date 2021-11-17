@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: c88ce71a93396aebc6d17be68b86fbd78b24fb24
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: c96ea16893f28461b8dc8c2c40f88c8634504843
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60925214"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61028524"
 ---
 # <a name="update-governancerolesetting"></a>更新 governanceRoleSetting
 
@@ -25,7 +25,7 @@ ms.locfileid: "60925214"
 ## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference#privileged-access-permissions)。
 
->**注意：** 此 API 还要求请求者至少具有一个管理员角色分配 (`Active` `owner` 或) `user access administrator` 资源。
+>**注意：** 此 API 还要求请求者至少具有一个角色分配 (`Active` `owner` 或) `user access administrator` 管理员。
 
 |权限类型      | 权限              |
 |:--------------------|:---------------------------------------------------------|
@@ -71,7 +71,7 @@ PATCH /privilegedAccess/azureResources/roleSettings/{id}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [需要更新的 governanceRuleSettings](../resources/governancerulesetting.md) 的值。 
 
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |adminEligibleSettings|[governanceRuleSetting](../resources/governancerulesetting.md) 集合|管理员尝试添加符合条件的规则时评估的规则角色分配。|
 |adminMemberSettings|[governanceRuleSetting](../resources/governancerulesetting.md) 集合|管理员尝试添加直接成员角色时评估的规则角色分配。|
@@ -125,6 +125,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-governancerolesetting-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-governancerolesetting-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: project-rome
 author: ailae
 doc_type: apiPageType
-ms.openlocfilehash: fbcee28fdf2ac2683b45139e367f2617279d4d09
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: cb6ac6464d7dafe1c3050c12e5f02364caff8d83
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59104787"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61008747"
 ---
 # <a name="delete-a-historyitem"></a>删除 historyItem
 
@@ -69,6 +69,10 @@ PUT https://graph.microsoft.com/v1.0/me/activities/{activity-id}/historyItems/{i
 ```
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-historyitem-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-historyitem-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

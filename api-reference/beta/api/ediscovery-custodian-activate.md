@@ -2,15 +2,15 @@
 title: custodian： activate
 description: 在案例内重新激活保管人。
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 82f79abee2fe7cc64ce7f4efb4f7c950a29b7b88
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 7da87d8e4a9dd784f336be93dc87c04789a5a1d2
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50446064"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61028726"
 ---
 # <a name="custodian-activate"></a>custodian： activate
 
@@ -18,7 +18,7 @@ ms.locfileid: "50446064"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-激活从案例释放的保管人，使其再次成为案例的一部分。 有关详细信息，请参阅 ["管理高级电子数据展示"案例中的保管人](/microsoft-365/compliance/manage-new-custodians#re-activate-custodian)。
+激活从案例释放的保管人，使其再次成为案例的一部分。 有关详细信息，请参阅[管理案例的Advanced eDiscovery保管人](/microsoft-365/compliance/manage-new-custodians#re-activate-custodian)。
 
 ## <a name="permissions"></a>Permissions
 
@@ -28,7 +28,7 @@ ms.locfileid: "50446064"
 |:---|:---|
 |委派（工作或学校帐户）|eDiscovery.Read.All、eDiscovery.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -85,6 +85,10 @@ POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/2192ca408ea241
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/custodian-activate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/custodian-activate-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

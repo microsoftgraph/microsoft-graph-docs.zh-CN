@@ -5,12 +5,12 @@ author: isaiahwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 28bbbf5e96637d693cd01a71c2dc1dec2e4f4d83
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: f1c2ae61e2df3265d4b8383fb428478f382d4bfb
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60938760"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61014606"
 ---
 # <a name="tenanttag-assigntag"></a>tenantTag：assignTag
 命名空间：microsoft.graph.managedTenants
@@ -19,7 +19,7 @@ ms.locfileid: "60938760"
 
 将租户标记分配给指定的托管租户。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -49,9 +49,9 @@ POST /tenantRelationships/managedTenants/tenantTags/{tenantTagId}/assignTag
 
 下表显示了可用于此操作的参数。
 
-|参数|类型|Description|
+|参数|类型|说明|
 |:---|:---|:---|
-|tenantIds|String 集合|应Azure Active Directory租户标记的租户标识符的集合。|
+|tenantIds|String collection|应Azure Active Directory租户标记的租户标识符的集合。|
 
 ## <a name="response"></a>响应
 
@@ -91,6 +91,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/tenanttag-assigntag-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/tenanttag-assigntag-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
