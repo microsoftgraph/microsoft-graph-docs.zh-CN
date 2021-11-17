@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: fc93caf0471c1f8c0e3d73b895a530b809656548
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: bd7ceb47c3a1d95264405a3d72ef140742c63933
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59097840"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61008488"
 ---
 # <a name="update-unifiedroledefinition"></a>更新 unifiedRoleDefinition
 
@@ -52,7 +52,7 @@ PATCH /roleManagement/directory/roleDefinitions/{id}
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |说明|String| 角色定义的说明。 **isBuiltIn** 为 时为只读 `true` 。 |
-|displayName|String| 角色显示名称的项。 **isBuiltIn** 为 时为只读 `true` 。 必填。|
+|displayName|String| 角色显示名称的角色定义。 **isBuiltIn** 为 时为只读 `true` 。 必需。|
 |isEnabled|Boolean| 指示角色是否已启用分配的标志。 如果 `false` 为 ，则角色不可用于分配。 **isBuiltIn** 为 true 时为只读。 |
 |resourceScopes|String collection| 角色定义适用的作用域和权限列表。 当前仅 `/` 受支持。 **isBuiltIn** 为 true 时为只读。 **请勿使用。此属性将很快弃用。将作用域附加到角色分配。**|
 |rolePermissions|[unifiedRolePermission](../resources/unifiedrolepermission.md) 集合| 角色中包含的权限列表。 **isBuiltIn** 为 时为只读 `true` 。 必需。 |
@@ -109,6 +109,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-unifiedroledefinition-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-unifiedroledefinition-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

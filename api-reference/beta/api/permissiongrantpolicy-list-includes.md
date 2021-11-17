@@ -1,18 +1,18 @@
 ---
-title: 列表包括 permissionGrantPolicy 的集合
+title: 列表包括 permissionGrantPolicy 集合
 description: 检索条件集的列表，这些条件集描述权限授予策略中包括权限授予事件的条件。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: c1fc71f56c662b1558d11fe10404a67395fb4813
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 372e91d2f1f94a937ab9f9bff6433add772d9706
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055412"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60985737"
 ---
-# <a name="list-includes-collection-of-permissiongrantpolicy"></a>列表包括 permissionGrantPolicy 的集合
+# <a name="list-includes-collection-of-permissiongrantpolicy"></a>列表包括 permissionGrantPolicy 集合
 
 命名空间：microsoft.graph
 
@@ -41,7 +41,7 @@ GET /policies/permissionGrantPolicies/{id}/includes
 
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称           | 说明                |
 |:---------------|:---------------------------|
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/policies/permissionGrantPolicies/microsoft-
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/permissiongrantpolicy-get-includes-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/permissiongrantpolicy-get-includes-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

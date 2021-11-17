@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 2764533911aa9d398233474dfe0fa9d9921d4c5d
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 12644b0ecab23b3c7544fd9a7e284e7e54d69175
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60927111"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60986899"
 ---
 # <a name="create-custodian-usersource"></a>创建 custodian userSource
 
@@ -20,7 +20,7 @@ ms.locfileid: "60927111"
 
 创建新的保管人 [userSource](../resources/ediscovery-usersource.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -54,7 +54,7 @@ POST /compliance/ediscovery/cases/{caseId}/custodians/{custodianId}/userSources
 
 下表显示创建 [userSource](../resources/ediscovery-usersource.md)时所需的属性。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |email|String|用户的 SMTP 地址。|
 |includedSources|microsoft.graph.ediscovery.sourceType|指定此组中包含的源。 可取值为：`mailbox`、`site`。|
@@ -98,6 +98,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-usersource-from--1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-usersource-from--1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

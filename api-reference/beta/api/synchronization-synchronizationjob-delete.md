@@ -1,16 +1,16 @@
 ---
 title: 删除 synchronizationJob
 description: 停止同步作业，并永久删除与其关联的所有状态。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: d4b154cca11b46c53d6929ea9522a7ff36c3b908
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 41a170fe2fd1484208a27c00dbf5b342039a57ad
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50773576"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61002006"
 ---
 # <a name="delete-synchronizationjob"></a>删除 synchronizationJob
 
@@ -27,7 +27,7 @@ ms.locfileid: "50773576"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     |Directory.ReadWrite.All  |
 |委派（个人 Microsoft 帐户） |不支持。  |
-|Application                            |Application.ReadWrite.OwnedBy、Directory.ReadWrite.All | 
+|应用程序                            |Application.ReadWrite.OwnedBy、Directory.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -76,6 +76,10 @@ DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/j
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-synchronizationjob-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-synchronizationjob-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

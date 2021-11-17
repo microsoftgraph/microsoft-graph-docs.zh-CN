@@ -1,16 +1,16 @@
 ---
 title: 创建开放扩展
 description: 使用 openTypeExtension (创建开放扩展) 并添加自定义属性
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 616aab701eab50bfc716b3a27bc98b0b9862ae2d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 82e056a98825c28e66f129f37061508715e3b5c4
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050092"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60986005"
 ---
 # <a name="create-open-extension"></a>创建开放扩展
 
@@ -18,7 +18,7 @@ ms.locfileid: "52050092"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用 [openTypeExtension](../resources/opentypeextension.md) (创建开放扩展) 受支持的资源的新实例或现有实例中添加自定义属性。
+使用 [openTypeExtension](../resources/opentypeextension.md) (创建一个开放扩展) 在受支持的资源的新实例或现有实例中添加自定义属性。
 
 "权限" ["](#permissions) "部分中列出支持打开扩展的资源。
 
@@ -59,7 +59,7 @@ POST /users/{id|userPrincipalName}/todo/lists/{id}/tasks
 POST /users/{id|userPrincipalName}/todo/lists
 ```
 
->**请注意：** 此语法显示了一些创建受支持资源实例的常用方式。 可用来创建这些资源实例的所有其他 POST 语法均支持以类似的方式从中创建开放扩展。
+>**注意：** 此语法显示了一些创建支持的资源实例的常见方法。可以用来创建这些资源实例的所有其他 POST 语法均支持以类似的方式从中创建开放扩展。
 
 若要了解如何在请求正文中添加新资源实例和 _扩展_ 的属性，请参阅 [请求正文](#request-body)部分。
 
@@ -83,7 +83,7 @@ POST /users/{id|userPrincipalName}/todo/lists/{id}/tasks/{id}/extensions
 POST /users/{id|userPrincipalName}/todo/lists/{id}/extensions
 ```
 
->**请注意：** 以上语法显示一些标识资源实例的常见方法，以便在其中创建一个扩展。 可用来标识这些资源实例的所有其他语法均支持以类似的方式在其中创建开放扩展。
+>**注意：** 此语法显示了一些标识资源实例的常见方法，以便在其中创建一个扩展。可以用来标识这些资源实例的所有其他语法均支持以类似的方式在其中创建开放扩展。
 
 若要了解如何在请求正文中添加 _扩展_，请参阅 [请求正文](#request-body)部分。
 
@@ -117,8 +117,7 @@ POST /users/{id|userPrincipalName}/todo/lists/{id}/extensions
 
 响应代码可以是 `201 Created`，也可以是 `202 Accepted`，具体视操作而定。
 
-使用创建资源实例时所用的操作创建扩展时，操作所返回的响应代码与通过该操作创建不带扩展的资源实例时返回的代码相同。
-请参阅有关创建实例的相应主题，如[上 ](#create-an-extension-in-a-new-resource-instance)所列。
+使用你用于创建资源实例的相同操作创建扩展时，操作所返回的响应代码与通过该操作创建不带扩展的资源实例时返回的代码相同。请参阅有关创建实例的相应主题，如[上](#create-an-extension-in-a-new-resource-instance)所列。
 
 ### <a name="response-body"></a>响应正文
 
@@ -185,6 +184,10 @@ Content-Type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/post-opentypeextension-1-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-opentypeextension-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -310,6 +313,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/post-opentypeextension-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-opentypeextension-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -381,6 +388,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/post-opentypeextension-3-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-opentypeextension-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -464,6 +475,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/post-opentypeextension-4-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-opentypeextension-4-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -540,6 +555,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/post-opentypeextension-5-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-opentypeextension-5-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

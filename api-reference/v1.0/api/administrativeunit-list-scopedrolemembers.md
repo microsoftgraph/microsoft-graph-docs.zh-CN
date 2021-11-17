@@ -5,19 +5,19 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7daacd688bbce4c751a0a7f486cf5b8fb29b60e9
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 054ea9e070240d7b3e640000003b7504e286cb9f
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60924772"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61001453"
 ---
 # <a name="list-scopedrolemembers"></a>列出 scopedRoleMembers
 
 命名空间：microsoft.graph
 
 检索 [scopedRoleMembership 资源](../resources/scopedrolemembership.md) 的列表。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -73,6 +73,10 @@ GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/scopedRo
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-scopedrolemember-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-scopedrolemember-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

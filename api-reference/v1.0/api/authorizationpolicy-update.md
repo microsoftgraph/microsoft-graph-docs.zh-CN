@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 072e6f82a26fd234547207a86b17f335f48854b0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: edbd4162f1f3fe3b8c655110004cdee858e8e9e9
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59114797"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61001304"
 ---
 # <a name="update-authorizationpolicy"></a>更新 authorizationPolicy
 
@@ -49,15 +49,15 @@ PATCH /policies/authorizationPolicy
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|allowedToSignUpEmailBasedSubscriptions|Boolean| 指示用户是否可以注册基于电子邮件的订阅。 |
-|allowedToUseSSPR|Boolean| 指示租户Self-Serve是否可以使用密码重置功能。 |
-|allowEmailVerifiedUsersToJoinOrganization|Boolean| 指示用户是否可以通过电子邮件验证加入租户。 |
+|allowedToSignUpEmailBasedSubscriptions|布尔| 指示用户是否可以注册基于电子邮件的订阅。 |
+|allowedToUseSSPR|布尔| 指示租户Self-Serve是否可以使用密码重置功能。 |
+|allowEmailVerifiedUsersToJoinOrganization|布尔| 指示用户是否可以通过电子邮件验证加入租户。 |
 |allowInvitesFrom|allowInvitesFrom|指示谁可以邀请外部用户加入组织。 可取值为：`none`、`adminsAndGuestInviters`、`adminsGuestInvitersAndAllMembers`、`everyone`。  `everyone` 是除美国政府以外的所有云环境的默认设置。 有关详细信息，请参阅此表中的允许 [值](../resources/authorizationpolicy.md#allowinvitesfrom-values)。 |
-|blockMsolPowerShell|Boolean| 若要禁止使用 MSOL PowerShell，将此属性设置为 `true` 。 这还将禁止基于用户对 MSOL PowerShell 使用的旧服务终结点的访问。 这不会影响 Azure AD 连接或 Microsoft Graph。 |
+|blockMsolPowerShell|布尔| 若要禁止使用 MSOL PowerShell，将此属性设置为 `true` 。 这还将禁止基于用户对 MSOL PowerShell 使用的旧服务终结点的访问。 这不会影响 Azure AD 连接 或 Microsoft Graph。 |
 |defaultUserRolePermissions|[defaultUserRolePermissions](../resources/defaultuserrolepermissions.md)| 指定默认用户角色的某些可自定义权限。 |
 |说明|String| 此策略的说明。|
 |displayName|String| 此策略的显示名称。 |
-|guestUserRoleId|Guid| 表示应授予来宾用户的角色的角色 templateId。 目前支持以下角色：用户 () 、来宾用户 () 和受限来宾 `a0b1b346-4d3e-4e8b-98f8-753987be4970` `10dae51f-b6af-4016-8d66-8c2a99b929b3` `2af84b1e-32c8-42b7-82bc-daa82404023b` () 。 |
+|guestUserRoleId|Guid| 表示应授予来宾用户的角色的角色 templateId。 当前支持以下角色：用户角色 () 、来宾用户 () 和受限来宾用户 `a0b1b346-4d3e-4e8b-98f8-753987be4970` `10dae51f-b6af-4016-8d66-8c2a99b929b3` `2af84b1e-32c8-42b7-82bc-daa82404023b` () 。 |
 
 
 ## <a name="response"></a>响应
@@ -100,6 +100,10 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-authzpolicy-guestuserlevel-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-authzpolicy-guestuserlevel-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -151,6 +155,10 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-authzpolicy-blockmsolpowershell-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-authzpolicy-blockmsolpowershell-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -206,6 +214,10 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 [!INCLUDE [sample-code](../includes/snippets/java/update-authzpolicy-applications-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-authzpolicy-applications-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -255,6 +267,10 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-authzpolicy-sspr-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-authzpolicy-sspr-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -310,6 +326,10 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 [!INCLUDE [sample-code](../includes/snippets/java/update-authzpolicy-disableuserconsent-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-authzpolicy-disableuserconsent-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -363,6 +383,10 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-authzpolicy-enableuserconsentlow-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-authzpolicy-enableuserconsentlow-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

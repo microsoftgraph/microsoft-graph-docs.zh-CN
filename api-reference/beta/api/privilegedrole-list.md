@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: 9b120f085e144b3f66fec1a742d16a909e80c29b
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 1fd78216e08a43f9f86f2e1162801fedff80aaf2
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60947223"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60980361"
 ---
 # <a name="list-privilegedroles"></a>列出 privilegedRoles
 
@@ -23,7 +23,7 @@ ms.locfileid: "60947223"
 检索 [privilegedRole 对象](../resources/privilegedrole.md) 的列表。
 
 若要筛选查询中的结果，请在 URL 中使用标准 OData ``$filter`` 表达式。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 请求程序需要具有以下角色之一 _：Privileged Role Administrator、Global_ _Administrator、Security_ _Administrator_ 或 _Security Reader。_
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/beta/privilegedRoles
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-privilegedroles-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-privilegedroles-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

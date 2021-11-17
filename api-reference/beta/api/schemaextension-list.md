@@ -1,16 +1,16 @@
 ---
 title: 列出 schemaExtension
-description: '获取在当前租户中拥有的任何应用创建的 schemaExtension 对象 (可以是 '
+description: '获取在当前租户中拥有的任何应用创建的 schemaExtension (可以是 '
 ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 440a8abf5246cbd882fff8bb11d7203c9155fcd9
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: f9592e1765ab5fb09c1433479c778a47b3be1a72
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59764239"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61002644"
 ---
 # <a name="list-schemaextensions"></a>列出 schemaExtension
 
@@ -20,7 +20,7 @@ ms.locfileid: "59764239"
 
 获取由你在当前租户 (中拥有的任何应用创建的 [schemaExtension](../resources/schemaextension.md)对象列表，这些应用可以是 **InDevelopment、Available** 或 **Deprecated**) ，以及标记为可用的其他应用所拥有的所有其他架构 **扩展。**  
 
-> **注意：** 该列表还将包含架构扩展定义 (标记为) `Available` 租户中其他开发人员创建的列表。 这不同于仅返回租户特定数据的其他 API。 基于架构扩展定义创建的扩展数据特定于租户，并且只有显式授予权限的应用才能访问这些数据。 
+> **注意：** 该列表还将包含架构扩展定义 (标记为) 租户中其他开发人员 `Available` 创建的列表。 这不同于仅返回租户特定数据的其他 API。 基于架构扩展定义创建的扩展数据特定于租户，并且只有显式授予权限的应用才能访问这些数据。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -76,6 +76,10 @@ GET https://graph.microsoft.com/beta/schemaExtensions?$filter=id%20eq%20'graphle
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-schemaextensions-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-schemaextensions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

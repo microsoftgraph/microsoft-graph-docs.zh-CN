@@ -5,12 +5,12 @@ author: carolinetempleton
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 6f0dd6584cdfcea8e20496c6ee98fe7ab7990390
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 900163ca517ec69c63defa226920b8b72ae6868b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695305"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61013612"
 ---
 # <a name="get-unifiedroleeligibilityschedule"></a>获取 unifiedRoleEligibilitySchedule
 命名空间：microsoft.graph
@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilitySch
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-unifiedroleeligibilityschedule-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-unifiedroleeligibilityschedule-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

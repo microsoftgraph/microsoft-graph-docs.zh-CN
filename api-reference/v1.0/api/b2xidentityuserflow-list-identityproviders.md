@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 0946c670ed90d3335fa5fcaec0ff480ba0d7e1c7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0d4e760bac3d2d32e827c59bea870e8e07be5b30
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59100440"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61001243"
 ---
 # <a name="list-identityproviders"></a>列出 identityProvider
 
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/v1.0/identity/b2xUserFlows/B2X_1_Partner/identit
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-b2xuserflow-list-identityproviders-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-b2xuserflow-list-identityproviders-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

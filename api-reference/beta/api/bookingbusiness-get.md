@@ -1,16 +1,16 @@
 ---
 title: 获取 bookingBusiness
 description: 获取 bookingBusiness 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 47b7f974ee72d89c43a0d0663982bde4d64d38b9
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 59e7381245730e1dbe65b6d11b5e23147a6a399f
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047922"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60990659"
 ---
 # <a name="get-bookingbusiness"></a>获取 bookingBusiness
 
@@ -73,10 +73,14 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/Fabrikam@M365B489948.onmi
 [!INCLUDE [sample-code](../includes/snippets/java/get-bookingbusiness-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-bookingbusiness-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### <a name="response"></a>响应
-下面展示了示例响应。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 8a15e2fe18d302c1fc7dbf2e631aca08990f25fc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 23f3a5db210c61fef0ecd6c6193f6e037cf8cd96
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59056908"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61000740"
 ---
 # <a name="list-callrecord-sessions"></a>列出 callRecord 会话
 
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/v1.0/communications/callRecords/{id}/sessions
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-callrecord-sessions-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-callrecord-sessions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -200,6 +204,10 @@ GET https://graph.microsoft.com/v1.0/communications/callRecords/{id}/sessions?$e
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-callrecord-sessions-expanded-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-callrecord-sessions-expanded-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

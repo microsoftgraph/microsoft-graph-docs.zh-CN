@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: bca4bff1feaa23edfc6b3fbf04de08ad7a15da61
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 3b96a12d3a31f52b33946b6960dfc905897c66e5
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60560776"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61006949"
 ---
 # <a name="call-transfer"></a>call： transfer
 
@@ -20,7 +20,7 @@ ms.locfileid: "60560776"
 
 > **注意：** 这仅在被转移方和转移目标都Microsoft Teams属于同一租户的用户时受支持。 仅应用程序实例支持转接到 PSTN 号码。 若要了解有关转移方、被转移方和转移目标有关详细信息，请参阅 [RFC 5589](https://tools.ietf.org/html/rfc5589#section-2)。
 
-咨询转接意味着，在转接之前，转接者可以通知要 (转接) 转接给被叫方。 这与直接转移呼叫相反。
+咨询转接意味着在转接之前，转接人可以通知要呼叫 (转接) 转接给被叫方。 这与直接转移呼叫相反。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -29,7 +29,7 @@ ms.locfileid: "60560776"
 | :-------------- | :-------------------------------------------------- |
 | 委派（工作或学校帐户）     | 不支持                |
 | 委派（个人 Microsoft 帐户） | 不支持                |
-| Application     | Calls.Initiate.All                                  |
+| 应用程序     | Calls.Initiate.All                                  |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -99,6 +99,10 @@ Content-Length: 430
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/call-transfer-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/call-transfer-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -288,6 +292,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/call-transfer-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/call-transfer-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -463,6 +471,10 @@ Content-Length: 430
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-transfer-3-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/call-transfer-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -648,6 +660,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-transfer-4-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/call-transfer-4-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -788,7 +804,7 @@ Content-Type: application/json
 
 ### <a name="example-5-call-transfer-from-a-group-call"></a>示例 5：从组呼叫转移呼叫
 
-> **注意：** 若要从组呼叫转移，需要转接方参数。 所有其他参数与从对等呼叫进行传输的参数相同。 通过组呼叫的咨询转接或从组呼叫转移到 PSTN 与示例 1-4 类似，其中指定了被转接方参数。
+> **注意：** 若要从组呼叫转移，需要转接方参数。 所有其他参数与从对等呼叫进行传输的参数相同。 通过组呼叫的咨询转接或从组呼叫转移到 PSTN 与示例 1-4 类似，其中指定了转接方参数。
 
 ##### <a name="request"></a>请求
 下面为请求示例。
@@ -835,6 +851,10 @@ Content-Length: 430
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-transfer-5-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/call-transfer-5-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

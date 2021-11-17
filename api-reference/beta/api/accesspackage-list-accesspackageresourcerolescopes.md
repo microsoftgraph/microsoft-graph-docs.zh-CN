@@ -1,16 +1,16 @@
 ---
 title: 列出 accessPackageResourceRoleScopes
 description: 检索 accesspackageresourcerolescope 对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: d2376d9eb4aaf0bd8ab58b0dd5cbbb131e36a01c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b83344d1fba1d7cb27e73458387e8cf1e29bd092
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52038633"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60983799"
 ---
 # <a name="list-accesspackageresourcerolescopes"></a>列出 accessPackageResourceRoleScopes
 
@@ -18,7 +18,7 @@ ms.locfileid: "52038633"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索包含 [accessPackageResourceRoleScope 对象列表的访问](../resources/accesspackageresourcerolescope.md) 包。  每个对象链接到 [一个 accessPackageResourceRole](../resources/accesspackageresourcerole.md) 和 [一个 accessPackageResourceScope](../resources/accesspackageresourcescope.md)。
+检索具有 [accessPackageResourceRoleScope 对象列表的访问](../resources/accesspackageresourcerolescope.md) 包。  每个对象链接到 [accessPackageResourceRole](../resources/accesspackageresourcerole.md) 和 [accessPackageResourceScope](../resources/accesspackageresourcescope.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-accesspackageresourcerolescopes-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-accesspackageresourcerolescopes-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

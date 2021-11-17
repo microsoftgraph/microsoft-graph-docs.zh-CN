@@ -5,12 +5,12 @@ author: RamjotSingh
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: c51abaf2928f3602e2bb36ddaef30ffde52e6cae
-ms.sourcegitcommit: 6ae8c124fac63a195ccf516c9cff739f730b6b13
+ms.openlocfilehash: 6a97e183c672de5de8fa72c712abaa363a980c73
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "60083923"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60975844"
 ---
 # <a name="update-chatmessage"></a>更新 chatMessage
 
@@ -58,7 +58,7 @@ PATCH /chats/{chatThread-id}/messages/{message-id}
 
 ### <a name="request"></a>请求
 
-下面是请求更新频道消息上 **policyViolation** 属性Microsoft Teams示例。
+下面是请求更新频道消息的 **policyViolation** 属性Microsoft Teams示例。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -96,6 +96,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/chatmessagepatchpolicyviolationall-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/chatmessagepatchpolicyviolationall-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

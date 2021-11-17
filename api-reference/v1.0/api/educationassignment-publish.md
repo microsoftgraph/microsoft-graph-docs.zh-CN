@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e95b37a0a6a2090a9351827be9d19ea4c82eb295
-ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
+ms.openlocfilehash: bc5c105157e671e25f36e75219a6e13af8a9f631
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60780812"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61000354"
 ---
 # <a name="educationassignment-publish"></a>educationAssignment： publish
 
@@ -83,6 +83,10 @@ POST https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/educationassignment-publish-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/educationassignment-publish-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

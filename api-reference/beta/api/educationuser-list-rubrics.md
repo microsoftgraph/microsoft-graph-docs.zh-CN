@@ -1,16 +1,16 @@
 ---
 title: List rubrics
 description: 检索 educationrubric 对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 969ab9a1dc49644ba3266b4d6298f8e670f18723
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: dd3aff9aea273c00b9afa2456cccdc1821adba34
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52042826"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60998407"
 ---
 # <a name="list-rubrics"></a>List rubrics
 
@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/beta/education/me/rubrics
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-rubrics-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-rubrics-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

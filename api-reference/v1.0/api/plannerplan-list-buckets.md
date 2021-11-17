@@ -5,19 +5,19 @@ ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 2f4aca5caeabad52c7922ea7795695b6a9645376
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 9d4f8a9bc16b24cdee081f805e9b502e84a4ca3b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60947557"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60984191"
 ---
 # <a name="list-buckets"></a>列出存储桶
 
 命名空间：microsoft.graph
 
 检索[plannerPlan](../resources/plannerplan.md) [对象包含的 plannerBucket](../resources/plannerbucket.md)对象的列表。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -71,6 +71,10 @@ GET https://graph.microsoft.com/v1.0/planner/plans/{plan-id}/buckets
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-buckets-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-buckets-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

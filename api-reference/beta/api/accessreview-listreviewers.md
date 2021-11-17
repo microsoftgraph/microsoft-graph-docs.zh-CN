@@ -1,16 +1,16 @@
 ---
 title: 列出 accessReview 审阅者
-description: 在 Azure AD 访问评审功能中，检索 accessReview 对象的审阅者。
-localization_priority: Normal
+description: 在Azure AD审阅功能中，检索 accessReview 对象的审阅者。
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 92f0baad4908d097cd696c34dc3b51e77814650f
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 9b70c585f5e8b2dd86f647d59d500bcfd0f14381
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751068"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60988041"
 ---
 # <a name="list-accessreview-reviewers"></a>列出 accessReview 审阅者
 
@@ -18,7 +18,7 @@ ms.locfileid: "52751068"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 Azure AD [访问评审](../resources/accessreviews-root.md) 功能中，检索 [accessReview 对象的审阅](../resources/accessreview.md) 者。
+在Azure AD审阅功能中，[](../resources/accessreviews-root.md)检索[accessReview 对象的审阅](../resources/accessreview.md)者。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -75,6 +75,10 @@ GET https://graph.microsoft.com/beta/accessReviews/2b83cc42-09db-46f6-8c6e-16fec
 [!INCLUDE [sample-code](../includes/snippets/java/get-accessreview-reviewers-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-accessreview-reviewers-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -102,7 +106,7 @@ Content-type: application/json
 
 ## <a name="see-also"></a>另请参阅
 
-| 方法           | 返回类型    |Description|
+| 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
 |[获取 accessReview](accessreview-get.md) |  [accessReview](../resources/accessreview.md) |  检索访问评审。 |
 |[添加 accessReview 审阅者](accessreview-addreviewer.md) |     无。   |   将审阅者添加到 accessReview。 |

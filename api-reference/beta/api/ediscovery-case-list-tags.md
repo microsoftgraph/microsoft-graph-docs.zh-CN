@@ -2,15 +2,15 @@
 title: 列出标记
 description: 从电子数据展示案例获取标记资源列表。
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: f22f34bcb619580476d468cf52b48c2ec5adb792
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: d92220ebfef3b85f74910c389b8b11585cf70544
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50946366"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60978462"
 ---
 # <a name="list-tags"></a>列出标记
 
@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/47746044-fd0b-4
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-tag-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-tag-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

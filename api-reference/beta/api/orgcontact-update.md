@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d652b33ab34ebc98f423a1bc4c35fb5c2ee63407
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 75c5fac1bcdd39032e2aa3d1f85b10573875cc45
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60939460"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60985850"
 ---
 # <a name="update-orgcontact"></a>更新 orgcontact
 
@@ -19,7 +19,7 @@ ms.locfileid: "60939460"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新 orgcontact 对象的属性。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -41,12 +41,12 @@ PATCH /contacts/{id}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |城市|String||
 |country|String||
 |department|String||
-|onPremisesSyncEnabled|Boolean||
+|onPremisesSyncEnabled|布尔||
 |displayName|String||
 |givenName|String||
 |jobTitle|String||
@@ -100,6 +100,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-orgcontact-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-orgcontact-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

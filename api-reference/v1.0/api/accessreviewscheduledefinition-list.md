@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 0d1c3ef815253dfe8166ef100f15e83a55b320e9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e8295ccd9d9167332aef348d818753ef560640a9
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59056926"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60979766"
 ---
 # <a name="list-accessreviewscheduledefinitions"></a>列出 accessReviewScheduleDefinitions
 命名空间：microsoft.graph
@@ -20,7 +20,7 @@ ms.locfileid: "59056926"
 >[!NOTE]
 >此 API 的默认页面大小为 100 accessReviewScheduleDefinition 对象。 若要提高效率并避免由于大型结果集而超时，请通过使用 和 查询参数应用 `$skip` `$top` 分页。 有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -53,8 +53,8 @@ GET /identityGovernance/accessReviews/definitions?$filter=contains(scope/microso
 
 |值|说明|
 |:---     |:---       |
-|`/groups`  |列出单个组上的每个 accessReviewScheduleDefinition (不包括作用域为具有来宾用户的所有Microsoft 365组) 。|
-|`/groups/{group id}`  |列出特定组上的每个 accessReviewScheduleDefinition (不包括作用域为具有来宾用户的所有 Microsoft 365 组) 。|
+|`/groups`  |列出单个组上的每个 accessReviewScheduleDefinition (不包括作用域为包含来宾用户的所有Microsoft 365组) 。|
+|`/groups/{group id}`  |列出特定组上的每个 accessReviewScheduleDefinition (不包括作用域为具有来宾用户的所有Microsoft 365组) 。|
 |`./members`  |列出每个作用域为来宾用户的所有 Microsoft 365 AccessReviewScheduleDefinition。|
 |`accessPackageAssignments`  |列出访问包上的每个 accessReviewScheduleDefinition。|
 |`roleAssignmentScheduleInstances`  |列出分配给特权角色的服务主体的每个 accessReviewScheduleDefinition。|
@@ -102,6 +102,10 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definition
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-accessreviewscheduledefinition-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-accessreviewscheduledefinition-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -179,7 +183,7 @@ Content-type: application/json
 ### <a name="example-2-retrieve-all-access-review-definitions-scoped-to-all-microsoft-365-groups-in-a-tenant"></a>示例 2：检索范围为租户中Microsoft 365组的所有访问评审定义
 
 #### <a name="request"></a>请求
-以下示例显示一个请求，请求检索范围为租户中Microsoft 365组的所有访问评审系列。
+以下示例显示一个请求，请求检索范围为租户中所有Microsoft 365组的所有访问评审系列。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -204,6 +208,10 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definition
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-accessreviewscheduledefinition-allgroups-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-accessreviewscheduledefinition-allgroups-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

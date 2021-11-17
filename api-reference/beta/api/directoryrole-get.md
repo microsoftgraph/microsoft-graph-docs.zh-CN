@@ -5,12 +5,12 @@ author: abhijeetsinha
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: e2eaf7702b36e4b8eb060b0e60881ef8bdffa602
-ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
+ms.openlocfilehash: dd6f1328611a04633161c461891f0754219f8ea2
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60256289"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60999258"
 ---
 # <a name="get-directoryrole"></a>获取 directoryRole
 
@@ -40,7 +40,7 @@ GET /directoryRoles/roleTemplateId={roleTemplateId}
 ## <a name="optional-query-parameters"></a>可选的查询参数
 例如， **此方法不支持** 任何 [OData](/graph/query-parameters) 查询参数来帮助自定义响应 (，例如，本文不支持 `$filter`) 。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称       | 说明|
 |:-----------|:------|
 | Authorization  | Bearer {token}。必需。 |
@@ -79,6 +79,10 @@ GET https://graph.microsoft.com/beta/directoryRoles/fe8f10bf-c9c2-47eb-95cb-c26c
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-directoryrole-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-directoryrole-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -133,6 +137,10 @@ GET https://graph.microsoft.com/beta/directoryRoles/roleTemplateId=88d8e3e3-8f55
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-directoryrole-templateid-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-directoryrole-templateid-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

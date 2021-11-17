@@ -1,16 +1,16 @@
 ---
 title: 获取 projectParticipation
 description: 检索 projectParticipation 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: b767a32220ed21f196334c38efcd69604fc25778
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e6a2aa4bbc246ff41ad031f96909a2210415f58d
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055202"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61019282"
 ---
 # <a name="get-projectparticipation"></a>获取 projectParticipation
 
@@ -43,7 +43,7 @@ GET /users/{id | userPrincipalName}/profile/projects/{id}
 
 此方法支持 `$select` 查询参数。 指定要包括在响应中的属性列表，用逗号分隔它们。 为获得最佳性能，请仅选择所需的属性子集。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称           |说明                  |
 |:---------------|:----------------------------|
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/me/profile/projects/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-projectparticipation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-projectparticipation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

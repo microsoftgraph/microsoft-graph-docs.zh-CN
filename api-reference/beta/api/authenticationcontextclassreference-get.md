@@ -1,16 +1,16 @@
 ---
 title: 获取 authenticationContextClassReference
 description: 检索 authenticationContextClassReference 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: calebb
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 14862bc07762419ea2d12e715cfc6b19b31395e649cb1cb8b913baeb0e3fb217
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b817a647154a81041af883c6284fe5ee27fb1d79
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56902887"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60995117"
 ---
 # <a name="get-authenticationcontextclassreference"></a>获取 authenticationContextClassReference
 
@@ -20,7 +20,7 @@ ms.locfileid: "56902887"
 
 检索 [authenticationContextClassReference](../resources/authenticationcontextclassreference.md) 对象的属性和关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -41,7 +41,7 @@ GET /identity/conditionalAccess/authenticationContextClassReferences/{id}
 
 此方法不支持自定义响应的可选查询参数。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称      |说明|
 |:----------|:----------|
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationCo
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-authenticationcontextclassreference-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-authenticationcontextclassreference-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

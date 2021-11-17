@@ -1,16 +1,16 @@
 ---
 title: 创建威胁情报指示器
 description: 创建新的 tiIndicator。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 14620ff345c5d74075548b17e26bc7923f942da6
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: f329ad0132c509a97cda12d650d34eb0aa06ad3d
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050757"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60989322"
 ---
 # <a name="create-threat-intelligence-indicator"></a>创建威胁情报指示器
 
@@ -100,6 +100,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-tiindicator-from-security-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-tiindicator-from-security-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

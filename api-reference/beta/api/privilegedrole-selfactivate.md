@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: 58c4a5e0e57e2fe5f32e87ccc7f87429e1354a93
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 2d120ffb3d1628611404db9b50e7099cf00cc808
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60938495"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60980347"
 ---
 # <a name="privilegedrole-selfactivate"></a>privilegedRole： selfActivate
 
@@ -25,7 +25,7 @@ ms.locfileid: "60938495"
 >**注意：** 自 2018 年 12 月起，将不再支持此 API，也不应使用。 请[改为使用 Create PrivilegedRoleAssignmentRequest。](privilegedroleassignmentrequest-post.md)
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 请求者只能 ```selfActivate``` 调用分配给他的角色。
@@ -52,10 +52,10 @@ POST /privilegedRoles/{id}/selfActivate
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |Description|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |reason|string|可选。 有关此角色激活原因的说明。|
-|duration|string|可选。 有效值可以是 (激活) 、 (角色) 的默认激活持续时间或一个指定激活小时数的双 ```min``` ```default``` 精度值。 指定持续时间不能长于角色设置中角色的激活持续时间。 |
+|duration|string|可选。 有效值可以是 (最短激活) 、 (角色) 的默认激活持续时间或用于指定激活小时数的双 ```min``` ```default``` 精度值。 指定持续时间不能长于角色设置中角色的激活持续时间。 |
 |ticketNumber|string|可选。 用于跟踪此角色激活的票证编号。|
 |ticketSystem|string|可选。 票证系统。|
 
@@ -99,6 +99,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/privilegedrole-selfactivate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/privilegedrole-selfactivate-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

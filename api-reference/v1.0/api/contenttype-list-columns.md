@@ -5,12 +5,12 @@ description: 列出内容类型中的列。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: ff7077a25290db304707ad0082d210fc98543dc0
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: 3fab53cf2068195185eb91b4dcf446256d7ae9e7
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60729792"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60974199"
 ---
 # <a name="list-columndefinitions-in-a-content-type"></a>列出内容类型中的 columnDefinitions
 命名空间：microsoft.graph
@@ -92,6 +92,10 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/contentTypes/{contentType-i
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-columns-from-contenttype-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-columns-from-contenttype-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

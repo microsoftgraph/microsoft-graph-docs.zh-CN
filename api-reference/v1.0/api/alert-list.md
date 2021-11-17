@@ -5,12 +5,12 @@ author: preetikr
 ms.localizationpriority: high
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 524a0b7e7fd6c20c64a9c92f79d8db23c5dc8233
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 898b0524b33a14072e25b7f5c919206f847cee09
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59017014"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60988685"
 ---
 # <a name="list-alerts"></a>列出警报
 
@@ -110,6 +110,10 @@ GET https://graph.microsoft.com/v1.0/security/alerts
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-alerts-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-alerts-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: kevinbellinger
 ms.localizationpriority: high
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a13a43002fcb1e11943c6996bcfbb76f0a14b06b
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 4d0c351b4438b9dbc21668def9811fe94cce2f67
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60924255"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61008426"
 ---
 # <a name="list-contacts"></a>列出联系人
 
@@ -104,6 +104,10 @@ GET https://graph.microsoft.com/v1.0/me/contacts
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-get-contacts-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-get-contacts-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

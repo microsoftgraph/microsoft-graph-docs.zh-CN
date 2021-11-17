@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: a2c76b758baf8d71c3be447617212bc6744c8c5a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 963fb9c2c4ef7b22da2f04526f2c84c66b60af0f
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59032606"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60984372"
 ---
 # <a name="list-excludes-collection-of-permissiongrantpolicy"></a>List excludes collection of permissionGrantPolicy
 
@@ -39,7 +39,7 @@ GET /policies/permissionGrantPolicies/{id}/excludes
 
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称           | 说明                |
 |:---------------|:---------------------------|
@@ -57,7 +57,7 @@ GET /policies/permissionGrantPolicies/{id}/excludes
 
 ### <a name="request"></a>请求
 
-下面是请求检索内置权限授予策略的排除条件集的示例 `microsoft-application-admin` 。 此权限授予策略包括所有委派权限，以及除 Microsoft Graph 应用程序权限和 Azure AD 应用程序应用程序权限外的所有应用程序Graph。
+下面是请求检索内置权限授予策略的排除条件集的示例 `microsoft-application-admin` 。 此权限授予策略包括所有委派权限，以及除 Microsoft 应用程序权限之外的所有应用程序权限Graph应用程序权限和 Azure AD Graph。
 
 
 
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/v1.0/policies/permissionGrantPolicies/microsoft-
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/permissiongrantpolicy-get-excludes-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/permissiongrantpolicy-get-excludes-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

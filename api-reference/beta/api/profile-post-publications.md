@@ -5,19 +5,19 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 0ab52e995a6d190c0bcc2af6de6c7ac043cc291e
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 801d330884d310ab6c101ad98215004c62e65d10
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60947180"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61019331"
 ---
 # <a name="create-itempublication"></a>创建 itemPublication
 命名空间：microsoft.graph
 
 在用户配置文件 [中创建新的 itemPublication](../resources/itempublication.md) [对象](../resources/profile.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -48,19 +48,19 @@ POST /users/{id | userPrincipalName}/profile/publications
 
 下表显示了在用户配置文件中创建新的 [itemPublication](../resources/itempublication.md) 对象时可以设置 [的属性](../resources/profile.md)。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
 |createdBy|[identitySet](../resources/identityset.md)|提供创建实体的用户和/或应用程序的标识符。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |createdDateTime|DateTimeOffset|提供实体创建时的日期时间Offset。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|description    |String      |出版物的说明。                   |
+|说明    |String      |出版物的说明。                   |
 |displayName    |String      |出版物的标题。                         |
 |id|String|用于单独寻址实体的标识符。 继承自 [实体](../resources/entity.md)|
 |inference|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断出来的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|提供上次修改实体的用户和/或应用程序的标识符。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |lastModifiedDateTime|DateTimeOffset|提供实体创建时的日期时间Offset。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |publishedDate  |日期        |出版物的发布日期。      |
-|发布者      |String      |出版物Publisher出版物。     |
+|发布者      |String      |出版物或Publisher出版物的出版物。     |
 |source|[personDataSource](../resources/persondatasource.md)|如果从另一个服务同步，则值源自何处。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |thumbnailUrl   |String      |引用出版物缩略图的 URL。   |
 |WebUrl         |String      |引用出版物的 URL。                  |
@@ -104,6 +104,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-itempublication-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-itempublication-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

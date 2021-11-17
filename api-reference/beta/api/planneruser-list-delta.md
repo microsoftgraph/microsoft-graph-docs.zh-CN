@@ -2,15 +2,15 @@
 title: Planner： delta
 description: 检索用户订阅的对象更改。
 author: TarkanSevilmis
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 7c730630f3fd655db29c93c699e8090d3046a4d4
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 5f12f6218dd6bb16704acc13e434fc7743836b6f
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473491"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60989966"
 ---
 # <a name="planner-delta"></a>Planner： delta
 
@@ -24,7 +24,7 @@ ms.locfileid: "51473491"
 
 此方法的返回值可能包含 Planner 中的对象的异种类型。
 
-有关跟踪 Microsoft Graph 数据更改详细信息，请参阅使用 delta 查询跟踪 [Microsoft Graph 数据中的更改](/graph/delta-query-overview)。
+有关跟踪 Microsoft 数据更改Graph，请参阅使用 delta 查询跟踪 Microsoft Graph[数据中的更改](/graph/delta-query-overview)。
 
 ## <a name="permissions"></a>权限
 
@@ -32,7 +32,7 @@ ms.locfileid: "51473491"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Tasks.Read、Tasks.ReadWrite、Group.Read.All、Group.ReadWrite.All    |
+|委派（工作或学校帐户） | 任务.读取，任务.ReadWrite，Group.Read.All，Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | 不支持。 |
 
@@ -45,9 +45,9 @@ GET /me/planner/all/delta
 GET /users/{id}/planner/all/delta
 ```
 
-Planner 的增量 (上当前不支持其他查询参数) 如 、 或 `$select` `$expand` `$filter`) 。
+Planner 的增量 (上当前不支持任何其他查询参数) 如 、 或 `$select` `$expand` `$filter`) 。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称           |说明                |
 |:---------------|:--------------------------|
@@ -97,6 +97,10 @@ GET https://graph.microsoft.com/beta/me/planner/all/delta
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-delta-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-delta-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

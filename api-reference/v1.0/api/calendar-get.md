@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c782b4d259f6926c7066e9cdfc956e7db430622a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a8ba60e7796fca773352dc1f0b719f57ee8a05ba
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59125445"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61001069"
 ---
 # <a name="get-calendar"></a>获取日历
 
@@ -21,7 +21,7 @@ ms.locfileid: "59125445"
 在下列两种情况下，应用可获取其他用户的日历：
 
 * 如果该应用具有应用程序权限，或者
-* 如果应用程序具有来自某个用户的相应委派[权限](#permissions)，而另一个用户与该用户共享了日历，或者已为该用户授予委派的访问权限。 请参阅[详细信息和示例](/graph/outlook-get-shared-events-calendars)。
+* 如果应用具有来自某个用户的相应委派 [权限](#permissions)，而另一个用户与该用户共享了日历，或者已向该用户授予委派访问权限。请参阅 [详细信息和示例](/graph/outlook-get-shared-events-calendars)。
 
 ## <a name="permissions"></a>权限
 根据事件所处日历类型和所请求的权限类型（委派型或应用程序），需要下列某一权限来调用此 API。 要了解详细信息（包括如何选择权限），请参阅[权限](/graph/permissions-reference)。
@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/v1.0/me/calendar
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-calendar-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-calendar-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

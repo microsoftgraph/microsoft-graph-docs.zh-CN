@@ -1,28 +1,28 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4d8d87e9d9f6d782b17ec1c8260659e0dd9076fe74756ada60f854aa8ba70168
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1529408c6020d51785d5cae8852cf236897e371d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57161570"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "60987128"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/groups/{id}/conversations/{id}/threads"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/groups/4d81ce71-486c-41e9-afc5-e41bf2d0722a/conversations/AAQkAGRhZmRhMWM3LTYwZTktNDZmYy1hNWU1LThhZWU4NzI2YTEyZgAQABKPPJ682apIiV1UFlj7XxY=/threads"]]];
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphConversationThread *conversationThread = [[MSGraphConversationThread alloc] init];
-[conversationThread setTopic:@"topic-value"];
+[conversationThread setTopic:@"Take your wellness days and rest"];
 NSMutableArray *postsList = [[NSMutableArray alloc] init];
 MSGraphPost *posts = [[MSGraphPost alloc] init];
 MSGraphItemBody *body = [[MSGraphItemBody alloc] init];
 [body setContentType: [MSGraphBodyType html]];
-[body setContent:@"this is body content"];
+[body setContent:@"Waiting for the summer holidays."];
 [posts setBody:body];
 [postsList addObject: posts];
 [conversationThread setPosts:postsList];

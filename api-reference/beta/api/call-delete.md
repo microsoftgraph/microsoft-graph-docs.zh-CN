@@ -2,15 +2,15 @@
 title: 删除呼叫
 description: 删除或挂断活动呼叫。
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: dac4ddab6dbf72042488fe7b3c8f700e2aa734e6
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: fe926e84c0029ec34d72759a8bd88b36a7cd9e52
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047656"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61018898"
 ---
 # <a name="delete-call"></a>删除呼叫
 
@@ -75,6 +75,10 @@ DELETE https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-call-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-call-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

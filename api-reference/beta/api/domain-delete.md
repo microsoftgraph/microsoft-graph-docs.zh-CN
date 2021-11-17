@@ -2,15 +2,15 @@
 title: 删除域
 description: 从租户中删除域。
 author: adimitui
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5f00627823d4a9cc571143c8e0e09ba297bd4902
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a5f7ef15bd4b682512ae2f3dbd9dd5f8b40d7430
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52046536"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60982041"
 ---
 # <a name="delete-domain"></a>删除域
 
@@ -29,7 +29,7 @@ ms.locfileid: "52046536"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Domain.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Domain.ReadWrite.All |
 
@@ -41,7 +41,7 @@ DELETE /domains/{id}
 
 > 对于 {id}，请使用其完全限定的域名指定该域。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称       | 说明|
 |:---------------|:----------|
@@ -82,6 +82,10 @@ DELETE https://graph.microsoft.com/beta/domains/contoso.com
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-domain-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-domain-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
