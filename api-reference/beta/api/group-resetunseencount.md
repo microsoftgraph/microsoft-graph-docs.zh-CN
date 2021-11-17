@@ -2,15 +2,15 @@
 title: 组：resetUnseenCount
 description: 重置当前用户自上次访问后未查看的所有帖子的 unseenCount。
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 8ca343a5d056f2fa673cc02030b2a94265fa24f1
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 255f48765d84634a703735242bb02237e9dae28c
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681275"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61032451"
 ---
 # <a name="group-resetunseencount"></a>组：resetUnseenCount
 
@@ -20,7 +20,7 @@ ms.locfileid: "52681275"
 
 重置当前用户自上次访问后未查看的所有帖子的 unseenCount。 仅支持 Microsoft 365 组。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -72,6 +72,10 @@ POST https://graph.microsoft.com/beta/groups/{id}/resetUnseenCount
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/group-resetunseencount-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/group-resetunseencount-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

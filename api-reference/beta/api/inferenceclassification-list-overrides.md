@@ -1,16 +1,16 @@
 ---
 title: 列出替代
 description: 获取用户设置为始终以特定方式对来自特定发件人的邮件进行分类的重点收件箱替代。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: abheek-das
 ms.prod: ''
-ms.openlocfilehash: 07de9e0bb9d8992811b64a8fe19685a2a329a8c1
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 51a235850c16d7e2456d89939946ef8f1941ece6
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52040607"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61032381"
 ---
 # <a name="list-overrides"></a>列出替代
 
@@ -21,7 +21,7 @@ ms.locfileid: "52040607"
 获取 [用户设置为](../resources/manage-focused-inbox.md) 始终以特定方式对来自某些发件人的邮件进行分类的重点收件箱替代。
 
 每个替代均对应一个发件人的 SMTP 地址。最初，用户没有任何替代。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -76,10 +76,14 @@ GET https://graph.microsoft.com/beta/me/inferenceClassification/overrides
 [!INCLUDE [sample-code](../includes/snippets/java/get-overrides-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-overrides-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

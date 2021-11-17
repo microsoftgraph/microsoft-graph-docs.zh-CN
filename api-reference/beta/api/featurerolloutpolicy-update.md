@@ -1,16 +1,16 @@
 ---
 title: 更新 featureRolloutPolicy
 description: 更新 featurerolloutpolicy 对象的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: madhavpatel6
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 66b04005f01f9e2d56189a23ad8dae36846a67a0
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 13a3a4c4fa2a4e5f9677b150a3fb0a072a4048bb
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786998"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61034431"
 ---
 # <a name="update-featurerolloutpolicy"></a>更新 featurerolloutpolicy
 
@@ -54,7 +54,7 @@ PATCH /policies/featureRolloutPolicies/{id}
 |:-------------|:------------|:------------|
 |说明|String|此策略的说明。|
 |displayName|String|此显示名称的组。|
-|isAppliedToOrganization|Boolean|指示是否应当将此功能推出策略应用于整个组织。|
+|isAppliedToOrganization|布尔|指示是否应当将此功能推出策略应用于整个组织。|
 |isEnabled|Boolean|指示是否启用功能推出。|
 
 ## <a name="response"></a>响应
@@ -98,6 +98,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-featurerolloutpolicy-policies-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-featurerolloutpolicy-policies-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

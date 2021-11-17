@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 2a65a0e2357563156a9ef40d22d4eccd3093a052
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: b2aaa550769a96d5f21cabe5f57b28578ff13736
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60945262"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61029945"
 ---
 # <a name="deploymentaudience-updateaudiencebyid"></a>deploymentAudience：updateAudienceById
 
@@ -20,7 +20,7 @@ ms.locfileid: "60945262"
 
 使用相同类型的[updatableAsset](../resources/windowsupdates-updatableasset.md)资源更新[deploymentAudience](../resources/windowsupdates-deploymentaudience.md)的成员和排除集合。
 
-向部署访问群体的成员或排除集合添加[azureADDevice](../resources/windowsupdates-azureaddevice.md)会自动创建Azure AD对象（如果该对象不存在）。
+将[azureADDevice](../resources/windowsupdates-azureaddevice.md)添加到部署访问群体的成员或排除集合会自动创建Azure AD对象（如果该对象不存在）。
 
 如果 **deploymentAudience** 的排除和 **成员** 集合中包含相同的 [updatableAsset，](../resources/windowsupdates-updatableasset.md)则部署不会应用于该资产。 
 
@@ -59,13 +59,13 @@ POST /admin/windows/updates/deployments/{deploymentId}/audience/updateAudienceBy
 
 下表显示了可用于此操作的参数。
 
-|参数|类型|Description|
+|参数|类型|说明|
 |:---|:---|:---|
 |memberEntityType|String|可更新资源的完整类型。 可取值为：`#microsoft.graph.windowsUpdates.azureADDevice`、`#microsoft.graph.windowsUpdates.updatableAssetGroup`。|
-|addMembers|String 集合|与要添加为部署访问群体成员的可更新资产相对应的标识符列表。|
-|removeMembers|String 集合|与要作为部署访问群体成员删除的可更新资源相对应的标识符列表。|
-|addExclusions|String 集合|与要作为部署访问群体排除项添加的可更新资源相对应的标识符列表。|
-|removeExclusions|String 集合|与要作为部署访问群体排除项删除的可更新资源相对应的标识符列表。|
+|addMembers|String collection|与要添加为部署访问群体成员的可更新资产相对应的标识符列表。|
+|removeMembers|String collection|与要作为部署访问群体成员删除的可更新资源相对应的标识符列表。|
+|addExclusions|String collection|与要作为部署访问群体排除项添加的可更新资源相对应的标识符列表。|
+|removeExclusions|String collection|与要作为部署访问群体排除项删除的可更新资源相对应的标识符列表。|
 
 
 
@@ -118,6 +118,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/deploymentaudience-updateaudiencebyid-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/deploymentaudience-updateaudiencebyid-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

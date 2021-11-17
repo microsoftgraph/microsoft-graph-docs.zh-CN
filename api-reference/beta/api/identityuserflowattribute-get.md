@@ -1,16 +1,16 @@
 ---
 title: 获取 identityUserFlowAttribute
 description: 检索 identityUserFlowAttribute 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: f98dc9a69aee1297d26ef4ed9891f9035a297ced
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 5551b81769d3e683c69ba74698b7b5957aae1988
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50435271"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61032394"
 ---
 # <a name="get-identityuserflowattribute"></a>获取 identityUserFlowAttribute
 
@@ -28,12 +28,12 @@ ms.locfileid: "50435271"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）|IdentityUserFlow.Read.All、IdentityUserFlow.ReadWrite.All|
 |委派（个人 Microsoft 帐户）| 不支持。|
-|Application|IdentityUserFlow.Read.All、IdentityUserFlow.ReadWrite.All|
+|应用程序|IdentityUserFlow.Read.All、IdentityUserFlow.ReadWrite.All|
 
 工作或学校帐户需要属于以下角色之一：
 
 * 全局管理员
-* 外部标识用户流属性管理员
+* 外部标识用户Flow属性管理员
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -55,7 +55,7 @@ GET /identity/userFlowAttributes/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` [identityUserFlowAttribute](../resources/identityuserflowattribute.md) 的响应代码和 JSON 表示形式。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [identityUserFlowAttribute 的](../resources/identityuserflowattribute.md) JSON 表示形式。
 
 ## <a name="examples"></a>示例
 
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/identity/userFlowAttributes/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-userflowattributes-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-userflowattributes-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

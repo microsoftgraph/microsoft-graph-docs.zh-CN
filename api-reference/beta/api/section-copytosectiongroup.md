@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 27b7f9bac4a27f0738ad4accdfd4d1d4f943ab97
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: dedff7f982f681c81ae9e0f3ae7c90d4b1fdf869
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60944744"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61002623"
 ---
 # <a name="section-copytosectiongroup"></a>section： copyToSectionGroup
 
@@ -22,7 +22,7 @@ ms.locfileid: "60944744"
 
 对于 Copy 操作，你可以遵循异步调用模式：首先调用 Copy 操作，然后轮询操作终结点的结果。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -48,7 +48,7 @@ POST /sites/{id}/onenote/sections/{id}/copyToSectionGroup
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 JSON 对象，其中包含操作所需的参数。
 
-| 参数    | 类型   |Description|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |siteCollectionId|String|要复制到SharePoint网站的 ID。 仅在复制到网站时SharePoint使用。|
 |siteId|String|要复制到SharePoint Web 的 ID。 仅在复制到网站时SharePoint使用。|
@@ -98,6 +98,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/section-copytosectiongroup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/section-copytosectiongroup-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

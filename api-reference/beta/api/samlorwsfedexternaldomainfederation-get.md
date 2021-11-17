@@ -5,12 +5,12 @@ author: namkedia
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: e4bdd9a2d1e4c8e39f1de0159791b265a0d4aeb1
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 044271dd3cee9ab2a6bbe0eaaaaa750b0323362c
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766553"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61032086"
 ---
 # <a name="get-samlorwsfedexternaldomainfederation"></a>获取 samlOrWsFedExternalDomainFederation
 命名空间：microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "59766553"
 
 读取特定[externalDomainName](../resources/externaldomainname.md)[的 samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md)对象的属性和关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -29,7 +29,7 @@ ms.locfileid: "59766553"
 |委派（个人 Microsoft 帐户）| 不支持。|
 |应用程序|Domain.Read.All、Domain.ReadWrite.All|
 
-工作或学校帐户需要属于以下 Azure [AD Azure Active Directory (角色) 之一](/azure/active-directory/roles/permissions-reference)：
+工作或学校帐户需要属于以下角色Azure Active Directory (Azure AD) [之一](/azure/active-directory/roles/permissions-reference)：
 
 * 全局管理员
 * 外部标识提供程序管理员
@@ -94,6 +94,10 @@ GET https://graph.microsoft.com/beta/directory/federationConfigurations/graph.sa
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-samlorwsfedexternaldomainfederation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-samlorwsfedexternaldomainfederation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

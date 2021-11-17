@@ -1,16 +1,16 @@
 ---
 title: 列出 threatAssessmentRequests
 description: 检索 threatassessmentrequest 对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: hafen-ms
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: d830c80c71e0873806d67ff0e6196a1bdc4d6483
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 4e155aca297ea8cbef3b0a1fdc7116668d0677d9
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52040509"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61028439"
 ---
 # <a name="list-threatassessmentrequests"></a>列出 threatAssessmentRequests
 
@@ -27,7 +27,7 @@ ms.locfileid: "52040509"
 * [文件](../resources/fileAssessmentRequest.md)
 * [URL](../resources/urlAssessmentRequest.md)
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -51,7 +51,7 @@ GET /informationProtection/threatAssessmentRequests
 
 |名称            |值    |说明                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|$filter         |string   |将响应限制到仅包含指定条件的对象。                                                                                             |
+|$filter         |string   |将响应范围限定为仅包含指定条件的对象。                                                                                             |
 |$orderby        |string   |默认情况下，响应中的对象按 **其 createdDateTime** 值降序排序。                                                                          |
 |$select         |string   |要在响应中添加的属性列表（以逗号分隔）。为获得最佳结果，请仅选择所需属性的子集。                                        |
 |$skipToken      |string   |从跨多页的结果集中检索下一页结果。                                                                                               |
@@ -99,6 +99,10 @@ GET https://graph.microsoft.com/beta/informationProtection/threatAssessmentReque
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-threatassessmentrequests-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-threatassessmentrequests-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 2822932a76c334d75495585de0209515479fac40
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 88e1254666bb6107db4b6fb1ba3454e87aec2998
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60942378"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61023916"
 ---
 # <a name="create-custodian"></a>创建保管人
 
@@ -18,7 +18,7 @@ ms.locfileid: "60942378"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的保管 [人](../resources/ediscovery-custodian.md) 对象。 创建保管人对象后，你需要创建保管人[的用户来源](../resources/ediscovery-usersource.md)，以引用其邮箱和OneDrive for Business网站。
+创建新的保管 [人](../resources/ediscovery-custodian.md) 对象。 创建保管人对象后，你需要创建保管人[的用户](../resources/ediscovery-usersource.md)来源，以引用其邮箱和OneDrive for Business网站。
 
 ## <a name="permissions"></a>Permissions
 
@@ -54,10 +54,10 @@ POST /compliance/ediscovery/cases/{caseId}/custodians
 
 下表显示创建保管人 时所需的 [属性](../resources/ediscovery-custodian.md)。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |email|String|保管人的主 SMTP 地址。 必需。|
-|applyHoldToSources|Boolean|指示是否将保留应用于保管人的来源 (邮箱、网站或Teams) 。|
+|applyHoldToSources|布尔|指示是否将保留应用于保管人的来源 (邮箱、网站或Teams) 。|
 
 ## <a name="response"></a>响应
 
@@ -98,6 +98,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-custodian-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-custodian-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

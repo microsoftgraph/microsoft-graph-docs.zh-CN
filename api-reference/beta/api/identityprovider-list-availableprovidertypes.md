@@ -1,18 +1,18 @@
 ---
 title: 列出 availableProviderTypes
 description: 检索目录中所有可用的标识提供程序类型。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: ed8b9243a1eeb9886868b01e86fe175c2270f993
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: c9647057ac993fee1eff4591850102701b112a0a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51508857"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61014976"
 ---
-# <a name="list-availableprovidertypes-deprecated"></a>列出已弃 (availableProviderTypes) 
+# <a name="list-availableprovidertypes-deprecated"></a>列出已弃 (的 availableProviderTypes) 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/identityProviders/availableProviderTypes
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/identityprovider-availableprovidertypes-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/identityprovider-availableprovidertypes-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

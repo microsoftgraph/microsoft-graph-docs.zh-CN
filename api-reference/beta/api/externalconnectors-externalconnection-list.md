@@ -1,16 +1,16 @@
 ---
 title: 列出连接
 description: 检索 externalConnections 列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 5237fd7450bb2c289247a1343b8fd16dba1e8ae5
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: 8c1d834f7fa4e8a17120c0fd7d584cb8168a3b71
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467584"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61028551"
 ---
 # <a name="list-connections"></a>列出连接
 
@@ -20,7 +20,7 @@ ms.locfileid: "53467584"
 
 检索 [externalConnections 的列表](../resources/externalconnectors-externalconnection.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/external/connections
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-connections-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-connections-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

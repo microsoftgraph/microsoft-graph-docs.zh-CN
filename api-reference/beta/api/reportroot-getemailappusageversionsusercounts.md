@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getEmailAppUsageVersionsUserCounts'
 description: 按 Outlook 桌面版获取唯一用户数。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 23f229b33fcc5798caf8fcdc8b28b76ca2c4a4a4
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c0b6bf4838a66c23244250d8ffe45bc7ba2dfffc
+ms.sourcegitcommit: 42e0e15ff90815e0126c34b928405486cfb1ed86
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050953"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61044475"
 ---
 # <a name="reportroot-getemailappusageversionsusercounts"></a>reportRoot: getEmailAppUsageVersionsUserCounts
 
@@ -22,7 +22,7 @@ ms.locfileid: "52050953"
 
 > **注意：** 有关不同报表视图和名称的详细信息，请参阅Microsoft 365 [报告 - 电子邮件应用使用情况](https://support.office.com/client/Email-apps-usage-c2ce12a2-934f-4dd4-ba65-49b02be4703d)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -32,7 +32,7 @@ ms.locfileid: "52050953"
 | 委派（个人 Microsoft 帐户） | 不支持。                           |
 | 应用                            | Reports.Read.All                         |
 
-**注意**：若要获得委派权限以允许应用代表用户读取服务使用情况报告，租户管理员必须事先为用户分配适当的 Azure AD 受限管理员角色。 有关更多详细信息，请参阅[授权 API 读取 Microsoft 365 使用情况报告](/graph/reportroot-authorization)。
+**注意**：若要获得委派权限以允许应用代表用户读取服务使用情况报告，租户管理员必须事先为用户分配适当的 Azure AD 受限管理员角色。有关更多详细信息，请参阅 [ API 授权，读取 Microsoft 365使用情况报告](/graph/reportroot-authorization)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -75,12 +75,12 @@ CSV 文件包含下面的列标题。
 - Outlook 2007
 - 不确定
 - 报表周期
-- OutlookM365
+- Outlook M365
 - Outlook 2019
 
 ### <a name="json"></a>JSON
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应 **[代码和 emailAppUsageVersionsUserCounts](../resources/emailappusageversionsusercounts.md)** 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 JSON 对象。
 
 ## <a name="example"></a>示例
 
@@ -158,7 +158,7 @@ GET https://graph.microsoft.com/beta/reports/getEmailAppUsageVersionsUserCounts(
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.emailAppUsageVersionsUserCounts"
+  "@odata.type": "stream"
 } -->
 
 ```http
@@ -167,7 +167,6 @@ Content-Type: application/json
 Content-Length: 275
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.emailAppUsageVersionsUserCounts)", 
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 

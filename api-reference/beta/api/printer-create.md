@@ -5,12 +5,12 @@ author: braedenp-msft
 ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 01aea7fbcd4c4723f7d2253fc9591bd0c75d85e8
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 328f4d1bb9ada8ceb99be79caa60a9683d15d368
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60939336"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61028088"
 ---
 # <a name="printer-create"></a>printer： create
 
@@ -45,14 +45,14 @@ POST /print/printers/create
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下属性的 JSON 对象。
 
-| 参数      | 类型    |Description| 是否必需？ |
+| 参数      | 类型    |说明| 是否必需？ |
 |:---------------|:--------|:----------|:----------|
 |displayName|String|要显示名称打印机的打印机。|是|
 |manufacturer|String|打印机的制造商。|是|
 |model|String|打印机的模型。|是|
 |physicalDeviceId|String|打印机的物理设备 UUID。 如果属性为 `hasPhysicalDevice` true，则必需。|否|
-|hasPhysicalDevice|Boolean|如果打印机具有物理输出设备，则其为 True，否则为 false。 如果省略，则默认值为 true。|否|
-|certificateSigningRequest|[printCertificateSigningRequest](../resources/printcertificatesigningrequest.md)|X.509 证书签名 (CSR) 由打印机创建和用于标识自身的证书。|是|
+|hasPhysicalDevice|布尔|如果打印机具有物理输出设备，则其为 True，否则为 false。 如果省略，则默认值为 true。|否|
+|certificateSigningRequest|[printCertificateSigningRequest](../resources/printcertificatesigningrequest.md)|X.509 证书签名 (CSR) 由打印机创建和用于标识其本身的证书。|是|
 |connectorId|String|充当打印机代理的连接器的 ID。|否|
 
 ## <a name="response"></a>响应
@@ -101,6 +101,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-printer-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-printer-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

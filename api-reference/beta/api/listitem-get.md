@@ -3,15 +3,15 @@ author: JeremyKelley
 description: 返回列表中某个项的元数据。
 ms.date: 09/11/2017
 title: 从 SharePoint 列表中获取条目
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: d3d2e431bfa73e92fd99a146ad9820b46d21b4dc
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: fddb803917298af5e11235d68e13afbbc4ef5810
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475849"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61022188"
 ---
 # <a name="get-an-item-in-a-list"></a>获取列表中的项
 
@@ -34,7 +34,7 @@ ms.locfileid: "50475849"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Sites.Read.All、Sites.ReadWrite.All、Sites.Manage.All |
 
-> **注意**：如果 SharePoint 列表已开启内容审批设置，则需要应用权限 Sites.Manage.All。 否则，Microsoft Graph 不会检索审批状态不是"已批准"的列表项。
+> **注意**：如果 SharePoint 列表已开启内容审批设置，则需要应用权限 Sites.Manage.All。 否则，microsoft Graph不会检索审批状态不是"已批准"的列表项。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -69,6 +69,10 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-list-item-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-list-item-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

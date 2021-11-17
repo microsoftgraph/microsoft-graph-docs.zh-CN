@@ -5,12 +5,12 @@ author: payiAzure
 ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: c77ce60ef7c61423891d970a60993fc39a0eb156
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 526597f722a18d315e2cee8df777dc36992f1958
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59007453"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61024322"
 ---
 # <a name="get-servicehealthissue"></a>获取 serviceHealthIssue
 命名空间：microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "59007453"
 
 此操作检索租户的指定服务运行状况问题。 如果租户不存在该问题，则操作将返回错误。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/v1.0/admin/serviceAnnouncement/issues/MO226784
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-servicehealthissue-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-servicehealthissue-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

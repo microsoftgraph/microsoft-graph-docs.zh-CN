@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 36d012a2299e4a84d62769661d3662a69e171bfe
-ms.sourcegitcommit: c3f849e5a052b1926373a4b316ec303250e6d09e
+ms.openlocfilehash: 15c943f5618cba11b80a02da6429f85ea81f9c89
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60369767"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61033473"
 ---
 # <a name="user-invalidateallrefreshtokens"></a>user：invalidateAllRefreshTokens
 
@@ -18,7 +18,7 @@ ms.locfileid: "60369767"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将 **refreshTokensValidFromDateTime** 用户属性重置为当前日期时间，使颁发给应用程序 (的所有用户刷新令牌以及用户浏览器) 中的会话 cookie 失效。 通常，如果用户的设备丢失 (，则由用户或管理员) 用户或管理员执行此操作。  此操作将阻止访问通过设备上的应用程序访问的任何组织数据，而无需首先要求用户重新登录。 事实上，此操作将强制用户重新登录之前已同意的所有应用程序，而与设备无关。
+将 **refreshTokensValidFromDateTime** 用户属性重置为当前日期时间，使颁发给应用程序 (的所有用户刷新令牌以及用户浏览器) 中的会话 Cookie 失效。 通常，如果用户的设备丢失 (，则由用户或管理员) 执行此操作。  此操作将阻止访问通过设备上的应用程序访问的组织数据，无需用户首先重新登录。 事实上，此操作将强制用户重新登录之前已同意的所有应用程序，而与设备无关。
 
 对于开发人员，如果应用程序尝试使用无效的刷新令牌为该用户兑换委派访问令牌，则应用程序将发生错误。 如果发生这种情况，应用程序将需要通过向授权终结点提出请求来获取新的刷新令牌，这将强制用户登录。
 
@@ -80,6 +80,10 @@ POST https://graph.microsoft.com/beta/me/invalidateAllRefreshTokens
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-invalidateallrefreshtokens-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-invalidateallrefreshtokens-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

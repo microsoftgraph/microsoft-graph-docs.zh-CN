@@ -2,15 +2,15 @@
 author: swapnil1993
 title: 获取 contentType
 description: 获取站点或列表中的内容类型。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: a3dabf343ee4aef7c913cbcfa1bb6179b764fcf2
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: a07aadb726c25643f5bbfb2fd611f1313747b41e
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50770604"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61028740"
 ---
 # <a name="get-contenttype"></a>获取 contentType
 命名空间：microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "50770604"
 
 检索网站或[列表中][contentType]内容[类型的][][元数据][]。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -27,7 +27,7 @@ ms.locfileid: "50770604"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Sites.Read.All、Sites.ReadWrite.All、Sites.Manage.All、Sites.FullControl.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Sites.Read.All、Sites.ReadWrite.All、Sites.Manage.All、Sites.FullControl.All |
+|应用程序 | Sites.Read.All、Sites.ReadWrite.All、Sites.Manage.All、Sites.FullControl.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/contentTypes/{contentType-i
 [!INCLUDE [sample-code](../includes/snippets/java/get-contenttype-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-contenttype-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -117,5 +121,5 @@ Content-type: application/json
 ```
 
 [contentType]: ../resources/contentType.md
-[site]: ../resources/site.md
+[网站]: ../resources/site.md
 [列表]: ../resources/list.md

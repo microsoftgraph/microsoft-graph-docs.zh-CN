@@ -2,15 +2,15 @@
 title: 列出 domainNameReferences
 description: 检索具有对域的引用的 directoryObject 列表。
 author: adimitui
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 207829aca980064e0a995db2b22472c9841fead9
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: ddcbc62e5cd0d164c282ffda1e9d9a7d92bae86b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53579419"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61022404"
 ---
 # <a name="list-domainnamereferences"></a>列出 domainNameReferences
 
@@ -20,23 +20,23 @@ ms.locfileid: "53579419"
 
 检索具有对域的引用的 [directoryObject](../resources/directoryobject.md) 列表。 返回的列表将包含所有依赖域的目录对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | 不支持。 |
+|委派（工作或学校帐户） | Domain.Read.All、Domain.ReadWrite.All、Directory.Read.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Domain.ReadWrite.All |
+|应用程序 | Domain.Read.All、Domain.ReadWrite.All、Directory.Read.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /domains/{domain-id}/domainNameReferences
+GET /domains/{id}/domainNameReferences
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/beta/domains/contoso.com/domainNameReferences
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-domainnamereferences-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-domainnamereferences-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

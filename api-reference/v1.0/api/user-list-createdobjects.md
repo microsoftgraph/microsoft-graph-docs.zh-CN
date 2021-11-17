@@ -2,15 +2,15 @@
 title: List createdObjects
 description: 获取由用户创建的 directory 对象列表。
 author: jpettere
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: d615b23fb422c8ff4007eaa7a1324ce76fc4f474
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: c13c3d9f2e5a06c01baacfd1cc2227a4ea2e01ae
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53207012"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61016006"
 ---
 # <a name="list-createdobjects"></a>List createdObjects
 
@@ -74,6 +74,10 @@ GET https://graph.microsoft.com/v1.0/me/createdObjects
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-createdobjects-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-createdobjects-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

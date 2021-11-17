@@ -1,16 +1,16 @@
 ---
 title: 更新工作人员重新参与
 description: 更新 workforceintegration 对象的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c62a27e7c0a019023bea7549523dc8b9de7582c1
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 6fcfe75b2ee2d39a3142c952d6218da31c8b36df
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787994"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61031218"
 ---
 # <a name="update-workforceintegration"></a>更新工作人员重新参与
 
@@ -20,7 +20,7 @@ ms.locfileid: "52787994"
 
 更新 [workforceintegration 对象](../resources/workforceintegration.md) 的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -53,10 +53,10 @@ PATCH /teamwork/workforceIntegrations/{workforceIntegrationId}
 |apiVersion|Int32|用于回叫 URL 的 API 版本。 从 1 开始。|
 |displayName|String|员工集成的名称。|
 |加密|workforceIntegrationEncryption|员工集成加密资源。 |
-|isActive|Boolean|指示此员工集成当前是否处于活动状态且可用。|
+|isActive|布尔|指示此员工集成当前是否处于活动状态且可用。|
 |支持|string| 可能的值是 `none` `shift` `swapRequest` 、、、、、。 `openshift` `openShiftRequest` `userShiftPreferences` 如果选择多个值，则所有值必须以大写字母开头。|
 |supportedEntities|string| 此属性 **将替换** v1.0 中的 supports。 我们建议你使用此属性，而不是 **支持**。 **目前，supports** 属性在 beta 版中仍受支持。 可能的值是 `none` `shift` `swapRequest` 、、、、、。 `openshift` `openShiftRequest` `userShiftPreferences` 如果选择多个值，则所有值必须以大写字母开头。|
-|url|String| 班次服务中回调的员工集成 URL。 |
+|url|String| 来自 Shift 服务的回调的"员工集成"URL。 |
 
 ## <a name="response"></a>响应
 
@@ -108,6 +108,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-workforceintegration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-workforceintegration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getMailboxUsageDetail'
 description: 获取邮箱使用情况的详细信息。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 82c152c8041ddfa7a1a0a105821ac272712636d3
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 679b88fd2c998260b92bce61fcae99396a4029bc
+ms.sourcegitcommit: 42e0e15ff90815e0126c34b928405486cfb1ed86
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050925"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61044454"
 ---
 # <a name="reportroot-getmailboxusagedetail"></a>reportRoot: getMailboxUsageDetail
 
@@ -32,7 +32,7 @@ ms.locfileid: "52050925"
 | 委派（个人 Microsoft 帐户） | 不支持。                           |
 | 应用                            | Reports.Read.All                         |
 
-**注意**：若要获得委派权限以允许应用代表用户读取服务使用情况报告，租户管理员必须事先为用户分配适当的 Azure AD 受限管理员角色。 有关更多详细信息，请参阅[授权 API 读取 Microsoft 365 使用情况报告](/graph/reportroot-authorization)。
+**注意**：若要获得委派权限以允许应用代表用户读取服务使用情况报告，租户管理员必须事先为用户分配适当的 Azure AD 受限管理员角色。有关更多详细信息，请参阅 [ API 授权，读取 Microsoft 365使用情况报告](/graph/reportroot-authorization)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -86,7 +86,7 @@ CSV 文件包含下面的列标题。
 
 ### <a name="json"></a>JSON
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` **[mailboxUsageDetail](../resources/mailboxusagedetail.md)** 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 JSON 对象。
 
 此请求的默认页面大小为 200 个项目。
 
@@ -146,7 +146,6 @@ Report Refresh Date,User Principal Name,Display Name,Is Deleted,Deleted Date,Cre
 
 下面展示了示例请求。
 
-
 <!-- {
   "blockType": "ignored",
   "name": "reportroot_getmailboxusagedetail_json"
@@ -166,7 +165,7 @@ GET https://graph.microsoft.com/beta/reports/getMailboxUsageDetail(period='D7')?
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.mailboxUsageDetail"
+  "@odata.type": "stream"
 } -->
 
 ```http
@@ -175,7 +174,6 @@ Content-Type: application/json
 Content-Length: 526
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.mailboxUsageDetail)", 
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 

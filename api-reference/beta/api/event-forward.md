@@ -5,12 +5,12 @@ author: harini84
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 834e9b70a90c02c144daaf54716d78f4c3322629
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 158ef251b9f7baa931b77aadc7fcc7c835ad1202
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60944843"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61024820"
 ---
 # <a name="event-forward"></a>event： forward
 
@@ -20,7 +20,7 @@ ms.locfileid: "60944843"
 
 此操作允许会议事件的组织者或与会者将会议请求[](../resources/event.md)转发给新收件人。 
 
-如果会议事件从与会者的 Microsoft 365 邮箱转发到另一个收件人，此操作还会发送一条消息以通知组织者转发，并将该收件人添加到组织者的会议事件副本中。 从 Outlook.com 帐户转发时，此便利不可用。
+如果会议事件从与会者的 Microsoft 365 邮箱转发到另一个收件人，此操作还会发送一条消息，通知组织者转发，并将该收件人添加到组织者的会议事件副本中。 从 Outlook.com 帐户转发时，此便利不可用。
 
 
 ## <a name="permissions"></a>Permissions
@@ -58,7 +58,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |Description|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |评论|字符串|要包含的注释。可以为空字符串。|
 |ToRecipients|[recipient](../resources/recipient.md) collection|将事件转发到的收件人列表。|
@@ -108,6 +108,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/event-forward-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/event-forward-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: madansr7
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 7789a2251517e881850e1a6fd732253894492e13
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 5f62d6bf87453a99b11c6888edc5feadb52456f4
+ms.sourcegitcommit: 42e0e15ff90815e0126c34b928405486cfb1ed86
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60697164"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61044650"
 ---
 # <a name="passwordcredentialconfiguration-resource-type"></a>passwordCredentialConfiguration 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "60697164"
 | 属性                            | 类型                                                                               | 说明                                                                                                                                                                                                                                                                                   |
 | :---------------------------------- | :--------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | restrictionType                     | appCredentialRestrictionType |  要应用的限制的类型。 可能的值包括 `passwordAddition`、`passwordLifetime`、`symmetricKeyAddition`、`symmetricKeyLifetime`、`unknownFutureValue`。 每个 restrictionType 值只能用于每个策略一次。 |
-| maxLifeTime                         | 期限                                                                           | 可以用作设置密码过期时间的最大数目的值（以天、小时、分钟或秒表示）。 例如，"P4DT12H30M5S"表示持续时间为四天、十二小时、三十分钟和五秒。 当限制类型设置为 时，此属性是必需的 `passwordLifetime` 。 |
+| maxLifeTime                         | 期限                                                                           | 可以用作设置密码过期时间的最大数目的值（以天、小时、分钟或秒表示）。 以 ISO 8601 格式定义持续时间。 例如，"P4DT12H30M5S"表示持续时间为四天、十二小时、三十分钟和五秒。 当限制类型设置为 时，此属性是必需的 `passwordLifetime` 。 |
 | restrictForAppsCreatedAfterDateTime | DateTimeOffset                                                                     | 强制执行在强制执行日期或之后创建的应用的策略。 对于现有应用程序，强制执行日期将回到日期。 若要应用于所有应用程序，强制日期/时间为 null。                                                                               |
 
 ## <a name="relationships"></a>关系

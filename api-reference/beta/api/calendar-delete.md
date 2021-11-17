@@ -2,15 +2,15 @@
 title: 删除日历
 description: 删除默认日历以外的日历。
 author: harini84
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3d8e0b7749d08fc7d0d58c3bfc3adc4f4d9f6110
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 1cd7d12244c8b8b91036703c3336cd65e8ed774b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437973"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61015677"
 ---
 # <a name="delete-calendar"></a>删除日历
 
@@ -19,7 +19,7 @@ ms.locfileid: "50437973"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 删除默认日历以外的日历。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -40,7 +40,7 @@ DELETE /users/{id | userPrincipalName}/calendars/{id}
 DELETE /me/calendarGroups/{id}/calendars/{id}
 DELETE /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 ```
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称           |  类型    | 说明|
 |:---------------|:---------|:----------|
 | Authorization  |  string  | Bearer {token}。必需。 |
@@ -78,6 +78,10 @@ DELETE https://graph.microsoft.com/beta/me/calendar
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-calendar-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-calendar-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

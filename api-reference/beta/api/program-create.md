@@ -1,16 +1,16 @@
 ---
 title: 创建程序
-description: 在 Azure AD 访问评审功能中，创建新的程序对象。
-localization_priority: Normal
+description: 在Azure AD评审功能中，创建新的程序对象。
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: ba07a60b8414ab259e4ab256175e4dcc6871c00d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 1bcf52b32f4501c3fcf738ff03df0ac99e140053
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052871"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61032122"
 ---
 # <a name="create-program"></a>创建程序
 
@@ -18,8 +18,8 @@ ms.locfileid: "52052871"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 Azure AD [访问评审](../resources/accessreviews-root.md) 功能中，创建新的 [程序](../resources/program.md) 对象。
-## <a name="permissions"></a>权限
+在Azure AD[访问评审](../resources/accessreviews-root.md)功能中，创建新的[程序](../resources/program.md)对象。
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
@@ -87,6 +87,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-program-from-programs-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-program-from-programs-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

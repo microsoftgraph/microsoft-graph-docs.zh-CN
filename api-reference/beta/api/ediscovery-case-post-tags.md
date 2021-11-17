@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 439005577189f542790d389447e6f7a02369e30f
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: c2acec1c54d5996be591a01dde1d3b545f30dcb8
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60941503"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61020941"
 ---
 # <a name="create-tag"></a>创建标记
 
@@ -20,7 +20,7 @@ ms.locfileid: "60941503"
 
 为指定案例创建新标记。  标记在审阅内容时用于审阅集。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -54,7 +54,7 @@ POST /compliance/ediscovery/cases/{caseId}/tags
 
 下表显示创建 标记时所需的 [属性](../resources/ediscovery-tag.md)。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |childSelectability|[microsoft.graph.ediscovery.childSelectability](../resources/ediscovery-tag.md#childselectability-values)|指示是否可以将单个或多个子标记与文档关联。 可取值为：`One`、`Many`。  此值控制 UX 是作为复选框还是单选按钮组显示标记。 必需。|
 |displayName|String|标记的显示名称。 必需。|
@@ -99,6 +99,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-tag-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-tag-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

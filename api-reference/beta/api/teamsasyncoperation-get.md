@@ -2,25 +2,25 @@
 title: 获取 teamsAsyncOperation
 description: 获取 teamsAsyncOperation 的详细信息。
 author: jecha
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9837cd6af69ee9af06ce2a1ab9aa59f93d0963a9
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 1d07849aa90601df82ee67846a11f7d8dba9b3a5
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53210265"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61017959"
 ---
 # <a name="get-teamsasyncoperation"></a>获取 teamsAsyncOperation
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取特定[Teams运行或](../resources/teamsasyncoperation.md)运行的指定异步操作。
+获取特定[Teams](../resources/teamsasyncoperation.md)运行或运行的指定异步操作。
 
 ## <a name="permissions"></a>权限
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 以下权限用于获取聊天上的操作：
 
@@ -45,7 +45,7 @@ GET /chats/{chat-id}/operations/{operation-id}
 
 此方法支持 `$select` [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 |名称|说明|
 |:---|:---|
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/chats/19:c253a29b5f694b55a6baad8e83510af7@t
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-chat-operation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-chat-operation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

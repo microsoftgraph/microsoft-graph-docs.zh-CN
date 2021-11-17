@@ -2,15 +2,15 @@
 title: List group transitive members
 description: 获取组的成员列表。 组可以将用户、设备、组织联系人和其他组作为成员。 此操作是可传递的，并返回所有简单列表的成员的一个数。
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 3df467df3a12eab3ba9302b090bfb3519154d077795cd13d24930e3c6c133406
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: dca820824ea24ed2744d2c4b00c54f0dd3ecfa6f
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57328958"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61025345"
 ---
 # <a name="list-group-transitive-members"></a>List group transitive members
 
@@ -18,7 +18,7 @@ ms.locfileid: "57328958"
 
 获取组的成员列表。 组可以将用户、设备、组织联系人和其他组作为成员。 此操作是可传递的，并返回所有简单列表的成员的一个数。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -44,9 +44,9 @@ GET /groups/{id}/transitiveMembers
 
 此方法支持[OData query parameters](/graph/query-parameters)以帮助自定义响应，包括 `$search`、`$count`、 和 `$filter` 可使用“**displayName**”和“**说明**”属性上的`$search`。 为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。 在添加或更新项目与在索引中可用之间可能会稍有延迟。
 
-若要筛选 OData 类型的结果（如 `microsoft.graph.user` 或 `microsoft.graph.group` ），必须使用 [高级查询参数](/graph/aad-advanced-queries)。 即，将 **ConsistencyLevel** 标头设置为 `eventual` 和 `$count=true` 查询字符串。
+若要筛选 OData 类型（如 或 ）上的结果， `microsoft.graph.user` `microsoft.graph.group` 必须使用 [高级查询参数](/graph/aad-advanced-queries)。 即，将 **ConsistencyLevel** 标头设置为 `eventual` 和 `$count=true` 查询字符串。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称 | 说明 |
 |:---- |:----------- |
@@ -92,6 +92,10 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/transitiveMembers
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-group-transitivemembers-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-group-transitivemembers-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -321,7 +325,7 @@ Content-type: application/json
 ```
 
 
-### <a name="example-5-use-odata-cast-and-filter-to-get-user-membership-in-groups-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>示例 5：使用 OData 强制转换$filter获取组的用户成员资格，组显示名称以"A"开头（包括返回的对象计数）
+### <a name="example-5-use-odata-cast-and-filter-to-get-user-membership-in-groups-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>示例 5：使用 OData 强制转换$filter获取组的用户成员资格，显示名称以"A"开头的组，其中包括返回的对象计数
 
 #### <a name="request"></a>请求
 
@@ -352,6 +356,10 @@ ConsistencyLevel: eventual
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-a-count-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-a-count-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

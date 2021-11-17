@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 7d4f8568c84176aaafb9cd1237f9f25465e4e245
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 03d09ea1f23ee606be1c167796de02bf178db215
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60945731"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61028852"
 ---
 # <a name="update-connectedorganization"></a>更新 connectedOrganization
 
@@ -53,7 +53,7 @@ PATCH /identityGovernance/entitlementManagement/connectedOrganizations/{id}
 |属性|类型|说明|
 |:---|:---|:---|
 | displayName  |String | 连接的组织名称。  |
-| description  |String | 已连接的组织说明。 |
+| 说明  |String | 已连接的组织说明。 |
 | state        |connectedOrganizationState|已连接组织的状态定义具有请求者作用域类型的分配策略 `AllConfiguredConnectedOrganizationSubjects` 是否适用。 可取值为：`configured`、`proposed`。|
 
 ## <a name="response"></a>响应
@@ -94,6 +94,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-connectedorganization-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-connectedorganization-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
