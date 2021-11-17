@@ -1,16 +1,16 @@
 ---
 title: tiIndicator：submitTiIndicators
 description: Upload一个 (请求) 多个请求（而不是多个请求）中使用多个威胁情报和 TI 指示器。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: ed4ccd5adf087ecf8be69d8d192ae180ec685090
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 325bdb7efd98be05192faba712fbc14937196c5e
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050778"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60989525"
 ---
 # <a name="tiindicator-submittiindicators"></a>tiIndicator：submitTiIndicators
 
@@ -128,6 +128,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/tiindicator-submittiindicators-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/tiindicator-submittiindicators-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -3,15 +3,15 @@ author: JeremyKelley
 description: 获取为网站定义的子网站集合。
 ms.date: 09/10/2017
 title: 列出 SharePoint 网站的子网站
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 369904ca3c2038b662a1c2dc6120f05126655c14
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: 6e5f8a57fcdf43cbe9c95bfb727fca5187d00089
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582646"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61020466"
 ---
 # <a name="enumerate-subsites"></a>枚举子网站
 
@@ -63,6 +63,10 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/sites
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-subsites-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-subsites-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

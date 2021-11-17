@@ -5,12 +5,12 @@ author: akumar39
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ee2469ed3e8f534caf0b8cbb1e8b9c31541a032a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1069ba7025a39d69984a4bc7b365efba62182603
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019648"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60976432"
 ---
 # <a name="schedule-share"></a>schedule： share
 
@@ -51,7 +51,7 @@ POST /teams/{teamId}/schedule/share
 
 |参数                   |类型           |说明  |
 |-----------------------|-------------------|--------------|
-| notifyTeam            |`Boolean`             |指示整个团队是应收到此操作的可见通知，还是只收到分配有已共享的班次的员工。 必需。       |
+| notifyTeam            |`Boolean`             |指示整个团队是应该收到此操作的可见通知，还是只收到分配有已共享的班次的员工。 必需。       |
 | startDateTime         |`DateTimeOffset`   |按计划共享班次的开始时间。 必需。   |
 | endDateTime           |`DateTimeOffset`   | 在计划前共享班次的结束时间。   |
 
@@ -95,6 +95,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/schedule-share-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/schedule-share-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

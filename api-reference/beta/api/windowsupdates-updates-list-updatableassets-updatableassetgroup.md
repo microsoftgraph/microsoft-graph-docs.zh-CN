@@ -2,15 +2,15 @@
 title: 列出 updatableAssetGroup 资源
 description: 获取 updatableAssetGroup 对象及其属性的列表。
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: d0529c59c00e84e122e5be3e5658c963535fd6d9
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: b9efc15eecfa914941d33dcfb2519e45da9f0fbd
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52239255"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61004183"
 ---
 # <a name="list-updatableassetgroup-resources"></a>列出 updatableAssetGroup 资源
 命名空间：microsoft.graph.windowsUpdates
@@ -43,7 +43,7 @@ GET /admin/windows/updates/updatableAssets/?$filter=isof('microsoft.graph.window
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持一些 [OData 查询](/graph/query-parameters) 参数来帮助自定义响应，包括 `$count` `$filter` `$orderBy` `$select` 、、 `$skip` 和 `$top` 。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/?$fil
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-updatableassetgroup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-updatableassetgroup-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

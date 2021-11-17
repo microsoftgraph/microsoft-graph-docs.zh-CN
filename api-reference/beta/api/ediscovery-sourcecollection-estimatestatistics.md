@@ -2,15 +2,15 @@
 title: sourceCollection： estimateStatistics
 description: 运行源集合的估计值。
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 2ae6b7363bdb1be34e38dd7f5502962fc920808d
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: b6c72951e745c0b36c486155c9caf319f34abe62
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50772707"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61003210"
 ---
 # <a name="sourcecollection-estimatestatistics"></a>sourceCollection： estimateStatistics
 
@@ -18,7 +18,7 @@ ms.locfileid: "50772707"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-运行源集合中电子邮件和文档的估计数量。 若要了解有关源集合 (电子数据展示中的搜索) ，请参阅在高级电子数据展示 中收集 [案例的数据](https://docs.microsoft.com/microsoft-365/compliance/collecting-data-for-ediscovery)。
+运行源集合中电子邮件和文档的估计数量。 若要了解有关电子数据展示 (搜索的源集合) ，请参阅在电子数据展示中收集[Advanced eDiscovery。](https://docs.microsoft.com/microsoft-365/compliance/collecting-data-for-ediscovery)
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ ms.locfileid: "50772707"
 |:---|:---|
 |委派（工作或学校帐户）|eDiscovery.Read.All、eDiscovery.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -53,7 +53,7 @@ POST /compliance/ediscovery/cases/{caseId}/sourceCollections/{sourceCollectionId
 
 ## <a name="response"></a>响应
 
-如果估计成功启动，此操作将返回 响应 `202 Accepted` 代码。 响应还将包含标头，其中包含为处理估计而创建的 `Location` [estimateStatisticsOperation](../resources/ediscovery-estimatestatisticsoperation.md) 的位置。 通过向位置提出 GET 请求来检查估计操作的状态，成功完成后， [状态](../resources/ediscovery-caseoperation.md#caseoperationstatus-values) 将更改为 `succeeded` 。
+如果估计成功启动，此操作将返回 响应 `202 Accepted` 代码。 响应还将包含标头，其中包含为处理估计而创建的 `Location` [estimateStatisticsOperation](../resources/ediscovery-estimatestatisticsoperation.md) 的位置。 通过向位置发送 GET 请求来检查估计操作的状态，成功完成后， [状态](../resources/ediscovery-caseoperation.md#caseoperationstatus-values) 将更改为 `succeeded` 。
 
 ## <a name="examples"></a>示例
 
@@ -84,6 +84,10 @@ POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/sourc
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/sourcecollection-estimatestatistics-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/sourcecollection-estimatestatistics-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

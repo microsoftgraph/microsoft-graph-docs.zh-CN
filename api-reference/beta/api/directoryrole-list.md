@@ -5,12 +5,12 @@ author: abhijeetsinha
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: f7f1d808608f3c1311ad9e6361d96c59b758ffe6
-ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
+ms.openlocfilehash: 6050354c833a598a431b7cf09c7cbb48aa8632db
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60256177"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60999095"
 ---
 # <a name="list-directoryroles"></a>列出 directoryRoles
 
@@ -22,7 +22,7 @@ ms.locfileid: "60256177"
 
 此操作仅返回已激活的角色。 当管理员使用 [Activate directoryRole](directoryrole-post-directoryroles.md) API 激活角色时，角色将变为激活状态。 并非所有内置角色最初都是激活的。 
 
-使用 Azure 门户分配角色时，角色激活步骤将代表管理员隐式完成。 若要获取 Azure AD 中提供的角色的完整列表，请使用 [List directoryRoleTemplates](directoryroletemplate-list.md)。
+使用 Azure 门户分配角色时，角色激活步骤将代表管理员隐式完成。 若要获取可用角色的完整列表，Azure AD列表[directoryRoleTemplates](directoryroletemplate-list.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -78,6 +78,10 @@ GET https://graph.microsoft.com/beta/directoryRoles
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-directoryroles-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-directoryroles-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

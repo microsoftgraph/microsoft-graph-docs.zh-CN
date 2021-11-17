@@ -5,12 +5,12 @@ author: psignoret
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 7cd9c73eca68ba9858ea82601c80ce4e7967f72f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2cc16ba867e5084814565201d8ad8d056fd1dc37
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59080464"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60996811"
 ---
 # <a name="update-adminconsentrequestpolicy"></a>更新 adminConsentRequestPolicy
 
@@ -56,8 +56,8 @@ PUT /policies/adminConsentRequestPolicy
 |属性|类型|说明|
 |:---|:---|:---|
 |isEnabled|Boolean|指定是启用还是禁用管理员同意请求功能。|
-|notifyReviewers|Boolean|指定审阅者是否将收到通知。|
-|remindersEnabled|Boolean|指定审阅者是否将收到提醒电子邮件。|
+|notifyReviewers|布尔|指定审阅者是否将收到通知。|
+|remindersEnabled|布尔|指定审阅者是否将收到提醒电子邮件。|
 |requestDurationInDays|Int32|指定请求在未应用决策时自动过期之前处于活动状态的持续时间。|
 |reviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合|管理员同意的审阅者列表。|
 
@@ -111,6 +111,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-adminconsentrequestpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-adminconsentrequestpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

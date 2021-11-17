@@ -1,16 +1,16 @@
 ---
 title: 获取位置
 description: 检索 place 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2a5c259d05b88a6195a76420e573d6bbff155065
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b2ccf6e20760cd20466ca13fe7f6b61e89479735
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055398"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60997451"
 ---
 # <a name="get-place"></a>获取位置
 
@@ -21,7 +21,7 @@ ms.locfileid: "52055398"
 
 **place** 对象可以是下列类型之一：
 
-* [包含](../resources/room.md)丰富属性（如会议室的电子邮件地址）以及辅助功能、容量和设备支持的聊天室。
+* [包含](../resources/room.md)丰富属性（例如会议室的电子邮件地址）以及辅助功能、容量和设备支持的聊天室。
 * [包含会议室](../resources/roomlist.md)列表的电子邮件地址的会议室列表，以及用于获取该会议室列表中的会议室实例集合的导航属性。 
 
 **room 和** **roomList** 均派生自 [place](../resources/place.md)对象。 
@@ -61,14 +61,14 @@ GET /places/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` 请求的 [place](../resources/place.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和请求 `200 OK` 的 [place](../resources/place.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="example-1-get-a-room"></a>示例 1：获取聊天室
 #### <a name="request"></a>请求
 
-以下示例指定要 **获取** 其 **属性的聊天室** 的 ID。
+以下示例指定要获取其 **属性的聊天室** 的 **ID。**
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -93,6 +93,10 @@ GET https://graph.microsoft.com/beta/places/3162F1E1-C4C0-604B-51D8-91DA78989EB1
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-room-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-room-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -178,6 +182,10 @@ GET https://graph.microsoft.com/beta/places/bldg1@contoso.com
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-roomlist-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-roomlist-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

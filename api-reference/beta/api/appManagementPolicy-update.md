@@ -1,16 +1,16 @@
 ---
 title: 更新 appManagementPolicy
 description: 更新应用程序管理策略。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: madansr7
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9cb3ff260f7220646e83ebbcad54c80d673974b8
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: b19a09e4bd752c04938c20181c6a55924ae029fb
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58258892"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60995642"
 ---
 # <a name="update-appmanagementpolicy"></a>更新 appManagementPolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "58258892"
 
 更新 [appManagementPolicy](../resources/appManagementPolicy.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -54,7 +54,7 @@ PATCH /policies/appManagementPolicies/{id}
 | 属性                | 类型                                                                        | 说明                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |:------------------------|:----------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | displayName  | String                                                      | 策略显示名称。 继承自 [policyBase](../resources/policybase.md)。                                        |
-| description  | 字符串                                                      | 策略的说明。 继承自 [policyBase](../resources/policybase.md)。                                         |
+| 说明  | String                                                      | 策略的说明。 继承自 [policyBase](../resources/policybase.md)。                                         |
 | isEnabled    | Boolean                                                     | 表示是否启用策略。                                      |
 | 限制 | [appManagementConfiguration](../resources/appManagementConfiguration.md) | 应用于应用程序或服务主体对象的限制。 |
 
@@ -97,6 +97,10 @@ PATCH https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-appmanagementpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-appmanagementpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: jewan-microsoft
 ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 31677503fa1982717768f10f58b6ce0365917957
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1fb9de167a7ce47d78cbe8617273095e4bee84ee
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59016055"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60992871"
 ---
 # <a name="notebook-getnotebookfromweburl"></a>notebook： getNotebookFromWebUrl
 
@@ -18,7 +18,7 @@ ms.locfileid: "59016055"
 
 使用笔记本对象 URL [路径检索](../resources/notebook.md) 其属性和关系。
 
-该位置可以是用户笔记本，Microsoft 365组笔记本或SharePoint托管的工作组笔记本Microsoft 365。
+该位置可以是用户笔记本Microsoft 365、组笔记本或SharePoint托管的工作组笔记本Microsoft 365。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -80,6 +80,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/notebook-fromweburl-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/notebook-fromweburl-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

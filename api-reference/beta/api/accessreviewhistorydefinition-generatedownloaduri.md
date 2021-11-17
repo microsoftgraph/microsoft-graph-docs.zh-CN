@@ -2,15 +2,15 @@
 title: accessReviewHistoryDefinition： generateDownloadUri
 description: 生成可用于检索审阅历史记录数据的 URI。
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 2a8d8b2023b322bc67b9ef37f6e868104ef1037a
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: 157478c971e9b2260e2cc76a75d19036e83bbba3
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52474211"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60992121"
 ---
 # <a name="accessreviewhistorydefinition-generatedownloaduri"></a>accessReviewHistoryDefinition： generateDownloadUri
 
@@ -20,7 +20,7 @@ ms.locfileid: "52474211"
 
 生成可用于检索关联 [accessReviewHistoryDefinition](../resources/accessReviewHistoryDefinition.md)的审阅历史记录数据的 URI。 此 URI 的有效期为一天，可通过从关联的 [accessReviewHistoryDefinition](../resources/accessReviewHistoryDefinition.md)对象提取 **downloadUri** 属性来检索。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -81,6 +81,10 @@ POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDe
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/accessreviewhistorydefinition-generatedownloaduri-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/accessreviewhistorydefinition-generatedownloaduri-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

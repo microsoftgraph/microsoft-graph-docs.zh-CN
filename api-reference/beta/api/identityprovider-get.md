@@ -1,18 +1,18 @@
 ---
 title: 获取 identityProvider
 description: 检索 identityProvider 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: fc51780f2f5ab9a783b431d49e19136c1f5e3fef
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: ed440c4604906753aef133c03248271fcc3f2439
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51508582"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61015029"
 ---
-# <a name="get-identityprovider-deprecated"></a>获取 identityProvider (已弃) 
+# <a name="get-identityprovider-deprecated"></a>获取 identityProvider（已弃用）
 
 命名空间：microsoft.graph
 
@@ -56,7 +56,7 @@ GET /identityProviders/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回响应代码和 `200 OK` [identityProvider](../resources/identityprovider.md) 或 [openIdConnectProvider](../resources/openidconnectprovider.md) (仅在响应正文中为 Azure AD B2C) JSON 表示形式。
+如果成功，此方法返回响应代码和 `200 OK` [identityProvider](../resources/identityprovider.md)或[openIdConnectProvider](../resources/openidconnectprovider.md) (仅在响应正文中Azure AD B2C) JSON 表示形式。
 
 ## <a name="examples"></a>示例
 
@@ -93,6 +93,10 @@ GET https://graph.microsoft.com/beta/identityProviders/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-identityprovider-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-identityprovider-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -119,7 +123,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-retrieve-a-specific-openidconnectprovider-only-for-azure-ad-b2c"></a>示例 2：仅为 Azure AD B2C (检索特定的 openIDConnectProvider) 
+### <a name="example-2-retrieve-a-specific-openidconnectprovider-only-for-azure-ad-b2c"></a>示例 2：仅为 B2C (检索Azure AD openIDConnectProvider) 
 
 #### <a name="request"></a>请求
 
@@ -150,6 +154,10 @@ GET https://graph.microsoft.com/beta/identityProviders/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-identityprovider-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-identityprovider-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

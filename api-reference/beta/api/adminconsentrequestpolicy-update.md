@@ -2,15 +2,15 @@
 title: 更新 adminConsentRequestPolicy
 description: 更新 adminConsentRequestPolicy 对象的属性。
 author: psignoret
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 5efe85f8d78e11ea5c97799c426bba383300c24a
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 12fd69f5fc605aca11c6458eb6d92ca26bbc8907
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51468917"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60987613"
 ---
 # <a name="update-adminconsentrequestpolicy"></a>更新 adminConsentRequestPolicy
 命名空间：microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "51468917"
 |:---|:---|
 |委派（工作或学校帐户）|Policy.ReadWrite.ConsentRequest、Directory.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|Policy.ReadWrite.ConsentRequest、Directory.ReadWrite.All|
+|应用程序|Policy.ReadWrite.ConsentRequest、Directory.ReadWrite.All|
 
 代表用户进行呼叫时，用户需要属于全局 [管理员](/azure/active-directory/roles/permissions-reference) 目录角色。
 
@@ -54,8 +54,8 @@ PUT /policies/adminConsentRequestPolicy
 |属性|类型|说明|
 |:---|:---|:---|
 |isEnabled|Boolean|指定是启用还是禁用管理员同意请求功能。|
-|notifyReviewers|Boolean|指定审阅者是否将收到通知。|
-|remindersEnabled|Boolean|指定审阅者是否将收到提醒电子邮件。|
+|notifyReviewers|布尔|指定审阅者是否将收到通知。|
+|remindersEnabled|布尔|指定审阅者是否将收到提醒电子邮件。|
 |requestDurationInDays|Int32|指定请求在未应用决策时自动过期之前处于活动状态的持续时间。|
 |reviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) 集合|管理员同意的审阅者列表。|
 
@@ -110,6 +110,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-adminconsentrequestpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-adminconsentrequestpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

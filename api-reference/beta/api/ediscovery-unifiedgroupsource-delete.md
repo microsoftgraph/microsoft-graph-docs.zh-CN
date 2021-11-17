@@ -2,15 +2,15 @@
 title: 删除 unifiedGroupSource
 description: 删除 unifiedGroupSource 对象。
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 7e58bd2da85d980944b7df840cac95ed0a5dd6b1
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: ed59df62d1ff75e1dcb5103fdbf6c05496510559
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50445981"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60993983"
 ---
 # <a name="delete-unifiedgroupsource"></a>删除 unifiedGroupSource
 
@@ -28,7 +28,7 @@ ms.locfileid: "50445981"
 |:---|:---|
 |委派（工作或学校帐户）|eDiscovery.Read.All、eDiscovery.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -84,6 +84,10 @@ DELETE https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/cus
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-unifiedgroupsource-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-unifiedgroupsource-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

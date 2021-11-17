@@ -2,15 +2,15 @@
 title: 列出用户使用情况Rights
 description: 检索用户的 usageRights 对象列表。
 author: jeeshnair
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 253dbe479c4bd0e60798da2d7e21b78965a1e356
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 8aa4bdef079de22cd230be157f147dcf1c7dd66e
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50942017"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61009693"
 ---
 # <a name="list-user-usagerights"></a>列出用户使用情况Rights
 命名空间：microsoft.graph
@@ -46,9 +46,9 @@ GET /users/{userId}/usageRights
 - $filter = state eq 'value' and serviceIdentifier eq 'value'
 - $filter = ( value1、value2") 
 - $filter =serviceIdentifier in ('value1'， 'value2') 
-- $filter = ( value1、value2") 和 serviceIdentifier 中的 state ( value1"，"value2") 
+- $filter ( value1"、value2") 和 serviceIdentifier 中的 state ( value1"、"value2") 
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/beta/users/{userId}/usageRights
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-usageright-3-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-usageright-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -150,6 +154,10 @@ GET https://graph.microsoft.com/beta/users/{userId}/usageRights?$filter=state in
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-usageright-4-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-usageright-4-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

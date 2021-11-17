@@ -2,15 +2,15 @@
 title: tenant： resetTenantOnboardingStatus
 description: 执行适当的过程以重置使用 offboardTenant 操作从多租户管理平台中删除的托管租户的载入状态。 通过调用此操作，平台将尝试载入托管租户进行管理。
 author: isaiahwilliams
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: e7d584343475f5f1698b4bccde13a0f1115abf43
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 9bd195b42f2daac4a0264e4a508947410bd3a496
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53440403"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60980865"
 ---
 # <a name="tenant-resettenantonboardingstatus"></a>tenant： resetTenantOnboardingStatus
 命名空间：microsoft.graph.managedTenants
@@ -77,6 +77,10 @@ POST https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenants
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/tenant-resettenantonboardingstatus-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/tenant-resettenantonboardingstatus-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

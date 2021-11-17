@@ -1,16 +1,16 @@
 ---
 title: 列出 credentialUserRegistrationDetails
 description: 获取给定租户的 credentialUserRegistrationDetails 对象列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: bf6e99722c44ff0054869056be09314d6befac59
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: d107de125d803564d711bbd2790a4ac60f9dda40
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136666"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61011100"
 ---
 # <a name="list-credentialuserregistrationdetails"></a>列出 credentialUserRegistrationDetails
 
@@ -40,19 +40,19 @@ GET /reports/credentialUserRegistrationDetails
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此函数支持可选的 OData 查询 **参数**$filter。 可以将 **$filter凭据**[UserRegistrationDetails](../resources/credentialuserregistrationdetails.md)资源的以下一个或多个属性应用。
+此函数支持可选的 OData 查询参数 **$filter。** 你可以将 **$filter** 凭据 [UserRegistrationDetails](../resources/credentialuserregistrationdetails.md) 资源的以下一个或多个属性应用。
 
 | 属性 | 说明和示例 |
 | --------- | ----------------------- |
 | userDisplayName | 按用户名筛选。 例如：`/reports/credentialUserRegistrationDetails?$filter=userDisplayName eq 'Contoso'`。 支持的筛选器运算符： `eq` 和 `startswith()` 。 支持不区分大小写。 |
 | userPrincipalName | 按用户主体名称进行筛选。 例如：`/reports/credentialUserRegistrationDetails?$filter=userPrincipalName eq 'Contoso'`。 支持的筛选器运算符： `eq` 和 `startswith()` 。 支持不区分大小写。 |
-| authMethods | 按注册期间使用的身份验证方法进行筛选。 例如：`/reports/credentialUserRegistrationDetails?$filter=authMethods/any(t:t eq microsoft.graph.registrationAuthMethod'email')`。 支持的筛选器运算符： `eq` . |
-| isRegistered | 筛选已注册 SSPR 服务中的自助服务密码重置 (用户) 。 例如：`/reports/credentialUserRegistrationDetails?$filter=isRegistered eq true`。 支持的筛选器运算符： `eq` . |
-| isEnabled | 筛选已启用 SSPR 的用户。 例如：`/reports/credentialUserRegistrationDetails?$filter=isEnabled eq true`。 支持的筛选运算符： `eq` . |
-| isCapable | 筛选准备在 MFA 服务中执行密码重置或多重 (的用户) 。 例如：`/reports/credentialUserRegistrationDetails?$filter=isCapable eq true`。 支持的筛选器运算符： `eq` |
-| isMfaRegistered | 筛选为 MFA 注册的用户。 例如：`/reports/credentialUserRegistrationDetails?$filter=isMfaRegistered eq true`。 支持的筛选器运算符： `eq` . |
+| authMethods | 按注册期间使用的身份验证方法进行筛选。 例如：`/reports/credentialUserRegistrationDetails?$filter=authMethods/any(t:t eq microsoft.graph.registrationAuthMethod'email')`。 支持的筛选器运算符 `eq` ：。 |
+| isRegistered | 筛选已注册 SSPR 服务中的自助服务密码重置 (用户) 。 例如：`/reports/credentialUserRegistrationDetails?$filter=isRegistered eq true`。 支持的筛选器运算符 `eq` ：。 |
+| isEnabled | 筛选已启用 SSPR 的用户。 例如：`/reports/credentialUserRegistrationDetails?$filter=isEnabled eq true`。 支持的筛选运算符 `eq` ：。 |
+| isCapable | 筛选准备在 MFA 中执行密码重置或多重身份验证 (用户) 。 例如：`/reports/credentialUserRegistrationDetails?$filter=isCapable eq true`。 支持的筛选器运算符： `eq` |
+| isMfaRegistered | 筛选注册了 MFA 的用户。 例如：`/reports/credentialUserRegistrationDetails?$filter=isMfaRegistered eq true`。 支持的筛选器运算符 `eq` ：。 |
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称      |说明|
 |:----------|:----------|
@@ -65,7 +65,7 @@ GET /reports/credentialUserRegistrationDetails
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [credentialUserRegistrationDetails](../resources/credentialuserregistrationdetails.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [credentialUserRegistrationDetails](../resources/credentialuserregistrationdetails.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -100,6 +100,10 @@ GET https://graph.microsoft.com/beta/reports/credentialUserRegistrationDetails
 [!INCLUDE [sample-code](../includes/snippets/java/get-credentialuserregistrationdetails-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-credentialuserregistrationdetails-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -107,7 +111,7 @@ GET https://graph.microsoft.com/beta/reports/credentialUserRegistrationDetails
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 从实际调用中返回所有属性。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都从实际调用中返回。
 
 <!-- {
   "blockType": "response",

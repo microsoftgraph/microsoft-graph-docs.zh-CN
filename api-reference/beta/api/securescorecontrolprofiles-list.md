@@ -1,16 +1,16 @@
 ---
 title: 列出 secureScoreControlProfiles
 description: 检索 secureScoreControlProfiles 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: 988a51f458fdbd3a23efa9f98ec467bdf4a521f8
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 36227e3def490f9b2c9eb9231c668ab7c4e9ee16
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48982049"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61020535"
 ---
 # <a name="list-securescorecontrolprofiles"></a>列出 secureScoreControlProfiles
 
@@ -18,7 +18,7 @@ ms.locfileid: "48982049"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索租户的 [secureScoreControlProfile](../resources/securescorecontrolprofiles.md) 对象的列表。
+检索租户 [的 secureScoreControlProfile](../resources/securescorecontrolprofiles.md) 对象列表。
 
 ## <a name="permissions"></a>权限
 
@@ -50,7 +50,7 @@ GET /security/secureScoreControlProfiles
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 **secureScoreControlProfile** 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` **secureScoreControlProfile** 对象集合。
 
 ## <a name="example"></a>示例
 
@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/beta/security/secureScoreControlProfiles
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/securescorecontrolprofiles-list-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/securescorecontrolprofiles-list-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

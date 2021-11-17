@@ -1,16 +1,16 @@
 ---
 title: 列出语言
 description: 检索 languageProficiency 对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 09154c6cd53d2b10dbbd2bf1aa1033443e046eec
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: be4c37b2550857dbf6675e282051461669d9eb7c
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52037194"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61019457"
 ---
 # <a name="list-languages"></a>列出语言
 
@@ -45,7 +45,7 @@ GET /users/{id | userPrincipalName}/profile/languages
 
 |名称            |值    |说明                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|$filter         |string   |将响应限制到仅包含指定条件的对象。                                                                                             |
+|$filter         |string   |将响应范围限定为仅包含指定条件的对象。                                                                                             |
 |$orderby        |string   |默认情况下，响应中的对象按查询中的 createdDateTime 值进行排序。 可以使用 $orderby 参数 *更改响应* 的顺序。|
 |$select         |string   |要在响应中添加的属性列表（以逗号分隔）。为获得最佳结果，请仅选择所需属性的子集。                                        |
 |$skip           |int      |跳过前 n 个结果，可用于分页。                                                                                                                                |
@@ -94,6 +94,10 @@ GET https://graph.microsoft.com/beta/me/profile/languages
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-languages-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-languages-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
