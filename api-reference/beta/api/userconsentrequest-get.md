@@ -2,15 +2,15 @@
 title: 获取 userConsentRequest
 description: 读取 userConsentRequest 对象的属性和关系。
 author: psignoret
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 2201fc4deab18985b3170e1c3e90dd973789a969
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: c4e2202bfd3123f8d19faee467813b26de08e289
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52759929"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60984827"
 ---
 # <a name="get-userconsentrequest"></a>获取 userConsentRequest
 命名空间：microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "52759929"
 
 读取 [userConsentRequest](../resources/userconsentrequest.md) 对象的属性和关系。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/appConsent/appConsentReq
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-userconsentrequest-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-userconsentrequest-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

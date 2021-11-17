@@ -2,15 +2,15 @@
 title: 删除 timeOffReason
 description: 通过设置 isActive 属性将 timeOffReason 标记为非活动状态。
 author: akumar39
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 48c39c0b371a6feafb7c89868903b60c8bb4ea63
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 82befbd9673936f94754742bce13a3a603bdaf01
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787343"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61031631"
 ---
 # <a name="delete-timeoffreason"></a>删除 timeOffReason
 
@@ -22,7 +22,7 @@ ms.locfileid: "52787343"
 
 此方法不会删除指定的 **timeOffReason** 实例。 已分配此原因的[timeOffItem](../resources/timeoffitem.md)实例仍分配给此原因。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -85,6 +85,10 @@ DELETE https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffReasons/{
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/timeoffreason-delete-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/timeoffreason-delete-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

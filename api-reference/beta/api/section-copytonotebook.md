@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 81efaa842c08ae2cec59218f5b9b6353e7b5afba
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: be09b0393016111e1962a3db16edb59f5a92a676
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60926432"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61031960"
 ---
 # <a name="section-copytonotebook"></a>section： copyToNotebook
 
@@ -47,7 +47,7 @@ POST /sites/{id}/onenote/sections/{id}/copyToNotebook
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 JSON 对象，其中包含操作所需的参数。
 
-| 参数    | 类型   |Description|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |siteCollectionId|String|要复制到SharePoint网站的 ID。 仅在复制到网站时SharePoint使用。|
 |siteId|String|要复制到SharePoint Web 的 ID。 仅在复制到网站时SharePoint使用。|
@@ -93,6 +93,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/section-copytonotebook-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/section-copytonotebook-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: mlafleur
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 782a0b27ed47776d6f127e4eab75d980f391f4eb
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 002b61a29a245902e458a70c03aacc4982b9d2ad
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60940768"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61024596"
 ---
 # <a name="update-educationuser"></a>更新 educationUser
 
@@ -44,7 +44,7 @@ PATCH /education/users/{id}
 
 | 属性             | 类型                                                               | 说明                                                                                                                                                                                                                                                                                                                                                 |
 | :------------------- | :----------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| accountEnabled       | Boolean                                                            | 如果帐户已启用，则为 **true**；否则，为 **false**。 创建用户时此属性是必需的。 支持 $filter。                                                                                                                                                                                                                               |
+| accountEnabled       | 布尔                                                            | 如果帐户已启用，则为 **true**；否则，为 **false**。 创建用户时此属性是必需的。 支持 $filter。                                                                                                                                                                                                                               |
 | assignedLicenses     | [assignedLicense](../resources/assignedlicense.md) collection      | 分配给该用户的许可证。不可为 null。                                                                                                                                                                                                                                                                                                   |
 | assignedPlans        | [assignedPlan](../resources/assignedplan.md) collection            | 分配给该用户的计划。只读。不可为 null。                                                                                                                                                                                                                                                                                           |
 | businessPhones       | String collection                                                  | 用户的电话号码。 **注意：** 虽然这是字符串集合，但是只能为该属性设置一个号码。                                                                                                                                                                                                                           |
@@ -109,6 +109,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-educationuser-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-educationuser-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

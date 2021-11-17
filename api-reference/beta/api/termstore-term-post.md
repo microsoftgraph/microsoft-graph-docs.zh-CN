@@ -5,12 +5,12 @@ author: mohitpcad
 ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: apiPageType
-ms.openlocfilehash: 45ce3a4c7284f67be0f24d8d6b6c0e4d5ae07ef0
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 36aefc94e89881e25792617fcc48d158d62473f2
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60941951"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60977587"
 ---
 # <a name="create-term"></a>创建术语
 命名空间：microsoft.graph.termStore
@@ -19,7 +19,7 @@ ms.locfileid: "60941951"
 
 创建新的 [术语](../resources/termstore-term.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -51,7 +51,7 @@ POST /termStore/sets/{setId}/terms/{termId}/children
 
 下表显示创建术语时所需的 [属性](../resources/termstore-term.md)。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |labels|[microsoft.graph.termStore.localizedLabel](../resources/termstore-localizedlabel.md) 集合|要创建的术语的标签|
 
@@ -99,6 +99,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-term-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-term-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

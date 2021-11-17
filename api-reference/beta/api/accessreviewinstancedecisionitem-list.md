@@ -1,16 +1,16 @@
 ---
 title: 列出 accessReviewInstanceDecisionItem
 description: 检索 accessReviewInstanceDecisionItem 对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a89f6a1bc91f2449a280fe3bfcfaab918cd92e16
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: 4b3335b97bfcd0f805176e323a8943be5fe6c77f
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53030430"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60995858"
 ---
 # <a name="list-accessreviewinstancedecisionitem"></a>列出 accessReviewInstanceDecisionItem
 
@@ -18,12 +18,12 @@ ms.locfileid: "53030430"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [特定 accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) 对象的 [AccessReviewInstance](../resources/accessreviewinstance.md)。 返回零个或多个 accessReviewInstanceDecisionItem 对象的列表，包括其所有嵌套属性。
+检索 [特定 accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) 对象的 [AccessReviewInstance](../resources/accessreviewinstance.md)。 返回零个或多个 accessReviewInstanceDecisionItem 对象的列表，包括所有嵌套属性。
 
 >[!NOTE]
 >此 API 的默认页面大小为 100 accessReviewInstanceDecisionItem 对象。 若要提高效率并避免由于大型结果集而超时，请通过使用 和 查询参数应用 `$skip` `$top` 分页。 有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
@@ -41,7 +41,7 @@ GET /identityGovernance/accessReviews/definitions/{definition-id}/instances/{ins
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 `$select` 、 、 、 和 OData 查询参数 `$filter` `$orderBy` `$skip` `$top` 来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持 `$select` 、 `$filter` `$orderBy` 、 、 `$skip` 和 `$top` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 无。
@@ -79,6 +79,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-accessreviewinstancedecisionitem-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-accessreviewinstancedecisionitem-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

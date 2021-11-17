@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 0179cd6cf85c64f7b72f137218b9de1973e1d5f8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 90cf84b469550a5bf98f8b620c1fb3d29faab454
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59022049"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61030749"
 ---
 # <a name="list-approleassignments-granted-for-a-service-principal"></a>列出为服务主体授予的 appRoleAssignment
 
@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/8e881353-1735-45af-af21-e
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-get-approleassignedto-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-get-approleassignedto-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

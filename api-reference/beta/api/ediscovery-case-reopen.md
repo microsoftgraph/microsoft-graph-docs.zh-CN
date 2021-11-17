@@ -2,15 +2,15 @@
 title: case： reopen
 description: 重新打开已关闭电子数据展示案例。
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 2b220e42a6bc7bf69fee34b69bb9d40ed16137de
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 6670741d44bb49d860d51002b553d3157083e01c
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50773716"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61023874"
 ---
 # <a name="case-reopen"></a>case： reopen
 
@@ -20,7 +20,7 @@ ms.locfileid: "50773716"
 
 重新打开已关闭电子数据展示案例。 有关详细信息，请参阅 [重新打开已关闭的案例](/microsoft-365/compliance/close-or-delete-case#reopen-a-closed-case)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -84,6 +84,10 @@ POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/061b9a92-8926-
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/case-reopen-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/case-reopen-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

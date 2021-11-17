@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 4e4ff676d8c4c7761a3fa9955209f9c88bf4829c
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 6d35ba7e833633b1eb67a8710413e6b34494751b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59764057"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61023567"
 ---
 # <a name="list-user-transitive-memberof"></a>List user transitive memberOf
 
@@ -20,7 +20,7 @@ ms.locfileid: "59764057"
 
 获取用户是其中一个成员的组、目录角色和管理单元。 此 API 请求是可传递的，并且还将返回用户是嵌套成员的所有组。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/beta/users/{id}/transitiveMemberOf
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-transitivememberof-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-transitivememberof-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

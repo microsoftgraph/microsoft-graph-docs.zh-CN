@@ -2,15 +2,15 @@
 title: 删除部署
 description: 删除部署对象。
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 3baf7f9d163c7f1f4beb8967ca8cb94b53fb95f5
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: bacfe548b90c6e2587b6691cf419397d795e2c01
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241375"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61031274"
 ---
 # <a name="delete-deployment"></a>删除部署
 命名空间：microsoft.graph.windowsUpdates
@@ -19,7 +19,7 @@ ms.locfileid: "52241375"
 
 删除 [部署](../resources/windowsupdates-deployment.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -77,6 +77,10 @@ DELETE https://graph.microsoft.com/beta/admin/windows/updates/deployments/{deplo
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-deployment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-deployment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

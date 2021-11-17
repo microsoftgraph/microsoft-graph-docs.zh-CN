@@ -5,19 +5,19 @@ author: nilakhan
 ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 311dfcf90c07728d588cced30af48f50c4f0a368
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 0927f948d816c2d0e2c3f716af93188ac0ed4eab
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60947522"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60978721"
 ---
 # <a name="delete-printershare"></a>删除 printerShare
 命名空间：microsoft.graph
 
 删除打印机共享 (取消共享关联的[打印机) 。](../resources/printer.md) 此操作无法撤消。 如果[以后](../resources/printer.md)再次共享打印机，则Windows安装该打印机的任何用户都需要发现并重新安装它。 [](../resources/printer.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 若要使用通用打印服务，除了下表中列出的权限之外，用户或应用的租户还必须具有活动的通用打印订阅。 登录的用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
@@ -77,6 +77,10 @@ DELETE https://graph.microsoft.com/v1.0/print/shares/{printerShareId}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-printershare-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-printershare-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

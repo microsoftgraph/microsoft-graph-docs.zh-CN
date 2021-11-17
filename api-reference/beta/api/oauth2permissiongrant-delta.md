@@ -1,16 +1,16 @@
 ---
 title: oauth2permissiongrant： delta
 description: 获取新创建、更新或删除的 oauth2permissiongrants，而无需执行整个资源集合的完整读取。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: psignoret
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 61a3f377adbc2a9b98872f41f1771e4d84f24721
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: dcf198c00e6bcfaf74c5ce1cbb334a11767cd818
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52038409"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61032352"
 ---
 # <a name="oauth2permissiongrant-delta"></a>oauth2permissiongrant： delta
 
@@ -20,7 +20,7 @@ ms.locfileid: "52038409"
 
 获取新创建、更新或删除的 **oauth2permissiongrant** 对象，而无需执行整个资源集合的完整读取。 有关详细信息，请参阅使用 [delta 查询](/graph/delta-query-overview)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -68,7 +68,7 @@ GET /oauth2PermissionGrants/delta
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [oauth2permissiongrant](../resources/oauth2permissiongrant.md) 集合对象。 该响应还包括 `nextLink`URL 或 `deltaLink`URL。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [oauth2permissiongrant](../resources/oauth2permissiongrant.md) 集合对象。 该响应还包括 `nextLink`URL 或 `deltaLink`URL。
 
 - 如果 `nextLink` 返回 URL，则会话中有其他要检索的数据页。 **oauth2permissiongrant** 继续使用 URL 提出请求，直到 `nextLink` `deltaLink` 响应中包括 URL。
 - 如果 `deltaLink` 返回 URL，则不再返回有关资源现有状态的数据。 保留并使用 `deltaLink` URL 了解将来对资源的更改。
@@ -100,6 +100,10 @@ GET https://graph.microsoft.com/beta/oauth2PermissionGrants/delta
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/oauth2permissiongrant-delta-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/oauth2permissiongrant-delta-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

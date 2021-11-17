@@ -1,18 +1,18 @@
 ---
 title: 列出 identityProvider
 description: 检索 identityProvider 对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 099f77722e6f08a27dea01200246320cd8ae4eec
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: b6b4aa36dea895338c9b9abdad4ac80eea77ce50
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51507823"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61014929"
 ---
-# <a name="list-identityproviders-deprecated"></a>列出 identityProviders (弃) 
+# <a name="list-identityproviders-deprecated"></a>列出 identityProviders（已弃用）
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -55,7 +55,7 @@ GET /identityProviders
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 响应代码和 `200 OK` [identityProvider](../resources/identityprovider.md) 和 [openIdConnectProvider](../resources/openIdConnectProvider.md) (仅适用于响应正文中的 Azure AD B2C) 对象。
+如果成功，此方法返回 响应代码和 `200 OK` [identityProvider](../resources/identityprovider.md)和[openIdConnectProvider](../resources/openIdConnectProvider.md) (，仅适用于响应正文中的 Azure AD B2C) 对象。
 
 ## <a name="example"></a>示例
 
@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/identityProviders
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-identityprovider-3-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-identityprovider-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

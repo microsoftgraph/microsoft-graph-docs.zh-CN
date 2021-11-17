@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 6381931b5351b5864e5c985ee9b9b5381e2d3375
-ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
+ms.openlocfilehash: c466759baa053b4c205dfcebfc75bee1124e8d4d
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60780493"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61015503"
 ---
 # <a name="educationassignment-publish"></a>educationAssignment： publish
 
@@ -82,6 +82,10 @@ POST https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/educationassignment-publish-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/educationassignment-publish-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

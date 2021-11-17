@@ -2,15 +2,15 @@
 title: presence： clearPresence
 description: 清除用户的应用程序状态会话状态信息。
 author: jsandoval-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 984c7667ceb2a28de189230952e5333f273cce24
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: af98bf701603acac022a0944c01937c2f0979641
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53208249"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60997357"
 ---
 # <a name="presence-clearpresence"></a>presence： clearPresence
 
@@ -22,7 +22,7 @@ ms.locfileid: "53208249"
 
 有关状态会话的详细信息，请参阅 [状态：setPresence](presence-setpresence.md#presence-sessions)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 调用 API 需要以下权限。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
@@ -49,7 +49,7 @@ POST /users/{userId}/presence/clearPresence
 
 | 参数 | 类型   | 说明                                   |
 | :-------- | :----- | :-------------------------------------------- |
-| sessionId | 字符串 | 应用程序状态会话的 ID。 |
+| sessionId | string | 应用程序状态会话的 ID。 |
 
 
 > [!IMPORTANT]
@@ -62,7 +62,7 @@ POST /users/{userId}/presence/clearPresence
 如果状态会话不存在，此方法将返回 响应 `404 NotFound` 代码。
 
 ## <a name="examples"></a>示例
-以下请求显示 ID 为 `22553876-f5ab-4529-bffb-cfe50aa89f87` 的用户清除其状态会话的应用程序 `fa8bf3dc-eca7-46b7-bad1-db199b62afc3` 。
+以下请求显示 ID 为 `22553876-f5ab-4529-bffb-cfe50aa89f87` 用户清除其状态会话的应用程序 `fa8bf3dc-eca7-46b7-bad1-db199b62afc3` 。
 
 ### <a name="request"></a>请求
 
@@ -95,6 +95,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/clear--presence-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/clear--presence-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

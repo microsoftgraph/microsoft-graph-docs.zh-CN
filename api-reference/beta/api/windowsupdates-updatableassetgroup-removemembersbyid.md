@@ -2,15 +2,15 @@
 title: updatableAssetGroup：removeMembersById
 description: 从 updatableAssetGroup 中删除相同类型的成员。
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: dde1a86c363a2c8b7fe3492316bdcf5fc3593f26
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 2a6b6c779c8dfaabf4329472988fb84d2f80d739
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52239038"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61013227"
 ---
 # <a name="updatableassetgroup-removemembersbyid"></a>updatableAssetGroup：removeMembersById
 命名空间：microsoft.graph.windowsUpdates
@@ -54,7 +54,7 @@ POST /admin/windows/updates/updatableAssets/{updatableAssetGroupId}/removeMember
 |参数|类型|说明|
 |:---|:---|:---|
 |ids|String collection|与要作为 [updatableAssetGroup](../resources/windowsupdates-updatableasset.md) 成员删除的 **updatableAsset** 资源对应的标识符列表。|
-|memberEntityType|字符串|**updatableAsset 资源的完整** 类型。 可能的值是 `#microsoft.graph.windowsUpdates.azureADDevice` ：。|
+|memberEntityType|String|**updatableAsset 资源的完整** 类型。 可能的值是 `#microsoft.graph.windowsUpdates.azureADDevice` ：。|
 
 ## <a name="response"></a>响应
 
@@ -97,6 +97,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/updatableassetgroup-removemembersbyid-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/updatableassetgroup-removemembersbyid-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

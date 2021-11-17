@@ -1,16 +1,16 @@
 ---
 title: 组：unsubscribeByMail
-description: 调用此方法将禁用当前用户接收有关该组中新帖子、事件和文件的电子邮件通知。
-localization_priority: Normal
+description: 调用此方法将禁止当前用户接收有关该组中新帖子、事件和文件的电子邮件通知。
+ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 9a40ba67f5628be6ef25cc4b484b9c84ad71ebb7
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: fce9d955d1bad957cd0568f287fb6d2dab878536
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681261"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61015146"
 ---
 # <a name="group-unsubscribebymail"></a>组：unsubscribeByMail
 
@@ -18,7 +18,7 @@ ms.locfileid: "52681261"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-调用此方法将禁用当前用户接收有关该组中新帖子、事件和文件的电子邮件通知。 仅支持 Microsoft 365 组。 
+调用此方法将禁止当前用户接收有关该组中新帖子、事件和文件的电子邮件通知。 仅支持 Microsoft 365 组。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -73,6 +73,10 @@ POST https://graph.microsoft.com/beta/groups/{id}/unsubscribeByMail
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/group-unsubscribebymail-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/group-unsubscribebymail-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

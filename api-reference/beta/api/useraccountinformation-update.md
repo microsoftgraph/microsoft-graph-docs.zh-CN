@@ -1,16 +1,16 @@
 ---
 title: 更新 userAccountInformation
 description: 更新 userAccountInformation 对象的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: af2081afcf12d2cac33abf188ad6592e5e4720e1
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 68378704aff1d178ef0dd32102969b843ba8ac88
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049581"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60984876"
 ---
 # <a name="update-useraccountinformation"></a>更新 useraccountinformation
 
@@ -95,6 +95,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-useraccountinformation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-useraccountinformation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

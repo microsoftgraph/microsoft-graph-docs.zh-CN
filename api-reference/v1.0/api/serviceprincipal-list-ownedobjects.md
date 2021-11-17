@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: e6f505d6abc356602ce4967a34e283cf7ce31a2b
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: e84a450623624ad1ac28ab74297993fa95a7e244
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60940446"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61030624"
 ---
 # <a name="serviceprincipals-list-ownedobjects"></a>servicePrincipals： ownedObjects 列表
 
@@ -75,6 +75,10 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/{id}/ownedObjects
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-ownedobjects-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-ownedobjects-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

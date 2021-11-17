@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 04c2b5ee147ec715794f0f3509ca52a5d9a14421aa1510d8dfb81432df3b54d2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: afd21c0db5a8ab43e2817444d59873b7a0ea96c1
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56903336"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60984787"
 ---
 ```csharp
 
@@ -17,7 +17,7 @@ var attachment = new FileAttachment
     ContentType = "contentType-value",
     IsInline = false,
     ContentLocation = "contentLocation-value",
-    ContentBytes = Encoding.ASCII.GetBytes("base64-contentBytes-value")
+    ContentBytes = Convert.FromBase64String("base64-contentBytes-value")
 };
 
 await graphClient.Me.Messages["{message-id}"].Attachments

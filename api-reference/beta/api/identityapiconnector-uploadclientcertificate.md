@@ -1,16 +1,16 @@
 ---
 title: identityApiConnector：uploadClientCertificate
-description: 将 PKCS 12 格式密钥 (PFX) API 连接器身份验证配置。
-localization_priority: Normal
+description: Upload API 连接器身份验证配置 (PFX) PKCS 12 格式密钥。
+ms.localizationpriority: medium
 author: nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ed5491867a08999ede0a7db12482b6ee4e0598c8
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: ca764d5a8c5643b1c97eb93bb24611614a9cdc70
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51920074"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60998183"
 ---
 # <a name="identityapiconnector-uploadclientcertificate"></a>identityApiConnector：uploadClientCertificate
 
@@ -18,7 +18,7 @@ ms.locfileid: "51920074"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将 PKCS 12 格式密钥 (.pfx) API 连接器的身份验证配置。 输入是 PKCS 12 证书内容的 Base64 编码值。 此方法返回 [apiConnector](../resources/identityApiConnector.md)。
+Upload API 连接器的身份验证配置 (.pfx) PKCS 12 格式密钥。 输入是 PKCS 12 证书内容的 Base64 编码值。 此方法返回 [apiConnector](../resources/identityApiConnector.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -33,7 +33,7 @@ ms.locfileid: "51920074"
 工作或学校帐户需要属于以下角色之一：
 
 * 全局管理员
-* 外部标识用户流管理员
+* 外部标识用户Flow管理员
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -56,8 +56,8 @@ POST /identity/apiconnectors/{id}/uploadClientCertificate
 
 |属性|类型|说明|
 |:---|:---|:---|
-|pkcs12Value|String| 这是用于发送 pfx 内容的字段。 该值应为实际证书内容的 Base64 编码版本。 必填。|
-|密码|String| 这是 pfx 文件的密码。 必填。 如果未使用密码，则仍必须提供 的值 `""` 。|
+|pkcs12Value|String| 这是用于发送 pfx 内容的字段。 该值应为实际证书内容的 Base64 编码版本。 必需。|
+|密码|String| 这是 pfx 文件的密码。 必需。 如果未使用密码，则仍必须提供 的值 `""` 。|
 
 ## <a name="response"></a>响应
 
@@ -99,6 +99,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/identityapiconnector-uploadclientcertificate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/identityapiconnector-uploadclientcertificate-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

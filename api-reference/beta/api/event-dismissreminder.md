@@ -2,15 +2,15 @@
 title: 'event: dismissReminder'
 description: 消除为用户日历中的事件触发的提醒。
 author: harini84
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: fb0b85a804013f4b282de3d2fae33bcc3f7f67ef
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 86110ec0a436a3655cd6299609cb118feaa0a7ce
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436216"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61015447"
 ---
 # <a name="event-dismissreminder"></a>event: dismissReminder
 
@@ -18,9 +18,9 @@ ms.locfileid: "50436216"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-消除为用户日历中的事件触发的[提醒](../resources/calendar.md)。 [](../resources/event.md)
+消除为用户日历 [中的事件触发](../resources/event.md) 的 [提醒](../resources/calendar.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -88,6 +88,10 @@ POST https://graph.microsoft.com/beta/me/events/{id}/dismissReminder
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/event-dismissreminder-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/event-dismissreminder-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

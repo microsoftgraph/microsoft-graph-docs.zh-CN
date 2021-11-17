@@ -1,16 +1,16 @@
 ---
 title: 邮件：转发
 description: 使用 JSON 或 MIME 格式转发邮件
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 021d17d930e76a7696ab8e4484d1f43c20c84fd4
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 189d28bdc171602165c1c2488cb85d84b71ddf61
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52870631"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61014578"
 ---
 # <a name="message-forward"></a>邮件：转发
 
@@ -62,7 +62,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/forward
 |:---------------|:--------|:----------|
 |注释|String|要包含的注释。可以为空字符串。|
 |toRecipients|[recipient](../resources/recipient.md) collection|收件人列表|
-|message|[message](../resources/message.md)|回复邮件中要更新的任何可写属性。|
+|message|[邮件](../resources/message.md)|回复邮件中要更新的任何可写属性。|
 
 当指定 MIME 格式的正文时，请提供 MIME 内容与适用的 Internet 邮件头（“收件人”、“抄送”、“密件抄送”、“主题”）所有内容在请求正文中编码为 **base64** 格式。
 
@@ -116,6 +116,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/message-forward-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/message-forward-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

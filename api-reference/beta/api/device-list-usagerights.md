@@ -5,12 +5,12 @@ author: jeeshnair
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7ad57af7a7ac608bca5a29de94074ad81ec43944
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: 769f78239993311d662a3a7439182df6ad9281af
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60290097"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61015720"
 ---
 # <a name="list-device-usagerights"></a>列出设备使用情况Rights
 命名空间：microsoft.graph
@@ -46,9 +46,9 @@ GET /devices/{objectId}/usageRights
 - $filter = state eq 'value' and serviceIdentifier eq 'value'
 - $filter = ( value1、value2") 
 - $filter =serviceIdentifier in ('value1'， 'value2') 
-- $filter = ( value1、value2") 和 serviceIdentifier 中的 state ( value1"，"value2") 
+- $filter ( value1"、value2") 和 serviceIdentifier 中的 state ( value1"、"value2") 
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/beta/devices/{objectId}/usageRights
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-usageright-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-usageright-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -149,6 +153,10 @@ GET https://graph.microsoft.com/beta/devices/{objectId}/usageRights?$filter=stat
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-usageright-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-usageright-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

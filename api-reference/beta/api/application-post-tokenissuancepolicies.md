@@ -1,16 +1,16 @@
 ---
 title: 分配 tokenIssuancePolicy
 description: 将 tokenIssuancePolicy 分配给应用程序。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: eabd29bbdbadffb6cea863778dd8eb966c23b646
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: cd9a755361c5b3cb3f227591fc8ce262df3cd624
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129077"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60982937"
 ---
 # <a name="assign-tokenissuancepolicy"></a>分配 tokenIssuancePolicy
 
@@ -28,7 +28,7 @@ ms.locfileid: "50129077"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Policy.Read.All 和 Application.ReadWrite.All、Policy.ReadWrite.ApplicationConfiguration 和 Application.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | Policy.Read.All 和 Application.ReadWrite.OwnedBy、Policy.Read.All 和 Application.ReadWrite.All、Policy.ReadWrite.ApplicationConfiguration 和 Application.ReadWrite.OwnedBy、Policy.ReadWrite.ApplicationConfiguration 和 Application.ReadWrite.All |
+| 应用程序                            | Policy.Read.All 和 Application.ReadWrite.OwnedBy、Policy.Read.All 和 Application.ReadWrite.All、Policy.ReadWrite.ApplicationConfiguration 和 Application.ReadWrite.OwnedBy、Policy.ReadWrite.ApplicationConfiguration 和 Application.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -47,7 +47,7 @@ POST /applications/{id}/tokenIssuancePolicies/$ref
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [tokenIssuancePolicy](../resources/tokenissuancepolicy.md) 对象的标识符 (使用) `@odata.id` 分配给应用程序的属性。
+在请求正文中，提供 [tokenIssuancePolicy](../resources/tokenissuancepolicy.md) (的标识符，) `@odata.id` 应分配给应用程序的属性。
 
 ## <a name="response"></a>响应
 
@@ -88,6 +88,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-tokenissuancepolicy-from-application-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-tokenissuancepolicy-from-application-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,19 +5,19 @@ author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 51056de2d302b1128c15f1d29cdc2c506d46cc29
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c5a4e9e55b33c652f7c31faba77abad4651300c5
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59085376"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61025141"
 ---
 # <a name="list-attachments"></a>列出附件
 
 命名空间：microsoft.graph
 
 检索附加到帖子的 [attachment](../resources/attachment.md) 对象列表。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -37,7 +37,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
-具体而言，您可以使用 $expand 查询参数，以将所有内联帖子附件与发布属性的其余部分一起包含。 例如：
+具体而言，您可以使用 $expand 查询参数将所有内联帖子附件与发布属性的其余部分一起包含。 例如：
 
 <!-- { "blockType": "ignored" } -->
 ```
@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/v1.0/groups/1848753d-185d-4c08-a4e4-6ee40521d115
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/post-get-attachments-v1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-get-attachments-v1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

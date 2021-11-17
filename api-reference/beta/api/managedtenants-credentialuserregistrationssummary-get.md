@@ -2,15 +2,15 @@
 title: 获取 credentialUserRegistrationsSummary
 description: 读取 credentialUserRegistrationsSummary 对象的属性和关系。
 author: isaiahwilliams
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 1b79d187f54898e1acb78defdead34edf821c965
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 33329338dd473277b132c3eb2d21973b48c902e2
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53440015"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61002916"
 ---
 # <a name="get-credentialuserregistrationssummary"></a>获取 credentialUserRegistrationsSummary
 命名空间：microsoft.graph.managedTenants
@@ -41,7 +41,7 @@ GET /tenantRelationships/managedTenants/credentialUserRegistrationsSummaries/{cr
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应，包括 `$apply` `$count` `$filter` `$orderBy` `$select` 、、 `$skip` 和 `$top` 。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/credenti
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-credentialuserregistrationssummary-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-credentialuserregistrationssummary-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,16 +1,16 @@
 ---
 title: Get onPremisesPublishingProfile
 description: 检索 [onPremisesPublishingProfile 对象的属性和](../resources/onpremisespublishingprofile.md) 关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: e6dd4e1f3cba64236e438063b259906ea5a9ac15
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: 4c9203b4f696b0d1c97f1fa5fa1483d62b59d808
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52781007"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61032247"
 ---
 # <a name="get-onpremisespublishingprofile"></a>Get onPremisesPublishingProfile
 
@@ -20,7 +20,7 @@ ms.locfileid: "52781007"
 
 检索 [onPremisesPublishingProfile 对象的属性和](../resources/onpremisespublishingprofile.md) 关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning?$
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-onpremisespublishingprofile-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-onpremisespublishingprofile-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

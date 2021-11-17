@@ -2,15 +2,15 @@
 title: call： cancelMediaProcessing
 description: 取消任何进行中的 playPrompt 或 recordResponse 运算的媒体处理。
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: fe6ecbedcb0d66e5261f08eb3a4aee48db25a493
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: cd19b2fb1a0d872e74d4676d6e8c59702e48f024
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047663"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60999493"
 ---
 # <a name="call-cancelmediaprocessing"></a>call： cancelMediaProcessing
 
@@ -20,7 +20,7 @@ ms.locfileid: "52047663"
 
 取消处理任何进行中的媒体操作。
 
-媒体操作是指 IVR 操作 [playPrompt](./call-playprompt.md) 和 [recordResponse，](./call-record.md)它们默认排队等待处理。 **cancelMediaProcessing** 方法取消进程内的任何操作以及已排队的操作。 例如，此 API 可用于清理新媒体操作的 IVR 操作队列。 但是，它将不会取消 **ubscribeToTone** 操作，因为它独立于任何操作队列运行。
+媒体操作是指 IVR 操作 [playPrompt](./call-playprompt.md) 和 [recordResponse，](./call-record.md)它们默认排队等待处理。 **cancelMediaProcessing** 方法取消进程内的任何操作以及排队的操作。 例如，此 API 可用于清理新媒体操作的 IVR 操作队列。 但是，它将不会取消 **ubscribeToTone** 操作，因为它独立于任何操作队列运行。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -90,6 +90,10 @@ Content-Length: 62
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/call-cancelmediaprocessing-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/call-cancelmediaprocessing-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

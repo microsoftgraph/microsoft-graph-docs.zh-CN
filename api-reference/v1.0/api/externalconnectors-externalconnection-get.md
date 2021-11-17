@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 362c14d9802b3c1deaeac5489a338491846050a7
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: a5b65d85b21be8db6ab6ef3f0fc86942e586ec27
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694795"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60978861"
 ---
 # <a name="get-externalconnection"></a>获取 externalConnection
 命名空间：microsoft.graph.externalConnectors
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/v1.0/external/connections/contosohr
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-externalconnection-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-externalconnection-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

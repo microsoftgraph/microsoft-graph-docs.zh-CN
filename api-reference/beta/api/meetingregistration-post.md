@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 1fce69a76021187bea1348cde4d310643b0ba4b2
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: c2133afc019878f0e0b461780486a1435acd9a51
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60559303"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61011722"
 ---
 # <a name="create-meetingregistration"></a>创建 meetingRegistration
 
@@ -28,7 +28,7 @@ ms.locfileid: "60559303"
 |:----------------|:--------------------------------------------|
 | 委派（工作或学校帐户） | OnlineMeetings.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application | 不支持。 |
+| 应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -54,7 +54,7 @@ POST /me/onlineMeetings/{id}/registration
 > [!NOTE]
 >
 >- 此方法的响应正文中不会返回 **registrationPageViewCount** 属性。 使用 [获取 meetingRegistration](meetingRegistration-get.md) 方法可检索该属性。
->- **customQuestions** 是一个相关资源，只能在行中创建，但不能在此方法中返回。 使用 [Get meetingRegistration](meetingRegistration-get.md) 或 [Get meetingRegistrationQuestion](meetingregistrationquestion-get.md) 方法检索它。
+>- **customQuestions** 是一个相关资源，只能在此方法中以行方式创建，但不能返回。 使用 [获取 meetingRegistration](meetingRegistration-get.md) 或 [Get meetingRegistrationQuestion](meetingregistrationquestion-get.md) 方法来检索它。
 
 ## <a name="example"></a>示例
 
@@ -113,6 +113,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-registration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-registration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

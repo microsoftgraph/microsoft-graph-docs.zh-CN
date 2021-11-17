@@ -1,16 +1,16 @@
 ---
 title: 获取 phoneAuthenticationMethod
 description: 检索单个 phoneAuthenticationMethod 对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d3f4f9a94025710508d07fdc0b4b2dd85ae74e11
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a2b8d9b23bf1ecf9ca28aef18401c244e0146e68
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050036"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60997645"
 ---
 # <a name="get-phoneauthenticationmethod"></a>获取 phoneAuthenticationMethod
 
@@ -18,7 +18,7 @@ ms.locfileid: "52050036"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索单个 [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) 对象。 此方法仅适用于标准 Azure AD 和 B2B 用户，但不适用于 B2C 用户。
+检索单个 [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) 对象。 此方法仅适用于标准用户Azure AD B2B 用户，但不适用于 B2C 用户。
 
 ## <a name="permissions"></a>权限
 
@@ -44,7 +44,7 @@ ms.locfileid: "52050036"
 * 全局管理员
 * 全局读取者
 * 特权身份验证管理员
-* 身份验证管理员 (只能看到屏蔽的电话号码) 
+* 身份验证管理员 (只能看到屏蔽) 
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -63,7 +63,7 @@ GET /users/{id | userPrincipalName}/authentication/phoneMethods/{id}
 
 此方法不支持自定义响应的可选查询参数。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称      |说明|
 |:----------|:----------|
@@ -106,6 +106,10 @@ GET https://graph.microsoft.com/beta/me/authentication/phoneMethods/3179e48a-750
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-phoneauthenticationmethod-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-phoneauthenticationmethod-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,16 +1,16 @@
 ---
 title: servicePrincipal：getPasswordSingleSignOnCredentials
 description: 使用用户或组的密码获取单一登录凭据列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 39286664f3191dfc12a0bf5866e19f3ff73de1d0
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: d227673dfaebc8d331cb7065d0f350f8e6901894
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051905"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60977952"
 ---
 # <a name="serviceprincipal-getpasswordsinglesignoncredentials"></a>servicePrincipal：getPasswordSingleSignOnCredentials
 
@@ -93,6 +93,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-getpasswordsinglesignoncredentials-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-getpasswordsinglesignoncredentials-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

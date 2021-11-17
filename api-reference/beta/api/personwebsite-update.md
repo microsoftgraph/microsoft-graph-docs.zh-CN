@@ -1,16 +1,16 @@
 ---
 title: 更新 personWebsite
 description: 更新用户配置文件中 personWebsite 对象的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 8f7b5787469cb4af5964fe6f2ea8b4ad8b135823
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 02b15294d85726056ff16e7e86786360795fe702
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050043"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61011225"
 ---
 # <a name="update-personwebsite"></a>更新 personwebsite
 
@@ -53,11 +53,11 @@ PATCH /users/{id | userPrincipalName}/profile/websites/{id}
 |属性|类型|说明|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|categories|String 集合|包含用户与网站网站关联的类别 (例如个人、食谱) 。|
+|categories|String collection|包含用户与网站关联的类别 (例如个人、食谱) 。|
 |说明|String|包含网站的说明。|
 |displayName|String|包含网站的友好名称。|
 |inference|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断出来的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|webUrl|String|包含指向网站本身的链接。|
+|WebUrl|String|包含指向网站本身的链接。|
 
 ## <a name="response"></a>响应
 
@@ -96,6 +96,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-personwebsite-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-personwebsite-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

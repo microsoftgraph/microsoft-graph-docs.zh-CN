@@ -1,22 +1,24 @@
 ---
-title: 列出 userFlows
+title: '列出已 (userFlows) '
 description: 检索 userFlow 对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: db3b83e151abb09f443c703eeda03daa8391560e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: d0d6e8ceafca829a4d07136f8d815a58d06a7061
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52040705"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61014886"
 ---
 # <a name="list-userflows"></a>列出 userFlows
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [identityuserflow-deprecate](../../includes/identityuserflow-deprecate.md)]
 
 检索用户 [流列表](../resources/identityuserflow.md)。
 
@@ -81,6 +83,10 @@ GET https://graph.microsoft.com/beta/identity/userFlows
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-userflows-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-userflows-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 77e70ff78b718b4f2a40c03cf299e6ff227512b6
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 6c52e551e95a45571da5309cee18a8b09f435496
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60946921"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61032751"
 ---
 # <a name="user-exportpersonaldata"></a>user： exportPersonalData
 
@@ -43,9 +43,9 @@ POST /users/{id}/exportPersonalData
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |Description|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|storageLocation|String|这是一个共享访问签名 (SAS) URL Azure 存储帐户，数据应导出到其中。|
+|storageLocation|String|这是一个共享访问签名 (SAS) URL Azure 存储帐户，将数据导出到其中。|
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `202 Accepted` 响应代码。 它不会在响应正文中返回任何内容。 该响应包含以下响应标头。
@@ -85,6 +85,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-exportpersonaldata-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-exportpersonaldata-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

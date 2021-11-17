@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 82cb755ef8a2622456cfc33256cdd9746bb70713
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: 871a25c7be4b41c442a6747805e619c8069d8112
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60288354"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61012989"
 ---
 # <a name="delete-approleassignment"></a>删除 appRoleAssignment
 
@@ -41,7 +41,7 @@ DELETE /servicePrincipals/{servicePrincipal-id}/appRoleAssignments/{appRoleAssig
 > [!NOTE]
 > 最佳做法是，我们建议你使用 Delete [appRoleAssignedTo](serviceprincipal-delete-approleassignedto.md)方法删除应用角色分配，该方法通过资源服务主体的 **appRoleAssignedTo** 关系删除，而不是使用此方法。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称       | 说明|
 |:---------------|:--------|
@@ -59,7 +59,7 @@ DELETE /servicePrincipals/{servicePrincipal-id}/appRoleAssignments/{appRoleAssig
 
 ### <a name="request"></a>请求
 
-下面是一个请求删除应用或应用角色分配。
+下面是一个请求删除应用或角色分配。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -85,6 +85,10 @@ DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{servicePrincipal-id}/
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-delete-approleassignment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-delete-approleassignment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

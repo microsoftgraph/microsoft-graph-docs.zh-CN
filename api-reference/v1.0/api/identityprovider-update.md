@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: namkedia
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d9b8fcf381556a36ca7ac8d48435a4304c19f874
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 2793552faccab4e10416e6f782c9ba9a1fe461f2
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60939138"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61024504"
 ---
 # <a name="update-identityprovider-deprecated"></a>更新 identityProvider （已弃用）
 命名空间：microsoft.graph
@@ -94,6 +94,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-identityprovider-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-identityprovider-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

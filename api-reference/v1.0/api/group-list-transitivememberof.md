@@ -2,15 +2,15 @@
 title: List group transitive memberOf
 description: 获取组是其中一个成员的组。  此操作是可传递的，并且还将包含此组是嵌套成员的所有组。 与获取用户的组Microsoft 365不同，这将返回所有类型的组，而不只是Microsoft 365组。
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 738c100738d6eb0b4b2eb49e3b57a32c7f00bb32
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 2d0a5f5f0fd1d976cf67e0be5fd1dbad2d088672
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680596"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61025317"
 ---
 # <a name="list-group-transitive-memberof"></a>List group transitive memberOf
 
@@ -18,7 +18,7 @@ ms.locfileid: "52680596"
 
 获取组是其中一个成员的组。  此操作是可传递的，并且还将包含此组是嵌套成员的所有组。 与获取用户的组Microsoft 365不同，这将返回所有类型的组，而不只是Microsoft 365组。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/transitiveMemberOf
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-group-transitivememberof-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-group-transitivememberof-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -173,7 +177,7 @@ Content-type: text/plain
 
 `294`
 
-### <a name="example-4-use-odata-cast-and-search-to-get-membership-in-groups-with-display-names-that-contain-the-letters-tier-including-a-count-of-returned-objects"></a>示例 4：使用 OData cast 和 $search 获取显示名称包含字母"tier"（包括返回对象计数）的组的成员身份
+### <a name="example-4-use-odata-cast-and-search-to-get-membership-in-groups-with-display-names-that-contain-the-letters-tier-including-a-count-of-returned-objects"></a>示例 4：使用 OData 转换和$search获取包含字母"tier"的显示名称（包括返回的对象计数）的组的成员身份
 
 #### <a name="request"></a>请求
 

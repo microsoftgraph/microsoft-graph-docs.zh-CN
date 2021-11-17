@@ -1,16 +1,16 @@
 ---
 title: 获取 applicationTemplate
 description: 检索 applicationtemplate 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: luleonpla
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 4ae3d9f451785ef44f36df75667968bc271065dc
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: e89db4e63ee2db0eabd6392fc34e269f87d51a15
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471591"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60982748"
 ---
 # <a name="get-applicationtemplate"></a>获取 applicationTemplate
 
@@ -20,7 +20,7 @@ ms.locfileid: "50471591"
 
 检索 [applicationTemplate 对象](../resources/applicationtemplate.md) 的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -30,7 +30,7 @@ ms.locfileid: "50471591"
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | 无。 |
 
-调用此 API 不需要其他权限，只要您的应用程序具有调用 Microsoft Graph 的有效访问令牌。
+调用此 API 不需要其他权限，只要应用程序具有有效的访问令牌来调用 Microsoft Graph。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -58,7 +58,7 @@ GET /applicationTemplates/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和请求的 `200 OK` [applicationTemplate](../resources/applicationtemplate.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和请求的 `200 OK` [applicationTemplate](../resources/applicationtemplate.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/beta/applicationTemplates/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-applicationtemplate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-applicationtemplate-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

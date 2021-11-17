@@ -5,12 +5,12 @@ author: sharad-sharma-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 30eb5422e9bdb7d9870895f3ed5eb8ecc5a3d2be
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: fe0fe8452e3a18ca2910a78276c79895e77e2f3d
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60924663"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61024721"
 ---
 # <a name="update-educationassignmentdefaults"></a>更新 educationAssignmentDefaults
 命名空间：microsoft.graph
@@ -49,7 +49,7 @@ PATCH /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignmentDefaults
 
 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |addedStudentAction|educationAddedStudentAction| 在作业发布日期之后添加的学生的课堂级别默认操作。 可取值为：`none`、`assignIfOpen`。 默认值为 `none`。|
 |dueTime|TimeOfDay| "到期时间"字段的类级别默认值。 默认值为 `23:59:00`|
@@ -95,6 +95,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-educationassignmentdefaults-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-educationassignmentdefaults-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

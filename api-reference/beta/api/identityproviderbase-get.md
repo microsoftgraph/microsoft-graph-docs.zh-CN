@@ -1,16 +1,16 @@
 ---
 title: 获取 identityProvider
 description: 检索 identityProvider 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 0dfa62dd5fdf09ac79400fad90c943f8cab7c716
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: f6e1ab224e8712a470a94da4afa0a82fd0003709
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58667911"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60998116"
 ---
 # <a name="get-identityprovider"></a>获取 identityProvider
 
@@ -20,7 +20,7 @@ ms.locfileid: "58667911"
 
 获取在租户中配置的指定标识提供程序的属性和关系。
 
-在从 identityProviderBase 派生的提供程序类型中，当前可以在 Azure AD 中获取 [socialIdentityProvider](../resources/socialidentityprovider.md) 或 [builtinIdentityProvider](../resources/builtinidentityprovider.md) 资源。 在 Azure AD B2C 中，此操作当前可以获取 socialIdentityProvider、openIdConnectIdentityProvider 或[appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md)资源。 [](../resources/socialidentityprovider.md) [](../resources/openidconnectidentityprovider.md)
+在从 identityProviderBase 派生的提供程序类型中，当前可以获取[socialIdentityProvider](../resources/socialidentityprovider.md)或 Azure AD 中的[builtinIdentityProvider](../resources/builtinidentityprovider.md)资源。 在 Azure AD B2C 中，此操作当前可以获取 socialIdentityProvider、openIdConnectIdentityProvider 或[appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md)资源。 [](../resources/socialidentityprovider.md) [](../resources/openidconnectidentityprovider.md)
 
 ## <a name="permissions"></a>权限
 
@@ -58,13 +58,13 @@ GET /identity/identityProviders/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在 Azure AD 租户的响应正文中返回 `200 OK` [socialIdentityProvider](../resources/socialidentityprovider.md) 或 [builtinIdentityProvider](../resources/builtinidentityprovider.md) 的响应代码和 JSON 表示形式。
+如果成功，此方法在租户的响应正文中返回 `200 OK` [socialIdentityProvider](../resources/socialidentityprovider.md)或[builtinIdentityProvider](../resources/builtinidentityprovider.md)的响应Azure AD JSON 表示形式。
 
-对于 Azure AD B2C 租户，此方法在响应正文中返回 `200 OK` socialIdentityProvider、openIdConnectIdentityProvider 或[](../resources/socialidentityprovider.md)[appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md)对象的 响应代码和 JSON 表示[](../resources/openidconnectidentityprovider.md)形式。
+对于 Azure AD B2C 租户，此方法在响应正文中返回 `200 OK` socialIdentityProvider、openIdConnectIdentityProvider 或[](../resources/socialidentityprovider.md)[appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md)对象的响应代码和 JSON 表示形式[](../resources/openidconnectidentityprovider.md)。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-retrieve-a-specific-social-identity-provider-azure-ad-or-azure-ad-b2c"></a>示例 1：在Azure AD 或 Azure AD B2C (检索特定社会标识) 
+### <a name="example-1-retrieve-a-specific-social-identity-provider-azure-ad-or-azure-ad-b2c"></a>示例 1：检索特定 **社会标识提供程序 (Azure AD** 或Azure AD B2C) 
 
 #### <a name="request"></a>请求
 
@@ -97,6 +97,10 @@ GET https://graph.microsoft.com/beta/identity/identityProviders/Amazon-OAUTH
 [!INCLUDE [sample-code](../includes/snippets/java/get-socialidentityprovider-from-identityproviderbase-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-socialidentityprovider-from-identityproviderbase-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### <a name="response"></a>响应
@@ -123,7 +127,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-retrieve-a-specific-built-in-identity-provider-only-for-azure-ad"></a>示例 2：仅为Azure AD (检索特定的内置标识) 
+### <a name="example-2-retrieve-a-specific-built-in-identity-provider-only-for-azure-ad"></a>示例 2：仅检索特定 **内置** (提供程序Azure AD) 
 
 #### <a name="request"></a>请求
 
@@ -156,6 +160,10 @@ GET https://graph.microsoft.com/beta/identity/identityProviders/MSASignup-OAUTH
 [!INCLUDE [sample-code](../includes/snippets/java/get-builtinidentityprovider-from-identityproviderbase-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-builtinidentityprovider-from-identityproviderbase-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### <a name="response"></a>响应
@@ -180,7 +188,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-retrieve-a-specific-openid-connect-identity-provider-only-for-azure-ad-b2c"></a>示例 3：仅为 Azure AD B2C (检索特定 **OpenID** 连接标识提供程序) 
+### <a name="example-3-retrieve-a-specific-openid-connect-identity-provider-only-for-azure-ad-b2c"></a>示例 3：仅针对 连接 B2C (检索Azure AD **OpenID**) 
 
 #### <a name="request"></a>请求
 
@@ -211,6 +219,10 @@ GET https://graph.microsoft.com/beta/identity/identityProviders/OIDC-V1-test-icm
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-openidconnectidentityprovider-from-identityproviderbase-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-openidconnectidentityprovider-from-identityproviderbase-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -250,7 +262,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-retrieves-apple-identity-provideronly-for-azure-ad-b2c"></a>示例 4：仅为 Azure AD B2C (检索 Apple 标识) 
+### <a name="example-4-retrieves-apple-identity-provideronly-for-azure-ad-b2c"></a>示例 4：仅为 (B2C Azure AD检索 Apple 标识) 
 
 #### <a name="request"></a>请求
 
@@ -281,6 +293,10 @@ GET https://graph.microsoft.com/beta/identity/identityProviders/Apple-Managed-OI
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-applemanagedidentityprovider-from-identityproviderbase-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-applemanagedidentityprovider-from-identityproviderbase-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

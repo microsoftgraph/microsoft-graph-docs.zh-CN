@@ -5,18 +5,18 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 9abab0af31a67465db9989b42186759b12f746bb
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 036f4dce3d3192005a9b99124965830a5b38194a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59126959"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61015802"
 ---
 # <a name="authenticationmethodspolicy-resource-type"></a>authenticationMethodsPolicy 资源类型
 
 命名空间：microsoft.graph
 
-定义身份验证方法以及允许使用它们登录并执行 (Azure AD) 中的多重Azure Active Directory (身份验证) 。
+定义身份验证方法以及允许使用它们登录并执行 MFA 中 MFA (多重) Azure Active Directory (Azure AD) 。
 
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
@@ -32,6 +32,7 @@ ms.locfileid: "59126959"
 |id|String|策略的标识符。 继承自 [实体](../resources/entity.md)。|
 |lastModifiedDateTime|DateTimeOffset|上次更新策略的日期和时间。 只读。|
 |policyVersion|String|使用的策略的版本。 只读。|
+|registrationEnforcement|[registrationEnforcement](../resources/registrationenforcement.md)|在登录时强制注册。 此属性可用于提醒用户设置目标身份验证方法。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -56,5 +57,8 @@ ms.locfileid: "59126959"
   "description": "String",
   "lastModifiedDateTime": "String (timestamp)",
   "policyVersion": "String",
+  "registrationEnforcement": {
+    "@odata.type": "microsoft.graph.registrationEnforcement"
+  } 
 }
 ```

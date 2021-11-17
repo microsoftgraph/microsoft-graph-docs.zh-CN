@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9a9528421a77a3fb07a046bf84439a5bc62b54d6
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: 767a57ad6e6c9aa76a81c2b876776a3123b5af3f
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60288466"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61012290"
 ---
 # <a name="delete-channel"></a>删除频道
 
@@ -31,7 +31,7 @@ ms.locfileid: "60288466"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Channel.Delete.Group *、Channel.Delete.All、Group.ReadWrite.All**、Directory.ReadWrite.All** |
 
-> **注意**：标有 * 的权限用于 [特定于资源的同意](https://aka.ms/teams-rsc)。 标记为 ** 的权限已弃用，不应使用。
+> **注意**：标有 * 的权限用于 [特定于资源的同意](https://aka.ms/teams-rsc)。 标记为 **的权限已弃用，不应使用。
 
 > **注意**：此 API 支持管理员权限。全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
@@ -78,6 +78,10 @@ DELETE https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-channel-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-channel-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

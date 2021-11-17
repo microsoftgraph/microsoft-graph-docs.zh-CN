@@ -1,16 +1,16 @@
 ---
 title: synchronizationJob：pause
 description: 暂时停止同步。 所有进度（包括作业状态）都将保持，当进行 Start 调用时，作业将继续从它离开的地方开始。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 50ed06389378a2ec83aa32e54a238f809ab133de
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 84afeac86a31fba374a3699e61c0e7a5b896de92
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787190"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60977812"
 ---
 # <a name="synchronizationjob-pause"></a>synchronizationJob：pause
 
@@ -76,6 +76,10 @@ POST https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/job
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/synchronizationjob-pause-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/synchronizationjob-pause-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

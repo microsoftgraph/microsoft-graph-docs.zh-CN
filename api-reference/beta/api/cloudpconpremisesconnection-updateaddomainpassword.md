@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 89cd789a9fae514fc58f519d19511146d8334c69
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 1f18f47e4e69810b62941e0d2cd6f8d8a9a26b6e
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60943561"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61032667"
 ---
 # <a name="cloudpconpremisesconnection-updateaddomainpassword"></a>cloudPcOnPremisesConnection：updateAdDomainPassword
 命名空间：microsoft.graph
@@ -50,7 +50,7 @@ PATCH /deviceManagement/virtualEndpoint/onPremisesConnections/{Id}/UpdateAdDomai
 
 下表显示了可用于此操作的参数。
 
-|参数|类型|Description|
+|参数|类型|说明|
 |:---|:---|:---|
 |adDomainPassword|String|与 **adDomainUsername 关联的密码**。|
 
@@ -85,6 +85,10 @@ Content-Type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/cloudpconpremisesconnection-updateaddomainpassword-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/cloudpconpremisesconnection-updateaddomainpassword-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
