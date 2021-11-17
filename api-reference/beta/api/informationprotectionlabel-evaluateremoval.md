@@ -1,16 +1,16 @@
 ---
 title: informationProtectionLabel：evaluateRemoval
 description: 评估要删除的标签以及如何根据现有内容信息删除它。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: tommoser
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 92a7c4fc26cc647b141bdd3253f8ecd21bad9479
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c6937aefa936f48fa0054490991c7c85c4625fa1
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52040362"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61019856"
 ---
 # <a name="informationprotectionlabel-evaluateremoval"></a>informationProtectionLabel：evaluateRemoval
 
@@ -20,7 +20,7 @@ ms.locfileid: "52040362"
 
 向使用应用程序指示删除标签信息应采取的操作。
 
-将 [contentInfo](../resources/contentinfo.md) 作为输入（包括现有内容元数据键 [/](../resources/keyvaluepair.md)值对）后，API 将返回 [一个 informationProtectionAction，](../resources/informationprotectionaction.md) 其中包含以下各项之一的某种组合： 
+在 [将 contentInfo](../resources/contentinfo.md) 作为输入（包括现有内容元数据键 [/](../resources/keyvaluepair.md)值对）时，API 将返回 [一个 informationProtectionAction，](../resources/informationprotectionaction.md) 其中包含以下各项之一的某种组合： 
 
 * [justifyAction](../resources/justifyaction.md)
 * [metadataAction](../resources/metadataaction.md)
@@ -155,6 +155,10 @@ User-agent: ContosoLOBApp/1.0
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/informationprotectionlabel-evaluateremoval-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/informationprotectionlabel-evaluateremoval-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

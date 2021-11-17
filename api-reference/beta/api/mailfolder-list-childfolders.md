@@ -1,16 +1,16 @@
 ---
 title: 列出 childFolder
-description: '获取指定文件夹下的文件夹集合。 可以使用 `.../me/MailFolders` 快捷方式来获取顶级 '
+description: '获取指定文件夹下的文件夹集合。你可以使用 `.../me/MailFolders` 快捷方式获取顶级 '
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c42d214e9c099c8d732eb73b93d16b5392801138
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 8379c350c81501b37c172c770ab34d2f4c1da1a4
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52665248"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61018538"
 ---
 # <a name="list-childfolders"></a>列出 childFolder
 
@@ -20,7 +20,7 @@ ms.locfileid: "52665248"
 
 获取指定文件夹下的文件夹集合。你可以使用 `.../me/mailFolders` 快捷方式获取顶级文件夹集合并导航到其他文件夹。
 
-默认情况下，此操作不会返回隐藏文件夹。 使用查询参数 _includeHiddenFolders_ 将其包括在响应中。
+默认情况下，此操作不会返回隐藏文件夹。 使用查询参数 _includeHiddenFolders_，将它们包括在答复中。
 
 ## <a name="permissions"></a>权限
 
@@ -34,7 +34,7 @@ ms.locfileid: "52665248"
 
 ## <a name="http-request"></a>HTTP 请求
 
-若要获取指定文件夹下的所有子文件夹（隐藏文件夹除外）：
+若要获取指定文件夹的所有子文件夹（隐藏文件夹除外），请执行以下操作：
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -42,7 +42,7 @@ GET /me/mailFolders/{id}/childFolders
 GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 ```
 
-若要在 _响应_ 中包括隐藏的子文件夹：
+若要在答复中包括 _隐藏的_ 子文件夹，请执行以下操作：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/{id}/childFolders?includeHiddenFolders=true
@@ -50,7 +50,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders?includeHiddenF
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-若要返回所有 childFolders 的列表，包括隐藏的子文件夹 (其 **isHidden** 属性为 true) ，在请求 URL 中，将查询参数指定为 ，如 HTTP 请求部分 `includeHiddenFolders` `true` 所示 [](#http-request)。
+若要返回所有 childFolder 的列表（包括隐藏的项目，其 **isHidden** 属性为 true），则如 [HTTP 请求](#http-request) 部分所示，在请求 URL 中，将 `includeHiddenFolders` 查询参数指定为 `true`。
 
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
@@ -100,6 +100,10 @@ GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/childFolders
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/mailfolder-get-childfolders-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/mailfolder-get-childfolders-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -192,6 +196,10 @@ GET https://graph.microsoft.com/beta/me/mailFolders/searchfolders/childFolders
 [!INCLUDE [sample-code](../includes/snippets/java/get-childfolders-of-searchfolders-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-childfolders-of-searchfolders-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -246,7 +254,7 @@ Content-type: application/json
 
 ### <a name="example-3-include-hidden-child-folders-under-a-specified-mail-folder"></a>示例 3：在指定的邮件文件夹下包含隐藏的子文件夹
 
-下一个示例使用 query 参数获取指定邮件文件夹下的子文件夹列表，包括 `includeHiddenFolders` 隐藏邮件文件夹。 该响应包括将 **isHidden** 设置为 true 的"待筛选邮件"文件夹。
+下一个示例使用 `includeHiddenFolders` 查询参数获取特定邮件文件夹中的子文件夹列表（包括隐藏的邮件文件夹）。 答复包含 **isHidden** 设置为 true 的“待筛选邮件”文件夹。
 
 #### <a name="request"></a>请求
 
@@ -277,6 +285,10 @@ GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/childFolders?i
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/mailfolder-get-hiddenchildfolders-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/mailfolder-get-hiddenchildfolders-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

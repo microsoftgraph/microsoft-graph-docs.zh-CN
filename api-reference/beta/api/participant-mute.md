@@ -2,15 +2,15 @@
 title: participant： mute
 description: 将呼叫中的特定参与者静音。
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 0399807f7cd962b508b10cc5dd0cd3ed8d3378ff
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: cbddf8d1481566d07a96d425a7bcefc36195cfac
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049189"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61018240"
 ---
 # <a name="participant-mute"></a>participant： mute
 
@@ -56,7 +56,7 @@ POST /communications/calls/{id}/participants/{id}/mute
 |clientContext|String|唯一的客户端上下文字符串。 最大限制为 256 个字符。|
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [muteParticipantOperation](../resources/muteParticipantoperation.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [muteParticipantOperation](../resources/muteParticipantoperation.md) 对象。
 
 >**注意：** 当此 API 返回成功响应时，所有参与者都将收到名单更新。
 
@@ -93,6 +93,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/participant-mute-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/participant-mute-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

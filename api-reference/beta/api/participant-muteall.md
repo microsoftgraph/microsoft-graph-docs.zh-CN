@@ -2,15 +2,15 @@
 title: participant： muteAll
 description: 将呼叫中的所有参与者设为静音。
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a0cf9da4b6903931b813c0c2b2bd1aed3681434d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a4d04bce478c0ab4eb94769a222cf7bee6b272ce
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049182"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61019758"
 ---
 # <a name="participant-muteall"></a>participant： muteAll
 
@@ -51,7 +51,7 @@ POST /communications/calls/{id}/participants/muteAll
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|participants|字符串集合|要静音的参与者。|
+|participants|String collection|要静音的参与者。|
 |clientContext|String|客户端上下文。|
 
 ## <a name="response"></a>响应
@@ -94,6 +94,10 @@ Content-Length: 81
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/participant-muteall-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/participant-muteall-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
