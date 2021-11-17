@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 697d6858b334b2a19eaa950368ca7a47e6c59fb5
-ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
+ms.openlocfilehash: b424e0e56f2ec7b6de1fed6cf505566bdee4d44c
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60891072"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61019002"
 ---
 # <a name="delete-identityprovider"></a>删除 identityProvider
 命名空间：microsoft.graph
@@ -27,7 +27,7 @@ ms.locfileid: "60891072"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）|IdentityProvider.ReadWrite.All|
 |委派（Microsoft 个人帐户）| 不支持。|
-|Application|IdentityProvider.ReadWrite.All|
+|应用程序|IdentityProvider.ReadWrite.All|
 
 工作或学校帐户需要属于以下角色之一：
 
@@ -88,6 +88,10 @@ DELETE https://graph.microsoft.com/v1.0/identity/identityProviders/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-identityprovider-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-identityprovider-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

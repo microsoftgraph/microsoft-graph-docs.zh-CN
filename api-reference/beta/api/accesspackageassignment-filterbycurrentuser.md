@@ -5,19 +5,19 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ba2bdd6d772d6d0204b32d27a8c3bdde8691a99d
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: ffe74b64b41c6bf9aeea014d2aff83277aaa086d
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60729701"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60983609"
 ---
 # <a name="accesspackageassignment-filterbycurrentuser"></a>accessPackageAssignment：filterByCurrentUser
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在[Azure AD管理](../resources/entitlementmanagement-root.md)"中，检索在已登录用户上筛选的[accessPackageAssignment](../resources/accesspackageassignment.md)对象列表。
+In [Azure AD Entitlement Management](../resources/entitlementmanagement-root.md)， retrieve a list of [accessPackageAssignment](../resources/accesspackageassignment.md) objects filtered on the signed-in user.
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -49,7 +49,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignments/filterByC
 
 - `createdBy` 用于获取 `accessPackageAssignment` 已登录用户创建的对象。 结果列表包括所有目录和访问包中调用方为自己或代表其他人创建的所有分配，例如管理员直接分配。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
@@ -61,7 +61,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignments/filterByC
 
 如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [accessPackageAssignment](../resources/accesspackageassignment.md) 集合。
 
-当结果集跨多个页面时，Microsoft Graph在响应中返回包含指向下一页结果 `@odata.nextLink` 的 URL 的属性的页面。 如果存在该属性，请继续使用每个响应中的 URL 提出其他请求， `@odata.nextLink` 直到返回所有结果。 有关详细信息，请参阅分页[Microsoft Graph应用中的数据](/graph/paging)。
+当结果集跨多个页面时，Microsoft Graph 在响应中返回包含指向下一页结果 `@odata.nextLink` 的 URL 的属性的页面。 如果存在该属性，请继续使用每个响应中的 URL 提出其他请求， `@odata.nextLink` 直到返回所有结果。 有关详细信息，请参阅分页[Microsoft Graph应用中的数据](/graph/paging)。
 
 ## <a name="examples"></a>示例
 
@@ -92,6 +92,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/accesspackageassignment-filterbycurrentuser-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/accesspackageassignment-filterbycurrentuser-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

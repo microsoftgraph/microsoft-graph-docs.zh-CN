@@ -1,16 +1,16 @@
 ---
 title: directoryDefinition： discover
 description: '发现用于预配到应用程序的最新架构定义。 '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: ArvindHarinder1
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 0f4d5a26128c78dca1245f5b8c15f6a446e4296a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ca17ca21a1d01db4a04b1fadbb2affe9b8f242c4
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52046886"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60982161"
 ---
 # <a name="directorydefinition-discover"></a>directoryDefinition： discover
 
@@ -50,7 +50,7 @@ POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/schema/directories/{di
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 `200 OK` [directoryDefinition 对象](../resources/synchronization-directorydefinition.md) 的响应。
+如果成功，此方法返回 `200 OK` 一个 [包含 directoryDefinition 对象的](../resources/synchronization-directorydefinition.md) 响应。
 
 ## <a name="example"></a>示例
 
@@ -79,6 +79,10 @@ POST https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/job
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/discover-directorydefinition-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/discover-directorydefinition-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

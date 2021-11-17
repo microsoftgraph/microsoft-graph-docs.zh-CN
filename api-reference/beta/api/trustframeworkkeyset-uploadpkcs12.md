@@ -1,16 +1,16 @@
 ---
 title: trustFrameworkKeySet：uploadPkcs12
-description: Upload将 PKCS 12 格式密钥 (PFX) 到一个键集。
-localization_priority: Normal
+description: Upload将 PKCS 12 格式密钥 (PFX) 到密钥集。
+ms.localizationpriority: medium
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 520508293c6336e5c5c1e715eeb4f02de9209b4e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b24678d50048fb2e77a075608d537320accec8da
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053424"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60976944"
 ---
 # <a name="trustframeworkkeyset-uploadpkcs12"></a>trustFrameworkKeySet：uploadPkcs12
 
@@ -93,6 +93,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/trustframeworkkeyset-uploadpkcs12-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/trustframeworkkeyset-uploadpkcs12-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

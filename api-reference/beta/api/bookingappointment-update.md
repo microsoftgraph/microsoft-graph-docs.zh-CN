@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: c63b783e3658603e4fabaf3497c362fd39d3b78c
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: cfa8c1e1749735d535f4950075fd8667020db616
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60687562"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60990673"
 ---
 # <a name="update-bookingappointment"></a>更新 bookingappointment
 
@@ -46,19 +46,19 @@ PATCH /bookingBusinesses/{id}/appointments/{id}
 |customerEmailAddress|String|预订约会 [的 bookingCustomer](../resources/bookingcustomer.md) 的 SMTP 地址。|
 |customerId|String|此约会的 [bookingCustomer](../resources/bookingcustomer.md) 的 ID。 如果在创建约会时未指定任何 ID，则创建一个新的 **bookingCustomer** 对象。 设置后，你应考虑 **customerId** 不可变。|
 |customerLocation|[location](../resources/location.md)|表示预订约会的 [bookingCustomer](../resources/bookingcustomer.md) 的位置信息。|
-|customerName|字符串|客户的名称。|
-|customerNotes|字符串|与此约会关联的客户的备注。 只有在通过 ID 读取 **此 bookingAppointment 时，才能** 获取该值。 <br> 只有在最初创建新客户的约会时，才能设置此属性。 此后，该值从 **customerId** 表示的客户计算。|
+|customerName|String|客户的名称。|
+|customerNotes|String|与此约会关联的客户的备注。 只有在通过 ID 读取 **此 bookingAppointment 时，才能** 获取该值。 <br> 只有在最初创建新客户的约会时，才能设置此属性。 此后，该值从 **customerId** 表示的客户计算。|
 |customerPhone|String|客户的电话号码。|
-|customerTimeZone|字符串|客户的时区。 有关可能值的列表，请参阅 [dateTimeTimeZone](../resources/datetimetimezone.md)。|
+|customerTimeZone|String|客户的时区。 有关可能值的列表，请参阅 [dateTimeTimeZone](../resources/datetimetimezone.md)。|
 |duration|期限|约会的长度，以 [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) 格式表示。 |
 |end|[dateTimeTimeZone](../resources/datetimetimezone.md)|约会结束的日期、时间和时区。|
 |invoiceAmount|双精度|发票上的计费金额。|
 |invoiceDate|[dateTimeTimeZone](../resources/datetimetimezone.md)|此约会的发票的日期、时间和时区。|
 |invoiceId|String|发票的 ID。|
 |invoiceStatus|string| 发票的状态。 可取值为：`draft`、`reviewing`、`open`、`canceled`、`paid`、`corrective`。|
-|invoiceUrl|字符串|Microsoft Bookings 中发票的 URL。|
-|isLocationOnline|布尔值|如果为 True，则表明该约会将在线进行。 默认值为 false。|
-|optOutOfCustomerEmail|布尔值|True 表示此约会的 [bookingCustomer](../resources/bookingcustomer.md) 不希望收到有关此约会的确认。|
+|invoiceUrl|String|Microsoft Bookings 中发票的 URL。|
+|isLocationOnline|布尔|如果为 True，则表明该约会将在线进行。 默认值为 false。|
+|optOutOfCustomerEmail|布尔|True 表示此约会的 [bookingCustomer](../resources/bookingcustomer.md) 不希望收到有关此约会的确认。|
 |postBuffer|期限|例如，约会结束后要保留的清理时间量。 该值以 [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) 格式表示。 |
 |preBuffer|期限|例如，在约会开始前保留准备的时间量。 该值以 [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) 格式表示。|
 |price|双精度|指定 [bookingService](../resources/bookingservice.md)的约会的常规价格。|
@@ -67,9 +67,9 @@ PATCH /bookingBusinesses/{id}/appointments/{id}
 |selfServiceAppointmentId|String|约会的附加跟踪 ID（如果约会是由客户直接在日程安排页面上创建的，而不是由员工代表客户创建的）。|
 |服务 Id|String|与此约会关联的 [bookingService](../resources/bookingservice.md) 的 ID。|
 |serviceLocation|[location](../resources/location.md)|服务交付位置。|
-|serviceName|字符串|与此约会关联的 **bookingService** 的名称。<br>创建新约会时，此属性是可选的。 如果未指定，则通过 **serviceId** 属性从与约会关联的服务计算该约会。|
+|serviceName|String|与此约会关联的 **bookingService** 的名称。<br>创建新约会时，此属性是可选的。 如果未指定，则通过 **serviceId** 属性从与约会关联的服务计算该约会。|
 |serviceNotes|String|[bookingStaffMember 中的注释](../resources/bookingstaffmember.md)。 此属性的值仅在按其 ID 读取此 **bookingAppointment** 时可用。|
-|smsNotificationsEnabled|布尔值|如果为 True，则表明将发送给客户进行约会的短信通知。 默认值为 false。|
+|smsNotificationsEnabled|布尔|如果为 True，则表明将发送给客户进行约会的短信通知。 默认值为 false。|
 |staffMemberIds|String collection|在此约会中 [安排的每个 bookingStaffMember](../resources/bookingstaffmember.md) 的 ID。|
 |start|[dateTimeTimeZone](../resources/datetimetimezone.md)|约会开始的日期、时间和时区。|
 
@@ -122,6 +122,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-bookingappointment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-bookingappointment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

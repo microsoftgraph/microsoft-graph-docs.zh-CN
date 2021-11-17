@@ -2,15 +2,15 @@
 title: 列出笔记本
 description: 检索 notebook 对象列表。
 author: jewan-microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: c0de11f9c42f6204660f57dfb78f601eb612b73f
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 5866ccaa58923ecead75bc78a7e0a49324cab25b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473918"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61028250"
 ---
 # <a name="list-notebooks"></a>列出笔记本
 
@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/beta/me/onenote/notebooks
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-notebooks-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-notebooks-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

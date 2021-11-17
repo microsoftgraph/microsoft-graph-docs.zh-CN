@@ -2,15 +2,15 @@
 title: call： redirect
 description: 重定向传入呼叫。
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 7e4ffa0b1189ebf9cf6ab3d710256ab423f5bd3f
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 55639a59ef03bcca325aef88d6cfbcc246358b21
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786227"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61024036"
 ---
 # <a name="call-redirect"></a>call： redirect
 
@@ -22,7 +22,7 @@ ms.locfileid: "52786227"
 
 机器人预期在呼叫退出之前重定向呼叫。当前超时值为 15 秒。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -54,11 +54,11 @@ POST /communications/calls/{id}/redirect
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|targets|[invitationParticipantInfo](../resources/invitationparticipantinfo.md) 集合|重定向操作的目标参与者。 如果指定了多个目标，则这是一个同时调用。 这意味着所有目标将同时设定范围，并且只有第一个选取的目标将连接。 我们最多支持 25 个目标用于模拟。
+|targets|[invitationParticipantInfo](../resources/invitationparticipantinfo.md) 集合|重定向操作的目标参与者。 如果指定了多个目标，则这是一个同时调用。 这意味着所有目标将同时设定范围，并且只有第一个选取的目标将被连接。 我们最多支持 25 个目标用于模拟。
 |targetDisposition|String| (弃) 可能的值是 `default` `simultaneousRing` `forward` ：、、。 此参数已弃用，我们将从提供的目标数自动标识它是一个转发呼叫还是同时调用。|
-|timeout|Int32|对于重定向 (超时) 秒数。 超时值的范围介于 15 到 90 秒之间（包括 15 秒和 90 秒）。 对于一个目标，默认超时值为 55 秒，对于多个目标，默认超时值为 60 秒 (可能会) 。 |
-|maskCallee|Boolean|指示是否向呼叫者隐藏被叫方。 如果为 true，则被叫方标识为机器人标识。 默认值：false。|
-|maskCaller|Boolean|指示是否向被叫方隐藏呼叫者。 如果为 true，则呼叫者标识为机器人标识。 默认值：false。|
+|timeout|Int32|超时 (重定向) 以秒表示。 超时值的范围介于 15 到 90 秒之间（包括 15 秒和 90 秒）。 一个目标的默认超时值为 55 秒，而多个目标的默认超时值为 60 秒 (可能会) 。 |
+|maskCallee|布尔|指示是否向呼叫者隐藏被叫方。 如果为 true，则被叫方标识为机器人标识。 默认值：false。|
+|maskCaller|布尔|指示是否向被叫方隐藏呼叫者。 如果为 true，则呼叫者标识为机器人标识。 默认值：false。|
 |callbackUri|String|这允许机器人为当前呼叫提供特定的回调 URI，以接收以后的通知。 如果尚未设置此属性，将改为使用自动程序全局回调 URI。 这必须是 `https` 。|
 
 ## <a name="response"></a>响应
@@ -165,6 +165,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/call-redirect-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/call-redirect-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

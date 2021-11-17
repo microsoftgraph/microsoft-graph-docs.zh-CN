@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c3579abc4b7e7769819243dd726e18718717cca2
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: a9b6d1fc49c8a526d527d02635f357302f822cff
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60926859"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60986382"
 ---
 # <a name="grouplifecyclepolicy-renewgroup"></a>groupLifecyclePolicy：renewGroup
 
@@ -22,7 +22,7 @@ ms.locfileid: "60926859"
 
 > **注意：** 调用 v1.0 终结点时，请使用 [Renew 组](/graph/api/group-renew?view=graph-rest-1.0&preserve-view=true) 方法。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
  
@@ -50,7 +50,7 @@ POST /groupLifecyclePolicies/renewGroup
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数 | 类型 | Description |
+| 参数 | 类型 | 说明 |
 |:---------------|:--------|:----------|
 |groupId|Guid| 要续订的组的 ID。 |
 
@@ -90,6 +90,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/grouplifecyclepolicy-renewgroup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/grouplifecyclepolicy-renewgroup-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

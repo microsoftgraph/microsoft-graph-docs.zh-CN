@@ -2,15 +2,15 @@
 title: 列出 mobileDeviceManagementPolicies
 description: 获取移动设备管理对象及其属性的列表。
 author: ravennMSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: fc9d05a4bf39b0e36a7e358a0126c07f1029ee4d7c8f3590c7bc6ddd123a959f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e933840be787d7f2aa0739f6c026b70bfd658a7a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57219541"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61028263"
 ---
 # <a name="list-mobiledevicemanagementpolicies"></a>列出 mobileDeviceManagementPolicies
 
@@ -20,7 +20,7 @@ ms.locfileid: "57219541"
 
 获取 [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md) 对象及其属性的列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -94,6 +94,10 @@ GET https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-mobilitymanagementpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-mobilitymanagementpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

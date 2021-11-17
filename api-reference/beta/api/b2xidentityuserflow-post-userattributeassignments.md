@@ -5,12 +5,12 @@ author: jkdouglas
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: fc7bee846afe433d0cb7639dba0ec7d77291c0a8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3daabfb9f384799872cf5155b97f7fc61a772b11
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59028588"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60990764"
 ---
 # <a name="create-userattributeassignments"></a>创建 userAttributeAssignments
 
@@ -55,8 +55,8 @@ POST /identity/b2xUserFlows/{id}/userAttributeAssignments
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|用户显示名称中的 identityUserFlowAttribute 的组。|
-|isOptional|Boolean|确定 identityUserFlowAttribute 是否可选。 `true` 表示用户不必提供值。 `false` 表示用户无法在未提供值的情况下完成注册。|
-|requiresVerification|Boolean|确定 identityUserFlowAttribute 是否需要验证。 这仅用于验证用户的电话号码或电子邮件地址。|
+|isOptional|布尔|确定 identityUserFlowAttribute 是否可选。 `true` 表示用户不必提供值。 `false` 表示用户无法在未提供值的情况下完成注册。|
+|requiresVerification|布尔|确定 identityUserFlowAttribute 是否需要验证。 这仅用于验证用户的电话号码或电子邮件地址。|
 |userAttributeValues|[userAttributeValuesItem](../resources/userattributevaluesitem.md) 集合|用户流属性的输入选项。 仅在 userInputType 为 `radioSingleSelect` 、 `dropdownSingleSelect` 或 时适用 `checkboxMultiSelect` 。|
 |userInputType|identityUserFlowAttributeInputType|用户流属性的输入类型。 可取值为：`textBox`、`dateTimeDropdown`、`radioSingleSelect`、`dropdownSingleSelect`、`emailBox`、`checkboxMultiSelect`。|
 |userAttribute|[identityUserFlowAttribute](../resources/identityuserflowattribute.md)|要包括在用户流分配中的用户流属性的标识符。
@@ -106,6 +106,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-identityuserflowattributeassignment-from--2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-identityuserflowattributeassignment-from--2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

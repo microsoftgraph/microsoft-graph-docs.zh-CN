@@ -2,15 +2,15 @@
 title: 获取 accessReviewHistoryDefinition
 description: 检索 accessReviewHistoryDefinition 对象。
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 59a59aea65cdb26f1880c0b9876bfcdf54f30190
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: 4c9daf4b156d4de58703a151f1d692391c071b1d
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52474193"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60987959"
 ---
 # <a name="get-accessreviewhistorydefinition"></a>获取 accessReviewHistoryDefinition
 
@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDef
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-accessreviewhistorydefinition-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-accessreviewhistorydefinition-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

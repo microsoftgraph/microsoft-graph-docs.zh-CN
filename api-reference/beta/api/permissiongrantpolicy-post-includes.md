@@ -1,16 +1,16 @@
 ---
 title: Create permissionGrantConditionSet in includes collection of permissionGrantPolicy
 description: 添加权限授予策略中包含权限授予事件的条件。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 704f7f3165b990dc9a26b779681d98c312b8e673
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 7ef1e6531f458270a29d6cf96f61c6f89113678d
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052941"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61026471"
 ---
 # <a name="create-permissiongrantconditionset-in-includes-collection-of-permissiongrantpolicy"></a>Create permissionGrantConditionSet in includes collection of permissionGrantPolicy
 
@@ -51,7 +51,7 @@ POST /policies/permissionGrantPolicies/{id}/includes
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 响应 [代码和 permissionGrantConditionSet](../resources/permissiongrantconditionset.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -90,6 +90,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/permissiongrantpolicy-create-includes-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/permissiongrantpolicy-create-includes-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

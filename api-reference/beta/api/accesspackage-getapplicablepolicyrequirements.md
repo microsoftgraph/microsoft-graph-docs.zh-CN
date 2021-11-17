@@ -1,23 +1,23 @@
 ---
 title: accessPackage： getApplicablePolicyRequirements
 description: 允许调用方查找请求特定 accessPackage 的分配的要求。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 2572239463e9ab1142c2b5e475f25e7ce1914b39
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 32850de6637d1d85c45f34a7fd93992a1f76730e
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58259271"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60983812"
 ---
 # <a name="accesspackage-getapplicablepolicyrequirements"></a>accessPackage： getApplicablePolicyRequirements
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在[Azure AD 权利](../resources/entitlementmanagement-root.md)管理中，此操作检索当前登录用户可以用于创建[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md)的[accessPackageAssignmentRequestRequirements](../resources/accesspackageassignmentrequestrequirements.md)对象列表。  每个要求对象对应于允许当前登录用户请求分配的访问包分配策略。
+在[Azure AD](../resources/entitlementmanagement-root.md)中，此操作检索当前登录用户可以用于创建[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md)的[accessPackageAssignmentRequestRequirements](../resources/accesspackageassignmentrequestrequirements.md)对象列表。  每个要求对象对应于允许当前登录用户请求分配的访问包分配策略。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -57,6 +57,8 @@ POST /identityGovernance/entitlementManagement/accessPackages/{id}/getApplicable
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "accesspackage_getapplicablepolicyrequirements"
@@ -65,6 +67,28 @@ POST /identityGovernance/entitlementManagement/accessPackages/{id}/getApplicable
 ``` http
 POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackages/fb449cf8-3a59-4d86-bdfd-a1b7299681de/getApplicablePolicyRequirements
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/accesspackage-getapplicablepolicyrequirements-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/accesspackage-getapplicablepolicyrequirements-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/accesspackage-getapplicablepolicyrequirements-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/accesspackage-getapplicablepolicyrequirements-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/accesspackage-getapplicablepolicyrequirements-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。

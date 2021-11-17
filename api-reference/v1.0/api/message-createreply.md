@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a085f740e530c008e686f5d3e21a90179a31bdf0
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: e5bfa926fed0d27831715c42094a2d8d799e13ae
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60928308"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61027409"
 ---
 # <a name="message-createreply"></a>message: createReply
 
@@ -20,7 +20,7 @@ ms.locfileid: "60928308"
 
 使用 JSON 格式时：
 - 指定参数的 comment 或 **body** `message` 属性。 指定这两者将返回 HTTP 400 错误请求错误。
-- 如果在原始邮件中指定了 **replyTo，** 则根据 Internet 邮件格式 ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)) ，您应将答复发送给 **replyTo** 中的收件人，而不是 中的 **收件人**。
+- 如果在原始邮件中指定了 **replyTo，** 则根据 Internet 邮件格式 ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)) ，您应将回复发送给 **replyTo** 中的收件人，而不是 中的 **收件人**。
 - 您可以 [稍后](../api/message-update.md) 更新草稿以将回复内容添加到 **正文或更改** 其他邮件属性。
 
 使用 MIME 格式时：
@@ -96,6 +96,10 @@ POST https://graph.microsoft.com/v1.0/me/messages/{id}/createReply
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/message-createreply-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/message-createreply-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

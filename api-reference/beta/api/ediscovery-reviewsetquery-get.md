@@ -1,16 +1,16 @@
 ---
 title: 获取 reviewSetQuery
 description: 检索电子数据展示 reviewsetquery 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mahage-msft
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 0fa68102401e4d556da708d0bd1e5263eaf33062
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a525a6c13f3be6f00a205d7e34d5973a6d567b88
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52044660"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61018729"
 ---
 # <a name="get-reviewsetquery"></a>获取 reviewSetQuery
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/2eef613a-ca2d-4
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-reviewsetquery-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-reviewsetquery-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

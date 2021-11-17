@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 3a0c677bf8d3f2262e7383768248433ff33654b6
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 806b7811267bba98108eb7ed76107ba8ed10ee13
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60946262"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60986921"
 ---
 # <a name="create-unifiedgroupsource"></a>创建 unifiedGroupSource
 
@@ -20,7 +20,7 @@ ms.locfileid: "60946262"
 
 创建新的 [unifiedGroupSource](../resources/ediscovery-unifiedgroupsource.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -54,9 +54,9 @@ POST /compliance/ediscovery/cases/4c8f8f70-7785-4bd4-b296-c98376a2c5e1/custodian
 
 下表显示创建 [unifiedGroupSource](../resources/ediscovery-unifiedgroupsource.md)时所需的属性。
 
->**注意：** 若要 **创建** **unifiedGroupSource，group@odata** 组或 **group@odata.bind** 是必需的。
+>**注意：** 若要 **创建** **unifiedGroupSource，group@odata** 组或 **group@odata.bind 是必需的**。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |includedSources|microsoft.graph.ediscovery.sourceType|指定此组中包含的源。 可取值为：`mailbox`、`site`。|
 |组|String|指定组的电子邮件地址。 若要获取组的电子邮件地址，请使用 [列表组](../api/group-list.md) 或 [获取组](../api/group-get.md)。 然后，可以使用 按组名称进行查询 `$filter` ;例如， `https://graph.microsoft.com/v1.0/groups?$filter=displayName eq 'secret group'&$select=mail,id,displayName` 。|
@@ -105,6 +105,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-unifiedgroupsource-from-email-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-unifiedgroupsource-from-email-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -177,6 +181,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-unifiedgroupsource-from-id-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-unifiedgroupsource-from-id-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

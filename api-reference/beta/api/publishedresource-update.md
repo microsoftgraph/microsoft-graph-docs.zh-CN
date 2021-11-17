@@ -1,16 +1,16 @@
 ---
 title: 更新 publishedResource
 description: 更新 [publishedResource 对象](../resources/publishedresource.md) 的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 776893669989e135a781e19aca6f344cf4015ce0
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 7e8e76a664c3b99455b3e19a755fbb5518800268
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787372"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60993914"
 ---
 # <a name="update-publishedresource"></a>更新 publishedResource
 
@@ -20,7 +20,7 @@ ms.locfileid: "52787372"
 
 更新 publishedresource  [publishedResource 对象](../resources/publishedresource.md) 的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -91,6 +91,10 @@ PATCH https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-publishedresource-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-publishedresource-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

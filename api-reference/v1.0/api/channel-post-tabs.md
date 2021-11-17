@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 100ef795ecb238ed5646e809ceac5f01bb1b7570
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: 07ed31900fca47c5ba4623e9b5682c5afd60b13c
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60290125"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61025959"
 ---
 # <a name="add-tab-to-channel"></a>将选项卡添加到频道
 
@@ -63,6 +63,7 @@ POST /teams/{team-id}/channels/{channel-id}/tabs
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs
+
 {
   "displayName": "My Contoso Tab",
   "teamsApp@odata.bind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8",

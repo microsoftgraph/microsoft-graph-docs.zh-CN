@@ -5,12 +5,12 @@ author: simonhult
 ms.localizationpriority: medium
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: a28895dce5d6ac05f587c29a745dc2b83c38558f
-ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
+ms.openlocfilehash: a8d1d9b9c637f9e14e2b0a589a99ede852445c86
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60891213"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61020815"
 ---
 # <a name="get-iteminsightssettings"></a>获取 itemInsightsSettings
 
@@ -30,7 +30,7 @@ ms.locfileid: "60891213"
 |:--------------------|:---------------------------------------------------------|
 |委托（工作或学校帐户） | User.Read.All、User.ReadWrite.All |
 |委托（个人 Microsoft 帐户） | 不支持。    |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -53,7 +53,7 @@ GET /organization/{organizationId}/settings/itemInsights
 
 如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [itemInsightsSettings](../resources/iteminsightssettings.md) 对象。
 
->**注意：** 此操作验证指定 **itemInsightsSettings** 资源的属性值的有效性。 如果 **设置了 disabledForGroup** 属性，则此操作不会检查相应组是否存在Azure AD组。 这意味着，如果将 **disabledForGroup** 设置为不存在或之后已删除的 Azure AD 组，则此操作将无法识别任何组成员身份，并禁用对特定用户的项目见解。 如果 **isEnabledInOrganization** 设置为 ，则操作将为组织中所有用户 `true` 启用见解。 
+>**注意：** 此操作验证指定 **itemInsightsSettings** 资源的属性值的有效性。 如果 **设置了 disabledForGroup** 属性，则此操作不会检查是否存在相应的 Azure AD Group。 这意味着，如果将 **disabledForGroup** 设置为不存在或之后已删除的 Azure AD 组，则此操作将不能识别任何组成员身份并禁用对特定用户的项目见解。 如果 **isEnabledInOrganization** 设置为 ，则操作将为组织中所有用户 `true` 启用见解。 
 
 ## <a name="example"></a>示例
 
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/item
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-iteminsightssettings-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-iteminsightssettings-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

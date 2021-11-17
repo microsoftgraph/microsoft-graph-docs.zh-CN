@@ -1,16 +1,16 @@
 ---
 title: 更新 userFlowIdentityProvider
 description: 更新 b2xIdentityUserFlow 中的 identityProvider。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 2cbd29378ec3418d39705e0a5cda33bc168f9789fde2d27e5d1241fbf8e4cf17
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 48ceb60eef475325093a86255cfb0be0dfd73879
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57105865"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60990777"
 ---
 # <a name="update-a-userflowidentityprovider"></a>更新 userFlowIdentityProvider
 
@@ -95,6 +95,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-b2xuserflows-userflowidentityprovider-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-b2xuserflows-userflowidentityprovider-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

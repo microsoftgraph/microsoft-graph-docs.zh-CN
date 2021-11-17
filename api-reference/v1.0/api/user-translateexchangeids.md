@@ -5,12 +5,12 @@ author: abheek-das
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 462800b6ce6cf235a15a2a347a068a3c229ffbeb
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b4260d7c0d62f60ed9f5ef8efa44184cf58d3da9
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59109645"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61012779"
 ---
 # <a name="user-translateexchangeids"></a>user： translateExchangeIds
 
@@ -58,15 +58,15 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 | entryId | MAPI 客户端使用的二进制条目 ID 格式。 |
 | ewsId | Web 服务客户端Exchange ID 格式。 |
 | immutableEntryId | 二进制 MAPI 兼容不可变 ID 格式。 |
-| restId | Microsoft Graph 使用的默认 ID Graph。 |
-| restImmutableEntryId | Microsoft Graph 使用的不可变 ID Graph。 |
+| restId | Microsoft 应用使用的默认 ID Graph。 |
+| restImmutableEntryId | Microsoft Graph 使用的不可变 ID 格式。 |
 
 二进制格式 (`entryId` 和) URL `immutableEntryId` 安全 base64 编码。 URL 安全通过按以下方式修改二进制数据的 base64 编码实现：
 
 - 将 `+` 替换为 `-`
 - 将 `/` 替换为 `_`
 - 删除任何尾部填充 `=` () 
-- 将一个整数添加到字符串的末尾，该整数指示原始文本、、或 (`0` `1` 填充) `2`
+- 将一个整数添加到字符串的末尾，该整数指示原始文本中的填充 `0` (、或 `1`) `2`
 
 ## <a name="response"></a>响应
 
@@ -74,7 +74,7 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 ## <a name="example"></a>示例
 
-以下示例演示如何将多个标识符从常规 REST API 格式 () REST 不可变格式 `restId` `restImmutableEntryId` () 。
+以下示例演示如何将多个标识符从常规 REST API 格式 () REST 不可变 `restId` `restImmutableEntryId` () 。
 
 ### <a name="request"></a>请求
 
@@ -114,6 +114,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-translateexchangeids-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-translateexchangeids-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

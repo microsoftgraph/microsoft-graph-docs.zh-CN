@@ -1,16 +1,16 @@
 ---
 title: 更新 identityUserFlowAttribute
 description: 更新 identityUserFlowAttribute 的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 7f9f5589069e6b96115f73edb653d7262efe445a
-ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
+ms.openlocfilehash: 16a4181a33c9934adfab7e3a0612bc3c058f1b59
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50625812"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60974906"
 ---
 # <a name="update-identityuserflowattribute"></a>更新 identityUserFlowAttribute
 
@@ -28,12 +28,12 @@ ms.locfileid: "50625812"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）|IdentityUserFlow.ReadWrite.All|
 |委派（个人 Microsoft 帐户）| 不支持。|
-|Application| IdentityUserFlow.ReadWrite.All|
+|应用程序| IdentityUserFlow.ReadWrite.All|
 
 工作或学校帐户需要属于以下角色之一：
 
 * 全局管理员
-* 外部标识用户流属性管理员
+* 外部标识用户Flow属性管理员
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -52,13 +52,13 @@ PATCH /identity/userFlowAttributes/{id}
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，为 JSON 对象提供一个或多个属性，这些属性需要针对 [identityUserFlowAttribute](../resources/identityuserflowattribute.md) 对象进行更新。
+在请求正文中，为 JSON 对象提供一个或多个需要为 [identityUserFlowAttribute](../resources/identityuserflowattribute.md) 对象更新的属性。
 
 >**注意：** 只能 **更新 description** 属性。
 
 |属性|类型|说明|
 |:---------------|:--------|:----------|
-|说明|String|用户流属性的说明。 它在注册时向用户显示。|
+|说明|String|用户流属性的说明。 它在注册时显示给用户。|
 
 ## <a name="response"></a>响应
 
@@ -100,6 +100,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-userflowattributes-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-userflowattributes-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

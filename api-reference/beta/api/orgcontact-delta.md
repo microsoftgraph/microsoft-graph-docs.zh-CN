@@ -1,16 +1,16 @@
 ---
 title: orgContact： delta
 description: 获取新建、更新或删除的组织联系人，而无需执行整个集合的完全读取。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: afdf3ba022ec5138849fb3cee0732a50d44aef8e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 9a736ac1320746a2e0e42ead7f546b13324b8bc7
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055573"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61018437"
 ---
 # <a name="orgcontact-delta"></a>orgContact： delta
 
@@ -50,7 +50,7 @@ GET /contacts/delta
 
 | 查询参数      | 类型   |说明|
 |:---------------|:--------|:----------|
-| $deltatoken | string | 对[同一](/graph/delta-query-overview)个组织联系人集合之前的 delta 函数调用的 URL 中返回的状态令牌，指示完成这一轮 `deltaLink` 更改跟踪。  在集合的下一轮更改跟踪的第一个请求中保存和应用整个 `deltaLink` URL（包括此令牌）。|
+| $deltatoken | string | 对[同](/graph/delta-query-overview)一组织联系人集合之前的 delta 函数调用的 URL 中返回的状态令牌，指示完成这一轮 `deltaLink` 更改跟踪。  在集合的下一轮更改跟踪的第一个请求中保存和应用整个 `deltaLink` URL（包括此令牌）。|
 | $skiptoken | string | 之前的[delta](/graph/delta-query-overview)函数调用的 URL 中返回的状态令牌，指示同一组织联系人集合中还有进一步 `nextLink` 的更改需要跟踪。  |
 
 ### <a name="odata-query-parameters"></a>OData 查询参数
@@ -98,7 +98,7 @@ GET /contacts/delta
 添加可选请求标头 - `prefer:return=minimal` - 将导致出现以下行为：
 
 - 如果属性已更改，则新值将包括在响应中。 这包括设为 Null 值的属性。
-- 如果属性未更改，则该属性不会包括在响应中。 （不同于默认行为。）
+- 如果尚未更改属性，则该属性不会包括在响应中。（不同于默认行为。）
 
 > **注意：** 可以在 Delta 循环中的任何时间点将标头添加到 `deltaLink` 请求中。 标头仅影响响应中包含的属性集，而不会影响增量查询的运行。 请参阅[示例 3](#example-3-alternative-minimal-response-behavior)。
 
@@ -134,6 +134,10 @@ GET https://graph.microsoft.com/beta/contacts/delta
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/orgcontact-delta-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/orgcontact-delta-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -208,6 +212,10 @@ GET https://graph.microsoft.com/beta/contacts/delta?$select=displayName,jobTitle
 [!INCLUDE [sample-code](../includes/snippets/java/orgcontact-delta-select-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/orgcontact-delta-select-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -272,12 +280,16 @@ Prefer: return=minimal
 [!INCLUDE [sample-code](../includes/snippets/java/orgcontact-delta-minimal-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/orgcontact-delta-minimal-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### <a name="response"></a>响应
 
-以下示例所示为使用从查询初始化获得的 `deltaLink` 时的响应。 请注意，不包括 属性，这意味着它自上次 delta 查询以来没有更改;和 包含在内， `mail` `displayName` `jobTitle` 这意味着其值已更改。
+以下示例所示为使用从查询初始化获得的 `deltaLink` 时的响应。 请注意，不包括属性，这意味着它自上次 delta 查询以来没有更改;和 包含在内， `mail` `displayName` `jobTitle` 这意味着其值已更改。
 
 <!-- {
   "blockType": "response",

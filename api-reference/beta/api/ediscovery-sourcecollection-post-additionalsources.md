@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: bd67361807c40ef5aad4bebc08072e63998f1eed
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 25e8636ae12ad982ae7f7b6fe07af241a3dbde3c
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60936879"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60994179"
 ---
 # <a name="create-datasource"></a>创建 dataSource
 
@@ -20,7 +20,7 @@ ms.locfileid: "60936879"
 
 向源集合添加其他数据源。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -56,7 +56,7 @@ POST /compliance/ediscovery/cases/{caseId}/sourceCollections/{sourceCollectionId
 
 >**注意：** 电子邮件 **或****网站** 是必需的，而不是同时需要两者。 
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |email|string|邮箱的 SMTP 地址。 若要获取组的电子邮件地址，请使用 [列表组](../api/group-list.md) 或 [获取组](../api/group-get.md)。 可以使用 按组名称进行查询 `$filter` ;例如， `https://graph.microsoft.com/v1.0/groups?$filter=displayName eq 'secret group'&$select=mail,id,displayName` 。|
 |网站|string|网站的 URL;例如， `https://contoso.sharepoint.com/sites/HumanResources` 。 |
@@ -102,6 +102,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-datasource-from--1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-datasource-from--1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

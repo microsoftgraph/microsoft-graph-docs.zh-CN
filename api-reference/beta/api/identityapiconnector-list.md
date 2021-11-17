@@ -2,15 +2,15 @@
 title: 列出 identityApiConnectors
 description: 获取 identityApiConnector 对象及其属性的列表
 author: nickgmicrosoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6aa2d3a4a5c45dc7b9e0b168eac7402404fcb982
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: d4b3ae89be0ba3789cbf69e5ecb2dfe84b60e49b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51507845"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60998218"
 ---
 # <a name="list-identityapiconnectors"></a>列出 identityApiConnectors
 
@@ -33,7 +33,7 @@ ms.locfileid: "51507845"
 工作或学校帐户需要属于以下角色之一：
 
 * 全局管理员
-* 外部标识用户流管理员
+* 外部标识用户Flow管理员
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/beta/identity/apiConnectors
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-identityapiconnectors-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-identityapiconnectors-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

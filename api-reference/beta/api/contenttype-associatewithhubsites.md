@@ -5,12 +5,12 @@ description: 将内容类型与中心网站列表关联。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 4248640f76252fbc9a7c8b446ff58c972fa4288f
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: 84c2700f90d8740ed6e353fbac3daee2f475de80
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60729421"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61028796"
 ---
 # <a name="contenttype-associatewithhubsites"></a>contentType：associateWithHubSites
 
@@ -19,10 +19,10 @@ ms.locfileid: "60729421"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 将 [内容类型][contentType] 与中心网站列表关联。
 
->**注意：** 此功能仅限于拥有许可证的SharePoint Syntex租户。
+>**注意：** 此功能仅限于拥有许可证SharePoint Syntex租户。
   
 
-## <a name="permissions"></a>权限  
+## <a name="permissions"></a>Permissions  
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -59,7 +59,7 @@ POST /sites/{siteId}/contentTypes/{contentTypeId}/associateWithHubSites
 |参数|类型|说明|
 |-|-|-|
 |hubSiteUrls| 集合 (字符串)  |需要强制执行内容类型的中心网站的主要 URL 列表。 必需。|
-|propagateToExistingLists| 布尔值 |如果为 ，内容类型将强制应用于中心网站中的现有列表;否则，将 `true` 仅应用于新创建的列表。 
+|propagateToExistingLists| 布尔 |如果为 ，内容类型将强制应用于中心网站中的现有列表;否则，将 `true` 仅应用于新创建的列表。 
 
 ## <a name="response"></a>响应
 
@@ -100,6 +100,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/contenttype-associatewithhubsites-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/contenttype-associatewithhubsites-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

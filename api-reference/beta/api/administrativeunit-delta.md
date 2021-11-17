@@ -1,16 +1,16 @@
 ---
 title: administrativeUnit： delta
-description: 获取新建、更新或删除的管理单元，而无需执行整个资源集合的完全读取。
-localization_priority: Normal
+description: 获取新创建、更新或删除的管理单元，而无需执行整个资源集合的完全读取。
+ms.localizationpriority: medium
 author: DougKirschner
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: c454882d4feaa5b9fb0469c848ec4026e4034ba2
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: c1116db2d2014a3c634d7ad9662bb31aa0025186
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52992021"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60987536"
 ---
 # <a name="administrativeunit-delta"></a>administrativeUnit： delta
 
@@ -59,7 +59,7 @@ GET /administrativeUnits/delta
   * 唯一 `$filter` 受支持的表达式用于按其 ID 跟踪特定资源的  `$filter=id+eq+{value}` 更改：或 `$filter=id+eq+{value1}+or+id+eq+{value2}` 。 可以指定的 ID 数受最大 URL 长度限制。
 
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | 持有者 &lt;token&gt;。必需。|
@@ -103,6 +103,10 @@ GET https://graph.microsoft.com/beta/administrativeUnits/delta
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/administrativeunit-delta-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/administrativeunit-delta-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

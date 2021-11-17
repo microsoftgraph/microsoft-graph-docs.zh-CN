@@ -1,16 +1,16 @@
 ---
 title: application： setVerifiedPublisher
 description: 设置应用程序的已验证发布者。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jesakowi
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: a5e9fe1f9d6b5bb68b9f01963f0413cbcf10e15d
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: bae85faa7adc5fb2152bb68a0f0e2a7864baf129
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53578869"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60982853"
 ---
 # <a name="application-setverifiedpublisher"></a>application： setVerifiedPublisher
 
@@ -18,7 +18,7 @@ ms.locfileid: "53578869"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在应用程序[上设置 verifiedPublisher。](../resources/verifiedPublisher.md) [](../resources/application.md) 有关详细信息，包括设置验证发布者的先决条件，请参阅Publisher[验证](/azure/active-directory/develop/publisher-verification-overview)。
+在应用程序[上设置 verifiedPublisher。](../resources/verifiedPublisher.md) [](../resources/application.md) 有关详细信息，包括设置已验证发布者的先决条件，请参阅Publisher[验证](/azure/active-directory/develop/publisher-verification-overview)。
 
 ## <a name="permissions"></a>权限
 
@@ -49,7 +49,7 @@ POST /applications/{id}/setVerifiedPublisher
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-| verifiedPublisherId | 字符串 | Microsoft 合作伙伴网络 ID (MPNID) 从发布者的合作伙伴中心帐户在应用程序上设置的已验证发布者的 MPNID。 |
+| verifiedPublisherId | string | Microsoft 合作伙伴网络 ID (MPNID) 从发布者的合作伙伴中心帐户在应用程序上设置的已验证发布者的 MPNID。 |
 
 ## <a name="response"></a>响应
 
@@ -90,6 +90,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/application-setverifiedpublisher-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/application-setverifiedpublisher-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

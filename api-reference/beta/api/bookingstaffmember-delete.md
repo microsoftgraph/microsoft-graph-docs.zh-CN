@@ -1,16 +1,16 @@
 ---
 title: 删除 bookingStaffMember
-description: 删除指定 bookingbusiness 中的教职员工成员。
-localization_priority: Normal
+description: 删除指定 bookingbusiness 中的员工。
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: f886f3a184599a93ae81135deaf31d37cdd5f4e4
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: bbd8894c5483d00baa7671fe117a667c5951a54a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960342"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60982224"
 ---
 # <a name="delete-bookingstaffmember"></a>删除 bookingStaffMember
 
@@ -18,13 +18,13 @@ ms.locfileid: "48960342"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除指定[bookingbusiness](../resources/bookingbusiness.md)中的[教职员工成员](../resources/bookingstaffmember.md)。
+删除指定[bookingbusiness 中的员工](../resources/bookingbusiness.md)。 [](../resources/bookingstaffmember.md)
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  全部预订. 全部，全部预订. 全部   |
+|委派（工作或学校帐户） |  Bookings.ReadWrite.All、Bookings.Manage.All   |
 |委派（个人 Microsoft 帐户） | 不支持。   |
 |应用程序 | 不支持。  |
 
@@ -72,6 +72,10 @@ DELETE https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-bookingstaffmember-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-bookingstaffmember-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

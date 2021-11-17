@@ -1,16 +1,16 @@
 ---
 title: 删除页面
-description: 删除 OneNote 页面。
-localization_priority: Normal
+description: 删除OneNote页。
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 8b8855631810cc20b5f1c6e7e82fb908d6bcedf8
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 04775dcaa172ca41da7caea79547380612d89918
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48964404"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61026514"
 ---
 # <a name="delete-page"></a>删除页面
 
@@ -18,13 +18,13 @@ ms.locfileid: "48964404"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除 OneNote 页面。
+删除OneNote页。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | 请注意，ReadWrite，All    |
+|委派（工作或学校帐户） | Notes.ReadWrite、Notes.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | Notes.ReadWrite    |
 |应用程序 | Notes.ReadWrite.All |
 
@@ -71,6 +71,10 @@ DELETE https://graph.microsoft.com/beta/me/onenote/pages/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-page-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-page-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

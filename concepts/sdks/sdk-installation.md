@@ -3,12 +3,12 @@ title: 安装 Microsoft Graph SDK
 description: 提供 C#、Java、JavaScript、Objective-C、PHP 和 Ruby Microsoft Graph SDK 的安装说明。
 ms.localizationpriority: medium
 author: MichaelMainer
-ms.openlocfilehash: b8d82f1b19a6132fa9a7be4e8c94a7eca9ac2157
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3df00fb5989783c6f3b22c9dba72e28692910c49
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59025543"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61022704"
 ---
 # <a name="install-the-microsoft-graph-sdks"></a>安装 Microsoft Graph SDK
 
@@ -21,13 +21,25 @@ Microsoft Graph SDK 现已通过 Github 和常用平台包管理器包含在你�
 - [Microsoft.Graph](https://github.com/microsoftgraph/msgraph-sdk-dotnet) - 包含模型和请求构建器，用于访问 `v1.0` 带有流畅 API 的终结点。 Microsoft.Graph 在 Microsoft.Graph.Core 上有一个依赖项。
 - [Microsoft.Graph.Beta](https://github.com/microsoftgraph/msgraph-beta-sdk-dotnet) - 包含模型和请求构建器，用于访问 `beta` 带有流畅 API 的终结点。 Microsoft.Graph.Beta 在 Microsoft.Graph.Core 上有一个依赖项。
 - [Microsoft.Graph.Core](https://github.com/microsoftgraph/msgraph-sdk-dotnet) - 呼叫 Microsoft Graph 的核心库。
-- [Microsoft.Graph.Auth](https://github.com/microsoftgraph/msgraph-sdk-dotnet-auth) - 提供 Microsoft 身份验证库 (MSAL) 的基于身份验证场景包装器，可以和 Microsoft Graph SDK 配合使用。 Microsoft.Graph.Auth 依赖于 Microsoft.Graph.Core。
 
-可以使用 [Visual Studio 中的程序包管理器 UI 或程序包管理器控制台](/nuget/quickstart/install-and-use-a-package-in-visual-studio) 将Microsoft.Graph 程序包安装到项目中。 以下程序包管理器控制台命令将安装 Microsoft.Graph、Microsoft.Graph.Core 和 Microsoft.Graph.Auth 库。 Microsoft.Graph.Core 依赖于 Microsoft.Graph。
+可以使用 [Visual Studio 中的程序包管理器 UI 或程序包管理器控制台](/nuget/quickstart/install-and-use-a-package-in-visual-studio) 将Microsoft.Graph 程序包安装到项目中。 以下程序包管理器控制台命令将安装 Microsoft.Graph 和 Microsoft.Graph。核心库。 Microsoft.Graph.Core 依赖于 Microsoft.Graph。
 
 ```PowerShell
 Install-Package Microsoft.Graph
-Install-Package Microsoft.Graph.Auth -IncludePrerelease
+```
+
+## <a name="install-the-microsoft-graph-go-sdk-preview"></a>安装 Microsoft Graph Go SDK (预览) 
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+Microsoft Graph Go SDK 包含在以下程序包中：
+
+- [Microsoft Graph SDK for Go](https://github.com/microsoftgraph/msgraph-sdk-go) - 包含用于通过 fluent API 访问终结点的模型和 `v1.0` 请求生成器。
+- [Microsoft Graph Beta SDK for Go](https://github.com/microsoftgraph/msgraph-beta-sdk-go) - 包含用于通过 fluent API 访问终结点的模型和 `beta` 请求生成器。
+- [Microsoft Graph Core SDK for Go](https://github.com/microsoftgraph/msgraph-sdk-go-core) - 用于调用 Microsoft Graph 的核心库。
+
+```Shell
+go get -u github.com/microsoftgraph/msgraph-sdk-go
 ```
 
 ## <a name="install-the-microsoft-graph-java-sdk"></a>安装 Microsoft Graph Java SDK

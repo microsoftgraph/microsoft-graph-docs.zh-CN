@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: e91d6a983196b94a4b33d11881f138ff586e7fb8
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 04f7ba9c28a1f5649724c18a1cd03b9552a0ba13
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60947201"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61027948"
 ---
 # <a name="create-personaward"></a>创建 personAward
 
@@ -49,10 +49,10 @@ POST /users/{id | userPrincipalName}/profile/awards
 
 下表显示了在用户配置文件中创建新的 [personAward](../resources/personaward.md) 对象时可以设置 [的属性](../resources/profile.md)。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|description|String|奖励或奖励的奖励。 |
+|说明|String|奖励或奖励的奖励。 |
 |displayName|String|奖励或奖励的名称。 |
 |inference|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断出来的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |issuedDate|日期|授予奖励或奖励的日期。 |
@@ -100,6 +100,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-personaward-from-profile-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-personaward-from-profile-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

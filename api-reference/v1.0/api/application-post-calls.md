@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 920c9c5ff59f544d46bc6fb03d86395d1ba34998
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 44e46ced2e62a8832ea194c8f8548f31b9e816f7
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59008494"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61009086"
 ---
 # <a name="create-call"></a>创建调用
 
@@ -26,7 +26,7 @@ Create [call](../resources/call.md) enables your bot to create a new outgoing pe
 |:---------------------------------------|:----------------------------------------------------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持                                                                           |
 | 委派（个人 Microsoft 帐户） | 不支持                                                                           |
-| 应用程序                            | Calls.JoinGroupCallsasGuest.All、Calls.JoinGroupCalls.All、Calls.Initiate。全部，Calls.InitiateGroupCalls.All |
+| 应用程序                            | Calls.JoinGroupCallsasGuest.All、Calls.JoinGroupCalls.All、Calls.Initiate.All、Calls.InitiateGroupCalls.All |
 
 > **注意：** 对于使用应用托管媒体的呼叫，除了上表中列出的权限之一之外，还需要 Calls.AccessMedia.All 权限。
 
@@ -52,7 +52,7 @@ POST /communications/calls
 
 ### <a name="example-1-create-peer-to-peer-voip-call-with-service-hosted-media"></a>示例 1：使用服务托管媒体创建对等 VoIP 呼叫
 
-> **注意：** 此调用需要Calls.Ini平铺。所有权限。
+> **注意：** 此调用需要 Calls.Initiate.All 权限。
 
 ##### <a name="request"></a>请求
 下面的示例展示了在机器人和指定用户之间进行对等呼叫的请求。 本示例中，媒体由服务托管。 必须将授权令牌、回调 URL、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值替换为实际值，以确保示例有效。
@@ -106,6 +106,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-call-service-hosted-media-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-call-service-hosted-media-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -254,7 +258,7 @@ Content-Type: application/json
 
 ### <a name="example-2-create-peer-to-peer-voip-call-with-application-hosted-media"></a>示例 2：使用应用程序托管媒体创建对等 VoIP 呼叫
 
-> **注意**：此示例需要Calls.Ini平铺。All 和 Calls.AccessMedia.All 权限。
+> **注意**：此示例需要 Calls.Initiate.All 和 Calls.AccessMedia.All 权限。
 
 ##### <a name="request"></a>请求
 下面的示例展示了在机器人和指定用户之间进行对等呼叫的请求。 本示例中，媒体由应用程序本地托管。 必须将授权令牌、回调 url、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值替换为实际值，以确保示例有效。
@@ -322,6 +326,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-call-app-hosted-media-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-call-app-hosted-media-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -532,9 +540,9 @@ Content-Type: application/json
 
 ### <a name="example-5-join-scheduled-meeting-with-service-hosted-media"></a>示例 5：使用服务托管媒体加入安排的会议
 若要加入安排的会议，我们需要获取主题 ID、消息 ID、组织者 ID 和计划会议的租户 ID。
-此信息只能从基于 VTC 的会议 (联机会议 [API](../api/onlinemeeting-get.md)) 。
+此信息只能从基于 VTC 的会议 (获取联机会议 [API](../api/onlinemeeting-get.md)) 。
 
-授权令牌、回调 url、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值必须替换为从基于 (VTC 的  [Get Online Meetings API](../api/onlinemeeting-get.md) (会议获取的详细信息) 实际值才能使示例有效。
+授权令牌、回调 url、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值必须与从基于 (VTC 的  [Get Online Meetings API](../api/onlinemeeting-get.md) (基于 VTC 的会议获取的详细信息一起替换) 实际值才能使示例有效。
 > **注意：** 此示例需要 `Calls.JoinGroupCalls.All` 权限。
 
 ##### <a name="request"></a>请求
@@ -903,13 +911,13 @@ Content-Type: application/json
 
 ### <a name="example-7-create-peer-to-peer-pstn-call-with-service-hosted-media"></a>示例 7：使用服务托管媒体创建对等 PSTN 呼叫
 
-> **注意：** 此调用需要Calls.Ini平铺。所有权限。
+> **注意：** 此调用需要 Calls.Initiate.All 权限。
 
 此呼叫需要分配有 PSTN 号码的应用程序实例。 有关详细信息，请参阅 [将电话号码分配给自动程序](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)。
 
 #### <a name="request"></a>请求
 下面的示例展示了在机器人和 PSTN 号码之间进行对等呼叫的请求。 本示例中，媒体由服务托管。 必须将授权令牌、回调 URL、应用程序实例 ID、应用程序实例显示名称、电话 ID 和租户 ID 的值替换为实际值，以确保示例有效。
-> **注意：** 应用程序实例 ID 是应用程序实例的对象 ID。 应用程序实例链接到的应用程序 ID 应该与授权令牌中的 ID 相匹配。 电话ID 是 E.164 格式的电话号码。
+> **注意：** 应用程序实例 ID 是应用程序实例的对象 ID。 应用程序实例链接到的应用程序 ID 应该与授权令牌中的 ID 相匹配。 电话 ID 是 E.164 格式的电话号码。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -967,6 +975,10 @@ Content-Type: application/json
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-call-service-hosted-media-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-call-service-hosted-media-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -1062,13 +1074,13 @@ Content-Type: application/json
 
 ### <a name="example-8-create-peer-to-peer-pstn-call-with-application-hosted-media"></a>示例 8：使用应用程序托管媒体创建对等 PSTN 呼叫
 
-> **注意**：此示例要求Calls.Ini平铺。All 和 Calls.AccessMedia.All 权限。
+> **注意**：此示例需要 Calls.Initiate.All 和 Calls.AccessMedia.All 权限。
 
 此呼叫需要分配有 PSTN 号码的应用程序实例。 有关详细信息，请参阅 [将电话号码分配给自动程序](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)。
 
 #### <a name="request"></a>请求
 以下示例显示了在机器人和 PSTN 号码之间进行对等呼叫的请求。 本示例中，媒体由应用程序本地托管。 必须将授权令牌、回调 URL、应用程序实例 ID、应用程序实例显示名称、电话 ID 和租户 ID 的值替换为实际值，以确保示例有效。
-> **注意：** 应用程序实例 ID 是应用程序实例的对象 ID。 应用程序实例链接到的应用程序 ID 应该与授权令牌中的 ID 相匹配。 电话ID 是 E.164 格式的电话号码。
+> **注意：** 应用程序实例 ID 是应用程序实例的对象 ID。 应用程序实例链接到的应用程序 ID 应该与授权令牌中的 ID 相匹配。 电话 ID 是 E.164 格式的电话号码。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -1127,6 +1139,10 @@ Content-Type: application/json
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-call-service-hosted-media-3-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-call-service-hosted-media-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

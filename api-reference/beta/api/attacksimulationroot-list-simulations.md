@@ -5,12 +5,12 @@ author: Gopal-MSFT
 ms.localizationpriority: medium
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 1bc7f63b19e8f0b83adcc5035e333cd805139df9
-ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
+ms.openlocfilehash: 23cbcc366c07ed3f6d1c8b2ab5ee2b4361bc980c
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "59995970"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60982489"
 ---
 # <a name="list-simulations"></a>列出模拟
 命名空间：microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "59995970"
 
 列出租户的攻击模拟。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
@@ -71,7 +71,7 @@ GET /security/attackSimulation/simulations?$top=1
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [模拟](../resources/simulation.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码 `200 OK` 和 [模拟](../resources/simulation.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -100,6 +100,10 @@ GET https://graph.microsoft.com/beta/security/attackSimulation/simulations
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-simulation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-simulation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

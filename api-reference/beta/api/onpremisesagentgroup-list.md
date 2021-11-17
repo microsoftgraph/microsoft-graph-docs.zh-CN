@@ -1,16 +1,16 @@
 ---
 title: 列出 onPremisesAgentGroups
 description: 检索 onPremisesAgentGroup 对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 92500a82b252edef1c2906351cd3e45c63069698
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: 3226fb4451421c743eae65795884d528059993ce
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52781126"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61028223"
 ---
 # <a name="list-onpremisesagentgroups"></a>列出 onPremisesAgentGroups
 
@@ -20,7 +20,7 @@ ms.locfileid: "52781126"
 
 检索 [onPremisesAgentGroup 对象](../resources/onpremisesagentgroup.md) 的列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/a
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-agentgroups-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-agentgroups-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

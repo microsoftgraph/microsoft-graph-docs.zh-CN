@@ -2,15 +2,15 @@
 title: 删除标记
 description: 删除 tag 对象。
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 8c21df5939cde9b707dd913dbfa383ba1e950d53
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: fec318d4c154b68a7b84cc54c386772cd658dc9c
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50776457"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61012261"
 ---
 # <a name="delete-tag"></a>删除标记
 
@@ -28,7 +28,7 @@ ms.locfileid: "50776457"
 |:---|:---|
 |委派（工作或学校帐户）|eDiscovery.Read.All、eDiscovery.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -47,9 +47,9 @@ DELETE /compliance/ediscovery/cases/{caseId}/tags/{tagId}?forcedelete=true
 
 | 参数     | 类型    | 说明                                                                              |
 |:--------------|:--------|:-----------------------------------------------------------------------------------------|
-| forcedelete   | Boolean | 如果设置为 true，则标记和子项将被删除（如果为 false）并且标记具有子标记，则删除将失败。 |
+| forcedelete   | 布尔 | 如果设置为 true，则标记和子项将被删除（如果为 false）并且标记具有子标记，则删除将失败。 |
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 |名称|说明|
 |:---|:---|
@@ -92,6 +92,10 @@ DELETE https://graph.microsoft.com/beta/compliance/ediscovery/cases/47746044-fd0
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-tag-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-tag-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

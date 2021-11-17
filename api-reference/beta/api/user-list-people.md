@@ -5,12 +5,12 @@ author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 32caf72c3eb59589889827389c0cd2f4ab26c267
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 9366cb32b701f25984f0bfa106edba759e15a10e
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60946047"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61016805"
 ---
 # <a name="list-people"></a>列出人员
 
@@ -20,7 +20,7 @@ ms.locfileid: "60946047"
 
 检索[人员对象列表](../resources/person.md)，这些对象按与用户的相关性排序，这[](../resources/user.md)由用户的通信和协作模式以及业务关系决定。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -71,7 +71,7 @@ GET /users/{id | userPrincipalName}/people
 
 ### <a name="browse"></a>浏览
 
-本节中的请求根据通信、协作和业务关系，获取与登录 () 关系 `/me` 最相关的人员。
+本节中的请求根据通信、协作和业务关系，获取与登录 () `/me` 相关最多的人员。
 
 默认情况下，每个响应都会返回10条记录，但您可以 改变这点 使用 *$顶部* 参数。 这些请求需要 People.Read 权限。
 
@@ -102,6 +102,10 @@ GET https://graph.microsoft.com/beta/me/people
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-person-collection-beta-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-person-collection-beta-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -219,7 +223,7 @@ GET https://graph.microsoft.com/beta/me/people/?$orderby=DisplayName
 
 可以通过设置 *$top* 参数更改响应中返回的人员数。
 
-以下示例请求与 最相关的 1，000 个人 `/me` 。 请求还通过仅请求用户的请求来限制从服务器显示名称数据量。
+以下示例请求与 最相关的 1，000 个人 `/me` 。 请求还通过仅请求用户的请求来限制从服务器显示名称的数量。
 
 ```http
 GET https://graph.microsoft.com/beta/me/people/?$top=1000&$select=DisplayName

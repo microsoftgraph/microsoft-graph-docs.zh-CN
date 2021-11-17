@@ -5,12 +5,12 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 6ae0b7d1f4451f736ffcc60efacf909156330bab
-ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
+ms.openlocfilehash: 8cb4e6664263890a99a7f6ae5a3add469aecc224
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60890244"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60987490"
 ---
 # <a name="add-a-member"></a>添加成员
 
@@ -18,7 +18,7 @@ ms.locfileid: "60890244"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用此 API 将用户或 (组的成员) 添加到管理单元，或在管理单元中创建新组。 可以在 [管理](/graph/api/resources/groups-overview) 单元内创建所有组类型。
+使用此 API 将用户或 (组) 添加到管理单元，或在管理单元中创建新组。 可以在 [管理](/graph/api/resources/groups-overview) 单元内创建所有组类型。
 
 **注意：** 目前，一次只能向管理单元添加一个成员。
 
@@ -30,7 +30,7 @@ ms.locfileid: "60890244"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | AdministrativeUnit.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | AdministrativeUnit.ReadWrite.All |
+|应用程序 | AdministrativeUnit.ReadWrite.All |
 
 ### <a name="permissions-to-create-a-new-group"></a>创建新组的权限
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -53,7 +53,7 @@ POST /administrativeUnits/{id}/members/$ref
 POST /administrativeUnits/{id}/members
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
@@ -80,9 +80,9 @@ POST /administrativeUnits/{id}/members
 
 ## <a name="response"></a>响应
 
-如果成功，使用 (添加现有对象) `$ref` 返回 `204 No Content` 响应代码。 它不会在响应正文中返回任何内容。 
+如果成功，使用 (添加现有对象 `$ref`) `204 No Content` 返回 响应代码。 它不会在响应正文中返回任何内容。 
 
-当在未 (组) 时，此方法在响应正文中返回 响应代码和 `$ref` `201 Created` [group](../resources/group.md) 对象。 该响应仅包括组的默认属性。
+在未 (组) 时，此方法在响应正文中返回 响应代码和 `$ref` `201 Created` [group](../resources/group.md) 对象。 该响应仅包括组的默认属性。
 
 ## <a name="examples"></a>示例
 ### <a name="example-1-add-an-existing-user-or-group"></a>示例 1：添加现有用户或组
@@ -119,6 +119,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/post-administrativeunits-members-ref-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-administrativeunits-members-ref-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -182,6 +186,10 @@ Content-length: 244
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/post-administrativeunits-members-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-administrativeunits-members-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

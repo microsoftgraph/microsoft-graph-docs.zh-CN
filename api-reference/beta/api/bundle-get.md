@@ -2,15 +2,15 @@
 author: JeremyKelley
 title: 获取捆绑包
 description: 获取 driveItems 捆绑包
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: b6f1619bbb169a92841d3999c43603860c0038fd
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: fa58b197e8240bf672f28b1bd514a4cbf3a9a3c9
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047789"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61008211"
 ---
 # <a name="get-bundle"></a>获取捆绑包
 
@@ -44,7 +44,7 @@ GET /drive/items/{bundle-id}
 
 可以使用 [OData查询参数][odata-parameters]限制通过此调用返回的对象的形状。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称          | 说明  |
 |:------------- |:------------ |
 | Authorization | 持有者 \{token\}。必需。 |
@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/drive/bundles/{bundle-id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-bundle-metadata-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-bundle-metadata-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -147,6 +151,10 @@ GET https://graph.microsoft.com/beta/drive/items/{bundle-id}?expand=children
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-bundle-and-children-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-bundle-and-children-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
