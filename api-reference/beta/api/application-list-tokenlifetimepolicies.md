@@ -1,16 +1,16 @@
 ---
 title: 列出分配的 tokenLifetimePolicies
 description: 列出分配给应用程序或 servicePrincipal 的 tokenLifetimePolicies。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 77216d297c108871ef8be7543e10d7f263d53d34
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e14e802f25907eda10134bbb60cf89c8afee231a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048097"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60995404"
 ---
 # <a name="list-assigned-tokenlifetimepolicy"></a>列出分配的 tokenLifetimePolicy
 
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/beta/applications/{id}/tokenLifetimePolicies
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-tokenlifetimepolicies-on-application-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-tokenlifetimepolicies-on-application-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

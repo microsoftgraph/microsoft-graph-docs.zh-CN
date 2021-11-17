@@ -2,15 +2,15 @@
 title: serviceUpdateMessage：markRead
 description: 将服务更新消息的列表标记为已登录用户的已读邮件。
 author: payiAzure
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 655b509f73c4d120d4b8dda2551451efefd617e2
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 9e1bedba845ff0141eca24a15d172ef4967b11df
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53209351"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61020493"
 ---
 # <a name="serviceupdatemessage-markread"></a>serviceUpdateMessage：markRead
 命名空间：microsoft.graph
@@ -51,7 +51,7 @@ POST /admin/serviceAnnouncement/messages/markRead
 
 |参数|类型|说明|
 |:---|:---|:---|
-|messageIds|String collection|要标记为已读的邮件标识列表。|
+|messageIds|String collection|要标记为已读的邮件标识号列表。|
 
 
 ## <a name="response"></a>响应
@@ -90,6 +90,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/serviceupdatemessage-markread-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/serviceupdatemessage-markread-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

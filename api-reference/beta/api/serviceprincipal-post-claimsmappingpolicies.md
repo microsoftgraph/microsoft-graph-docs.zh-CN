@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 7c76bc098c8f70082e0d75ba2a350c87b183a971
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b7d2bc15ac4120ce67527238e3f79026daad5244
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59767168"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61014131"
 ---
 # <a name="assign-claimsmappingpolicy"></a>分配 claimsMappingPolicy
 
@@ -47,7 +47,7 @@ POST /servicePrincipals/{id}/claimsMappingPolicies/$ref
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，使用 (应分配给服务主体) 提供 [claimsMappingPolicy](../resources/claimsmappingpolicy.md) 对象的 `@odata.id` 标识符。
+在请求正文中，使用应分配给服务主体 (属性) [claimsMappingPolicy](../resources/claimsmappingpolicy.md) 对象的 `@odata.id` 标识符。
 
 ## <a name="response"></a>响应
 
@@ -87,6 +87,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-claimsmappingpolicy-from-serviceprincipal-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-claimsmappingpolicy-from-serviceprincipal-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

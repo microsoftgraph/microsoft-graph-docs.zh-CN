@@ -1,16 +1,16 @@
 ---
 title: 应用 accessReview
-description: '在 Azure AD 访问评审功能中，应用已完成的 accessReview 的决策。  目标对象可以是一次性访问评审，也可以作为定期访问评审的实例。  '
-localization_priority: Normal
+description: '在Azure AD评审功能中，应用已完成的 accessReview 的决策。  目标对象可以是一次性访问评审，也可以作为定期访问评审的实例。  '
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b590b741915aaf9ef901ee51e2eb11d43f9b439f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3faf81557d66b5fe66f5cfcfda16f4ef578d1df6
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048531"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60983099"
 ---
 # <a name="apply-accessreview"></a>应用 accessReview
 
@@ -18,10 +18,10 @@ ms.locfileid: "52048531"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 Azure AD [访问评审](../resources/accessreviews-root.md) 功能中，应用已完成 [的 accessReview 的决策](../resources/accessreview.md)。  目标对象可以是一次性访问评审，也可以作为定期访问评审的实例。  
+在Azure AD[评审](../resources/accessreviews-root.md)功能中，应用已完成[的 accessReview 的决策](../resources/accessreview.md)。  目标对象可以是一次性访问评审，也可以作为定期访问评审的实例。  
 
 
-完成访问评审后，无论是因为到达结束日期，还是管理员手动停止了访问评审，并且未针对该评审配置自动应用，您可以调用 Apply 以应用更改。 在应用发生之前，删除访问权限的决策不会显示在源资源上，例如，用户保留其组成员身份。 通过调用 apply，审阅结果通过更新组或应用程序实现。 如果在审查中拒绝用户访问，当管理员调用此 API 时，Azure AD 将删除其成员身份或应用程序分配。 
+完成访问评审后，无论是由于到达结束日期还是管理员手动停止访问，且未针对该评审配置自动应用，您可以调用 Apply 以应用更改。 在应用发生之前，删除访问权限的决策不会显示在源资源上，例如，用户保留其组成员身份。 通过调用 apply，审阅结果通过更新组或应用程序实现。 如果在审查中拒绝用户访问，当管理员调用此 API 时，Azure AD删除其成员身份或应用程序分配。 
 
 完成访问评审并配置自动应用后，检查的状态会从"已完成"更改为"中间"状态，最后将更改为"已应用"状态。 你应该会看到拒绝的用户（如果有）在几分钟内从资源组成员身份或应用分配中删除。
 
@@ -79,6 +79,10 @@ POST https://graph.microsoft.com/beta/accessReviews/2975E9B5-44CE-4E71-93D3-30F0
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/apply-accessreview-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/apply-accessreview-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

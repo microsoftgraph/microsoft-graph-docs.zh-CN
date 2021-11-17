@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: de5d987532313433f90fef2997fb47057716a53c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4a23c34f8d9ff9c6530adff0cf730f81c91a8bab
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59007900"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60984344"
 ---
 # <a name="create-permissiongrantconditionset-in-excludes-collection-of-permissiongrantpolicy"></a>在 permissionGrantPolicy 的 excludes 集合中创建 permissionGrantConditionSet
 
@@ -55,7 +55,7 @@ POST /policies/permissionGrantPolicies/{id}/excludes
 
 ### <a name="request"></a>请求
 
-本示例中，Microsoft  Graph (**appId** 00000003-0000-0000-c000-0000000000000) 的所有委派权限都从权限授予策略中排除。
+本示例中，Microsoft  Graph (**appId** 00000003-0000-0000-c000-00000000000000) 的所有委派权限都从权限授予策略中排除。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -88,6 +88,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/permissiongrantpolicy-create-excludes-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/permissiongrantpolicy-create-excludes-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

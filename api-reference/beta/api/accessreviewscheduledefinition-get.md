@@ -1,16 +1,16 @@
 ---
 title: 获取 accessReviewScheduleDefinition
 description: 检索 accessReviewScheduleDefinition 对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b29e9790fc9a6a43dd7f36b0f91fcd94b903bd60
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: adcbcc9434c9cfdff42123f0253cffd6bde4f664
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53030448"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60987683"
 ---
 # <a name="get-accessreviewscheduledefinition"></a>获取 accessReviewScheduleDefinition
 
@@ -18,7 +18,7 @@ ms.locfileid: "53030448"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-按 ID [检索 accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象。 这将返回计划的访问评审系列的所有属性，关联的 accessReviewInstances 除外。 每个 accessReviewScheduleDefinition 至少具有一个实例。 实例表示在出现一次 (（例如，202) 1 年 3 月 (定期审阅期间对特定资源组（如特定组的成员) ）进行审阅。
+按 ID [检索 accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) 对象。 这将返回计划的访问评审系列的所有属性，关联的 accessReviewInstances 除外。 每个 accessReviewScheduleDefinition 至少具有一个实例。 实例表示在出现一次 (（例如，2021 年 3 月) 定期审阅）期间对特定资源组（如特定组的成员 () ）的审阅。
 
 若要检索访问评审系列的实例，请使用 [列表 accessReviewInstance](accessreviewinstance-list.md) API。
 
@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-accessreviewscheduledefinition-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-accessreviewscheduledefinition-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,16 +1,16 @@
 ---
 title: 列出现有同步模板
 description: 列出与给定应用程序或服务主体关联的同步模板。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 323a870c94ea465ce0cbfa84903090ee944a5ee7
-ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
+ms.openlocfilehash: bc001761fe31db8106ac3df658fa9c18c7505beb
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50625926"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61020298"
 ---
 # <a name="list-existing-synchronization-templates"></a>列出现有同步模板
 
@@ -27,7 +27,7 @@ ms.locfileid: "50625926"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     |Directory.Read.All  |
 |委派（个人 Microsoft 帐户） |不支持。|
-|Application                            |Application.ReadWrite.OwnedBy、Directory.ReadWrite.All | 
+|应用程序                            |Application.ReadWrite.OwnedBy、Directory.ReadWrite.All | 
 
 ### <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -48,7 +48,7 @@ GET applications/{id}/synchronization/templates
 
 ### <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) 对象的响应代码和集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) 对象集合。
 
 ### <a name="example"></a>示例
 
@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/temp
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-synchronizationtemplate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-synchronizationtemplate-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

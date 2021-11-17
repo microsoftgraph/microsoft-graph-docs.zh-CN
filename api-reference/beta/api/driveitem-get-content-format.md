@@ -3,21 +3,22 @@ author: JeremyKelley
 description: 使用此 API 检索特定格式的项的内容。
 ms.date: 09/10/2017
 title: 转换为其他格式
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: f6343e3b0ce7ba9eb114e6eeadc6040341fb5c47
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: eaa5dc018d74de4cea4a07ba9ae05f5d26adda0c
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786816"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61019887"
 ---
 # <a name="download-a-file-in-another-format"></a>以其他格式下载文件
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [tls-1.2-required](../../includes/tls-1.2-required.md)]
 
 使用此 API 检索特定格式的项的内容。 并非所有文件都可转换成全部格式。
 
@@ -81,6 +82,10 @@ GET /drive/items/{item-id}/content?format={format}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/convert-item-content-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/convert-item-content-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

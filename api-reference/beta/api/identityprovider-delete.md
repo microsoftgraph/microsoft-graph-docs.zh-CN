@@ -1,18 +1,18 @@
 ---
 title: 删除 identityProvider
 description: 删除 identityProvider。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 2924b7b4174f1457d212f4905dd829a23d636296
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 94167a0f4fe108152f6e59dd38e26f19a4f4e48e
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51508856"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61015047"
 ---
-# <a name="delete-identityprovider-deprecated"></a>删除 identityProvider (已弃) 
+# <a name="delete-identityprovider-deprecated"></a>删除 identityProvider（已弃用）
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -86,6 +86,10 @@ DELETE https://graph.microsoft.com/beta/identityProviders/{id}
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-identityprovider-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-identityprovider-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

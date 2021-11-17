@@ -2,15 +2,15 @@
 title: 获取 mobileAppManagementPolicy
 description: 读取移动应用管理策略的属性和关系。
 author: ravennMSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 1e1e9bbd73ce8ac255673bc111e19fde3c69eb39
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: bc4179b0398b28757843f068a922bd93e99595d4
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53442421"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61021915"
 ---
 # <a name="get-mobileappmanagementpolicy"></a>获取 mobileAppManagementPolicy
 
@@ -53,7 +53,7 @@ GET /policies/mobileAppManagementPolicies/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 [响应代码和 mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/beta/policies/mobileAppManagementPolicies/ab90ba
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-mobilitymanagementpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-mobilitymanagementpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

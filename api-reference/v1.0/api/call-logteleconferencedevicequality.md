@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a94f4334780b3b8f25a33ab52321179a7caddb40
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: bd87c4a79efea6edab43209a0f30b3a45baf881b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59016888"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60974437"
 ---
 # <a name="call-logteleconferencedevicequality"></a>call： logTeleconferenceDeviceQuality
 
@@ -18,7 +18,7 @@ ms.locfileid: "59016888"
 
 记录视频电话会议设备质量数据。
 
-云视频互操作 (CVI) 机器人代表视频电话会议 (VTC) 设备，并充当电话会议中 VTC 设备的后端到后端代理。 由于 CVI 机器人位于 VTC 的中间，并且Microsoft Teams作为 VTC 代理，因此它具有两个媒体段。 一个媒体段位于 CVI 机器人和 Teams 基础结构之间，Teams会议服务器或 Teams 客户端。 另一个媒体段位于 CVI 机器人和 VTC 设备之间。 
+云视频互操作 (CVI) 机器人代表视频电话会议 (VTC) 设备，并充当电话会议中 VTC 设备的后端到后端代理。 由于 CVI 机器人位于 VTC 的中间，Microsoft Teams作为 VTC 代理使用，因此它具有两个媒体段。 一个媒体段位于 CVI 机器人和 Teams 基础结构之间，Teams会议服务器或 Teams 客户端。 另一个媒体段位于 CVI 机器人和 VTC 设备之间。 
 
 第三方合作伙伴拥有 VTC 媒体段，Teams基础结构无法访问第三方呼叫通道的质量数据。  此方法仅供 CVI 合作伙伴提供其媒体质量数据。
 
@@ -44,7 +44,7 @@ POST /communications/calls/logTeleconferenceDeviceQuality
 
 | 名称          | 说明   |
 |:--------------|:--------------|
-| Authorization | 持有者{令牌}。必需。 |
+| Authorization | Bearer {token}。必需。 |
 | User-Agent    | 描述调用应用程序的名称和版本。 详细信息将显示于 Azure 信息保护分析中。 建议的格式为 ApplicationName/Version。 必需。|
 
 ## <a name="request-body"></a>请求正文
@@ -176,6 +176,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/call-logteleconferencedevicequality-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/call-logteleconferencedevicequality-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

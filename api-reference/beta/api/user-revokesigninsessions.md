@@ -1,16 +1,16 @@
 ---
 title: user： revokeSignInSessions
-description: 将 **signInSessionsValidFromDateTime** 用户属性重置为当前日期时间，使颁发给应用程序 (的所有用户刷新令牌以及用户浏览器) 中的会话 cookie 失效。
-localization_priority: Normal
+description: 将 **signInSessionsValidFromDateTime** 用户属性重置为当前日期时间，使颁发给应用程序 (的所有用户刷新令牌以及用户浏览器) 中的会话 Cookie 失效。
+ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 53d194ac1058652c06e673beca1fdd6aeb876719
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 6db049b6eb99d915a130e7db2393ec91d6fe8780
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50719729"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60984982"
 ---
 # <a name="user-revokesigninsessions"></a>user： revokeSignInSessions
 
@@ -18,14 +18,14 @@ ms.locfileid: "50719729"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将 **signInSessionsValidFromDateTime** 用户属性重置为当前日期时间，使颁发给用户 (应用程序的所有刷新令牌以及用户浏览器) 中的会话 cookie 失效。 通常，如果用户的设备丢失 (，则由用户或) 管理员执行此操作。 此操作通过要求用户重新登录到之前同意的所有应用程序（独立于设备）来阻止通过设备上的应用程序访问组织数据。
+将 **signInSessionsValidFromDateTime** 用户属性重置为当前日期时间，使颁发给用户 (应用程序的所有刷新令牌以及用户浏览器) 中的会话 Cookie 失效。 通常，如果用户的设备丢失 (，则由用户或管理员) 用户或管理员执行此操作。 此操作通过要求用户重新登录到他们之前同意的所有应用程序（独立于设备）来阻止通过设备上的应用程序访问组织的数据。
 
-如果应用程序尝试使用无效的刷新令牌为此用户兑换委派访问令牌，则应用程序将出现错误。 如果发生这种情况，应用程序将需要通过向授权终结点提出请求来获取新的刷新令牌，这将强制用户登录。
+如果应用程序尝试使用无效的刷新令牌兑换此用户的委派访问令牌，则应用程序将发生错误。 如果发生这种情况，应用程序将需要通过向授权终结点提出请求来获取新的刷新令牌，这将强制用户登录。
 
 >[!NOTE]
->调用 **revokeSignInSessions** 后，在吊销令牌之前可能有几分钟的一小延迟。
+>调用 **revokeSignInSessions** 后，在吊销令牌之前，可能有几分钟的延迟。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -85,6 +85,10 @@ POST https://graph.microsoft.com/beta/me/revokeSignInSessions
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-revokesigninsessionss-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-revokesigninsessionss-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

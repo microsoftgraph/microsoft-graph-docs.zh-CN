@@ -1,17 +1,17 @@
 ---
 author: rahmit
-description: 返回网站中网站页面列表中的 sitePage 的元数据。
+description: 返回网站中网站页面列表中 sitePage 的元数据。
 ms.date: 03/15/2018
 title: 获取网站中的页面
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: c51354818d81cde7e408ea5407c655ce6d7913cf
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: b122f309dcc705582f02d0194b0cfb56f771762d
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475742"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61014081"
 ---
 # <a name="get-a-page-in-the-site-pages-list-of-a-site"></a>获取网站的网站页面列表中的页面
 
@@ -19,7 +19,7 @@ ms.locfileid: "50475742"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-返回网站中网站页面[列表中的][] [sitePage][]的[元数据][]。
+返回网站 中网站页面列表中的[sitePage][] [][]的[元数据][]。
 
 [sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md
@@ -66,6 +66,10 @@ GET /sites/{site-id}/pages/{page-id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-page-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-page-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

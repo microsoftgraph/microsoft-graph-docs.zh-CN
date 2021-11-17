@@ -6,12 +6,12 @@ ms.localizationpriority: medium
 ms.prod: sharepoint
 description: 从 list 中删除项。
 doc_type: apiPageType
-ms.openlocfilehash: 16c3ab6d52b341fe7ce44ab826a910c760c51952
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 961910581f36532cb8163d45bdb6959acf883212
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59037423"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60984576"
 ---
 # <a name="delete-an-item-from-a-list"></a>从列表中删除项
 
@@ -19,7 +19,7 @@ ms.locfileid: "59037423"
 
 从 [list][] 中删除项。
 
-[列表]: ../resources/list.md
+[list]: ../resources/list.md
 
 ## <a name="permissions"></a>权限
 
@@ -74,6 +74,10 @@ DELETE https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{i
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-item-site-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-item-site-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

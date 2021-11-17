@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 52b5e5e7a78c772f6d33ccd913135a954c8538b371f4dc132154bcdc992dc5a8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b9db82069e13cb660ba0d2cd689531666d6ab6c8
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57274157"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61022050"
 ---
 ```csharp
 
@@ -22,7 +22,7 @@ var managementTemplateId = "String";
 var status = "String";
 
 await graphClient.TenantRelationships.ManagedTenants.ManagementActionTenantDeploymentStatuses
-    .ChangeDeploymentStatus(tenantGroupId,tenantId,managementActionId,managementTemplateId,status)
+    .ChangeDeploymentStatus(null,tenantGroupId,tenantId,managementActionId,managementTemplateId,status)
     .Request()
     .PostAsync();
 

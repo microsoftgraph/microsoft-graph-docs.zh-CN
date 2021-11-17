@@ -2,15 +2,15 @@
 author: swapnil1993
 title: 创建 contentType
 description: 为网站创建内容类型。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 4eff9efd9ae4f2b2daa81356cc8d3887f7fc3c29
-ms.sourcegitcommit: aa18eb8a9965f99cc97680808abba8df46f31ba5
+ms.openlocfilehash: da2a98741edb197319c497b1da4423e47d6ee6da
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51638863"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61020451"
 ---
 # <a name="create-contenttype"></a>创建 contentType
 命名空间：microsoft.graph
@@ -97,6 +97,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-contenttype-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-contenttype-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -128,7 +132,7 @@ Content-type: application/json
 
 
 [contentType]: ../resources/contentType.md
-[site]: ../resources/site.md
+[网站]: ../resources/site.md
 
 <!--
 {
