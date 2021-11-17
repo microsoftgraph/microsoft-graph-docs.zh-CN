@@ -5,12 +5,12 @@ author: mashriv
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e6f8e0290c4bd612c46ee541185459f129983c46
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 44f74ee7c9c46a352c49f9ca79cbe1684013ed41
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60946781"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61011569"
 ---
 # <a name="update-outlooktask-deprecated"></a>更新 outlooktask (已弃) 
 
@@ -25,9 +25,9 @@ ms.locfileid: "60946781"
 
 **completedDateTime** 属性可通过完整操作设置，也可通过 PATCH 操作显式设置。 如果使用 PATCH 设置 **completedDateTime，** 请确保同时将 **状态** 设置为 `completed` 。
 
-默认情况下，此操作 (POST、GET 和 [完成](../api/outlooktask-complete.md) 任务操作) UTC 格式返回与日期相关的属性。 你可以使用 `Prefer: outlook.timezone` 标头将响应中的所有与日期相关的属性都表示为与 UTC 不同的时区。
+默认情况下，此操作 (POST、GET 和 [complete](../api/outlooktask-complete.md) 任务操作) UTC 格式返回与日期相关的属性。 你可以使用 `Prefer: outlook.timezone` 标头将响应中的所有与日期相关的属性都表示为与 UTC 不同的时区。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -57,7 +57,7 @@ PATCH /users/{id|userPrincipalName}/outlook/tasks/{id}
 
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
-| 属性 | 类型 | Description |
+| 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
 |body|[itemBody](../resources/itembody.md)|通常包含有关任务的信息的任务正文。 请注意，仅支持 HTML 类型。|
 |类别|String 集合|与任务关联的类别。|
@@ -86,7 +86,7 @@ PATCH /users/{id|userPrincipalName}/outlook/tasks/{id}
 
 ### <a name="request"></a>请求
 
-以下示例修改 **dueDateTime** 属性，并使用 标头指定用东部标准时间 (EST) 中表示与日期 `Prefer: outlook.timezone` 相关的) 。
+下面的示例修改 **dueDateTime** 属性，并使用 标头指定以东部标准时间 (EST) 中响应中表示与日期 `Prefer: outlook.timezone` 相关的属性。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -120,6 +120,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-outlooktask-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-outlooktask-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

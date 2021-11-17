@@ -1,16 +1,16 @@
 ---
 title: servicePrincipal： delta
 description: 获取新建、更新或删除的服务主体，而无需执行整个资源集合的完整读取。 有关详细信息，请参阅使用增量查询。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: a878e82a591f287712231c68022874b5967cbd1b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6d5e765e20bea88b0de08845d2a2fedda0813ca8
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051940"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61033851"
 ---
 # <a name="serviceprincipal-delta"></a>servicePrincipal： delta
 
@@ -59,7 +59,7 @@ GET /servicePrincipals/delta
   * 唯一 `$filter` 受支持的表达式用于按 id： 或 跟踪特定资源的  `$filter=id+eq+{value}` 更改 `$filter=id+eq+{value1}+or+id+eq+{value2}` 。 可以指定的 ID 数受最大 URL 长度限制。
 
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | 持有者&lt;令牌&gt;|
@@ -104,6 +104,10 @@ GET https://graph.microsoft.com/beta/servicePrincipals/delta
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-delta-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-delta-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

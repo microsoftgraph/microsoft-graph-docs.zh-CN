@@ -2,15 +2,15 @@
 title: updatableAssetGroup：addMembers
 description: 将成员添加到 updatableAssetGroup。
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 5a6d7b7ca1a00a0ce3fe57579ae444bcb2f13a24
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 4a84a65e1beec2c7a0ab60c9f864d028cbd7f60e
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53441290"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61029930"
 ---
 # <a name="updatableassetgroup-addmembers"></a>updatableAssetGroup：addMembers
 命名空间：microsoft.graph.windowsUpdates
@@ -21,11 +21,11 @@ ms.locfileid: "53441290"
 
 可以将 [azureADDevice](../resources/windowsupdates-azureaddevice.md) 资源添加为成员，但不能将 **updatableAssetGroup** 资源添加为成员。
 
-将 Azure AD 设备添加为可更新资源组的成员会自动创建 **azureADDevice** 对象（如果该对象不存在）。
+将Azure AD设备添加为可更新资源组的成员会自动创建 **azureADDevice** 对象（如果该对象不存在）。
 
 您还可以使用 [addMembersById](windowsupdates-updatableassetgroup-addmembersbyid.md) 方法添加成员。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -100,6 +100,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/updatableassetgroup-addmembers-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/updatableassetgroup-addmembers-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

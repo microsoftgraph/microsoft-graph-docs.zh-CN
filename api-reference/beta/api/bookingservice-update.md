@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: f0e652e5fd4e96aba984589371fb1a95e706e1be
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 4a84a19f9af0ac8ad6144ccdf9091b94d3d4c9a7
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695221"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61005878"
 ---
 # <a name="update-bookingservice"></a>更新 bookingservice
 
@@ -57,16 +57,16 @@ PATCH /bookingBusinesses/{id}/services/{id}
 |defaultPriceType|string|服务收费的默认方式。 可取值为：`undefined`、`fixedPrice`、`startingAt`、`hourly`、`free`、`priceVaries`、`callUs`、`notSet`。|
 |defaultReminders|[bookingReminder](../resources/bookingreminder.md) 集合|此服务约会的默认提醒集。 此属性的值仅在按其 ID 读取此 **bookingService** 时可用。|
 |说明|String|服务的文本说明。|
-|displayName|字符串|服务名称。|
+|displayName|String|服务名称。|
 |emailAddress|String|电子邮件地址|
-|id|字符串| 只读。|
-|isHiddenFromCustomers|布尔值|True 表示客户无法预订此服务。|
-|isLocationOnline|布尔值|如果为 True，则表明该服务的约会将联机进行。 默认值为 false。|
+|id|String| 只读。|
+|isHiddenFromCustomers|布尔|True 表示客户无法预订此服务。|
+|isLocationOnline|布尔|如果为 True，则表明该服务的约会将联机进行。 默认值为 false。|
 |notes|String|有关此服务的其他信息。|
 |postBuffer|期限|此服务的约会结束后以及下一个客户约会可以预订之前进行缓冲的时间。|
 |preBuffer|期限|在此服务的约会可以启动之前缓冲的时间。|
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|用于确定如何创建和管理这种类型的服务的约会的策略集。|
-|smsNotificationsEnabled|布尔值|如果为 True，则表明可以针对服务约会将短信通知发送给客户。 默认值为 false。|
+|smsNotificationsEnabled|布尔|如果为 True，则表明可以针对服务约会将短信通知发送给客户。 默认值为 false。|
 |staffMemberIds|String collection|表示 [提供此服务](../resources/bookingstaffmember.md) 的员工。 |
 
 ## <a name="response"></a>响应
@@ -103,6 +103,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-bookingservice-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-bookingservice-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,16 +1,16 @@
 ---
 title: 列出 accessPackageResourceRoles
 description: 检索 accessPackageResourceRole 对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 45e8f2364997518bbc47d61906a9e3f4986e64e6
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 15bbdca1a126274f8e111f6236e2f5e35fa83f2a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53439248"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60983346"
 ---
 # <a name="list-accesspackageresourceroles"></a>列出 accessPackageResourceRoles
 
@@ -18,7 +18,7 @@ ms.locfileid: "53439248"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在[accessPackageCatalog](../resources/accesspackagecatalog.md)中检索[accessPackageResource 的 accessPackageResourceRole](../resources/accesspackageresourcerole.md)对象列表。 [](../resources/accesspackageresource.md) 资源应该已经通过创建 [accessPackageResourceRequest](accesspackageresourcerequest-post.md)添加到目录中。 然后，调用方可以使用此角色列表来选择角色，随后创建 [accessPackageResourceRoleScope 时需要此角色](accesspackage-post-accesspackageresourcerolescopes.md)。
+在[accessPackageCatalog](../resources/accesspackagecatalog.md)中检索 accessPackageResource 的[accessPackageResourceRole](../resources/accesspackageresourcerole.md)对象列表。 [](../resources/accesspackageresource.md) 资源应该已经通过创建 [accessPackageResourceRequest](accesspackageresourcerequest-post.md)添加到目录中。 然后，调用方可以使用此角色列表来选择角色，随后创建 [accessPackageResourceRoleScope](accesspackage-post-accesspackageresourcerolescopes.md)时需要此角色。
 
 ## <a name="permissions"></a>权限
 
@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 [!INCLUDE [sample-code](../includes/snippets/java/get-accesspackageresourceroles-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-accesspackageresourceroles-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -155,6 +159,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-accesspackageresourceroles2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-accesspackageresourceroles2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

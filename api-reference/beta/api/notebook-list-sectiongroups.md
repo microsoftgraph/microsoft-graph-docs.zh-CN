@@ -5,12 +5,12 @@ author: jewan-microsoft
 ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: b34a9158d2796aab4f4761fc729d85b1e474852d
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: c1dd00627b465566998794ed4dddad7588a7d7ae
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60945423"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61021810"
 ---
 # <a name="list-sectiongroups"></a>列出 sectionGroups
 
@@ -19,7 +19,7 @@ ms.locfileid: "60945423"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 从指定的笔记本 [中检索](../resources/sectiongroup.md) 分区组列表。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/beta/me/onenote/notebooks/{id}/sectionGroups
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/notebook-get-sectiongroups-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/notebook-get-sectiongroups-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

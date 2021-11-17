@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 95efd79f7ba1ce9fc244e7bd564cc2cfe0475361
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: f519dbc196e4a410ce72d6411b2e826d2877113702c9e89ad5d207ca0a641a28
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52239254"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "57279239"
 ---
 ```java
 

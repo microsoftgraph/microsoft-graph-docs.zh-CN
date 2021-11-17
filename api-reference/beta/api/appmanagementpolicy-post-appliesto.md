@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: madansr7
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: e1c95f877f3ded2849167092868535c08f9a3742
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: d17641a2e954b2b33b2306e436ee6c5fab80ebe2
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694019"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60982685"
 ---
 # <a name="assign-appliesto"></a>Assign appliesTo
 
@@ -20,7 +20,7 @@ ms.locfileid: "60694019"
 
 将 [appManagementPolicy](../resources/appManagementPolicy.md) 策略对象分配给应用程序或服务主体对象。 应用程序或服务主体通过租户范围的 [tenantAppManagementPolicy 设置采用此](../resources/tenantappmanagementpolicy.md) 策略。 只能将一个策略对象分配给应用程序或服务主体。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -92,11 +92,15 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/assign-appliesto-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/assign-appliesto-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### <a name="response"></a>响应
 
-下面介绍响应示例。
+下面展示了示例响应。
 
 <!-- {
   "blockType": "response",
@@ -142,6 +146,10 @@ POST https://graph.microsoft.com/beta/servicePrincipals/{id}/appManagementPolici
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/assign-appliesto-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/assign-appliesto-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
