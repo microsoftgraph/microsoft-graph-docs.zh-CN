@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 095bd46bd9cbd1e461a56f27cc1c78009857beb9
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: ed280038e34a02a64234113dba615830e28a784f
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60942413"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61018799"
 ---
 # <a name="cloudpcusersetting-assign"></a>cloudPcUserSetting：assign
 
@@ -20,7 +20,7 @@ ms.locfileid: "60942413"
 
 将 [cloudPcUserSetting](../resources/cloudpcusersetting.md) 分配给用户组。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -52,9 +52,9 @@ POST /deviceManagement/virtualEndpoint/userSettings/{id}/assign
 
 在请求正文中，提供 [cloudPcUserSettingAssignment](../resources/cloudpcusersettingassignment.md) 对象的 JSON 表示形式。
 
-|参数|类型|Description|
+|参数|类型|说明|
 |:---|:---|:---|
-|assignments|[cloudPcUserSettingAssignment](../resources/cloudpcusersettingassignment.md) 集合 | 要分配给相应目标组的云电脑用户设置资源的集合。 当前Microsoft 365安全组Azure AD安全组。 |
+|assignments|[cloudPcUserSettingAssignment](../resources/cloudpcusersettingassignment.md) 集合 | 要分配给相应目标组的云电脑用户设置资源的集合。 目前Microsoft 365支持Azure AD组和安全组。 |
 
 ## <a name="response"></a>响应
 
@@ -100,6 +100,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/cloudpcusersetting-assign-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/cloudpcusersetting-assign-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

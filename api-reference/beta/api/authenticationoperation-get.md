@@ -1,16 +1,16 @@
 ---
 title: 获取身份验证操作
 description: 检索 operation 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 4222931f4a3ee05f403291d5e762b67a9731a498
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 4f575d47c3f7c067fff5e9ea69473f1d7ba3434d
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047957"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60994984"
 ---
 # <a name="get-authentication-operation"></a>获取身份验证操作
 
@@ -18,7 +18,7 @@ ms.locfileid: "52047957"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 operation 对象的属性 [和](../resources/operation.md) 关系。 目前，这些操作是通过使用 reset password 方法启动密码 [重置生成的](passwordauthenticationmethod-resetpassword.md) 。 operation 对象告知调用方密码重置操作的当前状态。 可能状态包括：
+检索 operation [对象的属性和](../resources/operation.md) 关系。 目前，这些操作是通过使用重置密码方法启动 [密码重置生成的](passwordauthenticationmethod-resetpassword.md) 。 operation 对象告知调用方密码重置操作的当前状态。 可能状态包括：
 
 * NotStarted
 * 正在运行
@@ -27,11 +27,11 @@ ms.locfileid: "52047957"
 
 `Succeeded``Failed`和 是终端状态。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 权限类型                        | 自行操作的权限 (权限从最低权限级别)  | 对他人操作的权限 (权限从最低到最多特权) |
+| 权限类型                        | 自行操作的权限 (权限从最低权限权限)  | 对他人的操作权限 (权限从最低权限权限) |
 |:---------------------------------------|:-------------------------|:-----------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.Read、UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite、UserAuthenticationMethod.ReadWrite.All | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 | 不支持。 |
@@ -99,6 +99,10 @@ GET /users/{id | userPrincipalName}/authentication/operations/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-operation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-operation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

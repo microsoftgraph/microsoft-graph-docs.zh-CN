@@ -1,16 +1,16 @@
 ---
 title: 获取 educationRubric
 description: 检索 educationrubric 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: ffa86c89337d59604f588595874b5b30266bf63a
-ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
+ms.openlocfilehash: b513f6bfb0b49cae9c15b072614920710e5d1f35
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58367224"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61015482"
 ---
 # <a name="get-educationrubric"></a>获取 educationRubric
 
@@ -20,7 +20,7 @@ ms.locfileid: "58367224"
 
 检索 [educationRubric 对象的属性和](../resources/educationrubric.md) 关系。
 
-请注意，在获取工作分配 () ，返回的是下存在的原始工作分卡的不可变 `GET /education/classes/{id}/assignments/{id}/rubric` 副本 `/education/users/{id}/rubrics` 。 该副本与该特定分配相关联。
+请注意，在获取工作分配 () 时，返回的是下存在的原始工作分配的不可变 `GET /education/classes/{id}/assignments/{id}/rubric` 副本 `/education/users/{id}/rubrics` 。 该副本与该特定分配相关联。
 
 ## <a name="permissions"></a>权限
 
@@ -85,12 +85,16 @@ GET https://graph.microsoft.com/beta/education/me/rubrics/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-educationrubric-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-educationrubric-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>响应
 
-下面介绍响应示例。
+下面展示了示例响应。
 
 > [!NOTE]
 > 为了提高可读性，可能缩短了此处显示的响应对象。

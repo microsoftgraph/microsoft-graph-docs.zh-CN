@@ -1,16 +1,16 @@
 ---
 title: 删除程序
-description: 在 Azure AD 访问评审功能中，删除程序对象。
-localization_priority: Normal
+description: 在Azure AD访问评审功能中，删除程序对象。
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: be26ef2876f5aecc171bd262d41a711a0d0b0f3e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 55cc0bc31481cb9ab093a28cb9e771d44b31c6d1
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049840"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61007390"
 ---
 # <a name="delete-program"></a>删除程序
 
@@ -18,7 +18,7 @@ ms.locfileid: "52049840"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 Azure AD [访问评审](../resources/accessreviews-root.md) 功能中，删除 [程序](../resources/program.md) 对象。
+在Azure AD[访问评审](../resources/accessreviews-root.md)功能中，删除[程序](../resources/program.md)对象。
 
 不要删除仍链接到该程序的程序，应首先删除这些访问评审，或将其从该程序取消链接，并链接到 `programControl` 其他程序。  此外，请注意，无法删除内置默认程序。
 
@@ -76,6 +76,10 @@ DELETE https://graph.microsoft.com/beta/programs/7e59d237-2fb0-4e5d-b7bb-d4f9f91
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-program-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-program-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

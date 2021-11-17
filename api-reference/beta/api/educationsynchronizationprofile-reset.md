@@ -2,15 +2,15 @@
 title: 在 educationSynchronizationProfile 上重置同步
 description: 重置租户中特定学校数据同步配置文件的同步。
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 51a41991726ec9349f7f3f702973c8040031c39b
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 4ec0632122827783ef25e6145065c5faba675d27
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52664732"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61003015"
 ---
 # <a name="reset-sync-on-an-educationsynchronizationprofile"></a>在 educationSynchronizationProfile 上重置同步
 
@@ -20,7 +20,7 @@ ms.locfileid: "52664732"
 
 重置租户中特定学校数据 [同步](../resources/educationsynchronizationprofile.md) 配置文件的同步。
 
-> **注意：** 此操作将导致同步重新启动。 将删除遇到的任何错误。 不会从 Azure AD Azure Active Directory (中删除任何) 。 
+> **注意：** 此操作将导致同步重新启动。 将删除遇到的任何错误。 不会从数据中删除任何Azure Active Directory (Azure AD) 。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -73,6 +73,10 @@ POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/res
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/post-educationsynchronizationprofile-reset-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-educationsynchronizationprofile-reset-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

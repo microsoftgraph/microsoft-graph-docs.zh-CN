@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 0793681ea314b1e57080852d454f62dfb36c46eb
-ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
+ms.openlocfilehash: 1882ff5f564e9a7a15a4561b6d81fbc56c5db574
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60891093"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61026304"
 ---
 # <a name="delete-approleassignedto"></a>删除 appRoleAssignedTo
 
@@ -41,7 +41,7 @@ DELETE /servicePrincipals/{resource-SP-id}/appRoleAssignedTo/{appRoleAssignment-
 > [!NOTE]
 > 最佳做法是，建议使用此方法删除应用角色分配，而不是删除通过分配的用户、组或服务主体的[appRoleAssignments 关系删除的 appRoleAssignments](serviceprincipal-delete-approleassignments.md)方法。 
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称       | 说明|
 |:---------------|:--------|
@@ -59,7 +59,7 @@ DELETE /servicePrincipals/{resource-SP-id}/appRoleAssignedTo/{appRoleAssignment-
 
 ### <a name="request"></a>请求
 
-下面是从资源服务主体角色分配应用程序请求的示例。
+下面是从资源服务主体中删除应用程序角色分配请求的示例。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -85,6 +85,10 @@ DELETE https://graph.microsoft.com/beta/servicePrincipals/{resource-SP-id}/appRo
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-delete-approleassignedto-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-delete-approleassignedto-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

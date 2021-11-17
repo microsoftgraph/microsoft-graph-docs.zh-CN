@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 27fc7d07eb61b050f7ec969b948d823a658ff904
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: e266625cd0d217fc30f62b9ed2b0cf472466fbca
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60935695"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61004589"
 ---
 # <a name="update-page"></a>更新页面
 
@@ -19,7 +19,7 @@ ms.locfileid: "60935695"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新页面OneNote内容。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -43,7 +43,7 @@ PATCH /sites/{id}/onenote/pages/{id}/content
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供一个 [patchContentCommand](../resources/patchcontentcommand.md) 对象数组，这些对象代表对页面的更改。 有关详细信息和示例，请参阅更新OneNote[页面内容](/graph/onenote-update-page)。
+在请求正文中，提供一个 [patchContentCommand](../resources/patchcontentcommand.md) 对象数组，这些对象代表对页面的更改。 有关详细信息和示例，请参阅更新[OneNote页面内容](/graph/onenote-update-page)。
 
 ## <a name="response"></a>响应
 
@@ -85,6 +85,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-page-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-page-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

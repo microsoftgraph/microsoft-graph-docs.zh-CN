@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bf1b5faa60708a65221fd6eedb3acd9b0aebbd1f
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: d5a9d4de1cc10d1d35867cc45f529cc9f70aafdf
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60926453"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61007187"
 ---
 # <a name="list-timeoffreasons"></a>列出 timeOffReasons
 
@@ -19,7 +19,7 @@ ms.locfileid: "60926453"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 获取计划中的 [timeOffReasons](../resources/timeoffreason.md) [列表](../resources/schedule.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffReasons
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/schedule-list-timeoffreasons-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/schedule-list-timeoffreasons-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

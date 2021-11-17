@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: nmoreau
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: d974311d25fcd887cf5714e71c777fa26a2f9076
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 29414d21d939e5ac9280df9c6641a293d77eab90
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766843"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61031988"
 ---
 # <a name="searchentity-query"></a>searchEntity： query
 
@@ -22,7 +22,7 @@ ms.locfileid: "59766843"
 
 [!INCLUDE [search-api-deprecation](../../includes/search-api-deprecation.md)]
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。 
 
@@ -113,6 +113,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/search-query-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/search-query-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -164,7 +168,7 @@ Content-type: application/json
 - 搜索 [日历事件](/graph/search-concept-events)
 - 搜索 [人员](/graph/search-concept-person)
 - 搜索网站[SharePoint OneDrive (、列表和网站) ](/graph/search-concept-files)
-- 搜索[连接器 (Graph自定义) ](/graph/search-concept-custom-types)数据
+- 搜索[连接器 (Graph数据的) ](/graph/search-concept-custom-types)类型
 - [对](/graph/search-concept-sort) 搜索结果进行排序
 - 使用 [聚合](/graph/search-concept-aggregations) 优化搜索结果
 - 在 [搜索结果中启用](/graph/search-concept-speller) 拼写更正

@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: cd1c651d8d8d9bafe559551e2300da7437cf965e
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 00fe202935a202b68da020a82c306a087dae340e
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60561673"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60980881"
 ---
 # <a name="create-meetingregistrant"></a>创建 meetingRegistrant
 
@@ -33,7 +33,7 @@ ms.locfileid: "60561673"
 |:----------------|:--------------------------------------------|
 | 委派（工作或学校帐户） | OnlineMeetings.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application | OnlineMeetings.Read.All |
+| 应用程序 | OnlineMeetings.Read.All |
 
 > [!TIP]
 >
@@ -48,7 +48,7 @@ POST /users/{userId}/onlineMeetings/{id}/registration/registrants
 
 > **注意：** `userId`是会议组织者的 **objectID。**
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称            | 说明               |
 | :-------------- | :------------------------ |
@@ -66,7 +66,7 @@ POST /users/{userId}/onlineMeetings/{id}/registration/registrants
 > 响应正文将包含不同的信息，具体取决于 **allowedRegistrant 的值**。
 >
 > - 如果 **allowedRegistrant** 属性的值为 ，则 meetingRegistrant 对象中将仅返回 id 和 `organization` **joinWebUrl。** [](../resources/meetingRegistrant.md) 注册表者可以使用 **id** 取消注册，或使用 **joinWebUrl** 加入会议。
-> - 如果 **allowedRegistrant** 属性的值为 `everyone` ，将返回一个空 [meetingRegistrant](../resources/meetingRegistrant.md) 对象。 注册人需要使用他们收到的电子邮件中的链接来取消注册或加入会议。
+> - 如果 **allowedRegistrant** 属性的值为 ，将返回一个空 `everyone` [meetingRegistrant](../resources/meetingRegistrant.md) 对象。 注册人需要使用他们收到的电子邮件中的链接来取消注册或加入会议。
 
 ## <a name="examples"></a>示例
 
@@ -117,6 +117,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/add-registratrant-user-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/add-registratrant-user-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -194,6 +198,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/add-registratrant-app-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/add-registratrant-app-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

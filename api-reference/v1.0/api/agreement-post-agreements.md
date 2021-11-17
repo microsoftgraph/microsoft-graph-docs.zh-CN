@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: f978b9599b2427dc06173636cd19ead373f8c56d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e9c54f95cf3ea10f0c230ba7a47101ffd13b5e0e
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59017042"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60988700"
 ---
 # <a name="create-agreement"></a>创建协议
 
@@ -45,7 +45,7 @@ POST /identityGovernance/termsOfUse/agreements
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |displayName|String|协议的显示名称。|
-|isViewingBeforeAcceptanceRequired|Boolean|指示用户在接受之前是否必须展开和查看协议。|
+|isViewingBeforeAcceptanceRequired|布尔|指示用户在接受之前是否必须展开和查看协议。|
 |fileName|String|协议文件的名称 (例如，TOU.pdf) 。|
 |isDefault|Boolean|指示如果语言与客户端首选项匹配，这是否是默认协议文件。 如果未将任何文件标记为默认文件，则第一个文件将被视为默认文件。|
 |language|String|协议文件的语言，格式为 languagecode2-country/regioncode2。 languagecode2 是从 ISO 639-1 派生的两个字母小写代码。 country/regioncode2 派生自 ISO 3166，通常由两个小写字母或 BCP-47 语言标记 (例如 en-US) 。|
@@ -97,6 +97,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-agreement-from-agreements-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-agreement-from-agreements-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

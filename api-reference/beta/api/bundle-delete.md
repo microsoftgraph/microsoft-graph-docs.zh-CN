@@ -2,15 +2,15 @@
 author: JeremyKelley
 title: 删除捆绑包
 description: 删除 driveItems 捆绑包
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 737a5f7494ea0848e4776058e8f55b78df44e29a
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 7edd748b0e1a1298ed950ce885fb92bbfcf56064
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50774269"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60994697"
 ---
 # <a name="delete-bundle"></a>删除捆绑包
 
@@ -18,7 +18,7 @@ ms.locfileid: "50774269"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用 [id][] 删除 driveItems **捆绑包**。请注意，使用此方法删除捆绑包会永久删除捆绑包，并且不会将其移动到回收站。
+使用 [id][] 删除 driveItems **捆绑包**。请注意，使用此方法删除捆绑包会永久删除该捆绑包，并且不会将其移动到回收站。
 但是，它不会删除捆绑包引用的项目。
 它们将保留在父文件夹中。
 
@@ -44,8 +44,8 @@ DELETE /drive/items/{bundle-id}
 
 | 名称          | 说明  |
 |:------------- |:------------ |
-| Authorization | 持有者 \{token\}。 必需。 |
-| if-match      | eTag。 可选。 如果包含此请求标头，并且提供的 eTag (或 cTag) 与捆绑包上的当前标记不匹配，则返回 响应，并且 `412 Precondition Failed` 不会删除捆绑包。
+| Authorization | 持有者 \{token\}。必需。 |
+| if-match      | eTag。 可选。 如果包含此请求标头，且提供的 eTag (或 cTag) 与捆绑包上的当前标记不匹配，将返回响应，并且不会删除 `412 Precondition Failed` 捆绑包。
 
 ## <a name="request-body"></a>请求正文
 
@@ -84,6 +84,10 @@ DELETE https://graph.microsoft.com/beta/drive/items/{bundle-id}
 [!INCLUDE [sample-code](../includes/snippets/java/delete-bundle-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-bundle-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -104,7 +108,7 @@ HTTP/1.1 204 No Content
   "description": "Delete a bundle from OneDrive",
   "keywords": "delete,existing bundle,onedrive",
   "section": "documentation",
-  "tocPath": "Bundles/Delete"
+  "tocPath&quot;: &quot;Bundles/Delete"
 } -->
 
 

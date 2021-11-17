@@ -3,14 +3,14 @@ title: List device transitive groups
 description: 获取设备是其中一个成员的组。
 author: spunukol
 ms.prod: directory-management
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
-ms.openlocfilehash: cf86bfa5235ae00450e14e8c5d221bb41f60e4f2
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e54c47cbec0669d2a934e3db15e13caf74e45959
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053221"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61025849"
 ---
 # <a name="list-device-transitive-groups"></a>List device transitive groups
 
@@ -18,7 +18,7 @@ ms.locfileid: "52053221"
 
 获取设备是其中一个成员的组。 此 API 请求是可传递的，并且还将返回设备是嵌套成员的所有组。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -90,6 +90,10 @@ GET https://graph.microsoft.com/v1.0/devices/{id}/transitiveMemberOf
 [!INCLUDE [sample-code](../includes/snippets/java/get-devices-transitivememberof-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-devices-transitivememberof-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### <a name="response"></a>响应
@@ -152,7 +156,7 @@ Content-type: text/plain
 
 `294`
 
-### <a name="example-3-use-odata-cast-and-search-to-get-group-membership-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a>示例 3：使用 OData 转换和$search获取显示名称包含字母"Video"（包括返回对象计数）的组成员身份
+### <a name="example-3-use-odata-cast-and-search-to-get-group-membership-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a>示例 3：使用 OData cast 和 $search 获取显示名称中包含字母"Video"（包括返回对象计数）的组成员身份
 
 #### <a name="request"></a>请求
 
@@ -195,7 +199,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-use-odata-cast-and-filter-to-get-membership-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>示例 4：使用 OData 转换$filter获取以"A"开头显示名称（包括返回对象计数）的组成员身份
+### <a name="example-4-use-odata-cast-and-filter-to-get-membership-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>示例 4：使用 OData 转换$filter获取以"A"开头显示名称（包括返回的对象计数）的组成员身份
 
 #### <a name="request"></a>请求
 

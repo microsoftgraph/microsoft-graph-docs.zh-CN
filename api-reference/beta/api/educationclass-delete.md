@@ -1,16 +1,16 @@
 ---
 title: 删除 educationClass
 description: 删除课程。 课程也是通用组，因此删除课程时也会删除组。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 84ac58abc25a8cf0d7559179692372db9e1b936a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 74c0b33980cc70b693960439e9840505d5e07653
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48966362"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60981930"
 ---
 # <a name="delete-educationclass"></a>删除 educationClass
 
@@ -73,6 +73,10 @@ DELETE https://graph.microsoft.com/beta/education/classes/11022
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-educationclass-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-educationclass-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

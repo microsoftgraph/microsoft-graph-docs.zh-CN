@@ -1,16 +1,16 @@
 ---
 title: 列出附件
-description: 获取附加到任务任务的附件Outlook列表。
+description: 获取附加到任务任务的Outlook列表。
 author: svpsiva
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f4f530a01cbe3de350ea929078993c7c314a35dc
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 491bd15bad85e1e610f1c78aab47dc4194e86e2a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60934078"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61026542"
 ---
 # <a name="list-attachments-deprecated"></a>列出 (的附件) 
 
@@ -21,9 +21,9 @@ ms.locfileid: "60934078"
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-获取附加到任务任务的[Outlook](../resources/attachment.md)列表。
+获取附加到任务任务的[附件](../resources/attachment.md)Outlook列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/beta/users/{id}/outlook/tasks/{id}/attachments
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/outlook-task-get-attachments-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/outlook-task-get-attachments-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

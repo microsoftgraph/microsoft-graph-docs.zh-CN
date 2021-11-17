@@ -1,16 +1,16 @@
 ---
 title: synchronizationSchema： parseExpression
-description: " (。。/resources/synchronization_attributemappingsource.md) 对象。 "
-localization_priority: Normal
+description: " (../resources/synchronization_attributemappingsource.md) 对象。 "
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: d7f8ec86ae12f7aa1c6ae9620d7dbfb0f41aeebc
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 2f21bd47f61014be952b8572c28e13c027dbcf9f
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049714"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61026080"
 ---
 # <a name="synchronizationschema-parseexpression"></a>synchronizationSchema： parseExpression
 
@@ -20,9 +20,9 @@ ms.locfileid: "52049714"
 
 将给定的字符串表达式解析为 [attributeMappingSource](../resources/synchronization-attributemappingsource.md) 对象。
 
-有关表达式详细信息，请参阅在 Azure Active Directory 中编写属性[映射的Azure Active Directory。](/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings)
+有关表达式详细信息，请参阅在表达式中为属性映射[编写Azure Active Directory。](/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings)
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
@@ -53,7 +53,7 @@ POST /servicePrincipals/{id}/synchronization/templates/{id}/schema/parseExpressi
 |targetAttributeDefinition|[attributeDefinition](../resources/synchronization-attributedefinition.md) |将映射到此表达式的属性的定义。 可选。|
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [parseExpressionResponse](../resources/synchronization-parseexpressionresponse.md) 对象。
+如果成功，此方法在响应正文 `200 OK` 中返回 响应代码和 [parseExpressionResponse](../resources/synchronization-parseexpressionresponse.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -129,6 +129,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/synchronizationschema-parseexpression-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/synchronizationschema-parseexpression-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

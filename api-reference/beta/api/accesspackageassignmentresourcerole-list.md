@@ -1,16 +1,16 @@
 ---
 title: 列出 accessPackageAssignmentResourceRoles
 description: 检索 accessPackageAssignmentResourceRole 对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 23d4b5a2169c6e43bc496147d127719d111ff4f5
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: f85486079167070eea56bdea0a23a94590e61da4
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048580"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60983428"
 ---
 # <a name="list-accesspackageassignmentresourceroles"></a>列出 accessPackageAssignmentResourceRoles
 
@@ -45,7 +45,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentResourceRol
 例如，若要仅为特定用户检索访问包分配资源角色，可以包括具有面向该用户的对象 ID 的筛选器的查询 `?$expand=accessPackageSubject&$filter=accessPackageSubject/objectId+eq+'9b835e5c-bf18-4ad9-8556-9b1ea0019c6b'` 。
 
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称      |说明|
 |:----------|:----------|
@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-accesspackageassignmentresourceroles-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-accesspackageassignmentresourceroles-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

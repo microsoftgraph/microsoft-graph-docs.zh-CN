@@ -1,16 +1,16 @@
 ---
 title: 获取 namedLocation
 description: 检索 namedlocation 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 23c24915da7e269b647ffee8ac1c39dabccebc8f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6a837c30935dcecf43bf387732bed95933cfd522
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052101"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60980739"
 ---
 # <a name="get-namedlocation"></a>获取 namedLocation
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations/0
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-namedlocation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-namedlocation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
