@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: c2bcd0196ec479f261f08094908e66f4af91f487
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 85ea3783cd010fbdcd9f03da230af7239365755c
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60943995"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61029825"
 ---
 # <a name="update-agreement"></a>更新协议
 
@@ -42,7 +42,7 @@ PATCH /identityGovernance/termsOfUse/agreements/{id}
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |displayName|String|协议的显示名称。|
-|isViewingBeforeAcceptanceRequired|Boolean|用户是否必须展开和查看协议才能接受。|
+|isViewingBeforeAcceptanceRequired|布尔|用户是否必须展开和查看协议才能接受。|
 
 ## <a name="response"></a>响应
 如果成功，此方法在响应 `200 OK` 正文中返回 响应代码[](../resources/agreement.md)和更新的协议对象。
@@ -78,6 +78,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-agreement-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-agreement-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

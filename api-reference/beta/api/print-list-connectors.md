@@ -5,12 +5,12 @@ author: braedenp-msft
 ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 04d9d9de1ed12f4ffaa8b244144bc9b190218b76
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 3b7b1a0f0f16f99e8888b5c497dde7ea4ae9d323
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60926656"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61028131"
 ---
 # <a name="list-printconnectors"></a>列出 printConnectors
 
@@ -43,7 +43,7 @@ GET /print/connectors
 ### <a name="exceptions"></a>例外
 不支持某些运算符 `$count` `$search` ：、、。 `$filter`
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
 | Authorization | Bearer {token}。必需。 |
@@ -78,6 +78,10 @@ GET https://graph.microsoft.com/beta/print/connectors
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-connectors-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-connectors-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

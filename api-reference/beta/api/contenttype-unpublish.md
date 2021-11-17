@@ -5,12 +5,12 @@ description: 从内容类型中心网站取消发布内容类型。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 418baec90ea4fde2c0dc08c8e52bc264fb9485ce
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: 7919bab96dfb3503375113fc4a40d88ced0f4ab2
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60730303"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61022537"
 ---
 # <a name="contenttype-unpublish"></a>contentType：取消发布
 命名空间：microsoft.graph
@@ -18,7 +18,7 @@ ms.locfileid: "60730303"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 从内容类型中心网站取消发布[contentType。][]
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -77,6 +77,10 @@ POST https://graph.microsoft.com/beta/sites/{siteId}/contentTypes/{contentTypeId
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/contenttype-unpublish-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/contenttype-unpublish-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

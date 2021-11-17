@@ -1,16 +1,16 @@
 ---
 title: 重新启动 synchronizationJob
 description: 重新启动同步作业，强制它重新处理目录中的所有对象。 （可选）清除现有同步状态和以前的错误。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 1851af949207a00d3fd3429723397597bd51dce5
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 1b930f741c7724a55f9904595de45cfa9874db02
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787176"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61033710"
 ---
 # <a name="restart-synchronizationjob"></a>重新启动 synchronizationJob
 
@@ -88,6 +88,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/synchronizationjob-restart-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/synchronizationjob-restart-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,16 +1,16 @@
 ---
 title: reportRoot： getTeamsDeviceUsageDistributionTotalUserCounts
-description: 按设备类型获取选定时段内唯一 Microsoft Teams 许可或非许可用户的数量。
-localization_priority: Normal
+description: 按设备类型Microsoft Teams获取许可用户或非许可用户的唯一用户数。
+ms.localizationpriority: medium
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: cbb19c4aefaf31060d9c96091bbd5375f83a39ea
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: bfbbd03a7ac2dfb1fa943b7134cf193a9809476e
+ms.sourcegitcommit: 42e0e15ff90815e0126c34b928405486cfb1ed86
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51766914"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61044706"
 ---
 # <a name="reportroot-getteamsdeviceusagedistributiontotalusercounts"></a>reportRoot： getTeamsDeviceUsageDistributionTotalUserCounts
 
@@ -18,9 +18,9 @@ ms.locfileid: "51766914"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-按设备类型获取选定时段内唯一 Microsoft Teams 许可或非许可用户的数量。
+按设备类型Microsoft Teams获取许可用户或非许可用户的唯一用户数。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -30,7 +30,7 @@ ms.locfileid: "51766914"
 | 委派（个人 Microsoft 帐户） | 不支持。                           |
 | 应用                            | Reports.Read.All                         |
 
->**注意**：若要获得委派权限以允许应用代表用户读取服务使用情况报告，租户管理员必须事先为用户分配适当的 Azure AD 受限管理员角色。 有关更多详细信息，请参阅[授权 API 读取 Microsoft 365 使用情况报告](/graph/reportroot-authorization)。
+>**注意**：若要获得委派权限以允许应用代表用户读取服务使用情况报告，租户管理员必须事先为用户分配适当的 Azure AD 受限管理员角色。有关更多详细信息，请参阅 [ API 授权，读取 Microsoft 365使用情况报告](/graph/reportroot-authorization)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -81,7 +81,7 @@ CSV 文件包含下面的列标题。
 
 ### <a name="json"></a>JSON
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [teamsDeviceUsageDistributionUserCounts](../resources/teamsdeviceusagedistributionusercounts.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 JSON 对象。
 
 ## <a name="example"></a>示例
 
@@ -156,7 +156,7 @@ GET https://graph.microsoft.com/beta/reports/getTeamsDeviceUsageDistributionTota
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.teamsDeviceUsageDistributionUserCounts"
+  "@odata.type": "stream"
 } -->
 
 ```http
@@ -165,7 +165,6 @@ Content-Type: application/json
 Content-Length: 243
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.teamsDeviceUsageDistributionUserCounts)", 
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 

@@ -1,16 +1,16 @@
 ---
 title: 获取资源
 description: 检索文件或图像资源对象的二进制数据。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 762f498b8ff340ac85e292f03cd650a85742f520
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 191ebb4136321f9e8814bcf85d6d33c00c8bdbb3
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971457"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61032101"
 ---
 # <a name="get-resource"></a>获取资源
 
@@ -18,14 +18,14 @@ ms.locfileid: "48971457"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索文件或图像 [资源](../resources/onenoteresource.md) 对象的二进制数据。
-## <a name="permissions"></a>权限
+检索文件或图像资源对象的二 [进制](../resources/onenoteresource.md) 数据。
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | 请参阅 "注意，"、"注释"、"全部"、"全部"、"写"    |
-|委派（个人 Microsoft 帐户） | 注意： Read、Notes。读写    |
+|委派（工作或学校帐户） | Notes.Read、Notes.ReadWrite、Notes.Read.All、Notes.ReadWrite.All    |
+|委派（个人 Microsoft 帐户） | Notes.Read、Notes.ReadWrite    |
 |应用程序 | Notes.Read.All、Notes.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -47,7 +47,7 @@ GET /sites/{id}/onenote/resources/{id}/content
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和图像或文件二进制数据。
+如果成功，此方法在响应正文中返回 响应代码和图像或 `200 OK` 文件二进制数据。
 
 注意：图像不会直接在浏览器中呈现，因为它们需要授权才能检索它们，如页面内容的其余部分。
 ## <a name="example"></a>示例
@@ -76,6 +76,10 @@ GET https://graph.microsoft.com/beta/me/onenote/resources/{id}/content
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-resource-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-resource-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

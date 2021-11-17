@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getTeamsUserActivityUserCounts'
 description: 按活动类型Microsoft Teams许可用户数。 活动类型包括团队聊天消息、私人聊天消息、通话和会议的数量。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: c43667c435d7183c0298d99a743c5c81abd4751d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 7d2e1492f5ec5535ffb0a13bbdddaaf5b3ef4138
+ms.sourcegitcommit: 42e0e15ff90815e0126c34b928405486cfb1ed86
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055006"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61044685"
 ---
 # <a name="reportroot-getteamsuseractivityusercounts"></a>reportRoot: getTeamsUserActivityUserCounts
 
@@ -20,7 +20,7 @@ ms.locfileid: "52055006"
 
 按活动类型Microsoft Teams许可用户数。 活动类型包括团队聊天消息、私人聊天消息、通话和会议的数量。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -30,7 +30,7 @@ ms.locfileid: "52055006"
 | 委派（个人 Microsoft 帐户） | 不支持。                           |
 | 应用                            | Reports.Read.All                         |
 
-**注意**：若要获得委派权限以允许应用代表用户读取服务使用情况报告，租户管理员必须事先为用户分配适当的 Azure AD 受限管理员角色。 有关更多详细信息，请参阅[授权 API 读取 Microsoft 365 使用情况报告](/graph/reportroot-authorization)。
+**注意**：若要获得委派权限以允许应用代表用户读取服务使用情况报告，租户管理员必须事先为用户分配适当的 Azure AD 受限管理员角色。有关更多详细信息，请参阅 [ API 授权，读取 Microsoft 365使用情况报告](/graph/reportroot-authorization)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -77,7 +77,7 @@ CSV 文件包含下面的列标题。
 
 ### <a name="json"></a>JSON
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 **[teamsUserActivityUserCounts](../resources/teamsuseractivityusercounts.md)** 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 JSON 对象。
 
 ## <a name="example"></a>示例
 
@@ -155,7 +155,7 @@ GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityUserCounts(peri
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.teamsUserActivityUserCounts"
+  "@odata.type": "stream"
 } -->
 
 ```http
@@ -164,7 +164,6 @@ Content-Type: application/json
 Content-Length: 291
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.teamsUserActivityUserCounts)", 
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 

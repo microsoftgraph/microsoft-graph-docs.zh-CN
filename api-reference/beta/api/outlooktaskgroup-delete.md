@@ -2,17 +2,17 @@
 title: 删除 outlookTaskGroup
 description: 删除指定的 outlookTaskGroup。
 author: mashriv
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1128156f2df59e06600e47ca4b3d96f0cd296a10
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 693559c926e5eb4ebc9868bc68e96f353222c23d
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974790"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61023734"
 ---
-# <a name="delete-outlooktaskgroup-deprecated"></a>删除 outlookTaskGroup (弃用) 
+# <a name="delete-outlooktaskgroup-deprecated"></a>删除 outlookTaskGroup (已弃) 
 
 命名空间：microsoft.graph
 
@@ -22,7 +22,7 @@ ms.locfileid: "48974790"
 
 
 删除指定的 [outlookTaskGroup](../resources/outlooktaskgroup.md)。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -75,6 +75,10 @@ DELETE https://graph.microsoft.com/beta/me/outlook/taskgroups/AAMkADIyAAAhrbe-AA
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-outlooktaskgroup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-outlooktaskgroup-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -2,15 +2,15 @@
 title: updatableAssetGroup：removeMembers
 description: 从 updatableAssetGroup 中删除成员。
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: bd2275ce1971d341214899a5b56cecdd9c820e3c
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 5b357bd96f6d9c8fff67d13dcf06db78eb893861
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53440411"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61031232"
 ---
 # <a name="updatableassetgroup-removemembers"></a>updatableAssetGroup：removeMembers
 命名空间：microsoft.graph.windowsUpdates
@@ -21,7 +21,7 @@ ms.locfileid: "53440411"
 
 您还可以使用 [removeMembersById](windowsupdates-updatableassetgroup-removemembersbyid.md) 方法删除成员。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -96,6 +96,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/updatableassetgroup-removemembers-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/updatableassetgroup-removemembers-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

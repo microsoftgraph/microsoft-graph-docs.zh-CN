@@ -1,16 +1,16 @@
 ---
 title: application： addPassword
 description: 向应用程序添加强密码。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: fccb8989ee2a2723a34aa5d991a9d0f1795215df
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: c0b659c667ea5dde067cae93e0eeabfdd7aa4436
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50719155"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60995538"
 ---
 # <a name="application-addpassword"></a>application： addPassword
 
@@ -18,9 +18,9 @@ ms.locfileid: "50719155"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-向应用程序添加强 [密码](../resources/application.md)。
+将强密码添加到 [应用程序](../resources/application.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -47,7 +47,7 @@ POST /applications/{id}/addPassword
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 `passwordCredential` 具有以下属性的可选对象。
+在请求正文中，提供具有以下 `passwordCredential` 属性的可选对象。
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
@@ -57,7 +57,7 @@ POST /applications/{id}/addPassword
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和新 `200 OK` [passwordCredential](../resources/passwordcredential.md) 对象。 响应 **对象中的 secretText** 属性包含 Azure Active Directory 生成的强密码，长度为 16-64 个字符。 将来无法检索此密码。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和新 [passwordCredential](../resources/passwordcredential.md) 对象。 **响应对象中的 secretText** 属性包含由密码Azure Active Directory长度为 16-64 个字符的强密码。 将来无法检索此密码。
 
 ## <a name="examples"></a>示例
 
@@ -65,7 +65,7 @@ POST /applications/{id}/addPassword
 
 ### <a name="request"></a>请求
 
-下面展示了示例请求。 请求 **中** 指定的 ID 是应用程序的 **id** 属性的值，而不是 **appId 属性的值** 。 
+下面展示了示例请求。 请求 **中** 指定的 id 是应用程序的 **id** 属性的值，而不是 **appId 属性的值** 。 
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -97,6 +97,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/application-addpassword-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/application-addpassword-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -3,15 +3,15 @@ author: JeremyKelley
 description: 检索 Drive 资源的属性和关系。
 ms.date: 09/10/2017
 title: 获取驱动器
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 16d61c9285a15876e9a4d4a60304a1646e7c452a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c0a676889d96e4a1df932744e40c3fbd398b91be
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955934"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61030281"
 ---
 # <a name="get-drive"></a>获取驱动器
 
@@ -64,6 +64,10 @@ GET /me/drive
 [!INCLUDE [sample-code](../includes/snippets/java/get-drive-default-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-drive-default-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -98,6 +102,10 @@ GET /users/{idOrUserPrincipalName}/drive
 [!INCLUDE [sample-code](../includes/snippets/java/get-drive-by-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-drive-by-user-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -105,7 +113,7 @@ GET /users/{idOrUserPrincipalName}/drive
 
 | 参数名称 | 值  | 说明                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _idOrUserPrincipalName_     | string | 必需。 拥有 OneDrive 的用户对象的标识符。 |
+| _idOrUserPrincipalName_     | string | 必填。拥有 OneDrive 的用户对象的标识符。 |
 
 ## <a name="get-the-document-library-associated-with-a-group"></a>获取与组关联的文档库
 
@@ -136,6 +144,10 @@ GET /groups/{groupId}/drive
 [!INCLUDE [sample-code](../includes/snippets/java/get-drive-by-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-drive-by-group-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -143,7 +155,7 @@ GET /groups/{groupId}/drive
 
 | 参数名称 | 值  | 说明                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _groupId_      | string | 必需。 拥有文档库的组的标识符。 |
+| _groupId_      | string | 必填。拥有文档库的组的标识符。 |
 
 ## <a name="get-the-document-library-for-a-site"></a>获取某个站点的文档库
 
@@ -174,6 +186,10 @@ GET /sites/{siteId}/drive
 [!INCLUDE [sample-code](../includes/snippets/java/get-drive-by-site-id-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-drive-by-site-id-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -181,7 +197,7 @@ GET /sites/{siteId}/drive
 
 | 参数名称 | 值  | 说明                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _siteId_       | string | 必需。 包含文档库的站点的标识符。 |
+| _siteId_       | string | 必填。包含文档库的站点的标识符。 |
 
 ## <a name="get-a-drive-by-id"></a>根据 ID 获取驱动器
 
@@ -210,6 +226,10 @@ GET /drives/{driveId}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-drive-by-id-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-drive-by-id-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

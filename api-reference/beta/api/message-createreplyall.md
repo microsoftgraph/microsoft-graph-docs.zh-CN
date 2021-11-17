@@ -1,16 +1,16 @@
 ---
 title: 'message: createReplyAll'
 description: 创建草稿以 JSON 或 MIME 格式答复邮件的所有收件人
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: cef801909486fae04f958311696dbdedca14ae03
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 02825d29d3ab476c91311f9d1b700860790e2348
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52870764"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61028313"
 ---
 # <a name="message-createreplyall"></a>message: createReplyAll
 
@@ -18,7 +18,7 @@ ms.locfileid: "52870764"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建一个草稿以 JSON 或 MIME[](../resources/message.md)格式答复邮件的发件人和所有收件人。
+创建草稿以 JSON 或 MIME 格式答复[](../resources/message.md)邮件的发件人及所有收件人。
 
 使用 JSON 格式时：
 - 指定参数的 comment 或 **body** `message` 属性。 指定这两者将返回 HTTP 400 错误请求错误。
@@ -33,7 +33,7 @@ ms.locfileid: "52870764"
 
 或者， [在单个操作中全部](../api/message-replyall.md) 答复邮件。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -62,9 +62,9 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReplyA
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |注释|String|要包含的注释。可以为空字符串。|
-|message|[message](../resources/message.md)|在全部答复邮件中要更新的任何可写属性。|
+|message|[邮件](../resources/message.md)|在全部答复邮件中要更新的任何可写属性。|
 
-指定 MIME 格式的正文时，请提供 MIME 内容以及适用的 Internet 邮件头，所有邮件头在请求正文中都以 **base64** 格式进行编码。
+当指定 MIME 格式的正文时，向 MIME 内容提供适用的 Internet 邮件头，所有邮件头在请求正文中都以 **base64** 格式进行编码。
 
 ## <a name="response"></a>响应
 
@@ -114,6 +114,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/message-createreplyall-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/message-createreplyall-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,16 +1,16 @@
 ---
 title: informationProtectionLabel：evaluateClassificationResults
 description: 根据现有内容信息和分类结果评估要应用的标签。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: tommoser
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 2477924e69cf83bc15f440956de76bc3cdd4347b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 26c65411ba7ce83fdae9d6d5ac46038deea84ac3
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52040411"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61004786"
 ---
 # <a name="informationprotectionlabel-evaluateclassificationresults"></a>informationProtectionLabel：evaluateClassificationResults
 
@@ -71,7 +71,7 @@ POST /informationProtection/policy/labels/{id}/evaluateClassificationResults
 | 参数             | 类型                                                                    | 说明                                                                                                                                                                                                                                                                           |
 | :-------------------- | :---------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | contentInfo           | [contentInfo](../resources/contentInfo.md)                              | 提供有关内容格式、内容状态和作为键/值对[](../resources/keyvaluepair.md)的现有元数据的详细信息。                                                                                                                                                   |
-| classificationResults | [classificationResult](../resources/classificationresult.md) 集合 | 包含数据分类终结点返回的分类结果集。 分类信息用于根据安全与合规中心中的 Microsoft 信息保护策略标签配置Office 365标签。 |
+| classificationResults | [classificationResult](../resources/classificationresult.md) 集合 | 包含数据分类终结点返回的分类结果集。 分类信息用于根据安全与合规中心中的策略Microsoft 信息保护配置确定Office 365标签。 |
 
 ## <a name="response"></a>响应
 
@@ -128,6 +128,10 @@ User-agent: ContosoLOBApp/1.0
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/informationprotectionlabel-evaluateclassificationresults-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/informationprotectionlabel-evaluateclassificationresults-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

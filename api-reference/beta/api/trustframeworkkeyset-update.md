@@ -1,16 +1,16 @@
 ---
 title: 更新 trustFrameworkKeySet
 description: 更新 **trustFrameworkKeySet 对象** 的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c0375dbb052c061330d26120783f69d4a8327440
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 776fed000120554e749cb1b4ea283a752bb92844
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053431"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61010364"
 ---
 # <a name="update-trustframeworkkeyset"></a>更新 trustFrameworkKeySet
 
@@ -54,7 +54,7 @@ PUT /trustFramework/keySets/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和更新 `200 OK` 的 [trustFrameworkKeySet](../resources/trustframeworkkeyset.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [trustFrameworkKeySet](../resources/trustframeworkkeyset.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -111,6 +111,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-trustframeworkkeyset-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-trustframeworkkeyset-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: f97fdc92f37fc0080e76ae4c5c4cdae5db447dd7
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 3b2efb78529fe0a066ce17f1306574f5ff5f7691
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60941230"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61011065"
 ---
 # <a name="list-usercredentialusagedetails"></a>列出 userCredentialUsageDetails
 
@@ -20,7 +20,7 @@ ms.locfileid: "60941230"
 
 获取给定 [租户的 userCredentialUsageDetails](../resources/usercredentialusagedetails.md) 对象列表。 详细信息包括用户信息、重置状态和失败原因。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -44,12 +44,12 @@ GET /reports/userCredentialUsageDetails
 
 | 属性 | 说明和示例 |
 |:--------- |:----------- |
-| 功能 | 按要注册和重置 (使用率数据类型) 。 例如：`/reports/userCredentialUsageDetails?$filter=feature eq 'registration'`。 支持的筛选器运算符： `eq` |
+| 功能 | 按要注册的使用情况数据类型 (重置) 。 例如：`/reports/userCredentialUsageDetails?$filter=feature eq 'registration'`。 支持的筛选器运算符： `eq` |
 | userDisplayName | 按用户筛选显示名称。 例如：`/reports/userCredentialUsageDetails?$filter=userDisplayName eq 'Contoso'`。 支持的筛选器运算符： `eq` 和 `startswith()` 。 支持不区分大小写。 |
 | userPrincipalName  | 按用户主体名称进行筛选。 例如：`/reports/userCredentialUsageDetails?$filter=userPrincipalName eq 'Contoso'`。    支持的筛选器运算符： `eq` 和 `startswith()` 。 支持不区分大小写。 |
 | isSuccess | 按活动状态筛选。 例如：`/reports/userCredentialUsageDetails?$filter=isSuccess eq true`。 支持的筛选器运算符： `eq` 和 `orderby` 。 |
 | authMethod  | 按注册期间使用的身份验证方法进行筛选。 例如：`/reports/userCredentialUsageDetails?$filter=authMethod eq microsoft.graph.usageAuthMethod'email'`。 支持的筛选器运算符 `eq` ：。 |
-| failureReason | 按失败原因筛选 (活动是否失败) 。 例如：`/reports/userCredentialUsageDetails?$filter=failureReason eq 'Contoso'`。 支持的筛选器运算符： `eq` 和 `startswith()` 。 支持不区分大小写。 |
+| failureReason | 如果活动失败， (失败原因筛选) 。 例如：`/reports/userCredentialUsageDetails?$filter=failureReason eq 'Contoso'`。 支持的筛选器运算符： `eq` 和 `startswith()` 。 支持不区分大小写。 |
 
 
 ## <a name="request-headers"></a>请求头
@@ -98,6 +98,10 @@ GET https://graph.microsoft.com/beta/reports/userCredentialUsageDetails
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-usercredentialusagedetails-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-usercredentialusagedetails-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

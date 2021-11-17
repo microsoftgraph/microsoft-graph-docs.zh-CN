@@ -2,15 +2,15 @@
 title: 列出 mobileAppManagementPolicies
 description: 获取移动应用管理策略对象及其属性的列表。
 author: ravennMSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: e68d361673f1dd86383843a6accfcbe50427816a3da842a088479c868762b136
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e89773319d76a7048d2de1f994336ae1082182f6
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57164107"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61004680"
 ---
 # <a name="list-mobileappmanagementpolicies"></a>列出 mobileAppManagementPolicies
 
@@ -94,6 +94,10 @@ GET https://graph.microsoft.com/beta/policies/mobileAppManagementPolicies
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-mobilitymanagementpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-mobilitymanagementpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

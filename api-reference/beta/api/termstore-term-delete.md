@@ -2,15 +2,15 @@
 title: 删除术语
 description: 删除术语对象。
 author: mohitpcad
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 706ad5b9457014de236485f526db994dd8a29866
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 5923f9e960f7f4fddef89792f908f74deaa9df24
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874373"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61033612"
 ---
 # <a name="delete-term"></a>删除术语
 命名空间：microsoft.graph.termStore
@@ -78,6 +78,10 @@ DELETE https://graph.microsoft.com/beta/termStore/sets/{setId}/terms/{termId}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-term-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-term-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -2,15 +2,15 @@
 title: 创建团队合作标记
 description: 创建新的团队合作标记对象。
 author: anniecolonna
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: cc943f381d796dfa4c056c342eb5563ef59d585f
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 3e5052b5807cc0ce947caf9bcdc1313d3abdddcf
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53210036"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61017777"
 ---
 # <a name="create-teamworktag"></a>创建团队合作标记
 命名空间：microsoft.graph
@@ -52,7 +52,7 @@ POST /teams/{team-Id}/tags
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|标记的名称。 该值不能超过 40 个字符。|
-|成员| [teamworkTagMember](../resources/teamworktagmember.md) 集合 |要添加到标记的团队成员。 设置每个成员的用户标识符属性。 成员计数不应超过 25。|
+|members| [teamworkTagMember](../resources/teamworktagmember.md) 集合 |要添加到标记的团队成员。 设置每个成员的用户标识符属性。 成员计数不应超过 25。|
 
 
 
@@ -101,6 +101,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-teamworktag-from-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-teamworktag-from-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

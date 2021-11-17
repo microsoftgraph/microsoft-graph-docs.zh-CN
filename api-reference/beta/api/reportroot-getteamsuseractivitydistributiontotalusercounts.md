@@ -1,16 +1,16 @@
 ---
 title: reportRoot： getTeamsUserActivityDistributionTotalUserCounts
-description: 按活动类型获取选定时段内 Microsoft Teams 许可或非许可用户的数量。 活动类型包括团队聊天消息、私人聊天消息、通话和会议的数量。
-localization_priority: Normal
+description: 按活动类型Microsoft Teams许可证或非许可用户数。 活动类型包括团队聊天消息、私人聊天消息、通话和会议的数量。
+ms.localizationpriority: medium
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 0feb129854a6877294271d68bb8694acccfd910a
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: 87ad4531884b26d9ad598aafa8117827fceb915f
+ms.sourcegitcommit: 42e0e15ff90815e0126c34b928405486cfb1ed86
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51766910"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61044727"
 ---
 # <a name="reportroot-getteamsuseractivitydistributiontotalusercounts"></a>reportRoot： getTeamsUserActivityDistributionTotalUserCounts
 
@@ -18,9 +18,9 @@ ms.locfileid: "51766910"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-按活动类型获取选定时段内 Microsoft Teams 许可或非许可用户的数量。 活动类型包括团队聊天消息、私人聊天消息、通话和会议的数量。
+按活动类型Microsoft Teams许可证或非许可用户数。 活动类型包括团队聊天消息、私人聊天消息、通话和会议的数量。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -30,7 +30,7 @@ ms.locfileid: "51766910"
 | 委派（个人 Microsoft 帐户） | 不支持。                           |
 | 应用                            | Reports.Read.All                         |
 
->**注意**：若要获得委派权限以允许应用代表用户读取服务使用情况报告，租户管理员必须事先为用户分配适当的 Azure AD 受限管理员角色。 有关更多详细信息，请参阅[授权 API 读取 Microsoft 365 使用情况报告](/graph/reportroot-authorization)。
+>**注意**：若要获得委派权限以允许应用代表用户读取服务使用情况报告，租户管理员必须事先为用户分配适当的 Azure AD 受限管理员角色。有关更多详细信息，请参阅 [ API 授权，读取 Microsoft 365使用情况报告](/graph/reportroot-authorization)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -77,7 +77,7 @@ CSV 文件包含下面的列标题。
 
 ### <a name="json"></a>JSON
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [teamsUserActivityDistributionUserCounts](../resources/teamsuseractivitydistributionusercounts.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 JSON 对象。
 
 ## <a name="example"></a>示例
 
@@ -153,7 +153,7 @@ GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityDistributionTot
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.teamsUserActivityDistributionUserCounts"
+  "@odata.type": "stream"
 } -->
 
 ```http
@@ -162,7 +162,6 @@ Content-Type: application/json
 Content-Length: 291
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.teamsuseractivitydistributionusercounts)", 
   "value": [
     {
       "reportRefreshDate": "2020-09-01", 

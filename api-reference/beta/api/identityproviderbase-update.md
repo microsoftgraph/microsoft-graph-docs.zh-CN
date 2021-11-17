@@ -1,16 +1,16 @@
 ---
 title: 更新 identityProvider
 description: 更新 identityProvider 的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 77afe4e676f582a4a47e284f05f7f1ea509aa9d2
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: 030adb5a36c10624d205db25b48349d1e09110a9
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58667547"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61014944"
 ---
 # <a name="update-identityprovider"></a>更新 identityProvider
 命名空间：microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "58667547"
 
 更新在租户中配置的指定标识提供程序的属性。
 
-在从 identityProviderBase 派生的提供程序类型中，当前可以在 Azure AD 中更新 [socialIdentityProvider](../resources/socialidentityprovider.md) 资源。 在 Azure AD B2C 中，此操作当前可以更新 socialIdentityProvider、openIdConnectIdentityProvider 或[appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md)资源。 [](../resources/socialidentityprovider.md) [](../resources/openidconnectidentityprovider.md)
+在从 identityProviderBase 派生的提供程序类型中，当前可以在 Azure AD 中更新[socialIdentityProvider](../resources/socialidentityprovider.md)资源。 在 Azure AD B2C 中，此操作当前可以更新 socialIdentityProvider、openIdConnectIdentityProvider 或[appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md)资源。 [](../resources/socialidentityprovider.md) [](../resources/openidconnectidentityprovider.md)
 
 ## <a name="permissions"></a>权限
 
@@ -53,7 +53,7 @@ PATCH /identity/identityProviders/{id}
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，为 JSON 对象提供一个或多个属性，这些属性需要针对 Azure AD 租户中的 [socialIdentityProvider](../resources/socialidentityprovider.md) 对象进行更新。
+在请求正文中，为 JSON 对象提供一个或多个属性，这些属性需要在租户中为[socialIdentityProvider](../resources/socialidentityprovider.md) Azure AD更新。
 
 在 Azure AD B2C 中，为 JSON 对象提供一个或多个属性，这些属性需要针对 socialIdentityProvider、openIdConnectIdentityProvider 或[appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md)对象进行更新。 [](../resources/socialidentityprovider.md) [](../resources/openidconnectidentityprovider.md)
 
@@ -73,10 +73,10 @@ PATCH /identity/identityProviders/{id}
 |clientSecret|字符串|使用身份提供程序注册应用时获取的应用客户端密码。 clientSecret 依赖于 **responseType**。 <ul><li>当 **responseType** `code` 为 时，身份验证代码交换需要密码。</li><li>当 **responseType** `id_token` 为密码时不是必需的，因为没有代码交换。 直接id_token授权响应返回该错误。</li></ul>|
 |displayName|字符串|标识提供程序的显示名称。|
 |domainHint|String|域提示可用于直接跳到指定标识提供程序的登录页面，而不是让用户在可用标识提供程序列表中进行选择。|
-|claimsMapping|[claimsMapping](../resources/claimsmapping.md)|OIDC 提供程序将 ID 令牌发送回 Azure AD 后，Azure AD 需要能够将收到的令牌中的声明映射到 Azure AD 识别和使用声明。 此复杂类型捕获该映射。|
-|metadataUrl|String|OpenID 元数据文档的 URL 连接标识提供程序。 每个 OpenID 连接标识提供程序都描述一个元数据文档，其中包含执行登录所需的大部分信息。 这包括要使用的 URL 以及服务的公共签名密钥的位置等信息。 OpenID 连接元数据文档始终位于 以 结尾的终结点 `.well-known/openid-configuration` 。 提供您添加的 OpenID 连接标识提供程序的元数据 URL。|
-|responseMode|String|响应模式定义用于将数据从自定义标识提供程序发送回 Azure AD B2C 的方法。 可能的值 `form_post` `query` ：、。|
-|responseType|String|响应类型描述在首次调用自定义标识提供程序的 authorization_endpoint 时发送回的信息类型。 可能的值 `code` `id_token` `token` ：、、。|
+|claimsMapping|[claimsMapping](../resources/claimsmapping.md)|在 OIDC 提供程序将 ID 令牌发送回 Azure AD 后，Azure AD 需要能够将收到的令牌中的声明映射到 Azure AD 识别并使用的声明。 此复杂类型捕获该映射。|
+|metadataUrl|String|OpenID 元数据文档的 URL 连接提供程序。 每个 OpenID 连接标识提供程序都描述一个元数据文档，其中包含执行登录所需的大部分信息。 这包括要使用的 URL 以及服务的公共签名密钥的位置等信息。 OpenID 连接元数据文档始终位于 以 结尾的终结点 `.well-known/openid-configuration` 。 提供您添加的 OpenID 连接标识提供程序的元数据 URL。|
+|responseMode|String|响应模式定义用于将数据从自定义标识提供程序发送回 B2C Azure AD的方法。 可能的值 `form_post` `query` ：、。|
+|responseType|String|响应类型描述在首次调用自定义标识提供程序的 authorization_endpoint时发送回的信息类型。 可能的值 `code` `id_token` `token` ：、、。|
 |scope|String|范围定义要从自定义标识提供程序收集的信息和权限。|
 
 ### <a name="applemanagedidentityprovider-object"></a>appleManagedIdentityProvider 对象
@@ -95,7 +95,7 @@ PATCH /identity/identityProviders/{id}
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-update-a-specific-social-identity-provider-azure-ad-or-azure-ad-b2c"></a>示例 1：在Azure AD 或 Azure AD B2C (更新特定社会标识) 
+### <a name="example-1-update-a-specific-social-identity-provider-azure-ad-or-azure-ad-b2c"></a>示例 1：更新B2C (Azure AD或Azure AD特定) 
 
 #### <a name="request"></a>请求
 
@@ -134,6 +134,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-socialidentityprovider-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-socialidentityprovider-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -150,7 +154,7 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-update-a-specific-openid-connect-identity-provider-only-for-azure-ad-b2c"></a>示例 2：仅为 **Azure AD** B2C 连接更新特定 OpenID (标识提供程序) 
+### <a name="example-2-update-a-specific-openid-connect-identity-provider-only-for-azure-ad-b2c"></a>示例 2：仅为 连接 B2C (更新Azure AD **OpenID**) 
 
 #### <a name="request"></a>请求
 
@@ -188,6 +192,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-openidconnectprovider-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-openidconnectprovider-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -204,7 +212,7 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-3-update-a-specific-apple-identity-provider-only-for-azure-ad-b2c"></a>示例 3：仅为 **Azure** AD B2C (特定 Apple 标识提供程序) 
+### <a name="example-3-update-a-specific-apple-identity-provider-only-for-azure-ad-b2c"></a>示例 3：仅为B2C (更新Azure AD Apple 标识) 
 
 #### <a name="request"></a>请求
 
@@ -240,6 +248,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-appleidentityprovider-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-appleidentityprovider-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

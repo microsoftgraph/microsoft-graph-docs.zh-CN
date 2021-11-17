@@ -3,14 +3,14 @@ title: 为用户卸载应用
 description: 卸载指定用户的个人范围内的应用。
 author: akjo
 doc_type: apiPageType
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: e280a43ce4a79705fbb6c5816bdd8417ef05cbce
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: e890932197f2cb3bd7fe06b5ab0c4d244d2025c7
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53059358"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61004351"
 ---
 # <a name="uninstall-app-for-user"></a>为用户卸载应用
 
@@ -78,6 +78,10 @@ DELETE https://graph.microsoft.com/beta/users/5b649834-7412-4cce-9e69-176e95a394
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-delete-teamsapp-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-delete-teamsapp-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

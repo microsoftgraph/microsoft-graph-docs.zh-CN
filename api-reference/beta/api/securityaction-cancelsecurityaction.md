@@ -1,16 +1,16 @@
 ---
 title: securityAction：cancelSecurityAction
 description: 取消安全操作。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 41cec1694baa05b67791a000215f44c6cfd8c859
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 56a26b79433f0a86c09ca9364501389f025cd76c
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787231"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61020508"
 ---
 # <a name="securityaction-cancelsecurityaction"></a>securityAction：cancelSecurityAction
 
@@ -83,6 +83,10 @@ POST https://graph.microsoft.com/beta/security/securityActions/{id}/cancelSecuri
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/securityaction-cancelsecurityaction-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/securityaction-cancelsecurityaction-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

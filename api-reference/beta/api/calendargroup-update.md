@@ -5,12 +5,12 @@ author: harini84
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e1d9e56313ffe86522e89150073067b800853ce2
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 235458cec59859b4931a0a521fec52f7d7f3a4c7
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60930820"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61022691"
 ---
 # <a name="update-calendargroup"></a>更新 calendarGroup
 
@@ -41,7 +41,7 @@ PATCH /me/calendarGroups/{id}
 PATCH /users/{id | userPrincipalName}/calendarGroups/{id}
 ```
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 标头        | 值                       |
 | :------------ | :-------------------------- |
@@ -52,7 +52,7 @@ PATCH /users/{id | userPrincipalName}/calendarGroups/{id}
 
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
-| 属性 | 类型   | Description     |
+| 属性 | 类型   | 说明     |
 | :------- | :----- | :-------------- |
 | name     | String | 组名称。 |
 
@@ -95,6 +95,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-calendargroup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-calendargroup-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
