@@ -5,12 +5,12 @@ author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: f324c839646f2f503ed065fa4c65c95e7f432965
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: f96efda2deee2b81af127ec494ab7f7ef51587e2
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60947043"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61031456"
 ---
 # <a name="user-activateserviceplan"></a>user： activateServicePlan
 
@@ -52,7 +52,7 @@ POST /users/{id | userPrincipalName}/activateServicePlan
 
 在请求正文中，提供具有以下参数的 JSON 对象：
 
-| 参数 | 类型 | Description |
+| 参数 | 类型 | 说明 |
 | :--- | :--- | :--- |
 | servicePlanId | Guid | 要激活的 ServicePlan 的 PlanId。 |
 | skuId | Guid | 服务计划已打开的 SKU 的 SkuId。 |
@@ -96,6 +96,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-activateserviceplan-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-activateserviceplan-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

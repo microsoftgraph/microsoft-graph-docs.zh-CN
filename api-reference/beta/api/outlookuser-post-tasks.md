@@ -1,16 +1,16 @@
 ---
 title: 创建 outlookTask
-description: 在Outlook邮箱的默认任务组 () 和默认任务 () `My Tasks` `Tasks` 创建任务。
+description: 在Outlook邮箱的默认任务 () 和默认任务 () `My Tasks` `Tasks` 创建任务。
 ms.localizationpriority: medium
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 885cabb1422a145e32e0055309aafb810e189361
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 23e0e9f3ef40acbe9f909304acb64605db1b251f
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60935751"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61002770"
 ---
 # <a name="create-outlooktask-deprecated"></a>创建 outlookTask（已弃用）
 
@@ -21,13 +21,13 @@ ms.locfileid: "60935751"
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-在Outlook邮箱的默认任务组 () 和默认任务 () `My Tasks` `Tasks` 创建任务。
+在Outlook邮箱的默认任务 () 和默认任务 () `My Tasks` `Tasks` 创建任务。
 
 POST 方法始终忽略请求正文中 **startDateTime** 和 **dueDateTime** 的时间部分，并假定时间始终为指定时区中的午夜。
 
 默认情况下，此操作 (GET、PATCH 和 [完成](../api/outlooktask-complete.md) 任务操作) UTC 格式返回与日期相关的属性。 你可以使用 `Prefer: outlook.timezone` 标头将响应中的所有与日期相关的属性都表示为与 UTC 不同的时区。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -57,7 +57,7 @@ POST /users/{id|userPrincipalName}/outlook/tasks
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-以下示例显示标头 `Prefer: outlook.timezone` 的使用。 它创建一个任务，用东部标准时间 (EST) 表示 **startDateTime** 和 **dueDateTime，** 并包括太平洋标准时间 (PST) 标头 `Prefer` 。
+以下示例显示标头 `Prefer: outlook.timezone` 的使用。 它创建一个任务，用东部标准时间 (EST) 表示 **startDateTime** 和 **dueDateTime，** 并包括太平洋标准时间 (`Prefer` PST) 标头。
 <!-- {
   "blockType": "request",
   "name": "create_outlooktask_from_outlookuser"
@@ -95,11 +95,15 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-outlooktask-from-outlookuser-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-outlooktask-from-outlookuser-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 在请求正文中，提供 [outlookTask](../resources/outlooktask.md) 对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
-POST 方法忽略请求正文中 **startDateTime** 和 **dueDateTime** 的时间部分，并假定指定时区 EST (始终为午夜) 。
+POST 方法忽略请求正文中 **startDateTime** 和 **dueDateTime** 的时间部分，并假定指定时区 (EST) 。
 
 由于标头指定 PST，因此 POST 方法在 PST 中表示响应中所有与 `Prefer` 日期相关的属性。 特别是，对于 **startDateTime 和 dueDateTime** 属性，POST 方法将在 EST 中的午夜转换为 PST，在响应中以 PST 格式返回它们。 
 

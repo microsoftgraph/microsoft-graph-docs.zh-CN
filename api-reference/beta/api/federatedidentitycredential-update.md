@@ -1,18 +1,18 @@
 ---
-title: 更新 federatedIdentityCredential
+title: Update federatedIdentityCredential
 description: 更新 federatedIdentityCredential 对象的属性。
 author: kjyam98
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: d6be2a72ae63db2800d822274725d7b51a80143e
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 21257dd6ea2783dc083aac841a93ab5abcee4c20
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694765"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61034417"
 ---
-# <a name="update-federatedidentitycredential"></a>更新 federatedIdentityCredential
+# <a name="update-federatedidentitycredential"></a>Update federatedIdentityCredential
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -55,8 +55,8 @@ PATCH /applications/{applicationsId}/federatedIdentityCredentials/{federatedIden
 |:---|:---|:---|
 |访问群体|String collection|显示在已颁发令牌中的访问群体列表。 建议值为 `api://AzureADTokenExchange` 。 |
 |说明|String|用户提供的有关 federatedIdentityCredential 用于哪些内容的说明。 |
-|issuer|String|安全令牌服务中传入受信任颁发 (URL) 。 匹配访问令牌的颁发者声明。 例如，对于客户托管密钥方案，Azure AD是颁发者，有效值为 `https://login.microsoftonline.com/{tenantid}/v2.0` 。 颁发者和主题的值组合在应用中必须是唯一的。 |
-|subject|String|<li>对于Azure AD颁发者 `objectId` ，servicePrincipal (可以表示可) 应用的托管标识。 与此 GUID 关联的对象需要存在于租户中。</li><li>对于所有其他颁发者，一个无需额外验证的字符串</ul><br><br>颁发者和主题的值组合在应用中必须是唯一的。|
+|issuer|String|安全令牌服务策略中 (受信任颁发) 。 匹配访问令牌的颁发者声明。 例如，对于客户托管密钥方案，Azure AD是颁发者，有效值为 `https://login.microsoftonline.com/{tenantid}/v2.0` 。 颁发者和主题的值组合在应用中必须是唯一的。 |
+|subject|String|<li>对于Azure AD颁发者，servicePrincipal (可以表示可) `objectId` 应用的托管标识。 与此 GUID 关联的对象需要存在于租户中。</li><li>对于所有其他颁发者，一个无需额外验证的字符串</ul><br><br>颁发者和主题的值组合在应用中必须是唯一的。|
 
 
 
@@ -102,6 +102,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-federatedidentitycredential-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-federatedidentitycredential-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,32 +1,32 @@
 ---
-title: 删除 workforceIntegration
-description: 删除 workforceIntegration 的实例。
-localization_priority: Normal
+title: 删除工作人员集成
+description: 删除一个 workforceIntegration 实例。
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 66a6d587148611d4f6ff9fba18d48e60bfe75622
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: bdcea81aa5985ceebfa6a40c5c2597a8835d1e6b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970743"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61029902"
 ---
-# <a name="delete-workforceintegration"></a>删除 workforceIntegration
+# <a name="delete-workforceintegration"></a>删除工作人员集成
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除 [workforceIntegration](../resources/workforceintegration.md)的实例。
+删除一个 [员工集成 实例](../resources/workforceintegration.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | WorkforceIntegration |
+| 委派（工作或学校帐户）     | WorkforceIntegration.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | 不支持。 |
 
@@ -81,6 +81,10 @@ DELETE https://graph.microsoft.com/beta/teamwork/workforceIntegrations/{workforc
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-workforceintegration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-workforceintegration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

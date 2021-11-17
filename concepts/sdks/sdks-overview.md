@@ -4,12 +4,12 @@ description: 说明 SDK 已经可用，以及 SDK 所支持的平台及其对于
 ms.localizationpriority: medium
 author: MichaelMainer
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: d68f0c896daae9f65d734cbf73649721b851857f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: eeeff1427c5630aed85e0f6cc8827cd81aef05b2
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59142360"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60995823"
 ---
 # <a name="microsoft-graph-sdks-overview"></a>Microsoft Graph SDK 概述
 
@@ -19,9 +19,6 @@ Microsoft Graph SDK 目的是简化设计访问 Microsoft Graph 的优质、高�
 
 核心库提供一系列功能，能够改善使用所有 Microsoft Graph 服务的工作体验。 嵌入式支持重试处理、安全重定向、透明身份验证和有效负载压缩，操作难度保持不变，既能提高应用程序与 Microsoft Graph 的交互质量，又可以让你完全掌控一切。 核心库同时支持普通任务，如翻阅收藏和创建批处理请求。
 
-> [!VIDEO https://www.youtube-nocookie.com/embed/hDnsd2nJf88]
-
-
 ## <a name="supported-platforms"></a>支持的平台
 
 SDK 当前支持以下语言和平台：
@@ -29,6 +26,7 @@ SDK 当前支持以下语言和平台：
 - [Android](https://developer.microsoft.com/en-us/graph/get-started/android)
 - [Angular](https://developer.microsoft.com/en-us/graph/get-started/angular)
 - [ASP.NET](https://developer.microsoft.com/en-us/graph/get-started/asp.net)
+- [转到 (预览) ](https://github.com/microsoftgraph/msgraph-sdk-go)
 - [iOS](https://developer.microsoft.com/en-us/graph/get-started/ios)
 - [Javascript](https://developer.microsoft.com/en-us/graph/get-started/javascript)
 - [Node.js](https://developer.microsoft.com/en-us/graph/get-started/node.js)

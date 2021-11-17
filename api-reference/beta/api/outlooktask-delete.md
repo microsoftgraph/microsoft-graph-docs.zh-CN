@@ -1,18 +1,18 @@
 ---
 title: 删除 outlookTask
-description: 删除用户邮箱中的指定 Outlook 任务。
-localization_priority: Normal
+description: 删除Outlook邮箱中的指定任务。
+ms.localizationpriority: medium
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 42dbfd011b9bc0bd50ef91049767c27016f0d9b9
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1faa080b4fb730404398b09e022211d9feed29a6
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48951504"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61018316"
 ---
-# <a name="delete-outlooktask-deprecated"></a>删除 outlookTask (弃用) 
+# <a name="delete-outlooktask-deprecated"></a>删除 outlookTask (已弃) 
 
 命名空间：microsoft.graph
 
@@ -21,7 +21,7 @@ ms.locfileid: "48951504"
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-删除用户邮箱中的指定 Outlook 任务。
+删除Outlook邮箱中的指定任务。
 
 ## <a name="permissions"></a>权限
 
@@ -85,6 +85,10 @@ DELETE https://graph.microsoft.com/beta/me/outlook/tasks/AAMkADIyAAAhrb_QAAA=
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-outlooktask-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-outlooktask-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

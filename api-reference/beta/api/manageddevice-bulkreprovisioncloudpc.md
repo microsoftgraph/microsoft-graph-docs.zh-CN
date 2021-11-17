@@ -5,12 +5,12 @@ author: RuiHou105
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 64a678a0c5d555216e7d78367788c31dfc043715
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 2c98d596fad136245eae59daef954256f7045ad1
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59507910"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61030057"
 ---
 # <a name="manageddevice-bulkreprovisioncloudpc"></a>managedDevice：bulkReprovisionCloudPc
 
@@ -54,7 +54,7 @@ POST /deviceManagement/managedDevices/bulkReprovisionCloudPc
 
 下表显示批量重新设置一组云电脑设备时所需的属性。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |managedDeviceIds|集合（字符串）|云电脑设备的 ID。|
 
@@ -96,6 +96,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/manageddevice-bulkreprovisioncloudpc-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/manageddevice-bulkreprovisioncloudpc-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

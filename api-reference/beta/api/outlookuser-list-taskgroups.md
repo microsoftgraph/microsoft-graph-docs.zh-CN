@@ -5,14 +5,14 @@ ms.localizationpriority: medium
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: dd48a97dd62ef0639d398a457720a22fab4f8f78
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: a844deae33b9a478776415ab82d98e1210c1727e
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60943253"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61011338"
 ---
-# <a name="list-taskgroups-deprecated"></a>列出已 (的任务组) 
+# <a name="list-taskgroups-deprecated"></a>列出已 (taskGroups) 
 
 命名空间：microsoft.graph
 
@@ -24,7 +24,7 @@ ms.locfileid: "60943253"
 获取Outlook邮箱中所有任务组。
 
 该响应始终包括默认任务组 `My Tasks` ，以及已在邮箱中创建的其他任何任务组。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -79,6 +79,10 @@ GET https://graph.microsoft.com/beta/me/outlook/taskGroups
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-taskgroups-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-taskgroups-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

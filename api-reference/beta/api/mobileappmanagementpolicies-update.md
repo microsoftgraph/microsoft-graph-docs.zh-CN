@@ -2,15 +2,15 @@
 title: 更新 mobileAppManagementPolicy
 description: 更新移动应用管理策略对象的属性。
 author: ravennMSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 06e52397e879148ca9a30ec840e507ab7dff3aaddd8366e1fccde3ecdd7ec40a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 71dadfa45b09ec40e3ffa43720e2e7e42a55f770
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57221372"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61011680"
 ---
 # <a name="update-mobileappmanagementpolicy"></a>更新 mobileAppManagementPolicy
 
@@ -57,7 +57,7 @@ PATCH /policies/mobileAppManagementPolicies/{id}
 |属性|类型|说明|
 |:---|:---|:---|
 |appliesTo|policyScope|确定此策略设置应用于的组。 可能的值是 `none` `all` `selected` **：、、重要：** `selected` 指定此属性时不能使用。 使用 [includedGroups](../api/mobileappmanagementpolicies-post-includedgroups.md) 添加特定组。|
-|complianceUrl|字符串|移动管理应用程序的合规性 URL|
+|complianceUrl|String|移动管理应用程序的合规性 URL|
 |discoveryUrl|String|移动管理应用程序的发现 URL|
 |termsOfUseUrl|String|移动管理应用程序的使用条款 URL|
 
@@ -102,6 +102,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-mobilitymanagementpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-mobilitymanagementpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

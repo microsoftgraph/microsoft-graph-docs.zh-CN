@@ -5,12 +5,12 @@ author: namkedia
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 5b34adde1f0a76197d810f78f6b0372830bc8368
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 3fdbe8df8da6267feed391ec2a3456b3095f7341
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59765017"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61002706"
 ---
 # <a name="delete-samlorwsfedexternaldomainfederation"></a>删除 samlOrWsFedExternalDomainFederation
 命名空间：microsoft.graph
@@ -29,7 +29,7 @@ ms.locfileid: "59765017"
 |委派（个人 Microsoft 帐户）| 不支持。|
 |应用程序|Domain.ReadWrite.All|
 
-工作或学校帐户需要属于以下 Azure [AD Azure Active Directory (角色) 之一](/azure/active-directory/roles/permissions-reference)：
+工作或学校帐户需要属于以下角色Azure Active Directory (Azure AD) [之一](/azure/active-directory/roles/permissions-reference)：
 
 * 全局管理员
 * 外部标识提供程序管理员
@@ -88,6 +88,10 @@ DELETE https://graph.microsoft.com/beta/directory/federationConfigurations/96db0
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-samlorwsfedexternaldomainfederation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-samlorwsfedexternaldomainfederation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

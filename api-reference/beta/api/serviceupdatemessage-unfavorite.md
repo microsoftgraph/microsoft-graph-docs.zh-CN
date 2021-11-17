@@ -2,15 +2,15 @@
 title: serviceUpdateMessage：unfavorite
 description: 删除已登录用户的 serviceUpdateMessage 的收藏夹状态。
 author: payiAzure
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 16196a28b5d637c813b7492e1ca480607b7f66b4
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: fc463d8f9aeeff6c1cd34964fe6235eaa9c1d0da
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53209294"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61002391"
 ---
 # <a name="serviceupdatemessage-unfavorite"></a>serviceUpdateMessage：unfavorite
 命名空间：microsoft.graph
@@ -89,6 +89,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/serviceupdatemessage-unfavorite-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/serviceupdatemessage-unfavorite-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

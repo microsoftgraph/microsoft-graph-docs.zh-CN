@@ -1,16 +1,16 @@
 ---
 title: 删除 printerShare
-description: 删除打印机共享 (共享关联打印机) 。 此操作无法撤消。 如果将来再次共享打印机，则之前安装该打印机的所有 Windows 用户都需要发现并重新安装它。
+description: 删除打印机共享 (取消共享关联的打印机) 。 此操作无法撤消。 如果以后再次共享打印机，则Windows安装该打印机的任何用户都需要发现并重新安装它。
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: b500be46b0667326e62426fb7ff50ec076e47631
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2c4567986467613b6a05e2989697a5f841198979
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979759"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60997084"
 ---
 # <a name="delete-printershare"></a>删除 printerShare
 
@@ -18,12 +18,12 @@ ms.locfileid: "48979759"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除打印机共享 (共享关联 [打印机](../resources/printer.md)) 。 此操作无法撤消。 如果将来再次共享 [打印机](../resources/printer.md) ，则之前安装该 [打印机](../resources/printer.md) 的所有 Windows 用户都需要发现并重新安装该打印机。
+删除打印机共享 (取消共享关联的[打印机) 。](../resources/printer.md) 此操作无法撤消。 如果[以后](../resources/printer.md)再次共享打印机，则Windows安装该打印机的任何用户都需要发现并重新安装它。 [](../resources/printer.md)
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅，以及下表中列出的权限。 登录用户必须是 [打印机管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
+若要使用通用打印服务，除了下表中列出的权限之外，用户或应用的租户还必须具有活动的通用打印订阅。 登录的用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
@@ -74,6 +74,10 @@ DELETE https://graph.microsoft.com/beta/print/shares/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-printershare-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-printershare-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

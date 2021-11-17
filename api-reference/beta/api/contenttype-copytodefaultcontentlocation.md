@@ -5,12 +5,12 @@ description: 将文件复制到内容类型中的默认内容位置。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 176249e2e26054ca32a46051ec3c6c41e2e85cbe
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: c01349a14f6746fb034a539ed4a5ba86a0b4aed6
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60730310"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61028783"
 ---
 # <a name="contenttype-copytodefaultcontentlocation"></a>contentType：copyToDefaultContentLocation
 命名空间：microsoft.graph
@@ -18,7 +18,7 @@ ms.locfileid: "60730310"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 将文件复制到内容类型中的默认 [内容位置][contentType]。 然后，可以通过 POST 操作将该文件添加为默认文件或模板。
 
-## <a name="permissions"></a>权限  
+## <a name="permissions"></a>Permissions  
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -103,6 +103,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/contenttype-copytodefaultcontentlocation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/contenttype-copytodefaultcontentlocation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

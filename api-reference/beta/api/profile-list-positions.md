@@ -1,16 +1,16 @@
 ---
 title: 列出位置
 description: 检索 workPosition 对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 8dbdd6cc98122abbe51cf939be7c44052bd10326
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 24232179301e34ffc9d799e7c8c3bc15efc51aa5
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52037191"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61027976"
 ---
 # <a name="list-positions"></a>列出位置
 
@@ -20,7 +20,7 @@ ms.locfileid: "52037191"
 
 从用户配置文件中检索 [workPosition](../resources/workposition.md) 对象 [的列表](../resources/profile.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -45,7 +45,7 @@ GET /users/{id | userPrincipalName}/profile/positions
 
 |名称            |值    |说明                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|$filter         |string   |将响应限制到仅包含指定条件的对象。                                                                                             |
+|$filter         |string   |将响应范围限定为仅包含指定条件的对象。                                                                                             |
 |$orderby        |string   |默认情况下，响应中的对象按查询中的 createdDateTime 值进行排序。 可以使用 参数更改响应 `$orderby` 的顺序。|
 |$select         |string   |要在响应中添加的属性列表（以逗号分隔）。为获得最佳结果，请仅选择所需属性的子集。                                        |
 |$skip           |int      |跳过前 n 个结果，可用于分页。                                                                                                                                |
@@ -94,6 +94,10 @@ GET https://graph.microsoft.com/beta/me/profile/positions
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-positions-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-positions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
