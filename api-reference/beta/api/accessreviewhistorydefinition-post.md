@@ -2,15 +2,15 @@
 title: 创建 accessReviewHistoryDefinition
 description: 创建新的 accessReviewHistoryDefinition 对象。
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: f266276fae151bd8cc31455c4fd69eab193dd440
-ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
+ms.openlocfilehash: 80f7010e2d8d99038041420ed74a24bb5e2e4a67
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629220"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60987908"
 ---
 # <a name="create-accessreviewhistorydefinition"></a>创建 accessReviewHistoryDefinition
 
@@ -20,7 +20,7 @@ ms.locfileid: "52629220"
 
 创建新的 [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -58,13 +58,13 @@ POST /identityGovernance/accessReviews/historyDefinitions
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName | String  | 访问评审历史记录数据收集的名称。 必需。 |
-|reviewHistoryPeriodStartDateTime  | DateTimeOffset  | 时间戳、在此日期当天或之后开始审阅将包含在提取的历史记录数据中。 必需。  |
+|reviewHistoryPeriodStartDateTime  | DateTimeOffset  | 时间戳、在此日期或之后开始审阅将包含在提取的历史记录数据中。 必需。  |
 |reviewHistoryPeriodEndDateTime  | DateTimeOffset  | 时间戳、在此日期或之前开始审阅将包含在提取的历史记录数据中。 必需。  |
 |scopes|[accessReviewQueryScope](../resources/accessreviewqueryscope.md) 集合| 用于筛选包含在提取的历史记录数据中的审阅。 获取其范围与提供的范围匹配的审阅。 必需。 <br> 有关详细信息，请参阅 [accessReviewHistoryDefinition 支持的作用域查询](#supported-scope-queries-for-accessreviewhistorydefinition)。 |
 
 ### <a name="supported-scope-queries-for-accessreviewhistorydefinition"></a>accessReviewHistoryDefinition 支持的范围查询
 
-[accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md)的 **scopes** 属性基于 **accessReviewQueryScope，** 这是一种允许您在查询属性中配置不同 **资源** 的资源。 这些资源随后表示历史记录定义的范围，并指示创建历史记录定义时生成的可下载 CSV 文件中包含的查看历史记录数据的类型。
+[accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md)的 **scopes** 属性基于 **accessReviewQueryScope，** 这是一种允许你在查询属性中配置不同 **资源** 的资源。 这些资源随后表示历史记录定义的范围，并指示创建历史记录定义时生成的可下载 CSV 文件中包含的查看历史记录数据的类型。
 
 对查询 **属性使用以下格式** ：
 
@@ -72,7 +72,7 @@ POST /identityGovernance/accessReviews/historyDefinitions
 /identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '{object}')
 ```
 
-的值 `{object}` 是可以在 **accessReviewScheduleDefinition 中配置的资源之一**。 例如，以下内容包括单个组上的每个 accessReviewScheduleDefinition 审阅结果 (并排除作用域为具有来宾用户的所有 Microsoft 365 组的定义) 。
+的值 `{object}` 是可以在 **accessReviewScheduleDefinition 中配置的资源之一**。 例如，以下内容包括单个组上的每个 accessReviewScheduleDefinition 审阅结果 (并排除作用域为具有来宾用户的所有 Microsoft 365 组) 。
 
 ```http
 /identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')
@@ -141,6 +141,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-accessreviewhistorydefinition-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-accessreviewhistorydefinition-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

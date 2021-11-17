@@ -1,16 +1,16 @@
 ---
 title: Reset accessReview
-description: 在 Azure AD 访问评审功能中，重置当前处于活动状态的 accessReview 的决策。  目标对象可以是一次性访问评审，也可以作为定期访问评审的实例。  不再记录以前的决策，但审阅者可以继续更新决策。
-localization_priority: Normal
+description: 在Azure AD评审"功能中，重置当前处于活动状态的 accessReview 的决策。  目标对象可以是一次性访问评审，也可以作为定期访问评审的实例。  不再记录以前的决策，但审阅者可以继续更新决策。
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 3005c6b8c3fbed81e89de62ff1e3e756cce6bd4a
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: df6227a3035991a5673e9a640e3fc0b31f673374
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751027"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60992206"
 ---
 # <a name="reset-accessreview"></a>Reset accessReview
 
@@ -18,9 +18,9 @@ ms.locfileid: "52751027"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 Azure AD [访问评审](../resources/accessreviews-root.md) 功能中，重置当前处于活动状态的 [accessReview 的决策](../resources/accessreview.md)。  目标对象可以是一次性访问评审，也可以作为定期访问评审的实例。  不再记录以前的决策，但审阅者可以继续更新决策。
+在Azure AD[访问评审](../resources/accessreviews-root.md)功能中，重置当前处于活动状态[的 accessReview 的决策](../resources/accessreview.md)。  目标对象可以是一次性访问评审，也可以作为定期访问评审的实例。  不再记录以前的决策，但审阅者可以继续更新决策。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
@@ -71,6 +71,10 @@ POST https://graph.microsoft.com/beta/accessReviews/2975E9B5-44CE-4E71-93D3-30F0
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/reset-accessreview-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/reset-accessreview-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

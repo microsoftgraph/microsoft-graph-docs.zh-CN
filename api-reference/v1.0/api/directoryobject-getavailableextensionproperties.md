@@ -5,19 +5,19 @@ author: sureshja
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 3eddbcad2a944fe7977faec4bfd3572c9b1465fe
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 2a43386a3f1e0d409eaa464c903b48f55bf1eaba
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60931877"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60973996"
 ---
 # <a name="directoryobject-getavailableextensionproperties"></a>directoryObject： getAvailableExtensionProperties
 命名空间：microsoft.graph
 
 返回已在目录中注册的目录扩展属性的所有或经过筛选的列表。 以下实体支持扩展属性：user、group、organization、device、application和 **servicePrincipal**。    
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -47,9 +47,9 @@ POST /directoryObjects/getAvailableExtensionProperties
 
 下表显示了可用于此操作的参数。
 
-|参数|类型|Description|
+|参数|类型|说明|
 |:---|:---|:---|
-|isSyncedFromOnPremises|Boolean|`true` 指定仅返回从本地目录同步的扩展属性; `false` 指定仅返回未从本地目录同步的扩展属性。 如果省略参数，则返回 (同步和非同步) 属性。|
+|isSyncedFromOnPremises|布尔|`true` 指定仅返回从本地目录同步的扩展属性; `false` 指定仅返回未从本地目录同步的扩展属性。 如果省略参数，则返回 (同步和非同步) 属性。|
 
 
 ## <a name="response"></a>响应
@@ -88,6 +88,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/directoryobject-getavailableextensionproperties-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/directoryobject-getavailableextensionproperties-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

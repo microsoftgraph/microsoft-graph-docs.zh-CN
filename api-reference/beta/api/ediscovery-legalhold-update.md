@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mahage-msft
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 44fd89ca07af71959093d1c7c05aac0b87e9a59f
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 726f0d571a71e526e117e5d4e42a710f8aea8979
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60925578"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60986696"
 ---
 # <a name="update-legalhold"></a>更新 legalHold
 
@@ -20,7 +20,7 @@ ms.locfileid: "60925578"
 
 更新 [legalHold 对象](../resources/ediscovery-legalhold.md) 的属性。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -52,10 +52,10 @@ PATCH /compliance/ediscovery/cases/{caseId}/legalHolds/{legalholdId}
 
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |contentQuery|String|指定要位于指定位置的内容的 KQL 查询。 有关电子数据展示中的 KQL 详细信息，请参阅内容搜索和电子数据展示的关键字查询 [和搜索条件](/microsoft-365/compliance/keyword-queries-and-search-conditions)。 若要保留指定位置中所有的内容，请保留 **contentQuery** 为空。 |
-|description|String| 法定保留说明。 |
+|说明|String| 法定保留说明。 |
 |displayName|String| 法定显示名称的保留项。 |
 |isEnabled|Boolean|指示是否启用保留并主动保留内容。 |
 
@@ -97,6 +97,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-legalhold-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-legalhold-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

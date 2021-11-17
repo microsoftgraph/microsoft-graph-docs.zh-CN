@@ -2,15 +2,15 @@
 author: kevklam
 title: 授予权限
 description: 授予使用指定链接的用户列表访问权限
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 6aeecf4d3f12974457d0ceccd725c551f4cc5c7d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3938d0c7fb1618538fcce12afce71bf11af03b9a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050071"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60985787"
 ---
 # <a name="permission-grant"></a>permission： grant
 
@@ -61,7 +61,7 @@ POST /shares/{encoded-sharing-url}/permission/grant
 
 | 参数          | 类型                           | 说明
 |:-------------------|:-------------------------------|:-------------------------
-| recipients         | [driveRecipient (集合][])  | 将接收访问权限的收件人的集合。
+| recipients         | collection ([driveRecipient][])  | 将接收访问权限的收件人的集合。
 | 角色              | 集合（字符串）             | 如果链接是"现有访问"链接，则指定要授予用户的角色。 否则，必须与链接的角色匹配。
 
 有关可用角色的列表，请参阅 [roles 属性值](../resources/permission.md#roles-property-values)。
@@ -115,6 +115,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/permission-grant-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/permission-grant-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -218,7 +222,7 @@ Content-type: application/json
 
 [driveRecipient]: ../resources/driverecipient.md
 [error-response]: /graph/errors
-[permission]: ../resources/permission.md
+[权限]: ../resources/permission.md
 [sharing-link]: ../resources/sharinglink.md
 
 <!-- {

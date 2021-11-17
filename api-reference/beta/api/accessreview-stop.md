@@ -1,16 +1,16 @@
 ---
 title: Stop accessReview
-description: 在 Azure AD 访问评审功能中，停止当前处于活动状态的 accessReview。  目标对象可以是一次性访问评审，也可以作为定期访问评审的实例。   (若要阻止定期访问评审启动将来的实例，请更新该检查以更改其计划的结束日期) 。  在访问评审停止后，审阅者无法再提供输入，并且可以应用访问评审决策。
-localization_priority: Normal
+description: 在Azure AD访问评审功能中，停止当前处于活动状态的 accessReview。  目标对象可以是一次性访问评审，也可以作为定期访问评审的实例。   (若要阻止定期访问评审启动将来的实例，请更新该检查以更改其计划的结束日期) 。  在访问评审停止后，审阅者无法再提供输入，并且可以应用访问评审决策。
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 9ca0dffdc48e059e303e05afac791a8d431f5600
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 487ab54eb9cfa5fd5788af1f4dc5b35078f6294a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751013"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60992164"
 ---
 # <a name="stop-accessreview"></a>Stop accessReview
 
@@ -18,8 +18,8 @@ ms.locfileid: "52751013"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 Azure AD [访问评审](../resources/accessreviews-root.md) 功能中，停止当前处于活动状态 [的 accessReview](../resources/accessreview.md)。  目标对象可以是一次性访问评审，也可以作为定期访问评审的实例。   (若要阻止定期访问评审启动将来的实例，请更新该检查以更改[](accessreview-update.md)其计划的结束日期) 。  在访问评审停止后，审阅者无法再提供输入，并且可以应用访问评审决策。
-## <a name="permissions"></a>权限
+在Azure AD[访问评审](../resources/accessreviews-root.md)功能中，停止当前处于活动状态[的 accessReview](../resources/accessreview.md)。  目标对象可以是一次性访问评审，也可以作为定期访问评审的实例。   (若要阻止定期访问评审启动将来的实例，请更新该检查以更改[](accessreview-update.md)其计划的) 。  在访问评审停止后，审阅者无法再提供输入，并且可以应用访问评审决策。
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
@@ -70,6 +70,10 @@ POST https://graph.microsoft.com/beta/accessReviews/2975E9B5-44CE-4E71-93D3-30F0
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/stop-accessreview-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/stop-accessreview-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

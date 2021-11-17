@@ -1,16 +1,16 @@
 ---
 title: 列出 accessReview 决策
-description: 在 Azure AD 访问评审功能中，检索 accessReview 对象的决策。
-localization_priority: Normal
+description: 在Azure AD评审功能中，检索 accessReview 对象的决策。
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 23813096fb625e9598347bde0628c7dd6f407296
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 7c44ea96917962bf6ef35951a245093bea53d050
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751109"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60988097"
 ---
 # <a name="list-accessreview-decisions"></a>列出 accessReview 决策
 
@@ -18,7 +18,7 @@ ms.locfileid: "52751109"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 Azure AD [访问评审](../resources/accessreviews-root.md) 功能中，检索 [accessReview 对象](../resources/accessreview.md) 的决策。
+在Azure AD[评审](../resources/accessreviews-root.md)功能中，检索[accessReview 对象](../resources/accessreview.md)的决策。
 
 请注意，定期访问评审 **将没有决策** 关系。  相反，调用方必须导航 **实例** 关系以查找访问评审的当前或过去实例的 [accessReview](../resources/accessreview.md) 对象。
 
@@ -75,6 +75,10 @@ GET https://graph.microsoft.com/beta/accessReviews/2b83cc42-09db-46f6-8c6e-16fec
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-accessreview-decisions-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-accessreview-decisions-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

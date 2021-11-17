@@ -1,16 +1,16 @@
 ---
 title: 更新 accessReview
-description: 在 Azure AD 访问评审功能中，更新现有 accessReview 对象以更改其一个或多个属性。
-localization_priority: Normal
+description: 在Azure AD查看功能中，更新现有 accessReview 对象以更改其一个或多个属性。
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 817cf535c68a775c7a90a639e09120e226c46115
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 112d341d2be082d04041dcee50a66ba85af37ebc
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751006"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60987998"
 ---
 # <a name="update-accessreview"></a>更新 accessReview
 
@@ -18,7 +18,7 @@ ms.locfileid: "52751006"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 Azure AD [访问评审](../resources/accessreviews-root.md) 功能中，更新现有 [accessReview](../resources/accessreview.md) 对象以更改其一个或多个属性。
+在Azure AD[查看](../resources/accessreviews-root.md)功能中，更新现有[accessReview](../resources/accessreview.md)对象以更改其一个或多个属性。
 
 此 API 不用于更改审阅者或审阅决策。  若要更改审阅者，请使用 [addReviewer](accessreview-addreviewer.md) 或 [removeReviewer](accessreview-removereviewer.md) API。  若要停止已启动的一次性审阅或已启动的定期审阅实例，请尽早使用 [停止](accessreview-stop.md) API。 若要将决策应用于目标组或应用访问权限，请使用 [应用](accessreview-apply.md) API。 
 
@@ -50,7 +50,7 @@ PATCH /accessReviews/{reviewId}
 | 属性      | 类型           | 说明                                                                                                |
 |:--------------|:---------------|:-----------------------------------------------------------------------------------------------------------|
 | displayName   | String         | 访问评审名称。                                                                                    |
-| startDateTime | DateTimeOffset | 计划开始审阅的 DateTime。  这必须是将来的日期。                 |
+| startDateTime | DateTimeOffset | 计划启动审阅的 DateTime。  这必须是将来的日期。                 |
 | endDateTime   | DateTimeOffset | 计划结束审阅的 DateTime。 这必须至少比开始日期晚一天。 |
 | 说明   | String         | 向审阅者显示的说明。                                                                 |
 
@@ -94,6 +94,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-accessreview-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-accessreview-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

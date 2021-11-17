@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 783b87f4bcbe02e99560e2c75ec052a0ec06fc11
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 49a57a3e9c56b79ebe41ee9186d03fd9969a8e9b
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48620676"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58513038"
 ---
 ```objc
 
@@ -17,11 +17,24 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphDirectorySetting *directorySetting = [[MSGraphDirectorySetting alloc] init];
-[directorySetting setTemplateId:@"templateId-value"];
+[directorySetting setDisplayName:@"Group.Unified"];
+[directorySetting setTemplateId:@"62375ab9-6b52-47ed-826b-58e47e0e304b"];
 NSMutableArray *valuesList = [[NSMutableArray alloc] init];
 MSGraphSettingValue *values = [[MSGraphSettingValue alloc] init];
-[values setName:@"name-value"];
-[values setValue:@"value-value"];
+[values setName:@"GuestUsageGuidelinesUrl"];
+[values setValue:@"https://privacy.contoso.com/privacystatement"];
+[valuesList addObject: values];
+MSGraphSettingValue *values = [[MSGraphSettingValue alloc] init];
+[values setName:@"EnableMSStandardBlockedWords"];
+[values setValue:@"true"];
+[valuesList addObject: values];
+MSGraphSettingValue *values = [[MSGraphSettingValue alloc] init];
+[values setName:@"EnableMIPLabels"];
+[values setValue:@"true"];
+[valuesList addObject: values];
+MSGraphSettingValue *values = [[MSGraphSettingValue alloc] init];
+[values setName:@"PrefixSuffixNamingRequirement"];
+[values setValue:@"[Contoso-][GroupName]"];
 [valuesList addObject: values];
 [directorySetting setValues:valuesList];
 

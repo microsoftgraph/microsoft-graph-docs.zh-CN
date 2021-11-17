@@ -5,12 +5,12 @@ author: RuiHou105
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 07b4a1f98e6bea144cc69c64693f4f1a889755ec
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: c20c01fc55f207debeec126f0d85d30ab4f2e277
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59765892"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60987228"
 ---
 # <a name="cloudpc-endgraceperiod"></a>cloudPC：endGracePeriod
 
@@ -18,7 +18,7 @@ ms.locfileid: "59765892"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-结束特定云电脑的宽限期。 删除云电脑许可证或取消分配预配策略时，将触发宽限期。 它允许用户在取消预配发生前访问云电脑最多七天。 结束宽限期后，将立即取消预配云电脑，而无需等待七天。
+结束特定云电脑的宽限期。 删除云电脑许可证或取消分配预配策略时，将触发宽限期。 它允许用户在取消预配发生前访问云电脑最多七天。 结束宽限期会立即取消设置云电脑，无需等待七天。
 
 ## <a name="permissions"></a>权限
 
@@ -85,6 +85,10 @@ POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/endgraceperiod-cloudpc-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/endgraceperiod-cloudpc-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

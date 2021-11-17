@@ -1,16 +1,16 @@
 ---
 title: call： logTeleconferenceDeviceQuality
 description: 记录视频电话会议设备质量数据。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 347a1a766a574f34db841679f88ef3bec0cc8557
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 4ae07e26a8cb363fb71062435a6ab47987bd3963
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786550"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60987326"
 ---
 # <a name="call-logteleconferencedevicequality"></a>call： logTeleconferenceDeviceQuality
 
@@ -20,7 +20,7 @@ ms.locfileid: "52786550"
 
 记录视频电话会议设备质量数据。
 
-云视频互操作 (CVI) 机器人代表视频电话会议 (VTC) 设备，并充当电话会议中 VTC 设备的后端到后端代理。 由于 CVI 机器人位于 VTC 中间，Microsoft Teams作为 VTC 代理，因此它具有两个媒体段。 一个媒体段位于 CVI 自动程序Teams基础结构之间，例如Teams会议服务器或 Teams 客户端。 另一个媒体段位于 CVI 机器人和 VTC 设备之间。 
+云视频互操作 (CVI) 机器人代表视频电话会议 (VTC) 设备，并充当电话会议中 VTC 设备的后端到后端代理。 由于 CVI 机器人位于 VTC 的中间，Microsoft Teams作为 VTC 代理使用，因此它具有两个媒体段。 一个媒体段位于 CVI 机器人和 Teams 基础结构之间，Teams会议服务器或 Teams 客户端。 另一个媒体段位于 CVI 机器人和 VTC 设备之间。 
 
 第三方合作伙伴拥有 VTC 媒体段，Teams基础结构无法访问第三方呼叫通道的质量数据。  此方法仅供 CVI 合作伙伴提供其媒体质量数据。
 
@@ -47,7 +47,7 @@ POST /communications/calls/logTeleconferenceDeviceQuality
 | 名称          | 说明   |
 |:--------------|:--------------|
 | Authorization | Bearer {token}。必需。 |
-| User-Agent    | 描述调用应用程序的名称和版本。 详细信息将显示于 Azure 信息保护分析中。 建议的格式为 ApplicationName/Version。 必填。|
+| User-Agent    | 描述调用应用程序的名称和版本。 详细信息将显示于 Azure 信息保护分析中。 建议的格式为 ApplicationName/Version。 必需。|
 
 ## <a name="request-body"></a>请求正文
 
@@ -178,6 +178,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/call-logteleconferencedevicequality-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/call-logteleconferencedevicequality-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
