@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 4717dddd2a89567a77440e17ad582e14473a15ee
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 87914419d91b90aa730d4b91c58b9357a1e773a2
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59764505"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61033822"
 ---
 # <a name="list-oauth2permissiongrants"></a>List oauth2PermissionGrants
 
@@ -42,7 +42,7 @@ GET /servicePrincipals/{id}/oauth2PermissionGrants
 
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称           | 说明                |
 |:---------------|:---------------------------|
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/oauth2PermissionGran
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-serviceprincipal-oauth2permissiongrants-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-serviceprincipal-oauth2permissiongrants-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

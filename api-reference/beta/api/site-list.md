@@ -1,16 +1,16 @@
 ---
 title: 枚举网站
 description: 列出组织中与提供的筛选条件与查询选项匹配的可用 [sites][]。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
 author: JeremyKelley
-ms.openlocfilehash: c1b8af50227346e4440e4ca98873b20160ecd81b
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 2cf428c7efa1685664f6c9332777f94c381c2509
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475777"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61033724"
 ---
 # <a name="enumerate-sites"></a>枚举网站
 
@@ -18,7 +18,7 @@ ms.locfileid: "50475777"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-列出组织中 [与提供的][] 筛选条件与查询选项相匹配的可用网站。
+列出 [组织中与提供的][] 筛选条件与查询选项匹配的可用网站。
 
 当前仅支持以下查询选项：
 
@@ -26,7 +26,7 @@ ms.locfileid: "50475777"
 |:-----------------------------|:------------------------|:--------------------
 |`siteCollection/root ne null` | `siteCollection,webUrl` | 列出组织的所有根级别网站集。 可用于发现每个地理位置的主页。
 
-此外，您可以使用针对"/sites"$search查询来查找与给定关键字匹配的网站。 **[][]**
+此外，您可以使用针对"/sites"$search查询来查找匹配给定关键字的网站。 **[][]**
 
 [$search]: site-search.md
 [网站]: ../resources/site.md
@@ -74,6 +74,10 @@ GET https://graph.microsoft.com/beta/sites?$select=siteCollection,webUrl&$filter
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-sites-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-sites-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,16 +1,16 @@
 ---
 title: 创建 programControl
-description: 在 Azure AD 访问评审功能中，创建新的 programControl 对象。  这会将访问评审链接到计划。
-localization_priority: Normal
+description: 在Azure AD评审功能中，创建新的 programControl 对象。  这会将访问评审链接到计划。
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: cd4a00faeee1b97adc525727c1c01d69f26e4a27
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: cffd9631095e84a99f69d77f57302c85b2484f93
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049819"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61027864"
 ---
 # <a name="create-programcontrol"></a>创建 programControl
 
@@ -18,7 +18,7 @@ ms.locfileid: "52049819"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 Azure AD [访问评审](../resources/accessreviews-root.md) 功能中，创建新的 [programControl](../resources/programcontrol.md) 对象。  这会将访问评审链接到计划。
+在Azure AD[评审](../resources/accessreviews-root.md)功能中，创建新的[programControl](../resources/programcontrol.md)对象。  这会将访问评审链接到计划。
 
 在提出此请求之前，调用方之前必须拥有
 
@@ -27,7 +27,7 @@ ms.locfileid: "52049819"
 - [检索程序控件类型的列表](programcontroltype-list.md)，以将 的值 `controlTypeId` 包括在请求中。
 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
@@ -55,7 +55,7 @@ POST /programControls
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| `programId`              |`String`                | 此控件将成为程序的一部分的程序的 programId。                             |
+| `programId`              |`String`                | 此控件将成为其一部分的程序的 programId。                             |
 | `controlId`              |`String`                | 控件的 controlId，尤其是访问评审的标识符。                                                |
 | `controlTypeId`          |`String`                | programControlType 标识程序控件的类型-例如，链接到来宾访问评审的控件。 |
 
@@ -97,6 +97,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-programcontrol-from-programcontrols-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-programcontrol-from-programcontrols-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

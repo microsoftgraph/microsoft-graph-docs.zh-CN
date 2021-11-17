@@ -2,15 +2,15 @@
 title: 列出 windowsHelloForBusinessAuthenticationMethods
 description: 获取 windowsHelloForBusinessAuthenticationMethod 对象及其属性的列表。
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 8891e6a6afb6f2656740122081fe86aadd7bbd0f
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: b0ebf3a96de4b181537ca23932255ecc4cee11f6
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516370"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61009335"
 ---
 # <a name="list-windowshelloforbusinessauthenticationmethods"></a>列出 windowsHelloForBusinessAuthenticationMethods
 命名空间：microsoft.graph
@@ -29,7 +29,7 @@ ms.locfileid: "50516370"
 |:---------------------------------------|:-------------------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.Read、UserAuthenticationMethod.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ### <a name="permissions-acting-on-other-users"></a>对其他用户操作的权限
 
@@ -37,13 +37,13 @@ ms.locfileid: "50516370"
 |:---------------------------------------|:-------------------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
+| 应用程序                            | UserAuthenticationMethod.Read.All、UserAuthenticationMethod.ReadWrite.All |
 
-对于管理员正在操作其他用户的委派方案，管理员需要以下 [角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
+对于管理员正在操作其他用户的委派方案，管理员需要下列 [角色之一](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 * 全局管理员
 * 全局读取者
 * 特权身份验证管理员
-* 身份验证管理员 (只能看到屏蔽的电话号码) 
+* 身份验证管理员 (只能看到屏蔽) 
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -60,7 +60,7 @@ GET /users/{id | userPrincipalName}/authentication/windowsHelloForBusinessMethod
 
 不支持。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
@@ -70,7 +70,7 @@ GET /users/{id | userPrincipalName}/authentication/windowsHelloForBusinessMethod
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [windowsHelloForBusinessAuthenticationMethod](../resources/windowshelloforbusinessauthenticationmethod.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [windowsHelloForBusinessAuthenticationMethod](../resources/windowshelloforbusinessauthenticationmethod.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -99,6 +99,10 @@ GET https://graph.microsoft.com/beta/users/annie@contoso.com/authentication/wind
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-windowshelloforbusinessauthenticationmethod-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-windowshelloforbusinessauthenticationmethod-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

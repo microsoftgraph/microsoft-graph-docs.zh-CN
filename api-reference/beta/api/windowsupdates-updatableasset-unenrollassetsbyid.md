@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: f741172cc9922483aa55ea47791d033150bd78f8
-ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
+ms.openlocfilehash: 7e1fe5a6862cf28ad4cb1def1a7e5c3bf493a36d
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60890414"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61016524"
 ---
 # <a name="updatableasset-unenrollassetsbyid"></a>updatableAsset：unenrollAssetsById
 命名空间：microsoft.graph.windowsUpdates
@@ -28,7 +28,7 @@ ms.locfileid: "60890414"
 |:---|:---|
 |委派（工作或学校帐户）|WindowsUpdates.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|WindowsUpdates.ReadWrite.All|
+|应用程序|WindowsUpdates.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -51,7 +51,7 @@ POST /admin/windows/updates/updatableAssets/unenrollAssetsById
 
 下表显示了可用于此操作的参数。
 
-|参数|类型|描述|
+|参数|类型|说明|
 |:---|:---|:---|
 |updateCategory|microsoft.graph.windowsUpdates.updateCategory|要停止管理的服务的更新类别。 支持 **updateCategory** 值的子集。 可取值为：`feature`、`unknownFutureValue`。|
 |memberEntityType|String|**updatableAsset 资源的完整** 类型。 可能的值是 `#microsoft.graph.windowsUpdates.azureADDevice` ：。|
@@ -99,6 +99,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/updatableasset-unenrollassetsbyid-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/updatableasset-unenrollassetsbyid-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

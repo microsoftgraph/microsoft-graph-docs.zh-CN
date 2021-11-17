@@ -6,12 +6,12 @@ ms.localizationpriority: high
 ms.prod: sharepoint
 description: 获取为网站定义的子网站集合。
 doc_type: apiPageType
-ms.openlocfilehash: 929b734c71d391e9ef557001c0f944a31e2acf0b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d7b4adefca368be21957c74468f9aa3471fb48b9
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59037073"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61027143"
 ---
 # <a name="enumerate-subsites"></a>枚举子网站
 
@@ -54,6 +54,10 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/sites
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-subsites-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-subsites-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

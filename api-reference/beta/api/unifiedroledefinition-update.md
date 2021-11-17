@@ -1,16 +1,16 @@
 ---
 title: 更新 unifiedRoleDefinition
 description: 更新 unifiedRoleDefinition 对象的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: af8e75ca0364a269168c2c3b072c8c7ec6c087ae
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+ms.openlocfilehash: 1b276ef09c72d4945b74fff5ee660c20ab95cb10
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53351074"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61017036"
 ---
 # <a name="update-unifiedroledefinition"></a>更新 unifiedRoleDefinition
 
@@ -22,7 +22,7 @@ ms.locfileid: "53351074"
 
 目前支持以下 RBAC 提供程序：
 - Intune (设备) 
-- Azure AD (目录)  
+- 目录 (Azure AD)  
 
 > [!NOTE]
 > 云电脑 RBAC 提供商当前仅支持[列表和](rbacapplication-list-roledefinitions.md)[获取](unifiedroledefinition-get.md)操作。
@@ -31,21 +31,21 @@ ms.locfileid: "53351074"
 
 根据 RBAC 提供程序以及 (或应用程序) 的权限类型，从下表中选择调用此 API 所需的最低特权权限。 若要了解 [更多信息（包括在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 选择更多特权权限之前要谨慎操作），请搜索权限参考 [中的以下权限](/graph/permissions-reference)。 
 
-### <a name="for-device-management-intune-provider"></a>对于 Intune (提供程序的设备) 管理
+### <a name="for-device-management-intune-provider"></a>对于 Intune (设备) 提供程序
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  DeviceManagementRBAC.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | DeviceManagementRBAC.ReadWrite.All |
+|应用程序 | DeviceManagementRBAC.ReadWrite.All |
 
-### <a name="for-directory-azure-ad-provider"></a>对于 Azure AD (提供程序) 目录
+### <a name="for-directory-azure-ad-provider"></a>对于目录 (Azure AD) 提供程序
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All、Directory.AccessAsUser.All   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All |
+|应用程序 | RoleManagement.ReadWrite.Directory、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -61,7 +61,7 @@ PATCH /roleManagement/deviceManagement/roleDefinitions/{id}
 PATCH /roleManagement/directory/roleDefinitions/{id}
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称       | 说明|
 |:-----------|:-----------|
@@ -73,20 +73,20 @@ PATCH /roleManagement/directory/roleDefinitions/{id}
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|说明|字符串| 角色定义的说明。 isBuiltIn 为 true 时为只读。 |
-|displayName|字符串| 角色显示名称的角色定义。 isBuiltIn 为 true 时为只读。 必需。|
-|id|字符串| 角色定义的唯一标识符。 键，不可为 null，只读。 |
+|说明|String| 角色定义的说明。 isBuiltIn 为 true 时为只读。 |
+|displayName|String| 角色显示名称的角色定义。 isBuiltIn 为 true 时为只读。 必需。|
+|id|String| 角色定义的唯一标识符。 键，不可为 null，只读。 |
 |isBuiltIn|Boolean| 指示角色定义是否属于产品或自定义中包含的默认集的标志。 只读。 |
 |isEnabled|Boolean| 指示角色是否已启用分配的标志。 如果为 false，则角色不能用于分配。 isBuiltIn 为 true 时为只读。 |
 |resourceScopes|String collection| 角色定义授予的作用域权限列表适用。 目前仅支持"/"。 isBuiltIn 为 true 时为只读。 **请勿使用。此属性将很快弃用。将作用域附加到角色分配。**|
-|rolePermissions|[unifiedRolePermission](../resources/unifiedrolepermission.md) 集合| 角色中包含的权限列表。 isBuiltIn 为 true 时为只读。 必填。 |
-|templateId|字符串| 可以在 isBuiltIn 为 false 时设置的自定义模板标识符。 如果一个标识符在不同目录之间需要相同，则通常使用此标识符。 isBuiltIn 为 true 时为只读。 |
-|inheritsPermissionsFrom| [unifiedRoleDefinition](../resources/unifiedroledefinition.md) 集合| 给定角色定义从其继承的角色定义的只读集合。 仅 Azure AD 内置角色支持此属性。 |
+|rolePermissions|[unifiedRolePermission](../resources/unifiedrolepermission.md) 集合| 角色中包含的权限列表。 isBuiltIn 为 true 时为只读。 必需。 |
+|templateId|String| 可以在 isBuiltIn 为 false 时设置的自定义模板标识符。 如果一个标识符在不同目录之间需要相同，则通常使用此标识符。 isBuiltIn 为 true 时为只读。 |
+|inheritsPermissionsFrom| [unifiedRoleDefinition](../resources/unifiedroledefinition.md) 集合| 给定角色定义从其继承的角色定义的只读集合。 只有Azure AD角色才支持此属性。 |
 |version|String| 指示角色定义的版本。 isBuiltIn 为 true 时为只读。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象。
+如果成功，此方法返回 `204 No Content` 响应代码。
 
 ## <a name="example"></a>示例
 
@@ -135,6 +135,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-unifiedroledefinition-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-unifiedroledefinition-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -148,7 +152,7 @@ Content-type: application/json
 } -->
 
 ```http
-HTTP/1.1 204 OK
+HTTP/1.1 204 No Content
 Content-type: application/json
 
 ```

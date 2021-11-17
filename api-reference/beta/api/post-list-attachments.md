@@ -2,15 +2,15 @@
 title: 列出附件
 description: 检索附加到帖子的 attachment 对象列表。
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 86ea62f245e36bee9a3499946f7a3eb80249d368
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e74054061d8117222c6e81e8fffc1fc491e414a4
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049147"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61028117"
 ---
 # <a name="list-attachments"></a>列出附件
 
@@ -19,7 +19,7 @@ ms.locfileid: "52049147"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索附加到帖子的 [attachment](../resources/attachment.md) 对象列表。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -39,7 +39,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
-具体而言，您可以使用 $expand 查询参数，以将所有内联帖子附件与发布属性的其余部分一起包含。 例如：
+具体而言，您可以使用 $expand 查询参数将所有内联帖子附件与发布属性的其余部分一起包含。 例如：
 
 <!-- { "blockType": "ignored" } -->
 ```
@@ -85,10 +85,14 @@ GET https://graph.microsoft.com/beta/groups/1848753d-185d-4c08-a4e4-6ee40521d115
 [!INCLUDE [sample-code](../includes/snippets/java/post-get-attachments-beta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-get-attachments-beta-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "name": "post_get_attachments_beta",

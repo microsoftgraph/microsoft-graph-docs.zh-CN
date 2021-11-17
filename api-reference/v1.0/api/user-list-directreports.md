@@ -1,16 +1,16 @@
 ---
 title: 列出 directReports
 description: 获取用户的直接下属。
-localization_priority: Priority
+ms.localizationpriority: high
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: a5434dd1406afca1891695dd3d0b84c29f188a2a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 93305450f4bf12703f278c74169da09ed7bd6db0
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050211"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61029042"
 ---
 # <a name="list-directreports"></a>列出 directReports
 
@@ -76,6 +76,10 @@ GET https://graph.microsoft.com/v1.0/me/directReports
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-directreports-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-directreports-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

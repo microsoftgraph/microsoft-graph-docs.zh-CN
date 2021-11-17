@@ -2,15 +2,15 @@
 title: Delete taskTrigger
 description: 删除打印机的任务触发器。
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: f98e73a7cf6d1da759ba933d685f72fbf11f2035
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: cadf4a083581e866561e9c2dcfcb8133760943b9
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051086"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61028074"
 ---
 # <a name="delete-tasktrigger"></a>Delete taskTrigger
 
@@ -20,7 +20,7 @@ ms.locfileid: "52051086"
 
 删除 [打印机](../resources/printer.md)的任务 [触发器](../resources/printtasktrigger.md) ，以防止相关打印事件触发指定打印机上的任务。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。
@@ -74,6 +74,10 @@ DELETE https://graph.microsoft.com/beta/print/printers/1a5f91a7-9bd1-4d5f-bb86-f
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-printer-tasktrigger-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-printer-tasktrigger-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

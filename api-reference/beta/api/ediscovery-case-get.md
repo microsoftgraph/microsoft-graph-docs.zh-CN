@@ -1,16 +1,16 @@
 ---
 title: 获取案例
 description: 检索 case 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mahage-msft
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: d4785ba534ddbb334b87da5c0ddac3f8b32cb071
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 9bc0883d311a85771bc0d528fedcdf5bd8202877
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50776730"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61008012"
 ---
 # <a name="get-case"></a>获取案例
 
@@ -28,7 +28,7 @@ ms.locfileid: "50776730"
 |:---|:---|
 |委派（工作或学校帐户）|eDiscovery.Read.All、eDiscovery.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/061b9a92-8926-4
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-case-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-case-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c0e2a8329b1b80252a881471031bc2b775c4e9c5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6183cd8c17aacc359f8780f9606c1bdcaacc6145
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59044830"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61020073"
 ---
 # <a name="update-workforceintegration"></a>更新工作人员集成
 
@@ -53,7 +53,7 @@ PATCH /teamwork/workforceIntegrations/{workforceIntegrationId}
 |apiVersion|Int32|用于回叫 URL 的 API 版本。 从 1 开始。|
 |displayName|String|员工集成的名称。|
 |加密|workforceIntegrationEncryption|员工集成加密资源。 |
-|isActive|Boolean|指示此员工集成当前是否处于活动状态且可用。|
+|isActive|布尔|指示此员工集成当前是否处于活动状态且可用。|
 |supportedEntities|string| 可取值为：`none`、`shift`、`swapRequest`、`openshift`、`openShiftRequest`、`userShiftPreferences`。 如果选择多个值，则所有值必须以大写字母开头。|
 |url|String| 轮班服务中回调的员工集成 URL。 |
 
@@ -104,6 +104,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-workforceintegration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-workforceintegration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

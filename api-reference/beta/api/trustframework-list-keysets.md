@@ -1,16 +1,16 @@
 ---
 title: 列出 keySets
 description: 检索 trustframeworkkeyset 对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: dcfce35fa33255c456303b28f36e554b467ba629
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 7e5975234056d0f0899dfa52c155f6d09b1a1f72
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049630"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61033556"
 ---
 # <a name="list-keysets"></a>列出 keySets
 
@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/beta/trustFramework/keySets
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-keysets-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-keysets-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

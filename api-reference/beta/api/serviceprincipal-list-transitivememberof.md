@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 3aa5f08eb37d07b18b268c7f417dcdc182a8afb6
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: e2d65a9f8b1681f6ddd85216a1d2b105f597fe0a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59767207"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61033780"
 ---
 # <a name="list-serviceprincipal-transitive-memberof"></a>List servicePrincipal transitive memberOf
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/transitiveMemberOf
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-serviceprincipal-tranitivememberof-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-serviceprincipal-tranitivememberof-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

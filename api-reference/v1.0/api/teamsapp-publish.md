@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 658269bdbb05f29b04407c7470d52064c0c4b1d8
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 2379341bc217b50462ddbca303f669bf08e78090
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60946368"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61008734"
 ---
 # <a name="publish-teamsapp"></a>发布 teamsapp
 
@@ -21,7 +21,7 @@ ms.locfileid: "60946368"
 
 **requiresReview** 属性允许任何用户提交应用供管理员审阅。 管理员可以通过此 API 或管理中心批准或拒绝Microsoft Teams应用。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -47,9 +47,9 @@ POST /appCatalogs/teamsApps?requiresReview:{Boolean}
 
 ## <a name="query-parameters"></a>查询参数
 
-|属性|类型|Description|
+|属性|类型|说明|
 |----|----|----|
-|requiresReview| Boolean | 此可选查询参数将触发应用评审过程。 具有管理员权限的用户无需触发审查即可提交应用。 如果用户想要在发布之前请求审阅，则必须将 设置为  `requiresReview` `true` 。 具有管理员权限的用户可以选择不设置或将值设置为 ，应用将被视为已批准， `requiresReview` `false`  并且将立即发布。|
+|requiresReview| 布尔 | 此可选查询参数将触发应用评审过程。 具有管理员权限的用户无需触发审查即可提交应用。 如果用户想要在发布之前请求审阅，则必须将 设置为  `requiresReview` `true` 。 具有管理员权限的用户可以选择不设置或将值设置为 ，应用将被视为已批准， `requiresReview` `false`  并且将立即发布。|
 
 ## <a name="request-headers"></a>请求头
 
@@ -139,6 +139,10 @@ Content-type: application/zip
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-teamsapp-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-teamsapp-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

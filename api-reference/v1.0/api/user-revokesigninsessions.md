@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: a3c179f2b6645b69267e1158d0f4bd2d0cf8df78
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7dd8af6625753a6de06c00f125368cd62136ce80
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59109659"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61020129"
 ---
 # <a name="user-revokesigninsessions"></a>user： revokeSignInSessions
 
@@ -83,6 +83,10 @@ POST https://graph.microsoft.com/v1.0/me/revokeSignInSessions
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-revokesigninsessionss-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-revokesigninsessionss-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

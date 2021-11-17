@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 01dbba5e593f0710a0c399ff168a772bc41051fe
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 22187c58ca81f0b4c074c98aefc39c3f993ba746
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60945612"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61018702"
 ---
 # <a name="start-sync-after-uploading-files-to-an-educationsynchronizationprofile"></a>将文件上传到 educationSynchronizationProfile 后开始同步
 
@@ -22,7 +22,7 @@ ms.locfileid: "60945612"
 
 > **注意：** 仅在数据提供程序的类型为 [educationcsvdataprovider 时使用此方法](../resources/educationcsvdataprovider.md)。 此外，需要设置配置文件的状态属性，然后才能启动它。 轮询配置文件对象以检查其状态属性。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限 |
@@ -73,6 +73,10 @@ POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/sta
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/post-educationsynchronizationprofile-start-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-educationsynchronizationprofile-start-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

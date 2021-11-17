@@ -1,16 +1,16 @@
 ---
 title: 列出 callRecord 会话
 description: 检索 callRecord 的会话对象列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 2b575672befe470a6adfceb2a84ed1d22fe39d58
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 504a0dc8768bc44642ae46be19e231d4d131034f
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047579"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61026990"
 ---
 # <a name="list-callrecord-sessions"></a>列出 callRecord 会话
 
@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/communications/callRecords/{id}/sessions
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-callrecord-sessions-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-callrecord-sessions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -202,6 +206,10 @@ GET https://graph.microsoft.com/beta/communications/callRecords/{id}/sessions?$e
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-callrecord-sessions-expanded-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-callrecord-sessions-expanded-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

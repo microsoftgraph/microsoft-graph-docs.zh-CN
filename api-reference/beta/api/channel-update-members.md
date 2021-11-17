@@ -5,12 +5,12 @@ author: akjo
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 2b86eaf0fc7ea583fbe59edff1e7314478c28ddb
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: d4cbac056938a8575e9866e53f43518a85a6bf74
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60936087"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61028880"
 ---
 # <a name="update-member-in-channel"></a>更新频道中的成员
 
@@ -47,7 +47,7 @@ PATCH /teams/{team-id}/channels/{channel-id}/members/{membership-id}
 
 在请求正文中，提供要更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性   | 类型 |Description|
+| 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
 |角色|string 集合|用户的角色。 必须为空 `owner` 。 来宾用户将自动标记 `guest` 角色，并且此值无法更新。 |
 
@@ -91,6 +91,10 @@ content-length: 26
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-member-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-member-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

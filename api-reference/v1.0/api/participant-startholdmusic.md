@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 9b20e18392d9e1f92808e89ccdb514409c06db06
-ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
+ms.openlocfilehash: e19caed1c7ad34908881f412df8e83ed006f9e30
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60214666"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61029356"
 ---
 # <a name="participant-startholdmusic"></a>participant： startHoldMusic
 
@@ -20,7 +20,7 @@ ms.locfileid: "60214666"
  
 > **注意：** 在任何给定时间只能将一个参与者置于保留状态。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
@@ -96,6 +96,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/participant-startholdmusic-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/participant-startholdmusic-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

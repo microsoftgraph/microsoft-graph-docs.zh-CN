@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: dbc357265241f8be890d57a841e0ea04a1644d1f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 283091b0fe294d995a22e19cfbc300c331779698
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59056296"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61027382"
 ---
 # <a name="list-offershiftrequest"></a>列出 offerShiftRequest
 
@@ -18,7 +18,7 @@ ms.locfileid: "59056296"
 
 检索团队中 [所有 offerShiftRequest](../resources/offershiftrequest.md) 对象的属性和关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/offerShiftRequests
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-offershiftrequest-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-offershiftrequest-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,16 +1,16 @@
 ---
 title: identityApiConnector：uploadClientCertificate
-description: Upload API 连接器身份验证配置 (PFX) PKCS 12 格式密钥。
+description: Upload API 连接器身份验证配置中 (PFX) PKCS 12 格式密钥。
 ms.localizationpriority: medium
 author: nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 8b05cb71390e97f9268d933080472a86fed359e0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c9413f1aaa5332fe083a1de9ee6edc5d7add5706
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59073889"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61027605"
 ---
 # <a name="identityapiconnector-uploadclientcertificate"></a>identityApiConnector：uploadClientCertificate
 
@@ -18,7 +18,7 @@ ms.locfileid: "59073889"
 
 Upload API 连接器的身份验证配置 (.pfx) PKCS 12 格式密钥。 输入是 PKCS 12 证书内容的 Base64 编码值。 此方法返回 [apiConnector](../resources/identityApiConnector.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -54,8 +54,8 @@ POST /identity/apiconnectors/{id}/uploadClientCertificate
 
 |属性|类型|说明|
 |:---|:---|:---|
-|pkcs12Value|String| 这是用于发送 pfx 内容的字段。 该值应为实际证书内容的 Base64 编码版本。 必填。|
-|密码|String| 这是 pfx 文件的密码。 必填。 如果未使用密码，则仍必须提供 的值 `""` 。|
+|pkcs12Value|String| 这是用于发送 pfx 内容的字段。 该值应为实际证书内容的 Base64 编码版本。 必需。|
+|密码|String| 这是 pfx 文件的密码。 必需。 如果未使用密码，则仍必须提供 的值 `""` 。|
 
 ## <a name="response"></a>响应
 
@@ -97,6 +97,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/identityapiconnector-uploadclientcertificate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/identityapiconnector-uploadclientcertificate-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

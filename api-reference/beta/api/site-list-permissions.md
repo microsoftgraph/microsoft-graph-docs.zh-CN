@@ -5,12 +5,12 @@ author: BarrySh
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 4d06a565d235991c1d9d3e983a969063451c43a7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1d78936b82ca1382c13f6414ce4c07b453548d5e
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "60780956"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61026155"
 ---
 # <a name="list-permissions"></a>列出权限
 命名空间：microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "60780956"
 
 从 [网站上](../resources/permission.md) 的权限导航属性获取权限资源。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）
@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/beta/sites/{sitesId}/permissions
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-permission-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-permission-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

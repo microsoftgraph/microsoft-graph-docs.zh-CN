@@ -5,20 +5,20 @@ author: AkJo
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 5bf8d55f4c8a4c4581dc7cdc30aa8f2c8cc74801
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 23d22c0fcf91bd9c1de3a9d21004dc1e15ea1a64
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59021811"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61028909"
 ---
 # <a name="get-one-on-one-chat-between-the-specified-user-and-teams-app"></a>获取指定用户与应用之间的一对一Teams聊天
 
 命名空间：microsoft.graph
 
-检索[指定用户的](../resources/chat.md)聊天[，Teams](../resources/user.md)[应用](../resources/teamsapp.md)。
+检索[指定用户的](../resources/chat.md)聊天[和Teams](../resources/user.md)[应用](../resources/teamsapp.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/users/f32b83bb-4fc8-4db7-b7f5-76cdbbb8aa1c/
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-chat-teamsapps-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-chat-teamsapps-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

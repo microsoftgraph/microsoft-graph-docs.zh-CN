@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 49dc25c6af6d7f57238bee17242f38a6b306877e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b64bb67ba12cc0cad4f43f6fad646be6caa40f45
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59097849"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61008532"
 ---
 # <a name="get-unifiedroledefinition"></a>获取 unifiedRoleDefinition
 
@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleDefinitions/f1
 [!INCLUDE [sample-code](../includes/snippets/java/get-custom-role-unifiedroledefinition-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-custom-role-unifiedroledefinition-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -165,6 +169,10 @@ GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleDefinitions/fd
 [!INCLUDE [sample-code](../includes/snippets/java/get-built-in-role-unifiedroledefinition-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-built-in-role-unifiedroledefinition-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -231,7 +239,7 @@ Content-type: application/json
     ]
 }
 ```
-### <a name="example-3-get-the-definition-of-an-azure-ad-built-in-role-and-expand-on-the-role-it-inherits-from"></a>示例 3：获取 Azure AD 内置角色的定义，$expand继承自的角色定义
+### <a name="example-3-get-the-definition-of-an-azure-ad-built-in-role-and-expand-on-the-role-it-inherits-from"></a>示例 3：获取Azure AD内置角色的定义，$expand继承自的角色定义
 
 #### <a name="request"></a>请求
 
@@ -262,6 +270,10 @@ GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleDefinitions/fd
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-inheritsfrom-unifiedroledefinition-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-inheritsfrom-unifiedroledefinition-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

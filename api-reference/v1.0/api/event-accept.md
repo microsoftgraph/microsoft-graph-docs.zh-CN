@@ -5,12 +5,12 @@ author: harini84
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 14225947dee3870c473c2b2d595ff654c72051d9
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 826b0003ce158a9a4ed0794d9496fff8acb424b6
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60937300"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61025471"
 ---
 # <a name="event-accept"></a>event: accept
 
@@ -51,7 +51,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |Description|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |注释|String|响应中包含的文本。可选。|
 |sendResponse|Boolean|如果将响应发送给组织者，则值为 `true`；否则为 `false`。可选。默认值为 `true`。|
@@ -93,6 +93,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/event-accept-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/event-accept-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

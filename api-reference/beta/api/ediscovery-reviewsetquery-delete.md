@@ -1,16 +1,16 @@
 ---
 title: 删除 reviewSetQuery
 description: 删除 reviewSetQuery 对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mahage-msft
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 01120e7702c2dc055ed0827d41b827a7330827bb
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: eec8842eb98d3654111dbb9cf56e3d7c670fe14a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50446024"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61026688"
 ---
 # <a name="delete-reviewsetquery"></a>删除 reviewSetQuery
 
@@ -20,7 +20,7 @@ ms.locfileid: "50446024"
 
 删除 [reviewSetQuery](../resources/ediscovery-reviewsetquery.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "50446024"
 |:---|:---|
 |委派（工作或学校帐户）|eDiscovery.Read.All、eDiscovery.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -81,6 +81,10 @@ DELETE https://graph.microsoft.com/beta/compliance/ediscovery/cases/2eef613a-ca2
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-reviewsetquery-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-reviewsetquery-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

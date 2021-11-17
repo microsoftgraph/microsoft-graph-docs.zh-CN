@@ -5,12 +5,12 @@ author: jkdouglas
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: abe65315b1ee8a3409e14a93492753cd6612ead1
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 853d5fa860f4e07df0896d1ba250e42041b57fcf
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59109547"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61008271"
 ---
 # <a name="get-userflowlanguageconfiguration"></a>获取 userFlowLanguageConfiguration
 
@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/v1.0/identity/b2xUserFlows/B2X_1_Partner/languag
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-userflowlanguageconfiguration-3-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-userflowlanguageconfiguration-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

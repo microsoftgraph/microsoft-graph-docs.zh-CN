@@ -1,26 +1,26 @@
 ---
 title: 列出 signIn
-description: 介绍 Microsoft (API 中的 signIn) 实体Graph方法。
+description: 介绍 Microsoft (API) signIn 资源Graph方法。
 ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 2620d4fbf17a79aeda4fa396aafbd44e24edd272
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: bace62cfafd972018a9a42ae84b95a7623ac51e2
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60730415"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61029251"
 ---
 # <a name="list-signins"></a>列出 signIn
 
 命名空间：microsoft.graph
 
-检索租户的 Azure AD 用户登录信息。 本质上是交互式的登录 (其中用户名/密码作为身份验证令牌) 的一部分传递，并且成功的联合登录当前包含在登录日志中。 
+检索租户的 Azure AD 用户登录信息。 本质上是交互式登录 (其中用户名/密码作为身份验证令牌) 且成功的联合登录当前包含在登录日志中。 
 
 最大和默认页面大小为 1，000 个对象，默认情况下，首先返回最新的登录。 只有默认保留期Azure Active Directory (Azure AD) [登录事件](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)可用。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/v1.0/auditLogs/signIns
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-signins-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-signins-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

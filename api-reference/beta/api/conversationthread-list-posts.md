@@ -1,16 +1,16 @@
 ---
 title: 列出帖子
 description: '获取指定线程的帖子。 你可以同时指定父会话和线程，或者， '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c00e0bd41a1a02fb34156d50e8cfd5418c79a885
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: cac066f97891f1fd6bbf78f5009132301c2fb18a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514418"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61026702"
 ---
 # <a name="list-posts"></a>列出帖子
 
@@ -39,7 +39,7 @@ GET /groups/{groupId}/conversations/{conversationId}/threads/{threadId}/posts
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 `$select` [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。 `$expand` 还支持扩展特定关系，并且一个请求中只能扩展一个关系。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
@@ -76,6 +76,10 @@ GET https://graph.microsoft.com/beta/groups/0d75b8dc-c42d-44dd-890a-751a99c0589f
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-posts-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-posts-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

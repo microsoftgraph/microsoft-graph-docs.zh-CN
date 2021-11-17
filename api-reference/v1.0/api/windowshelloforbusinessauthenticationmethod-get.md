@@ -5,12 +5,12 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 0bb8a0521c05a0d39b76b31e4d732c95a64834e8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 756aca470361aab9b3e22922bb4c2f69a7e17bfb
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59143933"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61021228"
 ---
 # <a name="get-windowshelloforbusinessauthenticationmethod"></a>获取 windowsHelloForBusinessAuthenticationMethod
 命名空间：microsoft.graph
@@ -58,7 +58,7 @@ GET /users/{id | userPrincipalName}/authentication/windowsHelloForBusinessMethod
 
 不支持。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
@@ -97,6 +97,10 @@ GET https://graph.microsoft.com/v1.0/users/annie@contoso.com/authentication/wind
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-windowshelloforbusinessauthenticationmethod-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-windowshelloforbusinessauthenticationmethod-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

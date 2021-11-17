@@ -1,16 +1,16 @@
 ---
 title: 获取 teamworkHostedContent
 description: 检索 teamsAppIcon 中的托管内容。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jecha
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6317cac369ad8d7bb29ed83c7e2c5ce9a0ca5f5f
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 33af64a32b88493793e01398c51d095a84f1118d
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788001"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61017939"
 ---
 # <a name="get-teamworkhostedcontent"></a>获取 teamworkHostedContent
 
@@ -18,11 +18,11 @@ ms.locfileid: "52788001"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 [应用的图标](../resources/teamworkhostedcontent.md) 中检索 [托管的内容](../resources/teamsappicon.md)。
+在 [应用的图标](../resources/teamworkhostedcontent.md) 中检索 [托管内容](../resources/teamsappicon.md)。
 
 ## <a name="permissions"></a>权限
 
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 ### <a name="permissions-for-app-icon-in-app-catalog"></a>应用程序目录中应用程序图标的权限
 | 权限类型                        | 权限（从最低特权到最高特权）                      |
@@ -47,7 +47,7 @@ GET /appCatalogs/teamsApps/{teams-app-id}/appDefinitions/{app-definition-id}/out
 
 此操作支持使用 `$select` [OData 查询参数](/graph/query-parameter) 自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 标头           | 值                      |
 | :--------------- | :------------------------- |
@@ -92,6 +92,10 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/5a31d4f7-a11d-4052-96
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/teamsappicon-get-hostedcontent-coloricon-value-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/teamsappicon-get-hostedcontent-coloricon-value-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -151,6 +155,10 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/5a31d4f7-a11d-4052-96
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/teamsappicon-get-hostedcontentbytes-outlineicon-value-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/teamsappicon-get-hostedcontentbytes-outlineicon-value-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

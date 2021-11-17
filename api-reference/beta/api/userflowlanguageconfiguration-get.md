@@ -2,15 +2,15 @@
 title: 获取 userFlowLanguageConfiguration
 description: 读取 [userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) 对象的属性和关系。
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 61be7d9e73d739a445a9b7dfc96e315fb6734966
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+ms.openlocfilehash: 46c9836d1f90645ddce96212c32d84ffd70cedc7
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53351025"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61009406"
 ---
 # <a name="get-userflowlanguageconfiguration"></a>获取 userFlowLanguageConfiguration
 
@@ -20,7 +20,7 @@ ms.locfileid: "53351025"
 
 读取 [userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) 对象的属性和关系。 这些对象表示用户流中可用的语言。
 
-**注意：** 若要检索受自定义支持的语言，必须先对 Azure AD B2C 用户流启用语言自定义。 有关详细信息，请参阅更新 [b2cIdentityUserFlow](../api/b2cidentityuserflow-update.md)。 默认情况下，在用户流中启用[Azure Active Directory自定义](../resources/b2xidentityuserflow.md)。
+**注意：** 若要检索受自定义支持的语言，必须先对 B2C 用户流Azure AD语言自定义。 有关详细信息，请参阅更新 [b2cIdentityUserFlow](../api/b2cidentityuserflow-update.md)。 默认情况下，在用户流中启用[Azure Active Directory自定义](../resources/b2xidentityuserflow.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -30,7 +30,7 @@ ms.locfileid: "53351025"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）|IdentityUserFlow.Read.All、IdentityUserFlow.ReadWrite.All|
 |委派（个人 Microsoft 帐户）| 不支持。|
-|Application|IdentityUserFlow.Read.All、IdentityUserFlow.ReadWrite.All|
+|应用程序|IdentityUserFlow.Read.All、IdentityUserFlow.ReadWrite.All|
 
 工作或学校帐户需要属于以下角色之一：
 
@@ -94,6 +94,10 @@ GET https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_Customer/langua
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-userflowlanguageconfiguration-3-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-userflowlanguageconfiguration-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -2,15 +2,15 @@
 title: call： recordResponse
 description: 录制来自呼叫者的简短音频响应。 如果机器人想要在提示后捕获来自呼叫者的语音响应，这将非常有用。
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 7555c756401086c4a1a63f0d6568cfe5a9557ed4
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 24f26b346b3488b12824f591b8acb73ce6b23f98
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047614"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61022678"
 ---
 # <a name="call-recordresponse"></a>call： recordResponse
 
@@ -26,11 +26,11 @@ ms.locfileid: "52047614"
 
 >**注意：** 只有通过 [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md)启动的调用才支持此 API。 [](../resources/call.md)
 
-此操作不用于记录整个呼叫。 录制的最大长度为 2 分钟。 云通信平台不会永久保存录制，呼叫结束后将丢弃录制。 录制操作完成后，自动程序必须使用已完成的通知中给出的 recordingLocation 值立即下载录制。
+此操作不用于记录整个呼叫。 录制的最大长度为 2 分钟。 云通信平台不会永久保存录制，呼叫结束后将丢弃录制。 录制操作完成后，机器人必须使用已完成的通知中给出的 recordingLocation 值立即下载录制。
 
 >**注意：** 不得记录或以其他方式保留应用程序访问的呼叫或会议中的媒体内容，或记录派生自该媒体内容的数据。 确保你遵守有关通信数据保护和机密性的法律和法规。 有关详细信息，请参阅[使用条款](/legal/microsoft-apis/terms-of-use)并咨询法律顾问。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权） |
@@ -59,18 +59,18 @@ POST /communications/calls/{id}/recordResponse
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
 |prompts|[MediaPrompt](../resources/mediaprompt.md) 集合 | 要播放的提示。 支持的最大 mediaPrompt 集合大小为 1。|
-|bargeInAllowed|布尔值| 如果为 true，recordResponse 请求将插入其他现有的排队向上/当前处理的记录/playprompt 请求。 默认值 = false。 |
-|initialSilenceTimeoutInSeconds | Int32| 在超时 (失败) ，从开始记录响应操作时，用户的最大初始静默表示用户静默。 如果播放提示，则此计时器在提示完成后启动。 默认值 = 5 秒，最小值 = 1 秒，最大值 = 120 秒 |
+|bargeInAllowed|布尔| 如果为 true，recordResponse 请求将插入其他现有的排队向上/当前处理的记录/playprompt 请求。 默认值 = false。 |
+|initialSilenceTimeoutInSeconds | Int32| 在超时 (操作) 开始记录响应操作时，允许的最大初始静默和用户静默。 如果我们播放提示，则此计时器在提示完成后启动。 默认值 = 5 秒，最小值 = 1 秒，最大值 = 120 秒 |
 |maxSilenceTimeoutInSeconds|Int32| 用户开始 (后) 允许的最大静默时间。 默认值 = 5 秒，最小值 = 1 秒，最大值 = 120 秒。|
 |maxRecordDurationInSeconds|Int32| 在停止录制之前，recordResponse 操作的最大持续时间。 默认值 = 5 秒，最小值 = 1 秒，最大值 = 120 秒。|
-|playBeep|布尔值| 如果为 true，则播放一个嘟嘟声，以向用户指示他们可以开始录制其消息。 默认值 = true。|
-|stopTones|字符串集合|结束录制指定的停止音调。|
+|playBeep|布尔| 如果为 true，则播放一个嘟嘟声，以向用户指示他们可以开始录制其消息。 默认值 = true。|
+|stopTones|String collection|结束录制指定的停止音调。|
 |clientContext|String|唯一的客户端上下文字符串。 最大限制为 256 个字符。|
 
-> **注意：** 最长录制时间从 5 分钟减少到 2 分钟。
+> **注意：** 最大录制时间从 5 分钟减少到 2 分钟。
 
 ## <a name="response"></a>响应
-此方法向为此请求 `200 OK` 创建的 [recordOperation](../resources/recordoperation.md) 返回 HTTP 响应代码和具有 URI 的位置标头。
+此方法返回 `200 OK` HTTP 响应代码和具有为此请求创建的 [recordOperation](../resources/recordoperation.md) 的 URI 的位置标头。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。
@@ -124,6 +124,10 @@ Content-Length: 394
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/call-recordresponse-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/call-recordresponse-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

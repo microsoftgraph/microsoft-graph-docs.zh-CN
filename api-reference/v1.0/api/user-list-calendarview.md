@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 author: harini84
 ms.prod: outlook
-ms.openlocfilehash: 8b9a8d1fa3d6f8f04b4166432ac053598bfa8c3b
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 40ed7a42c3faaf92370a693d41fb064ad3576c39
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60942574"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61008475"
 ---
 # <a name="list-calendarview"></a>列出 calendarView
 
@@ -104,6 +104,10 @@ GET https://graph.microsoft.com/v1.0/me/calendarView?startDateTime=2020-01-01T19
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-get-calendarview-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-get-calendarview-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

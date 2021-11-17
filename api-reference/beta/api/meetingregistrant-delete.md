@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 9ca44b588aff67fe263d4baa0aa8807e45da6525
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 8281473a3b47cede52459e8c541359af04e48972
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60561124"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61022005"
 ---
 # <a name="unenroll-meeting-registrant"></a>注销会议注册人
 
@@ -20,7 +20,7 @@ ms.locfileid: "60561124"
 
 代表注册人取消[meetingRegistrant](../resources/meetingregistrant.md)的[onlineMeeting](../resources/onlinemeeting.md)注册。
 
-仅在 **meetingRegistration 对象的 allowedRegistrant** 属性的值为 且注册人委派权限用于注册时 [](../resources/meetingregistration.md) `organization` 使用此方法。 当 **allowedRegistrant** 值为 时，注册人只能使用收到的电子邮件中的链接 `everyone` 取消注册。
+仅在 **meetingRegistration 对象的 allowedRegistrant** 属性值为 且注册人委派权限用于注册时 [](../resources/meetingregistration.md) `organization` 使用此方法。 当 **allowedRegistrant** 值为 时，注册人只能使用收到的电子邮件中的链接 `everyone` 取消注册。
 
 ## <a name="permissions"></a>权限
 
@@ -30,7 +30,7 @@ ms.locfileid: "60561124"
 |:----------------|:--------------------------------------------|
 | 委派（工作或学校帐户） | OnlineMeetings.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application | OnlineMeetings.Read.All |
+| 应用程序 | OnlineMeetings.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -43,7 +43,7 @@ DELETE /users/{userId}/onlineMeetings/{meetingId}/registration/registrants/{id}
 > - `userId` 是会议组织者的 objectID。
 > - `meetingId`是 [onlineMeeting 对象的](../resources/onlineMeeting.md) **ID。**
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称            | 说明               |
 | :-------------- | :------------------------ |
@@ -85,6 +85,10 @@ DELETE https://graph.microsoft.com/beta/users/16664f75-11dc-4870-bec6-38c1aaa814
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-registratrant-user-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-registratrant-user-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

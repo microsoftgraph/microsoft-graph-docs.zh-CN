@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: bb91b6585cc43a2294ed776be64415771a9cc3cd
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ff8eac9c91bf403a1fb5a55ddfe5f7587b1cc77c
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59017007"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61007119"
 ---
 # <a name="update-alert"></a>更新警报
 
@@ -38,7 +38,7 @@ ms.locfileid: "59017007"
 PATCH /security/alerts/{alert_id}
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称          | 说明              |
 |:--------------|:-------------------------|
@@ -56,7 +56,7 @@ PATCH /security/alerts/{alert_id}
 | comments          | 字符串集合                                                      | 针对客户警报管理的警报 (分析员) 。 此方法只能使用下列值更新 comments 字段 `Closed in IPC` `Closed in MCAS` ：、。 |
 | 反馈          | alertFeedback                                                          | 分析师对警报的反馈。 可取值为：`unknown`、`truePositive`、`falsePositive`、`benignPositive`。 |
 | status            | alertStatus                                                            | 警报生命周期状态 (阶段) 。 可取值为：`unknown`、`newAlert`、`inProgress`、`resolved`。 |
-| 标记              | 字符串集合                                                      | 可应用于警报并可以作为筛选条件的用户可定义标签 (例如，"HVA"、"SAW) "。 |
+| tags              | String collection                                                      | 可应用于警报并可以作为筛选条件的用户可定义标签 (例如，"HVA"、"SAW) " |
 | vendorInformation | [securityVendorInformation](../resources/securityvendorinformation.md) | 包含有关安全产品/服务供应商、提供程序和子提供程序的详细信息的复杂类型（例如，供应商 = Microsoft；提供程序 = Windows Defender ATP；子提供程序 = AppLocker）。 **提供程序和供应商字段是必需的。** |
 
 ## <a name="response"></a>响应
@@ -114,6 +114,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-alert-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-alert-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -182,6 +186,10 @@ Prefer: return=representation
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-alert-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-alert-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
