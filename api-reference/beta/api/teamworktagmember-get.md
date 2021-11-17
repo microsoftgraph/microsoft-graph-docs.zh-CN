@@ -2,15 +2,15 @@
 title: 获取 teamworkTagMember
 description: 读取团队合作TagMember 对象的属性和关系。
 author: anniecolonna
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 91d9fb93306affa987faf73032ba182ef2b1689e
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 1b37ec9e040ba42c3f6e6f9e821b2dd3654d0b5d
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53209956"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61017721"
 ---
 # <a name="get-teamworktagmember"></a>获取 teamworkTagMember
 命名空间：microsoft.graph
@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/beta/teams/53c53217-fe77-4383-bc5a-ed4937a1aecd/
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-teamworktagmember-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-teamworktagmember-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

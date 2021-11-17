@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: namkedia
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 7503965f6cc497b7216cbd5e1dd31cca85b8dde1
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b9d2849ad12de18c86d44bd5e53fceb090319dcc
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59073898"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61029602"
 ---
 # <a name="get-identityprovider-deprecated"></a>获取 identityProvider（已弃用）
 命名空间：microsoft.graph
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/v1.0/identityProviders/Amazon-OAuth
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-identityprovider-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-identityprovider-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

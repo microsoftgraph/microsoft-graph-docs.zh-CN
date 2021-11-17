@@ -5,12 +5,12 @@ author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: aa33de27db1c56b2974ca297df334d1b7e9ccfe3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 77f98770a5235b7ced7535e307caca200842c5a1
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147511"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61000530"
 ---
 # <a name="get-conversation"></a>获取对话
 
@@ -34,7 +34,7 @@ GET /groups/{id}/conversations/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 `$select` [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
@@ -71,6 +71,10 @@ GET https://graph.microsoft.com/v1.0/groups/4d81ce71-486c-41e9-afc5-e41bf2d0722a
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-conversation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-conversation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

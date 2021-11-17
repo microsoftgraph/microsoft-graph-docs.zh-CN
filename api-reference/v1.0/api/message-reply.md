@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 044f5493b7a7c91f1be0a755261f3cc34af50aa2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2a9bb1861e8ab9a32381a505bf333925b5c7a397
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59016104"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61029469"
 ---
 # <a name="message-reply"></a>消息：答复
 
@@ -30,7 +30,7 @@ ms.locfileid: "59016104"
 
 或者，[创建一个草稿以答复现有邮件](../api/message-createreply.md)[，并稍后](../api/message-send.md)发送。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -59,7 +59,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/reply
 | 参数    | 类型   | 说明 |
 |---------------|-------|---------|
 | 注释 | String | 要包含的注释。可以为空字符串。 |
-| 消息 | [message](../resources/message.md) | 回复邮件中要更新的任何可写属性。 |
+| message | [邮件](../resources/message.md) | 回复邮件中要更新的任何可写属性。 |
 
 当指定 MIME 格式的正文时，向 MIME 内容提供适用的 Internet 邮件头，所有邮件头在请求正文中都以 **base64** 格式进行编码。 此方法使用原始邮件的发件人作为收件人。
 
@@ -119,6 +119,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/message-reply-v1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/message-reply-v1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

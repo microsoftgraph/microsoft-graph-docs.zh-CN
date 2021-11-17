@@ -5,12 +5,12 @@ author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: f0c97e2a05900aa669af48aeb932bb2958d03ee7
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 00befb69c7509273317e1123dade4cdc1b375074
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60558595"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61031736"
 ---
 # <a name="list-notes"></a>列出注释
 命名空间：microsoft.graph
@@ -19,14 +19,14 @@ ms.locfileid: "60558595"
 
 获取与主题权限请求相关联的创作笔记列表。 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|SubjectRightsRequest.Read.All *、SubjectRightsRequest.ReadWrite.All*|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持|
+|应用程序|不支持|
 
 >[!IMPORTANT]
 >标有星号* (*) 当前不可用。 有关详细信息，请参阅[已知问题](/graph/known-issues#compliance)。
@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/beta/privacy/subjectRightsRequests/{subjectRight
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-authorednote-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-authorednote-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

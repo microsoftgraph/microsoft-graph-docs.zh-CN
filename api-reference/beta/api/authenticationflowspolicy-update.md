@@ -5,12 +5,12 @@ author: linkhp
 ms.localizationpriority: high
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 8ce1513a55c59fce9c3c4337a7f3b14afefead9e
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: b264133526dfa20a1d1a5d83c4a84e618d34bbf6
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58694984"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60982329"
 ---
 # <a name="update-authenticationflowspolicy"></a>更新 authenticationFlowsPolicy
 
@@ -92,6 +92,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-authenticationflowspolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-authenticationflowspolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,16 +1,16 @@
 ---
 title: 删除 profileCardProperty
-description: 删除 profileCardProperty 对象并删除配置文件卡片中的所有自定义项。
-localization_priority: Normal
+description: 删除 profileCardProperty 对象并从配置文件卡中删除所有自定义项。
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 7ad5741936e52f3dc4aad76c24a27711e24b5116
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c66150558e5ce779fca7ae0c5380337eaf041c73
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980858"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61023622"
 ---
 # <a name="delete-profilecardproperty"></a>删除 profileCardProperty
 
@@ -18,19 +18,19 @@ ms.locfileid: "48980858"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从组织的配置文件卡片中删除由其指定的 [profileCardProperty](../resources/profilecardproperty.md) 对象 `directoryPropertyName` ，并删除该属性的所有本地化的自定义项。
+从组织的配置文件卡中删除 [profileCardProperty](../resources/profilecardproperty.md) 对象，并删除该属性 `directoryPropertyName` 的任何本地化自定义。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | 所有用户读写。          |
+| 委派（工作或学校帐户）     | User.ReadWrite、User.ReadWrite.All          |
 | 委派（个人 Microsoft 帐户） | 不支持。                              |
 | 应用程序                            | 不支持。                              |
 
->**注意：** 若要对此操作使用委派权限，则需要已登录用户拥有租户管理员或全局管理员角色。
+>**注意：** 对此操作使用委派权限要求登录用户具有租户管理员或全局管理员角色。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -58,7 +58,7 @@ DELETE https://graph.microsoft.com/beta/organization/{organizationId}/settings/p
 
 ### <a name="request"></a>请求
 
-下面的示例演示如何从组织的配置文件卡片中删除名为 "Fax" 的属性。
+以下示例演示如何从组织的配置文件卡中删除名为"Fax"的属性。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -83,6 +83,10 @@ DELETE https://graph.microsoft.com/beta/organization/{organizationId}/settings/p
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-profilecardproperty-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-profilecardproperty-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

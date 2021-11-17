@@ -1,16 +1,16 @@
 ---
 title: 删除邮件
 description: 删除指定用户邮箱中的邮件，或删除邮件的关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 71ab17fa25dee8c5158d5ef166de68ca934d7ae5
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 07c37b78ab6851cb8d3efaec670d3d780b54c06c
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132816"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60980847"
 ---
 # <a name="delete-message"></a>删除邮件
 
@@ -20,9 +20,9 @@ ms.locfileid: "50132816"
 
 删除指定用户邮箱中的邮件，或删除邮件的关系。
 
-例如，可以在邮件中删除指定用户的特定[@-mention。](../resources/mention.md)
+例如，可以在邮件中删除[指定用户的特定 @-mention。](../resources/mention.md)
 
->**注意** 你可能无法删除由已知文件夹名称 (文件夹名称表示的可恢复邮件删除文件夹中 [](../resources/mailfolder.md) `recoverableitemsdeletions`) 。 有关详细信息[，请参阅"已删除](/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention)邮件[](/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items)保留和清理已删除项目"。
+>**注意** 您可能无法删除"可恢复的项目删除"文件夹中 (由已知文件夹名称 [](../resources/mailfolder.md) `recoverableitemsdeletions`) 。 有关详细信息 [，请参阅已删除邮件](/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) 保留 [和清理](/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) 已删除项目。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -44,7 +44,7 @@ DELETE /me/mailFolders/{id}/messages/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 
-若要删除邮件 [中的](../resources/mention.md) 特定提及内容，请执行：
+若要删除邮件 [中的](../resources/mention.md) 特定提及，
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/messages/{id}/mentions/{id}
@@ -53,7 +53,7 @@ DELETE /me/mailFolders/{id}/messages/{id}/mentions/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/mentions/{id}
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
@@ -93,6 +93,10 @@ DELETE https://graph.microsoft.com/beta/me/messages/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/delete-message-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-message-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### <a name="response-1"></a>响应 1
@@ -130,6 +134,10 @@ DELETE https://graph.microsoft.com/beta/me/messages/{id}/mentions/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-mention-in-message-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-mention-in-message-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

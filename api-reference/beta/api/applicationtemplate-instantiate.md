@@ -1,16 +1,16 @@
 ---
 title: applicationTemplate：实例化
 description: 使用此 API 创建新的 applicationTemplate
-localization_priority: Normal
+ms.localizationpriority: medium
 author: luleonpla
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 95cc198cbe828e47070758560b97acf2296113e7
-ms.sourcegitcommit: be09568fa07ab793cd1db500f537ca94ca9e5b4a
+ms.openlocfilehash: eae8a2ed4748936e3e8c9a623a61be0c95ee93b5
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51836883"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60982763"
 ---
 # <a name="applicationtemplate-instantiate"></a>applicationTemplate：实例化
 
@@ -18,9 +18,9 @@ ms.locfileid: "51836883"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将 Azure AD 应用程序库中的应用程序实例添加到目录中。
+将应用程序实例从应用程序Azure AD添加到目录中。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -94,6 +94,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/applicationtemplate-instantiate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/applicationtemplate-instantiate-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

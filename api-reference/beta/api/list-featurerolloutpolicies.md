@@ -1,16 +1,16 @@
 ---
 title: 列出 featureRolloutPolicies
 description: 检索 featureRolloutPolicy 对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: madhavpatel6
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: fe8a3a4b5d5318661856cc2f26f05a78283a43bf
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: cf02d43d36c4543f0a676f5a29bc5f71b40f2f5b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049308"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60997973"
 ---
 # <a name="list-featurerolloutpolicies"></a>列出 featureRolloutPolicies
 
@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/policies/featureRolloutPolicies
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-featurerolloutpolicies-policies-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-featurerolloutpolicies-policies-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

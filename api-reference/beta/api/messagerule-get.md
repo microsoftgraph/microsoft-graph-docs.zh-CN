@@ -2,15 +2,15 @@
 title: 获取 rule
 description: 获取 messageRule 对象的属性和关系。
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e4a7b89a221b446ed82fa2625ca74b4c48d241bf
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 60929ffe3a65e68a04bca3e578c85322952389cf
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050113"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61021894"
 ---
 # <a name="get-rule"></a>获取规则
 
@@ -75,6 +75,10 @@ GET https://graph.microsoft.com/beta/me/mailfolders/inbox/messagerules('AQAAAJ5d
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-messagerule-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-messagerule-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

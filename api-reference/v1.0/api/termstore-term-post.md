@@ -5,12 +5,12 @@ author: vishriv
 ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: apiPageType
-ms.openlocfilehash: cdd3324af372b7ec861cdd061656a5fb91337807
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 386e57af48e7357840bbf9e4c014ef0a5db46b2a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60944366"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61029111"
 ---
 # <a name="create-term"></a>创建术语
 命名空间：microsoft.graph.termStore
@@ -49,7 +49,7 @@ POST sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}/children
 
 下表显示创建术语对象 [时所需的属性](../resources/termstore-term.md) 。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |labels|[microsoft.graph.termStore.localizedLabel](../resources/termstore-localizedlabel.md) 集合|要创建的术语的标签。|
 
@@ -98,6 +98,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-term-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-term-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

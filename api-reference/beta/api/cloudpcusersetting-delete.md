@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 4df590b6be7fed73ff6b01d992130e5dc5377b3c
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: e04ac39ef8e02e62267d98a1a9b37ab714b33bb8
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59763322"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61030483"
 ---
 # <a name="delete-cloudpcusersetting"></a>删除 cloudPcUserSetting
 
@@ -20,7 +20,7 @@ ms.locfileid: "59763322"
 
 删除 [cloudPcUserSetting](../resources/cloudpcusersetting.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -80,6 +80,10 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/userSet
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-cloudpcusersetting-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-cloudpcusersetting-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

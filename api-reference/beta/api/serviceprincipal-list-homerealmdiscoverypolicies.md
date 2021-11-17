@@ -1,16 +1,16 @@
 ---
 title: 列出分配的 homeRealmDiscoveryPolicies
 description: 列出分配给 servicePrincipal 的 homeRealmDiscoveryPolicies。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 73bc69c6ef53f831126f2d87205c1ec423d61b92
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b3d3b29604294943108d658722c68597e8480800
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52036616"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60977930"
 ---
 # <a name="list-assigned-homerealmdiscoverypolicy"></a>列出分配的 homeRealmDiscoveryPolicy
 
@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/homeRealmDiscoveryPo
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-homerealmdiscoverypolicies-on-serviceprincipal-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-homerealmdiscoverypolicies-on-serviceprincipal-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

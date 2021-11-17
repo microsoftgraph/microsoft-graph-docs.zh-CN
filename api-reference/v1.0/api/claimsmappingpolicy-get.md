@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: paulgarn
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 87d064127453d59ac1212b993305f3fa7a389ecb
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d7f25a3685a68bcea1f6215fab5a90ecce8bc03c
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59016748"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61025932"
 ---
 # <a name="get-claimsmappingpolicy"></a>获取 claimsMappingPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "59016748"
 
 检索 [claimsMappingPolicy](../resources/claimsmappingpolicy.md) 对象的属性和关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -41,7 +41,7 @@ GET /policies/claimsMappingPolicies/{id}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$expand` 和 `$select` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。 使用 `$expand` 时，请确保你的应用请求读取扩展对象的权限。
+此方法支持 `$expand` 和 `$select` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。 使用 `$expand` 时，请确保应用请求读取扩展对象的权限。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-claimsmappingpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-claimsmappingpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

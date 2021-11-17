@@ -5,12 +5,12 @@ author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: e39ef15a3fb49138a475980a9e347505a4b48b16
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 0500eb00ccaddb6233621164d72c903b83b0d255
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60926376"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61020325"
 ---
 # <a name="update-subjectrightsrequest"></a>更新 subjectRightsRequest
 命名空间：microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "60926376"
 
 更新 [subjectRightsRequest 对象](../resources/subjectRightsRequest.md) 的属性。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -55,7 +55,7 @@ PATCH /privacy/subjectRightsRequests/{subjectRightsRequestId}
 |属性|类型|说明|
 |:---|:---|:---|
 |assignedTo|[microsoft.graph.identity](../resources/identity.md)|请求分配给的用户的标识信息。|
-|description|String|更新了请求的说明。|
+|说明|String|更新了请求的说明。|
 |displayName|String|请求的更新名称。|
 |internalDueDateTime|DateTimeOffset|更新了请求的内部截止日期。|
 
@@ -96,6 +96,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-subjectrightsrequest-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-subjectrightsrequest-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

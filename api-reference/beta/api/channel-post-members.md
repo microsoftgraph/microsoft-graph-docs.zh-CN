@@ -5,12 +5,12 @@ author: akjo
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 198b68cdc33b780cfa25b10a128f9ccacb5bda03
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 719a247e51c4f955c152f6fd98fbd9050222eec6
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60934784"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61026893"
 ---
 # <a name="add-member-to-channel"></a>向频道添加成员
 
@@ -20,7 +20,7 @@ ms.locfileid: "60934784"
 
 将 [conversationMember](../resources/conversationmember.md) 添加到 [频道](../resources/channel.md)。 此操作仅允许 **membershipType** 值为 的通道 `private` 。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -47,7 +47,7 @@ POST /teams/{team-id}/channels/{channel-id}/members
 
 请求正文中包含以下属性。
 
-| 属性   | 类型 |Description|
+| 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
 |角色|string 集合|用户的角色。 必须为空 `owner` 。|
 |用户|[user](../resources/user.md)|要添加到频道的用户。|
@@ -91,6 +91,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/channel-add-member-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/channel-add-member-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -156,6 +160,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/channel-add-member-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/channel-add-member-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -219,6 +227,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/channel-add-member-3-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/channel-add-member-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

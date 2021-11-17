@@ -1,16 +1,16 @@
 ---
 title: List calendarGroups
 description: 获取用户的日历组。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c1521f78160e4abb2773737c65aebd6300adb668
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a356eaf24016ad47cec0e31027227e8ce10ec80f
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051730"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61016832"
 ---
 # <a name="list-calendargroups"></a>List calendarGroups
 
@@ -76,10 +76,14 @@ GET https://graph.microsoft.com/beta/me/calendarGroups
 [!INCLUDE [sample-code](../includes/snippets/java/get-calendargroups-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-calendargroups-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

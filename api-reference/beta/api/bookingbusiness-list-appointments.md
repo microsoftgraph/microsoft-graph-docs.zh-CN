@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: db5c034c1c6a006ed648cecf4fed4e416fe95f3e
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 0330961d90e3325c36b734bec6d867a6ddd55ec7
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60687745"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60999683"
 ---
 # <a name="list-appointments"></a>列出约会
 
@@ -38,7 +38,7 @@ GET /bookingBusinesses/{id}/appointments
 
 若要获取日期范围内 Bookings 业务（而不是 ）的约会集，请获取该 `$filter` 日期范围的[calendarView。](bookingbusiness-list-calendarview.md)
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {code}。 必需。|
@@ -73,6 +73,10 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-appointments-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-appointments-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

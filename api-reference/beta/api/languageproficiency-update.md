@@ -1,16 +1,16 @@
 ---
 title: 更新 languageProficiency
 description: 更新用户配置文件中 languageProficiency 对象的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 5ab4d62d473fd07ddd202309b5345f0b8c07bd12
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 22687e9e6aaf9ac826004ac67827091d67e76c97
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049329"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61018589"
 ---
 # <a name="update-languageproficiency"></a>更新 languageProficiency
 
@@ -55,7 +55,7 @@ PATCH /users/{id | userPrincipalName}/profile/languages/{id}
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
 |displayName|String|包含语言长格式的名称。 |
 |inference|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断出来的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|读取|languageProficiencyLevel|表示阅读对象所代表的语言理解的用户。 可取值为：`elementary`、`conversational`、`limitedWorking`、`professionalWorking`、`fullProfessional`、`nativeOrBilingual` 或 `unknownFutureValue`。|
+|读取|languageProficiencyLevel|表示用户阅读对象所代表的语言理解。 可取值为：`elementary`、`conversational`、`limitedWorking`、`professionalWorking`、`fullProfessional`、`nativeOrBilingual` 或 `unknownFutureValue`。|
 |source|[personDataSource](../resources/persondatasource.md)|如果从另一个服务同步，则值源自何处。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |spoken|languageProficiencyLevel|表示用户对对象所代表的语言的熟练程度。 可取值为：`elementary`、`conversational`、`limitedWorking`、`professionalWorking`、`fullProfessional`、`nativeOrBilingual` 或 `unknownFutureValue`。|
 |tag|String|包含 en-US、no-NB、en-AU (语言的四字符 BCP47) 。|
@@ -99,6 +99,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-languageproficiency-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-languageproficiency-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

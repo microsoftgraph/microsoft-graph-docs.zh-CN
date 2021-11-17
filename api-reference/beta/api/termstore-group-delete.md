@@ -2,15 +2,15 @@
 title: 删除组
 description: 删除术语存储中的组对象。
 author: mohitpcad
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: apiPageType
-ms.openlocfilehash: 4d76c86859c119f5811ad85bd1b44047220a1598
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: e44906be1510bde6e6cd1c58befb3bb376461a41
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514383"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61017469"
 ---
 # <a name="delete-group"></a>删除组
 命名空间：microsoft.graph.termStore
@@ -78,6 +78,10 @@ DELETE https://graph.microsoft.com/beta/termStore/groups/{groupId}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-group-from-store-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-group-from-store-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

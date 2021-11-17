@@ -1,16 +1,16 @@
 ---
 title: 'message: move'
-description: 将邮件移动到文件夹。 该操作会在目标文件夹中创建邮件的新副本并删除原始邮件。
+description: 将邮件移动到文件夹。该操作会在目标文件夹中创建邮件的新副本并删除原始邮件。
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9982fa413b23aa5746a027879f8f9d3dbdc52c05
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 58b2e83d01eddfa58b7e7713504ac8291a107531
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050141"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61028285"
 ---
 # <a name="message-move"></a>message: move
 
@@ -18,7 +18,7 @@ ms.locfileid: "52050141"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将邮件移动到指定用户的邮箱中的另一个文件夹。 该操作会在目标文件夹中创建邮件的新副本并删除原始邮件。
+将邮件移动到指定用户邮箱中的另一个文件夹。这将在目标文件夹中创建邮件的新副本，并删除原始邮件。
 
 ## <a name="permissions"></a>权限
 
@@ -97,6 +97,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/message-move-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/message-move-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

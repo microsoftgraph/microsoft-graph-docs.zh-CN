@@ -5,12 +5,12 @@ author: sharad-sharma-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 7a4a2681ef4dc78d199ae3e771a919496e3b6359
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: def89b3006545503708c6574bf2f70f938ad24ec
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766206"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61016279"
 ---
 # <a name="get-educationassignmentsettings"></a>获取 educationAssignmentSettings
 命名空间：microsoft.graph
@@ -49,7 +49,7 @@ GET /education/classes/{id}/assignmentSettings
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [educationAssignmentSettings](../resources/educationassignmentsettings.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [educationAssignmentSettings](../resources/educationassignmentsettings.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -79,6 +79,10 @@ GET https://graph.microsoft.com/v1.0/education/classes/f4a941ff-9da6-4707-ba5b-0
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-educationassignmentsettings-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-educationassignmentsettings-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

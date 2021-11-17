@@ -5,12 +5,12 @@ description: 从列表或网站SharePoint内容类型。
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 8cee46edec94462d7f66a25a154fa361787c36d9
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: 7159f6881fddb326b9b14e0f2b8e56ff062b04ea
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60729253"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61028768"
 ---
 # <a name="delete-contenttype"></a>删除 contentType
 命名空间：microsoft.graph
@@ -20,7 +20,7 @@ ms.locfileid: "60729253"
 从[列表或][contentType][网站中删除][]内容[类型][]。
 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -80,6 +80,10 @@ DELETE https://graph.microsoft.com/beta/sites/{site-id}/contentTypes/{contentTyp
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-contenttype-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-contenttype-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

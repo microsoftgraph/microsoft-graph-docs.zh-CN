@@ -1,16 +1,16 @@
 ---
 title: 删除 unifiedRoleDefinition
 description: 删除 unifiedRoleDefinition 对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7de16492df085b48d2fe580ff54d3cacf9dc0d22
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: f04ed12141ac5bbe50f7e0d668c3494bd7cdb724
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334365"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60988866"
 ---
 # <a name="delete-unifiedroledefinition"></a>删除 unifiedRoleDefinition
 
@@ -22,7 +22,7 @@ ms.locfileid: "53334365"
 
 目前支持以下 RBAC 提供程序：
 - Intune (设备) 
-- Azure AD (目录)  
+- 目录 (Azure AD)  
 
 > [!NOTE]
 > 云电脑 RBAC 提供商当前仅支持[列表和](rbacapplication-list-roledefinitions.md)[获取](unifiedroledefinition-get.md)操作。
@@ -31,7 +31,7 @@ ms.locfileid: "53334365"
 
 根据 RBAC 提供程序以及 (或应用程序) 的权限类型，从下表中选择调用此 API 所需的最低特权权限。 若要了解 [更多信息，包括在](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) 选择更多特权权限之前保持谨慎，请参阅 [权限](/graph/permissions-reference)。 
 
-### <a name="for-device-management-intune-provider"></a>对于 Intune (提供程序的设备) 管理
+### <a name="for-device-management-intune-provider"></a>对于 Intune (的设备) 提供程序
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -39,7 +39,7 @@ ms.locfileid: "53334365"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | DeviceManagementRBAC.ReadWrite.All |
 
-### <a name="for-directory-azure-ad-provider"></a>对于 Azure AD (提供程序) 目录
+### <a name="for-directory-azure-ad-provider"></a>对于目录 (Azure AD) 提供程序
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -62,7 +62,7 @@ DELETE /roleManagement/directory/roleDefinitions/{id}
 
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称          | 说明   |
 |:--------------|:--------------|
@@ -105,6 +105,10 @@ DELETE https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-unifiedroledefinition-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-unifiedroledefinition-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

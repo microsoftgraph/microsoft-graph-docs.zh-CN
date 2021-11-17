@@ -1,16 +1,16 @@
 ---
 title: 获取 conditionalAccessPolicy
 description: 检索 conditionalAccessPolicy 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d63de5409730b413d5f65e4e704b89b4681715d2
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 29cc9225d894e3a87021cc50e8110076cf5ed4d3
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047243"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61018772"
 ---
 # <a name="get-conditionalaccesspolicy"></a>获取 conditionalAccessPolicy
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/policies/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-conditionalaccesspolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-conditionalaccesspolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -3,15 +3,15 @@ author: JeremyKelley
 description: 获取列表中项的集合。
 ms.date: 09/11/2017
 title: 检索 SharePoint 列表中的项
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 91a6682b2fd9d9a339332982cb1a89bfca163c8c
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 025eb2fbcf0d80925b74902d6a2b48b3f8aebb75
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475848"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60997946"
 ---
 # <a name="enumerate-items-in-a-list"></a>枚举列表中的项
 
@@ -67,6 +67,10 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expan
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-list-items-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-list-items-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

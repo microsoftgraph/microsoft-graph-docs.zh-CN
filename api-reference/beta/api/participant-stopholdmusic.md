@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 35ff268abaebaa466a68e3949b8682201a2bf982
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 8d4c4295192e730ab935381a110954b305fcfefb
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59507280"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60997763"
 ---
 # <a name="participant-stopholdmusic"></a>participant： stopHoldMusic
 
@@ -20,7 +20,7 @@ ms.locfileid: "59507280"
 
 重新合并之前置于呼叫保留状态的参与者。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
@@ -46,7 +46,7 @@ POST /communications/calls/{id}/participants/{id}/stopHoldMusic
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数      | 类型    |Description|
+| 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
 |clientContext|String|可选。 唯一的客户端上下文字符串。 最多可包含 256 个字符。|
 
@@ -88,6 +88,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/participant-stopholdmusic-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/participant-stopholdmusic-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

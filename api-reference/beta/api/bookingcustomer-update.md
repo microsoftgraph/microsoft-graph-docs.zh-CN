@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: c15279045eda8e6c884039ee075a3e63720142b6
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 8dd772c1a5913abd060c6349defbc206822f9274
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694678"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60990484"
 ---
 # <a name="update-bookingcustomer"></a>更新 bookingcustomer
 
@@ -45,7 +45,7 @@ PATCH /bookingBusinesses/{id}/customers/{id}
 |:---------------|:--------|:----------|
 |displayName|String|客户的名称。|
 |emailAddress|String|客户的 SMTP 地址。|
-|地址|[physicalAddress](../resources/physicaladdress.md) 集合|与客户关联的地址，包括住宅、企业和其他地址。|
+|addresses|[physicalAddress](../resources/physicaladdress.md) 集合|与客户关联的地址，包括住宅、企业和其他地址。|
 |phones|[phone](../resources/phone.md) collection|电话客户关联的电话号码，包括家庭号码、商务号码和移动电话号码。|
 
 ## <a name="response"></a>响应
@@ -82,6 +82,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-bookingcustomer-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-bookingcustomer-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

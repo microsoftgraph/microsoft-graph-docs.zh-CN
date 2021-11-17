@@ -2,15 +2,15 @@
 author: JeremyKelley
 title: 获取列表的元数据
 description: 返回列表的元数据。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 5091e8de36ff357b00a9b2517fab968f4a99cd41
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: a42e46960254623358059cfb4245b736f7745717
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50958020"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61020748"
 ---
 # <a name="get-metadata-for-a-list"></a>获取列表的元数据
 
@@ -20,7 +20,7 @@ ms.locfileid: "50958020"
 
 返回列表的 [元数据][]。
 
-[列表]: ../resources/list.md
+[list]: ../resources/list.md
 
 ## <a name="permissions"></a>权限
 
@@ -69,6 +69,10 @@ GET /sites/{site-id}/lists/{list-id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-list-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-list-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -121,6 +125,10 @@ GET /sites/{site-id}/lists/{list-title}
 [!INCLUDE [sample-code](../includes/snippets/java/get-list-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-list-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -169,6 +177,10 @@ GET /sites/{site-id}/lists/{list-id}?select=name,lastModifiedDateTime&expand=col
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-list-multi-expand-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-list-multi-expand-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

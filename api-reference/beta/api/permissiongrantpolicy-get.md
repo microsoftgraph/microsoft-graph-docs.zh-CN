@@ -1,16 +1,16 @@
 ---
 title: 获取 permissionGrantPolicy
 description: 检索单个 permissionGrantPolicy 对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: f1aa51b9e31924443f6f276333bd9c284185a8c0
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 9d8209bfc002f74749ee688eca69f0f701bed39e
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052955"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60985772"
 ---
 # <a name="get-permissiongrantpolicy"></a>获取 permissionGrantPolicy
 
@@ -42,7 +42,7 @@ GET /policies/permissionGrantPolicies/{id}
 
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称           | 说明                |
 |:---------------|:---------------------------|
@@ -60,7 +60,7 @@ GET /policies/permissionGrantPolicies/{id}
 
 ### <a name="request"></a>请求
 
-下面展示了示例请求。 此示例中，请求的策略是内置权限授予策略，其中包括针对已验证发布者的应用或在此租户中注册的应用分类的低委派 `microsoft-user-default-low` 权限。
+下面展示了示例请求。 在此例中，请求的策略是内置权限授予策略，其中包括分类为低的委派权限，适用于来自已验证发布者的应用或在此租户中注册 `microsoft-user-default-low` 的应用。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/policies/permissionGrantPolicies/microsoft-
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-permissiongrantpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-permissiongrantpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

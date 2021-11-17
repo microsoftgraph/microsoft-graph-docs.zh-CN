@@ -5,19 +5,19 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 3b138c9cc59bb51e43d815874a228de4a0a5f9a5
-ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
+ms.openlocfilehash: 9cd4774894fe1ec92aa82fed5f16f835e8da612d
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60220365"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60979548"
 ---
 # <a name="update-authenticationmethodspolicy"></a>更新 authenticationMethodsPolicy
 命名空间：microsoft.graph
 
 更新 [authenticationMethodsPolicy 对象](../resources/authenticationmethodspolicy.md) 的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -70,6 +70,20 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#authenticationMethodsPolicy",
+    "registrationEnforcement": {
+    "authenticationMethodsRegistrationCampaign": {
+        "snoozeDurationInDays": 1,
+        "state": "enabled",
+        "excludeTargets": [],
+        "includeTargets": [
+            {
+                "id": "3ee3a9de-0a86-4e12-a287-9769accf1ba2",
+                "targetType": "group",
+                "targetedAuthenticationMethod": "microsoftAuthenticator"
+            }
+        ]
+      }
+    },
     "authenticationMethodConfigurations": [
         {
             "@odata.type": "#microsoft.graph.fido2AuthenticationMethodConfiguration",
@@ -96,6 +110,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-authenticationmethodspolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-authenticationmethodspolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

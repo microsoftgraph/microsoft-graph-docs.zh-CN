@@ -2,15 +2,15 @@
 title: 笔记本：getRecentNotebooks
 description: 获取登录用户访问的 recentNotebook 实例列表。
 author: jewan-microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 0aea59315d6f015b1ca8938ee9ea1a0ed83ac3a7
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d39a35863cb7f43b09b2c7627000c15e7bfcc49c
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784007"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61021832"
 ---
 # <a name="notebook-getrecentnotebooks"></a>笔记本：getRecentNotebooks
 
@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/beta/me/onenote/notebooks/getRecentNotebooks(inc
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/recent-notebooks-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/recent-notebooks-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

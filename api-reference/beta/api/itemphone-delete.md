@@ -1,16 +1,16 @@
 ---
 title: 删除 itemPhone
 description: 从用户配置文件中删除 itemPhone 对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 27aba7aa6a93918991f890bebdaad5ae7a2c69aa
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: d25bcf8008a28f7da076cde2ac71544770d69e00
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50776296"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60981320"
 ---
 # <a name="delete-itemphonenumber"></a>删除 itemPhoneNumber
 
@@ -83,6 +83,10 @@ DELETE https://graph.microsoft.com/beta/users/{userId}/profile/phones/{itemPhone
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-itemphone-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-itemphone-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
