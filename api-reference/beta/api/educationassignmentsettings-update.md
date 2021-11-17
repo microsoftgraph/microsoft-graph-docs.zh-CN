@@ -5,12 +5,12 @@ author: dipakboyed
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: af040de0db27907b24d1af427fca0d599347f766
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: bad8286d7bc48477978388c2b04a1500c97a73ce
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60929653"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61003161"
 ---
 # <a name="update-educationassignmentsettings"></a>更新 educationAssignmentSettings
 命名空间：microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "60929653"
 
 更新 [educationAssignmentSettings 对象](../resources/educationassignmentsettings.md) 的属性。 只有教师可以更新这些设置。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -49,9 +49,9 @@ PATCH /education/classes/{id}/assignmentSettings
 
 下表显示更新 [educationAssignmentSettings 时所需的属性](../resources/educationassignmentsettings.md)。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
-|submissionAnimationDisabled|Boolean|指示是否显示打开的庆祝动画。 的值 `true` 指示不会显示动画。 默认值为 `false`。|
+|submissionAnimationDisabled|布尔|指示是否显示打开的庆祝动画。 的值 `true` 指示不会显示动画。 默认值为 `false`。|
 
 
 
@@ -91,6 +91,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-educationassignmentsettings-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-educationassignmentsettings-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

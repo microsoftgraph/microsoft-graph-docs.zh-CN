@@ -1,16 +1,16 @@
 ---
 title: 获取 teamworkBot
-description: 读取团队合作Bot 对象的属性和关系。
+description: 读取 teamworkBot 对象的属性和关系。
 author: AkJo
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: fd85a51901d8ed7c09b6b132a7604147e2df1d16
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: afe8f74e4dd71fd3160a244e6ae7c77315f985b8
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873155"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61017924"
 ---
 # <a name="get-teamworkbot"></a>获取 teamworkBot
 
@@ -18,7 +18,7 @@ ms.locfileid: "49873155"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取与[TeamsApp](../resources/teamsapp.md)的特定[定义](../resources/teamsappdefinition.md)相关联的机器人。
+获取与[TeamsApp](../resources/teamsapp.md)[的特定定义](../resources/teamsappdefinition.md)相关联的机器人。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -40,9 +40,9 @@ GET /appCatalogs/teamsApps/{app-id}/appDefinitions/{app-definition-id}/bot
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 `$select` [OData 查询参数](/graph/query-parameter) 来帮助自定义响应。
+此方法支持使用 `$select` [OData 查询参数](/graph/query-parameter)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
@@ -52,7 +52,7 @@ GET /appCatalogs/teamsApps/{app-id}/appDefinitions/{app-definition-id}/bot
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回响应代码和 [团队合作Bot](../resources/teamworkbot.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [团队合作Bot](../resources/teamworkbot.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/e4c5c249-bb4b-419e-b7
 [!INCLUDE [sample-code](../includes/snippets/java/get-teamworkbot-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-teamworkbot-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -106,8 +110,8 @@ Content-Type: application/json
 ```
 ## <a name="see-also"></a>另请参阅
 
-- 若要在团队中安装机器人，请参阅团队 [中的列表应用中的示例](team-list-installedapps.md)2。
-- 若要在聊天中安装聊天机器人，请参阅聊天中的 [列表应用中的示例](chat-list-installedapps.md)2。
-- 若要在用户的个人范围内安装机器人，请参阅为用户安装 [的列表应用中的示例](userteamwork-list-installedapps.md)2。
+- 若要在团队中安装机器人，请参阅在团队中[列出应用中的示例 2。](team-list-installedapps.md)
+- 若要在聊天中安装聊天机器人，请参阅在聊天中[列出应用中的示例 2。](chat-list-installedapps.md)
+- 若要在用户的个人范围内安装机器人，请参阅为用户安装的列表 [应用中的示例](userteamwork-list-installedapps.md)2。
 
 

@@ -1,16 +1,16 @@
 ---
 title: Create workforceIntegration
 description: 创建新的 workforceIntegration 对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 76cb01efb15f7937c9e71e1fa26eb8d425f2b4d7
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: d87f075429954c2c289223ebd0f1edeacb7360d5
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054684"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61009244"
 ---
 # <a name="create-workforceintegration"></a>Create workforceIntegration
 
@@ -51,7 +51,7 @@ POST /teamwork/workforceIntegrations
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和新 [workforceIntegration](../resources/workforceintegration.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和新的 `201 Created` [workforceIntegration](../resources/workforceintegration.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -97,6 +97,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-workforceintegration-from-teamwork-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-workforceintegration-from-teamwork-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

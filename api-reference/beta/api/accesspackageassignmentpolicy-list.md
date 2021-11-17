@@ -1,16 +1,16 @@
 ---
 title: 列出 accessPackageAssignmentPolicies
 description: 检索 accessPackageAssignmentPolicy 对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e6c6d3bf4706dcac398cef182cf692aee511f07b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: f15c7824dba7e79a6c4172ea58fea1b117b8c59f
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048629"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60983533"
 ---
 # <a name="list-accesspackageassignmentpolicies"></a>列出 accessPackageAssignmentPolicies
 
@@ -18,7 +18,7 @@ ms.locfileid: "52048629"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 [Azure AD 权利管理](../resources/entitlementmanagement-root.md)中，检索 [accessPackageAssignmentPolicy 对象](../resources/accesspackageassignmentpolicy.md) 的列表。 如果委派用户位于目录角色中，则结果列表包括调用方有权访问的所有目录和访问包中读取的所有分配策略。  如果委派的用户是访问包管理器或目录所有者，他们应改为检索他们可以通过列表 [accessPackages](accesspackage-list.md) 读取的访问包的策略，方法为包括 `$expand=accessPackageAssignmentPolicies` 作为查询参数。
+在[Azure AD中](../resources/entitlementmanagement-root.md)，检索[accessPackageAssignmentPolicy 对象](../resources/accesspackageassignmentpolicy.md)的列表。 如果委派用户位于目录角色中，则结果列表包括调用方有权访问的所有目录和访问包中读取的所有分配策略。  如果委派的用户是访问包管理器或目录所有者，他们应改为检索他们可以通过列表 [accessPackages](accesspackage-list.md) 读取的访问包的策略，方法为包括 `$expand=accessPackageAssignmentPolicies` 作为查询参数。
 
 ## <a name="permissions"></a>权限
 
@@ -40,7 +40,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持一些 OData 查询参数来帮助自定义响应。 例如，若要检索具有指定权限的访问包分配策略显示名称，请包含 `$filter=displayName eq 'Employee sales support'` 到查询中。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持一些 OData 查询参数来帮助自定义响应。 例如，若要检索具有指定权限的访问包分配显示名称，请包括在 `$filter=displayName eq 'Employee sales support'` 查询中。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-accesspackageassignmentpolicies-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-accesspackageassignmentpolicies-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,16 +1,16 @@
 ---
 title: 列出 riskDetection
 description: 检索 **riskDetection 对象集合** 的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: cloudhandler
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: e7e0bb9eba36a3b6fdbd6ae03db718dc210d5424
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: a89134646de3f31bf5c8ebe5c1c1c77a3e118360
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50955524"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61026432"
 ---
 # <a name="list-riskdetection"></a>列出 riskDetection
 
@@ -21,7 +21,7 @@ ms.locfileid: "50955524"
 检索 **riskDetection 对象集合** 的属性。
 
 >[!NOTE]
->必须具有 Azure AD Premium P1 或 P2 许可证才能使用风险检测 API。
+>必须具有一个Azure AD Premium P1 P2 许可证才能使用风险检测 API。
 
 ## <a name="permissions"></a>权限
 
@@ -44,7 +44,7 @@ GET /identityProtection/riskDetections
 
 此方法支持 `$filter` 并 `$select` 自定义查询响应。 请参阅本主题稍后介绍的示例。 
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称      |说明|
 |:----------|:----------|
@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/beta/riskDetections
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-riskdetection-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-riskdetection-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -174,6 +178,10 @@ GET https://graph.microsoft.com/beta/identityProtection/riskDetections/c2b6c2b9-
 [!INCLUDE [sample-code](../includes/snippets/java/list-riskdetection-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-riskdetection-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -254,6 +262,10 @@ GET https://graph.microsoft.com/beta/identityProtection/riskDetections?$filter=r
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-filter-riskdetections-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-filter-riskdetections-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: spunukol
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 76def09deba9b1526ae166342b3cb003e8b9ae7a
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: 726a0cf4c7bffd84685684e7857d49535342b18f
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60288368"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61034599"
 ---
 # <a name="list-device-groups"></a>列出设备组
 
@@ -90,6 +90,10 @@ GET https://graph.microsoft.com/beta/devices/{id}/memberOf
 [!INCLUDE [sample-code](../includes/snippets/java/get-device-memberof-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-device-memberof-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -155,7 +159,7 @@ Content-type: text/plain
 
 394
 
-### <a name="example-3-use-odata-cast-and-search-to-get-membership-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a>示例 3：使用 OData cast 和 $search 获取包含字母"Video"的显示名称（包括返回的对象计数）的成员资格
+### <a name="example-3-use-odata-cast-and-search-to-get-membership-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a>示例 3：使用 OData 转换$search获取包含字母"Video"的显示名称（包括返回的对象计数）的成员资格
 
 #### <a name="request"></a>请求
 
@@ -198,7 +202,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-use-odata-cast-and-filter-to-get-membership-with-a-display-name-that-starts-with-the-letter-a-including-a-count-of-returned-objects"></a>示例 4：使用 OData 转换$filter获取以字母"A"开头显示名称包含返回对象计数的组成员身份
+### <a name="example-4-use-odata-cast-and-filter-to-get-membership-with-a-display-name-that-starts-with-the-letter-a-including-a-count-of-returned-objects"></a>示例 4：使用 OData 强制转换$filter获取以字母"A"开头的 显示名称 的成员资格，其中包括返回的对象数
 
 #### <a name="request"></a>请求
 

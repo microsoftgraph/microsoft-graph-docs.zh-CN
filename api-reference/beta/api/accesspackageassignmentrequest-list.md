@@ -1,16 +1,16 @@
 ---
 title: 列出 accessPackageAssignmentRequests
 description: 检索 accessPackageAssignmentRequest 对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: d5ce1ca824f104de9058be4ed748d5b87a731e71
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: c6a111f65195b109bc786719de1f8946d59c6674
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53466934"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60983456"
 ---
 # <a name="list-accesspackageassignmentrequests"></a>列出 accessPackageAssignmentRequests
 
@@ -18,7 +18,7 @@ ms.locfileid: "53466934"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 [Azure AD 权利管理](../resources/entitlementmanagement-root.md)中，检索 [accessPackageAssignmentRequest 对象](../resources/accesspackageassignmentrequest.md) 的列表。  生成的列表包括所有目录和访问包中调用方有权访问的分配请求（当前和过期）。
+在[Azure AD中](../resources/entitlementmanagement-root.md)，检索[accessPackageAssignmentRequest 对象](../resources/accesspackageassignmentrequest.md)的列表。  生成的列表包括调用方有权访问的所有目录和访问包中当前和过期的所有分配请求。
 
 ## <a name="permissions"></a>权限
 
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-accesspackageassignmentrequests-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-accesspackageassignmentrequests-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

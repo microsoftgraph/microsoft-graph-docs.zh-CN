@@ -5,12 +5,12 @@ author: vishriv
 ms.prod: taxonomy
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.openlocfilehash: da24f04c141d623284a60e213dac781c192bc6dc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6c803376a49171cfccdc6594c55392b81c15b1ef
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59094583"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61022985"
 ---
 # <a name="list-children"></a>列出子项
 命名空间：microsoft.graph.termStore
@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/v1.0/sites/microsoft.sharepoint.com,b9b0bc03-cbc
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-term-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-term-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

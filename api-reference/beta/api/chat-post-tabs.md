@@ -1,16 +1,16 @@
 ---
 title: 向聊天添加选项卡
-description: '将 (固定) 选项卡添加到指定聊天。 '
+description: '将 (将) 选项卡添加到指定聊天。 '
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f422823b8646bd695c94640b15f456e3e372e0d5
-ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
+ms.openlocfilehash: 8295e17a60f92805e2c796bd238fd1e9ed11bf80
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52971256"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61024021"
 ---
 # <a name="add-tab-to-chat"></a>向聊天添加选项卡
 
@@ -18,11 +18,11 @@ ms.locfileid: "52971256"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将 (固定) [选项卡](../resources/teamstab.md) 添加到指定的 [聊天中](../resources/chat.md)。 相应的应用必须已安装 [在聊天 中](../api/chat-list-installedapps.md)。
+Add (pin) a [tab](../resources/teamstab.md) to the specified [chat](../resources/chat.md). 相应的应用必须已安装 [在聊天 中](../api/chat-list-installedapps.md)。
 
 > **注意**：如果聊天与 [onlineMeeting](../resources/onlinemeeting.md) 实例关联，则实际上选项卡将添加到会议。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -94,6 +94,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/add-tab-to-chat-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/add-tab-to-chat-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

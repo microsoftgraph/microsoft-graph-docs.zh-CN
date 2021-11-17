@@ -5,12 +5,12 @@ author: nickgmicrosoft
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 5b41679d67ddbc44d908523f9d8c40cef8007dce
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ea8d53e6ef0e58c3c3776e365d3fdb34dcc6ad84
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59073897"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61027647"
 ---
 # <a name="update-identityapiconnector"></a>更新 identityApiConnector
 
@@ -18,7 +18,7 @@ ms.locfileid: "59073897"
 
 更新 [identityApiConnector 对象](../resources/identityapiconnector.md) 的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -112,6 +112,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-identityapiconnector-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-identityapiconnector-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -130,7 +134,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-2-changing-api-connector-to-use-client-certificate-authentication"></a>示例 2：将 API 连接器更改为使用客户端证书身份验证
 
-这将覆盖之前的任何 authenticationConfiguration 设置。 若要从基本身份验证更改为证书身份验证，请使用此模式。 若要向证书列表中添加其他证书，请使用Upload[证书方法](../api/identityapiconnector-uploadclientcertificate.md)。 使用此方法时，API 连接器的"Get"或"List"操作的类型将为 `authenticationConfiguration` [microsoft.graph.clientCertificateAuthentication](../resources/clientcertificateauthentication.md)。
+这将覆盖之前的任何 authenticationConfiguration 设置。 若要从基本身份验证更改为证书身份验证，请使用此模式。 若要向证书列表中添加其他证书，请使用 Upload[客户端证书](../api/identityapiconnector-uploadclientcertificate.md)方法。 使用此方法时，API 连接器的"Get"或"List"操作的类型将为 `authenticationConfiguration` [microsoft.graph.clientCertificateAuthentication](../resources/clientcertificateauthentication.md)。
 
 #### <a name="request"></a>请求
 
@@ -170,6 +174,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-identityapiconnector-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-identityapiconnector-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

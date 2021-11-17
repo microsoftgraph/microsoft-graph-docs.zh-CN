@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mahage-msft
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 9e926414d0806f5dbc6979f0ff360d5400193048
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 81862193d55c8143d6d84ee6240f46a130b78171
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59765702"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61023930"
 ---
 # <a name="create-case"></a>创建案例
 
@@ -21,9 +21,9 @@ ms.locfileid: "59765702"
 创建新的 [case](../resources/ediscovery-case.md) 对象。
 
 >[!NOTE]
->从 2021 年 9 月开始，此 API 将创建大案例类型。 若要了解有关大案例的更多信息，请参阅在 Advanced eDiscovery[中Advanced eDiscovery。](/microsoft-365/compliance/advanced-ediscovery-large-cases) 有关详细信息，请参阅对高级[电子数据Microsoft 365创建案例 API](https://go.microsoft.com/fwlink/?linkid=2172604)的变更博客文章。
+>从 2021 年 9 月开始，此 API 将创建大案例类型。 若要了解有关大案例的更多信息，[请参阅在](/microsoft-365/compliance/advanced-ediscovery-large-cases)Advanced eDiscovery。 有关详细信息，请参阅对高级[电子](https://go.microsoft.com/fwlink/?linkid=2172604)数据展示Microsoft 365 API 博客文章的更改。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -94,6 +94,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/post-case-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-case-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

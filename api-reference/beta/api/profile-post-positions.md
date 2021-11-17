@@ -1,16 +1,16 @@
 ---
 title: 创建 workPosition
 description: 使用此 API 创建新的 workPosition。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: d826309b69ae66aaef736f81b8864928a2fa28ad
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c4a7e6136f17c42fa04beedd8cff22c3e879561b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52036861"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61027906"
 ---
 # <a name="create-workposition"></a>创建 workPosition
 
@@ -20,7 +20,7 @@ ms.locfileid: "52036861"
 
 使用此 API 在用户配置文件中创建新的[workPosition。](../resources/workposition.md) [](../resources/profile.md)
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -55,11 +55,11 @@ POST /users/{id | userPrincipalName}/profile/positions
 |属性|类型|说明|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|categories|String 集合|用户与此位置关联的类别。|
+|categories|String collection|用户与此位置关联的类别。|
 |同事|[relatedPerson](../resources/relatedperson.md) 集合|与此职位相关联的同事。|
 |detail|[positionDetail](../resources/positiondetail.md)|包含有关该位置的详细信息。 |
 |inference|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断出来的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|isCurrent|布尔值|表示位置是否是当前位置。|
+|isCurrent|布尔|表示位置是否是当前位置。|
 |manager|[relatedPerson](../resources/relatedperson.md)|包含此位置的用户经理的详细信息。|
 |source|[personDataSource](../resources/persondatasource.md)|如果从另一个服务同步，则值源自何处。 继承自 [itemFacet](../resources/itemfacet.md)。|
 
@@ -118,6 +118,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-workposition-from-profile-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-workposition-from-profile-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

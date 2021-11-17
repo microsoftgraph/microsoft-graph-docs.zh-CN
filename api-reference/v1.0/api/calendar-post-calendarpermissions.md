@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2cef0f53e13e1c13c87179bab895bce5ed3e10b0
-ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
+ms.openlocfilehash: 82a12d3d82951accb7ae998229d9cbb8e460ff7d
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "59996208"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61000991"
 ---
 # <a name="create-calendarpermission"></a>创建 calendarPermission
 
@@ -54,7 +54,7 @@ POST /groups/{id}/calendar/calendarPermissions
 POST /users/{id}/events/{id}/calendar/calendarPermissions
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称      |说明|
 |:----------|:----------|
@@ -111,6 +111,10 @@ POST https://graph.microsoft.com/v1.0/me/calendar/calendarPermissions
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-calendarpermissions-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-calendarpermissions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

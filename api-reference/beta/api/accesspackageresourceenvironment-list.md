@@ -2,15 +2,15 @@
 title: 列出 accessPackageResourceEnvironments
 description: 检索 accessPackageResourceEnvironment 对象的列表。
 author: hanki-microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 4596ab46610f2e37c2103fe5aa334fb432386afc
-ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
+ms.openlocfilehash: cf337fcdac06884115b6f7d8eeeff78c6d0b8516
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52298124"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60983112"
 ---
 # <a name="list-accesspackageresourceenvironments"></a>列出 accessPackageResourceEnvironments
 命名空间：microsoft.graph
@@ -41,7 +41,7 @@ GET identityGovernance/entitlementManagement/accessPackageResourceEnvironments?$
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法需要 `$filter` [OData 查询参数](/graph/query-parameters)。 你必须申请 `$filter` **originSystem** 设置为 (`eq`) `SharePointOnline` 。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-accesspackageresourceenvironment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-accesspackageresourceenvironment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

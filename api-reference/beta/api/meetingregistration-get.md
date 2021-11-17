@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 893fc26d2328540d9e27daa261d6f7ab554ddf4c
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: e8420c6e7defddf379c4cbc9cdbf7793acfbc7b9
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60561484"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61021991"
 ---
 # <a name="get-meetingregistration"></a>获取 meetingRegistration
 
@@ -28,7 +28,7 @@ ms.locfileid: "60561484"
 |:----------------|:--------------------------------------------|
 | 委派（工作或学校帐户） | OnlineMeetings.Read、OnlineMeetings.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application | 不支持。 |
+| 应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -43,7 +43,7 @@ GET /me/onlineMeetings/{id}/registration
 > [!TIP]
 > 默认情况下 **不返回 customQuestions** 属性。 若要检索 **行中的 customQuestions，** 请使用 `expand` 查询选项，如本主题稍后的示例所示。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称            | 说明               |
 | :-------------- | :------------------------ |
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-registration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-registration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

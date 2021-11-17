@@ -2,15 +2,15 @@
 title: 删除 microsoftAuthenticatorAuthenticationMethod
 description: 删除 microsoftAuthenticatorAuthenticationMethod 对象。
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6d81e3a2ebf0cdbcea426d51cfcd1f3c9686cb1d
-ms.sourcegitcommit: 2d8b04725ea4eaf304f3da1056a6451457a4630f
+ms.openlocfilehash: f0c743a8dbce708c5f904847ad7f19370a5e016b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52335679"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61011736"
 ---
 # <a name="delete-microsoftauthenticatorauthenticationmethod"></a>删除 microsoftAuthenticatorAuthenticationMethod
 命名空间：microsoft.graph
@@ -94,6 +94,10 @@ DELETE https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/mic
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-microsoftauthenticatorauthenticationmethod-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-microsoftauthenticatorauthenticationmethod-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

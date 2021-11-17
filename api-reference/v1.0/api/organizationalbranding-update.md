@@ -5,12 +5,12 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 3d5af9aab6dcc1e715e3fd132169bd5de3db7a4b
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 566cc8182406b35297df08a5d9ac3a3d4c6070e0
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60561159"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61027325"
 ---
 # <a name="update-organizationalbranding"></a>Update organizationalBranding
 命名空间：microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "60561159"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Organization.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -52,9 +52,9 @@ PATCH /organization/{organizationId}/branding
 |:-------------|:------------|:------------|
 | backgroundColor | String | 将出现在低带宽连接中的背景图像上的颜色。 我们建议你使用横幅徽标的主要颜色或你的组织颜色。 以十六进制格式指定此参数，例如，white 为 `#FFFFFF` 。 |
 | backgroundImage | Stream | 显示为登录页背景的图像。 允许的类型是 PNG 或 JPEG，不小于 300 KB 且不超过 1920 × 1080 像素。 较小的图像将降低带宽要求，并加快页面加载速度。 |
-| bannerLogo | Stream | 显示在登录页上的公司徽标的横幅版本。 允许的类型是 PNG 或 JPEG 不超过 36 × 245 像素。 我们建议使用透明图像，徽标周围没有填充。 |
+| bannerLogo | Stream | 显示在登录页上的公司徽标的横幅版本。 允许的类型为 PNG 或 JPEG，不超过 36 × 245 像素。 我们建议使用透明图像，徽标周围没有填充。 |
 | signInPageText | String | 显示在登录框底部的文本。 您可以使用此信息来传达其他信息，例如电话号码到技术支持或法律声明。 此文本必须是 Unicode 且不超过 1024 个字符。 |
-| squareLogo | Stream | Windows 10 OO) BE Windows 10 OOBE (和启用 Windows Autopilot 进行部署时出现的公司徽标的正方形版本。 允许的类型为 PNG 或 JPEG，大小不超过 240 x 240 像素和不超过 10 KB。 我们建议使用透明图像，徽标周围没有填充。 |
+| squareLogo | Stream | Windows 10 OOBE (OOBE) 且启用 Windows Autopilot 进行部署时显示的公司徽标的正方形版本。 允许的类型为 PNG 或 JPEG，不超过 240 x 240 像素，大小不超过 10 KB。 我们建议使用透明图像，徽标周围没有填充。 |
 | usernameHintText | String | 在登录屏幕的用户名文本框中显示为提示的字符串。 此文本必须是不带链接或代码的 Unicode，并且不能超过 64 个字符。 |
 
 
@@ -101,6 +101,10 @@ Accept-Language: 0
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-organizationalbrandinglocaliation-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-organizationalbrandinglocaliation-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

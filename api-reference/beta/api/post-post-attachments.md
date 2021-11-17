@@ -2,15 +2,15 @@
 title: Add attachment
 description: 创建组帖子时添加附件。
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 35465025118912e316139cc4aa377270ee6d3e1c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8f79a7e73a167380d8f6bb00f26771677067cabd
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48982014"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61018067"
 ---
 # <a name="add-attachment"></a>添加附件
 
@@ -18,9 +18,9 @@ ms.locfileid: "48982014"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建组帖子时添加 [附件](../resources/attachment.md) 。 
+创建 [组帖子](../resources/attachment.md) 时添加附件。 
 
-此操作将限制可添加到 4 MB 以下的附件的大小。
+此操作将可添加到的附件的大小限制在 4 MB 以下。
 
 附件可以是下列类型之一：
 
@@ -40,14 +40,14 @@ ms.locfileid: "48982014"
 |应用程序 | Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
-在组的[conversationThread](../resources/conversationthread.md)中创建[帖子](../resources/post.md)时包含附件。 指定父 [对话](../resources/conversation.md) 是可选的。
+在组的[conversationThread](../resources/conversationthread.md) [中创建](../resources/post.md)帖子时包含附件。 指定父 [对话是可选的](../resources/conversation.md) 。
 
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/threads/{id}/reply
 POST /groups/{id}/conversations/{id}/threads/{id}/reply
 ```
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
@@ -57,16 +57,16 @@ POST /groups/{id}/conversations/{id}/threads/{id}/reply
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|帖子|[帖子](../resources/post.md)|要答复的新帖子，其中包含 [附件](../resources/attachment.md) 集合中的一个或多个附件。|
+|帖子|[帖子](../resources/post.md)|要答复的新帖子，其中包括附件集合中的 [一个或多个附件](../resources/attachment.md) 。|
 
 ## <a name="response"></a>响应
 
 如果成功，此方法返回 `202 Accepted` 响应代码。它不返回响应正文。
 
 ## <a name="examples"></a>示例
-### <a name="example-1-include-a-file-attachment"></a>示例1：包含文件附件
+### <a name="example-1-include-a-file-attachment"></a>示例 1：包含文件附件
 #### <a name="request"></a>请求
-下面的示例展示了在创建帖子时将文件作为附件包含的一个请求。
+下面是创建帖子时包含文件作为附件的请求示例。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -108,6 +108,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-file-attachment-with-post-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-file-attachment-with-post-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### <a name="response"></a>响应
@@ -120,10 +124,10 @@ Content-type: application/json
 HTTP/1.1 202 Accpted
 ```
 
-### <a name="example-2-include-an-item-attachment"></a>示例2：包含项目附件
+### <a name="example-2-include-an-item-attachment"></a>示例 2：包括项目附件
 
 #### <a name="request"></a>请求
-下面的示例展示了在创建帖子时将事件作为附件包含的一个请求。
+下面是创建帖子时包含作为附件的事件的请求示例。
 
 <!-- {
   "blockType": "request",
@@ -175,11 +179,11 @@ Content-type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-### <a name="example-3-include-a-reference-attachment"></a>示例3：包含引用附件
+### <a name="example-3-include-a-reference-attachment"></a>示例 3：包括引用附件
 
 #### <a name="request"></a>请求
-下面的示例展示了在创建帖子时包含参考附件的请求。
-附件指向 OneDrive 上的文件夹。
+下面是创建帖子时包含引用附件的请求示例。
+附件指向文件夹上的OneDrive。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -223,6 +227,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-reference-attachment-with-post-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-reference-attachment-with-post-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

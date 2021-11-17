@@ -2,15 +2,15 @@
 title: 获取 plannerRoster
 description: 读取 plannerRoster 对象的属性和关系。
 author: tarkansevilmis
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 49aa19c85cea3d103b6338a46ccd605c89759e95
-ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
+ms.openlocfilehash: 2044e8847e3492cb9d0178e2a4b54784de28b073
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50271885"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61021648"
 ---
 # <a name="get-plannerroster"></a>获取 plannerRoster
 命名空间：microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "50271885"
 
 读取 [plannerRoster 对象的属性和](../resources/plannerroster.md) 关系。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -55,7 +55,7 @@ GET /planner/rosters/{plannerRosterId}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [plannerRoster](../resources/plannerroster.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [plannerRoster](../resources/plannerroster.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/beta/planner/rosters/6519868f-868f-6519-8f86-196
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-plannerroster-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-plannerroster-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

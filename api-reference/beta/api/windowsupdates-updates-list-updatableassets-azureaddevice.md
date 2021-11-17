@@ -2,15 +2,15 @@
 title: 列出 azureADDevice 资源
 description: 获取 azureADDevice 对象及其属性的列表。
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 84c70d23b1b8bfadbc1820ea63a0589d972a4b40
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 4a1bd145eae052a797f0c5a2b7378e5fce8d6f53
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52239289"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61004218"
 ---
 # <a name="list-azureaddevice-resources"></a>列出 azureADDevice 资源
 命名空间：microsoft.graph.windowsUpdates
@@ -45,7 +45,7 @@ GET /admin/windows/updates/updatableAssets/?$filter=isof('microsoft.graph.window
 
 若要对不是从 [updatableAsset](../resources/windowsupdates-updatableasset.md)继承的属性使用查询参数，请包含完整的资源类型。 例如，若要选择 **errors** 属性，请使用 `$select=microsoft.graph.windowsUpdates.azureADDevice/errors` 。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/?$fil
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-azureaddevice-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-azureaddevice-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

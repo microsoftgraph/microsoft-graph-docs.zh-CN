@@ -1,16 +1,16 @@
 ---
 title: 获取日历
 description: '获取 calendar 对象的属性和关系。 相应日历可以是用户的日历， '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 099e634af0fc72c7f91f472311959951f70c2125
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: effd5c1bae0f8853546328f698ef642cf98594e6
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047761"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60994684"
 ---
 # <a name="get-calendar"></a>获取日历
 
@@ -23,7 +23,7 @@ ms.locfileid: "52047761"
 在下列两种情况下，应用可获取其他用户的日历：
 
 * 如果该应用具有应用程序权限，或者
-* 如果应用程序具有来自某个用户的相应委派[权限](#permissions)，而另一个用户与该用户共享了日历，或者已为该用户授予委派的访问权限。 请参阅[详细信息和示例](/graph/outlook-get-shared-events-calendars)。
+* 如果应用具有来自某个用户的相应委派 [权限](#permissions)，而另一个用户与该用户共享了日历，或者已向该用户授予委派访问权限。请参阅 [详细信息和示例](/graph/outlook-get-shared-events-calendars)。
 
 
 ## <a name="permissions"></a>权限
@@ -95,11 +95,15 @@ GET https://graph.microsoft.com/beta/me/calendar
 [!INCLUDE [sample-code](../includes/snippets/java/get-calendar-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-calendar-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

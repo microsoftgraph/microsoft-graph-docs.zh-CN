@@ -2,15 +2,15 @@
 title: 删除对话
 description: 删除对话。
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ce55211e33108adaedc64206829617a908ca25e4
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 8af46c5d78bb87a2c20d1df8ce276f68dee7f6fb
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514530"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61030392"
 ---
 # <a name="delete-conversation"></a>删除对话
 
@@ -19,7 +19,7 @@ ms.locfileid: "58514530"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 删除对话。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -71,6 +71,10 @@ DELETE https://graph.microsoft.com/beta/groups/{id}/conversations/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-conversation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-conversation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

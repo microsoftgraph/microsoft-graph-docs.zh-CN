@@ -2,15 +2,15 @@
 title: 获取 adminConsentRequestPolicy
 description: 读取 adminConsentRequestPolicy 对象的属性和关系。
 author: psignoret
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 78a9696a036b0cbd246dfaa03e5ba7f3c6e6a8cd
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: f29abaa8a7845983b85b6c53a2b1b9637e8ddc71
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52750999"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60991547"
 ---
 # <a name="get-adminconsentrequestpolicy"></a>获取 adminConsentRequestPolicy
 命名空间：microsoft.graph
@@ -28,7 +28,7 @@ ms.locfileid: "52750999"
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|Policy.Read.All、Policy.ReadWrite.ConsentRequest、Directory.Read.All、Directory.ReadWrite.All|
 
-代表用户进行呼叫时，用户需要属于以下目录角色之一。 若要了解有关目录角色的信息，请参阅 [Azure AD 内置角色](/azure/active-directory/roles/permissions-reference)：
+代表用户进行呼叫时，用户需要属于以下目录角色之一。 若要详细了解目录角色，请参阅Azure AD[角色：](/azure/active-directory/roles/permissions-reference)
 + 全局管理员
 + 全局读取者
 + 云 应用程序管理员
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/policies/adminConsentRequestPolicy
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-adminconsentrequestpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-adminconsentrequestpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

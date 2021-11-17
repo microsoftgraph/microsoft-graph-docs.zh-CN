@@ -1,16 +1,16 @@
 ---
 title: 获取威胁情报指示器
 description: 检索 tiindicator 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 7ae7d1dc59493454a3fef55948bb712a3aa1c772
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b71a8b4605fdde10944b5fd1e8a1fa8653a1b1c5
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52036399"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60989553"
 ---
 # <a name="get-threat-intelligence-indicator"></a>获取威胁情报指示器
 
@@ -42,7 +42,7 @@ GET /security/tiIndicators/{id}
 
 此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅 [OData Query Parameters](/graph/query-parameters)。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称      |说明|
 |:----------|:----------|
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/security/tiIndicators/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-tiindicator-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-tiindicator-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

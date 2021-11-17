@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d995562a4e92980e3ac15d0b067f1297302953ea
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: e5b7115a936264cf1380cd7b515454099eddbdba
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60931823"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61031099"
 ---
 # <a name="update-educationassignment"></a>更新 educationassignment
 
@@ -47,11 +47,11 @@ PATCH /education/classes/{class-id}/assignments/{assignment-id}
 
 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |addedStudentAction|String| 描述是否应当将作业分发给在作业发布日期之后添加的学生。|
-|allowLateSubmissions|Boolean| 学生是否可以在截止日期后发送提交。|
-|allowStudentsToAddResourcesToSubmission|Boolean| 学生是否可以向提交中添加资源。 此外，指示提交中所有资源是否对应于工作分配资源列表。 |
+|allowLateSubmissions|布尔| 学生是否可以在截止日期后发送提交。|
+|allowStudentsToAddResourcesToSubmission|布尔| 学生是否可以向提交中添加资源。 此外，指示提交中所有资源是否对应于工作分配资源列表。 |
 |assignDateTime|DateTimeOffset| 指示向学生发布作业的日期。 |
 |assignTo|educationAssignmentRecipient| 获得作业的学生。|
 |closeDateTime|DateTimeOffset| 工作分配关闭提交的日期。 如果分配不允许LateSubmissions或 closeDateTime 与 dueDateTime 相同，则该字段可以是 null 的可选字段，但如果指定，它必须大于或等于 dueDateTime。|
@@ -104,6 +104,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-educationassignment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-educationassignment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
