@@ -5,12 +5,12 @@ author: isaiahwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: fa4da6279a18cbb8ecaa2767ed953e903dcb69ca
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 30cda4618023fc4258c439d1e3321346182a2421
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60947285"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61034207"
 ---
 # <a name="create-tenanttag"></a>创建 tenantTag
 命名空间：microsoft.graph.managedTenants
@@ -19,7 +19,7 @@ ms.locfileid: "60947285"
 
 创建新的 [tenantTag](../resources/managedtenants-tenanttag.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -52,7 +52,7 @@ POST /tenantRelationships/managedTenants/tenantTags
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|租户显示名称的变量。|
-|description|String|租户标记的说明。|
+|说明|String|租户标记的说明。|
 
 ## <a name="response"></a>响应
 
@@ -91,6 +91,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-tenanttag-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-tenanttag-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

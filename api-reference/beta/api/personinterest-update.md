@@ -1,16 +1,16 @@
 ---
 title: 更新 personInterest
 description: 更新 personInterest 对象的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 50366a62d9f407ada0208169de202d106b1144eb
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 74586406850c19b14e857a3b823be64f3af8eb25
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52037814"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60997672"
 ---
 # <a name="update-personinterest"></a>更新 personinterest
 
@@ -55,12 +55,12 @@ PATCH /users/{id | userPrincipalName}/profile/interests/{id}
 |属性|类型|说明|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|categories|String 集合|包含用户与兴趣类别关联的类别 (例如个人、) 。 |
-|collaborationTags|字符串集合|包含用户与兴趣相关联的体验方案标记。 集合中允许的值为 `askMeAbout` `ableToMentor` ：、、、。 `wantsToLearn` `wantsToImprove`|
+|categories|String collection|包含用户与兴趣记录关联的类别 (例如个人、) 。 |
+|collaborationTags|String collection|包含用户与兴趣相关联的体验方案标记。 集合中允许的值为 `askMeAbout` `ableToMentor` ：、、、。 `wantsToLearn` `wantsToImprove`|
 |说明|String|包含感兴趣的说明。|
 |displayName|String|包含兴趣的友好名称。  |
 |inference|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断出来的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|webUrl|String|包含指向有关感兴趣的网页或资源的链接。 |
+|WebUrl|String|包含指向有关感兴趣的网页或资源的链接。 |
 
 ## <a name="response"></a>响应
 
@@ -102,6 +102,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-personinterest-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-personinterest-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

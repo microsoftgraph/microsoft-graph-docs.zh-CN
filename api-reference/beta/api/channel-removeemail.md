@@ -5,12 +5,12 @@ author: anandab-msft
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7c958496ffc34b958b817fb69f5cf49d958334a2
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 6df4dcba5fccf523fdad3a4d3d760b4bc64fb2d4
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59765730"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61030539"
 ---
 # <a name="channel-removeemail"></a>channel： removeEmail
 
@@ -20,9 +20,9 @@ ms.locfileid: "59765730"
 
 删除频道 [的电子邮件地址](../resources/channel.md)。
 
-只有当电子邮件地址是使用[provisionEmail](channel-provisionemail.md)方法或通过 Microsoft Teams 客户端预配的，才能删除该地址。
+只有当电子邮件地址是使用[provisionEmail](channel-provisionemail.md)方法或通过 Microsoft Teams 客户端预配时，才能删除。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -77,6 +77,10 @@ POST https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/channel-removeemail-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/channel-removeemail-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

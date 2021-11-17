@@ -2,15 +2,15 @@
 title: 删除 educationSynchronizationProfile
 description: 根据标识符删除租户中的学校数据同步配置文件。
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 2cc7d03b406888022fc8bab935af2b5118357c0c
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 146506ad91322d9deb897fa8a155f4d24aa87510
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50574277"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61012220"
 ---
 # <a name="delete-a-educationsynchronizationprofile"></a>删除 educationSynchronizationProfile
 
@@ -43,7 +43,7 @@ DELETE /education/synchronizationProfiles/{id}
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法将返回 `202 Accepted` 响应代码，并且不会返回响应正文。
+如果成功，此方法返回 响应 `202 Accepted` 代码，无响应正文。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -71,6 +71,10 @@ DELETE https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-synchronizationprofile-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-synchronizationprofile-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,16 +1,16 @@
 ---
 title: 创建 trustFrameworkKeySet
 description: 创建新的 **trustFrameworkKeySet** 对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 909198910f311053af9cca71c1dae34beb65e13c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 1804e863761d09e735da269614ec8a38970e046e
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053445"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61010427"
 ---
 # <a name="create-trustframeworkkeyset"></a>创建 trustFrameworkKeySet
 
@@ -18,7 +18,7 @@ ms.locfileid: "52053445"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的 [trustFrameworkKeySet](../resources/trustframeworkkeyset.md)。 **trustFrameworkKeySet 的** ID 应位于创建请求中;但是，该服务可对其进行修改。 修改后的 ID 将在响应和位置标头中提供。
+创建新的 [trustFrameworkKeySet](../resources/trustframeworkkeyset.md)。 **trustFrameworkKeySet** 的 ID 应位于创建请求中;但是，该服务可对其进行修改。 修改后的 ID 将在响应和位置标头中提供。
 
 ## <a name="permissions"></a>权限
 
@@ -92,6 +92,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-trustframeworkkeyset-from-trustframework-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-trustframeworkkeyset-from-trustframework-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -120,7 +124,7 @@ Location: /trustFramework/keySets('B2C_1A_keyset1')
 
 ### <a name="example-2-create-a-keyset-with-a-key"></a>示例 2：创建具有键的键集
 
-这是一种高级方案，您需要知道密钥的 [RFC 7517](https://tools.ietf.org/html/rfc7517#section-5) 兼容 JSON Web 密钥格式。
+这是一个高级方案，您需要知道密钥的 [RFC 7517](https://tools.ietf.org/html/rfc7517#section-5) 兼容 JSON Web 密钥格式。
 
 #### <a name="request"></a>请求
 
