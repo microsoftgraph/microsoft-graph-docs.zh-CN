@@ -1,16 +1,16 @@
 ---
 title: 使用自定义目标属性配置同步
 description: 自定义同步架构以包括目标目录中定义的自定义属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: conceptualPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 865cde06cded24f9f2920e63535e037a2b477330
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 9597ff99e8b5d6f647d7be3771a9bcb52e764061
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50956890"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61007137"
 ---
 # <a name="configure-synchronization-with-custom-target-attributes"></a>使用自定义目标属性配置同步
 
@@ -18,9 +18,9 @@ ms.locfileid: "50956890"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-您可以自定义同步架构以包括目标目录中定义的自定义属性。 本文介绍如何通过添加名为 的新字段来自定义 Salesforce 订阅 `officeCode` 。 设置从 Azure Active Directory (Azure AD) 到 Salesforce 的同步，并且对于每个用户，你将使用 Azure AD 中的字段中的值填充 `officeCode` Salesforce 中的 `extensionAttribute10` 字段。
+您可以自定义同步架构以包括目标目录中定义的自定义属性。 本文介绍如何通过添加名为 的新字段来自定义 Salesforce 订阅 `officeCode` 。 您设置从 Azure Active Directory (Azure AD) 到 Salesforce 的同步，并且对于每个用户，您将使用 Salesforce 中字段的值填充 `officeCode` `extensionAttribute10` salesforce 中的Azure AD。
 
-本文假定你已添加支持通过 [Azure](https://portal.azure.com)门户与租户同步的应用程序，你知道应用程序显示名称，并且你具有 Microsoft Graph 的授权令牌。 若要了解如何获取授权令牌，请参阅[获取访问令牌以调用 Microsoft Graph。](/graph/auth/)
+本文假定你已添加支持通过[Azure](https://portal.azure.com)门户与租户同步的应用程序，你知道应用程序显示名称，并且你具有 Microsoft Graph 的授权令牌。 若要了解如何获取授权令牌，请参阅获取访问令牌以[调用 Microsoft Graph。](/graph/auth/)
 
 ## <a name="find-the-service-principal-object-by-display-name"></a>按以下方法查找服务主体显示名称
 
@@ -106,6 +106,10 @@ Authorization: Bearer {Token}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-synchronizationschema-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-synchronizationschema-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -211,16 +215,16 @@ Content-Type: application/json
 
 ## <a name="add-a-definition-for-the-officecode-attribute-and-a-mapping-between-attributes"></a>添加 officeCode 属性的定义和属性之间的映射
 
-使用你选择的纯文本编辑器 (例如，记事本 [++](https://notepad-plus-plus.org/) 或 [JSON 编辑器 Online](https://www.jsoneditoronline.org/)) ：
+使用你选择的纯文本编辑器 (例如[，记事本++](https://notepad-plus-plus.org/)或[JSON Editor Online](https://www.jsoneditoronline.org/)) ：
 
 1. 为 [属性添加属性](synchronization-attributedefinition.md) `officeCode` 定义。 
 
-    - 在目录下，查找名称为 salesforce.com 的目录，在对象的数组中查找名为 **User 的目录**。
+    - 在目录下，查找名称为 salesforce.com 的目录，在对象的数组中，查找名为 **User 的目录**。
     - 将新属性添加到列表中，并指定名称和类型，如以下示例所示。
 
 2. 在 和 [之间添加](synchronization-attributemapping.md) 属性 `officeCode` 映射 `extensionAttribute10` 。
 
-    - 在 [synchronizationRules](synchronization-synchronizationrule.md)下，查找将 Azure AD 指定为源目录的规则，Salesforce.com 指定为目标 `"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"` () 。
+    - 在[synchronizationRules](synchronization-synchronizationrule.md)下，查找将 Azure AD 指定为源目录的规则，Salesforce.com 指定为目标 `"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"` () 。
     - 在 [规则的 objectMappings](synchronization-objectmapping.md) 中，查找用户与 `"sourceObjectName": "User",   "targetObjectName": "User"` () 。
     - 在 **objectMapping** 的 [attributeMappings](synchronization-attributemapping.md)数组中，添加新条目，如以下示例所示。
 

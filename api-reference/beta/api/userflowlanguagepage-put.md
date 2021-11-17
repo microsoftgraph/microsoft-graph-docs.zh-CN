@@ -5,12 +5,12 @@ author: jkdouglas
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: acbb5410c0737908ebfcd41ffad1dc40b145db23
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 61a78b63099294a030daa677179b855e1a81d67d
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59040811"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61013276"
 ---
 # <a name="update-userflowlanguagepage"></a>更新 userFlowLanguagePage
 
@@ -47,7 +47,7 @@ PUT /identity/b2cUserFlows/{id}/languages/{id}/overridesPages/{id}/$value
 PUT /identity/b2xUserFlows/{id}/languages/{id}/overridesPages/{id}/$value
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 |名称|说明|
 |:---|:---|
@@ -94,6 +94,10 @@ Content-Type: application/json
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-overridespages-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-overridespages-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

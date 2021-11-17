@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 4fd9284156518369bdc51de733760b0b5cabee49
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: cb5a91ed355e6947f27a4fc6faf0023ec77ffcdc
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60927061"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60998696"
 ---
 # <a name="create-noncustodialdatasource"></a>创建 noncustodialDataSource
 
@@ -54,9 +54,9 @@ POST /compliance/ediscovery/cases/{caseId}/noncustodialDataSources
 
 下表显示创建 [noncustodialDataSource](../resources/ediscovery-noncustodialdatasource.md)时所需的属性。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
-|applyHoldToSource|Boolean|指示是否将保留应用于非 (数据源，如邮箱或网站) 。|
+|applyHoldToSource|布尔|指示是否将保留应用于非 (数据源，如邮箱或网站) 。|
 |datasource|[microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md)|userSource 或 siteSource。  对于 userSource，请使用"dataSource" ： { "@odata.type" ： "microsoft.graph.ediscovery.userSource"， "email" ： "SMTP address"}。  对于网站源，请使用"dataSource" ： { "@odata.type" ： "microsoft.graph.ediscovery.siteSource"， "site@odata.bind" ： "siteId" }，其中 siteId 可以派生自网站 URL，例如，Microsoft Graph 请求为 `https://contoso.sharepoint.com/sites/HumanResources` `https://graph.microsoft.com/v1.0/sites/contoso.sharepoint.com:/sites/HumanResources` 。 ID 是 ID 字段中列出的第一个 GUID。
 
 ## <a name="response"></a>响应
@@ -103,6 +103,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-noncustodialdatasource-from-email-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-noncustodialdatasource-from-email-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -174,6 +178,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-noncustodialdatasource-from-siteurl-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-noncustodialdatasource-from-siteurl-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,16 +1,16 @@
 ---
 title: 创建 accessReview
-description: 在 Azure AD 访问评审功能中，创建新的 accessReview 对象。
-localization_priority: Normal
+description: 在Azure AD评审功能中，创建新的 accessReview 对象。
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: fd1f6c25dcc4013c1abc3d39dafa63723a1e3ea0
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 516a1567921089f1285d639f4e12f8747e92de91
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751116"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60988153"
 ---
 # <a name="create-accessreview"></a>创建 accessReview
 
@@ -18,7 +18,7 @@ ms.locfileid: "52751116"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 Azure AD [访问评审](../resources/accessreviews-root.md) 功能中，创建新的 [accessReview](../resources/accessreview.md) 对象。
+在Azure AD[评审](../resources/accessreviews-root.md)功能中，创建新的[accessReview](../resources/accessreview.md)对象。
 
 进行此请求之前，调用方之前必须已检索 [](businessflowtemplate-list.md)到业务流模板的列表，才能将 **businessFlowTemplateId** 的值包括在请求中。
 
@@ -56,7 +56,7 @@ POST /accessReviews
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 | displayName             |String                                                        | 访问评审名称。  |
-| startDateTime           |DateTimeOffset                                                | 计划开始审阅的 DateTime。  这必须是将来的日期。   |
+| startDateTime           |DateTimeOffset                                                | 计划启动审阅的 DateTime。  这必须是将来的日期。   |
 | endDateTime             |DateTimeOffset                                                | 计划结束审阅的 DateTime。 这必须至少比开始日期晚一天。   |
 | 说明             |String                                                        | 向审阅者显示的说明。 |
 | businessFlowTemplateId  |String                                                        | 从 [businessFlowTemplate](../resources/businessflowtemplate.md)获取的业务流程模板标识符。  |
@@ -64,9 +64,9 @@ POST /accessReviews
 | reviewedEntity          |[identity](../resources/identity.md)                                     | 创建访问评审的对象，例如组的成员身份或用户到应用程序的分配。 | 
 
 
-如果 **reviewerType** 具有值，则调用方还必须包含 `delegated` **reviewers** 属性，其中 [userIdentity](../resources/useridentity.md) 对象集合代表审阅者。
+如果 **reviewerType** 具有值 ，则调用方还必须包含 reviewers 属性，并包含表示审阅者的 `delegated` [userIdentity](../resources/useridentity.md)对象的集合。 
 
-如果你的应用在没有登录用户的情况下调用此 API，则调用方还必须包含 **createdBy** 属性，其值为将被标识为评价创建者的用户的 [userIdentity。](../resources/useridentity.md)
+如果你的应用在没有登录用户的情况下调用此 API，则调用方还必须包含 **createdBy** 属性，其值为将标识为评价创建者的用户的 [userIdentity。](../resources/useridentity.md)
 
 此外，呼叫者可以包含 **设置**，以创建定期审阅系列或更改默认审阅行为。 具体而言，若要创建定期审阅，呼叫者必须在访问评审设置中包括[accessReviewRecurrenceSettings，](../resources/accessreviewrecurrencesettings.md)
 
@@ -145,6 +145,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-accessreview-from-accessreviews-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-accessreview-from-accessreviews-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

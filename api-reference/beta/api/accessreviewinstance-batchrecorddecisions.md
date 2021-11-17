@@ -2,15 +2,15 @@
 title: accessReviewInstance：batchRecordDecisions
 description: 使审阅者可以分批查看所有 accessReviewInstanceDecisionItem 对象。
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ab7e7e3580275aa127bbb01e34484a823d4b01bf
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: 2d83d77b3fe0698edd0f89b5e90dd5466fd47c73
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53030745"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60991953"
 ---
 # <a name="accessreviewinstance-batchrecorddecisions"></a>accessReviewInstance：batchRecordDecisions
 命名空间：microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "53030745"
 
 允许审阅者使用 **principalId** **、resourceId** 或两者成批查看所有 [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md)对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -51,7 +51,7 @@ POST /me/pendingAccessReviewInstances/{accessReviewInstanceId}/batchRecordDecisi
 
 |参数|类型|说明|
 |:---|:---|:---|
-| decision  | String | 被审阅实体的访问决策。 可取值为：`Approve`、`Deny`、`NotReviewed`、`DontKnow`。 必填。  |
+| decision  | String | 被审阅实体的访问决策。 可取值为：`Approve`、`Deny`、`NotReviewed`、`DontKnow`。 必需。  |
 |  justification | String | 提供给管理员评价的上下文。 如果 **justificationRequiredOnApproval** `True` 位于 **accessReviewScheduleDefinition 上，则是必需的**。  |
 |principalId|String|如果提供，将在此批处理中检查具有匹配 **principalId** 的所有 **accessReviewInstanceDecisionItems。** 如果未提供，将 **检查所有 principalId。**|
 |resourceId|String|如果提供，将在此批处理中检查具有匹配 **resourceId** 的所有 **accessReviewInstanceDecisionItems。** 如果未提供，将 **检查所有 resourceId。**|
@@ -96,6 +96,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/accessreviewinstance-batchrecorddecisions-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/accessreviewinstance-batchrecorddecisions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

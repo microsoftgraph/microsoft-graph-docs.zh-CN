@@ -2,15 +2,15 @@
 title: 更新任务
 description: 更新打印任务。
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 33c6078aa9265788409abd3e23d736fab9989b0b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c5106c12102504ef9243d79747022e4bda7f756e
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053571"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61021536"
 ---
 # <a name="update-task"></a>更新任务
 
@@ -49,7 +49,7 @@ PATCH /print/taskDefinitions/{id}/tasks/{id}
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|状态|String|包括 `state` `description` 描述任务当前状态的值。|
+|status|String|包括 `state` `description` 描述任务当前状态的值。|
 
 ## <a name="response"></a>响应
 如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [printTask](../resources/printtask.md) 对象。
@@ -87,6 +87,10 @@ PATCH https://graph.microsoft.com/beta/print/taskDefinitions/3203656e-6069-4e10-
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-task-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-task-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

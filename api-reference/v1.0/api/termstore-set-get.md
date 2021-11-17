@@ -5,12 +5,12 @@ author: vishriv
 ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: apiPageType
-ms.openlocfilehash: 14edd1eb0c58274446810fbe65213ee19da6bdbc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f1e7374b0dd188679ad2b2f29b40fe58df1a5b85
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59084799"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61016083"
 ---
 # <a name="get-set"></a>获取集
 命名空间：microsoft.graph.termStore
@@ -51,7 +51,7 @@ GET sites/{site-id}/termStore/sets/{set-id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [microsoft.graph.termStore.set](../resources/termstore-set.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [microsoft.graph.termStore.set](../resources/termstore-set.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/v1.0/sites/microsoft.sharepoint.com,b9b0bc03-cbc
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-set-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-set-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

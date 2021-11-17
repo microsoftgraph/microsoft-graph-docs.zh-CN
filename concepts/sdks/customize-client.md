@@ -3,16 +3,16 @@ title: 自定义 Microsoft Graph SDK 服务客户端
 description: 提供有关如何更改 Microsoft Graph SDK 服务客户端的默认行为的说明。
 ms.localizationpriority: medium
 author: DarrelMiller
-ms.openlocfilehash: 6c98ed668db7dbcd710f95e72f7e965cfc2f9cc6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 12d6321fd9821653939b5533e8ce4ee5b57c788b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59098403"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61019988"
 ---
 # <a name="customize-the-microsoft-graph-sdk-service-client"></a>自定义 Microsoft Graph SDK 服务客户端
 
-Microsoft Graph SDK 客户端配置一组默认的中间件，允许 SDK 与 Microsoft Graph终结点通信。 此默认集是可自定义的，允许您更改客户端的行为。 例如，可以插入自定义日志记录，或添加测试处理程序以模拟特定方案。 可以添加和删除中间件组件。 需要注意的是，中间件组件的运行顺序非常重要。
+Microsoft Graph SDK 客户端配置了一组默认的中间件，允许 SDK 与 Microsoft Graph终结点通信。 此默认集是可自定义的，允许您更改客户端的行为。 例如，可以插入自定义日志记录，或添加测试处理程序以模拟特定方案。 可以添加和删除中间件组件。 需要注意的是，中间件组件的运行顺序非常重要。
 
 ## <a name="c"></a>[C#](#tab/csharp)
 
@@ -126,7 +126,7 @@ final GraphServiceClient graphServiceClient = GraphServiceClient
 
 ## <a name="configuring-the-http-proxy-for-the-client"></a>为客户端配置 HTTP 代理
 
-某些环境要求客户端应用程序在可以访问公共 Internet 之前使用 HTTP 代理。 本部分演示如何为 Microsoft Graph SDK 配置代理。
+某些环境要求客户端应用程序在可以访问公共 Internet 之前使用 HTTP 代理。 本部分演示如何为 Microsoft sdk 配置Graph代理。
 
 <!-- markdownlint-disable MD024 -->
 ## <a name="c"></a>[C#](#tab/csharp)
@@ -165,15 +165,7 @@ var scopes = new[] { "https://graph.microsoft.com/.default" };
 // This example works with Microsoft.Graph 4+
 var httpClient = GraphClientFactory.Create(new TokenCredentialAuthProvider(credential, scopes), proxy: new WebProxy(new Uri(proxyAddress)));
 
-GraphServiceClient graphClient = new(httpClient);
-
-/* For Microsoft.Graph version < 4, you'll need to implement an authHandler. Please note
-/* that Microsoft.Graph.Auth is deemphasized and will not leave the preview state.
-
-var httpProvider = new HttpProvider(handler, true);
-GraphServiceClient graphClient = new(authHandler, httpProvider);
-
-*/
+var graphClient = new GraphServiceClient(httpClient);
 ```
 
 ## <a name="typescript"></a>[TypeScript](#tab/typeScript)

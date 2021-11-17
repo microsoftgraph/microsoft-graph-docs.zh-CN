@@ -5,12 +5,12 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ef0499c4278aa2b2af10f81acf861b7188c68475
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 5963e2497414f116cbabdc2505f86673b18b687f
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60925237"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61004946"
 ---
 # <a name="create-emailauthenticationmethod"></a>创建 emailAuthenticationMethod
 命名空间：microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "60925237"
 
 设置用户的 [emailAuthenticationMethod](../resources/emailauthenticationmethod.md) 对象。 电子邮件身份验证是一种自助服务密码重置方法。 用户可能只有一种电子邮件身份验证方法。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 ### <a name="permissions-acting-on-self"></a>自行操作的权限
@@ -65,7 +65,7 @@ POST /users/{id | userPrincipalName}/authentication/emailMethods
 
 下表显示创建 [emailAuthenticationMethod 时所需的属性](../resources/emailauthenticationmethod.md)。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |emailAddress|String|电子邮件地址|
 
@@ -107,6 +107,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-emailauthenticationmethod-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-emailauthenticationmethod-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

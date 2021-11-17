@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 23a607fa19db53784c28e466a7d82ecf145e199a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3f96441f7c126265f53d00081f436a838af2d5ba
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59140743"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60978932"
 ---
 # <a name="list-instances"></a>列表实例
 
@@ -70,7 +70,7 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Event](../resources/event.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-以下示例获取指定时间范围内的事件（即定期系列的主事件）的发生次数和异常情况。
+以下示例获取指定时间范围内的事件（即定期系列的主事件）的发生次数和异常。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -95,6 +95,10 @@ GET https://graph.microsoft.com/v1.0/me/events/AAMkAGUzYRgWAAA=/instances?startD
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-instances-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-instances-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

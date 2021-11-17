@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 723faf0ac6ffd4e9db08e68095bf4ef62bbfcc02
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2b295230a4a60af5a5592ea160f5e2df6411b299
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59045908"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60976741"
 ---
 # <a name="group-addfavorite"></a>group: addFavorite
 
@@ -36,7 +36,7 @@ POST /groups/{id}/addFavorite
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
-| Authorization  | 持有者{令牌}。必需。  |
+| Authorization  | Bearer {token}。必需。  |
 | Prefer | return=minimal。 如果 minimal 响应头包含在请求头中，那么成功响应返回 `204 No Content` 代码。 可选。  |
 
 ## <a name="request-body"></a>请求正文
@@ -71,6 +71,10 @@ POST https://graph.microsoft.com/v1.0/groups/{id}/addFavorite
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/group-addfavorite-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/group-addfavorite-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

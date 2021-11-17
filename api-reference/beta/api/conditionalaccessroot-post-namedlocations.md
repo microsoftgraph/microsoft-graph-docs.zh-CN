@@ -1,16 +1,16 @@
 ---
 title: 创建 namedLocation
 description: 创建新的 namedLocation。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 51b661169dc1e308f3e7e422b1ba8eec4843de56
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 24d29d54d410f3793294c3fc276d66c3e9ad6f17
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047229"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61026773"
 ---
 # <a name="create-namedlocation"></a>创建 namedLocation
 
@@ -18,7 +18,7 @@ ms.locfileid: "52047229"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的 [namedLocation](../resources/namedlocation.md) 对象。
+创建新的 [namedLocation](../resources/namedlocation.md) 对象。 命名位置可以是 [ipNamedLocation 或](../resources/ipnamedlocation.md) [countryNamedLocation](../resources/countrynamedlocation.md) 对象。
 
 ## <a name="permissions"></a>权限
 
@@ -47,8 +47,21 @@ POST /identity/conditionalAccess/namedLocations
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [ipNamedLocation](../resources/ipnamedlocation.md) 或 [countryNamedLocation](../resources/countrynamedlocation.md) 对象的 JSON 表示形式。
+在请求正文中，提供 [ipNamedLocation](../resources/ipnamedlocation.md) 或 [countryNamedLocation](../resources/countrynamedlocation.md) 对象的 JSON 表示形式。 必须指定派生@odata类型的 **@odata.type，** 即 `#microsoft.graph.ipNamedLocation` [ipNamedLocation](../resources/ipnamedlocation.md) 对象或 `#microsoft.graph.countryNamedLocation` [countryNamedLocation](../resources/countrynamedlocation.md) 对象。
 
+下表列出了创建 [ipNamedLocation](../resources/ipnamedlocation.md) 对象所需的属性。
+
+| 属性     | 类型        | 说明 |
+|:-------------|:------------|:------------|
+|displayName|String|位置的可读名称。 必需。|
+|ipRanges|[ipRange](../resources/iprange.md) 集合|IPv4 CIDR 格式的 IP 地址范围列表 (例如 1.2.3.4/32) IETF RFC596 中任何允许的 IPv6 格式。 必需。 还需要 **@odata** ipRange 的 @odata.type。|
+
+下表列出了创建 [countryNamedLocation](../resources/countrynamedlocation.md) 对象所需的属性。
+
+| 属性     | 类型        | 说明 |
+|:-------------|:------------|:------------|
+|countriesAndRegions|String collection|ISO 3166-2 指定的两字母格式的国家/地区列表。 必需。|
+|displayName|String|位置的可读名称。 必需。|
 ## <a name="response"></a>响应
 
 如果成功，此方法在响应正文中返回 响应代码和新的 `201 Created` [ipNamedLocation](../resources/ipnamedlocation.md) 或 [countryNamedLocation](../resources/countrynamedlocation.md) 对象。
@@ -101,6 +114,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-namedlocation-from-conditionalaccessroot-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-namedlocation-from-conditionalaccessroot-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -182,6 +199,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-namedlocation-from-conditionalaccessroot-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-namedlocation-from-conditionalaccessroot-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

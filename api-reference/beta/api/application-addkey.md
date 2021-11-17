@@ -1,16 +1,16 @@
 ---
 title: application： addKey
 description: 向应用程序添加密钥凭据。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 8951e72c9135ed9d21141c7c5172adf06c31926d
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 96bd7bc1a1b3e63d5474e0ea45ca4d705791b51d
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50942755"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60991018"
 ---
 # <a name="application-addkey"></a>application： addKey
 
@@ -23,7 +23,7 @@ ms.locfileid: "50942755"
 > [!NOTE]
 > 您可以继续使用"创建应用程序"[](../api/application-post-applications.md)和"更新[](../api/application-update.md)应用程序应用程序"操作来添加和更新具有或没有用户上下文的任何应用程序的密钥凭据。 
 
-作为此方法的请求验证的一部分，将先验证现有密钥的证明，然后才能执行该操作。 
+作为此方法的请求验证的一部分，将验证拥有现有密钥的证明，然后才能执行该操作。 
 
 如果没有任何现有有效证书 (尚未添加任何证书，或者所有证书) ，将无法使用此服务操作。 可改用[更新应用程序](../api/application-update.md)操作来执行更新。
 
@@ -61,7 +61,7 @@ POST /applications/{id}/addKey
 |:---------------|:--------|:----------|
 | keyCredential | [keyCredential](../resources/keycredential.md) | 要添加的新应用程序密钥凭据。 __type、usage__ 和 __key__ 是此用法的必需属性。  受支持的密钥类型包括：<br><ul><li>`AsymmetricX509Cert`：用法必须为 `Verify` 。</li><li>`X509CertAndPassword`：用法必须为 `Sign`</li></ul>|
 | passwordCredential | [passwordCredential](../resources/passwordcredential.md) | 仅需要设置应包含密钥密码的 __secretText。__ 此属性仅对类型 为 的键是必需的 `X509CertAndPassword` 。 否则， `null` 设置为 。|
-| proof | String | 用作现有密钥拥有证明的自签名 JWT 令牌。 此 JWT 令牌必须使用应用程序现有有效证书之一的私钥进行签名。 令牌应包含以下声明：<ul><li>`aud` - 受众需要是 `00000002-0000-0000-c000-000000000000`。</li><li>`iss` -颁发者必须是正在进行呼叫的应用程序的 __ID__。</li><li>`nbf` -“不早于”时间。</li><li>`exp` - 过期时间应该是“不早于”+ 10 分钟。</li></ul><br>下面是可用于 [生成](/graph/application-rollkey-prooftoken) 此拥有令牌证明的代码示例。|
+| proof | String | 用作现有密钥拥有证明的自签名 JWT 令牌。 此 JWT 令牌必须使用应用程序现有有效证书之一的私钥进行签名。 令牌应包含以下声明：<ul><li>`aud` - 受众需要是 `00000002-0000-0000-c000-000000000000`。</li><li>`iss` -颁发者必须是正在进行呼叫的应用程序的 __ID__。</li><li>`nbf` -“不早于”时间。</li><li>`exp` - 过期时间应为 `nbf` + 10 分钟。</li></ul><br>有关生成此拥有令牌证明的步骤，请参阅生成滚动密钥的 [拥有令牌证明](/graph/application-rollkey-prooftoken)。|
 
 ## <a name="response"></a>响应
 
@@ -110,6 +110,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/application-addkey-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/application-addkey-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -177,6 +181,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/application-addkey-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/application-addkey-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

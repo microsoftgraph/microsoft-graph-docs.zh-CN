@@ -1,16 +1,16 @@
 ---
 title: 删除 historyItem
 description: 删除现有用户活动的现有历史记录项。
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: project-rome
 doc_type: apiPageType
 author: ailae
-ms.openlocfilehash: 1fa3b1863445caa5ce7a953a98d12310b4abeec9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4054cbb6b76c6e3fdfe04efba6070e14f10f0027
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48017302"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61004547"
 ---
 # <a name="delete-a-historyitem"></a>删除 historyItem
 
@@ -51,7 +51,7 @@ DELETE /me/activities/{id}/historyItems/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在 `204 No Content` 历史记录项被删除时返回响应代码。
+如果成功，此方法在删除历史记录 `204 No Content` 项时返回 响应代码。
 
 ## <a name="example"></a>示例
 
@@ -71,6 +71,10 @@ PUT https://graph.microsoft.com/beta/me/activities/13881113971988980728/historyI
 ```
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-historyitem-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-historyitem-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

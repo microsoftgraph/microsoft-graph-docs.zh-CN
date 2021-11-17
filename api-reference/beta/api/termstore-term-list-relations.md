@@ -1,23 +1,23 @@
 ---
 title: 列出关系
-description: 从关系导航属性获取关系。
+description: 从 relations 导航属性获取关系。
 author: mohitpcad
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: a3ccad6849eb9533ac043c22bbeff636230bc2cb
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 57175d0306d0113b525fb39d8e1fdc010ac97eea
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874443"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60977601"
 ---
-# <a name="list-relations"></a>列表关系
+# <a name="list-relations"></a>列出关系
 命名空间：microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从关系 [导航属性获取] 术语 [或集] 的不同关系。
+从 relations [导航属性获取] 术语 [或集] 的不同关系。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -53,7 +53,7 @@ GET /termStore/sets/{setId}/terms/{termId}/relations
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回响应代码和 [relation](../resources/termstore-relation.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 [响应代码和 relation](../resources/termstore-relation.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/beta/termStore/sets/{setId}/relations
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-relation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-relation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

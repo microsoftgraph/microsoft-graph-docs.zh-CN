@@ -2,15 +2,15 @@
 title: 更新联系人
 description: 更新 contact 对象的属性。
 author: kevinbellinger
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3108edc3db30865cfd9541c053dbe1ea5105dd63
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: bfd80a3b3fb465854f80479614437f8890d4948d
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047110"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60990288"
 ---
 # <a name="update-contact"></a>更新联系人
 
@@ -45,7 +45,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/contacts/{id}
 PATCH /me/contactFolders/{id}/childFolders/{id}/.../contacts/{id}
 PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
 ```
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
@@ -77,7 +77,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |officeLocation|String|联系人的办公室位置。|
 |parentFolderId|String|联系人的父文件夹 ID。|
 |personalNotes|String|有关联系人的用户备注。|
-|phones |[phone](../resources/phone.md) collection |电话联系人关联的电话号码，例如住宅电话、移动电话和业务电话。 |
+|phones |[phone](../resources/phone.md) collection |电话联系人的号码，例如住宅电话、移动电话和业务电话。 |
 |postalAddresses |[physicalAddress](../resources/physicaladdress.md) 集合 |与联系人关联的地址，例如，住宅地址和公司地址。 |
 |profession|String|联系人的职业。|
 |spouseName|String|联系人配偶/伴侣的姓名。|
@@ -139,10 +139,14 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-contact-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-contact-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

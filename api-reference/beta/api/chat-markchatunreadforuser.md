@@ -5,12 +5,12 @@ author: sweta-thapliyal
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f107f67d388ead1876a0478b1a1a5840bff28e03
-ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
+ms.openlocfilehash: 1f1ed7b1485581b2e4bd4111ffee058484835d42
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60890607"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60975872"
 ---
 # <a name="chat-markchatunreadforuser"></a>chat： markChatUnreadForUser
 命名空间：microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "60890607"
 |:---|:---|
 |委派（工作或学校帐户）|Chat.ReadWrite|
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -49,7 +49,7 @@ POST /chats/{chat-id}/markChatUnreadForUser
 
 下表显示了可用于此操作的参数。
 
-|参数|类型|描述|
+|参数|类型|说明|
 |:---|:---|:---|
 |lastMessageReadDateTime|DateTimeOffset|指示所有已发送或已接收邮件标记为未读的时间的时间戳。|
 |tenantId|String|用户的租户 ID。|
@@ -98,6 +98,10 @@ Content-length: 158
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/chat-markchatunreadforuser-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/chat-markchatunreadforuser-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

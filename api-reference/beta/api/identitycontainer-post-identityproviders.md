@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: a972ae49f76b24990ec1cbcb823e829e26d24ae8
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 8618c8777be997ac23b06c471d70f1f2f15c9aa3
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60938785"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61015098"
 ---
 # <a name="create-identityprovider"></a>创建 identityProvider
 命名空间：microsoft.graph
@@ -21,7 +21,7 @@ ms.locfileid: "60938785"
 
 在从 identityProviderBase 派生的提供程序类型中，当前可以在 Azure AD。 [](../resources/socialidentityprovider.md) 在 Azure AD B2C 中，此操作当前可以创建 socialIdentityProvider、openIdConnectIdentityProvider 或[appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md)资源。 [](../resources/socialidentityprovider.md) [](../resources/openidconnectidentityprovider.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -76,10 +76,10 @@ POST /identity/identityProviders
 |clientSecret|字符串|使用身份提供程序注册应用时获取的应用客户端密码。 clientSecret 依赖于 **responseType**。 <ul><li>当 **responseType** `code` 为 时，身份验证代码交换需要密码。</li><li>当 **responseType** 为密码时，由于没有代码交换，id_token直接从授权响应 `id_token` 返回密码。</li></ul>|
 |displayName|字符串|标识提供程序的显示名称。|
 |domainHint|String|域提示可用于直接跳到指定标识提供程序的登录页面，而不是让用户在可用标识提供程序列表中进行选择。|
-|claimsMapping|[claimsMapping](../resources/claimsmapping.md)|在 OIDC 提供程序将 ID 令牌发送回 Azure AD 后，Azure AD 需要能够将收到的令牌中的声明映射到 Azure AD 识别并使用声明。 此复杂类型捕获该映射。|
-|metadataUrl|String|OpenID 元数据文档的 URL 连接提供程序。 每个 OpenID 连接标识提供程序都描述一个元数据文档，该文档包含执行登录所需的大部分信息。 这包括要使用的 URL 以及服务的公共签名密钥的位置等信息。 OpenID 连接元数据文档始终位于 以 结尾的终结点 `.well-known/openid-configuration` 。 提供您添加的 OpenID 连接标识提供程序的元数据 URL。|
+|claimsMapping|[claimsMapping](../resources/claimsmapping.md)|在 OIDC 提供程序将 ID 令牌发送回 Azure AD 后，Azure AD 需要能够将收到的令牌中的声明映射到 Azure AD 识别并使用的声明。 此复杂类型捕获该映射。|
+|metadataUrl|String|OpenID 元数据文档的 URL 连接提供程序。 每个 OpenID 连接标识提供程序都描述一个元数据文档，其中包含执行登录所需的大部分信息。 这包括要使用的 URL 以及服务的公共签名密钥的位置等信息。 OpenID 连接元数据文档始终位于 以 结尾的终结点 `.well-known/openid-configuration` 。 提供您添加的 OpenID 连接标识提供程序的元数据 URL。|
 |responseMode|String|响应模式定义用于将数据从自定义标识提供程序发送回 B2C Azure AD的方法。 可能的值 `form_post` `query` ：、。|
-|responseType|String|响应类型描述在首次调用自定义标识提供程序的 authorization_endpoint 时发送回的信息类型。 可能的值 `code` `id_token` `token` ：、、。|
+|responseType|String|响应类型描述在首次调用自定义标识提供程序的 authorization_endpoint时发送回的信息类型。 可能的值 `code` `id_token` `token` ：、、。|
 |scope|String|范围定义要从自定义标识提供程序收集的信息和权限。|
 
 ### <a name="appleidentityprovider-object"></a>appleIdentityProvider 对象
@@ -96,13 +96,13 @@ POST /identity/identityProviders
 
 如果成功，此方法在 Azure AD 租户的响应正文中返回 `201 Created` [socialIdentityProvider](../resources/socialidentityprovider.md)对象的响应代码和 JSON 表示形式。
 
-对于 Azure AD B2C 租户，此方法在响应正文中返回 `201 Created` socialIdentityProvider、openIdConnectIdentityProvider 或[](../resources/socialidentityprovider.md)[appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md)对象的响应代码和 JSON 表示[](../resources/openidconnectidentityprovider.md)形式。
+对于 Azure AD B2C 租户，此方法在响应正文中返回 `201 Created` socialIdentityProvider、openIdConnectIdentityProvider 或[](../resources/socialidentityprovider.md)[appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md)对象的响应代码和 JSON 表示形式[](../resources/openidconnectidentityprovider.md)。
 
 如果失败，将返回 `4xx` 错误并显示具体详细信息。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-create-a-specific-social-identity-provider-azure-ad-and-azure-ad-b2c"></a>示例 1：创建特定的 **社会标识提供程序 (Azure AD** 和Azure AD B2C) 
+### <a name="example-1-create-a-specific-social-identity-provider-azure-ad-and-azure-ad-b2c"></a>示例 1：创建特定的社会标识 **提供程序 (Azure AD Azure AD** B2C) 
 
 #### <a name="request"></a>请求
 
@@ -144,6 +144,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-socialidentityprovider-from-identityproviderbase-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-socialidentityprovider-from-identityproviderbase-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### <a name="response"></a>响应
@@ -172,7 +176,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-create-a-specific-openid-connect-identity-provider-only-for-azure-ad-b2c"></a>示例 2：为 B2C 连接创建 (**OpenID** Azure AD提供程序) 
+### <a name="example-2-create-a-specific-openid-connect-identity-provider-only-for-azure-ad-b2c"></a>示例 2：仅为 B2C 连接创建 (**OpenID** Azure AD提供程序) 
 
 #### <a name="request"></a>请求
 
@@ -224,6 +228,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-openidconnectidentityprovider-from-identityproviderbase-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-openidconnectidentityprovider-from-identityproviderbase-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -306,6 +314,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-applemanagedidentityprovider-from-identityproviderbase-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-applemanagedidentityprovider-from-identityproviderbase-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,16 +1,16 @@
 ---
 title: 获取 regionalAndLanguageSettings 资源
-description: 检索用户的区域AndLanguageSettings 的属性
+description: 检索用户的 regionalAndLanguageSettings 的属性
 author: jasonbro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 6bd4f758a2e7b0113ba6da5eb04b1823171986b8
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: b9e9a58bfe18bccba925c4aca7ba32143d6b0281
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516631"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60996867"
 ---
 # <a name="get-regionalandlanguagesettings"></a>获取 regionalAndLanguageSettings
 
@@ -20,14 +20,14 @@ ms.locfileid: "50516631"
 
 获取 [regionalAndLanguageSettings 对象](../resources/regionalAndLanguageSettings.md) 的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型                   |权限 (从最低特权到最多特权)      |
+|权限类型                   |权限 (权限级别从最低到最多)      |
 |----------------------------------|---------------------------------------------- |
 |委派（工作或学校帐户）|User.Read、User.Read.All                        |
 |委派 (个人帐户)       |User.Read、User.Read.All              |
-|Application                       |User.Read、User.Read.All              |
+|应用程序                       |User.Read、User.Read.All              |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -35,7 +35,7 @@ ms.locfileid: "50516631"
 GET /settings/regionalAndLanguageSettings
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-可用于获取 `$select` 特定的 regionalAndLanguageSettings 属性，包括默认情况下未返回的属性。
+可以使用 获取特定的 `$select` regionalAndLanguageSettings 属性，包括默认情况下未返回的属性。
 
 有关 OData 查询选项的详细信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
@@ -49,7 +49,7 @@ GET /settings/regionalAndLanguageSettings
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码 `200 OK` 和 [regionalAndLanguageSettings](../resources/regionalandlanguagesettings.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [regionalAndLanguageSettings](../resources/regionalandlanguagesettings.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -79,6 +79,10 @@ GET https://graph.microsoft.com/beta/me/settings/regionalAndLanguageSettings
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-regionalandlanguagesettings-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-regionalandlanguagesettings-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

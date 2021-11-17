@@ -1,16 +1,16 @@
 ---
 title: 更新 webAccount
 description: 更新 webAccount 对象的属性。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: bc907445655085ff863094f58d2afe337a9074fe
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 72a2b25432b0b5bd15af987db9f3ff1d4f866dc4
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050708"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61016622"
 ---
 # <a name="update-webaccount"></a>更新 webAccount
 
@@ -59,7 +59,7 @@ PATCH /users/{id | userPrincipalName}/profile/webAccounts/{id}
 |服务|[serviceInformation](../resources/serviceinformation.md)| 包含有关要关联的服务的基本详细信息。 |
 |statusMessage|String|包含来自云服务的状态消息（如果提供或同步）。 |
 |userId|String|为 webaccount 显示的用户名。  |
-|webUrl|String|包含指向云服务上的用户配置文件的链接（如果存在）。|
+|WebUrl|String|包含指向云服务上的用户配置文件的链接（如果存在）。|
 
 ## <a name="response"></a>响应
 
@@ -99,6 +99,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-webaccount-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-webaccount-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

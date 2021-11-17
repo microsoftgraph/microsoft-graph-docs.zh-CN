@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: 1db58a2c59409f04e29dbb297f8f3f5bbe8a6b2a
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 33dfb26d7108f10b93e6aeab43d006810b66f7a0
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60938474"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61032206"
 ---
 # <a name="privilegedrole-selfdeactivate"></a>privilegedRole： selfDeactivate
 
@@ -39,7 +39,7 @@ POST /privilegedRoles/{id}/selfDeactivate
 ```
 
 请注意， ``{id}`` 这是目标角色 ID。
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
@@ -79,6 +79,10 @@ POST https://graph.microsoft.com/beta/privilegedRoles/{id}/selfDeactivate
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/privilegedrole-selfdeactivate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/privilegedrole-selfdeactivate-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

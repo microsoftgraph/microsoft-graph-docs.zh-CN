@@ -1,25 +1,25 @@
 ---
 author: JeremyKelley
-description: 跟踪一段时间在驱动器项及其子项中的更改。
+description: 跟踪随时间推移在驱动器项目及其子项中的更改。
 ms.date: 09/10/2017
-title: driveItem： delta
+title: 'driveItem: delta'
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 463e36e54897b6c1a617a66c31c6902ccaad7cb2
-ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
+ms.openlocfilehash: 3ca8c95a2d14ca8c5cc81c710b72b618430e7380
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60890295"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61019925"
 ---
-# <a name="driveitem-delta"></a>driveItem： delta
+# <a name="driveitem-delta"></a>driveItem: delta
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-随着时间的推移，跟踪 [driveItem](../resources/driveitem.md) 及其子项中的更改。
+跟踪随时间推移在 [driveItem](../resources/driveitem.md) 及其子项中的更改。
 
 应用程序首先调用不带任何参数的 `delta`。服务开始枚举驱动器的层次结构，返回项目页面和 `@odata.nextLink` 或 `@odata.deltaLink`，如下所述。应用程序应该使用 `@odata.nextLink` 继续调用，直到不再返回 `@odata.nextLink`，或响应内容为空更改集。
 
@@ -231,8 +231,8 @@ Content-type: application/json
 
 如果应用只需了解更改，不需要了解现有项，这将非常有用。若要检索最新的 deltaLink，请使用查询字符串参数 `?token=latest` 调用 `delta`。
 
-> **注意：** 如果尝试维护文件夹或驱动器中项的完整本地表示形式，则必须用于 `delta` 初始枚举。
-如果枚举期间发生任何写入操作，则不能保证其他方法（如分页浏览文件夹集合）返回每个 `children` 项。 `delta`使用 是保证已读取所有所需的数据的唯一方法。
+> **注意：** 如果尝试维护文件夹或驱动器中项目的完整本地表示形式，则必须使用 `delta` 进行初始枚举。
+如果在枚举期间发生任何写入操作，则无法保证其他方法（例如通过文件夹的 `children` 集合分页）返回每一个项目。 使用 `delta` 是确保读取所需全部数据的唯一方法。
 
 #### <a name="request"></a>请求
 
@@ -278,21 +278,41 @@ Content-type: application/json
 
 ### <a name="example-4-retrieving-delta-results-using-a-timestamp"></a>示例 4：使用时间戳检索增量结果
 
-在某些情况下，客户端可能在一个特定时间前知道驱动器的状态，但没有该时间点的 deltaLink。 在这种情况下，客户端可以使用 URL 编码时间戳调用查询字符串参数的值，例如，或 `delta` `token` `?token=2021-09-29T20%3A00%3A00Z` "？token=2021-09-29T12%3A00%3A00%2B8%3A00"。
+在某些情况下，客户端可能知道某个特定时间之前的驱动器状态，但没有该时间点的 deltaLink。 在这种情况下，客户端可以使用 URL 编码时间戳作为 `token` 查询字符串参数的值调用 `delta`，例如 `?token=2021-09-29T20%3A00%3A00Z` 或“?token=2021-09-29T12%3A00%3A00%2B8%3A00”。
 
-仅在用户和用户上支持使用时间戳OneDrive for Business SharePoint。
+仅 OneDrive for Business 和 SharePoint 支持使用时间戳代替令牌。
 
-> **注意：** 客户端应在可能的情况下使用查询提供的 `delta` deltaLink，而不是生成自己的令牌。 只有在 deltaLink 未知时，才应利用此功能。
+> **注意：** 客户端应尽可能使用 `delta` 查询提供的 deltaLink，而不是生成自己的令牌。 仅当 deltaLink 未知时才应使用此功能。
 
 
 #### <a name="request"></a>请求
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-delta-timestamp", "scopes": "files.read", "tags": "service.graph", "target": "action" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/root/delta?token=2021-09-29T20%3A00%3A00Z
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-delta-timestamp-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-delta-timestamp-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-delta-timestamp-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-delta-timestamp-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### <a name="response"></a>响应
