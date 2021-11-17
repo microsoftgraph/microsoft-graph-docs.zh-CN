@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 8fd52aa0dabfb0f69423aea9921f72892b3a2f3e
-ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
+ms.openlocfilehash: df478d411a910401ca37b222684704b90da2e4d2
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60890142"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61021740"
 ---
 # <a name="update-oauth2permissiongrant-a-delegated-permission-grant"></a>更新 oAuth2PermissionGrant (委派权限授予) 
 
@@ -30,7 +30,7 @@ ms.locfileid: "60890142"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | DelegatedPermissionGrant.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Directory.ReadWrite.All |
+|应用程序 | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -48,7 +48,7 @@ PATCH /oauth2PermissionGrants/{id}
 
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
-| 属性     | 类型   |描述|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |scope|String| 指定资源应用程序应在 OAuth 2.0 访问令牌中预期的范围声明的值。 |
 
@@ -91,6 +91,10 @@ Content-Length: 30
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-oauth2permissiongrant-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-oauth2permissiongrant-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

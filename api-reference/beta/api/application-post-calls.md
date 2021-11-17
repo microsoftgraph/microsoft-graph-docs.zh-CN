@@ -2,16 +2,18 @@
 title: 创建调用
 description: 创建新呼叫。
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: e9aa683f0cce2bc108f4d4429908a7fc87fb0cd1
-ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
+ms.openlocfilehash: b6f9fa8d57671e4704caa77cc9575ff425e12e75
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58490131"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60983144"
 ---
+<!-- markdownlint-disable MD001 MD022 MD024 -->
+
 # <a name="create-call"></a>创建调用
 
 命名空间：microsoft.graph
@@ -28,7 +30,7 @@ Create [call](../resources/call.md) enables your bot to create a new outgoing pe
 |:---------------------------------------|:----------------------------------------------------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持                                                                           |
 | 委派（个人 Microsoft 帐户） | 不支持                                                                           |
-| 应用程序                            | Calls.JoinGroupCalls.Chat*、Calls.JoinGroupCallsasGuest.All、Calls.JoinGroupCalls.All、Calls.Initiate。All、Calls.InitiateGroupCalls.All |
+| 应用程序                            | Calls.JoinGroupCalls.Chat*、Calls.JoinGroupCallsasGuest.All、Calls.JoinGroupCalls.All、Calls.Initiate.All、Calls.InitiateGroupCalls.All |
 
 > **注意：** 对于具有应用托管媒体的呼叫，除了列出的权限之一之外，还需要 Calls.AccessMedia.All 或 Calls.AccessMedia.Chat* 权限。
 >
@@ -40,36 +42,42 @@ Create [call](../resources/call.md) enables your bot to create a new outgoing pe
 POST /app/calls
 POST /communications/calls
 ```
+
 > **注意：**`/app` 路径已弃用。 今后将使用 `/communications` 路径。
 
 ## <a name="request-headers"></a>请求标头
+
 | 名称          | 说明               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}。必需。 |
 | Content-type  | application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
+
 在请求正文中，提供 call 对象的 JSON [表示](../resources/call.md) 形式。
 
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应 `201 Created` 正文中返回 [响应](../resources/call.md) 代码和 call 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="example-1-create-peer-to-peer-voip-call-with-service-hosted-media"></a>示例 1：使用服务托管媒体创建对等 VoIP 呼叫
 
-> **注意：** 此调用需要Calls.Ini平铺。所有权限。
+> **注意：** 此调用需要 Calls.Initiate.All 权限。
 
 ##### <a name="request"></a>请求
+
 以下示例显示一个请求，该请求在机器人和指定用户之间进行对等呼叫。 本示例中，媒体由服务托管。 必须将授权令牌、回调 URL、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值替换为实际值，以确保示例有效。
 
-
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create-call-service-hosted-media-1",
   "@odata.type": "microsoft.graph.call"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/communications/calls
 Content-Type: application/json
@@ -98,6 +106,7 @@ Content-Type: application/json
   }
 }
 ```
+
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-call-service-hosted-media-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -114,18 +123,22 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-call-service-hosted-media-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-call-service-hosted-media-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ##### <a name="response"></a>响应
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.call"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Location: https://graph.microsoft.com/beta/communications/calls/2e1a0b00-2db4-4022-9570-243709c565ab
@@ -217,6 +230,7 @@ Content-Type: application/json
   "blockType": "example",
   "@odata.type": "microsoft.graph.commsNotifications"
 }-->
+
 ```json
 {
   "@odata.type": "#microsoft.graph.commsNotifications",
@@ -235,6 +249,7 @@ Content-Type: application/json
   ]
 }
 ```
+
 ##### <a name="notification---established"></a>通知 - 已建立
 
 ```http
@@ -246,6 +261,7 @@ Content-Type: application/json
   "blockType": "example",
   "@odata.type": "microsoft.graph.commsNotifications"
 }-->
+
 ```json
 {
   "@odata.type": "#microsoft.graph.commsNotifications",
@@ -269,11 +285,10 @@ Content-Type: application/json
 
 ### <a name="example-2-create-peer-to-peer-voip-call-with-application-hosted-media"></a>示例 2：使用应用程序托管媒体创建对等 VoIP 呼叫
 
-> **注意**：此示例需要Calls.Ini平铺。All 和 Calls.AccessMedia.All 权限。
+> **注意**：此示例需要 Calls.Initiate.All 和 Calls.AccessMedia.All 权限。
 
 ##### <a name="request"></a>请求
 以下示例显示一个请求，该请求在机器人和指定用户之间进行对等呼叫。 本示例中，媒体由应用程序本地托管。 必须将授权令牌、回调 URL、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值替换为实际值，以确保示例有效。
-
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -281,6 +296,7 @@ Content-Type: application/json
   "name": "create-call-app-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/communications/calls
 Content-Type: application/json
@@ -323,6 +339,7 @@ Content-Type: application/json
   }
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-call-app-hosted-media-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -339,11 +356,16 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-call-app-hosted-media-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-call-app-hosted-media-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 `<Media Session Configuration>` 是包含媒体堆栈的会话信息的序列化媒体会话配置。 此处应传递有关音频、视频、VBSS ssession 信息的特定信息。
 
 下面是音频媒体会话 blob 的示例。
+
 ```json
 {\"mpUri\":\"net.tcp://bot.contoso.com:18732/MediaProcessor\",\"audioRenderContexts\":[\"14778cc4-f54c-43c7-989f-9092e34ef784\"],\"videoRenderContexts\":[],\"audioSourceContexts\":[\"a5dcfc9b-5a54-48ef-86f5-1fdd8508741a\"],\"videoSourceContexts\":[],\"dataRenderContexts\":null,\"dataSourceContexts\":null,\"supportedAudioFormat\":\"Pcm16K\",\"videoSinkEncodingFormats\":[],\"mpMediaSessionId\":\"2379cf46-acf3-4fef-a914-be9627075320\",\"regionAffinity\":null,\"skypeMediaBotsVersion\":\"1.11.1.0086\",\"mediaStackVersion\":\"2018.53.1.1\",\"mpVersion\":\"7.2.0.3881\",\"callId\":\"1b69b141-7f1a-4033-9c34-202737190a20\"}
 ```
@@ -359,6 +381,7 @@ Content-Type: application/json
   "truncated": true,
   "@odata.type": "microsoft.graph.call"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Location: https://graph.microsoft.com/beta/communications/calls/2e1a0b00-2db4-4022-9570-243709c565ab
@@ -430,14 +453,17 @@ Content-Type: application/json
 > **注意：** 此示例调用需要 `Calls.InitiateGroupCalls.All` 权限。 创建的组呼叫不支持聊天或录制。
 
 ##### <a name="request"></a>请求
+
 ```http
 POST https://graph.microsoft.com/beta/communications/calls
 Content-Type: application/json
 ```
+
 <!-- {
   "blockType": "example",
   "@odata.type": "microsoft.graph.call"
 }-->
+
 ```json
 {
   "@odata.type": "#microsoft.graph.call",
@@ -496,14 +522,17 @@ Content-Type: application/json
 > **注意：** 此示例调用需要 `Calls.InitiateGroupCalls.All` 权限。 创建的组呼叫不支持聊天或录制。
 
 ##### <a name="request"></a>请求
+
 ```http
 POST https://graph.microsoft.com/beta/communications/calls
 Content-Type: application/json
 ```
+
 <!-- {
   "blockType": "example",
   "@odata.type": "microsoft.graph.call"
 }-->
+
 ```json
 {
   "@odata.type": "#microsoft.graph.call",
@@ -558,21 +587,24 @@ Content-Type: application/json
 ```
 
 ### <a name="example-5-join-scheduled-meeting-with-service-hosted-media"></a>示例 5：使用服务托管媒体加入安排的会议
+
 若要加入安排的会议，我们需要获取主题 ID、消息 ID、组织者 ID 和计划会议的租户 ID。
 此信息可以从 Get Online [Meetings API 获取](../api/onlinemeeting-get.md)。
 
 必须将授权令牌、回调 url、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值与从 Get Online  [Meetings API](../api/onlinemeeting-get.md) 获取的详细信息一起替换为实际值，以确保示例有效。
+
 > **注意：** 此示例需要 `Calls.JoinGroupCalls.All` 权限或特定于 `Calls.JoinGroupCalls.Chat` [资源的权限](https://aka.ms/teams-rsc)。
 
 ##### <a name="request"></a>请求
 
-
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "join-meeting-service-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/communications/calls
 Content-Type: application/json
@@ -586,15 +618,15 @@ Content-Type: application/json
   "mediaConfig": {
     "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
     "preFetchMedia": [
-     {
-       "uri": "https://cdn.contoso.com/beep.wav",
-       "resourceId": "f8971b04-b53e-418c-9222-c82ce681a582"
-     },
-     {
-       "uri": "https://cdn.contoso.com/cool.wav",
-       "resourceId": "86dc814b-c172-4428-9112-60f8ecae1edb"
-     }
-    ],
+      {
+        "uri": "https://cdn.contoso.com/beep.wav",
+        "resourceId": "f8971b04-b53e-418c-9222-c82ce681a582"
+      },
+      {
+        "uri": "https://cdn.contoso.com/cool.wav",
+        "resourceId": "86dc814b-c172-4428-9112-60f8ecae1edb"
+      }
+    ]
   },
   "chatInfo": {
     "@odata.type": "#microsoft.graph.chatInfo",
@@ -608,15 +640,16 @@ Content-Type: application/json
       "user": {
         "@odata.type": "#microsoft.graph.identity",
         "id": "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96",
-        "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
+        "tenantId": "9f386a15-f9cc-445b-8106-ac85e314a07b",
         "displayName": "Bob"
       }
     },
     "allowConversationWithoutHost": true
   },
-  "tenantId":"86dc81db-c112-4228-9222-63f3esaa1edb"
+  "tenantId": "86dc81db-c112-4228-9222-63f3esaa1edb"
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/join-meeting-service-hosted-media-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -629,6 +662,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/join-meeting-service-hosted-media-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/join-meeting-service-hosted-media-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### <a name="response"></a>响应
@@ -638,6 +675,7 @@ Content-Type: application/json
   "truncated": "true",
   "@odata.type": "microsoft.graph.call"
 }-->
+
 ```http
 HTTP/1.1 201 Created
 Location: https://graph.microsoft.com/beta/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
@@ -728,6 +766,7 @@ Content-Type: application/json
   "blockType": "example",
   "@odata.type": "microsoft.graph.commsNotifications"
 }-->
+
 ```json
 {
   "@odata.type": "#microsoft.graph.commsNotifications",
@@ -765,6 +804,7 @@ Content-Type: application/json
 }
 
 ```
+
 ##### <a name="notification---established"></a>通知 - 已建立
 
 ```http
@@ -776,6 +816,7 @@ Content-Type: application/json
   "blockType": "example",
   "@odata.type": "microsoft.graph.commsNotifications"
 }-->
+
 ```json
 {
   "@odata.type": "#microsoft.graph.commsNotifications",
@@ -812,6 +853,7 @@ Content-Type: application/json
   ]
 }
 ```
+
 ##### <a name="notification---roster"></a>通知 - 名单
 
 ```http
@@ -824,6 +866,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.commsNotifications",
   "truncated": true
 }-->
+
 ```json
 {
   "@odata.type": "#microsoft.graph.commsNotifications",
@@ -919,6 +962,7 @@ Content-Type: application/json
   "name": "join-meeting-app-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/communications/calls
 Content-Type: application/json
@@ -956,7 +1000,6 @@ Content-Type: application/json
 }
 ```
 
-
 ### <a name="example-7-join-channel-meeting-with-service-hosted-media"></a>示例 7：使用服务托管媒体加入频道会议
 频道内的会议需要特定的详细信息，如主题 ID、messageid 和组织者详细信息，可以使用 [Get Online Meetings API 获取](../api/onlinemeeting-get.md)。
 
@@ -971,6 +1014,7 @@ Content-Type: application/json
   "name": "join-channel-meeting-service-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/communications/calls
 Content-Type: application/json
@@ -1028,6 +1072,7 @@ the 显示名称 is the name you want to be displayed in the meeting for your gu
   "name": "join-channel-meeting-as-guest-service-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/communications/calls
 Content-Type: application/json
@@ -1082,7 +1127,8 @@ Content-Type: application/json
   }
 }
 ```
-> **注意：** 来宾加入取决于会议租户设置。 应用程序可能会进入会议厅，等待用户进行注册。 此属性由 `isInLobby` 属性定义
+
+> **注意：** 来宾加入取决于会议租户设置。 应用程序可能会进入大厅，等待用户进行注册。 此属性由 `isInLobby` 属性定义
 
 ##### <a name="notification---roster"></a>通知 - 名单
 
@@ -1096,6 +1142,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.commsNotifications",
   "truncated": true
 }-->
+
 ```json
 {
   "@odata.type": "#microsoft.graph.commsNotifications",
@@ -1137,18 +1184,18 @@ Content-Type: application/json
   ]
 }
 ```
+
 > **注意：** 在从会议厅中获准加入会议之前，应用程序不会接收会议参与者名单
 
 ### <a name="example-9-create-peer-to-peer-pstn-call-with-service-hosted-media"></a>示例 9：使用服务托管媒体创建对等 PSTN 呼叫
 
-> **注意：** 此调用需要Calls.Ini平铺。所有权限。
+> **注意：** 此调用需要 Calls.Initiate.All 权限。
 
 此呼叫需要分配有 PSTN 号码的应用程序实例。 有关详细信息，请参阅 [将电话号码分配给自动程序](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)。
 
 #### <a name="request"></a>请求
 下面的示例展示了在机器人和 PSTN 号码之间进行对等呼叫的请求。 本示例中，媒体由服务托管。 必须将授权令牌、回调 URL、应用程序实例 ID、应用程序实例显示名称、电话 ID 和租户 ID 的值替换为实际值，以确保示例有效。
-> **注意：** 应用程序实例 ID 是应用程序实例的对象 ID。 应用程序实例链接到的应用程序 ID 应该与授权令牌中的 ID 相匹配。 电话ID 是 E.164 格式的电话号码。
-
+> **注意：** 应用程序实例 ID 是应用程序实例的对象 ID。 应用程序实例链接到的应用程序 ID 应该与授权令牌中的 ID 相匹配。 电话 ID 是 E.164 格式的电话号码。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -1156,6 +1203,7 @@ Content-Type: application/json
   "name": "create-call-service-hosted-media-2",
   "@odata.type": "microsoft.graph.call"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/communications/calls
 Content-Type: application/json
@@ -1171,7 +1219,7 @@ Content-Type: application/json
         "@odata.type": "#microsoft.graph.identity",
         "displayName": "Calling Bot",
         "id": "3d913abb-aec0-4964-8fa6-3c6850c4f278"
-      },
+      }
     },
     "countryCode": null,
     "endpointType": null,
@@ -1199,6 +1247,7 @@ Content-Type: application/json
   "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a"
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-call-service-hosted-media-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -1207,18 +1256,22 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-call-service-hosted-media-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-call-service-hosted-media-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 #### <a name="response"></a>响应
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.call"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Location: https://graph.microsoft.com/beta/communications/calls/2e1a0b00-2db4-4022-9570-243709c565ab
@@ -1300,14 +1353,13 @@ Content-Type: application/json
 
 ### <a name="example-10-create-peer-to-peer-pstn-call-with-application-hosted-media"></a>示例 10：使用应用程序托管媒体创建对等 PSTN 呼叫
 
-> **注意**：此示例要求Calls.Ini平铺。All 和 Calls.AccessMedia.All 权限。
+> **注意**：此示例需要 Calls.Initiate.All 和 Calls.AccessMedia.All 权限。
 
 此呼叫需要分配有 PSTN 号码的应用程序实例。 有关详细信息，请参阅 [将电话号码分配给自动程序](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)。
 
 #### <a name="request"></a>请求
 以下示例显示了在机器人和 PSTN 号码之间进行对等呼叫的请求。 本示例中，媒体由应用程序本地托管。 必须将授权令牌、回调 URL、应用程序实例 ID、应用程序实例显示名称、电话 ID 和租户 ID 的值替换为实际值，以确保示例有效。
-> **注意：** 应用程序实例 ID 是应用程序实例的对象 ID。 应用程序实例链接到的应用程序 ID 应该与授权令牌中的 ID 相匹配。 电话ID 是 E.164 格式的电话号码。
-
+> **注意：** 应用程序实例 ID 是应用程序实例的对象 ID。 应用程序实例链接到的应用程序 ID 应该与授权令牌中的 ID 相匹配。 电话 ID 是 E.164 格式的电话号码。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -1315,6 +1367,7 @@ Content-Type: application/json
   "name": "create-call-service-hosted-media-3",
   "@odata.type": "microsoft.graph.call"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/communications/calls
 Content-Type: application/json
@@ -1330,7 +1383,7 @@ Content-Type: application/json
         "@odata.type": "#microsoft.graph.identity",
         "displayName": "Calling Bot",
         "id": "3d913abb-aec0-4964-8fa6-3c6850c4f278"
-      },
+      }
     },
     "countryCode": null,
     "endpointType": null,
@@ -1359,6 +1412,7 @@ Content-Type: application/json
   "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a"
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-call-service-hosted-media-3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -1367,18 +1421,22 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-call-service-hosted-media-3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-call-service-hosted-media-3-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 #### <a name="response"></a>响应
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.call"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Location: https://graph.microsoft.com/beta/communications/calls/2e1a0b00-2db4-4022-9570-243709c565ab

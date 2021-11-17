@@ -1,16 +1,16 @@
 ---
 title: 删除 bookingAppointment
 description: 删除指定 bookingbusiness 中的 bookingAppointment。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 41a5096809b91ee25dfe8dc70071aa37c08aebb5
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 02a43aef7bed9199db96aba33c4904a96e0f69db
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047936"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60990694"
 ---
 # <a name="delete-bookingappointment"></a>删除 bookingAppointment
 
@@ -74,10 +74,14 @@ DELETE https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M
 [!INCLUDE [sample-code](../includes/snippets/java/delete-bookingappointment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-bookingappointment-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### <a name="response"></a>响应
-下面展示了示例响应。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true

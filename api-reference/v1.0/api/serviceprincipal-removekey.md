@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: f6311481eddade52d6f3f2e2898037d4fe493a1c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0d4e08ad441b9a5fecfc8d8aa0778707f83aa1ea
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59026047"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61024161"
 ---
 # <a name="serviceprincipal-removekey"></a>servicePrincipal： removeKey
 
@@ -97,6 +97,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-removekey-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-removekey-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -2,15 +2,15 @@
 title: call： subscribeToTone
 description: 订阅 DTMF (双音多频信号) 。 这允许你在用户按下"Dialpad"上的键时收到通知。
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 7fb6cbbea2ff3e90f7e0b9ed33b79666146e8ec5
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c499652313c420c2a80d2fbda1247e9cb7df46f1
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047621"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61028894"
 ---
 # <a name="call-subscribetotone"></a>call： subscribeToTone
 
@@ -23,7 +23,7 @@ ms.locfileid: "52047621"
 > [!Note]
 > **subscribeToTone** 操作仅支持 [通过](../resources/call.md) [serviceHostedMediaConfig 启动的呼叫](../resources/servicehostedmediaconfig.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权） |
@@ -91,6 +91,10 @@ Content-Length: 46
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/call-subscribetotone-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/call-subscribetotone-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

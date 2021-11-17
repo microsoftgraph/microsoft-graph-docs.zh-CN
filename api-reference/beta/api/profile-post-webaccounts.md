@@ -1,16 +1,16 @@
 ---
 title: 创建 webAccount
 description: 创建新的 webAccount 对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 2d41cb9fe650fa8d506f8ea9c218a01d4f2c0605
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3170c2c291b8e2a1f6a357f203f58bd33ca05ef4
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52036763"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61023636"
 ---
 # <a name="create-webaccount"></a>创建 webAccount
 
@@ -20,7 +20,7 @@ ms.locfileid: "52036763"
 
 在用户配置文件中创建新的 [webAccount](../resources/webaccount.md) [对象](../resources/profile.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -61,7 +61,7 @@ POST /users/{id | userPrincipalName}/profile/webAccounts
 |source|[personDataSource](../resources/persondatasource.md)|如果从另一个服务同步，则值源自何处。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |statusMessage|String|包含来自云服务的状态消息（如果提供或同步）。 |
 |userId|String|为 webaccount 显示的用户名。  |
-|webUrl|String|包含指向云服务上的用户配置文件的链接（如果存在）。|
+|WebUrl|String|包含指向云服务上的用户配置文件的链接（如果存在）。|
 
 ## <a name="response"></a>响应
 
@@ -106,6 +106,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-webaccount-from-profile-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-webaccount-from-profile-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 908490a9546e0675a8d26dea33c25e3790d3d47b
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: f9ed276fde02c49fc3efec9d6215a56a8a391ec2
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60943764"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60976622"
 ---
 # <a name="list-memberof"></a>列出 memberOf
 
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/memberOf
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/group-get-memberof-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/group-get-memberof-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

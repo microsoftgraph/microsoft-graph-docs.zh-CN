@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 1b18d011c2690a6899020c60263770eb24f7bf60
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 57ce251cfd37a89e06ccfed5db10ccfe2a6b8b8f
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59764477"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61015384"
 ---
 # <a name="list-group-members"></a>List group members
 
@@ -92,6 +92,10 @@ GET https://graph.microsoft.com/beta/groups/{id}/members
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-group-members-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-group-members-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -284,6 +288,10 @@ ConsistencyLevel: eventual
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-a-count-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-a-count-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

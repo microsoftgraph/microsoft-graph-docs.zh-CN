@@ -1,16 +1,16 @@
 ---
 title: 删除 accessPackageAssignmentPolicy
 description: 删除 accessPackageAssignmentPolicy。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: fa2ca4ac595beaf917a76c20d88d148ddf02516f
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 0407b37c21c5e2e8067c8f535f1d4427f6ead6c0
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439742"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60983546"
 ---
 # <a name="delete-accesspackageassignmentpolicy"></a>删除 accessPackageAssignmentPolicy
 
@@ -18,9 +18,9 @@ ms.locfileid: "50439742"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在[Azure AD 权利管理中](../resources/entitlementmanagement-root.md)，删除[accessPackageAssignmentPolicy。](../resources/accesspackageassignmentpolicy.md)
+在[Azure AD中](../resources/entitlementmanagement-root.md)，删除[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "50439742"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | EntitlementManagement.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | EntitlementManagement.ReadWrite.All |
+| 应用程序                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -42,7 +42,7 @@ DELETE /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
 
 | 名称          | 说明   |
 |:--------------|:--------------|
-| Authorization | 持有者 \{token\}。 必需。 |
+| Authorization | 持有者 \{token\}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -50,7 +50,7 @@ DELETE /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将返回"204 无内容"响应代码。 它不在响应正文中返回任何内容。
+如果成功，此方法返回"204 无内容"响应代码。 它不会在响应正文中返回任何内容。
 
 ## <a name="examples"></a>示例
 
@@ -81,6 +81,10 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-accesspackageassignmentpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-accesspackageassignmentpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

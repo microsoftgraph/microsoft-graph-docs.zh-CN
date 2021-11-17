@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 37d2cf9e908873abff9888a96a24f6d40cbbb298
-ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
+ms.openlocfilehash: a31c56aa3f43c37dfff19d9d885ccfcfb4b94336
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60780875"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61018827"
 ---
 # <a name="cloudpcdeviceimage-getsourceimages"></a>cloudPcDeviceImage：getSourceImages
 
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceImag
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/cloudpcdeviceimage-getsourceimages-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/cloudpcdeviceimage-getsourceimages-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

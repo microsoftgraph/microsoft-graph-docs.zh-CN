@@ -2,15 +2,15 @@
 title: 删除 eventMessage
 description: 删除 eventMessage。
 author: harini84
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ef524c051e0d2052c8afe50c36a9d366e8ac8303
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 514786c4b9f9c8520bbeb6a27c7d54a07ed393f6
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954690"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60981790"
 ---
 # <a name="delete-eventmessage"></a>删除 eventMessage
 
@@ -75,6 +75,10 @@ DELETE https://graph.microsoft.com/beta/me/messages/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-eventmessage-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-eventmessage-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

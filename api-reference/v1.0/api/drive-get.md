@@ -6,12 +6,12 @@ ms.localizationpriority: high
 ms.prod: sharepoint
 description: 检索 Drive 资源的属性和关系。
 doc_type: apiPageType
-ms.openlocfilehash: 84cc50aca94170fb6cd81b5ff41d255380496566
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d8f8f9463cad0eeac2fc5a0ae3e3c7a8cd7a948d
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59140890"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61006480"
 ---
 # <a name="get-drive"></a>获取驱动器
 
@@ -62,6 +62,10 @@ GET /me/drive
 [!INCLUDE [sample-code](../includes/snippets/java/get-drive-default-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-drive-default-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -94,6 +98,10 @@ GET /users/{idOrUserPrincipalName}/drive
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-drive-by-user-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-drive-by-user-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -134,6 +142,10 @@ GET /groups/{groupId}/drive
 [!INCLUDE [sample-code](../includes/snippets/java/get-drive-by-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-drive-by-group-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -172,6 +184,10 @@ GET /sites/{siteId}/drive
 [!INCLUDE [sample-code](../includes/snippets/java/get-drive-by-site-id-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-drive-by-site-id-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -208,6 +224,10 @@ GET /drives/{drive-id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-drive-by-id-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-drive-by-id-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

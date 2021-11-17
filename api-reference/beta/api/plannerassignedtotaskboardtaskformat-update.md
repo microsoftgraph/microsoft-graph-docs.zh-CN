@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 0594787408a8d499c850d0679085ba3b0fd7557c
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 11c4b4b592dc926de0030f8c58c9c315765f3a19
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60942114"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61033921"
 ---
 # <a name="update-plannerassignedtotaskboardtaskformat"></a>更新 plannerAssignedToTaskBoardTaskFormat
 
@@ -19,7 +19,7 @@ ms.locfileid: "60942114"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新 **plannerAssignedToTaskBoardTaskFormat** 对象的属性。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -42,7 +42,7 @@ PATCH /planner/tasks/{id}/assignedToTaskBoardFormat
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |orderHintsByAssignee|[plannerOrderHintsByAssignee](../resources/plannerorderhintsbyassignee.md)|用于在任务板的 AssignedTo 视图中对任务排序的提示字典。 每个条目的键是任务分配到的用户之一，值是排序提示。 每个值的格式在 [Using order hints in Planner (. 中定义。/resources/planner_order_hint_format.md) 。|
 |unassignedOrderHint|字符串|当任务未分配给任何人，或者 orderHintsByAssignee 字典未为任务分配到的用户提供排序提示时，用于在任务板的 AssignedTo 视图中对任务排序的提示值。 格式在使用 Planner 中的 [排序提示中定义](../resources/planner-order-hint-format.md)。|
@@ -84,6 +84,10 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-plannerassignedtotaskboardtaskformat-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-plannerassignedtotaskboardtaskformat-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

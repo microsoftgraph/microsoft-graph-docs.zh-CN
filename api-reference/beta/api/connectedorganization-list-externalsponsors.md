@@ -1,16 +1,16 @@
 ---
 title: 列出 externalSponsors
-description: 检索 connectedOrganization 的外部Sponsors 的列表。
+description: 检索 connectedOrganization 的 externalSponsors 的列表。
 author: markwahl-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 6eeb457567766c9c16a581d0fb864ebde1d16db5
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: f552c6fbbdfe01b796122c53861415ffa382e56f
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437453"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61005681"
 ---
 # <a name="list-externalsponsors"></a>列出 externalSponsors
 
@@ -18,9 +18,9 @@ ms.locfileid: "50437453"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [connectedOrganization](../resources/connectedorganization.md)的外部发起人的列表。  外部发起人是一组可以代表该连接组织的其他用户批准请求的用户。
+检索 [connectedOrganization 的外部](../resources/connectedorganization.md)发起人的列表。  外部发起人是一组用户可以代表该已连接的组织的其他用户批准请求。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "50437453"
 |:---|:---|
 | 委派（工作或学校帐户）     | EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All |
+| 应用程序                            | EntitlementManagement.Read.All、EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/co
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/connectedorganization-get-externalsponsors-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/connectedorganization-get-externalsponsors-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

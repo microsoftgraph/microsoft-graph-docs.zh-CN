@@ -5,19 +5,19 @@ author: vishriv
 ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: apiPageType
-ms.openlocfilehash: 30037475c00515f8fb6a0250d899582fef24a21b
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: a6a22f9e6825809efbbabeed2b966026d92657be
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60940249"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60988390"
 ---
 # <a name="update-set"></a>更新集
 命名空间：microsoft.graph.termStore
 
 更新 [set 对象](../resources/termstore-set.md) 的属性。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -49,10 +49,10 @@ PATCH sites/{site-id}/termStore/sets/{set-id}
 
 下表显示了可编辑 set 对象 [的属性](../resources/termstore-set.md) 。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |localizedNames|[microsoft.graph.termStore.localizedName](../resources/termstore-localizedname.md) 集合|集合的名称。|
-|description|String|集的说明。|
+|说明|String|集的说明。|
 |properties|[microsoft.graph.keyValue](../resources/keyvalue.md) 集合|集合的属性。|
 
 
@@ -94,6 +94,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-set-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-set-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

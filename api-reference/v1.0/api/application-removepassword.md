@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 36ac4fa8fa1536fc638bc99d8db306ce0fcb8e2a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e2669840fd3081334487b6209a2b3da05a75f7c3
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59038550"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61008880"
 ---
 # <a name="application-removepassword"></a>application： removePassword
 
@@ -89,6 +89,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/application-removepassword-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/application-removepassword-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

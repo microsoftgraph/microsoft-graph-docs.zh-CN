@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: edc20cd628588214a1436a5e66731a4b161d4388
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9ca84e469db1eed78215b262441673a9318859c2
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59072776"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61003630"
 ---
 # <a name="delete-permissiongrantpolicy"></a>删除 permissionGrantPolicy
 
@@ -80,6 +80,10 @@ DELETE https://graph.microsoft.com/v1.0/policies/permissionGrantPolicies/my-cust
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-permissiongrantpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-permissiongrantpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,16 +1,16 @@
 ---
 title: 删除协议
 description: 删除协议对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 0e997d3b720ee56e756e067c2e181f909f7dd539
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6874bd47325afb2d62625dcabe8accfa07c75181
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048223"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60991394"
 ---
 # <a name="delete-agreement"></a>删除协议
 
@@ -28,7 +28,7 @@ ms.locfileid: "52048223"
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序                            | 不支持。 |
 
-代表用户进行呼叫时，用户需要属于以下目录角色之一。 若要了解有关目录角色的信息，请参阅 [Azure AD 内置角色](/azure/active-directory/roles/permissions-reference)：
+代表用户进行呼叫时，用户需要属于以下目录角色之一。 若要详细了解目录角色，请参阅Azure AD[角色：](/azure/active-directory/roles/permissions-reference)
 + 全局管理员
 + 条件访问管理员
 + 安全管理员
@@ -76,6 +76,10 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-agreement-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-agreement-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

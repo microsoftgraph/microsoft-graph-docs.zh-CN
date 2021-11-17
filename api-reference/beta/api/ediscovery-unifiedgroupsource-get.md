@@ -2,15 +2,15 @@
 title: 获取 unifiedGroupSource
 description: 读取 unifiedGroupSource 对象的属性和关系。
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: e578cb03aff1cebf1c71f7b815fe008b7694d88b
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 069b2cf5ecbe8c40ffcebf340dc2ef4d7a9e4985
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50951952"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61032583"
 ---
 # <a name="get-unifiedgroupsource"></a>获取 unifiedGroupSource
 
@@ -20,7 +20,7 @@ ms.locfileid: "50951952"
 
 读取 [unifiedGroupSource](../resources/ediscovery-unifiedgroupsource.md) 对象的属性和关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/4c8f8f70-7785-4
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-unifiedgroupsource-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-unifiedgroupsource-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

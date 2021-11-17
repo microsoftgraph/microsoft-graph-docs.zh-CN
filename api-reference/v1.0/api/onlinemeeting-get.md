@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 7602f0011163d668618d0af3e6890c5308ab849f
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: e4821e6b84cd93dbbf880d072e672dccdde7cd04
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60561526"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61023277"
 ---
 # <a name="get-onlinemeeting"></a>获取 onlineMeeting
 
@@ -21,7 +21,7 @@ ms.locfileid: "60561526"
 例如，你能够：
 
 - 使用[videoTeleconferenceId、](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid)[会议 ID](#example-2-retrieve-an-online-meeting-by-meeting-id)或[joinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl)获取联机会议的详细信息。
-- 使用 路径获取下载链接形式的 Microsoft Teams 活动与会者报告，如示例 `/attendeeReport` [4 所示](#example-4-fetch-attendee-report-of-a-teams-live-event)。 [](/microsoftteams/teams-live-events/what-are-teams-live-events)
+- 使用 路径获取活动Microsoft Teams下载链接的形式，如示例 `/attendeeReport` [4 所示](#example-4-fetch-attendee-report-of-a-teams-live-event)。 [](/microsoftteams/teams-live-events/what-are-teams-live-events)
 
 Teams事件参与者报告是联机会议项目。 有关详细信息，请参阅 [联机会议项目与权限](/graph/cloud-communications-online-meeting-artifacts)。
 
@@ -33,9 +33,9 @@ Teams事件参与者报告是联机会议项目。 有关详细信息，请参�
 |:---------------------------------------|:------------------------------------------------------|
 | 委派（工作或学校帐户）     | OnlineMeetingArtifact.Read.All、OnlineMeetings.Read、OnlineMeetings.ReadWrite         |
 | 委派（个人 Microsoft 帐户） | 不支持。                                        |
-| Application                            | OnlineMeetingArtifact.Read.All、OnlineMeetings.Read.All、OnlineMeetings.ReadWrite.All |
+| 应用程序                            | OnlineMeetingArtifact.Read.All、OnlineMeetings.Read.All、OnlineMeetings.ReadWrite.All |
 
-若要对此 API 使用应用程序权限，租户管理员必须创建应用程序[](/graph/cloud-communication-online-meeting-application-access-policy)访问策略，并授予用户授权策略中配置的应用代表该用户获取联机会议和/或联机会议项目 (请求路径) 中指定了用户 ID。
+若要对此 API 使用应用程序权限，租户管理员必须创建应用程序[](/graph/cloud-communication-online-meeting-application-access-policy)访问策略，并授予用户授权策略中配置的应用，以代表该用户 (代表该用户获取联机会议和/或联机会议项目，请求路径) 中指定了用户 ID。
 
 > [!IMPORTANT]
 > 如果您提取联机会议项目并且没有联机会议项目，则仅需要 _OnlineMeetingArtifact.Read.All_ 权限。 有关详细信息，请参阅 [联机会议项目与权限](/graph/cloud-communications-online-meeting-artifacts)。
@@ -79,7 +79,7 @@ GET /users/{userId}/onlineMeetings/{meetingId}/attendeeReport
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称          | 说明               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}。必需。 |
@@ -131,6 +131,10 @@ GET https://graph.microsoft.com/v1.0/communications/onlineMeetings/?$filter=Vide
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-onlinemeeting-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-onlinemeeting-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -213,7 +217,7 @@ Content-Length: 1574
 ```
 
 ### <a name="example-2-retrieve-an-online-meeting-by-meeting-id"></a>示例 2：按会议 ID 检索联机会议
-可以使用用户或应用程序令牌通过会议 ID 检索会议信息。 创建 [onlineMeeting](../resources/onlinemeeting.md)时，响应对象中会提供会议 ID。 此选项可用于支持已知会议 ID 的用例，例如当应用程序首先使用 Graph API 创建联机会议时，稍后将检索会议信息作为单独操作。
+可以使用用户或应用程序令牌通过会议 ID 检索会议信息。 创建 [onlineMeeting](../resources/onlinemeeting.md)时，响应对象中会提供会议 ID。 此选项可用于支持已知会议 ID 的用例，例如，当应用程序首先使用 Graph API 创建联机会议时，稍后将检索会议信息作为单独操作。
 
 #### <a name="request"></a>请求
 
@@ -240,6 +244,10 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-onlinemeeting-user-token-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-onlinemeeting-user-token-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -362,7 +370,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-4-fetch-attendee-report-of-a-teams-live-event"></a>示例 4：获取实时事件Teams与会者报告
+### <a name="example-4-fetch-attendee-report-of-a-teams-live-event"></a>示例 4：获取实时事件的Teams报告
 
 以下示例显示下载与会者报告的请求。
 
@@ -394,6 +402,10 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-attendee-report-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-attendee-report-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

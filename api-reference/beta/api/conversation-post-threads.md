@@ -2,15 +2,15 @@
 title: 创建线程
 description: 在指定会话中创建新线程。
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a15beb00f10c23e7de09b20ebd3f5063bb07e6ab
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: fa0e5f7081f605e040e15048cbf49a605d4000dc
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514509"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60987131"
 ---
 # <a name="create-thread"></a>创建线程
 
@@ -89,6 +89,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-conversationthread-from-conversation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-conversationthread-from-conversation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

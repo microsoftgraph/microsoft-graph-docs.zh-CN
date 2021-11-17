@@ -1,16 +1,16 @@
 ---
 title: 列出 authenticationContextClassReferences
 description: 检索 authenticationContextClassReference 对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: calebb
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 44ad9e9d1f62d0f4882160118f98da91a7a571c9aff94b3d59f31809ed3a3a4a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d1eefae33e7db2b89cac1f7db7fdefe2c92d7dff
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57221130"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61003853"
 ---
 # <a name="list-authenticationcontextclassreferences"></a>列出 authenticationContextClassReferences
 
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationCo
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-authenticationcontextclassreference-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-authenticationcontextclassreference-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,16 +1,16 @@
 ---
 title: 删除 programControl
-description: 在 Azure AD 访问评审功能中，删除 programControl 对象。  这会将访问评审与计划取消链接。
-localization_priority: Normal
+description: 在Azure AD访问评审功能中，删除 programControl 对象。  这会将访问评审与计划取消链接。
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 3a3622c7e9d1390c956c926f8e04d85ecfe7b7c2
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: bf2279a523a398ce30acaa50f85a251a3e84f25a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055223"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61019317"
 ---
 # <a name="delete-programcontrol"></a>删除 programControl
 
@@ -18,7 +18,7 @@ ms.locfileid: "52055223"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 Azure AD [访问评审](../resources/accessreviews-root.md) 功能中，删除 [programControl](../resources/programcontrol.md) 对象。  这会将访问评审与计划取消链接。
+在Azure AD[评审](../resources/accessreviews-root.md)功能中，删除[programControl](../resources/programcontrol.md)对象。  这会将访问评审与计划取消链接。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -72,6 +72,10 @@ DELETE https://graph.microsoft.com/beta/programControls/7e59d237-2fb0-4e5d-b7bb-
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-programcontrol-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-programcontrol-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

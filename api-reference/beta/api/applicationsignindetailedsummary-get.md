@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dhanyahk
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 381183ff83900961f79aeb900324e3df90c60494
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 57412f296e7f2aa5e7c5300263c6bccabf111c76
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60942476"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60982776"
 ---
 # <a name="get-applicationsignindetailedsummary"></a>获取 applicationSignInDetailedSummary
 
@@ -39,7 +39,7 @@ GET /reports/applicationSignInDetailedSummary/{id}
 
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称      |说明|
 |:----------|:----------|
@@ -78,6 +78,10 @@ GET https://graph.microsoft.com/beta/reports/applicationSignInDetailedSummary/{i
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-applicationsignindetailedsummary-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-applicationsignindetailedsummary-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

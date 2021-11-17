@@ -5,12 +5,12 @@ author: akjo
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 02a0bfa4fb3027f4bae335262c1a3a9fb0c61724
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: adda61aabc9e903bb2883ef393bbe1f02dc362be
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60941790"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61031176"
 ---
 # <a name="add-conversationmember"></a>添加 conversationMember
 
@@ -44,7 +44,7 @@ POST /teams/{id}/channels/{id}/members
 
 请求正文中包含以下属性。
 
-| 属性   | 类型 |Description|
+| 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
 |角色|string 集合|该用户的角色。|
 |用户|[user](../resources/user.md)|要添加到频道的用户。|
@@ -90,6 +90,10 @@ content-length: 26
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-conversation-member-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-conversation-member-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

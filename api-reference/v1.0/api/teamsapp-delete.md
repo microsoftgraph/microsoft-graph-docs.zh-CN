@@ -1,16 +1,16 @@
 ---
 title: 删除 teamsApp
-description: '从Teams租户应用程序目录组织的应用程序目录中删除 (应用程序) 。 '
+description: '从Teams应用程序目录中删除租户应用程序 (应用程序目录中) 。 '
 ms.localizationpriority: medium
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9037dbf84ba823ae339ced7d4a47c3ec85f363c3
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: fd5f302f6bf10fb16e15333c42766e877a7b4df1
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60290013"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60976167"
 ---
 # <a name="delete-teamsapp"></a>删除 teamsApp
 
@@ -19,7 +19,7 @@ ms.locfileid: "60290013"
 <!-- markdownlint-disable MD001 -->
 ### <a name="delete-an-app-from-your-organizations-app-catalog"></a>从组织的应用程序目录中删除应用程序
 
-从 [租户](../resources/teamsapp.md) 应用程序目录组织的应用程序目录中 (应用程序) 。 若要删除应用，应用的 **distributionMethod** 属性必须设置为 `organization` 。
+从 [租户应用程序](../resources/teamsapp.md) 目录组织的应用程序目录中 (应用程序) 。 若要删除应用，应用的 **distributionMethod** 属性必须设置为 `organization` 。
 
 您还可以使用此 API 从评价过程中删除已提交的应用。
 
@@ -52,7 +52,7 @@ DELETE /appCatalogs/teamsApps/{id}
 DELETE appCatalogs/teamsApps/{appId}/appDefinitions/{appDefinitionId}
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 标头        | 值           |
 |:--------------|:--------------  |
@@ -96,6 +96,10 @@ DELETE https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/06805b9e-77e3-4b93
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-teamsapp-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-teamsapp-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

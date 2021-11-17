@@ -1,16 +1,16 @@
 ---
 title: 创建 phoneAuthenticationMethod
 description: 添加新的电话身份验证方法。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6b2490cb0d2c7e625c83b1e3d5075e8f6a815e69
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: bccec3710dbdc378f15415a17a4744c1e80c1860
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047992"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60982364"
 ---
 # <a name="create-phoneauthenticationmethod"></a>创建 phoneAuthenticationMethod
 
@@ -22,13 +22,13 @@ ms.locfileid: "52047992"
 
 通过添加电话号码，可以在 Azure 多重身份验证 (MFA) 和自助服务密码重置 (SSPR) （如果已启用）使用。
 
-此外，如果策略允许用户短信登录并添加一个数字，系统将尝试注册该号码以 `mobile` 用于该系统。
+此外，如果策略允许用户使用短信登录并添加号码，系统将尝试注册号码以 `mobile` 在该系统中使用该号码。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 权限类型                        | 自行操作的权限 (权限从最低权限级别)  | 对他人操作的权限 (权限从最低到最多特权) |
+| 权限类型                        | 自行操作的权限 (权限从最低权限权限)  | 对他人操作的权限 (权限从最低到最多特权) |
 |:---------------------------------------|:-------------------------|:-----------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod.ReadWrite | UserAuthenticationMethod.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 | 不支持。 |
@@ -62,7 +62,7 @@ POST /users/{id | userPrincipalName}/authentication/phoneMethods
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|phoneNumber|String|要发送文本或呼叫进行身份验证的电话号码。 电话数字使用格式"+ \<country code\> \<number\> \<extension\> x"，扩展是可选的。 例如，+1 5555551234 或 +1 5555551234x123 有效。 如果数字与所需格式不匹配，则创建/更新时将拒绝数字。|
+|phoneNumber|String|要发送文本或呼叫进行身份验证的电话号码。 电话数字使用格式"+ \<country code\> \<number\>x \<extension\> "，扩展是可选的。 例如，+1 5555551234 +1 5555551234x123 有效。 如果数字与所需格式不匹配，则创建/更新时将拒绝数字。|
 |phoneType|String|可能的值是 `mobile` ：、 `alternateMobile` 和 `office` 。|
 
 ## <a name="response"></a>响应
@@ -104,6 +104,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-phoneauthenticationmethod-from-authentication-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-phoneauthenticationmethod-from-authentication-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

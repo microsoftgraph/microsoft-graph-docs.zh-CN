@@ -2,15 +2,15 @@
 title: 列出部署
 description: 获取部署对象及其属性的列表。
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 4eda89bc8f9bbdd2ec65f6701347f79989cdebff
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 07231d62b283eed8bfe87e3f335ff467af5fe409
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52239154"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61004239"
 ---
 # <a name="list-deployments"></a>列出部署
 命名空间：microsoft.graph.windowsUpdates
@@ -41,7 +41,7 @@ GET /admin/windows/updates/deployments
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持一些 [OData 查询](/graph/query-parameters) 参数来帮助自定义响应，包括 `$count` `$filter` `$orderBy` `$select` 、、 `$skip` 和 `$top` 。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |名称|说明|
 |:---|:---|
 |Authorization|Bearer {token}。必需。|
@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/deployments
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-deployment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-deployment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

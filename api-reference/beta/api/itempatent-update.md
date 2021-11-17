@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 2f0e7dc405519df676d39c4df732c30f37768c24
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 20751a875d9151fb3fd58c6c75f964aacdd9d755
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60945479"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60981334"
 ---
 # <a name="update-itempatent"></a>更新 itemPatent
 
@@ -18,7 +18,7 @@ ms.locfileid: "60945479"
 
 更新 [itemPatent 对象](../resources/itempatent.md) 的属性。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -49,13 +49,13 @@ PATCH /users/{id | userPrincipalName}/profile/patents/{id}
 
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|description|String|专利或归档的去向。 |
+|说明|String|专利或归档的去向。 |
 |displayName|String|专利或归档的标题。 |
 |inference|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断出来的，则包含推断详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|isPending        |Boolean     |指示正在申请专利。        |
+|isPending        |布尔     |指示正在申请专利。        |
 |issuedDate       |日期        |授予专利的日期。   |
 |issuingAuthority |String      |授予专利的颁发机构。     |
 |number           |String      |专利号。                      |
@@ -98,6 +98,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-itempatent-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-itempatent-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

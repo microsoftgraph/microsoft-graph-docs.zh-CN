@@ -1,16 +1,16 @@
 ---
 title: 列出 applicationTemplates
 description: 检索 applicationtemplate 对象的列表。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: luleonpla
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: ebd1b178ad1a6ea0e178ab582439ace433951ffb
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 0168ebc896122e28f035fe4b5fb96a1aaf3ab96b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471532"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60982714"
 ---
 # <a name="list-applicationtemplates"></a>列出 applicationTemplates
 
@@ -18,9 +18,9 @@ ms.locfileid: "50471532"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从 Azure AD 应用程序库检索 [applicationTemplate](../resources/applicationtemplate.md) 对象的列表。
+从应用程序库中检索[applicationTemplate](../resources/applicationtemplate.md) Azure AD列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -30,7 +30,7 @@ ms.locfileid: "50471532"
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | 无。 |
 
-调用此 API 不需要其他权限，只要您的应用程序具有调用 Microsoft Graph 的有效访问令牌。
+调用此 API 不需要其他权限，只要应用程序具有有效的访问令牌来调用 Microsoft Graph。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -44,8 +44,8 @@ GET /applicationTemplates
 
 此方法支持一些 OData 查询参数来帮助自定义响应。 
 
-- 可以有限 `$filter` 的方式使用参数。 只能按 **displayName** 或类别 **进行筛选**。 例如， `$filter=contains(displayName, 'salesf')` 或 `$filter=categories/any(c:contains(c, 'myCategory'))`。
-- 可以在任何 `$orderby` `$top,` GET 请求中 `$skip` 使用和查询参数。
+- 可以有限 `$filter` 的方式使用 参数。 只能按 **displayName** 或 categories **进行筛选**。 例如， `$filter=contains(displayName, 'salesf')` 或 `$filter=categories/any(c:contains(c, 'myCategory'))`。
+- 可以在任何 `$orderby` `$top,` GET 请求 `$skip` 中使用 和 查询参数。
 
 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
@@ -61,7 +61,7 @@ GET /applicationTemplates
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回响应代码和 `200 OK` [applicationTemplate](../resources/applicationtemplate.md) 对象集合。
+如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [applicationTemplate](../resources/applicationtemplate.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -92,6 +92,10 @@ GET https://graph.microsoft.com/beta/applicationTemplates
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-applicationtemplates-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-applicationtemplates-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

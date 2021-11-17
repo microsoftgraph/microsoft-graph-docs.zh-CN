@@ -1,28 +1,28 @@
 ---
-title: 列出 Errorexceededfindcountlimit
-description: 获取已为租户创建的 bookingbusiness 对象的集合。
-localization_priority: Normal
+title: 列出 bookingBusinesses
+description: 获取为租户创建的 bookingbusiness 对象的集合。
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: c1cf4042fbfbbc3364756c9363555215bff05e01
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 686925bca89dcbb7dafcb701d716b9671864b833
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960772"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60990549"
 ---
-# <a name="list-bookingbusinesses"></a>列出 Errorexceededfindcountlimit
+# <a name="list-bookingbusinesses"></a>列出 bookingBusinesses
 
 命名空间：microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取已为租户创建的 [bookingbusiness](../resources/bookingbusiness.md) 对象的集合。
+获取为 [租户创建的 bookingbusiness](../resources/bookingbusiness.md) 对象的集合。
 
-此操作仅返回集合中每个预订业务的 **id** 和 **displayName** 。 出于性能考虑，它不返回其他属性。 您可以通过在 [get](bookingbusiness-get.md)操作中指定其 **Id** 来获取预订业务的其他属性。
+此操作仅返回集合中每个 Bookings 业务的 **id** 和 **displayName。** 出于性能方面的考虑，它不会返回其他属性。 可以通过在 [GET](bookingbusiness-get.md)操作中指定 Bookings 业务 **ID，获取** 其其他属性。
 
-您还可以通过在参数中指定字符串 `query` 以执行租户的业务中的子字符串匹配，从而查询预订业务。 请参阅以下[示例](#request-2)。
+您还可以查询 Bookings 业务，具体方法为在参数中指定一个字符串，以在租户的企业之间执行 `query` 子字符串匹配。 请参阅以下[示例](#request-2)。
 
 
 ## <a name="permissions"></a>权限
@@ -30,7 +30,7 @@ ms.locfileid: "48960772"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  BookingsAppointment、全部、预订、全部、登记、全部、预订。所有   |
+|委派（工作或学校帐户） |  Bookings.Read.All、BookingsAppointment.ReadWrite.All、Bookings.ReadWrite.All、Bookings.Manage.All   |
 |委派（个人 Microsoft 帐户） | 不支持。   |
 |应用程序 | 不支持。  |
 
@@ -42,10 +42,10 @@ GET /bookingBusinesses
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
-此方法还支持 `query` 接受字符串值的参数。 此参数将 GET 结果限制为与指定的字符串匹配的企业。 您可以参阅下面的 [示例](#request-2) 。
+此方法还支持 `query` 接受字符串值的参数。 此参数将 GET 结果限定为匹配指定字符串的企业。 可以看到下面的示例。 [](#request-2)
 
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {code}|
@@ -53,10 +53,10 @@ GET /bookingBusinesses
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [bookingBusiness](../resources/bookingbusiness.md) 对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [bookingBusiness](../resources/bookingbusiness.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request-1"></a>请求 1
-下面的示例获取租户中的预订企业。
+以下示例获取租户中的 Bookings 业务。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -82,10 +82,14 @@ GET https://graph.microsoft.com/beta/bookingBusinesses
 [!INCLUDE [sample-code](../includes/snippets/java/get-bookingbusinesses-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-bookingbusinesses-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### <a name="response-1"></a>响应 1
-下面是一个响应示例。
+下面介绍响应示例。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -113,7 +117,7 @@ Content-type: application/json
 
 
 ##### <a name="request-2"></a>请求 2
-下面的示例演示如何使用参数在 `query` 租户中获取一个或多个匹配的预订企业。
+以下示例演示如何使用 参数获取租户中一个或多个匹配的 `query` Bookings 企业。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -137,6 +141,10 @@ GET https://graph.microsoft.com/beta/bookingBusinesses?query=Adventure
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/query-bookingbusinesses-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/query-bookingbusinesses-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

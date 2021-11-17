@@ -1,16 +1,16 @@
 ---
 title: 删除 trustFrameworkKeySet
 description: 删除 **trustFrameworkKeySet** 对象。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 04527223a407724146b26b3319b527c7f7f97ba6
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: f43aac37dba6ba340c4fb85d3857be31c503dee5
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433656"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61017252"
 ---
 # <a name="delete-trustframeworkkeyset"></a>删除 trustFrameworkKeySet
 
@@ -81,6 +81,10 @@ DELETE https://graph.microsoft.com/beta/trustFramework/keySets/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-trustframeworkkeyset-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-trustframeworkkeyset-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

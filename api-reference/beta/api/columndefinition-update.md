@@ -5,12 +5,12 @@ description: 更新网站、列表或内容类型列
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 5f750648a83b663ecd185e7568634e19660184df
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: 0c8e888214007288e9e6ba8df8e9815b127bec02
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60730156"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60975613"
 ---
 # <a name="update-columndefinition"></a>更新 columnDefinition
 命名空间：microsoft.graph
@@ -101,6 +101,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-contenttype-column-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-contenttype-column-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

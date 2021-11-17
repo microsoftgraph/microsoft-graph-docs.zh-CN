@@ -1,16 +1,16 @@
 ---
 title: 删除 skillProficiency
 description: 删除 skillProficiency。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 20ec502730358d59c02491ff6f299cb6f4bcb9ce
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 99badf57e8e4f1f45c322f96f0284e305aaeec04
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973158"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61020409"
 ---
 # <a name="delete-skillproficiency"></a>删除 skillProficiency
 
@@ -18,7 +18,7 @@ ms.locfileid: "48973158"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从用户的[配置文件](../resources/profile.md)中删除[skillProficiency](../resources/skillproficiency.md)对象。
+从 [用户配置文件中删除一个技能](../resources/skillproficiency.md) 项目 [对象](../resources/profile.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -26,8 +26,8 @@ ms.locfileid: "48973158"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | 所有用户读写。          |
-| 委派（个人 Microsoft 帐户） | 所有用户读写。          |
+| 委派（工作或学校帐户）     | User.ReadWrite、User.ReadWrite.All          |
+| 委派（个人 Microsoft 帐户） | User.ReadWrite、User.ReadWrite.All          |
 | 应用程序                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -84,6 +84,10 @@ DELETE https://graph.microsoft.com/beta/me/profile/skills/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-skillproficiency-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-skillproficiency-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

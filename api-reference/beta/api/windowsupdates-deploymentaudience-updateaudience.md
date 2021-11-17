@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: cc9c343b0646710f59445ff8c4b6b713d45ae639
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: d8d4d238f2d03359a95f6498890fdd4c34321d22
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60926054"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61009391"
 ---
 # <a name="deploymentaudience-updateaudience"></a>deploymentAudience：updateAudience
 
@@ -29,7 +29,7 @@ ms.locfileid: "60926054"
 > [!NOTE]
 > 此 API 具有 [与](/Graph/known-issues#accessing-and-updating-deployment-audiences) 通过 Intune 创建的部署相关的已知问题。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -59,7 +59,7 @@ POST /admin/windows/updates/deployments/{deploymentId}/audience/updateAudience
 
 下表显示了可用于此操作的参数。
 
-|参数|类型|Description|
+|参数|类型|说明|
 |:---|:---|:---|
 |addMembers|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) 集合|要添加为部署访问群体成员的 [updatableAsset](../resources/windowsupdates-updatableasset.md) 资源的列表。|
 |removeMembers|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) 集合|要作为部署访问群体成员删除的可更新资源的列表。|
@@ -128,6 +128,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/deploymentaudience-updateaudience-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/deploymentaudience-updateaudience-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

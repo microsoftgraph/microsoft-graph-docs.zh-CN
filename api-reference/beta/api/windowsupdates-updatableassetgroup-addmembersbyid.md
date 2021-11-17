@@ -2,15 +2,15 @@
 title: updatableAssetGroup：addMembersById
 description: 将相同类型的成员添加到 updatableAssetGroup。
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 27585b3ad87c4154140024705227612a988c7a76
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 6db28d08f600a3015e3a53b2cbaa7b86640beac3
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52239482"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61031246"
 ---
 # <a name="updatableassetgroup-addmembersbyid"></a>updatableAssetGroup：addMembersById
 命名空间：microsoft.graph.windowsUpdates
@@ -21,7 +21,7 @@ ms.locfileid: "52239482"
 
 您还可以使用 [addMembers 方法](windowsupdates-updatableassetgroup-addmembers.md) 添加成员。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -54,7 +54,7 @@ POST /admin/windows/updates/updatableAssets/{updatableAssetGroupId}/addMembersBy
 |参数|类型|说明|
 |:---|:---|:---|
 |ids|String collection|与要添加为 [updatableAssetGroup](../resources/windowsupdates-updatableasset.md) 成员的 **updatableAsset** 资源相对应的标识符列表。|
-|memberEntityType|字符串|**updatableAsset 资源的完整** 类型。 可能的值是 `#microsoft.graph.windowsUpdates.azureADDevice` ：。|
+|memberEntityType|String|**updatableAsset 资源的完整** 类型。 可能的值是 `#microsoft.graph.windowsUpdates.azureADDevice` ：。|
 
 ## <a name="response"></a>响应
 
@@ -97,6 +97,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/updatableassetgroup-addmembersbyid-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/updatableassetgroup-addmembersbyid-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

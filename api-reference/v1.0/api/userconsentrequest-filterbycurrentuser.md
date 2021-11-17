@@ -5,12 +5,12 @@ author: psignoret
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: faa503e162dd3f59b2307616f8f8703488372261
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: cc518ecf0ed1e7cccae32c1d09aecb7997e15381
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59109589"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61008320"
 ---
 # <a name="userconsentrequest-filterbycurrentuser"></a>userConsentRequest：filterByCurrentUser
 
@@ -94,6 +94,10 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/appConsent/appConsentReq
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/userconsentrequest-filterbycurrentuser-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/userconsentrequest-filterbycurrentuser-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

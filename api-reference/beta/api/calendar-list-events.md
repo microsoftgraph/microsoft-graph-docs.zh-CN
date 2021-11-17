@@ -5,12 +5,12 @@ author: harini84
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 97c77c49a393b2776cba55053115bcf6edc1e979
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 63f1015237dbb29ac5a99107136be752a4c54ca2
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60938033"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61012626"
 ---
 # <a name="list-events"></a>列出事件
 
@@ -95,6 +95,10 @@ GET https://graph.microsoft.com/beta/me/calendar/events
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/calendar-list-events-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/calendar-list-events-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -195,6 +199,10 @@ GET https://graph.microsoft.com/beta/me/calendar/events?$filter=startsWith(subje
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/calendar-list-events-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/calendar-list-events-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: d371425c6fd2726c47cdca95f252a3443b2406dc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6c7327082e107039f69d637096a8e450433c2d46
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59074022"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61024476"
 ---
 # <a name="delete-grouplifecyclepolicy"></a>删除 groupLifecyclePolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "59074022"
 
 删除 [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -77,6 +77,10 @@ DELETE https://graph.microsoft.com/v1.0/groupLifecyclePolicies/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-grouplifecyclepolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-grouplifecyclepolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,16 +1,16 @@
 ---
 title: assignLicense
-description: 添加或删除用户许可证，以允许或禁止其使用 Microsoft 云产品/服务。 例如，组织可以拥有具有 100 个许可证Microsoft 365 企业版 E3 订阅，此请求将其中一个许可证分配给特定用户。 还可以启用和禁用与订阅相关的特定计划。 若要详细了解订阅和许可证，请参阅此 Technet 文章。
+description: 添加或删除用户许可证，以允许或禁止其使用 Microsoft 云产品/服务。 例如，组织可以拥有一个 Microsoft 365 企业版 E3 订阅（具有 100 个许可证）。此请求将其中一个许可证分配给特定用户。 还可以启用和禁用与订阅相关的特定计划。 若要详细了解订阅和许可证，请参阅此 Technet 文章。
 ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 5228d7c036477134b6def39f1a096db3fd13c939
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: b89836ac5717fa648c50d6e23d9031c8752b2980
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60939167"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61010120"
 ---
 # <a name="user-assignlicense"></a>用户：assignLicense
 
@@ -18,11 +18,11 @@ ms.locfileid: "60939167"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-添加或删除用户许可证，以允许或禁止其使用 Microsoft 云产品/服务。 例如，组织可以拥有具有 100 个许可证Microsoft 365 企业版 E3 订阅，此请求将其中一个许可证分配给特定用户。 还可以启用和禁用与订阅相关的特定计划。 若要了解有关订阅和许可证的更多信息，请参阅此 [Technet 文章](/microsoft-365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings)。
+添加或删除用户许可证，以允许或禁止其使用 Microsoft 云产品/服务。 例如，组织可以拥有一个 Microsoft 365 企业版 E3 订阅（具有 100 个许可证）。此请求将其中一个许可证分配给特定用户。 还可以启用和禁用与订阅相关的特定计划。 若要了解有关订阅和许可证的更多信息，请参阅此 [Technet 文章](/microsoft-365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings)。
 
 若要获取目录中可用的订阅，请执行 [GET subscribedSkus 请求](subscribedsku-list.md)。 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -95,6 +95,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-assignlicense-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-assignlicense-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

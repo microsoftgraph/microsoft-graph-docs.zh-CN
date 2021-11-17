@@ -3,15 +3,15 @@ author: JeremyKelley
 description: 在列表中创建新的 listItem。
 ms.date: 09/11/2017
 title: 在 SharePoint 列表中创建新条目
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: e1d99d99fd29599853c214eda82ceddb49af24fc
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 6aefa98d3db38a4b61145138cc360c251fee1a4d
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50957959"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61034278"
 ---
 # <a name="create-a-new-item-in-a-list"></a>在列表中创建新项
 
@@ -73,6 +73,10 @@ Content-Type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-listitem-1-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-listitem-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

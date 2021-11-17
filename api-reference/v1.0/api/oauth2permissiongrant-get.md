@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 5cd6c0321174d4854ee39887b4c67d57cd0b79ff
-ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
+ms.openlocfilehash: 592d558eea85ae5b9c68f16c60491428e08859c7
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60890834"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60992832"
 ---
 # <a name="get-oauth2permissiongrant-a-delegated-permission-grant"></a>获取 oAuth2PermissionGrant (委派权限授予) 
 
@@ -42,7 +42,7 @@ GET /oauth2PermissionGrants/{id}
 
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/v1.0/oauth2PermissionGrants/AVs6JuUDjkCFV7q2gd8Q
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-oauth2permissiongrant-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-oauth2permissiongrant-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

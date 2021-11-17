@@ -1,16 +1,16 @@
 ---
 title: 获取配置文件
 description: 检索 profile 对象的属性和关系。
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 8a9eab6e17da201e7a63dfb79e290ceca8f79fa6
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 4d754cf0ab9dd7772c4a22960c4b39d761d15f35
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049847"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61019556"
 ---
 # <a name="get-profile"></a>获取配置文件
 
@@ -45,7 +45,7 @@ GET /users/{id | userPrincipalName}/profile
 
 此方法支持 `$select` 查询参数。 指定要包括在响应中的属性列表，用逗号分隔它们。 为获得最佳性能，请仅选择所需的属性子集。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称           |说明                  |
 |:---------------|:----------------------------|
@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/beta/me/profile
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-profile-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-profile-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -289,7 +293,7 @@ Content-type: application/json
 
 ### <a name="example-2-expand-names-and-skills-collection-and-select-properties-within-the-entities"></a>示例 2：展开名称和技能集合并选择实体中的属性
 
-下面是一个使用 $expand 和 $select 查询参数从用户配置文件中检索部分信息的示例。
+下面的示例使用 $expand 和 $select 查询参数从用户配置文件中检索部分信息。
 
 #### <a name="request"></a>请求
 
@@ -316,6 +320,10 @@ GET https://graph.microsoft.com/beta/me/profile?$expand=names($select=first,last
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-profile-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-profile-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: cb4d147b4f7141f71df5ed9821fbcfddb2679080
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b32d619517c9df3d97a7cd1927a8428110299412
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59074243"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61023440"
 ---
 # <a name="create-event"></a>创建事件
 
@@ -101,6 +101,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-event-from-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-event-from-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

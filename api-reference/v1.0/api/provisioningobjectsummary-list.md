@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: ArvindHarinder1
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: cf13e19796e96ba63bef79e7cc8b5aa41bc9af4c
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 24bb1f2cb493352ef5332f7ad421ab87fba7127d
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59763427"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61016168"
 ---
 # <a name="list-provisioningobjectsummary"></a>列出 provisioningObjectSummary
 
@@ -76,7 +76,7 @@ GET /auditLogs/provisioning
 |targetIdentity/displayName|eq， contains|
 |initiatedBy/displayName|eq， contains|
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 标头        | 值                      |
 |:--------------|:---------------------------|
@@ -122,6 +122,10 @@ GET https://graph.microsoft.com/v1.0/auditLogs/provisioning
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-provisioningobjectsummary-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-provisioningobjectsummary-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -275,6 +279,10 @@ GET https://graph.microsoft.com/v1.0/auditLogs/provisioning
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-provisioningobjectsummary-error-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-provisioningobjectsummary-error-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

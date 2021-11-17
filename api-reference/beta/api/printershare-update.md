@@ -5,12 +5,12 @@ author: braedenp-msft
 ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 142f965fe68bfaa84c827ee047c257729c6e4107
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 9f1ef05b9fc3aed734e5f69a920fe63cdc82c9f1
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60947241"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61028033"
 ---
 # <a name="update-printershare"></a>更新 printershare
 
@@ -50,11 +50,11 @@ PATCH /print/shares/{id}
 
 可以更新以下属性： 
 
-| 属性     | 类型        | Description |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |打印机|microsoft.graph.printer|此打印机共享相关的打印机。 使用 `printer@odata.bind` 以下示例中所示的语法更新与此打印机共享关联的打印机。|
 |displayName|String|打印客户端应显示的打印机共享的名称。|
-|allowAllUsers|Boolean| 如果为 true，将授予所有用户和组对此打印机共享的访问权限。 这将取代 allowedUsers 和 allowedGroups 导航属性定义的允许列表。|
+|allowAllUsers|布尔| 如果为 true，将授予所有用户和组对此打印机共享的访问权限。 这将取代 allowedUsers 和 allowedGroups 导航属性定义的允许列表。|
 
 ## <a name="response"></a>响应
 如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和更新的 [printerShare](../resources/printershare.md) 对象。
@@ -91,6 +91,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-printershare-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-printershare-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

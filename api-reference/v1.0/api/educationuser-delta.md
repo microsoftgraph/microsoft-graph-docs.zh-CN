@@ -5,12 +5,12 @@ author: mlafleur
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 1a66e5b48a57bcc26c7ca1ce593bb57ce19bbff5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 49b0c989c06da8b3586bf065610e52261b6729d6
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59114660"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60993353"
 ---
 # <a name="educationuser-delta"></a>educationUser： delta
 
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/v1.0/education/users/delta
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/educationuser-delta-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/educationuser-delta-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

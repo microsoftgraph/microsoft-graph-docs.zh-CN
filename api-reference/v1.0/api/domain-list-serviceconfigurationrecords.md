@@ -5,12 +5,12 @@ author: adimitui
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7d74cb21b47ee30b498a22084419135c27282d43
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 91d26866366c249447eede110676ba5027c646a6
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60943918"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60979149"
 ---
 # <a name="list-serviceconfigurationrecords"></a>列出 serviceConfigurationRecords
 
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/v1.0/domains/{domain-name}/serviceConfigurationR
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-serviceconfigurationrecords-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-serviceconfigurationrecords-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

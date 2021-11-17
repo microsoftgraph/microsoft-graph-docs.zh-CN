@@ -5,12 +5,12 @@ author: kevinbellinger
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 505fdff64e73604ca559c062ed79bd82a56f55c1
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5395a59df8f4fa951ee39c58667b5732482b0288
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59072658"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61008460"
 ---
 # <a name="list-contactfolders"></a>List contactFolders
 
@@ -72,6 +72,10 @@ GET https://graph.microsoft.com/v1.0/me/contactFolders
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-contactfolders-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-contactfolders-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -2,15 +2,15 @@
 title: 创建联系人
 description: 将联系人添加到联系人根文件夹或其他联系人文件夹的联系人端点中。
 author: kevinbellinger
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0926ae86158b2a3bc521230ff3303fe609cb5f20
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 150299b7ead366921a654980403015b17a31b3ba
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053333"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61031373"
 ---
 # <a name="create-contact"></a>创建联系人
 
@@ -102,12 +102,16 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-contact-from-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-contact-from-user-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 在请求正文中，提供 [Contact](../resources/contact.md) 对象的 JSON 表示形式。
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

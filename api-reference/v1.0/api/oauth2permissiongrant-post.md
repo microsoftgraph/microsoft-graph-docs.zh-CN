@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: a66fdbf4addf877e0c3564d25a8a9a39dc20df69
-ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
+ms.openlocfilehash: 0beaad3f7cb601a2ce3d622dffd872b872211574
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60891142"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61029426"
 ---
 # <a name="create-oauth2permissiongrant-a-delegated-permission-grant"></a>创建 oAuth2PermissionGrant (委派权限授予) 
 
@@ -19,9 +19,9 @@ ms.locfileid: "60891142"
 
 创建由 [oAuth2PermissionGrant 对象代表的委派权限](../resources/oauth2permissiongrant.md) 。
 
-委派权限授予授权表示客户端应用程序) 的客户端服务主体 (代表已登录用户的 API) 访问代表 API) 的资源服务主体 () ，从而访问已授予的委派权限限制的访问级别。
+委派权限授予授权表示客户端应用程序) 的客户端服务主体 (代表已登录用户的 API) 访问代表 API) 的资源服务主体 (，访问由已授予的委派权限限制的访问级别。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -29,7 +29,7 @@ ms.locfileid: "60891142"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | DelegatedPermissionGrant.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Directory.ReadWrite.All |
+|应用程序 | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -98,6 +98,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/post-oauth2permissiongrant-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-oauth2permissiongrant-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

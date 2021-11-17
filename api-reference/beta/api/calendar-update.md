@@ -1,16 +1,16 @@
 ---
 title: Update calendar
 description: '更新 calendar 对象的属性。 相应日历可以是用户的日历， '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4e1bd3897a16a9d75ef53e4450fb5a20e1c5651a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 8f8bf508c5cd8ada4f4c0f1502bc6dca7bad72fc
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047726"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61015706"
 ---
 # <a name="update-calendar"></a>更新日历
 
@@ -97,10 +97,14 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-calendar-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-calendar-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为了提高可读性，可能缩短了此处显示的响应对象。
+这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

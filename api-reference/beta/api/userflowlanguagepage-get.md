@@ -5,12 +5,12 @@ author: jkdouglas
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9f9de199af36de62ce4f9a20f290b73a0384442a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 07477280429563994a13b289099055845cd148d7
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59040825"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60988740"
 ---
 # <a name="get-userflowlanguagepage"></a>获取 userFlowLanguagePage
 
@@ -49,7 +49,7 @@ GET /identity/b2xUserFlows/{id}/languages/{id}/defaultPages/{id}/$value
 GET /identity/b2xUserFlows/{id}/languages/{id}/overridesPages/{id}/$value
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 |名称|说明|
 |:---|:---|
@@ -94,6 +94,10 @@ GET https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_Customer/langua
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-userflowlanguagepage-3-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-userflowlanguagepage-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

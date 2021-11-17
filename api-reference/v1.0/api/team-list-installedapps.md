@@ -5,12 +5,12 @@ author: akjo
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1f0d95935c2e57685ea94cd92b3b3873004e1831
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: 5bbb2b7a87df9bae65e5efc4770a7f7e4b397151
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60289635"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61016134"
 ---
 # <a name="list-apps-in-team"></a>列出团队中的应用
 
@@ -32,7 +32,7 @@ ms.locfileid: "60289635"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | *TeamsAppInstallation.Read.Group、TeamsAppInstallation.ReadForTeam.All、TeamsAppInstallation.ReadWriteForTeam.All、Group.Read.All、Group.ReadWrite.All、Directory.Read.All**、Directory.ReadWrite.All** |
 
-> **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。 标记为 ** 的权限已弃用，不应使用。
+> **注意**：标有 * 的权限用于 [特定于资源的同意]( https://aka.ms/teams-rsc)。 标记为 **的权限已弃用，不应使用。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -46,7 +46,7 @@ GET /teams/{team-id}/installedApps
 
 此方法支持 `$filter` 、 `$select` 和 `$expand` [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 标头       | 值 |
 |:---------------|:--------|
@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/v1.0/teams/6903fa93-605b-43ef-920e-77c4729f8258/
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-installed-apps-in-team-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-installed-apps-in-team-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -159,6 +163,10 @@ GET https://graph.microsoft.com/v1.0/teams/6903fa93-605b-43ef-920e-77c4729f8258/
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-installed-teams-apps-expand-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-installed-teams-apps-expand-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -271,6 +279,10 @@ GET https://graph.microsoft.com/v1.0/teams/acda442c-78d2-491b-8204-4ef5019c0193/
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-installed-apps-in-team-expand-filter-externalid-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-installed-apps-in-team-expand-filter-externalid-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9128a2d0441420d82e82275163f555751b9f574a
-ms.sourcegitcommit: c3f849e5a052b1926373a4b316ec303250e6d09e
+ms.openlocfilehash: 8cc9a6992d988473827e2253e992e9a85e59fa3b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60369166"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61006782"
 ---
 # <a name="send-chatmessage-in-a-channel-or-a-chat"></a>在频道或聊天中发送 chatMessage
 
@@ -20,7 +20,7 @@ ms.locfileid: "60369166"
 
 > **注意**：不建议使用此 API 进行数据迁移。 它不具有典型迁移所需的吞吐量。
 
-> **注意**：使用 Microsoft Teams 违反使用条款 [](/legal/microsoft-apis/terms-of-use)日志文件。 仅发送用户将阅读的邮件。
+> **注意**：使用 Microsoft Teams 是违反 [](/legal/microsoft-apis/terms-of-use)使用条款日志文件。 仅发送用户将阅读的邮件。
 
 ## <a name="permissions"></a>权限
 
@@ -60,7 +60,7 @@ POST /teams/{team-id}/channels/{channel-id}/messages/{message-id}/replies
 POST /chats/{chat-id}/messages
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称          | 说明   |
 |:--------------|:--------------|
@@ -78,7 +78,7 @@ POST /chats/{chat-id}/messages
 
 ## <a name="examples"></a>示例
 
-在下面的示例中，URL 可以使用所述的[HTTP](#http-request)语法向聊天[](chat-post-messages.md)发送消息、向频道发送消息或向[](channel-post-messages.md)频道[发送回复](chatmessage-post-replies.md)。
+在下面的示例中，URL 可以使用描述的[HTTP](#http-request)语法向[](chat-post-messages.md)聊天发送消息、向频道发送消息或[](channel-post-messages.md)向频道[发送回复](chatmessage-post-replies.md)。
 
 ### <a name="example-1-send-a-hello-world-message-in-a-channel"></a>示例 1：在频道中发送 Hello World 消息
 
@@ -115,6 +115,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -222,6 +226,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -345,6 +353,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-3-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -455,6 +467,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-4-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-4-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -570,6 +586,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-5-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-5-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -627,7 +647,7 @@ Content-type: application/json
 #### <a name="request"></a>请求
 下面展示了示例请求。
 
-> **注意：** hostedContents 集合中的 **temporaryId** 是一个随机 ID，但必须在附件和 **hostedContents** (中的内容) 相同。  (请注意 **，temporaryId 设置为** **1，** 内容中的引用设置为 `../hostedContents/1/$value` .) 
+> **注意：** hostedContents 集合中的 **temporaryId** 是一个随机 ID，但必须在附件和 **hostedContents** (内容) 相同。  (请注意 **，temporaryId 设置为** **1，** 内容中的引用设置为 `../hostedContents/1/$value` .) 
 
 **contentBytes** 必须设置为二进制字符串 Base64 编码字节。  可以使用 在 C# 中执行此操作 `Convert.ToBase64String(File.ReadAllBytes("image.png"));` 。 .NET SDK 用户无需执行到 Base64 编码字节的转换，因为 SDK 会处理它。
 
@@ -680,6 +700,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-6-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-6-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -798,6 +822,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-atmentionchannel-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-atmentionchannel-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -876,7 +904,7 @@ Content-type: application/json
 #### <a name="request"></a>请求
 下面展示了示例请求。
 
-> 注意 **：conversationIdentityType** 必须设置为 `team` @mention团队。
+> 注意 **：conversationIdentityType** 必须设置为@mention `team` 团队。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -923,6 +951,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-atmentionteam-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-atmentionteam-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
