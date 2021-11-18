@@ -1,15 +1,15 @@
 ---
-title: 使用 Intune Graph API - Microsoft Graph API
-description: 列出你可用于管理租户组织及其设备、应用、访问权限和资源的 Intune 终结点 (REST) 的 Microsoft Graph API。
+title: 在 Microsoft Graph 中使用 Intune
+description: 适用于 Intune 的 Microsoft Graph API 允许以编程方式访问租户的 Intune 信息；API 会执行与可通过 Azure 门户执行的相同 Intune 操作。
 author: rolyon
 ms.localizationpriority: high
 ms.prod: intune
-ms.openlocfilehash: 39ef3452376f9d9805a851884dc1ad34dcd52427
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 835cdb2e15f942b1adef688e58cea6bd4e83879c
+ms.sourcegitcommit: 42e0e15ff90815e0126c34b928405486cfb1ed86
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695598"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61044811"
 ---
 # <a name="working-with-intune-in-microsoft-graph"></a>在 Microsoft Graph 中使用 Intune  
 
@@ -45,6 +45,15 @@ Intune 向 Microsoft Graph 提供数据的方式与其他云服务相同，具�
 ## <a name="using-microsoft-graph-permissions"></a>使用 Microsoft Graph 权限
 
 Microsoft Graph 通过权限控制对资源的访问。 作为开发者，你必须指定访问 Intune 资源需要的权限。 通常是在 Azure Active Directory 门户中指定权限。 有关详细信息，请参阅 [Microsoft Graph 权限参考](/graph/permissions-reference)。
+
+## <a name="interaction-between-microsoft-graph-apis-for-windows-updates"></a>适用于 Windows 更新的 Microsoft Graph API 之间的交互
+
+Microsoft Graph 包括两组可用于管理 Windows 更新的 API： 
+
+- [Intune API](/graph/intune-concept-overview)
+- [Windows 更新 API](/graph/windowsupdates-concept-overview)
+
+可以使用任一 API 管理 Windows 更新；但这两个 API 彼此并不兼容。 每个 API 都可以覆盖另一个所做配置，而不提供该操作的可见性。 同时使用两个 API 管理更新可能导致意外行为，包括在未确定原因情况下取消或修改的更新部署的临时配置。
 
 ## <a name="whats-new"></a>最近更新
 了解此 API 集的[最新功能和更新](/graph/whats-new-overview)。
