@@ -51,7 +51,7 @@ Microsoft Graph 工具包包含一系列 Web 组件，用于由 Microsoft Graph 
 |---------|-----------|
 |[MSAL](./providers/msal.md)|使用 msal.js 登录用户并获取用于 Microsoft Graph 的令牌。|
 |[MSAL2](./providers/msal2.md)| 使用 msal-browser 登录用户并获取用于 Microsoft Graph 的令牌。|
-|[电子](./providers/electron.md)|对电子应用中的组件进行身份验证并提供对组件的 Microsoft Graph 访问权限|
+|[电子](./providers/electron.md)|认证并提供Microsoft Graph访问电子应用程序内部组件的权限|
 |[SharePoint](./providers/sharepoint.md)|对 SharePoint Web 部件中的组件进行身份验证并提供对组件的 Microsoft Graph 访问权限。|
 |[Teams](./providers/teams.md)|使用 msal.js 登录用户并在 Microsoft Graph 选项卡的客户端中获取令牌。|
 |[Teams MSAL2](./providers/teams-msal2.md)|使用 msal-browser 登录用户并在 Microsoft Graph 选项卡中获取令牌。 支持使用自定义后端进行单一登录。 |
