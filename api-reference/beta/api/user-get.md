@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 174b3b989e6c237a4abe78b70b790001d889e53e
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 1d52400cbcb7e42a66a7be509448bf3f4e902f66
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60931993"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60988883"
 ---
 # <a name="get-a-user"></a>获取用户
 
@@ -103,6 +103,10 @@ GET https://graph.microsoft.com/beta/me
 [!INCLUDE [sample-code](../includes/snippets/java/get-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-user-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### <a name="response"></a>响应
@@ -162,6 +166,10 @@ GET https://graph.microsoft.com/beta/users/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-other-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-other-user-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -188,6 +196,47 @@ Content-type: application/json
       "surname": "Vance",
       "userPrincipalName": "AdeleV@contoso.onmicrosoft.com",
       "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd"
+}
+```
+
+
+
+### <a name="example-3-use-select-to-retrieve-specific-properties-of-a-user"></a>示例 3：使用 $select 检索用户的特定属性
+
+若要检索特定属性，请使用 OData `$select` 查询参数。 例如，若要返回 _displayName_、_givenName_、_postalCode_ 和 _identities_，则需要将以下内容添加到查询 `$select=displayName,givenName,postalCode,identities`。
+
+#### <a name="request"></a>请求
+
+<!-- {
+  "blockType": "request",
+  "name": "get_user_select"
+} -->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}?$select=displayName,givenName,postalCode,identities
+```
+
+#### <a name="response"></a>响应
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users(displayName,givenName,postalCode,identities)/$entity",
+    "displayName": "Adele Vance",
+    "givenName": "Adele",
+    "postalCode": "98004",
+    "identities": [
+        {
+            "signInType": "userPrincipalName",
+            "issuer": "contoso.com",
+            "issuerAssignedId": "AdeleV@contoso.com"
+        }
+    ]
 }
 ```
 

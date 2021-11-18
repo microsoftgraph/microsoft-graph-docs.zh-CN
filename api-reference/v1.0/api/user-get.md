@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 53f3ba4e56e5392f2dc98de6464b273d785f3ba4
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: e90c88e38077a1c13c4b0c36faed00b0efa9af6b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60938138"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61022855"
 ---
 # <a name="get-a-user"></a>获取用户
 
@@ -74,6 +74,8 @@ GET /me
 
 ### <a name="example-1-standard-users-request"></a>示例 1：标准用户请求
 
+#### <a name="request"></a>请求
+
 默认情况下，仅返回一组有限的属性（_businessPhones、displayName、givenName、id、jobTitle、mail、mobilePhone、officeLocation、preferredLanguage、surname、userPrincipalName_）。此示例展示了默认请求和响应。 
 
 <!-- {
@@ -84,7 +86,7 @@ GET /me
 GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}
 ```
 
-##### <a name="response"></a>响应
+#### <a name="response"></a>响应
 
 <!-- {
   "blockType": "response",
@@ -117,7 +119,7 @@ Content-type: application/json
 
 可以将 `/users/{id | userPrincipalName}` 替换为 `/me`，获取登录用户的用户信息。
 
-##### <a name="request"></a>请求
+#### <a name="request"></a>请求
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -144,9 +146,13 @@ GET https://graph.microsoft.com/v1.0/me
 [!INCLUDE [sample-code](../includes/snippets/java/get-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-user-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### <a name="response"></a>响应
+#### <a name="response"></a>响应
 
 <!-- {
   "blockType": "response",
@@ -174,19 +180,19 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-users-request-using-select"></a>示例 3：使用 $select 的用户请求
+### <a name="example-3-use-select-to-retrieve-specific-properties-of-a-user"></a>示例 3：使用 $select 检索用户的特定属性
 
-如果需要其他属性集，可以使用 OData `$select` 查询参数。 例如，若要返回 _displayName_、_givenName_、和 _postalCode_，则需要将以下项添加到查询 `$select=displayName,givenName,postalCode`
+若要检索特定属性，请使用 OData `$select` 查询参数。 例如，若要返回 _displayName_、_givenName_、_postalCode_ 和 _identities_，则需要将以下内容添加到查询 `$select=displayName,givenName,postalCode,identities`。
 
-##### <a name="request"></a>请求
+#### <a name="request"></a>请求
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_user_2"
+  "name": "get_user_select"
 } -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}?$select=displayName,givenName,postalCode
+GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}?$select=displayName,givenName,postalCode,identities
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-user-2-csharp-snippets.md)]
@@ -204,9 +210,13 @@ GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}?$select=disp
 [!INCLUDE [sample-code](../includes/snippets/java/get-user-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[转到](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-user-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### <a name="response"></a>响应
+#### <a name="response"></a>响应
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -217,9 +227,17 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-   "displayName": "Adele Vance",
-   "givenName": "Adele",
-   "postalCode": "98004"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(displayName,givenName,postalCode,identities)/$entity",
+    "displayName": "Adele Vance",
+    "givenName": "Adele",
+    "postalCode": "98004",
+    "identities": [
+        {
+            "signInType": "userPrincipalName",
+            "issuer": "contoso.com",
+            "issuerAssignedId": "AdeleV@contoso.com"
+        }
+    ]
 }
 ```
 
