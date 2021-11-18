@@ -3,12 +3,12 @@ title: Microsoft Graph 已知问题
 description: 本文介绍了 Microsoft Graph 已知问题。
 author: MSGraphDocsVTeam
 ms.localizationpriority: high
-ms.openlocfilehash: 925fa2538496b20b5b22a99823ea80fed8d9b1a0
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: c971998ef191295bfcda25251b016d3b51dbb64f
+ms.sourcegitcommit: 42e0e15ff90815e0126c34b928405486cfb1ed86
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688098"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61044818"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
@@ -293,9 +293,11 @@ Microsoft Graph 为组和 Microsoft Teams 公开了两个用于访问 API 的权
 
 使用 Microsoft Graph 创建并命名 Microsoft 365 组时，会忽略通过 Outlook 网页版配置的所有 Microsoft 365 组策略。
 
-### <a name="allowexternalsenders-property-cannot-be-set-in-a-post-or-patch-operation"></a>allowExternalSenders 属性不能在 POST 或 PATCH 操作中设置
+### <a name="allowexternalsenders-property-can-only-be-accessed-on-unified-groups"></a>只能在统一组上访问 allowExternalSenders 属性
 
 目前，`/v1.0` 和 `/beta` 中均存在一个问题，即会阻止在 POST 或 PATCH 操作中设置组的属性 **allowExternalSenders**。
+
+只能在统一组上访问 **allowExternalSenders** 属性。 访问通讯组列表或安全组上的此属性（包括通过 GET 操作）将导致错误。
 
 ### <a name="removing-a-group-owner-also-removes-the-user-as-a-group-member"></a>删除组所有者还将删除作为组成员的用户
 
