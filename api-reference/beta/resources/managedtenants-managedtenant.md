@@ -2,15 +2,15 @@
 title: managedTenant 资源类型
 description: 表示与多租户管理平台交互的可用操作。
 author: isaiahwilliams
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: c0929949896eb153a61bf3193d9dab5d57d92496
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: 7689344ee2e42df57a30f95c33628d607895610d
+ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53402380"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61077131"
 ---
 # <a name="managedtenant-resource-type"></a>managedTenant 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "53402380"
 无。
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|Description|
 |:---|:---|:---|
 |aggregatedPolicyCompliances|[microsoft.graph.managedTenants.aggregatedPolicyCompliance](../resources/managedtenants-aggregatedpolicycompliance.md) 集合|跨托管租户的设备合规性策略聚合视图。|
 |cloudPcConnections|[microsoft.graph.managedTenants.cloudPcConnection](../resources/managedtenants-cloudpcconnection.md) 集合|跨托管租户的云电脑连接的集合。|
@@ -41,14 +41,13 @@ ms.locfileid: "53402380"
 |managementActionTenantDeploymentStatuses|[microsoft.graph.managedTenants.managementActionTenantDeploymentStatus](../resources/managedtenants-managementactiontenantdeploymentstatus.md) 集合|跨托管租户的管理操作租户级别状态。|
 |managementIntents|[microsoft.graph.managedTenants.managementIntent](../resources/managedtenants-managementintent.md) 集合|跨托管租户的基线管理意图的集合。|
 |managementTemplates|[microsoft.graph.managedTenants.managementTemplate](../resources/managedtenants-managementtemplate.md) 集合|跨托管租户的基线管理模板的集合。|
-|riskyUsers|[microsoft.graph.managedTenants.riskyUser](../resources/managedtenants-riskyuser.md) 集合|跨托管租户标记为风险的用户集合。|
 |tenantGroups|[microsoft.graph.managedTenants.tenantGroup](../resources/managedtenants-tenantgroup.md) 集合|多租户管理平台使用的托管租户的逻辑分组的集合。|
 |tenants|[microsoft.graph.managedTenants.tenant](../resources/managedtenants-tenant.md) 集合|与管理实体关联的租户集合。|
 |tenantsCustomizedInformation|[microsoft.graph.managedTenants.tenantCustomizedInformation](../resources/managedtenants-tenantcustomizedinformation.md) 集合|跨托管租户的租户级别自定义信息的集合。|
 |tenantsDetailedInformation|[microsoft.graph.managedTenants.tenantDetailedInformation](../resources/managedtenants-tenantdetailedinformation.md) 集合|跨托管租户的集合租户级别详细信息。|
 |tenantTags|[microsoft.graph.managedTenants.tenantTag](../resources/managedtenants-tenanttag.md) 集合|跨托管租户的租户标记集合。|
 |windowsDeviceMalwareStates|[microsoft.graph.managedTenants.windowsDeviceMalwareState](../resources/managedtenants-windowsdevicemalwarestate.md) 集合|跨托管租户向 Windows注册Microsoft Endpoint Manager恶意软件的状态。|
-|windowsProtectionStates|[microsoft.graph.managedTenants.windowsProtectionState](../resources/managedtenants-windowsprotectionstate.md) 集合|跨托管租户Windows注册的设备Microsoft Endpoint Manager保护状态。|
+|windowsProtectionStates|[microsoft.graph.managedTenants.windowsProtectionState](../resources/managedtenants-windowsprotectionstate.md) 集合|跨托管租户Windows注册的 Microsoft Endpoint Manager 设备的保护状态。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

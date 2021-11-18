@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: cb8f2a6aa239788c030c5ba6c5e78e3e26a19eeb
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 1b5cf1dd38a6d60e0211663330ebfd8d3f282c9a
+ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60931255"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61076920"
 ---
 # <a name="microsoft-graph-connectors-overview"></a>Microsoft Graph 连接器概述
 
@@ -31,9 +31,9 @@ Microsoft Graph 连接器提供了一种简单直观的方法，可将外部服�
 
 Microsoft 和合作伙伴当前提供的 100 多个连接器可用于连接到热门的 Microsoft 和非 Microsoft 服务。 现有连接器的示例包括 Azure 服务、Box、ServiceNow、SalesForce、Google 服务、MediaWiki 等。
 
-若要详细了解现有的 Microsoft Graph 连接器，请访问 [Microsoft Graph 连接器库](/microsoft-search/connectors)。
+若要详细了解现有的 Microsoft Graph 连接器，请访问 [Microsoft Graph 连接器库](https://www.microsoft.com/microsoft-search/connectors/)。
 
-尽管这些连接器有助于连接到流行的服务，但您可能希望与现有[连接器库](/microsoft-search/connectors)中未提供的服务进行集成。 您可以使用 Microsoft Graph connectors API 构建自定义连接器，将外部数据引入 Microsoft 365 体验，包括 Microsoft Search、Viva 主题等（即将推出）。
+尽管这些连接器有助于连接到流行的服务，但您可能希望与现有[连接器库](https://www.microsoft.com/microsoft-search/connectors/)中未提供的服务进行集成。 您可以使用 Microsoft Graph connectors API 构建自定义连接器，将外部数据引入 Microsoft 365 体验，包括 Microsoft Search、Viva 主题等（即将推出）。
 
 ## <a name="get-started-with-custom-graph-connectors"></a>自定义图形连接线入门：
 * [使用连接器 API](connecting-external-content-connectors-api-overview.md)

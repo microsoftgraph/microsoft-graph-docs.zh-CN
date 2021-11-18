@@ -1,21 +1,21 @@
 ---
-title: Azure AD Azure Active Directory (和 Microsoft) Graph 之间的功能Graph
-description: 介绍 Azure AD Azure Active Directory (API) Graph Microsoft Graph API 之间的功能差异，以帮助你快速轻松地迁移应用。
+title: microsoft Azure AD Graph 和 Microsoft Graph
+description: 介绍 Azure Active Directory (Azure AD) Graph API 和 Microsoft Graph API 之间的功能差异，以帮助你快速轻松地迁移应用。
 author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: a615429eb3887970b00df211f592ec01f2009f23
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d3efd315c0d91784dd6d389041bf11e75371a97b
+ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139147"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61077619"
 ---
-# <a name="feature-differences-between-azure-active-directory-azure-ad-graph-and-microsoft-graph"></a>Azure AD Azure Active Directory (和 Microsoft) Graph 之间的功能Graph
+# <a name="feature-differences-between-azure-ad-graph-and-microsoft-graph"></a>microsoft Azure AD Graph 和 Microsoft Graph
 
 本文是步骤 *1：查看迁移应用的* 过程的 API [差异的一部分](migrate-azure-ad-graph-planning-checklist.md)。
 
-Microsoft 中的许多功能Graph Azure AD 和对应项Graph类似。 但是，有一些已经过更改或改进。 在这里，你将了解如何调整应用以充分利用这些差异。  更改通常很小，但值得付出努力。
+Microsoft 中的许多Graph功能与它们的对应功能Azure Active Directory (Azure AD) Graph类似。 但是，有一些已经过更改或改进。 在这里，你将了解如何调整应用以充分利用这些差异。  更改通常很小，但值得付出努力。
 
 本文探讨 Microsoft Graph如何处理：
 
@@ -25,22 +25,22 @@ Microsoft 中的许多功能Graph Azure AD 和对应项Graph类似。 但是，�
 
 ## <a name="directory-schema-extensions"></a>目录架构扩展
 
-如果你的应用使用 Azure AD Graph目录扩展，你可以继续使用与 Microsoft (请求 URL Graph相同的基本 API) ：
+如果你的应用使用Azure AD Graph扩展，你可以继续使用与 Microsoft (请求 URL Graph相同的基本 API) ：
 
-- 使用 [application][/graph/api/resources/application？view=graph-rest-v1.0 资源上的 **extensionProperties** 属性管理扩展) 定义。
+- 使用 [application][/graph/api/resources/application？view=graph-rest-v1.0 资源上的 **extensionProperties** 属性) 定义。
 - 使用 [getAvailableExtensionProperties](/graph/api/directoryobject-getavailableextensionproperties) 操作获取可用的扩展属性。
 - 使用 GET 和 读取扩展值 `$select`
 - 使用 GET 和 搜索扩展值 `$filter`
 - 使用 PATCH 更新扩展值
 - 使用 PATCH 删除扩展 (设置为 null **)**
 
-Microsoft Graph 提供了增强的架构扩展开发人员体验，现在它无法向后兼容 Azure AD Graph目录扩展。 若要了解更多信息，请参阅 [添加自定义数据 中的架构扩展](./extensibility-overview.md#schema-extensions)。
+Microsoft Graph 提供了增强的架构扩展开发人员体验，现在它无法向后兼容Azure AD Graph扩展。 若要了解更多信息，请参阅 [添加自定义数据 中的架构扩展](./extensibility-overview.md#schema-extensions)。
 
 ### <a name="recommended-migration-approach"></a>建议的迁移方法
 
-如果你的 Azure AD Graph应用使用目录扩展，请采用增量方法将应用迁移到 Microsoft Graph。
+如果你Azure AD Graph使用目录扩展，请采用增量方法将应用迁移到 Microsoft Graph。
 
-首先，将应用切换到使用 Microsoft Graph API 调用，但允许应用继续利用 Azure AD Graph目录扩展。
+首先，将应用切换到使用 Microsoft Graph API 调用，但允许应用继续利用Azure AD Graph扩展。
 
 然后，你可以切换到使用 Microsoft Graph架构扩展。 在某些情况下，切换将不适合。 如果：
 
@@ -52,13 +52,13 @@ Microsoft Graph 提供了增强的架构扩展开发人员体验，现在它无�
 
 若要切换到较新的 Microsoft Graph架构扩展模型，你需要：
 
-- 使用 Microsoft 服务定义新的架构扩展Graph。
+- 使用 Microsoft Graph 定义新的架构扩展Graph。
 - 更新应用以支持新的架构扩展定义。
-- 将数据从 Azure AD 架构扩展属性迁移到新的 Microsoft Graph架构扩展属性。  不支持自动迁移数据。
+- 将数据从新的架构Azure AD属性迁移到新的 Microsoft Graph架构扩展属性。  不支持自动迁移数据。
 
 ## <a name="differential-queries"></a>差异查询
 
-Azure AD Graph 和 Microsoft Graph让你可以使用查询跟踪更改。  高级方法在两个 API 之间相似，但语法不同。
+Azure AD Graph Microsoft Graph，您可以使用查询跟踪更改。  高级方法在两个 API 之间相似，但语法不同。
 
 Azure AD Graph调用这些差异查询。  在 Microsoft Graph 中，它们是[delta 查询](./delta-query-overview.md)。
 
@@ -78,11 +78,11 @@ Azure AD Graph调用这些差异查询。  在 Microsoft Graph 中，它们是[d
 
 ## <a name="batching"></a>批处理
 
-Azure AD Graph使用名为多部分 MIME 邮件的系统来管理批处理。  Microsoft Graph 使用[JSON 批处理](json-batching.md)允许单个批处理操作中最多 20 个请求。 JSON 批处理机制使用起来要简单许多，尤其是与 JSON 分析库一起使用。  它还允许排序批处理操作。  但是，它不能向后兼容 Azure AD Graph批处理方法。
+Azure AD Graph一个称为多部分 MIME 邮件的系统来管理批处理。  Microsoft Graph 使用[JSON 批处理](json-batching.md)允许单个批处理操作中最多 20 个请求。 JSON 批处理机制使用起来要简单许多，尤其是与 JSON 分析库一起使用。  它还允许排序批处理操作。  但是，它不能向后兼容Azure AD Graph批处理方法。
 
 ## <a name="next-steps"></a>后续步骤
 
-- 了解 Azure AD[应用程序](migrate-azure-ad-graph-resource-differences.md)与 Microsoft Graph 之间的资源Graph。
+- 了解[microsoft Azure AD Graph](migrate-azure-ad-graph-resource-differences.md)和 Microsoft Graph 之间的资源差异。
 - 再次查看 [检查](migrate-azure-ad-graph-planning-checklist.md) 表。
 
 <!-- {

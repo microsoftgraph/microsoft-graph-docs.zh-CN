@@ -1,16 +1,16 @@
 ---
 title: educationClass 资源类型
-description: 表示学校的课程。 **educationClass** 资源对应于 Microsoft 365 组并共享相同的 ID。
-localization_priority: Normal
+description: 表示学校的课程。 **educationClass** 资源对应于 Microsoft 365 组并共享同一 ID。
+ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: d699e137ad2a80c5a53aa258f986aad968734269
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 9d1b272689e1845d19ed657f26b36af608562942
+ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292882"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61077640"
 ---
 # <a name="educationclass-resource-type"></a>educationClass 资源类型
 
@@ -18,15 +18,15 @@ ms.locfileid: "50292882"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示学校的课程。 **educationClass** 资源当前对应于 Microsoft 365 [组并]共享相同的 ID。
-学生是课程的常规成员，教师是所有者并且具有适当的权利。
+表示学校的课程。 **educationClass** 资源当前对应于Microsoft 365 [组并]共享同一 ID。
+学生是课程的普通成员，教师是所有者并且具有适当的权限。
 
 > [!IMPORTANT]
-> 若要使 Microsoft 365 体验正常工作，教师必须是教师和成员集合的成员。
+> 若要Microsoft 365体验，教师必须是教师和成员集合的成员。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
-| 方法                                                                  | 返回类型                                    | 说明                                                                               |
+| 方法                                                                  | 返回类型                                    | Description                                                                               |
 | :---------------------------------------------------------------------- | :--------------------------------------------- | :---------------------------------------------------------------------------------------- |
 | [Get educationClass](../api/educationclass-get.md)                      | [educationClass]                               | 读取 **educationClass** 对象的属性和关系。                        |
 | [Add member](../api/educationclass-post-members.md)                     | [educationUser]                                | 通过发布到 members 导航属性，为课程添加一个新的 **educationUser**。  |
@@ -36,14 +36,14 @@ ms.locfileid: "50292882"
 | [Add teacher](../api/educationclass-post-teachers.md)                   | [educationUser]                                | 通过发布到 teachers 导航属性，为课程添加一个新的 **educationUser**。 |
 | [List teachers](../api/educationclass-list-teachers.md)                 | [educationUser] 集合                     | 获取课程的教师列表。                                                     |
 | [Remove teacher](../api/educationclass-delete-teachers.md)              | [educationUser]                                | 通过教师导航属性从课程删除 **educationUser**。      |
-| [创建 educationAssignment](../api/educationclass-post-assignments.md) | [educationAssignment]                          | 通过发布到作业集合创建新的 **educationAssignment。**            |
+| [创建 educationAssignment](../api/educationclass-post-assignments.md) | [educationAssignment]                          | 通过发布到 **作业集合创建新的 educationAssignment。**            |
 | [列出作业](../api/educationclass-list-assignments.md)           | [educationAssignment]集合                | 获取 **educationAssignment** 对象集合。                                         |
-| [Get group](../api/educationclass-get-group.md)                         | [组]                                        | 获取对应于此 **educationClass****的** Microsoft 365 组。              |
+| [Get group](../api/educationclass-get-group.md)                         | [group]                                        | 获取Microsoft 365 **educationClass** 对应的组。              |
 | [创建 educationCategory](../api/educationclass-post-category.md)      | [educationCategory]                            | 为此课程 **创建新的 educationCategory。**                                        |
 | [List categories](../api/educationclass-list-categories.md)             | [educationCategory] 集合                 | 获取属于 **此类的 educationCategory** 对象列表。                      |
 | [Update](../api/educationclass-update.md)                               | [educationClass]                               | 更新 **educationClass** 对象。                                                         |
 | [删除](../api/educationclass-delete.md)                               | 无                                           | 删除 **educationClass** 对象。                                                         |
-| [Delta](../api/educationclass-delta.md)                                 | [educationClass](educationclass.md) 集合 | 获取 **educationClasses 的增量更改**                                          |
+| [Delta](../api/educationclass-delta.md)                                 | [educationClass](educationclass.md) 集合 | 获取 **educationClasses 的增量更改**。                                          |
 
 ## <a name="properties"></a>属性
 
@@ -51,23 +51,23 @@ ms.locfileid: "50292882"
 | :------------------- | :------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | id                   | String                                | 课程的唯一标识符。                                                                                                                                     |
 | classCode            | String                                | 学校用于标识课程的课程代码。                                                                                                                 |
-| 课程               | [educationCourse](educationcourse.md) | 课程的课程信息                                                                                                                                     |
-| createdBy            | [identitySet]                         | 创建了课程的实体                                                                                                                                         |
-| description          | String                                | 课程说明。                                                                                                                                            |
+| 课程               | [educationCourse](educationcourse.md) | 课程的课程信息。                                                                                                                                     |
+| createdBy            | [identitySet]                         | 创建类的实体。                                                                                                                                         |
+| 说明          | String                                | 课程说明。                                                                                                                                            |
 | displayName          | String                                | 课程名称。                                                                                                                                                   |
 | externalId           | String                                | 来自同步系统的课程 ID。                                                                                                                             |
 | externalName         | String                                | 同步系统中的课程名称。                                                                                                                             |
-| externalSource       | String                                | 此资源的外部源类型由 (自动确定 `externalSourceDetail`) 。 可能的值为： `sis`、 `lms`或 `manual`。 |
-| externalSourceDetail | String                                | 生成这些资源的外部源的名称。                                                                                                   |
-| grade                | String                                | 课程的级别。                                                                                                                                            |
+| externalSource       | String                                | 此资源的外部源类型是从外部 (自动确定的 `externalSourceDetail`) 。 可能的值为： `sis`、 `lms`或 `manual`。 |
+| externalSourceDetail | String                                | 生成此资源的外部源的名称。                                                                                                   |
+| grade                | String                                | 课程的年级。                                                                                                                                            |
 | mailNickname         | String                                | 向所有成员发送电子邮件的邮件名称（如果已启用）。                                                                                                      |
 | term                 | [educationTerm]                       | 类的术语。                                                                                                                                                  |
 
 ## <a name="relationships"></a>关系
 
-| 关系 | 类型                             | 说明                                               |
+| 关系 | 类型                             | Description                                               |
 | :----------- | :------------------------------- | :-------------------------------------------------------- |
-| assignments  | [educationAssignment] 集合 | 与此类关联的所有工作分配。 可为 Null。     |
+| assignments  | [educationAssignment] 集合 | 与此课程关联的所有工作分配。 可为 Null。     |
 | members      | [educationUser] 集合       | 课程中的所有用户。 可为 NULL。                         |
 | schools      | [educationSchool] 集合     | 与此课程相关的所有学校。 可为 NULL。 |
 | teachers     | [educationUser] 集合       | 课程中的所有教师。 可为 Null。                      |
@@ -123,6 +123,6 @@ ms.locfileid: "50292882"
 [educationschool]: educationschool.md
 [educationterm]: educationterm.md
 [identityset]: identityset.md
-[组]: group.md
+[group]: group.md
 
 

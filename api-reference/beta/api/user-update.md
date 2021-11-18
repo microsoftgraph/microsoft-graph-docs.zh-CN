@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 9c724debf410248fddc9b8b2038db0a6fd749c3a
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 1a4475a8977f9465f38a256f9166fd9511f5bb7d
+ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61031391"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61077282"
 ---
 # <a name="update-user"></a>更新用户
 
@@ -61,6 +61,7 @@ PATCH /users/{id | userPrincipalName}
 | companyName | String | 与用户关联的公司名称。 此属性可用于描述外部用户所属的公司。 公司名称的最大长度为 64 个字符。 |
 | consentProvidedForMinor | [consentProvidedForMinor](../resources/user.md#consentprovidedforminor-values) | 设置是否已获得未成年人的同意。 允许的值：`null`、`granted`、`denied` 和 `notRequired`。 请参阅[法定年龄组属性定义](../resources/user.md#legal-age-group-property-definitions)以了解详细信息。 |
 |country|String|用户所在的国家/地区;例如， `US` 或 `UK`。|
+|customSecurityAttributes|[customSecurityAttributeValue](../resources/customsecurityattributevalue.md)|一个打开的复杂类型，包含分配给目录对象的自定义安全属性的值。<br/><br/>若要更新此属性，必须为调用主体分配属性分配管理员角色，并且必须被授予 *CustomSecAttributeAssignment.ReadWrite.All* 权限。|
 |department|String|用户工作部门的名称。|
 |displayName|String|用户通讯簿中显示的名称，通常是用户名字、中间名首字母和姓氏的组合。此属性在创建用户时是必需的，并且在更新过程中不能清除。|
 |employeeId|String|由组织分配给该用户的员工标识符。|
@@ -268,6 +269,51 @@ Content-type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
+
+### <a name="example-4-assign-a-custom-security-attribute-with-a-string-value-to-a-user"></a>示例 4：向用户分配具有字符串值的自定义安全属性
+
+以下示例演示如何向用户分配具有字符串值的自定义安全属性。
+
++ 属性集： `Engineering`
++ 属性： `ProjectDate`
++ 属性数据类型：String
++ 属性值： `"2022-10-01"`
+
+若要分配自定义安全属性，必须为调用主体分配属性分配管理员角色，并且必须被授予 *CustomSecAttributeAssignment.ReadWrite.All* 权限。
+
+有关用户的更多示例，请参阅使用 Microsoft Graph API 分配、更新[或删除自定义安全属性](/graph/custom-security-attributes-examples)。
+
+#### <a name="request"></a>请求
+
+
+<!-- {
+  "blockType": "request",
+  "name": "assign_user_customsecurityattribute_string"
+}-->
+```http
+PATCH https://graph.microsoft.com/beta/users/{id}
+Content-type: application/json
+
+{
+    "customSecurityAttributes":
+    {
+        "Engineering":
+        {
+            "@odata.type":"#Microsoft.DirectoryServices.CustomSecurityAttributeValue",
+            "ProjectDate":"2022-10-01"
+        }
+    }
+}
+```
+
+#### <a name="response"></a>响应
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
 
 ## <a name="see-also"></a>另请参阅
 

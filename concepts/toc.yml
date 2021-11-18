@@ -267,6 +267,8 @@ items:
             href: azuread-identity-access-management-concept-overview.md
           - name: 目录管理
             items:
+              - name: 分配自定义安全属性（预览版）
+                href: custom-security-attributes-examples.md
               - name: 将 PIM 用于Azure AD分配角色
                 href: tutorial-assign-azureadroles.md
           - name: 身份和登录

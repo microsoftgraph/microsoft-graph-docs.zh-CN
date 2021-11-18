@@ -5,14 +5,14 @@ ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 98a6127991b3eb321a84c6d771ef25b6f4f3f170
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 36fbef413478ac31fa4cafbc3f30166d6e318919
+ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696909"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61077633"
 ---
-# <a name="directory-resource-type-deleted-items"></a>目录资源类型（已删除的项目）
+# <a name="directory-resource-type"></a>目录资源类型
 
 命名空间：microsoft.graph
 
@@ -20,13 +20,13 @@ ms.locfileid: "58696909"
 
 表示目录中已删除的项目。 删除某个项目后，它会被添加到已删除项目“容器”中。 已删除的项目将保留最多 30 天的还原时间。 30 天后，这些项目将永久删除。
 
-目前，仅应用程序、组和用户资源支持已删除的项目[](application.md)功能。 [](group.md) [](user.md)
+目前，仅应用程序、组和用户资源支持[已删除项目功能](user.md)。 [](group.md) [](application.md)
 
 继承自 [实体](entity.md)。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
-| 方法         | 返回类型 | 说明 |
+| 方法         | 返回类型 | Description |
 |:---------------|:------------|:------------|
 |[Get deleted item](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) | 获取已删除项目的属性。 |
 |[Restore deleted item](../api/directory-deleteditems-restore.md) |[directoryObject](directoryobject.md)| 还原最近删除的项目。 |
@@ -42,12 +42,14 @@ ms.locfileid: "58696909"
 
 ## <a name="relationships"></a>关系
 
-| 关系 | 类型   |说明|
+| 关系 | 类型   |Description|
 |:---------------|:--------|:----------|
 |administrativeUnits|[administrativeUnit](administrativeunit.md) 集合| 用户和组目录对象的概念容器。|
-|DeletedItems|[directoryObject](directoryobject.md) 集合| 最近删除的项目。 只读。 可为 NULL。|
+|attributeSets|[attributeSet](attributeset.md) 集合| 相关自定义安全属性定义的组。|
+|customSecurityAttributeDefinitions|[customSecurityAttributeDefinition](customsecurityattributedefinition.md) 集合|自定义安全属性的架构 (键值对) 。|
+|DeletedItems|[directoryObject](directoryobject.md) 集合| 最近删除的项目。 只读。 可为空。|
 |featureRolloutPolicies|[featureRolloutPolicy](featurerolloutpolicy.md) 集合| 可为 NULL。|
-|federationConfigurations|[identityProviderBase](../resources/identityproviderbase.md) 集合|配置与标识提供程序支持 IdP (组织) 支持 SAML 或 WS-Fed联盟。|
+|federationConfigurations|[identityProviderBase](../resources/identityproviderbase.md) 集合|配置与标识提供程序支持 IdP (组织) SAML 或 WS-Fed 联盟。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -56,15 +58,13 @@ ms.locfileid: "58696909"
 <!-- {
   "blockType": "resource",
   "keyProperty":"id",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
   "@odata.type": "microsoft.graph.directory"
 }-->
 
 ```json
 {
-  "id": "String (identifier)"
+  "@odata.type": "#microsoft.graph.directory"
 }
 ```
 
