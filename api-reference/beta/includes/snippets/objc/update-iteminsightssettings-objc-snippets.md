@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 413090ad085ee2155727f176b77a2dea463f92ba4b6a7dd9b114f418ae0fc37d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f9402b41fd7732d297b5d365607a8eaf60fbaceb
+ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57278083"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61102153"
 ---
 ```objc
 
@@ -16,12 +16,12 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setHTTPMethod:@"PATCH"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphItemInsightsSettings *itemInsightsSettings = [[MSGraphItemInsightsSettings alloc] init];
-[itemInsightsSettings setDisabledForGroup:@"edbfe4fb-ec70-4300-928f-dbb2ae86c981"];
+MSGraphInsightsSettings *insightsSettings = [[MSGraphInsightsSettings alloc] init];
+[insightsSettings setDisabledForGroup:@"edbfe4fb-ec70-4300-928f-dbb2ae86c981"];
 
 NSError *error;
-NSData *itemInsightsSettingsData = [itemInsightsSettings getSerializedDataWithError:&error];
-[urlRequest setHTTPBody:itemInsightsSettingsData];
+NSData *insightsSettingsData = [insightsSettings getSerializedDataWithError:&error];
+[urlRequest setHTTPBody:insightsSettingsData];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
     completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
