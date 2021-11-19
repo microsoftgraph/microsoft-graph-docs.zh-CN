@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 17dd109a6eddc9d6d76337a1fb45285f47d9024cc5f36fd5f1c0757012809ec9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 11c15e4314676886d70c871742e675592a07f1f8
+ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57332661"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61086538"
 ---
 ```objc
 
@@ -17,6 +17,21 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphAuthenticationMethodsPolicy *authenticationMethodsPolicy = [[MSGraphAuthenticationMethodsPolicy alloc] init];
+MSGraphRegistrationEnforcement *registrationEnforcement = [[MSGraphRegistrationEnforcement alloc] init];
+MSGraphAuthenticationMethodsRegistrationCampaign *authenticationMethodsRegistrationCampaign = [[MSGraphAuthenticationMethodsRegistrationCampaign alloc] init];
+[authenticationMethodsRegistrationCampaign setSnoozeDurationInDays: 1];
+[authenticationMethodsRegistrationCampaign setState: [MSGraphAdvancedConfigState enabled]];
+NSMutableArray *excludeTargetsList = [[NSMutableArray alloc] init];
+[authenticationMethodsRegistrationCampaign setExcludeTargets:excludeTargetsList];
+NSMutableArray *includeTargetsList = [[NSMutableArray alloc] init];
+MSGraphAuthenticationMethodsRegistrationCampaignIncludeTarget *includeTargets = [[MSGraphAuthenticationMethodsRegistrationCampaignIncludeTarget alloc] init];
+[includeTargets setId:@"3ee3a9de-0a86-4e12-a287-9769accf1ba2"];
+[includeTargets setTargetType: [MSGraphAuthenticationMethodTargetType group]];
+[includeTargets setTargetedAuthenticationMethod:@"microsoftAuthenticator"];
+[includeTargetsList addObject: includeTargets];
+[authenticationMethodsRegistrationCampaign setIncludeTargets:includeTargetsList];
+[registrationEnforcement setAuthenticationMethodsRegistrationCampaign:authenticationMethodsRegistrationCampaign];
+[authenticationMethodsPolicy setRegistrationEnforcement:registrationEnforcement];
 NSMutableArray *authenticationMethodConfigurationsList = [[NSMutableArray alloc] init];
 MSGraphAuthenticationMethodConfiguration *authenticationMethodConfigurations = [[MSGraphAuthenticationMethodConfiguration alloc] init];
 [authenticationMethodConfigurations setId:@"Fido2"];
