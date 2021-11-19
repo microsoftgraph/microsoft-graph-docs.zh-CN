@@ -1,23 +1,23 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 9d942c0af44fc9725938f13debafc1d7b4041d92c52fc43f795e4f47ea10d739
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 724cccd305abf4bca5c6a2ab3d1284a6afbdc790
+ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57332392"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61093252"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var itemInsightsSettings = new ItemInsightsSettings
+var insightsSettings = new InsightsSettings
 {
     DisabledForGroup = "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 };
 
 await graphClient.Organization["{organization-id}"].Settings.ItemInsights
     .Request()
-    .UpdateAsync(itemInsightsSettings);
+    .UpdateAsync(insightsSettings);
 
 ```

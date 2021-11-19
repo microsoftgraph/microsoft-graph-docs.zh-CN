@@ -1,44 +1,48 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4152204051b98b733d7a9504144787e814a87c61
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 725327fae95f4b84872a91c4fd05556033d9c76c
+ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61013758"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61082516"
 ---
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
+graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := msgraphsdk.New()
 topic := msgraphsdk.NewTeamworkActivityTopic()
 requestBody.SetTopic(topic)
-source := "text"
+source := "entityUrl"
 topic.SetSource(&source)
-value := "Deployment Approvals Channel"
+value := "https://graph.microsoft.com/beta/teams/e8bece96-d393-4b9b-b8da-69cedef1a7e7"
 topic.SetValue(&value)
-webUrl := "https://teams.microsoft.com/l/message/19:448cfd2ac2a7490a9084a9ed14cttr78c@thread.skype/1605223780000?tenantId=c8b1bf45-3834-4ecf-971a-b4c755ee677d&groupId=d4c2a937-f097-435a-bc91-5c1683ca7245&parentMessageId=1605223771864&teamName=Approvals&channelName=Azure%20DevOps&createdTime=1605223780000"
-topic.SetWebUrl(&webUrl)
-activityType := "deploymentApprovalRequired"
+activityType := "pendingFinanceApprovalRequests"
 requestBody.SetActivityType(&activityType)
 previewText := msgraphsdk.NewItemBody()
 requestBody.SetPreviewText(previewText)
-content := "New deployment requires your approval"
+content := "Internal spending team has a pending finance approval requests"
 previewText.SetContent(&content)
+recipient := msgraphsdk.NewTeamworkNotificationRecipient()
+requestBody.SetRecipient(recipient)
+recipient.SetAdditionalData(map[string]interface{}{
+    "@odata.type": "microsoft.graph.teamMembersNotificationRecipient",
+    "teamId": "e8bece96-d393-4b9b-b8da-69cedef1a7e7",
+}
 requestBody.SetTemplateParameters( []KeyValuePair {
     msgraphsdk.NewKeyValuePair(),
     SetAdditionalData(map[string]interface{}{
-        "name": "deploymentId",
-        "value": "6788662",
+        "name": "pendingRequestCount",
+        "value": "5",
     }
 }
 options := &msgraphsdk.SendActivityNotificationRequestBuilderPostOptions{
     Body: requestBody,
 }
-userId := "user-id"
-graphClient.UsersById(&userId).Teamwork().SendActivityNotification().Post(options)
+teamId := "team-id"
+graphClient.TeamsById(&teamId).SendActivityNotification().Post(options)
 
 
 ```
