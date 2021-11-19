@@ -1,16 +1,16 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: a7fead706c4b08610ef2f3abac2ee2b97ed2aa28
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 467a3018428cd2fcdd299ee9183992f5383c7aa2
+ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61029566"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61097231"
 ---
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
+graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 inferenceClassificationOverrideId := "inferenceClassificationOverride-id"
 graphClient.Me().InferenceClassification().OverridesById(&inferenceClassificationOverrideId).Delete(options)

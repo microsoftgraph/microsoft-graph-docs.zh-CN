@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 6a911ce6eafa70ee8ffafa4c1c90aa2132695620
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 298d9dfed9caeebbd2ea3b8701cdd58753d9c7e9
+ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694514"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61096468"
 ---
 ```javascript
 
@@ -21,7 +21,6 @@ const externalItem = {
       type: 'everyone',
       value: '67a141d8-cf4e-4528-ba07-bed21bfacd2d',
       accessType: 'grant',
-      identitySource: 'azureActiveDirectory'
     }
   ]
 };

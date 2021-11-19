@@ -1,16 +1,16 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4152204051b98b733d7a9504144787e814a87c61
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 1f6f74ae45a9ec7d5fb35728419c5b06504a24b3
+ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61012684"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61101613"
 ---
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
+graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := msgraphsdk.New()
 topic := msgraphsdk.NewTeamworkActivityTopic()
@@ -27,6 +27,12 @@ previewText := msgraphsdk.NewItemBody()
 requestBody.SetPreviewText(previewText)
 content := "New deployment requires your approval"
 previewText.SetContent(&content)
+recipient := msgraphsdk.NewTeamworkNotificationRecipient()
+requestBody.SetRecipient(recipient)
+recipient.SetAdditionalData(map[string]interface{}{
+    "@odata.type": "Microsoft.Teams.GraphSvc.aadUserNotificationRecipient",
+    "userId": "569363e2-4e49-4661-87f2-16f245c5d66a",
+}
 requestBody.SetTemplateParameters( []KeyValuePair {
     msgraphsdk.NewKeyValuePair(),
     SetAdditionalData(map[string]interface{}{
@@ -37,8 +43,8 @@ requestBody.SetTemplateParameters( []KeyValuePair {
 options := &msgraphsdk.SendActivityNotificationRequestBuilderPostOptions{
     Body: requestBody,
 }
-userId := "user-id"
-graphClient.UsersById(&userId).Teamwork().SendActivityNotification().Post(options)
+teamId := "team-id"
+graphClient.TeamsById(&teamId).SendActivityNotification().Post(options)
 
 
 ```
