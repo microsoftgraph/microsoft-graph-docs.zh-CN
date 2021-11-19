@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
-ms.openlocfilehash: 257851e2f909af9111a23cd6f0444684d117e67f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 4e232cb87bdd0424e735cbcb52b9b4615d567e96
+ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61031821"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61077306"
 ---
 # <a name="update-serviceprincipal"></a>更新 servicePrincipal
 
@@ -49,10 +49,11 @@ PATCH /servicePrincipals/{id}
 | 属性     | 类型 |说明|
 |:---------------|:--------|:----------|
 |accountEnabled|Boolean| 如果服务主体帐户已启用，则为 **true**；否则，为 **false**。|
-| addIns | [addIn](../resources/addin.md) | 定义使用服务可用于调用特定上下文中的应用的自定义行为。 例如，呈现文件流的应用程序可能会为其“FileHandler”功能[设置 addIns 属性](/onedrive/developer/file-handlers/?view=odsp-graph-online)。 这将使 Microsoft 365 之类的服务在用户正在处理的文档上下文中调用应用程序。|
+| addIns | [addIn](../resources/addin.md) | 定义使用服务可用于调用特定上下文中的应用的自定义行为。 例如，呈现文件流的应用程序可能会为其“FileHandler”功能[设置 addIns 属性](/onedrive/developer/file-handlers/)。 这将使 Microsoft 365 之类的服务在用户正在处理的文档上下文中调用应用程序。|
 |alternativeNames|字符串集合| 用于按订阅、标识资源组和[托管标识](https://aka.ms/azuremanagedidentity)的完整资源 ID 检索服务主体。|
 |appRoleAssignmentRequired|Boolean|指定在 Azure AD 在向应用程序签发用户或访问令牌之前用户或组是否需要 **appRoleAssignment**。 不可为空。 |
 |appRoles|[appRole](../resources/approle.md) 集合|关联应用程序公开的应用程序角色。 有关详细信息，请参阅 [应用程序](../resources/application.md)资源上的 **appRoles** 属性定义。 不可为空。 |
+|customSecurityAttributes|[customSecurityAttributeValue](../resources/customsecurityattributevalue.md)|保留分配给目录对象的自定义安全属性的值的开放式复杂类型。<br/><br/>若要更新此属性，必须为调用主体分配"属性分配管理员"角色，并且必须向其授予 *CustomSecAttributeAssignment.ReadWrite.All* 权限。|
 |displayName|String|服务主体的显示名称。|
 |homepage|String|应用程序的主页或登录页面。|
 |keyCredentials|[keyCredential](../resources/keycredential.md) 集合|与服务主题关联的密钥凭据集合。不可为 null。            |
@@ -73,8 +74,12 @@ PATCH /servicePrincipals/{id}
 ## <a name="response"></a>响应
 
 如果成功，此方法在响应正文中返回 `204 No Content` 响应代码和更新的 [servicePrincipal](../resources/serviceprincipal.md) 对象。
+
 ## <a name="examples"></a>示例
-### <a name="request"></a>请求
+
+### <a name="example-1-update-properties-of-the-specified-service-principal"></a>示例 1：更新指定服务主体的属性
+
+#### <a name="request"></a>请求
 下面是一个请求示例。
 
 
@@ -115,7 +120,7 @@ Content-type: application/json
 ---
 
 
-### <a name="response"></a>响应
+#### <a name="response"></a>响应
 这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response"
@@ -140,4 +145,47 @@ HTTP/1.1 204 No Content
 -->
 
 
+### <a name="example-2-assign-a-custom-security-attribute-with-a-string-value-to-a-service-principal"></a>示例 2：将具有字符串值的自定义安全属性分配给服务主体
+
+下面的示例演示如何将具有字符串值的自定义安全属性分配给服务主体。
+
++ 属性集： `Engineering`
++ 属性： `ProjectDate`
++ 属性数据类型：字符串
++ 属性值： `"2022-10-01"`
+
+若要分配自定义安全属性，必须为调用主体分配"属性分配管理员"角色，并且必须授予 *CustomSecAttributeAssignment.ReadWrite.All* 权限。
+
+有关用户的其他类似示例，请参阅[使用 Microsoft Graph API 分配、更新或删除自定义安全属性](/graph/custom-security-attributes-examples)。
+
+#### <a name="request"></a>请求
+
+
+<!-- {
+  "blockType": "request",
+  "name": "assign_serviceprincipal_customsecurityattribute_string"
+}-->
+```http
+PATCH https://graph.microsoft.com/beta/servicePrincipals/{id}
+Content-type: application/json
+
+{
+    "customSecurityAttributes":
+    {
+        "Engineering":
+        {
+            "@odata.type":"#Microsoft.DirectoryServices.CustomSecurityAttributeValue",
+            "ProjectDate":"2022-10-01"
+        }
+    }
+}
+```
+
+#### <a name="response"></a>响应
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
 
