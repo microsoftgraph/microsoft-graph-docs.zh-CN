@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 3b33b704e1a9cd16d3ed6a67cdbf90a3087e1dce359322ca6883ae0909717ad0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9950655d4b8d4afbdf527cbbe3bd397e3f7b8488
+ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57161886"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61102043"
 ---
 ```objc
 
@@ -18,8 +18,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 MSGraphExternalConnectorsExternalGroupMember *externalGroupMember = [[MSGraphExternalConnectorsExternalGroupMember alloc] init];
 [externalGroupMember setId:@"e5477431-1038-484e-bf69-1dfedb97a110"];
-[externalGroupMember setType: [MSGraphExternalConnectorsExternalGroupMemberType group]];
-[externalGroupMember setIdentitySource: [MSGraphExternalConnectorsIdentitySourceType azureActiveDirectory]];
+[externalGroupMember setType: [MSGraphExternalConnectorsExternalGroupMemberType user]];
 
 NSError *error;
 NSData *externalGroupMemberData = [externalGroupMember getSerializedDataWithError:&error];

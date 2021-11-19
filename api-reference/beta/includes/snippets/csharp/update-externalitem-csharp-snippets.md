@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 0c38afb36155e6dee01d00883851cbd9e3b696fc
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: d88daa832cb43596f7e5f16ba178b55012f96375
+ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694516"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61103529"
 ---
 ```csharp
 
@@ -19,8 +19,7 @@ var externalItem = new Microsoft.Graph.ExternalConnectors.ExternalItem
         {
             Type = Microsoft.Graph.ExternalConnectors.AclType.Everyone,
             Value = "67a141d8-cf4e-4528-ba07-bed21bfacd2d",
-            AccessType = Microsoft.Graph.ExternalConnectors.AccessType.Grant,
-            IdentitySource = Microsoft.Graph.ExternalConnectors.IdentitySourceType.AzureActiveDirectory
+            AccessType = Microsoft.Graph.ExternalConnectors.AccessType.Grant
         }
     }
 };

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 90a1dc6d56ce6cc5a8fbbaafa4fdfcc1739061677874dc64523477db5bc17a3c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 90b09a6da6766b0e59d3e353c46bc008ca3b9790
+ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57328777"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61098341"
 ---
 ```objc
 
@@ -18,7 +18,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
     completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
-        MSGraphItemInsightsSettings *itemInsightsSettings = [[MSGraphItemInsightsSettings alloc] initWithData:data error:&nserror];
+        MSGraphInsightsSettings *insightsSettings = [[MSGraphInsightsSettings alloc] initWithData:data error:&nserror];
 
 }];
 

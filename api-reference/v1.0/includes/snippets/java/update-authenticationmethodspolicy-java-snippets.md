@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5617ddbda4e14f9d13c1fae1a654330281add8e43de018383765c37c9d62994b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 754bcf2d838a89f83eb7cd16b5f59ca9c62bb117
+ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57332660"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61083884"
 ---
 ```java
 
@@ -13,6 +13,21 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 
 AuthenticationMethodsPolicy authenticationMethodsPolicy = new AuthenticationMethodsPolicy();
 authenticationMethodsPolicy.additionalDataManager().put("@odata.context", new JsonPrimitive("https://graph.microsoft.com/v1.0/$metadata#authenticationMethodsPolicy"));
+RegistrationEnforcement registrationEnforcement = new RegistrationEnforcement();
+AuthenticationMethodsRegistrationCampaign authenticationMethodsRegistrationCampaign = new AuthenticationMethodsRegistrationCampaign();
+authenticationMethodsRegistrationCampaign.snoozeDurationInDays = 1;
+authenticationMethodsRegistrationCampaign.state = AdvancedConfigState.ENABLED;
+LinkedList<ExcludeTarget> excludeTargetsList = new LinkedList<ExcludeTarget>();
+authenticationMethodsRegistrationCampaign.excludeTargets = excludeTargetsList;
+LinkedList<AuthenticationMethodsRegistrationCampaignIncludeTarget> includeTargetsList = new LinkedList<AuthenticationMethodsRegistrationCampaignIncludeTarget>();
+AuthenticationMethodsRegistrationCampaignIncludeTarget includeTargets = new AuthenticationMethodsRegistrationCampaignIncludeTarget();
+includeTargets.id = "3ee3a9de-0a86-4e12-a287-9769accf1ba2";
+includeTargets.targetType = AuthenticationMethodTargetType.GROUP;
+includeTargets.targetedAuthenticationMethod = "microsoftAuthenticator";
+includeTargetsList.add(includeTargets);
+authenticationMethodsRegistrationCampaign.includeTargets = includeTargetsList;
+registrationEnforcement.authenticationMethodsRegistrationCampaign = authenticationMethodsRegistrationCampaign;
+authenticationMethodsPolicy.registrationEnforcement = registrationEnforcement;
 LinkedList<AuthenticationMethodConfiguration> authenticationMethodConfigurationsList = new LinkedList<AuthenticationMethodConfiguration>();
 Fido2AuthenticationMethodConfiguration authenticationMethodConfigurations = new Fido2AuthenticationMethodConfiguration();
 authenticationMethodConfigurations.id = "Fido2";
