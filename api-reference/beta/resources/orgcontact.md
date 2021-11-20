@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: da80a014bf5d1ee5f3151ae68f994f211dce7a00
-ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
+ms.openlocfilehash: dcb4dd40afd4646cf911f5e3d179e51098bae16d
+ms.sourcegitcommit: 1cf7a82df17afc6291e2c93d8b2c277bf3382e6a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61123963"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61130225"
 ---
 # <a name="orgcontact-resource-type"></a>orgContact 资源类型
 
@@ -46,20 +46,20 @@ ms.locfileid: "61123963"
 | 属性 | 类型 | 说明 |
 | -------- | ---- | ----------- |
 | addresses | [physicalOfficeAddress](physicalofficeaddress.md) 集合 | 此组织联系人的邮寄地址。 目前，联系人只能有一个物理地址。 |
-| companyName | String | 此组织联系人所属的公司的名称。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。 |
-| department | String | 联系人工作部门的名称。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。 |
-| displayName | String | 此组织联系人的显示名称。 支持 `$filter` (`eq`、`ne`、`NOT`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`)、`$search` 和 `$orderBy`。  |
-| givenName | String | 此组织联系人的名字。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。  |
-| id | String | 此组织联系人的唯一标识符。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `in`）。 |
-| jobTitle | String | 此组织联系人的工作职务。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。 |
-| mail | String | 联系人的 SMTP 地址，例如"jeff@contoso.onmicrosoft.com"。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。 |
-| mailNickname | String | 电子邮件别名 (电子邮件地址的一部分，在此组织联系人的 @ 符号) 等待@ 符号。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。 |
-| onPremisesLastSyncDateTime | DateTimeOffset | 上次从本地 AD 同步此组织联系人的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `ge`、 `le`、 `in`）。 |
-| onPremisesProvisioningErrors | [onPremisesProvisioningError](onpremisesprovisioningerror.md) 集合 | 此组织联系人的任何同步设置错误的列表。 支持 `$filter`（`eq`、`NOT`）。 |
-| onPremisesSyncEnabled | Boolean | 如果此对象从本地目录同步，则其为 **true;****假** 如果此对象最初从本地目录同步，但不再同步，现在在Exchange;**如果** 从未从本地目录同步此对象， (默认值) 。 <br/> <br/>支持 `$filter`（`eq`、`ne`、`NOT`、`in` 和 `null` 值上的 `eq`）。 |
-| phones | [phone](phone.md) collection | 此组织联系人的电话列表。 电话类型可以是移动、商业和 businessFax。 集合中只能存在每种类型中的一种。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `in`）。 |
-| proxyAddresses | String collection | 例如："SMTP： bob@contoso.com"、"smtp： bob@sales.contoso.com"。 需要多值属性筛选器表达式的 **any** 运算符。 支持 `$filter` （`eq`、 `NOT`、 `ge`、 `le`、 `startsWith`）。 |
-| surname | String | 此组织联系人的姓氏。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`） |
+| companyName | String | 此组织联系人所属的公司的名称。 支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。 |
+| department | String | 联系人工作部门的名称。 支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。 |
+| displayName | String | 此组织联系人的显示名称。 支持 `$filter` (`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`)、`$search` 和 `$orderBy`。  |
+| givenName | String | 此组织联系人的名字。 支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。  |
+| id | String | 此组织联系人的唯一标识符。 支持 `$filter` （`eq`、 `ne`、 `not`、 `in`）。 |
+| jobTitle | String | 此组织联系人的工作职务。 支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。 |
+| mail | String | 联系人的 SMTP 地址，例如"jeff@contoso.onmicrosoft.com"。 支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。 |
+| mailNickname | String | 电子邮件别名 (电子邮件地址的一部分预先挂起的 @ 符号) 此组织联系人。 支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）。 |
+| onPremisesLastSyncDateTime | DateTimeOffset | 上次从本地 AD 同步此组织联系人的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`。 支持 `$filter` （`eq`、 `ne`、 `not`、 `ge`、 `le`、 `in`）。 |
+| onPremisesProvisioningErrors | [onPremisesProvisioningError](onpremisesprovisioningerror.md) 集合 | 此组织联系人的任何同步设置错误的列表。 支持 `$filter`（`eq`、`not`）。 |
+| onPremisesSyncEnabled | Boolean | 如果此对象从本地目录同步，则其为 **true;****假** 如果此对象最初从本地目录同步，但不再同步，现在在Exchange;**如果** 从未从本地目录同步此对象， (默认值) 。 <br/> <br/>支持 `$filter`（`eq`、`ne`、`not`、`in` 和 `null` 值上的 `eq`）。 |
+| phones | [phone](phone.md) collection | 此组织联系人的电话列表。 电话类型可以是移动、商业和 businessFax。 集合中只能存在每种类型中的一种。 支持 `$filter` （`eq`、 `ne`、 `not`、 `in`）。 |
+| proxyAddresses | String collection | 例如："SMTP： bob@contoso.com"、"smtp： bob@sales.contoso.com"。 需要多值属性筛选器表达式的 **any** 运算符。 支持 `$filter` （`eq`、 `not`、 `ge`、 `le`、 `startsWith`）。 |
+| surname | String | 此组织联系人的姓氏。 支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`） |
 
 ## <a name="relationships"></a>关系
 

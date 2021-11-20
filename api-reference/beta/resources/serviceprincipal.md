@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 319fab77358b35c82c3767fcff7dff1f40915315
-ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
+ms.openlocfilehash: f9d9998d819caf48a202b16ab98d1d25a5819521
+ms.sourcegitcommit: 1cf7a82df17afc6291e2c93d8b2c277bf3382e6a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61123716"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61130190"
 ---
 # <a name="serviceprincipal-resource-type"></a>servicePrincipal 资源类型
 
@@ -90,9 +90,9 @@ ms.locfileid: "61123716"
 
 | 属性     | 类型 |说明|
 |:---------------|:--------|:----------|
-| accountEnabled |Boolean| 如果已启用服务主体帐户，则为 `true`；否则，为 `false`。 支持 `$filter`（`eq`、`ne`、`NOT`、`in`）。 |
+| accountEnabled |Boolean| 如果已启用服务主体帐户，则为 `true`；否则，为 `false`。 支持 `$filter`（`eq`、`ne`、`not`、`in`）。 |
 | addIns | [addIn](addin.md) 集合 | 定义使用服务可用于调用特定上下文中的应用的自定义行为。 例如，呈现文件流的应用程序可能会为其“FileHandler”功能[设置 addIns 属性](/onedrive/developer/file-handlers/)。 这将使 Microsoft 365 之类的服务在用户正在处理的文档上下文中调用应用程序。|
-|alternativeNames|字符串集合| 用于按订阅、标识资源组和[托管标识](https://aka.ms/azuremanagedidentity)的完整资源 ID 检索服务主体。 支持 `$filter`（`eq`、`NOT`、`ge`、`le`、`startsWith`）。|
+|alternativeNames|字符串集合| 用于按订阅、标识资源组和[托管标识](https://aka.ms/azuremanagedidentity)的完整资源 ID 检索服务主体。 支持 `$filter`（`eq`、`not`、`ge`、`le`、`startsWith`）。|
 |应用说明|String|相关应用程序公开的说明。|
 |appDisplayName|String|关联应用程序公开的显示名称。|
 |appId|String|关联应用程序的唯一标识符（其 **appId** 属性）。 支持 `$filter` （`eq`、 `ne`、 `not`、 `in`、 `startsWith`）。|
@@ -100,16 +100,16 @@ ms.locfileid: "61123716"
 |appOwnerOrganizationId|String|包含注册应用程序的租户 ID。 这仅适用于应用程序支持的服务主体。支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`）。|
 |appRoleAssignmentRequired|布尔|指定在用户登录或应用可以获取令牌前，是否需要先向用户或其他服务主体授予此服务主体的应用角色分配。 默认值为 `false`。 不可为空。 <br><br>支持 `$filter`（`eq`、`ne`、`NOT`）。 |
 |appRoles|[appRole](approle.md) 集合|该服务主体代表的应用程序公开的角色。 有关详细信息，请参阅 [应用程序](application.md)实体上的 **appRoles** 属性定义。 不可为空。 |
-|customSecurityAttributes|[customSecurityAttributeValue](../resources/customsecurityattributevalue.md)|保留分配给目录对象的自定义安全属性的值的开放式复杂类型。 可为 NULL。 <br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `startsWith`）。|
+|customSecurityAttributes|[customSecurityAttributeValue](../resources/customsecurityattributevalue.md)|保留分配给目录对象的自定义安全属性的值的开放式复杂类型。 可为 NULL。 <br><br>仅在 `$select` 上返回。 支持 `$filter` （`eq`、 `ne`、 `not`、 `startsWith`）。|
 | deletedDateTime | DateTimeOffset | 删除服务主体的日期和时间。只读。 |
-| 说明 | 字符串 | 免费文本字段，提供面向内部最终用户的服务主体说明。 "MyApps ["](/azure/active-directory/user-help/my-apps-portal-end-user-access) 等最终用户门户将在此字段中显示应用程序说明。 最大允许大小为 1024 个字符。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`startsWith`）和 `$search`。|
-| disabledByMicrosoftStatus | String | 指定 Microsoft 是否已禁用已注册的应用程序。可能的值为：`null`（默认值）、`NotDisabled` 和 `DisabledDueToViolationOfServicesAgreement`（原因可能包括可疑、滥用或恶意活动或违反 Microsoft 服务协议）。 <br><br> 支持 `$filter`（`eq`、`ne`、`NOT`）。  |
-|displayName|String|服务主体的显示名称。 支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）、`$search` 和 `$orderBy`。 |
+| 说明 | 字符串 | 免费文本字段，提供面向内部最终用户的服务主体说明。 "MyApps ["](/azure/active-directory/user-help/my-apps-portal-end-user-access) 等最终用户门户将在此字段中显示应用程序说明。 最大允许大小为 1024 个字符。 支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`startsWith`）和 `$search`。|
+| disabledByMicrosoftStatus | String | 指定 Microsoft 是否已禁用已注册的应用程序。可能的值为：`null`（默认值）、`NotDisabled` 和 `DisabledDueToViolationOfServicesAgreement`（原因可能包括可疑、滥用或恶意活动或违反 Microsoft 服务协议）。 <br><br> 支持 `$filter`（`eq`、`ne`、`not`）。  |
+|displayName|String|服务主体的显示名称。 支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le`、`in`、`startsWith` 和 `null` 值上的 `eq`）、`$search` 和 `$orderBy`。 |
 |errorUrl|String|已弃用。 请勿使用。|
 |homepage|String|应用程序的主页或登录页面。|
-| id | String | 服务主体的唯一标识符。 继承自 [directoryObject](directoryobject.md)。 键。 不可为空。 只读。 支持 `$filter` （`eq`、 `ne`、 `NOT`、 `in`）。 |
-| info | [informationalUrl](informationalurl.md) | 所获取应用程序的基本配置文件信息，如应用的市场营销、支持、服务条款和隐私声明 URL。 服务条款和隐私声明通过用户同意体验展示给用户。 有关详细信息，请参阅[如何：为已注册的 Azure AD 应用添加服务条款和隐私声明](/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement)。 <br><br>支持 `$filter`（`eq`、`ne`、`NOT`、`ge`、`le` 和 `null` 值上的 `eq`）。  |
-|keyCredentials|[keyCredential](keycredential.md) 集合|与服务帐户关联的密钥凭据集合。 不可为 null。 支持 `$filter`（`eq`、`NOT`、`ge`、`le`）。            |
+| id | String | 服务主体的唯一标识符。 继承自 [directoryObject](directoryobject.md)。 键。 不可为空。 只读。 支持 `$filter` （`eq`、 `ne`、 `not`、 `in`）。 |
+| info | [informationalUrl](informationalurl.md) | 所获取应用程序的基本配置文件信息，如应用的市场营销、支持、服务条款和隐私声明 URL。 服务条款和隐私声明通过用户同意体验展示给用户。 有关详细信息，请参阅[如何：为已注册的 Azure AD 应用添加服务条款和隐私声明](/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement)。 <br><br>支持 `$filter`（`eq`、`ne`、`not`、`ge`、`le` 和 `null` 值上的 `eq`）。  |
+|keyCredentials|[keyCredential](keycredential.md) 集合|与服务帐户关联的密钥凭据集合。 不可为 null。 支持 `$filter`（`eq`、`not`、`ge`、`le`）。            |
 |loginUrl|String|指定服务提供商将用户重定向到 Azure AD 进行身份验证的 URL。 Azure AD 使用 URL 从 Microsoft 365 或Azure AD My Apps 启动应用程序。 该选项为空时，Azure AD 将对使用“[基于 SAML 的单一登录](/azure/active-directory/manage-apps/what-is-single-sign-on#saml-sso)”配置的应用程序执行 IdP 启动的登录。 用户从 Microsoft 365、Azure AD My Apps 或Azure AD SSO URL 启动应用程序。|
 |logoutUrl|String| 指定 Microsoft 授权服务使用 OpenId Connect [正向通道](https://openid.net/specs/openid-connect-frontchannel-1_0.html)、[反向通道](https://openid.net/specs/openid-connect-backchannel-1_0.html)或 SAML 注销协议注销用户时所使用的 URL。|
 |notes|String|免费文本字段，用于捕获有关服务主体的信息，通常用于操作。最大允许大小为 1024 个字符。|
@@ -123,10 +123,10 @@ ms.locfileid: "61123716"
 |replyUrls|String 集合|向其发送用户令牌以使用关联应用程序登录的 URL，或者为关联应用程序向其发送 OAuth 2.0 授权代码和访问令牌的重定向 URI。不可为 null。 |
 |samlMetadataUrl|String|服务用于公开联合身份验证的 SAML 元数据的 URL。|
 |samlSingleSignOnSettings|[samlSingleSignOnSettings](samlsinglesignonsettings.md)|有关 saml 单一登录的设置的集合。|
-|servicePrincipalNames|字符串集合|包含从关联的 [应用程序](application.md)中复制的 **identifiersUris** 列表。 可以将其他值添加到混合应用程序。 这些值可用于标识此应用程序在 Azure AD 中公开的权限。 例如，<ul><li>客户端应用可以指定基于此属性的值的资源 URI（即“aud”声明中返回的 URI），以获取访问令牌。</li></ul><br>多值属性上的筛选器表达式需要 any 运算符。不可为 NULL。<br><br> 支持 `$filter`（`eq`、`NOT`、`ge`、`le`、`startsWith`）。|
+|servicePrincipalNames|字符串集合|包含从关联的 [应用程序](application.md)中复制的 **identifiersUris** 列表。 可以将其他值添加到混合应用程序。 这些值可用于标识此应用程序在 Azure AD 中公开的权限。 例如，<ul><li>客户端应用可以指定基于此属性的值的资源 URI（即“aud”声明中返回的 URI），以获取访问令牌。</li></ul><br>多值属性上的筛选器表达式需要 any 运算符。不可为 NULL。<br><br> 支持 `$filter`（`eq`、`not`、`ge`、`le`、`startsWith`）。|
 |servicePrincipalType|String|标识服务主体是表示应用程序还是托管标识。 这是由 Azure AD 内部设置的。 对于表示 [应用程序](./application.md)的服务主体，此选项设置为“__Application__”。 对于表示 [托管标识](/azure/active-directory/managed-identities-azure-resources/overview)的服务主体，此选项设置为“__ManagedIdentity__”。 __SocialIdp__ 类型供内部使用。 |
 | signInAudience | String | 指定当前应用程序支持的 Microsoft 帐户。只读。 <br><br>支持的值为：<ul><li>`AzureADMyOrg`：在我的组织的 Azure AD 租户（即单租户）中拥有 Microsoft 工作或学校帐户的用户</li><li>`AzureADMultipleOrgs`：在任何组织的 Azure AD 租户（多租户）中拥有 Microsoft 工作或学校帐户的用户。</li><li>`AzureADandPersonalMicrosoftAccount`：拥有个人 Microsoft 帐户或任意组织的 Azure AD 租户中的工作或学校帐户的用户。</li><li>`PersonalMicrosoftAccount`：仅限拥有个人 Microsoft 帐户的用户。</li></ul> |
-|tags|String collection| 可用于对服务主体进行分类和识别的自定义字符串。不可为空。<br><br>支持 `$filter`（`eq`、`NOT`、`ge`、`le`、`startsWith`）。|
+|tags|String collection| 可用于对服务主体进行分类和识别的自定义字符串。不可为空。<br><br>支持 `$filter`（`eq`、`not`、`ge`、`le`、`startsWith`）。|
 |tokenEncryptionKeyId|String|指定 keyCredentials 集合中的公共密钥的 keyId。 配置后，Azure AD 为此应用程序发布使用此属性指定的密钥加密的令牌。 接收加密令牌的应用程序代码必须先使用匹配的私钥来解密该令牌，然后才能将该令牌用于登录用户。|
 | verifiedPublisher          | [verifiedPublisher](verifiedPublisher.md)                            | 指定该服务主体代表的应用程序的已验证发布者。|
 

@@ -1550,17 +1550,29 @@ items:
                     href: api/onlinemeeting-delete.md
                   - name: 创建或获取
                     href: api/onlinemeeting-createorget.md
-                  - name: 会议注册
-                    href: resources/meetingregistration.md
+              - name: 考勤报告
+                href: resources/meetingAttendanceReport.md
+                items:
+                  - name: 列表
+                    href: api/meetingattendancereport-list.md
+                  - name: 获取
+                    href: api/meetingattendancereport-get.md
+                  - name: 考勤记录
+                    href: resources/attendancerecord.md
                     items:
-                      - name: 创建
-                        href: api/meetingregistration-post.md
-                      - name: 获取
-                        href: api/meetingregistration-get.md
-                      - name: 更新
-                        href: api/meetingregistration-update.md
-                      - name: 删除
-                        href: api/meetingregistration-delete.md
+                      - name: 列表
+                        href: api/attendancerecord-list.md
+              - name: 会议注册
+                href: resources/meetingregistration.md
+                items:
+                  - name: 创建
+                    href: api/meetingregistration-post.md
+                  - name: 获取
+                    href: api/meetingregistration-get.md
+                  - name: 更新
+                    href: api/meetingregistration-update.md
+                  - name: 删除
+                    href: api/meetingregistration-delete.md
                   - name: 会议注册人
                     href: resources/meetingregistrant.md
                     items:
@@ -12085,7 +12097,7 @@ items:
                         href: api/accessreviewinstance-get.md
                       - name: 按当前用户筛选
                         href: api/accessreviewinstance-filterbycurrentuser.md
-                      - name: '列出已 (审批) '
+                      - name: '列出已弃 (审批) '
                         href: api/accessreviewinstance-pendingaccessreviewinstances.md
                       - name: 发送提醒
                         href: api/accessreviewinstance-sendreminder.md
@@ -12110,7 +12122,7 @@ items:
                         href: api/accessreviewinstancedecisionitem-get.md
                       - name: 按当前用户筛选
                         href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
-                      - name: '列出已 (审批) '
+                      - name: '列出已弃 (审批) '
                         href: api/accessreviewinstancedecisionitem-listpendingapproval.md
                       - name: 更新
                         href: api/accessreviewinstancedecisionitem-update.md
@@ -12132,7 +12144,7 @@ items:
                         href: api/accessreviewhistorydefinition-post.md
                       - name: 生成下载 URI
                         href: api/accessreviewhistorydefinition-generatedownloaduri.md
-              - name: '已弃 (访问) '
+              - name: '已弃 (的访问) '
                 href: resources/accessreviews-root.md
                 items:
                   - name: 访问审查
@@ -13559,7 +13571,7 @@ items:
                     href: api/reportroot-getyammergroupsactivitygroupcounts.md
                   - name: 获取活动计数
                     href: api/reportroot-getyammergroupsactivitycounts.md
-          - name: Microsoft Defender for Office 365安全报告
+          - name: Microsoft Defender for Office 365 安全报告
             items:
               - name: 攻击模拟报告
                 displayname: Attack simulation and training

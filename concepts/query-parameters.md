@@ -4,12 +4,12 @@ description: Microsoft Graph 提供可选的查询参数，可用于指定和控
 author: mumbi-o
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: a5f4ee30ef7fdea9a2e8e4e0c73777cf9d226769
-ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
+ms.openlocfilehash: 4e2c0cc59f47e02b7bc9a1f0496bbbd06f1ffe4a
+ms.sourcegitcommit: 1cf7a82df17afc6291e2c93d8b2c277bf3382e6a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60256408"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61130204"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>使用查询参数自定义响应
 
@@ -180,8 +180,8 @@ GET https://graph.microsoft.com/v1.0/users?$filter=imAddresses/any(s:s eq 'admin
 GET https://graph.microsoft.com/v1.0/users?$filter=assignedLicenses/any(s:s/skuId eq 184efa21-98c3-4e5d-95ab-d07053a96e67)
 ```
 
-若要对 `any` 子句内表达式的结果求反，请使用 `NOT` 运算符，而不是 `ne` 运算符。 例如，以下查询仅检索未分配 `admin@contoso.com` 的 **imAddress** 的用户。
->**注意:** 对于像用户这样的目录对象，`NOT` 和 `ne` 运算符仅在 [高级查询](/graph/aad-advanced-queries) 中受支持。
+若要对 `any` 子句内表达式的结果求反，请使用 `not` 运算符，而不是 `ne` 运算符。 例如，以下查询仅检索未分配 `admin@contoso.com` 的 **imAddress** 的用户。
+>**注意:** 对于像用户这样的目录对象，`not` 和 `ne` 运算符仅在 [高级查询](/graph/aad-advanced-queries) 中受支持。
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$filter=NOT(imAddresses/any(s:s eq 'admin@contoso.com'))&$count=true

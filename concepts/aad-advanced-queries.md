@@ -4,12 +4,12 @@ description: Azure AD 目录对象支持高级查询功能以高效访问数据�
 author: Licantrop0
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: a1036aefdd9debaa54631a43f08867a1ef430c02
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 2b9c95961be57152c6d3bd885351b52c48b7f7a8
+ms.sourcegitcommit: 1cf7a82df17afc6291e2c93d8b2c277bf3382e6a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59765319"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61130024"
 ---
 # <a name="advanced-query-capabilities-on-azure-ad-directory-objects"></a>Azure AD 目录对象的高级查询功能
 
@@ -65,9 +65,9 @@ ConsistencyLevel: eventual
 | 将 `$filter` 与 `endsWith` 运算符结合使用                            | [GET](https://developer.microsoft.com/graph/graph-explorer?request=users%3F%24count%3Dtrue%26%24filter%3DendsWith(mail%2C'%40outlook.com')&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$count=true&$filter=endsWith(mail,'@outlook.com')`                                                                                       |
 | 在同一查询中使用`$filter`和`$orderby`                        | [GET](https://developer.microsoft.com/graph/graph-explorer?request=applications%3F%24orderby%3DdisplayName%26%24filter%3DstartsWith(displayName%2C%20'Box')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../applications?$orderby=displayName&$filter=startsWith(displayName, 'Box')&$count=true`                       |
 | 对特定属性将 `$filter` 与 `startsWith` 运算符结合使用. | [GET](https://developer.microsoft.com/graph/graph-explorer?request=users%3F%24filter%3DstartsWith(mobilePhone%2C%20'25478')%20OR%20startsWith(mobilePhone%2C%20'25473')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=startsWith(mobilePhone, '25478') OR startsWith(mobilePhone, '25473')&$count=true` |
-| 将 `$filter` 与 `ne` 和 `NOT` 运算符结合使用                           | 
+| 将 `$filter` 与 `ne` 和 `not` 运算符结合使用                           | 
   [GET](https://developer.microsoft.com/graph/graph-explorer?request=users%3F%24filter%3DcompanyName%20ne%20null%20and%20NOT(companyName%20eq%20'Microsoft')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=companyName ne null and NOT(companyName eq 'Microsoft')&$count=true`                           |
-| 将 `$filter` 与 `NOT` 和 `startsWith` 运算符结合使用                   | 
+| 将 `$filter` 与 `not` 和 `startsWith` 运算符结合使用                   | 
   [GET](https://developer.microsoft.com/graph/graph-explorer?request=%2Fusers%3F%24filter%3DNOT%20startsWith(displayName%2C%20'Conf')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=NOT startsWith(displayName, 'Conf')&$count=true`                                                                      |
 | 将 OData 强制转换与其他查询参数一起使用                           | [GET](https://developer.microsoft.com/graph/graph-explorer?request=me%2FtransitiveMemberOf%2Fmicrosoft.graph.group%3F%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../me/transitiveMemberOf/microsoft.graph.group?$count=true`                                                                                             |
 
@@ -211,6 +211,6 @@ Content-type: application/json
 ## <a name="see-also"></a>另请参阅
 
 + [使用查询参数自定义响应](/graph/query-parameters)
-+ [查询参数限制](known-issues.md#query-parameter-limitations)
++ [查询参数限制](known-issues.md#some-limitations-apply-to-query-parameters)
 + [使用$search查询参数匹配搜索条件](/graph/search-query-parameter)
 + [使用 .NET SDK 探索 Azure AD Directory 对象的高级查询功能](https://github.com/microsoftgraph/dotnet-aad-query-sample/)

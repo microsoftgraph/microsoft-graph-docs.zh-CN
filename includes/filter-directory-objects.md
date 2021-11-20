@@ -1,11 +1,11 @@
 ---
 ms.localizationpriority: medium
-ms.openlocfilehash: 95e6218d0f21d81491652a0229d3272a6a61d243
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 79b226f7b28840f37c557c206fb2ac4a9e6592b1
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60562772"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61130023"
 ---
 ### <a name="application-properties"></a>应用程序属性
 
@@ -31,7 +31,7 @@ ms.locfileid: "60562772"
 | 属性           | eq                                         | startsWith                                 | ge                                         | le                                         | Null 值                                 |
 | ----------------------------------- | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ |
 | accountEnabled                      | ![默认支持][RDS]               |                                            |                                            |                                            | ![不支持][NS]                       |
-| appId                               | ![默认支持][RDS]               |                                            |                                            |                                            | ![不支持][NS]                       |
+| appId                               | ![默认支持][RDS]               | ![需要高级查询参数。][AQP]                                            |                                            |                                            | ![不支持][NS]                       |
 | applicationTemplateId               | ![默认支持][RDS]               |                                            |                                            |                                            | ![不支持][NS]                       |
 | appOwnerOrganizationId              | ![需要高级查询参数。][AQP] |                                            |                                            |                                            | ![不支持][NS]                       |
 | appRoleAssignmentRequired           | ![需要高级查询参数。][AQP] |                                            |                                            |                                            | ![不支持][NS]                       |

@@ -5,12 +5,12 @@ description: 表示用户的 OneDrive 或 SharePoint 中文档库的驱动器资
 ms.localizationpriority: high
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 43791d730726dbf1a958c826c1a629af241eed70
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 1df4114e9dd79dd5845ca0cf1aedfdc458b83668
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696405"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61123718"
 ---
 # <a name="drive-resource-type"></a>驱动器资源类型
 
@@ -50,7 +50,7 @@ OneDrive 用户必须始终具有至少一个可用驱动器，即默认驱动�
 | name                 | string                        | 项目名称。读写。                                                                                                                                                                                                |
 | 所有者                | [identitySet](identityset.md) | 可选。拥有此驱动器的用户帐户。只读。                                                                                                                                                                       |
 | 配额                | [配额](quota.md)             | 可选。有关驱动器的存储空间配额的信息。只读。                                                                                                                                                          |
-| sharepointIds        | [sharepointIds][]             | 返回对 SharePoint REST 兼容性有用的标识符。只读。                                                                                                                                                         |
+| sharepointIds        | [sharepointIds][]             | 返回对 SharePoint REST 兼容性有用的标识符。 只读。  默认情况下不返回此属性，必须使用查询参数 `$select` 进行选择。                                                                               |
 | system               | [systemFacet][]               | 如果存在，则表示这是系统管理的驱动器。只读。
 | WebUrl               | string (url)                  | 在浏览器中显示此资源的 URL。只读。                                                                                                                                                                        |
 

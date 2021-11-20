@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 706e3c3a81a8f2b889b3bc1f23b0005d28192697
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 085dcec35a223607eb8aa97ece0808d0aed6dfa1
+ms.sourcegitcommit: 1cf7a82df17afc6291e2c93d8b2c277bf3382e6a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60976593"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61130155"
 ---
 # <a name="list-groups"></a>列出组
 
@@ -453,7 +453,7 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-下面是按 **membershipRuleProcessingState** 进行筛选以检索动态组的请求示例。 也可以按 **groupTypes** 属性 (即 `$filter=groupTypes/any(s:s eq 'DynamicMembership')`) 进行筛选。 此请求需要将 **ConsistencyLevel** 标头设置为 `eventual` 和 `$count=true` 查询字符串，因为此请求使用了 `$filter` 查询参数的 `NOT` 运算符。 有关使用 **ConsistencyLevel** 和 `$count` 的详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
+下面是按 **membershipRuleProcessingState** 进行筛选以检索动态组的请求示例。 也可以按 **groupTypes** 属性 (即 `$filter=groupTypes/any(s:s eq 'DynamicMembership')`) 进行筛选。 此请求需要将 **ConsistencyLevel** 标头设置为 `eventual` 和 `$count=true` 查询字符串，因为此请求使用了 `$filter` 查询参数的 `not` 运算符。 有关使用 **ConsistencyLevel** 和 `$count` 的详细信息，请参阅 [Azure AD 目录对象的高级查询功能](/graph/aad-advanced-queries)。
 
 
 
